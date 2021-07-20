@@ -3,12 +3,10 @@
 
 title: Import vendor catalogs
 description: This topic describes the process to import vendor catalog data.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,7 @@ ms.reviewer: kamaybac
 ms.custom: 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2018-04-20 
 ms.dyn365.ops.version: 7.3
 ---
@@ -91,3 +89,6 @@ a new catalog, replace an existing catalog, or modify an existing catalog.
 catalog file template and save the file.
 
 For more information and for examples, refer to this blog post: [Vendor catalogs in Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

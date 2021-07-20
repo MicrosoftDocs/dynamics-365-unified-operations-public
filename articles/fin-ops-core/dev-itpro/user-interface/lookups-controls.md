@@ -4,11 +4,9 @@
 title: Lookup controls
 description: This article discusses how to enable lookup behavior on controls.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article discusses how to enable lookup behavior on controls. It also discusses how to create multi-select lookups and outlines lookup scenarios that are no longer supported.
 
-Enabling lookup behavior in controls
-------------------------------------
+## Enabling lookup behavior in controls
 
 ### Controls bound to an Extended Data Type
 
@@ -125,3 +122,6 @@ Lookup controls should open lookup forms when the lookup button is used (not sli
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Additional acquisition depreciation
 description: This article explains how depreciation is calculated for additional acquisitions in Germany and provides an example. Acquisition adjustments for fixed assets must always be calculated as if the adjustments were made on the first day of the business year.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,3 +48,6 @@ In 2015, your organization acquired a fixed asset for 60,000. Your organization 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

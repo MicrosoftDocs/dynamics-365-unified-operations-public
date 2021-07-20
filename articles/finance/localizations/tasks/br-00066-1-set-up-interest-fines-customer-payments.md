@@ -4,11 +4,9 @@
 title: Set up interest and fines on customer payments (Brazil)
 description: Use this procedure to set up interest and fines on customer payments. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -81,3 +79,6 @@ Use this procedure to set up interest and fines on customer payments. This task 
 48. Close the page.
 49. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

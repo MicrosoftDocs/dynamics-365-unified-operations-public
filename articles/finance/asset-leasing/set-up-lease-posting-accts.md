@@ -4,16 +4,14 @@
 title: Set up lease posting accounts
 description: This topic lists the posting accounts that are required for Asset leasing transactions and explains how to define posting accounts on the Lease posting parameters page.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: AssetLeasePostingAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -89,3 +87,6 @@ To assign accounts to the lease books and groups that have been created, you mus
     > [!NOTE]
     > The selected finance or operating account will be debited when the invoice for the scheduled expense is posted.
     > **Lease expense offset** will be used as posting type for executory costs transactions but post to defined **Offset account** in the **Execuroty costs payment schedule lines** in lease details or lease book form.   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Configure Accounts payable overview
 description: This article describes the pages that you use to set up basic and optional functionality for Accounts payable. It also describes setup steps that you must complete before you start to set up Accounts payable.
 author: abruer
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 24671
+ms.custom: ["24671", "intro-internal"]
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
 # ms.search.industry: 
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the pages that you use to set up basic and optional functionality for Accounts payable. It also describes setup steps that you must complete before you start to set up Accounts payable.
 
-Prerequisites for Accounts payable setup
-----------------------------------------
+## Prerequisites for Accounts payable setup
 
 Before you can set up Accounts payable, you must complete the following setup:
 
@@ -152,3 +149,6 @@ The additional setup pages are organized by functionality.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

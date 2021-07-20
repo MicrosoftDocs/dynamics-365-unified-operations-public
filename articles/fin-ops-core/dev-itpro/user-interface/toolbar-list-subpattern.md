@@ -4,11 +4,9 @@
 title: Toolbar and List subpattern
 description: This article provides information about the Toolbar and List form subpattern.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the Toolbar and List form subpattern. This subpattern is used to show child collections for the parent entity as either a tabular grid or a tree. 
 
-Usage
------
+## Usage
 
 This subpattern is used to show child collections for the parent entity as either a tabular grid or a tree. The toolbar contains fewer than 10 actions. If a grid is used, it contains fewer than 10 fields. This article describes two patterns:
 
@@ -46,11 +43,11 @@ This subpattern is used to show child collections for the parent entity as eithe
 ## Wireframes
 ### Toolbar and list
 
-[![Wireframe for Toolbar and List form](./media/toolbarlist1.png)](./media/toolbarlist1.png)
+[![Wireframe for Toolbar and List form.](./media/toolbarlist1.png)](./media/toolbarlist1.png)
 
 ### Toolbar and list (double)
 
-[![Wireframe for Toolbar and List (double) form](./media/toolbarlist2.png)](./media/toolbarlist2.png)
+[![Wireframe for Toolbar and List (double) form.](./media/toolbarlist2.png)](./media/toolbarlist2.png)
 
 ## Model
 ### Toolbar and list – High-level structure
@@ -101,13 +98,13 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **VendTable (TabCommunication)** 
 
-[![Toolbar and List example](./media/toolbarlist3.png)](./media/toolbarlist3.png)
+[![Toolbar and List example.](./media/toolbarlist3.png)](./media/toolbarlist3.png)
 
 ### Toolbar and list (double)
 
 Form: **SalesQuickQuote (TabPageExistingItems)** 
 
-[![Toolbar and List (double) example](./media/toolbarlist4.png)](./media/toolbarlist4.png)
+[![Toolbar and List (double) example.](./media/toolbarlist4.png)](./media/toolbarlist4.png)
 
 ## Resources
 ### Typically used by patterns
@@ -133,4 +130,7 @@ This section will have answers to frequently asked questions that are related to
 
 **VendTable** 
 
-[![Previous version example](./media/toolbarlist5.png)](./media/toolbarlist5.png)
+[![Previous version example.](./media/toolbarlist5.png)](./media/toolbarlist5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Asset loans
 description: This topic describes how to register loan assets in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -51,7 +49,7 @@ If your company receives assets for repair or maintenance jobs from either inter
 
 To view a list of all the assets that you've loaned to other locations or customers, select **Asset management** \> **Common** \> **Asset loan** \> **All asset loans**. If the **Ended** check box is selected for an asset, the asset has been registered as returned to your company.
 
-![Manage Maintenance Requests](media/06-manage-maintenance-requests.png)
+![Manage Maintenance Requests.](media/06-manage-maintenance-requests.png)
 
 On the **Active asset loans** page, you can view a list of all the loan assets that haven't yet been returned to your company.
 
@@ -62,3 +60,6 @@ On the **Active asset loans** page, you can view a list of all the loan assets t
 3. In the **Returned** field, enter the date and time.
 4. Select **OK**.
 5. Refresh the **Active asset loans** list page, and notice that the asset loan no longer appears in the list.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

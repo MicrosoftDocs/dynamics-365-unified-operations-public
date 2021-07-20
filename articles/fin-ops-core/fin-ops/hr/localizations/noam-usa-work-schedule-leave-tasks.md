@@ -2,13 +2,11 @@
 # required metadata
 
 title: Set up work schedules and leave
-description: This article describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
+description: This topic describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
 author: andreabichsel
-manager: AnnBe
 ms.date: 11/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -100,3 +98,6 @@ Time off that is part of a benefit accrual plan, such as vacation time or sick t
 ## Next step
 
 The next step is to set up benefit accrual plans. For more information, see [Set up benefit accrual plans](noam-usa-benefit-accrual-plan-tasks.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Commerce for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Commerce.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 24411
+ms.custom: "intro-internal"
 ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
 ms.search.region: Global
 # ms.search.industry: 
@@ -41,11 +39,11 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Components and architecture
 
-- [Commerce components](../retail-components.md)
+- [Commerce components](/dynamics365/commerce/dev-itpro/commerce-architecture)
 - [Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
-- [Commerce Scale Unit architecture](retail-server-architecture.md)
-- [Online store publishing architecture](retail-online-store-publishing-architecture.md)
-- [Retail channel performance PowerBI.com solution](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+- [Headless commerce engine architecture](retail-server-architecture.md)
+- [Publish an online store channel](retail-online-store-publishing-architecture.md)
+- [Retail channel performance PowerBI.com solution](../../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Deployment
 
@@ -56,7 +54,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
 - [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 - [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
-- [Access instances](../../dev-itpro/dev-tools/access-instances.md)
+- [Access instances](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md)
 
 ## Point of Sale (POS)
 
@@ -65,12 +63,13 @@ This page lists the resources that are available for IT pros and developers who 
 - [Point of sale (POS) device activation](retail-device-activation.md)
 - [Security best practices for Cloud POS in shared environments](secure-retail-cloud-pos.md)
 - [Support for external gift cards](gift-card.md)
+- [Store Commerce app in Microsoft Dynamics 365 Commerce](store-commerce.md)
 
 ## Customize POS
 
 - [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md)
 - [Install the POS layout designer](../install-pos-layout-designer.md)
-- [Modern POS (MPOS) triggers and printing](modern-pos-trigger-extensibility.md)
+- [Modern POS (MPOS) triggers and printing](./pos-trigger-printing.md)
 - [Block transactions by using triggers](trigger-example-blocking-transaction.md)
 - [Add custom controls to POS views](pos-custom-control.md)
 - [Point of sale (POS) payment extension](pos-payment-extension.md)
@@ -86,6 +85,26 @@ This page lists the resources that are available for IT pros and developers who 
 - [Test recorder and Regression suite automation tool for Cloud POS](pos-rsat.md)
 - [POS Cart view events and handlers](cart-view-handlers.md)
 - [Add custom buttons to the POS header bar](pos-header-bar.md)
+
+## POS independent-packaging SDK
+
+- [POS extension overview](pos-extension/pos-extension-overview.md)
+- [Getting started with POS extensions](pos-extension/pos-extension-getting-started.md)
+- [Create a POS extension package project](pos-extension/create-pos-extension-package.md)
+- [Create an .appx file for a Modern POS extension package](pos-extension/create-pos-extension-appx.md)
+- [Debug POS extensions](pos-extension/debug-pos-extension.md)
+- Extension packaging and deployment
+    - [Create a Modern POS extension package](pos-extension/mpos-extension-packaging.md)
+    - [Code signing a Modern POS (MSIX) extension package](pos-extension/mpos-extension-signing.md)
+    - [Create a Cloud POS extension package](pos-extension/cpos-extension-package.md)
+- [Migrate a POS extension to the independent-packaging model](pos-extension/migrate-pos-extension.md)
+- POS extension development guide
+    - [POS extension basics](pos-extension/pos-extension-basics.md)
+    - [Create a custom view in POS](pos-extension/custom-pos-view.md)
+    - [Use POS controls in extensions](pos-extension/controls-pos-extension.md)
+    - Tasks
+        - [Use Knockout.js in POS extensions](pos-extension/knockout-pos-extension.md)
+        - [Consume custom headless Commerce engine APIs and entities in POS](pos-extension/consume-apis-pos.md)
 
 ## Integrating Commerce
 
@@ -118,12 +137,14 @@ This page lists the resources that are available for IT pros and developers who 
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
 - [Upcoming changes in the Retail SDK](UpcomingSDKChanges.md)
 - [Development and ALM changes from version 10.0.10 to 10.0.13](dev-changes-10-13.md)
+- [Set up a build pipeline for the independent-packaging SDK](build-pipeline.md)
 - [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
 - [Merge the build systems for Commerce and Finance](retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](retail-sdk/migrate-sdk.md)
 - [Retail software development kit (SDK) samples](retail-sdk/retail-sdk-samples.md)
 - [Download samples and packages from GitHub and NuGet](retail-sdk/sdk-github.md)
 - [Channel database extensions](channel-db-extensions.md)
+- [Remove Cloud Scale Unit extensions](retail-sdk/remove-csu-package.md)
 - [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md)
 - [Define and set order attributes](order-attributes.md)
 - [Customer attributes](customer-attributes.md)
@@ -155,3 +176,6 @@ This page lists the resources that are available for IT pros and developers who 
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Deploy payment connectors](deploy-payment-connector.md)
 - [Create Commerce payment packaging for Finance and Operations deployment](payment-connector-package.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

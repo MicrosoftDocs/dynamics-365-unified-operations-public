@@ -4,11 +4,9 @@
 title: Document routing layout for license plate labels
 description: This topic describes how to use formatting methods to print values on labels.
 author: perlynne
-manager: tfehr
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,6 +27,7 @@ ms.dyn365.ops.version: Release 10.0.10
 # Document routing layout for license plate labels
 
 [!include [banner](../includes/banner.md)]
+
 
 The document routing layout defines the layout of license plate labels, and the data that is printed on them. You configure the printing trigger points when you set up mobile device menu items and work templates.
 
@@ -56,6 +55,10 @@ To see the values that will be printed, go to **Warehouse management \> Inquirie
 
 Several widely available label generation tools can help you format the text for the label layout. Many of these tools support the `$FieldName$` format. In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.
 
+## Turn on this feature for your system
+
+If your system doesn't already include the features described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature.
+
 ## Custom number formats
 
 You can customize the formatting of numerical field values that are printed by using codes that have the following format.
@@ -74,7 +77,7 @@ The following examples show how you can customize the work quantity (**Qty**) fi
 - To always show four digits (by using zeros as placeholders), use `$Qty:0000$`. For example, if the quantity is 10, the label will show "0010."
 - To always show two decimal places, use `$Qty:0.00$`. For example, if the quantity is 10, the label will show "10.00."
 
-For a complete list of the available number format strings, see [Custom numeric format strings](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
+For a complete list of the available number format strings, see [Custom numeric format strings](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## Custom string formats
 
@@ -96,7 +99,7 @@ $PrintedDate:dd-MM-yyyy$
 
 In this example, the date April 30, 2020, will be printed as "30-04-2020."
 
-For a complete list of the available date/time formats, see [Custom date and time format strings](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
+For a complete list of the available date/time formats, see [Custom date and time format strings](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## Print individual lines from multiline data
 
@@ -139,3 +142,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## More information about how to print labels
 
 For more information about how to set up and print labels, see [Enable license plate label printing](tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

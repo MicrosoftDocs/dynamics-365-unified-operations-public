@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Troubleshoot the Regression suite automation tool
 description: This topic contains information about how to troubleshoot the Regression suite automation tool (RSAT).
-author: robadawy
-manager: AnnBe
+author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:
@@ -22,7 +16,7 @@ ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
 # ms.search.industry:
-ms.author: robadawy
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -71,7 +65,7 @@ Cannot access Finance and Operations environment. Verify your settings and make 
 
 If you have selected Internet Explorer as your browser, your desktop resolution should be set to 100% to run the tests successfully. To change the settings, use Windows **Display settings > Scale and layout**, as shown in the following image:
 
-![Setting screen resolution](media/screen-resolution.png)
+![Setting screen resolution.](media/screen-resolution.png)
 
 ## Test playback errors
 
@@ -104,7 +98,7 @@ You may receive the following error when running a test case, or the error detai
 <Message>Could not enumerate AX users</Message>  (InnerError)`
 ```
 
-![Enumerate error message box](media/cannot-enumerate.png)
+![Enumerate error message box.](media/cannot-enumerate.png)
 
 To resolve this error, verify the **Admin user name** specified in the RSAT settings dialog box. The **Admin user name** must be the email address of a user that belongs to the System Administrator role on the Finance and Operations test environment that RSAT is connecting to. The user account (e-mail address) must also belong to the same tenant as the test environment. For example, if your test environment's tenant is **contoso.com**, the admin user must end with **\@constoso.com**.
 
@@ -132,3 +126,6 @@ If your test case requires validation that a certain control of type Date/Time i
 ## Azure DevOps connectivity
 
 You might you see this error when you select the desired Azure DevOps project in RSAT settings: "The structure path \<iteration path\> is not valid. Verify your settings and try again". To resolve this error, open the project in Azure DevOps and navigate to the Test Plans. Verify the iteration path defined for each test plan. If the iteration path is similar to what is shown in the error, remove the existing iteration path and add a new one for the test plan and save.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

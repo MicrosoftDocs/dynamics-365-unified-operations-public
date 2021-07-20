@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 20 (September 2018)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
 author: tonyafehr
-manager: AnnBe
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -41,7 +39,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the October '18 release notes](https://go.microsoft.com/fwlink/?linkid=870424). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the October '18 release notes](/dynamics365/release-plans/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Platform update 20 bug fixes
 
@@ -63,41 +61,41 @@ The Finance and Operations web client has started its journey of aligning to Mic
 
     The following image shows how workspce cards appeared on the dashboard before Platform update 20:
 
-    ![Old dashboard](media/prePU20-dashboard-cropped.png  "Old dashboard")
+    ![Old dashboard.](media/prePU20-dashboard-cropped.png  "Old dashboard")
   
     The following image shows how workspace cards appear in Platform update 20 and later:
 
-    ![New dashboard](media/postPU20-dashboard-cropped.png  "New dashboard")
+    ![New dashboard.](media/postPU20-dashboard-cropped.png  "New dashboard")
 
 -  **Action pane** - Action panes no longer display with a theme-inspired background color; instead, the Action pane has a gray background color. This was done not only to align with Fluent, but also to address some usability issues where users were not associating the Action pane with the rest of the page because of the stark difference in background color.
 
     The following image shows how the Action pane appeared before Platform update 20:
 
-    ![Old details page](media/prePU20-customers-actionpane.png  "Old details page")
+    ![Old details page.](media/prePU20-customers-actionpane.png  "Old details page")
 
     The following image shows how the Action pane appears in Platform update 20 and later:
 
-    ![New details page](media/postPU20-customers-actionpane.png  "New details page")
+    ![New details page.](media/postPU20-customers-actionpane.png  "New details page")
 
 -  **Filter pane** - The Filter pane has been completely restyled with a lighter background color, a pill-like appearance to filter fields, and repositioning of the "Add a filter field" button to the top of the pane.
 
     The following image shows how the Filter pane appeared before Platform update 20:
 
-    ![Old list page](media/prePU20-customers-cropped.png  "Old list page")
+    ![Old list page.](media/prePU20-customers-cropped.png  "Old list page")
 
     The following image shows how the Filter pane appears in Platform update 20 and later:
 
-    ![New list page](media/postPU20-customers-cropped.png  "New list page")
+    ![New list page.](media/postPU20-customers-cropped.png  "New list page")
 
 -  **FactBox pane** - The FactBox pane has also gotten a facelift. The pane now appears to span the full height of the page when open, and most importantly, the collapsed version is more discoverable and shows as a **Related information** blade along the right edge of the screen, instead of being an easily overlooed icon on the right.  
 
     The following image shows how the FactBox pane appeared before Platform update 20:
 
-    ![Old Factbox pane](media/prePU20-expandedFactBox-cropped.png  "Old FactBox pane")
+    ![Old Factbox pane.](media/prePU20-expandedFactBox-cropped.png  "Old FactBox pane")
   
     The following image shows how the FactBox pane appears in Platform update 20 and later:  
 
-    ![New FactBox pane](media/postPU20-expandedFactBox-cropped.png  "New FactBox pane")
+    ![New FactBox pane.](media/postPU20-expandedFactBox-cropped.png  "New FactBox pane")
 
 
 ## Adding and removing columns in a grid is easier
@@ -175,7 +173,7 @@ Platform update 20 includes the following extensibility enhancements:
 - Enable Chain of Command for data entities.
 - Enable Chain of Command on nested types within forms, including data sources and controls.
 
-For more information about all the extensibility capabilities, see the [Extensibility home page](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/extensibility-home-page).
+For more information about all the extensibility capabilities, see the [Extensibility home page](../../dev-itpro/extensibility/extensibility-home-page.md).
 
 ## Performance improvement in the Visual Studio development environment
 
@@ -210,3 +208,6 @@ You can now create a copy of the same batch jobs for different legal entities, a
 You can simultaneously set the description, company, schedule start date and time, recurrence, and the run by account. When you copy the batch job, any alerts and dependencies from the source job will also be copied.
 
 For more information, see [Copy a batch job](../../dev-itpro/sysadmin/copy-batch-job.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

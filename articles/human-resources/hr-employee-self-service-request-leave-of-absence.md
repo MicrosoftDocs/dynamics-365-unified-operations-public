@@ -4,11 +4,9 @@
 title: Request a leave of absence
 description: Submit a leave of absence request. 
 author: andreabichsel
-manager: tfehr
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: ESSLeaveofAbsenceRequestEntry, EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -31,6 +28,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Request a leave of absence
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can submit a request for a leave of absence and see the status of your leave requests in Dynamics 365 Human Resources.
 
@@ -55,6 +54,13 @@ You can submit a request for a leave of absence and see the status of your leave
 
 2. To view your leave of absence requests, select **View leave of absence**.
 
+## Importing leave requests from other systems or older systems
+
+To import leave requests from another system, you must go through the regular workflow to create the appropriate leave transactions. Alternatively, you can import the leave bank transactions and the leave requests in a completed state. Note that the leave bank transactions aren't automatically created if you import only the leave requests.
+
 ## See also
 
 [Suspend leave](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

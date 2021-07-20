@@ -4,11 +4,9 @@
 title: Streamlined employee entry and navigation
 description: Data entry for workers in Dynamics 365 Talent has been enhanced to allow quick entry for all employees, past, active or future. A simplified/consolidated navigation model has been updated to quickly find related information and view and make any necessary updates.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang:   
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
@@ -41,7 +38,7 @@ You can use **View options** on the worker form to select any combination of emp
 
 Columns in the list view change based on your selections. For example, when viewing exited employees, the termination date and reason codes display as additional columns in the list. 
 
-[![View options](./media/Worker-view-option.png)](./media/worker-view-option.png)
+[![View options.](./media/Worker-view-option.png)](./media/worker-view-option.png)
 
 ## Navigation and banner
 
@@ -81,17 +78,20 @@ In addition, a new **Links** tab on the main worker page gives users a central l
 
 Due to these changes, information may appear in a different location than you're used to. For example, payroll information that previously displayed on the worker form now appears in the action pane under **Compensation > Payroll**, and the **Personal information** tab now has a **More information** button to hide columns that aren't accessed often.
 
-[![Banner](./media/Banner.png)](./media/Banner.png)
+[![Banner.](./media/Banner.png)](./media/Banner.png)
 
 ## Work history
 
 The **Work history** tab shows work history across all legal entities and is available for exited, active, and pending employees and contractors. You can now view all work history at once for the legal entities you have access to. In addition, you can edit information for each of the work history entries without changing the data context. You can update all information directly on the page. 
 
-[![Work history](./media/Worker-work-history.png)](./media/Worker-work-history.png)
+[![Work history.](./media/Worker-work-history.png)](./media/Worker-work-history.png)
 
 ## Position history
 
 The **Positions** tab on the main worker page provides a full view of all positions held within the organization, including past, present, and any future assignments. You can still navigate directly to the worker's position history in the action pane as well.
 
-[![Positions](./media/Worker-position-history.png)](./media/Worker-position-history.png)
+[![Positions.](./media/Worker-position-history.png)](./media/Worker-position-history.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Engineering change management overview
 description: This topic provides an overview of engineering change management, which helps you plan and manage product versioning, and manage product lifecycles and engineering changes.
 author: t-benebo
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
@@ -49,17 +47,32 @@ Engineering change management helps you plan and manage product versioning, and 
 
 The preceding video ([Change management capabilities in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
-## Turn on engineering change management for your system
+## Turn on the engineering change management and version dimension features for your system
 
-First, turn on engineering change management by following these steps.
+Before you can use engineering change management, you must enable both the *Engineering Change Management* feature and its configuration key. If you also want to track the version dimension of products in transactions (optional), then you must also enable the *Product version dimension* feature and its configuration key.
 
-1. Go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+First, turn on the features by following these steps.
+
+1. Go to the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 1. Check for updates.
-1. Turn on the feature that is named **Engineering Change Management**.
+1. Turn on the feature that is named *Engineering Change Management*.
+1. If you want to use it, also turn on the feature that is named *Product dimension version*.
 
-Next, turn on the **Engineering Change Management** configuration key by following these steps.
+Next, turn on the configuration keys by following these steps.
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
-1. Expand the **Trade** node, and select the **Engineering Change Management** check box.
+1. Expand the **Trade** node.
+1. Enable the configuration key for the main feature by selecting the **Engineering Change Management** checkbox.
+1. Expand the **Engineering Change Management** node, and select or clear the following checkboxes as required (depending on the features that you want to use):
+
+    - **Attribute search** – Select this checkbox to enable the [attribute search feature](engineering-attributes-and-search.md). We recommend enabling this feature, but you can clear this checkbox if you won't use it.
+    - **Change management for process manufacturing** – Select this checkbox if you want to use Engineering change management features to manage changes in formulas for process manufacturing. If you don't have to manage formulas, you can clear this checkbox. For more information, see [Manage changes in formulas and their ingredients](manage-formula-changes.md).
+
+1. If you also want to use the version dimension, then select the **Product dimension - Version** checkbox. (This checkbox is further down the list, not nested under the **Engineering Change Management** node.)
 1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+> [!IMPORTANT]
+> Starting in April 2022, the license keys for both **Engineering Change Management** and **Product dimension - Version** will be enabled by default for all new installations, but you will still be able to disable them if needed.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

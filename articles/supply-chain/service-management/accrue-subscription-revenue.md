@@ -4,11 +4,9 @@
 title: Accrue subscription revenue  
 description: Accrue subscription revenue.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,3 +46,6 @@ ms.dyn365.ops.version: AX 7.0.0
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

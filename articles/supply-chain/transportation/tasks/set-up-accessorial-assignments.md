@@ -4,11 +4,9 @@
 title: Set up accessorial assignments
 description: This procedure shows how to set up an accessorial assignment. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -51,3 +49,6 @@ This procedure shows how to set up an accessorial assignment. This is typically 
 14. In the Accessorial fee field, enter a number.
 15. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

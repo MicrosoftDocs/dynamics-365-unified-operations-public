@@ -4,11 +4,9 @@
 title: Complete the Azure Resource Manager (ARM) onboarding process
 description: This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. 
 author: sarvanisathish
-manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -74,7 +72,7 @@ Follow these steps to assign the **Contributor** role to the **Dynamics Deployme
     > [!NOTE]
     > Some Azure subscriptions have a **Users** section instead of an **Access control (IAM)** section. In this case, in the **Add users** dialog box, in the **Select** field, enter **Dynamics Deployment Services \[wsfed-enabled\]**, and then select **Select**.
     
-[![Dynamics Deployment Services \[wsfed-enabled\]](./media/arm_redo_02.png)](./media/arm_redo_02.png)
+[![Dynamics Deployment Services \[wsfed-enabled\.]](./media/arm_redo_02.png)](./media/arm_redo_02.png)
 
 3.  On the **Role assignments** tab, the App is assigned as a **Contributor**. 
     > [!NOTE]
@@ -118,3 +116,6 @@ Complete this procedure only if you didn't complete steps 6 through 8 of the pre
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,11 +3,9 @@
 title: Working clothes/special rigging accounting (Russia)
 description: This topics provides information about how to maintain working clothes and special rigging for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -260,3 +258,6 @@ To reverse the issue of the working clothes or special rigging item, on the **Wo
 ## Additional resources
 
 - [Not valuable fixed assets (NVFAs) (Russia)](rus-not-valuable-assets.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

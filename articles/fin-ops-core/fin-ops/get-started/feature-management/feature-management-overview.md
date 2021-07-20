@@ -3,11 +3,9 @@
 title: Feature management overview
 description: This topic describes the Feature management feature and how you can use it.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,7 @@ audience: IT Pro, Application user
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.custom: "intro-internal"
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: cgarty
@@ -143,7 +141,7 @@ Feature management lets you control the features that are delivered in each rele
 
 ## New features are optional for 12 months
 
-When a new non-critical feature is installed, it will be optional for a 12-month period. This allows you and your organization time to plan ahead for when to uptake a feature and have it tested against your daily operations. For more information, see [One Version service updates FAQ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
+When a new non-critical feature is installed, it will be optional for a 12-month period. This allows you and your organization time to plan ahead for when to uptake a feature and have it tested against your daily operations. For more information, see [One Version service updates FAQ](../one-version.md#what-about-new-features).
 
 ## Using Feature management to turn on ISV features or custom features
 
@@ -163,8 +161,8 @@ The policy is that all new features will be opt-in for a 12-month period and wil
 ### Why isn't there a specific 'mandatory-enabled date'? 
 Update release timing is variable, environment update timing is variable, and customers can opt to skip some updates. As a result, specific dates are difficult to determine. 
 
-### Where's the documentation for features that are being made mandatory? 
-This documentation comes from the application teams. Often, these will be mentioned in [Removed or deprecated features](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+### Where's the documentation for features that are mandatory? 
+This documentation comes from each Dynamics 365 application team. Often, these features will be mentioned in [Updates to client feature states](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) or [Removed or deprecated features](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### Is there an in-product notification or signal that a feature is going to be mandatory-enabled? 
 A notification mechanism related to making a feature mandatory does not exist today.
@@ -205,3 +203,6 @@ Features can be:
 - `PublicPreview` - Shown by default but with a warning that the feature is in preview.
 - `Released` - Fully released.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

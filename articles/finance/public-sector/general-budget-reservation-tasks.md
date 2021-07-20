@@ -4,11 +4,9 @@
 title: Maintain general budget reservations
 description: This topic provides steps for working with general budget reservations for Public sector in Microsoft Dynamics 365 Finance.
 author: AlexRenney
-manager: AnnBe
 ms.date: 04/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -177,3 +175,6 @@ For any general budget reservation that hasn't expired and still has a remaining
 If you've turned on budget control, you can reduce carry-forward budget for any carry-forward general budget reservations that are finalized, and that have a remaining balance. In this way, you can help guarantee that funds from the previous year aren't spent on purchases in the new year.
 
 If the **Reduce carry-forward budget** option is set to **Yes** on the related fund or the reservation type, when you finalize the document in the new fiscal year, the remaining document balance and any remaining carry-forward budget are reduced to 0 (zero).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

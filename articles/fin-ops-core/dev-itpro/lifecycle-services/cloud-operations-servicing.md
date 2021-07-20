@@ -4,11 +4,9 @@
 title: Cloud operations and servicing
 description: This topic describes cloud operations and servicing.
 author: laneswenka
-manager: AnnBe
 ms.date: 10/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -90,3 +88,6 @@ These are the options for managing databases, including the ability to copy a da
 When the status of the package application is changed, LCS sends a notification to all of the users in a project. Any additional stakeholders who should be notified must be specified in the notification list.
 1. To add additional stakeholders, in LCS, in the Environment details view, click Notification list.
 2. Add the email address of each user who must be notified, and then click Save.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

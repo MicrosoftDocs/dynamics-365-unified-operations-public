@@ -4,11 +4,9 @@
 title: Configure the global address book
 description: Use this procedure to set the default values and security policies for the global address book. 
 author: msftbrking 
-manager: AnnBe 
 ms.date: 07/23/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -48,3 +46,6 @@ The demo data company used to create this task is USMF. This task is intended fo
 13. In the list, find and select the desired record. Press the Shift key to select multiple roles to add to the **Selected roles** pane and then click the arrow to add the selected roles.  
 14. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

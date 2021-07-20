@@ -4,11 +4,9 @@
 title: CFO overview Power BI content
 description: This topic describes the CFO overview Microsoft Power BI content. 
 author: kweekley
-manager: AnnBe
 ms.date: 10/02/2010
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,3 +46,6 @@ The following table shows the Power BI content that the reports are copied from 
 | [Sales and profitability](sales-profitability-performance-content-pack.md) | <ul><li>Revenue by region</li><li>Top 10 customers by revenue</li><li>Top 10 products by revenue</li></ul> |
 | [Credit and collections management](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Customer past due</li><li>Customers over credit limit</li><li>Aged balances</li></ul> |
 | [Purchase spend analysis](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Purchases by month/day</li><li>Top 10 vendors by purchases</li><li>Top 10 products by purchases</li></ul> |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

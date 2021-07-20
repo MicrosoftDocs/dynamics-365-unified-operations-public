@@ -4,11 +4,9 @@
 title: Core data actions
 description: This topic covers the list of core data actions that are included with the Microsoft Dynamics 365 Commerce e-Commerce software development kit (SDK).
 author: samjarawan
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -88,3 +86,6 @@ update-primary-address | Update a customer's primary address.
 
 [Call Retail Server APIs](call-retail-server-apis.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

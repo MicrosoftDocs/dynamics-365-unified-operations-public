@@ -4,11 +4,9 @@
 title: Troubleshoot business events
 description: This topic provides information about troubleshooting business events.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -47,3 +45,6 @@ This topic provides tips for troubleshooting issues that involve business events
 |**Error:** Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information|This error message on the error tab of active business events can typically be resolved by rebuilding the catalog.
 |Alert business events don't trigger|One of the reasons why an event is not triggering could be a potential issue with alerts email functionality. Try turning off the send email option in the alert to see if that resolves the issue.
 |Unable to send test event to endpoint. Exception message: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel.|Make sure the middleware is using TLS 1.2
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

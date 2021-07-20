@@ -4,11 +4,9 @@
 title: Set up the Asset management mobile workspace
 description: This topic describes how to set up Microsoft Dynamics 365 Supply Chain Management and the Finance and Operations (Dynamics 365) mobile app to run an Asset management mobile workspace that workers can use to perform asset management tasks.
 author: johanhoffmann
-manager: tfehr
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,7 +52,7 @@ To make asset management features available in the Finance and Operations (Dynam
 1. In Supply Chain Management, select the **Settings** button (the gear symbol in upper-right corner), and then select **Mobile app** on the menu.
 1. In the **Manage mobile app** dialog box, find the **Asset Management** tile. If it contains the text "In metadata - not published," the workspace hasn't yet been published. If it contains the text "In metadata - published," the workspace has already been published, and you can skip the rest of this procedure.
 
-    ![Manage mobile app dialog box](media/mobile-workspaces.png "Manage mobile app dialog box")
+    ![Manage mobile app dialog box.](media/mobile-workspaces.png "Manage mobile app dialog box")
 
 1. Select the **Asset Management** tile, and then select **Publish** on the toolbar. After a few seconds, you should receive a notification that states that the workspace has been successfully published. Additionally, the text on the tile should change to "In metadata - published."
 
@@ -67,25 +65,28 @@ To make asset management features available in the Finance and Operations (Dynam
 
 1. Open the Finance and Operations (Dynamics 365) app. The sign-in page should appear. In the **Sign in** field, enter your Supply Chain Management URL, or select a recent URL in the **Recent environments** list, and then tap **Connect**.
 
-    ![Sign-in page](media/mobile-app-sign-in.png "Sign-in page")
+    ![Sign-in page.](media/mobile-app-sign-in.png "Sign-in page")
 
 1. If you're prompted to confirm the connection, select the **I understand** check box, and then tap **Connect**.
 1. On the **Pick an account** page, use your Microsoft account to sign in to the mobile application.
 
     The **Workspaces** page appears. It lists every mobile workspace that has been published by your Supply Chain Management instance.
 
-    ![List of workspaces](media/mobile-app-workspaces.png "List of workspaces")
+    ![List of workspaces.](media/mobile-app-workspaces.png "List of workspaces")
 
 1. If you must change the legal entity (company), tap the Menu button (sometimes referred to as the hamburger or the hamburger button) in the upper-left corner, and then tap **Change company**.
 
-    ![Changing the legal entity](media/mobile-app-change-comp.png "Changing the legal entity")
+    ![Changing the legal entity.](media/mobile-app-change-comp.png "Changing the legal entity")
 
 1. On the **Workspaces** page, select the workspace that you want to work with to open it.
 
-    ![Asset management mobile workspace](media/mobile-app-asset-workspace.png "Asset management mobile workspace")
+    ![Asset management mobile workspace.](media/mobile-app-asset-workspace.png "Asset management mobile workspace")
 
 ## Work with the Asset management mobile workspace
 
 For more information about how to work with the **Asset management** mobile workspace, see [Use the Asset management mobile workspace](asset-management-mobile-workspace.md).
 
 For more information about the Finance and Operations (Dynamics 365) mobile app, see the [Mobile app home page](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

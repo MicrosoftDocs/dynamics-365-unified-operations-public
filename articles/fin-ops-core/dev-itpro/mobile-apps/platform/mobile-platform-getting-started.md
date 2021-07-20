@@ -4,11 +4,9 @@
 title: Get started with the mobile platform
 description: This topic describes how to develop on the mobile platform.
 author: robinarh
-manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 255544
+ms.custom: ["255544", "intro-internal"]
 ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ms.search.region: Global
 # ms.search.industry: 
@@ -74,3 +72,6 @@ You're done! Launch the app from your mobile device to see the sample workspace.
 [Client APIs reference](client-apis/client-apis-reference.md)
 
 [Server APIs reference](mobile-workspace-server-apis.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

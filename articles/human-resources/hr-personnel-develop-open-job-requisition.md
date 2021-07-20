@@ -4,11 +4,9 @@
 title: Create and open job requisition
 description: Recruitment projects help you manage your recruiting process. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 02/03/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: human-resources 
 ms.technology:  
  
 # optional metadata 
@@ -16,7 +14,6 @@ ms.technology:
 ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd, HcmPersonnelManagementWorkspace  
 audience: Application User
 # ms.devlang:  
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,6 +25,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Create and open job requisition
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Recruitment projects help you manage your recruiting process. After creating a recruitment project, you can do the following tasks:
 
@@ -70,3 +69,5 @@ Recruitment projects help you manage your recruiting process. After creating a r
 32. Select **Recruitment project status**.
 33. Select **Start**. The **Started** status means that the project is ready to receive applications.  
 34. Select **OK**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

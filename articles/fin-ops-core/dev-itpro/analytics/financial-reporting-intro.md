@@ -4,11 +4,9 @@
 title: Financial reporting
 description: Financial reporting allows financial and business professionals to create, maintain, deploy, and view financial statements.
 author: aprilolson
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 68813
+ms.custom: ["68813", "intro-internal"]
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 # ms.search.industry: 
@@ -101,3 +99,6 @@ The following components of financial reporting make it easy to create, view, an
 
 ## Additional resources
 [Generate financial reports](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

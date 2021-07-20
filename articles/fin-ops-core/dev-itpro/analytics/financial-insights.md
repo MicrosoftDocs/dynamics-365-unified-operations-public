@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Financial Insights
-description: Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.
+title: Financial analysis
+description: Financial analysis uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.
 author: kweekley
-manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -29,13 +27,13 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Financial Insights
+# Financial analysis
 
 [!include [banner](../includes/banner.md)]
 
-**Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in the application. The focus of **Financial Insights** is analytical reporting. Personas across an organization can view, research, understand, and act. 
+**Financial analysis** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in the application. The focus of **Financial analysis** is analytical reporting. Personas across an organization can view, research, understand, and act. 
 
-**Financial Insights** combines data from the general ledger and subledgers to give a more complete picture of the financial health of an organization.
+**Financial analysis** combines data from the general ledger and subledgers to give a more complete picture of the financial health of an organization.
 
 > [!NOTE]
 > This document uses the following Power BI terminology:
@@ -44,14 +42,14 @@ ms.dyn365.ops.version: 7.3
 > - **Page** – A tab in a single .pbix file. Each page can contain one or more visuals.
 > - **Visual** – A single source of data, such as a card, KPI, chart, graph, matrix, or financial statement. A page that has a financial statement as a visual can have no other visuals, because of the size of the data that is being reported on.
 
-Currently, **Financial Insights** is used to view data for either the active legal entity or all legal entities. In future releases, the workspace will evolve into the place where you can use Power BI to edit and create visuals.
+Currently, **Financial analysis** is used to view data for either the active legal entity or all legal entities. In future releases, the workspace will evolve into the place where you can use Power BI to edit and create visuals.
 
-The **CFO overview** workspace shows the same visuals as **Financial Insights**, but is focused on letting you view and filter the data on existing reports. In future releases, you will be able to add new visuals to the **Financial Insights** workspace. The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers. The **CFO overview** workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.
+The **CFO overview** workspace shows the same visuals as **Financial analysis**, but is focused on letting you view and filter the data on existing reports. In future releases, you will be able to add new visuals to the **Financial analysis** workspace. The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers. The **CFO overview** workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.
 
 ## Dynamics 365 Finance setup
 **General ledger**
 
-The main account type and the main account categories are used to fill in appropriate default main accounts on the **Balance sheet** financial statement and the various **Income statement** financial statements in **Financial Insights**.
+The main account type and the main account categories are used to fill in appropriate default main accounts on the **Balance sheet** financial statement and the various **Income statement** financial statements in **Financial analysis**.
 
 On the **Main accounts** page, you must define your main account so that one of the following types is assigned to it:
 
@@ -63,24 +61,20 @@ On the **Main accounts** page, you must define your main account so that one of 
 
 Do not assign any other main account type, such as **Balance sheet** or **Profit and Loss**, to your main accounts. Reporting can't determine the type of main account when other main account types are assigned, because they aren't granular enough. The type of main account must be determined to show liabilities and revenue as positive amounts on financial reports.
 
-To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category. The main account categories have been enhanced so that they include a display order. The display order is used specifically on financial statements in **Financial Insights**. After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement. If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to the application.
+To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category. The main account categories have been enhanced so that they include a display order. The display order is used specifically on financial statements in **Financial analysis**. After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement. If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to the application.
 
 ## Entity store
-The data for **Financial Insights** is pulled from the Entity store (**System administration** \> **Setup** \> **Entity store**). If you open the **CFO overview** or **Financial Insights** workspace, and the following warning message appears in the visuals, you must update the entities.
+The data for **Financial analysis** is pulled from the Entity store (**System administration** \> **Setup** \> **Entity store**). If you open the **CFO overview** or **Financial analysis** workspace, and the following warning message appears in the visuals, you must update the entities.
 
-![Warning](./media/Cantdisplay.png)
+![Warning.](./media/Cantdisplay.png)
 
-You must update the following entities to see data in the **Financial Insights** and **CFO overview** workspaces:
+You must update the following entities to see data in the **Financial analysis** workspace:
 
-- BudgetActivityMeasure
 - Financial reporting transaction data version 3 
-- CustCollectionsBIMeasurements
-- LedgerActivityMeasure
+- Credit and collections V2
 - LedgerCovLiquidityMeasurement
 - Purchase cube
 - Sales cube
-
-In the previous release, the LedgerActivityMeasure and VendPaymentBIMeasure entities were used for data in the **CFO overview** workspace. However, they are no longer used in the current release.
 
 You can define a recurring batch to regularly update the data in the entities. Because each entity is completely rebuilt during an update, select the time and frequency of entity updates carefully. The primary entity that is used for financial statements is the FinancialReportingTransactionData entity. Therefore, you might decide to update that entity more often.
 
@@ -89,18 +83,17 @@ Currently, the data on embedded Power BI reports can't be limited to the legal e
 
 | Duty                                    | Roles | Description |
 |-----------------------------------------|-------|------------|
-| View CFO Overview workspace             | Chief Financial Officer | This duty provides access to the CFO overview workspace. By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities. |
-| View financial insights current company | <ul><li>Accountant</li><li>Accounting manager</li><li>Accounting supervisor</li><li>Auditor</li><li>Budget manager</li><li>Chief executive officer</li><li>Chief financial officer</li><li>Financial controller</li></ul> | This duty provides access to Financial Insights. By default, the active company is used as a filter. You can't add other legal entities. |
-| View financial insights cross company   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn't assigned to a role. In the next release, this duty will be assigned to the Chief financial officer role. | This duty provides access to the menu item for the CFO overview workspace. By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities. |
+| View financial analysis current company | <ul><li>Accountant</li><li>Accounting manager</li><li>Accounting supervisor</li><li>Auditor</li><li>Budget manager</li><li>Chief executive officer</li><li>Chief financial officer</li><li>Financial controller</li></ul> | This duty provides access to Financial analysis. By default, the active company is used as a filter. You can't add other legal entities. |
+| View financial analysis all company   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn't assigned to a role. In the next release, this duty will be assigned to the Chief financial officer role. | This duty provides access to the menu item for the CFO overview workspace. By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities. |
 
 
-## Financial reporting vs. Financial insights
-Although **Financial insights** contains financial statements, it isn't a replacement for Financial reporting in the application. The default financial statements in **Financial insights** are limited in scope and don't include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
+## Financial reporting vs. Financial analysis
+Although **Financial analysis** contains financial statements, it isn't a replacement for Financial reporting in the application. The default financial statements in **Financial analysis** are limited in scope and don't include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
 
 The following comparison chart will help differentiate the two options:
 
 
-|                                                          | Financial Reporting                                               | Financial Insights |
+| Feature                                                   | Financial Reporting                                               | Financial analysis |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
 | **Edit default reports**                                 | Yes                                                               | No |
 | **Create new reports**                                   | Yes                                                               | No |
@@ -114,7 +107,7 @@ The following comparison chart will help differentiate the two options:
 | **report on external data**                              | No                                                                | No |
 | **Support consolidations**                               | Yes                                                               | Limited Can report on multiple companies but use accounting currency only |
 
-In addition to the user interface in the original **CFO overview** workspace, new KPIs, charts, and financial statements are now available. The following financial statements are available:
+The following financial statements are available:
 
 - Trial balance
 - Balance sheet
@@ -127,7 +120,7 @@ In addition to the user interface in the original **CFO overview** workspace, ne
 - Sales by customer
 
 ## Edit visuals
-In the initial release of **Financial Insights**, none of the visuals can be edited. In future releases, users who have the appropriate security will be able to create new visuals, copy existing visuals, and edit visuals. Although the .pbix files that contain the reports are available as resources, we don't recommend that you edit the default reports. Additional changes will be made to the data model, default reports, and custom financial statement visual that are used to create the financial statements. Therefore, to take advantage of new features and changes to the data model in the next release, you will have to redo any changes that you made to the default reports through Microsoft Power BI Desktop.
+In previous releases of **Financial analysis**, none of the visuals could be edited. In future releases, users who have the appropriate security will be able to create new visuals, copy existing visuals, and edit visuals. Although the .pbix files that contain the reports are available as resources, we don't recommend that you edit the default reports. Additional changes will be made to the data model, default reports, and custom financial statement visual that are used to create the financial statements. Therefore, to take advantage of new features and changes to the data model in the next release, you will have to redo any changes that you made to the default reports through Microsoft Power BI Desktop.
 
 ## Filtering
 Users can filter the report by using the **Filter** pane on the left. This pane is the same pane that is available through Power BI Desktop. There are various levels of filtering, some of which might not be available, depending on what you've selected on a page (tab) or whether you're using the drill-through capabilities:
@@ -137,7 +130,7 @@ Users can filter the report by using the **Filter** pane on the left. This pane 
 - **Visual-level filters** – These filters are applied only to the selected visual. These filters are applied on top of the page level filters.
 - **Drill-through filter** – This filter filters from a “source” visual that is applied to the current visual when you drill through from the source visual to the current visual.
 
-![Filter options](./media/filter.png)
+![Filter options.](./media/filter.png)
 
 To remove a specific filter value, select the eraser symbol next to it. Don't remove a filter by selecting the X. If you select the X, the field that you're filtering on is removed as a filter option. If you accidentally remove a field from the filter, close the workspace, and then reopen it. The default filter settings will be reapplied.
 
@@ -161,7 +154,7 @@ The **Balance by bank account** visual uses amounts in the bank accounts' curren
 
 The default financial statements don't include any financial dimensions but are focused only on the main account. Support for financial dimensions will be available in future releases, when the reports become editable. Organizations will then be able to filter on financial dimension values.
 
-Some financial statements contain dimensions that are based on subledger transactions. The goal of the new financial statements it to enable filtering on dimensions that aren't set up as financial dimensions. For example, the default Expenses by vendor report lets you expand down beyond the main account, so that you can see the balances broken down by vendor. The vendor isn't set up as a financial dimension. Instead, the system returns to the originating subledger transaction to find the vendor.
+Some financial statements contain dimensions that are based on subledger transactions. The goal of the new financial statements is to enable filtering on dimensions that aren't set up as financial dimensions. For example, the default Expenses by vendor report lets you expand down beyond the main account, so that you can see the balances broken down by vendor. The vendor isn't set up as a financial dimension. Instead, the system returns to the originating subledger transaction to find the vendor.
 
 The following dimensions are used on the default reports. None of these dimensions are financial dimensions.
 
@@ -174,7 +167,7 @@ The following dimensions are used on the default reports. None of these dimensio
 - City
 
 > [!IMPORTANT] 
-> If you summarize transactions for multiple vendors or customers in a single voucher by using the financial journals, the data will be incorrect. Reporting can't determine which vendor or customer is related to a specific ledger account in a journal entry, because that information isn't maintained anywhere. Therefore, we do not recommend that you enter multiple vendors, customers, fixed assets, or projects in a single voucher.
+> If you summarize transactions for multiple vendors or customers in a single voucher by using the financial journals, the data will be incorrect. The reporting process can't determine which vendor or customer is related to a specific ledger account in a journal entry, because that information isn't maintained anywhere. Therefore, we do not recommend that you enter multiple vendors, customers, fixed assets, or projects in a single voucher.
 
 ## Drill on data
 
@@ -182,25 +175,25 @@ Various levels of drilling are available through Power BI. Each level has a diff
 
 In the following illustration, the **Trial balance** statement is collapsed to the highest level of the row hierarchy, the main account type.
 
-![Trial balance statement](./media/trial-balance.png)
+![Trial balance statement.](./media/trial-balance.png)
 
 To view the next level of the hierarchy, the main account categories, you can set the **Drill on** field to **Rows** and then select the **Expand** button (the third button after the Drill on field). You now see all the main account categories expanded. Currently, Power BI doesn't let you expand only one row or column but still see all the other rows or columns.
 
-![Trial balance drill down on rows](./media/trial-balance2.png)
+![Trial balance drill down on rows.](./media/trial-balance2.png)
 
 To expand to the main accounts for all rows, you can again use the **Expand** button. However, to drill down to the main accounts for only one row, first select the **Drill down** button (the single downward-pointing arrow on the right side of the window), and then select the row to drill down on. The following illustration shows the result when the **Sales** row is selected after the **Drill down** button is selected.
 
-![Trial balance expand button](./media/trial-balance3.png)
+![Trial balance expand button.](./media/trial-balance3.png)
 
-After you drill down on a single row, multiple clicks are required in order to return to the full trial balance. The **Drill up** button (the first button after the **Drill** on field) drills up only in the context of the **Sales** category, as shown in the following illustration.
+After you drill down on a single row, multiple clicks are required to return to the full trial balance. The **Drill up** button (the first button after the **Drill** on field) drills up only in the context of the **Sales** category, as shown in the following illustration.
 
-![Trial balance drill up button](./media/trial-balance4.png)
+![Trial balance drill up button.](./media/trial-balance4.png)
 
 You can continue to use the **Drill up** button to return to the highest level of summarization for the rows.
 
 Power BI also has a button that lets you go to the next level in the hierarchy (the second button after the **Drill on** field). The effect of this button differs from the effect of the **Expand** button (the third button after the **Drill on** field), which is used to expand the hierarchy. When you expand the hierarchy, the hierarchy is maintained on the report. For example, as was shown earlier, if you expand on the main account type, you still see the main account type on the report. However, when you go to the next level in the hierarchy, the report no longer shows the parent in the hierarchy, as shown in the following illustration.
 
-![Trial balance drill back button](./media/trial-balance5.png)
+![Trial balance drill back button.](./media/trial-balance5.png)
 
 To see the transaction details behind the summarized balances, you can select some amounts to drill back into Financial and Operations.
 
@@ -239,7 +232,7 @@ Currently, the financial statements don't support the organizational hierarchies
 ## Data limitations
 The financial statement visuals have a limit on the number of rows that can be shown. Currently, the limit is set to 30,000. If you exceed this limit, the visual will have a warning symbol to notify you about this situation.
 
-![Data limitations](./media/data-limit.png)
+![Data limitations.](./media/data-limit.png)
 
 If the maximum is exceeded, the totals that appear on the financial statement will be incorrect, because not all the rows were loaded into the visual.
 
@@ -249,8 +242,11 @@ Power BI doesn't provide an option to hide and show empty rows. If a row doesn't
 
 ## Additional resources for Power BI
 
-The information in the following resources isn't required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports.
+The information in the following resources isn't required in order to enable the embedded reports for the **Financial analysis** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports.
 
-- [Accessing Analytical Workspaces and Reports on 1-box environment](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
+- [Accessing Analytical Workspaces and Reports on 1-box environment](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)
 
-- [Add analytics to workspaces by using Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+- [Add analytics to workspaces by using Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

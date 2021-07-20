@@ -4,11 +4,9 @@
 title: LIFO with physical value and marking
 description: Last in, First out (LIFO) is an inventory model in which the last (newest) receipts are issued first. Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction. 
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,7 +59,7 @@ In this example, the item model group isn't marked to include physical value. Th
 
 The new running average cost price reflects the average of the financially updated transactions, USD 15.00. The following illustration shows the effects of the LIFO inventory model on this series of transactions when the **Include physical value** option isn't used. 
 
-![LIFO without Include Physical Value](./media/lifowithoutincludephysicalvalue.gif) 
+![LIFO without Include Physical Value.](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -97,7 +95,7 @@ Transaction 6a will be adjusted to receipt transaction 4b. The system won't sett
 
 The following illustration shows the effects of the LIFO inventory model on this series of transactions when the **Include physical value** option is used. 
 
-![LIFO with Include Physical Value](./media/lifowithincludephysicalvalue.gif) 
+![LIFO with Include Physical Value.](./media/lifowithincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -141,7 +139,7 @@ The new running average cost price reflects the average of the financially and p
 
 The following illustration shows the effects of the LIFO inventory model on this series of transactions when marking between issues and receipts is used. 
 
-![LIFO with Marking](./media/lifowithmarking.gif) 
+![LIFO with Marking.](./media/lifowithmarking.gif) 
 
 **Key to diagram**
 
@@ -156,3 +154,6 @@ The following illustration shows the effects of the LIFO inventory model on this
 - Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
 - Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

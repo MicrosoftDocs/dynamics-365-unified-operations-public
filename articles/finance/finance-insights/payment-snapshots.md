@@ -4,11 +4,9 @@
 title: Snapshots overview (Preview)
 description: This topic describes the snapshots feature, which lets you save a cash flow forecast for analysis or comparison with actuals later. When you generate a cash flow forecast, you can save that forecast as a "snapshot." You can then use that snapshots to edit the accounts that were included in the forecast, or compare the forecast in the snapshot to actuals.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/19/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 14151
+ms.custom: ["14151", "intro-internal"]
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 # ms.search.industry: 
@@ -32,7 +30,6 @@ ms.dyn365.ops.version: AX 10.0.12
 # Snapshots overview (Preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Snapshots let organizations edit and save information about their cash position and cash forecasts at a point in time. You can compare the snapshot with actual financials, examine the variance, and use that information to improve cash flow forecasts over time. More specifically, snapshots can be used in the following ways:
 
@@ -50,5 +47,4 @@ To compare multiple snapshots, select **Compare snapshots**. You can compare two
 
 To compare actual financial results with a forecast that was saved as a snapshot, select **Compare with actuals**. The **Compare snapshot** page will show a comparison of the actual amounts and the forecast. The chart in the upper section of the page shows a comparison of the cash inflows, cash outflows, and bank balances in the overlapping periods between the two snapshots. The grid in the lower section shows a detailed comparison of actual balances per period and the forecasted balance for each liquidity amount. The **Variance** column in the grid shows the difference between the actual balance in a period to the forecasted balance.
 
-#### Privacy notice
-Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

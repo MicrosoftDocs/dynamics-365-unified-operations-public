@@ -4,11 +4,9 @@
 title: Service orders  
 description: A service order represents a visit that a service technician makes to a customer site on a specific date.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -92,3 +90,6 @@ During the second half of the year, your customer decides that the service visit
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

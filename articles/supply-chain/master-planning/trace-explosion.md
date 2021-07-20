@@ -4,11 +4,9 @@
 title: Use tracing for explosion
 description: This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -44,10 +42,12 @@ By enabling tracing, you can view information about the factors that contributed
 
 You can view details about futures and actions for a selected order. On the **Explosion** page, tracing information is available on the **Explanation** tab in the upper pane. Tracing occurs when you explode an order. To start tracing for the order, click **Update**, and then select the **Enable trace** check box. You can use the **Find text** field to search the log for specific information. Search results are highlighted in the tree.
 
-Additional resources
---------
+## Additional resources
 
 [Master plans overview](master-plans.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

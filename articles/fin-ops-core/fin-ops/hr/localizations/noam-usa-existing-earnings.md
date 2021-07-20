@@ -2,13 +2,11 @@
 # required metadata
 
 title: Process existing earnings
-description: This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement. You must release earnings statement lines before you generate pay statements.
+description: This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -82,3 +80,6 @@ After you finalize all the earnings, you're ready to generate pay statements. Fo
 ## Additional resources
 
 [Earnings and earnings generation FAQ](noam-usa-earnings-generation-process.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

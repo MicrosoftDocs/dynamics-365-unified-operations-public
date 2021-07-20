@@ -4,11 +4,9 @@
 title: Wizard form pattern
 description: This article provides information about the Wizard form pattern. A wizard is a user assistance form that takes the user through a task.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,14 +33,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the Wizard form pattern. A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages.
 
-Usage
------
+## Usage
 
 A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages. Wizards are especially useful for complex or infrequent tasks that the user might have difficulty learning or doing, or for tedious, frequently performed tasks.
 
 ## Wireframe
 
-[![Wireframe for Wizard form](./media/wizard1-1024x574.png)](./media/wizard1.png)
+[![Wireframe for Wizard form.](./media/wizard1-1024x574.png)](./media/wizard1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -100,7 +97,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **WrkCtrBulkResReqEditWizard** 
 
-![Wizard example](./media/wizard2.png)
+![Wizard example.](./media/wizard2.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -115,9 +112,12 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN Wizards in Microsoft Dynamics AX \[AX 2012\]](https://msdn.microsoft.com/library/aa622644.aspx)
--   [MSDN Guidelines for Wizard Development \[AX 2012\]](https://msdn.microsoft.com/library/aa853845.aspx)
+-   [MSDN Wizards in Microsoft Dynamics AX \[AX 2012\]](/dynamicsax-2012/developer/wizards-in-microsoft-dynamics-ax)
+-   [MSDN Guidelines for Wizard Development \[AX 2012\]](/dynamicsax-2012/developer/guidelines-for-wizard-development)
 
 #### AX 2012 example
 
-[![Previous version example](./media/wizard3.png)](./media/wizard3.png)
+[![Previous version example.](./media/wizard3.png)](./media/wizard3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

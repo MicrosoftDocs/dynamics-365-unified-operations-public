@@ -4,11 +4,9 @@
 title: Configure export to Azure Data Lake
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
-manager: AnnBe
-ms.date: 01/04/2021
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -17,8 +15,7 @@ ms.technology:
 # ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 ms.custom: 96283
 ms.assetid: 
@@ -35,24 +32,27 @@ ms.dyn365.ops.version: Platform Update 33
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Azure Data Lake** feature is in limited preview and may not be available in all regions and environments supported by Finance and Operations apps. If you are unable to find the **Export to Azure Data Lake** functionality in Lifecycle Services (LCS) or your Finance and Operations apps, this feature is not currently available in your environment. 
+> The **Export to Data Lake** feature is in public preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS).
 >
-> Currently, previews are closed. In the coming months we will enable additional environments in several regions. We are accepting requests from customers who would like to join the preview. If you would like to join a future preview, [complete the survey](https://aka.ms/FnODataLakePreviewSurvey). We will contact you when we are ready to include you. You can also join a Yammer group by [completing the survey](https://aka.ms/FnODataLakePreviewSurvey). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature.  
+> **The feature may be temporarily unavailable during the preview period in your environment or the feature may not be available in your region.**
+> 
+> In the coming months, Microsoft will enable this feature in additional regions, as well as in additional environments. If your environment isn't in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
 >
-> Until the feature is enabled in your environment, you have the option to prototype/plan the feature implementation using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). The tools will enable you to export data from your sandbox environment into a storage account in the same format as exported by the feature. 
->
-> At this time, **Export to Azure Data Lake** feature is not available in Tier-1 (developer) environments. You need a cloud-based Tier-2 or higher environment to enable this feature.
->
-> To make aggregate measurements available in a data lake, continue to use the feature in the manner that is described in [Make entity store available as a Data Lake](entity-store-data-lake.md).
+> The **Export to Data Lake** feature isn't available in Tier-1 (developer) environments. You must have a cloud-based Tier-2 or higher sandbox environment to enable this feature. 
+> 
+> In your Tier-1 (developer) environment, you can prototype or plan the feature implementation by using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). The tools let you export data from your Tier-1 or sandbox environment into a storage account in the same format that is exported by the feature. 
+> 
+> **Use of this feature in production environments isn't supported while it's in preview.** You can't enable this feature in production environments. You can preview it only in your sandbox (Tier-2 or above) environments.
 
-## <a name="createServicePrinciple"></a> Create Service Principle for Microsoft Dynamics ERP Microservices
 
-The **Export to Azure Data Lake** feature is built using a microservice that exports Finance and Operations app data to Azure Data Lake and keeps the data fresh. Microservice uses the Azure service principle, **Microsoft Dynamics ERP Microservices**, to securely connect to your Azure resources. Before you configure the Export to Data Lake feature, add the  **Microsoft Dynamics ERP Microservices** service principle to your Azure Active Directory (Azure AD). This step enables Azure AD to authenticate the microservice. 
+## <a name="createServicePrincipal"></a> Create Service Principal for Microsoft Dynamics ERP Microservices
+
+The **Export to Azure Data Lake** feature is built using a microservice that exports Finance and Operations app data to Azure Data Lake and keeps the data fresh. Microservice uses the Azure service principal, **Microsoft Dynamics ERP Microservices**, to securely connect to your Azure resources. Before you configure the Export to Data Lake feature, add the  **Microsoft Dynamics ERP Microservices** service principal to your Azure Active Directory (Azure AD). This step enables Azure AD to authenticate the microservice. 
 
 > [!NOTE]
 > You will need **Azure Active Directory tenant administrator** rights to perform these steps.
 
-To add the service principle, complete the following steps.
+To add the service principal, complete the following steps.
 1. Launch the Azure portal and go to the Azure Active Directory.
 2. On the left menu, select **Manage** > **Enterprise Applications**, and search for the following applications.
 
@@ -85,12 +85,14 @@ The steps, which take place in the Azure portal, are as follows:
 > [!NOTE]
 > When you are working in the Azure portal, you will be instructed to save several values for subsequent steps. You will also provide some of these values to your Finance and Operations apps by using Lifecycle Services (LCS). You will need Administrator access to LCS in order to do this.
 1. [Create an application in Azure Active Directory](#createapplication)
-2. [Grant access control roles to applications](#grantaccess)
-3. [Create a Data Lake Storage (Gen2 account) in your subscription](#createsubscription)
+2. [Create a Data Lake Storage (Gen2 account) in your subscription](#createsubscription)
+3. [Grant access control roles to applications](#grantaccess)
 4. [Create a key vault](#createkeyvault)
 5. [Add secrets to the key vault](#addsecrets)
 6. [Authorize the application to read secrets in the key vault](#authorize)
-7. [Install the Export to Data Lake add-in in LCS](#installaddin)
+7. [Power Platform integration](#powerplatformintegration)
+8. [Install the Export to Data Lake add-in in LCS](#installaddin)
+
 
 ## <a name="createapplication"></a>Create an application in Azure Active Directory
 
@@ -100,7 +102,7 @@ The steps, which take place in the Azure portal, are as follows:
     -  **Name:** Enter a name for the app.
     -   **Supported Account types**: Choose the appropriate option.
 
-3. After the application is created, select it and then copy and save the <a name="appid"></a>Application (client) ID at the top of the page. You will need this later.
+3. After the application is created, select it, and then copy and save the <a name="appid"></a>Application (client) ID at the top of the page. You will need this later.
 4. On the left navigation pane, select **API permissions**.
 5. Select **Add a permission**, and in the **Request API permissions** dialog box, select **Azure Key vault**.
 6. Select **Delegated permissions**, select **user_impersonation**, and then select **Add permissions**.
@@ -132,19 +134,20 @@ You need to grant your application permissions to read and write to the storage 
 2. Select **Access Control (IAM)** in the left navigation. 
 3. On the **Access control** page, select the **Role assignments** tab.
 4. Select **Add** at the top of the page, and then select **Add role assignment**.
-5. In the **Add role assignment** dialog, select the **Role** field, and then select **Owner**.
+5. In the **Add role assignment** dialog box, select the **Role** field, and then select **Storage blob data contributor**.
+6. In the **Select** field, select the application that you registered earlier.
 
 > [!NOTE]
 > Don't make any changes to the fields, **Assign access to** and **Azure AD user, group, or service principal**.
 
-6. In the **Select** field, select the application that you registered earlier.
 7. Select **Save**.
-8. Add the remaining roles shown in the following table by repeating steps 4-7.
+8. Repeat steps 4-7 to add the **Storage blob data reader** role, as shown.
+9. Validate the storage account role assignment for [the application](#appid) you created earlier. 
 
-|   Application to be selected     |     Role to be assigned     |
-|----------------------------------|-----------------------------|
-| [The application](#appid) you created earlier | Storage blob data contributor |
-| [The application](#appid) you created earlier | Storage blob data reader     |
+     |   Application     |     Role     |
+     |----------------------------------|-----------------------------|
+     | [The application](#appid) you created earlier | Storage blob data contributor |
+     | [The application](#appid) you created earlier | Storage blob data reader     |
 
 ## <a name="createkeyvault"></a>Create a key vault
 
@@ -159,7 +162,7 @@ A key vault is a secure way to share details such as storage account name to you
 
 You are going to create three secrets in the Key vault and then add the values saved from previous steps. For each of the secrets, you will need to provide a secret name and provide the value you saved from earlier steps.
 
-| <a name="suggest"></a>**Suggested secret name** | **Secret value that you saved earlier**  | **Example** |
+| <a name="suggest"></a>**Suggested secret name** | **Secret value that you saved earlier**  | **Example secret value** |
 |---------------------------|------------------------------------------------------------------|-------------|
 | app-id                    | The ID of the application [created earlier](#appid).             |8936e905-197b-xxx-xxxx-xxxxxxxxx|
 | app-secret                | The [client secret](#secret) specified earlier.                  |NaeIxxxxxxx---xxxx7eixxx~1g-|
@@ -183,7 +186,7 @@ You will notice the secret created in the list of secrets.
 4. In the **Add access policy** dialog box, in the **Select principal** field, locate and select the application, **Microsoft Dynamics ERP Microservices**, and then click **Select**. 
 
 > [!NOTE]
-> If you can't find **Microsoft Dynamics ERP Microservices**, see the [Create Service Principle](#createServicePrinciple) section in this document.
+> If you can't find **Microsoft Dynamics ERP Microservices**, see the [Create Service Principal](#createServicePrincipal) section in this document.
 
 5. In the **Secret permissions** fields, select **Get** and **List**.  
 6. In the **Access policy** dialog, select **Add**.
@@ -196,7 +199,25 @@ You should see application with access to your key vault as shown below.
 
 7.  Select **Save**.
 
+## <a name="powerplatformintegration"></a>Power Platform integration 
+If this is the first time you are installing add-ins in this environment, you may need to enable the **Power Platform integration**  for this environment. There are two options to set up Power Platform integration in Finance and Operations app environments.
 
+### Option 1: Set up Power Platform integration using LCS
+
+To set up Power Platform integration from LCS, see [Add-ins overview](../power-platform/add-ins-overview.md).
+
+
+### Option 2: Set up Power Platform integration using the Dual-write wizard
+
+Another way to set up **Power Platform integration** is to create a Power Platform environment with a database and then use the Dual-write setup. Complete the following steps to create the Power Platform environment and complete the integration. 
+
+1. [Create an environment with database](/power-platform/admin/create-environment#create-an-environment-with-a-database.md).
+2. [Complete the requirement and prerequisite](dual-write/requirements-and-prerequisites.md).  
+3. Use the [dual-write wizard to link your environment](dual-write/link-your-environment.md).
+4. Validate that the Power Platform integration is set up and added in the LCS environment page.  
+
+> [!NOTE]
+> If you use this approach, you must select a Power Platform environment that is in the same region as your Finance and Operations environment. If you select a Power Platform environment that is in a different region, installation of the add-in might fail.
 
 ## <a name="installaddin"></a>Install the Export to Data Lake add-in in LCS 
 
@@ -214,9 +235,20 @@ You need the following information before you start. Keep the information handy 
 
 1.  Sign in to [LCS](https://lcs.dynamics.com) and navigate to your environment.
 2.  On the **Environment** page, select the **Environment add-ins** tab. If **Export Data Lake** appears in the list, the Data Lake add-in is already installed, and you can skip the rest of this procedure. Otherwise, complete the remaining steps.
-3.  Select **Install a new add-in**, and in the dialog box, select **Export to Data lake** in the list. If **Export to data lake** isn't listed, the feature might not be available for your environment at this time.
-4.  In the **Setup add-in** dialog box, provide the required information. To answer the questions, you must already have a storage account. If you don't already have a storage account, create one, or ask your admin to create one on your behalf.
+3.  Select **Install a new add-in**, and in the dialog box, select **Export to Data lake**. If **Export to data lake** isn't listed, the feature might not be available for your environment at this time.
+4.  In the **Setup add-in** dialog box, enter the required information. To answer the questions, you must already have a storage account. If you don't already have a storage account, create one, or ask your admin to create one on your behalf.
 5.  Accept the terms of the offer by selecting the check box, and then select **Install**.
 
 The system installs and configures the data lake for the environment. After installation and configuration are complete, you should see **Azure Data Lake** listed on the **Environment** page.
 
+## <a name="troubleshooting"></a> Troubleshooting
+
+### Error UnableToInitializeLakeDueToUserError
+
+The error, **UnableToInitializeLakeDueToUserError** indicates that the **Export to Data Lake** service can't connect to a storage account or [the application](#appid) doesn't have the required access to the storage account. To resolve this issue, try the following:
+
+- Validate that the secret values stored in the key vault are valid and correct. For more information, see [add secrets to the key vault](#addsecrets).   
+- Validate that the Azure Active Directory (Azure AD) app you have requires access to the storage account. For more information, see [Grant access control roles to applications](#grantaccess).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

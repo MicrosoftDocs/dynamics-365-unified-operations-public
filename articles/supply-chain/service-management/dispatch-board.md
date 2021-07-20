@@ -4,11 +4,9 @@
 title: Dispatch board   
 description: A dispatch board is the central location from which you can view the status of activities in a service order. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,3 +55,6 @@ For information about how to perform specific tasks in a dispatch board, see the
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Workflow subsystem updates in Finance and Operations
 description: This topic reviews the workflow system in Finance and Operations.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -56,10 +54,12 @@ Here are the primary changes that have been implemented in Finance and Operation
 -   Workflow development wizards have been ported into Microsoft Visual Studio.
 
 
-Additional resources
---------
+## Additional resources
 
 [Technical Concepts Guide for Developers](../dev-tools/developer-home-page.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Troubleshoot purchase orders
 description: This topic describes how to fix issues that you might encounter while you work with purchase orders.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -147,3 +145,6 @@ This behavior is by design. The selected address must be classified as a deliver
 ## Can I find the user who canceled a purchase order?
 
 This information is tracked only if the purchase order is subject to change management. If you use change management, you can see who submitted the change (the cancellation), and who approved it.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

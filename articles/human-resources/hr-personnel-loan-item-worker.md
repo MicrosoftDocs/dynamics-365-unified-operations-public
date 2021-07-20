@@ -4,11 +4,9 @@
 title: Loan item to a worker
 description: This procedure shows how to loan an item to a worker and record the worker returning an item. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,7 +14,6 @@ ms.technology:
 ms.search.form: HcmPersonLoan, HcmPersonLookup, HcmPersonnelManagementWorkspace
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -27,6 +24,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Loan item to a worker
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -47,3 +46,6 @@ This procedure shows how to loan an item to a worker and record the worker retur
 2. Click Edit.
 3. In the Actual return field, enter a date.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

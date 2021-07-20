@@ -4,11 +4,9 @@
 title: Create a default customer
 description: This topic describes how to create a default customer to use when creating a channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,12 +27,9 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Create a default customer
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to create a default customer to use when creating a channel in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 When creating a channel, you will need to provide a default customer. A default customer can easily be created after first creating the customer group and customer address book.
 
@@ -56,7 +51,7 @@ To create a customer group, follow these steps.
 
 The following image shows several configured customer groups.
 
-![Customer groups](media/customer-groups.png)
+![Customer groups.](media/customer-groups.png)
 
 ## Create a customer address book
 
@@ -72,7 +67,7 @@ To create a customer address book, follow these steps.
 
 The following image shows an example address book.
 
-![Address book](media/address-book.png)
+![Address book.](media/address-book.png)
 
 ## Create a default customer
 
@@ -95,11 +90,11 @@ To create a default customer, follow these steps.
 
 The following image shows an example of customer creation.
 
-![Default customer creation](media/default-customer-creation.png)
+![Default customer creation.](media/default-customer-creation.png)
 
 The following image shows a default customer configuration.
 
-![Sample customer configuration](media/default-customer-configuration1.png)
+![Sample customer configuration.](media/default-customer-configuration1.png)
 
 Most of the default values on the customer detials screen can remain, but two values should be changed.
 
@@ -109,10 +104,13 @@ Most of the default values on the customer detials screen can remain, but two va
 
 The following image shows an example customer configuration.
 
-![Example customer configuration](media/default-customer-configuration2.png)
+![Example customer configuration.](media/default-customer-configuration2.png)
 
 ## Additional resources
 
 [Channels overview](channels-overview.md)
 
 [Channel setup prerequisites](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Item and raw material tracing in inventory, production, and sales
 description: This topic describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes. 
-author: perlynne
-manager: tfehr
+author: sherry-zheng
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
 # ms.search.industry:
-ms.author: pjacobse
+ms.author: chuzheng
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -144,3 +142,6 @@ You can generate the **Shipped to customers** report to identify the amount of t
 
 ## Can I trace coproducts and byproducts?
 You can trace co-products, but you can’t trace a by-product, because tracking dimensions aren't typically assigned to by-products. When you trace an item, the trace details include any related co-products. A node that contains a co-product includes the word “co-product” in the details. You can also view details about a co-product by selecting the node in the trace details and then clicking the **Production** FastTab.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

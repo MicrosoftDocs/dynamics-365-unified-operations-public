@@ -4,11 +4,9 @@
 title: Organize report components in report designer
 description: This topic explains how to organize existing reports, building blocks, and objects in report designer.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -54,7 +52,7 @@ You can group report definitions to generate multiple reports at the same time. 
 ### Create a report group
 
 1. In Report Designer, in the navigation pane, click **Report Groups**.
-2. On the **File** menu, click **New** &gt; **Report Group Definition** to open a new report group in the viewer window. Alternatively, click the **Report Group** button ![Report Group](media/report-group.gif "Report Group") on the toolbar.
+2. On the **File** menu, click **New** &gt; **Report Group Definition** to open a new report group in the viewer window. Alternatively, click the **Report Group** button ![Report Group.](media/report-group.gif "Report Group") on the toolbar.
 3. Click the **Report Group** tab. To override the information on the individual report definitions for the generation of this report, select the **Override company, detail, and date settings from individual report definitions** check box. The company name, detail level, provisional setting, and date information are entered automatically, but you can make updates.
 4. To generate multiple reports that show the reporting currencies, select the **Include all reporting currencies** check box. You can then access multiple views by clicking the **Currency** button in the Web Viewer when you view the report.
 5. In the **Reports in group** field, click **Add** to select the reports to include in the report group. To select multiple reports in the **Add** dialog box, hold down the Ctrl key while you select reports. When you've finished selecting reports, click **OK**.
@@ -65,7 +63,7 @@ You can group report definitions to generate multiple reports at the same time. 
 1. In Report Designer, in the navigation pane, click **Report Groups**.
 2. Double-click the report group to modify.
 3. On the **Report Group** tab, make the changes that you want.
-4. On the **File** menu, click **Save** to save the modified report group, Alternatively, click the **Save** button ![Save](media/save.gif "Save") on the toolbar.
+4. On the **File** menu, click **Save** to save the modified report group, Alternatively, click the **Save** button ![Save.](media/save.gif "Save") on the toolbar.
 
 > [NOTE]
 > If you've scheduled reports so that they are generated at set intervals, you can override those settings and generate a report immediately.
@@ -74,7 +72,7 @@ You can group report definitions to generate multiple reports at the same time. 
 
 1. In Report Designer, in the navigation pane, click **Report Groups**.
 2. Open the report group to generate.
-3. Click the **Generate Report** button ![Generate Report](media/generate-report.gif "Generate Report") to generate reports.
+3. Click the **Generate Report** button ![Generate Report.](media/generate-report.gif "Generate Report") to generate reports.
 
 ### Delete a report group
 
@@ -154,3 +152,6 @@ Only default base period settings are saved with the report definition.</td>
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

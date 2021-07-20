@@ -4,11 +4,9 @@
 title: Primary forms for NVFA, Working clothes and Special riggings (Russia)
 description: This topic provides information about Primary forms for NVFA, Working clothes and Special riggings for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -89,3 +87,6 @@ Use the **Working clothes**, **Special rigging**, or **Not valuable FAs** page l
 6.  Click the **Officials** tab. The details of the assigned officials are displayed. You can modify the employee details if changes are required.
 
 7.  Click **Print** to generate the NVFA statement of writing-off (No. MB-8).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

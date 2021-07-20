@@ -4,11 +4,9 @@
 title: CFDI layout version 3.3
 description: This topic provides information about Comprobante Fiscal Digital por Internet (CFDI) layout version 3.3 for Mexico.
 author: sndray
-manager: AnnBe
 ms.date: 10/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -256,7 +254,7 @@ This section describes the processing and setup of an advance customer payment s
 2. **CFDI invoice** – After the operation is realized, and the advance payment is applied, the company must issue the CFDI invoice of operation and details of the CFDI advance payment UUID that was issued in step 1.
 3. **CFDI advance payment reverse** – An electronic invoice is issued to reverse the advance payment that was applied.
 
-![Advance payment process](./media/mex-advance-payments-cfdi.png "Diagram that shows the advance payment process")
+![Advance payment process.](./media/mex-advance-payments-cfdi.png "Diagram that shows the advance payment process")
 
 ## Prerequisites
 
@@ -438,3 +436,6 @@ Specific complements are generated for the following withholding types:
 ### Inquire CFDI withholding documents
 
 After the CFDI withholding document is issued to PAC, you can view the status and complete the related actions by selecting **Accounts payables > Inquire > Journals > CFDI withholding journal**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

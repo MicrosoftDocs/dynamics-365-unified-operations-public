@@ -4,11 +4,9 @@
 title: Business events developer documentation
 description: This topic walks you through the development process and best practices for implementing business events.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 09/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -679,17 +677,17 @@ The business events framework supports the addition of new endpoint types to the
 
 Each endpoint type is represented by the **BusinessEventsEndpointType** enum. The first step in the process of adding a new endpoint is to extend this enum, as shown in the following illustration.
 
-![Enum extension](../media/customendpoint1.png)
+![Enum extension.](../media/customendpoint1.png)
 
 ### Step 2: Add a new endpoint table to the hierarchy
 
 All endpoint data is stored in a hierarchy table. The root of this table is the BusinessEventsEndpoint table. A new endpoint table must extend this root table by setting the **Support Inheritance** property to **Yes** and the **Extends** property to **"BusinessEventsEndpoint"** (or any other endpoint in the BusinessEventsEndpoint hierarchy).
 
-![Table extends BusinessEventsEndpoint](../media/customendpoint2.png)
+![Table extends BusinessEventsEndpoint.](../media/customendpoint2.png)
 
 The new table then holds the definition of the custom fields that are required to initialize and communicate with the endpoint in code. To help avoid conflict, you should qualify field names to the specific endpoint where they belong. For example, two endpoints can have the concept of a **URL** field. To distinguish the fields, names should be specific to the custom endpoint. For example, name the field for the custom endpoint **CustomURL**.
 
-![New table with custom fields](../media/customendpoint3.png)
+![New table with custom fields.](../media/customendpoint3.png)
 
 ### Step 3: Add a new endpoint adapter class that implements the IBusinessEventsEndpoint interface
 
@@ -723,11 +721,11 @@ if (!customField)
 
 Add a new group control under FormDesign/BusinessEventsEndpointConfigurationGroup/EndpointFieldsGroup/ to hold your custom field input.
 
-![New group control for custom field input](../media/customendpoint4.png)
+![New group control for custom field input.](../media/customendpoint4.png)
 
 The custom field input should be bound to the new table and field that you created in the previous step. Create a class extension to extend the **getConcreteType** and **showOtherFields** methods of **BusinessEventsEndpointConfiguration** form, as shown in the following example.
 
-![Class extension for data source](../media/customendpoint5.png)
+![Class extension for data source.](../media/customendpoint5.png)
 
 ```xpp
 [ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]
@@ -775,3 +773,6 @@ public DateTimeIso8601 testIsoEdtUtcDateTime(DateTimeIso8601 _value = this._test
     return this._testIsoDateTime;
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

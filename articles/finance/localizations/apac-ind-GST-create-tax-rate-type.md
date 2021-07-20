@@ -4,11 +4,9 @@
 title: Define a tax rate type and assign it to relevant master data  
 description: This topic explains how to define the tax rate type and assign it to the relevant master data. 
 author: yijialuan 
-manager: kfend
 ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -82,7 +80,7 @@ With the tax rate type, the tax setup for the GST rate can be simplified with ju
 4. Right-click in the field and select **View details**.
 5. Enter the name and description of the tax rate type you want to add.
 
-    ![Define tax rate type](media/IND-define-tax-rate-type.png)
+    ![Define tax rate type.](media/IND-define-tax-rate-type.png)
 
 You can also import the tax rate type by using its data entity, **Tax rate type**.
 
@@ -93,3 +91,6 @@ You can associate the tax rate type to the following taxable master data where i
 - Released product
 - Procurement/Sales categories
 - Charge code
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

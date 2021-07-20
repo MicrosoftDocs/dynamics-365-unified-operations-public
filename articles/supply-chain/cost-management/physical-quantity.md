@@ -4,11 +4,9 @@
 title: Inventory object values
 description: This article provides information about how the values of an inventory object are calculated. 
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -139,14 +137,16 @@ The following table shows the calculation result for an inventory object. You ca
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Cost objects](cost-object.md)
 
 [Cost entries](cost-entries.md)
 
-[What's new and changed](../../fin-and-ops/get-started/whats-new-changed.md)
+[What's new and changed](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,16 +4,14 @@
 title: Set up expense types
 description: This topic explains how to set up expense types in Asset leasing.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: TaxTable
+ms.search.form: AssetLeaseExpenseTypeTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -64,3 +62,6 @@ Next, you should associate accounts with the expense types. These accounts will 
 7. In the appropriate fields, select the finance lease main account and the operating lease main account.
 
 When you've completed these steps, you can add expenses through the **Executory costs payment schedule** lines on the **Lease details** page of a selected lease. Alternatively, you can add expenses when you create a new lease.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

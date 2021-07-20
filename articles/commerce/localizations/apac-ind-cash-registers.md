@@ -4,11 +4,9 @@
 title: Goods and Services Tax (GST) integration for cash registers for India
 description: This topic provides an overview of the cash register functionality that is available for India. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-manager: annbe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -35,7 +33,7 @@ This topic provides a walkthrough of the features that are related to Goods and 
 
 ## Prerequisites
 
-- Set up GST for India. For more information, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
+- Set up GST for India. For more information, see [India Goods and Services Tax (GST)](../../finance/localizations/apac-ind-gst.md).
 - Configure Commerce channel components. To enable India-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
 
 ## India tax entities for Commerce
@@ -54,7 +52,7 @@ The following table shows the navigation paths for the India tax entities in Com
 | Tax setup                           | Retail and Commerce \> Channel setup \> Sales taxes \> Tax configuration \> Tax setup      |
 
 > [!NOTE]
-> The navigation paths for the India tax entities in Commerce differ from the navigations paths in Finance. For information about the navigation paths in Finance, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
+> The navigation paths for the India tax entities in Commerce differ from the navigations paths in Finance. For information about the navigation paths in Finance, see [India Goods and Services Tax (GST)](../../finance/localizations/apac-ind-gst.md).
 
 ## Validate tax information for the store
 
@@ -77,7 +75,7 @@ You can configure the language text and custom fields that are used in the POS r
 3. In the **Text ID** field, enter a unique ID that is equal to or more than **900001**.
 4. In the **Text** field, enter the language text.
 
-![Language text](media/apac-ind-gst-language-text.png)
+![Language text.](media/apac-ind-gst-language-text.png)
 
 ### Create custom fields
 
@@ -88,7 +86,7 @@ When you create custom fields, the value of the **Caption text ID** field must m
 3. Select the field type.
 4. In the **Caption text ID** field, enter the **Text ID** value for one of the language texts on the **Language text** page.
 
-![Custom fields](media/apac-ind-gst-custom-fields.png)
+![Custom fields.](media/apac-ind-gst-custom-fields.png)
 
 ## Create the receipt format
 
@@ -97,7 +95,7 @@ You can use Receipt format designer to add custom fields to the appropriate rece
 1. Go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS profile** \> **Receipt formats**.
 2. Select a receipt format for the **Receipt** receipt type, and make the required changes.
 
-![Receipt format design](media/apac-ind-gst-receipt-format.png)
+![Receipt format design.](media/apac-ind-gst-receipt-format.png)
 
 ## Update receipt profiles
 
@@ -116,7 +114,7 @@ You can reconcile the POS receipt number with the invoice number for customer tr
 
 You can set the **Update POS invoice number** option to **Yes** only if the existing receipt number format includes both the store number and the terminal number. The following illustration shows a POS functionality profile where the receipt numbering includes the store number and the terminal number.
 
-![POS functionality profile](media/apac-ind-gst-pos-functionality-profile.png)
+![POS functionality profile.](media/apac-ind-gst-pos-functionality-profile.png)
 
 ## Run a distribution schedule
 
@@ -178,7 +176,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
     2. Select the transactions.
     3. Select **Receipt**.
 
-    ![Scenario 1 first validation receipt example](media/apac-ind-gst-s1-receipt1.png)
+    ![Scenario 1 first validation receipt example.](media/apac-ind-gst-s1-receipt1.png)
 
 11. Validate the sales order and tax document in Headquarters:
 
@@ -186,7 +184,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
     2. Select the sales order.
     3. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document**.
 
-    ![Tax document page](media/apac-ind-gst-tax-document.png)
+    ![Tax document page.](media/apac-ind-gst-tax-document.png)
 
 12. Recall and process the customer order:
 
@@ -196,12 +194,12 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
     4. Select **Picking and packing** \> **Pickup**
     5. Select **Select all** and then **Pickup**.
 
-    ![Process a customer order](media/apac-ind-gst-process-customer-order.png)
+    ![Process a customer order.](media/apac-ind-gst-process-customer-order.png)
 
 13. Select **Exact** to process the payment.
 14. Validate the receipt.
 
-    ![Scenario 1 second validation receipt example](media/apac-ind-gst-s1-receipt2.png)
+    ![Scenario 1 second validation receipt example.](media/apac-ind-gst-s1-receipt2.png)
 
 15. Validate the voucher transactions:
 
@@ -230,7 +228,7 @@ When you sell to unregistered customers, the sales are referred to as *business-
 2. Enter an item, and then select **Enter**.
 3. Select **Add customer**, and select the customer account.
 
-    ![Example transaction](media/apac-ind-gst-example-trx.png)
+    ![Example transaction.](media/apac-ind-gst-example-trx.png)
 
     > [!NOTE]
     > In this example, the state of the store location is Delhi, but the state of the customer address is Bengaluru (Bangalore). Because the states differ, interstate GST is computed.
@@ -242,7 +240,7 @@ When you sell to unregistered customers, the sales are referred to as *business-
     2. Select the transactions.
     3. Select **Receipt**.
 
-    ![Receipt validation](media/apac-ind-gst-receipt-validation.png)
+    ![Receipt validation.](media/apac-ind-gst-receipt-validation.png)
 
 6. Validate the sales invoice in Headquarters:
 
@@ -263,7 +261,7 @@ When you sell to unregistered customers, the sales are referred to as *business-
     3. Select **Sales order lines** \> **Tax information**.
     4. On the appropriate tabs, verify the location (store address) and the customer address.
 
-        ![Tax information](media/apac-ind-gst-tax-info.png)
+        ![Tax information.](media/apac-ind-gst-tax-info.png)
 
     5. Select **OK**.
     6. On the Action Pane, on the **Invoice** tab, select **Invoice journals**.
@@ -301,12 +299,12 @@ When you sell to unregistered customers, the sales are referred to as *business-
         - **CGST:** 12 percent
         - **SGST:** 11 percent
 
-    ![Transaction example](media/apac-ind-gst-trx-example.png)
+    ![Transaction example.](media/apac-ind-gst-trx-example.png)
 
 4. Select **Exact** to process the payment.
 5. Validate the receipt.
 
-    ![Scenario 3 receipt example](media/apac-ind-gst-s3-receipt4.png)
+    ![Scenario 3 receipt example.](media/apac-ind-gst-s3-receipt4.png)
 
 6. Validate the sales invoice in Headquarters:
 
@@ -337,19 +335,19 @@ When you sell to unregistered customers, the sales are referred to as *business-
     5. Select **Tax document**.
     6. Verify that the transaction ID is updated according to the GST number sequence that is defined in the GST reference number sequence group.
 
-        ![Tax document transaction ID](media/apac-ind-gst-tax-doc-trx-id.png)
+        ![Tax document transaction ID.](media/apac-ind-gst-tax-doc-trx-id.png)
 
 ### Scenario 4: Sell an exempted good
 
 1. Sign in to the POS.
 2. Enter an exempted item.
 
-    ![Exempted item transaction](media/apac-ind-gst-exempted-item-trx.png)
+    ![Exempted item transaction.](media/apac-ind-gst-exempted-item-trx.png)
 
 3. Select **Exact** to process the payment.
 4. Validate the receipt.
 
-    ![Receipt example.png](media/apac-ind-gst-receipt-4.png)
+    ![Receipt example.png.](media/apac-ind-gst-receipt-4.png)
 
 5. Validate the sales invoice in Headquarters:
 
@@ -386,12 +384,12 @@ When you sell to unregistered customers, the sales are referred to as *business-
 4. Select **Select all** and then **Return**.
 5. Verify that the GST calculation is done correctly, based on the selected original transactions that must be returned.
 
-    ![POS return transaction](media/apac-ind-gst-return-trx.png)
+    ![POS return transaction.](media/apac-ind-gst-return-trx.png)
 
 6. Select **Exact**.
 7. Validate the receipt.
 
-    ![Scenario 4 receipt example](media/apac-ind-gst-receipt-5.png)
+    ![Scenario 4 receipt example.](media/apac-ind-gst-receipt-5.png)
 
 8. Validate the sales invoice in Headquarters:
 
@@ -450,3 +448,6 @@ Add the custom fields to receipt profiles.
 ### Enable searching customers by tax registration numbers in POS
 
 To enable searching customers by tax registration numbers in POS, on the **POS search criteria** tab of the **Commerce parameters** page, add a record on the **Customer search criteria** fast-tab and select **Tax registration number** in the **Customer search criteria** drop-down list. Select the **Display as shortcut** checkbox while keeping the **Can be refined** checkbox clear. Run the 1110 job on the **Distribution schedules** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

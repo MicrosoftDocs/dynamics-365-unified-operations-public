@@ -4,11 +4,9 @@
 title: NAF codes and siret numbers
 description: This topic explains the purpose and usage of Nomenclature des Activités Françaises (NAF) codes and Siret numbers in Microsoft Dynamics 365 Finance.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,8 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains the purpose and usage of Nomenclature des Activités Françaises (NAF) codes and Siret numbers.
 
-NAF codes
----------
+## NAF codes
 
 You can create NAF codes, and then set up NAF codes for legal entities, customers, vendors, and prospects. You can use an NAF code to identify the business of an enterprise. For instance, if your legal entity manufactures computers, the NAF code for your legal entity may be 300C, which is the NAF code for manufacturing computers and other computer hardware. If your legal entity is involved in building houses, your NAF code may be 452A.
 
@@ -43,3 +40,6 @@ You can set up Siret numbers for customers, vendors, and prospects. The Siret is
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

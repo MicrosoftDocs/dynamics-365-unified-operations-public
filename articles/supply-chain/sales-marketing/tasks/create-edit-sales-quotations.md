@@ -4,11 +4,9 @@
 title: Create and edit sales quotations
 description: This procedure demonstrates how to create and update a sales quotation. 
 author: omulvad
-manager: tfehr 
 ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -72,3 +70,6 @@ This procedure demonstrates how to create and update a sales quotation. You can 
 13. Click **Sales orders**.
 14. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

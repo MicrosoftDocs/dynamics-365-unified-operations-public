@@ -4,11 +4,9 @@
 title: Reuse the same AD FS instance for multiple environments
 description: This topic explains how to use the same instance of Active Directory Federation Services (AD FS) in multiple Microsoft Dynamics 365 Finance + Operations (on-premises) environments.
 author: faix
-manager: AnnBe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,3 +55,6 @@ This topic explains how to use the same instance of Active Directory Federation 
 
 6. Verify that you can reach the OpenID metadata endpoint (`https://<adfs-dns-name>/adfs/.well-known/openid-configuration`) from the **AOS** and **MR** nodes in your new environment. If you're using self-signed certificates, you might have to import the AD FS Secure Sockets Layer (SSL) certificate into the Trusted Root Certification Authorities store of each node.
 7. When you deploy the new environment from Microsoft Dynamics Lifecycle Services (LCS) and are specifying the deployment configuration, make sure that you use the same AD FS OpenID metadata endpoint and AD FS OpenID connect client IDs that you specified for the previous environment.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

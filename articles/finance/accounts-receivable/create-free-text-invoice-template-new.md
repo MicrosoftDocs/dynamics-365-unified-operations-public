@@ -4,11 +4,9 @@
 title: Create a free text invoice template
 description: This procedure demonstrates how to create a free text invoice template. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 05/29/2018
 ms.topic: article 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -71,3 +69,6 @@ For this walkthrough, use the USMF demo company. This procedure is intended for 
 
 ## Save a free text invoice as a template
 You can also save an existing free text invoice as a template. When you select Save to template from the Invoice tab, provide a name and a description for the template. If a template with the name already exists, you will see a notification that a template with that name already exists. You can still click on Ok to replace it. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

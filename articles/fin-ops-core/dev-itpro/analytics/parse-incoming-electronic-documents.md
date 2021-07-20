@@ -4,11 +4,9 @@
 title: Parse incoming documents to update application data
 description: This topic provides information about how to set up Electronic reporting (ER) formats that can be used to parse incoming documents.
 author: nickselin
-manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +51,6 @@ To complete some steps of the task guide, you must download the following files:
 | Web service response sample 2 | [Response2.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web service response sample 3 | [Response3.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
 | Web service response sample 4 | [Response4.xml](https://go.microsoft.com/fwlink/?linkid=862266)   |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

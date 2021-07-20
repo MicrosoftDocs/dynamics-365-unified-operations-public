@@ -4,11 +4,9 @@
 title: Generate reports in Office format that have embedded images
 description: This topic describes how to design Electronic reporting (ER) configurations to generate electronic documents in Excel and Word containing embedded images. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/13/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -123,3 +121,6 @@ In this example, you will use created ER configurations for sample company, 'Lit
 23. Click OK.
     * Review the created output. The output has been generated as a Word document with embedded images presenting the company logo, the signature of an authorized person and the selected text of the watermark.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

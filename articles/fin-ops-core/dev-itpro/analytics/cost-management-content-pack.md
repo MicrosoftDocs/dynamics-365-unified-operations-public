@@ -4,11 +4,9 @@
 title: Cost management Power BI content
 description: This topic describes what is included in the Cost management Power BI content. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -211,3 +209,6 @@ The following key dimensions are used as filters to slice the aggregate measurem
 | Legal entities                                          | Legal entity names                              |
 | Fiscal calendars                                        | Fiscal calendar, Year, Quarter, Period, Month   |
 | Site                                                    | ID, Name, Address, State, Country               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

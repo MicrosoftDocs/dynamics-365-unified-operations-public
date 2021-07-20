@@ -3,12 +3,10 @@
  
 title: Submit and approve project budget
 description: This procedure shows you how to create and submit the budget for a project. 
-author: RichardLuan
-manager: tfehr 
+author: kamaybac
 ms.date: 08/13/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -21,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -58,3 +56,6 @@ This task was created using the USSI data set.
 21. In the **Comment** field, type a value.
 22. Click **Submit**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: India Goods and Services Tax (GST) overview
 description: This topic provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 Finance.
 author: yijialuan
-manager: AnnBe
-ms.date: 03/11/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: IT Pro, Application User
 ms.reviewer: kfend
 # ms.suite:
 # ms.tgt_pltfrm:
-ms.custom: 1587884
+ms.custom: ["1587884", "intro-internal"]
 ms.search.region: India
 # ms.search.industry:
 ms.author: ralin
@@ -41,6 +39,14 @@ This topic provides detailed information about India Goods and Services Tax (GST
 - [GSTR report overview (Tech Talk)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-gst-gte-part-4---gstr-reporting-capabilities-july-16-2019)
 - [How to extend GER (Tech Talk)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-gst-gte-part-5)
 
+For more information, download the following topics:
+
+ - [Dynamics 365 India GST installation and setup](https://download.microsoft.com/download/4/f/4/4f4607a4-9d07-4f8d-a615-2d36ac7b8608/India_GST_Installation.pdf)
+ - [Dynamics 365 India GSTR report extension guide](https://download.microsoft.com/download/9/c/d/9cd9086a-a339-465e-968f-10c0c3080d59/GSTRReportsExtensionguidesJan2020.docx)
+ - [Dynamics 365 India tax engine integration](https://download.microsoft.com/download/7/0/5/70541416-72ca-42be-9b1a-f063e2f27d10/Tax_Engine_Integration.pdf)
+ - [Dynamics 365 India tax engine demo scripts](https://download.microsoft.com/download/2/1/8/218d7cec-8498-43ed-9ffb-881d8620ab1b/TaxEngineDynamics365forOperations.pdf)
+ - [Dynamics 365 India tax engine extension guide](https://download.microsoft.com/download/7/3/4/734cb45b-84b0-4381-92da-7bc0c8d11d36/GTEExtensionguides.pdf)
+ 
 ## Prerequisites
 
 <table>
@@ -81,7 +87,7 @@ This topic provides detailed information about India Goods and Services Tax (GST
 <ul>
 <li><strong>Legal entities:</strong> Go to <strong>Organization administration</strong> &gt; <strong>Organizations</strong> &gt; <strong>Legal entities</strong>. On the <strong>Addresses</strong> FastTab, select <strong>More options</strong> &gt; <strong>Advanced</strong>, and then expand the <strong>Tax information</strong> FastTab.</li>
 <li><strong>Warehouses:</strong> Go to <strong>Inventory management</strong> &gt; <strong>Setup</strong> &gt; <strong>Inventory</strong> &gt; <strong>Inventory breakdown</strong> &gt; <strong>Warehouses</strong>. On the <strong>Addresses</strong> FastTab, select <strong>Advanced</strong>, and then expand the <strong>Tax information</strong> FastTab.</li>
-<li><strong>Vendors:</strong> Go to <strong>Accounts payable</strong> &gt; <strong>Vendors</strong> &gt; <strong>All vendors</strong>, and select a vendor. On the <strong>Addresses</strong> FastTab, select <strong>More options</strong> &gt; Advanced</strong>, and then expand the <strong>Tax information</strong> FastTab.</li>
+<li><strong>Vendors:</strong> Go to <strong>Accounts payable</strong> &gt; <strong>Vendors</strong> &gt; <strong>All vendors</strong>, and select a vendor. On the <strong>Addresses</strong> FastTab, select <strong>More options</strong> &gt; <strong>Advanced</strong>, and then expand the <strong>Tax information</strong> FastTab.</li>
 <li><strong>Customers:</strong> Go to <strong>Accounts receivable</strong> &gt; <strong>Customers</strong> &gt; <strong>All customers</strong>, and select a customer. On the <strong>Addresses</strong> FastTab, select <strong>More options</strong> &gt; <strong>Advanced</strong>, and then expand the <strong>Tax information</strong> FastTab.</li>
 </ul>
 </td>
@@ -117,7 +123,7 @@ The item sales tax group should be removed on products that are assigned an HSN 
 <li>Select the <strong>Exempt</strong> check box to exempt these charges from the calculation of GST.</li>
 <li>Select <strong>Save</strong>.</li>
 </ol>
-<p>When this charges code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.<p>
+<p>When this charges code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.</p>
 </td>
 </tr>
 <tr>
@@ -141,7 +147,7 @@ The item sales tax group should be removed on products that are assigned an HSN 
 </tr>
 <tr>
 <td>Create a GST tax registration group.</td>
-<td>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Tax registration group</strong></strong>, create a tax registration group, and add GSTIN information.</td>
+<td>Go to <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Tax registration group</strong>, create a tax registration group, and add GSTIN information.</td>
 </tr>
 </tbody>
 </table>
@@ -160,28 +166,30 @@ Follow the process in the topic, [Tax engine import configuration](../general-le
 
 | Version                                                                                                                                     | Details                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <li>Taxable Document.version.61.xmlTaxable</li><li>Document (India).version.61.112.xml</li><li>Tax (India GST).version.61.113.213.xml</li>  | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (7.3) GA configuration                                                                                                                                                                                                                                                                                                                                                                                              |
-| <li>Taxable Document.version.62.xml</li><li>Taxable Document (India).version.62.115.xml</li><li>Tax (India GST).version.62.115.217.xml</li> | KB#4094699                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| <li>Taxable Document.version.63.xml</li><li>Taxable Document (India).version.63.116.xml</li><li>Tax (India GST).version.63.116.218.xml</li> | Support GST on project module Microsoft Dynamics 365 for Finance and Operations (8.0) GA configuration 7.3 with KB#4094699 and KB#4135145                                                                                                                                                                                                                                                                                                                                                 |
-| <li>Taxable Document.version.64.xml</li><li>Taxable Document (India).version.64.117.xml</li><li>Tax (India GST).version.64.117.221.xml</li> | Support GST on Bank charge 7.3 with KB#4094699, KB#4135145 and KB#4457539 8.0 with KB#4458726                                                                                                                                                                                                                                                                                                                                                                                             |
-| <li>Taxable Document.version.71.xml</li><li>Taxable Document (India).version.71.120.xml</li><li>Tax (India GST).version.71.120.225.xml</li> | Add several new fields into taxable documents, Ship from/to xxx, Product Category, Customer group, Vendor group, Prepayment 7.3 + KB#4094699 + KB#4135145 + KB#4457539 8.0 + KB#4458726 8.1.1                                                                                                                                                                                                                                                                                             |
-| <li>Taxable Document.version.81.xml</li><li>Taxable Document (India).version.81.138.xml</li><li>Tax (India GST).version.81.138.247.xml</li> | Add invoice date into GST, Rate lookup Enable Non-GST, if Non-GST is marked trans tax information, GST will not be applicable Microsoft Dynamics 365 for Finance and Operations (10.0)                                                                                                                                                                                                                                                                                                    |
-| <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.263.xml</li> | Solve the issue of zero tax base for tax exempt transaction Support CGST&SGST for intra-state stock transfer order between warehouses with different GST registrations Support VAT Support Tax Rate Type Microsoft Dynamics 365 for Finance and Operations (10.0.5)                                                                                                                                                                                                                       |
-| <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.264.xml</li> | Remove the tax rate type from Tax Document which should be used by customers who have not update their terminal to 10.0.5 Microsoft Dynamics 365 for Finance and Operations (10.0.5)                                                                                                                                                                                                                                                                                                      |
-| <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.267.xml</li> | <li> Support Applicable % of tax rate. The configuration can only be used in 10.0.9. </li> <li> If you are retail customers, you need to make sure the retail has a version of Microsoft.Dynamics365.Tax.dll equal to or above 10.0.4006 and the HQ has a version of Microsoft.Dynamics365.Tax.dll equal to 10.0.9007. </li> <li> The configuration is created on version 82.143.263, if you have configuration extension on 82.143.264, you have to re-extend based on 82.143.267. </li> |
-
+| <ul><li>Taxable Document.version.61.xmlTaxable</li><li>Document (India).version.61.112.xml</li><li>Tax (India GST).version.61.113.213.xml</li></ul>  | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (7.3) GA configuration                                                                                                                                                                                                                                                                                                                                                                                              |
+| <ul><li>Taxable Document.version.62.xml</li><li>Taxable Document (India).version.62.115.xml</li><li>Tax (India GST).version.62.115.217.xml</li></ul> | KB#4094699                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| <ul><li>Taxable Document.version.63.xml</li><li>Taxable Document (India).version.63.116.xml</li><li>Tax (India GST).version.63.116.218.xml</li></ul> | Support GST on project module Microsoft Dynamics 365 for Finance and Operations (8.0) GA configuration 7.3 with KB#4094699 and KB#4135145                                                                                                                                                                                                                                                                                                                                                 |
+| <ul><li>Taxable Document.version.64.xml</li><li>Taxable Document (India).version.64.117.xml</li><li>Tax (India GST).version.64.117.221.xml</li></ul> | Support GST on Bank charge 7.3 with KB#4094699, KB#4135145 and KB#4457539 8.0 with KB#4458726                                                                                                                                                                                                                                                                                                                                                                                             |
+| <ul><li>Taxable Document.version.71.xml</li><li>Taxable Document (India).version.71.120.xml</li><li>Tax (India GST).version.71.120.225.xml</li></ul> | Add several new fields into taxable documents, Ship from/to xxx, Product Category, Customer group, Vendor group, Prepayment 7.3 + KB#4094699 + KB#4135145 + KB#4457539 8.0 + KB#4458726 8.1.1                                                                                                                                                                                                                                                                                             |
+| <ul><li>Taxable Document.version.81.xml</li><li>Taxable Document (India).version.81.138.xml</li><li>Tax (India GST).version.81.138.247.xml</li></ul> | Add invoice date into GST, Rate lookup Enable Non-GST, if Non-GST is marked trans tax information, GST will not be applicable Microsoft Dynamics 365 for Finance and Operations (10.0)                                                                                                                                                                                                                                                                                                    |
+| <ul><li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.263.xml</li></ul> | Solve the issue of zero tax base for tax exempt transaction Support CGST&SGST for intra-state stock transfer order between warehouses with different GST registrations Support VAT Support Tax Rate Type Microsoft Dynamics 365 for Finance and Operations (10.0.5)                                                                                                                                                                                                                       |
+| <ul><li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.264.xml</li></ul> | Remove the tax rate type from Tax Document which should be used by customers who have not updated their terminal to 10.0.5 Microsoft Dynamics 365 for Finance and Operations (10.0.5)                                                                                                                                                                                                                                                                                                      |
+| <ul><li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.267.xml</li></ul> | <ul><li>Support Applicable % of tax rate. The configuration can only be used in 10.0.9.</li><li>If you are retail customers, you need to make sure the retail has a version of Microsoft.Dynamics365.Tax.dll equal to or above 10.0.4006 and the HQ has a version of Microsoft.Dynamics365.Tax.dll equal to 10.0.9007.</li><li>The configuration is created on version 82.143.263, if you have configuration extension on 82.143.264, you have to re-extend based on 82.143.267.</li></ul> |
+| <ul><li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.155.xml</li><li>Tax (India GST).version.82.155.300.xml</li></ul> | <ul><li>Support the IGST tax calculation when the <b>with IGST payment</b> option is set to <b>Yes</b> on the SEZ/DE/Export order. The configuration can be used only in version 10.0.14 and later.</li></ul> |
+| <ul><li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.155.xml</li><li>Tax (India GST).version.82.155.301.xml</li></ul> | <ul><li>Support decoupling of GST posting from inventory posting and the addition of **Interim transit** as a stock transfer posting type. The configuration can be used only in version 10.0.14 and later.</li></ul> |
+| <ul><li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.156.xml</li><li>Tax (India GST).version.82.156.302.xml</li></ul> | <ul><li>Support calculation of GST-TDS in vendor and customer payment journals. The configuration can be used only in version 10.0.18 and later.</li></ul> |
 
 ### Report configurations
 
 | Version                                                                                                                                                                                                                                                                                                                          | Details                                                                                                                                                                                                                                                               |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **GST offline tool format**: <li>GSTReturnsGovt.version.4.xml</li><li>GST Returns govt. model mapping.xml</li><li>GSTR1GovtCSV.version.4.9.xml</li> **GSTR1/GSTR2**: <li>GSTReturns.version.12.xml</li> <li>GSTReturns.ModelMapping.version.12.3..xml</li><li>GSTR1CSV.version.12.25.xml</li><li>GSTR2CSV.version.12.29.xml</li> | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (7.3) GA configuration                                                                                                                                                                          |
-| <li>GSTReturns.version.14.xml GST</li><li>Returns model mapping.version.14.5.xml</li> <li>GSTR1CSV.version.14.28.xml</li><li>GSTR2CSV.version.14.32.xml</li>                                                                                                                                                                     | Total Item Discount Amount is not coming in GSTR. Item Unit Of Measurement should show both the unit and description. Service item should be **Nos**. No customer billing name for stock transfer in GSTR. Microsoft Dynamics 365 for Finance and Operations (10.0.1) |
-
+| <p>**GST offline tool format**:</p><ul><li>GSTReturnsGovt.version.4.xml</li><li>GST Returns govt. model mapping.xml</li><li>GSTR1GovtCSV.version.4.9.xml</li></ul><p>**GSTR1/GSTR2**:</p><ul><li>GSTReturns.version.12.xml</li><li>GSTReturns.ModelMapping.version.12.3..xml</li><li>GSTR1CSV.version.12.25.xml</li><li>GSTR2CSV.version.12.29.xml</li></ul> | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (7.3) GA configuration                                                                                                                                                                          |
+| <ul><li>GSTReturns.version.14.xml GST</li><li>Returns model mapping.version.14.5.xml</li><li>GSTR1CSV.version.14.28.xml</li><li>GSTR2CSV.version.14.32.xml</li></ul>                                                                                                                                                                     | Total Item Discount Amount is not coming in GSTR. Item Unit Of Measurement should show both the unit and description. Service item should be **Nos**. No customer billing name for stock transfer in GSTR. Microsoft Dynamics 365 for Finance and Operations (10.0.1) |
+| <p>**GST offline tool format**:</p><ul><li>GSTReturnsGovt.version.19.xml</li><li>GST Returns govt. model mapping.19.12.xml</li><li>GST ANX-1 Govt. offline tool.version.19.22.xml</li><li>GSTR1GovtCSV.version.19.10.xml</li><li>Purchase Register.version.19.7.xml</li></ul><p>**GSTR1/GSTR2**:</p><ul><li>GSTReturns.version.16.xml</li><li>GSTReturns.ModelMapping.version.16.7.xml</li><li>GSTR-1 for Old Return 16.32.xml</li><li>GSTR-1 for New Return 16.41.xml</li><li>GSTR-2 for Old Return 16.36.xml</li><li>GSTR-2 for New Return 16.40.xml</li></ul> | GSTR for New Return, ANX-1 Govt. offline tool, and Purchase register. Dynamics 365 Finance version 10.0.14.                                                                                                                                                                |
 
 ### Map configurations to the Legal entity
 
-1. Go to **Tax** &gt; **Setup** &gt; **Tax configuration** &gt; **Tax setup**.
+1. Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax setup**.
 2. Select **New**.
 3. In the **Tax setup** field, enter a value.
 4. In the **Description** field, enter a value.
@@ -191,20 +199,20 @@ Follow the process in the topic, [Tax engine import configuration](../general-le
 8. Select the ellipsis button (**...**), and then select **Synchronize**.
 9. Select **Activate**. The activated configuration is updated as the current configuration.
 
-   ![Current configuration](media/apac-ind-gst-Current-Configuration.png)
+   ![Current configuration.](media/apac-ind-gst-Current-Configuration.png)
 
 10. On the **Report configuration** FastTab, under **Select report configurations**, select the **Select** checkbox.
 11. In the **Report controller** field, select a value.
 12. Repeat step 10 and 11, to map the report configurations.
 
-    ![Report configuration](media/apac-ind-gst-Reportconfiguration2-configuration.png)
+    ![Report configuration.](media/apac-ind-gst-Reportconfiguration2-configuration.png)
 
 13. Close the page.
 14. On the **Companies** FastTab, create a record.
 15. In the **Companies** field, select a value, and then select **Save**.
 16. On the **Companies** FastTab, select **Activate**. The tax setup is now active for the selected company.
 
-    ![Tax setup status](media/apac-ind-gst-tax-setup-status.png)
+    ![Tax setup status.](media/apac-ind-gst-tax-setup-status.png)
 
 ## Update the configuration version
 
@@ -213,7 +221,7 @@ Follow the process in the topic, [Tax engine import configuration](../general-le
 3. On the **Companies** FastTab, select **Deactivate**.
 4. Repeat steps 2 through 13 in the previous section, [Import the configuration and deploy it to a specific company](#import-the-configuration-and-deploy-it-to-a-specific-company), to load the configuration, deploy it to the company, and synchronize the new version.
 
-   ![Two configurations](media/apac-ind-gst-Available2-configuration.png)
+   ![Two configurations.](media/apac-ind-gst-Available2-configuration.png)
 
 5. Select the new version, and then select **Activate**.
 6. Complete the tasks in the **Tax setup** section to update data for the new version.
@@ -301,7 +309,7 @@ This section walks you through defining the GST and Customs tax setup.
    7. Close the message.
    8. Select **View**. The **Sales tax hierarchy designer** page shows the tax type and tax components, based on the configuration.
 
-      ![Sales tax hierarchy designer](media/apac-ind-gst-salestaxdesigner.png)
+      ![Sales tax hierarchy designer.](media/apac-ind-gst-salestaxdesigner.png)
 
    9. Select **Setoff rules for sales tax hierarchy**.
    10. Select **New**.
@@ -311,7 +319,7 @@ This section walks you through defining the GST and Customs tax setup.
    14. On the **Payable** FastTab, select the tax components, and then adjust the **Priority** values.
    15. Define the setoff rules according to the legal requirement.
 
-       ![Setoff rule](media/apac-ind-gst-View-Setoffrule.png)
+       ![Setoff rule.](media/apac-ind-gst-View-Setoffrule.png)
 
    16. Select **Close**.
    17. Close the **Sales tax hierarchy designer** page.
@@ -372,7 +380,39 @@ If you're using one of the following versions of Microsoft Dynamics AX, you can 
 
 The India GST release takes advantage of Microsoft Dynamics 365 for Operations (1611) together with an applied hotfix to generate GST configurations that you can use in your release of Microsoft Dynamics AX.
 
-For detailed information that includes documentation and downloads for release packages, see the following pages:
+For more detailed information, see the following documentation and downloads for release packages.
 
-- [CustomerSource page for the India GST release](https://docs.microsoft.com/dynamics/s-e/)
-- [PartnerSource page for the India GST release](https://mbs.microsoft.com/partnersource/northamerica/deployment/downloads/tax-regulatory-updates/GST-India) (Sign-in is required.)
+ - **Releases**
+ 
+    -  [Dynamics AX 2012 R3 India GST Zip file](https://download.microsoft.com/download/B/1/5/B153F120-80F4-44B9-B195-D5640F7E3809/AX2012R3KB4019353.zip) and [KB 4038381](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4038381&bugId=3848435&qc=8ef1680f3dd0d4fbb43a091f5613572d23b97fefb71a7cbab0fe6ee95b3d1b31)
+    -  [Dynamics AX 2012 R2 India GST Zip file](https://download.microsoft.com/download/D/8/5/D853E47A-8947-41AF-A61A-66000B1F850C/AX2012R2KB4019353.zip) and [KB 4032545](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4032545&bugId=3839206&qc=fd7ed4f0a46eef63eef7b02da5c3a3562ba09dfca6ce5f430887c64bf8d73fa5)
+    -  [Dynamics AX 2009 SP1 update](https://download.microsoft.com/download/E/F/A/EFAD7102-43BF-4ADD-AB01-94F74CC12C1F/DynamicsAX2009-KB4032546-SP1.zip), [Dynamics AX 2009 SP1 India GST hotfix 1](https://download.microsoft.com/download/8/F/0/8F0819F1-DD0E-49FC-8D87-AD48E30DAA1D/AX2009SP1KB4019353.zip), and [Dynamics AX 2009 SP India GST hotfix 2](https://download.microsoft.com/download/6/6/E/66E4305D-9266-4E46-A0A8-86448A6CC78F/DynamicsAX2009-KB4033207-SP1.EXE)
+ 
+ - **Release notes**
+
+    - [Dynamics AX 2009 SP1, AX 2012 R2, and AX 2012 R3 India GST release notes](https://download.microsoft.com/download/1/0/1/101e86d1-ad6b-4005-a098-56ded753125d/ReleaseNote_India_GST.pdf)
+    - [Dynamics AX 2012 R3 India GST update 1 release notes](https://download.microsoft.com/download/f/8/3/f8334213-e5d1-4fce-be47-05cf4f28ddc0/India-GST-Update-ReleaseNote.pdf)
+    - [Dynamics AX 2009 SP1, AX 2012 R2, and AX 2012 R3 India GST update 2 release notes](https://download.microsoft.com/download/2/7/6/276e0aa8-35a4-4b9d-a9a1-970692b7c91c/Release-Note-India-GST-Update-2.pdf)
+
+ - **Install and setup**
+
+    - [Dynamics AX 2009 SP1 India GST update 1 installation guide](https://download.microsoft.com/download/3/6/9/369dfc13-a0ae-4c5d-9003-6667a51d1991/Installation-India-GST-Update1-AX2009SP1.pdf)
+    - [Dynamics AX 2012 R2 India GST update 1 installation guide](https://download.microsoft.com/download/2/2/5/225a37a8-4c0d-4204-9059-340a1e5b5bba/Installation-India-GST-Update1-AX2012R2.pdf)
+    - [Dynamics AX 2012 R3 India GST update 1 installation guide](https://download.microsoft.com/download/d/c/7/dc77331a-ce82-4733-81e9-1c7397295502/Installation-India-GST-Update1-AX2012R3.pdf)
+    - [Dynamics AX 2009 SP1 India GST update 2 installation guide](https://download.microsoft.com/download/f/4/f/f4fd3a67-2284-4b69-82e6-ca52d6131e1d/AX2009SP1-Install-India-GST-Update2.pdf)
+    - [Dynamics AX 2012 R2 India GST update 2 installation guide](https://download.microsoft.com/download/2/c/b/2cbb982f-a288-457d-9cd7-9f682d395e79/AX2012R2-Install-India-GST-Update2.pdf)
+    - [Dynamics AX 2012 R3 India GST update 2 installation guide](https://download.microsoft.com/download/0/0/b/00bc4bd3-4a02-4cab-8415-c21fcbeac7e6/AX2012R3-Install-India-GST-Update2.pdf)
+
+ - **Tax engine**
+
+    - [Dynamics AX 2009 India tax engine demo scripts](https://download.microsoft.com/download/2/f/e/2fed3e11-83d6-46c9-8413-fe3730d4d0eb/TaxEngineAX2009SP1.pdf)
+    - [Dynamics AX 2012 India tax engine demo scripts](https://download.microsoft.com/download/3/5/5/355216d8-75d5-4df9-bdc6-d7a68fbfa02a/TaxEngineAX2012.pdf)
+    - [Dynamics AX 2012 India tax](https://download.microsoft.com/download/3/0/e/30eada2a-6ab8-44c6-b0cf-d28df8ddf14f/Whitepaper_TaxEngineAX2012.pdf)
+
+  - **E-way bill**
+
+    - [Dynamics AX 2009 E-way bill ](https://download.microsoft.com/download/1/0/d/10d3a95a-69d3-4630-bcc6-5f1a3a01efd0/E-WaybillUserguideAX2009.pdf)
+    - [Dynamics AX 2012 E-way bill ](https://download.microsoft.com/download/1/3/b/13b719ee-1e8d-4436-8915-16be7bb57081/E-WaybillDemoScriptAX2012.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

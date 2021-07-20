@@ -4,11 +4,9 @@
 title: Create and post a purchase complementary fiscal document (Brazil)
 description: Use this procedure to create a purchase complementary fiscal document to adjust a purchase fiscal document that was generated for an incorrect price, Imposto Sobre Produtos Industrializados (IPI) amount, or Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) amount. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -49,3 +47,6 @@ Use this procedure to create a purchase complementary fiscal document to adjust 
 14. Close the page.
 15. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

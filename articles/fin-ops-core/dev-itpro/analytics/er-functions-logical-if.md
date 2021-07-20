@@ -4,11 +4,9 @@
 title: IF ER function
 description: This topic provides information about how the IF Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -74,3 +72,6 @@ If the first value and the second value are values of the *Container (record)* o
 ## Additional resources
 
 [Logical functions](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

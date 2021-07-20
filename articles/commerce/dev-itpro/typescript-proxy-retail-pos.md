@@ -4,11 +4,9 @@
 title: Typescript and C# proxies for Retail point of sale (POS)
 description: This topic provides information about the Commerce proxy and explains how to generate it.
 author: mugunthanm
-manager: AnnBe
 ms.date: 08/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -170,3 +168,6 @@ For each Retail Server extension, you must generate a separate proxy.
         // END SDKSAMPLE_STOREHOURS */
     });
     ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

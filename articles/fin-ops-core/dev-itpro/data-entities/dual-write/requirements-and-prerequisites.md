@@ -3,11 +3,9 @@
 title: System requirements and prerequisites
 description: This topic describes the system requirements and prerequisites that must be in place before you can enable dual-write for Finance and Operations apps.
 author: sabinn-msft
-manager: AnnBe
 ms.date: 03/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,9 +51,9 @@ Currently, we support dual-write in the following regions:
 
 Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Dataverse environment.
 
-You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a model-driven app for Dynamics 365 environment that comes with Dataverse and already has **Enable Dynamics 365 apps** set to **Yes**.
+You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a customer engagement app environment that comes with Dataverse and already has **Enable Dynamics 365 apps** set to **Yes**.
 
-:::image type="content" source="media/add_database.png" alt-text="Enable apps switch" lightbox="media/add_database_expanded.png":::
+:::image type="content" source="media/add_database_expanded2.png" alt-text="Enable apps switch.":::
 
 1. Validate the platform update and app version.
 
@@ -76,7 +74,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     3. Select the **Dual Write Core** solution.
     4. Follow the prompts to import the solution.
 
-    ![Installing the dual-write core solution](media/dual-write-core-solution.png)
+    ![Installing the dual-write core solution.](media/dual-write-core-solution.png)
 
     **Related health check result:**
 
@@ -93,8 +91,8 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     When you've finished, follow these steps to refresh the list of tables:
 
-    1. Go to **Workspaces \> Data management**, select the **Data tables** tile, and make sure that the table list is filled in.
-    2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entities** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh tables list**.
+    1. Go to **Workspaces \> Data management**, select the **Data entities** tile, and make sure that the entity list is filled in.
+    2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entity settings** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh entity list**.
 
     **Related health check result:**<br>
     *The Dataverse can connect to the Finance and Operations app*<br>
@@ -106,29 +104,29 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     1. In Power Apps, select the **Settings** button (gear symbol) in the upper-right corner, go to **Advanced settings \> Security**, and then select **Users**.
 
-        ![Users](media/selecting-users.png)
+        ![Users.](media/selecting-users.png)
 
     2. Use the drop-down menu to change the view from **Enabled Users** to **Application Users**.
 
-        ![Switching to the Application users view](media/selecting-application-users.png)
+        ![Switching to the Application users view.](media/selecting-application-users.png)
 
     3. Create a new user, and then, on the **User** menu, select **Application User**.
 
-        ![Switching to Application user](media/create-new-user.png)
+        ![Switching to Application user.](media/create-new-user.png)
 
     4. In the **Application ID** column, enter **00000015-0000-0000-c000-000000000000**. This application ID is for a Finance and Operations app and will enable the app to connect to Dataverse. When you've finished, follow the prompts to fill in the other columns, and then save the user account.
 
-        ![Entering the application ID](media/add-application-id.png)
+        ![Entering the application ID.](media/add-application-id.png)
 
     5. Provide a primary email address.
     6. Select **Manage Roles**, and then, in the **Manage User Roles** dialog box, select the **System Administrator** check box to provide system admin rights to the selected application user.
 
-        ![Assigning the System Administrator role](media/manage-user-roles.png)
+        ![Assigning the System Administrator role.](media/manage-user-roles.png)
 
     7. Go to **Dynamics 365 \> Settings \> Security**, select **Teams**, and then change the view to **All Owner Teams**.
     8. Select **default team for the root Business Unit**, select **Manage Roles**, and then, in the **Manage Team Roles** dialog box, select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each table integrated through dual-write. 
     
-      For instructions on how to create a Security Role, see [Create or configure a custom security role](https://docs.microsoft.com/power-platform/admin/database-security#create-or-configure-a-custom-security-role).
+      For instructions on how to create a Security Role, see [Create or configure a custom security role](/power-platform/admin/database-security#create-or-configure-a-custom-security-role).
       
       > [!NOTE]
       > The root business unit’s default team will become the default owner for all rows integrated through dual-write.
@@ -137,7 +135,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     9. Repeat the previous five steps for application ID **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
 
-        ![Assigning the application ID](media/assign-application-id.png)
+        ![Assigning the application ID.](media/assign-application-id.png)
 
     **Related health check result:**<br>
     *The Finance and Operations app can connect to the Dataverse*<br>
@@ -164,7 +162,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     2. To enable a step, select and hold the step (or right-click it), and then select **Enable**. If no **Enable** option is available, only a **Disable** option, the step has already been enabled and doesn't have to be changed.
 
-        ![Using the Plug-in Registration Tool](media/plugin-registration-tool.png)
+        ![Using the Plug-in Registration Tool.](media/plugin-registration-tool.png)
 
     > [!NOTE]
     > If the dual-write plug-in assemblies can't be found, import the latest version of the dual-write core solution.
@@ -175,7 +173,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 7. Install the **Dual-write application orchestration solution** maps solution.
 
-    In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it. After installation, you'll find several new solutions listed under **Solutions**. For more information, see [Solutions overview](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview). 
+    In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for the solution that is named **Dual-write application orchestration solution**. Select the solution, and follow the prompts to import it. After installation, you'll find several new solutions listed under **Solutions**. For more information, see [Solutions overview](/powerapps/maker/common-data-service/solutions-overview). 
  
     While the dual-write core solution contains metadata for your table maps, the dual-write application orchestration solution covers these additional master data scenarios:
     
@@ -224,3 +222,6 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 ## Next steps
 
 [Use the dual-write wizard to link your environments](link-your-environment.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

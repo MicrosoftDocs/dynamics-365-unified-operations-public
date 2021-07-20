@@ -4,11 +4,9 @@
 title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
-manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -142,7 +140,7 @@ update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUR
 Open a **Command Prompt** window, and run the following commands.
 
 > [!IMPORTANT]
-> The 140 folder reflects the current version. You must use the version that is available in your sandbox environment. Therefore, you might have to install the [latest version of Microsoft SQL Server Management Studio](https://msdn.microsoft.com/library/mt238290.aspx) in your development environment.
+> The 140 folder reflects the current version. You must use the version that is available in your sandbox environment. Therefore, you might have to install the [latest version of Microsoft SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) in your development environment.
 
 ```Console
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
@@ -169,7 +167,7 @@ Upload the .bacpac file that was created in the previous step to the **Database 
 Now that the UAT environment is hydrated with the golden configuration, you can begin to migrate master data. You can do this data migration by [using data entities](../data-entities/develop-entity-for-data-migration.md). We recommend that you complete your data migration activities before you copy the UAT environment to production, because you will have access to the database in the UAT environment for troubleshooting.  
 
 > [!IMPORTANT]
-> Document attachments are not copied from UAT to Production in the next step.  If your go live requires attachments, you will want to import those in the Production environment directly.
+> Files stored in Azure blob storage are not copied from UAT to Production in the next step. This includes document attachments and custom Microsoft Office templates. If your go-live requires attachments or custom templates, you will want to import those in the Production environment directly.
 
 ## Copy the sandbox database to production
 
@@ -217,7 +215,7 @@ First, sign in to the environment by using the admin account that can be found o
 
 When the system is configured as you require, you can enable selected users to access the environment. By default, all users except the admin and Microsoft service accounts are disabled.
 
-Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the Production environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#open-entity-data-in-excel-when-you-start-from-finance-and-operations).
+Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the Production environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](../office-integration/use-excel-add-in.md#open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app).
 
 ## Community tools
 
@@ -225,3 +223,6 @@ Are you looking for more tools to help you prepare backup files from your develo
 
 * [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools that are created by the community.
 * [Community-provided open source projects on GitHub](https://github.com/search?q=dynamics+365+finance+operations&s=stars).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

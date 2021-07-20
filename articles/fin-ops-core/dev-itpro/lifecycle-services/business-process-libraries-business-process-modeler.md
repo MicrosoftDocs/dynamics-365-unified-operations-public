@@ -4,11 +4,9 @@
 title: Business process libraries in Business process modeler (BPM)
 description: This topic explains how to view a business process library, how to copy and modify it, and how to export information about the library to Microsoft Word.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service:  dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -77,3 +75,6 @@ You can export information about a business process library, and all the flowcha
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

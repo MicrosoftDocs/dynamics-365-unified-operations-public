@@ -4,11 +4,9 @@
 title: Customer electronic invoices in Germany (DE-00022)
 description: This topic explains how to set up and process customer electronic invoices in Germany.
 author: ilkond
-manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -47,3 +45,6 @@ For more information about how to set up and use customer electronic invoices in
 
 - [Dynamics 365 Finance](https://support.microsoft.com/help/4490705)
 - [Dynamics AX 2012 R3](https://fix.lcs.dynamics.com/Issue/Details?kb=4494484&bugId=3979521)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

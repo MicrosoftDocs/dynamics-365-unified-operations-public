@@ -4,11 +4,9 @@
 title: Configure locations in a WMS-enabled warehouse
 description: This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses advanced warehouse management processes). 
 author: perlynne
-manager: tfehr 
 ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -176,3 +174,6 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 6. In the list, click the link in the selected row.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

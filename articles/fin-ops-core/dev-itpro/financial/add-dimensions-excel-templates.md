@@ -3,12 +3,10 @@
 
 title: Add lookup values for financial dimensions to Excel templates
 description: This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
-author: aprilolson
-manager: AnnBe
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 261064
 ms.assetid: f3ab87ab-ee8b-462c-bb6f-4d98e0030513
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: aolson
+ms.author: rcarlson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -101,7 +99,7 @@ The only value that is present on Microsoft Excel templates after installation i
     DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
     ```
 
-    ![Relation properties in Visual Studio](./media/lookupwiki.png)
+    ![Relation properties in Visual Studio.](./media/lookupwiki.png)
 
 9.  Build the project and then synchronize it with the database.
 
@@ -113,3 +111,6 @@ The only value that is present on Microsoft Excel templates after installation i
 [Extensibility home page](../extensibility/extensibility-home-page.md)
 
 [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Learning Power BI content
 description: This topic describes the Learning Power BI content. 
 author: jcart1106 
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -67,3 +65,6 @@ The following data is used to fill the reports in the **Learning** Power BI cont
 | Position         | Position, title, and full-time equivalent (FTE)                  | Course Agenda, Course Attendees |
 | Employee Name    | First name, last name, and full name                             | Course Attendees |
 | Employee Title   | Title and seniority date                                         | Course Attendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

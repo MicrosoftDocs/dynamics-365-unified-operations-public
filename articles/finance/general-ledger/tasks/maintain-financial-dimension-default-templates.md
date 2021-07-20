@@ -4,11 +4,9 @@
 title: Maintain financial dimension default templates
 description: This topic shows how to set up financial dimension default templates. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 07/30/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -44,3 +42,6 @@ This topic shows how to set up financial dimension default templates. The templa
 11. Enter the financial dimension values that correspond to the percent entered.
 12. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Keyboard shortcuts for missing account analysis
 description: This topic lists the keyboard shortcuts that are available when you run a missing account analysis in Management Reporter.
 author: panolte
-manager: AnnBe
 ms.date: 08/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -116,3 +114,6 @@ The following table provides a short, non-exhaustive list of keyboard shortcuts 
 | Backspace | Deletes the character before the insertion point when editing a cell. |
 | Ctrl+Enter | Commits any changes to the current cell without moving the focus. Also commits any changes to the current row. |
 |   |   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

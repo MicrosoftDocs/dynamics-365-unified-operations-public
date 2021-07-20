@@ -4,11 +4,9 @@
 title: Maintain fixed assets 
 description: This topic explains how to inactivate, reactivate, and update a fixed asset in Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 01/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -102,3 +100,6 @@ You must complete the following tasks before you can post an update for a major 
 
 > [!NOTE]
 > When major repair work is done on a fixed asset, bonus depreciation can be applied to the asset on or after the transaction date of the major repair. You can create a transaction for a major repair of a fixed asset, and you can specify the bonus depreciation and bonus start date. The start date of the bonus depreciation can be the same as the transaction date of the major repair, or it can be the next depreciation date.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

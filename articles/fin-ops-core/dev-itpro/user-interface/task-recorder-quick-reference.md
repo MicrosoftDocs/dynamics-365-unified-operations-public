@@ -4,11 +4,9 @@
 title: Task Recorder quick reference
 description: This article provides a quick reference sheet that explains what each button in the Task recorder menus does.
 author: RobinARH
-manager: AnnBe
 ms.date: 12/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides a quick reference sheet that explains what each button in the Task recorder menus does.
 
-Main menu
----------
+## Main menu
 
 <table>
 <colgroup>
@@ -123,7 +120,7 @@ These options allow you to remove steps from the recording. If you delete a pend
 
 ## Steps list
 
-![Example step list](media/example-step-list.png)
+![Example step list.](media/example-step-list.png)
 
 ### Step counter
 <img src="media/step-counter.png" alt="Step counter"/>
@@ -190,3 +187,6 @@ This symbol represents a step that was attempted by the playback system, but was
 <li>The step could not play because the name of the form or name of the control has changed.</li>
 <li>The step could not play because of a framework change to the control.</li>
 </ul>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

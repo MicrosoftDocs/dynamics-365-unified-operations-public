@@ -4,11 +4,9 @@
 title: One voucher FAQ
 description: This topic answers frequently asked questions about the One voucher functionality. One voucher for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher.
 author: kweekley
-manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -56,3 +54,6 @@ As for every new feature, customers must watch the Release plan and "What's new 
 ## When the deprecation date is identified, where will it be communicated?
 
 The deprecation of One voucher is a significant change that will be widely communicated. It will be communicated through the product documentation, a blog post, and announcements at applicable Microsoft conferences, well in advance of the date when the deprecation takes effect.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

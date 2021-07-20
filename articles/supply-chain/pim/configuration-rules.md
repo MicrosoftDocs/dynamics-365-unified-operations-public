@@ -4,11 +4,9 @@
 title: Configuration rules
 description: This article provides general information about configuration rules. Configuration rules define relationships between items in a bill of materials (BOM) for products that use the dimension-based configuration technology.
 author: cvocph
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,10 +41,12 @@ Existing configurations aren't affected by subsequent changes to the configurati
 
 **Note:** For the **Select** method, the derived configuration group, item number, and configuration are automatically selected. For the **Deselect** method, the derived configuration group, item number, and configuration can't be selected.
 
-Additional resources
---------
+## Additional resources
 
 [Dimension-based product configuration overview](dimension-based-product-configuration.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

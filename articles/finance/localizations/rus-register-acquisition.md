@@ -4,11 +4,9 @@
 title: Register fixed assets acquisitions (Russia)
 description: This topic walks you through registering fixed assets acquisitions for Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -110,3 +108,6 @@ When you create a reverse transaction, the information and amount of the origina
 
     > [!NOTE]
     > To change the status to **Scheduled**, run the reverse acquisition transaction for all value models. If the asset that was reversed was built from inventory components, transactions are created to record the return of the components to the inventory. When you reverse an acquisition transaction, the cost price of the returned components may differ from the current warehouse cost price. However, after inventory closure, the components will reflect the current pricing.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

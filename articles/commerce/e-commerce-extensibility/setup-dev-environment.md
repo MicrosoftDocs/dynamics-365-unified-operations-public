@@ -4,11 +4,9 @@
 title: Set up a development environment
 description: This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 To set up a development environment for Dynamics 365 Commerce online extensibility development, you must install three free tools: Microsoft Visual Studio Code, Node.js, and Yarn. You must also install the Dynamics 365 Commerce Online Software Development Kit (SDK). You can install these tools in any order.
 
 ## Install Visual Studio Code
@@ -43,7 +39,7 @@ We recommend that you use a source code editor such as Visual Studio Code. Visua
 
 Go to the [Visual Studio Code site](https://code.visualstudio.com), and download and install the latest build. After installation is completed, Visual Studio Code is automatically opened and should resemble the following screenshot.
 
-![Visual Studio Code](media/setup-vs-code.png)
+![Visual Studio Code.](media/setup-vs-code.png)
 
 ## Install Node.js
 
@@ -171,3 +167,6 @@ To install a new certificate on a developer environment, replace the public key 
 [Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
 
 [Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

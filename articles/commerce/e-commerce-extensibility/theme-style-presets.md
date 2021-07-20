@@ -4,11 +4,9 @@
 title: Configure theme style presets
 description: This topic explains how to add style variables that are known as style presets to custom themes in Microsoft Dynamics 365 Commerce site builder.
 author: samjarawan
-manager: annbe
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic explains how to add style variables that are known as style presets to custom themes in Microsoft Dynamics 365 Commerce site builder.
 
-## Overview
-
 A style preset is a stored set of all authorable style values across a site theme. Style presets can be used to immediately change the look of a site from within site builder. Style presets let site builder authors quickly change, preview, and activate a set of style values across their site, without having to use Cascading Style Sheets (CSS) or deploy new themes. Font styles, button styles, and site colors are typical examples of style variables that can be managed through style presets.
 
 For more information about how style presets work in site builder, see [Work with style presets](../style-presets.md).
@@ -51,13 +47,13 @@ When the **add-theme** [command line interface (CLI)](cli-command-reference.md) 
 
 The following illustration shows an example (in Visual Studio Code) of a theme style definition file that was created by using the **add-theme** CLI command.
 
-![Theme style definition file](media/style-presets.png)
+![Theme style definition file.](media/style-presets.png)
 
 Each style that is defined under the **global** and **module** sections should also be defined in the theme's Sassy CSS (SCSS) file. The naming convention for that file is **THEME_NAME.scss** 
 
 In the example in the following illustration, SCSS variables have been defined for **brandPrimaryColor** in the theme.scss file. The default color is **#FFFFFF**. When the style preset is turned on, the color value is replaced with the default color value that is defined in the style preset definition file. Although both colors happen to be the same in this example, a site builder author can choose to override this property with any color. Modules that use this global SCSS variable will then automatically pick up the color change when the user applies the setting from within site builder.
 
-![SCSS file](media/style-presets-scss-file.png)
+![SCSS file.](media/style-presets-scss-file.png)
 
 ### Style preset definition schema
 
@@ -240,3 +236,6 @@ The following example shows a global.json file that sets various localized style
 [Extend a theme from a base theme](extend-theme.md)
 
 [Add custom resources to your customization code](add-custom-resources.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

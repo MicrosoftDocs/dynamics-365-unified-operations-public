@@ -4,11 +4,9 @@
 title: Consolidated batch orders
 description: This article describes the concept of consolidated batch orders.
 author: ShylaThompson
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,3 +47,6 @@ A consolidated batch order can contain any combination of the following orders:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

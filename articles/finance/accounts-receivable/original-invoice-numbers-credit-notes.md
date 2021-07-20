@@ -4,11 +4,9 @@
 title: References to original invoices in credit notes
 description: This topic explains how to set up and print the original invoice numbers in related credit notes.
 author: ilkond
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,13 +30,12 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 In some countries and regions, there is a legal requirement that printed credit notes include references to the original invoices. This topic explains how to set up and print the original invoice numbers in related credit notes.
 
 ## Prerequisites
 
-- In the **Feature management** workspace, turn on the **Credit invoicing layout for sales and project invoice reports** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, turn on the **Credit invoicing layout for sales and project invoice reports** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - The printable formats of the required documents must be configured in Print management.
 
 The functionality that is described in this topic applies to the following documents:
@@ -59,7 +56,7 @@ Follow these steps to set the parameter that controls whether references to the 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 2. On the **Updates** tab, on the **Invoice** FastTab, set the **Apply the credit invoicing layout into sales and project invoice reports** option to **Yes**.
 
-![Configuring Accounts receivable parameters](media/original-invoice-number-in-credit-note.jpg)
+![Configuring Accounts receivable parameters.](media/original-invoice-number-in-credit-note.jpg)
 
 ## Define references to original invoices
 
@@ -73,7 +70,7 @@ Use the following procedures to define references to original invoices, based on
 4. On the Action Pane, on the **Invoice** tab, in the **Functions** group, select **Credit invoicing**.
 5. Enter the reference to the original invoice, and select the reason for the correction.
 
-![Defining the reference for a free text invoice](media/reference-original-invoice-FTI.jpg)
+![Defining the reference for a free text invoice.](media/reference-original-invoice-FTI.jpg)
 
 ### Customer credit note
 
@@ -82,7 +79,7 @@ Use the following procedures to define references to original invoices, based on
 3. On the Action Pane, on the **Sell** tab, in the **Credit note** group, select **Credit note**.
 4. Enter the reason for the correction. The reference to the original invoice is automatically established.
 
-![Defining the reference for a sales order](media/reference-original-invoice-SO.jpg)
+![Defining the reference for a sales order.](media/reference-original-invoice-SO.jpg)
 
 ### Project credit note
 
@@ -92,13 +89,16 @@ Use the following procedures to define references to original invoices, based on
 4. Select **Credit invoicing**.
 5. Enter the reason for the correction. The reference to the original invoice is automatically established.
 
-![Defining the reference for a project invoice](media/reference-original-invoice-project.jpg)
+![Defining the reference for a project invoice.](media/reference-original-invoice-project.jpg)
 
 ## Printing credit notes
 
 When you print free text, customer, and project credit notes, they will include the reference to the original invoice and the correction reason.
 
-![Printed credit note](media/credit-note-FTI.jpg)
+![Printed credit note.](media/credit-note-FTI.jpg)
 
 > [!NOTE]
 > Make sure that the printable formats of the documents are correctly configured, on the assumption that references to original invoices will be printed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

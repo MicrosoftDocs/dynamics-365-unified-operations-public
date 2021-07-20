@@ -4,11 +4,9 @@
 title: Create a journal entry using template
 description: Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -65,3 +63,6 @@ Posted journal vouchers can be saved as Voucher templates and applied in a new j
 29. In the **Amount** field, enter the amount to be applied to the voucher. The **Amount** field is only displayed if the voucher template is of type Percent.  
 30. Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: List Panel subpattern
 description: This article provides information about the List Panel form subpattern, which manages two lists that move data between each other.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the List Panel form subpattern. Application teams use this subpattern to manage two lists that move data between each other.
 
-Usage
------
+## Usage
 
 List Panel is the subpattern that application teams use to manage two lists that move data between each other. This pattern is meant to represent a modeled version of the **SysListPanel** class (programmatic) approach of managing two lists that move data between each other. The List Panel subpattern can be applied on the following controls:
 
@@ -44,7 +41,7 @@ List Panel is the subpattern that application teams use to manage two lists that
 -   Group control
 
 ## Wireframe
-[![List Panel wireframe](./media/listpanel1-1024x339.png)](./media/listpanel1.png)
+[![List Panel wireframe.](./media/listpanel1-1024x339.png)](./media/listpanel1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -103,7 +100,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **SalesSummaryParameters (GroupQuotation)** 
 
-[![List Panel example](./media/listpanel3.png)](./media/listpanel3.png)
+[![List Panel example.](./media/listpanel3.png)](./media/listpanel3.png)
 
 ## Resources
 ### Typically used by patterns
@@ -125,4 +122,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![List Panel example](./media/listpanel4.png)](./media/listpanel4.png)
+[![List Panel example.](./media/listpanel4.png)](./media/listpanel4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

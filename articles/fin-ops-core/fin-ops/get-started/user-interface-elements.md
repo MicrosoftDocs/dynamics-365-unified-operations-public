@@ -4,11 +4,9 @@
 title: User interface elements
 description: This topic describes the user interface (UI) elements in the app.
 author: tlefor
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -82,7 +80,7 @@ The following image shows examples of these types of notifications.
 
 - **Message box** - This will appear over the interface and must be interacted with before you can continue to use the product.  
 
-![The following image shows an example of a message box](media/user-interface-07.png)
+![The following image shows an example of a message box.](media/user-interface-07.png)
 
 ## Toolbars, grids, and lists
 
@@ -91,3 +89,6 @@ A *toolbar* contains tools, such as the ability to add fields or remove records.
 A *list* is the name given to a collection of records that you can scroll through. You can bring these records into the page by selecting them. Often, this will open a grid.
 
 ![The following image shows examples of toolbars, grids, and lists.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

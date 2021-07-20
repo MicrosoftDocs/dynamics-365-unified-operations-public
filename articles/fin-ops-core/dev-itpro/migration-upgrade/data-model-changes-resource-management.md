@@ -4,11 +4,9 @@
 title: Project resource scheduling data model
 description: This topic provides information about the Project resource scheduling data model.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ This topic provides information about the Project resource scheduling data model
 
 ## Physical data model for Project resource scheduling
 
-The following diagram represents the data design structure of the Project resource scheduling physical data model.   [![Resource management data model](./media/resource-management-data-model.jpg)](./media/resource-management-data-model.jpg)
+The following diagram represents the data design structure of the Project resource scheduling physical data model.   [![Resource management data model.](./media/resource-management-data-model.jpg)](./media/resource-management-data-model.jpg)
 
 ## Tables
 The following table provides a list of additional tables that support the Resource management data model.
@@ -114,3 +112,6 @@ The following table lists the facade classes that you can use as a starting poin
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

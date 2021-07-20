@@ -4,11 +4,9 @@
 title: Reuse ER configurations with Excel templates to generate reports in Word format
 description: This topic describes how report formats that were designed to generate reports as Excel workbooks can be configured to generate reports as Word documents.
 author: NickSelin
-manager: AnnBe 
-ms.date: 01/11/2021
+ms.date: 04/23/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -41,8 +39,8 @@ To complete these procedures, you must first follow the steps in the [Design a c
 
 You must also download and locally save the following templates for the sample report:
 
-- [Template of Payment Report (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=862266)
-- [Bounded Template of Payment Report (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Template of Payment Report (SampleVendPaymDocReport.docx)](https://download.microsoft.com/download/0/d/e/0de5a87c-95fc-4dfa-958f-285cb28b5b2b/SampleVendPaymDocReport.docx)
+- [Bounded Template of Payment Report (SampleVendPaymDocReportBounded.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded.docx)
 
 These procedures are for a feature that was added in Dynamics 365 for Operations version 1611 (November 2016).
 
@@ -59,14 +57,14 @@ These procedures are for a feature that was added in Dynamics 365 for Operations
 5. Select **Designer**.
 6. On the **Format designer** page, notice that the title of the root format element indicates that an Excel template is currently used.
 
-![Selecting the existing configuration](../media/er-design-configuration-word-2016-11-image01.gif)
+![Selecting the existing configuration.](../media/er-design-configuration-word-2016-11-image01.gif)
 
 ## Review the downloaded Word template
 
 1. In the Word desktop application, open the **SampleVendPaymDocReport.docx** template file that you downloaded earlier.
 2. Verify that the template contains only the layout of the document that you want to generate as ER output.
 
-![The Word template layout in the desktop application](../media/er-design-configuration-word-2016-11-image02.png)
+![The Word template layout in the desktop application.](../media/er-design-configuration-word-2016-11-image02.png)
 
 ## Replace the Excel template with the Word template and add a custom XML part
 
@@ -89,13 +87,13 @@ Currently, the Excel document is used as a template to generate the output in OP
 
 9. Notice that the title of the root format element indicates that a Word template is currently used.
 
-    ![Replacing the Excel template with the Word template and adding a custom XML part](../media/er-design-configuration-word-2016-11-image03.gif)
+    ![Replacing the Excel template with the Word template and adding a custom XML part.](../media/er-design-configuration-word-2016-11-image03.gif)
 
 10. On the **Format** tab, select **Attachments**.
 
 You can now map the elements of the **Report** custom XML part to the content controls of the Word document.
 
-If you're familiar with the process of designing Word documents as forms that contain [content controls](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) that are mapped to elements of [custom XML parts](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), complete all steps in the next procedure to create the document. For more information, see [Create forms that users complete or print in Words](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Otherwise, skip the next procedure.
+If you're familiar with the process of designing Word documents as forms that contain [content controls](/office/client-developer/word/content-controls-in-word) that are mapped to elements of [custom XML parts](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), complete all steps in the next procedure to create the document. For more information, see [Create forms that users complete or print in Words](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Otherwise, skip the next procedure.
 
 ## <a id='get-word-doc'></a>Get a Word document that has a custom XML part and do data mapping
 
@@ -115,7 +113,7 @@ If you're familiar with the process of designing Word documents as forms that co
 1. In the Word desktop application, open the **SampleVendPaymDocReportBounded.docx** template file.
 2. Verify that the template contains the layout of the document that you want to generate as ER output. The content controls that are used as placeholders for data that ER will enter in this template at runtime are based on the mappings that are configured between elements of the **Report** custom XML part and the content controls of the Word document.
 
-![Word template preview in the desktop application](../media/er-design-configuration-word-2016-11-image04.png)
+![Word template preview in the desktop application.](../media/er-design-configuration-word-2016-11-image04.png)
 
 ## Upload the Word template where the custom XML part is mapped to content controls
 
@@ -149,7 +147,7 @@ To run the draft version of the editable format, you must make it [runnable](../
 3. On the **Vendor payments** page, select all rows in the grid.
 4. Select **Payment status** \> **None**.
 
-    ![Payments for processing on the Vendor payments page](../media/er-design-configuration-word-2016-11-image05.png)
+    ![Payments for processing on the Vendor payments page.](../media/er-design-configuration-word-2016-11-image05.png)
 
 5. On the Action Pane, select **Generate payments**.
 6. In the dialog box that appears, follow these steps:
@@ -161,9 +159,12 @@ To run the draft version of the editable format, you must make it [runnable](../
 7. In the **Electronic report parameters** dialog box, select **OK**.
 8. The generated output is presented in Word format and contains the details of the processed payments. Analyze the generated output.
 
-    ![Generated output in Word format](../media/er-design-configuration-word-2016-11-image06.png)
+    ![Generated output in Word format.](../media/er-design-configuration-word-2016-11-image06.png)
 
 ## Additional resources
 
 - [Design a new ER configuration to generate reports in Word format](../er-design-configuration-word.md)
 - [Embed images and shapes in documents that you generate by using ER](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

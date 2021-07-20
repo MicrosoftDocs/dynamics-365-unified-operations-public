@@ -4,11 +4,9 @@
 title: Report BOMs as finished
 description: This article provides information about reporting BOMs as finished.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -92,3 +90,6 @@ In this case, the two on-hand pieces of item number COMP are considered. However
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Update the local agent
 description: This topic explains how to update the local agent.
 author: faix
-manager: AnnBe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -130,3 +128,6 @@ This topic explains how to update the local agent. The latest version of the loc
 
 8. After the local agent is successfully installed, go back to your on-premises connector in LCS.
 9. On the **Validate setup** tab, select **Message agent** to test LCS connectivity to your new local agent.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

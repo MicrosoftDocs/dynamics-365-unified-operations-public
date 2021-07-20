@@ -4,11 +4,9 @@
 title: One voucher
 description: One voucher for financial journals (general journal, fixed asset journal, vendor payment journal, and so on) lets you enter multiple subledger transactions in the context of a single voucher.
 author: kweekley
-manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,30 +38,30 @@ The existing functionality for financial journals (the general journal, fixed as
 
 - Set up the journal name (**General ledger** \> **Journal setup** \> **Journal names**) so that the **New voucher** field is set to **One voucher number only**. Every line that you add to the journal is now included in the same voucher. Therefore, the voucher can be entered as a multiline voucher, as an account/offset account on the same line, or as a combination.
 
-    [![Single line](./media/same-line.png)](./media/same-line.png)
+    [![Single line.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > The definition of One voucher does **not** cover cases where journal names are set up as **One voucher number only**, but the user then enters a voucher that includes only ledger account types. In this topic, One voucher means that there is a single voucher that contains more than one vendor, customer, bank, fixed asset, or project.
 
 - Enter a multiline voucher where there is no offset account.
 
-    [![Multiline voucher](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Multiline voucher.](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Enter a voucher where both the account and the offset account contain a subledger account type, such as **Vendor**/**Vendor**, **Customer**/**Customer**, **Vendor**/**Customer**, or **Bank**/**Bank**.
 
-    [![Subledger voucher](./media/subledger.png)](./media/subledger.png)
+    [![Subledger voucher.](./media/subledger.png)](./media/subledger.png)
 
 ## Issues with One voucher
 
-The One voucher functionality causes issues during settlement, tax calculation, transaction reversal, reconciliation of a subledger to the general ledger, financial reporting, and more. (For more information about issues that can occur during settlement, see, for example, [Single voucher with multiple customer or vendor records](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records).) To work and report correctly, these processes and reports require transaction details. Although some scenarios might still work correctly, depending on your organization's setup, there are often issues when multiple transactions are entered in one voucher.
+The One voucher functionality causes issues during settlement, tax calculation, transaction reversal, reconciliation of a subledger to the general ledger, financial reporting, and more. (For more information about issues that can occur during settlement, see, for example, [Single voucher with multiple customer or vendor records](../accounts-payable/single-voucher-multiple-customer-vendor-records.md).) To work and report correctly, these processes and reports require transaction details. Although some scenarios might still work correctly, depending on your organization's setup, there are often issues when multiple transactions are entered in one voucher.
 
 For example, you post the following multiline voucher.
 
-[![Example of a multiline voucher](./media/example.png)](./media/example.png)
+[![Example of a multiline voucher.](./media/example.png)](./media/example.png)
 
 You then generate the **Expenses by vendor** report in the **Financial Insights** workspace. On this report, expense account balances are grouped by vendor group and then vendor. When the report is generated, the system can't determine which vendor groups/vendors incurred the expense of 250.00. Because transaction details are missing, the system assumes that the whole 250.00 expense was incurred by the first vendor that is found in the voucher. Therefore, the 250.00 expense, which is included in the balance for main account 600120, is shown under that vendor group/vendor. However, it's very likely that the first vendor in the voucher isn't the correct vendor. Therefore, the report is probably incorrect.
 
-[![Expenses by vendor report](./media/expenses.png)](./media/expenses.png)
+[![Expenses by vendor report.](./media/expenses.png)](./media/expenses.png)
 
 ## The future of One voucher
 
@@ -191,3 +189,6 @@ If a correction must be made to the Accounts receivable or Accounts payable ledg
 ### "The system allows it"
 
 Organizations often use the One voucher functionality merely because the system lets them use it, without understanding the implications.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

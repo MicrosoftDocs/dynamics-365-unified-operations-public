@@ -4,11 +4,9 @@
 title: Enable "shop similar looks" recommendations
 description: This topic describes how to enable "shop similar looks" product recommendations in Microsoft Dynamics 365 Commerce.
 author: bebeale
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -34,8 +32,6 @@ ms.dyn365.ops.version: 10.0.13
 [!include [banner](includes/banner.md)]
 
 This topic describes how to enable "shop similar looks" product recommendations in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The "shop similar looks" recommendations feature in Dynamics 365 Commerce uses the power of artificial intelligence and machine learning (AI-ML) to deliver recommendations for visually similar products to customers. By making "shop similar looks" recommendations available for all retail channels in Commerce, retailers can increase customer satisfaction by helping customers easily find what they want.
 
@@ -76,7 +72,7 @@ To enable the "shop similar looks" recommendations feature in Commerce headquart
 
 The following illustration shows the **Shop similar looks** feature on the **Feature management** page in Commerce headquarters.
 
-![The Shop similar looks feature on the Feature management page in Commerce headquarters](./media/enableshopsimilarlooks.png)
+![The Shop similar looks feature on the Feature management page in Commerce headquarters.](./media/enableshopsimilarlooks.png)
 
 After the preceding tasks been completed, POS terminals are automatically enhanced with a contextual **Shop similar products** panel. By selecting **See more**, POS terminal users can be taken to a dedicated "shop similar looks" page that can be filtered further.
 
@@ -96,7 +92,7 @@ To add a **Shop similar looks** button to a PDP by using Commerce site builder, 
 
 The following illustration shows the **Enable Shop Similar Looks Link** check box and **Shop similar looks** button on an example PDP in site builder.
 
-![Enable Shop Similar Looks Link check box and Shop similar looks button on a PDP in site builder](./media/SSLecomtooling.png)
+![Enable Shop Similar Looks Link check box and Shop similar looks button on a PDP in site builder.](./media/SSLecomtooling.png)
 
 ## Additional resources
 
@@ -119,3 +115,6 @@ The following illustration shows the **Enable Shop Similar Looks Link** check bo
 [Create recommendations with demo data](product-recommendations-demo-data.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

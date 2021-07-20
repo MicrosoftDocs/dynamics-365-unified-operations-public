@@ -3,12 +3,10 @@
 
 title: Financial dimensions and main accounts in right-to-left languages
 description: This topic describes decisions that you need to make when you use a right-to-left language, and you must set up financial dimensions and main accounts.
-author: aprilolson
-manager: AnnBe
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 222564
 ms.assetid: 875dcebb-1bbb-4841-a8c6-9e134da07e96
 ms.search.region: global
 # ms.search.industry: 
-ms.author: aolson
+ms.author: rcarlson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -44,3 +42,6 @@ Financial dimensions and main accounts are key components of the planning phase 
 - Avoid using the selected chart of accounts delimiter in financial dimension and main account values.
 
 By following these best practices, you help guarantee consistent representation of the user defined-order throughout the system.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

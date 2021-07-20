@@ -4,11 +4,9 @@
 title: Create a debit note against a sales invoice
 description: This topic explains how to create a debit note against a sales invoice.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -57,4 +55,7 @@ ms.dyn365.ops.version: 10.0.4
 
 To validate the financial entries, select **Inquiries** \> **Voucher**.
 
-![Example](media/Annotation-2019-05-20-161336.png)
+![Example.](media/Annotation-2019-05-20-161336.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

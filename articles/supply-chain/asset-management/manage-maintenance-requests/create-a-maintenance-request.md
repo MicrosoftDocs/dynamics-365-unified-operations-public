@@ -3,12 +3,10 @@
 
 title: Create maintenance requests
 description: This topic explains how to create a maintenance request in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -37,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 
 Maintenance requests can be used if maintenance workers or production workers discover that equipment requires repair, but the repair job can't be done right away.
 
-**Example:** While a maintenance worker is making a repair, she discovers that another asset at the same location must be serviced. However, the maintenance worker doesn't have the time or the required spare parts to do the repair job. Therefore, she creates a maintenance request on the asset and enters a short description of the issue.
+**Example:** While a maintenance worker is making a repair, they discover that another asset at the same location must be serviced. However, the maintenance worker doesn't have the time or the required spare parts to do the repair job. Therefore, they create a maintenance request on the asset and enters a short description of the issue.
 
 The **Active maintenance requests** section of the **Related information** pane on the right side of the **All assets** or **Active assets** page (**Asset management** \> **Common** \> **Assets** \> **All assets** or **Active assets**) shows the active maintenance requests that are attached to the selected asset.
 
@@ -59,7 +57,7 @@ The **Active maintenance requests** section of the **Related information** pane 
 11. In the **Notes** field, enter any additional notes that are required.
 12. Select **OK**.
 
-![Create maintenance request](media/03-manage-maintenance-requests.png)
+![Create maintenance request.](media/03-manage-maintenance-requests.png)
 
 ## Subsequent processing of maintenance requests
 
@@ -74,7 +72,10 @@ In the details view, you can update various information. Here are some examples:
 - Select a maintenance job type and, if this information is relevant, a related maintenance job variant and a job trade.
 - In the **Latitude** and **Longitude** fields, enter geographic coordinates. Any coordinates that are added to a maintenance request are automatically transferred to a related work order. 
 
-![Update maintance request](media/04-manage-maintenance-requests.png)
+![Update maintance request.](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > If you select an asset when you create a maintenance request, you can add one fault to the asset. After the maintenance request has been created, you can add more faults, as you require. To add faults, select **Asset fault** on the **All maintenance requests** page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

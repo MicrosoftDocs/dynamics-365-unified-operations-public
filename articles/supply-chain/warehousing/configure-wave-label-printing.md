@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Set up and use wave label printing
+title: Wave label printing
 description: This topic describes wave label printing and explains how to set it up.
-author: GarmMSFT
-manager: PJacobse
+author: perlynne
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -17,18 +15,18 @@ ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDo
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: PJacobse
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: kamaybac
+ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
 
 ---
 
-# Set up and use wave label printing
+# Wave label printing
 
 [!include [banner](../includes/banner.md)]
 
@@ -937,3 +935,10 @@ You can view and reprint wave labels from the following pages:
 - Wave label history
 
 For most of these pages, you can find the relevant function by selecting **Wave labels** in the **Related information** group on the **Shipments** tab of the Action Pane.
+
+## Additional resources
+
+- [Reprint and void wave labels](reprint-and-void-wave-labels.md)
+- [Schedule wave label printing during wave](configure-task-based-wave-label-printing.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

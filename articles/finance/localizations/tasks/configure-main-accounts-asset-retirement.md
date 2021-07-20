@@ -4,11 +4,9 @@
 title: Configure main accounts for asset retirement obligation posting and market discount rates
 description: For Japan, asset retirement obligation needs to be assessed and posted when acquiring a fixed asset with legal obligations at retirement. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -78,3 +76,6 @@ This task uses the JPMF demo company data.
 3. In the Start date field, enter a date.
 4. In the Market discount rate percentage field, enter a number.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

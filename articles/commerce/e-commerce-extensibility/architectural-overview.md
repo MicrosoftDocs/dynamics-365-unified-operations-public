@@ -4,11 +4,9 @@
 title: E-commerce architectural overview
 description: This topic presents an architectural overview of Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -33,13 +31,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic presents an architectural overview of Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 The Dynamics 365 Commerce online extensibility software development kit (SDK) lets partners easily extend their website so that it includes additional business logic and user experience (UX) logic. Partners can do this extension by using open-source technologies that are freely available.
 
 This architectural overview will focus on the "Web Storefront" box highlighted in the following [Commerce architecture](../commerce-architecture.md) illustration.
 
-![Dynamics 365 Commerce component overview with Web Storefront box highlighted](media/architecture-overview-web-storefront.jpg)
+![Dynamics 365 Commerce component overview with Web Storefront box highlighted.](media/architecture-overview-web-storefront.jpg)
 
 ## Web storefront component-based architecture
 
@@ -49,7 +45,7 @@ The architecture of the platform takes advantage of a reuse-based approach to de
 
 The extensibility design avoids dependency between the platform and the application by running the application as a microservice that is built on Node.js and that uses React as an underlying UX framework. The platform is run as a separate service, and handles all routing, integration with the content management system (CMS), and security.
 
-![High-level architectural overview](media/architectural-overview.png)
+![High-level architectural overview.](media/architectural-overview.png)
 
 ## Request flow
 
@@ -68,7 +64,7 @@ Here is a typical architectural flow when a customer requests a page from an onl
 
 ## Partner application
 
-![Partner application architectural overview](media/architectural-overview-2.png)
+![Partner application architectural overview.](media/architectural-overview-2.png)
 
 The compiled partner package contains both the SDK and a module library. The SDK isn't extensible, but module library modules can be cloned and completely customized. Partner customizations (modules, data actions, and themes) can be packaged by using a command-line interface (CLI) command. The package can then be uploaded by using Microsoft Dynamics Lifecycle Services (LCS). In this way, the customizations are incorporated into the partner's e-Commerce site.
 
@@ -77,3 +73,6 @@ The compiled partner package contains both the SDK and a module library. The SDK
 [E-commerce components](ecommerce-components.md)
 
 [CLI command reference](cli-command-reference.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

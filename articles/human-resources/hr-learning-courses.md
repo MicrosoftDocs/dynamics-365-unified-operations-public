@@ -4,11 +4,9 @@
 title: Set up training courses
 description: Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWo
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7532
@@ -32,10 +29,11 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Set up training courses
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
 
- Set up prerequisites
----------------------
+##  Set up prerequisites
 
 The following information is required and must be set up before you create courses.
 -   **Course types**
@@ -134,8 +132,7 @@ The following table lists the possible course statuses and the actions that you 
 ## Course participants
 Course participants are workers who participate in a training course or event. You can only register participants for open courses. The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page.
 
-Workflow
---------
+## Workflow
 
 Employees who register for a course through the **Employee self service** page can have their registration routed through workflow for approval. You can assign a workflow to a course on the **General** FastTab on the **Courses** page.
 
@@ -143,3 +140,6 @@ Employees who register for a course through the **Employee self service** page c
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

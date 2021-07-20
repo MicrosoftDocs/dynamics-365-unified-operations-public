@@ -4,11 +4,9 @@
 title: Set product quantity limits for B2B e-commerce sites
 description: This topic describes how to set product quantity limits for business-to-business (B2B) e-commerce sites.
 author: josaw1
-manager: AnnBe
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 # optional metadata
 ms.search.form: RetailOperations
@@ -87,3 +85,6 @@ To turn on the B2B order quantity limits feature in Commerce site builder, follo
 [Manage business partner users on B2B e-commerce sites](manage-b2b-users.md)
 
 [Configure the customer account payment method for B2B e-commerce sites](payment-method.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

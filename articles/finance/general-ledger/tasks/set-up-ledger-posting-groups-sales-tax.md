@@ -4,11 +4,9 @@
 title: Set up Ledger posting groups for sales tax
 description: Sales tax is calculated and posted to main accounts that are specified in Ledger posting groups. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -44,3 +42,6 @@ Sales tax is calculated and posted to main accounts that are specified in Ledger
 11. In the **Customer case discount** field, select the main account to post cash discount for **Sales tax codes** associated with this **Ledger posting group**. This is optional and if no account is entered, the main account on the **Cash discount codes** will be used. It can be useful to use different accounts per **Ledger posting group** if using the reverse sales tax on cash discount option on **Sales tax groups**.  
 12. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

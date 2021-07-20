@@ -4,11 +4,9 @@
 title: Manufacturing execution workloads for cloud and edge scale units
 description: This topic describes how manufacturing execution workloads work with cloud and edge scale units.
 author: cabeln
-manager: 
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -31,12 +29,12 @@ ms.dyn365.ops.version: 10.0.15
 # Manufacturing execution workloads for cloud and edge scale units
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> The manufacturing execution workload is available in preview at this point in time.
 > Some business functionality isn't fully supported in the public preview when workload scale units are used.
 
-In manufacturing execution, cloud and edge scale units deliver the following capabilities, even when edge units aren't connected to the hub:
+In manufacturing execution, scale units deliver the following capabilities:
 
 - Machine operators and shop floor supervisors can access the operational production plan.
 - Machine operators can keep the plan up to date by running discrete and process manufacturing jobs.
@@ -49,7 +47,7 @@ This topic describes how manufacturing execution workloads work with cloud and e
 
 As the following illustration shows, the manufacturing lifecycle is divided into three phases: *Plan*, *Execute*, and *Finalize*.
 
-[![Manufacturing execution phases when a single environment is used](media/mes-phases.png "Manufacturing execution phases when a single environment is used")](media/mes-phases-large.png)
+[![Manufacturing execution phases when a single environment is used](media/mes-phases.png "Manufacturing execution phases when a single environment is used."](media/mes-phases-large.png)
 
 The _Plan_ phase includes product definition, planning, order creation and scheduling, and release. The release step indicates the transition from the _Plan_ phase to the _Execute_ phase. When a production order is released, the production order jobs will be visible on the production floor and ready for execution.
 
@@ -59,7 +57,7 @@ When a production job is marked as completed, it moves from the _Execute_ phase 
 
 As the following illustration shows, when scale units are used, the _Execute_ phase is split out as a separate workload.
 
-[![Manufacturing execution phases when scale units are used](media/mes-phases-workloads.png "Manufacturing execution phases when scale units are used")](media/mes-phases-workloads-large.png)
+[![Manufacturing execution phases when scale units are used](media/mes-phases-workloads.png "Manufacturing execution phases when scale units are used."](media/mes-phases-workloads-large.png)
 
 The model now goes from a single-instance installation to a model that is based on the hub and scale units. The _Plan_ and _Finalize_ phases run as back-office operations on the hub, and the manufacturing execution workload runs on the scale units. Data is transferred asynchronously between the hub and scale units.
 
@@ -76,6 +74,7 @@ The following manufacturing execution tasks can currently be run on workloads wh
 - Report scrap
 - Indirect activity
 - Break
+- Report as finished and putaway (requires that you also run the warehouse execution workload on your scale unit, see also [Report as finished and putaway on a scale unit](#RAF))
 
 ## Working with manufacturing execution workloads on the hub
 
@@ -91,7 +90,7 @@ Although the job usually runs automatically, you can run it manually at any time
 
 To review the registration processing log, sign in to the hub, and go to **Production control \> Periodic tasks \> Backoffice workload management \> Raw registration processing log**. The **Raw registration processing log** page shows a list of processed raw registrations and the status of each registration.
 
-![Raw registration processing log page](media/mes-processing-log.png "Raw registration processing log page")
+![Raw registration processing log page.](media/mes-processing-log.png "Raw registration processing log page")
 
 You can work on any registration in the list by selecting it and then selecting one of the following buttons on the Action Pane:
 
@@ -112,3 +111,27 @@ To review the history of manufacturing jobs that have been processed on a scale 
 ### Manufacturing hub to scale unit message processor job
 
 The _Manufacturing hub to scale unit message processor_ job processes data from the hub to the scale unit. This job is automatically started when the manufacturing execution workload is deployed. However, you can run it manually at any time by going to **Production control \> Periodic tasks \> Backoffice workload management \> Manufacturing hub to scale unit message processor**.
+
+<a name="RAF"></a>
+
+## Report as finished and putaway on a scale unit
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+In the current release, report as finished and putaway operations (for finished products, co-products, and by-products) are supported by the [warehouse execution workload](cloud-edge-workload-warehousing.md) (not the manufacturing execution workload). Therefore, to use this functionality when connected to a scale unit, you must do the following:
+
+- Install both the warehouse execution workload and the manufacturing execution workload on your scale unit.
+- Use the Warehouse Management mobile app to report as finished and process the putaway work. The production floor execution interface does not currently support these processes.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

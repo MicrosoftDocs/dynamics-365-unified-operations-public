@@ -4,11 +4,9 @@
 title: Transfer orders (Brazil)
 description: This topic provides information about transfer orders for Brazil. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,3 +50,6 @@ You can do the following to transfer items between fiscal establishments by usin
   - Return a transfer fiscal document. For more information, see [Return a transfer fiscal document](https://review.docs.microsoft.com/dynamicsax-2012/appuser-itpro/bra-return-a-transfer-fiscal-document?branch=master).
 
   - Cancel an incorrect transfer order. For more information, see [Cancel a transfer fiscal document](https://review.docs.microsoft.com/dynamicsax-2012/appuser-itpro/bra-cancel-a-transfer-fiscal-document?branch=master).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

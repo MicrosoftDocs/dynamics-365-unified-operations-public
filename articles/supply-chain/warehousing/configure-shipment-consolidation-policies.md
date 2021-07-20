@@ -4,11 +4,9 @@
 title: Configure shipment consolidation policies
 description: This topic explains how to set up default and custom shipment consolidation policies.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -186,7 +184,7 @@ Follow these steps to create the shipment consolidation policy for this business
 1. Leave the **Consolidate with open shipments** option set to *No*.
 1. On the Action Pane, select **Save**.
 1. On the **Consolidation fields** FastTab, in the **Remaining fields** list, select the row where the **Field name** field is set to *Mode of delivery*.
-1. Select the **Add** button ![Right arrow](media/forward-button.png) to move the field to the **Selected fields** list.
+1. Select the **Add** button ![Right arrow.](media/forward-button.png) to move the field to the **Selected fields** list.
 1. On the Action Pane, select **Edit query**.
 1. In the query editor dialog box, on the **Range** tab, in the grid, find the row where the **Field** field is set to *Customer account*, and set the **Criteria** field for that row to *US-001*.
 1. Select **Add** to add a row that has the following settings to the grid:
@@ -221,7 +219,7 @@ Follow these steps to create the shipment consolidation policy for this business
 1. Set the **Consolidate with open shipments** option to *Yes*.
 1. On the Action Pane, select **Save**.
 1. On the **Consolidation fields** FastTab, in the **Remaining fields** list, select the row where the **Field name** field is set to *Mode of delivery*.
-1. Select the **Add** button ![Right arrow](media/forward-button.png) to move the field to the **Selected fields** list.
+1. Select the **Add** button ![Right arrow.](media/forward-button.png) to move the field to the **Selected fields** list.
 1. On the Action Pane, select **Edit query**.
 1. In the query editor dialog box, on the **Joins** tab, expand and select **Tables \> Load details** in the tree.
 1. Select **Add table join**.
@@ -258,9 +256,9 @@ Follow these steps to create the shipment consolidation policy for this business
 1. Set the **Consolidate with open shipments** option to *Yes*.
 1. On the Action Pane, select **Save**.
 1. On the **Consolidation fields** FastTab, in the **Remaining fields** list, select the row where the **Field name** field is set to *Customer requisition*.
-1. Select the **Add** button ![Right arrow](media/forward-button.png) to move the field to the **Selected fields** list.
+1. Select the **Add** button ![Right arrow.](media/forward-button.png) to move the field to the **Selected fields** list.
 1. In the **Remaining fields** list, select the row where the **Field name** field is set to *Mode of delivery*.
-1. Select the **Add** button ![Right arrow](media/forward-button.png) to move the field to the **Selected fields** list.
+1. Select the **Add** button ![Right arrow.](media/forward-button.png) to move the field to the **Selected fields** list.
 1. On the Action Pane, select **Edit query**.
 1. In the query editor dialog box, on the **Range** tab, find the row where the **Field** field is set to *Customer account*, and set the **Criteria** field for that row to *US-001*.
 1. Select **OK** to close the dialog box.
@@ -290,7 +288,7 @@ Follow these steps to create the shipment consolidation policy for this business
 1. Leave the **Consolidate with open shipments** option set to *No*.
 1. On the Action Pane, select **Save**.
 1. On the **Consolidation fields** FastTab, in the **Remaining fields** list, select the row where the **Field name** field is set to *Mode of delivery*.
-1. Select the **Add** button ![Right arrow](media/forward-button.png) to move the field to the **Selected fields** list.
+1. Select the **Add** button ![Right arrow.](media/forward-button.png) to move the field to the **Selected fields** list.
 1. On the Action Pane, select **Edit query**.
 1. In the query editor dialog box, on the **Range** tab, select **Add** to add a row that has the following settings to the grid:
 
@@ -324,7 +322,7 @@ Typically, this business case can be addressed by using the default policies tha
 1. Leave the **Consolidate with open shipments** option set to *No*.
 1. On the Action Pane, select **Save**.
 1. On the **Consolidation fields** FastTab, in the **Remaining fields** field, select the row where the **Field name** field is set to *Mode of delivery*.
-1. Select the **Add** button ![Right arrow](media/forward-button.png) to move the field to the **Selected fields** list.
+1. Select the **Add** button ![Right arrow.](media/forward-button.png) to move the field to the **Selected fields** list.
 1. On the Action Pane, select **Edit query**.
 1. In the query editor dialog box, on the **Range** tab, find the row where the **Field** field is set to *Warehouse*, and set the **Criteria** field for that row to *61, 63*.
 1. Select **OK** to close the dialog box.
@@ -358,3 +356,6 @@ The following scenarios illustrate how you could use the shipment consolidation 
 ## Additional resources
 
 - [Shipment consolidation policies](about-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

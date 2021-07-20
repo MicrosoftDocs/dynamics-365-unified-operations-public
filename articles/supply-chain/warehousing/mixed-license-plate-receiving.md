@@ -4,11 +4,9 @@
 title: Mixed license plate receiving
 description: This topic describes how to use mixed license plate receiving to register and create work for multiple items with a mobile device.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,3 +50,6 @@ You need to create a new menu item with mode work that does not use existing wor
 - Mixed license plate receiving and put away
 
 The options to identify the source document lines are purchase order item, purchase order line, return order, transfer order item, and transfer order line. These options can change the receiving order on a single license plate. The last option is by load item. You can add multiple items to a license plate, but you cannot switch between multiple loads.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

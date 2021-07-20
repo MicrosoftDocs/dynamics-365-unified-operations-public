@@ -4,11 +4,9 @@
 title: Stock transfer orders that have tax on the transfer price
 description: This topic explains how to create a stock transfer order that has tax on the transfer price.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -71,7 +69,7 @@ Complete the procedures in this topic to create a stock transfer order that has 
 2. Select the record where the **Update type** field is set to **Shipment**.
 3. Select **Ledger** \> **Voucher**.
 
-![Example](media/Annotation-2019-05-21-105500.png)
+![Example.](media/Annotation-2019-05-21-105500.png)
 
 > [!NOTE]
 > The tax accounts for the "from" warehouse and Goods and Services Tax Identification Number (GSTIN) are posted.
@@ -91,7 +89,10 @@ Complete the procedures in this topic to create a stock transfer order that has 
 2. Select the record where the **Update type** field is set to **Receive**.
 3. Select **Ledger** \> **Voucher**.
 
-![Example](media/Annotation-2019-05-21-105611.png)
+![Example.](media/Annotation-2019-05-21-105611.png)
 
 > [!NOTE]
 > The tax accounts for the "to" warehouse and GSTIN are posted.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

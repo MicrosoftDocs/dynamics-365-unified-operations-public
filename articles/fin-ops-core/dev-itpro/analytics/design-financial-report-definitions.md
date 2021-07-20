@@ -4,11 +4,9 @@
 title: Report definitions in financial report designer
 description: This article provides information about report definitions.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -89,3 +87,6 @@ The following table describes the tabs in a report definition and how the inform
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

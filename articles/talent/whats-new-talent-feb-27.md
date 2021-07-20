@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Talent (February 27, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for February 27, 2019.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -82,7 +79,7 @@ In many organizations, compensation and benefits managers might have access only
 
 ### Platform update 24 for Finance and Operations
 
-For more information about Platform update 24 for Microsoft Dynamics 365 Finance and Operations (March 2019), see [Preview features in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+For more information about Platform update 24 for Microsoft Dynamics 365 Finance and Operations (March 2019), see [Preview features in Finance and Operations platform update 24 (March 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### Make employee fixed compensation available for future position assignments
 
@@ -93,7 +90,7 @@ It's typical that employees who join an organization have a future start date. T
 ### Changes to the Core HR integration template (Talent Dataverse to Finance)
 The template for Core HR has been updated to an "advanced query template". Therefore, by default, the advanced query will be available for projects that are created by using this template. Additionally, any default mapping functions will be visible only in the advanced query editor. (Default mapping functions appear as "FN" in the mappings.)
 
-For more information about mapping errors, see [What's new or changed in Dynamics 365 Talent: Core HR (December 14, 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
+For more information about mapping errors, see [What's new or changed in Dynamics 365 Talent: Core HR (December 14, 2018)](/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
 To use the new template, create a new project, and select the new Talent integration template.
 
@@ -105,23 +102,23 @@ To update your existing template, follow these steps.
     - **Job Positions to Positions Parent Job Assignment:** Remove this mapping.
     - **Job Positions to Base Position:** Add a new mapping from the **Job Positions** Dataverse table to the **Base Position** Finance and Operations table. Move it to position 7 in the sequence.
 
-        [![Job Positions to Base Position mapping](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
+        [![Job Positions to Base Position mapping.](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
     - **Job Positions to Position Details:** Add a new mapping from the **Job Positions** Dataverse table to the **Position Details** Finance and Operations table. Move it to position 8 in the sequence.
 
-        [![Job Positions to Position Details mapping](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
+        [![Job Positions to Position Details mapping.](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
     - **Job Positions to Position Durations:** Add a new mapping from the **Job Positions** Dataverse table to the **Position Durations** Finance and Operations table.
 
-        [![Job Positions to Position Durations mapping](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
+        [![Job Positions to Position Durations mapping.](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
     - **Job Positions to Position Hierarchies:** Add a new mapping from the **Job Positions** Dataverse table to the **Position Hierarchies** Finance and Operations table. Select **Advanced Query** to make your advanced query available for your project.
 
-       [![Advanced Query button](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
+       [![Advanced Query button.](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
 2. Add the following mappings.
     
-    [![Add mappings](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
+    [![Add mappings.](./media/CDS-Mapping4.png)](./media/CDS-Mapping4.png)
 
     1. cdm_jobpositionnumber cdm_jobspositionnumb... = POSITIONID
        cdm_parentjobpositionid.cdm-jobpositionnumb... = PARENTPOSITIONID
@@ -136,14 +133,17 @@ To update your existing template, follow these steps.
 
     5. Select **Add column \> Add conditional column** to add a default value transform for HIERARCHYTYPENAME.
 
-        [![Add conditional column command](./media/Add-column.png)](./media/Add-column.png)
+        [![Add conditional column command.](./media/Add-column.png)](./media/Add-column.png)
 
     6. In the **Add conditional column** dialog box, enter **HIERARCHYTYPENAME** as the name of the new column.
-    7. In the **If** part of the condition, select any column, use **equal to** as the relationship, and enter any value. In the ***Then** and **Otherwise** parts of the condition, specify what the default value should be. In this case, enter **Line** in both parts.
+    7. In the **If** part of the condition, select any column, use **equal to** as the relationship, and enter any value. In the **Then** and **Otherwise** parts of the condition, specify what the default value should be. In this case, enter **Line** in both parts.
 
-        [![Add conditional column dialog box](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
+        [![Add conditional column dialog box.](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 
     8. Select **OK** to close the **Advanced Query and Filtering** dialog box.
     9. On the **Mapping task** page, select the new column as the source to create another mapping for HIERARCHYTYPENAME.
 
-        [![Mapping](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
+        [![Mapping.](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

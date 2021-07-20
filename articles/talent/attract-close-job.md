@@ -4,11 +4,9 @@
 title: Close a job in Attract
 description: This topic explains how to close a job in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
-manager: tfehr
 ms.date: 07/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -16,7 +14,6 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -43,11 +40,11 @@ You can cancel a job in Attract at any time.
 
 2. Select **Close job**.
 
-   ![Close job in Attract](./media/attract-close-job.png)
+   ![Close job in Attract.](./media/attract-close-job.png)
 
 3. In the **Close this job** dialog box, select **Job cancelled**, add any comments, and then select **Close job**.
 
-   ![Close job as Position filled](./media/attract-close-job-as-cancelled.png)
+   ![Close job as Position filled.](./media/attract-close-job-as-cancelled.png)
 
 ## Close a job as Position filled
 
@@ -57,13 +54,16 @@ You can close a job as **Position filled** after at least one prospect has compl
 
 2. Select **Close job**.
 
-   ![Close job in Attract](./media/attract-close-job.png)
+   ![Close job in Attract.](./media/attract-close-job.png)
 
 3. In the **Close this job** dialog box, select **Position filled**, select the candidate who accepted the offer, add any comments, and then select **Close job**.
 
-   ![Close job as Position filled](./media/attract-close-job-as-position-filled.png)
+   ![Close job as Position filled.](./media/attract-close-job-as-position-filled.png)
 
    > [!NOTE]
    > You can only close a job as **Position filled** when at least one prospect has completed the Offer stage. If the job application doesn't have **Offer accepted** selected, or if the application doesn't display a status of **Accepted** in Offer, the **Position filled** option won't display in the **Reason** dropdown.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

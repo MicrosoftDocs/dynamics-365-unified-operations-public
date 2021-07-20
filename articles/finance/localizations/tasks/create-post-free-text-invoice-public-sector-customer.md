@@ -4,11 +4,9 @@
 title: Create and post a free text invoice for a public sector customer
 description: This procedure walks you through creating and posting a free text invoice for a customer using OIOUBL electronic invoicing. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -65,3 +63,6 @@ Before you can complete this procedure, you must complete the following procedur
 2. Click Original.
     * You can verify the status of the job and download the actual file on the Electronic reporting jobs page.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up and report value-added tax (VAT)
 description: This topic explains how to set up and report value-added tax (VAT).
 author: kfend
-manager: AnnBe
 ms.date: 01/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,20 +52,20 @@ For more detailed information about standard sales tax functionality, see the fo
 - [Setting up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md)
 - [Set up a sales tax settlement period](../general-ledger/tasks/set-up-sales-tax-settlement-periods.md)
 - [Ledger posting groups](../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md)
-- [Sales tax exempt codes](https://technet.microsoft.com/library/aa634356.aspx)
+- [Sales tax exempt codes](/dynamicsax-2012//sales-tax-exempt-codes-form)
 - [Sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md)
 - [Setting up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md)
 - [Setting up sales tax groups and item sales tax groups](../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md)
-- [Set up conditional sales taxes](https://technet.microsoft.com/library/aa496600.aspx) (used for cash accounting)
+- [Set up conditional sales taxes](/dynamicsax-2012/appuser-itpro/set-up-conditional-sales-taxes) (used for cash accounting)
 - [Set up a tax registration type](emea-registration-ids.md)
 
 ## Activate the UAE functionality
 
 Country-specific functionality for the UAE is activated by using the **Localized functionality region** configuration for legal entities. If the company address is used to detect the **Localized functionality region** configuration, make sure that the country/region code of the legal entity's primary address is set to **ARE** on the **Legal entities** page.
 
-[![Legal entities page](./media/uae_vat_01.jpg)](./media/uae_vat_01.jpg)
+[![Legal entities page.](./media/uae_vat_01.jpg)](./media/uae_vat_01.jpg)
 
-For more information about the patterns that are used in localized solutions, see the [Localization and regulatory features website](../../dev-itpro/lcs-solutions/country-region.md).
+For more information about the patterns that are used in localized solutions, see the [Localization and regulatory features website](../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md).
 
 ## Configure VAT for a legal entity
 
@@ -80,7 +78,7 @@ The VAT declaration and the FAF require that additional information be set up in
 - **Profit margin scheme** – Set this option to **Yes** if the company operates in a special business scheme by using the Profit Margin scheme.
 - **VAT on behalf of customer** – Set this option to **Yes** if the company operates as an agent that pays import VAT on behalf of another taxable person.
 
-[![Value added tax FastTab on the Legal entities page](./media/uae_vat_02.jpg)](./media/uae_vat_02.jpg)
+[![Value added tax FastTab on the Legal entities page.](./media/uae_vat_02.jpg)](./media/uae_vat_02.jpg)
 
 For more information about VAT reporting requirements, see the instructions in the [Requirements Document for Tax Accounting Software](https://www.tax.gov.ae/-/media/Files/FTA/Tax-Support/tax-accounting-software-vendors/requirement-document-for-tax-accounting-software.pdf) section of the UAE FTA website.
 
@@ -90,7 +88,7 @@ The federal tax authority (FTA) must be set up as a sales tax authority. After t
 
 Go to **Tax** \> **Sales tax** \> **Sales tax authorities**, and set up the address information of your FTA office. Be sure to select the UAE-specific report layout that corresponds to the electronic VAT declaration.
 
-[![Sales tax authorities page](./media/uae_vat_03.jpg)](./media/uae_vat_03.jpg)
+[![Sales tax authorities page.](./media/uae_vat_03.jpg)](./media/uae_vat_03.jpg)
 
 When you've finished, you can associate sales tax settlement periods with the tax authority that you just configured and with sales tax codes.
 
@@ -185,7 +183,7 @@ Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax reporting code
 
 Use the information in the "Report setup" column of the above table to configure sales tax codes and associate them with sales tax reporting codes on the **Report setup** FastTab of each report that is relevant to your company's business.
 
-[![Report setup FastTab](./media/uae_vat_05.jpg)](./media/uae_vat_05.jpg)
+[![Report setup FastTab.](./media/uae_vat_05.jpg)](./media/uae_vat_05.jpg)
 
 ## Set up a VAT reverse charge
 
@@ -193,23 +191,23 @@ When a taxable customer must pay tax on a supply that is received from a non-res
 
 To use the reverse charge functionality, you must set the **Enable reverse charge** option to **Yes** on the **Reverse charge** tab of the **General ledger parameters** page.
 
-[![Reverse charge tab on the General ledger parameters page](./media/uae_vat_06.jpg)](./media/uae_vat_06.jpg)
+[![Reverse charge tab on the General ledger parameters page.](./media/uae_vat_06.jpg)](./media/uae_vat_06.jpg)
 
-Before you set the sales tax group for the reverse charge, you should set up two sales tax codes: one for input sales tax and one for output sales tax. The output sales tax code should be set up so that it has a negative value. For more information, see [Setting up sales tax codes](https://technet.microsoft.com/library/gg230668.aspx).
+Before you set the sales tax group for the reverse charge, you should set up two sales tax codes: one for input sales tax and one for output sales tax. The output sales tax code should be set up so that it has a negative value. For more information, see [Setting up sales tax codes](/dynamicsax-2012/appuser-itpro/setting-up-sales-tax-codes).
 
 In the **Reverse charge** sales tax group, you must select the **Reverse charge** check box on the line that has the negative sales tax rate.
 
-[![Sales tax groups page](./media/uae_vat_07.jpg)](./media/uae_vat_07.jpg)
+[![Sales tax groups page.](./media/uae_vat_07.jpg)](./media/uae_vat_07.jpg)
 
 When the invoice line is posted with the sales tax group defined as **Reverse charge**, the system will create two sales tax transactions: one that has a sales tax receivable tax direction and one that has a sales tax payable tax direction.
 
-[![Posted sales tax page](./media/uae_vat_08.jpg)](./media/uae_vat_08.jpg)
+[![Posted sales tax page.](./media/uae_vat_08.jpg)](./media/uae_vat_08.jpg)
 
 ## Download and set up Electronic reporting configurations
 
-The implementation of VAT reporting for the UAE is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md).
+The implementation of VAT reporting for the UAE is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-For production and user acceptance testing (UAT) environments, follow the instructions in [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md) to download ER configurations.
+For production and user acceptance testing (UAT) environments, follow the instructions in [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md) to download ER configurations.
 
 To use the VAT declaration and FAF functionality in UAE localizations, you must install the following configurations. Always use the highest available version number of a configuration file.
 
@@ -224,17 +222,17 @@ To use the VAT declaration and FAF functionality in UAE localizations, you must 
 
 For development and test environments, if direct access to a deployment virtual machine (VM) is available, you can download configurations from [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com). After you sign in to LCS, select the **Shared asset library** tile.
 
-[![Shared asset library tile in LCS](./media/uae_vat_09.jpg)](./media/uae_vat_09.jpg) 
+[![Shared asset library tile in LCS.](./media/uae_vat_09.jpg)](./media/uae_vat_09.jpg) 
 
 In the Shared asset library, select **GER Configuration**, select the required configurations (see the previous table), and download them to a local disk.
 
 In Finance and Operations, in the **Electronic reporting** workspace, select the **Reporting configurations** tile. Then, on the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**, and upload all the files in the order in which they are listed in the previous table.
 
-[![Configurations page](./media/uae_vat_10.jpg)](./media/uae_vat_10.jpg)
+[![Configurations page.](./media/uae_vat_10.jpg)](./media/uae_vat_10.jpg)
 
 After all the configurations are uploaded, the configuration tree should be present in Finance and Operations.
 
-[![Configuration tree](./media/uae_vat_11.jpg)](./media/uae_vat_11.jpg)
+[![Configuration tree.](./media/uae_vat_11.jpg)](./media/uae_vat_11.jpg)
 
 ## VAT declaration electronic reporting file
 
@@ -242,11 +240,11 @@ To generate the VAT declaration report in Excel, use the standard procedure for 
 
 To generate the VAT declaration after a settlement is completed, go to **Tax** \> **Sales tax inquiries** \> **Sales tax payments**, and select the required sales tax payment. Then, on the Action Pane, select **Print report**.
 
-[![Sales tax parameters line item](./media/uae_vat_12.jpg)](./media/uae_vat_12.jpg)
+[![Sales tax parameters line item.](./media/uae_vat_12.jpg)](./media/uae_vat_12.jpg)
 
 In the **Export VAT file** dialog box, specify the required information.
 
-[![Export VAT file dialog box](./media/uae_vat_13.jpg)](./media/uae_vat_13.jpg)
+[![Export VAT file dialog box.](./media/uae_vat_13.jpg)](./media/uae_vat_13.jpg)
 
 You're prompted to save the downloaded Excel file for the VAT declaration to your local computer. Save the file, and verify the content of the reported data.
 
@@ -258,7 +256,7 @@ After the reporting file is validated, upload it to the FTA e-Tax portal by usin
 
 After you generate the file (**Tax** \> **Declarations** \> **FAF declaration**), if an FAF is requested, specify the required information in the **Electronic report parameters** dialog box. 
 
-[![Electronic report parameters dialog box](./media/uae_vat_14.jpg)](./media/uae_vat_14.jpg)
+[![Electronic report parameters dialog box.](./media/uae_vat_14.jpg)](./media/uae_vat_14.jpg)
 
 FAF declaration can be submitted trough multiple files submission. In case a large volume of transactions included in an auditing period, consider using batch processing to run the job that generates FAF declaration in the background. Also consider dividing the audited period into smaller intervals of months, weeks or days.
 
@@ -266,8 +264,11 @@ FAF declaration can be submitted trough multiple files submission. In case a lar
 
 In the UAE localization package, printouts for sales invoices and credit notes are included in the layout that is specified in the FTA requirements for accounting systems. The following illustration shows an example of the printout for a free text invoice.
 
-[![Example of a free text invoice printout](./media/uae_vat_15.jpg)](./media/uae_vat_15.jpg)
+[![Example of a free text invoice printout.](./media/uae_vat_15.jpg)](./media/uae_vat_15.jpg)
 
 The new printouts can be printed in two languages. The system will print one invoice in the language of UI. At the time, a second printout will be generated in the language of the customer, if the two languages differ.
 
 To achieve consistent printout results, other data in the system should be set up so that it has translations. For example, on the **Released product** page, set up the names and descriptions of items in different languages. You should also consider setting up sales tax descriptions and exempt codes so that they have translations.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

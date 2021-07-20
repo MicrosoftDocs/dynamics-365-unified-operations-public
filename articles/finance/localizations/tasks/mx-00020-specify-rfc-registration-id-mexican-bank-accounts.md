@@ -4,11 +4,9 @@
 title: MX-00020 - Specify the RFC registration ID for Mexican bank accounts
 description: This task walks you through creating the Bank account for Mexico and assigning the RFC tax registration ID. 
 author: sndray
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -43,3 +41,6 @@ This task walks you through creating the Bank account for Mexico and assigning t
     * Federal Registration for Taxpayers (RFC) number  is the tax identification number assigned by tax authorities to a person or a corporation. Tax registration IDs are validated according to the format specified by tax authorities in Mexico.  
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

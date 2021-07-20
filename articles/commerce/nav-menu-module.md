@@ -4,11 +4,9 @@
 title: Navigation menu module 
 description: This topic covers navigation menu modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.14
 # Navigation menu module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers navigation menu modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
@@ -41,7 +38,7 @@ The primary purpose of navigation menu modules is to allow site users to browse 
 The navigation menu module can be added to the header module of a page. In the Fabrikam theme, the navigation menu shows two levels by default. In the Starter theme, the navigation menu shows three levels by default. To change to the number of levels, a view extension is required on the theme.
 
 The following illustration shows an example of a navigation menu for the Fabrikam site with two levels of category hierarchy and some static menu items.
-![Example of a navigation meu module](./media/ecommerce-header.png)
+![Example of a navigation meu module.](./media/ecommerce-header.png)
 
 ## Navigation menu module properties
 
@@ -58,7 +55,7 @@ The following illustration shows an example of a navigation menu for the Fabrika
 | Root menu | string | This property can be used to define text for a custom root if the **Show root menu** property is set to **True**. |
 
 The following illustration shows an example of a category image displayed on the navigation menu for the Fabrikam site.
-![Example of a navigation meu module with category images](./media/ecommerce-categoryimages.PNG)
+![Example of a navigation meu module with category images.](./media/ecommerce-categoryimages.PNG)
 
 ## Add a navigation menu module to a header module
 
@@ -77,3 +74,6 @@ For details about how to add a navigation menu module to a header module, see [H
 [Cookie compliance](cookie-compliance.md)
 
 [Header module](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Section Related Links subpattern
 description: This article provides information about the Section Related Links subpattern.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,13 +33,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the Section Related Links subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for the last panorama section that contains a set of links to other forms.
 
-Usage
------
+## Usage
 
 The Section Related Links subpattern is used as part of the Operational Workspace pattern, specifically for the last panorama section that contains a set of links to other forms.
 
 ## Wireframe
-[![Section Related Links wireframe](./media/sectionrelatedlinkswireframe.png)](./media/sectionrelatedlinkswireframe.png)
+[![Section Related Links wireframe.](./media/sectionrelatedlinkswireframe.png)](./media/sectionrelatedlinkswireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -70,7 +67,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **PurchOrderProcessReceiptsWorkspace** (**All workspaces** &gt; **Purchase order receipt and follow-up** (see the **Links** section) 
 
-[![Section Related Links example](./media/sectionrelatedlinksexample.png)](./media/sectionrelatedlinksexample.png)
+[![Section Related Links example.](./media/sectionrelatedlinksexample.png)](./media/sectionrelatedlinksexample.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -80,3 +77,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

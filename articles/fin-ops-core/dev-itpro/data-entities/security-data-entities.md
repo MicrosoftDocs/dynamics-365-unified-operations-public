@@ -4,11 +4,9 @@
 title: Security and data entities
 description: This topic provides information about security for data entities.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -239,7 +237,7 @@ The pattern for modeling security resembles the pattern for modeling security wi
     - **Data Management** – Applies only to data import/export and connector integration.
     - **Data Services** – Only applies to OData Services.
 
-[![RolebasedSecurity](./media/rolebasedsecurity.png)](./media/rolebasedsecurity.png)
+[![RolebasedSecurity.](./media/rolebasedsecurity.png)](./media/rolebasedsecurity.png)
 
 ## Sensitive data
 The Table Protection Framework (TPF) enables strict access control to data that is stored in Finance and Operations. This feature is exposed through the AOSAuthorization property on tables and table fields. If you mark a table or field by using AOSAuthorization, the security framework now requires that a user be granted explicit access to that resource. This requirement also applies when the table or field is accessed through data entities. This section describes the guidelines for granting TPF permissions for data entities.
@@ -257,3 +255,6 @@ There are several advantages to granting explicit access to TPF-protected fields
 
 - You can more easily discover who has access to sensitive data.
 - You help reduce the risk that someone will gain access to sensitive data by accident, because a role gains access only if you assign both a duty and a privilege to it.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

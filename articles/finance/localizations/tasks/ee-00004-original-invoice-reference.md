@@ -4,11 +4,9 @@
 title: Original invoice reference (Eastern Europe)
 description: This task walks you through creating corrective lines in a credit note for a sales order. 
 author: sndray
-manager: AnnBe 
 ms.date: 02/09/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -73,3 +71,6 @@ This task walks you through creating corrective lines in a credit note for a sal
 19. Click OK.
 20. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

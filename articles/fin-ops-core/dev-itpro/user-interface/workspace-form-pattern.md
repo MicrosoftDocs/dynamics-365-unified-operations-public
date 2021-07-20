@@ -4,11 +4,9 @@
 title: Workspace form pattern
 description: This topic discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages.
 author: jasongre
-manager: AnnBe
 ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -49,11 +47,11 @@ The rest of this topic will focus on the Operational workspace pattern and the T
 
 ### Operational workspace
 
-[![Wireframe for operational workspace](./media/workspace1.png)](./media/workspace1.png)
+[![Wireframe for operational workspace.](./media/workspace1.png)](./media/workspace1.png)
 
 ### Tabbed workspace
 
-[![Wireframe for tabbed workspace](./media/tabbedWorkspaceWireframe.png)](./media/tabbedWorkspaceWireframe.png)
+[![Wireframe for tabbed workspace.](./media/tabbedWorkspaceWireframe.png)](./media/tabbedWorkspaceWireframe.png)
 
 ## Pattern changes for Finance and Operations
 The Microsoft Dynamics AX 2012 Role Center has been replaced by multiple activity-focused workspaces.
@@ -133,7 +131,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **FMClerkWorkspace** 
 
-[![Operational workspace example](./media/workspace3.png)](./media/workspace3.png)
+[![Operational workspace example.](./media/workspace3.png)](./media/workspace3.png)
 
 ## Frequently asked questions
 
@@ -147,9 +145,12 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 links
 
--   [MSDN Role Center Page Reference \[AX 2012\]](https://msdn.microsoft.com/library/cc558235.aspx)
--   [MSDN Role Center User Experience Guidelines \[AX 2012\]](https://msdn.microsoft.com/library/gg886608.aspx)
+-   [MSDN Role Center Page Reference \[AX 2012\]](/dynamicsax-2012/developer/role-center-page-reference)
+-   [MSDN Role Center User Experience Guidelines \[AX 2012\]](/dynamicsax-2012/developer/role-center-user-experience-guidelines)
 
 ### AX 2012 example
 
-[![Previous version workspace example](./media/workspace5.png)](./media/workspace5.png)
+[![Previous version workspace example.](./media/workspace5.png)](./media/workspace5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

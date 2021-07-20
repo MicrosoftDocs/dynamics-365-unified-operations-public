@@ -4,11 +4,9 @@
 title: Set up fixed assets (Russia)
 description: This topic explains how to set up fixed assets for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -210,3 +208,6 @@ Use the **FA groups** list page to define fixed asset groups for accounting of f
 15. On the **Document** tab, select the analysis code, and set up the number sequences for fixed asset documents.
 16. On the **Financial dimensions** tab, select the financial dimension codes for the fixed asset transactions.
 17. On the **Number sequences** tab, select a number sequence for **FA inventory number**, **Bar code**, **FA revaluation**, **FA counting**, **FA transfer**, **Writing off on condition**, and **Assessed tax register journal number**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

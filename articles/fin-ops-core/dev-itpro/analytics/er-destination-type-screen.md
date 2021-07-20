@@ -4,11 +4,9 @@
 title: Screen ER destination type
 description: This topic provides information about how to configure a screen destination for each folder or file component of an Electronic reporting (ER) format.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,9 +35,12 @@ You can configure a screen destination for each folder or file component of an E
 
 If you set **Enabled** to **Yes**, a preview of the output is created. You can view some file types, such as XML, TXT, or PDF, directly in a browser window. For other file types, such Microsoft Excel or Word, the Microsoft Office Online service is used.
 
-[![Destination setting page](./media/ER_Destinations-EnableScreenDestination.png)](./media/ER_Destinations-EnableScreenDestination.png)
+[![Destination setting page.](./media/ER_Destinations-EnableScreenDestination.png)](./media/ER_Destinations-EnableScreenDestination.png)
 
 ## Additional resources
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

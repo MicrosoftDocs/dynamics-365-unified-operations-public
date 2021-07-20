@@ -3,12 +3,10 @@
 
 title: Include container weight and volume on load
 description: This topic describes how to set up and apply functionality to include container weight and volume on loads.
-author: pjacobse
-manager: tfehr
+author: Henrikan
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,7 @@ ms.reviewer: kamaybac
 ms.custom: 269384
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: pjacobse
+ms.author: henrikan
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -67,3 +65,6 @@ container is used.
 -   To set the container utilization percentage, click **Warehouse management**
     \> **Setup** \> **Containers** \> **Container groups**, and then enter a
     value in the **Container utilization percentage** field.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Hazardous materials
 description: This topic provides information about hazardous material documents and information that is stored in your environment.
 author: lachlancashMS
-manager: tfehr
 ms.date: 01/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -32,7 +30,6 @@ ms.dyn365.ops.version:
 # Hazardous materials
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Information about hazardous materials is set up in Product information management. This module also provides documents that can be printed through warehouse management.
 
@@ -64,3 +61,6 @@ To start to configure this information, create a regulation that you can use to 
 ## Warehouse management
 
 When a shipment is prepared, several new reports can be printed. These reports use the information that you set up in Product information management.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

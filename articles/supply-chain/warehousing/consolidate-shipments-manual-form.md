@@ -4,11 +4,9 @@
 title: Consolidate shipments manually by using the Consolidate shipments page
 description: This topic presents a scenario where multiple orders are released to the warehouse and then consolidated later by using the Consolidate shipments page.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -103,3 +101,5 @@ Follow these steps to release each sales order that you created for this scenari
 
 - [Shipment consolidation policies](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Pick oldest batch on a mobile device
 description: This topic describes how you set up and apply the options to pick the oldest batch from a mobile device.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -44,3 +42,6 @@ For items that are set to use existing work, **Pick oldest batch** can be set to
 **Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch. If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control. 
 -	**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select. To be allowed to continue the work, the worker can select the same license plate or batch again.  
 -	**Force**: Workers will continue to receive the message that there is an older batch to pick.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

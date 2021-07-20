@@ -4,11 +4,9 @@
 title: Straight line service life depreciation
 description: This article gives an overview of the Straight line service life method of depreciation.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -72,7 +70,7 @@ If you select Fiscal, the following options are available in the Period frequenc
 ## Example: Straight line depreciation of an unchanged fixed asset
 Suppose that a fixed asset has the following characteristics.
 
-|                     |        |
+| Characteristic      | Value  |
 |---------------------|--------|
 | Acquisition cost    | 11,000 |
 | Salvage value       | 1,000  |
@@ -112,3 +110,6 @@ The service life of the acquisition adjustment is the same as that of the fixed 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

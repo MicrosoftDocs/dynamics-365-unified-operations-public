@@ -4,11 +4,9 @@
 title: Configure Dataverse integration
 description: You can turn integration between Microsoft Dataverse and Dynamics 365 Human Resources on or off. You can also view synchronization details, clear tracking data, and resync a table to help troubleshoot data issues between the two environments.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: CDSIntegrationAdministration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -32,10 +29,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure Dataverse integration
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 You can turn integration between Microsoft Dataverse and Dynamics 365 Human Resources on or off. You can also view the synchronization details, clear tracking data, and resync a table to help troubleshoot data issues between the two environments.
 
 > [!NOTE]
-> For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 When you turn off integration, users can make changes in Human Resources or Dataverse, but those changes aren't synced between the two environments.
 
@@ -54,15 +53,15 @@ You might want to turn off integration in these situations:
 
 1. In the Human Resources instance where you want to view or configure settings for the integration with Dataverse, select the **System administration** tile.
 
-    [![System administration tile](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
+    [![System administration tile.](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
 2. Select the **Links** tab.
 
-    [![Links tab](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
+    [![Links tab.](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
 3. Under **Integrations**, select **Dataverse configuration**.
 
-    [![Dataverse configuration link](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
+    [![Dataverse configuration link.](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
 ## Turn data integration between Human Resources and Dataverse on or off
 
@@ -73,7 +72,7 @@ You might want to turn off integration in these situations:
 
 - To turn off integration, set the option to **No**.
 
-[![Turning the Dataverse integration on or off](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
+[![Turning the Dataverse integration on or off.](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
 > We strongly recommend turning off Dataverse integration while performing data migration tasks. Large data uploads can significantly impact performance. For example, uploading 2000 workers can take several hours when integration is enabled, and less than one hour when it's disabled. The numbers provided in this example are for demonstration purposes only. The exact amount of time it takes to import records can vary greatly based on many factors.
@@ -104,7 +103,7 @@ If you experience issues during data synchronization between Human Resources and
 
 - To remove the association of a Human Resources record and a Dataverse row, select the table in the **Dataverse table** field, and then select **Clear tracking information**.
 
-[![Clearing tracking information](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
+[![Clearing tracking information.](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
 To run a full synchronization on the table after you clear the tracking, see the next procedure.
 
@@ -122,12 +121,15 @@ To run a full synchronization on a table between Human Resources and Dataverse:
 
 2. Select **Sync now**.
 
-[![Running a full synchronization](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
+[![Running a full synchronization.](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
 
 ## See also
 
 [Dataverse tables](hr-developer-entities.md)<br>
 [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)<br>
-[What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminology updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminology updates](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

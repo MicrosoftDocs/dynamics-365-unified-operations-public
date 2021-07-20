@@ -4,11 +4,9 @@
 title: Control the text that Task Recorder generates for a control
 description: This article describes how Task recorder determines what instruction label to generate for controls.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -104,3 +102,6 @@ The following code example shows how property change events are logged to Task r
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

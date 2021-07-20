@@ -4,11 +4,9 @@
 title: What's new or changed for the Indian GST localization in 10.0.13 (September 2020)
 description: This topic describes new or changed functionality that was released in Microsoft Dynamics 365 Finance version 10.0.13 for the APAC India Goods and Services Tax (GST) features.
 author: prabhatb
-manager: annbe
 ms.date: 10/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -271,3 +269,6 @@ The GSTR-1 and GSTR-2 return formats have been updated based on the new format t
 - The GST amount isn't shown correctly. The **GST amount** value is shown in a foreign currency, whereas the **Subtotal** and **Total amount** values are shown in Indian rupees (INR). The GST amount should be converted and added to the subtotal, so that the correct total amount is shown.
 - Customer has recently enabled the India localization, India GST feature on their India .Entity 104.
 - After enabling the India localization, the value is not displayed for the billing rule type **Milestone** on the **Project contract** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

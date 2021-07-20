@@ -3,12 +3,10 @@
 
 title: Introduction to work orders
 description: This topic provides an overview of work orders in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -58,7 +56,7 @@ Select **Asset management** > **Common** > **Work orders** > **All work orders**
 
 The illustration below shows an example of the **All work orders** list page.
 
-![Figure 1](media/01-work-orders.png)
+![Figure 1.](media/01-work-orders.png)
 
 To view a list of only active work orders, select **Asset management** > **Common** > **Work orders** > **Active work orders**. 
 
@@ -76,7 +74,7 @@ Here are some ways that you can use the **All work orders** page:
 
 The illustration below shows an example of the **All work orders** details view.
 
-![Figure 2](media/02-work-orders.png)
+![Figure 2.](media/02-work-orders.png)
 
 
 The buttons on the Action Pane are organized on tabs. The following table briefly describes the buttons that are related to Asset Management:
@@ -123,3 +121,6 @@ The buttons in the **Project** group on the **Work order** tab of the Action Pan
 >[!NOTE]
 >To include forecasts that have been created on a work order when you run master scheduling, use the forecast model that is selected on the **Asset management parameters** page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

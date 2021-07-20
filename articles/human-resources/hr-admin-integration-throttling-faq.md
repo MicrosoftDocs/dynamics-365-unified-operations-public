@@ -4,11 +4,9 @@
 title: Throttling in Human Resources FAQ
 description: This topic provides answers to some frequently asked questions (FAQs) about throttling for Open Data Protocol (OData) and custom service-based integrations in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Admin
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.search.scope: Human Resources
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
@@ -32,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Throttling FAQ
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This topic provides answers to some frequently asked questions (FAQ) about throttling for Open Data Protocol (OData) and custom service-based integrations in Dynamics 365 Human Resources. Throttling prevents the over-utilization of resources. It preserves system responsiveness and ensures consistent availability and performance.
 
@@ -60,6 +59,14 @@ When a request is throttled, the system provides a value indicating the duration
                 } 
             } 
 ```
+
+## What are the current throttling limits for the Human Resources service?
+
+The throttling limits for the Human Resources service are based on three categories:
+
+- **API burst:** 500 requests in 5 minutes
+- **Time usage:** 5 minutes of total execution time in 5 minutes
+- **Concurrency:** 25 requests at any given time
 
 ## How do I access the Data management Yammer group?
 
@@ -104,3 +111,6 @@ No.
 ## Can the throttling engine be configured (thresholds)?
 
 No.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

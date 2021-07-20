@@ -4,11 +4,9 @@
 title: Add financial dimensions to aggregate measurements
 description: This topic explains how a power user can include financial dimensions in ready-made Power BI reports.
 author: MilindaV2 
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -107,24 +105,24 @@ In this example, we will use Power BI desktop to create a report that uses the L
 
 4. Create a matrix report that uses the **Sales** and **YearName** fields. The report should resemble the following example.
 
-    ![Example of a matrix report that uses the Sales and YearName fields](media/d1d0e190896bec3a755b9b586a3cb657.png)
+    ![Example of a matrix report that uses the Sales and YearName fields.](media/d1d0e190896bec3a755b9b586a3cb657.png)
 
     Next, we will add financial dimension values.
 
 5. In the list of fields in Power BI desktop, expand the **LedgerActivityMeasure\_DimensionCombination** table. You will see that the list of dimension fields is expanded into table fields, as shown here.
 
-    ![List of dimension fields expanded into table fields](media/b5099b0c03fa16f0c2ab70943c7cce8b.png)
+    ![List of dimension fields expanded into table fields.](media/b5099b0c03fa16f0c2ab70943c7cce8b.png)
 
 6. Include the **BusinessUnit\_Description** field in the report. Your report should now show sales by business unit, as shown in the following example.
 
-    ![Report that shows sales by business unit](media/c39e94631896301db6675d36fc9d3886.png)
+    ![Report that shows sales by business unit.](media/c39e94631896301db6675d36fc9d3886.png)
 
     Notice that you have the **BusinessUnit\_description** field and the **BusinessUnit\_Value** field. The value field lets you to get a numerical value that can be used to sort columns.
 
 7. Define a new financial dimension, and update the Entity store. 
 8. When the update is completed, right-click the **LedgerActivityMeasure\_DimensionCombination** table, and then select **Refresh data**. Notice that the new financial dimension that you defined is reflected in the list of fields that are available for reporting.
 
-    ![Refresh data](media/6d345e2f68dfb0413daebfd5f469db2c.png)
+    ![Refresh data.](media/6d345e2f68dfb0413daebfd5f469db2c.png)
 
 9. You can include the new financial dimension fields in the report.
 
@@ -163,7 +161,7 @@ If you use a table, a view, or an entity that is based on those two tables, the 
 
 Consider the following example from the LedgerActivityMeasure aggregate measurement.
 
-![DimensionCombination aggregate dimension in the LedgerActivityMeasure aggregate measurement](media/08437296a512478e99b3c377170edeee.png)
+![DimensionCombination aggregate dimension in the LedgerActivityMeasure aggregate measurement.](media/08437296a512478e99b3c377170edeee.png)
 
 DimensionCombination is an aggregate dimension that is modeled by using the DimensionAttributeValueCombination base table. In this case, the developer has referenced the aggregate dimension by using the LedgerActivityMeasureGroup measure group.
 
@@ -175,10 +173,13 @@ When you report by using ledger data, you might require reporting on primary acc
 
 Both primary accounts and offset accounts must be associated with transaction data. Therefore, you must expand financial dimension fields of both primary accounts and offset accounts. We will now see how you can meet this requirement. Consider the following example.
 
-![Example of role-playing dimensions](media/062a0d860fe1633a6616bca6e871f95e.png)
+![Example of role-playing dimensions.](media/062a0d860fe1633a6616bca6e871f95e.png)
 
 We have modeled two dimension references for LedgerActivityMeaureGroup. The first reference, DimensionCombination, is joined by using the **LedgerDimension** field. We saw this pattern earlier in this topic.
 
 The second reference, OffsetDimensionCombination, is another reference to the same dimension. We have reused the DimensionCombination aggregate dimension and given it a new name. In the second case, we can join by using the **OffsetLedgerDimension** field.
 
 At runtime, the system will expand both these dimensions with additional fields. Therefore, you can report on primary and offset dimension fields.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

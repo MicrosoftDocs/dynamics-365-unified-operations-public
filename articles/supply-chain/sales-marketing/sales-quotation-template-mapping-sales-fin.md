@@ -4,11 +4,9 @@
 title: Synchronize sales quotation headers and lines directly from Sales to Supply Chain Management
 description: The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines directly from Dynamics 365 Sales to Dynamics 365 Supply Chain Management. 
 author: ChristianRytt
-manager: tfehr
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,13 +36,13 @@ ms.search.validFrom: 2017-07-8
 The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines directly from Dynamics 365 Sales to Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
-> Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Microsoft Dataverse for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
 ## Data flow in Prospect to cash
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-[![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Data flow in Prospect to cash.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## Template and tasks
 
@@ -136,13 +134,16 @@ The following illustrations show an example of a template mapping in data integr
 
 ### QuoteHeader
 
-![Template mapping in data integrator](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
+![Template mapping in data integrator.](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
 
 ### QuoteLine
 
-![Template mapping in data integrator](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
+![Template mapping in data integrator.](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
 
 ## Related topics
 
 [Prospect to cash](prospect-to-cash.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

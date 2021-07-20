@@ -4,11 +4,9 @@
 title: Update and index subscription sales prices 
 description: Update and index subscription sales prices 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -59,3 +57,6 @@ The base price or index of the subscription is updated with the specified value.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

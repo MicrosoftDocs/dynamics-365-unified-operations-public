@@ -4,11 +4,9 @@
 title: Exchange rate adjustments
 description: This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -101,3 +99,6 @@ The system behavior is the same, regardless of whether the **Correction** option
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

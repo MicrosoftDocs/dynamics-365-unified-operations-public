@@ -3,12 +3,10 @@
 
 title: Alerts overview
 description: This topic provides general information about alerts. You can use alerts to stay informed about events that you want to track during the workday.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,10 +17,10 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-# ms.custom:
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ---
@@ -93,3 +91,6 @@ The [How to use alerts to monitor filtered data](https://youtu.be/ZYKMcv6kl9s) v
 The [Alert rule options](https://youtu.be/cpzimwOjicM) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

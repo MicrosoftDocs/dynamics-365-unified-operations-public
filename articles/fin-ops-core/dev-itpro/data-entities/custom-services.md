@@ -4,11 +4,9 @@
 title: Custom service development
 description: This topic describes how to create a custom service.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -59,8 +57,8 @@ Code examples for consuming custom services using SOAP are available in the [Mic
 
 For more information about custom services, see:
 
-- [Using Custom Services \[AX 2012\] (TechNet)](https://technet.microsoft.com/library/hh509052.aspx)
-- [Walkthrough: Exposing an X++ Class as a Data Contract (TechNet)](https://technet.microsoft.com/library/gg844225.aspx)
+- [Using Custom Services \[AX 2012\] (TechNet)](/dynamicsax-2012/appuser-itpro/using-custom-services)
+- [Walkthrough: Exposing an X++ Class as a Data Contract (TechNet)](/dynamicsax-2012/appuser-itpro/walkthrough-exposing-an-x-class-as-a-data-contract)
 
 ### JSON-based custom service
 
@@ -73,3 +71,6 @@ The JSON Endpoint is at `https://host_uri/api/services/service_group_name/servic
 `https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
 
 Code examples for consuming JSON services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

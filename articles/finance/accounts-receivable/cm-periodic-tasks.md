@@ -4,11 +4,9 @@
 title: Periodic credit management tasks
 description: This topic describes the periodic tasks that are a necessary part of the process of managing credit limits for customers. 
 author: mikefalkner
-manager: AnnBe
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,3 +49,6 @@ As businesses evolve and circumstances change, the credit risks for a given cust
 You can run the **Update customer balance statistics** process to update the calculation of balance statistics that is shown on the **Balance statistics inquiry** page. This information is used to calculate risk scores and the values that are shown in the credit statistics FactBoxes on the **Customer** page.
 
 When you run the process, it updates customer balance statistics for a single customer. To set up a batch job to run the process for multiple customers, you can use the **Calculate balance statistics** page (**Credit management \> Periodic tasks \> Calculate balance statistics**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

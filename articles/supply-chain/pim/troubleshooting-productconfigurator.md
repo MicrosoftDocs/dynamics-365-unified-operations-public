@@ -4,11 +4,9 @@
 title: Troubleshoot the product configurator
 description: This topic describes how to fix issues that you might encounter while you work with product configurator.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 11/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -77,3 +75,6 @@ You can then add the following calculations:
 
 - *ResultDecimal* = *Input* × *Percent* ÷ 100
 - *ResultInteger* = *ResultDecimal*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

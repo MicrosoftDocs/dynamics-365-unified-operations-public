@@ -4,11 +4,9 @@
 title: Master planning for site coverage, mandatory warehouse
 description: This topic describes how an item that has the site as coverage dimension is planned. Warehouse is a mandatory dimension.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -47,12 +45,11 @@ The following graphic illustrates how master planning proceeds. The parameters t
 -   Refill relations are defined for the warehouse. Click **Inventory management &gt; Setup &gt; Inventory breakdown &gt; Warehouses**. On the **Master planning** tab, see the **Main warehouse** field group.
 -   The default order type is set to Production, Purchase order, or Kanban. Click **Product information management &gt; Products&gt; Released products**. Select the item, and then click **Plan &gt; Default order settings**. In the **Default order settings** form, see the **Default order type**.
 
-![Demand for site coverage warehouse mandatory](./media/multisitedemandexplosionscenarioforsitecoveragewarehousemandatory.jpg)
+![Demand for site coverage warehouse mandatory.](./media/multisitedemandexplosionscenarioforsitecoveragewarehousemandatory.jpg)
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Master planning and multisite functionality overview](master-plan-multisite-functionality.md)
 
@@ -66,3 +63,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

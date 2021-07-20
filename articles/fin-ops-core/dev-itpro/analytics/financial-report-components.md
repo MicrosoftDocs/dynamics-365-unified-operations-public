@@ -4,11 +4,9 @@
 title: Financial report components
 description: This article describes how the components, or building blocks, of report definitions are used in financial reporting.
 author: aprilolson
-manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -131,3 +129,6 @@ When you open a building block, other users have read-only access that building 
 ## Additional resources
 
 [Financial reporting](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

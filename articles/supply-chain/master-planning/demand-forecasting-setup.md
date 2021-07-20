@@ -4,11 +4,9 @@
 title: Demand forecasting setup
 description: This topic describes the setup tasks that you must perform to prepare for demand forecasting.  
 author: roxanadiaconu
-manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -94,8 +92,7 @@ On the **Allocation keys** tab you can set the **Forecast algorithm parameters**
 - **Seasonality hint**: For seasonal data, provide a hint to the forecasting model to improve forecast accuracy. Format: integer number, representing the number of buckets a demand pattern repeats itself. For example, enter "6" for data that repeats itself every 6 months.
 - **Test set size percentage**: Percentage of historical data to be used as a test set for forecast accuracy calculation. 
 
-Additional resources
---------
+## Additional resources
 
 [Demand forecasting overview](introduction-demand-forecasting.md)
 
@@ -105,3 +102,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Production process overview
 description: This topic gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
 author: cvocph
-manager: tfehr
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 19832
+ms.custom: ["19832", "intro-internal"]
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -80,8 +78,7 @@ The following steps in the production life cycle can occur for all order types o
 12. **Period closure** – Some cost accounting principles, such as periodic average, back-flush costing, FIFO, or LIFO, require periodic activities to close the inventory or financial period. Typically, the system tries to report all material and resource consumption, and also corrections of inventory and scrap, before the periods are closed. This reporting is typically done by using inventory movement journals or adjustment journals. The goal is to assess the economic performance of operating units per period. In some cases, when long-running production orders are used that span the financial reporting periods, production journals are used to report the production progress and resource consumption by the end of the period.
 
 
-Additional resources
---------
+## Additional resources
 
 [Production feedback](production-feedback.md)
 
@@ -91,3 +88,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

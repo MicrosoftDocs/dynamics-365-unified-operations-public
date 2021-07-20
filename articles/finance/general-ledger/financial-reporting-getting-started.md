@@ -4,11 +4,9 @@
 title: Financial reporting overview
 description: This topic describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-manager: AnnBe
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 10444
+ms.custom: ["10444", "intro-internal"]
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 # ms.search.industry: 
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes where to access financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
-Accessing financial reporting
------------------------------
+## Accessing financial reporting
 
 You can find the **Financial reporting** menu in the following locations:
 
@@ -155,7 +152,7 @@ Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
 * In Internet Explorer, select **Settings**, then select **Internet Options**. Select the **Security** tab. Select Trusted Sites. In the area labeled Security level for this zone, change the option to **Medium-Low**.
 * Disable the pop-up blocker in your browser.
 * Workstations are required to install Microsoft .NET Framework 4.6.2 or higher. This version of the Microsoft .NET Framework can be downloaded and installed from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* If you are using a Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running Chrome in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. For more information about the Chrome ClickOnce Extension, see [System requirements for cloud deployments](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* If you are using a Chrome browser, you must install a ClickOnce extension in order to download the Report Designer client. If you are running Chrome in incognito mode, make sure the ClickOnce extension is enabled for incognito mode. For more information about the Chrome ClickOnce Extension, see [System requirements for cloud deployments](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * If you are using Microsoft Edge with a Chrome browser, you do not need to install a ClickOnce extension for Edge Chromium. However, you must enable the ClickOnce option in order to download the Report Designer client. If you are running incognito mode, make sure the ClickOnce extension is enabled for incognito mode.
      1. Open a new browser in Microsoft Edge.
      2. Enter **edge://flags** and select **Enter**.
@@ -179,3 +176,6 @@ Issue 3: You can proceed past the ClickOnce Report Designer sign-in page, but ar
 ## Additional resources
 - [View financial reports](view-financial-reports.md)
 - [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

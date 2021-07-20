@@ -4,11 +4,9 @@
 title: Hardware sizing requirements for on-premises environments
 description: This topic lists the hardware sizing requirements for an on-premises environment.
 author: sericks007
-manager: AnnBe
-ms.date: 11/27/2019
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -44,7 +42,7 @@ After you have reviewed the documentation, you can start the process of estimati
 
 All the factors shown in the following illustration contribute to sizing. The more detailed information that is collected, the more precisely you can determine sizing. Hardware sizing, without supporting data, is likely to be inaccurate. The absolute minimum requirement for necessary data is the peak transaction line load per hour.
 
-[![Hardware sizing for on-premises environments](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Hardware sizing for on-premises environments.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Viewed from left to right, the first and most important factor needed to accurately estimate sizing is a transaction profile or a transaction characterization. It's important to always find the peak transactional volume per hour. If there are multiple peak periods, then these periods need to be accurately defined.
 
@@ -140,10 +138,15 @@ In most cases, unless used extensively, the recommended minimum requirements usi
 
 For the general availability release, only one SSRS node can be deployed. Monitor your SSRS node while testing and increase the number of cores available for SSRS on a need basis. Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM. This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host. If this the case, they would need to be replaced.
 
+Starting with version 10.0.17, it is possible to configure additional SSRS nodes to achieve high availability. For more information, see [Configure high availability for SQL Server Reporting Services (SSRS) nodes](../../dev-itpro/deployment/onprem-ssrsha.md).
+
 ## Environment Orchestrator
 
-The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This and should be sized to the peak load of the cluster. For more information, see [Plan and prepare your Service Fabric Standalone cluster deployment](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This and should be sized to the peak load of the cluster. For more information, see [Plan and prepare your Service Fabric Standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## Virtualization and oversubscription
 
 Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – cores, memory, and disk.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

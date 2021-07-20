@@ -4,11 +4,9 @@
 title: Set up a derived financial hierarchy in the public sector
 description: This topic provides information about using derived financial hierarchies to work with posted transaction data for main and full account numbers and financial dimension values. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -72,3 +70,6 @@ To meet Common Government-wide Accounting Classification (CGAC) requirements, pu
 5. Click Edit filter.
     * Click Add new criteria to begin adding rules to the filter. After you've added all of the criteria, click Activate filter.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

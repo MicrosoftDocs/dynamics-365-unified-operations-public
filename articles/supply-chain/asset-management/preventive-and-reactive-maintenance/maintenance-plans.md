@@ -3,17 +3,15 @@
 
 title: Maintenance plans
 description: This topic explains maintenance plans in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: EntAssetMaintenancePlan 
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -152,23 +150,23 @@ Below you will find examples of the setup of time-based and counter-based mainte
 
 **Example 1 - Time-based maintenance plan line:** A lubrication job may be set up in a fixed interval, occurring once a week. For that purpose, select "Repeated from plan date" in the **Interval type** field. See an example in the following illustration.
 
-![A service job set up in a fixed interval, occurring once a week](media/02-preventive-maintenance.png "A service job set up in a fixed interval, occurring once a week")
+![A service job set up in a fixed interval, occurring once a week.](media/02-preventive-maintenance.png "A service job set up in a fixed interval, occurring once a week")
 
 **Example 2 - Time-based maintenance plan line:** An inspection job may be set up to be carried out approximately once a week. For that purpose, select "Repeated from last work order" in the **Interval type** field. See an example in the following illustration.
 
-![An inspection job set up to be done approximately once a week](media/03-preventive-maintenance.png "An inspection job set up to be done approximately once a week")
+![An inspection job set up to be done approximately once a week.](media/03-preventive-maintenance.png "An inspection job set up to be done approximately once a week")
 
 **Example 3 - Counter-based maintenance plan line:** The following graphic illustration shows an hour counter for which a new maintenance schedule line is created each time 250 hours have passed. The interval type for this counter-based line is "Repeated from start date". The start date is the start date of the related assets in the **All assets** details view \> **Asset maintenance plans** FastTab \> **Start date** field, or in the **Functional location** details view \> **Maintenance plans** FastTab \> **Start date** field. This is an example of a *preventive* maintenance plan because the maintenance schedule line is automatically created each time the threshold (+ 250) is reached.
 
-![An hour counter that periodically creates maintenance schedule lines](media/04-preventive-maintenance.png "An hour counter that periodically creates maintenance schedule lines")
+![An hour counter that periodically creates maintenance schedule lines.](media/04-preventive-maintenance.png "An hour counter that periodically creates maintenance schedule lines")
 
 **Example 4 - Counter-based maintenance plan line:** The following graphic illustration shows a decrease in counter value, measuring brake pad wear. A maintenance schedule line is created when a counter registration below 20 mm is created on the brake pad. The interval type for this counter-based line is "Once reached below" or "Once from last start date". This is an example of a *reactive* maintenance plan because the maintenance schedule line is not created until a measurement below 20 mm is registered.
 
-![A decrease in counter value, measuring brake pad wear](media/05-preventive-maintenance.png "A decrease in counter value, measuring brake pad wear")
+![A decrease in counter value, measuring brake pad wear.](media/05-preventive-maintenance.png "A decrease in counter value, measuring brake pad wear")
 
 **Example 5 - Counter-based maintenance plan line:** The following graphic illustration shows a counter with a threshold of -18° Celsius. A maintenance schedule line is created when a counter registration above -18° Celsius is made. The interval type for this counter-based line is "Once reached above". This is an example of a *reactive* maintenance plan because the maintenance schedule line is not created until a measurement higher than -18° Celsius is registered.
 
-![A counter with a threshold of -18° Celsius](media/06-preventive-maintenance.png "A counter with a threshold of -18° Celsius")
+![A counter with a threshold of -18° Celsius.](media/06-preventive-maintenance.png "A counter with a threshold of -18° Celsius")
 
 - When you create a new asset, and that asset uses an asset type related to a maintenance plan, the maintenance plan is automatically inserted in **All objects \> Asset maintenance plans** FastTab. Also, in the **Asset type defaults**, on the **Maintenance plans** FastTab, the related maintenance plans will automatically be inserted.
 - If you add or remove asset types or functional location types in **Maintenance plans**, that change will only reflect on new assets created after you made the change.
@@ -176,7 +174,7 @@ Below you will find examples of the setup of time-based and counter-based mainte
 
 The following illustration shows an example of a "Truck service" maintenance plan on the **Maintenance plans** page.
 
-![An example of a truck service maintenance plan](media/07-preventive-maintenance.png "An example of a truck service maintenance plan")
+![An example of a truck service maintenance plan.](media/07-preventive-maintenance.png "An example of a truck service maintenance plan")
 
 ## Add a maintenance plan to an asset
 
@@ -194,14 +192,11 @@ The following illustration shows an example of a "Truck service" maintenance pla
 
 The following illustration shows an example of maintenance plans set up on an asset on the **All assets** page.
 
-![An example of maintenance plans set up on an asset](media/08-preventive-maintenance.png "An example of maintenance plans set up on an asset")
+![An example of maintenance plans set up on an asset.](media/08-preventive-maintenance.png "An example of maintenance plans set up on an asset")
 
 <a id="counter-based-maintenance"></a>
 
 ## Counter-based maintenance enhancements
-
-> [!IMPORTANT]
-> The functionality that is described in this section is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 The *Counter-based maintenance enhancements* feature introduces the following functionality:
 
@@ -215,7 +210,7 @@ The *Counter-based maintenance enhancements* feature introduces the following fu
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Asset Management*
-- **Feature name:** *(Preview) Counter-based maintenance enhancements*
+- **Feature name:** *Counter-based maintenance enhancements*
 
 ### Create and initialize counters when an asset is created
 
@@ -243,3 +238,6 @@ You can configure the system to automatically reset a counter each time that a r
 1. Go to **Asset management \> Setup \> Work orders \> Lifecycle states**.
 1. In the list pane, select the work order lifecycle state that the relevant counter should be reset at.
 1. On the **General** FastTab, set the **Reset counter** option to *Yes*.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

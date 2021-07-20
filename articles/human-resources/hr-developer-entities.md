@@ -4,11 +4,9 @@
 title: Dataverse tables
 description: Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
 author: andreabichsel
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -32,10 +29,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Dataverse tables
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
 
 > [!NOTE]
-> Human Resources entities correspond to Dataverse tables. For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Human Resources entities correspond to Dataverse tables. For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 The following Dataverse tables are available based on Human Resources entities.
 
@@ -158,27 +157,27 @@ The following Dataverse tables are available based on Human Resources entities.
 
 ### Worker
 
-![Worker](./media/HCMCommon-worker-entity-diagram.png)
+![Worker.](./media/HCMCommon-worker-entity-diagram.png)
 
 ### Job and Job Position
 
-![Job and Job Position](./media/HCMCommon-job-and-job-position-entity-diagram.png)
+![Job and Job Position.](./media/HCMCommon-job-and-job-position-entity-diagram.png)
 
 ### Benefits
 
-![Benefits](./media/HCMCommon-benefits-entity-diagram.png)
+![Benefits.](./media/HCMCommon-benefits-entity-diagram.png)
 
 ### Compensation
 
-![Compensation](./media/HCMCommon-compensation-entity-diagram.png)
+![Compensation.](./media/HCMCommon-compensation-entity-diagram.png)
 
 ### Leave
 
-![Leave](./media/HCMCommon-leave-entity-diagram.png)
+![Leave.](./media/HCMCommon-leave-entity-diagram.png)
 
 ### Work Calendar
 
-![Work Calendar](./media/HCMCommon-work-calendar-entity-diagram.png)
+![Work Calendar.](./media/HCMCommon-work-calendar-entity-diagram.png)
 
 ## See also
 
@@ -186,5 +185,8 @@ The following Dataverse tables are available based on Human Resources entities.
 [Configure Dataverse integration](hr-admin-integration-common-data-service.md)<br>
 [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)<br>
-[What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminology updates](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminology updates](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Use event-based data actions
 description: This topic describes how to use event-based data actions. 
 author: samjarawan
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to use event-based data actions.
-
-## Overview
 
 In some scenarios, you don't want a data action to run when a page is first loaded. Instead, you want it to run dynamically in response to some event on the client. For example, a product can be added to a customer's cart in response to a button click, search results can be shown in response to a change in the text input, or banner text can be updated in response to a time-based event.
 
@@ -129,3 +125,6 @@ export default ProductButton;
 
 [Call Retail Server APIs](call-retail-server-apis.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

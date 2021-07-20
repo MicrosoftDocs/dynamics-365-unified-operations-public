@@ -4,11 +4,9 @@
 title: Set up warehouses for transfer orders
 description: This topic describes how you can set up warehouses for transfer orders.
 author: Mirzaab
-manager: tfehr
 ms.date: 01/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,3 +55,6 @@ You must also set up the transport lead time between the warehouses on the **Tra
 2. In the **Receiving point** field, select **warehouse**.
 3. Select the **Shipping warehouse**, **Receiving warehouse**, and **Transport days**. 
 4. (Optional) You can also set transport time, depending on the mode of delivery, under the **Transport days per mode of delivery** tab.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

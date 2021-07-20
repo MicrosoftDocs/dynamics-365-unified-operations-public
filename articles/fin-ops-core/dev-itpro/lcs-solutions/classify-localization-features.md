@@ -4,11 +4,9 @@
 title: Classification of localization features
 description: This topic explains the difference between regulatory and competitive feature and shows how the feature type is used in the title of the feature.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -60,3 +58,6 @@ For more information about BPM, see [Upload custom business processes to Busines
 
 - [Globalization resources](country-region.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

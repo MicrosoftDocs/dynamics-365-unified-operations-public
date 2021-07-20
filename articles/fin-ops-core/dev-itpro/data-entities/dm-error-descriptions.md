@@ -4,11 +4,9 @@
 title: Data management error descriptions
 description: This topic describes the error messages that you might encounter in data management.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -55,5 +53,8 @@ This message covers all XML formatting issues in the file. For example, the data
 
 ## Error while uploading a file during export
 
-When running an export on a development environment, an error could occur relating to not being able to upload the export file. This could occur if Azure Storage Emulator is not available or an older version of the emulator is installed. To resolve this issue, install the latest emulator, restart the virtual machine (VM), and rerun the export job. The storage emulator can be installed from [Azure Storage Emulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator).
+When running an export on a development environment, an error could occur relating to not being able to upload the export file. This could occur if Azure Storage Emulator is not available or an older version of the emulator is installed. To resolve this issue, install the latest emulator, restart the virtual machine (VM), and rerun the export job. The storage emulator can be installed from [Azure Storage Emulator](/azure/storage/common/storage-use-emulator).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

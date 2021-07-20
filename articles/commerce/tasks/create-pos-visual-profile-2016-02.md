@@ -4,11 +4,9 @@
 title: Create point of sale (POS) visual profiles
 description: This procedure walks through creating a new point of sale (POS) visual profile. 
 author: jashanno
-manager: AnnBe 
 ms.date: 12/05/2015
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-365-retail 
 ms.technology:  
  
 # optional metadata 
@@ -50,3 +48,6 @@ This procedure walks through creating a new point of sale (POS) visual profile. 
 17. In the list, click the link in the selected row.
 18. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

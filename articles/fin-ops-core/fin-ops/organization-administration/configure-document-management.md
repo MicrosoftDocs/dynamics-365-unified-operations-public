@@ -4,11 +4,9 @@
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,7 +55,10 @@ To create a new document type, follow these steps.
 
 ## Configure SharePoint storage
 
-Microsoft SharePoint Online is one of the storage locations that are supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future.
+Microsoft SharePoint Online is one of the storage locations that is supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future. 
+
+> [!IMPORTANT]
+> SharePoint storage is only available in Microsoft-managed environments.
 
 To use SharePoint storage, set the **Location** field for a document type to **SharePoint**. Then, in the **SharePoint Address** field, enter a valid SharePoint address.
 
@@ -78,6 +79,7 @@ SharePoint communication works for the current user only if the following condit
 - A Microsoft 365 license is associated with the user's account.
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
+- The SharePoint site is configured to **Allow this site to appear in search results**.
 - The user has access to the folder that the document is stored in.
 
 If documents stored in SharePoint don't open or don't display in preview, follow these steps to troubleshoot the issue: 
@@ -102,11 +104,16 @@ To specify file types, follow these steps.
 
 ## Configure document preview
 
-The attachments preview uses the Web app Open Platform Interface (WOPI) that is provided by Microsoft Office Online Server. On the **Document management parameters** page, on the **General** tab, in the **Office Web Apps Server** field, specify the Office Online Server instance to use for attachment previews. The default value is `https://onenote.officeapps.live.com`. This value points to the cloud-based WOPI server.
+The attachments preview uses the Web app Open Platform Interface (WOPI) that is provided by Microsoft Office Online Server. On the **Document management parameters** page, on the **General** tab, in the **Office Web Apps Server** field, specify the Office Online Server instance to use for attachment previews. The default value is `https://onenote.officeapps.live.com`, which points to the cloud-based WOPI server. 
+
+> [!NOTE]
+> For the following situations, you will need to adjust the **Office Web Apps Server** field as specified. 
+> -  For environments in China, use https://onenote.partner.officewebapps.cn. 
+> -  For environments in the Government Commmunity Cloud (GCC), use https://gb4-onenote.officeapps.live.com.
 
 ### For a Microsoft Dynamics 365 Finance + Operations (on-premises) environment
 
-The default cloud-based WOPI server in Finance + Operations can't read the attachment file to provide a preview. If previews are required, you must [install an on-premises Office Online Server instance](https://technet.microsoft.com/library/jj219455.aspx) and configure it inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server instance, and then click **Save**.
+The default cloud-based WOPI server in Finance + Operations can't read the attachment file to provide a preview. If previews are required, you must [install an on-premises Office Online Server instance](/officeonlineserver/deploy-office-online-server) and configure it inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server instance, and then click **Save**.
 
 If previews aren't required, set the **Office Web Apps Server** field to `https://localhost`. The preview will then show the message "No preview available" instead of an error message.
 
@@ -119,7 +126,7 @@ Document preview (WOPI) will not work in environments with an IP safe list enabl
 Here are some other configuration options to consider, although these options are rarely used:
 
 - On the **Document management parameters** page, on the **General** tab, you can use the **Use Document Tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Therefore, turn on this option only when it's required.
-- On the **Document management parameters** page, on the **General** tab, you can use the **Maximum file size in megabytes** field to set the maximum file size for attachments. Note that the ability of users to provide files is also constrained by the file size limit that is set for the environment in configuration files. These configuration files can't be changed via a client page.
+- On the **Document management parameters** page, on the **General** tab, you can use the **Maximum file size in megabytes** field to set the maximum file size for attachments. Note that when SharePoint is used as a document type, users can only upload a document up to a maximum file size of 262 megabytes. 
 - On the **Options** page (**Settings** \> **User options**), on the **Preferences** tab, you can use the **Enable document handling** option to disable document handling (document management).
 
 ## Accessing document management attachments 
@@ -128,7 +135,18 @@ Document management appears to users as the **Attach** button at the top of most
 
 The **Attach** button also shows a count of the attachments for the currently selected record. Therefore, you can determine whether there are attachments for the current record without having to open the **Attachments** page. The button shows exact counts for zero through nine attachments. If there are more than nine attachments, the button shows **9+** as the count. In this way, the performance impact and visual noise that exact larger counts might cause are reduced.
 
-In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in two ways. First, when the feature is enabled, the **Attachments** page doesn't show only attachments that are related to a single data source. Instead, it shows attachments from all data sources on the page that are related to the active record. The count of attachments on the **Attach** button also reflects this change. Second, users can move and copy attachments between the related data sources on the **Attachments** page.  
+### Showing related document attachments
+In version 10.0.12, the **Show related document attachments** feature changes the document attachment experience in the following ways. 
+
+-  When the feature is enabled, the **Attachments** page no longer shows only attachments that are related to a single data source. Instead, users can see and access attachments from other data sources on the pages that are related to the active record. For this to occur, the data source must: 
+    -  Be directly related to the parent data source by means of an inner or outer join.
+    -  Be directly related to the parent data source by means of an active, delayed, or passive join with either 1:1 or 0:1 cardinality.
+
+    Note that this criteria excludes showing attachments from child collections (such as lines) when looking at attachments on the header record.  
+
+    The count of attachments on the **Attach** button also reflects this change. 
+
+-  Users can move and copy attachments between the related data sources on the **Attachments** page.
 
 ## Document attachment history
 
@@ -223,6 +241,21 @@ The following example of the **ScanDocuments** class shows boilerplate code for 
     }
 ```
 
+## [Developer] Specifying valid content types when attaching documents programmatically
+
+The following APIs from the `DocumentManagement` class allow developers to specify the file content type (MIME type) of the file being attached. 
+-  attachFileToCommon()
+-  attachFile()
+-  attachFileToDocuRef()
+
+If this file content type is not specified correctly, the attached document may not behave as expected. For this reason, if you use these APIs you should consider one of the following courses of action:  
+
+-  Pass **null** for the `_fileContentType` parameter in any of the preceeding APIs. Doing so allows the correct content type to be inferred from the file name. 
+-  Switch to using one of the following methods that doesn't include a `_fileContentType` parameter. This is to avoid the possibility of passing incorrect file content types.
+    -  **attachFileForRecord()**, which replaces attachFileToCommon()
+    -  **attachFileForReference()**, which replaces attachFile()
+    -  **attachFileForDocuRefRecord()**, which replaces attachFileToDocuRef()
+
 ## Frequently asked questions
 
 ### What is the difference between document handling and document management?
@@ -245,9 +278,9 @@ File types include Microsoft Word documents and images. A file type is denoted b
 
 Yes. SharePoint storage is supported natively and can be selected as the storage location for a document type. In addition, any URL addressable file can be made an attachment via the **URL** document type.
 
-### How does the default storage location for Document Management change in Finance + Operations environments?
+### What is the default storage location for attachments in Finance + Operations environments?
 
-For Finance + Operations, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premises instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
+By default, attachments are saved in Azure Blob storage automatically as part of the product cloud offering.
 
 ### If I accidentally delete an attachment stored in Azure Blob storage, can it be restored?
 
@@ -288,3 +321,6 @@ To extract attachments, an Attachments entity must be built for a specific busin
 ### How does the document preview work for attachments stored in SharePoint?
 
 The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. This means that the current user needs access to the files to be able to preview them or open them.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

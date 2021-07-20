@@ -3,11 +3,9 @@
 title: Group module
 description: A group control is a container control that has any number of controls as children.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -126,3 +124,6 @@ A group control is a container control that has any number of controls as childr
 | [Order](../interfaces/view-model-control-group-igroup-igroupmetadata.md#order) |Order: number (optional)  <br>|Number indicating the order in which a control will appear on a page.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Order](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#order) <br> |
 | [Type](../interfaces/view-model-control-group-igroup-igroupmetadata.md#type) |Type: [ControlType](view-model-control-basecontrol-icontrol.md#controltype) (optional)  <br>|String indicating the control type.<br>  Inherited from [ControlMetadata](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md).[Type](../interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md#type) <br> |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Computed columns and virtual fields in data entities
 description: This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -108,12 +106,12 @@ In this example, you add a computed field to the **FMCustomerEntity** entity. Fo
 2. In Solution Explorer, right-click the **FMCustomerEntity** node, and then click **Open**.
 3. In the designer for **FMCustomerEntity**, right-click the **Fields** node, and then click **New** &gt; **String Unmapped Field**.
 
-    [![Creating a new string unmapped field](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
+    [![Creating a new string unmapped field.](./media/computedcolumnsandvirtualfields11.png)](./media/computedcolumnsandvirtualfields11.png)
 
 4. Rename the new field **NameAndAddress**.
 5. Update properties of the **NameAndAddress** unmapped field, as shown in the following screenshot.
 
-    [![Updating the properties of the NameAndAddress unmapped field](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
+    [![Updating the properties of the NameAndAddress unmapped field.](./media/computedcolumnsandvirtualfields21.png)](./media/computedcolumnsandvirtualfields21.png)
 
 6. Go to **FMCustomerEntity** &gt; **Methods**. Right-click the **Methods** node, and then click **New**. Ensure that the method name matches the **DataEntityView Method** property value of the unmapped computed field.
 7. Paste the following X++ code into the method. The method returns the combined and formatted **NameAndAddress** value.
@@ -169,7 +167,7 @@ In this example, you add a virtual field to the **FMCustomerEntity** entity. Thi
 2. In the properties pane for the unmapped field, set the **Name** property to **FullName**.
 3. Set the **Is Computed Field** property to **No**. Notice that you leave the **DataEntityView Method** empty.
 
-    [![Setting the properties for the unmapped field](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
+    [![Setting the properties for the unmapped field.](./media/computedcolumnsandvirtualfields31.png)](./media/computedcolumnsandvirtualfields31.png)
 
 4. In the **FMCustomerEntity** designer, right-click the **Methods** node, and then click **Override &gt; postLoad**. Your X++ code in this method will generate the values for the virtual field.
 5. Paste the following X++ code in for the **postLoad** override. Notice that the **postLoad** method returns **void**.
@@ -244,3 +242,6 @@ The following **main** method tests your computed and virtual fields. Both field
 If the X++ method that generates the SQL for a computed column throws an exception, DbSync catches the exception, **sets the value of that column to `NULL`**, and logs a *warning*.
 
 Developers are advised to check configuration keys manually in computed column methods to avoid hitting a `NULL` value, if the generation failed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

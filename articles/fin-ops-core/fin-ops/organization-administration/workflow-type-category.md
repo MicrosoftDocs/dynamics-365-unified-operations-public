@@ -4,11 +4,9 @@
 title: Create a workflow category
 description: This topic describes how to create a workflow category.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -68,3 +66,6 @@ After you create a workflow category, a workflow type can be bound to it. Typica
 [Create a workflow type](workflow-type-create.md)
 
 [Create a new workflow type](workflow-type-create-new.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

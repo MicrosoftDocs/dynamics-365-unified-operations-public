@@ -4,11 +4,9 @@
 title: Data management and integration by using data entities overview
 description: This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 26441
+ms.custom: ["26441", "intro-internal"]
 ms.assetid: 8aa25787-5920-4277-acff-7011200133f4
 ms.search.region: Global
 # ms.search.industry: 
@@ -56,7 +54,7 @@ Integration through the data management platform provides more capabilities and 
 
 The following diagram shows an inbound flow.
 
-![Inbound flow](./media/over6.png)
+![Inbound flow.](./media/over6.png)
 
 ## Known limitations in data import/export
 When you import text files, string sizes are limited to 32,768 characters. If there is a string larger than this, the imported string will be truncated. This is a limitation in the underlying implementation and is due to SQL Server Integration Services (SSIS).
@@ -64,3 +62,6 @@ When you import text files, string sizes are limited to 32,768 characters. If th
 If you need to import strings that are larger than 32,768 characters, we suggest that you use container entity fields.
 
 For more information, watch the FastTrack Tech Talk video: [Dynamics 365 for Operations – Tech Talk: Integration](https://www.youtube.com/watch?v=fooBvQhIo6I).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

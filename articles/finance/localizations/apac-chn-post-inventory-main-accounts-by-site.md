@@ -4,11 +4,9 @@
 title: Post inventory main accounts by site for China
 description: This topic provides information about the posting of inventory main accounts by site for China.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,3 +47,6 @@ Organizations that stock more than 100 inventory items and also maintain several
 | 15085        | Raw materials | Site 2 | 3,299,398 |
 
 By setting up main accounts for inventory values by site, you can post inventory transactions, such as inventory journals, sales orders, purchase orders, production journals, and project item journals, for each site.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

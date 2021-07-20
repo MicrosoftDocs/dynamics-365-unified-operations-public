@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Respond by using EventHandlerResult
 description: This topic describes how to subscribe to events that has a parameter of any type that implements the IEventHandlerResult interface.
-author: LarsBlaaberg
-manager: AnnBe
+author: MichaelFruergaardPontoppidan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -23,7 +17,7 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: lolsen
+ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---
@@ -150,3 +144,6 @@ In addition to the previously described practices, the following general guideli
 	    }
 	}
     ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Enable and use cross-channel sharing
 description: This topic describes how to enable and use the cross-channel sharing feature of Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
-manager: annbe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to enable and use the cross-channel sharing feature of Microsoft Dynamics 365 Commerce site builder.
 
-## Overview
-
 Cross-channel sharing lets retailers reuse and share content among multiple channels of a site. This capability is useful when the site channels have a compatible base language, or when they have numerous content items in common.
 
 Cross-channel sharing works by enabling a default channel that will be searched for available content when a channel-specific version of the requested content isn't found. Content that is intended to be shared among channels is created in the default channel. That content can be localized for any locale that is used on any site channel.
@@ -55,15 +51,15 @@ To enable cross-channel sharing in Commerce site builder, follow these steps.
 1. Go to **Site settings \> Features**.
 1. Set the option for the **Cross Channel** feature to **On**.
 
-    ![Cross Channel option set to On in Commerce site builder](./media/enabling-cross-channel-sharing.png)
+    ![Cross Channel option set to On in Commerce site builder.](./media/enabling-cross-channel-sharing.png)
 
 After you enable cross-channel sharing, cross-channel information will appear in the **Channels** section at **Site settings \> Features**, as the example in the following illustration shows.
 
-![Channels information visible after cross-channel sharing is enabled](./media/channels-cross-channel.png)
+![Channels information visible after cross-channel sharing is enabled.](./media/channels-cross-channel.png)
 
 Additionally, after you enable cross-channel sharing, the **Channel** field in the upper right of Commerce site builder will include a **Cross Channel Online Store** option that you can use to manage cross-channel content, as shown in the following illustration.
 
-![Cross Channel Online Store option in the Channels field after cross-channel sharing is enabled](./media/cross-channel-dropdown.png)
+![Cross Channel Online Store option in the Channels field after cross-channel sharing is enabled.](./media/cross-channel-dropdown.png)
 
 ## Create and use cross-channel content
 
@@ -139,3 +135,6 @@ Now, if you use the base URL of the channel and go to the URL of the cross-chann
 [Document states and lifecycle](document-states-overview.md)
 
 [Work with publish groups](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

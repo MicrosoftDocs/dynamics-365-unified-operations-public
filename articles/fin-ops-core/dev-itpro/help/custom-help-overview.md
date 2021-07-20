@@ -4,11 +4,9 @@
 title: Custom Help overview
 description: This topic explains how you can extend the Microsoft Help system so that it reflects your solution and then connect your content to the Help pane. 
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -40,7 +38,7 @@ Finance and Operations apps are often customized and extended to fit an organiza
 
 The following illustration, and this topic in general, use the term *Help* for conceptual descriptions that either include or exclude how-to guides. The term *task guides* refers to in-product task guides.
 
-![Customized Help solution and the Help pane](../../fin-ops/get-started/media/help-architecture.png)
+![Customized Help solution and the Help pane.](../../fin-ops/get-started/media/help-architecture.png)
 
 ## Custom Help content
 
@@ -105,3 +103,6 @@ The [Deploy custom Help to Azure](walkthrough-help-azure.md) topic describes an 
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Configure the Help experience for Finance and Operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

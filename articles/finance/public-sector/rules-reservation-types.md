@@ -4,11 +4,9 @@
 title: Set up general budget reservation rules and reservation types
 description: This topic explains how to set up and modify general budget reservation rules and reservation types for Public sector.
 author: AlexRenney
-manager: AnnBe
 ms.date: 04/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,7 +38,7 @@ Public sector entities often use general budget reservations to set aside or ear
 
 The following illustration shows how to set up the system to use general budget reservations. Each numbered step corresponds to a section of this topic.
 
-![Setup for general budget reservation](media/gbr-rules-reservations-process.jpg "Setup for general budget reservation")
+![Setup for general budget reservation.](media/gbr-rules-reservations-process.jpg "Setup for general budget reservation")
 
 ## Prerequisites
 
@@ -167,3 +165,6 @@ If you don't have access to the pages that are used to complete this task, conta
 |---------------------------|---------------------------------------------------------------|
 | License configuration key | Public sector \> General budget reservation                   |
 | Security roles            | You must be a member of the **Budget manager** security role. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

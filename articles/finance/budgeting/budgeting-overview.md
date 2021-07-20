@@ -3,12 +3,10 @@
 
 title: Budgeting home page
 description: This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 08/09/2017
+author: panolte
+ms.date: 04/29/2021
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 106043
+ms.custom: ["106043", "intro-internal"]
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -35,12 +33,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities. 
 
-Components of budgeting functionality
--------------------------------------
+## Components of budgeting functionality
 
 The resource planning cycle for a company typically consists of planning, budgeting, and forecasting activities.
 
-[![Budgeting functionality components](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![Budgeting functionality components.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 The processes for both long-term strategic planning and annual budget planning are supported through a budget plan document. Budget plan documents are tightly integrated with Microsoft Excel. Users can configure unlimited monetary and quantitative scenarios, and can also define a budgeting organizational hierarchy to both support top-down and bottom-up budgeting methods. After a budget is established and approved in the application, you convert the budget plan to a budget register entry. Budget register entries provide tools for maintaining the budget and for keeping amounts traceable through budget codes. Budget register entries let you revise original budgets, perform transfers, and carry forward budget amounts from the previous year. Based on the established budget, a company can enable budget control. The level of control depends on the organizational culture and the organization's level of maturity. Organizations that have low maturity might leave the budget “as is” and might be more reactive than proactive if a budget doesn't meet expectations. Other organizations might enable budget control policies that prevent users from purchasing if budget funds aren't available.
 
@@ -54,7 +51,7 @@ Finally, very mature organizations might establish an organizational culture whe
 -   [Budget planning templates for Excel](budget-planning-excel-templates.md)
 
 ## Budgeting tools
-[![Budgeting tools](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Budgeting tools.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 Additional planning and budgeting capabilities are available and are integrated with ledger budgets.
 
@@ -75,3 +72,6 @@ For example, you can define who does budgeting, what is budgeted, and what the p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

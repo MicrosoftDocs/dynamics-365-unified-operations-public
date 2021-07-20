@@ -4,11 +4,9 @@
 title: Load templates
 description: This topic describes how to set up load templates, and how to associate a load template with a new load.
 author: Henrikan
-manager: 
 ms.date: 10/30/2020
 ms.topic: business-process 
 ms.prod: 
-ms.service: dynamics-ax-applications 
 ms.technology: 
  
 # optional metadata 
@@ -56,3 +54,6 @@ This topic describes how to set up load templates, and how to associate a load t
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.
 1. In the **Load template** dialog box, in the **Load template ID** field, select the template to apply.
 1. Select **OK** to apply the template.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

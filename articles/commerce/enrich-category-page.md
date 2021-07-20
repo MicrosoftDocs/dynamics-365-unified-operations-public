@@ -4,11 +4,9 @@
 title: Enrich a category landing page
 description: This topic covers the enrichment of category pages in Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,18 +27,15 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Enrich a category landing page
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers the enrichment of category pages in Dynamics 365 Commerce.
-
-## Overview
 
 Commerce provides a default category landing page that is used when category data is shown. A default category page contains required elements, such as refiners, categorized product placement, sorting options, a choice summary, and pagination controls. 
 
 However, instead of using the default category page, you might want to use an "enriched" category landing page that has more content and more specific elements. A typical enrichment might involve adding category-specific marketing content to the category page. This content might include cross-category product placement for cross-sell purposes, editorial lists, images, videos, and other text. You can either modify the default category page or define a different category page for a specific category.
 
-![Enriched category landing page](./media/CategoryLandingPages.png)
+![Enriched category landing page.](./media/CategoryLandingPages.png)
 
 In Commerce site builder, the **Products** page includes a list of categories from the channel that are assigned to the site. If the **Enriched** status is selected for a category page, that category page has been enriched. Otherwise, the default category page and content are used for the category. You can preview both the enriched and non-enriched category pages for a category by selecting the category name.
 
@@ -70,3 +65,6 @@ To enrich a category page, do the following.
 [Verify page content accessibility](verify-accessibility.md)
 
 [Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

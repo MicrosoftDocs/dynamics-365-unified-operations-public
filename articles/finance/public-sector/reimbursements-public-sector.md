@@ -4,11 +4,9 @@
 title: Reimbursements in the public sector
 description: This topic answers common questions related to reimbursements in the public sector. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic answers common questions related to reimbursements in the public sector. 
 
-What happens if I create a separate reimbursement transaction for each billing classification?
-----------------------------------------------------------------------------------------------
+## What happens if I create a separate reimbursement transaction for each billing classification?
 
 When you create a separate reimbursement transaction for each billing classification, the credit note transactions that are distributed to the same ledger account and that have the same billing classification will be combined into a single reimbursement transaction. Credit note transactions that are distributed to the same ledger account and that have different billing classifications will generate separate reimbursement transactions. For example, let’s say that you process reimbursements for three credit notes. All three credit notes are for $1000.
 
@@ -69,3 +66,6 @@ No, not directly. However, you could use general journal entries to create trans
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

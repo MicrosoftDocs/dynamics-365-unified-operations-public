@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 07/20/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -18,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: epopov
@@ -67,7 +66,7 @@ The following example shows a typical fiscal registration execution flow for a f
 7. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
 8. CRT saves the response to the channel database.
 
-![Solution schema](media/emea-fiscal-integration-solution.png "Solution schema")
+![Solution schema.](media/emea-fiscal-integration-solution.png "Solution schema")
 
 ## Error handling
 
@@ -158,3 +157,6 @@ The following legacy fiscal integration functionality that is available in Comme
 
 - [Control unit integration sample for Sweden (legacy)](./retail-sdk-control-unit-sample.md)
 - [Digital signature for France (legacy)](./emea-fra-deployment.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

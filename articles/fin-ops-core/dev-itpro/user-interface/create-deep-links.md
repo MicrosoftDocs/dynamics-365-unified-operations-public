@@ -4,11 +4,9 @@
 title: Create shareable, secured URLs (deep links)
 description: Learn how to create shareable, secured URLs to forms and records.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Learn how to create shareable, secured URLs to forms and records.
 
-Overview
---------
+## Overview
 
 The URL Generator enables developers to create shareable and secured URLs (also known as deep links) to specific forms that are root navigable. An optional data context can be passed to the form to display filtered or specific data when the form is opened. The URL Generator enables scenarios such as embedding links in reports, email, and external applications, enabling users to quickly and easily locate the specified forms or data by simply navigating using the generated link.
 
@@ -110,3 +107,6 @@ fullURI.AbsoluteUri
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

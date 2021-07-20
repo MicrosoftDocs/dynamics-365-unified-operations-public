@@ -4,11 +4,9 @@
 title: Connect peripherals to the point of sale (POS)
 description: This topic covers how to connect peripherals to your Retail POS.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -85,7 +83,7 @@ Whereas the hardware station itself is specified at the channel level includes i
 
 ### MPOS with connected peripheral devices
 
-[![Traditional, fixed point of sale](./media/traditional-300x279.png)](./media/traditional.png)
+[![Traditional, fixed point of sale.](./media/traditional-300x279.png)](./media/traditional.png)
 
 To connect MPOS to POS peripherals in a traditional, fixed POS scenario, first navigate to the register itself, and assign a hardware profile to it. You can find the POS registers at **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**. 
 
@@ -104,7 +102,7 @@ Finally, in MPOS, use the **Select hardware station** operation to select the **
 
 ### MPOS or Cloud POS with a stand-alone hardware station
 
-[![Shared peripherals](./media/shared-300x254.png)](./media/shared.png)
+[![Shared peripherals.](./media/shared-300x254.png)](./media/shared.png)
 
 In this scenario, a stand-alone hardware station is shared among MPOS and Cloud POS clients. This scenario requires that you create a hardware station profile to specify the download package, port, and hardware profile that the hardware station uses. You can find the hardware station profile at **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**. 
 
@@ -209,3 +207,6 @@ Additional activation-related information includes the worker who changed the ac
 ### Client data synchronization
 
 All changes to a POS client, except changes in the device activation status, must be synced to the channel database to take effect. To sync changes to the channel database, navigate to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**, and run the required distribution schedule. For client changes, you should run the **Registers** and **Channel configuration** distribution schedules.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

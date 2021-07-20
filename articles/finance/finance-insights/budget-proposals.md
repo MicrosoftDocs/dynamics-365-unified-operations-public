@@ -4,11 +4,9 @@
 title: Budget proposals (preview)
 description: This topic describes the process for using a machine learning model with your organization's historical data to generate a budget proposal.
 author: panolte
-manager: AnnBe
-ms.date: 07/10/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,7 +27,6 @@ ms.dyn365.ops.version: 10.0.4
 # Budget proposals (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Organizations spend a large amount of time and resources in preparing their budgets. Much of that work is repetitive low-value-added effort, such as gathering the data that's used in the budgeting process. Additional work is needed to prepare a line-by-line budget by department. 
 
@@ -104,5 +101,4 @@ You can use the **Actual vs Budget - Default financial** report to see summary a
 
 When a 12-month financial report is exported to Excel, you can easily insert a line chart or sparkline to provide a graphical view of the input or output data that helps reveal trends in the data.
 
-#### Privacy notice
-Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

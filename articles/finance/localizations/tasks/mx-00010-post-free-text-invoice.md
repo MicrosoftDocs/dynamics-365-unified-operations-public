@@ -4,11 +4,9 @@
 title: MX-00010 Post a free text invoice
 description: Use the Free text invoice form to create and post a customer invoice as an electronic invoice by using CFDI method. 
 author: sndray
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -58,3 +56,6 @@ Use the Free text invoice form to create and post a customer invoice as an elect
 20. In the list, mark the selected row.
 21. In the list, click the link in the selected row.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

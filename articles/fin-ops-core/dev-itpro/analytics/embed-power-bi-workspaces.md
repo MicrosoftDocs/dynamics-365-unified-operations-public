@@ -3,12 +3,10 @@
 
 title: Analytical Workspaces (using Power BI Embedded)
 description: This topic describes how you can use Power BI to deliver rich, interactive reports seamlessly integrated into application workspaces.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 270794
 ms.assetid: f1d79557-2538-42b5-9ea3-4e86a61abfd4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 
@@ -44,14 +42,14 @@ The application now delivers interactive reports that seamlessly integrate into 
 
 The following screenshot shows Power BI in a workspace.
 
-![Power BI in a workspace](./media/Power-BI-in-D365-Workspace.png)
+![Power BI in a workspace.](./media/Power-BI-in-D365-Workspace.png)
 
 ## Power BI vs operational workspaces
 Power BI workspaces complement operational views with analytical insights based on near real-time information. The following offers a visual comparison of a Power BI workspace and an operational workspace.
 
 The following screenshot shows an operational workspace.
 
-![Operational workspace](./media/D365-Operational-Workspace.png)
+![Operational workspace.](./media/D365-Operational-Workspace.png)
 
 ## Edit embedded reports in analytical workspaces
 
@@ -62,3 +60,6 @@ The [How to edit an embedded report in an analytical workspace](https://youtu.be
 
 ## What's next?
 Going forward, new cloud deployments will come bundled with the Power BI Embedded service. Additional documentation describing the Developer ALM process will be made available to help partners and ISVs create new solutions that take advantage of the Power BI Embedded service integration options that are available.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Collections management key concepts
 description: The topics defines key concepts for collections management.
 author: mikefalkner
-manager: AnnBe
 ms.date: 11/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -128,3 +126,6 @@ You can process NSF payments by selecting **NSF payment** on the **Collections**
 [Credit holds for sales orders](./cm-sales-order-credit-holds.md)
 
 [Customer credit management periodic tasks](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

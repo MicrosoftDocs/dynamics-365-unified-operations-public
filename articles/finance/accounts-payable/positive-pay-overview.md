@@ -4,11 +4,9 @@
 title: Positive pay overview
 description: This article provides information about positive pay, which is used to generate an electronic list of checks that can be presented to a bank. 
 author: panolte
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 88463
+ms.custom: ["88463", "intro-internal"]
 ms.assetid: 1e3a39d3-f9b3-4073-9730-c96a607243e2
 ms.search.region: Global
 # ms.search.industry: 
@@ -53,3 +51,6 @@ For more information, see [Set up and generate positive pay files](set-up-genera
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

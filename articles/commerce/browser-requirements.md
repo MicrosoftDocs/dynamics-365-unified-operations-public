@@ -4,11 +4,9 @@
 title: Browser requirements for Dynamics 365 Commerce sites
 description: This topic covers the browser requirements for Microsoft Dynamics 365 Commerce sites.
 author: anupamar-ms
-manager: annbe
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -51,3 +49,6 @@ Dynamics 365 Commerce sites are best supported by the following web browsers. To
 [Manage robots.txt files](manage-robots-txt-files.md)
 
 [Enable location-based store detection](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

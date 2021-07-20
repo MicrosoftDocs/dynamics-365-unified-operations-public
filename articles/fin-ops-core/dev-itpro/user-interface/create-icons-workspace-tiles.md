@@ -4,11 +4,9 @@
 title: Create icons for workspace tiles
 description: This topic provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
 author: jasongre
-manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -67,21 +65,24 @@ Following these recommendations ensures that your workspace icon matches the sty
 ## Example 
 Consider the following image/icon that is to be used for a new workspace. 
 
-[![Icon to be used for a new workspace](./media/newlogo3.png)](./media/newlogo3.png) 
+[![Icon to be used for a new workspace.](./media/newlogo3.png)](./media/newlogo3.png) 
 
 
 This icon would be converted to an image with a **white background and transparent content** with the icon centered in a larger image canvas as shown.  
 
-![Workspace icon following new guidance](./media/baseIcon_img_PU29.png) 
+![Workspace icon following new guidance.](./media/baseIcon_img_PU29.png) 
 
 To understand how this relates to the sizing recommendations, here is the workspace icon image overload with the new sizing recommendations.   
 
-![Workspace icon with new sizing recommendations](./media/baseIcon_Guides_PU29.png) 
+![Workspace icon with new sizing recommendations.](./media/baseIcon_Guides_PU29.png) 
 
 Using this image on a workspace tile yields the following result on the dashboard. 
 
-[![Result on the dashboard when image used on workspace tile](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
+[![Result on the dashboard when image used on workspace tile.](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

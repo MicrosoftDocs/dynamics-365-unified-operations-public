@@ -4,11 +4,9 @@
 title: View transactions on settlement for Eastern Europe
 description: This topic provides information about the Transactions on settlement page for customers and vendors.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,3 +50,6 @@ Settlement-related information is captured and can be shown on the **Transaction
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

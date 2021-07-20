@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Export and import models
 description: This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
 author: RobinARH
-manager: AnnBe
 ms.date: 10/01/2018
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 20451
 ms.assetid: 9eb3be56-6382-43df-a247-eae0dcaf46b8
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Export and import models
@@ -36,8 +21,7 @@ ms.dyn365.ops.version: AX 7.0.0
 Model files let you distribute models to customers and partners, and can be installed in development environments. They are key components of a Lifecycle Services (LCS) solution. Model files contain a model descriptor file, metadata, source code, and referenced .NET assemblies (when applicable). This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
 
 
-Export a model into a model file for distribution
--------------------------------------------------
+## Export a model into a model file for distribution
 
 To export an existing model into a model file, use the ModelUtil.exe tool and the **-export** directive. This tool is located in the packages bin folder (typically, c:\\packages\\bin or i:\\AosService\\PackagesLocalDirectory\\bin).
 
@@ -76,6 +60,9 @@ If you install a model on a development environment that contains customizations
 2. In the dialog box, select the model to check for conflicts. This is the model that contains customizations to elements in the newly installed baseline model.
 3. Click **Create project**. A project is generated that contains only the elements in that model that have conflicts. 
 
-    [![AddUpdate\_MetaHotfix](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
+    [![AddUpdate\_MetaHotfix.](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
 
 4. Open the designer for the conflicting element to view and resolve conflicts by using the tools that are provided. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up Azure Key Vault for secure key management
 description: This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.  
 author: samjarawan
-manager: annbe
-ms.date: 10/23/2020
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,16 +31,14 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.
 
-## Overview
-
-Some Dynamics 365 Commerce e-Commerce development scenarios require business-sensitive data such as credentials or access tokens that must be stored securely. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) provides the capability to import, store, and manage cryptographic keys and certificates that can be securely accessed as needed. 
+Some Dynamics 365 Commerce e-commerce development scenarios require business-sensitive data such as credentials or access tokens that must be stored securely. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) provides the capability to import, store, and manage cryptographic keys and certificates that can be securely accessed as needed. 
 
 This topic shows how to do the following: 
 
 - Create a Key Vault to securely store sensitive information.
-- Configure your e-Commerce site to securely communicate with Retail Server.
+- Configure your e-commerce site to securely communicate with Retail Server.
 - Set up Retail Server to securely communicate with your Key Vault.
-- Access secret values from within your e-Commerce components.
+- Access secret values from within your e-commerce components.
 
 ## Create a Key Vault to store application secrets
 
@@ -60,9 +56,9 @@ To create a new Key Vault, follow these steps.
 1.	After you have reviewed the configuration, select **Create** and then wait for the deployment to complete.
 1.	After the Key Vault has successfully been deployed, you can add any secrets under **Secrets**.
 
-## Configure server-to-server authentication between the e-Commerce Node application and Retail Server
+## Configure server-to-server authentication between the e-commerce Node application and Retail Server
 
-Next, the e-Commerce Node application needs to be configured to securely communicate with Retail Server.
+Next, the e-commerce Node application needs to be configured to securely communicate with Retail Server.
 
 For the following steps, you will need to have the tenant ID of the Azure App Service hosting your Node application, as well as the client ID of the managed identity tied to your Azure App Service. If you do not have access to Azure App Service, work with your service integrator or support team to obtain the required information.
 
@@ -89,7 +85,7 @@ To find the client ID of the managed identity for your Node application, follow 
 
 The following example image highlights the **Client ID** value on the Azure Portal **Overview** page.
 
-![Azure Portal Overview page with the Client ID value highlighted](media/key-vault-01.png)
+![Azure Portal Overview page with the Client ID value highlighted.](media/key-vault-01.png)
 
 ### Add your Node application details into Retail Server’s authentication allow list
 
@@ -108,11 +104,11 @@ To add your Node application details into Retail Server's authentication allow l
 1.	In the third section named **SERVER RESOURCE IDS**, add an entry with the server resource ID of `https://commerce.dynamics.com`, and then select **Save**.
 
 You should now have a configuration similar to the one in the following example.
-![Retail Server authentication allow list](media/key-vault-02.png)
+![Retail Server authentication allow list.](media/key-vault-02.png)
 
 To synchronize the changes into the channel database, in Commerce headquarters go to **Distribution schedule** and execute job 1110 (Global configuration), as shown in the following image. 
 
-![Execute job 1110 on the Distribution schedule page](media/distribution-schedule.png)
+![Execute job 1110 on the Distribution schedule page.](media/distribution-schedule.png)
  
 Your Node application will now be able to securely communicate and request Key Vault secrets from Retail Server.
 
@@ -137,7 +133,7 @@ To create a new app registration, follow these steps.
 1. Under **Expires**, select **Never**, and then select **OK**.
 1. On the **Certificates & secrets** page, copy the secret value In the **Value** box of your new client secret and store it in a safe place. This secret value is what will enable communication between Retail Server and your Key Vault.
 
-    ![App registration](media/key-vault-03.png)
+    ![App registration.](media/key-vault-03.png)
  
  > [!NOTE]
  > You will only have one opportunity to copy the secret value so it's important to do so now.
@@ -158,7 +154,7 @@ Next, to add an access policy in your Key Vault, follow these steps.
 Next, to add the Key Vault details in Retail Server, follow these steps.
 
 1.	In Commerce headquarters, go to **Key Vault parameters**. 
-1. From the store selector on the top right, select **USRT**.
+1. From the store selector on the top right, select the store for which you want to configure the secret key and values.
 1.	Select **New**, and then enter a name to represent your Key Vault.
 1.	Enter the **Key Vault URL**. This is the **Vault URI** value listed on your Key Vault's **Overview** page. 
 1. Enter the **Key Vault client**. This is the application ID of the registered app. 
@@ -166,14 +162,14 @@ Next, to add the Key Vault details in Retail Server, follow these steps.
 1.	Add the secrets you want to access from Retail Server. For example, if the secret name is "retail-server-test-secret", add "retail-server-test-secret" as the **Name**, and "vault:///retail-server-test-secret" as the **Secret**. The **Secret type** should be set to **Manual**.
 1.	Select **Validate** to test your configuration. If everything was configured correctly, you will see a message that says, "Validation successful."
  
- ![Key Vault Secrets page with secret selected](media/key-vault-04.png)
+ ![Key Vault Secrets page with secret selected.](media/key-vault-04.png)
  
  > [!IMPORTANT]
- > The Key Vault must be configured in the **USRT** store.
+ > Note the operating unit number of the store that was used to configure the secret key and values. This can be found in Commerce headquarters at **Retail and Commerce \> Channels \> Online stores**. You will need to specify this value in the platform settings JSON file.
 
-## Access secret values within your e-Commerce Node application
+## Access secret values within your e-commerce Node application
 
-After the configuration steps above are complete, you will be able to access the secret values from within your e-Commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the interface shown in the following example. Along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as a second argument. This base URL can be found in the `RequestContext` API under the `requestContext.apiSettings.baseUrl` API, which is accessed through the action context inside of data actions or the `props.context` context object in modules.
+After the configuration steps above are complete, you will be able to access the secret values from within your e-commerce Node application using the `SecretManager` class. This class is initialized on the global `msdyn365Commerce` object and implements the interface shown in the following example. Along with the `secretKey`, the `baseURL` for your Retail Server needs to be passed in as a second argument. This base URL can be found in the `RequestContext` API under the `requestContext.apiSettings.baseUrl` API, which is accessed through the action context inside of data actions or the `props.context` context object in modules.
 
 ```typescript
 export interface ISecretManager {
@@ -206,14 +202,19 @@ As a developer, you should only use the `SecretManager` class on code that is en
 
 If the request to fetch the secret value fails, the error property will be set. You can use this to debug any issues you may encounter when trying to fetch secret values.
 
+### Update the platform settings file
+
+You must update the **secretsManagerOUN** property in the platform.settings.json file to specify the operating unit number of the store or channel where the key vault parameters were configured. For more information, see [Platform settings file](platform-settings.md).
+
 ## Local development
 
-Your e-Commerce Node application is only able to communicate with Retail Server and request tokens need to securely communicate in a deployed App Service environment. This means that when developing locally, the `SecretManager` class will be unable to retrieve secrets from your Key Vault. Instead you can create a secrets directory in your Node application and add a secrets.json file, where you can configure secretKeys and secretValues that will only be used when developing locally.
+Your e-commerce Node application is only able to communicate with Retail Server and request tokens need to securely communicate in a deployed App Service environment. This means that when developing locally, the `SecretManager` class will be unable to retrieve secrets from your Key Vault. Instead you can create a secrets directory in your Node application and add a secrets.json file, where you can configure secretKeys and secretValues that will only be used when developing locally.
 
 > [!NOTE]
-> Everything under the secrets/ directory should be added to your .gitignore file to help prevent secrets from being leaked online.
+> -   Everything under the ```secrets/``` directory should be added to your .gitignore file to help prevent secrets from being leaked online.  
+> -   Ensure that the ```secrets/secrets.json``` file is created and placed in the root level directory and not in the ```src``` directory of your local development environment.
 
-The following example shows the contents of a "secrets/secrets.json" file.
+The following example shows the contents of a ```secrets/secrets.json``` file.
 
 ```json
 {
@@ -229,6 +230,8 @@ If you do not configure this file, during local development you may encounter er
 
 [App settings](app-settings.md)
 
+[Platform settings file](platform-settings.md)
+
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
@@ -240,3 +243,6 @@ If you do not configure this file, during local development you may encounter er
 [Configure module properties to be shown based on context](configure-properties-context.md)
 
 [Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

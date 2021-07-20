@@ -4,11 +4,9 @@
 title: Enter worker information
 description: After a recruiter has created a mass hire project and generated the positions, the next step is to enter the worker information for the people being hired. 
 author: andreabichsel
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,7 +14,6 @@ ms.technology:
 ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelManagementWorkspace
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -27,6 +24,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Enter worker information
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -48,3 +47,6 @@ After a recruiter has created a mass hire project and generated the positions, t
 8. In the list, unmark the selected row.
     * Select the next project position and continue entering the worker information for each person that you're hiring.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

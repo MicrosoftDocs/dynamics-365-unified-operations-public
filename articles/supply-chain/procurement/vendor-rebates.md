@@ -4,11 +4,9 @@
 title: Vendor rebates
 description: This topic provides an overview of the most common tasks that you might want to perform when you work with vendor rebates. Vendor rebates help companies better manage their supplier rebate programs by automating tasks that are required in order to administer, track, and claim rebates that are earned.
 author: omulvad
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -59,7 +57,7 @@ A vendor rebate agreement is a record of a contract with a vendor that specifies
 
 To open the **Vendor rebate agreements** page, select **Procurement and sourcing** &gt; **Vendor rebates** &gt; **Rebate agreements**.
 
-![Purchase agreement](media/purchase-agreement.PNG)
+![Purchase agreement.](media/purchase-agreement.PNG)
 
 On the **Vendor rebate agreements** page, you can view details about the negotiated conditions of a vendor agreement.
 
@@ -135,7 +133,7 @@ When claims have been approved, they can be processed by Accounts payable (A/P).
 
     A Rebate accrual journal is posted for the claim amount. This posting debits the Accrued Vendor Rebates Receivable account for the expected vendor credit and credits the interim Accrued Vendor Rebates Received account for the expected gain.
 
-    ![Message](media/message.png)
+    ![Message.](media/message.png)
 
 5. In the rebate list, select the line, and then, on the Action Pane, select **Rebate transactions** to see and navigate to the journal batch number for this rebate accrual posting.
 
@@ -170,3 +168,6 @@ The process for handling vendor rebates involves multiple manual tracking tasks 
 - Generating accurate rebate claims
 - Accruing the expected receivable and interim gain in the general ledger
 - Updating the vendor balance and the income statement with the allowance that is due
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

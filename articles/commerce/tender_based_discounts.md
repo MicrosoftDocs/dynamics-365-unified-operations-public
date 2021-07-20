@@ -4,11 +4,9 @@
 title: Tender-based discounts
 description: This topic provides an overview of functionality that lets retailers configure discounts for specific tender types.
 author: bebeale
-manager: AnnBe
 ms.date: 10/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -75,3 +73,6 @@ Retailers often choose to exclude some products, such as new items or in-demand 
 
 > [!NOTE]
 > When the **Prevent all discounts** configuration is set to **Yes**, no discounts will be applied to the product. Not even tender-based discounts will be applied.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

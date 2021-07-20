@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Migrate from overlayering to extensions
 description: This topic provides information about migration from customizations that are based on overlayered code to customizations that are based on extensions.
 author: FrankDahl
-manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -122,3 +116,6 @@ Be sure to start planning the migration of your solutions early. This planning i
 Your solution might contain intrusive customizations that aren't easily accommodated through extensions. You should consider whether the business value of these customizations outweighs the effort of building them through extensions. In some cases, partners have decided to discontinue parts of their solutions, because they found that it was impractical to rebuild those parts through extensions, and those parts weren't critical to the solutions.
 
 Some smaller fixes that you're customizing across the application might not be core for your solution, but they are important for the customers that you engage with. In these cases, you must decide whether you prefer to ask Microsoft to implement similar capabilities in the standard application. You can enter an extensibility request for this purpose. For example, if customers want to simplify standard business processes in the system, you might suggest that we add options for disabling steps of the process in the standard application.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

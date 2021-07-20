@@ -4,11 +4,9 @@
 title: Overview
 description: The Dynamics 365 Human Resources User Guide provides you with instructions on setting up Human Resources, setting up compensation and benefits for your employees, and managing your workforce.
 author: andreabichsel
-manager: tfehr
-ms.date: 02/03/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,10 +15,9 @@ ms.search.form: EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
-ms.custom: 7521
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -32,13 +29,15 @@ ms.dyn365.ops.version: Human Resources
 
 # Overview
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 The Dynamics 365 Human Resources User Guide provides you with instructions on setting up Human Resources, setting up compensation and benefits for your employees, and managing your workforce.
 
 ## Set up Human Resources
 
 [Configure Human resources parameters](hr-setup-parameters.md)</br>
 [Configure Human resources shared parameters](hr-setup-shared-parameters.md)</br>
-[Set up Human resource workflows](hr-setup-workflows.md)</br>
+[Set up Human resource workflows](./hr-workflow-manage-employee-information.md)</br>
 [Understand Date and Time fields](hr-setup-date-time-fields.md)</br>
 
 ## Configure organization settings
@@ -108,6 +107,7 @@ The Dynamics 365 Human Resources User Guide provides you with instructions on se
 [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)</br>
 [Request time off](hr-employee-self-service-request-time-off.md)</br>
 [View team and company calendars](hr-employee-self-service-calendar.md)</br>
+[Configure the Absence manager role](hr-configure-absence-manager.md)</br>
 
 ## Develop employees
 
@@ -132,3 +132,6 @@ The Dynamics 365 Human Resources User Guide provides you with instructions on se
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

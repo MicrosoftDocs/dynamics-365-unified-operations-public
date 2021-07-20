@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Independent software vendor (ISV) licensing (on-premises)
 description: This topic describes the independent software vendor (ISV) licensing feature for on-premises environments.
 author: jorisdg
-manager: AnnBe
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
@@ -92,3 +78,6 @@ The following procedure can be used for a sandbox environment or a production en
 5. When the script has been run successfully, validate that the configuration key has been imported and enabled. In the product, the corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, if you added a configuration key that is named ISVConfigurationKey1, it will appear in the list of configuration keys.
 
 When the configuration key is enabled, the changes in the ISV solution will be visible in the product.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

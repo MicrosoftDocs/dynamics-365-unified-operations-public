@@ -1,18 +1,12 @@
 ---
-# required metadata
-
 title: Extended data types
 description: This topic provides information about extended data types (EDTs).
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -62,3 +56,6 @@ If you set this property to **True**, make sure that the following conditions ar
 
 + All truncation logic honors the number of decimal places that is specified on the EDT, so that no implicit or hardcoded rounding will occur.
 + The value isn't assigned to other incompatible EDTs that don't correctly handle rounding.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

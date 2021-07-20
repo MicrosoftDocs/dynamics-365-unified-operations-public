@@ -4,11 +4,9 @@
 title: Numbering documents and vouchers chronologically
 description: This topic explains how to set up and use chronological numbers for applicable documents and related vouchers.  
 author: ikond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,7 +31,6 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 In some countries, there is a legal requirement to number documents and related vouchers in chronological order. The chronology must be supported by periods. All of the numbers that belong to earlier periods must be less than the numbers that belong to later periods. To meet this requirement, chronological numbering functionality has been implemented. 
 This topic explains how to configure and use chronological numbers for applicable documents and related vouchers.
@@ -78,7 +75,7 @@ To define number sequences, go to **Organization administration** > **Number seq
 
 Specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.
 
-![Number sequence setup](media/chrono-num-sequence.jpg)
+![Number sequence setup.](media/chrono-num-sequence.jpg)
 
 ### Configure number sequence groups
 
@@ -86,7 +83,7 @@ To configure number sequence groups, go to **Accounts receivable** > **Setup** >
 
 For each group, in the **Reference** section, select one of the supported document references, and in the **Number sequence code** field, refer to a number sequence that was previously created for the related period.
 
-![Number sequence group setup](media/chrono-num-sequence-group.jpg)
+![Number sequence group setup.](media/chrono-num-sequence-group.jpg)
 
 Similarly, configure number sequence groups in **Accounts payable** and **Project management and accounting** modules.
 
@@ -94,7 +91,7 @@ Similarly, configure number sequence groups in **Accounts payable** and **Projec
 
 To configure number sequence groups chronology, go to **Organization administration** > **Number sequences** > **Chronological number sequence groups**. Define the applicability conditions for number sequence groups.
 
-![Chronological numbers setup](media/chrono-num-sequence-group-period.jpg)
+![Chronological numbers setup.](media/chrono-num-sequence-group-period.jpg)
 
 | Field            | Description                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -107,7 +104,10 @@ To configure number sequence groups chronology, go to **Organization administrat
 ## Document posting
 When you post a document, the appropriate number sequence group is assigned to the document, based on document's posting date, and then used to generate a document number based on the detected number sequence. The system provides a message regarding the number sequence group assignment.
 
-![Document number](media/chrono-num-sequence-fti.jpg)
+![Document number.](media/chrono-num-sequence-fti.jpg)
 
 > [!NOTE]
 > For some countries, there is a specific logic already implemented for document numbering. In this case, country-specific logic will override the **Chronological numbering** feature.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

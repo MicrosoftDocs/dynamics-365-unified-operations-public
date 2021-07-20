@@ -4,11 +4,9 @@
 title: On-premises disaster recovery configuration
 description: This topic describes how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery.
 author: faix
-manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -56,7 +54,7 @@ The basic configuration for disaster recovery involves deploying a duplicate of 
 
 The following diagram illustrates the required setup, at a high level.
 
-![Disaster recovery architecture](media/DRArchitecture.png)
+![Disaster recovery architecture.](media/DRArchitecture.png)
 
 ## Environment configuration
 
@@ -108,7 +106,7 @@ The disaster recovery environment should have a similar configuration as the pro
 
 ## SQL Server Always-On Availability configuration
 
-The business data database (AXDB) should be replicated to the secondary datacenter, typically using SQL Server Always-On availability groups feature. For more information, see [Always On availability groups](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
+The business data database (AXDB) should be replicated to the secondary datacenter, typically using SQL Server Always-On availability groups feature. For more information, see [Always On availability groups](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
 
 | Database | Replicated |
 |----------|------------|
@@ -123,7 +121,7 @@ The business data database (AXDB) should be replicated to the secondary datacent
 
 When a disaster event occurs, the primary datacenter may be unavailable but within the secondary datacenter, the following components will be available.
 
-![Deployment settings thumbprint example](media/DRArchitectureSingle.png)
+![Deployment settings thumbprint example.](media/DRArchitectureSingle.png)
 
 At the initial moment of the disaster event, the disaster recovery environment will be empty. The only thing present will be a configured Service Fabric cluster and SQL Server, which contain all of the replicated production data. 
 
@@ -238,13 +236,13 @@ To deploy your environment, follow these instructions.
 
 1. Select **Maintain** and then select **Update Settings**.
 
-    ![Apply update settings](media/addf4f1d0c0a86d840a6a412f774e474.png)
+    ![Apply update settings.](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 1. Don't change any values. Select **Prepare**.
 
 1. After downloading is finished and preparation is completed, the **Update environment** button will be displayed. Select this button to start updating your environment
 
-    ![Update environment button](media/0a9d43044593450f1a828c0dd7698024.png)
+    ![Update environment button.](media/0a9d43044593450f1a828c0dd7698024.png)
 
 1. After the environment is deployed, the disaster recovery environment is ready for use. 
 
@@ -276,3 +274,6 @@ Clean up your DR environment by manually unprovisioning all Dynamics Service Fab
 
 >[!IMPORTANT]
 > Your primary environment will be functioning as usual and can be serviced after you ensure that all items in the checklist are verified.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

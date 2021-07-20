@@ -4,11 +4,9 @@
 title: Nested Simple List and Details subpattern
 description: This topic provides information about the Nested Simple List and Details (NSL+D) subpattern, used to display information about a secondary or child entity.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the Nested Simple List and Details (NSL+D) subpattern. This subpattern is used to display information about a secondary or child entity when that child entity is presented within another form type.
 
-Usage
------
+## Usage
 
 This article describes a variant of the Simple List and Details (SL+D) pattern that is named the Nested Simple List and Details (NSL+D) subpattern. Whereas the SL&D form pattern is used to display information about the primary entity on the form, the NSL+D subpattern is used to display information about a secondary or child entity when that child entity is presented within another form type. The amount of information that is related to the child entity should be too much for a grid (10 or more fields) but not enough for the child entity to deserve its own form. The NSL+D subpattern has a few differences from the SL+D form pattern:
 
@@ -46,7 +43,7 @@ This article describes a variant of the Simple List and Details (SL+D) pattern t
 
 ## Wireframe
 
-![Wireframe for Simple List and Details pattern](./media/nestedsimplelistanddetails1.png)
+![Wireframe for Simple List and Details pattern.](./media/nestedsimplelistanddetails1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -101,7 +98,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 ## Examples
 Form: **HcmJob** (**TaskTabPage**) 
-[![Nested Simple List and Details sub-pattern example](./media/nestedsimplelistanddetails2.png)](./media/nestedsimplelistanddetails2.png)
+[![Nested Simple List and Details sub-pattern example.](./media/nestedsimplelistanddetails2.png)](./media/nestedsimplelistanddetails2.png)
 
 ## Resources
 ### Typically used by patterns
@@ -123,4 +120,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![Example](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
+[![Example.](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

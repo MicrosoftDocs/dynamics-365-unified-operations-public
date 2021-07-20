@@ -4,11 +4,9 @@
 title: General Data Protection Regulation overview
 description: This topic provides information about the user log functionality in Finance and Operations.
 author: ToddLefor
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 10031
+ms.custom: ["10031", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tlefor
@@ -65,7 +63,7 @@ For Finance and Operations apps, Microsoft acts as a processor. As a data proces
 
 The following illustration shows the flow of data from your customer to the application database, and the roles that you and Microsoft play in that process. For each application, the controller is the tenant administrator, and Microsoft is the processor. In this scenario, the data is sent to the processor (Microsoft), who then processes the data by storing it, retrieving it, sorting it, and so on.
 
-![Data flow from customers](../media/gdpr-customers-controller-processor.jpg)
+![Data flow from customers.](../media/gdpr-customers-controller-processor.jpg)
 
 When a data subject chooses to submit a DSR, the data subject makes the request to the controller. Data subjects won't approach Microsoft to exercise their rights for data that your business has collected. As the processor, Microsoft assists the controller by providing features, or just by making sure that the actions are possible. In other words, the controller accepts and responds to a DSR request, and the processor assists with or enables the compliance request. The following table outlines some of the roles and responsibilities that are relevant.
 
@@ -258,9 +256,9 @@ The controller can make DSR requests regarding telemetry data by using the [Micr
 
 ## Representation of a person in Finance and Operations
 
-Finance and Operations has a common [Global address book](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). Typically, every time that you add a contact, customer, user, worker, or other person in your system, you first create an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as Customer, User, or Worker, and has a role ID: CustID, UserID, WorkerID, and so on.
+Finance and Operations has a common [Global address book](../../fin-ops/organization-administration/overview-global-address-book.md). Typically, every time that you add a contact, customer, user, worker, or other person in your system, you first create an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as Customer, User, or Worker, and has a role ID: CustID, UserID, WorkerID, and so on.
 
-![Data model for the Global address book](../media/gdpr-address-data-model.jpg)
+![Data model for the Global address book.](../media/gdpr-address-data-model.jpg)
 
 ### Each person is a type of party
 
@@ -279,7 +277,7 @@ Roles that are associated with party records are referred to as party roles. The
 
 When a data subject approaches the controller to request a copy of their personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this topic, a **person** is a type of **party** that plays a **role**.
 
-Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
+Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](..//office-integration/office-integration-edit-excel.md) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
 
 ## The Person search report
 
@@ -294,7 +292,7 @@ The Person search report provides additional capabilities in the **Data manageme
 
 When a data subject approaches the controller to request a copy of their personal data, the controller might choose to use the Global address book information to locate the data that describes the person. As noted in the illustration earlier in this topic, a **person** is a type of **party** that plays a **role**.
 
-Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
+Some organizations conduct their activities only through business-to-business relationships and will have modest DSR obligations. By contrast, other organizations conduct their activities through business-to-customer relationships. These organization might choose to use the Global address book and its associative data relationship to write custom reports, custom forms, custom queries, and custom data export features by using the extensibility and customization capabilities and [Open in Excel](../office-integration/office-integration-edit-excel.md#how-do-i-add-an-explicit-button-for-a-template-open-in-excel-option) experiences to serve the specific needs of the kinds of data that their business collects from their customers.
 
 ## Additional notes that apply to requests for data
 
@@ -329,7 +327,7 @@ You should expect data requests to come to your company. You can categorize the 
 + Applicants
 + Competitors
 
-Personal data might also be contained in other roles that aren't listed here. Pages used to enter, view or edit personal data have been provided in worksheets for most roles in the preceding list. You can view or download the spreadsheets from the [Reference documents for finding and managing personal data](https://docs.microsoft.com/dynamics/s-e/) page on CustomerSource. 
+Personal data might also be contained in other roles that aren't listed here. Pages used to enter, view or edit personal data have been provided in worksheets for most roles in the preceding list. You can view or download the spreadsheets from the [Reference documents for finding and managing personal data](/dynamics/s-e/) page on CustomerSource. 
 
 ## Detailed inventory
 
@@ -341,7 +339,7 @@ As you use Finance and Operations apps, you might find that you generate or coll
 
 <Link to form that prints the full inventory>
 
-![Solution explorer showing the AssetClassification field in the properties](../media/gdpr-asset-classification-detail-invent-section.jpg)
+![Solution explorer showing the AssetClassification field in the properties.](../media/gdpr-asset-classification-detail-invent-section.jpg)
 
 ## Age Gating: Preventing minors from using the service
 
@@ -367,15 +365,15 @@ The GDPR specifies that systems must stop processing a minor's personal data if 
 
 In the **About** box, you will find links to the Microsoft user rights documentation, and to the Microsoft privacy and cookies documentation. You can also add a link to your organization's privacy statement.
 
-![Solution explorer showing the asset](../media/gdpr-privacy-01-w-note.jpg)
+![Solution explorer showing the asset.](../media/gdpr-privacy-01-w-note.jpg)
 
 On the **System parameters** page, system administrator can add links to the organization's user rights and privacy notices. You can add a valid URL for one or both notice types.
 
-![System parameters where you add a link to your organization's privacy statement](../media/gdpr-privacy-02.jpg)
+![System parameters where you add a link to your organization's privacy statement.](../media/gdpr-privacy-02.jpg)
 
 When you've completed your entries in the system parameters, the link to your organization's privacy notice will appear in the **About** box, as show in the following illustration.
 
-![Modified About box with a link to an organization's privacy notice](../media/gdpr-privacy-03-w-note.jpg)
+![Modified About box with a link to an organization's privacy notice.](../media/gdpr-privacy-03-w-note.jpg)
 
 ## Clarification of the scope of this content
 
@@ -383,3 +381,6 @@ When you've completed your entries in the system parameters, the link to your or
 + This documentation is provided for informational purposes only, and should not be relied upon as legal advice or to determine how the GDPR might apply to you and your organization. We encourage you to work with a legally qualified professional to discuss the GDPR, how it applies specifically to your organization, and how to best ensure compliance.
 + MICROSOFT MAKES NO WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY AS TO THE INFORMATION PROVIDED IN THIS PRESENTATION. This documentation is provided "as is." Information and views expressed in this documentation, including URL and other Internet website references, may change without notice.
 + This documentation does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this presentation for your internal, reference purposes only.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

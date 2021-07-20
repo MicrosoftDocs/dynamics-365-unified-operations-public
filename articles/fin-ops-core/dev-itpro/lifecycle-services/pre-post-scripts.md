@@ -4,11 +4,9 @@
 title: Local agent pre-deployment and post-deployment scripts
 description: This topic provides information about local agent pre-deployment and post-deployment scripts.
 author: faix
-manager: AnnBe
 ms.date: 08/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -79,3 +77,6 @@ The outputs and error messages from the scripts are written, as .log and .err fi
 
 Execution of the scripts is also logged as Event Tracing for Windows (ETW) events. You can view these events in Event Viewer. If a script produces any errors, an error event is logged, but deployment continues as usual.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

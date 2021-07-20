@@ -4,11 +4,9 @@
 title: Connect a custom Help website to the Help pane
 description: This topic explains how you can extend the in-product Help pane with custom Help content. 
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -161,3 +159,6 @@ If the client is set to the **de-AT** locale, but no results are found in the Ge
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Configure the Help experience for Finance and Operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

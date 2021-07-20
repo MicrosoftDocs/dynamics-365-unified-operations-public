@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Configure address books
-description: Use this procedure, and the decisions that you made in the Planning the configuration of the global address book and additional address books topic, to set up additional address books for your organization. 
+description: Use this procedure to set up additional address books for your organization. 
 author: msftbrking 
-manager: AnnBe 
 ms.date: 08/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -44,3 +42,6 @@ The demo data company used to create this task is USMF. This recording is intend
 7. Click the arrow to add the selected available teams to the address book.
 8. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

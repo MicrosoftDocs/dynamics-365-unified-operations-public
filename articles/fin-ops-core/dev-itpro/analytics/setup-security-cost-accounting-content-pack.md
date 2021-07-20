@@ -4,11 +4,9 @@
 title: Set up security for the Cost accounting analysis Power BI content
 description: This topic explains how you can propagate the access-level security in Cost accounting to row-level security in Microsoft Power BI.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -50,11 +48,11 @@ To propagate access-level security to Power BI, the owner of the Power BI conten
 3. Find the dataset for the **Cost accounting analysis** Power BI content.
 4. Open the security page.
 
-    ![Opening the security page](./media/CA-picture-1.png)
+    ![Opening the security page.](./media/CA-picture-1.png)
 
 5. The **Cost object controller** role is already created. Add other members who are part of the Cost accounting access-level organizational hierarchy.
 
-    ![Adding members](./media/CA-picture-2.png)
+    ![Adding members.](./media/CA-picture-2.png)
 
 Users who are added to the **Cost object controller** role will see only the data that they are allowed to see, according to the definition in the Cost accounting access-level organizational hierarchy.
 
@@ -69,3 +67,6 @@ We assume that your organization wants to restrict data access. If, for some rea
 
 ## Additional resources
 To learn more about Power BI row-level security, see [Manage security on your model in Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

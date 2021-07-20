@@ -4,11 +4,9 @@
 title: Create a channel navigation hierarchy
 description: This topic describes how to create a channel navigation hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
-ms.date: 01/27/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -55,7 +53,7 @@ To create a channel navigation hierarchy, follow these steps.
 
 The following image shows a example root node.
 
-![Sample root node](media/create-channel-hierarchy-1.png)
+![Sample root node.](media/create-channel-hierarchy-1.png)
 
 ## Create navigation category nodes
 
@@ -71,7 +69,7 @@ To create any additional navigation category nodes to represent the product cate
 
 The following image shows an example of a completed channel navigation hierarchy.
 
-![Sample channel hierarchy](media/create-channel-hierarchy-2.png)
+![Sample channel hierarchy.](media/create-channel-hierarchy-2.png)
 
 ## Add products to category nodes
 
@@ -83,11 +81,11 @@ To add products to category nodes, follow these steps.
 1. On the action pane, select **Save**.
 
 > [!NOTE]
-> Adding products to a node inside the channel navigation hierarchy is not sufficient for the products to show up on a selected channel, the products must also be assorted to a product.
+> Adding products to a node inside the channel navigation hierarchy is not sufficient for the products to show up on a selected channel, the products must also be assorted to a channel. For more information on assortments, see [Assortment management](assortments.md).
 
 The following image shows an example node with products added.
 
-![Products added to a category node](media/create-channel-hierarchy-3.png)
+![Products added to a category node.](media/create-channel-hierarchy-3.png)
 
 ## Add product attribute groups to category nodes
 
@@ -103,10 +101,13 @@ To add product an attribute group to a category node, follow these steps.
 
 The following image shows a sample node with product attribute groups added.
 
-![Product attribute groups on a node](media/create-channel-hierarchy-4.png)
+![Product attribute groups on a node.](media/create-channel-hierarchy-4.png)
 
 ## Additional resources
 
 [Set up assortments](set-up-assortments.md)
 
 [Manage attributes and attribute groups](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

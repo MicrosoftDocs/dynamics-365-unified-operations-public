@@ -4,11 +4,9 @@
 title: Upload URL redirects in bulk 
 description: This topic describes how to implement URL redirects in bulk by uploading a redirect comma-separate values (CSV) file in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
 ms.date: 05/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,8 +31,6 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 This topic describes how to implement URL redirects in bulk by uploading a redirect comma-separate values (CSV) file in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 After you've finished creating a new e-commerce site in Dynamics 365 Commerce, and it's ready to go live, you must make the Domain Name System (DNS) switch from your old site to your new site. After you make this switch, the URLs for the new site will likely differ from the URLs for the old site. For specific URLs, traffic that uses the old URL can be redirected to the new URL. In this way, you ensure that site visitors reach the desired location. Redirects help prevent broken links for your customers and help you maintain your established search engine optimization (SEO) results.
 
@@ -141,3 +137,6 @@ To turn off the bulk redirects in an uploaded redirect CSV file, follow these st
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
 [Enable location-based store detection](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

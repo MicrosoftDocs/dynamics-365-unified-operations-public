@@ -4,11 +4,9 @@
 title: SPED fiscal resolution 13/2019 RJ
 description: This topic explains how to set up and generate SPED ECD text files.
 author: v-oloski
-manager: AnnBe
 ms.date: 10/22/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -267,3 +265,6 @@ The system fills in data on the journal lines from the posting profile of adjust
 >
 > - **For the sender:** Adjustment code from table 5.2 = RJ821231, and adjustment code from table 5.3 = RJ10080002
 > - **For the recipient:** Adjustment code from table 5.2 = RJ821231, and adjustment code from table 5.3 = RJ10080002
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

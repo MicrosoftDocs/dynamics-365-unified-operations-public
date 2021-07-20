@@ -3,12 +3,10 @@
  
 title: Create a vendor account
 description: This procedure shows how to create a vendor account, and add an address and contact information. 
-author: RichardLuan
-manager: tfehr 
+author: kamaybac
 ms.date: 06/26/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -21,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -61,3 +59,6 @@ This procedure shows how to create a vendor account, and add an address and cont
 7. Close the page.
 8. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

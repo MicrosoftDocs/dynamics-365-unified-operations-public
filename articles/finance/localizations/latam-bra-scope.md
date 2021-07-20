@@ -4,11 +4,9 @@
 title: Scope of the Brazilian localization
 description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil. 
 author: sndray
-manager: AnnBe
 ms.date: 03/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,7 +59,7 @@ In general, the Microsoft strategy for addressing the tax, financial, accounting
 
 - They implement the federal tax requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section of this topic.
 - They implement, for the following states, the state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section: São Paulo (SP), Rio de Janeiro (RJ), Paraná (PR), Santa Catarina (SC), and Rio Grande do Sul (RS).
-- They deliver specific new regulatory features through configurations or development of new functionality that implements the federal and state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section, in accordance with the business rules that are specified in this topic and the Microsoft Dynamics roadmap on the [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics/s-e/).
+- They deliver specific new regulatory features through configurations or development of new functionality that implements the federal and state/region requirements that are detailed in the [Brazilian localization scope](#brazilian-localization-scope) section, in accordance with the business rules that are specified in this topic and the Microsoft Dynamics roadmap on the [Microsoft Dynamics Localization Portal](/dynamics/s-e/).
 - They deliver specific new regulatory features in the most recent service pack that is available, or in a new service pack, for supported versions of Microsoft Dynamics.
 - They apply National Standards and competitive features that Microsoft, at its sole discretion, determines to be necessary or appropriate, based on business needs in the region.
 - They don't focus on the requirements of specific businesses, segments, verticals, regions, or large enterprises, even when these requirements are required by laws, statutes, or regulations at the federal, state, or city level.
@@ -77,7 +75,7 @@ The user interface (UI) and online Help for Microsoft Dynamics are translated in
 
 The localization scope for Microsoft Dynamics available in Brazil is limited to tax calculation, accounting transactions, issuing/receiving fiscal documents, and issuing fiscal receipts in the following four scenarios: procure to pay, quote to cash, commerce, and regulatory/statutory reporting.
 
-The features that Microsoft delivers and supports as part of the Brazilian localization for Microsoft Dynamics are listed in the [Brazilian localization features](#brazilian-localization-features) section of this topic. Details about each of the features can be found in Help in Microsoft Dynamics, and in white papers that are published on the [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics/s-e/).
+The features that Microsoft delivers and supports as part of the Brazilian localization for Microsoft Dynamics are listed in the [Brazilian localization features](#brazilian-localization-features) section of this topic. Details about each of the features can be found in Help in Microsoft Dynamics, and in white papers that are published on the [Microsoft Dynamics Localization Portal](/dynamics/s-e/).
 
 ## Market availability
 
@@ -875,7 +873,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Generation of a text file and support for companies defined as Profile A
 <p>Available layout versions:</p>
 <ul>
-<li>Layout Code 14 and earlier</li>
+<li>Layout Code 15 and earlier</li>
 </ul>
 </td>
 <td>Yes</td>
@@ -974,7 +972,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <li>Block D (only for incoming fiscal documents): D001-D010-D100-D101-D105-D111-D500-D501-D505-D509</li>
 <li>Block F: F010-F100-F111-F120-F129-F130-F600-F700-F800-F990</li>
 <li>Block M: M001-M100-M105-M110-M115-M200-M205-M210-M220-M225-M400-M410-M500-M505-M510-M515-M600-M606-M610-M620-M625-M800-M810-M990</li>
-<li>Block 1: 1100-1010-1011-1300-1500-1700</li>
+<li>Block 1: 1100-1300-1500-1700</li>
 </ul>
 </td>
 <td>Yes</td>
@@ -983,7 +981,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <tr>
 <td>SPED ECF</td>
 <td>Generation of a text file by using Management Reporter
-<p>Layouts 005 and previous</p>
+<p>Layouts 007 and previous</p>
 <p>Support for the following blocks and records:</p>
 <ul>
 <li>Block 0: 0000-0001-0010-0020-0030-0035-0930-0990</li>
@@ -1000,8 +998,8 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>
 <div>Generation of events:</div>
 <ul>
-<li>R-1000, R-1070, R-2010, R-2020, R-2060, R-2098, R-2099, R-5011</li>
-<li>Layout version 1.4</li>
+<li>R-1000, R-1070, R-2010, R-2020, R-2055, R-2060, R-2098, R-2099, R-5011</li>
+<li>Layout version 1.5.1</li>
 </ul>
 </td>
 <td>Yes</td>
@@ -1028,7 +1026,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <tr>
 <td>SPED Accounting</td>
 <td>Generation of SPED Cont&aacute;bil text files
-<p>Layout version supported: 8.0 and earlier</p>
+<p>Layout version supported: 9.0 and earlier</p>
 </td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1037,10 +1035,11 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>&nbsp;</td>
 <td>Support for bookkeeping type G (Day Book - Livro Diario) and the generation of the following blocks and records:
 <ul>
-<li>Block 0: 0000-0001-0007-0020-0035-0150-0180-0990</li>
+<li>Block 0: 0000-0001-0007-0035-0990</li>
 <li>Block I: I001-I010-I030-I050-I051-I052-I100-I150-I155-I200-I250-I350-I355-I990</li>
 <li>Block J: J001-J005-J100-J150-J800-J801-J900-J930-J932-J935-J999</li>
 <li>Block 9: 9001-9900-9990-9999</li>
+<li>All available posting layers are included in the generation of SPED ECD file.</li>
 </ul>
 </td>
 <td>Yes</td>
@@ -1150,7 +1149,7 @@ The following tax reporting requirements are out of scope for fiscal books for t
 
 ## References
 
-The [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics/s-e/) provides information about localization features and documents that have been released by Microsoft, and also localization features and documents that are planned for release.
+The [Microsoft Dynamics Localization Portal](/dynamics/s-e/) provides information about localization features and documents that have been released by Microsoft, and also localization features and documents that are planned for release.
 
 ## Notes
 
@@ -1196,3 +1195,6 @@ The [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics
 | SINTEGRA             | Information system for interstate goods and service transactions |
 | SEFAZ                | State tax authority |
 | SUFRAMA              | Autarchy for economic development of the Amazon region |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

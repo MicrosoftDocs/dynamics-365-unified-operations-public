@@ -4,11 +4,9 @@
 title: Unified posting date control
 description: This topic explains how to configure chronology control for invoices posting dates.  
 author: ikond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,7 +31,6 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to configure chronology control of invoices posting dates within a specific sales tax book section.
 
@@ -49,7 +46,10 @@ Complete the following steps to configure posting date control.
 1. Go to **Tax** > **Setup** > **Sales tax** > **Italian sales tax book sections**. 
 2. In the **Skip posting date control** column, select whether posting date control is required for a selected sales tax book section.
 
-![Posting date control](media/emea-ita-post-date-control.jpg)
+![Posting date control.](media/emea-ita-post-date-control.jpg)
 
  - If the field isn't enabled, which is the default option, the system doesn't allow posting of new invoices with dates earlier than the date of the latest posted invoice.  
  - If the field is enabled, the system allows posting with any date.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

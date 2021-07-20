@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Comments, using, and print statements
 description: This topic describes statements in X++.
 author: robinarh
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
 ms.devlang: xpp
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150213
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Comments, using, and print statements
@@ -155,3 +140,6 @@ static void AnotherMethod()
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
 description: This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Finance and Operations.
 author: jorisdg
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -75,7 +73,7 @@ In AX 2012, users are authenticated against an on-premises Active Directory serv
        1. Click **Import from AX**. The grid is filled with existing users.
        1. For each user, enter the corresponding Azure AD email address, as shown in the following illustration.
 
-           ![Azure AD email addresses for AX 2012 users](media/userInfoEmailMapping.png)
+           ![Azure AD email addresses for AX 2012 users.](media/userInfoEmailMapping.png)
 
    - Import users from a file. This option is faster. We recommend that you use this option when many users must be updated.
 
@@ -106,3 +104,6 @@ This task is used to migrate the registry key that RetailSaltUtility uses. This 
 - In the Finance and Operations data upgrade checklist, click **Archive retail salt data**.
 
 If the process is successful, the task is marked as completed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

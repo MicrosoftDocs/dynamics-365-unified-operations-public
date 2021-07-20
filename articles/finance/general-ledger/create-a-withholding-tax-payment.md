@@ -4,11 +4,9 @@
 title: Create a withholding tax payment
 description: The Withholding tax payment job procedure settles withholding tax balances from Accounts payable on withholding tax accounts, and offsets them to the withholding tax settlement account for a given period. This topic lists the steps for setting up a withholding tax payment.
 author: roschlom
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -45,4 +43,7 @@ The Withholding tax payment job procedure settles withholding tax balances from 
 6. Select **Update** to post withholding tax payment voucher to the withholding tax settlement account.
 7. Click **OK**.
 
-![Parameters for withholding tax payment](media/withholding-tax-payment.png)
+![Parameters for withholding tax payment.](media/withholding-tax-payment.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

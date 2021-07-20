@@ -4,11 +4,9 @@
 title: Asset library in Lifecycle Services (LCS)
 description: This topic provides information about the Asset Library functionality in Lifecycle Services (LCS).
 author: laneswenka
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,11 +35,11 @@ The Asset library is a storage location for the various assets that are associat
 
 - **Shared asset library** – The Shared asset library is used by Microsoft and Partners to share assets across multiple tenants, projects, and environments in LCS. This library can be accessed by any user who signs in to LCS. To access the Shared asset library, sign in to LCS, and then click the **Shared asset library** tile.
 
-    [![Shared asset library tile](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)
+    [![Shared asset library tile.](./media/SharedAssetLibrary.jpg)](./media/SharedAssetLibrary.jpg)
 
 - **Project-level Asset library** – The project-level Asset library is used to share assets across environments within a project in LCS. This library can be accessed by all users within a project. To access the project-level Asset library, sign in to LCS, and open a project. Then, on the hamburger menu, click **Asset library**.
 
-    [![Opening the project-level Asset library](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
+    [![Opening the project-level Asset library.](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
     
     > [!NOTE]
     > Uploading versions for the same asset in the project asset library is not supported. 
@@ -112,3 +110,8 @@ After you've edited an asset, follow these steps to move the edited asset back t
 2. Select the asset to save, and then click **Save to my library**.
 
 The asset is saved from the project-level Asset library back to the Shared asset library, and the scope is set to **Me**.
+
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

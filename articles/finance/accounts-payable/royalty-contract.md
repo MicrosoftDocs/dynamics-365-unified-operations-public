@@ -4,11 +4,9 @@
 title: Royalty contract management
 description: This topic describes royalty contract management for Microsoft Dynamics 365 Finance.
 author: t-benebo
-manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -58,7 +56,7 @@ A royalty contract is a record of an agreement with an asset or intellectual pro
 
 Royalty contracts are registered on the **Royalty contracts** page. To open the **Royalty contracts** page, select **Accounts payable \> Broker and royalties \> Royalty agreements**.
 
-![Royalty agreements page](./media/royalty-contract-management-royalty-agreements-page.png "Royalty agreements page")
+![Royalty agreements page.](./media/royalty-contract-management-royalty-agreements-page.png "Royalty agreements page")
 
 The **Selection** tab in the lower part of the page shows the products that qualify for a royalty fee.
 
@@ -79,7 +77,7 @@ When a sales processor creates a sales order for a product that the company has 
 
 To see whether a sales order line qualifies for a royalty fee, select **Sales order line \> View \> Price details**. On the **Price details** page, select the **Royalty** FastTab.
 
-![Royalty FastTab on the Price details page](./media/royalty-contract-management-price-details.png "Royalty FastTab on the Price details page")
+![Royalty FastTab on the Price details page.](./media/royalty-contract-management-price-details.png "Royalty FastTab on the Price details page")
 
 The **Royalty** FastTab shows the royalty fee from the valid contract code that is applied to a line. Additionally, the **Royalty amount** field under **Margin estimation** on the **Detail** FastTab specifies the royalty fee per product unit.
 
@@ -130,3 +128,6 @@ The process for handling royalties involves multiple manual tracking tasks that 
 - Updating the vendor balance and the income statement with the royalties that are due
 
 In this way, the feature helps you avoid potential errors and interest on unpaid royalties, and contributes to a timely cash flow forecast for the company.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

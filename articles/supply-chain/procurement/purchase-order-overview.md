@@ -3,12 +3,10 @@
 
 title: Purchase order overview
 description: This article provides general information about purchase orders (POs) and links to additional articles that are related to the various stages that a PO goes through.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,11 +19,11 @@ ms.reviewer: kamaybac
 
 
 # ms.tgt_pltfrm: 
-ms.custom: 93083
+ms.custom: ["93083", "intro-internal"]
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -50,7 +48,7 @@ The following articles provide an overview of the various stages that a PO goes 
 -   [Create purchase orders](purchase-order-creation.md)
 -   [Approve and confirm purchase orders](purchase-order-approval-confirmation.md)
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
--   [Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 ## Types of purchase orders
 There are three types of POs. When you create a PO, you must specify the type. You can set up a default order type for new orders on the **Procurement and sourcing parameters** page.
@@ -85,8 +83,7 @@ The **Approval status** field is used when a PO goes through a review process or
 -   **Confirmed** – This status is assigned after the order has been confirmed. Typically, this status is the last approval status that is assigned to an order.
 
 
-Additional resources
---------
+## Additional resources
 
 [Create purchase orders](purchase-order-creation.md)
 
@@ -94,7 +91,10 @@ Additional resources
 
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
-[Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Distributed order management (DOM)
 description: This topic describes the distributed order management (DOM) functionality in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 01/08/2021
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -40,7 +38,7 @@ DOM optimizes order fulfillment across a complex network of systems and processe
 
 The following illustration shows the lifecycle of a sales order in a DOM system.
 
-![Sales order lifecycle in the context of DOM](./media/flow.png "Sales order lifecycle in the context of DOM")
+![Sales order lifecycle in the context of DOM.](./media/flow.png "Sales order lifecycle in the context of DOM")
 
 ## Set up DOM
 
@@ -206,7 +204,7 @@ At the time of processing, DOM will consider the order and order lines as descri
 
 After it applies the rules, inventory constraints, and optimization, DOM picks the location that is closest to the customer's delivery address.
 
-![Sales order criteria](./media/ordercriteria.png "Sales order criteria")
+![Sales order criteria.](./media/ordercriteria.png "Sales order criteria")
 
 ## Results of DOM runs
 
@@ -260,3 +258,6 @@ Here are some things to consider when you use the DOM feature:
 - Currently, DOM looks only at orders that are created from commerce channels. Sales orders are identified as sales orders when the **Commerce sale** option is set to **Yes**.
 - Microsoft hasn't tested DOM with advanced warehouse management features. Customers and partners must be careful to determine whether DOM is compatible with the advanced warehouse management capabilities and processes that are relevant to them.
 - DOM is available only on the cloud version of Commerce. It isn't supported in on-premises deployments.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

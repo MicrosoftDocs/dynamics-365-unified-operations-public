@@ -4,11 +4,9 @@
 title: Configuration data projects
 description: This topic describes configuration data projects and configuration data templates.
 author: mikefalkner
-manager: AnnBe
 ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -92,3 +90,6 @@ If you want to use other file name extensions, you must update your data sources
 
 1. In the **Data management** workspace, select the **Configure data sources** tile, and then select **Data sources**.
 2. Add a default file name extension to the appropriate data source.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

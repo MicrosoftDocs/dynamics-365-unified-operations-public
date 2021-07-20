@@ -4,11 +4,9 @@
 title: Integration with Finance FAQ
 description: This article explains what data is synchronized in a Human Resources and Finance integration.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -32,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Integration with Finance FAQ
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This topic answers common questions associated about what data is synchronized when Dynamics 365 Human Resources is integrated with Dynamics 365 Finance.
@@ -44,7 +43,7 @@ No. If you edit the Human Resources application user, the integration between Hu
 | --- | --- | --- | --- |
 | Dynamics365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
-![Default settings for Talent application user](media/DynamicsApplicationUser.png)
+![Default settings for Talent application user.](media/DynamicsApplicationUser.png)
 
 ## Is all data synchronized or just some data entities?
 
@@ -58,7 +57,7 @@ By default, the Dataverse integration is turned off in new environments that don
 
 Templates are the starting point. You can create your own template, but a
 template is always needed when creating an integration project. For
-more information about data integrator (DI), templates, and projects, see [Integrate data into Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+more information about data integrator (DI), templates, and projects, see [Integrate data into Microsoft Dataverse](/powerapps/administrator/data-integrator).
 
 ## Can I map financial dimensions to transfer between Human Resources and Finance?
 
@@ -67,7 +66,7 @@ part of the default template. This entity is planned, but currently no release t
 
 For data that resides in Finance but does not exist in Human Resources, link the two systems together by using **Configure Links** in Human Resources.
 
-![Map financial dimensions](media/MapFinancialDimensions.png)
+![Map financial dimensions.](media/MapFinancialDimensions.png)
 
 ## Sometimes when I import employees, they go into inactive workers in Finance. Why?
 
@@ -85,7 +84,7 @@ integration mapping.
 With the use of "Advanced query", you can filter and reshape source data before
 passing it into the destination.
 
-![Active workers advanced query](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Active workers advanced query.](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## Can I specify which fields to send to Finance for a specific entity?
 
@@ -93,7 +92,7 @@ Fields can be added or removed from the integration task. Not all data fields
 that exist on the Dataverse table will be populated from Human Resources.
 Additional data can be populated via Power Apps.
 
-![Add or remove fields to and from an integration task](media/SpecifyFieldsIncludedInIntegration.png)
+![Add or remove fields to and from an integration task.](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## I set up integration as a batch job, but Human Resources lost connection to the destination system. How can I send the same set of changes to the destination system?
 
@@ -153,16 +152,16 @@ project in Finance. If the task number is 9 in Data Integrator, the index in Fin
 
 1. Capture the task index from Data Integrator (in this example it is "9").
 
-    ![Capture task index from Data Integrator](media/CaptureTaskIndex.png)
+    ![Capture task index from Data Integrator.](media/CaptureTaskIndex.png)
 
 2. Track the execution time of the project.
 
-    ![Track execution time of project](media/CaptureTimeOfExecution.png)
+    ![Track execution time of project.](media/CaptureTimeOfExecution.png)
 
 3. In Finance, identify index - 1. In this example, the project with suffix "8" and execution time of index "0" project matches with
 the execution time in Step 2.
 
-    ![Identify index](media/IdentifyIndex.png)
+    ![Identify index.](media/IdentifyIndex.png)
 
 ## After integrating Human Resources and Finance, I don’t see my Human Resources data in Finance. What do I do?
 
@@ -171,7 +170,7 @@ that the Human Resources data is updated and available in Dataverse. This is a n
 sync and can be verified in Power Apps by looking at the data within the data
 tables.
 
-![Data in Dataverse](media/DataInCDS.png)
+![Data in Dataverse.](media/DataInCDS.png)
 
 If the data is not appearing as expected in Dataverse, verify that the entity is
 supported in the integration. To include additional data in Dataverse, a change will be required on the Microsoft side.
@@ -179,7 +178,7 @@ supported in the integration. To include additional data in Dataverse, a change 
 If the entity is supported and the data is available in Dataverse, verify the mapping
 is correct in Data Integrator. If the integrator mapping looks okay, then
 verify the data management jobs have successfully run. Errors may occur during
-the execution of the batch jobs. For more information about Data Management, see [Data management](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+the execution of the batch jobs. For more information about Data Management, see [Data management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json).
 
 ## The addresses for my employees are incorrect after I import them into Finance. What should I do?
 
@@ -205,18 +204,21 @@ Refresh the data entities in Finance by going to **Data management \> Framework
 Parameters \> Entity settings \> Refresh entity list.** This should take a couple
 of minutes to complete, then you should see those mappings. This issue occurs when new projects are created.
 
-![Missing field mapping](media/MissingFieldMapping.png)
+![Missing field mapping.](media/MissingFieldMapping.png)
 
 ## Additional resources
 
 - Data Integrator (DI): 
 
-  - [Integrate data into Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator)
+  - [Integrate data into Microsoft Dataverse](/powerapps/administrator/data-integrator)
 
-  - [Data Integrator error management and troubleshooting](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
+  - [Data Integrator error management and troubleshooting](/powerapps/administrator/data-integrator-error-management)
 
-  - [Responding to DSR requests for system-generated logs in Power Apps, Microsoft Power Automate, and Dataverse](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Responding to DSR requests for system-generated logs in Power Apps, Microsoft Power Automate, and Dataverse](/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Data Management:
 
-  - [Data management](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Data management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

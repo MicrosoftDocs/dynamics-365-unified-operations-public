@@ -1,31 +1,16 @@
 ---
-# required metadata
-
 title: X++ and debugger features
 description: This tutorial is for developers to use advanced constructs of the X++ language and take advantage of productive debugger features.
 author: pvillads
-manager: AnnBe
 ms.date: 11/25/2019
 ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-platform
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: Developer
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
 ms.custom: 26801
 ms.search.region: Global
-# ms.search.industry:
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ and debugger features
@@ -498,7 +483,7 @@ A decimal number is a floating-point value that consists of a sign, a numeric va
 
 String truncation is not a new feature. However, when code is executed in IL in previous versions, the automatic string truncation described here doesn’t take place. String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type, as shown below: Credit card numbers cannot exceed 20 characters.
 
-![FMCreditCardNum string size](./media/stringtruncationsolutionexplorer_debugfeatures.png)
+![FMCreditCardNum string size.](./media/stringtruncationsolutionexplorer_debugfeatures.png)
 
 It's also possible to specify length constraints directly in the X++ syntax:
 
@@ -520,7 +505,7 @@ creditCardNumber = "12345678901234567890Excess string";
 
 The previous version of X++ was very permissive in its treatment of type casting. Both up-casting and down-casting were allowed without intervention from the programmer. Some of the casting permitted in legacy X++ can’t be implemented in the confines of the .NET runtime environment. In object oriented programming languages, including X++, casting refers to assignments between variables whose declared types are both in the same inheritance chain. A cast is either a down-cast or an up-cast. To set the stage for this discussion, we introduce a few self-explanatory class hierarchies:
 
-![Class hierarchy for Animal and MotorVehicle](./media/casting_debugfeatures.png)
+![Class hierarchy for Animal and MotorVehicle.](./media/casting_debugfeatures.png)
 
 As you can see, the MotorVehicle class isn't related to the Animal class. An **up-cast** happens when assigning an expression of a derived type to a base type:
 
@@ -694,11 +679,11 @@ Set a breakpoint on the assignment statement. Make your class the startup object
 
 The debugger will allow you to easily access certain parts of the state of the application. This information is available in the autos window, where the current company, the partition, the transaction level, and the current user ID are listed.
 
-![Autos window](./media/autos_debugfeatures.png)
+![Autos window.](./media/autos_debugfeatures.png)
 
 There is also a window showing the data that is written to the Infolog.
 
-![Infolog window](./media/infolog_debugfeatures.png)
+![Infolog window.](./media/infolog_debugfeatures.png)
 
 ### New breakpoint features
 
@@ -734,3 +719,6 @@ Put a breakpoint on the print statements by pressing F9 while that statement is 
 ### The immediate window
 
 The immediate window is a useful feature in the VS debugger that allows the user to enter expression and statements to evaluate at any given time. This feature isn't currently implemented in the X++ stack, as is the case for many other languages, notably F\#. However, that doesn't mean that the savvy user can't benefit from the immediate window. It just means that snippets must be expressed in C\#, not in X++. There's a separate document that describes the details of how this can be done to great effect.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

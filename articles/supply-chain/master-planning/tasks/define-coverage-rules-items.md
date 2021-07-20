@@ -4,11 +4,9 @@
 title: Define coverage rules for items
 description: The demo data company used to create this procedure is USMF. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -104,3 +102,6 @@ The demo data company used to create this procedure is USMF. This procedure show
 11. In the **Purchase time** field, enter '5'.
 12. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

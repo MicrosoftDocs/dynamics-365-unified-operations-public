@@ -3,11 +3,9 @@
 title: Russia advance holders overview
 description: This topic explains how to register and set up advance holders for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,7 +14,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Russia
 # ms.search.industry: 
 ms.author: roschlom
@@ -153,3 +151,6 @@ Transactions for these workers can be posted by using advance holder accounts. T
 ## Set up the advance holder
 
 [Advance holders overview](emea-advance-holders.md#create-an-advance-holder)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,16 +4,14 @@
 title: Create monthly journal entries in a batch
 description: This topic explains how to create journal entries in a batch to help increase efficiency when monthly lease expenses are recorded.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: Dialog
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -41,3 +39,6 @@ To set up a batch job, or to process payment invoices, depreciation, or interest
 > Subsequent transactions, such as liability amortization schedules, payments, depreciation, and expenses, will be posted only after the initial recognition for corresponding leases is posted.
 >
 > The journal entries are created, but they won't be posted until you select the **Run** command.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

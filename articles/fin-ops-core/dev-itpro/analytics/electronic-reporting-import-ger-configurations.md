@@ -4,11 +4,9 @@
 title: Import Electronic reporting (ER) configurations
 description: This topic explains how to import Electronic reporting (ER) configurations from Lifecycle Services (LCS) to a local business data application.
 author: NickSelin
-manager: AnnBe
-ms.date: 06/02/2017
+ms.date: 06/17/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -33,7 +31,10 @@ ms.dyn365.ops.version: Platform Update 8
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS) to a local business data application. It also explains how to upload the ER configurations from an ER repository to the local business data (LBD) application.
+This topic explains how to download [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from Microsoft Dynamics Lifecycle Services (LCS) to a local business data application. It also explains how to upload the ER configurations from an ER repository to the local business data (LBD) application.
+
+> [!IMPORTANT]
+> The use of LCS as a storage repository for ER configurations is being [deprecated](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). For more information, see [Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) storage deprecation](../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
 
 1. Sign in to your local business data application by using one of the following roles:
 
@@ -83,3 +84,6 @@ This topic explains how to download Electronic reporting (ER) configurations fro
 **Question:** When I click **Download all** in the Shared asset library, I receive the following warning: “Zip generation is in progress, please try again in a few minutes.” Why do I receive this warning?
 
 **Answer:** You receive this warning because a new configuration is added to the Shared asset library, and the ER configuration is being archived.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

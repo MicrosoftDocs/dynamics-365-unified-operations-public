@@ -4,11 +4,9 @@
 title: Monitor forecast accuracy
 description: This topic describes the types of forecast accuracy that Dynamics 365 Supply Chain Management calculates, and explains how you can view the accuracy values.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,8 +41,7 @@ Supply Chain Management calculates the following types of forecast accuracy:
 > If you use the Demand forecasting Microsoft Azure Machine Learning, the calculation of internal model accuracy is based on the test data set. To specify the size of the test data set, set the **TEST\_SET\_SIZE\_PERCENT** parameter on the **Demand forecasting parameters** page. For example, if you set the value to **20**, the last 20 percent of the historical data will be used to calculate the internal model accuracy.
 
 
-Additional resources
---------
+## Additional resources
 
 [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
 
@@ -52,3 +49,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

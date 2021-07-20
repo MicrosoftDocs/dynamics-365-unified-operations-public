@@ -4,11 +4,9 @@
 title: Create POS permission groups
 description: This topic explains how to create a POS permission group. 
 author: scott-tucker
-manager: AnnBe 
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -49,3 +47,6 @@ This topic explains how to create a POS permission group. The demo data company 
 16. In the POS permission group field, enter or select a value. All Workers in Positions for this Job will use this POS permission group's settings unless the workers POS permissions have been overridden at their Position level.  
 17. Select **Save**. After your changes are saved you need to run the Staff distribution schedule to push the changes to channels.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

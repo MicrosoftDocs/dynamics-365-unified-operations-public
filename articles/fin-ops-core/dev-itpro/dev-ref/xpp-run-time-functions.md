@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: X++ runtime function resources
 description: This topic describes the X++ run-time functions.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 31461
-ms.assetid: 9cf83640-536c-4a99-8e0d-7a4e97d3c91f
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ runtime function resources
@@ -241,3 +225,6 @@ static void sleepExample(Args _arg)
     print "job slept for " + int2str(i/1000) + " seconds";
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

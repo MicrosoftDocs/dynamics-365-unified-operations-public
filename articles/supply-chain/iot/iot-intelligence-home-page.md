@@ -4,11 +4,9 @@
 title: IoT Intelligence home page
 description: This topic provides links to information about IoT Intelligence.
 author: robinarh
-manager: tfehr
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom:
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: rhaertle
@@ -50,7 +48,7 @@ IoT Intelligence supports the following scenarios:
 
 The following illustration shows the interaction of Azure IoT Hub, IoT Intelligence, and Supply Chain Management.
 
-![IoT Hub, IoT Intelligence, and Supply Chain Management](media/iot_intelligence.png)
+![IoT Hub, IoT Intelligence, and Supply Chain Management.](media/iot_intelligence.png)
 
 ## Setup
 
@@ -70,3 +68,6 @@ You can set up and configure IoT Intelligence without writing any code. Here are
 + [Uninstall the add-in](iot-lcs-setup.md#uninstall-addin)
 + [Modify a running IoT Intelligence scenario](iot-management.md#modify-a-running-iot-intelligence-scenario)
 + [Simulation options](iot-management.md#simulation-options)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

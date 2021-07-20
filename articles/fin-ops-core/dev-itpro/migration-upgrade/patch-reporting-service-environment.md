@@ -4,11 +4,9 @@
 title: Patch SQL Server Reporting Services (SSRS) in one-box environments
 description: Apply SSRS hotfixes to a one-box development environment. 
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -59,7 +57,7 @@ Complete the following procedure as a user in the administrator group for the ma
 -   This task will take 20 to 30 minutes to complete.
 
 ### Manually copy binaries to the SQL Server binary folder
-1.  Stop SQL Server Reporting Services. This can be done either from the **Services management** console or from the **Reporting Services Configuration Manager**. [![Configuration\_RSHotfix](./media/configuration_rshotfix.png)](./media/configuration_rshotfix.png)
+1.  Stop SQL Server Reporting Services. This can be done either from the **Services management** console or from the **Reporting Services Configuration Manager**. [![Configuration\_RSHotfix.](./media/configuration_rshotfix.png)](./media/configuration_rshotfix.png)
 2.  Find the SQL Server Reporting Services binary folder. This folder is usually located at C:\\Program Files\\Microsoft SQL Server\\MSRS11.MSSQLSERVER\\Reporting Services\\ReportServer\\bin.
 3.  If any of the following files are in the patch, copy them to the SQL Server Reporting Services bin folder.* *
 
@@ -107,3 +105,6 @@ An SSRS service account will be updated to use the local system. A new SSRS cata
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

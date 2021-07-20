@@ -4,11 +4,9 @@
 title: Create tax components
 description: This topic explains how to create tax components manually and by using predefined rules.
 author: yijialuan
-manager: Krstin Fender
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,7 +41,7 @@ A tax type is analogous to a tax regime. Sales tax, value-added tax (VAT), and G
 
 To create a tax type, on the **Tax document** page, select **Lines**, select **Add** \> **Tax document** \> **Tax type**, specify the name, description, and rounding rule, and then select **OK**.
 
-![Creating a tax type](media/GTE-Create-TaxType.png)
+![Creating a tax type.](media/GTE-Create-TaxType.png)
 
 ## Create a tax component
 
@@ -52,7 +50,7 @@ To create a tax component, select the tax type to create the tax component under
 > [!TIP]
 > Try to use the predefined rules if they meet your requirements. In this case, the system will help create tax measures, formulas, and posting profiles.
 
-![Creating a tax component](media/GTE-Create-TaxComponent.png)
+![Creating a tax component.](media/GTE-Create-TaxComponent.png)
 
 The following sections provide information about some of the fields in the **Tax component** dialog box.
 
@@ -82,3 +80,6 @@ If you set the **Reverse charge** option to **Yes**, the component supports reve
 If you set the **Non deductible** option to **Yes**, the component supports non-deductible behavior. The user can then specify the conditions where non-deductible behavior applies, and tax will be calculated and posted accordingly.
 
 After the tax component is created by using predefined rules, you should define the applicability rule for the tax component itself, the rate, reverse charge, and so on. For more information, see [Tax engine applicability](../general-ledger/tax-engine-applicability.md). You can always manually edit the tax measures, formulas, posting profiles, and so on.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Filters and Toolbar subpatterns
 description: This topic provides information about the Filters and Toolbar subpatterns, which show filters and actions inside panorama sections that host lists and charts.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the Filters and Toolbar subpatterns. These workspace-specific subpatterns have been developed to show filters and/or actions inside panorama sections that host lists and charts.
 
-Usage
------
+## Usage
 
 The Filters and Toolbar subpatterns are workspace-specific subpatterns that have been developed to show filters and/or actions inside panorama sections that host lists and charts. Fields in the filtering parts of these subpatterns should be limited to the following field types. All these field types have constrained inputs and can be applied to the query.
 
@@ -55,11 +52,11 @@ Two subpatterns are described in this article:
 ## Wireframe
 ### Filters and Toolbar - Inline
 
-[![Wireframe for filters and toolbar--inline](./media/filtertoolbarinlinewireframe.png)](./media/filtertoolbarinlinewireframe.png)
+[![Wireframe for filters and toolbar--inline.](./media/filtertoolbarinlinewireframe.png)](./media/filtertoolbarinlinewireframe.png)
 
 ### Filters and Toolbar - Stacked
 
-[![Wireframe for filter and toolbar--stacked](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
+[![Wireframe for filter and toolbar--stacked.](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
 
 ## Model
 ### Filters and Toolbar - Inline: High-level structure
@@ -113,13 +110,13 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **HcmWorkforceManagement**  &gt; **HcmOpenPositionsPart** (**All workspaces** &gt; **Workforce management**) 
 
-[![Example of filter and toolbar--inline](./media/filtertoolbarinline.png)](./media/filtertoolbarinline.png)
+[![Example of filter and toolbar--inline.](./media/filtertoolbarinline.png)](./media/filtertoolbarinline.png)
 
 ### Filters and Toolbar - Stacked
 
 Form: **HcmWorkforceManagement** &gt; **HcmWorkerOnLeaveListPart** (**All workspaces** &gt; **Workforce management**) 
 
-[![Example of filter and toolbar--stacked](./media/filtertoolbarstacked.png)](./media/filtertoolbarstacked.png)
+[![Example of filter and toolbar--stacked.](./media/filtertoolbarstacked.png)](./media/filtertoolbarstacked.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -134,3 +131,6 @@ Two factors contribute to this discrepancy:
 
 -   A UX guideline specifies a maximum of two filters in these sections (and one of those filters could be a QuickFilter). Therefore, the Stacked variant more closely complies with the guideline.
 -   The number of fields in the Stacked variant is limited for aesthetic reasons. The filter fields in this variant are intended to take up the full width of the list/chart that appears below them, and their width is therefore **SizeToAvailable**. When this variant is used above narrow lists, as it's intended to be used, that setting can cause very narrow filter fields when more than two filter fields are used. The Inline variant is intended to be used above wider charts/lists. Therefore, the original pattern definition allowed for an arbitrary number of fields. Nevertheless, we do plan to address this discrepancy in the number of allowed filter fields between the two variations in the future.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

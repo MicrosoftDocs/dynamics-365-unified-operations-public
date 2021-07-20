@@ -4,11 +4,9 @@
 title: Set up sales tax codes
 description: This topic explains how to set up sales tax codes in Dynamics 365 Finance. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -48,3 +46,6 @@ This task uses the USMF demo company.
 12. Close the page.
 13. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

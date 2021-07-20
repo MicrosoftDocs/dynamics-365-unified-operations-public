@@ -4,11 +4,9 @@
 title: Modify an existing site page
 description: This topic describes how to modify an existing site page in Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,12 +28,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Modify an existing site page
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to modify an existing site page in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 When you must modify a page, the first step is to open it in the page editor. Go to the site that contains your page, and then, in the list of pages, find the page that you want. If you can't find the page, you can use the authoring tool's rich search functionality. Either type the exact page name, or type the first few letters of it and then an asterisk (\*). A filtered list of pages appears. You can use this list to find the page that you want. After you find the correct page, select the page name to open the page in the page editor.
 
@@ -93,3 +88,6 @@ The following example shows how to modify the home page by changing the video th
 [Verify page content accessibility](verify-accessibility.md)
 
 [Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

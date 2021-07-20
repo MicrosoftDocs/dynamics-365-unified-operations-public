@@ -4,11 +4,9 @@
 title: Set up depreciation (Russia)
 description: This topic explains how to set up depreciation for Russian fixed assets.
 author: anasyash
-manager: AnnBe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -131,3 +129,6 @@ If a fixed asset is registered after it's put into operation, depreciation is ca
 
 - [Depreciation methods (Russia)](rus-depreciation-methods.md)
 - [Calculate depreciation for Russia](rus-depreciation-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

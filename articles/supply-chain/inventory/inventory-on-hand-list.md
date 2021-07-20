@@ -4,11 +4,9 @@
 title: Inventory on-hand list
 description: This topic describes how to use the On-hand list page to inspect on-hand inventory details. It shows a few of the ways that the various filtering and sorting options work together, and how those options can sometimes produce unexpected results when they are combined.
 author: sherry-zheng
-manager: tfehr
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -149,3 +147,6 @@ Here is the resulting output.
 | IA0001 | 1 | 2 | 2 |
 
 Note that the settings in the **Filters** pane apply to the detailed (non-aggregated) inventory table that is shown at the beginning of this section. Therefore, the criterion **Available Physical** \| **less than or equal** \| _1_ finds two rows from that table (the first and third rows, each of which shows an **Available Physical** value of _1_). However, in this scenario, the **On-hand list** page isn't set up to show the **Warehouse** dimension. Therefore, it aggregates the two original rows into a single resulting row, because both rows have identical values in all the dimensions that are shown. This row appears to violate the filtering criterion, because the **Available Physical** value is shown as _2_. However, the result is correct, because the settings in the **Filters** pane apply to the source table, not to the aggregated table that is shown on the **On-hand list** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

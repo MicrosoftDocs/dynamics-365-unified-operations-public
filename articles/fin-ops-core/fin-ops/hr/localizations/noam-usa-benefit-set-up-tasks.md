@@ -2,13 +2,11 @@
 # required metadata
 
 title: Set up benefits
-description: This topic describes how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits.
+description: This topic describes how to set up benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits.
 author: andreabichsel
-manager: AnnBe
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -366,3 +364,6 @@ The next step is to set up payroll information for positions and workers. For mo
 [Set up payroll calculation frequencies](noam-usa-payroll-calculation-frequencies-tasks.md)
 
 [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

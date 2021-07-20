@@ -3,12 +3,10 @@
 
 title: Add dimensions to Excel templates
 description: This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
-author: robinarh
-manager: AnnBe
+author: RyanCCarlson2
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -19,11 +17,11 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 11314
+ms.custom: ["11314", "intro-internal"]
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rbrow
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -54,14 +52,14 @@ With the November 2016 release, modifying the **DimensionCombinationEntity** has
 1. In Microsoft Visual Studio, click **Dynamics 365 > Addins > Add financial dimensions for Odata.**
 2. Type the name of the Financial dimension in the **Dimension name** column. This should be the exact name of the financial dimension. Select the **Model** that has your extensions. It should be above the AppSuite layer. Click **Apply**. 
 
-    ![financial dimensions for odata](media/financial-dimensions-odata.png).
+    ![financial dimensions for odata.](media/financial-dimensions-odata.png).
 
 3. Compile the project, and then synchronize it with the database. 
 
     > [!NOTE] 
     > You must keep the extension name "DimensionIntegration" for the project to work properly.
 
-    ![Menu options to build and synchronize](media/8-300x260.png)
+    ![Menu options to build and synchronize.](media/8-300x260.png)
 
 4. Your customization is now completed. You can test it in SQL using the following statement.
 
@@ -76,7 +74,7 @@ To support interactions with dimensions as columns, for example, in the Microsof
 2. Navigate to DimensionCombinationEntity **(AOT** &gt; **Data Model** &gt; **Data Entities**). 
 3. Right-click on the entity and choose **Customize**. 
 
-    [![5](./media/5-300x187.png)](./media/5.png)
+    [![5.](./media/5-300x187.png)](./media/5.png)
 
 4. Open the designer for the entity that you want to modify, in this example **DimensionCombinationEntity**. 
 5. Create a new private static method that returns a str named **departmentValue**. 
@@ -113,12 +111,12 @@ To support interactions with dimensions as columns, for example, in the Microsof
    - Set the **DataEntityView Method** property to the method that you created earlier (for example, **departmentValue**).
    - Set the **Label** property to the dimension name **Department**.
 
-     [![6](./media/6-300x64.png)](./media/6.png)
+     [![6.](./media/6-300x64.png)](./media/6.png)
 
 8. Repeat steps 5-7 for each dimension that you want to add, changing the dimension name to the appropriate dimension. 
 9. Compile the project, and then synchronize it with the database. 
 
-    [![8](./media/8-300x260.png)](./media/8.png)
+    [![8.](./media/8-300x260.png)](./media/8.png)
 
 10. Your customization is now complete. You can test it in SQL using the following statement.
 
@@ -138,3 +136,6 @@ To support interactions with dimensions as columns, for example, in the Microsof
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Commission settlement on payments
 description: This topic provides information about commission settlement on payments.
 author: ilkond
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,7 +36,7 @@ In Italy, companies don't typically settle the commissions for their sales agent
 Before you can use the functionality for commission settlement on payments, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- The **Commission settlement on payments** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Commission settlement on payments** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="default-commission-settlement-period">Set up the default commission settlement method
 
@@ -48,13 +46,13 @@ Before you can use the functionality for commission settlement on payments, the 
     - **On invoice** – Commissions are charged during the invoice process.
     - **On payment** – Commissions are charged during the payment process.
 
-![Accounts receivable parameters](media/emea-ita-exil-commission-setup-parameters.PNG)
+![Accounts receivable parameters.](media/emea-ita-exil-commission-setup-parameters.PNG)
 
 ## Set up commission calculations
 
 You can set up the calculation of commissions for an **On payment** commission by going to **Sales and marketing** \> **Commissions** \> **Commission calculation**.
 
-![Commission calculation setup](media/emea-ita-exil-commission-%20calculation-setup.PNG)
+![Commission calculation setup.](media/emea-ita-exil-commission-%20calculation-setup.PNG)
 
 If the **Payment thresholds** option in the **On payment commissions** section is set to **Yes**, you can specify two limits (thresholds) for commission calculations:
 
@@ -89,13 +87,13 @@ After a sales order is created, a user can update the commission settlement in t
 2. Select and open a sales order.
 3. On the **Sales order details** page, in the **Header** view, on the **Setup** FastTab update the value of the **Commission settlement** field as you require.
 
-![Commission settlement on the sales order](media/emea-ita-exil-commission-sales-order.png)
+![Commission settlement on the sales order.](media/emea-ita-exil-commission-sales-order.png)
 
 By default, the value of the **Commission settlement** field is inherited from the **Accounts receivable parameters** page. For more information, see [Set up the default commission settlement method](#default-commission-settlement-period).
 
 You can also preview the sales commission calculation from a sales order for either open or invoiced orders. On the **Sales order details** page, on the **General** tab, select **Related information** \> **Commission preview**.
 
-![Preview commission transactions](media/emea-ita-exil-commission-preview.PNG)
+![Preview commission transactions.](media/emea-ita-exil-commission-preview.PNG)
 
 > [!NOTE]
 > A user can combine sales orders in a single invoice if all the sales orders for invoicing have the same **Commission settlement** value in the sales order header.
@@ -109,3 +107,6 @@ You can also view commission transactions on the **Invoice journal** page.
 
 > [!NOTE]
 > When you post the invoice, the system creates commission and voucher transactions. If the value in the **Commission settlement** field is **On invoice** in the sales order header, the system creates a **Settlement** record. If the value in the **Commission settlement** field is **On payment** in the sales order header, the **Settlement** record is created only after the invoice and a payment are settled.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

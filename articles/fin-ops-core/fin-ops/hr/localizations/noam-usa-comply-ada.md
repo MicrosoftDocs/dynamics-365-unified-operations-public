@@ -2,13 +2,11 @@
 # required metadata
 
 title: Comply with the Americans with Disabilities Act (ADA)
-description: This article describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA). This information applies only to legal entities doing business in the United States.
+description: This article describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA).
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,3 +55,6 @@ If you entered information about a position group, you can then copy that inform
 
 Accommodations represent changes to work environments or business operations that achieve equal employment opportunity for a person who has a disability. You can enter requests for special work environment accommodations that are made by employees and applicants with regard to one or more specific tasks that are required by a position. You can then evaluate whether the accommodation is reasonable or if it will impose unnecessary cost, and then either grant or deny the accommodation request. If you hire an applicant for whom you granted an accommodation, the person keeps the accommodation information after being hired. Before you can start working with accommodations, you must first create one or more accommodation types. This lets you sort accommodations by type to find a particular accommodation quickly.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

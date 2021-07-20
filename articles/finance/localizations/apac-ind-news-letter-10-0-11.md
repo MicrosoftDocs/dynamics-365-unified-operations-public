@@ -4,11 +4,9 @@
 title: What's new or changed for India GST in 10.0.11 (July 2020)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.11.
 author: prabhatb
-manager: Annbe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -47,7 +45,7 @@ Based on the amended GST law, the following sequence is required to be maintaine
 
 To set up the new settlement rule, go to **Tax** > **Setup** > **Sales tax hierarchies** > **View** > **Setoff rules for sales tax hierarchies**.  
 
-![Setoff rules for sales tax hierarchies page](media/GST-tax-settlement-new-rule-1-10-0-11.PNG )
+![Setoff rules for sales tax hierarchies page.](media/GST-tax-settlement-new-rule-1-10-0-11.PNG )
 
 A new tax settlement change has been incorporated in the tax settlement hierarchy. You can define the tax set off hierarchy for a tax component with any  tax settlement priority. Previously, each tax component recoverable amount was settled against the tax payable amount of its own tax component and then with other tax components. Going forward, you can define the set off priority of a tax component with any other tax component. For example, et up a settlement priority of the input tax credit for CGST against IGST first, and then with CGST. Similarly, SGST can be set off against IGST first, and then SGST.
 
@@ -109,3 +107,6 @@ The stock transfer transaction upload is provided through the data entity so tha
   charges are not automatically updating on the sales order line to include charge amount in the assessable value of goods.  
 -	Importing the **General journal** lines with tax using the data import/export feature seems successful, but when verifying
   the tax document there is no tax information for the imported **General journal** transactions.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

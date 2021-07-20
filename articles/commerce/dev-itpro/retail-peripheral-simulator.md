@@ -4,11 +4,9 @@
 title: Peripheral simulator for Commerce
 description: This topic describes the peripheral simulator tool that is provided with Dynamics 365 Commerce.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -537,3 +535,6 @@ For support if you're performing compatibility tests, and for other inquiries, s
 ## Additional resources
 
 [Peripherals](../retail-peripherals-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

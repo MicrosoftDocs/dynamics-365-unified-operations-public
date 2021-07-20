@@ -4,11 +4,9 @@
 title: Set up Azure resources for IoT Intelligence
 description: This topic explains how to create and configure the Microsoft Azure resources that you require for IoT Intelligence.
 author: robinarh
-manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -166,3 +164,6 @@ To save the secret for the Redis cache connection string, follow these steps.
 > Whenever you update one of the connection strings, you must also update the secret values.
 
 You've now finished provisioning the required Azure resources. The next step is to [install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

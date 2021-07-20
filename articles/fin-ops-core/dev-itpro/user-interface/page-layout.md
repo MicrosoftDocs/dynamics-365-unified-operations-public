@@ -4,11 +4,9 @@
 title: Page layout in the web client
 description: This topic discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 author: jasongre
-manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 
-Introduction
-------------
+## Introduction
 
 Layout is a design process that specifies how the controls on a page appear in the web client. Layout occurs within container controls. The following table lists the container controls.
 
@@ -225,10 +222,12 @@ When you set **ColumnsMode** to **Fill** to dynamically create columns, based on
 -    If you use **WidthMode**=**SizeToAvailable**, make sure that parent containers in the form have **WidthMode** set to **SizeToAvailable**, not **SizeToContent**. **SizeToAvailable** containers inside **SizeToContent** containers are overridden and become **SizeToContent** containers.
 
 
-Additional resources
---------
+## Additional resources
 
 [User interface development home page](user-interface-development-home-page.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

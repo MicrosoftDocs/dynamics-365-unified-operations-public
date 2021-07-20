@@ -4,11 +4,9 @@
 title: Cloud-powered search overview
 description: This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-manager: annbe
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,12 +27,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Cloud-powered search overview
 
-
 [!include [banner](includes/banner.md)]
 
 This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Product discoverability helps guarantee that customers can quickly and easily find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across all channels.
 
@@ -50,7 +45,7 @@ Search relevance and performance are key factors in the omnichannel experience, 
 
 The following illustration shows an example of typical browse and search functionality.
 
-![Search landing page](./media/SearchLanding.png)
+![Search landing page.](./media/SearchLanding.png)
 
 ## Faceted navigation and choice summary 
 
@@ -60,7 +55,7 @@ By using faceted navigation, you can configure different refiners for different 
 
 The following illustration shows an example where faceted navigation is used in a search.
 
-![Choice summary](./media/ChoiceSummary.png)
+![Choice summary.](./media/ChoiceSummary.png)
 
 ## Immersive autosuggest
 
@@ -70,7 +65,7 @@ Dynamics 365 Commerce also supports functionality for keyword matches in various
 
 The following illustration shows an example where immersive autosuggest is being used.
 
-![immersive autosuggest](./media/ImmersiveAutoSuggestUX.png)
+![immersive autosuggest.](./media/ImmersiveAutoSuggestUX.png)
 
 ## Sort
 
@@ -78,10 +73,13 @@ Enhanced sorting in Dynamics 365 Commerce lets customers sort, search, and brows
 
 >[!NOTE]
 >These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that under **Commerce Parameters > Configuration Parameters** there is an entry for "ProductSearch.UseAzureSearch set to 'true'". 
-![Configuration parameters for cloud-powered search](./media/CloudPoweredSearchConfigurationParameters.png)
+![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## Additional resources
 
 [Default category landing page and search results page overview](category-search-page-overview.md)
 
 [Manage SEO metadata](manage-seo-metadata.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

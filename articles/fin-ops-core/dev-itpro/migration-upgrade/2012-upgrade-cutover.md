@@ -4,11 +4,9 @@
 title: Upgrade from AX 2012 - Go live (Cutover)
 description: This topic explains the final cutover process from Dynamics AX 2012 to the Finance and Operations app running an upgraded version of your code and database.
 author: jorisdg
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ After you have successfully completed upgrade testing in a Standard or Premier A
 
 The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
 
-![Cutover process](./media/cutover_1.png)
+![Cutover process.](./media/cutover_1.png)
 
 > [!NOTE]
 > In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
@@ -68,3 +66,6 @@ Before you can perform an upgrade in the production environment the following pr
 - [Onboarding](../../fin-ops/imp-lifecycle/onboard.md)
 - [Submit service requests to the Dynamics Service Engineering team](../lifecycle-services/submit-request-dynamics-service-engineering-team.md).
 - [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

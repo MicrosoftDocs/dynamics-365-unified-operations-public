@@ -4,11 +4,9 @@
 title: Troubleshoot issues during initial setup
 description: This topic provides information that can help you fix issues that occur during the initial setup of dual-write integration.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,7 +46,7 @@ This topic provides troubleshooting information for dual-write integration betwe
 
 Errors on the **Setup link to Dataverse** page are usually caused by incomplete setup or permissions issues. Make sure that the whole health check passes on the **Setup link to Dataverse** page, as shown in the following illustration. You can't link dual-write unless the whole health check passes.
 
-![Successful health check](media/health_check.png)
+![Successful health check.](media/health_check.png)
 
 You must have Azure AD tenant admin credentials to link the Finance and Operations and Dataverse environments. After you link the environments, users can sign in by using their account credentials and update an existing table map.
 
@@ -77,13 +75,13 @@ To provide app consent, follow these steps.
 
 To ensure that dual-write works correctly, the companies that you select during configuration are created in the Dataverse environment. By default, these companies are read-only, and the **IsDualWriteEnable** property is set to **True**. In addition, the default owning business unit owner and team are created and include the company name. Before you enable the maps, verify that the default team owner is specified. To find the **Companies (CDM\_Company)** table, follow these steps.
 
-1. In the model-driven app in Dynamics 365, select the filter in the upper-right corner.
+1. In the customer engagement app, select the filter in the upper-right corner.
 2. In the drop-down list, select **Company**.
 3. Select **Run** to see the results.
 4. Select the company that was linked when you configured dual-write.
 5. Verify that the **Default owning team** column has a value. In the following illustration, the **Default owning team** column is set to **USMF Dual Write**.
 
-    ![Verifying the default owning team](media/default_owning_team.png)
+    ![Verifying the default owning team.](media/default_owning_team.png)
 
 ## Find the limit on the number of legal tables or companies that can be linked for dual-write
 
@@ -97,3 +95,6 @@ DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\]
 One or more errors occurred.*
 
 The current limit when you link the environments is approximately 40 legal tables. This error occurs if you try to enable maps, and more than 40 legal tables are linked between the environments.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

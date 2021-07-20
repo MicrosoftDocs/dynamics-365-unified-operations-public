@@ -4,11 +4,9 @@
 title: Design ER configurations to import data from external CSV files
 description: Use this procedure to design Electronic reporting configurations to import data in to a Finance and Operations app from an external file in CSV format.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -129,3 +127,6 @@ For testing purposes, execute the format mapping using the 1099entriescsv.csv fi
     * Review the output in XML format that represents the data that has been imported from the selected file and ported to the data model. Note that all 7 lines of the imported CSV file were processed. The containing fields' titles line 1 were skipped, 4 transactions were properly parsed, and 2 transactions were recognized as not valid.
 3. Close the page.
 4. Close the page.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

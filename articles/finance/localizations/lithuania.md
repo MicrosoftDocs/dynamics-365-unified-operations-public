@@ -4,11 +4,9 @@
 title: Lithuania overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Lithuania. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Lithuania
 # ms.search.industry: 
 ms.author: roschlom
@@ -38,3 +36,6 @@ This topic provides links to documentation resources for Lithuania.
 - [Invoice and packing slip numbering](emea-invoices-packing-slips-numbering.md)
 - [VAT statement details](emea-ltu-vat-statement-details.md)
 - [i.SAF reporting](emea-ltu-isaf.md)
+- [Standard Audit File for Tax (SAF-T)](emea-ltu-saf-t.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

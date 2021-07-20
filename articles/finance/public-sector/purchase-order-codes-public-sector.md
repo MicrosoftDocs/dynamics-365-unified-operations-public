@@ -4,11 +4,9 @@
 title: Purchase order codes in the public sector
 description: This topic provides information about the codes and special messages that can be used with confirming purchase orders.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,3 +47,6 @@ If you assign a confirming PO code to a purchase order on the **Unplanned purcha
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

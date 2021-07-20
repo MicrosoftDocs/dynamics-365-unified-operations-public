@@ -4,11 +4,9 @@
 title: General form guidelines
 description: This topic contains the guidelines that apply to all forms. This checklist must be used in addition to any pattern-specific guidelines.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
 
-Verification checklist
-----------------------
+## Verification checklist
 
 The verification checklist shows the steps for manually verifying that the form complies with the UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
@@ -66,7 +63,7 @@ The verification checklist shows the steps for manually verifying that the form 
 - No UX guidelines are violated when country/region codes are applied.
 - Two fields can share a single label. Group the fields into a group, and set the **FrameType** property of the group to **GroupedFieldsLabel**.
 
-  [![Example of two fields sharing a single label](./media/generalform1.jpg)](./media/generalform1.jpg)
+  [![Example of two fields sharing a single label.](./media/generalform1.jpg)](./media/generalform1.jpg)
 
 ## Other form guidelines
 -   Use a StaticText control instead of StringEdit for multi-line read-only text. StringEdit controls are semantically incorrect for informational text, because they can never be edited. Additionally, StringEdit controls typically have a border and different layout characteristics than StaticText controls, and these differences negatively affect the user experience.
@@ -136,7 +133,7 @@ Mandatory fields are fields that the user must supply values for to guarantee da
 ## FastTabs guidelines
 -   The fields in groups should flow across the FastTab. 
 
-    [![Example of fields flowing across FastTab](./media/generalform2.jpg)](./media/generalform2.jpg)
+    [![Example of fields flowing across FastTab.](./media/generalform2.jpg)](./media/generalform2.jpg)
 
 -   The content of the first FastTab should be fully visible without scrolling. FastTabs should never horizontally scroll when the fields are displayed.
 -   The first FastTab should contain the most important fields for this entity (the fields that will be edited most often).
@@ -147,7 +144,7 @@ Mandatory fields are fields that the user must supply values for to guarantee da
 -   If the FastTab contains a grid, it should follow the [Toolbar and List](toolbar-list-subpattern.md) subpattern guidelines.
 
 ## Radio button guidelines
--   Follow all [standard Microsoft guidelines for radio buttons.](https://docs.microsoft.com/windows/desktop/uxguide/ctrl-radio-buttons) Specifically, observe these guidelines:
+-   Follow all [standard Microsoft guidelines for radio buttons.](/windows/desktop/uxguide/ctrl-radio-buttons) Specifically, observe these guidelines:
     -   The radio button control is used to select one option from a set of mutually exclusive choices.
     -   There are between two and seven choices. If there are more than seven choices, use a combo box instead.
     -   If none of the options is a valid choice, there is another option to reflect this situation, such as **None** or **Does not apply**.
@@ -167,9 +164,9 @@ Mandatory fields are fields that the user must supply values for to guarantee da
 ## Check box and toggle guidelines
 Toggle buttons are typically used instead of traditional check boxes. 
 
-[![Image of a check box and a toggle](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
+[![Image of a check box and a toggle.](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
 
--   Follow all [standard Microsoft guidelines for check boxes.](https://docs.microsoft.com/windows/desktop/uxguide/ctrl-check-boxes ) Specifically, observe these guidelines:
+-   Follow all [standard Microsoft guidelines for check boxes.](/windows/desktop/uxguide/ctrl-check-boxes) Specifically, observe these guidelines:
     -   By default, use toggle buttons instead of check boxes in forms. The label must follow the Microsoft guidelines for check box labels.
         -   **Exceptions:**
             -   Use a check box when a large number of related options must be set in a group.
@@ -250,3 +247,6 @@ This section will have answers to frequently asked questions that are related t
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

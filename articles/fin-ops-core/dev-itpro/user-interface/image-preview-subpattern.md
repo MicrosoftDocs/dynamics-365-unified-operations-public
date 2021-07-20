@@ -4,11 +4,9 @@
 title: Image Preview subpattern
 description: This article provides information about the Image Preview form subpattern. This subpattern can be used for most images that appear within a form container. 
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the Image Preview form subpattern. This subpattern can be used for most images that appear within a form container, especially within a FastTab or Group. 
 
-Usage
------
+## Usage
 
 Image Preview can be used for most images that appear within a form container, especially within a FastTab or Group. This subpattern can be used in conjunction with the FieldsAndFieldGroup and FillText subpatterns to combine images and any associated fields. This subpattern isn't used for tiles or buttons, or for field status images.
 
@@ -49,7 +46,7 @@ Image Preview can be used for most images that appear within a form container, e
     -   Fill text
 
 ## Wireframe
-[![Wireframe of Image Preview](./media/imagepreview1.png)](./media/imagepreview1.png)
+[![Wireframe of Image Preview.](./media/imagepreview1.png)](./media/imagepreview1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -96,7 +93,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **RetailVisualProfile** **(Login)** 
 
-[![Example of Image Preview](./media/imagepreview2.png)](./media/imagepreview2.png)
+[![Example of Image Preview.](./media/imagepreview2.png)](./media/imagepreview2.png)
 
 ## Resources
 ### Typically used by patterns
@@ -118,4 +115,7 @@ None.
 
 ### AX 2012 content
 
-[![Example of Image Preview](./media/imagepreview3.png)](./media/imagepreview3.png)
+[![Example of Image Preview.](./media/imagepreview3.png)](./media/imagepreview3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

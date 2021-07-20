@@ -4,11 +4,9 @@
 title: Base64StringToContainer ER function
 description: This topic provides information about how the Base64StringToContainer Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -80,8 +78,11 @@ You define the following data sources in your model mapping:
 
 In this example, the **\#MediaAsBase64String** data source encodes the binary content of the current media attachment as text that represents a Base64 group of binary-to-text encoding schemes. The **\#BlobFomBase64** data source decodes the Base64 string and returns a binary value in BLOB format.
 
-![Sample data sources on the ER Model mapping designer page](./media/er-functions-container-base64stringtocontainer-1.png)
+![Sample data sources on the ER Model mapping designer page.](./media/er-functions-container-base64stringtocontainer-1.png)
 
 ## Additional resources
 
 [Container functions](er-functions-category-container.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

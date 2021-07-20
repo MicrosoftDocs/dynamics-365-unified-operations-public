@@ -5,11 +5,9 @@ title: Define GSTINs and reference number sequences
 description: This topic explains how to define Goods and Services Tax Identification Numbers (GSTINs) and reference number sequences for legal entity, warehouse, vendor, and customer masters. This task is part of the master data setup that is required to make the India localization solution for GST available.
 
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -77,7 +75,7 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 7. Save the record, and then select **Close**.
 8. On the **Tax information** FastTab, set the **GST composition scheme** option to **Yes** if a composition scheme is used to purchase from the dealer.
 
-    ![Composite dealer](media/Composite-Dealer_upd.png)
+    ![Composite dealer.](media/Composite-Dealer_upd.png)
 
 ## Define GSTINs for customers
 
@@ -92,4 +90,7 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 9. For customer sales through an e-Commerce operator, enter a value in the **Merchant ID** field, and select a value in the **Default E-Commerce operator** field.
 10. For sales with government companies or other agencies, in the **Customer type** field, select **Govt company or other agencies**.
 
-    ![Tax information FastTab](media/E-commerce-operator_upd.png)
+    ![Tax information FastTab.](media/E-commerce-operator_upd.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

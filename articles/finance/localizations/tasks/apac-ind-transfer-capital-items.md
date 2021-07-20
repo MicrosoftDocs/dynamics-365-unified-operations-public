@@ -4,11 +4,9 @@
 title: Transfer capital items to the fixed asset (India)
 description: This procedure walks you through transferring a capital item by issuing inventory items to the Fixed assets journal. 
 author: AdamTrukawka
-manager: AnnBe 
 ms.date: 12/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -64,3 +62,6 @@ This procedure walks you through transferring a capital item by issuing inventor
 17. In the Site field, enter or select a value.
 18. In the Warehouse field, enter or select a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

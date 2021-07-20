@@ -4,11 +4,9 @@
 title: Advanced ledger entries in the public sector
 description: Public-sector organizations can use advanced ledger entries to create, adjust, and reverse ledger entries. For example, advanced ledger entries can be used to reclassify expenditures if invoices are mistakenly posted to the wrong account or project.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Public-sector organizations can use advanced ledger entries to create, adjust, and reverse ledger entries. For example, advanced ledger entries can be used to reclassify expenditures if invoices are mistakenly posted to the wrong account or project.
 
-How do I set up advanced ledger entries?
-----------------------------------------
+## How do I set up advanced ledger entries?
 
 Verify that the **Advanced ledger entry** **License configuration** key is selected in the **License configuration** page. Advanced ledger entries require General ledger posting definitions. These posting definitions can be set up to generate multiple, balanced ledger entries based on the ledger account entered in the **Advanced ledger entries** page. For more information about posting definitions for advanced ledger entries, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
 
@@ -53,3 +50,6 @@ Create an advanced ledger entry, select the **Reversing entry** option, and ente
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

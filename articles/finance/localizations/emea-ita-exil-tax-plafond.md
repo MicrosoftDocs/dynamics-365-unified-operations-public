@@ -4,11 +4,9 @@
 title: Tax plafond
 description: This topic explains how to set up and work with tax plafond, which is a tax exemption process.
 author: ilkond
-manager: AnnBe
-ms.date: 04/20/2020
+ms.date: 02/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,7 +40,8 @@ This topic describes how to complete these tasks:
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **Tax plafond** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, turn on the **Tax plafond** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- There is a sales tax settlement period (**Tax** > **Indirect taxes** > **Sales tax** > **Sales tax settlement periods**) for the period in which you plan to create tax plafond and intent letters, and post tax documents with reference to intent letters.
 
 ## Set up parameters
 
@@ -56,7 +55,7 @@ This topic describes how to complete these tasks:
 
 3. On the **Intent letters - Telematic model** tab, in the **Intent letter model format mapping** field, specify the reference to the **Intent letter telematic model** configuration.
 
-    ![Intent letter model format mapping field](media/emea-ita-exil-plafond-model.jpg)
+    ![Intent letter model format mapping field.](media/emea-ita-exil-plafond-model.jpg)
 
     > [!NOTE]
     > The configuration must be imported by using Electronic reporting (ER). For more information about how to download ER configurations,
@@ -64,7 +63,7 @@ see [Download Electronic reporting configurations from Lifecycle Services](../..
 
 4. On the **Ledger and sale tax** tab, on the **Sales tax** FastTab, in the **Plafond** section, set the **Plafond tax group** and **Default plafond date** fields.
 
-    ![Fields in the Plafond section](media/emea-ita-exil-plafond-group.jpg)
+    ![Fields in the Plafond section.](media/emea-ita-exil-plafond-group.jpg)
 
 ### Set up General ledger parameters
 
@@ -76,9 +75,11 @@ see [Download Electronic reporting configurations from Lifecycle Services](../..
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 2. On the **General** FastTab, in the **Invoicing** section, set the **Affect intent letters** option to **Yes**.
 
-    ![Affect intent letters option](media/emea-ita-exil-intent-tax-setup.jpg)
+    ![Affect intent letters option.](media/emea-ita-exil-intent-tax-setup.jpg)
 
 ## Create tax plafond
+
+Before you start creating a new tax plafond, verify that there is a sales tax settlement period for the period in which you plan to create tax plafond and intent letters, and post tax documents with reference to the intent letters.
 
 To register a new tax plafond, follow these steps.
 
@@ -103,6 +104,8 @@ To register a new tax plafond, follow these steps.
 To review posted tax transactions for an existing tax plafond, on the **Tax plafond** page, on the Action Pane, select **Plafond transactions**.
 
 ## Create intent letters
+
+Before you start creating a new intent letter, verify that there is a sales tax settlement period for the period in which you plan to create tax plafond and intent letters, and post tax documents with reference to intent letters.
 
 To create a new intent letter for a vendor, follow these steps.
 
@@ -145,7 +148,7 @@ Intent letters that are created for vendors can be applied to purchase orders or
 
 To apply an intent letter to a purchase order or vendor invoice journal, select it in the **Intent letter number** field of the related purchase order or vendor invoice journal. The sales tax group that is specified in the **Plafond tax group** field on the **Accounts payable parameters** page will be automatically filled in for the purchase order or vendor invoice journal.
 
-![Intent letter number field for a purchase order](media/emea-ita-exil-plafond-PO.jpg)
+![Intent letter number field for a purchase order.](media/emea-ita-exil-plafond-PO.jpg)
 
 You can also review the intent letters for a specific vendor from vendor master data.
 
@@ -166,3 +169,6 @@ To generate the telematic model for an intent letter, follow these steps.
     > Intent letters that are already included in other models can't be selected.
 
 6. On the Action Pane, select **Export** to generate the **Intent letter telematic model** output file.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

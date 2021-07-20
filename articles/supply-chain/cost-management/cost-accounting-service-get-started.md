@@ -4,11 +4,9 @@
 title: Get started with the cost accounting service (private preview)
 description: This topic provides licensing details and installation instructions for the cost accounting service.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: aevengir
@@ -115,3 +113,6 @@ To set up the integration between the cost accounting service and Dynamics 365 S
 ## Related resources
 
 [Cost accounting service home page](cost-accounting-service-home.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

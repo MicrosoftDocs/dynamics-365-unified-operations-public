@@ -4,11 +4,9 @@
 title: Commitments in the public sector in France
 description: Commitments are budget control source documents used by public sector entities in France. They are used to reserve budgeted amounts so that an organization can explicitly track budget reservations for management and reporting throughout the expenditure cycle. 
 author: rschloma
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -76,10 +74,12 @@ Commitments must be closed manually.
 
 **Important**: When you select the commitments that you want to close, be sure that you don't select the commitments that you have already created for the new fiscal year. Closing a commitment line cannot be reversed. If you close a commitment line by mistake, you must create a new commitment to restore the budget reservation. To learn more about the year-end process, see [Year-end processing in the public sector](../public-sector/year-end-processing-public-sector.md).
 
-Additional resources
---------
+## Additional resources
 
 [Public sector accounting in France](emea-fra-public-sector-accounting.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

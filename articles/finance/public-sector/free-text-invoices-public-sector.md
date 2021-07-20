@@ -4,11 +4,9 @@
 title: Free text invoices in the public sector
 description: This topic describes the free text invoice functionality that is available for public sector as well as answers common questions about using billing classifications and billing codes with free text invoices.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the free text invoice functionality that is available for public sector as well as answers common questions about using billing classifications and billing codes with free text invoices.
 
-Do I have to select a billing classification for every free text invoice?
--------------------------------------------------------------------------
+## Do I have to select a billing classification for every free text invoice?
 
 Yes, when billing classifications are enabled, you have to enter a billing classification for every free text invoice. The billing classification controls which billing codes that you can enter on the invoice. It also governs payment terms and conditions, number sequences, and the processing of the invoice. To learn more about billing classifications, see [Billing classifications and billing codes in the public sector](billing-classifications-billing-codes-public-sector.md).
 
@@ -72,3 +69,6 @@ The interest code can be set on the billing code, the billing classification, or
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,14 +1,10 @@
 ---
-# required metadata
-
 title: Process automation framework development
 description: This topic provides an overview of development that uses the process automation framework.
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -72,3 +68,6 @@ Most of the UI customizations aren't supported for background processes. The **S
 | [Run processes](run-process.md)                     | Yes | Yes |
 | [Log results and messages](log-results.md)          | Yes | Yes |
 | [Customize the user interface](ui-customization.md) | No | See [Customize the user interface](ui-customization.md). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

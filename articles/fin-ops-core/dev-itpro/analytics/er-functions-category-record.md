@@ -4,11 +4,9 @@
 title: List of ER functions in the record category
 description: This topic provides information about the record functions that are supported in Electronic reporting (ER).
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -49,3 +47,6 @@ Electronic reporting (ER) record functions can be used to extract information fr
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Electronic reporting formula language](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

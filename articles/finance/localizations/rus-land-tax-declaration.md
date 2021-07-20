@@ -3,11 +3,9 @@
 title: Land tax declaration 
 description: This topic provides information about the land tax declaration for Russia.
 author: anasyash
-manager: AnnBe
 ms.date: 06/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,8 +56,7 @@ This topic explains how to perform the following tasks:
 5.  [Create and post land tax ledger
     transactions](#create-and-post-land-tax-ledger-transactions)
 
-Set up land tax
----------------
+## Set up land tax
 
 Here is an overview of the steps for setting up land tax:
 
@@ -392,8 +389,7 @@ registers, you should set up posting groups.
 2.  Make sure that the **Sales tax payable** field is set to the ledger account
     code that you entered for the ledger posting group in step 3.
 
-Create a land asset and set up parameters for land tax calculation
-------------------------------------------------------------------
+## Create a land asset and set up parameters for land tax calculation
 
 Here is an overview of the steps for creating a land asset and setting up
 parameters for land tax calculation:
@@ -561,8 +557,7 @@ changes, follow these steps to specify the new cadastral cost in each territory.
 >
 > When the line for the change in cadastral value is created, corresponding fields in the distribution record can no longer be edited. They show the actual values from the history record.
 
-Calculate land tax registers
-----------------------------
+## Calculate land tax registers
 
 After you've finished the setup, registered the acquisition of land assets, and
 set up all land asset parameters for land tax calculation, you must calculate
@@ -686,8 +681,7 @@ To create corrective registers, follow these steps.
 8.  Create tax register lines, and calculate and approve the tax registers as
     described in the previous procedure.
 
-Generate a land tax declaration
--------------------------------
+## Generate a land tax declaration
 
 ### Set up the system to generate a land tax declaration
 
@@ -704,7 +698,7 @@ Generate a land tax declaration
 
     -   Land tax advance calculation format 5.06
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 2.  You can upload Data management package settings to work with the assessed
     tax declaration. Follow these steps:
@@ -828,8 +822,7 @@ You must also manually upload the generated file to the special third-party
 software for data preview, data updates, and transfer of the land tax
 declaration files to the tax authorities through the communication channels.
 
-Create and post land tax ledger transactions
---------------------------------------------
+## Create and post land tax ledger transactions
 
 After you've calculated and approved tax registers, and generated a land tax
 declaration, you can create transactions for land tax accruals. Following these
@@ -848,3 +841,6 @@ steps.
     settings of Fixed assets parameters.
 
 6.  Validate and post the journal.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

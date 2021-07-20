@@ -4,11 +4,9 @@
 title: Set up alerts
 description: This topic explains how to set up alerts for batch jobs.
 author: hasaid
-manager: AnnBe
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -43,11 +41,11 @@ Follow these steps to set up alerts for batch enhanced forms.
 2. Select a batch job in the list, and then, on the Action Pane, select **Alerts**.
 3. In the **Batch job alerts** dialog box, configure the alerts, and then select **OK**.
 
-    ![Configure alerts](./media/Batch-alert-configure.png) 
+    ![Configure alerts.](./media/Batch-alert-configure.png) 
 
 4. Check the Action center for alert notifications.
 
-    ![Alert notification](./media/Batch-alert-notification.png)
+    ![Alert notification.](./media/Batch-alert-notification.png)
 
 ## Set up alerts for batch legacy forms
 
@@ -56,9 +54,12 @@ Follow these steps to set up alerts for batch legacy forms.
 1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 2. Select a batch job in the list, and then, on the Action Pane, on the **Batch job** tab, select **Alerts**.
 
-    ![Legacy form](./media/Batch-alert-legacy.png) 
+    ![Legacy form.](./media/Batch-alert-legacy.png) 
 
 3. In the **Batch job alerts** dialog box, configure the alerts, and then select **OK**.
 
 > [!NOTE] 
 > To receive email notifications, in the **Batch job alerts** dialog box, set the **Email** option to **Yes**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

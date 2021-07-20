@@ -4,11 +4,9 @@
 title: Define compensation process and calculate results
 description: Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,7 +14,6 @@ ms.technology:
 ms.search.form: HRMCompProcess, HRMCompProcessLine, HRMCompEvent, HRMCompEventEmpl, HcmCompensationWorkspace 
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,6 +25,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 
 # Define compensation process and calculate results
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans. Compensation processes can be run multiple times to perform "what-if" analysis, to verify all changes and settings are correct. This procedure will create a compensation process, run the process, and view the results. The demo data company used to create this procedure is USMF.
 
@@ -104,3 +103,6 @@ Compensation processes are used to determine new compensation amounts and awards
 10. Click Approved.
     * After the record has been approved it can be loaded to the employee's official compensation record. The new compensation will be effective as of the transaction date set on the compensation process.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Release product structures
 description: This topic explains how you can release complete product structures in addition to releasing products together with their engineering versions. In this way, you can ensure that engineering-relevant product data can easily be reused in different legal entities.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -81,8 +79,6 @@ For an example of how to accept a product, see [Review and accept the product be
 
 Not all operational companies need the same product data. In general, operational companies that manufacture engineering products require a BOM, whereas operational company that only sell engineering products don't require a BOM. You can use release policies to establish the parameters that are used for the release of products.
 
-For engineering products, the release policy is assigned in the engineering product category, and the field is mandatory. For standard products, the policy is assigned to the shared product, and the field is optional.
-
 For more information about engineering product categories, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
 During the release process, you can influence the settings.
@@ -111,6 +107,7 @@ Set the following fields on the **General** FastTab of a product release policy.
 | Field | Description |
 |---|---|
 | Product type | Select whether the policy applies to products of the *Item* or *Service* type. You can't change this setting after you save the record. |
+| Production type | This field appears only when you've enabled [formula change management](manage-formula-changes.md) in your system. Select the type of production that this release policy applies to:<ul><li>**Co-product** – Use this release policy to manage co-products. Co-products are produced during process manufacturing, and aren't versioned or engineering products. Release policies for co-products can help ensure that important settings, such as **Storage dimension group** and **Tracking dimension group**, are set up by using a Released product template before they are released to a company.</li><li>**By-product** – Use this release policy to manage by-products. By-products are produced during process manufacturing, and aren't versioned or engineering products. Release policies for by-products can help ensure that important settings, such as **Storage dimension group** and **Tracking dimension group**, are set up by using a Released product template before they are released to a company.</li><li>**None** – Use this policy to manage standard products that aren't versioned or engineering products, or co-products or by-products.</li><li>**Planning item** – Use this release policy to manage planning items that are produced by using process manufacturing. Planning items use formulas. They resemble formula items, but they are used to produce only co-products and by-products, not finished products.</li><li>**BOM** – Use this release policy to manage engineering products, which don't use formulas and typically (but not necessarily) include BOMs.</li><li>**Formula** – Use this release policy to manage finished items that are produced by using process manufacturing. These items will have a formula but not a BOM.</li></ul> |
 | Apply templates | Select one of the following options to specify whether and how product release templates should be applied when the policy is used:<ul><li>**Always** – A template released product must always be used for releases. If you select this option, use the **All products** FastTab to specify the template that is used for each company that you release to. If you don't specify a template for each company that is listed on the **All products** FastTab, you will receive an error when you try to save the policy.</li><li>**Optional** – If a template released product is specified for a company that is listed on the **All products** FastTab, that template will be used when you release to that company. Otherwise, no template will be used. If you select this option, you can save the policy without assigning templates to all companies. (No warning will be shown.)</li><li>**Never** – No template released product will be used for any companies that you release to, even if a template is specified for companies that are listed on **All products** FastTab. The template columns will be unavailable.</li></ul> |
 | Active | Use this option to help maintain your release policies. Set it to *Yes* for all release policies that you use. Set it to *No* to mark a release policy as inactive when it isn't used. Note that you can't inactivate a release policy that is assigned to an engineering product category, and you can delete only inactive release policies. |
 
@@ -163,3 +160,6 @@ This behavior applies only when a product is directly selected for release. Prod
 For example, product X is assigned to the *Design cabinets* product owner group. Product X is also part of the BOM of product Y, which is assigned to the *Design speakers* product owner group. If a user from the *Design speakers* product owner group releases product Y and its BOM, product X will be released together with product Y.
 
 For more information, see [Product owners](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

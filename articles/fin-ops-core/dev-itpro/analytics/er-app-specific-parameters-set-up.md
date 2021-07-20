@@ -4,11 +4,9 @@
 title: Set up the parameters of an ER format per legal entity
 description: This topic explains how you can set up the parameters of an Electronic reporting (ER) format per legal entity.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/29/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -56,7 +54,7 @@ To complete the examples in this topic, you must have access to Microsoft Dynami
     
     The following illustration shows the configurations that you must have when you've finished.
 
-    ![ER configurations page](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
+    ![ER configurations page.](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
 
 ## Set up parameters for the DEMF company
 
@@ -66,7 +64,7 @@ You can use the ER framework to set up application-specific parameters for an ER
 2.	In the configurations tree, select the **Format to learn how to lookup LE data** format.
 3.	On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 
-    ![ER application specific parameters page](./media/GER-AppSpecParms-LookupForm.PNG)
+    ![ER application specific parameters page.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     On the **Application specific parameters** page, you can configure the rules for the **Selector** data source of the **Format to learn how to lookup LE data** format.
     
@@ -82,14 +80,14 @@ You can use the ER framework to set up application-specific parameters for an ER
 
     The lookup presents the list of tax codes for selection. This list is returned by the **Model.Data.Tax** data source that has been configured in the base ER format. Because this data source contains the **Name** field, the name of each tax code appears in the lookup.
 
-    ![ER application specific parameters page](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![ER application specific parameters page.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.	Select the **VAT19** tax code.
 8.	In the **Lookup result** field of the new record, select the drop-down arrow to open the lookup. The lookup presents the list of values for the TaxationLevel format enumeration for selection.
 
     Note that, if German is selected as the preferred language of the user that you're signed in as, the labels of the values in the lookup will be in German, provided that they have been translated in the base ER format. Additionally, if the label of a lookup data source has been translated, that label will appear in the user's preferred language on the **Lookups** tab.
 
-    ![ER application specific parameters page](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![ER application specific parameters page.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.	Select the **Regular taxation** value.
 
@@ -127,7 +125,7 @@ You can use the ER framework to set up application-specific parameters for an ER
     
     By adding this last record, you define the following rule: Whenever the tax code that is passed as an argument doesn't satisfy any of the previous rules, the lookup data source will return **Other** as the requested taxation level.
 
-    ![ER application specific parameters page](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![ER application specific parameters page.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16.	In the **State** field, select **Completed**.
 
@@ -151,7 +149,7 @@ You can use the ER framework to set up application-specific parameters for an ER
 6.	Select the **InVAT7** tax code.
 7.	On the Action Pane, on the **Sales tax code** tab, in the **Inquiries** group, select **Posted sales tax** to view information about the tax value and applied tax rate per tax code.
 
-    ![Posted sales tax page](./media/GER-AppSpecParms-Statement.PNG)
+    ![Posted sales tax page.](./media/GER-AppSpecParms-Statement.PNG)
 
 8.	Close the Posted sales tax page.
 
@@ -167,7 +165,7 @@ You can use the ER framework to set up application-specific parameters for an ER
 
     The lookup now presents the list of tax codes for the **USMF** company tax for selection.
 
-    ![ER application specific parameters page](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![ER application specific parameters page.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.	Select the **EXEMPT** tax code.
 9.	In the **Lookup resul**t field of the new record, select the **No taxation** value.
@@ -177,7 +175,7 @@ You can use the ER framework to set up application-specific parameters for an ER
 13.	In the **State** field, select **Completed**.
 14.	Select **Save**.
 
-    ![ER application specific parameters page](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
+    ![ER application specific parameters page.](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
     
 15.	Close the **Application specific parameters** page.
 
@@ -232,13 +230,13 @@ In the preceding example, you have accessed application-specific parameters of a
 
 1.  Either reuse an existing **ERSolutionAppSpecificParametersDesigner** menu item, or implement your own **ERSolutionAppSpecificParametersDesigner** menu item.
 
-    ![Visual studio page](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Visual studio page.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Follow one of these steps:
 
     1.  Create a new menu item button, and link it to the corresponding record from the **ERSolutionTable** table by setting its **Data Source** property to **ERSolutionTable**.
     
-        ![Visual studio page](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Visual studio page.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Create a simple button, and override the **Clicked** method as shown in the following example.
     
@@ -265,3 +263,6 @@ In the preceding example, you have accessed application-specific parameters of a
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 
 [Configure ER formats to use parameters that are specified per legal entity](er-app-specific-parameters-configure-format.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Add a certification type to a vendor in the public sector
 description: You can create and assign to vendors any type of certification that they may hold. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -45,3 +43,6 @@ You can create and assign to vendors any type of certification that they may hol
     * Complete the details.   
 12. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

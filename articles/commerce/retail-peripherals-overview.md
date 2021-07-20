@@ -4,11 +4,9 @@
 title: Peripherals
 description: This topic explains the concepts that are related to Commerce peripherals. 
 author: rubencdelgado
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 268444
+ms.custom: ["268444", "intro-internal"]
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
@@ -125,7 +123,7 @@ To help guarantee that the largest range of devices can be used with Commerce, t
 -   **Control object** – The control object for a device class (such as line displays) provides the interface for the software program. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs). The CCOs are used to test the POS component of Commerce. Therefore, the testing helps guarantee that, if Commerce supports a device class through OPOS, many device types can be supported, provided that the manufacturer provides a service object that is built for OPOS. You don't have to explicitly test each device type.
 -   **Service object** – The service object provides communication between the control object (CCO) and the device. Typically, the service object for a device is provided by the device manufacturer. However, in some cases, you might have to download the service object from the manufacturer’s website. For example, a more recent service object might be available. To find the address of the manufacturer's website, see your hardware documentation.
 
-[![Control object and service object](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together. 
+[![Control object and service object.](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together. 
 
 > [!NOTE]
 > OPOS support doesn't guarantee support for all devices that have OPOS drivers. Commerce must first support that device type, or class, through OPOS. In addition, service objects might not always be up to date with the latest version of the CCOs. You should also be aware that, in general, the quality of service objects varies.
@@ -149,6 +147,9 @@ UWP, in the case of peripherals, is related to Windows support for Plug and Play
 
 Keyboard wedge devices send data to the computer as if that data were typed on a keyboard. Therefore, by default, the field that is active at the POS will receive the data that is scanned or swiped. In some cases, this behavior can cause the wrong type of data to be scanned into the wrong field. For example, a bar code might be scanned into a field that is intended for input of credit card data. In many cases, there is logic at the POS that determines whether the data that is scanned or swiped is a bar code or card swipe. Therefore, the data is handled correctly. However, when devices are set up as OPOS instead of keyboard wedge devices, there is more control over how the data from those devices can be consumed, because more is “known” about the device that the data originates from. For example, data from a bar code scanner is automatically recognized as a bar code, and the associated record in the database is found more easily and faster than if a generic string search were used, as in the case of keyboard wedge devices.
 
+> [!NOTE]
+> When keyboard wedge scanners are used in the POS, they must be programmed to send a carriage return, or **Enter** event, after the last scanned character. If this configuration isn't done, keyboard wedge scanners won't function properly. Consult documentation provided by your device manufacturer for details on how to append the carriage return event.  
+
 ### Native printer
 
 Native (or "Device" as the type is named in the hardware profile) printers can be configured to prompt the user to select a printer that is configured for the computer. When a printer of the **Device** type is configured, if Modern POS encounters a print command, the user is prompted to select a printer in a list. This behavior differs from the behavior for Windows drivers, because the **Windows** printer type in the hardware profile doesn't show a list of printers. Instead, it requires that a named printer be provided in the **Device name** field.
@@ -161,7 +162,7 @@ Network-addressable cash drawers, receipt printers, and payment terminals can be
 
 ### Dedicated
 
-Modern POS clients for Windows and Android include **Dedicated** or built-in hardware stations. Those clients can communicate directly with peripherals using business logic that is built into the applications. The Android application only supports network devices. For more information on peripheral support for the Android, visit the [Set up POS hybrid app on Android and iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp) article.
+Modern POS clients for Windows and Android include **Dedicated** or built-in hardware stations. Those clients can communicate directly with peripherals using business logic that is built into the applications. The Android application only supports network devices. For more information on peripheral support for the Android, visit the [Set up POS hybrid app on Android and iOS](./dev-itpro/hybridapp.md) article.
 
 To use the dedicated hardware station, assign a hardware profile to a register that will use the Modern POS for Windows or Android applications. Then create a hardware station of the **Dedicated** type for the store where the register will be used. Start the Modern POS in non-drawer mode and use the use the **Manage hardware stations** operation to turn on the hardware station capabilities, the dedicated hardware station will be active by default. Next, log out of the Modern POS, then log back in and open a shift and the peripherals configured in the hardware profile will be usable. 
 
@@ -202,7 +203,7 @@ For information, see [Configure, install and activate Modern POS (MPOS)](retail-
 
 ### Modern POS for Android and iOS setup and configuration
 
-For information, see [Set up POS hybrid app on Android and iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+For information, see [Set up POS hybrid app on Android and iOS](./dev-itpro/hybridapp.md).
 
 ### OPOS device setup and configuration
 
@@ -497,7 +498,7 @@ This configuration is the most typical configuration for traditional, fixed POS 
 
 ### Modern POS for Android with an IPC (built-in) hardware station
 
-**New for 10.0.8** - Epson network printers and cash drawers connected to those printers via DK port are now supported for the Modern POS fo Android app. For details, visit the [Set up POS hybrid app on Android and iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp) article.
+**New for 10.0.8** - Epson network printers and cash drawers connected to those printers via DK port are now supported for the Modern POS fo Android app. For details, visit the [Set up POS hybrid app on Android and iOS](./dev-itpro/hybridapp.md) article.
 
 ### All Modern POS clients that have a committed, shared IIS hardware station
 
@@ -617,6 +618,9 @@ The following peripherals were tested by using the IPC hardware station that is 
 | Star         | TSP650II | Custom    | Connected via network   |
 | Star         | mPOP     | OPOS      | Connected via Bluetooth |
 | HP           | F7M67AA  | OPOS      | Powered USB             |
+
+> [!NOTE]
+> The Star TSP 100 printer isn't supported for the built-in hardware station. The built-in hardware station uses a 64-bit process, which isn't compatible with existing Star TP 100 drivers. 
 
 #### Bar code scanner
 
@@ -833,9 +837,11 @@ The following peripherals were tested by using a shared IIS hardware station tog
     6.  After the DLL hosts have been closed, restart Modern POS.
 
 
-Additional resources
---------
+## Additional resources
 
 [Peripheral simulator for Commerce](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

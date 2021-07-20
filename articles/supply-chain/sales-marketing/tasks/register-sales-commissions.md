@@ -4,11 +4,9 @@
 title: Register sales commissions
 description: This topic explains how sales commissions are calculated and registered. 
 author: omulvad
-manager: tfehr 
 ms.date: 08/06/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -73,3 +71,6 @@ Take note of the customer and item numbers that you have chosen for the commissi
 3. Close the page.
 4. Select **Voucher**. You can review the voucher transactions for the commission amounts that have been posted to the predefined commission expense and commission payable accounts.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

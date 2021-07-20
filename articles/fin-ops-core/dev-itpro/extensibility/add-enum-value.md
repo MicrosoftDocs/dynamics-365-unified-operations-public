@@ -1,18 +1,12 @@
 ---
 
-# required metadata
-
 title: Add values to enums through extension
 description: This topic explains how to add new values to an enum by extending the enum.
 author: smithanataraj
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -35,7 +29,7 @@ ms.dyn365.ops.version: Platform update 9
 
 To add new values to an enum, you should extend the enum. Any enum that is marked as **Extensible** (**IsExtensible = true**) can be extended. You can find the extensibility information in the **Properties** window in Microsoft Visual Studio, as shown in the following illustration.
 
-![Extensible enum](media/AddEnum01.png)
+![Extensible enum.](media/AddEnum01.png)
 
 When enum values of extensible enums are synchronized, the integer values of the baseline enum are deterministic, whereas the integer values of the extension enum values are non-deterministic. The values are generated during synchronization. Therefore, you can't have logic that depends on the integer value of the enum values. Here are some examples:
 
@@ -58,10 +52,13 @@ There are two ways to extend an enum:
 
 + Create a project that has a model reference where you want the new enum extension. Right-click the enum to extend, and then select **Create extension**.
 
-    ![Create an extension enum (method 1)](media/AddEnum02.png)
+    ![Create an extension enum (method 1).](media/AddEnum02.png)
 
 + Right-click the enum to extend, and then select **Create extension in new project**. You're prompted to select the model that the extension enum should be created in.
 		
-    ![Create an extension enum (method 2)](media/AddEnum03.png)
+    ![Create an extension enum (method 2).](media/AddEnum03.png)
 		
 The enum extension is created in the selected model. You can add new enum values to this extension.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

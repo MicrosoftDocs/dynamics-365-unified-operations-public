@@ -4,11 +4,9 @@
 title: Upload and serve static files
 description: This topic describes how to upload a static file into Microsoft Dynamics 365 Commerce site builder, and how to create a custom URL and file name that can be used to request that file.
 author: StuHarg
-manager: annbe
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -108,3 +106,6 @@ To change the URL path, follow these steps.
 [Crop images](dam-crop-images.md)
 
 [Customize image focal points](dam-custom-focal-point.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

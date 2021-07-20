@@ -4,11 +4,9 @@
 title: Run the point of sale (POS) samples
 description: This topic explains how to run the POS samples.
 author: mugunthanm
-manager: AnnBe
 ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -112,3 +110,6 @@ There are several samples in the Retail SDK that demonstrate extensions. This to
     > [!Note] 
     > For cloud POS, use a clean solution in Visual Studio, and then rebuild the solution.
 8. Go to the product search screen or use the top search bar to search for a product. You should see custom columns in the grid and new app bar buttons.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Pre-extended columns in the channel database
 description: This topic explains how the pre-extended columns in the channel database are consumed for extensions.
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -38,7 +36,7 @@ Some columns in the channel database are *pre-extended*. In other words, the col
 Although fields in the channel database are often extended, column lengths for those fields aren't extensible. Therefore, out-of-box column lengths have been increased to support extension scenarios.
 
 > [!NOTE]
-> If you must extend a field that isn't already pre-extended, you must file an extension request in Lifecycle Services (LCS). For more information, see [Extensibility requests](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-requests).
+> If you must extend a field that isn't already pre-extended, you must file an extension request in Lifecycle Services (LCS). For more information, see [Extensibility requests](../../fin-ops-core/dev-itpro/extensibility/extensibility-requests.md).
 
 Although the fields are extended in the channel database, your extension must also extend the field in the Commerce Headquarters database by using the extended data type (EDT) extension model. Additionally, you must extend the corresponding point of sale (POS) or Commerce runtime (CRT) user interface (UI).
 
@@ -161,14 +159,22 @@ The following table lists the columns that are pre-extended.
 | LOGISTICSPOSTALADDRESS        | STREET                                                                        | nvarchar(400) | ValidateAddressLength |                                     |
 | LOGISTICSPOSTALADDRESS        | COUNTY                                                                        | nvarchar(60)  | ValidateAddressLength |                                     |
 | LOGISTICSADDRESSCITY          | COUNTYID                                                                      | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSCITY          | STATEID                                                                      | nvarchar(60)  |                       |                                     |
 | LOGISTICSADDRESSCOUNTY        | COUNTYID                                                                      | nvarchar(60)  |                       |                                     |
 | LOGISTICSADDRESSDISTRICT      | COUNTYID\_RU                                                                  | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSDISTRICT      | STATEID\_RU                                                                  | nvarchar(60)  |                       |                                     |
 | LOGISTICSADDRESSZIPCODE       | STREETNAME                                                                    | nvarchar(400) |                       |                                     |
 | LOGISTICSADDRESSZIPCODE       | COUNTY                                                                        | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSZIPCODE       | STATE                                                                        | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSZIPCODE       | ZIPCODE                                                                        | nvarchar(60)  |                       |                                     |
+| LOGISTICSADDRESSSTATE        | STATEID                                                                        | nvarchar(60)  |                       |                                     |
 | RETAILASYNCADDRESS            | STREET                                                                        | nvarchar(400) |                       |                                     |
 | RETAILASYNCADDRESS            | COUNTY                                                                        | nvarchar(60)  |                       |                                     |
 | RETAILASYNCCUSTOMER           | STREET                                                                        | nvarchar(400) |                       |                                     |
 | RETAILASYNCCUSTOMER           | COUNTY                                                                        | nvarchar(60)  |                       |                                     |
+| CUSTOMERTABLETYPE_V2           | FIRSTNAME                                                                        | nvarchar(100)  | ValidateCustomerNameLengthServiceRequest                     |                                     |
+| CUSTOMERTABLETYPE_V2          | MIDDLENAME                                                                        | nvarchar(100)  | ValidateCustomerNameLengthServiceRequest                       |                                     |
+| CUSTOMERTABLETYPE_V2           | LASTNAME                                                                        | nvarchar(100)  |  ValidateCustomerNameLengthServiceRequest                      |                                     |
 | RETAILFISCALDOCUMENT\_BR      | FEADDRESSSTREET                                                               | nvarchar(400) |                       |                                     |
 | RETAILFISCALDOCUMENT\_BR      | THIRDPARTYADDRESSSTREET                                                       | nvarchar(400) |                       |                                     |
 | RETAILTAXFILTERS              | COUNTYID                                                                      | nvarchar(60)  |                       |                                     |
@@ -177,6 +183,7 @@ The following table lists the columns that are pre-extended.
 | RETAILTRANSACTIONSALESTRANS   | INVENTBATCHID                                                                 | nvarchar(50)  |                       |                                     |
 | RETAILTRANSACTIONSALESTRANS   | INVENTSERIALID                                                                | nvarchar(50)  |                       |                                     |
 | RETAILTRANSACTIONSALESTRANS   | WAREHOUSELOCATION                                                             | nvarchar(60)  |                       |                                     |
+| RETAILDLVMODEADDRESSEXPLODED   | STATE                                                                        | nvarchar(60)  |                       |                                     |
 | INVENTDIM                     | INVENTBATCHID                                                                 | nvarchar(50)  |                       |                                     |
 | INVENTDIM                     | INVENTSERIALID                                                                | nvarchar(50)  |                       |                                     |
 | INVENTDIM                     | CONFIGID                                                                      | nvarchar(60)  |                       |                                     |
@@ -203,3 +210,6 @@ The following table lists the columns that are pre-extended.
 |                               | GIFTCARDINQUIRYPRINTHISTORY INT NULL DEFAULT(0)                               |               |                       |                                     |
 | RETAILINFOCODETABLE           | PRINTINPUTONFISCALRECEIPT \[int\] NULL DEFAULT (0) PRINTTEXTONFISCALRECEIPT \[nvarchar\] (50) NULL DEFAULT('') |               |                       |                                     |
 | RETAILINFORMATIONSUBCODETABLE | PRINTTEXTONFISCALRECEIPT \[nvarchar\](50) NULL DEFAULT('')                    |               |                       |                                     |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

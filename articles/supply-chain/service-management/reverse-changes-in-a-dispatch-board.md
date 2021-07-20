@@ -4,11 +4,9 @@
 title: Reverse changes in a dispatch board 
 description: This topic describes how to reverse unsaved modifications that you make in a dispatch board. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -55,3 +53,6 @@ Use the following steps to reverse unsaved changes in a dispatch board:
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

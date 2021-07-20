@@ -4,11 +4,9 @@
 title: Configure product filters for warehouse transactions
 description: This topic describes how to configure product filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and which items can be purchase from a particular vendor.
 author: Mirzaab
-manager: tfehr
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,11 +50,11 @@ Product filters provide up to 10 **Filter title** characteristics, which are enu
 1. In the **Filter title** field, select a value.
 1. In the **Filter code** field, enter a value.
 
-    ![Setting up a product filter](media/Product_Filters10.png "Setting up a product filter")
+    ![Setting up a product filter.](media/Product_Filters10.png "Setting up a product filter")
 
 1. In the **Description** field, enter a name for the code. For example, *Code 2* might represent vendors. You can then create a product filter for a specific vendor or group of vendors. For more information, see the [Setup vendor filter codes](#vendor-product-filters) section later in this topic.
 
-    ![Set of product filters](media/Product_Filters.png "Set of product filters")
+    ![Set of product filters.](media/Product_Filters.png "Set of product filters")
 
 ## Set up product filter groups
 
@@ -75,7 +73,7 @@ To set up filter groups, follow these steps.
 1. In the **Item group** field, select the item group that the product filter should apply to.
 1. In the **Code 1** through **Code 10** fields, select the filter codes to include in the group, as required.
 
-    ![Item group](media/ProdFilterGroup.png "Item group")
+    ![Item group.](media/ProdFilterGroup.png "Item group")
 
 > [!NOTE]
 > If you receive an error message when you close the page, a code setup might be missing. On the **Item groups** page, you can make the codes mandatory for an item group by selecting the **Assign filter code 1 for item group**, **Assign filter code 2 for item group**, and so on, check boxes.
@@ -94,7 +92,7 @@ To set up filter codes on item groups, follow these steps.
 
     To update a released product, open its **Released product details** page, and then, on the Action Pane, select **Edit**. The filters that are associated with codes then become available on the **Warehouse** FastTab.
 
-    ![Item groups](media/ItemGroup10.png "Item groups")
+    ![Item groups.](media/ItemGroup10.png "Item groups")
 
 1. In the **Item group filter** section, select the check boxes for the filters that must match for the filter group to be the default filter group for an item.
 
@@ -169,3 +167,6 @@ To set up vendor filter codes, follow these steps.
 ## See also
 
 [For more information see the blog post WMS-Warehouse Filter Codes](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Update onboarding guides in Dynamics 365 Talent - Onboard
 description: This topic explains how to update onboarding guides in Microsoft Dynamics 365 Talent - Onboard, and how to push changes to existing guides.
 author: andreabichsel
-manager:
 ms.date: 06/21/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-talent
 ms.technology:
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: anbichse
 # ms.tgt_pltfrm:
 # ms.custom:
 # ms.assetid:
@@ -43,7 +40,7 @@ If you must make changes to onboarding guides in Microsoft Dynamics 365 Talent: 
 2. Select the guide that you want to edit.
 3. Make all the desired changes, and then select the **Save** button (the disk symbol).
 
-    ![[Saving changes to an onboarding guide](./media/onboard-save.png)](./media/onboard-save.png)
+    ![[Saving changes to an onboarding guide.](./media/onboard-save.png)](./media/onboard-save.png)
 
 Onboard will automatically send the new hire an email that indicates what the changes are. For easy identification, a red **New** tag will appear next to each change.
 
@@ -54,6 +51,9 @@ Onboard will automatically send the new hire an email that indicates what the ch
 3. Make all the desired changes, and then select the **Save** button (the disk symbol).
 4. To push your changes to all the guides that are based on the template, select **Push these changes**.
 
-    ![[Pushing the changes in an onboarding template to all guides that were created from it](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
+    ![[Pushing the changes in an onboarding template to all guides that were created from it.](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 The changes will be visible to new hires who open the onboarding guides. However, Onboard won't send email alerts to new hires to let them know that their onboarding guide has changed. For easy identification, a red **New** tag will appear next to each change. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

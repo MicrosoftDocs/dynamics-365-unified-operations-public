@@ -4,11 +4,9 @@
 title: Trace the execution of ER formats to troubleshoot performance issues
 description: This topic provides information about how to use the performance trace feature in Electronic reporting (ER) to troubleshoot performance issues.
 author: NickSelin
-manager: AnnBe
-ms.date: 06/12/2019
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -55,23 +53,23 @@ You must also download and locally store the following files.
 
 | File                                  | Content                               |
 |---------------------------------------|---------------------------------------|
-| Performance trace model.version.1     | [Sample ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
-| Performance trace metadata.version.1  | [Sample ER metadata configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
-| Performance trace mapping.version.1.1 | [Sample ER model mapping configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Performance trace format.version.1.1  | [Sample ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
+| Performance trace model.version.1     | [Sample ER data model configuration](https://download.microsoft.com/download/0/a/a/0aa84e48-8040-4c46-b542-e3bf15c9b2ad/Performancetracemodelversion.1.xml)    |
+| Performance trace metadata.version.1  | [Sample ER metadata configuration](https://download.microsoft.com/download/a/9/3/a937e8c4-1f8a-43e4-83ee-7d599cf7d983/Performancetracemetadataversion.1.xml)      |
+| Performance trace mapping.version.1.1 | [Sample ER model mapping configuration](https://download.microsoft.com/download/7/7/3/77379bdc-7b22-4cfc-9b64-a9147599f931/Performancetracemappingversion1.1.xml) |
+| Performance trace format.version.1.1  | [Sample ER format configuration](https://download.microsoft.com/download/8/6/8/868ba581-5a06-459e-b173-fb00f038b37f/Performancetraceformatversion1.1.xml)       |
 
 ### Configure ER parameters
 
 Each ER performance trace that is generated in the application is stored as an attachment of the execution log record. The Document management (DM) framework is used to manage these attachments. You must configure ER parameters in advance, to specify the DM document type that should be used to attach performance traces. In the **Electronic reporting** workspace, select **Electronic reporting parameters**. Then, on the **Electronic reporting parameters** page, on the **Attachments** tab, in the **Others** field, select the DM document type to use for performance traces.
 
-![Electronic reporting parameters page](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
+![Electronic reporting parameters page.](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
 
 To be available in the **Others** lookup field, a DM document type must be configured in the following manner on the **Document types** page (**Organization administration \> Document management \> Document types**):
 
 - **Class:** Attach file
 - **Group:** File
 
-![Document types page](./media/GER-PerfTrace-DM-DocumentType.png)
+![Document types page.](./media/GER-PerfTrace-DM-DocumentType.png)
 
 > [!NOTE]
 > The selected document type must be available in every company of the current instance, because DM attachments are company-specific.
@@ -80,7 +78,7 @@ To be available in the **Others** lookup field, a DM document type must be confi
 
 ER performance traces that are generated will be imported into RCS for analysis by using the ER format designer and the ER mapping designer. Because ER performance traces are stored as attachments of the execution log record that is related to the ER format, you must configure RCS parameters in advance, to specify the DM document type that should be used to attach performance traces. In the instance of RCS that has been provisioned for your company, in the **Electronic reporting** workspace, select **Electronic reporting parameters**. Then, on the **Electronic reporting parameters** page, on the **Attachments** tab, in the **Others** field, select the DM document type to use for performance traces.
 
-![Electronic reporting parameters page in RCS](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
+![Electronic reporting parameters page in RCS.](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
 
 To be available in the **Others** lookup field, a DM document type must be configured in the following manner on the **Document types** page (**Organization administration \> Document management \> Document types**):
 
@@ -92,7 +90,7 @@ To be available in the **Others** lookup field, a DM document type must be confi
 Assume that you've started to design a new ER solution to generate a new report that presents vendor transactions. Currently, you can find the transactions for a selected vendor on the **Vendor transactions** page (go to **Account payable \> Vendors \> All vendors**, select a vendor, and then, on the Action Pane, on the **Vendor** tab, in the **Transactions** group, select **Transactions**). However, you want to have all vendor transaction at the same time in one electronic document in XML format. This solution will consist of several ER configurations that contain the required data model, metadata, model mapping, and format components.
 
 1. Sign in to the instance of RCS that has been provisioned for your company.
-2. In this tutorial, you will create and modify configurations for the **Litware, Inc.** sample company. Therefore, make sure that this configuration provider has been added to RCS and selected as active. For instructions, see the [Create configuration providers and mark them as active](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11) procedure.
+2. In this tutorial, you will create and modify configurations for the **Litware, Inc.** sample company. Therefore, make sure that this configuration provider has been added to RCS and selected as active. For instructions, see the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure.
 3. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
 4. On the **Configurations** page, import the ER configurations that you downloaded as a prerequisite into RCS, in the following order: data model, metadata, model mapping, format. For each configuration, follow these steps:
 
@@ -100,7 +98,7 @@ Assume that you've started to design a new ER solution to generate a new report 
     2. Select **Browse** to select the appropriate file for the required ER configuration in XML format.
     3. Select **OK**.
 
-    ![Configurations page in RCS](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
+    ![Configurations page in RCS.](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
 
 ## Run the ER solution to trace execution
 
@@ -109,7 +107,7 @@ Assume that you've finished designing the first version of the ER solution. You 
 ### <a id='import-configuration'></a>Import an ER configuration from RCS into Finance and Operations
 
 1. Sign in to your application instance.
-2. For this tutorial, you will import configurations from your RCS instance (where you design your ER components) into your instance (where you test and finally use them). Therefore, you must make sure that all the required artifacts have been prepared. For instructions, see the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations) procedure.
+2. For this tutorial, you will import configurations from your RCS instance (where you design your ER components) into your instance (where you test and finally use them). Therefore, you must make sure that all the required artifacts have been prepared. For instructions, see the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](rcs-download-configurations.md) procedure.
 3. Follow these steps to import the configurations from RCS into the application:
 
     1. In the **Electronic reporting** workspace, on the tile for the **Litware, Inc.** configuration provider, select **Repositories**.
@@ -117,7 +115,7 @@ Assume that you've finished designing the first version of the ER solution. You 
     3. On the **Configurations** FastTab, select the **Performance trace format** configuration.
     4. On the **Versions** FastTab, select version **1.1** of the selected configuration, and then select **Import**.
 
-    ![Configuration repository page](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
+    ![Configuration repository page.](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
 
 The corresponding versions of the data model and model mapping configurations are automatically imported as prerequisites for the imported ER format configuration.
 
@@ -127,12 +125,27 @@ The corresponding versions of the data model and model mapping configurations ar
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3. In the **User parameters** dialog box, in the **Execution tracing** section, follow these steps:
 
-    1. In the **Execution trace format** field, select **Debug trace format** to start to collect the details of ER format execution. When this value is selected, the performance trace will collect information about the time that is spent on the following actions:
+    1. In the **Execution trace format** field, specify the format of the generated performance trace that the execution details should be stored in for ER format and mapping elements:
 
-        - Running each data source in the model mapping that is called to get data
-        - Processing each format item to enter data in the output that is generated
+        - **Debug trace format** – Select this value if you plan to interactively run an ER format that has a short execution time. The collection of details about ER format execution is then started. When this value is selected, the performance trace collects information about the time that is spent on the following actions:
 
-        You use the **Execution trace format** field to specify the format of the generated performance trace that the execution details are stored in for ER format and mapping elements. By selecting **Debug trace format** as the value, you will be able to analyze the content of the trace in ER Operation designer, and see the ER format or mapping elements that are mentioned in the trace.
+            - Running each data source in the model mapping that is called to get data
+            - Processing each format item to enter data in the output that is generated
+
+            If you select the **Debug trace format** value, you can analyze the content of the trace in the ER Operation designer. There, you can view the ER format or mapping elements that are mentioned in the trace.
+
+        - **Aggregated trace format** – Select this value if you plan to run an ER format that has a long execution time in batch mode. The collection of the aggregated details about ER format execution is then started. When this value is selected, the performance trace collects information about the time that is spent on the following actions:
+
+            - Running each data source in the model mapping that is called to get data
+            - Running each data source in the format mapping that is called to get data
+            - Processing each format item to enter data in the output that is generated
+
+            The **Aggregated trace format** value is available in Microsoft Dynamics 365 Finance version 10.0.20 and later.
+
+            In the ER format designer and ER model mapping designer, you can view the total execution time for a single component. Additionally, the trace contains details about the execution, such as the number of executions, and the minimum and maximum time of a single execution.
+
+            > [!NOTE]
+            > This trace is collected based on the traced components path. Therefore, the statistics might be incorrect when a single parent component contains several unnamed child components, or when several child components have the same name.
 
     2. Set the following options to **Yes** to collect specific details of the execution of the ER model mapping and ER format components:
 
@@ -149,7 +162,7 @@ The corresponding versions of the data model and model mapping configurations ar
     > [!NOTE]
     > The parameters in the **User parameters** dialog box are specific to the user and the current company.
 
-    ![User parameters dialog box](./media/GER-PerfTrace-GER-UserParameters.png)
+    ![User parameters dialog box.](./media/GER-PerfTrace-GER-UserParameters.png)
 
 ### <a id='run-format'></a>Run the ER format
 
@@ -170,11 +183,11 @@ Performance traces are decoupled from the source ER format and can be serialized
 2. On the **Electronic reporting run logs** page, in the left pane, in the **Configuration name** field, select **Performance trace format** to find the log records that have been generated by the execution of the **Performance trace format** configuration.
 3. Select the **Attachments** button (the paper clip symbol) in the upper-right corner of the page, or press **Ctrl+Shift+A**.
 
-    ![Attachments button on the Electronic reporting run logs page](./media/GER-PerfTrace-GER-DebugLog.png)
+    ![Attachments button on the Electronic reporting run logs page.](./media/GER-PerfTrace-GER-DebugLog.png)
 
 4. On the **Attachments for Electronic reporting run logs** page, on the Action Pane, select **Open** to get the performance trace as a zip file and store it locally.
 
-    ![Attachments for Electronic reporting run logs](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
+    ![Attachments for Electronic reporting run logs.](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
 
 > [!NOTE]
 > The trace that is generated has a reference to the source ER report via a unique report identifier in **GUID** format only. The version numbering of the format isn't considered.
@@ -191,7 +204,7 @@ Notice that the association between the performance trace that has been generate
 6. Select **Browse** to select the zip file that you exported earlier.
 7. Select **OK**.
 
-    ![Performance trace result settings dialog box in RCS](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
+    ![Performance trace result settings dialog box in RCS.](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
 
 ### Use the performance trace for analysis in RCS – Format execution
 
@@ -202,7 +215,7 @@ Notice that the association between the performance trace that has been generate
     - The actual time that was spent entering data in the generated output by using the format item
     - The same time expressed as a percentage of the total time that was spent generating the whole output
 
-    ![Format designer page in RCS](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
+    ![Format designer page in RCS.](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
 
 2. Close **Format designer** page.
 
@@ -225,7 +238,7 @@ Notice that ER informs you that the current model mapping duplicates database re
 - One call is made to enter details of each transaction in the data model, based on configured bindings.
 - One call is made to enter the calculated number of transactions per vendor in the data model.
 
-![Message about duplicate database requests on the Model mapping designer page in RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
+![Message about duplicate database requests on the Model mapping designer page in RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
 
 The value **\[Q:530\]** indicates that the VendTrans table was called 530 times to return a record from that table to the VendTable/\<Relations/VendTrans.VendTable\_AccountNum data source. The value **\[530\]** indicates that the VendTable/\<Relations/VendTrans.VendTable\_AccountNum data source was called 530 times to return a record from that data source and enter the details from it in the data model.
 
@@ -233,7 +246,7 @@ We recommend that you use caching for the VendTable/\<Relations/VendTrans.VendTa
 
 It can also be useful to reduce the number of calls that are made to the LedgerTransTypeList data source. This data source is used to associate each value of the **LedgerTransType** enumeration with its label. By using this data source, you can find an appropriate label and enter it in the data model for each vendor transaction. The current number of calls to this data source (9,027) is quite high for 265 transactions.
 
-![Model mapping designer page in RCS, showing 9,027 calls to the data source](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
+![Model mapping designer page in RCS, showing 9,027 calls to the data source.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
 
 ## Improve the model mapping based on information from the execution trace
 
@@ -246,7 +259,7 @@ It can also be useful to reduce the number of calls that are made to the LedgerT
     3. Expand the **VendTable** item, expand the list of one-to-many relations for the VendTable data source (the **\<Relations** item), and select the **VendTrans.VendTable\_AccountNum** item.
     4. Select **Cache**.
 
-    ![Caching setup to help prevent duplicate calls](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
+    ![Caching setup to help prevent duplicate calls.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
 
 2. Follow these steps to bring the LedgerTransTypeList data source into the scope of the VendTable data source:
 
@@ -267,7 +280,7 @@ It can also be useful to reduce the number of calls that are made to the LedgerT
     3. Select the **VendTable.\$TransType** item.
     4. Select **Cache**.
 
-    ![Caching setup for the $TransType field](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
+    ![Caching setup for the $TransType field.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
 
 4. Follow these steps to change the **\$TransTypeRecord** field so that it starts to use the cached **\$TransType** field:
 
@@ -322,19 +335,19 @@ Repeat the steps in the [Use the performance trace for analysis in RCS – Model
 
 Notice that the adjustments that you made to the model mapping have eliminated duplicate queries to database. The number of calls to database tables and data sources for this model mapping has been also reduced. Therefore, the performance of the whole ER solution has improved.
 
-![Trace information for the VendTable data source on the Model mapping designer page in RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
+![Trace information for the VendTable data source on the Model mapping designer page in RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
 
 In the trace information, the value **\[12\]** for the VendTable data source indicates that this data source was called 12 times. The value **\[Q:6\]** indicates that six calls were translated to database calls to the VendTable table. The value **\[C:6\]** indicates that the records that were fetched from the database were cached, and six other calls were processed by using the cache.
 
 Notice that the number of calls to the LedgerTransTypeList data source has been reduced from 9,027 to 240.
 
-![Trace information for the LedgerTransTypeList data source on the Model mapping designer page in RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
+![Trace information for the LedgerTransTypeList data source on the Model mapping designer page in RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
 
 ## Review the execution trace in the application
 
 In addition to RCS, some versions might offer capabilities for an ER framework designer experience. These versions have an **Enable design mode** option that can be turned on. You can find this option on the **General** tab of the **Electronic reporting parameters** page, which you can open from the **Electronic reporting** workspace.
 
-![Enable design mode option on the Electronic reporting parameters page](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
+![Enable design mode option on the Electronic reporting parameters page.](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
 
 If you use one of these versions, you can analyze the details of generated performance traces directly in the application. You don't have to export them from the application and import them into RCS.
 
@@ -352,7 +365,7 @@ Repeat the steps in the [Run the ER format](#run-format) section earlier in this
 
 Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution.
 
-![Performance trace information in PerfView format](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Performance trace information in PerfView format.](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## Use external tools to review an execution trace that includes database queries
 
@@ -368,7 +381,7 @@ Because of improvements that have been made to the ER framework, the performance
     - Set the **Collect query statistics** option to **Yes**.
     - Set the **Trace query** option to **Yes**.
 
-    ![Execution tracing section, User parameters dialog box](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Execution tracing section, User parameters dialog box.](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### Run the ER format
 
@@ -376,9 +389,12 @@ Repeat the steps in the [Run the ER format](#run-format) section earlier in this
 
 Notice that the web browser offers a zip file for download. This file contains the performance trace in PerfView format. You can then use the PerfView performance analysis tool to analyze the details of ER format execution. This trace now includes the details of SQL database access during the execution of the ER format.
 
-![Trace information for the executed ER format in PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+![Trace information for the executed ER format in PerfView.](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
 
 ## Additional resources
 
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Improve performance of ER solutions by adding parameterized CALCULATED FIELD data sources](er-calculated-field-ds-performance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

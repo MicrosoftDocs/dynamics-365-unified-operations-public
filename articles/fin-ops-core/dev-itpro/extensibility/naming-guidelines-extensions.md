@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Naming guidelines for extensions
 description: This topic describes the naming guidelines for extensions. Artifacts must have a name that is unique across all models at installation time. 
 author: LarsBlaaberg
-manager: AnnBe
 ms.date: 07/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -75,3 +69,6 @@ Variables and methods added in extension classes must have a name that is unique
  
 + Avoid generic names, because the risk is high that multiple extensions could be using the same term or that the base functionality would be enhanced with an identical name in a future release. Some example of names likely to collide are **Approver**, **Delay**, **Group**, **Lookup**, and **Process**.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

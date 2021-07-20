@@ -4,11 +4,9 @@
 title: Task recorder resources
 description: This topic describes how to use Task recorder to record business processes.
 author: jasongre
-manager: AnnBe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -58,7 +56,7 @@ Task recorder can record user actions in the client with exact fidelity, because
 Task recorder is included with every Finance and Operations app, and lets users begin to record business processes immediately after they open the client for the first time.
 
 > [!IMPORTANT]
-> The **Task guides** tab is currently not available in Commerce or Human Resources. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([https://docs.microsoft.com/dynamics365/](../../fin-ops/index.md)) for both Commerce and Human Resources.
+> The **Task guides** tab is currently not available in Commerce or Human Resources. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available at [Finance and Operations application documentation](../../fin-ops/index.md) for both Commerce and Human Resources.
 
 ## Start a new recording
 The following steps show how to use Task recorder to start a new recording.
@@ -116,7 +114,7 @@ After you've started your recording, you can perform your business process just 
 
 **Stop** is used to end the recording session. Before you click **Stop**, you should make sure that the recording is completed, because this action isn't reversible. When you click **Stop**, you're taken to the download options screen.
 
-[![Stop control](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
+[![Stop control.](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
 
 ### Start/End sub-task
 
@@ -147,7 +145,7 @@ There are various options for enriching a step in a recording. For example, you 
 
 The **Step instruction** is the primary text that is displayed for this step in the task guide. There are usually 2-3 alternative options for step instructions, and they appear in the following order when editing the annotation.
 
-[![This image shows the annotation options for changing the Step instruction](./media/taskrecorderguide-annotationlabels.png)](./media/taskrecorderguide-annotationlabels.png) 
+[![This image shows the annotation options for changing the Step instruction.](./media/taskrecorderguide-annotationlabels.png)](./media/taskrecorderguide-annotationlabels.png) 
 
 This image shows the annotation options for changing a step.
 - **Preferred value instruction** This type of instruction will direct the user to enter the same data that was used when the step was recorded. *Example*: In the First name field, enter 'John'.
@@ -217,7 +215,7 @@ You can specify where an info step should appear in the task guide. The info ste
 ## Options after a recording is completed
 After you click **Stop** to end your recording session, several options are shown so that you can save the files that are related to the completed recording. Select **Save to this PC**, and save the task recording package to your desktop. You will use this file later.
 
-[![Options for downloading or saving a recording after recording has ended](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
+[![Options for downloading or saving a recording after recording has ended.](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
 
 ### Save to this PC
 
@@ -280,11 +278,11 @@ You can add a step anywhere in a task recording without playing back or re-recor
  
     In order for task recorder to insert a step, you must have the correct page open. The correct page is the page on which the new step occurs. Task recorder has a mechanism that determines what the active page is, and will disable the functionality if the correct page isn't open. 
 
-    [![Insert step feature](./media/taskguide1.png)](./media/taskguide1.png)
+    [![Insert step feature.](./media/taskguide1.png)](./media/taskguide1.png)
 
     When you are on the correct page, **Insert step** becomes available.
 
-    [![Insert step available on correct page](./media/taskguide2-231x300.png)](./media/taskguide2.png)
+    [![Insert step available on correct page.](./media/taskguide2-231x300.png)](./media/taskguide2.png)
 
 2.  Click **Insert step**.
 
@@ -304,7 +302,7 @@ You can move steps under a sub-task without playing back or re-recording the ent
 
 2.  Click **Move step after**. To access this command, you might have to select the ellipsis (**...**) button.
 
-    [![Example of Move step after](./media/taskguide3.png)](./media/taskguide3.png)
+    [![Example of Move step after.](./media/taskguide3.png)](./media/taskguide3.png)
 
 3.  Select the step or sub-task step that you want to move the step or sub-task step after. Task recorder will move the step.
 
@@ -318,7 +316,7 @@ You can move steps under a sub-task without playing back or re-recording the ent
 
 You can adjust values of the **Recording name** and **Recording description** fields. If you want to see more steps in the Task recorder editing pane, you can also collapse the section that shows the recording name and description.
 
-[![Expand and collapse recording name and description](./media/taskguide4-300x252.png)](./media/taskguide4.png)
+[![Expand and collapse recording name and description.](./media/taskguide4-300x252.png)](./media/taskguide4.png)
 
 ## Playing a task guide
 
@@ -439,7 +437,7 @@ After a business process recording has been completed by using Task recorder, a 
 5.  If you're creating a new project, select the model for the project. The generated X++ test will be put in this model. For the generated test to be successfully built, the model must have references to the **TestEssentials** model.
 6.  Click **Import**.
 
-    [![Import task recording dialog box](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
+    [![Import task recording dialog box.](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
 
 7.  In the **New Project** dialog box, provide a name for the project.
 8.  After the project is created, the user can open and inspect the generated code.
@@ -475,3 +473,6 @@ After a business process recording has been completed by using Task recorder, a 
   -   Does not support displaying a "generic value" during the task guide. Currently displays the value that was used during recording.
 - Filter pane, which is the filter that pops out from the left side
   -   The task guide does not point to the individual elements within the Filter pane that need to be clicked on.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

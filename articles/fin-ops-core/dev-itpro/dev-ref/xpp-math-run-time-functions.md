@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: X++ math runtime functions
 description: This topic describes the math run-time functions.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 31361
-ms.assetid: 8982f158-f638-46d7-b3f7-ba8cfd356d57
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ math runtime functions
@@ -37,8 +21,7 @@ This topic describes the math run-time functions.
 
 These functions perform mathematical calculations.
 
-abs
----
+## abs
 
 Retrieves the absolute value of a real number. Examples:
 
@@ -230,8 +213,8 @@ real corrFlagSet(real real, int arg)
 
 **0** if the flag is now off; a non-zero value if the flag is now on.
 
-cos
----
+## cos
+
 
 Retrieves the cosine of a real number.
 
@@ -339,8 +322,7 @@ The value of the *decimals* parameter can be positive, 0 (zero), or negative.
 -   **decRound(12345.6789,1)** returns the value **12345.70**.
 -   **decRound(12345.6789,-1)** returns the value **12350.00**.
 
-exp
----
+## exp
 
 Retrieves the natural antilogarithm of the specified real number.
 
@@ -484,8 +466,7 @@ The natural logarithm of the specified number.
 
 **logN(45)** returns the value **3.81**.
 
-max
----
+## max
 
 Retrieves the larger of two specified values.
 
@@ -509,8 +490,7 @@ The larger of the two values that are specified by the *object1* and *object2* p
 -   **max(12.0,12.1)** returns the value **12.1**.
 -   **max(2,33)** returns the value **33**.
 
-min
----
+## min
 
 Retrieves the smaller of two specified values.
 
@@ -594,7 +574,7 @@ The number that is a multiple of the value specified by the *\_decimals* paramet
 
 ### Remarks
 
-To round a real number to a specified number of decimal places, use the [decround function](https://msdn.microsoft.com/library/03bd2ea2-414e-43e0-ba05-f5db1a943b91(AX.60).aspx).
+To round a real number to a specified number of decimal places, use the [decround function](/previous-versions/dynamics/ax-2012/reference/aa499511(v=ax.60)).
 
 ### Remarks
 
@@ -603,8 +583,7 @@ To round a real number to a specified number of decimal places, use the [decroun
 -   **round(23.9,5.0)** returns the value **25.00**.
 -   **round(26.1,5.0)** returns the value **25.00**.
 
-sin
----
+## sin
 
 Retrieves the sine of a real number.
 
@@ -693,8 +672,7 @@ static void sinhExample(Args _arg)
 }
 ```
 
-tan
----
+## tan
 
 Retrieves the tangent of a real number.
 
@@ -807,3 +785,6 @@ static void truncExample(Args _arg)
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

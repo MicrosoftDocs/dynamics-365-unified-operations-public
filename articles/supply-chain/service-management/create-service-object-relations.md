@@ -4,11 +4,9 @@
 title: Create service object relations   
 description: This topic describes how to create service object relations for a service agreement and a service order.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -75,3 +73,6 @@ Use the following steps to create a service object relation for a service order:
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

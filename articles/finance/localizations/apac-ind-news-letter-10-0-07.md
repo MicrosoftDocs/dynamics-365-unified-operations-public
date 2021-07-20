@@ -4,11 +4,9 @@
 title: What's new or changed for India GST in 10.0.07 (January 2020)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.07.
 author: prabhatb
-manager: Annbe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,12 +38,12 @@ You can create a new component with pre-defined rules that support GST behaviors
 reverse charge for purchases and sales. With this feature, you do not need to create a tax component, which includes adding tax measures, configuring the tax calculation formula, and configuring a tax posting profile. 
 
 You can enable the feature in **Feature management** workspace. The feature name is **Enable creating tax component with pre-defined rules**.
- ![Feature management, Enable creating tax component with pre-defined rules](media/GST-tax-component-pre-defined-rule-1-10-0-07.png )
+ ![Feature management, Enable creating tax component with pre-defined rules.](media/GST-tax-component-pre-defined-rule-1-10-0-07.png )
  
  With the feature enabled, there are several controls enabled in the dialog box. You can use them to control the behavior 
  of the tax component. For more information, see [Create tax components](tax-engine-create-tax-component.md).
  
- ![Tax component pane](media/GST-Tax-component-pre-defined-2-10-0-07.PNG )
+ ![Tax component pane.](media/GST-Tax-component-pre-defined-2-10-0-07.PNG )
  
 ## Critical fixes 
 
@@ -68,3 +66,6 @@ You can enable the feature in **Feature management** workspace. The feature name
 -	When you change the selected vendor on a purchase requisition, vendor tax information is not updated on the **Tax information** page.
 -	Incorrect Free on board (FOB) and Cost, insurance, and freight (CIF) calculation on exported sales orders. 
 -	Assessable value is not updated correctly on the **Vendor invoice** page when posted changes are incorporated in the **Excel import** file and published to Dynamics 365 Finance.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

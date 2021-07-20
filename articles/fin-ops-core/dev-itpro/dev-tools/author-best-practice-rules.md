@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Write best practice rules
 description: This topic describes how you can author best practice rules in C#, for both metadata and X++ code. 
 author: pvillads
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 48071
 ms.assetid: 4fe671c4-c556-4942-8570-307cf68ae0a7
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Write best practice rules
@@ -376,3 +361,6 @@ As described above the best practice rules are often run as part of the build of
 - Run BP on all items in the model (and only for this one model in the module): `xppbp -module:FleetManagement -model:FleetManagement –all`
 - Run BP on all items in all models in the module: `xppbp -module:FleetManagement –all`
 - Write the output to log files: `xppbp -module:FleetManagement -all -xmllog=Log.xml -log=Log.txt`
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

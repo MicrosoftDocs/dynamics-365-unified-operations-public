@@ -4,11 +4,9 @@
 title: Integrate the POS with a new hardware device
 description: This topic explains how to integrate the point of sale (POS) with a new hardware device.
 author: mugunthanm
-manager: AnnBe
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -98,7 +96,7 @@ The following table describes the parameters.
 
 The follow diagram shows the flow between the POS, Hardware station, and the hardware device.
 
-![Flow diagram](./media/POSDeviceExtension.png)
+![Flow diagram.](./media/POSDeviceExtension.png)
 
 ## Hardware station extension
 
@@ -265,3 +263,6 @@ let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<Hardw
         "Sample", "Custom parameters or custom object");
 return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

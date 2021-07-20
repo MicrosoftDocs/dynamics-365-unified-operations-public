@@ -4,11 +4,9 @@
 title: ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1 - Design format)
 description: This topic describes how to configure an Electronic reporting (ER) format to generate reports as OPENXML worksheets (Excel) files. (Part 1)
 author: NickSelin
-manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 04/23/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -39,7 +37,7 @@ To complete these steps, you must first complete these three task guides:
 
 "ER Use financial dimensions as a data source (Part 2: Model mapping)"
 
-You must also download and save a local copy of the template with a sample report found here, [Sample Financial Dimensions Web Service Report](https://go.microsoft.com/fwlink/?linkid=862266).
+You must also download and save a local copy of the template with a sample report found here, [Sample Financial Dimensions Web Service Report](https://download.microsoft.com/download/3/1/3/313e2090-bc0a-421f-bf96-c58da9bc0dea/SampleFinDimWsReport.xlsx).
 
 This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 
@@ -151,3 +149,6 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 49. Click Save.
 50. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

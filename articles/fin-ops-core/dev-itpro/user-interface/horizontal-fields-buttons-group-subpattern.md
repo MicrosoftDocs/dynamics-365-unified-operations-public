@@ -4,11 +4,9 @@
 title: Horizontal Fields and Buttons Group subpattern
 description: This article provides information about the Horizontal Fields and Buttons Group subpattern, which is used when actions must be defined for an individual field.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the Horizontal Fields and Buttons Group form subpattern. This subpattern is used when actions must be defined for an individual field on a form.
 
-Usage
------
+## Usage
 
 This subpattern is used when actions must be defined for an individual field on a form. The buttons are laid out just to the right of the field to visually associate the actions with the field. The buttons should display only an icon (no text). Actions that are associated with a section or an entire form should be placed in a Toolbar or ActionPane above that section or form.
 
@@ -46,7 +43,7 @@ This subpattern is used when actions must be defined for an individual field on 
 -   1–3 buttons
 
 ## Wireframe
-[![Wireframe for Horizontal Fields and Buttons Group form subpattern](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)
+[![Wireframe for Horizontal Fields and Buttons Group form subpattern.](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -88,7 +85,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **SalesTable (GroupHeaderAddressHeaderOverview)** 
 
-[![Example of form](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
+[![Example of form.](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
 
 ## Resources
 ### Typically used by patterns
@@ -110,4 +107,7 @@ This section will have answers to frequently asked questions that are related to
 ### Dynamics AX 2012 content
 **SalesTable** 
 
-[![Example of form](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
+[![Example of form.](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

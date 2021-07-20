@@ -4,11 +4,9 @@
 title: Payment methods
 description: Each payment type that a retailer accepts must be configured when the system is set up. This article describes the payment types that you can set up and describes the process for setting them up.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 06/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -53,3 +51,6 @@ To set up payment methods, you must complete the following tasks.
 2. Create organization-wide card types and card numbers. If credit cards or debit cards are accepted, you must create one payment method for cards, and then create the organization-wide card types and card numbers.
 3. Set up store payment method. Associate payment methods with each store, and then enter the store-specific settings for each payment method.
 4. Set up card payment methods for stores. For any card payment methods that the store accepts, complete the card setup.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

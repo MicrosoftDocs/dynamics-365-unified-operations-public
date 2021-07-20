@@ -4,11 +4,9 @@
 title: Mass financial period close
 description: This topic shows how to place a period on hold or permanently close a period or more than one legal entity at a time. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 08/16/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -44,3 +42,6 @@ This topic shows how to place a period on hold or permanently close a period or 
 11. Select **Update period status** and set the status of **On hold**, **Open**, or **Permanently closed**. **Open** indicates the period can be posted to, provided the user has access. **On hold** means the period cannot be posted to, but the period can be reopened. **Permanently closed** means the period is closed and can never be opened. Adjustments cannot be posted. We do not recommend setting a period to **Permanently closed** until all adjustments and audits are complete.  
 12. Select **Update**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Revenue recognition reallocation
 description: This topic provides information about reallocation, which enables organizations to recalculate revenue prices when the terms of a contractual sale are changed. It includes links to other topics that describe how to recognize revenue in multiple scenarios.
 author: kweekley
-manager: aolson
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -55,7 +53,7 @@ Because reallocation can be done on a sales order that is partially or fully inv
 
 Every organization must decide whether the correction should update only General ledger, or whether it should also update Accounts receivable. The decision that is reached determines the appropriate setting of the **Post invoice corrections to Accounts receivable** option on the **Revenue recognition** tab of the **General ledger parameters** page (**Revenue recognition \> Setup \> General ledger parameters**). The appropriate setting depends on the specific scenario. For more information about possible scenarios, use the links in the [Scenarios for reallocation](#scenarios-for-reallocation) section later in this topic.
 
-[![Revenue recognition tab on the General ledger parameters page](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
+[![Revenue recognition tab on the General ledger parameters page.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
 If the **Post invoice corrections to Accounts receivable** option is set to **Yes**, the reallocation process produces the following result:
 
@@ -83,7 +81,7 @@ As has been mentioned, you can update only General ledger, or you can update bot
 
 To start the reallocation process, select **Reallocate price with new order lines** in any sales order that you must reallocate. Alternatively, go to **Revenue recognition \> Periodic tasks \> Reallocate price with new order lines**, and then enter the appropriate filters, such as the customer account.
 
-[![Reallocate price with new order lines page](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
+[![Reallocate price with new order lines page.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
 The upper grid on the **Reallocate price with new order lines** page is named **Sales**. It lists the sales orders for the customer. Select the sales orders that must be reallocated. You can't select project sales orders, because project sales orders can't be reallocated. You also can't select sales orders that already have a reallocation ID, because non-project sales orders can be reallocated only one time. If a sales order has a reallocation ID, it has already been marked for reallocation by another user.
 
@@ -93,11 +91,11 @@ After you've finished selecting the required sales order lines, use the buttons 
 
 - **Update reallocation** – Calculate the new revenue price amounts for the selected sales order lines. If a line was removed or canceled, the reallocation will be done only for the existing lines that you selected. The following illustration shows an example of sales order lines before the reallocation is updated.
 
-    [![Sales order lines before the reallocation is updated](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
+    [![Sales order lines before the reallocation is updated.](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
 
     The new revenue price amounts are shown in the **Reallocated amount** column in the **Lines** grid. At this point, the reallocation has been processed, but it hasn't yet been calculated. The following illustration shows an example of sales order lines after the reallocation is updated.
 
-    [![Sales order lines after the reallocation is updated](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
+    [![Sales order lines after the reallocation is updated.](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
 
 - **Process** – Process or post the reallocated revenue prices. After you select this button, there is no way to reverse the reallocation. If you didn't select **Update reallocation** before you select **Process**, the reallocation is automatically run.
 
@@ -107,7 +105,7 @@ After you've finished selecting the required sales order lines, use the buttons 
 - **Expected voucher** – Show a preview of the accounting entries that have been created for any sales order lines that have been invoiced. If no lines have been invoiced, nothing is shown. If you didn't select **Update reallocation** before you select **Expected voucher**, the reallocation is automatically run.
 - **Revenue reallocation** – Open a page that shows the revenue price allocation for all the selected lines. You can't change any of the information on the page. It shows the line amounts that were used to do the reallocation.
 
-    [![Line amounts that were used for reallocation](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
+    [![Line amounts that were used for reallocation.](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
 
 - **Reset data for selected customer** – If the reallocation process was started but wasn't completed, clear the data in the reallocation table for the selected customer only. For example, you mark multiple sales order lines for reallocation, you leave the page open without selecting **Process**, and then the page times out. In this case, the sales order lines will remain marked and won't be available for another user to complete the reallocation process. The page might even be blank when it's opened. In this situation, the **Reset data for selected customer** button can be used to clear unprocessed sales orders so that another user can complete the reallocation process.
 
@@ -119,3 +117,6 @@ The following topics go through various scenarios for revenue recognition:
 - [Revenue recognition reallocation – Scenario 2](rev-rec-reallocation-scenario-2.md) – Two sales orders are entered, and then the customer adds an item to the contract after first sales order is invoiced.
 - [Revenue recognition reallocation – Scenario 3](rev-rec-reallocation-scenario-3.md) – A new line is added to an existing, invoiced sales order.
 - [Revenue recognition reallocation – Scenario 4](rev-rec-reallocation-scenario-4.md) – A line is removed from an existing, partially invoiced sales order.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

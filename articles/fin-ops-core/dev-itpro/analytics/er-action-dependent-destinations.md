@@ -4,11 +4,9 @@
 title: Configure action-dependent ER destinations
 description: This topic explains how to configure action-dependent destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: NickSelin
-manager: AnnBe
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -67,7 +65,7 @@ If you select the **Any** document type, **Autodetect** is automatically selecte
     - When the **Send** action is provided at runtime, the **Email** ER destination is applied.
     - When the **Print** action is provided at runtime, the **Printer** ER destination is applied.
 
-For example, you can use the **Free text invoice (Excel)** ER format to print a [free text invoice](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) when you post it. To route a generated document, you must configure ER destinations for this ER format. For example, you may need to configure these ER destinations to perform the following on a generated document:
+For example, you can use the **Free text invoice (Excel)** ER format to print a [free text invoice](../../../finance/accounts-receivable/create-free-text-invoice-new.md) when you post it. To route a generated document, you must configure ER destinations for this ER format. For example, you may need to configure these ER destinations to perform the following on a generated document:
 
 - Archive the document if the ER format is run but no action code is provided (for example, when the document is sent electronically).
 - Preview the document in a web browser when a user performs the **View** action.
@@ -76,11 +74,11 @@ For example, you can use the **Free text invoice (Excel)** ER format to print a 
 
 The following illustration shows how you can achieve this configuring ER destinations as the set of individual destination records when every record is configured for an individual user action:
 
-![Electronic reporting destination page that has action-dependent destination settings for an ER format when every destination record is configured for a single user action](./media/er-destination-action-dependent-01.png)
+![Electronic reporting destination page that has action-dependent destination settings for an ER format when every destination record is configured for a single user action.](./media/er-destination-action-dependent-01.png)
 
 The following illustration shows how you can achieve the same alternatively configuring ER destinations as the set of individual destination records when every record is configured for an individual destination:
 
-![Electronic reporting destination page that has action-dependent destination settings for an ER format when every destination record is configured for a single destination](./media/er-destination-action-dependent-01a.png)
+![Electronic reporting destination page that has action-dependent destination settings for an ER format when every destination record is configured for a single destination.](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > If an action code is provided for the running ER format, but no destinations have been configured for that action code, the [default](electronic-reporting-destinations.md#default-behavior) destination behavior is applied.
@@ -89,9 +87,9 @@ The following illustration shows how you can achieve the same alternatively conf
 
 When an ER format is run, if user actions have been provisioned by users who have the appropriate [permissions](electronic-reporting-destinations.md#security-considerations) to change configured destination settings at runtime, a dialog box appears that gives the option to change the configured destination settings. This dialog box is optional, and its appearance depends on how the call that the ER framework makes to run an ER format has been implemented. If this dialog box appears, the ER destinations in it will be enabled according to the user action that is provided.
 
-The following illustration shows an example of the **Electronic reporting format destinations** dialog box that appears when a free text invoice is [posted](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) and the **Free text invoice (Excel)** ER format is run to generate this document, if the **Printer** action was provisioned and ER destinations were configured for this format as shown earlier in this topic.
+The following illustration shows an example of the **Electronic reporting format destinations** dialog box that appears when a free text invoice is [posted](../../../finance/accounts-receivable/create-free-text-invoice-new.md) and the **Free text invoice (Excel)** ER format is run to generate this document, if the **Printer** action was provisioned and ER destinations were configured for this format as shown earlier in this topic.
 
-![Dialog box that gives the option to change the initialy configured ER destinations for the running ER format](./media/er-destination-action-dependent-02.gif)
+![Dialog box that gives the option to change the initialy configured ER destinations for the running ER format.](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > If you configured ER destinations for several components of the running ER format, an option will be offered separately for every configured component of the ER format.
@@ -110,7 +108,7 @@ Follow these steps to verify the user action code that is provided.
 6. On the **Configuration debug logs** page, filter the ER run logs to find the log for your ER format run.
 7. Review the log entries that must contain the record that presents the provided user action code, if any action has been provided for the ER format run.
 
-    ![Electronic reporting run logs page that contains information about the user action code that has been provided for the filtered run of an ER format](./media/er-destination-action-dependent-03.png)
+    ![Electronic reporting run logs page that contains information about the user action code that has been provided for the filtered run of an ER format.](./media/er-destination-action-dependent-03.png)
 
 ## <a name="reports-list-wave1">List of business documents (wave 1)</a>
 
@@ -134,3 +132,6 @@ The following list of business documents are controlled by the feature, **Route 
 [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 
 [Electronic reporting framework API changes for Application update 10.0.17](er-apis-app10-0-17.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

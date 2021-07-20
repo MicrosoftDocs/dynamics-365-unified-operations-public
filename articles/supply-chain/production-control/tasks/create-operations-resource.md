@@ -4,11 +4,9 @@
 title: Create an operations resource
 description: An operations resource performs the activities of a project or a production process. 
 author: sorenva
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -82,3 +80,6 @@ An operations resource performs the activities of a project or a production proc
 4. In the Input location field, enter or select a value.
     * Specify the warehouse location from where the operations resource is consuming materials.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

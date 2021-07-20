@@ -4,11 +4,9 @@
 title: ER Design a configuration for generating reports in OPENXML format (November 2016)
 description: This topic describes how to create a new Electronic reporting configuration that contains a template for generating electronic documents in OPENXML format. 
 author: NickSelin
-manager: AnnBe 
-ms.date: 08/12/2019
+ms.date: 04/23/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -33,7 +31,7 @@ This topic explains how a user in the System Administrator or Electronic Reporti
 
 In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in GBSI company.
 
-To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure. You must also have an Excel file which will be imported when creating the template. This file can be accessed from the [Template of Payment Report](https://go.microsoft.com/fwlink/?linkid=862266).
+To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure. You must also have an Excel file which will be imported when creating the template. This file can be accessed from the [Template of Payment Report](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx).
 
 
 ## Upload the Payments data model configuration
@@ -153,3 +151,6 @@ To complete these steps, you must first complete the steps in the "Create a conf
 17. In the **Bank account** field, type `GBSI OPER`.
 18. Select **OK**, then select **OK** again. Review the created worksheet, including details of payment lines as well as totals for each currency code used in this payment message.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

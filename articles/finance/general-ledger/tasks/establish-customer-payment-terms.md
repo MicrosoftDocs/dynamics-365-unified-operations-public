@@ -4,11 +4,9 @@
 title: Establish customer payment terms
 description: This procedure defines a cash discount and due date setup. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -59,3 +57,6 @@ This procedure defines a cash discount and due date setup. This task guide uses 
 26. In the **Main account for vendor discounts** field, enter the main account to which the cash discount will post for vendor invoices.
 27. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

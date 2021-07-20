@@ -4,11 +4,9 @@
 title: Sales VAT report
 description: This topic describes the reports in Microsoft Dynamics 365 Finance that you can use to submit information about value-added tax (VAT) amounts for sales and purchases to tax authorities in Thailand.
 author: anasyash
-manager: tfehr
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics365-financials
 ms.technology: 
 
 # optional metadata
@@ -43,7 +41,7 @@ The **Unrealized VAT remaining** report includes transactions that taxes haven't
 
 3. Select **OK**, and review the report that is generated.
 
-    ![Unrealized VAT remaining report](media/apac-tha-unrealized-VAT-remaining-report.png)
+    ![Unrealized VAT remaining report.](media/apac-tha-unrealized-VAT-remaining-report.png)
 
     The following table explains the information that is shown on the **Unrealized VAT remaining** report.
 
@@ -80,7 +78,7 @@ The **Purchase VAT** report for internal use includes transactions that purchase
 
 7. Select **OK**, and review the report that is generated.
 
-    ![Purchase VAT report  for internal use ](media/apac-tha-purchase-VAT-report-for-internal-use.png)
+    ![Purchase VAT report  for internal use .](media/apac-tha-purchase-VAT-report-for-internal-use.png)
 
     The following table explains the information that is shown on the **Purchase VAT** report for internal use.
 
@@ -118,7 +116,7 @@ The **Purchase VAT** report includes transactions that purchase VAT is realized 
 
 7. Select **OK**, and review the report that is generated.
 
-    ![Purchase VAT report](media/apac-tha-purchase-VAT-report.png)
+    ![Purchase VAT report.](media/apac-tha-purchase-VAT-report.png)
 
     The following table explains the information that is shown on the **Purchase VAT** report.
 
@@ -157,7 +155,7 @@ The **Sales VAT** report for internal use includes transactions that sales VAT i
 
 7. Select **OK**, and review the report that is generated.
 
-    ![Sales VAT report for internal use ](media/apac-tha-sales-VAT-report-for-internal-use.png)
+    ![Sales VAT report for internal use .](media/apac-tha-sales-VAT-report-for-internal-use.png)
 
     The following table explains the information that is shown on the **Sales VAT** report for internal use.
 
@@ -194,7 +192,7 @@ The **Sales VAT** report includes transactions that sales VAT is realized for. I
 
 7. Select **OK**, and review the report that is generated.
 
-    ![Sales VAT report](media/apac-tha-sales-VAT-report.png)
+    ![Sales VAT report.](media/apac-tha-sales-VAT-report.png)
 
     The following table explains the information that is shown on the **Sales VAT** report.
 
@@ -214,3 +212,6 @@ The **Sales VAT** report includes transactions that sales VAT is realized for. I
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

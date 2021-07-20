@@ -3,11 +3,9 @@
 title: Prepayments management  
 description: This topic provides information about paying value-added tax (VAT) when prepayments are received from customers.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -31,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 Sellers are legally required to pay value-added tax (VAT) from the prepayments that they receive from customers (buyers). They must then issue prepayment factures to the customers. Customers can then deduct the VAT, based on the prepayment facture that they receive from a seller.
 
-![A screenshot of a cell phone description automatically generated](media/1%20Scheme%20english.jpg)
+![A screenshot of a cell phone description automatically generated.](media/1%20Scheme%20english.jpg)
 
 
 ## Processing prepayments from customers
@@ -141,7 +139,7 @@ After a prepayment is registered, a facture is automatically created. The factur
 10. In the lower part of the **Facture journal** page, on the **General** tab, in the **Note** field, enter the list of goods that the prepayment is registered for.
 11. Select **Fill line details**, and then, in the **Journal of invoices for payment** dialog box, select the **Mark** check box for every invoices for payment for which the names of goods (works and services) should be included in the description of the prepayment facture. For more information, see [Invoices for payment](rus-invoice-payment.md)
 
-![Journal of invoices for payment dialog box](media/2%20Journal%20of%20invoices%20for%20payment.png)
+![Journal of invoices for payment dialog box.](media/2%20Journal%20of%20invoices%20for%20payment.png)
 
 12.  Select **OK**. The names of goods are added to the **Note** field.
 13.  Select the line for the facture, and then, on the Action Pane, select **Print**.
@@ -354,3 +352,6 @@ You can't cancel the prepayment settlement and the invoice if the VAT was restor
 To cancel the VAT recovery, use the **Sales book (Canceling processed VAT)** page (**Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Canceling processed VAT**).
 
 You can't cancel the processing of incoming VAT unless the VAT recovery is canceled on the prepayment that is settled to the invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

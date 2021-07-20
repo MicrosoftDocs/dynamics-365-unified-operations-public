@@ -4,11 +4,9 @@
 title: Troubleshoot inbound warehouse operations
 description: This topic describes how to fix common issues that you might encounter while you work with inbound warehouse operations in Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,9 +60,29 @@ After you run the *Update product receipts* periodic task, the system automatica
 
 ### Issue resolution
 
-A new inbound load handling feature, *Over receipt of load quantities*, fixes this issue. To turn on this feature, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the following features (in the order that they are listed in):
+A new inbound load handling feature, *Over receipt of load quantities*, fixes this issue. To turn on this feature, go to the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace and turn on the following features (in the order that they are listed in):
 
 1. Associate purchase order inventory transactions with load
 1. Over receipt of load quantities
 
 For more information, see [Post registered product quantities against purchase orders](inbound-load-handling.md#post-registered-quantities).
+
+## When I register inbound orders, I receive the following error message: "The quantity is not valid."
+
+### Issue description
+
+If the **License plate grouping policy** field is set to *User defined* for a mobile device menu item that is used to register inbound orders, you receive an error message ("The quantity is not valid"), and you can't complete the registration.
+
+### Issue cause
+
+When *User defined* is used as a license plate grouping policy, the system splits the incoming inventory into separate license plates, as indicated by the unit sequence group. If batch or serial numbers are used to track the item that is being received, the quantities of each batch or serial must be specified per license plate that is registered. If the quantity that is specified for a license plate exceeds the quantity that must still be received for the current dimensions, you receive the error message.
+
+### Issue resolution
+
+When you register an item by using a mobile device menu item where the **License plate grouping policy** field is set to *User defined*, the system might require that you confirm or enter license plate numbers, batch numbers, or serial numbers.
+
+On the license plate confirmation page, the system will show the quantity that is allocated for the current license plate. On the batch or serial confirmation pages, the system will show the quantity that must still be received on the current license plate. It will also include a field where you can enter the quantity to register for that combination of license plate and batch or serial number. In this case, make sure that the quantity that is being registered for the license plate doesn't exceed the quantity that must still be received.
+
+Alternatively, if too many license plates are being generated on inbound order registration, the value of the **License plate grouping policy** field can be changed to *License plate grouping*, a new unit sequence group can be assigned to the item, or the **License plate grouping** option for the unit sequence group can be inactivated.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

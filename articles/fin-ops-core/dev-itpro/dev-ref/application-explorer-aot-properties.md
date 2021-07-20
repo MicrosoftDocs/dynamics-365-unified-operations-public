@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: Application Explorer properties
 description: This topic describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
 author: RobinARH
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 85213
-ms.assetid: ca186dda-8a78-4969-9be0-b81be00892e5
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Application Explorer properties
@@ -3953,3 +3937,6 @@ The default value is <strong>Auto</strong>.</td>
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Schedule interviews in Attract
 description: This topic provides information about interview scheduling and feedback activities in Attract.
 author: hasrivas
-manager: tfehr
 ms.date: 04/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.region: Global
 # ms.search.industry: HR, Human Resources
 ms.author: shielas
@@ -40,7 +37,7 @@ To send an email to candidates requesting their availability, select the **Reque
 
 To send the availability request, click **Send request**, choose the available dates and an email template, and then send the mail to the candidate.
 
-[![Attract recruiter view to send candidate availability request](./media/scheduler-candidate-request.png)](./media/scheduler-candidate-request.png)
+[![Attract recruiter view to send candidate availability request.](./media/scheduler-candidate-request.png)](./media/scheduler-candidate-request.png)
 
 When the candidate receives an email to respond to the request, they can sign in to their candidate portal, choose the dates that match their availability, and click **Submit**.
 
@@ -48,7 +45,7 @@ When the candidate receives an email to respond to the request, they can sign in
 There are multiple configurations available for the interview scheduler to use and quickly create and send the interview loop to the interviewers and the candidate.
 
 1. Click **Create schedule**, and in the **Add interviewers** box, list all the interviewers that are going to be part of the interview loop.
-[![Attract recruiter view to start scheduling an interview loop](./media/schedule-start-over.png)](./media/schedule-start-over.png)   
+[![Attract recruiter view to start scheduling an interview loop.](./media/schedule-start-over.png)](./media/schedule-start-over.png)   
     If the candidate had responded to the interview request availability, the **Interview date** column will be pre-populated with their selection. You can select a different date if needed.
     
     If you select the **Make this a panel interview** column, the group of interviewers on the left are moved in to a single panel loop to create the interview. You will then need to define a specific sequence for the interviews.
@@ -78,7 +75,7 @@ There are multiple configurations available for the interview scheduler to use a
 
     Interviewer responses are captured and shown in Attract. If an interviewer declines the invite, you will be notified to make a change. To view their response in the **Scheduler** grid view, click the bubble icon.
 
-[![Attract recruiter view of an interviewer's response](./media/schedule-interviewer-response2.png)](./media/schedule-interviewer-response2.png)
+[![Attract recruiter view of an interviewer's response.](./media/schedule-interviewer-response2.png)](./media/schedule-interviewer-response2.png)
 
 7. After the interview schedule is ready to be shared with the candidate, click **Send to candidate**. You can choose to hide or show the interviewer names and slots with the candidate.
 
@@ -105,3 +102,6 @@ If you select the **Inherit feedback participants from Hiring Team** column, the
 The interview activity is an optional activity with three components: **Candidate availability request**, **Schedule**, and **Feedback**. Use the interview activity in the job template if you want all of the candidate’s availability request, schedule, and feedback as part of the process instead of using them individually.
 
 To include or limit the candidates to be interviewed, select a value in the **Who are you interviewing** column. The available options are **All Candidates**, **External Candidates**, and **Internal Candidates**. For example, if you want to skip internal candidates in the first round of interviewing, set **Who are you interviewing** to **External Candidates**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

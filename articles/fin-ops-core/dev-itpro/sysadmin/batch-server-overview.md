@@ -4,11 +4,9 @@
 title: Batch processing and batch servers
 description: This topic describes batch processing and batch servers, and how to plan for their use.
 author: Peakerbl
-manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 57201
+ms.custom: ["57201", "intro-internal"]
 ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 ms.search.region: Global
 # ms.search.industry: 
@@ -65,7 +63,7 @@ The following walkthroughs describe how tasks are processed, and how batch group
 
 For this example, you've created a job that is called JOB 1. As the following diagram shows, the job has seven tasks: TASK 1, TASK 2, TASK 3, TASK 4, TASK 5, TASK 6, and TASK 7. 
 
-![A job that has dependent tasks](./media/batch_framework_programmability.gif) 
+![A job that has dependent tasks.](./media/batch_framework_programmability.gif) 
 
 The tasks have the following dependencies:
 
@@ -109,3 +107,6 @@ Batch throttling can prevent excessive tasks by limiting the average number of e
 
 > [!NOTE]
 > The batch framework is able to detect instances when there are no non-throttled tasks to be scheduled and executed at any given time. When this occurs, the batch will try to fetch batch tasks from the throttled classes queue to prevent resources from being idle.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

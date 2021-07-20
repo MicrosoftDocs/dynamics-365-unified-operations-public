@@ -3,11 +3,9 @@
 title: Deployment guidelines for Advance Invoice report printing for Czech Republic, Hungary, and Poland
 description: This topic describes how to build extensions of the Commerce components to enable printing advance invoices from POS in Czech Republic, Hungary, and Poland.
 author: anmukh
-manager: ezubov
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -114,3 +112,6 @@ Follow these steps to create deployable packages that contain Commerce component
 
 3. Run **msbuild** for the Retail SDK to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

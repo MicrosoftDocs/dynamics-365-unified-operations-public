@@ -4,11 +4,9 @@
 title: What's new or changed for India GST in 10.0.10 (May 2020)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.10.
 author: prabhatb
-manager: Annbe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -47,7 +45,7 @@ Complete the following steps to update the over delivery quantity.
 1. On the **Invoice registration** page, in the **Overview** pane, in the **Import invoice number** field, select the invoice you want to update.
 2. In the **Lines** pane, in the **Receive** field, update the quantity.
 
-![Invoice registration page](media/GST-over-delivery-1-10-0-10.PNG )
+![Invoice registration page.](media/GST-over-delivery-1-10-0-10.PNG )
 
 ### TDS on foreign vendor transactions
 TDS on a foreign vendor invoice results in a voucher imbalance error because the transactions on voucher do not balance. 
@@ -60,9 +58,10 @@ As per rule 26 of Income tax act, TDS on a foreign currency transaction is conve
 
 You can set up the **TDS exchange rate** as **TDS** and the **Accounting currency exchange rate type** as **Default** on the **Ledger** page.
 
-![Ledger page, Currency FastTab](media/GST-tds-exchange-rate-2-10-0-10.png )
+![Ledger page, Currency FastTab.](media/GST-tds-exchange-rate-2-10-0-10.png )
 
 **Accounting entries**
+
 | Description                | Dr. (US$)     | Dr. (INR)          | Cr. (US$)                | Cr. (INR)                                        |
 |----------------------------|--------------|-------------------|-------------------------|-------------------------------------------------|
 |     Service/lease exp.    |     100      |     GAP rate      |                         |                                                 |
@@ -104,3 +103,6 @@ You can set up the **TDS exchange rate** as **TDS** and the **Accounting currenc
     main ledger for the voucher.
 -	The TDS section code and invoice number are not appearing in TDS inquiries. 
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

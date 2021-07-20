@@ -4,11 +4,9 @@
 title: Database movement API - Reference - v1 - Start and stop environments 
 description: This topic provides a reference for version 1 of the Database Movement API.
 author: laneswenka
-manager: AnnBe
-ms.date: 01/21/2021
+ms.date: 03/09/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -36,7 +34,8 @@ You can start and stop environments through Microsoft Dynamics Lifecycle Service
 Note that the same validation rules from the details page in LCS apply to the API.
 
 > [!NOTE]
-> - Only **Customer Managed** environments are supported. Self-service environments do not have the same concept of stop and start and are not supported by this API. These APIs will trigger/invoke the operation and successful response only indicates the trigger was successful.
+> - Only **Customer-managed** environments are supported. Self-service environments do not have the same concept of stop and start and are not supported by this API. Microsoft-managed environments are not supported.
+> - These APIs will trigger/invoke the operation. A successful response only indicates that the trigger was successful.
 > - For **stop**, non-success will be returned if the environment is already undergoing another operation or if the environment is already stopped.
 > - For **start**, non-success will be returned if the environment is already undergoing another operation but will return success if the environment is already started.
 
@@ -83,10 +82,12 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 
 ## Example
 
+**Request to stop an environment**
 ```http
 POST /environment/v1/stop/project/{projectId}/environment/{environmentId}
 ```
 
+**Successful response**
 ```json
 {
     "IsSuccess": true,
@@ -95,4 +96,22 @@ POST /environment/v1/stop/project/{projectId}/environment/{environmentId}
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+## Rate limits
 
+To better load balance the request, there are rate limits on the Start and Stop API: 
+
+For **Start** API, the following limits will be enforced:
+
+ * 1 call for each environment for 5 minutes
+ * 30 calls for each user for 30 minutes
+                
+For **Stop** API, the following limits will be enforced:
+
+ * 1 call for each environment for 5 minutes
+ * 30 calls for each user for 30 minutes
+
+> [!NOTE]
+> Requests that exceed the limits will be rejected with a “HTTP 429 Too Many Requests” response. The **retry-after** header will indicate the number of seconds when the request can be retried.
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

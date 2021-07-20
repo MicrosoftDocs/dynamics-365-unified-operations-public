@@ -4,11 +4,9 @@
 title: Configure cost control workspace parameters
 description: Use this procedure to configure the Cost control workspace so that managers at various levels in an organization can gain insight into their cost objects, such as cost centers and product groups. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 06/27/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -61,3 +59,6 @@ Use this procedure to configure the Cost control workspace so that managers at v
 27. In the Cost object dimension hierarchy node field, enter or select a value.
     * After you've selected a Cost object dimension hierarchy, expand the Cost element dimension hierarchy to see the desired cost values. For example, you can expand the hierarchy to Manufacturing overhead to see the value.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

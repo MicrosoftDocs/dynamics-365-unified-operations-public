@@ -4,11 +4,9 @@
 title: AxErd page has been retired
 description: We've had to retire the AxErd page. We've been able to post both the source code for the project, and the HTML files for the web page in a GitHub repo. 
 author: margoc
-manager: AnnBe
 ms.date: 03/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -52,3 +50,6 @@ The solution is at the root of the AxErd folder [https://github.com/Microsoft/ax
 In March 2018, a third party copied the AxErd source from GitHub, and redeployed AxErd at the following site. The site is still operating as of March 2020:
 
 - [https://AlexDMeyer.com/ax2012erd/](https://AlexDMeyer.com/ax2012erd/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Operations platform update 5 (March 2017)
 description: This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 5. This version was released in March 2017 and has a build number of 7.0.4475.16165.
 author: tonyafehr
-manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -49,3 +47,6 @@ This topic describes features that are either new or changed in Dynamics 365 for
 | Feature | Why this is important |
 |---------|-----------------------|
 | Enhanced administration features for personalization | The personalization administrator can now apply or remove form personalizations for groups of users. Previously personalization administration was only possible one user at a time. For more information, see [Personalize the user experience](personalize-user-experience.md). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

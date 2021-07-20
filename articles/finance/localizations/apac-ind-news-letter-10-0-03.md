@@ -4,11 +4,9 @@
 title: What's new or changed for India GST in 10.0.03 (June 2019)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.03.
 author: prabhatb
-manager: Annbe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,7 +44,7 @@ In addition to deleting one or all records, you can now delete multiple selected
 ### Enable tax calculation based on the accounting currency for import and export orders
 For more information about calculating tax in the accounting currency for import and export orders, see [What's new or changed in Finance and Operations version 10.0.3 (June 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md#calculate-tax-in-accounting-currency-for-importexport-order).
 
-![Tax setup parameters, currency type](media/GST-tax-based-accounting-currency-2-10-0-03.png	)
+![Tax setup parameters, currency type.](media/GST-tax-based-accounting-currency-2-10-0-03.png	)
 
 ### Use Tax transaction inquiry 
 With the release of 10.0.04, use the Tax transaction inquiry functionality for TDS/TCS instead of post withholding tax.
@@ -77,3 +75,6 @@ With the release of 10.0.04, use the Tax transaction inquiry functionality for T
 - GSTR-2 mismatch in figures when the invoice journal is posted with a multi-line transaction.
 -	Standard sales tax doesn't get calculated in Accounts payable.
 -	Proforma invoices consume a number from the invoice number sequence. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

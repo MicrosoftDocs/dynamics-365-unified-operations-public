@@ -4,11 +4,9 @@
 title: Set up organization hierarchies
 description: This topic describes how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,12 +27,9 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Set up organization hierarchies
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Before creating channels, you'll want to ensure you have set up your organization hierarchies.
 
@@ -63,7 +58,7 @@ To create an organizational hierarchy, follow these steps.
 
 The following image shows an example organizational hierarchy created for a fictitious "Adventure Works" set of stores.
 
-![Example organizational hierarchy](media/organizational-hierarchies.png)
+![Example organizational hierarchy.](media/organizational-hierarchies.png)
 
 ### Add organizations to a hierarchy
 
@@ -76,7 +71,7 @@ To add organizations to a hierarchy, follow these steps.
 
 The following image shows a legal entity added at the hierarchy root with four cost centers added for "Mall", "Outlet", "Online" and "Call Center" channels. Various retail, call center and online channels can then be added to each.
 
-![Example hierarchy designer](media/hierarchy-designer.png)
+![Example hierarchy designer.](media/hierarchy-designer.png)
 
 ## Additional resources
 
@@ -91,3 +86,6 @@ The following image shows a legal entity added at the hierarchy root with four c
 [Channels overview](channels-overview.md)
 
 [Channel setup prerequisites](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

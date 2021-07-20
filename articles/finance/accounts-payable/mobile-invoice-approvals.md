@@ -4,11 +4,9 @@
 title: Mobile invoice approvals
 description: This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. 
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,12 +33,11 @@ ms.dyn365.ops.version: Version 1611
 
 Mobile capabilities let a business user design mobile experiences. For advanced scenarios, the platform also lets developers extend the capabilities as they desire. The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios. This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. This topic should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.
 
-Prerequisites
--------------
+## Prerequisites
 
 | Prerequisite                                                                                            | Description                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobile handbook pre-read                                                                                |[Mobile platform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
+| Mobile handbook pre-read                                                                                |[Mobile platform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | An environment that has version 1611 and Platform update 3 (November 2016)                   |
 | Install hotfix KB 3204341.                                                                              | Task recorder can erroneously record two Close commands for dropdown dialogs; this is included in Platform update 3 (November 2016 update). |
 | Install hotfix KB 3207800.                                                                              | This hotfix enables attachments to be viewed on the mobile client; this is included in Platform update 3 (November 2016 update).           |
@@ -145,7 +142,7 @@ The first mobile page that you should design is the list of invoices that are as
 
 1.  In the URL, replace the name of the menu item with **VendMobileInvoiceAssignedToMeListPage** to open the mobile version of the **Pending vendor invoices assigned to me** list page in the **Accounts payable** module. Depending on the number of invoices that you have in your system assigned to you, this page will show those invoices. To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice assigned to you which is going to allow you to design the mobile page. The new pages that are available have been designed specifically for developing mobile scenarios for vendor invoice. Therefore, you must use these pages. The URL should resemble the following URL, and after you enter it, the page that is shown in the illustration must appear: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
 
-    [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    [![Pending vendor invoices assigned to me page.](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
     
 2.  Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**
 3.  Select your workspace and click **Edit**
@@ -154,7 +151,7 @@ The first mobile page that you should design is the list of invoices that are as
 6.  Click **Done**.
 7.  In the mobile designer, on the **Fields** tab, click **Select fields**. The columns on the list page must resemble the following illustration. 
 
-    [![Columns on the Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    [![Columns on the Pending vendor invoices assigned to me page.](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
     
 8.  Add the required columns from the list page that must be shown to the users in the mobile page. The order in which you add is the order in which the fields will be displayed to the end user. The only way to change the ordering of the fields will be by re-selecting all the fields. Based on the requirements for this scenario, the following eight fields are required. However, some users might consider eight fields too much information to have on a mobile device. Therefore, we will show only the most important fields in the mobile list view. The remaining fields will appear in the details view that we will design later. For now, we will add the following fields. Click the plus sign (**+**) in these columns to add to the mobile page.
     - Vendor name
@@ -165,7 +162,7 @@ The first mobile page that you should design is the list of invoices that are as
 
     After the fields are added, the mobile page must resemble the following illustration. 
     
-    [![Page after fields are added](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Page after fields are added.](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  You must also add the following columns now, so that we can enable workflow actions later.
     - Show complete task
@@ -184,7 +181,7 @@ The first mobile page that you should design is the list of invoices that are as
 
 To design the invoice details page for mobile, use the **VendMobileInvoiceHeaderDetails** page. Note that, depending on the number of invoices that you have in your system, this page shows the oldest invoice (the invoice that was created first). To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice data so that we can design the mobile page. 
 
-[![Workflow page](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+[![Workflow page.](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. In the URL, replace the name of the menu item with **VendMobileInvoiceHeaderDetails** to open the form
 
@@ -221,7 +218,7 @@ To design the invoice details page for mobile, use the **VendMobileInvoiceHeader
 
 11. After all the fields from the previous two steps have been added, click **Done**. The page must resemble the following illustration.
     
-    [![Page after fields are added](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Illustration showing additional fields added.](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Click **Done** to exit edit mode.
 
@@ -331,7 +328,7 @@ To add workflow actions, use the **VendMobileInvoiceHeaderDetails** page. To ope
 
 4. Set the **Document management** option to **Yes** as shown below. **Note:** If there are no requirements to show attachments on the mobile device, you can leave this option set to **No**, which is the default setting.
    
-   ![Document management](./media/docmanagement-216x300.png)
+   ![Document management.](./media/docmanagement-216x300.png)
 
 5. Click **Done** to exit edit mode.
 
@@ -348,7 +345,7 @@ The requirements for this scenario confirm that there will be only line-level di
 
 1.  In the URL, replace the name of the menu item, as you did before. The page that appears should resemble the following illustration.
 
-    [![All distributions page](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![All distributions page.](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Open the mobile designer from the **Settings** (gear) button.
 
@@ -540,3 +537,6 @@ The following variations can be done for scenario 1, based on the requirements f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

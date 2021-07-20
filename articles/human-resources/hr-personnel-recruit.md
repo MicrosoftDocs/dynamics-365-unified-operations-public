@@ -4,11 +4,9 @@
 title: Recruit job candidates
 description: This topic shows how to recruit candidates in Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 12/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -32,7 +29,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Recruit job candidates
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources helps you to manage recruiting requests. It also helps you seamlessly transition job candidates to employees. If your organization uses a separate recruiting application, your recruiting process might include the following steps:
 
@@ -69,13 +66,13 @@ If your organization has multiple locations, you can add them so requestors can 
 
 3. In the **Recruiting request location** field, enter the location name.
 
-   ![Add a recruiting request location](./media/hr-recruit-0a-add-location.png)
+   ![Add a recruiting request location.](./media/hr-recruit-0a-add-location.png)
 
 4. In the **Description**, enter a description for the location.
 
 5. Under **Location**, select **Add**. If the **New address** popout appears, enter the address for the location.
 
-   ![Enter address](./media/hr-recruit-0b-address.png)
+   ![Enter address.](./media/hr-recruit-0b-address.png)
 
 6. Under **Contact information**, enter the information for the location's contact.
 
@@ -91,11 +88,11 @@ Managers can submit recruiting requests in Human Resources. If you use a separat
 
 3. Select  **Request to recruit**.
 
-   ![Start a recruiting request](./media/hr-recruit-1-request-to-recruit.png)
+   ![Start a recruiting request.](./media/hr-recruit-1-request-to-recruit.png)
 
 4. Complete the **Description**, **Job**, and **Estimated start date** fields.
 
-   ![Complete the recruiting request](./media/hr-recruit-2-request-to-recruit.png)
+   ![Complete the recruiting request.](./media/hr-recruit-2-request-to-recruit.png)
 
 5. Select **Continue**. The recruiting request for your position appears.
 
@@ -103,7 +100,7 @@ Managers can submit recruiting requests in Human Resources. If you use a separat
 
 7. Under **Job**, change any information as needed, and then select **Create details from job**.
 
-   ![Create details from job](./media/hr-recruit-3-create-details-from-job.png)
+   ![Create details from job.](./media/hr-recruit-3-create-details-from-job.png)
 
    The rest of the recruiting request will populate with the default information for the job you entered.
 
@@ -111,13 +108,13 @@ Managers can submit recruiting requests in Human Resources. If you use a separat
 
 9. Under **Positions**, select **Add**, and then select a position for this recruiting request.
 
-   ![Add a position](./media/hr-recruit-4-select-position.png)
+   ![Add a position.](./media/hr-recruit-4-select-position.png)
 
 10. Under **Skills**, select **Add**, and then select a skill.
 
 11. Under **Educational requirements**, select **Add**, and then select values from the **Education** and **Level of education** dropdowns.
 
-   ![Add educational requirements](./media/hr-recruit-5-select-educational-requirements.png)
+   ![Add educational requirements.](./media/hr-recruit-5-select-educational-requirements.png)
 
 12. Under **Comment**, add comments as necessary.
 
@@ -125,7 +122,7 @@ Managers can submit recruiting requests in Human Resources. If you use a separat
 
 14. When your recruiting request is complete and you're ready to start the recruiting process, select **Activate** in the menu bar.
 
-   ![Activate recruiting request](./media/hr-recruit-6-activate-recruit-request.png)
+   ![Activate recruiting request.](./media/hr-recruit-6-activate-recruit-request.png)
 
 15. Select **Save**.
 
@@ -139,7 +136,7 @@ If you're a manager and want to view your own requests:
 
 3. Under **My team information**, select the **Recruiting requests** tab.
 
-   ![Select Recruiting requests tab](./media/hr-recruit-7-recruiting-requests.png)
+   ![Select Recruiting requests tab.](./media/hr-recruit-7-recruiting-requests.png)
 
 4. To view or edit a recruiting request, select it in the grid.
 
@@ -149,7 +146,7 @@ If you're an HR pro and want to view all recruiting requests:
 
 2. Select **Recruiting requests**.
 
-   ![View recruiting requests in Personnel management](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
+   ![View recruiting requests in Personnel management.](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
 
 3. To view or edit a recruiting request, select it in the grid.
 
@@ -163,7 +160,7 @@ If your organization has integrated with another application to manage recruitin
 
 3. Under **Recruiting**, select **Candidates**.
 
-   ![View candidates](./media/hr-recruit-9-candidates.png)
+   ![View candidates.](./media/hr-recruit-9-candidates.png)
 
 4. To add a candidate, select **New**. To edit an existing candidate, select the candidate from the list and then select **Edit**. The candidate profile appears.
 
@@ -171,7 +168,7 @@ If your organization has integrated with another application to manage recruitin
 
 6. Under **Recruiting request**, select a recruiting request to link the candidate to. Then complete the **Estimated start date**, **Hiring manager**, **Position**, and **Description fields** as appropriate.
 
-   ![Link to recruiting request](./media/hr-recruit-10-link-to-recruiting-request.png)
+   ![Link to recruiting request.](./media/hr-recruit-10-link-to-recruiting-request.png)
 
 7. Complete all the information in the following areas that you want to include in the candidate's record:
    - **Comments**
@@ -190,11 +187,11 @@ When you're ready to hire a candidate, follow this procedure to transition the c
 
 1. On the candidate form, select **Hire**.
 
-   ![Hire a candidate](./media/hr-recruit-11-hire.png)
+   ![Hire a candidate.](./media/hr-recruit-11-hire.png)
 
 2. On the **Hire new worker** form, under **Details**, complete all the fields.
 
-   ![Enter new hire details](./media/hr-recruit-12-hire-new-worker.png)
+   ![Enter new hire details.](./media/hr-recruit-12-hire-new-worker.png)
 
 3. Under **Position details**, verify and change information as necessary.
 
@@ -211,7 +208,7 @@ If you decide not to hire a candidate, follow this procedure to remove them from
 
 1. On the candidate form, select **Do not hire**.
 
-   ![Don't hire candidate](./media/hr-recruit-13-do-not-hire.png)
+   ![Don't hire candidate.](./media/hr-recruit-13-do-not-hire.png)
 
 2. Select a **Reason code** and include any comments.
 
@@ -223,10 +220,13 @@ If needed, you can dismiss a candidate after hiring them. For example, a candida
 
 - On the candidate form, select **Dismiss candidate**.
 
-  ![Dismiss candidate](./media/hr-recruit-14-dismiss-candidate.png)
+  ![Dismiss candidate.](./media/hr-recruit-14-dismiss-candidate.png)
 
 ## See also
 
 [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organize your workforce](hr-personnel-departments-jobs-positions.md)<br>
 [Set up the components of a job](hr-personnel-jobs.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

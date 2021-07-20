@@ -4,11 +4,9 @@
 title: Human Resources doesn't appear in Microsoft Dynamics 365 apps
 description: This article explains what to do if the customer doesn't see the Microsoft Dynamics 365 Human Resources app among the Microsoft Dynamics 365 apps.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -31,6 +28,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Human Resources doesn't appear in Microsoft Dynamics 365 apps
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Issue**
 
@@ -46,11 +45,11 @@ The user must be added to the Environment Maker role for the environment in Micr
 
 3. On the **Security** tab, on the **Environment roles** tab, select **Environment Maker**.
 
-    ![Environment roles tab](media/environment-roles.png)
+    ![Environment roles tab.](media/environment-roles.png)
 
 4. On the **Users** tab, add the user or your organization.
 
-    ![Users tab](media/environment-maker.png)
+    ![Users tab.](media/environment-maker.png)
 
 5. Select **Save**.
 
@@ -58,6 +57,9 @@ The user must be added to the Environment Maker role for the environment in Micr
 
 7. Select **Sync** to update the user apps.
 
-    ![Sync button](media/get-more.png)
+    ![Sync button.](media/get-more.png)
 
     After synchronization is completed, Human Resources will appear on the home page.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Improve the performance of ER solutions by adding parameterized CALCULATED FIELD data sources
-description: This topic explains how you can help improve the performance of Electroinic reporting (ER) solutions by adding parameterized CALCULATED FIELD data sources.
+description: This topic explains how you can help improve the performance of Electronic reporting (ER) solutions by adding parameterized CALCULATED FIELD data sources.
 author: NickSelin
-manager: AnnBe
-ms.date: 09/02/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -64,7 +62,7 @@ The first step is to import the sample ER solution to generate a vendor transact
     2. Select **Browse**, and select the appropriate file for the ER configuration in XML format.
     3. Select **OK**.
 
-![Imported configurations on the Configurations page](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![Imported configurations on the Configurations page.](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## Review the sample ER solution
 
@@ -84,7 +82,7 @@ The first step is to import the sample ER solution to generate a vendor transact
 
     The model mapping in this configuration implements the base data model for any ER formats that are created for this model and run in Finance. Therefore, the content of the **Trans** data source is exposed for ER formats such as abstract **model** data sources.
 
-    ![Trans data source on the Model mapping designer page](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![Trans data source on the Model mapping designer page.](media/er-calculated-field-ds-performance-mapping-1.png)
 
 4. Close the **Model mapping designer** page.
 5. Close the **Model to datasource mapping** page.
@@ -98,7 +96,7 @@ The first step is to import the sample ER solution to generate a vendor transact
 
     This ER format is designed to generate a vendor transactions report in XML format.
 
-    ![Format data sources and configured bindings of format elements on the Format designer page](media/er-calculated-field-ds-performance-format.png)
+    ![Format data sources and configured bindings of format elements on the Format designer page.](media/er-calculated-field-ds-performance-format.png)
 
 5. Close the **Format designer** page.
 
@@ -111,7 +109,7 @@ Imagine that you've finished designing the first version of the ER solution. You
 1. Select the **DEMF** company.
 2. Follow the steps in [Turn on the ER performance trace](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) to generate a performance trace while an ER format is run.
 
-    ![User parameters dialog box](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![User parameters dialog box.](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
 ### <a id="run-format"></a>Run the ER format
 
@@ -132,7 +130,7 @@ New information is now available for some data source items of the current model
 - The actual time that was spent getting data by using the data source
 - The same time expressed as a percentage of the total time that was spent running the whole model mapping
 
-![Execution time details on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-2.png)
+![Execution time details on the Model mapping designer page.](./media/er-calculated-field-ds-performance-mapping-2.png)
 
 The **Performance statistics** grid shows that the **Trans** data source calls the VendTrans table one time. The value **\[265\]\[Q:265\]** of the **Trans** data source indicates that 265 vendor transactions have been fetched from the application table and returned to the data model.
 
@@ -145,7 +143,7 @@ The **Performance statistics** grid also shows that the current model mapping du
 
 - The vendor table is called for each iterated vendor transaction, even though the fetched transactions have been posted for only five vendors. Of the 530 calls, 525 are duplicates. The following illustration shows the message that you receive about duplicate calls (database requests).
 
-![Message about duplicate database requests on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-2a.png)
+![Message about duplicate database requests on the Model mapping designer page.](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
 Of the total model mapping execution time (approximately eight seconds), notice that more than 80 percent (approximately six seconds) has been spent retrieving values from the VendTable application table. That percentage is too large for two attributes of five vendors, compared with the volume of information from the VendTrans application table.
 
@@ -180,7 +178,7 @@ Follow these steps to use caching and a data source of the **Calculated field** 
     3. In the dialog box, in the **Name** field, enter **Box**.
     3. Select **OK**.
 
-    ![Box data source on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![Box data source on the Model mapping designer page.](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. Follow these steps to add a parameterized data source of the **Calculated field** type:
 
@@ -216,7 +214,7 @@ Follow these steps to use caching and a data source of the **Calculated field** 
 
 9. Select **Save**.
 
-    ![Vend data source on the Model mapping designer page](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![Vend data source on the Model mapping designer page.](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. Close the **Model mapping designer** page.
 11. Close the **Model mappings** page.
@@ -240,11 +238,11 @@ Repeat the steps in the [Run the ER format](#run-format) section earlier in this
 
 Notice that the adjustments that you made to the model mapping have eliminated duplicate queries to database. The number of calls to database tables and data sources for this model mapping has also been reduced.
 
-![Trace information on the Model mapping designer page 1](./media/er-calculated-field-ds-performance-mapping-5.png)
+![Trace information on the Model mapping designer page 1.](./media/er-calculated-field-ds-performance-mapping-5.png)
 
 The total execution time has been reduced about 20 times (from about 8 seconds to about 400 milliseconds). Therefore, the performance of the whole ER solution has been improved.
 
-![Trace information on the Model mapping designer page 2](./media/er-calculated-field-ds-performance-mapping-5a.png)
+![Trace information on the Model mapping designer page 2.](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix1"></a>Appendix 1: Download the components of the sample Microsoft ER solution
 
@@ -252,9 +250,9 @@ You must download the following files and store them locally.
 
 | File                                        | Content |
 |---------------------------------------------|---------|
-| Performance improvement model.version.1     | [Sample ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Performance improvement mapping.version.1.1 | [Sample ER model mapping configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Performance improvement format.version.1.1  | [Sample ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Performance improvement model.version.1     | [Sample ER data model configuration](https://download.microsoft.com/download/4/6/f/46f0f3fa-782b-414a-8f7b-b6c64a388661/Performance_improvement_model.version.1.xml) |
+| Performance improvement mapping.version.1.1 | [Sample ER model mapping configuration](https://download.microsoft.com/download/8/9/1/8913a763-afb8-4bf4-aaf1-95ad793ffc5a/Performance_improvement_mapping.version.1.1.xml) |
+| Performance improvement format.version.1.1  | [Sample ER format configuration](https://download.microsoft.com/download/9/0/c/90c75963-bc78-4edc-9096-556bbe281f10/Performance_improvement_format.version.1.1.xml) |
 
 ## <a name="appendix2"></a>Appendix 2: Configure the ER framework
 
@@ -306,3 +304,6 @@ For more information about ER configuration providers, see [Create configuration
 - [Electronic Reporting overview](general-electronic-reporting.md)
 - [Trace the execution of ER formats to troubleshoot performance issues](trace-execution-er-troubleshoot-perf.md)
 - [Support parameterized calls of ER data sources of the Calculated field type](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

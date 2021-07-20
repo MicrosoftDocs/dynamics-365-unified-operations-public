@@ -4,11 +4,9 @@
 title: Subscription workflow overview 
 description: This topic provides an overview of subscription workflow. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -61,3 +59,6 @@ At the end of each month, one month's revenue can be accrued from the customer's
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

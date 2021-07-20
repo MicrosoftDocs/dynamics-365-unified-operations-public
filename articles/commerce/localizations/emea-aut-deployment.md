@@ -4,11 +4,9 @@
 title: Deployment guidelines for cash registers for Austria
 description: This topic is a deployment guide for the Commerce localization for Austria.
 author: AlexChern0v
-manager: ezubov
 ms.date: 
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -233,3 +231,6 @@ Follow these steps to create deployable packages that contain Commerce component
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 6. Complete the [Set up required parameters in Headquarters](#set-up-required-parameters-in-headquarters)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

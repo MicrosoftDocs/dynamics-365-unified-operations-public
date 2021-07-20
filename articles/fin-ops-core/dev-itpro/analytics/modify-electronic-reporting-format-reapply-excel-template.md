@@ -4,11 +4,9 @@
 title: Modify Electronic reporting formats by reapplying Excel templates
 description: This topic describes how to modify the Electronic reporting (ER) format that is used to generate business documents by reapplying a modified Excel template. 
 author: NickSelin
-manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,3 +35,6 @@ The Electronic reporting (ER) tool is used to generate business documents in an 
 The ER tool can be used to generate business documents as Microsoft Excel files. You can use an Excel document as a template for these documents. To define the document layout in the ER designer, you can import the contents of the Excel document that you want to use as a template into the defined ER format. For more details, and to practice this scenario, play the task guide **ER Design a configuration for generating reports in OPENXML format** (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process).
 
 If you edit the Excel document that is used as a template for a business document, new ER functionality lets you reapply the updated template to the ER format. The ER format is then updated so that it adheres to the updated template. For more details about this functionality, play the task guide **ER Modify a format by reapplying an Excel template** (part of the 7.5.5.3 Acquire/Develop IT service/solution components (10683) business process). In the task guide step where you import an updated template, use the modified template of the Payment Report Excel file, SampleVendPaymWsReport2, as a template.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

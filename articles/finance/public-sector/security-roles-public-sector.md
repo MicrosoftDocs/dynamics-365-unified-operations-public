@@ -4,11 +4,9 @@
 title: Security roles in the public sector
 description: This topic provides information about public sector security roles including the Project manager and Purchasing agent roles.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -99,10 +97,12 @@ The **Purchasing agent - Public Sector** security role supports the public secto
 ## What do I do next?
 After the users are created, you assign them to roles on the **Assign users to roles** page.
 
-Additional resources
---------
+## Additional resources
 
-[Role-based security](../../dev-itpro/sysadmin/role-based-security.md)
-
+[Role-based security](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md)
 
 
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

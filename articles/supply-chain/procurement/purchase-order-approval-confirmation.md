@@ -3,12 +3,10 @@
 
 title: Approve and confirm purchase orders
 description: This topic describes the statuses that a purchase order goes through after it has been created, and the effect of enabling change management on POs.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -26,7 +24,7 @@ ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -92,8 +90,7 @@ To cancel the whole quantity on a PO line, you should cancel the delivery remain
 
 If a PO is under change management, any change, such as cancellation of the order or the delivery remainder, must be submitted to the workflow system and approved before the process can be completed and the inventory transactions can be updated as canceled.
 
-Additional resources
---------
+## Additional resources
 
 [Purchase order overview](purchase-order-overview.md)
 
@@ -105,3 +102,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

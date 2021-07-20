@@ -4,11 +4,9 @@
 title: My team mobile workspace
 description: This topic provides information about the My team mobile workspace, which lets managers view their direct reports and extended staff.
 author: ShielaSogge
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -85,7 +83,7 @@ Download and install the Finance and Operations mobile app:
 3.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
 4.  After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
 
-[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Pull to refresh.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## View team members by using the My team mobile workspace
 1.	In the mobile app, select the **My team** workspace. A list of team members is shown. The list also shows each team member's title, and any direct reports that the member has.
@@ -102,3 +100,6 @@ Download and install the Finance and Operations mobile app:
 1.	Select **Send praise**. 
 1. Enter the text of the praise that you want to send. 
 1. Select **Done**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

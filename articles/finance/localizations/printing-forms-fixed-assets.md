@@ -4,11 +4,9 @@
 title: Unified printing forms for fixed assets (Russia)
 description: This topic includes information about fixed asset unified printing forms for Microsoft Dynamics 365 Finance in Russia.
 author: v-oloski
-manager: AnnBe
 ms.date: 04/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -86,11 +84,11 @@ For example, to create a Fixed asset inventory card (\#FA-6):
 1. Go to **Fixed asset (Russia)** \> **Common** \> **Fixed assets**.
 2. Select the **Fixed assets** tab, and then on the Action Pane, select **Documents** \> **Documents** \> **Inventory card (\#FA6)**.
 
-  ![Selection of FA inventory card](media/RUS-Selection-of-FA6-inventory-card.png) 
+  ![Selection of FA inventory card.](media/RUS-Selection-of-FA6-inventory-card.png) 
 
 3. Click **New** in the Inventory card (\#FA-6) page list to create the inventory card for the value model.
 
- ![FA inventory card](media/RUS-FA6-inventory-card.png)
+ ![FA inventory card.](media/RUS-FA6-inventory-card.png)
 
 
 After the record is created, you can print the unified form from this page list.
@@ -129,4 +127,7 @@ If there is only one unified printing form document for the selected fixed asset
 
 To print documents that are created from inquiries, go to **Fixed assets (Russia)** \> **Inquiries** \> **Documents**. Highlight the document to print and then select **Print**.
 
-![Print unified forms from Inquiries](media/RUS-Print-unified-forms.png)
+![Print unified forms from Inquiries.](media/RUS-Print-unified-forms.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create Windows installers for payment connectors
 description: This topic describes how to create a Windows installer for a payment connector. 
 author: RobinARH
-manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -56,7 +54,10 @@ The installer must install the required files in the following structure:
 
 The following illustration shows the file structure for a connector that is named TestConnector. 
 
-[![File structure for TestConnector](./media/paymentconnectorinstaller.png)](./media/paymentconnectorinstaller.png)
+[![File structure for TestConnector.](./media/paymentconnectorinstaller.png)](./media/paymentconnectorinstaller.png)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

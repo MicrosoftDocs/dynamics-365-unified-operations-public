@@ -4,11 +4,9 @@
 title: Advance reports with budget control (Russia)
 description: This topic shows how to generate subledgers from source documents such as invoices, packing slips, and picking lists for customers and vendors. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -65,3 +63,6 @@ Budget checking for advance reports makes sure that budget funds are available f
 ## Accounting distributions and subledger journals
 
 Subledger journal lines are accounting entries that are posted to the general ledger by using the general journal. You can generate subledgers from source documents such as invoices, packing slips, and picking lists for customers and vendors. Before you post the voucher information to the general ledger, you can view or modify subledger journals by using the distribution method. This method lets you allocate posting amounts among multiple financial dimensions. Depending on your user permissions, you can also change the default ledger account number or financial dimension values. Distributions serve as an interface to the subledger journals and contain only one side of the accounting entry.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

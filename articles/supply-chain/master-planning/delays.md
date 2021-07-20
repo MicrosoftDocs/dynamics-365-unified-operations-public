@@ -4,11 +4,9 @@
 title: Delays
 description: This topic provides information about delayed dates in master planning. A delayed date is a realistic due date that a transaction receives if the earliest fulfillment date that master planning calculates is later than the requested date.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 03/31/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,7 +56,9 @@ Action messages can also be used to identify planned orders that can be moved to
 
 On the **Planned order** page, under the **Delays** tab is the **Desired date** for the planned order. The desired date of a planned order is the base date for delays, which is a computed date that equals the **Requested date** calculated from the **Net Requirement**. If the planned order is a BOM line, production line or kanban line, the desired date is based on the **Requirement date** and the desired date will not be shown on the **Planned order** page.
 
-Additional resources
---------
+## Additional resources
 
 [Coverage settings](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up retail products
 description: This article describes how to set up products in Dynamics 365 Commerce.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -45,3 +43,6 @@ Before you can offer products for resale in your commerce channels, you must cre
 4. **Add products to assortments.** An assortment represents a collection of products that you offer in your channels. You can define one or more assortments, and each product can be assigned to one or more assortments. To assign products to channels, you assign the assortments to those channels. When you create an assortment, you can add products that haven't yet been released to a legal entity. However, you must release the products to a legal entity before those products can be made available to the channels.
 5. **Add products to navigation hierarchies.** Before products can be browsed online or in point of sale (POS), they must be categorized in a Commerce navigation hierarchy.
 6. **Add products to catalogs.** Although this step is optional for POS, online stores require that products be included in at least one catalog.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

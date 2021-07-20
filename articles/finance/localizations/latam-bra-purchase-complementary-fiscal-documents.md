@@ -4,11 +4,9 @@
 title: Purchase complementary fiscal documents for Brazil
 description: This topic describes the concept of a purchase complementary invoice for the Brazilian localization.
 author: sndray
-manager: AnnBe
 ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes the concept of a purchase complementary invoice for the Brazilian localization.
 
-Overview
---------
+## Overview
 
 According to the fiscal regulations in Brazil, a specific fiscal document that is known as a complementary invoice (Nota fiscal complementar) is issued or received for correction purposes. For example, if the prices of goods or services from the original invoice were incorrectly registered, a complementary invoice is required in order to fix the error. Complementary invoices are applicable only if the difference is positive. In other words, they are applicable only if the current prices or taxes amounts are more than original prices or taxes amounts. Because fiscal invoices of this type are considered complements of the original invoices, the original invoices don’t have to be canceled. Companies are obligated to issue or receive complementary invoices for the following reasons:
 
@@ -62,7 +59,7 @@ Before you can create and post purchase complementary fiscal document, the follo
 -   **Sales tax code for PIS** – Specify the sales tax code that is used for the PIS tax calculation amount.
 
 ## Examples
-[![Example that shows an original invoice together with purchase complementary fiscal documents of each of the three types](./media/purchcomplementary-1024x349.png)](./media/purchcomplementary.png)
+[![Example that shows an original invoice together with purchase complementary fiscal documents of each of the three types.](./media/purchcomplementary-1024x349.png)](./media/purchcomplementary.png)
 
 
 For more information, see the following topics:
@@ -71,3 +68,6 @@ For more information, see the following topics:
 
 [Cancel a purchase complementary fiscal document (Brazil)](tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

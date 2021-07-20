@@ -4,11 +4,9 @@
 title: Budgeting in the public sector overview
 description: This overview introduces you to the budgeting functionality that is available for public sector. This includes budget analysis, preliminary budgets and apportionments, and posting definitions.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 19471
+ms.custom: ["19471", "intro-internal"]
 ms.assetid: 8cecf3cc-8916-44d7-8c73-d6254a61f62b
 ms.search.region: Global
 ms.search.industry: Public sector
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This overview introduces you to the budgeting functionality that is available for public sector. This includes budget analysis, preliminary budgets and apportionments, and posting definitions.
 
-What are the prerequisites to setting up Budgeting in the public sector?
-------------------------------------------------------------------------
+## What are the prerequisites to setting up Budgeting in the public sector?
 
 To use budget control, you must set up basic budgeting. In the public sector configuration, you set it up at the same time as you set up basic budgeting. You should also do the following:
 
@@ -55,8 +52,7 @@ You may be required to set up the following Budgeting features:
 
 **Note** This also applies to General ledger, Accounts payable, and Accounts receivable.
 
-Additional resources
---------
+## Additional resources
 
 [Budgeting](../budgeting/budgeting-overview.md)
 
@@ -72,3 +68,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

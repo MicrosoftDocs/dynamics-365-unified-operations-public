@@ -4,11 +4,9 @@
 title: Foreign currency sales, purchases, and transfers
 description: This topic describes the functionality for registering transactions for the sale, purchase, and transfer of currency.
 author: anasyash
-manager: AnnBe
 ms.date: 02/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -100,7 +98,7 @@ Use the **Bank accounts** page to set up specific information for the sale or pu
 2. Create a bank account, or select an existing bank account.
 3. On the **Payment management** FastTab, in the **Order template (currency sale)** and **Order template (currency purchase)** fields, select the Microsoft Word template.
 
-For more information, see [Set up Bank accounts (Russia)](https://docs.microsoft.com/dynamics365/finance/localizations/rus-local-settings-requisites-bank-module).
+For more information, see [Set up Bank accounts (Russia)](./rus-local-settings-requisites-bank-module.md).
 
 ### Set up a number sequence
 
@@ -395,3 +393,6 @@ You post the settlement of foreign currency purchase transactions to generate fo
 4. Select **Post**. The exchange rate difference transaction is generated. Ledger accounts for the foreign currency exchange difference are taken from the **Realized gain** and **Realized loss** accounts that are specified in the setup of foreign currency parameters.
 5. You can review the transactions that are generated. On the **Bank groups** page, select **Transactions**.
 6. You can also post an unsettlement of transactions. On **Bank groups** page, select **Functions \> Closed transitions editing**, mark transactions, and then select **Reverse**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

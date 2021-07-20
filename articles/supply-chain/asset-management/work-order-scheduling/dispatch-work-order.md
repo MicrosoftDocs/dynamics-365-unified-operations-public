@@ -3,12 +3,10 @@
 
 title: Dispatch work order
 description: This topic explains how to dispatch a work order in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -59,8 +57,11 @@ You can schedule one work order or work order jobs to one worker using the **Dis
 
 The figure below shows an example of dispatch selections in the **Schedule work order** dialog.
 
-![Figure 1](media/04-work-order-scheduling.png)
+![Figure 1.](media/04-work-order-scheduling.png)
 
 [!NOTE]
 If you want to delete the schedule on a work order, select the work order in **All work orders**, and then click **Delete schedule** on the **General** tab. Remember to manually update the work order lifecycle state if you delete the schedule.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

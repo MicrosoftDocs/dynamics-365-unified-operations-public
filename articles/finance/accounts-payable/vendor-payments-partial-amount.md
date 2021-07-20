@@ -4,11 +4,9 @@
 title: Vendor payments for a partial amount
 description: Sometimes, you might make a payment to a vendor that is less than the amount of an invoice. This article describes the various options for handling this situation. 
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Sometimes, you might make a payment to a vendor that is less than the amount of an invoice. This article describes the various options for handling this situation. The options that are available to you depend on your business requirements and configuration. 
 
-Cash discount amounts
----------------------
+## Cash discount amounts
 
 A vendor can offer you a cash discount for paying an invoice before the due date. For example, you enter an invoice for 100.00 that specifies a 2-percent cash discount if the invoice is paid within 10 days. The due date terms are 30 days. If a payment proposal uses the cash discount as a criterion for selecting an invoice, and if the proposal is run on or before the cash discount date, the invoice is selected for payment, and the payment is created for 98.00. A cash discount can also be taken for a one-off payment that was created manually.
 
@@ -58,3 +55,6 @@ You might make a partial payment where the amount that must still be settled is 
 
 
 For more information, see [Vendor payment overview](../cash-bank-management/tasks/vendor-payment-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

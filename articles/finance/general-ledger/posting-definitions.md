@@ -4,11 +4,9 @@
 title: Posting definitions
 description: This article provides information about posting definitions, and how to define and link them. For supported posting types and documents, you can use posting definitions instead of posting profiles to classify main accounts and financial dimensions on accounting entries.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -66,3 +64,6 @@ The following restrictions apply when you create links in posting definitions:
 For more information, see [Posting definition examples](example-posting-definitions.md). 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

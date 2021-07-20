@@ -4,11 +4,9 @@
 title: Data import and export jobs overview
 description: Use the Data management workspace to create and manage data import and export jobs.
 author: Sunil-Garg
-manager: AnnBe
-ms.date: 11/02/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -19,6 +17,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sunilg
@@ -114,7 +113,7 @@ There are two mapping views: **Mapping visualization**, which is the default vie
 
 You can generate a mapping on the page by selecting **Generate source mapping**. A generated mapping behaves like an automatic mapping. Therefore, you must manually map any unmapped fields.
 
-![Data mapping](./media/dixf-map.png)
+![Data mapping.](./media/dixf-map.png)
 
 ## Verify the security for your import or export job
 Access to the **Data management** workspace can be restricted, so that non-administrator users can access only specific data jobs. Access to a data job implies full access to the execution history of that job and access to the staging tables. Therefore, you must make sure that appropriate access controls are in place when you create a data job.
@@ -140,7 +139,7 @@ You can run a job one time by selecting the **Import** or **Export** button afte
 ## Validate that the job ran as expected
 The job history is available for troubleshooting and investigation on both import and export jobs. Historical job runs are organized by time ranges.
 
-![Job history ranges](./media/dixf-job-history.md.png)
+![Job history ranges.](./media/dixf-job-history.md.png)
 
 Each job run provides the following details:
 
@@ -169,19 +168,7 @@ To speed up the import of data, parallel processing of importing a file can be e
     - In the **Import threshold record count** field, enter the threshold record count for import. This determines the record count to be processed by a thread. If a file has 10K records, a record count of 2500 with a task count of 4 will mean, each thread will process 2500 records.
     - In the **Import task count** field, enter the count of import tasks. This must not exceed the max batch threads allocated for batch processing in **System administration \>Server configuration**.
 
-## Clean up the staging tables
-Starting in Platform update 29, this functionality has been deprecated. This is replaced by a new version of job history clean-up functionality explained below.
-
-You can clean up staging tables by using the **Staging clean up** feature in the **Data management** workspace. You can use the following options to select which records should be deleted from which staging table:
-
-- **Entity** – If only an entity is provided, all records from that entity’s staging table are deleted. Select this option to clean up all the data for the entity across all data projects and all jobs.
-- **Job ID** – If only a job ID is provided, all records for all entities in the selected job are deleted from the appropriate staging tables.
-- **Data projects** – If only a data project is selected, all records for all entities and across all jobs for the selected data project are deleted.
-
-You can also combine the options to further restrict the record set that is deleted.
-
-## Job history clean up (available in Platform update 29 and later)
-
+## Job history clean up 
 The job history clean-up functionality in data management must be used to schedule a periodic cleanup of the execution history. This functionality replaces the previous staging table clean-up functionality, which is now deprecated. The following tables will be cleaned up by the clean-up process.
 
 -   All staging tables
@@ -250,3 +237,6 @@ To download the archived execution history, go to the data management workspace 
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

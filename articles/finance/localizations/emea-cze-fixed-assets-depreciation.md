@@ -4,11 +4,9 @@
 title: Fixed assets depreciation methods for the Czech Republic
 description: This topic provides information about fixed assets depreciation for legal entities in the Czech Republic. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -116,3 +114,6 @@ This example shows depreciation calculated using the accelerated CZ method of de
 | 7                   | (2\* 12431) / (4 - 2) = 12 430   |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

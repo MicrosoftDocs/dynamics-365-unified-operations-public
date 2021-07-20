@@ -4,11 +4,9 @@
 title: Manage support experiences for Finance and Operations apps
 description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents. 
 author: kfend
-manager: AnnBe
-ms.date: 10/13/2020
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -38,11 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 2. Click the **Support** tile.
 
-   ![Support menu](media/CPS1.png)
+   ![Support menu.](media/CPS1.png)
 
 3. On the **Submitted to Microsoft** tab, click the **Submit an incident** button.
 
-   ![Support button](media/CPS2.png)
+   ![Support button.](media/CPS2.png)
 
 4. Select an issue category.
 
@@ -92,11 +90,11 @@ To link your contract ID/access ID to your account, complete the following steps
 1. From within a project, select **Support** from the main menu, and then select **Manage Support plans**. 
 2. Select **Add contract**.
 
-   ![Add contract](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+   ![Add contract.](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
 3. Enter your access ID and your password or contract ID, and then select **Add contract**.
 
-   ![Add contract credentials](media/4abba1127549ef484a58daf51609d924.png)
+   ![Add contract credentials.](media/4abba1127549ef484a58daf51609d924.png)
 
 ### PartnerSource Business Center account
 The following support plan incidents can be used as part of your PartnerSource Business Center (PSBC) account if they exist: 
@@ -110,7 +108,7 @@ The following support plan incidents can be used as part of your PartnerSource B
 
 If you do not find the PartnerSource Business Center account, ensure that your sign in is added as a professional in your organization in PSBC. Make sure that you are signing in with the same Microsoft or work account login. This account is only applicable in an on-premises project.
 
-![Add contract](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+![Add contract.](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
 ### Sign-in specific options
 The following incidents and support benefits will appear based on your sign in, if applicable:
@@ -136,13 +134,14 @@ The following entitlements can be added by linking a subscription number and con
 
 To add, select **Add a Software Assurance plan** when you create the support incident. Enter the subscription number and the contact email, and then click **Continue**.
 
-![Software Assurance plan](media/cd8f65a32c30722ea687dfbc5cc30874.png)
+![Software Assurance plan.](media/cd8f65a32c30722ea687dfbc5cc30874.png)
    
 ## Report production outage
 For a quick and effective way to escalate issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable, see [Report a production outage](report-production-outage.md).
 
 ## Phone support
-We prefer that you contact Support following the steps in [Open a new incident](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident). If you're unable to open a new incident in LCS, phone support is available using one of the following options:
+We prefer that you contact Support following the steps in [Open a new incident](cloud-powered-support-lcs.md#open-a-new-incident). If you're unable to open a new incident in LCS, phone support is available using [Premier phone support](https://support.microsoft.com/premier/contacts).
 
-- [Premier phone support](https://support.microsoft.com/premier/contacts)
-- [Broad commercial phone support](https://docs.microsoft.com/dynamics/s-e/)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

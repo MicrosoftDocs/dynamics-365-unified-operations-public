@@ -4,11 +4,9 @@
 title: Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment
 description: This topic explains how to enable and test Azure Data Lake Storage for a Dynamics 365 Commerce environment, which is a prerequisite for enabling product recommendations.
 author: bebeale
-manager: AnnBe
 ms.date: 04/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -34,8 +32,6 @@ ms.dyn365.ops.version: 10.0.5
 [!include [banner](includes/banner.md)]
 
 This topic explains how to enable and test Azure Data Lake Storage for a Dynamics 365 Commerce environment, which is a prerequisite for enabling product recommendations.
-
-## Overview
 
 In the Dynamics 365 Commerce solution, all product and transaction information is tracked in the environment's Entity store. To make this data accessible to other Dynamics 365 services, such as data analytics, business intelligence, and personalized recommendations, it is necessary to connect the environment to a customer-owned Azure Data Lake Storage Gen 2 solution.
 
@@ -67,7 +63,7 @@ For a more in-depth overview of the steps required to enable Azure Data Lake Sto
 
 The following image shows an example Azure Data Lake Storage configuration.
 
-![Example of Azure Data Lake Storage configuration](./media/exampleADLSConfig1.png)
+![Example of Azure Data Lake Storage configuration.](./media/exampleADLSConfig1.png)
 
 ### Test the Azure Data Lake Storage connection
 
@@ -87,7 +83,7 @@ To enable automatic refresh for Entity store, follow these steps.
 
 The following image shows an example of Entity store with automatic refresh enabled.
 
-![Example of Entity store with automatic refresh enabled](./media/exampleADLSConfig2.png)
+![Example of Entity store with automatic refresh enabled.](./media/exampleADLSConfig2.png)
 
 Azure Data Lake Storage is now configured for the environment. 
 
@@ -118,3 +114,6 @@ If not completed already, follow the steps for [enabling product recommendations
 [Create recommendations with demo data](product-recommendations-demo-data.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

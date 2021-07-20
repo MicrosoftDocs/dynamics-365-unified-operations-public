@@ -1,95 +1,57 @@
 ---
-# required metadata
-
-title: Commerce Scale Unit architecture
-description: This article describes the architecture of Commerce Scale Unit. Commerce Scale Unit provides stateless services and business logic for Modern Point of Sale (POS) and E-Commerce clients.
-author: RobinARH
-manager: AnnBe
+title: Headless commerce architecture
+description: This topic describes the architecture of the headless commerce.
+author: mugunthanm
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-365-retail
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 31521
-ms.assetid: 3a169648-592b-4616-9834-598c0244a852
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: meeram
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.author: mumani
+ms.search.validFrom: 2021-02-28
+ms.dyn365.ops.version: AX 10.0.16
 ---
 
-# Commerce Scale Unit architecture
+# Headless commerce architecture
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the architecture of Commerce Scale Unit. Commerce Scale Unit provides stateless services and business logic for  Modern Point of Sale (MPOS) and E-Commerce clients.
+This topic describes the architecture of the headless commerce (also known as Commerce Scale Unit). The headless commerce is an API-driven framework that enables extensible, personalized, friction-free commerce experiences, and integrated, optimized back-office operations.
 
-Commerce Scale Unit architecture
---------------------------
+![Commerce Scale Unit architecture.](./media/CSU.PNG)
 
-The commerce runtime is wrapped in a Commerce Scale Unit layer. Commerce Scale Unit uses a web API and OData to support thin clients both in the store and online on tablets and phones. The commerce runtime communicates with Headquarters through Commerce Data Exchange services. The following diagram shows the architecture of Commerce Scale Unit. 
+## Omnichannel solution provided by the headless commerce
 
-[![Commerce Scale Unit architecture diagram](./media/retailserver.png)](./media/retailserver.png) 
+The commerce APIs of the headless commerce are consumed by Microsoft Dynamics 365 Commerce (back-office, in-store, call center, and e-commerce) and provide a complete omnichannel solution. The APIs can be consumed by third-party applications and Microsoft Power Platform connectors.
 
-Commerce Scale Unit uses the following concepts.
+![Commerce Scale Unit platform integration.](./media/CSUConsumer.PNG)
 
-<table>
-<thead>
-<tr class="header">
-<th>Concept</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Entity type</td>
-<td>An entity type is an entity that has a life cycle that you want to monitor. Each entity type has a key. An example of an entity type is <strong>Customer</strong>.</td>
-</tr>
-<tr class="even">
-<td>Complex type</td>
-<td>A complex type is an OData concept that is designed to prevent duplication by grouping specific related properties. These related properties can be reused in multiple entities. For example, <strong>Customer</strong> is an entity type that has a customer address. This customer address is a wrapper that contains an address line, city, state, and ZIP/postal code. Therefore, <strong>Customer address</strong> is a complex type that can be reused by other entity types. For example, the <strong>Order</strong> entity type requires the same address information that is associated with the <strong>Customer</strong> entity type and therefore reuses the <strong>Customer address</strong> complex type.</td>
-</tr>
-<tr class="odd">
-<td>Controller</td>
-<td>A controller is a mapping for an entity type that controls create, read, update, and delete (CRUD) behaviors and actions for the entity type. A controller is provided for each commerce entity. You can customize the following controllers:
-<ul>
-<li>Carts</li>
-<li>Catalogs</li>
-<li>Categories</li>
-<li>Commerce</li>
-<li>Commerce Lists</li>
-<li>Composite Key Entity</li>
-<li>Controller Assembly Resolver</li>
-<li>Customers</li>
-<li>Employees</li>
-<li>Non-Bindable Action</li>
-<li>Org Units</li>
-<li>Picking Lists</li>
-<li>Products</li>
-<li>Purchase Orders</li>
-<li>Sales Orders</li>
-<li>Shifts</li>
-<li>Stock Counts Journals</li>
-<li>Transfer Orders</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Metadata</td>
-<td>Metadata defines the contract between the client and the server.</td>
-</tr>
-</tbody>
-</table>
+## Components
 
-You can create your own entity type or complex type, extend an existing controller, add a new controller, and customize the metadata. If you customize the commerce runtime, you must also customize various components in Commerce Scale Unit to expose those changes to your Retail Modern POS clients.
+The headless commerce contains these components:
+
++ Consumer APIs
++ Commerce runtime (CRT)
++ Channel database
+
+### Consumer APIs
+
+The headless commerce exposes Open Data Protocol (OData) APIs for Dynamics 365 Commerce and third-party applications to consume. The API layer is built by using ASP.NET Core. It provides different authentication options so that the clients can consume the APIs. The APIs are a wrapper that exposes the business logic. For more information, see the following topics:
+
++ [Commerce Scale Unit customer and consumer APIs](retail-server-customer-consumer-api.md)
++ [Consume APIs](consume-retail-server-api.md)
++ [Custom APIs](retail-server-icontroller-extension.md)
+
+### Commerce runtime
+
+CRT is a collection of portable .NET libraries that contain the core commerce business logic. The consumer APIs expose the business logic for clients to consume. To add or modify business logic, customize CRT. For more information, see the following topics:
+
++ [Commerce runtime (CRT) services](crt-services.md)
++ [CRT Extensions](commerce-runtime-extensibility.md)
+
+### Channel database
+
+The channel database holds transactional data and master data from one or more commerce channels, such as an online store or a brick-and-mortar store. Master data is pushed down from Commerce headquarters to the channel database by using Commerce Data Exchange (CDX). Transactional data that is stored in the channel database is pulled back to Commerce headquarters by using CDX. For more information, see [Channel database extensions](channel-db-extensions.md).
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

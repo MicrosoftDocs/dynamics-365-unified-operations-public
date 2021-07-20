@@ -4,11 +4,9 @@
 title: Form Part Section List form patterns
 description: This topic provides information about the Form Part Section List form patterns, which were developed to show filtered lists inside workspaces.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the Form Part Section List form patterns. These workspace-specific patterns have been developed to show filtered lists inside workspaces.
 
-Usage
------
+## Usage
 
 The Form Part Section List form patterns are workspace-specific patterns that are used to show filtered lists. The tabbed section of the workspace contains a set of vertical tabs. Each tab contains a Form Part Control that points to a form that contains one of the Form Part Section List patterns. Two patterns are described in this article:
 
@@ -46,11 +43,11 @@ The Form Part Section List form patterns are workspace-specific patterns that ar
 ## Wireframe
 ### Form Part Section List
 
-[![Wireframe for Form Part Section List form pattern](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)
+[![Wireframe for Form Part Section List form pattern.](./media/formpartsectionlistwireframe.png)](./media/formpartsectionlistwireframe.png)
 
 ### Form Part Section List - Double
 
-[![Wireframe for Form Part Section List--Double form pattern](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
+[![Wireframe for Form Part Section List--Double form pattern.](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
 
 ## Pattern changes for Finance and Operations
 These patterns did not exist for Microsoft Dynamics AX 2012.
@@ -115,13 +112,13 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **PurchOrderProcessReceiptsWorkspace** &gt; **PurchOrdersWithDelayedReceiptsPart** (**All workspaces** &gt; **Purchase order receipt and follow-up**) 
 
-[![Form Part Section List example](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)
+[![Form Part Section List example.](./media/formpartsectionlistexample.png)](./media/formpartsectionlistexample.png)
 
 ### Form Part Section List - Double
 
 Form: **BudgetTrackingWorkspace** &gt; **BudgetTransactionPart** (**All workspaces** &gt; **Ledger budgets and forecasts**) 
 
-[![Form Part Section List--Double example](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)
+[![Form Part Section List--Double example.](./media/formpartsectionlistdoubleexample.png)](./media/formpartsectionlistdoubleexample.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -131,3 +128,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

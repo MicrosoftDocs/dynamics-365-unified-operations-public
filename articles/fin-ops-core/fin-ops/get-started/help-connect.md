@@ -2,13 +2,11 @@
 # required metadata
 
 title: Configure the Help experience for Finance and Operations apps
-description: This topic provides information about the components of the Help system for some Microsoft Dynamics 365 apps. It also explains how to connect those apps and provides a summary of the process for creating custom Help. 
+description: This topic provides information about the components of the Help system for some Microsoft Dynamics 365 apps.
 author: margoc
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -39,7 +37,7 @@ In this topic, you will find an overview of the components of the Help system fo
 
 Finance and Operations apps include conceptual overviews and other topics that are published to the [https://docs.microsoft.com/dynamics365](/dynamics365/) site. This content can then be accessed from the in-product **Help** pane. The following illustration shows the parts of the Help system.
 
-[![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
+[![Help architecture.](./media/help-architecture.png)](./media/help-architecture.png)
 
 The in-product Help system pulls articles from docs.microsoft.com and other connected websites. It also pulls in task guides that are stored in Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -54,14 +52,14 @@ On the **System parameters** page, system admins can configure access to the rel
 > - To configure Help, you must sign in by using an account in the same tenant as the tenant where the app is deployed.
 > - An LCS library can't be connected from an instance of the app that is running on a local virtual hard drive (VHD).
 
-[![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![System Parameters form with Help settings.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 To configure task guides for a solution, follow these steps on the **System parameters** page.
 
 > [!IMPORTANT]
 > The first time that you open the **Help** tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the **System Parameters** page.
 >
-> [![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png "Connect to LCS")](./media/connect-to-lcs-crop.png)
+> [![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png "Connect to LCS."](./media/connect-to-lcs-crop.png)
 
 1. Select the Lifecycle Services project to connect to.
 2. Select the BPM libraries (within the selected project) to retrieve task recordings from.
@@ -104,3 +102,6 @@ If you want to collaborate with Microsoft on tools and processes for customizing
 [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md)  
 [Create documentation or training with Task Recorder](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Custom Help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

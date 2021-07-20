@@ -3,11 +3,9 @@
 title: Lookup module
 description: A lookup is an input control that is used to select an input from a list of options.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -149,3 +147,6 @@ For example, a lookup could be used to lookup a customer when linking a customer
 | [OnOptionSelected](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#onoptionselected) |OnOptionSelected: function(lookup: any, lookupEntityData: any): void (optional)  <br>|An event that is triggered by an option being selected.<br>  |
 | [OnValueChanged](../interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md#onvaluechanged) |OnValueChanged: function(value: any): void (optional)  <br>|An event that is triggered by a value being changed.<br>  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

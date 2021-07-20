@@ -4,11 +4,9 @@
 title: ADDDAYS ER function
 description: This topic provides information about how the ADDDAYS Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -72,3 +70,6 @@ A positive value for `days` yields a future date. A negative value yields a past
 ## Additional resources
 
 [Date and time functions](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

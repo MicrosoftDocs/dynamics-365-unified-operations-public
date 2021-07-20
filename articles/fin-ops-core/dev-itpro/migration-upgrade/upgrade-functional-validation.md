@@ -4,11 +4,9 @@
 title: Upgrade from AX 2012 - Functional test passes
 description: This topic explains how to perform a functional test pass to validate an upgraded Finance and Operations environment. 
 author: tariqbell
-manager: AnnBe
 ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -55,3 +53,6 @@ For example, here are the stages of a production test flow:
 
 In this production test flow, each stage can be performed by using either new records or old records as input. The result is a matrix of tests that covers every combination of old and new data. For some processes, test matrices might seem excessive, and they might actually be excessive in practice. Therefore, you can decide to focus on certain combinations that you predict will be used the most. However, it's still helpful for you to know what you aren't covering. Make a conscious decision, where you know what you have, what you’re going to focus most of the testing on, and what you’re not going to focus on.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

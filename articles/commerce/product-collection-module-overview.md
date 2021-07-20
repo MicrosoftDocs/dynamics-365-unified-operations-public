@@ -4,11 +4,9 @@
 title: Product collection modules
 description: This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Product collection modules
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 
@@ -47,7 +44,7 @@ The sources for product collections can be lists of the following four types:
 
 The following illustration shows the different types of product collections being used on an e-Commerce site.
 
-![Example of the different types of product collections on an e-Commerce site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Example of the different types of product collections on an e-Commerce site.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Always use product collection modules to show a group of products of a similar type.
@@ -116,3 +113,6 @@ The following table shows the list types that are available for selection in the
 [Product recommendations overview](product-recommendations.md)
 
 [Quick view module](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: HierarchyViewer control
 description: This article describes the HierarchyViewer control, which lets you represent hierarchical relationships for people, products, or organizations.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,12 +33,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the HierarchyViewer control, which lets you represent hierarchical relationships for people, products, or organizations.
 
-Overview
---------
+## Overview
 
 The HierarchyViewer control lets you represent hierarchical relationships for people, products, or organizations. It's used primarily as a graphical means to help you understand hierarchical relationships in a traditional top-down manner, and as way to navigate to the entity that is represented by the focused node. The HierarchyViewer control lets you walk through deeply nested, multilevel content in a compact space. The control expands and collapses nodes to control the parts of the tree structure that are shown. Because it's an unbound control, the HierarchyViewer data is managed by an abstraction class and is used primarily as a way to visualize data in a simple tree relationship. For hierarchy data in a traditional tree, there is a standard tree control. 
 
-[![Diagram showing HierarchyViewer control tree structure](./media/hierarchyviewer_page.png)](./media/hierarchyviewer_page.png) 
+[![Diagram showing HierarchyViewer control tree structure.](./media/hierarchyviewer_page.png)](./media/hierarchyviewer_page.png) 
 
 The HierarchyViewer control shows, at most, three levels on a single branch at any time. A breadcrumb trail shows the path of parents down the current tree branch. The top level shows the current top node and will always have one member. This member isn't necessarily the root. The second level, the child node, can have an indefinite number of member nodes. By default, three of these member nodes are shown on each page. The number of member nodes that is shown can be set by using the **Number of children** property. The control will page right and left through the members of the child level. The last level, the grandchild node, can have an indefinite number of member nodes. The number of visible member nodes is controlled by the **Number of Grandchildren** property. The HierarchyViewer control will page up and down through members of the grandchild level. The interactive display of nodes requires no business logic.
 
@@ -66,7 +63,7 @@ To create a HierarchyViewer instance:
 1.  In the form designer, add an instance of HierarchyViewer to your form.
 2.  In the **Properties** pane, accept the default number of visible children and grandchildren, or set new values. 
 
-![Screen shot of Properties pane](./media/hierarchyviewer_properties-256x300.png)
+![Screen shot of Properties pane.](./media/hierarchyviewer_properties-256x300.png)
 
 The HierarchyViewer control is primarily a visually interactive way of navigating or interrogating nodes in a static manner. The HierarchyViewer control isn't bound to a data source. Instead, the control is managed by a corresponding controller class that extends the base **HierarcyDesignerBase**. You initialize that class with data, and bind to the control instance and the visible fields of the HierarchyViewer node.
 
@@ -114,3 +111,6 @@ You can't change node visuals. The intended design is for the control to offer a
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

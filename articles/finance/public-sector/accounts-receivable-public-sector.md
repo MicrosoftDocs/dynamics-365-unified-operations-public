@@ -4,11 +4,9 @@
 title: Accounts receivable in the public sector overview
 description: This topic describes the Accounts receivable functionality that is available for the public sector.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 26281
+ms.custom: ["26281", "intro-internal"]
 ms.assetid: a411ec87-a209-471c-a141-5f5a92f2e45e
 ms.search.region: Global
 ms.search.industry: Public sector
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the Accounts receivable functionality that is available for the public sector.
 
-How do I set Accounts receivable parameters for the public sector?
-------------------------------------------------------------------
+## How do I set Accounts receivable parameters for the public sector?
 
 Most Accounts receivable parameters are set the same way whether you’re in the public sector or the private sector. However, the parameters that are required for billing classifications and billing codes are used only by the public sector. For more information, see [Billing classifications and billing codes in the public sector](billing-classifications-billing-codes-public-sector.md).
 
@@ -62,8 +59,7 @@ You can keep the default financial dimensions for the customer group. Just go to
 ## What can I use Accounts receivable posting definitions for?
 You can use posting definitions to create subledger journal lines for originating transactions that meet selected criteria - for example, to generate multiple, balanced, ledger entries based on attributes such as transaction types and accounts. To learn more about posting definitions, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
 
-Additional resources
---------
+## Additional resources
 
 [Accounts receivable](../accounts-receivable/accounts-receivable.md)
 
@@ -74,3 +70,6 @@ Additional resources
 [Create and assign a trading partner code](tasks/create-assign-trading-partner-code-public-sector.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

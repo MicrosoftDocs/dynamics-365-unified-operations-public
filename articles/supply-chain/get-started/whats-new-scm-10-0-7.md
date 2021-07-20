@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.7 (January 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.7. 
 author: josaw1
-manager: tfehr
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -58,7 +56,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.7 includes Platform update 3
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 
@@ -70,3 +68,5 @@ The [Removed or deprecated features in Dynamics 365 Supply Chain Management](rem
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Purchase spend analysis Power BI content
 description: This topic describes what is included in the Purchase spend analysis Power BI content.
 author: FrankDahl
-manager: AnnBe
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -159,3 +157,6 @@ The following key dimensions in the content are used as filters to slice the agg
 | Dates                  | Dates, Year offset                                    |
 
 By default, the content shows data for the current calendar year. However, you can change the date filter in the report filters section. You can also change the company filter.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

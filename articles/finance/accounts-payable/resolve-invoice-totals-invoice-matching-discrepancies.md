@@ -4,11 +4,9 @@
 title: Resolve discrepancies during invoice totals matching overview
 description: You can use invoice totals matching to help guarantee that total invoice amounts don't deviate from expected amounts by more than an acceptable variance.
 author: abruer
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 63413
+ms.custom: ["63413", "intro-internal"]
 ms.assetid: 9ac42457-95b2-4191-ad06-c7e323704466
 ms.search.region: Global
 # ms.search.industry: 
@@ -48,3 +46,6 @@ After you identify a discrepancy, you might have to contact the vendor if you th
 For more information, see [Research/Resolve exceptions](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

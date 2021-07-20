@@ -4,11 +4,9 @@
 title: SEPA direct debit overview
 description: The Single Euro Payments Area (SEPA) is set up by the European Commission, and dictates that all electronic payments are considered domestic, regardless of the country/region where the individual, business, or organization, and the bank are located. There is no difference between national and cross-border payments. The SEPA includes the 28 European Union (EU) member states, as well as Iceland, Liechtenstein, Norway, Switzerland, Monaco and San Marino. The SEPA helps form a single market for payment transactions within the European Economic Area (EEA). Ultimately, the SEPA is expected to reduce the number of payment formats that banks, businesses, and individuals must work with.   
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 11144
+ms.custom: ["11144", "intro-internal"]
 ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 ms.search.region: Global
 # ms.search.industry: 
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Single Euro Payments Area (SEPA) is set up by the European Commission, and dictates that all electronic payments are considered domestic, regardless of the country/region where the individual, business, or organization, and the bank are located. There is no difference between national and cross-border payments. The SEPA includes the 28 European Union (EU) member states, as well as Iceland, Liechtenstein, Norway, Switzerland, Monaco and San Marino. The SEPA helps form a single market for payment transactions within the European Economic Area (EEA). Ultimately, the SEPA is expected to reduce the number of payment formats that banks, businesses, and individuals must work with.   
 
-What is the goal of SEPA direct debits?
----------------------------------------
+## What is the goal of SEPA direct debits?
 
 A SEPA direct debit allows a creditor to collect funds from a customer’s bank account, provided that a signed mandate has been granted by the customer to the creditor. The customer signs a mandate that authorizes the creditor to collect a payment and instructs the customer’s bank to pay the collection. 
 
@@ -88,3 +85,6 @@ Under both SEPA Direct Debit schemes, customers have certain rights to refunds. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

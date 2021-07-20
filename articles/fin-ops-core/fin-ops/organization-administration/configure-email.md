@@ -4,11 +4,9 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,43 +44,67 @@ On the **Email parameters** page, note the following settings on the **Configura
 | Batch email provider  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Exchange provider will use the account associated with the batch process. |
 | Attachment size limit | Specifies the maximum size of a single email that can be sent via the email subsystem. |
 
-In Platform update 32, an **Email history** page was added to allow administrators to review all sent emails, including any errors that might have prevented an email from being sent. By default, the last 30 days of email history is retained. This can be configured by changing the **Number of days to retain email history** to a non-zero amount. Zero provides the default amount and behavior.
+The **Email history** section serves two purposes. First, it provides an entry point to the **Email history** page, which allows administrators to review all sent emails, including any errors that might have prevented an email from being sent. Second, it allows you to configure how long to maintain email history. By default, the last 30 days of email history is retained. This can be adjusted by changing the **Number of days to retain email history** field to a non-zero amount. A value of zero reverts back to the default amount and behavior.
 
-In version 10.0.16/Platform 40, an **Email throttling** section is visible, if your environment has enabled the **Email throttling** feature in Feature management. This feature allows non-interactive email providers  (such as the batch email provider) to adhere to a per-minute sending limit. This can prevent errors from the system attempting to send more emails than the provider allows. The sending limits for Microsoft 365 email providers are set automatically according to [Exchange Online sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits?sending-limits#sending-limits). Manual configuration is required for all other email providers. The per-minute sending limit can be removed from a provider by resetting the **per-minute email sending limit** field to 0.
+In version 10.0.16, an **Email throttling** section is visible if the **Email throttling** feature has been turned on for your environment in Feature management. This feature enables non-interactive email providers (such as the batch email provider) to adhere to a per-minute sending limit. Therefore, it can help prevent some errors if the system tries to send more emails than the provider allows. Specifically, if an email can't be originally sent because the per-minute sending limit has been reached, the send attempt for the email will be deferred for up to one minute. After ten deferrals, the system will try to send the email even if the per-minute sending limit has been reached. The sending limits for Microsoft 365 email providers are automatically set according to [Exchange Online sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits). Manual configuration is required for all other email providers. You can remove the per-minute sending limit from a provider by resetting the **per-minute email sending limit** field to **0**.
 
 ### SMTP settings tab
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
 
+#### Server information
 <table>
-<thead>
+<thead>  
 <tr>
 <th>Field</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Outgoing mail server</td>
-<td>The host name of the desired SMTP server.
-<ul>
-<li>For <a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Microsoft 365 production</a> (including *.onmicrosoft.com accounts) use smtp.office365.com. (You can find this setting at outlook.office.com at <strong>Settings</strong> &gt; <strong>Mail</strong> &gt; <strong>POP and IMAP</strong>.)</li>
-<li>For Outlook/Hotmail use smtp-mail.outlook.com.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>SMTP port number</td>
-<td>Typically, the port number should be set to 587 for secure transport.</td>
-</tr>
-<tr>
-<td><strong>User name</strong> and <strong>Password</strong></td>
-<td>Specify, as needed, to send the email via the appropriate mail account. All users need to provide the SMTP account <strong>Send As</strong> and <strong>Send On Behalf Of</strong> permissions to enable the ability to send Simple Mail Transfer Protocol (SMTP) mail. You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin), at <strong>Users</strong> &gt; <strong>Active users</strong> &gt; <strong>User</strong> &gt; <strong>Edit mailbox permissions</strong> &gt; <strong>Send email from this mailbox</strong>. For more information, see <a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Enable sending email from another user's mailbox in Microsoft 365</a>.</td>
-</tr>
-<tr>
-<td>Specify if SSL is required</td>
-<td>Determines whether secure transport is used. Typically, this is <strong>Yes</strong>, except for internal or troubleshooting scenarios.</td>
-</tr>
+  <tr>
+    <td>Outgoing mail server</td>
+    <td>The host name of the desired Simple Mail Transfer Protocol (SMTP) server.
+      <ul>
+        <li>For <a href="https://support.office.com/article/Outlook-settings-for-POP-and-IMAP-access-for-Office-365-for-business-or-Microsoft-Exchange-accounts-7fc677eb-2491-4cbc-8153-8e7113525f6c">Microsoft 365 production</a> (including *.onmicrosoft.com accounts), use smtp.office365.com. (You can find this setting at outlook.office.com at <strong>Settings</strong> &gt; <strong>Mail</strong> &gt; <strong>POP and IMAP</strong>.)</li>
+        <li>For Outlook/Hotmail, use smtp-mail.outlook.com.</li>
+      </ul>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>SMTP port number</td>
+    <td>Typically, the port number should be set to 587 for secure transport.</td>
+  </tr>
+
+  <tr>
+    <td>SSL required</td>
+    <td>Determines whether secure transport is used. Typically, this is <strong>Yes</strong>, except for internal or troubleshooting scenarios.</td>
+  </tr>
 </tbody>
+</table>  
+  
+#### Authentication
+
+<table>
+<thead>  
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Authentication required</td>
+    <td>Determines whether a user name and password are needed to send emails. </td>
+  </tr>
+
+  <tr>
+    <td><strong>User name</strong> and <strong>Password</strong></td>
+    <td>If authentication is required, specify the appropriate mail account to send email from. All users need to provide the SMTP account <strong>Send As</strong> and <strong>Send On Behalf Of</strong> permissions to enable the ability to send SMTP mail. You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin) at <strong>Users</strong> &gt; <strong>Active users</strong> &gt; <strong>User</strong> &gt; <strong>Edit mailbox permissions</strong> &gt; <strong>Send email from this mailbox</strong>. For more information, see <a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Enable sending email from another user's mailbox in Microsoft 365</a>.
+    </td>
+  </tr>
+      
+</tbody>
+
 </table>
 
 ## [Administrator] Email distributor batch process
@@ -111,7 +133,7 @@ When an email is going to be sent, the user will see the **How would you like to
 | Field                                                                  | Description |
 |------------------------------------------------------------------------|-------------|
 | Use an email app, such as Outlook                                      | Provides the user with a generated email (.eml) file. |
-| Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. On-premises Exchange servers are currently not supported for the **Exchange** mail provider. |
+| Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. The **Exchange** mail provider is currently not supported outside the public cloud, including on-premises environments. |
 | Use the system email client | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP. |
 | Do not ask again                                                       | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 
@@ -239,60 +261,106 @@ The testing for email notifications is to simply trigger the notification and th
 
 4. Check for the email notification in the appropriate inbox.
 
-## Troubleshoot email
+## Exchange mail provider
 
-There are a few standard steps that can help you troubleshoot the configuration of email settings.
+The **Email parameters** page allows an administrator to select **Exchange** as an interactive email provider and as the Batch email provider. The **Exchange** mail provider will use the current user's Exchange Online account to send emails. When used as the Batch email provider, the batch account will be used. No additional configuration is needed. 
+If troubleshooting is needed, ensure that it’s possible to sign in to the current user's account and that emails can be sent from that account to the intended recipients.
 
-1. Verify email settings:
-
-    1. Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.
-    2. Verify that SMTP is enabled.
-    3. Verify the settings of the SMTP mail server.
-    4. Sign in to the SMTP account in a separate window to make sure that the account and password are correct.
-    5. Send a test email using **System administration** \> **Setup** \> **Email** \> **Email parameters** \> **Test email**.
-
-2. Verify that the email batch process is running:
-
-    1. Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Batch**.
-    2. Make sure that the **Batch processing** option is set to **Yes**.
-    3. Review the recurrence of the email process:
-
-        1. Select **No end date** to adjust all recurrences of the email batch process.
-        2. Adjust the count as you require.
-
-3. To review the contents and status of batch emails, go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Batch email sending status**.
-
-    1. If you're using a release that is earlier than Platform update 28, personalize the form to add the email sender for easy review. To do this, right-click the grid header, select **Add columns**, select **Email**, and then click **Insert**. If the **Email** field isn't added into the grid, you can view the sender by selecting **Show message**, and then selecting the **Email** field.
-    2. Verify that emails are being sent from the correct account. If the account is incorrect, you need to adjust settings such as user options, system templates,  or organization templates, as needed.
-    3. Verify that all email user accounts have been granted permission to **Send As** for the configured SMTP account (see step 4 for details).
-    
-4. In Platform update 32, an **Email history** page was added to allow administrators to review all sent emails, including any errors that might have prevented an email from being sent. The **Email history** page will show interactive as well as non-interactive/batch emails. For any emails that have an **Email status** of **Failed**, review the error message on the **Failure details** tab and determine if corrective actions should be taken.
-
-5. In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Enable sending email from another user's mailbox in Microsoft 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
-6. Sign in to all user mailboxes to verify that they are valid and can be accessed using sign in.
-7. Send a test email using **System administration** \> **Setup** \> **Email** \> **Email parameters** \> **Test email**.
-8. If the SMTP settings were migrated from another environment, clear the password field and re-enter the password to ensure that the field encryption hasn't negatively affected the stored value.
-9. If you continue to experience issues when email is sent via SMTP, enter the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
-
-
-## Troubleshoot the Exchange mail provider
-
-The **Email parameters** page allows an administrator to select Exchange as an interactive email provider and as the Batch email provider. The Exchange mail provider will use the current user's Exchange Online account to send emails. When used as the Batch email provider, the batch account will be used. No additional configuration is needed. 
-If troubleshooting is needed, ensure that the current user's account can be signed into and that emails can be sent from that account to the intended recipients.
-
-### Exchange mail provider not supported for external users
-
-Users that are external to the primary tenant will not have exchange accounts on that tenant, so the Exchange mail provider is not supported for external users.
-
-## Other notes
-
-The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits) apply.
+> [!IMPORTANT]
+> The Exchange mail provider is: 
+> -  Not supported for external users, as those users will not have Exchange accounts on the system tenant.
+> -  Only available in Microsoft-managed environments.
 
 ## Troubleshooting
+
+### Common issues with sending email
+
+There are a few standard processes that can help you troubleshoot the configuration of email settings. 
+
+#### Verify email settings and send a test email
+
+1. Go to **System administration** \> **Setup** \> **Email** \> **Email parameters**.
+2. Verify that SMTP is enabled.
+3. Verify the settings of the SMTP mail server.
+4. Sign in to the SMTP account in a separate window to make sure that the account and password are correct.
+5. Send a test email using **System administration** \> **Setup** \> **Email** \> **Email parameters** \> **Test email**.
+
+#### Verify that the email batch process is running
+
+1. Go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Batch**.
+2. Make sure that the **Batch processing** option is set to **Yes**.
+3. Review the recurrence of the email process:
+    1. Select **No end date** to adjust all recurrences of the email batch process.
+    2. Adjust the count as needed.
+
+#### Review the status of batch emails
+
+1.  Go to **System administration** > **Periodic tasks** > **Email processing** > **Batch email sending status**.
+2. Verify that emails are being sent from the correct account. 
+    -  If the account is incorrect, you need to adjust settings such as user options, system templates, or organization templates, as needed.
+3. Verify that all email user accounts have been granted permission to **Send As** for the configured SMTP account (see the section titled **Verify all email accounts have appropriate permissions**).
+    
+#### Review any errors on the **Email history** page
+
+1.  Go to **System administration** /> **Setup** /> **Email** /> **Email history**. 
+    -  This page allows administrators to review all sent emails, including any errors that might have prevented an email from being sent. The **Email history** page will show interactive as well as non-interactive/batch emails. 
+2.  For any emails with an **Email status** of **Failed**, review the error message on the **Failure details** tab and determine if corrective actions should be taken. Some pf these errors are covered later in this topic.  
+
+#### Verify all email accounts have appropriate Send as permissions
+In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Give mailbox permissions to another user in Microsoft 365](/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide).
+
+#### Verify user mailboxes
+Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed using sign in.
+
+### Specific SMTP email issues 
+
+If you continue to experience issues when email is sent via SMTP, you may be running into one of the specific errors below. If not, consider entering the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
+
+### SMTP emails fail to send with "If your SMTP server doesn't support authentication, please clear the SMTP user name and password"
+
+**Issue:** After moving to version 10.0.19/Platform update 39 or later, SMTP emails may fail to send and are accompanied by the following message: "If your SMTP server doesn't support authentication, please clear the SMTP user name and password"
+
+**Explanation:** This is related to a migration from the .NET SMTP mail client (which is now obsolete) to MailKit per Microsoft recommendations. A result of this migration is a change in behavior regarding the handling of SMTP user name and password in situations where the mail server didn't support authentication. Previously, if a SMTP user name was provided but the server didn't support authentication, the .NET SMTP mail client would ignore the provided user name and password and continue without authentication. This behavior may have lead customers to the false belief they were using an authenticated mail server. With MailKit, if a user name is provided, authentication is required, which will trigger an error for mail servers that don't support authentication and will cause emails to fail to send. 
+
+**Fix:** The user needs to go to the **Email parameters** page (under **System administration > Setup > Email**), and clear the **User name** and **Password** fields on the **SMTP settings** tab page.
+
+### SMTP emails fail to send with "5.7.57 SMTP" error or an indication that you're not authenticated or authentication is required
+
+**Issue:** Emails sent via SMTP fail to send for one of the following reasons: 
+-  An "5.5.57 SMTP" exception
+-  The user is not authenticated
+-  User authentication is required 
+
+**Explanation:** The mail server is indicating that the SMTP user credentials are invalid.   
+
+**Fix:** Verify that the SMTP user credentials are correct.  
+
+### SMTP emails fail to send with "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"
+
+**Issue:** Emails sent via SMTP fail to send and trigger the following exception: "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"
+
+**Explanation:** The SMTP password is encrypted using a key specific to a single environment.  This error typically surfaces when the password can no longer be decrypted after a database migration between environments.
+
+**Fix:** Clear and reenter the SMTP password on the [SMTP settings tab](#smtp-settings-tab) on the **Email parameters** page. 
+
+### SMTP emails fail to send with "Client does not have permissions to send as this sender"
+
+**Issue:** When sending email using SMTP, some emails may fail to send with the following error: "Client does not have permissions to send as this sender."  
+
+**Explanation:** This issue is usually caused by incorrect setup of the **Send As** permissions for the email account. 
+
+**Fix:** Ensure there are appropriate **Send As** permissions for the email account. For details, see [Verify all email accounts have appropriate Send as permissions](#verify-all-email-accounts-have-appropriate-send-as-permissions).
+
+## Frequently asked questions
 
 ### Where do workflow email templates come from?
 
 The email templates will be sourced from either system email templates or organization email templates depending on whether the workflow is a system-level (not company specific) or organization-level (company specific) workflow.
+
+### What email limits apply when using Exchange or SMTP?  
+
+The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) apply.
+
 
 ## Additional resources
 
@@ -300,4 +368,7 @@ The email templates will be sourced from either system email templates or organi
 
 [Office integration tutorial](../../dev-itpro/office-integration/office-integration-tutorial.md)
 
-[Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/library/aa834374.aspx)
+[Configure email functionality in Microsoft Dynamics AX [AX 2012]](/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

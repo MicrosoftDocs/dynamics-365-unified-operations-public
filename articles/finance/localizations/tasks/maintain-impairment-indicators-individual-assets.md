@@ -4,11 +4,9 @@
 title: Maintain impairment indicators on individual assets
 description: Use this task to learn how to maintain impairment indicators on individual assets. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -86,3 +84,6 @@ This task uses the JPMF demo company data.
     * Enter 1500000.00.  
 18. Click Update indicator.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

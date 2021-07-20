@@ -4,11 +4,9 @@
 title: Location license plate positioning
 description: License plate location positioning lets you see where a license plate is located in a multi-pallet location, such as a location that uses double-deep pallet racking.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -93,7 +91,7 @@ The feature must be turned on in the location profile for every location where i
 1. While **License plate** is still selected, select **Add table join**.
 1. In the list of tables that appears, in the **Relation** column, select **Location license plate positioning (License plate)**. Then select **Select** to add **Location license plate positioning** to the **Inventory dimensions** table join.
 
-    ![Table joins](media/LpTableJoin.png "Table joins")
+    ![Table joins.](media/LpTableJoin.png "Table joins")
 
 1. Select **OK** to confirm the updated joined tables and close the query editor.
 1. On the **Location Directive Actions** FastTab, select **Edit query** again to reopen to the query editor.
@@ -105,7 +103,7 @@ The feature must be turned on in the location profile for every location where i
     - **Field:** *LP Position*
     - **Criteria:** *1*
 
-    ![New range](media/LpPositionCriteria.png "New range")
+    ![New range.](media/LpPositionCriteria.png "New range")
 
 1. Select **OK** to confirm your changes and close the query editor.
 
@@ -280,6 +278,9 @@ Now that the *Location license plate positioning* feature has been set up, and t
 1. On the **Scan a work ID / license plate ID** page, select the **ID** field, and then enter the work ID from the sales line.
 1. Notice that the picking work directs you to pick item *A0002* from location *01A01R1S2B*. You receive this instruction because item *A0002* is on a license plate that is in position *1* in that location.
 
-    ![Position 1 location](media/LocationLicensePlatePositioning.png "Position 1 location")
+    ![Position 1 location.](media/LocationLicensePlatePositioning.png "Position 1 location")
 
 1. Enter the license plate ID that you created for the location, and then follow the prompts to pick the sales order.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

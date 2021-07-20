@@ -4,11 +4,9 @@
 title: Add a predecessor to a production flow activity
 description: In a production flow version, all activities must be sequenced. 
 author: cvocph
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -53,3 +51,6 @@ To learn more, read the white paper "Production flows and activities in lean man
     * The default cycle time ratio of an activity relation is 1. This assumes that both activities run at the same pace or takt time. If the predecessor runs at a higher pace (lower takt time), the ratio should be lower than 1, if the predecessor runs at a slower pace (higher takt time) the cycle time ratio is greater than 1.  
 5. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

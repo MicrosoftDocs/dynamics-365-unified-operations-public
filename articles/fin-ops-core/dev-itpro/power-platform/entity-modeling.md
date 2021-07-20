@@ -4,11 +4,9 @@
 title: Entity modeling
 description: This topic explains relational modeling concepts using virtual entities for Finance and Operations entities.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,7 +31,7 @@ ms.dyn365.ops.version: 10.0.12
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 > The public entity name that is exposed in Dataverse metadata for the Finance and Operations virtual entity uses the physical name of the Finance and Operations entity. This could be different from the public name of the entity as exposed by the OData metadata in Finance and Operations apps.
 
@@ -47,7 +45,7 @@ By default, virtual entities for Finance and Operations apps don't exist in Data
 
 When a virtual entity is generated for a Finance and Operations entity, the system tries to create each field in the Finance and Operations entity in the corresponding virtual entity in Dataverse. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between Finance and Operations and Dataverse. For data types that are supported, the field properties in Dataverse are set based on the properties in Finance and Operations.
 
-This rest of this section describes supported and unsupported data types. For more information about fields in Dataverse, see [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
+This rest of this section describes supported and unsupported data types. For more information about fields in Dataverse, see [Fields overview](/powerapps/maker/common-data-service/fields-overview).
 
 | Data type in Finance and Operations | Modeled data type in Dataverse |
 |-------------------------------------|------------------------------------------|
@@ -195,7 +193,7 @@ Note that Finance and Operations virtual entities support only the reading of at
 
 ## OData actions
 
-OData actions in the Finance and Operations entities are made available as custom actions in Dataverse. For more information about custom actions and what they enable in Dataverse, see [Custom actions](https://docs.microsoft.com/powerapps/developer/common-data-service/custom-actions).
+OData actions in the Finance and Operations entities are made available as custom actions in Dataverse. For more information about custom actions and what they enable in Dataverse, see [Custom actions](/powerapps/developer/common-data-service/custom-actions).
 
 Input and output parameters of the following types are supported. If an input or output parameter is of a different type, the OData action doesn't appear as the SDK message in Dataverse.
 
@@ -225,3 +223,6 @@ Finance and Operations create, read, update, and delete (CRUD) business logic on
 ## Calculated/unmapped fields
 
 Calculated and unmapped fields in Finance and Operations entities are also available in the corresponding virtual entities in Dataverse.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

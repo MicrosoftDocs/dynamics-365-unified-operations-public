@@ -4,11 +4,9 @@
 title: AX 2009 migration - Export packages
 description: This topic explains how to export a data package for migration from Microsoft Dynamics AX 2009 to Finance and Operations.
 author: kfend
-manager: AnnBe
 ms.date: 06/26/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -41,3 +39,6 @@ Follow these steps to export the data package.
 1. In AX 2009, in the navigation pane, click **Data migration** \> **Common** \> **Create migration group**.
 2. In the **Migration group** form, select the migration group to export, and then click **Export now**.
 3. In the **Export data** form, update the export file path as required, and then click **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

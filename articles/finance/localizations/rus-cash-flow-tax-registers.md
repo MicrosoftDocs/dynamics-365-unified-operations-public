@@ -4,10 +4,8 @@ title: Cash flow tax registers
 description: This topic provides information about cash flow tax registers.
 ms.date: 01/11/2021
 ms.topic: article
-ms.service: dynamics365-financials
 author: akroshkina
 ms.author: anasyash
-manager: tfehr
 ---
 
 # Cash flow tax registers
@@ -68,7 +66,7 @@ Follow these steps to set up expenses for the **Cash payment issue** and **Cash 
       - **Debit** fields: Set the first **Valid for** field to **All**.
       - **Credit** fields: Set the second **Valid for** field to **Group** and the **Credit account** field to **Transfer**.
 
-![Exceptions](media/ruExceptions.png)
+![Exceptions.](media/ruExceptions.png)
 
 ## Cash payment receipt tax register
 
@@ -76,7 +74,7 @@ Calculate the tax register as described in Profit tax registers journal.
 
 The **Cash payment receipt** tax register shows all cash receipt transactions, based on the settings that you configured earlier in this topic. You can view the total for the whole tax register and also the totals for each **Receive reason** value.
 
-![Cash_payment_receipt](media/ruCash_payment_receipt.png)
+![Cash_payment_receipt.](media/ruCash_payment_receipt.png)
 
 The tax register lines show the following information:
 
@@ -92,7 +90,7 @@ Calculate the tax register as described in Profit tax registers journal.
 
 The **Cash payment issue** tax register shows all cash issue transactions, based on the settings that you configured earlier in this topic. You can view the total for the whole tax register and also the totals for each expense type.
 
-![Cash_payment_issue](media/ruCash_payment_issue.png)
+![Cash_payment_issue.](media/ruCash_payment_issue.png)
 
 The tax register lines show the following information:
 
@@ -104,3 +102,6 @@ The tax register lines show the following information:
    - **Flag**: The amount and currency code, if the funds were withdrawn in a foreign currency. This value is taken from the corresponding source document.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

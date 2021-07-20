@@ -4,16 +4,14 @@
 title: Lease termination proposal
 description: This topic explains how to propose a lease for termination.
 author: moaamer
-manager: Ann Beebe
-ms.date: 1/14/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: AssetLease
+ms.search.form: AssetLeaseTerminateLeaseListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -165,3 +163,6 @@ The following tables show the values that are set on the **General** and **Payme
 11. To view the net effect of the termination, where the ROU asset and lease liability will be 0 (zero), open the Liability and Asset transactions tables.
 
 The lease status should now be **Terminated**. No additional journal entries will be posted against this lease unless the termination is reversed.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

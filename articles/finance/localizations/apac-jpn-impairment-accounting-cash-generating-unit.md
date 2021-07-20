@@ -4,11 +4,9 @@
 title: Fixed asset impairment accounting on cash-generating units for Japan
 description: This topic gives the user an overview of the conceptual model for impairment accounting for Japan. 
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,3 +59,6 @@ The user can use the **Impairment reports and transactions** inquiry pages to re
 - [Impairment accounting for fixed assets for Japan](apac-jpn-impairment-accounting-fixed-assets.md)
 - [Propose and post the impairment amount on a cash generating unit](./tasks/propose-post-impairment-amount-cash-generating-unit.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

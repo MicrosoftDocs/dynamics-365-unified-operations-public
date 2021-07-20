@@ -4,11 +4,9 @@
 title: System-directed work sequencing
 description: This topic provides information about system-directed work sequencing. This functionality lets you sort and filter the work orders that the system presents to users for execution. It's helpful in scenarios where additional criteria are required to drive the warehouse picking process.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -307,3 +305,6 @@ The system-directed work sequence queries are *inclusive*. It's important that y
 Therefore, in the example from this scenario, work ID *4* was also captured by the query. When it was created, two lines were added: one for 25 ea and another for 10 ea. The work was still presented to the user, because at least one work line has a quantity of less than 20 ea.
 
 Depending on the scenario, you can prevent this behavior by using work breaks.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

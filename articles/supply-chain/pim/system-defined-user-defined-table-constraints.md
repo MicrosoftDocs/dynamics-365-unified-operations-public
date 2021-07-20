@@ -4,11 +4,9 @@
 title: System-defined and user-defined table constraints
 description: This article explains the two types of table constraints for components in a product configuration model -  user-defined and system-defined. Table constraints represent matrices of the allowed attribute combinations, where each row defines one set of possible attribute values.
 author: cvocph
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -63,10 +61,12 @@ When you create a system-defined table constraint, you select a table, optionall
 
 Before a table constraint can take effect on a product configuration model, the table constraint must be included in a constraint on one of the model's components. The procedure is to create a new constraint, select the table constraint type, and then select the table constraint definition to use. Finally, all fields in the table constraint must be mapped to attributes in the product configuration model.
 
-Additional resources
---------
+## Additional resources
 
 [Product configuration models overview](product-configuration-models.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

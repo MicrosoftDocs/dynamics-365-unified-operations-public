@@ -4,11 +4,9 @@
 title: Enhanced batch forms
 description: This topic provides information about enhanced batch forms.
 author: hasaid
-manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -44,10 +42,13 @@ Follow these steps to switch to the enhanced form.
 
 	You're notified about the enhanced form. The notification shows the location of the **Switch to enhanced form** button on the Action Pane.
 
-    ![Switch to enhanced form button](./media/batch-popup.png)
+    ![Switch to enhanced form button.](./media/batch-popup.png)
 
 2. Select **Switch to enhanced form**.
 
 To switch back to the unenhanced form, select **Switch to legacy form** on the Action Pane of the enhanced form.
 
-![Switch to legacy form button](./media/enhanced-form.png)
+![Switch to legacy form button.](./media/enhanced-form.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

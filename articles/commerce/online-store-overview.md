@@ -4,11 +4,9 @@
 title: E-commerce site overview
 description: This topic provides an overview of the support for e-commerce sites in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 11/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
@@ -43,37 +41,37 @@ In Dynamics 365 Commerce, you use an online store channel to establish the produ
 
 Only one online store channel has to be set up before you can get started with Dynamics 365 Commerce. However, a single e-commerce site can provide the online experience for multiple online stores. For example, if multiple online stores are set up to support different geographical regions, a single set of e-commerce pages can be used to provide the unique experiences that are defined by each store. For more information about how to configure a site to support multiple online stores, see [Associate an online site with a channel](associate-site-online-store.md).
 
-After an online store is set up, it can be associated with the Dynamics 365 Commerce site that will serve as your online storefront. For more information about online stores and how to set them up, see [Set up online stores](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
+After an online store is set up, it can be associated with the Dynamics 365 Commerce site that will serve as your online storefront. For more information about online stores and how to set them up, see [Set up online stores](/dynamics365/unified-operations/retail/online-stores).
 
 ## Deploy a new e-commerce tenant
 
-During initialization of an e-commerce site, you're prompted for a domain name. For more information about domains in Commerce, see [Configure your domain name](configure-your-domain-name.md) and [Domains in Dynamics 365 Commerce](domains-commerce.md). To deploy a new e-commerce tenant by using [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), follow the steps in [Deploy a new e-commerce tenant](deploy-ecommerce-site.md). After your e-commerce tenant is set up in LCS, a link to Commerce site builder will be provided. You can then use Commerce site builder to initialize and configure your e-commerce sites.
+During initialization of an e-commerce site, you're prompted for a domain name. For more information about domains in Commerce, see [Configure your domain name](configure-your-domain-name.md) and [Domains in Dynamics 365 Commerce](domains-commerce.md). To deploy a new e-commerce tenant by using [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), follow the steps in [Deploy a new e-commerce tenant](deploy-ecommerce-site.md). After your e-commerce tenant is set up in LCS, a link to Commerce site builder will be provided. You can then use Commerce site builder to initialize and configure your e-commerce sites.
 
 ## Initialize your e-commerce site
 
 When you start Commerce site builder from LCS, the **Sites** page appears. This page includes two preconfigured sites, **default** and **fabrikam**, as shown in the example in the following illustration.
 
-![Sites page in Commerce site builder](media/e-commerce-site-01.png)
+![Sites page in Commerce site builder.](media/e-commerce-site-01.png)
 
 When you select one of these sites, you're prompted to select a domain name, a default online store channel, a supported language for the selected channel, and a path. If only one channel is used, you can leave the path blank. More online store channels or languages can be configured later in Commerce site builder. Each additional channel or language will require a unique path. For example, you have two online channels that are associated with a single site, and the domain name for the site is `www.fabrikam.com`. In this case, the path for one channel can be the default value that has no path (`https://www.fabrikam.com`), and the second channel can be set to a new path, such as **site2**, that will have the URL `https://www.fabrikam.com/site2`. The following illustration shows an example of a site initialization dialog box in Commerce site builder.
 
-![Site initialization dialog box in Commerce site builder](media/e-commerce-site-02.png)
+![Site initialization dialog box in Commerce site builder.](media/e-commerce-site-02.png)
 
 The **Sites** page also includes a **New site** button. The dialog box that appears when you select this button resembles the site initialization dialog box, but it's used to create a new site. New sites are blank. They don't include the same default templates, fragments, pages, and images that are provided with the **default** and **fabrikam** sites. However, as you require, you can open a support ticket to request that a copy of the default content be added to a new blank site. For more information, see [Create an e-commerce site](create-ecommerce-site.md).
 
 After a new site is initialized, the Commerce site builder **Home** page appears. This page includes links to common actions and guidance content, as shown in the example in the following illustration.
 
-![Links on the Home page in Commerce site builder](media/e-commerce-site-03.png)
+![Links on the Home page in Commerce site builder.](media/e-commerce-site-03.png)
 
 ## Modify online store channels or add online store channels to an e-commerce site
 
 After an e-commerce site is created, you can change the channel that it's associated with by following the steps in [Associate an e-commerce site with an online channel](associate-site-online-store.md). The example in the following illustration shows how a channel operating unit number (OUN) can be changed on the **Channels** page (**Site settings \> Channels**). After you've finished making a change, be sure to select **Save and publish**. In this way, you ensure that the change is published.
 
-![Channels page in Commerce site builder](media/e-commerce-site-04.png)
+![Channels page in Commerce site builder.](media/e-commerce-site-04.png)
 
 You can add new channels by selecting **Add a channel**. To add new languages to a channel, select the channel, and then select **Add a locale** in the channel dialog box that appears. Before locales can appear in the dialog box, they must be preconfigured for the online store channel in Commerce headquarters.
 
-![Channel dialog box in Commerce site builder](media/e-commerce-site-05.png)
+![Channel dialog box in Commerce site builder.](media/e-commerce-site-05.png)
 
 ## Set up an Azure B2C tenant
 
@@ -124,3 +122,6 @@ For information about how to manage site content, see the following topics:
 [Enable location-based store detection](enable-store-detection.md)
 
 [Set up custom pages for user logins](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Consolidation and elimination overview
 description: This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 author: aprilolson
-manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 13151
+ms.custom: ["13151", "intro-internal"]
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
 # ms.search.industry: 
@@ -98,3 +96,6 @@ You won't be able to process or complete your budgets in the consolidation compa
 For more information, see [Currency revaluation in a consolidation company](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

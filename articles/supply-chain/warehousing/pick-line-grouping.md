@@ -4,11 +4,9 @@
 title: Pick line grouping
 description: This topic provides an overview of pick line grouping.
 author: Mirzaab
-manager: tfehr
 ms.date: 12/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -175,3 +173,6 @@ Before you can set up pick line grouping, you must create some eligible outbound
 >   - Work lines that have unfinished replenishment work
 >   - Over-picking
 >   - Short picking with item reallocation
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

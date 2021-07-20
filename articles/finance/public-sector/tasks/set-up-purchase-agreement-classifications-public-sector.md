@@ -4,11 +4,9 @@
 title: Set up purchase agreement classifications in the public sector
 description: The purchase agreement classification allows you to control the administrative information that is available on purchase agreements. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -45,3 +43,6 @@ This procedure was created for the French public sector using the PSUS demo comp
 8. Optional: Select the Activities option to include information about tasks and milestones.
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

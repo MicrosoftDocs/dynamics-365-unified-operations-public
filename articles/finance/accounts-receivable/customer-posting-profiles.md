@@ -4,11 +4,9 @@
 title: Customer posting profiles
 description: Customer posting profiles control the posting of customer transactions to the general ledger.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -36,8 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Customer posting profiles control the posting of customer transactions to the general ledger.
 
-Customer posting profiles
--------------------------
+## Customer posting profiles
 
 Customer posting profiles enable you to assign general ledger accounts and document settings to all customers, a group of customers or a single customer. These settings will be used when you create sales orders, free text invoices, cash payments, collection letters, and interest notes. For some transactions, you can select a posting profile that differs from and takes precedence over the posting profiles that are set up for transactions in this page. 
 
@@ -126,7 +123,6 @@ If you want all customer transactions to have the same posting profile, set up o
 </tbody>
 </table>
 
-### 
 
 ### **Table restrictions**
 
@@ -145,3 +141,6 @@ Specify the following values to set up your posting profile:
 
 For more information, see [Customer payment overview](../cash-bank-management/tasks/customer-payment-overview.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

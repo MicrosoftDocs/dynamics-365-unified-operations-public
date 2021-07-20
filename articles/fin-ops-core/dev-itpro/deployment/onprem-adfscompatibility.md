@@ -4,11 +4,9 @@
 title: AD FS Microsoft 365 compatibility
 description: This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Dynamics 365 Finance + Operations (on-premises) environment and for Microsoft 365.
 author: faix
-manager: AnnBe
 ms.date: 01/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -84,3 +82,6 @@ This topic explains how to use the same instance of Active Directory Federation 
 For partial support, it is necessary to have Local Agent 2.2.0 or later installed and to update the service with Platform update 28 or later.
 
 With partial support, authentication against the Financial Reporting service is not supported.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

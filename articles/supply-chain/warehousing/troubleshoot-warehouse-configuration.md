@@ -4,11 +4,9 @@
 title: Troubleshoot warehouse configuration
 description: This topic describes how to fix common issues that you might encounter while you configure Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,7 +40,7 @@ You receive this error message when you scan a license plate ID or location.
 
 ### Issue resolution
 
-Make sure that the license plate ID isn't reserved by something else. This issue used to occur when the value that a user scanned in the warehouse app was both a valid location and a valid license plate ID. However, this issue was resolved in version 10.0.11.
+Make sure that the license plate ID isn't reserved by something else. This issue used to occur when the value that a user scanned in the Warehouse Management mobile app was both a valid location and a valid license plate ID. However, this issue was resolved in version 10.0.11.
 
 ## I receive the following error message: "License plate must be specified for this location."
 
@@ -86,7 +84,7 @@ Location directives of the *Sales orders* work order type and the *Put* work typ
 
 A new feature, *Evaluate all actions for Multi SKU location directives*, has been added in version 10.0.15 (see [KB 4579866](https://fix.lcs.dynamics.com/Issue/Details?kb=4579866&bugId=475946&dbType=3&qc=1bc41a56de7a3ee419fa76397a6bf282fce5be9b93e427c08a6d916d1dfa3091)). This feature evaluates all actions for multi-SKU location directives. If you require this feature, use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn it on.
 
-## I can't use the warehouse app to do partial picking.
+## I can't use the Warehouse Management mobile app to do partial picking.
 
 ### Issue description
 
@@ -104,7 +102,7 @@ You want to do an inventory status change for a partial quantity of a batch.
 
 ### Issue resolution
 
-To enable workers to make this change, you can create a menu item for the warehouse app. On the **Mobile device menu items** page, create (or edit) a menu item that has the following settings:
+To enable workers to make this change, you can create a menu item for the Warehouse Management mobile app. On the **Mobile device menu items** page, create (or edit) a menu item that has the following settings:
 
 - **Mode:** *Work*
 - **Use existing work:** *No*
@@ -112,3 +110,33 @@ To enable workers to make this change, you can create a menu item for the wareho
 - **Display inventory status:** *Yes*
 
 You can set other fields on the page as you require.
+
+## The dock management profile of a location profile is not preventing inventory types from being mixed.
+
+### Issue description
+
+You are using *shipment consolidation policies*. You have set up a *dock management profile* for a *location profile*, but when work is created, the inventory types are mixed at the final location.
+
+### Issue resolution
+
+Dock management profiles require work to be split up front. In other words, the dock management profile expects that a work header won't have multiple put locations.
+
+For the dock management profile to effectively manage the mixing of inventory, a work header break must be set up.
+
+In this example our dock management profile is configured such that **Inventory types that should not be mixed** is set to *Shipment ID*, and we'll set up a work header break for it:
+
+1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
+1. Select the **Work order type** to edit (for example, *Purchase orders*).
+1. Select the work template to edit.
+1. On the Action Pane, select **Edit query**.
+1. Open the **Sorting** tab and add a row with the following settings:
+    - **Table** - *Temporary work transactions*
+    - **Derived table** - *Temporary work transactions*
+    - **Field** - *Shipment ID*
+1. Select **OK**.
+1. You return to the **Work templates** page. On the Action Pane, select **Work header breaks**.
+1. On the Action Pane, select **Edit**.
+1. Select the check box associated with the **Field name** *Shipment ID*.
+1. On the Action Pane, select **Save**.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

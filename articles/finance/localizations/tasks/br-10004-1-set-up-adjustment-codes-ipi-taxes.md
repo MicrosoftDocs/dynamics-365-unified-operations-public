@@ -4,11 +4,9 @@
 title: Set up adjustment codes for IPI taxes (Brazil)
 description: Use this procedure to set up adjustment codes for Imposto sobre Produtos Industrializados (IPI) taxes. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -42,3 +40,6 @@ Use this procedure to set up adjustment codes for Imposto sobre Produtos Industr
 9. Select **Save**.
 10. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

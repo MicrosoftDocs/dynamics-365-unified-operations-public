@@ -3,11 +3,9 @@
 title: Invoice factures processing and printing
 description: This topic provides information about working with invoice factures.
 author: anasyash
-manager: AnnBe
 ms.date: 08/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -232,3 +230,6 @@ You can view and print all factures on the **Facture journal** page (**Accounts 
 The upper part of the page shows information about the facture. This information includes, the facture number, date of the registration, facture date, amount (including and excluding tax), tax amount, currency, and invoice account.
 
 The lower part of the page shows information about the invoice lines. This information includes the invoice number, item code, category, product name, price, unit quantity, amount in the transaction currency, and price. The **Overview** tab shows the sales tax amount per line, and the **Product dimensions** tab shows the site, warehouse, and other product dimension information.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

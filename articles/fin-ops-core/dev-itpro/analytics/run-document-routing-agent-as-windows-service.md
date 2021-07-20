@@ -3,12 +3,10 @@
 
 title: Run the Document Routing Agent as a Windows service
 description: This topic provides information that will help you select the execution mode that is used by the Document Routing Agent. 
-author: TJVass
-manager: AnnBe
-ms.date: 09/13/2017
+author: RichdiMSFT
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 191133
 ms.assetid: 7adc7228-4360-4a54-8a3e-4d916e727dd2
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
@@ -84,7 +82,8 @@ By default, the Document Routing Agent runs as a desktop application. To run the
 4. On the **Log On** tab, select the **This account** option, and then supply the AD DS credentials that are used to run the service.
 
     > [!NOTE]
-    > Make sure that the selected account has access to the shared network devices.
+    > The selected account must have access to the shared network devices.
+    > The windows domain account ( or local machine account) used to run the windows service must be same as the account that starts the Document Routing Agent desktop app.
 
 5. Select **OK**.
 6. Start the service.
@@ -111,3 +110,6 @@ The Document Routing Agent is now running as a Windows service.
 ### Review the event logs
 1. On the host machine, start Event Viewer.
 2. Review the logs at **Application and Services Logs** \> **Microsoft** \> **Dynamics** \> **AX-DocumentRouting**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

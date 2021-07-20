@@ -4,11 +4,9 @@
 title: Create a closed ended question
 description: Closed-ended questions allow you to provide options for the respondent to choose from. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,7 +14,6 @@ ms.technology:
 ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion, HcmLearningWorkspace  
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -27,6 +24,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a closed ended question
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -71,3 +70,6 @@ Closed-ended questions allow you to provide options for the respondent to choose
 5. In the Answer group field, enter or select a value.
 6. In the Text field, type a value.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

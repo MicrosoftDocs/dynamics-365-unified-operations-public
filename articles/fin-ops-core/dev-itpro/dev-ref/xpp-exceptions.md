@@ -1,32 +1,16 @@
 ---
-# required metadata
-
 title: X++ exception handling
 description: This topic describes exception handling in X++.
 author: RobinARH
-manager: AnnBe
 ms.date: 11/01/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 150213
-ms.assetid: 16b30ff1-bb31-4f9d-8105-c73abd2455f6
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ exception handling
@@ -505,3 +489,6 @@ The following table shows the exception literals that are the values of the **Ex
 | UpdateConflictNotRecovered        | An error occurred in a transaction that is using Optimistic Concurrency Control. The code won't be retried. This exception can't be caught within a transaction.    |
 | Warning                           | An exceptional event has occurred. Although the user might have to take action, the event isn't fatal. Don't throw a **warning** exception.                         |
 | [SQL connection error X++ exception](sql-connection-error.md)       | An error occured when during the query execution. The transaction will be canceled. This exception can't be caught within a transaction. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

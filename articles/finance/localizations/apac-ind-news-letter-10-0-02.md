@@ -4,11 +4,9 @@
 title: What's new or changed for India GST in 10.0.02 (May 2019)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.02.
 author: prabhatb
-manager: Wangcheng
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ This topic includes a summary of the new features and critical bug fixes release
 ### Auto completion when editing tax formulas or conditions
 Advanced editor is enabled for Global Tax Engine formulas/conditions to improve user productivity. To enable this functionality, go to **Electronic Reporting** > **Tax Configuration** > **Configurations** > **User Parameter** and set the **Enable advanced formula editor** field to **Yes**.
 
- ![Advanced formula editor](media/GST-advance-editor-1-10-0-02.png)
+ ![Advanced formula editor.](media/GST-advance-editor-1-10-0-02.png)
 
 ## Critical fixes 
 
@@ -77,3 +75,6 @@ Advanced editor is enabled for Global Tax Engine formulas/conditions to improve 
 -	Tax information is not editable on the **Sales order after delivery** page.
 -	The invoice number does not show in Posted withholding tax inquiry.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

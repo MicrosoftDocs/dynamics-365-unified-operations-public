@@ -3,12 +3,10 @@
 
 title: Maintenance requests
 description: This topic provides an overview about managing maintenance requests in Asset Management
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: 10.0.5
 # Maintenance requests
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Maintenance requests are notes or declarations that are created to notify a manager or planner that an asset might require a maintenance or repair job, but without creating a work order. If the contents of a maintenance request are considered valid, a work order can then be created based on the maintenance request.
 
@@ -49,7 +45,7 @@ Maintenance requests can be created for any asset in Asset Management. Various t
 
 To view maintenance requests, select **Asset management** \> **Common** \> **Maintenance requests** \> **All maintenance requests**, **Active maintenance requests**, or **My functional location maintenance requests**. Each list page shows some of the information that is related to a maintenance request.
 
-![View maintenance requests](media/01-manage-maintenance-requests.png)
+![View maintenance requests.](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Use the **My functional location maintenance requests** list page to view a list of maintenance requests that contain either functional locations that you're related to as a worker or assets that are installed on functional locations that you're related to as a worker. (For information about how to set up functional locations on maintenance workers, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
@@ -58,7 +54,7 @@ To view maintenance requests, select **Asset management** \> **Common** \> **Mai
 
 To open the details view of a record, on the **All maintenance requests** list page, in the grid view, select a link in the **Maintenance request** column.
 
-![View details of maintenance request](media/02-manage-maintenance-requests.png)
+![View details of maintenance request.](media/02-manage-maintenance-requests.png)
 
 The buttons on the Action Pane are organized on tabs. The following table briefly describes the buttons that are related to Asset Management.
 
@@ -77,3 +73,6 @@ The buttons on the Action Pane are organized on tabs. The following table briefl
 | Send loan asset                  | Select a loan asset that should be a temporary replacement for the asset that is selected on the selected maintenance request. |
 | Return loan asset                | Register the loan asset as returned. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up general budget reservations and submit them to a workflow
 description: This topic explains how to set up  general budget reservations and submit them to a workflow for Public sector.
 author: AlexRenney
-manager: AnnBe
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ When a general budget reservation is set up to use a workflow, the document must
 
 The following illustration shows how to set up a workflow for general budget reservations. Each numbered step corresponds to a section of this topic.
 
-![Setup of a general budget reservation workflow](media/gbr-workflow-process.jpg "Setup of a general budget reservation workflow")
+![Setup of a general budget reservation workflow.](media/gbr-workflow-process.jpg "Setup of a general budget reservation workflow")
 
 ## Optional: Set up reviewers for general budget reservations
 
@@ -128,3 +126,6 @@ To submit a general budget reservation to the workflow system, follow these step
     As the reservation moves through the workflow, the reservation status and workflow status change and are reflected in the header of the general budget reservation.
 
 7. When the workflow is completed, and the reservation status is **Approved**, you can post the document.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

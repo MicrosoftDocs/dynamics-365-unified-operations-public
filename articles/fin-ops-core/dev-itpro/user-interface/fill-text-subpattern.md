@@ -4,11 +4,9 @@
 title: Fill Text subpattern
 description: This article provides information about the Fill Text subpattern.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,14 +33,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the Fill Text subpattern. This subpattern is used when a single String or StaticText control must stretch to the full width of the container, so that users have more space to enter information.
 
-Usage
------
+## Usage
 
 Fill Text is used when you need a single String or StaticText control to stretch to the full width of the container. This subpattern is typically used for multi-line string controls that require more space for users to enter information.
 
 ## Wireframe
 
-[![Fill Text sub-pattern wireframe](./media/filltext1.png)](./media/filltext1.png)
+[![Fill Text sub-pattern wireframe.](./media/filltext1.png)](./media/filltext1.png)
 
 ## Model
 ### High-level structure
@@ -65,7 +62,7 @@ None
 ## Examples
 Form: **FmRental (Notes)** 
 
-[![Fill Text sub-pattern example](./media/filltext2.png)](./media/filltext2.png)
+[![Fill Text sub-pattern example.](./media/filltext2.png)](./media/filltext2.png)
 
 ## Resources
 ### Typically used by patterns
@@ -89,3 +86,6 @@ This section will have answers to frequently asked questions that are related to
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

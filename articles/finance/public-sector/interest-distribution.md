@@ -4,11 +4,9 @@
 title:  Set up interest distribution for cash accounts
 description: This topic explains how to set up your participating cash accounts on the Interest distribution rules page. You must complete this setup before you distribute the interest.
 author: velofog
-manager: AnnBe
 ms.date: 06/14/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -84,3 +82,6 @@ The interest distribution allocation process includes some calculated amounts.
 | Total daily average   | The sum of all average daily balances, except negative amounts for cash accounts that don't allow for negative interest and cash accounts that don't participate in interest distribution. |
 | Percent of total      | The Average daily balance amount divided by the Total daily average amount for each combination of a cash account and a grant. |
 | Allocated interest    | The total interest from the **Interest distribution parameters** page, multiplied by the Percent of total amount for the cash account. Interest isn't distributed to cash accounts that have negative amounts and that don't allow for negative interest. Interest also isn't distributed to cash accounts that don't participate in interest distribution. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

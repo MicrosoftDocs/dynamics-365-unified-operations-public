@@ -3,12 +3,10 @@
  
 title: Create a purchase release order from a purchase agreement
 description: This procedure shows how to use a purchase agreement when you create a purchase order. 
-author: RichardLuan
-manager: tfehr 
+author: kamaybac
 ms.date: 08/09/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -21,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -62,3 +60,6 @@ This procedure shows how to use a purchase agreement when you create a purchase 
 3. Close the page.
 4. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

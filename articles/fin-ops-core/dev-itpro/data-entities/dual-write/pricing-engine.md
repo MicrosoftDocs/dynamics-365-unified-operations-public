@@ -4,11 +4,9 @@
 title: Sync on-demand with the Supply Chain Management pricing engine
 description: This topic describes how to use the pricing engine in Microsoft Dynamics 365 Supply Chain Management from Dynamics 365 Sales.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -73,3 +71,6 @@ When the columns in Sales are filled in, the following limitations apply:
 + The setup of charges and charge allocations in Supply Chain Management isn't replicated in Sales.
 + Pricing doesn't consider special retail pricing that is specified in the **Retail Channel** column on the sales order line page in Supply Chain Management.
 + Discounts that are defined in the **Trade Allowance Management** section of Supply Chain Management aren't considered.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
 description: Full description that appears in the search results. Often the first paragraph of your topic.
 author: ShellyBakke
-manager: AnnBe
 ms.date: 04/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -143,3 +141,6 @@ Cette limitation concerne:
 Elle s’applique également, même si Microsoft connaissait ou devrait connaître l’éventualité d’un tel dommage. Si votre pays n’autorise pas l’exclusion ou la limitation de responsabilité pour les dommages indirects, accessoires ou de quelque nature que ce soit, il se peut que la limitation ou l’exclusion ci-dessus ne s’appliquera pas à votre égard.
 
 EFFET JURIDIQUE. Le présent contrat décrit certains droits juridiques. Vous pourriez avoir d’autres droits prévus par les lois de votre pays. Le présent contrat ne modifie pas les droits que vous confèrent les lois de votre pays si celles-ci ne le permettent pas.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

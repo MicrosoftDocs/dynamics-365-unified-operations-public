@@ -4,11 +4,9 @@
 title: Lean manufacturing overview
 description: This article provides an overview and description of the lean manufacturing features in Dynamics 365 Supply Chain Management.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 19371
+ms.custom: ["19371", "intro-internal"]
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -86,3 +84,6 @@ In addition, lean manufacturing supports the purchasing and invoicing processes 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

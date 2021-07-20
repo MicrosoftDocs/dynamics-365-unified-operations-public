@@ -4,11 +4,9 @@
 title: Create loan items
 description: Loan items are records that help you track physical items, such as phones or computers, that your company lends to workers. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,7 +14,6 @@ ms.technology:
 ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp, HcmPersonnelManagementWorkspace  
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -27,6 +24,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create loan items
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -62,3 +61,6 @@ Loan items are records that help you track physical items, such as phones or com
 14. Click OK.
 15. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

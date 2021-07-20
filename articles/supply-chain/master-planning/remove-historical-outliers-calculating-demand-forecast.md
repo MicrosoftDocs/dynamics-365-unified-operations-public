@@ -4,11 +4,9 @@
 title: Remove outliers from historical transaction data when calculating a demand forecast
 description: This article describes how to exclude outliers from the historical data that is used to calculate a demand forecast. By excluding outliers, you can improve forecast accuracy.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -45,8 +43,7 @@ You can exclude outliers to improve forecast accuracy. This is an optional task.
 
 **Note:** You can also create a query that is based on an existing query. Select the query to copy, and then click **Duplicate**. The **Query date** field identifies the version. You can use the query as it is, or you can click **Edit query** to modify the criteria. You can optionally modify the name and description of the new query.
 
-Additional resources
---------
+## Additional resources
 
 [Demand forecasting overview](introduction-demand-forecasting.md)
 
@@ -54,3 +51,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

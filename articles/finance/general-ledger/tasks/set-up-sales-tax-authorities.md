@@ -4,11 +4,9 @@
 title: Set up sales tax authorities
 description: Sales tax authorities are entities to which collected sales tax needs to be reported and paid. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -43,3 +41,6 @@ Sales tax authorities are entities to which collected sales tax needs to be repo
 10. In the Round-off field, enter a number.
 11. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

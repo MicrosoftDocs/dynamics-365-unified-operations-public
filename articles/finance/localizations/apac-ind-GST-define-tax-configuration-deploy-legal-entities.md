@@ -4,11 +4,9 @@
 title: Define a tax configuration and deploy it to legal entities
 description: This topic explains how to define a tax configuration, and then deploy it to one or more legal entities. 
 author: EricWang
-manager: RichardLuan
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -41,12 +39,12 @@ ms.dyn365.ops.version: 10.0.4
 
     The new tax configuration is listed in the **Available configurations** grid.
 
-    ![Selecting a configuration version](media/configuration-version_upd.png)
+    ![Selecting a configuration version.](media/configuration-version_upd.png)
 
 8. Select **Save**, and then select **Synchronize**.
 9. Select **Activate**.
 
-    ![Active configuration](media/active_upd.png)
+    ![Active configuration.](media/active_upd.png)
 
     The configuration that you activated is updated as the current configuration. 
     > [NOTE]
@@ -68,7 +66,7 @@ ms.dyn365.ops.version: 10.0.4
 16. Save the record.
 17. Select **Activate** to activate the configuration for the company.
 
-    ![GST company](media/gst-company_upd.PNG)
+    ![GST company.](media/gst-company_upd.PNG)
 
 ## Update the configuration version
 
@@ -79,7 +77,7 @@ ms.dyn365.ops.version: 10.0.4
 
     The new tax configuration is listed in the **Available configurations** grid.
 
-    ![Updating the configuration](media/update-configuration.png)
+    ![Updating the configuration.](media/update-configuration.png)
 
 5. Select **Save**.
 6. Select the record, and then select **Synchronize**.
@@ -89,4 +87,7 @@ ms.dyn365.ops.version: 10.0.4
 
 8. Select **Save**, and then select **Close**.
 
-    ![New active configuration](media/update-configuration-2.png)
+    ![New active configuration.](media/update-configuration-2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

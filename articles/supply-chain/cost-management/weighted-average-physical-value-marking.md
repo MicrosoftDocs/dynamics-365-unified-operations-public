@@ -4,11 +4,9 @@
 title: Weighted average with physical value and marking
 description: Weighted average is an inventory model based on the weighted average principle, where issues from inventory are valued at the average value of the items that are received into inventory during the inventory closing period, plus any on-hand inventory from the previous period.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -73,7 +71,7 @@ In the scenario in the following sections, a financially updated receipt and iss
 
 The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model and the direct settlement principle without the Include physical value option. 
 
-![WeightedAverage DS without Include Physical Value](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
+![WeightedAverage DS without Include Physical Value.](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Key to diagram**
 - Inventory transactions are represented by vertical arrows.
@@ -107,7 +105,7 @@ The following transactions are illustrated in the graphic below:
 
 The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model and the summarized settlement principle without the Include physical value option. 
 
-![Weighted Average SS without Include Physical Value](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Weighted Average SS without Include Physical Value.](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Key to diagram**
 - Inventory transactions are represented by vertical arrows.
@@ -136,7 +134,7 @@ The following transactions are illustrated in the graphic below:
 
 The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model and the direct settlement principle with the Include physical value option. 
 
-![Weighted average DS with Include Physical Value](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
+![Weighted average DS with Include Physical Value.](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Key to diagram**
 - Inventory transactions are represented by vertical arrows.
@@ -169,7 +167,7 @@ The following transactions are illustrated in the graphic below:
 
 The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model and the summarized settlement principle without the Include physical value option. 
 
-![WeightedAverage SS with Include Physical Value](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
+![WeightedAverage SS with Include Physical Value.](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Key to diagram**
 - Inventory transactions are represented by vertical arrows.
@@ -217,7 +215,7 @@ The new running average cost price reflects the average of the financially and p
 
 The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model with marking. 
 
-![Weighted Average with Marking](./media/weightedaveragewithmarking.gif) 
+![Weighted Average with Marking.](./media/weightedaveragewithmarking.gif) 
 
 **Key to diagram**
 - Inventory transactions are represented by vertical arrows.
@@ -235,3 +233,6 @@ The following diagram illustrates this series of transactions with the effects o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

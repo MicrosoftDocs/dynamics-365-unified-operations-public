@@ -4,11 +4,9 @@
 title: Configure service updates through Lifecycle Services (LCS)
 description: This topic explains how to specify how and when you receive service updates for your environments.
 author: angelmarshall
-manager: AnnBe
 ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -91,3 +89,6 @@ A scheduled update could be canceled for various reasons. Here are some of the c
 
 You can find the canceled updates via the **View recent canceled updates** in the update settings. It will show all canceled updates, if any, within the last 2 scheduled updates.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

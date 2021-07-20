@@ -4,11 +4,9 @@
 title: Retail transaction consistency checker
 description: This topic describes the transaction consistency checker functionality in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 10/07/2020
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -44,7 +42,7 @@ When inconsistent transactions are picked up by the statement posting process, i
 
 The following chart illustrates the posting process with the transaction consistency checker.
 
-![Statement posting process with transaction consistency checker](./media/validchecker.png "Statement posting process with retail transaction consistency checker")
+![Statement posting process with transaction consistency checker.](./media/validchecker.png "Statement posting process with retail transaction consistency checker")
 
 The **Validate store transactions** batch process checks the consistency of the commerce transaction tables for the following scenarios.
 
@@ -82,3 +80,6 @@ If a validation error is found, the only way to fix the error is to contact Micr
 
 > [!NOTE]
 > Additional validation rules to support more scenarios will be added in a future release.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

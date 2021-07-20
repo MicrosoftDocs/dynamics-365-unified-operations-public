@@ -4,11 +4,9 @@
 title: Manage benefit expiration dates
 description: This procedure shows how you can expire or extend a benefit, and manage the enrollment dates of workers that are enrolled in the benefit. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 02/03/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,7 +14,6 @@ ms.technology:
 ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationResults, HcmWorker, HcmWorkerEnrollment, BenefitWorkspace, HcmBenefitSummaryPart   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -29,6 +26,8 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 ---
 
 # Manage benefit expiration dates
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This procedure shows how you can expire or extend a benefit, and manage the enrollment dates of workers that are enrolled in the benefit. The demo data company used to create this procedure is USMF.
 
@@ -51,3 +50,6 @@ This procedure shows how you can expire or extend a benefit, and manage the enro
 15. Click Benefits.
 16. In the list, find the benefit and select the record. Note the new coverage end date.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

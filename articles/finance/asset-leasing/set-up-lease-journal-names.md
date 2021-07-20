@@ -4,16 +4,14 @@
 title: Set up lease journal names
 description: This topic explains how to define lease journal names. Lease journal names specify the journals that entries that originate in Asset leasing are posted to.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: AssetLeasePostingAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -42,3 +40,6 @@ To configure lease journal names, follow these steps.
 2. On the **General** tab, in the **Initial recognition journal name** field, and select a journal. All initial recognition journal entries will be posted to this journal name.
 3. In the **Invoice journal name** field, select a journal. If the **Pay to vendor** option is set to **Yes** for the lease book, lease and expense payment invoices will be posted to this journal name.
 4. In the **Lease journal name** field, select a journal. All depreciation, interest, and short-term reclassification entries will be posted to this journal name. If the **Pay to vendor** option is set to **No** for the lease book, lease payments and expense payment entries will also be posted to this journal name.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

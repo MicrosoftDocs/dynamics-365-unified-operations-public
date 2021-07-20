@@ -4,11 +4,9 @@
 title: Troubleshoot product information
 description: This topic describes how to fix issues that you might encounter while you work with product information.
 author: SmithaNataraj
-manager: tfehr
 ms.date: 11/04/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -154,3 +152,6 @@ If a product variant has already been released in a company A, and you try to re
 The **New** button on the **Released product variants** page creates the variant and releases it in the company context. If the variant has already been created, you can't use the **New** button to release it in another company.
 
 To fix the issue, open the **Product master** page, and select **Release product** to release the existing variant in the desired company.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

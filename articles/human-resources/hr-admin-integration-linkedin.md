@@ -4,11 +4,9 @@
 title: Integrate with LinkedIn Talent Hub
 description: This topic explains how to set up integration between Microsoft Dynamics 365 Human Resources and LinkedIn Talent Hub.
 author: jaredha
-manager: tfehr
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -31,6 +28,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Integrate with LinkedIn Talent Hub
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [banner](includes/preview-feature.md)]
 
@@ -54,7 +53,7 @@ A system administrator must complete setup tasks to enable integration with Link
 
 5. On the **Dynamics 365 Human Resources** page, select the environment to link LinkedIn Talent Hub to, and then select **Link**.
 
-    ![LinkedIn Talent Hub onboarding](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![LinkedIn Talent Hub onboarding.](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > You can link only to environments where your user account has administrator access to both the Human Resources environment and the associated Power Apps environment. If no environments are listed on the Human Resources link page, make sure that you have licensed Human Resources environments on the tenant, and that the user that you signed in to the link page as has administrator permissions to both the Human Resources environment and the Power Apps environment.
@@ -97,7 +96,7 @@ An application user must be created for the LinkedIn Talent Hub adapter to grant
 
 6. Use the drop-down menu above the list to change the view from the default **Enabled Users** view to **Application Users**.
 
-    ![Application Users view](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![Application Users view.](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. On the toolbar, select **New**.
 
@@ -135,7 +134,7 @@ After you save and close the new application user in the previous section, you'r
 ### Create the table in Dataverse
 
 > [!IMPORTANT]
-> The integration with LinkedIn Talent Hub depends on virtual tables in Dataverse for Human Resources. As a prerequisite for this step in the setup, you must configure virtual tables. For information about how to configure virtual tables, see [Configure Dataverse virtual tables](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+> The integration with LinkedIn Talent Hub depends on virtual tables in Dataverse for Human Resources. As a prerequisite for this step in the setup, you must configure virtual tables. For information about how to configure virtual tables, see [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 1. In Human Resources, open the **Dataverse integration** page.
 
@@ -169,7 +168,7 @@ After a candidate has moved through the recruiting process and has been hired, y
     - In the **Location** field, enter the location where the employee will be based.
     - Enter or verify the employee's email address.
 
-![Export to HRIS pane in LinkedIn Talent Hub](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![Export to HRIS pane in LinkedIn Talent Hub.](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## Complete onboarding in Human Resources
 
@@ -194,4 +193,7 @@ The following details are imported and included on the new employee record:
 ## See also
 
 [Configure Dataverse virtual tables](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[What is Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+[What is Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

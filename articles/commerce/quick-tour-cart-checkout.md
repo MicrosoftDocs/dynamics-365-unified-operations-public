@@ -4,11 +4,9 @@
 title: Cart and checkout pages overview
 description: This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 ms.search.industry: 
 ms.author: anupamar
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 The cart page of an e-Commerce website shows all items that a customer has added to the cart. The cart page is built by using the cart module. The cart module is a container that hosts all the modules that are required to showcase items in the cart. The cart module can also use other modules to show the order summary and any promotional codes that have been applied to the customer order.
 
 The checkout page of an e-Commerce website presents a step-by-step flow that customers follow to enter all the information that is required to place an order. A checkout module can include modules that handle the shipping address, shipping methods, billing information, order summary, and other information that is related to customer orders.
@@ -44,7 +40,7 @@ The cart page serves as the shopping bag and includes all the items that have be
 
 The following illustration show an example of a cart page that was built by using the module library and the "Fabrikam" theme.
 
-![Example of a cart page](./media/cart2.PNG)
+![Example of a cart page.](./media/cart2.PNG)
 
 The main body of the cart page shows all the items that the customer has added to the cart. All applicable discounts are showcased. These discounts include complex discounts. Examples include "Buy 3 items and get 10% off" or "Buy a bottle and a backpack to get 10% off." The order summary module shows the amount that is due after discounts, shipping, taxes, and so on, have been applied. There is also a promo code module that lets the customer apply or remove promotional codes.
 
@@ -60,7 +56,7 @@ The checkout page is where customers enter the information that is required to p
 
 The following illustration show an example of a checkout page that was built by using the module library.
 
-![Example of a checkout page](./media/Checkout.PNG)
+![Example of a checkout page.](./media/Checkout.PNG)
 
 The main body of the checkout page is where all the order information is collected. This information includes the shipping address, delivery options, and payment information. Checkout has a step-by-step flow, because the information must be entered in a specific order to be processed. For example, the shipping address must be entered before the shipping costs can be calculated and the payment can be authorized.
 
@@ -90,7 +86,7 @@ The customer can complete the checkout process as a guest user or a signed-in us
 
 ### Order summary
 
-Checkout shows a summary of the line items in the cart, so that the customer can verify the order before he or she places it. The line items can't be edited during the checkout flow. However, a link to the cart is provided in case the user wants to go back and edit line items.
+Checkout shows a summary of the line items in the cart, so that the customer can verify the order before placing the order. The line items can't be edited during the checkout flow. However, a link to the cart is provided in case the user wants to go back and edit line items.
 
 After the customer provides shipping and billing information, the order summary reflects the amount that is due after loyalty points, gift cards, and other payments have been applied.
 
@@ -109,3 +105,6 @@ For more information about how to author a checkout page, see [Add a checkout mo
 [Product details pages overview](quick-tour-pdp.md)
 
 [Account management pages overview](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

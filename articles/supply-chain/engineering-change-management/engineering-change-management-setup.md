@@ -4,11 +4,9 @@
 title: Establish common values for engineering change management
 description: This topic describes how to establish common values that are used for parameters in various parts of engineering change management.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -94,3 +92,6 @@ For each rule set, set the following field:
 - **Severity** – Select the severity level to establish rules for. You use the **Engineering change severities** page to create and name the levels. (For more information, see the previous section.)
 
 Use the buttons on the **Rules** FastTab to add or remove a rule for the current severity setting. Each rule has a **Rule** field and a **Name** field. The rules are established by the system and indicate the types of changes that a product can have. The name indicates the type of change.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

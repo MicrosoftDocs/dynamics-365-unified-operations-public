@@ -4,11 +4,9 @@
 title: Settlement overview
 description: This topic provides general information about the settlement process. It describes which transaction types can be settled, and the timing and process for settling them. It also describes the results of the settlement process.
 author: kweekley
-manager: AnnBe
 ms.date: 04/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 14551
+ms.custom: ["14551", "intro-internal"]
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 # ms.search.industry: 
@@ -82,3 +80,6 @@ When you try to settle a transaction, you might notice a symbol that indicates t
 ## Additional resources
 
 - [Settle remainder](settle-remainder.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

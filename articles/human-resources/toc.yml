@@ -1,10 +1,28 @@
 - name: Dynamics 365 Human Resources
-  href: hr-welcome.md
+  href: ./index.md
   items:
   - name: What's new
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: July 12, 2021
+      href: hr-whats-new-2021-07-12.md
+    - name: June 22, 2021
+      href: hr-whats-new-2021-06-22.md
+    - name: May 20, 2021
+      href: hr-whats-new-2021-05-20.md
+    - name: May 3, 2021
+      href: hr-whats-new-2021-05-03.md
+    - name: April 19, 2021
+      href: hr-whats-new-2021-04-19.md
+    - name: April 5, 2021
+      href: hr-whats-new-2021-04-05.md
+    - name: March 22, 2021
+      href: hr-whats-new-2021-03-22.md
+    - name: March 8, 2021
+      href: hr-whats-new-2021-03-08.md
+    - name: February 22, 2021
+      href: hr-whats-new-2021-02-22.md
     - name: January 28, 2021
       href: hr-whats-new-2021-01-28.md
     - name: January 21, 2021
@@ -89,9 +107,9 @@
         href: hr-admin-integration-common-data-service.md
       - name: Dataverse tables
         href: hr-developer-entities.md
-      - name: Configure Dataverse virtual entities
+      - name: Configure Dataverse virtual tables
         href: hr-admin-integration-common-data-service-virtual-entities.md
-      - name: Human Resources virtual entities FAQ
+      - name: Human Resources virtual tables FAQ
         href: hr-admin-virtual-entity-faq.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
@@ -104,91 +122,91 @@
       - name: Integrate with Office
         items:
         - name: Office integration tutorial
-          href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Update entity data in Excel
-          href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Create Open in Excel experiences
-          href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Troubleshoot Office integration
-          href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
     - name: Configure data management
       items:
       - name: Data management framework overview
-        href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+        href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
       - name: Data entities
         items:
         - name: Data entities overview
-          href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Configuration data projects
-          href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Copy configuration data between companies or legal entities
           items:
           - name: Copy configuration data overview
-            href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+            href: ../fin-ops-core/dev-itpro/data-entities/copy-configuration.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
           - name: Configuration data packages
-            href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
           - name: Configuration data packages (July 2017 release only)
-            href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Configuration data templates
-          href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Track changes to an entity
-          href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Find information about standard data entities
-          href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Data templates with multiple worksheets
-          href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Enable change tracking for entities
-          href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Configuration keys and data entities
-          href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Configuration data packages
-          href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
       - name: Data import and export jobs
         items:
         - name: Data import and export jobs overview
-          href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Best practices for importing vouchers using the General journal entity
-          href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
       - name: Development for data entities
         items:
         - name: Design principles and best practices for data entities
-          href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Create new data entities
-          href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Data entity properties
-          href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Create computed columns and virtual fields
-          href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Cross-company behavior
-          href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Handling country/region codes
-          href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Inheritance patterns
-          href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Data entity wizard rules
-          href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Metadata properties
-          href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Validations, defaults, and unmapped fields
-          href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Security and data entities
-          href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Use third-party service testing utilities
-          href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Create read-only entities that expose financial dimensions
-          href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+          href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
       - name: Bring your own database
-        href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
       - name: Optimize BYOD batch jobs
         href: hr-admin-integration-byod-batch-jobs.md
       - name: Automated Entity store refresh
-        href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
       - name: Data task automation
-        href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+        href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
       - name: Data validation checklist workspace
-        href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+        href: ../fin-ops-core/dev-itpro/user-interface/data-validation-workspace.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
       - name: Data management error descriptions
-        href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json 
+        href: ../fin-ops-core/dev-itpro/data-entities/dm-error-descriptions.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
     - name: Manage features
       href: hr-admin-manage-features.md
     - name: Configure and manage database logging
@@ -239,6 +257,8 @@
       href: hr-admin-go-live-prepare.md
     - name: Go-live FAQ
       href: hr-admin-go-live-faq.md
+    - name: Human Resources infrastructure merge FAQ
+      href: hr-infrastructure-merge-faq.md
     - name: Documentation resources
       items:
       - name: Help system
@@ -261,6 +281,8 @@
         href: hr-admin-troubleshooting-batch-jobs.md
       - name: Optimize performance with auto cleanup tasks
         href: hr-admin-troubleshooting-batch-history.md
+      - name: Reset stuck batch jobs
+        href: hr-admin-troubleshooting-batch-execution.md
       - name: Analytic reports aren't updated
         href: hr-admin-troubleshooting-analytic-reports.md
       - name: Can't create an environment in the Power Apps Admin center
@@ -297,6 +319,8 @@
         href: hr-admin-integration-choose-technology.md
       - name: Configure Dataverse integration
         href: hr-admin-integration-common-data-service.md
+      - name: Configure Dataverse virtual tables
+        href: hr-admin-integration-common-data-service-virtual-entities.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
       - name: Configure integration with Dayforce
@@ -306,13 +330,19 @@
       - name: Integrate with Office
         items:
         - name: Office integration tutorial
-          href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
         - name: Update entity data in Excel
-          href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
         - name: Create Open in Excel experiences
-          href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
         - name: Troubleshoot Office integration
-          href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+          href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
+    - name: Troubleshoot development with Dataverse virtual tables
+      items:
+      - name: Optimize Dataverse virtual table queries
+        href: hr-developer-optimize-virtual-table-queries.md
+      - name: Human Resources virtual tables FAQ
+        href: hr-admin-virtual-entity-faq.md
     - name: Entity API reference
       items: 
       - name: Authentication
@@ -329,6 +359,8 @@
       items:
       - name: Introduction
         href: hr-admin-integration-ats-api-introduction.md
+      - name: Server-to-server authentication for ATS integrations
+        href: hr-admin-integration-ats-api-s2s-auth.md
       - name: Recruiting request and related entities
         items:
           - name: Recruiting request
@@ -411,6 +443,46 @@
             href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
           - name: Skill level type
             href: hr-admin-integration-ats-api-skill-level-type.md
+    - name: Payroll integration API
+      items:
+      - name: Introduction
+        href: hr-admin-integration-payroll-api-introduction.md
+      - name: Generate and review payroll entities
+        href: hr-admin-integration-payroll-api-generate-review-entities.md
+      - name: Payroll integration parameters
+        href: hr-admin-integration-payroll-api-parameters.md
+      - name: Payroll entities
+        items:
+        - name: Payroll employee
+          href: hr-admin-integration-payroll-api-payroll-employee.md
+        - name: Payroll worker address
+          href: hr-admin-integration-payroll-api-payroll-worker-address.md
+        - name: Payroll fixed compensation plan
+          href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+        - name: Payroll variable compensation plan
+          href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md        
+        - name: Payroll position
+          href: hr-admin-integration-payroll-api-payroll-position.md
+        - name: Payroll position job
+          href: hr-admin-integration-payroll-api-payroll-position-job.md
+      - name: Leave and absence related entities
+        items:
+          - name: Leave balance
+            href: hr-admin-integration-payroll-api-leave-balance.md
+          - name: Leave type
+            href: hr-admin-integration-payroll-api-leave-type.md
+          - name: Leave request
+            href: hr-admin-integration-payroll-api-leave-request.md
+      - name: Option sets
+        items:
+          - name: Gender
+            href: hr-admin-integration-payroll-api-gender.md    
+          - name: No Yes
+            href: hr-admin-integration-payroll-api-no-yes.md
+          - name: Award type
+            href: hr-admin-integration-payroll-api-award-type.md
+          - name: Process type
+            href: hr-admin-integration-payroll-api-process-type.md                   
   - name: User Guide
     items:
     - name: Overview
@@ -557,6 +629,8 @@
       items:
       - name: Organize your workforce
         href: hr-personnel-departments-jobs-positions.md
+      - name: Personnel management workspace
+        href: hr-personnel-personnel-management-workspace.md
       - name: Set up the components of a job
         href: hr-personnel-jobs.md
       - name: Define departments
@@ -565,6 +639,8 @@
         href: hr-personnel-add-department-hierarchy.md
       - name: Define jobs
         href: hr-personnel-define-jobs.md
+      - name: Positions
+        href: hr-personnel-positions.md
       - name: Create a working times calendar
         href: hr-personnel-create-working-time-calendar.md
       - name: Recruit job candidates
@@ -579,6 +655,8 @@
         href: hr-personnel-modify-reporting-relationships-position.md
       - name: Enter worker information
         href: hr-personnel-enter-worker-information.md
+      - name: Workers without employment
+        href: hr-personnel-workers-without-employment.md
       - name: Loan items to workers
         href: hr-personnel-loan-item-worker.md
       - name: Create loan items
@@ -617,12 +695,16 @@
         href: hr-compensation-define-process.md
       - name: Process compensation plans
         href: hr-compensation-process.md
+      - name: Mark an employee as ready to pay
+        href: hr-compensation-payroll.md
     - name: Manage benefits
       items:
       - name: Benefits management
         items:
         - name: Benefits management overview
           href: hr-benefits-management-overview.md
+        - name: Benefits management workspace
+          href: hr-benefits-management-workspace.md
         - name: Configure Benefits management
           items: 
           - name: Configure Benefits management parameters per company
@@ -639,7 +721,7 @@
             href: hr-benefits-setup-payment-frequencies.md
           - name: Configure life event types
             href: hr-benefits-setup-life-event-types.md
-          - name: Create plan types
+          - name: Plan type overview
             href: hr-benefits-setup-plan-types.md
           - name: Set up reason codes
             href: hr-benefits-setup-reason-codes.md
@@ -731,6 +813,8 @@
         href: hr-employee-self-service-request-time-off.md
       - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
+      - name: Configure absence manager role
+        href: hr-configure-absence-manager.md
       - name: Manage buy and sell leave policies
         href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
       - name: Create buy and sell leave workflows
@@ -743,8 +827,14 @@
       items:
       - name: Performance management overview
         href: hr-develop-performance-management-overview.md
-      - name: Align workforce skills
-        href: hr-develop-skills.md
+      - name: Skills
+        items:
+        - name: Configure skills
+          href: hr-develop-skills.md
+        - name: Enter skills
+          href: hr-develop-enter-skills.md
+        - name: Map skills
+          href: hr-develop-map-skills.md
       - name: Add to your performance journal
         href: hr-develop-add-performance-journal.md
       - name: Create a goal
@@ -783,3 +873,71 @@
         href: hr-employee-self-service-workspace-name.md
       - name: Edit personal information
         href: hr-employee-manager-self-service-edit-personal-information.md
+      - name: Restrict editing of personal information
+        href: hr-employee-self-service-restrict-editing.md
+    - name: Use the Workflow system
+      items:
+        - name: Workflow system overview
+          href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+        - name: Workflow system architecture
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+        - name: Workflow elements
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+        - name: Workflow actions
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+        - name: Create workflows
+          items:
+          - name: Create workflows overview
+            href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configure workflow properties
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configure manual tasks
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configure automated tasks
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configure approval processes
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configure approval steps
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configure expenditure reviewers
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configure manual decisions
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configure conditional decisions
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configure parallel activities
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configure parallel branches
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+          - name: Configure line-item workflows
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+        - name: Configure the Workflow Message Processing batch job as critical
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+        - name: Delegate work items in a workflow
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+        - name: View workflow history
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+        - name: Configure the system to send workflow-related email to users
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+        - name: Workflow types
+          items:
+          - name: Creating a workflow type
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+          - name: Workflow type checklist
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+          - name: Create a workflow category
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+          - name: Create a query for a workflow type
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+          - name: Create a new workflow type
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+          - name: Create a workflow document class
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+          - name: Create a SubmitToWorkflow class
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+          - name: Associate a workflow document class with a workflow type
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+        - name: Workflow types report
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+        - name: Workflow FAQ
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json

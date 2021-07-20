@@ -4,11 +4,9 @@
 title: Hire existing employees through recruitment
 description: Sometimes open positions can be filled by candidates who are already employees in your organization. 
 author: andreabichsel
-manager: AnnBe 
 ms.date: 02/10/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -44,3 +42,6 @@ Sometimes open positions can be filled by candidates who are already employees i
 9. Click Change position.
     * You may also change compensation at this time. If you do not assign compensation at this time, you can change it by going to the worker form, selecting the Compensation tab, and choosing 'Fixed Plan'. After you select 'Change position', the status on the application will be updated to 'Employed'.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

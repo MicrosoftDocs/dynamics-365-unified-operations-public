@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Relax model restrictions to refactor overlayering into extensions
 description: This topic provides information about relaxing model restrictions to enable the refactoring of over-layering into extensions.
 author: CGarty
-manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -75,3 +69,6 @@ As a solution gradually migrates toward extensions, there will be places where a
 4. If the prototype extension capability is sufficient, create a matching request.
 5. When the extension capability has been implemented in the platform or application, the prototype extension capability and any associated over-layering should be removed from the extension prototype model.
 6. After the solution has all over-layering refactored to extensions and the extension prototype model is empty, the solution refactoring is complete.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

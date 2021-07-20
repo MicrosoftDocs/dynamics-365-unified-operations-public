@@ -4,11 +4,9 @@
 title: Sales tax calculation on general journal lines
 description: This topic explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
 author: EricWang
-manager: Ann Beebe
-ms.date: 08/14/2019
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +15,14 @@ ms.search.form: TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
 
@@ -63,7 +61,7 @@ Otherwise, sales tax direction is Sales Tax Receivable.
 
 The following diagram illustrates the rule graphically.
 
-![Tax direction possibilities for project accounts](media/Sales-Tax-Direction-Vendor.jpg)
+![Tax direction possibilities for project accounts.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### Account type is Vendor
 
@@ -81,7 +79,7 @@ Otherwise, sales tax direction is Sales Tax Receivable.
 
 The following diagram illustrates the rule graphically.
 
-![Tax direction possibilities for vendor accounts](media/Sales-Tax-Direction-Vendor.jpg)
+![Tax direction possibilities for vendor accounts.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### Account type is Customer
 
@@ -97,7 +95,7 @@ Otherwise, sales tax direction is Sales Tax Payable.
 
 The following diagram illustrates the rule graphically.
 
-![Tax direction possibilities for customer accounts](media/Sales-Tax-Direction-Customer.jpg)
+![Tax direction possibilities for customer accounts.](media/Sales-Tax-Direction-Customer.jpg)
 
 ### Account type is Ledger
 
@@ -111,7 +109,7 @@ Otherwise, if the journal amount is debit (positive) ,sales tax direction is Sal
 
 The following diagram illustrates the rule graphically.
 
-![Tax direction possibilities for ledger accounts](media/Sales-Tax-Direction-Ledger.jpg)
+![Tax direction possibilities for ledger accounts.](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### Override the sales tax direction
 
@@ -123,9 +121,9 @@ Go to **General ledger \> Chart of accounts \> Accounts \> Main accounts**, and 
 
 This section describes how the sales tax amount sign is calculated.
 
-![Sales tax transactions page](media/sales-tax-amount-sign.jpg)
+![Sales tax transactions page.](media/sales-tax-amount-sign.jpg)
 
-The following table shows the generic rule for determining the sign of sales tax amounts in the temporary sales tax table.
+The following table shows the generic rule for determining the sales tax direction and sign of sales tax amounts in the temporary sales tax table.
 
 | Journal line amount | Sales tax direction  | Sales tax amount sign |
 |---------------------|----------------------|-----------------------|
@@ -134,7 +132,7 @@ The following table shows the generic rule for determining the sign of sales tax
 | Negative            | Sales Tax Receivable | Negative              |
 | Negative            | Sales Tax Payable    | Positive              |
 
-There is a special rule for vouchers that have only **Project** or **Ledger** lines, when a sales tax group or item sales tax group is selected on the **Ledger** line. This rule is controlled by Enable independent sales tax calculation feature for general journals. When this feature is turned off, the tax amount of the **Ledger** line uses the debit/credit direction of the **Project** line. When the feature is turned on, the tax amount of the **Ledger** line uses its own debit/credit direction. The following tables show the rule for each scenario. 
+There is a special rule for vouchers that have only **Project** or **Ledger** lines, when a sales tax group or item sales tax group is selected on the **Ledger** line. This rule is controlled by the feature, **Enable independent sales tax calculation feature for general journals**. When this feature is turned off, the tax amount of the **Ledger** line uses the debit/credit direction of the **Project** line. When the feature is turned on, the tax amount of the **Ledger** line uses its own debit/credit direction. The following tables show the rule for each scenario. 
 
 **Rule when the feature is turned on**
 
@@ -162,3 +160,6 @@ The following table shows the generic rule.
 | Sales Tax Receivable | Negative              | Tax Receivable Account | Negative(Credit)  |
 | Sales Tax Payable    | Positive              | Tax Payable Account    | Negative(Credit)  |
 | Sales Tax Payable    | Negative              | Tax Payable Account    | Positive (Debit)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

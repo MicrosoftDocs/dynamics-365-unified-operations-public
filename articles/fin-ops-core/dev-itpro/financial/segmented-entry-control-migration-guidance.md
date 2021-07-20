@@ -3,12 +3,10 @@
 
 title: Migration guidance for Segmented Entry controls
 description: This topic guides you through the process of migrating a Segmented Entry control.
-author: robinarh
-manager: AnnBe
+author: RyanCCarlson2
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 25651
 ms.assetid: eea675a0-d9d8-453d-9f5a-70c833a7a0d6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -82,7 +80,7 @@ The goal of the new design is to encapsulate the control implementation and not 
 ## Properties
 The custom properties for the **Segmented Entry** control are found under **Controller**. The following screen shot shows an example. 
 
-![custom properties for the Segmented Entry control](./media/111.png)
+![custom properties for the Segmented Entry control.](./media/111.png)
 
 Not all properties apply to all **Controller** class types. Properties that don't apply to a selected controller class will be disabled. The following table provides details about the properties.
 
@@ -118,7 +116,7 @@ The following table provides details about each controller.
 
 If **SegmentedEntry** appears as the type next to any control, change it to **SegmentedEntryControl**. 
 
-[![SegmentedEntry control type](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
+[![SegmentedEntry control type.](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
 
 #### Dynamics AX
 
@@ -127,11 +125,11 @@ An easy method is to append "\_old" to the name of the old control, add the new 
 > [!NOTE] 
 > To prevent tests and other code that references the control from breaking, make sure that the new control has the same name as the old control. To add the new control, right-click the parent control that will contain the **Segmented Entry** control, and then select **New** &gt; **SegmentedEntryControl**. 
 
-[![New SegmentedEntryControl](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) 
+[![New SegmentedEntryControl.](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) 
 
 The following screen shot shows how new control will look. 
 
-[![New control in list](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
+[![New control in list.](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
 
 ### Step 2
 
@@ -556,9 +554,9 @@ Set the following properties on the control:
 -   **Reference Field**
 -   **Controller Class**
 
-[![Set Controller Class](./media/segmentmigrate04.png)](./media/segmentmigrate04.png) 
+[![Set Controller Class.](./media/segmentmigrate04.png)](./media/segmentmigrate04.png) 
 
-[![Set Reference Field](./media/segmentmigrate05.png)](./media/segmentmigrate05.png) 
+[![Set Reference Field.](./media/segmentmigrate05.png)](./media/segmentmigrate05.png) 
 
 > [!NOTE]
 > A controller class is required for the control to work. Therefore, a run-time error will be thrown if the **Controller Class** property isn't set.
@@ -612,7 +610,7 @@ ledgerDimensionDefaultAccountController.parmFilterLedgerPostingType(LedgerPostin
 
 This is the **Posting Type** property on the control. The control that the **PostingType** property must be set on can be determined from the mapping details that are derived by looking at the **parmControl()** call. 
 
-[![Posting Type property](./media/segmentmigrate06.png)](./media/segmentmigrate06.png) 
+[![Posting Type property.](./media/segmentmigrate06.png)](./media/segmentmigrate06.png) 
 
 These properties can also be set in code, through corresponding **parm** methods on the control instance. Here's an example.
 
@@ -626,7 +624,7 @@ ClearingAccount.parmPostingType(LedgerPostingType::VendSettlement);
 
 Override **resolveReference()** in the data source field for the ledger dimension. 
 
-[![resolveReference method](./media/segmentmigrate07.png)](./media/segmentmigrate07.png)
+[![resolveReference method.](./media/segmentmigrate07.png)](./media/segmentmigrate07.png)
 
 #### Dynamics AX
 
@@ -999,8 +997,8 @@ The uptake pattern for the new **Segmented Entry** control on a dialog has chang
     -   You must specify the account structure that should be used with the **Budget planning** controller. The **Dialog** class must implement a way for the user to select the account structure (outside of the SEC) and set the selected account structure on the SEC.
 
 
-Additional resources
---------
+## Additional resources
+
 
 [Support for Segmented Entry controls on dialogs](segmented-entry-control-dialog-support.md)
 
@@ -1013,3 +1011,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

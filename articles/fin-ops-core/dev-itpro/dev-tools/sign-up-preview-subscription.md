@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Sign up for preview subscriptions
 description: This topic explains how to subscribe to the preview/partner offer and deploy an environment.
 author: RobinARH
-manager: AnnBe
 ms.date: 12/16/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 13211
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Sign up for preview subscriptions
@@ -53,7 +38,7 @@ This topic explains how to subscribe to the preview/partner offer and deploy an 
     > [!IMPORTANT]
     > For this release, we ask that you not use any existing credentials that are associated with other online services, such as Microsoft 365 or Microsoft Dynamics CRM Online.
 
-- **Microsoft account** – Microsoft accounts were formerly known as Passport accounts or Windows Live ID accounts. Currently, Microsoft accounts can't be used with Finance and Operations applications, Microsoft Dynamics 365 Commerce, or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
+- **Microsoft account** – Microsoft accounts were formerly known as Passport accounts or Windows Live ID accounts. Currently, Microsoft accounts can't be used with Finance and Operations applications, Microsoft Dynamics 365 Commerce, or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as Information Source and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
 - **Microsoft 365 admin center** – Microsoft 365 admin center is the subscription management portal that Microsoft 365 provides for administrators. Microsoft 365 admin center is used to provide management functions for users and subscriptions.
 - **Environments** – You can deploy as many single instances of a virtual machine (VM) as you require. We call these instances *environments*.
 
@@ -72,7 +57,7 @@ This topic explains how to subscribe to the preview/partner offer and deploy an 
 2. On the **Account setup** page, in the **Country or region** field, select the country or region.
 3. Follow the wizard and prompts to complete the sign-up, until you reach the last step.
 
-    [![You're ready to go](./media/wizardprompt.png)](./media/wizardprompt.png)
+    [![You're ready to go.](./media/wizardprompt.png)](./media/wizardprompt.png)
 
 ## Start a new project in LCS
 
@@ -83,7 +68,7 @@ To use LCS to manage your environments, you must create a new project.
 3. Sign in by using the account that you used to subscribe.
 4. Select the plus sign (**+**) to create a new project.
 
-    [![Create a project](./media/11.jpg)](./media/11.jpg)
+    [![Create a project.](./media/11.jpg)](./media/11.jpg)
 
 5. Select the project type.
 6. Enter the project information, and then select **Create**.
@@ -92,7 +77,7 @@ To use LCS to manage your environments, you must create a new project.
 
     The new project for managing your instance is created.
 
-    ![New project](./media/projectworkspace.jpg)
+    ![New project.](./media/projectworkspace.jpg)
 
 ## Add users to LCS
 
@@ -137,7 +122,7 @@ Start on the project page in LCS.
 
     After you deploy your environment, it's available in the **Environments** section.
 
-    [![New environment in the Environments section](./media/pic7.jpg)](./media/pic7.jpg)
+    [![New environment in the Environments section.](./media/pic7.jpg)](./media/pic7.jpg)
 
 13. Select the environment to view details about the deployment status. The first deployment will require a few hours, but each subsequent deployment will be much faster.
 14. When the deployment status changes to **Deployed**, select **Login** to connect to the client, or select the name of the VM to connect to the development machine by using Remote Desktop. After the deployment is completed, you can find the base URL and the information that you require to connect to the environment via Remote Desktop.
@@ -156,7 +141,7 @@ LCS is the starting point for performing online administrative activities. Here 
 
 2. Scroll to the right, and review the tiles.
 
-    ![Tiles](./media/pic9.jpg)]
+    ![Tiles.](./media/pic9.jpg)]
 
     The available tiles include various tools and services in LCS. They also include the following additional tiles:
 
@@ -171,4 +156,7 @@ LCS is the starting point for performing online administrative activities. Here 
         > [!NOTE]
         > To access the page, you must be a member of the **Global Administrator** role for your organization's Microsoft Online Services tenant. The installing user is always a global administrator, but other users must be added to this role.
 
-        [![Active users in Microsoft 365 admin center](./media/activeusersadmin.png)](./media/activeusersadmin.png)
+        [![Active users in Microsoft 365 admin center.](./media/activeusersadmin.png)](./media/activeusersadmin.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

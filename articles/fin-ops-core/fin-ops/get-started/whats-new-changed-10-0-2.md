@@ -4,11 +4,9 @@
 title: What's new or changed in Finance and Operations version 10.0.2 (May 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.2. This version will be released in May.
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.1
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.2. This version will be released in May and has a build number of 10.0.80. For more information about version 10.0.2, see [Additional resources](whats-new-changed-10-0-2.md#additional-resources).
 
 
-To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.2](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-2).
+To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.2](../../../commerce/get-started/whats-new-10-0-2.md).
 
   
 ## Recovering vendor invoices that are in use
@@ -82,7 +80,7 @@ Microsoft Dynamics 365 for Finance and Operations version 10.0.2 includes Platfo
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the April '19 release notes](/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
@@ -93,3 +91,6 @@ The [Removed or deprecated features for Finance and Operations](../../dev-itpro/
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

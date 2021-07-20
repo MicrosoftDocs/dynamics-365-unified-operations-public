@@ -4,11 +4,9 @@
 title: Set up the fiscal integration for Commerce channels
 description: This topic provides guidelines for setting up the fiscal integration functionality for Commerce channels. 
 author: josaw
-manager: annbe
 ms.date: 02/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -91,7 +89,7 @@ Before you use the fiscal integration functionality, you should configure the fo
 
         **Examples**
 
-        |   | Format | Example |
+        | Parameter  | Format | Example |
         |---|--------|---------|
         | **VAT rates settings** | value : VATrate | 1 : 2000, 2 : 1800 |
         | **VAT codes mapping** | VATcode : value | vat20 : 1, vat18 : 2 |
@@ -228,3 +226,6 @@ To enable manual execution of a postponed fiscal registration, you should add a 
     1. Select the layout to update.
     2. Add a new button, and set the **Complete fiscal registration process** button property.
     3. On the **Distribution schedule** page, run the **1090** job to transfer your changes to the channel database.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

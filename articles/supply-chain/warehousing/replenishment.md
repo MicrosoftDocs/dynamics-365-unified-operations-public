@@ -4,11 +4,9 @@
 title: Replenishment overview
 description: This topic describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management.
 author: Mirzaab
-manager: tfehr
 ms.date: 02/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 
 ms.technology: 
 
@@ -20,7 +18,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 90043
+ms.custom: ["90043", "intro-internal"]
 ms.assetid: 49fa97eb-8e10-49a5-9261-1e393159f178
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -82,3 +80,6 @@ Instead of having to sum demand at the end of an allocation process and do reple
 |   Location directives   |                                                       Location directives are required in order to guide work to the locations where replenishment is required and to the locations that inventory is sourced from.                                                        |
 |     Work templates      |                                                   Work templates of the <strong>Replenishment</strong> type are required in order to create replenishment work so that inventory can be moved to the desired locations.                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: View dispatch teams  
 description: View dispatch teams.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -56,3 +54,6 @@ For information about how to assign a worker to a team, see [Set up a preferred 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

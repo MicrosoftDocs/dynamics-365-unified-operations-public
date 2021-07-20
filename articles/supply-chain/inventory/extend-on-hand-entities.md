@@ -4,11 +4,9 @@
 title: Extend inventory on-hand data entities
 description: This topic provides an example that shows how to add extended fields to the INVENTORSITEONHANDENTITY and INVENTWAREHOUSEONHANDENTITY views, so that the capabilities of the inventory on-hand data entities can work with the extensions.
 author: sherry-zheng
-manager: tfehr
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -73,3 +71,6 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 ```
 
 After you complete these steps, you can extend the inventory on-hand by site and inventory on-hand by warehouse data entities by adding the new fields. In this way, you ensure that the extended fields are recognized and included during data migration that uses those data entities.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

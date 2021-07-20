@@ -4,11 +4,9 @@
 title: Create and send an onboarding guide by using Dynamics 365 Talent - Onboard
 description: This topic explains how to use the Microsoft Dynamics 365 Talent - Onboard app to create an onboarding guide for your new hires. This task is an essential first step in a human capital management (HCM) hire-to-retire strategy.
 author: andreabichsel
-manager:
 ms.date: 05/02/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-talent
 ms.technology:
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: anbichse
 # ms.tgt_pltfrm:
 # ms.custom:
 # ms.assetid:
@@ -43,11 +40,11 @@ After you've created an onboarding guide, you can send it to a new hire. Alterna
 3. Edit the template as you desire. Be sure to save your work as you go.
 4. When you've finished editing the template, select **Create guide**.
 
-    [![Creating an onboarding guide from a template](./media/onboard-create-guide.png)](./media/onboard-create-guide.png)
+    [![Creating an onboarding guide from a template.](./media/onboard-create-guide.png)](./media/onboard-create-guide.png)
 
 5. In the **Create a guide** window, under **Who are you onboarding**, enter the new hire's name or email address. If the new hire isn't in the system yet, select **Add now**, and enter the employee's information.
 
-    ![[Entering information for the onboarding guide](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Entering information for the onboarding guide.](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 6. Under **When do they start**, select a start date.
 7. If the onboarding guide should be sent automatically to the new hire on a specific date, make sure that the **Schedule an automatic send date** option is turned on, and then select the automatic send date. To send the guide immediately, turn off the **Schedule an automatic send date** option.
@@ -68,21 +65,21 @@ Onboard lets you send an onboarding guide to multiple new hires at the same time
 4. When you've finished editing the template, select **Create guide**.
 5. In the **Create a guide** window, select **Need to onboard multiple people at once**.
 
-    [![Creating an onboarding guide for multiple new hires](./media/onboard-send-guide-multiple-people.png)](./media/onboard-send-guide-multiple-people.png)
+    [![Creating an onboarding guide for multiple new hires.](./media/onboard-send-guide-multiple-people.png)](./media/onboard-send-guide-multiple-people.png)
 
 6. Select **new hire template**.
 7. After the .xlsx file is downloaded, select **Open**, enter the employees' information in the Excel workbook, and save the workbook.
 
-    [![Downloading the Excel template for sending the onboarding guide to multiple new hires](./media/onboard-send-guide-download-spreadsheet.png)](./media/onboard-send-guide-download-spreadsheet.png)
+    [![Downloading the Excel template for sending the onboarding guide to multiple new hires.](./media/onboard-send-guide-download-spreadsheet.png)](./media/onboard-send-guide-download-spreadsheet.png)
 
     > [!NOTE]
     > Before you can edit the workbook, you must select **Enable editing** in Excel.
     > 
-    > [![Enabling editing](./media/onboard-send-guide-enable-editing.png)](./media/onboard-send-guide-enable-editing.png)
+    > [![Enabling editing.](./media/onboard-send-guide-enable-editing.png)](./media/onboard-send-guide-enable-editing.png)
 
 8. Drag the Excel workbook to the designated area in the **Create multiple guides** window, or click anywhere in that area to browse for the file on your computer.
 
-    [![Dragging the edited workbook](./media/onboard-send-guide-drag-spreadsheet.png)](./media/onboard-send-guide-drag-spreadsheet.png)
+    [![Dragging the edited workbook.](./media/onboard-send-guide-drag-spreadsheet.png)](./media/onboard-send-guide-drag-spreadsheet.png)
 
 9. When you've finished editing the onboarding guide, select **Send** in the upper-right corner. Then follow one of these steps:
 
@@ -97,7 +94,7 @@ You don't always have to create a guide from a template. If you prefer, you can 
 1. On the left menu, select **Guides**, and then select the **Add** button (the plus sign \[**+**\]).
 2. In the **Create a guide** window, under **Who are you onboarding**, enter the new hire's name or email address. If the new hire isn't in the system yet, select **Add now**, and enter the employee's information.
 
-    ![[Entering information for the onboarding guide](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Entering information for the onboarding guide.](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 3. Under **When do they start**, select a start date.
 4. If the onboarding guide should be sent automatically to the new hire on a specific date, make sure that the **Schedule an automatic send date** option is turned on, and then select the automatic send date. To send the guide immediately, turn off the **Schedule an automatic send date** option.
@@ -110,7 +107,7 @@ You can save an onboarding guide as a template. In this way, you can save time w
 1. On the left menu, select **Guides**.
 2. Select the **More** button (the ellipsis \[**...**\]) for the guide that you want to create a template from, and then select **Save as template**.
 
-    ![[Saving an onboarding guide as a template](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
+    ![[Saving an onboarding guide as a template.](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
 
 3. In the **Save as a new template** window, enter a name for your new template, and then select **Save**.
 
@@ -125,5 +122,8 @@ You can save an onboarding guide as a template. In this way, you can save time w
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
 - [What's new or changed in Dynamics 365 Talent](./whats-new.md)
-- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release plans](/business-applications-release-notes/index)
 - [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

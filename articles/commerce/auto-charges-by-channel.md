@@ -3,11 +3,9 @@
 title: Enable and configure auto charges by channel
 description: This topic explains how to enable and configure auto charges by channel in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 # optional metadata
 # ms.search.form:  
@@ -71,7 +69,7 @@ To assign a default hierarchy to an organization hierarchy purpose in Commerce, 
 1. On the Action Pane, select **Run now**.
 1. Repeat the previous two steps to run the **1070** (**Channel configuration**) and **1110** (**Global configuration**) jobs.
 
-![Configuration of the Retail auto charge organization hierarchy purpose](media/Auto-charges-org-hierarchy-purpose.png)
+![Configuration of the Retail auto charge organization hierarchy purpose.](media/Auto-charges-org-hierarchy-purpose.png)
 
 ## Define auto charges by channel
 
@@ -91,7 +89,7 @@ To define auto charges by channel in Commerce, follow these steps.
 1. On the Action Pane, select **Run now**.
 1. Repeat the previous two steps to run the **1070** (**Channel configuration**) and **1110** (**Global configuration**) jobs.
 	
-![Auto charges defined by channel](media/Auto-charges-line-charge-by-channel.png)
+![Auto charges defined by channel.](media/Auto-charges-line-charge-by-channel.png)
 
 ## Example scenario
 
@@ -99,7 +97,7 @@ The following example outlines the steps that are required to configure a produc
 
 The organization defines a charges code that is named **RECYCLE**, as shown in the following illustration.
 
-![RECYCLE charges code](media/Auto-charges-charge-code.png)
+![RECYCLE charges code.](media/Auto-charges-charge-code.png)
 
 An auto charge is created at the line level. It has the following configuration:
 
@@ -117,16 +115,19 @@ An auto charges line is created. It has the following configuration:
 - The **Category** field is set to **Fixed**.
 - The **Charges** field is set to **$6.25**.
 
-![Configuration of the line-level auto charge and the auto charges line](media/Auto-charges-recyclingfee-line-fee.png)
+![Configuration of the line-level auto charge and the auto charges line.](media/Auto-charges-recyclingfee-line-fee.png)
 
 In the POS application, a sales order is created in the **San Francisco** store channel. The **Charges** line shows the recycling fee of **$6.25**.
 
 By selecting **Transaction options \> Charges \> Manage charges** in the POS application, you can view the charges code and description for the recycling fee.
 
-![Recycling fee in the POS application](media/pos-auto-charges-recyclingfee-line-fee.png)
+![Recycling fee in the POS application.](media/pos-auto-charges-recyclingfee-line-fee.png)
 
 ## Additional resources
 
 [Omni-channel advanced auto charges](omni-auto-charges.md)
 
 [Prorate header charges to matching sales lines](pro-rate-charges-matching-lines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

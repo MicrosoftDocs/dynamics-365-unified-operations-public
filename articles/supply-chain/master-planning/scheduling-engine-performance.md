@@ -4,11 +4,9 @@
 title: Improve scheduling engine performance
 description: This topic provides information about the scheduling engine and how to improve performance. 
 author: ChristianRytt
-manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -72,11 +70,11 @@ As an example, consider a route shown in the following table and image, which se
 | 10 | Secondary&nbsp;1 | | | | 1 | 20 |
 | 20 | Primary | | 3.00 | 1.00 | 3 | 0 |
 
-![Example rout diagram](media/scheduling-engine-route.png "Example rout diagram")
+![Example rout diagram.](media/scheduling-engine-route.png "Example rout diagram")
 
 When sending this to the engine, it is split out into eight jobs, as shown in the following illustration (select the image to enlarge it).
 
-[![Scheduling engine jobs](media/scheduling-engine-jobs.png "Scheduling engine jobs")](media/scheduling-engine-jobs-large.png)
+[![Scheduling engine jobs](media/scheduling-engine-jobs.png "Scheduling engine jobs."](media/scheduling-engine-jobs-large.png)
 
 The standard link between two jobs is `FinishStart`, meaning that the end time of one job must be before the start time of another job. Because the setup must be performed by the same resource that will later do the process, there are `OnSameResource` constraints between them. Between the jobs for primary and secondary operation for 10, there are `StartStart` and `FinishFinish` links, which means that the jobs must both start and end at the same time, and there are `NotOnSameResource` constraints, which will prevent the same resource for primary and secondary.
 
@@ -332,3 +330,6 @@ The value for **Optimization attempts timeout** controls how many seconds can at
 
 > [!NOTE]
 > The values set for the timeouts will be applied both for scheduling of released production orders and of planned orders as part of MRP. As a result, setting very high values could significantly add to the run time of MRP when running for a plan with many planned production orders.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Maintenance mode
-description: This topic desribes maintenance mode, which is a system-wide setting that lets system administrators make system changes that can affect system functionality.
+description: This topic describes maintenance mode, which is a system-wide setting that lets system administrators make system changes that can affect system functionality.
 author: laneswenka
-manager: AnnBe
 ms.date: 05/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -90,7 +88,7 @@ The following table describes the parameters that are used in this command.
 
 After the instance of Application Object Server (AOS) is restarted, the system will be in maintenance mode. You can then enable configuration keys, as shown in the following screenshot. 
 
-[![License configuration page when not in maintenance mode](./media/license-configuration-page-when-not-in-maintenance-mode.png)](./media/license-configuration-page-when-not-in-maintenance-mode.png) 
+[![License configuration page when not in maintenance mode.](./media/license-configuration-page-when-not-in-maintenance-mode.png)](./media/license-configuration-page-when-not-in-maintenance-mode.png) 
 
 If you try to access the system while in maintenance mode, but you aren't a system administrator or a user who has the **Maintenance mode user** role, you may receive an error message. 
 
@@ -100,3 +98,6 @@ You can turn off maintenance mode by running the following command.
 J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
 ```
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Default category landing page and search results page overview
 description: This topic provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
 author: ashishmsft
-manager: annbe
 ms.date: 06/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -37,7 +35,7 @@ This topic provides an overview of the default category landing page and search 
 
 The default category landing page is the page that website users typically are taken to when they select a category in the navigation hierarchy. The category page lets you browse, and you can also sort and refine the categorized products.
 
-![Default category landing page](./media/SimpleCategoryLandingDressCategory.png)
+![Default category landing page.](./media/SimpleCategoryLandingDressCategory.png)
 
 At the top of the page is a header that shows all the product categories and other pages that the merchandising manager has categorized. Configuration is done as part of the configuration of the channel navigation hierarchy. At the bottom of the page is a footer that includes quick links to various topics that a shopper might be interested in.
 
@@ -61,7 +59,7 @@ The following components are essential for a category:
 
 If you want a category landing page to have a more tailored experience for a specific category, you can "enrich" the category landing page for that category. For example, you can add a marketing video and some category storytelling to get the shopper's attention. For more information, see [Enrich a category landing page](enrich-category-page.md).
 
-![Enriched category landing page](./media/CategoryLandingPages.png)
+![Enriched category landing page.](./media/CategoryLandingPages.png)
 
 ## Auto-suggest and search results pages
 
@@ -75,11 +73,11 @@ Here are some of the types of suggestions that might be shown:
 - **Products** provide direct links to the product details page.
 - **Scoped category search suggestions** list various categories and let users search for the keyword in a specific category.
 
-![Immersive auto-suggest](./media/ImmersiveAutoSuggestUX.png)
+![Immersive auto-suggest.](./media/ImmersiveAutoSuggestUX.png)
 
 When users select one of the keyword or scoped category search suggestions, or when there are no suggestions for the search term that they enter, they are redirected to a search results page. The users can then browse, sort, and refine the list of search results to find the desired item.
 
-![Search landing](./media/SearchLanding.png)
+![Search landing.](./media/SearchLanding.png)
 
 The following components are essential for a search results page:
 
@@ -100,7 +98,7 @@ The following components are essential for a search results page:
 
 >[!NOTE]
 >These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that under **Commerce Parameters > Configuration Parameters** there is an entry for "ProductSearch.UseAzureSearch set to 'true'". 
-![Configuration parameters for cloud-powered search](./media/CloudPoweredSearchConfigurationParameters.png)
+![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## Additional resources
 
@@ -114,3 +112,6 @@ The following components are essential for a search results page:
 
 [Account management pages overview](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

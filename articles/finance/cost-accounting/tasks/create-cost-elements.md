@@ -4,11 +4,9 @@
 title: Create cost elements 
 description: There are several ways to create cost elements in Cost accounting. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -60,3 +58,6 @@ There are several ways to create cost elements in Cost accounting. This procedur
 1. Click View dimension members.
     * View the imported ledger accounts as cost elements in your business that costs can flow to.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

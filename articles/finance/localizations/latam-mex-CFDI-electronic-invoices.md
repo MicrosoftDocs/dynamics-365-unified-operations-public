@@ -4,11 +4,9 @@
 title: Electronic invoices (CFDI)
 description: This article provides information about the electronic invoices that your organization can submit to the Mexican tax authority (SAT). It describes the currently approved method for submitting electronic invoices (CFDI), the requirements for using them, and the information that they include.
 author: sndray
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -57,7 +55,7 @@ There are two methods for generating electronic invoices:
 
 The following illustration shows the process for generating an electronic invoice by using the CFDI method. 
 
-![The electronic invoice process for Mexico](./media/about-electronic-invoices-cfdi.jpg "Electronic invoicing generation process for CFDI method")    
+![The electronic invoice process for Mexico.](./media/about-electronic-invoices-cfdi.jpg "Electronic invoicing generation process for CFDI method")    
 
 ### Requirements for using electronic invoices
 
@@ -101,3 +99,6 @@ As is explained in detail in the Mexican localization scope document, integratio
 - [CFDI layout Version 3.3](latam-mex-cfdi-3-3.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

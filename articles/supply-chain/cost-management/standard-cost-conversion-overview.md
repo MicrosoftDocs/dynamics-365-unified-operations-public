@@ -4,11 +4,9 @@
 title: Standard cost conversion overview
 description: This article provides a process overview to help you set up and run a standard cost conversion. The steps listed are intended to be completed after you've completed the prerequisites for a standard cost conversion. 
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 78212
+ms.custom: ["78212", "intro-internal"]
 ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -98,10 +96,12 @@ The **Variance analysis statement** report lets you analyze revaluation variance
 -   Analyze back-dated inventory movements. Use the **Inventory value** report to view back-dated inventory movements that were entered after the conversion. The "From date and the To date for the report should correspond to the transition start date and the conversion date, minus one day. The report selection criteria should reflect the converted items. The report shows inventory movements that were made at standard cost during the transition period.
 
 
-Additional resources
---------
+## Additional resources
 
 [Prerequisites for a standard cost conversion](prerequisites-standard-cost-conversion.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

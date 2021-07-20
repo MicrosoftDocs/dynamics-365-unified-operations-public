@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Create models and data model elements overview
 description: In this tutorial, you'll use Visual Studio's Dynamics 365 menu to create a new model named Fleet Management tutorial.
 author: RobinARH
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 23421
+ms.custom: "intro-internal"
 ms.assetid: 1b7789f4-12c1-480b-bb39-c354b5b03276
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Create models and data model elements overview
@@ -49,7 +34,7 @@ This tutorial requires that you have access to an environment, and that you be p
 ## Create the Fleet Management tutorial model
 
 1. Start Visual Studio using **Run as administrator**.
-2. From the **Dynamics 365** window, select **Model Management &gt; Create model** to open the **Create model** wizard.
+2. From the **Dynamics 365** menu, select **Model Management &gt; Create model** to open the **Create model** wizard.
 3. Enter the following values for model parameters.
 
     | Property               | Value                                                                                                                    |
@@ -65,12 +50,12 @@ This tutorial requires that you have access to an environment, and that you be p
 
 4. Click **Next** to advance to the next page, and then select **Create New Package**. The model you're creating will have its own package and build its own .NET assembly.
 
-    [![Select package](./media/package_datamodel.png)](./media/package_datamodel.png)
+    [![Select package.](./media/package_datamodel.png)](./media/package_datamodel.png)
 
 5. Click **Next** to advance to the **Select referenced models** step.
 6. Select **Application Platform** and **Application Foundation** as referenced models.
 
-    [![Select referenced models](./media/referencemodels_datamodel.png)](./media/referencemodels_datamodel.png)
+    [![Select referenced models.](./media/referencemodels_datamodel.png)](./media/referencemodels_datamodel.png)
 
     > [!IMPORTANT]
     > Verify that you've selected the correct referenced models.
@@ -78,7 +63,7 @@ This tutorial requires that you have access to an environment, and that you be p
 7. Click **Next** to advance to the **Summary** step.
 8. Verify the information on the summary page, and then select the **Create new project** and **Make this my default model for new projects** check boxes.
 
-    [![Summary of data model](./media/summary_datamodel.png)](./media/summary_datamodel.png)
+    [![Summary of data model.](./media/summary_datamodel.png)](./media/summary_datamodel.png)
 
 9. Click **Finish**. The **New Project** dialog box opens.
 10. Under **Templates**, select **Dynamics 365**.
@@ -91,7 +76,7 @@ This tutorial requires that you have access to an environment, and that you be p
     | **Location** | C:\\FMLab       |
     | **Solution** | Add to solution |
 
-    [![New project dialog](./media/newproject_datamodel.png)](./media/newproject_datamodel.png)
+    [![New project dialog.](./media/newproject_datamodel.png)](./media/newproject_datamodel.png)
 
 13. Click **OK** to create the project.
 
@@ -102,11 +87,11 @@ This tutorial requires that you have access to an environment, and that you be p
 3. Click **EDT String** to select the new item type.
 4. In the **Name** field, enter **FMTAddress**, and then click **Add**.
 
-    [![Add a new data type](./media/newitem_datamodel.png)](./media/newitem_datamodel.png)
+    [![Add a new data type.](./media/newitem_datamodel.png)](./media/newitem_datamodel.png)
 
     This adds a new EDT model element to the project, and opens the EDT designer for the new element, as shown in the following illustration.
 
-    [![FMTAddress added](./media/edtelement_datamodel.png)](./media/edtelement_datamodel.png)
+    [![FMTAddress added.](./media/edtelement_datamodel.png)](./media/edtelement_datamodel.png)
 
 5. Select the root node of **FMTAddress** in the designer.
 6. In the **Properties** window, in the **Appearance section**, set the following properties.
@@ -117,7 +102,7 @@ This tutorial requires that you have access to an environment, and that you be p
     | **Label**       | Address            |
     | **String Size** | 75                 |
 
-    [![Properties window for FMTAddress](./media/edtproperty_datamodel.png)](./media/edtproperty_datamodel.png)
+    [![Properties window for FMTAddress.](./media/edtproperty_datamodel.png)](./media/edtproperty_datamodel.png)
 
 7. Press **Ctrl+S** to save the EDT.
 
@@ -128,7 +113,7 @@ Add the other required model element files to the current model and project. You
 1. In the **Solution Explorer**, right-click **FMTDataModel**, point to **Add**, and then click **Existing Item**.
 2. Browse to C:\\FMLab\\EDT\\.
 
-    [![Add existing items](./media/existingitem_datamodel.png)](./media/existingitem_datamodel.png)
+    [![Add existing items.](./media/existingitem_datamodel.png)](./media/existingitem_datamodel.png)
 
 3. Press **Ctrl+A** to select all of the files, and then click **Add**.
 
@@ -139,13 +124,13 @@ Add the other required model element files to the current model and project. You
 3. In the list of artifacts, select **Table**.
 4. In the **Name** field, enter **FMTCustomer**, and then click **Add**. The table designer opens.
 
-   [![Add table to data model](./media/add_datamodel.png)](./media/add_datamodel.png)
+   [![Add table to data model.](./media/add_datamodel.png)](./media/add_datamodel.png)
 
 ### Add fields to the FMTCustomer table
 
 In the table designer for FMTCustomer, you now add several fields to the table.
 
-[![Add fields to table](./media/addfields_datamodel.png)](./media/addfields_datamodel.png)
+[![Add fields to table.](./media/addfields_datamodel.png)](./media/addfields_datamodel.png)
 
 1. To add each field, right-click **Fields**, click **New**, and then select a type. As you add each field, you must specify the field name and certain other values in the **Properties** window, as described in the following table.
 
@@ -165,7 +150,7 @@ In the table designer for FMTCustomer, you now add several fields to the table.
     > [!TIP]
     > For all new fields in the table that reference an EDT, you can create the field by simply dragging the EDT element from **Solution Explorer** or **Application Explorer** and dropping it on the **Fields** node of the **FMTCustomer** table in the designer.
 
-    [![Solution Explorer with data model](./media/administratorarrow_datamodel.png)](./media/administratorarrow_datamodel.png)
+    [![Solution Explorer with data model.](./media/administratorarrow_datamodel.png)](./media/administratorarrow_datamodel.png)
 
 2. Press **Ctrl+S** to save the new fields on the table.
 
@@ -210,7 +195,7 @@ In the table designer for FMTCustomer, you now add several fields to the table.
 3. In the **EDT designer**, select **FMTAddress**.
 4. In the **Properties** window, in the **Reference Table** field, select **FMTCustomer**. **Tip:** Click the drop-down list, and then type the prefix "FMT" in the search box. This filters the drop-down list to only show tables that contain "FMT" in their name. Select the **FMTCustomer** table from the list of filtered entries.
 
-    [![Update the FMTAddress EDT in the Properties window](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)
+    [![Update the FMTAddress EDT in the Properties window.](./media/searchfmt_datamodel.png)](./media/searchfmt_datamodel.png)
 
 5. Save the EDT.
 
@@ -223,3 +208,6 @@ In the table designer for FMTCustomer, you now add several fields to the table.
 5. On the **Models** tab, click **Build**.
 6. Click **Close**  in the dialog box.
 7. On the **Window** menu, click **Close All Documents**, to close all open documents.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

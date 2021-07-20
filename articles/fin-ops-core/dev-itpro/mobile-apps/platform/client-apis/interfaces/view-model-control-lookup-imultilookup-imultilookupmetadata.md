@@ -3,11 +3,9 @@
 title: MultiLookupMetadata type
 description: Multi-Lookup metadata type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -277,3 +275,6 @@ OnLookupPageCreated: function(args: any, multiLookup: any): void (optional)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

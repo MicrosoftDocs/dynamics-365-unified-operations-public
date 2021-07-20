@@ -1,14 +1,10 @@
 ---
-# required metadata
-
 title: Customize the user interface
 description: This topic describes how to customize the user interface by using the process automation framework.
 author: RyanCCarlson2
-manager: AnnBe
 ms.date: 09/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -47,7 +43,7 @@ An instance of **ProcessScheduleOccurrenceCardBuilderContract** is passed into e
 
 The **ProcessScheduleOccurrenceCard** class lets you customize the appearance of an occurrence card that is shown in the calendar view. The first two lines are controlled by the process automation framework and can't be modified. In the following illustration, the subheader is the **Completed at** phrase, and the status message is the word **Completed** that has a blue background.
 
-![Default occurrence card that shows the status and time](media/uptake-schedule.png)
+![Default occurrence card that shows the status and time.](media/uptake-schedule.png)
 
 | Method | Description |
 |---|---|
@@ -205,3 +201,6 @@ The **ProcessExecutionMessageLogContract** contract lets you limit the message l
 | Method | Description |
 |---|---|
 | `public static ProcessExecutionMessageLogContract newForSourceRecord(ProcessScheduleTypeName _typeName, RefTableId _refTableId, RefRecId _refRecId, guid _executionId = emptyGuid())` | This method initializes the contract by using the specified type name, **RefTableId** value, and **RefRecId** value. There should be a matching record in the **ProcessExecutionSourceLink** table. Background processes will have multiple execution IDs. Therefore, the optional parameter for the execution ID should be provided for background processes. For more information, see [Type registration](type-registration.md). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

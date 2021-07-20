@@ -4,11 +4,9 @@
 title: Create analytical reports by using Power BI Desktop
 description: This topic walks you through the process of authoring Power BI reports by using the local Entity Store database. 
 author: MilindaV2
-manager: AnnBe
 ms.date: 01/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -43,7 +41,7 @@ When you use Power BI Desktop, you can create a report in your development or te
 > [!NOTE]
 > To develop or extend analytical workspaces and reports in the application suite, customers must use a development environment running in their own subscription or on local machines. You won’t be able to develop or extend embedded analytical reports in Microsoft-provided Tier-1 environments. You need administrator rights to install Power BI Desktop.
 
-> Tier-1 environments now include a service compatible version of Power BI Desktop. To develop or extend analytical workspaces and reports in the application suite, customers can use the Power BI Desktop application pre-installed on the development environment. Alternatively, you can use the latest compatible release of Power BI Desktop with Preview features turned off to author analytical reports for Finance and Operations apps. Download the August 2020 Update of Power BI Desktop at [Previous monthly updates to Power BI Desktop](https://docs.microsoft.com/power-bi/fundamentals/desktop-latest-update-archive#power-bi-desktop-monthly-update-video-3).
+> Tier-1 environments now include a service compatible version of Power BI Desktop. To develop or extend analytical workspaces and reports in the application suite, customers can use the Power BI Desktop application pre-installed on the development environment. Alternatively, you can use the latest compatible release of Power BI Desktop with Preview features turned off to author analytical reports for Finance and Operations apps. Download the August 2020 Update of Power BI Desktop at [Previous monthly updates to Power BI Desktop](/power-bi/fundamentals/desktop-latest-update-archive#power-bi-desktop-monthly-update-video-3).
 
 ### Step 1: Populate the local Entity Store database
 For this example, we will stage the aggregate models that the Commerce analytical solution consumes in the local Entity Store. The models that the application uses are defined in the RetailCube aggregate measurement. 
@@ -54,7 +52,7 @@ For this example, we will stage the aggregate models that the Commerce analytica
 
 The following illustration shows the administrator dialog box that is used to configure the frequency of updates for the aggregate model.
 
-![Configure refresh dialog box](media/Configure-refresh.png)
+![Configure refresh dialog box.](media/Configure-refresh.png)
 
 To monitor the progress of the job that stages the data, you can use the batch job monitoring page. (Select **System administration** \> **Database** \> **Batch jobs**.) If you're using demo data, the job should take about a minute. After the data is in the Entity Store, you can write reports. 
 
@@ -64,13 +62,13 @@ To monitor the progress of the job that stages the data, you can use the batch j
 
     Alternatively, when Power BI Desktop starts, you can select **Get Data** \> **SQL Server**. 
 
-    ![Get Data menu in Power BI Desktop](media/Power-BI-Desktop-Get-Data.png)
+    ![Get Data menu in Power BI Desktop.](media/Power-BI-Desktop-Get-Data.png)
 
 3. In the **SQL Server Database** dialog box, enter **.** as the server name and **AxDW** as the database name. Then select the **DirectQuery** option. 
 
     The following illustration shows the settings that enable Power BI Desktop to access the local Entity Store database.
 
-    ![Settings for accessing the local Entity Store database](media/Connect-to-SQL-Database.png)
+    ![Settings for accessing the local Entity Store database.](media/Connect-to-SQL-Database.png)
 
     > [!NOTE]
     > The **Import** option isn't currently supported.
@@ -86,10 +84,13 @@ You can now create a report. You can drag measures and fields to the canvas, and
 
 The following illustration shows a basic report that uses the local Entity Store database as its source.
 
-![Power BI Desktop report](media/Power-BI-Desktop-Report.png)
+![Power BI Desktop report.](media/Power-BI-Desktop-Report.png)
 
 Power BI Desktop also supports the creation of calculations and lets you combine data from multiple aggregate measurements. Within minutes, you can create analytical reports by using data in the local development environment. When you're satisfied with the report, you can migrate it to the production environment, so that users can use the report to interact with production data.
 
 ## Validating reports in a demo environment
 
 The report shows the demo or test data in your developer environment. If you want to integrate the report into a demo environment, you can continue to publish this report to your PowerBI.com account and pin it to the client. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

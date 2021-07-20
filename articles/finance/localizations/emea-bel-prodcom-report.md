@@ -4,11 +4,9 @@
 title: Set up and maintain PRODCOM
 description: This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 Finance. 
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -65,3 +63,6 @@ Use the **PRODCOM** page to create PRODCOM periods and transfer sales lines to t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

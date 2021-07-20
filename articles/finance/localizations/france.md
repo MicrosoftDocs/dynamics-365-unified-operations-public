@@ -4,11 +4,9 @@
 title: France overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for France. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: France
 # ms.search.industry: 
 ms.author: roschlom
@@ -46,7 +44,8 @@ This topic includes information and links to resources that can help you set up 
 - [Daily interest calculation for late payment and lump sum in the invoice and collection letter](tasks/fr-00018-daily-interest.md)
 - [Derogatory depreciation](emea-fra-derogatory-depreciation.md)
 - [French bills of exchange and promissory notes](tasks/fr-00004-french-bills-exchange-promissory-notes.md)
-- [Generate the Standard Audit File for France (FEC)](emea-fra-fec-audit-file.md)
+- [Audit File for France (FEC) overview](emea-fra-fec-audit-file.md)
+- [French Intrastat](emea-fra-intrastat.md)
 - [NAF codes and siret numbers](emea-fra-naf-codes-siret-numbers.md)
 - [Set up NAF codes and Siret numbers](tasks/fr-00003-naf-codes-siret-numbers.md)
 - [Penalties for past due customer payments](emea-fra-apply-penalty-customer-payment-past-due.md)
@@ -57,11 +56,14 @@ This topic includes information and links to resources that can help you set up 
 - [Setup method of payment](tasks/fr-00004-setup-method-payment.md)
 - [Update method of payment on customer](tasks/fr-00004-update-method-payment-customer.md)
 - Commerce
-  - [Cash register functionality](../../retail/localizations/emea-fra-cash-registers.md)
-  - [Deployment guidelines for cash registers](../../retail/localizations/emea-fra-deployment.md)
+  - [Cash register functionality](../../commerce/localizations/emea-fra-cash-registers.md)
+  - [Deployment guidelines for cash registers](../../commerce/localizations/emea-fra-deployment.md)
 
 ## Additional resources
 
-- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Microsoft Dynamics Localization Portal: Australia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/france.html)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

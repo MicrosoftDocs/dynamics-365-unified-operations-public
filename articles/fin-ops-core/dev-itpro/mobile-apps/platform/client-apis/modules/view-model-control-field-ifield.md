@@ -3,11 +3,9 @@
 title: Field module
 description: Represents the run-time instance of a field.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -143,3 +141,6 @@ Represents the run-time instance of a field.
 | [UnWrapText](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#unwraptext) |UnWrapText: boolean (optional)  <br>|False by default -- text of the page will be wrapped.<br>  |
 | [WrapText](../interfaces/view-model-control-field-ifield-ifieldmetadata.md#wraptext) |WrapText: boolean (optional)  <br>|If true then the text of the field control will wrap to the next line.<br>  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

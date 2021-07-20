@@ -4,11 +4,9 @@
 title: Bonus depreciation
 description: This article provides an overview of the bonus depreciation functionality.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -69,3 +67,6 @@ Bonus depreciation is entered as either a percentage or a fixed amount. When you
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

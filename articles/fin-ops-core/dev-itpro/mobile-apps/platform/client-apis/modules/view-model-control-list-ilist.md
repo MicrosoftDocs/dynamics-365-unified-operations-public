@@ -3,11 +3,9 @@
 title: List module
 description: A list is a control that contains any numbers of rows.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -227,3 +225,6 @@ Row <br>
 | [isEntitySyncPending](../interfaces/view-model-control-list-ilist-irow.md#isentitysyncpending) |isEntitySyncPending(): boolean|  |
 | [select](../interfaces/view-model-control-list-ilist-irow.md#select) |select(): any|  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

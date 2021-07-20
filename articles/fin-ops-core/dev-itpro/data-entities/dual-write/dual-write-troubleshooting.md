@@ -4,11 +4,9 @@
 title: General troubleshooting
 description: This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,16 +48,16 @@ After you install the package deployer tool, install the solution package by fol
 
 1. Download the latest solution package file from Yammer.com. After the package zip file is downloaded, right-click it, and select **Properties**. Select the **Unblock** check box, and then select **Apply**. If you don't see the **Unblock** check box, the zip file is already unblocked, and you can skip this step.
 
-    ![Properties dialog box](media/unblock_option.png)
+    ![Properties dialog box.](media/unblock_option.png)
 
 2. Extract the package zip file, and copy all the files in the **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438** folder.
 
-    ![Contents of the Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 folder](media/extract_package.png)
+    ![Contents of the Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 folder.](media/extract_package.png)
 
 3. Paste all the copied files into the **Tools** folder of the package deployer tool. 
 4. Run **PackageDeployer.exe** to select the Dataverse environment and install the solutions.
 
-    ![Content of the Tools folder](media/paste_copied_files.png)
+    ![Content of the Tools folder.](media/paste_copied_files.png)
 
 ## <a id="enable-view-trace"></a>Enable and view the plug-in trace log in Dataverse to view error details
 
@@ -67,14 +65,14 @@ After you install the package deployer tool, install the solution package by fol
 
 To turn on the trace log, follow these steps.
 
-1. Sign in to the model-driven app in Dynamics 365, open the **Settings** page, and then, under **System**, select **Administration**.
+1. Sign in to the customer engagement app, open the **Settings** page, and then, under **System**, select **Administration**.
 2. On the **Administration** page, select **System Settings**.
 3. On the **Customization** tab, in the **Plug-in and custom workflow activity tracing** column, select **All** to enable the plug-in trace log. If you want to log trace logs only when exceptions occur, you can select **Exception** instead.
 
 
 To view the trace log, follow these steps.
 
-1. Sign in to the model-driven app in Dynamics 365, open the **Settings** page, and then, under **Customization**, select **Plug-in Trace Log**.
+1. Sign in to the customer engagement app, open the **Settings** page, and then, under **Customization**, select **Plug-in Trace Log**.
 2. Find the trace logs where the **Type Name** column is set to **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Double-click an item to view the full log, and then, on the **Execution** FastTab, review the **Message Block** text.
 
@@ -127,3 +125,6 @@ To re-enable the **Information** form option, follow these steps:
 2. Find the **Information** form under the forms node. 
 3. Select the **Information** form and click **Enable security roles**. 
 4. Change the security setting to **Display to everyone**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

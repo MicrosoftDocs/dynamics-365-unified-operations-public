@@ -4,11 +4,9 @@
 title: Register goods shipped to customers (Russia)
 description: This topic explains how to register the shipment and transfer the ownership of goods that are transported to a customer. 
 author: kfend
-manager: tfehr
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -244,3 +242,6 @@ The following ledger transactions are posted:
   - **Debit**: Cost of goods sold, invoiced; **Credit**: Sales order, Goods shipped
   - **Debit**: Payment offset account (Sales tax); **Credit**: Shipped items tax
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

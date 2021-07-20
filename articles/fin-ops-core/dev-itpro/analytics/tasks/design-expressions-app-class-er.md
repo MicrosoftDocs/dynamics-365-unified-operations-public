@@ -4,11 +4,9 @@
 title: Design ER expressions to call application class methods
 description: This topic describes how to reuse the existing application logic in Electronic reporting configurations by calling required methods of application classes. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 12/12/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -162,3 +160,6 @@ For testing purposes, execute the format mapping using the SampleIncomingMessage
 2. Click OK.
     * Review the output in XML format that represents the data that has been imported from the selected file and ported to the data model. Note that only 3 lines of the imported TXT file were processed. The IBAN code on line 4 that is not valid was skipped and an error message is provided in the Infolog.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

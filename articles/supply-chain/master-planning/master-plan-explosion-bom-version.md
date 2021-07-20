@@ -4,11 +4,9 @@
 title: Explosion of a BOM version
 description: This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,10 +38,9 @@ A demand explosion of a bill of materials (BOM) version creates a demand for eac
 -   The site dimension is mandatory and must be entered on the demand transaction.
 -   The site dimension is consistent. Therefore, the site for lower-level demand is the same as the site on the initial demand transaction.
 
-The following illustration shows how the process for master planning demand explosion. ![Demand explosion using BOM version](./media/multisitedemandexplosionscenariousingbomversion.gif)
+The following illustration shows how the process for master planning demand explosion. ![Demand explosion using BOM version.](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
-Additional resources
---------
+## Additional resources
 
 [Determine the BOM version](master-plan-bom-version-determined.md)
 
@@ -51,3 +48,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

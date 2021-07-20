@@ -4,11 +4,9 @@
 title: Post jobs to LinkedIn from Attract
 description: This topic explains how to use Dynamics 365 Talent - Attract to post jobs to LinkedIn.
 author: andreabichsel
-manager: tfehr
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -16,7 +14,6 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -59,7 +56,7 @@ Jobs that are posted to LinkedIn appear on the live LinkedIn site. LinkedIn does
 1. In Attract, open the job that you want to post to LinkedIn.
 2. On the **Postings** tab, select the **Post Now** button that corresponds to LinkedIn.
 
-    [![Attract post job to LinkedIn](./media/attract-post-job-to-linkedin.png)](./media/attract-post-job-to-linkedin.png)
+    [![Attract post job to LinkedIn.](./media/attract-post-job-to-linkedin.png)](./media/attract-post-job-to-linkedin.png)
 
 3. In the **Create an "Apply now" web address** dialog box, select an option under **Candidates can apply using a**. We recommend that you select **Link in Attract**.
 4. Select **Done**.
@@ -84,3 +81,6 @@ If you're having trouble posting jobs to LinkedIn, see [Troubleshooting integrat
 [Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 
 [Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

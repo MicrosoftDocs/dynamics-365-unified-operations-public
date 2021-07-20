@@ -4,16 +4,14 @@
 title: Create payment invoices
 description: This topic explains how to create monthly lease invoices. You can create invoices for individual leases, or you can use a batch process to create them for multiple leases.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: AssetLeasePaymentSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -53,3 +51,6 @@ You can create monthly invoices for individual leases, or you can use a batch pr
 6. After the transaction is posted, you can view the transaction information and the carrying value of the lease liability by selecting **Liability transactions** in the lease book.
 
     In the payment schedule, the **Journal posted** check box will be selected, and the line will show the invoice journal number. After a payment journal and an entry for that journal have been created, you must reverse the entry before it can be re-created.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

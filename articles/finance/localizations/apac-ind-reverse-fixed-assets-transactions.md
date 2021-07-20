@@ -4,11 +4,9 @@
 title: Reversing fixed asset transactions for India
 description:  This topic walks you through reversing a fixed asset transaction for India in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-manager: AnnBe
 ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -64,3 +62,6 @@ Close the **Balances** page and click **Transactions**. Select a previously post
 In this example, all reversed transactions are displayed in the transaction list for a fixed asset group. The acquisition transaction that was reversed in Example 1 can be traced and reversed. 
 
 In **Fixed assets**, select a fixed asset. Click **Books**. Select **Transactions** and then select **Reversed tracing**. In the list of reversed transactions, select a previously reversed acquisition transaction and click **Reverse transaction**. Notice how the previously posted acquisition transaction has been restored with a voucher number that is specific to the reversal transaction.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

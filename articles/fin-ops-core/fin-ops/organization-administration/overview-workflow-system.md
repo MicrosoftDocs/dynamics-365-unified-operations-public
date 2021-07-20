@@ -4,11 +4,9 @@
 title: Workflow system overview
 description: This topic describes the workflow system.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 56381
+ms.custom: ["56381", "intro-internal"]
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 # ms.search.industry: 
@@ -47,7 +45,7 @@ Workflow is a system that runs on the Application Object Server (AOS). The workf
 
 A workflow represents a business process. It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document. For example, the following illustration shows a workflow for expense reports.
 
-![Workflow with elements that are assigned to users](./media/workflow_user.gif)
+![Workflow with elements that are assigned to users.](./media/workflow_user.gif)
 
 To better understand this workflow, suppose that Sam submits an expense report for USD 7,000. In this scenario, Ivan must review the receipts that Sam routes to him. Then Frank and Sue must approve the expense report. Now suppose that Sam submits an expense report for USD 11,000. In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.
 
@@ -77,3 +75,6 @@ There are several benefits of using the workflow system in your organization:
 + [Configure parallel branches in a workflow](configure-parallel-branch-workflow.md)
 + [Configure line-item workflows](configure-line-item-workflow.md)
 + [Workflow FAQ](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

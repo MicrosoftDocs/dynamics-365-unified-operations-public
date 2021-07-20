@@ -4,11 +4,9 @@
 title: FR-00004 Approve and post draw bill of exchange
 description: This procedure walks you through approval and posting Bill of Exchange. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -48,3 +46,6 @@ This functionality is available for legal entities whose primary address is in F
 8. Click Post.
 9. Go to Accounts receivable > Inquiries and reports > Payments > Bill of exchange journal.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

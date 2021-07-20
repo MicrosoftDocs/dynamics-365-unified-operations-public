@@ -4,11 +4,9 @@
 title: Demand forecasting overview
 description: Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders. The enhanced demand forecast reduction rules provide an ideal solution for mass customization.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 72004
+ms.custom: ["72004", "intro-internal"]
 ms.assetid: 916707c9-1333-460f-a0fa-4e95f6fda2ad
 ms.search.region: global
 ms.search.industry: Manufacturing
@@ -67,7 +65,7 @@ Three major themes are implemented in demand forecasting:
 
 The following diagram shows the basic flow in demand forecasting.
 
-[![demand forecasting introduction diagram](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
+[![demand forecasting introduction diagram.](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
 Demand forecast generation starts in Supply Chain Management. Historical transactional data from the Supply Chain Management transactional database is gathered and populates a staging table. This staging table is later fed to a Machine Learning service. By performing minimal customization, you can plug various data sources into the staging table. The data sources can include Microsoft Excel files, comma-separated value (CSV) files, and data from Microsoft Dynamics AX 2009 and Microsoft Dynamics AX 2012. Therefore, you can generate demand forecasts that consider historical data that is spread among multiple systems. However, the master data, such as item names and units of measure, must be the same across the various data sources.
 
@@ -106,3 +104,6 @@ Note that the demand forecast UOM does not have to have any specific meaning. It
 [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
 
 [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

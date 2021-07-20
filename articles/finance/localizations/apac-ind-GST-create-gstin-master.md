@@ -4,11 +4,9 @@
 title: Create a GSTIN master
 description: This topic explains how to create a Goods and Services Tax Identification Number (GSTIN) master. This task is part of the master data setup that is required to make the India localization solution for GST available.
 author: EricWang
-manager: RichardLuan
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -53,7 +51,7 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 7. In the **Description** field, enter a value.
 8. In the **Business vertical** field, select a value.
 
-    ![New company registration number](media/IND-GST-GSTIN-1.png)
+    ![New company registration number.](media/IND-GST-GSTIN-1.png)
 
 9. On the **Casual registration** FastTab, select **Add**.
 10. In the **From date** and **To date** fields, define the valid period for the casual registration number.
@@ -63,7 +61,7 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
     - The **GST invoice** number sequence will be used when customer sales that have GST transactions are posted.
     - The **Bill of supply** number sequence will be used when customer sales that have non-GST transactions are posted.
 
-![Company registration numbers](media/IND-GST-GSTIN-2.png)
+![Company registration numbers.](media/IND-GST-GSTIN-2.png)
 
 ## Define vendor registration numbers for the GST tax type
 
@@ -74,7 +72,7 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 5. In the **Description** field, enter a value.
 6. In the **Business vertical** field, select a value.
 
-![Vendor registration numbers](media/IND-GST-GSTIN-3.png)
+![Vendor registration numbers.](media/IND-GST-GSTIN-3.png)
 
 ## Define customer registration numbers for the GST tax type
 
@@ -85,4 +83,7 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 5. In the **Description** field, enter a value.
 6. In the **Business vertical** field, select a value.
 
-![Customer registration numbers](media/IND-GST-GSTIN-4.png)
+![Customer registration numbers.](media/IND-GST-GSTIN-4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

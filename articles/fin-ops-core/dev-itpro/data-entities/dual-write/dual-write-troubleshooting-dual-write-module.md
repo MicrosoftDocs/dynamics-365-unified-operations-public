@@ -4,11 +4,9 @@
 title: Troubleshoot dual-write issues in Finance and Operations apps
 description: This topic provides troubleshooting information that can help you fix issues with the Dual-write module in Finance and Operations apps.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -96,3 +94,6 @@ The fix for this error depends on the cause of the error:
 
 + If the mapping has dependent mappings, then make sure to enable the dependent mappings of this table mapping.
 + The mapping might be missing source or destination columns. If a column in the Finance and Operations app is missing, then follow the steps in the section [Missing table columns issue on maps](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). If a column in Dataverse is missing, then click **Refresh tables** button on the mapping so that the columns are automatically populated back into the mapping.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

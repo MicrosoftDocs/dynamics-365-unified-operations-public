@@ -4,11 +4,9 @@
 title: Balance sheet financial reports
 description: This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
 author: jcart1106
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
 
-Default balance sheet reports
------------------------------
+## Default balance sheet reports
 
 There are two default balance sheet reports. On one report, the sections are stacked. On the other report, the sections are side by side.
 
@@ -75,8 +72,7 @@ The column definitions contain different types of columns to provide different l
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Financial reporting overview](financial-reporting-getting-started.md)
 
@@ -86,3 +82,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

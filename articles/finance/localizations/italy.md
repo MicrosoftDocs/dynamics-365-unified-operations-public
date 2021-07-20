@@ -4,11 +4,9 @@
 title: Italy overview
 description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Italy. 
 author: kfend
-manager: AnnBe
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Italy
 # ms.search.industry: 
 ms.author: roschlom
@@ -39,6 +37,7 @@ This topic provides links to documentation resources for Italy.
 - [Yearly tax communication](emea-ita-yearly-tax-communication.md)
 - [VAT management and reporting by tax point date (Date of VAT register)](emea-ita-vat-management.md)
 - [Competence date for transactions](emea-ita-competence-date.md)
+- [Italian Intrastat](emea-ita-intrastat.md)
 - [Manual depreciation of fixed assets](emea-ita-depreciation-of-fixed-assets.md)
 - [Packing slip date verification on invoices](emea-ita-packing-slip-date-verification-on-invoice.md)
 - [Post and print a packing slip with transportation delivery details](emea-ita-packing-slip.md)
@@ -64,3 +63,6 @@ This topic provides links to documentation resources for Italy.
 - [Customer electronic invoices](emea-ita-e-invoices.md)
 - [Unified posting date control](emea-ita-post-date-control.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

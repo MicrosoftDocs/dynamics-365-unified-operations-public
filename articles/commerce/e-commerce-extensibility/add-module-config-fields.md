@@ -4,11 +4,9 @@
 title: Add module configuration fields
 description: This topic describes how to add module configuration fields in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,13 +31,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to add module configuration fields in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Configuration fields can be added to a module to expose them to page authors and give them control of various module features. Examples of these features include different views, alignment properties, Boolean switches to turn features on or off, module titles or headings, rich text descriptions, call-to-action links, image URLs, and Commerce product data.
 
 The following illustration shows how these fields appear in the page authoring tools.
 
-![Module configuration fields in the authoring tools](media/module-config-fields.png)
+![Module configuration fields in the authoring tools.](media/module-config-fields.png)
 
 ## Add new module configuration fields
 
@@ -94,7 +90,7 @@ The **config** section of the module definition file contains a list of all the 
 * **"type"** – The type of the configuration. The possible values are **"string"**, **"bool"**, **"number"**, **"integer"**, **"richText"**, **"image"**, **"imageSettings"**, **"css"**, **"video"**, and **"array"**.
 * **"enum"** – For an enumerator type, the value must be set to **"string"**.
 * **"default"** – The default value that is set if no value is set in the authoring tools.
-* **"scope"** – This field is used to scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"site"**. If the value is set to **"site"**, the module configuration doesn't appear on a page and can't be configured there. It appears and can be configured only at the site level. In this way, the value can be set one time for the entire site. If you don't set this field, the default value is **"module"**.
+* **"scope"** – This field is used to scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"siteOnly"**. If the value is set to **"siteOnly"**, the module configuration doesn't appear on a page and can't be configured there. It appears and can be configured only at the site level. In this way, the value can be set one time for the entire site. If you don't set this field, the default value is **"module"**.
 * **"group"** – Groups are used to organize the configurations into organized groups in the authoring tools.
 * **"required"** – A Boolean flag that specifies whether a property must be set on the module. If the value is set to **true**, the authoring tools will show an error if the required property isn't set, and an error will be shown when the module is rendered.
 * **"resources"** – This field is used for localization resources.
@@ -408,3 +404,6 @@ export default (props: IProductFeatureViewProps) => {
 [Create a page container module](create-page-containers.md)
 
 [Localize a module](localize-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Customer electronic invoices in Norway
 description: This topic explains how to set up and process customers electronic invoices in Norway.
 author: ilkond
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,7 +49,7 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 > [!NOTE]
 > These formats are based on the **Invoice model** configuration and use the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
 
-For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ### Reference the imported ER format configurations
 
@@ -63,7 +61,7 @@ For more information about how to import ER configurations, see [Download Electr
     - **Project invoice:** OIOUBL Project invoice
     - **Project credit note:** OIOUBL Project credit note
 
-![Formats for electronic documents](media/emea-nor-ger-configs.jpg)
+![Formats for electronic documents.](media/emea-nor-ger-configs.jpg)
 
 ## Configure parameters
 
@@ -85,7 +83,7 @@ For more information about how to import ER configurations, see [Download Electr
 3. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
 4. In the **Tax exempt number** field, enter the customer's VAT exempt number.
 
-![Customer parameters](media/emea-nor-ger-customer.jpg)
+![Customer parameters.](media/emea-nor-ger-customer.jpg)
 
 ### Units of measure configuration
 
@@ -94,7 +92,7 @@ For more information about how to import ER configurations, see [Download Electr
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
 4. In **Value** section, in **Value** field, enter the external code that should be used as the units of measure code for international trade. This code is recommended by the [United Nations Economic Commission for Europe (UN/ECE)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/).
 
-![Units of measure configuration](media/emea-nor-ger-units.jpg)
+![Units of measure configuration.](media/emea-nor-ger-units.jpg)
 
 ### Sales tax codes transformation
 
@@ -125,11 +123,11 @@ When you register free text invoices, invoices that are based on sales orders, o
 2. Create a new project contract, or select an existing project contract.
 3. On **Funding sources** FastTab, select or create a funding source of the **Customer** type, and then select **Details**.
 
-    ![Funding sources](media/emea-nor-ger-proj-contracts.jpg)
+    ![Funding sources.](media/emea-nor-ger-proj-contracts.jpg)
 
 4. On the **Funding source details** page, on the **Other** FastTab, in **References** section, in the **Customer requisition** and **Customer reference** fields, enter default values for the contract. Alternatively, you can enter project-specific values in the corresponding fields on the **E-invoice** FastTab.
 
-    ![Project references](media/emea-nor-ger-proj-refs.jpg)
+    ![Project references.](media/emea-nor-ger-proj-refs.jpg)
 
 5. To enter customer requisition and reference values directly on the project invoice proposal, follow these steps:
 
@@ -137,7 +135,7 @@ When you register free text invoices, invoices that are based on sales orders, o
     2. Create a new invoice proposal, or select an existing invoice proposal.
     3. On the **Invoice proposal header** FastTab, in the **e-Invoice** section, enter values in **Customer requisition** and **Customer reference** fields.
 
-    ![Project proposal](media/emea-nor-ger-proj-prop.jpg)
+    ![Project proposal.](media/emea-nor-ger-proj-prop.jpg)
 
 ### Customer accounting code registration
 
@@ -154,7 +152,7 @@ You can enter customer accounting codes when you work with free text invoices, i
     2. Switch to the **Lines** view.
     3. On the **Line details** FastTab, on the **General** tab, in the **Dimension account** field, enter a line-specific accounting code for each invoice line.
 
-    ![Line-specific accounting code for a free text invoice](media/emea-nor-ger-fti-cost.jpg)
+    ![Line-specific accounting code for a free text invoice.](media/emea-nor-ger-fti-cost.jpg)
 
 #### Sales orders
 
@@ -174,7 +172,7 @@ You can enter customer accounting codes when you work with free text invoices, i
 3. On **Funding sources** FastTab, create or select a funding source of the **Customer** type, and then select **Details**.
 4. On **Funding source details** page, on the **E-invoice** FastTab, in the **Dimension account** field, enter the project-specific default accounting code.
 
-    ![Project-specific accounting code](media/emea-nor-ger-proj-cost.jpg)
+    ![Project-specific accounting code.](media/emea-nor-ger-proj-cost.jpg)
 
 5. To enter customer accounting codes directly in project invoice proposals, follow these steps:
 
@@ -187,7 +185,7 @@ You can enter customer accounting codes when you work with free text invoices, i
     1. Set the **Line-specific** option to **Yes**.
     2. On the **Invoice proposal transactions** FastTab, in the **Dimension account** field, enter a line-specific accounting code for each transaction line.
 
-    ![Transaction line-specific accounting code](media/emea-nor-ger-proj-prop-cost.jpg)
+    ![Transaction line-specific accounting code.](media/emea-nor-ger-proj-prop-cost.jpg)
 
 ## Export customer electronic invoices
 
@@ -195,7 +193,7 @@ You can enter customer accounting codes when you work with free text invoices, i
 
 When an invoice is posted, you can generate an electronic invoice by selecting **Send** \> **Original** for the selected invoice.
 
-![Sending an e-invoice](media/emea-nor-ger-einvoice.jpg)
+![Sending an e-invoice.](media/emea-nor-ger-einvoice.jpg)
 
 ### View e-invoices
 
@@ -204,16 +202,19 @@ To inquire about the XML files of electronic invoices that have been generated, 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 2. Select a job, and then select **Show files**.
 
-    ![Show files button](media/emea-nor-ger-einvoice-open.jpg)
+    ![Show files button.](media/emea-nor-ger-einvoice-open.jpg)
 
 3. Select **Open** to download the file that contains the electronic invoice.
 
 If generation of the electronic invoices fails because of errors, select **Show log** \> **Message details** to view more details about the error message.
 
-![Message details](media/emea-nor-ger-einvoice-log.jpg)
+![Message details.](media/emea-nor-ger-einvoice-log.jpg)
 
 ### Send e-invoices to ER destinations
 
 You can set up ER destinations for electronic invoice formats. In this case, output XML files that contain electronic invoices will automatically be sent to the defined destinations immediately after the invoices are posted. When you post the invoices, you must turn on the **Print invoice** parameter.
 
 For more information about ER destinations, see [Electronic reporting destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

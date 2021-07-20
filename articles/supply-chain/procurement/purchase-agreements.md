@@ -3,12 +3,10 @@
 
 title: Purchase agreements
 description: This article provides information about purchase agreements. A purchase agreement is a contract that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time. In exchange for this commitment, the buyer receives special prices and discounts. 
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -109,8 +107,7 @@ If you create an intercompany PO that uses the intercompany purchase agreement i
 ## Financial dimensions on purchase agreements
 You can copy financial dimensions to document headers or to individual lines of a purchase agreement. If you change the dimensions in the agreement header or on the agreement line, the change doesn't affect any released orders, but it will be reflected on any new orders.
 
-Additional resources
---------
+## Additional resources
 
 [Create a purchase agreement](tasks/create-purchase-agreement.md)
 
@@ -118,3 +115,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

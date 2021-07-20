@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Deploy and access development environments
 description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 06/21/2021
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Deploy and access development environments
@@ -34,6 +19,12 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to access development instances, configure local development virtual machines (VMs), and find important configurations settings for developers and administrators.
+
+> [!NOTE]
+> - Microsoft Support may provide limited troubleshooting on Tier 1 development environments.
+> - In certain circumstances, a fresh deploy of a Tier 1 environment may be requested by Microsoft Support to resolve an issue.
+> - Development environments should not contain business critical data and are considered disposable.
+ 
 
 ## Definitions
 
@@ -45,40 +36,21 @@ This topic describes how to access development instances, configure local develo
 
 ## Deploying cloud development environments
 
-The process of deploying cloud hosted environments differs for Lifecycle Services (LCS) trial or partner projects and LCS customer implementation projects.
-
-For a **Trial** or **Partner** project:
+To deploy a cloud development environment in your LCS project:
 
 1. Create a connection between an LCS project and your Azure subscription. You will need your Azure subscription ID and authorize the use of the subscription.
 2. Select **+** under **Environments** to deploy.
 
-    ![LCS Onboard methodology](media/access-instances-5.jpeg)
+    ![LCS Onboard methodology.](media/access-instances-5.jpeg)
     
 3. Select an application and platform version.
 4. Select an environment topology. For more information, see [Sign up for preview subscriptions](sign-up-preview-subscription.md).
     
 5. If you chose a cloud-hosted environment, select which Azure connector you want to use. Then select **Deploy**.
 
-    ![Deploy environment](media/access-instances-3.jpeg)
+    ![Deploy environment.](media/access-instances-3.jpeg)
     
-6. If you did not choose a cloud-hosted environment, select a VHD to download.
-
-For a **Customer Implementation** project:
-1. Sign in to your LCS Implementation project.
-2. Select **Configure** to deploy.
-
-    ![Develop, test, and configure](media/access-instances-6.jpeg)
-    
-3. Select an application and platform version.
-4. Specify the settings and select **Save**.
-
-    ![Deployment settings](media/access-instances-7.jpeg)
-
-Customers are provided with one free "develop and test" environment hosted in Microsoft's Azure subscription. Under "Develop and test", there are two types of environments, **Develop** and **Build and Test**. For development and customization activities, configure a **Develop** environment. **Build and Test** environments are not supported for standard development activities. Instead, they are used for daily build and test automation. For more information, see [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md).  
-
-Additional develop and build environments can either be purchased or hosted in your own Azure subscription. To deploy an environment in your own subscription, go to the **Cloud-hosted environment** page.
-
-![Cloud-hosted instances](media/CloudHostedPicture.jpg)
+![Cloud-hosted instances.](media/CloudHostedPicture.jpg)
 
 ## Cloud environment that is provisioned through LCS
 
@@ -90,8 +62,8 @@ When a cloud environment is provisioned through LCS:
 
 The system can be accessed by end users. The administrator can add users to this system by using the **Users** page in the instance. Note that these additional users don't have to be users in LCS. You obtain the base URL for the cloud environment from your LCS project site.
 
-1. Go to your LCS project page.
-2. In the **Environments** section, click the deployed environment.
+1. Go to your LCS project navigation menu, and select **Cloud-hosted environments**.
+2. In the environment list section, select the deployed environment.
 3. When the environment page opens, you can access the application by clicking **Login** &gt; **Log on to Finance and Operations** in the upper-right corner.
 4. Use valid end user credentials to sign in to the application. If the current LCS user is the user who originally deployed the environment, that user is probably a valid end user and the administrator of the application.
 5. In your browser, make a note of the base URL after you sign in. For example, the base URL might be `https://dynamicsAx7aosContoso.cloud.dynamics.com`.
@@ -100,13 +72,13 @@ The system can be accessed by end users. The administrator can add users to this
 
 Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this topic).
 
-![Restricted admin access](media/restricted-admin.png)
+![Restricted admin access.](media/restricted-admin.png)
 
 For environments deployed **before Platform update 12**:
 1.  Click the VM name.
 2.  Use the local administrator user name and password that are shown to connect to the cloud VM through Remote Desktop. You can reveal the password by selecting the show password icon.
 
-For any environments deployed **on or after Platform update 12** , there are distinct accounts, a developer account and an admin account. Customers will not have access to virtual machine admin accounts on development or build environments that are running in Microsoft subscriptions. Thus, the admin account will be hidden unless the environment is running in their Azure subscription. For more information, see [Development and build VMs that don't allow admin access FAQ](../sysadmin/VMs-no-admin-access.md). 
+For any environments deployed **on or after Platform update 12** , there are distinct accounts, a developer account and an admin account. 
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
 
@@ -126,7 +98,7 @@ Follow the steps in this section if you are also configuring for Commerce.
 
 To use the downloadable VHD for POS customizations, you must also follow this step.
 
--   On the host computer, enable Nested VM support. For more information, see [Run Hyper-V in a Virtual Machine with Nested Virtualization](https://msdn.microsoft.com/virtualization/hyperv_on_windows/user_guide/nesting).
+-   On the host computer, enable Nested VM support. For more information, see [Run Hyper-V in a Virtual Machine with Nested Virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization).
 
 ### Running the virtual machine locally
 
@@ -156,13 +128,13 @@ Follow these steps to run the VM from Hyper-V Manager.
 For POS customizations, you must also follow these steps on the guest VM.
 
 1.  Download and install [Microsoft Emulator for Windows 10 Mobile Anniversary Update](https://www.microsoft.com/download/details.aspx?id=53424).
-2.  Start the Hyper-V host service. For more information, see [Hyper-V: The Hyper-V Virtual Machine Management service must be running](https://technet.microsoft.com/library/ee956894(v=ws.10).aspx). If errors occur during startup, you can also try to uninstall and reinstall the Hyper-V role on the guest VM.
+2.  Start the Hyper-V host service. For more information, see [Hyper-V: The Hyper-V Virtual Machine Management service must be running](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee956894(v=ws.10)). If errors occur during startup, you can also try to uninstall and reinstall the Hyper-V role on the guest VM.
 
 ### Provisioning the administrator user
 
-For developer access, you must be an administrator on the instance. To provision your own credentials as an administrator, run the admin user provisioning tool that is provided on the desktop, and provide your email address (Azure AD credentials) in the tool.
+For developer access, you must be an administrator on the instance. For environments provisioned through LCS we encourage you to deploy with the correct user. To provision your own credentials as an administrator on a local virtual machine or after provisioning from LCS, run the admin user provisioning tool. On the local virtual machine there is a link provided on the desktop. On cloud environments you can find the tool in **K:\AOSService\PackagesLocalDirectory\bin**.
 
-1.  From the desktop, run the admin user provisioning tool as an administrator (right-click the icon, and then click **Run as administrator**).
+1.  Run the admin user provisioning tool as an administrator (right-click the icon, and then click **Run as administrator**).
 2.  Enter your email address, and then select **Submit**.
 
 ### Commerce configuration
@@ -180,7 +152,7 @@ Follow the steps in this section if you are also configuring for Commerce.
 #### For Dynamics 365 for Operations 7.0
 
 1.  Install [Microsoft Online Services Sign-In Assistant for IT Professionals RTW](https://go.microsoft.com/fwlink/?LinkID=286152).
-2.  Install [Azure Active Directory Module for Windows PowerShell (64-bit version)](https://go.microsoft.com/fwlink/p/?linkid=236297).
+2.  Install [Azure Active Directory Module for Windows PowerShell (64-bit version)](/collaborate/connect-redirect?DownloadID=59185).
 3.  Query Azure AD for your tenant and user ID. Open a Windows PowerShell Integrated Scripting Environment (ISE) window with administrative privileges, and run the following command. You will be prompted for Azure AD credentials. Use the same user account that you used in the admin user provisioning tool earlier.
 
     ```powershell
@@ -199,7 +171,7 @@ Follow the steps in this section if you are also configuring for Commerce.
     }
     ```
         
-    [![Command in the Windows PowerShell ISE window](./media/retailconfig02-1024x529.png)](./media/retailconfig02.png)
+    [![Command in the Windows PowerShell ISE window.](./media/retailconfig02-1024x529.png)](./media/retailconfig02.png)
 
 4.  Update the following SQL script, and run it in on AXDB for that environment. Supply values for the following parameters from the preceding Windows PowerShell script output:
 
@@ -259,8 +231,8 @@ On a VM, you can find most of the application configuration by opening the web.c
 ### Commerce configuration
 
 The software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize applications, see the following topics:
--   [Retail software development kit (SDK) architecture](../../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
--   [Point of sale (POS) device activation](../../../retail/dev-itpro/retail-device-activation.md)
+-   [Retail software development kit (SDK) architecture](../../../commerce/dev-itpro/retail-sdk/retail-sdk-overview.md)
+-   [Point of sale (POS) device activation](../../../commerce/dev-itpro/retail-device-activation.md)
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.
@@ -270,3 +242,6 @@ To restart the local runtime and redeploy all the packages, follow these steps.
 
 This process might take a while. The process is completed when the cmd.exe window closes. If you just want to restart AOS (without redeploying the runtime), run **iisreset** from an administrator **Command Prompt** window, or restart AOSWebApplication from IIS.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

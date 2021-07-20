@@ -4,11 +4,9 @@
 title: Generate the Singapore GST-05 report
 description: This topic explains the functionality for generating Singapore GST-05 reports in Microsoft Dynamics 365 Finance. The GST-05 report is used to file a goods and services tax (GST) return. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -84,7 +82,7 @@ In the GST-05 declaration report, box 1 refers to the value of the supplies that
 
 If the sales code that you created supports the standard rate of the **GST\_7%** sales tax code, you must create entries on the **Conditions** tab.
 
-![Example of line entries on the Conditions tab](media/SG_GST_Report_Configuration.png)
+![Example of line entries on the Conditions tab.](media/SG_GST_Report_Configuration.png)
 
 > [!NOTE]
 > To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the line that has **SalesCreditNote** as the name of the operation is omitted in this configuration, and tax transactions are posted by using sales tax code **GST\_7%**, you will encounter issues when the report is generated. We recommend that you use the **Posted sales tax** inquiry to review all sales tax codes that are posted, but that aren't included in this mapping of the configuration.
@@ -100,3 +98,6 @@ Follow these steps to generate the tax declaration report.
 
 > [!NOTE]
 > Remember to run the sales tax settlement process to generate the related tax payment.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

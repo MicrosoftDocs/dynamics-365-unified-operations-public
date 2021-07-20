@@ -4,11 +4,9 @@
 title: Foreign currency revaluation for General ledger
 description: This topic provides an overview of the following for the general ledger foreign currency revaluation process -  setup, running the process, calculation for the process, and how to reverse the revaluation transactions, if necessary. 
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -88,7 +86,7 @@ The main account is revalued on January 31.  The unrealized gain/loss is calcula
 
 | Current balance in transaction currency | Current balance in accounting currency | Exchange rate at revaluation | New accounting currency amount | Unrealized gain/loss    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833.33 EUR (500 x 1.666667)        | 166.67 loss (833.33 – 1000) |
+| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833.33 USD (500 x 1.666667)        | 166.67 loss (833.33 – 1000) |
 
 The following accounting entry will be created.
 
@@ -117,3 +115,6 @@ You can reverse the results of the revaluation out of date order, but you may ne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

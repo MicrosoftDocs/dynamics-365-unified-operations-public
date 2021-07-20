@@ -2,13 +2,11 @@
 # required metadata
 
 title: New task guides (February 2016)
-description: This topic lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.  The libraries that were published include the (February 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations, and (February 2016) Getting started.
+description: This topic lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -651,3 +649,6 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 
 [New or updated task guides (November 2016)](new-task-guides-november-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

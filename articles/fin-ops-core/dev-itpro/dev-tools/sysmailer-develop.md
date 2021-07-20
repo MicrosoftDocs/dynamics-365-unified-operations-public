@@ -1,31 +1,16 @@
 ---
-# required metadata
-
 title: Develop email experiences by using the SysMailer framework
 description: This topic describes how you can use the SysMailer framework to send email.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 05/23/2018
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 270774
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
-
 ---
 
 # Develop email experiences by using the SysMailer framework
@@ -204,3 +189,6 @@ The **System.Net.Mail.MailMessage** object contains a large amount of advanced f
 ## Migration from Microsoft Dynamics AX 2012 to Finance and Operations applications
 
 Migration involves using the **SysMailerMessageBuilder** object to build a message and then using the **SysMailerFactory** to send it, as outlined in the examples in this topic.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

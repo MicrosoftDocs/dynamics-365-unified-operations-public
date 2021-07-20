@@ -4,11 +4,9 @@
 title: Create sales order invoices
 description: This task guide describes invoicing a sales order, including merging invoices and batch processing. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -70,3 +68,6 @@ This task guide describes invoicing a sales order, including merging invoices an
 10. Click **Cancel**.
 11. Click **Yes**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

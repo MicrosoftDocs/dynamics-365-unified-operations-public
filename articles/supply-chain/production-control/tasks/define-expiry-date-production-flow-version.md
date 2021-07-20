@@ -4,11 +4,9 @@
 title: Define an expiry date for a production flow version
 description: To end the validity and the processing of a production flow version on a given date, or to plan replacement of an active version with a new version, you have to set an expiry date on the version. 
 author: cvocph
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -42,3 +40,6 @@ To end the validity and the processing of a production flow version on a given d
 6. In the Expiration date field, enter a date and time.
     * For the expiration date, a new version will not start or become activated. It will also no longer be possible to create or start jobs for this production flow. You can still complete started jobs after the expiration date.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

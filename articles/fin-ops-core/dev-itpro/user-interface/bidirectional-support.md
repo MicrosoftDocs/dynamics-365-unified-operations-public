@@ -4,11 +4,9 @@
 title: Right-to-left language support and bidirectional text
 description: This topic discusses the issue of bidirectional text and how it's handled.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -210,3 +208,6 @@ The WPF RichTxt control has a flag that tries to format text according the first
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Reimburse customers
 description: This article explains how to create reimbursement transactions for a group of customers. If a customer has a credit balance, you can reimburse the customer for the amount of the balance. 
 author: JodiChristiansen
-manager: AnnBe
 ms.date: 09/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +51,6 @@ When you create reimbursement transactions, a vendor invoice is created for the 
 
 5. To view the reimbursement transactions that were created, use the **Reimbursement** report (**Accounts Receivable \> Inquiries and reports \> Reimbursement report**).
 6. In Accounts payable, create a payment for the vendor invoices that were created by the reimbursement process. For information about how to pay vendors, see [Vendor payment overview](../accounts-payable/Vendor-payments-workspace.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

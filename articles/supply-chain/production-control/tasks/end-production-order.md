@@ -4,11 +4,9 @@
 title: End a production order
 description: This procedure shows how to end a production order.
 author: johanhoffmann
-manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications
 ms.technology:  
 
 # optional metadata
@@ -48,3 +46,6 @@ This procedure shows how to end a production order. The demo data company used t
 1. On the Action Pane, click Manage costs.
 2. Click View cost comparison.
     * After you have ended the production order, you can compare the estimated cost price against the realized cost price to get an overview of the production variances.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

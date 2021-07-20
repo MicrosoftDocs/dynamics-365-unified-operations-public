@@ -4,11 +4,9 @@
 title: VAT declaration for Bahrain
 description: This topic explains how to configure and generate the VAT return form for Bahrain.
 author: sndray
-manager: AnnBe
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,7 +41,6 @@ The VAT return form in Dynamics 365 Finance includes the following reports:
  - Sales transactions details grouped by box classification from Box1 to Box6.
  - Purchase transaction details grouped by box classification from Box8 to Box12.
  
- The feature is available 
  
 ## Prerequisites
 
@@ -52,7 +49,7 @@ The VAT return form in Dynamics 365 Finance includes the following reports:
 In the **Feature management** workspace, enable the following features:
 - (Bahrain) Category hierarchy for Sales and purchase tax report.
 
-For more information about how to enable features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+For more information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 In the **Electronic reporting** workspace, import the following Electronic Reporting formats from the repository:
 
@@ -84,7 +81,7 @@ After you've finished downloading the ER configurations from Lifecycle Services 
 
 The VAT declaration form includes a set of boxes (lines) that correspond to specific parts of the VAT return process. Each box should include information about the base, adjustment, and VAT amounts. To include the requirements established by the form, you must configure each box with the information that is automatically provided from the sales tax transactions generated from sales, purchases, or other operations where VAT tax is posted through the sales tax code configuration.
 
-![Declaration form](media/emea-bhr-vat-Declaration-Form.png)
+![Declaration form.](media/emea-bhr-vat-Declaration-Form.png)
 
 #### Example
 
@@ -115,7 +112,7 @@ By adding this last record (NA), you define the following rule: When the tax cod
 9. Close the **Application specific parameters** page.
 
 
-![Set up specific parameters](media/emea-bhr-vat-Format-Setup.png)
+![Set up specific parameters.](media/emea-bhr-vat-Format-Setup.png)
 
 
 The following table represent an example of how the user needs to configure these parameters to establish the configuration between the different boxes in the declaration form and sales tax code configuration implemented in Finance.
@@ -221,3 +218,6 @@ Complete the following steps to generate the tax declaration report.
    - **Purchase transactions**
    - **Sales transactions**
   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create a production flow version
 description: This procedure focuses on creating a new production flow version. 
 author: cvocph
-manager: tfehr 
 ms.date: 11/03/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -66,3 +64,6 @@ This procedure focuses on creating a new production flow version. For this proce
     * Enter the number of days in the Period for actual cycle time. The period for actual cycle time is the number of days that jobs are aggregated from the actual minute backwards to calculate the actual cycle time. The value can be changed at any time and is only used for the calculation of the actual cycle times.  
 13. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

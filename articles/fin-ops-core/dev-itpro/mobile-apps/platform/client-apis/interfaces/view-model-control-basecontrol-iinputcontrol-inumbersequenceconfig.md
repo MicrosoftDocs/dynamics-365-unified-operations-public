@@ -4,11 +4,9 @@
 title: NumberSequenceConfig type
 description: Number Sequence Configuration type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -60,3 +58,6 @@ referencePageName: string
 Page name of the page that defines if the num sequence is editable.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

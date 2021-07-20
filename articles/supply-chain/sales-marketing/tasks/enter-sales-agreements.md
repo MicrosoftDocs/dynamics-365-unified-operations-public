@@ -4,11 +4,9 @@
 title: Enter sales agreements
 description: This topic explains how to create a sales agreement that commits one of your customers to buy a product for an agreed amount over time in exchange for special discounts. 
 author: omulvad
-manager: tfehr 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -58,3 +56,6 @@ This topic explains how to create a sales agreement that commits one of your cus
 11. Select **OK**.
 12. Close the page. The agreement is now effective. You can start linking the customer's orders to the agreement to offset against the committed target.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

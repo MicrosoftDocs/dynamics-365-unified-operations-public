@@ -4,11 +4,9 @@
 title: Feature callouts
 description: Trigger feature callouts raise awareness of new capabilities to users.
 author: jasongre
-manager: AnnBe
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -39,7 +37,7 @@ While documentation is helpful for explaining new features, it’s also importan
 
 In this topic, the APIs that are used to construct feature callouts are discussed in detail.   
 
-![Feature callout for Navigation Pane changes](./media/cli_featureCallout_noLink.png "Feature callout for Navigation Pane changes released in Platform update 22")
+![Feature callout for Navigation Pane changes.](./media/cli_featureCallout_noLink.png "Feature callout for Navigation Pane changes released in Platform update 22")
   
 ## The "Got it" button
 When a feature callout is triggered, the user can simply click the **Got it** button to dismiss the popup. This saves the state of this feature callout in the personalization subsystem, which prevents that specific feature callout from being triggered again. 
@@ -100,3 +98,6 @@ public void init()
 ## Notes
 -  Multiple feature callouts can be shown on a page at one time.
 -  Only one feature callout is allowed per control. If multiple callouts exist, the last one to get triggered will be displayed.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

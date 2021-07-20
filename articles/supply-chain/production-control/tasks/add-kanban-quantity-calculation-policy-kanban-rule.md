@@ -4,11 +4,9 @@
 title: Add a kanban quantity calculation policy to a kanban rule
 description: This procedure focuses on creating a kanban quantity calculation policy and adding it to a kanban rule to optimize the kanban size and quantities. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -65,3 +63,6 @@ This procedure focuses on creating a kanban quantity calculation policy and addi
 8. In the list, click the link in the selected row.
     * Select the policy Speaker2016 that you have just created in the previous sub-task.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

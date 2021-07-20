@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Intrusive customizations
 description: This topic defines the characteristics of an intrusive customization.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -69,3 +63,6 @@ New behaviors are enabled through added functionality as part of extensions. Ext
 
 > [!NOTE]
 > The author of the extension is responsible for not violating these principles.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

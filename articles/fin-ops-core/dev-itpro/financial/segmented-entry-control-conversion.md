@@ -2,13 +2,11 @@
 # required metadata
 
 title: Migrate Segmented Entry controls
-description: This topic describes migration scenarios for the Segmented Entry control, a simple using SMAServiceOrderTable and a complex scenario using LedgerJournalTransDaily.
-author: robinarh
-manager: AnnBe
+description: This topic describes migration scenarios for the Segmented Entry control.
+author: RyanCCarlson2
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 25611
 ms.assetid: 82e953d0-878e-4a3f-a91b-7375017a2810
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ghenriks
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
 
-Simple migration scenario – SMAServiceOrderTable form
------------------------------------------------------
+## Simple migration scenario – SMAServiceOrderTable form
 
 1.  Search for the **SMAServiceOrderTable** form in Application Explorer.
 2.  Add the form to the current project.
@@ -1731,8 +1728,7 @@ public boolean validate()
 
 Because this method only calls the **validate()** method on the control and doesn't perform any additional processing, you can delete it.
 
-Additional resources
---------
+## Additional resources
 
 [Support for Segmented Entry controls on dialogs](segmented-entry-control-dialog-support.md)
 
@@ -1744,3 +1740,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

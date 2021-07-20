@@ -4,11 +4,9 @@
 title: Dynamics 365 Translation Service overview
 description: This topic provides information about the Microsoft Dynamics 365 Translation Service (DTS).
 author: ejcho
-manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 6154
+ms.custom: ["6154", "intro-internal"]
 ms.assetid: ejchoGIT
 ms.search.region: Global
 # ms.search.industry: 
@@ -39,7 +37,7 @@ DTS uses a machine translation (MT) system that is custom-trained for [Microsoft
 
 The following illustration shows, at a high level, how the service works.
 
-![How DTS works](./media/dts-overview.png "How DTS works")
+![How DTS works.](./media/dts-overview.png "How DTS works")
 
 ## Recycling existing translations
 Existing linguistic assets can be recycled only when the assets are uploaded in a zip file that contains translation memory (TM) files that use Localization Interchange File Format (XLIFF). For more information, see [Translation memory files](./use-translation-service-tm.md).
@@ -47,8 +45,6 @@ Existing linguistic assets can be recycled only when the assets are uploaded in 
 ## Custom-trained MT system
 DTS uses a Microsoft Translator service and a custom translator to customize Microsoft Translator’s advanced neural machine translation for Microsoft Dynamics products. The custom-trained MT system can only be used for GA languages, unless partners upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT system that is specific to the translation request that the XLIFF TM files are submitted for.
 
-> [!NOTE]
-> Microsoft Translator supports the text translation through the Microsoft Translator Text API. DTS uses V3 Translator API because V2 will be discontinued on April 30, 2019 with the retirement of[Microsoft Translator Hub](https://www.microsoft.com/translator/business/hub/). For information about the supported languages for V3, see [Language and region support for the Translator Text API](https://docs.microsoft.com/azure/cognitive-services/translator/language-support#customization). 
 
 ## Supported products
 DTS currently supports the following product versions.
@@ -80,7 +76,7 @@ This option is convenient when you work on multiple product translation projects
 
 The following illustration shows an example of the DTS dashboard that you open from the LCS home page.
 
-![DTS dashboard that is opened from the LCS home page](./media/dts-home-dashboard.png "DTS dashboard that is opened from the LCS home page")
+![DTS dashboard that is opened from the LCS home page.](./media/dts-home-dashboard.png "DTS dashboard that is opened from the LCS home page")
 
 Because an LCS project is always tied to a product, any translation request that you submit from a project automatically carries the product type and version information from the project. You can't select a different product for the request.
 
@@ -88,15 +84,7 @@ In an LCS project, the project owner and the users will have permission to acces
 
 The following illustration shows an example of the DTS dashboard that you open from within an LCS project.
 
-![DTS dashboard that is opened from within a project](./media/dts-project-dashboard.png "DTS dashboard that is opened from within a project")
-
-## Accessing LCS preview features
-LCS offers some services or features only as preview features for various reasons. To view the list of preview features that are available, on the LCS home page, select the **Preview feature management** tile. To turn on a feature, select the feature, and then set the **Preview feature enabled** option to **Yes**.
-
-Two preview features are available for DTS:
-
-+ **Dynamics 365 Translation Service - Documentation Translation Support** – You must turn on this feature if you want to translate a product or solution document (for example, a Microsoft Word document).
-+ **NAV product availability** – You must turn on this feature if you want to create an LCS project for NAV products and access DTS from within the project.
+![DTS dashboard that is opened from within a project.](./media/dts-project-dashboard.png "DTS dashboard that is opened from within a project")
 
 ## Glossary
 
@@ -109,3 +97,6 @@ Two preview features are available for DTS:
 
 For more information about how to use DTS, see [Translate user interface files](use-translation-service.md) and [Translate documentation files](use-translation-service-ua.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

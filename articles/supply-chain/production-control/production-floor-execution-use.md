@@ -4,16 +4,14 @@
 title: How workers use the production floor execution interface
 description: This topic describes how to use the production floor execution interface from a worker's point of view.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: JmgProductionFloorExecution
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -29,7 +27,6 @@ ms.dyn365.ops.version: Release 10.0.15
 # How workers use the production floor execution interface
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 The production floor execution interface is optimized for touch interaction. Its design provides visual contrast that meets accessibility requirements for shop floor environments. It offers all the same functional capabilities as the job card device. However, it also enables multiple jobs to be started in parallel from a job list. (This capability is also known as *job bundling*.) Additionally, from a job list, workers can open a guide that was created in Microsoft Dynamics 365 Guide. In this way, they can get visual instructions on a HoloLens.
 
@@ -39,7 +36,7 @@ Before workers can start to use the device, a supervisor or technical staff must
 
 After the device has been prepared, the sign-in page appears on it. This page shows information about the status of jobs for the local work cell. This information is updated periodically. On the page, workers use their badge IDs to sign. Although workers don't have to have a user account for Supply Chain Management, they must have a *time registered worker* account that they can use when they sign in.
 
-![Production floor execution interface sign-in page](media/pfei-sign-in-page.png "Production floor execution interface sign-in page")
+![Production floor execution interface sign-in page.](media/pfei-sign-in-page.png "Production floor execution interface sign-in page")
 
 The remaining sections of this topic describe how workers interact with the interface.
 
@@ -47,7 +44,7 @@ The remaining sections of this topic describe how workers interact with the inte
 
 The **All jobs** tab provides a job list that shows all the production jobs that have a status of *Not started*, *Stopped*, or *Started*. (This tab name is customizable and may be different for your system.)
 
-![All jobs tab](media/pfei-all-jobs-tab.png "All jobs tab")
+![All jobs tab.](media/pfei-all-jobs-tab.png "All jobs tab")
 
 The job list has the following columns. The numbers correspond to the numbers in the previous illustration.
 
@@ -66,7 +63,7 @@ The job list has the following columns. The numbers correspond to the numbers in
 
 The **Active jobs** tabs shows a list of all jobs that the signed-in worker has already started. (This tab name is customizable and may be different for your system.)
 
-![Active jobs tab](media/pfei-active-jobs-tab.png "Active jobs tab")
+![Active jobs tab.](media/pfei-active-jobs-tab.png "Active jobs tab")
 
 The active jobs list has the following columns:
 
@@ -83,7 +80,7 @@ The active jobs list has the following columns:
 
 The **My machine** tab lets workers select an asset that is connected to a machine resource within the filter set on the **All jobs** tab. The worker can then view the state and health of the selected asset by reading values for up to four selected counters and lists of recent maintenance requests and registered downtimes. The worker can also request maintenance for the selected asset and register and edit machine downtime. (This tab name is customizable and may be different for your system.)
  
-![The My machine tab](media/pfei-my-machine-tab.png "The My machine tab")
+![The My machine tab.](media/pfei-my-machine-tab.png "The My machine tab")
 
 The **My machine** tab has the following columns. The numbers correspond to the numbers in the previous illustration.
 
@@ -94,7 +91,7 @@ The **My machine** tab has the following columns. The numbers correspond to the 
 
 1. **Settings** – Select the gear icon to open a dialog box where you can choose which counters to view for the selected machine asset. Values for these counters are shown at the top of the **Asset management** tab. The **Settings** menu (shown in the following screenshot) lets you enable up to four counters. For each counter that you want to enable, use the lookup field at the top of the tile to select a counter. The lookup field lists all of the counters associated to the asset selected at the top of the **Asset management** page. Set each counter to monitor either the **Aggregated** value or the latest **Actual** value for the counter. For example, if you set a counter that tracks how many hours the machine has been running, then you should set it to **Aggregated**. If you set a counter to measure the latest updated temperature or pressure, then you should set it to **Actual**. Select **OK** to save your settings and close the dialog box.
 
-    ![The My machine tab](media/pfei-my-machine-tab-settings.png "The My machine tab")
+    ![The My machine tab settings.](media/pfei-my-machine-tab-settings.png "The My machine tab settings")
 
 1. **Request maintenance** – Select this button to open a dialog box where you can create a maintenance request. You'll be able to provide description and a note. The request will be brought to the attention of a Supply Chain Management user, who will then be able to convert the maintenance request to a maintenance work order.
 1. **Register downtime** – Select this button to open a dialog box where you can register machine downtime. You'll be able to select a reason code and enter a date/time span for the downtime. The machine downtime registration is used for calculating the efficiency of the machine asset.
@@ -105,7 +102,7 @@ The **My machine** tab has the following columns. The numbers correspond to the 
 
 Workers start a production job by selecting a job on the **All jobs** tab and then selecting **Start job** to open the **Start job** dialog box.
 
-![Start job dialog box](media/pfei-start-job-dialog.png "Start job dialog box")
+![Start job dialog box.](media/pfei-start-job-dialog.png "Start job dialog box")
 
 Workers use the **Start job** dialog box to confirm the production quantity and then start the job. Workers can adjust the quantity by selecting the **Quantity** field and then using the numeric keyboard that appears. Workers then select **Start** to start to work on the job. The **Start job** dialog box is closed, and the job is added to the **Active jobs** tab.
 
@@ -115,13 +112,13 @@ Workers can start a job that is in any status. When a worker starts a job that h
 
 When a worker completes or partially completes a job, they can report good quantities that were produced by selecting a job on the **Active jobs** tab and then selecting **Report progress**. Then, in the **Report progress** dialog box, the worker enters the good quantity by using the numeric keyboard. The quantity is blank by default. After a quantity is entered, the worker can update the status of the job to *In progress*, *Stopped*, or *Completed*.
 
-![Report progress dialog box](media/pfei-report-progress-dialog.png "Report progress dialog box")
+![Report progress dialog box.](media/pfei-report-progress-dialog.png "Report progress dialog box")
 
 ## Reporting scrap
 
 When a worker completes or partially completes a job, they can report scrap by selecting a job on the **Active jobs** tab and then selecting **Report scrap**. Then, in the **Report scrap** dialog box, the worker enters the scrap quantity by using the numeric keyboard. The worker also selects a reason (*None*, *Machine*, *Operator*, or *Material*).
 
-![Report scrap dialog box](media/pfei-report-scrap-dialog.png "Report scrap dialog box")
+![Report scrap dialog box.](media/pfei-report-scrap-dialog.png "Report scrap dialog box")
 
 ## Completing a job and starting a new job
 
@@ -143,7 +140,7 @@ The worker selects the third job on the **All jobs** tab and then selects **Bund
 
 ## Working on indirect activities
 
-Indirect activities are activities that aren't directly related to a production order. Indirect activities can be flexibly defined, as described in [Set up indirect activities for time and attendance](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
+Indirect activities are activities that aren't directly related to a production order. Indirect activities can be flexibly defined, as described in [Set up indirect activities for time and attendance](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance).
 
 For example, Shannon, a floor worker at Contoso, wants to attend a company meeting, and meetings are considered an indirect activity. One of the following two scenarios applies:
 
@@ -174,3 +171,6 @@ Workers can open a document that is attached to a job by selecting **Instruction
 1. The worker works through the guide to learn the task.
 
 For more information about how to create, assign, and use guides for HoloLens, see [Provide mixed-reality Guides for workers in production](instruction-guides-in-production-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Refresh database
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
-manager: AnnBe
-ms.date: 11/30/2020
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
 
 # optional metadata
@@ -36,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of the database to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional and financial reporting databases of your production environment into the target, sandbox UAT environment. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
 
 > [!IMPORTANT]
+> Copying production data during business hours or peak hours could have an impact on the production system. It's highly recommended to do the refresh database operation during off-peak hours and limit only one refresh operation at a time.
+
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.
 
 ## Self-service database refresh
@@ -62,13 +62,13 @@ The information in this section lists certain elements of the database that are 
 * All users except the admin will be set to **Disabled** status.
 
 #### When refreshing from sandbox environment to production environment
-This is also referred to as [Golden configuration promotion](/dbmovement-scenario-goldenconfig.md).
+This is also referred to as [Golden configuration promotion](dbmovement-scenario-goldenconfig.md).
 * Batch job history is stored in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
 
 #### These elements are removed for all database refresh operations
 
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-* Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
+* All files stored in Azure blob storage. This includes document attachments (from the DocuValue and DocuDeletedValue tables) and custom Microsoft Office templates (from the DocuTemplate table).
 * All batch jobs are set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
@@ -89,7 +89,7 @@ Here is the list of requirements and conditions of operation for a database refr
 - A refresh performs a delete operation on the original target database.
 - The target environment will be available until the database copy has reached the target server. After that point, the environment will be offline until the refresh process is completed.
 - The refresh will affect only the application and Financial Reporting databases.
-- Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and templates won't be changed and will remain in their current state.
+-  No **file stored in Azure blob storage is copied** from one environment to another. This includes **document attachments and custom Microsoft Office templates**. These documents won't be changed and will remain in their current state. 
 - All users except the Admin user and other internal service user accounts will be unavailable. This process allows the Admin user to delete or obfuscate data before allowing other users back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management framework with recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files cannot be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
@@ -130,3 +130,6 @@ The database refresh process (self-service or via service request) cannot be com
 If upgrading your sandbox UAT environment to a newer Application version (for example, 7.3 to 8.1), be sure to perform the database refresh action prior to starting the upgrade. After your sandbox is upgraded to the newer version, you cannot restore an older production environment database in to the sandbox UAT environment.
 
 Conversely, if your production environment is newer than your target sandbox, you will need to either upgrade the target sandbox prior to the refresh or simply deallocate, delete, and redeploy prior to performing the refresh.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

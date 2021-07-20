@@ -4,11 +4,9 @@
 title: Transportation management number sequence
 description: This topic describes how to set up number sequences for transportation management.
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +51,6 @@ To link a number sequence to a carrier, do the following:
 1. Select **Edit**.
 1. On the **Overview** FastTab, select an option in the **Pro number sequence** field.
 1. Close the page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

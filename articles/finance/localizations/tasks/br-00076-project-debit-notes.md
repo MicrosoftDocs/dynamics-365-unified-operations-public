@@ -4,11 +4,9 @@
 title: Project debit notes (Brazil)
 description: You can generate debit notes for projects to get reimbursement of expenses occurred in the project. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -61,3 +59,6 @@ You can generate debit notes for projects to get reimbursement of expenses occur
 28. Close the page.
 29. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -5,11 +5,9 @@
 title:  Set up your career site in Attract
 description: This topic provides an overview of the candidate-facing career site functionality in Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
-manager: tfehr
 ms.date: 03/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -200,3 +197,6 @@ shows the available options.
 Currently, jobs that are marked as internal and posted to the Attract career
 site don't appear on the career site. They are only accessible using the direct
 **Apply** URL that can be copied from the Attract application.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Understand Date and Time fields
 description: Understand what to expect when using Date and Time fields in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: HcmPersonnelManagementWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -32,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Understand Date and Time fields
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Date and Time** fields are a fundamental concept in Dynamics 365 Human Resources. It's important to understand how to work with **Date and Time** data in forms, Dataverse, and external sources.
@@ -42,13 +41,13 @@ ms.dyn365.ops.version: Human Resources
 
 When displaying data in a **Date and Time** field, Human Resources adjusts the date and time based on the user's time zone set in the **User Options** form (**Common > Setup > User Options**). The date and time information you enter in the field might not be the same as the information written to the database.
 
-[![User options form](./media/useroptionsform.png)](./media/useroptionsform.png)
+[![User options form.](./media/useroptionsform.png)](./media/useroptionsform.png)
 
 ## Understanding Date and Time fields in forms 
 
 **Date and Time** data displayed on the screen isn't the same as the data stored in the database if the user's time zone isn't set to Coordinated Universal Time (UTC). Data in **Date and Time** fields is always stored as UTC.
 
-[![Worker form UTC](./media/worker-form.png)](./media/worker-form.png)
+[![Worker form UTC.](./media/worker-form.png)](./media/worker-form.png)
 
 ## Understand Date and Time fields in the database 
 
@@ -58,7 +57,7 @@ In the example above, the start time is a point in time, not a particular date. 
   
 In the example below, employee 000724’s employment becomes active at the same time regardless of time zone. The employee will be active on 04/30/2019 in the GMT time zone, which is the same as 05/01/2019 in GMT+12:00 time zone. Both refer to the same point in time and not a particular date. 
 
-[![Worker form GMT](./media/worker-form2.png)](./media/worker-form2.png)
+[![Worker form GMT.](./media/worker-form2.png)](./media/worker-form2.png)
 
 ## Date and Time data in Data Management Framework, Excel, Dataverse, and Power BI 
 
@@ -74,29 +73,32 @@ When using external sources like DMF to view or author data, keep in mind that t
 
 **Human Resources with user time zone set to UTC**
 
-[![Worker form set to UTC](./media/worker-form3.png)](./media/worker-form3.png)
+[![Worker form set to UTC.](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Human Resources with user time zone set to GMT +12:00** 
 
-[![Worker form set to GMT](./media/worker-form4.png)](./media/worker-form4.png)
+[![Worker form set to GMT.](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel Via OData**
 
-[![Excel Via OData](./media/Excelviaodata.png)](./media/Excelviaodata.png)
+[![Excel Via OData.](./media/Excelviaodata.png)](./media/Excelviaodata.png)
 
 **DMF Staging**
 
-[![DMF Staging](./media/DMFStaging.png)](./media/DMFStaging.png)
+[![DMF Staging.](./media/DMFStaging.png)](./media/DMFStaging.png)
 
 **DMF Export**
 
-[![DMF Export](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF Export.](./media/DMFexport.png)](./media/DMFexport.png)
 
 **Excel via Dataverse**
 
-[![Excel via Dataverse](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel via Dataverse.](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## See also
 
-[Date and time data](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
-[User preferred time zones](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
+[Date and time data](/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
+[User preferred time zones](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

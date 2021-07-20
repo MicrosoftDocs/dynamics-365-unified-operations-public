@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Copy variables to chain test cases
 description: This topic shows how the Regression Suite Automation Tool can be used to chain test cases, which is the ability of a test to pass values to other tests.
-author: robadawy
-manager: AnnBe
+author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-platform
 ms.technology:
-
-# optional metadata
 
 # ms.search.form:
 # ROBOTS:
@@ -22,7 +16,7 @@ ms.reviewer: rhaertle
 ms.custom: 21631
 ms.search.region: Global
 # ms.search.industry:
-ms.author: robadawy
+ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -36,15 +30,15 @@ One of the key features of the Regression Suite Automation Tool is the chaining 
 
 To save the value of a variable while recording the test in Task Recorder, right-click the field and select **Task recorder > Copy**, as shown in the following image. Copying will save the variable in the recording file. This variable can be used in subsequent tests.
 
-:::image type="content" source="media/task-recorder-copy.png" alt-text="Copy menu item in task recorder":::
+:::image type="content" source="media/task-recorder-copy.png" alt-text="Copy menu item in task recorder.":::
 
 When RSAT generates the Excel parameters file, saved variables appear in the **Saved variables** table on the **General** Tab. These variables also appear in the context of the test case steps in the **TestCaseSteps** tab. In the image below, the purchase order ID value was copied during the recording of the test case (step 5). This value is stored in a variable named **{{PurchCreateOrder_PurchTable_PurchId_86_Copy}}**.
 
-![Saved variables in Excel](media/saved-variables.png)
+![Saved variables in Excel.](media/saved-variables.png)
 
 To reuse these variables during test playback, copy the variable name and use it in place of a parameter value in the data file of another test (or the same test), as shown below.
 
-![Reusing variables in Excel](media/reuse-variables.png)
+![Reusing variables in Excel.](media/reuse-variables.png)
 
 Variables can be used in the same test case where they are defined and can also be passed between tests during the same test run.
 
@@ -54,7 +48,7 @@ You can create formulas that contain saved (copied) variables. If you have been 
 
 In the image below, two different variables are used in a formula.
 
-![Creating a formula in Excel](media/formulas.png)
+![Creating a formula in Excel.](media/formulas.png)
 
 As of RSAT version 1.220, you can also use Excel functions, such as **ROUND**, **CONCAT**, and **UPPER**, to create formulas with RSAT variables. This feature is implemented using the Excel formula evaluation functionality, so any function supported by Excel is supported by RSAT.
 
@@ -76,7 +70,7 @@ For example,
 
 RSAT evaluates these formulas during test execution, so you must precede the formula with a single quote **\'** to prevent Excel from attempting to prematurely calculate the formula. An example is shown in this image.
 
-![Creating a formula in Excel 2](media/formulas-2.png)
+![Creating a formula in Excel 2.](media/formulas-2.png)
 
 ## Use variables in message validation
 
@@ -84,4 +78,7 @@ You can also use a saved variable as part of a string in the Message Validation 
 
 Saved (Copied) variables can be used within the same test case or across more than one test case in the same test suite.
 
-![message with variable](media/rsat-message-with-variable.png)
+![message with variable.](media/rsat-message-with-variable.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

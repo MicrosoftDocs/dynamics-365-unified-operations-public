@@ -4,11 +4,9 @@
 title: Redeploy on-premises environments
 description: This topic provides information about redeploying an on-premises environment.
 author: sarvanisathish
-manager: AnnBe
 ms.date: 10/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -134,3 +132,6 @@ The following instructions provide information about how to update or redeploy y
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

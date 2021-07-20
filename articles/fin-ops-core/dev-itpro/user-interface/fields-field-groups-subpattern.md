@@ -4,11 +4,9 @@
 title: Fields and Field Groups subpattern
 description: This topic provides information about the Field and Field Groups form subpattern.
 author: jasongre
-manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the Field and Field Groups form subpattern. This is the most common data entry subpattern. It uses a dynamic number of columns to present multiple fields or groups of fields.
 
-Usage
------
+## Usage
 
 Field and Field Groups is the most common data entry subpattern and uses a dynamic number of columns to present multiple fields or groups of fields. This subpattern is not used with controls that have dynamic height or width (for example Grid, Tree, RadioButton, ListBox, or ListView), or controls that have larger height or width (for example, Chart). The group controls within this pattern can be used either to group fields under a label or to bind to a table field group.
 
@@ -48,7 +45,7 @@ Field and Field Groups is the most common data entry subpattern and uses a dynam
     -   Horizontal fields and button group
 
 ## Wireframe
-[![Wireframe for Field and Field Groups](./media/fieldsfieldgroups1.png)](./media/fieldsfieldgroups1.png)
+[![Wireframe for Field and Field Groups.](./media/fieldsfieldgroups1.png)](./media/fieldsfieldgroups1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -85,13 +82,13 @@ The verification checklist shows the steps for manually verifying that the form 
 -   **Standard form guidelines:**
     -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md) document.
 -   **Fields and Field Groups guidelines:**
-    -   The fields in groups should flow across the entire page. [![Example of fields in groups flowing across page](./media/fieldsfieldgroups2.png)](./media/fieldsfieldgroups2.png)
+    -   The fields in groups should flow across the entire page. [![Example of fields in groups flowing across page.](./media/fieldsfieldgroups2.png)](./media/fieldsfieldgroups2.png)
     -   When possible, remove unnecessary field group labels.
     -   Verify that you have an understandable grouping for your fields.
     -   Either all fields should be in Groups that have labels, or no Group labels should be shown.
 
 ## Examples
-Form: **InventLocation (LocationNames)** [![Example of form](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)
+Form: **InventLocation (LocationNames)** [![Example of form.](./media/fieldsfieldgroups3.png)](./media/fieldsfieldgroups3.png)
 
 ## Resources
 ### Typically used by patterns
@@ -112,4 +109,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-**InventLocation** [![Example of form](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)
+**InventLocation** [![Example of form.](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

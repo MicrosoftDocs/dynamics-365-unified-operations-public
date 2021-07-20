@@ -4,11 +4,9 @@
 title: Create fixed compensation plans
 description: Fixed compensation refers to an employee's regular gross salary or wages. This article describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEv
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 15991
@@ -31,6 +28,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Create a fixed compensation plans
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Fixed compensation refers to an employee's regular gross salary or wages. This article describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
 
@@ -103,3 +102,6 @@ You can now assign an employee to a fixed compensation plan. Open the **Employee
 
 The system verifies that the compensation amount that is specified for a compensation plan of the grade or band type is within the minimum and maximum reference points for the given compensation level on the employee's job. If the compensation amount is outside the allowed range, a warning or error message is displayed, depending on the tolerance level that is set on the fixed compensation plan.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

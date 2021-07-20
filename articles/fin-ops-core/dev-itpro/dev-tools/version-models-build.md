@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Update model versions in the automated build
 description: The topic explains how to update the models in a source package and deployable package of the build output with the version of the build that produced them.
 author: jorisdg
-manager: AnnBe
 ms.date: 05/25/2017
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: 26731
 ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Update model versions in the automated build
@@ -80,22 +65,25 @@ For build definitions that were created before Platform update 6, a new task mus
 1. In Azure DevOps, on the **Build & Release** page, under **Builds**, on the **All Definitions** tab, find your build definition. 
 1. Click the ellipsis (…), and then click **Edit**.
 
-    ![Edit the build definition](media/builddef_edit.png)
+    ![Edit the build definition.](media/builddef_edit.png)
 
 1. On the **Tasks** tab, click **+ Add Task** at the bottom of the page.
 1. In the **Add tasks** pane on the right side of the page, on the **Utility** tab, scroll down to find the **PowerShell** task. 
 1. Hover the mouse pointer over the task, and click the **Add** button that appears.
 
-    ![Add a PowerShell task](media/builddef_addpowershelltask.png)
+    ![Add a PowerShell task.](media/builddef_addpowershelltask.png)
 
 1. In the list of tasks on the left side of the page, click to select the **PowerShell Script** task that is added.
 1. On the right side of the page, change the **Display name**, **Script Path**, and **Arguments** properties to reflect the required settings.
 
-    ![Set the properties for the Set Model Versions task](media/builddef_setmodelversions_settings.png)
+    ![Set the properties for the Set Model Versions task.](media/builddef_setmodelversions_settings.png)
 
 1. In the list of tasks on the left side of the page, drag the **Set Model Versions** task so that it's between the **Prepare for build** and **Build the solution** tasks.
 
-    ![Set the order of the Set Model Versions task](media/builddef_setmodelversions_order.png)
+    ![Set the order of the Set Model Versions task.](media/builddef_setmodelversions_order.png)
 
 1. On the **Variables** tab, click **+ Add** at the bottom of the list of variables. In the first column, for the **Name** variable, enter **ModelVersionExclusions**.
 1. Click **Save** to save the new task.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

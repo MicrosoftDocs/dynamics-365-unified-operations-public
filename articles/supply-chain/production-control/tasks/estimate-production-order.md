@@ -4,11 +4,9 @@
 title: Estimate a production order
 description: You can run this procedure by using the USMF demo data company or your own data set.
 author: johanhoffmann
-manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod:  
-ms.service: dynamics-ax-applications
 ms.technology:  
 
 # optional metadata
@@ -44,3 +42,6 @@ You can run this procedure by using the USMF demo data company or your own data 
 1. On the Action Pane, click Manage costs.
 2. Click View calculation details.
     * This page displays the cost breakdown. For example, you can view the total cost price per unit for the finished product in the first row. The subsequent rows contain costs according to the bill of materials, production route, and indirect costs.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

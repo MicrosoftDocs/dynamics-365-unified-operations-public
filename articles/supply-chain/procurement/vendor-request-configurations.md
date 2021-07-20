@@ -3,12 +3,10 @@
 
 title: Vendor request configurations
 description: This topic describes the fields that are required to be populated in a new vendor request.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2017-12-31 
 ms.dyn365.ops.version: 7.3
 ---
@@ -57,3 +55,6 @@ You can also enter a confirmation message that will be displayed when the wizard
 4.	Open the **Country/regions** tab to select the country/region that the configuration should be used for.
 5.	Complete the configuration by following the guidelines for the default configuration.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

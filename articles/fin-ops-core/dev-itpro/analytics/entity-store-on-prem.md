@@ -4,11 +4,9 @@
 title: PowerBI.com integration with on-premises environments
 description: This topic provides information about how to enable Entity Store for on-premises deployments.
 author: MilindaV
-manager: AnnBe
-ms.date: 06/18/2019
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -127,7 +125,7 @@ If Entity Store should be enabled in an environment, the following tasks must be
     - The database name is created in step 14 and is defined in the DatabaseTopologyDefinition.xml file. The default name is **AXDW**.
     - The SQL Server name is the fully qualified domain name (FQDN) of the Microsoft SQL Server or Always on listener. An example of this FQDN is **sqlinstance.onprem.contoso.com**. It's the server that the AXDW database is created on.
 
-Currently, you can enable Entity Store only during initial deployment. If it must be enabled in an existing environment, that environment must be deleted and then deployed again by using a platform update that supports Entity Store.
+To enable Entity Store in an environment that has already been deployed, you can use the **Update Settings** action under the **Maintain** button in LCS. This will open a dialog that will allow you to specify the Entity Store configuration. 
 
 ## Authoring and distributing reports by using Entity Store on-premises
 
@@ -138,3 +136,6 @@ Note the following additional steps that are specific to on-premises deployments
 - For on-premises environments, you don't have to use LCS to deploy Power BI reports to production or sandbox environments. Because admins can point PowerBI.com datasets to specific Entity Store databases in on-premises environments, you don't have to use the functionality that LCS offers. However, you might have to configure the on-premises gateway to enable PowerBI.com to access data on-premises. For more information about the gateway, see [Power BI gateway documentation](https://powerbi.microsoft.com/gateway/).
 - Although cloud-based application environments support only reports that are authored by using the DirectQuery option, on-premises Entity Store supports both DirectQuery reports and Import mode reports.
 - Analytical workspaces aren't yet implemented in on-premises deployments. Instead of viewing reports in analytical workspaces, you can deploy them to PowerBI.com environments. The reports can then be used by users who have access to PowerBI.com. Your users might require appropriate licenses to access reports on PowerBI.com.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

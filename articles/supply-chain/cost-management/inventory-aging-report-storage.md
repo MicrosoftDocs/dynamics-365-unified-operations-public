@@ -4,11 +4,9 @@
 title: Inventory aging report storage
 description: This topic describes the functionality that lets you run an Inventory aging report and make the output available as a form and a chart.
 author: AndersGirke
-manager: tfehr
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -60,3 +58,6 @@ Before you can use this feature, you must enable it on your system. Administrato
     > The form won't include subtotals that are defined in the report layout.
 
 The **Inventory aging report** data entity lets you export the output of an **Inventory aging report storage** report by applying a filter for the **Process Identifier – Name** field to any format that Data management supports.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

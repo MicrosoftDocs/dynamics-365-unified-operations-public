@@ -4,11 +4,9 @@
 title: Column definitions in financial reports
 description: This article provides information about column definitions. A column definition is a report component that defines the contents of columns on a report. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -604,3 +602,6 @@ You can divide the amount in a column by a specified number of periods. For exam
 [Row definitions in financial report designer](row-definitions-financial-reporting.md)
 
 [Advanced formatting options in financial reporting](advanced-formatting-options-financial-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

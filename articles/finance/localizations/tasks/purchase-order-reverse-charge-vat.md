@@ -4,11 +4,9 @@
 title: GB-00002 Create a purchase order that includes items subject to reverse charge VAT
 description: This task walks you through creating a purchase order that includes items subject to reverse charge VAT for the United Kingdom. 
 author: epodkolz
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -71,3 +69,6 @@ Prior to this task, the "Set up reverse charge VAT" tasks should be completed.
     * Observe the calculated Reverse charge VAT transactions:   Sales tax transactions with incoming and outgoing direction  
 21. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

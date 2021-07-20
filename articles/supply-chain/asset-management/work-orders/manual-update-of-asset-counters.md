@@ -3,12 +3,10 @@
 
 title: Manual update of asset counters
 description: This topic describes manual update of asset counters in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -61,10 +59,13 @@ Note the following points:
 
 The illustration below shows an example of the **Asset counters** page.
 
-![Figure 1](media/11-work-orders.png)
+![Figure 1.](media/11-work-orders.png)
 
 On the **Asset counters** page (**Asset management** > **Inquiries** > **Assets** > **Asset counters**), you can make counter registrations on several assets at the same time, as you require.
 
 >[!NOTE]
 >You can set up a range to define deviations in manual counter registrations. You can also specify the type of message that is shown if registrations are outside the defined range. For more information about how to set up counters, see [Counters](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

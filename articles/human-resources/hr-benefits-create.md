@@ -4,11 +4,9 @@
 title: Create a new benefit
 description: This task will show you how to create benefit elements which will be used when creating a new benefit. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 02/03/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,7 +14,6 @@ ms.technology:
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart 
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,6 +25,8 @@ ms.dyn365.ops.version: Version 7.0.0, Human Resources
 ---
 
 # Create a new benefit
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This task will show you how to create benefit elements which will be used when creating a new benefit. The demo data company used to create this task is USMF. This task is intended for a Compensation and Benefits manager.
 
@@ -57,3 +56,6 @@ This task will show you how to create benefit elements which will be used when c
 6. In the Effective field, enter a date and time.
 7. Click Create benefit.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

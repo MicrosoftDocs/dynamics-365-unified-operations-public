@@ -4,11 +4,9 @@
 title: General ledger simulations (Italy)
 description: This topic provides information about posting ledger transactions as a simulation from the general journal and then review reports that include the simulated transactions.
 author: anasyash
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -45,7 +43,7 @@ You can review the posted simulation ledger transactions in the reports, **Trial
 Before you can use the General ledger simulations, the following prerequisites must be met:
 
 - The primary address of the legal entity is in Italy.
-- Enable the **General ledger simulations** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- Enable the **General ledger simulations** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Setup 
 
@@ -123,3 +121,6 @@ Simulation transactions can be reviewed in several ledger reports.
 2. Set **Simulation journal transactions** to **Yes** in the **Statement by dimension** dialog menu.
 3. Select a value in the **Simulation journal group** field, and then select **OK**.
 4. Verify that the report contains posted simulation transactions and standard ledger transactions.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

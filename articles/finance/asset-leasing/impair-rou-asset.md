@@ -4,11 +4,9 @@
 title: Impair right-of-use assets
 description: This topic describes the functionality that records an impairment and adjusts the asset depreciation schedule of an Accounting Standards Codification Topic 842 (ASC 842) operating lease.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -106,3 +104,6 @@ The following tables show the values that are set on the **General** and **Payme
 7. To view the net effect of the impairment, go to the liability and asset transactions tables. Notice that the impairment expense has decreased the ROU asset, but the carrying amount of the lease liability hasn't changed.
 
 The impairment has one other effect that you should consider. Because the ROU asset amount is now much less than the lease liability, the amount must be depreciated differently than it was before. Specifically, the asset is now depreciated in a straight-line manner throughout the remaining 84 months of the lease, beginning on the transaction date.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

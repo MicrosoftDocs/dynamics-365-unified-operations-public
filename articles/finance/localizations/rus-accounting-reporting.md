@@ -3,11 +3,9 @@
 title: Accounting reporting in electronic format (Russia)
 description: This topic explains how to set up accounting reporting for Russia.
 author: Anasyash
-manager: AnnBe
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -39,7 +37,7 @@ ms.dyn365.ops.version: 10.0.1
     - Financial reports model mapping (RU)
     - Accounting reporting format 5.08 (RU)
 
-    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 2. Upload the Data management package settings.
 
@@ -140,3 +138,6 @@ ms.dyn365.ops.version: 10.0.1
 12. To review the report that is generated, select the **Attachments** button (the paper clip symbol) in the upper-right corner of the page. Then select **Open** to open the file.
 
 You must also manually upload the generated file to the special third-party software for data preview and data updates, and to transfer the accounting reporting files to the tax authorities through the communication channels.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

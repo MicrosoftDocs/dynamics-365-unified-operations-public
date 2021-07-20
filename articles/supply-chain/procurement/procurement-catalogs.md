@@ -3,12 +3,10 @@
 
 title: Procurement catalogs overview
 description: This article describes, at a high level, how purchasing professionals can set up and maintain procurement catalogs. Procurement catalogs define the items and services that company employees can order for internal use.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 2214
+ms.custom: ["2214", "intro-internal"]
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -73,10 +71,12 @@ Updates are published either automatically or manually, depending on the option 
 -   **Both** – If the catalog includes product categories that have a default update type of **Static**, it must be manually updated when these categories are updated. If the catalog includes product categories that have a default update type of **Dynamic**, it is automatically updated whenever it's changed.
 
 
-Additional resources
---------
+## Additional resources
 
 [Set up a procurement category hierarchy](tasks/set-up-procurement-category-hierarchy.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

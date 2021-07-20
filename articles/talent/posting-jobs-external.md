@@ -4,11 +4,9 @@
 title: Post jobs to Broadbean from Attract
 description: This topic explains how to use Dynamics 365 Talent - Attract to post jobs to Broadbean
 author: pganapmsft
-manager: tfehr
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -16,7 +14,6 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -106,3 +103,6 @@ If you're having trouble posting a job to Broadbean, try these steps.
 [Create, approve, and post jobs in Attract](./creating-jobs-attract.md)
 
 [Enable Broadbean integration in Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

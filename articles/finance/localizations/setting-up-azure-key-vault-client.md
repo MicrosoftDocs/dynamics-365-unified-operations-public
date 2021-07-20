@@ -4,11 +4,9 @@
 title: Set up the Azure Key Vault client
 description: This topic provides information about storing advanced certificates and defining the certificate storage type.
 author: anasyash
-manager: AnnBe
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ The functionality provides two options for storing certificates: local storage a
 - **Local storage** – This storage option can be used with on-premises deployments and any kind of on-premises development environment. To use it, set the **Use advanced certificate store** option to **No**. This storage option is recommended for development environments that are used for development and validation purposes, where it's necessary to validate the certificate and work with it.
 - **Azure Key Vault storage** – This storage option is required for cloud deployments, but it can also be used with on-premises deployed environments and any kind of on-premises development environment. To use it, set the **Use advanced certificate store** option to **Yes**. This storage option is the only option for a production environment in the Azure cloud.
 
-![System parameters page, General tab](media/1_System_parameters.jpg)
+![System parameters page, General tab.](media/1_System_parameters.jpg)
 
 Some setup is required before you can work with certificates that are stored in Key Vault. For information about the required settings, see the following Microsoft Knowledge Base (KB) article: [4040294 - Maintaining Azure Key Vault storage](https://support.microsoft.com/en-us/help/4040294/maintaining-azure-key-vault-storage). After you set up the Key Vault storage, you should link to the certificates in Finance and Operations apps.
 
@@ -70,7 +68,7 @@ vault:///\<SecretName\>
 
 If the secret version isn't defined in the Key Vault secret key, the system retrieves the active certificate that has the latest expiration date.
 
-![Key vault parameters page](media/2_Key_Vault_parameters.jpg)
+![Key vault parameters page.](media/2_Key_Vault_parameters.jpg)
 
    > [!NOTE]
    > The Key Vault storage functionality has been extended so that it includes caching of certificates. The following configuration is recommended:
@@ -79,3 +77,6 @@ If the secret version isn't defined in the Key Vault secret key, the system retr
 - After you upload a new version of the existing certificate to the Key Vault storage, update the **\<SecretVersion\>** attribute in the **Key Vault certificate secret** field.
 
 Use the **Validate** function to verify that you've correctly defined the reference to the certificate, and that the certificate is valid.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

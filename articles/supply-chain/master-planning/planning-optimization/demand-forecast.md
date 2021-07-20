@@ -4,16 +4,14 @@
 title: Master planning with demand forecasts
 description: This topic explains how to include demand forecasts during master planning with Planning Optimization.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -252,7 +250,7 @@ Therefore, the following planned orders are created.
 A forecast reduction key is used in the **Transactions - reduction key** and **Percent- reduction key** methods for reducing forecast requirements. Follow these steps to create and set up a reduction key.
 
 1. Go to **Master planning \> Setup \> Coverage \> Reduction keys**.
-2. Select **New** or press **Ctrl+N** to create a reduction key.
+2. Select **New** to create a reduction key.
 3. In the **Reduction key** field, enter a unique identifier for the forecast reduction key. Then, in the **Name** field, enter a name. 
 4. Define the periods and the reduction key percentage in each period:
 
@@ -268,11 +266,78 @@ A forecast reduction key must be assigned to the coverage group of the item. Fol
 2. On the **Other** FastTab, in the **Reduction key** field, select the reduction key to assign to the coverage group. The reduction key then applies to all items that belong to the coverage group.
 3. To use a reduction key to calculate forecast reduction during master scheduling, you must define this setting in the setup of the forecast plan or the master plan. Go to one of the following locations:
 
-    - Master planning \> Setup \> Plans \> Forecast plans
-    - Master planning \> Setup \> Plans \> Master plans
+    - **Master planning \> Setup \> Plans \> Forecast plans**
+    - **Master planning \> Setup \> Plans \> Master plans**
 
 4. On the **Forecast plans** or **Master plans** page, on the **General** FastTab, in the **Method used to reduce forecast requirements** field, select either **Percent - reduction key** or **Transactions - reduction key**.
 
 ### Reduce a forecast by transactions
 
 When you select **Transactions - reduction key** or **Transactions - dynamic period** as the method for reducing forecast requirements, you can specify which transactions reduce the forecast. On the **Coverage groups** page, on the **Other** FastTab, in the **Reduce forecast by** field, select **All transactions** if all transactions should reduce the forecast or **Orders** if only sales orders should reduce the forecast.
+
+## Forecast models and submodels
+
+This section describes how to create forecast models and how to combine multiple forecast models by setting up submodels.
+
+A *forecast model* names and identifies a specific forecast. After you've created the forecast model, you can add forecast lines to it. To add forecast lines for multiple items, use the **Demand forecast lines** page. To add forecast lines for a specific selected item, use the **Released products** page.
+
+A forecast model can include forecasts from other forecast models. To achieve this result, you add other forecast models as *submodels* of a parent forecast model. You must create each relevant model before you can add it as a submodel of a parent forecast model.
+
+The resulting structure gives you a powerful way to control forecasts, because it lets you combine (aggregate) the input from multiple individual forecasts. Therefore, from a planning point of view, it's easy to combine forecasts for simulations. For example, you might set up a simulation that is based on the combination of a regular forecast with the forecast for a spring promotion.
+
+### Submodel levels
+
+There is no limit on the number of submodels that can be added to a parent forecast model. However, the structure can be only one level deep. In other words, a forecast model that is a submodel of another forecast model can't have its own submodels. When you add submodels to a forecast model, the system checks whether that forecast model is already a submodel of another forecast model.
+
+If master planning encounters a submodel that has its own submodels, you receive an error message.
+
+#### Submodel levels example
+
+Forecast model A has forecast model B as a submodel. Therefore, forecast model B can't have its own submodels. If you try to add a submodel to forecast model B, you receive the following error message: "Forecast model B is a submodel for model A."
+
+### Aggregating forecasts across forecast models
+
+Forecast lines that occur on the same day will be aggregated across their forecast model and its submodels.
+
+#### Aggregation example
+
+Forecast model A has forecast models B and C as submodels.
+
+- Forecast model A includes a demand forecast for 2 pieces (pcs) on June 15.
+- Forecast model B includes a demand forecast for 3 pcs on June 15.
+- Forecast model C includes a demand forecast for 4 pcs on June 15.
+
+The resulting demand forecast will be a single demand for 9 pcs (2 + 3 + 4) on June 15.
+
+> [!NOTE]
+> Each submodel uses its own parameters, not the parameters of the parent forecast model.
+
+### Create a forecast model
+
+To create a forecast model, follow these steps.
+
+1. Go to **Master planning \> Setup \> Demand forecasting \> Forecast models**.
+1. On the Action Pane, select **New**.
+1. Set the following fields for the new forecast model:
+
+    - **Model** – Enter a unique identifier for the model.
+    - **Name** – Enter a descriptive name for the model.
+    - **Stopped** – Usually, you should set this option to *No*. Set it to *Yes* only if you want to prevent editing of all forecast lines that are assigned to the model.
+
+    > [!NOTE]
+    > The **Include in cash flow forecasts** field and the fields on the **Project** FastTab aren't related to master planning. Therefore, you can ignore them in this context. You must consider them only when you work with forecasts for the **Project management and accounting** module.
+
+### Assign submodels to a forecast model
+
+To assign submodels to a forecast model, follow these steps.
+
+1. Go to **Inventory management \> Setup \> Forecast \> Forecast models**.
+1. In the list pane, select the forecast model to set up a submodel for.
+1. On the **Submodel** FastTab, select **Add** to add a row to the grid.
+1. In the new row, set the following fields:
+
+    - **Submodel** – Select the forecast model to add as a submodel. This forecast model must already exist, and it must not have any submodels of its own.
+    - **Name** – Enter a descriptive name for the submodel. For example, this name might indicate the submodel's relation to the parent forecast model.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

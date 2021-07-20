@@ -4,11 +4,9 @@
 title: Set up an online channel
 description: This topic describes how to create a new online channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -61,11 +59,11 @@ To create and configure a new online channel, follow these steps.
 
 The following image shows the creation of a new online channel.
 
-![New online channel](media/channel-setup-online-1.png)
+![New online channel.](media/channel-setup-online-1.png)
 
 The following image shows an example online channel.
 
-![Example online channel](media/channel-setup-online-2.png)
+![Example online channel.](media/channel-setup-online-2.png)
 
 ## Set up languages
 
@@ -73,7 +71,7 @@ If your e-Commerce site will support multiple languages, expand the **Languages*
 
 ## Set up payment account
 
-From within the **Payment account** section, you can add a third-party payment provider. For information on setting up an Adyen payment connector, see [Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md).
+From within the **Payment account** section, you can add a third-party payment provider. For information on setting up an Adyen payment connector, see [Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md).
 
 ## Additional channel setup
 
@@ -81,7 +79,7 @@ Additional tasks that are required for online channel setup include setting up p
 
 The following image shows **Modes of delivery**, **Payment methods**, and **Fulfillment group assignment** setup options on the **Set up** tab.
 
-![Additional online channel setup actions](media/channel-setup-online-3.png)
+![Additional online channel setup actions.](media/channel-setup-online-3.png)
 
 ### Set up payment methods
 
@@ -96,7 +94,7 @@ To set up payment methods, for each payment type supported on this channel follo
 
 The following image shows an example of a cash payment method.
 
-![Example payment methods](media/channel-setup-retail-5.png)
+![Example payment methods.](media/channel-setup-retail-5.png)
 
 ### Set up modes of delivery
 
@@ -110,7 +108,7 @@ To change or add a mode of delivery, follow these steps.
 
 The following image shows an example of a mode of delivery.
 
-![Set up modes of delivery](media/channel-setup-retail-7.png)
+![Set up modes of delivery.](media/channel-setup-retail-7.png)
 
 ### Set up a fulfillment group assignment
 
@@ -124,7 +122,7 @@ To set up a fulfillment group assignment, follow these steps.
 
 The following image shows an example of a fulfillment group assignment setup.
 
-![Set up fulfillment group assignment](media/channel-setup-retail-9.png)
+![Set up fulfillment group assignment.](media/channel-setup-retail-9.png)
 
 ## Additional resources
 
@@ -136,4 +134,7 @@ The following image shows an example of a fulfillment group assignment setup.
 
 [Set up a call center channel](channel-setup-callcenter.md)
 
-[Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md)
+[Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Conditional sales tax for protested promissory notes or bills of exchange
 description: This topic provides information about promissory notes or bills of exchange for legal entities in Spain.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -41,3 +39,6 @@ When a user posts a Redraw promissory note journal, transactions that were previ
 When a user posts a Protest bill of exchange journal, transactions that were previously posted are reversed if a bill of exchange was settled against a customer invoice. If the invoice included conditional tax when it was settled against a bill of exchange, a tax transaction for the conditional tax is posted. For legal entities in Spain, if the bill of exchange was settled against an invoice that includes conditional tax, the tax transaction is reversed when a Protest bill of exchange journal is posted. To view reverse transactions, go to **Voucher transactions** &gt; **Related vouchers**.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

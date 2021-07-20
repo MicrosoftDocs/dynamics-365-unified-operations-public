@@ -4,11 +4,9 @@
 title: Maintain employee injury and illness information
 description: It is recommended to complete the 'Setup injury and illness' task guide first, as some of the setup information is used here. 
 author: andreabichsel
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -16,7 +14,6 @@ ms.technology:
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -27,6 +24,8 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Maintain employee injury and illness information
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -96,3 +95,6 @@ This task recording covers the basic steps to creating an injury or illness case
 36. Click Save.
     * The case status can be updated at any time.  Set the case to in process, if the processing of the injury or illness is in process.  Once you close the incident you can only add or remove costs, treatments or filings related to the incident.  To modify other information, reopen the case.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

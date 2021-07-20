@@ -1,18 +1,12 @@
 ---
 
-# required metadata
-
 title: Price and discount extensibility
 description: This topic describes how to extend pricing functionality.
 author: smithanataraj
-manager: AnnBe
 ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -44,7 +38,7 @@ The mapping of fields on the **Customer**, **Vendor**, and **InventTable** table
 
 The following diagram highlights the implementation. Note that the methods show only one of the sub-classes. The implementation needs to be on each sub-class. 
 
-![PriceGroupTypeTradeAgreementMapping](media/PricingFall20171.png)
+![PriceGroupTypeTradeAgreementMapping.](media/PricingFall20171.png)
 
 ## PriceDisc class
 
@@ -54,17 +48,17 @@ The ability to wrap and modify the instantiation of the **PriceDiscParameters** 
 
 In the following diagram, you can see how the **PriceDisc** class can be extended to modify existing searches or to add new search methods that correspond to the extended **PriceType** enum values.
 
-![PriceDiscClass](media/PricingFall20172.png)
+![PriceDiscClass.](media/PricingFall20172.png)
 
 ## Add a new price search
 
 In this scenario, you have extended the **PriceGroupType** enum with a new value **PriceGroupTypeISVExtension**, and two corresponding **PriceType** enum values - **ISVPurchPriceType** and **ISVSalesPriceType**. 
 
-![WalkThrough1](media/PricingFall20173.png)
+![WalkThrough1.](media/PricingFall20173.png)
 
 The following diagram illustrates how a new price search can be added for the **PriceType** and **PriceGroupType** values.
 
-![WalkThrough2](media/PricingFall20174.png)
+![WalkThrough2.](media/PricingFall20174.png)
 
 This example shows the following:
 
@@ -73,3 +67,6 @@ This example shows the following:
 - Augmenting the **PriceDiscParameters** class to add any generic parameters for the price discount search.
 - Augmenting the **PriceDisc** class to create the new price discount search methods for the new price types.
 - The **PriceDiscParameters** is accessible from all classes related to price and discount search and these could be augmented, based on the requirements. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Production performance Power BI content
 description: This topic describes what is included in the Production performance Power BI content.
 author: AndersGirke
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -132,3 +130,6 @@ The following table shows the key dimensions that are used as filters to slice t
 | Entities                  | Id and Name                                                   |
 | Resources                 | Resource ID, Resource name, Resource type, and Resource group |
 | Products                  | Product number, Product name, Item ID, and Item group         |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,11 +3,9 @@
 title: Row type
 description: Row controls are what make up a list. A list contains any number of row controls.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 # ms.search.form:
@@ -233,3 +231,6 @@ select(): any
 
 
 #### Returns any
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

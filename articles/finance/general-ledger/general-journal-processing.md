@@ -4,11 +4,9 @@
 title: General journal processing
 description: This topic describes capabilities in Microsoft Dynamics 365 Finance that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.  
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,14 +47,14 @@ On the **Journal names** page, you can set up the following elements:
 
 A journal name can be used only for adjustments. In this case, you can specify that only the **Ledger** account type is valid across all companies. 
 
-[![Journal control account types](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Journal control account types.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 A journal name can be used only for a specific segment or for a range for main accounts. 
 
-[![Journal control segment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Journal control segment.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 The **Automatic reversal** option is available in general journals. For example, you have an accrual adjustment where the actual document hasn't yet been processed, as shown in the following illustration.
-[![General journal reversing](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![General journal reversing.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 The Microsoft Excel add-in for journal entry provides an additional level of automation and makes data entry easier. The **Open lines in Excel** action is available on the **General journal** and **Journal voucher** pages. 
 
@@ -109,3 +107,6 @@ The ability to recall a journal in a workflow that has a status of "unrecoverabl
 
 ## Delete Journal Lines
 The ability to delete all journal lines quickly is enabled in a journal under **Functions** > **Delete Journal Lines**. To enable this feature, on the **Feature management**, select **Delete journal performance optimizations**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

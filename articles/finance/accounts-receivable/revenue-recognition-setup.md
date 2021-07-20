@@ -4,11 +4,9 @@
 title: Revenue recognition setup 
 description: This topic describes the setup options for Revenue recognition, and their implications.
 author: kweekley
-manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -79,7 +77,7 @@ Revenue recognition settings are configured on the **Revenue recognition** tab o
     - Set this option to **No** to limit posting of the correcting transaction to General ledger. When this option is set to **No**, no additional documents are created in Accounts receivable for the internal accounting correction. When the invoice is paid, the settlement process uses the old accounting entry to post any cash discounts, or any realized gains or losses.
     - Set this option to **Yes** to automatically create a reversing document and new invoice for the correcting transaction in Accounts receivable. Because this correction is an internal accounting correction, the new documents aren't sent or communicated to the customer. The reversing document is settled to the original invoice, and the new corrected invoice is paid by the customer. Note that all three documents are shown on reports, such as the customer statement.
 
-[![Setup information](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
+[![Setup information.](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
 
 ## Revenue schedules
 
@@ -89,7 +87,7 @@ If you recognize revenue by milestone, we recommend that you create a revenue re
 
 Revenue schedules are created on the **Revenue schedules** page (**Revenue recognition \> Setup \> Revenue schedules**).
 
-[![Revenue schedules](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
+[![Revenue schedules.](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
 
 Enter descriptive values in the **Revenue schedule** and **Description** fields. The following additional settings are used to create the revenue schedule when the invoice is posted.
 
@@ -111,7 +109,7 @@ Enter descriptive values in the **Revenue schedule** and **Description** fields.
 
 Select the **Revenue schedule details** button to view the general periods and the percentages that are recognized in each period. By default, the **Recognize percentage** value is equally divided across the number of periods. If the recognition basis is set to either **Monthly** or **Occurrences**, the recognition percentage can be changed. As you change the recognition percentage, a warning message notifies you that the total doesn't equal 100 percent. If you receive the message, you can continue to edit lines. However, the total percentage must equal 100 before you close the page.
 
-[![Revenue schedule details](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+[![Revenue schedule details.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
 
 ## Inventory setup
 
@@ -146,7 +144,7 @@ Item groups and released products can be set up by using either the median price
 
 After you've finished configuring the settings for the released product, you must manually define the revenue price by entering the fair value price or the median price (if you're using median price method) on the **Revenue prices** page (go to **Revenue recognition \> Setup \> Inventory setup \> Released products**, and then, on the Action Pane, on the **Sell** tab, in the **Revenue recognition** group, select **Revenue prices**).
 
-[![Revenue prices](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
+[![Revenue prices.](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
 The revenue price that is manually defined on this page is used to determine the revenue price allocation on each sales order, based on the criteria that are defined. Each criterion is matched to the sales order line to determine the revenue price that should be used in the allocation process.
 
@@ -188,7 +186,7 @@ When you set up a bundle item, you must set two fields on the **Released product
 
 The components must be then assigned to the bundle/BOM parent item on the **BOM versions** page (go to **Revenue recognition \> Setup \> Inventory and product setup \> Released products**, and then, on the Action Pane, on the **Engineer** tab, in the **BOM** group, select **BOM versions**). For more information, see the setup documentation for BOMs.
 
-[![Released products, BOM schedules](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Released products, BOM schedules.](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 If the bundle parent item and bundle components are set to allocate, the bundle revenue price will be distributed to the components, based on their revenue contribution percentages.
 
@@ -198,3 +196,6 @@ Revenue recognition can also be used for sales orders that are created through a
 
 - **Deferred invoice revenue** (under **Revenue accounts**) – Enter the main account for the revenue price that posts to deferred revenue (instead of revenue). The revenue price is deferred if the sales order line has a revenue schedule.
 - **Deferred cost** (under **Cost accounts**) – Enter the main account for the cost of goods sold amount that posts to deferred cost of goods sold if the revenue is also deferred.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

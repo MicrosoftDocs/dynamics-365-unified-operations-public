@@ -4,11 +4,9 @@
 title: Client images in POS
 description: This topic is for people who implement functionality related to POS client image management in a retail environment. It provides implementation tips and guidance to consider when planning an implementation.
 author: josaw1
-manager: annbe
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -50,3 +48,6 @@ This guidance applies to both Cloud POS and Modern POS, and provides some genera
 
 ## Implementation example 
 To create a welcome screen image that covers two-thirds of the canvas on a common 18.5 inch POS display with a 1366 x 768 pixel resolution and a screen layout similar to Contoso demo data, choose an image with resolution that is not much higher than the length and width of the screen. In this example, 911 x 512 pixel resolution is sufficient. Selecting a relatively high resolution for length and width but keeping a low dpi setting will still result in reasonably small file sizes.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -3,11 +3,9 @@
 title: Statistics on payment practices report
 description: This topic provides information about the Statistics on payment practices report.
 author: anasyash
-manager: AnnBe
 ms.date: 01/29/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,7 +47,7 @@ The **Statistics on payment practices (UK)** report is exported to Microsoft Exc
 
 Before you use this report, download the latest version of the **Statistics on payment practices (UK)** Electronic reporting (ER) configuration, the **Statistics on invoices** ER model, and the **Statistics on invoices model mapping** ER model mapping.
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Post documents and define the date when the invoice is received
 
@@ -77,11 +75,11 @@ You can specify the date when the purchase invoice was received and then use thi
 4. Select **OK** to generate the report.
 5. Review the **Payments made** tab.
 
-    ![Payments made tab](media/Payments_made.png)
+    ![Payments made tab.](media/Payments_made.png)
 
 6. Review the **Payments due** tab.
 
-    ![Payments due tab](media/Payments_due.png)
+    ![Payments due tab.](media/Payments_due.png)
     
     > [NOTE]
     > This tab contains all invoices that are due, paid before the due date, and overdue. Only overdue invoices are visible by default. Excel rows with invoices paid before the due date are hidden. To view all invoices, unhide the Excel rows.
@@ -89,3 +87,6 @@ You can specify the date when the purchase invoice was received and then use thi
 ## Publish the reporting about payment practices
 
 After you generate the **Statistics on payment practices (UK)** report in Excel, you can use the report data to prepare the final report about payment practices for publication.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

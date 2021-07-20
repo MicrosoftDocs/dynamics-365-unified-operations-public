@@ -4,11 +4,9 @@
 title: Settle a partial vendor payment and the final payment in full before the discount date
 description: This article walks you through a scenario where partial payments are made for a vendor invoice, and a cash discount is taken.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -146,3 +144,6 @@ April posts the payment journal and reviews the vendor transactions on the **Ven
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

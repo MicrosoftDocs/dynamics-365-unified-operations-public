@@ -8,7 +8,6 @@ manager: annbe
 ms.date: 07/14/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -220,6 +219,7 @@ A fiscal archive is an XML file that can be exported from a period grand total j
 
 Commerce also includes a tool that can be used to verify the integrity of a fiscal archive and detect violations of the signature of the archive and of the chains of signed records in the archive. This tool is developed in form of a Powershell script that is available via the Commerce SDK. See [Fiscal archive](./emea-fra-fiscal-archive.md) for a detailed structure of the fiscal archive format and a guidance on how to use the fiscal archive integrity verification tool.
 
+
 ## Setting up Commerce for France
 
 This section describes the Commerce settings that are specific to and recommended for France. For more information, see [Commerce home page](../index.md).
@@ -241,7 +241,9 @@ You must make the following changes on the **Legal entities** page. These settin
 
 ### Set up VAT per French requirements
 
+
 You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+
 
 You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in France.
 
@@ -376,7 +378,7 @@ The following steps must be completed before you can use a digital certificate s
 - The certificate must be uploaded to the Key Vault storage.
 - The Application Object Server (AOS) application must be authorized to read secrets from the Key Vault storage.
 
-For more information about how to work with Key Vault, see [Get started with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-get-started).
+For more information about how to work with Key Vault, see [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started).
 
 Then, on the **Key Vault parameters** page, you must specify the parameters for accessing the Key Vault storage:
 
@@ -409,7 +411,7 @@ Finally, on the **Commerce parameters** page, you must specify the parameters fo
 
 ### Configure the archive export format
 
-You can download the ER configuration for the archive from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following versions, or later versions, of the configurations:
+You can download the ER configuration for the archive from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following versions, or later versions, of the configurations:
 
 - **Retail channel data.version.2** data model
 - **Archiving DMM.version.2.3** data model mapping
@@ -432,3 +434,6 @@ There is an option to separately configure the scheduler. Click **Commerce sched
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

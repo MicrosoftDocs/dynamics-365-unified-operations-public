@@ -4,11 +4,9 @@
 title: Block transactions by using triggers
 description: This topic shows how you can use a trigger to block an invoice or credit transaction.
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -142,3 +140,6 @@ This topic shows how you can block an invoice or credit transaction.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
