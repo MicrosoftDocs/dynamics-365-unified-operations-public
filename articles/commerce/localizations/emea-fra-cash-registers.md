@@ -193,8 +193,8 @@ The information that is included on X and Z reports is based on French requireme
 
 - **Total sales** for the shift. This information includes amounts only for cash sales transactions. Prepayments and operations for issuing a gift card are excluded.
 - **Total returns** for the shift.
-- **Cumulative grand total**. This amount is calculated as the cumulative grand total amount of the previous shift plus the total sales amount of this shift minus the absolute value of the total returns amount of this shift.
-- **Cumulative perpetual grand total**. This amount is calculated as the cumulative perpetual grand total amount of the previous shift plus the total sales amount of this shift plus the absolute value of the total returns amount of this shift.
+- **Cumulative perpetual grand total**. This amount is calculated as the cumulative grand total amount of the previous shift plus the total sales amount of this shift minus the absolute value of the total returns amount of this shift.
+- **Cumulative perpetual grand total (absolute value)**. This amount is calculated as the cumulative perpetual grand total amount of the previous shift plus the total sales amount of this shift plus the absolute value of the total returns amount of this shift.
 - Value-added tax (VAT) amounts per tax rate.
 
 The totals are also stored in the closed shift record and transferred to Headquarters.
