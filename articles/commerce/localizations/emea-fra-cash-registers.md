@@ -107,11 +107,11 @@ Only transactions for cash sales are signed. Here are some examples of transacti
 
 The data that is signed for a sales transaction is a text string that consists of the following data fields:
 
-1. The total amounts of sales lines including tax per tax rate.
+1. The total amount of sales including tax per tax rate.
 2. The total amount of sales including tax.
 3. The date and time of the transaction, in the format YYYYMMDDHHMMSS.
 4. The register number.
-5. The sequential number of the signed sales transaction.
+5. The sequential number of the signed sales transaction for this register.
 6. The type of sales transaction.
 7. A value (Y/N) that indicates whether the transaction is the first signed sales transaction for the register.
 8. The previous signature for the same register. A blank value is used for the first signed sales transaction.
@@ -123,13 +123,13 @@ You can view the transaction signature, together with the transaction data that 
 When a copy of a receipt is printed, the event is registered in the POS audit event log. Only copies of receipts for signed sales transactions are signed. The data that is signed for a receipt copy event is a text string that consists of the following data fields:
 
 1. The register number that the copy of receipt is printed from.
-2. The sequential number of the signed receipt copy event.
+2. The sequential number of the signed receipt copy event for this register.
 3. The type of transaction for the original sales transaction.
 4. The number of the receipt copy for this sales transaction.
 5. The staff ID of the operator who prints the receipt copy.
 6. The date and time of the receipt copy event, in the format YYYYMMDDHHMMSS.
 7. The register number of the original sales transaction.
-8. The sequential number of the original sales transaction.
+8. The sequential number of the original sales transaction for that register.
 9. A value (Y/N) that indicates whether the transaction is the first signed receipt copy event for the register.
 10. The previous signature for the same register. A blank value is used for the first signed receipt copy event.
 
@@ -144,7 +144,7 @@ When a shift is closed, the event is registered in the POS audit event log. The 
 3. The perpetual (cumulative) grand total of absolute values of sales and returns for shifts of the same register including tax. 
 4. The date and time of the shift closing event, in the format YYYYMMDDHHMMSS.
 5. The date and time of the shift.
-6. The sequential number of the shift closing event.
+6. The sequential number of the shift closing event for this register.
 7. A value (Y/N) that indicates whether the transaction is the first signed shift closing event for the register.
 8. The previous signature for the same register. A blank value is used for the first signed shift closing event.
 
@@ -154,7 +154,7 @@ You can view the signature of a closed shift, together with the shift data that 
 
 The data that is signed for an event other than a receipt copy or shift closing event is a text string that consists of the following data fields:
 
-1. The sequential number of the signed event.
+1. The sequential number of the signed event for this register.
 2. A predefined event code.
 3. A description of the event.
 4. The date and time of the event.
@@ -212,7 +212,7 @@ After the journal is calculated, it can be closed. A closed journal can't be mod
 
 A closed journal is digitally signed. You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Headquarters.
 
-A period grand total journal can also be marked as **Annual** when being created. An annual journal summarizes period grand total journals for the fiscal periods of a fiscal year. It is only possible to create an annual journal for a fiscal year if a journal for the last fiscal period of the fiscal year has been created, calculated and closed. It is not, however, required that journals for all fiscal periods of the fiscal year exist. For example, if a new store is opened in the middle of the year, the first journal will correspond to the fiscal period that the store is opened in. In this case, the first annual journal will summarize jornals for fiscal periods from the fiscal period that the store is opened in to the last fiscal period of the fiscal year.
+A period grand total journal can also be marked as **Annual** when being created. An annual journal summarizes period grand total journals for the fiscal periods of a fiscal year. It is only possible to create an annual journal for a fiscal year if a journal for the last fiscal period of the fiscal year has been created, calculated, and closed. It is not, however, required that journals for all fiscal periods of the fiscal year exist. For example, if a new store is opened in the middle of the year, the first journal will correspond to the fiscal period that the store is opened in. In this case, the first annual journal will summarize journals for fiscal periods from the fiscal period that the store is opened in to the last fiscal period of the fiscal year.
 
 #### Fiscal archive
 
@@ -330,9 +330,9 @@ In the Receipt format designer, add the following custom fields to the appropria
     > If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, as well as specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
 
     - **Line count** – This field prints the number of printed item lines on a receipt.
-    - **Text** – Add a text field, and specify the VAT identifier of the organization.
-    - **Text** – Add a text field, and specify the NAF code of the organization.
-    - **Text** – Add a text field, and specify the SIRET number of the organization.
+    - **Text** – Add a text field and specify the VAT identifier of the organization.
+    - **Text** – Add a text field and specify the NAF code of the organization.
+    - **Text** – Add a text field and specify the SIRET number of the organization.
     - **Store name** – This standard field prints the name of the store.
     - **Store address** – This standard field prints the address of the store.
 
