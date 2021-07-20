@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment guidelines for cash registers for France
-description: This topic is a deployment guide for the Commerce localization for France.
+description: This topic is a deployment guide for the cash register functionality for France.
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 07/02/2021
