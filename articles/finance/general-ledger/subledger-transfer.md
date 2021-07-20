@@ -43,9 +43,9 @@ The following options are available for transferring subledger batches.
  
 In version 10.0.8, improvements were made to enhance the performance of the Asynchronous option. This feature is enabled under the feature name **Subledger transfer to General Ledger performance optimization**. 
  
-The functionality for transferring subledger batches asynchronously improves the transfer of data from the subledger to the general ledger. It process3w transactions more efficiently by grouping sets of smaller transactions together and transferring them in groups. Grouping transactions uses the batch server's resources more efficiently.
+The functionality for transferring subledger batches asynchronously improves the transfer of data from the subledger to the general ledger. It processes transactions more efficiently by grouping sets of smaller transactions together and transferring them in groups. Grouping transactions uses the batch server's resources more efficiently.
 
-Transferring subledger batches asychronously requires that the batch server be set up, be online, and be functioning for the Asynchronous transfer option to work.
+Transferring subledger batches asynchronously requires that the batch server be set up, be online, and be functioning for the Asynchronous transfer option to work.
 
 The efficiency change at the batch level uses a single recurring batch job for all legal entities in the system. A new batch job is then created at runtime to process the required records that haven't yet transferred. More settings can be controlled from the **Process automation** page in system administration. From that page, you can modify the background process, change the frequency, and define a sleep period.
 
