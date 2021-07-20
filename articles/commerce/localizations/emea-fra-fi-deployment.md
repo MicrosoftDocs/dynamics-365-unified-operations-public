@@ -30,66 +30,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md).
-
-## Setting up Commerce for France
-
-See [Setting up Commerce for France](./emea-fra-cash-registers.md#setting-up-commerce-for-france) for basic settings of Commerce for France.
-
-Complete the fiscal integration setup steps that are described in [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md):
-
-- [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings for the fiscal registration process that are [specific to France](#set-up-the-registration-process).
-- [Set error handling settings](./setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-- [Enable manual execution of postponed fiscal registration](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### Set up the registration process
-
-To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
-
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors** and load the connector configuration. The configuration file can be [downloaded from GitHub](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.29/src/FiscalIntegration/SequentialSignatureFrance/Configurations/Connector/ConnectorMicrosoftSequentialSignatureFRA.xml).
-3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers** and load the document provider configuration. The configuration file can be [downloaded from GitHub](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.29/src/FiscalIntegration/SequentialSignatureFrance/Configurations/DocumentProvider/DocumentProviderMicrosoftSequentialSignatureFRA.xml).
-4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
-5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile and select the connector that you loaded earlier. Set the connector type as **Internal**. Update the other connection settings as required.
-6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
-7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
-8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
-9.  Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
-
-### Configure the digital signature parameters
-
-You need to configure certificates to be used for digital signing of sales transactions and audit events. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature  enables configuring certificates that are stored in a Microsoft Azure Key Vault storage and supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets) feature.
-
-The following steps must be completed before you can use a digital certificate stored in an Azure Key Vault storage:
-
-- The Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Commerce Scale Unit.
-- The certificate must be uploaded to the Key Vault storage.
-- The Application Object Server (AOS) application must be authorized to read secrets from the Key Vault storage.
-
-For more information about how to work with Key Vault, see [Get started with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-get-started).
-
-Then, on the **Key Vault parameters** page, you must specify the parameters for accessing the Key Vault storage:
-
-- **Name** and **Description** – The name and description of the Key Vault storage.
-- **Key Vault URL** – The URL of the Key Vault storage.
-- **Key Vault client** – An interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage for authentication purposes. This client should have access to read secrets from the storage.
-- **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage.
-- **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
-
-Finally, you need to configure a certificate profile for your certificates stored in Key Vault or local certificate storage:
-
-1. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Certificate profiles**. 
-2. Create a new certificate profile.
-3. On the **Legal entities** FastTab, add required legal entities.
-4. Click **Settings**.
-5. Add a new certificate. Certificates stored in Key Vault and local certificates are supported. You can add as many certificates as you need and set priorities of the certificates. If a certificate with a higher priority is not available, the next certificate will be used according to priority.
-   - For a certificate stored in Key Vault, you must select the certificate from the dropdown list.
-   - For a certificate stored locally, you must specify the thumbprint of the certificate.
-6. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
-7. On the **Settings** FastTab, you must specify the parameters for digital signatures:
-   - Certificate profile – Select the certificate profile that you configured on the previous step.
-   - Hash algorithm – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as SHA256.
-   - Activate health check – For more information about the Health Check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. See [Cash register functionality for France](./emea-fra-cash-registers.md#overview) for more information about the localization for France, and [Setting up Commerce for France](./emea-fra-cash-registers.md#setting-up-commerce-for-france) for settings of Commerce for France.
 
 ## Development environment
 
