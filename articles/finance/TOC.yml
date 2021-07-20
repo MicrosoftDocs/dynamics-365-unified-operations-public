@@ -3206,6 +3206,8 @@
             href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
           - name: Bad debt reserves in accounts receivable
             href: localizations/rus-bad-debts.md
+          - name: Calculation of tax asset and tax liability registers
+            href: localizations/rus-calculation-of-tax-asset-and-tax-liability-registers.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
