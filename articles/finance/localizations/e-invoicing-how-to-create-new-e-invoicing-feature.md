@@ -115,7 +115,10 @@ Continue the process at the **Electronic invoicing features** page, with creatio
 
 ## Deploy the Electronic invoicing feature to the Service environment
 
-1. To deploy your new Electronic invoicing feature to the service environment, see [Deploy the Electronic invoicing feature to Service environment](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#deploy-the-electronic-invoicing-feature-to-service-environment).
+See [Deploy the Electronic invoicing feature to Service environment](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#deploy-the-electronic-invoicing-feature-to-service-environment).
 
+## Deploy the Electronic invoicing feature to the Connected application
 
+1. See [Configure the application setup](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#configure-the-application-setup).
+2. See [Deploy the Electronic invoicing feature to Connected application](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#deploy-the-Electronic-invoicing-feature-to-connected-application).
 
