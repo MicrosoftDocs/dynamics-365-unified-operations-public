@@ -121,7 +121,7 @@ Before you create a journal voucher for tax differences in the system, you must 
 ### Set up a sales tax code for profit tax
 
 1.  Go to **Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax codes**.
-2.  Create and set up a sales tax code for profit tax. For more information, see [Set up sales tax codes](set-up-sales-tax-codes.md).
+2.  Create and set up a sales tax code for profit tax. For more information, see [Set up sales tax codes](articles/finance/general-ledger/tasks/set-up-sales-tax-codes.md).
 3.  On the Action Pane, select **Sales tax code &gt; Values**.
 4.  In the **Value** field, enter the value of the profit tax rate that will be used to calculate the tax difference.
 5.  On the Action Pane, select **Save**.
