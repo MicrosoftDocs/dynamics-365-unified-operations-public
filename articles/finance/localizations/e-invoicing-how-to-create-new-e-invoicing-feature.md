@@ -73,9 +73,9 @@ Continue the process at the **Electronic invoicing features** page, with creatio
 
 2.  Select **Add**, and then select **New feature**.
 
-3.  In the **Name** field, enter the name of the e-invoicing feature.
+3.  In the **Name** field, enter the name of the Electronic invoicing feature.
 
-4.  In the **Description** field, enter the description of the e-invoicing feature.
+4.  In the **Description** field, enter the description of the Electronic invoicing feature.
 
 5.  Select **Create feature**.
 
@@ -99,14 +99,18 @@ Continue the process at the **Electronic invoicing features** page, with creatio
 
 5.  Select **Create**.
 
-6.  On the **Processing pipeline** tab, select **New** to add new pipeline action.
+6.  Select the Setup you are working on.
 
-7.  On the **Applicability rules** tab, select **New** to add new applicability rules clauses.
+7.  Select **Edit**.
 
-8.  On the **Variables** tab, select **New** to add new variables.
+7.  On the **Processing pipeline** tab, select **New** to add new pipeline action.
 
-9.  When finished, select **Validate** to check the consistency of the configuration.
+8.  On the **Applicability rules** tab, select **New** to add new applicability rules clauses.
 
-10. Close the page.
+9.  On the **Variables** tab, select **New** to add new variables.
 
-11. To deploy your new Electronic invoicing feature to the service environment, see [Deploy the Electronic invoicing feature to Service environment](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#deploy-the-electronic-invoicing-feature-to-service-environment).
+10.  When finished, select **Validate** to check the consistency of the configuration.
+
+11. Close the page.
+
+12. To deploy your new Electronic invoicing feature to the service environment, see [Deploy the Electronic invoicing feature to Service environment](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#deploy-the-electronic-invoicing-feature-to-service-environment).
