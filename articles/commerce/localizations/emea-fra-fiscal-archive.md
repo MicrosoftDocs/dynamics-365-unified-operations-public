@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Period grand total journal and fiscal archive for France
-description: This topic describes the Period grand total journal and Fiscal archive that are avaialable to Commerce customers in France
+title: Fiscal archive for France
+description: This topic describes the Fiscal archive and the Fiscal archive integrity verification tool that are avaialable to Commerce customers in France
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 07/17/2021
@@ -26,6 +26,8 @@ ms.search.validFrom: 2021-2-19
 ms.dyn365.ops.version: 10.0.17
 
 ---
-# Period grand total journal and fiscal archive for France
+# Fiscal archive for France
 
 [!include [banner](../includes/banner.md)]
+
+The fiscal archive format is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). 
