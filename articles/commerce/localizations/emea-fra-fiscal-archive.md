@@ -104,4 +104,58 @@ The Shift node of a fiscal archive contains the following elements:
 | HashAlgorithm                    | The hash algorithm that was used for hashing the date before signing |
 | CertificateThumbprint            | The thumbprint of the certificate that was used for signing |
 
+### Receipt
+
+The Receipt node of a fiscal archive contains the following elements:
+
+| Element/Node                     | Comment |
+|----------------------------------|---------|
+| AppVersion                       | The identification of the version of the cash register software that was used to issue the receipt |
+| Date                             | The date and time of the receipt in the format YYYYMMDDHHMMSS |
+| NumberOfCopies                   | The number of times a copy was printed for the receipt |
+| OperatorCode                     | The code of the operator that issued the receipt |
+| OperatorName                     | The name of the operator that issued the receipt |
+| RegisterNumber                   | The identification of the register that the receipt was issued from |
+| CustomerAccount                  | The identification of the customer that the receipt was issued for |
+| LineCount                        | The number of sales lines in the receipt |
+| Total                            | The Total node of the receipt |
+| ExclTax                          | The total amount of the receipt excluding tax |
+| InclTax                          | The total amount of the receipt including tax |
+| PaymentLines                     | A collection of payment lines of the receipt |
+| PaymentLine                      | A node for a payment |
+| Type                             | The identification of the payment type as configured in the cash register |
+| Name                             | The name of the payment type as configured in the cash register |
+| Amount                           | The amount of payment in the store's currency |
+| AmountCur                        | The amount of payment in the payment currency |
+| Currency                         | The identification of the payment currency |
+| CurrencyRate                     | The currency rate multiplied by 100 and rounded to a whole number |
+| ReceiptLines                     | A collection of receipt lines |
+| ReceiptLine                      | A node for a receipt line |
+| Product                          | The identification of the product on the receipt line |
+| Name                             | The name of the product on the receipt line |
+| TaxRates                         | A collection of tax lines linked to the receipt line |
+| LineTaxRate                      | A node for a tax line |
+| TaxRate                          | The tax rate of the tax line |
+| TaxAmount                        | The amount of tax of the tax line |
+| Quantity                         | The quatity of the product sold |
+| UnitId                           | The identification of the unit of the product sold |
+| UnitPriceExclTax                 | The unit price of the product excluding taxes |
+| UnitPriceInclTax                 | The unit price of the product including taxes |
+| TotalExclTax                     | The total amount of the receipt line excluding tax |
+| TotalInclTax                     | The total amount of the receipt line including tax |
+| Discounts                        | A collection of discounts applied to the receipt line |
+| FooterLines                      | A collection of receipt total amounts per tax rate |
+| FooterLine                       | A node for a receipt total amount for a tax rate |
+| TotalExclTax                     | The total amount of the receipt excluding taxes for the tax rate |
+| TotalInclTax                     | The total amount of the receipt including taxes for the tax rate |
+| TaxRate                          | The tax rate |
+| TaxAmount                        | The  total amount of tax for the tax rate |
+| SequentialNumber                 | The sequential number of the signed sales transaction for the register |
+| DataToSign                       | The string that was [built from the elements of the sales transaction record](./emea-fra-cash-registers.md#digital-signing-of-sales-transactions), and that was used for signing |
+| DataToSignFormatVersion          | The internal version of the format of data used for signing |
+| Signature                        | The digital signature of the sales transaction record |
+| HashAlgorithm                    | The hash algorithm that was used for hashing the date before signing |
+| CertificateThumbprint            | The thumbprint of the certificate that was used for signing |
+
+
 ## Fiscal archive integrity verification tool
