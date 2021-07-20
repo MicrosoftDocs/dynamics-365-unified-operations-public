@@ -2,9 +2,9 @@
 # required metadata
 
 title: Prepare for JPK-V7M reporting
-description: This topic walks you through the process of setting up VAT declaration with registers (also called JPK-V7M, VDEK) in Poland. 
+description: This topic provides information about how to set up VAT declaration with registers (also called JPK-V7M, VDEK) in Poland. 
 author: liza-golub
-ms.date: 07/16/2021
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,11 +26,9 @@ ms.author: elgolu
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up a value-added tax (VAT) declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
+The solution to support JPK-V7M reporting is based on the [Electronic messaging](../general-ledger/electronic-messaging.md) functionality. This functionality provides a flexible approach to set up and support reporting processes.
 
-The solution to support JPK-V7M reporting is based on the [Electronic messaging](../general-ledger/electronic-messaging.md) functionality. This functionality provides a flexible approach for setting up and supporting reporting processes.
-
-The following tasks will prepare Dynamics 365 Finance to report a JPK-V7M:
+The following tasks prepare Dynamics 365 Finance to report a JPK-V7M:
 
 - Import and set up ER configurations.
 - Set up application-specific parameters.
@@ -51,7 +49,7 @@ To prepare Finance for JPK-V7M reporting, you must import ER configurations.
 | JPK-V7M XML format (PL)           | Format (exporting) | The XML format that provides the file that the Polish Ministry of Finance requires to be periodically reported. |
 | JPK-V7M Excel format (PL)         | Format (exporting) | The Excel format for preview information that will be reported in XML format.                                   |
 
-Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the Issue search tool in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) to find the KB article by number.
+Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes introduced in the configuration version. Use the Issue search tool in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) to find the KB article by number.
 
 For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -62,11 +60,7 @@ For more information about how to download ER configurations from the Microsoft 
 
 ## Set up application-specific parameters
 
-Depending on the tax transaction data, the values of some elements (markers) in the JPK-V7M report can be defined for reporting purposes. 
-There must be enough transactional data to define values for these elements.
-Therefore, set up enough sales tax codes, sales tax groups, and item sales tax groups to differentiate tax transactions for all the parameters (elements) 
-that are introduced in the JPK-V7M report. 
-The JPK-V7M format includes application-specific parameters (fields) that can be used to define values for these elements in the report.
+Depending on the tax transaction data, the values of some elements (markers) in the JPK-V7M report can be defined for reporting purposes.  There must be enough transactional data to define values for these elements. Therefore, set up enough sales tax codes, sales tax groups, and item sales tax groups to differentiate tax transactions for all the parameters (elements) that are introduced in the JPK-V7M report. The JPK-V7M format includes application-specific parameters (fields) that can be used to define values for these elements in the report.
 
 The format includes the following lookup fields for setup.
 
@@ -120,7 +114,7 @@ The following table shows the lookup results for **ImportTransaction**.
 
 | Name | Label (En) | Label (Pl) | Description (En)                                                                                                                         | Description (Pl)                                                                                                            |
 |----------|----------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Import   | Import         | Import         | A designation that is related to input tax on imports of goods, including goods that are taxed in accordance with article 33a of the VAT Act | Oznaczenie dotyczące podatku naliczonego z tytułu importu towarów, w tym importu towarów rozliczanego zgodnie z art. 33a ustawy |
+| Import   | Import         | Import         | A designation that's related to input tax on the import of goods, including goods that are taxed in accordance with article 33a of the VAT Act | Oznaczenie dotyczące podatku naliczonego z tytułu importu towarów, w tym importu towarów rozliczanego zgodnie z art. 33a ustawy |
 | Inne     | Other          |                |                                                                                                                                              |                                                                                                                                 |
 
 > [!NOTE]
@@ -132,7 +126,7 @@ The following table shows the lookup results for **ImportTransaction**.
 |----------------------------|---------------------|-------------------------------|-------------------------------------------------|-------------------------------|
 | ProceduralMarkingsSelector | Procedural markings | Oznaczenia dotyczące procedur | Designations that are related to the procedures | Oznaczenia dotyczące procedur |
 
-For this lookup field, the following master data sources are available for the setup of conditions:
+For this lookup field, the following master data sources are available to set up conditions:
 
 - Sales tax codes
 - Sales tax group
@@ -141,9 +135,9 @@ For this lookup field, the following master data sources are available for the s
 - Supplier account ID
 - Supplier group
 
-This lookup field defines conditions that are based on current company's master data sources. These conditions will produce a mark of **1** for the corresponding element from the list of designations that are related to the procedures under the **\<SprzedazWiersz\>** tag. Several designations can be marked for the same output VAT record. Therefore, if a company must report different designations, separate conditions must be defined.
+This lookup field defines conditions that are based on current company's master data sources. These conditions produce a mark of **1** for the corresponding element from the list of designations that are related to the procedures under the **\<SprzedazWiersz\>** tag. Several designations can be marked for the same output VAT record. Therefore, if a company must report different designations, separate conditions must be defined.
 
-**Procedural markings** are not required for documents of **RO** (Internal summary document) type (**\<TypDokumentu\>** tag under the **\<SprzedazWiersz\>** tag).
+**Procedural markings** aren't required for documents of **RO** (Internal summary document) type (**\<TypDokumentu\>** tag under the **\<SprzedazWiersz\>** tag).
 
 The following table shows the lookup results (designations) for **ProceduralMarkingsSelector**.
 
