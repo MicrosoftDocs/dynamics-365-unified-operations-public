@@ -38,7 +38,7 @@ The history of jobs for Planning Optimization master planning runs keeps only up
 
 In addition to seeing the start time and status of jobs, you can view the log for a specific job. The log includes additional information and warnings. Not all jobs have a log. To view the log for a job, select **Log**. Log entries are only stored for 30 days after the date the job finished, after that they are automatically deleted.
 
-If the **Batch processing** option on the **Run in the background** FastTab was enabled when master planning processing was set up, the infolog for the batch job shows more information about any warnings and errors that were generated during the master planning run. For example, auto-firming errors are captured only in the infolog. They aren't shown in logs on the **History** page.
+If the **Batch processing** option on the **Run in the background** FastTab was enabled when master planning processing was set up, the batch job log shows more information about any warnings and errors that were generated during the master planning run. For example, auto-firming errors are captured only in the batch job log. They aren't shown in logs on the **History** page.
 
 To view auto-firming errors and other warnings or errors that occurred during a master planning run, follow these steps.
 
@@ -49,7 +49,7 @@ To view auto-firming errors and other warnings or errors that occurred during a 
     - If you're using the enhanced form: On the Action Pane, select **Batch job history**. Then, on the **Batch job history** page, on the Action Pane, select **Log**.
     - If you're using the legacy form: On the Action Pane, on the **Batch job** tab, select **Log**.
 
-1. Select **Message details** to open the infolog, where you can view all warnings and errors that were captured during processing.
+1. Select **Message details** to open the **Message details** pane, where you can view all warnings and errors that were captured during processing.
 
 ## Related resources
 
