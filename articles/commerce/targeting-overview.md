@@ -40,14 +40,12 @@ You can create either an audience or a target first. However, a successful targe
 
 **Disclaimer:** You are responsible for using this feature in compliance with all applicable laws and regulations, including those related to targeting and profiling. 
 
-> [!NOTE]
-> This feature relies on cookie consent from site users. Targeted content will be shown only to site users who choose to allow site cookies. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
-
 ## Audiences
 
-An audience is a group of users, and membership in the group is determined by a set of dynamic rules. These rules are simple AND/OR conditions that are run against basic information or segments that are available in customer requests. Commerce natively supports segments such as device information (form factor, operating system, and browser), sign-in status, referrer, and query string parameters. Commerce also supports connections to third-party geolocation and segmentation providers. For example, you can purchase a third-party connector from [AppSource](https://appsource.microsoft.com) and then follow the setup instructions that the publisher provides. Alternatively, by using sample test connectors from Commerce, you can do testing without having to configure an external service. For more information about how to set up test connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
+An audience is a group of users, and membership in the group is determined by a set of dynamic rules. These rules are simple AND/OR conditions that are run against information or segments that are available in customer requests. 
 
-**Disclaimer:** If you enable this feature, your data will be shared with third-party systems that you select. You control what data, if any, you provide to the third party. You understand that the data handling and compliance standards of the third party might differ from the standards of Microsoft Dynamics 365 Commerce. Your privacy is important to Microsoft. To learn more, read our [Privacy and Cookies notice](https://privacy.microsoft.com/privacystatement).
+Commerce natively supports basic segments such as device information, sign-in status, referrer, and query string parameters. Commerce also supports extensible segments through connections to third-party geolocation and segmentation providers. For more information about how to setup connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
+
 
 ### Basic segments
 
@@ -66,7 +64,18 @@ The following segments are available to include in an audience definition by def
     - Other
 - **Query string parameters** - Tests for the existence of a query string parameter key value pair in a request URL. For example, for the URL `www.fabrikam.com/en-us/request?promo=true`, a rule can be written to test that the parameter "promo" has the value "true." 
 - **Cookie** - Tests a cookie value set for the domain in the request URL. For example, a Fabrikam.com request might include a cookie with the name "CustomLayout" and a value of "1." The cookie test will check for the existence of a cookie but will not explicitly create one. In our example, the "CustomLayout" cookie would need to have been set by JavaScript from another module or some other business process.
+    > [!NOTE]
+    > Make sure that your use of cookies complies with applicable laws.
 - **Referrer** - If a user follows a link to request the page, the referrer is the URL of the page that hosted the link.  
+
+### Extensible Segments
+
+The system allows you to expand the list of segments to incorporate data from other sources. These segments are generically called third-party segments. A segmentation provider will describe the types of segments that are available. Here are some caveats:
+- If an external provider is enabled, it may connect to a service with unpredictable performance. To ensure a better user experience, if a user requests a page including targeting and that page references an audience that checks a third-party segment provider, the system will initially respond with a default version of a page. 
+- The user must consent to allow cookies. When they do, their browser will request all segmentation information from relevant providers. The segmentation results will be placed in a cookie returned to the user. Subsequent requests to the page will use this segment information to serve content targeted for this group. Since we show the default version of the page when no additional cookie-based segmentation is available, we are categorizing the cookie as non-essential. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
+
+**Disclaimer:** If you enable this feature, your data will be shared with third-party systems that you select. You control what data, if any, you provide to the third party. You understand that the data handling and compliance standards of the third party might differ from the standards of Microsoft Dynamics 365 Commerce. Your privacy is important to Microsoft. To learn more, read our [Privacy and Cookies notice](https://privacy.microsoft.com/privacystatement).
+
 
 ### Create an audience in site builder
 
@@ -79,8 +88,7 @@ To create an audience in Commerce site builder, follow these steps.
 1. Select a data source for your segments, and then specify the segment name, operator, and values. You can create and delete more rules in a rule block, or you can create and delete entire rule blocks. You can also move rule blocks up or down as you require.
 
     > [!NOTE]
-    > - You can have up to 100 values in a list, and each list item can contain up to 50 characters.
-    > - Make sure that your use of cookies complies with applicable laws.
+    > You can have up to 100 values in a list, and each list item can contain up to 50 characters.
 
 1. When you're satisfied with the audience configuration, select **Finish editing**. You can then select **Publish** to make the audience available for use in a live target. Alternatively, you can publish the audience together with the target.
 
