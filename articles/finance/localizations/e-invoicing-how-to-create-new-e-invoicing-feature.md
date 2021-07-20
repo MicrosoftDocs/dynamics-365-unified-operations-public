@@ -103,14 +103,19 @@ Continue the process at the **Electronic invoicing features** page, with creatio
 
 7.  Select **Edit**.
 
-7.  On the **Processing pipeline** tab, select **New** to add new pipeline action.
+7.  On the **Processing pipeline** tab, select **New** to add new pipeline action. 
 
 8.  On the **Applicability rules** tab, select **New** to add new applicability rules clauses.
 
 9.  On the **Variables** tab, select **New** to add new variables.
 
-10.  When finished, select **Validate** to check the consistency of the configuration.
+10.  Select **Save**, and then select **Validate** to check the consistency of the configuration.
 
 11. Close the page.
 
-12. To deploy your new Electronic invoicing feature to the service environment, see [Deploy the Electronic invoicing feature to Service environment](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#deploy-the-electronic-invoicing-feature-to-service-environment).
+## Deploy the Electronic invoicing feature to the Service environment
+
+1. To deploy your new Electronic invoicing feature to the service environment, see [Deploy the Electronic invoicing feature to Service environment](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#deploy-the-electronic-invoicing-feature-to-service-environment).
+
+
+
