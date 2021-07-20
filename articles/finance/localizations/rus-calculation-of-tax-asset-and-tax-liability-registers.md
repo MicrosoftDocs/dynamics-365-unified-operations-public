@@ -56,7 +56,7 @@ This topic provides information about the two methods that tax registers use to 
 Before you create a journal voucher for tax differences in the system, you must complete the following setup procedures.
 
 1.  [Set up General ledger parameters](#set-up-general-ledger-parameters).
-2.  [Set up a journal for ledger posting of tax differences by using the balance method](#_Set_up_a_journal_for_ledger_posting_of_tax_differences_that_are_calculated_by_using_the_balance_method).
+2.  [Set up a journal for ledger posting of tax differences by using the balance method](#set-up-a-journal-for-ledger-posting-of-tax-differences-that-are-calculated-by-using-the-balance-method).
 3.  [Set up ledger accounts for deferred taxes](#set-up-ledger-accounts-for-deferred-taxes).
 4.  [Set up a sales tax code for profit tax](#set-up-a-sales-tax-code-for-profit-tax).
 5.  [Set up a sales tax code for temporary tax differences that are based on deferrals](#set-up-an-expense-code-for-temporary-tax-differences-that-are-based-on-deferrals).
