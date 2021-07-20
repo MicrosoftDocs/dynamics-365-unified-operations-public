@@ -38,4 +38,22 @@ The XML format of fiscal archive is implemented by using [Electronic reporting (
 
 ## Fiscal archive structure
 
+A fiscal archive has the following structure:
+
+  ``` xml
+  <AchivePeriod> <!-- The identification of the period of the archive and the archive creation date -->
+    <Company/> <!-- The identification of the company, including the SIRET code, the NAF code, and the VAT ID of the company -->
+    <Store/> <!-- The identification of the store, including its address -->
+    <PeriodGrandTotal/> <!-- The identification of the  -->
+    <Shifts/> <!-- The  -->
+      <Shift/> <!-- The  -->
+    <Receipts/> <!-- The  -->
+      <Receipt/> <!-- The  -->
+    <ReceiptCopies/> <!-- The  -->
+      <ReceiptCopy> <!-- The  -->
+    <AuditEvents> <!-- The  -->
+      <AuditEvent/> <!-- The  -->
+  ```
+
+
 ## Fiscal archive integrity verification tool
