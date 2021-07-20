@@ -120,5 +120,5 @@ See [Deploy the Electronic invoicing feature to Service environment](https://doc
 ## Deploy the Electronic invoicing feature to Connected application
 
 1. See [Configure the application setup](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#configure-the-application-setup).
-2. See [Deploy the Electronic invoicing feature to Connected application](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#deploy-the-Electronic-invoicing-feature-to-connected-application).
+2. See [Deploy the Electronic invoicing feature to Connected application](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#deploy-the-electronic-invoicing-feature-to-connected-application).
 
