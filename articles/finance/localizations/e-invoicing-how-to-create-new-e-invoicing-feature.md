@@ -103,9 +103,9 @@ Continue the process at the **Electronic invoicing features** page, with creatio
 
 7.  Select **Edit**.
 
-7.  On the **Processing pipeline** tab, select **New** to add new pipeline action. 
+7.  On the **Processing pipeline** tab, select **New** to add new pipeline action. For more information about pipeline, see [Actions](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#actions).
 
-8.  On the **Applicability rules** tab, select **New** to add new applicability rules clauses.
+8.  On the **Applicability rules** tab, select **New** to add new applicability rules clauses. For more information about Applicability rules, see [Applicability rules](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#applicability-rules).
 
 9.  On the **Variables** tab, select **New** to add new variables.
 
