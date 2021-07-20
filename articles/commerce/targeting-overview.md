@@ -49,6 +49,27 @@ An audience is a group of users, and membership in the group is determined by a 
 
 **Disclaimer:** If you enable this feature, your data will be shared with third-party systems that you select. You control what data, if any, you provide to the third party. You understand that the data handling and compliance standards of the third party might differ from the standards of Microsoft Dynamics 365 Commerce. Your privacy is important to Microsoft. To learn more, read our [Privacy and Cookies notice](https://privacy.microsoft.com/privacystatement).
 
+### Basic segments
+
+The following segments are available to include in an audience definition by default. These segments test for conditions included in a site user's web request, and will not result in the creation of a cookie.
+
+- **Signed-in status**
+- **Device OS**
+    - Windows
+    - Linux
+    - iOS
+    - Android, Other
+- **Device platform**
+    - Mobile
+    - Desktop
+    - Tablet
+    - Other
+- **Query string parameters** - Tests for the existence of a query string parameter key value pair in request URL. For example, for the URL `www.fabrikam.com/en-us/request?promo=true`, a rule can be written to test that the parameter "promo" has the value "true." 
+- **Cookie** - Tests a cookie value set for the domain in the request URL. For example, a Fabrikam.com request might include a cookie with the name "CustomLayout" and a value of "1." The cookie test will check for the existence of a cookie but will not explicitly create one. In our example, the "CustomLayout" cookie would need to have been set by JavaScript from another module or some other business process.
+- **Referrer** - If a user follows a link to request the page, the referrer is the URL of the page that hosted the link.  
+
+### Create an audience in site builder
+
 To create an audience in Commerce site builder, follow these steps.
 
 1. In the left navigation pane, select **Audiences**.
