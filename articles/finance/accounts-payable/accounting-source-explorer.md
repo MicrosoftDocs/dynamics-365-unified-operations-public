@@ -53,8 +53,8 @@ For these documents, you can also navigate to the actual source document from Ac
 
 > [!NOTE]
 > Starting in version 10.0.20 and also in 10.0.19 as a service update, two additional ranges are available in the update button to restrict the initial query that is run to enter data on the page. The fields that were added are:<br>
-- From Voucher, To Voucher<br>
-- From Main account, To Main account<br> 
+> - From Voucher, To Voucher<br>
+> - From Main account, To Main account<br> 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
