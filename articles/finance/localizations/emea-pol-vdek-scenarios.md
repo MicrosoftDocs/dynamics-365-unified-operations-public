@@ -4,7 +4,7 @@
 title: Details of specific business scenarios in JPK-V7M report
 description: This topic explains details of specific business scenarios in JPK-V7M report in Poland. 
 author: liza-golub
-ms.date: 06/16/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,8 +44,8 @@ JPK-V7M report in Finance supports reporting of overdue customer invoices when t
 
 When there is an overdue customer invoice, the invoice that is issued to a customer can go through three stages:
 
-1. The invoice is issued to the customer, tax transactions are posted, and the invoice is included in **JPK** \> **Ewidencja** \> **SprzedazWiersz** as usual according to the tax setup and marker setup.
-2. If the invoice isn't paid within 150 days after the payment due date, the company can apply the [Overdue debt VAT](emea-pol-sales-tax-reports.md#allowance-for-bad-debts) periodic task by going to **Accounts receivable** \> **Periodic tasks** \> **Overdue debt VAT**. Tax transactions that are produced by this task are reflected in the JPK-V7M report. The following information is included:
+1. The invoice is issued to the customer, tax transactions are posted, and the invoice is included in **JPK** > **Ewidencja** > **SprzedazWiersz** as usual according to the tax setup and marker setup.
+2. If the invoice isn't paid within 150 days after the payment due date, the company can apply the [Overdue debt VAT](emea-pol-sales-tax-reports.md#allowance-for-bad-debts) periodic task by going to **Accounts receivable** > **Periodic tasks** > **Overdue debt VAT**. Tax transactions that are produced by this task are reflected in the JPK-V7M report. The following information is included:
 
     - All the customer information from the original invoice that was posted in stage 1 is included.
     - Amounts are reported in the same **K_\*** elements as in the original invoice, but they have a negative sign.
@@ -140,7 +140,7 @@ The fields of retail POS invoices must be filled in shown in the following table
 | DataSprzedazy      | RetailTransactionSalesTrans.TransDate                                                                               |
 | TypDokumentu       | FP                                                                                                                  |
 
-The fields of the SAFTTaxTransByReportingCode_PL table are filled in from the following data sources.
+The fields of the **SAFTTaxTransByReportingCode_PL** table are filled in from the following data sources.
 
 | Table name                            | Field names                                                                                        |
 |---------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -169,9 +169,9 @@ The data structure in the JPK_V7M report collects the first International Organi
 
 The JPK-V7M report supports reporting of the **MPP** marker for both sales registers and purchase registers for reporting periods before July 1, 2021. **MPP** marker is not required for the periods after July 1, 2021.
 
-If a company does operations that a split payment procedure must be applied to, the **"Split payment"** feature must be used.
+If a company does operations that a split payment procedure must be applied to, the **Split payment** feature must be used.
 
-When the Split payment feature is used, you don't have to complete any specific setup to report the **MPP** marker in a JPK-V7M. The following algorithm is used for identification of the **MPP** marker:
+When the **Split payment** feature is used, you don't have to complete any specific setup to report the **MPP** marker in a JPK-V7M. The following algorithm is used for identification of the **MPP** marker:
 
 - The system provides a check of the **Split payment** and **Voluntary split payment** parameters of the customer transaction that is related to a sales invoice. If the **Split payment** parameter is selected, and the **Voluntary split payment** parameter is cleared, the related invoice will be reported with the **MPP** marker.
 - The system provides a check of the **Split payment** and **Voluntary split payment** parameters of the vendor transaction that is related to a vendor invoice. If the **Split payment** parameter is selected, and the **Voluntary split payment** parameter is cleared, the related invoice will be reported with the **MPP** marker.
