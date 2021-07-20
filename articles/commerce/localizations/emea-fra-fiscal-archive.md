@@ -79,4 +79,8 @@ The PeriodGrandTotal node of a fiscal archive contains the following elements:
 | HashAlgorithm | |
 | CertificateThumbprint | |
 
+### Shift
+
+The Shift node of a fiscal archive contains the following elements:
+
 ## Fiscal archive integrity verification tool
