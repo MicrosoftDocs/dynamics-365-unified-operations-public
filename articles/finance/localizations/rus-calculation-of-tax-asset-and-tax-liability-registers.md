@@ -37,14 +37,13 @@ use to calculate tax differences:
 -   Accrual method:
     - **Calculation of temporary tax differences** tax register
     - **Calculation of constant tax differences** tax register
-
-Note: As of January 1, 2020, tax differences must be calculated by using
-the balance method.
+   
+   > [!NOTE]
+   > As of January 1, 2020, tax differences must be calculated by using the balance method.
 
 ## Turn on the feature
 
-1.  In the **Feature management** workspace, find and select the feature
-    that is named **Tax differences registers by balance method**.
+1.  In the **Feature management** workspace, find and select the feature that is named **Tax differences registers by balance method**.
 2.  Select **Enable now**.
 
 ## Set up journal voucher creation for tax differences
@@ -93,27 +92,13 @@ you must complete the following setup procedures.
     -   If you calculate the current profit tax based on accounting data, enter a ledger account from group of accounts **68** for accounting differences.
     -   If you calculate that current profit tax based on the profit tax declaration (tax accounting data), enter a ledger account from group of accounts **99** for tax differences.
 
-Note
-
-According to the methodological recommendations for applying the new
-PBU18 accounting standard, as of January 1, 2020, companies have a
-choice about how they calculate the current profit tax. The
-calculation can be based on either accounting data or the profit tax
-declaration.
-
--   When the current profit tax is calculated based on accounting data,
-    the ledger posting of temporary deferred tax should be posted in
-    correspondence with ledger account **68.profit tax**. In this case,
-    the ledger posting of constant tax differences should be posted in
-    correspondence with ledger account **68.profit tax**.
-
--   When the current profit tax is calculated based on the profit tax
-    declaration, the ledger posting of temporary deferred tax should be
-    posted in correspondence with ledger account **99**. In this case,
-    there is ledger posting of constant tax differences.
-
-Company should make a make a note of their choice in the accounting
-policy.
+   > [!NOTE]
+   > According to the methodological recommendations for applying the new PBU18 accounting standard, as of January 1, 2020, companies have a choice about how they calculate the current profit tax. The calculation can be based on either accounting data or the profit tax declaration.
+   > 
+   > -   When the current profit tax is calculated based on accounting data, the ledger posting of temporary deferred tax should be posted in correspondence with ledger  account **68.profit tax**. In this case, the ledger posting of constant tax differences should be posted in correspondence with ledger account **68.profit tax**.
+   > -   When the current profit tax is calculated based on the profit tax declaration, the ledger posting of temporary deferred tax should be posted in correspondence with  ledger account **99**. In this case, there is ledger posting of constant tax differences.
+   > 
+   > Company should make a make a note of their choice in the accounting policy.
 
 1.  On the Action Pane, select **Save**.
 2.  Go to **Tax &gt; Setup &gt; Profit tax &gt; Ledger posting groups of profit tax**.
@@ -179,7 +164,6 @@ Follow these steps to generate the **Calculation of constant tax differences** t
 2.  On the **Parameters** FastTab, on the line for the **Tax code for debt reserves** parameter, in the **Value** column, select the sales tax code for profit tax. The rate value of the selected sales tax code will be used to calculate the amount of the constant tax asset or constant tax liability.
 3.  In the **Expand** column, select the checkbox for the parameter, so that it will be used to generate the register.
 
-**Note.** As of January 1, 2020, tax registers should use the balance method.
 
 ![Setting parameters for generation of the Calculation of constant tax differences tax register on the Tax registers page](media/ru_tax_differ5.png)
 
@@ -289,53 +273,27 @@ For each line of the **Calculation of constant tax differences** tax register, t
 ## Create a journal voucher for tax differences
 
 1.  Go to **Tax &gt; Journal entries &gt; Tax register journal**.
+2.  Select the line for the period where the **Calculation of temporary tax differences by balance method** and **Calculation of constant tax differences by balance method** tax registers are calculated and approved.
+3.  On the Action Pane, select **Ledger journal &gt; Tax differences by balance method**.
+  
+   > [!NOTE]
+   >  On the **Ledger journal** menu, the **Tax differences** command generates the tax difference amounts that are calculated in the **Calculation of temporary tax differences** and **Calculation of constant tax differences** tax registers. If you generate a ledger journal that has transactions for tax differences of one type, such as accrual method or balance method, the second menu item becomes unavailable. In other words, you can't simultaneously use the old and new methods to create a ledger posting for tax differences.
 
-2.  Select the line for the period where the **Calculation of temporary
-    tax differences by balance method** and **Calculation of constant
-    tax differences by balance method** tax registers are calculated and
-    approved.
+1.  On the Action Pane, select **Create &gt; Create journal**. The journal is created, and its lines include the vouchers for the tax difference of the current period.
 
-3.  On the Action Pane, select **Ledger journal &gt; Tax differences by
-    balance method**.
+2.  On the Action Pane, select **Lines** to view the vouchers and other details.
 
-Note: On the **Ledger journal** menu, the **Tax differences** command
-generates the tax difference amounts that are calculated in the
-**Calculation of temporary tax differences** and **Calculation of
-constant tax differences** tax registers. If you generate a ledger
-journal that has transactions for tax differences of one type, such as
-accrual method or balance method, the second menu item becomes
-unavailable. In other words, you can't simultaneously use the old and
-new methods to create a ledger posting for tax differences.
-
-1.  On the Action Pane, select **Create &gt; Create journal**. The
-    journal is created, and its lines include the vouchers for the tax
-    difference of the current period.
-
-2.  On the Action Pane, select **Lines** to view the vouchers and other
-    details.
-
-![Journal voucher page](media/image9.png)
+![Journal voucher page](media/ru_tax_differ9.png)
 
 1.  On the Action Pane, select **Post &gt; Post** to post the journal.
 
 ### Create a reversing journal voucher for tax differences
 
 1.  Go to **Tax &gt; Journal entries &gt; Tax register journal**.
+2.  Select the line for the period where the **Calculation of temporary tax differences by balance method** and **Calculation of constant tax differences by balance method** tax registers are calculated and approved.
+3.  On the Action Pane, select **Ledger journal &gt; Tax differences by balance method**.
+4.  On the Action Pane, select **Create &gt; Reverse journal**. The journal is created, and its lines include vouchers for the tax difference of the current period.
+5.  On the Action Pane, select **Lines** to view the vouchers and other details.
 
-2.  Select the line for the period where the **Calculation of temporary
-    tax differences by balance method** and **Calculation of constant
-    tax differences by balance method** tax registers are calculated and
-    approved.
-
-3.  On the Action Pane, select **Ledger journal &gt; Tax differences by
-    balance method**.
-
-4.  On the Action Pane, select **Create &gt; Reverse journal**. The
-    journal is created, and its lines include vouchers for the tax
-    difference of the current period.
-
-5.  On the Action Pane, select **Lines** to view the vouchers and other
-    details.
-
-![Tax differences by balance method page](media/image10.png)
+![Tax differences by balance method page](media/ru_tax_differ10.png)
 
