@@ -58,27 +58,26 @@ A fiscal archive has the following structure:
 
 The PeriodGrandTotal node of a fiscal archive contains the following elements:
 
-| Element/Node | Comment|
-|-|-|
-| SequentialNumber | The sequential number of the signed period grand total journal for the store |
-| Date | |
-| FromDate | |
-| ToDate | |
-| TotalCashSales | |
-| TotalCashReturns | |
-| GrandTotal | |
-| PerpetualGrandTotal | |
-| PerpetualGrandTotalAbsoluteValue | |
-| PeriodGrandTotalLines | |
-| PeriodGrandTotalLine | |
-| TotalInclTax | |
-| TaxRate | |
-| TaxAmount | |
-| DataToSign | |
-| DataToSignFormatVersion | |
-| Signature | |
-| HashAlgorithm | |
-| CertificateThumbprint | |
+| Element/Node                     | Comment|
+|----------------------------------|--------|
+| SequentialNumber                 | The sequential number of the signed period grand total journal for the store |
+| FromDate                         | The starting date of the period of the journal |
+| ToDate                           | The ending date of the period of the journal |
+| TotalCashSales                   | The total amount of sales including tax for the period |
+| TotalCashReturns                 | The absolute value of total amount of returns including tax for the period |
+| GrandTotal                       | The total amount of sales including tax minus the absolute value of total amount of returns including tax for the period |
+| PerpetualGrandTotal              | The cumulative perpetual grand total for the period, that is, the cumulative perpetual grand total for the previous period plus the total amount of sales including tax for the period minus the absolute value of total amount of returns including tax for the period |
+| PerpetualGrandTotalAbsoluteValue | The cumulative perpetual grand total (absolute value) for the period, that is, the cumulative perpetual grand total (absolute value) for the previous period plus the total amount of sales including tax for the period plus the absolute value of total amount of returns including tax for the period |
+| PeriodGrandTotalLines            | The list of grand total amounts per tax rate |
+| PeriodGrandTotalLine             | A node for the grand total amount for a tax rate |
+| TotalInclTax                     | The Grand total amount for the period for the tax rate|
+| TaxRate                          | The tax rate|
+| TaxAmount                        | The grand total amount of tax for the tax rate |
+| DataToSign                       | The string that was [built from the elements of the period grand total journal record](./emea-fra-cash-registers.md#digital-signing-of-closed-shifts-and-period-grand-total-journals), and that was used for signing |
+| DataToSignFormatVersion          | The internal version of the format of data used for signing |
+| Signature                        | The digital signature of the period grand total journal record |
+| HashAlgorithm                    | The hash algorithm that was used for hashing the date before signing|
+| CertificateThumbprint            | The thumbprint of the certificate that was used for signing|
 
 ### Shift
 
