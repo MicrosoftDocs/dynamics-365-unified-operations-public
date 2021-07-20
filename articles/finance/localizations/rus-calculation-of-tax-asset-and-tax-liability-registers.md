@@ -1,39 +1,44 @@
-﻿---
-title: 
-description: 
-ms.date: 07.20.2021
+---
+# required metadata
+
+title: Calculation of tax asset and tax liability registers
+description: This topic provides information about the two methods that tax registers use to calculate tax differences
+ms.date: 07/20/2021
 ms.topic: article
-ms.service: dynamics365-financials
+ms.prod: 
 author: akroshkina
-ms.author: 
+ms.technology: 
 manager: anayash
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
 ---
 
 # Calculation of tax asset and tax liability registers
 
-According to Russian legislation, the accounting profit and the profit
-tax base are formed according to different legislation and rules.
-Therefore, two tax types have been developed:
+According to Russian legislation, the accounting profit and the profit tax base are formed according to different legislation and rules. Therefore, two tax types have been developed:
 
-- **Constant tax** – Differences are based on income and expenses that
-    form the accounting profit (loss) and are excluded from the
-    calculation of the tax base for income tax. Constant tax differences
-    generate constant tax income (CTI) and constant tax expense (CTE).
-- **Temporary tax** – Differences are based on deferred income tax.
-    The tax is from when expenses or income that form the accounting
-    profit are in one reporting period, and the tax base is in another
-    reporting period or in other reporting periods. Temporary tax
-    differences generate deferred tax asset (DTA) and deferred tax
-    liability (DTL).
+- **Constant tax** – Differences are based on income and expenses that form the accounting profit (loss) and are excluded from the calculation of the tax base for income tax. Constant tax differences generate constant tax income (CTI) and constant tax expense (CTE).
+- **Temporary tax** – Differences are based on deferred income tax. The tax is from when expenses or income that form the accounting profit are in one reporting period, and the tax base is in another reporting period or in other reporting periods. Temporary tax differences generate deferred tax asset (DTA) and deferred tax liability (DTL).
 
-This topic provides information about the two methods that tax registers
-use to calculate tax differences:
+This topic provides information about the two methods that tax registers use to calculate tax differences:
 
 -   Balance method:
-    - **Calculation of temporary tax differences by balance method**
-        tax register
-    - **Calculation of constant tax differences by balance method** tax
-    register
+    - **Calculation of temporary tax differences by balance method** tax register
+    - **Calculation of constant tax differences by balance method** tax register
+
 -   Accrual method:
     - **Calculation of temporary tax differences** tax register
     - **Calculation of constant tax differences** tax register
@@ -48,8 +53,8 @@ use to calculate tax differences:
 
 ## Set up journal voucher creation for tax differences
 
-Before you create a journal voucher for tax differences in the system,
-you must complete the following setup procedures.
+Before you create a journal voucher for tax differences in the system, you must complete the following setup procedures.
+
 1.  [Set up General ledger parameters](#set-up-general-ledger-parameters).
 2.  [Set up a journal for ledger posting of tax differences by using the balance method](#_Set_up_a).
 3.  [Set up ledger accounts for deferred taxes](#set-up-ledger-accounts-for-deferred-taxes).
@@ -61,8 +66,8 @@ you must complete the following setup procedures.
 ### Set up General ledger parameters
 
 1.  Go to **Tax &gt; Setup &gt; Parameters &gt; General ledger parameters**.
-
 2.  On the **Profit tax** tab, in the **Compression** field, specify the level of detail that transactions for tax differences should have:
+
     - **Active and liability** – Generate a uniform transaction for each operation for each object. Operations include formation, repayment, and write-off.
     - **Expense and income** – Generate a uniform transaction for each operation for all objects that have the same expense/income code.
     - **Tax** – Generate a uniform transaction for each operation for all objects that have the same sales tax code.
@@ -84,9 +89,7 @@ you must complete the following setup procedures.
 1.  Go to **Tax &gt; Setup &gt; Sales tax &gt; Ledger posting groups**.
 2.  On the Action Pane, select **New**.
 3.  In the **Ledger posting group** field, enter the name of the ledger posting group.
-
 4.  In the **Description** field, enter a description of the ledger posting group.
-
 5.  On the **General** FastTab, in the **Sales tax payable** field, enter a ledger account:
 
     -   If you calculate the current profit tax based on accounting data, enter a ledger account from group of accounts **68** for accounting differences.
@@ -106,9 +109,11 @@ you must complete the following setup procedures.
 4.  In the **Ledger posting group** field, select the name of the ledger posting group that you created in step 2. The **Sales tax payable** field is automatically set.
 5.  In the **Description** field, enter a description of the ledger posting group.
 6.  On the **General** FastTab, set the following fields:
+
     -   In the **DTA** field, enter a ledger account from group of accounts **09**.
     -   In the **DTL** field, enter a ledger account from group of accounts **77**.
     -   In the **CTI** and **CTE** fields, enter a ledger account for posting amounts of CTI and CTI from group of accounts **99**.
+    
 7.  On the Action Pane, select **Save**.
 
 ![Setting up a ledger posting group on the Ledger posting groups of profit tax page](media/ru_tax_differ2.png)
@@ -124,9 +129,9 @@ you must complete the following setup procedures.
 ### Set up an expense code for temporary tax differences that are based on deferrals
 
 1.  Go to **Tax &gt; Setup &gt; Profit tax &gt; Expense codes**.
-2.  Create and set up expense codes that are used for deferrals postings or that form constant tax differences. For more information, see [Create an
-    expense or income code](https://docs.microsoft.com/dynamics365/finance/localizations/rus-expense-and-income-codes#create-an-expense-or-income-code).
+2.  Create and set up expense codes that are used for deferrals postings or that form constant tax differences. For more information, see [Create an expense or income code](https://docs.microsoft.com/dynamics365/finance/localizations/rus-expense-and-income-codes#create-an-expense-or-income-code).
 3.  On the **General** FastTab, set the following fields:
+
     -   In the **Code type** field, select **Issue**.
     -   In the **Income tax** section, in the **Sales tax code** field, select the sales tax code for the profit tax rate.
 
@@ -145,25 +150,26 @@ Before you complete this procedure, you must create expense codes. For more info
 ### Set up tax differences registers
 
 Create the registers of temporary and constant tax differences for one of the calculation methods, as described in Profit tax registers journal.
-
 Follow these steps to set up the **Calculation of temporary tax differences by balance method** and **Calculation of temporary tax differences** tax registers.
 
 1.  Go to **Tax &gt; Setup &gt; Profit tax &gt; Registers**.
 2.  On the **Parameters** FastTab, set up the parameters that should be used to generate the register. If no value is specified for a parameter, the register will be generated for all values of that parameter. To specify multiple values for a parameter, separate them with commas:
+
     -   On the line for the **Tax code for FA depreciation** parameter, in the **Value** column, select the sales tax code for profit tax.
     -   On the line for the **Tax code for debt reserves** parameter, in the **Value** column, select the sales tax code for profit tax.
     -   On the line for the **Depreciation groups** parameter, in the **Value** column, select the FA/IA group for tax accounting.
     -   On the line for the **Type of fixed asset** parameter, in the **Value** column, select the asset type.
     -   On the line for the **Deferrals groups** parameter, in the **Value** column, select the group of expenses for future periods.
+
 3.  In the **Expand** column, select the checkbox for the parameters that must be used to generate the register.
 
 ![Setting parameters for generation of the Calculation of temporary tax differences by balance method and Calculation of temporary tax differences tax registers on the Tax registers page](media/ru_tax_differ4.png)
 
 Follow these steps to generate the **Calculation of constant tax differences** tax register.
+
 1.  Go to **Tax &gt; Setup &gt; Profit tax &gt; Registers**.
 2.  On the **Parameters** FastTab, on the line for the **Tax code for debt reserves** parameter, in the **Value** column, select the sales tax code for profit tax. The rate value of the selected sales tax code will be used to calculate the amount of the constant tax asset or constant tax liability.
 3.  In the **Expand** column, select the checkbox for the parameter, so that it will be used to generate the register.
-
 
 ![Setting parameters for generation of the Calculation of constant tax differences tax register on the Tax registers page](media/ru_tax_differ5.png)
 
@@ -176,6 +182,7 @@ The **Incomes and expenses that do not influence the tax base** tax register con
 ![Incomes and expenses that do not influence the tax base tax page](media/ru_tax_differ6.png)
 
 For each line of this tax register, the following information is shown:
+
 - **Line number**
 - **Expense/Income type** – The name of the assigned expense code.
 - **Income amount** – The amount of the income.
@@ -217,6 +224,7 @@ For each line of this tax register, the following information is shown:
 - **Decreasing DTL** – The difference between the DTL amount at the beginning of the reporting period and the DTL amount at the end of the reporting period, if the initial amount of DTL exists.
 
 For each line of the **Calculation of temporary tax differences** tax register, the following information is shown:
+
 - **Line number**
 - **Date attached** – The date when the accounting object was created.
 - **The naming of object of the account** – A description of the accounting object.
@@ -238,8 +246,8 @@ The **Calculation of constant tax differences by balance method** tax register h
 -   The **Incomes and expenses that do not influence the tax base** tax register.
 -   The **Standard expenses in current period** tax register. For more information, see [Rated expenses registers](https://docs.microsoft.com/dynamics365/finance/localizations/rus-rated-expenses-registers).
 
-Unlike the **Calculation of constant tax differences by balance method** tax register, the **Calculation of constant tax differences** tax
-register isn't based on the following tax registers:
+Unlike the **Calculation of constant tax differences by balance method** tax register, the **Calculation of constant tax differences** tax register isn't based on the following tax registers:
+
 -   Restoring of depreciation bonus
 -   Reserves for bad debts
 
@@ -249,6 +257,7 @@ The following illustration show an example of the **Calculation of constant tax 
 ![Calculation of constant tax differences by balance method page](media/ru_tax_differ8.png)
 
 For each line of this tax register, the following information is shown:
+
 - **Line number**
 - **Date attached** – The beginning of the reporting period.
 - **The naming of object of the account** – A description of the accounting object.
@@ -280,7 +289,6 @@ For each line of the **Calculation of constant tax differences** tax register, t
    >  On the **Ledger journal** menu, the **Tax differences** command generates the tax difference amounts that are calculated in the **Calculation of temporary tax differences** and **Calculation of constant tax differences** tax registers. If you generate a ledger journal that has transactions for tax differences of one type, such as accrual method or balance method, the second menu item becomes unavailable. In other words, you can't simultaneously use the old and new methods to create a ledger posting for tax differences.
 
 1.  On the Action Pane, select **Create &gt; Create journal**. The journal is created, and its lines include the vouchers for the tax difference of the current period.
-
 2.  On the Action Pane, select **Lines** to view the vouchers and other details.
 
 ![Journal voucher page](media/ru_tax_differ9.png)
