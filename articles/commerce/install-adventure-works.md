@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Adventure Works theme installation
-description: This topic gives an overview of how to install the Adventure Works theme.
+title: Install the Adventure Works theme
+description: This topic describes how to install the Adventure Works theme in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,29 +25,28 @@ ms.dyn365.ops.version: Release 10.0.8
 
 ---
 
-# Adventure Works theme installation
+# Install the Adventure Works theme
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
-This topic gives an overview of how to install the Adventure works theme. 
+This topic describes how to install the Adventure Works theme in Microsoft Dynamics 365 Commerce. 
 
 > [!IMPORTANT]
-> The Adventure Works theme and the new modules are available as of the Dynamics 365 Commerce version 10.0.20 release. THis theme is available via Marketplace (Appsource).
+> The Adventure Works theme and modules are available as of the Dynamics 365 Commerce version 10.0.20 release and is available from Microsoft AppSource.
 
 ## Prerequisites
-Before installing Adventure works theme, its required to have a Dynamics 365 Commerce environment installed. This includes RCSU, SDK and Module Library. Adventure works is supported on a minimum of 10.0.20 version of RCSU, SDK and Module Library. Refer to [Module Library and SDK updates](sdk-updates.md) for installing SDK and Module Library. 
+
+Before installing the Adventure Works theme, it is required to have a Dynamics 365 Commerce environment installed (Commerce version 10.0.20 or later), including Retail Cloud Scale Unit (RCSU), the Commerce online software development kit (SDK), and the Commerce module library. For information on installing the Commerce SDK and module library, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md). 
 
 ## Installation steps
 
-### Step 1: Install Adventure works theme in your application
+### Step 1: Install the Adventure Works theme in your application
 
-The adventure works theme package is available in the dynamics365-commerce feed as @msdyn365-commerce-theme/adventureworks-theme-kit. The package is part of the same feed, but under a different namespace, so you will need to add a registry entry for this namespace as shown below:
+The Adventure Works theme package is available in the dynamics365-commerce feed as **@msdyn365-commerce-theme/adventureworks-theme-kit**. The Adventure Works theme package is part of the same feed, but under a different namespace, so you will need to add a registry entry for this namespace as shown below:
 
 Update.npmrc file to include the below registry entry (if not already included)
 **@msdyn365-commerce-theme:registry=https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/**
 
-  
 Update .yarnrc to include the below registry entry (if not already included)
 **"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"**  	
 	
@@ -62,19 +61,21 @@ You should update theme version in package.json to a specific version.
 > The minimum version for Module Library and SDK should be 10.0.20 (9.31). 
 
 
-### Step 2: Setup the fonts for adventure works theme
+### Step 2: Set up the fonts for the Adventure Works theme
+
 Now that the adventure works theme is installed on your app, you need to add the font files required for this theme. For this, copy all the font files from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\public\webfonts** to partner application public folder font path **\public\webfonts**.
 
-### Step 3: Setup the resources for adventure works theme
+### Step 3: Set up the resources for the Adventure Works theme
+
 Next step, is to update the required default resource for the theme. For this, copy the content of global.json file from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\resources\modules** to partner application global.json file under **\src\resources\modules**.  If resource folder does not exists, it can be just copied from this path entirely **"\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\** under **\src\**
 
 ### Step 4: Pull updates and validate the theme
 
-To pull updates, refer to "Pull updates" section in [Module Library and SDK updates](sdk-updates.md)
+To pull SDK, module library, and other dependency updates, see the "Pull updates" section of [SDK and module library updates](e-commerce-extensibility/sdk-updates#pull-updates).
 
 Delete the **yarn.lock** file from the root directory and then . Optionally, you can also delete the **/node_modules** folder to get a clean set of dependency files. Run the yarn command to pull all the dependencies as mentioned in package.json 
 
-After the latest dependencies are pulled down, you can run yarn start to run the Node server on your development environment and test the new adventure works theme. Browse application locally and with query string parameter ?theme=adventureworks e.g. https://localhost:4000/?theme=adventureworks
+After the latest dependencies are pulled down, you can run yarn start to run the Node server on your development environment and test the new adventure works theme. Browse application locally and with query string parameter ``?theme=adventureworks`` (for example, ``https://localhost:4000/?theme=adventureworks``).
 
 
 ## Additional resources
