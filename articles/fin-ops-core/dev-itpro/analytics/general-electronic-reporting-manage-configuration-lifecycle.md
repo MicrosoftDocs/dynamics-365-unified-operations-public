@@ -98,9 +98,24 @@ If this configuration is owned by the configuration [provider](general-electroni
 
 To undo the changes that you introduced in the draft version, select the highest completed or shared version of your ER configuration in Finance on the **Versions** FastTab, and then select the **Get this version** option. The content of the selected version is copied to the draft version.
 
+## <a name="applicability-consideration" />Applicability consideration
+
+When you design a new version of an ER configuration, you can define its [dependency](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md) from other software components. This step is considered a prerequisite for controlling the download of this configuration's version from an ER repository or an external XML file and any further use of this version. So, when you import a new version of an ER configuration the system controls whether the import of this version is possible taking into account configured prerequisites.
+
+In some cases, you need to ignore configured prerequisites during the configuration’s import. To achieve this, complete the following steps:
+
+1.  Go to **Organization administration \> Electronic reporting \> Configurations**.
+2.  On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
+3.  Set the **Skip product updates and version prerequisite check during import** option to **Yes**.
+
+[!NOTE]
+> Note that this parameter is user-specific and company-specific.
+
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+[Define the dependency of ER configurations on other components](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
