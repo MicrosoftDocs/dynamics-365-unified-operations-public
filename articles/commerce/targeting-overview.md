@@ -38,8 +38,10 @@ You create and manage audiences in Commerce site builder, based on customer data
 
 You can create either an audience or a target first. However, a successful targeting experience requires both parts.
 
+**Disclaimer:** You are responsible for using this feature in compliance with all applicable laws and regulations, including those related to targeting and profiling. 
+
 > [!NOTE]
-> Targeting relies on cookie consent from site users. Targeted content will be shown only to site users who choose to allow site cookies. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
+> This feature relies on cookie consent from site users. Targeted content will be shown only to site users who choose to allow site cookies. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
 
 ## Audiences
 
