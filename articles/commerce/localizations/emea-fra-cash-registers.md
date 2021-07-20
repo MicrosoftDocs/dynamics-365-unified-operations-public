@@ -116,7 +116,7 @@ The data that is signed for a sales transaction is a text string that consists o
 7. A value (Y/N) that indicates whether the transaction is the first signed sales transaction for the register.
 8. The previous signature for the same register. A blank value is used for the first signed sales transaction.
 
-You can view the transaction signature, together with the transaction data that was used to generate it, on the **Fiscal transactions** FastTab of the **Store transactions** page in Headquarters.
+You can view the transaction signature, together with the transaction data that was used to generate it, on the **Fiscal transactions** FastTab of the **Store transactions** page in Headquarters. By clicking **Extended data**, you can view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, or hash algorithm identification. 
 
 #### Digital signing of receipt copies
 
@@ -133,7 +133,7 @@ When a copy of a receipt is printed, the event is registered in the POS audit ev
 9. A value (Y/N) that indicates whether the transaction is the first signed receipt copy event for the register.
 10. The previous signature for the same register. A blank value is used for the first signed receipt copy event.
 
-You can view the signature of the receipt copy, together with the event data that was used to generate it, on the **Signature** tab of the **Audit events** page in Headquarters.
+You can view the signature of the receipt copy, together with the event data that was used to generate it, on the **Fiscal registration results** tab of the **Audit events** page in Headquarters.
 
 #### Digital signing of closed shifts
 
@@ -148,7 +148,7 @@ When a shift is closed, the event is registered in the POS audit event log. The 
 7. A value (Y/N) that indicates whether the transaction is the first signed shift closing event for the register.
 8. The previous signature for the same register. A blank value is used for the first signed shift closing event.
 
-You can view the signature of a closed shift, together with the shift data that was used to generate it, on the **Signature** tab of the **Shifts** page in Headquarters.
+You can view the signature of a closed shift, together with the shift data that was used to generate it, on the **Fiscal registration results** tab of the **Shifts** page in Headquarters.
 
 #### Digital signing of events
 
@@ -163,7 +163,7 @@ The data that is signed for an event other than a receipt copy or shift closing 
 7. A value (Y/N) that indicates whether the transaction is the first signed event for the register.
 8. The previous signature for the same register. A blank value is used for the first signed event.
 
-You can view the event signature, together with the event data that was used to generate it, on the **Signature** tab of the **Audit events** page in Headquarters.
+You can view the event signature, together with the event data that was used to generate it, on the **Fiscal registration results** tab of the **Audit events** page in Headquarters.
 
 #### Receipts
 
