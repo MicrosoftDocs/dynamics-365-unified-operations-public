@@ -1564,6 +1564,8 @@
           href: localizations/emea-aut-vat-statement-details.md
         - name: Cross-border services report
           href: localizations/emea-aut-cross-border-services-report.md
+        - name: Purchase duties
+          href: localizations/emea-aut-purchase-duties.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
