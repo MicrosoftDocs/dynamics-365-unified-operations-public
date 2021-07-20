@@ -52,29 +52,29 @@ Update the **.yarnrc** file to include the following registry entry (if not alre
 
 `"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"`	
 	
-In your command prompt, execute the following command to install the package on your local environment. This will automatically update the package.json file to include the dependency.
+Run the following command from the command prompt to install the package on your local environment. This will automatically update the package.json file to include the dependency.
 
 `yarn add @msdyn365-commerce-theme/adventureworks-theme-kit`
 
 You should update the theme version in package.json to a specific version. 
 
 > [!IMPORTANT]
-> - The version of the theme should match the module library version to ensure that all features work as expected. 
+> - The theme version should match the module library version to ensure that all features work as expected. 
 > - The minimum version for the Commerce module library and SDK should be 10.0.20 (9.31). 
 
-### Set up the fonts for the Adventure Works theme
+### Add the font files for the Adventure Works theme
 
-After the Adventure Works theme is installed on your app, you must add the font files required for the theme. To do this, copy all of the font files from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\public\webfonts** to the partner application public directory font path **\public\webfonts**.
+After the Adventure Works theme is installed on your app, you must add the font files required for the theme. To do this, copy all of the font files from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\public\webfonts** to the partner application public directory path **\public\webfonts**.
 
 ### Set up the resources for the Adventure Works theme
 
-The next step is to update the required default resource for the theme. To do this, copy the content from the global.json file under **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\resources\modules** to the partner application global.json file under **\src\resources\modules**. If the target **\src\resources** directory does not exist, it can be copied in its entirety from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks** to **\src**.
+The next step is to update the required default resource for the theme. To do this, copy the content from the global.json file under **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\resources\modules** to the partner application global.json file under **\src\resources\modules**. If the **\src\resources** target directory does not exist, it can be copied in its entirety from the **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks** source directory to the **\src** target directory.
 
 ### Pull updates and validate the theme
 
-To pull SDK, module library, and other dependency updates, see the "Pull updates" section of [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#pull-updates).
+For information on pulling the latest SDK, module library, and other dependency updates, see the "Pull updates" section of [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#pull-updates).
 
-After the latest dependencies are pulled down, you can run **yarn start** to run the Node server on your development environment and test the new Adventure Works theme. Browse the application locally using the query string parameter ``?theme=adventureworks`` (for example, ``https://localhost:4000/?theme=adventureworks``).
+After the latest dependencies are pulled down, you can run **yarn start** command to run the Node server on your development environment and test the new Adventure Works theme. Browse the application locally using the query string parameter ``?theme=adventureworks`` (for example, ``https://localhost:4000/?theme=adventureworks``).
 
 ## Additional resources
 
