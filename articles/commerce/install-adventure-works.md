@@ -42,13 +42,13 @@ Before installing the Adventure Works theme, it is required to have a Dynamics 3
 
 ### Install the Adventure Works theme in your application
 
-The Adventure Works theme package is available in the dynamics365-commerce feed as **@msdyn365-commerce-theme/adventureworks-theme-kit**. The Adventure Works theme package is part of the same feed, but under a different namespace, so you will need to add a registry entry for this namespace as shown below:
+The Adventure Works theme package is available in the dynamics365-commerce feed as **@msdyn365-commerce-theme/adventureworks-theme-kit**. The Adventure Works theme package is part of the same feed, but under a different namespace, so you will need to add registry entries for this namespace as shown below:
 
-Update the .npmrc file to include the following registry entry (if not already included):
+Update the **.npmrc** file to include the following registry entry (if not already included):
 
 `@msdyn365-commerce-theme:registry=https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/`
 
-Update the .yarnrc file to include the following registry entry (if not already included):
+Update the **.yarnrc** file to include the following registry entry (if not already included):
 
 `"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"`	
 	
@@ -64,11 +64,11 @@ You should update the theme version in package.json to a specific version.
 
 ### Set up the fonts for the Adventure Works theme
 
-After the Adventure Works theme is installed on your app, you must add the font files required for the theme. To do this, copy all of the font files from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\public\webfonts** to the partner application public folder font path **\public\webfonts**.
+After the Adventure Works theme is installed on your app, you must add the font files required for the theme. To do this, copy all of the font files from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\public\webfonts** to the partner application public directory font path **\public\webfonts**.
 
 ### Set up the resources for the Adventure Works theme
 
-The next step is to update the required default resource for the theme. To do this, copy the content from the global.json file under **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\resources\modules** to the partner application global.json file under **\src\resources\modules**.  If the target **\src\resources** folder does not exist, it can be copied in its entirety from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks** to **\src**.
+The next step is to update the required default resource for the theme. To do this, copy the content from the global.json file under **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\resources\modules** to the partner application global.json file under **\src\resources\modules**. If the target **\src\resources** directory does not exist, it can be copied in its entirety from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks** to **\src**.
 
 ### Pull updates and validate the theme
 
