@@ -49,7 +49,11 @@ In addition, there are two parameters that control additional scenarios that wil
 
 When a customer initiates a sales transaction, the information on the sales order is reviewed against a set of blocking rules that guide the decision of whether or not to extend credit to the customer and allow the sale to move forward. You can also define exclusions that will override the blocking rules and allow a sales order to be processed. You can set up blocking rules and exclusion rules on the **Credit management > Setup > Credit management setup > Blocking rules** page.
 
-As of version 10.0.21, the blocking rules in Credit management have been re-architected for greater flexibility. This change also enables extensibility requests, so that you can create your own blocking rules. The **Release sales order** checkbox is now available for all blocking rules. Previously, it was available only for the Sales order blocking rule. When this checkbox is selected, the exclusion rule will release the sales order without considering any other rules that can block sales orders. This checkbox is available only for the **Exclusion** rule type.
+As of version 10.0.21, the blocking rules in Credit management have been re-architected for greater flexibility in the following ways.
+
+- Extensibility requests have been enabled, so that you can create your own blocking rules.
+
+- The **Release sales order** checkbox is now available for all blocking rules. Previously, it was available only for the Sales order blocking rule. When this checkbox is selected, the exclusion rule will release the sales order without considering any other rules that can block sales orders. This checkbox is available only for the **Exclusion** rule type.
 
 ### Days overdue
 
