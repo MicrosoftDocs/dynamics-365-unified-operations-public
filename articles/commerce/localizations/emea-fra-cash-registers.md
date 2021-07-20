@@ -218,7 +218,7 @@ A period grand total journal can also be marked as **Annual** when being created
 
 A fiscal archive is an XML file that can be exported from a period grand total journal that has been closed. It includes the totals for the closed period, and also includes detailed data about sales transactions and events. The exported file is digitally signed, and the signature is contained in a separate file. It is required to keep exported fiscal archives on a secured external media for the legal retention period.
 
-Commerce also includes a tool that can be used to verify the integrity of a fiscal archive and detect violations of the signature of the archive and of the chains of signed records in the archive. This tool is developed in form of a Powershell script that is available via the Commerce SDK. See [Fiscal archive](./emea-fra-fiscal-archive.md) for a detailed structure of the fiscal archive format and a guidance on how the fiscal archive integrity verification tool is to be used.
+Commerce also includes a tool that can be used to verify the integrity of a fiscal archive and detect violations of the signature of the archive and of the chains of signed records in the archive. This tool is developed in form of a Powershell script that is available via the Commerce SDK. See [Fiscal archive](./emea-fra-fiscal-archive.md) for a detailed structure of the fiscal archive format and a guidance on how to use the fiscal archive integrity verification tool.
 
 ## Setting up Commerce for France
 
@@ -348,21 +348,27 @@ Complete the fiscal registration setup steps that are described in [Set up the f
 
 #### Configure the fiscal registration process
 
-To enable the registration process, follow these steps to set up Headquarters:
+To enable the fiscal registration process for France, follow these steps to set up Headquarters:
 
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors** and load the connector configuration. The configuration file can be [downloaded from GitHub](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.29/src/FiscalIntegration/SequentialSignatureFrance/Configurations/Connector/ConnectorMicrosoftSequentialSignatureFRA.xml).
-3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers** and load the document provider configuration. The configuration file can be [downloaded from GitHub](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.29/src/FiscalIntegration/SequentialSignatureFrance/Configurations/DocumentProvider/DocumentProviderMicrosoftSequentialSignatureFRA.xml).
-4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
-5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile and select the connector that you loaded earlier. Set the connector type as **Internal**. Update the other connection settings as required.
-6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
-7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
-8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
-9.  Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+1. Download configuration files for the fiscal document provider and the fiscal connector from Commerce SDK:
+    - Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
+    - Open the last available release branch (for example, [release/9.30](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.30).
+    - Open **src \> FiscalIntegration \> SequentialSignatureFrance \> Configurations**.
+    - Dowload the fiscal connector configuration file **Connector \> ConnectorMicrosoftSequentialSignatureFRA.xml** (for example, [the file for release/9.30](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.30/src/FiscalIntegration/SequentialSignatureFrance/Configurations/Connector/ConnectorMicrosoftSequentialSignatureFRA.xml)).
+    - Dowload the fiscal document provider configuration file **DocumentProvider \> DocumentProviderMicrosoftSequentialSignatureFRA.xml** (for example, [the file for release/9.30](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.30/src/FiscalIntegration/SequentialSignatureFrance/Configurations/DocumentProvider/DocumentProviderMicrosoftSequentialSignatureFRA.xml)).
+2. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
+3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors** and load the fiscal connector configuration file that you downloaded earlier.
+4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers** and load the fiscal document provider configuration file that you downloaded earlier.
+5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
+6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile and select the connector that you loaded earlier. Set the connector type as **Internal**. Update the other connection settings as required.
+7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
+8. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
+9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
+10.  Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
 ### Configure the digital signature parameters
 
-You need to configure certificates to be used for digital signing of sales transactions and audit events. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature  enables configuring certificates that are stored in a Microsoft Azure Key Vault storage and supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets) feature.
+You need to configure certificates to be used for digital signing of records on the Commerce channel side (that is, sales transactions and audit events) and on the Commerce Headquarters side (that is, period grand total journals and fiscal archives). The signing is done by using a digital certificate that is stored in a Microsoft Azure Key Vault storage. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature  enables configuring certificates that are stored in Key Vault and supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets) feature.
 
 The following steps must be completed before you can use a digital certificate stored in an Azure Key Vault storage:
 
@@ -380,7 +386,7 @@ Then, on the **Key Vault parameters** page, you must specify the parameters for 
 - **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage.
 - **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
 
-Finally, you need to configure a certificate profile for your certificates stored in Key Vault or local certificate storage:
+Then, you need to configure a certificate profile for your certificates stored in Key Vault or local certificate storage. The certificate profile is used for signing on the channel side:
 
 1. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Certificate profiles**. 
 2. Create a new certificate profile.
@@ -395,25 +401,7 @@ Finally, you need to configure a certificate profile for your certificates store
    - Hash algorithm – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as SHA256.
    - Activate health check – For more information about the Health Check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
-### Configure the digital signature parameters for Headquarters
-
-To digitally sign Period grand total journals and archives, you must set up digital signature parameters. The signing is done by using a digital certificate that is stored in Microsoft Azure Key Vault storage. The following steps must be completed before you can use a certificate that is stored in Key Vault storage:
-
-- The Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Commerce Scale Unit.
-- The certificate must be uploaded to the Key Vault storage.
-- The Application Object Server (AOS) application must be authorized to read secrets from the Key Vault storage.
-
-For more information about how to work with Key Vault, see [Get started with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-get-started).
-
-Then, on the **Key Vault parameters** page, you must specify the parameters for accessing the Key Vault storage:
-
-- **Name** and **Description** – The name and description of the Key Vault storage.
-- **Key Vault URL** – The URL of the Key Vault storage.
-- **Key Vault client** – An interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage for authentication purposes. This client should have access to read secrets from the storage.
-- **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage.
-- **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
-
-Finally, on the **Commerce parameters** page, you must specify the parameters for digital signatures:
+Finally, on the **Commerce parameters** page, you must specify the parameters for digital signing on the Headquarters side:
 
 - **Certificate** – Select the certificate that you configured in the previous step.
 - **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA1**.
@@ -427,7 +415,7 @@ You can download the ER configuration for the archive from Microsoft Dynamics Li
 - **Archiving DMM.version.2.3** data model mapping
 - **Retail data archive FR .version.2.5** format
 
-After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.5** format.
+After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.5** format or the format that you downloaded earlier.
 
 ### Renitialize Commerce components
 
