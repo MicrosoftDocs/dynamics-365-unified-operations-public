@@ -72,7 +72,7 @@ The following POS localization features that are available to customers in all c
 
 ### France-specific POS features
 
-The following France-specific POS features are enabled when the **ISO code** field in the POS functionality profile is set to **FR**.
+The following France-specific POS features are enabled when the primary address of the legal entity that the store belongs to is in France.
 
 #### Digital signing overview
 
@@ -342,7 +342,7 @@ For more information about how to work with receipt formats, see [Set up and des
 
 Complete the fiscal registration setup steps that are described in [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md):
 
-- [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings for the fiscal registration process that are [specific to France](#configure-the-fiscal-registration-process).
+- [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings of the fiscal registration process that are [specific to France](#configure-the-fiscal-registration-process).
 - [Set error handling settings](./setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 - [Enable manual execution of postponed fiscal registration](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 
@@ -403,7 +403,7 @@ Then, you need to configure a certificate profile for your certificates stored i
 
 Finally, on the **Commerce parameters** page, you must specify the parameters for digital signing on the Headquarters side:
 
-- **Certificate** – Select the certificate that you configured in the previous step.
+- **Certificate** – Select the certificate that is store in Key Vault.
 - **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA1**.
 - **Encoding** – Specify the encoding of the signed data, such as **UTF-8**.
 
@@ -430,5 +430,5 @@ There is an option to separately configure the scheduler. Click **Commerce sched
 
 ### Configure channel components
 
-To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-deployment.md).
+To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
 
