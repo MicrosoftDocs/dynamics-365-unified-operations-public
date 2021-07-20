@@ -4,7 +4,7 @@
 title: Set up the fiscal integration for Commerce channels
 description: This topic provides guidelines for setting up the fiscal integration functionality for Commerce channels. 
 author: josaw
-ms.date: 02/01/2019
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -73,7 +73,7 @@ Before you use the fiscal integration functionality, you should configure the fo
         > [!TIP]
         > By selecting **View**, you can view all functional profiles that are related to the current fiscal document provider.
 
-    For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in the Retail SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-retail-sdk).
+    For examples of configurations of fiscal connectors and fiscal document providers, see [Fiscal integration samples in the Commerce SDK](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-commerce-sdk).
 
     > [!NOTE]
     > Data mapping is considered part of a fiscal document provider. To set up different data mappings for the same connector (for example, state-specific regulations), you should create different fiscal document providers.
