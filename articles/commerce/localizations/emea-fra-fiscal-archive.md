@@ -44,15 +44,15 @@ A fiscal archive has the following structure:
   <AchivePeriod> <!-- The identification of the period of the archive and the archive creation date -->
     <Company/> <!-- The identification of the company, including the SIRET code, the NAF code, and the VAT ID of the company -->
     <Store/> <!-- The identification of the store, including its address -->
-    <PeriodGrandTotal/> <!-- The identification of the  -->
-    <Shifts/> <!-- The  -->
-      <Shift/> <!-- The  -->
-    <Receipts/> <!-- The  -->
-      <Receipt/> <!-- The  -->
-    <ReceiptCopies/> <!-- The  -->
-      <ReceiptCopy> <!-- The  -->
-    <AuditEvents> <!-- The  -->
-      <AuditEvent/> <!-- The  -->
+    <PeriodGrandTotal/> <!-- The data of the period grand total journal that the archive was exported from -->
+    <Shifts/> <!-- The list of all shifts that were closed in the store during the period of the archive -->
+      <Shift/> <!-- The data of a shift -->
+    <Receipts/> <!-- The list of all sales receipts that were registered in the shifts included in the archive -->
+      <Receipt/> <!-- The data of a sales receipt -->
+    <ReceiptCopies/> <!-- The list of all sales receipt copies that were printed in the shifts included in the archive -->
+      <ReceiptCopy> <!-- The data of a sales receipt copy  -->
+    <AuditEvents> <!-- The list of all signed audit events that were registered in the shifts included in the archive -->
+      <AuditEvent/> <!-- The data of a signed audit event -->
   ```
 
 
