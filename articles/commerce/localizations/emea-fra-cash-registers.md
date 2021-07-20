@@ -140,7 +140,7 @@ When a shift is closed, the event is registered in the POS audit event log. The 
 
 1. The total amount of sales and returns for the shift including tax per tax rate.
 2. The total amount of sales and returns for the shift including tax.
-3. The perpetual (cumulative) grand total of absolute values of sales and returns for shifts of the same register including tax. 
+3. The cumulative perpetual grand total of absolute values of sales and returns for shifts of the same register including tax. 
 4. The date and time of the shift closing event, in the format YYYYMMDDHHMMSS.
 5. The date and time of the shift.
 6. The sequential number of the shift closing event for this register.
@@ -209,7 +209,18 @@ The journal can then be calculated. Shifts that were closed during the journal p
 
 After the journal is calculated, it can be closed. A closed journal can't be modified, and another journal can't be created for a previous fiscal period, the same period, or an intersecting period. However, the last closed journal for a store can be canceled. In that case, another journal can be created for the same store and fiscal period.
 
-A closed journal is digitally signed. You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Headquarters.
+A closed journal is digitally signed. The data that is signed for a closed journal is a text string that consists of the following data fields:
+
+1. The total amounts of sales and returns for the store and period including tax per tax rate.
+2. The total amount of sales and returns for the store and period including tax.
+3. The cumulative perpetual grand total of absolute values of sales and returns for the store and period including tax. 
+4. The date and time of closing the journal, in the format YYYYMMDDHHMMSS.
+5. The starting and ending dates of the period.
+6. The sequential number of the signed period grand total journal for the store.
+7. A value (Y/N) that indicates whether the journal is the first signed journal for the store.
+8. The previous signature for the store and period. A blank value is used for the first signed journal for the store.
+
+You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Headquarters.
 
 A period grand total journal can also be marked as **Annual** when being created. An annual journal summarizes period grand total journals for the fiscal periods of a fiscal year. It is only possible to create an annual journal for a fiscal year if a journal for the last fiscal period of the fiscal year has been created, calculated, and closed. It is not, however, required that journals for all fiscal periods of the fiscal year exist. For example, if a new store is opened in the middle of the year, the first journal will correspond to the fiscal period that the store is opened in. In this case, the first annual journal will summarize journals for fiscal periods from the fiscal period that the store is opened in to the last fiscal period of the fiscal year.
 
