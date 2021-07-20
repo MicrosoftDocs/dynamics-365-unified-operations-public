@@ -71,7 +71,7 @@ These features are shown as **(blank)** in the Feature state column. Features in
 
 ### On by default features (optional)
 
-Features that are updated to **On by default** are turned on by default, but can be disabled. Released features that can be disabled are expected to move to this state in the major release that follows after they have been in the released state for at least 6 months. Features that transition to **On by default** will be communicated in the [What's new](whats-new-changed.md) topic for the release. The update is initiated by the owning product team.   
+Features that are updated to **On by default** are turned on by default, but can be disabled. Released features that can be disabled are expected to move to this state in the major release that follows after they have been in the released state for at least 6 months. Features that transition to **On by default** will be communicated in the [What's new](../whats-new-changed.md) topic for the release. The update is initiated by the owning product team.   
 
 > [!NOTE]
 > Since these features will be enabled automatically, it is important to determine if your organization is ready to uptake these features or if more time is required. If more time is required, it may be necessary to temporarily disable these features. Note that a feature transitioning to **On by default** is typically done the major release before the feature is targeted to become **Mandatory**. At that point, you will not have the option to disable the feature. 
@@ -90,7 +90,7 @@ Feature that cannot be disabled and were added as released and optional before o
 
 If a feature hasn't been turned on, an **Enable now** button appears in the details pane. You can use this button to enable the feature.
 
-Some features can't be disabled after you enable them. If the feature that you're trying to enable on can't be enabled, you will receive a warning. At that point, you can select **Cancel** to cancel the operation and leave the feature disabled. However, if you select **Enable** to enable the feature, you won't be able to disable it later.
+Some features can't be disabled after you enable them. If the feature that you're trying to turn on can't be enabled, you will receive a warning. At that point, you can select **Cancel** to cancel the operation and leave the feature disabled. However, if you select **Enable** to enable the feature, you won't be able to disable it later.
 
 Some features will display a message that provides additional information before you enable them. These features are indicated by a yellow warning symbol. You should read the additional information carefully to better understand what will happen when the feature is enabled. However, you can still select **Enable** to enable the feature.
 
