@@ -56,7 +56,7 @@ This topic provides information about the two methods that tax registers use to 
 Before you create a journal voucher for tax differences in the system, you must complete the following setup procedures.
 
 1.  [Set up General ledger parameters](#set-up-general-ledger-parameters).
-2.  [Set up a journal for ledger posting of tax differences by using the balance method](#_Set_up_a).
+2.  [Set up a journal for ledger posting of tax differences by using the balance method](#_Set_up_a_journal_for_ledger_posting_of_tax_differences_that_are_calculated_by_using_the_balance_method).
 3.  [Set up ledger accounts for deferred taxes](#set-up-ledger-accounts-for-deferred-taxes).
 4.  [Set up a sales tax code for profit tax](#set-up-a-sales-tax-code-for-profit-tax).
 5.  [Set up a sales tax code for temporary tax differences that are based on deferrals](#set-up-an-expense-code-for-temporary-tax-differences-that-are-based-on-deferrals).
@@ -103,18 +103,18 @@ Before you create a journal voucher for tax differences in the system, you must 
    > 
    > Company should make a make a note of their choice in the accounting policy.
 
-1.  On the Action Pane, select **Save**.
-2.  Go to **Tax &gt; Setup &gt; Profit tax &gt; Ledger posting groups of profit tax**.
-3.  On the Action Pane, select **New**.
-4.  In the **Ledger posting group** field, select the name of the ledger posting group that you created in step 2. The **Sales tax payable** field is automatically set.
-5.  In the **Description** field, enter a description of the ledger posting group.
-6.  On the **General** FastTab, set the following fields:
+6.  On the Action Pane, select **Save**.
+7.  Go to **Tax &gt; Setup &gt; Profit tax &gt; Ledger posting groups of profit tax**.
+8.  On the Action Pane, select **New**.
+9.  In the **Ledger posting group** field, select the name of the ledger posting group that you created in step 2. The **Sales tax payable** field is automatically set.
+10.  In the **Description** field, enter a description of the ledger posting group.
+11.  On the **General** FastTab, set the following fields:
 
     -   In the **DTA** field, enter a ledger account from group of accounts **09**.
     -   In the **DTL** field, enter a ledger account from group of accounts **77**.
     -   In the **CTI** and **CTE** fields, enter a ledger account for posting amounts of CTI and CTI from group of accounts **99**.
     
-7.  On the Action Pane, select **Save**.
+12.  On the Action Pane, select **Save**.
 
 ![Setting up a ledger posting group on the Ledger posting groups of profit tax page](media/ru_tax_differ2.png)
 
@@ -288,12 +288,12 @@ For each line of the **Calculation of constant tax differences** tax register, t
    > [!NOTE]
    >  On the **Ledger journal** menu, the **Tax differences** command generates the tax difference amounts that are calculated in the **Calculation of temporary tax differences** and **Calculation of constant tax differences** tax registers. If you generate a ledger journal that has transactions for tax differences of one type, such as accrual method or balance method, the second menu item becomes unavailable. In other words, you can't simultaneously use the old and new methods to create a ledger posting for tax differences.
 
-1.  On the Action Pane, select **Create &gt; Create journal**. The journal is created, and its lines include the vouchers for the tax difference of the current period.
-2.  On the Action Pane, select **Lines** to view the vouchers and other details.
+4.  On the Action Pane, select **Create &gt; Create journal**. The journal is created, and its lines include the vouchers for the tax difference of the current period.
+5.  On the Action Pane, select **Lines** to view the vouchers and other details.
 
 ![Journal voucher page](media/ru_tax_differ9.png)
 
-1.  On the Action Pane, select **Post &gt; Post** to post the journal.
+6.  On the Action Pane, select **Post &gt; Post** to post the journal.
 
 ### Create a reversing journal voucher for tax differences
 
