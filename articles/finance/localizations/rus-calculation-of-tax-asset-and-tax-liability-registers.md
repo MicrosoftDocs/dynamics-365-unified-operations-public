@@ -110,9 +110,9 @@ Before you create a journal voucher for tax differences in the system, you must 
 10.  In the **Description** field, enter a description of the ledger posting group.
 11.  On the **General** FastTab, set the following fields:
 
-    -   In the **DTA** field, enter a ledger account from group of accounts **09**.
-    -   In the **DTL** field, enter a ledger account from group of accounts **77**.
-    -   In the **CTI** and **CTE** fields, enter a ledger account for posting amounts of CTI and CTI from group of accounts **99**.
+     -   In the **DTA** field, enter a ledger account from group of accounts **09**.
+     -   In the **DTL** field, enter a ledger account from group of accounts **77**.
+     -   In the **CTI** and **CTE** fields, enter a ledger account for posting amounts of CTI and CTI from group of accounts **99**.
     
 12.  On the Action Pane, select **Save**.
 
