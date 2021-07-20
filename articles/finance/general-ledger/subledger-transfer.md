@@ -3,14 +3,14 @@
 
 title: Subledger transfer to the General ledger
 description: This topic describes capabilities related to the subledger transfer process in General ledger.
-author: roschlom
+author: rcarlson
 ms.date: 07/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
-k
+
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 # ROBOTS: 
 audience: Application User
