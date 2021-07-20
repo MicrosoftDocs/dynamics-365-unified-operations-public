@@ -1,10 +1,19 @@
 # How to create a new Electronic invoicing feature
 
-The objective of this article is to guide you through the creation of a new Electronic invoicing feature, applicable in the scenario where the country's configurable Electronic invoicing feature is not provided out-of-box, and it is possible to use the Invoice model configuration provided out-of-box as is, leveraging the existing invoice mapping for the feature you want to create.
+The objective of this article is to guide you through the creation of a new Electronic invoicing feature, when the country's configurable Electronic invoicing feature is not provided out-of-box for importation.
+
+In this creation use case, you will:
+
+- Create a new Electronic invoicing feature instead of importing from the Global repository.
+- Create a new file format configurations, using the Invoice model configuration provided out-of-box as is, leveraging the existing invoice mapping for the feature you want to create.
+- Add the file format configurations to the Electronic invoicing feature Configurations.
+- Create the Electronic invoicing feature Setup.
+- Complete and Publish the new Electronic invoicing feature into the Global repository for your organization.
+- Deploy the new Electronic invoicing feature to the Service environment.
 
 ## Creating new file format configurations derived from existing Invoice model
 
-The process begins at the **Electronic reporting** module, creating a new file format configuration for the new Electronic invoicing feature you want to create.
+The process begins at the **Electronic reporting** module, creating the file format configurations required for the new Electronic invoicing feature you want to create. Notice that through these steps you can either create the electronic invoice file format configuration, as well any other file format configurations your new Electronic invoicing feature may require to communicate with a web services, for example.
 
 1.  Sign in to your Regulatory Configuration Service (RCS) account.
 
@@ -12,47 +21,51 @@ The process begins at the **Electronic reporting** module, creating a new file f
 
 3.  Select **Global**, then select **Open**.
 
-4.  On the left panel, select and import **Invoice model** configuration for Electronic invoices. For Brazil you must import the **Fiscal documents** model configuration instead.
+4.  On the left panel, select **Invoice model** configuration for Electronic invoices. For Brazil you must select the **Fiscal documents** model configuration instead.
 
-5.  Close the page.
+5.  On **Configurations** tab, select **Import**.
 
 6.  Close the page.
 
-7.  Select **Reporting configurations** tile.
+7.  Close the page.
 
-8.  Select the invoice model you imported (either **Invoice model** or **Fiscal documents** model).
+8.  Select **Reporting configurations** tile.
 
-9.  Select **Create configuration**, and then select **Format based on invoice context model**.
+9.  Select the invoice model you imported (either **Invoice model** or **Fiscal documents** model).
 
-10. In the **Name** field, enter the name of the format configuration.
+10.  Select **Create configuration**, and then select **Format based on invoice context model**.
 
-11. In the **Description** field, enter the description of the format configuration.
+11. In the **Name** field, enter the name of the format configuration.
 
-12. In the **Format type**, select the file extension type.
+12. In the **Description** field, enter the description of the format configuration.
 
-13. Select **Create configuration**.
+13. In the **Format type**, select the file extension type.
 
-14. Select the format configuration you are working on.
+14. Select **Create configuration**.
 
-15. Select **Designer** and using the Format designer tool, configure the file layout and meet the specification requirements.
+15. Select the format configuration you created.
 
-17. On **Versions** tab, select **Change status** to **Complete**.
+16. Select **Designer** and using the Format designer tool, configure the file layout to meet the file format specifications.
 
-18. On **Versions** tab, select **Change status** to **Share** for publishing in the Global repository.
+17. Close the page.
 
-To allow the service consuming the format configuration, it needs to be shared with the Microsoft domain.
+18. On **Versions** tab, select **Change status** to **Complete**.
 
-1.  In RCS, select the format configuration you are working on.
+19. On **Versions** tab, select **Change status** to **Share** for publishing in the Global repository.
 
-2.  With the format configuration with status **Shared,** on **Versions** tab, select **Advanced sharing**, and then select **Global repository.**
+To allow the Electronic invoicing service consuming the new file format configuration, it needs to be shared with the Microsoft domain.
 
-3.  In the **Shared with** tab, select **+Organization**.
+20.  Select the format configuration you are working on.
 
-4.  In the **Parameters** field, enter **Microsoft.com** to share with the Microsoft domain.
+21.  With the format configuration with status **Shared,** on **Versions** tab, select **Advanced sharing**, and then select **Global repository.**
 
-5.  Select **OK.**
+22.  In the **Shared with** tab, select **+Organization**.
 
-## Creating a new e-invoicing feature
+23.  In the **Parameters** field, enter **Microsoft.com** to share with the Microsoft domain.
+
+24.  Select **OK.**
+
+## Creating the new Electronic invoicing feature
 
 Continue the process at the **Electronic invoicing features** page, with creation of a new e-invoicing feature.
 
@@ -64,13 +77,17 @@ Continue the process at the **Electronic invoicing features** page, with creatio
 
 4.  In the **Description** field, enter the description of the e-invoicing feature.
 
-## Adding the new file format configuration
+5.  Select **Create feature**.
 
-1.  Select the e-invoicing feature you are working on.
+## Adding Electronic invoicing feature Configurations
 
-2.  On the **Configurations** tab, select **Add**, select the format configuration you just created and select **OK.**
+1.  Select the Electronic invoicing feature you are working on.
 
-## Creating a new feature Setup
+2.  On the **Configurations** tab, select **Add**.
+
+3.  On the **Configurations** grid, browse and select the file format configurations you created and select **OK**.
+
+## Adding Electronic invoicing feature Setups
 
 1.  On the **Setups** tab, select **Add** and then select **Custom setup.**
 
