@@ -59,7 +59,7 @@ A fiscal archive has the following structure:
 The PeriodGrandTotal node of a fiscal archive contains the following elements:
 
 | Element/Node | Comment|
-| SequentialNumber | |
+| SequentialNumber | The sequential number of the signed period grand total journal for the store |
 | Date | |
 | FromDate | |
 | ToDate | |
