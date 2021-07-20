@@ -85,7 +85,9 @@ Continue the process at the **Electronic invoicing features** page, with creatio
 
 2.  On the **Configurations** tab, select **Add**.
 
-3.  On the **Configurations** grid, browse and select the file format configurations you created and select **OK**.
+3.  On the **Configurations** grid, browse and select the file format configurations your Electronic invoicing feature requires to either generating the electronic invoice file, as well exchanging messages with an web services, if you will.
+
+4.  Select **OK**.
 
 ## Adding Electronic invoicing feature Setups
 
