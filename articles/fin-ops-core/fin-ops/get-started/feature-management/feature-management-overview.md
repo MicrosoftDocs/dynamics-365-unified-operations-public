@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.2
 [!include [banner](../../includes/banner.md)]
 [!include [preview banner](../../includes/preview-banner.md)]
 
-Features are added and updated in every release. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. You can then use the workspace to view feature documentation and conditonally enable or disable features.
+Features are added and updated in every release. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. You can then use the workspace to view feature documentation and enable or disable features.
 
 ## The Feature management workspace
 
@@ -44,7 +44,7 @@ The feature list includes the following information:
 - **Module** – The module that is affected by the new feature.
 
 > [!NOTE]
-> **Feature state** is included starting with 10.0.21 / Platform update 45.
+> **Feature state** is included starting with version 10.0.21.
 
 When you select a feature, more information appears in the details pane to the right of the feature list. At the top of the pane, you will see the feature name, the date when the feature was added, the module that is affected by the feature, and a **Learn more** link. Select this link to view the documentation for the feature. If documentation isn't available, you're taken to a temporary page. The details pane also includes a **Comments** field where you can add your own comments about the feature.
 
@@ -63,7 +63,7 @@ Features can transition between a number of different states from being introduc
 Product teams can decide to initially start a new feature as a preview feature. Preview features are not enabled by default and are optional. The owning product team will update features to released once they have completed a succesful preview period.  
 
 > [!NOTE]
-> Preview features are subject to specific preview terms and conditions: https://go.microsoft.com/fwlink/?linkid=2105274. 
+> Preview features are subject to specific preview [terms and conditions](https://go.microsoft.com/fwlink/?linkid=2105274). 
 
 ### Released features (optional)
 
@@ -71,10 +71,10 @@ These features are shown as **(blank)** in the Feature state column. Features in
 
 ### On by default features (optional)
 
-Features that are updated to **On by default** are turned on by default, but can still be disabled. Released features that can be disabled are expected to move to this state in the major release that follows after they have been in the released state for at least 6 months. Features that transition to **On by default** will be communicated in the [What's new article](need link). The update is initiated by the owning product team.   
+Features that are updated to **On by default** are turned on by default, but can be disabled. Released features that can be disabled are expected to move to this state in the major release that follows after they have been in the released state for at least 6 months. Features that transition to **On by default** will be communicated in the [What's new](whats-new-changed.md) topic for the release. The update is initiated by the owning product team.   
 
 > [!NOTE]
-> Since these features will be enabled automatically, it is important to determine if your organization is ready to uptake these features or if more time is required. For the latter, it may be necessary to temporarily disable these features. Note that a feature transitioning to **On by default** is typically done the major release before the feature is targeted to become **Mandatory**. At that point, you will not have the option to disable the feature. 
+> Since these features will be enabled automatically, it is important to determine if your organization is ready to uptake these features or if more time is required. If more time is required, it may be necessary to temporarily disable these features. Note that a feature transitioning to **On by default** is typically done the major release before the feature is targeted to become **Mandatory**. At that point, you will not have the option to disable the feature. 
 
 ### Released features (mandatory)
 
@@ -89,8 +89,6 @@ Feature that cannot be disabled and were added as released and optional before o
 ## Enable a feature
 
 If a feature hasn't been turned on, an **Enable now** button appears in the details pane. You can use this button to enable the feature.
-
-- Select the feature to enable, and then, in the details pane, select **Enable now**.
 
 Some features can't be disabled after you enable them. If the feature that you're trying to enable on can't be enabled, you will receive a warning. At that point, you can select **Cancel** to cancel the operation and leave the feature disabled. However, if you select **Enable** to enable the feature, you won't be able to disable it later.
 
