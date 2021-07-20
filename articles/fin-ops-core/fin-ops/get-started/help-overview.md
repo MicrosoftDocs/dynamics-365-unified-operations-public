@@ -4,7 +4,7 @@
 title: Help system
 description: This topic provides an overview of the Help system for Finance and Operations apps.
 author: edupont04
-ms.date: 04/14/2021
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Users of the following apps can access context-sensitive Help and other content that is based on the same Help system:
 
-- Microsoft Dynamics 365 Commerce
+- Dynamics 365 Commerce
 - Dynamics 365 Finance
 - Dynamics 365 Human Resources
 - Dynamics 365 Supply Chain Management
@@ -51,7 +51,7 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365](/dynamics365/)) is
 
 You can find content on docs.microsoft.com by using any search engine. For the best results, we recommend that you use a site search, such as **site:docs.microsoft.com dynamics 365 "search term"**.
 
-<!--## Get notified about changes through an RSS feed
+## Get notified about changes through an RSS feed
 
 To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
 
@@ -67,7 +67,7 @@ Alternatively, you can subscribe to an RSS feed by app:
 - [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
 - [Supply Chain](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
 - [Talent](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
-COMMENTED OUT UNTIL THE CONTNT HAS BEEN INDEXED BY THE SEARCH API-->
+
 ### Leave us feedback
 
 If you have feedback or questions about a topic, leave us a comment at the bottom of the page.
