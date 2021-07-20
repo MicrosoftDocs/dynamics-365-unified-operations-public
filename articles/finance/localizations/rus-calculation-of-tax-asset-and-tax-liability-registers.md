@@ -121,7 +121,7 @@ Before you create a journal voucher for tax differences in the system, you must 
 ### Set up a sales tax code for profit tax
 
 1.  Go to **Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax codes**.
-2.  Create and set up a sales tax code for profit tax. For more information, see [Set up sales tax codes](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-codes).
+2.  Create and set up a sales tax code for profit tax. For more information, see [Set up sales tax codes](set-up-sales-tax-codes.md).
 3.  On the Action Pane, select **Sales tax code &gt; Values**.
 4.  In the **Value** field, enter the value of the profit tax rate that will be used to calculate the tax difference.
 5.  On the Action Pane, select **Save**.
@@ -129,7 +129,7 @@ Before you create a journal voucher for tax differences in the system, you must 
 ### Set up an expense code for temporary tax differences that are based on deferrals
 
 1.  Go to **Tax &gt; Setup &gt; Profit tax &gt; Expense codes**.
-2.  Create and set up expense codes that are used for deferrals postings or that form constant tax differences. For more information, see [Create an expense or income code](https://docs.microsoft.com/dynamics365/finance/localizations/rus-expense-and-income-codes#create-an-expense-or-income-code).
+2.  Create and set up expense codes that are used for deferrals postings or that form constant tax differences. For more information, see [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code).
 3.  On the **General** FastTab, set the following fields:
 
     -   In the **Code type** field, select **Issue**.
@@ -139,7 +139,7 @@ Before you create a journal voucher for tax differences in the system, you must 
 
 ### Set up tax registers
 
-Before you complete this procedure, you must create expense codes. For more information, see [Create an expense or income code](https://docs.microsoft.com/dynamics365/finance/localizations/rus-expense-and-income-codes#create-an-expense-or-income-code).
+Before you complete this procedure, you must create expense codes. For more information, see [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code).
 
 1.  Go to **Tax &gt; Setup &gt; Profit tax &gt; Registers**.
 2.  Select the tax register, and then, on the Action Pane, select **Expense codes**.
@@ -244,7 +244,7 @@ For each line of the **Calculation of temporary tax differences** tax register, 
 The **Calculation of constant tax differences by balance method** and **Calculation of constant tax differences** tax registers reflect information about the constant difference that is determined based on the amount of expenses and the rated amount for expenses of this type.
 The **Calculation of constant tax differences by balance method** tax register has the following sources of information:
 -   The **Incomes and expenses that do not influence the tax base** tax register.
--   The **Standard expenses in current period** tax register. For more information, see [Rated expenses registers](https://docs.microsoft.com/dynamics365/finance/localizations/rus-rated-expenses-registers).
+-   The **Standard expenses in current period** tax register. For more information, see [Rated expenses registers](rus-rated-expenses-registers.md).
 
 Unlike the **Calculation of constant tax differences by balance method** tax register, the **Calculation of constant tax differences** tax register isn't based on the following tax registers:
 
