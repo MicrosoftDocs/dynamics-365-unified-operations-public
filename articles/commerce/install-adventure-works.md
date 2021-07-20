@@ -40,7 +40,7 @@ Before installing the Adventure Works theme, it is required to have a Dynamics 3
 
 ## Installation steps
 
-### Step 1: Install the Adventure Works theme in your application
+### Install the Adventure Works theme in your application
 
 The Adventure Works theme package is available in the dynamics365-commerce feed as **@msdyn365-commerce-theme/adventureworks-theme-kit**. The Adventure Works theme package is part of the same feed, but under a different namespace, so you will need to add a registry entry for this namespace as shown below:
 
@@ -62,19 +62,17 @@ You should update the theme version in package.json to a specific version.
 > - The version of the theme should match the module library version to ensure that all features work as expected. 
 > - The minimum version for the Commerce module library and SDK should be 10.0.20 (9.31). 
 
-### Step 2: Set up the fonts for the Adventure Works theme
+### Set up the fonts for the Adventure Works theme
 
 After the Adventure Works theme is installed on your app, you must add the font files required for the theme. To do this, copy all of the font files from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\public\webfonts** to the partner application public folder font path **\public\webfonts**.
 
-### Step 3: Set up the resources for the Adventure Works theme
+### Set up the resources for the Adventure Works theme
 
 The next step is to update the required default resource for the theme. To do this, copy the content from the global.json file under **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks\resources\modules** to the partner application global.json file under **\src\resources\modules**.  If the target **\src\resources** folder does not exist, it can be copied in its entirety from **\node_modules@msdyn365-commerce-theme\adventureworks-theme-kit\src\modules\adventureworks** to **\src**.
 
-### Step 4: Pull updates and validate the theme
+### Pull updates and validate the theme
 
 To pull SDK, module library, and other dependency updates, see the "Pull updates" section of [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#pull-updates).
-
-Delete the **yarn.lock** file from the root directory. Optionally, you can also delete the **/node_modules** folder to get a clean set of dependency files. Run the yarn command to pull all the dependencies as mentioned in package.json 
 
 After the latest dependencies are pulled down, you can run **yarn start** to run the Node server on your development environment and test the new Adventure Works theme. Browse the application locally using the query string parameter ``?theme=adventureworks`` (for example, ``https://localhost:4000/?theme=adventureworks``).
 
