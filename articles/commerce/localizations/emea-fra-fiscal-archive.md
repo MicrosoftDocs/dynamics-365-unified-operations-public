@@ -54,6 +54,29 @@ A fiscal archive has the following structure:
     <AuditEvents> <!-- The list of all signed audit events that were registered in the shifts included in the archive -->
       <AuditEvent/> <!-- The data of a signed audit event -->
   ```
+### PeriodGrandTotal
 
+The PeriodGrandTotal node of a fiscal archive contains the following elements:
+
+| Element/Node | Comment|
+| SequentialNumber | |
+| Date | |
+| FromDate | |
+| ToDate | |
+| TotalCashSales | |
+| TotalCashReturns | |
+| GrandTotal | |
+| PerpetualGrandTotal | |
+| PerpetualGrandTotalAbsoluteValue | |
+| PeriodGrandTotalLines | |
+| PeriodGrandTotalLine | |
+| TotalInclTax | |
+| TaxRate | |
+| TaxAmount | |
+| DataToSign | |
+| DataToSignFormatVersion | |
+| Signature | |
+| HashAlgorithm | |
+| CertificateThumbprint | |
 
 ## Fiscal archive integrity verification tool
