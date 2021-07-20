@@ -96,7 +96,7 @@ Some features will display a message that provides additional information before
 
 Some features will display a message that the feature can't be enabled until an action is taken. These features are indicated by a red X symbol. You must take the actions described in the description before the feature is enabled. For example, if you can't use a feature until a configuration key is disabled, then you must disable the configuration key first and then return to Feature management to enable the feature.
 
-After a feature is enabled, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or it indicates that the future date when the feature is scheduled to be enabled. It appears every time that you select the feature in the feature list.
+After a feature is enabled, a message appears below the **Learn more** link in the details pane. This message either states that the feature was enabled or it indicates the future date when the feature is scheduled to be enabled. It appears every time that you select the feature in the feature list.
 
 Features that are scheduled to be enabled in the future appear on the **Scheduled** tab. A batch process will enable them at midnight on the specified date, based on the time zone that is represented by the system date.
 
@@ -110,11 +110,9 @@ If a feature has been scheduled to be enabled in the future, a **Schedule** butt
 
 ## Disable a feature
 
-If a feature has already been enabled, a **Disable** button appears in the details pane. You can use this button to disable the feature. The **Disable** button isn't available if the feature can't be disabled.
+If a feature has been enabled, a **Disable** button appears in the details pane. You can use this button to disable the feature. The **Disable** button isn't available if the feature can't be disabled. 
 
-- Select the feature to disbale and then, in the details pane, select **Disable**. The feature is disabled, and the **Enable date** field is cleared.
-
-After a feature is disabled, a message appears below the **Learn more** link in the details pane. This message states that the feature hasn't yet been enabled. It appears every time that you select the feature in the feature list. Features that haven't been enabled appear on the **Not enabled** tab.
+After a feature is disabled, a message appears below the **Learn more** link in the details pane. This message states that the feature hasn't been enabled. It appears every time that you select the feature in the feature list. Features that haven't been enabled appear on the **Not enabled** tab.
 
 ## Features that must be enabled
 
@@ -124,7 +122,8 @@ Sometimes, a critical feature is delivered that must be enabled automatically wh
 
 You can enable all features by selecting the **Enable all** button. 
 
-When you select **Enable all**, an option will appear where you need provide the following information:
+When you select **Enable all**, an option will appear where you need to provide the following information:
+
 - A list of all features that require confirmation before they can be enabled. If you want to enable the features in the list, select **Yes** for the **Enable features requiring confirmation** button.
 - A list of all features that can't be enabled will be shown. Those features will not be enabled.
 
@@ -194,7 +193,9 @@ This documentation comes from each Dynamics 365 application team. Often, these f
 A notification mechanism related to making a feature mandatory does not exist today.
 
 ### Do features ever get enabled without the customer knowing about it? 
-Yes, there are two common scenarios where this happens. One is when a feature is moved to **On by default**, in this state it is still possible to disable the feature. Another when a feature is updated to **Mandatory**. These changes will only occur in combination with a major release. Critical features might by exception be moved to **Mandatory** at any update.  
+Yes, this happens when:
+- A feature is moved to **On by default**. In this state, it is still possible to disable the feature. 
+- A feature is updated to **Mandatory**. These changes will only occur in combination with a major release. Critical features might by exception be moved to **Mandatory** at any update.  
 
 ### What is feature flighting and how does it relate to feature management? 
 Feature flights are real-time on/off switches that Microsoft controls. They are separate from the customer control provided by Feature Management. 
