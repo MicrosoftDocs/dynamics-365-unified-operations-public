@@ -7,9 +7,11 @@ author: josaw1
 ms.date: 07/21/2021
 ms.topic: article
 ms.prod: 
-ms.technology: 
+ms.technology:
+
 # optional metadata
-ms.search.form: RetailOperations
+
+ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
@@ -18,7 +20,7 @@ ms.reviewer: v-chgri
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
 
