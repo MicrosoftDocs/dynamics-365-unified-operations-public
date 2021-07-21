@@ -55,7 +55,7 @@ In Finance, import the following versions or later of these Electronic reporting
 For more information about how to download ER configurations, see Download ER configurations from the Global repository.(Download ER configurations from the Global repository of Configuration service - Finance & Operations | Dynamics 365 | Microsoft Docs)
 
 
-#Statistics on invoices process
+# Statistics on invoices process
 Before you generate Payment times report  run the process **Statistic on invoices** to generate an specific view of payments history in a specified period of time. This process has been created for another features and consumed by Payment time report process as well with the aim of getting all invoices partially and fully paid. You can run the process in real time or schedule it to run in the background by using batch processing.
 
 1. Go to **Accounts payable > Periodic tasks > Statistics on invoices**.
