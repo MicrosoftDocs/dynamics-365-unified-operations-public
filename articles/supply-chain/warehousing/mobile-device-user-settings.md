@@ -53,7 +53,7 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 ## Create and manage user settings
 
-Use the **Mobile device user settings** page to create, view, and manage settings profiles at all levels of granularity. The first time that a worker edits their user settings on a new device, a new profile is automatically added on this page, if it doesn't already exist. That profile is then updated every time that the worker makes a change.
+Use the **Mobile device user settings** page to create, view, and manage settings profiles at all levels of granularity. The first time that a worker edits their user settings on a new device, a new profile is automatically added on this page if it doesn't already exist. That profile is then updated every time that the worker makes a change.
 
 You can also define a settings profile that applies to all device brands, device models, and/or workers. You can then increase the granularity by applying more specific settings for individual brands, models, and/or workers.
 
@@ -74,7 +74,7 @@ Follow these steps to create and manage user settings for your mobile devices.
 
     - **Button position** – Select how buttons should be positioned on the device. Elements in the app will be moved to better fit the preference or handedness of the worker. The available options are *Bottom right (default)*, *Bottom left*, *Top right*, and *Top left*.
     - **Display orientation** – Select the display orientation that should be applied by default in the app.
-    - **Scan with camera** – Set this option to *Yes* to use the device camera to scan input fields where the preferred input mode is set to *Scanning*. If your device has a built-in scanner, set this option to *No* to use the scanner instead.
+    - **Scan with a camera** – Set this option to *Yes* to use the device camera to scan input fields where the preferred input mode is set to *Scanning*. If your device has a built-in scanner, set this option to *No* to use the scanner instead.
     - **Show product photo** – Select whether product photos should be shown if they are available for the released product. For more information about how to add product images, see [Add an image to a product](../pim/tasks/add-image-product.md).
     - **Display color theme** – Select a color theme for the device.
     - **Sound level** – Select the sound level for the device. Select a value between 0 (zero) and 10. A value of *0* represents no sound, and a value of *10* represents maximum volume. The default value is *4*.
