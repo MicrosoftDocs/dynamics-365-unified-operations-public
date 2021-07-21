@@ -34,7 +34,7 @@ Fiscal archive is part of the [Cash register functionality for France](./emea-fr
 
 Fiscal archive can be exported from a closed period grand total journal. See [Period grand total journal](./emea-fra-cash-registers.md#period-grand-total-journal) for more information on how to work with period grand total journals.
 
-The XML format of fiscal archive is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). See [Configure the archive export format](./emea-fra-cash-registers.md#configure-the-archive-export-format) to learn how to import and apply ER configurations that are required to export fiscal archive.
+The XML format of fiscal archive is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). See [Configure the archive export format](./emea-fra-cash-registers.md#configure-the-archive-export-format) to learn how to import and apply ER configurations that are required to export fiscal archives.
 
 ## Fiscal archive structure
 
@@ -76,7 +76,7 @@ The PeriodGrandTotal node of a fiscal archive contains the following elements:
 | DataToSign                       | The string that was [built from the elements of the period grand total journal record](./emea-fra-cash-registers.md#period-grand-total-journal), and that was used for signing |
 | DataToSignFormatVersion          | The internal version of the format of data used for signing |
 | Signature                        | The digital signature of the period grand total journal record |
-| HashAlgorithm                    | The hash algorithm that was used for hashing the date before signing |
+| HashAlgorithm                    | The hash algorithm that was used for hashing the data before signing |
 | CertificateThumbprint            | The thumbprint of the certificate that was used for signing |
 
 ### Shift
@@ -101,7 +101,7 @@ The Shift node of a fiscal archive contains the following elements:
 | DataToSign                       | The string that was [built from the elements of the shift record](./emea-fra-cash-registers.md#digital-signing-of-closed-shifts), and that was used for signing |
 | DataToSignFormatVersion          | The internal version of the format of data used for signing |
 | Signature                        | The digital signature of the shift record |
-| HashAlgorithm                    | The hash algorithm that was used for hashing the date before signing |
+| HashAlgorithm                    | The hash algorithm that was used for hashing the data before signing |
 | CertificateThumbprint            | The thumbprint of the certificate that was used for signing |
 
 ### Receipt
@@ -154,8 +154,27 @@ The Receipt node of a fiscal archive contains the following elements:
 | DataToSign                       | The string that was [built from the elements of the sales transaction record](./emea-fra-cash-registers.md#digital-signing-of-sales-transactions), and that was used for signing |
 | DataToSignFormatVersion          | The internal version of the format of data used for signing |
 | Signature                        | The digital signature of the sales transaction record |
-| HashAlgorithm                    | The hash algorithm that was used for hashing the date before signing |
+| HashAlgorithm                    | The hash algorithm that was used for hashing the data before signing |
 | CertificateThumbprint            | The thumbprint of the certificate that was used for signing |
 
+### ReceiptCopy
+
+The ReceiptCopy node of a fiscal archive contains the following elements:
+
+| Element/Node                    | Comment |
+|---------------------------------|---------|
+| RegisterNumber                  | The register number that the copy of receipt is printed from |
+| CopyNumber                      | The number of the receipt copy for this sales transaction |
+| SequentialNumber                | The sequential number of the signed receipt copy event for this register |
+| OriginalReceiptNumber           | The printed receipt number of the original sales transaction|
+| OriginalReceiptSequentialNumber | The sequential number of the original sales transaction |
+| Date                            | The date and time of the receipt copy event in the format YYYYMMDDHHMMSS |
+| OperatorCode                    | The code of the operator that issued the receipt |
+| OperatorName                    | The name of the operator that issued the receipt |
+| DataToSign                      | The string that was [built from the elements of the receipt copy record](./emea-fra-cash-registers.md#digital-signing-of-receipt-copies), and that was used for signing|
+| DataToSignFormatVersion         | The internal version of the format of data used for signing |
+| Signature                       | The digital signature of the receipt copy record |
+| HashAlgorithm                   | The hash algorithm that was used for hashing the data before signing |
+| CertificateThumbprint           | The thumbprint of the certificate that was used for signing |
 
 ## Fiscal archive integrity verification tool
