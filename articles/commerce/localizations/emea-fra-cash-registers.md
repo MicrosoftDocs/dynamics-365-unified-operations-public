@@ -228,7 +228,7 @@ A period grand total journal can also be marked as **Annual** when being created
 
 A fiscal archive is an XML file that can be exported from a period grand total journal that has been closed. It includes the totals for the closed period, and also includes detailed data about sales transactions and events. The exported file is digitally signed, and the signature is contained in a separate file. It is required to keep exported fiscal archives on a secured external media for the legal retention period.
 
-Commerce also includes a tool that can be used to verify the integrity of a fiscal archive and detect violations of the signature of the archive and of the chains of signed records in the archive. This tool is developed in form of a Powershell script that is available via the Commerce SDK. See [Fiscal archive](./emea-fra-fiscal-archive.md) for a detailed structure of the fiscal archive format and a guidance on how to use the fiscal archive integrity verification tool.
+Commerce also includes a tool that can be used to verify the integrity of a fiscal archive and detect violations of the signature of the archive and of the chains of signed records in the archive. This tool is developed in form of a PowerShell script that is available via the Commerce SDK. See [Fiscal archive](./emea-fra-fiscal-archive.md) for a detailed structure of the fiscal archive format and a guidance on how to use the fiscal archive integrity verification tool.
 
 
 ## Setting up Commerce for France
@@ -430,7 +430,7 @@ You can download the ER configuration for the archive from Microsoft Dynamics Li
 
 After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.5** format or the format that you downloaded earlier.
 
-### Renitialize Commerce components
+### Reinitialize Commerce components
 
 > [!NOTE]
 > You only need to complete the steps of this section if you are updating an existing environment.
