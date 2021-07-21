@@ -43,6 +43,7 @@ Currently, we support dual-write in the following regions:
    + India
    + Japan
    + South America
+   + United Arab Emirates
    + United Kingdom
    + United States
 
