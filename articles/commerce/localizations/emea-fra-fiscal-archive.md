@@ -179,7 +179,7 @@ The ReceiptCopy node of a fiscal archive contains the following elements:
 
 ### AuditEvent
 
-The ReceiptCopy node of a fiscal archive contains the following elements:
+The AuditEvent node of a fiscal archive contains the following elements:
 
 | Element/Node            | Comment |
 |-------------------------|---------|
@@ -200,24 +200,24 @@ The ReceiptCopy node of a fiscal archive contains the following elements:
 
 The fiscal archive integrity verification tool can be used to verify the integrity of a fiscal archive and detect violations of the signature of the archive and of the chains of signed records in the archive. It should be applied to a fiscal archive file and corresponding signature file. When run, the script does the following:
 
-- Verify the signature of the fiscal archive.
-- Verify signatures and signature chains of all fiscal archive records, that is, of the period grand total journal, shift, receipt, receipt copy, and audit event records. For each record:
-  - Build a text string from data elements of the record according to the [digital signing rules](./emea-fra-cash-registers.md#digital-signing-overview) and the internal version of the format of data used for signing of the record. This includes the signature of the previous record of the same type.
-  - Calculate a hash code of the string by using the hash algorithm that was used for hashing the data of the record before signing.
-  - Decrypt the signature of the record using the public key of the digital certificate that was used for signing of the record.
-  - Compare the result with the hash code calculated earlier.
-- Print all integrity violations found.
+- Verifies the signature of the fiscal archive file.
+- Verifies signatures and signature chains of all fiscal archive records, that is, of the period grand total journal, shift, receipt, receipt copy, and audit event records. For each record:
+  - Builds a text string from data elements of the record according to the [digital signing rules](./emea-fra-cash-registers.md#digital-signing-overview) and the internal version of the format of data used for signing of the record. This includes the signature of the previous record of the same type.
+  - Calculates a hash code of the string by using the hash algorithm that was used for hashing the data of the record before signing.
+  - Decrypts the signature of the record using the public key of the digital certificate that was used for signing of the record.
+  - Compares the result with the hash code calculated earlier.
+- Prints all integrity violations found.
 
 This tool is developed in form of a Powershell script and is published via Commerce SDK. Follow these steps to obtain the tool and run it against a fiscal archive:
 
 1. Dowload the tool from Commerce SDK:
-  - Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-  - Open the last available release branch (for example, [release/9.30](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.30)).
-  - Open **src \> FiscalIntegration \> SequentialSignatureFrance \> FiscalArchiveIntegrityVerificationTool**.
-  - Review the license terms for the tool.
-  - Download the contents of the folder to your local machine.
+    - Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
+    - Open the last available release branch (for example, [release/9.30](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.30)).
+    - Open **src \> FiscalIntegration \> SequentialSignatureFrance \> FiscalArchiveIntegrityVerificationTool**.
+    - Review the license terms for the tool.
+    - Download the contents of the folder to your local machine.
 2. Export public key files for all digital certificates that are used for digital signing of records.
 3. Put the fiscal archive file, its signature file, and all public key files into one folder.
 4. Run Windows PowerShell.
-5. Execute the **verify.ps1** script of the tool and specify the full path to the fiscal archive.
-  
+5. Execute the **verify.ps1** script of the tool and specify the fiscal archive file name including the full path to it.
+6. Review integrity violations, if any.
