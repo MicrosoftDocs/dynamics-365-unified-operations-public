@@ -19,11 +19,11 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic presents a scenario that makes it possible for either a certain worker or all workers to over pick. The over picking process allows for controlled over picking during the picking work.
 
-Warehouse over picking is a simple concept&mdash;it means of that during pick confirmation, the system allows over picking and variance while taking into account the limits set for overdelivery on the line level of the transfer orders and sales orders. If the limit is exceeded, the Warehouse Management app will notify the worker that they are exceeding the limit.
+Warehouse over picking is a simple concept&mdash;it means that the system will allow workers to pick more items than specified for an order while taking into account the overdelivery limits set at the line level for the transfer order or sales order. If the limit is exceeded, the Warehouse Management app will notify the worker that they are exceeding the limit.
 
-This feature helps minimizes maintenance and maintains the flexibility of the setup. You can define one or more mobile device menu items and enable over picking only for some of them. You can also prevent selected workers from over picking (without changing the menu items) by switching off this capability on the relevant worker setups. You can also configure over picking for sales orders and transfer orders separately on each worker setup.
+This feature helps minimizes maintenance and maintains the flexibility of your setup. You can define one or more mobile device menu items and enable over picking only for some of them. You can also prevent selected workers from over picking sales and/or transfer orders by switching off one or both of these capabilities on the relevant worker setups (without changing the menu items).
 
-This feature can help workers save time and effort when picking and shipping items. Here are some examples:
+This feature can help workers save time and effort when picking and shipping items. For example, this feature enables workers to:
 
 - Compensate for shrinkage during picking or shipment
 - Avoid unpacking certain packaging material during the picking process
@@ -42,7 +42,9 @@ This topic provides a scenario that illustrates how to set up and use this featu
 
 The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to *USMF* before you begin.
 
-## Scenario set up
+## Scenario setup
+
+Before you work through the examples scenario, enable over picking for both the relevant worker and the relevant menu item.
 
 ### Set up a worker to allow over pick
 
@@ -84,7 +86,7 @@ Here are general guidelines for setting up a mobile device menu item for allowin
 
 ## Example scenario
 
-Once you have the prerequisites, worker setup, and menu item setup in place, you are ready to work with the feature. This section shows a few typical tasks that feature over picking.
+Once you have the prerequisites, worker setup, and menu item setup in place, you are ready to work with the feature.
 
 ### Create a sales order that allows overdelivery
 
@@ -109,7 +111,7 @@ Once you have the prerequisites, worker setup, and menu item setup in place, you
 
 When the release is completed, you receive informational messages that show the wave and load IDs that were created.
 
-### Get the work ID and license plate number
+### Get the work ID and license plate number for your new order
 
 When you released the sales order to warehouse, the system should have created a new work ID with one pick line. Follow these steps to find the work ID and license plate assignment.
 
@@ -127,7 +129,7 @@ When you released the sales order to warehouse, the system should have created a
 1. In the **Filter** pane, select **Apply**.
 1. Make a note of the **License plate** values that are shown.
 
-### Over pick using the Warehouse Management mobile app
+### Over pick the order using the Warehouse Management mobile app
 
 1. Sign in to the Warehouse Management mobile app as a user in warehouse *24*.
 1. Go to **Outbound \> Sales Picking**.
@@ -147,4 +149,4 @@ When you released the sales order to warehouse, the system should have created a
 1. Review the information on the **Sales orders - Put** page. The **Loc** field should indicate that the picked items are going to the *BAYDOOR* location.
 1. Select **OK** (check mark symbol).
 
-On the **Scan a work ID / license plate ID** page, you receive a "Work Completed" message. This message indicates that the work ID of sales order has been completed and the overpicked quantity doesn't exceed the overdelivery limit of 10%.
+On the **Scan a work ID / license plate ID** page, you receive a "Work Completed" message. This message indicates that the work ID of sales order has been completed and the over picked quantity doesn't exceed the overdelivery limit of 10%.
