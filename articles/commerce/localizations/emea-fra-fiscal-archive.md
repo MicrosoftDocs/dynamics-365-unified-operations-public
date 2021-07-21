@@ -163,18 +163,37 @@ The ReceiptCopy node of a fiscal archive contains the following elements:
 
 | Element/Node                    | Comment |
 |---------------------------------|---------|
-| RegisterNumber                  | The register number that the copy of receipt is printed from |
+| RegisterNumber                  | The register number that the copy of receipt was printed from |
 | CopyNumber                      | The number of the receipt copy for this sales transaction |
 | SequentialNumber                | The sequential number of the signed receipt copy event for this register |
 | OriginalReceiptNumber           | The printed receipt number of the original sales transaction|
 | OriginalReceiptSequentialNumber | The sequential number of the original sales transaction |
 | Date                            | The date and time of the receipt copy event in the format YYYYMMDDHHMMSS |
-| OperatorCode                    | The code of the operator that issued the receipt |
-| OperatorName                    | The name of the operator that issued the receipt |
-| DataToSign                      | The string that was [built from the elements of the receipt copy record](./emea-fra-cash-registers.md#digital-signing-of-receipt-copies), and that was used for signing|
+| OperatorCode                    | The code of the operator that printed the receipt copy |
+| OperatorName                    | The name of the operator that printed the receipt copy |
+| DataToSign                      | The string that was [built from the elements of the receipt copy record](./emea-fra-cash-registers.md#digital-signing-of-receipt-copies), and that was used for signing |
 | DataToSignFormatVersion         | The internal version of the format of data used for signing |
 | Signature                       | The digital signature of the receipt copy record |
 | HashAlgorithm                   | The hash algorithm that was used for hashing the data before signing |
 | CertificateThumbprint           | The thumbprint of the certificate that was used for signing |
+
+### AuditEvent
+
+The ReceiptCopy node of a fiscal archive contains the following elements:
+
+| Element/Node            | Comment |
+|-------------------------|---------|
+| Code                    | A predefined event code |
+| EventType               | A predefined event type |
+| Date                    | The date and time of the audit event in the format YYYYMMDDHHMMSS |
+| RegisterNumber          | The register number that the audit event was registered in |
+| OperatorCode            | The code of the operator that registered the audit event |
+| OperatorName            | The name of the operator that registered the audit event |
+| SequentialNumber        | The sequential number of the signed audit event for this register |
+| DataToSign              | The string that was [built from the elements of the audit event record](./emea-fra-cash-registers.md#digital-signing-of-events), and that was used for signing |
+| DataToSignFormatVersion | The internal version of the format of data used for signing |
+| Signature               | The digital signature of the audit event record |
+| HashAlgorithm           | The hash algorithm that was used for hashing the data before signing |
+| CertificateThumbprint   | The thumbprint of the certificate that was used for signing |
 
 ## Fiscal archive integrity verification tool
