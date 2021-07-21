@@ -105,4 +105,4 @@ Once the generation of report is executed the following statistics are included 
 - **Use of supply chain finance**. If the legal entity offer different type of arrangements, the legal entity must report the proportion (by value and number) of small business invoices paid under these arrangements during the booking period. In Dynamics Finance context, these are the small business invoice paid with cash discount or payment fee. When a cash discount is defined in the vendor invoice and taken if the invoice is paid within the cash discount date, then this transaction is classified as supply chain finance.
 		
 > [!NOTE]
-> A word file for signatures and associated declarations is not currently supported.
+> The file with word extension used for signatures and associated declarations is not currently supported.
