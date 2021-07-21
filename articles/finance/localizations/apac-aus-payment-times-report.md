@@ -65,4 +65,11 @@ Before you generate Payment times report  run the process **Statistic on invoice
 5. Optional, select the **Vendor group**. This selection allows you to introduce an additional transaction filter. You can leave in blank to select all available vendors.
 6. Select *OK* to run the process.
 
+![Statistics on invoices form.](media/apac-aus-payment-times-reporting-01.png)
+
+
+
+
+
+
 Note: When **Calculates statistics** is executed based on the parameters selected, you will be able to see all invoices fully and/or partially settled/paid in a specific period of time for all vendors selected before. Non small business vendors payments are also included because this process is used for another features and the amount of all payments of legal entity are also informed in the report . The identification of small vendor supplier is located in the header section under **Small business** slicer.
