@@ -2,8 +2,8 @@
 # required metadata
 
 title: Complete the Azure Resource Manager (ARM) onboarding process for Azure US Government 
-description: This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors.
-author: tonyafehr
+description: This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. This topic applies to Azure US Government projects.
+author: sericks007
 ms.date: 07/21/2021
 ms.topic: article
 audience: IT Pro
@@ -22,6 +22,10 @@ This topic explains how to complete the Azure Resource Manager (ARM) onboarding 
 To deploy Microsoft Azure Resource Manager (ARM) topologies, you must complete the ARM onboarding process for your connectors. To start the onboarding process, you must have the following items:
 
 -   The Azure subscription ID that you're deploying to
+
+-       > [!Note]
+-       > For US Government Lifecycle Services (LCS) projects, only Azure US Government specific Azure subscriptions will be supported.
+
 -   Ownership of the Azure subscription, or access to the subscription owner, so that you can add contributor workflows, and the Upload Management certificate
 -   The tenant administrator, to work through the admin consent workflow
 
@@ -43,11 +47,30 @@ Complete the following procedures to authorize the LCS DSU to work on the Azure 
 
 #### Authorize the workflow
 
-The administrator of the tenant must complete the following procedure.
+Be sure that you have Azure Active Directory PowerShell cmdlets installed. For more information, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).  
 
-1.  In LCS, on the **Project** page, in the **Environments** section, click **Microsoft Azure settings**.
-2.  On the **Project settings** page, on the **Azure connectors** tab, in the **Organization list** group, click **Authorize** to start the ARM Contributor workflow. This workflow sets up permissions for the DSU, so that it can deploy to your subscription on your behalf.
-3.  On the **Grant admin consent** page, click **Authorize**. Then sign in by using the administrator account of the Azure subscription that you must connect to, and click **Accept**. The authorization is now shown as completed.
+The following two AppIds need to be authorized on the AAD tenant: 
+
+- 68fdae24-7da6-4d2d-82b6-fd78a0f38eb7 
+- 913c6de4-2a4a-4a61-a9ce-945d2b2ce2e0 
+
+Follow these steps to authorize the AppIds on the tenant (repeat the steps for both the applications). 
+
+1. Login to via AuzreAD powershell cmdlet.  
+
+    Connect-AzureAD  (Using Tenant Administrator account) 
+
+2. Check if Service Principal is not already installed.  
+
+    Get-AzureADServicePrincipal -Filter "AppId eq '<AppId>'"  
+
+3. Add Service Principal  
+
+    New-AzureADServicePrincipal -AppId <AppId>  
+
+4. Verify 
+
+    $sp = Get-AzureADServicePrincipal -Filter "AppId eq '<AppId>'"  
 
 #### Set the contributor workflow
 
@@ -72,27 +95,16 @@ Complete the following procedures to enable the Azure subscription to deploy ARM
 
 Follow these steps to enable the Azure Connector and, as required, add an LCS user.
 
-1.  In LCS, on the **Project** page, in the **Environments** section, click **Microsoft Azure settings**.
-2.  On the **Project settings** page, on the **Azure connectors** tab, under **Azure connectors**, click **Add**. 
+1. In LCS, on the **Project** page, in the **Environments** section, click **Microsoft Azure settings**.
+2. On the **Project settings** page, on the **Azure connectors** tab, under **Azure connectors**, click **Add**. 
     > [!NOTE]
     > If you're enabling ARM for an existing connector, click **Edit**.
-3.  Enter the connector name, enter the Azure subscription ID to deploy to, and set the **Configure to use Azure Resource manager** option to **Yes**.
-4.  In the **Azure subscription AAD Tenant domain** field, enter the domain name of the Azure subscription account admin, and then click **Next**.
-5.  Authorize access to the subscription, either by adding the LCS user to the Azure subscription or by using the Management certificate. **Important:** If you're adding an LCS user, continue with step 6. If you must upload a Management certificate, don't complete steps 6 through 8 of this procedure. Instead, complete the next procedure, "Upload the Management certificate."
-6.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then click the **Access Control (IAM)** line item.
-7.  In the **Access Control (IAM)** dialog box, click **Add**, select **Contributor**, and then click **OK**.
-8.  In the **Add users** dialog box, in the **Select** field, enter the LCS user, and then press Enter. 
-    > [!NOTE]
-    > You must specifically enter a user. You can't just add a group that the user is a member of. When the **Users** page opens, you can see that the user is assigned as a **Contributor**.
-
-#### Upload the Management certificate
-
-Complete this procedure only if you didn't complete steps 6 through 8 of the previous procedure, "Enable the Azure Connector and add an LCS user."
-
-1.  In LCS, on the **Microsoft Azure setup** page, click **Download**. Make a note of the location of the certificate file that is downloaded. You will use this information to upload the certificate to the Azure subscription.
-2.  In the [Azure classic portal](https://manage.windowsazure.com/), in the left pane, click **Settings**.
-3.  Filter to the Azure subscription that is used, and then, on the **Management certificates** tab, click **Upload**.
-4.  Select the Management certificate that you downloaded in step 1, and then click **OK**.
+3. Enter the connector name, enter the Azure subscription ID to deploy to, and set the **Configure to use Azure Resource manager** option to **Yes**.
+4. In the **Azure subscription AAD Tenant domain** field, enter the domain name of the Azure subscription account admin, and then click **Next**.
+5. In LCS, on the **Microsoft Azure setup** page, click **Download**. Make a note of the location of the certificate file that is downloaded. You will use this information to upload the certificate to the Azure subscription. 
+6. In the [Azure classic portal](https://manage.windowsazure.com), in the left pane, click **Settings**. 
+7. Filter to the Azure subscription that is used, and then, on the **Management certificates** tab, click **Upload**. 
+8. Select the Management certificate that you downloaded in step 1, and then click **OK**. 
 
 #### Configure deployment settings
 
