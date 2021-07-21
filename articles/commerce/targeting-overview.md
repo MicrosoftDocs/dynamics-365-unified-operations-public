@@ -4,7 +4,7 @@
 title: Device, market, and geolocation targeting
 description: This topic describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder by using device, market, and geolocation information.
 author:  sushma-rao 
-ms.date: 07/31/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,8 +44,7 @@ You can create either an audience or a target first. However, a successful targe
 
 An audience is a group of users, and membership in the group is determined by a set of dynamic rules. These rules are simple AND/OR conditions that are run against information or segments that are available in customer requests. 
 
-Commerce natively supports basic segments such as device information, sign-in status, referrer, and query string parameters. Commerce also supports extensible segments through connections to third-party geolocation and segmentation providers. For more information about how to setup connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
-
+Commerce natively supports basic segments such as device information, sign-in status, referrer, and query string parameters. Commerce also supports extensible segments through connections to third-party geolocation and segmentation providers. For more information about how to set up connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
 
 ### Basic segments
 
@@ -70,14 +69,13 @@ The following segments are available to include in an audience definition by def
 
 - **Referrer** - If a user follows a link to request the page, the referrer is the URL of the page that hosted the link.  
 
-### Extensible Segments
+### Extensible segments
 
-The system allows you to expand the list of segments to incorporate data from other sources. These segments are generically called third-party segments. A segmentation provider will describe the types of segments that are available. Here are some caveats:
+The system allows you to expand the list of segments to incorporate data from other sources. These additional segments are generically called third-party segments. A segmentation provider will describe the types of segments that are available. Here are some caveats:
 - If an external provider is enabled, it may connect to a service with unpredictable performance. To ensure a better user experience, if a user requests a page including targeting and that page references an audience that checks a third-party segment provider, the system will initially respond with a default version of a page. 
-- The user must consent to allow cookies. When they do, their browser will request all segmentation information from relevant providers. The segmentation results will be placed in a cookie returned to the user. Subsequent requests to the page will use this segment information to serve content targeted for this group. Since we show the default version of the page when no additional cookie-based segmentation is available, we are categorizing the cookie as non-essential. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
+- The user must consent to allow cookies. When they do, their browser will request all segmentation information from relevant providers. The segmentation results will be placed in a cookie returned to the user. Subsequent requests to the page will use this segment information to serve content targeted for this group. Since the default version of the page is shown when no additional cookie-based segmentation is available, the cookie can be categorized as non-essential. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
 
 **Disclaimer:** If you enable this feature, your data will be shared with third-party systems that you select. You control what data, if any, you provide to the third party. You understand that the data handling and compliance standards of the third party might differ from the standards of Microsoft Dynamics 365 Commerce. Your privacy is important to Microsoft. To learn more, read our [Privacy and Cookies notice](https://privacy.microsoft.com/privacystatement).
-
 
 ### Create an audience in site builder
 
