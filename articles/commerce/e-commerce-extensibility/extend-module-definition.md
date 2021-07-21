@@ -48,7 +48,7 @@ The following example of a module definition file shows how a core module can be
 
 The **$ref** command can also include a relative path to another module in your /src/modules/ directory.
 
-```xpp
+```json
 {
     "$ref": "../productFeature/productFeature.definition.json",
     "friendlyName": "Extended Product Feature Module",
