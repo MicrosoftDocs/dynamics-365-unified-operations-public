@@ -86,7 +86,7 @@ To onboard additional business partner users to a B2B e-commerce website, follow
 
 1. Run the **1010** (**Customers**) job to sync the new business partner user to the channel database.
 
-After the customer record is synced, the status of the user on the B2B e-commerce website is set to **Active**, and the new user can sign in to the B2B e-commerce website by using their email address. Users can use the sign-up flow to define the password for their account. In order to allow the Identity Provider (AAD B2C) record to be linked to the B2B customer record created, see more details in [Enable automatic linking of identity records to customer accounts](identity-record-linking.md).
+After the customer record is synced, the status of the user on the B2B e-commerce website is set to **Active**, and the new user can sign in to the B2B e-commerce website by using their email address. Users can use the sign-up flow to define the password for their account. To enable the Identity Provider (AAD B2C) record to be linked to the B2B customer record created on sign-up or sign-in, follow directions in [Enable automatic linking of identity records to customer accounts](identity-record-linking.md).
 
 ## Edit business partner user details
 
