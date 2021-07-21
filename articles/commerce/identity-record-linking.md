@@ -79,3 +79,26 @@ For B2C sites, automatic linking will perform the following checks:
 > - The Commerce notifications module can be extended to display error messages to users when error conditions are met.
 > - Social identity provider records set up in Azure AD B2C will also automatically link to the same customer records with matching conditions if a single record is found. A Commerce customer account can be linked to both a local identity record and a social identity record simultaneously.
 
+## Additional resources
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
+
+[Create an e-commerce site](create-ecommerce-site.md)
+
+[Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
+
+[Manage robots.txt files](manage-robots-txt-files.md)
+
+[Upload URL redirects in bulk](upload-bulk-redirects.md)
+
+[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Enable location-based store detection](enable-store-detection.md)
