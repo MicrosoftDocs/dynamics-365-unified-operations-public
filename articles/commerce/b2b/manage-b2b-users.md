@@ -4,7 +4,7 @@
 title: Manage business partner users on B2B e-commerce websites
 description: This topic describes how administrators can add, edit, and delete business partner users on business-to-business (B2B) e-commerce websites.
 author: josaw1
-ms.date: 01/20/2021
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -70,7 +70,7 @@ To approve and set up a business partner administrator user in Commerce headquar
 
 1. Go to **Retail and Commerce IT \> Distribution schedule**, and run the **1010** (**Customers**) job to push the newly created customer and customer hierarchy records to the channel database.
 
-After the request is approved, and the customer and customer hierarchy records are synced to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the request. Users can use the sign-up flow to define the password for their account. To enable the identity provider (Microsoft Azure Active Directory B2C) record to be linked to the B2B customer record that was created at sign-up or sign-in, follow the directions in [Enable automatic linking of identity records to customer accounts](identity-record-linking.md).
+After the request is approved, and the customer and customer hierarchy records are synced to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the request. Users can use the sign-up flow to define the password for their account. To enable the identity provider (Azure AD B2C) record to be linked to the B2B customer record that was created at sign-up or sign-in, follow the directions in [Enable automatic linking of identity records to customer accounts](identity-record-linking.md).
 
 ## Onboard additional business partner users
 
