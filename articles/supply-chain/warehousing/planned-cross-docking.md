@@ -121,7 +121,7 @@ Planned cross-docking is implemented as a load posting method. After you turn on
     - **Supply source:** *Purchase order*
 
 > [!NOTE]
-> You can set up a query to control when a particular cross docking template is used. The query for the cross docking template has only *InventTable* (items) and inner joined *WHSInventTable* (WHS items). When adding other tables to the query, they can only be joined as exist joins or not exist joins and filtering on then retrieves a record from the main table for each matching record in the joined table. When the join type is exist join, the search ends after the first match has been found. For example, the sales order line is joined to the items table, which means that the system will validate and return items for which at least one sales order line exists with the defined condition that essentially fetches the data from the parent (items) table and not from the child (sales order line) table. Therefore, filtering by source documents like sales order line or customer is not possible out-of-the-box. 
+> You can set up a query to control when a particular cross docking template is used. The query for cross docking templates only has *InventTable* (items) and inner joined *WHSInventTable* (WHS items). If you want to add other tables to the query, you can only join them using *exist joins* or *not exist joins*. Filtering on the joined tables retrieves a record from the main table for each matching record in the joined table. When the join type is *exist join*, the search ends after the first match has been found. For example, if you join the sales order line table to the items table, the system will validate and return items for which at least one sales order line exists with the defined condition. This essentially fetches the data from the parent (items) table and not from the child (sales order line) table. Therefore, filtering by source documents like sales order line or customer is not possible out-of-the-box.
 
 ### Create a work class
 
@@ -157,8 +157,9 @@ Planned cross-docking is implemented as a load posting method. After you turn on
     - **Work class ID:** *CrossDock*
 
 1. Select **Save**, and confirm that the **Valid** check box is selected for the *51 Cross Dock* template.
-1. Optional: Select **Edit query** to set the criteria that will apply to a particular work template. 
-    You can set up a query to control when a particular work template is used. For example, you can set a limitation so that a particular template can be used for work only in a specific location. If you want the created work template for the cross docking to be applied on the location, you should set the filter to the Start location and not to the Location. Because for the inbound processes (purchase, cross docking, replenishment) the work creation starts from the put line and at the time of work creation, the location directive populates location with the put location. However, the pick location will be written on the start location.
+1. Optional: Select **Edit query** if you want to set criteria to control when and where the work template is used.
+
+    You can set up a query to control when a particular work template is used. For example, you can set a limitation so that a particular template can only be used for work at a specific location. If you want the cross docking work template to be applied at a specific location, you must filter on the **Start location**, not to the **Location**. This is because, for the inbound processes (purchase, cross docking, and replenishment), work creation starts from the put line and, at the time of work creation, the location directive populates  **Location** with the put location. However, the pick location will be stored as the **Start location**.
 
 > [!NOTE]
 > The work class IDs for the *Pick* and *Put* work types must be the same.
