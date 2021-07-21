@@ -1999,7 +1999,7 @@
           href: procurement/tasks/create-purchase-order-delivery-schedule.md
         - name: Create a purchase order for a one-time supplier
           href: procurement/tasks/create-purchase-order-one-time-supplier.md
-        - name: Create a purchase release order
+        - name: Apply a purchase agreement when creating a purchase order
           href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
         - name: Create a purchase return order
           href: procurement/tasks/create-purchase-return-order.md
