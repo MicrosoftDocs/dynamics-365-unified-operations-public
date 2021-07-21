@@ -80,19 +80,19 @@ Complete the following steps to process and generate the report.
   b. To date
 3. Select **OK** to confirm.
 4. Complete the information required in the right part of the form  in accordance with the tax authority guideline.
-		• Entity name and ABN. Both fields are automatically populated from Legal entity information
-		• Information about controlling corporation and head entity
-		• Reporting period.
-		• Details of the person who submitted the report.
-		• Approver of the report.
-		• Entity’s principal governing body.
-		• A declaration by a responsible member.
-		• Payment period statistics.
-		• Invoicing arrangements.
-		• Supply change finance arrangement.
-		• Notifiable events.
-		• Report comments.
-		• Submission and approval details
+   - Entity name and ABN. Both fields are automatically populated from Legal entity information
+   - Information about controlling corporation and head entity
+   - Reporting period.
+   - Details of the person who submitted the report.
+   - Approver of the report.
+   - Entity’s principal governing body.
+   - A declaration by a responsible member.
+   - Payment period statistics.
+   - Invoicing arrangements.
+   - Supply change finance arrangement.
+   - Notifiable events.
+   - Report comments.
+   - Submission and approval details.
 5. Select **PTRS report**  to generate the Payment times control report and a .csv file to input the payment information into the tax authority portal.
 
 ![PTRS form.](media/apac-aus-payment-times-reporting-02.JPG)
