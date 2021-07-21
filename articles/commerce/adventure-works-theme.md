@@ -33,9 +33,9 @@ This topic gives an overview of the Adventure Works theme and describes how to a
 
 Dynamics 365 Commerce has a theme for e-commerce that is named Adventure Works. The Adventure Works theme showcases sports and recreational products, and is optimized for a rich and enhanced storytelling experience. It provides a modern appearance, new layouts, and animation effects to create an immersive, engaging online shopping experience for e-commerce customers.
 
-## Trial environments on Commerce
+## Trial environments in Commerce
 
-To see what the Adventure Works theme looks like deployed for business-to-consumer (B2C) and business-to-business (B2B) sites, visit the following trial sites:
+To see what the Adventure Works theme looks like when it's deployed for business-to-consumer (B2C) and business-to-business (B2B) sites, visit the following trial sites:
 
 - [Adventure Works B2C site](https://www.adventure-works.com/)
 - [Adventure Works B2B site](https://www.adventure-works.com/business)
@@ -44,14 +44,14 @@ To see what the Adventure Works theme looks like deployed for business-to-consum
 
 The Adventure Works theme provides the following new capabilities:
 
-- The video player module now supports heading, paragraph, and links functionality for additional storytelling.
-- Better transition of content using animation.
+- The video player module now supports heading, paragraph, and link functionality for additional storytelling.
+- There are better transitions of content through animation.
 - The "add to cart" action invokes the mini cart instead of providing a notification.
-- Quick view module is a pane that slides in on both desktop and mobile viewports.
-- New layouts for the site pages. 
-- The cart and mini-cart allow marketing content to be configured when empty.
-- Mini cart can show promotional messages, for example "Free shipping on orders over $50."
-- Description cards render on search and category pages.
+- The quick view module is a pane that slides in on both desktop and mobile viewports.
+- There are new layouts for the site pages. 
+- Marketing content can be configured for the cart and mini cart when they are empty.
+- The mini cart can show promotional messages, such as "Free shipping on orders over $50."
+- Description cards are rendered on search and category pages.
 
 The Adventure Works theme now includes the following storytelling modules in the Commerce module library:
 
@@ -96,7 +96,7 @@ For more information about theme extensions, see [Theme extensions](e-commerce-e
 
 ## Install the Adventure Works theme
 
-For guidance on installing the Adventure Works theme, see [Install the Adventure Works theme](install-adventure-works.md).
+For information about how to install the Adventure Works theme, see [Install the Adventure Works theme](install-adventure-works.md).
 
 ## Additional resources
 
