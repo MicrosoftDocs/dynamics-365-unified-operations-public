@@ -234,30 +234,36 @@ The following types of transactions can't be reversed:
 
 ## Fixed assets
 
-A number of transaction types update the fixed asset subledger, such as acquisitions, or depreciation.
+A number of transaction types update the Fixed assets subledger, including acquisitions and depreciation.
 
-If the Mass reversal feature hasn’t been turned on, transactions are reversed individually. Depending on the transaction type, they can be reversed on the **Vendor transactions** page, the **Fixed asset transactions** page or from **Liability transactions** page in Asset leasing. 
+If the Mass reversal feature hasn’t been turned on, transactions are reversed individually. Depending on the transaction type, they can be reversed in the **Vendor transactions** page, **Fixed asset transactions** page or from Asset leasing.
 
 If the Mass reversal feature has been turned on, one or more Fixed asset transactions can also be reversed from the **Voucher transactions** page in the journal it was posted from. 
 
-Vouchers can’t be reversed for the following reasons.
+### Vouchers can’t be reversed for the following reasons.
 
-- The transaction’s accounting date is in a closed fiscal period.
-  - If the transaction supports entry of a reversing date, the transaction can still be reversed by changing the reversal date to an open period. 
-- The transaction’s accounting date is in a fiscal year that has been closed. 
-  - The year-end close can be reversed and then the transaction can be reversed, but it might be faster to simply enter a reversing transaction manually in an open period. If a new transaction is posted into an open period within the closed year, you’ll need to close the year again. 
-- Acquisitions
-  - If the acquisition occurred on a Purchase order vendor invoice, the reversal must be done by entering a vendor credit note.
-  - If the acquisition occurred on a project transaction, the acquisition cannot be reversed after depreciation is posted for the asset. The depreciation must be reversed before you can reverse the acquisition. 
-  - If the status of the value model or depreciation book for a fixed asset is not open, the transaction can’t be reversed.
+- Fiscal period is On-hold or Permanently closed
+  - If the reversing date is in a fiscal period that is not Open, it cannot be reversed. 
+  - If the transaction supports entry of a reversing date, the transaction can still be reversed by changing the reversal date to an open period.  
+- General ledger year-end close process has been run
+  - The transaction’s accounting date is in a fiscal year that has been through a general ledger year-end close. Note that a period within the fiscal year can still be Open, but the transaction cannot be reversed if the year-end close process has been run for the fiscal year. The fiscal year has a different status than the periods within the fiscal year. 
+  - The year-end close can be reversed and then the transaction can be reversed. This solution may not be an option. It may be simpler to enter a reversing transaction manually in an open period of either the closed fiscal year or the next fiscal year, depending on the status of the fiscal close. If a new transaction is posted into an open period of the fiscal year that has been through the year-end close process, the year-end. 
+- Acquisitions  
+  - If the acquisition occurred on a PO vendor invoice, the reversal must be done by entering a vendor credit note. Information can be found here on how to enter this transaction.
+  - If the acquisition occurred on a project transaction.
+  - The acquisition cannot be reversed after depreciation is posted for the asset. The depreciation should be reversed first to be able to reverse the acquisition. 
+  - If the status of the value model or depreciation book  for a Fixed Asset is not “open”, the transaction cannot be reversed.
 - Disposals
-  - The disposal is done using a free text invoice. The correction of a free text invoice is prevented if it contains a fixed asset. But note that if the disposal is done through a journal, it can be reversed from the fixed asset. 
+  - The disposal is done through the free text invoice.   
+    - The correction of a free text invoice is prevented if it contains a fixed asset. But note that if the disposal is done through a journal, it can be reversed from the fixed asset. 
   - If the status of the value model or depreciation book for a Fixed Asset is not “open”, the transaction cannot be reversed.
 - Depreciation
-  - The depreciation *can* be reversed if subsequent depreciation is also posted, but a warning is given since this is not a best practice. 
-  - If the status of the value model or depreciation book for a fixed asset is not “open,” the transaction can’t be reversed.
-- Transactions (or reverse transactions) exist for a certain asset and asset book for the voucher’s transaction date or later.
-- The transaction contains an Asset account but is being reversed from the **Transactions for (main account)** page, or from the wrong subledger such as Accounts receivable or Accounts payable.
-  - As described above, certain subledger transactions can only be reversed from specific pages, even if the Mass reversal feature has been turned on. 
-o	If an acquisition occurs on a non-Purchase order vendor invoice or a vendor invoice journal, the acquisition can be reversed only from the **Vendor transactions** page in Accounts payable. 
-If an acquisition occurs from Asset leasing, it can be reversed from the Asset leasing module using the **Liability transactions** page.
+  - The depreciation CAN be reversed is subsequent depreciation is also posted, but a warning is given since this is not a best practice. 
+  - If the status of the value model or depreciation book for a Fixed Asset is not “open”, the transaction cannot be reversed.
+- Transactions (or reverse transactions) exist for a certain asset and asset book for the voucher’s transaction date or later. 
+- The transaction contains an Asset account but is being reversed from Transactions for XXXX or from the wrong subledger such as AR or AP.
+  - As described above, certain subledger transactions can only be reversed from specific pages, even with Mass reversals enabled. 
+  - If an acquisition occurs on a non-PO vendor invoice or a vendor invoice journal, the acquisition can only be reversed from the **Vendor transactions** page under Accounts payable. 
+  - If an acquisition occurs from asset leasing, it can be reversed from the asset leasing module liability transaction.   
+
+
