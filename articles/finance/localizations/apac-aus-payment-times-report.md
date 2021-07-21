@@ -65,7 +65,7 @@ Before you generate Payment times report  run the process **Statistic on invoice
 5. Optional, select the **Vendor group**. This selection allows you to introduce an additional transaction filter. You can leave in blank to select all available vendors.
 6. Select *OK* to run the process.
 
-![Statistics on invoices form.](media/apac-aus-payment-times-reporting-01.png)
+![Statistics on invoices form.](media/apac-aus-payment-times-reporting-01.jpg)
 
 
 
