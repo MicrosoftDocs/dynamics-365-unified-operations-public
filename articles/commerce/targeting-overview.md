@@ -64,8 +64,10 @@ The following segments are available to include in an audience definition by def
     - Other
 - **Query string parameters** - Tests for the existence of a query string parameter key value pair in a request URL. For example, for the URL `www.fabrikam.com/en-us/request?promo=true`, a rule can be written to test that the parameter "promo" has the value "true." 
 - **Cookie** - Tests a cookie value set for the domain in the request URL. For example, a Fabrikam.com request might include a cookie with the name "CustomLayout" and a value of "1." The cookie test will check for the existence of a cookie but will not explicitly create one. In our example, the "CustomLayout" cookie would need to have been set by JavaScript from another module or some other business process.
+
     > [!NOTE]
     > Make sure that your use of cookies complies with applicable laws.
+
 - **Referrer** - If a user follows a link to request the page, the referrer is the URL of the page that hosted the link.  
 
 ### Extensible Segments
