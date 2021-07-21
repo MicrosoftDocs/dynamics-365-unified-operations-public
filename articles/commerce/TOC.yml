@@ -1019,7 +1019,9 @@
         - name: Adventure Works theme
           items:
           - name: Adventure Works theme overview
-            href: adventure-works-theme.md            
+            href: adventure-works-theme.md
+          - name: Install the Adventure Works theme
+            href: install-adventure-works.md
       - name: Manage digital assets
         items:
         - name: Digital asset management overview
