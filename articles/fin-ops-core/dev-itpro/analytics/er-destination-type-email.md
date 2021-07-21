@@ -47,23 +47,40 @@ You can also [group](#grouping) several **Folder** or **File** components togeth
 
 Multiple groups of components can be configured for a single ER format configuration. In this way, you can configure an email destination for every group of components and an email destination for every component.
 
-## Configure an email destination
+## Enable an email destination
 
-To send an output file or several output files by email, on the **Electronic reporting destination** page, on the **File destination** FastTab, select a component or group of components in the grid, and then select **Settings**. In the **Destination settings** dialog box that appears, on the **Email** tab, set the **Enabled** option to **Yes**. You can then specify email recipients, and edit the subject and body of the email message. You can either set up constant text for the email subject and body, or use ER [formulas](er-formula-language.md) to dynamically create email texts.
-
-You can configure email addresses for ER in two ways. The configuration can be completed in the same way that the Print Management feature completes it, or you can resolve an email address by using a direct reference to the ER configuration through a formula.
+To send an output file or several output files by email, on the **Electronic reporting destination** page, on the **File destination** FastTab, select a component or group of components in the grid, and then select **Settings**. In the **Destination settings** dialog box that appears, on the **Email** tab, set the **Enabled** option to **Yes**. 
 
 [![Setting the Enabled option to Yes for an email destination.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
+## Configure an email destination
+
+You can then specify email sender and email recipients, and edit the subject and body of the email message. You can either set up constant text for the email subject and body, or use ER [formulas](er-formula-language.md) to dynamically create email texts.
+
+By default, an email is sent out on behalf of the current user. To specify another email sender, the **From** field must be configured.
+
+> [!NOTE]
+> When an Email destination is configured, the **From** field is visible for only users having the `ERFormatDestinationSenderEmailConfigure` security privilege **Configure the sender email address for ER format destinations**.
+>
+> When an Email destination is offered for modifications at [runtime](electronic-reporting-destinations.md#security-considerations), the **From** field is visible for only users having the `ERFormatDestinationSenderEmailMaintain` security privilege **Maintain the sender email address for ER format destination**.
+>
+> When the **From** field is configured to use other than the current user email address, either the **Send as** or **Send on behalf** permission must be properly [set](https://docs.microsoft.com/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) in advance. Alternatively, the exception **Unable to send email as \<from email account\> from the \<current user account\> account, please check the "Send as" permissions on the \<from email account\>** will be thrown at runtime.
+
+You can configure the **From** field so that it returns more than one email address. In this case, the first address from this list is used as an email sender address. 
+
+To specify email recipients, the **To** and **Cc** (optionally) fields must be configured.
+
+You can configure email addresses for ER in two ways. The configuration can be completed in the same way that the Print Management feature completes it, or you can resolve an email address by using a direct reference to the ER configuration through a formula.
+
 ## Email address types
 
-If you select **Edit** next to the **To** or **Cc** field in the **Destination settings** dialog box, the **Email to** dialog box appears. Select **Add**, and then select the type of email address to use. Two types are currently supported: **Print Management email** and **Configuration email**.
+If you select **Edit** next to the **From**, **To**, or **Cc** field in the **Destination settings** dialog box, the appropriate **Email from**, **Email to**, or **Email cc** dialog box appears allowing to configure email sender and email recipients. Select **Add**, and then select the type of email address to use. Two types are currently supported: **Print Management email** and **Configuration email**.
 
 [![Selecting the type of email address.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### Print Management email
 
-If you select **Print Management email** as the email address type, you can enter fixed email addresses in the **Email to** dialog box by setting the following fields:
+If you select **Print Management email** as the email address type, you can enter fixed email addresses in the **Email from**, **Email to**, or **Email cc** dialog box by setting the following fields:
 
 - In the **Email source** field, select **None**.
 - In the **Additional email addresses, separated by ";"** field, enter the fixed email addresses.
@@ -79,6 +96,7 @@ Alternatively, you can obtain email addresses from the contact details of the pa
 - Applicant
 - Prospective vendor
 - Disallowed vendor
+- Legal entity
 
 For example, to configure an email destination for an ER format that is used to process vendor payments, select the **Vendor** role.
 
