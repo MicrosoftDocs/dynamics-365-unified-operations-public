@@ -137,7 +137,7 @@ The Receipt node of a fiscal archive contains the following elements:
 | LineTaxRate                      | A node for a tax line |
 | TaxRate                          | The tax rate of the tax line |
 | TaxAmount                        | The amount of tax of the tax line |
-| Quantity                         | The quatity of the product sold |
+| Quantity                         | The quantity of the product sold |
 | UnitId                           | The identification of the unit of the product sold |
 | UnitPriceExclTax                 | The unit price of the product excluding taxes |
 | UnitPriceInclTax                 | The unit price of the product including taxes |
@@ -208,9 +208,9 @@ The fiscal archive integrity verification tool can be used to verify the integri
   - Compares the result with the hash code calculated earlier.
 - Prints all integrity violations found.
 
-This tool is developed in form of a Powershell script and is published via Commerce SDK. Follow these steps to obtain the tool and run it against a fiscal archive:
+This tool is developed in form of a PowerShell script and is published via Commerce SDK. Follow these steps to obtain the tool and run it against a fiscal archive:
 
-1. Dowload the tool from Commerce SDK:
+1. Download the tool from Commerce SDK:
     - Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
     - Open the last available release branch (for example, [release/9.30](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.30)).
     - Open **src \> FiscalIntegration \> SequentialSignatureFrance \> FiscalArchiveIntegrityVerificationTool**.
