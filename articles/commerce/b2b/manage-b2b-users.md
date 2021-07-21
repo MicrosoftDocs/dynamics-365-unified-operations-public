@@ -70,7 +70,7 @@ To approve and set up a business partner administrator user in Commerce headquar
 
 1. Go to **Retail and Commerce IT \> Distribution schedule**, and run the **1010** (**Customers**) job to push the newly created customer and customer hierarchy records to the channel database.
 
-After the request is approved, and the customer and customer hierarchy records are synced to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the request. Users can use the sign-up flow to define the password for their account.
+After the request is approved, and the customer and customer hierarchy records are synced to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the request. Users can use the sign-up flow to define the password for their account. To enable the Identity Provider (AAD B2C) record to be linked to the B2B customer record created on sign-up or sign-in, follow directions in [Enable automatic linking of identity records to customer accounts](identity-record-linking.md).
 
 ## Onboard additional business partner users
 
