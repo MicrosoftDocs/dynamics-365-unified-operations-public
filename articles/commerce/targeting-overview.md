@@ -71,10 +71,7 @@ The following segments are available to include in an audience definition by def
 
 Commerce allows you to expand the list of segments to incorporate data from other sources. These additional segments are generically called third-party segments. A segmentation provider will describe the types of segments that are available. Here are some caveats:
 - If an external provider is enabled, it may connect to a service with unpredictable performance. To ensure a better user experience, if a user requests a page including targeting and that page references an audience that checks a third-party segment provider, the default version of the page will be shown.
-- The user must consent to allow cookies. When they do, their browser will request all segments from relevant providers. The results will be placed in a cookie returned to the user. Subsequent requests to the page will use this information to serve targeted content to this group.
-
-    > [!NOTE]
-    > Extensible segments rely on cookie consent from the site user. Targeted content will only be shown to users who choose to allow cookies. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
+- The user must consent to allow cookies. When they do, their browser will request all segments from relevant providers. The results will be placed in a cookie returned to the user. Subsequent requests to the page will use this information to serve targeted content to this group. For more information on cookie compliance, see [Cookie compliance](cookie-compliance.md).
 
 **Disclaimer:** If you enable this feature, your data will be shared with third-party systems that you select. You control what data, if any, you provide to the third party. You understand that the data handling and compliance standards of the third party might differ from the standards of Microsoft Dynamics 365 Commerce. Your privacy is important to Microsoft. To learn more, read our [Privacy and Cookies notice](https://privacy.microsoft.com/privacystatement).
 
