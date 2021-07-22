@@ -4,7 +4,7 @@
 title: Commerce localization for Russia
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia.
 author: akviklis@microsoft.com
-ms.date: 07/06/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -95,9 +95,9 @@ Commerce functionality for Russia consists of the following:
 
 To learn about POS features that are available to customers in all countries or regions, see the [Commerce home page](../index.md).
 
-### POS features specific to Eastern Europe
+### Eastern Europe-specific POS features
 
-The following Eastern Europe features that is specific for POS are enabled after the Commerce localization for Russia has been set up:
+The following Eastern Europe-specific POS features are enabled after the Commerce localization for Russia has been set up:
 
 - Customer cash payments according to the retail store cash management requirements.
 - Cash payments using petty cash journals in Commerce headquarters.
