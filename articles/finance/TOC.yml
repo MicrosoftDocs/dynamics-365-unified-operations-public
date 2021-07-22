@@ -1800,6 +1800,8 @@
           href: localizations/china.md
         - name: Finance and Operations operated by 21Vianet in China
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
+        - name: Account groups selection for Chinese voucher types
+          href:  apac-chn-account-groups-selection.md
         - name: Bill of materials comparison
           href: localizations/apac-chn-bom-comparison.md
         - name: Chinese hierarchy of chart of accounts
