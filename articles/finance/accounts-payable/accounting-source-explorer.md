@@ -52,9 +52,9 @@ For source documents that use the source document reference identities concept, 
 For these documents, you can also navigate to the actual source document from Accounting source explorer.
 
 > [!NOTE]
-> Starting in version 10.0.20 and also in 10.0.19 as a service update, two additional ranges are available in the update button to restrict the initial query that is run to enter data on the page. The fields that were added are:<br>
-> - From Voucher, To Voucher<br>
-> - From Main account, To Main account<br> 
-
+> As of version 10.0.20, the **Update** button provides two additional ranges to restrict the initial query that is run to enter data on the page. These additional ranges are also available in version 10.0.19 as a service update. The following fields were added:
+>
+> - From Voucher, To Voucher
+> - From Main account, To Main account
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
