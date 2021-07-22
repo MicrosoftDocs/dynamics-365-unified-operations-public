@@ -223,6 +223,9 @@ The device should now be activated and ready to use.
 2. To update the Modern POS application, follow the steps in the [Download and install Modern POS](#download-and-install-modern-pos) section. To do an in-place update, just run the newer version of the self-service installer. Uninstallation isn't required or recommended. Device activation status will be maintained after the update.
 3. The installer will use the currently installed configuration settings. If the configuration file has changed, because of various configuration changes in Commerce, an update won't change the Modern POS application settings.
 
+> [!WARNING]
+> It is critical to note that a Modern POS offline database is not required to be updated for the installer to succeed. It is possible for the offline database to maintain an older version and not be updated if any error occurs. With customizations being updated or lack of awareness of the update failure, it is possible for an offline database to function incorrectly.  In such scenarios, it is important to solve the blocking issue and update the Modern POS again to update the offline database correctly.
+
 ## Troubleshooting
 
 ### Troubleshoot installation
