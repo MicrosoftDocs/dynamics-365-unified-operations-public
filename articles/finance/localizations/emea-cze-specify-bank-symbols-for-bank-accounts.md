@@ -10,7 +10,7 @@ ms.prod:
 ms.technology: 
 ---
 
-# Specify bank symbols for bank accounts 
+# Bank symbols for bank accounts 
 Constant symbols are set up for bank accounts and then used on sales orders, purchase orders, customer invoices, and free text invoices. 
 Use the **Bank constant symbols** page to set up a list of constant symbols. By default, when you set up a constant symbol for a specific company bank account, the symbol is copied to sales orders and free text. From the sales order or free text invoice, the constant symbol is transferred to the customer invoice. 
 > [!NOTE]
