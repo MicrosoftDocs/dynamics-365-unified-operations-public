@@ -333,7 +333,7 @@ When you post a Rebate management transaction with one of the following **Paymen
 
 Once a created target transaction has been posted, it will be available as an **Open transaction** on the **Deduction workbench** page (**Sales and marketing > Trade allowances > Deductions > Deduction workbench**). Open transactions will have a **Claim type** of *Rebate management* and the **Rebate transaction number** will be available for traceability. The date will be populated with the posting date of the rebate management target transaction. You can use the deduction workbench to settle open transactions to existing deductions for the same customer account by selecting **Maintain > Match** from the Action Pane.
 
-<!--KFM: Add a link to the deduction workbench topics -->
+For more information, see [Manage deductions using the deduction workbench](deduction-workbench.md)
 
 ## Purge unposted transactions
 

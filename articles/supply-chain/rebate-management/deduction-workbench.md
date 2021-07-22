@@ -21,13 +21,12 @@ This topic describes how to use the deduction workbench to process customer paym
 
 A customer who is owed a rebate can decide not to wait for a rebate payout. Instead, the customer can send a payment that includes a deduction for the amount of the rebate. To handle this type of transaction, you can use the deduction workbench to match deductions to open credit transactions, split deductions, deny deductions, and write off deductions.
 
-<!-- KFM: add text to intro explaining that the workbench works both with and without Rebate management. maybe also add section mentioning that many features described here require the rebate management feature in FM  -->
+> [!NOTE]
+> The deduction workbench has long been a part of Dynamics 365 Supply Chain Management sales and marketing functionality, however it has now been enhanced to also work with the newer Rebate management module. This topic describes how to use both legacy and Rebate management features of the deduction workbench. However, if you haven't [enabled the Rebate management module](rebate-management-enable.md), then some of the functionality described here won't be available to you.
 
 ## Prerequisites
 
 ### Set up the legacy deduction management system
-
-<!-- KFM: @sherry, this is legacy info. We need to evaluate how this fits in considering the new Rebate management module.  -->
 
 You can use the deductions workbench together with the legacy deduction management capabilities of Supply Chain Management, even if you aren't using the new Rebate management module. To do so, you must prepare your system as described in this section before you can use the deduction workbench.
 
@@ -115,46 +114,30 @@ To schedule this task, go to **Sales marketing \> Periodic tasks \> Settle appro
 
 ## Create a deduction
 
-### Create a deduction journal entry using the payment journal
-
-<!--KFM: This section is from AX2012 doc set. Requires verification. -->
-
-Enter the deduction information into the payment journal.
+### Create a deduction journal entry using the customer payment journal
 
 To create a deduction journal entry, follow these steps.
 
-1. Select **Accounts receivable \> Journals \> Payments \> Payment journal**.
-
-1. Select **New**, and then, in the **Name** field, select the name of the deduction journal.
-
+1. Select **Accounts receivable \> Payments \> Customer payment journal**.
+1. Select **New** to add a new row to the grid and then, in the **Name** field for the new row, select the name of the  journal.
 1. On the Action Pane, select **Lines**.
-
 1. Enter the date, company account, and customer account number. In the **Invoice** field, select the invoice that the deduction is associated with.
-
 1. In the **Credit** field, enter the amount that the customer paid. Select **OK** to confirm that the amount is less than the total of the marked transaction.
-
-1. Select the offset account type and the offset account.
-
-1. On the Action Pane, select **\>\>**, and then select **Deductions**. In the **Deduction** page, select **New**.
-
-1. The **Deduction ID** field is populated automatically. Select the deduction type in the list.
-
-1. In the **Amount** field, enter the amount that is displayed in the **Balance** field above the deduction list. This amount represents the amount that the customer deducted from the payment.
-
-1. Close the **Deduction** page. In the **Journal voucher** page, a new line is displayed for the deduction.
-
-1. On the Action Pane, select **Validate**, and then select **Validate**. You should receive the following message: "Journal is OK."
-
-1. On the Action Pane, select **Post**, and then select **Post**.
+1. Select the **Offset account type** and the **Offset account**.
+1. From the toolbar above the grid, select **Deductions**.
+1. The **Deduction** page opens. Select **New** on the Action Pane to add a new row to the grid.
+1. The **Deduction ID** field is populated automatically. Select the deduction **Type** in the list.
+1. In the **Amount** field, enter the amount that is displayed in the **Balance** field below the deduction list. This amount represents the amount that the customer deducted from the payment.
+1. Close the **Deduction** page. You return to the **Customer payments** page, which now shows a new line for the deduction.
+1. On the Action Pane, select **Validate \> Validate**. You should receive the following message: "Journal is OK."
+1. On the Action Pane, select **Post**.
 
 ### Create a deduction using the deduction workbench
 
 The create a new deduction in the deduction workbench, follow these steps.
 
 1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
-
 1. On the Action Pane, select **Maintain \> New deduction**
-
 1. The **New deduction** dialog opens. Make the following settings:
     - **Deduction ID** – This will be assigned by the **Deduction ID** number sequence set on the **Trade allowance management parameters** page (**Sales and marketing \> Setup \> Trade allowances \> Trade allowance management parameters**).
     - **Customer account** – Select the customer account the deduction applies to.
@@ -181,15 +164,10 @@ The create a new deduction in the deduction workbench, follow these steps.
 Creating a deduction from a customer settlement is similar to creating a new deduction via the deduction workbench, but the customer and invoice currency is defaulted and the invoice is attached. You don't have to select **Maintain \> Attach invoice** on the Action Pane when creating a new claim or deduction via the customer settlement page.
 
 1. Go to **Accounts receivable \> Customers \> All customers**.
-
 1. Select the customer you want to create a deduction for.
-
 1. On the Action Pane, on the **Collect** tab, in the **Settle** group, select **Settle transactions**.
-
 1. The **Setting transactions** dialog opens. On the **Overview** tab, select exactly one invoice against which to create the deduction.
-
 1. On the toolbar, select **Deductions \> New deduction**.
-
 1. The **New deduction** dialog opens. Make the following settings:
     - **Deduction ID** – This will be assigned by the **Deduction ID** number sequence set on the **Trade allowance management parameters** page (**Sales and marketing \> Setup \> Trade allowances \> Trade allowance management parameters**).
     - **Customer account** – This is the customer account the deduction applies to. It shows the customer you selected.
@@ -218,11 +196,8 @@ Creating a deduction from a customer settlement is similar to creating a new ded
 Create a deduction from a customer page is similar to creating a new deduction via the deduction workbench, but the customer is defaulted.
 
 1. Go to **Accounts receivable \> Customers \> All customers**
-
 1. Select the customer you want to create a deduction for.
-
 1. On the Action Pane, on the **Collect** tab, in the **Deductions** group, select **Create deductions**
-
 1. The **New deduction** dialog opens. Make the following settings:
     - **Deduction ID** – This will be assigned by the **Deduction ID** number sequence set on the **Trade allowance management parameters** page (**Sales and marketing \> Setup \> Trade allowances \> Trade allowance management parameters**).
     - **Customer account** – This is the customer account the deduction applies to. It shows the customer you selected.
@@ -246,16 +221,17 @@ Create a deduction from a customer page is similar to creating a new deduction v
 
 ## Create a credit note for a customer
 
-<!--KFM: This section is from AX2012 doc set. Requires verification. -->
-
 Once an approved rebate exists for a customer, you can create a credit note on the customer's account to represent the rebate if necessary. The credit then appears in the deduction workbench, where it can be matched to a deduction.
 
 To create a credit note, follow these steps.
 
-1. Go to **Sales and marketing \> Common \> Customers \> All customers**.
-1. Select the customer, and then, on the **Collect** tab, in the **Settle** group, select **Settle open transactions**.
-1. Select the transaction that the rebate was applied to. On the Action Pane, select **Functions**, and then select the type of rebate program that applies.
-1. On the **Overview** tab, select the **Mark** check box next to the rebate ID. Select **Functions**, and then select **Create credit note**.
+1. Go to **Sales and marketing \> Customers \> All customers**.
+1. Select the customer.
+1. On the Action Pane, open the **Collect** tab and, in the **Settle** group, select **Settle transactions**.
+1. The **Settle transactions** dialog opens. Select the transaction that the rebate was applied to.
+1. On the toolbar, open the **Functions** menu and then select the type of rebate program that applies.
+1. The **Rebate** page opens. On the **Overview** tab, select the **Mark** check box next to the relevant rebate ID.
+1. On the Action Pane, select  **Functions \> Create credit note**.
 
 ## Process a deduction in the deduction workbench
 
@@ -267,7 +243,7 @@ Depending on how you want to process a deduction, complete one or more of the pr
 
 To match a deduction to a credit:
 
-1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
 1. Select the **Mark** check box for the deduction you want to process.
 1. In the **Open transactions** section, select the **Mark** check box for the credit to match to the deduction. If multiple credits are listed, you can select more than one credit to match to the deduction. Or, if you want the system to automatically select credits that match the amount of the deduction, open the **Select deduction amount** menu in the toolbar and select an appropriate option.
 1. On the Action Pane, select **Maintain \> Match**. The system matches the deduction to the credit. If a balance remains in the deduction, this balance appears in the **Remaining amount** field on the **Deductions** tab.
@@ -279,7 +255,7 @@ To match a deduction to a credit:
 
 To split a deduction:
 
-1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
 1. Select the **Mark** check box for the deduction you want to process.
 1. On the Action Pane, select **Maintain \> Split**.
 1. The **Split** dialog opens. In the **Split amount** field, enter the amount to split from the main deduction.
@@ -293,7 +269,7 @@ For deductions created using the **New deduction** command from the deduction wo
 
 To attach an invoice to a deduction:
 
-1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
 1. Select the **Mark** check box for the deduction you want to process.
 1. On the Action Pane, select **Maintain \> Attach invoice**.
 1. The **Attach invoice** dialog opens. Select an invoice.
@@ -312,7 +288,7 @@ For deductions created using the **New deduction** command from the deduction wo
 
 To detach an invoice:
 
-1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
 1. Select the **Mark** check box for the deduction you want to process.
 1. On the Action Pane, select **Maintain \> Detach invoice**.
 
@@ -322,12 +298,12 @@ You can approve deductions created using the **New deduction** command from the 
 
 To approve a deduction:
 
-1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
 1. Select the **Mark** check box for the deduction you want to process.
 1. On the Action Pane, select **Maintain \> Approve deduction**.
 1. The **Approve deduction** dialog opens. Edit or add to the **Note** field as needed.
 1. If an invoice has not been attached to a price-based deduction, select an **Item sales tax group**. Normally, the tax item group is on the invoice, and therefor the tax item code must be specified when not attached to an invoice.
-1. Select **OK**. No further changes will be allowed to the deduction. If the **Create claim journal** was set to *No* when the deduction was created, the claim journal is be created and posted when the deduction is approved. After the deduction has been approved, the credit is automatically created and opened. The type will depend on the deduction's **Claim basis** as follows:
+1. Select **OK**. No further changes will be allowed to the deduction. If **Create claim journal** was set to *No* when the deduction was created, the claim journal is be created and posted when the deduction is approved. After the deduction has been approved, the credit is automatically created and opened. The type will depend on the deduction's **Claim basis** as follows:
     - For deductions with a **Claims basis** of *Price based*:<br>If the deduction is price based a draft, a free text invoice is created for the customer account. You can add a **Description** and **Post** the credit. The following fields are populated by the deduction when the draft is created:
       - **Deduction ID** – Added to the **Header** for traceability back to the deduction.
       - **Main account** – Determined by **Claim posting account** on the **Deduction reason** assigned to the deduction.
@@ -335,13 +311,15 @@ To approve a deduction:
       - **Unit price** – The credit of the deduction's **Claim amount**
       - **Invoice text** – Defaults from deduction's **Notes**
 
-    - For deductions with a **Claims basis** of *Quantity based*:<br>If the deduction is quantity based, an open sales order or return order is created. The **Create return order** setting on the **[Accounts receivable parameters](#accounts-receivable-deductions)** page determines whether a sales order or return order is created when the deduction is approved. The **Copy orders** page opens, filtered to show rows where the **Invoice account** is set to the deduction's customer account. <!-- KFM: I didn't see this because of an error. Check again, and copy similar text from next section. -->
-      1. Select the applicable **Sales order** and **Lines** and **Quantity** to be copied.
-      1. Select **OK**.
-
-        The following fields are populated by the deduction when the draft is created:
-        - **Deduction ID** – Added to the **Header** for traceability back to the deduction.
-        - **Return reason code** – Defaults to the **Return reason code** set for the **Deduction reason** assigned to the deduction.
+    - For deductions with a **Claims basis** of *Quantity based*:<br>If the deduction is quantity based, an open sales order or return order is created. The **Create return order** setting on the **[Accounts receivable parameters](#accounts-receivable-deductions)** page determines whether a sales order or return order is created when the deduction is approved. The **Copy orders** page opens, filtered to show rows where the **Invoice account** is set to the deduction's customer account.
+        1. Expand the **Invoices** FastTab.
+        1. The **Headers** section of the **Invoices** FastTab shows sales invoices where the **Invoice account** matches the deduction's customer account. Select an applicable sales invoice.
+        1. The **Lines** section of the **Invoices** FastTab shows lines from the selected sales invoice. Mark the **Select** check box for each line you want to copy (or select the **Select all** check box for the sales order in the **Headers** section to select all of its lines).
+        1. If necessary, adjust the **Quantity** for one or more lines as needed.
+        1. The lines you selected so far are listed on the **Selected lines or header to be copied** FastTab. Repeat the previous two steps as needed until all the required lines are listed here.
+        1. Select **OK**. The new return order opens, with the following fields populated automatically:
+            - **Deduction ID** – Added to the **Header** for traceability back to the deduction.
+            - **Return reason code** – Defaults to the **Return reason code** set for the **Deduction reason** assigned to the deduction.
 
 1. Once the credit has been invoiced, it will be shown on the deduction workbench's **Open transactions** section with its **Claim type** set to *Other credits* against the applicable **Deduction ID**. The credit will be available until settled with the deduction in one of the following ways:
 
@@ -362,13 +340,13 @@ For deductions created using the **New deduction** command from the deduction wo
 
 To create a return order:
 
-1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
 1. Select the **Mark** check box for the deduction you want to process.
 1. On the Action Pane, select **Maintain \> Create return order**.
 1. The **Approve deduction** dialog opens. Edit or add to the existing **Notes** as needed and then select **OK**.
 1. The **Copy orders** dialog opens. Expand the **Invoices** FastTab.
 1. The **Headers** section of the **Invoices** FastTab shows sales invoices where the **Invoice account** matches the deduction's customer account. Select an applicable sales invoice.
-1. The **Lines** section shows lines from the selected sales invoice. Mark the **Select** check box for each line you want to copy (or select the **Select all** check box for the sales order in the **Headers** section to select all of its lines).
+1. The **Lines** section of the **Invoices** FastTab shows lines from the selected sales invoice. Mark the **Select** check box for each line you want to copy (or select the **Select all** check box for the sales order in the **Headers** section to select all of its lines).
 1. If necessary, adjust the **Quantity** for one or more lines as needed.
 1. The lines you selected so far are listed on the **Selected lines or header to be copied** FastTab. Repeat the previous two steps as needed until all the required lines are listed here.
 1. Select **OK**. The new return order opens, with the following fields populated automatically:
@@ -376,23 +354,23 @@ To create a return order:
     - **Return reason code** – Defaults to the **Return reason code** set for the **Deduction reason** assigned to the deduction.
 
 ### Deny a deduction
-<!-- KFM: I didn't see this because of an error. Check again, and copy similar text from next section. Bug ID: 596036 -->
+
 To deny a deduction:
 
-1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
 1. Select the **Mark** check box for the deduction you want to process.
 1. On the Action Pane, select **Maintain \> Deny**.
-1. The **Deny** dialog opens. Select the **Reason code** for the denial and select **OK**. <!-- KFM: I get an error (vague message). -->
-1. In the **Show** field below the Action Pane, select *Closed*. The denied deduction is displayed on the **Deductions** tab, and the **Remaining amount** for the deduction is set to *0.00*. <!-- KFM: This is not what I see. Instead, Claim status is Rejected. Deduction is neither closed nor zero. -->
+1. The **Deny** dialog opens. Select the **Reason code** for the denial and select **OK**.
+1. In the **Show** field below the Action Pane, select *Closed*. The denied deduction is displayed on the **Deductions** tab, and the **Remaining amount** for the deduction is set to *0.00*.
 1. For deductions created using the **New deduction** command from the deduction workbench, customer settle, or customer page, the following occur:
     - On the **References** tab, fields in the **Denial** field group are updated.
     - If you selected to create the claim journal when the deduction was created and if an invoice has been attached to the deduction that reduced the invoice's balance, the invoice will be detached and the previously attached invoice's remaining balance will be increased by the rejected claim's amount.
-    - The deduction's **Status** has now been set to *Closed* and **Claim status** set to *Rejected*. <!-- KFM: My status still says "open". -->
+    - The deduction's **Status** has now been set to *Closed* and **Claim status** set to *Rejected*.
 
 To reverse a denial:
 
 1. Select a denied deduction on the **Deductions** tab.
-1. On the Action Pane, select **Reverse denial**. <!-- KFM: Not active for me. -->
+1. On the Action Pane, select **Reverse denial**.
 1. For deductions created using the **New deduction** command from the deduction workbench, customer settle, or customer page, the following occur:
     - On the **References** tab, fields in the **Denial** field group are updated.
     - The deduction's **Status** is set to *Open*.
@@ -402,7 +380,7 @@ To reverse a denial:
 
 To write off a deduction:
 
-1. Go to **Trade allowance management \> Common \> Deduction workbench**.
+1. Go to **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
 1. Select the **Mark** check box for the deduction you want to process.
 1. On the Action Pane, select **Maintain \> Write-off**.
 1. The **Write-off** dialog opens. Select the **Reason code** for the write-off and then select **OK**.
@@ -482,7 +460,6 @@ To detach a deduction from a credit, do one of the following, depending on the c
     - **Sales orders**: Open the **All sales orders** page and select an order. On the Action Pane, on the **Invoice** tab, select **Detach credit from deduction**
 
 ### Attach a deduction to a credit
-<!-- KFM: Review this section -->
 
 This section describes how you can attach a deduction to a credit, while on the deduction.
 
@@ -512,43 +489,39 @@ If the incorrect credit has been attached, select this option to detach the cred
 
 On the Action Pane, in the Maintain group, select **Detach deduction from credit**. This removes the **Deduction ID** from the credit.
 
-## Create an end-of-period promotion
+## Create an one-time promotion
 
-<!-- KFM: This section is copied from AX2012. Needs to be verified -->
+Sometimes, you might not have an approved rebate that you can match to a deduction. In this case, you can use the *one-time promotion* feature to match the deduction to a trade allowance that is associated with the customer. The *one-time promotion* feature creates a new trade allowance agreement and a lump sum merchandising event. The feature then matches the lump sum to the deduction and makes the postings that are required to close the deduction.
 
-Sometimes, you might not have an approved rebate that you can match to a deduction. In this case, you can use the **End of period promotion** feature to match the deduction to a trade allowance that is associated with the customer. The **End of period promotion** feature creates a new trade allowance agreement and a lump sum merchandising event. The feature then matches the lump sum to the deduction and makes the postings that are required to close the deduction.
-
-This feature is useful if you use trade allowances. For more information about trade allowances, see [Working with Trade allowance management](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/working-with-trade-allowance-management).
+This feature is useful if you use trade allowances. For more information about trade allowances, see [Trade allowance management](../sales-marketing/trade-allowance.md).
 
 First, you must set up a template to use to create the new trade allowance agreement. To set up a template, follow these steps.
 
-1. Select **Trade allowance management \> Periodic \> Templates**.
-1. On the Action Pane, in the **New** group, select **Templates**.
-1. Fill in the fields with the information that should appear in the agreements that are created from the template. For more information about the fields in a trade allowance agreement, see Set up a trade allowance template.
+1. Go to **Sales and marketing \> Trade allowances \> Templates**.
+1. On the Action Pane, select **New**.
+1. Fill in the fields with the information that should appear in the agreements that are created from the template.
 1. On the **Customers** FastTab, in the **Hierarchy** field, select a hierarchy level. In the hierarchy list, select the customer who has an unmatched deduction, and then select **\>**. The customer is added to the **Trade allowance agreement customers** list.
 1. Continue to fill in the remaining fields as you require, and then close the page.
-1. Select **Trade allowance management \> Setup \> Trade allowance management parameters**.
-1. On the **General** FastTab, in the **End of period template** field, select the name of the template to use to create end-of-period promotions.
+1. Go to **Sales and marketing \> Setup \> Trade allowance \> Trade allowance management parameters**.
+1. On the **Overview** tab, in the **One-time promotion template** field, select the name of the template to use to create one-time promotions.
 
-Next, you can create an end-of-period promotion in the deduction workbench. To create an end-of-period promotion, follow these steps.
+Next, you can create a one-time promotion in the deduction workbench. To create a one-time promotion, follow these steps.
 
-1. Select **Trade allowance management \> Common \> Deduction workbench**.
+1. Select **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
 1. Select the **Mark** check box next to the deduction to process.
-1. On the Action Pane, select **Maintain \> End of period promotion**.
-1. If you want to associate the deduction with one or more funds, follow these steps:
+1. On the Action Pane, select **Maintain \> Settle deduction as one-time promotion**.
+1. The **One-time promotion** dialog opens. If you want to associate the deduction with one or more funds, follow these steps:
     1. Select **New**, and then, in the **Fund ID** field, select a fund ID. Repeat this step to add as many funds as you require.
     1. In the **Percent** field next to each fund ID, enter the percentage of the deduction to allocate to the fund. The amounts that you enter in the **Percent** fields must total 100 percent.
-1. On the Action Pane, select **OK**. The system creates a new trade allowance agreement that has a lump sum merchandising event and matches the lump sum to the deduction.
+1. Select **OK**. The system creates a new trade allowance agreement that has a lump sum merchandising event and matches the lump sum to the deduction.
 
 ## Perform a mass update of deductions
-
-<!-- KFM: This section is copied from AX2012. Needs to be verified -->
 
 If you have to make the same change to multiple deductions, you can select those deductions and perform a mass update of their fields.
 
 To perform a mass update, follow these steps.
 
-1. Select **Trade allowance management \> Common \> Deduction workbench**.
-1. In the **Show** field below the Action Pane, select the type of deductions to view ( **Created**, **Open**, or **Closed** ).
-1. Select the **Mark** check box next to each deduction to update. On the Action Pane, select **Maintain \> Mass update**.
-1. The selected deductions are listed in the **Mass update** page. Update the fields as you require, and then select **OK** at the top of the page to accept the changes.
+1. Select **Sales and marketing \> Trade allowances \> Deductions \> Deduction workbench**.
+1. In the **Show** field below the Action Pane, select the type of deductions to view.
+1. Select the check box next to each deduction to update. On the Action Pane, select **Maintain \> Mass update**.
+1. The **Mass update** dialog opens, showing the selected deductions. Update the fields as you require, and then select **OK** to accept the changes.
