@@ -4,7 +4,7 @@
 title: Prepayments in Dynamics 365 Commerce for Russia
 description: This topic provides an overview of processing for prepayment transactions in Microsoft Dynamics 365 Commerce for Russia.
 author: akviklis
-ms.date: 07/15/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,5 +44,13 @@ Commerce for Russia performs the following tasks to process a prepayment:
 When you cancel a customer order, the prepayment amount is refunded, and a refund payment journal is posted for the deposit amount. The refund amount is calculated and posted, based on the method of payment that you specified when you posted the refund payment. Commerce might apply a cancellation charge, based on the percentage that you set on the **Commerce parameters** page.
 
 When you return a customer order, a return order and a refund payment journal are created. When you post the return order, Commerce creates either a customer payment journal or a cash journal, depending on the method of payment that the customer used for the original transaction.
+
+## Additional resources
+
+[Commerce home page](../index.md)
+
+[Russian localization scope](../../finance/localizations/russia.md)
+
+[Prepayments management](../../finance/localizations/rus-prepayments-management.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
