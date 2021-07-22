@@ -1,126 +1,108 @@
-# How to create a new Electronic invoicing feature
+---
+# required metadata
 
-The objective of this article is to guide you through the creation of a new Electronic invoicing feature, when the country's configurable Electronic invoicing feature is not provided out-of-box for importation.
+title: Create a new Electronic invoicing feature
+description: This topic explains how to create a new Electronic invoicing feature when no configurable featue is available out-of-the-box for your country/region.
+author: gionoder
+ms.date: 07/21/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
 
-In this creation use case, you will:
+# optional metadata
 
-- Create a new Electronic invoicing feature instead of importing from the Global repository.
-- Create a new file format configurations, using the Invoice model configuration provided out-of-box as is, leveraging the existing invoice mapping for the feature you want to create.
-- Add the file format configurations to the Electronic invoicing feature Configurations.
-- Create the Electronic invoicing feature Setup.
-- Complete and Publish the new Electronic invoicing feature into the Global repository for your organization.
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: janeaug
+ms.search.validFrom: 2021-07-21
+ms.dyn365.ops.version: AX 10.0.12
+
+---
+
+# Create a new Electronic invoicing feature
+
+[!include [banner](../includes/banner.md)]
+
+This topic explains how to create a new Electronic invoicing feature, when your country's configurable Electronic invoicing feature isn't provided out-of-the-box.
+
+To create a new Electronic invoicing feature, you will:
+
+- Create a new file format configuration using the invoice model configuration provided and leveraging the existing invoice mapping for the feature you want to create.
+- Add the file format configurations to the Electronic invoicing feature configurations.
+- Create the Electronic invoicing feature setup.
+- Complete and publish the new Electronic invoicing feature to the Global repository for your organization.
 - Deploy the new Electronic invoicing feature to the Service environment.
 
-## Creating new file format configurations derived from existing Invoice model
+## Create new file format configurations derived from the existing invoice model
 
-The process begins at the **Electronic reporting** module, creating the file format configurations required for the new Electronic invoicing feature you want to create. Notice that through these steps you can either create the electronic invoice file format configuration, as well any other file format configurations your new Electronic invoicing feature may require to communicate with a web services, for example.
+In this procedure, you will create the file format configurations required for the new Electronic invoicing feature you want to create. You can create the electronic invoice file format configuration and any other file format configurations your new Electronic invoicing feature may require.
 
-1.  Sign in to your Regulatory Configuration Service (RCS) account.
+Before you begin the steps in this procedure, sign in to your Regulatory Configuration Service (RCS) account. 
 
-2.  In the **Electronic reporting** workspace, select **Repositories** from **Microsoft** Configuration provider.
+1. In Dynamiocs 365 Finance, in the **Electronic reporting** workspace, select **Repositories** from **Microsoft** Configuration provider.
+2. Select **Global**, select **Open**, and in the left panel, select the **Invoice model** configuration. 
 
-3.  Select **Global**, then select **Open**.
+    > [!IMPORTANT]
+    > For Brazil, select the **Fiscal documents** model configuration instead.
+    
+3. On **Configurations** tab, select **Import**.
+4. Close the page.
+5. Close the page.
+6. Select **Reporting configurations** tile and then select the invoice model you imported.
+7. Select **Create configuration**, and then select **Format based on invoice context model**.
+8. Enter the name and a description of the format configuration.
+9. In the **Format type** field, select the file extension type.
+10. Select **Create configuration**, and then select the format configuration you created.
+11. Select **Designer**, and use the Format designer tool to configure the file layout to meet the file format specifications. Close the page.
+12. On **Versions** tab, select **Change status** to **Complete**.
+13. On **Versions** tab, select **Change status** to **Share** to publish in the Global repository.
 
-4.  On the left panel, select **Invoice model** configuration for Electronic invoices. For Brazil you must select the **Fiscal documents** model configuration instead.
+The new file format configuration must be shared with the Microsoft domain before the configuration can be consumed by the Electronic invoicing service.
 
-5.  On **Configurations** tab, select **Import**.
+1. Select the format configuration you are working on. The status of the configuration must be **Shared**.
+2. On the **Versions** tab, select **Advanced sharing** > **Global repository**.
+3. On the **Shared with** tab, select **+Organization**.
+4. In the **Parameters** field, enter **Microsoft.com** to share with the Microsoft domain and then select **OK**.
 
-6.  Close the page.
+## Create the new Electronic invoicing feature
 
-7.  Close the page.
+1. In RCS, in the **Globalization features** workspace, in the **Features** section, select the **Electronic invoicing** tile.
+2. Select **Add**, and then select **New feature**.
+3. Enter the name and a description of the Electronic invoicing feature.
+4. Select **Create feature**.
 
-8.  Select **Reporting configurations** tile.
+## Add Electronic invoicing feature Configurations
 
-9.  Select the invoice model you imported (either **Invoice model** or **Fiscal documents** model).
+1. Select the Electronic invoicing feature you are working on.
+2. On the **Configurations** tab, select **Add**.
+3. In the **Configurations** grid, browse and select the file format configurations your Electronic invoicing feature requires to generate the electronic invoice file.
+4. Select **OK**.
 
-10.  Select **Create configuration**, and then select **Format based on invoice context model**.
+## Add Electronic invoicing feature setups
 
-11. In the **Name** field, enter the name of the format configuration.
+1. On the **Setups** tab, select **Add** and then select **Custom setup.**
+2. Enter a name and description of the feature setup.
+3. In the **Setup type** field, select **Processing pipeline** and then select **Create**.
+4. Select the setup you are working on, and then select **Edit**.
+5. On the **Processing pipeline** tab, select **New** to add new pipeline action. For more information about pipelines, see [Actions](e-invoicing-configuration-rcs.md#actions).
+6. On the **Applicability rules** tab, select **New** to add new applicability rules clauses. For more information about applicability rules, see [Applicability rules](e-invoicing-configuration-rcs.md#applicability-rules).
+7. On the **Variables** tab, select **New** to add new variables as needed.
+8. Select **Save**, and then select **Validate** to check the consistency of the configuration.
+9. Close the page.
 
-12. In the **Description** field, enter the description of the format configuration.
+## Deploy the Electronic invoicing feature to the service environment
 
-13. In the **Format type**, select the file extension type.
+For information about how to complete this procedure, see [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
 
-14. Select **Create configuration**.
+## Deploy the Electronic invoicing feature to a connected application
 
-15. Select the format configuration you created.
-
-16. Select **Designer** and using the Format designer tool, configure the file layout to meet the file format specifications.
-
-17. Close the page.
-
-18. On **Versions** tab, select **Change status** to **Complete**.
-
-19. On **Versions** tab, select **Change status** to **Share** for publishing in the Global repository.
-
-To allow the Electronic invoicing service consuming the new file format configuration, it needs to be shared with the Microsoft domain.
-
-20.  Select the format configuration you are working on.
-
-21.  With the format configuration with status **Shared,** on **Versions** tab, select **Advanced sharing**, and then select **Global repository.**
-
-22.  In the **Shared with** tab, select **+Organization**.
-
-23.  In the **Parameters** field, enter **Microsoft.com** to share with the Microsoft domain.
-
-24.  Select **OK.**
-
-## Creating the new Electronic invoicing feature
-
-Continue the process at the **Electronic invoicing features** page, with creation of a new e-invoicing feature.
-
-1.  In RCS, in the **Globalization features** workspace, in the **Features** section, select the **Electronic invoicing** tile.
-
-2.  Select **Add**, and then select **New feature**.
-
-3.  In the **Name** field, enter the name of the Electronic invoicing feature.
-
-4.  In the **Description** field, enter the description of the Electronic invoicing feature.
-
-5.  Select **Create feature**.
-
-## Adding Electronic invoicing feature Configurations
-
-1.  Select the Electronic invoicing feature you are working on.
-
-2.  On the **Configurations** tab, select **Add**.
-
-3.  On the **Configurations** grid, browse and select the file format configurations your Electronic invoicing feature requires to either generating the electronic invoice file, as well exchanging messages with an web services, if you will.
-
-4.  Select **OK**.
-
-## Adding Electronic invoicing feature Setups
-
-1.  On the **Setups** tab, select **Add** and then select **Custom setup.**
-
-2.  In the **Name** field, enter the name of the feature setup.
-
-3.  In the **Description** field, enter the description of the feature setup.
-
-4.  In the **Setup type**, select **Processing pipeline**.
-
-5.  Select **Create**.
-
-6.  Select the Setup you are working on.
-
-7.  Select **Edit**.
-
-7.  On the **Processing pipeline** tab, select **New** to add new pipeline action. For more information about pipeline, see [Actions](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-configuration-rcs?toc=/dynamics365/finance/toc.json#actions).
-
-8.  On the **Applicability rules** tab, select **New** to add new applicability rules clauses. For more information about Applicability rules, see [Applicability rules](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-configuration-rcs?toc=/dynamics365/finance/toc.json#applicability-rules).
-
-9.  On the **Variables** tab, select **New** to add new variables.
-
-10.  Select **Save**, and then select **Validate** to check the consistency of the configuration.
-
-11. Close the page.
-
-## Deploy the Electronic invoicing feature to Service environment
-
-See [Deploy the Electronic invoicing feature to Service environment](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#deploy-the-electronic-invoicing-feature-to-service-environment).
-
-## Deploy the Electronic invoicing feature to Connected application
-
-1. See [Configure the application setup](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#configure-the-application-setup).
-2. See [Deploy the Electronic invoicing feature to Connected application](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-get-started?toc=/dynamics365/finance/toc.json#deploy-the-electronic-invoicing-feature-to-connected-application).
+For information about how to complete this procedure, see [Configure the application setup](e-invoicing-get-started.md#configure-the-application-setup) and [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application).
 
