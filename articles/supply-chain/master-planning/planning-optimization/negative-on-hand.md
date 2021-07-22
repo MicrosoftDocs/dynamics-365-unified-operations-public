@@ -76,6 +76,26 @@ In this case, the planning engine assumes that the on-hand quantity for warehous
 
 The result is a planned order of 25 pcs. (= 25 pcs. &minus; 0 pcs.) to refill warehouse 13 from 0 pcs. to 25 pcs.
 
+## Planning when there is a reservation against negative on-hand
+
+When you adjust the inventory while physical reservations exist, it can lead to the situation when an order is physically reserved against negative inventory. In this case, Planning Optimization won't create planned order to replenish the order's quantity. The reason for such behavior is that Planning Optimization assumes that if a physical reservation exists, it is supported by on-hand, even if the receipt of on-hand is not yet registered in the system, and thus replenishment is not needed.
+
+An example below illustrates the described scenario.
+
+### Example 
+
+The system is configured in the following manner:
+- A product *FG* exists with *10* pcs. of the on-hand inventory.
+- The product configuration allows physical negative inventory.
+- A sales order exists for a quantity of *10* pcs. of the product *FG*.
+- Sales order quantity is physically reserved against existing on-hand.
+
+Now you need to perform a quantity adjustment of the product *FG* so that on-hand becomes zero. 
+
+Since the product inventory on-hand is zero, the sales order quantity is now reserved against negative inventory.
+
+When master planning runs, no planned order is created to supply the sales order since Planning Optimization assumes that there is on-hand that supplies the physical reservation.
+
 ## Related resources
 
 [Planning Optimization overview](planning-optimization-overview.md)
