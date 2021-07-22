@@ -4,7 +4,7 @@
 title: Set up the Dynamics 365 Commerce localization for Russia
 description: This topic explains how to set up the Microsoft Dynamics 365 Commerce localization for Russia.
 author: akviklis
-ms.date: 07/15/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -93,7 +93,7 @@ To enable the Cloud POS extension components to be loaded in the **extensions.js
 	
 ## Set up parameters for cash management
 
-To set up parameters for cash management, follow the steps described here: [Set up for cash management for POS](emea-eeu-petty-cash-for-retail.md#set-up-for-cash-management-for-pos).
+To set up parameters for cash management, follow the steps described in [Set up for cash management for POS](emea-eeu-petty-cash-for-retail.md#set-up-for-cash-management-for-pos).
 	
 ## Set up aggregation parameters for registering POS sales and return transactions
 
