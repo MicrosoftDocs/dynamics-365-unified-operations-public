@@ -4,7 +4,7 @@
 title: Maintain vendor bank account information
 description: Vendors can use the Vendor collaboration functionality to maintain their bank account information. This topic explains how to add and maintain bank information for vendors that you do business with.
 author: v-kiarnd
-ms.date: 01/14/2021
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
