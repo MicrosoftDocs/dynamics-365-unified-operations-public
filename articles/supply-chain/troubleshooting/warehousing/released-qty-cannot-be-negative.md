@@ -48,7 +48,8 @@ Use the following procedure to review your load lines and make a note of the uni
 1. Go to **Warehouse management \> Loads \> All loads**.
 1. Select the load that includes the load line that can't be deleted or updated.
 1. On the Action Pane, on the **Loads** tab, in the **Related information** group, select **Work**.
-1. Calculate the conversion rate between **Inventory quantity** and **Quantity**. Make a note of the rate. <!-- KFM: Where are these fields? -->
+1. Select the relevant work ID in the top grid and then open the **General** tab at the bottom of the page.
+1. On the **General** tab, calculate the conversion rate between **Inventory work quantity** and **Work quantity**. Make a note of the rate.
 1. Repeat this procedure for all relevant work IDs to make sure that the same conversion was used.
 
 ### Check the current unit conversion for the item and make adjustments
@@ -57,7 +58,7 @@ Use the following procedure to review your product's unit conversion and make ad
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Open the relevant product to go to its **Released product details** page.
-1. On the Action Pane, on the **Product** tab, in the **Related information** group, select **Unit conversions**. <!-- KFM: I don't see this group or button here. -->
+1. On the Action Pane, on the **Product** tab, in the **Set up** group, select **Unit conversions**.
 1. Select the conversion between the units and make adjustments using conversion you found in the previous step.
 
 ### Update or delete the load line and revert the unit conversion adjustments
@@ -70,5 +71,5 @@ Use the following procedure to process the load line as required and revert the 
 1. Continue with the required actions as needed (such as deleting the load line or changing its quantity).
 1. Go to **Product information management \> Products \> Released products**.
 1. Open the relevant product to go to its **Released product details** page.
-1. On the Action Pane, on the **Product** tab, in the **Related information** group, select **Unit conversions**. <!-- KFM: I don't see this group or button here. -->
+1. On the Action Pane, on the **Product** tab, in the **Set up** group, select **Unit conversions**.
 1. Select the conversion between the units and revert the adjustments you made in the previous section.
