@@ -140,7 +140,7 @@ The following types of transactions cannot be reversed:
 - Foreign currency revaluation
   - Unlike General ledger foreign currency revaluation, Accounts receivable and Accounts payable foreign currency revaluations cannot be reversed. Instead, the revaluation needs to be run again using the invoice date, which is similar to reversing the previous revaluation. Revaluing with the invoice date will use the exchange rate from the invoice’s date, essentially bring the unrealized gain or loss to zero, which is similar to a reversal. Note that this will not reverse the same amount if the default exchange rate was modified on the invoice.
 - Purchase order vendor invoice
-  - A credit note must be created to reverse the vendor invoice. Information can be found here on how to enter this transaction. 
+  - A credit note must be created to reverse the vendor invoice.  For more information on creating a reversing transaction, see [Create a purchase return order](../../supply-chain/procurement/tasks/create-purchase-return-order.md). 
 - Promissory note
 - Bank letter of credit export shipment
 
@@ -184,7 +184,7 @@ The following types of transactions can't be reversed:
   - Unlike General ledger foreign currency revaluation, Accounts receivable and Accounts payable foreign currency revaluation cannot be reversed. Instead, the revaluation must be run again using the invoice date, which is similar to reversing the previous revaluation. Revaluing with the invoice date will use the exchange rate from the invoice’s date, essentially bringing the unrealized gain or loss to zero, which is similar to a reversal. Note that this will not reverse the same amount if the default exchange rate was changed on the invoice.
 - The transaction has adjusted tax withholding
 - Sales order customer invoice
-  - A credit note or return must be created to reverse the transaction. Information can be found here on how to create the document.
+  - A credit note or return must be created to reverse the transaction. For information on how to create the reversing transaction, see [Sales returns](../../supply-chain/warehousing/sales-returns.md).
 - Bill of exchange
 - Cash register transaction
 - Advanced adjustment
