@@ -30,13 +30,11 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder by using device, market, and geolocation information.
+This topic describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder using device, market, and geolocation information.
 
-Dynamics 365 Commerce lets you target special variations of your page content to specific groups of customers, based on information about their device, geolocation data, and other attributes that are dynamically derived from browser requests. The variations of page content are known as *targets*, and the targeted groups of customers are known as *audiences*. E-commerce modules and fragments on a page can do basic segmentation and targeting, based on information that is available in a site user's browser. This capability helps personalize content in near-real time for members of audiences, and it also helps increase user engagement and satisfaction.
+Dynamics 365 Commerce lets you personalize your page content called *targets* for specific groups of customers called *audiences* to help increase user engagement and satisfaction. You can begin your targeting journey either by creating an audience or a target first. However, a successful targeting experience requires both these key parts.
 
-You create and manage audiences in Commerce site builder, based on customer data such as location, device information, sign-in status, and other information that is gathered from customer web requests. You also create and manage targets in Commerce site builder.
-
-You can create either an audience or a target first. However, a successful targeting experience requires both parts.
+You create and manage audiences in Commerce site builder, based on customer data such as location, device information, sign-in status, and other dynamically derived information from customer web requests. You also create and manage targets on e-commerce modules and fragments in site builder.
 
 **Disclaimer:** You are responsible for using this feature in compliance with all applicable laws and regulations, including those related to targeting and profiling. 
 
@@ -48,19 +46,19 @@ Commerce natively supports basic segments such as device information, sign-in st
 
 ### Basic segments
 
-The following segments are available to include in an audience definition by default. These segments test for conditions included in a site user's web request, and will not result in the creation of a cookie.
+The following segments are available to include in an audience definition by default:
 
-- **Signed-in status**
-- **Device OS**
-    - Windows
-    - Linux
-    - iOS
-    - Android, Other
-- **Device platform**
+- **Signed-in status** - Tests if a user is authenticated or not.
+- **Device platform** - Tests for the following device types:
     - Mobile
     - Desktop
     - Tablet
     - Other
+- **Device OS** - Tests for the following operating systems:
+    - Windows
+    - Linux
+    - iOS
+    - Android, Other
 - **Query string parameters** - Tests for the existence of a query string parameter key value pair in a request URL. For example, for the URL `www.fabrikam.com/en-us/request?promo=true`, a rule can be written to test that the parameter "promo" has the value "true." 
 - **Cookie** - Tests a cookie value set for the domain in the request URL. For example, a Fabrikam.com request might include a cookie with the name "CustomLayout" and a value of "1." The cookie test will check for the existence of a cookie but will not explicitly create one. In our example, the "CustomLayout" cookie would need to have been set by JavaScript from another module or some other business process.
 
@@ -71,9 +69,12 @@ The following segments are available to include in an audience definition by def
 
 ### Extensible segments
 
-The system allows you to expand the list of segments to incorporate data from other sources. These additional segments are generically called third-party segments. A segmentation provider will describe the types of segments that are available. Here are some caveats:
-- If an external provider is enabled, it may connect to a service with unpredictable performance. To ensure a better user experience, if a user requests a page including targeting and that page references an audience that checks a third-party segment provider, the system will initially respond with a default version of a page. 
-- The user must consent to allow cookies. When they do, their browser will request all segmentation information from relevant providers. The segmentation results will be placed in a cookie returned to the user. Subsequent requests to the page will use this segment information to serve content targeted for this group. Since the default version of the page is shown when no additional cookie-based segmentation is available, the cookie can be categorized as non-essential. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
+Commerce allows you to expand the list of segments to incorporate data from other sources. These additional segments are generically called third-party segments. A segmentation provider will describe the types of segments that are available. Here are some caveats:
+- If an external provider is enabled, it may connect to a service with unpredictable performance. To ensure a better user experience, if a user requests a page including targeting and that page references an audience that checks a third-party segment provider, the default version of the page will be shown.
+- The user must consent to allow cookies. When they do, their browser will request all segments from relevant providers. The results will be placed in a cookie returned to the user. Subsequent requests to the page will use this information to serve targeted content to this group.
+
+    > [!NOTE]
+    > Extensible segments rely on cookie consent from the site user. Targeted content will only be shown to users who choose to allow cookies. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
 
 **Disclaimer:** If you enable this feature, your data will be shared with third-party systems that you select. You control what data, if any, you provide to the third party. You understand that the data handling and compliance standards of the third party might differ from the standards of Microsoft Dynamics 365 Commerce. Your privacy is important to Microsoft. To learn more, read our [Privacy and Cookies notice](https://privacy.microsoft.com/privacystatement).
 
