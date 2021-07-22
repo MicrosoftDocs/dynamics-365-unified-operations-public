@@ -1868,6 +1868,8 @@
           href: localizations/emea-cze-vat-statement-details.md
         - name: VAT declaration (Czech Republic)
           href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+        - name: Bank symbols for bank accounts
+          href: emea-cze-specify-bank-symbols-for-bank-accounts.md
         - name: Year-end close
           href: localizations/emea-cze-hun-year-end.md
       - name: Denmark
