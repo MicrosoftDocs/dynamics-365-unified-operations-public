@@ -120,8 +120,8 @@ o	The year-end close can be reversed, and then the transaction can be reversed. 
   - This applies only to the non-Purchse order vendor invoice. 
   - Use the **Subledger journal entries not yet transferred** page to transfer the entry to General ledger, and then the non-purchase order vendor invoice can be reversed from the **Vendor transactions** page.
 - Settlement
-  - The transaction (invoice, payment, etc) is marked for settlement.
-  - The transaction (invoice, payment, etc) is settled.
+  - The transaction (invoice, payment, etc.) is marked for settlement.
+  - The transaction (invoice, payment, etc.) is settled.
     - You can verify whether a transaction has been settled, or is marked for settlement, on the **Vendor transactions** page by selecting **View settlements or Settlement – Settlement history**. 
     - You can reverse a settlement from the **Vendor transactions** page (**Settlement > Undo settlement**), if one of the transactions must be reversed.  
 - The voucher contains more than one subledger transaction entered in the same voucher number (the One voucher issue).
@@ -194,7 +194,7 @@ The following types of transactions cannot be reversed:
   - When recognizing revenue through the Revenue recognition journal, the vouchers are posted to Ledger accounts so they appear as if they are GL entries only.  These entries cannot be reversed because the revenue schedule would not be reopened to recognize the revenue again. 
 
 
-## Casn and bank management
+## Cash and bank management
 
 A number of transaction types update the Bank subledger, including vendor payments, customer payments, and bank transfers, through the general journal.
 
