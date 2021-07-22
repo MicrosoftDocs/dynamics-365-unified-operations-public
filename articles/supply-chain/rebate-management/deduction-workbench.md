@@ -46,7 +46,7 @@ If you are applying a deduction to a trade allowance rebate:
 
 ### Configure accounts receivable and deductions
 
-The system records all deduction events in a claims journal. Therefore, your system must include a journal for this purpose. If you don't have one already, set one up now. This journal is is required to create deductions directly on the deduction workbench, customer settlement, or customer pages.
+The system records all deduction events in a claims journal. Therefore, your system must include a journal for this purpose. If you don't have one already, set one up now. This journal is required to create deductions directly on the deduction workbench, customer settlement, or customer pages.
 
 To set up a new claims journal for deductions:
 
@@ -71,7 +71,7 @@ To set up a new claims journal for deductions:
     - **Creation without attached invoice** – Choose what the system should do when a quantity-based claim is approved and an invoice hasn't been attached. Select one of the following options:
         - *Accept* – Create a return order.
         - *Warning* – Create a return order, but show the warning, "Claim is not attached to an invoice."
-        - *Error* – Do not create a return order and show the error, "Claim is not attached to an invoice. Update has been cancelled."
+        - *Error* – Do not create a return order and show the error, "Claim is not attached to an invoice. Update has been canceled."
     - **Create return order prior to deduction approval** – Set to *Yes* if return orders can be created before the claim has been approved. This setting only applies to quantity-based claims where **Create return order** is set to *Yes*.
 
 ### Configure general ledger parameters
@@ -148,7 +148,7 @@ The create a new deduction in the deduction workbench, follow these steps.
         - *Price based* – a draft free text invoice will be created.
         - *Quantity based* – a negative sales order or return order will be created.
     - **Claim date** – Select the date of the claim. Defaults to today's date.
-    - **Claim reason** – Select the reason code that applies for the current deduction. The selected selected **Claim basis** affects the claim reason options that will apply. For more information about how to create and configure the values available here, see [Create deduction reasons](#deduction-reasons).
+    - **Claim reason** – Select the reason code that applies for the current deduction. The selected **Claim basis** affects the claim reason options that will apply. For more information about how to create and configure the values available here, see [Create deduction reasons](#deduction-reasons).
     - **Notes** – Add any notes that apply. When the claim is approved, the approver will be able to edit or add to the claim's notes.
     - **Create claim journal** – Choose whether the claim journal should be created when the claim or deduction is created. Set the slider to one of the following values:
         - *Yes* – The system will create and post a general journal using the **Claim journal** as set up on the **Accounts receivable parameters** page (see also [Configure accounts receivable and deductions](#accounts-receivable-deductions)). When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if invoice was attached) will be reversed.
@@ -178,7 +178,7 @@ Creating a deduction from a customer settlement is similar to creating a new ded
         - *Price based* – a draft free text invoice will be created.
         - *Quantity based* – a negative sales order or return order will be created.
     - **Claim date** – Select the date of the claim. Defaults to today's date.
-    - **Claim reason** – Select the reason code that applies for the current deduction. The selected selected **Claim basis** affects the claim reason options that will apply. For more information about how to create and configure the values available here, see [Create deduction reasons](#deduction-reasons).
+    - **Claim reason** – Select the reason code that applies for the current deduction. The selected **Claim basis** affects the claim reason options that will apply. For more information about how to create and configure the values available here, see [Create deduction reasons](#deduction-reasons).
     - **Notes** – Add any notes that apply. When the claim is approved, the approver will be able to edit or add to the claim's notes.
     - **Create claim journal** – Choose whether the claim journal should be created when the claim or deduction is created. Set the slider to one of the following values:
         - *Yes* – The system will create and post a general journal using the **Claim journal** as set up on the **Accounts receivable parameters** page (see also [Configure accounts receivable and deductions](#accounts-receivable-deductions)). When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if invoice was attached) will be reversed.
@@ -208,7 +208,7 @@ Create a deduction from a customer page is similar to creating a new deduction v
         - *Price based* – a draft free text invoice will be created.
         - *Quantity based* – a negative sales order or return order will be created.
     - **Claim date** – Select the date of the claim. Defaults to today's date.
-    - **Claim reason** – Select the reason code that applies for the current deduction. The selected selected **Claim basis** affects the claim reason options that will apply. For more information about how to create and configure the values available here, see [Create deduction reasons](#deduction-reasons).
+    - **Claim reason** – Select the reason code that applies for the current deduction. The selected **Claim basis** affects the claim reason options that will apply. For more information about how to create and configure the values available here, see [Create deduction reasons](#deduction-reasons).
     - **Notes** – Add any notes that apply. When the claim is approved, the approver will be able to edit or add to the claim's notes.
     - **Create claim journal** – Choose whether the claim journal should be created when the claim or deduction is created. Set the slider to one of the following values:
         - *Yes* – The system will create and post a general journal using the **Claim journal** as set up on the **Accounts receivable parameters** page (see also [Configure accounts receivable and deductions](#accounts-receivable-deductions)). When an invoice is attached to the claim, the claim journal is used to reduce the balance of the applicable invoice. If the claim is later rejected, the claim journal and settlements (if invoice was attached) will be reversed.
@@ -302,16 +302,16 @@ To approve a deduction:
 1. Select the **Mark** check box for the deduction you want to process.
 1. On the Action Pane, select **Maintain \> Approve deduction**.
 1. The **Approve deduction** dialog opens. Edit or add to the **Note** field as needed.
-1. If an invoice has not been attached to a price-based deduction, select an **Item sales tax group**. Normally, the tax item group is on the invoice, and therefor the tax item code must be specified when not attached to an invoice.
-1. Select **OK**. No further changes will be allowed to the deduction. If **Create claim journal** was set to *No* when the deduction was created, the claim journal is be created and posted when the deduction is approved. After the deduction has been approved, the credit is automatically created and opened. The type will depend on the deduction's **Claim basis** as follows:
-    - For deductions with a **Claims basis** of *Price based*:<br>If the deduction is price based a draft, a free text invoice is created for the customer account. You can add a **Description** and **Post** the credit. The following fields are populated by the deduction when the draft is created:
+1. If an invoice has not been attached to a price-based deduction, select an **Item sales tax group**. Normally, the tax item group is on the invoice, and thereforee the tax item code must be specified when not attached to an invoice.
+1. Select **OK**. No further changes will be allowed to the deduction. If **Create claim journal** was set to *No* when the deduction was created, the claim journal is created and posted when the deduction is approved. After the deduction has been approved, the credit is automatically created and opened. The type will depend on the deduction's **Claim basis** as follows:
+    - For deductions with a **Claims basis** of *Price based*:<br>If the deduction is price-based, a free text invoice is created for the customer account. You can add a **Description** and **Post** the credit. The following fields are populated by the deduction when the draft is created:
       - **Deduction ID** – Added to the **Header** for traceability back to the deduction.
       - **Main account** – Determined by **Claim posting account** on the **Deduction reason** assigned to the deduction.
       - **Item sales tax group** – Determined by the attached invoice or the value you selected when approving the deduction.
       - **Unit price** – The credit of the deduction's **Claim amount**
       - **Invoice text** – Defaults from deduction's **Notes**
 
-    - For deductions with a **Claims basis** of *Quantity based*:<br>If the deduction is quantity based, an open sales order or return order is created. The **Create return order** setting on the **[Accounts receivable parameters](#accounts-receivable-deductions)** page determines whether a sales order or return order is created when the deduction is approved. The **Copy orders** page opens, filtered to show rows where the **Invoice account** is set to the deduction's customer account.
+    - For deductions with a **Claims basis** of *Quantity based*:<br>If the deduction is quantity-based, an open sales order or return order is created. The **Create return order** setting on the **[Accounts receivable parameters](#accounts-receivable-deductions)** page determines whether a sales order or return order is created when the deduction is approved. The **Copy orders** page opens, filtered to show rows where the **Invoice account** is set to the deduction's customer account.
         1. Expand the **Invoices** FastTab.
         1. The **Headers** section of the **Invoices** FastTab shows sales invoices where the **Invoice account** matches the deduction's customer account. Select an applicable sales invoice.
         1. The **Lines** section of the **Invoices** FastTab shows lines from the selected sales invoice. Mark the **Select** check box for each line you want to copy (or select the **Select all** check box for the sales order in the **Headers** section to select all of its lines).
@@ -415,7 +415,7 @@ The following subsections describe how you can attach a credit to a deduction, w
 
 Once a credit has been attached to the deduction, it will be available to view using the **Open credit** button on the deduction work bench **Open transactions** section toolbar.
 
-After a credit has been invoiced and the deduction approved, it will be displayed in the deduction work bench **Open transactions** section against the applicable **Deduction ID** with its **Claim type** set to *Other credits* .
+After a credit has been invoiced and the deduction approved, it will be displayed in the deduction work bench **Open transactions** section against the applicable **Deduction ID** with its **Claim type** set to *Other credits*.
 
 #### Attach a free text to a deduction
 
@@ -423,7 +423,7 @@ To attach a **free text** to a deduction:
 
 1. Go to **Accounts receivable \> Invoices \> All free text invoices**.
 1. Select the applicable invoice.
-1. On the Action Pane, on the **Invoice** tab, select **Attach credit to deduction**. This is only enabled if the Free text's **Deduction ID** is blank and therefor not already attached to a deduction.
+1. On the Action Pane, on the **Invoice** tab, select **Attach credit to deduction**. This is only enabled if the Free text's **Deduction ID** is blank and therefore not already attached to a deduction.
 1. The **Attach credit to deduction** page opens, where you can select *one* deduction. Only open *price-based* deductions can be selected.
 1. Select **OK**. The **Deduction ID** is populated on the free text's header.
 
@@ -433,9 +433,9 @@ To attach a return order to a deduction:
 
 1. Go to **Accounts receivable \> Orders \> All return orders**.
 1. Select the applicable received or open **RMA number**.
-1. On the Action Pane, on the **Return order** tab, select **Attach credit to deduction**. This is only enabled if the return order's **Deduction ID** is blank and therefor not already attached to a deduction.
+1. On the Action Pane, on the **Return order** tab, select **Attach credit to deduction**. This is only enabled if the return order's **Deduction ID** is blank and therefore not already attached to a deduction.
 1. The **Attach credit to deduction** page opens, where you can select *one* deduction. Only open *quantity-based* deductions can be selected.
-1. Select **OK**. The **Deduction ID** is populated on the return orders's header.
+1. Select **OK**. The **Deduction ID** is populated on the return order's header.
 
 #### Attach a sales order to a deduction
 
@@ -443,7 +443,7 @@ To attach a sales order to a deduction:
 
 1. Go to **Accounts receivable \> Orders \> All sales orders**.
 1. Select the applicable open, delivered, or invoiced **Sales order**.
-1. On the Action Pane, on the **Invoice** tab, select **Attach credit to deduction**. This is only enabled if the **Deduction ID** is blank and therefor not already attached to a deduction.
+1. On the Action Pane, on the **Invoice** tab, select **Attach credit to deduction**. This is only enabled if the **Deduction ID** is blank and therefore not already attached to a deduction.
 1. The **Attach deduction** page opens, where you can select *one* deduction. Only open *quantity-based* deductions will be available for selection.
 1. Select **OK**. The **Deduction ID** is populated on the sales order's header.
 
@@ -471,7 +471,7 @@ To attach a deduction to a free text, return order, or sales order credit:
 1. Select the applicable open **Deduction ID**.
 1. On the Action Pane, select **Maintain \> Attach deduction to credit**. This is only enabled where **Claim status** set to *Open*.
 1. The **Attach credit** page will open, and you can select *one* credit. The type of credits displayed will depend on the deduction's **Claim basis**:
-    - **Price based** – Free text invoices for the customer account with blank **Deduction ID**. Customer requisition will also be displayed since the free text might be unposted and therefor have no number to reference.
+    - **Price based** – Free text invoices for the customer account with blank **Deduction ID**. Customer requisition will also be displayed since the free text might be unposted and therefore have no number to reference.
     - **Quantity based**, where **Create return order** setting on **[Accounts receivable parameters](#accounts-receivable-deductions)** is set to:
         - **Yes** – Return orders for the customer account with blank **Deduction ID**.
         - **No** – Sales order for the customer account with blank **Deduction ID**.
@@ -479,7 +479,7 @@ To attach a deduction to a free text, return order, or sales order credit:
 
 Once the credit has been attached to the deduction, it will be available to view using the **Open credit** button on the **Deduction workbench**'s **Open transactions**
 
-And after the credit have been invoiced and the deduction approved, it will be displayed under **Open transactions** as **Claim type** set to *Other credits* against the applicable **Deduction ID**.
+And after the credit has been invoiced and the deduction approved, it will be displayed under **Open transactions** as **Claim type** set to *Other credits* against the applicable **Deduction ID**.
 
 #### Detach a credit from the deduction
 
@@ -489,7 +489,7 @@ If the incorrect credit has been attached, select this option to detach the cred
 
 On the Action Pane, in the Maintain group, select **Detach deduction from credit**. This removes the **Deduction ID** from the credit.
 
-## Create an one-time promotion
+## Create a one-time promotion
 
 Sometimes, you might not have an approved rebate that you can match to a deduction. In this case, you can use the *one-time promotion* feature to match the deduction to a trade allowance that is associated with the customer. The *one-time promotion* feature creates a new trade allowance agreement and a lump sum merchandising event. The feature then matches the lump sum to the deduction and makes the postings that are required to close the deduction.
 
