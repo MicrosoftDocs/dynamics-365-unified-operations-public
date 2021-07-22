@@ -13,14 +13,14 @@ ms.technology:
 # Account groups selection for Chinese voucher types
 This feature allows you to select accounts groups when setting up voucher types for China.
 
-## **Enable the feature**
+## Enable the feature
 
 1.  Enable the feature in the **Workspaces &gt; Feature management**.
 2.  This introduces a new table where voucher type setup is stored. To copy existing Chinese voucher type setup information to a new table, go to **System administration &gt; Periodic tasks &gt; Database &gt; Consistency check**. Expand **Program &gt; General ledger** and select **Restriction type for voucher**.
 3.  Select **Check** in the **Check/Fix** field to check whether there are settings in existing setup to copy to a new table.
 4.  Select **Fix** in the **Check/Fix** field to copy settings from an existing table to a new table.
 
-**Set up voucher type**
+## Set up voucher type
 
 1.  Go to **General ledger &gt; Journal setup &gt; Chinese voucher type &gt; Voucher type**.
 2.  Under the **Rules** FastTab, select the line with specific restriction.
