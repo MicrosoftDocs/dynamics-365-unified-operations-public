@@ -4,7 +4,7 @@
 title: Content delivery network implementation options
 description: This topic reviews the different options for content delivery network (CDN) implementation that can be used with Microsoft Dynamics 365 Commerce environments. These options include native, Commerce-provided instances of Azure Front Door and customer-owned instances of Azure Front Door.
 author: BrianShook
-ms.date: 03/11/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -79,7 +79,7 @@ The following table lists the pros and cons of using an external CDN service to 
 
 | Pros | Cons |
 |------|------|
-| <ul><li>This option is useful when the existing domain is already hosted on an external CDN.</li><li>WAF: Depends upon external provider.</li></ul> | <ul><li>A separate contract and additional costing are required.</li><li>SSL might incur additional costs.</li><li>Because the service is separate from the Azure cloud structure, additional infrastructure must be managed.</li><li>The service might require longer time investments in endpoint and security setup.</li><li>The service is self-managed.</li><li>The service is self-monitored.</li></ul> |
+| <ul><li>This option is useful when the existing domain is already hosted on an external CDN.</li><li>WAF: Depends upon the external provider.</li></ul> | <ul><li>A separate contract and additional costing are required.</li><li>SSL might incur additional costs.</li><li>Because the service is separate from the Azure cloud structure, additional infrastructure must be managed.</li><li>The service might require longer time investments in endpoint and security setup.</li><li>The service is self-managed.</li><li>The service is self-monitored.</li></ul> |
 
 The following illustration shows a Commerce infrastructure that includes an external CDN service.
 
