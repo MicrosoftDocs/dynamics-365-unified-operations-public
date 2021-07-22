@@ -78,35 +78,28 @@ The result is a planned order of 25 pcs. (= 25 pcs. &minus; 0 pcs.) to refill wa
 
 ## Planning when there is a reservation against negative on-hand
 
-When you adjust the inventory while physical reservations exist, it can lead to the situation when an order is physically reserved against negative inventory. In this case, Planning Optimization won't create planned order to replenish the order's quantity. The reason for such behavior is that Planning Optimization assumes that if a physical reservation exists, it is supported by on-hand, even if the receipt of on-hand is not yet registered in the system, and thus replenishment is not needed.
+When you adjust inventory while physical reservations exist, it can lead to a situation where an order is physically reserved against negative inventory. In this case, Planning Optimization won't create a planned order to replenish the order's quantity. The reason this happens is that Planning Optimization assumes that if a physical reservation exists, it is supported by on-hand (even if the receipt of on-hand is not yet registered in the system) and therefore replenishment isn't needed.
 
-An example below illustrates the described scenario.
+The following example illustrates this scenario.
 
-### Example 
+### Example
 
-The system is configured in the following manner:
-- A product *FG* exists with *10* pcs. of the on-hand inventory.
+The system is configured as follows:
+
+- A product *FG* exists with *10* pcs. of on-hand inventory.
 - The product configuration allows physical negative inventory.
-- A sales order exists for a quantity of *10* pcs. of the product *FG*.
+- A sales order exists for a quantity of *10* pcs. of product *FG*.
 - Sales order quantity is physically reserved against existing on-hand.
 
-Now you need to perform a quantity adjustment of the product *FG* so that on-hand becomes zero. 
-
-Since the product inventory on-hand is zero, the sales order quantity is now reserved against negative inventory.
-
-When master planning runs, no planned order is created to supply the sales order since Planning Optimization assumes that there is on-hand that supplies the physical reservation.
+Then you adjust the quantity of product *FG* so that on-hand becomes zero. Because the product inventory on-hand is zero, the sales order quantity is now reserved against negative inventory. However, if you run master planning now, no planned order will be created to supply the sales order because Planning Optimization will assume that the required on-hand inventory exists to supply the physical reservation.
 
 ## Related resources
 
-[Planning Optimization overview](planning-optimization-overview.md)
-
-[Get started with Planning Optimization](get-started.md)
-
-[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-
-[View plan history and planning logs](plan-history-logs.md)
-
-[Cancel a planning job](cancel-planning-job.md)
+- [Planning Optimization overview](planning-optimization-overview.md)
+- [Get started with Planning Optimization](get-started.md)
+- [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
+- [View plan history and planning logs](plan-history-logs.md)
+- [Cancel a planning job](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
