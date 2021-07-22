@@ -91,15 +91,10 @@ To enable the Cloud POS extension components to be loaded in the **extensions.js
 }
 ```	
 	
-## Set up miscellaneous charges for customer order cancellations
+## Set up parameters for cash management
 
-To set up charges that can be applied to customer order cancellation operations in Commerce headquarters, follow these steps.
-
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
-1. On the **Customer order** tab, in the **Cancellation charge percentage** field, specify the required value.
-1. Go to **Accounts receivable \> Charges setup \> Charges posting**.
-1. Set up accounts so that you can apply and post charges for a customer order cancellation.
-
+To set up parameters for cash management, follow the steps described here: [Set up for cash management for POS](emea-eeu-petty-cash-for-retail.md#set-up-for-cash-management-for-pos).
+	
 ## Set up aggregation parameters for registering POS sales and return transactions
 
 You can set up aggregation parameters that are used to aggregate POS sales and return transactions when those transactions are registered in Commerce. When you select the aggregation parameters, Commerce aggregates the positive sales quantities and negative return quantities for items that have identical inventory dimensions.
@@ -113,10 +108,21 @@ To set up the aggregation parameters in Commerce headquarters, follow these step
     > [!NOTE]
     > The **Sales and returns** checkbox is available only if you select the **Voucher transactions** checkbox.
 
+## Set up miscellaneous charges for customer order cancellations
+
+To set up charges that can be applied to customer order cancellation operations in Commerce headquarters, follow these steps.
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
+1. On the **Customer order** tab, in the **Cancellation charge percentage** field, specify the required value.
+1. Go to **Accounts receivable \> Charges setup \> Charges posting**.
+1. Set up accounts so that you can apply and post charges for a customer order cancellation.
+
 ## Additional resources
 
 [Commerce home page](../index.md)
 
 [Russian localization scope](../../finance/localizations/russia.md)
+
+[Petty cash management for Commerce for Eastern Europe](emea-eeu-petty-cash-for-retail.md)
 
 [Commerce localization for Russia](rus-commerce-localization.md)
