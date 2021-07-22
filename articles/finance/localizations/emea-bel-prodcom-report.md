@@ -4,7 +4,7 @@
 title: Set up and maintain PRODCOM
 description: This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 Finance. 
 author: EvgenyPopovMBS
-ms.date: 06/20/2017
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 1611
 This topic explains how to set up and maintain PRODCOM. Manufacturers of industrial products are required to report the quantities and values of products sold, as well as employment data, to the Nationaal Instituut voor de Statistiek (NIS) in response to the routine PRODCOM survey. Most producers submit an itemized PRODCOM report to the NIS monthly, using one of six standard report formats. The NIS determines the report layout, depending on the nature of the materials produced. The PRODCOM report displays production statistics for industrial products that are manufactured by production companies operating in Belgium. This report is typically used by accounting managers and accountants.
 
 ## Set up PRODCOM reporting
-Before you can generate the PRODCOM report, you must set up the following on the **PRODCOM parameters** page.
+Before you can generate the PRODCOM report, you must set up the following on the **PRODCOM parameters** page (**Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **PRODCOM parameters**).
 
 1.  Enter a primary contact ID. This is the identification that is printed under the primary contact information section of the PRODCOM declaration.
 2.  Enter an external contact ID - This is the identification that is printed under the external contact information section of the PRODCOM declaration.
@@ -53,10 +53,10 @@ Assign PRODCOM properties to an item (**Product information management** &gt; **
 -   **Delivery to a third party** - Select this check box to report quantities and values of products that were delivered by third parties.
 -   **Work done for** **enterprises** - Select this check box to report quantities and values of products that were delivered by enterprises.
 
-After you've set up PRODCOM, you can use the **PRODCOM** page to create PRODCOM periods and transfer sales lines to the PRODCOM report.
+After you've set up PRODCOM, you can use the **PRODCOM** page (**Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **PRODCOM**) to create PRODCOM periods and transfer sales lines to the PRODCOM report.
 
 ## Convert Intrastat to PRODCOM
-Use the **Intrastat to PRODCOM conversion** page to assign PRODCOM codes to Intrastat commodity codes. These codes can change every year. On the **Intrastat to PRODCOM conversion** page, click **Import PRODCOM data** to import the information.
+Use the **Intrastat to PRODCOM conversion** page (**Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Intrastat to PRODCOM conversion**) to assign PRODCOM codes to Intrastat commodity codes. These codes can change every year. On the **Intrastat to PRODCOM conversion** page, click **Import PRODCOM data** to import the information.
 
 ## Use PRODCOM
 Use the **PRODCOM** page to create PRODCOM periods and transfer sales lines to the PRODCOM report. After you enter the dates for the declaration period and then enter the section codes, you can transfer the sales lines to the PRODCOM report. After you transfer the sales lines to the report, you can review and edit the products on the PRODCOM list, and then you can print the report.
