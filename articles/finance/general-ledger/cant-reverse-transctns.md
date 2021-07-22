@@ -4,7 +4,7 @@
 title: Why can’t I reverse this transaction? 
 description: This topics describes multiple reasons why transactions can't be reversed as well as listing solutions. 
 author: kweekley
-ms.date: 06/12/2021
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,8 +20,8 @@ ms.reviewer: roschlom
 ms.search.region: Global 
 # ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 2021-06-12
-ms.dyn365.ops.version: 10.0.14
+ms.search.validFrom: 2021-07-21
+ms.dyn365.ops.version: 10.0.20
 
 ---
 
@@ -102,44 +102,45 @@ Transactions can’t be reversed for the following reasons.
 
 Multiple transaction types update the Accounts payable subledger, including vendor invoices, vendor invoice journals, and expense reports.
 
-If the Mass reversal feature hasn't been enabled, you can reverse transactions one at a time using either the **Vendor transactions** page for invoices or the **Bank account** page for check payments. 
+If the Mass reversal feature hasn't been turned on, you can reverse transactions one at a time using either the **Vendor transactions** page for invoices, or the **Bank account** page for check payments. 
 
-If the Mass reversal feature has been turned on, one or more Accounts payable transactions can also be reversed from the **Voucher transactions** page and the journal it was posted from. Vendor payments still can be reversed only from the bank account. Also note that the vendor transactions can't be reversed from the **Transactions for (main account)** page for the ledger, but they can be reversed from the **Voucher transactions** page. 
+If the Mass reversal feature has been turned on, one or more Accounts payable transactions can also be reversed from the **Voucher transactions** page and the journal it was posted from. Vendor payments still can be reversed only from the bank account. Also note that the vendor transactions can't be reversed from the **Transactions for (main account)** page for the ledger. They can be reversed from the **Voucher transactions** page. 
 
 Note that some transactions can’t be reversed at all, such as Purchase order vendor invoices and electronic vendor payments. 
 
 ### Vouchers can’t be reversed for the following reasons
 
 - Fiscal period is on-hold or closed
-  - If the reversing date is in a fiscal period that is not Open, it cannot be reversed. 
+  - If the reversing date is in a fiscal period that isn't open, it can’t be reversed. 
   - If the transaction supports entry of a reversing date, the transaction can still be reversed by changing the reversal date to an open period.  
 - General ledger year-end close process has been run
-  - The transaction’s accounting date is in a fiscal year that has been through a general ledger year-end close. Note that a period within the fiscal year can still be Open, but the transaction cannot be reversed if the year-end close process has been run for the fiscal year. The fiscal year has a different status than the periods within the fiscal year. 
-o	The year-end close can be reversed and then the transaction can be reversed. This solution may not be an option. It may be simpler to enter a reversing transaction manually in an open period of either the closed fiscal year or the next fiscal year, depending on the status of the fiscal close. If a new transaction is posted into an open period of the fiscal year that has been through the year-end close process, the year-end close will need to be run again.
-- Subledger journal entry not transferred to general ledger
-  - This is relevant to only non-PO vendor invoice. 
-  - Use the “Subledger journal entries not yet transferred” page to transfer the entry to GL and then the non-PO vendor invoice can be reversed from the Vendor transactions page.
+  - The transaction’s accounting date is in a fiscal year that has been closed in General ledger. Note that a period within the fiscal year can still be open, but the transaction can’t be reversed if the year-end close process has been run for the fiscal year. The fiscal year has a different status than the periods within the fiscal year. 
+o	The year-end close can be reversed, and then the transaction can be reversed. This solution may not be an option. It might be simpler to enter a reversing transaction manually in an open period of either the closed fiscal year or the next fiscal year, depending on the status of the fiscal close. If a new transaction is posted to an open period of the fiscal year that has been through the year-end close process, the year-end close will need to be run again.
+- Subledger journal entry not transferred to General ledger
+  - This applies only to the non-Purchse order vendor invoice. 
+  - Use the **Subledger journal entries not yet transferred** page to transfer the entry to General ledger, and then the non-purchase order vendor invoice can be reversed from the **Vendor transactions** page.
 - Settlement
   - The transaction (invoice, payment, etc) is marked for settlement.
   - The transaction (invoice, payment, etc) is settled.
-    - This can be verified on the Vendor transactions page by selecting View settlements or Settlement – Settlement history. 
-    - Settlement can be reversed from the Vendor transactions page – Settlement – Undo settlement if one of the transactions must be reversed.  
-- The voucher contains more than one subledger transaction entered in the same voucher number (One voucher issue).
-- Invoice has not been approved
-  - If the Approval box isn’t marked on the invoice, it cannot be reversed. 
-  - This is not workflow approvals, but rather the Approval option on the invoice .  This option is used to prevent an invoice from being paid, typically for vendor invoice register invoices. 
-- Transaction is in the invoice pool
-  - An invoice in the pool cannot be reversed directly from the Vendor transactions page. Invoices in the pool can instead be reversed through the cancelation process on the Invoice approval journal page.  
+    - You can verify whether a transaction has been settled, or is marked for settlement, on the **Vendor transactions** page by selecting **View settlements or Settlement – Settlement history**. 
+    - You can reverse a settlement from the **Vendor transactions** page (**Settlement > Undo settlement**), if one of the transactions must be reversed.  
+- The voucher contains more than one subledger transaction entered in the same voucher number (the One voucher issue).
+- The invoice hasn't been approved
+  - If the **Approval** check box isn’t marked on the invoice, the invoice can’t be reversed. 
+  - Approval in this instance doesn't refer to approvals in the  workflow process, but rather the **Approval** option on the invoice. This option is used to prevent an invoice from being paid, typically for vendor invoice register invoices. 
+- The transaction is in the invoice pool
+  - An invoice in the pool can’t be reversed directly from the **Vendor transactions** page. Invoices in the pool can instead be reversed through the cancelation process on the **Invoice approval journal** page.  
 - The transaction has a parent invoice that has been corrected (Indian localization)
-- The transaction has a promissory status of invoice remitted.
+- The transaction has a promissory status of **Invoice remitted**.
 - The transaction is used for a partial tax settlement.
-- The transaction contains a Vendor account but is being reversed from the wrong page, such as from Transactions for XXXX. 
-  - As described above, certain subledger transactions can only be reversed from specific pages, even with Mass reversals enabled. 
+- The transaction contains a Vendor account but is being reversed from the wrong page, such as from **Transactions for (main account)** page. 
+  - As described above, certain subledger transactions can only be reversed from specific pages, even with the Mass reversals feature turned on. 
+
 The following types of transactions cannot be reversed:
 - Foreign currency revaluation
-  - Unlike GL foreign currency revaluation, AR and AP foreign currency revaluation cannot be reversed. Instead, the revaluation needs to be run again using the invoice date, which is similar to reversing the previous revaluation. Revaluing with the invoice date will use the exchange rate from the invoice’s date, essentially bring the unrealized gain/loss to 0, which is similar to a reversal.  Note that this will not reverse the same amount if the default exchange rate was modified on the invoice.
+  - Unlike General ledger foreign currency revaluation, Accounts receivable and Accounts payable foreign currency revaluations cannot be reversed. Instead, the revaluation needs to be run again using the invoice date, which is similar to reversing the previous revaluation. Revaluing with the invoice date will use the exchange rate from the invoice’s date, essentially bring the unrealized gain or loss to zero, which is similar to a reversal. Note that this will not reverse the same amount if the default exchange rate was modified on the invoice.
 - Purchase order vendor invoice
-  - A credit note must be created to reverse the vendor invoice.  Information can be found here on how to enter this transaction. 
+  - A credit note must be created to reverse the vendor invoice. Information can be found here on how to enter this transaction. 
 - Promissory note
 - Bank letter of credit export shipment
 
