@@ -1517,7 +1517,7 @@
           - name: Tax feature support for transfer orders
             href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
           - name: Calculating tax on top of price when Prices include taxes is enabled
-            href: localizations/tasks/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
+            href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
           - name: Add data fields in tax configurations
             href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
           - name: Add data fields in the tax integration by using extensions
