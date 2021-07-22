@@ -506,8 +506,6 @@
           href: dev-tools/access-instances.md
         - name: Configure one-box development environments
           href: dev-tools/configure-developer-vm.md
-        - name: Create new users on development machines
-          href: dev-tools/enable-development-machine.md
         - name: Development and build VMs that don't allow admin access FAQ
           href: sysadmin/VMs-no-admin-access.md
         - name: Rename local environments to access Azure DevOps
