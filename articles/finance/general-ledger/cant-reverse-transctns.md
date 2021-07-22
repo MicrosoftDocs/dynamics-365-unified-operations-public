@@ -44,7 +44,7 @@ Transactions must meet specific criteria to be reversed. The validation for each
 
 Where a transaction is reversed may also impact whether or not it can be reversed. For example, a vendor payment (posted as a check) can only be reversed from the bank accounts’ transaction page, under **Checks**. It can't be reversed from the General ledger on the Voucher transaction page. Turning on the **Mass reversal for multiple documents** feature (referred to as the Mass reversal feature) in the **Feature management** workspace impacts how many transactions can be reversed and where the transactions can be reversed from.  Turning this feature on does two things:
 
-- Allows more than one transaction to be reversed at the same time.  Before this feature, each transaction had to be reversed one at a time.  This feature allows more than one transaction, for some types of transactions, to be selected and reversed from the journal it was posted or from Voucher transactions, assuming the individual transactions could be reversed before enabling the feature.
+- Allows more than one transaction to be reversed at the same time. Before this feature, each transaction had to be reversed one at a time.  This feature allows more than one transaction, for some types of transactions, to be selected and reversed from the journal it was posted or from Voucher transactions, assuming the individual transactions could be reversed before enabling the feature.
 
 - Allows reversal of *some* subledger transactions from the journal (General journal) or Voucher transactions instead of requiring reversal from the subledger page. For example, previously a vendor invoice journal could only be reversed from Vendor transactions. Now the invoice journal can also be reversed from the ‘General ledger’ side through the journal or Voucher transactions. But this isn’t true for all types of transactions, as defined in each section. 
 
@@ -56,7 +56,7 @@ For more information about the Mass reversal feature, see [Reverse journal posti
 
 General ledger adjustments are entered with only ledger accounts, and therefore only update General ledger.  
 
-If Mass reversal feature isn't turned on, most general ledger adjustments can be individually reversed from the **Transactions for [main account]** page for the ledger (LedgerTransAccount), which shows each transaction that’s been posted to the main account. The page is typically opened from the **Trial balance list** page, or by clicking the **Transactions** button on the **Voucher transactions** page. 
+If Mass reversal feature isn't turned on, most general ledger adjustments can be individually reversed from the **Transactions for [main account]** page (the exact title of the page will vary depending on the selected main account) for the ledger (LedgerTransAccount), which shows each transaction that’s been posted to the main account. The page is typically opened from the **Trial balance list** page, or by clicking the **Transactions** button on the **Voucher transactions** page. 
 
 If the Mass reversal feature is turned on, one or more General ledger vouchers can now be reversed from the **Voucher transactions** page, and the journal the transaction was posted from. 
 
@@ -66,20 +66,20 @@ Transactions can’t be reversed for the following reasons.
 
 - General journal
   - Fiscal period is on-hold or permanently closed
-    - If the reversing date is in a fiscal period that is not Open, it cannot be reversed. 
+    - If the reversing date is in a fiscal period that is not open, it cannot be reversed. 
     - If the transaction supports entry of a reversing date, the transaction can still be reversed by changing the reversal date to an open period.  
   - Year-end close process has been run
    - The transaction’s accounting date is in a fiscal year that has been through a year-end close. Note that a period within the fiscal year can still be open, but the transaction can't be reversed if the year-end close process has been run for the fiscal year. The fiscal year has a different status than the periods within the fiscal year. 
-   - The year-end close can be reversed and then the transaction can be reversed. This solution may not be an option. It may be simpler to enter a reversing transaction manually in an open period of either the closed fiscal year or the next fiscal year, depending on the status of the fiscal close. If a new transaction is posted into an open period of the fiscal year that has been through the year-end close process, the year-end close will need to be run again. 
+   - The year-end close can be reversed and then the transaction can be reversed. This solution may not be an option. It might be simpler to enter a reversing transaction manually in an open period of either the closed fiscal year or the next fiscal year, depending on the status of the fiscal close process. If a new transaction is posted to an open period of the fiscal year that has been through the year-end close process, the year-end close will need to be run again. 
   - Transaction reversal is already in process
     - If the transaction is in the process of being reversed, that process must be carried through to completion. A separate reversal process can't be done. 
     - After the reversal is complete, a reversed transaction can be reversed again, which is reversing the reversal.
   - Ledger settlement
-   - If one or more lines of the transaction has been ledger settled (the record exists in the LedgerTransSettlement table) through **General ledger – Periodic tasks – Ledger settlements**, it can't be reversed.
+   - If one or more lines of the transaction has been ledger settled (the record exists in the LedgerTransSettlement table) through **General ledger > Periodic tasks > Ledger settlements**; it can't be reversed.
    - The ledger settlement can be reversed, which will allow the voucher to be reversed.
   - Intercompany
     - If the transaction is an intercompany transaction, it can't be reversed. 
-    - The transaction is *not* an intercompany transaction but is posted to a due to or due from main account that was defined in the Intercompany setup page.
+    - The transaction is *not* an intercompany transaction but is posted to a due to or due from main account that was defined in the **Intercompany setup** page.
   - Accruals
    - The accrued general ledger voucher can be reversed.  This will reverse the accrued entry and all the corresponding accrual sub-transactions.
    - The individual accrual sub-transactions can't be reversed.  
@@ -91,12 +91,12 @@ Transactions can’t be reversed for the following reasons.
   - The reversal can only be completed if it is posted into an open fiscal period.   
 - Consolidation
   - Consolidation transactions can be reversed, but only from the **Consolidation transactions** page.
-  - The reversal can only be completed if it is posted into an Open fiscal period.   
+  - The reversal can only be completed if it is posted into an open fiscal period.   
 - Year-end close
   - The year-end close transactions (both Closing and Opening transactions) can be reversed by:
     - Choosing the **Undo previous close** option in the **Year-end close** dialog if General ledger year-end close enhancements feature hasn't been enabled.
     - Choosing the company and fiscal year record that were created for the year-end close on the **Year-end close** page, and then choosing the **Reverse year-end close** button if the General ledger year-end enhancements feature has been turned on. 
-  - Note that the ‘reversal’ of the year-end close actually deletes the Closing and Opening transactions. A reversing voucher is never posted. 
+  - Note that the ‘reversal’ of the year-end close actually deletes the closing and opening transactions. A reversing voucher is never posted. 
 
 ## Accounts payable
 
@@ -113,16 +113,16 @@ Note that some transactions can’t be reversed at all, such as Purchase order v
 - Fiscal period is on-hold or closed
   - If the reversing date is in a fiscal period that isn't open, it can’t be reversed. 
   - If the transaction supports entry of a reversing date, the transaction can still be reversed by changing the reversal date to an open period.  
-- General ledger year-end close process has been run
+- General ledger year-end close process has been run.
   - The transaction’s accounting date is in a fiscal year that has been closed in General ledger. Note that a period within the fiscal year can still be open, but the transaction can’t be reversed if the year-end close process has been run for the fiscal year. The fiscal year has a different status than the periods within the fiscal year. 
   - The year-end close can be reversed, and then the transaction can be reversed. This solution may not be an option. It might be simpler to enter a reversing transaction manually in an open period of either the closed fiscal year or the next fiscal year, depending on the status of the fiscal close. If a new transaction is posted to an open period of the fiscal year that has been through the year-end close process, the year-end close will need to be run again.
 - Subledger journal entry not transferred to General ledger
   - This applies only to the non-Purchse order vendor invoice. 
   - Use the **Subledger journal entries not yet transferred** page to transfer the entry to General ledger, and then the non-purchase order vendor invoice can be reversed from the **Vendor transactions** page.
 - Settlement
-  - The transaction (invoice, payment, etc.) is marked for settlement.
-  - The transaction (invoice, payment, etc.) is settled.
-    - You can verify whether a transaction has been settled, or is marked for settlement, on the **Vendor transactions** page by selecting **View settlements or Settlement – Settlement history**. 
+  - The transaction (such as an invoice or payment) is marked for settlement.
+  - The transaction (such as an invoice or payment) is settled.
+    - You can verify whether a transaction has been settled, or is marked for settlement, on the **Vendor transactions** page by selecting **View settlements or Settlement > Settlement history**. 
     - You can reverse a settlement from the **Vendor transactions** page (**Settlement > Undo settlement**), if one of the transactions must be reversed.  
 - The voucher contains more than one subledger transaction entered in the same voucher number (the One voucher issue).
 - The invoice hasn't been approved
@@ -137,10 +137,11 @@ Note that some transactions can’t be reversed at all, such as Purchase order v
   - As described above, certain subledger transactions can only be reversed from specific pages, even with the Mass reversals feature turned on. 
 
 The following types of transactions cannot be reversed:
+
 - Foreign currency revaluation
   - Unlike General ledger foreign currency revaluation, Accounts receivable and Accounts payable foreign currency revaluations cannot be reversed. Instead, the revaluation needs to be run again using the invoice date, which is similar to reversing the previous revaluation. Revaluing with the invoice date will use the exchange rate from the invoice’s date, essentially bring the unrealized gain or loss to zero, which is similar to a reversal. Note that this will not reverse the same amount if the default exchange rate was modified on the invoice.
 - Purchase order vendor invoice
-  - A credit note must be created to reverse the vendor invoice.  For more information on creating a reversing transaction, see [Create a purchase return order](../../supply-chain/procurement/tasks/create-purchase-return-order.md). 
+  - A credit note must be created to reverse the vendor invoice. For more information on creating a reversing transaction, see [Create a purchase return order](../../supply-chain/procurement/tasks/create-purchase-return-order.md). 
 - Promissory note
 - Bank letter of credit export shipment
 
@@ -150,7 +151,7 @@ A number of transaction types update Accounts receivable subledgers, including c
 
 If the Mass reversal feature hasn’t been turned on, transactions are reversed individually through either the **Customer transactions** page for invoices, or the **Bank accounts** page for deposits. For details on reversing a payment, see the Cash and bank management section in this topic.
 
-If the Mass reversal feature is turned on, one or more Accounts receivable transactions can also be reversed from the **Voucher transactions** page and the journal it was posted from. Note that deposits still can be reversed only from the bank account, and free text invoices from the originating page (if the feature is enabled to allow corrections). Also note that customer transactions still can’t be reversed from the Transactions for (main account) page for the ledger. But they *can* be reversed from the **Voucher transactions** page. 
+If the Mass reversal feature is turned on, one or more Accounts receivable transactions can also be reversed from the **Voucher transactions** page and the journal it was posted from. Note that deposits still can be reversed only from the bank account, and free text invoices from the originating page (if the feature is enabled to allow corrections). Also note that customer transactions still can’t be reversed from the **Transactions for (main account)** page for the ledger. But they can be reversed from the **Voucher transactions** page. 
 
 Note that some transactions can’t be reversed, such as sales orders customer invoices or writeoffs. 
 
@@ -160,7 +161,7 @@ Note that some transactions can’t be reversed, such as sales orders customer i
   - If the reversing date is in a fiscal period that is not Open, it cannot be reversed. 
   - If the transaction supports entry of a reversing date, the transaction can still be reversed by changing the reversal date to an open period.  
 - General ledger year-end close process has been run
-  - The transaction’s accounting date is in a fiscal year that has been through a general ledger year-end close. Note that a period within the fiscal year can still be Open, but the transaction cannot be reversed if the year-end close process has been run for the fiscal year. The fiscal year has a different status than the periods within the fiscal year. 
+  - The transaction’s accounting date is in a fiscal year that has been through a general ledger year-end close. Note that a period within the fiscal year can still be open, but the transaction cannot be reversed if the year-end close process has been run for the fiscal year. The fiscal year has a different status than the periods within the fiscal year. 
   - The year-end close can be reversed and then the transaction can be reversed. This solution may not be an option. It may be simpler to enter a reversing transaction manually in an open period of either the closed fiscal year or the next fiscal year, depending on the status of the fiscal close. If a new transaction is posted into an open period of the fiscal year that has been through the year-end close process, the year-end. 
 - Subledger journal entry not transferred to general ledger
   - This is relevant to only free text invoices. 
