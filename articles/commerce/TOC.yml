@@ -898,6 +898,8 @@
           href: set-up-B2C-tenant.md
         - name: Set up custom pages for user sign-ins
           href: custom-pages-user-logins.md
+        - name: Enable automatic linking of identity records to customer accounts
+          href: identity-record-linking.md
         - name: Configure multiple B2C tenants in a Commerce environment
           href: configure-multi-B2C-tenants.md
         - name: Domains in Dynamics 365 Commerce
@@ -1019,7 +1021,9 @@
         - name: Adventure Works theme
           items:
           - name: Adventure Works theme overview
-            href: adventure-works-theme.md            
+            href: adventure-works-theme.md
+          - name: Install the Adventure Works theme
+            href: install-adventure-works.md
       - name: Manage digital assets
         items:
         - name: Digital asset management overview
