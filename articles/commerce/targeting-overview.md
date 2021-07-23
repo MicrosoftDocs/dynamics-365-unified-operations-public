@@ -42,7 +42,7 @@ You create and manage audiences in Commerce site builder, based on customer data
 
 An audience is a group of users, and membership in the group is determined by a set of dynamic rules. These rules are simple logic tests that are run against information available in customer requests or other available segments. You can combine multiple rules using AND / OR operators.
 
-Commerce natively supports basic segments such as device information, sign-in status, referrer, and query string parameters. Commerce also supports extensible segments through connections to third-party geolocation and segmentation providers. For more information about how to set up connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
+Commerce natively supports basic segments such as device information, sign-in status, referrer, and query string parameters. Commerce also supports extensible segments through connections to third-party providers.
 
 ### Basic segments
 
@@ -69,9 +69,11 @@ The following segments are available to include in an audience definition by def
 
 ### Extensible segments
 
-Commerce allows you to expand the list of segments to incorporate data from other sources. These additional segments are generically called third-party segments. A segmentation provider will describe the types of segments that are available. Here are some caveats:
-- If an external provider is enabled, it may connect to a service with unpredictable performance. To ensure a better user experience, if a user requests a page including targeting and that page references an audience that checks a third-party segment provider, the default version of the page will be shown.
-- The user must consent to allow cookies. When they do, their browser will request all segments from relevant providers. The results will be placed in a cookie returned to the user. Subsequent requests to the page will use this information to serve targeted content to this group. For more information on cookie compliance, see [Cookie compliance](cookie-compliance.md).
+Commerce allows you to connect to third-party sources and expand the list of available segments. A segmentation provider will describe the types of segments that are available. For more information about how to connect to a geolocation or segmentation provider, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
+
+> [!NOTE]
+> - If an external provider is enabled, it may connect to a service with unpredictable performance. To ensure a better user experience, if a user requests a page including targeting and that page references an audience that checks a third-party segment provider, the default version of the page will be shown.
+> - The user must consent to allow cookies. When they do, their browser will request all segments from relevant providers and the results will be placed in a cookie returned to the user. Subsequent requests to the page will use this information to serve targeted content to this group. For more information on cookie compliance, see [Cookie compliance](cookie-compliance.md).
 
 **Disclaimer:** If you enable this feature, your data will be shared with third-party systems that you select. You control what data, if any, you provide to the third party. You understand that the data handling and compliance standards of the third party might differ from the standards of Microsoft Dynamics 365 Commerce. Your privacy is important to Microsoft. To learn more, read our [Privacy and Cookies notice](https://privacy.microsoft.com/privacystatement).
 
@@ -97,7 +99,7 @@ To edit an audience, select the hyperlink for it in the **Audiences** tab, and t
 
 ## Targets
 
-A target is the user experience that is shown to members of one or more selected audiences. It can include variations of one or more modules on a page or in a fragment.
+A target is the user experience that is shown to members of one or more selected audiences. It can include variations of one or more modules on a page or in a fragment. 
 
 You can define a schedule for your targets to specify how long they should remain active. Note that this action is separate from the action of scheduling a publish group that determines when a collection of content will be published. You can also preview your targets to see what they will look like to members of selected audiences. Additionally, you can prioritize your targets to specify which target should be shown in the event of a conflict.
 
@@ -125,7 +127,7 @@ To create a target shell for page modules in Commerce site builder, follow these
 1. Before you publish your target, be sure to select **Preview** on the command bar to review it. You can then select one of the following options:
 
     - **Basic preview** – Select this option to preview only the selected variation (default page or target), without any associated audiences.
-    - **Advanced preview** – Select this option if you have multiple targets on the page and want to preview them as a user who belongs to a selected set of audiences. Select **Next** to select from a list of relevant audiences. You can also remove the filter to select among all audiences.
+    - **Advanced preview** – Select this option if you have multiple targets on the page and want to preview them as a user who belongs to a selected set of audiences and on a specific day/time. Select **Next** to select from a list of relevant audiences. You can also remove the filter to select among all audiences.
 
 1. When you're satisfied with the target configuration, you must publish the page to make the target go live. Select **Publish** to make the target go live immediately. Alternatively, you can use a publish group to schedule when the page goes live.
 
