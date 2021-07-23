@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.21
 
 This topic describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder using device, market, and geolocation information.
 
-Dynamics 365 Commerce lets you personalize variations of your page content called *targets* for specific groups of customers called *audiences* to help increase user engagement and satisfaction. You can begin your targeting journey either by creating an audience or a target first. However, a successful targeting experience requires both these key parts.
+Dynamics 365 Commerce lets you personalize variations of your page content called *targets* for specific groups of customers called *audiences* to help increase user engagement and satisfaction. You can begin your targeting journey by first creating either an audience or a target. However, a successful targeting experience requires both of these key components.
 
 You create and manage audiences in Commerce site builder, based on customer data such as location, device information, sign-in status, and other dynamically derived information from customer web requests. You also create and manage targets on e-commerce modules and fragments in site builder.
 
@@ -40,7 +40,7 @@ You create and manage audiences in Commerce site builder, based on customer data
 
 ## Audiences
 
-An audience is a group of users, and membership in the group is determined by a set of dynamic rules. These rules are simple logic tests that are run against information available in customer requests or other available segments. You can combine multiple rules using AND / OR operators.
+An audience is a group of users, and membership in the group is determined by a set of dynamic rules. These rules are simple logic tests that are run against information available in customer requests or other available segments. You can combine multiple rules using AND/OR operators.
 
 Commerce natively supports basic segments such as device information, sign-in status, referrer, and query string parameters. Commerce also supports extensible segments through connections to third-party providers.
 
@@ -92,7 +92,7 @@ To create an audience in Commerce site builder, follow these steps.
 
 1. When you're satisfied with the audience configuration, select **Finish editing**. You can then select **Publish** to make the audience available for use in a live target. Alternatively, you can publish the audience together with the target.
 
-To edit an audience, select the hyperlink for it in the **Audiences** tab, and then select **Edit** in the audience editor that appears. To view the list of targets and pages that reference an audience, select the audience in the audience list view, and then select **View Assignments**. To delete an audience in the audience list view or the audience editor, unpublish it if it has already been published, and then select **Delete** on the command bar.
+To edit an audience, select the hyperlink for it on the **Audiences** tab, and then select **Edit** in the audience editor that appears. To view the list of targets and pages that reference an audience, select the audience in the audience list view, and then select **View Assignments**. To delete an audience in the audience list view or the audience editor, unpublish it if it has already been published, and then select **Delete** on the command bar.
 
 > [!NOTE]
 > Audiences are a site-level concept in Commerce site builder. You can share the same audience across multiple targets.
@@ -127,7 +127,7 @@ To create a target shell for page modules in Commerce site builder, follow these
 1. Before you publish your target, be sure to select **Preview** on the command bar to review it. You can then select one of the following options:
 
     - **Basic preview** – Select this option to preview only the selected variation (default page or target), without any associated audiences.
-    - **Advanced preview** – Select this option if you have multiple targets on the page and want to preview them as a user who belongs to a selected set of audiences or on a specific day/time. Select **Next** to select from a list of relevant audiences. You can also remove the filter to select among all audiences.
+    - **Advanced preview** – Select this option if you have multiple targets on a page and want to preview them as a user who belongs to a selected set of audiences, or on a specific date/time. Select **Next** to choose from a list of relevant audiences. You can also remove the filter to select among all audiences.
 
 1. When you're satisfied with the target configuration, you must publish the page to make the target go live. Select **Publish** to make the target go live immediately. Alternatively, you can use a publish group to schedule when the page goes live.
 
