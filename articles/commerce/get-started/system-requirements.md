@@ -192,7 +192,7 @@ The only supported collation for Commerce databases in the cloud is **SQL\_Latin
 - [Device management implementation guidance](../implementation-considerations-devices.md)
 - [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
 - [Configure and install Commerce Scale Unit (self-hosted)](../dev-itpro/retail-store-scale-unit-configuration-installation.md)
-- [Commerce Data Exchange implementation guidance](../deb-itpro/implementation-considerations-cdx.md)
+- [Commerce Data Exchange implementation guidance](../dev-itpro/implementation-considerations-cdx.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
