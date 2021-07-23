@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.21
 
 # Can't update a load line because the released quantity would be negative
 
-Error code: \@WAX:ReleasedQtyCannotBeNegative
+Error code: @WAX:ReleasedQtyCannotBeNegative
 
 ## Symptoms
 
