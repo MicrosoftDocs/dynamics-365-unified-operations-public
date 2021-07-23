@@ -3,7 +3,7 @@
 
 title: Reason codes for inventory counting
 description: This topic describes how to set up and apply reason codes for counting tasks.
-author: Mirzaab; perlynne
+author: perlynne
 ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
@@ -21,9 +21,9 @@ ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mirzaab
+ms.author: perlynne
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 8.0.0
+ms.dyn365.ops.version: 10.0.21
 ---
 
 # Reason codes for inventory counting
