@@ -80,15 +80,17 @@ To unblock the customer, search for the companies then delete the redundant ones
 
 If you are trying to link the Dataverse environment for dual write, and starts to experience issue with error message "Response status code does not indicate success: 404 (Not Found)", then issue is that Consent step is not completed. You can validate if consent has been provided by logging on to portal.azure.com using the tenant admin account, and check if the 3rd party app of ID 33976c19-1db5-4c02-810e-c243db79efde shows up in AAD’s Enterprise applications list. If not, the re-do the consent step as defined in playbook as well in Dual-Write setup section on wiki.
 
-1. Providing App consent
+#### Providing App consent
 
-•   Launch URL below with your admin credentials which should prompt you for consent. https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent
+-   Launch URL below with your admin credentials which should prompt you for consent. https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent
 
-•   Click ‘Accept’. This would mean that you are providing the consent to install the app (with id =33976c19-1db5-4c02-810e-c243db79efde) in your tenant.
+-   Click ‘Accept’. This would mean that you are providing the consent to install the app (with id =33976c19-1db5-4c02-810e-c243db79efde) in your tenant.
 
-•   This app is required for CDS to talk to F&O Note: If this doesn't work, open browser in incognito mode for chrome and private mode of Edge
+-   This app is required for CDS to talk to F&O Note: If this doesn't work, open browser in incognito mode for chrome and private mode of Edge.
+    
+    ![Initial sync setup troubleshooting.](media/Initial-sync-setup-troubleshooting-1.png)
 
-    ![Initial-sync-setup-troubleshooting-1](media/Initial-sync-setup-troubleshooting-1.png)
+
 
 ## Linking error with newly created FinOps - Error fetching legal entities
 
@@ -100,6 +102,8 @@ If you are trying to link the Dataverse environment for dual write, and starts t
     
 After creating Finance and Operations environment, the FinOps schema generates when you first time open the Data Management page. To solve this problem all you need to do is to open the Data Management page in Finance and Operations.
 
+
+    
 ## Finance and Operations apps environment ***.cloudax.dynamics.com is not discoverable.
 
 There are only two things that can cause an issue with environment not being discoverable:
