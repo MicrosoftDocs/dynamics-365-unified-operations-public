@@ -193,6 +193,10 @@
         "human-resources/**/**.md": "tfehr",
         "talent/**/**.md": "tfehr"
       },
+      "ms.topic": {
+          "fin-ops-core/dev-itpro/mobile-apps/platform/client-apis/**/**.md": "reference",
+          "fin-ops-core/dev-itpro/dev-ref/**/**.md": "reference"
+      },
       "ms.search.scope": {
         "commerce/**/**.md": "Core, Operations, Retail, Commerce, ShowInHelp",
         "commerce/dev-itpro/**/**.md": "Operations, Retail, Commerce, Developer",

@@ -3,10 +3,8 @@ title: X++ variables
 description: This topic describes variables in X++.
 author: RobinARH
 ms.date: 07/08/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150183
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
