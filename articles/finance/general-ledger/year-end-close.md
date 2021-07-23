@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Year-end close
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes the required setup and steps for running the general ledger year-end close process.
 
