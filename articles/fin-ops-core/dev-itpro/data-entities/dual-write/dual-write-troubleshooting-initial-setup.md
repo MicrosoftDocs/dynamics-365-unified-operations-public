@@ -50,38 +50,6 @@ Errors on the **Setup link to Dataverse** page are usually caused by incomplete 
 
 You must have Azure AD tenant admin credentials to link the Finance and Operations and Dataverse environments. After you link the environments, users can sign in by using their account credentials and update an existing table map.
 
-## Error when you open the Link to Dataverse page
-
-**Required credentials to fix the issue:** Azure AD tenant admin
-
-You might receive the following error message when you open the **Link to Dataverse** page in a Finance and Operations app:
-
-*Response status code does not indicate success: 404 (Not Found).*
-
-This error occurs when the consent step hasn't been completed. To validate whether the consent step has been completed, sign in to portal.Azure.com by using the Azure AD tenant admin account, and see whether the third-party app that has the ID **33976c19-1db5-4c02-810e-c243db79efde** appears in the Azure AD **Enterprise applications** list. If it doesn't, you must provide app consent.
-
-To provide app consent, follow these steps.
-
-1. Open the following URL by using your admin credentials. You should be prompted for consent.
-
-    <https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent>
-
-2. Select **Accept** to indicate that you're giving your consent to install the app that has the ID **33976c19-1db5-4c02-810e-c243db79efde** in your tenant.
-
-    > [!TIP]
-    > This app is required to link Dataverse and Finance and Operations apps. If you have trouble with this step, open your browser in incognito mode (in Google Chrome) or InPrivate mode (in Microsoft Edge).
-
-## Verify that company data and dual-write teams are set up correctly during linking
-
-To ensure that dual-write works correctly, the companies that you select during configuration are created in the Dataverse environment. By default, these companies are read-only, and the **IsDualWriteEnable** property is set to **True**. In addition, the default owning business unit owner and team are created and include the company name. Before you enable the maps, verify that the default team owner is specified. To find the **Companies (CDM\_Company)** table, follow these steps.
-
-1. In the customer engagement app, select the filter in the upper-right corner.
-2. In the drop-down list, select **Company**.
-3. Select **Run** to see the results.
-4. Select the company that was linked when you configured dual-write.
-5. Verify that the **Default owning team** column has a value. In the following illustration, the **Default owning team** column is set to **USMF Dual Write**.
-
-    ![Verifying the default owning team.](media/default_owning_team.png)
 
 ## Find the limit on the number of legal tables or companies that can be linked for dual-write
 
@@ -95,6 +63,52 @@ DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\]
 One or more errors occurred.*
 
 The current limit when you link the environments is approximately 40 legal tables. This error occurs if you try to enable maps, and more than 40 legal tables are linked between the environments.
+
+## Error message: Saving connection set failed! An item with the same key has already been added 
+
+While linking the DualWrite environment, it fails with an error msg - Saving connection set failed! An item with the same key has already been added
+
+#### Cause
+
+DualWrite does not support multiple legal entities/companies with the same name. For example, If you have two companies with dat name in the CRM then it will show this error msg.
+
+#### Mitigation
+
+To unblock the customer, search for the companies then delete the redundant ones. Also, look for companies with blank spaces. For some customers, a similar error was shown for multiple companies with a blank name.
+
+## Error when opening the 'Link to Common Data Service' page in Finance and Operations apps
+
+If you are trying to link the Dataverse environment for dual write, and starts to experience issue with error message "Response status code does not indicate success: 404 (Not Found)", then issue is that Consent step is not completed. You can validate if consent has been provided by logging on to portal.azure.com using the tenant admin account, and check if the 3rd party app of ID 33976c19-1db5-4c02-810e-c243db79efde shows up in AAD’s Enterprise applications list. If not, the re-do the consent step as defined in playbook as well in Dual-Write setup section on wiki.
+
+1. Providing App consent
+
+•   Launch URL below with your admin credentials which should prompt you for consent. https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent
+
+•   Click ‘Accept’. This would mean that you are providing the consent to install the app (with id =33976c19-1db5-4c02-810e-c243db79efde) in your tenant.
+
+•   This app is required for CDS to talk to F&O Note: If this doesn't work, open browser in incognito mode for chrome and private mode of Edge
+
+    ![Initial-sync-setup-troubleshooting-1](media/Initial-sync-setup-troubleshooting-1.png)
+
+## Linking error with newly created FinOps - Error fetching legal entities
+
+#### Description
+
+[Bad Request], [<!DOCTYPE html> <html> <head> <title>Runtime Error</title> <meta name="viewport" content="width=device-width" /> <style> body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px} b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px} H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red } H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon } pre {font-family:"Consolas","Lucida Console",Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt} .marker {font-weight: bold; color: black;text-decoration: none;} .version {color: gray;} .error {margin-bottom: 10px;} .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; } @media screen and (max-width: 639px) { pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; } } @media screen and (max-width: 479px) { pre { width: 280px; } } </style> </head> <body bgcolor="white"> <span><H1>Server Error in '/' Application.<hr width=100% size=1 color=silver></H1> <h2> <i>Runtime Error</i> </h2></span> <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif "> <b> Description: </b>An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine. <br><br> <b>Details:</b> To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a &quot;web.config&quot; configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its &quot;mode&quot; attribute set to &quot;Off&quot;.<br><br> <table width=100% bgcolor="#ffffcc"> <tr> <td> <code><pre> &lt;!-- Web.Config Configuration File --&gt; &lt;configuration&gt; &lt;system.web&gt; &lt;customErrors mode=&quot;Off&quot;/&gt; &lt;/system.web&gt; &lt;/configuration&gt;</pre></code> </td> </tr> </table> <br> <b>Notes:</b> The current error page you are seeing can be replaced by a custom error page by modifying the &quot;defaultRedirect&quot; attribute of the application&#39;s &lt;customErrors&gt; configuration tag to point to a custom error page URL.<br><br> <table width=100% bgcolor="#ffffcc"> <tr> <td> <code><pre> &lt;!-- Web.Config Configuration File --&gt; &lt;configuration&gt; &lt;system.web&gt; &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;mycustompage.htm&quot;/&gt; &lt;/system.web&gt; &lt;/configuration&gt;</pre></code> </td> </tr> </table> <br> </body> </html> ], The remote server returned an error: (400) Bad Request.
+
+#### Solution 
+    
+After creating Finance and Operations environment, the FinOps schema generates when you first time open the Data Management page. To solve this problem all you need to do is to open the Data Management page in Finance and Operations.
+
+## Finance and Operations apps environment ***.cloudax.dynamics.com is not discoverable.
+
+There are only two things that can cause an issue with environment not being discoverable:
+    
+a) The user used for login should be in the same tenant as the Finance and Operations instance.
+    
+b) There are some legacy Finance and Operations instances that were Microsoft-hosted that had an issue with discovery. This gets fixed if the Finance and Operations instance was updated recently as the environment becomes discoverable with any update.
+
+
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
