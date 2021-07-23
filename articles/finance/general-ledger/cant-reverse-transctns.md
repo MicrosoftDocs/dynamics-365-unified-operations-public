@@ -66,7 +66,7 @@ Transactions can’t be reversed for the following reasons.
 
 - General journal
   - Fiscal period is on-hold or permanently closed
-    - If the reversing date is in a fiscal period that is not open, it cannot be reversed. 
+    - If the reversing date is in a fiscal period that is not open, it can't be reversed. 
     - If the transaction supports entry of a reversing date, the transaction can still be reversed by changing the reversal date to an open period.  
   - Year-end close process has been run
    - The transaction’s accounting date is in a fiscal year that has been through a year-end close. Note that a period within the fiscal year can still be open, but the transaction can't be reversed if the year-end close process has been run for the fiscal year. The fiscal year has a different status than the periods within the fiscal year. 
@@ -124,22 +124,22 @@ Note that some transactions can’t be reversed at all, such as Purchase order v
   - The transaction (such as an invoice or payment) is settled.
     - You can verify whether a transaction has been settled, or is marked for settlement, on the **Vendor transactions** page by selecting **View settlements or Settlement > Settlement history**. 
     - You can reverse a settlement from the **Vendor transactions** page (**Settlement > Undo settlement**), if one of the transactions must be reversed.  
-- The voucher contains more than one subledger transaction entered in the same voucher number (the One voucher issue).
+- The voucher contains more than one subledger transaction entered using the same voucher number (the One voucher issue).
 - The invoice hasn't been approved
   - If the **Approval** check box isn’t marked on the invoice, the invoice can’t be reversed. 
     - Approval in this instance doesn't refer to approvals in the  workflow process, but rather to the **Approval** option on the invoice. This option is used to prevent an invoice from being paid, typically for vendor invoice register invoices. 
 - The transaction is in the invoice pool
   - An invoice in the pool can’t be reversed directly from the **Vendor transactions** page. Invoices in the pool can instead be reversed through the cancelation process on the **Invoice approval journal** page.  
 - The transaction has a parent invoice that has been corrected (Indian localization)
-- The transaction has a promissory status of **Invoice remitted**.
-- The transaction is used for a partial tax settlement.
-- The transaction contains a Vendor account but is being reversed from the wrong page, such as from **Transactions for (main account)** page. 
-  - As described above, certain subledger transactions can only be reversed from specific pages, even with the Mass reversals feature turned on. 
+- The transaction has a promissory status of **Invoice remitted**
+- The transaction is used for a partial tax settlement
+- The transaction contains a Vendor account but is being reversed from the wrong page, such as from **Transactions for (main account)** page
+  - As described above, certain subledger transactions can only be reversed from specific pages, even with the Mass reversals feature turned on.
 
-The following types of transactions cannot be reversed:
+The following types of transactions can't be reversed:
 
 - Foreign currency revaluation
-  - Unlike General ledger foreign currency revaluation, Accounts receivable and Accounts payable foreign currency revaluations cannot be reversed. Instead, the revaluation needs to be run again using the invoice date, which is similar to reversing the previous revaluation. Revaluing with the invoice date will use the exchange rate from the invoice’s date, essentially bring the unrealized gain or loss to zero, which is similar to a reversal. Note that this will not reverse the same amount if the default exchange rate was modified on the invoice.
+  - Unlike General ledger foreign currency revaluation, Accounts receivable and Accounts payable foreign currency revaluations can't be reversed. Instead, the revaluation needs to be run again using the invoice date, which is similar to reversing the previous revaluation. Revaluing with the invoice date will use the exchange rate from the invoice’s date, essentially bring the unrealized gain or loss to zero, which is similar to a reversal. Note that this will not reverse the same amount if the default exchange rate was changed on the invoice.
 - Purchase order vendor invoice
   - A credit note must be created to reverse the vendor invoice. For more information on creating a reversing transaction, see [Create a purchase return order](../../supply-chain/procurement/tasks/create-purchase-return-order.md). 
 - Promissory note
@@ -158,31 +158,31 @@ Note that some transactions can’t be reversed, such as sales orders customer i
 ### Transactions can’t be reversed for the following reasons.
 
 - Fiscal period is On-hold or Permanently closed
-  - If the reversing date is in a fiscal period that is not Open, it cannot be reversed. 
+  - If the reversing date is in a fiscal period that is not open, it can't be reversed. 
   - If the transaction supports entry of a reversing date, the transaction can still be reversed by changing the reversal date to an open period.  
-- General ledger year-end close process has been run
-  - The transaction’s accounting date is in a fiscal year that has been through a general ledger year-end close. Note that a period within the fiscal year can still be open, but the transaction cannot be reversed if the year-end close process has been run for the fiscal year. The fiscal year has a different status than the periods within the fiscal year. 
-  - The year-end close can be reversed and then the transaction can be reversed. This solution may not be an option. It may be simpler to enter a reversing transaction manually in an open period of either the closed fiscal year or the next fiscal year, depending on the status of the fiscal close. If a new transaction is posted into an open period of the fiscal year that has been through the year-end close process, the year-end. 
+- General ledger year-end close process has been run.
+  - The transaction’s accounting date is in a fiscal year that has been through a general ledger year-end close. Note that a period within the fiscal year can still be open, but the transaction can't be reversed if the year-end close process has been run for the fiscal year. The fiscal year has a different status than the periods within the fiscal year. 
+  - The year-end close can be reversed and then the transaction can be reversed. This solution may not be an option. It may be simpler to enter a reversing transaction manually in an open period of either the closed fiscal year or the next fiscal year, depending on the status of the fiscal year-end close process. If a new transaction is posted into an open period of the fiscal year that has been through the year-end close process, the year-end close process must be run again. 
 - Subledger journal entry not transferred to general ledger
-  - This is relevant to only free text invoices. 
-  - Use the “Subledger journal entries not yet transferred” page to transfer the entry to GL and then the free text invoice can be reversed if the Corrections functionality is enabled. This will allow the invoice to be corrected or reversed. 
+  - This only applies to free text invoices. 
+  - Use the **Subledger journal entries not yet transferred** page to transfer the entry to General ledger and then the free text invoice can be reversed if the Corrections functionality is enabled. This will allow the invoice to be corrected or reversed. 
 - Settlement
   - The transaction (invoice, payment, etc.) is marked for settlement.
   - The transaction (invoice, payment, etc.) is settled.
-    - This can be verified on the **Customer transactions** page by selecting **View settlements** or **Settlement – Settlement history**. 
+    - This can be verified on the **Customer transactions** page by selecting **View settlements** or **Settlement > Settlement history**. 
     - Settlement can be reversed also from the **Customer transactions** page – Settlement – Undo settlement** if one of the transactions must be reversed.  
 - The transaction contains more than one subledger transaction entered in the same voucher number (One voucher issue).
 - Invoice has not been approved
-  - If the Approval box isn’t marked on the invoice, it cannot be reversed.
-    - Approval in this instance doesn't refer to approvals in the  workflow process, but rather to the **Approval** option on the voucher lines. This option is used to prevent an invoice from being paid. This option is typically used in Accounts payable but is available also for Accounts receivable invoices entered through journals. 
-- The transaction has a parent invoice which has been corrected. (Indian localization)
-- The transaction contains a Customer account but is being reversed from the "wrong" page, such as from the **Transactions for (main account)** page.
+  - If the **Approval** check box isn’t marked on the invoice, it can't be reversed.
+    - Approval in this instance doesn't refer to approvals in the workflow process, but rather to the **Approval** option on the voucher lines. This option is used to prevent an invoice from being paid. This option is typically used in Accounts payable but is available also for Accounts receivable invoices entered through journals. 
+- The transaction has a parent invoice which has been corrected (Indian localization)
+- The transaction contains a Customer account but is being reversed from the "wrong" page, such as from the **Transactions for (main account)** page
   - As suggested in the preceding point, certain subledger transactions can only be reversed from specific pages, even when the Mass reversal feature is turned on. 
 
 The following types of transactions can't be reversed:
 
 - Foreign currency revaluation
-  - Unlike General ledger foreign currency revaluation, Accounts receivable and Accounts payable foreign currency revaluation cannot be reversed. Instead, the revaluation must be run again using the invoice date, which is similar to reversing the previous revaluation. Revaluing with the invoice date will use the exchange rate from the invoice’s date, essentially bringing the unrealized gain or loss to zero, which is similar to a reversal. Note that this will not reverse the same amount if the default exchange rate was changed on the invoice.
+  - Unlike General ledger foreign currency revaluation, Accounts receivable and Accounts payable foreign currency revaluation can't be reversed. Instead, the revaluation must be run again using the invoice date, which is similar to reversing the previous revaluation. Revaluing with the invoice date will use the exchange rate from the invoice’s date, essentially bringing the unrealized gain or loss to zero, which is similar to a reversal. Note that this will not reverse the same amount if the default exchange rate was changed on the invoice.
 - The transaction has adjusted tax withholding
 - Sales order customer invoice
   - A credit note or return must be created to reverse the transaction. For information on how to create the reversing transaction, see [Sales returns](../../supply-chain/warehousing/sales-returns.md).
@@ -202,7 +202,7 @@ A number of transaction types update the Bank subledger, including vendor paymen
 
 If the Mass reversal option hasn't been turned on, transactions can be reversed individually through the **Bank accounts** page, for checks and deposits, or the **Customer transactions** page for customer payments. 
 
-If Mass reversal is enabled, one or more payments transactions can also be reversed from **Voucher transactions** and the journal from which it posted. Note that deposits still can only be reversed from the bank account. Also note that bank transactions still cannot be reversed from the ledger Transactions for (main account) page, but they can be reversed from the **Voucher transactions** page.  
+If Mass reversal is enabled, one or more payments transactions can also be reversed from **Voucher transactions** and the journal from which it posted. Note that deposits still can only be reversed from the bank account. Also note that bank transactions still can't be reversed from the ledger **Transactions for (main account)** page, but they can be reversed from the **Voucher transactions** page.  
 
 Note that some transactions can’t be reversed, such as electronic vendor payments. 
 
@@ -221,12 +221,12 @@ Note that some transactions can’t be reversed, such as electronic vendor payme
     - Settlement can be reversed also from the **Vendor transactions** or **Customer transactions** page, **Settlement > Undo settlement** if one of the transactions must be reversed. 
 - The transaction contains more than one subledger transaction entered in the same voucher number (One voucher issue).
 - Bridged transactions
-  - If the transaction is related to bridging payment, it cannot be reversed.
+  - If the transaction is related to bridging payment, it can't be reversed.
   - If the bridged payment needs to be reversed, the payment must first be cleared from the bridging account to the bank, and then the payment can be reversed (assuming it meets the other validation criteria). 
-- The transaction contains a Bank account but is being reversed from **Transactions for (main account)** page or from the wrong subledger such as Accounts receivable or Accounts payable.  
+- The transaction contains a Bank account but is being reversed from **Transactions for (main account)** page or from the "wrong" subledger, such as Accounts receivable or Accounts payable.  
   - As the preceding point suggests, certain subledger transactions can only be reversed from specific pages, even then the Mass reversals feature has been turned on. 
 - Bank foreign currency revaluation
-  - Bank foreign currency revaluation can be reversed, but it may be prevented if you're complete the reversal steps out of chronological order. For example, if you ran the revaluation in March and April, the March revaluation cannot be reversed until the April revaluation is reversed first. 
+  - Bank foreign currency revaluation can be reversed, but it may be prevented if you're complete the reversal steps out of chronological order. For example, if you ran the revaluation in March and April, the March revaluation can't be reversed until the April revaluation is reversed first. 
 
 The following types of transactions can't be reversed:
 - Vendor payments made as Electronic (EFT)
@@ -252,7 +252,7 @@ If the Mass reversal feature has been turned on, one or more Fixed asset transac
 - Acquisitions  
   - If the acquisition occurred on a purchase order vendor invoice, the reversal must be done by entering a vendor credit note. For information on entering the reversal transaction, see [Create a purchase return order](../../supply-chain/procurement/tasks/create-purchase-return-order.md).
   - If the acquisition occurred on a project transaction.
-  - The acquisition cannot be reversed after depreciation is posted for the asset. The depreciation should be reversed first to be able to reverse the acquisition. 
+  - The acquisition can't be reversed after depreciation is posted for the asset. The depreciation should be reversed first to be able to reverse the acquisition. 
   - If the status of the value model or depreciation book for a fixed asset isn't open, the transaction can't be reversed.
 - Disposals
   - The disposal is done through a free text invoice.   
@@ -260,7 +260,7 @@ If the Mass reversal feature has been turned on, one or more Fixed asset transac
   - If the status of the value model or depreciation book for a fixed Asset is not open, the transaction can't be reversed.
 - Depreciation
   - The depreciation *can* be reversed if subsequent depreciation is also posted, but you'll receive a warning because this isn't a best practice. 
-  - If the status of the value model or depreciation book for a fixed asset is not “open”, the transaction cannot be reversed.
+  - If the status of the value model or depreciation book for a fixed asset is not “open”, the transaction can't be reversed.
 - Transactions (or reverse transactions) exist for a certain asset and asset book for the voucher’s transaction date or later. 
 - The transaction contains an Asset account but is being reversed from Transactions for (main account), or from the "wrong" subledger such as Accounts receivable or Accounts payable.
   - As the preceding point suggests, certain subledger transactions can only be reversed from specific pages, even when the Mass reversal feature is turned on. 
