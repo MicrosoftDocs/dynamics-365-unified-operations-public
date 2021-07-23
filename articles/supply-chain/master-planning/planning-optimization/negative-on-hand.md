@@ -78,7 +78,7 @@ The result is a planned order of 25 pcs. (= 25 pcs. &minus; 0 pcs.) to refill wa
 
 ## Planning when there is a reservation against negative on-hand inventory
 
-If you adjust inventory while physical reservations exist, you can cause a situation where an order is physically reserved against negative inventory. In this case, because a physical reservation exists, Planning Optimization assumes that it's supported by on-hand inventory (even if the receipt of on-hand inventory isn't yet registered in the system), so that replenishment isn't required. Therefore, Planning Optimization doesn't create a planned order to replenish the order's quantity.
+If you adjust inventory while physical reservations exist, you can cause a situation where an order is physically reserved against negative inventory. In this case, because a physical reservation exists, Planning Optimization assumes that it's supported by on-hand inventory, even if the receipt of on-hand inventory isn't yet registered in the system. Therefore, it assumes that replenishment isn't required and doesn't create a planned order to replenish the order's quantity.
 
 The following example illustrates this scenario.
 
