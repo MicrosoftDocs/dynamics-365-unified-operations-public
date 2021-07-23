@@ -1544,6 +1544,8 @@
         items:
         - name: Australia overview
           href: localizations/australia.md
+        - name: Bank file formats for Australian banks
+          href: localizations/apac-aus-bank-file-formats.md
         - name: Business activity statement (BAS)
           href: localizations/apac-aus-business-activity-statement.md
         - name: Add report boxes and generate the BAS
@@ -1551,7 +1553,7 @@
         - name: Low-value pool depreciation
           href: localizations/apac-aus-low-value-pool-depreciation.md
         - name: Set up reason codes for the BAS
-          href: localizations/tasks/set-up-reason-codes-australia-bas.md
+          href: localizations/tasks/set-up-reason-codes-australia-bas.md          
       - name: Austria
         items:
         - name: Austria overview
