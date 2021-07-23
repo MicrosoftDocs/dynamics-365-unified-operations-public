@@ -144,4 +144,19 @@ Landed cost adds a new work order type that is named *Goods in transit* to the *
 
 ### Work templates
 
+This section describes features that the Landed cost module adds to work templates.
+
+#### Goods in transit work order type
+
 Landed cost adds a new work order type that is named *Goods in transit* to the **Work templates** page. This work order type should be configured in the same manner as the [purchase order work templates](/dynamicsax-2012/appuser-itpro/create-a-work-template).
+
+#### Work header breaks
+
+You can configure work templates with a work order type of *Goods in transit* to split work headers by doing either of the following while working on the **Work templates** page:
+
+- Set work header maximums on the **General** tab for the template. This works the same as for purchase order work templates (see also [purchase order work templates](/dynamicsax-2012/appuser-itpro/create-a-work-template)).
+- Use the **Work header breaks** button to define when the system should create new work headers based on fields used for sorting. For example, to create a work header for each *Container ID*, select **Edit query** on the Action Pane, and then add the *Container ID* field to the **Sorting** tab of the query editor. Fields that are added to the **Sorting** tab are available for selection as *grouping fields*. To set your grouping fields, select **Work header breaks** on the Action Pane, and then, for each field that you want to use as a grouping field, select the check box in the **Group by this field** column.
+
+Landed cost [creates an over transaction](over-under-transactions.md) when the registered quantity exceeds the original order quantity. When completing a work header, the system will update the status of the inventory transactions for the principle order quantity, but will first update the quantity linked to the over transaction once the principle is completely purchased.
+
+If you cancel a work header for an over transaction that has already been registered, the over transaction will first be reduced by the canceled quantity. Once the over transaction has been reduced to a quantity of zero, the record will be removed and any additional quantities will be unregistered against the principle order quantity.
