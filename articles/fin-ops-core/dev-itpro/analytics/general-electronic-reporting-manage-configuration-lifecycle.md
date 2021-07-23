@@ -4,7 +4,7 @@
 title: Manage the Electronic reporting (ER) configuration lifecycle
 description: This topic describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
 author: NickSelin
-ms.date: 04/13/2021
+ms.date: 07/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -87,7 +87,7 @@ ER configurations that are designed in the development environment can be [uploa
 
 ![ER configuration lifecycle.](./media/ger-configuration-lifecycle.png)
 
-## <a name="data-persistence-consideration" />Data persistence consideration
+## Data persistence consideration
 
 You can individually [import](tasks/er-import-configuration-lifecycle-services.md) different [versions](general-electronic-reporting.md#component-versioning) of an ER [configuration](general-electronic-reporting.md#Configuration) to your Finance instance. When a new version of an ER configuration is imported, the system controls the content of the draft version of this configuration:
 
@@ -98,18 +98,18 @@ If this configuration is owned by the configuration [provider](general-electroni
 
 To undo the changes that you introduced in the draft version, select the highest completed or shared version of your ER configuration in Finance on the **Versions** FastTab, and then select the **Get this version** option. The content of the selected version is copied to the draft version.
 
-## <a name="applicability-consideration" />Applicability consideration
+## Applicability consideration
 
-When you design a new version of an ER configuration, you can define its [dependency](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md) from other software components. This step is considered a prerequisite for controlling the download of this configuration's version from an ER repository or an external XML file and any further use of this version. So, when you import a new version of an ER configuration the system controls whether the import of this version is possible taking into account configured prerequisites.
+When you design a new version of an ER configuration, you can define its [dependency](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md) from other software components. This step is considered a prerequisite for controlling the download of this configuration's version from an ER repository or an external XML file and any further use of this version. When you import a new version of an ER configuration, the system controls whether the import of this version is possible by taking into account the configured prerequisites.
 
-In some cases, you need to ignore configured prerequisites during the configuration’s import. To achieve this, complete the following steps:
+In some cases, you need to ignore the configured prerequisites during the configuration’s import. To achieve this, complete the following steps.
 
-1.  Go to **Organization administration \> Electronic reporting \> Configurations**.
+1.  Go to **Organization administration** > **Electronic reporting** > **Configurations**.
 2.  On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
-3.  Set the **Skip product updates and version prerequisite check during import** option to **Yes**.
+3.  Set **Skip product updates and version prerequisite check during import** to **Yes**.
 
-[!NOTE]
-> Note that this parameter is user-specific and company-specific.
+    > [!NOTE]
+    > This parameter is user-specific and company-specific.
 
 ## Additional resources
 
