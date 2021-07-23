@@ -40,24 +40,6 @@ This topic provides general troubleshooting information for dual-write integrati
 > [!IMPORTANT]
 > Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
-## When you try to install the dual-write package by using the package deployer tool, no available solutions are shown
-
-Some versions of the package deployer tool are incompatible with the dual-write solution package. To successfully install the package, be sure to use [version 9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) or later of the package deployer tool.
-
-After you install the package deployer tool, install the solution package by following these steps.
-
-1. Download the latest solution package file from Yammer.com. After the package zip file is downloaded, right-click it, and select **Properties**. Select the **Unblock** check box, and then select **Apply**. If you don't see the **Unblock** check box, the zip file is already unblocked, and you can skip this step.
-
-    ![Properties dialog box.](media/unblock_option.png)
-
-2. Extract the package zip file, and copy all the files in the **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438** folder.
-
-    ![Contents of the Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 folder.](media/extract_package.png)
-
-3. Paste all the copied files into the **Tools** folder of the package deployer tool. 
-4. Run **PackageDeployer.exe** to select the Dataverse environment and install the solutions.
-
-    ![Content of the Tools folder.](media/paste_copied_files.png)
 
 ## <a id="enable-view-trace"></a>Enable and view the plug-in trace log in Dataverse to view error details
 
@@ -81,16 +63,15 @@ To view the trace log, follow these steps.
 **Required role to view the errors:** System admin
 Dual-write errors that originate in Dataverse can appear in the Finance and Operations app. In some cases, the full text of the error message isn't available because the message is too long or contains personally identifying information (PII). You can turn on verbose logging for errors by following these steps.
 
-1. All project configurations in Finance and Operations apps have an **IsDebugMode** property in the **DualWriteProjectConfiguration** table. Open the **DualWriteProjectConfiguration** table by using the Excel add-in.
+1.	For all project configurations in Finance and Operations app there is a flag IsDebugMode on DualWriteProjectConfiguration entity.
+2.	Open the entity in Excel addin. An easy way to do it is to enable design mode in Finance and Operations app excel addin and add the DualWriteProjectConfigurationEntity to the sheet. Refer to https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/office-integration/use-excel-add-in  for more info on excel addins.
+3.	Set the IsDebugMode to Yes on the project in question.
+4.	Run the scenario that is generating errors.
+5.	The verbose logs are available on DualWriteErrorLog table.
+6.	To lookup data on table browser use the following link https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog  (replace XXX as appropriate):
+7.	Update after KB 4595434 (available for PU 37 and above) If you have this kb installed then the debug mode will capture more logs.  Detailed Error Message will capture the batch request Formatted as follows { "entityName": "UnitOfMeasureEntity", "externalEntityName": "uoms", "executionStatus": 2, "fieldResponses": [], "recordResponses": [ { "errorMessage": "Request failed with status code InternalServerError and CDS error code : Internal Server Error", "logDateTime": "2020-12-08T00:14:28.2746686Z", "verboseError": "Batch response detailed error {"Message":"ValidateClosed - Db GetCreateConnection() should be closed on End","ExceptionMessage":"ValidateClosed - Db GetCreateConnection() should be closed on End","ExceptionType":"Microsoft.Crm.CrmException","StackTrace":" at Microsoft.Crm.CrmDbConnection.ValidateClosed(Boolean raiseException)\r\n at Microsoft.Crm.LegacySqlDataAccessContextImplementation.EndRequest()\r\n at Microsoft.Crm.SqlDataAccessContext.OnEndRequest()\r\n at Microsoft.Crm.BusinessEntities.ExecutionContext.OnEndRequest()\r\n at Microsoft.Crm.Extensibility.OData.CrmODataBatchHandler.<ExecuteChangeSetAsync>d__10.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at Microsoft.Crm.Extensibility.OData.CrmODataBatchHandler.<ExecuteRequestMessagesImplAsync>d__15.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n at Microsoft.Crm.Extensibility.OData.CrmODataBatchHandler.<>c__DisplayClass8_0.<<ExecuteRequestMessagesAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n at Microsoft.Crm.Extensibility.OData.CrmODataBatchHandler.<ExecuteRequestMessagesAsync>d__8.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n at System.Web.OData.Batch.DefaultODataBatchHandler.<ProcessBatchAsync>d__0.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n at System.Web.Http.Batch.HttpBatchHandler.<SendAsync>d__0.MoveNext()","ErrorCode":"0x8004023e"} " } ], "isErrorCountUpdated": false, "dualWriteProcessingStage": 4, "debugLogTrace": [ "CDS batch request --batch_4225728f-0c74-40ae-9598-ad7bdf9240a6\r\n Content-Type: multipart/mixed; boundary=changeset_d6a69b31-8b5d-4f6f-a365-281a45f2e416\r\n\r\n --changeset_d6a69b31-8b5d-4f6f-a365-281a45f2e416\r\nContent-Type: application/http\r\nContent-Transfer-Encoding: binary\r\n\r\nPOST /api/data/v9.0/uoms?tag=https://dualwrite718b5367ceebc804aos.cloudax.dynamics.com HTTP/1.1\r\nHost: test.crm.dynamics.com \r\nContent-ID: 1\r\nContent-Type: application/json; charset=utf-8\r\n\r\n{"msdyn_symbol":"pr","msdyn_externalunitclassname":"Quantity","msdyn_decimalprecision":0,"msdyn_isbaseunit":"false","msdyn_issystemunit":"false","msdyn_systemofunits":"192350000","name":"pr","msdyn_description":"Pairs"}\r\n--changeset_d6a69b31-8b5d-4f6f-a365-281a45f2e416--\r\n\r\n --batch_4225728f-0c74-40ae-9598-ad7bdf9240a6--" ] }
+verboseError: Captures the long text of the error from CRM. This can be used to get more context information while debugging. debugLogTrace : Captures the actual batch request sent to CRM along with payload.
 
-    > [!TIP]
-    > An easy way to open the table is to turn on **Design** mode in the Excel add-in and then add **DualWriteProjectConfigurationEntity** to the worksheet. For more information, see [Open table data in Excel and update it by using the Excel add-in](../../office-integration/use-excel-add-in.md).
-
-2. Set the **IsDebugMode** property to **Yes** for the project.
-3. Run the scenario that is generating errors.
-4. The verbose logs are available in the DualWriteErrorLog table. To look up data in the table browser, use the following URL (replace **XXX** as appropriate):
-
-    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
 
 ## Check synchronization errors on the virtual machine for the Finance and Operations app
 
@@ -125,6 +106,44 @@ To re-enable the **Information** form option, follow these steps:
 2. Find the **Information** form under the forms node. 
 3. Select the **Information** form and click **Enable security roles**. 
 4. Change the security setting to **Display to everyone**.
+
+## How to enable and save network trace so that traces can be attached to support tickets?
+    
+The Microsoft dual write product team would need to see the network traces to troubleshoot some of the dual write related issues. Follow the below steps to get the traces so that these can be attached to support tickets.
+    
+### Chrome
+    
+1.	In the opened tab, press [F12] or choose [Developer tools] to open the develop tools.
+    
+    ![General troubleshooting](media/General-troubleshooting-1.png)
+    
+2. Switch to [network] tab and type [integ] in the filter text box
+            
+      ![General troubleshooting](media/General-troubleshooting-2.png)    
+                
+3.	Continue with the repro and observe the requests being logged in the [network] tab
+                   
+     ![General troubleshooting](media/General-troubleshooting-3.png)                        
+                     
+4.	 Right click on any one of the entries and select [Save all as a HAR with content]
+     
+     ![General troubleshooting](media/General-troubleshooting-4.png)
+                                
+### Microsoft Edge
+    
+1.	In the opened tab, press [F12] or choose [developer tools] to open browser’s developer tools.
+                                  
+     ![General troubleshooting](media/General-troubleshooting-5.png)
+       
+2.	Switch to [network] tab and continue with the repro
+        
+3.	Click [save] button to export as HAR
+    
+      ![General troubleshooting](media/General-troubleshooting-6.png)                                     
+    
+
+    
+    
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
