@@ -2972,6 +2972,12 @@
           href: localizations/emea-pol-split-ap-ar-exchange-difference.md
         - name: VAT declaration with registers (JPK_V7M, VDEK)
           href: localizations/emea-pol-vdek.md
+        - name: Prepare for JPK-V7M reporting
+          href: localizations/emea-pol-vdek-setup.md
+        - name: JPK-V7M reporting
+          href: localizations/emea-pol-vdek-reporting.md
+        - name: Details of specific business scenarios in the JPK-V7M report
+          href: localizations/emea-pol-vdek-scenarios.md
       - name: Qatar
         items: 
         - name: Qatar overview
