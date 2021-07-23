@@ -1,16 +1,16 @@
 ---
 title: Update tracking for put away
 description: Update tracking identifies voyages that have received all inventory transactions, and voyages that don't have an actual end date. It then populates the actual end date with the current date.
-author: XXXX
-ms.date: MM/DD/YYYY
+author: sherry-zheng
+ms.date: 08/02/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: XXXX
-ms.search.validFrom: YYYY-MM-DD
-ms.dyn365.ops.version: 10.0.18
+ms.author: chuzheng
+ms.search.validFrom: 2021-08-02
+ms.dyn365.ops.version: 10.0.21
 ---
 
 # Update tracking for put away
