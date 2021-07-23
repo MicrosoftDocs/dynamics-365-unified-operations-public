@@ -69,7 +69,7 @@ The following segments are available to include in an audience definition by def
 
 ### Extensible segments
 
-Commerce allows you to connect to third-party sources and expand the list of available segments. A segmentation provider will describe the types of segments that are available. For more information about how to connect to a geolocation or segmentation provider, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
+Commerce allows you to connect to third-party segmentation providers and expand the list of available segments. A segmentation provider will describe the types of segments that are available. For more information about how to connect to a geolocation or segmentation provider, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
 
 > [!NOTE]
 > - If an external provider is enabled, it may connect to a service with unpredictable performance. To ensure a better user experience, if a user requests a page including targeting and that page references an audience that checks a third-party segment provider, the default version of the page will be shown.
