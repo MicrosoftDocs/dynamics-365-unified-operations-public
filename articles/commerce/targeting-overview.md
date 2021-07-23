@@ -73,7 +73,7 @@ Commerce allows you to connect to third-party sources and expand the list of ava
 
 > [!NOTE]
 > - If an external provider is enabled, it may connect to a service with unpredictable performance. To ensure a better user experience, if a user requests a page including targeting and that page references an audience that checks a third-party segment provider, the default version of the page will be shown.
-> - The user must consent to allow cookies. When they do, their browser will request all segments from relevant providers and the results will be placed in a cookie returned to the user. Subsequent requests to the page will use this information to serve targeted content to this group. For more information on cookie compliance, see [Cookie compliance](cookie-compliance.md).
+> - The user must consent to allow cookies. When they do, their browser will request all segments from relevant providers and the results will be placed in a cookie returned to the user. Subsequent requests to the page will use this information to serve targeted content to the user. For more information on cookie compliance, see [Cookie compliance](cookie-compliance.md).
 
 **Disclaimer:** If you enable this feature, your data will be shared with third-party systems that you select. You control what data, if any, you provide to the third party. You understand that the data handling and compliance standards of the third party might differ from the standards of Microsoft Dynamics 365 Commerce. Your privacy is important to Microsoft. To learn more, read our [Privacy and Cookies notice](https://privacy.microsoft.com/privacystatement).
 
@@ -127,7 +127,7 @@ To create a target shell for page modules in Commerce site builder, follow these
 1. Before you publish your target, be sure to select **Preview** on the command bar to review it. You can then select one of the following options:
 
     - **Basic preview** – Select this option to preview only the selected variation (default page or target), without any associated audiences.
-    - **Advanced preview** – Select this option if you have multiple targets on the page and want to preview them as a user who belongs to a selected set of audiences and on a specific day/time. Select **Next** to select from a list of relevant audiences. You can also remove the filter to select among all audiences.
+    - **Advanced preview** – Select this option if you have multiple targets on the page and want to preview them as a user who belongs to a selected set of audiences or on a specific day/time. Select **Next** to select from a list of relevant audiences. You can also remove the filter to select among all audiences.
 
 1. When you're satisfied with the target configuration, you must publish the page to make the target go live. Select **Publish** to make the target go live immediately. Alternatively, you can use a publish group to schedule when the page goes live.
 
