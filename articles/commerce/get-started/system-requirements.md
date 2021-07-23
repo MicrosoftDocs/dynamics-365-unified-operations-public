@@ -4,7 +4,7 @@
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
-ms.date: 05/11/2021
+ms.date: 07/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -70,7 +70,7 @@ In general, Commerce is optimized for the internet. The number of round trips fr
 
 ## .NET Framework requirements
 
-Commerce requires Microsoft .NET Framework 4.7.1 or later for all ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For the Commerce client components (Sealed or legacy installers), it is recommended to always use the latest available version of .NET Framework.
+Commerce requires Microsoft .NET Framework 4.7.1 or later for all ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For Commerce client components (sealed or legacy installers), it is recommended to always use the latest available version of .NET Framework.
 
 ## Supported Microsoft Office applications
 
@@ -83,24 +83,25 @@ The following Microsoft Office applications are supported:
 
 It is critical to perform proper performance testing prior to going live in production. The following are considered minimum system requirements for applications to function. To achieve desired performance, consider concepts like data volumes, transactional load per hour, and customization impact. Proper performance testing both early into implementation and again prior to final testing will allow for any necessary performance improvements to be made and to validate that the base solution meets the expected operation times required.
 
-If the Self-service component will utilize a SQL database, it is highly recommended that you review the [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) section. For SQL Server versions, the recommendation is to use a version that is currently still within the mainstream support date.  Support dates can be searched for, by product, in the [Search Product and Services Lifecycle Information](/lifecycle/products/) article. SQL databases for Self-service components requires SQL Server 2017 or newer. The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security. The legacy Self-service installers additionally support SQL Server 2016 with Service Pack 2+.
+If the self-service component will utilize a SQL database, it is highly recommended that you review the [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses) section. For SQL Server versions, the recommendation is to use a version that is currently still within the mainstream support date.  Support dates can be searched for, by product, in the [Search Product and Services Lifecycle Information](/lifecycle/products/) article. SQL databases for self-service components requires SQL Server 2017 or newer. The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security. The legacy self-service installers additionally support SQL Server 2016 with Service Pack 2 or later.
 
-If the Self-service component will utilize a server certificate, such as Hardware station or Commerce Scale Unit (Self-hosted), it is critical to note that certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
+If the self-service component will utilize a server certificate, such as Hardware station or Commerce Scale Unit (self-hosted), it is critical to note that certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
 
 > [!NOTE]
-> It is critical to note that the legacy Commerce Scale Unit (Self-hosted) Self-service component additionally utilizes Azure Service to Service authentication. Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration. By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
-> Starting August 1, 2019, the supported versions of the .NET Framework have been updated. Legacy Self-service client-side components require the Microsoft .NET Framework version 4.7.1 or later to be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For the sealed installers, it is recommended to always have the latest version of .NET Framework installed on the target computer.
+> It is critical to note that the legacy Commerce Scale Unit (self-hosted) self-service component additionally utilizes Azure Service to Service authentication. Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration. By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
+> 
+> The supported versions of the .NET Framework have been updated. Legacy self-service client-side components require the Microsoft .NET Framework version 4.7.1 or later to be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For the sealed installers, it is recommended to always have the latest version of .NET Framework installed on the target computer.
 
 ### Supported operating systems
-The following are the supported operating systems for each Commerce Self-service installer.
+The following are the supported operating systems for each Commerce self-service installer.
 
-[!WARNING] The Microsoft Windows 7 operating system is no longer supported for anything other than security-related fixes. As a result, while Dynamics 365 Commerce components may function on Windows 7, there will be no bug fixes that specifically relate to supporting this operating system.
+[!WARNING] The Microsoft Windows 7 operating system is not supported for anything other than security-related fixes. As a result, while Dynamics 365 Commerce components may function on Windows 7, there will be no bug fixes that specifically relate to supporting this operating system.
 
 #### Modern POS
  - Windows 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates
      - Windows 10 Pro is not recommended unless as part of a domain so that Windows updates can be appropriately scheduled
  - Windows Server 2019
- - It is not recommended to use Modern POS on the same computer as another Self-service component (Hardware station or Commerce Scale Unit (Self-hosted))
+ - It is not recommended to use Modern POS on the same computer as another self-service component (Hardware station or Commerce Scale Unit (self-hosted))
  - The legacy Self-service installer additionally supports Windows Server 2016 and Windows 10 LTSB with the latest available updates
  - Modern POS for iOS supports iOS version 11 or later
  - Modern POS for Android supports Android version 6.0 or later
@@ -108,21 +109,21 @@ The following are the supported operating systems for each Commerce Self-service
 > [!NOTE]
 > - If Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server and the system must have no less than 15 GB of disk space available. It is recommended to have no less than 25 GB of disk space available. 
 
-#### Hardware station and Commerce Scale Unit (Self-hosted))
+#### Hardware station and Commerce Scale Unit (self-hosted)
  - Windows 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates
      - Windows 10 Pro is not recommended unless as part of a domain so that Windows updates can be appropriately scheduled
  - Windows Server 2019
- - It is not recommended to use a Self-service component on the same computer as another Self-service component (Modern POS, for example)
- - The legacy Self-service installer additionally supports Windows Server 2016 and Windows 10 LTSB
+ - It is not recommended to use a self-service component on the same computer as another self-service component (Modern POS, for example)
+ - The legacy self-service installer additionally supports Windows Server 2016 and Windows 10 LTSB
 
 ### System requirements
-As a reminder, performance testing is crucial to the successful usage of Commerce Self-service components. Across all components, the bare minimum system supported for purposes of testing functionality is as follows:
+As a reminder, performance testing is crucial to the successful usage of Commerce self-service components. Across all components, the bare minimum system supported for purposes of testing functionality is as follows:
 
     - Dual-core processor that runs at no less than 2 gigahertz (GHz) per core
     - 3 gigabytes (GB) RAM
-    - Internet access and enough network throughput to handle the flow of requests and responses (Note that this is at a computer level and at a network level)
+    - Internet access and enough network throughput to handle the flow of requests and responses (Note that this is at a computer level and at a network level.)
     - Component specific system requirements such as for SQL Server and IIS
-    - No less than 10% of disk space available (Recommended to have no less than 10GB of disk space available when SQL Server is used)
+    - No less than 10% of disk space available (It's recommended to have no less than 10 GB of disk space available when SQL Server is used.)
 
 Past the above, as customizations and performance requirements are generated, each component typically requires a more powerful system to meet the user needs.
 
@@ -130,33 +131,37 @@ Past the above, as customizations and performance requirements are generated, ea
 - Minimum supported effective resolution for POS Full layout (PCs and tablets) is 1,024 × 768 (recommended 1366 x 768 or greater)
 - Minimum supported effective resolution for POS Compact layout (phones and small tablets) is 320 x 568 (recommended 360x640 or greater)
 - It is recommended to have no less than the following for a more performant Modern POS terminal:
-    - 128MB of dedicated graphical memory or 256MB of shared graphical memory is recommended at a minimum
-    - 4GB of RAM or more, requiring additional review of SQL Server requirements for offline database support
-    - Often SQL Express is used for offline databases, and in these scenarios, it is necessary to keep track of the offline database size (10GB being the maximum size possible)
+    - 128 MB of dedicated graphical memory or 256 MB of shared graphical memory is recommended at a minimum
+    - 4 GB of RAM or more, requiring additional review of SQL Server requirements for offline database support
+    - Often SQL Express is used for offline databases, and in these scenarios, it is necessary to keep track of the offline database size (10 GB being the maximum size possible)
 
 #### Hardware station 
 - Minimum supported system requirements for Microsoft Internet Information Services (IIS)
 - Minimum supported system requirements for all third-party hardware attached and used
 
-#### Commerce Scale Unit (Self-hosted))
-The minimum system requirements for a CSU (Self-hosted) is exactly that, the bare minimum necessary to function, typically in a test scenario. The following is not representative of a realistic production environment. It is critical to perform proper performance testing and validate that the computer hardware used will meet the demands of all hardware station, Modern POS, Cloud POS, and any third-party components that will access and utilize the CSU (Self-hosted) component or computer. Further, it is highly recomended to use a standard licensed version of SQL Server or better (Enterprise version, for example) so that the full capabilities of the processor and RAM may be utilized. The additional requirements are as follows:
-- 6GB of RAM minimum, potentially reaching 64GB of RAM or more
-- 2.4GHz multi-core CPU, potentially reaching multiple multi-core CPUs on server grade hardware (with a recommendation of a four coure processor)
-- Enough disk space to store the sum total of all Commerce data for all associated stores (Channels)
-    - Disk requirements could be as low as 10GB to 20GB or as much as multiple terabytes
+#### Commerce Scale Unit (self-hosted)
+The minimum system requirements for a CSU (self-hosted) is exactly that, the bare minimum necessary to function, typically in a test scenario. The following is not representative of a realistic production environment. It is critical to perform proper performance testing and validate that the computer hardware used will meet the demands of all hardware station, Modern POS, Cloud POS, and any third-party components that will access and utilize the CSU (self-hosted) component or computer. Further, it is highly recomended to use a standard licensed version of SQL Server or better (Enterprise version, for example) so that the full capabilities of the processor and RAM may be utilized. 
 
-Additionally, it is highly recommended to consider the following aspects of performance when determining CSU (Self-hosted) system requirements:
+The additional requirements are as follows:
+
+- 6 GB of RAM minimum, potentially reaching 64 GB of RAM or more
+- 2.4 GHz multi-core CPU, potentially reaching multiple multi-core CPUs on server grade hardware (with a recommendation of a four coure processor)
+- Enough disk space to store the sum total of all Commerce data for all associated stores (Channels)
+    - Disk requirements could be as low as 10 GB to 20 GB or as much as multiple terabytes
+
+Additionally, it is highly recommended to consider the following aspects of performance when determining CSU (self-hosted) system requirements:
+
 - Number of physical network ports (more ports enhances throughput per second)
 - SQL Server log flush size (this directly impacts SQL Server performance)
 - Data read and write capabilities (this directly impacts SQL Server performance)
-- Whether load balancing will be required across multiple systems handling either separated CSU sub-components (Such as multiple Retail Servers or a disaster recovery enabled system for database failover)
+- Whether load balancing will be required across multiple systems handling either separated CSU sub-components (such as multiple Retail Servers or a disaster recovery enabled system for database failover)
 
 ## Dynamics AX 2012 R3 Connector requirements
 Given the separated nature and specific usage of previous Dynamics AX 2012 R3 components such as Enterprise POS, the two Connector components have been kept in its own section.
 
 ### Supported operating systems
 
-- The Connector for Microsoft Dynamics AX 2012 R3 has two separate installers, one for Async Server Connector service and one for Real-time service for Microsoft Dynamics AX 2012 R3.
+The Connector for Microsoft Dynamics AX 2012 R3 has two separate installers, one for Async Server Connector service and one for Real-time service for Microsoft Dynamics AX 2012 R3.
 - Both components are 32-bit applications, but they will run on both x86 and x64 architectures.
 - Both components are supported on the following operating systems:
 
@@ -165,7 +170,7 @@ Given the separated nature and specific usage of previous Dynamics AX 2012 R3 co
     - Windows Server 2016 and Windows Server 2019
 
 ### Minimum system requirements
-Similar to a CSU (Self-hosted), it is often required to have much larger, server grade hardware to handle the throughput of an entire enterprise architecture of legacy POS systems.  This stated, the following is the absolute minimun to test functionality:
+Similar to a CSU (self-hosted), it is often required to have much larger, server grade hardware to handle the throughput of an entire enterprise architecture of legacy POS systems.  This stated, the following is the absolute minimun to test functionality:
 
 - 2 GB of RAM (4 GB of RAM are recommended)
 - 1.6 GHz peak CPU speed per core (2 cores are the minimum)
