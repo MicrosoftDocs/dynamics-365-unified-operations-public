@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.21
 
 This topic describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder using device, market, and geolocation information.
 
-Dynamics 365 Commerce lets you personalize your page content called *targets* for specific groups of customers called *audiences* to help increase user engagement and satisfaction. You can begin your targeting journey either by creating an audience or a target first. However, a successful targeting experience requires both these key parts.
+Dynamics 365 Commerce lets you personalize variations of your page content called *targets* for specific groups of customers called *audiences* to help increase user engagement and satisfaction. You can begin your targeting journey either by creating an audience or a target first. However, a successful targeting experience requires both these key parts.
 
 You create and manage audiences in Commerce site builder, based on customer data such as location, device information, sign-in status, and other dynamically derived information from customer web requests. You also create and manage targets on e-commerce modules and fragments in site builder.
 
@@ -40,7 +40,7 @@ You create and manage audiences in Commerce site builder, based on customer data
 
 ## Audiences
 
-An audience is a group of users, and membership in the group is determined by a set of dynamic rules. These rules are simple AND/OR conditions that are run against information or segments that are available in customer requests. 
+An audience is a group of users, and membership in the group is determined by a set of dynamic rules. These rules are simple logic tests that are run against information available in customer requests or other available segments. You can combine multiple rules using AND / OR operators.
 
 Commerce natively supports basic segments such as device information, sign-in status, referrer, and query string parameters. Commerce also supports extensible segments through connections to third-party geolocation and segmentation providers. For more information about how to set up connectors, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
 
