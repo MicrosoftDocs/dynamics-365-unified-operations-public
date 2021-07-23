@@ -119,11 +119,11 @@ The following are the supported operating systems for each Commerce self-service
 ### System requirements
 As a reminder, performance testing is crucial to the successful usage of Commerce self-service components. Across all components, the bare minimum system supported for purposes of testing functionality is as follows:
 
-    - Dual-core processor that runs at no less than 2 gigahertz (GHz) per core
-    - 3 gigabytes (GB) RAM
-    - Internet access and enough network throughput to handle the flow of requests and responses (Note that this is at a computer level and at a network level.)
-    - Component specific system requirements such as for SQL Server and IIS
-    - No less than 10% of disk space available (It's recommended to have no less than 10 GB of disk space available when SQL Server is used.)
+ - Dual-core processor that runs at no less than 2 gigahertz (GHz) per core
+ - 3 gigabytes (GB) RAM
+ - Internet access and enough network throughput to handle the flow of requests and responses (Note that this is at a computer level and at a network level.)
+ - Component specific system requirements such as for SQL Server and IIS
+ - No less than 10% of disk space available (It's recommended to have no less than 10 GB of disk space available when SQL Server is used.)
 
 Past the above, as customizations and performance requirements are generated, each component typically requires a more powerful system to meet the user needs.
 
@@ -188,11 +188,11 @@ The only supported collation for Commerce databases in the cloud is **SQL\_Latin
 
 - [Get an evaluation copy](../../fin-ops-core/dev-itpro/dev-tools/get-evaluation-copy.md)
 - [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
-- [Select an in-store topology](retail-in-store-topology.md)
+- [Select an in-store topology](../dev-itpro/retail-in-store-topology.md)
 - [Device management implementation guidance](../implementation-considerations-devices.md)
 - [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
-- [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
-- [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
+- [Configure and install Commerce Scale Unit (self-hosted)](../dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Commerce Data Exchange implementation guidance](../deb-itpro/implementation-considerations-cdx.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
