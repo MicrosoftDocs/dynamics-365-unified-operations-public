@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sales tax group determination logic
+title: Sales tax applicability and sales tax group determination logic
 description: This topic explains the sales tax applicability and sales tax group determination logic in the tax feature setup.
 author: epodkolz
 ms.date: 
@@ -26,7 +26,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: AX 10.0.21
 ---
 
-# Sales tax group determination logic
+# Sales tax applicability and sales tax group determination logic
 
 This topic explains the sales tax applicability and sales tax group determination logic in the tax feature setup.
 
@@ -65,7 +65,7 @@ If no applicability rule is configured for Tax group or Item tax group in the Ta
 > [!NOTE]
 > The sales tax group and item sales tax group must be created and maintained in RCS. 
 
-In case the tax groups determined by the Tax calculation service need to be updated, you can enable the **Override sales tax** parameter on the document line. By enabling the option, you can select required **Sales tax group** and **Item sales tax group**.
+You can update the tax groups determined by the Tax calculation service without re-configuring the Tax feature if needed. For instance, the rule is set up incorrectly or some exception from the rule is required. By enabling the **Override sales tax** option on the document line, you can select the required **Sales tax group** and **Item sales tax group**.
 
 ![Pict1 Override sales tax parameter](https://user-images.githubusercontent.com/27483882/126536049-0d173107-b7a9-4045-82c7-2e3c267f34ca.jpg)
 
