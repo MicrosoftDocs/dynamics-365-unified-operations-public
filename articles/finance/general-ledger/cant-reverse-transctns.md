@@ -149,7 +149,7 @@ The following types of transactions can't be reversed:
 
 A number of transaction types update Accounts receivable subledgers, including customer invoices from sales order, customer invoices entered through the general journal, free text invoices, customer payments, and writeoffs. 
 
-If the Mass reversal feature hasn’t been turned on, transactions are reversed individually through either the **Customer transactions** page for invoices, or the **Bank accounts** page for deposits. For details on reversing a payment, see the Cash and bank management section in this topic.
+If the Mass reversal feature hasn’t been turned on, transactions are reversed individually through either the **Customer transactions** page for invoices, or the **Bank accounts** page for deposits. For information about reversing a payment, see the [Cash and bank management](cant-reverse-transctns.md#cash-and-bank-management) section in this topic.
 
 If the Mass reversal feature is turned on, one or more Accounts receivable transactions can also be reversed from the **Voucher transactions** page and the journal it was posted from. Note that deposits still can be reversed only from the bank account, and free text invoices from the originating page (if the feature is enabled to allow corrections). Also note that customer transactions still can’t be reversed from the **Transactions for (main account)** page for the ledger. But they can be reversed from the **Voucher transactions** page. 
 
