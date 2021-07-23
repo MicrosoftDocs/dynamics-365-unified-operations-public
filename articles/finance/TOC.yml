@@ -1564,6 +1564,8 @@
           href: localizations/emea-aut-vat-statement-details.md
         - name: Cross-border services report
           href: localizations/emea-aut-cross-border-services-report.md
+        - name: Purchase duties
+          href: localizations/emea-aut-purchase-duties.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
@@ -2970,6 +2972,12 @@
           href: localizations/emea-pol-split-ap-ar-exchange-difference.md
         - name: VAT declaration with registers (JPK_V7M, VDEK)
           href: localizations/emea-pol-vdek.md
+        - name: Prepare for JPK-V7M reporting
+          href: localizations/emea-pol-vdek-setup.md
+        - name: JPK-V7M reporting
+          href: localizations/emea-pol-vdek-reporting.md
+        - name: Details of specific business scenarios in the JPK-V7M report
+          href: localizations/emea-pol-vdek-scenarios.md
       - name: Qatar
         items: 
         - name: Qatar overview
