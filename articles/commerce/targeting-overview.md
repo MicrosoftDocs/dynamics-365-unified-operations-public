@@ -90,7 +90,7 @@ To create an audience in Commerce site builder, follow these steps.
 
 1. When you're satisfied with the audience configuration, select **Finish editing**. You can then select **Publish** to make the audience available for use in a live target. Alternatively, you can publish the audience together with the target.
 
-To edit an audience, select the hyperlink for it on the **Audiences** tab, and then select **Edit** in the audience editor that appears. To view the list of targets and pages that reference an audience, select the audience in the audience list view, and then select **View Assignments**. To delete an audience in the audience list view or the audience editor, unpublish it if it has already been published, and then select **Delete** on the command bar.
+To edit an audience, select the hyperlink for it in the **Audiences** tab, and then select **Edit** in the audience editor that appears. To view the list of targets and pages that reference an audience, select the audience in the audience list view, and then select **View Assignments**. To delete an audience in the audience list view or the audience editor, unpublish it if it has already been published, and then select **Delete** on the command bar.
 
 > [!NOTE]
 > Audiences are a site-level concept in Commerce site builder. You can share the same audience across multiple targets.
