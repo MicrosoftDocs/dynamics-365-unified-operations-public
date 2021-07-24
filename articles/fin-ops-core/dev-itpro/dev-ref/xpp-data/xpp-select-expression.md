@@ -3,10 +3,8 @@ title: Write select statements as expressions
 description: This topic explains how you can use a select statement as an expression.
 author: robinarh
 ms.date: 06/16/2020
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom:
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
