@@ -216,4 +216,28 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
 8. In the Finance and Operations app, turn change tracking back on for the **Customers V3** table.
 
 
+## Initial sync failures on Customers V3 - Accounts and Sales orders mappings or any maps with more than 10 lookup fields
+
+If the initial sync fails on out of box Customers v3 or Sales order mappings or any other custom entity mapping with the below error, this is a known issue related to lookup limitation on FetchXML query. Due to the lookup limitation on FetchXML query, the initial sync would fail when the entity mapping contains more than 10 lookups. Here is the CDS platform documentation for refence: https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query
+CRMExport: Package execution complete. Error Description 5 Attempts to get data from https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, address2_county, address2_stateorprovince, address2_line1, address2_postalcode, creditlimit, address1_city, address1_country, address1_county, address1_postalcode, name, numberofemployees, emailaddress1, fax, telephone1, primarytwitterid, websiteurl, description, msdyn_creditlimitismandatory, msdyn_creditrating, msdyn_identificationnumber, msdyn_invoiceaddress, msdyn_onetimecustomer, msdyn_onholdstatus, msdyn_partycountry, msdyn_partystateprovince, msdyn_paymenttermsbasedays, msdyn_primaryfacebookid, msdyn_faxextension, msdyn_primarylinkedinid, msdyn_taxexemptnumber, msdyn_emailaddress1description, msdyn_primaryfacebookdescription, msdyn_faxdescription, msdyn_primarylinkedindescrption, msdyn_telephone1description, msdyn_telephone1extension, msdyn_primarytwitteriddescription, msdyn_websiteurldescription, address1_line1, address1_stateorprovince, msdyn_partynumber, versionnumber&$expand=msdyn_billingaccount_account($select=accountnumber),msdyn_company($select=cdm_companycode),transactioncurrencyid($select=isocurrencycode),msdyn_customergroupid($select=msdyn_groupid),msdyn_customerpaymentmethod($select=msdyn_name),msdyn_paymentday($select=msdyn_name),msdyn_paymentschedule($select=msdyn_name),msdyn_paymentterm($select=msdyn_name),primarycontactid($select=msdyn_contactpersonid),msdyn_salestaxgroup($select=msdyn_name),msdyn_vendor($select=msdyn_vendoraccountnumber)&$filter=(customertypecode eq 3) and (msdyn_company/cdm_companyid eq 'dfdsfrgrfsbgetb')&$orderby=accountnumber asc failed.
+
+**Workaround**
+
+Split the initial sync in to 3 steps. In the first step, remove some of the lookup fields from the dual-write entity map that are not mandatory and bring the number of lookups to 10. Once the lookup fields are removed, save the map and do the initial sync. Once the initial sync for the first step is successful, add the remaining lookup fields and remove the lookup fields that got initial synced in first step. Once again make sure the number of lookup fields is 10. Save the map and run the initial sync. Repeat these steps to make sure all the lookup fields are initial synced. Now add all the lookup fields back to the map, save the map and run the map with skip initial sync. This will enable the map for live sync mode.
+
+
+## Known error for initial sync of Party postal addresses and party electronic addresses.
+
+We have a range added on DirPartyCDSEntity in FinOps to filter only parties of type ‘Person’ and ‘Organization’. As a result of this the initial sync of CDS Parties – msdyn_parties mapping will not sync parties of other types like ‘Legal Entity’, ‘Operating Unit’ etc. So, when the initial sync runs for CDS Party postal addresses (msdyn_partypostaladdresses) or Party Contacts V3 (msdyn_partyelectronicaddresses) you may see errors like the Party number could not found in Dataverse.
+
+We are currently working on the fix to remove the party type range on the FinOps entity so that parties of all types sync to Dataverse successfully.
+
+## Performance issue on Customers or Contacts mappings
+
+To help improve the performance a little better, we recommend you stop the maps that could be dependent on global postal address/ electronic address tables. 
+In the scenario where you have already completed the initial sync say for Customers and have the customers maps running and now when you are running initial sync for Contacts, there could be inserts/updates to LogisticsPostalAddress and LogisticsElectronicAddress tables to insert address information for contacts. Since the same tables are also tracked for CustCustomerV3Entity and VendVendorV2Entity dual write tries to build more queries and try to dual write the information. So if you have already ran initial sync, stop these maps until you run the initial sync for all the Customers , Vendors and Contacts mappings.
+Once initial sync is complete for these, you can run all these maps by skipping initial sync.
+
+
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
