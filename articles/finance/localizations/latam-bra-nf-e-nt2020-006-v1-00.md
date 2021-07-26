@@ -54,16 +54,32 @@ Technical note NT2020.006 introduced new NF-e rejection codes. Complete the foll
 1. Go to **Organization administration** \> **Organizations** \> **Electronic documents** \> **NF-e federal parameters**.
 2. On the **Rejection codes** tab, select **New** to enter the new rejection codes. For the list of new rejection codes, consult the documentation of the NT2020.006 technical note available in the [NF-e Portal](http://www.nfe.fazenda.gov.br/portal/principal.aspx).
 
-## Sales that are intermediated by the taxpayer's own sales digital platform
+## Scope from version 1.00 of the Technical Note
+
+### New tag **&lt;indintermed&gt;**
+
+#### Sales that are intermediated by the taxpayer's own sales digital platform
 
 When a digital platform that is owned by the taxpayer serves as the intermediary for a sale, if the presence type is set to one of the following values on the header of the sales order that is created for the sale, the **&lt;indintermed&gt;** tag is added to the XML of the NF-e. The value is set to **0** (zero).
 
-- In person
 - Internet
 - Telesales
 - Others
 
 If the presence type is different than those listed, the **&lt;indintermed&gt;** tag is not placed in the XML.
+
+## Scope from version 1.10 of the Technical Note
+
+- Update in the validation rule B25c-10: added the option "In person" to generate the **&lt;indintermed&gt;** tag
+
+## Scope from version 1.20 of the Technical Note
+
+- YA02: Adding options to the tag **&lt;tPag&gt;**
+- 2.2.1, B25c-10: reverted the option "In person" to generate the **&lt;indintermed&gt;** tag
+- YB01-10: Update in the rules when the node **&lt;infIntermed&gt;** must exist
+- YB01-20: Update in the rules when the node **&lt;infIntermed&gt;** must not exist
+- YA02a, YA02a-10, YA02a-20: New tag **&lt;xPag&gt;** added when **&lt;tPag&gt;** = 99
+
 
 ## Out of scope for the feature
 
