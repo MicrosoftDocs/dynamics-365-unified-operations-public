@@ -57,9 +57,9 @@ The following events occur when you copy a Human Resources database:
 
 - Documents in Microsoft Azure Blob storage aren't copied from one environment to another. As a result, any documents and templates that are attached won't be copied and will remain in the source environment.
 
-- All users except the except the ones with "System Administrator" security role and other internal service user accounts will be unavailable. The Admin user can delete or obfuscate data before other users are allowed back into the system.
+- All users except the except those with the "System Administrator" security role and other internal service user accounts will be unavailable. The Admin user can delete or obfuscate data before other users are allowed back into the system.
 
-- Any user with "System Administrator" security role must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
+- Any user with the "System Administrator" security role must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 
 ## Copy the Human Resources database
 
@@ -116,7 +116,7 @@ Some of these elements aren't copied because they're environment-specific. Examp
 
 Also, the following statuses change when you copy an instance:
 
-- All users except the ones with "System Administrator" security role are set to **Disabled**.
+- All users except those with the "System Administrator" security role are set to **Disabled**.
 
 - All batch jobs, except for some system jobs, are set to **Withhold**.
 
