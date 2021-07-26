@@ -3086,14 +3086,16 @@
               href: localizations/rus-post-budget-fixed-asset-acquisition.md
             - name: Transfer fixed assets
               href: localizations/rus-fixed-asset-transfer.md
+            - name: Unified printing forms for fixed assets 
+              href: localizations/printing-forms-fixed-assets.md
+            - name: Inquiries and reports 
+              href: localizations/rus-fa-inquiries-and-reports.md.md
           - name: Not valuable fixed assets, and working clothes
             items:
             - name: Not valuable fixed assets (NVFAs) (Russia)
               href: localizations/rus-not-valuable-assets.md
             - name: Working clothes/special rigging accounting (Russia)
               href: localizations/rus-working-clothes-instruments-accounting.md
-            - name: Unified printing forms for fixed assets 
-              href: localizations/printing-forms-fixed-assets.md
         - name: Accounts payable and receivable
           items:
           - name: Credit note corrections (Russia)
