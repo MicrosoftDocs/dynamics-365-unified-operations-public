@@ -47,13 +47,17 @@ You can create a variant of a product based on another product variant. The bill
 
 The following procure provides and example of how to create a new variant that includes the color dimension by creating a copy of an existing variant.
 
-1. Create the engineering product. Choose the engineering category and the value for the relevant dimension (for example, set the color to blue) by selecting  **New \> Engineering product** on the **Products** tab on the **Released products** page in the engineering company.
-1. The product and the blue V-1 variant are created.
-1. Add a BOM and a route for the blue V-1 if desired.
+1. Open the **Released products** page (for example, by going to **Engineering change management \> Common \> Released products**).
+1. On the Action Pane, open the **Product** tab and, from the **New** group, select **Engineering product**.
+1. The **New product** dialog opens. Select the appropriate **Engineering category**.
+1. If your selected engineering category includes variant dimensions, then you can set values for them now. (For this example, suppose the category has a **Color** dimension, which you now set to *Blue*.)
+1. Make other settings as needed, and select **OK** to create the product.
+1. The product and the blue V-1 variant are created, and the new product now opens.
+1. Add a BOM and route to the variant as needed.
 1. Add attributes to the product variant as needed.
 1. Add the blue V-1 product variant to an engineering change order.
 1. Set **Impact** to *New variant*.
-1. Select the new color value (for example, white).
+1. Select the new color value (for example, *White*).
     - Note that the new variant has a BOM and a route that have been copied from the previous variant.
     - Note that the new variant also has the attributes copied from the previous variant.
 1. Approve the change order.
