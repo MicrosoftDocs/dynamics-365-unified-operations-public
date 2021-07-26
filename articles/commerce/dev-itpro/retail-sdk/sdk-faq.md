@@ -148,16 +148,15 @@ To this resolve issue, run msbuild with the parameter **msbuild /p:CheckVSDepend
 
 In the Azure DevOps pipeline, pass the parameter -p:CheckVSDependencies=False in the MSBuild argument.
 
+## Retail SDK MSbuild fails with missing .NET Framework 4.5.1 or 4.6.2 or Web deploy components error
 
-## Retail SDK MSbuild fails with missing .NET 4.5.1 or 4.6.2 or Web deploy components error:
-
-If the Retail SDK msbuild fails with missing .NET 4.5.1 or 4.6.2 or Web deploy components error then install the below components:
+If the Retail SDK msbuild fails with an error noting that the .NET Framework 4.5.1 or 4.6.2 or Web deploy components are missing, then install the following components:
 
 - .NET Developer Pack:
     +  [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
     +  [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
     
-- [Web Deploy v3.6 ](https://www.microsoft.com/en-us/download/confirmation.aspx?id=43717)
+- [Web Deploy v3.6 ](https://www.microsoft.com/download/confirmation.aspx?id=43717)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
