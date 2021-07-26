@@ -213,6 +213,6 @@ To use a reason code for a quantity adjustment or online counting:
 
 1. Go to **Inventory management \> Inquiries and reports \> On-hand list**.
 1. On the Action Pane, select **Quantity adjustment**.
-1. Select **Quantity adjustment**, and then, in the **Counting reason code** field, select a reason code. <!--KFM: I don't understand what we are doing here. -->
+1. Select **Quantity adjustment**, and then, in the **Counting reason code** field, select a reason code.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
