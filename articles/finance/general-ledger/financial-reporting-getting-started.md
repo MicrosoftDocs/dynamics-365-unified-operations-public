@@ -50,7 +50,7 @@ To create and generate financial reports for a legal entity, you must set up the
 -   Chart of accounts
 -   Currency
 -   Post a transaction to at least one account
--   MainAccount is listed in the Selected column on the **Financial reporting setup** page (**General ledger > Ledger setup > Financial reporting setup**)
+-   MainAccount is listed in the **Selected** column on the **Financial reporting setup** page (**General ledger > Ledger setup > Financial reporting setup**)
 
 ## Granting security access to Financial reporting
 Financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles. The following sections list these privileges and duties, together with the associated roles.
@@ -168,9 +168,9 @@ Issue 2: The user hasn't been assigned the required permissions to use Financial
   If another user can open Report Designer, select **Tools**, and then select **Integration Status**. Verify that the integration map, "Company Users Provider to Company," has run successfully because you were assigned permission to use Financial Reporting. 
 * It may be possible that another error has prevented **Dynamics user to Financial Reporting user integration** from finishing. Or it's possible that a datamart reset has been initiated and not yet completed, or that another system error has occurred. Try running the process again later. If the problem persists, contact your system admin.
 
-Issue 3: You can proceed past the ClickOnce Report Designer sign-in page, but are unable to complete sign in within Report Designer. 
+Issue 3: You can proceed past the **ClickOnce Report Designer** sign-in page, but are unable to complete sign in within Report Designer. 
 
-* The time that's set on your local computer when you log into the system must be within five minutes of the time on the Financial reporting server. If there is a difference of more than five minutes, the system will not allow sign-in. 
+* The time that's set on your local computer when you log into the system must be within five minutes of the time on the Financial reporting server. If there is a difference of more than five minutes, the system won't let you sign-in. 
 * If the time on your computer differs from the time on Financial reporting server, we recommend enabling the Windows option to set your computer's time automatically. 
 
 ## Use Event viewer to troubleshoot report designer issues.
