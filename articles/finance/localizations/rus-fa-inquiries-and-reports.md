@@ -90,10 +90,14 @@ filter (set the fixed asset inventory number, the value model etc.)
 
 Fixed assets \> Inquiries \> Documents
 
-In this page list, all local documents of different types are displayed (for
+This page list displays all local documents of different types (for
 example, Acceptance report (\#FA-1), Statement about fixed assets object
 acceptance-transference (\#FA-1) etc.). See [Unified printing forms for fixed
 assets (Russia)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/printing-forms-fixed-assets).
+
+## Working clothes/Special riggings on-hand
+Fixed assets \> Inquiries \> Working clothes/Special riggings on-hand
+This page list displays all selected Working clothes/Special riggings cards by workers with information on lifetime, Issued and Disposal date on specified date. A user can select the cards on Value model, type of cards (Working clothes or Special riggings), department etc. and group data by division, issue rate, item group and item. 
 
 # Reports
 
