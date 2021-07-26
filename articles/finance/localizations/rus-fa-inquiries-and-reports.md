@@ -51,7 +51,7 @@ And the following inquiries are available in Fixed assets (Russia) \> Inquiries.
 
 Fixed assets (Russia) \> Inquiries \> Transactions.
 
-In this page list, all transactions are listed regardless which module these
+This page list displays all transactions regardless which module these
 transactions were posted:
 
 -   Fixed assets (Russia)
@@ -62,7 +62,7 @@ transactions were posted:
 
 -   Accounts receivable
 
-Details of a transaction are displayed on the **General** tab**.**
+Details of a transaction are displayed on the **General** tab.
 
 Clicking the **Voucher** button, a user can overview the voucher transactions,
 related with the fixed asset transaction, the source and the original document
@@ -72,8 +72,8 @@ for the fixed asset transaction.
 
 Fixed assets (Russia) \> Inquiries \> Budget transactions.
 
-In the page list **FA budget transactions**, the details of fixed asset budget
-records are displayed.
+This page list displays the details of fixed asset budget
+records.
 
 To review the budget transaction in the **General ledger** module, click the
 **Budget account entries** button.
@@ -82,8 +82,8 @@ To review the budget transaction in the **General ledger** module, click the
 
 Fixed assets (Russia) \> Inquiries \> Voucher transactions
 
-In this page list, all voucher transactions, related with the fixed asset
-transactions, are displayed. Before running this inquiry, a user can apply a
+This page list displays all voucher transactions, related with the fixed asset
+transactions. Before running this inquiry, a user can apply a
 filter (set the fixed asset inventory number, the value model etc.)
 
 ## Documents
@@ -131,7 +131,7 @@ book value on the last day of the period.
 
 Fixed asset (Russia) \> Reports \> Inventory FA list
 
-A list of fixed assets with an indication of the acquisition cost and net book
+This report displays a list of fixed assets with an indication of the acquisition cost and net book
 value, as well as data on the disposal of fixed assets.
 
 ### FA putting into operation
