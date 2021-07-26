@@ -1,3 +1,29 @@
+---
+# required metadata
+
+title: Inquiries and reports
+description: This topic provides information about fixed asset acquisitions for Russia.
+author: v-oloski
+ms.date: 07/26/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: Inquiries, Reports
+audience: Application User
+# ms.devlang: 
+ms.reviewer: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Russia
+# ms.search.industry: 
+ms.author: v-oloski
+ms.search.validFrom: 2021-07-26
+ms.dyn365.ops.version: 8.1
+
+---
 # Inquiries
 
 Three types of inquiries are available from a Fixed asset value model (Fixed
@@ -67,8 +93,7 @@ Fixed assets \> Inquiries \> Documents
 In this page list, all local documents of different types are displayed (for
 example, Acceptance report (\#FA-1), Statement about fixed assets object
 acceptance-transference (\#FA-1) etc.). See [Unified printing forms for fixed
-assets (Russia) - Finance \| Dynamics 365 \| Microsoft
-Docs](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/printing-forms-fixed-assets).
+assets (Russia)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/printing-forms-fixed-assets).
 
 # Reports
 
@@ -161,7 +186,7 @@ Fixed asset (Russia) \> Reports \> Sheet of FA and depreciation charges
 
 Displays data for the selected fixed assets and date range.
 
-![](media/f3b8005c27d9194d5fb9341344fa99ec.png)
+![Sheet of FA and depreciation charges](media/RUS-sheet-of-FA-and-depreciation.png)
 
 ### Insurance
 
