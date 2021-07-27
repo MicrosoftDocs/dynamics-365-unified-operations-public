@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.21 (August 2021)
+title: What's new or changed in Dynamics 365 Finance 10.0.21 
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.21 preview release.
 author: roschlom
 ms.date: 07/16/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.21
 
 ---
 
-# Preview features in Dynamics 365 Finance 10.0.21 (August 2021)
+# Preview features in Dynamics 365 Finance 10.0.21 
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,11 +44,8 @@ The following features are included in this release. Some of the listed features
 
 | Feature area | Feature | More information |
 |----|----|----|
-|    |    |    |
-|    |    |    |
-|    |    |    |
-|    |    |    |
-|    |    |    |
+| Finance insights | [Customer payment predictions](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/customer-payment-predictions) | [Customer payment predictions](../finance-insights/payment-insights-overview.md) |
+
 
 
 ## Feature enhancements included in this release
@@ -57,8 +54,23 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
-|   |   |   |
-|   |   |   |
+| Accounts payable  | Process automation - additional support added for modifying query filters   | This feature lets you add additional tables and filters to process automation queries that are used when you create or edit series or individual occurrences of the process.  |
+| Accounts payable   | Block posting and submission of vendor invoices to workflow   | This feature lets you prevent a vendor invoice from being posted or submitted to the workflow process. You can block these processes when a vendor invoice contains a line where the invoice quantity is less than the matched product receipt quantity. Instead, a message will alert the accounts payable clerk to the issue, and let them correct it before posting or submitting it to workflow.   |
+| Accounts payable   | Enable credit invoicing for vendor invoices   | This feature enables credit invoicing functionality for vendor invoices   |
+| Accounts payable and Accounts receivable   | Maturity date validation of posting payment journal with postdated checks to bank account   |  Allow to post payment journals for vendors and customers with postdated checks, when session date is greater or equal to maturity date.  |
+| Accounts receivable  | Selection of advance invoices for reversing while posting sales order credit note  | Have a possibility to select advance invoices for reversing while posting sales order credit note. |
+| Accounts receivable   | Batch task size number of lines   | Introduces the Account Receivable “Number of document lines in batch task” parameter that adds capability to limit the number of document lines being posted per batch task. The parameter will affect posting of confirmation, picking list, packing slip and invoice.   |
+| Cash and bank management  | Turn off set based updates for customer settlement cash discount rate  | This feature causes customer settlement for cash discount dates to be updated individually. Typically we don’t recommend processing cash discount dates individually because the method is significantly slower. However, it might be useful to update cash discount dates individually if you consistently experience deadlock exceptions when updating cash discount dates. <br> After turning this enhancement on, go the **Accounts receivable parameters** page and set the **Turn off set based updates for cash discount date** parameter to **Yes** for each company where you’ve experienced deadlocks. To access the parameter, go to **Accounts receivable** > **Setup** > **Accounts receivable parameters** > **Settlement** > **Options**. |
+| Credit and collections   | Collection letter creation performance improvement   | The feature speeds up the process of creating collection letters. This helps in the overall creation process but the enhanced performance is particularly useful when a smaller number of customers have many transactions.   |
+| Finance insights   |  Customer payment predictions  |  This feature uses machine learning to predict when an invoice will be paid. It uses historical invoice, payment, and customer data to create a machine learning model that is used to predict when an invoice will be paid. This feature uses the Power AI service and specific data fields to make predictions. To improve the accuracy of predictions you may choose additional data fields in Power AI that are relevant to your organization when setting up the feature.  |
+| Fiscal books  | (Brazil) SPED Reinf updates in events 5011 and 2055   | This fix enables the updates introduced in EFD-Reinf Developer Guidance Manual of version 1.5.01 published on April 2021. The main changes are related to service name and parameters of inquiring events 5011 and 2055.   |
+| Fiscal books  | (Brazil) NFC-e synchronous processing   | This feature enables NFC-e synchronous processing on retail POS terminals and in Commerce headquarters.   |
+| Fixed assets   | Lock asset book in depreciation journal   | This feature lets you prevent posting depreciation to an asset book that’s been selected on another un-posted journal. The feature is turned on from the Fixed asset parameters.   |
+| General ledger | Performance enhancement for large consolidations   | We've added a performance improvement to the consolidation in General ledger to allow each batch to run more efficiently. The enhancement works by processing the General ledger data in parallel and an extension point has been added if you need to customize it.   |
+| General ledger   | Generate trial balance iwth pending type transactions   | This feature lets you select specific pending type transactions to include on the Trial balance detail report.   |
+| General ledger   |  General ledger year-end enhancements  | The setup of the year-end closing templates will be moved to a new setup page. The existing year-end close page will change, similar to the general ledger foreign currency revaluation, where a list displays each time the year end close is run or reversed. An accounting manager can initiate the year end close from the new page. <br> If the accounting manager wants to reverse the year-end close, they can select the most recent fiscal year for the appropriate legal entity and choose the Reverse year-end close button. The reversal will delete the accounting entries for the previous year-end close, and will not rerun the year-end close automatically. <br> You can rerun the year-end close, by restarting the process for the fiscal year and legal entity. The process will continue to use the General ledger parameter setting to determine whether the year-end close rerun will account for only the new or changed transactions, or completely reverse the previous close, rerunning the process for all transactions.  |
+| Tax   | (India) Enable to include tax collection at source (TCS) in the total invoice value of an invoice    | If enable this feature user will able to include TCS (Tax collection at source) tax amount in the total invoice value of the sales and purchase invoice.   |
+
 
 ## Additional resources
 
