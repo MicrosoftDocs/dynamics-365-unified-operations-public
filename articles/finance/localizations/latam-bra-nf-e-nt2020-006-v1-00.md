@@ -4,7 +4,7 @@
 title: NT2020.006 – Intermediary sales digital platform for NF-e
 description: This topic explains how to tag intermediary digital sales for NF-e.
 author: gionoder
-ms.date: 03/12/2021
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -56,9 +56,7 @@ Technical note NT2020.006 introduced new NF-e rejection codes. Complete the foll
 
 ## Scope from version 1.00 of the Technical Note
 
-### New tag **&lt;indintermed&gt;**
-
-#### Sales that are intermediated by the taxpayer's own sales digital platform
+### New tag &lt;indintermed&gt;
 
 When a digital platform that is owned by the taxpayer serves as the intermediary for a sale, if the presence type is set to one of the following values on the header of the sales order that is created for the sale, the **&lt;indintermed&gt;** tag is added to the XML of the NF-e. The value is set to **0** (zero).
 
