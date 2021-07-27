@@ -66,30 +66,33 @@ The current limit when you link the environments is approximately 40 legal table
 
 ## Error message: Saving connection set failed! An item with the same key has already been added 
 
-While linking the DualWrite environment, it fails with an error msg - Saving connection set failed! An item with the same key has already been added
+While linking the dual-write environment, the action fails with an error msg - Saving connection set failed! An item with the same key has already been added.
 
 #### Cause
 
-DualWrite does not support multiple legal entities/companies with the same name. For example, If you have two companies with dat name in the CRM then it will show this error msg.
+Dual-write does not support multiple legal entities/companies with the same name. For example, If you have two companies with "DAT" name in the Dataverse then it will get this error message.
 
 #### Mitigation
 
-To unblock the customer, search for the companies then delete the redundant ones. Also, look for companies with blank spaces. For some customers, a similar error was shown for multiple companies with a blank name.
+To unblock the customer, remove duplicate records from cdm_company table in Dataverse. Also, in case cdm_company table has records with blank name, you need to remove or correct those records.
 
-## Error when opening the 'Link to Common Data Service' page in Finance and Operations apps
+## Error when opening the "Dual-wrte" page in Finance and Operations apps
 
-If you are trying to link the Dataverse environment for dual write, and starts to experience issue with error message "Response status code does not indicate success: 404 (Not Found)", then issue is that Consent step is not completed. You can validate if consent has been provided by logging on to portal.azure.com using the tenant admin account, and check if the 3rd party app of ID 33976c19-1db5-4c02-810e-c243db79efde shows up in AAD’s Enterprise applications list. If not, the re-do the consent step as defined in playbook as well in Dual-Write setup section on wiki.
+When you are trying to link a Dataverse environment for dual-write, you may experience the error "Response status code does not indicate success: 404 (Not Found)". It means the app consent step is not complete. You can validate if consent has been provided by logging on to portal.azure.com using the tenant admin account, and check if the 3rd party app with ID 33976c19-1db5-4c02-810e-c243db79efde shows up in AAD’s Enterprise applications list. If not, then re-do the consent step as described below:
 
 #### Providing App consent
 
 -   Launch URL below with your admin credentials which should prompt you for consent. https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent
 
--   Click ‘Accept’. This would mean that you are providing the consent to install the app (with id =33976c19-1db5-4c02-810e-c243db79efde) in your tenant.
+-   Click "Accept". This would mean that you are providing the consent to install the app (with id =33976c19-1db5-4c02-810e-c243db79efde) in your tenant.
 
--   This app is required for CDS to talk to F&O Note: If this doesn't work, open browser in incognito mode for chrome and private mode of Edge.
+-   This app is required for Dataverse to talk to Finance and Operations apps. 
     
     ![Initial sync setup troubleshooting.](media/Initial-sync-setup-troubleshooting-1.png)
 
+
+> [!NOTE]
+> If this doesn't work, launch the URL in incognito mode of chrome browser or inprivate mode of Microsoft Edge browser.
 
 
 ## Linking error with newly created FinOps - Error fetching legal entities
