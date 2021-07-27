@@ -49,35 +49,35 @@ Multiple groups of components can be configured for a single ER format configura
 
 ## Enable an email destination
 
-To send one or more output files by email, complete the followign steps.
+To send one or more output files by email, follow these steps.
 
-1. Go to the **Electronic reporting destination** page, and on the **File destination** FastTab, select a component or group of components in the grid.
-2. Select **Settings**, and in the **Destination settings** dialog box, on the **Email** tab, set **Enabled** to **Yes**. 
+1. On the **Electronic reporting destination** page, on the **File destination** FastTab, select a component or group of components in the grid.
+2. Select **Settings**, and then, in the **Destination settings** dialog box, on the **Email** tab, set the **Enabled** option to **Yes**.
 
 [![Setting the Enabled option to Yes for an email destination.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
 ## Configure an email destination
 
-You can specify the email sender and email recipients, and edit the subject and body of the email message. You can set up constant text for the email subject and body, or use ER [formulas](er-formula-language.md) to dynamically create email texts.
+You can specify the email sender and email recipients, and you can edit the subject and body of the email message. You can set up constant text for the email subject and body, or you can use ER [formulas](er-formula-language.md) to dynamically create email texts.
 
-By default, an email is sent on behalf of the current user. To specify another email sender, the **From** field must be configured.
+By default, an email is sent on behalf of the current user. To specify a different email sender, you must configure the **From** field.
 
 > [!NOTE]
-> When an email destination is configured, the **From** field is visible only for users who have the `ERFormatDestinationSenderEmailConfigure`security privilege, **Configure the sender email address for ER format destinations**.
+> When an email destination is configured, the **From** field is visible only to users who have the `ERFormatDestinationSenderEmailConfigure` security privilege, **Configure the sender email address for ER format destinations**.
 >
-> When an email destination is offered for modification at [runtime](electronic-reporting-destinations.md#security-considerations), the **From** field is visible only for users who have the `ERFormatDestinationSenderEmailMaintain` security privilege, **Maintain the sender email address for ER format destination**.
+> When an email destination is offered for modification at [runtime](electronic-reporting-destinations.md#security-considerations), the **From** field is visible only to users who have the `ERFormatDestinationSenderEmailMaintain` security privilege, **Maintain the sender email address for ER format destination**.
 >
-> When the **From** field is configured to use an email address other than the current user's, either the **Send as** or **Send on behalf** permission must be properly [set](https://docs.microsoft.com/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) in advance. Otherwise, the exception **Unable to send email as \<from email account\> from the \<current user account\> account, please check the "Send as" permissions on the \<from email account\>** will be thrown at runtime.
+> When the **From** field is configured to use an email address other than the current user's, either the **Send as** or **Send on behalf** permission must be correctly [set](https://docs.microsoft.com/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) in advance. Otherwise, the following exception is thrown at runtime: "Unable to send email as \<from email account\> from the \<current user account\> account, please check the 'Send as' permissions on the \<from email account\>."
 
-You can configure the **From** field to return more than one email address. In this case, the first address from this list is used as an email sender address. 
+You can configure the **From** field to return more than one email address. In this case, the first address in the list is used as an email sender address.
 
-To specify email recipients, the **To** and **Cc** (optional) fields must be configured.
+To specify email recipients, you must configure the **To** and **Cc** (optional) fields.
 
 You can configure email addresses for ER in two ways. The configuration can be completed in the same way as the Print Management feature, or you can resolve an email address by using a direct reference to the ER configuration through a formula.
 
 ## Email address types
 
-If you select **Edit** next to the **From**, **To**, or **Cc** field in the **Destination settings** dialog box, the appropriate **Email from**, **Email to**, or **Email cc** dialog box appears and you can configure the email sender and email recipients. Select **Add**, and then select the type of email address to use. Two types are currently supported: **Print Management email** and **Configuration email**.
+If you select **Edit** next to the **From**, **To**, or **Cc** field in the **Destination settings** dialog box, the appropriate **Email from**, **Email to**, or **Email cc** dialog box appears. There, you can configure the email sender and email recipients. Select **Add**, and then select the type of email address to use. Two types are currently supported: **Print Management email** and **Configuration email**.
 
 [![Selecting the type of email address.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
