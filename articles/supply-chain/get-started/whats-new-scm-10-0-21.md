@@ -40,9 +40,9 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 | Inventory&nbsp;and&nbsp;logistics | [Sales quotation referenced data export policy](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | <!-- KFM: Confirm this item (Henrik). Documentation? --> |
 | Inventory&nbsp;and&nbsp;logistics | Sealed bidding <!-- KFM: Add RP link when available --> | <!-- KFM: Add doc link when ready. --> |
 | Inventory&nbsp;and&nbsp;logistics | [Deduction and catch-weight enhancements for Rebate management](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | <!-- KFM: Add links to new and updated topics for RM --> |
+| Inventory&nbsp;and&nbsp;logistics | [Warehouse app step instructions](dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | <!-- KFM: Release plan shows this feature coming out in September. Why do I see it in the July build? --> |
 | Inventory&nbsp;and&nbsp;logistics | [Work breaks and tracking updates for Landed cost](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/work-breaks-tracking-updates-landed-cost) | [Goods-in-transit processing](../landed-cost/in-transit-processing.md)<!-- KFM: Add second link to new LC topic --> |
 | Master planning | [Negative days for Planning Optimization](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/negative-days-support-planning-optimization) | [Delay tolerance (negative days)](../master-planning/planning-optimization/delay-tolerance.md) |
-
 
 ## Feature enhancements included in this release
 
@@ -57,7 +57,6 @@ The following table lists the feature enhancements included in this release. Eac
 | Warehouse management | Decouple putaway work from ASNs | This feature is required to send and receive advance shipping notices (ASNs) when you are running a warehouse management workload on a scale unit (as part of a distributed hybrid topology). It adds a new database table dedicated to storing information about putaway work. Previously, this information was stored in tables also used for the ASNs. |
 | Warehouse management | Slot mixed units | Allows the system to slot items into locations that include mixed units (such as both boxes and cases). For each slotting template line, this feature allows you to choose whether the line should slot items into mixed-unit or single-unit locations. |
 | Warehouse management | Use faster API for containers closing/reopening on packing station | When this preview feature is enabled, inventory transactions related to containers are created using a new light-weight process that improves performance of closing or reopening containers during manual packing-station processing. <!-- KFM: Marked as preview, so should have "(Preview)" in its name. --> |
-| Warehouse management | Warehouse app step instructions | <!-- KFM: Release plan shows this feature coming out in September. Why do I see it in the July build? --> |
 
 ## New and updated documentation resources
 
