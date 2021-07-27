@@ -54,21 +54,29 @@ The following two AppIds need to be authorized on the AAD tenant:
 
 Follow these steps to authorize the AppIds on the tenant (repeat the steps for both the applications). 
 
-1. Login to via AuzreAD powershell cmdlet.  
+1. Login to via AuzreAD powershell cmdlet using the tenant administrator account.
 
-    Connect-AzureAD  (Using Tenant Administrator account) 
+    ```powershell
+    Connect-AzureAD 
+    ```
 
 2. Check if Service Principal is not already installed.  
 
+    ```powershell
     Get-AzureADServicePrincipal -Filter "AppId eq '<AppId>'"  
+    ```
 
 3. Add Service Principal  
 
+    ```powershell
     New-AzureADServicePrincipal -AppId <AppId>  
+    ```
 
 4. Verify 
 
+    ```powershell
     $sp = Get-AzureADServicePrincipal -Filter "AppId eq '<AppId>'"  
+    ```
 
 #### Set the contributor workflow
 
