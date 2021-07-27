@@ -89,7 +89,7 @@ The signature is created and recorded in the channel database at the same time t
 1. Build a string that consists of a comma-separated list of the data fields.
 1. Add the previous signature for the same register and type of record.
 1. Calculate a hash code of the string.
-1. Calculate an asymmetric electroic signature for the resulting string by using a digital certificate.
+1. Calculate an asymmetric electronic signature for the resulting string by using a digital certificate.
 1. Do the base64url transformation for the resulting string.
 1. Store the string that is used for signing, the sequential number, the signature, the hash algorithm identification and the thumbprint of the certificate in a fiscal response record that is linked to the transaction or event.
 1. Transfer the fiscal response to the enterprise resource planning (ERP) system in Headquarters, together with the transaction or event.
@@ -419,9 +419,9 @@ Then, you need to configure a certificate profile for your certificates stored i
    - For a certificate stored locally, you must specify the thumbprint of the certificate.
 6. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
 7. On the **Settings** FastTab, you must specify the parameters for digital signatures:
-   - Certificate profile – Select the certificate profile that you configured on the previous step.
-   - Hash algorithm – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as SHA256.
-   - Activate health check – For more information about the Health Check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+   - **Certificate profile** – Select the certificate profile that you configured on the previous step.
+   - **Hash algorithm** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
+   - **Activate health check** – For more information about the Health Check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 Finally, on the **Commerce parameters** page, you must specify the parameters for digital signing on the Headquarters side:
 
