@@ -150,6 +150,7 @@ The selected slipstreamed version is a reviewed and validated version of FR that
 > [!NOTE]
 > The only way the downgrade scenario occurs is if we abort a true-up rollout due to a major regression. As soon as a fix version is available, it will be automatically applied.
 
+
 Slipstream process is fully automated and does not require any customer action. There are three topologies that consume slipstream in slightly different ways:
 
 - **On-Premise** deployments do not support slipstream and true-up.
