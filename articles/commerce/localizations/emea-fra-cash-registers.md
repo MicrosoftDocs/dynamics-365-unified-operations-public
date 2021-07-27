@@ -88,11 +88,17 @@ The signature is created and recorded in the channel database at the same time t
 1. Extract the data fields that must be signed from the record that is being signed.
 1. Build a string that consists of a comma-separated list of the data fields.
 1. Add the previous signature for the same register and type of record.
-1. Calculate a hash code of the string by using the SHA-x algorithm.
-1. Encrypt the resulting string by using a digital certificate.
+1. Calculate a hash code of the string.
+1. Calculate an asymmetric electroic signature for the resulting string by using a digital certificate.
 1. Do the base64url transformation for the resulting string.
 1. Store the string that is used for signing, the sequential number, the signature, the hash algorithm identification and the thumbprint of the certificate in a fiscal response record that is linked to the transaction or event.
 1. Transfer the fiscal response to the enterprise resource planning (ERP) system in Headquarters, together with the transaction or event.
+
+> [!NOTE]
+> The following hash functions are not acceptable: CRC16, CRC32, SHA-1, MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you will need to implement a customization.
+
+> [!NOTE]
+> You can use either a digital certificate issued by an accredited body or a self-signed certificate for digital signing. Only certificates with RSA 2048 bits or Elliptic Curve (ECDSA) 224 bits minimum private keys are acceptable. Commerce supports only RSA 2048 bits or longer keys. If you want to use an ECDSA key, you will need to implement a customization.
 
 #### Digital signing of sales transactions
 
@@ -383,6 +389,9 @@ To enable the fiscal registration process for France, follow these steps to set 
 
 You need to configure certificates to be used for digital signing of records on the Commerce channel side (that is, sales transactions and audit events) and on the Commerce Headquarters side (that is, period grand total journals and fiscal archives). The signing is done by using a digital certificate that is stored in a Microsoft Azure Key Vault storage. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature  enables configuring certificates that are stored in Key Vault and supports failover to offline when Key Vault or Headquarters are not available. The feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
 
+> [!NOTE]
+> You can use either a digital certificate issued by an accredited body or a self-signed certificate for digital signing. Only certificates with RSA 2048 bits or Elliptic Curve (ECDSA) 224 bits minimum private keys are acceptable. Commerce supports only RSA 2048 bits or longer keys. If you want to use an ECDSA key, you will need to implement a customization.
+
 The following steps must be completed before you can use a digital certificate stored in an Azure Key Vault storage:
 
 - The Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Commerce Scale Unit.
@@ -416,9 +425,12 @@ Then, you need to configure a certificate profile for your certificates stored i
 
 Finally, on the **Commerce parameters** page, you must specify the parameters for digital signing on the Headquarters side:
 
-- **Certificate** – Select the certificate that is store in Key Vault.
-- **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA1**.
+- **Certificate** – Select a certificate that is stored in Key Vault.
+- **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
 - **Encoding** – Specify the encoding of the signed data, such as **UTF-8**.
+
+> [!NOTE]
+> The following hash functions are not acceptable: CRC16, CRC32, SHA-1, MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you will need to implement a customization.
 
 ### Configure the archive export format
 
