@@ -29,10 +29,12 @@ Before you begin the steps provided in this topic, first install and setup the a
 
 In this step, you define each *data source* that you want to integrate with Inventory Visibility. Inventory Visibility supports the integration with various data sources, such as your point of sale (POS) system, Dynamics 365 Supply Chain Management and other external systems. By default, Dynamics 365 Supply Chain Management is set up as a default data source ("FnO") in the Inventory Visibility.
 
-To add a data source: <!-- KFM: Where are we adding this data source? CRM or IV? -->
+To add a data source:
 
-1. Open the the **On-hand configuration** page. <!-- KFM: How do I get to this page. Is this in SCM? -->
-1. Open the **Data Source** tab.
+1. Sign in to your Power Apps environment. <!-- KFM: Is this the right way to say this? Any more detail needed? -->
+1. Go to the **On-hand configuration** page and open the **Data Source** tab.
+    ![On hand configuration data source settings](media/inv-vis-data-source.png "On-hand configuration, data source settings")
+
 1. Select **New Data Source** to add a new data source.
 
 ## Step 2: Set up dimension mappings
@@ -65,11 +67,12 @@ If your dimension is not on the default dimensions list, and if you are using an
 
 To add dimension mappings:
 
-1. Go to the **Dimension Mappings** area. <!-- KFM: How do I get to this page. Is this in SCM? -->
-1. Select **Add** to add new dimension mappings.
+1. Sign in to your Power Apps environment. <!-- KFM: Is this the right way to say this? Any more detail needed? -->
+1. Go to the **On-hand configuration** page and open the **Data Source** tab.
+1. In the **Dimension Mappings** section, select **Add** to add new dimension mappings.
 1. In the **Dimension Name** field, specify the source dimension.
-1. From **To Base Dimension** drop down list, select the dimension within Inventory Visibility that you want to map.
-1. Select **Save** when you finish.
+1. From the **To Base Dimension** drop down list, select the dimension within Inventory Visibility that you want to map.
+1. Select **Save**.
 
 For example, if your data source includes a product color dimension, you can map it to base dimension "ColorID" to add a customer dimension "ProductColor" in the data source "exterchannel". It is mapped to the "ColorId" base dimension. <!-- KFM: This example isn't clear. Please revise. -->
 
@@ -96,23 +99,33 @@ Inventory Visibility has a list of default physical measures taken from the inve
 | QuotationReceipt | Quotation Receipt |
 | QuotationIssue | Quotation Issue |
 
-You don't need to recreate the default physical measures if the data source is Dynamics 365 Supply Chain Management. But for an external system data source, you can create new physical measures in the **Physical Measures** section. To do this, select **Add**, specify your source measure name, and save your change. <!-- KFM: Where is the **Physical Measures** section? -->
+You don't need to recreate the default physical measures if the data source is Dynamics 365 Supply Chain Management, but for external data sources, you can create new physical measures using the following steps:
 
-## Step 4: Define Product Hierarchy Index
+1. Sign in to your Power Apps environment. <!-- KFM: Is this the right way to say this? Any more detail needed? -->
+1. Go to the **On-hand configuration** page and open the **Data Source** tab.
+1. In the **Physical Measures** section, select **Add**, specify your source measure name, and save your changes.
+
+## Step 4: Define product hierarchy index
 
 By setting up aggregated dimension groups, you will be able to use Inventory Visibility to query inventory on-hand status. In Inventory Visibility, each dimension group is called **Index**. Each index corresponds to a set number. Based on how you will query on Inventory Visibility, you can decide which dimensions will be used to set up the indexing.
 
+To set up your product hierarchy index:
+
+1. Sign in to your Power Apps environment. <!-- KFM: Is this the right way to say this? Any more detail needed? -->
+1. Go to the **On-hand configuration** page and open the **Partition and index** tab.
+    ![On hand configuration  position and index settings](media/inv-vis-position-index.png "On-hand configuration, position and index settings")
+
+1. In the **Dimension Mappings** section, select **Add** to add new dimension mappings.
+1. A list of indexes is provided by default. To modify an existing index, select **Edit** or **Add** on the relevant existing index section. To create new index set, select **New index set**. Refer to the following table for the settings. Make the following settings for each row in each index set:
+    - **Set number** – This number is automatically generated. Dimensions belonging to the same group (index) will be grouped together and allocated with the same set number.
+    - **Dimension** – Select from the list of base dimensions in the lookup field.
+    - **Hierarchy** – This number is automatically generated. Hierarchy is used to define the supported dimension combinations that can be queried within a dimension group (index). For example, if you set up a dimension group with a hierarchy sequency of *Style*, *Color*, and *Size*, the system supports the result of three query groups. The first group is style only. The second group is combination of style and color. And the third group is the combination of style, color, and size. The other combinations are not supported.
+
 For more information, refer to the *Indexing* section of the [Install and configure the Inventory Visibility Add-in](inventory-visibility.md) topic.
 
-On the **On-hand configuration** page, open the **Product Hierarchy Index** tab to set up the indexes. A list of indexes is provided by default. To modify the existing indexes, select **Edit** or **Add** on the existing index section. To create new index set, select **New index set**. Refer to the following table for the settings. <!-- KFM: How do I get to the **On-hand configuration** page? -->
+### Example
 
-| Field | Value | Details |
-|---|---|---|
-| Set number | This number is automatically generated. | Dimensions belonging to the same group (index) will be grouped together and allocated with the same set number. |
-| Dimension | Select the specific dimension | Select from the list of base dimensions in the lookup field. |
-| Hierarchy | This number is automatically generated. | Hierarchy is used to define the supported dimension combinations that can be queried within a dimension group (index). For example, if you set up a dimension group with a hierarchy sequency of *Style*, *Color*, and *Size*, the system supports the result of three query groups. The first group is style only. The second group is combination of style and color. And the third group is the combination of style, color, and size. The other combinations are not supported. Please refer the following example for details. |
-
-Here is an example of how the hierarchy setting works. Below is a list of available inventories.
+This section provides an example of how the hierarchy works. The following table provides a list of available inventories for this example.
 
 | **Item** | **Style** | **Color** | **Size** | **Quantity** |
 |---|---|---|---|---|
@@ -162,18 +175,22 @@ You can use Inventory Visibility to query both on inventory physical measures an
 
 The configuration lets you define a set of modifiers to addition or subtraction group and get the aggregated output quantity. <!-- KFM: What do you mean by "addition or subtraction group"? Are those two groups, one named "addition" and one named "subtraction"? -->
 
-On the **On-hand Configuration page**, open the **Calculated Measure** tab. Then select **New Calculate Measure** to add the new customer calculated measure.
+1. Sign in to your Power Apps environment. <!-- KFM: Is this the right way to say this? Any more detail needed? -->
+1. Go to the **On-hand configuration** page and open the **Calculated Measure** tab.
+    ![On hand configuration, calculated measure settings](media/inv-vis-calc-measure.png "On hand configuration, calculated measure settings")
 
-| Field | Value |
-|---|---|
-| New calculated measure name | Enter the calculated measure name. |
-| Data source | The querying system is a data source to query on the custom calculated measure. <!-- KFM: This isn't clear. Please revise. --> |
-| Modifier data source | Enter the data source of the modifier. |
-| Modifier | Enter the modifier name. |
-| Modifier type | Select the modifier type (*Addition* or *Subtraction*). |
+1. Select **New Calculate Measure** to add the new calculated measure. Make settings as described in the following table. <!-- KFM: This table doesn't match the screen shot, nor does it match the following example -->
 
-Below is an example of the `MyCustomAvailableforReservation` custom calculated measurement. For more information on this example, please refer to the *Custom measurement* section of the [Install and configure the Inventory Visibility Add-in](inventory-visibility.md) topic.
+    | Field | Value |
+    |---|---|
+    | New calculated measure name | Enter the calculated measure name. |
+    | Data source | The querying system is a data source to query on the custom calculated measure. <!-- KFM: This isn't clear. Please revise. --> |
+    | Modifier data source | Enter the data source of the modifier. |
+    | Modifier | Enter the modifier name. |
+    | Modifier type | Select the modifier type (*Addition* or *Subtraction*). |
 
+Below is an example of the *MyCustomAvailableforReservation* custom calculated measurement. For more information on this example, please refer to the *Custom measurement* section of the [Install and configure the Inventory Visibility Add-in](inventory-visibility.md) topic.
+<!-- KFM: This table doesn't match the screen shot, nor does it match the settings described in the procedure -->
 | Calculated measure data source | Calculated measurers | Modifier data source | Modifier | Modifier type |
 |---|---|---|---|---|
 | CustomChannel | MyCustomAvailableforReservation | FnO | availphysical | Addition |
@@ -187,13 +204,18 @@ Below is an example of the `MyCustomAvailableforReservation` custom calculated m
 
 ## Step 6: Reservation configuration
 
+<!-- KFM: An intro would help here. What are we doing? Maybe also a link to [Inventory Visibility reservations](inventory-visibility-reservations.md) -->
+
 ### Step 6.1: Define the soft reservation mapping
 
-Before setting up this mapping, the physical measures, calculated measures, and their data sources must be defined on the **Data Source** tab and **Calculated Measure** tab. <!-- KFM: Where are these tabs? -->
+By setting up the mapping from the physical measure to the calculated measure, the Inventory Visibility service will automatically validate the reservation availability based on the physical measure.
 
-1. Go to **Configuration \> Soft reservation mappings**. <!-- KFM: Where are we here? -->
-1. Define the physical measure that serves as the soft reservation measure, for example *softreservordered*.
-1. Define the available for reservation (AFR)) calculated measure, which contains the AFR computation formula that you want to map to the physical measure. For example, *availforreserv* (available for reservation) to map to the previously defined physical measure *softreservordered* <!-- KFM: Incomplete sentence. Please revise. --> . Indicating whatever quantities with *softreservordered* inventory status will be available for reservation <!-- KFM: Incomplete sentence. Please revise. --> . The AFR computation formula is shown in the following table:
+Before setting up this mapping, the physical measures, calculated measures, and their data sources must be defined on the **Data source** and **Calculated measure** tabs of the **On-hand configuration** page in Power Apps (as described previously in this topic).
+
+To define the soft reservation mapping:
+
+1. Define the physical measure that serves as the soft reservation measure, for example *softreservordered*. <!-- KFM: How/where do I do that? -->
+1. On the **Calculated measure** tab of the **On-hand configuration** page, define the *available for reservation* (AFR) calculated measure, which contains the AFR computation formula that you want to map to the physical measure. For example, you might set up *availforreserv* (available for reservation) to map to the previously defined physical measure *softreservordered*, thereby enabling you to find which quantities with *softreservordered* inventory status will be available for reservation. The AFR computation formula is shown in the following table:
 
     | Modifier | Data Source | Measure |
     |---|---|---|
@@ -202,11 +224,12 @@ Before setting up this mapping, the physical measures, calculated measures, and 
     | Subtraction | pos | outbound |
     | Subtraction | iv | softreservordered |
 
-By setting up the mapping from the physical measure to the calculated measure, the Inventory Visibility service will automatically validate the reservation availability based on the physical measure. Refer to the following table for example mappings.
+1. Go to **Configuration \> Soft reservation mappings**. <!-- KFM: Where are we here? -->
+1. Set up the mapping from the physical measure to the calculated measure. <!-- KFM: How do I do that? --> Following the previous example, you could use the following settings to map *availforreserv* (available for reservation) to the previously defined physical measure *softreservordered*.
 
-| Physical measure data source | Physical measure | Available for reservation data source | Available for reservation calculated measure |
-|---|---|---|---|
-| iv | softreservordered | iv | availforreserv |
+    | Physical measure data source | Physical measure | Available for reservation data source | Available for reservation calculated measure |
+    |---|---|---|---|
+    | iv | softreservordered | iv | availforreserv |
 
 ### Step 6.2: Define the soft reservation hierarchy
 
@@ -218,11 +241,11 @@ The reservation hierarchy is allowed to be different from the on-hand index 
 
 Your system is set up with teh following reservation hierarchy.
 
-| Dimension  | Hierarchy  |
+| Dimension | Hierarchy |
 |---|---|
-| ColorId  | 1  |
-| SizeId  | 2  |
-| StyleId | 3  |
+| ColorId | 1 |
+| SizeId  | 2 |
+| StyleId | 3 |
 
 Given the reservation hierarchy example, you can do reservation in the following 4 dimension orders:
 
@@ -235,4 +258,4 @@ The dimension order should strictly follow the reservation hierarchy sequence on
 
 ## Step 7: Complete and update the configuration
 
-Once you have completed configuration, you must commit all these changes to Inventory Visibility. To do this, select **Update Configuration** at top right corner. <!-- KFM: Which page are we on here? -->
+Once you have completed configuration, you must commit all these changes to Inventory Visibility. To do this, select **Update Configuration** at top right corner of the **On-hand configuration** page in Power Apps.
