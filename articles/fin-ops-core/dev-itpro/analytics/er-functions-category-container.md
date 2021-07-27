@@ -5,7 +5,6 @@ title: List of ER functions in the container category
 description: This topic provides information about the container functions that are supported in Electronic reporting (ER).
 author: NickSelin
 ms.date: 12/14/2020
-ms.topic: article
 ms.prod: 
 ms.technology: 
 
