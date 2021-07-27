@@ -1572,7 +1572,13 @@
       - name: Archive inventory transactions
         href: inventory/archive-inventory-transactions.md
       - name: Inventory Visibility Add-in
-        href: inventory/inventory-visibility.md
+        items:
+        - name: Install and configure the Inventory Visibility Add-in
+          href: inventory/inventory-visibility.md
+        - name: Configure Inventory Visibility on Power Platforms
+          href: inventory/inventory-visibility-power-platfrom.md
+        - name: Inventory Visibility reservations
+          href: inventory/inventory-visibility-reservations.md
     - name: IoT Intelligence
       items:
         - name: IoT Intelligence home page
