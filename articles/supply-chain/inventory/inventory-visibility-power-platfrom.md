@@ -33,7 +33,7 @@ To add a data source:
 
 1. Sign in to your Power Apps environment. <!-- KFM: Is this the right way to say this? Any more detail needed? -->
 1. Go to the **On-hand configuration** page and open the **Data Source** tab.
-    ![On hand configuration data source settings](media/inv-vis-data-source.png "On-hand configuration, data source settings")
+    ![On hand configuration, data source settings](media/inv-vis-data-source.png "On-hand configuration, data source settings")
 
 1. Select **New Data Source** to add a new data source.
 
@@ -113,7 +113,7 @@ To set up your product hierarchy index:
 
 1. Sign in to your Power Apps environment. <!-- KFM: Is this the right way to say this? Any more detail needed? -->
 1. Go to the **On-hand configuration** page and open the **Partition and index** tab.
-    ![On hand configuration  position and index settings](media/inv-vis-position-index.png "On-hand configuration, position and index settings")
+    ![On hand configuration, position and index settings](media/inv-vis-position-index.png "On-hand configuration, position and index settings")
 
 1. In the **Dimension Mappings** section, select **Add** to add new dimension mappings.
 1. A list of indexes is provided by default. To modify an existing index, select **Edit** or **Add** on the relevant existing index section. To create new index set, select **New index set**. Refer to the following table for the settings. Make the following settings for each row in each index set:
