@@ -40,11 +40,11 @@ You can dispose of fixed assets for any of the following reasons:
 
 There are three ways to create a disposal transaction:
 
-  - **Leaving (sale)** – This transaction represents a fixed asset sale and can be entered in Accounts receivable or in the fixed assets journal. Several transactions are created in the ledger, based on the posting profile configuration. The status of the asset changes to **Written off (sale)**.
+  - **Disposal (sale)** – This transaction represents a fixed asset sale and can be entered in Accounts receivable or in the fixed assets journal. Several transactions are created in the ledger, based on the posting profile configuration. The status of the asset changes to **Written off (sale)**.
 
-  - **Leaving (dismantlement)** – This transaction is entered in the fixed assets journal. Transactions are created in the ledger, and the remaining value of the asset after it has been dismantled is transferred to the inventory. The status of the asset changes to **Written off (dismantlement)**.
+  - **Disposal (dismantlement)** – This transaction is entered in the fixed assets journal. Transactions are created in the ledger, and the remaining value of the asset after it has been dismantled is transferred to the inventory. The status of the asset changes to **Written off (dismantlement)**.
 
-  - **Fixed Assets write-off** – This transaction is entered in the fixed assets journal, and the write-off transactions for the booked value and booked depreciation for the asset are created. The status of the asset changes to **Written off**
+  - **Writing-off** – This transaction is entered in the fixed assets journal, and the write-off transactions for the booked value and booked depreciation for the asset are created. The status of the asset changes to **Written off**
 
 
 > [!NOTE]
@@ -113,7 +113,18 @@ However, if the invoice expenses are included in the order line that corresponds
 17. Click **Fixed assets (Russia)** \> **Common** \> **Fixed assets** to open **FA Value Models** page. The disposal date and cost of the fixed asset are displayed in the **Disposal date** and **Disposal cost** fields.
 18. Click **Balance** to open the **FA balances** page. The details are displayed in the **Leaving (sale)** and **Gain/Loss** fields.
 
+## Reverse disposal (sale) transactions
+1. Create a credit note for the sales order/ free text invoice where the fixed asset was related with.
+2. Post the invoice.  
+## Reverse write-off, disposal (dismantlement) transactions
+By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date. 
 
+1. 'Select **Fixed assets (Russia) > Fixed assets**. On the Action Pane, select **Value models**. Then, on the **FA value models** page, on the Action Pane, select **Transactions** to open the **FA transactions** page'. 
+2. Select a transaction, and then, on the Action Pane, select **Reverse transaction**. In the **Reverse transaction** dialog box, you can change the transaction reversal date as you require.
+3. Select **OK**. A transaction to reverse the original transaction is created on the **FA transactions** page.
+4. Select **Voucher** to open the **Voucher transactions** page, where you can view the transactions in the ledger.
+
+ 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
