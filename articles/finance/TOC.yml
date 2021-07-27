@@ -2838,6 +2838,8 @@
           href: localizations/emea-ltu-isaf.md
         - name: Standard Audit File for Tax (SAF-T) for Lithuania
           href: localizations/emea-ltu-saf-t.md
+        - name: Set up the transfer documents for goods movement inside a company
+          href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
       - name: Malaysia
         items:
         - name: Malaysia overview
