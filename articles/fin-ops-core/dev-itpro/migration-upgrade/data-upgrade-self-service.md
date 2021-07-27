@@ -93,13 +93,13 @@ Before you begin the replication process, note that the LCS environment will be 
 
 1. Run the **AX2012DataMigration.exe** application.
 
-    A console window will open, and it prompts you to login.
+    A console window will open, and it prompts you to sign in.
 
 2. Provide the credentials that are used to sign in to LCS.
 
 3. After you're successfully authenticated, in the console window, provide the **Project-Id** value and then the **Environment-Id** value.
 
-    To validate the given values, it prompts you to login. Provide the credentials that are used to sign in to LCS.
+    To validate the given values, it prompts you to sign in. Provide the credentials that are used to sign in to LCS.
 
     > [!NOTE]
     > You can find the **Project-Id** and **Environment-Id** values on the **Manage environment** page in LCS. You can also find the **Environment-Id** value on the **Environment details** page.
