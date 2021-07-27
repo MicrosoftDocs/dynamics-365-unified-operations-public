@@ -5,7 +5,6 @@ title: Base64StringToContainer ER function
 description: This topic provides information about how the Base64StringToContainer Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/14/2020
-ms.topic: article
 ms.prod: 
 ms.technology: 
 
@@ -31,7 +30,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-The `BASE64STRINGTOCONTAINER` [function](er-formula-language.md#functions) converts the specified input of the *String* type to a data item of the *[Container](er-functions-category-container.md)* type.
+The `BASE64STRINGTOCONTAINER` [function](er-formula-language.md#Functions) converts the specified input of the *String* type to a data item of the *[Container](er-functions-category-container.md)* type.
 
 ## Syntax
 

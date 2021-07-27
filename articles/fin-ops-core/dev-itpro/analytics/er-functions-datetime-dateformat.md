@@ -5,7 +5,6 @@ title: DATEFORMAT ER function
 description: This topic provides information about how the DATEFORMAT Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 01/04/2021
-ms.topic: article
 ms.prod: 
 ms.technology: 
 
