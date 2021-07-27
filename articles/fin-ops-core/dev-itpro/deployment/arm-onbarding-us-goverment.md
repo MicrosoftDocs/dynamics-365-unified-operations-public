@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Complete the Azure Resource Manager (ARM) onboarding process for Azure US Government 
+title: Complete the Azure Resource Manager (ARM) onboarding process for US government Lifecycle Services projects
 description: This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. This topic applies to Azure US Government projects.
 author: sericks007
 ms.date: 07/21/2021
@@ -13,7 +13,7 @@ ms.author: sasurana
 ms.search.validFrom: 2021-07-31
 ---
 
-# Complete the Azure Resource Manager (ARM) onboarding process for Azure US Government 
+# Complete the Azure Resource Manager (ARM) onboarding process for US government Lifecycle Services projects
 
 [!include [banner](../includes/banner.md)]
 
