@@ -101,5 +101,12 @@ You must complete the following tasks before you can post an update for a major 
 > [!NOTE]
 > When major repair work is done on a fixed asset, bonus depreciation can be applied to the asset on or after the transaction date of the major repair. You can create a transaction for a major repair of a fixed asset, and you can specify the bonus depreciation and bonus start date. The start date of the bonus depreciation can be the same as the transaction date of the major repair, or it can be the next depreciation date.
 
+## Reverse major repair transactions
+By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date. 
+
+1. 'Select **Fixed assets (Russia) > Fixed assets**. On the Action Pane, select **Value models**. Then, on the **FA value models** page, on the Action Pane, select **Transactions** to open the **FA transactions** page'. 
+2. Select a transaction, and then, on the Action Pane, select **Reverse transaction**. In the **Reverse transaction** dialog box, you can change the transaction reversal date as you require.
+3. Select **OK**. A transaction to reverse the original transaction is created on the **FA transactions** page.
+4. Select **Voucher** to open the **Voucher transactions** page, where you can view the transactions in the ledger.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
