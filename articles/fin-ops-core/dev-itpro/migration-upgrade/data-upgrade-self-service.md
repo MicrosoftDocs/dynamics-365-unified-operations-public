@@ -99,7 +99,7 @@ Before you begin the replication process, note that the LCS environment will be 
 
 3. After you're successfully authenticated, in the console window, provide the **Project-Id** value and then the **Environment-Id** value.
 
-    To validate the given values, it prompts you to sign in. Provide the credentials that are used to sign in to LCS.
+    To validate the given values, you will need to sign in using the credentials that are used to sign in to LCS.
 
     > [!NOTE]
     > You can find the **Project-Id** and **Environment-Id** values on the **Manage environment** page in LCS. You can also find the **Environment-Id** value on the **Environment details** page.
@@ -167,16 +167,15 @@ After the validation is successful, the application presents a set of menu optio
     > The replication will take some time to be completed. You can view the replication status by providing the **'rs'** option.
     >
     > If there are no functions to replicate, the publication won't be created.
-
-    > [!WARNING]
+    > 
     > Don't move on to next step until the **DataReplicationStatus** property for this step is shown as completed.
 
 7. **Cutover: Set up publication for non-primary key tables**
 
     This step creates two publications: one that is used to replicate non-primary key tables, and one that is used to replicate locked tables. 
     
-    > [!Note]
-    > If there are no locked tables, then publication will not be created for it.
+    > [!NOTE]
+    > If there are no locked tables, then publication will not be created.
 
     **Publication names:** AX\_PUB\_NoPKTable, AX\_PUB\_TABLE\_LockedTable
 
@@ -220,7 +219,7 @@ After the validation is successful, the application presents a set of menu optio
 
     This step changes the state of the LCS environment from **Replication in progress** to **Replication completed**.
 
-12. **Data Upgrade: Trigger upgrade**
+12. **Data upgrade: Trigger upgrade**
 
     This step triggers the data upgrade. When the action is successful, the state of the LCS environment changes from **Replication completed** to **Data upgrade in progress**.
 
@@ -235,11 +234,11 @@ After the validation is successful, the application presents a set of menu optio
     > [!NOTE]
     > Repeat this step until the data upgrade is successful.
 
-13. **Rollback Data Upgrade: Trigger Rollback**
+13. **Rollback data upgrade: Trigger rollback**
 
-    This step triggers the rollback of data upgrade. This rollbacks the data to the point before the upgrade is triggered and sets the LCS environment state to **Replicated** (this will take the environment from **Failed** to the **Replicated** state).
+    This step triggers the rollback of data upgrade. This rolls back the data to the point before the upgrade is triggered and sets the LCS environment state to **Replicated**. This will change the environment from **Failed** to the **Replicated** state.
     
-    At this point, we have only triggered the rollback. To know the rollback status, use the **'rbs'** option. To know more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section in this topic.
+    At this point, you have only triggered the rollback. To see the rollback status, use the **'rbs'** option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) later in this topic.
     
     If rollback is successful, the **'rbs'** option is shown as **AX 2012 upgrade topology (LCS) status: Replicated**.
 
