@@ -142,6 +142,22 @@ One of the components that's used to build financial reports is a reporting tree
 
 You can create an unlimited number of reporting trees to display your organization’s data in various ways. Each reporting tree can contain any combination of departments and summary units, but a report definition can link to only one reporting tree at a time. 
 
+## Financial Reporting version Slipstreaming/True-up
+Financial Reporting (FR) has a designated version of the component that is consumed by the customers as they are serviced, initiated downtime or have their environment in a Maintenance Mode. This process is known as **slipstreaming** or **true-up** since all customers are evened up to run the same version of Financial Reporting.
+
+The selected slipstreamed version is a reviewed and validated version of FR that is ready for production and compatible with any previous or future version of Dynamics 365 Finance.  For example, FR can be on the latest 10.0.19 build while the customer may still be on application version 10.0.16
+
+> [!NOTE]
+> The only way the downgrade scenario occurs is if we abort a true-up rollout due to a major regression. As soon as a fix version is available, it will be automatically applied.
+
+Slipstream process is fully automated and does not require any customer action. There are three topologies that consume slipstream in slightly different ways:
+
+- **On-Premise** deployments do not support slipstream and true-up.
+- **IaaS** topologies – slipstream logic is applied during any operation that would attempt to update Financial Reporting. It includes binary updates or broadcasts which contains binary updates.
+- **Self-Service** topology – any operation that requires FR downtime will apply the slipstream logic: 
+-- Binary updates or broadcasts that include binary updates;
+-- OS patching or other infrastructure downtime;
+-- AOT package deployments.
 
 ## Troubleshooting issues opening Report Designer
 There are a few common issues that can cause problems when you open Report Designer. Those issues and the steps to resolve them are as follows.
