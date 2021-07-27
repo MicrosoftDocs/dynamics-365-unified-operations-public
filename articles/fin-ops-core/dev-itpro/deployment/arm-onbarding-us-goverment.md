@@ -36,7 +36,7 @@ You can consider ARM onboarding a two-step procedure, where each step has its ow
 
 2.  Enable the Azure subscription to deploy ARM resources.
     1.  Enable the Azure connector, and add an LCS user.
-    2.  Optional: Upload the Management certificate.
+    2.  Upload the Management certificate.
     3.  Configure deployment settings.
 
 ### Authorize the LCS DSU to work on the Azure subscription
@@ -54,7 +54,7 @@ The following two AppIds need to be authorized on the AAD tenant:
 
 Follow these steps to authorize the AppIds on the tenant (repeat the steps for both the applications). 
 
-1. Login to via AuzreAD powershell cmdlet using the tenant administrator account.
+1. Login via AuzreAD powershell cmdlet using the tenant administrator account.
 
     ```powershell
     Connect-AzureAD 
