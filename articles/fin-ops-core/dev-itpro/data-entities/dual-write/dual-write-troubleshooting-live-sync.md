@@ -138,87 +138,110 @@ Customs needs to log on to CDS and FinOps separately and follow the instructions
 
 ## Issues with live sync after doing a full database copy
 
-After customers perform a full DB copy from one system to another, you may experience errors like the one below when you try to do DB operations.
-    "SecureConfig Organization (???) does not match actual CRM Organization (???)"
+After you perform a full DB copy from one system to another, you may experience errors like the one below when you try to do a database operation.
+    
+**Error** 
+"SecureConfig Organization (???) does not match actual CRM Organization (???)"
 
 **Cause**
 The error is thrown from dual-write runtime plug-in to ensure dual-write configuration set up in one system cannot be used in another.
 
 **Workaround**
-Customer should delete all the records in msdyn_dualwriteruntimeconfig entity after DB restore. Please refer https://msazure.visualstudio.com/OneAgile/_wiki/wikis/OneAgile.wiki/51113/DualWrite-Runtime-configuration-in-CDS-env  for the instructions on how to locate msdyn_dualwriteruntimeconfig entity using Advanced Find
+Customer should delete all the records in msdyn_dualwriteruntimeconfig entity after DB restore. Please follow the instructions on https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/relink-environments.
 
 
 ## Live sync issues due to wrong filter syntax on the dual write maps
 
-**Query Filter guidance on FinOps for Dual write**
-There are many instances when filters are not working as expected. Although broadly syntactically the query expression should follow these guidelines https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options  , there is however some difference in the query filter behavior. The filter expression is on an entity and not an indivisual data source of a query object. So the data from the entity sql view matters which is the underlying data model backing the entity.
+**Query Filter guidance on Finance and Operations apps for Dual write**
+Eventhough the query expression on the dual-write map filter is syntactically correct per guidelines [https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options], it may not work as expected. It is because the filter expression is on an entity and not an indivisual data source of a query object. So the data from the entity sql view matters which is the underlying data model backing the entity.
 
-Example:
+**Example**
 
 Query entity = PROJECTENTITY
+
 Query expression = (ParentProject == "")
-Expected result 
-Projects with no parent are filtered out. 
-However, the above filter does not work since the filter translates to a sql query which looks like
+
+Expected result: Projects with no parent are filtered out. 
+
+However, the above filter does not work since the filter translates to a sql query which looks like the following:
+
 SELECT T1.RECID,T1.MODIFIEDDATETIME,T1.RECVERSION,T1.RECID,T1.DIMENSION,T1.LOCATION,T1.PROJECTCONTROLLER,T1.PROJECTID,T1.PROJECTMANAGER,T1.REFERENCE,T1.SALESMANAGER,T1.SCHEDULED,T1.RECVERSION#8,T1.RECVERSION#7,T1.RECVERSION#6,T1.RECVERSION#5,T1.RECVERSION#4,T1.RECVERSION#3,T1.RECVERSION#2,T1.RECID#8,T1.RECID#7,T1.RECID#6,T1.RECID#5,T1.RECID#4,T1.RECID#3,T1.RECID#2,T1.PARTITION FROM PROJECTENTITY T1 WHERE (((((((((((PARTITION=5637144576) AND (DATAAREAID=N'usmf')) AND ((PARTITION#2=5637144576) OR (PARTITION#2 IS NULL))) AND ((PARTITION#3=5637144576) OR (PARTITION#3 IS NULL))) AND ((PARTITION#4=5637144576) OR (PARTITION#4 IS NULL))) AND ((PARTITION#5=5637144576) OR (PARTITION#5 IS NULL))) AND ((PARTITION#6=5637144576) OR (PARTITION#6 IS NULL))) AND ((PARTITION#7=5637144576) OR (PARTITION#7 IS NULL))) AND ((PARTITION#8=5637144576) OR (PARTITION#8 IS NULL))) AND ((DATAAREAID#8=N'usmf') OR (DATAAREAID#8 IS NULL))) AND (PARENTPROJECT='')) ORDER BY T1.PROJECTID
 
-On the other hand the actual entity query when we run select on the sql returns following result. The parentProject field evaluates to null which is not the same as empty string. Which is the reason why the query filter does not return any valid result. 
+Actual result: The parentProject field evaluates to null which is not the same as empty string. 
+
+This is the reason why the query filter does not return any valid result. 
 
 **Solution**
 
-To circumvent the issue the entity would need additional computed column which can be added in extension model, backed by a logic to handle nulls to empty string SysComputedColumn::if(SysComputedColumn::isNullExpression(ParentProject), SysComputedColumn::returnLiteral(""), fieldName);
+To circumvent the issue the entity would need additional computed column which can be added in extension model, backed by a logic to handle nulls to empty string.
+
+SysComputedColumn::if(SysComputedColumn::isNullExpression(ParentProject), SysComputedColumn::returnLiteral(""), fieldName);
 
 Use the filter on the new computed column instead of the default column.
 
-Evaluating the filter
+**Evaluating the filter**
 
-To evaluate the filter in a dev scenario you can use following x++ code to validate the results. Following needs to be run as a standalone job in AX. This script can be used to evaluate different kinds of filters applicable for an entity before using them on Dual write maps.
+To evaluate the filter in a development environment, you can use following x++ code to validate the results. Following needs to be run as a standalone job in AX. This script can be used to evaluate different kinds of filters applicable for an entity before using them on dual-write maps.
+
 var entityName = "PROJECTENTITY";
+
 var filterExpression = '(ParentProject == "")';
+
 Query query = new Query();
+
 query.literals(NoYes::Yes); 
+
 QueryBuildDataSource qbd = query.addDataSource(tablename2id(entityName));
-qbd.addRange(fieldname2id(qbd.table(),identifierStr(RecVersion))).
-value(filterExpression);
+
+qbd.addRange(fieldname2id(qbd.table(),identifierStr(RecVersion))).value(filterExpression);
+
 qbd.addSelectionField(fieldname2id(qbd.table(),identifierStr(RecId)));
+
 QueryRun qRun = new QueryRun(query);
+
 // This provides the actual sql statement to execute
+
 var actualSqlStatement = query.getSQLStatement();
+
 while(qRun.next())
+
 {
+
     var rec = qRun.get(tableName2Id(entityName));
+    
 }
+
 The sql statement can be run against the DB to evaluate discrepancies if any from the expected result.
 
-## Data from FinOps does not sync to CDS
+## Data from Finance and Operations apps does not sync to Dataverse
 
-Scenario is a live sync from FnO to CRM. In some processes in FnO the customer reports an issue with partial or no data being synced to CRM from FnO. Most reported issues point that there has been a valid change in FnO.
+When you encounter issues with live sync where only a partial data is synchronized from Finance and Operations apps to Dataverse or data is not synchronized at all, then follow these steps. Note: You must make sure to fix these issues during development itself.
 
-Pre-requisites that need to be checked as part of this TSG
+**Pre-requisites**
 
-•	  Changes must be in a transaction
+•	 Make sure your custom changes are written with in a single transaction scope. 
 
-•	  doUpdates,donserts, recordset operations (insert/update) and records where skipBusinessEvents(true) is marked will not be handled by business events and subsequently DW.
+•	 doinsert(), doUpdate(), recordset() operations and records where skipBusinessEvents(true) is marked are not handled by business events and dual-write framework. So if your code is inside these functions, then dual-write will not be triggered.
 
-•	  Business events must be registered for the data source which is mapped. There can be data sources which are outer join and marked as readonly in FnO. These data sources are not generally tracked.
+•	  Business events must be registered for the data source which is mapped. There can be data sources which are outer join and marked as readonly in Finance and Operations apps. These data sources are not generally tracked.
 
-•	  Changes will be triggered only if the modifications are on the mapped fields. Unmapped field modification will not trigger DW
+•	  Changes will be triggered only if the modifications are on the mapped fields. Unmapped field modification will not trigger dual-write.
 
 •	  Filter evaluation should provide valid result.
 
-Troubleshooting steps
+**Troubleshooting steps**
 
-Step 1 Check for information from BusinessEventsDefinition and DualWriteProjectConfigurationEntity.
+Step 1: Check for information on BusinessEventsDefinition and DualWriteProjectConfigurationEntity entities.
 
-•	  Check field mappings on the DW project. If the field is not mapped from FnO to CRM then that field will not be tracked e.g. In the case below the field description is tracked from crm but not from Fno. So any changes to that field wont be tracked.
+Step 2: Check field mappings on the dual-write admin page. If the field is not mapped from Finance and Operations apps to Dataverse, then that field will not be tracked. Say for example, in the following screenshot, the field "Description" is tracked from Dataverse but not from Finance and Operations apps. So any changes to that field inside Finance and Operations apps will not be tracked.
 
  ![Live sync troubleshooting](media/live-sync-troubleshooting-1.png)
     
-Check if the data source is tracked in business events definition. From screenshot below any field from the DefaultDimensionDAVs and underlying table wont be tracked for changes.
+Step 3: Check if the data source is tracked in business events definition. From screenshot below any field from the DefaultDimensionDAVs and underlying table wont be tracked for changes.
     
  ![Live sync troubleshooting](media/live-sync-troubleshooting-2.png)
     
-The same is reflected in the businesseventsdefinition table The only table tracked is custgroup table as the fields mapped are from this data source. 
+Step 4: The mapped table fields reflect in the businesseventsdefinition table as shown below. In case you don't see the field you are looking for in the query result, then it will not be triggerd by dual-write.
     
  ![Live sync troubleshooting](media/live-sync-troubleshooting-3.png)
      
