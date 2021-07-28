@@ -66,12 +66,11 @@ The following bug fixes are included in this release.
 | Issue number | Issue |  Description |
 | --- | --- | --- |
 | ## Payroll address validation failing for Ready to Pay - (600422) | | |
-| ## Tiles that were added to Employee Self Service workspace are now missing, and tiles can no longer be added to it. - (602272) | | |
-| ## Half-day definition selection field enabled for full day leave requests - (600711) | | |
-| ## ACCRUAL RATE UNITS DISPLAYING HRS INSTEAD OF DAYS  - (602208) | | |
 | ## Ceridian payroll integration resets to incremental refresh and needs to always be full refresh. - (601226) | | |
 | ## Scale out VM count in Europe Clusters - (601016) | | |
-
+| 602272 | Tiles that were added to Employee Self Service workspace are now missing, and tiles can no longer be added to it | We have fixed the personalization issue for Employee self service. New tiles can be added to the view and any existing personalization will be visible to users |
+| 600711 | Half-day definition selection field enabled for full day leave requests | This issue is now fixed and half day definition field will be enabled only when employees select a leave type with half day definition enabled and hlaf day as the amount value selected |
+| 602208 | Accural rate units displaying hours instead of days | This issue is now fixed and Time off form will show the correct leave unit (hours or days) for Accruate rate column |
 
 ## In preview
 
