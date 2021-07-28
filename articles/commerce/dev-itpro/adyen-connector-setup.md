@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up Dynamics 365 Payment Connector for Adyen
-description: This topic describes how to sign up for and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
+title: Dynamics 365 Payment Connector for Adyen setup
+description: This topic describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 ms.date: 07/28/2021
 ms.topic: article
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Dynamics 365 Payment Connector for Adyen
+# Dynamics 365 Payment Connector for Adyen setup
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to sign up for and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
+This topic describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 
 ## Sign up with Adyen
 
@@ -51,7 +51,7 @@ The following prerequisites must be completed before payments can be configured 
 To process payments across point of sale (POS) terminals, a call center, or e-Commerce, you must configure a new default payment processor for new credit cards. Follow these steps to configure a default payment processor.
 
 1. Sign in to Headquarters, and go to **Accounts receivable \> Payments setup \> Payment services**.
-2. On the Action Pane, select **New**, and then, on the **Setup** tab, enter the following information.
+1. On the Action Pane, select **New**, and then, on the **Setup** tab, enter the following information.
 
     | Field | Description | Sample value |
     |---|---|---|
@@ -61,7 +61,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Default processor for credit cards | Specify whether this payment processor should be the default processor that's used for new credit cards. | Yes |
     | Bypass payment processor for zero transactions | Specify whether this payment processor should be skipped for transactions that have a 0 (zero) amount. | Yes |
 
-3. On the **Payment service account** tab, enter the following information.
+1. On the **Payment service account** tab, enter the following information.
 
     | Field | Description | Required | Automatically set | Sample value |
     |---|---|:-:|:-:|---|
@@ -87,8 +87,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
-4. On the **Card verification value** tab, leave **Prompt for card verification value** and **Allow blank card verification value** set to **No**. 
-
+1. On the **Card verification value** tab, leave **Prompt for card verification value** and **Allow blank card verification value** set to **No**. 
 
 ### POS payment terminal
 
@@ -111,8 +110,8 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
 #### Set up a Dynamics 365 POS hardware profile
 
 1. Sign in to Headquarters, and go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
-2. Select the hardware profile to add the Dynamics 365 Payment Connector for Adyen for.
-3. Follow the steps in the [EFT service](#eft-service) and [PIN pad](#pin-pad) sections that follow.
+1. Select the hardware profile to add the Dynamics 365 Payment Connector for Adyen for.
+1. Follow the steps in the [EFT service](#eft-service) and [PIN pad](#pin-pad) sections that follow.
 
 #### EFT service
 
@@ -121,8 +120,8 @@ The Adyen payment connector can be configured to communicate with devices via th
 ##### EFT service for local network communication
 
 1. On the **EFT service** FastTab, in the **EFT Service** field, select **Payment Connector**.
-2. On the **Connectors** tab, select **New**, and then, in the **Connector** field, select **Dynamics 365 Payment Connector for Adyen**. Make sure that the value in the **Sequence number** field is lower than the value for all other connectors.
-3. In the **Connector properties** section, enter the following information.
+1. On the **Connectors** tab, select **New**, and then, in the **Connector** field, select **Dynamics 365 Payment Connector for Adyen**. Make sure that the value in the **Sequence number** field is lower than the value for all other connectors.
+1. In the **Connector properties** section, enter the following information.
 
     | Field | Description | Required | Automatically set | Sample value |
     |---|---|:-:|:-:|---|
@@ -148,14 +147,13 @@ The Adyen payment connector can be configured to communicate with devices via th
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
-4. On the Action Pane, select **Save**.
-
+1. On the Action Pane, select **Save**.
 
 ##### EFT service for cloud communication
 
 1. On the **EFT service** FastTab, in the **EFT Service** field, select **Payment Connector**.
-2. On the **Connectors** tab, select **New**, and then in the **Connector** field, select **Dynamics 365 Payment Connector for Adyen**. Make sure that the value in the **Sequence number** field is lower than the value for all other connectors.
-3. In the **Connector properties** section, enter the following information.
+1. On the **Connectors** tab, select **New**, and then in the **Connector** field, select **Dynamics 365 Payment Connector for Adyen**. Make sure that the value in the **Sequence number** field is lower than the value for all other connectors.
+1. In the **Connector properties** section, enter the following information.
 
     | Field | Description | Required | Automatically set | Sample value |
     |---|---|:-:|:-:|---|
@@ -181,13 +179,12 @@ The Adyen payment connector can be configured to communicate with devices via th
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
-4. On the Action Pane, select **Save**.
+1. On the Action Pane, select **Save**.
 
-
-##### PIN pad
+##### Configure the PIN pad
 
 1. On the **PIN pad** FastTab, in the **PIN pad** field, select **Network**.
-2. In the **Device name** field, enter **MicrosoftAdyenDeviceV001**.
+1. In the **Device name** field, enter **MicrosoftAdyenDeviceV001**.
 
 #### <a id="set-up-a-dynamics-365-register"></a>Set up a Dynamics 365 register
 
@@ -198,15 +195,15 @@ Payment terminals may not be used by multiple hardware stations. If a payment te
 
 ##### Configure the payment terminal IP address and EFT POS register number
 
-1. Sign in to Headquarters, and go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
-2. Select the register to link to the Adyen payment terminal.
-3. On the **POS Registers** page, on the **General** FastTab, in the **EFT** section, in the **EFT POS register number** field, enter a unique number. 
-4. In the **Profiles** section, in the **Hardware profile** field, select the hardware profile that you configured earlier.
-5. Save your changes.
-6. On the Action Pane, on the **Register** tab, in the **Hardware** group, select **Configure IP addresses**.
-7a. **If using the "Local" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the IP address of the terminal in the following format: `https://<IP address>:8443/nexo/<POIID>`. Here, **\<IP address\>** and **\<POIID\>** are the values that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `https://192.168.1.3:8443/nexo/MX925-123456789`. The values in this URL are case-sensitive.
-7b. **If using the "Cloud" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the **POIID** value that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `MX925-123456789`. The values in this field are case-sensitive.
-8. If the payment terminal includes an onboard printer and you want to print receipts from the processor using that printer, enter **123** in the **Port** field that is separate from the **IP address** field in the **PIN pad** FastTab.
+1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
+1. Select the register to link to the Adyen payment terminal.
+1. On the **POS Registers** page, on the **General** FastTab, in the **EFT** section, in the **EFT POS register number** field, enter a unique number. 
+1. In the **Profiles** section, in the **Hardware profile** field, select the hardware profile that you configured earlier.
+1. Save your changes.
+1. On the Action Pane, on the **Register** tab, in the **Hardware** group, select **Configure IP addresses**.
+    1. **If using the "Local" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the IP address of the terminal in the following format: `https://<IP address>:8443/nexo/<POIID>`. Here, **\<IP address\>** and **\<POIID\>** are the values that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `https://192.168.1.3:8443/nexo/MX925-123456789`. The values in this URL are case-sensitive.
+    1. **If using the "Cloud" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the **POIID** value that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `MX925-123456789`. The values in this field are case-sensitive.
+1. If the payment terminal includes an onboard printer and you want to print receipts from the processor using that printer, enter **123** in the **Port** field that is separate from the **IP address** field in the **PIN pad** FastTab.
 
 
 #### <a id="update-the-modern-pos-or-iis-hardware-station-configuration"></a>Update the Modern POS or IIS Hardware Station configuration
@@ -214,7 +211,7 @@ Payment terminals may not be used by multiple hardware stations. If a payment te
 If you're packaging your own version of Modern POS by using the Retail SDK, you must follow these steps only one time in the SDK code before the installer is packaged. Otherwise, you must follow these steps after the standard Modern POS or IIS Hardware Station is installed.
 
 1. Open the **dllhost.exe.config** file (for Modern POS) or the **web.config** file (for IIS Hardware Station).
-2. Update the **PreloadedComposition** section as shown here, to switch from the legacy payment device adapter to the standard payment device adapter.
+1. Update the **PreloadedComposition** section as shown here, to switch from the legacy payment device adapter to the standard payment device adapter.
 
     ``` xml
     <PreloadedComposition>
@@ -226,19 +223,21 @@ If you're packaging your own version of Modern POS by using the Retail SDK, you 
         </composition>
     </PreloadedComposition>
     ```
-3. Update the **appSettings** variable **"PrintReceiptsOnCardDeclineOrVoid"** value to **True** to print decline or void responses from the processor. 
+1. Update the **appSettings** variable **"PrintReceiptsOnCardDeclineOrVoid"** value to **True** to print decline or void responses from the processor. 
 
-### Call center
+### Configure the connector for call center payments
 
 To configure the Dynamics 365 Payment Connector for Adyen for call center payments, follow the instructions in the [Set up a processor for new credit cards](#set-up-a-processor-for-new-credit-cards) section earlier in this topic.
 
-### e-Commerce
+### Configure the connector in Commerce headquarters
 
-1. Sign in to Headquarters, and go to **Retail and Commerce \> Channels \> Online stores**.
-2. Select the online store to add the Dynamics 365 Payment Connector for Adyen.
-3. On the **Online store** page, on the **Payment accounts** FastTab, select **Add**.
-4. In the **Connectors** field, select **Dynamics 365 Payment Connector for Adyen**.
-5. Enter the following additional information.
+To configure the connector in Commerce headquarters, follow these steps.
+
+1. Go to **Retail and Commerce \> Channels \> Online stores**.
+1. Select the online store to add the Dynamics 365 Payment Connector for Adyen.
+1. On the **Online store** page, on the **Payment accounts** FastTab, select **Add**.
+1. In the **Connectors** field, select **Dynamics 365 Payment Connector for Adyen**.
+1. Enter the following additional information.
 
     | Field | Description | Required | Automatically set | Sample value |
     |---|---|:-:|:-:|---|
@@ -264,9 +263,15 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses which do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
-6. On the Action Pane, select **Save**.
+1. On the Action Pane, select **Save**.
 
 ## Additional resources
+
+[Dynamics 365 Payment Connector for Adyen overview](adyen-connector.md)
+
+[Dynamics 365 Payment Connector for Adyen FAQ](adyen-connector-faq.md)
+
+[Dynamics 365 Payment Connector for Adyen troubleshooting](adyen-troubleshoot.md)
 
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
