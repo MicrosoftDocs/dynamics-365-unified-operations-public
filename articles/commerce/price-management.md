@@ -218,20 +218,21 @@ When you set sales prices in Dynamics 365, you don't specify whether the price v
 
 If you work with both inclusive and exclusive types of tax, it's very important that you set prices correctly, because the total amount that the customer pays will change if the **Price includes sales tax** setting on the channel is changed.
 
-## Differences between retail pricing and non-retail pricing
+## Differences between commerce pricing and non-commerce pricing
 
 A single pricing engine is used to calculate prices across all channels: Call center, Retail store, and Online stores. This helps in enabling the unified commerce scenarios.
 
 Pricing is designed to work with retail entities instead of non-retail entities. Specifically, it's designed to set prices by store, not by warehouse.
 
-The pricing engine **does not support** the following pricing features:
+The commerce pricing engine **does not support** the following pricing features:
 
 - Setting prices by Site or Site and Warehouse storage dimensions is not supported. If you only specify Site dimension on the trade agreements, then the pricing engine will ignore the Site and apply the trade agreement to all sites. If you specify both Site and Warehouse, then the behavior is undefined/untested because it’s expected that retailers use the store price groups to control the prices for each store/warehouse.
 - Attribute-based pricing is not supported.
 - Vendor discount pass-through is not supported.
+- The generic currency feature is not supported i.e. even if a trade agreement has the "Include generic currency" toggle turned on, still this trade agreement will only be considered valid for the currency defined on the trade agreement.
 - The standard Supply Chain Management pricing engine supports the pricing calculation based on the "Requested ship date" and "Requested receipt date" along with the current date. However, retail pricing currently does not support these values. The reason is that for B2C scenarios customers do not expect the requested delivery date to affect the item price. In some cases, retailers have both B2B and B2C operations. For B2B operations it is common to change prices based on the delivery dates. These retailers can use Supply Chain Management pricing for their B2B business and retail pricing for their B2C business. Retail pricing kicks in only if the application user is added as a call center user, so the retailers can assign certain users who will work with the Supply Chain Management pricing and assign a few that will work with the Retail pricing, that is, these users should be added as a call center users. Additionally, the **Use today's date for calculating prices** property in the **Commerce parameters > pricing and discounts > Miscellaneous** section must be turned on. This way they can keep the using accounts receivable parameter value for Requested ship date or Requested receipt date for Supply Chain Management pricing, but the retail pricing will keep using the today's date for pricing calculation.
 
-In addition, **only** the pricing engine supports the following pricing features:
+In addition, **only** the commerce pricing engine supports the following pricing features:
 
 - The price is based on product dimensions, in order from the most-specific variant price to the least-specific variant price to the product master price. A price that is set by using two product dimensions (for example, Color and Size) is used before a price that is set by using only one product dimension (for example, Size).
 - The same price group can be used to control pricing and discounts.
