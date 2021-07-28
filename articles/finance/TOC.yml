@@ -1498,6 +1498,8 @@
               href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing
               href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
+            - name: Create a new Electronic invoicing feature
+              href: localizations/e-invoicing-create-new-e-invoicing-feature.md
             - name: Get started with Electronic Invoicing for Brazil
               href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing for Egypt
