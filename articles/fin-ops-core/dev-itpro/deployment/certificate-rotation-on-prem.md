@@ -36,6 +36,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 > 
 > Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
 
+> [!CAUTION]
 > The certificate rotation process should not be carried out on Service Fabric clusters running 7.0.x and 7.1.x. 
 >
 > Upgrade your Service Fabric cluster to 7.2.x or later before attempting certificate rotation.
@@ -66,7 +67,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     > [!NOTE]
     > The AD CS scripts need to run on a domain controller, or a Windows Server computer with Remote Server Admin Tools installed.
     > The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later. 
-
+    >
     > Self-signed certificates should never be used in production environments. If you're using publicly trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
 
     ```powershell
@@ -125,7 +126,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 3. Run the following command to save the configuration file to C:\\Temp\\ClusterConfig.json. (Make sure that the C:\\Temp path exists.)
 
     ```powershell
-    Get-ServiceFabricClusterConfiguration >C:\Temp\ClusterConfig.json
+    Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
     ```	
 4. Open the **Clusterconfig.json** file for editing and find the following section. If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you continue.
 

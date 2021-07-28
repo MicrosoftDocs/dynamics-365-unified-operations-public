@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 8
 This topic lists the system requirements for the current version of Microsoft Dynamics 365 Finance + Operations (on-premises) deployments. Before you install, when this step is appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
 > [!IMPORTANT]
-> Dynamics 365 Finance + Operations (on-premises) deployments are not supported on any public cloud infrastructure, including Azure.
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) services.
 
 ## Network requirements
 
@@ -79,15 +79,11 @@ Finance + Operations doesn't require internet connectivity from user workstation
 </tr>
 <tr>
 <td><strong>Server</strong></td>
-<td>The AOS or Microsoft Azure Service Fabric tier must be able to communicate with LCS. The on-premises browser-based client doesn't require internet access.</td>
+<td>The orchestrator node types must be able to communicate with LCS for deployment and servicing operations. The on-premises browser-based client doesn't require internet access.</td>
 </tr>
 <tr>
 <td><strong>Telemetry</strong></td>
 <td>Telemetry data might be lost if there are long interruptions in connectivity. Interruptions in connectivity to LCS don't affect the on-premises application functionality.</td>
-</tr>
-<tr>
-<td><strong>LCS</strong></td>
-<td>Connectivity to LCS is required for deployment, code deployment, and servicing operations.</td>
 </tr>
 </tbody>
 </table>
@@ -245,42 +241,36 @@ The following tables list the number of processors and the amount of random-acce
 
 When you set up the virtual hosts for an environment, see the guidelines in [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) and [Describing a service fabric cluster](/azure/service-fabric/service-fabric-cluster-resource-manager-cluster-description). Each virtual host should have enough cores for the infrastructure that is being sized. Multiple advanced configurations are possible, where SQL Server resides on physical hardware but everything else is virtualized. If SQL Server is virtualized, the disk subsystem should be a fast SAN or the equivalent. In all cases, make sure that the basic setup of the virtual host is highly available and redundant. In all cases, when virtualization is used, no VM snapshots should be taken.
 
+> [!IMPORTANT]
+> Do not use Dynamic Memory for your virtual hosts.
+
 Finance + Operations falls under Microsoft's standard support policy regarding operation on non-Microsoft virtualization platforms – specifically VMWare. For more information, read [Support policy for Microsoft software](https://support.microsoft.com/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw). In short, we support our products in this environment, but if we are asked to investigate an issue, we may ask the customer to first reproduce the problem without the virtualization platform or on the Microsoft virtualization platform.
 
 ## Software requirements for all server computers
 
 The following software must be present on a computer before any Finance + Operations components can be installed:
 
-- The Microsoft .NET Framework. See [Deployment setup](../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md#setup) for version information.
+- The Microsoft .NET Framework. See [Deployment setup](../../dev-itpro/deployment/setup-deploy-on-premises-pu41.md#prerequisites) for version information.
 - Service Fabric
 
-For more information, see [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+For more information on Service Fabric, see [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
-## Supported server operating systems
+> [!NOTE]
+> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
 
-The following table lists the server operating systems that are supported.
+### Software requirements for database servers
 
-| Operating system                                     | Notes |
-|------------------------------------------------------|-------|
-| Microsoft Windows Server 2016 Datacenter or Standard | These requirements are for the database and the Service Fabric cluster that hosts AOS.<p>Only en-US OS installations are supported.</p> |
+For the hardware requirements for SQL Server, see [Hardware and Software Requirements for Installing SQL Server](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
 
-## Software requirements for database servers
-
-- Only 64-bit versions of SQL Server 2016 are supported.
+- Only 64-bit versions of SQL Server are supported.
 - Only **SQL\_Latin1\_General\_CP1\_CI\_AS** is valid for the server and database collation. For more information about how to select a collation for a SQL Server database, see the [SQL Server documentation](/sql/sql-server/sql-server-technical-documentation).
 - In a production environment, we recommend that you install the latest cumulative update (CU) for the version of SQL Server that you're using.
 
-The following table lists the SQL Server versions that are supported for the databases. For more information, see the minimum hardware requirements for [SQL Server](https://www.microsoft.com/sql-server/sql-server-2016).
-
-| Requirement                                                      | Notes |
-|------------------------------------------------------------------|-------|
-| Microsoft SQL Server 2016 Standard Edition or Enterprise Edition | For the hardware requirements for SQL Server 2016, see [Hardware and Software Requirements for Installing SQL Server 2016](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
-
-## Software requirements for Application Object Server (AOS)
+### Software requirements for Application Object Server (AOS)
 
 - SQL Server Integration Services (SSIS)
 
-## Software requirements for Reporting Server (BI)
+### Software requirements for Reporting Server (BI)
 
 - SQL Server Reporting Services (SSRS)
 
@@ -294,9 +284,9 @@ Users can access Finance + Operations by using the most recent versions of these
 - Internet Explorer 11 (deprecated, not recommended)
 
 > [!NOTE]
-> For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, especially Microsoft Edge. 
+> For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, specifically Microsoft Edge. 
 
-### Internal Explorer deprecation 
+### Internet Explorer deprecation 
 Support for Internet Explorer 11 was deprecated in December 2020, with end of support for the browser occurring in August 2021. For more information, see [Internet Explorer deprecation announcement](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps).
 
 Starting in version 10.0.20, users accessing Finance and Operations apps with Internal Explorer (IE) will start seeing notifications about the end of support for that browser. Before August 17, 2021, IE users will see an informational message that IE support is soon ending. After that date, IE users will see a warning that support has officially ended. Organizations are encouraged to keep these notifications on unless IE is mandated for your users, in which case you can choose to suppress these notifications by disabling the **Internet Explorer end-of-support notifications** feature and relying on internal processes for migrating your user base to Microsoft Edge or another modern browser. 
@@ -304,13 +294,14 @@ Starting in version 10.0.20, users accessing Finance and Operations apps with In
 The current target for blocking IE usage within Finance and Operations app is April 2022. To prepare organizations and users for that block, starting in January 2022, IE users will start seeing a non-dismissible error message indicating that IE support will soon be blocked. This error message is **not** controlled by the **Internet Explorer end-of-support notifications** feature, and customers will need to contact Microsoft Support if this message needs to be suppressed for their organization.    
 
 ### Special considerations
+
 - To enable Task Recorder to capture screenshots and include them in Microsoft Word documents that are generated, you must install a pre-release Chrome extension.
 - The Workflow Editor and Report Designer for Financial reporting are started as ClickOnce applications. They require a 64-bit-compatible operating system. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications out of the box. If you're using Chrome, you must install a ClickOnce extension, such as [Meta4](https://chrome.google.com/webstore/detail/meta4-clickonce-launcher/jkncabbipkgbconhaajbapbhokpbgkdc) to use ClickOnce applications. If you use Chrome in incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.
 - To preview PDF files, we recommend that you use browsers such as Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
 
 ## Software requirements for Active Directory Federation Services
 
-Active Directory Federation Services (AD FS) on Windows Server 2016 is required.
+Active Directory Federation Services (AD FS) on Windows Server is required.
 
 The domain controller must be Windows Server 2012 R2 or later, and the domain functional level must be 2012 R2 or more. For more information about domain functional levels, see the following pages:
 
