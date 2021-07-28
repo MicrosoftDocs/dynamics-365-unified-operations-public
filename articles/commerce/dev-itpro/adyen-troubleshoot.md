@@ -100,6 +100,12 @@ When payment transactions aren't successfully processed through the Adyen paymen
 
 ## Additional resources
 
+[Dynamics 365 Payment Connector for Adyen](adyen-connector.md)
+
+[Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md)
+
+[Dynamics 365 Payment Connector for Adyen FAQ](adyen-connector-faq.md)
+
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
