@@ -360,6 +360,37 @@ export interface IGeoLocation {
 ```
 Geolocation information that is generated will be saved in the **requestContext.geoLocation** object.
 
+## Segmentation Provider Connector
+A third-party segmentation provider contains the business logic to fetch and analyzes raw data source attributes (example: age, city, zip code, country, ...) and reducing them to one or more simple target segments that can be used within your e-commerce site.  Multiple segmentation providers can be registered at the same time.
+
+### Segments
+Segment is the act of creating simplified categories or groupings of data source attributes. For example: age, country, zipcode, city and etc.
+
+#### Segment schma
+|Element|Details|
+|--|--|
+|Id|unique id in the scope of current segmentation provider|
+|Name|segment name which will be shown on UI|
+|Type|Integer, string, enum, bool|
+|enum|Only applied to enum type, the value of the enum|
+|enumName|Only applied to enum type, the name of the enum (Showing on the UI)|
+|maxValue|Only applied to Integer type, the max value allowed for the integer segment.|
+|minValue|Only applied to integer type, the min value allowed for the integer segment.|
+
+Note: enum and enumName will be mapping based on the array index.  enumName will be used for showing in UI and enum will be the value for the specific enumName.
+For example :
+enum : ["windows", "ios"]
+enumName: ["Windows", "IOS"]
+
+### Register third-party segmentation provider connector.
+Customer can register their 3rd party segmentation connector by creating the definition file and provider file under src/connecors/<connector_name>/
+
+
+
+
+
+
+
 ## Additional resources
 
 [Online channel extensibility overview](overview.md)
