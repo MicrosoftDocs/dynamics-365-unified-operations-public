@@ -3511,6 +3511,8 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: Can't update a load line because the released quantity would be negative
+          href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
         - name: Canceled product receipts don't update transactions status to registered
           href: troubleshooting/warehousing/canceled-product-receipts.md
         - name: Decimal rounding of the physical updating quantity is incorrect
