@@ -90,12 +90,12 @@ The following example shows the contents of the **connector.settings.json** file
 
 | Element | Details |
 | -- | -- |
-| **experimentation** | This object contains all the information that is required to start and enable your experimentation connector. |
-| **name** | This setting specifies the name of the experimentation connector that is used. You can find the name of the connector in the connector's definition file. The type of the connector must be **experimentationConnector**. |
-| **config** | This section allows for any configuration object that the connector requires for initialization and to start to communicate with the third-party service. To learn what information is required, look in the **configSchema** section of the connector's definition file or in the connector's README file. |
-| **cacheConfig** | You can specify the timings that are used when some experimentation-related entities are cached. In this section, **ttlInSeconds** refers to the amount of time that an entity can remain in the cache before it's considered stale, and **ttrInSeconds** refers to the amount of time before an entity is refreshed. The connector's README file should include a list of recommended cache timings. |
-| **experimentation** | This setting controls the cache timings for getting the list of available experiments that are configured in your third-party provider during **getExperiments()**. The default TTL (time to live) is 1,800 seconds, and the default TTR (time to refresh) is 60 seconds. |
-| **experimentationDataFile** | This setting controls the cache timings for having the configuration passed down to the client during **getConfigForClientSideInit()**. The default TTL is 1,800 seconds, and the default TTR is 60 seconds. |
+| experimentation | This object contains all the information that is required to start and enable your experimentation connector. |
+| name | This setting specifies the name of the experimentation connector that is used. You can find the name of the connector in the connector's definition file. The type of the connector must be **experimentationConnector**. |
+| config | This section allows for any configuration object that the connector requires for initialization and to start to communicate with the third-party service. To learn what information is required, look in the **configSchema** section of the connector's definition file or in the connector's README file. |
+| cacheConfig | You can specify the timings that are used when some experimentation-related entities are cached. In this section, **ttlInSeconds** refers to the amount of time that an entity can remain in the cache before it's considered stale, and **ttrInSeconds** refers to the amount of time before an entity is refreshed. The connector's README file should include a list of recommended cache timings. |
+| experimentation | This setting controls the cache timings for getting the list of available experiments that are configured in your third-party provider during **getExperiments()**. The default TTL (time to live) is 1,800 seconds, and the default TTR (time to refresh) is 60 seconds. |
+| experimentationDataFile | This setting controls the cache timings for having the configuration passed down to the client during **getConfigForClientSideInit()**. The default TTL is 1,800 seconds, and the default TTR is 60 seconds. |
 
 
 ## Experimentation connector
@@ -136,10 +136,10 @@ The following example shows the contents of a connector definition file.
 
 | Element | Details |
 | -- | -- |
-| **$type** | The type of connector. Because the definition file in the preceding example is for an experimentation connector, the type is **experimentationConnector**. |
-| **name** | The name of the connector. This name must be unique across all connectors. |
-| **description** | The description of the connector. |
-| **configSchema** | The configuration schema. A configuration schema lets you provide a JSON schema that validates the configuration that is given to you at application startup, so that your connector can be initialized correctly. For example, when you initialize your connector, you need the **projectId** value to make an API call that is required for communication with the third-party experimentation service. You can specify this value in the preceding JSON file to ensure that the configuration that is provided matches your connector's requirements. |
+| $type | The type of connector. Because the definition file in the preceding example is for an experimentation connector, the type is **experimentationConnector**. |
+| name | The name of the connector. This name must be unique across all connectors. |
+| description | The description of the connector. |
+| configSchema | The configuration schema. A configuration schema lets you provide a JSON schema that validates the configuration that is given to you at application startup, so that your connector can be initialized correctly. For example, when you initialize your connector, you need the **projectId** value to make an API call that is required for communication with the third-party experimentation service. You can specify this value in the preceding JSON file to ensure that the configuration that is provided matches your connector's requirements. |
 
 ### Provider file
 
@@ -314,10 +314,10 @@ The connector definition file is used to register and provide configuration meta
 
 | Element | Details |
 | -- | -- |
-| **$type** | The type of connector. Because the definition file in the preceding example is for a geoLookup connector, the type is **geoLookupConnector**. |
-| **name** | The name of the connector. This name must be unique across all connectors. |
-| **description** | The description of the connector. |
-| **configSchema** | The configuration schema. A configuration schema lets you provide a JSON schema that validates the configuration that is given to you at application startup, so that your connector can be initialized correctly. For example, when you initialize your connector, you need the **projectId** value to make an API call that is required for communication with the third-party service. You can specify this value in the preceding JSON file to ensure that the configuration that is provided matches your connector's requirements. |
+| $type | The type of connector. Because the definition file in the preceding example is for a geoLookup connector, the type is **geoLookupConnector**. |
+| name | The name of the connector. This name must be unique across all connectors. |
+| description | The description of the connector. |
+| configSchema | The configuration schema. A configuration schema lets you provide a JSON schema that validates the configuration that is given to you at application startup, so that your connector can be initialized correctly. For example, when you initialize your connector, you need the **projectId** value to make an API call that is required for communication with the third-party service. You can specify this value in the preceding JSON file to ensure that the configuration that is provided matches your connector's requirements. |
 
 #### Provider file
 
@@ -380,15 +380,15 @@ The following example shows a geoLookup connector being enabled in the **connect
 }
 ```
 
-#### Connector.settings.json definition file schema
+#### Connector settings file schema
 
 | Element | Details |
 | -- | -- |
-| **geoLookup** | This object contains all the information that is required to start and enable a geoLookup connector. |
-| **name** | This setting specifies the name of the geoLookup connector. You can find the name of the connector in the geoLookup connector's definition file. The connector type must be **geoLookupConnector**. |
-| **config** | This section allows for any configuration object that the connector requires for initialization and communication with the third-party service. To learn what information is required, look in the **configSchema** section of the geoLookup connector's definition file, or in the connector's README file. Change the **apiKey** value to a value that is provided by the service provider. |
-| **cacheConfig** | Here, you can specify the timings that are used when geolocation entities are cached. The **ttlInSeconds** value specifies the amount of time, in seconds, that an entity can remain in the cache before it's considered stale. The **ttrInSeconds** value specifies the amount of time, in seconds, before an entity is refreshed. The geoLookup connector's README file should include a list of recommended cache timings. |
-| **geoLookup** | This setting controls the cache timings for getting geolocation information that is generated by the third-party service provider. The default TTL is 120 seconds. |
+| geoLookup | This object contains all the information that is required to start and enable a geoLookup connector. |
+| name | This setting specifies the name of the geoLookup connector. You can find the name of the connector in the geoLookup connector's definition file. The connector type must be **geoLookupConnector**. |
+| config | This section allows for any configuration object that the connector requires for initialization and communication with the third-party service. To learn what information is required, look in the **configSchema** section of the geoLookup connector's definition file, or in the connector's README file. Change the **apiKey** value to a value that is provided by the service provider. |
+| cacheConfig | Here, you can specify the timings that are used when geolocation entities are cached. The **ttlInSeconds** value specifies the amount of time, in seconds, that an entity can remain in the cache before it's considered stale. The **ttrInSeconds** value specifies the amount of time, in seconds, before an entity is refreshed. The geoLookup connector's README file should include a list of recommended cache timings. |
+| geoLookup | This setting controls the cache timings for getting geolocation information that is generated by the third-party service provider. The default TTL is 120 seconds. |
 
 
 ## Segmentation provider connector
@@ -448,11 +448,13 @@ The connector definition file is used to register and provide configuration meta
 
 #### Connector definition file schema
 
-- **$type** – The type of connector. Because the definition file in the preceding example is for a geoLookup connector, the type is **segmentationConnector**.
-- **name** – The name of the connector. This name must be unique across all connectors.
-- **id** – The id of the connector. This id must be unique across all connectors.
-- **description** – The description of the connector.
-- **configSchema** – The configuration schema. A configuration schema lets you provide a JSON schema that validates the configuration that is given to you at application startup, so that your connector can be initialized correctly. For example, when you initialize your connector, you need the **projectId** value to make an API call that is required for communication with the third-party service. You can specify this value in the preceding JSON file to ensure that the configuration that is provided matches your connector's requirements.
+|Element|Details|
+|--|--|
+|$type|The type of connector. Because the definition file in the preceding example is for a geoLookup connector, the type is **segmentationConnector**.|
+|name|The name of the connector. This name must be unique across all connectors.|
+|id|The id of the connector. This id must be unique across all connectors.|
+|description|The description of the connector.|
+|configSchema|The configuration schema. A configuration schema lets you provide a JSON schema that validates the configuration that is given to you at application startup, so that your connector can be initialized correctly. For example, when you initialize your connector, you need the **projectId** value to make an API call that is required for communication with the third-party service. You can specify this value in the preceding JSON file to ensure that the configuration that is provided matches your connector's requirements.|
 
 #### Segmentations schema
 |Element|Details|
@@ -533,11 +535,11 @@ The following example shows a segmentation provider connector being enabled in t
 
 #### Connector.settings.json definition file schema
 
-| Element | Details |
-| -- | -- |
-| **segmentation** | This object contains all the information that is required to start and enable a segmentation connector. |
-| **id** | This setting specifies the id of the segmentation connector. You can find the id of the connector in the segmentation connector's definition file. |
-| **config** | This section allows for any configuration object that the connector requires for initialization and communication with the third-party service. To learn what information is required, look in the **configSchema** section of the geoLookup connector's definition file, or in the connector's README file. Change the **apiKey** value to a value that is provided by the service provider. |
+|Element|Details|
+|--|--|
+|segmentation|This object contains all the information that is required to start and enable a segmentation connector. |
+|id|This setting specifies the id of the segmentation connector. You can find the id of the connector in the segmentation connector's definition file. |
+|config|This section allows for any configuration object that the connector requires for initialization and communication with the third-party service. To learn what information is required, look in the **configSchema** section of the geoLookup connector's definition file, or in the connector's README file. Change the **apiKey** value to a value that is provided by the service provider. |
 
 
 ## Additional resources
