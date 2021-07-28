@@ -4,7 +4,7 @@
 title: Calculate tax on prices when Prices include taxes is enabled
 description: This topic provides information about the functionality for calculating tax on prices when the Prices include taxes option is enabled.
 author: epodkolz
-ms.date: 07/21/2021
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,8 @@ ms.dyn365.ops.version: AX 10.0.21
 
 # Calculate tax on prices when Prices include taxes is enabled
 
+[!include [banner](../includes/banner.md)]
+
 This topic provides information about how the **Exclude from base amount calculation** parameter of a tax code is used.
 
 You can use the **Exclude from base amount calculation** parameter to calculate tax amounts in a flexible way. When this parameter is enabled for a tax code, if prices include sales tax, the Tax calculation service calculates tax amounts for the marked sales tax code as if it wasn't included in the base amount.
@@ -50,3 +52,5 @@ If a sales order or a purchase order is created where the **Prices include sales
 
 > [!NOTE]
 > In this example, tax code TaxCodeA is configured as **By Net amount**, and tax code TaxCodeB is configured as **By Gross amount**. If tax code TaxCodeB is configured as **By Net Amount** instead, its tax base amount equals 100, and its tax amount equals 10.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
