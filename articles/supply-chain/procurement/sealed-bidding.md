@@ -91,6 +91,7 @@ To set expiration time applied to the key generated for each new bid, do the fol
 
 1. Go to **Procurement and sourcing parameters \> Setup \> Procurement and sourcing parameters**.
 1. Open the **Request for quotation** tab.
+1. In the **Days offset** field, enter the number of days the request for quotation period should last. The number of days entered here are added to the system date when a request for quotation is created, and results in the default expiration date for the request for quotation.
 1. In the **Encryption key expiration day offset** field, enter the number of days that each encryption key should be valid after it's issued. Once the encryption key expires, nobody will be able to view, edit, or unseal the sealed bid that uses it.
 
 > [!TIP]
