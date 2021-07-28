@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Simplified customer address format in Commerce for Russia
+title: Simplified customer address format in Commerce POS for Russia
 description: This topic coverss the simplified Russian address format and how to enable it in Microsoft Dynamics 365 Commerce point of sale (POS) for Russia.
 author: akviklis
 ms.date: 08/02/2021
@@ -25,7 +25,7 @@ ms.search.validFrom: 2021-8-02
 ms.dyn365.ops.version: 10.0.21
 
 ---
-# Simplified customer address format in Commerce for Russia
+# Simplified customer address format in Commerce POS for Russia
 
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
