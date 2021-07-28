@@ -121,6 +121,7 @@ The following Russia-specific POS features are enabled after the Commerce locali
 - Processing of loyalty point redemptions as price discounts in retail transactions, along with related fiscal printer functionality.
 - Posting and control of electronic fiscal documents in Commerce headquarters.
 
+
 ## Additional resources
 
 [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md)
