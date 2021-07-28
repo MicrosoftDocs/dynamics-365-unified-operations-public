@@ -108,6 +108,7 @@ You can also receive goods by creating an arrival journal. You can create an arr
 1. Open the voyage, container, or folio.
 1. On the Action Pane, on the **Manage** tab, in the **Functions** group, select **Create arrival journal**.
 1. In the **Create arrival journal** dialog box, set the following values:
+
     - **Initialize quantity** – Set this option to *Yes* to set the quantity from the in-transit quantity. If this option is set to *No*, no default quantity is set from the goods-in-transit lines.
     - **Create from goods in transit** - Set this option to *Yes* to take quantities from the selected in-transit lines for the selected voyage, container, or folio.
     - **Create from order lines** – Set this option to *Yes* to set the default quantity in the arrival journal from the purchase order lines. The default quantity in the arrival journal can be set in this way only if the quantity on the purchase order line matches the quantity on the goods-in-transit order.
@@ -144,7 +145,7 @@ Landed cost adds a new work order type that is named *Goods in transit* to the *
 
 ### Work templates
 
-This section describes features that the Landed cost module adds to work templates.
+This section describes features that the **Landed cost** module adds to work templates.
 
 #### Goods in transit work order type
 
@@ -152,11 +153,11 @@ Landed cost adds a new work order type that is named *Goods in transit* to the *
 
 #### Work header breaks
 
-You can configure work templates with a work order type of *Goods in transit* to split work headers by doing either of the following while working on the **Work templates** page:
+Work templates that have a work order type of *Goods in transit* can be configured to split work headers. On the **Work templates** page, follow one of these steps:
 
-- Set work header maximums on the **General** tab for the template. This works the same as for purchase order work templates (see also [purchase order work templates](/dynamicsax-2012/appuser-itpro/create-a-work-template)).
-- Use the **Work header breaks** button to define when the system should create new work headers based on fields used for sorting. For example, to create a work header for each *Container ID*, select **Edit query** on the Action Pane, and then add the *Container ID* field to the **Sorting** tab of the query editor. Fields that are added to the **Sorting** tab are available for selection as *grouping fields*. To set your grouping fields, select **Work header breaks** on the Action Pane, and then, for each field that you want to use as a grouping field, select the check box in the **Group by this field** column.
+- On the **General** tab for the template, set work header maximums. These maximums work in the same way that they work for purchase order work templates. (For more information, see [purchase order work templates](/dynamicsax-2012/appuser-itpro/create-a-work-template).)
+- Use the **Work header breaks** button to define when the system should create new work headers, based on fields that are used for sorting. For example, to create a work header for each container ID, select **Edit query** on the Action Pane, and then add the **Container ID** field to the **Sorting** tab of the query editor. Fields that are added to the **Sorting** tab are available for selection as *grouping fields*. To set up grouping fields, select **Work header breaks** on the Action Pane, and then, for each field that you want to use as a grouping field, select the checkbox in the **Group by this field** column.
 
-Landed cost [creates an over transaction](over-under-transactions.md) when the registered quantity exceeds the original order quantity. When completing a work header, the system will update the status of the inventory transactions for the principle order quantity, but will first update the quantity linked to the over transaction once the principle is completely purchased.
+Landed cost [creates an over transaction](over-under-transactions.md) if the registered quantity exceeds the original order quantity. When a work header is completed, the system updates the status of the inventory transactions for the principle order quantity. However, it first updates the quantity that is linked to the over transaction after the principle is completely purchased.
 
-If you cancel a work header for an over transaction that has already been registered, the over transaction will first be reduced by the canceled quantity. Once the over transaction has been reduced to a quantity of zero, the record will be removed and any additional quantities will be unregistered against the principle order quantity.
+If you cancel a work header for an over transaction that has already been registered, the over transaction is first reduced by the canceled quantity. After the over transaction is reduced to a quantity of 0 (zero), the record is removed, and any additional quantities are unregistered against the principle order quantity.
