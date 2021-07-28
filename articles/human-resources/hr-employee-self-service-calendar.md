@@ -52,7 +52,7 @@ Managers can also access the team calendar from **Pending time off requests from
 
 Users in the Absence manager role can view time-off requests in their calendar. Follow these steps to access the leave calendar.
 
-1. In the **Employee Self-Service** workspace, select **Absence manager** and then **Absence manager calendar**.
+1. In the **Employee Self-Service** workspace, select **Leave management** and then **Absence manager calendar**.
 
 2. In the **Date** field, enter the desired dates.
 
