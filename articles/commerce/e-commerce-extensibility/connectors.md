@@ -88,12 +88,14 @@ The following example shows the contents of the **connector.settings.json** file
 
 #### Connector settings file schema
 
-- **experimentation** – This object contains all the information that is required to start and enable your experimentation connector.
-- **name** – This setting specifies the name of the experimentation connector that is used. You can find the name of the connector in the connector's definition file. The type of the connector must be **experimentationConnector**.
-- **config** – This section allows for any configuration object that the connector requires for initialization and to start to communicate with the third-party service. To learn what information is required, look in the **configSchema** section of the connector's definition file or in the connector's README file.
-- **cacheConfig** – You can specify the timings that are used when some experimentation-related entities are cached. In this section, **ttlInSeconds** refers to the amount of time that an entity can remain in the cache before it's considered stale, and **ttrInSeconds** refers to the amount of time before an entity is refreshed. The connector's README file should include a list of recommended cache timings.
-- **experimentation** – This setting controls the cache timings for getting the list of available experiments that are configured in your third-party provider during **getExperiments()**. The default TTL (time to live) is 1,800 seconds, and the default TTR (time to refresh) is 60 seconds.
-- **experimentationDataFile** – This setting controls the cache timings for having the configuration passed down to the client during **getConfigForClientSideInit()**. The default TTL is 1,800 seconds, and the default TTR is 60 seconds.
+| Element | Details |
+| -- | -- |
+| **experimentation** | This object contains all the information that is required to start and enable your experimentation connector. |
+| **name** | This setting specifies the name of the experimentation connector that is used. You can find the name of the connector in the connector's definition file. The type of the connector must be **experimentationConnector**. |
+| **config** | This section allows for any configuration object that the connector requires for initialization and to start to communicate with the third-party service. To learn what information is required, look in the **configSchema** section of the connector's definition file or in the connector's README file. |
+| **cacheConfig** | You can specify the timings that are used when some experimentation-related entities are cached. In this section, **ttlInSeconds** refers to the amount of time that an entity can remain in the cache before it's considered stale, and **ttrInSeconds** refers to the amount of time before an entity is refreshed. The connector's README file should include a list of recommended cache timings. |
+| **experimentation** | This setting controls the cache timings for getting the list of available experiments that are configured in your third-party provider during **getExperiments()**. The default TTL (time to live) is 1,800 seconds, and the default TTR (time to refresh) is 60 seconds. |
+| **experimentationDataFile** | This setting controls the cache timings for having the configuration passed down to the client during **getConfigForClientSideInit()**. The default TTL is 1,800 seconds, and the default TTR is 60 seconds. |
 
 ## Experimentation connector
 
