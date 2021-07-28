@@ -79,6 +79,7 @@ Commerce functionality for Russia includes a sample integration of the point of 
 | Processing of loyalty point redemptions as price discounts in retail transactions, along with related fiscal printer functionality |  | X |  |
 | Payment integration |  | X |  |
 | E-commerce capabilities for Russia |  | X |  |
+| Cash collection |  | X |  |
 | Gift card policies |  |  | X |
 | Pricing enhancements |  |  | X |
 | Labeling enhancements |  |  | X |
