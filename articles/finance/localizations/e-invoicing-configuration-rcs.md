@@ -61,7 +61,21 @@ The following table shows the electronic invoicing features that are generally a
 
 | Country/region | Feature name                         | Business document |
 |----------------|--------------------------------------|-------------------|
+| Austria        | Austrian electronic invoices (AT)    | Sales invoices and project invoices |
+| Belgium        | Belgian electronic invoice (BE)      | Sales invoices and project invoices |
+| Brazil         | Brazilian NF-e (BR)                  | Fiscal document model 55, correction letters, cancellations, and discards |
+| Brazil         | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
+| Denmark        | Danish electronic invoice (DK)       | Sales invoices and project invoices |
 | Egypt          | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
+| Estonia        | Estonian electronic invoice (EE)     | Sales invoices and project invoices |
+| Finland        | Finnish electronic invoice (FI)      | Sales invoices and project invoices |
+| France         | French electronic invoice (FR)       | Sales invoices and project invoices |
+| Germany        | German electronic invoice (DE)       | Sales invoices and project invoices |
+| Italy          | FatturaPA (IT)                       | Sales invoices and project invoices |
+| Netherlands    | Dutch electronic invoice (NL)        | Sales invoices and project invoices |
+| Norway         | Norwegian electronic invoice (NO)    | Sales invoices and project invoices |
+| Spain          | Spanish electronic invoice (ES)      | Sales invoices and project invoices |
+| Europe         | PEPPOL electronic invoice            | PEPPOL sales invoices and project invoices |
 
 #### Preview features
 
@@ -69,21 +83,7 @@ The following table shows the electronic invoicing features that are currently i
 
 | Country/region | Feature name                         | Business document |
 |----------------|--------------------------------------|-------------------|
-| Austria        | Austrian electronic invoices (AT)    | Sales invoices and project invoices |
-| Belgium        | Belgian electronic invoice (BE)      | Sales invoices and project invoices |
-| Brazil         | Brazilian NF-e (BR)                  | Fiscal document model 55, correction letters, cancellations, and discards |
-| Brazil         | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
-| Denmark        | Danish electronic invoice (DK)       | Sales invoices and project invoices |
-| Estonia        | Estonian electronic invoice (EE)     | Sales invoices and project invoices |
-| Finland        | Finnish electronic invoice (FI)      | Sales invoices and project invoices |
-| France         | French electronic invoice (FR)       | Sales invoices and project invoices |
-| Germany        | German electronic invoice (DE)       | Sales invoices and project invoices |
-| Italy          | FatturaPA (IT)                       | Sales invoices and project invoices |
 | Mexico         | Mexican CFDI (MX)                    | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
-| Netherlands    | Dutch electronic invoice (NL)        | Sales invoices and project invoices |
-| Norway         | Norwegian electronic invoice (NO)    | Sales invoices and project invoices |
-| Spain          | Spanish electronic invoice (ES)      | Sales invoices and project invoices |
-| Europe         | PEPPOL electronic invoice            | PEPPOL sales invoices and project invoices |
 
 ### Configurable components of electronic invoicing features
 
@@ -209,10 +209,10 @@ The following table lists the available actions, and whether they are currently 
 | Action                                        | Description                                                                  | Availability         |
 |-----------------------------------------------|------------------------------------------------------------------------------|----------------------|
 | Transform document                            | Run Electronic Reporting format to transform the document.                   | Generally available  |
-| Sign xml document                             | Sign xml documents with digital signature.                                   | In preview           |
+| Sign xml document                             | Sign xml documents with digital signature.                                   | Generally available  |
 | Sign json document for Egyptian Tax Authority | Sign json documents with digital signature for Egyptian Tax Authority.       | Generally available  |
 | Integrate with Egyptian ETA service           | Communicate with Egyptian Tax Authority.                                     | Generally available  |
-| Call Brazilian SEFAZ Service                  | Integrate with Brazilian SEFAZ service for fiscal document submission.       | In preview           |
+| Call Brazilian SEFAZ Service                  | Integrate with Brazilian SEFAZ service for fiscal document submission.       | Generally available  |
 | Call Mexican PAC Service                      | Integrate with Mexican PAC service for CFDI submission.                      | In preview           |
 | Process response                              | Analyze the response received from the web service call.                     | Generally available  |
 | Use MS Power Automate                         | Integrate with flow built in Microsoft Power Automate.                       | In preview           |
