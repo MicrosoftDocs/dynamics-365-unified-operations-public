@@ -47,7 +47,7 @@ This format is applicable for Russia only and supports the following limited set
 
 Additional information such as the district, building, building complement, apartment, group of houses, group of flats, and county may be entered as a string by a cashier in the Street field. 
 
-On POS side in Russia it is allowed to create and edit only simplified addresses. Such simplified address cannot be created in Commerce headquarters.
+On POS side in Russia it is allowed to create and edit only simplified addresses. Such simplified address can then be viewed and edited in Commerce headquarters, but it cannot be created and the simplified flag is disabled for changes here.
 
 The full (that is non-simplified) Russian addresses created in Commerce headquarters according to the address format setup can be viewed in POS but not edited. The warning dialog blocks any changes if a cashier tries to edit such non-simplified Russian addresses.
 
