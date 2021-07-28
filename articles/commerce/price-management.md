@@ -4,7 +4,7 @@
 title: Retail sales price management
 description: This topic describes the concepts for creating and managing sales prices in Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 05/28/2020
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -241,7 +241,7 @@ In addition, **only** the Commerce pricing engine supports the following pricing
 
 Price is one of the most important factors that controls the buying decisions of many customers, and many customers compare prices on various sites before they make a purchase. To help ensure that they provide competitive prices, retailers carefully watch their competitors and often run promotions. To help these retailers attract customers, it's very important that product search, the browse feature, lists, and the product details page show the most accurate prices.
 
-In an upcoming release of Commerce, the **GetActivePrices** application programming interface (API) will return prices that include simple discounts (for example, single-line discounts that don't depend on other items in the cart). In this way, the prices that are shown are close to the actual amount that customers will pay for items. This API will include all the types of simple discounts: affiliation-based, loyalty-based, catalog-based, and channel-based discounts. Additionally, the API will return the names and validity information for the applied discounts, so that retailers can provide a more detailed description of the price and create a sense of urgency if the discount's validity will expire soon.
+The **GetActivePrices** application programming interface (API) in Commerce returns prices that include simple discounts (for example, single-line discounts that don't depend on other items in the cart). In this way, the prices that are shown are close to the actual amount that customers will pay for items. This API insluces all the types of simple discounts: affiliation-based, loyalty-based, catalog-based, and channel-based discounts. Additionally, the API returns the names and validity information for the applied discounts, so that retailers can provide a more detailed description of the price and create a sense of urgency if the discount's validity will expire soon.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
