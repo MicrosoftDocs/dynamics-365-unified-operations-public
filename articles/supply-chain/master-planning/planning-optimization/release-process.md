@@ -1,6 +1,6 @@
 ---
-title: Release process for Planning Optimization
-description: This topic provides information about the release process for Planning Optimization.
+title: Planning Optimization release process and release history
+description: This topic provides information about the release process and release history for Planning Optimization.
 author: crytt
 ms.date: 7/28/2021
 ms.topic: article
@@ -12,7 +12,7 @@ ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
 ---
 
-# Release process for Planning Optimization
+# Planning Optimization release process and release history
 
 [!include [banner](../../includes/banner.md)]
 
@@ -25,8 +25,6 @@ While Planning Optimization is updating, master planning may run a bit slower th
 Environments that use Planning Optimization automatically get the latest release. No user action is needed&mdash;the service is updated automatically. However, no breaking-change functionalities are ever pushed to environments automatically. If a change is considered to be a breaking change, it will be turned off by default, and must be explicitly enabled using [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Therefore, these changes will not appear on environments until you choose to enable them.
 
 Because notifications are not displayed when Planning Optimization is updated on your environment, you can use the following release notes to review when changes were released and what functionality was introduced.
-
-## Release notes
 
 The following table provides information about changes that were released for Planning Optimization, whether those changes are associated with a feature from feature management, and the date of the release.
 
