@@ -3,7 +3,7 @@
 
 title: Fixed asset impairment accounting on cash-generating units for Japan
 description: This topic gives the user an overview of the conceptual model for impairment accounting for Japan. 
-author: yijialuan
+author: kfend
 ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: 25691
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: riluan
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
