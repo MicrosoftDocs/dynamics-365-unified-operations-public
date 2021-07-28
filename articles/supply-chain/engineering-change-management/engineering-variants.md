@@ -37,7 +37,7 @@ The following procedure provides an example of how to create several variants th
 1. Close the page and select **Released product variants**. Note that the first created variant (white V-1) appears.
 1. Select **Variants suggestions**.
 1. The system suggests variants with the created color values (for example, white V-1, yellow V-1, and green V-1).
-1. Select the suggested variants and select **OK** to release the variants in the engineering company. Note that the following conditions will apply: 
+1. Select the suggested variants and select **OK** to release the variants to the engineering company. Note that the following conditions will apply: 
     - None of the created variants will have a BOM or route.
     - The attributes for these variants will default from the engineering category and will not be copied from the previous variant.
 
@@ -61,4 +61,4 @@ The following procedure provides an example of how to create a new variant that 
     - The new variant has a BOM and route that have been copied from the previous variant.
     - The new variant has the attributes copied from the previous variant.
 1. Approve the change order.
-1. Process the change order. After the order is processed, the new V-1 variant will be created and released in the engineering company.
+1. Process the change order. After the order is processed, the new V-1 variant will be created and released to the engineering company.
