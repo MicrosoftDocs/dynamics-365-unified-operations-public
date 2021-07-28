@@ -16,13 +16,13 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft updates Planning Optimization on a monthly basis. However, based on business needs, ad-hoc releases are sometimes be processed between the regular releases.
+Microsoft updates Planning Optimization on a monthly basis. However, based on business needs, we may occasionally release additional updates between the scheduled releases.
 
 Each release is published into the individual regions in which Planning Optimization is available. The process normally takes three days.
 
-Note that during the release, master planning may run a bit slower than usual.
+While Planning Optimization is updating, master planning may run a bit slower than usual.
 
-Environments that use Planning Optimization automatically get the latest release. No user action is needed, the service is updated automatically. However, no breaking-change functionalities are ever pushed to environments automatically. If a change is considered to be a breaking change, it will be turned off by default, and must be explicitly enabled using [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Therefore, these changes will not appear on environments until you choose to enable them.
+Environments that use Planning Optimization automatically get the latest release. No user action is needed&mdash;the service is updated automatically. However, no breaking-change functionalities are ever pushed to environments automatically. If a change is considered to be a breaking change, it will be turned off by default, and must be explicitly enabled using [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Therefore, these changes will not appear on environments until you choose to enable them.
 
 Because notifications are not displayed when Planning Optimization is updated on your environment, you can use the following release notes to review when changes were released and what functionality was introduced.
 
