@@ -4,7 +4,7 @@
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
 description: This topic explains which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
-ms.date: 07/12/2021
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -69,7 +69,7 @@ Your Service Fabric cluster should always be on a supported version according to
 
 ## Minimum Microsoft .NET Framework runtime
 
-The requirements for .NET Framework are specified on a per node basis. For specific features and versions see the [deployment guide](./setup-deploy-on-premises-pu41.md#prerequisites).
+The requirements for .NET Framework are specified on a per node basis. For specific features and versions, see [Set up and deploy on-premises environments (Platform update 41 and later)](./setup-deploy-on-premises-pu41.md#prerequisites).
 
 | Minimum version                        | Required since |
 |----------------------------------------|----------------|
