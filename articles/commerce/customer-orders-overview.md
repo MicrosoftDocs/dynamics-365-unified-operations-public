@@ -135,6 +135,10 @@ Retail orders that are created in either the online or store channel can be reca
 > [!IMPORTANT]
 > Not all retail orders can be edited through the POS application. Orders that are created in a call center channel can't be edited through POS if the [Enable order completion](./set-up-order-processing-options.md#enable-order-completion) setting is turned on for the call center channel. To ensure correct payment processing, orders that originated in a call center channel and that use Enable order completion functionality must be edited through the call center application in Commerce headquarters.
 
+> [!NOTE]
+> We do not recommend editing the orders and quotations in POS that are created by a non-call center user in Headquarters. This is because such orders and quotes do not use the Commerce pricing engine and hence when they are edited in POS, the commerce pricing engine would reprice such orders and quotes.
+
+
 In version 10.0.17 and later, users can edit eligible orders through the POS application, even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature is not enabled, or if you're using version 10.0.16 or earlier, users will only be able to edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. The option to disable this capability for specific stores can be configured through the **Functionality profile** under the **General** FastTab.
 
 
