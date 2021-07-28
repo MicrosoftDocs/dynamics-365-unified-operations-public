@@ -95,16 +95,16 @@ The Absence manager role must be assigned to employees to enable them to approve
 ## Absence manager workspace
 
 In the **Employee Self-Service** workspace, the **Leave management** tab shows the absence information about the employees who are assigned to the absence manager in the Leave hierarchy. There are a few options available to the absence manager: 
-- Review time off requests.
-- Submit a time off request on behalf of an employee.
-- View all employees assigned to them as part of the leave hierarchy.
-- View the absence manager calendar.
+1. Review time off requests.</br>
+2. Submit a time off request on behalf of an employee.</br>
+3. View all employees assigned to them as part of the leave hierarchy.</br>
+4. View the absence manager calendar.</br>
 
 On the **Leave management** workspace, there are two tabs:
-- **Time off requests**: This tab will list all the pending time off requests that the absence manager can approve. The abesence manager can select multiple records and take action on them at the same time. If cross-company leave view is enabled, this list will show pending time off requests across all legal entities they have access to. Else, it will show the pending time off requests for the legal entity currently selected. 
-- **All employees**: This tab will list all the employees that are assigned to the absence manager in the Leave hierarchy. There are a couple of options available for each employee:
--- **Request time off** -  Submit a new time off request for the selected employee.</br>
--- **Time off** – View balances, approved time off, and time-off requests for the selected employee.</br>
+1. **Time off requests**: This tab will list all the pending time off requests that the absence manager can approve. The abesence manager can select multiple records and take action on them at the same time. If cross-company leave view is enabled, this list will show pending time off requests across all legal entities they have access to. Else, it will show the pending time off requests for the legal entity currently selected. </br>
+2. **All employees**: This tab will list all the employees that are assigned to the absence manager in the Leave hierarchy. There are a couple of options available for each employee:</br>
+- **Request time off** -  Submit a new time off request for the selected employee.</br>
+- **Time off** – View balances, approved time off, and time-off requests for the selected employee.</br>
 
 ## Approve time-off requests
 
