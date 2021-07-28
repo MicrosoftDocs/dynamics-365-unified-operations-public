@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Customer orders in Point of Sale (POS)
-description: This topic provides information about customer orders in Point of Sale (POS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
+title: Customer orders in point of sale (POS)
+description: This topic provides information about customer orders in point of sale (POS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
-ms.date: 01/06/2021
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Release 10.0.14
 
 ---
 
-# Customer orders in Point of Sale (POS)
+# Customer orders in point of sale (POS)
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about how to create and manage customer orders in Point of Sale (POS). Customer orders can be used to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them. 
+This topic provides information about how to create and manage customer orders in the point of sale (POS) app. Customer orders can be used to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them. 
 
 In an omni-channel commerce world, many retailers provide the option of customer orders, or special orders, to meet various product and fulfillment requirements. Here are some typical scenarios:
 
@@ -134,6 +134,10 @@ Retail orders that are created in either the online or store channel can be reca
 
 > [!IMPORTANT]
 > Not all retail orders can be edited through the POS application. Orders that are created in a call center channel can't be edited through POS if the [Enable order completion](./set-up-order-processing-options.md#enable-order-completion) setting is turned on for the call center channel. To ensure correct payment processing, orders that originated in a call center channel and that use Enable order completion functionality must be edited through the call center application in Commerce headquarters.
+
+> [!NOTE]
+> We recommend that you don't edit orders and quotations in POS that are created by a non-call center user in Commerce headquarters. Those orders and quotes don't use the Commerce pricing engine, so if they're edited in POS, the Commerce pricing engine will re-price them.
+
 
 In version 10.0.17 and later, users can edit eligible orders through the POS application, even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature is not enabled, or if you're using version 10.0.16 or earlier, users will only be able to edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. The option to disable this capability for specific stores can be configured through the **Functionality profile** under the **General** FastTab.
 
