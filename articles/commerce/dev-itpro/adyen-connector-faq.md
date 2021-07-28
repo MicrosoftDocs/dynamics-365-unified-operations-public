@@ -31,7 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen.
+This topic provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen. 
+
+For information on troubleshooting issues related to the Dynamics 365 Payment Connector for Adyen, see [Troubleshoot Dynamics 365 Payment Connector for Adyen](adyen-troubleshoot.md). 
 
 ## Can I share a payment terminal with multiple hardware stations?
 
@@ -50,6 +52,12 @@ Yes. Modern POS requires a known IP address to communicate with the Adyen paymen
 Yes. Adyen can work with any merchant bank.
 
 ## Additional resources
+
+[Dynamics 365 Payment Connector for Adyen](adyen-connector.md)
+
+[Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md)
+
+[Troubleshoot Dynamics 365 Payment Connector for Adyen](adyen-troubleshoot.md)
 
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
