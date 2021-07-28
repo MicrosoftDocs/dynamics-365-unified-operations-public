@@ -97,6 +97,7 @@ The following example shows the contents of the **connector.settings.json** file
 | **experimentation** | This setting controls the cache timings for getting the list of available experiments that are configured in your third-party provider during **getExperiments()**. The default TTL (time to live) is 1,800 seconds, and the default TTR (time to refresh) is 60 seconds. |
 | **experimentationDataFile** | This setting controls the cache timings for having the configuration passed down to the client during **getConfigForClientSideInit()**. The default TTL is 1,800 seconds, and the default TTR is 60 seconds. |
 
+
 ## Experimentation connector
 
 An experimentation connector lets you connect your application to an external experimentation service provider. By adding this type of connector to your application, configuring it, and enabling it, you can create and run experiments in Commerce site builder, and track outcomes, to provide the best experience for your customers.
@@ -275,6 +276,7 @@ export interface IExperimentationListener {
     trackEvent(eventType: string, payload: any, attributes?: any): void;
 }
 ```
+
 
 ## GeoLookup connector
 
