@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 Payment Connector for Adyen
+title: Dynamics 365 Payment Connector for Adyen overview
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 ms.date: 07/28/2021
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Dynamics 365 Payment Connector for Adyen
+# Dynamics 365 Payment Connector for Adyen overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen. It includes a comprehensive list of supported features and functionality, a guide to setting up and configuring the connector, troubleshooting information, and descriptions of some common issues.
+This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen. It includes a comprehensive list of supported features and functionality. Related topics cover Adyen sign up, configuration of the connector, frequently asked questions, and troubleshooting guidance for some common issues.
 
 ## Key terms
 
@@ -342,7 +342,17 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | [SDK-level tipping support through the Adyen connector](tipping.md) | ✔<br>(Starting with 10.0.14) | |
 | [Incremental capture for order invoicing](incremental-capture.md) |  | ✔<br>(Starting with 10.0.18) |
 
+## Next steps
+
+For information on signing up for and configuring the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen setup](adyen-connector-setup.md).
+
 ## Additional resources
+
+[Dynamics 365 Payment Connector for Adyen setup](adyen-connector-setup.md)
+
+[Dynamics 365 Payment Connector for Adyen FAQ](adyen-connector-faq.md)
+
+[Dynamics 365 Payment Connector for Adyen troubleshooting](adyen-troubleshoot.md)
 
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
