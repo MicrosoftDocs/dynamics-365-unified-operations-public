@@ -50,8 +50,6 @@ The following features are generally available with this release.
 | ## [s360] Migrate to MSAL from ADAL - Due September 30, 2021 - (584168) | | |
 | ## Restrict access to the Ready to Pay menu item on the Worker forms. - (598852) | | |
 | ## Regular translation checkins for supported HCM languages - (394249) | | |
-| ## Design feedback: Add a link for "Pending time off requests" under the summary view - (592117) | | |
-| ## Design feedback: new absence manager workspace view - (596441) | | |
 | ## [Payroll] - Payroll position entity should have a relation to hcmpositionhierarchy entity - (598851) | | |
 | ## [Payroll] - Employee payroll entity must have a relation to bank accounts entity - (598403) | | |
 | ## PU44 Uptake/Validation - (593816) | | |
@@ -67,12 +65,10 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| ## Leave workflow enhancement returns incorrect work item for a leave request - (600377) | | |
 | ## Payroll address validation failing for Ready to Pay - (600422) | | |
 | ## Tiles that were added to Employee Self Service workspace are now missing, and tiles can no longer be added to it. - (602272) | | |
 | ## Half-day definition selection field enabled for full day leave requests - (600711) | | |
 | ## ACCRUAL RATE UNITS DISPLAYING HRS INSTEAD OF DAYS  - (602208) | | |
-| ## Absence manager calendar is empty when accessed from the tile - (602010) | | |
 | ## Ceridian payroll integration resets to incremental refresh and needs to always be full refresh. - (601226) | | |
 | ## Scale out VM count in Europe Clusters - (601016) | | |
 
@@ -85,7 +81,7 @@ The following new features are in preview. For more information about turning fe
 | --- | --- | --- |
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
 | Enable simplified payroll integration (Payroll integration APIs) | [Enable simplified integration with payroll providers](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Payroll integration API](hr-admin-integration-payroll-api-introduction.md)|
-|  Enable an absence manager to manage leave | [Enable an absence manager to manage leave](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) | [Configure absence manager role](https://go.microsoft.com/fwlink/?linkid=2168107)|
+|  Enable an absence manager to manage leave | [Enable an absence manager to manage leave](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) | With this release, we are updating the absence manager workspace view. Please see [Configure absence manager role](https://go.microsoft.com/fwlink/?linkid=2168107)|
 |  Configure attachment requirement per leave type | [Configure attachment requirement per leave type](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/mandate-attachments-specific-leave-types) |[Configure leave and absence types](https://go.microsoft.com/fwlink/?linkid=2168108)|
 |  Configure leave units per leave type | [Configure leave units per leave type](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/configure-leave-units-per-leave-type) |[Configure leave and absence types](https://go.microsoft.com/fwlink/?linkid=2168215)|
 | Enable employees to be marked as ready to be paid | [Enable employees to be marked as ready to be paid](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-employees-be-marked-as-ready-pay) | [Ready to pay](/dynamics365/human-resources/hr-compensation-payroll) |
