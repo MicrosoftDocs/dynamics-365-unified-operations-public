@@ -30,50 +30,54 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder using device, market, and geolocation information.
+This topic describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder by using device, market, and geolocation information.
 
-Dynamics 365 Commerce lets you personalize variations of your page content called *targets* for specific groups of customers called *audiences* to help increase user engagement and satisfaction. You can begin your targeting journey by first creating either an audience or a target. However, a successful targeting experience requires both of these key components.
+Dynamics 365 Commerce lets you personalize variations of your page content (known as *targets*) for specific groups of customers (known as *audiences*) to help increase user engagement and satisfaction. You can create either an audience or a target first. However, a successful targeting experience requires both these components.
 
-You create and manage audiences in Commerce site builder, based on customer data such as location, device information, sign-in status, and other dynamically derived information from customer web requests. You also create and manage targets on e-commerce modules and fragments in site builder.
+You create and manage audiences in Commerce site builder, based on customer data such as location, device information, sign-in status, and other dynamically derived information from customer web requests. You also create and manage targets on e-commerce modules and fragments in Commerce site builder.
 
-**Disclaimer:** You are responsible for using this feature in compliance with all applicable laws and regulations, including those related to targeting and profiling. 
+**Disclaimer:** You're responsible for using this feature in compliance with all applicable laws and regulations, including those that are related to targeting and profiling. 
 
 ## Audiences
 
-An audience is a group of users, and membership in the group is determined by a set of dynamic rules. These rules are simple logic tests that are run against information available in customer requests or other available segments. You can combine multiple rules using AND/OR operators.
+An audience is a group of users, and membership in the group is determined by a set of dynamic rules. These rules are simple logic tests that are run against information that is available in customer requests or other available segments. You can combine multiple rules by using AND/OR operators.
 
-Commerce natively supports basic segments such as device information, sign-in status, referrer, and query string parameters. Commerce also supports extensible segments through connections to third-party providers.
+Commerce natively supports basic segments such as device information, sign-in status, referrer, and query string parameters. It also supports extensible segments through connections to third-party providers.
 
 ### Basic segments
 
-The following segments are available to include in an audience definition by default:
+By default, the following segments are available and can be included in audience definitions:
 
-- **Signed-in status** - Tests if a user is authenticated or not.
-- **Device platform** - Tests for the following device types:
+- **Signed-in status** – Test whether a user is authenticated.
+- **Device platform** – Test for the following device types:
+
     - Mobile
     - Desktop
     - Tablet
     - Other
-- **Device OS** - Tests for the following operating systems:
+
+- **Device OS** – Test for the following operating systems:
+
     - Windows
     - Linux
     - iOS
     - Android, Other
-- **Query string parameters** - Tests for the existence of a query string parameter key value pair in a request URL. For example, for the URL `www.fabrikam.com/en-us/request?promo=true`, a rule can be written to test that the parameter "promo" has the value "true." 
-- **Cookie** - Tests a cookie value set for the domain in the request URL. For example, a Fabrikam.com request might include a cookie with the name "CustomLayout" and a value of "1." The cookie test will check for the existence of a cookie but will not explicitly create one. In our example, the "CustomLayout" cookie would need to have been set by JavaScript from another module or some other business process.
+
+- **Query string parameters** – Test for the existence of a key-value pair in a query string parameter of a request URL. For example, for the URL `www.fabrikam.com/en-us/request?promo=true`, a rule can be written to test that the **promo** parameter has the value **true**.
+- **Cookie** – Test for a cookie value that is set for the domain in the request URL. For example, a Fabrikam.com request might include a cookie that has the name **CustomLayout** and the value **1**. The cookie test checks for the existence of a cookie but doesn't explicitly create one. In the previous example, JavaScript must have previously set the **CustomLayout** cookie from another module or some other business process.
 
     > [!NOTE]
     > Make sure that your use of cookies complies with applicable laws.
 
-- **Referrer** - If a user follows a link to request the page, the referrer is the URL of the page that hosted the link.  
+- **Referrer** – If a user follows a link to request the page, the referrer is the URL of the page that hosted the link.
 
 ### Extensible segments
 
-Commerce allows you to connect to third-party segmentation providers and expand the list of available segments. A segmentation provider will describe the types of segments that are available. For more information about how to connect to a geolocation or segmentation provider, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
+Commerce lets you expand the list of available segments by connecting to third-party segmentation providers. A segmentation provider will describe the types of segments that are available. For more information about how to connect to a geolocation or segmentation provider, see [Configure and enable connectors](e-commerce-extensibility/connectors.md).
 
 > [!NOTE]
-> - If an external provider is enabled, it may connect to a service with unpredictable performance. To ensure a better user experience, if a user requests a page including targeting and that page references an audience that checks a third-party segment provider, the default version of the page will be shown.
-> - The user must consent to allow cookies. When they do, their browser will request all segments from relevant providers and the results will be placed in a cookie returned to the user. Subsequent requests to the page will use this information to serve targeted content to the user. For more information on cookie compliance, see [Cookie compliance](cookie-compliance.md).
+> - If an external provider is enabled, it might connect to a service that has unpredictable performance. To help ensure a better user experience, if a user requests a page that includes targeting, and that page references an audience that checks a third-party segment provider, the default version of the page is shown.
+> - The user must consent to allow cookies. The user's browser then requests all segments from relevant providers, and the results are put in a cookie that is returned to the user. Subsequent requests to the page will use this information to serve targeted content to the user. For more information about cookie compliance, see [Cookie compliance](cookie-compliance.md).
 
 **Disclaimer:** If you enable this feature, your data will be shared with third-party systems that you select. You control what data, if any, you provide to the third party. You understand that the data handling and compliance standards of the third party might differ from the standards of Microsoft Dynamics 365 Commerce. Your privacy is important to Microsoft. To learn more, read our [Privacy and Cookies notice](https://privacy.microsoft.com/privacystatement).
 
@@ -127,7 +131,7 @@ To create a target shell for page modules in Commerce site builder, follow these
 1. Before you publish your target, be sure to select **Preview** on the command bar to review it. You can then select one of the following options:
 
     - **Basic preview** – Select this option to preview only the selected variation (default page or target), without any associated audiences.
-    - **Advanced preview** – Select this option if you have multiple targets on a page and want to preview them as a user who belongs to a selected set of audiences, or on a specific date/time. Select **Next** to choose from a list of relevant audiences. You can also remove the filter to select among all audiences.
+    - **Advanced preview** – Select this option if you have multiple targets on a page and want to preview them as a user who belongs to a selected set of audiences, or on a specific date/time. Select **Next** to select from a list of relevant audiences. You can also remove the filter to select among all audiences.
 
 1. When you're satisfied with the target configuration, you must publish the page to make the target go live. Select **Publish** to make the target go live immediately. Alternatively, you can use a publish group to schedule when the page goes live.
 
