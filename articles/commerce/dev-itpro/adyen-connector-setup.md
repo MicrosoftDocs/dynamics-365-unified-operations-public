@@ -111,7 +111,7 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
 
 1. Sign in to Headquarters, and go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 1. Select the hardware profile to add the Dynamics 365 Payment Connector for Adyen for.
-1. Follow the steps in the [EFT service](#eft-service) and [PIN pad](#pin-pad) sections that follow.
+1. Follow the steps in the [EFT service](#eft-service) and [PIN pad](#configure-the-pin-pad) sections that follow.
 
 #### EFT service
 
