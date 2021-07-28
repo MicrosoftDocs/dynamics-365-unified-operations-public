@@ -1336,7 +1336,7 @@
         items:
         - name: Commerce localization for Russia
           href: localizations/rus-commerce-localization.md
-        - name: Customer simplified address format in POS for Russia
+        - name: Simplified customer address format in Commerce POS for Russia
           href: localizations/rus-simplified-address.md
       - name: Sweden
         items:
