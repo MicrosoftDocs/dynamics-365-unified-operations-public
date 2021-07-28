@@ -1552,6 +1552,8 @@
           href: localizations/apac-aus-low-value-pool-depreciation.md
         - name: Set up reason codes for the BAS
           href: localizations/tasks/set-up-reason-codes-australia-bas.md
+        - name: Payment times reporting schema
+          href: localizations/apac-aus-payment-times-report.md
       - name: Austria
         items:
         - name: Austria overview
