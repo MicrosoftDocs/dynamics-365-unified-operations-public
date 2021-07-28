@@ -48,13 +48,9 @@ The following features are generally available with this release.
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | ## [s360] Migrate to MSAL from ADAL - Due September 30, 2021 - (584168) | | |
-| ## Restrict access to the Ready to Pay menu item on the Worker forms. - (598852) | | |
 | ## Regular translation checkins for supported HCM languages - (394249) | | |
-| ## [Payroll] - Payroll position entity should have a relation to hcmpositionhierarchy entity - (598851) | | |
-| ## [Payroll] - Employee payroll entity must have a relation to bank accounts entity - (598403) | | |
 | ## PU44 Uptake/Validation - (593816) | | |
 | ## Migration service internal end-to-end (V0) - (589862) | | |
-
 
 ### Bug fixes
 
@@ -65,8 +61,8 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| ## Payroll address validation failing for Ready to Pay - (600422) | | |
-| ## Ceridian payroll integration resets to incremental refresh and needs to always be full refresh. - (601226) | | |
+| 600422 | Payroll address validation failing for Ready to Pay. | Validation has been updated to require only one address of the type 'Payroll residency location' and only one address of the type 'Payroll work location'. |
+| 601226 | Data Integration issue: Payroll integration export project does not has the option to full push | The payroll integration to Ceridian DayForce is has started doing a incremental push instead of a full push. Ceridian requires to always be full refresh. This issue is now fixed, the entities in the data export project will no longer flip to incremental push. |
 | ## Scale out VM count in Europe Clusters - (601016) | | |
 | 602272 | Tiles that were added to Employee Self Service workspace are now missing, and tiles can no longer be added to it | We have fixed the personalization issue for Employee self service. New tiles can be added to the view and any existing personalization will be visible to users |
 | 600711 | Half-day definition selection field enabled for full day leave requests | This issue is now fixed and half day definition field will be enabled only when employees select a leave type with half day definition enabled and hlaf day as the amount value selected |
