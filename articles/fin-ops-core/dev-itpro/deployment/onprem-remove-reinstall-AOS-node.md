@@ -4,7 +4,7 @@
 title: Remove and reinstall, or add an AOS node
 description: This topic explains how to remove an Application Object Server (AOS) node in your on-premises environment to reduce or replace a failed node.
 author: ttreen
-ms.date: 04/14/2020
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
