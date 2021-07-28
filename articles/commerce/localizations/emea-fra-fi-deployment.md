@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for France
 description: This topic is a deployment guide for the cash register functionality for France.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 07/02/2021
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. See [Cash register functionality for France](./emea-fra-cash-registers.md#overview) for more information about the localization for France, and [Setting up Commerce for France](./emea-fra-cash-registers.md#setting-up-commerce-for-france) for settings of Commerce for France.
+This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. See [Cash register functionality for France](./emea-fra-cash-registers.md#overview) for more information about the localization for France, and [Setting up Commerce for France](./emea-fra-cash-registers.md#setting-up-commerce-for-france) for more infomration on how to configure Commerce for France.
 
 ## Development environment
 
