@@ -32,22 +32,6 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic provides guidelines on how to migrate your environment from the [legacy digital signing solution for France](./emea-fra-deployment.md) to the [solution that is based on the Fiscal integration framework](./emea-fra-fi-deployment.md).
 
-This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md).
-
-This localization consists of extensions for the Commerce runtime (CRT) and POS. To run this sample, you must modify and build the POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
-
-> [!NOTE]
-> In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this topic applies to multiple previous versions of the app, *Retail Server* is used throughout the topic.
-
-### Prerequisites
-
-The following steps must be completed before you can use a certificate that is stored in Azure Key Vault storage:
-
-- The Azure Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Retail Server.
-- The certificate must be uploaded to the storage.
-
-For more information about how to work with Azure Key Vault, see [Get started with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-get-started).
-
 ## Development environment
 
 Follow these steps to set up a development environment so that you can test and extend the localization functionality.
