@@ -36,7 +36,10 @@ However, functionality has been added to support scenarios where exchanges are d
 
 ## Configure Commerce to support exchanges on return orders
 
-Follow these steps to configure the system to support exchanges on return orders.
+> [!NOTE]
+> In the Commerce version 10.0.20 release and later, a new feature that is named **Unified return processing experience in POS** is available. If you have enabled this feature, this setup below is no longer required as **Process returns as sales orders** becomes a permanent configured setting for the application that can no longer be changed.
+
+Follow these steps to configure the system to support exchanges on return orders (if you do not have the **Unified return processing experience in POS** feature enabled.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**. On the **Customer orders** FastTab, set the **Process return orders as sales orders** option to **Yes**.
 2. Run the **Global configuration distribution schedule** job (**1110**).
