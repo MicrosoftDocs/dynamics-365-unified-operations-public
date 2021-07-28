@@ -4,7 +4,7 @@
 title: Email ER destination type
 description: This topic explains how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
 author: NickSelin
-ms.date: 07/21/2021
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -67,7 +67,7 @@ By default, an email is sent on behalf of the current user. To specify a differe
 >
 > When an email destination is offered for modification at [runtime](electronic-reporting-destinations.md#security-considerations), the **From** field is visible only to users who have the `ERFormatDestinationSenderEmailMaintain` security privilege, **Maintain the sender email address for ER format destination**.
 >
-> When the **From** field is configured to use an email address other than the current user's, either the **Send as** or **Send on behalf** permission must be correctly [set](https://docs.microsoft.com/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) in advance. Otherwise, the following exception is thrown at runtime: "Unable to send email as \<from email account\> from the \<current user account\> account, please check the 'Send as' permissions on the \<from email account\>."
+> When the **From** field is configured to use an email address other than the current user's, either the **Send as** or **Send on behalf** permission must be correctly [set](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) in advance. Otherwise, the following exception is thrown at runtime: "Unable to send email as \<from email account\> from the \<current user account\> account, please check the 'Send as' permissions on the \<from email account\>."
 
 You can configure the **From** field to return more than one email address. In this case, the first address in the list is used as an email sender address.
 
