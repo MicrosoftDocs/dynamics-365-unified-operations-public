@@ -48,7 +48,6 @@ The following features are generally available with this release.
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
 | ## [s360] Migrate to MSAL from ADAL - Due September 30, 2021 - (584168) | | |
-| ## Integrate benefit reason codes into core hr reason codes (Part 4 - Forced integration) - (570459) This deliverable is about creating a forced integration pattern given the lack of manual upgrades occurring in Part 3 of this upgrade | | |    
 | ## Restrict access to the Ready to Pay menu item on the Worker forms. - (598852) | | |
 | ## Regular translation checkins for supported HCM languages - (394249) | | |
 | ## Design feedback: Add a link for "Pending time off requests" under the summary view - (592117) | | |
@@ -75,7 +74,6 @@ The following bug fixes are included in this release.
 | ## ACCRUAL RATE UNITS DISPLAYING HRS INSTEAD OF DAYS  - (602208) | | |
 | ## Absence manager calendar is empty when accessed from the tile - (602010) | | |
 | ## Ceridian payroll integration resets to incremental refresh and needs to always be full refresh. - (601226) | | |
-| ## Worker benefit plans- tab sequence - (594783) | | |
 | ## Scale out VM count in Europe Clusters - (601016) | | |
 
 
