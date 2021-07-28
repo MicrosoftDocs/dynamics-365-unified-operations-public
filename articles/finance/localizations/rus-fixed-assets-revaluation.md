@@ -79,11 +79,11 @@ To revaluate fixed asset cost and depreciation, follow these steps.
 ## Reverse fixed asset revaluation transactions
 
 By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date.
-1. Go to **Fixed assets (Russia) ** > **Fixed assets **, and on the Action Pane, select **Value models.
-2. On the **FA value models ** page, on the Action Pane, select **Transactions **.
-3. On the **FA transactions ** page, select and transaction and on the Action Pane, select **Reverse transaction **.
-4. In the **Reverse transactions ** dialog box, change the transaction reversal date as needed and then select **OK **. A transaction to reverse the original transaction is created and added to the **FA transactions ** page.
-5. Select **Voucher **, and on the **Voucher transactions ** page, view the transactions in the ledger.
+1. Go to **Fixed assets (Russia)** > **Fixed assets**, and on the Action Pane, select **Value models**.
+2. On the **FA value models** page, on the Action Pane, select **Transactions**.
+3. On the **FA transactions** page, select and transaction and on the Action Pane, select **Reverse transaction**.
+4. In the **Reverse transactions** dialog box, change the transaction reversal date as needed and then select **OK**. A transaction to reverse the original transaction is created and added to the **FA transactions** page.
+5. Select **Voucher**, and on the **Voucher transactions** page, view the transactions in the ledger.
 
 
 
