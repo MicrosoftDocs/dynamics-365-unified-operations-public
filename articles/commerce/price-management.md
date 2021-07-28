@@ -44,21 +44,21 @@ The following terms are used in this topic.
 
 ## Price groups
 
-Price groups are at the heart of price and discount management in Commerce. Price groups are used to assign prices and discounts to commerce entities (that is, channels, catalogs, affiliations, and loyalty programs). Because price groups are used for all pricing and discounts, it's very important that you plan how you will use them before you start.
+Price groups are at the heart of price and discount management in Commerce. Price groups are used to assign prices and discounts to Commerce entities (that is, channels, catalogs, affiliations, and loyalty programs). Because price groups are used for all pricing and discounts, it's very important that you plan how you will use them before you start.
 
-By itself, a price group is just a name, a description, and, optionally, a pricing priority. The main point to remember about price groups is that they are used to manage the many-to-many relationships that discounts and prices have with commerce entities.
+By itself, a price group is just a name, a description, and, optionally, a pricing priority. The main point to remember about price groups is that they are used to manage the many-to-many relationships that discounts and prices have with Commerce entities.
 
-The following illustration shows how price groups are used. In this illustration, notice that "Price group" is literally at the center of pricing and discount management. The commerce entities that you can use to manage differential prices and discounts are on the left, and the actual price and discount records are on the right.
+The following illustration shows how price groups are used. In this illustration, notice that "Price group" is literally at the center of pricing and discount management. The Commerce entities that you can use to manage differential prices and discounts are on the left, and the actual price and discount records are on the right.
 
 ![Price groups.](./media/PriceGroups.png "Price groups")
 
-When you create price groups, you should not use a single price group for multiple types of commerce entities. Otherwise, it can be difficult to determine why a specific price or discount is being applied to a transaction.
+When you create price groups, you should not use a single price group for multiple types of Commerce entities. Otherwise, it can be difficult to determine why a specific price or discount is being applied to a transaction.
 
 As the red dashed line in the illustration shows, Commerce does support the core Microsoft Dynamics 365 functionality of a price group that is set directly on a customer. However, in this case, you get only sales price trade agreements. If you want to apply customer-specific prices, we recommend that you not set price groups directly on the customer. Instead, you should use affiliations. 
 
 Note that if the price group is set on the customer, then this price group gets associated to the sales order header of the orders created for this customer. If the user changes the price group on the order header, then the old price group gets replaced with the new price group only for the current order. For example, the old price group will not affect the current order, but it will still be associated to the customer for future orders.
 
-The following sections provide more information about the commerce entities that you can use to set distinct prices when the price groups are used. The configuration of prices and discounts for all these entities is a two-step process. These steps can be done in either order. However, the logical order is to set the price groups on the entities first, because this step is likely to be a one-time setup that is done during implementation. Then, as prices and discounts are created, you can set the price groups on those prices and discounts individually.
+The following sections provide more information about the Commerce entities that you can use to set distinct prices when the price groups are used. The configuration of prices and discounts for all these entities is a two-step process. These steps can be done in either order. However, the logical order is to set the price groups on the entities first, because this step is likely to be a one-time setup that is done during implementation. Then, as prices and discounts are created, you can set the price groups on those prices and discounts individually.
 
 ### Channels
 
@@ -218,23 +218,23 @@ When you set sales prices in Dynamics 365, you don't specify whether the price v
 
 If you work with both inclusive and exclusive types of tax, it's very important that you set prices correctly, because the total amount that the customer pays will change if the **Price includes sales tax** setting on the channel is changed.
 
-## Differences between commerce pricing and non-commerce pricing
+## Differences between Commerce pricing and non-Commerce pricing
 
-A single pricing engine is used to calculate prices across all channels: Call center, Retail store, and Online stores. This helps in enabling the unified commerce scenarios.
+A single pricing engine is used to calculate prices across all channels: call center, retail store, and online stores. This helps in enabling the unified Commerce scenarios.
 
-Pricing is designed to work with retail entities instead of non-retail entities. Specifically, it's designed to set prices by store, not by warehouse.
+Pricing is designed to work with Commece entities instead of non-Commerce entities. Specifically, it's designed to set prices by store, not by warehouse.
 
-The commerce pricing engine **does not support** the following pricing features:
+The Commerce pricing engine **does not support** the following pricing features:
 
 - Setting prices by Site or Site and Warehouse storage dimensions is not supported. If you only specify Site dimension on the trade agreements, then the pricing engine will ignore the Site and apply the trade agreement to all sites. If you specify both Site and Warehouse, then the behavior is undefined/untested because it’s expected that retailers use the store price groups to control the prices for each store/warehouse.
 - Attribute-based pricing is not supported.
 - Vendor discount pass-through is not supported.
-- The generic currency feature is not supported i.e. even if a trade agreement has the "Include generic currency" toggle turned on, still this trade agreement will only be considered valid for the currency defined on the trade agreement.
+- The generic currency feature is not supported i.e. even if a trade agreement has the **Include generic currency** toggle turned on, still this trade agreement will only be considered valid for the currency defined on the trade agreement.
 - The standard Supply Chain Management pricing engine supports the pricing calculation based on the "Requested ship date" and "Requested receipt date" along with the current date. However, retail pricing currently does not support these values. The reason is that for B2C scenarios customers do not expect the requested delivery date to affect the item price. In some cases, retailers have both B2B and B2C operations. For B2B operations it is common to change prices based on the delivery dates. These retailers can use Supply Chain Management pricing for their B2B business and retail pricing for their B2C business. Retail pricing kicks in only if the application user is added as a call center user, so the retailers can assign certain users who will work with the Supply Chain Management pricing and assign a few that will work with the Retail pricing, that is, these users should be added as a call center users. Additionally, the **Use today's date for calculating prices** property in the **Commerce parameters > pricing and discounts > Miscellaneous** section must be turned on. This way they can keep the using accounts receivable parameter value for Requested ship date or Requested receipt date for Supply Chain Management pricing, but the retail pricing will keep using the today's date for pricing calculation.
 
-In addition, **only** the commerce pricing engine supports the following pricing features:
+In addition, **only** the Commerce pricing engine supports the following pricing features:
 
-- The price is based on product dimensions, in order from the most-specific variant price to the least-specific variant price to the product master price. A price that is set by using two product dimensions (for example, Color and Size) is used before a price that is set by using only one product dimension (for example, Size).
+- The price is based on product dimensions, in order from the most-specific variant price to the least-specific variant price to the product master price. A price that is set by using two product dimensions (for example, color and size) is used before a price that is set by using only one product dimension (for example, size).
 - The same price group can be used to control pricing and discounts.
 
 ## Pricing API enhancements
