@@ -63,7 +63,7 @@ When payment transactions aren't successfully processed through the Adyen paymen
 <td>This issue can occur when the <strong>EFT POS Register Number</strong> field isn't set on the register or the IIS Hardware Station. It can also occur if the value is set but isn't correctly synced to the POS terminal. Finally, it can also occur when the value is cached.</td>
 </tr>
 <td><strong>Fix</strong></td>
-<td>Follow the instructions in the <a href="#set-up-a-dynamics-365-register">Set up a Dynamics 365 register</a> section earlier in this topic. Then run the <strong>1070</strong> and <strong>1090</strong> distribution schedules. If the issue isn't resolved, consider reactivating Modern POS, because the value of the <strong>EFT POS Register Number</strong> field might be cached and might need to be reset.</td>
+<td>Follow the instructions in <a href="adyen-connector-setup.md#set-up-a-dynamics-365-register">Set up a Dynamics 365 register</a>. Then run the <strong>1070</strong> and <strong>1090</strong> distribution schedules. If the issue isn't resolved, consider reactivating Modern POS, because the value of the <strong>EFT POS Register Number</strong> field might be cached and might need to be reset.</td>
 </tr>
 </tbody>
 </table>
@@ -85,7 +85,7 @@ When payment transactions aren't successfully processed through the Adyen paymen
 <td>This issue can occur when the POS is redeployed but the dllhost.config file hasn't been updated.</td>
 </tr>
 <td><strong>Fix</strong></td>
-<td>Follow the instructions in the <a href="#update-the-modern-pos-or-iis-hardware-station-configuration">Update the Modern POS or IIS Hardware Station configuration</a> section earlier in this topic. Then end the dllhost.exe task on the <strong>Details</strong> tab in Task Manager, and reopen Modern POS. If you're using an IIS Hardware Station, reset IIS.</td>
+<td>Follow the instructions in <a href="adyen-connector-setup.md#update-the-modern-pos-or-iis-hardware-station-configuration">Update the Modern POS or IIS Hardware Station configuration</a>. Then end the dllhost.exe task on the <strong>Details</strong> tab in Task Manager, and reopen Modern POS. If you're using an IIS Hardware Station, reset IIS.</td>
 </tr>
 </tbody>
 </table>
