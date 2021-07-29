@@ -3,8 +3,8 @@
 
 title: Settlement overview
 description: This topic provides general information about the settlement process. It describes which transaction types can be settled, and the timing and process for settling them. It also describes the results of the settlement process.
-author: kweekley
-ms.date: 04/10/2020
+author: panolte
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -88,6 +88,11 @@ If this problem is encountered when entering a customer payment open the **Custo
 If a transaction is blocked for settlement when you’re entering a vendor payment, open the **Vendor marked transaction details** page (**Accounts payable > Periodic tasks > Vendor marked transaction details**).  You can enter any of the following selection parameters, **Vendor account**, **Voucher**, **Date**, or **Invoice** to quickly identify where a transaction is blocked . If no selections are made, the system will show all blocked documents from the current company, or any other company you select . Once the transaction has been identified you can select it, and then click the Unmark selected transactions function can be clicked to remove the blocking scenario. This will remove the selection from any other journal that may have it selected but it will not remove the document from the other location, it will only remove the marking information from that journal.
 
 To identify all blocked documents, open the **All marked transaction details** page from either Accounts receivable, **Accounts receivable > Periodic tasks > All marked transaction details**, or Accounts payable, **Accounts payable > Periodic tasks > All marked transaction details**. You can enter any of the following selection parameters, **Customer account**, **Vendor account**, **Voucher**, **Date**, or **Invoice** to quickly identify where a transaction is blocked.  If no selections are made, the system will show all blocked documents from the current company, or any other company you select . Once the transaction has been identified it can be selected and click **Unmark selected transactions** to resolve the blocking issue. This will remove the selection from any other journal that may have it selected but it will not remove the document from the other location, it will only remove the marking information from that journal.
+
+Before you can use this feature, it must be turned on in your system. Admins can use the **Feature management** workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+
+- Module: Cash and bank management
+- Feature name: Marked transaction detail form
 
 ## Additional resources
 
