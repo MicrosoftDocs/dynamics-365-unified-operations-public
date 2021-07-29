@@ -2,7 +2,7 @@
 # required metadata
 
 title: Bank file formats for Australian banks
-description: This topic provides information about Australian banks and the file formats they accept for electronic payments.
+description: This topic provides information about Australian banks and the file formats that they accept for electronic payments.
 ms.author: anasyash
 ms.date: 07/23/2021
 ms.topic: article
@@ -25,11 +25,12 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
+
 # Bank file formats for Australian banks
 
 [!include [banner](../includes/banner.md)]
 
-The following table provides the names of the Australian banks and the file formats that they accept for electronic payments. 
+The following table shows the names of the Australian banks and the file format that each bank accepts for electronic payments.
  
 | Bank name                      | Bank interface                        | File format                    |
 |--------------------------------|---------------------------------------|--------------------------------|
