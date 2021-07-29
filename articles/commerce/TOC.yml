@@ -520,11 +520,11 @@
             items:
             - name: Dynamics 365 Payment Connector for Adyen overview
               href: dev-itpro/adyen-connector.md
-            - name: Dynamics 365 Payment Connector for Adyen setup
+            - name: Set up Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-setup.md
             - name: Dynamics 365 Payment Connector for Adyen FAQ
               href: dev-itpro/adyen-connector-faq.md
-            - name: Dynamics 365 Payment Connector for Adyen troubleshooting
+            - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
             href: dev-itpro/adyen-connector-listPI.md
