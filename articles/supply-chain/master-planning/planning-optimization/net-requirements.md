@@ -26,7 +26,7 @@ The **Net requirements** page displays the net requirements calculated for the p
 You can access the **Net requirements** page in any of the following ways:
 
 - Go to **Product information management > Products > Released products**. Select or open a product. On the Action pane, open the **Plan** tab and, in the **Requirement** group, select **Net requirements**.
-- Go to **Sales and marketing > Sales orders > All sales orders**. Open a sales order. Under the **Sales order details** section, select **Product and supply > Net requirements**. <!--KFM: I can't find any of these labels here. Is this right? -->
+- Go to **Sales and marketing > Sales orders > All sales orders**. Open a sales order. On the **Sales order lines** FastTab, select **Product and supply > Net requirements** from the toolbar.
 - Go to **Master planning > Master planning > Planned orders**. Select or open a planned order. On the Action pane, open the **View** tab and, in the **Requirements** group, select **Requirement profile**.
 
 ## Use the Net requirements page
@@ -54,9 +54,13 @@ The bottom section of the page provides the following tabs:
 - **General** – Shows detailed information of the selected requirement.
 - **Action** – Shows action messages for the requirements.
 
-### The Action pane
+### The Action Pane
 
-Select **Update > Master planning** on the Action Pane to run master planning directly from the **Net requirements** page. <!--KFM: Should we also document the other two options in this menu? -->
+Teh following commands are available on the Action Pane:
+
+- **Update > Master planning** – Run master planning directly from the **Net requirements** page.
+- **Update > XXXX** – <!-- KFM: Explanation needed -->
+- **Update > XXXX** – <!-- KFM: Explanation needed -->
 
 ## Example scenario
 
@@ -117,7 +121,6 @@ Now you will open the **Net requirements** page for the product *1000* to review
 > [!NOTE]
 > Since some features are not yet supported by Planning Optimization, so *Safety stock* and *Expired batch* requirement types aren't present on **Net requirements** page. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
-<!--KFM: The following note is the only significant difference between this topic and the one for the built-in engine. I am thinking to remove most of the content from that topic, leaving just the intro and link to this topic (explaining that it works nearly the same way). What do you think? -->
 
 > [!NOTE]
 > If you are using the built-in master planning engine, then batch-controlled products are supported. For batch-controlled products, expired on-hand is displayed on the **Net requirements** page but is not pegged with demand requirements. Such expired on-hand lines are shown on the **Net requirements** page as *Expired batch* requirement lines.
