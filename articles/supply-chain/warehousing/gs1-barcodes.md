@@ -1,16 +1,16 @@
 ---
 title: GS1 barcodes and QR codes
 description: This topic describes how to set up and GS1 barcodes and QR codes for scanning labels in a warehouse
-author: XXXX
-ms.date: MM/DD/YYYY
+author: Mirzaab
+ms.date: 08/02/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: XXXX
-ms.search.validFrom: YYYY-MM-DD
-ms.dyn365.ops.version: 10.0.18
+ms.author: mirzaab
+ms.search.validFrom: 2021-08-02
+ms.dyn365.ops.version: 10.0.21
 ---
 
 # GS1 barcodes and QR codes
@@ -44,13 +44,13 @@ To set up your global GS1 options:
 
 ## GS1 application identifiers
 
-GS1 formats not only encode the data but provide a method of defining the meaning of the data using a predefined list of *application identifiers*. Logistics managers must set up the required list of application identifiers and associate each of them with the proper mobile device menu item(s). The identifiers they can be used throughout different warehouses as a global setting for moving and packing purposes. As a result, the diversity of shipping labels will take a unified form.
+GS1 formats not only encode the data but provide a method of defining the meaning of the data using a predefined list of *application identifiers*. Logistics managers must set up the required list of application identifiers and associate each of them with the proper mobile device menu item(s). The identifiers can be used throughout different warehouses as a global setting for moving and packing purposes. As a result, the diversity of shipping labels will take a unified form.
 
-The system uses the data, particularly the predefined application identifiers, to guide which rule should be applied for the relevant piece of the scanned information.
+The system uses the data, particularly the predefined application identifiers, to establish which rules should be applied for the relevant piece of the scanned information.
 
-Application identifiers signal to the system that the following characters in the scanned code will be considered a block of encrypted information.
+Application identifiers signal to the system that the following characters in the scanned code will be considered a block of encrypted information. The application identifier setup tells the system how to interpret that code and save it as a value in the system.
 
-Logistics managers can use standard international application identifiers or come up with their own ones.
+Logistics managers can use standard international application identifiers and/or come up with their own ones.
 
 ### Load the standard application identifiers
 
@@ -73,13 +73,13 @@ To set up and customize your GS1 own application identifiers:
 1. The page contains a grid with the following fields: <!-- KFM: Improve this description based on the UI -->
     - **Application identifier** – Identifies which rules to apply when scanning a GS1 barcode. <!-- KFM: Isn't this just the name of the identifier? -->
     - **Description** – Enter a short description of the identifier.
-    - **Fixed length** – Specify whether the value of this application identifier has a fixed number of characters. <!-- KFM: What "value" is this? The value for the field that uses this application identifier? -->
-    - **Length** – Enter the maximum number of characters in the value. <!-- KFM: What "value" is this? The value for the field that uses this application identifier? -->
-    - **Type** – Select the type of value (*Numeric*, *Alphanumeric*, or *Date*). <!-- KFM: What "value" is this? The value for the field that uses this application identifier? -->
-    - **Decimal** – Value decimal for numeric type. <!-- KFM: What "value" is this? The value for the field that uses this application identifier? -->
+    - **Fixed length** – Specify whether the values scanned using this application identifier have a fixed number of characters.
+    - **Length** – Enter the maximum number of characters that may appear in the values scanned using this application identifier. When **Fixed length** is set to *Yes*, then exactly this number of characters is expected.
+    - **Type** – Select the type of value scanned using this application identifier (*Numeric*, *Alphanumeric*, or *Date*).
+    - **Decimal** – Value decimal for numeric type. <!-- KFM: Do you mean the number of decimal places? Only works when **Type** is *Numeric*? What "value" is this? The value for the field that uses this application identifier? Also, no date format setting? -->
 
 > [!NOTE]
-> The **Group separator** established on the **Warehouse management parameters page** may not be used if a value followed by an application identifier has a **Fixed length** or its length is maximized (equal to the **Length** set for the application identifier).
+> The **Group separator** established on the **Warehouse management parameters page** may not be used if a value followed by an application identifier has a **Fixed length** or its length is maximized (equal to the **Length** set for the application identifier). <!-- KFM: Do we mean that the separator is option in this case, or that it *must* be omitted? -->
 
 ## Use GS1 policies to assign application identifiers to mobile device fields
 
@@ -89,7 +89,7 @@ The GS1 standard is designed to enable workers to load several values after scan
 
 The **Generic GS1 setup** page lets you load a standard set of mappings between mobile device fields and standard application identifiers. It establishes the global rules for all mobile device menu items fields.
 
-To establish the generic GS1 setup, go to **Warehouse management \> Setup \> GS1 \> GS1 generic setup**. Then select **Create default setup** to automatically assign a suitable application identifier to each of the mobile device menu items that are currently in use. <!-- KFM: How does the system know which identifier is most suitable for each field? -->
+To establish the generic GS1 setup, go to **Warehouse management \> Setup \> GS1 \> GS1 generic setup**. Then select **Create default setup** to automatically assign a suitable application identifier to each of the mobile device menu items that are currently in use. <!-- KFM: How does the system know which app identifier is most suitable for each field? -->
 
 > [!WARNING]
 > The **Create default setup** command deletes the entire existing GS1 setup (if any) and loads the standard setup.
@@ -102,7 +102,7 @@ To set up and customize your GS1 policy:
 
 1. Go to **Warehouse management \> Setup \> GS1 \> GS1 policy.**
 1. The page contains a grid with the following fields: <!-- KFM: Improve this description based on the UI -->
-    - **Field** – Specify the actual field from a Supply Chain Management table whose value could be set when scanning
+    - **Field** – Specify the field name from a Supply Chain Management table whose value could be set when scanning. <!-- KFM: No table name is needed? -->
     - **Application identifier** – Select the applicable application identifier defined on the **GS1 application identifiers** page.
     - **Description** – Enter a description for the row.
     - **Sorting** – For rows that share an application identifier with one or more other rows, use this setting to establish the order in which to process the matching rows. The row with the lowest sorting value will be processed first.
