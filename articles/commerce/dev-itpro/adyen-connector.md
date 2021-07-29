@@ -348,11 +348,11 @@ For information on signing up for and configuring the Dynamics 365 Payment Conne
 
 ## Additional resources
 
-[Dynamics 365 Payment Connector for Adyen setup](adyen-connector-setup.md)
+[Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md)
 
 [Dynamics 365 Payment Connector for Adyen FAQ](adyen-connector-faq.md)
 
-[Dynamics 365 Payment Connector for Adyen troubleshooting](adyen-connector-troubleshoot.md)
+[Troubleshoot Dynamics 365 Payment Connector for Adyen](adyen-connector-troubleshoot.md)
 
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
