@@ -1190,6 +1190,10 @@
         items:
         - name: Generate online channel reports
           href: generate-reports.md
+      - name: Targeting
+        items:
+        - name: Device, market, and geolocation targeting
+          href: targeting-overview.md
       - name: Experimentation
         items:
         - name: Experimentation in Dynamics 365 Commerce
