@@ -33,8 +33,6 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen. For an overview of the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen overview](adyen-connector.md). 
 
-For information on troubleshooting issues related to the Dynamics 365 Payment Connector for Adyen, see [Troubleshoot Dynamics 365 Payment Connector for Adyen](adyen-troubleshoot.md). 
-
 ### Can I share a payment terminal with multiple hardware stations?
 
 No. Payment terminals can only be used by a single hardware station or POS terminal. Attempting to connect multiple hardware stations to a single payment terminal will result in locking issues. If a payment terminal must be shared by multiple POS devices, an IIS hardware station must be deployed to manage the payment terminal. 
@@ -53,7 +51,7 @@ Yes. Adyen can work with any merchant bank.
 
 ## Next steps
 
-For troubleshooting guidance regarding common issues related to the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen setup](adyen-connector-troubleshoot.md).
+For guidance on troubleshooting common issues related to the Dynamics 365 Payment Connector for Adyen, see [Troubleshoot Dynamics 365 Payment Connector for Adyen](adyen-connector-troubleshoot.md). 
 
 ## Additional resources
 
