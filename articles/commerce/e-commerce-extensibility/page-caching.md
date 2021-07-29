@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure pages to be cached.
+This topic describes how to configure pages to be cached to improve performance of e-commerce pages sent back to customers.
 
 Page caching (available in release 10.0.21 (Online SDK version 1.31.3 or greater)) allows e-commerce pages to be cached on the server.  Cached pages can then be served to web site customers, signficantly increasing performance time. You can choose which pages to cache and how long to cache them in the site builder tool on a [page](../modify-existing-page.md) or by configuring a [template](../templates-layouts-overview.md) that enables page caching and applying that template across multiple different pages.
  
@@ -39,9 +39,16 @@ Some pages need to ensure they stay as fresh as possible with dynamic data such 
 
 ## Enable page caching
 
-To get started using page caching the feature must be turned on at the site level.
+Enabling page caching first involved enabling the feature at the site level, then configuring it on each page that you would like cached.
 
+### Enable site wide caching feature
 
-![Module configuration fields in the authoring tools.](media/module-config-fields.png)
+To enable the feature for your site within site builder, select **Site settings**, then the **Extensions** tab. Find the **Enable render caching** feature and enable it followed by selecting **Save and publish**.  Page caching can then be disabled at any time by disabling the **Enable render caching** feature. When disabled, any pages that were configured to use the page cache will skip the cache and compute the page for every request.
+
+![Enable page caching](media/page-caching-1.png)
+
+### Configure page caching on a page
+Any page that uses the default-page module will automatically have caching controls available in the Site Builder panel. To get started for a particular page, click on the default page module in the page editor and in the right panel you will see caching controls pop up
+
 
 ## Add new module configuration fields
