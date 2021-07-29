@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intra-community VAT
-description: This topic provides information about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic. 
+description: This topic provides information about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic.
 author: anasyash
 ms.date: 07/23/2021
 ms.topic: article
@@ -27,19 +27,19 @@ ms.dyn365.ops.version:
 
 # Intra-community VAT
 
-This topic provides information about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic. 
+This topic provides information about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic.
 
-When legal entities with a primary address in the Czech Republic purchase from European Union (EU) member states, they should do a self-assessment of VAT to ensure that the following conditions are met:
+When legal entities that have a primary address in the Czech Republic purchase from European Union (EU) member states, they should do a self-assessment of VAT to ensure that the following conditions are met:
 
-  - The output VAT is paid in the VAT period that the invoice was issued. This is the document date.
-  - The input VAT wasn't deducted before the document receipt. This is the VAT register date.
+- The output VAT is paid in the VAT period when the invoice was issued. This is the document date.
+- The input VAT wasn't deducted before the document receipt. This is the VAT register date.
 
-Information about intra-community VAT can be calculated and posted automatically. When you post an EU vendor invoice, two VAT transactions for the same amount are created. One VAT transaction is created for payable sales tax, and the other transaction is created for receivable sales tax. To reflect this requirement, complete the following setup.
- 
-1. Go to **Accounts payable** > **Setup** > **Accounts payables parameters**. 
-2. On the **Ledger and sales tax** tab, on the **Sales tax** FastTab, set the **Intra-community VAT** option and the **Document date for intra-community VAT** option to **Yes**.
-3. Create two sales tax codes: one that has a positive sales tax percentage and another that has a negative sales tax percentage.
-4. Create a sales tax group that contains both the positive and negative sales tax codes. 
+Information about intra-community VAT can be calculated and posted automatically. When you post an EU vendor invoice, two VAT transactions for the same amount must be created: one for payable sales tax and one for receivable sales tax. Follow these steps to set up the system so that it complies with this requirement.
+
+1. Go to **Accounts payable** \> **Setup** \> **Accounts payables parameters**.
+2. On the **Ledger and sales tax** tab, on the **Sales tax** FastTab, set the **Intra-community VAT** and **Document date for intra-community VAT** options to **Yes**.
+3. Create two sales tax codes: one that has a positive sales tax percentage and one that has a negative sales tax percentage.
+4. Create a sales tax group that contains both the positive and negative sales tax codes.
 5. Select the **Intra-community VAT** parameter for the negative sales tax code.
 6. In journals, select the **Document date for intra-community VAT** parameter.
 
