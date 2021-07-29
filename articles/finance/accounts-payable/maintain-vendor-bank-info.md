@@ -54,6 +54,13 @@ Bank information that vendors enter on the page will show **Vendor** as the sour
 
 After an account has been added, vendors can edit their bank's effective and expiration dates as required.
 
+## Turn on the vendor bank account information feature
+
+Before you can use this feature, it must be turned on in your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module** - *Accounts payable*
+- **Feature name** - *Maintain vendor bank information using vendor collaboration workspace*
+
 ## Vendor collaboration-generated bank changes page
 
 After vendors update their bank information, that information will be visible on the new **Vendor collaboration-generated bank changes** page that is available under **Accounts payable \> Inquiries \> Vendor reports**. By default, all newly entered or modified bank records are shown. The accounts payable clerk can view the changes and run the account information through the pre-note process to validate it. When this process is completed, and the primary payment method has been manually updated, the bank account that is shown on the **Vendor collaboration-generated bank changes** page can be selected and marked as reviewed. This action removes the account from the default list.
