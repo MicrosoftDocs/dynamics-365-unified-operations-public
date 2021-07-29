@@ -45,8 +45,11 @@ The following features are included in this release. Some of the listed features
 | Feature area | Feature | More information |
 |----|----|----|
 | Finance insights | [Customer payment predictions](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/customer-payment-predictions) | [Customer payment predictions](../finance-insights/payment-insights-overview.md) |
-
-
+| Electronic invoicing | [Configurable Italian electronic invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-italian-electronic-invoice) | [Electronic Invoicing overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-service-overview) |
+| Electronic invoicing | [Configurable Finnish electronic invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-finnish-electronic-invoice) | [Electronic Invoicing overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-service-overview) |
+| Electronic invoicing | [Configurable cross-country PEPPOL electronic invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-cross-country-peppol-electronic-invoice) | [Electronic Invoicing overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-service-overview) |
+| Electronic invoicing | [Configurable Brazilian e-Invoice (NF-e)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing--configurable-brazilian-e-invoice-nf-e) | [Electronic Invoicing overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-service-overview) |
+| Electronic invoicing | [Configurable Brazilian e-invoice for services (NFS-e)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-brazilian-e-invoice-services-nfs-e) | [Electronic Invoicing overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-service-overview) |
 
 ## Feature enhancements included in this release
 
