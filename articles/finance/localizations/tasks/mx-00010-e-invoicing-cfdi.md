@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This topic walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. You can create and post multiple sales orders as electronic invoices and send the .pdf and .xml files as email attachments to customers. This task can only be completed if you are logged into a legal entity with a primary address in Mexico. This task uses the MXMF demo company data.
 
+[!Note] Customer invoices created via a general ledger journal are not included in CFDI - Accounts Receivable Electronic Invoices (Accounts receivable &gt; Inquiries and reports &gt; CFDI (electronic invoices).
+
 1. In the navigation pane, go to **Modules > Accounts receivable > Orders > All sales orders**.
 2. Select **New**.
 3. In the **Customer account** field, select the desired record from the drop-down menu.
