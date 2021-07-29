@@ -50,7 +50,7 @@ The following prerequisites must be completed before payments can be configured 
 
 To process payments across point of sale (POS) terminals, a call center, or e-Commerce, you must configure a new default payment processor for new credit cards. Follow these steps to configure a default payment processor.
 
-1. Sign in to Headquarters, and go to **Accounts receivable \> Payments setup \> Payment services**.
+1. Sign in to Commerce headquarters and go to **Accounts receivable \> Payments setup \> Payment services**.
 1. On the Action Pane, select **New**, and then, on the **Setup** tab, enter the following information.
 
     | Field | Description | Sample value |
@@ -70,7 +70,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
     | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. "V002" should be used for all new implementations, as it leverages a newer Adyen API for card not present payments and is required for [SCA support](../adyen_redirect.md).  | Yes | Yes | "V001"/"V002" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for Live environments and should be obtained by contacting Adyen. This is the unique identifier for your Live environment in the form **[random]-[company name]**. This is present as the prefix inside the API URLs under **Account > API URLs** in your company's Live account on the Adyen Customer Area portal. For additional details, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
-    | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
+    | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdentifier |
     | Terminal architecture | This field must be set to **Cloud** for the `Payment service account`. | Yes | Yes | Cloud |
     | Local Password phrase | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
     | Local Key Identifier | This field is used only for the POS payment terminal integration and should be left blank. | No | Yes | *Leave this field blank.* |
@@ -96,7 +96,7 @@ To process payments across point of sale (POS) terminals, a call center, or e-Co
 > [!NOTE]
 > These instructions assume that you have access to an Adyen payment terminal.
 
-Go to the [Point of sale](https://docs.adyen.com/developers/point-of-sale) page on the Adyen website, and follow the instructions to onboard your Adyen payment terminal. Skip any steps that instruct you to download Adyen-specific apps. During the onboarding process, make a note of the following information for each payment terminal. You will need this information in the [Configure the payment terminal IP address and EFT POS register number](#configure-the-payment-terminal-ip-address-and-eft-pos-register-number) section later in this topic.
+Go to the [Point of sale](https://docs.adyen.com/developers/point-of-sale) page on the Adyen website and follow the instructions to onboard your Adyen payment terminal. Skip any steps that instruct you to download Adyen-specific apps. During the onboarding process, make a note of the following information for each payment terminal. You will need this information in the [Configure the payment terminal IP address and EFT POS register number](#configure-the-payment-terminal-ip-address-and-eft-pos-register-number) section later in this topic.
 
 - IP address of the payment terminal
 - POIID (POIID is comprised of the serial number and model number of the device. It is used to uniquely identify the device.)
@@ -109,7 +109,7 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
 
 #### Set up a Dynamics 365 POS hardware profile
 
-1. Sign in to Headquarters, and go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
+1. Sign in to Commerce headquarters and go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 1. Select the hardware profile to add the Dynamics 365 Payment Connector for Adyen for.
 1. Follow the steps in the [EFT service](#eft-service) and [PIN pad](#configure-the-pin-pad) sections that follow.
 
