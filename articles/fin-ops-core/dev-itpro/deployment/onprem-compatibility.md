@@ -41,7 +41,7 @@ Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter a
 | Microsoft Windows Server 2016 | Original release | 10.0.26       |
 
 > [!NOTE]
-> Only en-US OS installations are supported.
+> Only en-US operating system installations are supported.
 
 ## Microsoft SQL Server
 
