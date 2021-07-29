@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 Payment Connector for Adyen troubleshooting
+title: Troubleshoot Dynamics 365 Payment Connector for Adyen
 description: This topic provides troubleshooting guidance for common issues related to the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 ms.date: 07/29/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Dynamics 365 Payment Connector for Adyen troubleshooting
+# Troubleshoot Dynamics 365 Payment Connector for Adyen
 
 [!include [banner](../includes/banner.md)]
 
@@ -102,7 +102,7 @@ When payment transactions aren't successfully processed through the Adyen paymen
 
 [Dynamics 365 Payment Connector for Adyen overview](adyen-connector.md)
 
-[Dynamics 365 Payment Connector for Adyen setup](adyen-connector-setup.md)
+[Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md)
 
 [Dynamics 365 Payment Connector for Adyen FAQ](adyen-connector-faq.md)
 
