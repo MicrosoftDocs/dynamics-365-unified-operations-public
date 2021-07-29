@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 Payment Connector for Adyen setup
+title: Set up Dynamics 365 Payment Connector for Adyen
 description: This topic describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 ms.date: 07/29/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Dynamics 365 Payment Connector for Adyen setup
+# Set up Dynamics 365 Payment Connector for Adyen setup
 
 [!include [banner](../includes/banner.md)]
 
@@ -274,7 +274,7 @@ For answers to frequently asked questions regarding the Dynamics 365 Payment Con
 
 [Dynamics 365 Payment Connector for Adyen FAQ](adyen-connector-faq.md)
 
-[Dynamics 365 Payment Connector for Adyen troubleshooting](adyen-connector-troubleshoot.md)
+[Troubleshoot Dynamics 365 Payment Connector for Adyen](adyen-connector-troubleshoot.md)
 
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
