@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This topic explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: sarvanisathish
-ms.date: 06/29/2021
+ms.date: 07/27/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,11 @@ ms.search.validFrom: 2021-06-30
 
 [!include[banner](../includes/banner.md)]
 
-> [!IMPORTANT]
-> Some or all of the functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change.
-
 This Microsoft Dynamics AX 2012 data upgrade process is for self-service environments. Complete the sections of this topic in the following order:
 
 1. **[Prerequisites](data-upgrade-self-service.md#prerequisites)**
 2. **[Data upgrade process](data-upgrade-self-service.md#data-upgrade-process)** – Run the AX2012DataUpgradeToolKit.exe application to complete the upgrade process.
-3. **[Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application)** – Review the reports of the replication validation, replication status, and data upgrade status.
+3. **[Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application)** – Review the reports of the replication validation, replication status, data upgrade status, and rollback data upgrade status.
 4. **[Tooling section of the application](data-upgrade-self-service.md#tooling-section-of-the-application)**  – This section will help you reset the process parameters and restart any of the processes.
 
 ## Prerequisites
@@ -90,22 +87,28 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 
 ## Data upgrade process
 
+### Run the AX2012DataMigration.exe application
+
 Before you begin the replication process, note that the LCS environment will be in a **Deployed** state when it's created.
 
 1. Run the **AX2012DataMigration.exe** application.
 
-    A console window is opened. Use the Microsoft sign-in page for authentication.
+    A console window will open, and it prompts you to sign in.
 
 2. Provide the credentials that are used to sign in to LCS.
 
 3. After you're successfully authenticated, in the console window, provide the **Project-Id** value and then the **Environment-Id** value.
 
+    To validate the given values, you will need to sign in using the credentials that are used to sign in to LCS.
+
     > [!NOTE]
     > You can find the **Project-Id** and **Environment-Id** values on the **Manage environment** page in LCS. You can also find the **Environment-Id** value on the **Environment details** page.
 
-    After the validation is successful, the application presents a set of menu options that correspond to the steps in the data upgrade process. To complete the data replication and upgrade, you should perform the steps in the following order.
+### Complete the data replication and upgrade
 
-4. **Data upgrade preparation: Environment setup activity**
+After the validation is successful, the application presents a set of menu options that correspond to the steps in the data upgrade process. To complete the data replication and upgrade, you should perform the steps in the following order.
+
+1. **Data upgrade preparation: Environment setup activity**
 
     This step prompts you for the following information:
 
@@ -130,22 +133,22 @@ Before you begin the replication process, note that the LCS environment will be 
     - Authorize the source IP address.
     - Validate the target databases.
 
-5. **Data upgrade preparation: Prepare the target environment for the data upgrade**
+2. **Data upgrade preparation: Prepare the target environment for the data upgrade**
 
     This step changes the state of the LCS environment from **Deployed** to **Ready for replication**.
 
-6. **Replication: Clean-up target database**
+3. **Replication: Clean-up target database**
 
     This step performs the following actions:
 
     1. Change the state of the LCS environment from **Ready for replication** to **Replication in progress**.
     2. Delete all AX product tables, views, stored procedures, and user-defined functions in the target database.
 
-7. **Replication: Set up distributor**
+4. **Replication: Set up distributor**
 
     This step creates a distribution database under the **System Databases** folder on the source server. This distribution database is used for replication.
 
-8. **Replication: Set up publication for primary key tables**
+5. **Replication: Set up publication for primary key tables**
 
     This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If  any **ignore-table** entries are specified, the specified tables are exempted from replication.
 
@@ -154,7 +157,7 @@ Before you begin the replication process, note that the LCS environment will be 
     > [!NOTE]
     > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to be completed. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this topic.
 
-9. **Replication: Set up publication for other objects (functions)**
+6. **Replication: Set up publication for other objects (functions)**
 
     This step creates a publication for other objects (functions) and replicates them in the target database. If you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file.
 
@@ -163,14 +166,16 @@ Before you begin the replication process, note that the LCS environment will be 
     > [!NOTE]
     > The replication will take some time to be completed. You can view the replication status by providing the **'rs'** option.
     >
-    > If there no functions to replicate, the publication won't be created.
-
-    > [!WARNING]
+    > If there are no functions to replicate, the publication won't be created.
+    > 
     > Don't move on to next step until the **DataReplicationStatus** property for this step is shown as completed.
 
-10. **Cutover: Set up publication for non-primary key tables**
+7. **Cutover: Set up publication for non-primary key tables**
 
-    This step creates two publications: one that is used to replicate non-primary key tables, and one that is used to replicate locked tables.
+    This step creates two publications: one that is used to replicate non-primary key tables, and one that is used to replicate locked tables. 
+    
+    > [!NOTE]
+    > If there are no locked tables, then publication will not be created.
 
     **Publication names:** AX\_PUB\_NoPKTable, AX\_PUB\_TABLE\_LockedTable
 
@@ -179,24 +184,25 @@ Before you begin the replication process, note that the LCS environment will be 
     > [!WARNING]
     > Don't move on to next step until the **DataReplicationStatus** property for this step is shown as completed.
 
-11. **Cutover: Remove non-primary key publication and temporary tables**
+8. **Cutover: Remove non-primary key publication and temporary tables**
 
     This step performs the following actions:
 
     1. Clean up the temporary tables that were created for non-primary key tables in the source database.
     2. Delete the **AX\_PUB\_NoPKTable** publication.
 
-12. **Cutover: Create constraint for non-primary key tables**
+9. **Cutover: Create constraint for non-primary key tables**
 
     This step extracts constraints for the non-primary key tables from the source database and creates them in the target database.
+    
+    > [!NOTE]
+    > You can validate the replicated data by using the **'dv'** option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this topic.
 
-13. **Cutover: Remove replication setup**
+10. **Cutover: Remove replication setup**
 
     This step deletes all the publications that were created in the source database, the distribution database, and the replication snapshot.
 
     > [!NOTE]
-    > You can validate the replicated data by using the **'dv'** option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this topic.
-    >
     > To remove the **Snapshot** folder without causing an exception, run the following script in the source database. Even if you don't run this script, you can ignore the exception message that you receive.
     >
     > ```sql
@@ -209,11 +215,11 @@ Before you begin the replication process, note that the LCS environment will be 
     > RECONFIGURE WITH OVERRIDE
     > ```
 
-14. **Post-replication: Update environment state to Replicated**
+11. **Post-replication: Update environment state to Replicated**
 
     This step changes the state of the LCS environment from **Replication in progress** to **Replication completed**.
 
-15. **Data Upgrade: Trigger upgrade**
+12. **Data upgrade: Trigger upgrade**
 
     This step triggers the data upgrade. When the action is successful, the state of the LCS environment changes from **Replication completed** to **Data upgrade in progress**.
 
@@ -228,23 +234,39 @@ Before you begin the replication process, note that the LCS environment will be 
     > [!NOTE]
     > Repeat this step until the data upgrade is successful.
 
+13. **Rollback data upgrade: Trigger rollback**
+
+    This step triggers the rollback of data upgrade. This rolls back the data to the point before the upgrade is triggered and sets the LCS environment state to **Replicated**. This will change the environment from **Failed** to the **Replicated** state.
+    
+    At this point, you have only triggered the rollback. To see the rollback status, use the **'rbs'** option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) later in this topic.
+    
+    If rollback is successful, the **'rbs'** option is shown as **AX 2012 upgrade topology (LCS) status: Replicated**.
+
+    If rollback fails, the **'rbs'** option is shown as **AX 2012 upgrade topology (LCS) status: Failed**.
+
+For more information about the data upgrade process, see [Upgrade from AX 2012 – Data upgrade FAQ](upgrade-faq.md). This topic answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
+
 ## Reporting section of the application
 
-You can use the following options to review the reports of the replication validation, replication status, and data upgrade status:
+You can use the following options to review the reports of the replication validation, replication status, data upgrade status, and rollback data upgrade status.
 
 - **dv) Report:** Validate the replication.
 
-    This option compares the number of tables and records in the source server database and the target server database, and then shows the report. You should use this option only after step 12 is completed.
+    This option compares the number of tables and records in the source server database and the target server database, and then shows the report. You should use this option only after step 9 is completed.
 
     You can find the report data at **output/PostValidationInfo.csv**.
 
 - **rs) Report:** Get the replication status.
 
-    This option shows the report of the replication process for the publications that were created. You should use this option only after step 3 is started (that is, during the replication process for any publication).
+    This option shows the report of the replication process for the publications that were created. You should use this option only after step 5 is started (that is, during the replication process for any publication).
 
 - **ds) Report:** Get the data upgrade status.
 
     This option shows the report of the data upgrade process. You should use this option only after step 12 is started.
+    
+- **rbs) Report:** Get the rollback status.
+
+    This option shows the report of the rollback process. You should use this option only after step 13 has started.
 
 ## Tooling section of the application
 
@@ -268,3 +290,4 @@ After step 3 of the data upgrade process is completed, you should find the publi
 - On the **Snapshot** tab, you can view the status of the snapshot.
 - To view the detail log/transaction, double-tap (or double-click) a grid item.
 - To view the data replication to the target, on the **All Subscription** tab, double-tap (or double-click) the subscription from the grid item.
+

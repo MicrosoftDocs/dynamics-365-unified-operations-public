@@ -4,7 +4,7 @@
 title: Configuration for Finance insights - before version 10.0.19
 description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights for versions before 10.0.19.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,8 +29,6 @@ ms.dyn365.ops.version: AX 10.0.13
 # Configuration for Finance insights for private preview (preview) - before version 10.0.19
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview banner](../includes/preview-banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 

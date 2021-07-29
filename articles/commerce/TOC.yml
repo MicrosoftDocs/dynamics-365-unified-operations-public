@@ -98,8 +98,6 @@
             href: get-started/whats-new-commerce-10-0-20.md
           - name: Commerce 10.0.19 (June 2021)
             href: get-started/whats-new-commerce-10-0-19.md
-          - name: Commerce 10.0.18 (May 2021)
-            href: get-started/whats-new-commerce-10-0-18.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -518,8 +516,16 @@
             href: tasks/configure-credit-card-processing.md
           - name: Skip "change due" dialog box in POS
             href: dev-itpro/skip-change-due.md 
-          - name: Adyen payment connector
-            href: dev-itpro/adyen-connector.md
+          - name: Dynamics 365 Payment Connector for Adyen
+            items:
+            - name: Dynamics 365 Payment Connector for Adyen overview
+              href: dev-itpro/adyen-connector.md
+            - name: Set up Dynamics 365 Payment Connector for Adyen
+              href: dev-itpro/adyen-connector-setup.md
+            - name: Dynamics 365 Payment Connector for Adyen FAQ
+              href: dev-itpro/adyen-connector-faq.md
+            - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
+              href: dev-itpro/adyen-connector-troubleshoot.md
           - name: Saving online payment instruments with the Adyen connector
             href: dev-itpro/adyen-connector-listPI.md
           - name: Strong Customer Authentication (SCA) using the Adyen connector
@@ -900,6 +906,8 @@
           href: set-up-B2C-tenant.md
         - name: Set up custom pages for user sign-ins
           href: custom-pages-user-logins.md
+        - name: Enable automatic linking of identity records to customer accounts
+          href: identity-record-linking.md
         - name: Configure multiple B2C tenants in a Commerce environment
           href: configure-multi-B2C-tenants.md
         - name: Domains in Dynamics 365 Commerce
@@ -932,6 +940,8 @@
           href: manage-ecommerce-users-roles.md
         - name: Apply inventory settings
           href: inventory-settings.md
+        - name: Apply add product to cart settings
+          href: add-cart-settings.md
         - name: Search engine optimization (SEO) considerations for your site
           href: search-engine-optimization-considerations.md
         - name: Manage Content Security Policy (CSP)
@@ -1016,6 +1026,12 @@
             href: customize-site-navigation.md
           - name: Create a page URL
             href: create-page-URL.md
+        - name: Adventure Works theme
+          items:
+          - name: Adventure Works theme overview
+            href: adventure-works-theme.md
+          - name: Install the Adventure Works theme
+            href: install-adventure-works.md
       - name: Manage digital assets
         items:
         - name: Digital asset management overview
@@ -1070,6 +1086,16 @@
             href: add-hero-module.md 
           - name: Video player module
             href: add-video-player.md
+          - name: Active image module
+            href: active-image-module.md
+          - name: Image list module
+            href: image-list-module.md
+          - name: Interactive feature module
+            href: interactive-feature-module.md
+          - name: Subscribe module
+            href: subscribe-module.md
+          - name: Tile list module
+            href: tile-list-module.md
         - name: Header and footer modules
           items:
           - name: Header module
@@ -2564,6 +2590,8 @@
           href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Channel database extensions
           href: dev-itpro/channel-db-extensions.md
+        - name: Remove Cloud Scale Unit extensions
+          href: dev-itpro/retail-sdk/remove-csu-package.md
         - name: Enable custom CDX synchronization via extension
           href: dev-itpro/cdx-extensibility.md
         - name: Define and set order attributes

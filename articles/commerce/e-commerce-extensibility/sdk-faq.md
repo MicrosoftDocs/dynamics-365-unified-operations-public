@@ -265,6 +265,16 @@ The module library modules have been updated with the correct calling pattern to
 
 The "CartlineComponent" and "WishListIconComponent" components have been renamed to "CartLineItemComponent" and "WishlistIconComponent" respectively. If the previous component names are used in either a cloned module or a view extension, the build errors mentioned above will be displayed. To fix these issues, update the previous component names to the new component names in the cloned module or view extension code.
 
+### Module rendering fails after upgrading to SDK version 1.31
+
+The Microsoft Dynamics 365 Commerce online software development kit (SDK), version 1.31, introduced a change on how modules are rendered in the **development** environment. There were a number of issues because modules failed to load on the server side. Even though this happened during the development, because modules can be rendered both on server and client, the issue is masked. Also, server-side failures are less obvious, which makes them harder to detect. To make the failure more apparent, the SDK now renders a message that there is an issue rendering the module on the server and that the issue should be addressed to render the module successfully in development environment. This validation only happens in the **development** environment. The **production** environment isn't affected. 
+
+Here is an example of the error message displayed in developer mode:
+
+*test-module' threw exception*
+
+*Error: Error during server side rendering for module test-module of type test-module. NOTE: This error is only displayed in DEVELOPER mode. This won't affect PRODUCTION. This is a safety measure so developer can address issues that happen on the server. Please, address the following issue: window is not defined*
+
 ## Additional resources
 
 [Core data actions](core-data-actions.md)
