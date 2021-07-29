@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Set up Dynamics 365 Payment Connector for Adyen setup
+# Set up Dynamics 365 Payment Connector for Adyen
 
 [!include [banner](../includes/banner.md)]
 
