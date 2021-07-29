@@ -61,7 +61,7 @@ The **Create default setup** button on the menu can help Logistics managers cr
 To load the standard application identifiers
 
 1. Go to **Warehouse management \> Setup \> GS1 \> GS1 application identifiers**.
-1. Select **Create default setup** from the Action Pane.
+1. Select **Create default setup** from the Action Pane. <!-- KFM: Confirm the location of this command -->
 
 ### Custom application identifiers
 
@@ -70,13 +70,13 @@ If some or all the application identifiers used by your company are different fr
 To set up and customize your GS1 own application identifiers:
 
 1. Go to **Warehouse management \> Setup \> GS1 \> GS1 application identifiers.**
-1. There is the **GS1 application identifiers** grid that contains the following fields:
-    - **Application identifier** – Identifies which rules to apply when scanning a GS1 barcode.
+1. The page contains a grid with the following fields: <!-- KFM: Improve this description based on the UI -->
+    - **Application identifier** – Identifies which rules to apply when scanning a GS1 barcode. <!-- KFM: Isn't this just the name of the identifier? -->
     - **Description** – Enter a short description of the identifier.
-    - **Fixed length** – Specify whether the value of this application identifier has a fixed number of characters.
-    - **Length** – Enter the maximum number of characters in the value.
-    - **Type** – Select the type of value (*Numeric*, *Alphanumeric*, or*Date*).
-    - **Decimal** – Value decimal for numeric type.
+    - **Fixed length** – Specify whether the value of this application identifier has a fixed number of characters. <!-- KFM: What "value" is this? The value for the field that uses this application identifier? -->
+    - **Length** – Enter the maximum number of characters in the value. <!-- KFM: What "value" is this? The value for the field that uses this application identifier? -->
+    - **Type** – Select the type of value (*Numeric*, *Alphanumeric*, or *Date*). <!-- KFM: What "value" is this? The value for the field that uses this application identifier? -->
+    - **Decimal** – Value decimal for numeric type. <!-- KFM: What "value" is this? The value for the field that uses this application identifier? -->
 
 > [!NOTE]
 > The **Group separator** established on the **Warehouse management parameters page** may not be used if a value followed by an application identifier has a **Fixed length** or its length is maximized (equal to the **Length** set for the application identifier).
@@ -89,7 +89,7 @@ The GS1 standard is designed to enable workers to load several values after scan
 
 The **Generic GS1 setup** page lets you load a standard set of mappings between mobile device fields and standard application identifiers. It establishes the global rules for all mobile device menu items fields.
 
-To establish the generic GS1 setup, go to **Warehouse management \> Setup \> GS1 \> GS1 generic setup**. Then select **Create default setup** to automatically assign a suitable application identifier to each of the mobile device menu items that are currently in use.
+To establish the generic GS1 setup, go to **Warehouse management \> Setup \> GS1 \> GS1 generic setup**. Then select **Create default setup** to automatically assign a suitable application identifier to each of the mobile device menu items that are currently in use. <!-- KFM: How does the system know which identifier is most suitable for each field? -->
 
 > [!WARNING]
 > The **Create default setup** command deletes the entire existing GS1 setup (if any) and loads the standard setup.
@@ -101,7 +101,7 @@ If some or all the mobile device files and/or application identifiers used by yo
 To set up and customize your GS1 policy:
 
 1. Go to **Warehouse management \> Setup \> GS1 \> GS1 policy.**
-1. The page contains a grid with the following fields:
+1. The page contains a grid with the following fields: <!-- KFM: Improve this description based on the UI -->
     - **Field** – Specify the actual field from a Supply Chain Management table whose value could be set when scanning
     - **Application identifier** – Select the applicable application identifier defined on the **GS1 application identifiers** page.
     - **Description** – Enter a description for the row.
@@ -121,19 +121,22 @@ For each mobile device menu item that will be used to scan a GS1 code, you must 
 ## GS1 setup example
 
 This example applies to a system that has its GS1 options set up as follows:.
-
-- On the **Warehouse management parameters** page, **FNC1 character** = *\]1C* 
-- On the **GS1 policy** page, there is policy with **Policy name** = *Purchase receiving*. This policy includes the following lines:
+<!-- KFM: Add something here that explains how the GTIN/Item-number value gets mapped correctly (generic GS1 setup). -->
+<!-- KFM: Add any application ID setups that are relevant for the example barcode. -->
+- The following global settings are established on the **Warehouse management parameters** page:
+  - **FNC1 character:** *\]1C*
+  - **Group separator:** *~*
+- On the **GS1 policy** page, there is policy with **Policy name** = *Purchase receiving*. This policy includes the following lines: <!-- KFM: Update to better match the example barcode value. -->
   - **Field** = *ExpDate*, **Application identifier** = *17*, **Description** = *Expiry date*, **Sorting** = *0*
   - **Field** = *InventBatchId*, **Application identifier** = *10*, **Description** = *BatchNum*, **Sorting** = *0*
   - **Field** = *Qty*, **Application identifier** = *30*, **Description** = *Receiving quantity*, **Sorting** = *0*
-- One the **Mobile device menu items** page, there is a menu item named *Purchase receiving* with its**GS1 policy** set to *Purchase receiving*.
+- One the **Mobile device menu items** page, there is a menu item named *Purchase receiving* with its **GS1 policy** set to *Purchase receiving*.
 
-Now, goods for a purchase order have arrived at the warehouse. The arriving item has GTIN = 0000012345678, and the received quantity (30) is greater than that specified in the purchase order (10), but over receiving is allowed.
+Now, goods for a purchase order have arrived at the warehouse. The arriving item has GTIN = 0000012345678, and the shipped quantity is 30. The GTIN number is used as the **Item number** in Supply Chain Management.
 
 The worker proceeds as follows:
 
 1. On the mobile device, select the **Purchase receiving** menu item.
 1. Select the purchase order number.
-1. Select the **Item** field and scan the following barcode: \]1C0100000012345678\~3030\~10b1\~17220215
+1. Select the **Item** field and scan the following barcode: \]1C0100000012345678\~3030\~10b1\~17220215 <!-- KFM: What does "010" (after "]1C") mean in this code? -->
 1. The item (0000012345678), its dimensions, and its quantity (30) are all automatically populated after the single scan.
