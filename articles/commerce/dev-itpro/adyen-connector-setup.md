@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen setup
 description: This topic describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 07/28/2021
+ms.date: 07/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
+This topic describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen. For an overview of the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen overview](adyen-connector.md).
 
 ## Sign up with Adyen
 
@@ -186,7 +186,7 @@ The Adyen payment connector can be configured to communicate with devices via th
 1. On the **PIN pad** FastTab, in the **PIN pad** field, select **Network**.
 1. In the **Device name** field, enter **MicrosoftAdyenDeviceV001**.
 
-#### <a id="set-up-a-dynamics-365-register"></a>Set up a Dynamics 365 register
+#### Set up a Dynamics 365 register
 
 > [!NOTE]
 > These instructions assume that there is a dedicated mapping between a POS register and an Adyen payment terminal. For a hardware station that is based on Microsoft Internet Information Services (IIS), go to **Retail and Commerce \> Channels \> Stores \> All stores**, and select the store that you're setting up. Then, on the page for that store, on the **Hardware Stations** FastTab, follow the same instructions.
@@ -205,8 +205,7 @@ Payment terminals may not be used by multiple hardware stations. If a payment te
     1. **If using the "Cloud" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the **POIID** value that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `MX925-123456789`. The values in this field are case-sensitive.
 1. If the payment terminal includes an onboard printer and you want to print receipts from the processor using that printer, enter **123** in the **Port** field that is separate from the **IP address** field in the **PIN pad** FastTab.
 
-
-#### <a id="update-the-modern-pos-or-iis-hardware-station-configuration"></a>Update the Modern POS or IIS Hardware Station configuration
+#### Update the Modern POS or IIS Hardware Station configuration
 
 If you're packaging your own version of Modern POS by using the Retail SDK, you must follow these steps only one time in the SDK code before the installer is packaged. Otherwise, you must follow these steps after the standard Modern POS or IIS Hardware Station is installed.
 
@@ -229,9 +228,9 @@ If you're packaging your own version of Modern POS by using the Retail SDK, you 
 
 To configure the Dynamics 365 Payment Connector for Adyen for call center payments, follow the instructions in the [Set up a processor for new credit cards](#set-up-a-processor-for-new-credit-cards) section earlier in this topic.
 
-### Configure the connector in Commerce headquarters
+### Configure additional information for the connector
 
-To configure the connector in Commerce headquarters, follow these steps.
+To configure additional information for the connector in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Channels \> Online stores**.
 1. Select the online store to add the Dynamics 365 Payment Connector for Adyen.
