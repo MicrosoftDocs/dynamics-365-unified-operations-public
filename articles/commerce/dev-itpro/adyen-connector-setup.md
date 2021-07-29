@@ -264,6 +264,10 @@ To configure additional information for the connector in Commerce headquarters, 
 
 1. On the Action Pane, select **Save**.
 
+## Next steps
+
+For answers to frequently asked questions regarding the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen FAQ](adyen-connector-faq.md).
+
 ## Additional resources
 
 [Dynamics 365 Payment Connector for Adyen overview](adyen-connector.md)
