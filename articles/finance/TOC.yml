@@ -1994,10 +1994,6 @@
             href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
           - name: Generate an EU Intrastat declaration
             href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
-          - name: French Intrastat
-            href: localizations/emea-fra-intrastat.md
-          - name: Italian Intrastat
-            href: localizations/emea-ita-intrastat.md
         - name: Inventory journal reports
           href: localizations/emea-set-up-report-inventory-journal-names.md
         - name: Invoice issue deadlines
@@ -2122,6 +2118,8 @@
           href: localizations/emea-fra-derogatory-depreciation.md
         - name: French bills of exchange and promissory notes
           href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+        - name: French Intrastat
+          href: localizations/emea-fra-intrastat.md
         - name: NAF codes and siret numbers
           href: localizations/emea-fra-naf-codes-siret-numbers.md
         - name: Set up NAF codes and Siret numbers
@@ -2620,6 +2618,8 @@
           href: localizations/emea-ita-exil-zero-invoice-posting.md
         - name: Bank data usability enhancement
           href: localizations/emea-ita-exil-bank-accounts-setup.md
+        - name: Italian Intrastat
+          href: localizations/emea-ita-intrastat.md
         - name: Miscellaneous charges per kilogram in an Intrastat declaration
           href: localizations/emea-ita-exil-misc-charges-intrastat.md
         - name: Intent letters - Invoicing usual exporters
