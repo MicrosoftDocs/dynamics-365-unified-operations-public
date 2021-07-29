@@ -134,7 +134,7 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 ---
 
 > [!NOTE]
-> Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it's okay to have minor version updates within the same major version. These updates are normally very targeted fixes and don't meet the bar for full retesting, as long as the same major firmare version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in documentation. 
+> Adyen may release minor version updates after Microsoft has tested the major version. As long as a major version is supported, it's okay to have minor version updates within the same major version. These updates are normally very targeted fixes and don't meet the bar for full retesting, as long as the same major firmware version was previously tested. Updates shouldn't exceed the maximum Adyen firmware version listed in documentation. 
 >
 > Migrating from a Adyen firmware version earlier than version 53 to version 53 requires POS KB **4577957** for monthly updates of Commerce, versions 10.0.11 through 10.0.14. If one of those versions is in use and doesn't include the hotfix, post-upgrade of the payment terminal will only allow payments via NFC. Applying the hotfix to the POS resolves this issue. If the POS version is older than version 10.0.11, file a support request noting that a fix for KB **4577957** is required for an out of service MPOS.
 > 
@@ -251,7 +251,7 @@ The following countries have Commerce components available and card present supp
 
 #### Supported card not present countries
 
-The following countries are supported by Adyen for card not present tranactions. [Contact Adyen](https://www.adyen.com/contact/sales) for details about support for a specific country. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
+The following countries are supported by Adyen for card not present transactions. [Contact Adyen](https://www.adyen.com/contact/sales) for details about support for a specific country. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
 
 | Country | 
 | --- |
