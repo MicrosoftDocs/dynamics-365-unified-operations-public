@@ -61,8 +61,8 @@ The following bug fixes are included in this release.
 | 600422 | Payroll address validation failing for Ready to Pay. | Validation has been updated to require only one address of the type 'Payroll residency location' and only one address of the type 'Payroll work location'. |
 | 601226 | Data Integration issue: Payroll integration export project does not has the option to full push | The payroll integration to Ceridian DayForce was doing a incremental push instead of a full push. Ceridian requires to always be full refresh. This issue is now fixed, the entities in the data export project will no longer flip to incremental push. |
 | 602272 | Tiles that were added to Employee Self Service workspace are now missing, and tiles can no longer be added to it | We have fixed the personalization issue for Employee self service. New tiles can be added to the view and any existing personalization will be visible to users |
-| 600711 | Half-day definition selection field enabled for full day leave requests | This issue is now fixed and half day definition field will be enabled only when employees select a leave type with half day definition enabled and hlaf day as the amount value selected |
-| 602208 | Accural rate units displaying hours instead of days | This issue is now fixed and Time off form will show the correct leave unit (hours or days) for Accruate rate column |
+| 600711 | Half-day definition selection field enabled for full day leave requests | This issue is now fixed and half day definition field will be enabled only when employees select a leave type with half day definition enabled and half day as the amount value selected |
+| 602208 | Accrural rate units displaying hours instead of days | This issue is now fixed and Time off form will show the correct leave unit (hours or days) for Accrual rate column |
 
 ## In preview
 
