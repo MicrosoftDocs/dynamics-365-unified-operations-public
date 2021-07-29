@@ -35,7 +35,7 @@ This topic describes features that are new, changed, or coming soon in Dynamics 
 
 For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
 
-For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2021 release wave 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
 
 ## In this release
 
@@ -79,16 +79,12 @@ The following new features are in preview. For more information about turning fe
 
 ## Coming soon
 
-| Feature | Details |
-| --- | --- |
-| -- | -- |
-
-For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
 
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2021 release wave 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
 
