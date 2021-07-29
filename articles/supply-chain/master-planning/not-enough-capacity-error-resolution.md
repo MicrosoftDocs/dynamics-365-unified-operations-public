@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.20
 
 # Resolve 'Not enough capacity could be found' scheduling engine error
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 When you run scheduling, you may face the *'Production order %1 could not be scheduled. Not enough capacity could be found.'* error. There might be different reasons for why the scheduling engine fails with this error.
 
@@ -93,4 +93,4 @@ To check available capacity on the resource group, follow these steps.
 1. On the Action Pane, on the **Resource** tab, in the **View** group, select the **Capacity load** or **Capacity load, graphically** button to make sure there is available capacity.
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
