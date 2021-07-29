@@ -58,9 +58,9 @@ The bottom section of the page provides the following tabs:
 
 Teh following commands are available on the Action Pane:
 
-- **Update > Master planning** – Run master planning directly from the **Net requirements** page.
-- **Update > XXXX** – <!-- KFM: Explanation needed -->
-- **Update > XXXX** – <!-- KFM: Explanation needed -->
+- **Update \> Master planning** – Run master planning directly from the **Net requirements** page.
+- **Update \> Forecast planning** – Run forecast planning directly from the **Net requirements** page. This operation is not yet supported by Planning Optimization.
+- **Update \> Continuity scheduling** – Run continuity scheduling directly from the **Net requirements** page. This operation is not yet supported by Planning Optimization.
 
 ## Example scenario
 
@@ -101,7 +101,7 @@ Now you will open the **Net requirements** page for the product *1000* to review
 
     The existing on-hand partially covers the demand that comes from the sales order.
 
-    ![Pegging information for the on-hand](planning-optimization/media/pegging-on-hand.png "Pegging information for the on-hand")
+    ![Pegging information for the on-hand](media/pegging-on-hand.png "Pegging information for the on-hand")
 
 1. Select the *Planned purchase orders* requirement line and, under the **Pegging** FastTab, review the requirements that are covered by this supply. The following row should appear here:
 
@@ -109,18 +109,17 @@ Now you will open the **Net requirements** page for the product *1000* to review
 
     Because the sales order has been already partially covered, the system creates a planned purchase order for the remaining uncovered quantity.
 
-    ![Pegging information for the planned purchase order](planning-optimization/media/pegging-planned-purchase-order.png "Pegging information for the planned purchase order")
+    ![Pegging information for the planned purchase order](media/pegging-planned-purchase-order.png "Pegging information for the planned purchase order")
 
 1. Select the *Sales order* requirement line and, under the **Pegging** FastTab, review the requirements that cover this demand. The following rows should appear here:
 
     - **Reference:** *On-hand* | **Requirement quantity:** *10.00* | **Covered quantity:** *10.00*
     - **Reference:** *Planned purchase orders* | **Requirement quantity:** *15.00* | **Covered quantity:** *15.00*
 
-    ![Pegging information for the sales order.](planning-optimization/media/pegging-planned-purchase-order.png "Pegging information for the sales order")
+    ![Pegging information for the sales order.](media/pegging-planned-purchase-order.png "Pegging information for the sales order")
 
 > [!NOTE]
-> Since some features are not yet supported by Planning Optimization, so *Safety stock* and *Expired batch* requirement types aren't present on **Net requirements** page. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
-
+> Since some features are not yet supported by Planning Optimization, so the *Safety stock* and *Expired batch* requirement types aren't present on **Net requirements** page. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
 > [!NOTE]
 > If you are using the built-in master planning engine, then batch-controlled products are supported. For batch-controlled products, expired on-hand is displayed on the **Net requirements** page but is not pegged with demand requirements. Such expired on-hand lines are shown on the **Net requirements** page as *Expired batch* requirement lines.
