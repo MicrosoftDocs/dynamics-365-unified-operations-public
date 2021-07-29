@@ -31,8 +31,8 @@ This topic provides information about how intra-community value-added tax (VAT) 
 
 When legal entities that have a primary address in the Czech Republic purchase from European Union (EU) member states, they should do a self-assessment of VAT to ensure that the following conditions are met:
 
-- The output VAT is paid in the VAT period when the invoice was issued. This is the document date.
-- The input VAT wasn't deducted before the document receipt. This is the VAT register date.
+- The output VAT is paid in the VAT period on the date the invoice was issued. (This is the document date.)
+- The input VAT wasn't deducted before the document receipt date. (This is the VAT register date.)
 
 Information about intra-community VAT can be calculated and posted automatically. When you post an EU vendor invoice, two VAT transactions for the same amount must be created: one for payable sales tax and one for receivable sales tax. Follow these steps to set up the system so that it complies with this requirement.
 
