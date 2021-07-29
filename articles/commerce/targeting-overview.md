@@ -94,7 +94,7 @@ To create an audience in Commerce site builder, follow these steps.
     > [!NOTE]
     > You can have up to 100 values in a list, and each list item can contain up to 50 characters.
 
-1. When you're satisfied with the audience configuration, select **Finish editing**. You can then select **Publish** to make the audience available for use in a live target. Alternatively, you can publish the audience together with the target.
+1. When you're satisfied with the audience configuration, select **Finish editing**. You can then select **Publish** to make the audience available for use in a live target. Alternatively, you can publish the audience together with the target. 
 
 To edit an audience, select the hyperlink for it on the **Audiences** tab, and then select **Edit** in the audience editor that appears. To view the list of targets and pages that reference an audience, select the audience in the audience list view, and then select **View Assignments**. To delete an audience in the audience list view or the audience editor, unpublish it if it has already been published, and then select **Delete** on the command bar.
 
@@ -133,7 +133,7 @@ To create a target shell for page modules in Commerce site builder, follow these
     - **Basic preview** – Select this option to preview only the selected variation (default page or target), without any associated audiences.
     - **Advanced preview** – Select this option if you have multiple targets on a page and want to preview them as a user who belongs to a selected set of audiences, or on a specific date/time. Select **Next** to select from a list of relevant audiences. You can also remove the filter to select among all audiences.
 
-1. When you're satisfied with the target configuration, you must publish the page to make the target go live. Select **Publish** to make the target go live immediately. Alternatively, you can use a publish group to schedule when the page goes live.
+1. When you're satisfied with the target configuration, you must publish the page to make the target go live. Select **Publish** to make the target go live immediately. Alternatively, you can use a publish group to schedule when the page goes live. For information about publish groups, see [Work with publish groups](publish-groups.md).
 
 You can also target fragments. The procedure is similar. However, in step 1, you select **Fragments** instead of **Pages** in the left navigation pane.
 
