@@ -47,10 +47,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| ## [s360] Migrate to MSAL from ADAL - Due September 30, 2021 - (584168) | | |
-| ## Regular translation checkins for supported HCM languages - (394249) | | |
-| ## PU44 Uptake/Validation - (593816) | | |
-| ## Migration service internal end-to-end (V0) - (589862) | | |
+| Platform update 10.0.20 | -- | [Platform updates for version 10.0.20 of Finance and Operations apps (August 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20) |
 
 ### Bug fixes
 
@@ -63,7 +60,6 @@ The following bug fixes are included in this release.
 | --- | --- | --- |
 | 600422 | Payroll address validation failing for Ready to Pay. | Validation has been updated to require only one address of the type 'Payroll residency location' and only one address of the type 'Payroll work location'. |
 | 601226 | Data Integration issue: Payroll integration export project does not has the option to full push | The payroll integration to Ceridian DayForce was doing a incremental push instead of a full push. Ceridian requires to always be full refresh. This issue is now fixed, the entities in the data export project will no longer flip to incremental push. |
-| ## Scale out VM count in Europe Clusters - (601016) | | |
 | 602272 | Tiles that were added to Employee Self Service workspace are now missing, and tiles can no longer be added to it | We have fixed the personalization issue for Employee self service. New tiles can be added to the view and any existing personalization will be visible to users |
 | 600711 | Half-day definition selection field enabled for full day leave requests | This issue is now fixed and half day definition field will be enabled only when employees select a leave type with half day definition enabled and hlaf day as the amount value selected |
 | 602208 | Accural rate units displaying hours instead of days | This issue is now fixed and Time off form will show the correct leave unit (hours or days) for Accruate rate column |
@@ -85,7 +81,7 @@ The following new features are in preview. For more information about turning fe
 
 | Feature | Details |
 | --- | --- |
-| Platform update 10.0.20 (44) | Platform update 10.0.20 is scheduled to begin rolling out with the service release on July 26, 2021. For more information, see [Platform updates for version 10.0.20 of Finance and Operations apps (August 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20). |
+| -- | -- |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
