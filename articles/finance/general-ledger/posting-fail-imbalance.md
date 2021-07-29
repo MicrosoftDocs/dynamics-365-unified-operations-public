@@ -25,11 +25,9 @@ ms.dyn365.ops.version: 10.0.14
 
 ---
 
-# Reverse settings on journals and lines
+# Journal posting failure due to imbalance
 
 [!include [banner](../includes/banner.md)]
-
-# Journal posting failure due to imbalance
 
 This topic describes the reasons why debits and credits might not be in balance in voucher transactions, which will prevent the transactions from posting. The topic also includes steps for resolving the issue. 
 
