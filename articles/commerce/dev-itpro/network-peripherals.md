@@ -58,7 +58,7 @@ Out-of-box support is provided for network protocols for Epson and Star Micronic
 
 ### Adyen payment terminal
 
-For information about how to set up an Adyen payment terminal, see the "POS payment terminal" section in [Dynamics 365 Payment Connector for Adyen setup](adyen-connector-setup.md#pos-payment-terminal).
+For information about how to set up an Adyen payment terminal, see the "POS payment terminal" section in [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md#pos-payment-terminal).
 
 ### Epson or Star Micronics receipt printer and a cash drawer
 
