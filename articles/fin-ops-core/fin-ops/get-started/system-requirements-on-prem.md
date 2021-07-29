@@ -256,7 +256,7 @@ The following software must be present on a computer before any Finance + Operat
 For more information on Service Fabric, see [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 > [!NOTE]
-> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
+> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](../../dev-itpro/deployment/onprem-compatibility.md).
 
 ### Software requirements for database servers
 
