@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.21 of Finance and Operations apps.
 author: sericks007
-ms.date: 07/19/2021
+ms.date: 07/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,8 +48,8 @@ Some of these features must be enabled using [Feature management](../../fin-ops/
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
-| <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
-| System administration | [Enhanced support for full feature lifecycle in Feature management](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/NNN)  | [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
+| Client features | [Improved legal entity support for saved views](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/improved-legal-entity-support-saved-views)  | [Saved views](../../fin-ops/get-started/saved-views.md) |
+| System administration | **Enhanced support for full feature lifecycle in Feature management**<br><br>Microsoft product teams will now be able to update the state of optional features to be **On by default**. Previously, the only option for a feature to progress through its lifecycle after being released was to transition it directly to **Mandatory**, which does not permit the feature to be turned off. The ability to change a feature to be **On by default** has been added to provide an intermediate step between features being released and features becoming mandatory.<br><br>Features in the **On by default** state are automatically turned on, though organzations will be able to disable these features if more time is needed to validate them. The grid in the Feature management workspace has also been modified to clearly denote feature state (**Preview**, **Released**, **On by default**, **Mandatory**) in the new **Feature state** column.<br><br>To help set expectations for when features are expected to transition between states once released, we have made some changes to the documented feature lifecycle and corresponding timelines for features in Feature management. Please read the [Feature management overview](/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) topic for more details, including some examples of typical timelines for feature progression from **Released** to **On by default** to **Mandatory** .| [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 
 ## Additional resources
 
