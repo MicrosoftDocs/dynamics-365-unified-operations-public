@@ -2976,6 +2976,8 @@
           href: localizations/emea-pol-turnover-balances-statement.md
         - name: Split AP/AR exchange difference
           href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+        - name: Set up and use PKWiU codes for Poland
+          href: localizations/emea-pol-pkwiu-code.md  
         - name:  VAT declaration with registers (JPK_V7M, VDEK)
           items:
           - name: VAT declaration with registers (JPK_V7M, VDEK) overview
