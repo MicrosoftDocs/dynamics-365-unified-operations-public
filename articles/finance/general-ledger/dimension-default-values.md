@@ -2,7 +2,7 @@
 # required metadata
 
 title: Default financial dimensions on financial journals 
-description: This topic explains why opening balances might be missing when you close a year, and how to rebuild those balances if they are missing.
+description: The following rules define how financial dimension values default on transactions that are entered through financial journals (but not inventory or project journals). This also includes details in the event that you’re using fixed dimensions.
 author: kweekley
 ms.date: 08/04/2021
 ms.topic: index-page
