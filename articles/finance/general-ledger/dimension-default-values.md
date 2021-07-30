@@ -36,7 +36,7 @@ A voucher is entered into a journal, such as the general journal. The account is
 
 Another way way that default values are set happens when a fixed dimension is assigned to a main account. The fixed dimension value isn't used as the default entry on the Account or Offset account, but is assigned during posting. 
 
-I’m expecting the fixed dimension to be entered by default either before or after posting so that the posted accounting entry matches the line on the voucher. How are default entries for financial dimensions made?
+I’m expecting the fixed dimension to be entered by default either before or after posting so that the posted accounting entry matches the line on the voucher. Can I change how  default values are entered?
 
 ## Resolution
 
