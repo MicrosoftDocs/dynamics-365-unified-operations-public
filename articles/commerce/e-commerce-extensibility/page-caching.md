@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure page caching
-description: This topic describes how to configure pages to be cached in Microsoft Dynamics 365 Commerce to improve the performance of e-commerce pages sent back to customers. 
+description: This topic describes how to configure page caching in Microsoft Dynamics 365 Commerce to improve the performance of e-commerce pages sent back to customers. 
 author: samjarawan
 ms.date: 08/02/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes how to configure pages to be cached in Microsoft Dynamics 365 Commerce to improve the performance of e-commerce pages sent back to customers.
+This topic describes how to configure page caching in Microsoft Dynamics 365 Commerce to improve the performance of e-commerce pages sent back to customers.
 
 Page caching allows e-commerce pages to be cached on the server from which they can then be served to site users, significantly increasing performance time. Page caching and caching duration can be enabled and configured in Commerce site builder for [site pages](../modify-existing-page.md), or by configuring a [template](../templates-layouts-overview.md) that enables page caching and applying that template across multiple pages. Page caching is available as of the Commerce version 10.0.21 release (online SDK version 1.31.3 or greater).
  
