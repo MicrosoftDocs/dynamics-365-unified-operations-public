@@ -170,7 +170,7 @@ Follow these steps to handle the new custom receipt field for a QR code.
    
 ## Printing QR code images on OPOS printers
 
-When using an OPOS printer, you may need to convert the QR code image from the **png** format to the **bmp** format. Below is a sample of such conversion:
+When using an OPOS printer, you may need to convert the QR code image from the *png* format to the *bmp* format. Below is an example of this conversion.
 
    ```C#
     ...
