@@ -43,6 +43,7 @@ The SDK packages.json file that is included in the SDK root directory controls w
     "@msdyn365-commerce-modules/fabrikam-design-kit": "9.29",
     "@msdyn365-commerce/bootloader": "^1.0.0",
     "@msdyn365-commerce/retail-proxy": "9.29",
+}
 ```
 
 - **\@msdyn365-commerce-modules/starter-pack** – This entry represents the module library, which includes the set of starter modules and data actions. The preceding example is configured to pull down only the specified version.
