@@ -1546,6 +1546,8 @@
         items:
         - name: Australia overview
           href: localizations/australia.md
+        - name: Bank file formats for Australian banks
+          href: localizations/apac-aus-bank-file-formats.md
         - name: Business activity statement (BAS)
           href: localizations/apac-aus-business-activity-statement.md
         - name: Add report boxes and generate the BAS
@@ -1553,7 +1555,7 @@
         - name: Low-value pool depreciation
           href: localizations/apac-aus-low-value-pool-depreciation.md
         - name: Set up reason codes for the BAS
-          href: localizations/tasks/set-up-reason-codes-australia-bas.md
+          href: localizations/tasks/set-up-reason-codes-australia-bas.md          
       - name: Austria
         items:
         - name: Austria overview
@@ -1872,6 +1874,10 @@
           href: localizations/emea-cze-vat-statement-details.md
         - name: VAT declaration (Czech Republic)
           href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+        - name: Bank symbols for bank accounts
+          href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
+        - name: Intra-community VAT
+          href: localizations/emea-cze-intra-community-VAT.md
         - name: Year-end close
           href: localizations/emea-cze-hun-year-end.md
       - name: Denmark
