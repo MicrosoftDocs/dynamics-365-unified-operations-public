@@ -57,14 +57,12 @@ SDK dependencies are backward-compatible and can be pulled down at any time. The
 Patch versions won't change dependencies on the Commerce Scale Unit. Therefore, they can be updated at any time. The tilde (\~) symbol can be used with version numbers to ensure that any patch versions that might include software updates are always pulled down. The following example shows how the tilde is used to pull down the latest patch version.
 
 ```json
-...
 "dependencies": {
     "@msdyn365-commerce-modules/starter-pack": "~9.29.0",
     "@msdyn365-commerce-modules/fabrikam-design-kit": "~9.29.0",
     "@msdyn365-commerce/bootloader": "^1.0.0",
     "@msdyn365-commerce/retail-proxy": "~9.29.0",
 }
-...
 ```
 ### Module library versions mapped to Commerce Scale Unit versions 
 
