@@ -167,9 +167,52 @@ Follow these steps to handle the new custom receipt field for a QR code.
           </composition>
        </commerceRuntimeExtensions>
     ```
+   
+## Printing QR code images on OPOS printers.
 
-## Appendix A
-### Sample of a CRT extension class for printing QR codes
+When using an OPOS printer, you may need to convert the QR code image from the **png** format to the **bmp** format. Below is a sample of such coversion:
+
+   ```C#
+    ...
+        var qrCodeRequest = new
+            EncodeQrCodeServiceRequest(stringBuilder.ToString())
+            {
+              Width = 150, // Replace with desired QR code width
+              Height = 150 // Replace with desired QR code width
+            };
+
+            EncodeQrCodeServiceResponse qrCodeDataResponse = await
+            request.RequestContext.ExecuteAsync<EncodeQrCodeServiceResponse>(qrCodeRequest).ConfigureAwait(false);
+
+            string qrCode = ConvertImagePNGToBMP(qrCodeDataResponse.QRcode);
+            receiptFieldValue = $"<I:{qrCode}>";
+            return receiptFieldValue;
+    ...
+    /// <summary>
+    /// Conversts QR code image from "png" to "bmp".
+    /// </summary>
+    /// <param name="qrCode">Base64 represents the image to convert.</param>
+    /// <returns>The image as base64.</returns>
+    private static string ConvertImagePNGToBMP(string qrCode)
+    {
+        string convertedQRCode = qrCode;
+
+        byte[] imageBytes = Convert.FromBase64String(qrCode);
+        using (MemoryStream msFrom = new MemoryStream(imageBytes))
+        {
+            var image = Image.FromStream(msFrom);
+            using (MemoryStream msTo = new MemoryStream())
+            {
+                image.Save(msTo, ImageFormat.Bmp);
+                convertedQRCode = Convert.ToBase64String(msTo.ToArray());
+            }
+        }
+
+        return convertedQRCode;
+    }
+   ```
+
+## Sample of a CRT extension class for printing QR codes
 
  ```C#
 namespace Contoso
@@ -495,42 +538,4 @@ namespace Contoso
             }
         }
     }
-   ```
-   
-   ## Additinal code suggestion regarding the printing QR code images on OPOS printers.
-   As service saves `EncodeQrCodeServiceResponse` QR code image in "png" format but some kind of OPOS printers can not print it, its should be converted to "bmp".
-   ```C#
-    ...
-   EncodeQrCodeServiceResponse qrCodeDataResponse = await request.RequestContext.ExecuteAsync<EncodeQrCodeServiceResponse>(qrCodeRequest).ConfigureAwait(false);
-
-                    string qrCode = ConvertImagePNGToBMP(qrCodeDataResponse.QRcode);
-                    receiptFieldValue = $"<I:{qrCode}>";
-                }
-
-                return receiptFieldValue;
-            }
-
-            /// <summary>
-            /// Conversts QR code image from "png" to "bmp".
-            /// </summary>
-            /// <param name="qrCode">Base64 represents the image to convert.</param>
-            /// <returns>The image as base64.</returns>
-            private static string ConvertImagePNGToBMP(string qrCode)
-            {
-                string convertedQRCode = qrCode;
-
-                byte[] imageBytes = Convert.FromBase64String(qrCode);
-                using (MemoryStream msFrom = new MemoryStream(imageBytes))
-                {
-                    var image = Image.FromStream(msFrom);
-                    using (MemoryStream msTo = new MemoryStream())
-                    {
-                        image.Save(msTo, ImageFormat.Bmp);
-                        convertedQRCode = Convert.ToBase64String(msTo.ToArray());
-                    }
-                }
-
-                return convertedQRCode;
-            }
-   ```
-     
+   ```     
