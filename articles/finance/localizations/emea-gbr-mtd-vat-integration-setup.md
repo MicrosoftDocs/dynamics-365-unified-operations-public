@@ -345,3 +345,46 @@ If security roles aren't defined for a web application, only a system admin can 
 
 ## <a id="headers"></a>Sending fraud prevention data
 
+It is [required by law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) in the UK to submit header data for the VAT (MTD) APIs. When the MTD VAT APIs are used, MTD-compatible software must submit HTTP fraud prevention headers. This may include location information and other personal identifiers such as IP addresses. Your privacy is important to us. To learn more read our [Privacy Notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
+
+MTD feature in Finance supports fraud prevention headers required by HMRC (v.3.0) for **WEB_APP_VIA_SERVER** for requests executed in non-batch mode and **BATCH_PROCESS_DIRECT** for requests executed in batch mode. Table below represents general implementation details of the fraud pervention headers.
+
+| **HTTP header**                  | **Description**                  | **Implementation details**                                    |
+|----------------------------------|----------------------------------|---------------------------------------------------------------|
+| Gov-Client-Connection-Method     | Constant value: DESKTOP_APP_VIA_SERVER or BATCH_PROCESS_DIRECT (in case a request is sent in batch mode). | Constant value |
+| Gov-Client-Browser-Do-Not-Track  | A true or false value describing if the Do Not Track option is enabled on the browser. | Automatically identified by the system  |
+| Gov-Client-Browser-JS-User-Agent | JavaScript-reported user agent string from the originating device. | Automatically identified by the system  |
+| Gov-Client-Browser-Plugins       | A list of browser plugins on the originating device. | Automatically identified by the system  |
+| Gov-Client-Device-ID             | An identifier unique to an originating device. The format of the header was updated to accommodate latest requirement of HMRC. | Automatically identified by the system  |
+| Gov-Client-Local-IPs             | A list of all local IP addresses (IPv4 and IPv6) available to the originating device. | Automatically identified by the system |
+| Gov-Client-Local-Ips-Timestamp   | A timestamp to show when Gov-Client-Local-IPs is collected. This header's value includes the timestamp when the client local IP was collected or in case it was defined manually, the timestamp when the request is sent to HMRC. | Automatically identified by the system |
+| Gov-Client-MAC-Addresses         | The list of MAC addresses available on the originating device. | Automatically identified by the system   |
+| Gov-Client-Multi-Factor          | A list of key-value data structures containing details of the multi-factor authentication (MFA) statuses related to the API call.  | Omitted for Dynamics 365 Finance. |
+| Gov-Client-Public-IP             | The public IP address (IPv4 or IPv6) from which the originating device makes the request. | Automatically identified by calling external web services, that return value of public IP address [(\*)](#remark). Find more information in [Set up application-specific parameters for MTD VAT web request headers format](#headers) section of this topic. |
+| Gov-Client-Public-Ip-Timestamp   | A timestamp to show when Gov-Client-Public-IP is collected. This header's value includes the timestamp when the client public IP was collected from an external web-service or in case it was defined manually, the timestamp when the request is sent to HMRC. | Automatically identified by the system  |
+| Gov-Client-Public-Port           | The public TCP port that the originating device uses when initiating the request. | Omitted for Dynamics 365 Finance  |
+| Gov-Client-Screens               | Information related to the originating device’s screens. The fields include (width of the screen, height of the screen, scaling factor of the screen, color depth of the screen). | Automatically identified by the system |
+| Gov-Client-Timezone              | The local time-zone of the originating device. | Automatically identified by the system  |
+| Gov-Client-User-Agent            | An attempt to identify the operating system family, version, device manufacturer and model of the originating device.  | Automatically identified by the system   |
+| Gov-Client-User-IDs              | A key-value data structure containing the user identifiers.  | Automatically identified by the system |
+| Gov-Client-Window-Size           | The number of pixels of the window on the originating device in which the user initiated (directly or indirectly) the API call to HMRC.  | Automatically identified by the system |
+| Gov-Vendor-Forwarded             | A list that details hops over the internet between services that terminate TLS. | Automatically identified by the system as a value composed of values collected for Gov-Client-Public-IP and Gov-Vendor-Public-IP |
+| Gov-Vendor-License-IDs           | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device.  | Automatically identified by the system |
+| Gov-Vendor-Product-Name          | The name of the product marketed to end users. | Automatically identified by the system |
+| Gov-Vendor-Public-IP             | The public IP address of the server to which the originating device send their requests. | Automatically identified by calling external web services, that return value of public IP address [(\*)](#remark). Find more information in [Set up application-specific parameters for MTD VAT web request headers format](#headers) section of this topic. |
+| Gov-Vendor-Version               | A key-value data structure of software versions involved in handling a request. | Automatically identified by the system   |
+
+Each time when user initiates a request to HMRC's MTD VAT API, Finance starts collecting values for all of the fraud prevention headers. When collected, Finance shows to the user all the values that were collected in respect to all the fraud prevention headers.
+
+![Fraud prevention headers.](media/uk-mtd-fp-values.png)
+
+To continue submission of your request, user must select the check box to consent to the transmission of the information that is listed on the page. The **Submit** button then becomes available, and user can select it to submit the request to HMRC. 
+
+If user cancels the transmission at this point by selecting **Do not submit**, the status of the electronic message is changed to **Error**, and a description of the error is attached to the action log. Select **Send report** to continue the transmission of the same electronic message.
+
+When a request to HMRC in a batch job is initiated, the fraud prevention headers are transmitted to HMRC, and information about the headers that were sent is attached to the batch job. To view this information, go to **System administration** \> **Inquiries** \> **Batch jobs**, and select your batch job. To review the log details, select **Batch job** \> **Log** on the Action Pane.
+
+> [!NOTE]
+> <a id="remark"></a>(\*) Finance provides alternative possibility to using external web-addresses for retrieving public IP addresses of client and server for the cases when system admin can manually identify and specify their values. Go to **Supplementary headers** fast tab of **Tax** > **Setup** > **Electronic messages** > **Web applications** page and define manually values for **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers. These values will be used by the system in case external web-services are not defined as described in [Set up application-specific parameters for MTD VAT web request headers format](#headers) or system did not manage to obtain IP address automatically.
+> 
+> ![Supplementary headers.](media/uk-mtd-fp-manually.png)
