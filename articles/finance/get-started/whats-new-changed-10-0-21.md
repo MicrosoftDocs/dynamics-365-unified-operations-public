@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.21 
+title: What's new or changed in Dynamics 365 Finance 10.0.21 (October 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.21 preview release.
 author: roschlom
 ms.date: 07/16/2021
@@ -27,28 +27,28 @@ ms.dyn365.ops.version: 10.0.21
 
 ---
 
-# Preview features in Dynamics 365 Finance 10.0.21 
+# Preview features in Dynamics 365 Finance 10.0.21 (October 2021)
 
 [!include [banner](../includes/banner.md)]
 
 This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.21. This version has a build number of 10.0.xxx and is available as follows:
 
-- **Preview of release:** August 2021
-- **General availability of release (self-update):** XXX 2021
-- **General availability of release (auto-update):** XXX 2021
+- **Preview of release**: August 2021
+- **General availability of release (self-update)**: XXX 2021
+- **General availability of release (auto-update)**: XXX 2021
 
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365/release-plans/) for official release dates for each feature. We may update this topic to include features that made it into the build after this topic was initially published.
+The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plans](/dynamics365/release-plans) for official release dates for each feature. We may update this topic to include features that made it into the build after this topic was initially published.
 
 | Feature area | Feature | More information |
 |----|----|----|
-| Electronic invoicing | [Configurable Italian electronic invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-italian-electronic-invoice) | [Electronic Invoicing overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-service-overview) |
-| Electronic invoicing | [Configurable Finnish electronic invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-finnish-electronic-invoice) | [Electronic Invoicing overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-service-overview) |
-| Electronic invoicing | [Configurable cross-country PEPPOL electronic invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-cross-country-peppol-electronic-invoice) | [Electronic Invoicing overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-service-overview) |
-| Electronic invoicing | [Configurable Brazilian e-Invoice (NF-e)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing--configurable-brazilian-e-invoice-nf-e) | [Electronic Invoicing overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-service-overview) |
-| Electronic invoicing | [Configurable Brazilian e-invoice for services (NFS-e)](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-brazilian-e-invoice-services-nfs-e) | [Electronic Invoicing overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-service-overview) |
+| Electronic invoicing | [Configurable Italian electronic invoice](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-italian-electronic-invoice) | [Electronic Invoicing overview](../localizations/e-invoicing-service-overview.md) |
+| Electronic invoicing | [Configurable Finnish electronic invoice](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-finnish-electronic-invoice) | [Electronic Invoicing overview](../localizations/e-invoicing-service-overview.md) |
+| Electronic invoicing | [Configurable cross-country PEPPOL electronic invoice](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-cross-country-peppol-electronic-invoice) | [Electronic Invoicing overview](../localizations/e-invoicing-service-overview.md) |
+| Electronic invoicing | [Configurable Brazilian e-Invoice (NF-e)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing--configurable-brazilian-e-invoice-nf-e) | [Electronic Invoicing overview](../localizations/e-invoicing-service-overview.md) |
+| Electronic invoicing | [Configurable Brazilian e-invoice for services (NFS-e)](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/electronic-invoicing-configurable-brazilian-e-invoice-services-nfs-e) | [Electronic Invoicing overview](../localizations/e-invoicing-service-overview.md) |
 
 ## Feature enhancements included in this release
 
@@ -85,11 +85,11 @@ For information about the bug fixes included in this update, sign in to Lifecycl
 ### Regulatory updates
 For information about regulatory updates for Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
-### Dynamics 365: 2021 release wave 1 plan
+### Dynamics 365: 2021 release wave plans
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2021 release wave 1 plan](/dynamics365-release-plan/2021wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out [Dynamics 365 Finance 2021 release wave 1](/dynamics365/release-plan/2021wave1/finance-operations/dynamics365-finance) and [Dynamics 365 Finance 2021 release wave 2](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
 
 ### Removed and deprecated features
 
