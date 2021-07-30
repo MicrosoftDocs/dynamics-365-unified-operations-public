@@ -36,9 +36,12 @@ These tasks will prepare Finance to interoperate with the HMRC's web service to 
 - [Set up application-specific parameters for VAT Declaration format](#declaration).
 - [Set up application-specific parameters for MTD VAT web request headers format](#headers).
 - [Import a package of data entities that includes a predefined Electronic Messaging (EM) setup](#entities).
+- [Paper format of VAT statement (VAT 100)](#format)
 - [Set up VAT registration number of the company reporting VAT](#vrn).
-- [Set up General ledger parameters](#gl).
+- [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vatgroup).
 - [Define a sales tax settlement period](#settlement).
+- [Number sequences Electronic messages functionality](#sequences).
+- [Document management parameters](#docmanagement).
 - [Set up security roles for electronic message processing](#processing).
 - [Set up security roles to interoperate with HMRC's MTD VAT web-service](#application).
 - [Sending fraud prevention data](#headers).
@@ -116,6 +119,8 @@ and the credit note identifier. The following table provides a definition of thi
 | SalesReverseChargeCreditNote    | <ul><li>Credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge_W = Yes</li></ul> |
 | SalesReverseCharge              | <ul><li>Not credit note</li><li>Tax direction = Sales tax payable</li><li>ReverseCharge_W = Yes</li></ul> |
 
+For more information about how boxes of VAT declaration of the UK are using the result values defined for **ReportFieldLookup** application-specific parameter, see [VAT setup details for VAT declaration of the UK](emea-gbr-mtd-vat-integration-declaration.md) section.
+
 Before you start to use the **VAT Declaration JSON (UK)** and **VAT Declaration Excel (UK)** formats, you must set up the **ReportFieldLookup** application-specific parameter. 
 You can download an example of this setup from the [Shared asset library in LCS](https://lcs.dynamics.com/V2/SharedAssetLibrary). 
 In the Shared asset library, select the **Data package** asset type, find the **UK MTD VAT ReportFieldLookup** file in the list of data package files, and download it.
@@ -185,11 +190,14 @@ To enable Finance collecting client and server public IPs, you must setup **Exte
 
 ## <a id="entities"></a>Import a package of data entities that includes a predefined Electronic Messaging (EM) setup
 
-The process of setting up the Electronic messages functionality for MTD for VAT has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
+The process of setting up the EM functionality for MTD VAT has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
-In [LCS](https://lcs.dynamics.com/v2), go to the Shared asset library, and select the **Data package** asset type. Then find **UK MTD-VAT setup.zip** in the list of data package files, and download it to your computer.
+> [!NOTE]
+> Some records in the data entities in the package include a link to ER configurations. It's important that you import ER configurations into Finance before you start to import the data entities package.
 
-After the UK MTD-VAT setup.zip file is downloaded, open Finance, select the company that you will interoperate with HMRC from, and then go to **Workspaces** \> **Data management**.
+In [LCS](https://lcs.dynamics.com/v2), go to the Shared asset library, and select the **Data package** asset type. Then find **UK MTD VAT setup** in the list of data package files, and download it to your computer.
+
+After the **UK MTD VAT setup** file is downloaded, open Finance, select the company that you will interoperate with HMRC's MTD VAT API from, and then go to **Workspaces** \> **Data management**.
 
 Before you import setup data from the package of data entities, follow these steps to make sure that the data entities in your application are refreshed and synced.
 
@@ -199,42 +207,102 @@ Before you import setup data from the package of data entities, follow these ste
 4. Save the mapping.
 5. Repeat steps 3 through 4 for each data entity in the package before you start the import.
 
-For more information about data management, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). 
+You must now import data from the **UK MTD VAT setup** file into the selected company. 
+1. In the **Data management** workspace, select **Import**, and set **Group name** on the **Import** fast tab.
+2. Click **Add file** button on **Selected entities** fast tab.
+3. Select the previously downloaded **UK MTD VAT setup** file by the **Upload and add** button.
+4. Wait until you wiil see the the data entities from the file are listed in the grid of the **Selected entities** fast tab and click **Close** button.
+5. Click **Import** button on the Action pane to start importing job.
 
-You must now import data from the UK MTD-VAT setup.zip file into the selected company. In the **Data management** workspace, select **Import**, and set the **Source data format** field to **Package**. Select **Upload and add**, select the **UK MTD-VAT setup.zip** file on your computer, and upload it.
-
-![Upload and add button.](media/emea-gbr-mtd-vat-add-file.png)
+![Import a package of data entities that includes a predefined Electronic Messaging (EM) setup.](media/uk-mtd-data-entities.png)
 
 For more information, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2ffin-and-ops%2ftoc.json).
 
-> [!NOTE]
-> Some records in the data entities in the package include a link to ER configurations. It's important that you import ER configurations into Finance before you start to import the data entities package.
-
-The **UK MTD-VAT setup** package provides a setup for two sets of processing that can be used independently:
+The **UK MTD VAT setup** package provides a setup for two sets of processing that can be used independently:
 
 - **UK MTD VAT returns** – For interoperation with the **production** HMRC web service.
 - **UK MTD VAT TEST** – For interoperation with the **sandbox** HMRC web service.
 
-The **UK MTD-VAT setup** package also provides a setup for two web applications that are used to interoperate with HMRC web services:
+The **UK MTD VAT setup** package also provides a setup for two web applications that are used to interoperate with HMRC web services:
 
 - **Dynamics 365 Finance** – For interoperation with the **production** HMRC web service.
 - **Sandbox HMRC** – For interoperation with the **sandbox** HMRC web service.
 
-When you import the setup of Electronic messages functionality for MTD for VAT from the **UK MTD-VAT setup** package that Microsoft provides, credentials for the **Dynamics 365 Finance** web application are imported into your system and stored in encrypted format. These credentials are provided by Microsoft and will be used for production interoperation with HMRC.
+When you import the setup of Electronic messages functionality for MTD for VAT from the **UK MTD VAT setup** package that Microsoft provides, credentials for the **Dynamics 365 Finance** web application are imported into your system and stored in encrypted format. These credentials are provided by Microsoft and will be used for production interoperation with HMRC.
 
-For more information about the predefined setup that is included in the data entities in the package for MTD for VAT, see [Appendix 1: Electronic messages setup for MTD for VAT](#appendix-1-electronic-messages-setup-for-mtd-for-vat) later in this topic. 
+For more information about the predefined setup that is included in the data entities in the package for MTD for VAT, see [Checklist for Electronic messages setup for MTD VAT](emea-gbr-mtd-vat-integration-em-setup-checklist.md) later in this topic. 
 
 ## <a id="vrn"></a>Set up VAT registration number of the company reporting VAT
 
+Starting from version 4 (KB4617940) **UK MTD VAT setup** package provides possibility to define VAT registration number of the company which must report VAT return by using MTD feature in Finance independently from the primary address and Registration ID defined for the legal entity. This possibility is enabled with **Tax registration number** additional field and allows for legal entites with multiple VAT registration to easily submit their VAT return specific to their VAT registration in the UK. For more information about supporting filing for multiple VAT registrations, see [Multiple VAT registration numbers](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers).
 
-## <a id="gl"></a>Set up General ledger parameters
+To define VAT registration number (VRN) which must be used by MTD feature in Finance to interoperate with HMRC's MTD VAT API and submit VAT return for follow the next steps.
 
-On the **General ledger parameters** page, you must set up the following parameters:
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**. 
+2. Select **UK MTD VAT returns** processing.
+3. On the **Message additional fields** fast tab, in the **Tax registration number** field, define the VRN from the name of which the VAT return will be sent to HMRC.
+4. Save your settings.
 
-- Number sequences
-- VAT statement format mapping
+## <a id="format"></a>Paper format of VAT statement (VAT 100)
 
-### Number sequences
+You can generate a paper format of the **VAT 100** report by using the **Report sales tax for settlement period** dialog box (**Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**). Alternatively, you can generate the statement for a selected sales tax payment transaction from the **Sales tax payments** page (**Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**). In both cases, the **VAT 100** report is generated in Microsoft SQL Server Reporting Services (SSRS) format.
+
+To generate the **VAT 100** report in Excel format instead of [SSRS format](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/removed-deprecated-features-finance#vat-100-report-for-the-united-kingdom-in-ssrs-format), you must define an ER format on the **General ledger parameters** page. 
+
+1. Go to **Tax** \> **Setup** \> **General ledger parameters**.
+2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (UK)**.
+
+## <a id="vatgroup"></a>Enable VAT return reporting for companies that report as a VAT group in the same system database
+
+This section of MTD feature setup is mandatory only for companies that report as a VAT group in the same system database.
+
+To prepare Finance to report a VAT return for a VAT group, make sure that your business processes and the system setup meet the following conditions:
+
+- Tax information from all the subsidiaries is registered in the same system (Finance).
+- The system correctly reflects all the tax transactions in accordance with the rules and principles of the UK.
+- Settlement periods for all the legal entities that are involved to the VAT group are identically defined in full accordance with the period intervals that are defined in the HMRC online account.
+- VAT settlement (the [Settle and post sales tax](../general-ledger/tasks/create-sales-tax-payment.md) job) is done in each subsidiary legal entity.
+- A **VAT 100** report is correctly generated in paper format in each subsidiary legal entity.
+- One legal entity is set up for interoperation with HMRC, according to the information in this topic, and users can request VAT obligations from this legal entity for the VAT group.
+
+To enable Finance to report VAT return from multiple legal entities in the same system database, turn on the **Cross-company queries for the populate records actions** feature in Feature management. Go to **Workspaces** \> **Feature management**, find **Cross-company queries for the populate records actions** in the list, and then select **Enable now** in the lower right of the page.
+
+## <a id="settlement"></a>Define a sales tax settlement period
+
+Electronic message processing that is defined for MTD for VAT in the **UK MTD VAT setup** package is company-agnostic. Therefore, it can be implemented in any legal entity in Finance.
+
+Both the **UK MTD VAT returns** processing (for production) and the **UK MTD VAT TEST** processing (for testing purposes) let you collect sales tax payment transactions in the legal entity. You can then generate a VAT return in JSON or Excel format, for either production purposes or testing purposes. The collection of sales tax payment transactions is implemented by using the **Populate VAT return records** action of the **Populate record** type. To correctly collect sales tax payment transactions, you must define a sales tax settlement period for the **Populate VAT return records** action. 
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**, and select **Populate VAT return records**. 
+2. On the **Datasource setup** FastTab, select the **VAT payment** record, and then select **Edit query**. 
+3. For the **Settlement period** field of the **Sales tax payments** table, define the sales tax settlement period related to which tax transactions from the selected legal entity must be reported to HMRC.
+
+![Sales tax inquiry.](media/emea-gbr-sales-tax-inquiry.png)
+
+If you don't set the **Settlement period** field, all tax transactions from the selected legal entity will be considered for reporting for MTD VAT.
+
+In case your company must report VAt return as a VAT group, make sure that all the nessesary conditions that are described in [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vatgroup) are fulfilled and setup sales tax settlement period for all the legal entities included into the VAT group
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**. On the **Populate records action** page, **Company** field is available in the **Datasources setup** grid. For existing records that were created during the general setup of the MTD for VAT feature, this field shows the identifier of the current legal entity. It's assumed that the settlement period for the current legal entity was set up during the general setup of the MTD for VAT feature.
+2. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting for the VAT group. Set the following fields.
+
+    | Field name             | Value |
+    |------------------------|-------|
+    | Name                   | Enter a text value that will help you understand where this record comes from. For example, enter **VAT payment of Subsidiary 1**. |
+    | Message item type      | Select **VAT return**. This value is the only value that is available for all the records. |
+    | Account type           | Select **All**. |
+    | Master table name      | Specify **TaxReportVoucher** for all the records. |
+    | Document number field  | Specify **Voucher** for all the records. |
+    | Document date field    | Specify **TransDate** for all the records. |
+    | Document account field | Specify **TaxPeriod** for all the records. |
+    | Company                | Select the ID of the subsidiary legal entity. |
+    | User query             | The check box is automatically selected when you define criteria by using **Edit query** button. |
+
+3. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
+
+![Setup of data sources for a VAT group.](media/uk-mtd-populate-records-datasources.png)
+
+## <a id="sequences"></a>Number sequences Electronic messages functionality
 
 To work with the Electronic messages functionality, you must define related number sequences. 
 
@@ -244,29 +312,11 @@ To work with the Electronic messages functionality, you must define related numb
 - Message
 - Message item
 
-### VAT statement format mapping
+## <a id="docmanagement"></a>Document management parameters
 
-You can generate a paper format of the **VAT 100** report by using the **Report sales tax for settlement period** dialog box (**Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**). Alternatively, you can generate the statement for a selected sales tax payment transaction from the **Sales tax payments** page (**Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**). In both cases, the **VAT 100** report is generated in Microsoft SQL Server Reporting Services (SSRS) format.
+Before you start to submit a VAT return to HMRC, you must make sure that the **JSON** file type is defined in the list of file types on the **File types** tab of the **Document management parameters** page (**Organization administration** \> **Document management** \> **Document management parameters**). If the **JSON** file type isn't in the list, add it.
 
-To generate the **VAT 100** report in Excel format instead of SSRS format, you must define an ER format on the **General ledger parameters** page. 
-
-1. Go to **Tax** \> **Setup** \> **General ledger parameters**.
-2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (UK)**.
-
-If you leave the **VAT statement format mapping** field blank, the **VAT 100** report will be generated in SSRS format.
-
-## <a id="settlement"></a>Define a sales tax settlement period
-
-Electronic message processing that is defined for MTD for VAT in the UK MTD-VAT setup.zip file is company-agnostic. Therefore, it can be implemented in any legal entity in Finance.
-
-Both the **UK MTD VAT returns** processing (for production) and the **UK MTD VAT TEST** processing (for testing purposes) let you collect sales tax payment transactions in the legal entity. You can then generate a VAT return in JSON or Excel format, for either production purposes or testing purposes. The collection of sales tax payment transactions is implemented by using the **Populate VAT return records** action of the **Populate record** type. To correctly collect sales tax payment transactions, you must define a sales tax settlement period for the **Populate VAT return records** action. 
-
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**, and select **Populate VAT return records**. 2. On the **Datasource setup** FastTab, select the **VAT payment** record, and then select **Edit query**. 
-3. For the **Settlement period** field of the **Sales tax payments** table, define the sales tax settlement period when tax transactions from the selected legal entity must be reported to HMRC.
-
-![Sales tax inquiry.](media/emea-gbr-sales-tax-inquiry.png)
-
-If you don't set the **Settlement period** field, all tax transactions from the selected legal entity will be considered for reporting for MTD for VAT.
+![JSON File type setup.](media/uk-mtd-json-file-type-setup.png)
 
 ## <a id="processing"></a>Set up security roles for electronic message processing
 
