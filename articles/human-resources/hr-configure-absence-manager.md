@@ -95,16 +95,16 @@ The Absence manager role must be assigned to employees to enable them to approve
 ## Absence manager workspace
 
 In the **Employee Self-Service** workspace, the **Leave management** tab shows the absence information about the employees who are assigned to the absence manager in the Leave hierarchy. There are a few options available to the absence manager: 
-1. Review time off requests.</br>
-2. Submit a time off request on behalf of an employee.</br>
-3. View all employees assigned to them as part of the leave hierarchy.</br>
-4. View the absence manager calendar.</br>
+ - Review time off requests.</br>
+ - Submit a time off request on behalf of an employee.</br>
+ - View all employees assigned to them as part of the leave hierarchy.</br>
+ - View the absence manager calendar.</br>
 
 On the **Leave management** workspace, there are two tabs:
-1. **Time off requests**: This tab will list all the pending time off requests that the absence manager can approve. The abesence manager can select multiple records and take action on them at the same time. If cross-company leave view is enabled, this list will show pending time off requests across all legal entities they have access to. Else, it will show the pending time off requests for the legal entity currently selected. </br>
-2. **All employees**: This tab will list all the employees that are assigned to the absence manager in the Leave hierarchy. There are a couple of options available for each employee:
-- **Request time off** -  Submit a new time off request for the selected employee.</br>
-- **Time off** – View balances, approved time off, and time-off requests for the selected employee.</br>
+ - **Time off requests**: This tab will list all the pending time off requests that the absence manager can approve. The absence manager can select multiple records and take action on them at the same time. If cross-company leave view is enabled, this list will show pending time off requests across all legal entities they have access to. Otherwise, it will show the pending time off requests for the legal entity currently selected. </br>
+ - **All employees**: This tab will list all the employees that are assigned to the absence manager in the Leave hierarchy. There are a couple of options available for each employee:
+    - **Request time off** -  Submit a new time off request for the selected employee.</br>
+    - **Time off** – View balances, approved time off, and time-off requests for the selected employee.</br>
 
 ## Approve time-off requests
 
@@ -121,7 +121,7 @@ Absence managers can approve or deny time-off requests for employees.
 
 1. In the **Employee Self-Service** workspace, select the **Leave management** tab.
 
-2. On the **Time off requests** tab, select the time off requests that you wish to take action on. You can select multiple records in this list view.
+2. On the **Time off requests** tab, select the time off requests that you want to take action on. You can select multiple records in this list view.
 
 3. Use the action buttons at the top of the grid to Approve, Deny or Delegate the time off request. 
 
