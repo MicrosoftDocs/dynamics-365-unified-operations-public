@@ -76,7 +76,7 @@ In Dual write many times Finance and Operations apps will show up errors which a
 
 6.	To lookup data on table browser use the following link https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog  (replace XXX as appropriate):
 
-7.	Update after KB 4595434 (available for PU 37 and above). If you have this kb installed then the debug mode will capture more logs.  
+7.	Update after [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe)  (available for PU 37 and above). If you have this kb installed then the debug mode will capture more logs.  
 
 Detailed Error Message will capture the batch request Formatted as follows 
 
