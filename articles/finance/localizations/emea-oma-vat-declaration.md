@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic explains how to set up and generate the VAT return form for legal entities in Oman.
 
-The VAT return form for Oman is the standard document that summarizes the total output VAT tax amount due, the total input VAT tax amount recoverable, and the related VAT tax amount  liability. The form is used for all types of taxpayers and should be completed manually through the tax authority portal. The VAT return form is commonly referred to as *VAT return filing*.
+The VAT return form for Oman is the standard document that summarizes the total output VAT tax amount due, the total input VAT tax amount recoverable, and the related VAT tax amount  liability. The form is used for all types of taxpayers and should be completed manually through the tax authority portal. The VAT return form is commonly referred to as *Filing VAT returns*.
 
 The VAT return form in Dynamics 365 Finance includes the following reports:
 
