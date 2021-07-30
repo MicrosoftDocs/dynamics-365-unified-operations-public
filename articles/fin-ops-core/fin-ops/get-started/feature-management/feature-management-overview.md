@@ -3,7 +3,7 @@
 title: Feature management overview
 description: This topic describes the Feature management feature and how you can use it.
 author: Peakerbl
-ms.date: 07/20/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -71,7 +71,7 @@ The **Feature state** column for these features is blank. Features that are init
 
 ### On by default features (optional)
 
-Features that are updated to **On by default** are turned on by default, but they can be disabled. After features that can be disabled have been in the **Released** state for at least six months, they are expected to move to this state in the next major release. Features that transition to **On by default** will be communicated in the [What's new](../whats-new-changed.md) topic for the release. The update is initiated by the owning product team.
+Features that are updated to **On by default** are turned on by default, but they can be disabled. After features that can be disabled have been in the **Released** state for at least six months, they are expected to move to this state in the next major release. Features that transition to **On by default** are expected to be communicated in the [What's new](../whats-new-changed.md) topic for the release. The update is initiated by the owning product team.
 
 > [!NOTE]
 > Because these features will be enabled automatically, it's important that you determine whether your organization is ready to uptake these features, or whether more time is required. If more time is required, it might be necessary to temporarily disable these features. Note that the transition of a feature to **On by default** is typically done in the major release before the feature is targeted to become **Mandatory**. At that point, you won't have the option to disable the feature. 
