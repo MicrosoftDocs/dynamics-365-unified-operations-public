@@ -41,6 +41,7 @@ These tasks will prepare Finance to interoperate with the HMRC's web service to 
 - [Define a sales tax settlement period](#settlement).
 - [Set up security roles for electronic message processing](#processing).
 - [Set up security roles to interoperate with HMRC's MTD VAT web-service](#application).
+- [Sending fraud prevention data](#headers).
 
 ## <a id="configurations"></a>Import and set up ER configurations
 
@@ -152,13 +153,29 @@ and then import it into the **VAT Declaration Excel (UK)** format.
 7. Change the value of the **State** field to **Completed**, save your changes, and close the page.
 
 > [!IMPORTANT]
-> Setup of **ReportFieldLookup** is company-specific. Make sure that the **Legal entity** in which you want to generate VAT declaration for the UK is selected before you start setting up **ReportFieldLookup**.
-> In case you want to generate VAT declaration for the UK from multiple Legal entities in Finance, you must setup **ReportFieldLookup** for each of them. 
-> Setup of **ReportFieldLookup** is mandatory for all Legal entities reporting VAT as **VAT group**.
+> Setup of **ReportFieldLookup** is company-specific. 
+>
+> (**!**) Make sure that the **Legal entity** in which you want to generate VAT declaration for the UK is selected before you start setting up **ReportFieldLookup**.
+> 
+>  (**!**) In case you want to generate VAT declaration for the UK from multiple Legal entities in Finance, you must setup **ReportFieldLookup** for each of them. 
+> 
+>  (**!**) Setup of **ReportFieldLookup** is mandatory for all Legal entities reporting VAT as **VAT group**.
 
 ## <a id="headers"></a>Set up application-specific parameters for MTD VAT web request headers format
 
+It is [required by law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) in the UK to submit header data for the VAT (MTD) APIs. When the MTD VAT APIs are used, MTD-compatible software must submit HTTP fraud prevention headers that includes: client public IP, server public IP. For more information about how MTD VAT feature in Finance supports the requirement to send fraud prevention headers in MTD VAT Finance, see [Sending fraud prevention data](#headers) section of this topic.
 
+To enable Finance collecting client and server public IPs, you must setup **ExternalServiceEndpoints_LOOKUP** aaplication-specific parameter of **MTD VAT web request headers format (UK)** under **Electronic Messages framework model** in ER workspace.
+
+1. Go to **Electronic reporting** workspace, and then, in the configuration tree, select the **MTD VAT web request headers format (UK)** under **Electronic Messages framework model**. 
+2. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you want to use. Usually, Finance runs the latest version of the configuration available available in your system.
+3. Select **ExternalServiceEndpoints_LOOKUP** on the **Lookups** FastTab, and then **Add** criteria on the **Conditions** FastTab. 
+4. Select **Gov-Client-Public-IP** in **Lookup result** field and specify in **ExternalServiceEndpoint** field http(s) address of external web-service that will be called when user will initiate a request to HMRC's MTD VAT API to collect client public IP. Your privacy is important to us. To learn more read our [Privacy Notice](emea-gbr-mtd-vat-integration.md#privacy-notice)
+In the case you specify manually conditions for **ReportFieldLookup**, we recommend that you set up the **Other** value as the last condition in the list. 
+Although this value isn't used in the **VAT Declaration JSON (UK)** format, it must be set to **Not blank** for both columns of the criteria.
+
+> [!IMPORTANT]
+> When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
 ## <a id="entities"></a>Import a package of data entities that includes a predefined Electronic Messaging (EM) setup
 
@@ -269,3 +286,6 @@ Complete the following steps to set up security groups that must have access to 
 2. Select the web application that you want to define security groups for, and then add those security groups on the **Security roles** FastTab.
 
 If security roles aren't defined for a web application, only a system admin can interoperate by using the selected web application.
+
+## <a id="headers"></a>Sending fraud prevention data
+
