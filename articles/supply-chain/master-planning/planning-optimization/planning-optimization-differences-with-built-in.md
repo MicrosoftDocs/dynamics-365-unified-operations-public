@@ -25,7 +25,7 @@ Planning Optimization results may differ from those from the built-in master pla
 | Filtered production runs | For details, see [Production planning - Filters](production-planning.md#filters) |
 | Forecast planning | Forecast planning is not supported. We recommend using master planning with a forecast model assigned to the master plan. |
 | Number sequences for planned orders | Number sequences for planned orders are not supported. Planned order numbers are generated on the service side. |
-| Plan copy, delete plan, and plan version cleanup | The **Plan copy**, **Delete plan** and **Plan version cleanup** menu items are disabled. |
+| Plan copy, delete plan, and plan version cleanup | The following items are disabled under the **Master planning \> Master planning \> Maintain plans** node in the navigation pane:<ul><li>**Plan copy**</li><li>**Delete plan**</li><li>**Plan version cleanup**</li></ul> |
 | Return orders | Return orders are not considered. |
 | Scheduling related features | For details, see [Scheduling with infinite capacity](infinite-capacity-planning#limitations.md) |
 | Transport calendars | The **Transport calendar** column value on the **Modes of delivery** page is ignored. |

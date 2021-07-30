@@ -1607,6 +1607,8 @@
           href: master-planning/planning-optimization/get-started.md
         - name: Planning Optimization fit analysis
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
+        - name: Differences between built-in master planning and Planning Optimization
+          href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with demand forecast

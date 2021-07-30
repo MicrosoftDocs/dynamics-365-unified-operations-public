@@ -56,7 +56,7 @@ To see the Planning Optimization fit analysis result, go to **Master planning** 
 The following table shows the various results that can be shown after a fit analysis. Number signs (_\#_) will be replaced with a number that indicates the number of records that have the listed issue. Supported or in-preview features are available with version 10.0.9 or later (unless a higher version number is listed in the "Expected availability" column).
 
 > [!NOTE]
-> Some inconsistencies cannot be identified by the Planning Optimization fit analysis. For more information, see [Differences between classic master planning and Planning Optimization](planning-optimization-differences-with-built-in.md).
+> Some inconsistencies can't be identified by the Planning Optimization fit analysis. For more information, see [Differences between classic master planning and Planning Optimization](planning-optimization-differences-with-built-in.md).
 
 | Feature | Listed issue | Explanation | Expected availability |
 | --- | --- | --- | --- |
