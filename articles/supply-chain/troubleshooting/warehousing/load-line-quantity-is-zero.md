@@ -49,6 +49,7 @@ Use the following procedure to review your load lines and make sure that all the
 1. Make a note of the value of the **Work created quantity** field.
 1. On the Action Pane, on the **Loads** tab, in the **Related information** group, select **Work**.
 1. Verify that the work has been completed at the final shipping location, and that the picked work quantity matches the created work quantity on the load line.
+1. If you find a mismatch then cancel the relevant work, reconfigure the location directive, and re-release the load. For instructions, see [You can't confirm a shipment because items haven't been picked](picked-quantity-is-not-on-final.md).
 1. Repeat this procedure for all load lines to make sure that all criteria are met.
 
 ### Check your load lines to make sure that the underdelivery percentage and quantities are aligned with the picked work
