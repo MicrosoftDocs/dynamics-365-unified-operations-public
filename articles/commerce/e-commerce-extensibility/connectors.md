@@ -4,7 +4,7 @@
 title: Configure and enable connectors
 description: This topic describes connectors and explains how to configure and enable them in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/28/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,7 @@ This topic describes connectors and explains how to configure and enable them in
 
 Connectors let you connect your Dynamics 365 Commerce site to external third-party services to perform tasks such as capturing analytics, logging, and experimenting. Some third-party service providers require a paid license for their service before it can be used. For more information, contact your service provider.
 
-As of Commerce release version 10.0.13, the only supported type of connector is the experimentation connector. As of Commerce release version 10.0.17, support for the geoLookup connector has been added and release 10.0.21 introduced the segmentation provider connector. In future versions, you will be able configure and enable other types of connectors.
+As of Commerce version 10.0.13, the only supported type of connector is the experimentation connector. As of Commerce version 10.0.17, support for the geoLookup connector has been added. As of Commerce version 10.0.21, the segmentation provider connector is supported. In future versions, you will be able configure and enable other types of connectors.
 
 ## Configure and enable connectors
 
@@ -287,7 +287,6 @@ A geoLookup connector consists of two parts:
 - A connector definition file in JSON format
 - A provider file
 
-
 #### Connector definition file
 
 The connector definition file is used to register and provide configuration metadata data to your application. The name of the provider file is in the format **\<CONNECTOR\_NAME\>.connector.json**. The metadata includes the type of connector, the connector's name, a description of the connector, and the configuration schema, as shown in the following example of a connector definition file.
@@ -392,7 +391,8 @@ The following example shows a geoLookup connector being enabled in the **connect
 
 
 ## Segmentation provider connector
-A segmentation provider contains the business logic to fetch and analyze raw data source attributes (example: age, city, zip code, country, ...) from third party sources and reduces them to one or more simple target segments that can be used within your e-commerce site.  Multiple segmentation providers can be registered at the same time.
+
+A segmentation provider contains the business logic to fetch and analyze raw data source attributes (for example age, city, zip code, or country) from third party sources and reduces them to one or more simple target segments that can be used within your e-commerce site.  Multiple segmentation providers can be registered at the same time.
 
 A segmentation connector consists of two parts:
 
@@ -452,21 +452,21 @@ The connector definition file is used to register and provide configuration meta
 |--|--|
 |$type|The type of connector. Because the definition file in the preceding example is for a geoLookup connector, the type is **segmentationConnector**.|
 |name|The name of the connector. This name must be unique across all connectors.|
-|id|The id of the connector. This id must be unique across all connectors.|
+|id|The ID of the connector. This ID must be unique across all connectors.|
 |description|The description of the connector.|
 |configSchema|The configuration schema. A configuration schema lets you provide a JSON schema that validates the configuration that is given to you at application startup, so that your connector can be initialized correctly. For example, when you initialize your connector, you need the **projectId** value to make an API call that is required for communication with the third-party service. You can specify this value in the preceding JSON file to ensure that the configuration that is provided matches your connector's requirements.|
 
 #### Segmentations schema
+
 |Element|Details|
 |--|--|
-|Id| Unique id in the scope of current segmentation provider |
-|Name| Segment name which will be shown on user interface |
-|Type| integer, string, enum, bool |
-|enum| Only applies to enum type, array of enum values |
-|enumName| Only applies to enum type, array of enum names that will show in user interface |
-|maxValue| Only applies to integer type, the max value allowed for the integer segment |
-|minValue| Only applies to integer type, the min value allowed for the integer segment |
-
+|Id| Unique ID in the scope of current segmentation provider. |
+|Name| Segment name which will be shown on user interface. |
+|Type| integer, string, enum, bool. |
+|enum| Only applies to enum type, array of enum values. |
+|enumName| Only applies to enum type, array of enum names that will show in user interface. |
+|maxValue| Only applies to integer type, the max value allowed for the integer segment. |
+|minValue| Only applies to integer type, the min value allowed for the integer segment. |
 
 #### Provider file
 
@@ -501,7 +501,7 @@ export interface ISegmentations {
     [segmentationID: string]: ISegmentation;
 }
 ```
-The output of getSegmentations() function will be key value object, where key is the segment id and value is the value resolved for this segment.
+The output of the **getSegmentations()** function will be a key value object, where "key" is the segment ID and "value" is the value resolved for this segment.
 
 ### Enable and configure a segmentation provider connector
 
@@ -538,7 +538,7 @@ The following example shows a segmentation provider connector being enabled in t
 |Element|Details|
 |--|--|
 |segmentation|This object contains all the information that is required to start and enable a segmentation connector. |
-|id|This setting specifies the id of the segmentation connector. You can find the id of the connector in the segmentation connector's definition file. |
+|id|This setting specifies the ID of the segmentation connector. You can find the ID of the connector in the segmentation connector's definition file. |
 |config|This section allows for any configuration object that the connector requires for initialization and communication with the third-party service. To learn what information is required, look in the **configSchema** section of the geoLookup connector's definition file, or in the connector's README file. Change the **apiKey** value to a value that is provided by the service provider. |
 
 
