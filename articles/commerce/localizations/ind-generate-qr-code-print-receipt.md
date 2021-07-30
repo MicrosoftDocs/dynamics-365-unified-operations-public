@@ -170,7 +170,7 @@ Follow these steps to handle the new custom receipt field for a QR code.
    
 ## Printing QR code images on OPOS printers.
 
-When using an OPOS printer, you may need to convert the QR code image from the **png** format to the **bmp** format. Below is a sample of such coversion:
+When using an OPOS printer, you may need to convert the QR code image from the **png** format to the **bmp** format. Below is a sample of such conversion:
 
    ```C#
     ...
@@ -189,7 +189,7 @@ When using an OPOS printer, you may need to convert the QR code image from the *
             return receiptFieldValue;
     ...
     /// <summary>
-    /// Conversts QR code image from "png" to "bmp".
+    /// Converts an image from "png" to "bmp".
     /// </summary>
     /// <param name="qrCode">Base64 represents the image to convert.</param>
     /// <returns>The image as base64.</returns>
