@@ -170,12 +170,18 @@ To enable Finance collecting client and server public IPs, you must setup **Exte
 1. Go to **Electronic reporting** workspace, and then, in the configuration tree, select the **MTD VAT web request headers format (UK)** under **Electronic Messages framework model**. 
 2. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you want to use. Usually, Finance runs the latest version of the configuration available available in your system.
 3. Select **ExternalServiceEndpoints_LOOKUP** on the **Lookups** FastTab, and then **Add** criteria on the **Conditions** FastTab. 
-4. Select **Gov-Client-Public-IP** in **Lookup result** field and specify in **ExternalServiceEndpoint** field http(s) address of external web-service that will be called when user will initiate a request to HMRC's MTD VAT API to collect client public IP. Your privacy is important to us. To learn more read our [Privacy Notice](emea-gbr-mtd-vat-integration.md#privacy-notice)
-In the case you specify manually conditions for **ReportFieldLookup**, we recommend that you set up the **Other** value as the last condition in the list. 
-Although this value isn't used in the **VAT Declaration JSON (UK)** format, it must be set to **Not blank** for both columns of the criteria.
+4. Select **Gov-Client-Public-IP** in **Lookup result** field and specify in **ExternalServiceEndpoint** field http(s) address of external web-service that will be called when user will initiate a request to HMRC's MTD VAT API to collect client public IP. Your privacy is important to us. To learn more read our [Privacy Notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
+5. In **Regex** field specify a regular expressions specific to the external web-service specified in **ExternalServiceEndpoint** field which allows to extract IP address in IPv4 or IPv6 format from the response of the web-service.
+6. Click **Add** button on the **Conditions** FastTab to add one more line and select **Gov-Vendor-Public-IP** in **Lookup result** field and specify in **ExternalServiceEndpoint** field http(s) address of external web-service that will be called when user will initiate a request to HMRC's MTD VAT API to collect server public IP. Your privacy is important to us. To learn more read our [Privacy Notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
+7. In **Regex** field specify a regular expressions specific to the external web-service specified in **ExternalServiceEndpoint** field which allows to extract IP address in IPv4 or IPv6 format from the response of the web-service.
+8. Add as much different web-services for both **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** as more you need to be sure that IP addreses will be obtained during requests to HMRC's MTD VAT API. System will call them one-by-one until nessesary IP address will be collected.
+
+![Set up application-specific parameters for MTD VAT web request headers format](media/uk-mtd-webservice.png)
 
 > [!IMPORTANT]
 > When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
+> 
+> **(!)** Setup of **ExternalServiceEndpoint** application-specific parameter for **MTD VAT web request headers format (UK)** under **Electronic Messages framework model** must be done for the Legal entity from which interoperation with HMRC's MTD VAT API will be executed.
 
 ## <a id="entities"></a>Import a package of data entities that includes a predefined Electronic Messaging (EM) setup
 
