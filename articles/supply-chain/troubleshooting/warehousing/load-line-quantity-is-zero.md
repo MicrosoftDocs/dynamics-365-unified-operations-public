@@ -1,17 +1,15 @@
 ---
-title: 
-You can't confirm a shipment because load lines have quantity zero
-description: 
-You can't confirm a shipment because load lines have quantity zero
+title: You can't confirm a shipment because load lines have quantity zero
+description: You can't confirm a shipment because load lines have quantity zero
 author: GalynaFedorova
-ms.date: 06/30/2021
+ms.date: 07/30/2021
 ms.topic: troubleshooting
 ms.search.form: WHSLoadTable_WHSShipConfirm,WHSLoadPlanningListPage_WHSShipConfirm,WHSLoadPlanningWorkbench_WHSShipConfirm,WHSTransportLoad_WHSShipConfirm,WHSShipPlanningListPage_WHSShipConfirm,WHSShipmentDetails_WHSShipConfirm,WHSWorkTable_WHSShipConfirm,WHSWorkTableListPage_WHSShipConfirm,Dialog_WHSOutboundShipConfirmController_WHSOutboundShipConfirm
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: v-gfedorova
-ms.search.validFrom: 2021-06-30
+ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
 ---
 
@@ -30,12 +28,14 @@ Therefore, you can't confirm the shipment for the load.
 
 ## Cause
 
-The system evaluates whether the load line can be ship confirmed, based on the created work IDs, load line quantity, and underdelivery percentage. If the system finds that there are no work IDs, and underdelivery percentage is set to 100%, you can't confirm the shipment. 
+The system evaluates whether the load line can be ship confirmed, based on the created work IDs, load line quantity, and underdelivery percentage. If the system finds that there are no work IDs, and underdelivery percentage is set to 100%, you can't confirm the shipment.
+
 For example, this issue might occur if the work has been canceled, and the underdelivery percentage on the load line is 100 percent.
 
 ## Resolution
 
 The load or shipment is currently in a state where shipment confirmation fails. To fix this issue, complete one of the following tasks:
+
 - Review your load lines and make sure that all the related work has been completed at the final shipping location, and that the quantities match.
 - Check your load lines to make sure that the underdelivery percentage and quantities are aligned with the picked work.
 
@@ -44,20 +44,19 @@ The load or shipment is currently in a state where shipment confirmation fails. 
 Use the following procedure to review your load lines and make sure that all the related work has been completed at the final shipping location, and that the quantities match.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
-1. Select the load that the shipment can't be confirmed for.
+1. Open the load that the shipment can't be confirmed for.
 1. On the **Load lines** FastTab, select the load line.
 1. Make a note of the value of the **Work created quantity** field.
 1. On the Action Pane, on the **Loads** tab, in the **Related information** group, select **Work**.
 1. Verify that the work has been completed at the final shipping location, and that the picked work quantity matches the created work quantity on the load line.
 1. Repeat this procedure for all load lines to make sure that all criteria are met.
 
-
 ### Check your load lines to make sure that the underdelivery percentage and quantities are aligned with the picked work
 
 Use the following procedure to review your load lines and make sure that the underdelivery percentage and quantities are aligned with the picked work.
 
 1. Go to **Warehouse management \> Loads \> All loads**.
-1. Select the load that the shipment can't be confirmed for.
+1. Open the load that the shipment can't be confirmed for.
 1. On the **Load lines** FastTab, select the load line for the item that exceeds the underdelivery percentage.
 1. Adjust the value of the **Underdelivery** field or the **Quantity** field as required.
 

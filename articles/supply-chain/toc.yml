@@ -3511,6 +3511,10 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: You can't confirm a shipment because customer is on hold
+          href: troubleshooting/warehousing/customer-is-on-hold.md
+        - name: You can't confirm a shipment because load lines have quantity zero
+          href: troubleshooting/warehousing/load-line-quantity-is-zero.md
         - name: Canceled product receipts don't update transactions status to registered
           href: troubleshooting/warehousing/canceled-product-receipts.md
         - name: Decimal rounding of the physical updating quantity is incorrect
