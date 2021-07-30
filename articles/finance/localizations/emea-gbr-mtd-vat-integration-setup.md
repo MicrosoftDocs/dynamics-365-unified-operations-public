@@ -36,7 +36,7 @@ These tasks will prepare Finance to interoperate with the HMRC's web service to 
 - [Set up application-specific parameters for VAT Declaration format](#declaration).
 - [Set up application-specific parameters for MTD VAT web request headers format](#headers).
 - [Import a package of data entities that includes a predefined Electronic Messaging (EM) setup](#entities).
-- [Paper format of VAT statement (VAT 100)](#format)
+- [Paper format of VAT statement (VAT 100)](#format).
 - [Set up VAT registration number of the company reporting VAT](#vrn).
 - [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vatgroup).
 - [Define a sales tax settlement period](#settlement).
@@ -388,3 +388,5 @@ When a request to HMRC in a batch job is initiated, the fraud prevention headers
 > <a id="remark"></a>(\*) Finance provides alternative possibility to using external web-addresses for retrieving public IP addresses of client and server for the cases when system admin can manually identify and specify their values. Go to **Supplementary headers** fast tab of **Tax** > **Setup** > **Electronic messages** > **Web applications** page and define manually values for **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers. These values will be used by the system in case external web-services are not defined as described in [Set up application-specific parameters for MTD VAT web request headers format](#headers) or system did not manage to obtain IP address automatically. System admin may also define value for **Gov-Vendor-Forwarded** header which will be used in case system did manage to obtain IP address automatically. In case value for **Gov-Vendor-Forwarded** header was not specified its value will be composed from values of **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers.
 > 
 > ![Supplementary headers.](media/uk-mtd-fp-manually.png)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
