@@ -66,6 +66,8 @@ The solution that supports the [MTD for VAT requirements] (https://developer.ser
 
 The setup package for MTD for VAT for the UK doesn't cover the View VAT Return endpoint that might be required. However, the Electronic messages functionality lets you set up and support this endpoint.
 
+Supports filing for multiple VAT registrations and VAT groups 
+
 
 > [!IMPORTANT]
 > ## <a id="privacy-notice"></a>Privacy Notice
@@ -345,11 +347,6 @@ When a VAT return in JSON format is generated and ready to be submitted to HMRC,
 
 1. To find and clean up unnecessary attachments, select the electronic message, and then select the **Attachments** button (paper clip symbol) in the upper-right corner of the page. The **Attachments** page for the selected message is opened.
 
-> [!IMPORTANT]
-> Before you start to submit a VAT return to HMRC, you must make sure that the **JSON** file type is defined in the list of file types on the **File types** tab of the **Document management parameters** page (**Organization administration** \> **Document management** \> **Document management parameters**). If the **JSON** file type isn't in the list, add it.
->
-> ![JSON File type setup.](media/uk-mtd-json-file-type-setup.png)
-
 2. To start submission, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select either the **UK MTD VAT TEST** processing (for testing purposes) or the **UK MTD VAT returns** processing (for real-life interoperation with the production HMRC web application). 
 3. On the **Messages** FastTab, select the electronic message record that is related to the period that you want to submit the VAT return for, and then select **Send report**. The **Send report** button is available only for electronic messages that have the following statuses:
 
@@ -367,86 +364,6 @@ If, for some reason, the **Import response for VAT return** action isn't automat
 
 The **Action log** FastTab saves information about all the actions that are performed for the electronic message.
 
-## Create a VAT return report for companies that report as a VAT group in the same system database
-
-To prepare Finance to report a VAT return for a VAT group, make sure that your business processes and the system setup meet the following conditions:
-
-- Tax information from all the subsidiaries is registered in the same system (Finance).
-- The system correctly reflects all the tax transactions in accordance with the rules and principles of the UK.
-- Settlement periods for all the legal entities that are involved to the VAT group are identically defined in full accordance with the period intervals that are defined in the HMRC online account.
-- VAT settlement (the [Settle and post sales tax](../general-ledger/tasks/create-sales-tax-payment.md) job) is done in each subsidiary legal entity.
-- A **VAT 100** report is correctly generated for preview in each subsidiary legal entity.
-- One legal entity is set up for interoperation with HMRC, according to the information in this topic, and users can request VAT obligations from this legal entity for the VAT group.
-
-This section of the topic explains how to perform the following tasks:
-
-1. Set up additional ER configurations to collect data from several legal entities for VAT return reporting for a VAT group.
-2. Set up additional Electronic messages functionality, beyond the general setup for the MTD for VAT feature, to collect data from several legal entities for VAT return reporting for a VAT group.
-3. Use the **Electronic messages** page to collect information for VAT return reporting for several legal entities.
-
-### Import and set up ER configurations to collect data from several legal entities for VAT return reporting for a VAT group
-
-To prepare ER configurations to generate the common VAT return for a VAT group, based on tax transactions that are posted in several legal entities, import and use the following versions or later of the ER configurations.
-
-| ER configuration name and version | Description |
-|-----------------------------------|-------------|
-| Tax declaration model.version.**32** | Generic model for different tax declarations. |
-| Tax declaration model mapping.version.**32.35** | Generic model mapping for VAT declarations. |
-| VAT Declaration JSON (UK).version.**32.28** | VAT return in JSON format for submission to MTD HMRC. |
-| VAT Declaration Excel (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
-
-In these versions and later, the tax declaration model, model mapping, and both formats for the UK VAT return support cross-company tax transaction data sources, and they can be used to aggregate data from several legal entities. These configurations can still be used to report the VAT return for just one legal entity.
-
-> [!IMPORTANT]
-> These versions of the ER configurations are supported in Microsoft Dynamics 365 Finance version 10.0.7 and later. For Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, you must install KB 4513052 and the latest version of the ER update.
-
-To use the formats to report the VAT return for a group of several legal entities, you must set up application-specific parameters **for each legal entity that is included into the group**.
-
-1. In the **Electronic reporting** workspace, select **Tax declaration model**, and then, in the configuration tree, select the **VAT Declaration JSON (UK)** format. 
-2. In the upper-right corner, select the legal entity that tax transactions must be included for in the VAT return for the VAT group.
-3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**. In the left pane of the **Application specific parameters** page, select the latest version of the format. Then, on the **Conditions** FastTab, define conditions. For more information about how to define conditions, see the [Set up application-specific parameters](#set-up-application-specific-parameters) section earlier in this topic. Finally, change the status to **Completed**, save your changes, and close the **Application specific parameters** page.
-4. Repeat steps 2 through 3 for the other legal entities in your system that are included in the VAT group.
-5. Repeat steps 1 through 4 above for the **VAT Declaration Excel (UK)** format.
-
-### Set up additional Electronic messages functionality to collect data from several legal entities for VAT return reporting for a VAT group
-
-In Finance version 10.0.7 and later, users can prepare a VAT return report by collecting information from several legal entities into one ER format. For this purpose, the system must collect, in the same electronic message, sales tax payment transactions that were posted in different legal entities. The following steps must be done in addition to all the steps of the general setup process for the MTD for VAT feature.
-
-1. Turn on the **Cross-company queries for the populate records actions** feature in Feature management. Go to **Workspaces** \> **Feature management**, find **Cross-company queries for the populate records actions** in the list, and then select **Enable now** in the lower right of the page.
-2. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**. On the **Populate records action** page, a new **Company** field is available in the **Datasources setup** grid. For existing records that were created during the general setup of the MTD for VAT feature, this field shows the identifier of the current legal entity. It's assumed that the settlement period for the current legal entity was set up during the general setup of the MTD for VAT feature.
-3. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting for the VAT group. Set the following fields.
-
-    | Field name             | Value |
-    |------------------------|-------|
-    | Name                   | Enter a text value that will help you understand where this record comes from. For example, enter **VAT payment of Subsidiary 1**. |
-    | Message item type      | Select **VAT return**. This value is the only value that is available for all the records. |
-    | Account type           | Select **All**. |
-    | Master table name      | Specify **TaxReportVoucher** for all the records. |
-    | Document number field  | Specify **Voucher** for all the records. |
-    | Document date field    | Specify **TransDate** for all the records. |
-    | Document account field | Specify **TaxPeriod** for all the records. |
-    | Company                | Select the ID of the subsidiary legal entity. |
-    | User query             | The check box is automatically selected when you define criteria by using **Edit query** button. |
-
-4. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
-
-> [!IMPORTANT]
-> In Finance and Operations 7.3, you must skip step 1 of this procedure. The new **Company** field on the **Populate records action** page becomes available after the hotfix is installed.
-
-When you've finished, the **Datasources setup** grid will contain lines for all the legal entities that must be included in reporting for the VAT group. A settlement period will be defined for each legal entity.
-
-![Setup of data sources for a VAT group.](media/uk-mtd-populate-records-datasources.png)
-
-The changes to the setup of the **Populate VAT return records** action that are described here are enough to collect sales tax payment transactions from different legal entities in one electronic message, and to generate one common VAT return report in JSON format (for submission to HMRC) or Excel format (for preview).
-
-### Use the Electronic messages page to collect information for VAT return reporting for several legal entities
-
-Set up one legal entity to interoperate with HMRC, according to the general guidance in this topic, and do the additional setup for the **Populate VAT return records** action that is described in the previous section. Then [retrieve VAT obligations](#retrieve-vat-obligations-from-hmrc) for your VAT group, and [collect data for the VAT return](#collect-data-for-a-vat-return).
-
-1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select either the **UK MTD VAT TEST** processing (for testing purposes) or the **UK MTD VAT returns** processing (for production).
-2. On the **Messages** FastTab, select an electronic message that has a status of **New VAT return** and that was automatically created when VAT obligations were retrieved from HMRC.
-3. Provided that you've activated the **Cross-company queries for the populate records actions** feature in Feature management, a **Company** field is available in the grid on the **Message items** FastTab. On the **Messages** FastTab, select **Collect data**. Sales tax payment transactions from all the legal entities that are defined as data sources for the **Populate VAT return records** action will be added as message items on the **Message items** FastTab. If you select **Original document** for a message item that was added from a legal entity that differs from the current legal entity, you're redirected to the appropriate company.
-4. Work with the electronic message to generate a VAT return either for preview or for submission to HMRC, according to the general process. When the VAT return is ready, submit it. For more information, see the [Generate a VAT return in Excel format for preview](#generate-a-vat-return-in-excel-format-for-preview), [Generate a VAT return in JSON format](#generate-a-vat-return-in-json-format), and [Submit VAT returns to HMRC](#submit-vat-returns-to-hmrc) sections earlier in this topic.
 
 ## Retrieve VAT liabilities and payments from HMRC
 
