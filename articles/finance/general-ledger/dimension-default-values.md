@@ -34,7 +34,7 @@ The following rules define how financial dimension values default on transaction
 ## Symptom
 A voucher is entered into a journal, such as the general journal. The account is a Vendor account and the Offset account is a Bank account.  The vendor’s default financial dimensions will be entered by default on the account but the bank’s default financial dimensions don’t default.  Instead, the offset account defaults the dimension values from the Account.   
 
-Another way way that default values are set happens when a fixed dimension is assigned to a main account. The fixed dimension value isn't used as the defualt entry on the Account or Offset account, but is assigned during posting. 
+Another way way that default values are set happens when a fixed dimension is assigned to a main account. The fixed dimension value isn't used as the default entry on the Account or Offset account, but is assigned during posting. 
 
 I’m expecting the fixed dimension to be entered by default either before or after posting so that the posted accounting entry matches the line on the voucher. How are default entries for financial dimensions made?
 
