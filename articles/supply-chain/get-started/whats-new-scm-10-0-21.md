@@ -62,7 +62,6 @@ We have recently added or significantly updated the following help topics. They 
 
 | Feature area | New or updated topics |
 |---|---|
-| Master planning | [Delay tolerance (negative days)](../master-planning/planning-optimization/delay-tolerance.md) |
 | Master planning | [Inventory forecasts](../master-planning/inventory-forecast.md) |
 | Master planning | [Parameters not used by Planning Optimization](../master-planning/planning-optimization/not-used-parameters.md) |
 | Master planning | [Replenishment methods and quantity modification](../master-planning/planning-optimization/replenishment-methods-quantity-modification.md) |
