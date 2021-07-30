@@ -392,7 +392,7 @@ The following example shows a geoLookup connector being enabled in the **connect
 
 ## Segmentation provider connector
 
-A segmentation provider contains the business logic to fetch and analyze raw data source attributes (for example age, city, zip code, or country) from third party sources and reduces them to one or more simple target segments that can be used within your e-commerce site.  Multiple segmentation providers can be registered at the same time.
+A segmentation provider contains the business logic to fetch and analyze raw data source attributes (for example age, city, zip code, or country) from third-party sources and reduces them to one or more simple target segments that can be used within your e-commerce site.  Multiple segmentation providers can be registered at the same time.
 
 A segmentation connector consists of two parts:
 
@@ -461,10 +461,10 @@ The connector definition file is used to register and provide configuration meta
 |Element|Details|
 |--|--|
 |Id| Unique ID in the scope of current segmentation provider. |
-|Name| Segment name which will be shown on user interface. |
-|Type| integer, string, enum, bool. |
+|Name| Segment name which that be shown in the user interface. |
+|Type| integer, string, enum, bool |
 |enum| Only applies to enum type, array of enum values. |
-|enumName| Only applies to enum type, array of enum names that will show in user interface. |
+|enumName| Only applies to enum type, array of enum names that will show in the user interface. |
 |maxValue| Only applies to integer type, the max value allowed for the integer segment. |
 |minValue| Only applies to integer type, the min value allowed for the integer segment. |
 
