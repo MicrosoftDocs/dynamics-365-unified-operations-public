@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to configure pages to be cached to improve performance of e-commerce pages sent back to customers.
 
-Page caching (available in release 10.0.21 (Online SDK version 1.31.3 or greater)) allows e-commerce pages to be cached on the server.  Cached pages can then be served to web site customers, signficantly increasing performance time. You can choose which pages to cache and how long to cache them in the site builder tool on a [page](../modify-existing-page.md) or by configuring a [template](../templates-layouts-overview.md) that enables page caching and applying that template across multiple different pages.
+Page caching (available in release 10.0.21 (Online SDK version 1.31.3 or greater)) allows e-commerce pages to be cached on the server.  Cached pages can then be served to web site customers, significantly increasing performance time. Page caching and how long to cache can be turned on in the site builder tool on a [page](../modify-existing-page.md) or by configuring a [template](../templates-layouts-overview.md) that enables page caching and applying that template across multiple different pages.
  
 The page cache works by generating the entire page content and saving the content for a particular route for a set time. When another user accesses the same page, instead of computing the page and returning the response, the cached page is immediately returned to the user.  Cached pages can become stale, so it is important to understand when and where to use page caching.
  
