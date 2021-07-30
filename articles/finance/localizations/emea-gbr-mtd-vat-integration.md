@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Prepare for integration with MTD for VAT (United Kingdom)
-description: This topic explains the process of setting up Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
+title: Making Tax Digital – VAT return submission in the United Kingdom
+description: This topic explains how to setup and use MTD VAT feature in Dynamics 365 Finance for VAT return submission in the United Kingdom
 author: liza-golub
 ms.date: 04/27/2020
 ms.topic: article
@@ -26,13 +26,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Prepare for integration with MTD for VAT (United Kingdom)
+# Making Tax Digital – VAT return submission in the United Kingdom
 
 [!include [banner](../includes/banner.md)]
 
-This topic walks you through the process of setting up Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom (UK).
-
-## Making Tax Digital – VAT statement submission
+This topic explains how to setup and use Making Tax Digital for VAT (MTD VAT) feature in Dynamics 365 Finance for VAT return submission in the United Kingdom (UK).
 
 On July 13, 2017, the Financial Secretary to the Treasury and Paymaster General in the UK announced that MTD for VAT would take effect on April 1, 2019.
 
