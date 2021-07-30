@@ -4,7 +4,7 @@
 title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 04/16/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,13 +38,11 @@ Regular updates will be released as part of the Dynamics 365 Commerce online SDK
 The SDK packages.json file that is included in the SDK root directory controls which versions of the SDK, module library, Fabrikam design kit, and Retail Server proxy are downloaded. The specific entries can be found in the **"dependencies"** section, as shown in the following example. Note that the version numbers might differ, depending on when the SDK was acquired.
 
 ```json
-...
 "dependencies": {
     "@msdyn365-commerce-modules/starter-pack": "9.29",
     "@msdyn365-commerce-modules/fabrikam-design-kit": "9.29",
     "@msdyn365-commerce/bootloader": "^1.0.0",
     "@msdyn365-commerce/retail-proxy": "9.29",
-...
 ```
 
 - **\@msdyn365-commerce-modules/starter-pack** – This entry represents the module library, which includes the set of starter modules and data actions. The preceding example is configured to pull down only the specified version.
