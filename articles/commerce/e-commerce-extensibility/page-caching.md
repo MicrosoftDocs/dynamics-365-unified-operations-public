@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Page caching
+title: Configure page caching
 description: This topic describes how to configure pages to be cached in Microsoft Dynamics 365 Commerce to improve the performance of e-commerce pages sent back to customers. 
 author: samjarawan
 ms.date: 08/02/2021
@@ -25,7 +25,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Page Caching
+# Configure page caching
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -85,6 +85,8 @@ Page caching can still be used on pages that should not render stale data such a
 ## Best practices
 
 Some modules such as the [product collection](../product-collection-module-overview.md) module support a configuration setting to ensure that the module is loaded on the client side. The product collection module uses user context to support queries such as "best picks for you," so you wouldn't want this data cached since the data will be different for each user. In this case, if the page is cached you should ensure that the module is configured to load on the client side by enabling the **Enable module lazy load** property.
+
+The following illustration shows the **Enable module lazy load** property checkbox in site builder.
 
 ![Enable module lazy load property in site builder](media/page-caching-3.png)
 
