@@ -34,7 +34,7 @@ A PDP provides detailed information about a product, and lets customers select p
 
 The following illustration shows an example of a PDP.
 
-![Example of a product details page](./media/pdp.PNG)
+![Example of a product details page.](./media/pdp.PNG)
 
 ## Header and footer modules
 

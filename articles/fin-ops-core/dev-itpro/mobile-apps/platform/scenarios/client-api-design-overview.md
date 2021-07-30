@@ -120,7 +120,7 @@ After a control is created that doesn't have any children or items, the control 
 
 The following illustration shows the customer image, customer name, font, background color, and so on, that preceding code produces.
 
-![Image showing information produced by preceding code](media/detail-page.png)
+![Image showing information produced by preceding code.](media/detail-page.png)
 
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

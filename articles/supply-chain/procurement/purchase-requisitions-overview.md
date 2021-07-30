@@ -52,7 +52,7 @@ You can configure the purchase requisition workflow process to route a purchase 
 
 The following diagram shows the statuses that are assigned to a purchase requisition and a purchase requisition line as they move through the workflow process.  
 
-[![Purchase requisition header and line statuses](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Purchase requisition header and line statuses.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### Purchase requisition header and line status relationships
 
@@ -184,7 +184,7 @@ To create a purchase order for purchase requisition lines that aren't eligible f
 
 The process for demand consolidation starts when a purchase requisition is approved in a workflow and, if budget control is configured for your organization, when the budget reservations and pre-encumbrances have been recorded. The following diagram shows the process flow for demand consolidation.  
 
-[![Process flow for demand consolidation](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Process flow for demand consolidation.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 To consolidate approved purchase requisition lines, follow these steps:
 

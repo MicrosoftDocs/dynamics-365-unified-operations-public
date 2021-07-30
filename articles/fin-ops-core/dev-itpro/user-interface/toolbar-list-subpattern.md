@@ -43,11 +43,11 @@ This subpattern is used to show child collections for the parent entity as eithe
 ## Wireframes
 ### Toolbar and list
 
-[![Wireframe for Toolbar and List form](./media/toolbarlist1.png)](./media/toolbarlist1.png)
+[![Wireframe for Toolbar and List form.](./media/toolbarlist1.png)](./media/toolbarlist1.png)
 
 ### Toolbar and list (double)
 
-[![Wireframe for Toolbar and List (double) form](./media/toolbarlist2.png)](./media/toolbarlist2.png)
+[![Wireframe for Toolbar and List (double) form.](./media/toolbarlist2.png)](./media/toolbarlist2.png)
 
 ## Model
 ### Toolbar and list – High-level structure
@@ -98,13 +98,13 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **VendTable (TabCommunication)** 
 
-[![Toolbar and List example](./media/toolbarlist3.png)](./media/toolbarlist3.png)
+[![Toolbar and List example.](./media/toolbarlist3.png)](./media/toolbarlist3.png)
 
 ### Toolbar and list (double)
 
 Form: **SalesQuickQuote (TabPageExistingItems)** 
 
-[![Toolbar and List (double) example](./media/toolbarlist4.png)](./media/toolbarlist4.png)
+[![Toolbar and List (double) example.](./media/toolbarlist4.png)](./media/toolbarlist4.png)
 
 ## Resources
 ### Typically used by patterns
@@ -130,7 +130,7 @@ This section will have answers to frequently asked questions that are related to
 
 **VendTable** 
 
-[![Previous version example](./media/toolbarlist5.png)](./media/toolbarlist5.png)
+[![Previous version example.](./media/toolbarlist5.png)](./media/toolbarlist5.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,11 +56,11 @@ The following batch jobs should run at night or after hours. Be sure to check th
 
 3. Select **Run in the background**, and then select **Recurrence**.
 
-   ![Set recurrence](media/talent-batch-history-cleanup-recurrence.png)
+   ![Set recurrence.](media/talent-batch-history-cleanup-recurrence.png)
 
 4. Under **Define recurrence**, set the **Start date** and **Start time** to occur during off hours or the weekend. Select **No end date**. 
 
-   ![Define recurrence start date and time](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Define recurrence start date and time.](media/talent-batch-history-cleanup-define-recurrence.png)
 
 5. Select **OK**.
 

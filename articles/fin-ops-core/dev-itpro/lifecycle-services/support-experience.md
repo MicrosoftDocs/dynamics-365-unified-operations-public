@@ -80,9 +80,9 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 2.  Open the project in LCS.
 3.  Click **Project settings**, and then click the **Azure DevOps** link.
 
-    [![LCS-Project-Tiles](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)
+    [![LCS-Project-Tiles.](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)
     
-    [![LCS-Project-Settings-VSO](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)
+    [![LCS-Project-Settings-VSO.](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)
 
 4.  Click **Setup Azure DevOps**.
 5.  In the **Azure DevOps site URL** field, enter the URL of the Azure DevOps project that you created in the previous section.
@@ -104,7 +104,7 @@ The Support experience has been updated to show updates that are published by M
 > [!WARNING]
 > If you have an on-premises deployment, the option to search for existing issues and submit a support incident from the on-premises client to your Azure DevOps project is not available.
 
-[![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) 
+[![wiki1.](./media/wiki1-1024x518.png)](./media/wiki1.png) 
 
 > [!NOTE]
 > If you haven’t already connected to Lifecycle Services (LCS), a dialog box will display where you can connect. Click the link to connect before proceeding. 
@@ -131,11 +131,11 @@ Based on the duties assigned to you, you will see either the **Download view** o
 
 The Azure DevOps administrator can publish project work items to your organization users by tagging the work items with **#SearchableInFinanceAndOperations**. The tagged work items will be searchable for users from the client support search box. The search result will include tagged Azure DevOps work items in addition to Microsoft published updates and fixes. The following graphic shows a tagged Azure DevOps work item for publishing.
 
-[![vstsTag](./media/VSTS-Tagging.png)](./media/VSTS-Tagging.png)
+[![vstsTag.](./media/VSTS-Tagging.png)](./media/VSTS-Tagging.png)
 
 When you search for published Azure DevOps work items using the support search box, search results show the work item's type, title, state, and description in a new browser tab with **view** mode.  Users with proper permissions can edit the work item in Azure DevOps. The following graphic shows the search result of a published Azure DevOps work item.
 
-[![ViewVSTS](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
+[![ViewVSTS.](./media/ViewVSTSItem.png)](./media/ViewVSTSItem.png)
 
 > [!NOTE]
 > The published Azure DevOps work items are only visible to your organization's users.  
@@ -152,7 +152,7 @@ In the LCS **Support** tile, issues are stored as work items in the Azure DevOp
 2.  Open the LCS project that is associated with the environment that you want to view issues for.
 3.  Click the **Support** tile. A list of the issues that have been created appears.
 
-    [![LCS-CPS-list](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)
+    [![LCS-CPS-list.](./media/lcs-cps-list-1024x243.png)](./media/lcs-cps-list.png)
 
 ### Edit issues
 1.  In the **Issues** grid, click the title of an issue.

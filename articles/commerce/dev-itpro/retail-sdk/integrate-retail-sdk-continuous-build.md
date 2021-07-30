@@ -56,19 +56,19 @@ Some of the dependency packages and references have moved to NuGet packages to m
 
 Edit the build definition so that it includes the location of the Retail SDK. (In other words, add a map.)
 
-[![Adding a repository mapping for the Retail SDK](./media/build-map-addition.png)](./media/build-map-addition.png)
+[![Adding a repository mapping for the Retail SDK.](./media/build-map-addition.png)](./media/build-map-addition.png)
 
 ## Add a new build step to build the Retail SDK
 
 Add a new step at the beginning of the build pipeline, as shown in the following screen shot.
 
-[![Adding a new build step to build the Retail SDK](./media/new-build-step-1024x527.png)](./media/new-build-step.png)
+[![Adding a new build step to build the Retail SDK.](./media/new-build-step-1024x527.png)](./media/new-build-step.png)
 
 ## Add a copy step for binaries from the Retail SDK to the Commerce build
 
 This build step enables Microsoft to copy the latest built Commerce binaries to the Commerce bin folder, if Microsoft shares files/binaries. Make sure that you complete this step immediately after you add a build step for the Retail SDK, as described in the previous section.
 
-[![Adding a copy step for binaries from the Retail SDK to the Commerce build](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
+[![Adding a copy step for binaries from the Retail SDK to the Commerce build.](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
 
 ## Add a copy step for all Commerce packages
 
@@ -78,7 +78,7 @@ Make sure that this step occurs after the "PowerShell: Generate packages" step (
 -BuildPackagePath "$(Agent.BuildDirectory)\Packages" -BuildVersion "$(Build.BuildNumber)"
 ```
 
-[![Adding a copy step for all Commerce packages](./media/package-drop-1024x473.png)](./media/package-drop.png)
+[![Adding a copy step for all Commerce packages.](./media/package-drop-1024x473.png)](./media/package-drop.png)
 
 ## Optional: Referencing a Commerce DLL
 

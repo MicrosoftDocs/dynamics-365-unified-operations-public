@@ -3,12 +3,11 @@ title: X++ language reference
 description: This topic provides programming guidance for X++.
 author: RobinARH
 ms.date: 06/20/2017
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom:
 ms.search.region: Global
 ms.author: rhaertle
+ms.custom: "intro-internal"
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

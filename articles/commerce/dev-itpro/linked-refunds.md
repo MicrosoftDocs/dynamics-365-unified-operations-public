@@ -54,7 +54,7 @@ The linked refunds functionality works with the omni-channel payments functional
 
 To turn on the linked refunds functionality, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
 
-![Omni-channel payments configuration](media/LinkedRefundsOmniChannel.jpg)
+![Omni-channel payments configuration.](media/LinkedRefundsOmniChannel.jpg)
 
 When you turn on the omni-channel payments functionality, you change the business process flow for calculating shipping charges and other charges, and for adding those charges to point of sale (POS) sales. Therefore, make sure that you test and train your employees before you turn on this functionality.
 
@@ -92,7 +92,7 @@ This section presents examples of use cases to help you understand the configura
 
 A customer comes to return an item that was purchased by using a single credit card. The customer provides a receipt, and the return is being made within the allowed period for returns. When the cashier scans the receipt, the item for return is processed. When the cashier processes the payment refund by selecting the button for any payment method, the existing credit card authorization is shown.
 
-![Single card authorization](media/LinkedRefundsSingleAuthorization.jpg)
+![Single card authorization.](media/LinkedRefundsSingleAuthorization.jpg)
 
 When the cashier selects the credit card authorization, the payment refund is processed, and the **Transaction end** screen appears. If a receipt printing is configured, the cashier is prompted to print a receipt.
 
@@ -100,7 +100,7 @@ When the cashier selects the credit card authorization, the payment refund is pr
 
 A customer comes to return an item that was purchased by using multiple credit cards. When the cashier scans the receipt, the item for return is processed. When the cashier processes the payment refund by selecting the button for any payment method, all the existing credit card authorizations are shown.
 
-![Multiple card authorizations](media/LinkedRefundsMultipleAuthorization.jpg)
+![Multiple card authorizations.](media/LinkedRefundsMultipleAuthorization.jpg)
 
 When the cashier selects a credit card authorization, the payment refund is processed. If more must be refunded, the current transaction screen shows the remaining amount. When the cashier processes the payment refund for this amount, the remaining credit card authorizations are shown. This process continues until there is no remaining amount that must be refunded.
 

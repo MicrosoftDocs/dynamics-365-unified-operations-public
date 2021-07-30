@@ -18,8 +18,6 @@
           href: get-started/whats-new-platform-updates-10-0-20.md
         - name: Platform updates for 10.0.19 (June 2021)
           href: get-started/whats-new-platform-updates-10-0-19.md
-        - name: Platform updates for 10.0.18 (May 2021)
-          href: get-started/whats-new-platform-updates-10-0-18.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -366,6 +364,8 @@
             href: deployment/troubleshoot-newinfrastructure.md
           - name: Planned maintenance in self-service environments FAQ
             href: deployment/plannedmaintenance-selfservice.md
+          - name: Business continuity and disaster recovery
+            href: sysadmin/business-continuity-disaster-recovery.md
         - name: Complete Azure Resource Manager onboarding
           href: deployment/arm-onboarding.md
         - name: Azure ExpressRoute and Finance and Operations
@@ -375,7 +375,9 @@
         - name: Apply updates to cloud environments
           href: deployment/apply-deployable-package-system.md
         - name: Apply updates and extensions to Commerce Scale Unit (cloud)
-          href: deployment/Update-retail-channel.md  
+          href: deployment/Update-retail-channel.md 
+        - name: Auto-update for Commerce Scale Unit (cloud)
+          href: deployment/Auto-Update-Commerce-Scale-Unit.md
         - name: Initialize Commerce Scale Unit (cloud)
           href: deployment/Initialize-Retail-Channels.md  
         - name: Migrate channels to a different Commerce Scale Unit
@@ -392,6 +394,8 @@
             href: deployment/on-premises-overview.md
           - name: Plan and prepare for on-premises deployments
             href: deployment/plan-onprem-deployment.md
+          - name: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
+            href: deployment/onprem-compatibility.md
           - name: Hardware sizing requirements
             href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
           - name: Authentication in Dynamics 365 Finance + Operations (on-premises)
@@ -502,8 +506,6 @@
           href: dev-tools/access-instances.md
         - name: Configure one-box development environments
           href: dev-tools/configure-developer-vm.md
-        - name: Create new users on development machines
-          href: dev-tools/enable-development-machine.md
         - name: Development and build VMs that don't allow admin access FAQ
           href: sysadmin/VMs-no-admin-access.md
         - name: Rename local environments to access Azure DevOps
@@ -1116,7 +1118,7 @@
               href: data-entities/dual-write/integrated-hr.md
             - name: Party and global address book
               href: data-entities/dual-write/party-gab.md
-            - name: Using Power Portal with the Party data model
+            - name: Using Microsoft Power Apps portals with the Party data model
               href: data-entities/dual-write/party-gab-portal.md
             - name: Upgrade to the party and global address book model
               href: data-entities/dual-write/upgrade-party-gab.md
@@ -1604,6 +1606,8 @@
           href: migration-upgrade/upgrade-go-live-prep.md
         - name: AX 2012 upgrade - Go live
           href: migration-upgrade/2012-upgrade-cutover.md
+        - name: Upgrade from AX 2012 - Data upgrade FAQ
+          href: migration-upgrade/upgrade-faq.md
         - name: Changes that affect upgrade from AX 2012
           items:
           - name: Make the chart of accounts delimiter unique

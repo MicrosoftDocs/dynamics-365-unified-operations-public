@@ -86,11 +86,11 @@ To review Microsoft Dynamics entries in Event Viewer, follow these steps.
 
 1. In Event Viewer, right-click **Custom Views**, and then select **Create Custom View**.
 
-    ![Create custom view](media/Create-Custom-View.png)
+    ![Create custom view.](media/Create-Custom-View.png)
 
 2. In the **Event logs** field, select **Dynamics**.
 
-    ![Select Dynamics](media/Select-Dynamics.png)
+    ![Select Dynamics.](media/Select-Dynamics.png)
 
 > [!NOTE]
 > Also look at **Administrative Events** in **Custom Views**.
@@ -518,7 +518,7 @@ At C:\Infrastructure\Scripts\Test-D365FOConfiguration.ps1:79 char:9
 
 **Steps:** On the machine where the script is failing, open **local users and groups**. Go to the administrators group and remove any entries that have an entry like the one highlighted in the following image.
 
-![Invalid SID](media/InvalidSID.png)
+![Invalid SID.](media/InvalidSID.png)
 
 Do this on all of the machines that receive this error. After the changes are complete, try running the script again.
 
@@ -941,12 +941,12 @@ In the right pane of Fiddler, notice that a horizontal divider separates the req
     > [!IMPORTANT]
     > For privacy, you might have to scrub personally identifiable information.
 
-    ![Personally identifiable information](media/Scrub-PII.png)
+    ![Personally identifiable information.](media/Scrub-PII.png)
 
 6. Select the next row that has a result of **302**. The URL should be **.../namespaces/AXSF/**.
 7. Find the code line that is shown on that row. 
 
-    ![Code line](media/Note-the-code.png)
+    ![Code line.](media/Note-the-code.png)
 
 8. Copy the value of code line after the equal sign (=).
 9. Go to <https://www.base64decode.org/>, and paste the code that you just copied.

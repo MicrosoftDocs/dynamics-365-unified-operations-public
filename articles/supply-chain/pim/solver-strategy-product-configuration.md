@@ -54,7 +54,7 @@ Real customer implementation studies have shown that a change in the solver stra
 
 To change the solver strategy, on the **Product configuration models** page, on the Action Pane, select **Model properties**. Then, in the **Edit the model details** dialog box, select a solver strategy.
 
-[![Changing the solver strategy](./media/solver-strategy.png)](./media/solver-strategy.png)
+[![Changing the solver strategy.](./media/solver-strategy.png)](./media/solver-strategy.png)
 
 Currently, there is no logic that automatically detects which solver strategy will be the most efficient strategy for constraint-based product configuration. Therefore, you must try the solver strategies one by one.
 

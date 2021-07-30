@@ -25,10 +25,11 @@ ms.dyn365.ops.version:
 
 ---
 
-# VAT declaration for Netherlands (Preview)
+# VAT declaration for Netherlands
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
 
 To automatically generate the VAT declaration, you must create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration electronic reporting format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see *Set up application parameters for declaration fields* later in this topic.
 
@@ -436,7 +437,7 @@ To automatically generate a VAT declaration, associate sales tax codes and repor
 </tbody>
 </table>
 
-![Application-parameters](media/App-parameters-VAT-XML-1.png)
+![Application-parameters.](media/App-parameters-VAT-XML-1.png)
 
 
 #### Set up XSD schema and namespaces
@@ -596,7 +597,7 @@ To modify target mapping, follow these steps:
 2. Select the data entity **Action class settings** and then select **Modify target mapping**.
 3. Make sure that the staging field **Action type** is mapped to the target.
 
-    ![Map staging to target](media/map-staging.png)
+    ![Map staging to target.](media/map-staging.png)
 
 4. You can map to the target manually, or on the **Mapping details** tab, select **Generate mapping \> Yes**.
 
@@ -624,7 +625,7 @@ To upload the electronic messages data package, follow these steps:
     - The executable class **NLOBGetStatusFromDidgipoort** has the **Electronic reporting import** action type.
     - The executable class **NLOBSendToDigipoort** has the **Web service** action type.
 
-    ![Executable class settings page](media/electronic-messages-NL.png)
+    ![Executable class settings page.](media/electronic-messages-NL.png)
 
 8.  For each line, select **Parameters**, and then select **NLOB Request ID** in the **Request ID** field.
 

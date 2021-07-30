@@ -124,7 +124,7 @@ The fields that appear in the **Add a filter field** list are all the filterable
 The Filter Pane is simple and straightforward to use. First, select a filtering operator in the list that is associated with each filter field. Note that the set of operators that appears depends on the data type of the field. Then enter an appropriate value for the filter condition, and click **Apply**. The form is updated based on the filter criteria that you specified.
 
 ## QuickFilter
-In Dynamics AX 2012, the QuickFilter was a framework control that was automatically added only to list pages. In Finance and Operations apps, the QuickFilter is now a modeled control that can be associated with any grid in the system. As the user starts to type, a column selector drop-down appears to guide the user toward the column that the filter will be applied to. The developer can also specify the default column for the QuickFilter. If no column is specified by the developer, the default column is the first field that can be filtered in the grid. [![QuickFilter control](./media/3_filter.png)](./media/3_filter.png)
+In Dynamics AX 2012, the QuickFilter was a framework control that was automatically added only to list pages. In Finance and Operations apps, the QuickFilter is now a modeled control that can be associated with any grid in the system. As the user starts to type, a column selector drop-down appears to guide the user toward the column that the filter will be applied to. The developer can also specify the default column for the QuickFilter. If no column is specified by the developer, the default column is the first field that can be filtered in the grid. [![QuickFilter control.](./media/3_filter.png)](./media/3_filter.png)
 
 ### Why don't I have a column selector in my QuickFilter?
 
@@ -139,7 +139,7 @@ Yes, you can use the QuickFilter to filter other collection controls, but you mu
 -   Write code in that method to perform the desired filtering.
 
 ## Grid column header filtering/sorting
-In Finance and Operations apps, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header (for columns that can be filtered), a drop dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter Pane. Additionally, there are options to sort the grid based on the column that is currently selected. [![Screen shot of grid filtering](./media/4_filter.png)](./media/4_filter.png)
+In Finance and Operations apps, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header (for columns that can be filtered), a drop dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter Pane. Additionally, there are options to sort the grid based on the column that is currently selected. [![Screen shot of grid filtering.](./media/4_filter.png)](./media/4_filter.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

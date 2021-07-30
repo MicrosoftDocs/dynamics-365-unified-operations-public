@@ -4,7 +4,7 @@
 title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
-ms.date: 06/22/2021
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -66,7 +66,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     > [!NOTE]
     > The AD CS scripts need to run on a domain controller, or a Windows Server computer with Remote Server Admin Tools installed.
     > The AD CS functionality is only available with Infrastructure scripts release 2.7.0 and later. 
-
+    >
     > Self-signed certificates should never be used in production environments. If you're using publicly trusted certificates, manually update the values of those certificates in the ConfigTemplate.xml file.
 
     ```powershell
@@ -125,7 +125,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 3. Run the following command to save the configuration file to C:\\Temp\\ClusterConfig.json. (Make sure that the C:\\Temp path exists.)
 
     ```powershell
-    Get-ServiceFabricClusterConfiguration >C:\Temp\ClusterConfig.json
+    Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
     ```	
 4. Open the **Clusterconfig.json** file for editing and find the following section. If a secondary thumbprint is defined, go to [Clean up old Service Fabric certificates](#cleanupoldsfcerts) before you continue.
 
@@ -327,19 +327,19 @@ Because you've updated your certificates, the configuration file that is present
 
 2. Select **Maintain** and then select **Update Settings**.
 
-	![Apply update settings](media/addf4f1d0c0a86d840a6a412f774e474.png)
+	![Apply update settings.](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 3. Change the thumbprints to the new thumbprints that you previously configured. You can find them in the ConfigTemplate.xml file in the InfrastructureScripts folder.
 
-	![Deployment settings thumbprint image 1](media/07da4d7e02f11878ee91c61b4f561a50.png)
+	![Deployment settings thumbprint image 1.](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
-	![Deployment settings thumbprint image 2](media/785caaf4ee652d66c0d88cf615a57e26.png)
+	![Deployment settings thumbprint image 2.](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
 4. Select **Prepare**.
 
 5. After downloading and preparation is complete, the **Update environment** button will display.
 
-	![Update environment button](media/0a9d43044593450f1a828c0dd7698024.png)
+	![Update environment button.](media/0a9d43044593450f1a828c0dd7698024.png)
 
 6. Select **Update environment** to start updating your environment.
 
@@ -349,9 +349,9 @@ Because you've updated your certificates, the configuration file that is present
 
 	Here is an example of how the name of the same thumbprint might differ.
 
-	![Deployment settings thumbprint example 1](media/038173714b2fb6cf12acc4bda2a3dde5.png)
+	![Deployment settings thumbprint example 1.](media/038173714b2fb6cf12acc4bda2a3dde5.png)
 
-	![Deployment settings thumbprint example 2](media/642f6434da9cdeac3651b765acca08fa.png)
+	![Deployment settings thumbprint example 2.](media/642f6434da9cdeac3651b765acca08fa.png)
 
 ## Update other certificates as needed
 

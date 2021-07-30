@@ -39,7 +39,7 @@ After a theme is created and uploaded to your production site, you can use the C
 
 The following illustration shows how a theme is selected for a page in Dynamics 365 Commerce. Notice that the page container (**Default page**) is selected, and the **Theme** field for the page appears in the properties pane on the right.
 
-![Theme selection](media/theming-1.png)
+![Theme selection.](media/theming-1.png)
 
 A theme can be set on the master page in a similar manner. In this case, the theme is applied to all pages that are derived from the master page. Note that if the **locked** property is turned off, individual pages can override the theme.
 

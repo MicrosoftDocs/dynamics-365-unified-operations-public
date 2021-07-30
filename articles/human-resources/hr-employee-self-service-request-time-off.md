@@ -4,7 +4,7 @@
 title: Request time off
 description: Request time off in Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/21/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,6 +47,8 @@ You can submit requests for time off, view your vacation and leave balances, and
 
 6. Select **Submit** when you're ready to submit your request. Otherwise, select **Save draft**.
 
+Employees who submit a new leave request can select different leave types to construct their leave request. However, all leave types that are selected as part of a single leave request should have the same leave unit. Employees can view the leave unit for each leave type in the **Request time off** form.
+
 ## Add an attachment to an existing request
 
 When updating an existing time off request, you can add an attachment. You can also see all of the related requests for a specific date.
@@ -73,7 +75,7 @@ When updating an existing time off request, you can add an attachment. You can a
 
 4. In the **Cancellation details** pane, enter a comment and then select **Submit**.
 
-   ![Cancel leave request](media/hr-leave-and-absence-cancel.png)
+   ![Cancel leave request.](media/hr-leave-and-absence-cancel.png)
 
 ## See also
 

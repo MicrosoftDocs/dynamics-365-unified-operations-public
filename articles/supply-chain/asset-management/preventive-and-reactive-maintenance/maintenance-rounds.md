@@ -85,7 +85,7 @@ In **Asset Management**, you can create maintenance rounds for various assets, o
 
 The illustration below shows and example of a maintenance round containing three assets.
 
-![Figure 1](media/13-preventive-maintenance.png)
+![Figure 1.](media/13-preventive-maintenance.png)
 
 
 ## Schedule maintenance rounds
@@ -111,9 +111,9 @@ When you've set up a maintenance round, you run a schedule job to schedule all t
 
 The two illustrations below show a schedule job in the **Schedule maintenance rounds** dialog, and the maintenance schedule lines created in **All maintenance schedule** based on that schedule job.
 
-![Figure 2](media/14-preventive-maintenance.png)
+![Figure 2.](media/14-preventive-maintenance.png)
 
-![Figure 3](media/15-preventive-maintenance.png)
+![Figure 3.](media/15-preventive-maintenance.png)
 
 - When work orders are manually created on assets that are covered by a vendor warranty, a dialog box is shown to make the user aware of the warranty. The creation of the work order can then be canceled. The check for a warranty relation is omitted for work orders that are automatically created.  
 - You can set up a batch job on the **Run in the background** FastTab to schedule rounds at regular intervals.  

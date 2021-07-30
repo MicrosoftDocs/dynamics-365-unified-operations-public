@@ -72,7 +72,7 @@ By default, the out-of-box payment connectors for Adyen and PayPal support the e
 
 > [!IMPORTANT]
 > - Only Adyen connector version **V002** truly supports enhanced SCA. Version **V001** still works when the checkout is configured for enhanced SCA. However, behind the scenes, that version still makes two calls.
-> - Because of SCA requirements that went into effect in the European Union (EU) on January 1, 2021, version **V001** of the Adyen connector should no longer be used. For information about how to configure the Adyen connector to use version **V002**, see [Set up a processor for new credit cards](adyen-connector.md?tabs=8-1-3#set-up-a-processor-for-new-credit-cards).
+> - Because of SCA requirements that went into effect in the European Union (EU) on January 1, 2021, version **V001** of the Adyen connector should no longer be used. For information about how to configure the Adyen connector to use version **V002**, see [Set up a processor for new credit cards](adyen-connector-setup.md#set-up-a-processor-for-new-credit-cards).
 
 ## Enable enhanced payments in storefront checkout in Commerce site builder
 
@@ -83,7 +83,7 @@ To enable the enhanced payments feature in Commerce site builder, follow these s
 3. Scroll down to **Cart and checkout**, and select the **Enable single payment authorization checkout** checkbox.
 4. Select **Save and publish**.
 
-![Enabling enhanced payments in storefront checkout in Commerce site builder](media/rfac.png)
+![Enabling enhanced payments in storefront checkout in Commerce site builder.](media/rfac.png)
 
 ## Additional resources
 

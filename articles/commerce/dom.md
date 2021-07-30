@@ -38,7 +38,7 @@ DOM optimizes order fulfillment across a complex network of systems and processe
 
 The following illustration shows the lifecycle of a sales order in a DOM system.
 
-![Sales order lifecycle in the context of DOM](./media/flow.png "Sales order lifecycle in the context of DOM")
+![Sales order lifecycle in the context of DOM.](./media/flow.png "Sales order lifecycle in the context of DOM")
 
 ## Set up DOM
 
@@ -204,7 +204,7 @@ At the time of processing, DOM will consider the order and order lines as descri
 
 After it applies the rules, inventory constraints, and optimization, DOM picks the location that is closest to the customer's delivery address.
 
-![Sales order criteria](./media/ordercriteria.png "Sales order criteria")
+![Sales order criteria.](./media/ordercriteria.png "Sales order criteria")
 
 ## Results of DOM runs
 

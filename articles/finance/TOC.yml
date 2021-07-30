@@ -76,8 +76,6 @@
             href: get-started/whats-new-changed-10-0-20.md
           - name: Finance 10.0.19 (June 2021)
             href: get-started/whats-new-changed-10-0-19.md
-          - name: Finance 10.0.18 (May 2021)
-            href: get-started/whats-new-changed-10-0-17.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -687,7 +685,15 @@
       - name: Use cost control workspace for mobile application
         href: cost-accounting/cost-controlling-mobile-workspace.md
     - name: Electronic messaging
-      href: general-ledger/electronic-messaging.md
+      items: 
+      - name: Electronic messaging overview
+        href: general-ledger/electronic-messaging.md
+      - name: Set up Electronic messages
+        href: general-ledger/electronic-messaging-setup.md
+      - name: Work with the Electronic messages functionality
+        href: general-ledger/electronic-messaging-work-with-em.md
+      - name: Call a simple exporting ER format to generate an Excel report
+        href: general-ledger/electronic-messaging-example.md
     - name: Expense management
       items:
       - name: Expense management overview
@@ -1492,12 +1498,12 @@
               href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing
               href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
+            - name: Create a new Electronic invoicing feature
+              href: localizations/e-invoicing-create-new-e-invoicing-feature.md
             - name: Get started with Electronic Invoicing for Brazil
               href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing for Egypt
               href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
-            - name: Get started with Electronic Invoicing for Italy
-              href: localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
               href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Set up Electronic Invoicing
@@ -1540,6 +1546,8 @@
         items:
         - name: Australia overview
           href: localizations/australia.md
+        - name: Bank file formats for Australian banks
+          href: localizations/apac-aus-bank-file-formats.md
         - name: Business activity statement (BAS)
           href: localizations/apac-aus-business-activity-statement.md
         - name: Add report boxes and generate the BAS
@@ -1547,7 +1555,7 @@
         - name: Low-value pool depreciation
           href: localizations/apac-aus-low-value-pool-depreciation.md
         - name: Set up reason codes for the BAS
-          href: localizations/tasks/set-up-reason-codes-australia-bas.md
+          href: localizations/tasks/set-up-reason-codes-australia-bas.md          
       - name: Austria
         items:
         - name: Austria overview
@@ -1560,6 +1568,8 @@
           href: localizations/emea-aut-vat-statement-details.md
         - name: Cross-border services report
           href: localizations/emea-aut-cross-border-services-report.md
+        - name: Purchase duties
+          href: localizations/emea-aut-purchase-duties.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
@@ -1864,6 +1874,10 @@
           href: localizations/emea-cze-vat-statement-details.md
         - name: VAT declaration (Czech Republic)
           href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+        - name: Bank symbols for bank accounts
+          href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
+        - name: Intra-community VAT
+          href: localizations/emea-cze-intra-community-VAT.md
         - name: Year-end close
           href: localizations/emea-cze-hun-year-end.md
       - name: Denmark
@@ -2110,6 +2124,8 @@
           href: localizations/emea-fra-derogatory-depreciation.md
         - name: French bills of exchange and promissory notes
           href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+        - name: French Intrastat
+          href: localizations/emea-fra-intrastat.md
         - name: NAF codes and siret numbers
           href: localizations/emea-fra-naf-codes-siret-numbers.md
         - name: Set up NAF codes and Siret numbers
@@ -2160,6 +2176,8 @@
           href: localizations/emea-deu-journal-list-report.md
         - name: Set up electronic tax declarations
           href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
+        - name: Print a separate label for credit memos that originate from sales
+          href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
       - name: Hungary
         items:
         - name: Hungary overview
@@ -2294,6 +2312,8 @@
                 href: localizations/apac-ind-gst-reference-groups.md
             - name: Tax transactions
               items: 
+              - name: GST TDS on payment of goods and services
+                href: localizations/ind-gst-tds-payment-goods-services.md
               - name: Purchase transactions
                 items:
                 - name: Purchases from unregistered vendors
@@ -2444,6 +2464,8 @@
                 href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
               - name: Setoff rule error when a tax settlement is run
                 href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
+              - name: Default field value in tax information isn't as expected
+                href: localizations/apac-ind-GST-troubleshooting-default-value-in-tax-information-not-expected.md
         - name: Direct taxes
           items:
           - name: India withholding tax
@@ -2462,6 +2484,10 @@
                 href: localizations/apac-ind-TDS-India-TDS-overview.md
               - name: Include GST when calculating tax deductions
                 href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+              - name: TDS on purchases of goods under 194Q
+                href: localizations/ind-tds-purchases-goods.md
+              - name: Post TDS/TCS on non-filers at a higher rate of tax
+                href: localizations/post-tds-tcs-non-filers-higher-tax.md
               - name: Basic setup for TDS
                 items:           
                 - name: Set the TDS parameters
@@ -2598,6 +2624,8 @@
           href: localizations/emea-ita-exil-zero-invoice-posting.md
         - name: Bank data usability enhancement
           href: localizations/emea-ita-exil-bank-accounts-setup.md
+        - name: Italian Intrastat
+          href: localizations/emea-ita-intrastat.md
         - name: Miscellaneous charges per kilogram in an Intrastat declaration
           href: localizations/emea-ita-exil-misc-charges-intrastat.md
         - name: Intent letters - Invoicing usual exporters
@@ -2818,6 +2846,8 @@
           href: localizations/emea-ltu-isaf.md
         - name: Standard Audit File for Tax (SAF-T) for Lithuania
           href: localizations/emea-ltu-saf-t.md
+        - name: Set up the transfer documents for goods movement inside a company
+          href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
       - name: Malaysia
         items:
         - name: Malaysia overview
@@ -2952,8 +2982,18 @@
           href: localizations/emea-pol-turnover-balances-statement.md
         - name: Split AP/AR exchange difference
           href: localizations/emea-pol-split-ap-ar-exchange-difference.md
-        - name: VAT declaration with registers (JPK_V7M, VDEK)
-          href: localizations/emea-pol-vdek.md
+        - name: Set up and use PKWiU codes for Poland
+          href: localizations/emea-pol-pkwiu-code.md  
+        - name:  VAT declaration with registers (JPK_V7M, VDEK)
+          items:
+          - name: VAT declaration with registers (JPK_V7M, VDEK) overview
+            href: localizations/emea-pol-vdek.md
+          - name: Prepare for JPK-V7M reporting
+            href: localizations/emea-pol-vdek-setup.md
+          - name: JPK-V7M reporting
+            href: localizations/emea-pol-vdek-reporting.md
+          - name: Details of specific business scenarios in the JPK-V7M report
+            href: localizations/emea-pol-vdek-scenarios.md
       - name: Qatar
         items: 
         - name: Qatar overview
@@ -3190,6 +3230,8 @@
             href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
           - name: Bad debt reserves in accounts receivable
             href: localizations/rus-bad-debts.md
+          - name: Calculation of tax asset and tax liability registers
+            href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
@@ -3983,6 +4025,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
             - name: Generate reports in Office formats that have embedded images
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+          - name: Design an ER format to generate a report in Excel with embedded images in page headers or footers
+            href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/finance/toc.json
         - name: Split generated XML files based on file size and content quantity
           href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
         - name: Suppress BOM characters in generated files

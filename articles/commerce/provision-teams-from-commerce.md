@@ -52,7 +52,7 @@ To provision Teams in Commerce headquarters, follow these steps.
 > [!TIP]
 > If none of your regional managers, store managers, and store workers have been associated with a Teams license, you might receive the following error message: "Failed to retrieve appliable Sku categories for the user." To correct the issue, select **Sync teams and members** on the Action Pane.
 
-<!-- ![Dynamics 365 Commerce - Teams integration configuration](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
+<!-- ![Dynamics 365 Commerce - Teams integration configuration.](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
 
 ## Validate Teams provisioning in the Teams admin center
 
@@ -66,7 +66,7 @@ To validate Microsoft Teams provisioning in the Microsoft Teams admin center, fo
 
 The following illustration shows an example of the **Manage teams** page in the Teams admin center.
 
-![Example of the Manage teams page in the Teams admin center](media/Teams-FLW-Admin-Teams.png)
+![Example of the Manage teams page in the Teams admin center.](media/Teams-FLW-Admin-Teams.png)
 
 ## Upload a Commerce organizational hierarchy to Teams
 	
@@ -89,7 +89,7 @@ To verify that the organizational hierarchy was uploaded to Microsoft Teams, fol
 1. On the **Published lists** tab, create a new list that has a dummy task.
 1. Select **Publish**. The organizational hierarchy should appear in the **Select who to publish to** dialog box, as shown in the example in the following illustration.
 
-![Example of an organizational hierarchy in the Select who to publish to dialog box](media/Microsoft-teams-verify-org-hierarchy.png)
+![Example of an organizational hierarchy in the Select who to publish to dialog box.](media/Microsoft-teams-verify-org-hierarchy.png)
 
 ## Additional resources
 

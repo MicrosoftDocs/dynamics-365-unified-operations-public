@@ -178,7 +178,7 @@ The following fields are also available: **Transaction description**, **Qty**, *
 14. Create the tax register journal for the second month of the year 2019. Calculate all registers.
 15. In the **Goods cost calculation** register, you should see the following information.
 
-    ![A screenshot of a computer Description automatically generated](media/1_Goods_cost_calculation.png)
+    ![A screenshot of a computer Description automatically generated.](media/1_Goods_cost_calculation.png)
 
 ## <a name="register-information-fixed"></a>The FA – information about object register
 

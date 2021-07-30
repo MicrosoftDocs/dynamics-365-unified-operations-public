@@ -47,7 +47,7 @@ We strongly recommend that you run the [Upgrade analyzer](upgrade-analyzer-tool.
 
 ## End-to-end data upgrade process
 
-![Data upgrade process](media/endToEndDataUpgradeProcess.png)
+![Data upgrade process.](media/endToEndDataUpgradeProcess.png)
 
 ### Back up your AX 2012 database
 

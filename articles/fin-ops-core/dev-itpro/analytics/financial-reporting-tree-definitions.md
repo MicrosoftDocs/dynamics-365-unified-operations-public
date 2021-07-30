@@ -175,23 +175,23 @@ Here is the structure of the reporting units in the following reporting tree:
 - The lowest-level detail reporting units (Home Sales, Auto Sales, Client Services, and Operations) represent departments in the financial data. These reporting units are in the shaded area of the diagram.
 - The higher-level summary units summarize information from the detail units.
 
-[![Contoso Summary Report Structure - Example 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso Summary Report Structure - Example 1.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### Reporting unit structure – Example 2
 
 In the following diagram, the reporting tree has an organizational structure that is divided by business function.
 
-[![Contoso Summary Report Structure - Example 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso Summary Report Structure - Example 2.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### Example of the Insert Reporting Units from Dimensions dialog box
 
 The following illustration shows an example of the **Insert Reporting Units from Dimensions** dialog box. For this example, the results will return the combination of business units, cost centers, and departments.
 
-[![Insert Reporting Units](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Insert Reporting Units.](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 The resulting reporting tree definition is sorted by business unit, then by cost center, and then by department. The dimension for the fifth reporting unit is **Business Unit = \[001\], Cost Center =\[\], Department = \[022\]**, and identifies a reporting unit for accounts that are specific to business unit 001 and department 022.
 
-[![Illustration of the Reporting Tree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Illustration of the Reporting Tree.](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### Examples of data roll-up
 
@@ -199,11 +199,11 @@ The following examples show possible information that is used in a reporting tre
 
 #### Example 1
 
-[![Mutli-company roll-up](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Mutli-company roll-up.](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### Example 2
 
-[![Cross Company Department Roll-up](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Cross Company Department Roll-up.](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## Additional resources
 

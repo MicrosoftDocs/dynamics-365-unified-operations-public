@@ -36,7 +36,7 @@ This topic provides troubleshooting guidance that can help when an error message
 
 When you open the sales order page after you sync an order, you receive the following error message: "The payment type must be credit card, since the credit card number has been specified."
 
-![Payment type must be credit card error](media/payment-type-must-be-credit-card.jpg)
+![Payment type must be credit card error.](media/payment-type-must-be-credit-card.jpg)
 
 ## Resolution
 

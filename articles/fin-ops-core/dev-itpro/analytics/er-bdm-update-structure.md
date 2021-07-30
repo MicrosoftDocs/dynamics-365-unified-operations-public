@@ -63,7 +63,7 @@ Complete the following procedures in [Business document management overview](er-
 
     The new template is opened for editing in the Excel Online embedded control on the template editor page.
 
-[![Using the Business document management workspace to start to edit a business document template](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![Using the Business document management workspace to start to edit a business document template.](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### Review the current structure of the editable template
 
@@ -73,7 +73,7 @@ Complete the following procedures in [Business document management overview](er-
 4. In the **Template structure** pane, expand **Report \> Invoice \> rptHeader \> rptHeaderPart1**.
 5. Notice that, in the template structure in Finance, the **rptHeaderCompLogo** item is presented as a child item of **Report \> Invoice \> rptHeader \> rptHeaderPart1**.
 
-[![Using the Business document management workspace to review the current structure of an editable template](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![Using the Business document management workspace to review the current structure of an editable template.](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### Update the structure of a business document template by deleting a picture
 
@@ -90,7 +90,7 @@ Complete the following procedures in [Business document management overview](er-
 4. In the **Template structure** pane, expand **Report \> Invoice \> rptHeader \> rptHeaderPart1**.
 5. Notice that the **rptHeaderCompLogo** item is no longer included in the template structure in Finance.
 
-[![Using the Business document management workspace to delete a picture from a business document template](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![Using the Business document management workspace to delete a picture from a business document template.](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### Update the structure of a business document template by adding a picture
 
@@ -102,7 +102,7 @@ Complete the following procedures in [Business document management overview](er-
 6. In the **Template structure** pane, expand **Report \> Invoice \> rptHeader \> rptHeaderPart1**.
 7. Notice that the new picture is now included as an item in the template structure in Finance.
 
-[![Using the Business document management workspace to add a picture to a business document template](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![Using the Business document management workspace to add a picture to a business document template.](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## Related links
 

@@ -34,7 +34,7 @@ For each inbound load, your system should already include a related sales order,
 
 The following illustration shows the typical flow for handling inbound loads that have purchase order quantities when they arrive at your warehouse.
 
-![The inbound load handling process](media/inbound-process.png "The inbound load handling process")
+![The inbound load handling process.](media/inbound-process.png "The inbound load handling process")
 
 1. **The vendor confirms the purchase order.**
 
@@ -297,7 +297,7 @@ In this section, you will create a mobile device menu item and add it to an exis
 
     You can leave all other settings at their default values.
 
-    ![Mobile device menu item settings](media/inbound-mobile-menu-items.png "Mobile device menu item settings")
+    ![Mobile device menu item settings.](media/inbound-mobile-menu-items.png "Mobile device menu item settings")
 
     For more information about how to set up mobile device menu items, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
 
@@ -332,7 +332,7 @@ In this procedure, you will manually create a purchase order and an associated l
     - On the **Load** FastTab, the **Load status** field is set to _Open_.
     - In the **Load lines** section, there is a single line where the **Quantity** field is set to _10_ and the **Work created quantity** field is set to _0_ (zero).
 
-    ![Load details](media/inbound-load-details.png "Load details")
+    ![Load details.](media/inbound-load-details.png "Load details")
 
 1. On the Action Pane, on the **Ship and receive** tab, select **Confirm \> Inbound shipment**. Notice that the **Load status** has changed to _Shipped_.
 1. Make a note of the **Load ID** value, so that you can use it in the next procedure.

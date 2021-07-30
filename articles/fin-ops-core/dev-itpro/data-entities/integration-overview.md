@@ -275,7 +275,7 @@ It's typical that the application calls out to an external web service that is h
 >
 > If you can't modify the target service so that it uses TLS 1.2 or later, you can work around this issue by introducing a broker service and making a two-hop call, as shown in the following illustration.
 >
-> ![TLS requirements](./media/integration-tls.png)
+> ![TLS requirements.](./media/integration-tls.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

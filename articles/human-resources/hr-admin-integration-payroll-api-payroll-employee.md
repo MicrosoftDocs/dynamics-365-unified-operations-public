@@ -36,15 +36,19 @@ Physical name: mshr_payrollemployeeentity.
 
 This entity provides information about the employee. You must set the [payroll integration parameters](hr-admin-integration-payroll-api-parameters.md) before using this entity.
 
+>[!IMPORTANT] 
+>**FirstName**, **MiddleName**, **LastName**, **NameValidFrom**, and **NameValidTo** fields will no longer be available on this entity. This is to ensure that there is only one date effective datasource backing this entity, which is **HcmEmployment** with the **EmploymentStartDate** and **EmploymentEndDate** fields.
+
+>These fields will be available on the **DirPersonNameHistoricalEntity**, which was released in Platform update 43. There is an OData relation from **PayrollEmployeeEntity** to **DirPersonNameHistoricalEntity** on the **Person** field. Alternatively, the **DirPersonNameHistoricalEntity** entity can be directly queried through OData using the public name, **PersonHistoricalNames**.
+
+
 ## Properties
 
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Personnel number**<br>mshr_personnelnumber<br>*String* | Read-only<br>Required | The employee's unique personnel number. |
 | **Primary field**<br>mshr_primaryfield<br>*String* | Required<br>System generated |  |
-| **Last name**<br>mshr_lastname<br>*String* | Read only<br>Required | Employee last name. |
 | **Legal entity ID**<br>mshr_legalentityID<br>*String* | Read-only<br>Required | Specifies the legal entity (company). |
-| **Valid from**<br>mshr_namevalidfrom<br>*Date Time Offset* | Read-only <br>Required | Date the employee information is valid from.  |
 | **Gender**<br>mshr_gender<br>[mshr_hcmpersongender option set](hr-admin-integration-payroll-api-gender.md) | Read-only<br>Required | The employee's gender. |
 | **Payroll employee entity ID**<br>mshr_payrollemployeeentityid<br>*GUID* | Required<br>System generated | A system-generated GUID value to uniquely identify the employee. |
 | **Employment start date**<br>mshr_employmentstartdate<br>*Date time offset* | Read-only<br>Required | The start date of the employee's employment. |
@@ -54,8 +58,6 @@ This entity provides information about the employee. You must set the [payroll i
 | **Valid to**<br>mshr_namevalidto<br>*Date Time Offset* |  Read-only<br>Required | Date the employee information is valid to. |
 | **Birth date**<br>mshr_birthdate<br>*Date Time Offset* | Read-only <br>Required | The employee's birth date |
 | **Identification number to**<br>mshr_identificationnumber<br>*String* | Read-only <br>Required |The identification number defined for the employee.  |
-| **First name**<br>mshr_firstname<br>*String* | Read-only<br>Required | Employee first name. |
-| **Middle name**<br>mshr_middlename<br>*String* | Read-only<br>Required |Employee middle name.  |
 
 ## Example query for Payroll employee
 
@@ -73,11 +75,6 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
     "mshr_personnelnumber": "000041",
     "mshr_employmentstartdate": "2011-04-05T07:00:00Z",
     "mshr_employmentenddate": "2154-12-31T23:59:59Z",
-    "mshr_firstname": "Cassie",
-    "mshr_middlename": "Lassie",
-    "mshr_lastname": "Hicks",
-    "mshr_namevalidfrom": "2021-03-12T20:34:25Z",
-    "mshr_namevalidto": "2154-12-31T23:59:59Z",
     "mshr_birthdate": "1987-09-12T00:00:00Z",
     "mshr_gender": 200000002,
     "mshr_identificationtypeid": "SSN",

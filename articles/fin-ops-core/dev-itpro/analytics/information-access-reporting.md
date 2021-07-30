@@ -115,7 +115,7 @@ The following table can be used as a guide when choosing the right tool for the 
 ## Operational views
 Operational views represent an essential part of the average employee's daily life. As important as a brush is to a painter, operational views are used to empower people to be productive. These views contain logical presentations of data to help the user discover patterns, highlight anomalies, and act on the most important tasks. Targeted experiences are used to satisfy the unique information access requirements for a given persona. These views provide actionable controls that help to maximize efficiency for common user actions. Learn more about constructing custom operational workspaces in [Build operational workspaces](../user-interface/build-workspaces.md). Example applications of operational views include controller operations, production floor management, and customer collections monitoring.
 
-[![operational-views](./media/operational-views-1024x426.png)](./media/operational-views.png)
+[![operational-views.](./media/operational-views-1024x426.png)](./media/operational-views.png)
 
 **What are the characteristics and capabilities?**
 
@@ -139,7 +139,7 @@ Operational views represent an essential part of the average employee's daily li
 ## Analytical tools and visualizations
 Embedded visuals based on analytical data allow users to navigate between aggregate views down to the transactional details that affect them. Power BI service integration delivers world-class analytical tools with built-in support for accessing data. These tools empower "citizen developers" to author the reports they need and share the reports with others within the organization. Use the Power BI content packs available in Lifecycle Services to get started. Learn more about Power BI integration in [Features and services available through Power BI integration](power-bi-integration.md). Example applications of analytical tools and visualizations include customer sales per quarter, total revenue by region, and inventory turn-over.
 
-[![supplier-quality-analysis-report](./media/supplier-quality-analysis-report.png)](./media/supplier-quality-analysis-report.png)
+[![supplier-quality-analysis-report.](./media/supplier-quality-analysis-report.png)](./media/supplier-quality-analysis-report.png)
 
 **What are the characteristics and capabilities?**
 
@@ -164,7 +164,7 @@ Embedded visuals based on analytical data allow users to navigate between aggreg
 ## Business documents
 These reporting solutions are often used to capture and communicate the details of business transactions. As such, this requires a reporting solution capable of producing physical manifestations of business data using existing devices like network printers. Learn more about the enhancements to the Document reporting service in [Document Reporting Services](document-reporting-services.md). Example applications of business documents include sales invoice, customer statements, and checks.
 
-[![image-of-business-documents](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
+[![image-of-business-documents.](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
 **What are the characteristics and capabilities?**
 
@@ -189,7 +189,7 @@ These reporting solutions are often used to capture and communicate the details 
 ## Electronic reporting
 Electronic reporting (ER) is the tool to use to configure electronic document formats in accordance with the legal requirements of various countries/regions. For more information about the Electronic reporting tool, see [Electronic reporting (ER) overview](general-electronic-reporting.md). Example applications of electronic reporting include financial auditing, tax reporting, and electronic invoicing.
 
-[![electronic-reporting-example](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
+[![electronic-reporting-example.](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
 **What are the characteristics and capabilities?**
 
@@ -206,7 +206,7 @@ Electronic reporting (ER) is the tool to use to configure electronic document fo
 ## Financial reporting
 Standard financial reports are provided using the default main account categories. Use the report designer to create or modify traditional financial statements, such as Income statement and Balance sheet and share the results with other members of your organization. For detailed information about the Financial reporting tooling, see [General ledger and Financial reporting overview](../../../finance/general-ledger/general-ledger.md). Example applications of financial reporting include balance sheets, cash flow, and summary trial balance year over year.
 
-[![financial-reporting-example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
+[![financial-reporting-example.](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 
 **What are the characteristics and capabilities?**
 

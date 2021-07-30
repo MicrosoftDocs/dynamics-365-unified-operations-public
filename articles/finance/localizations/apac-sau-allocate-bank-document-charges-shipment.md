@@ -43,7 +43,7 @@ Follow these steps to set up a charge code for bank document charges.
 2. On the **Posting** FastTab, in the **Debit** section, in the **Type** field, select **Item**. The **Bank document charge code** option in the **Bank document charge** section becomes available.
 3. Set the **Bank document charge code** option to **Yes**. The **Type** field in the **Credit** section is automatically set and can't be edited.
 
-![Setting up a charge code for bank document charges](media/apac-sau-bank-document-charge-setup.PNG)
+![Setting up a charge code for bank document charges.](media/apac-sau-bank-document-charge-setup.PNG)
 
 ## Allocate bank document charges
 
@@ -61,16 +61,16 @@ Follow these steps to allocate bank document charges.
     > [!NOTE]
     > The **Offset account type** and **Offset account** fields are automatically set.
 
-    ![Entering the bank document charge code on a journal line](media/apac-sau-general-journal-voucher.PNG)
+    ![Entering the bank document charge code on a journal line.](media/apac-sau-general-journal-voucher.PNG)
 
 5. On the **List** tab, set the **Account** and **Debit** fields.
 6. On the **Letter of credit/import collection** page, on the Action Pane, select **Bank document** \> **Bank document charge**.
 
-    ![Allocating bank document charges](media/apac-sau-allocate-bank-docment-charge.PNG)
+    ![Allocating bank document charges.](media/apac-sau-allocate-bank-docment-charge.PNG)
 
     The letter of credit or import collection that you created in the purchase order is opened. It should show the bank document charge that was posted in the general journal for this letter of credit or import collection.
 
-    ![Letter of credit/import collection bank document transactions](media/apac-sau-lc-bank-document-transactions.PNG)
+    ![Letter of credit/import collection bank document transactions.](media/apac-sau-lc-bank-document-transactions.PNG)
 
 7. Select the bank document charge transaction in **Edit** mode, and then select **Letter of credit/import collection** to allocate the selected bank document charge.
 

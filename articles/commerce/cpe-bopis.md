@@ -58,7 +58,7 @@ BOPIS scenarios that involve a credit card payment require a hardware station. T
 4. Select **Download**, and then select **Retail Modern POS**. 
 5. When download of the **ModernPOSSetup.exe** file is completed, select **Open file**.
 
-    ![Open file](./dev-itpro/media/PAYMENTS/openfile.png)
+    ![Open file.](./dev-itpro/media/PAYMENTS/openfile.png)
 
 6. Select **Next** to go through the installation process. When installation is completed, select **Close**.
 

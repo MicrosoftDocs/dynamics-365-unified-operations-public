@@ -40,7 +40,7 @@ To use this feature, click the **Search** icon to display the **Search** box. Yo
 > [!NOTE]
 > The **Search** box helps you find and navigate to pages. It will not help you find specific data or actions.
 
-[![search-box](media/navigation-search.png "Search box")
+[![search-box.](media/navigation-search.png "Search box")
 
 ## Quickly navigate to a particular page
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic applies to Dynamics 365 Commerce version 10.0.20 and later.
 
@@ -53,7 +53,7 @@ For MPOS, more manual management is required to get the app and package it with 
 
 Store Commerce is a shell that renders CPOS. Therefore, to get the updated CPOS functionality, you should also update CPOS. CPOS can be updated from the CSU. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
 
-![Store Commerce](media/StoreCommerce.PNG)
+![Store Commerce.](media/StoreCommerce.PNG)
 
 
 ## Store Commerce and MPOS parity

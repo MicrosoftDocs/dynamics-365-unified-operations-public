@@ -43,7 +43,7 @@ The Change feed feature relies on a SQL Server feature that is named Change Data
 
 The following illustration shows how change feeds work in Finance and Operations apps.
 
-![How change feeds work in Finance and Operations apps](media/Change-feed-overview-picture.png)
+![How change feeds work in Finance and Operations apps.](media/Change-feed-overview-picture.png)
 
 1. Whenever a data change occurs in Finance and Operations apps, the underlying database (AXDB) is updated. The CDC feature ensures that the update is reflected in the database. CDC captures the changes in a log (the change log), together with a logical sequence number (**LSN** value), a date/time stamp (**Change Date-Time** value), and a **Change Payload** value that identifies the data that changed.
 2. **Export to Data Lake** microservices capture the changes in the database and write the change log to the customer's data lake. Change feed folders in the data lake contain the change log, which is organized into folders.
@@ -59,19 +59,19 @@ When you add a table to a data lake, or when you activate a table that has been 
 
 To access change folders, open the Azure portal, and find and select the storage account that is associated with your Finance and Operations environment. You should see the **Change feed** folder in the data lake folder structure. The following illustration shows an example.
 
-![Change feed folder in the data lake folder structure](media/Change-feed-folders-rootfolder-top-level.png)
+![Change feed folder in the data lake folder structure.](media/Change-feed-folders-rootfolder-top-level.png)
 
 When you open the **Change feed** folder, you should see folders that correspond to the tables that you've added to the data lake. You should also see CDM metadata files that describe the change folder data. The following illustration shows an example.
 
-![Folders and CDM metadata files in the Change feed folder](media/Change-feed-folders-table-level-with-metadata.png)
+![Folders and CDM metadata files in the Change feed folder.](media/Change-feed-folders-table-level-with-metadata.png)
 
 CDM metadata files describe the structure of change feed data that is contained in folders. You can use the CDM metadata files and data transformation tools such as Data Factory to read change feed data without having to read raw comma-separated values (CSV) files. To examine the metadata, select a metadata file, and then open it in a text editor.
 
-![CDM metadata file opened in a text editor](media/Change-feed-folders-examine-metadata.png)
+![CDM metadata file opened in a text editor.](media/Change-feed-folders-examine-metadata.png)
 
 As you should notice from the metadata definitions, the **Change feed** folder contains the CDC change log details, together with additional fields. The following illustration and table provide details about the format of changes in change folders.
 
-![Format of changes in change folders](media/Change-feed-folders-change-data-format2.png)
+![Format of changes in change folders.](media/Change-feed-folders-change-data-format2.png)
 
 | Field name                    | Contents |
 |-------------------------------|----------|

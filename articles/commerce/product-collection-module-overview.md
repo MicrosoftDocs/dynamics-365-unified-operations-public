@@ -44,7 +44,7 @@ The sources for product collections can be lists of the following four types:
 
 The following illustration shows the different types of product collections being used on an e-Commerce site.
 
-![Example of the different types of product collections on an e-Commerce site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Example of the different types of product collections on an e-Commerce site.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Always use product collection modules to show a group of products of a similar type.

@@ -77,11 +77,11 @@ You create country/region context on a controlled entity by setting the ISO code
 > To add more than one ISO country and region code to the **CountryRegionCodes** property, use a comma-separated list.
 
 ## Using the legal entity as the controlling party
-The **Country/region** value in the primary address of the legal entity determines the country/region context of the controlling party. The default value of the **Country/region** field is the locale of the system. The following illustration shows how to set the primary address of the legal entity. [![LE\_Edit\_address](./media/le_edit_address-1024x570.jpg)](./media/le_edit_address.jpg)
+The **Country/region** value in the primary address of the legal entity determines the country/region context of the controlling party. The default value of the **Country/region** field is the locale of the system. The following illustration shows how to set the primary address of the legal entity. [![LE\_Edit\_address.](./media/le_edit_address-1024x570.jpg)](./media/le_edit_address.jpg)
 
 ## Setting another party as the controlling party
 You can use another party, such as a customer, bank, or vendor, as a controlling party. For example, you can enable targeted functionality for customers of a specific country/region or require specific validation of vendors from a specific country/region. To set the controlling party, use the **CountryRegionContextField** property of the form, control, or other element. This property lets you select the entity that is the controlling party. The default value is the legal entity. The following illustration shows how to set the **CountryRegionContextField** property for a field. 
-[![DE\_CountryRegionContextField](./media/de_countryregioncontextfield.jpg)](./media/de_countryregioncontextfield.jpg) 
+[![DE\_CountryRegionContextField.](./media/de_countryregioncontextfield.jpg)](./media/de_countryregioncontextfield.jpg) 
 
 In this example, the customer becomes the controlling entity. The customer's address is compared with the value of the **CountryRegionCodes** field to determine whether the **GermanSpecifcSetting** field is displayed.
 

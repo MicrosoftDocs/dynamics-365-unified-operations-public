@@ -18,13 +18,13 @@ ms.dyn365.ops.version: AX 10.0.16
 
 This topic describes the architecture of the headless commerce (also known as Commerce Scale Unit). The headless commerce is an API-driven framework that enables extensible, personalized, friction-free commerce experiences, and integrated, optimized back-office operations.
 
-![Commerce Scale Unit architecture](./media/CSU.PNG)
+![Commerce Scale Unit architecture.](./media/CSU.PNG)
 
 ## Omnichannel solution provided by the headless commerce
 
 The commerce APIs of the headless commerce are consumed by Microsoft Dynamics 365 Commerce (back-office, in-store, call center, and e-commerce) and provide a complete omnichannel solution. The APIs can be consumed by third-party applications and Microsoft Power Platform connectors.
 
-![Commerce Scale Unit platform integration](./media/CSUConsumer.PNG)
+![Commerce Scale Unit platform integration.](./media/CSUConsumer.PNG)
 
 ## Components
 

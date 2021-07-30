@@ -39,7 +39,7 @@ Maintenance plans are used for preventive and reactive maintenance on individual
 
 The following illustration provides an overview of the work flow from creating maintenance plans and maintenance rounds to creating work orders for assets, based on those maintenance plans and maintenance rounds.
 
-![Figure 1](media/01-preventive-maintenance.png)
+![Figure 1.](media/01-preventive-maintenance.png)
 
 
 

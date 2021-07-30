@@ -48,7 +48,7 @@ The _Quality management for warehouse processes_ feature automatically generates
 
 When the _Quality management for warehouse processes_ feature is turned on, it changes the setup of key warehouse management and quality management entities. The following illustration provides an overview of the entities that enable quality orders for warehouse processes. Text in parentheses indicates suggested actions when quality management was applied before the _Quality management for warehouse management processes_ feature was turned on.
 
-![Quality management entities](media/quality-management-entity-diagram.png "Quality management entities")
+![Quality management entities.](media/quality-management-entity-diagram.png "Quality management entities")
 
 ## Enablers: The Quality item sampling and Quality order work order types
 
