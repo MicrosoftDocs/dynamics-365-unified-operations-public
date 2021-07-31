@@ -76,8 +76,6 @@
             href: get-started/whats-new-scm-10-0-20.md
           - name: Supply Chain Management 10.0.19 (June 2021)
             href: get-started/whats-new-scm-10-0-19.md
-          - name: Supply Chain Management 10.0.18 (May 2021)
-            href: get-started/whats-new-scm-10-0-18.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -246,8 +244,6 @@
               href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing for Egypt
               href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Get started with Electronic Invoicing for Italy
-              href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
               href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Set up Electronic Invoicing
@@ -1607,6 +1603,8 @@
           href: master-planning/planning-optimization/get-started.md
         - name: Planning Optimization fit analysis
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
+        - name: Parameters not used by Planning Optimization
+          href: master-planning/planning-optimization/not-used-parameters.md
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with demand forecast
@@ -1621,6 +1619,8 @@
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
+        - name: Scheduling with infinite capacity
+          href: master-planning/planning-optimization/infinite-capacity-planning.md
         - name: Inventory marking with Planning Optimization
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
@@ -1999,9 +1999,7 @@
           href: procurement/tasks/create-purchase-order-delivery-schedule.md
         - name: Create a purchase order for a one-time supplier
           href: procurement/tasks/create-purchase-order-one-time-supplier.md
-        - name: Create a purchase release order when creating the purchase order
-          href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
-        - name: Create a purchase release order from a purchase agreement
+        - name: Apply a purchase agreement when creating a purchase order
           href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
         - name: Create a purchase return order
           href: procurement/tasks/create-purchase-return-order.md
@@ -3119,6 +3117,8 @@
             href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
+          - name: Over picking for sales orders and transfer orders
+            href: warehousing/over-picking-for-sales-and-transfer-orders.md
           - name: Set different dimensions for packing and storage
             href: warehousing/packing-vs-storage-dimensions.md
           - name: Batch and license plate confirmation
@@ -3511,6 +3511,8 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: Can't update a load line because the released quantity would be negative
+          href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
         - name: Canceled product receipts don't update transactions status to registered
           href: troubleshooting/warehousing/canceled-product-receipts.md
         - name: Decimal rounding of the physical updating quantity is incorrect

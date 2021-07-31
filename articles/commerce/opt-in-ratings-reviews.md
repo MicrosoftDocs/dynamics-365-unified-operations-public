@@ -47,7 +47,7 @@ To opt in to use ratings and reviews on your site, follow these steps.
 1. Set the **Enable ratings and reviews service** option to **Yes**.
 1. In the **AAD security group for ratings and review moderator (security group object id)** field, enter the ID of the Microsoft Azure Active Directory (Azure AD) security group that includes the ratings and reviews moderators.
 
-    ![Opt in to use ratings and reviews](media/LCS_RnR_Preference.png)
+    ![Opt in to use ratings and reviews.](media/LCS_RnR_Preference.png)
 
 1. Complete the e-Commerce initialization process.
 

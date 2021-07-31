@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources
 
 When a customer views the position hierarchy in Microsoft Dynamics 365 Human Resources, the names of individuals and positions are truncated. Therefore, it can be difficult to take a screenshot, or to print and distribute the hierarchy.
 
-![Position hierarchy](media/position-h.png)
+![Position hierarchy.](media/position-h.png)
 
 **Cause**
 
@@ -54,48 +54,48 @@ Follow these steps to export to Visio.
 
 2. On the Action Pane, select the **Open in Microsoft Office** button, and then, under **Export to Excel**, select **Positions**. Alternatively, press Ctrl+T.
 
-    ![Export the Positions list page to Excel](media/org-admin.png)
+    ![Export the Positions list page to Excel.](media/org-admin.png)
 
 3. Save the Excel file that is exported.
 
-    ![Export to Excel dialog box](media/export-excel.png)
+    ![Export to Excel dialog box.](media/export-excel.png)
 
 4. In Visio, select **Visio - Create New**, and select the **Business** template category.
 
-    ![New diagram](media/new.png)
+    ![New diagram.](media/new.png)
 
 5. Select **Organization Chart Wizard**, and then select **Create**.
 
-    ![Organization Chart Wizard dialog box](media/orgchart-wizard.png)
+    ![Organization Chart Wizard dialog box.](media/orgchart-wizard.png)
 
 6. Select **Information that's already stored in a file or database**, and then select **Next**.
 
-    ![Organization Chart Wizard 1](media/orgchart-wizard7.png)
+    ![Organization Chart Wizard 1.](media/orgchart-wizard7.png)
 
 7. Choose **A text, Org Plus (\*.txt), or Excel file**, and then select **Next**.
 
-    ![Organization chart wizard 2](media/orgchart-wizard3.png)
+    ![Organization chart wizard 2.](media/orgchart-wizard3.png)
 
 8. Browse to select the exported Excel file that contains the position hierarchy, and then select **Next**.
 
-    ![Organization Chart Wizard 3](media/orgchart-wizard2.png)
+    ![Organization Chart Wizard 3.](media/orgchart-wizard2.png)
 
 9. Set the **Name** field to **Position**, set the **Reports to** field to **Reports to position**, and then select **Next**.
 
-    ![Organization Chart Wizard 4](media/orgchart-wizard1.png)
+    ![Organization Chart Wizard 4.](media/orgchart-wizard1.png)
 
 10. Select the fields that should be shown on each node, and then select **Next**.
 
-    ![Organization Chart Wizard 5](media/orgchart-wizard5.png)
+    ![Organization Chart Wizard 5.](media/orgchart-wizard5.png)
 
 11. Add the **Position** column to the **Shape Data fields** list, and then select **Next**.
 
-    ![Organization Chart Wizard 6](media/orgchart-wizard6.png)
+    ![Organization Chart Wizard 6.](media/orgchart-wizard6.png)
 
 12. Pictures aren't currently available. Therefore, on the next page, select **Next**.
 13. Select **I want the wizard to automatically break my organization chart across pages**.
 
-    ![Organization Chart Wizard 7](media/orgchart-wizard4.png)
+    ![Organization Chart Wizard 7.](media/orgchart-wizard4.png)
 
 14. Select **Finish**.
 
@@ -105,7 +105,7 @@ The diagram that is generated in Visio shows each manager on a separate workshee
 
 Based on the fields that you selected to include in the diagram, each node shows the appropriate information when the Visio file is generated.
 
-![Hierarchy diagram](media/hierarchy.png)
+![Hierarchy diagram.](media/hierarchy.png)
 
 **Additional option**
 

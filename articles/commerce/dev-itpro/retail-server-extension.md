@@ -58,13 +58,13 @@ Follow the steps in this section to create a new Commerce Scale Unit extension.
 
 The following illustration shows the flow of the extension.
 
-![Commerce Scale Unit extension flow](media/RSExtensionFlow.png)
+![Commerce Scale Unit extension flow.](media/RSExtensionFlow.png)
 
 ### Extension class diagram
 
 The following illustration shows the class structure of the extension.
 
-![Commerce Scale Unit extension class diagram](media/RSClassFlow.png)
+![Commerce Scale Unit extension class diagram.](media/RSClassFlow.png)
 
 > [!NOTE]
 > Retail server does not support loading both IController and CommerceController extensions. If you include both type of extensions, then Retail server load will fail. Extensions should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the Retail server extensions to IController.

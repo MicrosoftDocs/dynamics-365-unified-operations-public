@@ -17,7 +17,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 24411
+ms.custom: "intro-internal"
 ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
 ms.search.region: Global
 # ms.search.industry: 
@@ -144,6 +144,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Retail software development kit (SDK) samples](retail-sdk/retail-sdk-samples.md)
 - [Download samples and packages from GitHub and NuGet](retail-sdk/sdk-github.md)
 - [Channel database extensions](channel-db-extensions.md)
+- [Remove Cloud Scale Unit extensions](retail-sdk/remove-csu-package.md)
 - [Enable custom Commerce Data Exchange synchronization via extension](cdx-extensibility.md)
 - [Define and set order attributes](order-attributes.md)
 - [Customer attributes](customer-attributes.md)

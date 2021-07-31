@@ -91,15 +91,15 @@ In this example, use **When a Business Event occurs** with *Microsoft Power Auto
 
 1. In [Power Automate](https://preview.flow.microsoft.com), create a new automated cloud flow for the flow trigger **When a Business Event occurs - Fin & Ops App (Dynamics 365)** followed by the **Parse JSON** and **Send an email** steps, as shown in the following illustration.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automated cloud flow":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automated cloud flow.":::
 
 1. In the **When a Business Event occurs** step, you can look up or enter the hub **Instance** following the **Category** and then the **Business event** *Message processor message processed*, as shown in the following illustration.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate When a Business Event occurs step":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate When a Business Event occurs step.":::
 
 1. For the **Parse JSON** step, enter a **Schema** that defines the extended fields. You can use the *Download schema* option on the **Business events catalog** page in Supply Chain Management or start by pasting in the example schema text. This example text is provided after the following illustration.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Parse JSON step":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Parse JSON step.":::
 
     ```json
     {
@@ -186,7 +186,7 @@ In this example, use **When a Business Event occurs** with *Microsoft Power Auto
 
 1. In the **Send an email** step, you can select the individual fields or start by pasting the email body example into the **Body** field. This example is provided after the following illustration.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate send an email step":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate send an email step.":::
 
     ```plaintext
     Message queue: @{body('Parse_JSON')?['MessageQueue']}

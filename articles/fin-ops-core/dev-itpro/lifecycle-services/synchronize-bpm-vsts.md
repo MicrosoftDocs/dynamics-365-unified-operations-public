@@ -64,7 +64,7 @@ To connect to a Azure DevOps project, LCS is authenticated by using a personal a
 4. Select your Azure DevOps project.
 5. Specify the mapping between LCS/BPM items and the associated Azure DevOps work item types.
 
-    ![Work item type mappings](./media/newbpm_BlogPost24.png)
+    ![Work item type mappings.](./media/newbpm_BlogPost24.png)
 
 6. Select **Continue**, review your changes, and then select **Save**.
 
@@ -84,11 +84,11 @@ The following information is synchronized:
 
 To synchronize a BPM library with a Azure DevOps project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **Azure DevOps sync**.
 
-![Starting Azure DevOps synchronization from the tile for a library](./media/newbpm_BlogPost25.png)
+![Starting Azure DevOps synchronization from the tile for a library.](./media/newbpm_BlogPost25.png)
 
 You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **Azure DevOps sync**.
 
-![Starting Azure DevOps synchronization from the toolbar in a library](./media/newbpm_BlogPost26.png)
+![Starting Azure DevOps synchronization from the toolbar in a library.](./media/newbpm_BlogPost26.png)
 
 > [!NOTE]
 > BPM localization is not supported. If you edit in the new BPM client in any language other than EN-US, your changes will only display when you view the BPM in the language in which the changes were made. To view any changes made in EN-US, you must synchronize with Visual Studio Team Server before the changes will display.
@@ -112,7 +112,7 @@ When a business process is marked as reviewed, the **Reviewed** column is update
    - **Yellow circle** – The process and its child processes have been partially reviewed.
    - **Red dash** – The process and its child processes haven't been reviewed.
 
-![Example of a Review column](./media/newbpm_BlogPost28.png)
+![Example of a Review column.](./media/newbpm_BlogPost28.png)
 
 While you're reviewing a business process that is connected to Azure DevOps, you can add a requirement directly to your Azure DevOps project.
 
@@ -128,7 +128,7 @@ To go to the Azure DevOps work items that are associated with the current busine
 
 If the BPM to Azure DevOps synchronization fails, you will see the failed process name, work item type, and an error message. 
 
-![BPM sync error](./media/BPMsyncError.jpg)
+![BPM sync error.](./media/BPMsyncError.jpg)
 
 Here are some common causes and suggested actions to resolve the error.
 

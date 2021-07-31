@@ -42,11 +42,11 @@ Before you can complete the procedure in this topic, the following prerequisites
 1. Open RCS, and select the **Electronic reporting** workspace tile.
 2. In the **Related links** section, select **Delete RCS environment**.
 
-    ![Delete RCS environment link in the Related links section](media/01_RCS-Delete-Environ-Related-Link.PNG)
+    ![Delete RCS environment link in the Related links section.](media/01_RCS-Delete-Environ-Related-Link.PNG)
 
 3. In the dialog box that appears, review the messages about the scope of environment deletion.
 
-    ![Messages in the Delete RCS environment dialog box](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
+    ![Messages in the Delete RCS environment dialog box.](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
 
     > [!IMPORTANT]
     > Deletion of an RCS environment can't be reversed.

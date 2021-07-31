@@ -3,10 +3,8 @@ title: X++ container runtime functions
 description: This topic describes the container run-time functions.
 author: RobinARH
 ms.date: 06/20/2017
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31301
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28

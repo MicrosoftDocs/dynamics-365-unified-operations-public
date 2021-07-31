@@ -60,7 +60,7 @@ When you generate the report, the following default fields are available. You ca
 
 To show only non-tax accounts on the report, set up a filter condition, such as an asterisk (\*), as shown in the following illustration.
 
-![Report showing non-tax accounts](media/taxspecperledgertrans.png)
+![Report showing non-tax accounts.](media/taxspecperledgertrans.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

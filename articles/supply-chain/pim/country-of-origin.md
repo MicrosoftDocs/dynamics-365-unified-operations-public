@@ -90,7 +90,7 @@ When you generate a BOM report, you can include the country of origin for each p
 
 A report that shows information about the country of origin of each part is generated and shown. Here is an example of the report.
 
-![Country of origin report](media/country-of-origin-report.png "Country of origin report")
+![Country of origin report.](media/country-of-origin-report.png "Country of origin report")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

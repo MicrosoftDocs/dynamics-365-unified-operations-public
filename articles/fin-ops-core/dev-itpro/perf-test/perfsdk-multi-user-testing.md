@@ -57,7 +57,7 @@ The following configurations must be set up on the development machine that is u
     - Download RSAT certificate
     - Regenerate RSAT certificate
 
-    ![Download RSAT certificate and Regenerate RSAT certificate commands](rsat/media/rsat-lcs1.png)
+    ![Download RSAT certificate and Regenerate RSAT certificate commands.](rsat/media/rsat-lcs1.png)
 
 3. Select **Download RSAT certificate** to retrieve the certificate bundle as a zip file.
 4. You're warned that a clear-text password will be shown on screen. Select **Yes** to continue.
@@ -83,7 +83,7 @@ Follow these steps to prepare the sample solution for performance testing. You c
 
     The following illustration shows a sample result. Make sure that the thumbprint that you saved earlier is in the list.
 
-    ![Thumbprint in the Command Prompt window](media/perfsdk-multi-user-testing-01.png)
+    ![Thumbprint in the Command Prompt window.](media/perfsdk-multi-user-testing-01.png)
 
 2. Update the **CloudEnvironment.config** configuration file in the Performance SDK folder to describe the targeted environment. As part of this update, follow these steps:
 
@@ -99,7 +99,7 @@ Follow these steps to prepare the sample solution for performance testing. You c
 
     The result should resemble the following example.
 
-    ![Updated CloudEnvironment.config file](./media/perfsdk-multi-user-testing-02.png)
+    ![Updated CloudEnvironment.config file.](./media/perfsdk-multi-user-testing-02.png)
 
 3. Rename the **vsonline.testsettings** file **local.testsettings**.
 4. Open the **local.testsettings** file in Visual Studio, and modify it by following these steps:
@@ -107,7 +107,7 @@ Follow these steps to prepare the sample solution for performance testing. You c
     1. In the **Test Settings** dialog box, on the **General** tab, in the **Test run Location** field group, select the **Run tests using local computer or a test controller** option.
     2. On the **Deployment** tab, select the **Enable deployment** checkbox, and then use the **Add Directory** button to add the **bin\debug** folder to the **Additional files and directories to deploy** field.
 
-        ![Deployment tab of the Test Settings dialog box](./media/perfsdk-multi-user-testing-04.png)
+        ![Deployment tab of the Test Settings dialog box.](./media/perfsdk-multi-user-testing-04.png)
 
     3. On the **Hosts** tab, in the **Run tests in 32 bits or 64 bits process** field, select **Run test in 64 bits process on 64 bits machine**.
     4. Select **Apply**, and then close the **Test Settings** dialog box.
@@ -168,15 +168,15 @@ Follow these steps to add a performance test to the test mix.
 2. Select and hold (or right-click) the **Test Mix** node, and then select **Edit Test Mix**.
 3. In the **Edit Test Mix** dialog box, select **Add** to add your tests to the mix.
 
-    ![Edit Test Mix dialog box](./media/perfsdk-multi-user-testing-06.png)
+    ![Edit Test Mix dialog box.](./media/perfsdk-multi-user-testing-06.png)
 
 4. In the **Run Settings** node, modify the properties, and update the **Timing** fields for **Run Settings1**. These fields include **Warm-up Duration**, **Run Duration**, and **Cool-down Duration**.
 
-    ![Timing fields](./media/perfsdk-multi-user-testing-07.png)
+    ![Timing fields.](./media/perfsdk-multi-user-testing-07.png)
 
 5. In the **Scenarios** node, be sure to update the **Load Pattern** property, and set the **Constant User Count** parameter to the total number of users that you want to use to run the test.
 
-    ![Constant User Count parameter](./media/perfsdk-multi-user-testing-08.png)
+    ![Constant User Count parameter.](./media/perfsdk-multi-user-testing-08.png)
 
 ## Create test users
 
@@ -191,7 +191,7 @@ We recommend that you use the console application to create the users, because i
 1. In the Visual Studio project, open the **SampleLoadTest.loadtest** file, and select **Run Load Test**.
 2. Review the test output.
 
-    ![Test output](./media/perfsdk-multi-user-testing-10.png)
+    ![Test output.](./media/perfsdk-multi-user-testing-10.png)
 
 ## Troubleshooting
 

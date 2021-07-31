@@ -17,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -38,7 +38,7 @@ Finance and Operations apps are often customized and extended to fit an organiza
 
 The following illustration, and this topic in general, use the term *Help* for conceptual descriptions that either include or exclude how-to guides. The term *task guides* refers to in-product task guides.
 
-![Customized Help solution and the Help pane](../../fin-ops/get-started/media/help-architecture.png)
+![Customized Help solution and the Help pane.](../../fin-ops/get-started/media/help-architecture.png)
 
 ## Custom Help content
 

@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 68813
+ms.custom: ["68813", "intro-internal"]
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 # ms.search.industry: 

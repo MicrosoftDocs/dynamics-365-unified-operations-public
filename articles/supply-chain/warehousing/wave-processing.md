@@ -46,7 +46,7 @@ You can specify which of these production order options to use by default using 
 
 The following diagram shows the flow for how shipping waves are created, processed, and released. The numbers correspond to the sections later in this section.
 
-![Process for creating a wave](media/wave-processing-diagram.png "Process for creating a wave")
+![Process for creating a wave.](media/wave-processing-diagram.png "Process for creating a wave")
 
 ### Prerequisites
 
@@ -162,7 +162,7 @@ When the *Schedule work creation* functionality is enabled, wave processing will
 
 The following flowchart shows how planned work is created during wave processing.
 
-![Schedule work creation](media/schedule-work-creation-process.png)
+![Schedule work creation.](media/schedule-work-creation-process.png)
 
 ### Planned work
 

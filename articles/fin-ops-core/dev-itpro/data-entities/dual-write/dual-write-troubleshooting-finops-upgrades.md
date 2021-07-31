@@ -72,7 +72,7 @@ On the **Dual-write** page, you might receive an error message that resembles th
 
 *Missing source field \<field name\> in the schema.*
 
-![Example of the missing source column error message](media/error_missing_field.png)
+![Example of the missing source column error message.](media/error_missing_field.png)
 
 To fix the issue, first follow these steps to make sure that the columns are in the table.
 

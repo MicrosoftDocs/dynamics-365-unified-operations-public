@@ -61,7 +61,7 @@ To map stores and corresponding teams in Commerce headquarters, follow these ste
 
 The following example image shows the **Export teams mapping** group in Commerce with **Add entity** elements and the exported CSV file headers highlighted.
 
-![Export teams mapping group in Commerce with add entity elements and the exported CSV file headers highlighted](media/d365-commerce-data-mgmt-export-entity.png)
+![Export teams mapping group in Commerce with add entity elements and the exported CSV file headers highlighted.](media/d365-commerce-data-mgmt-export-entity.png)
 
 > [!NOTE]
 > After you complete the preceeding steps, follow the steps in [Synchronize task management between Microsoft Teams and POS](synchronize-tasks-teams-pos.md) to synchronize task management. 

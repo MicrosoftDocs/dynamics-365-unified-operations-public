@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Customer orders in Point of Sale (POS)
-description: This topic provides information about customer orders in Point of Sale (POS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
+title: Customer orders in point of sale (POS)
+description: This topic provides information about customer orders in point of sale (POS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
-ms.date: 01/06/2021
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 260594
+ms.custom: ["260594", "intro-internal"]
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Release 10.0.14
 
 ---
 
-# Customer orders in Point of Sale (POS)
+# Customer orders in point of sale (POS)
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about how to create and manage customer orders in Point of Sale (POS). Customer orders can be used to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them. 
+This topic provides information about how to create and manage customer orders in the point of sale (POS) app. Customer orders can be used to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them. 
 
 In an omni-channel commerce world, many retailers provide the option of customer orders, or special orders, to meet various product and fulfillment requirements. Here are some typical scenarios:
 
@@ -49,7 +49,7 @@ Before you try to use customer order functionality in POS, make sure that you co
 
 To use customer orders, you must configure modes of delivery that the store channel can use. You must define at least one mode of delivery that can be used when order lines are shipped to a customer from a store. You must also define at least one pickup mode of delivery that can be used when order lines are picked up from the store. Modes of delivery are defined on the **Modes of delivery** page in Commerce headquarters. For more information about how to set up modes of delivery for Commerce channels, see [Define delivery modes](./configure-call-center-delivery.md#define-delivery-modes).
 
-![Modes of delivery page](media/customer-order-modes-of-delivery.png)
+![Modes of delivery page.](media/customer-order-modes-of-delivery.png)
 
 
 ### Set up fulfillment groups
@@ -58,7 +58,7 @@ Some stores or warehouse locations might not be able to fulfill customer orders.
 
 In Commerce version 10.0.12 and later, organizations can define whether the warehouse or warehouse and store combinations that are defined in fulfillment groups can be used for shipping, for pickup, or for both shipping and pickup. This allows for added flexibility for the business to determine which warehouses can be selected when creating a customer order for items to ship vs. which stores can be selected when creating a customer order for items to pick up. To use these configuration options, turn on the **Ability to specify locations as "Shipping" or "Pickup" enabled within Fulfillment group** feature. If a warehouse that's linked to a fulfillment group isn't a store, it can be configured only as a shipping location. It can't be used when orders for pickup are configured in POS.
 
-![Fulfillment groups page](media/customer-order-fulfillment-group.png)
+![Fulfillment groups page.](media/customer-order-fulfillment-group.png)
 
 ### Configure channel settings
 
@@ -70,7 +70,7 @@ When you work with customer orders in POS, you must consider some of the setting
 - **Use destination-based tax** – This option indicates whether the shipping address is used to determine the tax group that is applied to order lines that are shipped to the customer's address.
 - **Use customer-based tax** – This option indicates whether the tax group that is defined for the customer's delivery address is used to tax customer orders that are created in POS for shipment to the customer's home.
 
-![Store channel setup on the Stores page](media/customer-order-all-stores.png)
+![Store channel setup on the Stores page.](media/customer-order-all-stores.png)
 
 ### Set up customer order parameters
 
@@ -85,7 +85,7 @@ Before you try to create customer orders in POS, you must configure the appropri
 - **Shipping charge code** – If the **Use advanced auto charges** option is set to **Yes**, this parameter setting has no effect. If that option is set to **No**, users will be prompted to manually enter a shipping charge when they create customer orders in POS. Use this parameter to map an Accounts receivable charge code that will be applied to orders when users enter a shipping charge. The charge code defines the financial posting logic for the shipping charge.
 - **Use advanced auto charges** – Set this option to **Yes** to use system-calculated auto charges when customer orders are created in POS. These auto charges can be used to calculate shipping fees or other order or item-specific charges. For more information about how to set up and use advanced auto charges, see [Omni-channel advanced auto charges](./omni-auto-charges.md).
 
-![Customer orders tab on the Commerce parameters page](media/customer-order-parameters.png)
+![Customer orders tab on the Commerce parameters page.](media/customer-order-parameters.png)
 
 ### Update transaction screen layouts in POS
 
@@ -100,7 +100,7 @@ Make sure that the POS [screen layout](./pos-screen-layouts.md) is configured to
 - **Change mode of delivery** – This operation can be used to quickly change the mode of delivery for lines that are already configured for shipment, without requiring that users go through the "ship all products" or "ship selected products" flow again.
 - **Deposit override** – This operation can be used to change the deposit amount that the customer will pay for the selected customer order.
 
-![Operations on the POS transaction screen](media/customer-order-screen-layout.png)
+![Operations on the POS transaction screen.](media/customer-order-screen-layout.png)
 
 ## Work with customer orders in POS
 
@@ -134,6 +134,10 @@ Retail orders that are created in either the online or store channel can be reca
 
 > [!IMPORTANT]
 > Not all retail orders can be edited through the POS application. Orders that are created in a call center channel can't be edited through POS if the [Enable order completion](./set-up-order-processing-options.md#enable-order-completion) setting is turned on for the call center channel. To ensure correct payment processing, orders that originated in a call center channel and that use Enable order completion functionality must be edited through the call center application in Commerce headquarters.
+
+> [!NOTE]
+> We recommend that you don't edit orders and quotations in POS that are created by a non-call center user in Commerce headquarters. Those orders and quotes don't use the Commerce pricing engine, so if they're edited in POS, the Commerce pricing engine will re-price them.
+
 
 In version 10.0.17 and later, users can edit eligible orders through the POS application, even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature is not enabled, or if you're using version 10.0.16 or earlier, users will only be able to edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. The option to disable this capability for specific stores can be configured through the **Functionality profile** under the **General** FastTab.
 

@@ -82,7 +82,7 @@ Commerce Scale Unit is available for deployment in the following regions.
 
 Deployment capacity in Limited capacity regions are extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited capacity regions, you can file a support request to be added to the waitlist.
 
-![Map showing region availability](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
+![Map showing region availability.](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
 
 ## Initialize Commerce Scale Unit as part of a new environment deployment
 

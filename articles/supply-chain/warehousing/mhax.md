@@ -33,7 +33,7 @@ You can use the *material handling equipment interface* (MHAX) to connect extern
 
 The following illustration shows the various elements and the order that processes occur in when you use MHAX integration.
 
-![MHAX components and interactions](media/mhax-components.png "MHAX components and interactions")
+![MHAX components and interactions.](media/mhax-components.png "MHAX components and interactions")
 
 Here is an explanation of the interactions that are shown in the previous illustration:
 

@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -54,7 +54,7 @@ Master scheduling plans typically involve the short term, which can be anywhere 
 
 The following learning map shows the major concepts and tasks that make up the framework of the Master planning module. Click the links in the [Quick links](#quick-links) section to learn how to use the module.
 
-[![Learning map for master planning](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
+[![Learning map for master planning.](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## Quick links
 

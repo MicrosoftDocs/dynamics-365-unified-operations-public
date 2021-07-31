@@ -43,7 +43,7 @@ Every two weeks, we provide a new release for Microsoft Dynamics 365 Human Resou
 
 For more information about upcoming features or the update process for Human Resources, see the following articles: 
 
-- [Overview of Dynamics 365 Human Resources 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
+- [Overview of Dynamics 365 Human Resources 2021 release wave 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/)
 
 - [Update process](hr-admin-setup-update-process.md)
 
@@ -53,6 +53,8 @@ For more information about upcoming features or the update process for Human Res
 
 To find out what's new or changed in each biweekly release of Human Resources, see the following topics:
 
+[July 26, 2021](hr-whats-new-2021-07-26.md)</br>
+[July 12, 2021](hr-whats-new-2021-07-12.md)</br>
 [June 22, 2021](hr-whats-new-2021-06-22.md)</br>
 [May 20, 2021](hr-whats-new-2021-05-20.md)</br>
 [May 3, 2021](hr-whats-new-2021-05-03.md)</br>
@@ -90,7 +92,7 @@ To find out what's new or changed in each biweekly release of Human Resources, s
 
 ## See also
 
-[Overview of Dynamics 365 Human Resources 2020 release wave 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2021 release wave 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
 

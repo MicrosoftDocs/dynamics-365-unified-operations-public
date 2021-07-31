@@ -4,7 +4,7 @@
 title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 04/16/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,14 +38,12 @@ Regular updates will be released as part of the Dynamics 365 Commerce online SDK
 The SDK packages.json file that is included in the SDK root directory controls which versions of the SDK, module library, Fabrikam design kit, and Retail Server proxy are downloaded. The specific entries can be found in the **"dependencies"** section, as shown in the following example. Note that the version numbers might differ, depending on when the SDK was acquired.
 
 ```json
-...
 "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "9.28",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.28",
+    "@msdyn365-commerce-modules/starter-pack": "9.29",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "9.29",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/retail-proxy": "9.28",
+    "@msdyn365-commerce/retail-proxy": "9.29",
 }
-...
 ```
 
 - **\@msdyn365-commerce-modules/starter-pack** – This entry represents the module library, which includes the set of starter modules and data actions. The preceding example is configured to pull down only the specified version.
@@ -60,18 +58,16 @@ SDK dependencies are backward-compatible and can be pulled down at any time. The
 Patch versions won't change dependencies on the Commerce Scale Unit. Therefore, they can be updated at any time. The tilde (\~) symbol can be used with version numbers to ensure that any patch versions that might include software updates are always pulled down. The following example shows how the tilde is used to pull down the latest patch version.
 
 ```json
-...
 "dependencies": {
-    "@msdyn365-commerce-modules/starter-pack": "~9.28.0",
-    "@msdyn365-commerce-modules/fabrikam-design-kit": "~9.28.0",
+    "@msdyn365-commerce-modules/starter-pack": "~9.29.0",
+    "@msdyn365-commerce-modules/fabrikam-design-kit": "~9.29.0",
     "@msdyn365-commerce/bootloader": "^1.0.0",
-    "@msdyn365-commerce/retail-proxy": "~9.28.0",
+    "@msdyn365-commerce/retail-proxy": "~9.29.0",
 }
-...
 ```
 ### Module library versions mapped to Commerce Scale Unit versions 
 
-The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **April 16, 2021**.
+The following table maps module library versions to Commerce Scale Unit versions. The same module library versions that are mapped to the Commerce Scale Unit should be used for the Retail Server proxy and Fabrikam design kit. The table lists current supported versions as of **August 1st, 2021**.
 
 | Commerce Scale Unit version | Maximum module library version |
 | --------------- | --------------- |
@@ -82,6 +78,7 @@ The following table maps module library versions to Commerce Scale Unit versions
 | 10.0.17 | 9.27.x |
 | 10.0.18 | 9.28.x |
 | 10.0.19 | 9.29.x |
+| 10.0.20 | 9.30.x |
 
 ## Pull updates
 
@@ -128,22 +125,22 @@ To deploy a global e-commerce extension, follow these steps.
 
 1. From within your LCS project, select **Asset library**.
 
-    ![LCS project screen with the Asset library tile highlighted](media/module-library-update-1.png)
+    ![LCS project screen with the Asset library tile highlighted.](media/module-library-update-1.png)
 
 1. On the **Asset library** page, select the **e-Commerce package** tab, and then select **Import**.
 
-    ![LCS Asset library page with the e-Commerce package tab and Import button highlighted](media/module-library-update-2.png)
+    ![LCS Asset library page with the e-Commerce package tab and Import button highlighted.](media/module-library-update-2.png)
 
 1. In the **Pick a e-Commerce package** dialog box, select the package to import, and then select **Pick**. It may take 15-30 minutes for the package to be available. 
 
     The naming convention for the global e-commerce extension file has the Commerce release version and the module library release version to help you pick the correct version. In the following example image, the file name is for Commerce release 10.0.16 and includes module library version 9.26.15. Only general availability versions will be made available.
     
-    ![Pick an e-Commerce package dialog box with the package name and Pick button highlighted](media/module-library-update-3.png)
+    ![Pick an e-Commerce package dialog box with the package name and Pick button highlighted.](media/module-library-update-3.png)
 
 1. After the package has been imported, it can be deployed into an e-commerce environment. Select the environment to be updated, and then select **Manage**.  
 1. Select the **e-Commerce** tab, and then select **Apply extension** to display the **Update e-Commerce** dialog box. Select the extension you want to deploy, and then select **Update**. The deployment may take from 15-30 minutes to complete.
 
-    ![Update e-Commerce dialog box with an extension highlighted](media/module-library-update-4.png)
+    ![Update e-Commerce dialog box with an extension highlighted.](media/module-library-update-4.png)
 
 For more information about how to upload an extension package, see [Package configurations and deploy them to an online environment](package-deploy.md).
 

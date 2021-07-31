@@ -61,11 +61,11 @@ To add a page summary module to a template, follow these steps.
 1. In the **HTML Head** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Add Module** dialog box, select the **Page summary** module (or another page summary module, such as **List page summary**), and then select **OK**. Make sure that you add the appropriate page summary module for the page types that the template will be used for.
 
-    ![Adding a new module](media/page-summary-1.png)
+    ![Adding a new module.](media/page-summary-1.png)
 
 After the summary module is added, it should resemble the example in the following illustration. The module can now be configured, and the template can be saved and published.
 
-![Page summary module added](media/page-summary-2.png)
+![Page summary module added.](media/page-summary-2.png)
 
 > [!NOTE]
 > Although you can set default values in the template, those values can be overridden on pages that use the template.

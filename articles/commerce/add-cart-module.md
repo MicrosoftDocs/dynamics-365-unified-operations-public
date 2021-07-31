@@ -39,11 +39,11 @@ The cart module renders data based on the cart ID, which is a browser cookie ava
 
 The following image shows an example of a cart page on the Fabrikam site.
 
-![Example of a cart module on the Fabrikam site](./media/cart2.PNG)
+![Example of a cart module on the Fabrikam site.](./media/cart2.PNG)
 
 The following image shows an example of a cart page on the Fabrikam site. In this example, there is a handling fee for a line item.
 
-![Example of a cart module with a handling fee for a line item](./media/ecommerce-handling-fee.png)
+![Example of a cart module with a handling fee for a line item.](./media/ecommerce-handling-fee.png)
 
 ## Cart module properties and slots
 

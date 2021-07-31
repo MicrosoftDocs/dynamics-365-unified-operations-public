@@ -44,7 +44,7 @@ When you add a new ER format configuration to generate an outbound document in a
 
 To configure the ER format component of the configuration, select **Designer** on the Action Pane, and open the ER format component for editing in the ER Operation designer.
 
-![Configurations page](./media/er-excel-format-add-format.png)
+![Configurations page.](./media/er-excel-format-add-format.png)
 
 ## Excel file component
 
@@ -52,14 +52,14 @@ To configure the ER format component of the configuration, select **Designer** o
 
 You must add an **Excel\\File** component to the configured ER format to generate an outbound document in Excel format.
 
-![Excel\File component](./media/er-excel-format-add-file-component.png)
+![Excel\File component.](./media/er-excel-format-add-file-component.png)
 
 To specify the layout of the outbound document, attach an Excel workbook that has the .xlsx extension to the **Excel\\File** component as the template for outbound documents.
 
 > [!NOTE]
 > When you manually attach a template, you must use a [document type](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) that has been configured for that purpose in the [ER parameters](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
-![Adding an attachment to the Excel\File component](./media/er-excel-format-add-file-component2.png)
+![Adding an attachment to the Excel\File component.](./media/er-excel-format-add-file-component2.png)
 
 To specify how the attached template will be filled in when you run the configured ER format, you must add nested **Sheet**, **Range**, and **Cell** components to the **Excel\\File** component. Each nested component must be associated with an Excel named item.
 
@@ -67,7 +67,7 @@ To specify how the attached template will be filled in when you run the configur
 
 You can select **Import from Excel** on the **Import** tab of the Action Pane to import a new template into a blank ER format. In this example, an **Excel\\File** component will be created automatically, and the imported template will be attached to it. All required ER components will also be created automatically, based on the list of Excel named items that are discovered.
 
-![Selecting Import from Excel](./media/er-excel-format-import-template.png)
+![Selecting Import from Excel.](./media/er-excel-format-import-template.png)
 
 > [!NOTE]
 > If you want to create the optional **Sheet** element in the editable ER format, set the **Create Excel Sheet format element** option to **Yes**.
@@ -84,7 +84,7 @@ On the **Mapping** tab of the ER Operation designer, you can configure the **Ena
 - If an expression of the **Enabled** property is configured to return **True** at runtime, or if no expression is configured at all, the appropriate worksheet will be put in the generated document.
 - If an expression of the **Enabled** property is configured to return **False** at runtime, the generated document won't contain a worksheet.
 
-![Example of a Sheet component](./media/er-excel-format-sheet-component.png)
+![Example of a Sheet component.](./media/er-excel-format-sheet-component.png)
 
 ## Range component
 
@@ -187,7 +187,7 @@ You can select **Update from Excel** on the **Import** tab of the Action Pane to
 >
 > If the editable ER format originally contained **Sheet** elements, we recommend that you set the **Create Excel Sheet format element** option to **Yes** when you import an updated template. Otherwise, all nested elements of the original **Sheet** element will be created from scratch. Therefore, all bindings of the re-created format elements will be lost in the updated ER format.
 
-![Create Excel Sheet format element option in the Update from Excel dialog box](./media/er-excel-format-update-template.png)
+![Create Excel Sheet format element option in the Update from Excel dialog box.](./media/er-excel-format-update-template.png)
 
 To learn more about this feature, follow the steps in [Modify Electronic reporting formats by reapplying Excel templates](modify-electronic-reporting-format-reapply-excel-template.md).
 
@@ -195,7 +195,7 @@ To learn more about this feature, follow the steps in [Modify Electronic reporti
 
 When you validate an ER format that can be edited, a consistency check is done to make sure that the Excel name is present in the Excel template that is currently used. You will be notified about any inconsistencies. For some inconsistencies, the option to automatically fix issues will be offered.
 
-![Validation error message](./media/er-excel-format-validate.png)
+![Validation error message.](./media/er-excel-format-validate.png)
 
 ## Control the calculation of Excel formulas
 
@@ -214,7 +214,7 @@ When an outbound document in a Microsoft Excel workbook format is generated, som
 1. Use the provided ER configurations to [generate](er-generate-printable-fti-forms.md) a printable free text invoice (FTI) document.
 2. Review the footer of the generated document. Notice that it contains information about the current page number and the total number of pages in the document.
 
-    ![Review the footer of a generated document in Excel format](./media/er-fillable-excel-footer-1.gif)
+    ![Review the footer of a generated document in Excel format.](./media/er-fillable-excel-footer-1.gif)
 
 3. In the ER format designer, [open](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) the sample ER format for review.
 
@@ -227,7 +227,7 @@ When an outbound document in a Microsoft Excel workbook format is generated, som
 
     - The second **String** component fills in the text that contains the current page number and the total number of pages in the current document.
 
-    ![Review the Footer ER format component on the Format designer page](./media/er-fillable-excel-footer-2.png)
+    ![Review the Footer ER format component on the Format designer page.](./media/er-fillable-excel-footer-2.png)
 
 4. Customize the sample ER format to modify the current page footer:
 
@@ -242,14 +242,14 @@ When an outbound document in a Microsoft Excel workbook format is generated, som
         1. Add a **String** component that aligns the processing date on the right and presents it in 8-point "Segoe UI Regular" font (**"&R&"Segoe UI,Regular"&8"**).
         2. Add a **String** component that fills in the processing date in a custom format (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
 
-        ![Reviewing the Footer ER format component on the Format designer page](./media/er-fillable-excel-footer-3.png)
+        ![Reviewing the Footer ER format component on the Format designer page.](./media/er-fillable-excel-footer-3.png)
 
     4. [Complete](er-quick-start2-customize-report.md#CompleteDerivedFormat) the draft version of the derived **Free text invoice (Excel) custom** ER format.
 
 5. [Configure](er-generate-printable-fti-forms.md#configure-print-management) Print management to use the derived **Free text invoice (Excel) custom** ER format instead of the sample ER format.
 6. Generate a printable FTI document, and review the footer of the generated document.
 
-    ![Reviewing the footer of a generated document in Excel format](./media/er-fillable-excel-footer-4.gif)
+    ![Reviewing the footer of a generated document in Excel format.](./media/er-fillable-excel-footer-4.gif)
 
 ## Additional resources
 

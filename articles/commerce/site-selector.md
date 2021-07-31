@@ -41,7 +41,7 @@ The site selector module must be configured with the list of sites (markets, reg
 
 The following illustration shows an example of a site selector module that is featured in the header of a site page.
 
-![Example of a site selector module in the header of a site page](./media/ecommerce-sitepicker.PNG)
+![Example of a site selector module in the header of a site page.](./media/ecommerce-sitepicker.PNG)
 
 ## Site selector module properties
 

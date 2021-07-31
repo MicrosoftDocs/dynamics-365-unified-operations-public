@@ -46,7 +46,7 @@ Here are some usage examples for media gallery modules:
 
 In the example in the following illustration, a buy box on a PDP hosts product images by using a media gallery module.
 
-![Example of a buy box on a product details page that hosts product images by using a media gallery module](./media/ecommerce-pdp-buybox.PNG)
+![Example of a buy box on a product details page that hosts product images by using a media gallery module.](./media/ecommerce-pdp-buybox.PNG)
 
 ## Media gallery properties
 
@@ -64,11 +64,11 @@ In the example in the following illustration, a buy box on a PDP hosts product i
 
 The following illustration shows an example of a media gallery module where the full-screen and zoom options are available.
 
-![Example of a media gallery module where the full-screen and zoom options are available](./media/ecommerce-media-zoom.png)
+![Example of a media gallery module where the full-screen and zoom options are available.](./media/ecommerce-media-zoom.png)
 
 The following illustration shows an example of a media gallery module that has curated images (that is, the specified images aren't dependent on the product ID or page context).
 
-![Example of a media gallery module that has curated images](./media/ecommerce-media-curated.PNG)
+![Example of a media gallery module that has curated images.](./media/ecommerce-media-curated.PNG)
 
 ## Commerce Scale Unit interaction
 

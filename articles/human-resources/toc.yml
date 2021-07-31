@@ -5,6 +5,10 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: July 26, 2021
+      href: hr-whats-new-2021-07-26.md
+    - name: July 12, 2021
+      href: hr-whats-new-2021-07-12.md
     - name: June 22, 2021
       href: hr-whats-new-2021-06-22.md
     - name: May 20, 2021
@@ -255,6 +259,8 @@
       href: hr-admin-go-live-prepare.md
     - name: Go-live FAQ
       href: hr-admin-go-live-faq.md
+    - name: Human Resources infrastructure merge FAQ
+      href: hr-infrastructure-merge-faq.md
     - name: Documentation resources
       items:
       - name: Help system
@@ -355,6 +361,8 @@
       items:
       - name: Introduction
         href: hr-admin-integration-ats-api-introduction.md
+      - name: Server-to-server authentication for ATS integrations
+        href: hr-admin-integration-ats-api-s2s-auth.md
       - name: Recruiting request and related entities
         items:
           - name: Recruiting request
@@ -623,6 +631,8 @@
       items:
       - name: Organize your workforce
         href: hr-personnel-departments-jobs-positions.md
+      - name: Personnel management workspace
+        href: hr-personnel-personnel-management-workspace.md
       - name: Set up the components of a job
         href: hr-personnel-jobs.md
       - name: Define departments
@@ -631,6 +641,8 @@
         href: hr-personnel-add-department-hierarchy.md
       - name: Define jobs
         href: hr-personnel-define-jobs.md
+      - name: Positions
+        href: hr-personnel-positions.md
       - name: Create a working times calendar
         href: hr-personnel-create-working-time-calendar.md
       - name: Recruit job candidates
@@ -685,6 +697,8 @@
         href: hr-compensation-define-process.md
       - name: Process compensation plans
         href: hr-compensation-process.md
+      - name: Mark an employee as ready to pay
+        href: hr-compensation-payroll.md
     - name: Manage benefits
       items:
       - name: Benefits management
@@ -709,7 +723,7 @@
             href: hr-benefits-setup-payment-frequencies.md
           - name: Configure life event types
             href: hr-benefits-setup-life-event-types.md
-          - name: Create plan types
+          - name: Plan type overview
             href: hr-benefits-setup-plan-types.md
           - name: Set up reason codes
             href: hr-benefits-setup-reason-codes.md
@@ -801,6 +815,8 @@
         href: hr-employee-self-service-request-time-off.md
       - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
+      - name: Configure absence manager role
+        href: hr-configure-absence-manager.md
       - name: Manage buy and sell leave policies
         href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
       - name: Create buy and sell leave workflows

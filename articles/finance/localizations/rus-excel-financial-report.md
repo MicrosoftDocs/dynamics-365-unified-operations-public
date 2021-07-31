@@ -4,7 +4,7 @@
 title: Configure financial reports in Excel (Russia)
 description: This topic walks you through the process of creating an Electronic reporting (ER) configuration that contains a template for generating a financial report in an Excel format. 
 author: Anasyash
-ms.date: 09/24/2020
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -80,7 +80,7 @@ Before you complete this procedure, see [ER Design a configuration for generatin
     11. Select **OK**.
     12. Review the cells that are created from the names in the Excel template.
 
-        ![Format mapping cells](media/rus-format-designer-mapping.jpg)
+        ![Format mapping cells.](media/rus-format-designer-mapping.jpg)
 
     13. Close the page.
 
@@ -108,7 +108,7 @@ Before you complete this procedure, see [ER Design a configuration for generatin
 
         The **Calculations.'\$Values'** calculated field contains the value of the financial report cell that has a code that equals the "Input parameter."
 
-        For more information about the Financial reports model, see [Configure ER to use the results of financial report calculations](rus-financial-reports.md#configure-er-to-use-the-results-of-financial-report-calculations).
+        For more information about the Financial reports model, see [Financial reporting (Russia)](rus-financial-reports.md).
 
 6. Bind the calculated values of financial report cells to elements of the ER format cells:
 
@@ -122,7 +122,7 @@ Before you complete this procedure, see [ER Design a configuration for generatin
     1. On the **Mapping** tab, expand the **Calculations** container, expand the **\$Values** calculated field, and select the **Text** element.
     2. In the list of Excel format cells, select the **АктивВнеОбАНематАктПояснения** cell, and then select **Bind**.
 
-        ![Format mapping text string](media/rus-format-designer-mapping-text-string.jpg)
+        ![Format mapping text string.](media/rus-format-designer-mapping-text-string.jpg)
 
     3. On the **Mapping** tab, select the **Value** element.
     4. In the list of Excel format cells, select the **АктивВнеОбАНематАктСумОтч** cell, and then select **Bind**.
@@ -131,7 +131,7 @@ Before you complete this procedure, see [ER Design a configuration for generatin
 
 ## Run the financial report format
 
-You can configure the Electronic messages feature to run any ER configuration. For more information, see [Configure electronic messages to generate the financial report and store the results](rus-financial-reports.md#configure-electronic-messages-to-generate-the-financial-report-and-store-the-results).
+You can configure the Electronic messages feature to run any ER configuration.
 
 To run the ER format that is based on the **Financial reports model**, follow these steps.
 

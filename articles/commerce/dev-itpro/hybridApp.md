@@ -88,13 +88,13 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
   1.  In the Retail SDK folder, open SampleExtensions\HybridApp\iOS\solution.
       After connecting to the Mac and building the application in Visual Studio, select the iOS device type and deploy the app on the selected device.
       
-       ![POS iOS app VS setting for deployment](./media/iOSSetting.png)
+       ![POS iOS app VS setting for deployment.](./media/iOSSetting.png)
       
   2.  Using the Emulator, go to **Settings > RetailMPOS**. Enter the Commerce Scale Unit URL.
       
-       ![POS iOS app setting](./media/iOSApp.png)
+       ![POS iOS app setting.](./media/iOSApp.png)
       
-       ![POS iOS app setting for RS URL](./media/iOSRSURL.png)
+       ![POS iOS app setting for RS URL.](./media/iOSRSURL.png)
       
   3.  Launch the MPOS app. You should be able to sign in and activate the device.
 

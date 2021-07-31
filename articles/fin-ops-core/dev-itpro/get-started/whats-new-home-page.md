@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new and changed in Platform updates
+title: What's new or changed in Platform updates
 description: This topic points to topics that describe the new and changed features in each Platform update for Finance and Operations apps. 
 author: sericks007
 ms.date: 05/27/2021
@@ -17,7 +17,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
 
 ---
-# What's new and changed in Platform updates
+# What's new or changed in Platform updates
 
 [!include [banner](../includes/banner.md)]
 

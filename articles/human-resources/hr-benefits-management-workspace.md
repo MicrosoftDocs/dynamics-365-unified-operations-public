@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources
 This topic describes the **Benefits management** workspace in Dynamics 365 Human Resources.
 
 > [!NOTE]
-> To view the **Benefits management** workspace, you must first enable the **(Preview) Benefits management workspace** feature in Feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).<br><br>![Enable Benefits management workspace](./media/hr-benefits-management-workspace-enable.png)
+> To view the **Benefits management** workspace, you must first enable the **(Preview) Benefits management workspace** feature in Feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).<br><br>![Enable Benefits management workspace.](./media/hr-benefits-management-workspace-enable.png)
 
 The **Benefits management** workspace gives you a quick view of benefits items that require your attention. On this page, you can see:
 
@@ -48,13 +48,13 @@ The **Benefits management** workspace gives you a quick view of benefits items t
 - Workers with active life events
 - Workers with open enrollments who haven't opted for any plans
 
-![Benefits management workspace](./media/hr-benefits-management-workspace.png)
+![Benefits management workspace.](./media/hr-benefits-management-workspace.png)
 
 ## View action items
 
 You can view your action items by either selecting a tile or a tab. If you select a tab, you can view and select workers right on the workspace page.
 
-![Action items](./media/hr-benefits-management-workspace-action-items.png)
+![Action items.](./media/hr-benefits-management-workspace-action-items.png)
 
 If you select a tile, you go to the page for that area. For example, selecting any of these tiles displays the **Worker benefits plans** page, filtered for employees you need to take action on:
 
@@ -63,21 +63,21 @@ If you select a tile, you go to the page for that area. For example, selecting a
 - **Enrolled in benefits**
 - **New hire not enrolled**
 
-![Worker benefit plans](./media/hr-benefits-management-workspace-plans.png)
+![Worker benefit plans.](./media/hr-benefits-management-workspace-plans.png)
 
 Selecting the **Active life events** or **Future life events** tiles takes you to a list of active or future life events.
 
-![Life events](./media/hr-benefits-management-workspace-life-events.png)
+![Life events.](./media/hr-benefits-management-workspace-life-events.png)
 
 ## Processing
 
 To process enrollment eligibility, life events, or rate change updates, select the appropriate item on the navigation bar.
 
-![Processing](./media/hr-benefits-management-workspace-processing.png)
+![Processing.](./media/hr-benefits-management-workspace-processing.png)
 
 To view process results, select **Process results** on the page.
 
-![Process results](./media/hr-benefits-management-workspace-process-results.png)
+![Process results.](./media/hr-benefits-management-workspace-process-results.png)
 
 For more information about benefits processing, see:
 
@@ -91,13 +91,13 @@ For more information about benefits processing, see:
 
 To view a different benefits period, select it from the **Period** dropdown.
 
-![Change period](./media/hr-benefits-management-workspace-period.png)
+![Change period.](./media/hr-benefits-management-workspace-period.png)
 
 ## View more options
 
 To view more information and actions you can take, select **Links**.
 
-![Links](./media/hr-benefits-management-workspace-links.png)
+![Links.](./media/hr-benefits-management-workspace-links.png)
 
 ## See also
 

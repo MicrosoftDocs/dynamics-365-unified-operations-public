@@ -44,7 +44,7 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. From the Azure portal menu, select **Create a resource**. Be sure to use the subscription and directory that will be connected with your Commerce environment.
 
-    ![Create a Resource in Azure Portal](./media/B2CImage_1.png)
+    ![Create a Resource in Azure Portal.](./media/B2CImage_1.png)
 
 1. Go to **Identity \> Azure Active Directory B2C**.
 1. Once on the **Create New B2C Tenant or Link to existing Tenant** page, use one of the options below that best suits your company's needs:
@@ -56,25 +56,25 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
         1. For **Country or region**, select the country or region.
         1. Select **Create** to create the tenant.
 
-     ![Create a new Azure AD Tenant](./media/B2CImage_2.png)
+     ![Create a new Azure AD Tenant.](./media/B2CImage_2.png)
 
      - **Link an existing Azure AD B2C Tenant to my Azure subscription**: Use this option if you already have an Azure AD B2C tenant you want to link to.
         1. Select **Link an existing Azure AD B2C Tenant to my Azure subscription**.
         1. For **Azure AD B2C Tenant**, select the appropriate B2C tenant. If the message "No eligible B2C Tenants found" appears in the selection box, you do not have an existing eligible B2C tenant and will need to create a new one.
         1. For **Resource group**, select **Create new**. Enter a **Name** for the resource group that will contain the tenant, select the **Resource group location**, and then select **Create**.
 
-    ![Link an existing Azure AD B2C Tenant to Azure Subscription](./media/B2CImage_3.png)
+    ![Link an existing Azure AD B2C Tenant to Azure Subscription.](./media/B2CImage_3.png)
 
 1. Once the new Azure AD B2C directory is created (this may take a few moments), a link to the new directory will appear on the dashboard. This link will direct you to the "Welcome to Azure Active Directory B2C" page.
 
-    ![Link to new AAD Directory](./media/B2CImage_4.png)
+    ![Link to new AAD Directory.](./media/B2CImage_4.png)
 
 > [!NOTE]
 > If you have multiple subscriptions within your Azure account or have set up the B2C tenant without linking to an active subscription, a **Troubleshoot** banner will direct you to link the tenant to a subscription. Select the troubleshooting message and follow the instructions to resolve the subscription issue.
 
 The following image shows an example of an Azure AD B2C **Troubleshoot** banner.
 
-![Warning showing directory has no Active Subscription](./media/B2CImage_5.png)
+![Warning showing directory has no Active Subscription.](./media/B2CImage_5.png)
 
 ## Create the B2C application
 
@@ -140,11 +140,11 @@ To create a sign up and sign in user flow policy, follow these steps.
 
 The following image is an example of the Azure AD B2C sign up and sign in user flow.
 
-![Sign Up and Sign In policy settings](./media/B2CImage_11.png)
+![Sign Up and Sign In policy settings.](./media/B2CImage_11.png)
 
 The following image shows the **Run user flow** option in the Azure AD B2C sign up and sign in user flow.
 
-![Run user flow option in policy flow](./media/B2CImage_23.png)
+![Run user flow option in policy flow.](./media/B2CImage_23.png)
    
 ### Create a profile editing user flow policy
 
@@ -165,7 +165,7 @@ To create a profile editing user flow policy, follow these steps.
 
 The following image shows an example of the Azure AD B2C profile editing user flow.
 
-![Create the Profile Editing user flow](./media/B2CImage_12.png)
+![Create the Profile Editing user flow.](./media/B2CImage_12.png)
 
 ### Create a password reset user flow policy
 
@@ -229,18 +229,18 @@ To add and set up a social identity provider, follow these steps.
 
 The following image shows examples of the **Add identity provider** and **Set up the social identity provider** screens in Azure AD B2C.
 
-![Adding a Social Identity Provider to your application](./media/B2CImage_14.png)
+![Adding a Social Identity Provider to your application.](./media/B2CImage_14.png)
 
 The following image shows an example of how to select identity providers on the Azure AD B2C **Identity Providers** page.
 
-![Select each Social Identity Provider to enable for your policy](./media/B2CImage_16.png)
+![Select each Social Identity Provider to enable for your policy.](./media/B2CImage_16.png)
 
 The following image shows an example of a default sign-in screen with a social identity provider sign-in button displayed.
 
 > [!NOTE]
 > If using the custom pages built in Commerce for your user flows, the buttons for social identity providers will need to be added using the extensibility features of the Commerce module library. Additionally, when setting up your applications with a specific social identity provider, in some cases URL or configuration strings may be case sensitive. Refer to your social identity provider's connection instructions for more information.
  
-![Example default login screen with Social Identity Provider sign-in button displayed](./media/B2CImage_17.png)
+![Example default login screen with Social Identity Provider sign-in button displayed.](./media/B2CImage_17.png)
 
 ## Update Commerce headquarters with the new Azure AD B2C information
 
@@ -295,15 +295,15 @@ To collect the required application information, follow these steps.
 
 The following image shows an example of the **Azure AD B2C - Applications** page.
 
-![Navigate to the B2C Application within your tenant](./media/B2CImage_19.png)
+![Navigate to the B2C Application within your tenant.](./media/B2CImage_19.png)
 
 The following image shows an example of an application **Properties** page in Azure AD B2C. 
 
-![Copy the Application ID from the B2C Application's Properties](./media/B2CImage_21.png)
+![Copy the Application ID from the B2C Application's Properties.](./media/B2CImage_21.png)
 
 The following image shows an example of user flow policies on the **Azure AD B2C – User flows (policies)** page.
 
-![Collect the names of each B2C policy flow](./media/B2CImage_22.png)
+![Collect the names of each B2C policy flow.](./media/B2CImage_22.png)
 
 ### Enter your AAD B2C tenant application information into Commerce
 

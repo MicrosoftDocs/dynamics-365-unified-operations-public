@@ -5,7 +5,6 @@ title: GETENUMVALUEBYNAME ER function
 description: This topic provides information about how the GETENUMVALUEBYNAME Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 09/23/2020
-ms.topic: article
 ms.prod: 
 ms.technology: 
 
@@ -67,7 +66,7 @@ No exception is thrown if an *Enum* value isn't found by using the name of the e
 
 In the following illustration, the **ReportDirection** enumeration is introduced in a data model. Notice that labels are defined for the enumeration values.
 
-![Available values for a data model enumeration](./media/ER-data-model-enumeration-values.PNG)
+![Available values for a data model enumeration.](./media/ER-data-model-enumeration-values.PNG)
 
 The following illustration shows these details:
 
@@ -75,7 +74,7 @@ The following illustration shows these details:
 - The `$IsArrivals` expression is designed to use the model enumeration–based **$Direction** data source as a parameter of this function.
 - The value of this comparison expression is **TRUE**.
 
-![Example of data model enumeration](./media/ER-data-model-enumeration-usage.PNG)
+![Example of data model enumeration.](./media/ER-data-model-enumeration-usage.PNG)
 
 ## Example 2
 
@@ -83,14 +82,14 @@ The `GETENUMVALUEBYNAME` and [`LISTOFFIELDS`](er-functions-list-listoffields.md)
 
 In the following illustration, the **TransType** data source is introduced in a model mapping. This data source refers to the **LedgerTransType** application enumeration.
 
-![Data source of a model mapping that refers to an application enumeration](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+![Data source of a model mapping that refers to an application enumeration.](./media/er-functions-text-getenumvaluebyname-example2-1.png)
 
 The following illustration shows the **TransTypeList** data source that is configured in a model mapping. This data source is configured based on the **TransType** application enumeration. The `LISTOFFIELDS` function is used to return all enumeration values as a list of records that contain fields. In this way, the details of every enumeration value are exposed.
 
 > [!NOTE]
 > The **EnumValue** field is configured for the **TransTypeList** data source by using the `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)` expression. This field returns an enumeration value for every record in this list.
 
-![Data source of a model mapping that that returns all enumeration values of a selected enumeration as a list of records](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+![Data source of a model mapping that that returns all enumeration values of a selected enumeration as a list of records.](./media/er-functions-text-getenumvaluebyname-example2-2.png)
 
 The following illustration shows the **VendTrans** data source that is configured in a model mapping. This data source returns vendor transaction records from the **VendTrans** application table. The ledger type of every transaction is defined by the value of the **TransType** field.
 
@@ -99,11 +98,11 @@ The following illustration shows the **VendTrans** data source that is configure
 >
 > The **TransTypeTitle** field is bound to the **LedgerType** field of a data model that enables this information to be used in every ER format that uses the data model as a source of data.
 
-![Data source of a model mapping that that returns vendor transactions](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+![Data source of a model mapping that that returns vendor transactions.](./media/er-functions-text-getenumvaluebyname-example2-3.png)
 
 The following illustration shows how you can use the [data source debugger](er-debug-data-sources.md) to test the configured model mapping.
 
-![Using the data source debugger to test the configured model mapping](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+![Using the data source debugger to test the configured model mapping.](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
 
 The **LedgerType** field of a data model exposes labels of transaction types as expected.
 

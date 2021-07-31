@@ -29,6 +29,8 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 
 You can generate a European Union (EU) sales list for the Netherlands in XML format that follows [NL SBR taxonomies](https://www.sbr-nl.nl/werken-met-sbr/taxonomie/documentatie-nederlandse-taxonomie) description. Taxonomies are updated by the authority each year. For example, in 2021 the taxonomy NT15 is applicable.
 
@@ -66,7 +68,7 @@ To set up EU sales list reporting formats, follow these steps:
 3. In the **Report format mapping** field, select either **EU Sales list by rows report** or **EU sales list by columns report**.
 4. For legal entities with [Multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md), on the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, on the NLD country/region line, select the ER format **EU sales list (NL)** that you imported.
 
-    ![Foreign trade parameters](media/Foreign-trade-parameters-pic1.png)
+    ![Foreign trade parameters.](media/Foreign-trade-parameters-pic1.png)
 
 ## Set up electronic transmission of tax declarations to Digipoort
 
@@ -89,7 +91,7 @@ To set up Azure Key Vault for certificate storage, follow these steps:
 
 7. On the **Secrets** FastTab, select **Add**, and create lines for Key Vault secrets for the Digipoort server and client certificates.
 
-    ![Key vault parameters](media/Key-vault-parameters-pic2.png)
+    ![Key vault parameters.](media/Key-vault-parameters-pic2.png)
 
 For more information about how to set up Key Vault parameters, see [Set up the Azure Key Vault client](setting-up-azure-key-vault-client.md).
 
@@ -109,7 +111,7 @@ To set up electronic tax declaration parameters, follow these steps:
     - **Server Certificate**: Select the line that you created for the Key Vault secret for the Digipoort server certificate.
     - **Client Certificate**: Select the line that you created for the Key Vault secret for the Digipoort client certificate.
 
-    ![Electronic tax declaration parameters](media/Electronic-tax-declaration-parameters-pic3.png)
+    ![Electronic tax declaration parameters.](media/Electronic-tax-declaration-parameters-pic3.png)
 
 ## Set up the Dutch EU sales list transmission to Digipoort
 
@@ -125,7 +127,7 @@ To set up Dutch electronic tax declaration parameters, follow these steps:
 3. Select information in the **Contact ID, Name, Contact initials**, **Contact prefix**, and **Telephone** fields.
 4. Set the **Company part of fiscal group** option to **Yes** if this setting is appropriate, and then, in the **Fiscal group** field, select the tax exempt number of the fiscal group.
 
-    ![Electronic tax declaration parameters 2](media/Electronic-tax-declaration-parameters-pic4.png)
+    ![Electronic tax declaration parameters 2.](media/Electronic-tax-declaration-parameters-pic4.png)
 
 5. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **Electronic ICP declaration ID** and **Error ID** references.
 
@@ -138,7 +140,7 @@ To transfer transactions and preview files, follow these steps:
 1. Go to **Tax** > **Declarations** > **Foreign trade** > **EU sales list**. Transfer the EU sales list transactions for the Netherlands to the EU sales list.
 2. Mark any corrected lines as **Corrected**.
 
-    ![EU sales list](media/EU-sales-list-pic5.png)
+    ![EU sales list.](media/EU-sales-list-pic5.png)
 
     For more information about how to work with the EU sales list journal, see [EU Sales list reporting](emea-eu-sales-list.md).
 
@@ -159,18 +161,18 @@ To create ICP declaration and send to Digipoort, follow these steps:
 2. Select **New**, and in the **Create electronic ICP declaration** dialog box, select **Company tax registration number**.
 3. Enter or select a value in the **From date** field, and then select the **Reporting period**.
 
-    ![Create ICP declaration](media/b9ba11daf6264e32fe22ebb8bc60fb8d.png)
+    ![Create ICP declaration.](media/b9ba11daf6264e32fe22ebb8bc60fb8d.png)
 
 4. Select **OK**. The electronic message is created.
 
-    ![Electronic ICP declaration](media/edab2697a0ce7503ff6cddcb13a57587.png)
+    ![Electronic ICP declaration.](media/edab2697a0ce7503ff6cddcb13a57587.png)
 
 5. Select **Deliveries** to review the lines of the EU sales list that are transferred to the message from the **EU sales list** page.
 6. Select **Corrections** to review the correction lines of the EU sales list that are transferred to the message from **EU sales list** page.
 7. Select **Reporting** to generate an XML file of the EU sales list and set report generation parameters in the **EU reporting** dialog box.
 8. Set **Send electronically** to **Yes** to send the generated XML file to **Digipoort.**
 
-    ![EU reporting](media/1a41fae8750905dac7c2eda04b5facb0.png)
+    ![EU reporting.](media/1a41fae8750905dac7c2eda04b5facb0.png)
 
 9. Select **OK** and refresh the page. The message status is changed to **Sent**.
 10. Select **Import XML** to import the response from Digipoort. The message status is changed to **Acknowledgement**.

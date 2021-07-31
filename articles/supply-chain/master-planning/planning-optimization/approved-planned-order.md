@@ -68,7 +68,7 @@ Approval of planned orders is an optional step in the process of creating a firm
 
 The following illustration shows how you can use the **Status** value that is assigned to each planned order to implement an approval workflow. To implement an approval process, manually adjust the **Status** value for each planned order as described in the previous section.
 
-![Planned order flow](media/approved-planned-orders-1.png)
+![Planned order flow.](media/approved-planned-orders-1.png)
 
 > [!TIP]
 > We recommend that you approve any modified planned orders. Otherwise, the edits will be ignored and overwritten by the next planning run.

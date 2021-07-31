@@ -45,7 +45,7 @@ ms.dyn365.ops.version: 10.0.1
 16. On the Action Pane, select **Functions** \> **Edit line** to edit the journal before you post it.
 17. On the Action Pane, select **Post** \> **Post** to post the voucher. Retirement on life time is shown as the **Disposal date** value on the deferrals value model.
 
-    ![Deferrals models page](media/rus-dispose-deferrals-01.png)
+    ![Deferrals models page.](media/rus-dispose-deferrals-01.png)
 
     > [!NOTE]
     > A journal line will be posted only if there is no gap between the last posted write-off and the disposal period.

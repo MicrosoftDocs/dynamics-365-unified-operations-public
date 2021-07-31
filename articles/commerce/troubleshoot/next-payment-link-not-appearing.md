@@ -39,7 +39,7 @@ The **Save for my next payment** check box doesn't appear in the **Payment metho
 
 The following illustration shows an example of a checkout page that includes the **Save for my next payment** check box.
 
-![Save for my next payment check box in the Payment module](media/payment-module-save-payment.jpg)
+![Save for my next payment check box in the Payment module.](media/payment-module-save-payment.jpg)
 
 ## Resolution
 
@@ -51,7 +51,7 @@ To verify that the Dynamics 365 Payment Connector for Adyen is correctly configu
 1. Select the online store.
 1. On the **Payment accounts** FastTab, make sure that the **Allow saving payment information in e-commerce** field is set to **True**.
 
-![Allow saving payment information in e-commerce field in Commerce headquarters](media/payment-connector-save-payment.jpg)
+![Allow saving payment information in e-commerce field in Commerce headquarters.](media/payment-connector-save-payment.jpg)
 
 ## Additional resources
 
