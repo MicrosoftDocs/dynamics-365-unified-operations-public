@@ -40,11 +40,9 @@ This topic lists the features that are included in the platform updates for vers
 ## Known deployment issue
 When deploying release 10.0.21 on IaaS, you may receive the following deployment warning:
 
-**Warning code**
-**95017**
+**Warning code:** 95017
 
-**Warning message**
-Script [SetupDiagnostics] failed execution against VM
+**Warning message:** Script [SetupDiagnostics] failed execution against VM
 
 The deployment will work despite the warning, however, the following known issues may occur in Lifecycle Services (LCS):
 
