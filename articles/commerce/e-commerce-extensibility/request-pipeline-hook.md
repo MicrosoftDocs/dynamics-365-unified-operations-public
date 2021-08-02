@@ -115,7 +115,7 @@ Msdyn365.requestHookRegistrar.creatInitialHook({
 
 If there is nothing returned from the plugin, the rendering engine will continue the rendering step, otherwise it will redirect or send the new response.
 
-## Request reader plugin timeout configuration
+## Configure request reader plugin timeout
 The request reader plugin has an execution timeout default value of 500ms, and can be configured in [platform settings file](platform-settings.md) with the **RequestReaderPluginTimeoutInMs** property as shown in the below platform.settings.json example:
 
 ```json
