@@ -41,7 +41,7 @@ This topic lists the features that are included in the platform updates for vers
 When deploying release 10.0.21 on IaaS, you may receive the following deployment warning:
 
 **Warning code**
-95017
+**95017**
 
 **Warning message**
 Script [SetupDiagnostics] failed execution against VM
