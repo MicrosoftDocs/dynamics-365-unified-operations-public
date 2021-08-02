@@ -45,7 +45,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 | Feature area   | Feature                                                  | More information                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
-|  B2B           |   [Grant and revoke B2B e-commerce business partner user admin privileges](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/grant-revoke-b2b-e-commerce-business-partner-user-admin-privileges.md)    |   [Manage business partner users on B2B e-commerce websites](../b2b/manage-b2b-users#edit-business-partner-user-details.md)   |
+|  B2B           |   [Grant and revoke B2B e-commerce business partner user admin privileges](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/grant-revoke-b2b-e-commerce-business-partner-user-admin-privileges.md)    |   [Manage business partner users on B2B e-commerce websites](../b2b/manage-b2b-users.md)   |
 |  B2B          |  [Support for catalogs in e-commerce channel](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/support-catalogs-e-commerce-channel.md)   |  Create partner-specific catalogs that reflect the products and special pricing that have been negotiated with the partner.   |
 |  Deployment   |   Apply updates and extensions to Commerce Scale Unit (cloud)  |  [Apply updates and extensions to Commerce Scale Unit (cloud)](/../fin-ops-core/dev-itpro/deployment/Update-retail-channel.md)     |
 |  Extensibility  |  Remove Cloud Scale Unit extensions   |  [Remove Cloud Scale Unit extensions](../dev-itpro/retail-sdk/remove-csu-package.md)      |
