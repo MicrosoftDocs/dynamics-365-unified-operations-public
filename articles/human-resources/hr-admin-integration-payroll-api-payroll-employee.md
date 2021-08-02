@@ -37,8 +37,8 @@ Physical name: mshr_payrollemployeeentity.
 This entity provides information about the employee. You must set the [payroll integration parameters](hr-admin-integration-payroll-api-parameters.md) before using this entity.
 
 >[!IMPORTANT] 
->**FirstName**, **MiddleName**, **LastName**, **NameValidFrom**, and **NameValidTo** fields are no longer available on this entity. This is to ensure that there is only one date effective datasource backing this entity.
->These fields will be available on the **DirPersonNameHistoricalEntity**, which was released in Platform update 43. There is an OData relation from **PayrollEmployeeEntity** to **DirPersonNameHistoricalEntity** on the **Person** field. 
+>**FirstName**, **MiddleName**, **LastName**, **NameValidFrom**, and **NameValidTo** fields are no longer available on this entity. This ensures that there is only one date effective datasource that backs this entity.
+>These fields will be available on the **DirPersonNameHistoricalEntity**, which was released in Platform update 43. There is an OData relationship from **PayrollEmployeeEntity** to **DirPersonNameHistoricalEntity** on the **Person** field. 
 
 ## Properties
 
