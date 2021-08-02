@@ -161,6 +161,7 @@ This example applies to a system that has its GS1 options set up as follows:.
   - **Group separator:** *~*
 
 - On the GS1 application identifiers page, the following application identifiers are set up:
+
     | Application identifier | Description | Fixed length | Length | Type | Decimal |
     |---|---|---|---|---|---|
     | 01 | GTIN | Yes | 14 | Numeric | No |
@@ -169,11 +170,13 @@ This example applies to a system that has its GS1 options set up as follows:.
     | 30 | Receiving quantity | No | 8 | Numeric | No |
 
 - On the **GS1 generic setup** page, the following settings established for the generic GS1 policy are relevant for this example:
+
     | Field | Application identifier | Description |
     |---|---|---|
     | ItemId | 01 | GTIN |
 
 - On the **GS1 policy** page, there is policy with a **Policy name** of *Purchase receiving*. This policy includes the following lines: 
+
     | Field | Application identifier | Description | Sorting |
     |---|---|---|---|
     | ExpDate | 17 | Expiry date | 0 |
