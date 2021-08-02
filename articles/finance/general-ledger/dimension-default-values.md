@@ -2,7 +2,7 @@
 # required metadata
 
 title: Default financial dimensions on financial journals 
-description: The following rules define how financial dimension values default on transactions that are entered through financial journals (but not inventory or project journals). This also includes details in the event that you’re using fixed dimensions.
+description: This topic describes the rules that define how financial dimension values default on transactions that are entered through financial journals (but not inventory or project journals). The topic also includes details in the event that you’re using fixed dimensions.
 author: kweekley
 ms.date: 08/04/2021
 ms.topic: index-page
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-The following rules define how financial dimension values default on transactions that are entered through financial journals (but not inventory or project journals). This also includes details in the event that you’re using fixed dimensions.
+This topic describes the rules that define how financial dimension values default on transactions that are entered through financial journals (but not inventory or project journals). The topic also includes details in the event that you’re using fixed dimensions.
 
 ## Symptom
 A voucher is entered into a journal, such as the general journal. The account is a Vendor account and the Offset account is a Bank account.  The vendor’s default financial dimensions will be entered by default on the account but the bank’s default financial dimensions don’t default.  Instead, the offset account defaults the dimension values from the Account.   
@@ -40,21 +40,21 @@ I’m expecting the fixed dimension to be entered by default either before or af
 
 ## Resolution
 
-The following rules are followed for defaulting financial dimension values onto the lines of a voucher within the financial journals, such as the general journal or vendor invoice journal. 
+The following rules are followed for entering financial dimension default values onto the lines of a voucher within the financial journals, such as the general journal or vendor invoice journal. 
 
 ### Journal header
 
 1. Journal header dimensions default from Journal name default dimensions.
-Journal line Account
-2. First, journal line Account dimensions default from Journal header default dimensions.
+
+### Journal line Account
+2. Journal line Account dimensions default from Journal header default dimensions.
 3. If any financial dimensions are blank, their values will default from Customer, Vendor, Bank, Fixed assets, Project, or Ledger default dimensions.
 
    - If the Account type is Ledger, a fixed dimension on a Ledger account is treated like a default dimension during transaction entry.
-   - If the Account type is Customer, Vendor, Bank, Fixed assets, or Project, the main account isn't known yet so a fixed dimension will never default for the Account.
+   - If the Account type is Customer, Vendor, Bank, Fixed assets, or Project, the main account isn't known yet, so a fixed dimension will never default for the account.
 
 ### Journal line Offset Account
-
-4. First, journal line Offset Account dimensions default from journal line Account dimensions.
+4. Journal line Offset Account dimensions default from journal line Account dimensions.
 5. If any financial dimensions are blank, they will next default from the Journal header.
 6. If any financial dimensions are blank, they will next default from the **Ledger default dimensions** page. You can access this page from the main page for customers, vendors banks and fixed assets as follows: 
  
@@ -64,17 +64,18 @@ Journal line Account
    **Project > Ledger default dimensions**
 
    - If the Offset account type is Ledger, a fixed dimension on a Ledger account is treated like a default dimension during transaction entry. If a dimension values already defaulted from the Account, the main account’s default or fixed dimension value will not override the default. 
-   - If the Offset account type = Customer/Vendor/Bank/Fixed Assets/Project, the main account isn't known yet so a fixed dimension will never default for the Account.
-Posting
+   - If the Offset account type is Customer, Vendor, Bank, Fixed Assets, Project the main account isn't known yet so a fixed dimension will never default for the Account.
 
-7. During posting, the main account for each line of the accounting entry (for both the Account and Offset account) is evaluated for whether there is a fixed dimension value. If a fixed dimension is defined, any existing or blank values will be replaced with that fixed dimension value. 
+### Posting
+7. During posting, the main account for each line of the accounting entry (for both the account and offset account) is evaluated for whether there is a fixed dimension value. If a fixed dimension is defined, any existing or blank values will be replaced with that fixed dimension value. 
 
-   - The fixed dimension value is NOT displayed on the journal lines after posting. Instead, it’s shown on the accounting entry when viewing the voucher after posting.
+   - The fixed dimension value is *not* displayed on the journal lines after posting. Instead, it’s shown on the accounting entry when viewing the voucher after it's posted.
 
-8.	No other dimension values default during posting. This includes additional ledger accounts that may be added during posting such as penny rounding, intercompany due to/due from, and so on. The default dimension entries for additional ledger accounts are taken from the Account and Offset accounts. 
-For the purpose of making default entries, the journal default logic doesn’t know if a blank dimension value was left blank intentionally, or if it just didn’t default.  If a dimension value is intentionally left blank, a value may still default using the defaulting order described above. If you need a dimension with a blank value, you might need to create a dimension with a value of zero to use in place of a blank dimension. 
+8.	No other dimension values default during posting. This includes additional ledger accounts that might be added during posting such as penny rounding, intercompany due to or due from, and so on. The default dimension entries for additional ledger accounts are taken from the account and offset accounts. 
 
-Please review the following scenarios for examples of the financial dimension defaulting order. 
+For the purpose of making default entries, the journal default process doesn’t "know" if a blank dimension value was left blank intentionally, or if the default entry wasn't made. If a dimension value is intentionally left blank, a value might still default using the defaulting order described above. If you need a dimension with a blank value, you might need to create a dimension with a value of zero to use in place of a blank dimension. 
+
+Review the following scenarios for examples of the financial dimension defaulting order. 
 
 #### Scenario 1
 
