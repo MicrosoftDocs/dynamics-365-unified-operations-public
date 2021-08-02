@@ -90,9 +90,9 @@ The following table describes the saved views available for the Product informat
 |---|---|---|---|
 | Released products list | Product creation | A simplified page view that only includes the fields most often used when creating products. | Saved views for released products |
 | Released product details | Product creation | A simplified page view that only includes the fields most often used when creating products. | Saved views for released products |
-| Released product details | Logistical information management | A simplified page view that only includes the fields most often used when managing logistical information for products. |
-| Released product details | Purchase information management | A simplified page view that only includes the fields most often used when managing purchase information for products. |
-| Released product details | Sales information management | A simplified page view that only includes the fields most often used when managing sales-related information for products. |
+| Released product details | Logistical information management | A simplified page view that only includes the fields most often used when managing logistical information for products. | Saved views for released products |
+| Released product details | Purchase information management | A simplified page view that only includes the fields most often used when managing purchase information for products. | Saved views for released products |
+| Released product details | Sales information management | A simplified page view that only includes the fields most often used when managing sales-related information for products. | Saved views for released products |
 
 ## Saved views for the Production control module
 
