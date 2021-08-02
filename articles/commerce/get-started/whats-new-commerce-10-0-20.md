@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.20 (August 2021)
+title: What's new and changed in Dynamics 365 Commerce 10.0.20 (August 2021)
 description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.20. 
 author: josaw1
 ms.date: 05/27/2021
@@ -23,13 +23,13 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2021-04-30 
-ms.dyn365.ops.version: 10.0.209
+ms.dyn365.ops.version: 10.0.20
 
 ---
 # What's new and changed in Dynamics 365 Commerce 10.0.20 (August 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.20. This version has a build number of 10.0.886 and is available on the following schedule:
 
