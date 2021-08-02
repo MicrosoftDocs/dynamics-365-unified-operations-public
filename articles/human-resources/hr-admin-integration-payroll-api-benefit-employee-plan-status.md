@@ -34,7 +34,7 @@ This topic describes the Benefit Employee Plan Status option set for Dynamics 36
 
 Physical name: mshr_hrmCompProcessType
 
-This enumeration provides option set for process type in Human Resources virtual entities.
+This enumeration provides the option set for process type in Human Resources virtual entities.
 
 | Value | Label | Description |
 | --- | --- | --- |
