@@ -82,6 +82,18 @@ The following table describes the saved views available for the Procurement and 
 | Purchase order details | Financial management | This simplified view is optimized for performing finance-related activities, such as invoicing and checking prices, totals, and charges. | Saved views for purchase orders |
 | Purchase order details | Order approval | This simplified view is optimized for approving purchase orders. | Saved views for purchase orders |
 
+## Saved views for the Product information management module
+
+The following table describes the saved views available for the Product information management module.
+
+| Page | View name | View description | Feature name |
+|---|---|---|---|
+| Released products list | Product creation | A simplified page view that only includes the fields most often used when creating products. | Saved views for released products |
+| Released product details | Product creation | A simplified page view that only includes the fields most often used when creating products. | Saved views for released products |
+| Released product details | Logistical information management | A simplified page view that only includes the fields most often used when managing logistical information for products. |
+| Released product details | Purchase information management | A simplified page view that only includes the fields most often used when managing purchase information for products. |
+| Released product details | Sales information management | A simplified page view that only includes the fields most often used when managing sales-related information for products. |
+
 ## Saved views for the Production control module
 
 The following table describes the saved views available for the Production control module.
@@ -115,7 +127,7 @@ The following table describes the saved views available for the Warehouse manage
 | All shipments | Inbound processing | This simplified view includes only the fields that are most often used to process inbound shipments. | Saved views for shipment processing |
 | All shipments | Outbound processing | This simplified view includes only the fields that are most often used to process outbound shipments. | Saved views for shipment processing |
 | All waves | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for wave processing |
-| Load planning workbench | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for the work planning workbench |
+| Load planning workbench | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for the load planning workbench |
 | Work details | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for the work details page |
 
 
