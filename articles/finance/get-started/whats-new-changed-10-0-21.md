@@ -3,8 +3,8 @@
 
 title: What's new or changed in Dynamics 365 Finance 10.0.21 (October 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.21 preview release.
-author: roschlom
-ms.date: 07/16/2021
+author: kfend
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2021-08-02 
 ms.dyn365.ops.version: 10.0.21
 
@@ -34,8 +34,8 @@ ms.dyn365.ops.version: 10.0.21
 This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.21. This version has a build number of 10.0.xxx and is available as follows:
 
 - **Preview of release**: August 2021
-- **General availability of release (self-update)**: XXX 2021
-- **General availability of release (auto-update)**: XXX 2021
+- **General availability of release (self-update)**: September 2021
+- **General availability of release (auto-update)**: October 2021
 
 
 ## Features included in this release
