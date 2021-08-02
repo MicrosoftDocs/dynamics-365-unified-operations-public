@@ -43,7 +43,7 @@ The below sample shows how to use the CLI command to create a request hook file.
 yarn msdyn365 create-request-hook
 ```
 
-The below code shows the default request hook file template:
+The code below shows the default request hook file result from running the above CLI command:
 ```ts
 /*!
  * Copyright (c) Microsoft Corporation.
