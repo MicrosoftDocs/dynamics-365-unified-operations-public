@@ -231,19 +231,52 @@ When you encounter issues with live sync where only a partial data is synchroniz
 
 **Troubleshooting steps**
 
-Step 1: Check for information on BusinessEventsDefinition and DualWriteProjectConfigurationEntity entities.
-
-Step 2: Check field mappings on the dual-write admin page. If the field is not mapped from Finance and Operations apps to Dataverse, then that field will not be tracked. Say for example, in the following screenshot, the field "Description" is tracked from Dataverse but not from Finance and Operations apps. So any changes to that field inside Finance and Operations apps will not be tracked.
+•	  Check field mappings on the dual-write admin page. If the field is not mapped from Finance and Operations apps to Dataverse, then that field will not be tracked. Say for example, in the following screenshot, the field "Description" is tracked from Dataverse but not from Finance and Operations apps. So any changes to that field inside Finance and Operations apps will not be tracked.
 
  ![Live sync troubleshooting](media/live-sync-troubleshooting-1.png)
     
-Step 3: Check if the data source is tracked in business events definition. From screenshot below any field from the DefaultDimensionDAVs and underlying table wont be tracked for changes.
+•	  Check if the data source is tracked in business events definition. From screenshot below any field from the DefaultDimensionDAVs and underlying table wont be tracked for changes.
     
  ![Live sync troubleshooting](media/live-sync-troubleshooting-2.png)
     
-Step 4: The mapped table fields reflect in the businesseventsdefinition table as shown below. In case you don't see the field you are looking for in the query result, then it will not be triggerd by dual-write.
+•	  The mapped table fields reflect in the businesseventsdefinition table as shown below. In case you don't see the field you are looking for in the query result, then it will not be triggerd by dual-write.
     
  ![Live sync troubleshooting](media/live-sync-troubleshooting-3.png)
+  
+**Here is a sample scenario of an address field update not sent from  Finance and Operations apps to Dataverse**
+In Finance and Operations apps, when there is an update to the address for a contact record, the change does not sync to Dataverse, then there must not have been a record in BusinessEventsDefinition table with the combination of the table affected and the entity.
+
+This is because smmContactpersonCDSV2Entity does not have LogisticsPostalAddress table directly as the data source. smmContactpersonCDSV2Entity has smmContactPersonV2Entity as the data source and then smmContactPersonV2Entity has LogisticsPostalAddressBaseEntity as the data source. LogisticsPostalAddress table is data source for LogisticsPostalAddressBaseEntity .
+ 
+This can happen in certain non-standard patterns, such as cases where the table being modified in F&O isn't "obviously" linked to the entity that contains it. For example, on the smmContactPersonCDSV2Entity, the "primary address" stuff is computed based on a bunch of raw code and SQL. The DW framework does its best effort to understand how a change to an underlying table maps back to entities, which is usually sufficient. But in some cases the link is so complex we need to just tell the framework. You have to make sure you have the RecId of the related table available on the entity directly, and then add a static method to say “monitor this table for changes”.  
+ 
+See smmContactPersonCDSV2Entity::getEntityDataSourceToFieldMapping() for such an example. CustCustomerV3entity and VendVendorV2Entity have already been altered to handle this, so you can refer these entities as well for this pattern.
+ 
+In this example the address update on the contact does not trigger an update to Dataverse and below are the steps followed to resolve this issue:
+ 
+Add a PrimaryPostalAddressRecId field to the smmContactPersonV2Entity in AppMU. Make it internal.
+
+![Troubleshoot live issues 1](media/Troubleshoot_live_sync_issue_1.png)
+
+1.	Add the same field to smmContactPersonCDSV2Entity
+
+![Troubleshoot live issues 1](media/Troubleshoot_live_sync_issue_2.png)
+
+2.	Add this method to the smmContactPersonCDSV2Entity class.
+
+    public static container getEntityDataSourceToFieldMapping(container mapping)
+    {
+        mapping += [[tablestr(smmContactPersonCDSV2Entity), tablenum(LogisticsPostalAddress), fieldstr(smmContactPersonCDSV2Entity, PrimaryPostalAddressRecId)]];
+ 
+        return mapping;
+    }
+ 
+3.	Sync DB and build the application.
+
+4.	Stop all the dual-write maps that are created on the entity smmContactPersonCDSV2Entity.
+
+5.	Start the map and you will see the new table (LogisticsPostalAddress in this example) you have started to track with the above code in the column 'RefTableName' for the row with refentityname 'smmContactPersonCDSV2Entity' in the BusinessEventsDefinition table.
+
      
 ## Error while creating a record where multiple records are sent from FinOps to CDS in the same batch
 
