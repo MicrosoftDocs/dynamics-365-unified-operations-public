@@ -34,7 +34,7 @@ This topic describes the Benefit Plan Type Cover option set for Dynamics 365 Hum
 
 Physical name: mshr_plantypecode
 
-This enumeration provides option set for process type in Human Resources virtual entities.
+This enumeration provides the option set for process type in Human Resources virtual entities.
 
 | Value | Label | Description |
 | --- | --- | --- |
