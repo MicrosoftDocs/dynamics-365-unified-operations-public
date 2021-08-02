@@ -2,7 +2,7 @@
 # required metadata
 title: Cancellation and return of NFC-e documents in Commerce POS for Brazil
 description: This topic gives an overview of the cancellation and return functionality for NFC-e documents in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
-author: v-ankvik
+author: akviklis
 manager: annbe
 ms.date: 06/10/2021
 ms.topic: article
@@ -20,7 +20,7 @@ ms.reviewer: v-chgri
 # ms.custom: 
 ms.search.region: Brazil
 ms.search.industry: Retail
-ms.author: v-ankvik
+ms.author: akviklis
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: 10.0.18
 
