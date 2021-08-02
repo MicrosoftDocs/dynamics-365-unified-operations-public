@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to update the local agent. The latest version of the local agent is version 2.6.0, which was released in October 2020.
+This topic explains how to update the local agent. The latest version of the local agent is version 2.6.0, which was released in August 2021.
 
 | Local agent version | Capability | 
 |---------------------|------------|
@@ -47,6 +47,16 @@ This topic explains how to update the local agent. The latest version of the loc
 | 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. |
 | 2.5.0               | This version updates dependencies and fixes a cleanup bug. |
 | 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning timeout. |
+| 2.7.0               | This version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. |
+
+## What's new in local agent 2.7.0
+
+- Local agent 2.7.0 introduces the possibility of specifying a limited set of deployment options to specify environment-specific deployment options. Most notably this release will allow deploying on environments with Microsoft SQL Server 2019. For all possible configurations see [Local agent deployment configurations](../../dev-itpro/deployment/onprem-localagent-options.md)
+- This release addresses an issue where the gMSA account that the local agent executes under looses permissions to the private key of some certificates.
+- The LBDTelemetry-Agent application can start correctly even if the Event Viewer is open. 
+
+> [!IMPORTANT]
+> This release requires that a new local agent configuration file be downloaded from LCS. Refer to the [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) topic if you encounter problems. 
 
 ## What's new in local agent 2.6.0
 

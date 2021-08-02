@@ -55,8 +55,12 @@ This section covers the following SQL Server components:
 
 | Version                       | Supported since  | End of life   |
 |-------------------------------|------------------|---------------|
-| Microsoft SQL Server 2016 SP2 | 10.0.9           | Not available |
+| Microsoft SQL Server 2019     | 10.0.21          | Not available |
+| Microsoft SQL Server 2016 SP2 | 10.0.9           | 10.0.28       |
 | Microsoft SQL Server 2016 SP1 | Original release | 10.0.14       |
+
+> [!IMPORTANT]
+> Using multiple versions of Microsoft SQL Server 2019 throughout a single environment is not supported.
 
 ## Minimum Azure Service Fabric runtime
 
