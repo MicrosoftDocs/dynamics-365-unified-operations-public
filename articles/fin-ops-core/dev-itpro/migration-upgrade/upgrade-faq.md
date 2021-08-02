@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade FAQ
 description: This topic answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
 author: ttreen
-ms.date: 07/01/2021
+ms.date: 08/02/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
