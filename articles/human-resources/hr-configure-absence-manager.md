@@ -94,16 +94,21 @@ The Absence manager role must be assigned to employees to enable them to approve
 
 ## Absence manager workspace
 
-In the **Employee Self-Service** workspace, the **Absence manager** tab shows the absence information about the employees who are assigned to the absence manager in the Leave hierarchy.
+In the **Employee Self-Service** workspace, the **Leave management** tab shows the absence information about the employees who are assigned to the absence manager in the Leave hierarchy. There are a few options available to the absence manager: 
+ - Review time off requests.</br>
+ - Submit a time off request on behalf of an employee.</br>
+ - View all employees assigned to them as part of the leave hierarchy.</br>
+ - View the absence manager calendar.</br>
 
-On the **Leave and absence** tab, the following options are available for each employee:
-
-- **Time off** – View balances, approved time off, and time-off requests for the selected employee.
-- **Leave balances** – View a list of the balances for the different leave plans for the selected employee.
+On the **Leave management** workspace, there are two tabs:
+ - **Time off requests**: This tab will list all the pending time off requests that the absence manager can approve. The absence manager can select multiple records and take action on them at the same time. If cross-company leave view is enabled, this list will show pending time off requests across all legal entities they have access to. Otherwise, it will show the pending time off requests for the legal entity currently selected. </br>
+ - **All employees**: This tab will list all the employees that are assigned to the absence manager in the Leave hierarchy. There are a couple of options available for each employee:
+    - **Request time off** -  Submit a new time off request for the selected employee.</br>
+    - **Time off** – View balances, approved time off, and time-off requests for the selected employee.</br>
 
 ## Approve time-off requests
 
-Absence managers can approve or deny time-off requests for employees. They can also create requests on behalf of employees, as required.
+Absence managers can approve or deny time-off requests for employees. 
 
 > [!IMPORTANT]
 > Before absence managers can approve or deny time-off requests, the leave request workflow must be configured to assign leave request work items to them for review.
@@ -114,15 +119,13 @@ Absence managers can approve or deny time-off requests for employees. They can a
 >
 > For information about how to create the leave request workflow, see [Create a leave request workflow](hr-leave-and-absence-workflow.md).
 
-1. In the **Employee Self-Service** workspace, select the **Absence manager** tab.
+1. In the **Employee Self-Service** workspace, select the **Leave management** tab.
 
-2. On the **Absence manager** tab, select the desired employee.
+2. On the **Time off requests** tab, select the time off requests that you want to take action on. You can select multiple records in this list view.
 
-3. Select **Details** and then **Time off**.
+3. Use the action buttons at the top of the grid to Approve, Deny or Delegate the time off request. 
 
-4. Find the time-off request, and select the **Approval** option. You can then select an option to approve or cancel the time-off request.
-
-A status of **Cancel** indicates that the request has been denied. A status of **Completed** indicates that the request has been approved.
+Alternatively, the user can also use the **Time off requests** tile on the left to navigate to the list of all time off request work items. 
 
 ## View time off in the calendar
 
@@ -131,7 +134,7 @@ Users in the Absence manager role can view time-off requests in their calendar. 
 > [!IMPORTANT]
 > A system administrator must configure the view options for the absence manager calendar. On the **Leave and absence parameters** page, on the **Calendar** tab, there are options to hide or show birthdays, absences without details, leaves of absence, and pending leave requests. There is also an option to filter the calendar view option by worker type.
 
-1. In the **Employee Self-Service** workspace, select **Absence manager** and then **Absence manager calendar**.
+1. In the **Employee Self-Service** workspace, select **Leave management** and then **Absence manager calendar**.
 
 2. In the **Date** field, enter the desired dates.
 

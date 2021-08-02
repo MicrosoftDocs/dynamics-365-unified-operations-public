@@ -1498,6 +1498,8 @@
               href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing
               href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
+            - name: Create a new Electronic invoicing feature
+              href: localizations/e-invoicing-create-new-e-invoicing-feature.md
             - name: Get started with Electronic Invoicing for Brazil
               href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing for Egypt
@@ -1544,6 +1546,8 @@
         items:
         - name: Australia overview
           href: localizations/australia.md
+        - name: Bank file formats for Australian banks
+          href: localizations/apac-aus-bank-file-formats.md
         - name: Business activity statement (BAS)
           href: localizations/apac-aus-business-activity-statement.md
         - name: Add report boxes and generate the BAS
@@ -1566,6 +1570,8 @@
           href: localizations/emea-aut-vat-statement-details.md
         - name: Cross-border services report
           href: localizations/emea-aut-cross-border-services-report.md
+        - name: Purchase duties
+          href: localizations/emea-aut-purchase-duties.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
@@ -1870,6 +1876,10 @@
           href: localizations/emea-cze-vat-statement-details.md
         - name: VAT declaration (Czech Republic)
           href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+        - name: Bank symbols for bank accounts
+          href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
+        - name: Intra-community VAT
+          href: localizations/emea-cze-intra-community-VAT.md
         - name: Year-end close
           href: localizations/emea-cze-hun-year-end.md
       - name: Denmark
@@ -1992,10 +2002,6 @@
             href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
           - name: Generate an EU Intrastat declaration
             href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
-          - name: French Intrastat
-            href: localizations/emea-fra-intrastat.md
-          - name: Italian Intrastat
-            href: localizations/emea-ita-intrastat.md
         - name: Inventory journal reports
           href: localizations/emea-set-up-report-inventory-journal-names.md
         - name: Invoice issue deadlines
@@ -2120,6 +2126,8 @@
           href: localizations/emea-fra-derogatory-depreciation.md
         - name: French bills of exchange and promissory notes
           href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+        - name: French Intrastat
+          href: localizations/emea-fra-intrastat.md
         - name: NAF codes and siret numbers
           href: localizations/emea-fra-naf-codes-siret-numbers.md
         - name: Set up NAF codes and Siret numbers
@@ -2170,6 +2178,8 @@
           href: localizations/emea-deu-journal-list-report.md
         - name: Set up electronic tax declarations
           href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
+        - name: Print a separate label for credit memos that originate from sales
+          href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
       - name: Hungary
         items:
         - name: Hungary overview
@@ -2616,6 +2626,8 @@
           href: localizations/emea-ita-exil-zero-invoice-posting.md
         - name: Bank data usability enhancement
           href: localizations/emea-ita-exil-bank-accounts-setup.md
+        - name: Italian Intrastat
+          href: localizations/emea-ita-intrastat.md
         - name: Miscellaneous charges per kilogram in an Intrastat declaration
           href: localizations/emea-ita-exil-misc-charges-intrastat.md
         - name: Intent letters - Invoicing usual exporters
@@ -2836,6 +2848,8 @@
           href: localizations/emea-ltu-isaf.md
         - name: Standard Audit File for Tax (SAF-T) for Lithuania
           href: localizations/emea-ltu-saf-t.md
+        - name: Set up the transfer documents for goods movement inside a company
+          href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
       - name: Malaysia
         items:
         - name: Malaysia overview
@@ -2970,8 +2984,18 @@
           href: localizations/emea-pol-turnover-balances-statement.md
         - name: Split AP/AR exchange difference
           href: localizations/emea-pol-split-ap-ar-exchange-difference.md
-        - name: VAT declaration with registers (JPK_V7M, VDEK)
-          href: localizations/emea-pol-vdek.md
+        - name: Set up and use PKWiU codes for Poland
+          href: localizations/emea-pol-pkwiu-code.md  
+        - name:  VAT declaration with registers (JPK_V7M, VDEK)
+          items:
+          - name: VAT declaration with registers (JPK_V7M, VDEK) overview
+            href: localizations/emea-pol-vdek.md
+          - name: Prepare for JPK-V7M reporting
+            href: localizations/emea-pol-vdek-setup.md
+          - name: JPK-V7M reporting
+            href: localizations/emea-pol-vdek-reporting.md
+          - name: Details of specific business scenarios in the JPK-V7M report
+            href: localizations/emea-pol-vdek-scenarios.md
       - name: Qatar
         items: 
         - name: Qatar overview

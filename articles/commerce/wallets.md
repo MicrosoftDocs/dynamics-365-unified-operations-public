@@ -84,7 +84,7 @@ To map a processor payment method to a card or wallet, select the card or wallet
 ![Mapped processor payment method.](media/Payments/Mapped.png)
 
 > [!NOTE]
-> The **Processor payment method mapping** capability adds a new table that must be synchronized to the channel database. To add this data to the Commerce scheduler, you need to initialize the Commerce scheduler. For details, please refer to documentation related to [updating commerce scheduler configurations](./dev-itpro/cdx-best-practices.md#updating-configurations). 
+> The **Processor payment method mapping** capability adds a new table that must be synchronized to the channel database. To add this data to the Commerce scheduler, you need to initialize the Commerce scheduler. For details, please refer to documentation related to [updating commerce scheduler configurations](./dev-itpro/cdx-best-practices.md#update-configurations). 
 
 ### When not to use processor payment method mapping
 
