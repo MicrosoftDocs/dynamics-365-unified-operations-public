@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax calculation rounding rules
-description: This topic provides information about the rounding rules in the tax calculation parameter of the tax calculation service.
+description: This topic provides information about the rounding rules in the tax calculation parameters of the tax calculation service.
 author: kailiang
 ms.date: 07/29/2021
 ms.topic: article
@@ -29,117 +29,157 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how the rounding rules work in the tax calculation parameter of the tax calculation service.
+This topic provides information about how the rounding rules work in the tax calculation parameters of the tax calculation service.
 
-> [!Note] 
-> When tax calculation service is enabled, the rounding rules on the Sales tax code and Sales tax group pages will not be effective.
+> [!NOTE] 
+> When the tax calculation service is enabled, the rounding rules on the **Sales tax code** and **Sales tax group** pages aren't effective.
 
-Go to **Tax** > **Setup** > **Tax configuration** > **Tax calculation parameters** to view the rounding rules configuration for the tax calculation service.
+You can view the configuration of rounding rules for the tax calculation service in the **Sales tax rounding rule** section on the **Calculation** FastTab on the **General** tab of the **Tax calculation parameters** page (**Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**).
 
-[![Tax calculation parameters](./media/tax-calculation-parameters-calculation-1.png)](./media/tax-calculation-parameters-calculation-1.png)
+[![Rounding rule configuration on the Tax calculation parameters page](./media/tax-calculation-parameters-calculation-1.png)](./media/tax-calculation-parameters-calculation-1.png)
 
-The calculated amounts in the payload from the tax calculation service are rounded according to the configuration in **Rounding precision** and **Rounding method**.
+The **Rounding precision** and **Rounding method** fields determine how calculated amounts in the payload from the tax calculation service are rounded.
 
-## Rounding precision 
+## Rounding precision
 
-Rounding precision supports up to six decimal places. When you set the rounding precision to **0.000000**, the amount results are rounded to six decimal places and then sent to Dynamics 365 Finance. For example, the amount **987.1234567** will be rounded to **987.123457** using the normal rounding method. 
+The **Rounding precision** fields supports a value that has up to six decimal places. For example, if you set the **Rounding precision** field to **0.000000**, calculated amounts are rounded to six decimal places and then sent to Microsoft Dynamics 365 Finance. For example, if the **Normal** rounding method is used, the amount **987.1234567** is rounded to **987.123457**.
 
-> [!Note] 
-> Finance rounds the amount according to the currency rounding rules. Because of this, the tax amounts displayed and recorded in the transactions are impacted by both rounding rules.  
+> [!NOTE]
+> Finance rounds amounts according to the currency rounding rules. Therefore, the tax amounts that are shown and recorded in transactions are affected by both tax calculation rounding rules and currency rounding rules.
 
 ## Rounding method
 
-The rounding method for tax calculation can be configured for each legal entity. You can select the rounding method from the options, **Normal**, **Downward** and **Rounding-up**.
+The rounding method for tax calculation can be configured for each legal entity. In the **Rounding method** field, you can select among three options: **Normal**, **Downward**, and **Rounding-up**.
 
 ### Rounding example
 
-The following tables provide an example of how the amount **987.345** would be rounded based on the selected rounding method.
+The following table provides an example that shows how the amount **987.345** is rounded for different combinations of rounding precisions and rounding methods.
 
-| Rounding method option | Rounding precision = 0.00 | Rounding precision = 0.01 | Rounding precision = 0.10 | Rounding precision = 1.00 | Rounding precision = 10.00 |
-| :--------------------- | :------------------------ | :------------------------ | :------------------------ | :------------------------ | :------------------------- |
-| Normal                 | 987.35                    | 987.35                    | 987.30                    | 987.00                    | 990.00                     |
-| Downward               | 987.00                    | 987.34                    | 987.30                    | 987.00                    | 980.00                     |
-| Rounding-up            | 988.00                    | 987.35                    | 987.40                    | 988.00                    | 990.00                     |
-
-
-| Rounding method option | Rounding precision = 0.02 | Rounding precision = 0.05 | Rounding precision = 0.25 |
-| :--------------------- | :------------------------ | :------------------------ | :------------------------ |
-| Normal                 | 987.34                    | 987.35                    | 987.25                    |
-| Downward               | 987.34                    | 987.30                    | 987.25                    |
-| Rounding-up            | 987.36                    | 987.35                    | 987.50                    |
+<table>
+<thead>
+<tr>
+<th rowspan="2">Rounding method</th>
+<th colspan="8">Rounding precision</th>
+</tr>
+<tr>
+<th>0.00</th>
+<th>0.01</th>
+<th>0.10</th>
+<th>1.00</th>
+<th>10.00</th>
+<th>0.02</th>
+<th>0.05</th>
+<th>0.25</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Normal</td>
+<td>987.35</td>
+<td>987.35</td>
+<td>987.30</td>
+<td>987.00</td>
+<td>990.00</td>
+<td>987.34</td>
+<td>987.35</td>
+<td>987.25</td>
+</tr>
+<tr>
+<td>Downward</td>
+<td>987.00</td>
+<td>987.34</td>
+<td>987.30</td>
+<td>987.00</td>
+<td>980.00</td>
+<td>987.34</td>
+<td>987.30</td>
+<td>987.25</td>
+</tr>
+<tr>
+<td>Rounding-up</td>
+<td>988.00</td>
+<td>987.35</td>
+<td>987.40</td>
+<td>988.00</td>
+<td>990.00</td>
+<td>987.36</td>
+<td>987.35</td>
+<td>987.50</td>
+</tr>
+</tbody>
+</table>
 
 The calculation and rounding logic of tax amounts can be configured according to taxation rules.
 
 ## Rounding by 
 
-Select the rounding principle that applies to the taxes. The following options are available:
+In the **Rounding by** field, select the rounding principle that applies to the taxes. The following options are available:
 
-  - **Tax codes**: The tax amount is rounded inside each tax code. 
-  - **Tax code combinations**: The tax amount is rounded inside the tax code combination within the line. 
+- **Tax codes** – Round the tax amount inside each tax code.
+- **Tax code combinations** – Round the tax amount inside the tax code combination on the line.
 
-### Calculation method 
+## Calculation method
 
- Select whether taxes on invoices are calculated for each line or for all lines. The following options are available: 
+In the **Calculation method** field, select whether taxes on invoices are calculated for each line or all lines. The following options are available:
 
-  - **Line**: The tax amount will be calculated line by line. Each line's tax amount will not impact others.  
-  - **Total**: The tax amount will be calculated within one document across lines. 
+- **Line** – Calculate the tax amount on a line-by-line basis. The tax amount on each line is unaffected by the tax amount on other lines.
+- **Total** – Calculate the tax amount across all the lines on one document.
 
 ### Rounding calculation example
 
-The following example shows the different calculations of one invoice with four lines. Also included are: 
+This example shows the different calculations that can be done for one invoice, for different combinations of **Rounding by** and **Calculation method** values. For this example, the following setup is in place:
 
-- Two tax codes: VAT1 (10%) and VAT2 (10%). 
-- Rounding method = Rounding-up. 
-- Rounding Precision = 0.01. 
+- The invoice has four lines.
+- There are two tax codes: **VAT1** (10 percent) and **VAT2** (10 percent).
+- The rounding precision is set to **0.01**.
+- The rounding method is set to **Rounding-up**.
 
-**Rounding by Tax codes and Line**
+#### Rounding by = Tax codes and Calculation method = Line
 
-| Line no. | Line net amount | Determined tax codes | Tax amount before rounding   | Rounded tax amount   |
-| :------- | :-------------- | :------------------- | :--------------------------- | :------------------- |
-| 1        | 11.11           | VAT1                 | 1.111                        | 1.12                 |
-| 2        | 22.22           | VAT1; VAT2           | 2.222; 2.222                 | 2.23; 2.23           |
-| 3        | 33.33           | VAT1                 | 3.333                        | 3.34                 |
-| 4        | 44.44           | VAT1; VAT2           | 4.444; 4;444                 | 4.45; 4.45           |
+| Line number | Line net amount | Determined tax codes | Tax amount before rounding | Rounded tax amount |
+|-------------|-----------------|----------------------|----------------------------|--------------------|
+| 1           | 11.11           | VAT1                 | 1.111                      | 1.12               |
+| 2           | 22.22           | VAT1; VAT2           | 2.222; 2.222               | 2.23; 2.23         |
+| 3           | 33.33           | VAT1                 | 3.333                      | 3.34               |
+| 4           | 44.44           | VAT1; VAT2           | 4.444; 4;444               | 4.45; 4.45         |
 
-**Rounding by Tax code combinations and Line**.
+#### Rounding by = Tax code combinations and Calculation method = Line
 
-| Line no. | Line net amount | Determined tax codes | Tax amount before rounding   | Rounded tax amount   |
-| :------- | :-------------- | :------------------- | :--------------------------- | :------------------- |
-| 1        | 11.11           | VAT1                 | 1.111                        | 1.12                 |
-| 2*       | 22.22           | VAT1; VAT2           | 2.222; 2.222                 | 2.23; 2.22           |
-| 3        | 33.33           | VAT1                 | 3.333                        | 3.34                 |
-| 4**      | 44.44           | VAT1; VAT2           | 4.444; 4;444                 | 4.45; 4.44           |
+| Line number | Line net amount | Determined tax codes | Tax amount before rounding | Rounded tax amount |
+|-------------|-----------------|----------------------|----------------------------|--------------------|
+| 1           | 11.11           | VAT1                 | 1.111                      | 1.12               |
+| 2\*         | 22.22           | VAT1; VAT2           | 2.222; 2.222               | 2.23; 2.22         |
+| 3           | 33.33           | VAT1                 | 3.333                      | 3.34               |
+| 4\*\*       | 44.44           | VAT1; VAT2           | 4.444; 4;444               | 4.45; 4.44         |
 
-```
-*Line2 = Round[22.22 * (10% + 10%)] = 2.23 + 2.22
-**Line4 = Round[44.44 * (10% + 10%)] = 4.45 + 4.44
-```
+\* Line 2 = Round\[22.22 × (10 percent + 10 percent)\] = 2.23 + 2.22
 
-**Rounding by Tax codes and Total**
+\*\* Line 4 = Round\[44.44 × (10 percent + 10 percent)\] = 4.45 + 4.44
 
-| Line no. | Line net amount | Determined tax codes | Tax amount before rounding   | Rounded tax amount   |
-| :------- | :-------------- | :------------------- | :--------------------------- | :------------------- |
-| 1        | 11.11           | VAT1*                | 1.111                        | 1.12                 |
-| 2        | 22.22           | VAT1*; VAT2**        | 2.222; 2.222                 | 2.22; 2.23           |
-| 3        | 33.33           | VAT1*                | 3.333                        | 3.33                 |
-| 4        | 44.44           | VAT1*; VAT2**        | 4.444; 4;444                 | 4.44; 4.44           |
+#### Rounding by = Tax codes and Calculation method = Total
 
+| Line number | Line net amount | Determined tax codes | Tax amount before rounding | Rounded tax amount |
+|-------------|-----------------|----------------------|----------------------------|--------------------|
+| 1           | 11.11           | VAT1\*               | 1.111                      | 1.12               |
+| 2           | 22.22           | VAT1\*; VAT2\*\*     | 2.222; 2.222               | 2.22; 2.23         |
+| 3           | 33.33           | VAT1\*               | 3.333                      | 3.33               |
+| 4           | 44.44           | VAT1\*; VAT2\*\*     | 4.444; 4;444               | 4.44; 4.44         |
 
-*VAT1(Line1, Line2, Line3, Line4) = Round[(11.11 + 22.22 + 33.33 + 44.44) * 10%] = 1.12 + 2.22 + 3.33 + 4.44
-**VAT2(Line2, Line4) = Round[(22.22 + 44.44) * 10%] = 2.23 + 4.44
+\* VAT1(Line 1, Line 2, Line 3, Line 4) = Round\[(11.11 + 22.22 + 33.33 + 44.44) × 10 percent\] = 1.12 + 2.22 + 3.33 + 4.44
 
+\*\* VAT2(Line 2, Line 4) = Round\[(22.22 + 44.44) × 10 percent\] = 2.23 + 4.44
 
-**Rounding by Tax code combinations and Total**
+#### Rounding by = Tax code combinations and Calculation method = Total
 
-| Line no. | Line net amount | Determined tax codes | Tax amount before rounding   | Rounded tax amount   |
-| :------- | :-------------- | :------------------- | :--------------------------- | :------------------- |
-| 1*       | 11.11           | VAT1                 | 1.111                        | 1.12                 |
-| 2**      | 22.22           | VAT1; VAT2           | 2.222; 2.222                 | 2.23; 2.22           |
-| 3*       | 33.33           | VAT1                 | 3.333                        | 3.33                 |
-| 4**      | 44.44           | VAT1; VAT2           | 4.444; 4;444                 | 4.44; 4.45           |
+| Line number | Line net amount | Determined tax codes | Tax amount before rounding | Rounded tax amount |
+|-------------|-----------------|----------------------|----------------------------|--------------------|
+| 1\*         | 11.11           | VAT1                 | 1.111                      | 1.12               |
+| 2\*\*       | 22.22           | VAT1; VAT2           | 2.222; 2.222               | 2.23; 2.22         |
+| 3\*         | 33.33           | VAT1                 | 3.333                      | 3.33               |
+| 4\*\*       | 44.44           | VAT1; VAT2           | 4.444; 4;444               | 4.44; 4.45         |
 
-*Line1, Line3 = Round[(11.11 + 33.33) % 10%] = 1.12 + 3.33
-**Line2, Line4 = Round[(22.22 + 44.44) * (10% + 10%)] = 2.23 + 2.22 + 4.44 + 4.45
+\* Line 1, Line 3 = Round\[(11.11 + 33.33) × 10 percent\] = 1.12 + 3.33
 
+\*\* Line 2, Line 4 = Round\[(22.22 + 44.44) × (10 percent + 10 percent)\] = 2.23 + 2.22 + 4.44 + 4.45
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
