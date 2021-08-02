@@ -89,26 +89,26 @@ To set up and customize your GS1 own application identifiers:
     - **Description** – Enter a short description of the identifier.
     - **Fixed length** – Select this check box if the values scanned using this application identifier have a fixed number of characters. Clear this check box if the values are of variable length (in which case, the end of the value must be indicated in the value using the **Group separator** character established on the **Warehouse management parameters page**).
     - **Length** – Enter the maximum number of characters that may appear in the values scanned using this application identifier. When **Fixed length** is set to *Yes*, then exactly this number of characters is expected.
-    - **Type** – Select the type of value scanned using this application identifier (*Numeric*, *Alphanumeric*, or *Date*).
-    - **Decimal** – Value decimal for numeric type. <!-- KFM: More info is needed here. Also, what is the expected date format? -->
+    - **Type** – Select the type of value scanned using this application identifier (*Numeric*, *Alphanumeric*, or *Date*). <!-- KFM: What is the expected date format? -->
+    - **Decimal** – Value decimal for numeric type. <!-- KFM: More info is needed here. -->
 
 > [!NOTE]
-> The **Group separator** established on the **Warehouse management parameters page** may not be used if a value followed by an application identifier has a **Fixed length** or its length is maximized (equal to the **Length** set for the application identifier). <!-- KFM: Do we mean that the separator is optional in this case, or that it *must* be omitted? -->
+> The **Group separator** established on the **Warehouse management parameters page** is optional if a value followed by an application identifier has a **Fixed length** or its length is maximized (equal to the **Length** set for the application identifier).
 
-## Load the generic GS1 policy
+## Load the generic GS1 setup
 
-The generic GS1 policy establishes a collection of common mappings that match each relevant database field from Supply Chain management to the application identifier that controls how values from scanned barcodes should be interpreted and stored in that field. These settings apply to all scans for all mobile device menu items unless overwritten for one or more specific fields by as specific GS1 policy assigned to a specific menu item. The generic GS1 policy only allows for a single value to be scanned at a time, so if you want to be able to load several field values from a single scan, then you must set up a GS1 policy for the relevant menu item. For more information about GS1 policies, see the next section. <!-- KFM: I added this paragraph. Please confirm. Is the first value in the code always assigned by the generic policy? -->
+The generic GS1 setup establishes a collection of common mappings that match each relevant database field from Supply Chain management to the application identifier that controls how values from scanned barcodes should be interpreted and stored in that field. These settings apply to all scans for all mobile device menu items unless overwritten for one or more specific fields by as GS1 policy assigned to a specific menu item. The generic GS1 setup only allows for a single value to be scanned at a time, so if you want to be able to load several field values from a single scan, then you must set up a GS1 policy for the relevant menu item. For more information about GS1 policies, see the next section.
 
 The **GS1 generic setup** page lets you load a standard set of mappings between mobile device fields and standard application identifiers created by the default setup.
 
 To establish the generic GS1 setup, go to **Warehouse management \> Setup \> GS1 \> GS1 generic setup**. Then select **Create default setup** to automatically assign a suitable application identifier to each of the fields typically used by mobile device menu items.
 
 > [!WARNING]
-> The **Create default setup** command deletes the entire existing generic GS1 policy (if any) and loads the standard setup.
+> The **Create default setup** command deletes the entire existing generic GS1 setup (if any) and loads the standard setup.
 
-## Set up specific GS1 policies that you can assign to mobile device menu items
+## Set up GS1 policies that you can assign to mobile device menu items
 
-The GS1 standard is designed to enable workers to load several values after scanning a single barcode just once. To reach this aim, logistics managers must set up custom GS1 policies that tell the system how to interpret multi-value barcodes. Later, you'll be able to assign policies to mobile device menu items to control how a barcode will be interpreted when a worker scans it while using a given menu item. <!-- KFM: Are these combined with the generic GS1 policy? How?-->
+The GS1 standard is designed to enable workers to load several values after scanning a single barcode just once. To reach this aim, logistics managers must set up GS1 policies that tell the system how to interpret multi-value barcodes. Later, you'll be able to assign policies to mobile device menu items to control how a barcode will be interpreted when a worker scans it while using a given menu item. <!-- KFM: Are these combined with the generic GS1 setup? How?-->
 
 ### Load the standard specific GS1 policies
 
@@ -144,6 +144,8 @@ To set up and customize your GS1 policies:
 
 ## Assign GS1 policies to mobile device menu items
 
+By default, all mobile device menu items will provide input fields where workers can scan a single value according to the generic GS1 setup. For any mobile device menu item where you want to enable workers to scan more than one field value with a single scan
+
 For each mobile device menu item that will be used to scan a GS1 barcode, you must assign a GS1 policy by doing the following steps: <!-- KFM: When must we assign these? Can we rely on the generic policy most of the time? -->
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items.**
@@ -161,7 +163,7 @@ This example applies to a system that has its GS1 options set up as follows:.
 - On the GS1 application identifiers page, the following application identifiers are set up:
     | Application identifier | Description | Fixed length | Length | Type | Decimal |
     |---|---|---|---|---|---|
-    | 01 | GITN | Yes | 14 | Numeric | No |
+    | 01 | GTIN | Yes | 14 | Numeric | No |
     | 10 | Batch number | No | 20 | Alphanumeric | No |
     | 17 | Expiry date | Yes | 6 | Date | No |
     | 30 | Receiving quantity | No | 8 | Numeric | No |
@@ -184,9 +186,9 @@ Now, goods for a purchase order have arrived at the warehouse. The worker procee
 
 1. On the mobile device, select the **Purchase receiving** menu item.
 1. Select the purchase order number.
-1. Select the **Item** field and scan the following barcode: \]1C0100000012345678\~3030\~10b1\~17220215. 
+1. Select the **Item** field and scan the following barcode: \]1C0100000012345678\~3030\~10b1\~17220215.
 1. As a result of the settings outlined at the start of the example, the system parses the code as follows:
-    - **Item ID:** *0000012345678* <!-- KFM: Are we missing a zero in the GTIN here? -->
+    - **Item ID:** *00000012345678*
     - **Receiving quantity:** *30*
     - **Batch number:** *b1*
     - **Expiry date:**  <!-- KFM: What is the date format? -->
