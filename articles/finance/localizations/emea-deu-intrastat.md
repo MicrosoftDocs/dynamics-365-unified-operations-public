@@ -1,12 +1,16 @@
-﻿---
-title: 
-description: 
-ms.date: 08.02.2021
+---
+# required metadata
+
+title: German Intrastat
+description: This topic contains information about Intrastat declaration in Germany.
+author: andosip
+ms.date: 08/2/2021
 ms.topic: article
-ms.service: dynamics365-financials
-author: and
-ms.author: Andosip
-manager: anasyash
+audience: Application User
+ms.reviewer: kfend
+ms.search.region: Global
+ms.author: v-aosipov
+ms.search.validFrom: 
 ---
 
 # German Intrastat
@@ -40,116 +44,84 @@ The following table shows the fields that are included in the German Intrastat d
 
 1.  Set up the company's codes:
 
-<!-- -->
+    1.  Go to **Organization administration** &gt; **Organizations** &gt; **Legal entities**.
 
-1.  Go to **Organization administration** &gt; **Organizations** &gt; **Legal entities**.
+    2.  On the **Foreign trade and Logistics** FastTab, in the **Identification** section, in the **DVR** field, enter the Interchange agreement ID. This ID will be included on the report.
 
-2.  On the **Foreign trade and Logistics** FastTab, in the **Identification** section, in the **DVR** field, enter the Interchange agreement ID. This ID will be included on the report.
+    3.  In the **VAT exempt number export** field, enter your company's value-added tax (VAT) number for export.
 
-3.  In the **VAT exempt number export** field, enter your company's value-added tax (VAT) number for export.
+    4.  In the **VAT exempt number import** field, enter your company's VAT number for import.
 
-4.  In the **VAT exempt number import** field, enter your company's VAT number for import.
+    5.  In the **Intrastat code** field, enter the Intrastat code that is assigned to the legal entity.
 
-5.  In the **Intrastat code** field, enter the Intrastat code that is assigned to the legal entity.
+    6.  On the **Tax registration** FastTab, in the **Tax registration number** field, enter your company's tax registration number.
 
-6.  On the **Tax registration** FastTab, in the **Tax registration number** field, enter your company's tax registration number.
-
-&gt; !Note
-
-&gt; If you generate an Intrastat report for affiliates, in the **Tax registration number** field, enter the tax registration number of your parent company.
+>!Note
+>
+>If you generate an Intrastat report for affiliates, in the **Tax registration number** field, enter the tax registration number of your parent company.
 
 2.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest versions of the following Electronic reporting (ER) configurations for the Intrastat declaration:
 
 -   Intrastat model
-
 -   Intrastat report
-
 -   INSTAT XML
-
 -   INSTAT XML (DE)
 
 3.  Set up foreign trade parameters:
 
-<!-- -->
+    1.  In Dynamics 365 Finance, go to **Tax** &gt; **Setup** &gt; **Foreign trade parameters**.
 
-1.  In Dynamics 365 Finance, go to **Tax** &gt; **Setup** &gt; **Foreign trade parameters**.
+    2.  On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat XML (DE)**.
 
-2.  On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat XML (DE)**.
+    3.  In the **Report format mapping** field, select **Intrastat report**.
 
-3.  In the **Report format mapping** field, select **Intrastat report**.
+    4.  On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
 
-4.  On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
+    5.  In the **Transaction code** field, select the transaction code for property transfers. You use this code for transactions that produce actual or planned transfers of property against compensation (financial or other). You also use it for corrections.
 
-5.  In the **Transaction code** field, select the transaction code for property transfers. You use this code for transactions that produce actual or planned transfers of property against compensation (financial or other). You also use it for corrections.
+    6.  In the **Credit note** field, select the transaction code for the return of goods. You use this code for the return of goods after the transaction that was originally recorded under the transaction code.
 
-6.  In the **Credit note** field, select the transaction code for the return of goods. You use this code for the return of goods after the transaction that was originally recorded under the transaction code.
+    7.  In the **Authority** field, select the Intrastat authority.
 
-7.  In the **Authority** field, select the Intrastat authority.
-
-8.  Go to **Tax** &gt; **Indirect taxes** &gt; **Sales tax** &gt; **Sales tax authorities**, and enter the following information for the Intrastat authority that you selected in the previous step:
+    8.  Go to **Tax** &gt; **Indirect taxes** &gt; **Sales tax** &gt; **Sales tax authorities**, and enter the following information for the Intrastat authority that you selected in the previous step:
 
     -   Authority identification
-
     -   Address
-
     -   Contact information
 
 9.  On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country or region, in the **Country/region type** field, select **EU**, so that the country or region appears on your Intrastat report.
 
-<!-- -->
-
 4.  Set up region codes:
 
-<!-- -->
+    1.  Go to **Organization administration** &gt; **Global address book** &gt; **Addresses** &gt; **Address setup**.
 
-1.  Go to **Organization administration** &gt; **Global address book** &gt; **Addresses** &gt; **Address setup**.
+    2.  On the **State/province** tab, in the **Country/region** field, select **DEU**, and then select **Apply filter**.
 
-2.  On the **State/province** tab, in the **Country/region** field, select **DEU**, and then select **Apply filter**.
-
-3.  In the grid, select the state. Then, in the **Intrastat code** field, enter the unique Intrastat code.
-
-<!-- -->
+    3.  In the grid, select the state. Then, in the **Intrastat code** field, enter the unique Intrastat code.
 
 5.  Set up the address of origin for a product:
 
-<!-- -->
+    1.  Go to **Product information management** &gt; **Products** &gt; **Released products**.
 
-1.  Go to **Product information management** &gt; **Products** &gt; **Released products**.
+    2.  In the grid, select the product.
 
-2.  In the grid, select the product.
-
-3.  On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Country of origin** field, select **DEU**.
-
-<!-- -->
+    3.  On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Country of origin** field, select **DEU**.
 
 6.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For German Intrastat, select the following fields:
 
     -   Commodity
-
     -   Country/region
-
     -   Correction
-
     -   Direction
-
     -   Delivery terms
-
     -   Invoice
-
     -   Country/region of origin
-
     -   Port
-
     -   Country/region of sender
-
     -   State of sender
-
     -   Statistical procedure
-
     -   Transaction code
-
     -   Transport
-
     -   Tax exempt number
 
 ### Intrastat transfer
@@ -182,18 +154,11 @@ This example shows how to post arrivals and dispatches for Intrastat. It uses th
 
 1.  In [LCS](https://lcs.dynamics.com/Logon/Index), in
 
-2.  the Shared asset library, download the latest versions of the following ER configurations for the Intrastat declaration format
-
-<!-- -->
-
-1.  :
+2.  the Shared asset library, download the latest versions of the following ER configurations for the Intrastat declaration format:
 
 -   Intrastat model
-
 -   Intrastat report
-
 -   Intrastat XML
-
 -   Intrastat XML (DE)
 
 2.  Create transaction codes:
@@ -228,29 +193,25 @@ This example shows how to post arrivals and dispatches for Intrastat. It uses th
 
 5.  Set up foreign trade parameters:
 
-<!-- -->
+    1.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Foreign trade parameters**.
 
-1.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Foreign trade parameters**.
+    2.  On the **Intrastat** tab, on the **General** FastTab, in the **Transaction** **code** field, select **11**.
 
-2.  On the **Intrastat** tab, on the **General** FastTab, in the **Transaction** **code** field, select **11**.
+    3.  In the **Credit note** field, select **21**.
 
-3.  In the **Credit note** field, select **21**.
+    4.  In the **Authority** field, select **TA**.
 
-4.  In the **Authority** field, select **TA**.
+    5.  On the **Electronic reporting** FastTab, in the **File format mapping** field, select **INSTAT XML (DE)**.
 
-5.  On the **Electronic reporting** FastTab, in the **File format mapping** field, select **INSTAT XML (DE)**.
+    6.  In the **Report format mapping** field, select **Intrastat Report**.
 
-6.  In the **Report format mapping** field, select **Intrastat Report**.
+    7.  On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, make sure that **Intrastat** is selected.
 
-7.  On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, make sure that **Intrastat** is selected.
+    8.  On the **Country/region properties** tab, select **New**.
 
-8.  On the **Country/region properties** tab, select **New**.
+    9.  In the **Party country/region** field, select **FRA**.
 
-9.  In the **Party country/region** field, select **FRA**.
-
-10. In the **Country/region type** field, select **EU**.
-
-<!-- -->
+    10. In the **Country/region type** field, select **EU**.
 
 6.  Assign a commodity code to a product, and set the product's origin. The **Commodity code**, **Country/region of origin**, and **State of origin** fields will then automatically be set on sales orders and purchase orders when you select the product.
 
@@ -322,11 +283,11 @@ This example shows how to post arrivals and dispatches for Intrastat. It uses th
 
     8.  Select **OK** to close the **Intrastat (Transfer)** dialog box, and review the result. The line represents the sales order that you created earlier.
 
-![Line that represents the sales order on the Intrastat page](media/ intrastat_deu_1.png)
+![Line that represents the sales order on the Intrastat page](media/intrastat_deu_1.png)
 
 10. Select the transaction line, and then select the **General** tab to view more details.
 
-![Sales order details on the General tab of the Intrastat page](media/ intrastat_deu_2.png)
+![Sales order details on the General tab of the Intrastat page](media/intrastat_deu_2.png)
 
 11. Create a credit note by using a sales order:
 
@@ -368,11 +329,11 @@ This example shows how to post arrivals and dispatches for Intrastat. It uses th
 
     4.  Select **OK** to close the **Intrastat (Transfer)** dialog box, and review the result. A new line where the **Direction** field is set to **Arrivals** has been added. This line represents the physical return of goods.
 
-![Line for the physical return on goods on the Intrastat page](media/ intrastat_deu_3.png)
+![Line for the physical return on goods on the Intrastat page](media/intrastat_deu_3.png)
 
 13. Select the transaction line, and then select the **General** tab to view more details.
 
-![Details of the physical return of goods on the General tab of the Intrastat page](media/ intrastat_deu_4.png)
+![Details of the physical return of goods on the General tab of the Intrastat page](media/intrastat_deu_4.png)
 
 14. Create a correction by using a sales order:
 
@@ -408,21 +369,19 @@ This example shows how to post arrivals and dispatches for Intrastat. It uses th
 
 15. Transfer the transaction to the Intrastat journal, and review the result:
 
-<!-- -->
+    1.  Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
 
-1.  Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
-
-2.  On the Action Pane, select **Transfer**.
+    2.  On the Action Pane, select **Transfer**.
 
     1.  In the **Intrastat (Transfer)** dialog box, in the **Parameters** section, set the **Customer invoice** option to **Yes**.
 
-3.  Select **OK** to close the **Intrastat (Transfer)** dialog box, and review the result. A new line where a check mark appears in the **Correction** column has been added.
+    3.  Select **OK** to close the **Intrastat (Transfer)** dialog box, and review the result. A new line where a check mark appears in the **Correction** column has been added.
 
-![Line for the correction on the Intrastat page](media/ intrastat_deu_5.png)
+![Line for the correction on the Intrastat page](media/intrastat_deu_5.png)
 
 16. Select the transaction line, and then select the **General** tab to view more details.
 
-![Details of the correction on the General tab of the Intrastat page](media/ intrastat_deu_6.png)
+![Details of the correction on the General tab of the Intrastat page](media/intrastat_deu_6.png)
 
 17. On the Action Pane, select **Output** &gt; **Report**.
 
