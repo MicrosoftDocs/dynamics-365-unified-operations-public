@@ -31,48 +31,46 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.20. This version has a build number of 10.0.886 and is available on the following schedule:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.21. This version has a build number of 10.0.960 and is available on the following schedule:
 
-- **Preview of release:** May 2021
-- **General availability of release (self-update):** July 2021
-- **General availability of release (auto-update):** July 2021
+- **Preview of release:** August 2021
+- **General availability of release (self-update):** September 2021
+- **General availability of release (auto-update):** October 2021
 
 ## Features included in this release
 
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
+The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
 
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 | Feature area   | Feature                                                  | More information                                                                    |
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Product dimensions |  Configure product dimension values as swatches in Commerce headquarters.  |  [Configure product dimension values to display as swatches](../dev-itpro/dimensions-swatch.md)|
-| Product dimensions |  Configure display settings in Commerce headquarters. |  [Apply display settings for product dimensions](../dimension-settings.md) |
-| Point of sale (POS) | Return serial number-controlled products in point of sale (POS) | Use this feature to validate serialized items as part of the return process. <!--[Return serial number-controlled products in point of sale (POS)](../pos-serial-returns.md)--> |
-| Point of sale (POS) | Create returns in point of sale (POS) | This feature allows you to initiate returns for cash and carry or customer orders in the POS application. <!--[Create returns in point of sale (POS)](../pos-returns.md) --> |
-| Point of sale (POS) | [Store commerce app with Chromium rendering engine and integrated hardware support](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/store-commerce-app-chromium-rendering-engine-integrated-hardware-support)  |  [Store Commerce app in Microsoft Dynamics 365 Commerce (Preview)](../dev-itpro/store-commerce.md)  |
-| Point of sale (POS)  | [Support inventory adjustments from POS](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/support-inventory-adjustments-pos)  |   Use POS to adjust inventory in or out. |
-| Payments  | [Out-of-the-box support for wallet-style payment methods](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/out-of-box-support-wallet-style-payment-methods)  | [Wallet payment support](../wallets.md) |
-|  Payments |  [Refactored payment processing in storefront checkout](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/refactored-payment-processing-storefront-checkout)  | This feature reduces the number of authorization requests to the payments processor and adds better support for Strong Customer Authentication (SCA) in the European Union. |
-| E-commerce  |  [Enable order lookup for guest customers](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enable-order-lookup-guest-customers)   | This feature enables look up orders for guest checkouts. |
-|   E-commerce|  [Enhanced e-commerce product discovery to be inventory-aware](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhanced-e-commerce-product-discovery-be-inventory-aware)  | Enable a product inventory check to only allow products to be purchased if inventory is available. | 
-| E-commerce  |  [Enhancements to the e-commerce inventory availability lookup APIs](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/enhancements-e-commerce-inventory-availability-lookup-apis)  |  This feature provides enhancements to the GetEstimatedAvailability and GetEstimatedProductWarehouseAvailability APIs.  |
-|  E-commerce   |   [Immersive theme to showcase modern e-commerce site](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/immersive-theme-showcase-modern-e-commerce-site)   | Use this new theme to build modern, immersive experiences on your e-commerce site. |
-| Globalization |  [Adyen payment connector for Brazil](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/adyen-payment-connector-brazil)    |  Use the Dynamics 365 Payment Connector for Adyen to support payment operations in stores that are located in Brazil. | 
-|  Globalization |   [SAT integration for Brazil](/dynamics365-release-plan/2021wave1/commerce/dynamics365-commerce/sat-integration-brazil)  |  This feature enables fiscal registration of retail sales in a SAT (Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) device connected to a hardware station. | 
-| Globalization | Global configuration properties in Commerce site builder can be made visible, hidden, or disabled when specific Commerce features are turned on.  | [Configure site builder global configuration settings based on enabled features](../e-commerce-extensibility/config-settings-for-features.md) |
+|  B2B           |   [Grant and revoke B2B e-commerce business partner user admin privileges](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/grant-revoke-b2b-e-commerce-business-partner-user-admin-privileges.md)    |   [Manage business partner users on B2B e-commerce websites](../b2b/manage-b2b-users#edit-business-partner-user-details.md)   |
+|  B2B          |  [Support for catalogs in e-commerce channel](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/support-catalogs-e-commerce-channel.md)   |  Create partner-specific catalogs that reflect the products and special pricing that have been negotiated with the partner.   |
+|  Deployment   |   Apply updates and extensions to Commerce Scale Unit (cloud)  |  [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/Update-retail-channel.md)     |
+|  Extensibility  |  Remove Cloud Scale Unit extensions   |  [Remove Cloud Scale Unit extensions](../dev-itpro/retail-sdk/remove-csu-package.md)      |
+|  Point of sale (POS)  |  Prevent unintentional price calculation for commerce orders     |  [Customer orders in point of sale (POS)](customer-orders-overview.md)           |
+|  Point of sale (POS)  |   [Support inventory movement between in-store locations from POS](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/support-inventory-movement-between-in-store-locations-pos.md)   |  Enable inventory movements between in-store locations directly from the POS.   |
+|  Localizations        |   Prepayments in Dynamics 365 Commerce for Russia            |  [Prepayments in Dynamics 365 Commerce for Russia](../localizations/rus-commerce-prepayments.md)   |
+|  Localizations  |   Set up the Dynamics 365 Commerce localization for Russia       |   [Set up the Dynamics 365 Commerce localization for Russia](../localizations/rus-commerce-setup.md)  |
+|   Merchandizing   |  Inventory awareness on swatches  |  [Configure product dimension values to appear as swatches](../dev-itpro/dimensions-swatch.md)    |
+|   Targeting   |  [Customer segmentation and targeting](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/customer-segmentation-targeting.md)  |  [Device, market, and geolocation targeting](../targeting-overview.md)    |
+|  Performance  | [Enforce custom query change tracking configurations on retail transaction tables due to performance impacts](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enforce-custom-query-change-tracking-configurations-retail-transaction-tables-due-performance-impacts.md)   | This feature will improve Commerce performance when using the Data Management export framework combined with change tracking capabilities on retail transaction tables.  |
+| E-commerce   |   [Enhanced reordering experience in e-commerce](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enhanced-reordering-experience-e-commerce.md)  |   This feature introduces enhancements to the existing reordering ("buy it again") function for e-commerce sites.   |
+
 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
 
-Dynamics 365 Commerce 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
+Dynamics 365 Commerce 10.0.21 includes platform updates. To learn more, see [Platform updates for version 10.0.21 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 
 ### Bug fixes 
-For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=d0dad8eee2af234e8c288e2a7df14c579004518673d014be511f900cfed008f8).
+For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/).
 
 For Commerce-specific breaking changes, view the [Dynamics 365 Commerce online SDK FAQ](../e-commerce-extensibility/sdk-faq.md).
 
-### Dynamics 365: 2021 release wave 1 plan
+### Dynamics 365: 2021 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
