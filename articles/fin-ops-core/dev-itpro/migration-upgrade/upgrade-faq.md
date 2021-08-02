@@ -40,13 +40,13 @@ For optimal replication performance, we recommend that the source AX 2012 databa
 
 No, the SQL BACPAC and DACPAC process are no longer supported for AX 2012 data upgrades in sandbox environments. Customers must use the AX 2012 Database Upgrade Toolkit for Dynamics 365 to do data upgrades in sandbox environments.
 
-## I've upgraded an AX 2012 database in a DEV (Tier 1) environment and uploaded the upgraded BACPAC file into Lifecycle Services. However, I receive an error message when I then try to import the BACPAC file into a sandbox environment. How do I fix the error?
+## I've upgraded an AX 2012 database in a cloud hosted environment (dev) and uploaded the upgraded BACPAC file into Lifecycle Services. However, I receive an error message when I then try to import the BACPAC file into a sandbox environment. How do I fix the error?
 
 When you try to import an upgraded BACPAC file from Microsoft Dynamics Lifecycle Services (LCS) into a sandbox environment, you might receive the following error message:
 
 > Importing AX 2012 bacpac file into Dynamics 365 environment isn't supported as it would result in a loss of the imported data and would put the environment in a failed state.
 
-Validation that is done prevents a BACPAC file from being imported into a sandbox environment if your project implementation type is **AX2012 data upgrade**. You must use the AX 2012 Database Upgrade Toolkit for Dynamics 365 for data upgrade, and you must do the data upgrade in a sandbox environment.
+Validation is done to prevent a BACPAC file from being imported into a sandbox environment. For the AX 2012 database upload into a sandbox environment, you must use the AX 2012 Database Upgrade Toolkit for Dynamics 365, which utilizes SQL replication to transfer the data.
 
 ## Can I filter on the table data that will be replicated (for example, to limit specific records only for replication to the target database)?
 
