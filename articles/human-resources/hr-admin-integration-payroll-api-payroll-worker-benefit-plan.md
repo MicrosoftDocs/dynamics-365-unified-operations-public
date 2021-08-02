@@ -43,7 +43,7 @@ This entity provides information about the benefits plan for a given worker.
 | **Personnel number**</br>mshr_personnelnumber</br>*String* | Read-only</br>Required | The employee's unique personnel number. |
 | **Legal entity ID**</br>mshr_legalentityID</br>*String* | Read-only | Specifies the legal entity (company). |
 | **Period ID**</br>mshr_periodid</br>*String* | Read-only | The identifier of the period. |
-| **Plan ID**</br>mshr_planid</br>*String* | Read-only | The identifier ot the plan. |
+| **Plan ID**</br>mshr_planid</br>*String* | Read-only | The identifier of the plan. |
 | **Coverage option**</br>mshr_coverageoptionid</br>*String* | Read-only | Identification of the coverage option. |
 | **Deduction start date**</br>mshr_deductionstartdatetime</br>*Date time offset* | Read-only | Deduction start date. |
 | **Deduction end date**</br>mshr_deductionenddatetime</br>*Date time offset* | Read-only | Deduction end date. |
@@ -68,7 +68,7 @@ This entity provides information about the benefits plan for a given worker.
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_payrollworkerbenefitplanentities?$filter=mshr_personnelnumber eq '000020'
+GET [Organization URI]/api/data/v9.1/mshr_payrollworkerbenefitplanentities?$filter=mshr_personnelnumber eq '000020'
 ```
 
 **Response**
