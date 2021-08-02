@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic describes the optional request pipeline plugin hook which provides the ability to intercept the rendering request sent to the Node server.  This will allow the ability to redirect or send a response to the render request.  For example you may want to block requests coming from a specific IP range, redirect based on a geo location of a request or redirect from a retired category to another. 
 
 ## Request reader plugin
-A request reader plugin can be created with a CLI tool provided by the online SDK.  The plugin will have access to the request context information and can redirect the request or send a customized response.  Data action can be used within the plugin to fetch data if needed, which will cached and refreshed. The request hook will be executed before the server render process and is created with a **request reader plugin**.
+A request reader plugin can be created with a [CLI](cli-command-reference) tool provided by the online SDK.  The plugin will have access to the request context information and can redirect the request or send a customized response.  Data action can be used within the plugin to fetch data if needed, which will cached and refreshed. The request hook will be executed before the server render process and is created with a **request reader plugin**.
 
 ## Create a request reader plugin using the SDK CLI command
 The SDK provides a [CLI command](cli-command-reference) **create-request-hook** that will create the request hook file **src/requestHooks/initialRequest.hook.ts** file.  Only one request hook file can be created and used.  
