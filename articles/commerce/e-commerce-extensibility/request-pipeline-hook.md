@@ -68,7 +68,7 @@ The function in requestReaderPlugin can then be modified to intercept the reques
 ## Redirect and send actions
 The request reader interface supports two actions **redirect** and **send**, the below shows sample code for a request reader plugin.
 
-```json
+```ts
 const send:Msdyn365.requestHookRegistrar.IRequestReaderOutput = {
     action: Msdyn365.requestHookRegistrar.RequestReaderAction.send,
     parameters: ['<p>TEST</>];
@@ -91,16 +91,16 @@ const requestReaderPlugin = async (
     ctx: Msdyn365.IRequestContext
 ): Promise<Msdyn365.requestHookRegistrar.IRequestReaderOutput | undefined> => {
 
-    const redirect : Msdyn365.requestHookRegistrar.IRequestReaderOutput = {
-        action: Msdyn365.requestHookRegistrar.RequestReaderAction.redirect,
-        parameters: ['/category']
-    }
-
     const send : Msdyn365.requestHookRegistrar.IRequestReaderOutput = {
         action: Msdyn365.requestHookRegistrar.RequestReaderAction.send,
         parameters: ['<p>TEST</P>']
     }
     
+    const redirect : Msdyn365.requestHookRegistrar.IRequestReaderOutput = {
+        action: Msdyn365.requestHookRegistrar.RequestReaderAction.redirect,
+        parameters: ['/category']
+    }
+
     if (ctx.canonicalUrl == 'https://sampleUrl'){
         return redirect
     } else {
