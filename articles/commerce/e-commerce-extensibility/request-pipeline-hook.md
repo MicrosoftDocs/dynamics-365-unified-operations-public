@@ -50,7 +50,39 @@ const redirect:Msdyn365.requestHookRegistrar.IRequestReaderOutput = {
 
 If there is nothing returned from the plugin, the rendering engine will continue the rendering step, otherwise it will redirect or send the new response.
 
-The request reader plugin has an execution timeout default value of 500ms, and can be configured in [platform settings file](platform-settings.md) with the **RequestReaderPluginTimeoutInMs** property as shown in the below platform.settings.json example
+## Create a request reader plugin using the SDK CLI command
+The SDK provides a [CLI command](cli-command-reference) **create-request-hook** that will create the request hook file **src/requestHooks/initialRequest.hook.ts** file.  Only one request hook file can be created and used.  
+
+The below sample shows how to use the CLI command to create a request hook file.
+```
+yarn msdyn365 create-request-hook
+```
+
+The below code shows the default request hook file:
+```ts
+/*!
+ * Copyright (c) Microsoft Corporation.
+ * All rights reserved. See LICENSE in the project root for license information.
+ */
+
+import * as Msdyn365 from '@msdyn365-commerce/core';
+
+const requestReaderPlugin = async (
+    ctx: Msdyn365.IRequestContext
+): Promise<Msdyn365.requestHookRegistrar.IRequestReaderOutput | undefined> => {
+    return undefined;
+};
+
+Msdyn365.requestHookRegistrar.createInitialHook({
+    requestReaderPlugin: requestReaderPlugin
+});
+```
+
+The function in requestReaderPlugin can then need to be modified to intercept the request.  The only valid output in requestReaderPlugin will be Msdyn365.requestHookRegistrar.IRequestReaderOutput.
+
+
+## Request reader plugin timeout configuration
+The request reader plugin has an execution timeout default value of 500ms, and can be configured in [platform settings file](platform-settings.md) with the **RequestReaderPluginTimeoutInMs** property as shown in the below platform.settings.json example:
 
 ```json
 {
@@ -64,29 +96,6 @@ The request reader plugin has an execution timeout default value of 500ms, and c
 }
 ```
  
-Any error throwed from the the plugin or timeout will result in a 500 status code along with the error message. To suppress the error in a plugin, ensure a try/catch statement is used within the plugin. 
-
-## Create a request reader plugin using the SDK CLI command
-The SDK provides a [CLI command](cli-command-reference) **createRequestHook** that takes in a paramater for the name of the ts file and it will create the request hooks under the **src/requestHooks/** directory.  
-
-The below sample shows how to use the CLI command to create a new request hook named 'myRequestHook'.
-```
-yarn msdyn365 createRequestHook myRequestHook
-```
-
-The below file will be stored under the **src/requestHooks/** directory:
-```
-import * as Msdyn365 from '@msdyn365-commerce/core';
-
-const requestReaderPlugin = async (ctx: Msdyn365.IActionContext): Promise<Msdyn365.requestHookRegistrar.IRequestReaderOutput | undefined> => {
-       return undefined;
-};
-
-Msdyn365.requestHookRegistrar.creatInitialHook({
-    requestReaderPlugin: requestReaderPlugin
-    });
-```
-
-The function in requestReaderPlugin will then need to be modified to interrupt the request.  The only valid output in requestReaderPlugin will be Msdyn365.requestHookRegistrar.IRequestReaderOutput.
+Any error thrown from the the plugin or timeout will result in a 500 status code along with the error message. To suppress the error in a plugin, ensure a try/catch statement is used within the plugin. 
 
 
