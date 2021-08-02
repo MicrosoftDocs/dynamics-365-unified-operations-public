@@ -475,6 +475,10 @@
             href: hr-admin-integration-payroll-api-leave-type.md
           - name: Leave request
             href: hr-admin-integration-payroll-api-leave-request.md
+      - name: Benefits related entities
+        items:
+          - name: Payroll worker benefit plan
+            href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
       - name: Option sets
         items:
           - name: Gender
@@ -485,6 +489,11 @@
             href: hr-admin-integration-payroll-api-award-type.md
           - name: Process type
             href: hr-admin-integration-payroll-api-process-type.md                   
+          - name: Benefit plan type cover
+            href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
+          - name: Benefit employee plan status
+            href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
+
   - name: User Guide
     items:
     - name: Overview

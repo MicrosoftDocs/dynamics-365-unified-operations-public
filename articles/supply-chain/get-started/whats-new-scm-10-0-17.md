@@ -58,6 +58,8 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 - [Packing vs. storage dimensions](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - For more information, see [Set different dimensions for packing and storage](../warehousing/packing-vs-storage-dimensions.md).
 
+- [Parallel wave allocation](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/parallel-wave-allocation)<br> - For more information, see [Wave allocation](../warehousing/wave-allocation-method.md).
+
 - [Saved views for inventory and logistics](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - For more information, see [Standard saved views for Supply Chain Management](saved-views-scm.md).
 
 - [Schedule warehouse work creation](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-warehouse-work-creation)<br> - For more information, see [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md).
