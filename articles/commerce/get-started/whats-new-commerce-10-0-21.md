@@ -37,6 +37,20 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 - **General availability of release (self-update):** September 2021
 - **General availability of release (auto-update):** October 2021
 
+## Known deployment issue
+When deploying release 10.0.21 on IaaS, you may receive the following deployment warning:
+
+**Warning code:** 95017
+
+**Warning message:** Script [SetupDiagnostics] failed execution against VM
+
+The deployment will work despite the warning, however, the following known issues may occur in Lifecycle Services (LCS):
+
+-	On the **Environment monitoring** page, the **View detailed version information** link will not appear, so you won’t be able to see the specific versions of the modules installed in your environment. Without this data, subsequent hotfixes might fail because the process that applies hotfixes uses this data to verify that the module version prerequisites are met. Because it’s not possible to use the PEAP/Preview build in production or apply hotfixes, the impact should be minimal.
+-	The **Performance Metrics** and **Index Analysis** tabs on the **Environment Monitoring** page under SQL Insights won’t display any data. All other **Environment Monitoring** features will work as intended.
+-	The **Full System Diagnostics** page will not be accessible. The associated data about the status of the nightly collector runs and issues detected by its rules also won’t show up.
+
+
 ## Features included in this release
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
