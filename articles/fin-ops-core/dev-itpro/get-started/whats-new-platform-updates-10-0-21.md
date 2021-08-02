@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.21 of Finance and Operations apps.
 author: sericks007
-ms.date: 08/01/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,6 +36,22 @@ This topic lists the features that are included in the platform updates for vers
 - **Preview of release:** August 2021
 - **General availability of release (self-update):** September 2021
 - **General availability of release (auto-update):** October 2021
+
+## Known deployment issue
+When deploying release 10.0.21 on IaaS, you may receive the following deployment warning:
+
+**Warning code**
+95017
+
+**Warning message**
+Script [SetupDiagnostics] failed execution against VM
+
+The deployment will work despite the warning, however, the following known issues may occur in Lifecycle Services (LCS):
+
+-	On the **Environment monitoring** page, the **View detailed version information** link will not appear, so you won’t be able to see the specific versions of the modules installed in your environment. Without this data, subsequent hotfixes might fail because the process that applies hotfixes uses this data to verify that the module version prerequisites are met. Because it’s not possible to use the PEAP/Preview build in production or apply hotfixes, the impact should be minimal.
+-	The **Performance Metrics** and **Index Analysis** tabs on the **Environment Monitoring** page under SQL Insights won’t display any data. All other **Environment Monitoring** features will work as intended.
+-	The **Full System Diagnostics** page will not be accessible. The associated data about the status of the nightly collector runs and issues detected by its rules also won’t show up.
+
 
 ## Features included in this release
 
