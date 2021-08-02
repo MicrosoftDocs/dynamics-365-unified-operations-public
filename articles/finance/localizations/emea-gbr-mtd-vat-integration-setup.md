@@ -40,7 +40,7 @@ These tasks will prepare Finance to interoperate with the HMRC's web service to 
 - [Set up VAT registration number of the company reporting VAT](#vrn).
 - [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vatgroup).
 - [Define a sales tax settlement period](#settlement).
-- [Number sequences Electronic messages functionality](#sequences).
+- [Number sequences for Electronic messages functionality](#sequences).
 - [Document management parameters](#docmanagement).
 - [Set up security roles for electronic message processing](#processing).
 - [Set up security roles to interoperate with HMRC's MTD VAT web-service](#application).
@@ -170,7 +170,7 @@ and then import it into the **VAT Declaration Excel (UK)** format.
 
 It is [required by law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) in the UK to submit header data for the VAT (MTD) APIs. When the MTD VAT APIs are used, MTD-compatible software must submit HTTP fraud prevention headers that includes: client public IP, server public IP. For more information about how MTD VAT feature in Finance supports the requirement to send fraud prevention headers in MTD VAT Finance, see [Sending fraud prevention data](#headers) section of this topic.
 
-To enable Finance collecting client and server public IPs, you must setup **ExternalServiceEndpoints_LOOKUP** aaplication-specific parameter of **MTD VAT web request headers format (UK)** under **Electronic Messages framework model** in ER workspace.
+To enable Finance collecting client and server public IPs, starting from 10.0.22 version of Finance, you must setup **ExternalServiceEndpoints_LOOKUP** aaplication-specific parameter of **MTD VAT web request headers format (UK)** under **Electronic Messages framework model** in ER workspace.
 
 1. Go to **Electronic reporting** workspace, and then, in the configuration tree, select the **MTD VAT web request headers format (UK)** under **Electronic Messages framework model**. 
 2. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you want to use. Usually, Finance runs the latest version of the configuration available available in your system.
@@ -302,7 +302,7 @@ In case your company must report VAt return as a VAT group, make sure that all t
 
 ![Setup of data sources for a VAT group.](media/uk-mtd-populate-records-datasources.png)
 
-## <a id="sequences"></a>Number sequences Electronic messages functionality
+## <a id="sequences"></a>Number sequences for Electronic messages functionality
 
 To work with the Electronic messages functionality, you must define related number sequences. 
 
@@ -314,7 +314,7 @@ To work with the Electronic messages functionality, you must define related numb
 
 ## <a id="docmanagement"></a>Document management parameters
 
-Before you start to submit a VAT return to HMRC, you must make sure that the **JSON** file type is defined in the list of file types on the **File types** tab of the **Document management parameters** page (**Organization administration** \> **Document management** \> **Document management parameters**). If the **JSON** file type isn't in the list, add it.
+Before you start to submit a VAT return to HMRC, you must make sure that the **JSON** and **Excel** file types are defined in the list of file types on the **File types** tab of the **Document management parameters** page (**Organization administration** \> **Document management** \> **Document management parameters**). If the **JSON** file type isn't in the list, add it.
 
 ![JSON File type setup.](media/uk-mtd-json-file-type-setup.png)
 
@@ -347,7 +347,7 @@ If security roles aren't defined for a web application, only a system admin can 
 
 It is [required by law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) in the UK to submit header data for the VAT (MTD) APIs. When the MTD VAT APIs are used, MTD-compatible software must submit HTTP fraud prevention headers. This may include location information and other personal identifiers such as IP addresses. Your privacy is important to us. To learn more read our [Privacy Notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
 
-MTD feature in Finance supports fraud prevention headers required by HMRC (v.3.0) for **WEB_APP_VIA_SERVER** for requests executed in non-batch mode and **BATCH_PROCESS_DIRECT** for requests executed in batch mode. Table below represents general implementation details of the fraud pervention headers.
+MTD VAT feature in Finance supports fraud prevention headers required by HMRC (v.3.0 is supported starting from version 10.0.22 of Finance, KB4623487) for **WEB_APP_VIA_SERVER** for requests executed in non-batch mode and **BATCH_PROCESS_DIRECT** for requests executed in batch mode. Table below represents general implementation details of the fraud pervention headers.
 
 | **HTTP header**                  | **Description**                  | **Implementation details**                                    |
 |----------------------------------|----------------------------------|---------------------------------------------------------------|
