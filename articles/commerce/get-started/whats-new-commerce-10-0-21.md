@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.20 (August 2021)
-description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.20. 
+title: Preview features in Dynamics 365 Commerce 10.0.21 (October 2021)
+description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.21. 
 author: josaw1
-ms.date: 05/27/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,11 +22,11 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: josaw
-ms.search.validFrom: 2021-04-30 
-ms.dyn365.ops.version: 10.0.209
+ms.search.validFrom: 2021-08-31 
+ms.dyn365.ops.version: 10.0.21
 
 ---
-# What's new and changed in Dynamics 365 Commerce 10.0.20 (August 2021)
+# Preview features in in Dynamics 365 Commerce 10.0.21 (October 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
