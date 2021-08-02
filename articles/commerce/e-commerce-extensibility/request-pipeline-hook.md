@@ -130,6 +130,6 @@ The request reader plugin has an execution timeout default value of 500ms, and c
 }
 ```
  
-Any error thrown from the the plugin or timeout will result in a 500 status code along with the error message. To suppress the error in a plugin, ensure a try/catch statement is used within the plugin. 
+Any error thrown from the plugin or timeout will result in a 500 status code along with the error message. To suppress the error in a plugin, ensure a try/catch statement is used within the plugin. 
 
 
