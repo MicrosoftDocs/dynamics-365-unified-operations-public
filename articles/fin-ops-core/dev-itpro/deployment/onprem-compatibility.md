@@ -60,7 +60,7 @@ This section covers the following SQL Server components:
 | Microsoft SQL Server 2016 SP1 | Original release | 10.0.14       |
 
 > [!IMPORTANT]
-> Using multiple versions of Microsoft SQL Server 2019 throughout a single environment is not supported.
+> Using multiple versions of Microsoft SQL Server throughout a single environment is not supported.
 
 ## Minimum Azure Service Fabric runtime
 
