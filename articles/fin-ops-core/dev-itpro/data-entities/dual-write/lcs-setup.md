@@ -9,7 +9,7 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: 
-ms.search.validFrom: 2021-08-03
+ms.search.validFrom: 2020-01-06
 ---
 
 # Dual-write setup from Lifecycle Services
