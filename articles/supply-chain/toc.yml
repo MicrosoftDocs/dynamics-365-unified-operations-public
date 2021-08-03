@@ -1601,6 +1601,8 @@
           href: master-planning/planning-optimization/planning-optimization-overview.md
         - name: Get started with Planning Optimization
           href: master-planning/planning-optimization/get-started.md
+        - name: Planning Optimization release process and release history
+          href: master-planning/planning-optimization/release-process.md
         - name: Planning Optimization fit analysis
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
         - name: Parameters not used by Planning Optimization
