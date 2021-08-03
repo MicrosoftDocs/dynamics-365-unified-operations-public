@@ -1,7 +1,7 @@
 ---
 title: Dual-write setup from Lifecycle Services
 description: This topic explains how to set up a dual-write connection from Microsoft Dynamics Lifecycle Services (LCS).
-author: RamaKrishnamoorthy
+author: laneswenka
 ms.date: 05/11/2021
 ms.topic: article
 audience: Application User, IT Pro
@@ -9,7 +9,7 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: 
-ms.search.validFrom: 2020-01-06
+ms.search.validFrom: 2021-08-03
 ---
 
 # Dual-write setup from Lifecycle Services
@@ -47,7 +47,7 @@ Follow these steps to set up dual-write from LCS **Environment Details** page:
 
 7. Select **Link to Power Platform environment** to create a link between Dataverse and the current environment's databases. This typically takes less than 5 minutes.
 
-    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link to Power Platform environment.":::
+    ![Link to Power Platform environment](media/powerplat_integration_step3.png)
 
 8. When the linking is complete, a hyperlink is displayed. Use the link to sign in to the dual-write administration area in the Finance and Operations environment. From there, you can set up entity mappings.
 
@@ -67,7 +67,7 @@ To set up dual-write for an existing Dataverse environment, you must create a Mi
 It is possible that your Lifecycle Services environment is linked to one Dataverse instance, while Dual-write setup is linked to another Dataverse instance.  This can cause unexpected behavior, and could end up sending data to the wrong environment.  The recommended environment to use for Dual-write is the one that is created as part of Power Platform Integration, and long term this will be the only way to establish a link between environments.
 
 If your environment has a linking mismatch, a warning will be displayed in Lifecycle Services on your environment details page similar to below:
-:::image type="content" source="media/powerplat_integration_mismatchLink.png" width="400px" alt-text="Power Platform Integration Link Mismatched":::
+![Power Platform Integration Link Mismatched](media/powerplat_integration_mismatchLink.png)
 
 If you encounter this error there are two options, based on your needs:
 1. [Unlink via Dual-write setup and link to the correct Dataverse](relink-environments.md) as is specified on your LCS environment details page.  This is the ideal option as it can be done by you without Microsoft support.  
