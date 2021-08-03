@@ -66,7 +66,7 @@ To set up dual-write for an existing Dataverse environment, you must create a Mi
 
 It is possible that your Lifecycle Services environment is linked to one Dataverse instance, while Dual-write setup is linked to another Dataverse instance.  This can cause unexpected behavior, and could end up sending data to the wrong environment.  The recommended environment to use for Dual-write is the one that is created as part of Power Platform Integration, and long term this will be the only way to establish a link between environments.
 
-If your environment has a linking mismatch, a warning will be displayed in Lifecycle Services on your environment details page similar to below:
+If your environment has a linking mismatch, a warning will be displayed in Lifecycle Services on your environment details page similar to "Microsoft has detected that your environment is linked via Dual-write to a different destination than specified in Power Platform Integration, which is not recommended":
 ![Power Platform Integration Link Mismatched](media/powerplat_integration_mismatchLink.png)
 
 If you encounter this error there are two options, based on your needs:
