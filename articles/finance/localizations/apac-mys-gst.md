@@ -4,7 +4,7 @@
 title: Malaysia Goods and Services Tax
 description: This topic provides information about how to set up Goods and Services Tax (GST) and Sales and Service Tax (SST) for a Malaysian company.
 author: mrolecki
-ms.date: 05/17/2017
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,15 +27,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Malaysia Goods and Services Tax/ Sales and Service Tax 
+# Malaysia Goods and Services Tax/Sales and Service Tax 
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you set up Goods and Services Tax (GST)/ Sales and service tax (SST) for a Malaysian company. It also explains the functionality that's provided for GST/SST.
+This topic provides information that will help you set up Goods and Services Tax (GST)/Sales and service tax (SST) for a Malaysian company. This topic also explains the functionality that's provided for GST/SST.
 
 GST is a multi-stage tax on domestic consumption. GST is charged on all taxable supplies of goods and services in Malaysia, except those goods and services that are explicitly exempted. GST is also charged on the importation of goods and services into Malaysia.
 
-SST. Malaysia Government replaced GST with Sales and service tax from 1 September,2018. GST regime has been in place since 1 April, 2015, and was replaced with the sales and service tax.  
+The Malaysia Government replaced GST with SST starting 1 September,2018. The GST regime has been in place since 1 April, 2015.  
 
 ## Enabling the Malaysia GST/SST features
 
@@ -87,7 +87,7 @@ A sample tax invoice is provided that adds the following details to a standard s
 To print a GST invoice for a sales order, on the sales order header, select **GST invoice** as the invoice type. However, to print a commercial invoice, select **Invoice** as the invoice type. You can also print simplified invoices for sales orders by changing the value of the **GST invoice format** field on the **General ledger parameters** page to **Simplified invoice**. A sample simplified invoice is provided. This invoice differs from the sample full tax invoice in that it omits the invoice title, and the name and address of the recipient. The same functionality is available for free text invoices.
 
 Governed by the Sales Tax Act 2018 and the Service Tax Act 2018, the Sales Tax was a federal consumption tax imposed on a wide variety of goods while the Service Tax was levied on customers who consumed certain taxable services.
-According to these acts any amount expressed in a currency other than Malaysian Ringgit shall also be expressed in Malaysian Ringgit at the selling rate of exchange prevailing in Malaysia at the time of sale of tax taxable goods.
+According to these acts, any amount expressed in a currency other than Malaysian Ringgit shall also be expressed in Malaysian Ringgit at the selling rate of the prevailing exchange in Malaysia at the time of sale of tax taxable goods.
 
 ### Relief clauses on invoices
 
