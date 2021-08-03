@@ -66,7 +66,7 @@ Some features must be enabled using [Feature management](../../fin-ops/get-start
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://lcs.dynamics.com).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=605166).
 
 ### Dynamics 365: 2021 release wave 2 plan
 
