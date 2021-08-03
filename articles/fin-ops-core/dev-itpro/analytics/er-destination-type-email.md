@@ -58,9 +58,23 @@ To send one or more output files by email, follow these steps.
 
 ## Configure an email destination
 
-You can specify the email sender and email recipients, and you can edit the subject and body of the email message. You can set up constant text for the email subject and body, or you can use ER [formulas](er-formula-language.md) to dynamically create email texts.
+### Email content
 
-By default, an email is sent on behalf of the current user. To specify a different email sender, you must configure the **From** field.
+You can edit the subject and body of the email message.
+
+In the **Subject** field, enter the text of email subject that should appear in the subject field of an electronic message that is generated at runtime. In the **Body** field, enter the text of email body that should appear in the body field of an electronic message. You can set up constant text for the email subject and body, or you can use ER [formulas](er-formula-language.md) to dynamically create email texts at runtime. The configured formula must return a value of the [String](er-formula-supported-data-types-primitive.md#string) type.
+
+The message body of your email is composed depending on email client either in TEXT or HTML. You can use any layout, styling, and branding that HTML and inline Cascading Style Sheets (CSS) allow for. 
+
+> [!NOTE]
+> Email clients impose layout and style limitations that might require adjustments to the HTML and CSS that you use for the message body. We recommend that you familiarize yourself with the best practices for creating HTML that will be supported by the most popular email clients.
+
+> [!NOTE]
+> Use proper encoding to implement carriage return depending on body formatting. For more, see the definition of the [String](er-formula-supported-data-types-primitive.md#string) data type.
+
+### Email addresses
+
+You can specify the email sender and email recipients By default, an email is sent on behalf of the current user. To specify a different email sender, you must configure the **From** field.
 
 > [!NOTE]
 > When an email destination is configured, the **From** field is visible only to users who have the `ERFormatDestinationSenderEmailConfigure` security privilege, **Configure the sender email address for ER format destinations**.
