@@ -243,26 +243,28 @@ When you encounter issues with live sync where only a partial data is synchroniz
     
  ![Live sync troubleshooting](media/live-sync-troubleshooting-3.png)
   
-**Here is a sample scenario of an address field update not sent from  Finance and Operations apps to Dataverse**
-In Finance and Operations apps, when there is an update to the address for a contact record, the change does not sync to Dataverse, then there must not have been a record in BusinessEventsDefinition table with the combination of the table affected and the entity.
+**Here is a sample scenario of an address field update not sent from Finance and Operations apps to Dataverse**
+In Finance and Operations apps, when there is an update to the address for a contact record. The address change does not sync to Dataverse. 
 
-This is because smmContactpersonCDSV2Entity does not have LogisticsPostalAddress table directly as the data source. smmContactpersonCDSV2Entity has smmContactPersonV2Entity as the data source and then smmContactPersonV2Entity has LogisticsPostalAddressBaseEntity as the data source. LogisticsPostalAddress table is data source for LogisticsPostalAddressBaseEntity .
+**Reason:** There must not have been a record in BusinessEventsDefinition table with the combination of the table affected and the entity.
+
+**Cause:** smmContactpersonCDSV2Entity entity does not have LogisticsPostalAddress table directly as the data source. smmContactpersonCDSV2Entity has smmContactPersonV2Entity as the data source and then smmContactPersonV2Entity has LogisticsPostalAddressBaseEntity as the data source. LogisticsPostalAddress table is data source for LogisticsPostalAddressBaseEntity .
  
-This can happen in certain non-standard patterns, such as cases where the table being modified in F&O isn't "obviously" linked to the entity that contains it. For example, on the smmContactPersonCDSV2Entity, the "primary address" stuff is computed based on a bunch of raw code and SQL. The DW framework does its best effort to understand how a change to an underlying table maps back to entities, which is usually sufficient. But in some cases the link is so complex we need to just tell the framework. You have to make sure you have the RecId of the related table available on the entity directly, and then add a static method to say “monitor this table for changes”.  
+Similar situation can happen in certain non-standard patterns, such as cases where the table being modified in Finance and Operations apps isn't "obviously" linked to the entity that contains it. For example, on the smmContactPersonCDSV2Entity, the "primary address" stuff is computed based on a bunch of raw code and SQL. The dual-write framework does its best effort to understand how a change to an underlying table maps back to entities, which is usually sufficient. But in some cases the link is so complex we need to just tell the framework. You have to make sure you have the RecId of the related table available on the entity directly, and then add a static method to say “monitor this table for changes”.  
  
 See smmContactPersonCDSV2Entity::getEntityDataSourceToFieldMapping() for such an example. CustCustomerV3entity and VendVendorV2Entity have already been altered to handle this, so you can refer these entities as well for this pattern.
  
-In this example the address update on the contact does not trigger an update to Dataverse and below are the steps followed to resolve this issue:
+**Resolution:** Please follow these steps to resolve the issue:
  
-Add a PrimaryPostalAddressRecId field to the smmContactPersonV2Entity in AppMU. Make it internal.
+1. Add a PrimaryPostalAddressRecId field to the smmContactPersonV2Entity in AppMU. Make it internal.
 
 ![Troubleshoot live issues 1](media/Troubleshoot_live_sync_issue_1.png)
 
-1.	Add the same field to smmContactPersonCDSV2Entity
+2.	Add the same field to smmContactPersonCDSV2Entity
 
 ![Troubleshoot live issues 1](media/Troubleshoot_live_sync_issue_2.png)
 
-2.	Add this method to the smmContactPersonCDSV2Entity class.
+3.	Add this method to the smmContactPersonCDSV2Entity class.
 
     public static container getEntityDataSourceToFieldMapping(container mapping)
     {
@@ -271,11 +273,11 @@ Add a PrimaryPostalAddressRecId field to the smmContactPersonV2Entity in AppMU. 
         return mapping;
     }
  
-3.	Sync DB and build the application.
+4.	Sync DB and build the application.
 
-4.	Stop all the dual-write maps that are created on the entity smmContactPersonCDSV2Entity.
+5.	Stop all the dual-write maps that are created on the entity smmContactPersonCDSV2Entity.
 
-5.	Start the map and you will see the new table (LogisticsPostalAddress in this example) you have started to track with the above code in the column 'RefTableName' for the row with refentityname 'smmContactPersonCDSV2Entity' in the BusinessEventsDefinition table.
+6.	Start the map and you will see the new table (LogisticsPostalAddress in this example) you have started to track with the above code in the column 'RefTableName' for the row with refentityname 'smmContactPersonCDSV2Entity' in the BusinessEventsDefinition table.
 
      
 ## Error while creating a record where multiple records are sent from FinOps to CDS in the same batch
