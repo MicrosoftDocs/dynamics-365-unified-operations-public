@@ -2607,6 +2607,8 @@
         href: rebate-management/rebate-management-overview.md
       - name: Set up and configure the Rebate management module
         items:
+        - name: Turn on the Rebate management module for your system
+          href: rebate-management/rebate-management-enable.md
         - name: Rebate management parameters
           href: rebate-management/rebate-management-parameters.md
         - name: Rebate management deal workflows
@@ -2623,6 +2625,8 @@
         href: rebate-management/rebate-management-deals.md
       - name: Process, review, and post rebates
         href: rebate-management/process-review-post.md
+      - name: Manage deductions using the deduction workbench
+        href: rebate-management/deduction-workbench.md
     - name: Sales and marketing
       items:
       - name: Sales and marketing overview
