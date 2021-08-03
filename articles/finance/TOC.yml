@@ -1518,6 +1518,8 @@
             href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
           - name: Get started with Tax Calculation
             href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+          - name: Sales tax applicability and sales tax group determination logic
+            href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
           - name: Tax feature support for transfer orders
             href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
           - name: Calculating tax on top of price when Prices include taxes is enabled
@@ -2174,6 +2176,8 @@
           href: localizations/tasks/de-00002-depreciation.md
         - name: Electronic transmission of VAT declaration (ELSTER)
           href: localizations/tasks/de-00003-electronic-transmission-elster.md
+        - name: German Intrastat
+          href: localizations/emea-deu-intrastat.md
         - name: VAT declaration for Germany
           href: localizations/emea-de-vat-declaration.md
         - name: Customer electronic invoices report

@@ -65,6 +65,7 @@ The following table shows the electronic invoicing features that are generally a
 | Belgium        | Belgian electronic invoice (BE)      | Sales invoices and project invoices |
 | Brazil         | Brazilian NF-e (BR)                  | Fiscal document model 55, correction letters, cancellations, and discards |
 | Brazil         | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
+| Brazil         | Brazilian NF-e import from e-mail (BR) | Fiscal document model 55 |
 | Denmark        | Danish electronic invoice (DK)       | Sales invoices and project invoices |
 | Egypt          | Egyptian electronic invoice (EG)     | Sales invoices and project invoices |
 | Estonia        | Estonian electronic invoice (EE)     | Sales invoices and project invoices |
@@ -76,6 +77,7 @@ The following table shows the electronic invoicing features that are generally a
 | Norway         | Norwegian electronic invoice (NO)    | Sales invoices and project invoices |
 | Spain          | Spanish electronic invoice (ES)      | Sales invoices and project invoices |
 | Europe         | PEPPOL electronic invoice            | PEPPOL sales invoices and project invoices |
+| Europe         | PEPPOL vendor invoice                | PEPPOL import vendor invoices |
 
 ### Preview features
 

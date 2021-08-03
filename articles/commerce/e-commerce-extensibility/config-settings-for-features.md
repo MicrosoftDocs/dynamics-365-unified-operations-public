@@ -36,7 +36,7 @@ Global configuration properties that are available at **Site settings \> Extensi
 
 ## Usage
 
-To set a specific configuration property so that it's visible, hidden, or disabled, add a list of names of Dynamics 365 feature flags in the **hiddenWithFeatureFlags** and **disabledWithFeatureFlags** properties, and specify a value of **"ON"** or **"OFF"** for each. If you add more than one feature flag name, the logical "OR" operator determines whether a configuration property is visible or hidden. For example, you add both **"FeatureName1"** and **"FeatureName2"** in the **hiddenWithFeatureFlags** property, and specify a value of **"ON"** for both. In this case, the related configuration property will be visible if either of the two features is turned on in Commerce headquarters.
+To set a specific configuration property so that it's visible, hidden, or disabled, add a list of names of Dynamics 365 feature flags in the **hiddenWithFeatureFlags** and **disabledWithFeatureFlags** properties, and specify a value of **"ON"** or **"OFF"** for each. If you add more than one feature flag name, the logical "OR" operator determines whether a configuration property is visible or hidden. For example, you add both **"FeatureName1"** and **"FeatureName2"** in the **hiddenWithFeatureFlags** property, and specify a value of **"ON"** for both. In this case, the related configuration property will be hidden if either of the two features is turned on in Commerce headquarters. The feature will be visible if both features are turned off in Commerce headquarters.
 
 ### Property schema
 
@@ -50,7 +50,7 @@ disabledWithFeatureFlags: {"<FeatureName1>": "ON/OFF", "<FeatureName2>": "ON/OFF
 
 ## Make a configuration property visible in the app.settings.json file when a specific feature is turned on
 
-The following example shows how the **hiddenWithFeatureFlags** property can be used inside the app settings file. In this example, the **b2bQuantityMultiple** configuration property will be visible in site builder only if the **B2B\_INVENTORY\_MANAGEMENT** feature is turned on in Commerce headquarters.
+The following example shows how the **hiddenWithFeatureFlags** property can be used inside the app settings file. In this example, the **b2bQuantityMultiple** configuration property will be visible in site builder only if the **B2B\_INVENTORY\_MANAGEMENT** feature is turned off in Commerce headquarters.
 
 ```json
 { 
