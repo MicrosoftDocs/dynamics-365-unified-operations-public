@@ -115,7 +115,7 @@ To set up your counting reason codes:
     > [!Note]
     > When you post a counting journal that has a counting reason code with an offset account defined, the value will be posted against the assigned **Offset account** rather than the default inventory posting profile account.
 
-### Set up counting reason code groups
+### <a name="reason-groups"></a>Set up counting reason code groups
 
 *Counting reason code groups* can be used as part of the Warehouse Management mobile app *Adjustment in* and *Adjustment out* menu items to limit the list of counting reason codes. (For more information about counting reason code groups, see [Set up mobile device menu items for adjustment in and adjustment out](#setup-adjustment-in-out) later in this topic.)
 
@@ -148,7 +148,7 @@ To set up a mobile device menu item for a counting process:
 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
 1. Select the relevant menu item from the list pane (or create a new one).
-1. On the **Cycle count** tab, select **Cycle counting**. <!--KFM: I don't see this. Do you mean the Action Pane? Similar settings are *sometimes* available on the **General** tab. Not sure... -->
+1. On the Action Pane, select **Cycle counting**.
 1. In the **Default counting reason code** field, set the default reason code that should be recorded when counting is done by using the mobile device menu item.
 1. In the **Display counting reason code** field, select one of the following values:
     - *Line* – Shows the reason code after each variance is recorded.
@@ -163,18 +163,21 @@ To set up a mobile device menu item for a counting process:
 To set up a mobile device menu item for adjustment in or adjustment out:
 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
-1. Select **Adjustment in** or **Adjustment out**. <!--KFM: Where can I select this? Am I actually creating a new menu item here? -->
+1. Select **New** on the Action Pane to create a new menu item.
+1. Enter a **Mobile item name** and **Title**.
+1. Set **Mode** to *Work*.
 1. Set the **Use existing work** option to *No*.
-1. In the **Work creation process** field, select *Adjustment in* or *Adjustment out*. Either of these settings will add the following fields to the **General** FastTab: 
+1. In the **Work creation process** field, select *Adjustment in* or *Adjustment out*. Either of these settings will add the following fields to the **General** FastTab:
+    - **Use process guide** – If you are creating an *Adjustment out* process, be sure to set **Use process guide** to *Yes*. If you are creating an *Adjustment out* process, this option is always set to *Yes*.
     - **Default counting reason code** – Set the default reason code that should be recorded when counting is done by using the mobile device menu item.
     - **Display counting reason code** – Select one of the following values:
         - *Line* – Shows the reason code after each variance is recorded.
         - *Hide* – Doesn't show the reason code.
     - **Edit counting reason code** – Set to *Yes* to allow the worker to edit the reason code when it's shown on the mobile device during counting. Set to *No* to prevent the worker from editing the code.
-    - **Counting reason code group** <!--KFM: Describe this setting. -->
+    - **Counting reason code group** – Select a reason code group if you want to limit the list of options presented to workers. See [Set up counting reason code groups](#reason-groups) the previous section for details about how to set up these groups. 
 
 > [!Note]
-> For *Adjustment in* and *Adjustment out* menu items that have **Use process guide** enabled, when you are assigning a **Counting reason code group**, you can get a limited list of the counting reason codes as part of the Warehouse Management mobile app processing. <!--KFM: This isn't clear. It might make more sense to describe this in the field list in the above procedure. -->
+> For *Adjustment in* and *Adjustment out* menu items that have **Use process guide** enabled, when you are assigning a **Counting reason code group**, you can get a limited list of the counting reason codes as part of the Warehouse Management mobile app processing.
 >
 > The **Use process guide** option can also help prevent large adjustment quantities from occurring by mistake (which can happen, for example, if a worker accidentally scans a barcode of an item number rather than a quantity value). To set this up, enable the **Use process guide** option for each relevant menu item, and then define an **Adjustment quantity limit** for each relevant warehouse worker (at **Warehouse management \> Setup \> Worker**) to establish the maximum adjustment quantity each worker can register.
 
@@ -186,7 +189,7 @@ When workers are using the Warehouse Management mobile app, the reason codes are
 
 Before a count is approved, the worker can change the reason code that is associated with the count. When the count is approved, the reason code is entered on the counting journal lines.
 
-#### Modify cycle count approvals
+#### Modify reason codes for cycle count approvals
 
 To modify a cycle count approval:
 
@@ -197,11 +200,11 @@ To modify a cycle count approval:
 Reason codes are added to the journal lines in counting journals of the *Counting journal* type.
 
 1. Go to **Inventory management** \> **Journal entries** \> **Item counting** \> **Counting**.
-2. In the line details of the counting journal, in the **Counting reason code** field, select an option. <!--KFM: What are we doing here? What is this procedure for? What option might I choose? -->
+2. In the line details of the counting journal, in the **Counting reason code** field, select the reason code that matches your current situation.
 
-### View the counting history as it's recorded by reason codes
+### View the reason codes recorded in the counting history
 
-To view the counting history as it's recorded by reason codes: <!--KFM: I don't understand what we are doing here. -->
+To view the reason codes recorded in the counting history:
 
 1. Go to **Inventory management** \> **Inquiries and reports** \> **Counting history**.
 1. Select an item count record in the list pane.
