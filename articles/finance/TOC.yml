@@ -444,6 +444,8 @@
           href: accounts-receivable/tasks/review-collections-information.md
         - name: Collections process automation
           href: accounts-receivable/collections-process-automate.md
+        - name: Configure Collections process automation 
+          href: accounts-receivable/collections-process-automate.md
         - name: Credit management setup
           href: accounts-receivable/cm-credit-mgmt-setup.md
         - name: Credit management setup information
