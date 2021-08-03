@@ -88,7 +88,12 @@ On the **Allocation keys** tab you can set the **Forecast algorithm parameters**
 - **Maximum forecasted value**: Specifies the maximum value to use for predictions. Format: +1E[n] or numeric constant.
 - **Minimum forecasted value**: Specifies the minimum value to use for predictions. Format: -1E[n] or numeric constant.
 - **Missing value substitution**: Specifies how gaps in historical data are filled. Options: numeric value, MEAN, PREVIOUS, INTERPOLATE LINEAR, INTERPOLATE POLYNOMIAL.
-- **Missing value substitution scope**: Specifies whether the value substitution applies only to the data range of each individual granularity attribute, or to the entire dataset. Options: GRANULARITY_ATTRIBUTE(default), GLOBAL.
+- **Missing value substitution scope**: Specifies whether the value substitution applies only to the date range of each individual granularity attribute, or to the entire dataset. Options: GRANULARITY_ATTRIBUTE(default), GLOBAL, HISTORY_DATE_RANGE. Depending on the selected option, the system uses following date range during filling in gaps in historical data:
+    - GRANULARITY_ATTRIBUTE - The system uses date range of the currently processed granularity attribute.
+      > [!NOTE]
+      > A granularity attribute is a combination of forecast dimensions against which the forecast is done. You can define forecast dimensions on the **Demand forecasting parameters** page.
+	- GLOBAL - The system uses the full range of dates of all granularity attributes.
+	- HISTORY_DATE_RANGE - The system uses specific date range defined by **From date** and **To date** fields from the **Historical horizon** field group of the **Generate statistical baseline forecast** dialog box.
 - **Seasonality hint**: For seasonal data, provide a hint to the forecasting model to improve forecast accuracy. Format: integer number, representing the number of buckets a demand pattern repeats itself. For example, enter "6" for data that repeats itself every 6 months.
 - **Test set size percentage**: Percentage of historical data to be used as a test set for forecast accuracy calculation. 
 
