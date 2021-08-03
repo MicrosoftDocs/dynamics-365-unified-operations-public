@@ -4,7 +4,7 @@
 title: Sales tax applicability and sales tax group determination logic
 description: This topic explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
 author: epodkolz
-ms.date: 07/26/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -42,7 +42,7 @@ Before the 10.0.21 update, the Tax calculation service used straightforward logi
 2. Check each row until a matching condition is found.
 3. Stop the search.
 
-In the 10.0.21 update, the applicability logic tries to match the condition that hits the most input fields. Each field that has a value has a *weight* of 10. A condition that has a higher total weight has a higher priority.
+In the 10.0.21 update, the applicability logic tries to match the condition that includes the most input fields. Each field that has a value has a *weight* of 10. A condition that has a higher total weight has a higher priority.
 
 ### Example
 
