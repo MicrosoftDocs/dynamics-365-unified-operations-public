@@ -2,7 +2,7 @@
 # required metadata
 
 title: Request pipeline plug-in hook file
-description: This topic describes request pipeline hook files in Microsoft Dynamics 365 Commerce that can interrupt rendering requests sent to the Node server and redirect or send responses to rendering requests. 
+description: This topic explains how to create and configure request pipeline plug-in hooks in Microsoft Dynamics 365 Commerce that can interrupt rendering requests sent to the Node server and redirect or send responses to rendering requests. 
 author: samjarawan
 ms.date: 08/03/2021
 ms.topic: article
@@ -26,27 +26,26 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Request pipeline plug-in hook file
+# Request pipeline plug-in hook
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes request pipeline hook files in Microsoft Dynamics 365 Commerce that can interrupt rendering requests sent to the Node server and redirect or send responses to rendering requests. For example, you may want to block requests coming from a specific IP address range, redirect requests based on the geolocation of a request, or redirect requests from a retired category. 
+This topic explains how to create and configure request pipeline plug-in hooks in Microsoft Dynamics 365 Commerce that can interrupt rendering requests sent to the Node server and redirect or send responses to rendering requests. For example, you may want to block requests coming from a specific IP address range, redirect requests based on the geolocation of a request, or redirect requests from a retired category. 
 
-## Request reader plug-in
+## Create a request pipeline plug-in hook using the SDK CLI command
 
-A request reader plug-in can be created with a [CLI](cli-command-reference.md) tool provided by the online software development kit (SDK). The plug-in has API access to request context information and can redirect requests or send customized responses. Data actions can be used within the plug-in to fetch data if needed, and use [data action caching](data-action-cache-settings.md) for better performance. The request hook will be executed before the server render process and is created with a request reader plug-in.
+The online software development kit (SDK) provides a **create-request-hook** [command line interface (CLI)](cli-command-reference.md)) command that creates a request pipeline plug-in hook file named **src/requestHooks/initialRequest.hook.ts**. Only one request pipeline plug-in hook file can be created and used.  
 
-## Create a request reader plug-in using the SDK CLI command
+The plug-in has API access to request context information and can redirect requests or send customized responses. Data actions can be used within the plug-in to fetch data if needed, and use [data action caching](data-action-cache-settings.md) for better performance. Request hooks are executed before the server render process.
 
-The SDK provides a [CLI command](cli-command-reference.md) **create-request-hook** that will create the request hook file **src/requestHooks/initialRequest.hook.ts** file. Only one request hook file can be created and used.  
-
-The following example shows how to use the CLI command to create a request hook file.
+The following example shows the CLI command to create a request pipeline plug-in hook file.
 
 ```bash
 yarn msdyn365 create-request-hook
 ```
 
-The code below shows the default request hook file result from running the above CLI command:
+The following code shows the contents of the default request pipeline plug-in hook file created from running the **create-request-hook** CLI command.
+
 ```ts
 /*!
  * Copyright (c) Microsoft Corporation.
@@ -66,11 +65,11 @@ Msdyn365.requestHookRegistrar.createInitialHook({
 });
 ```
 
-The **requestReaderPlugin** function can then be modified to intercept the request. The only valid output from the **requestReaderPlugin** function is "Msdyn365.requestHookRegistrar.IRequestReaderOutput."
+The **requestReaderPlugin** function can then be modified to intercept requests. The only valid output from the **requestReaderPlugin** function is **Msdyn365.requestHookRegistrar.IRequestReaderOutput**.
 
 ## Configure redirect and send actions
 
-The request reader interface supports two actions **redirect** and **send**, the below shows sample code for a request reader plug-in.
+The plug-in interface supports two actions: **redirect** and **send** These actions are shown in the following example code.
 
 ```ts
 const send:Msdyn365.requestHookRegistrar.IRequestReaderOutput = {
@@ -82,7 +81,7 @@ const redirect:Msdyn365.requestHookRegistrar.IRequestReaderOutput = {
     parameters: ['https://www.sample_redirect_URL.com'];
 };
 ```
-The above actions can be manually added to the plug-in file as shown in the below example:
+The **redirect** and **send** actions can be manually added to the plug-in file as shown in the following example:
 
 ```ts
 /*!
@@ -118,11 +117,11 @@ Msdyn365.requestHookRegistrar.creatInitialHook({
 });
 ```
 
-If there is nothing returned from the plug-in, the rendering engine will continue the rendering step, otherwise it will redirect or send the new response.
+If nothing is returned from the plug-in the rendering engine will continue the rendering step, otherwise it will redirect or send a new response.
 
-## Configure request reader plug-in timeout
+## Configure plug-in timeout
 
-The request reader plug-in has an execution timeout default value of 500ms, and can be configured in [platform settings file](platform-settings.md) with the **RequestReaderPluginTimeoutInMs** property as shown in the below platform.settings.json example:
+The request pipeline plug-in hook has a default execution timeout value of 500 milliseconds. The timeout value can be configured in the **RequestReaderPluginTimeoutInMs** property of the [platform settings file](platform-settings.md), as shown in the following example from a **platform.settings.json** file.
 
 ```json
 {
@@ -136,11 +135,15 @@ The request reader plug-in has an execution timeout default value of 500ms, and 
 }
 ```
  
-Any error thrown from the plug-in or timeout will result in a 500 status code along with the error message. To suppress the error in a plug-in, ensure a try/catch statement is used within the plug-in. 
+Any errors generated from the plug-in or timeout will have a 500 status code. To suppress this type of error, ensure that a try/catch statement is used within the plug-in. 
 
 ## Additional resources
 
 [CLI command reference](cli-command-reference.md)
+
+[Data action caching settings](data-action-cache-settings.md)
+
+[Platform settings file](platform-settings.md)
 
 
 
