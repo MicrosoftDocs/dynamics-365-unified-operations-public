@@ -30,11 +30,11 @@ A customer who is owed a rebate can decide not to wait for a rebate payout. Inst
 
 You can use the deduction workbench together with the old deduction management capabilities of Supply Chain Management, even if you aren't using the **Rebate management** module. However, you must first prepare your system as described in this section.
 
-Before you can use the deduction workbench, you must complete the setup tasks that are described in [Set up deduction management](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-deduction-management). You should also have some type of rebate agreement set up for the customer: either a customer rebate, as described in [Setting up and maintaining customer rebates](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-customer-rebates), or a trade allowance rebate.
+Before you can use the deduction workbench, you must complete the setup tasks that are described in [Set up deduction management](/dynamicsax-2012/appuser-itpro/set-up-deduction-management). You should also have some type of rebate agreement set up for the customer: either a customer rebate, as described in [Setting up and maintaining customer rebates](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-customer-rebates), or a trade allowance rebate.
 
 If you're applying a deduction to a customer rebate, you must complete these tasks:
 
-- [Set up your customer rebates](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-customer-rebates).
+- [Set up your customer rebates](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-customer-rebates).
 - Approve and process the rebate, so that you can use the deduction workbench.
 
 If you're applying a deduction to a trade allowance rebate, you must complete these tasks:

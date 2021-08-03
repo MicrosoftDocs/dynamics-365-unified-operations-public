@@ -221,7 +221,7 @@ To view and edit Rebate management transactions by using the rebate workbench, f
 1. The **Rebate workbench** page shows a list of the transactions. Each transaction provides relevant details. These details vary, depending on the transaction type. You can perform the following actions on this page:
 
     - To view more information about any transaction, select it, and then select the **General**, **Financial dimension**, or **Dimension** tab.
-    - If you're using a claims process, you can mark transactions as either claimed or unclaimed. Select the relevant rows, and then, on the Action Pane, on the **Rebate workbench** tab, select one of the following commands. (You enable claims processes on the [**Rebate management parameters** page](rebate-management-parameters).)
+    - If you're using a claims process, you can mark transactions as either claimed or unclaimed. Select the relevant rows, and then, on the Action Pane, on the **Rebate workbench** tab, select one of the following commands. (You enable claims processes on the [**Rebate management parameters**](rebate-management-parameters.md) page.)
 
         - **Set claimed** – Mark the selected transactions as claimed.
         - **Set unclaimed** – Mark the selected transactions as unclaimed.
