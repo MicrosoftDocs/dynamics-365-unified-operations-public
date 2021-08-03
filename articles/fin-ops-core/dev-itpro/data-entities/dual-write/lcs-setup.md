@@ -62,4 +62,15 @@ To set up dual-write for an existing Dataverse environment, you must create a Mi
 > [!NOTE]
 > You can't unlink environments by using LCS. To unlink an environment, open the **Data integration** workspace in the Finance and Operations environment, and then select **Unlink**.
 
+## Linking mismatch
+
+It is possible that your Lifecycle Services environment is linked to one Dataverse instance, while Dual-write setup is linked to another Dataverse instance.  This can cause unexpected behavior, and could end up sending data to the wrong environment.  The recommended environment to use for Dual-write is the one that is created as part of Power Platform Integration, and long term this will be the only way to establish a link between environments.
+
+If your environment has a linking mismatch, a warning will be displayed in Lifecycle Services on your environment details page similar to below:
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" width="400px" alt-text="Power Platform Integration Link Mismatched":::
+
+If you encounter this error there are two options, based on your needs:
+1. [Unlink via Dual-write setup and link to the correct Dataverse](relink-environments.md) as is specified on your LCS environment details page.  This is the ideal option as it can be done by you without Microsoft support.  
+2. If you would prefer to keep your link in Dual-write, you can ask for help via Microsoft Support to change the Power Platform Integration to use your existing Dataverse environment as documented in the section above.  
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
