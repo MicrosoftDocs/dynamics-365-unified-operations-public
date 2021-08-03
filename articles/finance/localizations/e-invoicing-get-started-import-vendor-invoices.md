@@ -38,7 +38,7 @@ This topic provides information that will help you get started with importing ve
 ## Set up vendor invoice import in RCS
 To set up vendor invoice import in RCS, follow these steps:
 
-1. Consult the list of [generally available Electronic invoicing features](dynamics365/finance/localizations/e-invoicing-configuration-rcs?toc=/dynamics365/finance/toc.json#generally-available-features).
+1. Consult the list of [generally available Electronic invoicing features](e-invoicing-configuration-rcs.md#generally-available-features).
 2. Select and import the Electronic invoicing feature. For more information, see [Import an Electronic invoicing feature from Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider).
 3. Create an Electronic invoicing feature for your organization. For more information, see [Create an Electronic invoicing feature under your organization provider](e-invoicing-get-started.md#create-an-electronic-invoicing-feature-under-your-organization-provider).
 
