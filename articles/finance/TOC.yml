@@ -1506,6 +1506,8 @@
               href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
               href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+            - name: Use the electronic invoicing service to import vendor invoices
+              href: localizations/e-invoicing-get-started-import-vendor-invoices.md
             - name: Set up Electronic Invoicing
               href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
           - name: Electronic Invoicing FAQ
