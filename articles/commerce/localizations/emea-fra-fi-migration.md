@@ -5,7 +5,7 @@ title: Migrating from legacy Commerce functionality for France
 description: This topic provides guidelines on how to migrate from the legacy digital signing sample for France to the functionality that is based on the Fiscal integration framework
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 07/28/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -32,31 +32,35 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic provides guidelines on how to migrate your environment from the [legacy digital signing solution for France](./emea-fra-deployment.md) to the [solution that is based on the Fiscal integration framework](./emea-fra-fi-deployment.md).
 
-If you're using the earlier [Deployment guidelines for cash registers for France](emea-fra-deployment.md), you might have to migrate from it to the current integration sample. To uptake the change and receive timely updates for the features for France in the future, you might have to upgrade. No major changes are required in the extension logic that you created. As this is a major update, some of your customizations will not continue to work if no changes are made from your side. Therefore, you should plan, prepare for, and do the uptake for your environment.
+If you're using the [legacy digital signing solution for France](emea-fra-deployment.md), you need to migrate from it to the [current fiscal integration solution](./emea-fra-fi-deployment.md) to uptake the changes and receive timely updates for the features for France in the future. No major changes are required in the extension logic that you created. As this is a major update, some of your customizations will not continue to work if no changes are made from your side. Therefore, you should plan, prepare for, and complete the uptake for your environment.
 
-### Migration process
+## Migration process
 
-The migration from the earlier integration sample to the current control unit integration sample should be based on the concept of a gradual update. In other words, all Headquarters and Commerce Scale Unit components should already be updated before you start to update the POS.
+The process of migration from the legacy digital signing solution to the current current fiscal integration solution is  based on the concept of a gradual update. This means that all Commerce Headquarters and Commerce Scale Unit components should already be updated before you start to update Point of sale (POS).
 
-To help prevent a situation where an event or transaction is signed twice (that is, it's signed by both the earlier extension and the current extension), or where it can't be signed because of the missing configuration, we recommend that you turn off all POS devices that use the earlier sample, and then update them simultaneously. This simultaneous update can be done, for example, on a store-by-store basis by updating the store's functionality profile.
+To help prevent the situation when an event or transaction is signed twice (that is, it's signed by both the legacy extension and the current extension), or when it can't be signed because of missing configuration, you are recommended to switch off all POS devices that use the legacy sample, and then update them simultaneously. This simultaneous update can be done, for example, on the store-by-store basis by updating the store's functionality profile.
 
 The migration process should consist of the following steps.
 
-1. Update the Headquarters components.
-2. Update the Commerce Scale Unit components, and enable the extensions of the current sample.
-3. Update the POS components, and enable the extensions of the current sample.
-4. Make sure that all offline transactions are synced from offline-enabled MPOS devices.
+1. Update the Commerce Headquarters components.
+2. Update the Commerce Scale Unit components and enable the extensions of the current solution.
+3. Update the POS components and enable the extensions of the current solution.
+4. Make sure that all offline transactions are uploaded from offline-enabled MPOS devices to the channel database.
 5. Close shifts and logoff from all POS.
-6. Enable Fiscal integration and configure functional profile.
+6. Enable the fiscal integration functionality and configure the POS functionality profile.
 7. Adjust receipt formats.
 8. Restart POS.
 
     > [!NOTE]
     > Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section or the [Migration in a production environment](#migration-in-a-production-environment) section.
 
-#### Adjust receipt formats
+## Adjust receipt formats
 
 You need to adjust your receipt formats to use updated custom fields. Review the [Configure custom fields so that they can be used in receipt formats for sales receipts](./emea-fra-cash-registers.md#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) section for up-to-date custom fields for France.
+
+## Enable fiscal integration
+
+To enable the fiscal registration functionality for France, follow the steps that are described in the [Set up fiscal registration]() and []() sections.
 
 #### Set up the registration process
 
