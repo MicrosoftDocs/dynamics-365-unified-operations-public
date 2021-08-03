@@ -79,7 +79,7 @@ Review the following scenarios for examples of the financial dimension defaultin
 
 #### Scenario 1
 
-Navigate to General ledger > Journal setup > Journal names.  In the journal name, select journal GenJrn and define the following values for the Default financial dimensions:
+Open the **Journal names** page (**General ledger > Journal setup > Journal names**). In the journal name, select journal GenJrn and define the following values for the default financial dimensions:
 
    BUSINESSUNIT: 001
    DEPARTMENT: 024
@@ -90,19 +90,19 @@ Go to the **General ledger > Journal entries > General journal**. Create a new g
 
 [![Financial dimensions tab on the General ledger parameters page.](./media/financial-dimension-defaulting-genrl-jrnl-02.png)](./media/financial-dimension-defaulting-genrl-jrnl-02.png)
 
-Go to the Lines. Using the **Account type**, Ledger, enter 170150 in the Account field press the Tab key to move off of the field. The dimensions will default from the Journal header, which will result in the account value 170150-001-024.
+Go to the **Lines** view. Using the **Account type**, Ledger, enter 170150 in the **Account** field press the Tab key to move off of the field. The dimensions will default from the journal header, which will result in the account value 170150-001-024.
 
 [![Journal lines on a general journal.](./media/financial-dimension-defaulting-jrnl-vchr-03.png)](./media/financial-dimension-defaulting-jrnl-vchr-03.png)
 
-Change the Account value to 170150-001-023. Enter either a debit or credit amount, define the Offset account type as Ledger, then enter 600150 in the Offset account field. The dimension values will default from the account, resulting in the offset account 600150-001-023.
+Change the **Account** value to 170150-001-023. Enter either a debit or credit amount, define the Offset account type as Ledger, then enter 600150 in the **Offset account** field. The dimension values will default from the account, resulting in the offset account 600150-001-023.
 
 #### Scenario 2
 
-Use the same Financial dimensions on the Journal name as defined in Scenario 1.  Next navigate to the **All customers** page (**Accounts receivable > Customers > All customers**) to define default financial dimension values for customer US-001. Select the customer to open the customer details and go to the **Financial dimensions** tab. Keep the default value for BUSINESSUNIT as 001 and add the COSTCENTER as 007. 
+Use the same Financial dimensions on the journal name as defined in Scenario 1. Next navigate to the **All customers** page (**Accounts receivable > Customers > All customers**) to define default financial dimension values for customer US-001. Select the customer to open the customer details and go to the **Financial dimensions** tab. Keep the default value for BUSINESSUNIT as 001 and add the COSTCENTER as 007. 
 
 Create a new General journal using journal name GenJrn. On the **Financial dimensions** tab, change the default BUSINESSUNIT from 001 to 002.
 
-Go to the Lines. Using the Account type Customer, enter the Account as US-001.  To view the financial dimensions for non-Ledger account types, open Financial dimensions > Account. The default entries for financial dimension values are entered as follows:
+Go to the **Lines** view. Using the **Account type** Customer, enter the Account as US-001.  To view the financial dimensions for non-Ledger account types, open Financial dimensions > Account. The default entries for financial dimension values are entered as follows:
 
    BUSINESSUNIT: 002 – Defaulted from the journal header. BUSINESSUNIT 001 is not defaulted from Customer US-001 because a value already defaulted.
    COSTCENTER: 007 – Defaulted from the Customer US-001 setup
@@ -114,22 +114,22 @@ Go to the Lines. Using the Account type Customer, enter the Account as US-001.  
 
 #### Scenario 3
 
-While in the same journal as scenario 2, add a new line. Define the Account type as Ledger and enter Account 170150--.  Do this by clearing the default dimension values in the Account field. Set the Offset account type to Customer and enter the Offset account US-001.
+While in the same journal as scenario 2, add a new line. Define the Account type as Ledger and enter Account 170150. Do this by clearing the default dimension values in the **Account** field. Set the **Offset account type** to Customer and enter the Offset account US-001.
 
-   BUSINESSUNIT: 002 – The default entry is from the journal header because the Account dimension value is blank. BUSINESSUNIT 001 isn’t used as the default entry from Customer US-001 because a default value was already taken from the Journal header. If the BUSINESSUNIT was left blank intentionally, you must also remove the financial dimension on the Offset account. 
-   COSTCENTER: 007 – The default entry is taken from the Customer US-001 because the Account and Journal header dimension value is blank. If the COSTCENTER was left blank intentionally, you must also remove the financial dimension on the Offset account.
-   DEPARTMENT: 024 – The default entry is taken from the journal header because the Account dimension value is blank. If the DEPARTMENT was left blank intentionally, you must also remove the financial dimension on the Offset account.
+   BUSINESSUNIT: 002 – The default entry is from the journal header because the **Account dimension** value is blank. 
+   BUSINESSUNIT 001 isn’t used as the default entry from Customer US-001 because a default value was already taken from the Journal header. If the BUSINESSUNIT was left blank intentionally, you must also remove the financial dimension on the Offset account. 
+   COSTCENTER: 007 – The default entry is taken from the Customer US-001 because the account and journal header dimension value is blank. If the COSTCENTER was left blank intentionally, you must also remove the financial dimension on the offset account.
+   DEPARTMENT: 024 – The default entry is taken from the journal header because the account dimension value is blank. If the DEPARTMENT was left blank intentionally, you must also remove the financial dimension on the offset account.
 
 #### Scenario 4
 
-Use the same default financial dimension values on the Journal name and Customer as defined in Scenarios 1 and 2. Next, define a fixed dimension value for the BUSINESSUNIT on the main account 170150 by navigating to the **Main accounts** page (**General ledger > Chart of accounts > Accounts > Main accounts**). Select main account 170150, and click **Add** on the **Legal entity overrides** tab. Select USMF and click the **Add** button. Next highlight that record and click the **Default dimensions** button. Change the BUSINESSUNIT to a **Fixed value** and enter 003. 
+Use the same default financial dimension values on the **Journal name** and **Customer** as defined in Scenarios 1 and 2. Next, define a fixed dimension value for the BUSINESSUNIT on the main account 170150 by navigating to the **Main accounts** page (**General ledger > Chart of accounts > Accounts > Main accounts**). Select **Main account** 170150, and click **Add** on the **Legal entity overrides** tab. Select USMF and click the **Add** button. Next highlight that record and click the **Default dimensions** button. Change the BUSINESSUNIT to a **Fixed value** and enter 003. 
 
-Create a new General journal using journal name GenJrn. On the **Financial dimensions** tab, remove all the default dimension values. Go to the lines. Using the Account type Ledger, enter 170150 in the Account field and press the Tab key to move off of the field. The dimension values default from the Main account setup for account 170150, resulting in the account 170150-003- .
+Create a new general journal using journal name GenJrn. On the **Financial dimensions** tab, remove all the default dimension values. Go to the **Lines** view. Using the **Account type** Ledger, enter 170150 in the **Account** field and press the Tab key to move off of the field. The dimension values default from the main account setup for account 170150, resulting in the account 170150-003.
 
-Change the account value to 170150-004-. The journal functionality does not prevent a fixed dimension value from being changed.  Enter either a Debit or Credit amount and set the Offset account type to Ledger.  Enter an Offset account of 170250 and post the document.
-Click the **Voucher** button within the journal and you will see the BUSINESSUNIT value is reverted back to 003, the fixed dimension value, during posting. 
+Change the account value to 170150-004. The journal functionality does not prevent a fixed dimension value from being changed. Enter either a debit or credit amount and set the **Offset account type** field to Ledger. Enter an offset account of 170250 and post the document. Click the **Voucher** button within the journal and you'll see the BUSINESSUNIT value has reverted back to 003, which was the fixed dimension value, during posting. 
 
-When you return to the voucher on the journal, the BUSINESSUNIT does NOT reflect the fixed dimension value. It always remains with the value shown in the UI before posting.  The posting process doesn’t change anything entered on the voucher; it only changes the accounting entry during posting. 
+When you return to the voucher on the journal, the BUSINESSUNIT does *not* reflect the fixed dimension value. It always remains with the value shown in on the screen before posting. The posting process doesn’t change anything entered on the voucher. It only changes the accounting entry during posting. 
 
 ## Developer notes
 
