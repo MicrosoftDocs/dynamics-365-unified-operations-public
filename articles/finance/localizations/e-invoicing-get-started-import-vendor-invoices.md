@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 This topic provides you information that will help you get started with the importation of vendor invoices using the Electronic Invoicing service. It guides you through the configuration steps in Regulatory Configuration Services (RCS) and Dynamics 365 Finance and Supply Chain Management that you must follow to receive electronic vendor invoices from the vendors.
 
 ## Set up vendor invoice import in RCS
