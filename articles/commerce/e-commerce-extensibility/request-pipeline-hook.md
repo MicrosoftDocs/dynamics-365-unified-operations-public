@@ -75,7 +75,7 @@ The request reader interface supports two actions **redirect** and **send**, the
 ```ts
 const send:Msdyn365.requestHookRegistrar.IRequestReaderOutput = {
     action: Msdyn365.requestHookRegistrar.RequestReaderAction.send,
-    parameters: ['<p>TEST</>];
+    parameters: ['<p>TEST</p>'];
 };
 const redirect:Msdyn365.requestHookRegistrar.IRequestReaderOutput = {
     action: Msdyn365.requestHookRegistrar.RequestReaderAction.redirect,
