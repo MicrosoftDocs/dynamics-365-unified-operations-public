@@ -196,6 +196,24 @@ The **--verbose** option is used to provide more verbose debugging output in the
 yarn msdyn365 clone content-block super-content-block --verbose
 ```
 
+## create-request-hook 
+
+**Usage**
+
+``` bash
+yarn msdyn365 create-request-hook <--verbose>
+```
+
+This command creates request pipeline plugin file (**src/requestHooks/initialRequest.hook.ts**) which provides the ability to intercept the rendering request sent to the Node serverl root/src/modules folder.
+
+The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+
+**Example**
+
+``` bash
+yarn msdyn365 create-request-hook --verbose
+```
+
 ## pack
 
 **Usage**
