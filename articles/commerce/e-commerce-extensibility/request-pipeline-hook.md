@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Request pipeline plug-in hook file
-description: This topic explains how to create and configure request pipeline plug-in hooks in Microsoft Dynamics 365 Commerce that can interrupt rendering requests sent to the Node server and redirect or send responses to rendering requests. 
+title: Create a request pipeline plug-in hook
+description: This topic explains how to create and configure a request pipeline plug-in hook in Microsoft Dynamics 365 Commerce that can interrupt rendering requests sent to the Node server and redirect or send responses to rendering requests. 
 author: samjarawan
 ms.date: 08/03/2021
 ms.topic: article
@@ -26,17 +26,17 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Request pipeline plug-in hook
+# Create a request pipeline plug-in hook
 
 [!include [banner](../includes/banner.md)]
 
 This topic explains how to create and configure request pipeline plug-in hooks in Microsoft Dynamics 365 Commerce that can interrupt rendering requests sent to the Node server and redirect or send responses to rendering requests. For example, you may want to block requests coming from a specific IP address range, redirect requests based on the geolocation of a request, or redirect requests from a retired category. 
 
-## Create a request pipeline plug-in hook using the SDK CLI command
+## Create the request pipeline plug-in hook file
 
 The online software development kit (SDK) provides a **create-request-hook** [command line interface (CLI)](cli-command-reference.md)) command that creates a request pipeline plug-in hook file named **src/requestHooks/initialRequest.hook.ts**. Only one request pipeline plug-in hook file can be created and used.  
 
-The plug-in has API access to request context information and can redirect requests or send customized responses. Data actions can be used within the plug-in to fetch data if needed, and use [data action caching](data-action-cache-settings.md) for better performance. Request hooks are executed before the server render process.
+The plug-in has API access to request context information and can redirect requests or send customized responses. Data actions can be used within the plug-in to fetch data if needed, and use [data action caching](data-action-cache-settings.md) for better performance. Request pipeline hooks are executed before the server render process.
 
 The following example shows the CLI command to create a request pipeline plug-in hook file.
 
@@ -67,9 +67,9 @@ Msdyn365.requestHookRegistrar.createInitialHook({
 
 The **requestReaderPlugin** function can then be modified to intercept requests. The only valid output from the **requestReaderPlugin** function is **Msdyn365.requestHookRegistrar.IRequestReaderOutput**.
 
-## Configure redirect and send actions
+## Configure the redirect and send actions
 
-The plug-in interface supports two actions: **redirect** and **send** These actions are shown in the following example code.
+The request pipeline plug-in hook interface supports two actions: **redirect** and **send** These actions are shown in the following example code.
 
 ```ts
 const send:Msdyn365.requestHookRegistrar.IRequestReaderOutput = {
@@ -119,7 +119,7 @@ Msdyn365.requestHookRegistrar.creatInitialHook({
 
 If nothing is returned from the plug-in the rendering engine will continue the rendering step, otherwise it will redirect or send a new response.
 
-## Configure plug-in timeout
+## Configure the timeout value
 
 The request pipeline plug-in hook has a default execution timeout value of 500 milliseconds. The timeout value can be configured in the **RequestReaderPluginTimeoutInMs** property of the [platform settings file](platform-settings.md), as shown in the following example from a **platform.settings.json** file.
 
@@ -135,7 +135,7 @@ The request pipeline plug-in hook has a default execution timeout value of 500 m
 }
 ```
  
-Any errors generated from the plug-in or timeout will have a 500 status code. To suppress this type of error, ensure that a try/catch statement is used within the plug-in. 
+Any error generated from the plug-in or timeout will have a 500 status code. To suppress this type of error, ensure that a try/catch statement is used within the plug-in. 
 
 ## Additional resources
 
