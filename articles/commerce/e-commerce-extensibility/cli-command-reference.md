@@ -204,7 +204,7 @@ yarn msdyn365 clone content-block super-content-block --verbose
 yarn msdyn365 create-request-hook <--verbose>
 ```
 
-This command creates a request pipeline plug-in file (**src/requestHooks/initialRequest.hook.ts**) that provides the ability to intercept the rendering request sent to the Node server **root/src/modules** folder.
+This command creates a request pipeline plug-in hook file (**src/requestHooks/initialRequest.hook.ts**) that provides the ability to intercept the rendering request sent to the Node server **root/src/modules** folder.
 
 The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
