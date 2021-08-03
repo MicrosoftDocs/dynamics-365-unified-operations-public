@@ -4,7 +4,7 @@
 title: CLI command reference
 description: This topic covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 03/09/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -204,7 +204,7 @@ yarn msdyn365 clone content-block super-content-block --verbose
 yarn msdyn365 create-request-hook <--verbose>
 ```
 
-This command creates request pipeline plugin file (**src/requestHooks/initialRequest.hook.ts**) which provides the ability to intercept the rendering request sent to the Node serverl root/src/modules folder.
+This command creates a request pipeline plug-in file (**src/requestHooks/initialRequest.hook.ts**) that provides the ability to intercept the rendering request sent to the Node server **root/src/modules** folder.
 
 The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
