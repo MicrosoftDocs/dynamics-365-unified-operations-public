@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Request pipeline hook
-description: This topic describes the request pipeline hook providing the ability to interrupt the rendering request sent to the Node server, allowing the ability to redirect or send a response to the render request. 
+title: Request pipeline plug-in hook file
+description: This topic describes request pipeline hook files in Microsoft Dynamics 365 Commerce that can interrupt rendering requests sent to the Node server and redirect or send responses to rendering requests. 
 author: samjarawan
-ms.date: 05/28/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,20 +26,23 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Request pipline plugin
+# Request pipeline plug-in hook file
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the optional request pipeline plugin hook which provides the ability to intercept the rendering request sent to the Node server.  This will allow the ability to redirect or send a response to the render request.  For example you may want to block requests coming from a specific IP range, redirect based on a geo location of a request or redirect from a retired category to another. 
+This topic describes request pipeline hook files in Microsoft Dynamics 365 Commerce that can interrupt rendering requests sent to the Node server and redirect or send responses to rendering requests. For example, you may want to block requests coming from a specific IP address range, redirect requests based on the geolocation of a request, or redirect requests from a retired category. 
 
-## Request reader plugin
-A request reader plugin can be created with a [CLI](cli-command-reference) tool provided by the online SDK.  The plugin has API access to the request context information and can redirect the request or send a customized response.  Data action can be used within the plugin to fetch data if needed, which also leverage [data action cache](data-action-cache-settings.md) for better performance. The request hook will be executed before the server render process and is created with a **request reader plugin**.
+## Request reader plug-in
 
-## Create a request reader plugin using the SDK CLI command
-The SDK provides a [CLI command](cli-command-reference) **create-request-hook** that will create the request hook file **src/requestHooks/initialRequest.hook.ts** file.  Only one request hook file can be created and used.  
+A request reader plug-in can be created with a [CLI](cli-command-reference) tool provided by the online software development kit (SDK). The plug-in has API access to request context information and can redirect requests or send customized responses. Data actions can be used within the plug-in to fetch data if needed, and use [data action caching](data-action-cache-settings.md) for better performance. The request hook will be executed before the server render process and is created with a request reader plug-in.
 
-The below sample shows how to use the CLI command to create a request hook file.
-```
+## Create a request reader plug-in using the SDK CLI command
+
+The SDK provides a [CLI command](cli-command-reference) **create-request-hook** that will create the request hook file **src/requestHooks/initialRequest.hook.ts** file. Only one request hook file can be created and used.  
+
+The following example shows how to use the CLI command to create a request hook file.
+
+```bash
 yarn msdyn365 create-request-hook
 ```
 
@@ -63,10 +66,11 @@ Msdyn365.requestHookRegistrar.createInitialHook({
 });
 ```
 
-The function in requestReaderPlugin can then be modified to intercept the request.  The only valid output in requestReaderPlugin will be Msdyn365.requestHookRegistrar.IRequestReaderOutput.
+The **requestReaderPlugin** function can then be modified to intercept the request. The only valid output from the **requestReaderPlugin** function is "Msdyn365.requestHookRegistrar.IRequestReaderOutput."
 
-## Redirect and send actions
-The request reader interface supports two actions **redirect** and **send**, the below shows sample code for a request reader plugin.
+## Configure redirect and send actions
+
+The request reader interface supports two actions **redirect** and **send**, the below shows sample code for a request reader plug-in.
 
 ```ts
 const send:Msdyn365.requestHookRegistrar.IRequestReaderOutput = {
@@ -78,7 +82,8 @@ const redirect:Msdyn365.requestHookRegistrar.IRequestReaderOutput = {
     parameters: ['https://www.sample_redirect_URL.com'];
 };
 ```
-The above actions can be manually added to the plugin file as shown in the below example:
+The above actions can be manually added to the plug-in file as shown in the below example:
+
 ```ts
 /*!
  * Copyright (c) Microsoft Corporation.
@@ -113,10 +118,11 @@ Msdyn365.requestHookRegistrar.creatInitialHook({
 });
 ```
 
-If there is nothing returned from the plugin, the rendering engine will continue the rendering step, otherwise it will redirect or send the new response.
+If there is nothing returned from the plug-in, the rendering engine will continue the rendering step, otherwise it will redirect or send the new response.
 
-## Configure request reader plugin timeout
-The request reader plugin has an execution timeout default value of 500ms, and can be configured in [platform settings file](platform-settings.md) with the **RequestReaderPluginTimeoutInMs** property as shown in the below platform.settings.json example:
+## Configure request reader plug-in timeout
+
+The request reader plug-in has an execution timeout default value of 500ms, and can be configured in [platform settings file](platform-settings.md) with the **RequestReaderPluginTimeoutInMs** property as shown in the below platform.settings.json example:
 
 ```json
 {
@@ -130,6 +136,10 @@ The request reader plugin has an execution timeout default value of 500ms, and c
 }
 ```
  
-Any error thrown from the plugin or timeout will result in a 500 status code along with the error message. To suppress the error in a plugin, ensure a try/catch statement is used within the plugin. 
+Any error thrown from the plug-in or timeout will result in a 500 status code along with the error message. To suppress the error in a plug-in, ensure a try/catch statement is used within the plug-in. 
+
+## Additional resources
+
+
 
 
