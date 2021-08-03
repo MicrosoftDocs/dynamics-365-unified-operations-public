@@ -3065,6 +3065,8 @@
         href: landed-cost/in-transit-processing.md
       - name: Process over/under transactions
         href: landed-cost/over-under-transactions.md
+      - name: Update tracking for put away
+        href: landed-cost/update-tracking-putaway.md
       - name: Landed cost inquiries
         href: landed-cost/landed-cost-inquiries.md
       - name: Landed cost reports
