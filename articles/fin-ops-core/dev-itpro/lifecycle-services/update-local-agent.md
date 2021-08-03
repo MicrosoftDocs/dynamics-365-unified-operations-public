@@ -39,7 +39,7 @@ This topic explains how to update the local agent. The latest version of the loc
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
 | 2.0.0               | This version enables servicing flows and deploys Platform update 12. |
 | 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. |
-| 2.1.1               | This version fixes an issue that occurs when the download fails and the LCS Maintain button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2.  |
+| 2.1.1               | This version fixes an issue that occurs when the download fails and the Lifecycle Services (LCS) **Maintain** button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2.  |
 | 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still consider them as missing a few bytes and therefore fail the download.  |
 | 2.2.0               | This version fixes locked dlls during cleanup and enables prerequisites for supporting Active Directory Federation Services (AD FS) that also is used for Microsoft 365. |
 | 2.3.0               | This version adds support for pre- and post-deployment scripts.  |
@@ -51,7 +51,7 @@ This topic explains how to update the local agent. The latest version of the loc
 
 ## What's new in local agent 2.7.0
 
-- Local agent 2.7.0 introduces the possibility of specifying a limited set of deployment options to specify environment-specific deployment options. Most notably this release will allow deploying on environments with Microsoft SQL Server 2019. For all possible configurations see [Local agent deployment configurations](../../dev-itpro/deployment/onprem-localagent-options.md)
+- Local agent 2.7.0 introduces the possibility of specifying a limited set of deployment options to specify environment-specific deployment options. Most notably, this release will allow deploying on environments with Microsoft SQL Server 2019. For all possible configurations, see [Local agent deployment configurations](../../dev-itpro/deployment/onprem-localagent-options.md)
 - This release addresses an issue where the gMSA account that the local agent executes under looses permissions to the private key of some certificates.
 - The LBDTelemetry-Agent application can start correctly even if the Event Viewer is open. 
 
@@ -74,7 +74,7 @@ This topic explains how to update the local agent. The latest version of the loc
 
 ## What's new in local agent 2.4.0
 
-- Local agent 2.4.0 now requires .NET Framework 4.8 to uptake the newest changes from Lifecycle Services (LCS). Be sure to run the latest Infrastructure Scripts available in LCS to meet the newest requirements.
+- Local agent 2.4.0 now requires .NET Framework 4.8 to uptake the newest changes from LCS. Be sure to run the latest Infrastructure Scripts available in LCS to meet the newest requirements.
 - This release also fixes an issue where the deployment of the AXService would fail in slower environments due to a hard-coded timeout.
 
 ## What's new in local agent 2.3.0
