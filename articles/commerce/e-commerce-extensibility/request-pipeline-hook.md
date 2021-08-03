@@ -34,11 +34,11 @@ This topic describes request pipeline hook files in Microsoft Dynamics 365 Comme
 
 ## Request reader plug-in
 
-A request reader plug-in can be created with a [CLI](cli-command-reference) tool provided by the online software development kit (SDK). The plug-in has API access to request context information and can redirect requests or send customized responses. Data actions can be used within the plug-in to fetch data if needed, and use [data action caching](data-action-cache-settings.md) for better performance. The request hook will be executed before the server render process and is created with a request reader plug-in.
+A request reader plug-in can be created with a [CLI](cli-command-reference.md) tool provided by the online software development kit (SDK). The plug-in has API access to request context information and can redirect requests or send customized responses. Data actions can be used within the plug-in to fetch data if needed, and use [data action caching](data-action-cache-settings.md) for better performance. The request hook will be executed before the server render process and is created with a request reader plug-in.
 
 ## Create a request reader plug-in using the SDK CLI command
 
-The SDK provides a [CLI command](cli-command-reference) **create-request-hook** that will create the request hook file **src/requestHooks/initialRequest.hook.ts** file. Only one request hook file can be created and used.  
+The SDK provides a [CLI command](cli-command-reference.md) **create-request-hook** that will create the request hook file **src/requestHooks/initialRequest.hook.ts** file. Only one request hook file can be created and used.  
 
 The following example shows how to use the CLI command to create a request hook file.
 
@@ -139,6 +139,8 @@ The request reader plug-in has an execution timeout default value of 500ms, and 
 Any error thrown from the plug-in or timeout will result in a 500 status code along with the error message. To suppress the error in a plug-in, ensure a try/catch statement is used within the plug-in. 
 
 ## Additional resources
+
+[CLI command reference](cli-command-reference.md)
 
 
 
