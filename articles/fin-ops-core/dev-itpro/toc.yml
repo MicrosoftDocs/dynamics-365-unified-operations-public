@@ -448,6 +448,8 @@
             href: deployment/onprem-adfscompatibility.md
           - name: Local agent pre-deployment and post-deployment scripts
             href: lifecycle-services/pre-post-scripts.md
+          - name: Deployment configurations for the local agent
+            href: deployment/onprem-localagent-options.md
           - name: Update the local agent
             href: lifecycle-services/update-local-agent.md
         - name: Troubleshooting
