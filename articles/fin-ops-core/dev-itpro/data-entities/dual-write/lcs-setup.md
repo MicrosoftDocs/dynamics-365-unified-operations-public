@@ -47,8 +47,6 @@ Follow these steps to set up dual-write from LCS **Environment Details** page:
 
 7. Select **Link to Power Platform environment** to create a link between Dataverse and the current environment's databases. This typically takes less than 5 minutes.
 
-    ![Link to Power Platform environment](media/powerplat_integration_step3.png)
-    
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Link to Power Platform environment.":::
 
 8. When the linking is complete, a hyperlink is displayed. Use the link to sign in to the dual-write administration area in the Finance and Operations environment. From there, you can set up entity mappings.
@@ -69,8 +67,6 @@ To set up dual-write for an existing Dataverse environment, you must create a Mi
 It is possible that your LCS environment is linked to one Dataverse instance, while your dual-write environment is linked to another Dataverse instance. This linking mismatch can cause unexpected behavior, and it could end up sending data to the wrong environment. The recommended environment to use for dual-write is the one that is created as part of Power Platform integration, and long-term, this will be the only way to establish a link between environments.
 
 If your environment has a linking mismatch, LCS displays a warning on your environment details page similar to "Microsoft has detected that your environment is linked via Dual-write to a different destination than specified in Power Platform Integration, which is not recommended":
-
-![Power Platform Integration Link Mismatched](media/powerplat_integration_mismatchLink.png)
 
 :::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integration link mismatched.":::
 
