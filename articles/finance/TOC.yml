@@ -1538,6 +1538,10 @@
             items:
             - name: Reporting for multiple VAT registrations
               href: localizations/emea-reporting-for-multiple-vat-registrations.md
+            - name: France reporting
+              items: 
+              - name: VAT declaration
+              href: localizations/emea-fra-VAT-declaration-preview-France.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
