@@ -36,7 +36,7 @@ Before you begin to work with Inventory Visibility, you must complete the follow
 
 ## <a name="data-source-configuration"></a>Data source configuration
 
-The data Source represents the system from which your data comes, such as _fno_ or _pos_. (_fno_ stands for Dynamics 365 Finance and Operations, _pos_ stands for point of sale)
+The data source represents the system from which your data comes, such as `fno` or `pos`. (`fno` stands for Dynamics 365 Finance and Operations, `pos` stands for point of sale)
 
 The data source configuration includes the following parts:
 
@@ -45,7 +45,7 @@ The data source configuration includes the following parts:
 - Calculated measure
 
 > [!NOTE]
-> Data source _fno_ is reserved for Dynamics 365 Supply Chain Management.
+> Data source `fno` is reserved for Dynamics 365 Supply Chain Management.
 
 ### <a name="data-source-configuration-dimension"></a>Dimension (dimension mapping)
 
@@ -93,7 +93,7 @@ By configuring a dimension mapping, you can send the _external dimensions_ direc
 
 Physical measures modify the quantity and reflect the inventory status. You can define your own physical measures based on your needs.
 
-Inventory Visibility provides a list of default physical measures, which are linked to Dynamics 365 Supply Chain Management (data source _fno_). The following table provides an example of physical measures:
+Inventory Visibility provides a list of default physical measures, which are linked to Dynamics 365 Supply Chain Management (data source `fno`). The following table provides an example of physical measures:
 
 | Physical measure name | Description |
 | --- | --- |
@@ -200,7 +200,7 @@ With this computation formula, the new query result will include the customized 
 ```
 
 The `MyCustomAvailableforReservation` output is based on the calculation setting in the custom measurements as:  
- _100 + 50 + 80 + 90 + 30 &ndash; 10 &ndash; 20 &ndash; 60 &ndash; 40 = 220_
+ _100 + 50 + 80 + 90 + 30 – 10 – 20 – 60 – 40 = 220_
 
 ## <a name="partition-configuration"></a>Partition configuration
 
@@ -218,15 +218,15 @@ Inventory Visibility provides a default partition configuration as follows:
 
 ## <a name="index-configuration"></a>Product index hierarchy configuration
 
-Most of the time, the inventory on-hand query will not only be at the highest "total" level, but you may want to see results aggregated based on the inventory dimensions.
+Most of the time, the inventory on-hand query will not only be at the highest "total" level, but you may also want to see results aggregated based on the inventory dimensions.
 
-Inventory Visibility provides flexibility by allowing you to set up the _indexes_, which are based on the dimension or the combination of the dimensions. An _Index_ consists of a *Set number*, *Dimension*, and *Hierarchy*. Here are the definitions:
+Inventory Visibility provides flexibility by allowing you to set up the _indexes_, which are based on a dimension or a combination of dimensions. An index consists of a *Set number*, *Dimension*, and *Hierarchy*, as defined in the following table.
 
 | Name | Description |
 | --- | --- |
 | Set number | Dimensions belonging to the same set (index) will be grouped together and allocated with the same set number. |
 | Dimension | Base dimensions that the query result is aggregated on. |
-| Hierarchy | Hierarchy is used to define the supported dimension combinations that can be queried. For example, if you set up a dimension set with a hierarchy sequence of (_ColorId_, _SizeId_, _StyleId_), the system will support queries on 4 dimension combinations. The first combination is empty. The second combination is (_ColorId_). The third combination is (_ColorId_, _SizeId_). And the fourth combination is (_ColorId_, _SizeId_, _StyleId_). The other combinations are not supported. Please refer to the following example for details. |
+| Hierarchy | Hierarchy is used to define the supported dimension combinations that can be queried. For example, if you set up a dimension set with a hierarchy sequence of (`ColorId`, `SizeId`, `StyleId`), the system will support queries on 4 dimension combinations. The first combination is empty. The second combination is (`ColorId`). The third combination is (`ColorId`, `SizeId`). And the fourth combination is (`ColorId`, `SizeId`, `StyleId`). The other combinations are not supported. Please refer to the following example for details. |
 
 ### Example
 
@@ -254,17 +254,17 @@ And suppose the index is as follows:
 
 The index enables you to query the on-hand inventory in the following ways:
 
-- () - grouped by all
+- `()` - grouped by all
   - T-shirt, 28
-- (_ColorId_) – grouped by _ColorId_
+- `(ColorId)` – grouped by `ColorId`
   - T-shirt, Black, 10
   - T-shirt, Red, 18
-- (_ColorId_, _SizeId_) – grouped by the combination of _ColorId_ and _SizeId_
+- `(ColorId, SizeId)` – grouped by the combination of `ColorId` and `SizeId`
   - T-shirt, Black, Small, 3
   - T-shirt, Black, Large, 7
   - T-shirt, Red, Small, 11
   - T-shirt, Red, Large, 7
-- (_ColorId_, _SizeId_, _StyleId_)- grouped by the combination of _ColorId_, _SizeId_ and _StyleId_
+- `(ColorId, SizeId, StyleId)` – grouped by the combination of `ColorId`, `SizeId` and `StyleId`
   - T-shirt, Black, Small, Wide, 1
   - T-shirt, Black, Small, Regular, 2
   - T-shirt, Black, Large, Wide, 3
@@ -287,7 +287,7 @@ Reservation configuration is necessary if you want to use the soft reservation f
 
 When you make a reservation, you may want to know if on-hand inventory is currently available for reservation. This validation is linked to a calculated measure that represents a computation formula of a combination of physical measures.
 
-Suppose a reservation measure is based on the physical measure _SoftReservOrdered_ from data source _iv_. You could then set up the calculated measure _AvailableToReserve_ of _iv_ as follows:
+Suppose a reservation measure is based on the physical measure `SoftReservOrdered` from data source `iv`. You could then set up the calculated measure `AvailableToReserve` of `iv` as follows:
 
 | Calculation type | Data source | Physical measure |
 | --- | --- | --- |
@@ -296,13 +296,13 @@ Suppose a reservation measure is based on the physical measure _SoftReservOrdere
 | Subtraction | `pos` | `Outbound` |
 | Subtraction | `iv` | `SoftReservOrdered` |
 
-Then set up a soft reservation mapping from _SoftReservOrdered_ to _AvailableToReserve_:
+Then set up a soft reservation mapping from `SoftReservOrdered` to `AvailableToReserve`:
 
 | Physical Measure Data Source | Physical Measure | Available for Reservation Data Source | Available for Reservation Calculated Measure |
 | --- | --- | --- | --- |
 | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
 
-This soft reservation mapping provides a mapping from the reservation measure _SoftReservOrdered_ to a calculated measure _AvailableToReserve_. When you do reservation on _SoftReservOrdered_, Inventory Visibility will automatically find _AvailableToReserve_ and its related computation formula to do the reservation validation.
+This soft reservation mapping provides a mapping from the reservation measure `SoftReservOrdered` to a calculated measure `AvailableToReserve`. When you do reservation on `SoftReservOrdered`, Inventory Visibility will automatically find `AvailableToReserve` and its related computation formula to do the reservation validation.
 
 Suppose you have on-hand inventory in Inventory Visibility as follows:
 
@@ -331,21 +331,21 @@ Suppose you have on-hand inventory in Inventory Visibility as follows:
 
 In the sample, the following calculation applies:
 
-_AvailableToReserve_ = _fno.availphysical_ + _pos.inbound_ – _pos.outbound_ – _iv.SoftReservOrdered_  
+`AvailableToReserve` = `fno.availphysical` + `pos.inbound` – `pos.outbound` – `iv.SoftReservOrdered`  
 = 70 + 50 – 20 – 90  
 = 10
 
-If you make reservations on _iv.SoftReservOrdered_ with a quantity less than or equal to _AvailableToReserve_ (10), you are allowed to do the reservation.
+Therefore, if you make reservations on `iv.SoftReservOrdered` with a quantity less than or equal to `AvailableToReserve` (10), you are allowed to do the reservation.
 
-### Soft Reservation Hierarchy
+### Soft reservation hierarchy
 
-Reservation hierarchy describes the sequence of dimensions to specify when making reservations. It works the same way as product index hierarchy works for on-hand queries.
+The reservation hierarchy describes the sequence of dimensions that must be specified when making reservations. It works the same way as the product index hierarchy works for on-hand queries.
 
-Reservation hierarchy is independent from product index hierarchy. This allows category management where users break down the dimensions into details to specify the needs for making more precise reservations.
+Reservation hierarchy is independent from product index hierarchy. This allows category management where users break down the dimensions into details to specify the requirements for making precise reservations.
 
-Here is an example of Soft Reservation Hierarchy:
+Here is an example of a soft reservation hierarchy:
 
-| Base Dimension | Hierarchy |
+| Base dimension | Hierarchy |
 | --- | --- |
 | `SiteId` | 1 |
 | `LocationId` | 2 |
@@ -353,219 +353,265 @@ Here is an example of Soft Reservation Hierarchy:
 | `SizeId` | 4 |
 | `StyleId` | 5 |
 
-In this sample, you can do reservation in the following dimension sequences:
+In this example, you can do reservation in the following dimension sequences:
 
-- () - no dimension specified.
-- (SiteId)
-- (SiteId, LocationId)
-- (SiteId, LocationId, ColorId)
-- (SiteId, LocationId, ColorId, SizeId)
-- (SiteId, LocationId, ColorId, SizeId, StyleId)
+- `()` - no dimension specified.
+- `(SiteId)`
+- `(SiteId, LocationId)`
+- `(SiteId, LocationId, ColorId)`
+- `(SiteId, LocationId, ColorId, SizeId)`
+- `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
-A valid dimension sequence should strictly follow the reservation hierarchy one by one. E.g., (SiteId, LocationId, SizeId) is invalid, because _ColorId_ is missing in the hierarchy sequence.
+A valid dimension sequence should strictly follow the reservation hierarchy one-by-one. For example, the hierarchy sequence `(SiteId, LocationId, SizeId)` isn't valid, because `ColorId` is missing.
 
-## <a name="default-configuration-sample"></a>Default Configuration Sample
+## <a name="default-configuration-sample"></a>The default configuration
 
-Inventory Visibility will set up a default configuration in initialization stage. You may modify the configuration and do the upgrade based on your needs.
+Inventory Visibility sets up a default configuration during its initialization stage. You can modify the configuration as needed.
 
-### Data Source Configuration
+### Data source configuration
 
-Data Source _iv_ (Inventory Visibility):
+#### Data source _iv_ configuration
 
-- Physical Measure
-  - _Ordered_
-  - _SoftReservPhysical_
-  - _SoftReservOrdered_
-  - _ReservOrdered_
-  - _ReservPhysical_
-- Calculated Measure
-  - _OrderedTotal_
+This section describes how the data source `iv` (Inventory Visibility) is configured.
+
+##### Physical measures configured for the _iv_ data source
+
+The following physical measures are configured for the `iv` data source:
+
+- `Ordered`
+- `SoftReservPhysical`
+- `SoftReservOrdered`
+- `ReservOrdered`
+- `ReservPhysical`
+
+##### Calculated measure _OrderedTotal_
+
+The calculated measure `OrderedTotal` is configured for the `iv` data source as shown in the following table.
   
- | Calculation Type | Data Source | Physical Measure |
- |---|---|---|
- | Addition | `fno` | `Ordered` |
- | Addition | `fno` | `Arrived` |
- | Addition | `iv` | `Ordered` |
+| Calculation type | Data source | Physical measure |
+|---|---|---|
+| Addition | `fno` | `Ordered` |
+| Addition | `fno` | `Arrived` |
+| Addition | `iv` | `Ordered` |
 
-  - _OnHand_
+##### Calculated measure _OnHand_
+
+The calculated measure `OnHand` is configured for the `iv` data source as shown in the following table.
   
- | Calculation Type | Data Source | Physical Measure |
- |---|---|---|
- | Addition | `fno` | `PhysicalInvent` |
- | Addition | `iom` | `OnHand` |
- | Addition | `sap` | `Unrestricted` |
- | Addition | `sap` | `QualityInspection` |
- | Addition | `pos` | `PosInbound` |
- | Subtraction | `pos` | `PosOutbound` |
+| Calculation type | Data source | Physical measure |
+|---|---|---|
+| Addition | `fno` | `PhysicalInvent` |
+| Addition | `iom` | `OnHand` |
+| Addition | `sap` | `Unrestricted` |
+| Addition | `sap` | `QualityInspection` |
+| Addition | `pos` | `PosInbound` |
+| Subtraction | `pos` | `PosOutbound` |
 
-  - _ReservedTotal_
+##### Calculated measure _ReservedTotal_
+
+The calculated measure `ReservedTotal` is configured for the `iv` data source as shown in the following table.
   
- | Calculation Type | Data Source | Physical Measure |
- |---|---|---|
- | Addition | `fno` | `ReservPhysical` |
- | Addition | `fno` | `ReservOrdered` |
- | Addition | `iv` | `SoftReservPhysical` |
- | Addition | `iv` | `SoftReservOrdered` |
- | Addition | `iv` | `ReservPhysical` |
- | Addition | `iv` | `ReservOrdered` |
+| Calculation type | Data source | Physical measure |
+|---|---|---|
+| Addition | `fno` | `ReservPhysical` |
+| Addition | `fno` | `ReservOrdered` |
+| Addition | `iv` | `SoftReservPhysical` |
+| Addition | `iv` | `SoftReservOrdered` |
+| Addition | `iv` | `ReservPhysical` |
+| Addition | `iv` | `ReservOrdered` |
 
-  - _SoftReserved_
+##### Calculated measure _SoftReserved_
+
+The calculated measure `SoftReserved` is configured for the `iv` data source as shown in the following table.
   
- | Calculation Type | Data Source | Physical Measure |
- |---|---|---|
- | Addition | `iv` | `SoftReservPhysical` |
- | Addition | `iv` | `SoftReservOrdered` |
+| Calculation type | Data source | Physical measure |
+|---|---|---|
+| Addition | `iv` | `SoftReservPhysical` |
+| Addition | `iv` | `SoftReservOrdered` |
 
-  - _HardReserved_
+##### Calculated measure _HardReserved_
+
+The calculated measure `HardReserved` is configured for the `iv` data source as shown in the following table.
   
- | Calculation Type | Data Source | Physical Measure |
- |---|---|---|
- | Addition | `fno` | `ReservPhysical` |
- | Addition | `fno` | `ReservOrdered` |
- | Addition | `iv` | `ReservPhysical` |
- | Addition | `iv` | `ReservOrdered` |
+| Calculation type | Data source | Physical measure |
+|---|---|---|
+| Addition | `fno` | `ReservPhysical` |
+| Addition | `fno` | `ReservOrdered` |
+| Addition | `iv` | `ReservPhysical` |
+| Addition | `iv` | `ReservOrdered` |
 
-  - _OpenOrder_
+##### Calculated measure _OpenOrder_
+
+The calculated measure `OpenOrder` is configured for the `iv` data source as shown in the following table.
   
- | Calculation Type | Data Source | Physical Measure |
- |---|---|---|
- | Addition | `fno` | `OnOrder` |
- | Addition | `iom` | `OnOrder` |
+| Calculation type | Data source | Physical measure |
+|---|---|---|
+| Addition | `fno` | `OnOrder` |
+| Addition | `iom` | `OnOrder` |
 
-  - _OnHandAvailable_
+##### Calculated measure _OnHandAvailable_
+
+The calculated measure `OnHandAvailable` is configured for the `iv` data source as shown in the following table.
   
- | Calculation Type | Data Source | Physical Measure |
- |---|---|---|
- | Addition | `fno` | `PhysicalInvent` |
- | Addition | `iom` | `OnHand` |
- | Addition | `sap` | `Unrestricted` |
- | Addition | `sap` | `QualityInspection` |
- | Addition | `pos` | `PosInbound` |
- | Subtraction | `fno` | `ReservPhysical` |
- | Subtraction | `iv` | `SoftReservPhysical` |
- | Subtraction | `pos` | `PosOutbound` |
+| Calculation type | Data source | Physical measure |
+|---|---|---|
+| Addition | `fno` | `PhysicalInvent` |
+| Addition | `iom` | `OnHand` |
+| Addition | `sap` | `Unrestricted` |
+| Addition | `sap` | `QualityInspection` |
+| Addition | `pos` | `PosInbound` |
+| Subtraction | `fno` | `ReservPhysical` |
+| Subtraction | `iv` | `SoftReservPhysical` |
+| Subtraction | `pos` | `PosOutbound` |
 
-  - _AvailableToReserve_
+##### Calculated measure _AvailableToReserve_
+
+The calculated measure `AvailableToReserve` is configured for the `iv` data source as shown in the following table.
   
- | Calculation Type | Data Source | Physical Measure |
- |---|---|---|
- | Addition | `fno` | `PhysicalInvent` |
- | Addition | `iom` | `OnHand` |
- | Addition | `sap` | `Unrestricted` |
- | Addition | `sap` | `QualityInspection` |
- | Addition | `pos` | `PosInbound` |
- | Addition | `fno` | `Ordered` |
- | Addition | `fno` | `Arrived` |
- | Addition | `iv` | `Ordered` |
- | Subtraction | `fno` | `ReservPhysical` |
- | Subtraction | `fno` | `ReservOrdered` |
- | Subtraction | `iv` | `SoftReservPhysical` |
- | Subtraction | `iv` | `SoftReservOrdered` |
- | Subtraction | `iv` | `ReservPhysical` |
- | Subtraction | `iv` | `ReservOrdered` |
- | Subtraction | `pos` | `PosOutbound` |
+| Calculation type | Data source | Physical measure |
+|---|---|---|
+| Addition | `fno` | `PhysicalInvent` |
+| Addition | `iom` | `OnHand` |
+| Addition | `sap` | `Unrestricted` |
+| Addition | `sap` | `QualityInspection` |
+| Addition | `pos` | `PosInbound` |
+| Addition | `fno` | `Ordered` |
+| Addition | `fno` | `Arrived` |
+| Addition | `iv` | `Ordered` |
+| Subtraction | `fno` | `ReservPhysical` |
+| Subtraction | `fno` | `ReservOrdered` |
+| Subtraction | `iv` | `SoftReservPhysical` |
+| Subtraction | `iv` | `SoftReservOrdered` |
+| Subtraction | `iv` | `ReservPhysical` |
+| Subtraction | `iv` | `ReservOrdered` |
+| Subtraction | `pos` | `PosOutbound` |
 
-  - _InventorySupply_
+##### Calculated measure _InventorySupply_
+
+The calculated measure `InventorySupply` is configured for the `iv` data source as shown in the following table.
   
- | Calculation Type | Data Source | Physical Measure |
- |---|---|---|
- | Addition | `fno` | `Ordered` |
- | Addition | `fno` | `Arrived` |
- | Addition | `iv` | `Ordered` |
- | Addition | `fno` | `PhysicalInvent` |
- | Addition | `iom` | `OnHand` |
- | Addition | `sap` | `Unrestricted` |
- | Addition | `sap` | `QualityInspection` |
- | Addition | `pos` | `PosInbound` |
- | Subtraction | `pos` | `PosOutbound` |
+| Calculation type | Data source | Physical measure |
+|---|---|---|
+| Addition | `fno` | `Ordered` |
+| Addition | `fno` | `Arrived` |
+| Addition | `iv` | `Ordered` |
+| Addition | `fno` | `PhysicalInvent` |
+| Addition | `iom` | `OnHand` |
+| Addition | `sap` | `Unrestricted` |
+| Addition | `sap` | `QualityInspection` |
+| Addition | `pos` | `PosInbound` |
+| Subtraction | `pos` | `PosOutbound` |
 
-  - _InventoryDemand_
+##### Calculated measure _InventoryDemand_
+
+The calculated measure `InventoryDemand` is configured for the `iv` data source as shown in the following table.
   
- | Calculation Type | Data Source | Physical Measure |
- |---|---|---|
- | Addition | `fno` | `OnOrder` |
- | Addition | `iom` | `OnOrder` |
- | Addition | `iv` | `SoftReservPhysical` |
- | Addition | `iv` | `SoftReservOrdered` |
- | Addition | `fno` | `ReservPhysical` |
- | Addition | `fno` | `ReservOrdered` |
- | Addition | `iv` | `ReservPhysical` |
- | Addition | `iv` | `ReservOrdered` |
+| Calculation type | Data source | Physical measure |
+|---|---|---|
+| Addition | `fno` | `OnOrder` |
+| Addition | `iom` | `OnOrder` |
+| Addition | `iv` | `SoftReservPhysical` |
+| Addition | `iv` | `SoftReservOrdered` |
+| Addition | `fno` | `ReservPhysical` |
+| Addition | `fno` | `ReservOrdered` |
+| Addition | `iv` | `ReservPhysical` |
+| Addition | `iv` | `ReservOrdered` |
 
-Data Source _fno_ (Dynamics 365 Supply Chain Management):
+#### Data source _fno_ configuration
 
-- Dimension Mapping
+This section describes how the data source `fno` (Dynamics 365 Supply Chain Management) is configured.
 
- | External Dimension | Base Dimension |
- |---|---|
- | `InventBatchId` | `BatchId` |
- | `InventColorId` | `ColorId` |
- | `InventLocationId` | `LocationId` |
- | `InventSerialId` | `SerialId` |
- | `InventSiteId` | `SiteId` |
- | `InventSizeId` | `SizeId` |
- | `InventStatusId` | `StatusId` |
- | `InventStyleId` | `StyleId` |
- | `LicensePlateId` | `LicensePlateId` |
- | `WMSLocationId` | `WMSLocationId` |
- | `WMSPalletId` | `WMSPalletId` |
- | `ConfigId` | `ConfigId` |
- | `InventVersionId` | `VersionId` |
- | `InventDimension1` | `CustomDimension1` |
- | `InventDimension2` | `CustomDimension2` |
- | `InventDimension3` | `CustomDimension3` |
- | `InventDimension4` | `CustomDimension4` |
- | `InventDimension5` | `CustomDimension5` |
- | `InventDimension6` | `CustomDimension6` |
- | `InventDimension7` | `CustomDimension7` |
- | `InventDimension8` | `CustomDimension8` |
- | `InventDimension9` | `CustomDimension9` |
- | `InventDimension10` | `CustomDimension10` |
- | `InventDimension11` | `CustomDimension11` |
- | `InventDimension12` | `CustomDimension12` |
+##### Dimension mappings for the _fno_ data source
 
-- Physical Measure
-  - _Ordered_
-  - _Arrived_
-  - _AvailPhysical_
-  - _PhysicalInvent_
-  - _ReservPhysical_
-  - _ReservOrdered_
-  - _OnOrder_
+The dimension mappings listed in the following table are configured for the `fno` data source.
 
-Data Source _pos_ (Point of Sale):
+| External dimension | Base dimension |
+|---|---|
+| `InventBatchId` | `BatchId` |
+| `InventColorId` | `ColorId` |
+| `InventLocationId` | `LocationId` |
+| `InventSerialId` | `SerialId` |
+| `InventSiteId` | `SiteId` |
+| `InventSizeId` | `SizeId` |
+| `InventStatusId` | `StatusId` |
+| `InventStyleId` | `StyleId` |
+| `LicensePlateId` | `LicensePlateId` |
+| `WMSLocationId` | `WMSLocationId` |
+| `WMSPalletId` | `WMSPalletId` |
+| `ConfigId` | `ConfigId` |
+| `InventVersionId` | `VersionId` |
+| `InventDimension1` | `CustomDimension1` |
+| `InventDimension2` | `CustomDimension2` |
+| `InventDimension3` | `CustomDimension3` |
+| `InventDimension4` | `CustomDimension4` |
+| `InventDimension5` | `CustomDimension5` |
+| `InventDimension6` | `CustomDimension6` |
+| `InventDimension7` | `CustomDimension7` |
+| `InventDimension8` | `CustomDimension8` |
+| `InventDimension9` | `CustomDimension9` |
+| `InventDimension10` | `CustomDimension10` |
+| `InventDimension11` | `CustomDimension11` |
+| `InventDimension12` | `CustomDimension12` |
 
-- Physical Measure
-  - _PosInbound_
-  - _PosOutbound_
-- Calculated Measure
+##### Physical measures configured for the _fno_ data source
 
- | Calculation Type | Data Source | Physical Measure |
- |---|---|---|
- | Addition | `fno` | `AvailPhysical` |
- | Addition | `pos` | `PosInbound` |
- | Subtraction | `pos` | `PosOutbound` |
+The following physical measures are configured for the `fno` data source:
 
-Data Source _iom_ (Intelligent Order Management):
+- `Ordered`
+- `Arrived`
+- `AvailPhysical`
+- `PhysicalInvent`
+- `ReservPhysical`
+- `ReservOrdered`
+- `OnOrder`
 
-- Physical Measure
-  - _OnOrder_
-  - _OnHand_
+#### Data source _pos_ configuration
 
-Data Source _sap_:
+This section describes how the data source `pos` (point of sale) is configured.
 
-- Physical Measure
-  - _Unrestricted_
-  - _QualityInspection_
+##### Physical measures for the _pos_ data source
 
-### Partition Configuration
+The following physical measures are configured for the `pos` data source:
 
-| Base Dimension | Hierarchy |
+- `PosInbound`
+- `PosOutbound`
+
+##### Calculated measure for the _pos_ data source
+
+The calculated measure shown in the following table is configured for the `pos` data source. <!-- KFM: Are we missing a name for this calculated measure? -->
+
+| Calculation type | Data source | Physical measure |
+|---|---|---|
+| Addition | `fno` | `AvailPhysical` |
+| Addition | `pos` | `PosInbound` |
+| Subtraction | `pos` | `PosOutbound` |
+
+#### Data source _iom_ configuration
+
+The following physical measures are configured for the `iom` (intelligent order management) data source:
+
+- `OnOrder`
+- `OnHand`
+
+#### Data source _sap_ configuration
+
+The following physical measures are configured for the `sap` data source: <!-- KFM: Can we tell what `sap` stands for? -->
+
+- `Unrestricted`
+- `QualityInspection`
+
+### Partition configuration
+
+The following table shows the default partition configuration:
+
+| Base dimension | Hierarchy |
 | --- | --- |
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-### Index Configuration
+### Index configuration
+
+The following table shows the default index configuration:
 
 | Set Number | Dimension | Hierarchy |
 | --- | --- | --- |
@@ -573,17 +619,23 @@ Data Source _sap_:
 | 1 | `SizeId` | 2 |
 | 1 | `StyleId` | 3 |
 
-### Reservation Configuration
+### Reservation configuration
 
-Reservation Mapping:
+This section describes the default reservation configuration.
 
-| Physical Measure Data Source | Physical Measure | Available for Reservation Data Source | Available for Reservation Calculated Measure |
+#### Reservation mapping
+
+The following table shows the default reservation mapping:
+
+| Physical measure data source | Physical measure | Available for reservation data source | Available for reservation calculated measure |
 | --- | --- | --- | --- |
 | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
 
-Reservation Hierarchy:
+#### Reservation hierarchy
 
-| Base Dimension | Hierarchy |
+The following table shows the default reservation hierarchy:
+
+| Base dimension | Hierarchy |
 | --- | --- |
 | `SiteId` | 1 |
 | `LocationId` | 2 |
