@@ -17,111 +17,119 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../../includes/banner.md)]
 
-When you run master planning in Planning Optimization, it is important to understand its output, how existing supply covers the demand, and why specific supply was generated. You can use the **Net requirements** page to better understand the calculated requirements that are the results of master planning.
+When you run master planning in Planning Optimization, it's important that you understand its output, how existing supply covers the demand, and why specific supply was generated. You can use the **Net requirements** page to better understand the calculated requirements that master planning produces.
 
-The **Net requirements** page displays the net requirements calculated for the product by Planning Optimization. This page also shows the coverage settings that were applied during the master planning run, the breakdown of the requirements totals according to transaction type, and pegging information.
+The **Net requirements** page shows the net requirements that Planning Optimization calculated for the product. It also shows the coverage settings that were applied during the master planning run, a breakdown of the requirements totals by transaction type, and pegging information.
 
 ## Open the Net requirements page
 
-You can access the **Net requirements** page in any of the following ways:
+You can open the **Net requirements** page in any of the following ways:
 
-- Go to **Product information management > Products > Released products**. Select or open a product. On the Action pane, open the **Plan** tab and, in the **Requirement** group, select **Net requirements**.
-- Go to **Sales and marketing > Sales orders > All sales orders**. Open a sales order. On the **Sales order lines** FastTab, select **Product and supply > Net requirements** from the toolbar.
-- Go to **Master planning > Master planning > Planned orders**. Select or open a planned order. On the Action pane, open the **View** tab and, in the **Requirements** group, select **Requirement profile**.
+- Go to **Product information management \> Products \> Released products**. Select or open a product. Then, on the Action Pane, on the **Plan** tab, in the **Requirement** group, select **Net requirements**.
+- Go to **Sales and marketing \> Sales orders \> All sales orders**. Open a sales order. Then, on the **Sales order lines** FastTab, on the toolbar, select **Product and supply \> Net requirements**.
+- Go to **Master planning \> Master planning \> Planned orders**. Select or open a planned order. Then, on the Action Pane, on the **View** tab, in the **Requirements** group, select **Requirement profile**.
 
 ## Use the Net requirements page
 
-The **Net requirements** page consists of upper and lower sections, and its Action Pane includes an **Update** button with options.
+The **Net requirements** page consists of upper and lower sections. The Action Pane on this page includes an **Update** button. When this button is selected, a menu of commands appears.
 
-### Choose a master plan to view
+### Select a master plan to view
 
-Before reviewing the net requirements of the product, be sure to select the relevant master plan in the **Plan** field at the top of the **Net requirements** page.
+Before you review the net requirements of the product, be sure to select the relevant master plan in the **Plan** field at the top of the page.
 
-### The upper section
+### Upper section
 
 The upper section of the page provides the following tabs:
 
-- **Overview** – Shows the item requirements of the product dimensions.
-- **Item coverage** – Shows the coverage settings that were used during requirements calculation.
-- **Summary** – Shows a breakdown of the requirements totals according to transaction type.
-- **Period** – Shows the receipts, issues, and projected available inventory for each of the periods defined by the period template. You can also get a graphical view of the projected available inventory.
+- **Overview** – View the item requirements of the product dimensions.
+- **Item coverage** – View the coverage settings that were used during the calculation of requirements.
+- **Summary** – View a breakdown of the requirements totals by transaction type.
+- **Period** – View the receipts, issues, and projected available inventory for each period that is defined by the period template. You can also get a graphical view of the projected available inventory.
 
-### The bottom section
+### Lower section
 
-The bottom section of the page provides the following tabs:
+The lower section of the page provides the following tabs:
 
-- **Overview** – Shows the list of the product requirements calculated during the master planning together with issue and receipt transactions corresponding to requirements. The list is sorted by **Requirement date** by default. When you select a requirement, the **Pegging** FastTab in the bottom section displays either the source of the requirement or the transactions that fulfill the requirement.
-- **General** – Shows detailed information of the selected requirement.
-- **Action** – Shows action messages for the requirements.
+- **Overview** – View the list of product requirements that were calculated during the master planning run, together with issue and receipt transactions that correspond to the requirements. By default, the list is sorted by requirement date. When you select a requirement, the **Pegging** FastTab in the lower section shows either the source of the requirement or the transactions that fulfill the requirement.
+- **General** – View detailed information about the selected requirement.
+- **Action** – View action messages for the requirements.
 
 ### The Action Pane
 
-Teh following commands are available on the Action Pane:
+The following commands are available on the Action Pane:
 
 - **Update \> Master planning** – Run master planning directly from the **Net requirements** page.
-- **Update \> Forecast planning** – Run forecast planning directly from the **Net requirements** page. This operation is not yet supported by Planning Optimization.
-- **Update \> Continuity scheduling** – Run continuity scheduling directly from the **Net requirements** page. This operation is not yet supported by Planning Optimization.
+- **Update \> Forecast planning** – Run forecast planning directly from the **Net requirements** page. Planning Optimization doesn't yet support this operation.
+- **Update \> Continuity scheduling** – Run continuity scheduling directly from the **Net requirements** page. Planning Optimization doesn't yet support this operation.
 
 ## Example scenario
 
-This example shows how pegging information is present on the **Net requirements** page.
+This example shows how pegging information is presented on the **Net requirements** page.
 
 ### Prerequisites
 
-Before working through the scenario, prepare the following prerequisites:
+Before you work through the scenario, prepare the following prerequisites:
 
-- You must work on a system where the standard sample date is available, and set the legal entity to *USMF*
-- This example uses product *1000*, which is part of the USMF sample data. Make sure this product is available and set up as follows:
-  - **Default order type:** *Purchase order*
-  - **Inventory on-hand:** *10.00*
-- Create a sales order for a quantity of *25.00* of the product *1000*, use the storage dimensions where on-hand is located.
-- Run master planning for *DynPlan* master plan.
+1. You must work on a system where the standard sample data is available, and you must set the legal entity to *USMF*.
+2. This example uses product *1000*, which is part of the USMF sample data. Make sure that this product is available, and that it is set up in the following way:
+
+    - **Default order type:** *Purchase order*
+    - **Inventory on-hand:** *10.00*
+
+3. Create a sales order for a quantity of *25.00* of product *1000*. Use the storage dimensions where on-hand inventory is located.
+4. Run master planning for the *DynPlan* master plan.
 
 ### Review the calculated requirements
 
-Now you will open the **Net requirements** page for the product *1000* to review how calculated requirements correspond to each other.
+Next, you will open the **Net requirements** page for product *1000* to review how calculated requirements correspond to each other.
 
-1. Go to **Product information management > Products > Released products**.
-1. Select the product with **Item number** *1000*.
-1. On the Action pane, open the **Plan** tab and, in the **Requirement** group, select **Net requirements**.
-1. On the **Net requirements** page, set **Plan** to *DynPlan*.
-1. Select the **Overview** tab in the bottom section of the page.
-1. Verify following requirements are listed as rows on the grid:
+1. Go to **Product information management \> Products \> Released products**.
+1. Select the product that has an **Item number** value of *1000*.
+1. On the Action Pane, on the **Plan** tab, in the **Requirement** group, select **Net requirements**.
+1. On the **Net requirements** page, set the **Plan** field to *DynPlan*.
+1. On the **Overview** tab in the lower part of the page, verify that the following requirements are listed as rows in the grid.
 
-    - **Reference:** *On-hand* | **Requirement quantity:** *10.00* | **Accumulated:** *10.00*
-    - **Reference:** *Planned purchase orders* | **Requirement quantity:** *15.00* | **Accumulated:** *25.00*
-    - **Reference:** *Sales order* | **Requirement quantity:** *-25.00* | **Accumulated:** *blank*
+    | Reference | Requirement quantity | Accumulated |
+    |---|---|---|
+    | On-hand | 10.00 | 10.00 |
+    | Planned purchase orders | 15.00 | 25.00 |
+    | Sales order | -25.00 | (Blank) |
 
     > [!NOTE]
-    > The **Requirement quantity** field represents the total quantity required by the requirement (negative sign) or supplied by it (positive sign). The **Accumulated** field represents the total receipt and issue quantities accumulated up to the selected period.
+    > The **Requirement quantity** field represents the total quantity that the requirement either requires (if the value is negative) or supplies (if the value is positive). The **Accumulated** field represents the total receipt and issue quantities that accumulated up to the selected period.
 
-1. Select the *On-hand* requirement line and, under the **Pegging** FastTab, review the requirements that are covered by this supply. The following row should appear here:
+1. Select the *On-hand* requirement line, and then, on the **Pegging** FastTab, review the requirements that are covered by this supply. The following row should appear there.
 
-    - **Reference:** *Sales order* | **Requirement quantity:** *-25.00* | **Covered quantity:** *-10.00*
+    | Reference | Requirement quantity | Covered quantity |
+    |---|---|---|
+    | Sales order | -25.00 | -10.00 |
 
-    The existing on-hand partially covers the demand that comes from the sales order.
+    The existing on-hand inventory partially covers the demand that comes from the sales order.
 
-    ![Pegging information for the on-hand](media/pegging-on-hand.png "Pegging information for the on-hand")
+    ![Pegging information for the on-hand inventory](media/pegging-on-hand.png "Pegging information for the on-hand inventory")
 
-1. Select the *Planned purchase orders* requirement line and, under the **Pegging** FastTab, review the requirements that are covered by this supply. The following row should appear here:
+1. Select the *Planned purchase orders* requirement line, and then, on the **Pegging** FastTab, review the requirements that are covered by this supply. The following row should appear there.
 
-    - **Reference:** *Sales order* | **Requirement quantity:** *-25.00* | **Covered quantity:** *-15.00*
+    | Reference | Requirement quantity | Covered quantity |
+    |---|---|---|
+    | Sales order | -25.00 | -15.00 |
 
-    Because the sales order has been already partially covered, the system creates a planned purchase order for the remaining uncovered quantity.
+    Because the sales order has already been partially covered, the system creates a planned purchase order for the remaining uncovered quantity.
 
     ![Pegging information for the planned purchase order](media/pegging-planned-purchase-order.png "Pegging information for the planned purchase order")
 
-1. Select the *Sales order* requirement line and, under the **Pegging** FastTab, review the requirements that cover this demand. The following rows should appear here:
+1. Select the *Sales order* requirement line, and then, on the **Pegging** FastTab, review the requirements that cover this demand. The following rows should appear there.
 
-    - **Reference:** *On-hand* | **Requirement quantity:** *10.00* | **Covered quantity:** *10.00*
-    - **Reference:** *Planned purchase orders* | **Requirement quantity:** *15.00* | **Covered quantity:** *15.00*
+    | Reference | Requirement quantity | Covered quantity |
+    |---|---|---|
+    | On-hand | 10.00 | 10.00 |
+    | Planned purchase orders | 15.00 | 15.00 |
 
-    ![Pegging information for the sales order.](media/pegging-planned-purchase-order.png "Pegging information for the sales order")
+    ![Pegging information for the sales order](media/pegging-planned-purchase-order.png "Pegging information for the sales order")
 
 > [!NOTE]
-> Since some features are not yet supported by Planning Optimization, so the *Safety stock* and *Expired batch* requirement types aren't present on **Net requirements** page. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
-
-> [!NOTE]
-> If you are using the built-in master planning engine, then batch-controlled products are supported. For batch-controlled products, expired on-hand is displayed on the **Net requirements** page but is not pegged with demand requirements. Such expired on-hand lines are shown on the **Net requirements** page as *Expired batch* requirement lines.
+> Because Planning Optimization doesn't yet support some features, the *Safety stock* and *Expired batch* requirement types aren't included on the **Net requirements** page. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
+>
+> If you're using the built-in master planning engine, batch-controlled products are supported. For batch-controlled products, expired on-hand inventory is shown on the **Net requirements** page, but it isn't pegged with demand requirements. Expired on-hand lines of this type are shown as *Expired batch* requirement lines on the **Net requirements** page.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
