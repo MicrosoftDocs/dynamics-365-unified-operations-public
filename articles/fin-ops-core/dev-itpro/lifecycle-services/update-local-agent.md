@@ -34,20 +34,21 @@ This topic explains how to update the local agent. The latest version of the loc
 
 | Local agent version | Capability | 
 |---------------------|------------|
-| Null                | This initial version deploys Platform update 8. |
-| 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
-| 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
-| 2.0.0               | This version enables servicing flows and deploys Platform update 12. |
-| 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. |
-| 2.1.1               | This version fixes an issue that occurs when the download fails and the Lifecycle Services (LCS) **Maintain** button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2.  |
-| 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still consider them as missing a few bytes and therefore fail the download.  |
-| 2.2.0               | This version fixes locked dlls during cleanup and enables prerequisites for supporting Active Directory Federation Services (AD FS) that also is used for Microsoft 365. |
-| 2.3.0               | This version adds support for pre- and post-deployment scripts.  |
-| 2.3.1               | This version fixes orchestration service crashes that may occur during clean up on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of pre-deployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). |
-| 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. |
-| 2.5.0               | This version updates dependencies and fixes a cleanup bug. |
-| 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning timeout. |
 | 2.7.0               | This version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. |
+| 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning timeout. |
+| 2.5.0               | This version updates dependencies and fixes a cleanup bug. |
+| 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. |
+| 2.3.1               | This version fixes orchestration service crashes that may occur during clean up on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of pre-deployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). |
+| 2.3.0               | This version adds support for pre- and post-deployment scripts.  |
+| 2.2.0               | This version fixes locked dlls during cleanup and enables prerequisites for supporting Active Directory Federation Services (AD FS) that also is used for Microsoft 365. |
+| 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still consider them as missing a few bytes and therefore fail the download.  |
+| 2.1.1               | This version fixes an issue that occurs when the download fails and the Lifecycle Services (LCS) **Maintain** button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2.  |
+| 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. |
+| 2.0.0               | This version enables servicing flows and deploys Platform update 12. |
+| 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
+| 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
+| Null                | This initial version deploys Platform update 8. |
+
 
 ## What's new in local agent 2.7.0
 
