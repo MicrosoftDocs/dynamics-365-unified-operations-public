@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Instance cache
-description: This topic describes...
+title: Data action instance cache
+description: his topic describes how to use data action instance cache to reduce the size of the data action payload sent to the client browser to increase site performance. 
 author: samjarawan
 ms.date: 07/30/2021
 ms.topic: article
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Release 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use data action instance cache to reduce the size of the data action payload sent to the client browser to increase site performance.  
+This topic describes how to use data action instance cache to reduce the size of the data action payload sent to the client browser to increase site performance.  If a data action result is not needed when rendering a module, setting the data action **dataCacheType** to **instance** will prevent the data action output being sent to the client.  
 
-This is useful when a module's data action calls child data action(s).  In this scenario the module only requires the parent data action result which combines the child results when rendering the module, however the child data action result will also be returned to the client.  Setting the data action **dataCacheType** to **instance** to prevent the data action output being sent to the client.  
+This is useful when a module's data action calls child data action(s), since the module only requires the parent data action result (which combines the child data action results).  In this scenario the child data action's **dataCacheType** should be set to **instance** to ensure the result is not sent back to the client.
 
 The below example shows how to set the **dataCacheType** within the data action typescript code.
 
@@ -56,22 +56,12 @@ export class SampleDataActionInput implements Msdyn365.IActionInput {
 ```
 
 ## Instance cache settings for the retail proxy data actions
-As of the release of module library 10.0.19, all retail proxy data actions have been set to **instance** to reduce the client data payload.
-Custom modules should avoid using OOB retail proxy data actions, instead they should use @msdyn365-commerce-modules/retail-actions
-or create data action wrapper to call retail proxy data actions to prevent render issue.
+As of the release of module library 10.0.19, all [retail proxy data actions](call-retail-server-apis.md#retail-server-proxy-data-action-managers) have been set to **instance** to reduce the client data payload, which are typically called from the [core data actions](core-data-actions.md).
 
-If using a module libray version < 10.0.19, instance caching can be enabled in the [platform settings](platform-settings.md) file with the **shouldUseInstanceCache** property. 
+Custom modules should avoid using [retail proxy data actions](call-retail-server-apis.md#retail-server-proxy-data-action-managers) directly since they are now set to use instance cache and results will not be sent to client.  Instead they should leverage either [core data actions](core-data-actions.md) or create a custom data action that will internally leverage the retail proxy data actions.
+
+If using a module libray version prior to version 10.0.19, instance caching can be opted in the [platform settings](platform-settings.md) file with the **shouldUseInstanceCache** property set to **true**. 
 {
-    "dataActionTimeoutInMs": 4000,
-    "minClientChunkSize": 5000,
-    "excludeModules": [ ],
-    "namespaceExtensions" : [ ],
-    "secretsManagerOUN" : 128,
-    "clientSideDataActionTimeoutInMs": 4000,
-    "RequestReaderPluginTimeoutInMs": 500,
+    ...
     "shouldUseInstanceCache": true
 }
-
-
-
-
