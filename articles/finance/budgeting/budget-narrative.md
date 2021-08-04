@@ -28,6 +28,8 @@ ms.dyn365.ops.version: 10.0.18
 # Budget plan narrative
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 When you're planning to publish budget books or documents, it's sometimes necessary to include a description and/or a revenue summary in a budget plan. This information can include a description of the budget plan, or a list of assumptions, performance measures, revenue information, or proposed changes to services that led to the amounts on specific budget lines. This feature will enable you to use an HTML editor to control budget planners to document the considerations that went into creating the plan.
 
