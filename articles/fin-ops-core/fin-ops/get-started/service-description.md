@@ -32,10 +32,13 @@ ms.dyn365.ops.version: 10.0.18
 
 ## Overview
 
-Microsoft Dynamics 365 Finance and Operations are Enterprise Resource Planning (ERP) services for enterprises that are built on and for the Microsoft Azure Cloud. These services provide organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Depending on customer requirement, Finance and Operations can include one or more of the following applications: Finance, Human Resources, Supply Chain Management, Commerce and Project Operations. It brings together these applications, business intelligence, infrastructure, compute, and database services and enables organizations to run industry-specific and operational business processes that are extendable with specific solutions from Independent Software Vendors (ISVs). Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
+Microsoft Dynamics 365 Finance and Operations is an Enterprise Resource Planning (ERP) service that is built on and for the Microsoft Azure Cloud. The service provides organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Finance and Operations includes one or more of the following solution areas: Finance, Human Resources, Supply Chain Management, Commerce and Project Operations. It brings together these applications plus business intelligence, infrastructure, compute, and database services and enables organizations to run industry-specific and operational business processes. Business processes can be augmented or extended with low-code Microsoft Power Platform Tools, extended by Pro Developers using Microsoft Visual Studio with Azure DevOps, or extended with Independent Software Vendors (ISV) solutions from Microsoft Appsource. Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
 
+- [Microsoft Power Platform](https://powerplatform.microsoft.com)
+- [Microsoft Visual Studio](https://visualstudio.microsoft.com)
+- [Azure DevOps](https://dev.azure.com)
 - [Microsoft AppSource](https://appsource.microsoft.com/partners)
-- [Licensing Guide](https://www.microsoft.com/en-us/Licensing/product-licensing/dynamics365)
+- [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)
 
 The Finance and Operations cloud service is comprised of the components illustrated below.
 
@@ -45,23 +48,23 @@ The Finance and Operations cloud service is comprised of the components illustra
 
 The operating model of Finance and Operations distinguishes specific roles and responsibilities for the customer, implementation partner, and Microsoft throughout the lifecycle of the service. 
 
-Microsoft maintains the Finance and Operations service by deploying, actively monitoring, and servicing the customer’s sandboxes under the Microsoft subscription and production environment. This includes allocating the required system infrastructure to run the service and proactive communication to Customers about the service’s health. 
+Microsoft maintains the Finance and Operations service by deploying, actively monitoring, and servicing customer sandboxes and production environment within the Microsoft subscription. This includes allocating the required system infrastructure to run the service and proactive communication to customers about the service’s health. 
 
 ![Implementation roles and responsibilities](media/implementation-roles-responsibilities.png)
 
-With the support of their implementation partner, customers determine the configuration of the business application logic in Finance and Operations to match their unique business processes. Customers can extend Finance and Operations with ISV solutions of their choice, unique customizations, or a combination of these. Customers typically choose one of the following configuration scenarios: 
+With the support of their implementation partner, customers determine the configuration of the business application logic in Finance and Operations to match their unique business processes. Customers can extend Finance and Operations with low-code Power Platform applications, ISV solutions of their choice, unique customizations, or a combination of these. Customers typically choose one of the following configuration scenarios: 
 
 -	**Solution 1:** Standard Finance and Supply Chain Management configuration (no extension) 
 -	**Solution 2:** Finance and Supply Chain Management configuration with customer-specific extensions 
 -	**Solution 3:** Finance and Supply Chain Management configuration with customer-specific extensions and one or more ISV solution  
 
-For any of these scenarios, the customer defines, develops, and tests any modifications using Microsoft Dynamics Lifecycle Services (LCS) and tools. 
+For any of these scenarios, the customer defines, develops, and tests any modifications using tools provided in Microsoft Dynamics Lifecycle Services (LCS). 
 
 ![Common configuration scenarios](media/common-configuration-scenarios.png)
 
 ## System configuration
 
-Finance and Operations scales with transaction volume and user load. Each Customer implementation of Finance and Supply Chain Management produces a unique solution comprised of the following: 
+Finance and Operations scales with transaction volume and user load. Each Customer implementation of Finance and Operations produces a unique solution comprised of the following: 
 
 -	**Data composition:** A unique set of parameters that control behavior, layout of the organization, structure of master data (such as financial and inventory dimensions), and granularity of transaction tracking. 
 -	**Extension and configuration:** Extension mechanisms of Finance and Operations with code extensions, ISV solutions, and unique configurations including workflows, integrations, and report configurations. 
@@ -71,17 +74,17 @@ Microsoft configures production environments that are sized to handle the transa
 
 -	Proper allocation of resources of production environments, based on the Customer’s profiling information in the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator); 
 -	Continually monitoring and diagnosing service availability of production environments; and 
--	Analyzing and troubleshooting system performance issues with Finance and Supply Chain Management. 
+-	Analyzing and troubleshooting system performance issues with Finance and Operations. 
 
 To ensure that an implementation is configured for high performance, customers must:
 
--	Provide accurate usage information for the Finance and Supply Chain Management implementation in the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) 
+-	Provide accurate usage information for the Finance and Operations implementation in the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) 
 - Build and test extensions for performance and scale 
 -	Test data configurations appropriately for performance 
 
 ## Service operations
 
-Service operations reflect various aspects of provisioning and use of Finance and Supply Chain Management, from onboarding and implementation to updates and monitoring. For each successful implementation of Finance and Supply Chain Management, Microsoft, the customer, and implementation partner or ISV (when applicable) have specific roles and responsibilities. 
+Service operations reflect various aspects of provisioning and use of Finance and Operations, from onboarding and implementation to updates and monitoring. For each successful implementation of Finance and Operations, Microsoft, the customer, and implementation partner or ISV (when applicable) have specific roles and responsibilities. 
 
 ![Service operations](media/service-operations.png)
 
@@ -116,7 +119,7 @@ LCS provides [provisioning](https://docs.microsoft.com/dynamics365/fin-ops-core/
 
 | Customer's request  | Customer's responsibility  | Microsoft's responsibility | Microsoft's lead time  | Microsoft's estimated maintenance downtime  |
 |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
-| [Deploy a new sandbox instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure) |<ul><li>Ensure that all required instances have been planned and that the applicable add-on offers have been purchased.</br></li></br><li>Run the deployment process in LCS.</br></li></br><li>Complete all tasks specified in the LCS checklists.</br></li></br><li>A Tier 1 sandbox instance (also known as a *development environment*) is a VM [deployed to the customer's Azure subscription](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances) and is customer-managed. A Tier-2 (or higher) environment is a multibox environment closer in topology to a production environment, deployed to Finance and Supply Chain Subscription and is Microsoft-managed (note by Claudia: be careful with this terminology. There are 2 environment types for sandboxes which are hosted under the Microsoft subscription: Microsoft Managed (i.e. the old IAAS topology) and Self-service (i.e. the new SF topology). So unfortuntatly the term 'Microsoft Managed' is already used differently in a misleading way for environments. | N/A | N/A|N/A|
+| [Deploy a new sandbox instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure) |<ul><li>Ensure that all required instances have been planned and that the applicable add-on offers have been purchased.</br></li></br><li>Run the deployment process in LCS.</br></li></br><li>Complete all tasks specified in the LCS checklists.</br></li></br><li>A Tier 1 sandbox instance (also known as a *development environment*) is a VM [deployed to the customer's Azure subscription](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances) and is customer-managed. A Tier-2 (or higher) sandbox environment is a multibox environment closer in topology to a production environment, deployed to the Finance and Operations Subscription.| N/A | N/A|N/A|
 | [Copy golden configuration database from sandbox to production](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).<br><br>*(Note: Performed when ready to do a mock go-live or an actual go-live cutover)* | <ul><li>Run the **Move Database** option in LCS. |N/A | N/A | N/A|
 | [Restore a production point-in-time backup to a mon-production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox)  | <ul><li>Run the **Refresh Database** option in LCS.</br></li></br><li>Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configurations (such as integration endpoints), and enable or add users.</br></li></br><li>Customer should make these changes by applying a data package. | N/A |N/A| N/A|
 | [Non-production instance database point-in-time restore](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore) |<ul><li>Accept that the process cannot be undone.</br></li></br><li>Run the point-in-time restore operation in LCS.| N/A | N/A | N/A |
@@ -124,7 +127,7 @@ LCS provides [provisioning](https://docs.microsoft.com/dynamics365/fin-ops-core/
 
 ### Data back-up and retention 
 
-Databases for Microsoft-managed environments are protected by automatic back-ups. Automatic back-ups are retained for 28 days for production environments (unless Microsoft performs a rollback) and 14 days for sandbox (Tier 2+) environments. A rollback of production may be performed in the event a failure occurs during any planned maintenance update specified in [planned maintenance responsibilities](service-description.md#planned-maintenance-responsibilities).
+Databases for Microsoft-managed environments are protected by automatic back-ups. Automatic back-ups are retained for 28 days for production environments (unless Microsoft performs a rollback) and 7 days for sandbox (Tier 2+) environments. A rollback of production may be performed in the event a failure occurs during any planned maintenance update specified in [planned maintenance responsibilities](service-description.md#planned-maintenance-responsibilities).
 
 For more information about automatic back-ups, see [Automated backups - Azure SQL Database & SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
@@ -170,15 +173,13 @@ The following table describes some typical scenarios and activities for the serv
 
 ### Service update strategy and maintenance windows 
 
-Customers must stay current on the latest service updates in accordance with the [software lifecycle policy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy). All versions of Finance and Supply Chain Management follow the Microsoft Modern Lifecycle Policy. The Modern Lifecycle covers products that are serviced and supported continuously.
+Customers must stay current on the latest service updates in accordance with the [software lifecycle policy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy). All versions of Finance and Operations follow the Microsoft Modern Lifecycle Policy. The Modern Lifecycle covers products that are serviced and supported continuously.
 
-[Service updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/oneversion-overview) to the Finance and Supply Chain Management applications and platform are handled as follows:
+[Service updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/oneversion-overview) to the Finance and Operations applications and platform are handled as follows:
 
-- **Customers on version 10.0.X and higher:** Application and the platform components are released as a single cumulative update, known as a deployable package, for customers to uptake. Microsoft notifies the customer when a new service update is made available. As of April 2019, Microsoft updates customer environments to the latest released update within the maintenance window configured in the customer's LCS project. Unless the service update is paused, the environment will be updated to the latest release. Customers have the option to take the update outside of the scheduled maintenance window. We recommend customers stay current for a better service experience.
+Service Updates are released as a single cumulative update, known as a deployable package, for customers to uptake. Microsoft notifies the customer when a new service update is made available. Microsoft updates customer environments to the latest released update within the maintenance window configured in the customer's LCS project. Unless the service update is paused, the environment will be updated to the latest release. Customers have the option to take the update outside of the scheduled maintenance window via self-service update. We recommend customers stay current for a better service experience.
 
-X++ updates must be applied on a development environment before they can be deployed on a sandbox, staging, or production environment. Binary updates can be applied directly on any environment but must be validated on the customer's sandbox environment before being promoted to a production environment. Refer to the table in [Planned maintenance responsibilities](service-description.md#planned-maintenance-responsibilities) for more detailed instructions.
-
-Please note that some service updates may be mandatory and require no consent. To help protect our customers and the service, Microsoft may apply critical security updates directly to a customer's Finance and Supply Chain production environments.
+Please note that some service updates may be mandatory and require no consent. To help protect our customers and the service, Microsoft may apply critical security updates directly to a customer's Finance and Operations production environment.
 
 #### Planned maintenance responsibilities 
 
@@ -188,19 +189,13 @@ The responsibilities of Microsoft, the implementation partner, and the customer 
 
 | Type of update | Expected action from Microsoft | Expected action from customer/implementation partner | Maintenance window<br><br>*(Microsoft's estimated maintenance downtime)*|
 |-------------------------|-------------------------|-------------------------|------|
-| Customers on version 10.0.x and higher |  |  |  |
 | **Service updates**</br>*Service updates are collections of quality updates and new features for the application and the platform, provided as a deployable package. They are backward compatible* | Initiate updates to the application within the configured maintenance window. | Customer must always stay current on the latest version of the application. | Microsoft initiated maintenance window<br>*(30 minutes – 4 hours*)*|
 | **Critical update**</br>*Update that solves a critical issue.* | <ul><li>Notify customer of the critical update.</br><br><li>Initiate update within the specified timeline. | Apply the critical update.| Microsoft initiated maintenance window<br>*(30 minutes – 4 hours)* |
 | **Extensions**</br>*Change to the standard business application logic.* | No action required. | Validate extensions in customer's non-production instances then promote them to customer's production instance.| Customer initiated maintenance window</br>*(1 – 4 hours)* |
-| Customers on version 8.0 and lower |  |  |  |
-| **Platform updates**<br>*Platform updates are collections of hot fixes and new features for the platform, provided as a deployable package. They are backward compatible. They are also backward compatible with the last major release of the applicable Service.* | Initiate updates to the platform within the configured maintenance window.| Customer must always stay current on the latest version of the platform. | Microsoft initiated maintenance window</br>*(30 minutes – 4 hours**)* |
-| **Major releases**</br>*Major releases for the service include new functionality. The last major update is 8.1.* | Make the new major release available and publish to LCS. | Prepare for the upgrade according to the LCS instructions and best practices.| Customer initiated maintenance window</br>*(5 – 8 hours)* |
 | **Infrastructure updates**<br>*Infrastructure updates are updates made to the underlying infrastructure like operating system updates. These are done monthly.* | Initiate updates within the Microsoft planned maintenance window. | No action needed. | Microsoft initiated maintenance window</br>*(1 – 4 hours)*  |
-| **Finance and Supply Chain Management**</br>*IP address whitelisting - Securing access from customer's corpnet to Finance and Supply Chain Management.* | Finance and Supply Chain Management are Azure services and use Azure IP address ranges. | Customers need to whitelist the Azure datacenter ranges for both their primary and Geo-DR datacenters.</br><br>Link to doc for IP address ranges for Azure. | N/A |
+| **Finance and Operations**</br>*IP address whitelisting - Securing access from customer's corpnet to Finance and Supply Chain Management.* | Finance and Supply Chain Management are Azure services and use Azure IP address ranges. | Customers need to whitelist the Azure datacenter ranges for both their primary and Geo-DR datacenters.</br><br>Link to doc for IP address ranges for Azure. | N/A |
 | **Security**</br>*Secure Infrastructure.* | Microsoft installs anti-malware, uses SSL, rotate secrets, and adheres strictly to SOC/ISO standards.|Refer to the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/security/dynamics365-security)or more details on security. | N/A |
-| Customers on version 8.0 and lower ||  |  |
-| **Network Security Groups (NSG)**</br>*Within the Azure Portal, customers can configure Network Security Group rules to restrict RDP access to their Tier 1 sandbox VMs deployed to their own Azure subscription through LCS.* | Microsoft prohibits Remote Desktop access to any Tier 2+ sandbox environment.</br><br>For self-service deployments, RDP is enabled only for the Tier 1 sandbox. | Customers need to whitelist their IP address ranges via the Azure Portal to enable RDP access to their Tier 1 sandbox environments. Refer to [Cloud deployment overview](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/cloud-deployment-overview#features-of-the-finance-and-operations-production-instance) for more information. | N/A|
-| **ExpressRoute**</br>*Dedicated connection to Finance and Supply Chain Management.*| Finance and Supply Chain Management enabled ExpressRoute over public peering. | Customers must work with their Azure ExpressRoute service provider to acquire a dedicated connection to Finance and Supply Chain Management. | N/A |
+| **ExpressRoute**</br>*Dedicated connection to Finance and Operations.*| Finance and Operations enabled ExpressRoute over public peering. | Customers must work with their Azure ExpressRoute service provider to acquire a dedicated connection to Finance and Operations. | N/A |
 
 \*\*Promoting an update to a customer's production environment is a service request to Microsoft that must be initiated from LCS. This is within the customer planned maintenance window. Request is planned to be executed within two business days. Generally, 95% of updates are applied in less than an hour.
 
@@ -216,7 +211,7 @@ Microsoft's planned maintenance schedule:
 
 ### Security and administrative access 
 
-Administrative access to a Finance and Supply Chain Management production environment is strictly controlled and logged. Customer data is handled in accordance with the Microsoft Online Services Terms. Customer's tenant administrator can access production instances or non-production instances as described in the following table.
+Administrative access to a Finance and Operations production environment is strictly controlled and logged. Customer data is handled in accordance with the Microsoft Online Services Terms. Customer's tenant administrator can access production instances or non-production instances as described in the following table.
 
 For more information, see [Licensing terms and documentation](https://www.microsoft.com/licensing/product-licensing/products).
 
@@ -247,7 +242,7 @@ Microsoft has invested in an extensive toolset to monitor and diagnose Customers
 
 | Microsoft's responsibilities | Customer's responsibilities |
 |-------------------------|-------------------------|
-|<ul><li>Availability monitoring of the service. <br><li>Continuous monitoring and alerts through health metrics and watchdogs for critical components such as AOS, Batch, DIXF, Retail, and Management Reporter. </br><li>Monitoring for performance degradation caused by infrastructure services (AAD, Azure SQL, etc.). </br><li>In the event Microsoft determines that a single process or batch job is causing aberrations, these processes will be thwarted after communication with the customer.|<ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues. </br><li>Application errors need to be diagnosed using the monitoring tools. Diagnose user reported performance aberrations using these tools.</br><li>Inform Microsoft in the event that there is expected load on the system beyond projected peak usage.</br><li>In the event the applicable service is unavailable in the production instance, the customer can create a "Production down" customer support request using LCS. |
+|<ul><li>Availability monitoring of the service. <br><li>Continuous monitoring and alerts through health metrics and watchdogs for critical components such as AOS, Batch, DIXF, Commerce, and Management Reporter. </br><li>Monitoring for performance degradation caused by infrastructure services (AAD, Azure SQL, etc.). </br><li>In the event Microsoft determines that a single process or batch job is causing aberrations, these processes will be thwarted after communication with the customer.|<ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues. </br><li>Application errors need to be diagnosed using the monitoring tools. Diagnose user reported performance aberrations using these tools.</br><li>Inform Microsoft in the event that there is expected load on the system beyond projected peak usage.</br><li>In the event the applicable service is unavailable in the production instance, the customer can create a "Production down" customer support request using LCS. |
 
 #### Incident management 
 
@@ -274,7 +269,7 @@ Microsoft responds to and resolves incidents based on the severity levels set fo
 
 ### Business continuity with high availability and disaster recovery 
 
-Customer's production instances include High Availability (HA) and Disaster Recovery (DR) features.
+Microsoft provides business continuity and disaster recovery for production instances of Finance and Operations if a Microsoft Azure region-wide outage occurs. See [Business continuity and disaster recovery](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery) for more details.
 
 - **High Availability**: HA functionality provides ways to prevent downtime caused by the failure of a single node within an Azure datacenter. Each service's cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. HA for databases is provided through Azure SQL (a platform-as-a-service (PaaS) offering from Microsoft).
 
@@ -283,7 +278,7 @@ Customer's production instances include High Availability (HA) and Disaster Reco
   - Geo-redundant copies of Azure blob storage (containing document attachments) in other Azure regions.
   - Same secondary region for the Azure SQL and Azure blob storage replications.
 
-The primary data stores are supported for replication. This means that components for each service, such Management Reporter and entity store, use transformed data from the primary database, which need to be generated after the recovery site has been setup and service started. Customer code artifacts and recovered data stores is used to re-deploy the site, with a Recovery Time Objective (RTO) of up to 10 hours. This will enable state replication of the compute nodes along with networking and other components to set up the secondary site using the recovered data stores. In the event DR is utilize to recover the customer's production instance, each of Microsoft and customer will perform the responsibilities in [Incident management](service-description.md#incident-management).
+The primary data stores are supported for replication. This means that components for each service, such Management Reporter and entity store, use transformed data from the primary database, which need to be generated after the recovery site has been setup and service started. Customer code artifacts and recovered data stores are used to re-deploy the site, with a Recovery Time Objective (RTO) of up to 10 hours. This will enable state replication of the compute nodes along with networking and other components to set up the secondary site using the recovered data stores. In the event DR is utilized to recover the customer's production instance, Microsoft and customer will perform the responsibilities in [Incident management](service-description.md#incident-management).
 
 
 | Microsoft's responsibilities  | Customer's responsibilities |
@@ -314,7 +309,7 @@ In case of incidents with Finance and Supply Chain Management, customers can sub
 
 ### Service Level Agreement 
 
-Microsoft is committed to an availability of 99.9% per month of the service. If Microsoft does not achieve and maintain the service level for the applicable Service described in the SLA, then the customer may be eligible for a credit towards a portion of its monthly service fees for the applicable Service. See the "Claims" section of the [SLA](https://www.microsoft.com/licensing/product-licensing/products) for details on how to initiate a service credit. 
+Microsoft is committed to an availability of 99.9% per month of the service. If Microsoft does not achieve and maintain the service level for the applicable Service described in the SLA, then the customer may be eligible for a credit towards a portion of its monthly service fees for the applicable Service. See the "Claims" section of the [SLA](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services) for details on how to initiate a service credit. 
 
 ## Important resources
 
