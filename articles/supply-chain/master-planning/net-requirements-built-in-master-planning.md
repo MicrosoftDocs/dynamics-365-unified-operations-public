@@ -17,11 +17,10 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../includes/banner.md)]
 
-When you run master planning, it is important to comprehend its output and understand how existing supply covers the demand and why specific supply was generated. You can use the **Net requirements** page to better understand the calculated requirements that are the results of master planning.
+When you run master planning, it's important that you understand its output, how existing supply covers the demand, and why specific supply was generated. You can use the **Net requirements** page to better understand the calculated requirements that master planning produces.
 
-The **Net requirements** page displays the net requirements calculated for the product during master planning. This page also shows the coverage settings that were applied during master planning, the breakdown of the requirements totals according to transaction type, and pegging information.
+The **Net requirements** page shows the net requirements that are calculated for the product during master planning. It also shows the coverage settings that were applied during the master planning run, a breakdown of the requirement totals by transaction type, and pegging information.
 
-The **Net requirements** page works the same way regardless of whether you are using Planning Optimization or the built-in master planning engine. For details about how to work with it, see [Net requirements and pegging information with Planning Optimization](planning-optimization/net-requirements.md).
-
+The **Net requirements** page works in the same way, regardless of whether you're using Planning Optimization or the built-in master planning engine. For more information about how to work with this page, see [Net requirements and pegging information with Planning Optimization](planning-optimization/net-requirements.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
