@@ -197,7 +197,8 @@ The configuration lets you define a set of modifiers to add or subtract to get t
     | Modifier | Enter the modifier name. |
     | Modifier type | Select the modifier type (*Addition* or *Subtraction*). |
 
-Below is an example of the *MyCustomAvailableforReservation* custom calculated measurement. For more information on this example, see the *Data source configuration* section of the [Inventory Visibility Configurations](inventory-visibility-configuration.md#data-source-configuration) topic.
+The following table shows an example of the *MyCustomAvailableforReservation* custom calculated measurement. For more information on this example, see the *Data source configuration* section of the [Inventory Visibility Configurations](inventory-visibility-configuration.md#data-source-configuration) topic.
+
 | Calculated measure data source | Calculated measure | Modifier data source | Modifier | Modifier type |
 |---|---|---|---|---|
 | `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | `Addition` |
