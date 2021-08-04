@@ -208,9 +208,9 @@ For each transaction classifier, a classifier for the credit note is also
 available. For example, one of these classifiers is **PurchaseCreditNote**
 (purchase credit note).
 
-**Note.** Be sure to associate all sales tax codes with lookup results. If any
-sales tax codes should not generate values in section I, associate with the
-**Other** lookup result.
+> **Note.** Be sure to associate all sales tax codes with lookup results. If any
+> sales tax codes should not generate values in section I, associate with the
+> **Other** lookup result.
 
 ![Application specific parameters page for Turnover lookup;Application specific parameters page for Turnover lookup](media/f99d7ff6529a58623732e112cf864230.png)
 
