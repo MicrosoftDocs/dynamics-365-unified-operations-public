@@ -27,6 +27,9 @@ Optionally, you can set up Dynamics 365 Supply Chain Management (and other third
 
 When you enable the reservation feature, Dynamics 365 Supply Chain Management will automatically be prepared to offset reservations made using Inventory Visibility.
 
+> [!NOTE]
+> The Offset functionality will be supported by Dynamics 365 version 10.0.22. If you want to use the Reservation on Dynamics 365 SCM product version 10.0.21 or below, the offset feature will not work. It is recommended that if you use Inventory Visibility Reservation with Dynamics 365 SCM, you wait and upgrade Dynamics 365 SCM to version 10.0.22
+
 ## Enable the Reservation Feature
 
 Follow the below steps to enable the Reservation Feature
@@ -98,6 +101,9 @@ For inventory transaction statuses that include a specified reserve offset modif
 - Changes in inventory transaction status triggers offsets for reservations when the inventory transaction status reflects that an order process is achieved or skipped. <!--KFM: What do you mean by "is modified"? Is this a condition or a result? -->
 
 The offset quantity follows the inventory quantity specified on inventory transactions. The offset will not take effect when no reserved quantity remains in the Inventory Visibility service.
+
+> [!NOTE]
+> The offset functionality is available from version 10.0.22
 
 ### Set up the Reserve Offset Modifier
 
