@@ -4,7 +4,7 @@
 title: Electronic reporting framework API changes for Application update 10.0.21
 description: This topic describes how the APIs of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.21.
 author: NickSelin
-ms.date: 07/27/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ This topic describes how the application programming interfaces (APIs) of the El
 
 ## <a name="er-api-set-print-management-record-specific-destination"></a>API to enable users to configure ER destinations that are print management record specific
 
-This new API enables users to configure named ER destinations for a particular type of business documents and assign a configured named destination to a [print management](document-reporting-services.md) record. So, this functionality allow to make ER destinations print management record specific.
+This new API enables you to configure ER destinations for a particular type of business document and assign a configured named destination to a [print management](document-reporting-services.md) record. This functionality allows you to make ER destinations print management record-specific.
 
 ```xpp
 /// <summary>Class for enabling NamedDestinationFeature for current document type.</summary>
@@ -53,7 +53,7 @@ public class ERNamedDestinationReportEnabler
 
 ## <a name="er-api-pass-print-management-record-specific-destination"></a>API to run a format mapping with provided destination that is print management record specific
 
-This new API can be used to force ER using a named ER destination to deliver generated documents.
+This new API can be used to force ER to deliver generated documents by using a named ER destination.
 
 ```xpp
 using Microsoft.Dynamics365.LocalizationFramework;
@@ -77,7 +77,7 @@ public interface ERIFormatMappingRunWithNamedDestination
 
 ## Applicability
 
-To set up named destinations and force the ER framework to use the provided named destination, you must first turn on the **Allow to set up ER destinations per print management item** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
+To set up named destinations and force the ER framework to use the provided named destination, first turn on the **Allow to set up ER destinations per print management item** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
 
 ## Additional resources
 
