@@ -190,8 +190,8 @@
         "talent/**/**.md": "dynamics-365-talent"
       },
       "ms.reviewer": {
-        "human-resources/**/**.md": "tfehr",
-        "talent/**/**.md": "tfehr"
+        "human-resources/**/**.md": "twheeloc",
+        "talent/**/**.md": "twheeloc"
       },
       "ms.topic": {
         "fin-ops-core/dev-itpro/mobile-apps/platform/client-apis/**/**.md": "reference",
