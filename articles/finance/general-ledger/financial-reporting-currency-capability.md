@@ -44,8 +44,8 @@ By default, all report amounts are summarized and presented in the accounting cu
 
 - In the row definition, you can specify a **Row modifier** with the attribute set to **Transaction currency** with a currency code listed as the restriction. When you restrict the row to a specific currency, only transactions that are entered for the matching currency will be displayed. This is also the case when you restrict a column to a currency. 
 
-> [!Note]
-> If you haven't specified a currency filter when using the **Transaction currency** attribute, the filter defaults to including all currencies. In that case, the system will include transactions in all the currencies that you have transactions for. We recommend specifiying a specific currency to avoid showing an aggregate amount that's not meaningful in that row when the report is generated.
+> [!NOTE]
+> When you use the **Transaction currency** attribute, if you don't specify a currency filter, the system will include transactions in all the currencies that you have transactions for. We recommend that you specify a currency filter to prevent the row from showing an aggregate amount that isn't meaningful when the report is generated.
 
 ## Reporting on currency
 By default, any amount appearing on a report will appear as the accounting currency amount. Any of the following actions will cause some level of translation to take place:
