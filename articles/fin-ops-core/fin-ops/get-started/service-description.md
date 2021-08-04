@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.18
 Microsoft Dynamics 365 Finance and Operations are Enterprise Resource Planning (ERP) services for enterprises that are built on and for the Microsoft Azure Cloud. These services provide organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Depending on customer requirement, Finance and Operations can include one or more of the following applications: Finance, Human Resources, Supply Chain Management, Commerce and Project Operations. It brings together these applications, business intelligence, infrastructure, compute, and database services and enables organizations to run industry-specific and operational business processes that are extendable with specific solutions from Independent Software Vendors (ISVs). Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
 
 - [Microsoft AppSource](https://appsource.microsoft.com/partners)
-- [Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
+- [Licensing Guide](https://www.microsoft.com/en-us/Licensing/product-licensing/dynamics365)
 
 The Finance and Operations cloud service is comprised of the components illustrated below.
 
