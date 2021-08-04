@@ -55,18 +55,17 @@ export class SampleDataActionInput implements Msdyn365.IActionInput {
 ...
 ```
 
-## Instance cache settings for the Retail Server proxy data actions
+## Instance cache settings for Retail Server proxy data actions
 
-As of the Commerce version 10.0.19 release of the module library, all [Retail Server proxy data actions](call-retail-server-apis.md#retail-server-proxy-data-action-managers) typically called from the [core data actions](core-data-actions.md) have been set to **instance** to reduce the client data payload.
+As of the Commerce version 10.0.19 release of the module library, all [Retail Server proxy data actions](call-retail-server-apis.md#retail-server-proxy-data-action-managers) typically called from [core data actions](core-data-actions.md) have had the **dataCacheType** set to **instance** by default to reduce the client data payload.
 
 Custom modules should avoid using Retail Server proxy data actions directly since they are now set to use the instance cache and results will not be sent to clients. Custom modules should instead either use [core data actions](core-data-actions.md) or custom data actions that employ Retail Server proxy data actions.
 
-If using a Commerce module library version prior to version 10.0.19, instance caching can be enabled in the [platform settings file](platform-settings.md) by setting the **shouldUseInstanceCache** property set to **true**, as shown in the following example. 
+If using a Commerce module library version prior to version 10.0.19, instance caching can be enabled in the [platform settings file](platform-settings.md) by setting the **shouldUseInstanceCache** property to **true**. 
 
-{
-    ...
-    "shouldUseInstanceCache": true
-}
+<!--```JSON-->
+<!--   "shouldUseInstanceCache": true -->
+<!--```-->
 
 ## Additional resources
 
