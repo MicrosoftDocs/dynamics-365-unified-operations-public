@@ -1573,13 +1573,13 @@
         href: inventory/archive-inventory-transactions.md
       - name: Inventory Visibility Add-in
         items:
-        - name: Inventory Visibility Add-in Overview
+        - name: Inventory Visibility Add-in overview
           href: inventory/inventory-visibility.md
-        - name: Setup Inventory Visibility
+        - name: Set up Inventory Visibility
           href: inventory/inventory-visibility-setup.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md
-        - name: Inventory Visibility Reservations
+        - name: Inventory Visibility reservations
           href: inventory/inventory-visibility-reservations.md
         - name: Inventory Visibility on Power Platforms
           href: inventory/inventory-visibility-power-platform.md

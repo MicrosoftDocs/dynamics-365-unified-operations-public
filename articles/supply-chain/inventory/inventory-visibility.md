@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Inventory Visibility Add-in Overview
+title: Inventory Visibility Add-in overview
 description: This topic describes what is Inventory Visibility and the features in Inventory Visibility.
 author: sherry-zheng
 ms.date: 10/26/2020
@@ -24,7 +24,7 @@ ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
 ---
 
-# Inventory Visibility Add-in
+# Inventory Visibility Add-in overview
 
 The Inventory Visibility Add-in (also referred to as *Inventory Visibility*) is an independent and highly scalable microservice that enables real-time on-hand inventory tracking, thus providing a global view of inventory.
 

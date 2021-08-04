@@ -1,5 +1,5 @@
 ---
-title: Inventory Visibility setup
+title: Set up Inventory Visibility
 description: This topic describes how to install the Inventory Visibility Add-in for Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# Inventory Visibility setup
+# Set up Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
