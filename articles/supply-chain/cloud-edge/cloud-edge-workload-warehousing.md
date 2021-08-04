@@ -145,7 +145,7 @@ The following work order types are currently supported for WES workloads on scal
 
 - Sales orders
 - Transfer issue
-- Replenishment
+- Replenishment (except for production raw material!)
 - Inventory movement
 - Cycle counting
 - Purchase orders (linked to warehouse orders)
@@ -301,6 +301,7 @@ The following table summarizes which warehouse management production scenarios a
 | Report as finished and finished goods put away | Yes | Yes |
 | Co-product and by-product put away | Yes | Yes |
 | <p>All other warehouse management processes that are related to production, including:</p><li>Release to warehouse</li><li>Production wave processing</li><li>Raw material picking</li><li>Kanban put away</li><li>Kanban picking</li><li>Start production order</li><li>Production scrap</li><li>Production last pallet</li><li>Register material consumption</li><li>Empty kanban</li></ul> | Yes | No |
+| Raw material replenishment | No | No |
 
 ## Maintaining scale units for WES
 
