@@ -74,7 +74,35 @@ In Dynamics 365 Finance, the described below setup must be done to ensure correc
 
 ## Country/region type in Foreign trade parameters
 
+1. Go to **Tax** > **Setup** > **Foreign trade** > **Foreign trade parameters**
+2. Selct **Countries/regions properties** fast tab
+3. Set the country/region of the current legal entity to **Domestic**. 
+4. If your current legal entity is in Northern Ireland, set the country/region of EU countries/regions that participate in EU trade with the current legal entity to **EU**. For each country/region, you also identify country/region code for foreign trade purposes.
+5. Set the country/region of of all other countries/regions that do business operation with the current legal entity to **Third country/region**. 
+
 ## Sales tax authoritiy
+
+## Company tax registration in customer invoices
+
+If your company is in Northern Ireland and provides services to counterparties in EU, or if you trade in goods from locations 
+in both Great Britain (England, Scotland, and Wales) and Northern Ireland, you should enable and use **Company tax registration in customer invoices** feature in **Feature management**.
+
+1. Go to **Workspaces** > **Feature management**. 
+2. Find **Company tax registration in customer invoices** and use button **Enable** to activate the feature. 
+
+Find more information about feature management and available options in [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+
+This feature allows to select company tax registration ID when user posts sales invoices or packing slips from:
+
+- Sales order
+- Free text invoice
+- Projects.
+
+This feature will let user to issue invoices that use tax registration number of the company with **GB** (for England, Scotland, and Wales) or **XI** (for Northern Ireland) prefix.
+
+To use **Company tax registration in customer invoices** feature, tax registration ID must be set up in **Registration IDs** of your legal entity. Find more information about  how to setup registration ID master data in [Registration IDs](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-registration-ids).
+
+When **Company tax registration in customer invoices** feature is enabled, the **Registration type** that is set up as **Primary for country**, assosiated with **VAT ID** registration categoty and used for **Regiatratin ID** of the legal entity to define its tax registration number will be used as default value for **Tax registration number** field in sales orders during invoice and packing slip posting and in project invoice proposal posting.
 
 ## Sales tax settlement periods
 
@@ -88,7 +116,7 @@ In Dynamics 365 Finance, the described below setup must be done to ensure correc
 
 ## Boxes calculation for VAT declaration
 
-The default setup of the VAT declaration that is proposed in the scope of the MTD VAT feature is explaned in [Set up application-specific parameters for VAT Declaration format](emea-gbr-mtd-vat-integration-setup.md#declaration) section of this topic. It provides the following algorithm to calculate the VAT Return amounts.
+The default setup of the VAT declaration that is proposed in the scope of the MTD VAT feature is explaned in [Set up application-specific parameters for VAT Declaration format](emea-gbr-mtd-vat-integration-setup.md#declaration) section of this topic. It provides the following algorithm to calculate the VAT return amounts.
 
 | Box number | Short description    | Calculation description       |
 |------------|----------------------|-------------------------------|
