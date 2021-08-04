@@ -1544,6 +1544,10 @@
                 href: localizations/emea-nl-vat-declaration-netherlands.md
               - name: EU sales list
                 href: localizations/emea-nl-eu-sales-list.md
+            - name: Switzerland reporting
+              items: 
+              - name: VAT declaration
+                href: localizations/emea-che-VAT-declaration-Switzerland.md
             - name: United Kingdom reporting
               items:
               - name: Prepare for integration with MTD for VAT
@@ -3314,6 +3318,8 @@
           href: localizations/emea-che-esr-customer-payments-import.md
         - name: Swiss QR-bills
           href: localizations/emea-che-swiss-qr-bills.md
+        - name: VAT declaration
+          href: localizations/emea-che-VAT-declaration-Switzerland.md
       - name: Thailand
         items:
         - name: Thailand overview
