@@ -69,7 +69,7 @@ You can turn on maintenance mode locally by running the following command.
 ```Console
 J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode true
 ```
-After running the command, you will want to Restart the **World Wide Web Publishing Service** to reset IIS.  The system will then be in maintenance mode.  
+After running the command, you will want to restart the **World Wide Web Publishing Service** to reset IIS. The system will then be in maintenance mode.  
 
 The following table describes the parameters that are used in this command.
 
@@ -96,7 +96,7 @@ You can turn off maintenance mode by running the following command.
 ```Console
 J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
 ```
-After running the command, you will want to Restart the **World Wide Web Publishing Service** to reset IIS.  The system will then be out of maintenance mode.  
+After running the command, you will want to restart the **World Wide Web Publishing Service** to reset IIS. The system will then be out of maintenance mode.  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
