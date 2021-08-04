@@ -321,7 +321,7 @@ Microsoft is committed to an availability of 99.9% per month of the service. If 
 
 - [Microsoft Lifecycle Policy](https://docs.microsoft.com/lifecycle/): Provides consistent and predictable guidelines for the availability of support throughout the life of a product.
 
-- [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544): Use this guide to improve your understanding of how to license Dynamics 365.
+- [Licensing guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365): Use this guide to improve your understanding of how to license Dynamics 365.
 
 - [Customer support](https://dynamics.microsoft.com/support/): Get industry-leading support for your Dynamics 365 applications.
 
@@ -359,11 +359,11 @@ Microsoft's support team dedicated to providing quality service for Finance and 
 ### Non-production instance 
 Any of the following instances of a service that are used by the customer for validating extensions and other development tasks:
 
-- **Sandbox Tier 1:** Developer instance (customer-managed) 
+- **Sandbox Tier 1:** Developer instance (customer-hosted) 
 
-- **Sandbox Tier 2:** Standard Acceptance Testing instance (Microsoft-managed)
+- **Sandbox Tier 2:** Standard Acceptance Testing instance 
 
-- **Sandbox Tiers 3-5:** Add-on aandboxes (Microsoft-managed) [Details for each Tier](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning?toc=/dynamics365/finance/toc.json#selecting-the-correct-tier-2-or-higher-environment)
+- **Sandbox Tiers 3-5:** Add-on aandboxes [Details for each Tier](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning?toc=/dynamics365/finance/toc.json#selecting-the-correct-tier-2-or-higher-environment)
 
 ### Production instance 
 Instance of Finance and Supply Chain Management used by the customer for managing its "live" daily transactions.
