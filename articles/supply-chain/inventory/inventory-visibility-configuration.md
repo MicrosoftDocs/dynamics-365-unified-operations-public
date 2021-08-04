@@ -21,9 +21,9 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic describes how to configure Inventory Visibility.
 
-## <a id="introduction"></a>Introduction
+## <a name="introduction"></a>Introduction
 
-Before playing around with the Inventory Visibility, you should complete the configurations following the listed sections:
+Before you begin to work with Inventory Visibility, you must complete the following configurations, which are described in this topic:
 
 - [Data Source Configuration](#data-source-configuration)
 - [Partition Configuration](#partition-configuration)
@@ -32,26 +32,26 @@ Before playing around with the Inventory Visibility, you should complete the con
 - [Default Configuration Sample](#default-configuration-sample)
 
 > [!NOTE]
-> You can view and edit the Inventory Visibility Configurations in [Power Apps](./inventory-visibility-power-platform.md#configuration). After the editing is complete, select the **Update Configuration** button in the app.
+> You can view and edit Inventory Visibility configurations in [Power Apps](./inventory-visibility-power-platform.md#configuration). After the configuration is complete, select the **Update Configuration** button in the app.
 
-## <a id="data-source-configuration"></a>Data source configuration
+## <a name="data-source-configuration"></a>Data source configuration
 
-Data Source represents the system from which your data comes, such as _fno_ and _pos_. (_fno_ stands for Dynamics 365 Finance and Operations, _pos_ stands for point of sale)
+The data Source represents the system from which your data comes, such as _fno_ or _pos_. (_fno_ stands for Dynamics 365 Finance and Operations, _pos_ stands for point of sale)
 
-The Data Source Configuration includes the following parts:
+The data source configuration includes the following parts:
 
-- Dimension (Dimension Mapping)
-- Physical Measure
-- Calculated Measure
+- Dimension (dimension mapping)
+- Physical measure
+- Calculated measure
 
 > [!NOTE]
 > Data source _fno_ is reserved for Dynamics 365 Supply Chain Management.
 
-### <a id="data-source-configuration-dimension"></a>Dimension (dimension mapping)
+### <a name="data-source-configuration-dimension"></a>Dimension (dimension mapping)
 
-The purpose of dimension configuration is to standardize the multi-system integration for the event posting and query based on dimension combinations.
+The purpose of the dimension configuration is to standardize the multi-system integration for posting events and queries based on dimension combinations.
 
-The Inventory Visibility provides a list of general base dimensions:
+Inventory Visibility supports the following list of general base dimensions:
 
 | Dimension type | Base dimension |
 | --- | --- |
@@ -63,23 +63,23 @@ The Inventory Visibility provides a list of general base dimensions:
 | Tracking | `SerialId` |
 | Location | `LocationId` |
 | Location | `SiteId` |
-| Inventory Status | `StatusId` |
-| Warehouse Specific | `WMSLocationId` |
-| Warehouse Specific | `WMSPalletId` |
-| Warehouse Specific | `LicensePlateId` |
+| Inventory status | `StatusId` |
+| Warehouse specific | `WMSLocationId` |
+| Warehouse specific | `WMSPalletId` |
+| Warehouse specific | `LicensePlateId` |
 | Others | `VersionId` |
-| Inventory (Custom) | InventDimension1 ~ InventDimension12 |
-| Extension | ExtendedDimension1 ~ ExtendedDimension8 |
+| Inventory (custom) | `InventDimension1` ~ `InventDimension12` |
+| Extension | `ExtendedDimension1` ~ `ExtendedDimension8` |
 
 > [!NOTE]
-> The dimension types listed in the table are for reference only. You don't need to define them in the Inventory Visibility.
+> The dimension types listed in the table are for reference only. You don't need to define them in Inventory Visibility.
 
 > [!NOTE]
-> Inventory (Custom) dimensions might be reserved for Dynamics 365 Suppply Chain Management usage. In this case, you can use extended dimensions instead.
+> Inventory (custom) dimensions might be reserved for Dynamics 365 Supply Chain Management. In this case, you can use the extended dimensions instead.
 
-External systems can access the Inventory Visibility through RESTful APIs. For the integration, the Inventory Visibility enables you to configure the _external data source_ and the mapping from the _external dimensions_ to the _base dimensions_. Here is an example of dimension mapping table:
+External systems can access Inventory Visibility through its RESTful APIs. For the integration, Inventory Visibility enables you to configure the _external data source_ and the mapping from the _external dimensions_ to the _base dimensions_. Here is an example of a dimension mapping table:
 
-| External Dimension | Base Dimension |
+| External dimension | Base dimension |
 | --- | --- |
 | `MyColorId` | `ColorId` |
 | `MySizeId` | `SizeId` |
@@ -87,36 +87,36 @@ External systems can access the Inventory Visibility through RESTful APIs. For t
 | `MyDimension1` | `ExtendedDimension1` |
 | `MyDimension2` | `ExtendedDimension2` |
 
-By configuring a dimension mapping, you can send the _external dimensions_ directly to the Inventory Visibility which will convert _external dimensions_ to _base dimensions_ automatically.
+By configuring a dimension mapping, you can send the _external dimensions_ directly to Inventory Visibility, which will convert _external dimensions_ to _base dimensions_ automatically.
 
-### Physical measure
+### Physical measures
 
-Physical Measure modifies the quantity and reflects the inventory status. You can define your own physical measures based on your needs.
+Physical measures modify the quantity and reflect the inventory status. You can define your own physical measures based on your needs.
 
-The Inventory Visibility provides a list of default physical measures which are linked to Dynamics 365 Finance and Operations (data source _fno_). Here is an example of physical measures:
+Inventory Visibility provides a list of default physical measures, which are linked to Dynamics 365 Supply Chain Management (data source _fno_). The following table provides an example of physical measures:
 
-| Physical Measure Name | Description |
+| Physical measure name | Description |
 | --- | --- |
-| `NotSpecified` | Not Specified |
+| `NotSpecified` | Not specified |
 | `Arrived` | Arrived |
-| `AvailOrdered` | Available Ordered |
-| `AvailPhysical` | Available Physical |
+| `AvailOrdered` | Available ordered |
+| `AvailPhysical` | Available physical |
 | `Deducted` | Deducted |
 | `OnOrder` | OnOrder |
 | `Ordered` | Ordered |
-| `PhysicalInvent` | Physical Inventory |
+| `PhysicalInvent` | Physical inventory |
 | `Picked` | Picked |
-| `PostedQty` | Posted Quantity |
-| `QuotationIssue` | Quotation Issue |
-| `QuotationReceipt` | Quotation Receipt |
+| `PostedQty` | Posted quantity |
+| `QuotationIssue` | Quotation issue |
+| `QuotationReceipt` | Quotation receipt |
 | `Received` | Received |
 | `Registered` | Registered |
-| `ReservOrdered` | Ordered Reserved |
-| `ReservPhysical` | Physical Reserved |
+| `ReservOrdered` | Ordered reserved |
+| `ReservPhysical` | Physical reserved |
 
-### <a id="data-source-configuration-calculated-measure"></a>Calculated measure
+### <a name="data-source-configuration-calculated-measure"></a>Calculated measures
 
-Calculated Measure provides the customized computation formula which is made up of a combination of physical measures. This functionality simply allows you to define a set of physical measures that will be added, and/or a set of physical measures that will be subtracted, in order to form the customized measurement.
+Calculated measures provide a customized computation formula that is made up of a combination of physical measures. This functionality lets you define a set of physical measures that will be added, and/or a set of physical measures that will be subtracted, in order to form the customized measurement.
 
 For example, suppose you have the following query result:
 
@@ -150,9 +150,9 @@ For example, suppose you have the following query result:
 ]
 ```
 
-Then you configure the calculated measure as `MyCustomAvailableforReservation` to be consumed by the consumption system:
+Then you configure a calculated measure called `MyCustomAvailableforReservation` (to be consumed by the consumption system) as follows:
 
-| Consumption system | Calculated Measure | Data Source | Physical Measure | Calculation Type |
+| Consumption system | Calculated measure | Data source | Physical measure | Calculation type |
 | --- | --- | --- | --- | --- |
 | `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | Addition |
 | `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | Addition |
@@ -202,11 +202,11 @@ With this computation formula, the new query result will include the customized 
 The `MyCustomAvailableforReservation` output is based on the calculation setting in the custom measurements as:  
  _100 + 50 + 80 + 90 + 30 &ndash; 10 &ndash; 20 &ndash; 60 &ndash; 40 = 220_
 
-## <a id="partition-configuration"></a>Partition configuration
+## <a name="partition-configuration"></a>Partition configuration
 
-Partition Configuration consists of a combination of base dimensions and defines the data distribution pattern. Data operations in the same partition support high performance and do not cost too much. Therefore, good partition patterns contribute much benefits.
+The partition configuration consists of a combination of base dimensions and defines the data distribution pattern. Data operations in the same partition support high performance and do not cost too much. Therefore, good partition patterns contribute significant benefits.
 
-The Inventory Visibility provides a default partition configuration as follows:
+Inventory Visibility provides a default partition configuration as follows:
 
 | Base Dimension | Hierarchy |
 | --- | --- |
@@ -214,21 +214,25 @@ The Inventory Visibility provides a default partition configuration as follows:
 | `LocationId` | 2 |
 
 > [!NOTE]
-> The default partition configuration is for reference only. You don't need to define it in the Inventory Visibility. Currently, the partition configuration upgrade is not supported.
+> The default partition configuration is for reference only. You don't need to define it in Inventory Visibility. Currently, the partition configuration upgrade is not supported.
 
-## <a id="index-configuration"></a>Product index hierarchy configuration
+## <a name="index-configuration"></a>Product index hierarchy configuration
 
 Most of the time, the inventory on-hand query will not only be at the highest "total" level, but you may want to see results aggregated based on the inventory dimensions.
 
-The Inventory Visibility provides flexibility by allowing you to set up the _indexes_, which are based on the dimension or the combination of the dimensions. An _Index_ consists of Set Number, Dimension and Hierarchy. Here are the definitions:
+Inventory Visibility provides flexibility by allowing you to set up the _indexes_, which are based on the dimension or the combination of the dimensions. An _Index_ consists of a *Set number*, *Dimension*, and *Hierarchy*. Here are the definitions:
 
 | Name | Description |
 | --- | --- |
-| Set Number | Dimensions belonging to the same set (index) will be grouped together and allocated with the same set number. |
-| Dimension | Base dimension that you want the query result is aggregated on. |
-| Hierarchy | Hierarchy is used to define the supported dimension combinations that can be queried. For example, if you set up a dimension set with a hierarchy sequence of (_ColorId_, _SizeId_, _StyleId_), the system will support queries on 4 dimension combinations. The first combination is empty. The second combination is (_ColorId_). The third combination is (_ColorId_, _SizeId_). And the fourth combination is (_ColorId_, _SizeId_, _StyleId_). The other combinations are not supported. Please refer to the below example for details. |
+| Set number | Dimensions belonging to the same set (index) will be grouped together and allocated with the same set number. |
+| Dimension | Base dimensions that the query result is aggregated on. |
+| Hierarchy | Hierarchy is used to define the supported dimension combinations that can be queried. For example, if you set up a dimension set with a hierarchy sequence of (_ColorId_, _SizeId_, _StyleId_), the system will support queries on 4 dimension combinations. The first combination is empty. The second combination is (_ColorId_). The third combination is (_ColorId_, _SizeId_). And the fourth combination is (_ColorId_, _SizeId_, _StyleId_). The other combinations are not supported. Please refer to the following example for details. |
 
-Here is an example of how the hierarchy works. Below is a list of inventories.
+### Example
+
+This section provides an example of how the hierarchy works.
+
+Suppose you have the following items in your inventory:
 
 | Item | ColorId | SizeId | StyleId | Quantity |
 | --- | --- | --- | --- | --- |
@@ -240,7 +244,7 @@ Here is an example of how the hierarchy works. Below is a list of inventories.
 | T-shirt | Red | Small | Regular | 6 |
 | T-shirt | Red | Large | Regular | 7 |
 
-Suppose the index is as follows:
+And suppose the index is as follows:
 
 | Set Number | Dimension | Hierarchy |
 | --- | --- | --- |
@@ -248,7 +252,7 @@ Suppose the index is as follows:
 | 1 | `SizeId` | 2 |
 | 1 | `StyleId` | 3 |
 
-The index enables you to query the inventory on-hand in below ways:
+The index enables you to query the on-hand inventory in the following ways:
 
 - () - grouped by all
   - T-shirt, 28
@@ -270,20 +274,20 @@ The index enables you to query the inventory on-hand in below ways:
   - T-shirt, Red, Large, Regular, 7
 
 > [!NOTE]
-> Base dimensions defined in partition configuration should not be defined in index configurations.
+> Base dimensions defined in the partition configuration shouldn't be defined in index configurations.
 
-## <a id="reservation-configuration"></a>Reservation configuration
+## <a name="reservation-configuration"></a>Reservation configuration
 
-Reservation Configuration is necessary if you want to experience the Soft Reservation feature. Basically, it contains 2 parts:
+Reservation configuration is necessary if you want to use the soft reservation feature. It is made up of two fundamental parts:
 
-- Soft Reservation Mapping
-- Soft Reservation Hierarchy
+- Soft reservation mapping
+- Soft reservation hierarchy
 
-### Soft Reservation Mapping
+### Soft reservation mapping
 
-When you do reservation, you may want to know if the current inventory on-hand is available for reservation. This validation is linked to a calculated measure which represents a computation formula of a combination of physical measures.
+When you make a reservation, you may want to know if on-hand inventory is currently available for reservation. This validation is linked to a calculated measure that represents a computation formula of a combination of physical measures.
 
-Suppose _SoftReservOrdered_ (physical measure) of _iv_ (data source) is the reservation measure. Afterwards, define a calculated measure _AvailableToReserve_ of _iv_ as follows:
+Suppose reservation measure is found from the phys _SoftReservOrdered_ (physical measure) of _iv_ (data source) is the reservation measure. Afterwards, define a calculated measure _AvailableToReserve_ of _iv_ as follows:
 
 | Calculation type | Data source | Physical measure |
 | --- | --- | --- |
@@ -298,7 +302,7 @@ Then set up a soft reservation mapping from _SoftReservOrdered_ to _AvailableToR
 | --- | --- | --- | --- |
 | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
 
-This soft reservation mapping provides a mapping from the reservation measure _SoftReservOrdered_ to a calculated measure _AvailableToReserve_. When you do reservation on _SoftReservOrdered_, the Inventory Visibility will automatically find _AvailableToReserve_ and its related computation formula to do the reservation validation.
+This soft reservation mapping provides a mapping from the reservation measure _SoftReservOrdered_ to a calculated measure _AvailableToReserve_. When you do reservation on _SoftReservOrdered_, Inventory Visibility will automatically find _AvailableToReserve_ and its related computation formula to do the reservation validation.
 
 Suppose you have some on-hand in Inventory Visibility as follows:
 
@@ -354,9 +358,9 @@ In this sample, you can do reservation in the following dimension sequences:
 
 A valid dimension sequence should strictly follow the reservation hierarchy one by one. E.g., (SiteId, LocationId, SizeId) is invalid, because _ColorId_ is missing in the hierarchy sequence.
 
-## <a id="default-configuration-sample"></a>Default Configuration Sample
+## <a name="default-configuration-sample"></a>Default Configuration Sample
 
-The Inventory Visibility will set up a default configuration in initialization stage. You may modifiy the configuration and do the upgrade based on your needs.
+Inventory Visibility will set up a default configuration in initialization stage. You may modify the configuration and do the upgrade based on your needs.
 
 ### Data Source Configuration
 
@@ -482,7 +486,7 @@ Data Source _iv_ (Inventory Visibility):
  | Addition | `iv` | `ReservPhysical` |
  | Addition | `iv` | `ReservOrdered` |
 
-Data Source _fno_ (Dynamics 365 Finance and Operations):
+Data Source _fno_ (Dynamics 365 Supply Chain Management):
 
 - Dimension Mapping
 

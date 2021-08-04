@@ -40,7 +40,7 @@ Before you install the Inventory Visibility, you must do the following:
 
 If you have any questions about these prerequisites, please contact the Inventory Visibility product team.
 
-## <a id="setup-microsoft-dataverse"></a>Set up Dataverse
+## <a name="setup-microsoft-dataverse"></a>Set up Dataverse
 
 To set up Dataverse for use with Inventory Visibility, use the package deployer tool to deploy the Inventory Visibility package. The following subsections describe how to complete each of these tasks.
 
@@ -75,7 +75,7 @@ If you have installed an older version of the Inventory Visibility Dataverse sol
 
    Right-click the file and select **Properties**. In the **Properties** window, open the **General** tab and find the **Security** section. Select **Unblock** and apply. If there is no **Security** section on the **General** tab, then the file isn't blocked, so just go to next step.
 
-   ![Unblock downloaded file](media/unblock-file.png "Unblock downloaded file") <!-- KFM: image is missing -->
+   ![Unblock downloaded file](media/unblock-file.png "Unblock downloaded file")
 
 1. Unzip `InventoryServiceApplication.PackageDeployer.zip` to find the following content:
 
@@ -87,7 +87,7 @@ If you have installed an older version of the Inventory Visibility Dataverse sol
 
 1. Execute `.\Tools\PackageDeployment\PackageDeployer.exe`. Follow the instructions on your screen to import the solutions.
 
-## <a id="install-add-in"></a>Install the Inventory Visibility Add-in
+## <a name="install-add-in"></a>Install the Inventory Visibility Add-in
 
 Before you install the add-in, follow the instructions given in [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to register an application and add a client secret to AAD under your Azure subscription.
 
@@ -103,7 +103,7 @@ After you register an application and add a client secret to AAD, do the followi
 1. On the environment page, scroll down until you see the **Environment add-ins** section in the **Power Platform integration** section, where you can find the Dataverse environment name.
 1. In the **Environment add-ins** section, select **Install a new add-in**.
 
-   ![The environment page in LCS.](media/inventory-visibility-environment.png "The environment page in LCS")
+   ![The environment page in LCS](media/inventory-visibility-environment.png "The environment page in LCS")
 
 1. Select the **Install a new add-in** link. A list of available add-ins opens.
 1. Select **Inventory Visibility** in the list.
@@ -112,16 +112,16 @@ After you register an application and add a client secret to AAD, do the followi
    - **AAD application (client) ID**
    - **AAD tenant ID**
 
-   ![Add in setup page.](media/inventory-visibility-setup.png "Add-in setup page")
+   ![Add-in setup page](media/inventory-visibility-setup.png "Add-in setup page")
 
 1. Agree to the terms and condition by selecting the **Terms and conditions** check box.
 1. Select **Install**. The status of the add-in will show as **Installing**. When it's done, refresh the page to see the status change to **Installed**.
 
-## <a id="uninstall-add-in"></a>Uninstall the Inventory Visibility Add-in
+## <a name="uninstall-add-in"></a>Uninstall the Inventory Visibility Add-in
 
 To uninstall the Inventory Visibility Add-in, select **Uninstall** from LCS page. The uninstallation will terminate the Inventory Visibility Add-in, unregister the add-in from LCS, and delete any temporal data stored within the Inventory Visibility Add-in data cache. The primary inventory data stored in your Dataverse subscription will not be deleted by the uninstall process.
 
-To uninstall inventory data stored in your Dataverse subscription, go to https://make.powerapps.com, click **Environment** from the navigation bar and select the Dataverse environment bonded with your LCS environment. Then go to **Solutions** and delete these 5 solutions:
+To uninstall inventory data stored in your Dataverse subscription, go to https://make.powerapps.com, select **Environment** from the navigation bar and select the Dataverse environment bonded with your LCS environment. Then go to **Solutions** and delete the following 5 solutions:
 
 - Anchor solution for Inventory Visibility application in Dynamics 365 solutions
 - Dynamics 365 FNO SCM Inventory Visibility Applications Solution
@@ -129,11 +129,11 @@ To uninstall inventory data stored in your Dataverse subscription, go to https:/
 - Inventory Visibility Standalone
 - Dynamics 365 FNO SCM Inventory Visibility Base Solution
 
-After deletion of these Solutions, the data stored in tables will also be deleted.
+After you delete these solutions, the data stored in tables will also be deleted.
 
-## <a id="setup-dynamics-scm"></a>Set up Dynamics 365 Supply Chain Management
+## <a name="setup-dynamics-scm"></a>Set up Dynamics 365 Supply Chain Management
 
-### <a id="deploy-inventory-visibility-package"></a>Deploy the Inventory Visibility integration package
+### <a name="deploy-inventory-visibility-package"></a>Deploy the Inventory Visibility integration package
 
 If you're running Supply Chain Management version 10.0.17 or earlier, contact the Inventory Visibility on-board support team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the package file. Then deploy the package in LCS.
 
@@ -149,10 +149,10 @@ Make sure that the following features are turned on in your Supply Chain Managem
 | Enable or disable using inventory dimensions on InventSum table      | 10.0.11      | InventUseDimOfInventSumToggle      |
 | Enable or disable using inventory dimensions on InventSumDelta table | 10.0.12      | InventUseDimOfInventSumDeltaToggle |
 
-### <a id="setup-inventory-visibility-integration"></a>Set up Inventory Visibility integration
+### <a name="setup-inventory-visibility-integration"></a>Set up Inventory Visibility integration
 
-1. In Dynamics 365 Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the **Inventory Visibility Integration** feature.
-1. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters**, and enter the URL of the environment where you're running Inventory Visibility, see [Find endpoint according to your LCS environment](./inventory-visibility-power-platform.md#get-service-endpoint) for more details.
-1. Go to **Inventory Management \> Periodic \> Inventory Visibility Integration**, and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
+1. In Dynamics 365 Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the *Inventory Visibility Integration* feature.
+1. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters**, and enter the URL of the environment where you're running Inventory Visibility, see [Find endpoint according to your LCS environment](inventory-visibility-power-platform.md#get-service-endpoint) for more details.
+1. Go to **Inventory Management \> Periodic \> Inventory Visibility Integration** and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
