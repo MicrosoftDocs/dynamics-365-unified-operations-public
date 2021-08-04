@@ -26,30 +26,30 @@ ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Service Description for Dynamics 365 Finance and Dynamics 365 Supply Chain Management
+# Service Description for Dynamics 365 Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
 ## Overview
 
-Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management are Enterprise Resource Planning (ERP) services for enterprises that are built on and for the Microsoft Azure Cloud. These services provide organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Finance and Supply Chain Management bring together a set of ERP, business intelligence, infrastructure, compute, and database services and enable organizations to run industry-specific and operational business processes that are extendable with specific solutions from Independent Software Vendors (ISVs). Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
+Microsoft Dynamics 365 Finance and Operations are Enterprise Resource Planning (ERP) services for enterprises that are built on and for the Microsoft Azure Cloud. These services provide organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Depending on customer requirement, Finance and Operations can include one or more of the following applications: Finance, Human Resources, Supply Chain Management, Commerce and Project Operations. It brings together these applications, business intelligence, infrastructure, compute, and database services and enables organizations to run industry-specific and operational business processes that are extendable with specific solutions from Independent Software Vendors (ISVs). Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
 
 - [Microsoft AppSource](https://appsource.microsoft.com/partners)
 - [Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544)
 
-The Finance and Supply Chain Management cloud service is comprised of the components illustrated below.
+The Finance and Operations cloud service is comprised of the components illustrated below.
 
 ![Illustration showing devices in the Finance and Supply Chain Managemnt environments](media/Devices.png)
 
 ## Operating model
 
-The operating model of Finance and Supply Chain Management distinguishes specific roles and responsibilities for the customer, implementation partner, and Microsoft throughout the lifecycle of the service. 
+The operating model of Finance and Operations distinguishes specific roles and responsibilities for the customer, implementation partner, and Microsoft throughout the lifecycle of the service. 
 
-Microsoft maintains the Finance and Supply Chain Management service by deploying, actively monitoring, and servicing the customer’s sandboxes under the Microsoft subscription  and production environment. This includes allocating the required system infrastructure to run the service and proactive communication to Customers about the service’s health. 
+Microsoft maintains the Finance and Operations service by deploying, actively monitoring, and servicing the customer’s sandboxes under the Microsoft subscription and production environment. This includes allocating the required system infrastructure to run the service and proactive communication to Customers about the service’s health. 
 
 ![Implementation roles and responsibilities](media/implementation-roles-responsibilities.png)
 
-With the support of their implementation partner, customers determine the configuration of the business application logic in Finance and Supply Chain Management to match their unique business processes. Customers can extend Finance and Supply Chain Management with ISV solutions of their choice, unique customizations, or a combination of these. Customers typically choose one of the following configuration scenarios: 
+With the support of their implementation partner, customers determine the configuration of the business application logic in Finance and Operations to match their unique business processes. Customers can extend Finance and Operations with ISV solutions of their choice, unique customizations, or a combination of these. Customers typically choose one of the following configuration scenarios: 
 
 -	**Solution 1:** Standard Finance and Supply Chain Management configuration (no extension) 
 -	**Solution 2:** Finance and Supply Chain Management configuration with customer-specific extensions 
@@ -61,10 +61,10 @@ For any of these scenarios, the customer defines, develops, and tests any modifi
 
 ## System configuration
 
-Finance and Supply Chain Management scales with transaction volume and user load. Each Customer implementation of Finance and Supply Chain Management produces a unique solution comprised of the following: 
+Finance and Operations scales with transaction volume and user load. Each Customer implementation of Finance and Supply Chain Management produces a unique solution comprised of the following: 
 
 -	**Data composition:** A unique set of parameters that control behavior, layout of the organization, structure of master data (such as financial and inventory dimensions), and granularity of transaction tracking. 
--	**Extension and configuration:** Extension mechanisms of Finance and Supply Chain Management with code extensions, ISV solutions, and unique configurations including workflows, integrations, and report configurations. 
+-	**Extension and configuration:** Extension mechanisms of Finance and Operations with code extensions, ISV solutions, and unique configurations including workflows, integrations, and report configurations. 
 -	**Usage patterns:** A unique combination of online and batch usage combined with the ability to integrate with upstream and downstream systems for unified data flow and the ability to differentiate based on the information views used by customers in their business processes. 
 
 Microsoft configures production environments that are sized to handle the transaction volumes and user concurrency. Microsoft is responsible for: 
