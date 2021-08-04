@@ -130,7 +130,7 @@ To set up your product hierarchy index:
     - **Dimension** – Select from the list of base dimensions in the lookup field.
     - **Hierarchy** – This number is automatically generated. Hierarchy is used to define the supported dimension combinations that can be queried within a dimension group (index). For example, if you set up a dimension group with a hierarchy sequency of *Style*, *Color*, and *Size*, the system supports the result of three query groups. The first group is style only. The second group is combination of style and color. And the third group is the combination of style, color, and size. The other combinations are not supported.
 
-For more information, refer to the *Product Index Hierarchy Configuration* section of the [Inventory Visibility Configurations](inventory-visibility-configuration.md#index-configuration) topic.
+For more information, refer to the *Product Index Hierarchy Configuration* section of the [Inventory Visibility Configurations](./inventory-visibility-configuration.md#index-configuration) topic.
 
 ### Example
 
@@ -197,7 +197,7 @@ The configuration lets you define a set of modifiers to addition or subtraction 
     | Modifier | Enter the modifier name. |
     | Modifier type | Select the modifier type (*Addition* or *Subtraction*). |
 
-Below is an example of the *MyCustomAvailableforReservation* custom calculated measurement. For more information on this example, see the *Data source configuration* section of the [Inventory Visibility Configurations](inventory-visibility-configuration.md#data-source-configuration) topic.
+Below is an example of the *MyCustomAvailableforReservation* custom calculated measurement. For more information on this example, see the *Data source configuration* section of the [Inventory Visibility Configurations](./inventory-visibility-configuration.md#data-source-configuration) topic.
 <!-- KFM: This table doesn't match the screen shot, nor does it match the settings described in the procedure -->
 | Calculated measure data source | Calculated measurers | Modifier data source | Modifier | Modifier type |
 |---|---|---|---|---|
@@ -287,9 +287,9 @@ After you login, it will upadte the configuration changes to the Inventory Visib
 
 If you don't know the correct Inventory Visibility Service endpoint you can use, go to the  **Configurations** page, just click the **Show Service Endpoint** button on top right corner, it will show you the correct service endpoint.
 
-## Apis
+## Operational Visibility
 
-Apis page helps customer to get real-time Inventory on-hand query result on various dimension combinations and post reservation request when you have already opened the **OnHandReservation** feature.
+The Operational Visibility page helps customer to get real-time Inventory on-hand query result on various dimension combinations and post reservation request when you have already opened the **OnHandReservation** feature.
 
 ### Onhand Query
 
@@ -298,26 +298,26 @@ Onhand query tab is used to get real-time Inventory on-hand query result.
 When you click this tab, it will pop up settings modal to ask you enter the credentials info in order to get bearerToken used to query Inventory Visibility Service. You can just paste the bearer token in the **BearerToken** field, and close this modal. Then you can post onhand query request.
 
 If the BearToken is invalid or expired, you need to paste a new one in the **BearerToken** field. If you enter the correct Client Id, Tenant Id, Client Secret value, you jsut need to click **refresh** button, it will get a new valid bearer token automatically.
-To post a on hand query,  you just need to enter the field following the pattern in the [Query with Post method](inventory-visibility-api.md#query-with-post-method) the request body.
+To post a on hand query,  you just need to enter the field following the pattern in the [Query with Post method](./inventory-visibility-api.md#query-with-post-method) the request body.
 ![On-hand query settings](media/inventory-visibility-query-settings.png "On-hand query settings")
 
 ### Reservation Posting
 
-Reservation Posting tab is used to post a reservation request. In order to post a reservation request, you need to make sure you open the feature  **OnHandReservation**. To know more about this feature, go to [Inventory Visibility Reservations](inventory-visibility-reservations.md).
+Reservation Posting tab is used to post a reservation request. In order to post a reservation request, you need to make sure you open the feature  **OnHandReservation**. To know more about this feature, go to [Inventory Visibility Reservations](./inventory-visibility-reservations.md).
 
-To post a reservation request,  you just need to enter the field following the pattern in the [Create One Reservation Event](inventory-visibility-api.md#create-one-reservation-event) the request body. And click **Post** button, you can see the request response details by click **Show Details**. You can get the **reservationId** from here.
+To post a reservation request,  you just need to enter the field following the pattern in the [Create One Reservation Event](./inventory-visibility-api.md#create-one-reservation-event) the request body. And click **Post** button, you can see the request response details by click **Show Details**. You can get the **reservationId** from here.
 
-## On Hand List
+## Inventory Summary
 
-On Hand List is a customized view for Inventory OnHand Sum Entity, it provides an on-hand list for products with all dimensions. You can use the **Advanced Filter** default prodived by the Dataverse to create a personal view to see the rows that are important to you. The advanced filter options let you create a wide range of views from simple to complex. It also lets you add grouped and nested conditions to the filters.
+Inventory Summary is a customized view for Inventory OnHand Sum Entity, it provides an on-hand list for products with all dimensions. You can use the **Advanced Filter** default prodived by the Dataverse to create a personal view to see the rows that are important to you. The advanced filter options let you create a wide range of views from simple to complex. It also lets you add grouped and nested conditions to the filters.
 
 To know more about how to use **Advanced Filter**, go to [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced)
 
 At the top of the customer view has three drop down lists **Default Dimension**, **Custom Dimension**, **Measure**, you can use this to control which columns can be visible.
-In the On hand list, you can click the column header to filter the current result or sort it.
+In the Inventory Summary, you can click the column header to filter the current result or sort it.
 
 At the bottom of the customer view, you can see footer like `50 records (13 selected)`,`50 records` means the current loaded records from the **Advanced Filter** result. `13 selected` means the selected rocords using the header column filter for the loaded records.
 
 At the bottom, you can see a load more button, click this button to load more records from the Dataverse, the default loaded records is 50 records. When you click it, it will load next 1000 records into this view. The number in the **Load More** button tells you the current loaded records and the total records for the the **Advanced Filter** result.
 
-![On hand List](media/inventory-visibility-onhand-list.png "On hand List")
+![Inventory Summary](media/inventory-visibility-onhand-list.png "Inventory Summary")

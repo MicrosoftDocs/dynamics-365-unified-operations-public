@@ -65,7 +65,7 @@ The region short name can be found in LCS environment, the following regions are
 
 The island number is where your LCS environment deployed on Service Fabric, currently there is no way to get this information from user side.
 
-We have built an user interface in Power Apps for you to get the complete endpoint of microservice. See [Get service endpoint](inventory-visibility-power-platform.md#get-service-endpoint) for details.
+We have built an user interface in Power Apps for you to get the complete endpoint of microservice. See [Get service endpoint](./inventory-visibility-power-platform.md#get-service-endpoint) for details.
 
 ## <a id="inventory-visibility-authentication"></a>Authentication
 
