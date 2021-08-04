@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: LedgerJournalTransDaily, LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, LedgerJournalTransCustPaym
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
