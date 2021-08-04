@@ -2,9 +2,9 @@
 # required metadata
 
 title: Data action instance cache
-description: his topic describes how to use data action instance cache to reduce the size of the data action payload sent to the client browser to increase site performance. 
+description: This topic describes how to use the data action instance cache in Microsoft Dynamics 365 Commerce to reduce the size of the data action payload sent to the client browser to increase site performance. 
 author: samjarawan
-ms.date: 07/30/2021
+ms.date: 08/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Release 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use data action instance cache to reduce the size of the data action payload sent to the client browser to increase site performance.  If a data action result is not needed when rendering a module, setting the data action **dataCacheType** to **instance** will prevent the data action output being sent to the client.  
+This topic describes how to use the data action instance cache in Microsoft Dynamics 365 Commerce to increase site performance by reducing the size of data action payloads sent to client browsers. 
 
-This is useful when a module's data action calls child data action(s), since the module only requires the parent data action result (which combines the child data action results).  In this scenario the child data action's **dataCacheType** should be set to **instance** to ensure the result is not sent back to the client.
+If a data action result is not needed when rendering a module, setting the data action **dataCacheType** to **instance** will prevent the data action output from being sent to the client. This is useful when a module's parent data action calls a child data action, since modules only require the parent data action result that already includes the child data action results. In this scenario the child data action's **dataCacheType** would be set to **instance**.
 
-The below example shows how to set the **dataCacheType** within the data action typescript code.
+The following example shows how to set the **dataCacheType** within the data action typescript code.
 
 ```ts
 import * as Msdyn365 from '@msdyn365-commerce/core';
@@ -55,13 +55,23 @@ export class SampleDataActionInput implements Msdyn365.IActionInput {
 ...
 ```
 
-## Instance cache settings for the retail proxy data actions
-As of the release of module library 10.0.19, all [retail proxy data actions](call-retail-server-apis.md#retail-server-proxy-data-action-managers) have been set to **instance** to reduce the client data payload, which are typically called from the [core data actions](core-data-actions.md).
+## Instance cache settings for the Retail Server proxy data actions
 
-Custom modules should avoid using [retail proxy data actions](call-retail-server-apis.md#retail-server-proxy-data-action-managers) directly since they are now set to use instance cache and results will not be sent to client.  Instead they should leverage either [core data actions](core-data-actions.md) or create a custom data action that will internally leverage the retail proxy data actions.
+As of the Commerce version 10.0.19 release of the module library, all [Retail Server proxy data actions](call-retail-server-apis.md#retail-server-proxy-data-action-managers) typically called from the [core data actions](core-data-actions.md) have been set to **instance** to reduce the client data payload.
 
-If using a module libray version prior to version 10.0.19, instance caching can be opted in the [platform settings](platform-settings.md) file with the **shouldUseInstanceCache** property set to **true**. 
+Custom modules should avoid using Retail Server proxy data actions directly since they are now set to use the instance cache and results will not be sent to clients. Custom modules should instead either use [core data actions](core-data-actions.md) or custom data actions that employ Retail Server proxy data actions.
+
+If using a Commerce module library version prior to version 10.0.19, instance caching can be enabled in the [platform settings file](platform-settings.md) by setting the **shouldUseInstanceCache** property set to **true**, as shown in the following example. 
+
 {
     ...
     "shouldUseInstanceCache": true
 }
+
+## Additional resources
+
+[Retail Server proxy data action managers](call-retail-server-apis.md#retail-server-proxy-data-action-managers)
+
+[Core data actions](core-data-actions.md)
+
+[Platform settings file](platform-settings.md)
