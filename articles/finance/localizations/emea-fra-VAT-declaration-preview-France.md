@@ -1,4 +1,4 @@
-# VAT declaration preview (France)
+# VAT declaration (France)
 
 ## Overview
 
@@ -37,77 +37,1003 @@ The VAT declaration preview in France contains the following information.
 
 **SECTION A - AMOUNT OF OPERATIONS CARRIED OUT**
 
-| Line                       | Box  | Description                                                                                                                       | Lookup           | Lookup result                                                                          |
-|----------------------------|------|-----------------------------------------------------------------------------------------------------------------------------------|------------------|----------------------------------------------------------------------------------------|
-| **TAXABLE OPERATIONS**     |      |                                                                                                                                   |                  |                                                                                        |
-| 01                         | 0979 | Sales and services                                                                                                                | Operation lookup | TaxableSalesServices                                                                   |
-| 02                         | 0981 | Other taxable transactions                                                                                                        | Operation lookup | OtherTaxableTransactions                                                               |
-| 2A                         | 0044 | Intra-community purchases of services                                                                                             | Operation lookup | EUPurchaseServices                                                                     |
-| 2B                         | 0045 | Imports (companies that have chosen the reverse charge mechanism for import VAT)                                                  | Operation lookup | Imports (Line 7C is also affected.) ImportsUseTax (Lines 7C and 24 are also affected.) |
-| 03                         | 0031 | Intra-community acquisitions                                                                                                      | Operation lookup | EUPurchase (Line 17 is also affected.)                                                 |
-| 3A                         | 0030 | Deliveries of electricity, natural gas, heat, or cold that are taxable in France (domestic reverse charge)                        | Operation lookup | TaxableElectricityGasHeatCold                                                          |
-| 3B                         | 0040 | Purchases of goods or services from a taxable person who isn't established in France                                              | Operation lookup | PurchasesFromPersonNotEstablished                                                      |
-| 3C                         | 0036 | Regularizations                                                                                                                   | Operation lookup | TaxableRegularizations                                                                 |
-| **NON-TAXABLE OPERATIONS** |      |                                                                                                                                   |                  |                                                                                        |
-| 04                         | 0032 | Exports outside the European Union (EU)                                                                                           | Operation lookup | ExportsOutsideEU                                                                       |
-| 05                         | 0033 | Other non-taxable transactions                                                                                                    | Operation lookup | OtherNonTaxableTransactions                                                            |
-| 5A                         | 0047 | Distance sales that are taxable in another member state for the benefit of non-taxable persons (business-to-consumer [B2C] sales) | Operation lookup | EUDistanceB2CSales                                                                     |
-| 06                         | 0034 | Intra-community deliveries to a taxable person (business-to-business [B2B] sales)                                                 | Operation lookup | EUSales                                                                                |
-| 6A                         | 0029 | Deliveries of electricity, natural gas, heat, or cold that aren't taxable in France                                               | Operation lookup | ElectricityGasHeatColdNotTaxable                                                       |
-| 07                         | 0037 | Tax-free purchases                                                                                                                | Operation lookup | TaxFreePurchases                                                                       |
-| 7A                         | 0043 | Sales of goods or services by a taxable person who isn't established in France                                                    | Operation lookup | SalesByPersonNotEstablished                                                            |
-| 7B                         | 0039 | Regularizations                                                                                                                   | Operation lookup | NotTaxableRegularizations                                                              |
+<table width="100%">
+<tbody>
+<tr>
+<td width="41">
+<p><strong>Line</strong></p>
+</td>
+<td width="49">
+<p><strong>Box</strong></p>
+</td>
+<td width="265">
+<p><strong>Description</strong></p>
+</td>
+<td width="80">
+<p><strong>Lookup</strong></p>
+</td>
+<td width="188">
+<p><strong>Lookup result</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="356">
+<p><strong>TAXABLE OPERATIONS</strong></p>
+</td>
+<td width="80">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="188">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>01</p>
+</td>
+<td width="49">
+<p>0979</p>
+</td>
+<td width="265">
+<p>Sales and services</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>TaxableSalesServices</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>02</p>
+</td>
+<td width="49">
+<p>0981</p>
+</td>
+<td width="265">
+<p>Other taxable transactions</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>OtherTaxableTransactions</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>2A</p>
+</td>
+<td width="49">
+<p>0044</p>
+</td>
+<td width="265">
+<p>Intra-community purchases of services</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>EUPurchaseServices</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>2B</p>
+</td>
+<td width="49">
+<p>0045</p>
+</td>
+<td width="265">
+<p>Imports (companies that have chosen the reverse charge mechanism for import VAT)</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>Imports (Line 7C is also affected.)</p>
+<p>ImportsUseTax (Lines 7C and 24 are also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>03</p>
+</td>
+<td width="49">
+<p>0031</p>
+</td>
+<td width="265">
+<p>Intra-community acquisitions</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>EUPurchase (Line 17 is also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>3A</p>
+</td>
+<td width="49">
+<p>0030</p>
+</td>
+<td width="265">
+<p>Deliveries of electricity, natural gas, heat, or cold that are taxable in France (domestic reverse charge)</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>TaxableElectricityGasHeatCold</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>3B</p>
+</td>
+<td width="49">
+<p>0040</p>
+</td>
+<td width="265">
+<p>Purchases of goods or services from a taxable person who isn't established in France</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>PurchasesFromPersonNotEstablished</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>3C</p>
+</td>
+<td width="49">
+<p>0036</p>
+</td>
+<td width="265">
+<p>Regularizations</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>TaxableRegularizations</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="356">
+<p><strong>NON-TAXABLE OPERATIONS</strong></p>
+</td>
+<td width="80">
+<p>&nbsp;</p>
+</td>
+<td width="188">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>04</p>
+</td>
+<td width="49">
+<p>0032</p>
+</td>
+<td width="265">
+<p>Exports outside the European Union (EU)</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>ExportsOutsideEU</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>05</p>
+</td>
+<td width="49">
+<p>0033</p>
+</td>
+<td width="265">
+<p>Other non-taxable transactions</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>OtherNonTaxableTransactions</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>5A</p>
+</td>
+<td width="49">
+<p>0047</p>
+</td>
+<td width="265">
+<p>Distance sales that are taxable in another member state for the benefit of non-taxable persons (business-to-consumer [B2C] sales)</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>EUDistanceB2CSales</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>06</p>
+</td>
+<td width="49">
+<p>0034</p>
+</td>
+<td width="265">
+<p>Intra-community deliveries to a taxable person (business-to-business [B2B] sales)</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>EUSales</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>6A</p>
+</td>
+<td width="49">
+<p>0029</p>
+</td>
+<td width="265">
+<p>Deliveries of electricity, natural gas, heat, or cold that aren't taxable in France</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>ElectricityGasHeatColdNotTaxable</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>07</p>
+</td>
+<td width="49">
+<p>0037</p>
+</td>
+<td width="265">
+<p>Tax-free purchases</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>TaxFreePurchases</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>7A</p>
+</td>
+<td width="49">
+<p>0043</p>
+</td>
+<td width="265">
+<p>Sales of goods or services by a taxable person who isn't established in France</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>SalesByPersonNotEstablished</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>7B</p>
+</td>
+<td width="49">
+<p>0039</p>
+</td>
+<td width="265">
+<p>Regularizations</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>NotTaxableRegularizations</p>
+</td>
+</tr>
+</tbody>
+</table>                                                              |
 
 **SECTION B - VAT CALCULATION TO BE PAID**
 
 **GROSS VAT**
 
-| Line                                                                      | Box  | Description                                                                              | Lookup              | Lookup result                                                                                    |
-|---------------------------------------------------------------------------|------|------------------------------------------------------------------------------------------|---------------------|--------------------------------------------------------------------------------------------------|
-| **Operations carried out inFrance**                                       |      |                                                                                          |                     |                                                                                                  |
-| 08                                                                        | 0207 | Standard rate of 20 percent                                                              | Report field lookup | VATDueFranceStandard UseTaxFranceStandard (Line 20 is also affected.)                            |
-| 8A                                                                        | 0208 | Standard rate of 20 percent on petroleum products                                        | Report field lookup | VATDueFrancePetroleumStandard UseTaxFrancePetroleumStandard (Lines 20 and 2E are also affected.) |
-| 09                                                                        | 0105 | Reduced rate of 5.5 percent                                                              | Report field lookup | VATDueFranceReduced UseTaxFranceReduced (Line 20 is also affected.)                              |
-| 9B                                                                        | 0151 | Reduced rate of 10 percent                                                               | Report field lookup | VATDueFranceReduced2 UseTaxFranceReduced2 (Line 20 is also affected.)                            |
-| 9C                                                                        | 0152 | Reduced rate of 13 percent on petroleum products                                         | Report field lookup | VATDueFrancePetroleumReduced UseTaxFrancePetroleumReduced (Lines 20 and 2E are also affected.)   |
-| **Operations carried out in the overseas departments**                    |      |                                                                                          |                     |                                                                                                  |
-| 10                                                                        | 0201 | Standard rate of 8.5 percent                                                             | Report field lookup | VATDueOverseasStandard UseTaxOverseasStandard (Line 20 is also affected.)                        |
-| 11                                                                        | 0100 | Reduced rate of 2.1 percent                                                              | Report field lookup | VATDueOverseasReduced UseTaxOverseasReduced (Line 20 is also affected.)                          |
-| **Transactions taxable at another rate (France or overseas departments)** |      |                                                                                          |                     |                                                                                                  |
-| 13                                                                        | 0900 | Old rates                                                                                | Report field lookup | VATDueOldRates UseTaxOldRates (Line 20 is also affected.)                                        |
-| 14                                                                        | 0950 | Transactions that are taxable at a specific rate (The statement is made on note 3310 A.) | Report field lookup | VATDueSpecificRate UseTaxSpecificRate (Line 20 is also affected.)                                |
-| 15                                                                        | 0600 | Previously deducted VAT that must be returned                                            | Report field lookup | VATDeductedToBeReturned VATDeductedToBeReturnedRegularizations                                   |
-| 5B                                                                        | 0602 | Amounts that must be added, including holiday deposits (expressed in euros)              | Report field lookup | VATCorrectionAmountToBeAdded                                                                     |
-| 16                                                                        |      | Total gross VAT due (lines 08 through 5B)                                                |                     | 08 + 8A + 09 + 9B + 9C + 10 + 11 + 13 + 14 + 15 + 5B                                             |
-| 7C                                                                        | 0046 | Including VAT on imports that benefit from the reverse charge scheme                     | Operation lookup    | Imports (Line 2B is also affected.) ImportsUseTax (Lines 2B and 24 are also affected.)           |
-| 17                                                                        | 0035 | Including VAT on intra-community acquisitions                                            | Operation lookup    | EUPurchase (Line 03 is also affected.)                                                           |
-| 18                                                                        | 0038 | Including VAT on transactions to Monaco                                                  | Monaco lookup       | Monaco                                                                                           |
+<table width="100%">
+<tbody>
+<tr>
+<td width="41">
+<p><strong>Line</strong></p>
+</td>
+<td width="49">
+<p><strong>Box</strong></p>
+</td>
+<td width="265">
+<p><strong>Description</strong></p>
+</td>
+<td width="80">
+<p><strong>Lookup</strong></p>
+</td>
+<td width="188">
+<p><strong>Lookup result</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="356">
+<p><strong>Operations carried out inFrance</strong></p>
+</td>
+<td width="80">
+<p>&nbsp;</p>
+</td>
+<td width="188">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>08</p>
+</td>
+<td width="49">
+<p>0207</p>
+</td>
+<td width="265">
+<p>Standard rate of 20 percent</p>
+</td>
+<td width="80">
+<p>Report field lookup</p>
+</td>
+<td width="188">
+<p>VATDueFranceStandard</p>
+<p>UseTaxFranceStandard (Line 20 is also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>8A</p>
+</td>
+<td width="49">
+<p>0208</p>
+</td>
+<td width="265">
+<p>Standard rate of 20 percent on petroleum products</p>
+</td>
+<td width="80">
+<p>Report field lookup</p>
+</td>
+<td width="188">
+<p>VATDueFrancePetroleumStandard</p>
+<p>UseTaxFrancePetroleumStandard (Lines 20 and 2E are also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>09</p>
+</td>
+<td width="49">
+<p>0105</p>
+</td>
+<td width="265">
+<p>Reduced rate of 5.5 percent</p>
+</td>
+<td width="80">
+<p>Report field lookup</p>
+</td>
+<td width="188">
+<p>VATDueFranceReduced</p>
+<p>UseTaxFranceReduced (Line 20 is also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>9B</p>
+</td>
+<td width="49">
+<p>0151</p>
+</td>
+<td width="265">
+<p>Reduced rate of 10 percent</p>
+</td>
+<td width="80">
+<p>Report field lookup</p>
+</td>
+<td width="188">
+<p>VATDueFranceReduced2</p>
+<p>UseTaxFranceReduced2 (Line 20 is also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>9C</p>
+</td>
+<td width="49">
+<p>0152</p>
+</td>
+<td width="265">
+<p>Reduced rate of 13 percent on petroleum products</p>
+</td>
+<td width="80">
+<p>Report field lookup</p>
+</td>
+<td width="188">
+<p>VATDueFrancePetroleumReduced</p>
+<p>UseTaxFrancePetroleumReduced (Lines 20 and 2E are also affected.)</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="356">
+<p><strong>Operations carried out in the overseas departments</strong></p>
+</td>
+<td width="80">
+<p>&nbsp;</p>
+</td>
+<td width="188">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>10</p>
+</td>
+<td width="49">
+<p>0201</p>
+</td>
+<td width="265">
+<p>Standard rate of 8.5 percent</p>
+</td>
+<td width="80">
+<p>Report field lookup</p>
+</td>
+<td width="188">
+<p>VATDueOverseasStandard</p>
+<p>UseTaxOverseasStandard (Line 20 is also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>11</p>
+</td>
+<td width="49">
+<p>0100</p>
+</td>
+<td width="265">
+<p>Reduced rate of 2.1 percent</p>
+</td>
+<td width="80">
+<p>Report field lookup</p>
+</td>
+<td width="188">
+<p>VATDueOverseasReduced</p>
+<p>UseTaxOverseasReduced (Line 20 is also affected.)</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" width="356">
+<p><strong>Transactions taxable at another rate (France or overseas departments)</strong></p>
+</td>
+<td width="80">
+<p>&nbsp;</p>
+</td>
+<td width="188">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>13</p>
+</td>
+<td width="49">
+<p>0900</p>
+</td>
+<td width="265">
+<p>Old rates</p>
+</td>
+<td width="80">
+<p>Report field lookup</p>
+</td>
+<td width="188">
+<p>VATDueOldRates</p>
+<p>UseTaxOldRates (Line 20 is also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>14</p>
+</td>
+<td width="49">
+<p>0950</p>
+</td>
+<td width="265">
+<p>Transactions that are taxable at a specific rate (The statement is made on note 3310 A.)</p>
+</td>
+<td width="80">
+<p>Report field lookup</p>
+</td>
+<td width="188">
+<p>VATDueSpecificRate</p>
+<p>UseTaxSpecificRate (Line 20 is also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>15</p>
+</td>
+<td width="49">
+<p>0600</p>
+</td>
+<td width="265">
+<p>Previously deducted VAT that must be returned</p>
+</td>
+<td width="80">
+<p>Report field lookup</p>
+</td>
+<td width="188">
+<p>VATDeductedToBeReturned</p>
+<p>VATDeductedToBeReturnedRegularizations</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>5B</p>
+</td>
+<td width="49">
+<p>0602</p>
+</td>
+<td width="265">
+<p>Amounts that must be added, including holiday deposits (expressed in euros)</p>
+</td>
+<td width="80">
+<p>Report field lookup</p>
+</td>
+<td width="188">
+<p>VATCorrectionAmountToBeAdded</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>16</p>
+</td>
+<td width="49">
+<p>&nbsp;</p>
+</td>
+<td width="265">
+<p>Total gross VAT due (lines 08 through 5B)</p>
+</td>
+<td width="80">
+<p>&nbsp;</p>
+</td>
+<td width="188">
+<p>08 + 8A + 09 + 9B + 9C + 10 + 11 + 13 + 14 + 15 + 5B</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>7C</p>
+</td>
+<td width="49">
+<p>0046</p>
+</td>
+<td width="265">
+<p>Including VAT on imports that benefit from the reverse charge scheme</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>Imports (Line 2B is also affected.)</p>
+<p>ImportsUseTax (Lines 2B and 24 are also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>17</p>
+</td>
+<td width="49">
+<p>0035</p>
+</td>
+<td width="265">
+<p>Including VAT on intra-community acquisitions</p>
+</td>
+<td width="80">
+<p>Operation lookup</p>
+</td>
+<td width="188">
+<p>EUPurchase (Line 03 is also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="41">
+<p>18</p>
+</td>
+<td width="49">
+<p>0038</p>
+</td>
+<td width="265">
+<p>Including VAT on transactions to Monaco</p>
+</td>
+<td width="80">
+<p>Monaco lookup</p>
+</td>
+<td width="188">
+<p>Monaco</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 **DEDUCTIBLE VAT**
 
-| Line | Box  | Description                                                                            | Lookup              | Lookup result                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|------|------|----------------------------------------------------------------------------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 19   | 0703 | Property that constitutes capital assets                                               | Report field lookup | VATDeductionPropertyCapitalAssets                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| 20   | 0702 | Other goods and services                                                               | Report field lookup | VATDeductionOtherGoodsServices VATDeductionOtherGoodsServicesImports (Line 24 is also affected.) VATDeductionOtherGoodsServicesPetroleum (Line 2E is also affected.) VATDeductionOtherGoodsServicesImportPetroleum (Lines 24 and 2E are also affected.) UseTaxFranceStandard (Line 08 is also affected.) UseTaxFrancePetroleumStandard (Lines 8A and 2E are also affected.) UseTaxFranceReduced (Line 09 is also affected.) UseTaxFranceReduced2 (Line 9B is also affected.) UseTaxFrancePetroleumReduced (Lines 9C and 2E are also affected.) UseTaxOverseasStandard (Line 10 is also affected.) UseTaxOverseasReduced (Line 11 is also affected.) UseTaxOldRates (Line 13 is also affected.) UseTaxSpecificRate (Line 14 is also affected.) |
-| 21   | 0059 | Other VAT that must be deducted                                                        | Report field lookup | VATDeductionTaxableRegularizations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| 22   | 8001 | Credit that was carried forward and that appeared on line 27 of the previous statement |                     | The user defines the value in a dialog box.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| 2C   | 0603 | Amounts that must be charged, including holiday deposits (expressed in euros)          | Report field lookup | VATDeductionAmountsToBeCharged                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| 22A  |      | The single tax coefficient that is applicable for the period, if it differs            |                     | The user defines the value in a dialog box.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| 23   |      | Total deductible VAT (lines 19 through 2C)                                             |                     | Total 19 + 20 + 21 + 22 + 2C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| 24   | 0710 | Of which deductible VAT on imports                                                     |                     | VATDeductionOtherGoodsServicesImports (Line 20 is also affected.) VATDeductionOtherGoodsServicesImportPetroleum (Lines 20 and 2E are also affected.) ImportsUseTax (Lines 2B and 7C are also affected.)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| 2E   | 0711 | Of which deductible VAT on petroleum products                                          |                     | VATDeductionOtherGoodsServicesImportPetroleum (Lines 20 and 24 are also affected.) UseTaxFrancePetroleumReduced (Lines 9C and 20 are also affected.) VATDeductionOtherGoodsServicesPetroleum (Line 20 is also affected.) UseTaxFrancePetroleumReduced (Lines 9C and 20 are also affected.) UseTaxFrancePetroleumStandard (Lines 8A and 20 are also affected.)                                                                                                                                                                                                                                                                                                                                                                                 |
+<table width="100%">
+<tbody>
+<tr>
+<td width="6%">
+<p><strong>Line</strong></p>
+</td>
+<td width="7%">
+<p><strong>Box</strong></p>
+</td>
+<td width="27%">
+<p><strong>Description</strong></p>
+</td>
+<td width="12%">
+<p><strong>Lookup</strong></p>
+</td>
+<td width="45%">
+<p><strong>Lookup result</strong></p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>19</p>
+</td>
+<td width="7%">
+<p>0703</p>
+</td>
+<td width="27%">
+<p>Property that constitutes capital assets</p>
+</td>
+<td width="12%">
+<p>Report field lookup</p>
+</td>
+<td width="45%">
+<p>VATDeductionPropertyCapitalAssets</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>20</p>
+</td>
+<td width="7%">
+<p>0702</p>
+</td>
+<td width="27%">
+<p>Other goods and services</p>
+</td>
+<td width="12%">
+<p>Report field lookup</p>
+</td>
+<td width="45%">
+<p>VATDeductionOtherGoodsServices</p>
+<p>VATDeductionOtherGoodsServicesImports (Line 24 is also affected.)</p>
+<p>VATDeductionOtherGoodsServicesPetroleum (Line 2E is also affected.)</p>
+<p>VATDeductionOtherGoodsServicesImportPetroleum (Lines 24 and 2E are also affected.)</p>
+<p>UseTaxFranceStandard (Line 08 is also affected.)</p>
+<p>UseTaxFrancePetroleumStandard (Lines 8A and 2E are also affected.)</p>
+<p>UseTaxFranceReduced (Line 09 is also affected.)</p>
+<p>UseTaxFranceReduced2 (Line 9B is also affected.)</p>
+<p>UseTaxFrancePetroleumReduced (Lines 9C and 2E are also affected.)</p>
+<p>UseTaxOverseasStandard (Line 10 is also affected.)</p>
+<p>UseTaxOverseasReduced (Line 11 is also affected.)</p>
+<p>UseTaxOldRates (Line 13 is also affected.)</p>
+<p>UseTaxSpecificRate (Line 14 is also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>21</p>
+</td>
+<td width="7%">
+<p>0059</p>
+</td>
+<td width="27%">
+<p>Other VAT that must be deducted</p>
+</td>
+<td width="12%">
+<p>Report field lookup</p>
+</td>
+<td width="45%">
+<p>VATDeductionTaxableRegularizations</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>22</p>
+</td>
+<td width="7%">
+<p>8001</p>
+</td>
+<td width="27%">
+<p>Credit that was carried forward and that appeared on line 27 of the previous statement</p>
+</td>
+<td width="12%">
+<p><em>&nbsp;</em></p>
+</td>
+<td width="45%">
+<p>The user defines the value in a dialog box.</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>2C</p>
+</td>
+<td width="7%">
+<p>0603</p>
+</td>
+<td width="27%">
+<p>Amounts that must be charged, including holiday deposits (expressed in euros)</p>
+</td>
+<td width="12%">
+<p>Report field lookup</p>
+</td>
+<td width="45%">
+<p>VATDeductionAmountsToBeCharged</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>22A</p>
+</td>
+<td width="7%">
+<p>&nbsp;</p>
+</td>
+<td width="27%">
+<p>The single tax coefficient that is applicable for the period, if it differs</p>
+</td>
+<td width="12%">
+<p>&nbsp;</p>
+</td>
+<td width="45%">
+<p>The user defines the value in a dialog box.</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>23</p>
+</td>
+<td width="7%">
+<p>&nbsp;</p>
+</td>
+<td width="27%">
+<p>Total deductible VAT (lines 19 through 2C)</p>
+</td>
+<td width="12%">
+<p>&nbsp;</p>
+</td>
+<td width="45%">
+<p>Total 19 + 20 + 21 + 22 + 2C</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>24</p>
+</td>
+<td width="7%">
+<p>0710</p>
+</td>
+<td width="27%">
+<p>Of which deductible VAT on imports</p>
+</td>
+<td width="12%">
+<p>&nbsp;</p>
+</td>
+<td width="45%">
+<p>VATDeductionOtherGoodsServicesImports (Line 20 is also affected.)</p>
+<p>VATDeductionOtherGoodsServicesImportPetroleum (Lines 20 and 2E are also affected.)</p>
+<p>ImportsUseTax (Lines 2B and 7C are also affected.)</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>2E</p>
+</td>
+<td width="7%">
+<p>0711</p>
+</td>
+<td width="27%">
+<p>Of which deductible VAT on petroleum products</p>
+</td>
+<td width="12%">
+<p>&nbsp;</p>
+</td>
+<td width="45%">
+<p>VATDeductionOtherGoodsServicesImportPetroleum (Lines 20 and 24 are also affected.)</p>
+<p>UseTaxFrancePetroleumReduced (Lines 9C and 20 are also affected.)</p>
+<p>VATDeductionOtherGoodsServicesPetroleum (Line 20 is also affected.)</p>
+<p>UseTaxFrancePetroleumReduced (Lines 9C and 20 are also affected.)</p>
+<p>UseTaxFrancePetroleumStandard (Lines 8A and 20 are also affected.)</p>
+</td>
+</tr>
+</tbody>
+</table>                                                                                                                                                                        
 
 **CREDIT / TAX PAYABLE**
 
-| 25 | 0705 | VAT credit (line 23 – line 16)                                                                                          |   | Total 23 – 16                               |
-|----|------|-------------------------------------------------------------------------------------------------------------------------|---|---------------------------------------------|
-| 26 | 8002 | Credit repayment that is requested                                                                                      |   | The user defines the value in a dialog box. |
-| AA | 8005 | VAT credit that is transferred to the head company of the group                                                         |   | The user defines the value in a dialog box. |
-| 27 | 8003 | Credit to carry forward (line 25 – line 26 – line AA) This amount should be carried over to line 22 of the next return. |   | Total 25 – 26 – AA                          |
-| 28 |      | Total net VAT payable (line 16 – line 23)                                                                               |   | Total 16 – 23                               |
-| 29 | 9979 | Assimilated taxes                                                                                                       |   | The user defines a value in a dialog box.   |
-| AB | 9991 | Total payable that is paid by the head company of the group on the summary declaration                                  |   | The user defines a value in a dialog box.   |
-| 32 |      | Total payable (line 28 + line 29 – line AB)                                                                             |   | Total 28 + 29 – AB                          |
+<table width="100%">
+<tbody>
+<tr>
+<td width="6%">
+<p><strong>Line</strong></p>
+</td>
+<td width="7%">
+<p><strong>Box</strong></p>
+</td>
+<td width="27%">
+<p><strong>Description</strong></p>
+</td>
+<td width="12%">
+<p><strong>Lookup</strong></p>
+</td>
+<td width="45%">
+<p><strong>Lookup result</strong></p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>25</p>
+</td>
+<td width="7%">
+<p>0705</p>
+</td>
+<td width="27%">
+<p>VAT credit (line 23 &ndash; line 16)</p>
+</td>
+<td width="12%">
+<p>&nbsp;</p>
+</td>
+<td width="45%">
+<p>Total 23 &ndash; 16</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>26</p>
+</td>
+<td width="7%">
+<p>8002</p>
+</td>
+<td width="27%">
+<p>Credit repayment that is requested</p>
+</td>
+<td width="12%">
+<p>&nbsp;</p>
+</td>
+<td width="45%">
+<p>The user defines the value in a dialog box.</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>AA</p>
+</td>
+<td width="7%">
+<p>8005</p>
+</td>
+<td width="27%">
+<p>VAT credit that is transferred to the head company of the group</p>
+</td>
+<td width="12%">
+<p>&nbsp;</p>
+</td>
+<td width="45%">
+<p>The user defines the value in a dialog box.</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>27</p>
+</td>
+<td width="7%">
+<p>8003</p>
+</td>
+<td width="27%">
+<p>Credit to carry forward (line 25 &ndash; line 26 &ndash; line AA)</p>
+<p>This amount should be carried over to line 22 of the next return.</p>
+</td>
+<td width="12%">
+<p>&nbsp;</p>
+</td>
+<td width="45%">
+<p>Total 25 &ndash; 26 &ndash; AA</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>28</p>
+</td>
+<td width="7%">
+<p>&nbsp;</p>
+</td>
+<td width="27%">
+<p>Total net VAT payable (line 16 &ndash; line 23)</p>
+</td>
+<td width="12%">
+<p>&nbsp;</p>
+</td>
+<td width="45%">
+<p>Total 16 &ndash; 23</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>29</p>
+</td>
+<td width="7%">
+<p>9979</p>
+</td>
+<td width="27%">
+<p>Assimilated taxes</p>
+</td>
+<td width="12%">
+<p>&nbsp;</p>
+</td>
+<td width="45%">
+<p>The user defines a value in a dialog box.</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>AB</p>
+</td>
+<td width="7%">
+<p>9991</p>
+</td>
+<td width="27%">
+<p>Total payable that is paid by the head company of the group on the summary declaration</p>
+</td>
+<td width="12%">
+<p>&nbsp;</p>
+</td>
+<td width="45%">
+<p>The user defines a value in a dialog box.</p>
+</td>
+</tr>
+<tr>
+<td width="6%">
+<p>32</p>
+</td>
+<td width="7%">
+<p>&nbsp;</p>
+</td>
+<td width="27%">
+<p>Total payable (line 28 + line 29 &ndash; line AB)</p>
+</td>
+<td width="12%">
+<p>&nbsp;</p>
+</td>
+<td width="45%">
+<p>Total 28 + 29 &ndash; AB</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Note about purchase reverse charge VAT
 
