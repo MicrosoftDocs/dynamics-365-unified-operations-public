@@ -168,7 +168,7 @@ After opting an individual page from using the new grid, you may want to later r
 
 - **Environment redeployment**: When an environment undergoes an update and is redeployed, the table that stores the pages that have opted out of the new grid (FormControlReactGridState) is automatically cleared.
 
-- **Manual clearing of the table**: For development scnearios, you will need to clear the FormControlReactGridState table via SQL and then restart the AOS. This combination of actions will reset the caching of pages that have opted out of the new grid.  
+- **Manual clearing of the table**: For development scenarios, you will need to clear the FormControlReactGridState table via SQL and then restart the AOS. This combination of actions will reset the caching of pages that have opted out of the new grid.  
 
 ## [Developer] Size-to-available-width columns
 If a developer sets the **WidthMode** property to **SizeToAvailable** for columns inside the new grid, those columns initially have the same width that they would have if the property were set to **SizeToContent**. However, they stretch to use any extra available width inside the grid. If the property is set to **SizeToAvailable** for multiple columns, all those columns share any extra available width inside the grid. However, if a user manually resizes one of those columns, the column becomes static. It will remain at that width and will no longer stretch to take up extra available grid width.  
