@@ -72,3 +72,33 @@ Box 9: total value of acquisitions of goods and related costs, excluding any VAT
 
 In Dynamics 365 Finance, the described below setup must be done to ensure correctness of calculation of VAT return.
 
+## Country/region type in Foreign trade parameters
+
+## Sales tax authoritiy
+
+## Sales tax settlement periods
+
+## Ledger Posting Groups
+
+## Sales Tax Codes
+
+## Sales tax groups
+
+## Item sales tax groups
+
+## Boxes calculation for VAT declaration
+
+The default setup of the VAT declaration that is proposed in the scope of the MTD VAT feature is explaned in [Set up application-specific parameters for VAT Declaration format](emea-gbr-mtd-vat-integration-setup.md#declaration) section of this topic. It provides the following algorithm to calculate the VAT Return amounts.
+
+| Box number | Short description    | Calculation description       |
+|------------|----------------------|-------------------------------|
+| Box 1      | VAT due in the period on sales and other outputs   | To calculate the amount in this box, combine the tax amounts of tax transactions that are posted during the reporting period and that have the following classification values: <ul><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
+| Box 2      | VAT due in this period on intra-community acquisitions of goods made in Northern Ireland from EU Member States  | To calculate the amount in this box, combine the tax amounts of tax transactions that are posted during the reporting period, and that have a **Reporting type** value other than **Service**, a **Country/Region type** value of **EU**, and the following classification values: <ul><li>UseTax</li><li>UseTaxCreditNote</li></ul>  |
+| Box 3      | Total VAT due   | Box 1 + Box 2.   |
+| Box 4      | VAT reclaimed in the period on purchases and other inputs (including acquisitions from the EU)   | To calculate the amount in this box, combine the tax amounts of tax transactions that are posted during the reporting period and that have the following classification values: <ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li><li>UseTax</li><li>UseTaxCreditNote</li></ul> |
+| Box 5      | Net VAT to pay to HMRC or reclaim | The absolute value of the difference (Box 3 – Box 4).  |
+| Box 6      | Total value of sales and all other outputs excluding any VAT  | To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period and that have the following classification values: <ul><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li><li>SaleExempt</li><li>SalesExemptCreditNote</li></ul> |
+| Box 7      | Total value of purchases and all other inputs excluding any VAT | To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period and that have the following classification values: <ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li><li>UseTax</li><li>UseTaxCreditNote</li></ul>  |
+| Box 8      | Total value of intra-community dispatches of goods and related costs (excluding VAT) from Northern Ireland to EU Member States        | To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period, and that have a **Reporting type** other than **Service**, a **Country/Region type** value of **EU**, and the following classification values: <ul><li>SaleExempt</li><li>SalesExemptCreditNote</li><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
+| Box 9      | Total value of intra-community acquisitions of goods and related costs (excluding VAT) made in Northern Ireland from EU Member States | To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period, and that have a **Reporting type** value other than **Service**, a **Country/Region type** value of **EU**, and the following classification values: <ul><li>UseTax</li><li>UseTaxCreditNote</li><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li></ul> |
+
