@@ -1,6 +1,6 @@
 ---
-title: You can't confirm a shipment because customer is on hold
-description: You can't confirm a shipment because customer is on hold
+title: You can't confirm a shipment because the customer is on hold
+description: You can't confirm a shipment because the customer is on hold.
 author: GalynaFedorova
 ms.date: 07/30/2021
 ms.topic: troubleshooting
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# You can't confirm a shipment because customer is on hold
+# You can't confirm a shipment because the customer is on hold
 
 Error code: WAX:CustomerOnHoldShipmentCannotBeConfirmed
 
@@ -27,7 +27,7 @@ Therefore, you can't confirm the shipment for the load.
 
 ## Cause
 
-The customer account of the load or shipment is on hold and therefore the customer's status restricts the shipment confirmation completely.
+The customer account of the load or shipment is on hold. Therefore, the customer's status prevents shipment confirmation.
 
 ## Resolution
 
