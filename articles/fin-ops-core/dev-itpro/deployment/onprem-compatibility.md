@@ -4,7 +4,7 @@
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
 description: This topic explains which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
-ms.date: 07/28/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,8 +55,12 @@ This section covers the following SQL Server components:
 
 | Version                       | Supported since  | End of life   |
 |-------------------------------|------------------|---------------|
-| Microsoft SQL Server 2016 SP2 | 10.0.9           | Not available |
+| Microsoft SQL Server 2019     | 10.0.21          | Not available |
+| Microsoft SQL Server 2016 SP2 | 10.0.9           | 10.0.28       |
 | Microsoft SQL Server 2016 SP1 | Original release | 10.0.14       |
+
+> [!IMPORTANT]
+> Using multiple versions of Microsoft SQL Server throughout a single environment is not supported.
 
 ## Minimum Azure Service Fabric runtime
 
