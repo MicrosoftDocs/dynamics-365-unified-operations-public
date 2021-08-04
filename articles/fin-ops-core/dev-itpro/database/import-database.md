@@ -50,8 +50,8 @@ Specific activities must be completed when you import a database backup into a s
 * Make sure that system Help and task guides are reconnected.
 * Make sure that batch jobs are set to a status of **Waiting**.
 * Make sure that users are re-enabled.
-* Make sure that Dual-write is relinked if required.
-* Make sure that Dual-write is relinked if required.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
+* Make sure that dual-write is relinked if required.
+* Make sure that dual-write is relinked if required.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 
 ### Environment admin
 
