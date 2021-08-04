@@ -134,7 +134,10 @@ The grid includes the following columns:
 
 You can use the **New Electronic Address** button above the grid to create as many addresses as you want.
 
-Electronic addresses are available only in this grid. In future releases, all postal address and electronic address fields will be removed from other tabs (for example, the **Summary** and **Details** tabs).
+Electronic addresses are available only in this grid. In future releases, all postal address and electronic address fields will be removed from other tabs (for example, the **Summary** and **Details** tabs). For now, think of contact details displayed on the **Details** tab as the read-only copy of the primary electronic address like primary phone, primary email, primary telephone, primary fax and primary twitter id. Also, during the lead qualification process you may provide both business phone number and mobile phone numbers. The business phone number is considered as the primary phone and mobile phone number is considered as the secondar phone with IsMobile=Yes.
+
+> [!TIP]
+> Use **Addresses** and **Electronic Addresses** tabs on Account and Contact forms to manage postal and electronic addresses. It ensures address data synchronization to Finance and Operations apps.
 
 ## Setup
 
@@ -291,7 +294,6 @@ For more information, see [Dual-write mapping reference](mapping-reference.md).
 
 + In Finance and Operations apps, when you create a customer along with address and save it, the address might not synchronize to the **Address** table. This is because of a dual-write platform sequencing issue. As a workaround, create the customer first and save it. Then add the address.
 + In Finance and Operations apps, when a customer record has a primary address and you create a new contact for that customer, then the contact record inherits a primary address from the associated customer record. This happens for vendor contact, too. Dataverse doesn’t currently support this behavior. If dual-write is enabled, a customer contacts that is inherited with a primary address from the Finance and Operations app is synchronized to Dataverse along with its address.
-+ Electronic addresses from the `msdyn_partyelectronicaddress` table do not flow to the electronic address fields on the **Account** and **Contact** tables. We plan to fix this issue in an incremental release. The existing data on the electronic address fields on the **Account** and **Contact** tables will not be overwritten.
 + Electronic addresses set on the electronic address tab of the **Account**, **Contact**, and **Vendor** forms come from the `msdyn_partyelectronicaddress` table. This information does not flow to its associated transactions like sales order, quotation, and purchase order. We plan to fix this issue in an incremental release. The existing data on the electronic address fields on the account and contact records will continue to work on transactions like sales order, quotation, and purchase order.
 + In Finance and Operations apps, you can create a contact record from the **Add Contact** form. When you try to create a new contact from the **View Contact** form, the action fails. This is a known issue.
 
