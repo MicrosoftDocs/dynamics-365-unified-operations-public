@@ -287,7 +287,7 @@ Reservation configuration is necessary if you want to use the soft reservation f
 
 When you make a reservation, you may want to know if on-hand inventory is currently available for reservation. This validation is linked to a calculated measure that represents a computation formula of a combination of physical measures.
 
-Suppose reservation measure is found from the phys _SoftReservOrdered_ (physical measure) of _iv_ (data source) is the reservation measure. Afterwards, define a calculated measure _AvailableToReserve_ of _iv_ as follows:
+Suppose a reservation measure is based on the physical measure _SoftReservOrdered_ from data source _iv_. You could then set up the calculated measure _AvailableToReserve_ of _iv_ as follows:
 
 | Calculation type | Data source | Physical measure |
 | --- | --- | --- |
@@ -304,7 +304,7 @@ Then set up a soft reservation mapping from _SoftReservOrdered_ to _AvailableToR
 
 This soft reservation mapping provides a mapping from the reservation measure _SoftReservOrdered_ to a calculated measure _AvailableToReserve_. When you do reservation on _SoftReservOrdered_, Inventory Visibility will automatically find _AvailableToReserve_ and its related computation formula to do the reservation validation.
 
-Suppose you have some on-hand in Inventory Visibility as follows:
+Suppose you have on-hand inventory in Inventory Visibility as follows:
 
 ```json
 {
@@ -329,7 +329,13 @@ Suppose you have some on-hand in Inventory Visibility as follows:
 }
 ```
 
-In the sample, the _AvailableToReserve_ is _fno.availphysical_ + _pos.inbound_ - _pos.outbound_ - _iv.SoftReservOrdered_ (70 + 50 - 20 - 90 = 10). If you make reservations on _iv.SoftReservOrdered_ with quantity less than or equal to _AvailableToReserve_ (10), you are allowed to do the reservation.
+In the sample, the following calculation applies:
+
+_AvailableToReserve_ = _fno.availphysical_ + _pos.inbound_ – _pos.outbound_ – _iv.SoftReservOrdered_  
+= 70 + 50 – 20 – 90  
+= 10
+
+If you make reservations on _iv.SoftReservOrdered_ with a quantity less than or equal to _AvailableToReserve_ (10), you are allowed to do the reservation.
 
 ### Soft Reservation Hierarchy
 

@@ -32,7 +32,7 @@ The Inventory Visibility provides a model-driven Power Apps for visualization. T
 
 Before you begin the steps provided in this topic, first install and setup the add-in as described in [Inventory Visibility Add-in](inventory-visibility-setup.md).
 
-## <a id="configuration"></a>Configurations
+## <a name="configuration"></a>Configurations
 
 Configurations page helps customer to set up on-hand configuration and soft reservation configuration. The default configuration setting includes the value from Dynamics 365 Supply Chain Management (data source "FnO") once the Inventory Visibility add-in has been installed. You can review the default setting and modify the configuration based on your business requirements and external system inventory posting requirements in [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) to standardize how inventory changes can be posted, organized, and queried across the multiple systems.
 
@@ -210,7 +210,7 @@ Below is an example of the *MyCustomAvailableforReservation* custom calculated m
 | CustomChannel | MyCustomAvailableforReservation | exterchannel | issued | Subtraction |
 | CustomChannel | MyCustomAvailableforReservation | Exterchannel | reserved | Subtraction |
 
-### <a id="setup-reservation-mapping"></a>Set up soft reservation mapping
+### <a name="setup-reservation-mapping"></a>Set up soft reservation mapping
 
 In order to edit Soft Reserveration Mapping Tab, you need to enable `OnHandReservation` feature. Go to **Feature Management** Tab, turn on **OnHandReservation** feature.
 
@@ -237,7 +237,7 @@ To define the soft reservation mapping:
     |---|---|---|---|
     | iv | softreservordered | iv | availforreserv |
 
-### <a id="setup-reservation-hierarchy"></a>Set up soft reservation hierarchy
+### <a name="setup-reservation-hierarchy"></a>Set up soft reservation hierarchy
 
 In order to edit Soft Reservation Hierarchy Tab, you need to enable `OnHandReservation` feature. Go to **Feature Management** Tab, turn on **OnHandReservation** feature.
 
@@ -264,7 +264,7 @@ Given the reservation hierarchy example, you can do reservation in the following
 
 The dimension order should strictly follow the reservation hierarchy sequence one by one. However, reservations with, for example, (ColorId, StyleId) would not be allowed because this sequence is not defined in the reservation hierarchy example.
 
-### <a id="feature-switch"></a>Control feature manangement
+### <a name="feature-switch"></a>Control feature manangement
 
 Inventory Visibility add-in provides some features such as OnHandReservation, OnHandMostSpecificBackgroundService. These features is off by default, to use it, you need to turn on the toggle.
   
@@ -283,7 +283,7 @@ For the first time you click **Update Configuration** button, it will pop up a l
 
 After you login, it will upadte the configuration changes to the Inventory Visibility Service to make it work.
 
-### <a id="get-service-endpoint"></a>Get service endpoint
+### <a name="get-service-endpoint"></a>Get service endpoint
 
 If you don't know the correct Inventory Visibility Service endpoint you can use, go to the  **Configurations** page, just click the **Show Service Endpoint** button on top right corner, it will show you the correct service endpoint.
 

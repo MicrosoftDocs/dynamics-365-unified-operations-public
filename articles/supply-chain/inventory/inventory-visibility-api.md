@@ -67,7 +67,7 @@ The island number is where your LCS environment deployed on Service Fabric, curr
 
 We have built an user interface in Power Apps for you to get the complete endpoint of microservice. See [Get service endpoint](./inventory-visibility-power-platform.md#get-service-endpoint) for details.
 
-## <a id="inventory-visibility-authentication"></a>Authentication
+## <a name="inventory-visibility-authentication"></a>Authentication
 
 The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate an _Azure Active Directory (Azure AD) token_ by using your Azure AD application. You must then use the Azure AD token to get the _access token_ from the security service.
 
@@ -139,7 +139,7 @@ Get a security service token by doing the following:
 
 We will use `$access_token` in following sections represent the token fetch in last step.
 
-## <a id="create-onhand-change-event"></a>Create Onhand Change Event
+## <a name="create-onhand-change-event"></a>Create Onhand Change Event
 
 There are 2 APIs for creating onhand change event:
 
@@ -157,7 +157,7 @@ The fields of JSON body have following meaning.
 | `dimensionDataSource` | The data source of the dimensions used in the posting change event and query. If you specify the data source, you can use the custom dimensions from the specified data source. With the dimension configuration, Inventory Visibility can map the custom dimensions to the general default dimensions. If the `dimensionDataSource` is not specified, you can only use the general [base dimensions](./inventory-visibility-configuration.md#data-source-configuration-dimension) in your queries. |
 | `dimensions`          | A dynamic key/value pairs. These will map to some of the dimensions in Dynamcis 365 Supply Chain Management, but you could also add custom dimensions (like _Source_) that may denote if the event was coming from Supply Chain Management or an external system. |
 
-### <a id="create-one-onhand-change-event"></a>Create one onhand change event
+### <a name="create-one-onhand-change-event"></a>Create one onhand change event
 
 ```txt
 Path:
@@ -228,7 +228,7 @@ Another sample body without `dimensionDataSource`:
 }
 ```
 
-### <a id="create-multiple-onhand-change-events"></a>Create multiple change events
+### <a name="create-multiple-onhand-change-events"></a>Create multiple change events
 
 This api is bulk version of creating one record.
 The only difference is **Path** and **Body**, **Body** is an array of records.
@@ -294,7 +294,7 @@ Here is a sample body:
 ]
 ```
 
-## <a id="set-onhand-quantities"></a>Set Onhand Quantities
+## <a name="set-onhand-quantities"></a>Set Onhand Quantities
 
 The _Set Onhand_ api will override current data of the specific product.
 
@@ -354,7 +354,7 @@ Here is a sample body, the behavior of this API is different from [_Create on-ha
 
 To use Reserve api, you need to open the reservation feature and finish reservation configuration, see [Reservation Configuration](./inventory-visibility-configuration.md#reservation-configuration) for details.
 
-### <a id="create-one-reservation-event"></a>Create One Reservation Event
+### <a name="create-one-reservation-event"></a>Create One Reservation Event
 
 ```txt
 Path:
@@ -407,7 +407,7 @@ Here is a sample body:
 }
 ```
 
-### <a id="create-multiple-reservation-events"></a>Create Multiple Reservation Events
+### <a name="create-multiple-reservation-events"></a>Create Multiple Reservation Events
 
 This API is bulk version of [Create One Reservation Event](#create-one-reservation-event).
 
@@ -449,7 +449,7 @@ Body:
 
 The _Query Onhand_ API is used to fetch current onhand inventory data for your products.
 
-### <a id="query-with-post-method"></a>Query with Post method
+### <a name="query-with-post-method"></a>Query with Post method
 
 ```txt
 Path:
@@ -487,7 +487,7 @@ Here is a sample body:
 }
 ```
 
-### <a id="query-with-get-method"></a>Query with Get method
+### <a name="query-with-get-method"></a>Query with Get method
 
 ```txt
 Path:
