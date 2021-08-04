@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Welcome to Dynamics 365 Human Resources
+title: Human Resources home page
 description: Dynamics 365 Human Resources provides the workforce insights you need to build data-driven employee experiences across multiple areas.
 author: andreabichsel
 ms.date: 02/03/2020
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Welcome to Dynamics 365 Human Resources
+# Human Resources home page
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -50,45 +50,48 @@ Human Resources connects people and operations data to help you optimize workfor
 
 ## Administrator Guide
 
-[Overview](hr-admin-overview.md)</br>
-[System requirements](hr-admin-system-requirements.md)</br>
-[Set up and manage instances](hr-admin-setup-provision.md)</br>
-[Set up data integration](hr-admin-integration-choose-technology.md)</br>
-[Configure data management](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Manage features](hr-admin-manage-features.md)</br>
-[Explore the user interface](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Human Resources app in Teams](hr-admin-teams-leave-app.md)</br>
-[Prepare for go-live](hr-admin-go-live-prepare.md)</br>
-[Go-live FAQ](hr-admin-go-live-faq.md)</br>
-[Documentation resources](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Troubleshoot Human Resources](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
+- [Overview](hr-admin-overview.md)</br>
+- [System requirements](hr-admin-system-requirements.md)</br>
+- [Set up and manage instances](hr-admin-setup-provision.md)</br>
+- [Set up data integration](hr-admin-integration-choose-technology.md)</br>
+- [Configure data management](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Manage features](hr-admin-manage-features.md)</br>
+- [Explore the user interface](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Human Resources app in Teams](hr-admin-teams-leave-app.md)</br>
+- [Prepare for go-live](hr-admin-go-live-prepare.md)</br>
+- [Go-live FAQ](hr-admin-go-live-faq.md)</br>
+- [Documentation resources](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Troubleshoot Human Resources](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
 
 ## Developer Guide
 
-[Overview](hr-developer-overview.md)</br>
-[Extend with Power Apps and Power Automate](hr-developer-power-apps.md)</br>
-[Human Resources entities in Dataverse](hr-developer-entities.md)</br>
-[Custom fields](hr-developer-custom-fields.md)</br>
-[Dataverse tables](hr-developer-entities.md)</br>
-[Set up data integration](hr-admin-integration-choose-technology.md)</br>
-[Troubleshoot development with Dataverse virtual tables](hr-developer-optimize-virtual-table-queries.md)</br>
-[Entity API reference](hr-developer-api-authentication.md)</br>
-[ATS integration API](hr-admin-integration-ats-api-introduction.md)</br>
-[Payroll integration API](hr-admin-integration-payroll-api-introduction.md)
+- [Overview](hr-developer-overview.md)</br>
+- [Extend with Power Apps and Power Automate](hr-developer-power-apps.md)</br>
+- [Human Resources entities in Dataverse](hr-developer-entities.md)</br>
+- [Custom fields](hr-developer-custom-fields.md)</br>
+- [Dataverse tables](hr-developer-entities.md)</br>
+- [Set up data integration](hr-admin-integration-choose-technology.md)</br>
+- [Troubleshoot development with Dataverse virtual tables](hr-developer-optimize-virtual-table-queries.md)</br>
+- [Entity API reference](hr-developer-api-authentication.md)</br>
+- [ATS integration API](hr-admin-integration-ats-api-introduction.md)</br>
+- [Payroll integration API](hr-admin-integration-payroll-api-introduction.md)
 
 ## User Guide
 
-[Overview](hr-hrpro-overview.md)</br>
-[Explore the user interface](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Set up Human Resources](hr-setup-parameters.md)</br>
-[Configure organization settings](../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json)</br>
-[Manage personnel](hr-personnel-departments-jobs-positions.md)</br>
-[Set up compensation plans](hr-compensation-overview.md)</br>
-[Manage benefits](hr-benefits-management-overview.md)</br>
-[Manage leave and absence](hr-leave-and-absence-overview.md)</br>
-[Manage leave requests in Teams](hr-teams-leave-app.md)</br>
-[Develop employees](hr-develop-performance-management-overview.md)</br>
-[Create courses](hr-learning-courses.md)</br>
-[Set up Employee and Manager self service](hr-employee-manager-self-service-overview.md)
+- [Overview](hr-hrpro-overview.md)</br>
+- [Explore the user interface](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Set up Human Resources](hr-setup-parameters.md)</br>
+- [Configure organization settings](../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json)</br>
+- [Manage personnel](hr-personnel-departments-jobs-positions.md)</br>
+- [Set up compensation plans](hr-compensation-overview.md)</br>
+- [Manage benefits](hr-benefits-management-overview.md)</br>
+- [Manage leave and absence](hr-leave-and-absence-overview.md)</br>
+- [Manage leave requests in Teams](hr-teams-leave-app.md)</br>
+- [Develop employees](hr-develop-performance-management-overview.md)</br>
+- [Create courses](hr-learning-courses.md)</br>
+- [Set up Employee and Manager self service](hr-employee-manager-self-service-overview.md)
+
+## eLearning courses
+For online courses and training, check out [Dynamics 365 Human Resources on Microsoft Learn](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
