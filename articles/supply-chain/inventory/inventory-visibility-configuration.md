@@ -154,15 +154,15 @@ Then you configure a calculated measure called `MyCustomAvailableforReservation`
 
 | Consumption system | Calculated measure | Data source | Physical measure | Calculation type |
 | --- | --- | --- | --- | --- |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | Addition |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | Addition |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedreserved` | Subtraction |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `pos` | `inbound` | Addition |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `pos` | `outbound` | Subtraction |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `received` | Addition |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `scheduled` | Addition |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `issued` | Subtraction |
-| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `reserved` | Subtraction |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | `Addition` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | `Addition` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedreserved` | `Subtraction` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `pos` | `inbound` | `Addition` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `pos` | `outbound` | `Subtraction` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `received` | `Addition` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `scheduled` | `Addition` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `issued` | `Subtraction` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `externalchannel` | `reserved` | `Subtraction` |
 
 With this computation formula, the new query result will include the customized measurement.
 

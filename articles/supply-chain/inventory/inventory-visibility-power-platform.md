@@ -1,6 +1,6 @@
 ---
-title: Inventory Visibility Power Apps
-description: This topic describes how to use Inventory Visibility Power Apps.
+title: The Inventory Visibility Power App
+description: This topic describes how to use the Inventory Visibility Power App.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -13,15 +13,15 @@ ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# Inventory Visibility Power Apps
+# The Inventory Visibility Power App
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-This topic describes how to use Inventory Visibility Power Apps.
+This topic describes how to use the Inventory Visibility Power App.
 
-The Inventory Visibility provides a model-driven Power Apps for visualization. The app contains 3 pages: Configurations, Apis, On-Hand List. It has following features:
+Inventory Visibility provides a model-driven Power App for visualization. The app contains 3 pages: **Configurations**, **APIs**, and **On-hand list**. It has following features:
 
 - Provides UI for on-hand configuration and soft reservation configuration
 - Supports real-time Inventory on-hand query on various dimension combinations
@@ -36,7 +36,7 @@ Before you begin the steps provided in this topic, first install and setup the a
 
 The **Configurations** page helps you set up the on-hand configuration and soft reservation configuration. The default configuration includes the value from Dynamics 365 Supply Chain Management (data source `fno`) once the Inventory Visibility add-in has been installed. You can review the default setting and modify the configuration based on your business requirements and your external system inventory posting requirements in [Microsoft Dataverse](/powerapps/maker/common-data-service/data-platform-intro) to standardize how inventory changes can be posted, organized, and queried across the multiple systems.
 
-### Define Data Source
+### Define data sources
 
 You define each *data source* that you want to integrate with Inventory Visibility. Inventory Visibility supports the integration with various data sources, such as your point of sale (POS) system, Dynamics 365 Supply Chain Management and other external systems. By default, Dynamics 365 Supply Chain Management is set up as a default data source (`fno`) in the Inventory Visibility.
 
@@ -184,140 +184,139 @@ You can use Inventory Visibility to query both on inventory physical measures an
 
 The configuration lets you define a set of modifiers to add or subtract to get the total aggregated output quantity.
 
-1. Sign in to your Power Apps environment and open **Inventory Visibility** powerApps. <!-- KFM: Is this the right way to say this? Any more detail needed? -->
+1. Sign in to your Power Apps environment and open **Inventory Visibility**.
 1. Go to the **Configuration** page and open the **Calculated Measure** tab.
 
-1. Select **New Calculate Measure** to add the new calculated measure. Make settings as described in the following table. <!-- KFM: This table doesn't match the screen shot, nor does it match the following example -->
+1. Select **New Calculate Measure** to add the new calculated measure. Make settings as described in the following table.
 
     | Field | Value |
     |---|---|
     | New calculated measure name | Enter the calculated measure name. |
-    | Data source | The querying system is a data source to query on the custom calculated measure. <!-- KFM: This isn't clear. Please revise. --> |
+    | Data source | The querying system is a data source. |
     | Modifier data source | Enter the data source of the modifier. |
     | Modifier | Enter the modifier name. |
     | Modifier type | Select the modifier type (*Addition* or *Subtraction*). |
 
 Below is an example of the *MyCustomAvailableforReservation* custom calculated measurement. For more information on this example, see the *Data source configuration* section of the [Inventory Visibility Configurations](inventory-visibility-configuration.md#data-source-configuration) topic.
-<!-- KFM: This table doesn't match the screen shot, nor does it match the settings described in the procedure -->
-| Calculated measure data source | Calculated measurers | Modifier data source | Modifier | Modifier type |
+| Calculated measure data source | Calculated measure | Modifier data source | Modifier | Modifier type |
 |---|---|---|---|---|
-| CustomChannel | MyCustomAvailableforReservation | FnO | availphysical | Addition |
-| CustomChannel | MyCustomAvailableforReservation | FnO | orderedintotal | Addition |
-| CustomChannel | MyCustomAvailableforReservation | FnO | orderedreserved | Subtraction |
-| CustomChannel | MyCustomAvailableforReservation | mypos | Inbound | Addition |
-| CustomChannel | MyCustomAvailableforReservation | mypos | Outbound | Subtraction |
-| CustomChannel | MyCustomAvailableforReservation | exterchannel | received | Addition |
-| CustomChannel | MyCustomAvailableforReservation | exterchannel | issued | Subtraction |
-| CustomChannel | MyCustomAvailableforReservation | Exterchannel | reserved | Subtraction |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `availphysical` | `Addition` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedintotal` | `Addition` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `fno` | `orderedreserved` | `Subtraction` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `mypos` | `Inbound` | `Addition` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `mypos` | `Outbound` | `Subtraction` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `exterchannel` | `received` | `Addition` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `exterchannel` | `issued` | `Subtraction` |
+| `CustomChannel` | `MyCustomAvailableforReservation` | `Exteexterchannelrchannel` | `reserved` | `Subtraction` |
 
 ### <a name="setup-reservation-mapping"></a>Set up soft reservation mapping
 
-In order to edit Soft Reserveration Mapping Tab, you need to enable `OnHandReservation` feature. Go to **Feature Management** Tab, turn on **OnHandReservation** feature.
+To edit the **Soft Reserveration Mapping** Tab, you must enable the *OnHandReservation* feature. Go to **Feature Management** tab and turn on *OnHandReservation* feature.
 
-By setting up the mapping from the physical measure to the calculated measure, the Inventory Visibility service will automatically validate the reservation availability based on the physical measure.
+By setting up the mapping from the physical measure to the calculated measure, the Inventory Visibility service will automatically validate  reservation availability based on the physical measure.
 
 Before setting up this mapping, the physical measures, calculated measures, and their data sources must be defined on the **Data source** and **Calculated measure** tabs of the **Configurations** page in Power Apps (as described previously in this topic).
 
 To define the soft reservation mapping:
 
-1. Define the physical measure that serves as the soft reservation measure, for example *softreservordered*. <!-- KFM: How/where do I do that? -->
-1. On the **Calculated measure** tab of the **Configurations** page, define the *available for reservation* (AFR) calculated measure, which contains the AFR computation formula that you want to map to the physical measure. For example, you might set up *availforreserv* (available for reservation) to map to the previously defined physical measure *softreservordered*, thereby enabling you to find which quantities with *softreservordered* inventory status will be available for reservation. The AFR computation formula is shown in the following table:
+1. Define the physical measure that serves as the soft reservation measure (for example `softreservordered`).
+1. On the **Calculated measure** tab of the **Configurations** page, define the *available for reservation* (AFR) calculated measure, which contains the AFR computation formula that you want to map to the physical measure. For example, you might set up `availforreserv` (available for reservation) to map to the previously defined physical measure `softreservordered`, thereby enabling you to find which quantities with `softreservordered` inventory status will be available for reservation. The AFR computation formula is shown in the following table:
 
     | Modifier | Data Source | Measure |
     |---|---|---|
-    | Addition | fno | availphysical |
-    | Addition | pos | inbound |
-    | Subtraction | pos | outbound |
-    | Subtraction | iv | softreservordered |
+    | `Addition` | `fno` | `availphysical` |
+    | `Addition` | `pos` | `inbound` |
+    | `Subtraction` | `pos` | `outbound` |
+    | `Subtraction` | `iv` | `softreservordered` |
 
 1. Go to the **Configuration** page and open the **Soft Reservation Mapping** tab.
-1. Set up the mapping from the physical measure to the calculated measure. <!-- KFM: How do I do that? --> Following the previous example, you could use the following settings to map *availforreserv* (available for reservation) to the previously defined physical measure *softreservordered*.
+1. Set up the mapping from the physical measure to the calculated measure. Following the previous example, you could use the following settings to map `availforreserv` (available for reservation) to the previously defined physical measure `softreservordered`.
 
     | Physical measure data source | Physical measure | Available for reservation data source | Available for reservation calculated measure |
     |---|---|---|---|
-    | iv | softreservordered | iv | availforreserv |
+    | `iv` | `softreservordered` | `iv` | `availforreserv` |
 
 ### <a name="setup-reservation-hierarchy"></a>Set up soft reservation hierarchy
 
-In order to edit Soft Reservation Hierarchy Tab, you need to enable `OnHandReservation` feature. Go to **Feature Management** Tab, turn on **OnHandReservation** feature.
+To edit the **Soft Reservation Hierarchy** Tab, you must enable the *OnHandReservation* feature. Go to **Feature Management** Tab, turn on the *OnHandReservation* feature.
 
-The reservation hierarchy describes the sequence of dimensions to specify when making reservations. It works the same way as product index hierarchy works for on-hand queries.
+The reservation hierarchy describes the sequence of dimensions to specify when making reservations. It works the same way as the product index hierarchy works for on-hand queries.
 
 The reservation hierarchy is allowed to be different from the on-hand index hierarchy. This allows category management where users break down the dimensions into details to specify the needs for making more precise reservations.
 
 #### Example
 
-Your system is set up with teh following reservation hierarchy.
+Your system is set up with the following reservation hierarchy.
 
 | Dimension | Hierarchy |
 |---|---|
-| ColorId | 1 |
-| SizeId  | 2 |
-| StyleId | 3 |
+| `ColorId` | 1 |
+| `SizeId ` | 2 |
+| `StyleId` | 3 |
 
-Given the reservation hierarchy example, you can do reservation in the following 4 dimension orders:
+Given the reservation hierarchy example, you can do reservation in the following dimension orders:
 
-1. () – no dimension given
-2. (ColorId)
-3. (ColorId, SizeId)
-4. (ColorId, SizeId, StyleId)
+- `()` – no dimension given
+- `(ColorId)`
+- `(ColorId, SizeId)`
+- `(ColorId, SizeId, StyleId)`
 
-The dimension order should strictly follow the reservation hierarchy sequence one by one. However, reservations with, for example, (ColorId, StyleId) would not be allowed because this sequence is not defined in the reservation hierarchy example.
+The dimension order should strictly follow the reservation hierarchy sequence one by one. However, reservations with, for example, `(ColorId, StyleId)` would not be allowed because this sequence is not defined in the reservation hierarchy example.
 
-### <a name="feature-switch"></a>Control feature manangement
+### <a name="feature-switch"></a>Control feature management
 
-Inventory Visibility add-in provides some features such as OnHandReservation, OnHandMostSpecificBackgroundService. These features is off by default, to use it, you need to turn on the toggle.
-  
-1. Go to the **Configuration** page and open the **Feature Management** tab.
-1. select the feature that you want to change, click **ToggleSwitch**.
+The Inventory Visibility Add-in provides some features such as *OnHandReservation* and *OnHandMostSpecificBackgroundService*. These features are off by default. To use them, go to the **Configuration** page, open the **Feature Management** tab, and turn them on.
 
 ### Complete and update the configuration
 
-Once you have completed configuration, you must commit all these changes to Inventory Visibility. To do this, select **Update Configuration** at top right corner of the **Configurations** page in Power Apps.
+Once you have completed the configuration, you must commit all the changes to Inventory Visibility. To do this, select **Update Configuration** at the top right corner of the **Configurations** page in Power Apps.
 
-For the first time you click **Update Configuration** button, it will pop up a login modal to ask you enter the credentials info.
+For the first time you select the **Update Configuration** button, the system will request your credentials.
 
 - The **Client Id** is the Azure application ID you create for Invent Visibility.
 - The **Tenant Id** is your Azure tenant ID.
 - The **Client Secret** is the Azure application secret you create for Invent Visibility.
 
-After you login, it will upadte the configuration changes to the Inventory Visibility Service to make it work.
+After you login, it will update the configuration in the Inventory Visibility Service.
 
-### <a name="get-service-endpoint"></a>Get service endpoint
+### <a name="get-service-endpoint"></a>Find the service endpoint
 
-If you don't know the correct Inventory Visibility Service endpoint you can use, go to the  **Configurations** page, just click the **Show Service Endpoint** button on top right corner, it will show you the correct service endpoint.
+If you don't know the correct Inventory Visibility service endpoint, go to the  **Configurations** page and select the **Show Service Endpoint** button at top right corner. The page will show you the correct service endpoint.
 
-## Operational Visibility
+## Operational visibility
 
-The Operational Visibility page helps customer to get real-time Inventory on-hand query result on various dimension combinations and post reservation request when you have already opened the **OnHandReservation** feature.
+The **Operational Visibility** page provides real-time on-hand inventory query results based on various dimension combinations, and lets you post reservation request when the *OnHandReservation* feature is enabled.
 
 ### On-hand query
 
-Onhand query tab is used to get real-time Inventory on-hand query result.
+The **On-hand query tab** shows you the results of a real-time on-hand inventory query.
 
-When you click this tab, it will pop up settings modal to ask you enter the credentials info in order to get bearerToken used to query Inventory Visibility Service. You can just paste the bearer token in the **BearerToken** field, and close this modal. Then you can post onhand query request.
+When you open this tab, the system will request your credentials in order to get the bearer token required to query the Inventory Visibility service. You can just paste the bearer token in the **BearerToken** field and close the dialog. Then you can post an on-hand query request.
 
-If the BearToken is invalid or expired, you need to paste a new one in the **BearerToken** field. If you enter the correct Client Id, Tenant Id, Client Secret value, you jsut need to click **refresh** button, it will get a new valid bearer token automatically.
-To post a on hand query,  you just need to enter the field following the pattern in the [Query with Post method](inventory-visibility-api.md#query-with-post-method) the request body.
+If the bearer token is invalid or expired, you need to paste a new one in the **BearerToken** field. Enter the correct **Client ID**, **Tenant ID**, **Client Secret** values and then select the **refresh** button. The system will then get a new, valid bearer token automatically.
+
+To post an on-hand query, enter the query using the pattern described in [Query with post method](inventory-visibility-api.md#query-with-post-method) in the request body.
+
 ![On-hand query settings](media/inventory-visibility-query-settings.png "On-hand query settings")
 
-### Reservation Posting
+### Reservation posting
 
-Reservation Posting tab is used to post a reservation request. In order to post a reservation request, you need to make sure you open the feature  **OnHandReservation**. To know more about this feature, go to [Inventory Visibility Reservations](inventory-visibility-reservations.md).
+Use the **Reservation posting** tab to post a reservation request. Before you can post a reservation request, you must enable the *OnHandReservation* feature. To learn more about this feature, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
 
-To post a reservation request,  you just need to enter the field following the pattern in the [Create One Reservation Event](inventory-visibility-api.md#create-one-reservation-event) the request body. And click **Post** button, you can see the request response details by click **Show Details**. You can get the **reservationId** from here.
+To post a reservation request, you must enter a value using the pattern described in [Create one reservation event](inventory-visibility-api.md#create-one-reservation-event) in the request body. Then select the **Post** button. You can see the request response details by selecting **Show Details**. You can also get the **reservationId** from here.
 
-## Inventory Summary
+## Inventory summary
 
-Inventory Summary is a customized view for Inventory OnHand Sum Entity, it provides an on-hand list for products with all dimensions. You can use the **Advanced Filter** default prodived by the Dataverse to create a personal view to see the rows that are important to you. The advanced filter options let you create a wide range of views from simple to complex. It also lets you add grouped and nested conditions to the filters.
+**Inventory summary** is a customized view for the *Inventory OnHand Sum Entity*. It provides an on-hand list for products with all dimensions. You can use the **Advanced filter** provided by Dataverse to create a personal view to see the rows that are important to you. The advanced filter options let you create a wide range of views from simple to complex. They also let you add grouped and nested conditions to the filters.
 
-To know more about how to use **Advanced Filter**, go to [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced)
+To learn more about how to use the **Advanced filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced)
 
-At the top of the customer view has three drop down lists **Default Dimension**, **Custom Dimension**, **Measure**, you can use this to control which columns can be visible.
-In the Inventory Summary, you can click the column header to filter the current result or sort it.
+The top of the customer view provides three drop-down lists (**Default Dimension**, **Custom Dimension**, and **Measure**) You can use these to control which columns are visible.
 
-At the bottom of the customer view, you can see footer like `50 records (13 selected)`,`50 records` means the current loaded records from the **Advanced Filter** result. `13 selected` means the selected rocords using the header column filter for the loaded records.
+In the **Inventory Summary**, you can select the column header to filter the current result or sort it.
 
-At the bottom, you can see a load more button, click this button to load more records from the Dataverse, the default loaded records is 50 records. When you click it, it will load next 1000 records into this view. The number in the **Load More** button tells you the current loaded records and the total records for the the **Advanced Filter** result.
+At the bottom of the customer view, you can see information such as **50 records (13 selected)** or **50 records**. These refer to the currently loaded records from the **Advanced Filter** result. The text **13 selected** refers to the number of records selected using the header column filter for the loaded records.
+
+At the bottom, you can see a **Load more** button. Select this button to load more records from Dataverse. The default number of loaded records is 50. When you select **Load more**, it will load next available records into this view. The number in the **Load More** button tells you the current loaded records and the total records for the the **Advanced Filter** result.
 
 ![Inventory Summary](media/inventory-visibility-onhand-list.png "Inventory Summary")
