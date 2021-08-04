@@ -52,7 +52,7 @@ This release contains the bug fixes listed in the following table.
 | Bug fix| Make country/region field mandatory on both postal address table and customer address table. | General availability |
 | Bug fix| Identify a phone number as mobile. | General availability |
 | Bug fix| Update the display name from **Parties Electronic Addresses** table to **Party Electronic Addresses** table. | General availability |
-| Bug fix| Synchronize primary electronic address data from lead qualification process, account and contact creation process to Party Electronic Addresses and vice versa. | General availability |
+| Party Electronic Address | Synchronize primary electronic address data from lead qualification process, account and contact creation process to Party Electronic Addresses and vice versa. | General availability |
 
 ## July 2021 release
 
