@@ -106,7 +106,7 @@ When you purchase a Finance and Operations subscription, you will receive detail
 
 - This project supports deployment of Sandbox and Production type environments.
 - The Sandbox and Production type environments are maintained and patched by the Microsoft team, not your staff.
-- All DevTest or Demo environments must still be deployed on an Azure subscription.  It is recommended to redeploy these environments from your LCS Implementation project so that they are all contained in the same project as your Sandbox and Production environments. 
+- All DevTest or Demo environments must still be deployed on an Azure subscription.  It is recommended to redeploy these environments from your LCS Implementation project so that they are all contained in the same project as your sandbox and production environments. 
 
 ### Identify the project as an AX 2012 upgrade
 When you first sign in to your LCS implementation project, you're guided through the **Project Onboarding** wizard. You can always visit the **Project Onboarding** wizard later using the navigation menu next to **Project Settings** in your project.
