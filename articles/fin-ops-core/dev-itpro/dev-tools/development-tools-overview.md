@@ -24,22 +24,22 @@ Application development is carried out in Visual Studio. The development tools s
 Visual Studio 2019 is supported beginning with platform updates for version 10.0.21 of Finance and Operations apps.
 
 ### Application Explorer
-In Visual Studio, the model store is represented by the Application Explorer. On the **View** menu, click **Application** **Explorer** to open it. Use the Application Explorer to browse and interact with the elements in the model store that define the applications. The following illustration shows the Application Explorer. For more details, see [Application Explorer](application-explorer.md).
+In Visual Studio, the model store is represented by the Application Explorer. On the **View** menu, click **Application** **Explorer** to open it. Use the Application Explorer to browse and interact with the elements in the model store that define the applications. The following illustration shows the Application Explorer. For more information, see [Application Explorer](application-explorer.md).
 
 ![Application Explorer.](media/1_devotoolsconcept.png)
 
 ### The project template
-Even a simple application can have a large number of elements in its model. The **Operations Project** template has been added to Visual Studio to help you organize and manage the elements that you are working with for a model. You will use the project to design, build, and test model elements. It’s common to have several projects within a single Visual Studio solution. The following illustration shows three projects in a Visual Studio solution. For more details, see [Finance and Operations project type in Visual Studio](projects.md).
+Even a simple application can have a large number of elements in its model. The **Operations Project** template has been added to Visual Studio to help you organize and manage the elements that you are working with for a model. You will use the project to design, build, and test model elements. It’s common to have several projects within a single Visual Studio solution. The following illustration shows three projects in a Visual Studio solution. For more information, see [Finance and Operations project type in Visual Studio](projects.md).
 
 ![Solution Explorer.](media/2_devotoolsconcept.png)
 
 ### Element designers
-The Visual Studio tools contain designers for each kind of element in the application. You will use these designers when you create or modify elements. The following illustration shows the element designer for a form element. For more details, see [Element designers](element-designers.md).
+The Visual Studio tools contain designers for each kind of element in the application. You will use these designers when you create or modify elements. The following illustration shows the element designer for a form element. For more information, see [Element designers](element-designers.md).
 
 ![Element designer.](media/3_devotoolsconcept.png)
 
 ### Code editor
-The X++ code is written in the code editor for Visual Studio. The standard features that a developer expects from the code editor are supported. For example, sections of code are collapsible. IntelliSense provides guidance as you write or modify code. For more details, see [Code editor features](code-editor.md).
+The X++ code is written in the code editor for Visual Studio. The standard features that a developer expects from the code editor are supported. For example, sections of code are collapsible. IntelliSense provides guidance as you write or modify code. For more information, see [Code editor features](code-editor.md).
 
 ![Code editor.](media/4_devotoolsconcept.png)
 
