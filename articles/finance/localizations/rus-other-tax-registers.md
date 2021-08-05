@@ -45,9 +45,9 @@ Set up the settlement periods for all taxes except value-added tax (VAT). The se
 
 ### Set up taxes that are automatically processed
 
-1. Create expense codes for taxes. For more information, see [Create an expense or income code](rus-expense-and-income-codes#create-an-expense-or-income-code.md).
-2. Create ledger posting groups for taxes. For more information, see [Set up a posting group](rus-local-specific-posting-sales-vat#set-up-a-posting-group.md).
-3. Create sales tax codes. For more information, see [Set up sales tax codes](../finance/general-ledger/tasks/set-up-sales-tax-codes.md).
+1. Create expense codes for taxes. For more information, see [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code).
+2. Create ledger posting groups for taxes. For more information, see [Set up a posting group](rus-local-specific-posting-sales-vat.md#set-up-a-posting-group).
+3. Create sales tax codes. For more information, see [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md).
 
 Set up sales tax relations between the sales tax code and the expense code. For example, follow these steps to set up the relations for VAT.
 
@@ -85,7 +85,7 @@ The **Outlay - realized tax** register is used to summarize information about ta
 The register is formed from two types of taxes:
 
   - Taxes that are automatically processed, such as VAT. You must set up sales tax relations for these taxes.
-  - Taxes that aren't automatically processed, such as taxes on advertising, extraction of mineral resources, and usage of water resources. Create expense codes that are used to post these taxes, and assign them to the register. For more information, see [Create an expense or income code](https://docs.microsoft.com/dynamics365/finance/localizations/rus-expense-and-income-codes#create-an-expense-or-income-code) and Set up expense and income codes for the tax register.
+  - Taxes that aren't automatically processed, such as taxes on advertising, extraction of mineral resources, and usage of water resources. Create expense codes that are used to post these taxes, and assign them to the register. For more information, see [Create an expense or income code](rus-expense-and-income-codes.md#create-an-expense-or-income-code) and Set up expense and income codes for the tax register.
 
 The tax register contains information about all accrued taxes and duties, and presents lines that are grouped by tax type.
 
