@@ -108,13 +108,12 @@ For more information, see [Onboarding an implementation project](../imp-lifecycl
 
 ### Environment and data management 
 
-Typical environment and data management events for the service and the responsibilities for each party are described in the following tables.
+Typical environment and data management events performed in the service include the following:
 
 #### Environment and data management events for production instances
 
-
 **Event:** [Requesting a production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?toc=/dynamics365/finance/toc.json#requesting-the-production-environment) 
-- Complete and submit the [Go-live checklist](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?toc=/dynamics365/finance/toc.json#fasttrack-go-live-assessment) to the Microsoft FastTrack team.
+- Complete and submit the [Go-live checklist](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?toc=/dynamics365/finance/toc.json#fasttrack-go-live-assessment) to the [Microsoft FastTrack](https://docs.microsoft.com/en-us/dynamics365/fasttrack/) team.
 - Complete the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) before requesting a production instance.
 - Complete all implementation tasks specified in the [LCS methodology](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/create-methodology). 
  
