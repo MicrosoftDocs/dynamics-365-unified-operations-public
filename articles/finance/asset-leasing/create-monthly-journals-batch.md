@@ -4,7 +4,7 @@
 title: Create monthly journal entries in a batch
 description: This topic explains how to create journal entries in a batch to help increase efficiency when monthly lease expenses are recorded.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,5 +40,6 @@ To set up a batch job, or to process payment invoices, depreciation, or interest
 >
 > The journal entries are created, but they won't be posted until you select the **Run** command.
 
+To post the initial recognition journal on a date other than the lease’s commencement date, select **Assigning initial recognition posting date**. A **Date** field will appear that lets you specify the correct posting date.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
