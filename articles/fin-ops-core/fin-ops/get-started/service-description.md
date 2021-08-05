@@ -95,7 +95,7 @@ Service operations reflect various aspects of provisioning and use of Finance an
 
 ### Onboarding and implementation
 
-Typical onboarding and implementation events and the expected responsibilities for each party are provided in the following table.
+Typical onboarding and implementation events are as follows:
 
 | Request | Expected Microsoft action  | Expected customer/implementation partner action |
 |-------------------------|-------------------------|-------------------------|
@@ -104,7 +104,6 @@ Typical onboarding and implementation events and the expected responsibilities f
 | Implementation planning and analysis | Provide relevant tools in LCS, such as Business process modeler and interoperability with Azure DevOps. |Project planning, Azure DevOps, System onboarding and admin account setup.|
 
 For more information, see [Onboarding an implementation project](../imp-lifecycle/onboard.md).
-
 
 ### Environment and data management 
 
@@ -117,39 +116,42 @@ Typical environment and data management events performed in the service include 
 - Complete the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) before requesting a production instance.
 - Complete all implementation tasks specified in the [LCS methodology](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/create-methodology). 
  
-**Event:** [Copy a sandbox database to a production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).<br><br>*(Note: Performed when ready to do a mock go-live or an actual go-live cutover)* 
+**Event:** [Copy a sandbox database to a production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).
+Note that this is performed when ready to do a mock go-live or an actual go-live cutover.
 
-Event: Maintenance mode](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/maintenance-mode) | <ul><li>Turn on maintenance mode in LCS.</br></li></br><li>Complete necessary maintenance.</br></li></br><li>Turn off maintenance mode.</br> | N/A | N/A| N/A |
-
-
-
-
-
-| Customer's request  | Customer's responsibility  | Microsoft's responsibility  | Microsoft's lead time  |Microsoft's estimated maintenance downtime  |
-|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
-| [Requesting a production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?toc=/dynamics365/finance/toc.json#requesting-the-production-environment) |<ul><li>Complete and submit the [Go-live checklist](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?toc=/dynamics365/finance/toc.json#fasttrack-go-live-assessment) to the Microsoft FastTrack team. </br></li></br><li>Complete the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) before requesting a production instance.</br></li></br><li>Complete all implementation tasks specified in the [LCS methodology](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/create-methodology). </br></li></br><li>Complete the production environment deployment [service request](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team) in LCS.| <ul><li>Complete a [FastTrack go-live assessment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?toc=/dynamics365/finance/toc.json#fasttrack-go-live-assessment).</br></li></br><li>Deploy a Production Instance only after Customer has successfully completed the go-live assessment.</br> | </br>2 business days</br> | </br>N/A</br>|
-| [Copy a sandbox database to a production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).<br><br>*(Note: Performed when ready to do a mock go-live or an actual go-live cutover)* | <ul><li>Run the **Move Database** option in LCS. |N/A | N/A | N/A|
-| [Maintenance mode](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/maintenance-mode) | <ul><li>Turn on maintenance mode in LCS.</br></li></br><li>Complete necessary maintenance.</br></li></br><li>Turn off maintenance mode.</br> | N/A | N/A| N/A |
-
-
-
-
+**Event:** Maintenance mode](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/maintenance-mode)
+- Turn on maintenance mode in LCS.
+- Complete necessary maintenance.
+- Turn off maintenance mode in LCS.
 
 #### Environment and data management events for non-production instances
 
-LCS provides [provisioning](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure) and [database movement operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations) that are used by customers as described in the following table.
+LCS provides [self-service provisioning](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/infrastructure-stack) and [database movement operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations) that are used for performing environment and data management tasks. These include the following:
 
-| Customer's request  | Customer's responsibility  | Microsoft's responsibility | Microsoft's lead time  | Microsoft's estimated maintenance downtime  |
-|-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
-| [Deploy a new sandbox instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure) |<ul><li>Ensure that all required instances have been [planned](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning?toc=/dynamics365/finance/toc.json) and that the applicable add-on offers have been purchased.</br></li></br><li>Run the deployment process in LCS.</br></li></br><li>Complete all tasks specified in the LCS checklists.</br></li></br><li>A Tier 1 sandbox instance (also known as a *development environment*) is a VM [deployed to the customer's Azure subscription](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances) and is customer-managed. A Tier-2 (or higher) sandbox environment is a multibox environment closer in topology to a production environment, deployed to the Finance and Operations Subscription.| N/A | N/A|N/A|
-| [Copy golden configuration database from sandbox to production](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).<br><br>*(Note: Performed when ready to do a mock go-live or an actual go-live cutover)* | <ul><li>Run the **Move Database** option in LCS. |N/A | N/A | N/A|
-| [Restore a production point-in-time backup to a mon-production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox)  | <ul><li>Run the **Refresh Database** option in LCS.</br></li></br><li>Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configurations (such as integration endpoints), and enable or add users.</br></li></br><li>Customer should make these changes by applying a data package. | N/A |N/A| N/A|
-| [Non-production instance database point-in-time restore](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore) |<ul><li>Accept that the process cannot be undone.</br></li></br><li>Run the point-in-time restore operation in LCS.| N/A | N/A | N/A |
-| Copy Tier 2 sandbox database to a development sandbox for troubleshooting and [debugging](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-debugdiag)  | <ul><li>Run database export operation in LCS on the Tier 2 sandbox environment.</br></li></br><li>Import and update the database in the development environment. | N/A | N/A| N/A|
+**Event:** [Deploy a new sandbox instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure)
+- Ensure that all required instances have been [planned](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning?toc=/dynamics365/finance/toc.json) and that the applicable add-on offers have been purchased.
+- Run the deployment process in LCS.
+- Complete all tasks specified in the LCS checklists.
+- A Development environment is a VM [deployed to the customer's Azure subscription](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances) and is customer-managed.
+
+**Event** [Copy golden configuration database from sandbox to production](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).
+Note that this is performed when ready to do a mock go-live or an actual go-live cutover.
+
+**Event** [Restore a production point-in-time backup to a mon-production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox)
+- Run the **Refresh Database** option in LCS.
+- Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configurations (such as integration endpoints), and enable or add users.(Customer should make these changes by applying a data package.
+
+**Event:** [Non-production instance database point-in-time restore](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore)
+Accept that the process cannot be undone.
+Run the point-in-time restore operation in LCS.
+
+**Event:** Copy Tier 2 sandbox database to a development sandbox for troubleshooting and [debugging](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-debugdiag)  
+- Run database export operation in LCS on the Tier 2 sandbox environment.
+- Import and update the database in the development environment.
 
 ### Data back-up and retention 
 
-Databases for Microsoft-managed environments are protected by automatic back-ups. Automatic back-ups are retained for 28 days for production environments (unless Microsoft performs a rollback) and 7 days for sandbox (Tier 2+) environments. A rollback of production may be performed in the event a failure occurs during any planned maintenance update specified in [planned maintenance responsibilities](service-description.md#planned-maintenance-responsibilities).
+Databases for Finance and Operations environments in the SaaS subscription are protected by automatic back-ups. Automatic back-ups are retained for 28 days for production environments (unless Microsoft performs a rollback) and 7 days for sandbox (Tier 2+) environments. A rollback of production may be performed in the event a failure occurs during any planned maintenance update specified in [planned maintenance responsibilities](service-description.md#planned-maintenance-responsibilities).
 
 For more information about automatic back-ups, see [Automated backups - Azure SQL Database & SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
@@ -195,43 +197,11 @@ The following table describes some typical scenarios and activities for the serv
 
 ### Service update strategy and maintenance windows 
 
-Customers must stay current on the latest service updates in accordance with the [software lifecycle policy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy). Finance and Operations follows the Microsoft Modern Lifecycle Policy, which covers products that are serviced and supported continuously. The following illustrates the process:
+Customers must stay current on the latest service updates in accordance with the [software lifecycle policy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy). Finance and Operations follows the Microsoft [Modern Lifecycle Policy](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#modern-lifecycle-policy), which covers products that are serviced and supported continuously. The following illustrates the process:
  
 ![Common configuration scenarios](media/FO-OneVersion.png)
 
 For more details refer to [One Version Service updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/oneversion-overview).
-
-Service Updates are released as a single cumulative update, known as a deployable package, for customers to uptake. Microsoft notifies the customer when a new service update is made available. Microsoft updates customer environments to the latest released update within the maintenance window configured in the customer's LCS project. Unless the service update is paused, the environment will be updated to the latest release. Customers have the option to take the update outside of the scheduled maintenance window via self-service update. We recommend customers stay current for a better service experience.
-
-Please note that some service updates may be mandatory and require no consent. To help protect our customers and the service, Microsoft may apply critical security updates directly to a customer's Finance and Operations production environment.
-
-#### Planned maintenance responsibilities 
-
-Microsoft provides customers with the types of updates to Finance and Supply Chain Management environments set forth in the table below. These updates may require downtime on production environments. The downtime window can be categorized as *Microsoft planned maintenance* (initiated by Microsoft) or *customer planned maintenance* (initiated by the customer). Updates are initiated or scheduled by the customer via LCS.
-
-The responsibilities of Microsoft, the implementation partner, and the customer are reflected in the table below for each update type.
-
-| Type of update | Expected action from Microsoft | Expected action from customer/implementation partner | Maintenance window<br><br>*(Microsoft's estimated maintenance downtime)*|
-|-------------------------|-------------------------|-------------------------|------|
-| **Service updates**</br>*Service updates are collections of quality updates and new features for the application and the platform, provided as a deployable package. They are backward compatible* | Initiate updates to the application within the configured maintenance window. | Customer must always stay current on the latest version of the application. | Microsoft initiated maintenance window<br>*(30 minutes – 4 hours*)*|
-| **Critical update**</br>*Update that solves a critical issue.* | <ul><li>Notify customer of the critical update.</br><br><li>Initiate update within the specified timeline. | Apply the critical update.| Microsoft initiated maintenance window<br>*(30 minutes – 4 hours)* |
-| **Extensions**</br>*Change to the standard business application logic.* | No action required. | Validate extensions in customer's non-production instances then promote them to customer's production instance.| Customer initiated maintenance window</br>*(1 – 4 hours)* |
-| **Infrastructure updates**<br>*Infrastructure updates are updates made to the underlying infrastructure like operating system updates. These are done monthly.* | Initiate updates within the Microsoft planned maintenance window. | No action needed. | Microsoft initiated maintenance window</br>*(1 – 4 hours)*  |
-| **Finance and Operations**</br>*IP address whitelisting - Securing access from customer's corpnet to Finance and Supply Chain Management.* | Finance and Supply Chain Management are Azure services and use Azure IP address ranges. | Customers need to whitelist the Azure datacenter ranges for both their primary and Geo-DR datacenters.</br><br>Link to doc for IP address ranges for Azure. | N/A |
-| **Security**</br>*Secure Infrastructure.* | Microsoft installs anti-malware, uses SSL, rotate secrets, and adheres strictly to SOC/ISO standards.|Refer to the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/security/dynamics365-security)or more details on security. | N/A |
-| **ExpressRoute**</br>*Dedicated connection to Finance and Operations.*| Finance and Operations enabled ExpressRoute over public peering. | Customers must work with their Azure ExpressRoute service provider to acquire a dedicated connection to Finance and Operations. | N/A |
-
-\*\*Promoting an update to a customer's production environment is a service request to Microsoft that must be initiated from LCS. This is within the customer planned maintenance window. Request is planned to be executed within two business days. Generally, 95% of updates are applied in less than an hour.
-
-#### Microsoft planned maintenance schedule and communication 
-
-Scheduled downtime means periods of downtime related to network, hardware, or service maintenance or updates. Microsoft will publish notice or notify Customers at least **five days** prior to the commencement of such downtime. The default downtime window as listed below are scheduled on weekends in time windows defined per region to minimize the impact to the customers' business.
-
-Microsoft's planned maintenance schedule:
-
-- **NAM:** 2 AM to 10 AM
-- **EMEA:** 10 PM to 6 AM
-- **APAC:** 12 PM to 9 PM
 
 ### Security and administrative access 
 
