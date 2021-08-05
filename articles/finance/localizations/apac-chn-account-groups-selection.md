@@ -53,7 +53,7 @@ This topic explains how to select account groups when you set up voucher types f
 6. Follow one of these steps, depending on the value that you selected in the **Account code** field:
 
     - If you selected **Group**: In the **Group number** field, select customer group, vendor group, project group, fixed asset group, or bank group, based on the account type that you selected in the **Account type** field.
-    - If you selected **Table**: In the **Account number** field, select ledger account, customer account, vendor account, Project ID, fixed asset number, or bank account value, based on the account type that you selected in the **Account type** field.
+    - If you selected **Table**: In the **Account number** field, select ledger account, customer account, vendor account, project ID, fixed asset number, or bank account value, based on the account type that you selected in the **Account type** field.
 
 For information about how to set up Chinese voucher types, see [Set up Chinese vouchers](tasks/set-up-chinese-vouchers.md).
 
