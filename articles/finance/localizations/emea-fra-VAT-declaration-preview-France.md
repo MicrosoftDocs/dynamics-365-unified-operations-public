@@ -4,7 +4,7 @@
 title: VAT declaration (France)
 description: This topic describes how to set up and generate a report for France that can be used to report a value-added tax (VAT) declaration.
 author: anasyash
-ms.date: 08/04/2021
+ms.date: 08/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,10 +46,7 @@ For France, you must configure three lookups:
 
 For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up-application-specific-parameters-for-vat-declaration-fields) section later in this topic.
 
-In the following tables, the "Lookup result" column shows the lookup result that
-is preconfigured for a specific VAT declaration row in the VAT declaration
-format. Use this information to correctly associate sales tax codes with the
-lookup result and then with the row of the VAT declaration.
+In the following tables, the **Lookup result** column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
 
 ### VAT declaration preview overview
 
@@ -1101,11 +1098,11 @@ Follow these steps to define which sales tax codes generate which boxes in secti
 3. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Operation lookup**.
 4. On the **Conditions** FastTab, set the following fields to associate the sales tax codes and operations.
 
-| Field                  | Description                                                                                                                                                                                                                                                                                                       |
-|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lookup result          | Select the operation to set up. For more information about the operations and their assignment to VAT declaration rows, see the [VAT declaration preview overview](#vat-declaration-preview-overview) section earlier in this topic.                                                                              |
-| Tax code               | Select the sales tax code to associate with the operation. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
-| Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, set up a transaction classifier. The following transaction classifiers are available: <br>- **Purchase** <br>- **PurchaseExempt** (tax-exempt purchase)<br> - **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)<br> - **Sales**<br> - **SalesExempt** (tax-exempt sale)<br> - **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)<br> - **Use tax**<br> For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).      |
+   | Field                  | Description                                                                                                                                                                                                                                                                                                       |
+   |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | Lookup result          | Select the operation to set up. For more information about the operations and their assignment to VAT declaration rows, see the [VAT declaration preview overview](#vat-declaration-preview-overview) section earlier in this topic.                                                                              |
+   | Tax code               | Select the sales tax code to associate with the operation. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
+   | Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, set up a transaction classifier. The following transaction classifiers are available: <br>- **Purchase** <br>- **PurchaseExempt** (tax-exempt purchase)<br> - **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)<br> - **Sales**<br> - **SalesExempt** (tax-exempt sale)<br> - **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)<br> - **Use tax**<br> For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).      |
 
    > [!NOTE]
    > Be sure to associate all sales tax codes with lookup results. If any sales tax codes should not generate values in section A, associate them with the **Other** lookup result.
@@ -1126,7 +1123,7 @@ Follow these steps to define which sales tax codes generate which boxes in secti
 
 #### Set up sales tax codes for Monaco
 
-Follow these steps to define which sales tax codes generate the amount in box 18, "Including VAT on transactions to Monaco."
+Follow these steps to define which sales tax codes generate the amount in box 18, **Including VAT on transactions to Monaco**.
 
 1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Monaco lookup**.
 2. On the **Conditions** FastTab, associate the sales tax codes and the **Monaco** lookup result.
