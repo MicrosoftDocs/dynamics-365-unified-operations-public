@@ -457,6 +457,7 @@ There is an option to separately configure the scheduler. Click **Commerce sched
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
 
-
+> [!NOTE]
+> This version of the Commerce functionality for France is based on the Fiscal integration framework. See [Deployment guidelines for cash registers for France (legacy)](./emea-fra-deployment.md) for the information on the legacy digital signing sample for France, and [Migrating from legacy Commerce functionality for France](./emea-fra-fi-migration.md) for guidelines on how to enable the fiscal integration functionality for France in your existing environments that use the legacy digital signing sample.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
