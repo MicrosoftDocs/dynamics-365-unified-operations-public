@@ -117,7 +117,7 @@ Typical environment and data management events performed in the service include 
 - Complete all implementation tasks specified in the [LCS methodology](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/create-methodology). 
  
 **Event:** [Copy a sandbox database to a production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).
-Note that this is performed when ready to do a mock go-live or an actual go-live cutover.
+- Note that this is performed when ready to do a mock go-live or an actual go-live cutover.
 
 **Event:** Maintenance mode](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/maintenance-mode)
 - Turn on maintenance mode in LCS.
@@ -135,7 +135,7 @@ LCS provides [self-service provisioning](https://docs.microsoft.com/en-us/dynami
 - A Development environment is a VM [deployed to the customer's Azure subscription](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances) and is customer-managed.
 
 **Event** [Copy golden configuration database from sandbox to production](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).
-Note that this is performed when ready to do a mock go-live or an actual go-live cutover.
+- Note that this is performed when ready to do a mock go-live or an actual go-live cutover.
 
 **Event** [Restore a production point-in-time backup to a mon-production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox)
 - Run the **Refresh Database** option in LCS.
