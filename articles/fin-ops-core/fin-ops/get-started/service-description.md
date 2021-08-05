@@ -58,8 +58,8 @@ The operating model of Finance and Operations defines specific roles and respons
 
 Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments within the Microsoft subscription. This includes allocating the required system infrastructure to run the service and proactive communication to customers about the service’s health. 
 
-![Implementation roles and responsibilities](media/implementation-roles-responsibilities.png)
 ![Implementation roles and responsibilities](media/FO-Operating-Model.PNG)
+[Cloud Operations and Servicing](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/cloud-operations-servicing)
 
 With the support of their implementation partner, customers determine the configuration of the business application logic in Finance and Operations to match their unique business processes. Customers can extend Finance and Operations with low-code Power Platform applications, ISV solutions of their choice, unique customizations, or a combination of these. Customers typically choose one of the following configuration scenarios: 
 
