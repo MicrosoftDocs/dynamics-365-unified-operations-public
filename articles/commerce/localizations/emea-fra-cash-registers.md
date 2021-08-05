@@ -110,14 +110,14 @@ Only transactions for cash sales are signed. Here are some examples of transacti
 
 The data that is signed for a sales transaction is a text string that consists of the following data fields:
 
-1. The total amount of sales including tax per tax rate.
-2. The total amount of sales including tax.
-3. The date and time of the transaction, in the format YYYYMMDDHHMMSS.
-4. The register number.
-5. The sequential number of the signed sales transaction for this register.
-6. The type of sales transaction.
-7. A value (Y/N) that indicates whether the transaction is the first signed sales transaction for the register.
-8. The previous signature for the same register. A blank value is used for the first signed sales transaction.
+- The total amount of sales including tax per tax rate.
+- The total amount of sales including tax.
+- The date and time of the transaction, in the format YYYYMMDDHHMMSS.
+- The register number.
+- The sequential number of the signed sales transaction for this register.
+- The type of sales transaction.
+- A value (Y/N) that indicates whether the transaction is the first signed sales transaction for the register.
+- The previous signature for the same register. A blank value is used for the first signed sales transaction.
 
 You can view the transaction signature and the transaction data that was used to generate it on the **Fiscal transactions** FastTab of the **Store transactions** page in Commerce headquarters. By selecting **Extended data**, you can view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, or hash algorithm identification. 
 
@@ -401,7 +401,9 @@ Next, on the **Key Vault parameters** page you must specify the parameters for a
 - **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Azure Key Vault storage.
 - **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
 
-Next, you need to configure a certificate profile for your certificates stored in Azure Key Vault or local certificate storage. The certificate profile is used for signing on the channel side:
+Next, you need to configure a certificate profile for your certificates stored in Azure Key Vault or local certificate storage. The certificate profile is used for signing on the channel side.
+
+To configure a certificate profile for your certificates in headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Certificate profiles**. 
 1. Create a new certificate profile.
@@ -440,10 +442,10 @@ After you import the configurations, in the **Retail data archive export format*
 > [!NOTE]
 > You only need to complete the steps of this section if you are updating an existing environment.
 
-To enable audit events, you must reinitialize the Commerce Extensible enumerations. To enable transmitting France-specific data from POS to headquarters, you must reinitialize the Commerce scheduler.
+To enable audit events, you must reinitialize the Commerce extensible enumerations. To enable transmitting France-specific data from POS to headquarters, you must reinitialize the Commerce scheduler.
 
 1. On the **General** FastTab of the **Commerce parameters** page, select **Initialize**. For more information, see [Initialize seed data in new Retail environments](../enable-configure-retail-functionality.md).
-1. There is an option to separately configure the scheduler. Select **Commerce scheduler** \> **Initialize commerce scheduler**. On the **Initialize Commerce scheduler** page, select **OK**.
+1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. On the **Initialize Commerce scheduler** page, select **OK**.
 
 ### Configure channel components
 
