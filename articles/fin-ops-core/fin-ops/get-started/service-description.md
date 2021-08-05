@@ -46,7 +46,7 @@ The SaaS brings together these applications, plus business intelligence, infrast
 - Pro Developer [Microsoft Visual Studio](https://visualstudio.microsoft.com) and [Azure DevOps](https://dev.azure.com)
 - Independent Software Vendor (ISV) solutions from [Microsoft AppSource](https://appsource.microsoft.com/partners)
 
-Based on requirements, Customers choose their solution approach. Working with their Implementation Partner, Customers define, develop, and test their solution using the tools and best practices that are provided in [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs).The following illustrates three common scenarios: 
+Based on requirements, Customers choose their solution approach. Working with their Implementation Partner, Customers define, develop, and test their solution using the tools and best practices that are provided in [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs). The following illustrates three common scenarios: 
 
 ![Common configuration scenarios](media/common-configuration-scenarios.png)
 
