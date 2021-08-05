@@ -139,7 +139,7 @@ LCS provides [self-service provisioning](https://docs.microsoft.com/en-us/dynami
 
 **Event** [Restore a production point-in-time backup to a mon-production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox)
 - Run the **Refresh Database** option in LCS.
-- Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configurations (such as integration endpoints), and enable or add users.(Customer should make these changes by applying a data package.
+- Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configurations (such as integration endpoints), and enable or add users. Note that these changes are made by applying a [data package](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages#import-a-data-package).
 
 **Event:** [Non-production instance database point-in-time restore](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore)
 Accept that the process cannot be undone.
