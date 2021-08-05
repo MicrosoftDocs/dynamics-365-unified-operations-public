@@ -1543,7 +1543,7 @@
             - name: France reporting
               items: 
               - name: VAT declaration
-              href: localizations/emea-fra-VAT-declaration-preview-France.md
+                href: localizations/emea-fra-VAT-declaration-preview-France.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
