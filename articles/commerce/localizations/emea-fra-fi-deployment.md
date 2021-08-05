@@ -95,7 +95,7 @@ To enable the RestrictingShiftDuration component, follow these steps.
     - **Retail Server:** The file is named **commerceruntime.ext.config** and can be found in the **bin\\ext** folder under the IIS Retail Server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config** and can be found under the local CRT client broker location.
 
-2. Register the CRT change in the extension configuration file, as shown in the following example.
+1. Register the CRT change in the extension configuration file, as shown in the following example.
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
