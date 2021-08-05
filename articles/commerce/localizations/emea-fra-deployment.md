@@ -107,7 +107,7 @@ To apply the new feature in the CRT extension, follow these steps.
 2. Add custom handler for CertificateSignatureServiceRequest in the SequentialSignatureRegister project.
 
 3. To read a secret call, GetUserDefinedSecretCertificateServiceRequest using a constructor with profileId parameter. That will start the functionality working with settings from Certificate profiles. Based on the settings, the certificate will be retrieved either from Azure Key Vault or local machine storage.
-	```C#
+	``` csharp
 	GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);
 	GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
 	
