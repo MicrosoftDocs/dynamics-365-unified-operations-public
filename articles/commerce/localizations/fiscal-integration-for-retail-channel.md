@@ -29,9 +29,9 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-## Introduction
+This topic is an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
 
-This topic is an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of sales in accordance with local fiscal laws that are aimed at preventing tax fraud in the retail industry. Here are some typical scenarios that can be covered by using fiscal integration:
+Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of sales in accordance with local fiscal laws that are aimed at preventing tax fraud in the retail industry. Here are some typical scenarios that can be covered by using fiscal integration:
 
 - Register a sale on a fiscal device that is connected to point of sale (POS), such as a fiscal printer, and print a fiscal receipt for the customer.
 - Securely submit information that is related to sales and returns that are completed in Retail POS to an external web-service that is operated by the tax authority.
@@ -58,13 +58,13 @@ A fiscal registration process for a specific POS register is defined by a corres
 The following example shows a typical fiscal registration execution flow for a fiscal device. The flow starts with an event in the POS (for example, finalization of a sales transaction) and implements the following sequence of steps:
 
 1. The POS requests a fiscal document from CRT.
-2. CRT determines whether the current event requires fiscal registration.
-3. Based on the fiscal registration process settings, CRT identifies a fiscal connector and corresponding fiscal document provider to use for the fiscal registration.
-4. CRT runs the fiscal document provider that generates a fiscal document (for example, an XML document) that represents the transaction or event.
-5. The POS sends the fiscal document that CRT prepares to a Hardware station.
-6. The Hardware station runs the fiscal connector that processes the fiscal document and communicates it to the fiscal device or service.
-7. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
-8. CRT saves the response to the channel database.
+1. CRT determines whether the current event requires fiscal registration.
+1. Based on the fiscal registration process settings, CRT identifies a fiscal connector and corresponding fiscal document provider to use for the fiscal registration.
+1. CRT runs the fiscal document provider that generates a fiscal document (for example, an XML document) that represents the transaction or event.
+1. The POS sends the fiscal document that CRT prepares to a Hardware station.
+1. The Hardware station runs the fiscal connector that processes the fiscal document and communicates it to the fiscal device or service.
+1. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
+1. CRT saves the response to the channel database.
 
 ![Solution schema.](media/emea-fiscal-integration-solution.png "Solution schema")
 
@@ -120,7 +120,7 @@ A fiscal transaction stores the following details:
 - The status of the fiscal registration: **Completed** for successful registration, **Skipped** if the operator selected the **Skip** option for a failed registration, or **Marked as registered** if the operator selected the **Mark as registered** option.
 - Info code transactions that are related to a selected fiscal transaction. To view the info code transactions, on the **Fiscal transactions** FastTab, select a fiscal transaction that has a status of **Skipped** or **Marked as registered**, and then select **Info code transactions**.
 
-By clicking **Extended data**, you can also view some properties of the fiscal transaction. The list of the properties that can be viewed is specific to the fiscal registration functionality that generated the fiscal transaction. For example, you can view the digital signature, sequential number, certificate thumbprint, hash algorithm identification, and other fiscal transaction properties for the digital signing functionality for France.
+By selecting **Extended data**, you can also view some properties of the fiscal transaction. The list of the properties that can be viewed is specific to the fiscal registration functionality that generated the fiscal transaction. For example, you can view the digital signature, sequential number, certificate thumbprint, hash algorithm identification, and other fiscal transaction properties for the digital signing functionality for France.
 
 ## Fiscal texts for discounts
 
@@ -153,7 +153,7 @@ The following fiscal integration functionality is also available in the Commerce
 
 - [Digital signature for Norway](./emea-nor-cash-registers.md)
 
-The following legacy fiscal integration functionality that is available in Commerce SDK does not use the fiscal integration framework and will be deprecated in later updates:
+The following legacy fiscal integration functionality that is available in the Commerce SDK does not use the fiscal integration framework and will be deprecated in later updates:
 
 - [Control unit integration sample for Sweden (legacy)](./retail-sdk-control-unit-sample.md)
 - [Digital signature for France (legacy)](./emea-fra-deployment.md)
