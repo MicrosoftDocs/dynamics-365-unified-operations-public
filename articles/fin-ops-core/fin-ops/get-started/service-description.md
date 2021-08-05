@@ -32,7 +32,15 @@ ms.dyn365.ops.version: 10.0.18
 
 ## Overview
 
-Microsoft Dynamics 365 Finance and Operations is an Enterprise Resource Planning (ERP) SaaS service that is built on and for the Microsoft Azure Cloud. The service provides organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Finance and Operations includes one or more of the following solution areas: Finance, Human Resources, Supply Chain Management, Commerce and Project Operations. It brings together these applications plus business intelligence, infrastructure, compute, and database services and enables organizations to run industry-specific and operational business processes. Business processes can be augmented or extended with low-code Microsoft Power Platform Tools, extended by Pro Developers using Microsoft Visual Studio with Azure DevOps, or extended with Independent Software Vendors (ISV) solutions from Microsoft Appsource. Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
+Microsoft Dynamics 365 Finance and Operations is an Enterprise Resource Planning (ERP) SaaS that is built on and for the Microsoft Azure Cloud. The service provides organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Finance and Operations includes one or more of the following solution areas: 
+
+- [Finance](https://docs.microsoft.com/en-us/dynamics365/finance/)
+- [Human Resources](https://docs.microsoft.com/en-us/dynamics365/human-resources/)
+- [Supply Chain Management](https://docs.microsoft.com/en-us/dynamics365/supply-chain/)
+- [Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/)
+- [Project Operations](https://docs.microsoft.com/en-us/dynamics365/project-operations/)
+
+It brings together these applications, plus business intelligence, infrastructure, compute, and database services, and enables organizations to run industry-specific and operational business processes. Funcationality and Business Processes can be augmented or extended with low-code Microsoft Power Platform Tools, Microsoft Visual Studio and Azure DevOps, or Independent Software Vendor (ISV) solutions from Microsoft Appsource. Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
 
 - [Microsoft Power Platform](https://powerplatform.microsoft.com)
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com)
