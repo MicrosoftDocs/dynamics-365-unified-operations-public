@@ -1540,6 +1540,10 @@
             items:
             - name: Reporting for multiple VAT registrations
               href: localizations/emea-reporting-for-multiple-vat-registrations.md
+            - name: France reporting
+              items: 
+              - name: VAT declaration
+              href: localizations/emea-fra-VAT-declaration-preview-France.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
@@ -1818,6 +1822,8 @@
           href: localizations/china.md
         - name: Finance and Operations operated by 21Vianet in China
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
+        - name: Account groups selection for Chinese voucher types
+          href: localizations/apac-chn-account-groups-selection.md
         - name: Bill of materials comparison
           href: localizations/apac-chn-bom-comparison.md
         - name: Chinese hierarchy of chart of accounts
@@ -2156,6 +2162,8 @@
           href: localizations/tasks/fr-00004-setup-method-payment.md
         - name: Update method of payment on customer
           href: localizations/tasks/fr-00004-update-method-payment-customer.md
+        - name: VAT declaration
+          href: localizations/emea-fra-VAT-declaration-preview-France.md
         - name: DAS-2 report
           href: localizations/emea-fra-das2-report.md
       - name: Germany
@@ -3230,6 +3238,8 @@
             href: localizations/rus-reporting-deferrals.md
         - name: Tax accounting
           items:
+          - name: Create tax registers and the tax register journal
+            href: localizations/rus-profit-tax-registers.md
           - name: Expense and income codes
             href: localizations/rus-expense-and-income-codes.md
           - name: Assets tax registers
@@ -3246,6 +3256,10 @@
             href: localizations/rus-bad-debts.md
           - name: Calculation of tax asset and tax liability registers
             href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
+          - name: Goods movement tax registers
+            href: localizations/rus-goods-movement-tax-registers.md
+          - name: Other tax registers
+            href: localizations/rus-other-tax-registers.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
