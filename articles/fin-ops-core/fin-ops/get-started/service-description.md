@@ -195,9 +195,13 @@ The following table describes some typical scenarios and activities for the serv
 
 ### Service update strategy and maintenance windows 
 
-Customers must stay current on the latest service updates in accordance with the [software lifecycle policy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy). Finance and Operations follows the Microsoft Modern Lifecycle Policy, which covers products that are serviced and supported continuously.
+Customers must stay current on the latest service updates in accordance with the [software lifecycle policy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy). Finance and Operations follows the Microsoft Modern Lifecycle Policy, which covers products that are serviced and supported continuously. The following illustration provides a description of the process:
+ 
 
-[Service updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/oneversion-overview) to the Finance and Operations applications and platform are handled as follows:
+
+For more details refer to [One Version Service updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/oneversion-overview).
+ 
+
 
 Service Updates are released as a single cumulative update, known as a deployable package, for customers to uptake. Microsoft notifies the customer when a new service update is made available. Microsoft updates customer environments to the latest released update within the maintenance window configured in the customer's LCS project. Unless the service update is paused, the environment will be updated to the latest release. Customers have the option to take the update outside of the scheduled maintenance window via self-service update. We recommend customers stay current for a better service experience.
 
