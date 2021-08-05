@@ -48,6 +48,19 @@ The following inventory changes are currently considered in the channel-side inv
 - Inventory returned to store
 - Inventory fulfilled (pick, pack, ship) from store warehouse
 
+To use the channel-side inventory calculation, you must enable the **Optimized product availability calculation** feature.
+
+If your Commerce environment is in release **10.0.8 to 10.0.11**, follow these steps.
+-	Go to **Retail and Commerce** > **Commerce shared parameters** > **Inventory**
+-	Select the **Use optimized process for product availability job** option for the **Product availability job** parameter.
+
+If your Commerce environment is in release **10.0.12 and later**, follow these steps.
+-	Enable the **Optimized product availability calculation** feature through the **Feature management** workspace in headquarters.
+-	If your online and store channels use the same fulfillment warehouses, you must also enable the **Enhanced e-Commerce channel-side inventory calculation logic** feature to have the channel-side calculation logic to factor in the unposted transactions (cash-and-carry, customer orders, returns) created in the store channel.
+-	Run the **1070** (**Channel configuration**) job after enabling these features.
+
+If your Commerce environment was upgraded from a release **earlier than 10.0.8**, after enabling the feature, you must also run the **Initialize commerce scheduler** in **Retail and Commerce** > **Headquarters setup** > **Commerce scheduler** for the feature to take effect.
+
 To use the channel-side inventory calculation, as a prerequisite a periodic snapshot of inventory data from headquarters created by the **Product availability** job must be sent to the channel databases. The snapshot represents the information that headquarters has about inventory availability for a specific combination of a product or product variant and a warehouse. It includes only the inventory transactions that were processed and posted in headquarters at the time when the snapshot was taken, and it might not be 100 percent accurate in real time because of the constant sales processing that occurs across distributed servers.
 
 - If inventory was sold for a product in a store through a cash-and-carry or asynchronous customer order sale in the POS application, headquarters won't immediately have information about the related inventory issue transaction for the sale. Headquarters will have information about the inventory that is sold for these types of store sales only after the P-job uploads the related transaction from the store's channel database into headquarters and the related sales orders are created through statement posting or the trickle feed posting processes. The process of creating the orders in headquarters creates the related inventory transactions. 
@@ -78,8 +91,6 @@ Commerce provides the following APIs for e-commerce scenarios to query inventory
 Both APIs internally use the channel-side calculation logic and return estimated **physical available** quantity, **total available** quantity, **unit of measure (UoM)**, and **inventory level** for the requested product and warehouse. The returned values can be shown on your e-commerce site if you want, or they can be used to trigger other business logic on your e-commerce site. For example, you can prevent the purchase of products with an "out of stock" inventory level.
 
 Although other APIs that are available in Commerce can go directly to headquarters to fetch on-hand quantities for products, we don't recommend that they be used in an e-commerce environment because of potential performance issues and the impact that these frequent requests can have on your headquarters servers. Additionally, with channel-side calculation, the two APIs mentioned above can provide a more accurate estimate of a product's availability by taking into account the transactions created in the channels that aren’t yet known to headquarters.
-
-To use the two APIs, you must enable the **Optimized product availability calculation** feature through the **Feature management** workspace in headquarters. If your online and store channels use the same fulfillment warehouses, you must also enable the **Enhanced e-Commerce channel-side inventory calculation logic** feature to have the channel-side calculation logic within the two APIs to factor in the unposted transactions (cash-and-carry, customer orders, returns) created in the store channel. You will need to run the **1070** (**Channel configuration**) job after enabling these features.
 
 To define how product quantity should be returned in the API output, follow these steps.
 
