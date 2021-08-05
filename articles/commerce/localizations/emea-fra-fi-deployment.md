@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment guidelines for cash registers for France
-description: This topic is a deployment guide for the cash register functionality for France.
+description: This topic provides guidance on how to enable the Microsoft Dynamics 365 Commerce localization for France cash register functionality.
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 08/05/2021
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: France
@@ -30,10 +30,10 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. See [Cash register functionality for France](./emea-fra-cash-registers.md#overview) for more information about the localization for France, and [Setting up Commerce for France](./emea-fra-cash-registers.md#setting-up-commerce-for-france) for more information on how to configure Commerce for France.
+This topic provides guidance on how to enable the Microsoft Dynamics 365 Commerce localization for France cash register functionality. The localization consists of several extensions of components. These extensions enable you to perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally signing sales transactions, and printing X and Z reports in local formats. See [Cash register functionality for France](./emea-fra-cash-registers.md#overview) for more information about the localization for France, and [Setting up Commerce for France](./emea-fra-cash-registers.md#setting-up-commerce-for-france) for more information on how to configure Commerce for France.
 
 > [!NOTE]
-> This version of the Commerce functionality for France is based on the [Fiscal integration framework](./fiscal-integration-for-retail-channel.md). See [Deployment guidelines for cash registers for France (legacy)](./emea-fra-deployment.md) for information on the legacy digital signing sample for France, and [Migrating from legacy Commerce functionality for France](./emea-fra-fi-migration.md) for guidelines on how to enable the fiscal integration functionality for France in your existing environments that use the legacy digital signing sample.
+> This version of the Commerce cash register functionality for France is based on the [Fiscal integration framework](./fiscal-integration-for-retail-channel.md). See [Deployment guidelines for cash registers for France (legacy)](./emea-fra-deployment.md) for information on the legacy digital signing sample for France, and [Migrating from legacy Commerce functionality for France](./emea-fra-fi-migration.md) for guidelines on how to enable the fiscal integration functionality for France in your existing environments that use the legacy digital signing sample.
 
 ## Development environment
 
@@ -43,12 +43,14 @@ Follow these steps to set up a development environment so that you can test and 
 
 #### RegisterAuditEventFrance component
 
+To enable the RegisterAuditEventFrance component, follow these steps.
+
 1. Find the extension configuration file for CRT:
 
-    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
-    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+    - **Retail Server:** The file is named **commerceruntime.ext.config** and can be found in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config** and can be found under the local CRT client broker location.
 
-2. Register the CRT change in the extension configuration file.
+1. Register the CRT change in the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance" />
@@ -56,12 +58,14 @@ Follow these steps to set up a development environment so that you can test and 
 
 #### ReceiptsFrance component
 
+To enable the ReceiptsFrance component, follow these steps.
+
 1. Find the extension configuration file for CRT:
 
-    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
-    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+    - **Retail Server:** The file is named **commerceruntime.ext.config** and can be found in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config** and can be found under the local CRT client broker location.
 
-2. Register the CRT change in the extension configuration file.
+1. Register the CRT change in the extension configuration file, as shown in the following example.
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance" />
@@ -69,12 +73,14 @@ Follow these steps to set up a development environment so that you can test and 
 
 #### XZReportsFrance component
 
+To enable the XZReportsFrance component, follow these steps.
+
 1. Find the extension configuration file for CRT:
 
-    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
-    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+    - **Retail Server:** The file is named **commerceruntime.ext.config** and can be found in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config** and can be found under the local CRT client broker location.
 
-2. Register the CRT change in the extension configuration file.
+1. Register the CRT change in the extension configuration file, as shown in the following example.
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
@@ -82,12 +88,14 @@ Follow these steps to set up a development environment so that you can test and 
 
 #### RestrictingShiftDuration component
 
+To enable the RestrictingShiftDuration component, follow these steps.
+
 1. Find the extension configuration file for CRT:
 
-    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
-    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+    - **Retail Server:** The file is named **commerceruntime.ext.config** and can be found in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config** and can be found under the local CRT client broker location.
 
-2. Register the CRT change in the extension configuration file.
+2. Register the CRT change in the extension configuration file, as shown in the following example.
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
@@ -95,12 +103,14 @@ Follow these steps to set up a development environment so that you can test and 
 
 ### Enable Modern POS extension components
 
-1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and make sure that it can be compiled without errors. Additionally, make sure that you can run Modern POS from Microsoft Visual Studio by using the **Run** command.
+To enable Modern POS extension components, follow these steps.
+
+1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and ensure that it can be compiled without errors. Additionally, confirm that you can run Modern POS from Microsoft Visual Studio by using the **Run** command.
 
     > [!NOTE]
-    > Modern POS must not be customized. You must enable User Account Control (UAC), and you must uninstall previously installed instances of Modern POS as required.
+    > Modern POS must not be customized. You must enable User Account Control (UAC) and uninstall previously installed instances of Modern POS as required.
 
-2. Enable the extensions that must be loaded by adding the following lines in the **extensions.json** file.
+1. Enable the extensions that must be loaded by adding the following lines in the **extensions.json** file, as shown in the following example.
 
     ``` json
     {
@@ -116,15 +126,17 @@ Follow these steps to set up a development environment so that you can test and 
     ```
 
     > [!NOTE]
-    > For more information, and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
+    > For more information and for examples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
 
-3. Rebuild the solution.
-4. Run Modern POS in the debugger, and test the functionality.
+1. Rebuild the solution.
+1. Run Modern POS in the debugger, and test the functionality.
 
 ### Enable Cloud POS extension components
 
-1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and make sure that it can be compiled without errors.
-2. Enable the extensions that must be loaded by adding the following lines in the **extensions.json** file.
+To enable Cloud POS extension components, follow these steps.
+
+1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and ensure that it can be compiled without errors.
+1. Enable the extensions that must be loaded by adding the following lines in the **extensions.json** file.
 
     ``` json
     {
@@ -140,14 +152,14 @@ Follow these steps to set up a development environment so that you can test and 
     ```
 
     > [!NOTE]
-    > For more information, and for samples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
+    > For more information and for examples that show how to include source code folders and enable extensions to be loaded, see the instructions in the readme.md file in the **Pos.Extensions** project.
 
-3. Rebuild the solution.
-4. Run the solution by using the **Run** command and following the steps in the Retail SDK handbook.
+1. Rebuild the solution.
+1. Run the solution using the **Run** command and then follow the steps in the Retail SDK handbook.
 
 ## Production environment
 
-Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment:
+To create deployable packages that contain Commerce components and apply those packages in a production environment, follow these steps.
 
 1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
@@ -160,7 +172,7 @@ Follow these steps to create deployable packages that contain Commerce component
         <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
         ```
 
-2. Enable the POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
+1. Enable the POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
 
     ``` json
     {
@@ -175,17 +187,17 @@ Follow these steps to create deployable packages that contain Commerce component
     }
     ```
 
-3. Start the MSBuild Command Prompt for Visual Studio utility and run **msbuild** under the Retail SDK folder to create deployable packages.
-4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+1. Start the MSBuild Command Prompt for Visual Studio utility and run **msbuild** under the Retail SDK folder to create deployable packages.
+1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
-## Enable digital signature in offline mode for Modern POS
+## Enable the digital signature in offline mode for Modern POS
 
 To enable the digital signature in offline mode for Modern POS, you must follow these steps after you activate Modern POS on a new device.
 
 1. Sign in to POS.
-2. On the **Database connection status** page, make sure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
-3. Sign out of POS.
-4. Wait a while for the offline database to be fully synchronized.
-5. Sign in to POS.
-6. On the **Database connection status** page, make sure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
-7. Restart Modern POS.
+1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
+1. Sign out of POS.
+1. Wait for the offline database to be fully synchronized.
+1. Sign in to POS.
+1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
+1. Restart Modern POS.
