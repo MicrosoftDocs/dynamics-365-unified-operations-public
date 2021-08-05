@@ -50,13 +50,13 @@ It brings together these applications, plus business intelligence, infrastructur
 
 The Finance and Operations cloud service is comprised of the components illustrated below.
 
-![Illustration showing devices in the Finance and Supply Chain Managemnt environments](media/Devices.png)
+![Illustration showing devices in the Finance and Supply Chain Managemnt environments](media/FO-Operating-Model.png)
 
 ## Operating model
 
-The operating model of Finance and Operations distinguishes specific roles and responsibilities for the customer, implementation partner, and Microsoft throughout the lifecycle of the service. 
+The operating model of Finance and Operations defines specific roles and responsibilities for the Customer, Implementation Partner, and Microsoft throughout the lifecycle of the service. 
 
-Microsoft maintains the Finance and Operations service by deploying, actively monitoring, and servicing customer sandboxes and production environment within the Microsoft subscription. This includes allocating the required system infrastructure to run the service and proactive communication to customers about the service’s health. 
+Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments within the Microsoft subscription. This includes allocating the required system infrastructure to run the service and proactive communication to customers about the service’s health. 
 
 ![Implementation roles and responsibilities](media/implementation-roles-responsibilities.png)
 
