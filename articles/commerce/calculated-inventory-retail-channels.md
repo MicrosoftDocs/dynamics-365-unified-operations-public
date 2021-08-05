@@ -4,7 +4,7 @@
 title: Calculate inventory availability for retail channels
 description: This topic describes how a company can use Microsoft Dynamics 365 Commerce to view estimated on-hand availability for products in the online and store channels.
 author: hhainesms
-ms.date: 04/23/2021
+ms.date: 08/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,15 +51,17 @@ The following inventory changes are currently considered in the channel-side inv
 To use the channel-side inventory calculation, you must enable the **Optimized product availability calculation** feature.
 
 If your Commerce environment is in release **10.0.8 to 10.0.11**, follow these steps.
--	Go to **Retail and Commerce** > **Commerce shared parameters** > **Inventory**
--	Select the **Use optimized process for product availability job** option for the **Product availability job** parameter.
+
+1.	In Commerce headquarters, go to **Retail and Commerce** \> **Commerce shared parameters** \> **Inventory**.
+1.	For the **Product availability job** parameter, select the **Use optimized process for product availability job** option.
 
 If your Commerce environment is in release **10.0.12 and later**, follow these steps.
--	Enable the **Optimized product availability calculation** feature through the **Feature management** workspace in headquarters.
--	If your online and store channels use the same fulfillment warehouses, you must also enable the **Enhanced e-Commerce channel-side inventory calculation logic** feature to have the channel-side calculation logic to factor in the unposted transactions (cash-and-carry, customer orders, returns) created in the store channel.
--	Run the **1070** (**Channel configuration**) job after enabling these features.
 
-If your Commerce environment was upgraded from a release **earlier than 10.0.8**, after enabling the feature, you must also run the **Initialize commerce scheduler** in **Retail and Commerce** > **Headquarters setup** > **Commerce scheduler** for the feature to take effect.
+1.	In Commerce headquarters, go to **Workspaces \> Feature management** and enable the **Optimized product availability calculation** feature.
+1.	If your online and store channels use the same fulfillment warehouses, you must also enable the **Enhanced e-Commerce channel-side inventory calculation logic** feature to have the channel-side calculation logic factor in the unposted transactions (cash-and-carry, customer orders, returns) created in the store channel.
+1.	Run the **1070** (**Channel configuration**) job.
+
+If your Commerce environment was upgraded from a release earlier than Commerce version 10.0.8, after enabling the feature you must also run the **Initialize commerce scheduler** at **Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler** for the feature to take effect.
 
 To use the channel-side inventory calculation, as a prerequisite a periodic snapshot of inventory data from headquarters created by the **Product availability** job must be sent to the channel databases. The snapshot represents the information that headquarters has about inventory availability for a specific combination of a product or product variant and a warehouse. It includes only the inventory transactions that were processed and posted in headquarters at the time when the snapshot was taken, and it might not be 100 percent accurate in real time because of the constant sales processing that occurs across distributed servers.
 
