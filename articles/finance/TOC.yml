@@ -3232,6 +3232,8 @@
             href: localizations/rus-reporting-deferrals.md
         - name: Tax accounting
           items:
+          - name: Create tax registers and the tax register journal
+            href: localizations/rus-profit-tax-registers.md
           - name: Expense and income codes
             href: localizations/rus-expense-and-income-codes.md
           - name: Assets tax registers

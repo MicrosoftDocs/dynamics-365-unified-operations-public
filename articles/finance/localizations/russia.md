@@ -158,6 +158,7 @@ This topic provides information about functionality that supports Russian regula
 - [Reporting for deferrals](rus-reporting-deferrals.md)
 
 ## Tax accounting
+- [Create tax registers and the tax register journal](rus-profit-tax-registers.md)
 - [Expense and income codes](rus-expense-and-income-codes.md)
 - [Assets tax registers](rus-assets-tax-registers.md)
 - [Deferrals tax register](rus-deferred-expenses-register.md)
