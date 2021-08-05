@@ -4,7 +4,7 @@
 title: Inventory lookup operation in POS
 description: This topic describes how to use the inventory lookup operation in Dynamics 365 Commerce point of sale (POS) to view the on-hand inventory availability of products across stores and warehouses. 
 author: boycezhu
-ms.date: 05/11/2021
+ms.date: 08/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,7 +57,7 @@ The list view of locations includes all stores and warehouses that are configure
 The following actions are available on the POS app bar:
 
 - **Sort** - This action lets the POS user sort the data in the list view based on various criteria. Location-based sorting is the default sort option. 
-  - **Geo location** (from the closest to the farthest location, based on distance to the current store)
+  - **Geo location** (from the closest to the farthest location, based on the distance to the current store)
   - **Name** (in ascending or descending order)
   - **Store number** (in ascending or descending order)
   - **Inventory** (in descending order)
@@ -72,7 +72,7 @@ The following actions are available on the POS app bar:
 - **Add to transaction** - This action adds the product to the cart and redirects the user to the transaction screen.
 
 > [!NOTE]
-> The location-based sort introduced in 10.0.17 release displays current store at the top. For other locations, the distance between the location and current store is determined by the coordinates (latitude and longitude) defined in Commerce headquarters. For a store, the location information is defined in the primary address of the operating unit associated with the store. For a non-store warehouse, the location information is defined in the warehouse address. Prior to 10.0.17, the list view always displays current store at the top and sorts other locations alphabetically.
+> The location-based sort introduced in the Commerce version 10.0.17 release displays current store at the top. For other locations, the distance between the location and the current store is determined by the coordinates (latitude and longitude) defined in Commerce headquarters. For a store, the location information is defined in the primary address of the operating unit associated with the store. For a non-store warehouse, the location information is defined in the warehouse address. Prior to version 10.0.17, the list view always displays the current store at the top and sorts other locations alphabetically.
 
 > [!NOTE]
 > The **Show store availability**, **Show store location**, **Pick up in store**, and **Ship product** actions are not available for non-store locations.
