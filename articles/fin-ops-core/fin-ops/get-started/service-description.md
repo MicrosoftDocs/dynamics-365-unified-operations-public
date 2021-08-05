@@ -112,11 +112,28 @@ Typical environment and data management events for the service and the responsib
 
 #### Environment and data management events for production instances
 
+
+Event: [Requesting a production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?toc=/dynamics365/finance/toc.json#requesting-the-production-environment) 
+- Complete and submit the [Go-live checklist](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?toc=/dynamics365/finance/toc.json#fasttrack-go-live-assessment) to the Microsoft FastTrack team. - Complete the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) before requesting a production instance.
+- Complete all implementation tasks specified in the [LCS methodology](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/create-methodology). 
+ 
+Event: [Copy a sandbox database to a production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).<br><br>*(Note: Performed when ready to do a mock go-live or an actual go-live cutover)* 
+
+Event: Maintenance mode](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/maintenance-mode) | <ul><li>Turn on maintenance mode in LCS.</br></li></br><li>Complete necessary maintenance.</br></li></br><li>Turn off maintenance mode.</br> | N/A | N/A| N/A |
+
+
+
+
+
 | Customer's request  | Customer's responsibility  | Microsoft's responsibility  | Microsoft's lead time  |Microsoft's estimated maintenance downtime  |
 |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
 | [Requesting a production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?toc=/dynamics365/finance/toc.json#requesting-the-production-environment) |<ul><li>Complete and submit the [Go-live checklist](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?toc=/dynamics365/finance/toc.json#fasttrack-go-live-assessment) to the Microsoft FastTrack team. </br></li></br><li>Complete the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) before requesting a production instance.</br></li></br><li>Complete all implementation tasks specified in the [LCS methodology](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/create-methodology). </br></li></br><li>Complete the production environment deployment [service request](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team) in LCS.| <ul><li>Complete a [FastTrack go-live assessment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?toc=/dynamics365/finance/toc.json#fasttrack-go-live-assessment).</br></li></br><li>Deploy a Production Instance only after Customer has successfully completed the go-live assessment.</br> | </br>2 business days</br> | </br>N/A</br>|
 | [Copy a sandbox database to a production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).<br><br>*(Note: Performed when ready to do a mock go-live or an actual go-live cutover)* | <ul><li>Run the **Move Database** option in LCS. |N/A | N/A | N/A|
 | [Maintenance mode](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/maintenance-mode) | <ul><li>Turn on maintenance mode in LCS.</br></li></br><li>Complete necessary maintenance.</br></li></br><li>Turn off maintenance mode.</br> | N/A | N/A| N/A |
+
+
+
+
 
 #### Environment and data management events for non-production instances
 
