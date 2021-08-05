@@ -37,7 +37,7 @@ Set up sales tax relations between the sales tax code and the expense code. For 
 5.  In the **Code** field, select the sales tax code, based on the value of the **Type of tax** field.
 6.  In the **Expense code** field, select an expense code that corresponds to the tax.
 
-![Example of the relations for VAT on the Sales tax relations page](media/image1.png)
+![Example of the relations for VAT on the Sales tax relations page](media/rus-other-tax-1.png)
 
 ## Tax registers
 
@@ -47,7 +47,7 @@ Create and set up the tax registers as described in the Profit tax registers jou
 
 The **Incomes - current period** register summarizes information about income that is obtained for a specific reporting period. The amounts of income, including non-operating income, are used to fill in the income tax declaration.
 
-![Example of the Incomes   current period register](media/image2.png)
+![Example of the Incomes   current period register](media/rus-other-tax-2.png)
 
 The tax register lines show the following information:
 
@@ -71,7 +71,7 @@ The tax register contains information about all accrued taxes and duties, and pr
 
 Before you calculate the **Outlay - realized tax** register, you must create and close a sales and purchase book for the period that the register is created for. This step is required because the VAT expense is calculated based on closed sales and purchase books. If the sales and purchase books aren't closed for the register period, only expenses for other taxes are calculated in the register.
 
-![Example of the Outlay   realized tax register](media/image3.png)
+![Example of the Outlay   realized tax register](media/rus-other-tax-3.png)
 
 The tax register lines show the following information:
 
@@ -107,7 +107,7 @@ Create and set up the tax registers as described in the Profit tax registers jou
 
 The **Outlays - other unrealized** register summarizes the amounts of other unrealized expenses, based on general ledger transactions. This register can also include expenses that are manually entered in the register.
 
-![Example of the Outlays   other unrealized register](media/image4.png)
+![Example of the Outlays   other unrealized register](media/rus-other-tax-4.png)
 
 The tax register lines show the following information:
 
