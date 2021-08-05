@@ -1,12 +1,11 @@
-﻿---
-title: 
-description: 
-ms.date: 08.05.2021
+---
+# required metadata
+title: Goods movement tax registers
+description: This topic provides information about goods movement tax registers
+ms.date: 08/05/2021
 ms.topic: article
-ms.service: dynamics365-financials
 author: akroshkina
-ms.author: 
-manager: anayash
+ms.author: anasyash
 ---
 
 # Goods movement tax registers
@@ -72,7 +71,7 @@ The **Warehoused items** tax register contains the following information:
 -   Items that are returned to the vendor
 -   Item write-offs
 
-![Example of the Warehoused items tax register](media/image1.png)
+![Example of the Warehoused items tax register](media/rus-goods-move-1.png)
 
 The tax register lines show the following information:
 
@@ -99,7 +98,7 @@ The tax register lines show the following information:
 
 The **Warehoused items (totals)** tax register shows the total amount of each type of income or expense, based on the receipts in the **Warehoused items** tax register.
 
-![Example of the Warehouse items  totals  tax register](media/image2.png)
+![Example of the Warehouse items  totals  tax register](media/rus-goods-move-2.png)
 
 The tax register lines show the following information:
 
@@ -116,7 +115,7 @@ The amounts of these expenses in the tax declaration must be manually reduced by
 The **Non warehoused items** tax register shows information about the movement of goods, works, services, and rights that are written off at their actual cost, and that don't move through the warehouse. The assumption is that this property isn't connected with the main activity of the company. Instead, its acquisition is a general economic expense
 and is accepted for tax accounting in the period when the expense was made.
 
-![Example of the Non warehoused items tax register](media/image3.png)
+![Example of the Non warehoused items tax register](media/rus-goods-move-3.png)
 
 The tax register lines show the following information:
 
@@ -133,30 +132,16 @@ The tax register lines show the following information:
 
 ## Goods issued tax register
 
-The **Goods issued** tax register summarizes information about the
-income from the disposal of the taxpayer's property, the sale of works,
-services, and rights, and the formation of the amounts of corresponding
-income from sales that are included in the tax base.
+The **Goods issued** tax register summarizes information about the income from the disposal of the taxpayer's property, the sale of works, services, and rights, and the formation of the amounts of corresponding income from sales that are included in the tax base.
 
-![Example of the Goods issued tax register](media/image4.png)
+![Example of the Goods issued tax register](media/rus-goods-move-4.png)
 
 The tax register lines show the following information:
 
 - **Transaction date** – The invoice date.
-
-- **Condition of issued** – The method of payment. This value comes
-    from the **Method of payment** field in the source document.
-
-- **Expense/income type** – The name of the expense or income code
-    that was settled with the register.
-
+- **Condition of issued** – The method of payment. This value comes from the **Method of payment** field in the source document.
+- **Expense/income type** – The name of the expense or income code that was settled with the register.
 - **The basis of issued** – A description of the transaction.
-
 - **Accounting object name** – The name of the goods.
-
 - **Quantity** – The quantity of the goods.
-
 - **Amount** – The total amount of the goods.
-
-
-
