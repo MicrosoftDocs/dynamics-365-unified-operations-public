@@ -2,7 +2,7 @@
 # required metadata
 
 title: Download Retail SDK samples and reference packages from GitHub and NuGet
-description: This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from NuGet.
+description: This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from public feed.
 author: mugunthanm
 ms.date: 12/07/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from NuGet. The Retail SDK includes the code samples, templates, and tools that are required to extend or customize Microsoft Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components.
+This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from public feed. The Retail SDK includes the code samples, templates, and tools that are required to extend or customize Microsoft Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components.
 
 This topic applies to Retail SDK version 10.0.16 or later. For more information about how to download earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md).
 
@@ -42,7 +42,8 @@ The [Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Comm
 
 The samples in the repo are organized by Dynamics 365 Commerce application release, each branch in the repo points to an application release of Dynamics 365 Commerce, use the right release branch based on your go-live version.
 
-Note: The repo contains only samples, so its not required to clone this repo.
+> [!Note]
+> The repo contains only samples, so its not required to clone this repo.
 
 | Release branch name                                                                          | version | Application release version |
 | -------------------------------------------------------------------------------------------- | ------- | --------------------------- |
@@ -54,7 +55,7 @@ Note: The repo contains only samples, so its not required to clone this repo.
 | [Release/9.31](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.31) | 9.31.\* | 10.0.21                     |
 
 
-**Extension repository:**
+### Extension repository:
 
 Extension code or repository if required can download and consume the samples and templates from [microsoft](https://github.com/microsoft)/[Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit), the sample scale unit repo contains nuget.config, repo.props, CustomizationPackage.props and build pipelines script which provide guidance on how extension can setup the repo metadata files.
 
@@ -79,7 +80,8 @@ The [Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commer
 
 The samples in the repo are organized by Dynamics 365 Commerce application release, each branch in the repo points to an application release of Dynamics 365 Commerce, use the right release branch based on your go-live version. 
 
-Note: The repo contains only samples, so its not required to clone this repo.
+> [!Note]
+> The repo contains only samples, so its not required to clone this repo.
 
 | Release branch name                                                                          | version | Application release version |
 | -------------------------------------------------------------------------------------------- | ------- | --------------------------- |
@@ -88,7 +90,7 @@ Note: The repo contains only samples, so its not required to clone this repo.
 | [Release/9.30](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.30) | 9.30.\* | 10.0.20                     |
 | [Release/9.31](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.31) | 9.31.\* | 10.0.21                     |
 
-**Extension repository:**
+### Extension repository:
 
 Extension code or repository if required can download and consume the samples and templates from [microsoft](https://github.com/microsoft)/[Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore), the sample InStore repo contains nuget.config, repo.props, CustomizationPackage.props and build pipelines script which provide guidance on how extension can setup the repo metadata files.
 
@@ -158,7 +160,7 @@ Consume the packages from [https://pkgs.dev.azure.com/commerce-partner/Registry/
 | Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore | This package contains all the extensions proxy generator utilities  |
 | Microsoft.Dynamics.Commerce.Proxy.ScaleUnit                           | This package contains all the proxies class for extension applications to consume the Headless Commerce APIs in online mode (connected to Headless Commerce). |
 
-**Package versioning:**
+## Package versioning:
 
 | Package version  | Application release      |
 | ---------------- | ------------------------ |
@@ -190,8 +192,6 @@ An extension project can consume the correct version if you add the package refe
     ```
 
 With every hotfix and new application release, new version of the package will be published in the same public feed, consume the right package version based on the version required for your go live. Consuming the higher version of the package than your go-live application version may result in runtime and deployment failures.
-
-
 
 
 ## Setup Azure DevOps pipeline for build automation and package generation:
