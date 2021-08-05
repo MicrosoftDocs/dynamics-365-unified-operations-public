@@ -1818,6 +1818,8 @@
           href: localizations/china.md
         - name: Finance and Operations operated by 21Vianet in China
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
+        - name: Account groups selection for Chinese voucher types
+          href: localizations/apac-chn-account-groups-selection.md
         - name: Bill of materials comparison
           href: localizations/apac-chn-bom-comparison.md
         - name: Chinese hierarchy of chart of accounts
@@ -3248,6 +3250,8 @@
             href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
           - name: Goods movement tax registers
             href: localizations/rus-goods-movement-tax-registers.md
+          - name: Other tax registers
+            href: localizations/rus-other-tax-registers.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview

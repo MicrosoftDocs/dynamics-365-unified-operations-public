@@ -167,6 +167,7 @@ This topic provides information about functionality that supports Russian regula
 - [Bad debt reserves in Accounts receivable](rus-bad-debts.md)
 - [Calculation of tax asset and tax liability registers](rus-calculation-tax-asset-tax-liability-registers.md)
 - [Goods movement tax registers](rus-goods-movement-tax-registers.md)
+- [Other tax registers](rus-other-tax-registers.md)
 
 ## Additional resources
 
