@@ -45,27 +45,38 @@ The migration process should consist of the following steps.
 1. Update the Commerce Headquarters components.
 2. Update the Commerce Scale Unit components and enable the extensions of the current solution.
 3. Update the POS components and enable the extensions of the current solution.
-4. Make sure that all offline transactions are uploaded from offline-enabled MPOS devices to the channel database.
-5. Close shifts and logoff from all POS.
-6. Configure the fiscal registration functionality for France in Commerce Headquarters and synchronize the configuration to channels.
-8. Restart POS.
+4. Configure the fiscal integration functionality for France in Commerce Headquarters.
+5. Make sure that all offline transactions are uploaded from offline-enabled MPOS devices to the channel database.
+6. Close shifts and logoff from all POS.
+7. Adjust receipt formats to use updated custom fields.
+8. Enable the fiscal integration functionality.
+9. Restart POS.
 
-    > [!NOTE]
-    > Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section or the [Migration in a production environment](#migration-in-a-production-environment) section.
+> [!NOTE]
+> Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section or the [Migration in a production environment](#migration-in-a-production-environment) section.
 
-## Configure the fiscal registration functionality
+## Configure fiscal integration
 
-### Enable fiscal integration
+To configure the fiscal integration functionality for France, follow the steps that are described in the [Set up fiscal registration](./emea-fra-cash-registers.md#set-up-fiscal-registration) and [Configure the digital signature parameters](./emea-fra-cash-registers.md#configure-the-digital-signature-parameters) sections. Do **not** enable fiscal integration in **Commerce shared parameters** at this moment.
 
-To enable the fiscal registration functionality for France, follow the steps that are described in the [Set up fiscal registration](./emea-fra-cash-registers.md#set-up-fiscal-registration) and [Configure the digital signature parameters](./emea-fra-cash-registers.md#configure-the-digital-signature-parameters) sections.
-
-### Adjust receipt formats
+## Adjust receipt formats
 
 You need to adjust your receipt formats to use updated custom fields. Review the [Configure custom fields so that they can be used in receipt formats for sales receipts](./emea-fra-cash-registers.md#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) section for up-to-date custom fields for France.
 
-### Migration in a development environment
+## Enable fiscal integration
 
-#### Update CRT
+When you are ready to enable the fiscal integration functionality, make the following steps to enable fiscal integration and start using it. 
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
+2. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
+3. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+
+> [!WARNING]
+> After making these steps, your previous customizations of the digital signing functionality will stop working.
+
+## Migration in a development environment
+
+### Update CRT
 
 1. Find the extension configuration file for CRT:
 
@@ -89,7 +100,7 @@ You need to adjust your receipt formats to use updated custom fields. Review the
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
     ```
 
-#### Update Modern POS
+### Update Modern POS
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
 2. Enable the current sample POS extension by adding the following lines in the **extensions.json** file.
@@ -103,7 +114,7 @@ You need to adjust your receipt formats to use updated custom fields. Review the
     }
     ```
 
-#### Update Cloud POS
+### Update Cloud POS
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
 2. Enable the current sample POS extension by adding the following lines in the **extensions.json** file.
@@ -117,20 +128,9 @@ You need to adjust your receipt formats to use updated custom fields. Review the
     }
     ```
 
-#### Enable Fiscal Integration
-
-When you will be ready to upgrate, follow next steps to enable Fiscal integration and start using new version of localization. 
-
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-2. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
-3. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
-
-> [!WARNING]
-    > After this steps previous customization will not work.
-
 ### Future update
 
-In a next update you can remove obsolete customization from your Retail Servers and POS. The following describes extensions that can be safely removed.
+In a next update, you can remove the obsolete customizations from your Retail Servers and POS. The following sections describe extensions that can be safely removed.
 
 #### CRT
 
@@ -209,9 +209,9 @@ In a next update you can remove obsolete customization from your Retail Servers 
     }
     ```
 
-### Migration in a production environment
+## Migration in a production environment
 
-#### Update CRT
+### Update CRT
 
 1. Remove the earlier CRT extension from the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder.
 
@@ -227,7 +227,7 @@ In a next update you can remove obsolete customization from your Retail Servers 
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
     ```
 
-#### Update Modern POS
+### Update Modern POS
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
 2. Enable the current sample POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
@@ -241,7 +241,7 @@ In a next update you can remove obsolete customization from your Retail Servers 
     }
     ```
 
-#### Update Cloud POS
+### Update Cloud POS
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
 2. Enable the current sample POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
@@ -255,13 +255,13 @@ In a next update you can remove obsolete customization from your Retail Servers 
     }
     ```
 
-#### Create deployable packages
+### Create deployable packages
 
 Run **msbuild** for the whole Retail SDK to create deployable packages. Apply the packages via LCS or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ### Future update
 
-In a next update you can remove obsolete customization from your Retail Servers and POS. The following describes extensions that can be safely removed.
+In a next update, you can remove the obsolete customizations from your Retail Servers and POS. The following sections describe extensions that can be safely removed.
 
 #### CRT
 
@@ -310,10 +310,10 @@ In a next update you can remove obsolete customization from your Retail Servers 
 2. Disable the earlier POS extension:
 
     - In the **tsconfig.json** file, add the next folders to the exclude list.
-      - SalesTransactionSignatureSample
-      - SequentialSignature
-      - AuditEventSignatureSample
-      - SalesTransBuildNumberSample
+        - SalesTransactionSignatureSample
+        - SequentialSignature
+        - AuditEventSignatureSample
+        - SalesTransBuildNumberSample
     - Remove the following lines from the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
 
         ``` json
@@ -340,10 +340,10 @@ In a next update you can remove obsolete customization from your Retail Servers 
 2. Disable the earlier POS extension:
 
     - In the **tsconfig.json** file, add the next folders to the exclude list.
-      - SalesTransactionSignatureSample
-      - SequentialSignature
-      - AuditEventSignatureSample
-      - SalesTransBuildNumberSample
+        - SalesTransactionSignatureSample
+        - SequentialSignature
+        - AuditEventSignatureSample
+        - SalesTransBuildNumberSample
     - Remove the following lines from the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
 
         ``` json
