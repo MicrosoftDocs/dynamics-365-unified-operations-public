@@ -240,13 +240,7 @@ Microsoft has invested in an extensive toolset to monitor and diagnose Customers
 
 #### Incident management 
 
-Technical Support is available in markets where Dynamics 365 Finance and Operations services are offered. Lifecycle Services provides the following tools:
-
- - [Issue Search](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) in Lifecycle Services
- - [Integrated technical](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/support-experience) support within Finance and Operations
- 
-
- Microsoft responds to and resolves incidents based on the severity levels set forth in the following tables. Microsoft's incident severity levels can be changed during initial assessment of the incident and as more information about the impact and scope becomes available. If the incident is mitigated, then the incident severity remains unchanged.
+Microsoft responds to and resolves incidents based on the severity levels set forth in the following tables. Microsoft's incident severity levels can be changed during initial assessment of the incident and as more information about the impact and scope becomes available. If the incident is mitigated, then the incident severity remains unchanged.
 
 ##### Severity level description
 
@@ -293,6 +287,12 @@ The primary data stores are supported for replication. This means that component
 
 ### Application support offerings 
 
+Technical Support is available in markets where Dynamics 365 Finance and Operations services are offered. [Support experiences](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-support) are provided within Lifecycle Services or Finance and Operations. These include the following:
+
+ - [Issue Search](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) in Lifecycle Services
+ - [Integrated technical](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/support-experience) support within Finance and Operations
+ - LCS [Cloud Powered Support](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/cloud-powered-support-lcs)
+
 Microsoft offers VL customers three support plans: Premier, Professional Direct, and the support included in the subscription. The level of support differs per plan and highlights are provided in the following table.
 
 | Service feature | Premier | Professional direct  | Subscription |
@@ -302,6 +302,8 @@ Microsoft offers VL customers three support plans: Premier, Professional Direct,
 | Fastest response times | &lt;1 hour | &lt;1 hour | Next business day |
 | Advisory hours | Pools acquired per agreement | N/A | N/A |
 | Dedicated Support Account Manager | Yes | N/A | N/A |
+
+For more details, refer to [Support Overview](https://docs.microsoft.com/en-us/power-platform/admin/support-overview)
 
 #### Process to engage support 
 
