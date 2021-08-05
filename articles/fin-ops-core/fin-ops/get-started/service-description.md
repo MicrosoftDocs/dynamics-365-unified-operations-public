@@ -331,10 +331,10 @@ Microsoft is committed to an availability of 99.9% per month of the service. If 
 
 ## Definitions
 
-### Azure region
+### [Azure region](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview#regions)
 A geographical region where one or more Azure datacenters exist; for example, US and Europe.
 
-### Business Process Manager (BPM)
+### [Business Process Modeler (BPM)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/bpm-overview)
 A tool in LCS to help complete a fit-gap analysis for a given implementation using business process definitions as defined in APQC and their support within Finance and Operations apps.
 
 ### Cloud Solution Provider (CSP) 
@@ -344,7 +344,7 @@ Partners who are part of Microsoft's CSP program and provide customers with valu
 A business entity that consumes Finance and Operations apps and is represented by a tenant in Microsoft Office 365.
 
 ### Development environment
-Also known as a Tier 1 sandbox. An environment used for developing extensions.
+Also known as a [Tier 1 sandbox](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning?toc=/dynamics365/finance/toc.json#tier-1-vs-tier-2-and-higher). An environment used for developing extensions.
 
 ### Downtime 
 Any period of time when end users are unable to login or access to their active tenant, due to a failure in the unexpired platform or the service infrastructure as Microsoft determines from automated health monitoring and system logs. Downtime does not include scheduled downtime, the unavailability of service add-on features, the inability to access the service due to your modifications of the service, or periods where the scale unit capacity is exceeded.
@@ -352,8 +352,8 @@ Any period of time when end users are unable to login or access to their active 
 ### Implementation partner 
 The partner that the customer choses to customize, configure, implement, and manage its Finance and Supply Chain solutions.
 
-### Microsoft Dynamics Lifecycle Services (LCS) 
-The administrative portal for lifecycle management of Finance and Supply Chain Management from trial to implementation to post-production management and support.
+### [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs) 
+The administrative portal for lifecycle management of Finance and Operations from trial to implementation to post-production management and support.
 
 ### Microsoft customer support 
 Microsoft's support team dedicated to providing quality service for Finance and Supply Chain Management.
@@ -374,16 +374,16 @@ Instance of Finance and Supply Chain Management used by the customer for managin
 Instance of Finance and Supply Chain Management used by the customer for validating extensions and other development tasks.
 
 ### Service 
-The core services included in Dynamics 365 for Finance, Dynamics 365 Supply Chain Management, or both.
+The core services included in Dynamics 365 for Finance and Operations.
 
-### Service Level Agreement for Microsoft Online Services (SLA) 
-The SLA applies to Microsoft's Online Services, including Finance and Supply Chain Management.
+### Service Level Agreement for Microsoft Online Services [(SLA)](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services) 
+The SLA applies to Microsoft's Online Services, including Finance and Operations.
 
 ### Incident 
-An issue with the Finance and Supply Chain Management that the customer encounters while using the service.
+An issue with Finance and Operations that the customer encounters while using the service.
 
 ### Update request
 Request raised to Microsoft for specific update.
 
 ### User
-A single person consuming Finance and Supply Chain Management environments, associated with a customer's tenant.
+A single person consuming Finance and Operations environments, associated with a customer's tenant.
