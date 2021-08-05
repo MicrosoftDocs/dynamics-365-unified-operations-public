@@ -5,7 +5,7 @@ title: Fiscal archive for France
 description: This topic describes the Fiscal archive and the Fiscal archive integrity verification tool that are available to Commerce customers in France
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 07/20/2021
+ms.date: 08/05/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
