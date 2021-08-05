@@ -77,9 +77,9 @@ Finance and Operations scales with transaction volume and user load. Each Custom
 
 Microsoft configures customer production environments that are sized to handle the transaction volumes and user concurrency. Microsoft is responsible for: 
 
--	Proper allocation of resources of production environments, based on the Customer’s profiling information in the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator); 
--	Continually monitoring and diagnosing service availability of production environments; and 
--	Analyzing and troubleshooting system performance issues with Finance and Operations. 
+-	Proper allocation of resources of production environments, based on the Customer’s profiling information in the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) 
+-	Continually monitoring and diagnosing service availability of production environments 
+-	Analyzing and troubleshooting system performance issues with Finance and Operations 
 
 To ensure that an implementation is configured for high performance, customers must:
 
