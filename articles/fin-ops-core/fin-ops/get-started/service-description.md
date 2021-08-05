@@ -50,7 +50,7 @@ It brings together these applications, plus business intelligence, infrastructur
 
 The Finance and Operations cloud service is comprised of the components illustrated below.
 
-![Illustration showing devices in the Finance and Supply Chain Managemnt environments](media/FO-Operating-Model.png)
+![Illustration showing devices in the Finance and Supply Chain Managemnt environments](media/common-configuration-scenarios.png)
 
 ## Operating model
 
