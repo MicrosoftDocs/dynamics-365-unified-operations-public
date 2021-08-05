@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.18
 
 ## Overview
 
-Microsoft Dynamics 365 Finance and Operations is an Enterprise Resource Planning (ERP) SaaS that is built on and for the Microsoft Azure Cloud. The service provides organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Finance and Operations includes one or more of the following solution areas: 
+Microsoft Dynamics 365 Finance and Operations is an Enterprise Resource Planning (ERP) SaaS that is built on and for the Microsoft Azure Cloud. The service provides organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Finance and Operations can include one or more of the following solution areas: 
 
 - [Finance](https://docs.microsoft.com/en-us/dynamics365/finance/)
 - [Human Resources](https://docs.microsoft.com/en-us/dynamics365/human-resources/)
@@ -40,15 +40,16 @@ Microsoft Dynamics 365 Finance and Operations is an Enterprise Resource Planning
 - [Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/)
 - [Project Operations](https://docs.microsoft.com/en-us/dynamics365/project-operations/)
 
-The SaaS brings together these applications, plus business intelligence, infrastructure, compute, and database services, and enables organizations to run industry-specific and operational business processes. Functionality and Business Processes can be augmented or extended with low-code Microsoft Power Platform Tools, Microsoft Visual Studio and Azure DevOps, or Independent Software Vendor (ISV) solutions from Microsoft Appsource. Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
+The SaaS brings together these applications, plus business intelligence, infrastructure, compute, and database services, and enables organizations to run industry-specific and operational business processes. Functionality and Business Processes can be augmented or extended with one or any combination of the following:
 
-- [Microsoft Power Platform](https://powerplatform.microsoft.com)
-- [Microsoft Visual Studio](https://visualstudio.microsoft.com)
-- [Azure DevOps](https://dev.azure.com)
-- [Microsoft AppSource](https://appsource.microsoft.com/partners)
-- [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)
 
-With the support of their implementation partner, customers determine the configuration of the business application logic in Finance and Operations to match their unique business processes. Customers can extend Finance and Operations with low-code Power Platform applications, ISV solutions of their choice, unique customizations, or a combination of these. Customers typically choose one of the following configuration scenarios: 
+- Low-Code [Microsoft Power Platform](https://powerplatform.microsoft.com) Tools
+- Pro Developer [Microsoft Visual Studio](https://visualstudio.microsoft.com) and [Azure DevOps](https://dev.azure.com)
+- Independent Software Vendor (ISV) solutions from [Microsoft AppSource](https://appsource.microsoft.com/partners)
+
+Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model. Refer to the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365) for more details.
+
+With the support of their Implementation Partner, Customers determine the configuration of the business application logic in Finance and Operations to match their unique business processes. Customers can extend Finance and Operations with low-code Power Platform applications, ISV solutions of their choice, unique customizations, or a combination of these. Customers typically choose one of the following configuration scenarios: 
 
 -	**Solution 1:** Standard Finance and Supply Chain Management configuration (no extension) 
 -	**Solution 2:** Finance and Supply Chain Management configuration with customer-specific extensions 
