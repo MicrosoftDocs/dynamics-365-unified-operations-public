@@ -40,7 +40,7 @@ Microsoft Dynamics 365 Finance and Operations is an Enterprise Resource Planning
 - [Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/)
 - [Project Operations](https://docs.microsoft.com/en-us/dynamics365/project-operations/)
 
-It brings together these applications, plus business intelligence, infrastructure, compute, and database services, and enables organizations to run industry-specific and operational business processes. Funcationality and Business Processes can be augmented or extended with low-code Microsoft Power Platform Tools, Microsoft Visual Studio and Azure DevOps, or Independent Software Vendor (ISV) solutions from Microsoft Appsource. Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
+The SaaS brings together these applications, plus business intelligence, infrastructure, compute, and database services, and enables organizations to run industry-specific and operational business processes. Funcationality and Business Processes can be augmented or extended with low-code Microsoft Power Platform Tools, Microsoft Visual Studio and Azure DevOps, or Independent Software Vendor (ISV) solutions from Microsoft Appsource. Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model.  
 
 - [Microsoft Power Platform](https://powerplatform.microsoft.com)
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com)
