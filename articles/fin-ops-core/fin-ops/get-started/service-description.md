@@ -40,24 +40,22 @@ Microsoft Dynamics 365 Finance and Operations is an Enterprise Resource Planning
 - [Commerce](https://docs.microsoft.com/en-us/dynamics365/commerce/)
 - [Project Operations](https://docs.microsoft.com/en-us/dynamics365/project-operations/)
 
-The SaaS brings together these applications, plus business intelligence, infrastructure, compute, and database services, and enables organizations to run industry-specific and operational business processes. Functionality and Business Processes can be augmented or extended with one or any combination of the following:
-
+The SaaS brings together these applications, plus business intelligence, infrastructure, compute, and database services, and enables organizations to run industry-specific and operational business processes. With the support of their Implementation Partner, Customers determine the configuration of the business application logic in Finance and Operations to match their unique business processes. Functionality and Business Processes can be augmented or extended with one or any combination of the following:
 
 - Low-Code [Microsoft Power Platform](https://powerplatform.microsoft.com) Tools
 - Pro Developer [Microsoft Visual Studio](https://visualstudio.microsoft.com) and [Azure DevOps](https://dev.azure.com)
 - Independent Software Vendor (ISV) solutions from [Microsoft AppSource](https://appsource.microsoft.com/partners)
 
-Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model. Refer to the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365) for more details.
-
-With the support of their Implementation Partner, Customers determine the configuration of the business application logic in Finance and Operations to match their unique business processes. Customers can extend Finance and Operations with low-code Power Platform applications, ISV solutions of their choice, unique customizations, or a combination of these. Customers typically choose one of the following configuration scenarios: 
-
--	**Solution 1:** Standard Finance and Supply Chain Management configuration (no extension) 
--	**Solution 2:** Finance and Supply Chain Management configuration with customer-specific extensions 
--	**Solution 3:** Finance and Supply Chain Management configuration with customer-specific extensions and one or more ISV solution  
-
-For any of these scenarios, the customer defines, develops, and tests any modifications using tools provided in Microsoft Dynamics Lifecycle Services (LCS). 
+Based on requirements, Customers choose their solution approach. Working with their Implementation Partner, Customers define, develop, and test their solution using the tools and best practices that are provided in [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs).The following illustrates three common scenarios: 
 
 ![Common configuration scenarios](media/common-configuration-scenarios.png)
+
+-	**Solution 1:** Standard Finance and Operations configuration (no extension) 
+-	**Solution 2:** Finance and Operations configuration with customer-specific extensions 
+-	**Solution 3:** Finance and Operations configuration with customer-specific extensions and one or more ISV solution  
+
+Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model. Refer to the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365) for more details.
+
 
 ## Operating model
 
