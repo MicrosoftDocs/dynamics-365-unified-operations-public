@@ -134,10 +134,10 @@ LCS provides [self-service provisioning](https://docs.microsoft.com/en-us/dynami
 - Complete all tasks specified in the LCS checklists.
 - A Development environment is a VM [deployed to the customer's Azure subscription](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances) and is customer-managed.
 
-**Event** [Copy golden configuration database from sandbox to production](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).
+**Event:** [Copy golden configuration database from sandbox to production](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).
 - Note that this is performed when ready to do a mock go-live or an actual go-live cutover.
 
-**Event** [Restore a production point-in-time backup to a mon-production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox)
+**Event:** [Restore a production point-in-time backup to a mon-production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox)
 - Run the [Refresh Database](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-refresh) option in LCS.
 - Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configurations (such as integration endpoints), and enable or add users. Note that these changes are made by applying a [data package](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages#import-a-data-package).
 
