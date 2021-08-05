@@ -240,7 +240,13 @@ Microsoft has invested in an extensive toolset to monitor and diagnose Customers
 
 #### Incident management 
 
-Microsoft responds to and resolves incidents based on the severity levels set forth in the following tables. Microsoft's incident severity levels can be changed during initial assessment of the incident and as more information about the impact and scope becomes available. If the incident is mitigated, then the incident severity remains unchanged.
+Technical Support is available in markets where Dynamics 365 Finance and Operations services are offered. Lifecycle Services provides the following tools:
+
+ - [Issue Search](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) in Lifecycle Services
+ - [Integrated technical](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/support-experience) support within Finance and Operations
+ 
+
+ Microsoft responds to and resolves incidents based on the severity levels set forth in the following tables. Microsoft's incident severity levels can be changed during initial assessment of the incident and as more information about the impact and scope becomes available. If the incident is mitigated, then the incident severity remains unchanged.
 
 ##### Severity level description
 
