@@ -5,7 +5,7 @@ title: Migrating from legacy Commerce functionality for France
 description: This topic provides guidelines on how to migrate from the legacy digital signing sample for France to the functionality that is based on the Fiscal integration framework
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/03/2021
+ms.date: 08/05/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
