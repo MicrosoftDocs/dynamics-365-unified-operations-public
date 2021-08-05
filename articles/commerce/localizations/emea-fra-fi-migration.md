@@ -324,9 +324,9 @@ After a future update, you can remove the obsolete Retail Server and POS customi
 
 3. Remove the following lines to the **ItemGroup** section to exclude the Retail Server extension from the deployable packages.
 
-        ``` xml
-        <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
-        ```
+    ``` xml
+    <ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\Contoso.RetailServer.SalesTransactionSignatureSample.dll" />
+    ```
 
 4. Update the Retail Server configuration file. In **RetailSDK\\Packages\\RetailServer\\Code\\web.config**, remove the following lines from the **extensionComposition** section.
 
