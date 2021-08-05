@@ -39,33 +39,58 @@ To learn more about embedding canvas apps, watch the short [How to embed canvas 
 
 Before you embed a canvas app from Power Apps into the client, you must find or build an app that has the desired visuals or functionality. This topic doesn't include a detailed description of the process for building apps. If you're new to Power Apps, see the [Power Apps documentation](/powerapps/).
 
-There are two ways to access a specific canvas app on a page when you're ready to embed the app. You can choose whichever approach fits your scenario better. The first approach uses the **Power Apps** button that has been added to the standard Action Pane. Apps that you add by using this approach appear as items on the **Power Apps** menu button. When you select one of these items, a side pane that contains the embedded app appears. Alternatively, you can embed an app directly on a page as a new tab, FastTab, or blade, or as a new section in a workspace.
+There are three ways to embed a canvas app into a Finance and Operations app. You can choose whichever approach fits your scenario the best. 
+
+-  Embed the canvas app into the **Power Apps** button on the standard Action Pane of a page. Apps that you add using this approach appear as items in the **Power Apps** menu button and these apps open in side panes. 
+-  Embed the canvas app directly on an existing page as a new tab page (pivot tab, FastTab, blade, or workspace section).
+-  Create a new full-page experience for the canvas app from the dashboard
 
 When you configure your embedded canvas app, you can select a single field that you want to send as context to the app. This step enables the app to be responsive, based on the data that you're currently viewing.
 
 > [!NOTE]
-> You can't currently use this mechanism to embed model-driven apps.  
+> You can't use this mechanism to embed model-driven apps.  
 
-### Details
+### Embedding into an existing page
 
-The following procedure shows how to embed a canvas app from Power Apps into the web client.
+The following procedure shows how to embed a canvas app from Power Apps into an existing page.
 
-1. Go to the page where you want to embed the canvas app. This page will be the page that contains data that must be passed to the app as input.
+1. Go to the page where you want to embed the canvas app. This page will contain any data that must be passed to the app as input.
 2. Open the **Add an app from Power Apps** pane:
 
-    - Click **Options**, and then select **Personalize this page**. Under the **Insert** menu, choose **Power Apps**. Finally, select the region where you would like to add the app. If you want to embed the app under the Power Apps menu button, choose the Action Pane. If you want to embed the app directly onto the page, choose the appropriate tab, FastTab, blade, or section (if you're on a workspace).
+    - If the app will be embedded directly in the page, select **Options**, then **Personalize this page**, and finally  **More**. 
+        - If the **Full page apps** feature is turned on, choose **Add a page** and then select the region where you would like to add the app. If you want to embed the app under the Power Apps menu button, choose the Action Pane. If you want to embed the app directly onto the page, choose the appropriate tab, FastTab, blade, or section (if you're on a workspace). In the **Add an app** pane, select **Power Apps**. 
+        - If the **Full page apps** feature is not turned on, choose **Add an app from Power Apps** and then select the region where you would like to add the app. If you want to embed the app under the Power Apps menu button, choose the Action Pane. If you want to embed the app directly onto the page, choose the appropriate tab, FastTab, blade, or section (if you're on a workspace).  
     - If the app will be accessed using the Power Apps menu button, you can alternatively click the **Power Apps** menu button in the standard Action Pane, and then select **Add an app**.
 
-3. Configure the embedded app:
+3. Configure the embedded app. See the [Configuring a canvas app](#configuring-a-canvas-app) for details
 
-    - The **Name** field indicates the text shown for the button or tab that will contain the embedded app. Oftentimes, you may want to repeat the name of the app in this field.
-    - The **App ID** field indicates the globally unique identifier (GUID) for the canvas app that you want to embed. To retrieve this value, find the app on [make.powerapps.com](https://make.powerapps.com), and then look in the **App ID** field under **Details**.
-    - For **Input context for the app**, you can optionally select the field that contains the data that you want to pass to the app as input. For details about how the app can access the data sent from Finance and Operations apps, see the section later in this topic titled [Building an app that leverages data sent from Finance and Operations apps](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps). 
-        - Starting in version 10.0.19, the current legal entity will also be passed as context to the canvas app via the **cmp** URL parameter. This will have no impact on the target canvas app until that app makes use of this information. 
-    - Choose the **Application size** that matches the type of app that you're embedding. Select **Thin** for apps built for mobile devices, and **Wide** for apps built for tablets. This ensures a sufficient amount of space is allotted for the embedded app.
-    - The **Legal entities** FastTab provides the ability to choose which legal entities the app is available for. The default is to make the app accessible to all legal entities. This option is only available when the [Saved views](saved-views.md) feature is disabled. 
+4. After confirming the configuration is correct, click **Insert**. 
+    -  If the **Saved views** feature is not turned on, you will be prompted to refresh the browser in order to see the embedded app.
+    -  If the **Saved views** feature is turned on, you will need to save the view for this change to be persisted.  
 
-4. After confirming that the configuration is correct, click **Insert** to embed the Power App on the page. You will be prompted to refresh the browser in order to see the embedded app.
+### Embedding as a full-page experience from the dashboard
+
+You may want to embed a canvas app from the dashboard if the app isn't related to an existing page or if you just want to surface the app as a full-page experience inside the Finance and Operations app. To do this, use this procedure: 
+
+> [!NOTE]
+> For this capability to be available, you must turn on the **Full page apps** feature in Feature management. 
+
+1.  Open the dashboard
+2.  Select and hold (or right-click) the page, select **Personalize**, and then select **Add a page**.
+3.  In the **Add a page** pane, select **Power Apps**.
+4.  Configure the embedded app. See the [Configuring a canvas app](#configuring-a-canvas-app) for details
+5.  Select **Save** to add the app to the dashboard as a new tile.
+6.  Select the new tile on the dashboard, and confirm that the canvas app appears as expected.  
+
+## Configuring a canvas app
+The following parameters need to be provided when embedding a canvas app. 
+
+- **Name** - Enter the text that should be shown for the button or tab that will contain the embedded app. Often, you may want to repeat the name of the app in this field.
+- **App ID**  - Specify the globally unique identifier (GUID) for the canvas app that you want to embed. To retrieve this value, find the app on [make.powerapps.com](https://make.powerapps.com), and then look in the **App ID** field under **Details**.
+- **Input context for the app** - You can optionally select the field that contains the data that you want to pass to the app as input. For details about how the app can access the data sent from Finance and Operations apps, see the section later in this topic titled [Building an app that leverages data sent from Finance and Operations apps](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps). 
+    - Starting in version 10.0.19, the current legal entity will also be passed as context to the canvas app via the **cmp** URL parameter. This will have no impact on the target canvas app until that app makes use of this information. 
+- **Application size** - Choose the option that matches the type of app that you're embedding. Select **Thin** for apps built for mobile devices, and **Wide** for apps built for tablets. This ensures a sufficient amount of space is allotted for the embedded app.
+- **Legal entities** - This section provides the ability to choose which legal entities the app is available for. The default is to make the app accessible to all legal entities. This option is only available when embedding directly into an existing page and the [Saved views](saved-views.md) feature is disabled. 
 
 ## Sharing an embedded app
 
@@ -75,7 +100,10 @@ After you've embedded a canvas app on a page and confirmed that it's working cor
 
 2. Make sure that the targeted users have the appropriate personalizations, so that the embedded app appears when those users view the page. You can use either of the following approaches:
 
-    - Recommended: Use the [Saved views](saved-views.md) feature to create and publish a view that includes the embedded app. This approach ensures that all users who have the security roles that are targeted by the published view will see the app in Finance and Operations apps. 
+    -   Publish the view (Recommended): If the [Saved views](saved-views.md) feature has been turned on, the recommended and preferred way to create a view with the embedded app and publish that view to the desired users. This approach ensures that all users who have the security roles that are targeted by the published view will see the canvas app in Finance and Operations apps.
+
+        You can also publish a canvas app that has been embedded as a full-page experience from the dashboard. On the dashboard, select and hold (or right-click) the tile that is associated with the app, select **Personalize**, and then select **Publish page**. Currently, you can publish only to security roles. However, the capability to publish to legal entities will be added before the feature becomes generally available.
+ 
     - If you don't have the Saved views feature turned on, you can have the system admin push a personalization that includes the embedded app to all users or a subset of users. Alternatively, you can export your page's personalizations, and send them to one or more users. Each of those users can then import the personalizations. The personalization toolbar has actions that let you export and import personalizations. 
     
 > [!NOTE]
