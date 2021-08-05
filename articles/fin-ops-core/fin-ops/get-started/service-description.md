@@ -119,7 +119,7 @@ Typical environment and data management events performed in the service include 
 **Event:** [Copy a sandbox database to a production instance](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig).
 - Note that this is performed when ready to do a mock go-live or an actual go-live cutover.
 
-**Event:** Maintenance mode](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/maintenance-mode)
+**Event:** [Maintenance mode](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/maintenance-mode)
 - Turn on maintenance mode in LCS.
 - Complete necessary maintenance.
 - Turn off maintenance mode in LCS.
