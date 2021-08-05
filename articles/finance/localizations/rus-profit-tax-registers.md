@@ -108,14 +108,12 @@ The set of tax registers that must be provided for the reporting period is gener
 3.  On the **Hide** FastTab, move the fields that you want to hide from the **Available fields** column to the **Selected fields** column, and then select the **Hide** checkbox for those fields.
 
 When new tax register journal lines are created, the fields that you hide are automatically excluded from the tax register.
-
 The list of fields that are included in the calculation for each tax register can be adjusted on the tax register lines.
-
 If the list of hidden fields is changed, the fields will be saved for all data that was created before those changes were made.
 
-1.  On the **Parameters** FastTab, you can set up additional parameters for the tax register. On the line for each parameter, specify a value in the **Value** field. The parameters are different for every register. For more information about parameters, see the topic for each tax register.
+4.  On the **Parameters** FastTab, you can set up additional parameters for the tax register. On the line for each parameter, specify a value in the **Value** field. The parameters are different for every register. For more information about parameters, see the topic for each tax register.
 
-![Graphical user interface  text  application  email Description automatically generated](media/rus-profit-tax-1.png)
+![Tax registers](media/rus-profit-tax-1.png)
 
 ### Set up expense and income codes for the tax register
 
@@ -128,14 +126,13 @@ For some tax registers, you must determine which expense and income codes form t
 5.  On the **Setup** FastTab, set the **Type** option and the **Fixed assets type** field. For more information, see [Fixed assets and intangible assets registers](https://docs.microsoft.com/dynamics365/finance/localizations/rus-assets-tax-registers).
 6.  On the **Exceptions** and **Exception dimension** FastTabs, specify the ledger accounts, dimensions, and entries that should be excluded when the tax register is calculated.
 
-![Exceptions](media/rus-profit-tax-2.png)
+![Expense codes set up](media/rus-profit-tax-2.png)
 
 ### View the tax registers tree
 
 -   On the **Tax registers** page, in the left pane, select a tax register. Then, on the Action Pane, select **Tree** to view the structure of the tax register tree.
 
 Here is an example of a tree structure for tax registers:
-
 -   Cash payment receipt
 -   Cash payment issue
 - **Goods cost calculation**
@@ -160,9 +157,9 @@ A new journal can be created only if all journals for previous periods have been
 -   Period number
 -   Years
 
-![Graphical user interface Description automatically generated](media/rus-profit-tax-3.png)
+![New tax register journal](media/rus-profit-tax-3.png)
 
-1.  On the Action Pane, select **Lines**, and then select **Yes** to approve the creation of the tax register journal lines. The **Register journal lines** page is opened.
+4.  On the Action Pane, select **Lines**, and then select **Yes** to approve the creation of the tax register journal lines. The **Register journal lines** page is opened.
 
 The journal lines contain tax registers where the calculation period is the same as or less than the journal's period type. Tax registers where the calculation period is more than the journal's period type are excluded from the calculation. For example, if the period of the register journal is **Quarter**, journal lines will contain tax registers that have the **Month** and **Quarter** periods. However, it won't contain tax registers that have the **Yearly** period.
 
@@ -177,7 +174,7 @@ To hide a field, follow these steps.
 3.  In the **Register field** field, select the field to hide, and then select the **Hide** checkbox. Only the fields that have been selected in the corresponding register settings are available for selection.
 4.  Select **Save**.
 
-![Graphical user interface  text  application Description automatically generated](media/rus-profit-tax-4.png)
+![Change rhe fields](media/rus-profit-tax-4.png)
 
 To add a field, follow these steps.
 
@@ -193,10 +190,11 @@ If the composition of the tax register journal has changed, follow these steps t
 2.  On the Action Pane, select **Lines**.
 3.  On the Action Pane, select **Delete rows**, and then select **Yes**.
 
-Note: You can't delete register journal lines if approved registers exist. To delete lines, you must first cancel the approval of the registers.
+>[!NOTE] 
+>You can't delete register journal lines if approved registers exist. To delete lines, you must first cancel the approval of the registers.
 
-1.  Close the **Register journal lines** page.
-2.  On the Action Pane, select **Lines** to create a new set of lines.
+4.  Close the **Register journal lines** page.
+5.  On the Action Pane, select **Lines** to create a new set of lines.
 
 ### Calculate and print tax registers
 
@@ -207,15 +205,14 @@ Note: You can't delete register journal lines if approved registers exist. To de
 Alternatively, to calculate only one tax register, select the line for the register, and then, on the Action Pane, select **Calculate
 current**. If the register uses data from other registers, calculate those registers first.
 
-1.  Select **OK**. After the calculation is completed, register lines are created.
-2.  On the **Register journal lines** page, select the register line.
-3.  On the Action Pane, select **Print**. Then, in the dialog box that appears, select **OK**.
-
+4.  Select **OK**. After the calculation is completed, register lines are created.
+5.  On the **Register journal lines** page, select the register line.
+6.  On the Action Pane, select **Print**. Then, in the dialog box that appears, select **OK**.
 The register is printed in Microsoft Excel format.
 
 Here is an example of the tax register that is printed.
 
-![Table Description automatically generated](media/rus-profit-tax-5.png)
+![Excel example](media/rus-profit-tax-5.png)
 
 ### Recalculate tax registers
 
@@ -247,10 +244,10 @@ Alternatively, to reset only one register, select the line for the register, and
 - **Manual data input** – This option is set to **Yes** if the line was manually created. This option isn't editable.
 - **Corrected** – This option is set to **Yes** if the line has been manually edited. This option isn't editable.
 
-![Graphical user interface  text  application Description automatically generated](media/rus-profit-tax-6.png)
+![Register lines](media/rus-profit-tax-6.png)
 
-1.  On the Action Pane, select **Source** to go to the primary document that the line was based on when it was created. Depending on the tax register, the primary document can be, for example, a fixed asset card or a posted vendor or customer invoice. The **Source** button isn't available if the register line was created by summing the transactions.
-2.  To print the tax register, on the Action Pane, select **Print**. The register is printed in Excel format.
+4.  On the Action Pane, select **Source** to go to the primary document that the line was based on when it was created. Depending on the tax register, the primary document can be, for example, a fixed asset card or a posted vendor or customer invoice. The **Source** button isn't available if the register line was created by summing the transactions.
+5.  To print the tax register, on the Action Pane, select **Print**. The register is printed in Excel format.
 
 ### Manually adjust the tax register lines
 
