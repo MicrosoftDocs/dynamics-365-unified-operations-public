@@ -57,7 +57,7 @@ The list view of locations includes all stores and warehouses that are configure
 The following actions are available on the POS app bar:
 
 - **Sort** - This action lets the POS user sort the data in the list view based on various criteria. Location-based sorting is the default sort option. 
-  - **Geo location** (from the closest location to the farthest location, compared with the current store)
+  - **Geo location** (from the closest to the farthest location, based on distance to the current store)
   - **Name** (in ascending or descending order)
   - **Store number** (in ascending or descending order)
   - **Inventory** (in descending order)
@@ -72,7 +72,7 @@ The following actions are available on the POS app bar:
 - **Add to transaction** - This action adds the product to the cart and redirects the user to the transaction screen.
 
 > [!NOTE]
-> For a location-based sort, the distance between a location and current store is determined by the coordinates (latitude and longitude) defined in Commerce headquarters. For a store, the location information is defined in the primary address of the operating unit associated with the store. For a non-store warehouse, the location information is defined in the warehouse address. If the current store doesn't have coordinates defined, the location-based sort option will display the current store at the top of the list and then sort other locations by name.
+> The location-based sort introduced in 10.0.17 release displays current store at the top. For other locations, the distance between the location and current store is determined by the coordinates (latitude and longitude) defined in Commerce headquarters. For a store, the location information is defined in the primary address of the operating unit associated with the store. For a non-store warehouse, the location information is defined in the warehouse address. Prior to 10.0.17, the list view always displays current store at the top and sorts other locations alphabetically.
 
 > [!NOTE]
 > The **Show store availability**, **Show store location**, **Pick up in store**, and **Ship product** actions are not available for non-store locations.
