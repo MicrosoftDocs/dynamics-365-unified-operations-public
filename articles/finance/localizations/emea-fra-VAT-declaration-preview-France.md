@@ -48,7 +48,7 @@ For more information about how to set up application-specific parameters, see th
 
 In the following tables, the **Lookup result** column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
 
-### VAT declaration preview overview
+### <a name="vat-declaration-preview-overview"> VAT declaration preview overview </a>
 
 The VAT declaration preview in France contains the following information.
 
@@ -1060,7 +1060,7 @@ Alternatively, you can configure two separate sales tax codes: one for VAT due a
 
 **Example**
 
-For a taxable purchase of electricity, gas, heat, or cold that has a domestic reverse charge, you configure sales tax code **UT_S_RC** with use tax. You then associate the code with the **UseTaxTaxableElectricityGasHeatCold** lookup result of the **Operation** lookup and the **UseTaxFranceStandard** lookup result of the **Report field** lookup. In this case, amounts that use the **UT_S_RC** sales tax code will be reflected on line 3A (via the **Operation** lookup), and on lines 08 and 20 (via the **Report field** lookup).
+For a taxable purchase of electricity, gas, heat, or cold that has a domestic reverse charge, you configure sales tax code **UT_S_RC** with use tax. You then associate the code with the **UseTaxTaxableElectricityGasHeatCold** lookup result of the **Operation** lookup and the **UseTaxFranceStandard** lookup result of the **Report field** lookup. In this case, amounts that use the **UT_S_RC** sales tax code will be reflected on line 3A (via the **Operation** lookup), and on lines 08 and 20 (using the **Report field** lookup).
 
 Alternatively, you configure two sales tax codes:
 
@@ -1085,7 +1085,7 @@ For more information about how to configure reverse charge VAT, see [Reverse cha
 
     - VAT Declaration Excel (FR) version 85.15
 
-### Set up application-specific parameters for VAT declaration fields
+### <a name="set-up-application-specific-parameters-for-vat-declaration-fields">Set up application-specific parameters for VAT declaration fields</a>
 
 To automatically generate a VAT declaration preview report in Microsoft Excel, associate sales tax codes in the application and lookup results in the ER configuration.
 
@@ -1145,7 +1145,7 @@ Follow these steps to define which sales tax codes generate the amount in box 18
 
 ## Preview the VAT declaration in Excel
 
-### Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task
+### <a name="preview-the-vat-declaration-in-excel-from-the-report-sales-tax-for-settlement-period-periodic-task"> Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task</a>
 
 1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**.
 2. Set the following fields.
@@ -1173,7 +1173,7 @@ Follow these steps to define which sales tax codes generate the amount in box 18
 
 5. Select **OK**, and review Excel report.
 
-### Settle and post sales tax
+### <a name="settle-and-post-sales-tax">Settle and post sales tax</a>
 
 1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Settle and post sales tax**.
 2. Set the following fields.
@@ -1207,7 +1207,7 @@ declaration for multiple legal entities](#run-a-vat-declaration-for-multiple-leg
 
 #### Download and import example settings for electronic messages
 
-The data package that includes example settings contains electronic message settings that are used to generate the Excel report for France. You can extend these settings or create your own. For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](..//general-ledger/electronic-messaging.md).
+The data package that includes example settings contains electronic message settings that are used to generate the Excel report for France. You can extend these settings or create your own. For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../general-ledger/electronic-messaging.md).
 
 1. In [LCS](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download the **FR VAT declaration** package. The downloaded file is named **FR VAT declaration package.zip**.
 2. In Finance, in the **Data management** workspace, select **Import**.
@@ -1257,7 +1257,7 @@ The following procedure applies to the example electronic message processing tha
 
 11. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts in the Excel document.
 
-## Run a VAT declaration for multiple legal entities
+## <a name="run-a-vat-declaration-for-multiple-legal-entities">Run a VAT declaration for multiple legal entities</a>
 
 To use the formats to report the VAT declaration for a group of legal entities, you must first set up the application-specific parameters of the ER formats for sales tax codes from all required legal entities.
 
