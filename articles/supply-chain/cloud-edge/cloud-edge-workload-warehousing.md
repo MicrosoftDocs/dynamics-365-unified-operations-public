@@ -145,7 +145,7 @@ The following work order types are currently supported for WES workloads on scal
 
 - Sales orders
 - Transfer issue
-- Replenishment (except for production raw material)
+- Replenishment (not including raw materials for production)
 - Inventory movement
 - Cycle counting
 - Purchase orders (linked to warehouse orders)
