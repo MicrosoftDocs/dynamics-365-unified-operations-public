@@ -3246,6 +3246,8 @@
             href: localizations/rus-bad-debts.md
           - name: Calculation of tax asset and tax liability registers
             href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
+          - name: Other tax registers
+            href: localizations/rus-other-tax-registers.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
