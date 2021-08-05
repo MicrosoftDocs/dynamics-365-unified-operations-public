@@ -106,9 +106,8 @@ The tax register lines show the following information:
 - **Receipt value** – The total amount of received items.
 - **Issued value** – The total amount of issued items.
 
-Note.
-
-The amounts of these expenses in the tax declaration must be manually reduced by the cost in work in progress and finished goods warehouse.
+>[!NOTE]
+>The amounts of these expenses in the tax declaration must be manually reduced by the cost in work in progress and finished goods warehouse.
 
 ## Non warehoused items tax register
 
