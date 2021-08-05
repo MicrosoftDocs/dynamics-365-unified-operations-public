@@ -65,7 +65,7 @@ You need to adjust your receipt formats to use updated custom fields. Review the
 
 ## Enable fiscal integration
 
-When you are ready to enable the fiscal integration functionality, make the following steps to enable fiscal integration and start using it. 
+When you are ready to enable the fiscal integration functionality, make the following steps to start using it: 
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 2. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
