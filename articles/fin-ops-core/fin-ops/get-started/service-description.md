@@ -198,7 +198,7 @@ The following table describes some typical scenarios and activities for the serv
 | Manage non-production instances with LCS |  | X  |
 | Monitor non-production instances |  | X  |
 
-### Service update strategy and maintenance windows 
+### Service update strategy 
 
 In accordance with the [software lifecycle policy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy). Finance and Operations follows the Microsoft [Modern Lifecycle Policy](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#modern-lifecycle-policy), which covers products that are serviced and supported continuously. The following illustrates the process:
  
