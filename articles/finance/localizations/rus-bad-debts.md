@@ -152,7 +152,7 @@ Debts can be calculated for profit tax accounting purposes and business accounti
 
 ### Create and set up registers
 
-Depending on the settings of your debts calculation models, create and calculate the registers in each group of registers, as described in Profit tax registers journal.
+Depending on the settings of your debts calculation models, create and calculate the registers in each group of registers, as described in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 
 | **Register type** | **Comment** |
 |-------------------------|-------------------------|
