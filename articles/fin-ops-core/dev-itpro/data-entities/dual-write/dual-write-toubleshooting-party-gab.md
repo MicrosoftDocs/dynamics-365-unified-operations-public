@@ -39,7 +39,7 @@ Before you use the party and global address book functionality, make sure these 
 
 You might receive the following error message when you try to add an address to an account or contact in a Finance and Operations app or Dataverse:
 
-*Unable to write data to entity msdyn_partypostaladdresses. Writes to DirPartyPostalAddressLocationCDSEntity failed with error message Request failed with status code BadRequest and CDS error code : 0x80040265 response message: An error occurred in plugin. A record that has the attribute values Location ID already exists. The entity key Location ID Key requires that this set of attributes contains unique values. Select unique values and try again.*
+*Unable to write data to entity msdyn_partypostaladdresses. Writes to DirPartyPostalAddressLocationCDSEntity failed with error message Request failed with status code BadRequest and CDS error code: 0x80040265 response message: An error occurred in plugin. A record that has the attribute values Location ID already exists. The entity key Location ID Key requires that this set of attributes contains unique values. Select unique values and try again.*
 
 To fix this issue, make sure that the key on the **Address** table is set as shown in the following table.
 
@@ -61,9 +61,9 @@ You might receive the following error message when you try to run **Customers**,
 
 There are multiple keys defined on the **msdyn_company** table in Dataverse. Dual-write cannot determine which key to use as integration key, and it randomly assigns one of the keys as integration key. To fix this issue, update the integration keys manually as described in step 8 of [Party and global address book](party-gab#setup). Then refresh the table mappings. The missing destination field error should disappear.
 
-## Error that the Party Id is different between Finance and Operations apps and Dataverse
+## Error that the Party ID is different between Finance and Operations apps and Dataverse
 
-You might receive an error message that the Party Id is different between a Finance and Operations app and Datavers for the **Customers**, **Vendors**, or **Contacts V2** maps.
+You might receive an error message that the Party ID is different between a Finance and Operations app and Datavers for the **Customers**, **Vendors**, or **Contacts V2** maps.
 
 To fix this issue, use the latest version of maps as described in step 7 of [Party and global address book](party-gab#setup).
 
@@ -73,7 +73,7 @@ You might receive error messages when you upgrade the Party and Global Address b
 
 The party and global address book functionality was part of the dual-write orchestration package when it was released for preview in January and February 2021. Based on customer feedback, the functionality was released at General Availability as a separate package. As a separate package, the functionality is optional. If you are using the preview version of the dual-write orchestration package that contains party and global address book functionality then you need to uninstall the dual-write orchestration solutions or reset the Dataverse environment and get the latest packages.
 
-The Party and Global Address Book package contains the following 4 solutions.
+The Party and Global Address Book package contains the following solutions.
 
 + **Party** - Includes all the new party, postal address, and electronic address related schema.
 + **Dynamics365GABExtended** - Includes all code and schema changes to support **Accounts**, **Vendors**, **Contacts**, and **Contact** for party functionality. This support was separated from the **Dynamics365FinanceExtended** and **Dynamics365SupplyChainExtended** solutions.
@@ -92,7 +92,7 @@ To fix this issue, create the **Contact** record using the **Add Contact** form.
 
 You might receive the following error message when you try to update a contact that originated in Dataverse in a Finance and Operations app.
 
-*Unable to write data to entity msdyn_contactforparties.Writes to smmContactPersonV2Entity failed with error message Request failed with status code BadRequest and CDS error code : 0x0 response message: An error occurred while validating input parameters: Microsoft.OData.ODataException: Cannot convert the literal '' to the expected type 'Edm.Int32'.*
+*Unable to write data to entity msdyn_contactforparties.Writes to smmContactPersonV2Entity failed with error message Request failed with status code BadRequest and CDS error code: 0x0 response message: An error occurred while validating input parameters: Microsoft.OData.ODataException: Cannot convert the literal '' to the expected type 'Edm.Int32'.*
 
 To fix this issue, install the latest Party and global address book solution. This issue is fixed in version 3.0.0.26.
 
@@ -102,9 +102,9 @@ You might receive the following error message when you try to create a new custo
 
 *Cannot update a party's type from 'DirOrganization' to 'DirPerson', a delete of the existing party followed by an insert with the new type should be performed instead.*
 
-This issue happens in non-production environments because users try connecting one Finance and Operations app to different Dataverse organizations, or they try to reset the existing Dataverse organizations. The issue is due to the number sequence for Party Id in the **msdyn_party** table in Dataverse. This sequence generates the error:
+This issue happens in non-production environments because users try connecting one Finance and Operations app to different Dataverse organizations, or they try to reset the existing Dataverse organizations. The issue is due to the number sequence for Party ID in the **msdyn_party** table in Dataverse. This sequence generates the error:
 
-1. An account is created in Dataverse which creates a new party with Party Id **Party-001** and Party type **Organization**. 
+1. An account is created in Dataverse. Dataverse creates a new party with Party ID **Party-001** and Party type **Organization**. 
 2. The new account is then sent to the Finance and Operations app.
 3. The Dataverse environment is reset later or the same Finance and Operations apps environment is again connected to a different Dataverse organization.
 4. You create a new contact this time in Dataverse. The number sequence for **msdyn_party** starts with **Party-001**. This time, the party record is created with **Party-001** and Party type as **Person**.
