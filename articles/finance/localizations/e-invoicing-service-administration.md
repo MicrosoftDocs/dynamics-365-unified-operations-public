@@ -36,14 +36,14 @@ This topic provides information about the components that are related to adminis
 
 ## Azure
 
-Use Microsoft Azure to create the secrets for the Key Vault and storage account. Then use the secrets in the configuration of Electronic invoicing.
+Use Microsoft Azure to create the secrets for the Key Vault and set up storage account. Then use the key vault secrets and storage account SAS token in the configuration of Electronic invoicing.
 
 ## Lifecycle Services
 
-Use Microsoft Dynamics Lifecycle Services (LCS) to enable the microservices for your LCS deployment project.
+Use Microsoft Dynamics Lifecycle Services (LCS) to enable Electronic invoicing Add-in for your LCS deployment project.
 
 > [!NOTE]
-> The installation of the microservice in LCS requires at least a Tier 2 virtual machine. For more information about environment planning, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+> The installation of the Add-ins in LCS requires at least a **Tier 2 environment**. For more information about environment planning, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
  
 
 ## Regulatory Configuration Services
@@ -62,16 +62,17 @@ Before you can use RCS to configure electronic invoices, you must configure RCS 
 
 Electronic invoicing is available in several Azure datacenter geographies. The following table lists the availability per region.
 
-| Azure datacenter geography |
-|----------------------------|
-| United States              |
-| Europe                     |
-| United Kingdom             |
-| Asia                       |
+
+    | Datacenter Azure geography | Service endpoint URI                                                       |
+    |----------------------------|----------------------------------------------------------------------------|
+    | United States              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Europe                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | United Kingdom             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Asia                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 ### Service environments
 
-Service environments are logical partitions that are created to support execution of the electronic invoicing features in Electronic invoicing. The security secrets and digital certificates, and the governance (that is, access permissions), must be configured at the service environment level.
+Service environments are logical partitions that are created to support execution of the Globalization features in Electronic invoicing. The security secrets and digital certificates, and the governance (that is, access permissions), must be configured at the service environment level.
 
 Customers can create as many service environments as they want. All the service environments that a customer creates are independent of each other.
 
@@ -89,8 +90,8 @@ Service environments can be managed through status. The possible options are:
 
 The Electronic invoicing service is responsible for storing all your business data in the Azure resources that your company owns. To ensure that the service works correctly, and that all the business data that is required for and generated by Electronic invoicing is accessed appropriately, you must create two main Azure resources:
 
-- An Azure storage account (Blob storage) that will store electronic invoices
-- An Azure Key Vault that will store certificates and the uniform resource identifier (URI) of the storage account
+- An Azure storage account (Blob storage) that will store electronic documents (electronic invoices, results of documents transformation, responses from external web services, etc.)
+- An Azure Key Vault that will store certificates and the uniform resource identifier (URI) of the storage account (SAS token)
 
 
 A dedicated Key Vault and customer storage account must be allocated specifically for use with Electronic Invoicing. For more information, see [Create an Azure storage account and a Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -109,36 +110,36 @@ Service environments must be published to Electronic invoicing before they can b
 
 ### Connected applications
 
-Connected applications are the instances of Finance and Supply Chain Management that you might want to reach through RCS. Besides the application URL and its tenant, a connected application contains the credentials that enable RCS to connect to the environment.
+Connected applications are the instances of Dynamics 365 Finance and Dynamics 365 Supply Chain Management that you might want to reach through RCS. Besides the application URL and its tenant, a connected application contains the credentials that enable RCS to connect to the environment.
 
 Through the connected applications, you can configure part of the electronic invoicing feature in Finance and Supply Chain Management to make the whole electronic invoicing feature work.
 
-## Finance and Supply Chain Management
+## Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
 ### Integration with Electronic invoicing
 
-Before you can use Finance and Supply Chain Management to issue electronic invoices through Electronic invoicing, it must be configured to allow for communication with the service.
+Before you can use Dynamics 365 Finance and Dynamics 365 Supply Chain Management to issue electronic invoices through Electronic invoicing, it must be configured to allow for communication with the service.
 
 #### Electronic invoicing integration feature
 
-To enable communication between Finance and Supply Chain Management and Electronic invoicing, you must turn on the **Electronic Invoicing integration** feature in the **Feature management** workspace.
+To enable communication between Dynamics 365 Finance and Dynamics 365 Supply Chain Management and Electronic invoicing, you must turn on the **Electronic Invoicing integration** feature in the **Feature management** workspace.
 
 #### Service endpoint
 
 The service endpoint is the URL where Electronic invoicing is located. Before electronic invoices can be issued, the service endpoint must be configured in Finance and Supply Chain Management to allow for communication with the service.
 
-To configure the service endpoint, go to **Organization administration \> Setup \> Electronic document parameter**, and then, on the **Submission services** tab, in the **Electronic invoicing URL** field, enter the URL as described in the table described in section **Service endpoint**.
+To configure the service endpoint, go to **Organization administration \> Setup \> Electronic document parameters**, and then, on the **Electronic invoicing** tab, in the **Endpoint URL** field, enter the URL as described in the table described in section **Service endpoint**.
 
 #### Environments
 
 The environment name that is entered in Finance and Supply Chain Management refers to the name of the environment that is created in RCS and published to Electronic invoicing.
 
-The environment must be configured on the **Submission services** tab of the **Electronic document parameter** page, so that every request to issue electronic invoices contains the environment where Electronic invoicing can determine which electronic invoicing feature must process the request.
+The environment must be configured on the **Electronic invoicing** tab of the **Electronic document parameters** page, so that every request to issue electronic invoices contains the environment where Electronic invoicing can determine which electronic invoicing feature must process the request.
 
 ## Additional resources
 
 - [Configure electronic invoices in RCS](e-invoicing-configuration-rcs.md)
-- [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+- [Issue electronic invoices in Dynamics 365 Finance and Dynamics 365 Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
