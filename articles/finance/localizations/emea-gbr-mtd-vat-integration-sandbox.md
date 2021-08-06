@@ -98,3 +98,40 @@ Every access token is valid for four hours after it's created by HMRC. You don't
 To manually refresh an access token, on the **Web applications** page, on the Action Pane, select **Refresh access token**. 
 A refresh access token request is sent to HMRC, and a new access token from the response that is received is automatically saved in the system.
 
+## Retrieve VAT obligations from HMRC
+
+After you successfully obtain an access token your sandbox application is ready to interoperate with HMRC.
+
+1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages** page, and select **UK MTD VAT TEST** processing. This page shows information about VAT obligations and returns, and is used for interoperation with the HMRC web service. 
+2. On the **Messages** FastTab, select **New**.
+3. Select the **Create VAT obligation request** action in the **Action** field of **Run processing** dialog, and then select **OK**. 
+4. A new electronic message is created that has a status of **New obligation request**. 
+5. Fill in dates in **From date** and **To date** fields. These fields are mandatory for electronic messages that retrieve VAT obligations. However, the response from HMRC's sandbox application does not depends on these fields' values and it always contains the same information about obligation periods.
+6. Specify a description of your message in **Description** field. This field is optional for electronic messages that retrieve VAT obligations.
+7. No additional fields are applicable to this type of electronic message.
+4. Select **Send report** to initialize the retrieval of VAT obligation information from HMRC. 
+5. In the **Run processing** dialog box, the **Test retrieve VAT obligations** action is automatically defined, and information is filled in by the system. Select **OK**.
+
+![Retrieve VAT obligations from HMRC](media/uk-mtd-obligation.png)
+
+6. Select a check box to consent providing the information in fraud prevention headers as part of VAT request to HMRC in the **Request identification information** dialog and click **Submit** button to proceed further. Your privacy is important to us. To learn more read our [Privacy Notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
+8. A request in JSON format is created and sent to the HMRC web application. The response that is received from HMRC will be attached to the electronic message. Based on the response, new electronic messages for the VAT return will be created.
+
+![VAT obligations information received](media/uk-mtd-response.png)
+
+HMRC uniquely identifies each VAT return period via a **periodKey** parameter. This parameter is stored in Finance. However, according to HMRC requirements, its value must be hidden in the UI. Users must not be able to see the **periodKey** value in the UI.
+
+The **periodKey** additional field is used to store the **periodKey** value in  the **UK MTD VAT TEST** processing. This field is set up as a hidden field, so that users can't see its value. To comply with HMRC requirements, you should not change this setup for the **periodKey** additional field.
+
+The following illustration shows the lifecycle of electronic message processing for the retrieval of VAT obligations.
+
+![Lifecycle of electronic message processing for VAT obligation retrieval.](media/mkd-process.png)
+
+The last step of the processing is an **Import VAT obligations** action of the **Electronic reporting import** type. The system defines the following behavior for this step:
+
+- If a VAT obligation from the response doesn't exist in the database, and the status of this VAT obligation in HMRC is **Open**, a new electronic message is created that has a status of **New VAT return**.
+- If a VAT obligation from the response doesn't exist in the database, and the status of this VAT obligation in HMRC is **Fulfilled**, a new electronic message is created that has a status of **Completed VAT return**.
+- If a VAT obligation from the response does exist in the database, the system verifies the values of the **HMRC status**, **Due date**, and **Received date** additional fields, and syncs them with the information from the response.
+
+All the actions that are performed for electronic messages are logged and can be viewed on the **Action log** FastTab.
+
