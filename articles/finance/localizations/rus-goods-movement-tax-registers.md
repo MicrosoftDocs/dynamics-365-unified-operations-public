@@ -63,7 +63,7 @@ The following tax registers must be created:
 - Non warehoused items
 - Goods issued
 
-To set up the **Warehoused items (totals)**, **Non warehoused items**, and **Goods issued** registers, follow the steps in Profit tax registers.
+To set up the **Warehoused items (totals)**, **Non warehoused items**, and **Goods issued** registers, follow the steps in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 
 To set up the **Warehoused items** register, follow the steps in the next section.
 
