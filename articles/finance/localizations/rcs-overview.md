@@ -52,7 +52,8 @@ On the **Regulatory Configuration Service** page, review and accept the suppleme
 - **Sign up** if you're a first-time user of the service, and you're using a business email address to provision your organization a service environment
 - **Sign in** if you've previously signed up for the service, and you want to access your organization environment
 
-> [!NOTE] It's recommend after sign up that you add an additional SysAdmin user to the RCS environment that has been provisioned to be co-admin for the environment. This will help to provide continunity to the RCS environment access as part of the SysAdmin role is to manage users for that environment. You can add users through the **RCS workspace / System Administration**.
+> [!NOTE] 
+> After you sign up, we recommend that you add an additional SysAdmin user to the RCS environment. This user will be provisioned as the co-admin for the environment. This will help to provide stability for access to the RCS environment, as the SysAdmin role is to manage users for that environment. You can add users using **RCS workspace > System Administration**.
 
 ## Regional availability
 
