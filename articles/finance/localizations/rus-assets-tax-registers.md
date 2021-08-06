@@ -49,13 +49,13 @@ For the tax accounting of fixed assets and intangible assets, create the followi
 
 ### Set up expense codes
 
-For **FA – information about object**, **IA – object information**, **FA depreciation**, and **IA depreciation** registers, you must create expense codes and income codes on the **Expense code** page, and you must set up ledger accounts for the expense codes.
+For **FA – information about object**, **IA – object information**, **FA depreciation**, and **IA depreciation** registers, you must create expense codes and income codes on the **Expense code** page, and you must set up ledger accounts for the expense codes. For more information, see [Expense and income codes](rus-expense-and-income-codes.md#create-an-expense-or-income-code).
 
 ### Set up register parameters
 
 Follow these steps for each of the following registers: **FA – information about object**, **IA – object information**, **FA depreciation**, **IA depreciation**, and **FA/IA sale**.
 
-1.  Go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**. On the **Tax registers** page, set up a register.
+1.  Go to **Tax** \> **Setup** \> **Profit tax** \> **Registers**. On the **Tax registers** page, create and set up a register as described in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 2.  On the **Parameters** FastTab, set the following fields that are used to generate registers:
 
     -   Depreciation groups
