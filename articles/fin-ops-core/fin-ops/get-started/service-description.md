@@ -85,7 +85,8 @@ To ensure that an implementation is configured for high performance, customers m
 
 -	Provide accurate usage information for the Finance and Operations implementation in the [LCS Subscription Estimator](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator) 
 - Build and test extensions for performance and scale 
--	Test data configurations appropriately for performance 
+-	Test data configurations appropriately for performance
+-	Ensure scalability by conducting [performance testing](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) prior to go-live.
 
 ### Onboarding and implementation
 
