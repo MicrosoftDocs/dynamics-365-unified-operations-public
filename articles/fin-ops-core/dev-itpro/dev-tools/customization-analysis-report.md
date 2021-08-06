@@ -32,6 +32,12 @@ To generate the Customization Analysis Report, run the following command in a de
 xppbp.exe -metadata=<local packages folder> -all -model=<ModelName> -xmlLog=C:\BPCheckLogcd.xml -module=<PackageName> -car=<reportlocation>
 ```
 
+If your custom model references an ISV model, then you must include the `-PackagesRoot` parameter, for example:
+
+```Console
+-packagesroot=K:\AosService\PackagesLocalDirectory
+```
+
 ### Example
 
 ```Console
