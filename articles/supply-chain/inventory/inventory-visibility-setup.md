@@ -1,6 +1,6 @@
 ---
 title: Set up Inventory Visibility
-description: This topic describes how to install the Inventory Visibility Add-in for Dynamics 365 Supply Chain Management.
+description: This topic describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -19,109 +19,107 @@ ms.dyn365.ops.version: 10.0.21
 [!include [preview banner](../includes/preview-banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-This topic describes how to install the Inventory Visibility Add-in for Dynamics 365 Supply Chain Management.
+This topic describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 
-You must install the Inventory Visibility Add-in using Microsoft Dynamics Lifecycle Services (LCS). LCS is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your Dynamics 365 finance and operations apps.
+You must use Microsoft Dynamics Lifecycle Services (LCS) to install the Inventory Visibility Add-in. LCS is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your finance and operations apps.
 
 For more information, see [Lifecycle Services resources](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 ## Inventory Visibility prerequisites
 
-Before you install the Inventory Visibility, you must do the following:
+Before you install the Inventory Visibility, you must complete the following tasks:
 
-- Obtain an LCS implementation project with at least one environment deployed.
-- Make sure that the prerequisites for setting up add-ins provided in the [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md) have been completed. Inventory Visibility doesn't require dual-write linking.
-- Contact the Inventory Visibility team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the following required files:
-  - `InventoryServiceApplication.PackageDeployer.zip`
-  - `Inventory Visibility Integration.zip` (if the version of Supply Chain Management that you're running is earlier than version 10.0.18)
+- Obtain an LCS implementation project where at least one environment is deployed.
+- Make sure that the prerequisites for setting up add-ins have been completed. For information about these prerequisites, see [Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Inventory Visibility doesn't require dual-write linking.
+- Contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the following required files:
+
+    - `InventoryServiceApplication.PackageDeployer.zip`
+    - `Inventory Visibility Integration.zip` (if the version of Supply Chain Management that you're running is earlier than version 10.0.18)
 
 > [!NOTE]
-> The currently supported countries and regions include: Canada (CCA, ECA), the United States (WUS, EUS), the European Union (NEU, WEU), the United Kingdom (SUK, WUK), and Australia (EAU, SEAU).
+> The countries and regions that are currently supported include Canada (CCA, ECA), the United States (WUS, EUS), the European Union (NEU, WEU), the United Kingdom (SUK, WUK), and Australia (EAU, SEAU).
 
-If you have any questions about these prerequisites, please contact the Inventory Visibility product team.
+If you have any questions about these prerequisites, contact the Inventory Visibility product team.
 
 ## <a name="setup-microsoft-dataverse"></a>Set up Dataverse
 
-To set up Dataverse for use with Inventory Visibility, use the package deployer tool to deploy the Inventory Visibility package. The following subsections describe how to complete each of these tasks.
+To set up Dataverse so that it can be used with Inventory Visibility, use the package deployer tool to deploy the Inventory Visibility package. The following subsections describe how to complete each task.
 
 > [!NOTE]
-> Currently, we only support Dataverse environments created using the LCS page. If your Dataverse environment was created in some other way (such as using the Power Apps admin center) and is linked to your Supply Chain Management environment, please contact the Inventory Visibility product team to resolve the mapping issue first and then install Inventory Visibility.
+> Currently, only Dataverse environments that were created by using LCS are supported. If your Dataverse environment was created in some other way (for example, by using the Power Apps admin center), and if it's linked to your Supply Chain Management environment, you must first contact the Inventory Visibility product team to fix the mapping issue. You can then install Inventory Visibility.
 
-### Migrate from an old version of Dataverse solution
+### Migrate from an old version of the Dataverse solution
 
-If you have installed an older version of the Inventory Visibility Dataverse solution, follow the below instruction to update your version. There are two cases:
+If you've installed an older version of the Inventory Visibility Dataverse solution, use these instructions to update your version. There are two cases:
 
-- Case 1: If you set up Dataverse manually by importing the solution `Inventory Visibility Dataverse Solution_1_0_0_2_managed.zip`, then do the following steps:
+- **Case 1:** If you manually set up Dataverse by importing the `Inventory Visibility Dataverse Solution_1_0_0_2_managed.zip` solution, follow these steps:
 
-    1. download the following three files:
-      - `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip`
-      - `InventoryServiceBase_managed.cab`
-      - `InventoryServiceApplication.PackageDeployer.zip`
+    1. Download the following three files:
 
-    1. Manually import `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip` and `InventoryServiceBase_managed.cab` into Dataverse by doing the following steps:
-       1. Open the URL of your Dataverse environment.
-       1. Go to the **Solutions** page.
-       1. Select **Import**.
+        - `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip`
+        - `InventoryServiceBase_managed.cab`
+        - `InventoryServiceApplication.PackageDeployer.zip`
 
-    1. Use the package deployer tool deploy the `InventoryServiceApplication.PackageDeployer.zip` package. See the [Use the package deployer tool to deploy the package](#deploy-package) section for instructions.
+    1. Manually import `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip` and `InventoryServiceBase_managed.cab` into Dataverse by following these steps:
 
-- Case 2: If you set up Dataverse using the package deployer tool before installing the older `.*PackageDeployer.zip` package,  download `InventoryServiceApplication.PackageDeployer.zip` and update by following the instructions provided in [Use the package deployer tool to deploy the package](#deploy-package).
+        1. Open the URL of your Dataverse environment.
+        1. Open the **Solutions** page.
+        1. Select **Import**.
+
+    1. Use the package deployer tool to deploy the `InventoryServiceApplication.PackageDeployer.zip` package. For instructions, see the [Use the package deployer tool to deploy the package](#deploy-package) section later in this topic.
+
+- **Case 2:** If you set up Dataverse by using the package deployer tool before you installed the older `.*PackageDeployer.zip` package, download `InventoryServiceApplication.PackageDeployer.zip`, and do an update. For instructions, see the [Use the package deployer tool to deploy the package](#deploy-package) section.
 
 ### <a name="deploy-package"></a>Use the package deployer tool to deploy the package
 
-1. Install developer tools as described in [Download tools from NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
+1. Install the developer tools as described in [Download tools from NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
+1. Unblock the `InventoryServiceApplication.PackageDeployer.zip` file that you downloaded from the Teams group by following these steps:
 
-1. Unblock `InventoryServiceApplication.PackageDeployer.zip` that you downloaded from the Teams group.
+    1. Select and hold (or right-click) the file, and then select **Properties**.
+    1. In the **Properties** dialog box, on the **General** tab, find the **Security** section, select **Unblock**, and apply the change. If there is no **Security** section on the **General** tab, the file isn't blocked. In this case, move on to the next step.
 
-   Right-click the file and select **Properties**. In the **Properties** window, open the **General** tab and find the **Security** section. Select **Unblock** and apply. If there is no **Security** section on the **General** tab, then the file isn't blocked, so just go to next step.
+    ![Unblocking the downloaded file](media/unblock-file.png "Unblocking the downloaded file")
 
-   ![Unblock downloaded file](media/unblock-file.png "Unblock downloaded file")
+1. Unzip `InventoryServiceApplication.PackageDeployer.zip` to find the following items:
 
-1. Unzip `InventoryServiceApplication.PackageDeployer.zip` to find the following content:
+    - `InventoryServiceApplication` folder
+    - `[Content_Types].xml` file
+    - `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll` file
 
-   - folder `InventoryServiceApplication`
-   - file `[Content_Types].xml`
-   - file `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`
-
-1. Copy each of these folders and files to the `.\Tools\PackageDeployment` directory, which was created when you installed the developer tools.
-
-1. Execute `.\Tools\PackageDeployment\PackageDeployer.exe`. Follow the instructions on your screen to import the solutions.
+1. Copy each of those items to the `.\Tools\PackageDeployment` directory. (This directory was created when you installed the developer tools.)
+1. Run `.\Tools\PackageDeployment\PackageDeployer.exe`, and follow the on-screen instructions to import the solutions.
 
 ## <a name="install-add-in"></a>Install the Inventory Visibility Add-in
 
-Before you install the add-in, follow the instructions given in [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app) to register an application and add a client secret to AAD under your Azure subscription.
+Before you install the add-in, register an application and add a client secret to Azure Active Directory (Azure AD) under your Azure subscription. For instructions, see [Register an application](/azure/active-directory/develop/quickstart-register-app) and [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Be sure to make a note of the **Application (client) ID**, **Client secret**, and **Tenant ID** values, because you will need them later.
 
-- [Register an application](/azure/active-directory/develop/quickstart-register-app)
-- [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
-- The **Application (client) ID**, **Client secret**, and **Tenant ID** will be used in the following steps.
+After you register an application and add a client secret to Azure AD, follow these steps to install the Inventory Visibility Add-in.
 
-After you register an application and add a client secret to AAD, do the following to install the Inventory Visibility Add-in:
-
-1. Sign in to the [Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index) portal.
+1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index).
 1. On the home page, select the project where your environment is deployed.
 1. On the project page, select the environment where you want to install the add-in.
-1. On the environment page, scroll down until you see the **Environment add-ins** section in the **Power Platform integration** section, where you can find the Dataverse environment name.
+1. On the environment page, scroll down until you find the **Environment add-ins** section in the **Power Platform integration** section. There, you can find the Dataverse environment name.
 1. In the **Environment add-ins** section, select **Install a new add-in**.
 
-   ![The environment page in LCS](media/inventory-visibility-environment.png "The environment page in LCS")
+    ![Environment page in LCS](media/inventory-visibility-environment.png "Environment page in LCS")
 
-1. Select the **Install a new add-in** link. A list of available add-ins opens.
-1. Select **Inventory Visibility** in the list.
-1. Enter values for the following fields for your environment (the AAD application ID is the one you created at the start of this section):
+1. Select the **Install a new add-in** link. A list of available add-ins appears.
+1. In the list, select **Inventory Visibility**.
+1. Set the following fields for your environment:
 
-   - **AAD application (client) ID**
-   - **AAD tenant ID**
+    - **AAD application (client) ID** – Enter the Azure AD application ID that you created and made a note of earlier.
+    - **AAD tenant ID** – Enter the tenant ID that you made a note of earlier.
 
-   ![Add-in setup page](media/inventory-visibility-setup.png "Add-in setup page")
+    ![Setup add-in page](media/inventory-visibility-setup.png "Setup add-in page")
 
-1. Agree to the terms and condition by selecting the **Terms and conditions** check box.
-1. Select **Install**. The status of the add-in will show as **Installing**. When it's done, refresh the page to see the status change to **Installed**.
+1. Agree to the terms and condition by selecting the **Terms and conditions** checkbox.
+1. Select **Install**. The status of the add-in is shown as **Installing**. When the installation is completed, refresh the page. The status should change to **Installed**.
 
 ## <a name="uninstall-add-in"></a>Uninstall the Inventory Visibility Add-in
 
-To uninstall the Inventory Visibility Add-in, select **Uninstall** from LCS page. The uninstallation will terminate the Inventory Visibility Add-in, unregister the add-in from LCS, and delete any temporal data stored within the Inventory Visibility Add-in data cache. The primary inventory data stored in your Dataverse subscription will not be deleted by the uninstall process.
+To uninstall the Inventory Visibility Add-in, select **Uninstall** on the LCS page. The uninstallation process terminates the Inventory Visibility Add-in, unregisters the add-in from LCS, and deletes any temporal data that is stored in the Inventory Visibility Add-in data cache. However, the primary inventory data that is stored in your Dataverse subscription isn't deleted.
 
-To uninstall inventory data stored in your Dataverse subscription, go to https://make.powerapps.com, select **Environment** from the navigation bar and select the Dataverse environment bonded with your LCS environment. Then go to **Solutions** and delete the following 5 solutions:
+To uninstall inventory data that is stored in your Dataverse subscription, open [Power Apps](https://make.powerapps.com), select **Environment** on the navigation bar, and select the Dataverse environment that is bonded with your LCS environment. Then go to **Solutions**, and delete the following five solutions:
 
 - Anchor solution for Inventory Visibility application in Dynamics 365 solutions
 - Dynamics 365 FNO SCM Inventory Visibility Applications Solution
@@ -129,9 +127,9 @@ To uninstall inventory data stored in your Dataverse subscription, go to https:/
 - Inventory Visibility Standalone
 - Dynamics 365 FNO SCM Inventory Visibility Base Solution
 
-After you delete these solutions, the data stored in tables will also be deleted.
+After you delete these solutions, the data that is stored in tables will also be deleted.
 
-## <a name="setup-dynamics-scm"></a>Set up Dynamics 365 Supply Chain Management
+## <a name="setup-dynamics-scm"></a>Set up Supply Chain Management
 
 ### <a name="deploy-inventory-visibility-package"></a>Deploy the Inventory Visibility integration package
 
@@ -145,14 +143,14 @@ If you're running Supply Chain Management version 10.0.17 or earlier, contact th
 Make sure that the following features are turned on in your Supply Chain Management environment. (By default, they are turned on.)
 
 | Feature description | Code version | Toggle class |
-| --- | --- | --- |
-| Enable or disable using inventory dimensions on InventSum table      | 10.0.11      | InventUseDimOfInventSumToggle      |
-| Enable or disable using inventory dimensions on InventSumDelta table | 10.0.12      | InventUseDimOfInventSumDeltaToggle |
+|---|---|---|
+| Enable or disable using inventory dimensions on InventSum table      | 10.0.11 | InventUseDimOfInventSumToggle      |
+| Enable or disable using inventory dimensions on InventSumDelta table | 10.0.12 | InventUseDimOfInventSumDeltaToggle |
 
 ### <a name="setup-inventory-visibility-integration"></a>Set up Inventory Visibility integration
 
-1. In Dynamics 365 Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the *Inventory Visibility Integration* feature.
-1. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters**, and enter the URL of the environment where you're running Inventory Visibility, see [Find endpoint according to your LCS environment](inventory-visibility-power-platform.md#get-service-endpoint) for more details.
-1. Go to **Inventory Management \> Periodic \> Inventory Visibility Integration** and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
+1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the *Inventory Visibility Integration* feature.
+1. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters**, and enter the URL of the environment where you're running Inventory Visibility. For more information, see [Find the service endpoint](inventory-visibility-power-platform.md#get-service-endpoint).
+1. Go to **Inventory Management \> Periodic \> Inventory Visibility Integration**, and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
