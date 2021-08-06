@@ -1635,6 +1635,8 @@
           href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
         - name: Coverage time fences
           href: master-planning/planning-optimization/coverage-time-fence.md
+        - name: Net requirements and pegging information with Planning Optimization
+          href: master-planning/planning-optimization/net-requirements.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Firm planned orders
@@ -1713,6 +1715,8 @@
           href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
         - name: Collaborate with internal supply chain customers
           href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+        - name: Net requirements and pegging information with built-in master planning
+          href: master-planning/net-requirements-built-in-master-planning.md
       - name: Forecasting
         items:
         - name: Demand and supply forecasting
