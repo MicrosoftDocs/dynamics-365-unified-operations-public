@@ -33,7 +33,7 @@ Before you use the party and global address book functionality, make sure these 
     | Contact For Customer/Vendor | msdyn_contactforpartynumber [Contact For Party Number]<br>msdyn_associatedcompanyid.cdm_companycode [Associated Company (Company Code)] |
     | Vendor | msdyn_vendoraccountnumber [Vendor Account Number]<br>msdyn_company.cdm_companycode [Company (Company Code)]|
 
-+ Map versions. For more information, see [Party and global address book](party-gab#setup).
++ Map versions. For more information, see [Party and global address book](party-gab.md#setup).
 
 ## Error about Location ID key when you try to add an address
 
@@ -59,13 +59,13 @@ You might receive the following error message when you try to run **Customers**,
 
 *Customers V3 (accounts): Project validation failed. Missing destination field msdyn_billingaccount.accountnumber in the schema. Missing destination field msdyn_primarycontact.msdyn_contactforpartynumber in the schema.*
 
-There are multiple keys defined on the **msdyn_company** table in Dataverse. Dual-write cannot determine which key to use as integration key, and it randomly assigns one of the keys as integration key. To fix this issue, update the integration keys manually as described in step 8 of [Party and global address book](party-gab#setup). Then refresh the table mappings. The missing destination field error should disappear.
+There are multiple keys defined on the **msdyn_company** table in Dataverse. Dual-write cannot determine which key to use as integration key, and it randomly assigns one of the keys as integration key. To fix this issue, update the integration keys manually as described in step 8 of [Party and global address book](party-gab.md#setup). Then refresh the table mappings. The missing destination field error should disappear.
 
 ## Error that the Party ID is different between Finance and Operations apps and Dataverse
 
 You might receive an error message that the Party ID is different between a Finance and Operations app and Datavers for the **Customers**, **Vendors**, or **Contacts V2** maps.
 
-To fix this issue, use the latest version of maps as described in step 7 of [Party and global address book](party-gab#setup).
+To fix this issue, use the latest version of maps as described in step 7 of [Party and global address book](party-gab.md#setup).
 
 ## Errors when upgrading the Party and Global Address book solution
 
