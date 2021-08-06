@@ -64,7 +64,15 @@ For more information about how to download ER configurations from the Microsoft 
 You can generate a paper format of the **VAT 100** report by using the **Report sales tax for settlement period** dialog box.
 
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. 
-2. Specify 
+2. Select the settlement period in **Settlement period** field of the dialog.
+3. Specify starting date of the reporting period in **From date** field of the dialog.
+4. Select version of the VAT statment: 
 
-Alternatively, you can generate the statement for a selected sales tax payment transaction from the **Sales tax payments** page (**Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**). 
- 
+- Original - the include data of the first sales tax payment record in the period.
+- Corrections - to include data of the additional sales tax payment record(s) in the period for corrections.
+- Latest corrections - to include data of the not settled corrections in the reporting period.
+- Total list - to include data of the first sales tax payment record and additional sales tax payment record(s) for corrections in the reporting period.
+
+5. Click **OK** button to start VAT 100 report generation.
+
+Alternatively, you can generate the statement for specific sales tax payment record from the **Sales tax payments** page (**Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**) by using **Print report** button on the Action pane.
