@@ -1635,6 +1635,8 @@
           href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
         - name: Coverage time fences
           href: master-planning/planning-optimization/coverage-time-fence.md
+        - name: Net requirements and pegging information with Planning Optimization
+          href: master-planning/planning-optimization/net-requirements.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Firm planned orders
@@ -1713,6 +1715,8 @@
           href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
         - name: Collaborate with internal supply chain customers
           href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+        - name: Net requirements and pegging information with built-in master planning
+          href: master-planning/net-requirements-built-in-master-planning.md
       - name: Forecasting
         items:
         - name: Demand and supply forecasting
@@ -3525,6 +3529,10 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: You can't confirm a shipment because customer is on hold
+          href: troubleshooting/warehousing/customer-is-on-hold.md
+        - name: You can't confirm a shipment because load lines have quantity zero
+          href: troubleshooting/warehousing/load-line-quantity-is-zero.md
         - name: Can't update a load line because the released quantity would be negative
           href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
         - name: Canceled product receipts don't update transactions status to registered
