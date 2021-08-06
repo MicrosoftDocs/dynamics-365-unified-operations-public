@@ -82,7 +82,7 @@ You may want to embed a canvas app from the dashboard if the app isn't related t
 5.  Select **Save** to add the app to the dashboard as a new tile.
 6.  Select the new tile on the dashboard, and confirm that the canvas app appears as expected.  
 
-## Configuring a canvas app
+### Configuring a canvas app
 The following parameters need to be provided when embedding a canvas app. 
 
 - **Name** - Enter the text that should be shown for the button or tab that will contain the embedded app. Often, you may want to repeat the name of the app in this field.
