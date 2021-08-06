@@ -4,7 +4,7 @@
 title: GST declaration for New Zealand
 description: This topic explains how to configure and generate the GST return form GST101A for New Zealand.
 author: sndray
-ms.date: 07/30/2021
+ms.date: 08/06/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,55 +28,52 @@ ms.dyn365.ops.version: 10.0.22
 # GST declaration form GST101A for New Zealand (NZ-00003)
 
 [!include [banner](../includes/banner.md)]
-
-# Overview
+[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to set up and generate the GST return form GST101A for legal entities in New Zealand.
 
-The GST return form for New Zealand is the standard document that summarizes the total output GST tax amount due, the total input GST tax amount recoverable, and the related GST tax amount  liability. The form is used for all types of taxpayers and should be completed manually through the tax authority portal. The GST return form is commonly referred to as *Filing GST returns*.
+The GST return form for New Zealand is the standard document that summarizes the total output GST tax amount that's due, the total input GST tax amount that's recoverable, and the related GST tax amount liability. The form is used for all types of taxpayers and should be completed manually through the tax authority portal. The GST return form is commonly referred to as *Filing GST returns*.
 
 The GST return form in Dynamics 365 Finance includes the following reports:
 
-- GST return form GST101A, where the information is consolidated in two groups of boxes (1 to 4), GST on sales and GST on expenses as is described in the legislation. Legal entity details are printed in the top of the form. It includes the GST number, the period covered by the return, due date, mailing address and daytime phone number.
+- GST return form GST101A: Information is consolidated in to two groups of boxes (1 to 4), GST on sales and GST on expenses as described in the legislation. Legal entity details are printed on the top of the form. The form includes the GST number, the period covered by the return, the due date, the mailing address, and the daytime phone number.
  - Sales transactions details.
  - Purchase transaction details.
  
  ## Prerequisites
  
-The primary address of the legal entity must be in New Zealand. In the Feature management workspace, enable the following features
+The primary address of the legal entity must be in New Zealand. In the **Feature management** workspace, enable the following features:
 
-- **VAT statement format reports**.  This feature enables the setup and generation of VAT and or GST statements reports by using electronic reporting formats from **Tax > Declarations > Report sales tax for settlement period** or **Settle and post sales tax**.
-  
-For more information about how to enable features, see Feature management overview.
+  - **VAT statement format reports**: This feature enables the setup and generation of VAT and or GST statements reports by using electronic reporting formats from **Tax** > **Declarations** > **Report sales tax for settlement period** or **Settle and post sales tax**. For more information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-In the Electronic reporting workspace, import the following Electronic Reporting formats from the repository:
+In the **Electronic reporting** workspace, import the following Electronic reporting formats from the repository:
 
-- GST101A Declaration PDF(NZ)
+  - GST101A Declaration PDF(NZ)
 
 ## Import Electronic reporting configurations
 
-The implementation of the GST return form for New Zealand is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see Electronic reporting.
+Implementing the GST return form for New Zealand is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-To generate the GST return form and related reports in a New Zealand legal entity, you need to upload the following configurations Lifecycle Services (LCS) or the global repository:
+To generate the GST return form and related reports in a New Zealand legal entity, upload the following configurations from Lifecycle Services (LCS) or the global repository:
 
 - Tax declaration model version 96
 - Tax declaration model mapping version 96.167
-- GST101A Declaration PDF(NZ) version 96.4 or later version.
+- GST101A Declaration PDF(NZ) version 96.4 or later 
 
-After you've finished downloading the ER configurations complete the following steps.
+After you've finished downloading the ER configurations, complete the following steps.
 
 ## Set up application-specific parameters
-The GST declaration form includes a set of boxes (lines) that correspond to specific parts of the GST return declaration. Each box should include information about the base, adjustment, and GST amounts. To include the requirements established by the form, you must configure each box with the information that is automatically provided from the sales tax transactions generated from sales, purchases, or other operations where VAT tax is posted through the sales tax code configuration.
+The GST declaration form includes a set of boxes (lines) that correspond to specific parts of the GST return declaration. Each box should include information about the base, adjustment, and GST amounts. To include the requirements established by the form, configure each box with the information that's automatically provided from the sales tax transactions generated from sales, purchases, or other operations where VAT tax is posted through the sales tax code configuration.
 
 ![GST101A declararion.](media/apac-nzl-gst-declaration.JPG)
 
-**Box5 - Total sales and income for the period (including GST and any zero-rates supplies)**.  Per legal definition, this box includes the total amount of standard rated goods and services (including collected GST) sold during the related period. In this scenario we need to identify all standard and zero-rate tax transactions  with tax direction payable that were posted during the period of time selected. 
+**Box5 - Total sales and income for the period (including GST and any zero-rates supplies)**.  Per legal definition, this box includes the total amount of standard rated goods and services, including collected GST, sold during the related period. In this scenario. you need to identify all standard and zero-rate tax transactions with a paybale tax direction that were posted during the selected time selected. 
 
-The Application-specific parameters option let the users to establish the criteria of how the tax transactions will be collected and calculated in each box (line) of the declaration form when the report is generated depending on the configuration of sales tax code . Complete the following steps:
+The application-specific parameters option lets you to establish the criteria of how the tax transactions will be collected and calculated in each box of the declaration form when the report is generated depending on the configuration of sales tax code. Complete the following steps to set the criteria.
 
-1. In the Electronic reporting workspace, select the format and then select **Configurations > Setup** to set up the rules to identify the tax transaction into the related box of the GST return form.
-2. Select the current version. On the **Lookups** FastTab, select the lookup name **ReportFieldLookup**. This lookup identifies the list of boxes (lines) in the GST form required by tax authority.
-3. On the **Conditions** FastTab, select **Add**, and in the new line in the Lookup result column, select the related line of GST return form.
+1. In the **Electronic reporting** workspace, select the format, and then select **Configurations > Setup** to set up the rules to identify the tax transaction in the related box of the GST return form.
+2. Select the current version and on the **Lookups** FastTab, select the lookup name **ReportFieldLookup**. This lookup identifies the list of boxes in the GST form that are required by the tax authority.
+3. On the **Conditions** FastTab, select **Add**, and in the new line in the **Lookup result** column, select the related line of the GST return form.
 4. In the **Tax code (Code)** column, select the sales tax code that is used to calculate the related line of GST return form.
 5. In the **Name** column, select the tax transaction classification where the sales tax code is used.
 6. Repeat steps 3-5 for all GST return form boxes (lines) and the combination of sales tax code and tax transaction types configured in your legal entity.
