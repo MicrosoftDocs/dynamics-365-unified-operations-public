@@ -237,12 +237,14 @@ For more information about the predefined setup that is included in the data ent
 
 Starting from version 4 (KB4617940) **UK MTD VAT setup** package provides possibility to define VAT registration number of the company which must report VAT return by using MTD feature in Finance independently from the primary address and Registration ID defined for the legal entity. This possibility is enabled with **Tax registration number** additional field and allows for legal entites with multiple VAT registration to easily submit their VAT return specific to their VAT registration in the UK. For more information about supporting filing for multiple VAT registrations, see [Multiple VAT registration numbers](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers).
 
-To define VAT registration number (VRN) which must be used by MTD feature in Finance to interoperate with HMRC's MTD VAT API and submit VAT return for follow the next steps.
+To define VAT registration number (VRN) which must be used by MTD VAT feature in Finance to interoperate with HMRC's MTD VAT API and submit VAT return for follow the next steps.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**. 
 2. Select **UK MTD VAT returns** processing.
 3. On the **Message additional fields** fast tab, in the **Tax registration number** field, define the VRN from the name of which the VAT return will be sent to HMRC.
 4. Save your settings.
+
+In case VRN is not specified in **Tax registration number** additional field of the **UK MTD VAT returns** processing, system retrieves VRN from **Registration ID** defined in the properties of the legal entity (**Organization administration** \> **Global Address Book** \> **Legal entities**)  that is associated with the registration category of **VAT ID**. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
 
 ## <a id="format"></a>Paper format of VAT statement (VAT 100)
 
