@@ -300,11 +300,11 @@ Technical Support is available in markets where Dynamics 365 Finance and Operati
 
 Microsoft offers VL customers three support plans: Premier, Professional Direct, and the support included in the subscription. The level of support differs per plan and highlights are provided in the following table.
 
-| Service feature | Premier | Professional direct  | Subscription |
+| Support feature | Premier | Professional direct  | Subscription |
 |-----------------|-------------|-----------------|--------------|
-| Unlimited break/fix incidents | N/A | N/A | N/A |
-| 24x7 support | N/A | N/A | Local business hours |
-| Fastest response times | &lt;1 hour | &lt;1 hour | Next business day |
+| Unlimited break/fix incidents | Yes | Yes | Yes |
+| 24x7 access via LCS | Yes | Yes | Yes |
+| Incident response time | &lt;1 hour | &lt;1 hour | Next business day |
 | Advisory hours | Pools acquired per agreement | N/A | N/A |
 | Dedicated Support Account Manager | Yes | N/A | N/A |
 
