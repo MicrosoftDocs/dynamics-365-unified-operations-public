@@ -251,7 +251,7 @@ Microsoft responds to and resolves incidents based on the severity levels set fo
 
 | Classification | Description |
 |-------------------------|-------------------------|
-| **Severity 0 (Sev-0)**</br>Catastrophic | <ul><li>Catastrophic event in which all functions of a service in a region are down or inaccessible.</br><br>**Note:** Sev-0 incidents normally start as Sev-1, then get upgraded with management approval based on assessment of impact type/scope. |
+| **Severity 0</br>(Sev-0)**</br>Catastrophic | <ul><li>Catastrophic event in which all functions of a service in a region are down or inaccessible.</br><br>**Note:** Sev-0 incidents normally start as Sev-1, then get upgraded with management approval based on assessment of impact type/scope. |
 | **Severity 1 (Sev-1)**</br>Critical | <ul><li>Severe outage of a service caused by confirmed systemic problem, resulting in a broad scope of impact, requiring a Technical Control Bridge and engagement from applicable engineering teams.</li></br><li>Suspected breach of a security or privacy boundary. |
 |**Severity 2 (Sev-2)**</br>Urgent| <ul><li>Service outage with narrow scope of impact (&gt; 25% customers).</br><li>Degradation of customer experience caused by confirmed systemic event with broad scope (&gt; 25% customers).</br><li>Service outage with limited scope of impact (single organization or subset of users). |
 |**Severity 3 (Sev-3)**<br>Moderate | <ul><li> Degradation of customer experience caused by confirmed systemic event with narrow scope. |
