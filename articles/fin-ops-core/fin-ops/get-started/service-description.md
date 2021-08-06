@@ -298,11 +298,11 @@ Technical Support is available in markets where Dynamics 365 Finance and Operati
  - [Integrated technical](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/support-experience) support within Finance and Operations
  - LCS [Cloud Powered Support](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/cloud-powered-support-lcs)
 
-Microsoft offers VL customers three support plans: Premier, Professional Direct, and the support included in the subscription. The level of support differs per plan and highlights are provided in the following table.
+Microsoft offers Finance and Operations customers three support plans: Premier, Professional Direct, and the support included in the subscription. The level of support differs per plan and highlights are provided in the following table.
 
 | Support feature | Premier | Professional direct  | Subscription |
 |-----------------|-------------|-----------------|--------------|
-| Unlimited break/fix incidents | Yes | Yes | Yes |
+| Unlimited break/fix incident submission | Yes | Yes | Yes |
 | 24x7 access via LCS | Yes | Yes | Yes |
 | Incident response time | < 1 hour | < 1 hour | Next business day |
 | Advisory hours | Pools acquired per agreement | No | No |
