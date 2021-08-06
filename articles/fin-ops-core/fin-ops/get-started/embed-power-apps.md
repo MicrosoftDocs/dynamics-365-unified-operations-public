@@ -94,17 +94,17 @@ The following parameters need to be provided when embedding a canvas app.
 
 ## Sharing an embedded app
 
-After you've embedded a canvas app on a page and confirmed that it's working correctly with any data context that is passed from that page, you might want to share the app with other users in the system. To share an embedded canvas app, follow these steps.
+After you've embedded a canvas app on a page and confirmed that it's working correctly, you might want to share the app with other users in the system. To share an embedded canvas app, follow these steps.
 
-1. [Share the canvas app](/powerapps/maker/canvas-apps/share-app) with the appropriate users, so that they can access the app in Power Apps. 
+1. [Share the canvas app in Power Apps](/powerapps/maker/canvas-apps/share-app) with the appropriate users, so that they can access the app directly in Power Apps. 
 
-2. Make sure that the targeted users have the appropriate personalizations, so that the embedded app appears when those users view the page. You can use either of the following approaches:
+2. Share the personalizations associated with the embedded app with the desired. You can use either of the following approaches:
 
-    -   Publish the view (Recommended): If the [Saved views](saved-views.md) feature has been turned on, the recommended and preferred way to create a view with the embedded app and publish that view to the desired users. This approach ensures that all users who have the security roles that are targeted by the published view will see the canvas app in Finance and Operations apps.
+    -   **Publish the view (Recommended)**: If the [Saved views](saved-views.md) feature has been turned on, the recommended and preferred approach is to create a view with the embedded canvas app and publish that view to the desired users. This approach ensures that all users who have the security roles that are targeted by the published view will see the canvas app on that page.
 
-        You can also publish a canvas app that has been embedded as a full-page experience from the dashboard. On the dashboard, select and hold (or right-click) the tile that is associated with the app, select **Personalize**, and then select **Publish page**. Currently, you can publish only to security roles. However, the capability to publish to legal entities will be added before the feature becomes generally available.
+        You can also publish a canvas app that has been embedded as a full-page experience from the dashboard. On the dashboard, select and hold (or right-click) the tile that is associated with the app, select **Personalize**, and then select **Publish page**. An experience similar to the *Publishing views* experience is shown, allowing you to select the security roles you want to publish to. In update 10.0.21 or later, if the **Improved legal entity support for saved views** feature is turned on, you can also publish the app to the desired legal entities.
  
-    - If you don't have the Saved views feature turned on, you can have the system admin push a personalization that includes the embedded app to all users or a subset of users. Alternatively, you can export your page's personalizations, and send them to one or more users. Each of those users can then import the personalizations. The personalization toolbar has actions that let you export and import personalizations. 
+    - If you don't have the Saved views feature turned on, the system admin can give a personalization that includes the canvas app to the appropriate set of users via the Personalization page. Alternatively, you can export your page's personalizations and send them to one or more users. Each of those users can then import the personalization. The personalization toolbar has actions that let you export and import personalizations. 
     
 > [!NOTE]
 > If the canvas app has been shared with external users, those users can't use the embedded app inside Finance and Operations apps. However, they can access the app directly inside Power Apps. External users include guests and users who don't belong to the Microsoft 365 Azure Directory where the Finance and Operations app is deployed.
@@ -137,14 +137,16 @@ Follow these steps to edit the configuration of an embedded app:
 
     - If the embedded app is accessed through the Power Apps menu button, right-click on the Power Apps menu button and select **Personalize**. Select the app that you want to configure from the **Select an app** drop-down menu.
     - If the embedded app appears directly on the page, select **Options**, and then select **Personalize this page**. Using the **Select** tool, click the embedded app.
+    - If the embedded app was added from the dashboard, open the dashobard, right-click (or select and hold) the tile that is associated with the canvas app, select **Personalize**, and finally select **Edit page**.
 
 2. Make the needed modifications to the app configuration, and then click **Save**.
 
 ## Removing an app
 
-After an app has been embedded onto a page, there are two ways to remove it if needed:
+After an app has been embedded onto a page, there are a few ways to remove it if needed:
 
 - Go to the **Edit an app** pane using the instructions from the [Editing an embedded app](#editing-an-embedded-app) section earlier in this topic. Confirm that the pane displays information for the embedded app that you would like to remove, and then click the **Delete** button.
+- If the embedded app was added from the dashboard, open the dashobard, right-click (or select and hold) the tile that is associated with the canvas app, select **Personalize**, and finally select **Remove page**. 
 - Because the embedded app is saved as personalization data, clearing your page's personalization will also remove any embedded apps on that page. Note that clearing the page's personalization is permanent and cannot be undone. To remove your personalizations on a page, select **Options**, and then **Personalize this page**, and finally the **Clear** button. After refreshing your browser, all the previous personalizations for this page will be removed. See [Personalize the user experience](personalize-user-experience.md) for more information about how to optimize pages using personalization.
 
 ## Appendix
