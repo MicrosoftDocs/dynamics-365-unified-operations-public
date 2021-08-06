@@ -91,11 +91,11 @@ To ensure that an implementation is configured for high performance, customers m
 
 Typical onboarding and implementation events are as follows:
 
-| Request | Expected Microsoft action  | Expected customer/implementation partner action |
+| Request | Expected Microsoft action  | Expected Customer/Implementation Partner action |
 |-------------------------|-------------------------|-------------------------|
-| Initial offer purchase | LCS project is created after the purchase of the offer based on event triggered by the customer. | Go through EA or CSP onboarding process. Partner creates tenant for customer, if applicable. |
+| Initial offer purchase | LCS project is created after the purchase of the offer based on event triggered by the customer. | Go through EA or CSP [commercial process](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/before-you-buy). Partner creates tenant for customer, if applicable. |
 | Add-on purchase | Grant customer access to add-on selected during the implementation. | Not applicable. |
-| Implementation planning and analysis | Provide relevant tools in LCS, such as Business process modeler and interoperability with Azure DevOps. |Project planning, Azure DevOps, System onboarding and admin account setup.|
+| Implementation planning and analysis | Provide relevant tools in LCS, such as [Business Process Modeler](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/bpm-overview) and [interoperability with Azure DevOps](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/synchronize-bpm-vsts). |Project planning, Azure DevOps, System onboarding and admin account setup.|
 
 For more information, see [Onboarding an implementation project](../imp-lifecycle/onboard.md).
 
