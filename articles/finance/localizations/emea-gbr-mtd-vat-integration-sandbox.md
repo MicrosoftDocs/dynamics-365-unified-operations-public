@@ -224,5 +224,4 @@ If, for some reason, the **Import response for VAT return** action isn't automat
 
 The **Action log** FastTab saves information about all the actions that are performed for the electronic message.
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
