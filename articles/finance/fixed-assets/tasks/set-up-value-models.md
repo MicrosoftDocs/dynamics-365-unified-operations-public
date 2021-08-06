@@ -52,14 +52,6 @@ This procedure shows you to how create a new fixed asset book and associate it w
 2. In the Fixed asset group field, enter or select a value.
 3. In the Service life field, enter a number.
 
->  When a lease is associated with a fixed asset, the **Service life** field on the fixed asset book will be updated to align with the smallest value among the following: 
-
-  - The asset’s useful life
-  - The lease term from the associated lease book
-  - The asset’s useful life if the **Transfer of ownership** field is enabled for the lease book 
- 
- The Service life will be updated every time the lease is adjusted to ensure that the right-of-use asset is depreciated over the term lease, as if it were depreciated in Asset leasing.
-
   - Note that Depreciation periods are calculated after the service life of the asset is entered.  
   - The depreciation convention can be set as required for tax purposes.
   - Note that for fixed assets that are associated with leases, the value in the **Service life** field will be overridden by either the lesser of the lease book’s lease term or asset’s useful life, or the asset’s useful life if the Transfer of ownership field is enabled for the lease book.
