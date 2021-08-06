@@ -145,8 +145,8 @@ LCS provides [self-service provisioning](https://docs.microsoft.com/en-us/dynami
 - Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configurations (such as integration endpoints), and enable or add users. Note that these changes are made by applying a [data package](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages#import-a-data-package).
 
 **Event:** [Non-production instance database point-in-time restore](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore)
-Accept that the process cannot be undone.
-Run the point-in-time restore operation in LCS.
+- Accept that the process cannot be undone.
+- Run the point-in-time restore operation in LCS.
 
 **Event:** Copy Tier 2 sandbox database to a development sandbox for troubleshooting and [debugging](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-debugdiag)  
 - Run database export operation in LCS on the Tier 2 sandbox environment.
