@@ -35,35 +35,35 @@ ms.dyn365.ops.version: AX 10.0.12
 
 Before you complete the procedures in this topic, the following prerequisites must be in place:
 
-- You must have access to your Microsoft Dynamics Lifecycle Services (LCS) account.
-- You must have an LCS project that includes version 10.0.17 or later of Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Additionally, these apps must be deployed in one of the following Azure geographies:
+- You must have an access to your Microsoft Dynamics Lifecycle Services (LCS) account.
+- You must have an LCS project that includes version 10.0.17 or later of Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. Additionally, these apps must be deployed in one of the following Azure geographies:
 
     - United States
     - Europe
     - United Kingdom
     - Asia
 
-- You must have access to your Dynamics 365 Regulatory Configuration Services (RCS) account.
+- You must have an access to your Dynamics 365 Regulatory Configuration Services (RCS) account.
 - You must activate the Globalization feature for your RCS account in Feature management. For more information, see [Regulatory Configuration Services (RCS) - Globalization features](rcs-globalization-feature.md).
 - You must create a key vault and a storage account in Azure. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
 ## Install the add-in for microservices in Lifecycle Services
 
 1. Sign in to your LCS account, and on the LCS project dashboard, select an LCS project.
-2. In the project, on the environment dashboard, select your LCS deployment project. The project you select must must be running.
+2. In the project, on the **Environments** dashboard, select your deployed environment. The environment you select must be running.
 3. On the **Power Platform Integration** tab, in the **Environment add-ins** field group, select **Install a new add-in**.
 4. Select **Electronic Invoicing**.
 5. In the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This is a fixed value.
-6. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account.
+6. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account. The same AAD tenant should be specified as used for Regulatory Configuration Services (RCS).
 7. Review the terms and conditions, and then select the check box.
-8. Select **Install**.
+8. Select **Install**. It can take up to several minutes to install.
 
 
 ## Set up the parameters for RCS integration with Electronic invoicing
 
 1. Sign in to your RCS account.
-2. In the **Electronic reporting** workspace, in the **Related links** section, select **Electronic reporting parameters**.
-3. On the **e-Invoicing service** tab, in the **Service endpoint URI** field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.
+2. In the **Globalization features** workspace, in the **Related settings** section, select **Electronic reporting parameters**.
+3. On the **Electronic Invoicing** tab, in the **Service endpoint URI** field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.
 
     | Datacenter Azure geography | Service endpoint URI                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -80,7 +80,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 1. Sign in to your RCS account.
 2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing** tile.
-3. On the **Environment setups** page, on the action Pane, select **Service environment**, and then select **Key Vault parameters**.
+3. On the **Environment setups** page, on the action Pane, select **Service environments**, and then select **Key Vault parameters**.
 4. Select **New** to create a key vault reference.
 5. In the **Name** field, enter the name of the key vault reference. In the **Description** field, enter a description.
 6. In the **Key Vault URI** field, paste the key vault secret from Azure Key Vault. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -126,7 +126,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Create a connected application
 
-1. On the **Environment setups** page, on the action Pane, select **Connected applications**.
+1. On the **Environments setup** page, on the action Pane, select **Connected applications**.
 2. Select **New** to create a connected application.
 3. In the **Name** field, enter the name of the application to connect.
 4. In the **Application** field, enter the URL of the Finance and Supply Chain Management environment to connect.
@@ -136,12 +136,12 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Link connected applications to environments
 
-1. On the **Environment setups** page, select **New** to assign a connected application to an environment.
+1. On the **Environments setup** page, select **New** to assign a connected application to an environment.
 2. In the **Connected application** field, select a connected application.
 3. In the **Service environment** field, select a service environment.
 4. Select **Save**, and then close the page.
 
-## Set up Electronic invoicing integration in Finance and Supply Chain Management
+## Set up Electronic invoicing integration in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
 
 ### Turn on the Electronic invoicing integration feature
 
@@ -152,7 +152,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 ### Set up the service endpoint URL
 
 1. Go to **Organization administration \> Setup \> Electronic document parameters**.
-2. On the **Submission service** tab, in the **Service endpoint URL** field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.
+2. On the **Electronic invoicing** tab, in the **Endpoint URL** field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.
 
     | Datacenter Azure geography | Service endpoint URI                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -164,9 +164,8 @@ Before you complete the procedures in this topic, the following prerequisites mu
 3. In the **Environment** field, enter the name of the service environment published in Electronic invoicing.
 4. Select **Save**, and then close the page.
 
-### Enable Flighting keys
+### Enable Flighting keys for  Microsoft Dynamics 365 Finance or  Microsoft Dynamics 365 Supply Chain Management versions 10.0.17
 
-Enable Flight keys for  Microsoft Dynamics 365 Finance or  Microsoft Dynamics 365 Supply Chain Management versions 10.0.17 or earlier. 
 1. Execute the following SQL command:
 
     INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)
