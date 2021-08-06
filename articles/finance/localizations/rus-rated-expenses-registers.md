@@ -57,7 +57,7 @@ The sequence of calculation contains counters that implement several arithmetic 
 
 Complete the following steps to create a sequence of calculation for rated expenses.
 
-1. Create and set up the tax register **Standard expenses in current period** as described in Profit tax registers journal topic.
+1. Create and set up the tax register **Standard expenses in current period** as described in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 2. Create expense codes for normalization. For more information, see [Expense and income codes](rus-expense-and-income-codes.md#create-an-expense-or-income-code).
 3. Go to **Tax** > **Setup** > **Profit Tax** > **Sequence of calculation**.
 4. On the Action Pane, select **New** to create a new sequence.
@@ -87,7 +87,7 @@ Complete the following steps to create a sequence of calculation for rated expen
 
 ## Standard expenses in current period register
 
-Calculate the tax register as described in Profit tax registers journal.
+Calculate the tax register as described in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#calculate-and-print-tax-registers).
 
 The **Standard expenses in current period** register reflects information about the expenses of the current period, their rated part, and the part that exceeds the standard.
 
