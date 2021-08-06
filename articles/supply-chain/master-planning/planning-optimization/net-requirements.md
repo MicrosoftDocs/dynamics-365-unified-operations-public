@@ -96,7 +96,7 @@ Next, you will open the **Net requirements** page for product *1000* to review h
     | Sales order | -25.00 | (Blank) |
 
     > [!NOTE]
-    > The **Requirement quantity** field represents the total quantity that the requirement either requires (if the value is negative) or supplies (if the value is positive). The **Accumulated** field represents the total receipt and issue quantities that accumulated up to the selected period.
+    > The **Requirement quantity** field represents the total quantity that the requirement either requires (if the value is negative) or supplies (if the value is positive). The **Accumulated** field represents the total receipt and issue quantities that accumulated up through the selected period.
 
 1. Select the *On-hand* requirement line, and then, on the **Pegging** FastTab, review the requirements that are covered by this supply. The following row should appear there.
 
