@@ -123,7 +123,7 @@ These topics describe mapping between concepts in finance and operations apps an
 + [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md)
 + [Troubleshoot issues related to solution awareness](dual-write-troubleshooting-solution-awareness.md)
 + [Troubleshoot issues from upgrades of Finance and Operations apps](dual-write-troubleshooting-finops-upgrades.md)
-+ [Troubleshoot Party and global address book problems](dual-write-troubleshooting-party-gab.md)
++ [Troubleshoot party and global address book problems](dual-write-troubleshooting-party-gab.md)
 + [General troubleshooting](dual-write-troubleshooting.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
