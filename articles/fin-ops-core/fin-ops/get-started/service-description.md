@@ -304,9 +304,10 @@ Microsoft offers VL customers three support plans: Premier, Professional Direct,
 |-----------------|-------------|-----------------|--------------|
 | Unlimited break/fix incidents | Yes | Yes | Yes |
 | 24x7 access via LCS | Yes | Yes | Yes |
-| Incident response time | &lt;1 hour | &lt;1 hour | Next business day |
-| Advisory hours | Pools acquired per agreement | N/A | N/A |
-| Dedicated Support Account Manager | Yes | N/A | N/A |
+| Incident response time | < 1 hour | < 1 hour | Next business day |
+| Advisory hours | Pools acquired per agreement | No | No |
+| Dedicated Support Account Manager | Yes | No | No |
+| Dedicated Support Engineer | Engaged under separate agreement | No | No |
 
 For more details, refer to [Support Overview](https://docs.microsoft.com/en-us/power-platform/admin/support-overview)
 
