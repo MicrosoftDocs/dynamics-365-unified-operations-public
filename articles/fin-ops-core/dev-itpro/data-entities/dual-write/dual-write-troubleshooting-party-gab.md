@@ -63,7 +63,7 @@ There are multiple keys defined on the **msdyn_company** table in Dataverse. Dua
 
 ## Error that the Party ID is different between Finance and Operations apps and Dataverse
 
-You might receive an error message that the Party ID is different between a Finance and Operations app and Datavers for the **Customers**, **Vendors**, or **Contacts V2** maps.
+You might receive an error message that the Party ID is different between a Finance and Operations app and Dataverse for the **Customers**, **Vendors**, or **Contacts V2** maps.
 
 To fix this issue, use the latest version of maps as described in step 7 of [Party and global address book](party-gab.md#setup).
 
@@ -75,7 +75,7 @@ The party and global address book functionality was part of the dual-write orche
 
 The Party and Global Address Book package contains the following solutions.
 
-+ **Party** - Includes all the new party, postal address, and electronic address related schema.
++ **Party** - Includes the schemas for party, postal address, and electronic address.
 + **Dynamics365GABExtended** - Includes all code and schema changes to support **Accounts**, **Vendors**, **Contacts**, and **Contact** for party functionality. This support was separated from the **Dynamics365FinanceExtended** and **Dynamics365SupplyChainExtended** solutions.
 + **Dynamics365GABDualWriteEntityMaps** - Includes all the dual-write mapping changes required for global address book functionality.
 + **Dynamics365GABParty_Anchor**
