@@ -149,7 +149,7 @@ Before you complete this procedure, you must create expense codes. For more info
 
 ### <a name="difference">Set up tax differences registers</a>
 
-Create the registers of temporary and constant tax differences for one of the calculation methods, as described in Profit tax registers journal.
+Create the registers of temporary and constant tax differences for one of the calculation methods, as described in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 Follow these steps to set up the **Calculation of temporary tax differences by balance method** and **Calculation of temporary tax differences** tax registers.
 
 1. Go to **Tax** > **Setup** > **Profit tax** > **Registers**.
