@@ -200,7 +200,7 @@ The following table describes some typical scenarios and activities for the serv
 
 ### Service update strategy and maintenance windows 
 
-Customers must stay current on the latest service updates in accordance with the [software lifecycle policy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy). Finance and Operations follows the Microsoft [Modern Lifecycle Policy](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#modern-lifecycle-policy), which covers products that are serviced and supported continuously. The following illustrates the process:
+In accordance with the [software lifecycle policy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy). Finance and Operations follows the Microsoft [Modern Lifecycle Policy](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#modern-lifecycle-policy), which covers products that are serviced and supported continuously. The following illustrates the process:
  
 ![One Version](media/FO-OneVersion.PNG)
 
