@@ -111,6 +111,10 @@ When the default named ER destination is available for an ER format, it can be u
 
 You can select any of existing named destinations as a template for making a new named destination. To create a new nemed ER destination based on the selected named one, select **Copy** on the **Electronic reporting named destination** page. A new destination that is named as the selected one with added suffix **Copy** is added. You can repeat this step many times if needed.
 
+## Security considerations
+
+You can set up named ER destinations on the **Print management setup** page only when you have [permission](../sysadmin/role-based-security.md#permissions) for doing this. This permission can be granted to you by assigning to one of your [security roles](../sysadmin/role-based-security.md#security-roles) the [duty](../sysadmin/role-based-security.md#duties) **Configure electronic reporting format destination**. For more, see the [Security considerations](electronic-reporting-destinations.md#security-considerations) section of the [Electronic reporting (ER) destinations](electronic-reporting-destinations.md) article.
+
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
