@@ -52,7 +52,7 @@ Support for SCA is provided by the out-of-box [Dynamics 365 Payment Connector fo
 
 ## Setup
 
-Setup details will vary by payment connector. For setup details related to the out-of-box Adyen connector, see the [e-Commerce section](./dev-itpro/adyen-connector.md?tabs=8-1-3#e-commerce) of the Adyen connector topic. 
+Setup details will vary by payment connector. For setup details related to the out-of-box Adyen connector, see [Configure additional information for the Adyen connector](./dev-itpro/adyen-connector-setup.md#configure-additional-information-for-the-connector). 
 
 ## Functional experience
 

@@ -39,7 +39,7 @@ This container pattern is used to show actions above a subpattern of data fields
 
 ## Wireframe
 
-[![Wireframe for Toolbar and Fields subpattern](./media/toolbarfields1.png)](./media/toolbarfields1.png)
+[![Wireframe for Toolbar and Fields subpattern.](./media/toolbarfields1.png)](./media/toolbarfields1.png)
 
 ## Model
 ### High-level structure
@@ -81,7 +81,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **HcmPosition** **(WorkerAssignmentTabPage)** 
 
-[![Example of Toolbar and Fields subpattern](./media/toolbarfields2-1024x131.png)](./media/toolbarfields2.png)
+[![Example of Toolbar and Fields subpattern.](./media/toolbarfields2-1024x131.png)](./media/toolbarfields2.png)
 
 ## Resources
 ### Typically used by patterns
@@ -105,7 +105,7 @@ This section will have answers to frequently asked questions that are related to
 
 **HcmPosition** 
 
-![Toolbar and Fields in previous version](./media/toolbarfields3.png)
+![Toolbar and Fields in previous version.](./media/toolbarfields3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

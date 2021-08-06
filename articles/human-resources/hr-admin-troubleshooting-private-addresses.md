@@ -43,7 +43,7 @@ To resolve the issue, the customer must follow these steps for the duplicated se
 2. On the **Private location security** tab, move the new security role from the **Available roles** list to the **Selected roles** list.
 3. Select **Save**.
 
-![Global address book parameters page](media/GAD-parameters.png)
+![Global address book parameters page.](media/GAD-parameters.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -82,7 +82,7 @@ The configuration to turn on this feature is completed at the register level.
 2. Select the relevant register, and then select **Edit**.
 3. On the **General** FastTab, in the **Card not present processing** field, select **Use retail server**. (By default, this field is set to **Use hardware station**.)
 
-    ![Card not present processing field](media/PAYMENTS/CNP-POS.png)
+    ![Card not present processing field.](media/PAYMENTS/CNP-POS.png)
 
 4. Select **Save**.
 5. After the change is saved, run the **1090** distribution schedule to sync the changes to the POS.

@@ -50,7 +50,7 @@ Follow these steps to create main accounts for the GST posting type.
 6. On the **Setup** FastTab, in the **Posting type** field, select **GST**.
 7. Repeat steps 2 through 6 to create all the required state-wide ledger accounts.
 
-![Main accounts for the GST posting type](media/Create-main-accounts-for-the-GST-posting-type.png)
+![Main accounts for the GST posting type.](media/Create-main-accounts-for-the-GST-posting-type.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

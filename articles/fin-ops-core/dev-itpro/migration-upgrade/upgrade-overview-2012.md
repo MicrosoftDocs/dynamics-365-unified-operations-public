@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 to Finance and Operations 
 description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations.
 author: LaneSwenka
-ms.date: 06/22/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -16,7 +16,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry:
 ms.author: laswenka
@@ -38,7 +38,6 @@ Finance and Operations apps provide an upgrade path that customers who currently
 > [!IMPORTANT]
 > Dynamics AX 2012 implementations that are running some [deprecated features](deprecated-features.md) cannot currently be upgraded. For example, upgrade is not possible from systems that are using either virtual companies or data partitions. If you aren’t sure whether your system can be upgraded, run the Upgrade analyzer tool. 
 
-> [!NOTE]
 > Start your cloud migration journey with a no-charge, no-obligation migration assessment though the [Dynamics 365 Migration Program](https://dynamics.microsoft.com/migration-program/).
 
 ## Overview
@@ -47,7 +46,7 @@ The overall upgrade process can be visualized as three overarching phases: Analy
 
 The following diagram shows the end-to-end upgrade process, and the activities that we consider part of each phase. 
 
-![Upgrade process](./media/upgrade-process.png)
+![Upgrade process.](./media/upgrade-process.png)
 
 To learn the most important elements and best practices for successfully upgrading your Dynamics AX 2012 solution to Finance and Operations apps, see [Upgrade Dynamics AX 2012 to Finance and Operations apps](/learn/paths/upgrade-ax-2012-finance-operations/).
 
@@ -103,11 +102,11 @@ During the Execute phase, you work through the tasks that you planned during the
 ### Switch to the LCS implementation project
 The public preview project that you used for the Analyze phase has served its purpose. You can now discard it. For the remaining steps, you require only the project plan that you created in the final step of the Analyze phase.
 
-When you purchase a subscription, you will receive details about how to sign up for a new LCS project. This project is known as an implementation project and will be the new permanent LCS project for your subscription, for as long as you have that subscription. This project differs from the public preview project in that it's managed by Microsoft. Therefore, this project has these characteristics:
+When you purchase a Finance and Operations subscription, you will receive details about how to sign up for a new LCS project. This project is known as an implementation project and will be the new permanent LCS project for your tenant, for as long as you have that subscription. This project differs from the public preview project in that it's managed by Microsoft. Therefore, this project has these characteristics:
 
-- All environments in the project are hosted in Azure.
-- The Azure subscription that is associated with the project is managed by Microsoft. Therefore, there is no separate billing for Azure costs. The costs are covered by your subscription.
-- The production environment in the project is maintained by Microsoft. Therefore, code deployments, upgrades, and infrastructure maintenance are run directly by Microsoft, not by your staff. 
+- This project supports deployment of Sandbox and Production type environments.
+- The Sandbox and Production type environments are maintained and patched by the Microsoft team, not your staff.
+- All DevTest or Demo environments must still be deployed on an Azure subscription.  It is recommended to redeploy these environments from your LCS Implementation project so that they are all contained in the same project as your sandbox and production environments. 
 
 ### Identify the project as an AX 2012 upgrade
 When you first sign in to your LCS implementation project, you're guided through the **Project Onboarding** wizard. You can always visit the **Project Onboarding** wizard later using the navigation menu next to **Project Settings** in your project.
@@ -132,7 +131,7 @@ After your code upgrade tasks are completed, you can upgrade your database for t
 
 The following illustration shows the process. Just back up the AX 2012 database, upload it to Azure, restore it to the Finance and Operations environment, and then run the data upgrade.
 
-![Data upgrade in a development environment](./media/data-upgrade-dev.png)
+![Data upgrade in a development environment.](./media/data-upgrade-dev.png)
  
 Data upgrade is done through a special type of deployable package. The same mechanism is used to deploy new code from one environment to another environment.
 
@@ -140,14 +139,20 @@ The underlying framework that is used to convert the data in the database during
 
 For details, see [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md).
 
+> [!NOTE]
+> If you are using Commerce functionality and in-store components as part of the AX 2012 R3 upgrade, we recommend that you review the Dynamics 365 Commerce [Phased rollout (N-1) installation, configuration, and cutover guide](../../../commerce/dev-itpro/n-1-installation-configuration.md). For development environments, the user will need to initialize retail parameters, reinitialize the CDX schedule, and then after applying the data upgrade package, the latest quality updates and channel extensions will need to be applied to the environment. 
+
 ### Data upgrade (sandbox environments)
 When data upgrade in a development environment is completed, the same process can be run in a sandbox environment. The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
 
 The following illustration shows the process for running data upgrade in a sandbox environment. The difference here is that the bacpac tool is used instead of a traditional SQL backup. This tool is required in order to convert between Microsoft SQL Server and Azure SQL Database. It's a standard SQL tool, and isn't specific to Finance and Operations.
 
-![Data upgrade in a sandbox environment](./media/data-upgrade-sandbox.png)
+![Data upgrade in a sandbox environment.](./media/data-upgrade-sandbox.png)
 
 For details, see [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md).
+
+> [!NOTE]
+> If you are using Commerce functionality and in-store components as part of the AX 2012 R3 upgrade, we recommend that you review the Dynamics 365 Commerce [Phased rollout (N-1) installation, configuration, and cutover guide](../../../commerce/dev-itpro/n-1-installation-configuration.md). For sandbox and development environments, the user will need to initialize retail parameters, reinitialize the CDX schedule, and then reinitialize the CSU after data upgrade. For more information about reinitializing the CSU, see [Initialize Commerce Scale Unit (cloud)](../deployment/Initialize-Retail-Channels.md).
  
 ## Validate
 When you enter the Validate phase, you will have available environments that include your upgraded custom code and your upgraded data. This phase describes the process of validating and testing that the upgraded environment works as desired. It also describes the process of preparing for go-live.

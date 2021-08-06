@@ -4,7 +4,7 @@
 title: Buy box module
 description: This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-The term *buy box* typically refers to the area of a product details page that is "above the fold," and that hosts all the most important information that is required to make a product purchase. (An area that is "above the fold" is visible when the page is first loaded, so that users don't have to scroll down to see it.)
+The term *buy box* typically refers to the area of a product details page (PDP) that is "above the fold," and that hosts all the most important information that is required to make a product purchase. (An area that is "above the fold" is visible when the page is first loaded, so that users don't have to scroll down to see it.)
 
 A buy box module is special container that is used to host all the modules that are shown in the buy box area of a product details page.
 
@@ -40,7 +40,7 @@ The URL of a product details page includes the product ID. All the information t
 
 The following image shows an example of a buy box module on a product details page.
 
-![Example of a buy box module](./media/ecommerce-pdp-buybox.PNG)
+![Example of a buy box module.](./media/ecommerce-pdp-buybox.PNG)
 
 ## Buy box module properties and slots 
 
@@ -72,14 +72,16 @@ The following buy box module settings can be configured at **Site Settings \> Ex
 
 - **Cart line quantity limit** – This property is used to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
-- **Add product to cart** - This property is used to specify the behavior after an item is added to the cart. The possible values are **Navigate to cart page**, **Do not navigate to cart page**, and **Show notification**. When the value is set to **Navigate to cart page**, users are sent to the cart page after they add an item. When the value is set to **Do not navigate to cart page**, users aren't sent to the cart page after they add an item. When the value is set to **Show notification**, users are shown a confirmation notification and can continue to browse on the product details page. 
+- **Add product to cart** – For information about how to apply **Add product to cart** settings, see [Add product to cart settings](add-cart-settings.md).
+
+## Buy box module definition extensions in the Adventure Works theme
+
+The buy box module that the Adventure Works theme provides has a module definition extension that supports implementation of a product specifications module within an accordion module in a PDP buy box. To showcase product specification attributes in a PDP buy box, add a product specification module to the accordion module slot in the buy box slot.
+
 
 > [!IMPORTANT]
-> The **Add product to cart** site settings are available in the Dynamics 365 Commerce 10.0.11 release. If you are updating from an older version of Dynamics 365 Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> The Adventure Works theme is available as of the Dynamics 365 Commerce version 10.0.20 release.
 
-The following image shows an example of an "added to cart" confirmation notification on the Fabrikam site.
-
-![Example of a notification module](./media/ecommerce-addtocart-notifications.PNG)
 
 ## Commerce Scale Unit interaction
 
@@ -132,6 +134,8 @@ To add a buy box module to a new page and set the required properties, follow th
 [Footer module](author-footer-module.md)
 
 [Social share module](social-share-module.md)
+
+[Add product to cart settings](add-cart-settings.md)
 
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
 

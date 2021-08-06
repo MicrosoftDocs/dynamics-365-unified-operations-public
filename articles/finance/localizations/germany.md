@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-# ms.custom
+ms.custom: "intro-internal"
 ms.search.region: Germany
 # ms.search.industry: 
 ms.author: roschlom
@@ -40,6 +40,7 @@ This topic includes information and links to resources that should be considered
 ## Depreciation
 -   [Additional acquisition depreciation](emea-deu-additional-acquisition-depreciation.md)
 -   [Depreciation adjustments for additional acquisitions in the second year](tasks/de-00002-depreciation.md)
+-   [Intrastat](emea-deu-intrastat.md)
 
 ## Electronic transmission of VAT declaration (ELSTER)
 - [Electronic transmission of VAT declaration (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)

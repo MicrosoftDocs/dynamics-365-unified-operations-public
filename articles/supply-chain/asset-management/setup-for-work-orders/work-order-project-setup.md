@@ -74,7 +74,7 @@ The setup allows for complete integration with the **Project management and acco
 
     By default, the start date is the date when you add the work order project to the page. It's controlled by the **Valid from** field, which is hidden by default. To show the **Valid from** field, select **View** \> **All**. You can then use the **Valid from** field together with the **End date** field to set up a limited period of validity for the work order project.
 
-    ![Work orders project setup page](media/17-setup-for-work-orders.png)
+    ![Work orders project setup page.](media/17-setup-for-work-orders.png)
 
 6. On the **Project group** tab, select **Add**.
 7. In the **Work order type** field, select a work order type.
@@ -82,7 +82,7 @@ The setup allows for complete integration with the **Project management and acco
 9. In the **Project group** field, select the project group that should be related to the work order type. For example, a work order type that is named **Preventive maintenance** might be associated with a project group that is named **Prev Maint** or **Internal**. Alternatively, an **Investment** work order type that is used for work orders that are related to investments and fixed assets might be associated with a project group that is named **Invest** or **Investment**.
 10. Select **Save**.
 
-![Work orders project setup page, Add work order](media/18-setup-for-work-orders.png)
+![Work orders project setup page, Add work order.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Every time that a work order line is created, Asset Management searches for a project group that should be related to the work order job project. The search is based on the setup that is described in this topic. Every project group has a related project type. Project groups that have the **Time and material** or **Fixed-price** project type are valid only for assets that are related to a customer account.

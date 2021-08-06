@@ -53,7 +53,7 @@ Often, when each channel or site is being treated as a separate business, the be
 
 The following illustration shows multiple B2C tenants in a Commerce environment.
 
-![Multiple B2C tenants in a Commerce environment](media/MultiB2C_In_Environment.png)
+![Multiple B2C tenants in a Commerce environment.](media/MultiB2C_In_Environment.png)
 
 If you decide that your business requires distinct B2C tenants per channel in the same Commerce environment, complete the procedures in the following sections to request this feature.
 

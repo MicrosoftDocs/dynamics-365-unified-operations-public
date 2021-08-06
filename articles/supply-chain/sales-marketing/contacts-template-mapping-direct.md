@@ -42,7 +42,7 @@ This topic discusses the templates and underlying tasks that are used to synchro
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-[![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Data flow in Prospect to cash.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## Templates and tasks
 
@@ -123,11 +123,11 @@ The following illustrations show an example of a template mapping in Data integr
 
 ### Contact to contact
 
-![Template mapping in Data integrator](./media/contacts-direct-template-mapping-data-integrator-1.png)
+![Template mapping in Data integrator.](./media/contacts-direct-template-mapping-data-integrator-1.png)
 
 ### Contact to customer
 
-![Template mapping in Data integrator](./media/contacts-direct-template-mapping-data-integrator-2.png)
+![Template mapping in Data integrator.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
 ## Related topics

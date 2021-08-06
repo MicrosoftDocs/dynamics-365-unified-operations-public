@@ -61,15 +61,15 @@ You'll see a banner on the **Links** page of the **Benefits management** workspa
 
 1. Select **Reason codes** for details about migration status.
 
-   [![Reason codes](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
+   [![Reason codes.](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
 
 2. Select a reason code that failed to migrate.
 
-   [![Reason code migration status](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
+   [![Reason code migration status.](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
 
 3. Select **Migrate reason code**.
 
-   [![Migrate reason code](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
+   [![Migrate reason code.](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
 
 4. In the **Benefit reason code migration** pane, you have two options for mapping to a Personnel management reason code:
 
@@ -78,10 +78,10 @@ You'll see a banner on the **Links** page of the **Benefits management** workspa
      > You can only use an existing reason code in Personnel management if another Benefits management reason code hasn't already migrated to it.
    - To create a new reason code in Personnel management, enter a new one in **New reason code**, and then enter a description in **New description**.
 
-   [![Map to a Personnel management reason code](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
+   [![Map to a Personnel management reason code.](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
 
 After reason codes migrate to Personnel management, the option for using them in Benefits management is automatically set to **Yes**.
 
-[![Use reason code in Benefits management](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+[![Use reason code in Benefits management.](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

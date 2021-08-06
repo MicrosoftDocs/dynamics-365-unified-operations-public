@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
-ms.custom: 221024
+ms.custom: ["221024", "intro-internal"]
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
 # ms.search.industry: 
@@ -39,7 +39,7 @@ As the following diagram shows, there are three pages that help you manage the p
 -   Goals
 -   Performance review
 
-The following diagram shows how the primary components of performance management are related to each other. [![Performance process overview](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+The following diagram shows how the primary components of performance management are related to each other. [![Performance process overview.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## Performance journal
 

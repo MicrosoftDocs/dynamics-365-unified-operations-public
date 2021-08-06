@@ -73,7 +73,7 @@ In AX 2012, users are authenticated against an on-premises Active Directory serv
        1. Click **Import from AX**. The grid is filled with existing users.
        1. For each user, enter the corresponding Azure AD email address, as shown in the following illustration.
 
-           ![Azure AD email addresses for AX 2012 users](media/userInfoEmailMapping.png)
+           ![Azure AD email addresses for AX 2012 users.](media/userInfoEmailMapping.png)
 
    - Import users from a file. This option is faster. We recommend that you use this option when many users must be updated.
 

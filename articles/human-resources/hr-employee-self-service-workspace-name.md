@@ -42,7 +42,7 @@ If you have volunteers or other non-employees, you might want to change the name
 
 3. Under **Display name**, select **Self service**.
 
-   ![Change Employee self-service workspace name to Self service](./media/hr-employee-self-service-workspace-name.png)
+   ![Change Employee self-service workspace name to Self service.](./media/hr-employee-self-service-workspace-name.png)
 
 4. Select **Save**.
 

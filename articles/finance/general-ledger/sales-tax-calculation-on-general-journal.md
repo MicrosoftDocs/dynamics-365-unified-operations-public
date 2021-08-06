@@ -61,7 +61,7 @@ Otherwise, sales tax direction is Sales Tax Receivable.
 
 The following diagram illustrates the rule graphically.
 
-![Tax direction possibilities for project accounts](media/Sales-Tax-Direction-Vendor.jpg)
+![Tax direction possibilities for project accounts.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### Account type is Vendor
 
@@ -79,7 +79,7 @@ Otherwise, sales tax direction is Sales Tax Receivable.
 
 The following diagram illustrates the rule graphically.
 
-![Tax direction possibilities for vendor accounts](media/Sales-Tax-Direction-Vendor.jpg)
+![Tax direction possibilities for vendor accounts.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### Account type is Customer
 
@@ -95,7 +95,7 @@ Otherwise, sales tax direction is Sales Tax Payable.
 
 The following diagram illustrates the rule graphically.
 
-![Tax direction possibilities for customer accounts](media/Sales-Tax-Direction-Customer.jpg)
+![Tax direction possibilities for customer accounts.](media/Sales-Tax-Direction-Customer.jpg)
 
 ### Account type is Ledger
 
@@ -109,7 +109,7 @@ Otherwise, if the journal amount is debit (positive) ,sales tax direction is Sal
 
 The following diagram illustrates the rule graphically.
 
-![Tax direction possibilities for ledger accounts](media/Sales-Tax-Direction-Ledger.jpg)
+![Tax direction possibilities for ledger accounts.](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### Override the sales tax direction
 
@@ -121,7 +121,7 @@ Go to **General ledger \> Chart of accounts \> Accounts \> Main accounts**, and 
 
 This section describes how the sales tax amount sign is calculated.
 
-![Sales tax transactions page](media/sales-tax-amount-sign.jpg)
+![Sales tax transactions page.](media/sales-tax-amount-sign.jpg)
 
 The following table shows the generic rule for determining the sales tax direction and sign of sales tax amounts in the temporary sales tax table.
 

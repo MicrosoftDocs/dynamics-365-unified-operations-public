@@ -75,7 +75,7 @@ The **Cost controlling** mobile workspace provides the following actions, views,
 
     When you select a link, a card is shown for each cost element. The following amounts are shown on every card: Actual, Budget, Budget variance, Budget variance %, Revised budget, Revised budget variance, and Revised budget variance %.
     
-    [![Card for a cost element](./media/Cost-controlling.png)](./media/Cost-controlling.png)
+    [![Card for a cost element.](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
 ## Prerequisites
 The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
@@ -130,7 +130,7 @@ Download and install the Finance and Operations mobile app:
 3.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
 4.  After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
 
-[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Pull to refresh.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## View the performance of your cost center by using the Cost controlling mobile workspace
 

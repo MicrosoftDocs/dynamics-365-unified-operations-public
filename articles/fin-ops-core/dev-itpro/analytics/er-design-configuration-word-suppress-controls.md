@@ -67,7 +67,7 @@ You must also download and save the following template for the sample report:
     > [!NOTE]
     > The repeating content control is tagged by the **SummaryLines** key that matches the field of the custom XML part that it has been mapped to.
 
-    ![Word template layout](./media/er-design-configuration-word-suppress-controls-image1.gif)
+    ![Word template layout.](./media/er-design-configuration-word-suppress-controls-image1.gif)
 
 ## Select the existing ER report configuration
 
@@ -102,7 +102,7 @@ Currently, the SampleVendPaymDocReportBounded.docx file is used as a template to
 7. Select **OK**.
 8. In the **Electronic report parameters** dialog box, select **OK**, and analyze the generated output.
 
-    ![Payments for processing on the Vendor payments page](./media/er-design-configuration-word-suppress-controls-image2.gif)
+    ![Payments for processing on the Vendor payments page.](./media/er-design-configuration-word-suppress-controls-image2.gif)
 
     The output is presented in Word format and contains the summary section.
 
@@ -153,7 +153,7 @@ If you want to suppress the summary section in a generated document, based on th
 
 9. Select **Save** to save your changes to the editable format.
 
-    ![The generated output in Word format](./media/er-design-configuration-word-suppress-controls-image3.gif)
+    ![The generated output in Word format.](./media/er-design-configuration-word-suppress-controls-image3.gif)
 
 ## Run the modified format to create Word output
 
@@ -167,7 +167,7 @@ If you want to suppress the summary section in a generated document, based on th
 8. In the **Electronic report parameters** dialog box, in the **Suppress summary section** field, select **Yes**.
 9. Select **OK**, and analyze the generated output.
 
-    ![Generated output in Word format](./media/er-design-configuration-word-suppress-controls-image4.gif)
+    ![Generated output in Word format.](./media/er-design-configuration-word-suppress-controls-image4.gif)
 
     Notice that the output doesn't contain the summary section, because it has been suppressed.
 

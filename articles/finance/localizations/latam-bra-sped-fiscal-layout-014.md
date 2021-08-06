@@ -70,13 +70,13 @@ Next, follow these steps to set up the rule that will enable the generation of t
 3. Set the **Enable record C180 and C185** option to **Yes** to generate the related records. In addition to this, instances of record H030 with the **MOT\_INV** field is set to **06**, H005, 1010, 1250, and 1255 will also be generated.
 4. In the **SPED presumed tax calculation algorithm** field, select the method of calculation. The amounts that are calculated in the presumed tax process will be reported in record C185.
 	
-![Fiscal books parameters per state page](media/bra-sped-Fiscal014-Setup.png)	
+![Fiscal books parameters per state page.](media/bra-sped-Fiscal014-Setup.png)	
 
 ### Table 5.7 – Reason code table for complement and restitution
 
 Table 5.7 represents the classification for the complement and restitution (compensation) of ICMS-ST amounts. This table is implemented by each state. To configure it, go to **Fiscal books** \> **Setup** \> **Reason code for complement and restitution**.
 
-![Code of reason for restitution or complement page](media/bra-sped-fiscal014-table57-setup.png)
+![Code of reason for restitution or complement page.](media/bra-sped-fiscal014-table57-setup.png)
 
 After you've finished configuring the reason code table (table 5.7), you must go to **Fiscal books** \> **Setup** \> **Table 5.7 determination** and set up the determination for it by using the following criteria:
 
@@ -84,7 +84,7 @@ After you've finished configuring the reason code table (table 5.7), you must go
 - CFOP code
 - Taxation code
 
-![Table 5.7 determination page](media/bra-sped-fiscal014-table57-determination-setup.png)
+![Table 5.7 determination page.](media/bra-sped-fiscal014-table57-determination-setup.png)
 
 ### Record C180
 

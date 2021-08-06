@@ -108,7 +108,7 @@ To generate the WHT declaration form reports in Microsoft Excel, define an ER fo
 2. On the **Withholding tax** tab, in the **WHT declaration format mapping** field, select **WHT Declaration Excel (EG)**. If you leave the field blank, the standard sales tax report will be generated in SSRS format.
 
 
-![Declaration form](media/egypt-wht-declaration-setup1.png)
+![Declaration form.](media/egypt-wht-declaration-setup1.png)
 
 ## Generate the Withholding declaration forms
 The process of preparing and submitting a Withholding declaration form for a specific period is based on the withholding tax transactions posted during the settle and post payment tax job. For more information about global withholding tax, see [Global withholding tax](../general-ledger/global-withholding-tax-overview.md).

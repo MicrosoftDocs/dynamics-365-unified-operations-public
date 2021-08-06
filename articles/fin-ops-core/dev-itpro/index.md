@@ -18,7 +18,7 @@ audience: IT Pro, Developer
 ms.reviewer: rhaertle
 
 # ms.tgt_pltfrm: 
-ms.custom: 62303
+ms.custom: "intro-internal"
 ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ms.search.region: Global
 # ms.search.industry: 

@@ -4,7 +4,7 @@
 title: Get started with Tax Calculation
 description: This topic explains how to set up Tax Calculation.
 author: wangchen
-ms.date: 05/17/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,7 @@ audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: wangchen
@@ -63,15 +63,16 @@ Before you can complete the procedures in this topic, the following prerequisite
 The steps in this section aren't related to a specific legal entity. You must complete this procedure only one time, and you can complete it in any legal entity in RCS.
 
 1. Sign in to [RCS](https://marketing.configure.global.dynamics.com/).
-2. In the **Electronic reporting** workspace, add a new configuration provider. Use your company name as the name of the provider. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-3. Select the configuration provider that you just created, and then select **Set active**.
-4. Select the **Microsoft** configuration provider, and then select **Repositories**.
-5. In the **Type** field, select **Global**.
-6. Select **Open**.
-7. Go to **Tax Data Model**, expand the file tree, and then select **Tax Configuration**.
-8. Select the latest version, and then select **Import**.
-9. Return to the **Globalization features (Preview)** workspace, select **Features**, select the **Tax Calculation** tile, and then select **Add**.
-10. Select one of the following feature types:
+2. In the **Feature management** workspace, select and enable the feature, **Globalization features**.
+3. In the **Electronic reporting** workspace, add a new configuration provider. Use your company name as the name of the provider. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+4. Select the configuration provider that you just created, and then select **Set active**.
+5. Select the **Microsoft** configuration provider, and then select **Repositories**.
+6. In the **Type** field, select **Global**.
+7. Select **Open**.
+8. Go to **Tax Data Model**, expand the file tree, and then select **Tax Configuration**.
+9. Select the latest version, and then select **Import**.
+10. Return to the **Globalization features** workspace, select **Features**, select the **Tax Calculation** tile, and then select **Add**.
+11. Select one of the following feature types:
 
     - **New feature** – Create a feature setup that has blank content.
     - **Based on existing feature** – Create a feature from an existing feature, and copy the content from the existing feature setup.

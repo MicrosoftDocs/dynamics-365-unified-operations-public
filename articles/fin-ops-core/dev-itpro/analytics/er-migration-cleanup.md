@@ -35,11 +35,11 @@ When you manage your Finance instances, you might decide to migrate your current
 
 If you try to run an ER format that uses a template to generate business documents, an exception occurs, and you're notified about the missing template. You're also guided to use the ER migration cleanup option to delete and then re-import the ER format configuration that contains the template.
 
-[![Running an ER format](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
+[![Running an ER format.](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
 
 You will receive a similar error if you navigate to the **Configurations** page (**Organization administration** \> **Electronic reporting** \> **Configurations**) and in the configurations tree, try to delete an ER format configuration that uses a template.
 
-[![Deletion an ER format](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
+[![Deletion an ER format.](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
 
 Complete the following steps to resolve issues with ER templates that you are unable to access.
 
@@ -56,7 +56,7 @@ Complete the following steps to resolve issues with ER templates that you are un
 >
 > If you use the **Migration cleanup** option to delete an ER format configuration when the referred template is available in the Blob storage, you only delete related configuration artifacts in the application database. The physical file of the template in the Blob storage remains. File overwriting in Blob storage is no longer allowed. For more information, see [KB4557217](https://fix.lcs.dynamics.com/Issue/Details?kb=4557217). Additionally, you will no longer be able to re-import the configurations deleted by using the Migration cleanup in this environment. To resolve this issue, you need to find the corresponding file in Blob storage and manually delete it.
 
-[![Importing an ER format](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
+[![Importing an ER format.](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
 
 A similar issue may occur if you migrate your application instance to another location that has been used as a migration target more than once and for which the Blob storage already contains ER template files.
 

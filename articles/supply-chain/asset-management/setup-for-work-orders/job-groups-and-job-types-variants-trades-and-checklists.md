@@ -59,7 +59,7 @@ You first set up the required maintenance job type categories, maintenance job t
 
     After you relate maintenance job type categories to maintenance job types, the **Job types** field shows the number of maintenance job types that are related to this maintenance job type category.
 
-![Maintenance job type categories page](media/01-setup-for-work-orders.png)
+![Maintenance job type categories page.](media/01-setup-for-work-orders.png)
 
 ## Create a maintenance job type variant
 
@@ -73,7 +73,7 @@ You first set up the required maintenance job type categories, maintenance job t
 
     On the **Details** FastTab, the **Job types** field shows the number of maintenance job types that have been added to this maintenance job type variant.
 
-![Maintenance job type variants page](media/02-setup-for-work-orders.png)
+![Maintenance job type variants page.](media/02-setup-for-work-orders.png)
 
 ## Create a maintenance job trade
 
@@ -94,7 +94,7 @@ You first set up the required maintenance job type categories, maintenance job t
 
     On the **Details** FastTab, the **Certificates** field shows the number of certificates that have been added to this maintenance job trade.
 
-![Maintenance job trade page](media/03-setup-for-work-orders.png)
+![Maintenance job trade page.](media/03-setup-for-work-orders.png)
 
 ## Create a maintenance checklist variable
 
@@ -115,7 +115,7 @@ When you create maintenance checklist lines in the maintenance job type default,
 6. In the **Value** field, enter a value description.
 7. In the **Result** field, select a result for the line.
 
-![Maintenance checklist variables page](media/04-setup-for-work-orders.png)
+![Maintenance checklist variables page.](media/04-setup-for-work-orders.png)
 
 ## Create a maintenance checklist template
 
@@ -144,7 +144,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 
     On the **Details** FastTab, the **Checks** field shows the total number of checklist lines in your template. This number includes the nested lines in any existing template that you've referenced in your template.
 
-![Maintenance checklist templates page](media/05-setup-for-work-orders.png)
+![Maintenance checklist templates page.](media/05-setup-for-work-orders.png)
 
 ## Create a maintenance job type
 
@@ -167,7 +167,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 
 11. On the **Asset types** FastTab, you can add asset types to the maintenance job type.
 
-![Maintenance job types page](media/06-setup-for-work-orders.png)
+![Maintenance job types page.](media/06-setup-for-work-orders.png)
 
 ## Create maintenance job type default lines and related forecasts, maintenance checklists, tools, description, and attachments
 
@@ -236,7 +236,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 31. To copy a maintenance job type default to another maintenance job type default, select the maintenance job type default line to copy another setup to, select **Copy setup**, and then select the maintenance job type default to copy.
 32. To view a list of the assets, maintenance plans, or maintenance rounds that currently use a maintenance job type default line, select the line, and then select **Used by**.
 
-![Maintenance job type defaults page](media/07-setup-for-work-orders.png)
+![Maintenance job type defaults page.](media/07-setup-for-work-orders.png)
 
 When the system selects the available maintenance job type default that should be used on a work order line, the selection is based on the asset and the related asset type setup. Asset Management goes through all maintenance job type default records that are related to the maintenance job type that is related to the asset type to check for a possible match. It always checks the most specific combination first. In other words, to find the most specific combination, Asset Management first checks for a possible match for the **Trade** field. If no match is found, it checks for a match for the **Maintenance job type variant** field. If no match is found, it checks for a match for the **Maintenance job type** field, and so on (**Trade**, then **Maintenance job type variant**, then **Maintenance job type**, then **Asset**, then **Model**, then **Manufacturer**, and then **Asset type**). If no match is found, the default record where only the maintenance job type is selected is used.
 
@@ -257,7 +257,7 @@ After you've created the required maintenance job type default combinations, you
 4. Select a maintenance job type combination to see the related setup for maintenance checklists, forecasts, and tools. The **Details** section on the **Maintenance job type defaults** FastTab shows the number of related maintenance checklists, forecasted hours, items, and so on, that are related to the selected maintenance job type combination.
 5. To view details for the selected maintenance job type, select **Maintenance job types**.
 
-![Asset maintenance job types page](media/08-setup-for-work-orders.png)
+![Asset maintenance job types page.](media/08-setup-for-work-orders.png)
 
 ## Automatic update of maintenance job type forecasts
 

@@ -40,7 +40,7 @@ If site user cookie consent is not received, any features or modules that requir
 A cookie consent module can be configured on a page's header fragment so that it can be enforced when the page loads. The cookie consent module should have a clear message informing the site user about cookie usage on the site and should provide a link to the site's privacy page.
 
 The following illustration highlights an example of a cookie consent message with a link to the site's privacy policy page displayed on the header of a site page.
-![Example of a cookie consent module](./media/ecommerce-cookieconsent.png)
+![Example of a cookie consent module.](./media/ecommerce-cookieconsent.png)
 
 ## Cookie consent module properties
 

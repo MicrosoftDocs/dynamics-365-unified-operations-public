@@ -76,7 +76,7 @@ To manually firm planned orders, you find and select the planned orders that you
     - **Group by period** (in the **Purchase orders** section) – Select the period to group planned purchase orders by. To use this option, you must also select the **Group by vendor** option.
     - **Group by period** (in the **Transfers** section) – Select the period to group planned transfer orders by. The orders will be grouped based on **From warehouse** and **To warehouse** values.
 
-    ![Parameters FastTab in the Firming dialog box](./media/manual-firming.png "Parameters FastTab in the Firming dialog box")
+    ![Parameters FastTab in the Firming dialog box.](./media/manual-firming.png "Parameters FastTab in the Firming dialog box")
 
 1. On the **Run in the background** FastTab, set up the job so that it runs in batch mode. However, it doesn't make sense to set up a recurrent schedule when you're doing manual firming. The fields work just as they work for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management. However, for manual firming, the batch job will process only the currently selected planned orders. It won't process any orders that fit the filters that are currently applied on the page.
 1. Select **OK** to apply your settings and generate the firmed orders.
@@ -135,15 +135,15 @@ To firm a planned order by using the query-based firming process, follow these s
     - **Firming time fence days forward** – Select how far in the future the various requirements and other considerations must be calculated by master planning.
     - **Firming time fence days backward** – Select how far in the past the various requirements and other considerations must be calculated by master planning.
 
-    ![Parameters FastTab in the Planned order firming dialog box](./media/planned-order-firming-main-1.png "Parameters FastTab in the Planned order firming dialog box")
+    ![Parameters FastTab in the Planned order firming dialog box.](./media/planned-order-firming-main-1.png "Parameters FastTab in the Planned order firming dialog box")
 
 1. To specify which records should be included in the order, select the **Filter** button on the **Records to include** FastTab. A standard query dialog appears, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management. The fields here are read-only and show values that are related to your query.
 
-    ![Records to include FastTab on the Planned order firming dialog box](./media/planned-order-firming-main-2.png "Records to include FastTab on the Planned order firming dialog box")
+    ![Records to include FastTab on the Planned order firming dialog box.](./media/planned-order-firming-main-2.png "Records to include FastTab on the Planned order firming dialog box")
 
 1. Select **Preview** to preview the content of your firmed order, based on your settings so far. The list of planned orders that will be firmed is shown as a message. You can then adjust your settings as required until the preview shows the firmed order as you intend it.
 
-    ![Example of a firmed order preview](./media/planned-order-firming-preview.png "Example of a firmed order preview")
+    ![Example of a firmed order preview.](./media/planned-order-firming-preview.png "Example of a firmed order preview")
 
     > [!WARNING]
     > This feature will firm all planned orders that match the filter criteria. Uncritical firming of planned orders can cause massive numbers of unwanted purchase, transfer, and production orders to be created. Before you continue, always use the **Preview** button to validate the records that will be included.

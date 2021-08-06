@@ -127,7 +127,7 @@ When a purchase invoice that has the reverse charge is posted, two sales tax tra
 
 In the following screenshot, one transaction has the **Sales tax receivable** direction, and the other transaction has the **Sales tax payable** direction. 
 
-![Posted sales tax](media/apac-sau-posted-sales-tax.png)
+![Posted sales tax.](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge"></a>Enable Reverse charge mechanism for VAT/GST scheme feature
 In the **Feature management** workspace, find the feature and select **Enable**.

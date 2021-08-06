@@ -3,11 +3,9 @@ title: X++ loop statements
 description: This topic describes loop statements in X++.
 author: RobinARH
 ms.date: 06/17/2019
-ms.topic: article
 audience: Developer
 ms.devlang: xpp
 ms.reviewer: rhaertle
-ms.custom: 150213
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28

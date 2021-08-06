@@ -3,7 +3,7 @@
 
 title: Manage customer information in POS for Brazil
 description: This topic describes how to manage customer information in Commerce point of sale (POS) for Brazil.
-author: v-ankvik
+author: akviklis
 manager: annbe
 ms.date: 06/10/2021
 ms.topic: article

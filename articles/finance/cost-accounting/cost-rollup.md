@@ -50,7 +50,7 @@ To avoid these implications, Cost accounting lets you configure cost allocation 
 
 Imagine that an organization has the following structure with 4 cost centers.
 
-![Example of an organization structure](./media/dimension-hierarchy-org.png)
+![Example of an organization structure.](./media/dimension-hierarchy-org.png)
 
 **Cost object dimension**
 

@@ -72,12 +72,12 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.21 (October 2021)
+            href: get-started/whats-new-scm-10-0-21.md
           - name: Supply Chain Management 10.0.20 (August 2021)
             href: get-started/whats-new-scm-10-0-20.md
           - name: Supply Chain Management 10.0.19 (June 2021)
             href: get-started/whats-new-scm-10-0-19.md
-          - name: Supply Chain Management 10.0.18 (May 2021)
-            href: get-started/whats-new-scm-10-0-18.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -246,8 +246,6 @@
               href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with Electronic Invoicing for Egypt
               href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Get started with Electronic Invoicing for Italy
-              href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
               href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
             - name: Set up Electronic Invoicing
@@ -1605,8 +1603,12 @@
           href: master-planning/planning-optimization/planning-optimization-overview.md
         - name: Get started with Planning Optimization
           href: master-planning/planning-optimization/get-started.md
+        - name: Planning Optimization release process and release history
+          href: master-planning/planning-optimization/release-process.md
         - name: Planning Optimization fit analysis
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
+        - name: Parameters not used by Planning Optimization
+          href: master-planning/planning-optimization/not-used-parameters.md
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with demand forecast
@@ -1621,6 +1623,8 @@
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
+        - name: Scheduling with infinite capacity
+          href: master-planning/planning-optimization/infinite-capacity-planning.md
         - name: Inventory marking with Planning Optimization
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
@@ -1967,6 +1971,8 @@
           href: procurement/request-quotations.md
         - name: Create a request for quotation
           href: procurement/tasks/create-request-quotation.md
+        - name: Sealed bidding for RFQs
+          href: procurement/sealed-bidding.md
         - name: Create a requisition that uses an RFQ
           href: procurement/tasks/create-requisition-uses-rfq.md
         - name: Create a scoring method for RFQs
@@ -1999,9 +2005,7 @@
           href: procurement/tasks/create-purchase-order-delivery-schedule.md
         - name: Create a purchase order for a one-time supplier
           href: procurement/tasks/create-purchase-order-one-time-supplier.md
-        - name: Create a purchase release order when creating the purchase order
-          href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
-        - name: Create a purchase release order from a purchase agreement
+        - name: Apply a purchase agreement when creating a purchase order
           href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
         - name: Create a purchase return order
           href: procurement/tasks/create-purchase-return-order.md
@@ -2283,6 +2287,8 @@
         href: engineering-change-management/product-readiness.md
       - name: Release product structure
         href: engineering-change-management/release-product-structure.md
+      - name: Generate variants for engineering products
+        href: engineering-change-management/engineering-variants.md
       - name: Engineering change management FAQs
         href: engineering-change-management/change-management-faq.md
     - name: Production control
@@ -2605,6 +2611,8 @@
         href: rebate-management/rebate-management-overview.md
       - name: Set up and configure the Rebate management module
         items:
+        - name: Turn on the Rebate management module for your system
+          href: rebate-management/rebate-management-enable.md
         - name: Rebate management parameters
           href: rebate-management/rebate-management-parameters.md
         - name: Rebate management deal workflows
@@ -2621,6 +2629,8 @@
         href: rebate-management/rebate-management-deals.md
       - name: Process, review, and post rebates
         href: rebate-management/process-review-post.md
+      - name: Manage deductions using the deduction workbench
+        href: rebate-management/deduction-workbench.md
     - name: Sales and marketing
       items:
       - name: Sales and marketing overview
@@ -3059,6 +3069,8 @@
         href: landed-cost/in-transit-processing.md
       - name: Process over/under transactions
         href: landed-cost/over-under-transactions.md
+      - name: Update tracking for put away
+        href: landed-cost/update-tracking-putaway.md
       - name: Landed cost inquiries
         href: landed-cost/landed-cost-inquiries.md
       - name: Landed cost reports
@@ -3119,6 +3131,8 @@
             href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
+          - name: Over picking for sales orders and transfer orders
+            href: warehousing/over-picking-for-sales-and-transfer-orders.md
           - name: Set different dimensions for packing and storage
             href: warehousing/packing-vs-storage-dimensions.md
           - name: Batch and license plate confirmation
@@ -3515,6 +3529,8 @@
           href: troubleshooting/warehousing/customer-is-on-hold.md
         - name: You can't confirm a shipment because load lines have quantity zero
           href: troubleshooting/warehousing/load-line-quantity-is-zero.md
+        - name: Can't update a load line because the released quantity would be negative
+          href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
         - name: Canceled product receipts don't update transactions status to registered
           href: troubleshooting/warehousing/canceled-product-receipts.md
         - name: Decimal rounding of the physical updating quantity is incorrect

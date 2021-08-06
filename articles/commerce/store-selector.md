@@ -4,7 +4,8 @@
 title: Store selector module
 description: This topic covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 04/02/2021
+manager: annbe
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -54,12 +55,12 @@ To enter the latitude and longitude values for a store location in Commerce head
 1. Select the warehouse location in the left pane.
 1. On the **Addresses** FastTab, select **Advanced**.
 
-    ![Example of store details in headquarters](./media/Store-address.png)
+    ![Example of store details in headquarters.](./media/Store-address.png)
 
 1. On the Action Pane, select **Edit**.
 1. On the **General** FastTab, enter values for **Latitude** and **Longitude**.
 
-    ![Example of latitude and longitude setup for a store in headquarters](./media/Store-latitude-longitude.png)
+    ![Example of latitude and longitude setup for a store in headquarters.](./media/Store-latitude-longitude.png)
 
 1. On the Action Pane, select **Save**. 
 
@@ -74,7 +75,6 @@ For the Autosuggest REST API, you must ensure that the following URLs are allowe
 - To the **script-src** directive, **add &#42;.bing.com, &#42;.virtualearth.net**.
 - To the **script style-src** directive, add **&#42;.bing.com**.
 
- 
 ## Pickup in store mode
 
 The store selector module supports a **Pick up in store** mode that shows a list of stores where a product is available for pickup. It also shows store hours and product inventory for each store in the list. The store selector module requires the context of a product to render product availability and to let the user add the product to the cart, if the product's delivery mode is set to **pickup** at the selected store. For more information, see [Inventory settings](inventory-settings.md). 
@@ -85,7 +85,7 @@ For this scenario to work, products should be configured so that the **pickup** 
 
 The following image shows an example of a store selector module used on a PDP.
 
-![Example of a store selector module used on a PDP](./media/BOPIS.PNG)
+![Example of a store selector module used on a PDP.](./media/BOPIS.PNG)
 
 > [!NOTE]
 > In version 10.0.16 and later, a new feature can be enabled which allows an organization to define multiple pick up modes of delivery options for customers.  If this feature is enabled, the store selector and other modules of e-Commerce will be enhanced to allow the shopper to choose from potentially multiple pick up delivery options if configured.  To learn more about this feature, refer to [this documentation](./multiple-pickup-modes.md). 
@@ -96,7 +96,7 @@ The store selector module also supports a **Find stores** mode. This mode can be
 
 The following illustration shows an example of a store selector module that is used together with a map module on a store locations page.
 
-![Example of a store selector module and a map module on a store locations page](./media/ecommerce-Storelocator.PNG)
+![Example of a store selector module and a map module on a store locations page.](./media/ecommerce-Storelocator.PNG)
 
 ## Render a map
 
@@ -114,6 +114,10 @@ The store selector module can be used together with the map module to show the s
 | Autosuggest options: Max results | Number | This property defines the maximum number of autosuggest results that can be shown via the Bing Autosuggest API. |
 | Search radius | Number | This property defines the search radius for stores, in miles. If no value is specified, the default search radius of 50 miles is used. |
 | Terms of service | URL |  This property specifies the terms of service URL that is required to use the Bing Maps service. |
+
+## Site settings
+
+The store selector module respects the [Add product to cart settings](add-cart-settings.md). After an item is added to the cart from the store selector module, site users will see the appropriate configured workflows.
 
 ## Add a store selector module to a page
 

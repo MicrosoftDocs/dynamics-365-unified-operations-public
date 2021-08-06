@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.4
 5. In the **Tax Information** field, select the Tax Identification Number (TIN).
 5. On the **VAT** FastTab, in the **Non recoverable pct.** field, enter **100.00**.
 
-    ![VAT FastTab](media/Annotation-2019-05-16-095850.png)
+    ![VAT FastTab.](media/Annotation-2019-05-16-095850.png)
 
 6. Select **OK**.
 7. On the **Line details** FastTab, on the **Setup** tab, in the **Item sales tax group** and **Sales tax groups** fields, select values.
@@ -60,7 +60,7 @@ ms.dyn365.ops.version: 10.0.4
 5. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**. 
 6. On the **Overview** tab, select **Voucher**.
 
-![Example](media/Annotation-2019-05-16-095645.png)
+![Example.](media/Annotation-2019-05-16-095645.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

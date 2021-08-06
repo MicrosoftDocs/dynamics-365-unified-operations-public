@@ -4,7 +4,7 @@
 title: Cookie compliance
 description: This topic describes considerations for cookie compliance and the default policies that are included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/21/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -59,6 +59,10 @@ The following table shows the current reference list of cookies placed by Dynami
 | \_msdyn365___muid_                            | Used if experimentation is activated for the environment; used as a user ID for experimentation purposes. | 1 year |
 | \_msdyn365___exp_                             | Used if experimentation is activated for the environment; used to measure performance load balancing.         | 1 hour |
 | d365mkt                                       | Used if location-based detection to track a user's IP address for store location suggestions is enabled in Commerce site builder at **Site Settings \> General \> Enable location based store detection**.      | 1 hour |
+| \_msdyn365___tuid_                           | Used only if experimentation activated for an environment; generates a GUID to serve as a user identifier. Value will change if a user's sign-in status changes.      | 1 year |
+| \_msdyn365___aud_0                          | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | 7 days |
+| \_msdyn365___aud_1                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | 7 days |
+| \_msdyn365___aud_2                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | 7 days |
 
 If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
 

@@ -69,7 +69,7 @@ For more information about pricing and licensing, see the [Microsoft Dynamics 36
 
     The window that appears shows which type of license you have for Attract.
 
-    ![View your Attract license type](media/attract-license-types.png)
+    ![View your Attract license type.](media/attract-license-types.png)
 
 ## Frequently asked questions
 

@@ -44,7 +44,7 @@ To create a new address book, follow these steps.
 
 The following image shows the creation of an employee address book for a retail store.
 
-![Employee address book example](media/address-books.png)
+![Employee address book example.](media/address-books.png)
 
 ## Additional resources
 

@@ -17,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 21311
+ms.custom: ["21311", "intro-internal"]
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
 # ms.search.industry: 
@@ -69,11 +69,11 @@ For more information, see:
 
 The following illustration describes how authorization must be configured for Authorization code grant flow.
 
-![Authorization code grant flow](./media/services-authentication.png)
+![Authorization code grant flow.](./media/services-authentication.png)
 
 And below is the illustration describes how authorization works for Service to service calls using client credentials (shared secret or certificate).
 
-![Service to service calls using client credentials](./media/S2SAuth.jpg)
+![Service to service calls using client credentials.](./media/S2SAuth.jpg)
 
 ### Register a web application with AAD
 

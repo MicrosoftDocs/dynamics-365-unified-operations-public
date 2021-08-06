@@ -59,12 +59,12 @@ To complete the example in this topic, you must have the following access:
 1. On the **Document management parameters** page, configure access to the SharePoint Server that will be used in the company that you're signed in to (the DEMF company in this example).
 2. Test the connection to the SharePoint Server to make sure that you've been granted access.
 
-    [![Document management parameters page](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
+    [![Document management parameters page.](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
 
 3. Open the configured SharePoint site. Create a new folder where ER will store Excel files that have the business data that the Power BI reports require as a source of Power BI datasets.
 4. On the **Document types** page, create a new document type that will be used to access the SharePoint folder that you just created. Enter **File** in the **Group** field and **SharePoint** in the **Location** field, and then enter the address of the SharePoint folder.
 
-    [![Document types page](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
+    [![Document types page.](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
 
 ## Configure ER parameters
 1. In the **Electronic reporting** workspace, click the **Electronic reporting parameters** link.
@@ -74,23 +74,23 @@ To complete the example in this topic, you must have the following access:
 ## Use an ER data model as the source of data
 You must have an ER data model as the source of business data that will be used on Power BI reports. This data model is uploaded from the ER configurations repository. For more information, see [Download Electronic reporting configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md), or play the **ER Import a configuration from Lifecycle Services** task guide. Select **Intrastat** as the data model that will be uploaded from the selected ER configurations repository. (In this example, version 1 of the model is used.) You can then access the **Intrastat** ER model configuration on the **Configurations** page.
 
-[![Intrastat ER model cofiguration on the Configurations page](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+[![Intrastat ER model cofiguration on the Configurations page.](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## Design an ER format configuration
 You must create a new ER format configuration that uses the **Intrastat** data model as the source of business data. This format configuration must generate output results as electronic documents in OpenXML (Excel file) format. For more information, play the **ER Create a configuration for reports in OPENXML format** task guide. Name the new configuration **Import / export activities**, as shown in the following illustration. Use the [ER data - import and export details](https://download.microsoft.com/download/f/7/5/f755c0fd-025c-4aa9-920b-909abb8302ad/ER-data-import-and-export-details.xlsx) Excel file as a template when you design the ER format. (For information about how to import a format template, play the task guide.)
 
-[![Import / export activities configuration](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
+[![Import / export activities configuration.](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
 To modify the **Import / export activities** format configuration, follow these steps.
 
 1. Click **Designer**.
 2. On the **Format** tab, name the file element for this format **Excel output file**.
 
-    [![Excel output file element](./media/ger-power-bi-format-configuration-file-element-name-1024x395.png)](./media/ger-power-bi-format-configuration-file-element-name.png)
+    [![Excel output file element.](./media/ger-power-bi-format-configuration-file-element-name-1024x395.png)](./media/ger-power-bi-format-configuration-file-element-name.png)
 
 3. On the **Mapping** tab, specify the name of the Excel file that will be generated whenever this format is run. Configure the related expression to return the value **Import and export details** (the .xlsx file name extension will be added automatically).
 
-    [![Format designer](./media/ger-power-bi-format-configuration-output-file-name-1024x396.png)](./media/ger-power-bi-format-configuration-output-file-name.png)
+    [![Format designer.](./media/ger-power-bi-format-configuration-output-file-name-1024x396.png)](./media/ger-power-bi-format-configuration-output-file-name.png)
 
 4. Add a new data source item for this format. (This enumeration will be required for further data binding.)
 
@@ -98,19 +98,19 @@ To modify the **Import / export activities** format configuration, follow these 
     2. Select **Data model enumeration** as the data source type.
     3. Refer to the **Direction** data model enumeration.
 
-    [![direction_enum](./media/ger-power-bi-format-configuration-mapping-added-enum-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-added-enum.png)
+    [![direction_enum.](./media/ger-power-bi-format-configuration-mapping-added-enum-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-added-enum.png)
 
 5. Complete the binding of elements of the **Intrastat** data model and elements of the designed format, as shown in the following illustration.
 
-    [![Completing the binding](./media/ger-power-bi-format-configuration-mapping-details-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-details.png)
+    [![Completing the binding.](./media/ger-power-bi-format-configuration-mapping-details-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-details.png)
 
 After it's run, the ER format generates the output result in Excel format. It sends the details of the Intrastat transactions to the output result, and separates them as transactions that describe either import activities or export activities. Click **Run** to test the new ER format for the list of Intrastat transactions on the **Intrastat** page (**Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**).
 
-[![Intrastat page](./media/ger-power-bi-format-test-run-transactions-1024x322.png)](./media/ger-power-bi-format-test-run-transactions.png)
+[![Intrastat page.](./media/ger-power-bi-format-test-run-transactions-1024x322.png)](./media/ger-power-bi-format-test-run-transactions.png)
 
 The following output result is generated. The file is named **Import and export details.xlsx**, as you specified in the format settings.
 
-[![Import and export details.xlsx](./media/ger-power-bi-format-test-run-output-1024x472.png)](./media/ger-power-bi-format-test-run-output.png)
+[![Import and export details.xlsx.](./media/ger-power-bi-format-test-run-output-1024x472.png)](./media/ger-power-bi-format-test-run-output.png)
 
 ## Configure the ER destination
 You must configure the ER framework to send the output result of the new ER format configuration in a special way.
@@ -132,35 +132,35 @@ Click the **Settings** button for the new destination record. Then, in the **Des
 1. On the **Configurations** page (**Organization administration** &gt; **Electronic reporting** &gt; **Configurations**), in the configurations tree, select the **Import / export activities** configuration that you created earlier.
 2. Change the status of version 1.1 from **Draft** to **Complete** to make this format available for use.
 
-    [![Import/export activities configuration on the Configurations page](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
+    [![Import/export activities configuration on the Configurations page.](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
 
 3. Select the completed version of the **Import / export activities** configuration, and then click **Run**. Note that the configured destination is applied to the output result that is generated in Excel format.
 4. Set the **Batch processing** option to **Yes** to run this report in unattended mode.
 5. Click **Recurrence** to schedule the required recurrence of this batch execution. The recurrence defines how often the updated data will be transferred to Power BI.
 
-    [![Electronic report parameters dialog box](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png)
+    [![Electronic report parameters dialog box.](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png)
 
 6. After it's configured, you can find the ER report execution job on the **Batch jobs** page (**System administration &gt; Inquiries &gt; Batch jobs**).
 
-    [![Batch jobs page](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png)
+    [![Batch jobs page.](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png)
 
 7. When this job is run for the first time, the destination creates a new Excel file that has the configured name in the selected SharePoint folder. Every subsequent time that the job is run, the destination creates a new version of this Excel file.
 
-    [![New version of the Excel file](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
+    [![New version of the Excel file.](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## Create a Power BI dataset by using the output result of the ER format
 1. Sign in to Power BI, and either open an existing Power BI group (workspace) or create a new group. Either click **Add** under **Files** in the **Import or Connect to Data** section, or click the plus sign (**+**) next to **Datasets** in the left pane.
 
-    [![Creating a dataset](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
+    [![Creating a dataset.](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
 
 2. Select the **SharePoint – Team sites** option, and then enter the path of SharePoint Server that you're using (`https://ax7partner.litware.com` in our example).
 3. Browse to the **/Shared Documents/GER data/PowerBI** folder, and select the Excel file that you created as the source of data for the new Power BI dataset.
 
-    [![Selecting the Excel file](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)
+    [![Selecting the Excel file.](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)
 
 4. Click **Connect**, and then click **Import**. A new dataset is created that is based on the selected Excel file. The dataset can also be added automatically to the newly created dashboard.
 
-    [![Dataset on the dashboard](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png)
+    [![Dataset on the dashboard.](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png)
 
 5. Configure the refresh schedule for this dataset to force a periodic update. Periodic updates enable the consumption of new business data that comes via periodic execution of the ER report through new versions of the Excel file that are created on the SharePoint Server.
 
@@ -174,17 +174,17 @@ Click the **Settings** button for the new destination record. Then, in the **Des
 
 3. Save the Power BI report as **Import and export details report**.
 
-    [![Import and export details report](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png)
+    [![Import and export details report.](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png)
 
     Note that the map shows the countries/regions that are mentioned in the Excel file (Austria and Switzerland in this example). These countries/regions are colored to show the proportion of invoiced amounts for each.
 
 4. Update the list of Intrastat transactions. The export transaction that originated from Italy is added.
 
-    [![Intrastat transactions list](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)
+    [![Intrastat transactions list.](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)
 
 5. Wait for the next scheduled execution of the ER report and the next scheduled update of the Power BI dataset. Then review the Power BI report (select to show import transactions only). The updated map now shows Italy.
 
-    [![Updated map](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
+    [![Updated map.](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## Access Power BI report in Finance
 Set up the integration with Power BI. For more information, see [Configure Power BI integration for workspaces](configure-power-bi-integration.md).
@@ -193,7 +193,7 @@ Set up the integration with Power BI. For more information, see [Configure Power
 2. Select the **Import and export details** Power BI report that you created, to show that report as an action item on the selected page.
 3. Click the action item to open the page that shows the report that you designed in Power BI.
 
-    [![Import and export details report designed in Power BI](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+    [![Import and export details report designed in Power BI.](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 ## Additional resources
 
