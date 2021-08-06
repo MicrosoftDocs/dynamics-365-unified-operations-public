@@ -1152,6 +1152,8 @@
                 href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
               - name: Troubleshoot issues from upgrades of Finance and Operations apps
                 href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+              - name: Troubleshoot Party and global address book problems
+                href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
               - name: General troubleshooting
                 href: data-entities/dual-write/dual-write-troubleshooting.md
         - name: Dual-write frequently asked questions
