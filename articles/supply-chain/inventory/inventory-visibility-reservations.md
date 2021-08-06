@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility reservations
-description: This topic describes how to set up the reservation feature to create a reservation, consume reservation, and/or unreserve specified inventory quantities using Inventory Visibility.
+description: This topic describes how to set up the reservation feature to create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -19,46 +19,47 @@ ms.dyn365.ops.version: 10.0.21
 [!include [preview banner](../includes/preview-banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-This topic describes how to set up the reservation feature to create a reservation, consume a reservation, and/or unreserve specified inventory quantities using Inventory Visibility.
+This topic describes how to set up the reservation feature to create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility.
 
-Reservations mark a quantity of inventory to be used in the future. When you create a reservation, the system prevents other orders from reserving or consuming the reserved goods until the reservation is consumed or unreserved. Reservations are created, consumed, or cancelled using API calls to the Inventory Visibility service.
+Reservations mark a quantity of inventory that will be used in the future. When you create a reservation, the system prevents other orders from reserving or consuming the reserved goods until the reservation is either consumed or unreserved. Reservations are created, consumed, and canceled by using API calls to the Inventory Visibility service.
 
-Optionally, you can set up Dynamics 365 Supply Chain Management (and other third part systems) to automatically offset the quantity reserved using Inventory Visibility. The offset quantity is deleted from the reservation records in Inventory Visibility.
+You can optionally set up Microsoft Dynamics 365 Supply Chain Management (and other third-party systems) to automatically offset the quantity that has been reserved by using Inventory Visibility. The offset quantity is deleted from the reservation records in Inventory Visibility.
 
-When you enable the reservation feature, Dynamics 365 Supply Chain Management will automatically be prepared to offset reservations made using Inventory Visibility.
+When you turn on the reservation feature, Supply Chain Management automatically becomes ready to offset reservations that are made by using Inventory Visibility.
 
 > [!NOTE]
-> The offset functionality requires Supply Chain Management version 10.0.22 or later. If you want to use Inventory Visibility reservations, then we recommend that you wait until you have upgraded Supply Chain Management to version 10.0.22 or later.
+> The offset functionality requires Supply Chain Management version 10.0.22 or later. If you want to use Inventory Visibility reservations, we recommend that you wait until you've upgraded Supply Chain Management to version 10.0.22 or later.
 
-## Enable the reservation feature
+## Turn on the reservation feature
 
-Use the following steps to enable the reservation Feature
+To turn on the reservation feature, follow these steps.
 
-1. Open **Inventory Visibility** in Power Apps.
-1. Go to the **Configurations** page and open the **Feature Management** Tab. Then turn on the **OnHandReservation** feature.
-1. Sign in to Dynamics 365 Supply Chain Management
-1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**
-1. Under **Reservation offset**, set **Enable reservation offset** to *Yes*.
+1. In Power Apps, open **Inventory Visibility**.
+1. Open the **Configurations** page.
+1. On the **Feature Management** tab, turn on the *OnHandReservation* feature.
+1. Sign in to Supply Chain Management.
+1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**.
+1. Under **Reservation offset**, set the **Enable reservation offset** option to *Yes*.
 
-## Use the Reservation Feature in Inventory Visibility
+## Use the reservation feature in Inventory Visibility
 
-When you call the reservation API, the system marks the reservation of the specified goods and quantities. You must define a reservation hierarchy and post requests that match the reservation hierarchy. After that, reservations can be made by calling the reservation APIs directly.
+When you call the reservation API, the system marks the reservation of the specified goods and quantities. You must define a reservation hierarchy and post requests that match that reservation hierarchy. The reservations can then be made by calling the reservation APIs directly.
 
 ### Configure the reservation hierarchy
 
-The reservation hierarchy describes the sequence of dimensions to specify when making reservations. It works the same way as index hierarchy works for on-hand queries.
+The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the index hierarchy works for on-hand queries.
 
-The reservation hierarchy can be different from the index hierarchy. This lets you implement category management where users can break down the dimensions into details to specify the needs for making more precise reservations.
+The reservation hierarchy can differ from the index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations.
 
-To configure soft reservation hierarchy on Power Apps page, go to **Configurations \> Soft reservation mapping** and set the reservation hierarchy by adding and/or modifying dimensions and their hierarchy levels.
+To configure a soft reservation hierarchy in Power Apps, open the **Configurations** page, and then, on the **Soft reservation mapping** tab, set up the reservation hierarchy by adding and/or modifying dimensions and their hierarchy levels.
 
 ### Call the reservation API
 
-Making reservations on the Inventory Visibility service is done by submitting a POST request to its URL, for example: `/api/environment/{environment-ID}/onhand/reserve`.
+Reservations are made in the Inventory Visibility service by submitting a POST request to the service's URL, such as `/api/environment/{environment-ID}/onhand/reserve`.
 
-To make a reservation, the request body must contain an organization ID, product ID, reserved quantities, and dimensions. The request generates a reservation ID unique for each reservation record. The reservation record contains the unique combination of product ID and dimensions.
+For a reservation, the request body must contain an organization ID, a product ID, reserved quantities, and dimensions. The request generates a unique reservation ID for each reservation record. The reservation record contains the unique combination of the product ID and dimensions.
 
-For reference, an example of the request body is as follows:
+Here is an example of the request body, for reference.
 
 ```json
 # Url
@@ -92,36 +93,38 @@ Authorization: "Bearer {access_token}"
 }
 ```
 
-## Offset reservations in Dynamics 365 Supply Chain Management
+## Offset reservations in Supply Chain Management
 
-For inventory transaction statuses that include a specified reserve offset modifier, the transaction update will offset the corresponding reserve record when all of following conditions are met:
+For inventory transaction statuses that include a specified reserve offset modifier, the transaction update will offset the corresponding reservation record when all the following conditions are met:
 
-- The reservation ID on the inventory transaction matches that of the Inventory Visibility service reservation record.
-- The dimensions of the inventory transaction are identical to those of the Inventory visibility service reservation record.
-- Changes in inventory transaction status trigger offsets for reservations when the inventory transaction status reflects that an order process has been completed or skipped.
+- The reservation ID on the inventory transaction matches the reservation ID of the reservation record in the Inventory Visibility service.
+- The dimensions of the inventory transaction are identical to the dimensions of the reservation record in the Inventory Visibility service.
+- Changes in inventory transaction status trigger offsets for reservations when the inventory transaction status reflects the fact that an order process has been completed or skipped.
 
-The offset quantity follows the inventory quantity specified on inventory transactions. The offset will not take effect when no reserved quantity remains in the Inventory Visibility service.
+The offset quantity follows the inventory quantity that is specified on inventory transactions. The offset doesn't take effect if no reserved quantity remains in the Inventory Visibility service.
 
 > [!NOTE]
-> The offset functionality is available from version 10.0.22
+> The offset functionality is available as of version 10.0.22
 
-### Set up the Reserve Offset Modifier
+### Set up the reserve offset modifier
 
-The reserve offset modifier determines the order processing stage to trigger offsets. The stage is traced by the order's inventory transaction status. To set it up:
+The reserve offset modifier determines the order processing stage that trigger offsets. The stage is traced by the order's inventory transaction status. To set up the reserve offset modifier, follow these steps.
 
 1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters \> Reservation offset**.
-1. Set **Reserve offset modifier** to one of the following values:
-    - *On order* – For *On transaction* status, an order will send an offset request when an order is created.
-    - *Reserve* – For *Reserve ordered transaction* status, an order will send an offset request when the order reserved, picked, packing-slip posted, or invoiced. The request will only be triggered once, for the first step when the mentioned process takes place.
+1. Set the **Reserve offset modifier** field to one of the following values:
+
+    - *On order* – For the *On transaction* status, an order will send an offset request when it's created.
+    - *Reserve* – For the *Reserve ordered transaction* status, an order will send an offset request when it's reserved, picked, packing-slip posted, or invoiced. The request will be triggered only once, for the first step when the mentioned process occurs.
 
 ### Set up reservation IDs
 
-The reservation ID marks an reservation record on inventory visibility uniquely. In Dynamics 365 Supply Chain Management, users put reservations in order lines to mark the offset for the corresponding reservation record.
+The reservation ID uniquely marks a reservation record in Inventory Visibility. In Supply Chain Management, users put reservations on order lines to mark the offset for the corresponding reservation record.
 
-To set reservation IDs in Supply Chain Management:
+To set up reservation IDs in Supply Chain Management, follow these steps.
 
 1. Open a sales order (for example, from the **All sales orders** page).
 1. On the **Sales order lines** FastTab, select an order line.
-1. From the **Sales order lines** FastTab toolbar, select **Update line \> Inventory \> Inventory Visibility integration**.
+1. On the **Sales order lines** FastTab, on the toolbar, select **Update line \> Inventory \> Inventory Visibility integration**.
 1. Enter the relevant reservation IDs.
-1. The inventory status change matches the offset modifier setup.
+
+The inventory status change matches the offset modifier setup.
