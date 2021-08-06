@@ -43,14 +43,14 @@ Before you complete the procedures in this topic, the following prerequisites mu
 ## Import an Electronic invoicing feature from the Microsoft configuration provider 
 
 1. Sign in to your Regulatory Configuration Service (RCS) account.
-2. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
+2. In the **Globalization features** workspace, in the **Features** section, select the **Electronic invoicing** tile.
 3. Select **Import**, and then select **Synchronize**.
 4. Filter the **Configuration provider** column by the term **Microsoft**.
-5. Select the name of an Electronic invoicing feature from the table at the beginning of this topic, and then select **Import**.
+5. Select the name of an Electronic invoicing feature from the table, and then select **Import**.
 
 ## Create an Electronic invoicing feature under your organization provider
 
-1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
+1. In RCS, in the **Features** section of the **Globalization features** workspace, select the **Electronic invoicing** tile.
 2. Select **Add** > **Based on existing feature**, and in the **Name** field, enter the name of the Electronic invoicing feature.
 3. In the **Description** field, enter a description of the feature.
 4. In the **Base feature field**, select the imported Electronic invoicing feature from the Microsoft configuration provider.
@@ -186,7 +186,7 @@ For the specific steps, see the "Get started" documentation that is available fo
 7. Set the **Deploy to service environment** option to **No**.
 10. Select **OK**.
 
-## Turn on the Electronic invoicing feature in Finance or Supply Chain Management
+## Turn on the Electronic invoicing feature in Dynamics 365 Finance or Dynamics 365 Supply Chain Management
 
 1. Sign in to Finance or Supply Chain Management, and verify that you're in the correct legal entity.
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
@@ -216,7 +216,7 @@ For the specific steps, see the "Get started" documentation that is available fo
 ## Issue electronic invoices
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-2. On the **Record to include** FastTab, select **Filter**.
+2. On the **Records to include** FastTab, select **Filter**.
 3. Select **Add** to add a table name to the query filter.
 4. Select the table that contains the invoices.
 
