@@ -246,7 +246,7 @@ To define VAT registration number (VRN) which must be used by MTD feature in Fin
 
 ## <a id="format"></a>Paper format of VAT statement (VAT 100)
 
-You can generate a paper format of the **VAT 100** report by using the **Report sales tax for settlement period** dialog box (**Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**). Alternatively, you can generate the statement for a selected sales tax payment transaction from the **Sales tax payments** page (**Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**). In both cases, the **VAT 100** report is generated in Microsoft SQL Server Reporting Services (SSRS) format.
+You can generate a paper format of the **VAT 100** report by using the **Report sales tax for settlement period** dialog box (**Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**). Alternatively, you can generate the statement for a selected sales tax payment transaction from the **Sales tax payments** page (**Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**). 
 
 To generate the **VAT 100** report in Excel format instead of [SSRS format](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/removed-deprecated-features-finance#vat-100-report-for-the-united-kingdom-in-ssrs-format), you must define an ER format on the **General ledger parameters** page. 
 
