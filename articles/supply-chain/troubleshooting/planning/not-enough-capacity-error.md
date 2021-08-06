@@ -15,8 +15,6 @@ ms.dyn365.ops.version: 10.0.20
 
 # Not enough capacity could be found
 
-[!include [banner](../includes/banner.md)]
-
 ## Symptoms
 
 When you run scheduling, you may receive the following error:
