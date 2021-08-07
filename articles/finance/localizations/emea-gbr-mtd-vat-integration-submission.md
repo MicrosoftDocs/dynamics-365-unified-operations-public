@@ -31,19 +31,19 @@ ms.search.validFrom: 08/07/2021
 
 This topic explains how to submit VAT return to HMRC's MTD web-service.
 
-Submission of your VAT return is composed of to processes:
+Submission of your VAT return is composed of two parts:
 
 1. VAT obligation retrieve
 
 The next illustration shows simplified diagram of the VAT obligation retrieve processing implemented in Electronic messages in scope of **UK MTD VAT returns** processing.
 
-![VAT obligation retrieve](media/uk-mtd-submission-schema.png)
+![VAT obligation retrieve](media/uk-mtd-obligation-schema.png)
 
 2. VAT return submission
 
 The next illustration shows simplified diagram of the VAT return submission processing implemented in Electronic messages in scope of **UK MTD VAT returns** processing.
 
-![VAT obligation retrieve](media/uk-mtd-fp-vat-processing.png)
+![VAT obligation retrieve](media/uk-mtd-submission-schema.png)
 
 ## Retrieve VAT obligations from HMRC
 
