@@ -34,6 +34,10 @@ web application.
 
 ## Retrieve information about VAT payments
 
+The next illustration shows simplified diagram of the VAT obligation retrieve processing implemented in Electronic messages in scope of UK MTD VAT returns processing.
+
+![Retrieve information about VAT payments](media/uk-mtd-payment-schema.png)
+
 To retrieve information about VAT payments, complete the following steps.
 
 1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select the **UK MTD VAT returns** processing. 
@@ -45,6 +49,8 @@ To retrieve information about VAT payments, complete the following steps.
 7. On the **Attachments** page for the selected message, select the last attachment, and then, on the Action Pane, select **Open**.
 
 ## Retrieve information about VAT liabilities
+
+![Retrieve information about VAT liabilities](media/uk-mtd-liabilities-schema.png)
 
 To retrieve information about VAT liabilities, complete the following steps.
 
