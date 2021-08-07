@@ -43,7 +43,7 @@ The next illustration shows simplified diagram of the VAT obligation retrieve pr
 
 The next illustration shows simplified diagram of the VAT return submission processing implemented in Electronic messages in scope of **UK MTD VAT returns** processing.
 
-![VAT obligation retrieve](media/uk-mtd-submission-schema.png)
+![VAT return submission](media/uk-mtd-submission-schema.png)
 
 ## Retrieve VAT obligations from HMRC
 
