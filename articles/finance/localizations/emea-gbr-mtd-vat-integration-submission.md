@@ -43,7 +43,7 @@ The next illustration shows simplified diagram of the VAT obligation retrieve pr
 
 The next illustration shows simplified diagram of the VAT return submission processing implemented in Electronic messages in scope of **UK MTD VAT returns** processing.
 
-![VAT return submission](media/uk-mtd-submission-schema.png)
+![VAT obligation retrieve](media/uk-mtd-submission-schema.png)
 
 ## Retrieve VAT obligations from HMRC
 
@@ -172,5 +172,10 @@ A VAT return can be submitted to HMRC just one time for each period. Therefore, 
 If, for some reason, the **Import response for VAT return** action isn't automatically run, you can manually initialize it by selecting **Import response** on the **Messages** FastTab. The **Import response** button is available only for electronic messages that have a status of **Sent VAT return**. The electronic message status is automatically updated to this value when a VAT return in JSON format is successfully submitted to the electronic message.
 
 The **Action log** FastTab saves information about all the actions that are performed for the electronic message.
+
+> [!IMPORTANT]
+> In case when during VAT obligations request or VAT return request to HMRC you receive a "401" error with the message details stating "Access token cannot be refreshed. System administrator must consent to transmit information outside of Dynamics 365 for Finance and Operations via initialization 'Get authorization code' button on Web applications page.", system administrator must go through the [Authorize your Dynamics 365 Finance to interoperate with HMRC's MTD web-service](emea-gbr-mtd-vat-integration-authorization.md) and consent submitting both customer content and personal data to HMRC, as part of the submission of VAT information to the Making Tax Digital for VAT. Your privacy is important to us. To learn more read our [Privacy Notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
+>
+> ![Error message if system admin consent wasn't given.](media/uk-mtd-system-administrator-consent-log-error.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
