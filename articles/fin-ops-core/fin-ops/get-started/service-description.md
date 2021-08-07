@@ -352,13 +352,13 @@ Also known as a [Tier 1 sandbox](https://docs.microsoft.com/en-us/dynamics365/fi
 Any period of time when end users are unable to login or access to their active tenant, due to a failure in the unexpired platform or the service infrastructure as Microsoft determines from automated health monitoring and system logs. Downtime does not include scheduled downtime, the unavailability of service add-on features, the inability to access the service due to your modifications of the service, or periods where the scale unit capacity is exceeded.
 
 ### Implementation partner 
-The partner that the customer choses to customize, configure, implement, and manage its Finance and Supply Chain solutions.
+The partner who is selected by the customer to customize, configure, implement, and manage its Finance and Operations solutions.
 
-### [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs) 
-The administrative portal for lifecycle management of Finance and Operations from trial to implementation to post-production management and support.
+### Microsoft Dynamics Lifecycle Services (LCS) 
+The administrative portal for lifecycle management of Finance and Operations from trial to implementation to post-production management and support. For details, refer to [Lifecycle Services Resources](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs)
 
-### Microsoft customer support 
-Microsoft's support team dedicated to providing quality service for Finance and Supply Chain Management.
+### Microsoft Customer Support Services (CSS) 
+Microsoft's global support team dedicated to providing quality service for Finance and Operations.
 
 ### Non-production instance 
 Any of the following instances of a service that are used by the customer for validating extensions and other development tasks:
@@ -367,25 +367,28 @@ Any of the following instances of a service that are used by the customer for va
 
 - **Sandbox Tier 2:** Standard Acceptance Testing instance 
 
-- **Sandbox Tiers 3-5:** Add-on aandboxes [Details for each Tier](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning?toc=/dynamics365/finance/toc.json#selecting-the-correct-tier-2-or-higher-environment)
+- **Sandbox Tiers 3-5:** Add-on sandboxes [Details for each Tier](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning?toc=/dynamics365/finance/toc.json#selecting-the-correct-tier-2-or-higher-environment)
 
 ### Production instance 
-Instance of Finance and Supply Chain Management used by the customer for managing its "live" daily transactions.
+An environment or instance of Finance and Operations that is used by customer for managing its "live" daily transactions and business processes.
 
-### Sandbox/staging environment 
-Instance of Finance and Supply Chain Management used by the customer for validating extensions and other development tasks.
+### Sandbox environment 
+A non-production environment or instance of Finance and Operations that is used by the customer for demonstration, training, user acceptance testing, validation of extensions and other testing tasks.
+
+### Development environment
+A non-production sandbox environment that is used to develop extensions for Finance and Operations. Customers deploy this environment to their own Azure subscription from LCS. This environment can also be used for demonstration, training, or other testing tasks.    
 
 ### Service 
 The core services included in Dynamics 365 for Finance and Operations.
 
-### Service Level Agreement for Microsoft Online Services [(SLA)](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services) 
-The SLA applies to Microsoft's Online Services, including Finance and Operations.
+### Service Update
+Microsoft services Finance and Operations on consistent basis with Service Updates. Customers set their Service Update calendar based on their business needs. For more information, refer to [One Version Service Updates](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview)
+
+### Service Level Agreement for Microsoft Online Services (SLA)
+The SLA applies to Microsoft's Online Services, including Finance and Operations. For more details, refer to [Service Level Agreements](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
 
 ### Incident 
-An issue with Finance and Operations that the customer encounters while using the service.
-
-### Update request
-Request raised to Microsoft for specific update.
+An issue that the customer encounters while using the Finance and Operations service and submits a ticket via LCS.
 
 ### User
 A single person consuming Finance and Operations environments, associated with a customer's tenant.
