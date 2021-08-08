@@ -104,9 +104,11 @@ For more information, see [Onboarding an implementation project](../imp-lifecycl
 
 Finance and Operations is served from a number of Azure Regions worldwide. Finance and Operations provides functionality to support different country/regions as well as native language. For more details, refer to [Localization and Regulatory Features](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/finance/toc.json#localization-and-regulatory-features) 
 
-Customers in regulated industry or commercial organizations that do business with entities in France that require local data residency should review [Finance and Operations in France](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/france-local-deployment)
+### Country specific considerations
 
-Customers with operations in China should review [Finance and Operations operated by 21Vianet in China](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/china-local-deployment)
+- Customers in regulated industry or commercial organizations that do business with entities in France that require local data residency should review [Finance and Operations in France](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/france-local-deployment)
+
+- Customers with operations in China should review [Finance and Operations operated by 21Vianet in China](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/china-local-deployment)
 
 ## Environment and data management 
 
