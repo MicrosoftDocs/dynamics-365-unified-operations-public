@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Release 10.0.15
 
 # Inventory Visibility Add-in overview
 
+[!include [banner](../includes/banner.md)]
+
 The Inventory Visibility Add-in (also referred to as *Inventory Visibility*) is an independent and highly scalable microservice that enables real-time on-hand inventory tracking. Therefore, it provides a global view of inventory.
 
 External systems access the service through RESTful APIs. In that way, they can either query on-hand information on given sets of dimensions or make changes to your inventory in different customized data sources.
