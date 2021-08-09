@@ -35,7 +35,7 @@ When you turn on the reservation feature, Supply Chain Management automatically 
 To turn on the reservation feature, follow these steps.
 
 1. In Power Apps, open **Inventory Visibility**.
-1. Open the **Configurations** page.
+1. Open the **Configuration** page.
 1. On the **Feature Management** tab, turn on the *OnHandReservation* feature.
 1. Sign in to Supply Chain Management.
 1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**.
@@ -51,7 +51,7 @@ The reservation hierarchy describes the sequence of dimensions that must be spec
 
 The reservation hierarchy can differ from the index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations.
 
-To configure a soft reservation hierarchy in Power Apps, open the **Configurations** page, and then, on the **Soft reservation mapping** tab, set up the reservation hierarchy by adding and/or modifying dimensions and their hierarchy levels.
+To configure a soft reservation hierarchy in Power Apps, open the **Configuration** page, and then, on the **Soft reservation mapping** tab, set up the reservation hierarchy by adding and/or modifying dimensions and their hierarchy levels.
 
 ### Call the reservation API
 

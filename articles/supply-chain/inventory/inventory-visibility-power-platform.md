@@ -21,20 +21,20 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic describes how to use the Inventory Visibility app.
 
-Inventory Visibility provides a model-driven app for visualization. The app contains three pages: **Configurations**, **APIs**, and **On-hand list**. It has the following features:
+Inventory Visibility provides a model-driven app for visualization. The app contains three pages: **Configuration**, **Operational visibility**, and **Inventory summary**. It has the following features:
 
 - It provides a user interface (UI) for on-hand configuration and soft reservation configuration.
 - It supports real-time on-hand inventory queries on various dimension combinations.
 - It provides a UI for posting reservation requests.
-- It provides a customized view of the on-hand list for products together with all dimensions
+- It provides a customized view of the inventory on-hand for products together with all dimensions
 
 ## Prerequisites
 
 Before you begin, install and set up the Inventory Visibility Add-in as described in [Set up Inventory Visibility](inventory-visibility-setup.md).
 
-## <a name="configuration"></a>Configurations
+## <a name="configuration"></a>Configuration
 
-The **Configurations** page helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default setting. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration in [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems.
+The **Configuration** page helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default setting. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration in [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems.
 
 ### Define data sources
 
@@ -43,8 +43,11 @@ You define each *data source* that you want to integrate with Inventory Visibili
 To add a data source, follow these steps.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configurations** page.
+1. Open the **Configuration** page.
 1. On the **Data Source** tab, select **New Data Source** to add a data source.
+
+> [!NOTE]
+> When you add a data source, be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
 
 ### Set up dimension mappings
 
@@ -77,7 +80,7 @@ Inventory Visibility provides a list of base dimensions that can be mapped from 
 To add dimension mappings, follow these steps.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configurations** page.
+1. Open the **Configuration** page.
 1. On the **Data Source** tab, in the **Dimension Mappings** section, select **Add** to add dimension mappings.
 1. In the **Dimension Name** field, specify the source dimension.
 1. In the **To Base Dimension** field, select the dimension in Inventory Visibility that you want to map.
@@ -113,7 +116,7 @@ Inventory Visibility has a list of default physical measures. These default phys
 If the data source is Supply Chain Management, you don't have to re-create the default physical measures. However, for external data sources, you can create new physical measures by following these steps.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configurations** page.
+1. Open the **Configuration** page.
 1. On the **Data Source** tab, in the **Physical Measures** section, select **Add**, specify a source measure name, and save your changes.
 
 ## Define the product hierarchy index
@@ -123,7 +126,7 @@ By setting up aggregated dimension groups, you can use Inventory Visibility to q
 To set up your product hierarchy index, follow these steps.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configurations** page.
+1. Open the **Configuration** page.
 1. On the **Product Hierarchy Index** tab, in the **Dimension Mappings** section, select **Add** to add dimension mappings.
 1. By default, a list of indexes is provided. To modify an existing index, select **Edit** or **Add** in the section for the relevant index. To create a new index set, select **New index set**. For each row in every index set, in the **Dimension** field, select from the list of base dimensions. Values for the following fields are automatically generated:
 
@@ -189,7 +192,7 @@ You can use Inventory Visibility to query on both inventory physical measures an
 The configuration lets you define a set of modifiers that are added or subtracted to get the total aggregated output quantity.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configurations** page.
+1. Open the **Configuration** page.
 1. On the **Calculated Measure** tab, select **New Calculate Measure** to add a calculated measure. Then set the fields as described in the following table.
 
     | Field | Value |
@@ -219,12 +222,12 @@ Before you can edit the **Soft Reservation Mapping** tab, you must turn on the *
 
 By setting up the mapping from the physical measure to the calculated measure, you enable the Inventory Visibility service to automatically validate reservation availability, based on the physical measure.
 
-Before you set up this mapping, the physical measures, calculated measures, and their data sources must be defined on the **Data source** and **Calculated measure** tabs of the **Configurations** page in Power Apps (as described earlier in this topic).
+Before you set up this mapping, the physical measures, calculated measures, and their data sources must be defined on the **Data source** and **Calculated measure** tabs of the **Configuration** page in Power Apps (as described earlier in this topic).
 
 To define the soft reservation mapping, follow these steps.
 
 1. Define the physical measure that serves as the soft reservation measure (for example, `softreservordered`).
-1. On the **Calculated measure** tab of the **Configurations** page, define the *available for reservation* (AFR) calculated measure that contains the AFR computation formula that you want to map to the physical measure. For example, you might set up `availforreserv` (available for reservation) so that it's mapped to the previously defined `softreservordered` physical measure. In this way, you can find which quantities that have the `softreservordered` inventory status will be available for reservation. The following table shows the AFR computation formula.
+1. On the **Calculated measure** tab of the **Configuration** page, define the *available for reservation* (AFR) calculated measure that contains the AFR computation formula that you want to map to the physical measure. For example, you might set up `availforreserv` (available for reservation) so that it's mapped to the previously defined `softreservordered` physical measure. In this way, you can find which quantities that have the `softreservordered` inventory status will be available for reservation. The following table shows the AFR computation formula.
 
     | Modifier | Data source | Measure |
     |---|---|---|
@@ -233,7 +236,7 @@ To define the soft reservation mapping, follow these steps.
     | `Subtraction` | `pos` | `outbound` |
     | `Subtraction` | `iv` | `softreservordered` |
 
-1. Open the **Configurations** page.
+1. Open the **Configuration** page.
 1. On the **Soft Reservation Mapping** tab, set up the mapping from the physical measure to the calculated measure. For the previous example, you might use the following settings to map `availforreserv` to the previously defined `softreservordered` physical measure.
 
     | Physical measure data source | Physical measure | Available for reservation data source | Available for reservation calculated measure |
@@ -269,11 +272,11 @@ The dimension order should strictly follow the reservation hierarchy sequence, d
 
 ### <a name="feature-switch"></a>Control feature management
 
-The Inventory Visibility Add-in provides features such as *OnHandReservation* and *OnHandMostSpecificBackgroundService*. By default, these features are turned off. To use them, open the **Configurations** page in Power Apps, and then, on the **Feature Management** tab, turn them on.
+The Inventory Visibility Add-in provides features such as *OnHandReservation* and *OnHandMostSpecificBackgroundService*. By default, these features are turned off. To use them, open the **Configuration** page in Power Apps, and then, on the **Feature Management** tab, turn them on.
 
 ### Complete and update the configuration
 
-After you've completed the configuration, you must commit all the changes to Inventory Visibility. To commit changes, select **Update Configuration** in the upper-right corner of the **Configurations** page in Power Apps.
+After you've completed the configuration, you must commit all the changes to Inventory Visibility. To commit changes, select **Update Configuration** in the upper-right corner of the **Configuration** page in Power Apps.
 
 The first time that you select **Update Configuration**, the system requests your credentials.
 
@@ -283,9 +286,12 @@ The first time that you select **Update Configuration**, the system requests you
 
 After you sign in, the configuration is updated in the Inventory Visibility service.
 
+> [!NOTE]
+> Be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
+
 ### <a name="get-service-endpoint"></a>Find the service endpoint
 
-If you don't know the correct Inventory Visibility service endpoint, open the **Configurations** page in Power Apps, and then select **Show Service Endpoint** in the upper-right corner. The page will show the correct service endpoint.
+If you don't know the correct Inventory Visibility service endpoint, open the **Configuration** page in Power Apps, and then select **Show Service Endpoint** in the upper-right corner. The page will show the correct service endpoint.
 
 ## Operational visibility
 
@@ -311,7 +317,7 @@ To post a reservation request, you must enter a value in the request body. Use t
 
 ## Inventory summary
 
-**Inventory summary** is a customized view for the *Inventory OnHand Sum Entity*. It provides an on-hand list for products together with all dimensions. By using the **Advanced Filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters.
+**Inventory summary** is a customized view for the *Inventory OnHand Sum Entity*. It provides an inventory summary for products together with all dimensions. By using the **Advanced Filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters.
 
 To learn more about how to use the **Advanced Filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced)
 
@@ -319,8 +325,8 @@ The top of the customized view provides three fields: **Default Dimension**, **C
 
 You can select the column header to filter or sort the current result.
 
-The bottom of the customized view shows information such as "50 records (13 selected)" or "50 records." This information refers to the currently loaded records from the **Advanced Filter** result. The text "13 selected" refers to the number of records that have been selected by using the column header filter for the loaded records.
+The bottom of the customized view shows information such as "50 records (29 selected)" or "50 records." This information refers to the currently loaded records from the **Advanced Filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records.
 
-At the bottom of the view is a **Load more** button that you can use to load more records from Dataverse. The default number of records that is loaded is 50. When you select **Load more**, the next available records are loaded into the view. The number on the **Load More** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
+At the bottom of the view is a **Load more** button that you can use to load more records from Dataverse. The default number of records that is loaded is 50. When you select **Load more**, the next 1,000 available records are loaded into the view. The number on the **Load More** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
 
 ![Inventory Summary](media/inventory-visibility-onhand-list.png "Inventory Summary")
