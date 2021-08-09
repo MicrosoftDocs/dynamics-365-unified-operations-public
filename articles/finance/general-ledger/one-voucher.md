@@ -120,7 +120,7 @@ In this scenario, the customers in the single voucher are the same customer, bec
 If the Reimbursement periodic task is run from the Accounts receivable module, it creates a transaction to move the balance from a customer to a vendor. For this scenario, One voucher must be used to reimburse the customer.
 
 ### Fixed asset maintenance: Catch-up depreciation, split asset, calculate depreciation on disposal
-With version 10.0.21 and later, Fixed assets transactions for catch-up depreciation, splitting an asset, and depreciation calculations when an asset is disposed will be created using different voucher numbers.
+With version 10.0.21 and later, Fixed assets transactions for catch-up depreciation, splitting an asset, and calculating depreciation for the disposal of an asset will be created using different voucher numbers.
 
 ### Bills of exchange and promissory notes
 Bills of exchange and promissory notes require that One voucher be used, because the transactions move the customer or vendor balance from one Accounts receivable/Accounts payable ledger account to another, based on the state of the payment.
