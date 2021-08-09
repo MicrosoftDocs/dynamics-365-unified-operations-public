@@ -58,7 +58,8 @@ When a lease is associated with a fixed asset, the **Service life** field on the
 
  - The asset’s useful life
  - The lease term from the associated lease book
- - The asset’s useful life if the **Transfer of ownership** field is enabled for the lease book 
+
+If the **Transfer of ownership** field is set to **Yes** for the lease book, the value in the **Service life** field will always be the asset’s useful life. 
  
 The Service life will be updated every time the lease is adjusted to ensure that the right-of-use asset is depreciated over the term lease, as if it were depreciated in Asset leasing.
 
