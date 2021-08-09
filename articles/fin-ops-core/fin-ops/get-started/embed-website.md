@@ -4,7 +4,7 @@
 title: Embed third-party apps 
 description: This topic explains how to embed third-party apps to augment the product's functionality.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -86,7 +86,7 @@ Use this procedure if the app that you want to embed isn't related to an existin
 
 After you've embedded an app by using one of the methods described in the previous sections, you may want to share the view with other users in the system. To share an embedded app, use one of the following methods:
 
-- **Publish the view (Recommended):** If the embedded app has been saved to a view, the recommended and preferred way to share it is to publish the view to users who have the appropriate security roles in the targeted legal entities. Then, only the desired users will see the embedded on that page. For more information about how to publish a view, see [Publishing views](saved-views.md#publishing-views).
+- **Publish the view (Recommended):** If the embedded app has been saved to a view, the recommended and preferred way to share it is to publish the view to users who have the appropriate security roles in the targeted legal entities. Then, only the desired users will see the embedded app on that page. For more information about how to publish a view, see [Publishing views](saved-views.md#publishing-views).
 
     You can also publish an app that has been embedded as a full-page experience from the dashboard. On the dashboard, right-click (or select and hold) the tile that is associated with the app, select **Personalize**, and then select **Publish page**. An experience similar to the *Publishing views* experience is shown, allowing you to select the security roles you want to publish to. In update 10.0.21 or later, if the **Improved legal entity support for saved views** feature is turned on, you can also publish the app to the desired legal entities.  
 
