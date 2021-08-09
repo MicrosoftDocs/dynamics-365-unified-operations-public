@@ -34,7 +34,7 @@ Before you begin, install and set up the Inventory Visibility Add-in as describe
 
 ## <a name="configuration"></a>Configurations
 
-The **Configurations** page helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default setting. Additionally, based on your business requirements and your external system inventory posting requirements, you can modify the configuration in [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems.
+The **Configurations** page helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default setting. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration in [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems.
 
 ### Define data sources
 
@@ -85,7 +85,7 @@ To add dimension mappings, follow these steps.
 
 ![Adding dimension mappings](media/inventory-visibility-dimension-mapping.png "Adding dimension mappings")
 
-For example, if your data source includes a product color dimension, you can map it to the `ColorId` base dimension to add a `ProductColor` customer dimension in the `exterchannel` data source. It's then mapped to the `ColorId` base dimension.
+For example, if your data source includes a product color dimension, you can map it to the `ColorId` base dimension to add a `ProductColor` custom dimension in the `exterchannel` data source. It's then mapped to the `ColorId` base dimension.
 
 ## Create a physical measure
 
@@ -315,11 +315,11 @@ To post a reservation request, you must enter a value in the request body. Use t
 
 To learn more about how to use the **Advanced Filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced)
 
-The top of the customer view provides three fields: **Default Dimension**, **Custom Dimension**, and **Measure**. You can use these fields to control which columns are visible.
+The top of the customized view provides three fields: **Default Dimension**, **Custom Dimension**, and **Measure**. You can use these fields to control which columns are visible.
 
 You can select the column header to filter or sort the current result.
 
-The bottom of the customer view shows information such as "50 records (13 selected)" or "50 records." This information refers to the currently loaded records from the **Advanced Filter** result. The text "13 selected" refers to the number of records that have been selected by using the column header filter for the loaded records.
+The bottom of the customized view shows information such as "50 records (13 selected)" or "50 records." This information refers to the currently loaded records from the **Advanced Filter** result. The text "13 selected" refers to the number of records that have been selected by using the column header filter for the loaded records.
 
 At the bottom of the view is a **Load more** button that you can use to load more records from Dataverse. The default number of records that is loaded is 50. When you select **Load more**, the next available records are loaded into the view. The number on the **Load More** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
 

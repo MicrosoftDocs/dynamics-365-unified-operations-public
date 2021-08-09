@@ -36,7 +36,7 @@ Before you start to work with Inventory Visibility, you must complete the follow
 
 ## <a name="data-source-configuration"></a>Data source configuration
 
-The data source represents the system that your data comes from. Examples include `fno` (which stands for "Dynamics 365 Finance") and `pos` (which stands for "point of sale").
+The data source represents the system that your data comes from. Examples include `fno` (which stands for "Dynamics 365 Finance and Operations apps") and `pos` (which stands for "point of sale").
 
 The data source configuration includes the following parts:
 
@@ -407,8 +407,8 @@ The `OnHand` calculated measure is configured for the `iv` data source as shown 
 |---|---|---|
 | Addition | `fno` | `PhysicalInvent` |
 | Addition | `iom` | `OnHand` |
-| Addition | `sap` | `Unrestricted` |
-| Addition | `sap` | `QualityInspection` |
+| Addition | `erp` | `Unrestricted` |
+| Addition | `erp` | `QualityInspection` |
 | Addition | `pos` | `PosInbound` |
 | Subtraction | `pos` | `PosOutbound` |
 
@@ -462,8 +462,8 @@ The `OnHandAvailable` calculated measure is configured for the `iv` data source 
 |---|---|---|
 | Addition | `fno` | `PhysicalInvent` |
 | Addition | `iom` | `OnHand` |
-| Addition | `sap` | `Unrestricted` |
-| Addition | `sap` | `QualityInspection` |
+| Addition | `erp` | `Unrestricted` |
+| Addition | `erp` | `QualityInspection` |
 | Addition | `pos` | `PosInbound` |
 | Subtraction | `fno` | `ReservPhysical` |
 | Subtraction | `iv` | `SoftReservPhysical` |
@@ -477,8 +477,8 @@ The `AvailableToReserve` calculated measure is configured for the `iv` data sour
 |---|---|---|
 | Addition | `fno` | `PhysicalInvent` |
 | Addition | `iom` | `OnHand` |
-| Addition | `sap` | `Unrestricted` |
-| Addition | `sap` | `QualityInspection` |
+| Addition | `erp` | `Unrestricted` |
+| Addition | `erp` | `QualityInspection` |
 | Addition | `pos` | `PosInbound` |
 | Addition | `fno` | `Ordered` |
 | Addition | `fno` | `Arrived` |
@@ -502,8 +502,8 @@ The `InventorySupply` calculated measure is configured for the `iv` data source 
 | Addition | `iv` | `Ordered` |
 | Addition | `fno` | `PhysicalInvent` |
 | Addition | `iom` | `OnHand` |
-| Addition | `sap` | `Unrestricted` |
-| Addition | `sap` | `QualityInspection` |
+| Addition | `erp` | `Unrestricted` |
+| Addition | `erp` | `QualityInspection` |
 | Addition | `pos` | `PosInbound` |
 | Subtraction | `pos` | `PosOutbound` |
 
@@ -581,9 +581,9 @@ The following physical measures are configured for the `pos` data source:
 - `PosInbound`
 - `PosOutbound`
 
-##### Calculated measure for the pos data source
+##### AvailQuantity calculated measure
 
-The calculated measure that is shown in the following table is configured for the `pos` data source. <!-- KFM: Are we missing a name for this calculated measure? -->
+The `AvailQuantity` calculated measure is configured for the `pos` data source as shown in the following table.
 
 | Calculation type | Data source | Physical measure |
 |---|---|---|
@@ -598,9 +598,9 @@ The following physical measures are configured for the `iom` (intelligent order 
 - `OnOrder`
 - `OnHand`
 
-#### Configuration of the sap data source
+#### Configuration of the erp data source
 
-The following physical measures are configured for the `sap` data source: <!-- KFM: Can we tell what `sap` stands for? -->
+The following physical measures are configured for the `erp` (enterprise resource planning) data source:
 
 - `Unrestricted`
 - `QualityInspection`
