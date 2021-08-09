@@ -53,6 +53,8 @@ There are two approaches to viewing your inventory:
 
 ### Soft reservations
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Soft reservation applies when a business must reserve a specific quantity of products to support, for example, sales order fulfillment that avoids over-selling. When a sales order is created and confirmed in Supply Chain Management or other order management systems, a request to reserve the quantity is sent to Inventory Visibility. Inventory Visibility lets you reserve products that have dimension details and specific inventory transaction types. (For more information, see [Inventory Visibility app](inventory-visibility-power-platform.md).) After the quantity is successfully reserved, a reservation ID is returned. You can use this reservation ID to link back to the original order in Supply Chain Management or other order management systems.
 
 The functionality is designed so that a reservation in Inventory Visibility doesn't change the total quantity. Instead, it only flags the reserved quantity. (For this reason, it's called a *soft reservation*.) The soft-reserved quantity can be offset when the products are consumed in Supply Chain Management or a third-party system by calling the API again to make a quantity deduction and update the total quantity in Inventory Visibility. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
