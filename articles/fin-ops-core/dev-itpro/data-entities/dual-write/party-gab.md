@@ -134,12 +134,10 @@ The grid includes the following columns:
 
 You can use the **New Electronic Address** button above the grid to create as many addresses as you want.
 
-Electronic addresses are available only in this grid. In future releases, all postal address and electronic address fields will be removed from other tabs (for example, the **Summary** and **Details** tabs). 
-
-For now, think of contact details displayed on the **Details** tab as the read-only copy of the primary electronic address like primary phone, primary email, primary telephone, primary fax and primary twitter id. Also, during the lead qualification process you may provide both business phone number and mobile phone number. The business phone number is considered as the primary phone with IsMobile=No and mobile phone number is considered as the secondar phone with IsMobile=Yes.
+Electronic addresses are available only in this grid. In future releases, all postal address and electronic address fields will be removed from other tabs, for example, the **Summary** and **Details** tabs. Essentially, contact details displayed on the **Details** tab are read-only copies of the primary electronic address like primary phone, primary email, primary telephone, primary fax and primary Twitter ID. During the lead qualification process you can provide both a business phone number and a mobile phone number. The business phone number is considered the primary phone if **IsMobile=No** and mobile phone number is considered the secondary phone if **IsMobile=Yes**.
 
 > [!TIP]
-> Use **Addresses** and **Electronic Addresses** tabs on Account and Contact forms to manage postal and electronic addresses. It ensures address data synchronization to Finance and Operations apps.
+> Use **Addresses** and **Electronic Addresses** tabs on the **Account** and **Contact** forms to manage postal and electronic addresses. This ensures that address data synchronizes to Finance and Operations apps.
 
 ## Setup
 
