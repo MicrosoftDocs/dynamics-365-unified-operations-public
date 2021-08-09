@@ -1987,6 +1987,8 @@
           href: procurement/request-quotations.md
         - name: Create a request for quotation
           href: procurement/tasks/create-request-quotation.md
+        - name: Sealed bidding for RFQs
+          href: procurement/sealed-bidding.md
         - name: Create a requisition that uses an RFQ
           href: procurement/tasks/create-requisition-uses-rfq.md
         - name: Create a scoring method for RFQs
