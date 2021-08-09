@@ -43,7 +43,7 @@ There are three ways to embed a canvas app into a Finance and Operations app. Yo
 
 -  Embed the canvas app into the **Power Apps** button on the standard Action Pane of a page. Apps that you add using this approach appear as items in the **Power Apps** menu button and these apps open in side panes. 
 -  Embed the canvas app directly on an existing page as a new tab page (pivot tab, FastTab, blade, or workspace section).
--  Create a new full-page experience for the canvas app from the dashboard
+-  Create a new full-page experience for the canvas app from the dashboard.
 
 When you configure your embedded canvas app, you can select a single field that you want to send as context to the app. This step enables the app to be responsive, based on the data that you're currently viewing.
 
