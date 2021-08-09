@@ -54,6 +54,6 @@ This procedure shows you to how create a new fixed asset book and associate it w
 
   - Note that Depreciation periods are calculated after the service life of the asset is entered.  
   - The depreciation convention can be set as required for tax purposes.
-  - Note that for fixed assets that are associated with leases, the value in the **Service life** field will be overridden by either the lesser of the lease book’s lease term or asset’s useful life, or the asset’s useful life if the Transfer of ownership field is enabled for the lease book.
+  - Note that for fixed assets that are associated with leases, the value in the **Service life** field will be overridden by the lesser of either the lease term in the asset book or asset’s useful life. If the **Transfer of ownership** field is set to **Yes** for the lease book, the value in the **Service life** field will always be the asset’s useful life.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
