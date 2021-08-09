@@ -297,12 +297,12 @@ Users can access Finance + Operations by using the most recent versions of these
 > [!NOTE]
 > For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, especially Microsoft Edge. 
 > 
-> **Update 10.0.21 and later**: Users on old versions of Microsoft Edge and Google Chrome (version 83 and lower) will see prompts to update their browser to the latest version. 
+> **Version 10.0.21 and later**: Users on old versions of Microsoft Edge and Google Chrome (version 83 and lower) will see prompts to update their browser to the latest version. 
 
 ### Internal Explorer deprecation 
 Support for Internet Explorer 11 was deprecated in December 2020, with end of support for the browser occurring in August 2021. For more information, see [Internet Explorer deprecation announcement](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps).
 
-Starting in version 10.0.20/Platform update 44, users accessing Finance and Operations apps with Internal Explorer (IE) will start seeing notifications about the end of support for that browser. Before August 17, 2021, IE users will see an informational message that IE support is soon ending. After that date, IE users will see a warning that support has officially ended. Organizations are encouraged to keep these notifications on unless IE is mandated for your users, in which case you can choose to suppress these notifications by disabling the **Internet Explorer end-of-support notifications** feature and relying on internal processes for migrating your user base to Microsoft Edge or another modern browser. 
+Starting in version 10.0.20, users accessing Finance and Operations apps with Internal Explorer (IE) will start seeing notifications about the end of support for that browser. Before August 17, 2021, IE users will see an informational message that IE support is soon ending. After that date, IE users will see a warning that support has officially ended. Organizations are encouraged to keep these notifications on unless IE is mandated for your users, in which case you can choose to suppress these notifications by disabling the **Internet Explorer end-of-support notifications** feature and relying on internal processes for migrating your user base to Microsoft Edge or another modern browser. 
 
 The current target for blocking IE usage within Finance and Operations app is April 2022. If your organization would like to block IE earlier and you are on 10.0.21 or later, please contact Microsoft Support. 
 
