@@ -207,7 +207,7 @@ In accordance with the [software lifecycle policy](https://docs.microsoft.com/dy
 ![One Version](media/FO-OneVersion.PNG)
 
 For more details refer to the following:
-- [One Version Service Updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/oneversion-overview).
+- [One Version Service Updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/oneversion-overview)
 - [Configure Service Updates](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates)
 - [Pause Service Updates](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates)
 - [Get Notified About Service Updates](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates)
