@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Release 10.0.15
 
 # Inventory Visibility Add-in overview
 
+[!include [banner](../includes/banner.md)]
+
 The Inventory Visibility Add-in (also referred to as *Inventory Visibility*) is an independent and highly scalable microservice that enables real-time on-hand inventory tracking. Therefore, it provides a global view of inventory.
 
 External systems access the service through RESTful APIs. In that way, they can either query on-hand information on given sets of dimensions or make changes to your inventory in different customized data sources.
@@ -50,6 +52,8 @@ There are two approaches to viewing your inventory:
 - View the raw on-hand list. This list is periodically synced from a cached instance and is visible in Dataverse. For more information, see [Inventory Visibility app](inventory-visibility-power-platform.md).
 
 ### Soft reservations
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Soft reservation applies when a business must reserve a specific quantity of products to support, for example, sales order fulfillment that avoids over-selling. When a sales order is created and confirmed in Supply Chain Management or other order management systems, a request to reserve the quantity is sent to Inventory Visibility. Inventory Visibility lets you reserve products that have dimension details and specific inventory transaction types. (For more information, see [Inventory Visibility app](inventory-visibility-power-platform.md).) After the quantity is successfully reserved, a reservation ID is returned. You can use this reservation ID to link back to the original order in Supply Chain Management or other order management systems.
 

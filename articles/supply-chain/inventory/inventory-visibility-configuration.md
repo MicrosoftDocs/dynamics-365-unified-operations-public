@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.21
 # Inventory Visibility configuration
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 This topic describes how to configure Inventory Visibility.
@@ -282,6 +281,8 @@ The index lets you query the on-hand inventory in the following ways:
 > Base dimensions that are defined in the partition configuration should not be defined in index configurations.
 
 ## <a name="reservation-configuration"></a>Reservation configuration (optional)
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Reservation configuration is required if you want to use the soft reservation feature. The configuration consists of two fundamental parts:
 
@@ -629,6 +630,8 @@ The following table shows the default index configuration.
 This section describes the default reservation configuration.
 
 #### Reservation mapping
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 The following table shows the default reservation mapping.
 
