@@ -39,20 +39,20 @@ This release contains the features and bug fixes listed in the following table.
 
 ## August 2021 release of party and global address book 
 
-The August 2021 release of the [Dual-write Party and Global Address Book Solutions 3.1.0.0](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The August 2021 release of the [Dual-write Party and Global Address Book Solutions 3.1.0.2](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
-This release contains the bug fixes listed in the following table.
+This release contains features and bug fixes listed in the following table.
 
 | Feature | Description |Status |
 |------|---------|-------|
-| Bug fix| Improve performance when more than 20 legal entities are enabled for dual write. | General availability |
-| Bug fix| Issue with **Is primary** setting on postal address. | General availability |
+| Bug fix| Improved performance when more than 20 legal entities are enabled for dual-write. | General availability |
+| Bug fix| Fixed issue with **Is primary** setting on postal address. | General availability |
 | Bug fix| Fill the contact information on **Contact for customer or vendor** upon party association on main form. | General availability |
 | Bug fix| Full name of contact with **IsCustomer=Yes** or **IsVendor=Yes** is blank during initial sync and live sync. | General availability |
-| Bug fix| Make country/region field mandatory on both postal address table and customer address table. | General availability |
+| Bug fix| Make the country/region field mandatory on both postal address table and customer address table. | General availability |
 | Bug fix| Identify a phone number as mobile. | General availability |
 | Bug fix| Update the display name from **Parties Electronic Addresses** table to **Party Electronic Addresses** table. | General availability |
-| Party Electronic Address | Synchronize primary electronic address data from lead qualification process, account and contact creation process to Party Electronic Addresses and vice versa. | General availability |
+| Party Electronic Address | Synchronize primary electronic address data from lead qualification process, account and contact creation process to Party Electronic Addresses, and vice versa. | General availability |
 
 ## July 2021 release
 
