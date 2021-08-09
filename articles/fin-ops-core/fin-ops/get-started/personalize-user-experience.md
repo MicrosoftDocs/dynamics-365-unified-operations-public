@@ -4,7 +4,7 @@
 title: Personalize the user experience
 description: This topic explains how you can personalize the app.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
