@@ -54,10 +54,10 @@ After you post the initial recognition journal entry, the transaction appears as
 
 The fixed asset can now be depreciated by using the standard depreciation functionality in Fixed assets. For more information about depreciation, see [Depreciation methods and conventions](../fixed-assets/depreciation-methods-conventions.md).
 
-When a lease is associated with a fixed asset, the **Service life** field on the fixed asset book will be updated to align with the smallest value among the following: 
+When a lease is associated with a fixed asset, the **Service life** field on the fixed asset book will be updated to align with the smallest value from the following criteria: 
 
- - The asset’s useful life
- - The lease term from the associated lease book
+ - The asset’s useful life.
+ - The lease term from the associated lease book.
 
 If the **Transfer of ownership** field is set to **Yes** for the lease book, the value in the **Service life** field will always be the asset’s useful life. 
  
