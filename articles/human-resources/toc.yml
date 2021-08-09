@@ -127,7 +127,7 @@
           href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Update entity data in Excel
           href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-        - name: Create Open in Excel experiences
+        - name: Open in Excel experiences FAQ
           href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Troubleshoot Office integration
           href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
