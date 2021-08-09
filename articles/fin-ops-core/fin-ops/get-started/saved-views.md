@@ -79,7 +79,7 @@ If you want to save those changes, follow these steps.
     2. On the **Save view as** pane: 
        -    Enter a view name and (optionally) a description.
        -    Select **Pin as default** if you want this to be your default view. See the [Changing the default view](#changing-the-default-view) section for more information about default views. 
-       -    **Version 10.0.21 or later:** If the **Improved legal entity support forsaved views** feature is turned on, you can select whether you want this view to be available for all legal entities or just a subset.  
+       -    **Version 10.0.21 or later:** If the **Improved legal entity support for saved views** feature is turned on, you can select whether you want this view to be available for all legal entities or just a subset.  
     4. Select **Save**.
 
 ## Changing the default view
