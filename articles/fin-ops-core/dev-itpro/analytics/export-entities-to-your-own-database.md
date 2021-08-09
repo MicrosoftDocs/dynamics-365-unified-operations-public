@@ -163,7 +163,7 @@ You can create a data project that has multiple entities. You can schedule this 
 
 #### Exporting data across companies
 
-Jobs that are executed in batch can also be used to export data across companies. Prior to platform update 40 for version 10.0.16it was possible to determine if cross-company jobs should be executed in parallel or sequential. The sequential could be enabled in data management framework parameters. After the feature is enabled, a new option will appear when adding an entity to a data project to enable that the job will export data from each of company in a sequential manner. Starting with platform update 40 for version 10.0.16, all cross-company execution will be sequential by default, and the parameter has been removed. The change was made due to performance and other challenges, which made the parallel execution less reliable.
+Jobs that are executed in batch can also be used to export data across companies. Starting with version 10.0.16, all cross-company execution will be sequential by default. This change was made due to performance and other challenges, which made parallel execution less reliable.
 
 > [!NOTE]
 > Adding multiple entities to an export project for BYOD must be done carefully to ensure the overall reliability of the BYOD export is not compromised. Different parameters must be taken into consideration when deciding the number of entities that are added to the same project. Some of these parameters should be the degree of complexity of the entities, data volume per entity that is expected, and the overall time for export to complete at the job level. Adding hundreds of entities must be avoided, therefore creating multiple jobs with smaller number of entities is recommended.
