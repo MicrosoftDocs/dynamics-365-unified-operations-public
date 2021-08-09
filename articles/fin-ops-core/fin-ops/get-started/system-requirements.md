@@ -4,7 +4,7 @@
 title: System requirements for cloud deployments
 description: This topic lists the system requirements for the current version of Finance and Operations apps.
 author: sericks007
-ms.date: 05/25/2021
+ms.date: 08/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,7 +48,7 @@ To find the latest release for each web browser, go to the software manufacturer
 > [!NOTE]
 > For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, especially Microsoft Edge. 
 > 
-> **Update 10.0.21 and later**: Users on old versions of Microsoft Edge and Google Chrome (version 83 and lower) will see prompts to update their browser to the latest version. 
+> **Version 10.0.21 and later**: Users on old versions of Microsoft Edge and Google Chrome (version 83 and lower) will see prompts to update their browser to the latest version. 
 
 ### Internal Explorer deprecation 
 Support for Internet Explorer 11 was deprecated in December 2020, with end of support for the browser occurring in August 2021. For more information, see [Internet Explorer deprecation announcement](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps).
