@@ -137,7 +137,7 @@ Follow these steps to edit the configuration of an embedded app:
 
     - If the embedded app is accessed through the Power Apps menu button, right-click on the Power Apps menu button and select **Personalize**. Select the app that you want to configure from the **Select an app** drop-down menu.
     - If the embedded app appears directly on the page, select **Options**, and then select **Personalize this page**. Using the **Select** tool, click the embedded app.
-    - If the embedded app was added from the dashboard, open the dashobard, right-click (or select and hold) the tile that is associated with the canvas app, select **Personalize**, and finally select **Edit page**.
+    - If the embedded app was added from the dashboard, open the dashboard, right-click (or select and hold) the tile that is associated with the canvas app, select **Personalize**, and finally select **Edit page**.
 
 2. Make the needed modifications to the app configuration, and then click **Save**.
 
@@ -146,7 +146,7 @@ Follow these steps to edit the configuration of an embedded app:
 After an app has been embedded onto a page, there are a few ways to remove it if needed:
 
 - Go to the **Edit an app** pane using the instructions from the [Editing an embedded app](#editing-an-embedded-app) section earlier in this topic. Confirm that the pane displays information for the embedded app that you would like to remove, and then click the **Delete** button.
-- If the embedded app was added from the dashboard, open the dashobard, right-click (or select and hold) the tile that is associated with the canvas app, select **Personalize**, and finally select **Remove page**. 
+- If the embedded app was added from the dashboard, open the dashboard, right-click (or select and hold) the tile that is associated with the canvas app, select **Personalize**, and finally select **Remove page**. 
 - Because the embedded app is saved as personalization data, clearing your page's personalization will also remove any embedded apps on that page. Note that clearing the page's personalization is permanent and cannot be undone. To remove your personalizations on a page, select **Options**, and then **Personalize this page**, and finally the **Clear** button. After refreshing your browser, all the previous personalizations for this page will be removed. See [Personalize the user experience](personalize-user-experience.md) for more information about how to optimize pages using personalization.
 
 ## Appendix
