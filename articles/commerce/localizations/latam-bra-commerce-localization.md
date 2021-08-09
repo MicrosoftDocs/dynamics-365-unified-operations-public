@@ -3,7 +3,7 @@
 
 title: Commerce localization for Brazil
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Brazil.
-author: v-ankvik
+author: akviklis
 ms.date: 06/10/2021
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.reviewer: v-chgri
 # ms.custom: 
 ms.search.region: Brazil
 ms.search.industry: Retail
-ms.author: v-ankvik
+ms.author: akviklis
 ms.search.validFrom: 2020-8-03
 ms.dyn365.ops.version: 10.0.13
 

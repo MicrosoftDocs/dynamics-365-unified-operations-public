@@ -4,7 +4,7 @@
 title: Create a data integrator project (preview)
 description: This topic explains how to create a data integrator project.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: AX 10.0.13
 # Create a data integrator project (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to create a data integrator project.
 

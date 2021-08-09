@@ -72,12 +72,12 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.21 (October 2021)
+            href: get-started/whats-new-changed-10-0-21.md
           - name: Finance 10.0.20 (August 2021)
             href: get-started/whats-new-changed-10-0-20.md
           - name: Finance 10.0.19 (June 2021)
             href: get-started/whats-new-changed-10-0-19.md
-          - name: Finance 10.0.18 (May 2021)
-            href: get-started/whats-new-changed-10-0-17.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -1170,6 +1170,8 @@
           href: general-ledger/yec-mssng-open-blnces.md
         - name: Open financial journal templates in Office
           href: general-ledger/open-fincl-jrnls-in-office.md
+        - name: Why can't I reverse this transaction?
+          href: general-ledger/cant-reverse-transctns.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
@@ -1500,12 +1502,16 @@
               href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing
               href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
+            - name: Create a new Electronic invoicing feature
+              href: localizations/e-invoicing-create-new-e-invoicing-feature.md
             - name: Get started with Electronic Invoicing for Brazil
               href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with Electronic Invoicing for Egypt
               href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
               href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+            - name: Use the electronic invoicing service to import vendor invoices
+              href: localizations/e-invoicing-get-started-import-vendor-invoices.md
             - name: Set up Electronic Invoicing
               href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
           - name: Electronic Invoicing FAQ
@@ -1516,8 +1522,12 @@
             href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
           - name: Get started with Tax Calculation
             href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+          - name: Sales tax applicability and sales tax group determination logic
+            href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
           - name: Tax feature support for transfer orders
             href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+          - name: Calculating tax on top of price when Prices include taxes is enabled
+            href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
           - name: Add data fields in tax configurations
             href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
           - name: Add data fields in the tax integration by using extensions
@@ -1530,6 +1540,10 @@
             items:
             - name: Reporting for multiple VAT registrations
               href: localizations/emea-reporting-for-multiple-vat-registrations.md
+            - name: France reporting
+              items: 
+              - name: VAT declaration
+              href: localizations/emea-fra-VAT-declaration-preview-France.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
@@ -1546,6 +1560,8 @@
         items:
         - name: Australia overview
           href: localizations/australia.md
+        - name: Bank file formats for Australian banks
+          href: localizations/apac-aus-bank-file-formats.md
         - name: Business activity statement (BAS)
           href: localizations/apac-aus-business-activity-statement.md
         - name: Add report boxes and generate the BAS
@@ -1554,6 +1570,8 @@
           href: localizations/apac-aus-low-value-pool-depreciation.md
         - name: Set up reason codes for the BAS
           href: localizations/tasks/set-up-reason-codes-australia-bas.md
+        - name: Payment times reporting schema
+          href: localizations/apac-aus-payment-times-report.md
       - name: Austria
         items:
         - name: Austria overview
@@ -1566,6 +1584,8 @@
           href: localizations/emea-aut-vat-statement-details.md
         - name: Cross-border services report
           href: localizations/emea-aut-cross-border-services-report.md
+        - name: Purchase duties
+          href: localizations/emea-aut-purchase-duties.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
@@ -1802,6 +1822,8 @@
           href: localizations/china.md
         - name: Finance and Operations operated by 21Vianet in China
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
+        - name: Account groups selection for Chinese voucher types
+          href: localizations/apac-chn-account-groups-selection.md
         - name: Bill of materials comparison
           href: localizations/apac-chn-bom-comparison.md
         - name: Chinese hierarchy of chart of accounts
@@ -1870,6 +1892,10 @@
           href: localizations/emea-cze-vat-statement-details.md
         - name: VAT declaration (Czech Republic)
           href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+        - name: Bank symbols for bank accounts
+          href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
+        - name: Intra-community VAT
+          href: localizations/emea-cze-intra-community-VAT.md
         - name: Year-end close
           href: localizations/emea-cze-hun-year-end.md
       - name: Denmark
@@ -1992,10 +2018,6 @@
             href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
           - name: Generate an EU Intrastat declaration
             href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
-          - name: French Intrastat
-            href: localizations/emea-fra-intrastat.md
-          - name: Italian Intrastat
-            href: localizations/emea-ita-intrastat.md
         - name: Inventory journal reports
           href: localizations/emea-set-up-report-inventory-journal-names.md
         - name: Invoice issue deadlines
@@ -2120,6 +2142,8 @@
           href: localizations/emea-fra-derogatory-depreciation.md
         - name: French bills of exchange and promissory notes
           href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+        - name: French Intrastat
+          href: localizations/emea-fra-intrastat.md
         - name: NAF codes and siret numbers
           href: localizations/emea-fra-naf-codes-siret-numbers.md
         - name: Set up NAF codes and Siret numbers
@@ -2138,6 +2162,8 @@
           href: localizations/tasks/fr-00004-setup-method-payment.md
         - name: Update method of payment on customer
           href: localizations/tasks/fr-00004-update-method-payment-customer.md
+        - name: VAT declaration
+          href: localizations/emea-fra-VAT-declaration-preview-France.md
         - name: DAS-2 report
           href: localizations/emea-fra-das2-report.md
       - name: Germany
@@ -2162,6 +2188,8 @@
           href: localizations/tasks/de-00002-depreciation.md
         - name: Electronic transmission of VAT declaration (ELSTER)
           href: localizations/tasks/de-00003-electronic-transmission-elster.md
+        - name: German Intrastat
+          href: localizations/emea-deu-intrastat.md
         - name: VAT declaration for Germany
           href: localizations/emea-de-vat-declaration.md
         - name: Customer electronic invoices report
@@ -2170,6 +2198,8 @@
           href: localizations/emea-deu-journal-list-report.md
         - name: Set up electronic tax declarations
           href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
+        - name: Print a separate label for credit memos that originate from sales
+          href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
       - name: Hungary
         items:
         - name: Hungary overview
@@ -2616,6 +2646,8 @@
           href: localizations/emea-ita-exil-zero-invoice-posting.md
         - name: Bank data usability enhancement
           href: localizations/emea-ita-exil-bank-accounts-setup.md
+        - name: Italian Intrastat
+          href: localizations/emea-ita-intrastat.md
         - name: Miscellaneous charges per kilogram in an Intrastat declaration
           href: localizations/emea-ita-exil-misc-charges-intrastat.md
         - name: Intent letters - Invoicing usual exporters
@@ -2836,6 +2868,8 @@
           href: localizations/emea-ltu-isaf.md
         - name: Standard Audit File for Tax (SAF-T) for Lithuania
           href: localizations/emea-ltu-saf-t.md
+        - name: Set up the transfer documents for goods movement inside a company
+          href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
       - name: Malaysia
         items:
         - name: Malaysia overview
@@ -2970,8 +3004,18 @@
           href: localizations/emea-pol-turnover-balances-statement.md
         - name: Split AP/AR exchange difference
           href: localizations/emea-pol-split-ap-ar-exchange-difference.md
-        - name: VAT declaration with registers (JPK_V7M, VDEK)
-          href: localizations/emea-pol-vdek.md
+        - name: Set up and use PKWiU codes for Poland
+          href: localizations/emea-pol-pkwiu-code.md  
+        - name:  VAT declaration with registers (JPK_V7M, VDEK)
+          items:
+          - name: VAT declaration with registers (JPK_V7M, VDEK) overview
+            href: localizations/emea-pol-vdek.md
+          - name: Prepare for JPK-V7M reporting
+            href: localizations/emea-pol-vdek-setup.md
+          - name: JPK-V7M reporting
+            href: localizations/emea-pol-vdek-reporting.md
+          - name: Details of specific business scenarios in the JPK-V7M report
+            href: localizations/emea-pol-vdek-scenarios.md
       - name: Qatar
         items: 
         - name: Qatar overview
@@ -3194,6 +3238,8 @@
             href: localizations/rus-reporting-deferrals.md
         - name: Tax accounting
           items:
+          - name: Create tax registers and the tax register journal
+            href: localizations/rus-profit-tax-registers.md
           - name: Expense and income codes
             href: localizations/rus-expense-and-income-codes.md
           - name: Assets tax registers
@@ -3208,6 +3254,12 @@
             href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
           - name: Bad debt reserves in accounts receivable
             href: localizations/rus-bad-debts.md
+          - name: Calculation of tax asset and tax liability registers
+            href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
+          - name: Goods movement tax registers
+            href: localizations/rus-goods-movement-tax-registers.md
+          - name: Other tax registers
+            href: localizations/rus-other-tax-registers.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
@@ -3296,8 +3348,6 @@
           href: localizations/apac-tha-tax-branch-dimensions.md
         - name: Sales VAT report
           href: localizations/apac-tha-sales-vat-report.md
-        - name: Average VAT for purchase transactions
-          href: localizations/apac-tha-average-vat-for-purchase-transactions.md
         - name: Withholding tax
           href: localizations/apac-tha-withholding-tax.md          
       - name: United Arab Emirates (UAE)
@@ -4001,6 +4051,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
             - name: Generate reports in Office formats that have embedded images
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+          - name: Design an ER format to generate a report in Excel with embedded images in page headers or footers
+            href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/finance/toc.json
         - name: Split generated XML files based on file size and content quantity
           href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
         - name: Suppress BOM characters in generated files

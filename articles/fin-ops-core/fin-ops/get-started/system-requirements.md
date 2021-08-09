@@ -4,7 +4,7 @@
 title: System requirements for cloud deployments
 description: This topic lists the system requirements for the current version of Finance and Operations apps.
 author: sericks007
-ms.date: 08/21/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Platform update 8
 # System requirements for cloud deployments
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic lists the system requirements for the current version of Dynamics 365 Finance and Dynamics 365 Supply Chain Management for cloud deployments. If this step is appropriate, before you install one of these apps, you should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 

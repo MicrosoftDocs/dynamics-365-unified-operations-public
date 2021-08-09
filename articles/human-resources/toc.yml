@@ -5,6 +5,8 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: July 26, 2021
+      href: hr-whats-new-2021-07-26.md
     - name: July 12, 2021
       href: hr-whats-new-2021-07-12.md
     - name: June 22, 2021
@@ -27,38 +29,38 @@
       href: hr-whats-new-2021-01-28.md
     - name: January 21, 2021
       href: hr-whats-new-2021-01-21.md
-    - name: December 2, 2020
-      href: hr-whats-new-2020-12-02.md
-    - name: October 22, 2020
-      href: hr-whats-new-2020-10-22.md
-    - name: October 6, 2020
-      href: hr-whats-new-2020-10-06.md
-    - name: September 26, 2020
-      href: hr-whats-new-2020-09-26.md
-    - name: September 16, 2020
-      href: hr-whats-new-2020-09-16.md
-    - name: September 3, 2020
-      href: hr-whats-new-2020-09-03.md
-    - name: August 20, 2020
-      href: hr-whats-new-2020-08-20.md
-    - name: August 6, 2020
-      href: hr-whats-new-2020-08-06.md
-    - name: July 23, 2020
-      href: hr-whats-new-2020-07-23.md
-    - name: July 8, 2020
-      href: hr-whats-new-2020-07-08.md
-    - name: June 25, 2020
-      href: hr-whats-new-2020-06-23.md
-    - name: June 11, 2020
-      href: hr-whats-new-2020-06-11.md
-    - name: May 28, 2020
-      href: hr-whats-new-2020-05-28.md
-    - name: May 14, 2020
-      href: hr-whats-new-2020-05-14.md
-    - name: May 1, 2020
-      href: hr-whats-new-2020-05-01.md
     - name: What's new archives 2020
       items:
+      - name: December 2, 2020
+        href: hr-whats-new-2020-12-02.md
+      - name: October 22, 2020
+        href: hr-whats-new-2020-10-22.md
+      - name: October 6, 2020
+        href: hr-whats-new-2020-10-06.md
+      - name: September 26, 2020
+        href: hr-whats-new-2020-09-26.md
+      - name: September 16, 2020
+        href: hr-whats-new-2020-09-16.md
+      - name: September 3, 2020
+        href: hr-whats-new-2020-09-03.md
+      - name: August 20, 2020
+        href: hr-whats-new-2020-08-20.md
+      - name: August 6, 2020
+        href: hr-whats-new-2020-08-06.md
+      - name: July 23, 2020
+        href: hr-whats-new-2020-07-23.md
+      - name: July 8, 2020
+        href: hr-whats-new-2020-07-08.md
+      - name: June 25, 2020
+        href: hr-whats-new-2020-06-23.md
+      - name: June 11, 2020
+        href: hr-whats-new-2020-06-11.md
+      - name: May 28, 2020
+        href: hr-whats-new-2020-05-28.md
+      - name: May 14, 2020
+        href: hr-whats-new-2020-05-14.md
+      - name: May 1, 2020
+        href: hr-whats-new-2020-05-01.md
       - name: April 13, 2020
         href: hr-whats-new-2020-04-13.md
       - name: April 3, 2020
@@ -473,6 +475,10 @@
             href: hr-admin-integration-payroll-api-leave-type.md
           - name: Leave request
             href: hr-admin-integration-payroll-api-leave-request.md
+      - name: Benefits related entities
+        items:
+          - name: Payroll worker benefit plan
+            href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
       - name: Option sets
         items:
           - name: Gender
@@ -483,6 +489,11 @@
             href: hr-admin-integration-payroll-api-award-type.md
           - name: Process type
             href: hr-admin-integration-payroll-api-process-type.md                   
+          - name: Benefit plan type cover
+            href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
+          - name: Benefit employee plan status
+            href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
+
   - name: User Guide
     items:
     - name: Overview
@@ -813,6 +824,8 @@
         href: hr-employee-self-service-request-time-off.md
       - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
+      - name: Configure absence manager role
+        href: hr-configure-absence-manager.md
       - name: Manage buy and sell leave policies
         href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
       - name: Create buy and sell leave workflows

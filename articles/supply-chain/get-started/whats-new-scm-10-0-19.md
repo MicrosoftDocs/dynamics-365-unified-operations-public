@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.19. This version has a build number of 10.0.837 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.19. This version has a build number of 10.0.837 and is available as follows:
 
 - **Preview of release:** April 2021
 - **General availability of release (self-update):** June 2021
@@ -31,6 +31,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 | Feature area | Feature | More information |
 |---|---|---|
+| Inventory&nbsp;and&nbsp;logistics | [Approve and save vendor-submitted bank details](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) | [Maintain vendor bank account information](../../finance/accounts-payable/maintain-vendor-bank-info.md) |
 | Inventory and logistics | [Contact person data entity export optimization](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | When this feature is enabled, changes to referenced data will not cause related contacts to be included in the next incremental export. When this feature is disabled, changes to referenced data will cause related contacts to be included in the next incremental export. |
 | Inventory and logistics | [Incremental enhancements for warehouse execution capabilities with scale units](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Message processor messages](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Warehouse inventory adjustment](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Inventory and logistics | [Lookup functionality for Document introduction and Document conclusion fields on Sales quotation page](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | This feature adds lookup functionality for the **Document introduction** and **Document conclusion** fields on the **Sales quotation** page.<br><br>This feature is enabled by default. |

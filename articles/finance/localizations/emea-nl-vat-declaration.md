@@ -5,7 +5,7 @@ title: VAT declaration for the Netherlands
 description: This topic explains how to set up and generate the value-added tax (VAT) declaration for legal entities in the Netherlands. 
 author: anasyash
 ms.author: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,8 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
+> [!IMPORTANT]
+> A new feature for VAT declaration in Netherlands is available. For more information, see [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md).
 
 This topic explains how to set up and generate the value-added tax (VAT) declaration for legal entities in the Netherlands. For general information about how to set up the VAT statement, see [VAT reporting for Europe](emea-vat-reporting.md).
 
@@ -209,7 +211,7 @@ The following example shows how you can set up sales tax codes and sales tax rep
 
 13. Review the data that is generated for the declaration.
 
-![Electronic OB declaration page details.](media/6_Details.png)
+![Generated data on the Electronic OB declaration page.](media/6_Details.png)
 
 14. Select **View XML** to review an example of the XML file.
 
@@ -285,7 +287,7 @@ You can also generate the Dutch sales tax report by using the **Report sales tax
 5. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Settle and post sales tax** dialog box in the **Sales tax payment version** field, select **Original**.
 6. Print the report, and review the data.
 
-![Generated Sales tax payment report.](media/9_Sales_tax_payment.png)
+![Original Sales tax payment report.](media/9_Sales_tax_payment.png)
 
   Note the following points:
 
@@ -304,11 +306,11 @@ You can also generate the Dutch sales tax report by using the **Report sales tax
 5. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Settle and post sales tax** dialog box in the **Sales tax payment version** field, select **Last corrections**.
 6. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Sales tax payment version** field, select **Corrections**. You should see the following result.
 
-![Generated Sales tax payment report.](media/10_Sales_tax_payment.png)
+![Corrected Sales tax payment report.](media/10_Sales_tax_payment.png)
 
 7. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Sales tax payment version** field, select **Total list**. You should see the following result.
 
-![Generated Sales tax payment report.](media/11_Sales_tax_payment.png)
+![Generated Sales tax payment report with total list.](media/11_Sales_tax_payment.png)
 
    > [!NOTE]
    > If you generate the OB declaration after you've created the original and corrected sales tax payments, the OB declaration will show amounts only from the original sales tax payment.

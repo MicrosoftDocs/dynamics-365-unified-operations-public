@@ -3,10 +3,8 @@ title: X++ compile-time functions
 description: This topic lists the compile-time functions and describes their syntax, parameters, and return values.
 author: RobinARH
 ms.date: 11/03/2017
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 29581
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28

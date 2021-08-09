@@ -4,7 +4,7 @@
 title: Point-in-time restore of the production database to a sandbox environment
 description: This topic describes how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
 author: LaneSwenka
-ms.date: 06/23/2021
+ms.date: 08/4/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -67,6 +67,7 @@ When you refresh a production environment to a sandbox environment, or a sandbox
 * All batch jobs will be set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
+* Dual-write configuration.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 
 Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because SMTP is still turned on in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
 
