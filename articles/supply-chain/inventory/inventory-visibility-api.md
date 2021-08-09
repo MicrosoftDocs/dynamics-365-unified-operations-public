@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.21
 # Inventory Visibility public APIs
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 This topic describes the public APIs that are provided by Inventory Visibility.
@@ -349,6 +348,8 @@ The following example shows sample body content. The behavior of this API differ
 ```
 
 ## Create reservation events
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 To use the *Reserve* API, you must open the reservation feature and complete the reservation configuration. For more information, see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
 

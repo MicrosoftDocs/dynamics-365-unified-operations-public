@@ -217,6 +217,8 @@ The following table shows an example of the `MyCustomAvailableforReservation` cu
 
 ### <a name="setup-reservation-mapping"></a>Set up a soft reservation mapping
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Before you can edit the **Soft Reservation Mapping** tab, you must turn on the *OnHandReservation* feature on the **Feature Management** tab.
 
 By setting up the mapping from the physical measure to the calculated measure, you enable the Inventory Visibility service to automatically validate reservation availability, based on the physical measure.
@@ -243,6 +245,8 @@ To define the soft reservation mapping, follow these steps.
     | `iv` | `softreservordered` | `iv` | `availforreserv` |
 
 ### <a name="setup-reservation-hierarchy"></a>Set up a soft reservation hierarchy
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Before you can edit the **Soft Reservation Hierarchy** tab, you must turn on the *OnHandReservation* feature on the **Feature Management** tab.
 
@@ -309,6 +313,8 @@ To post an on-hand query, enter the query in the request body. Use the pattern t
 ![On-hand query settings](media/inventory-visibility-query-settings.png "On-hand query settings")
 
 ### Reservation posting
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Use the **Reservation Posting** tab to post a reservation request. Before you can post a reservation request, you must turn on the *OnHandReservation* feature. For more information about this feature, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
 
