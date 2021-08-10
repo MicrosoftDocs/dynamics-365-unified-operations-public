@@ -4,7 +4,7 @@
 title: Configure page caching
 description: This topic describes how to configure page caching in Microsoft Dynamics 365 Commerce, to help improve the performance of e-commerce pages that sent back to customers.
 author: samjarawan
-ms.date: 08/02/2021
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
