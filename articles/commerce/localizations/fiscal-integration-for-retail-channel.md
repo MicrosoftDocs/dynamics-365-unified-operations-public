@@ -120,7 +120,7 @@ A fiscal transaction stores the following details:
 - The status of the fiscal registration: **Completed** for successful registration, **Skipped** if the operator selected the **Skip** option for a failed registration, or **Marked as registered** if the operator selected the **Mark as registered** option.
 - Info code transactions that are related to a selected fiscal transaction. To view the info code transactions, on the **Fiscal transactions** FastTab, select a fiscal transaction that has a status of **Skipped** or **Marked as registered**, and then select **Info code transactions**.
 
-By selecting **Extended data**, you can also view some properties of the fiscal transaction. The list of the properties that can be viewed is specific to the fiscal registration functionality that generated the fiscal transaction. For example, you can view the digital signature, sequential number, certificate thumbprint, hash algorithm identification, and other fiscal transaction properties for the digital signing functionality for France.
+By selecting **Extended data**, you can also view some properties of the fiscal transaction. The list of properties that can be viewed is specific to the fiscal registration functionality that generated the fiscal transaction. For example, you can view the digital signature, sequential number, certificate thumbprint, hash algorithm identification, and other fiscal transaction properties for the digital signing functionality for France.
 
 ## Fiscal texts for discounts
 
@@ -144,19 +144,18 @@ The following fiscal integration samples are currently available in the Commerce
 - [Control unit integration sample for Sweden](./emea-swe-fi-sample.md)
 - [Fiscal registration service integration sample for Germany](./emea-deu-fi-sample.md)
 
-The following fiscal integration functionality is also implemented using the fiscal integration framework but is delivered out-of-box and is not included in the Commerce SDK:
+The following fiscal integration functionality is also implemented by using the fiscal integration framework, but it's available out of the box and isn't included in the Commerce SDK:
 
 - [Fiscal registration for Brazil](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
 - [Digital signature for France](./emea-fra-cash-registers.md)
 
-The following fiscal integration functionality is also available in the Commerce SDK but doesn't currently take advantage of the fiscal integration framework. Migration of this functionality to the fiscal integration framework is planned for later updates.
+The following fiscal integration functionality is also available in the Commerce SDK, but it doesn't currently take advantage of the fiscal integration framework. Migration of this functionality to the fiscal integration framework is planned for later updates.
 
 - [Digital signature for Norway](./emea-nor-cash-registers.md)
 
-The following legacy fiscal integration functionality that is available in the Commerce SDK does not use the fiscal integration framework and will be deprecated in later updates:
+The following legacy fiscal integration functionality that is available in the Commerce SDK doesn't use the fiscal integration framework and will be deprecated in later updates:
 
 - [Control unit integration sample for Sweden (legacy)](./retail-sdk-control-unit-sample.md)
 - [Digital signature for France (legacy)](./emea-fra-deployment.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
