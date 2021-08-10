@@ -111,7 +111,7 @@ Before you use the fiscal integration functionality, you should configure the fo
     A fiscal connector group combines functional profiles of fiscal connectors that perform identical functions and are used at the same step of a fiscal registration process. For example, if several fiscal printer models can be used in a store, fiscal connectors for those fiscal printers can be combined in a fiscal connector group.
 
     1. On the **Fiscal connector group** page (**Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**), create a new fiscal connector group.
-    1. Add functional profiles to the connector group. On the **Functional profiles** tab, select **Add**, and select a profile number. Each fiscal connector in a connector group can only have one functional profile.
+    1. Add functional profiles to the connector group. On the **Functional profiles** tab, select **Add**, and select a profile number. Each fiscal connector in a connector group can have only one functional profile.
     1. To suspend use of the functional profile, set the **Disable** option to **Yes**. This change affects only the current connector group. You can continue to use the same functional profile in other connector groups.
 
 1. Create a fiscal registration process.
@@ -158,7 +158,7 @@ In some cases, a special text must be printed on a fiscal receipt if a discount 
 
     1. On the **Fiscal connector group** page, select **Text for fiscal receipt**.
     1. On the **Info codes** tab, select **Add**, and select an info code or info code group.
-    1. In the **Info code number**, select a value.
+    1. In the **Info code number** field, select a value.
     1. In the **Subcode number** field, select a value if a subcode is required for the selected info code.
     1. In the **Text for fiscal receipt** field, specify a fiscal text that should be printed on a fiscal receipt.
     1. Set the **Print user input on fiscal receipt** option to **Yes** to override the text on a fiscal receipt with information that a user manually enters at the POS. This option applies only to info codes that have an input type of **Text**.
