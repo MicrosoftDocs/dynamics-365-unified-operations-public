@@ -5,7 +5,7 @@ title: Fiscal archive for France
 description: This topic provides information about the fiscal archive and the Fiscal archive integrity verification tool that are available in the Microsoft Dynamics 365 Commerce localization for France.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/05/2021
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -208,7 +208,7 @@ The Fiscal archive integrity verification tool can be used to verify the integri
 1. Verify the signature of the fiscal archive file.
 1. Verify signatures and signature chains of all fiscal archive records. (These records are the period grand total journal, shift, receipt, receipt copy, and audit event records.) For each record, the tool performs these actions:
 
-    1. Build a text string from data elements of the record, according to the [digital signing rules](./emea-fra-cash-registers.md#digital-signing-overview) and the internal version of the format of data that was used to sign the record. This includes the signature of the previous record of the same type.
+    1. Build a text string from data elements of the record, according to the [digital signing rules](./emea-fra-cash-registers.md#digital-signing-overview) and the internal version of the format of data that was used to sign the record. These elements include the signature of the previous record of the same type.
     1. Calculate a hash code of the string by using the hash algorithm that was used to hash the data of the record before signing.
     1. Decrypt the signature of the record by using the public key of the digital certificate that was used to sign the record.
     1. Compare the result with the hash code that was calculated earlier.
