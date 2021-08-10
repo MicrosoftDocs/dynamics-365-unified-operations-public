@@ -84,30 +84,29 @@ This error occurs when the linked Dataverse environment isn't available.
 
 To fix the issue, create a ticket for the Data Integration team. Attach the network trace so that the Data Integration team can mark the maps as **Not running** in the back end.
 
-## Error while trying to start a table mapping
+## Errors while trying to start a table mapping
 
-### Error "Unable to complete initial data sync. Error: dual-write failure - plugin registration failed: Unable to build dual-write lookup metadata. Error object reference not set to an instance of an object."
+### Unable to complete initial data sync
 
-When you try to set that state of a mapping to **Running**, you may receive this error. The fix depends on the cause of the error:
+You might receive an error like the following when you try to run the initial data sync:
+
+*Unable to complete initial data sync. Error: dual-write failure - plugin registration failed: Unable to build dual-write lookup metadata. Error object reference not set to an instance of an object.*
+
+When you try to set that state of a mapping to **Running**, you might receive this error. The fix depends on the cause of the error:
 
 + If the mapping has dependent mappings, then make sure to enable the dependent mappings of this table mapping.
 + The mapping might be missing source or destination columns. If a column in the Finance and Operations app is missing, then follow the steps in the section [Missing table columns issue on maps](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). If a column in Dataverse is missing, then click **Refresh tables** button on the mapping so that the columns are automatically populated back into the mapping.
 
-### DualWrite Solution version mismatch error - Upgrading dual-write Solutions 
+### Version mismatch error and upgrading dual-write solutions
 
-While running some maps in dual-write, one of the following errors may occur:
+You might receive the following error messages when you try to run the table mappings:
 
-Customer groups (msdyn_customergroups) : Dual write failure - Dynamics 365 for Sales solution 'Dynamics365Company' has version mismatch. Version: '2.0.2.10' Required version: '2.0.133'  
++ *Customer groups (msdyn_customergroups) : Dual write failure - Dynamics 365 for Sales solution 'Dynamics365Company' has version mismatch. Version: '2.0.2.10' Required version: '2.0.133'*
++ *Dynamics 365 for Sales solution 'Dynamics365FinanceExtended' has version mismatch. Version: '1.0.0.0' Required version: '2.0.227'*
++ *Dynamics 365 for Sales solution 'Dynamics365FinanceAndOperationsCommon' has version mismatch. Version: '1.0.0.0' Required version: '2.0.133'*
++ *Dynamics 365 for Sales solution 'CurrencyExchangeRates' has version mismatch. Version: '1.0.0.0' Required version: '2.0.133'*
++ *Dynamics 365 for Sales solution 'Dynamics365SupplyChainExtended' has version mismatch. Version: '1.0.0.0' Required version: '2.0.227'*
 
-Dynamics 365 for Sales solution 'Dynamics365FinanceExtended' has version mismatch. Version: '1.0.0.0' Required version: '2.0.227'  
-
-Dynamics 365 for Sales solution 'Dynamics365FinanceAndOperationsCommon' has version mismatch. Version: '1.0.0.0' Required version: '2.0.133'  
-
-Dynamics 365 for Sales solution 'CurrencyExchangeRates' has version mismatch. Version: '1.0.0.0' Required version: '2.0.133'  
-
-Dynamics 365 for Sales solution 'Dynamics365SupplyChainExtended' has version mismatch. Version: '1.0.0.0' Required version: '2.0.227' 
-
-**Resolution:** You need to update the dual-write solutions in Dataverse. Make sure to upgrade to latest solutions in appsource that matches the required solution version. 
-
+To fix the issues, update the dual-write solutions in Dataverse. Make sure to upgrade to latest solution that matches the required solution version.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
