@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for France
 description: This topic provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for France.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/05/2021
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
