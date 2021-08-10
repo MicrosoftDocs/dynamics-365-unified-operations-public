@@ -43,7 +43,7 @@ Microsoft Dynamics 365 Finance and Operations is an Enterprise Resource Planning
 The SaaS brings together these applications, plus business intelligence, infrastructure, compute, and database services, and enables organizations to run industry-specific and operational business processes. With the support of their Implementation Partner, Customers determine the configuration of the business application logic in Finance and Operations to match their unique business processes. Functionality and Business Processes can be augmented or extended with one or any combination of the following:
 
 - Low-Code [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) Tools
-- [Microsoft Visual Studio](https://visualstudio.microsoft.com) based [Finance and Operations SDK](../../dev-itpro/dev-tools/developer-home-page.md) and [Azure DevOps Build Automation](../../dev-itpro/dev-tools/developer-home-page#build-automation-using-azure.md)
+- [Microsoft Visual Studio](https://visualstudio.microsoft.com) based [Finance and Operations SDK](../../dev-itpro/dev-tools/developer-home-page.md) and [Azure DevOps Build Automation](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
 - Independent Software Vendor (ISV) solutions from [Microsoft AppSource](https://appsource.microsoft.com/partners)
 
 Based on requirements, Customers choose their solution approach. Working with their Implementation Partner, Customers define, develop, and test their solution using the tools and best practices that are provided in [Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md). The following illustrates three common scenarios: 
