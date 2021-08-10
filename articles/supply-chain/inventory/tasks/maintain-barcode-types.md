@@ -40,7 +40,7 @@ This procedure shows you how to set up a new bar code definition which can then 
 1. Select **Save**.
 1. Close the page.
 1. Go to **Inventory and warehouse management parameters**.
-1. In the **Barcode setup** field, enter or select a value.
+1. In the **Bar code setup** field, enter or select a value.
     * Select the bar code setup that you created before, but be aware that the bar code format must match the format of the unique identifier for the record type used in the process. For example, for picking routes, the bar code format should match the format of the picking route reference, which is typically a number sequence.  
 1. Select **Save**.
 1. Close the page.

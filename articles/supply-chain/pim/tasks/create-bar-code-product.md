@@ -35,7 +35,7 @@ This topic shows how to manually create a bar code using the item number M0001 a
 1. Select **Bar codes**.
 1. Select **New**.
 1. Mark the selected row that is created in the list below.
-1. In the **Barcode setup** field, enter or select a value.
+1. In the **Bar code setup** field, enter or select a value.
 1. In the **Bar code** field, enter or select a value.
 1. In the **Bar code** field, type a value.  
 1. In the **Quantity** field, enter a number.
