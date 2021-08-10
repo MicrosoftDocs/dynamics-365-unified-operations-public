@@ -1315,6 +1315,12 @@
         - name: Cash register functionality
           href: localizations/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
+          href: localizations/emea-fra-fi-deployment.md
+        - name: Fiscal archive and data integrity verification
+          href: localizations/emea-fra-fiscal-archive.md
+        - name: Migrating from legacy functionality for France
+          href: localizations/emea-fra-fi-migration.md
+        - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-fra-deployment.md
       - name: Germany
         items:
@@ -2422,6 +2428,10 @@
           items:
           - name: Configure and enable connectors
             href: e-commerce-extensibility/connectors.md
+        - name: Performance
+          items:
+          - name: Configure page caching
+            href: e-commerce-extensibility/page-caching.md
         - name: Telemetry and analytics
           items: 
           - name: Telemetry logger
