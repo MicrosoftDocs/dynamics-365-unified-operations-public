@@ -2428,6 +2428,10 @@
           items:
           - name: Configure and enable connectors
             href: e-commerce-extensibility/connectors.md
+        - name: Performance
+          items:
+          - name: Configure page caching
+            href: e-commerce-extensibility/page-caching.md
         - name: Telemetry and analytics
           items: 
           - name: Telemetry logger
