@@ -4,7 +4,7 @@
 title: Enable automatic retries on batch jobs
 description: This topic describes how to enable automatic retries on batch jobs when transient failures occur.
 author: sarvanisathish
-ms.date: 06/10/2021
+ms.date: 06/21/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -19,6 +19,9 @@ ms.search.validFrom: 2021-05-31
 [!include [banner](../includes/banner.md)]
 
 This topic describes how retries are implemented on batch jobs in Finance and Operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, if Finance and Operations apps experience a brief loss of connection to Microsoft SQL Server, all batch jobs that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft is enabling automated retries when failures of this type occur.
+
+> [!IMPORTANT]
+> This feature is available with version 10.0.18 and later.
 
 ## Metadata
 

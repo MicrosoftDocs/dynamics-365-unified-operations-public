@@ -4,7 +4,7 @@
 title: Generate QR codes and print them on receipts
 description: This topic explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts.
 author: prabhatb2011
-ms.date: 03/14/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -167,9 +167,52 @@ Follow these steps to handle the new custom receipt field for a QR code.
           </composition>
        </commerceRuntimeExtensions>
     ```
+   
+## Printing QR code images on OPOS printers
 
-## Appendix A
-### Sample of a CRT extension class for printing QR codes
+When using an OPOS printer, you may need to convert the QR code image from the *png* format to the *bmp* format. Below is an example of this conversion.
+
+   ```C#
+    ...
+        var qrCodeRequest = new
+            EncodeQrCodeServiceRequest(stringBuilder.ToString())
+            {
+              Width = 150, // Replace with desired QR code width
+              Height = 150 // Replace with desired QR code width
+            };
+
+            EncodeQrCodeServiceResponse qrCodeDataResponse = await
+            request.RequestContext.ExecuteAsync<EncodeQrCodeServiceResponse>(qrCodeRequest).ConfigureAwait(false);
+
+            string qrCode = ConvertImagePNGToBMP(qrCodeDataResponse.QRcode);
+            receiptFieldValue = $"<I:{qrCode}>";
+            return receiptFieldValue;
+    ...
+    /// <summary>
+    /// Converts an image from "png" to "bmp".
+    /// </summary>
+    /// <param name="qrCode">Base64 represents the image to convert.</param>
+    /// <returns>The image as base64.</returns>
+    private static string ConvertImagePNGToBMP(string qrCode)
+    {
+        string convertedQRCode = qrCode;
+
+        byte[] imageBytes = Convert.FromBase64String(qrCode);
+        using (MemoryStream msFrom = new MemoryStream(imageBytes))
+        {
+            var image = Image.FromStream(msFrom);
+            using (MemoryStream msTo = new MemoryStream())
+            {
+                image.Save(msTo, ImageFormat.Bmp);
+                convertedQRCode = Convert.ToBase64String(msTo.ToArray());
+            }
+        }
+
+        return convertedQRCode;
+    }
+   ```
+
+## Sample of a CRT extension class for printing QR codes
 
  ```C#
 namespace Contoso
@@ -495,5 +538,4 @@ namespace Contoso
             }
         }
     }
-   ```
-   
+   ```     
