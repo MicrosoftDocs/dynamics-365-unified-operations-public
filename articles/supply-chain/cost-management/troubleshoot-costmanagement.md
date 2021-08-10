@@ -76,7 +76,7 @@ If you're using the *Standard cost* method, the error message resembles this exa
 
 > The standard cost does not match with the financial inventory value after the update. Value = xx.xx, Qty = yy.yy, Standard cost = zz.zz
 
-Until Microsoft releases a solution to fix the issue, consider using the following workarounds to help avoid or reduce these errors:
+Consider using the following workarounds to help avoid or reduce these errors:
 
 - Repost the failed documents.
 - Create documents that have fewer lines.
