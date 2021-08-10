@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for France (legacy)
 description: This topic is a deployment guide for the Commerce localization for France.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/05/2021
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
