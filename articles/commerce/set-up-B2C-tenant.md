@@ -39,6 +39,8 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
  > [!NOTE]
  > Commerce evaluation environments come with a pre-loaded Azure AD B2C tenant for demonstration purposes. Loading your own Azure AD B2C tenant using the steps below is not required for evaluation environments.
 
+Protect your end users and enhance security of your Azure AD B2C tenants with Identity Protection and Conditional Access. Review capabilities available with Premium P2 and Premium P1 tenants [here](https://docs.microsoft.com/en-us/azure/active-directory-b2c/conditional-access-identity-protection-overview).
+
 ## Create or link to an existing AAD B2C tenant in the Azure portal
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
