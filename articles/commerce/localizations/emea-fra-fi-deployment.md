@@ -163,12 +163,12 @@ To create deployable packages that contain Commerce components, and to apply tho
 
 1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** package configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.
 
-        ``` xml	
-        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance" />
-        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance" />
-        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
-        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
-        ```
+    ``` xml	
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
+    ```
 
 1. In the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder, add the following lines to enable the POS extension.
 
