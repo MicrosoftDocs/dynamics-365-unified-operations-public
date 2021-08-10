@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 8.1
 # Settlement overview
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 This topic provides general information about the settlement process. It describes which transaction types can be settled, and the timing and process for settling them. It also describes the results of the settlement process.
 
