@@ -44,6 +44,8 @@ You can create monthly invoices for individual leases, or you can use a batch pr
 5. Select the correct journal, and then select the invoice that must be paid.
 
     For this example, the **Pay to Vendor** parameter on the lease book is turned on. Therefore, the invoice will be in the invoice journal. The **Overview** section shows a summary of the journal entry, and the **Lines** section shows details of the actual journal lines.
+    
+   The system locks certain fields for editing certain financial prevent any variances between the transactions and the schedules. Some fields that are locked include: **Account**, **Amounts**, **Financial dimensions**, **Currency**, and **Transaction type**. Additionally, you won't be able to add or delete journal entry lines to any Asset Leasing journal entry because doing so might result in variances between the schedules and transactions.
 
     > [!NOTE]
     > If the **Pay to Vendor** parameter is turned off, payment journal entries will be listed on the **Asset leasing** page for the lease book, and the system will create an asset leasing entry instead of an invoice. The lease payment entry will be posted to the journal name that is specified in the **Monthly lease journal** field.
