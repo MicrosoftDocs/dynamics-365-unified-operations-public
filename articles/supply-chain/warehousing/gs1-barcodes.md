@@ -92,7 +92,7 @@ To set up and customize your GS1 own application identifiers, follow these steps
     - **Application identifier** – Enter the identification code for the application identifier. Typically, this code is a two-digit integer, but it can be longer. For decimal values, the last digit indicates the number of decimal places. For more information, see the description of the **Decimal** checkbox later in this list.
     - **Description** – Enter a short description of the identifier.
     - **Fixed length** – Select this checkbox if values that are scanned by using this application identifier have a fixed number of characters. Clear this checkbox if the length of values is variable. In this case, you must indicate the end of the value by using the group separator character that you specified on the **Warehouse management parameters** page.
-    - **Length** – Enter the maximum number of characters that can appear in the values that are scanned by using this application identifier. If the **Fixed length** option is set to *Yes*, exactly this number of characters is expected.
+    - **Length** – Enter the maximum number of characters that can appear in the values that are scanned by using this application identifier. If the **Fixed length** checkbox is selected, exactly this number of characters is expected.
     - **Type** – Select the type of value that is scanned by using this application identifier (*Numeric*, *Alphanumeric*, or *Date*). For dates, the expected format is YYMMDD (without spaces or hyphens).
     - **Decimal** – Select this checkbox if the value includes an implied decimal point. If this box is selected, the system will use the last digit of the application identifier to determine the number of decimal places. For example, if the application identifier is *3205*, the right-most five digits of the value will be interpreted as coming after the decimal point.
 
@@ -128,7 +128,7 @@ To customize the generic GS1 setup, follow these steps.
 
 1. Set the following fields for the new or selected mapping:
 
-    - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching back-end functionality. However, you might have to talk to your development partners to find the correct selections for your implementation.
+    - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation.
     - **Application identifier** – Select the applicable application identifier, as defined on the **GS1 application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
 
 ## Set up GS1 policies that you can assign to mobile device menu items
@@ -164,9 +164,9 @@ To set up and customize your GS1 policies, follow these steps.
     - **Policy name** – Enter a name for the policy.
     - **Description** – Enter a short description of the policy.
 
-1. On the FastTab below the header, establish match field names to application identifiers as required for the current policy. Use the buttons on the toolbar to add or remove rows as you require. For each row, set the following fields:
+1. On the FastTab below the header, map field names to application identifiers as required for the current policy. Use the buttons on the toolbar to add or remove rows as you require. For each row, set the following fields:
 
-    - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching back-end functionality. However, you might have to talk to your development partners to find the correct selections for your implementation.
+    - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation.
     - **Application identifier** – Select the applicable application identifier, as defined on the **GS1 application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
     - **Sorting** – Each multi-value bar code includes a series of application identifiers, each of which is followed by a value. The applicable GS1 policy identifies which application identifier is mapped to each database field. However, if a bar code uses the same application identifier more than once, the system uses the order in which application identifiers appear in the code to map them to fields. For rows that share an application identifier with one or more other rows, use this field to establish the order that the matching rows are processed in. The row that has the lowest sorting value will be processed first.
 
@@ -187,17 +187,17 @@ This example applies to a system where the GS1 options are set up in the followi
 
 - On the **Warehouse management parameters** page, the following global settings are established:
 
-    - **FNC1 character:** *\]1C*
-    - **Group separator:** *\~*
+  - **FNC1 character:** *\]1C*
+  - **Group separator:** *\~*
 
 - On the **GS1 application identifiers** page, the following application identifiers are relevant to this example.
 
     | Application identifier | Description | Fixed length | Length | Type | Decimal |
     |---|---|---|---|---|---|
-    | 01 | GTIN | Yes | 14 | Numeric | No |
-    | 10 | Batch number | No | 20 | Alphanumeric | No |
-    | 17 | Expiry date | Yes | 6 | Date | No |
-    | 30 | Receiving quantity | No | 8 | Numeric | No |
+    | 01 | GTIN | Selected | 14 | Numeric | Cleared |
+    | 10 | Batch number | Cleared | 20 | Alphanumeric | Cleared |
+    | 17 | Expiry date | Selected | 6 | Date | Cleared |
+    | 30 | Receiving quantity | Cleared | 8 | Numeric | Cleared |
 
 - On the **GS1 generic setup** page, the following settings for the generic GS1 policy are relevant to this example.
 
