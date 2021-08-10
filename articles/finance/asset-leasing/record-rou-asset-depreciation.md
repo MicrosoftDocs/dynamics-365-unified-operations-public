@@ -42,6 +42,9 @@ For leases that are recognized on an organization's balance sheet, the right-of-
 
 2. Select the period of depreciation, and then select **Create journal**. You receive a message that states that the journal that will be used to record depreciation was created.
 3. Select **Journals \> Asset leasing journals** to open the **Asset leasing journal** page, where you can view the depreciation expense journal entry that was created.
+
+   The system locks certain fields for editing certain financial prevent any variances between the transactions and the schedules. Some fields that are locked include: **Account**, **Amounts**, **Financial dimensions**, **Currency**, and **Transaction type**. Additionally, you won't be able to add or delete journal entry lines to any Asset Leasing journal entry because doing so might result in variances between the schedules and transactions.
+
 4. Select the journal entry, and then select **Post** to record the depreciation entry to General ledger.
 
 ## Calculation of ROU asset amortization expense for operating leases
