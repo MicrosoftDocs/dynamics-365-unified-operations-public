@@ -45,7 +45,7 @@ Within LCS, the user used in the API OAuth authentication will need to be added 
 
 ## HTTP request
 
-Use the following GET endpoint to fetch an environment's RSAT certificate ZIP. The default domain for the LCS API is `https://lcsapi.lcs.dynamics.com/` but this can vary depending on your setup.
+Use the following GET endpoint to fetch an environment's RSAT certificate ZIP.
 
 **Fetch RSAT certificate by environment**
 <!-- { "blockType": "ignored" } -->
