@@ -4,7 +4,7 @@
 title: Best practices for Dynamics 365 Commerce development 
 description: This topic describes some best practices to follow when developing Dynamics 365 Commerce customizations. 
 author: samjarawan
-ms.date: 04/06/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -114,6 +114,11 @@ The default content delivery network (CDN) cache time for images is set to 5 min
 ### Data caching
 
 Product-specific data is cached in the e-Commerce rendering Node layer. Caching times are different for each entity type and can be configured inside of the **cache.settings.json** file in the SDK "/src/settings/" directory. For more information, see [Data cache settings](data-action-cache-settings.md).
+
+### Page caching
+
+Page caching enables e-commerce site pages to be cached on the server from which they can then be served to site users, significantly improving performance time.
+Page caching and caching duration can be enabled and configured in Commerce site builder for site pages, or can be configured for templates that are applied across multiple site pages. For more information, see [Configure page caching](e-commerce-extensibility/page-caching.md).
 
 ## Browser hint meta tags
 
