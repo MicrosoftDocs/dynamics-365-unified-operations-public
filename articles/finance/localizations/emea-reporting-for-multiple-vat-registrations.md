@@ -313,14 +313,16 @@ All tax registrations have the same settings for EU sales list parameters.
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
 
-    In the 10.0.19 release, a format for the Netherlands is available for preview. For more information, see [VAT declaration for Netherlands](emea-nl-vat-declaration-netherlands.md) topic.
-
-    The following table shows the earliest ER format versions, that you can select the format for.
-
-    | **Release** | **Country** | **ER format** |
-    |-------------------------|-------------------------|-------------------------|
-    | 10.0.19 | All | Tax declaration model.version.85</br>Tax declaration model mapping.version.85.138 |
-    | 10.0.19 | NL | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17 |
+    The following table shows the earliest ER format versions, that you can select the format for. For more information about how to run VAT declaration for specific country, review the respective topic
+    
+| **Release** | **Country** | **ER format** | **Link to topic** |
+|-------------|-------------|---------------|-------------------|
+| 10.0.19     | All         | Tax declaration model.version.85</br>Tax declaration model mapping.version.85.138|    |
+| 10.0.19     | NL          | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17| [VAT declaration (Netherlands)](/localizations/emea-nl-vat-declaration-netherlands.md)|
+| 10.0.20     | FR          | VAT Declaration Excel (FR).version.85.15| [VAT declaration (France)](/localizations/emea-fra-vat-declaration-preview-france.md) |
+| 10.0.21     | UK          | MTD VAT importing model mapping (UK).version.31.36</br>Tax declaration model mapping.version.95.158</br>VAT Declaration Excel (UK).version.32.30.16</br>VAT Declaration JSON (UK).version.32.31 | [Prepare for integration with MRD for VAT](/localizations/emea-gbr-mtd-vat-integration)   |
+| 10.0.21     | SE          | VAT Declaration XML (SE).version.95.11</br>VAT Declaration Excel (SE).version.95.11.13|    |
+| 10.0.21     | CH          | Tax declaration model.version.96</br>Tax declaration model mapping.version.96.164</br>VAT Declaration XML (CH).version.96.16</br>VAT Declaration Excel (CH).version.96.16.9 |   |
 
 
 ## Generate a VAT declaration for multiple VAT registrations
