@@ -45,11 +45,11 @@ Within LCS, the user used in the API OAuth authentication will need to be added 
 
 ## HTTP request
 
-Use the following GET endpoint to fetch environment history for a given environment. For regional LCS instances, replace `lcs.dynamics.com` with the appropriate LCS instance.
+Use the following GET endpoint to fetch environment history for a given environment. The default domain for the LCS API is `https://lcsapi.lcs.dynamics.com/` but this can vary depending on your setup.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://lcsapi.lcs.dynamics.com/environmentinfo/v1/history/project/{projectId}/environment/{environmentId}/?page=1
+GET /environmentinfo/v1/history/project/{projectId}/environment/{environmentId}/?page=1
 ```
 
 ## Request headers
@@ -101,7 +101,7 @@ For each history operation, the following properties will be available. If a val
             "Name": "Finance insights",
             "Type": "InstallAddin",
             "TypeDisplay": "Install addin",
-            "StartDateTimeUtc": "2021-06-03T15:10:00.0",
+"StartDateTimeUtc": "2021-06-03T15:10:00.0",
             "EndDateTimeUtc": "2021-06-03T15:11:00.0",
             "Status": "Completed",
             "ActivityId": "0924ecdd-1b80-40cc-8158-172785841c15",

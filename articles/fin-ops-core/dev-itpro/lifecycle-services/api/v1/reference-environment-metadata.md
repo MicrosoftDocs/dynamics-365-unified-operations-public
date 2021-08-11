@@ -45,24 +45,24 @@ Within LCS, the user used in the API OAuth authentication will need to be added 
 
 ## HTTP request
 
-Use the following GET endpoint to fetch environment metdata. For regional LCS instances, replace `lcs.dynamics.com` with the appropriate LCS instance.
+Use the following GET endpoint to fetch environment metdata. The default domain for the LCS API is `https://lcsapi.lcs.dynamics.com/` but this can vary depending on your setup.
 
 **Fetch metadata for all environments within a project**
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://lcsapi.lcs.dynamics.com/environmentinfo/v1/detail/project/{projectId}/?page=1
+GET /environmentinfo/v1/detail/project/{projectId}/?page=1
 ```
 
 **Fetch metadata for a single environment by id**
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://lcsapi.lcs.dynamics.com/environmentinfo/v1/detail/project/{projectId}/?environmentId={environmentId}
+GET /environmentinfo/v1/detail/project/{projectId}/?environmentId={environmentId}
 ```
 
 **Fetch metadata for a single environment by name**
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://lcsapi.lcs.dynamics.com/environmentinfo/v1/detail/project/{projectId}/?environmentName={environmentName}
+GET /environmentinfo/v1/detail/project/{projectId}/?environmentName={environmentName}
 ```
 
 ## Request headers
