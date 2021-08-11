@@ -52,7 +52,6 @@ The following bug fixes are included in this release.
 | --- | --- | --- |
 | ## Default designee assignment is not respected if Auto-assign designees is set to true. - (558385) | | |
 | ## Time-off card balance, Available to buy and Available to Sell balance do not appear when user roles are restricted to a specific legal entity. - (589617) | | |
-| ## Remove unused admin trusted applications from application settings - (473423) | | |
 
 ## In preview
 
@@ -70,6 +69,10 @@ The following new features are in preview. For more information about turning fe
 ## Coming soon
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
+
+| Feature | Details |
+| --- | --- |
+| Platform update 10.0.21 (45) | Platform update 10.0.21 is scheduled to begin rolling out with the service release on October 4, 2021. For more information, see [Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
 
 ## See also
 
