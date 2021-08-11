@@ -27,7 +27,7 @@ Planning Optimization results might differ from results from the built-in master
 | Number sequences for planned orders | Number sequences for planned orders aren't supported. Planned order numbers are generated on the service side. |
 | Plan copy, delete plan, and plan version cleanup | <p>The following items are disabled under **Master planning \> Master planning \> Maintain plans** in the navigation pane:</p><ul><li>Plan copy</li><li>Delete plan</li><li>Plan version cleanup</li></ul> |
 | Return orders | Return orders aren't considered. |
-| Scheduling related features | For details, see [Scheduling with infinite capacity](infinite-capacity-planning#limitations.md). |
+| Scheduling related features | For details, see [Scheduling with infinite capacity](infinite-capacity-planning.md#limitations). |
 | Transport calendars | The value in the **Transport calendar** column on the **Modes of delivery** page is ignored. |
 
 ## Additional resources
