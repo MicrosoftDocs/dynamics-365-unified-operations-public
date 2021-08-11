@@ -49,10 +49,10 @@ This release contains features and bug fixes listed in the following table.
 | Bug fix| Fixed issue with **Is primary** setting on postal address. | General availability |
 | Bug fix| Fill the contact information on **Contact for customer or vendor** upon party association on main form. | General availability |
 | Bug fix| Full name of contact with **IsCustomer=Yes** or **IsVendor=Yes** is blank during initial sync and live sync. | General availability |
-| Bug fix| Make the country/region field mandatory on both postal address table and customer address table. | General availability |
+| Bug fix| Make the country/region field required on both postal address table and customer address table. | General availability |
 | Bug fix| Identify a phone number as mobile. | General availability |
 | Bug fix| Update the display name from **Parties Electronic Addresses** table to **Party Electronic Addresses** table. | General availability |
-| Party Electronic Address | Synchronize primary electronic address data from lead qualification process, account and contact creation process to Party Electronic Addresses, and vice versa. | General availability |
+| Party Electronic Address | Synchronize primary electronic address data from lead qualification process, account, and contact creation process to Party Electronic Addresses, and vice versa. | General availability |
 
 ## July 2021 release
 
