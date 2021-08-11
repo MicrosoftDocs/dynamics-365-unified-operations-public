@@ -51,7 +51,7 @@ Dual-write errors that originate in Dataverse can appear in the Finance and Oper
 4. Run the scenario that is generating errors.
 5. The verbose logs are stored in the **DualWriteErrorLog** table.
 6. To lookup data on table browser use the following link: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, replacing `999` as needed.
-7. Update again after [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe)  (available for PU 37 and above). If you have this fix installed then the debug mode will capture more logs.  
+7. Update again after [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), which is available for platform updates 37 and later. If you have this fix installed then the debug mode will capture more logs.  
 
 ## Check synchronization errors on the virtual machine for the Finance and Operations app
 
