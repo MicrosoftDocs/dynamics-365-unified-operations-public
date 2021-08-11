@@ -3323,6 +3323,8 @@
             href: warehousing/configure-app-field-names-priorities-warehouse.md
           - name: Set up mobile devices for warehouse work
             href: warehousing/configure-mobile-devices-warehouse.md
+          - name: Customize step titles and instructions for the Warehouse Management mobile app
+            href: warehousing/mobile-app-titles-instructions.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for completing work in a purchase order
@@ -3343,7 +3345,7 @@
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing
           href: warehousing/warehouse-app-events.md
-        - name: Customize the warehouse app
+        - name: Extend warehouse mobile processes
           items:
           - name: Process guide framework
             href: warehousing/process-guide-framework.md

@@ -19,7 +19,19 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
-## 2.0.7.0
+## Version 2.0.8.0
+
+### New features, fixes, and improvements in version 2.0.8.0
+
+- Added support for the [step instructions feature](mobile-app-titles-instructions.md) introduced in 10.0.21.
+- Added hint animation to show users they can close overlays by swiping down.
+- Added support for function keys on action lists and menus. Hold down any F-key for three seconds to get a list of available commands.
+- Fixed an issue that resulted in showing the error "Cannot find a suitable view for the specified size" on some devices.
+- Fixed an issue where full-screen mode didn't always work when using the on-screen keyboard.
+- Fixed an issue with page swiping not working on Windows devices.
+- Fixed various issues that caused the system to stop responding.
+
+## Version 2.0.7.0
 
 ### New features, fixes, and improvements in version 2.0.7.0
 
