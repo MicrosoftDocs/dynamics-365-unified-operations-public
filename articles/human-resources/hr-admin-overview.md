@@ -101,6 +101,15 @@ This topic provides a list of the help topics and other resources to set up, man
   - [Reporting options](hr-admin-troubleshooting-reporting.md)
   - [Integration FAQ](hr-admin-troubleshooting-integration.md)
 
+## Additional resources
+
+### eLearning courses
+For online courses and training, check out [Dynamics 365 Human Resources on Microsoft Learn](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+### Videos
+
+Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+
 ## See also
 
 - [What's new or changed in Human Resources](hr-admin-whats-new.md)
