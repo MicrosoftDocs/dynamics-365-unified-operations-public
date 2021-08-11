@@ -138,7 +138,7 @@ To cancel adjustments that are done by the wizard, on the **Closing and adjustme
     ![Functions for calculating adjustment amounts page.](media/7%20Adjustment%20with%20amount.png)
 
 4. Select **Next**.
-5. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard(#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
+5. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
 
 ### Method for calculating an adjustment to a value
 
