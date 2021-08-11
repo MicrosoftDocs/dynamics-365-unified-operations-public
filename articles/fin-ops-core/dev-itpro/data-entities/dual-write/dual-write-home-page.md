@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Dual-write home page
 description: This topic provides links to information about dual-write.
 author: robinarh
 ms.date: 02/08/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Dual-write home page
@@ -116,13 +102,13 @@ These topics describe mapping between concepts in finance and operations apps an
 
 ## Troubleshooting
 
-+ [Verify dual-write configuration in Finance and Operations apps and Dataverse](dual-write-troubleshooting-verify-config.md)
++ [General troubleshooting](dual-write-troubleshooting.md)
 + [Troubleshoot issues during initial setup](dual-write-troubleshooting-initial-setup.md)
 + [Troubleshoot issues during initial synchronization](dual-write-troubleshooting-initial-sync.md)
-+ [Troubleshoot dual-write issues in Finance and Operations apps](dual-write-troubleshooting-dual-write-module.md)
 + [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md)
++ [Troubleshoot dual-write issues in Finance and Operations apps](dual-write-troubleshooting-dual-write-module.md)
 + [Troubleshoot issues related to solution awareness](dual-write-troubleshooting-solution-awareness.md)
 + [Troubleshoot issues from upgrades of Finance and Operations apps](dual-write-troubleshooting-finops-upgrades.md)
-+ [General troubleshooting](dual-write-troubleshooting.md)
++ [Verify dual-write configuration in Finance and Operations apps and Dataverse](dual-write-troubleshooting-verify-config.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
