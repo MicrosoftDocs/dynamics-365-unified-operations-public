@@ -2,9 +2,9 @@
 # required metadata
 
 title: Provision Human Resources
-description: This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/14/2021
+description: This topic explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -33,9 +33,15 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. This topic assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
+This topic explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. 
 
-To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and create a new Human Resources project. Unless a licensing issue prevents you from provisioning Human Resource, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.
+## Prerequisites
+
+Before you begin provisioning a new production environment, the following prerequisites must be in place:
+
+- You have purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
+
+- The global administrator has signed in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and created a new Human Resources project. 
 
 ## Provision a Human Resources trial environment
 
@@ -54,11 +60,11 @@ Considerations for additional environments include, but aren't limited to, the f
 - **Training**: You may need a separate environment that is configured with a set of training data in order to train your employees on use of the new system. 
 - **Multi-phase project**: You may need an additional environment to support configuration, data migration, testing, or other activities in a project phase that is planned after the initial go-live of the project.
 
- > [!IMPORTANT]
- > We recommend that you use your production environment throughout your project as your GOLD configuration environment. This is important, because you can't copy a sandbox environment to a production environment. Therefore, when you go-live, your GOLD environment is your production environment, and you will complete your cutover activities in this environment.</br></br>
- > We recommend that you use your sandbox or another environment to perform a mock cutover prior to your go-live. You can do this by refreshing the production environment with your GOLD configuration into your sandbox environment.</br></br>
- > We recommend that you keep a detailed cutover checklist that includes each of the data packages required to migrate the final data into the production environment during the go-live cutover.</br></br>
- > We also recommend that you use your sandbox environment throughout your project as your TEST environment. If you need additional environments, your organization can purchase them for an additional cost.</br></br>
+ > [!IMPORTANT RECOMMENDATIONS]
+ > - Use your production environment throughout your project as your GOLD configuration environment. This is important, because you can't copy a sandbox environment to a production environment. Therefore, when you go-live, your GOLD environment is your production environment, and you will complete your cutover activities in this environment.</br></br>
+ > - Use your sandbox or another environment to perform a mock cutover prior to your go-live. You can do this by refreshing the production environment with your GOLD configuration into your sandbox environment.</br></br>
+ > - Keep a detailed cutover checklist that includes each of the data packages required to migrate the final data into the production environment during the go-live cutover.</br></br>
+ > - Use your sandbox environment throughout your project as your TEST environment. If you need additional environments, your organization can purchase them for an additional cost.</br></br>
 
 ## Create an LCS project
 
@@ -91,7 +97,7 @@ After you've created an LCS project, you can provision Human Resources into an e
     > The Human Resources instance type cannot be changed once set. Verify the correct instance type is selected before continuing.</br></br>
     > The Human Resources instance type is separate from the instance type of the Microsoft Power Apps environment, which you set in the Power Apps Admin center.
     
-3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Human Resources Test Drive experience. Demo data is beneficial for long-term demo or training environments, and should never be used for production environments. You must choose this option upon initial deployment. You can't update an existing deployment later.
+3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Human Resources Trial environment. Demo data is beneficial for long-term demo or training environments, and should never be used for production environments. You must choose this option upon initial deployment. You can't update an existing deployment later.
 
 4. Human Resources is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this article before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](/powerapps/administrator/create-environment).
 
@@ -120,7 +126,7 @@ Use the following guidance when determining which Power Apps environment to depl
 
 4. Data integration and testing strategies should be considered, such as Sandbox, UAT, or Production. Carefully consider the implications for your deployment, because it's not easy to change which Human Resources environment is mapped to a Power Apps environment.
 
-5. You can't use the following Power Apps environments for Human Resources. They're filtered from the selection list within LCS:
+5. The following Power Apps environments can't be used for Human Resources. They're filtered from the selection list within LCS:
  
     - **Default Power Apps environments** - While each tenant is automatically provisioned with a default Power Apps environment, we don't recommend using them with Human Resources. All tenant users can access the Power Apps environment and could unintentionally corrupt production data when testing and exploring with Power Apps or Power Automate integrations.
    
