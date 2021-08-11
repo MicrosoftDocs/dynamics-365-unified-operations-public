@@ -64,7 +64,7 @@ In the **Feature management** workspace, enable the following features:
 ## Activate feature for specific legal entity
 1. Go to **Tax > Setup > Tax configuration > Tax calculation parameters**
 2. On the **General** tab, set the **Enable tax service** option to **Yes**.
-3. On the **Multiple VAT registraitons** tab, set the **VAT dcelaration**, **EU Sales List**, **Intrastat** option to **Yes** if you want to activate VAT reporting, EU sales list reporting or Intrastat reporting respectively for the selected legal entity.
+3. On the **Multiple VAT registrations** tab, set the **VAT declaration**, **EU Sales List**, **Intrastat** option to **Yes** if you want to activate VAT reporting, EU sales list reporting or Intrastat reporting respectively for the selected legal entity.
 
 
 ## Set up intra-community reporting for multiple VAT registrations
