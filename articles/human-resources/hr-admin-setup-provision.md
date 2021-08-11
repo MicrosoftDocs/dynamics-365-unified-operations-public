@@ -53,7 +53,7 @@ Trial environments aren't intended to be used as production environments. They a
 
 Before you create your first Human Resources environment, you should carefully plan the environment needs for your project. A base subscription to Human Resources includes two environments: a production environment and a sandbox environment. Depending on the complexity of your project, you may need to purchase additional sandbox environments to support project activities. 
 
-Considerations for additional environments include, but aren't limited to, the following:
+Considerations for additional environments:
 
 - **Data migration**: You may need to consider an additional environment for data migration activities to allow your sandbox environment to be used for testing purposes throughout the project. Having an additional environment allows data migrations activities to continue while testing and configuration activities occur simultaneously in a different environment.
 - **Integration**: You may need to consider an additional environment to configure and test integrations. This could include native integrations like the Ceridian Dayforce LinkedIn Talent Hub integrations, or custom integrations such as those for payroll, applicant tracking systems, or benefit systems and providers.
