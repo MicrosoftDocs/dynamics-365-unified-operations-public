@@ -49,18 +49,22 @@ The microservice of Inventory Visibility is deployed on Microsoft Azure Service 
 
 The region short name can be found in the Microsoft Dynamics Lifecycle Services (LCS) environment. The following table lists the regions that are currently available.
 
-| Azure region | Region short name |
-|---|---|
-| Australia east | eau |
-| Australia southeast | seau |
-| Canada central | cca |
-| Canada east | eca |
-| North Europe | neu |
-| West Europe | weu |
-| East US | eus |
-| West US | wus |
-| South UK | suk |
-| West UK | wuk |
+| Azure region        | Region short name |
+| ------------------- | ----------------- |
+| Australia east      | eau               |
+| Australia southeast | seau              |
+| Canada central      | cca               |
+| Canada east         | eca               |
+| North Europe        | neu               |
+| West Europe         | weu               |
+| East US             | eus               |
+| West US             | wus               |
+| South UK            | suk               |
+| West UK             | wuk               |
+| East Japan          | ejp               |
+| West Japan          | wjp               |
+| South Brazil        | sbr               |
+| South Central US    | scus              |
 
 The island number is where your LCS environment is deployed on Service Fabric. There is currently no way to get this information from the user side.
 
@@ -75,66 +79,66 @@ To get a security service token, follow these steps.
 1. Sign in to the Azure portal, and use it to find the `clientId` and `clientSecret` values for your Dynamics 365 Supply Chain Management app.
 1. Fetch an Azure AD token (`aadToken`) by submitting an HTTP request that has the following properties:
 
-    - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
-    - **Method:** `GET`
-    - **Body content (form data):**
+   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+   - **Method:** `GET`
+   - **Body content (form data):**
 
-        | Key | Value |
-        |---|---|
-        | client_id | ${aadAppId} |
-        | client_secret | ${aadAppSecret} |
-        | grant_type | client_credentials |
-        | resource | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+     | Key           | Value                                |
+     | ------------- | ------------------------------------ |
+     | client_id     | ${aadAppId}                          |
+     | client_secret | ${aadAppSecret}                      |
+     | grant_type    | client_credentials                   |
+     | resource      | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
 
-    You should receive an Azure AD token (`aadToken`) in response. It should resemble the following example.
+   You should receive an Azure AD token (`aadToken`) in response. It should resemble the following example.
 
-    ```json
-    {
-        "token_type": "Bearer",
-        "expires_in": "3599",
-        "ext_expires_in": "3599",
-        "expires_on": "1610466645",
-        "not_before": "1610462745",
-        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-        "access_token": "eyJ0eX...8WQ"
-    }
-    ```
+   ```json
+   {
+     "token_type": "Bearer",
+     "expires_in": "3599",
+     "ext_expires_in": "3599",
+     "expires_on": "1610466645",
+     "not_before": "1610462745",
+     "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+     "access_token": "eyJ0eX...8WQ"
+   }
+   ```
 
 1. Formulate a JavaScript Object Notation (JSON) request that resembles the following example.
 
-    ```json
-    {
-        "grant_type": "client_credentials",
-        "client_assertion_type": "aad_app",
-        "client_assertion": "{Your_AADToken}",
-        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
-        "context_type": "finops-env"
-    }
-    ```
+   ```json
+   {
+     "grant_type": "client_credentials",
+     "client_assertion_type": "aad_app",
+     "client_assertion": "{Your_AADToken}",
+     "scope": "https://inventoryservice.operations365.dynamics.com/.default",
+     "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
+     "context_type": "finops-env"
+   }
+   ```
 
-    Note the following points:
+   Note the following points:
 
-    - The `client_assertion` value must be the Azure AD token (`aadToken`) that you received in the previous step.
-    - The `context` value must be the environment ID where you want to deploy the add-in.
-    - Set all the other values as shown in the example.
+   - The `client_assertion` value must be the Azure AD token (`aadToken`) that you received in the previous step.
+   - The `context` value must be the environment ID where you want to deploy the add-in.
+   - Set all the other values as shown in the example.
 
 1. Submit an HTTP request that has the following properties:
 
-    - **URL:** `https://securityservice.operations365.dynamics.com/token`
-    - **Method:** `POST`
-    - **HTTP header:** Include the API version. (The key is `Api-Version`, and the value is `1.0`.)
-    - **Body content:** Include the JSON request that you created in the previous step.
+   - **URL:** `https://securityservice.operations365.dynamics.com/token`
+   - **Method:** `POST`
+   - **HTTP header:** Include the API version. (The key is `Api-Version`, and the value is `1.0`.)
+   - **Body content:** Include the JSON request that you created in the previous step.
 
-    You should receive an access token (`access_token`) in response. You must use this token as a bearer token to call the Inventory Visibility API. Here is an example.
+   You should receive an access token (`access_token`) in response. You must use this token as a bearer token to call the Inventory Visibility API. Here is an example.
 
-    ```json
-    {
-        "access_token": "{Returned_Token}",
-        "token_type": "bearer",
-        "expires_in": 3600
-    }
-    ```
+   ```json
+   {
+     "access_token": "{Returned_Token}",
+     "token_type": "bearer",
+     "expires_in": 3600
+   }
+   ```
 
 In later sections, you will use `$access_token` to represent the token that was fetched in the last step.
 
@@ -191,38 +195,40 @@ The following example shows sample body content. In this sample, you post a chan
 
 ```json
 {
-    "id": "123456",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
-    "dimensionDataSource": "pos",
-    "dimensions": {
-        "ColorId": "Red"
-    },
-    "quantities": {
-        "pos": {
-            "inbound": 1
-        }
+  "id": "123456",
+  "organizationId": "usmf",
+  "productId": "T-shirt",
+  "dimensionDataSource": "pos",
+  "dimensions": {
+    "PosMachineId": "0001",
+    "ColorId": "Red"
+  },
+  "quantities": {
+    "pos": {
+      "inbound": 1
     }
+  }
 }
 ```
 
-The following example shows sample body content without `dimensionDataSource`.
+The following example shows sample body content without `dimensionDataSource`, in this case `dimensions` will be the [base dimensions](inventory-visibility-configuration.md#data-source-configuration-dimension).
+And if the `dimensionDataSource` is set, `dimensions` can both be dimensions of the data source or the base dimensions.
 
 ```json
 {
-    "id": "123456",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
-    "dimensions": {
-        "ColorId": "Red",
-        "SiteId": "1",
-        "LocationId": "11"
-    },
-    "quantities": {
-        "pos": {
-            "inbound": 1
-        }
+  "id": "123456",
+  "organizationId": "usmf",
+  "productId": "T-shirt",
+  "dimensions": {
+    "ColorId": "Red",
+    "SiteId": "1",
+    "LocationId": "11"
+  },
+  "quantities": {
+    "pos": {
+      "inbound": 1
     }
+  }
 }
 ```
 
@@ -264,30 +270,29 @@ The following example shows sample body content.
 
 ```json
 [
-    {
-        "id": "123456",
-        "organizationId": "usmf",
-        "productId": "T-shirt",
-        "dimensionDataSource": "pos",
-        "dimensions": {
-            "PosMachineId": "0001"
-        },
-        "quantities": {
-            "pos": { "inbound": 1 }
-        }
+  {
+    "id": "123456",
+    "organizationId": "usmf",
+    "productId": "T-shirt",
+    "dimensionDataSource": "pos",
+    "dimensions": {
+      "PosMachineId": "0001"
     },
-    {
-        "id": "654321",
-        "organizationId": "usmf",
-        "productId": "@PRODUCT1",
-        "dimensionDataSource": "pos",
-        "dimensions": {
-            "PosMachineId": "0001"
-        },
-        "quantities": {
-            "pos": { "outbound": 3 }
-        }
+    "quantities": {
+      "pos": { "inbound": 1 }
     }
+  },
+  {
+    "id": "654321",
+    "organizationId": "usmf",
+    "productId": "Pants",
+    "dimensions": {
+      "ColorId": "black"
+    },
+    "quantities": {
+      "pos": { "outbound": 3 }
+    }
+  }
 ]
 ```
 
@@ -330,20 +335,20 @@ The following example shows sample body content. The behavior of this API differ
 
 ```json
 [
-    {
-        "id": "123456",
-        "organizationId": "usmf",
-        "productId": "T-shirt",
-        "dimensionDataSource": "pos",
-        "dimensions": {
-            "PosMachineId": "0001"
-        },
-        "quantities": {
-            "pos": {
-                "inbound": 1
-            }
-        }
+  {
+    "id": "123456",
+    "organizationId": "usmf",
+    "productId": "T-shirt",
+    "dimensionDataSource": "pos",
+    "dimensions": {
+      "PosMachineId": "0001"
+    },
+    "quantities": {
+      "pos": {
+        "inbound": 1
+      }
     }
+  }
 ]
 ```
 
@@ -390,19 +395,19 @@ The following example shows sample body content.
 
 ```json
 {
-    "id": "reserve-0",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
-    "quantity": 1,
-    "quantityDataSource": "iv",
-    "modifier": "softreservordered",
-    "ifCheckAvailForReserv": true,
-    "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red",
-        "SizeId": "Small"
-    }
+  "id": "reserve-0",
+  "organizationId": "usmf",
+  "productId": "T-shirt",
+  "quantity": 1,
+  "quantityDataSource": "iv",
+  "modifier": "softreservordered",
+  "ifCheckAvailForReserv": true,
+  "dimensions": {
+    "SiteId": "1",
+    "LocationId": "11",
+    "ColorId": "Red",
+    "SizeId": "Small"
+  }
 }
 ```
 
@@ -462,8 +467,12 @@ ContentType:
     application/json
 Body:
     {
-        organizationId: string,
+        dimensionDataSource: string, # Optional
         filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
             [dimensionKey:string]: string[],
         },
         groupByValues: string[],
@@ -471,18 +480,45 @@ Body:
     }
 ```
 
-The following example shows sample body content.
+In the body part of this request, `dimensionDataSource` is still an optional parameter, if not set, `filters` will be treated as *base dimensions*. There are **4** required fileds in `filters`: `organizationId`, `productId`, `siteId`, `locationId`.
+
+- `organizationId` should contains only one value, but it is still an array.
+- `productId` can contains one or more values, if it is an empty array, all products' result will be returned.
+- `siteId` and `locationId` is two solid fields used in Inventory Visibility for partitioning.
+
+The `groupByValues` should follow your configuration for indexing, see [Product index hierarchy configuration](./inventory-visibility-configuration.md#index-configuration).
+
+The `returnNegative` controls if the results contains negative entries or not.
+
+The following example shows sample body content:
 
 ```json
 {
-    "dimensionDataSource": "pos",
-    "filters": {
-        "organizationId": ["usmf"],
-        "productId": ["T-shirt"],
-        "ColorId": ["Red"]
-    },
-    "groupByValues": ["ColorId", "SizeId"],
-    "returnNegative": true
+  "dimensionDataSource": "pos",
+  "filters": {
+    "organizationId": ["usmf"],
+    "productId": ["T-shirt"],
+    "siteId": ["1"],
+    "LocationId": ["11"],
+    "ColorId": ["Red"]
+  },
+  "groupByValues": ["ColorId", "SizeId"],
+  "returnNegative": true
+}
+```
+
+To query all products' result in a specific site and location:
+
+```json
+{
+  "filters": {
+    "organizationId": ["usmf"],
+    "productId": [],
+    "siteId": ["1"],
+    "LocationId": ["11"],
+  },
+  "groupByValues": ["ColorId", "SizeId"],
+  "returnNegative": true
 }
 ```
 
@@ -507,7 +543,7 @@ Query(Url Parameters):
 Here is a sample get URL. This get request is exactly the same as the post sample that was provided earlier.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
