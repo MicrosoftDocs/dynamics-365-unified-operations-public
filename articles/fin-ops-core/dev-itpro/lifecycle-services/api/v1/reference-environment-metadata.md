@@ -45,7 +45,7 @@ Within LCS, the user used in the API OAuth authentication will need to be added 
 
 ## HTTP request
 
-Use the following GET endpoint to fetch environment metdata. The default domain for the LCS API is `https://lcsapi.lcs.dynamics.com/` but this can vary depending on your setup.
+Use the following GET endpoint to fetch environment metdata.
 
 **Fetch metadata for all environments within a project**
 <!-- { "blockType": "ignored" } -->
@@ -129,7 +129,7 @@ For each environment, the following properties will be available. If a value is 
             "EnvironmentType": "Production",
             "EnvironmentGroup": "Primary",
             "EnvironmentProduct": "Finance and Operations",
-            "EnvironmentEndpointBaseUrl": "https://<example>.operations.dynamics.com/",
+            "EnvironmentEndpointBaseUrl": "<example>",
             "DeploymentState": "Finished",
             "TopologyDisplayName": "Finance and Operations - High Availability (10.0.20 with Platform update 44)",
             "CurrentApplicationBuildVersion": "10.0.886.48",
@@ -151,7 +151,7 @@ For each environment, the following properties will be available. If a value is 
             "EnvironmentType": "Sandbox",
             "EnvironmentGroup": "Primary",
             "EnvironmentProduct": "Finance and Operations",
-            "EnvironmentEndpointBaseUrl": "https://<example>.operations.dynamics.com/",
+            "EnvironmentEndpointBaseUrl": "<example>",
             "DeploymentState": "Finished",
             "TopologyDisplayName": "Finance and Operations - Sandbox (10.0.20 with Platform update 44)",
             "CurrentApplicationBuildVersion": "10.0.960.24",
