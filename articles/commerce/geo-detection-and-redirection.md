@@ -116,7 +116,7 @@ The URLs that you'll recommend to your customers must be configured as Country o
 2. Click on the newly-created box that says "Country"
 3. Enter a display string (e.g. "Canada")
 4. Enter an optional display substring (e.g. "French", or "fr-ca") 
-5. Enter an option country image from the media library.
+5. Enter an optional image from the media library.
 6. Enter the Country URL. This URL must exactly match the URL in the Channels page that is mapped to the channel and locale associated with this country. 
 7. Click OK and repeat as necessary for the countries you wish to display in the country/region picker. 
 
