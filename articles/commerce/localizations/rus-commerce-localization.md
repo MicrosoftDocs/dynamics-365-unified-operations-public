@@ -98,11 +98,13 @@ To learn about POS features that are available to customers in all countries or 
 
 ### Eastern Europe-specific POS features
 
+
 The following Eastern Europe–specific POS features are enabled after the Commerce localization for Russia has been set up:
 
 - Customer cash payments according to the retail store cash management requirements.
 - Cash payments that use petty cash journals in Commerce headquarters.
 - Retail transactions that are aggregated according to specific criteria or posted separately.
+
 
 For more information, see [Petty cash management for Commerce for Eastern Europe](emea-eeu-petty-cash-for-retail.md).
 
