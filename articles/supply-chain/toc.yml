@@ -1619,6 +1619,8 @@
           href: master-planning/planning-optimization/release-process.md
         - name: Planning Optimization fit analysis
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
+        - name: Differences between built-in master planning and Planning Optimization
+          href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
         - name: Parameters not used by Planning Optimization
           href: master-planning/planning-optimization/not-used-parameters.md
         - name: Apply filters to a plan
