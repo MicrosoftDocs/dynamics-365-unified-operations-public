@@ -118,7 +118,7 @@ Product-specific data is cached in the e-Commerce rendering Node layer. Caching 
 ### Page caching
 
 Page caching enables e-commerce site pages to be cached on the server from which they can then be served to site users, significantly improving performance time.
-Page caching and caching duration can be enabled and configured in Commerce site builder for site pages, or can be configured for templates that are applied across multiple site pages. For more information, see [Configure page caching](e-commerce-extensibility/page-caching.md).
+Page caching and caching duration can be enabled and configured in Commerce site builder for site pages, or can be configured for templates that are applied across multiple site pages. For more information, see [Configure page caching](page-caching.md).
 
 ## Browser hint meta tags
 
