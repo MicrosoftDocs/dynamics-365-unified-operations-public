@@ -110,7 +110,7 @@ The client secret is also known as an *application password*. It's a string valu
 
 1. In Commerce Headquarters, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
 2. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set based on your selection.
-3. On the **Relying parties** FastTab, select **Add**. Enter the client ID that was generated during the Retail server app registration in Azure. Set the **Type** field to **Confidential** and the **UserType** field to **Application**.
+3. On the **Relying parties** FastTab, select **Add**. Enter the client ID that was generated during the app registration for the client in Azure. Set the **Type** field to **Confidential** and the **UserType** field to **Application**.
 4. On the Action Pane, select **Save**.
 5. Select the new relying party, and then on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter the Application ID URI (this is the API URI generated during the Retail Server app registration).
 6. On the Action Pane, select **Save**.
