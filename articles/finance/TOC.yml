@@ -1547,7 +1547,7 @@
             - name: Switzerland reporting
               items: 
               - name: VAT declaration
-                href: localizations/emea-che-VAT-declaration-Switzerland.md
+                href: localizations/emea-che-vat-declaration-switzerland.md
             - name: United Kingdom reporting
               items:
               - name: Prepare for integration with MTD for VAT
