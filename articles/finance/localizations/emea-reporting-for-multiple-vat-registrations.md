@@ -113,12 +113,16 @@ For more information about how to configure Intrastat, see [Intrastat overview](
 
     The following table shows the earliest ER format versions that you can select the format for.
 
-    | **Release** | **Country** | **ER format** |
-    |-------------------------|-------------------------|-------------------------|
-    | 10.0.19 | All | Intrastat model.version.16 |
-    | 10.0.19 | NL | Intrastat (NL).version.1.3 |
-    | 10.0.20 | FR | Intrastat INTRACOM (FR).version.13.5</br>Intrastat SAISUNIC (FR).version.1.3 |
-    | 10.0.20 | UK (NI) | Intrastat (UK).version.1.2 |
+    | **Release** | **Country** | **ER format**                                                                     |
+    |-------------|-------------|-----------------------------------------------------------------------------------|
+    | 10.0.19     | All         | Intrastat model.version.16                                                        |
+    | 10.0.19     | NL          | Intrastat (NL).version.1.3                                                        |
+    | 10.0.20     | FR          | Intrastat INTRACOM (FR).version.13.5</br>Intrastat SAISUNIC (FR).version.1.3      |
+    | 10.0.20     | UK (NI)     | Intrastat (UK).version.1.2                                                        |
+    | 10.0.21     | AT          | Intrastat (AT).version.16.3                                                       |
+    | 10.0.21     | DE          | Intrastat model.version.22</br>INSTAT XML.version.22.9</br>INSTAT XML (DE).version.22.9.9 |
+    | 10.0.21     | ES          | Intrastat (ES).version.16.7                                                       |
+    | 10.0.21     | SE          | Intrastat (SE).version.16.4                                                       |
 
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
