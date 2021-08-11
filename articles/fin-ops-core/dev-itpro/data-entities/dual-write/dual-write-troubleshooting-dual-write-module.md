@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: Troubleshoot dual-write issues in Finance and Operations apps
 description: This topic provides troubleshooting information that can help you fix issues with the Dual-write module in Finance and Operations apps.
 author: RamaKrishnamoorthy 
-ms.date: 03/16/2020
+ms.date: 08/10/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-03-16
-
 ---
 
 # Troubleshoot dual-write issues in Finance and Operations apps
@@ -48,8 +32,7 @@ If you can't open the **Dual-write** page by selecting the **Dual Write** tile i
 
 You might receive the following error message when you try to configure a new table for dual-write. The only user that can create a map is the user who setup the dual-write connection.
 
-*Response status code does not indicate success: 401 (Unauthorized)*
-
+*Response status code does not indicate success: 401 (Unauthorized).*
 
 ## Error when you open the dual-write user interface
 
@@ -65,9 +48,11 @@ To fix the issue, sign in by using an InPrivate window in Microsoft Edge, an inc
 
 You might encounter the following error when linking or creating maps:
 
-*Response status code does not indicate success: 403 (tokenexchange).<br>
-Session ID: \<your session id\><br>
-Root activity ID: \<your root activity id\>*
+```dos
+Response status code does not indicate success: 403 (tokenexchange).
+Session ID: \<your session id\>
+Root activity ID: \<your root activity\> id
+```
 
 This error can occur if you don't have sufficient permissions to link dual-write or create maps. This error can also occur if the Dataverse environment was reset without unlinking dual-write. Any user with system administrator role in both Finance and Operations apps and Dataverse can link the environments. Only the user who setup the dual-write connection can add new table maps. After setup, any user with system administrator role can monitor the status and edit the mappings.
 

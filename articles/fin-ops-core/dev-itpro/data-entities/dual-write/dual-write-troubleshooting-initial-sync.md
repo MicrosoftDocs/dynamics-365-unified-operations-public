@@ -50,7 +50,7 @@ After you enable the mapping templates, the status of the maps should be **Runni
 
 You might receive the following error message when you try to run the mapping and initial synchronization:
 
-*(\[Bad Request\], The remote server returned an error: (400) Bad Request.), AX export encountered an error*
+*(\[Bad Request\], The remote server returned an error: (400) Bad Request.), AX export encountered an error.*
 
 Here is an example of the full error message.
 
@@ -202,7 +202,7 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
 
         ![Data integration project to update CustomerAccount and ContactPersonId.](media/cust_selfref6.png)
 
-    2. Add the company criteria in the filter on the Dataverse side, so that only rows that match the filter criteria will be updated in the Finance and Operations app. To add a filter, select the filter button. Then, in the **Edit query** dialog box, you can add a filter query such as **\_msdyn\_company\_value eq '\<guid\>'**. 
+    2. Add the company criteria in the filter on the Dataverse side, so that only rows that match the filter criteria will be updated in the Finance and Operations app. To add a filter, select the filter button. Then, in the **Edit query** dialog box, you can add a filter query such as **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [NOTE]
         > If the filter button isn't present, create a support ticket to ask the data integration team to enable the filter capability on your tenant.
@@ -215,44 +215,36 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
 
 8. In the Finance and Operations app, turn change tracking back on for the **Customers V3** table.
 
+## Initial sync failures on maps with more than 10 lookup fields
 
-## Initial sync failures on Customers V3 - Accounts and Sales orders mappings or any maps with more than 10 lookup fields
+You might receive the following error message when you try run an initial sync failures on **Customers V3 - Accounts**, **Sales orders** mappings, or any map with more than 10 lookup fields:
 
 Due to the lookup limitation on FetchXML query, the initial sync would fail when the entity mapping contains more than 10 lookups. Here is the Dataverse platform documentation for refence: https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query.
 
-**Expected Error message**
+*CRMExport: Package execution complete. Error Description 5 Attempts to get data from https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc failed.*
 
-CRMExport: Package execution complete. Error Description 5 Attempts to get data from https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, address2_county, address2_stateorprovince, address2_line1, address2_postalcode, creditlimit, address1_city, address1_country, address1_county, address1_postalcode, name, numberofemployees, emailaddress1, fax, telephone1, primarytwitterid, websiteurl, description, msdyn_creditlimitismandatory, msdyn_creditrating, msdyn_identificationnumber, msdyn_invoiceaddress, msdyn_onetimecustomer, msdyn_onholdstatus, msdyn_partycountry, msdyn_partystateprovince, msdyn_paymenttermsbasedays, msdyn_primaryfacebookid, msdyn_faxextension, msdyn_primarylinkedinid, msdyn_taxexemptnumber, msdyn_emailaddress1description, msdyn_primaryfacebookdescription, msdyn_faxdescription, msdyn_primarylinkedindescrption, msdyn_telephone1description, msdyn_telephone1extension, msdyn_primarytwitteriddescription, msdyn_websiteurldescription, address1_line1, address1_stateorprovince, msdyn_partynumber, versionnumber&$expand=msdyn_billingaccount_account($select=accountnumber),msdyn_company($select=cdm_companycode),transactioncurrencyid($select=isocurrencycode),msdyn_customergroupid($select=msdyn_groupid),msdyn_customerpaymentmethod($select=msdyn_name),msdyn_paymentday($select=msdyn_name),msdyn_paymentschedule($select=msdyn_name),msdyn_paymentterm($select=msdyn_name),primarycontactid($select=msdyn_contactpersonid),msdyn_salestaxgroup($select=msdyn_name),msdyn_vendor($select=msdyn_vendoraccountnumber)&$filter=(customertypecode eq 3) and (msdyn_company/cdm_companyid eq 'dfdsfrgrfsbgetb')&$orderby=accountnumber asc failed.
+To fix this issue, follow these steps:
 
-**Workaround**
+1. Remove optional lookup fields from the dual-write entity map so that the number of lookups is 10 or fewer.
+2. Save the map and do the initial sync.
+3. When the initial sync for the first step is successful, add the remaining lookup fields and remove the lookup fields that you synced in first step. Make sure that the number of lookup fields is 10 or fewer. Save the map and run the initial sync.
+4. Repeat these steps until all the lookup fields are synced.
+5. Add all the lookup fields back to the map, save the map, and run the map with **Skip initial sync**.
 
-Split the initial sync in to 3 steps.
+This process enables the map for live sync mode.
 
-In the first step, remove some of the lookup fields from the dual-write entity map that are not mandatory and bring the number of lookups to 10. 
+## Known issue during initial sync of Party postal addresses and party electronic addresses
 
-Once the lookup fields are removed, save the map and do the initial sync. 
+You might receive the following error message when you try to run the initial syn of Party postal addresses and party electronic addresses:
 
-Once the initial sync for the first step is successful, add the remaining lookup fields and remove the lookup fields that got initial synced in first step. 
+*Party number could not found in Dataverse.*
 
-Once again make sure the number of lookup fields is 10. Save the map and run the initial sync. 
+There is a range set on **DirPartyCDSEntity** in Finance and Operations apps that filters parties of type **Person** and **Organization**. As a result, an initial sync of the **CDS Parties – msdyn_parties** mapping will not sync parties of other types, including **Legal Entity** and **Operating Unit**. When the initial sync runs for **CDS Party postal addresses (msdyn_partypostaladdresses)** or **Party Contacts V3 (msdyn_partyelectronicaddresses)** you might receive the error.
 
-Repeat these steps to make sure all the lookup fields are initial synced. 
-
-Now add all the lookup fields back to the map, save the map and run the map with skip initial sync. 
-
-This will enable the map for live sync mode.
-
-
-## Known error during initial sync of Party postal addresses and party electronic addresses.
-
-We have a range added on DirPartyCDSEntity in Finance and Operations apps to filter only parties of type ‘Person’ and ‘Organization’. As a result, initial sync of "CDS Parties – msdyn_parties" mapping will not sync parties of other types like ‘Legal Entity’, ‘Operating Unit’ etc. So, when the initial sync runs for CDS Party postal addresses (msdyn_partypostaladdresses) or Party Contacts V3 (msdyn_partyelectronicaddresses) you may see errors like "Party number could not found in Dataverse".
-
-We are currently working on a fix to remove the party type range on the Finance and Operations entity so that parties of all types can synchronize to Dataverse successfully.
+We are working on a fix to remove the party type range on the Finance and Operations entity so that parties of all types can synchronize to Dataverse successfully.
 
 ## Are there any performance issues while running initial sync for Customers or Contacts data?
 
-In the scenario where you have already completed the initial sync for Customer data and have the customer maps running and now you are running initial sync for Contacts data, you may face performance issues during inserts/updates to LogisticsPostalAddress and LogisticsElectronicAddress tables for contact addresses. It is because, the same global postal address and electronic address tables are tracked for CustCustomerV3Entity and VendVendorV2Entity and dual-write tries to build more queries to write data to other side. So if you have already ran initial sync for customers, then stop the corresponding map while running initial sync for contacts data. Same instruction applies for vendor data as well. Once initial sync is complete for these, you can run all these maps by skipping initial sync.
-
-
+If you have run the initial sync for **Customer** data and have the **Customer** maps running and then you are run the initial sync for **Contacts** data, there might be performance issues during inserts and updates to the **LogisticsPostalAddress** and **LogisticsElectronicAddress** tables for **Contact** addresses. The same global postal address and electronic address tables are tracked for **CustCustomerV3Entity** and **VendVendorV2Entity** and dual-write tries to build more queries to write data to other side. If you have already run the initial sync for **Customer**, then stop the corresponding map while running initial sync for **Contacts** data. Do the same thing for the **Vendor** data. When the initial sync is finished, you can run all the maps by skipping initial sync.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
