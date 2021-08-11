@@ -2,7 +2,7 @@
 title: Party and global address book
 description: This topic describes the Party and global address book functionality of dual-write.
 author: RamaKrishnamoorthy
-ms.date: 02/22/2021
+ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
@@ -134,7 +134,7 @@ The grid includes the following columns:
 
 You can use the **New Electronic Address** button above the grid to create as many addresses as you want.
 
-Electronic addresses are available only in this grid. In future releases, all postal address and electronic address fields will be removed from other tabs, for example, the **Summary** and **Details** tabs. Essentially, contact details displayed on the **Details** tab are read-only copies of the primary electronic address like primary phone, primary email, primary telephone, primary fax and primary Twitter ID. During the lead qualification process you can provide both a business phone number and a mobile phone number. The business phone number is considered the primary phone if **IsMobile=No** and mobile phone number is considered the secondary phone if **IsMobile=Yes**.
+Electronic addresses are available only in this grid. In future releases, all postal address and electronic address fields will be removed from other tabs, for example, the **Summary** and **Details** tabs. Contact details displayed on the **Details** tab are read-only copies of the primary electronic address, like primary phone, primary email, primary telephone, primary fax, and primary Twitter ID. During the lead qualification process you can provide both a business phone number and a mobile phone number. The business phone number is considered the primary phone if **IsMobile=No** and the mobile phone number is considered the secondary phone if **IsMobile=Yes**.
 
 > [!TIP]
 > Use **Addresses** and **Electronic Addresses** tabs on the **Account** and **Contact** forms to manage postal and electronic addresses. This ensures that address data synchronizes to Finance and Operations apps.
@@ -247,13 +247,11 @@ Electronic addresses are available only in this grid. In future releases, all po
     [CDS sales order headers](mapping-reference.md#217) | salesorders
     [Sales invoice headers V2](mapping-reference.md#118) | invoices
 
-> [!Note]
+> [!NOTE]
 > The `CDS Contacts V2 (contacts)` map is the map that you stopped in the step 1. When you try to run other maps, these 2 maps may appear in the list of dependents. Don't run these maps.
 
-> [!Note]
 > If the party and global address book solution is installed, you must disable the pluging named `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. If you uninstall the party and global address book solution, then you must re-enable the plugin.
 
-> [!Note]
 > The `msdyn_*partynumber` field (a single line text field) that is included in the **Account**, **Contact** and **Vendor** tables should not be used going forward. The label name has a prefix of **(Deprecated)** for clarity. Instead, use the **msdyn_partyid** field. The field is a lookup to the **msdyn_party** table.
 
 > Table Name | Old field | New field
