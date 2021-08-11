@@ -23,7 +23,7 @@ This topic lists new features, fixes, improvements, and known issues for each re
 
 ### New features, fixes, and improvements in version 2.0.8.0
 
-- Added support for the [step instructions feature](mobile-app-titles-instructions.md) introduced in 10.0.21.
+- Added support for the [step instructions feature](mobile-app-titles-instructions.md) introduced in Supply Chain Management version 10.0.21.
 - Added hint animation to show users they can close overlays by swiping down.
 - Added support for function keys on action lists and menus. Hold down any F-key for three seconds to get a list of available commands.
 - Fixed an issue that resulted in showing the error "Cannot find a suitable view for the specified size" on some devices.
