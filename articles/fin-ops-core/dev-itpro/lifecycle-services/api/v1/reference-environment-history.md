@@ -45,7 +45,7 @@ Within LCS, the user used in the API OAuth authentication will need to be added 
 
 ## HTTP request
 
-Use the following GET endpoint to fetch environment history for a given environment.
+Use the following GET endpoint to fetch environment history for a given environment. The default domain for the LCS API is `https://lcsapi.lcs.dynamics.com/` but this can vary depending on your setup.
 
 <!-- { "blockType": "ignored" } -->
 ```http
