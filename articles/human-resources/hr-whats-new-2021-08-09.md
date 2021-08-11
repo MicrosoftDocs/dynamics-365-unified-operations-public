@@ -39,7 +39,7 @@ For more information about new features and their expected general availability 
 
 ## In this release
 
-This release includes the following new features and bug fixes. Changes apply to build number 8.1.4384.
+This release includes the following new features and bug fixes. Changes apply to build number 8.1.4393.
 
 ### Bug fixes
 
@@ -50,11 +50,9 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 600422 | Payroll address validation failing for Ready to Pay. | Validation has been updated to require only one address of the type 'Payroll residency location' and only one address of the type 'Payroll work location'. |
-| 601226 | Data Integration issue: Payroll integration export project does not have the option to full push | The payroll integration to Ceridian DayForce was doing an incremental push instead of a full push. Ceridian requires to always be full refresh. This issue is now fixed, the entities in the data export project will no longer flip to incremental push. |
-| 602272 | Tiles that were added to Employee Self Service workspace are now missing, and tiles can no longer be added to it | We have fixed the personalization issue for Employee self service. New tiles can be added to the view and any existing personalization will be visible to users |
-| 600711 | Half-day definition selection field enabled for full day leave requests | This issue is now fixed and half day definition field will be enabled only when employees select a leave type with half day definition enabled and half day as the amount value selected |
-| 602208 | Accrual rate units displaying hours instead of days | This issue is now fixed. The **Time off** form will show the correct leave unit (hours or days) for the **Accrual rate** column. |
+| ## Default designee assignment is not respected if Auto-assign designees is set to true. - (558385) | | |
+| ## Time-off card balance, Available to buy and Available to Sell balance do not appear when user roles are restricted to a specific legal entity. - (589617) | | |
+| ## Remove unused admin trusted applications from application settings - (473423) | | |
 
 ## In preview
 
