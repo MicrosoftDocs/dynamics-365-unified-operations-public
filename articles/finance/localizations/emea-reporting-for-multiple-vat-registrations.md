@@ -35,23 +35,8 @@ This topic explains how to do reporting for multiple value-added tax (VAT) regis
 
 ## Prerequisites
 
-Before you can do the reporting for multiple VAT registrations, the following prerequisites must be completed:
+Configure the Tax Calculation service. Find more details in [Tax Calculation](global-tax-calcuation-service-overview.md).
 
-1. Enable the Tax Calculation service.
-2. Configure the Tax Calculation service.
-3. Enable additional tax ID features.
-4. Set up the **Multiple VAT registrations** feature.
-
-### Enable the Tax Calculation service
-
-1. Go to **Tax** > **Setup** > Tax configuration** > **Tax service setup (Preview)**.
-2. On the **General** tab, set the **Enable tax service** option to **Yes**.
-
-    ![tax service parameters.](media/Multipleid-image1.png)
-
-### Configure the Tax Calculation service
-
-For information about how to configure the Tax Calculation service, see [Tax Calculation](global-tax-calcuation-service-overview.md).
 
 ### Enable features in the feature management
 
@@ -72,9 +57,15 @@ For information about how to set up the **Multiple VAT registrations** feature, 
 
 In the **Feature management** workspace, enable the following features:
 
-   - Intrastat reporting by Multiple Tax ID
-   - EU Sales list reporting by Multiple Tax ID
-   - Sales tax declaration by Multiple Tax ID
+   - Intrastat reporting for multiple VAT registrations
+   - EU Sales list reporting for multiple VAT registrations
+   - Sales tax declaration for multiple VAT registrations
+
+## Activate feature for specific legal entity
+1. Go to **Tax > Setup > Tax configuration > Tax calculation parameters**
+2. On the **General** tab, set the **Enable tax service** option to **Yes**.
+3. On the **Multiple VAT registraitons** tab, set the **VAT dcelaration**, **EU Sales List**, **Intrastat** option to **Yes** if you want to activate VAT reporting, EU sales list reporting or Intrastat reporting respectively for the selected legal entity.
+
 
 ## Set up intra-community reporting for multiple VAT registrations
 
