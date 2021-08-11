@@ -1,30 +1,14 @@
 ---
-# required metadata
-
 title: General troubleshooting
 description: This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
 author: RamaKrishnamoorthy 
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-03-16
-
 ---
 
 # General troubleshooting
@@ -33,13 +17,10 @@ ms.search.validFrom: 2020-03-16
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
 
 > [!IMPORTANT]
 > Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
-
 
 ## <a id="enable-view-trace"></a>Enable and view the plug-in trace log in Dataverse to view error details
 
@@ -62,28 +43,15 @@ To view the trace log, follow these steps.
 
 **Required role to view the errors:** System admin
 
-In Dual write many times Finance and Operations apps will show up errors which are related to dataverse instance. To enable verbose logging for the errors, use following steps:
+Dual-write errors that originate in Dataverse can appear in the Finance and Operations app. To enable verbose logging for the errors, following these steps:
 
-1.	For all project configurations in Finance and Operations app there is a flag IsDebugMode on DualWriteProjectConfiguration entity.
-
-2.	Open the entity in Excel addin. An easy way to do it is to enable design mode in Finance and Operations app excel addin and add the DualWriteProjectConfigurationEntity to the sheet. Refer to https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/office-integration/use-excel-add-in for more info on excel addins.
-
-3.	Set the IsDebugMode to Yes on the project in question.
-
-4.	Run the scenario that is generating errors.
-
-5.	The verbose logs are available on DualWriteErrorLog table.
-
-6.	To lookup data on table browser use the following link https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog  (replace XXX as appropriate):
-
-7.	Update after [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe)  (available for PU 37 and above). If you have this kb installed then the debug mode will capture more logs.  
-
-Detailed Error Message will capture the batch request Formatted as follows 
-
-{ "entityName": "UnitOfMeasureEntity", "externalEntityName": "uoms", "executionStatus": 2, "fieldResponses": [], "recordResponses": [ { "errorMessage": "Request failed with status code InternalServerError and CDS error code : Internal Server Error", "logDateTime": "2020-12-08T00:14:28.2746686Z", "verboseError": "Batch response detailed error {"Message":"ValidateClosed - Db GetCreateConnection() should be closed on End","ExceptionMessage":"ValidateClosed - Db GetCreateConnection() should be closed on End","ExceptionType":"Microsoft.Crm.CrmException","StackTrace":" at Microsoft.Crm.CrmDbConnection.ValidateClosed(Boolean raiseException)\r\n at Microsoft.Crm.LegacySqlDataAccessContextImplementation.EndRequest()\r\n at Microsoft.Crm.SqlDataAccessContext.OnEndRequest()\r\n at Microsoft.Crm.BusinessEntities.ExecutionContext.OnEndRequest()\r\n at Microsoft.Crm.Extensibility.OData.CrmODataBatchHandler.<ExecuteChangeSetAsync>d__10.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at Microsoft.Crm.Extensibility.OData.CrmODataBatchHandler.<ExecuteRequestMessagesImplAsync>d__15.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n at Microsoft.Crm.Extensibility.OData.CrmODataBatchHandler.<>c__DisplayClass8_0.<<ExecuteRequestMessagesAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n at Microsoft.Crm.Extensibility.OData.CrmODataBatchHandler.<ExecuteRequestMessagesAsync>d__8.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n at System.Web.OData.Batch.DefaultODataBatchHandler.<ProcessBatchAsync>d__0.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n at System.Web.Http.Batch.HttpBatchHandler.<SendAsync>d__0.MoveNext()","ErrorCode":"0x8004023e"} " } ], "isErrorCountUpdated": false, "dualWriteProcessingStage": 4, "debugLogTrace": [ "CDS batch request --batch_4225728f-0c74-40ae-9598-ad7bdf9240a6\r\n Content-Type: multipart/mixed; boundary=changeset_d6a69b31-8b5d-4f6f-a365-281a45f2e416\r\n\r\n --changeset_d6a69b31-8b5d-4f6f-a365-281a45f2e416\r\nContent-Type: application/http\r\nContent-Transfer-Encoding: binary\r\n\r\nPOST /api/data/v9.0/uoms?tag=https://dualwrite718b5367ceebc804aos.cloudax.dynamics.com HTTP/1.1\r\nHost: test.crm.dynamics.com \r\nContent-ID: 1\r\nContent-Type: application/json; charset=utf-8\r\n\r\n{"msdyn_symbol":"pr","msdyn_externalunitclassname":"Quantity","msdyn_decimalprecision":0,"msdyn_isbaseunit":"false","msdyn_issystemunit":"false","msdyn_systemofunits":"192350000","name":"pr","msdyn_description":"Pairs"}\r\n--changeset_d6a69b31-8b5d-4f6f-a365-281a45f2e416--\r\n\r\n --batch_4225728f-0c74-40ae-9598-ad7bdf9240a6--" ] }
-    
-verboseError: Captures the long text of the error from Dataverse. This can be used to get more context information while debugging. debugLogTrace : Captures the actual batch request sent to Dataverse along with payload.
-
+1. For all project configurations in Finance and Operations app there is a flag **IsDebugMode** on the **DualWriteProjectConfiguration** table.
+2. Open the **DualWriteProjectConfiguration** using the Excel addin. To use the addin, enable design mode in the Finance and Operations Excel addin and add the **DualWriteProjectConfiguration** to the sheet. For more information, see [View and update entity data with Excel](../../office-integration/use-excel-add-in.md).
+3. Set **IsDebugMode** to **Yes** on the project.
+4. Run the scenario that is generating errors.
+5. The verbose logs are stored in the **DualWriteErrorLog** table.
+6. To lookup data on table browser use the following link: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, replacing `999` as needed.
+7. Update again after [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe)  (available for PU 37 and above). If you have this fix installed then the debug mode will capture more logs.  
 
 ## Check synchronization errors on the virtual machine for the Finance and Operations app
 
@@ -114,48 +82,28 @@ You can now link a new environment.
 When you create a sales order in Dynamics 365 Sales, clicking on **+ Add products** might redirect you to the Dynamics 365 Project Operations order line form. There is no way from that form to view the sales order line **Information** form. The option for **Information** does not appear in the dropdown below **New Order Line**. This happens because Project Operations has been installed in your environment.
 
 To re-enable the **Information** form option, follow these steps:
+
 1. Navigate to the **Order Line** table.
-2. Find the **Information** form under the forms node. 
-3. Select the **Information** form and click **Enable security roles**. 
+2. Find the **Information** form under the forms node.
+3. Select the **Information** form and click **Enable security roles**.
 4. Change the security setting to **Display to everyone**.
 
-## How to enable and save network trace so that traces can be attached to support tickets?
-    
-The Microsoft dual write product team would need to see the network traces to troubleshoot some of the dual write related issues. Follow the below steps to get the traces so that these can be attached to support tickets.
-    
+## How to enable and save network trace so that traces can be attached to support tickets
+
+The support team might need to review network traces to troubleshoot some issues. To create a network track, follow these steps:
+
 ### Chrome
-    
-1.	In the opened tab, press [F12] or choose [Developer tools] to open the develop tools.
-    
-    ![General troubleshooting](media/General-troubleshooting-1.png)
-    
-2. Switch to [network] tab and type [integ] in the filter text box
-            
-      ![General troubleshooting](media/General-troubleshooting-2.png)    
-                
-3.	Continue with the repro and observe the requests being logged in the [network] tab
-                   
-     ![General troubleshooting](media/General-troubleshooting-3.png)                        
-                     
-4.	 Right click on any one of the entries and select [Save all as a HAR with content]
-     
-     ![General troubleshooting](media/General-troubleshooting-4.png)
-                                
+
+1. In the opened tab, press **F12** or choose **Developer tools** to open the developer tools.
+2. Open the **Network** tab and type **integ** in the filter text box.
+3. Run your scenario and observe the requests being logged.
+4. Right-click on the entries and select **Save all as a HAR with content**.
+
 ### Microsoft Edge
-    
-1.	In the opened tab, press [F12] or choose [developer tools] to open browser’s developer tools.
-                                  
-     ![General troubleshooting](media/General-troubleshooting-5.png)
-       
-2.	Switch to [network] tab and continue with the repro
-        
-3.	Click [save] button to export as HAR
-    
-      ![General troubleshooting](media/General-troubleshooting-6.png)                                     
-    
 
-    
-    
-
+1. In the opened tab, press **F12** or choose **Developer tools** to open the developer tools.
+2. Open the **Network** tab.
+3. Run your scenario.
+4. Select **save** to export the results as HAR.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
