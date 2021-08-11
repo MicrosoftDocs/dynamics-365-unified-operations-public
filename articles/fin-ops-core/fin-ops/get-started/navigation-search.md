@@ -4,7 +4,7 @@
 title: Navigation search
 description: This topic explains how to use the search functionality to navigate to pages.
 author: aneesmsft
-ms.date: 08/11/21
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
