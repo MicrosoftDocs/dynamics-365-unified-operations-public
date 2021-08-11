@@ -4,7 +4,7 @@
 title: Reporting for multiple VAT registrations
 description: This topic provides information about reporting for multiple value-added tax (VAT) registrations.
 author: anasyash
-ms.date: 06/17/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,7 +35,7 @@ This topic explains how to do reporting for multiple value-added tax (VAT) regis
 
 ## Prerequisites
 
-Configure the Tax Calculation service. Find more details in [Tax Calculation](global-tax-calcuation-service-overview.md).
+Configure the Tax Calculation service. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
 
 
 ### Enable features in the feature management
