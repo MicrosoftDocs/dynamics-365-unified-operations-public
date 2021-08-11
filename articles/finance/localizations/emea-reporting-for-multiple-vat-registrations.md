@@ -167,23 +167,26 @@ All tax registrations have the same setup for compression rules.
 1. Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**.
 2. Select the values to use in the **Compression** function. Select all the values that are reported in any of the countries where you have tax registrations. For example, in 2021, the following values should be reported in some countries.
 
-    | **Value** | **Belgium** | **Netherlands** | **Northern Ireland (United Kingdom)** | **France** |
-    |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
-    | **Mandatory elements** |  |  |  |  |
-    | Direction (Flow) | Yes | Yes | Yes | Yes |
-    | Commodity code | Yes | Yes | Yes | Yes |
-    | Partner Member State | Yes | Yes | Yes | Yes |
-    | Transaction code | Yes | Yes | Yes | Yes |
-    | VAT number of partner (Tax exempt number)</br><em>Mandatory on dispatches from 2022 for all EU countries</em> | Yes | Yes | No | Yes |
-    | **Optional elements** |  |  |  |  |
-    | Country of origin</br><em>(On dispatch and/or on arrival)</em> <em>Mandatory on dispatches from 2022 for all EU countries</em> | Yes | Yes | No | Yes |
-    | Delivery terms | Yes | No | Yes | No |
-    | Mode of transport | Yes | No | No | Yes |
-    | State of origin, County of origin (Region of origin) | Yes | No | No | Yes |
-    | Statistics procedure | No | Yes | No | Yes |
-    | **Additional elements for country purposes** |  |  |  |  |
-    | Transport document (Invoice, Identification of packing slip or product receipt) | No | Yes | No | No |
-
+| **Value**                                                                                                   | **Austria** | **Belgium** | **France** | **Germany** | **Netherlands** | **Northern Ireland (United Kingdom)** | **Spain** | **Sweden** |
+|-------------------------------------------------------------------------------------------------------------|-------------|-------------|------------|-------------|-----------------|---------------------------------------|-----------|------------|
+| **Mandatory elements**                                                                                      |             |             |            |             |                 |                                       |           |            |
+| Direction (Flow)                                                                                            | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | **Yes**                               | **Yes**   | **Yes**    |
+| Commodity code                                                                                              | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | **Yes**                               | **Yes**   | **Yes**    |
+| Partner Member State                                                                                        | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | **Yes**                               | **Yes**   | **Yes**    |
+| Transaction code                                                                                            | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | **Yes**                               | **Yes**   | **Yes**    |
+| Tax exempt number (VAT number of partner)                                                                   | No          | **Yes**     | **Yes**    | No          | **Yes**         | No                                    | No        | No         |
+| *Mandatory on dispatches from 2022 for all EU countries*                                                    |             |             |            |             |                 |                                       |           |            |
+| **Optional elements**                                                                                       |             |             |            |             |                 |                                       |           |            |
+| Country of origin                                                                                           | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | No                                    | **Yes**   | No         |
+| *(On dispatch and/or on arrival)* *Mandatory on dispatches from 2022 for all EU countries*                  |             |             |            |             |                 |                                       |           |            |
+| Delivery terms                                                                                              | No          | **Yes**     | No         | No          | No              | **Yes**                               | **Yes**   | No         |
+| Mode of transport                                                                                           | **Yes**     | **Yes**     | **Yes**    | **Yes**     | No              | No                                    | **Yes**   | No         |
+| State of origin (Region of origin) *(on dispatch and/or on arrival)*                                        | No          | **Yes**     | No         | **Yes**     | No              | No                                    | No        | No         |
+| County of origin (Region of origin) *(on dispatch and/or on arrival)*                                       | No          | No          | **Yes**    | No          | No              | No                                    | **Yes**   | No         |
+| Statistics procedure                                                                                        | **Yes**     | No          | **Yes**    | No          | **Yes**         | No                                    | **Yes**   | No         |
+| **Additional elements for country purposes**                                                                |             |             |            |             |                 |                                       |           |            |
+| Transport document (Invoice, Identification of packing slip or product receipt)                             | No          | No          | No         | No          | **Yes**         | No                                    | No        | No         |
+| Port ((Air)port of (un)loading)                                                                             | No          | No          | No         | No          | No              | No                                    | **Yes**   | No         |
 
 > [!NOTE]
 > Select all values that must be reported on the **Compression of Intrastat** page.
@@ -230,13 +233,16 @@ All tax registrations have the same settings for EU sales list parameters.
 
     The following table shows the earliest ER format versions that you can select the format for.
 
-    | **Release** | **Country** | **ER format** |
-    |-------------------------|-------------------------|-------------------------|
-    | 10.0.19 | All | EU Sales list model.version.9 |
-    | 10.0.19 | NL | EU Sales list (NL).version.1.10 |
-    | 10.0.20 | FR | EU Sales list (FR).version.1.2 |
-    | 10.0.20 | UK (NI) | EU Sales list XML (UK).version.9.6</br>EU Sales list TXT (UK).version.9.7 |
-
+| **Release** | **Country** | **ER format**                                                          |
+|-------------|-------------|------------------------------------------------------------------------|
+| 10.0.19     | All         | EU Sales list model.version.9                                          |
+| 10.0.19     | NL          | EU Sales list (NL).version.1.10                                        |
+| 10.0.20     | FR          | EU Sales list (FR).version.1.2                                         |
+| 10.0.20     | UK (NI)     | EU Sales list XML (UK).version.9.6</br>EU Sales list TXT (UK).version.9.7 |
+| 10.0.21     | AT          | EU Sales list (AT).version.9.5                                         |
+| 10.0.21     | DE          | EU Sales list (DE).version.9.5                                         |
+| 10.0.21     | ES          | EU Sales list (ES).version.9.2                                         |
+| 10.0.21     | SE          | EU Sales list model.version.11.xml</br>EU Sales list (SE).version.11.6.xml |
 
 ## Generate intra-community reporting for multiple VAT registrations
 
