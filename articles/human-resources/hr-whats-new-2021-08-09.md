@@ -50,8 +50,8 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| ## Default designee assignment is not respected if Auto-assign designees is set to true. - (558385) | | |
-| ## Time-off card balance, Available to buy and Available to Sell balance do not appear when user roles are restricted to a specific legal entity. - (589617) | | |
+| 558385 | Default designee assignment is not respected if Auto-assign designees is set to true | Fixed an issue where multiple default designees aren't autoselected in eligible plans. |
+| 589617 | Time-off card balance, Available to buy and Available to Sell balance do not appear when user roles are restricted to a specific legal entity. | Balances do not appear correctly  on Time-off card, available to buy and available to Sell,  if user (employee role) is  restricted to a specific legal entity. |
 
 ## In preview
 
