@@ -4,7 +4,7 @@
 title: Create a request pipeline plug-in hook
 description: This topic explains how to create and configure a request pipeline plug-in hook in Microsoft Dynamics 365 Commerce. The request pipeline plug-in hook can intercept rendering requests that are sent to the Node server, and redirect them or send responses to them.
 author: samjarawan
-ms.date: 08/03/2021
+ms.date: 08/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
