@@ -62,9 +62,9 @@ In the **Feature management** workspace, enable the following features:
    - Sales tax declaration for multiple VAT registrations
 
 ## Activate feature for specific legal entity
-1. Go to **Tax > Setup > Tax configuration > Tax calculation parameters**
-2. On the **General** tab, set the **Enable tax service** option to **Yes**.
-3. On the **Multiple VAT registrations** tab, set the **VAT declaration**, **EU Sales List**, **Intrastat** option to **Yes** if you want to activate VAT reporting, EU sales list reporting or Intrastat reporting respectively for the selected legal entity.
+1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax calculation parameters**.
+2. On the **General** tab, set **Enable tax service** to **Yes**.
+3. On the **Multiple VAT registrations** tab, set **VAT declaration**, **EU Sales List**, and **Intrastat** to **Yes** to activate VAT reporting, EU sales list reporting, or Intrastat reporting respectively, for the selected legal entity.
 
 
 ## Set up intra-community reporting for multiple VAT registrations
@@ -313,7 +313,7 @@ All tax registrations have the same settings for EU sales list parameters.
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
 
-    The following table shows the earliest ER format versions, that you can select the format for. For more information about how to run VAT declaration for specific country, review the respective topic
+    The following table shows the earliest ER format versions that you can select the format for. For more information about how to run VAT declaration for specific country, review the related topic.
     
 | **Release** | **Country** | **ER format** | **Link to topic** |
 |-------------|-------------|---------------|-------------------|
