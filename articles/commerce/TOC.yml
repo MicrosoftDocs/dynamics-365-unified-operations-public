@@ -2364,6 +2364,8 @@
             href: e-commerce-extensibility/globalize-modules.md
           - name: Set up Azure Key Vault for secure key management
             href: e-commerce-extensibility/set-up-key-vault.md
+          - name: Create a request pipeline plug-in hook
+            href: e-commerce-extensibility/request-pipeline-hook.md
         - name: Develop data actions
           items:
           - name: Data actions overview
