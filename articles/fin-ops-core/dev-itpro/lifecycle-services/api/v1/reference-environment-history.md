@@ -1,27 +1,16 @@
 ---
 # required metadata
 
-title: LCS API - Reference - v1 - Environment history
+title: Fetch environment history
 description: This topic provides a reference for version 1 of the LCS API.
 author: jorichar
-ms.date: 08/11/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
+ms.date: 08/12/2021
+ms.topic: reference
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorichar
-ms.search.validFrom: 2021-01-31
-ms.dyn365.ops.version: 10.0.0
+ms.search.validFrom: 2021-08-12
 
 ---
 
@@ -33,8 +22,8 @@ You can fetch environment history metadata through Microsoft Dynamics Lifecycle 
 
 ## Permissions
 
-### API Application
-One of the following permissions is required to call this API. For more information about permissions and how to select them, see the [Database Movement API Authentication](../../../database/api/dbmovement-api-authentication.md) document.
+### API application
+One of the following permissions is required to call this API. For more information about permissions and how to select them, see the [Database Movement API Authentication](../../../database/api/dbmovement-api-authentication.md) content.
 
 | Permission type                    | Permissions (from least privileged to most privileged) |
 |------------------------------------|--------------------------------------------------------|
@@ -79,15 +68,15 @@ For each history operation, the following properties will be available. If a val
 
 | Property | Detail |
 |----------------|---------------------------|
-| Name | The supplied operation history name |
-| Type | The operation type |
-| TypeDisplay | The operation type display string |
-| StartDateTimeUtc | UTC date time of the start of the operation |
-| EndDateTimeUtc | UTC date time of the end of the operation |
-| Status | The status of the operation |
-| ActivityId | The operation's activity id Guid |
-| EnvironmentId | The environment id the operation was against |
-| ProjectId | The project id the operation was against |
+| Name | The supplied operation history name. |
+| Type | The operation type. |
+| TypeDisplay | The operation type display string. |
+| StartDateTimeUtc | UTC date time of the start of the operation. |
+| EndDateTimeUtc | UTC date time of the end of the operation. |
+| Status | The status of the operation. |
+| ActivityId | The operation's activity ID guid. |
+| EnvironmentId | The environment ID the operation was against. |
+| ProjectId | The project ID the operation was against. |
 
 ### Example response
 
