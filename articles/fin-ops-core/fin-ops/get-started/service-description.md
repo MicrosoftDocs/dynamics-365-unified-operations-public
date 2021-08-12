@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Service description for Dynamics 365 Finance and Dynamics 365 Supply Chain Management apps
-description: This topic provides the service description for Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+title: Service description for Finance and Operations apps
+description: This topic provides the service description for Finance and Operations apps.
 author: tomhig
 manager: AnnBe
-ms.date: 08/10/2021
+ms.date: 08/12/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -26,27 +26,26 @@ ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Service Description for Dynamics 365 Finance and Operations
-
+# Service description Finance and Operations apps
 [!include[banner](../includes/banner.md)]
 
 ## Overview
 
-Microsoft Dynamics 365 Finance and Operations is an Enterprise Resource Planning (ERP) SaaS that is built on and for the Microsoft Azure Cloud. The service provides organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Finance and Operations can include one or more of the following solution areas: 
+Finance and Operations apps are Enterprise Resource Planning (ERP) software as a service (SaaS) offerings that are built on and for the Microsoft Azure Cloud. The Finance and Operations service provides organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Finance and Operations apps can include one or more of the following solution areas: 
 
-- [Finance](/dynamics365/finance/)
-- [Human Resources](/dynamics365/human-resources/)
-- [Supply Chain Management](/dynamics365/supply-chain/)
-- [Commerce](/dynamics365/commerce/)
-- [Project Operations](/dynamics365/project-operations/)
+- [Dynamics 365 Finance](/dynamics365/finance/)
+- [Dynamics 365 Human Resources](/dynamics365/human-resources/)
+- [Dynamics 365 Supply Chain Management](/dynamics365/supply-chain/)
+- [Dynamics 365 Commerce](/dynamics365/commerce/)
+- [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-The SaaS brings together these applications, plus business intelligence, infrastructure, compute, and database services, and enables organizations to run industry-specific and operational business processes. With the support of their Implementation Partner, Customers determine the configuration of the business application logic in Finance and Operations to match their unique business processes. Functionality and Business Processes can be augmented or extended with one or any combination of the following:
+These applications, plus business intelligence, infrastructure, compute, and database services enables organizations to run industry-specific and operational business processes. With the support of their implementation partner, customers determine the configuration of the business application logic to match their unique business processes. Functionality and business processes can be augmented or extended with one or any combination of the following:
 
-- Low-Code [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) Tools
+- [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) tools
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com) based [Finance and Operations SDK](../../dev-itpro/dev-tools/developer-home-page.md) and [Azure DevOps Build Automation](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
 - Independent Software Vendor (ISV) solutions from [Microsoft AppSource](https://appsource.microsoft.com/partners)
 
-Based on requirements, Customers choose their solution approach. Working with their Implementation Partner, Customers define, develop, and test their solution using the tools and best practices that are provided in [Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md). The following illustrates three common scenarios: 
+Based on requirements, customers choose their solution approach. Working with their implementation partner, customers define, develop, and test their solution using the tools and best practices that are provided in [Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md). The following illustrates three common scenarios: 
 
 ![Common configuration scenarios](media/common-configuration-scenarios.png)
 
@@ -59,7 +58,7 @@ Organizations can match their business growth by easily adding users and busines
 
 ## Operating model
 
-The operating model of Finance and Operations defines specific roles and responsibilities for the Customer, Implementation Partner, and Microsoft throughout the lifecycle of the service. 
+The operating model of Finance and Operations defines specific roles and responsibilities for the customer, implementation partner, and Microsoft throughout the lifecycle of the service. 
 
 Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments within the Microsoft SaaS subscription. This includes allocating the required system infrastructure to run the service and proactive communication to customers about the service’s health. 
 
@@ -69,7 +68,7 @@ For more information, see [Cloud Operations and Servicing](../../dev-itpro/lifec
 
 ## System configuration
 
-Finance and Operations scales with transaction volume and user load. Each Customer implementation of Finance and Operations produces a unique solution comprised of the following: 
+Finance and Operations apps scale with transaction volume and user load. Each customer implementation produces a unique solution comprised of the following: 
 
 -	**Data composition:** A unique set of parameters that control behavior, layout of the organization, structure of master data (such as financial and inventory dimensions), and granularity of transaction tracking. 
 -	**Extension and configuration:** Extension mechanisms of Finance and Operations with code extensions, ISV solutions, and unique configurations including workflows, integrations, and report configurations. 
