@@ -1,27 +1,16 @@
 ---
 # required metadata
 
-title: LCS API - Reference - v1 - Environment metadata
+title: Fetch environment metdata
 description: This topic provides a reference for version 1 of the LCS API.
 author: jorichar
-ms.date: 08/11/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
+ms.date: 08/12/2021
+ms.topic: reference
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorichar
-ms.search.validFrom: 2021-01-31
-ms.dyn365.ops.version: 10.0.0
+ms.search.validFrom: 2021-08-32
 
 ---
 
@@ -33,7 +22,7 @@ You can fetch environment metadata through Microsoft Dynamics Lifecycle Services
 
 ## Permissions
 
-### API Application
+### API application
 One of the following permissions is required to call this API. For more information about permissions and how to select them, see the [Database Movement API Authentication](../../../database/api/dbmovement-api-authentication.md) document.
 
 | Permission type                    | Permissions (from least privileged to most privileged) |
@@ -92,26 +81,26 @@ For each environment, the following properties will be available. If a value is 
 
 | Property | Detail |
 |----------------|---------------------------|
-| EnvironmentId | LCS Environment Id |
-| EnvironmentName | Environment name |
-| ProjectId | LCS project id the environment is contained within |
-| EnvironmentInfrastructure | The infrastructure type of the environment like SelfService, MicrosoftManaged |
-| EnvironmentType | The environment type like Production, Sandbox |
-| EnvironmentGroup | The environment group like Primary or DiasterRecovery |
-| EnvironmentProduct | The product running on the environment |
-| EnvironmentEndpointBaseUrl | The base url of the environment |
-| DeploymentState | The most recent environment operation's state |
-| TopologyDisplayName | The product topology deloyed on the environment |
-| CurrentApplicationBuildVersion | A string of the application version |
-| CurrentApplicationReleaseName | A string of the application release name |
-| CurrentPlatformReleaseName | A string of the platform version |
-| CurrentPlatformVersion | A string of the platform release name |
-| DeployedOnUTC | A UTC date time of when the environment was deployed |
-| CloudStorageLocation | The primary Azure location of the environment |
-| DisasterRecoveryLocation | The secondary Azure location of the environment |
-| DeploymentStatusDisplay | The current status of the environment |
-| CanStart | A boolean if the environment can be started |
-| CanStop | A boolean if the environment can be stopped |
+| EnvironmentId | LCS Environment ID. |
+| EnvironmentName | Environment name. |
+| ProjectId | LCS project ID the environment is contained within. |
+| EnvironmentInfrastructure | The infrastructure type of the environment like SelfService, MicrosoftManaged. |
+| EnvironmentType | The environment type like Production, Sandbox. |
+| EnvironmentGroup | The environment group like Primary or DiasterRecovery. |
+| EnvironmentProduct | The product running on the environment. |
+| EnvironmentEndpointBaseUrl | The base URL of the environment. |
+| DeploymentState | The most recent environment operation's state. |
+| TopologyDisplayName | The product topology deloyed on the environment. |
+| CurrentApplicationBuildVersion | A string of the application version. |
+| CurrentApplicationReleaseName | A string of the application release name. |
+| CurrentPlatformReleaseName | A string of the platform version. |
+| CurrentPlatformVersion | A string of the platform release name. |
+| DeployedOnUTC | A UTC date time of when the environment was deployed. |
+| CloudStorageLocation | The primary Azure location of the environment. |
+| DisasterRecoveryLocation | The secondary Azure location of the environment. |
+| DeploymentStatusDisplay | The current status of the environment. |
+| CanStart | A boolean if the environment can be started. |
+| CanStop | A boolean if the environment can be stopped. |
 
 ### Example response
 
