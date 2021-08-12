@@ -67,6 +67,7 @@ As the following example of a module definition file shows, when the **layout** 
         }
     },
     "dependentSchemas": {
+      "layout": {
         "oneOf": [
             {
                 "properties": {
@@ -112,6 +113,7 @@ As the following example of a module definition file shows, when the **layout** 
                 }
             }
         ]
+      }
     }
 }
 ```
@@ -203,6 +205,7 @@ The following examples show a module definition file and a module definition ext
         }
     },
     "dependentSchemas": {
+      "layout": {
         "oneOf": [
             {
                 "properties": {
@@ -262,6 +265,7 @@ The following examples show a module definition file and a module definition ext
                 }
             }
         ]
+      }
     }
 }
 ```
