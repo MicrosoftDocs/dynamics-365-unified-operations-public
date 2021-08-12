@@ -19,7 +19,7 @@ ms.search.validFrom: 2021-07-31
 
 This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. 
 
-To deploy Microsoft Azure Resource Manager (ARM) topologies, you must complete the ARM onboarding process for your connectors. To start the onboarding process, you must have the following items:
+To deploy ARM topologies, you must complete the ARM onboarding process for your connectors. To start the onboarding process, you must have the following items:
 
 -   The Azure subscription ID that you're deploying to
     > [!Note]
