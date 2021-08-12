@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 10.0.14
 # Associate fixed assets with leases
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 The topic explains how to associate an existing fixed asset with a new lease. When you associate a fixed asset with a lease, the right-of-use (ROU) asset value at initial recognition will be the acquisition cost of the fixed asset.
 
