@@ -368,7 +368,7 @@
             href: sysadmin/business-continuity-disaster-recovery.md
         - name: Complete the Azure Resource Manager onboarding process
           href: deployment/arm-onboarding.md
-        - name: Complete the Azure Resource Manager onboarding process for Azure US Government
+        - name: Complete the Azure Resource Manager onboarding process for US government LCS projects
           href: deployment/arm-onbarding-us-goverment.md
         - name: Azure ExpressRoute and Finance and Operations
           href: deployment/expressroute.md
