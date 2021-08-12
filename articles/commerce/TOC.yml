@@ -2364,6 +2364,8 @@
             href: e-commerce-extensibility/globalize-modules.md
           - name: Set up Azure Key Vault for secure key management
             href: e-commerce-extensibility/set-up-key-vault.md
+          - name: Create a request pipeline plug-in hook
+            href: e-commerce-extensibility/request-pipeline-hook.md
         - name: Develop data actions
           items:
           - name: Data actions overview
@@ -2430,6 +2432,8 @@
           items:
           - name: Configure page caching
             href: e-commerce-extensibility/page-caching.md
+          - name: Data action instance cache
+            href: e-commerce-extensibility/instance-cache.md
         - name: Telemetry and analytics
           items: 
           - name: Telemetry logger
