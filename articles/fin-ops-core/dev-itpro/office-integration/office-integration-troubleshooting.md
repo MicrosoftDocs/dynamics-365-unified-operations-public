@@ -209,6 +209,9 @@ The following URLs are accessed for authentication.
 - `https://login.microsoftonline.com:443`
 - `https://login.microsoftonline.com`
 
+
+**Alternate solution:** If the user is running an older version of Windows 10 (earlier than version 1909), consider upgrading Windows 10 to 1909 or later. Version 1909 may need KB5003635; see [May 2021 resolved issues](https://docs.microsoft.com/en-us/windows/release-health/resolved-issues-windows-10-1909#1610msgdesc) for more details. 
+
 ### Issue: The Excel Add-in needs an explicit sign out after encountering an AADSTS50058 "silent sign in failed" error
 
 **Issue:** When users try to sign in to the Excel Add-in after some period of inactivity, the user encounters the AADSTS50058 "silent sign in failed" error and is forced to sign out before signing back in.
