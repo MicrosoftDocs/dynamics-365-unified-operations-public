@@ -57,10 +57,7 @@ To find out what's new or changed in each biweekly release of Human Resources, s
 [February 22, 2021](hr-whats-new-2021-02-22.md)</br>
 [January 28, 2021](hr-whats-new-2021-01-28.md)</br>
 [January 21, 2021](hr-whats-new-2021-01-21.md)</br>
-[December 2, 2020](hr-whats-new-2020-12-02.md)</br>
-[October 22, 2020](hr-whats-new-2020-10-22.md)</br>
-[September 16, 2020](hr-whats-new-2020-09-16.md)</br>
-[September 3, 2020](hr-whats-new-2020-09-03.md)</br>
+
 
 
 ## See also

@@ -3,8 +3,8 @@
 
 title: Fixed asset transaction options
 description: This topic describes the different methods available to create fixed asset transactions.
-author: ShylaThompson
-ms.date: 02/07/2019
+author: moaamer
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Fixed asset transaction options
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes the different methods available to create fixed asset transactions.
 
@@ -63,14 +64,16 @@ Any fixed asset transaction type can be posted in the General journal page. You 
 | Depreciation                        | Fixed assets             | Fixed assets                              |
 |                                     | General ledger           | General journal                           |
 | Disposal                            | Fixed assets             | Fixed assets                              |
-| ** **                               | General ledger           | General journal                           |
-| ** **                               | Accounts receivable      | Free text invoice                         |
+|                                     | General ledger           | General journal                           |
+|                                     | Accounts receivable      | Free text invoice                         |
 
-The Depreciation periods remaining value of the fixed asset is not updated when a depreciation transaction type journal line is manually created or imported through a data entity. This value is updated when the depreciation proposal process is used to create the journal line.
+The remaining value isn't updated for the depreciation periods of a fixed asset when a depreciation transaction type journal line is created manually or imported through a data entity. The remaining value is updated when the depreciation proposal process is used to create the journal line.
 
 For more information, see [Fixed assets integration](fixed-asset-integration.md).
 
-### Transactions that require different voucher numbers
+The system prevents posting depreciation to the same period twice. For example, if two users create depreciation proposals separately for January, the depreciation from the first user will be posted in the first journal. When the second user posts depreciation in the second journal, the system checks the date that depreciation was last run and will not post depreciation for the same period a second time.
+
+### Transactions that require a different voucher number
 
 The following Fixed assets transactions will use different voucher numbers:
 

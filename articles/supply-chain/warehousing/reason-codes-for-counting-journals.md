@@ -41,7 +41,7 @@ Before you set up the system, we recommend that you define a strategy for workin
 - Should reason codes be mandatory or optional on some items?
 - How many reason codes do you require?
 - Do you have to pre-select a limited list of reason codes for adjustments?
-- How should users of barcode scanners use reason codes? Should the reason codes be preselected, mandatory, or not editable?
+- How should users of bar code scanners use reason codes? Should the reason codes be preselected, mandatory, or not editable?
 - Do warehouse workers require different reason code behavior on mobile scanners? If the answer is yes, you can create more menu items and assign them to different people.
 - Should the reason codes drive financial offset account posting?
 
