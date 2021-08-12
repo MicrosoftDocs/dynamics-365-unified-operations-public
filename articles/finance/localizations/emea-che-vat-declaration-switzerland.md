@@ -4,7 +4,7 @@
 title: VAT declaration (Switzerland)
 description: This topic provides information about how to set up and generate a value-added tax declaration for Switzerland.
 author: anasyash
-ms.date: 08/11/2021
+ms.date: 08/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -243,12 +243,8 @@ The data package contains electronic message settings that are used to generate 
    | Field                     | Description                                    |
    |---------------------------|------------------------------------------------|
    | Settlement period         | Select the settlement period.                  |
-   | Sales tax payment version | Select one of the following values:            |
+   | Sales tax payment version | Select one of the following values: <br>- **Original**: Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated. <br>- **Corrections**: Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period. <br> - **Total list**: Generate a report for all the sales tax transactions for the period, including the original and all corrections.            |
    | From date                 | Select the start date of the reporting period. |
-
-   - **Original**: Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.
-   - **Corrections**: Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.
-   - **Total list**: Generate a report for all the sales tax transactions for the period, including the original and all corrections.
 
 3. Select **OK**, and review the Excel report.
 
@@ -260,11 +256,8 @@ The data package contains electronic message settings that are used to generate 
    | Field                     | Description                                    |
    |---------------------------|------------------------------------------------|
    | Settlement period         | Select the settlement period.                  |
-   | Sales tax payment version | Select one of the following values:            |
+   | Sales tax payment version | Select one of the following values: <br> - **Original**: Generate the original sales tax payment for the settlement period. <br> - **Latest corrections**: Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.          |
    | From date                 | Select the start date of the reporting period. |
-
-   - **Original**: Generate the original sales tax payment for the settlement period.
-   - **Latest corrections**: Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.
 
 3. Select **OK**.
 
@@ -298,10 +291,10 @@ The following procedure applies to the example electronic message processing tha
 9. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview report**, and then select **OK**.
 10. In the **Electronic reporting parameters** dialog box, set the following fields, and then select **OK**.
 
-      | **Field**               | **Description**                                                                                                                                                                                                            |
+      | **Field**               | **Description**    |
       |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
       | Settlement period       | Select the settlement period. If you selected **Collect data** in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments. |
-      | Tax declaration version | Select one of the following values:<br>-**Original**: Generate a report for sales tax transactions of the original
+      | Tax declaration version | Select one of the following values: <br>-**Original**: Generate a report for sales tax transactions of the original
     sales tax payment or before the sales tax payment is generated. <br>-**Corrections**: Generate a report for sales tax transactions of all the
     subsequent sales tax payments for the period. <br>- **Total list**: Generate a report for all sales tax transactions for the
     period, including the original and all corrections.                                                                                                                           |
