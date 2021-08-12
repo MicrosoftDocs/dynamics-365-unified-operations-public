@@ -62,7 +62,7 @@ The VAT declaration in Switzerland contains the following information.
 
 **SECTION II - TAX CALCULATION**
 
-**Tax due:**
+**Tax due**
 
 | Line | XML element                           | Description                                                 | Lookup              | Lookup result                                                                                                                                             |
 |------|---------------------------------------|-------------------------------------------------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -76,7 +76,7 @@ The VAT declaration in Switzerland contains the following information.
 | 381  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies up to December 31, 2017        | Report field lookup | SuppliesAcquisitionTaxOldRate                                                                                                                             |
 | 399  | Not applicable                        | Total amount of tax due (Lines 301 through 382).            | Total               | 302 + 312 + 342 + 382 + 301 + 311 + 341 + 381                                                                                                             |
 
-**Input tax:**
+**Input tax**
 
 | Line | XML element                 | Description                                                                                                                                                         | Lookup              | Lookup result                                                                                                                                    |
 |------|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -158,14 +158,14 @@ Follow these steps to define which sales tax codes generate which boxes in secti
    |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | Lookup result          | Select the value of the turnover. For more information about the turnover values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this topic.                                                                                         |
    | Tax code               | Select the sales tax code to associate with the operation. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box.   |
-   | Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available: <br>- **Purchase**<br>- - **PurchaseExempt** (tax-exempt purchase) <br>- **PurchaseReverseCharge** (tax receivable from a purchase reverse charge) <br>- **Sales** <br>- **SalesExempt** (tax-exempt sale) <br>- **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge) <br>- **Use tax** <br> For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).|
+   | Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available: <br>- **Purchase**<br>- **PurchaseExempt** (tax-exempt purchase) <br>- **PurchaseReverseCharge** (tax receivable from a purchase reverse charge) <br>- **Sales** <br>- **SalesExempt** (tax-exempt sale) <br>- **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge) <br>- **Use tax** <br> For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).|
 
 
 
-> [!NOTE]
-> Associate all sales tax codes with lookup results. If any sales tax codes should not generate values in section I, associate with the **Other** lookup result.
+   > [!NOTE]
+   > Associate all sales tax codes with lookup results. If any sales tax codes should not generate values in section I, associate with the **Other** lookup result.
 
-![Application specific parameters page for Turnover lookup;Application specific parameters page for Turnover lookup](media/f99d7ff6529a58623732e112cf864230.png)
+   ![Application specific parameters page for Turnover lookup;Application specific parameters page for Turnover lookup](media/f99d7ff6529a58623732e112cf864230.png)
 
 #### Set up Report field lookup
 
@@ -189,7 +189,7 @@ Follow these steps to define which sales tax codes generate the amount in sectio
    > [!NOTE]
    > As the last line in the setup, create a line where you associate the **\*Not blank\*** value of the tax code with the **Other** lookup result. This line indicates that all other sales tax codes that aren't defined in previous rows don't generate amounts in section III.
 
-![Application specific parameters page for Other cash flow lookup](media/2ddd539a62e69bc03c346fb8c90e6299.png)
+   ![Application specific parameters page for Other cash flow lookup](media/2ddd539a62e69bc03c346fb8c90e6299.png)
 
  3. In the **State** field, change the value to **Completed**.
  4. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
@@ -292,14 +292,11 @@ The following procedure applies to the example electronic message processing tha
 10. In the **Electronic reporting parameters** dialog box, set the following fields, and then select **OK**.
 
       | **Field**               | **Description**    |
-      |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+      |-------------------------|---------------------|
       | Settlement period       | Select the settlement period. If you selected **Collect data** in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments. |
-      | Tax declaration version | Select one of the following values: <br>-**Original**: Generate a report for sales tax transactions of the original
-    sales tax payment or before the sales tax payment is generated. <br>-**Corrections**: Generate a report for sales tax transactions of all the
-    subsequent sales tax payments for the period. <br>- **Total list**: Generate a report for all sales tax transactions for the
-    period, including the original and all corrections.                                                                                                                           |
+      | Tax declaration version | Select one of the following values: <br>-**Original**: Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated. <br>-**Corrections**: Generate a report for sales tax transactions of all the subsequent sales tax payments for the period. <br>- **Total list**: Generate a report for all sales tax transactions for the period, including the original and all corrections.               |
     
-   If you selected **Collect data** in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.
+    If you selected **Collect data** in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.
 
 11. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts in the Excel document.
 12. Select **Generate report**.
