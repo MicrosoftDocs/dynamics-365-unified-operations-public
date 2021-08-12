@@ -1,27 +1,16 @@
 ---
 # required metadata
 
-title: LCS API - Reference - v1 - Start and stop environments 
+title: Start and stop environments
 description: This topic provides a reference for version 1 of the LCS API.
 author: tsmarsha
-ms.date: 03/09/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
+ms.date: 08/12/2021
+ms.topic: reference
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
 ms.search.validFrom: 2021-01-31
-ms.dyn365.ops.version: 10.0.0
 
 ---
 
