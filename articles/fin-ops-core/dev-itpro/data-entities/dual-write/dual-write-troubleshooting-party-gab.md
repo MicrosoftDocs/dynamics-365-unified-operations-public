@@ -51,7 +51,7 @@ Fields | msdn_locationid, parentid
 Status | Active
 System Job | (blank)
 
-If the party and global address book solution is not installed, then the key on this table is set to the **msdyn_locationid** field. Install the dual-write orchestration package version (version 2.2.2.60 or later). This replaces the previous key created on **Address** table.
+If Dual-write Party and Global Address Book Solutions is not installed, then the key on this table is set to the **msdyn_locationid** field. Install the dual-write orchestration solution version (version 2.2.2.60 or later). This replaces the previous key created on **Address** table.
 
 ## Error when you try to run Customers, Vendors, or Contacts V2 maps
 
@@ -67,13 +67,13 @@ You might receive an error message that the Party ID is different between a Fina
 
 To fix this issue, use the latest version of maps as described in step 7 of [Party and global address book](party-gab.md#setup).
 
-## Errors when upgrading the Party and Global Address book solution
+## Errors when upgrading Dual-write Party and Global Address Book Solutions
 
-You might receive error messages when you upgrade the Party and Global Address book solution from 2.4.0155 to later versions.
+You might receive error messages when you upgrade Dual-write Party and Global Address Book Solutions from 2.4.0155 to later versions.
 
-The party and global address book functionality was part of the dual-write orchestration package when it was released for preview in January and February 2021. Based on customer feedback, the functionality was released for General Availability as a separate package. As a separate package, the functionality is optional. If you are using the preview version of the dual-write orchestration package that contains party and global address book functionality, then you need to uninstall the dual-write orchestration solutions or reset the Dataverse environment and get the latest packages.
+The party and global address book functionality was part of the dual-write orchestration solution when it was released for preview in January and February 2021. Based on customer feedback, the functionality was released for General Availability as a separate solution. As a separate solution, the functionality is optional. If you are using the preview version of the dual-write orchestration solution that contains party and global address book functionality, then you need to uninstall the dual-write orchestration solutions or reset the Dataverse environment and get the latest solutions.
 
-The Party and Global Address Book package contains the following solutions.
+Dual-write Party and Global Address Book Solutions contains the following solutions.
 
 + **Party** - Includes the schemas for party, postal address, and electronic address.
 + **Dynamics365GABExtended** - Includes all code and schema changes to support **Accounts**, **Vendors**, **Contacts**, and **Contact** for party functionality. This support was separated from the **Dynamics365FinanceExtended** and **Dynamics365SupplyChainExtended** solutions.
@@ -94,7 +94,7 @@ You might receive the following error message when you try to update a contact t
 
 *Unable to write data to entity msdyn_contactforparties.Writes to smmContactPersonV2Entity failed with error message Request failed with status code BadRequest and CDS error code: 0x0 response message: An error occurred while validating input parameters: Microsoft.OData.ODataException: Cannot convert the literal '' to the expected type 'Edm.Int32'.*
 
-To fix this issue, install the latest Party and global address book solution. This issue is fixed in version 3.0.0.26.
+To fix this issue, install the latest Dual-write Party and Global Address Book Solutions. This issue is fixed in version 3.0.0.26.
 
 ## Error when you create a new customer, vendor, or contact in Dataverse
 
