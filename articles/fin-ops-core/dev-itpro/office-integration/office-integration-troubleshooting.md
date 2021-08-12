@@ -4,7 +4,7 @@
 title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: jasongre
-ms.date: 06/10/2021
+ms.date: 08/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -208,6 +208,9 @@ The following URLs are accessed for authentication.
 - `https://login.windows.net`
 - `https://login.microsoftonline.com:443`
 - `https://login.microsoftonline.com`
+
+
+**Alternate solution:** If the user is running an older version of Windows 10 (earlier than version 1909), consider upgrading Windows 10 to version 1909 or later. Version 1909 may need KB5003635. For more information, see [May 2021 resolved issues](/windows/release-health/resolved-issues-windows-10-1909#1610msgdesc). 
 
 ### Issue: The Excel Add-in needs an explicit sign out after encountering an AADSTS50058 "silent sign in failed" error
 
