@@ -81,15 +81,15 @@ Use this procedure if the app that you want to embed isn't related to an existin
     > - The app or website must be configured to allow itself to be embedded.
 
 5. Select **Save** to add the app to the dashboard as a new tile.
-6. Select the new tile on the dashboard, and confirm that the app appears as expected. If the app isn't rendering, see the [Troubleshooting](#troubleshooting) section later in this topic.
+6. Select the new tile on the dashboard, and confirm that the app appears as expected. If the app isn't being rendered, see the [Troubleshooting](#troubleshooting) section later in this topic.
 
 ## Sharing embedded apps
 
-After you've embedded an app by using one of the methods described in the previous sections, you may want to share the view with other users in the system. To share an embedded app, use one of the following methods:
+After you've embedded an app by using one of the methods that are described in the previous sections, you might want to share the view with other users in the system. To share an embedded app, use one of the following methods:
 
-- **Publish the view (Recommended):** If the embedded app has been saved to a view, the recommended and preferred way to share it is to publish the view to users who have the appropriate security roles in the targeted legal entities. Then, only the desired users will see the embedded app on that page. For more information about how to publish a view, see [Publishing views](saved-views.md#publishing-views).
+- **Publish the view (Recommended):** If the embedded app has been saved to a view, the recommended and preferred way to share it is to publish the view to users who have the appropriate security roles in the targeted legal entities. In this case, only the desired users will see the embedded app on that page. For more information about how to publish a view, see [Publishing views](saved-views.md#publishing-views).
 
-    You can also publish an app that has been embedded as a full-page experience from the dashboard. On the dashboard, right-click (or select and hold) the tile that is associated with the app, select **Personalize**, and then select **Publish page**. An experience similar to the *Publishing views* experience is shown, allowing you to select the security roles you want to publish to. In update 10.0.21 or later, if the **Improved legal entity support for saved views** feature is turned on, you can also publish the app to the desired legal entities.  
+    You can also publish an app that has been embedded as a full-page experience from the dashboard. On the dashboard, right-click (or select and hold) the tile that is associated with the app, select **Personalize**, and then select **Publish page**. An experience that resembles the *Publishing views* experience is shown, and you can select the security roles to publish to. In update 10.0.21 or later, if the **Improved legal entity support for saved views** feature is turned on, you can also publish the app to the desired legal entities.
 
 - **Copy the personalization:** For pages that don't support views (for example, dialog boxes or workspaces), or for the full-page app experience, you can copy the personalization to the appropriate users. For more information, see [Sharing personalizations](personalize-user-experience.md#sharing-personalizations).
 
@@ -115,7 +115,7 @@ After an app has been embedded on a page, you might have to edit its configurati
 ### Apps that are embedded from the dashboard
 
 1. Open the dashboard.
-2. Select and hold (or right-click) the tile that is associated with the embedded app, and then select **Personalize**.
+2. Right-click (or select and hold) the tile that is associated with the embedded app, and then select **Personalize**.
 3. To edit the app, select **Edit page**. In the **Edit website** pane, make the required changes to the app configuration, and then select **Save**.
 
     Alternatively, to remove the app, select **Remove page**.
