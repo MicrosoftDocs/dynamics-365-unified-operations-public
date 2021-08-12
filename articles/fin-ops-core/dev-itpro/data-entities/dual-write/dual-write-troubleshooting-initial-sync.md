@@ -219,9 +219,9 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
 
 You might receive the following error message when you try run an initial sync failures on **Customers V3 - Accounts**, **Sales orders** mappings, or any map with more than 10 lookup fields:
 
-Due to the lookup limitation on FetchXML query, the initial sync would fail when the entity mapping contains more than 10 lookups. Here is the Dataverse platform documentation for refence: https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query.
-
 *CRMExport: Package execution complete. Error Description 5 Attempts to get data from https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc failed.*
+
+Because of the lookup limitation on the query, the initial sync fails when the entity mapping contains more than 10 lookups. For more information, see [Retrieve related table records with a query](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query).
 
 To fix this issue, follow these steps:
 
@@ -245,6 +245,6 @@ We are working on a fix to remove the party type range on the Finance and Operat
 
 ## Are there any performance issues while running initial sync for Customers or Contacts data?
 
-If you have run the initial sync for **Customer** data and have the **Customer** maps running and then you are run the initial sync for **Contacts** data, there might be performance issues during inserts and updates to the **LogisticsPostalAddress** and **LogisticsElectronicAddress** tables for **Contact** addresses. The same global postal address and electronic address tables are tracked for **CustCustomerV3Entity** and **VendVendorV2Entity** and dual-write tries to build more queries to write data to other side. If you have already run the initial sync for **Customer**, then stop the corresponding map while running initial sync for **Contacts** data. Do the same thing for the **Vendor** data. When the initial sync is finished, you can run all the maps by skipping initial sync.
+If you have run the initial sync for **Customer** data and have the **Customer** maps running and then you are run the initial sync for **Contacts** data, there might be performance issues during inserts and updates to the **LogisticsPostalAddress** and **LogisticsElectronicAddress** tables for **Contact** addresses. The same global postal address and electronic address tables are tracked for **CustCustomerV3Entity** and **VendVendorV2Entity** and dual-write tries to build more queries to write data to other side. If you have already run the initial sync for **Customer**, then stop the corresponding map while running initial sync for **Contacts** data. Do the same thing for the **Vendor** data. When the initial sync is finished, you can run all the maps by skipping the initial sync.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
