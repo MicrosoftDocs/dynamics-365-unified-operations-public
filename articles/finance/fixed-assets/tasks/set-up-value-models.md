@@ -26,9 +26,9 @@ ms.dyn365.ops.version: Version 7.0.0
 # Set up value models
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This procedure shows you to how create a new fixed asset book and associate it with a fixed asset group. It uses the accountant role and demo data for the USMF legal entity.
-
 
 ## Create a book
 1. Go to Fixed assets > Setup > Books.
