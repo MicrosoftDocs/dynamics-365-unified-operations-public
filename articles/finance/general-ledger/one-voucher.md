@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 8.0.2
 # One voucher
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## What is One voucher?
