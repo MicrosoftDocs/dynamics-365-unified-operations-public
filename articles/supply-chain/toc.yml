@@ -222,6 +222,26 @@
             href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
           - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
             href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Download ER configurations to Supply Chain Management
+            items: 
+            - name: Download configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Import configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Global repository (GR)
+            items: 
+            - name: Import configurations from GR
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Import updated versions of ER configurations
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Enhanced filtering to find configurations in GR
+              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Upload configurations to GR
+              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+            - name: Share configurations in GR  
+              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
@@ -1237,30 +1257,6 @@
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
           - name: Import configurations (LBD)
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Regulatory service (RCS)
-          items:
-          - name: Globalization features in RCS
-            href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Download ER configurations to Supply Chain Management
-            items: 
-            - name: Download configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Global repository (GR)
-            items: 
-            - name: Import configurations from GR
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Import updated versions of ER configurations
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Upload configurations to GR
-              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
-            - name: Share configurations in GR  
-              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Discontinue configurations in the RCS Global repository
-              href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
@@ -1319,7 +1315,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Use BARCODE to generate barcode images
+          - name: Use BARCODE to generate bar code images
             href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json 
         - name: Configure model mappings
           items: 
@@ -1619,6 +1615,8 @@
           href: master-planning/planning-optimization/release-process.md
         - name: Planning Optimization fit analysis
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
+        - name: Differences between built-in master planning and Planning Optimization
+          href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
         - name: Parameters not used by Planning Optimization
           href: master-planning/planning-optimization/not-used-parameters.md
         - name: Apply filters to a plan
@@ -1807,7 +1805,7 @@
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
       - name: Open entity data in Excel and update it using the Excel add-in
         href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-      - name: Create Open in Excel experiences
+      - name: Open in Excel experiences FAQ
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
       - name: Add templates to the Open lines in Excel menu
         href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -2491,7 +2489,7 @@
             href: production-control/job-scheduling.md
         - name: Operate kanban jobs
           items:
-          - name: Kanban transfer board support for barcode scanners
+          - name: Kanban transfer board support for bar code scanners
             href: production-control/kanban-transfer-board-support-barcode-scanner.md
           - name: Production feedback
             href: production-control/production-feedback.md
@@ -3311,6 +3309,8 @@
             href: warehousing/install-configure-warehouse-management-app.md
           - name: Install and connect the warehouse app
             href: warehousing/install-configure-warehousing-app.md
+          - name: Mobile bar code support
+            href: warehousing/mobile-barcode-support.md
           - name: Scan bar codes using a camera in the Warehouse Management mobile app
             href: warehousing/scan-bar-codes-using-a-camera.md
           - name: Troubleshoot Warehouse Management mobile app connection issues
@@ -3413,8 +3413,8 @@
             href: warehousing/system-group-on-open-work-list.md
           - name: Document routing layout for license plate labels
             href: warehousing/document-routing-layout-for-license-plates.md
-          - name: Mobile barcode support
-            href: warehousing/mobile-barcode-support.md
+          - name: GS1 bar codes and QR codes
+            href: warehousing/gs1-barcodes.md
           - name: Set up warehouse for transfer orders
             href: warehousing/transfer-orders-warehouse.md
           - name: Troubleshooting warehouse configuration
