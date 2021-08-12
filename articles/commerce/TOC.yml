@@ -1376,6 +1376,8 @@
         items:
         - name: Commerce localization for Russia
           href: localizations/rus-commerce-localization.md
+        - name: Simplified customer address format in Commerce POS for Russia
+          href: localizations/rus-simplified-address.md
         - name: Set up Commerce localization for Russia
           href: localizations/rus-commerce-setup.md
         - name: Prepayments in Commerce for Russia
