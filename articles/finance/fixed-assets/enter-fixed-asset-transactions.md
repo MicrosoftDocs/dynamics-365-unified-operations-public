@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Fixed asset transaction options
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes the different methods available to create fixed asset transactions.
 
