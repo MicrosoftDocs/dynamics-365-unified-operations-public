@@ -3,8 +3,8 @@
  
 title: Set up value models
 description: This procedure shows you to how create a new fixed asset book and associate it with a fixed asset group. 
-author: saraschi2
-ms.date: 08/29/2018
+author: moaamer
+ms.date: 08/12/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -23,12 +23,14 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up value models
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
+
 
 This procedure shows you to how create a new fixed asset book and associate it with a fixed asset group. It uses the accountant role and demo data for the USMF legal entity.
-
 
 ## Create a book
 1. Go to Fixed assets > Setup > Books.
@@ -51,9 +53,10 @@ This procedure shows you to how create a new fixed asset book and associate it w
 1. Click Fixed asset groups.
 2. In the Fixed asset group field, enter or select a value.
 3. In the Service life field, enter a number.
-    * Note that Depreciation periods is calculated after setting the Service life.  
-    * You are able to set the depreciation convention as required for tax purposes.  
 
+  - Depreciation periods are calculated after the service life of the asset is entered.  
+  - The depreciation convention can be set as required for tax purposes.
+  - For fixed assets that are associated with leases, the value in the **Service life** field will be overridden by the lesser of either the lease term in the asset book or asset’s useful life. If the **Transfer of ownership** field is set to **Yes** for the lease book, the value in the **Service life** field will always be the asset’s useful life.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
