@@ -1540,24 +1540,26 @@
           items:
           - name: Tax Calculation overview
             href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-          - name: Get started with Tax Calculation
-            href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-          - name: Sales tax applicability and sales tax group determination logic
-            href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
-          - name: Tax feature support for transfer orders
-            href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
-          - name: Calculating tax on top of price when Prices include taxes is enabled
-            href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
-          - name: Add data fields in tax configurations
-            href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
-          - name: Add data fields in the tax integration by using extensions
-            href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-          - name: Set up an environment for master data lookup
-            href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
-          - name: Multiple VAT registration numbers
-            href: localizations/emea-multiple-vat-registration-numbers.md
-          - name: Reporting for multiple VAT registrations 
+          - name: Setup
             items:
+            - name: Get started with Tax Calculation
+              href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+            - name: Set up an environment for master data lookup
+              href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+          - name: Determination
+            items: 
+            - name: Sales tax applicability and sales tax group determination logic
+              href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+          - name: Calculation
+            items: 
+            - name: Calculate tax on prices when Prices include taxes is enabled
+              href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
+            - name: Tax calculation rounding rules
+              href: localizations/tax-calculation-rounding-rules.md
+          - name: Multiple VAT registration
+            items: 
+            - name: Multiple VAT registration numbers
+              href: localizations/emea-multiple-vat-registration-numbers.md
             - name: Reporting for multiple VAT registrations
               href: localizations/emea-reporting-for-multiple-vat-registrations.md
             - name: France reporting
@@ -1578,6 +1580,16 @@
               items:
               - name: Prepare for integration with MTD for VAT
                 href: localizations/emea-gbr-mtd-vat-integration.md
+          - name: Enable Tax Calculation for transfer order
+            items: 
+            - name: Tax feature support for transfer orders
+              href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+          - name: Extension
+            items: 
+            - name: Add data fields in tax configurations
+              href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
+            - name: Add data fields in the tax integration by using extensions
+              href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
