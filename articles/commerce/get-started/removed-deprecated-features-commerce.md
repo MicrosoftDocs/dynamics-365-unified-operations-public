@@ -53,7 +53,7 @@ The Retail SDK ships in Lifecycle Services (LCS). This mode of distribution is d
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: As of release 10.0.21. The SDK shipped via the LCS VMs will be removed in Oct 2022. |
 
-## Retail deployable package and combined POS, Hardware station and Cloud Scale unit installers
+## Retail deployable package and combined POS, Hardware station, and Cloud Scale unit installers
 
 Retail deployable packages generated using the Retail SDK msbuild is deprecated in 10.0.21. Going forward, use the Cloud Scale Unit package for Cloud Scale unit extensions (Commerce Runtime, channel database, Headless commerce APIs, Payments, and Cloud POS). Use extension-only installers for POS, Hardware station, and Cloud scale unit self-hosted.
 
@@ -74,14 +74,14 @@ For more information, see:
     + [Cloud Scale Unit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
     + [POS, CSU and HWS](https://github.com/microsoft/Dynamics365Commerce.InStore)
 
-## ModernPos.Sln and CloudPOs.sln in tje Retail SDK
+## ModernPos.Sln and CloudPOs.sln in the Retail SDK
 
-POS extension development using ModernPos.sln, CloudPOs.sln, POS.Extension.csproj, and the POS folder is deprecated in 10.0.21. Going forward, use the POS independent packaging SDK for POS extensions.
+POS extension development using ModernPos.sln, CloudPOs.sln, POS.Extension.csproj, and the POS folder is deprecated in 10.0.21. Going forward, use the POS-independent packaging SDK for POS extensions.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | In earlier versions of the Retail SDK, if there are POS extensions then a code merge and repackaging is required to update to the latest version of the POS. The code merge was a time-consuming upgrade process and you had to maintain the full Retail SDK in the repository. You also had to compile the core POS.App project. By using the independent packaging model, you must maintain only your extension. The process of updating to the latest version of the POS extensions is as easy as updating the version of the NuGet package that your project consumes and extensions can be independently deployed and services using the extension installers. The base POS can be deployed and maintained separately, and no more code merge or repackaging with base installer or code is required. |
-| **Replaced by another feature?**   | [POS independent packaging SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
+| **Reason for deprecation/removal** | In earlier versions of the Retail SDK, if there are POS extensions then a code merge and repackaging is required to update to the latest version of the POS. The code merge was a time-consuming upgrade process and you had to maintain the full Retail SDK in the repository. You also had to compile the core POS.App project. By using the independent packaging model, you must maintain only your extension. The process of updating to the latest version of the POS extensions is as easy as updating the version of the NuGet package that your project consumes. Extensions can be deployed independently, and services use the extension installers. The base POS can be deployed and maintained separately, and no code merge or repackaging with the base installer or code is required. |
+| **Replaced by another feature?**   | [POS-independent packaging SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Product areas affected**         | Dynamics 365 Commerce POS extension and deployment. |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: As of release 10.0.21. Support for combined POS packages and extension model using the ModernPos.Sln, CloudPOs.sln and POS.Extensons.csproj in Retail SDK will be removed in Oct 2022. |
