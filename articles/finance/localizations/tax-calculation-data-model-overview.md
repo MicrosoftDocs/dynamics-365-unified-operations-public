@@ -52,4 +52,41 @@ You can also explore the tax calculation data model as the available columns in 
 5.  Click **Manage columns** button.
 [![Manage columns](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-The **Tax Calculation Data Model** is integrated to the Dynamics 365 F&O. During each tax calculation related transaction, the values of the fields defined in the applicability tables will be collected and sent to tax calculation service for tax calculations. Find the logic in the attached "*tax-calculation-data-model-logic.xlsx*" for each supported transaction.
+The **Tax Calculation Data Model** is integrated to the Dynamics 365 F&O. During each tax calculation related transaction, the values of the fields defined in the applicability tables will be collected and sent to tax calculation service for tax calculations. In the version 40.46, there are 57 predefined data models available for the following transactions: purchase order, sales order, transfer order, purchase requisition, request for quotation and sales quotation.
+
+31 data models are header fields of a transaction. They are，
+
+- **Amount Include Tax, Business Process, Currency, Customer Account, Customer Invoice Account, Delivery Term, Invoice From City, Invoice From Country/Region, Invoice From Country/Region Type, Invoice From Province/State, Invoice From Zip Code, Invoice To City, Invoice To Country/Region, Invoice To Country/Region Type, Invoice To Province/State, Invoice To Zip Code, Ship From City, Ship From Country/Region, Ship From Country/Region Type, Ship From Province/State, Ship From Zip Code, Ship To City, Ship To Country/Region, Ship To Country/Region Type, Ship To Province/State, Ship To Zip Code, Site, Tax Direction, Vendor Account, Vendor Invoice Account, Warehouse**
+
+Among which,
+
+- Fields **Vendor Account** and **Vendor Invoice Account** are not applicable to transactions sales order, transfer order, request for quotation and sales quotation.
+- Fields **Customer Account** and **Customer Invoice Account** are not applicable to transactions purchase order, transfer order and request for quotation.
+- Fields **Customer Account** and **Customer Invoice Account** are not applicable to transactions purchase order, transfer order and request for quotation.
+- Fields **Invoice From Country/Region Type** and **Invoice To Country/Region Type** are not applicable to transaction transfer order.
+- Fields **Invoice From City**, **Invoice From Country/Region**, **Invoice From Country/Region Type**, **Invoice From Province/State**, **Invoice From Zip Code**, **Invoice To City**, **Invoice To Country/Region**, **Invoice To Country/Region Type**, **Invoice To Province/State** and **Invoice To Zip Code** are not applicable to transactions transfer order, purchase requisition and request for quotation.
+- Fields **Delivery Term**, **Ship From City**, **Ship From Country/Region**, **Ship From Province/State**, **Ship From Zip Code**, **Ship To City**, **Ship To Country/Region**, **Ship To Province/State** and **Ship To Zip Code** are not applicable to transaction purchase requisition.
+
+See the detailed value fetching logic in below table for the 31 header fields.
+
+​                   <--table 1 header fields fetching logic-->
+
+
+
+26 data models are line fields of a transaction. They are，
+
+- **Amount, Category Name, Charges Code, Commodity Code, Cost Amount, Delivery Term, Direct Delivery, Item Code, Item Type, Line Type, Quantity, Ship From City, Ship From Country/Region, Ship From Country/Region Type, Ship From Province/State, Ship From Zip Code, Ship To City, Ship To Country/Region, Ship To Country/Region Type, Ship To Province/State, Ship To Zip Code, Site, Transaction Date, Unit, Variant Number, Warehouse**
+
+Among which,
+
+- Fields **Category Name** and **Charges Code** are not applicable to transaction transfer order.
+- Field **Commodity Code** is not applicable to transactions purchase requisition and request for quotation.
+- Field **Cost Amount** is not applicable to transaction purchase order, transfer order, purchase requisition and request for quotation.
+- Field **Delivery Term** is not applicable to transaction purchase order, transfer order and purchase requisition.
+- Field **Direct Delivery** is not applicable to transaction transfer order, purchase requisition, request for quotation and sales quotation.
+- Field **Variant Number** is not applicable to transaction transfer order, purchase requisition and request for quotation.
+
+See the detailed value fetching logic in below table for the 26 line fields.
+
+​                   <--table 2 line fields fetching logic-->
+
