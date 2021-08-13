@@ -32,7 +32,7 @@ When deploying release 10.0.21 on IaaS, you may receive the following deployment
 
 **Warning message:** Script \[SetupDiagnostics\] failed execution against VM
 
-The deployment will work despite the warning, however, the following known issues may occur in Lifecycle Services (LCS):
+The deployment will work despite the warning. However, the following known issues may occur in Lifecycle Services (LCS):
 
 - On the **Environment monitoring** page, the **View detailed version information** link will not appear, so you won’t be able to see the specific versions of the modules installed in your environment. Without this data, subsequent hotfixes might fail because the process that applies hotfixes uses this data to verify that the module version prerequisites are met. Because it’s not possible to use the PEAP/Preview build in production or apply hotfixes, the impact should be minimal.
 - The **Performance Metrics** and **Index Analysis** tabs on the **Environment Monitoring** page under SQL Insights won’t display any data. All other **Environment Monitoring** features will work as intended.
