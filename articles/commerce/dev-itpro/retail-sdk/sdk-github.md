@@ -21,13 +21,13 @@ This topic explains to how to download Retail software development kit (SDK) sam
 
 This topic applies to Retail SDK version 10.0.16 or later. For more information about how to download earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md).
 
-The following sample repos contains code samples, templates, and tools that are required to extend or customize existing Commerce functionality. Samples are published to repos in GitHub based on the Commerce extension components. You don't have to close these repositories, instead, you can download and use the samples and template projects.
+The following sample repositories contains code samples, templates, and tools that are required to extend or customize existing Commerce functionality. Samples are published to repositories in GitHub based on the Commerce extension components. You don't have to close these repositories, instead, you can download and use the samples and template projects.
 
 ## Dynamics365Commerce.ScaleUnit repository
 
 The [Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit) repository contains the sample code for customizing the Commerce runtime (CRT), Retail Server, and channel database.
 
-The samples in the repositoryare organized by Dynamics 365 Commerce application release. Each branch in the repository points to an application release of Dynamics 365 Commerce. Use the release branch that matches your go-live version. You don't have to clone this repository, instead, you can download and use the samples and template projects.
+The samples in the repository are organized by Dynamics 365 Commerce application release. Each branch in the repository points to an application release of Dynamics 365 Commerce. Use the release branch that matches your go-live version. You don't have to clone this repository, instead, you can download and use the samples and template projects.
 
 | Release branch name                                                                          | Version | Application release version |
 | -------------------------------------------------------------------------------------------- | ------- | --------------------------- |
@@ -40,17 +40,17 @@ The samples in the repositoryare organized by Dynamics 365 Commerce application 
 
 ### Extension repository (Dynamics365Commerce.ScaleUnit)
 
-You can download and use the samples and templates from [microsoft/Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit). The repository contains **nuget.config**, **repo.props**, **CustomizationPackage.props**, and a build pipelines script. Together they provide guidance on how the extension can setup the repository metadata files.
+You can download and use the samples and templates from [microsoft/Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit). The repository contains **nuget.config**, **repo.props**, **CustomizationPackage.props**, and a build pipelines script. Together they provide guidance on how the extension can set up the repository metadata files.
 
-### Dynamics365Commerce.ScaleUnit repositoryfolders and projects
+### Dynamics365Commerce.ScaleUnit repository folders and projects
 
 | Folder | Project | Description |
 |--------|---------|-------------|
 | Channel Database (./src/ScaleUnitSample/ChannelDatabase) | ChannelDatabase.csproj(./src/ScaleUnitSample/ChannelDatabase/ChannelDatabase.csproj) | This project contains samples on how to create Commerce Runtime database extensions. |
-| CommerceRuntime (./src/ScaleUnitSample/CommerceRuntime) | CommerceRuntime.csproj (./src/ScaleUnitSample/CommerceRuntime/CommerceRuntime.csproj) | Controller – Sample code for how to implement new RS APIs.<br>Entities, Messages and RequestHandlers – Sample code for how to implement new CRT service. |
-| ScaleUnit (./src/ScaleUnitSample/ScaleUnit) | ScaleUnit.csproj (./src/ScaleUnitSample/ScaleUnit/ScaleUnit.csproj) | Sample project on how to generate the CSU. |
+| CommerceRuntime (./src/ScaleUnitSample/CommerceRuntime) | CommerceRuntime.csproj (./src/ScaleUnitSample/CommerceRuntime/CommerceRuntime.csproj) | Controller – Sample code for how to implement new RS APIs.<br>Entities, Messages, and RequestHandlers – Sample code for how to implement new CRT service. |
+| ScaleUnit (./src/ScaleUnitSample/ScaleUnit) | ScaleUnit.csproj (./src/ScaleUnitSample/ScaleUnit/ScaleUnit.csproj) | Sample project on how to generate the Cloud Scale Unit (CSU). |
 | ScaleUnit.Installer (./src/ScaleUnitSample/Installer) | ScaleUnit.csproj (./src/ScaleUnitSample/Installer/ScaleUnit.Installer.csproj) | Sample project on how to generate the CSU installer. |
-|  POS (./src/ScaleUnitSample/POS) | POS.csproj (./src/ScaleUnitSample/POS/POS.csproj) | Contains samples on how to create POS extensions. |
+|  POS (./src/ScaleUnitSample/POS) | POS.csproj (./src/ScaleUnitSample/POS/POS.csproj) | Contains samples on how to create Point Of Sale (POS) extensions. |
 | E-CommerceProxyGenerator (./src/ScaleUnitSample/E-CommerceProxyGenerator) | E-CommerceProxyGenerator.csproj (./src/ScaleUnitSample/E-CommerceProxyGenerator/E-CommerceProxyGenerator.csproj) | Contains a sample on how to generate extension proxies for E-Commerce application. |
 
 Samples for in-store components like Modern POS, Cloud POS, Hardware station and Cloud scale unit – Self hosted are published in the [Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore) repository.
@@ -61,7 +61,7 @@ The **readme.md** files in the **Commerce Runtime**, **ChannelDatabase** and **S
 
 The [Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore) repository contains the sample code for how to customize the POS, Hardware station, Commerce runtime (CRT), headless Commerce APIs, and the channel database.
 
-The samples in the repositoryare organized by Dynamics 365 Commerce application release, each branch in the repository points to an application release of Dynamics 365 Commerce. Use the release branch that matches your go-live version. You don't have to clone this repository, instead, you can download and use the samples and template projects.
+The samples in the repository are organized by Dynamics 365 Commerce application release, each branch in the repository points to an application release of Dynamics 365 Commerce. Use the release branch that matches your go-live version. You don't have to clone this repository, instead, you can download and use the samples and template projects.
 
 | Release branch name                                                                        | Version | Application release version |
 |--------------------------------------------------------------------------------------------|---------|-----------------------------|
@@ -72,7 +72,7 @@ The samples in the repositoryare organized by Dynamics 365 Commerce application 
 
 ### Extension repository (Dynamics365Commerce.InStore)
 
-You can download and use the samples and templates from [microsoft/Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore). The repository contains **nuget.config**, **repo.props**, **CustomizationPackage.props**, and a build pipelines script. Together they provide guidance on how the extension can setup the repository metadata files.
+You can download and use the samples and templates from [microsoft/Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore). The repository contains **nuget.config**, **repo.props**, **CustomizationPackage.props**, and a build pipelines script. Together they provide guidance on how the extension can set up the repository metadata files.
 
 ### Dynamics365Commerce.InStore repository folders and projects
 
@@ -87,7 +87,7 @@ The **readme.md** files inside the project folder contains more details on how t
 
 ## Dynamics365Commerce.Solutions repository
 
-The [Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository contains a sample that demonstrates how to perform E2E business scenario customization in Commerce. There might be scenarios where you need to customize POS, e-Commerce, or the jeadless commerce engine.
+The [Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository contains a sample that demonstrates how to perform E2E business scenario customization in Commerce. There might be scenarios where you need to customize POS, e-Commerce, or the headless commerce engine.
 
 ## Download reference packages for creating APIs, and for consuming messages, request, entities, and contracts
 
@@ -172,15 +172,15 @@ An extension project can consume the correct version if you add the package refe
 
 For every hotfix and new application release, a version of the package will be published in the same public feed, consume the right package version based on the version required for your go-live version. Consuming the higher version of the package than your go-live application version may result in runtime and deployment failures.
 
-## Setup Azure DevOps pipeline for build automation and package generation
+## Set up an Azure pipeline for build automation and package generation
 
-To setup an Azure DevOps pipeline, see [Set up a build pipeline for the independent-packaging SDK](../build-pipeline.md)
+To set up an Azure pipeline, see [Set up a build pipeline for the independent-packaging SDK](../build-pipeline.md).
 
 ## Best practice and branching strategies
 
 For detailed information about the Git branching strategy, see [Git branching strategy](/azure/devops/repos/git/git-branching-guidance).
 
-The following branching strategies are based on the way that Microsoft uses Git. For more information, see [How we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
+The following branching strategies are based on the way that Microsoft uses Git. For more information, see [How we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft.md).
 
 Keep your branch strategy simple. Build your strategy from these three concepts:
 
@@ -190,11 +190,11 @@ Keep your branch strategy simple. Build your strategy from these three concepts:
 
 ### Create a new feature branch for development and bug fixes
 
-Create a new feature main branch for your extension, following the naming convention in [Git branching doc for sample naming convention](/azure/devops/repos/git/git-branching-guidance?view=azure-devops#name-your-feature-branches-by-convention).
+Create a new feature main branch for your extension, following the naming convention in [Git branching doc for sample naming convention](/azure/devops/repos/git/git-branching-guidance.md#name-your-feature-branches-by-convention).
 
 ### Create a new development branch
 
-To create a new developement branch, follow these steps:
+To create a new development branch, follow these steps:
 
 1. Create a private branch for development.
 
@@ -231,10 +231,10 @@ To create a release branch after development, follow these steps:
     - Git checkout -b release/x.x.x
     ```
 
-2. Merge the changes from the release branch back to main branch if any changes were made in the release branch.
+2. Merge the changes from the release branch back to main branch if any changes were made in the release branch. For example:
 
     ```dos
-    - git checkout master git merge release/x.x.x
+    - git checkout main git merge release/x.x.x
     ```
 
 ### Extension hotfix branch
@@ -245,10 +245,10 @@ To create a release branch after development, follow these steps:
 
 ### Merge a new release branch to main and development branch
 
-After a new version of the samples released, if required, merge your development branch with the new branch. The repository contains only samples, so it's not required to get the updated changes from the branch.
+After a new version of the samples released, if necessary, merge your development branch with the new branch. The repository contains only samples, so it's not required to get the updated changes from the branch. For example:
 
 ```dos
-- git checkout master git merge release/x.x.x
+- git checkout main git merge release/x.x.x
 ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
