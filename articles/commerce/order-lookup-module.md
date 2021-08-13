@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.22
 
 This topic covers the order lookup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
-The order lookup module provides a form for looking up orders placed on an e-commerce site and is used as part of the [Enable order lookup for guest checkouts](order-lookup.md) feature. The order lookup module can be used to look up orders that were submitted through an e-commerce site, retail point of sale (POS), or call center. The form can retrieve orders that were submitted using guest checkout as well as orders submitted by registered users.
+The order lookup module provides a form for looking up orders placed on an e-commerce site and is used as part of the [Enable order lookup for guest checkouts](order-lookup-guest.md) feature. The order lookup module can be used to look up orders that were submitted through an e-commerce site, retail point of sale (POS), or call center. The form can retrieve orders that were submitted using guest checkout as well as orders submitted by registered users.
 
 The following illustration shows an example of the form that is rendered by the order lookup module. When customers fill out the form and select **Find your order**, they are then redirected to the order details page. 
 
