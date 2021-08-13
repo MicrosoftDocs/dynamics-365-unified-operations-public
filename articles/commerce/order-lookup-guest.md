@@ -42,7 +42,7 @@ A link or button that takes the customer directly to the order details page for 
 
 ## Enable order lookup for guest checkouts
 
-To enable  order lookup for guest checkouts, the following feature management switches must be turned on.
+To enable order lookup for guest checkouts, the following feature management switches must be turned on in Commerce headquarters at **Workspaces \> Feature management**.
 
 | **Feature management switch name**                           | **Purpose**                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -50,30 +50,30 @@ To enable  order lookup for guest checkouts, the following feature management sw
 | **Enable generation  of a stronger channel reference ID**        | This switch generates a more secure 12 character channel reference ID (order confirmation  ID) which allows it to be passed in the query string when looking up an  order. |
 | **Generate a  consistent channel reference ID format across channels** | This switch generates a secure channel reference ID for orders placed through e-commerce, point of sale and call center orders. To enable this switch, the Enable generation of a stronger channel reference ID switch must also be enabled. |
 
-The API that supports unauthenticated order lookup must be enabled with a configuration switch that is found in Headquarters in the Order search tab within **Retail and Commerce** -> **Headquarters setup** -> **Parameters -> Customer orders**. 
+To enable order lookup for guest checkouts, you must also enable the API that supports unauthenticated order lookup in Commerce headquarters by going to the **Order search** FastTab at **Retail and Commerce \> Headquarters setup \> Parameters \> Customer orders** and setting **Enable unauthenticated order lookup** to **Yes**. 
 
-![Screenshot of switch to enable order lookup and configure for whom to display personal data.](./media/OrderLookup_enable.PNG)
+![Enable unauthenticated order lookup property set to Yes in headquarters](./media/OrderLookup_enable.PNG)
 
 ## Manage the display of personal data
 
 Dynamics 365 Commerce provides options for controlling whether personal information such as the customer's shipping address and the last 4 digits of their credit card are displayed to customers. By default, personal information is not displayed to customers when unauthenticated order lookup is enabled. Once it is enabled, you can choose from one of three options below.
 
-> [!NOTE]
-> This option will determine when personal data such as customer address and the last four digits of the credit card will be shown to anonymous users. The most secure option is to set this configuration to Never. To fully protect registered customer privacy, it is advised to only set this configuration to guest checkout orders. 
-
 | **Option**        | **Result**                                                   |
 | ----------------- | ------------------------------------------------------------ |
-| Never (default)   | Personal information is not displayed in order lookups. Registered users who are  signed in and looking up an order they created while signed in will be able  to see their personal information. |
-| Guest orders only | Personal information is displayed in order lookups for orders created as a guest. If the order was created by a registered user, they must sign in to see their  personal information. |
-| All orders        | Personal information is included in all order lookups.       |
+| **Never** (default)   | Personal information is not displayed in order lookups. Registered users who are signed in and looking up an order they created while signed in will be able  to see their personal information. |
+| **Guest orders only** | Personal information is displayed in order lookups for orders created as a guest. If the order was created by a registered user, they must sign in to see their personal information. |
+| **All orders**        | Personal information is included in all order lookups.       |
 
-Once you have enabled unauthenticated order lookup and/or made any modifications to the Include personal data in guest order lookup setting, run job 1070 (Channel configuration.)
+Once you have made any changes to the **Include personal data in guest order lookup** setting, run job 1070 (Channel configuration) in headquarters at **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
+
+> [!NOTE]
+> These options determine when personal data such as customer address and the last four digits of the customer credit card are shown to anonymous guest users. To protect registered customer privacy, it is advised to only set this configuration to **Guest orders only**. The most secure option is to set this configuration to **Never**.
 
 ## Configure the order lookup module
 
 The form that guest users will use to look up their order is rendered using the Commerce module library [Order lookup module](order-lookup-module.md). The order lookup module can be included in the body slot of any page that does not customer sign-in. Below is an example of the order lookup module:
 
-![Screenshot of the order lookup module displayed on a page.](./media/OrderLookup_module.PNG)
+![Screenshot of the order lookup module displayed on a page](./media/OrderLookup_module.PNG)
 
 ## Additional resources
 
