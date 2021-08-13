@@ -1138,22 +1138,24 @@
               href: data-entities/dual-write/migrate-prospect-to-cash.md
             - name: Troubleshooting
               items:
-              - name: Verify dual-write configuration in Finance and Operations apps and Dataverse
-                href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+              - name: General troubleshooting
+                href: data-entities/dual-write/dual-write-troubleshooting.md
               - name: Troubleshoot issues during initial setup
                 href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
               - name: Troubleshoot issues during initial synchronization
                 href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-              - name: Troubleshoot dual-write issues in Finance and Operations apps
-                href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
               - name: Troubleshoot live synchronization issues
                 href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+              - name: Troubleshoot dual-write issues in Finance and Operations apps
+                href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+              - name: Troubleshoot party and global address book problems
+                href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
               - name: Troubleshoot issues related to solution awareness
                 href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
               - name: Troubleshoot issues from upgrades of Finance and Operations apps
                 href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-              - name: General troubleshooting
-                href: data-entities/dual-write/dual-write-troubleshooting.md
+              - name: Verify dual-write configuration in Finance and Operations apps and Dataverse
+                href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
         - name: Dual-write frequently asked questions
           href: data-entities/dual-write/dual-write-faq.md                  
       - name: Virtual entities
