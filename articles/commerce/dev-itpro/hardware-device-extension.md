@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Integrate the POS with a new hardware device
 description: This topic explains how to integrate the point of sale (POS) with a new hardware device.
 author: mugunthanm
 ms.date: 07/27/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 28021
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mumani
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
-
 ---
 
 # Integrate the POS with a new hardware device
@@ -264,38 +249,38 @@ let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<Hardw
 return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
 ```
 
-## Generate extension installer for the shared hardware station for Application release 10.0.18 or later versions:
-Application version 10.0.18 or later supports the sealed installers, extension installer can be generated separately from the base installer and it can be independently installed and serviced. This will work only if you are using the new [sealed self-service installers]( https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/enhanced-mass-deployment).
-To generate the sealed extension installer for shared hardware station, follow the below steps:
-1.	[Download the sample hardware station installer project] ( https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.31/src/HardwareStationSample/HardwareStation.Installer) from GitHub and open the HardwareStation.Installer.csproj project in visual studio.
-2.	Add your hardware station extension project as project reference to the HardwareStation.Installer.csproj installer project. Remove existing sample project refence from the HardwareStation.Installer.csproj template project.
+## Generate an extension installer for the shared Hardware station for application release 10.0.18 or later
 
-Installer project consume **Microsoft.Dynamics.Commerce.Sdk.Installers.HardwareStation** package to generate the extension installer.
+Dynamics 365 Commerce 10.0.18 and later supports sealed installers. You can generate an extension installer separately from the base installer, and the installer can be independently installed and serviced. This will work only if you are using the [sealed self-service installers](enhanced-mass-deployment.md).
 
-3.	The sample installer project class extends from the ExtensionPackageInstallerSetup class to implement the installation steps. 
+To generate the sealed extension installer for shared a Hardware station, follow these steps:
 
-To update the installer name, set the InstallerName variable in the sample code.
+1. Download the [sample Hardware station installer project](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.31/src/HardwareStationSample/HardwareStation.Installer) from GitHub and open the **HardwareStation.Installer.csproj** project in Visual Studio.
+2. Add your Hardware station extension project as a project reference to the **HardwareStation.Installer.csproj** installer project. Remove the existing sample project reference from the **HardwareStation.Installer.csproj** project.
 
-4.	The sample installer project can be updated to perform any additional logic during installation like ping some server etc. Check HardwareStationExtensionPackageInstallerSetup.cs file in the HardwareStation.Installer.csproj.
-5.	You can also add pre and post step to the installer by implementing the IExtensionInstallerStep interface, check the TestExtensionInstallerPreInstallStep.cs and TestExtensionInstallerPostInstallStep.cs in the HardwareStation.Installer.csproj sample installer project.
-6.	Build the extension HardwareStation.Installer.csproj project to generate the shared hardware station extension installer. The output the project will be the extension installer, check the visual studio output window after build to find the generated extension installer path.
-7.	Deploy the Shared Hardware station extension for POS and test it and your scenario. 
+    The installer project consumes the **Microsoft.Dynamics.Commerce.Sdk.Installers.HardwareStation** package to generate the extension installer. The sample installer project class extends from the **ExtensionPackageInstallerSetup** class to implement the installation steps.
 
-Note: The Sealed Shared HWS installer must be installed before running the extension installer.
+3. To update the installer name, set the **InstallerName** variable in the sample code.
+4. The sample installer project can be updated to perform any additional logic during installation. For example, you could ping a server. To add logic, use the **HardwareStationExtensionPackageInstallerSetup.cs** file in the **HardwareStation.Installer.csproj**.
+5. You can also add pre- and post-steps to the installer by implementing the **IExtensionInstallerStep** interface. To add steps, use the **TestExtensionInstallerPreInstallStep.cs** file and **TestExtensionInstallerPostInstallStep.cs** in the **HardwareStation.Installer.csproj** sample installer project.
+6. Build the extension **HardwareStation.Installer.csproj** project to generate the shared Hardware station extension installer. The output of the project is the extension installer. You can find the generated extension installer path in the Visual Studio Output window after build is finished.
+7. Deploy the shared Hardware station extension for Point of Sale (POS) and test it in your scenario.
 
-8.	Run the extension installer generated using command prompt. Open the command prompt in admin mode and run the installer with **install** parameter. To uninstall run the extension installer with the **uninstall** parameter.
+    > [!NOTE]
+    > The sealed shared Hardware server installer must be installed before running the extension installer.
 
-Example:
-```
-C:\HardwareStation.Installer\bin\Debug\net461> .\HardwareStation.Installer.exe install
-```
+8. Run the extension installer generated by using command prompt. Open the command prompt in admin mode and run the installer with the **install** parameter. To uninstall, run the extension installer with the **uninstall** parameter. For example:
 
-9.	Close POS if it's running.
-10.	Open POS and configure it to use the Shared Hardware Station.
-11.	Validate the extension hardware station scenario.
+    ```dos
+    C:\HardwareStation.Installer\bin\Debug\net461> .\HardwareStation.Installer.exe install
+    ```
 
-## Generate extension installer for the shared hardware station for Application release 10.0.17 or earlier versions:
-Follow the steps mentioned in the [Create deployable packages doc.]( https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-packaging)
+9. Close POS if it's running.
+10. Open POS and configure it to use the shared Hardware station.
+11. Validate the extension hardware station scenario.
 
+## Generate an extension installer for the shared Hardware station for Dynamics 365 Commerce 10.0.17 or earlier
+
+To generate an extension installer for the shared Hardware station for Dynamics 365 Commerce 10.0.17 or earlier, follow the steps in [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

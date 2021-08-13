@@ -1,24 +1,11 @@
 ---
-# required metadata
-
 title: Download Retail SDK samples and reference packages from GitHub and NuGet
-description: This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from public feed.
+description: This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed.
 author: mugunthanm
-ms.date: 12/07/2020
+ms.date: 08/13/2020
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: Developer
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
-ms.custom:
-ms.assetid:
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: mumani
@@ -30,22 +17,19 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from public feed. The Retail SDK includes the code samples, templates, and tools that are required to extend or customize Microsoft Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components.
+This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed. The Retail SDK includes the code samples, templates, and tools that are required to extend or customize Microsoft Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components.
 
 This topic applies to Retail SDK version 10.0.16 or later. For more information about how to download earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md).
 
-The below sample repo contains code samples, templates, and tools that are required to extend or customize existing Commerce functionality, samples are published into different repos in GitHub based on the Commerce extension components, its not required to clone these repos, if required download and consume the samples and template projects.
+The following sample repos contains code samples, templates, and tools that are required to extend or customize existing Commerce functionality. Samples are published to repos in GitHub based on the Commerce extension components. You don't have to close these repositories, instead, you can download and use the samples and template projects.
 
-## Dynamics365Commerce.ScaleUnit repo:
+## Dynamics365Commerce.ScaleUnit repository
 
-The [Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit) repo contains the sample code for customizing the Commerce runtime (CRT), Retail Server, and the channel database.
+The [Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit) repository contains the sample code for customizing the Commerce runtime (CRT), Retail Server, and channel database.
 
-The samples in the repo are organized by Dynamics 365 Commerce application release, each branch in the repo points to an application release of Dynamics 365 Commerce, use the right release branch based on your go-live version.
+The samples in the repositoryare organized by Dynamics 365 Commerce application release. Each branch in the repository points to an application release of Dynamics 365 Commerce. Use the release branch that matches your go-live version. You don't have to clone this repository, instead, you can download and use the samples and template projects.
 
-> [!Note]
-> The repo contains only samples, so its not required to clone this repo.
-
-| Release branch name                                                                          | version | Application release version |
+| Release branch name                                                                          | Version | Application release version |
 | -------------------------------------------------------------------------------------------- | ------- | --------------------------- |
 | [Release/9.26](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.26) | 9.26.\* | 10.0.16                     |
 | [Release/9.27](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.27) | 9.27.\* | 10.0.17                     |
@@ -54,67 +38,62 @@ The samples in the repo are organized by Dynamics 365 Commerce application relea
 | [Release/9.30](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.30) | 9.30.\* | 10.0.20                     |
 | [Release/9.31](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.31) | 9.31.\* | 10.0.21                     |
 
+### Extension repository (Dynamics365Commerce.ScaleUnit)
 
-### Extension repository:
+You can download and use the samples and templates from [microsoft/Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit). The repository contains **nuget.config**, **repo.props**, **CustomizationPackage.props**, and a build pipelines script. Together they provide guidance on how the extension can setup the repository metadata files.
 
-Extension code or repository if required can download and consume the samples and templates from [microsoft](https://github.com/microsoft)/[Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit), the sample scale unit repo contains nuget.config, repo.props, CustomizationPackage.props and build pipelines script which provide guidance on how extension can setup the repo metadata files.
+### Dynamics365Commerce.ScaleUnit repositoryfolders and projects
 
-### Dynamics365Commerce.ScaleUnit repo folders and projects:
+| Folder | Project | Description |
+|--------|---------|-------------|
+| Channel Database (./src/ScaleUnitSample/ChannelDatabase) | ChannelDatabase.csproj(./src/ScaleUnitSample/ChannelDatabase/ChannelDatabase.csproj) | This project contains samples on how to create Commerce Runtime database extensions. |
+| CommerceRuntime (./src/ScaleUnitSample/CommerceRuntime) | CommerceRuntime.csproj (./src/ScaleUnitSample/CommerceRuntime/CommerceRuntime.csproj) | Controller – Sample code for how to implement new RS APIs.<br>Entities, Messages and RequestHandlers – Sample code for how to implement new CRT service. |
+| ScaleUnit (./src/ScaleUnitSample/ScaleUnit) | ScaleUnit.csproj (./src/ScaleUnitSample/ScaleUnit/ScaleUnit.csproj) | Sample project on how to generate the CSU. |
+| ScaleUnit.Installer (./src/ScaleUnitSample/Installer) | ScaleUnit.csproj (./src/ScaleUnitSample/Installer/ScaleUnit.Installer.csproj) | Sample project on how to generate the CSU installer. |
+|  POS (./src/ScaleUnitSample/POS) | POS.csproj (./src/ScaleUnitSample/POS/POS.csproj) | Contains samples on how to create POS extensions. |
+| E-CommerceProxyGenerator (./src/ScaleUnitSample/E-CommerceProxyGenerator) | E-CommerceProxyGenerator.csproj (./src/ScaleUnitSample/E-CommerceProxyGenerator/E-CommerceProxyGenerator.csproj) | Contains a sample on how to generate extension proxies for E-Commerce application. |
 
-| Folder                                                                     | Project                                                                                                           | Description                                                                                                                                          |
-| -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Channel Database](./src/ScaleUnitSample/ChannelDatabase)                  | [ChannelDatabase.csproj](./src/ScaleUnitSample/ChannelDatabase/ChannelDatabase.csproj)                            | This project contains samples on how to create Commerce Runtime database extensions.                                                                 |
-| [CommerceRuntime](./src/ScaleUnitSample/CommerceRuntime)                   | [CommerceRuntime.csproj](./src/ScaleUnitSample/CommerceRuntime/CommerceRuntime.csproj)                            | Controller – Sample code for how to implement new RS APIs.Entities, Messages and RequestHandlers – Sample code for how to implement new CRT service. |
-| [ScaleUnit](./src/ScaleUnitSample/ScaleUnit)                               | [ScaleUnit.csproj](./src/ScaleUnitSample/ScaleUnit/ScaleUnit.csproj)                                              | Sample project on how to generate the CSU                                                                                                            |
-| [ScaleUnit.Installer](./src/ScaleUnitSample/Installer)                     | [ScaleUnit.csproj](./src/ScaleUnitSample/Installer/ScaleUnit.Installer.csproj)                                    | Sample project on how to generate the CSU installer.                                                                                                 |
-| [POS](./src/ScaleUnitSample/POS)                                           | [POS.csproj](./src/ScaleUnitSample/POS/POS.csproj)                                                                | Contains samples on how to create POS extensions.                                                                                                    |
-| [E-CommerceProxyGenerator](./src/ScaleUnitSample/E-CommerceProxyGenerator) | [E-CommerceProxyGenerator.csproj](./src/ScaleUnitSample/E-CommerceProxyGenerator/E-CommerceProxyGenerator.csproj) | Contains a sample on how to generate extension proxies for E-Commerce Application.                                                                   |
+Samples for in-store components like Modern POS, Cloud POS, Hardware station and Cloud scale unit – Self hosted are published in the [Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore) repository.
 
-Samples for instore components like Modern POS, Cloud POS, Hardware station and Cloud scale unit – Self hosted are published in the [Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore) repo.
+The **readme.md** files in the **Commerce Runtime**, **ChannelDatabase** and **ScaleUnit** folders contain more details on how to run the samples.
 
-Readme file inside the Commerce Runtime, ChannelDatabase and ScaleUnit contain more details on how to run the samples.
+## Dynamics365Commerce.InStore repository
 
-## Dynamics365Commerce.InStore repo:
+The [Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore) repository contains the sample code for how to customize the POS, Hardware station, Commerce runtime (CRT), headless Commerce APIs, and the channel database.
 
-The [Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore) repo contains the sample code for how to customize the POS, HWS and Commerce runtime (CRT), Headless Commerce APIs and channel database.
+The samples in the repositoryare organized by Dynamics 365 Commerce application release, each branch in the repository points to an application release of Dynamics 365 Commerce. Use the release branch that matches your go-live version. You don't have to clone this repository, instead, you can download and use the samples and template projects.
 
-The samples in the repo are organized by Dynamics 365 Commerce application release, each branch in the repo points to an application release of Dynamics 365 Commerce, use the right release branch based on your go-live version. 
-
-> [!Note]
-> The repo contains only samples, so its not required to clone this repo.
-
-| Release branch name                                                                          | version | Application release version |
-| -------------------------------------------------------------------------------------------- | ------- | --------------------------- |
+| Release branch name                                                                        | Version | Application release version |
+|--------------------------------------------------------------------------------------------|---------|-----------------------------|
 | [Release/9.28](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.28) | 9.28.\* | 10.0.18                     |
 | [Release/9.29](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.29) | 9.29.\* | 10.0.19                     |
 | [Release/9.30](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.30) | 9.30.\* | 10.0.20                     |
 | [Release/9.31](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.31) | 9.31.\* | 10.0.21                     |
 
-### Extension repository:
+### Extension repository (Dynamics365Commerce.InStore)
 
-Extension code or repository if required can download and consume the samples and templates from [microsoft](https://github.com/microsoft)/[Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore), the sample InStore repo contains nuget.config, repo.props, CustomizationPackage.props and build pipelines script which provide guidance on how extension can setup the repo metadata files.
+You can download and use the samples and templates from [microsoft/Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore). The repository contains **nuget.config**, **repo.props**, **CustomizationPackage.props**, and a build pipelines script. Together they provide guidance on how the extension can setup the repository metadata files.
 
-### Dynamics365Commerce.InStore repo folders and projects:
+### Dynamics365Commerce.InStore repository folders and projects
 
 | Folder           | Project              | Description                                   |
-| ---------------- | ---------------------| --------------------------------------------- |
-| HardwareStationSample | HardwareStation.Samples.sln| This project contains samples on how to create Hardware station, Payment extensions and extension installers.|  
-| POSSample  | Pos.sln | This folder/project contains POS, CRT, Headless Commerce APIs and HWS extension and installer samples. | 
+|----------------|---------------------|---------------------------------------------|
+| HardwareStationSample | HardwareStation.Samples.sln| This project contains samples on how to create Hardware station, Payment extensions, and extension installers.|  
+| POSSample  | Pos.sln | This folder and project contain POS, CRT, headless Commerce APIs, and Hardware station extension and installer samples. |
 
-More samples for CSU – self hosted and Commerce Runtime and Headless Commerce APIs are published in the [Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit) repo.
+More samples for CSU – self hosted, Commerce Runtime, and headless Commerce APIs are published in the [Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit) repository.
 
-Readme files inside the project folder contains more details on how to run these samples.
+The **readme.md** files inside the project folder contains more details on how to run these samples.
 
+## Dynamics365Commerce.Solutions repository
 
-## Dynamics365Commerce.Solutions repo:
-
-The [Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repo contains the sample that demonstrates how to perform E2E business scenario customization in Commerce, there may be scenarios where you may need to customize POS, e-Commerce and Headless commerce engine, the samples in these repos will be provide guidance on how to do E2E business scenario customization. 
+The [Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository contains a sample that demonstrates how to perform E2E business scenario customization in Commerce. There might be scenarios where you need to customize POS, e-Commerce, or the jeadless commerce engine.
 
 ## Download reference packages for creating APIs, and for consuming messages, request, entities, and contracts
 
-Commerce contracts, messages, entities, and request packages are published in this public feed for commerce extension code to consume and customize existing functionalities or build new functionalities for Dynamics 365 Commerce product.
+Commerce contracts, messages, entities, and request packages are published in this public feed for Commerce extension code that consumes and customizes existing functionalities, or builds new functionalities for the Dynamics 365 Commerce application.
 
-Consume the packages from [https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json](https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json). You can add the package source location in the nuget.config file of your extension project file.
+Use the packages from [index.json](https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json). You can add the package source location in the **nuget.config** file of your extension project file, as shown in the following code example:
 
 ```xml
 <packageSources>
@@ -126,41 +105,41 @@ Consume the packages from [https://pkgs.dev.azure.com/commerce-partner/Registry/
 ## Reference packages that are available in the public feed
 
 | Package name                            | Description |
-| --------------------------------------- | ----------- | 
+|---------------------------------------|-----------|
 | Microsoft.Dynamics.Commerce.Sdk.ChannelDatabase | This package is required to generate the DB packages with CSU.  |
 | Microsoft.Dynamics.Commerce.Sdk.Runtime | This meta package contains all the required packages for implementing the CRT and Retail Server extensions. All the required contracts, messages, requests/responses, and entities are included in this package. |
 | Microsoft.Dynamics.Commerce.Sdk.ScaleUnit | This package is required to generate the CSU package for deployment. |
-| Microsoft.Dynamics.Commerce.Sdk.Installers.ScaleUnit|  This package is required to generate the ScaleUnit package for deployment |
-| Microsoft.Dynamics.Commerce.Sdk.HardwareAndPeripherals|  This package contains all commerce Hardware station and peripherals libraries |
-| Microsoft.Dynamics.Commerce.Sdk.Installers| This package contains all the installers libraries |
-| Microsoft.Dynamics.Commerce.Sdk.Installers.HardwareStation| This package is required to generate the Hardware station package for deployment  |
-| Microsoft.Dynamics.Commerce.Sdk.Pos| This package contains all POS libraries |
-| Microsoft.Dynamics.Commerce.Sdk.Installers.ModernPos| This package is required to generate the POS extension installer for deployment |
-| Microsoft.Dynamics.Commerce.Diagnostics| This package contains all the diagnostic libraries |
-| Microsoft.Dynamics.Commerce.Runtime.Data| This package contains all data contract libraries |
-| Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages| This package contains all data services message libraries |
-| Microsoft.Dynamics.Commerce.Runtime.Entities| This package contains all commerce entities definition |
-| Microsoft.Dynamics.Commerce.Runtime.Framework| This package contains all commerce framework libraries |
-| Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts| This package contains all commerce controller libraries |
-| Microsoft.Dynamics.Commerce.Runtime.Messages| This package contains all commerce runtime messages libraries |
-| Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages| This package contains all the commerce real runtime libraries |
-| Microsoft.Dynamics.Commerce.Runtime.Services.Messages| This package contains all the commerce service messages libraries |
-| Microsoft.Dynamics.Commerce.HardwareStation.Core| This package contains all the HWS libraries |
-| Microsoft.Dynamics.Commerce.HardwareStation.PeripheralRequests| This package contains all the HWS peripherals request libraries |
-| Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Contracts| This package contains all the HWS peripherals contracts libraries |
-| Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Entities| This package contains all the HWS peripherals entities libraries |
-| Microsoft.Dynamics.Commerce.Installers.Framework|  This package contains all the installers framework libraries |
-| Microsoft.Dynamics.Commerce.KeyVault.Contracts| This package contains all the key vault contract libraries |
-| Microsoft.Dynamics.Commerce.PaymentSDK.Extensions.Portable| This package contains all the payment extension libraries |
-| Microsoft.Dynamics.Commerce.PaymentSDK.Portable| This package contains all the payment libraries  |
-| Microsoft.Dynamics.Commerce.Runtime.FIF.Connector.Messages| This package contains all the FIF connector libraries  |
-| Microsoft.Dynamics.Commerce.Runtime.FIF.DocumentProvider.Messages|  This package contains all the FIF document provider libraries   |
-| Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions| This package contains all the database installer framework libraries |
-| Microsoft.Dynamics.Commerce.Tools.DbUtilities| This package contains all the DB utilities libraries |
-| Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore | This package contains all the extensions proxy generator utilities  |
-| Microsoft.Dynamics.Commerce.Proxy.ScaleUnit                           | This package contains all the proxies class for extension applications to consume the Headless Commerce APIs in online mode (connected to Headless Commerce). |
+| Microsoft.Dynamics.Commerce.Sdk.Installers.ScaleUnit|  This package is required to generate the ScaleUnit package for deployment. |
+| Microsoft.Dynamics.Commerce.Sdk.HardwareAndPeripherals|  This package contains all commerce Hardware station and peripherals libraries. |
+| Microsoft.Dynamics.Commerce.Sdk.Installers| This package contains all the installer libraries. |
+| Microsoft.Dynamics.Commerce.Sdk.Installers.HardwareStation| This package is required to generate the Hardware station package for deployment. |
+| Microsoft.Dynamics.Commerce.Sdk.Pos| This package contains all POS libraries. |
+| Microsoft.Dynamics.Commerce.Sdk.Installers.ModernPos| This package is required to generate the POS extension installer for deployment. |
+| Microsoft.Dynamics.Commerce.Diagnostics| This package contains all the diagnostic libraries. |
+| Microsoft.Dynamics.Commerce.Runtime.Data| This package contains all the data contract libraries. |
+| Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages| This package contains all the data services message libraries. |
+| Microsoft.Dynamics.Commerce.Runtime.Entities| This package contains all the entity definitions. |
+| Microsoft.Dynamics.Commerce.Runtime.Framework| This package contains all the framework libraries. |
+| Microsoft.Dynamics.Commerce.Runtime.Hosting.Contracts| This package contains all the controller libraries. |
+| Microsoft.Dynamics.Commerce.Runtime.Messages| This package contains all the runtime messages libraries. |
+| Microsoft.Dynamics.Commerce.Runtime.RealtimeServices.Messages| This package contains all the real runtime libraries. |
+| Microsoft.Dynamics.Commerce.Runtime.Services.Messages| This package contains all the service messages libraries. |
+| Microsoft.Dynamics.Commerce.HardwareStation.Core| This package contains all the Hardware station libraries. |
+| Microsoft.Dynamics.Commerce.HardwareStation.PeripheralRequests| This package contains all the Hardware station peripherals request libraries. |
+| Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Contracts| This package contains all the Hardware station peripherals contracts libraries. |
+| Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Entities| This package contains all the Hardware station peripherals entities libraries. |
+| Microsoft.Dynamics.Commerce.Installers.Framework|  This package contains all the installer framework libraries. |
+| Microsoft.Dynamics.Commerce.KeyVault.Contracts| This package contains all the key vault contract libraries. |
+| Microsoft.Dynamics.Commerce.PaymentSDK.Extensions.Portable| This package contains all the payment extension libraries. |
+| Microsoft.Dynamics.Commerce.PaymentSDK.Portable| This package contains all the payment libraries. |
+| Microsoft.Dynamics.Commerce.Runtime.FIF.Connector.Messages| This package contains all the FIF connector libraries. |
+| Microsoft.Dynamics.Commerce.Runtime.FIF.DocumentProvider.Messages|  This package contains all the FIF document provider libraries. |
+| Microsoft.Dynamics.Commerce.Installers.Framework.DatabaseExtensions| This package contains all the database installer framework libraries. |
+| Microsoft.Dynamics.Commerce.Tools.DbUtilities| This package contains all the database utility libraries. |
+| Microsoft.Dynamics.Commerce.Tools.ExtensionsProxyGenerator.AspNetCore | This package contains all the extensions proxy generator utilities. |
+| Microsoft.Dynamics.Commerce.Proxy.ScaleUnit                           | This package contains all the proxies class for extension applications to consume the headless Commerce APIs in online mode (connected to headless Commerce). |
 
-## Package versioning:
+## Package versioning
 
 | Package version  | Application release      |
 | ---------------- | ------------------------ |
@@ -191,18 +170,17 @@ An extension project can consume the correct version if you add the package refe
     <PackageReference Include="Microsoft.Dynamics.Commerce.Sdk.Runtime" Version="9.28.*" />;
     ```
 
-With every hotfix and new application release, new version of the package will be published in the same public feed, consume the right package version based on the version required for your go live. Consuming the higher version of the package than your go-live application version may result in runtime and deployment failures.
+For every hotfix and new application release, a version of the package will be published in the same public feed, consume the right package version based on the version required for your go-live version. Consuming the higher version of the package than your go-live application version may result in runtime and deployment failures.
 
+## Setup Azure DevOps pipeline for build automation and package generation
 
-## Setup Azure DevOps pipeline for build automation and package generation:
+To setup an Azure DevOps pipeline, see [Set up a build pipeline for the independent-packaging SDK](../build-pipeline.md)
 
-[Set up a build pipeline for the independent-packaging SDK](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/build-pipeline)
+## Best practice and branching strategies
 
-## Best practice and branching strategies:
+For detailed information about the Git branching strategy, see [Git branching strategy](/azure/devops/repos/git/git-branching-guidance).
 
-Detailed information on git branching strategy refer [Git branching strategy](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops) doc.
-
-The following branching strategies are based on the way we use Git here at Microsoft. For more information, see [How we use Git at Microsoft](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
+The following branching strategies are based on the way that Microsoft uses Git. For more information, see [How we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
 
 Keep your branch strategy simple. Build your strategy from these three concepts:
 
@@ -210,49 +188,67 @@ Keep your branch strategy simple. Build your strategy from these three concepts:
 - Merge feature branches into the main branch using pull requests.
 - Keep a high quality, up-to-date main branch.
 
-**Create a new feature branch for development and bug fixes:**
+### Create a new feature branch for development and bug fixes
 
-Create a new feature main branch for our extension, follow the proper naming convention (refer the [Git branching doc for sample naming convention](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops#name-your-feature-branches-by-convention))
+Create a new feature main branch for your extension, following the naming convention in [Git branching doc for sample naming convention](/azure/devops/repos/git/git-branching-guidance?view=azure-devops#name-your-feature-branches-by-convention).
 
-** Create a new development branch:**
+### Create a new development branch
 
-Create a private branch for the development:
+To create a new developement branch, follow these steps:
 
-- git checkout -b private/{username}/{feature/description}
+1. Create a private branch for development.
 
-Add and commit new changes to the development branch using git -add . and git commit -m&quot; commit message.&quot;
+    ```dos
+    - git checkout -b private/{username}/{feature/description}
+    ```
 
-After the development is completed, tested, and validated push the changes to the main branch by doing git push \&lt;remote\&gt; \&lt;branch\&gt;
+2. Add and commit the changes to the development branch. For example:
 
-- git push origin {private branch name}
+    ```dos
+    git -add . 
+    git commit -m "commit message"
+    ```
 
-**Create a release branch after development:**
+3. After the development is completed, tested, and validated, push the changes to the main branch. For example:
 
-After the development changes pushed into the main branch, create a new release branch, and create the deployable packages from the release branch.
+    ```dos
+    git push <remote> <branch>
+    ```
 
-- Git checkout -b release/x.x.x
+    Or:
 
-Merge the changes from the release branch back to main branch if any changes done in the release branch.
+    ```dos
+    git push origin {private branch name}
+    ```
 
-```
+### Create a release branch after development
 
+To create a release branch after development, follow these steps:
+
+1. After the development changes are pushed into the main branch, create a new release branch, and create the deployable packages from the release branch.
+
+    ```dos
+    - Git checkout -b release/x.x.x
+    ```
+
+2. Merge the changes from the release branch back to main branch if any changes were made in the release branch.
+
+    ```dos
+    - git checkout master git merge release/x.x.x
+    ```
+
+### Extension hotfix branch
+
+1. Create a hotfix branch for extension from the main branch. For more information, see [Create a release branch after development](#create-a-release-branch-after-development).
+2. Release the fix.
+3. Merge the changes back to the main branch.
+
+### Merge a new release branch to main and development branch
+
+After a new version of the samples released, if required, merge your development branch with the new branch. The repository contains only samples, so it's not required to get the updated changes from the branch.
+
+```dos
 - git checkout master git merge release/x.x.x
-
 ```
-
-**Extension hotfix branch:**
-
-Like release branch, create hotfix branch for extension from main branch and release the fix and later merge the changes back to the main branch.
-
-**Merge new release branch to main and development branch:**
-
-After a new version of the samples released, if required merge your development branch with the new branch. The repo contains only samples, so it&#39;s not required to always get the updated changes from the branch.
-
-```
-
-- git checkout master git merge release/x.x.x
-
-```
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
