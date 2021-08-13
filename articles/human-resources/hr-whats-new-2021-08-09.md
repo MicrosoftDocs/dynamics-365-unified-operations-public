@@ -50,7 +50,7 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |
-| 558385 | The default designee assignment is not selected when the **Auto-select designees** option is turned on for default designees. | Fixed an issue where multiple default designees are not automatically selected in eligible plans when **Auto-select designees** option is turned on in the **Human Resources shared parameters" page. |
+| 558385 | The default designee is not selected when the **Auto-select designees** option is turned on for default designees. | Fixed an issue where multiple default designees are not automatically selected in eligible plans when **Auto-select designees** option is turned on in the **Human Resources shared parameters** page. |
 | 589617 | Available to buy and Available to sell balances are empty when access is restriced to a single company. | This issue is now fixed. The Time off page will display the correct Available to buy and Available to Sell balances when the user is restricted to a single company. |
 
 ## In preview
