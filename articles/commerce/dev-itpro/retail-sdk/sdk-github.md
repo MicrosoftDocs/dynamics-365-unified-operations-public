@@ -46,7 +46,7 @@ You can download and use the samples and templates from [microsoft/Dynamics365Co
 
 | Folder | Project | Description |
 |--------|---------|-------------|
-| Channel Database (./src/ScaleUnitSample/ChannelDatabase) | ChannelDatabase.csproj(./src/ScaleUnitSample/ChannelDatabase/ChannelDatabase.csproj) | This project contains samples on how to create Commerce Runtime database extensions. |
+| Channel Database (./src/ScaleUnitSample/ChannelDatabase) | ChannelDatabase.csproj (./src/ScaleUnitSample/ChannelDatabase/ChannelDatabase.csproj) | This project contains samples on how to create Commerce Runtime database extensions. |
 | CommerceRuntime (./src/ScaleUnitSample/CommerceRuntime) | CommerceRuntime.csproj (./src/ScaleUnitSample/CommerceRuntime/CommerceRuntime.csproj) | Controller – Sample code for how to implement new RS APIs.<br>Entities, Messages, and RequestHandlers – Sample code for how to implement new CRT service. |
 | ScaleUnit (./src/ScaleUnitSample/ScaleUnit) | ScaleUnit.csproj (./src/ScaleUnitSample/ScaleUnit/ScaleUnit.csproj) | Sample project on how to generate the Cloud Scale Unit (CSU). |
 | ScaleUnit.Installer (./src/ScaleUnitSample/Installer) | ScaleUnit.csproj (./src/ScaleUnitSample/Installer/ScaleUnit.Installer.csproj) | Sample project on how to generate the CSU installer. |
@@ -59,7 +59,7 @@ The **readme.md** files in the **Commerce Runtime**, **ChannelDatabase** and **S
 
 ## Dynamics365Commerce.InStore repository
 
-The [Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore) repository contains the sample code for how to customize the POS, Hardware station, Commerce runtime (CRT), headless Commerce APIs, and the channel database.
+The [Dynamics365Commerce.InStore](https://github.com/microsoft/Dynamics365Commerce.InStore) repository contains the sample code for how to customize POS, Hardware station, Commerce runtime (CRT), headless Commerce APIs, and the channel database.
 
 The samples in the repository are organized by Dynamics 365 Commerce application release, each branch in the repository points to an application release of Dynamics 365 Commerce. Use the release branch that matches your go-live version. You don't have to clone this repository, instead, you can download and use the samples and template projects.
 
