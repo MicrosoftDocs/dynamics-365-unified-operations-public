@@ -36,7 +36,7 @@ This topic describes how to enable order lookup for guest checkouts in Microsoft
 
 The order lookup for guest checkouts feature allows customers who make purchases as guest users to be able to look up their orders. This order lookup capability is useful for customers who want perform actions such as checking the fulfillment status of products in an order, verifying the address that an order was shipped to, reordering a product, or confirming which store to pick up an order from. 
 
-Customers who make purchases as registered users can already see their order details when they are signed in, but this is not possible for customers who place orders using guest checkouts. When the order lookup for guest checkouts feature is enabled, customers who want to look up orders they placed as guests fill can out a form to provide the order confirmation ID and (optionally) the email address they specified at checkout.
+Customers who place orders as registered users can see their order details when they are signed in, but this is not possible for customers who place orders using guest checkout. When the order lookup for guest checkouts feature is enabled, customers who want to look up orders they placed as guests can enter the order confirmation ID and (optionally) the email address they specified at checkout into a form to search for their order.
 
 A link or button that takes the customer directly to the order details page for their order can also be included in any order-related transactional emails. This link or button will work for orders placed by both registered and guest users. 
 
@@ -46,11 +46,11 @@ To enable order lookup for guest checkouts, the following feature management swi
 
 | Feature management switch                           | Purpose                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Retail anonymous user search order details opting feature**   | This switch exposes the user interface under Commerce parameters that allows you to enable the order lookup API for unauthenticated users and configure how personal data is displayed. |
-| **Enable generation  of a stronger channel reference ID**        | This switch generates a more secure 12 character channel reference ID (order confirmation  ID) which allows it to be passed in the query string when looking up an  order. |
-| **Generate a  consistent channel reference ID format across channels** | This switch generates a secure channel reference ID for orders placed through e-commerce, point of sale and call center orders. To enable this switch, the Enable generation of a stronger channel reference ID switch must also be enabled. |
+| **Retail anonymous user search order details opting feature**   | Exposes the user interface under Commerce parameters that allows you to enable the order lookup API for unauthenticated users and configure how personal data is displayed. |
+| **Enable generation of a stronger channel reference ID**        | Generates a more secure 12 character channel reference ID (order confirmation ID) which allows it to be passed in the query string when looking up an order. |
+| **Generate a consistent channel reference ID format across channels** | Generates a secure channel reference ID for orders placed through e-commerce site, point of sale (POS), and call center orders. To enable this switch, the **Enable generation of a stronger channel reference ID** switch must also be enabled. |
 
-To enable order lookup for guest checkouts, after turning on the **Retail anonymous user search order details opting feature** switch you must also enable the API that supports unauthenticated order lookup in Commerce headquarters by going to the **Order search** FastTab at **Retail and Commerce \> Headquarters setup \> Parameters \> Customer orders** and setting **Enable unauthenticated order lookup** to **Yes**, as shown in the following illustration. 
+After turning on the **Retail anonymous user search order details opting feature**, you must also enable the API that supports unauthenticated order lookup in Commerce headquarters by going to the **Order search** FastTab at **Retail and Commerce \> Headquarters setup \> Parameters \> Customer orders** and setting **Enable unauthenticated order lookup** to **Yes**, as shown in the following illustration. 
 
 ![Enable unauthenticated order lookup property set to Yes in headquarters](./media/OrderLookup_enable.PNG)
 
