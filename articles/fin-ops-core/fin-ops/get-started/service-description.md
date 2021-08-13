@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Service description Finance and Operations apps
+# Service description for Finance and Operations apps
 [!include[banner](../includes/banner.md)]
 
 ## Overview
