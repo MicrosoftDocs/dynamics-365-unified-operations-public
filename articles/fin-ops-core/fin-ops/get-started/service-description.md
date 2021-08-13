@@ -203,7 +203,7 @@ The following table describes some typical scenarios and activities for the serv
 
 ## Service update strategy 
 
-In accordance with the [software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md), Finance and Operations follows the Microsoft [Modern Lifecycle Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), which covers products that are serviced and supported continuously. The following illustrates the process:
+In accordance with the [software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md), Finance and Operations apps follow the Microsoft [Modern Lifecycle Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), which covers products that are serviced and supported continuously. The following illustrates the process:
  
 ![One Version](media/FO-OneVersion.PNG)
 
@@ -273,16 +273,16 @@ Microsoft responds to and resolves incidents based on the severity levels set fo
 
 ## Business continuity with high availability and disaster recovery 
 
-Microsoft provides business continuity and disaster recovery for production instances of Finance and Operations if a Microsoft Azure region-wide outage occurs. See [Business continuity and disaster recovery](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md) for more details.
+Microsoft provides business continuity and disaster recovery for production instances of Finance and Operations apps if a Microsoft Azure region-wide outage occurs. See [Business continuity and disaster recovery](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md) for more details.
 
 - **High Availability**: HA functionality provides ways to prevent downtime caused by the failure of a single node within an Azure datacenter. Each service's cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. HA for databases is provided through [Azure SQL HA features](/azure/azure-sql/database/high-availability-sla).
 
 - **Disaster Recovery**: [Azure DR features](/azure/best-practices-availability-paired-regions) protect each service against outages broadly impacting an entire Azure datacenter and include the following:
-  - Azure SQL active-geo replication for primary database (business database), with a Recovery Point Objective (RPO) estimate of ≤ 5 seconds.
+  - Azure SQL active-geo replication for primary database (business database), with a Recovery Point Objective (RPO) estimate of less than or equal to 5 seconds.
   - Geo-redundant copies of Azure blob storage (containing document attachments) in other Azure regions.
   - Secondary region for the Azure SQL and Azure blob storage replications.
 
-The primary data stores are supported for replication. This means that components for each service, such Management Reporter and entity store, use transformed data from the primary database, which need to be generated after the recovery site has been setup and service started. Customer code artifacts and recovered data stores are used to re-deploy the site, with a Recovery Time Objective (RTO) of up to 10 hours. This will enable state replication of the compute nodes along with networking and other components to set up the secondary site using the recovered data stores. In the event DR is utilized to recover the customer's production instance, Microsoft and customer will perform the responsibilities in [Incident management](service-description.md#incident-management).
+The primary data stores are supported for replication. This means that components for each service, such as Management Reporter and entity store, use transformed data from the primary database, which need to be generated after the recovery site has been setup and service started. Customer code artifacts and recovered data stores are used to re-deploy the site, with a Recovery Time Objective (RTO) of up to 10 hours. This will enable state replication of the compute nodes along with networking and other components to set up the secondary site using the recovered data stores. In the event DR is utilized to recover the customer's production instance, Microsoft and customer will perform the responsibilities in [Incident management](service-description.md#incident-management).
 
 | Microsoft's responsibilities  | Customer's responsibilities |
 |-------------------------|-------------------------|
@@ -290,16 +290,16 @@ The primary data stores are supported for replication. This means that component
 | Microsoft enables Geo Redundancy of SQL and Azure Storage at the time of deployment of the primary production instance. | None|
 | Microsoft enables automatic backup on the Azure SQL databases. |None |
 | On outage, Microsoft determines if a failover needs to be executed for the customer and if there will be a data loss. Data loss can be up to 5 sec. For details, see [Azure SQL Database Geo-Restore](https://azure.microsoft.com/blog/azure-sql-database-geo-restore). <br>In the event of a data loss, Microsoft will send a request to the customer asking for its sign-off on a failover. | Customer may need to provide written sign-off to trigger the failover in the event of data loss.|
-| The applicable Service will be operated in limited mode on failover. Update maintenance cannot be triggered in failover mode. | Customer cannot request package deployments or other regular maintenance requests in failover mode. |
+| The applicable service will be operated in limited mode on failover. Update maintenance cannot be triggered in failover mode. | Customer cannot request package deployments or other regular maintenance requests in failover mode. |
 | Microsoft fails back to the production instance in the primary Azure region when the datacenter becomes operational. Normal operations are resumed. | Customer may need to sign-off on fail back to the production instance in the primary Azure region.|
 
-## Dynamics 365 Finance and Operations support offerings 
+## Finance and Operations support offerings 
 
-Technical Support is available in markets where Dynamics 365 Finance and Operations services are offered. [Support experiences](../../dev-itpro/lifecycle-services/lcs-support.md) are provided within Lifecycle Services or Finance and Operations. These include the following:
+Technical support is available in markets where Finance and Operations services are offered. [Support experiences](../../dev-itpro/lifecycle-services/lcs-support.md) are provided within Lifecycle Services or Finance and Operations. These include the following:
 
- - [Issue Search](../../dev-itpro/lifecycle-services/issue-search-lcs.md) in Lifecycle Services
- - [Integrated technical](../../dev-itpro/lifecycle-services/support-experience.md) support within Finance and Operations
- - LCS [Cloud Powered Support](../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md)
+ - [Issue search](../../dev-itpro/lifecycle-services/issue-search-lcs.md) in Lifecycle Services
+ - [Integrated technical](../../dev-itpro/lifecycle-services/support-experience.md) support within Finance and Operations apps
+ - LCS [cloud-powered support](../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md)
 
 Microsoft offers Finance and Operations customers three support plans: Premier, Professional Direct, and the support included in the subscription. The level of support differs per plan and highlights are provided in the following table.
 
@@ -307,34 +307,34 @@ Microsoft offers Finance and Operations customers three support plans: Premier, 
 |-----------------|-------------|-----------------|--------------|
 | Unlimited break/fix incident submission | Yes | Yes | Yes |
 | 24x7 access via LCS | Yes | Yes | Yes |
-| Incident response time | < 1 hour | < 1 hour | Next business day |
+| Incident response time | Less than 1 hour | Less than 1 hour | Next business day |
 | Advisory hours | Pools acquired per agreement | No | No |
-| Dedicated Support Account Manager | Yes | No | No |
-| Dedicated Support Engineer | Engaged under separate agreement | No | No |
+| Dedicated support account manager | Yes | No | No |
+| Dedicated support engineer | Engaged under separate agreement | No | No |
 
-For more details, refer to [Support Overview](/power-platform/admin/support-overview)
+For more details, refer to [Support overview](/power-platform/admin/support-overview)
 
 ### Process to engage support 
 
-In case of incidents with Finance and Supply Chain Management, customers submit support tickets to Microsoft through LCS. Microsoft Customer Support Services (CSS) handle incidents depending on the customer's support plan and severity of the incident as designated by CSS.
+In case of incidents with Finance and Operations apps, customers submit support tickets to Microsoft through LCS. Microsoft Customer Support Services (CSS) handle incidents depending on the customer's support plan and severity of the incident as designated by CSS.
 
-### Service Level Agreement 
+### Service level agreement 
 
-Microsoft is committed to an availability of 99.9% per month of the service. If Microsoft does not achieve and maintain the service level for the applicable Service described in the SLA, then the customer may be eligible for a credit towards a portion of its monthly service fees for the applicable Service. See the "Claims" section of the [SLA](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services) for details on how to initiate a service credit. 
+Microsoft is committed to an availability of 99.9% per month of the service. If Microsoft does not achieve and maintain the service level for the applicable service described in the SLA, then the customer may be eligible for a credit towards a portion of its monthly service fees for the applicable service. See the "Claims" section of the [SLA](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services) for details on how to initiate a service credit. 
 
 ## Important resources
 
-- [Trust Center](https://www.microsoft.com/trust-center): Information on where your Finance and Supply Chain Management data is stored, plus additional information on privacy, compliance, and security procedures.
+- [Trust Center](https://www.microsoft.com/trust-center): Information on where your Finance and Operations data is stored, plus additional information on privacy, compliance, and security procedures.
 
-- [Licensing terms and documentation](https://www.microsoftvolumelicensing.com/): Quickly access licensing terms, conditions, and supplemental information relevant to the use of products and services licensed through Microsoft Volume Licensing programs.
+- [Licensing terms and documentation](https://www.microsoftvolumelicensing.com/): Quickly access licensing terms, conditions, and supplemental information relevant to the use of products and services licensed through Microsoft volume licensing programs.
 
-- [Licensing terms](https://www.microsoft.com/licensing/product-licensing/): The licensing terms resources on this page define the terms and conditions for the software and online services products you purchase through Microsoft Commercial Licensing programs.
+- [Licensing terms](https://www.microsoft.com/licensing/product-licensing/): The licensing terms resources on this page define the terms and conditions for the software and online services products you purchase through Microsoft commercial licensing programs.
 
 - [Microsoft Lifecycle Policy](/lifecycle/): Provides consistent and predictable guidelines for the availability of support throughout the life of a product.
 
 - [Licensing guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365): Use this guide to improve your understanding of how to license Dynamics 365.
 
-- [Customer support](https://dynamics.microsoft.com/support/): Get industry-leading support for your Dynamics 365 applications.
+- [Customer support](https://dynamics.microsoft.com/support/): Get industry-leading support for your Dynamics 365 apps.
 
 - [Dynamics Lifecycle Services](https://lcs.dynamics.com/): Manage your application lifecycle and move towards predictable, repeatable, high quality implementations.
 
@@ -362,10 +362,10 @@ Any period of time when end users are unable to login or access to their active 
 The partner who is selected by the customer to customize, configure, implement, and manage its Finance and Operations solutions.
 
 ### Microsoft Dynamics Lifecycle Services (LCS) 
-The administrative portal for lifecycle management of Finance and Operations from trial to implementation to post-production management and support. For details, refer to [Lifecycle Services Resources](../../dev-itpro/lifecycle-services/lcs.md)
+The administrative portal for lifecycle management of Finance and Operations apps from trial to implementation to post-production management and support. For details, refer to [Lifecycle Services Resources](../../dev-itpro/lifecycle-services/lcs.md)
 
 ### Microsoft Customer Support Services (CSS) 
-Microsoft's global support team dedicated to providing quality service for Finance and Operations.
+Microsoft's global support team dedicated to providing quality service for Finance and Operations apps.
 
 ### Non-production instance 
 Any of the following instances of a service that are used by the customer for validating extensions and other development tasks:
@@ -374,28 +374,28 @@ Any of the following instances of a service that are used by the customer for va
 
 - **Sandbox Tier 2:** Standard Acceptance Testing instance 
 
-- **Sandbox Tiers 3-5:** Add-on sandboxes [Details for each Tier](../imp-lifecycle/environment-planning.md#selecting-the-correct-tier-2-or-higher-environment)
+- **Sandbox Tiers 3-5:** Add-on sandboxes [details for each Tier](../imp-lifecycle/environment-planning.md#selecting-the-correct-tier-2-or-higher-environment)
 
 ### Production instance 
-An environment or instance of Finance and Operations that is used by customer for managing its "live" daily transactions and business processes.
+An Finance and Operations environment that is used by customer for managing its "live" daily transactions and business processes.
 
 ### Sandbox environment 
-A non-production environment or instance of Finance and Operations that is used by the customer for demonstration, training, user acceptance testing, validation of extensions and other testing tasks.
+A non-production environment that is used by the customer for demonstration, training, user acceptance testing, validation of extensions and other testing tasks.
 
 ### Development environment
-A non-production sandbox environment that is used to develop extensions for Finance and Operations. Customers deploy this environment to their own Azure subscription from LCS. This environment can also be used for demonstration, training, or other testing tasks.    
+A non-production sandbox environment that is used to develop extensions. Customers deploy this environment to their own Azure subscription from LCS. This environment can also be used for demonstration, training, or other testing tasks.    
 
 ### Service 
-The core services included in Dynamics 365 for Finance and Operations.
+The core services included in Finance and Operations apps.
 
 ### Service Update
-Microsoft services Finance and Operations on consistent basis with Service Updates. Customers set their Service Update calendar based on their business needs. For more information, refer to [One Version Service Updates](../../dev-itpro/lifecycle-services/oneversion-overview.md)
+Microsoft services Finance and Operations environments on consistent basis with service updates. Customers set their service update calendar based on their business needs. For more information, refer to [One Version service updates](../../dev-itpro/lifecycle-services/oneversion-overview.md)
 
-### Service Level Agreement for Microsoft Online Services (SLA)
-The SLA applies to Microsoft's Online Services, including Finance and Operations. For more details, refer to [Service Level Agreements](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
+### Service level agreement for Microsoft online services (SLA)
+The SLA applies to Microsoft's online services. For more details, refer to [Service Level Agreements](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
 
 ### Incident 
 An issue that the customer encounters while using the Finance and Operations service and submits a ticket via LCS.
 
 ### User
-A single person consuming Finance and Operations environments, associated with a customer's tenant.
+A single person using Finance and Operations environments, associated with a customer's tenant.
