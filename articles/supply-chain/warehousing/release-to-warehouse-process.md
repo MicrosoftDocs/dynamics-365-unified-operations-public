@@ -120,7 +120,7 @@ To set up the batch job for releasing sales orders, follow these steps.
     - **Credit limit type** – Choose whether to perform credit limit checks during release to warehouse and which transaction information to include when the credit limit is checked.
 
 1. To control which orders should be processed, select the **Filter** button on the **Records to include** FastTab. A standard query dialog appears, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management.
-1. On the **Run in the background** FastTab, choose whether to run the job in batch mode and/or set up a recurrent schedule. The fields work just as they do for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
+1. On the **Run in the background** FastTab, choose whether to run the job in batch mode and/or set up a recurrent schedule. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
 1. Select **OK** to apply your settings and initiate the release to warehouse process.
 
 To set up the batch job for releasing transfer orders, follow the steps.
@@ -133,7 +133,7 @@ To set up the batch job for releasing transfer orders, follow the steps.
     - **Group releases by destination warehouse** – Specify whether the system should release all transfer orders at once or first group transfer order lines by destination warehouse and then release each group to the warehouse separately.
 
 1. To control which orders should be processed, select the **Filter** button on the **Records to include** FastTab. A standard query dialog appears, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management.
-1. On the **Run in the background** FastTab, choose whether to run the job in batch mode and/or set up a recurrent schedule. The fields work just as they do for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
+1. On the **Run in the background** FastTab, choose whether to run the job in batch mode and/or set up a recurrent schedule. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
 1. Select **OK** to apply your settings and initiate the release to warehouse process.
 
 
