@@ -58,7 +58,7 @@ Organizations can match their business growth by easily adding users and busines
 
 ## Operating model
 
-The operating model of Finance and Operations defines specific roles and responsibilities for the customer, implementation partner, and Microsoft throughout the lifecycle of the service. 
+The operating model of Finance and Operations apps defines specific roles and responsibilities for the customer, implementation partner, and Microsoft throughout the lifecycle of the service. 
 
 Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments within the Microsoft SaaS subscription. This includes allocating the required system infrastructure to run the service and proactive communication to customers about the service’s health. 
 
@@ -78,7 +78,7 @@ Microsoft configures customer production environments that are sized to handle t
 
 -	Proper allocation of resources of production environments, based on the customer’s profiling information in the [LCS subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) 
 -	Continually monitoring and diagnosing service availability of production environments 
--	Analyzing and troubleshooting system performance issues with Finance and Operations 
+-	Analyzing and troubleshooting system performance issues with Finance and Operations apps 
 
 To ensure that an implementation is configured for high performance, customers must:
 
@@ -225,7 +225,7 @@ For more information, see [Licensing terms and documentation](https://www.micros
 |-------------------------|-------------------------|-------------------------|
 | **Non-production**</br>Tier 1 sandbox | A non-production environment that customers deploy for development, demonstration, or training purposes. | A Tier 1 sandbox, also referred to as a cloud-hosted environment, is a customer-managed VM that is deployed to the customer's Azure subscription from LCS. Because it is a VM in the customer's  Azure subscription, the customer has full administrative access to the environment via Remote Desktop.|
 | **Non-production**</br>Tier 2 (or higher) sandbox | A non-production environment that customers deploy for user acceptance testing, integration testing, training, staging, or any other pre-production scenario. | Tier 2 and higher sandboxes are deployed to the Finance and Operations SaaS subscription. Access to Azrure SQL Server databases associated with the non-production environment is granted via [just-in-time access](../../dev-itpro/database/database-just-in-time-jit-access.md). Remote Desktop access is not available.|
-| **Production** | A production environment is deployed when the project is [ready for initial go-live](/imp-lifecycle/environment-planning.md#production-system-readiness). | Production environments are deployed to the Finance and Operations SaaS subscription. All access is through the Finance and Operations browser client, service endpoints, or through LCS.|
+| **Production** | A production environment is deployed when the project is [ready for initial go-live](/imp-lifecycle/environment-planning.md#production-system-readiness). | Production environments are deployed to the SaaS subscription. All access is through the browser, service endpoints, or through LCS.|
 
 ### Microsoft administrative access
 
@@ -295,7 +295,7 @@ The primary data stores are supported for replication. This means that component
 
 ## Finance and Operations support offerings 
 
-Technical support is available in markets where Finance and Operations services are offered. [Support experiences](../../dev-itpro/lifecycle-services/lcs-support.md) are provided within Lifecycle Services or Finance and Operations. These include the following:
+Technical support is available in markets where Finance and Operations services are offered. [Support experiences](../../dev-itpro/lifecycle-services/lcs-support.md) are provided within Lifecycle Services or Finance and Operations apps. These include the following:
 
  - [Issue search](../../dev-itpro/lifecycle-services/issue-search-lcs.md) in Lifecycle Services
  - [Integrated technical](../../dev-itpro/lifecycle-services/support-experience.md) support within Finance and Operations apps
