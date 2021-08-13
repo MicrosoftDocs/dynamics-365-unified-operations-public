@@ -1148,6 +1148,8 @@
                 href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
               - name: Troubleshoot dual-write issues in Finance and Operations apps
                 href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+              - name: Troubleshoot party and global address book problems
+                href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
               - name: Troubleshoot issues related to solution awareness
                 href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
               - name: Troubleshoot issues from upgrades of Finance and Operations apps

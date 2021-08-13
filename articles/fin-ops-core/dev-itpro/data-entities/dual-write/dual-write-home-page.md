@@ -107,6 +107,7 @@ These topics describe mapping between concepts in finance and operations apps an
 + [Troubleshoot issues during initial synchronization](dual-write-troubleshooting-initial-sync.md)
 + [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md)
 + [Troubleshoot dual-write issues in Finance and Operations apps](dual-write-troubleshooting-dual-write-module.md)
++ [Troubleshoot party and global address book problems](dual-write-troubleshooting-party-gab.md)
 + [Troubleshoot issues related to solution awareness](dual-write-troubleshooting-solution-awareness.md)
 + [Troubleshoot issues from upgrades of Finance and Operations apps](dual-write-troubleshooting-finops-upgrades.md)
 + [Verify dual-write configuration in Finance and Operations apps and Dataverse](dual-write-troubleshooting-verify-config.md)
