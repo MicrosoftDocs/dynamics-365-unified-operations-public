@@ -43,7 +43,7 @@ The following illustration shows an example of the form that is rendered by the 
 | ----------------- | --------- | ------------------------------------------------------------ |
 | Heading           | Text      | The heading that displays at the top of the form (for example, "Find your order"). |
 | Rich text         | Rich text | Optional explanatory text that appears below the heading.   |
-| Order status type | Enum      | Dropdown list value for selecting the type of information the form will request from the customer in addition to the order confirmation ID. The values currently supported are:<br/><br/><ul><li><b>Email</b> - Provides a field for customers to provide the email addresses used when they placed their order.</li><li><b>None</b> - No additional information besides order confirmation ID is requested in the form.</li></ul> |
+| Order status type | Enum      | Dropdown list value for selecting the type of information the form will request from the customer in addition to the order confirmation ID. The values currently supported are:<br/><br/><ul><li><b>Email</b> - Provides a field for customers to enter the email address used when they placed their order.</li><li><b>None</b> - No additional information besides order confirmation ID is requested in the form.</li></ul> |
 
 ## Add an order lookup module to a page
 
