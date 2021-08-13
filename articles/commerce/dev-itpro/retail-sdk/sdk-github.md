@@ -21,7 +21,7 @@ This topic explains to how to download Retail software development kit (SDK) sam
 
 This topic applies to Retail SDK version 10.0.16 or later. For more information about how to download earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md).
 
-The following sample repositories contains code samples, templates, and tools that are required to extend or customize existing Commerce functionality. Samples are published to repositories in GitHub based on the Commerce extension components. You don't have to close these repositories, instead, you can download and use the samples and template projects.
+The following sample repositories contain code samples, templates, and tools that are required to extend or customize existing Commerce functionality. Samples are published to repositories in GitHub based on the Commerce extension components. You don't have to close these repositories, instead, you can download and use the samples and template projects.
 
 ## Dynamics365Commerce.ScaleUnit repository
 
@@ -83,7 +83,7 @@ You can download and use the samples and templates from [microsoft/Dynamics365Co
 
 More samples for CSU – self hosted, Commerce Runtime, and headless Commerce APIs are published in the [Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit) repository.
 
-The **readme.md** files inside the project folder contains more details on how to run these samples.
+The **readme.md** files inside the project folder contain more details on how to run these samples.
 
 ## Dynamics365Commerce.Solutions repository
 
