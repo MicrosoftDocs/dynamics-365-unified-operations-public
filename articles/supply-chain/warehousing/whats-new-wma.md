@@ -21,18 +21,18 @@ This topic lists new features, fixes, improvements, and known issues for each re
 
 ## Version 2.0.9.0
 
-This version fixes an issue where paging up from the top of a list could cause the app to crash.
+This version fixes an issue where the app could stop responding if users page up from the top of a list.
 
 ## Version 2.0.8.0
 
 This version introduces the following new features, fixes, and improvements:
 
-- Added support for the [step instructions feature](mobile-app-titles-instructions.md) introduced in Supply Chain Management version 10.0.21.
-- Added hint animation to show users they can close overlays by swiping down.
-- Added support for function keys on action lists and menus. Hold down any F-key for three seconds to get a list of available commands.
-- Fixed an issue that resulted in showing the error "Cannot find a suitable view for the specified size" on some devices.
-- Fixed an issue where full-screen mode didn't always work when using the on-screen keyboard.
-- Fixed an issue with page swiping not working on Windows devices.
+- Added support for the [step instructions feature](mobile-app-titles-instructions.md) that was introduced in Supply Chain Management version 10.0.21.
+- Added hint animation to show users that they can close overlays by swiping down.
+- Added support for function keys on action lists and menus. Users can hold down any function key for three seconds to get a list of available commands.
+- Fixed an issue that caused the following error message to be shown on some devices: "Cannot find a suitable view for the specified size."
+- Fixed an issue where full-screen mode didn't always work when the on-screen keyboard is used.
+- Fixed an issue where page swiping didn't work on Windows devices.
 - Fixed various issues that caused the system to stop responding.
 
 ## Version 2.0.7.0
