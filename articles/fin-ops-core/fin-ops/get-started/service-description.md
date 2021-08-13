@@ -224,7 +224,7 @@ For more information, see [Licensing terms and documentation](https://www.micros
 | Environment type | Purpose  | Level of customer access  |
 |-------------------------|-------------------------|-------------------------|
 | **Non-production**</br>Tier 1 sandbox | A non-production environment that customers deploy for development, demonstration, or training purposes. | A Tier 1 sandbox, also referred to as a cloud-hosted environment, is a customer-managed VM that is deployed to the customer's Azure subscription from LCS. Because it is a VM in the customer's  Azure subscription, the customer has full administrative access to the environment via Remote Desktop.|
-| **Non-production**</br>Tier 2 (or higher) sandbox | A non-production environment that customers deploy for user acceptance testing, integration testing, training, staging, or any other pre-production scenario. | Tier 2 and higher sandboxes are deployed to the Finance and Operations SaaS subscription. Access to Azrure SQL Server databases associated with the non-production environment is granted via [just-in-time access](../../dev-itpro/database/database-just-in-time-jit-access.md). Remote Desktop access is not available.|
+| **Non-production**</br>Tier 2 (or higher) sandbox | A non-production environment that customers deploy for user acceptance testing, integration testing, training, staging, or any other pre-production scenario. | Tier 2 and higher sandboxes are deployed to the Finance and Operations SaaS subscription. Access to Azure SQL Server databases associated with the non-production environment is granted via [just-in-time access](../../dev-itpro/database/database-just-in-time-jit-access.md). Remote Desktop access is not available.|
 | **Production** | A production environment is deployed when the project is [ready for initial go-live](/imp-lifecycle/environment-planning.md#production-system-readiness). | Production environments are deployed to the SaaS subscription. All access is through the browser, service endpoints, or through LCS.|
 
 ### Microsoft administrative access
@@ -246,7 +246,7 @@ Microsoft has invested in an extensive toolset to monitor and diagnose customers
 |-------------------------|-------------------------|
 |<ul><li>Availability monitoring of the service. <br><li>Continuous monitoring and alerts through health metrics and watchdogs for critical components such as AOS, Batch, DIXF, Commerce, and Management Reporter. </br><li>Monitoring for performance degradation caused by infrastructure services (AAD, Azure SQL, etc.). </br><li>In the event Microsoft determines that a single process or batch job is causing aberrations, these processes will be thwarted after communication with the customer.|<ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues. </br><li>Application errors need to be diagnosed using the monitoring tools. Diagnose user reported performance aberrations using these tools.</br><li>Inform Microsoft in the event that there is expected load on the system beyond projected peak usage.</br><li>In the event the applicable service is unavailable in the production instance, the customer can report a [production outage](../../dev-itpro/lifecycle-services/report-production-outage.md) using LCS.|
 
-Submitting support requests online, via LCS allows Microsoft to deliver fast and deep technical expertise in the most effective and efficient manner possible. A phone option is available, but should only be used if online is not avaialble. For more details refer to [Phone support options](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support)
+Submitting support requests online, via LCS allows Microsoft to deliver fast and deep technical expertise in the most effective and efficient manner possible. A phone option is available, but should only be used if online is not available. For more details refer to [Phone support options](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support)
  
 ## Incident management 
 
@@ -268,7 +268,7 @@ Microsoft responds to and resolves incidents based on the severity levels set fo
 |-------------------------|-------------------------|-------------------------|
 | Service is unavailable | Sev-1 | Sev-2 |
 | Service is usable only through a workaround or critical subset feature is malfunctioning | Sev-2 | Sev-3 |
-| Degradation of performance, or non critical subset feature is malfunctioning | Sev-3 | Sev-4 |
+| Degradation of performance, or non-critical subset feature is malfunctioning | Sev-3 | Sev-4 |
 | Incidents requiring action to avoid potential impact or service disruption | Sev-3 | Sev-4 |
 
 ## Business continuity with high availability and disaster recovery 
