@@ -5,7 +5,7 @@
 title: Dynamics 365 Human Resources infrastructure merge FAQ
 description: This topic answers frequently asked questions about the infrastructure merge for Microsoft Dynamics 365 Human Resources and Finance and Operations apps.
 author: rachel-profitt
-ms.date: 07/14/2021
+ms.date: 08/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -91,9 +91,9 @@ For more information about the new features for Dynamics 365 Human Resources, se
 
 ### My organization has not yet gone live on Dynamics 365 Human Resources. Should we go live with the Human Resources module in the Finance and Operations apps or with the Dynamics 365 Human Resources app on the legacy infrastructure?
 
-For organizations determining on which infrastructure to go live for Human Resources functionality in Dynamics 365 the primary consideration is to determine what HR functionality is needed and when that functionality will be available on the new infrastructure. If the organization needs only the core functionality for personnel management, this exists today in the Human Resources module of the Finance and Operations apps on the new infrastructure. Feature parity in the Human Resources module of the Finance and Operations apps for all core Dynamics 365 Human Resources application functionality is expected with the 10.0.25 release. This release is scheduled to be generally available in March 2022. Integration features such as the Teams app and Dataverse entity integrations will follow soon after in a subsequent release.
+The primary consideration is what HR functionality is needed and when that functionality will be available on the new infrastructure. If the organization only needs the core functionality for personnel management, this is available today in the Human Resources module of the Finance and Operations apps on the new infrastructure. Feature parity in the Human Resources module of the Finance and Operations apps for all of the Dynamics 365 Human Resources application functionality is expected with the 10.0.25 release. This release is scheduled to be generally available in March 2022. Integration features such as the Teams app and Dataverse entity integrations will soon follow in subsequent releases.
 
-If the functionality needed by the organization will be available on the new infrastructure within the timeframe in which the organization will go live, then it may be simpler to go live on the Human Resources module in the Finance and Operations apps. This route results in an easier migration path because it will then be a standard application upgrade to the Dynamics 365 Human Resources application, as the customer is already on the new infrastructure. If the organization decides to go live on the Dynamics 365 Human Resources application on the legacy infrastructure, then an environment migration will be needed to move to the new infrastructure. This can be avoided by performing the go live directly on the new infrastructure.
+If the functionality needed by the organization will be available on the new infrastructure within the timeframe in which the organization will go live, it may be simpler to go live on the Human Resources module in the Finance and Operations apps. This will result in an easier migration as it will be a standard application upgrade to the Dynamics 365 Human Resources application as the customer is already on the new infrastructure. If the organization decides to go live on the Dynamics 365 Human Resources application on the legacy infrastructure, then an environment migration will be needed to move to the new infrastructure. This can be avoided by performing the go live directly on the new infrastructure.
 
 ### I am using new capabilities that are available only in Dynamics 365 Human Resources (such as **Leave and absence** and **Benefits management**). Will these capabilities now be available in the Human Resources module on the Finance and Operations infrastructure too?
 
@@ -109,7 +109,7 @@ The migration experience for each independent software vendor (ISV) solution wil
 
 ### My organization uses LinkedIn Talent Hub integration with Dynamics 365 Human Resources. Will this integration continue to work after the infrastructure change is completed?
 
-No, the LinkedIn Talent Hub integration will no longer operate continue to operate after the migration to the new infrastructure. The service for LinkedIn Talent Hub integration will be broken by the infrastructure migration, and will be retired with the legacy Dynamics 365 Human Resources infrastructure.
+No, the LinkedIn Talent Hub integration will no longer operate after the migration to the new infrastructure. The service for LinkedIn Talent Hub integration will be retired with the legacy Dynamics 365 Human Resources infrastructure.
 
 ### My organization uses the Human Resources app for Teams. Will the app continue to work after the infrastructure change is completed?
 
@@ -137,13 +137,13 @@ It depends on the integration endpoint. For more information about the integrati
 
 If the Dynamics 365 Human Resources and Finance and Operations environments that will be joined in the environment on the new infrastructure are connected to the same Dataverse environment, the two apps will continue to be connected to the same Dataverse environment after the migration. Therefore, no migration is required for any Dataverse extensions.
 
-However, if the Dynamics 365 Human Resources and Finance and Operations environments are currently connected to separate Dataverse environments, the two Dataverse environments will have to be combined so that they are connected to a single environment on the new infrastructure. For this Dataverse migration, the Dataverse tables that are standard to the Human Resources solutions can be connected to and resynchronized with the new Dataverse environment. However, any extensions to the Dataverse environment won't be migrated automatically but must be redeployed in the new environment. We recommend that you use managed solutions to manage your Dataverse extensions. For more information, see [Introduction to solutions](https://docs.microsoft.com/powerapps/developer/data-platform/introduction-solutions).
+However, if the Dynamics 365 Human Resources and Finance and Operations environments are currently connected to separate Dataverse environments, the two Dataverse environments will have to be combined so that they are connected to a single environment on the new infrastructure. For this Dataverse migration, the Dataverse tables that are standard to the Human Resources solutions can be connected to and resynchronized with the new Dataverse environment. However, any extensions to the Dataverse environment won't be migrated automatically but must be redeployed in the new environment. We recommend that you use managed solutions to manage your Dataverse extensions. For more information, see [Introduction to solutions](/powerapps/developer/data-platform/introduction-solutions).
 
 ### We have configured Microsoft Power Automate flows and/or Microsoft Power Apps to work with Dynamics 365 Human Resources. Will these Microsoft Power Platform components be migrated and work automatically after the infrastructure change is completed?
 
 Power Apps, Power Automate flows, and other Microsoft Power Platform customizations are similar to Dataverse extensions. Whether they work automatically after the migration to the new infrastructure depends on whether the Human Resources app and the Finance and Operations apps are connected to the same Power Apps environment before the migration.
 
-If the apps are currently connected to the same Power Apps environment, they will continue to be connected to that Power Apps environment after the migration to the new infrastructure. In this case, Power Apps, Power Automate flows, and other Microsoft Power Platform customizations will continue to work without any additional configuration. We recommend that you use managed solutions to manage your application extensions on the Dataverse. For more information, see [Introduction to solutions](https://docs.microsoft.com/powerapps/developer/data-platform/introduction-solutions).
+If the apps are currently connected to the same Power Apps environment, they will continue to be connected to that Power Apps environment after the migration to the new infrastructure. In this case, Power Apps, Power Automate flows, and other Microsoft Power Platform customizations will continue to work without any additional configuration. We recommend that you use managed solutions to manage your application extensions on the Dataverse. For more information, see [Introduction to solutions](/powerapps/developer/data-platform/introduction-solutions).
 
 However, if the Human Resources app and the Finance and Operations apps are connected to separate Power Apps environments, they will have to be combined as part of the migration. This task will require that any Power Apps and other customizations be redeployed in the new environment.
 
