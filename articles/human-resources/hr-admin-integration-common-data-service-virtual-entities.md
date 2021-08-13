@@ -146,7 +146,7 @@ The next step is to configure the virtual table data source in the Power Apps en
      >Be sure to include the "**/**" character at the end of the URL to avoid receiving an error.
 
      >[!NOTE]
-     >The Target URL determines the Human Resources environment to which the virtual tables will point for data. If you create a sandbox environment by creating a copy of your production environment, you will need to update this value to the namespace URL of your new sandbox environment. This will ensure the virtual tables are connected to the sandbox environment data rather than continuing to point to the production environment.
+     >The Target URL determines the Human Resources environment that virtual tables will point to for data. If you create a sandbox environment by creating a copy of your production environment, update this value to the namespace URL of your new sandbox environment. This ensures the virtual tables are connected to the sandbox environment data rather than continuing to point to the production environment.
 
    - **Tenant ID**: The Azure Active Directory (Azure AD) tenant ID.
 
