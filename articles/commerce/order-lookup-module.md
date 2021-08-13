@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.22
 
 This topic covers the order lookup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
-how to configure it to support order lookups for orders that were submitted as guest checkouts.
-
 The order lookup module provides a form for looking up orders placed on an e-commerce site and is used as part of the [Enable order lookup for guest checkouts](order-lookup.md) feature. The order lookup module can be used to look up orders that were submitted through an e-commerce site, retail point of sale (POS), or call center. The form can retrieve orders that were submitted using guest checkout as well as orders submitted by registered users.
 
 The following illustration shows an example of the form that is rendered by the order lookup module. When customers fill out the form and select **Find your order**, they are then redirected to the order details page. 
@@ -49,11 +47,11 @@ The following illustration shows an example of the form that is rendered by the 
 
 ## Add an order lookup module to a page
 
-The order lookup module can be added within the body of any page of your e-commerce site. If you want to use the order lookup module to enable guest checkout order lookup, ensure that you're adding it to a page that does not require the user to be signed in. A page's **Requires sign in?** setting can be found in Commerce site builder tree view by selecting the **Default page (Required)** node and looking at the bottom of the right pane. 
+The order lookup module can be added within the body of any page of your e-commerce site. If you want to use the order lookup module to enable guest checkout order lookup, ensure that you're adding it to a page that does not require the user to be signed in. A page's **Requires sign in?** setting can be found in Commerce site builder tree view by selecting the **Default page (Required)** slot and looking at the bottom of the right pane. 
 
 ## Additional resources
 
-[Enable order lookup for guest checkouts](order-lookup.md)
+[Enable order lookup for guest checkouts](order-lookup-guest.md)
 
 [Module library overview](starter-kit-overview.md)
 
