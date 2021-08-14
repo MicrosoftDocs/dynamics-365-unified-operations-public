@@ -94,6 +94,8 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.21 (October 2021)
+            href: get-started/whats-new-commerce-10-0-21.md
           - name: Commerce 10.0.20 (August 2021)
             href: get-started/whats-new-commerce-10-0-20.md
           - name: Commerce 10.0.19 (June 2021)
@@ -516,7 +518,7 @@
             href: tasks/configure-credit-card-processing.md
           - name: Skip "change due" dialog box in POS
             href: dev-itpro/skip-change-due.md 
-          - name: Adyen payment connector
+          - name: Dynamics 365 Payment Connector for Adyen
             items:
             - name: Dynamics 365 Payment Connector for Adyen overview
               href: dev-itpro/adyen-connector.md
@@ -1190,6 +1192,10 @@
         items:
         - name: Generate online channel reports
           href: generate-reports.md
+      - name: Targeting
+        items:
+        - name: Device, market, and geolocation targeting
+          href: targeting-overview.md
       - name: Experimentation
         items:
         - name: Experimentation in Dynamics 365 Commerce
@@ -1262,6 +1268,26 @@
           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
         - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
           href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
+        - name: Download ER configurations to Commerce
+          items: 
+          - name: Download configurations from RCS
+            href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+          - name: Import configurations from RCS
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+        - name: Global repository (GR)
+          items: 
+          - name: Import configurations from GR
+            href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+          - name: Import updated versions of ER configurations
+            href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+          - name: Enhanced filtering to find configurations in GR
+            href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+          - name: Upload configurations to GR
+            href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+          - name: Share configurations in GR  
+            href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+          - name: Discontinue configurations in the RCS Global repository
+            href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria
@@ -1309,6 +1335,12 @@
         - name: Cash register functionality
           href: localizations/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
+          href: localizations/emea-fra-fi-deployment.md
+        - name: Fiscal archive and data integrity verification
+          href: localizations/emea-fra-fiscal-archive.md
+        - name: Migrating from legacy functionality for France
+          href: localizations/emea-fra-fi-migration.md
+        - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-fra-deployment.md
       - name: Germany
         items:
@@ -1343,7 +1375,13 @@
       - name: Russia
         items:
         - name: Commerce localization for Russia
-          href: localizations/rus-commerce-localization.md   
+          href: localizations/rus-commerce-localization.md
+        - name: Simplified customer address format in Commerce POS for Russia
+          href: localizations/rus-simplified-address.md
+        - name: Set up Commerce localization for Russia
+          href: localizations/rus-commerce-setup.md
+        - name: Prepayments in Commerce for Russia
+          href: localizations/rus-commerce-prepayments.md          
       - name: Sweden
         items:
         - name: Cash register functionality
@@ -1850,30 +1888,6 @@
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
           - name: Import configurations (LBD)
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
-        - name: Regulatory service (RCS)
-          items:
-          - name: Globalization features in RCS
-            href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-          - name: Download ER configurations to Commerce
-            items: 
-            - name: Download configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
-            - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
-          - name: Global repository (GR)
-            items: 
-            - name: Import configurations from GR
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
-            - name: Import updated versions of ER configurations
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
-            - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
-            - name: Upload configurations to GR
-              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-            - name: Share configurations in GR  
-              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
-            - name: Discontinue configurations in the RCS Global repository
-              href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
@@ -2102,7 +2116,7 @@
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
       - name: Open entity data in Excel and update it using the Excel add-in
         href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
-      - name: Create Open in Excel experiences
+      - name: Open in Excel experiences FAQ
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
       - name: Add templates to the Open lines in Excel menu
         href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
@@ -2350,6 +2364,8 @@
             href: e-commerce-extensibility/globalize-modules.md
           - name: Set up Azure Key Vault for secure key management
             href: e-commerce-extensibility/set-up-key-vault.md
+          - name: Create a request pipeline plug-in hook
+            href: e-commerce-extensibility/request-pipeline-hook.md
         - name: Develop data actions
           items:
           - name: Data actions overview
@@ -2412,6 +2428,12 @@
           items:
           - name: Configure and enable connectors
             href: e-commerce-extensibility/connectors.md
+        - name: Performance
+          items:
+          - name: Configure page caching
+            href: e-commerce-extensibility/page-caching.md
+          - name: Data action instance cache
+            href: e-commerce-extensibility/instance-cache.md
         - name: Telemetry and analytics
           items: 
           - name: Telemetry logger

@@ -4,7 +4,7 @@
 title: Commerce localization for Russia
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia.
 author: akviklis@microsoft.com
-ms.date: 07/06/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -79,6 +79,7 @@ Commerce functionality for Russia includes a sample integration of the point of 
 | Processing of loyalty point redemptions as price discounts in retail transactions, along with related fiscal printer functionality |  | X |  |
 | Payment integration |  | X |  |
 | E-commerce capabilities for Russia |  | X |  |
+| Cash collection |  | X |  |
 | Gift card policies |  |  | X |
 | Pricing enhancements |  |  | X |
 | Labeling enhancements |  |  | X |
@@ -95,14 +96,25 @@ Commerce functionality for Russia consists of the following:
 
 To learn about POS features that are available to customers in all countries or regions, see the [Commerce home page](../index.md).
 
+### Eastern Europe-specific POS features
+
+
+The following Eastern Europe–specific POS features are enabled after the Commerce localization for Russia has been set up:
+
+- Customer cash payments according to the retail store cash management requirements.
+- Cash payments that use petty cash journals in Commerce headquarters.
+- Retail transactions that are aggregated according to specific criteria or posted separately.
+
+
+For more information, see [Petty cash management for Commerce for Eastern Europe](emea-eeu-petty-cash-for-retail.md).
+
 ### Russia-specific POS features
 
-The following Russia-specific POS features are enabled after the Commerce localization for Russia has been set up and deployed:
+The following Russia-specific POS features are enabled after the Commerce localization for Russia has been set up:
 
 - A sample integration of the POS with a fiscal printer.
 - Customer account deposit and customer order deposit prepayments.
 - Support of customer orders in fiscal printer integration.
-- Cash payments using petty cash journals in Commerce headquarters.
 - Prepayments and posting of VAT for prepayments in Commerce headquarters.
 - Prepayment cancellation charges.
 - Payment integration.
@@ -120,5 +132,7 @@ The following Russia-specific POS features are enabled after the Commerce locali
 [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck)
 
 [ATOL documentation](http://integration.atol.ru/)
+
+[Petty cash management for Commerce for Eastern Europe](emea-eeu-petty-cash-for-retail.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

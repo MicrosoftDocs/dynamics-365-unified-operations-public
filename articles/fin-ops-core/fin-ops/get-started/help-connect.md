@@ -4,7 +4,7 @@
 title: Configure the Help experience for Finance and Operations apps
 description: This topic provides information about the components of the Help system for some Microsoft Dynamics 365 apps.
 author: margoc
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -59,7 +59,7 @@ To configure task guides for a solution, follow these steps on the **System para
 > [!IMPORTANT]
 > The first time that you open the **Help** tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the **System Parameters** page.
 >
-> [![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png "Connect to LCS."](./media/connect-to-lcs-crop.png)
+> [![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png "Connect to LCS.")](./media/connect-to-lcs-crop.png)
 
 1. Select the Lifecycle Services project to connect to.
 2. Select the BPM libraries (within the selected project) to retrieve task recordings from.

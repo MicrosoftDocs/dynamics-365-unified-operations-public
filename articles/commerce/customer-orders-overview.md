@@ -4,7 +4,7 @@
 title: Customer orders in point of sale (POS)
 description: This topic provides information about customer orders in point of sale (POS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
-ms.date: 07/28/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -149,7 +149,23 @@ In version 10.0.17 and later, users can edit eligible orders through the POS app
 5. Complete the editing process by selecting a payment operation.
 6. To exit the editing process without saving any changes, you can use the **Void transaction** operation.
 
+#### Pricing impact when orders are edited
 
+When orders are placed in POS or on a Commerce e-commerce site, customers commit to an amount. This amount includes a price, and it might also include a discount. A customer who places an order and then contacts the call center later to change that order (for example, to add another item) will have specific expectations about the application of discounts. Even if the promotions on the existing order lines have expired, the customer will expect the discounts that were originally applied to those lines to remain in effect. However, if no discount was in effect when the order was originally placed, but a discount has gone into effect since then, the customer will expect the new discount to be applied to the changed order. Otherwise, the customer might just cancel the existing order and then create a new order where the new discount is applied. As this scenario shows, prices and discounts that customers have committed to must be preserved. At the same time, POS and call center users must have the flexibility to recalculate prices and discounts for sales order lines as required.
+
+When orders are recalled and edited in POS, the prices and discounts of the existing order lines are considered "locked." In other words, they don't change, even if some order lines are canceled or changed, or new order lines are added. To change the prices and discounts of existing sales lines, the POS user must select **Recalculate**. The price lock is then removed from the existing order lines. However, before the Commerce version 10.0.21 release, this capability wasn't available in the call center. Instead, any changes to order lines caused prices and discounts to be recalculated.
+
+In the Commerce version 10.0.21 release, a new feature that is named **Prevent unintentional price calculation for commerce orders** is available in the **Feature management** workspace. This feature is turned on by default. When it's turned on, a new **Price locked** property is available for all e-commerce orders. After order capture is completed for orders that are placed from any channel, this property is automatically enabled (that is, the checkbox is selected) for all the order lines. The Commerce pricing engine then excludes those order lines from all price and discount calculations. Therefore, if the order is edited, the order lines will be excluded from the pricing and discount calculation by default. However, call center users can disable the property (that is, clear the checkbox) for any order line and then select **Recalculate** to include the existing order lines in the pricing calculations.
+
+Even when they are applying a manual discount to an existing sales line, call center users must disable the **Price locked** property of the sales line before they apply the manual discount.
+
+Call center users can also disable the **Price locked** property for order lines in bulk by selecting **Remove price lock** in the **Calculate** group on the **Sell** tab on the Action Pane of the **Sales order** page. In this case, the price lock is removed from all order lines except lines that are non-editable (in other words, lines that have a status of **Partially invoiced** or **Invoiced**). Then, after the changes to the order are completed and have been submitted, the price lock is reapplied to all the order lines.
+
+> [!IMPORTANT]
+> When the **Prevent unintentional price calculation for commerce orders** feature is turned on, the setup of trade agreement evaluation will be ignored in the pricing workflows. In other words, the trade agreement evaluation dialog boxes won't show the **Price related** section. This behavior occurs because both the trade agreement evaluation setup and the price lock feature have a similar purpose: to prevent unintentional price changes. However, the user experience for trade agreement evaluation doesn't scale well for large orders where users must select one or more order lines for repricing.
+
+> [!NOTE]
+> The **Price locked** property can be disabled for one or more selected lines only when the **Call center** module is used. The behavior of POS remains unchanged. In other words, POS user can't unlock prices for selected order lines. However, they can select **Recalculate** to remove the price lock from all existing order lines.
 
 ### Cancel a customer order
 

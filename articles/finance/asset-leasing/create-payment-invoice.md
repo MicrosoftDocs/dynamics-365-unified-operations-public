@@ -30,6 +30,8 @@ ms.dyn365.ops.version: 10.0.14
 # Create payment invoices
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 You can create monthly invoices for individual leases, or you can use a batch process to create them for multiple leases. The following procedure shows how to create an individual lease payment entry when the **Pay to Vendor** parameter on the **Lease book setup** page is turned on.
 
@@ -44,6 +46,8 @@ You can create monthly invoices for individual leases, or you can use a batch pr
 5. Select the correct journal, and then select the invoice that must be paid.
 
     For this example, the **Pay to Vendor** parameter on the lease book is turned on. Therefore, the invoice will be in the invoice journal. The **Overview** section shows a summary of the journal entry, and the **Lines** section shows details of the actual journal lines.
+    
+   The system locks certain financial fields from being edited to prevent any variances between the transactions and the schedules. Some fields that are locked include: **Account**, **Amounts**, **Financial dimensions**, **Currency**, and **Transaction type**. Additionally, you won't be able to add or delete journal entry lines in any Asset leasing journal entries, as this might cause variances between the schedules and the transactions.
 
     > [!NOTE]
     > If the **Pay to Vendor** parameter is turned off, payment journal entries will be listed on the **Asset leasing** page for the lease book, and the system will create an asset leasing entry instead of an invoice. The lease payment entry will be posted to the journal name that is specified in the **Monthly lease journal** field.

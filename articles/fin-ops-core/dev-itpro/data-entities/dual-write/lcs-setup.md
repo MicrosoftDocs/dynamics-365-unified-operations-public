@@ -1,8 +1,8 @@
 ---
 title: Dual-write setup from Lifecycle Services
 description: This topic explains how to set up a dual-write connection from Microsoft Dynamics Lifecycle Services (LCS).
-author: RamaKrishnamoorthy
-ms.date: 05/11/2021
+author: laneswenka
+ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
@@ -61,5 +61,18 @@ To set up dual-write for an existing Dataverse environment, you must create a Mi
 
 > [!NOTE]
 > You can't unlink environments by using LCS. To unlink an environment, open the **Data integration** workspace in the Finance and Operations environment, and then select **Unlink**.
+
+## Linking mismatch
+
+It is possible that your LCS environment is linked to one Dataverse instance, while your dual-write environment is linked to another Dataverse instance. This linking mismatch can cause unexpected behavior, and it could end up sending data to the wrong environment. The recommended environment to use for dual-write is the one that is created as part of Power Platform integration, and long-term, this will be the only way to establish a link between environments.
+
+If your environment has a linking mismatch, LCS displays a warning on your environment details page similar to "Microsoft has detected that your environment is linked via Dual-write to a different destination than specified in Power Platform Integration, which is not recommended":
+
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integration link mismatched.":::
+
+If you encounter this error there are two options, based on your needs:
+
++ [Unlink and relink dual-write environments (Reset or change linking)](relink-environments.md#scenario-reset-or-change-linking) as specified on your LCS environment details page. This is the ideal option, because you can run it without Microsoft support.  
++ If want to keep your link in dual-write, you can ask for help from Microsoft Support to change the Power Platform integration to use your existing Dataverse environment as documented in the previous section.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
