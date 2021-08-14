@@ -49,7 +49,7 @@ The balancing dimension on the **Ledger ** setup page s used to enable interunit
 
   - This feature permits only one financial dimension to be selected as the balancing dimension.
 
-  - Don’tt select the dimension yet in the **Ledger setup** page yet
+  - Don’t select the dimension yet in the **Ledger setup** page yet
 
   - Be sure that your balance sheet is already balanced for the selected financial dimension
 
@@ -69,7 +69,7 @@ The balancing dimension on the **Financial dimensions** page is typically used b
 
 The feature is typically used within the public sector customer base because it requires the use of posting definitions to automatically balance each transaction.  **This feature *doesn’t* automatically balance the accounting entries using the interunit debit and interunit credit defined accounts in the Accounts for automatic transactions.  If the accounting entry isn’t balanced at the dimension level after applying the posting definitions, the transaction will not post, even if the interunit debit and credit accounts are defined. They’re never used by this feature.  
 
-We often see customers defining the balancing dimension at both the ledger setup and at the financial dimension setup.  If this is done, the system ultimately uses the inancial dimensions functionality. The setup for the balancing dimensions at the financial dimension level takes precedence during posting. Posting will fail if the posting definition doesn’t create a balanced accounting entry at the financial dimension level. 
+We often see customers defining the balancing dimension at both the ledger setup and at the financial dimension setup.  If this is done, the system ultimately uses the financial dimensions functionality. The setup for the balancing dimensions at the financial dimension level takes precedence during posting. Posting will fail if the posting definition doesn’t create a balanced accounting entry at the financial dimension level. 
 Complete the following to enable the feature:
 
 - Determine which financial dimensions will be the balancing dimensions. 
