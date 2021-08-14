@@ -47,17 +47,17 @@ The balancing dimension on the **Ledger ** setup page s used to enable interunit
 
 - Determine which financial dimension will be the balancing dimension
 
-- This feature permits only one financial dimension to be selected as the balancing dimension.
+  - This feature permits only one financial dimension to be selected as the balancing dimension.
 
-- Don’tt select the dimension yet in the **Ledger setup** page yet
+  - Don’tt select the dimension yet in the **Ledger setup** page yet
 
-- Be sure that your balance sheet is already balanced for the selected financial dimension
+  - Be sure that your balance sheet is already balanced for the selected financial dimension
 
 - Update the account structure for the balancing financial dimension
 
-- The balancing financial dimension must be included in all account structures assigned to the ledger.  
+  - The balancing financial dimension must be included in all account structures assigned to the ledger.  
 
-- The financial dimension must not allow blanks in the account structure. This is to ensure that every accounting entry posted to general ledger contains a financial dimension value.  A blank dimension isn’t valid using balancing dimensions. 
+  - The financial dimension must not allow blanks in the account structure. This is to ensure that every accounting entry posted to general ledger contains a financial dimension value.  A blank dimension isn’t valid using balancing dimensions. 
 
 - Define the interunit - debit and interunit - credit main accounts on the **Accounts for automatic transactions** page (**General ledger > Posting setup > Accounts for automatic transactions**).
 
@@ -74,15 +74,15 @@ Complete the following to enable the feature:
 
 - Determine which financial dimensions will be the balancing dimensions. 
 
-- You can set more than one financial dimension to be selected as balancing.
+  - You can set more than one financial dimension to be selected as balancing.
 
-- Don’tset the financial dimensions that will be needed  to balance a transaction on the **Financial dimensions** page yet.
+  - Don’tset the financial dimensions that will be needed  to balance a transaction on the **Financial dimensions** page yet.
 
 - Define the posting definitions for each type of journal or source document used by your organization. Posting definitions consume the ledger accounts from an unposted journal or source document as ‘match criteria’.  It then returns the ‘generated entries’ which becomes the accounting entry.  If the posting definition is correctly setup, the generated entry includes the match criteria ledger accounts, plus additional accounts to balance the accounting entry at the dimension level. For more information, see [Posting definitions](posting-definitions.md). Posting definitions aren’t supported on every type of transaction. If a posting definition can’t be defined for a journal or source document, there are two options:
 
-- The transaction must be balanced at the financial dimension value by entering the transaction manually.  For example, if a general journal is entry is made and the Department dimension is the balancing dimension, you must ensure that each Department value is in balance.  If the dimension isn’t balanced for each department value, the voucher won’t post until the imbalance corrected. Correcting the imbalance requires manually adding an interunit debit or interunit credit to the voucher.
+  - The transaction must be balanced at the financial dimension value by entering the transaction manually.  For example, if a general journal is entry is made and the Department dimension is the balancing dimension, you must ensure that each Department value is in balance.  If the dimension isn’t balanced for each department value, the voucher won’t post until the imbalance corrected. Correcting the imbalance requires manually adding an interunit debit or interunit credit to the voucher.
 
-- You shouldn’t use posting definition, which means can’t use the Balancing financial dimension feature when you set up financial dimensions. If you used posting definitions, you’ll be required to use balancing dimensions in the ledger setup. 
+  - You shouldn’t use posting definition, which means can’t use the Balancing financial dimension feature when you set up financial dimensions. If you used posting definitions, you’ll be required to use balancing dimensions in the ledger setup. 
 
 - After posting definitions are defined, the financial dimensions can be marked as needed to balance. 
 
