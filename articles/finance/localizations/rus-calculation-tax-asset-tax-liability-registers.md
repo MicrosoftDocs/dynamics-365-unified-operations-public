@@ -28,6 +28,8 @@ ms.search.validFrom:
 
 # Calculation of tax asset and tax liability registers
 
+[!include [banner](../includes/banner.md)]
+
 According to Russian legislation, the accounting profit and the profit tax base are formed according to different legislation and rules. Therefore, two tax types have been developed:
 
 - **Constant tax**: Differences are based on income and expenses that form the accounting profit (loss) and are excluded from the calculation of the tax base for income tax. Constant tax differences generate constant tax income (CTI) and constant tax expense (CTE).
@@ -308,3 +310,5 @@ For each line of the **Calculation of constant tax differences** tax register, t
 
     ![Tax differences by balance method page.](media/ru_tax_differ10.png)
 
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
