@@ -368,8 +368,10 @@
             href: deployment/plannedmaintenance-selfservice.md
           - name: Business continuity and disaster recovery
             href: sysadmin/business-continuity-disaster-recovery.md
-        - name: Complete Azure Resource Manager onboarding
+        - name: Complete the Azure Resource Manager onboarding process
           href: deployment/arm-onboarding.md
+        - name: Complete the Azure Resource Manager onboarding process for US government LCS projects
+          href: deployment/arm-onbarding-us-goverment.md
         - name: Azure ExpressRoute and Finance and Operations
           href: deployment/expressroute.md
         - name: Finance and Operations architecture
