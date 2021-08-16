@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes requirements for Microsoft Dynamics 365 Human Resources. It also outlines the countries and regions where Human Resources is available, and information about languages and localization for Human Resources data.
+This topic lists the system requirements for Microsoft Dynamics 365 Human Resources. It also outlines the countries and regions where Human Resources is available, and information about languages and localization for Human Resources data.
 
 ## Supported web browsers
 
-Users can access Human Resources using any of the following web browsers that run on the specified operating systems: 
+Users can access Microsoft Dynamics 365 Human Resources using any of the following web browsers that run on the specified operating systems: 
 
 *   Microsoft Edge (latest publicly available version) on Windows 10
 *   Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
