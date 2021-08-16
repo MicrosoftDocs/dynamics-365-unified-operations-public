@@ -923,7 +923,10 @@
         - name: Person search report
           href: gdpr/gdpr-person-search-report.md
         - name: Extend the Person search report
-          href: gdpr/gdpr-extend-person-search-report.md
+          href: gdpr/gdpr-extend-person-search-report.mdFetch environment history
+            href: lifecycle-services/api/v1/reference-environment-history.md
+          - name: Fetch environment RSAT certificate ZIP
+            href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
         - name: Manage access to sensitive data
           href: gdpr/gdpr-auditing-sensitive-data.md
         - name: Respond to requests for personal data using Human Resources
@@ -942,6 +945,16 @@
           href: lifecycle-services/lcs-works-lcs.md
         - name: LCS for partners
           href: lifecycle-services/getting-started-lcs.md
+        - name: RESTful APIs
+          items:
+          - name: Start and stop environments
+            href: lifecycle-services/api/v1/reference-start-stop-environments.md
+          - name: Fetch environment metdata
+            href: lifecycle-services/api/v1/reference-environment-metadata.md
+          - name: Fetch environment history
+            href: lifecycle-services/api/v1/reference-environment-history.md
+          - name: Fetch environment RSAT certificate ZIP
+            href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
         - name: What's new or changed in Lifecycle Services
           href: lifecycle-services/whats-new-lcs.md
       - name: Lifecycle Services user guide
