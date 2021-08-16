@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tax Calculation Overview
+title: Tax Calculation overview
 description: This topic explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
 ms.date: 08/09/2021
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.18
 
 ---
 
-# Tax Calculation Overview
+# Tax Calculation overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,8 +41,8 @@ Tax Calculation integrates with Dynamics 365 Finance and Dynamics 365 Supply Cha
 
 Tax Calculation is a microservice-based tax engine that offers exponential scalability and can help you perform the following tasks:
 
-- Automatically determine the correct sales tax group, item sales tax group, and tax codes with enhanced determination mechanism.
-- Support multiple tax registration numbers in one legal entity and automatically determine the correct tax registration number on taxable transactions.
+- Automatically determine the correct sales tax group, item sales tax group, and tax codes through an enhanced determination mechanism.
+- Support multiple tax registration numbers in one legal entity, and automatically determine the correct tax registration number on taxable transactions.
 - Support tax determination, calculation, posting, and settlement for transfer orders.
 - Define configurable tax calculation formulas and conditions for your specific business requirements.
 - Share the tax determination and calculation solution across legal entities to save maintenance effort and avoid errors.
@@ -50,17 +50,15 @@ Tax Calculation is a microservice-based tax engine that offers exponential scala
 - Support list code determination.
 - Support tax calculation parameters at the tax jurisdiction level.
 
-To use the Tax Calculation Service, install the Tax Calculation add-in from your project in Microsoft Dynamics Lifecycle Services, then complete the setup in [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/), and enable the tax calculation service in Dynamics 365 Finance and Supply Chain Management. For more information, see [Get started with tax service](global-get-started-with-tax-calculation-service.md).
-
-
+To use the Tax Calculation Service, install the Tax Calculation add-in from your project in Microsoft Dynamics Lifecycle Services. Then complete the setup in [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/), and enable the tax calculation service in Finance and Supply Chain Management. For more information, see [Get started with tax service](global-get-started-with-tax-calculation-service.md).
 
 ## Availability
 
-Tax Calculation is generally available in production environments to all customers starting in 10.0.21.
+Tax Calculation is generally available in production environments to all customers as of version 10.0.21.
 
 New features will continue to be delivered. Check the most up-to-date release plan often to learn about the coverage and scope of supported features.
 
-Tax Calculation is deployed in the following Azure geographies. Additional Azure geographies will be added based on customer needs.
+Tax Calculation is deployed in the following Azure geographies. More Azure geographies will be added based on customer needs.
 
 - Asia Pacific
 - Australia
@@ -71,27 +69,25 @@ Tax Calculation is deployed in the following Azure geographies. Additional Azure
 - United States
 
 > [!NOTE]
-> Tax Calculation doesn't support earlier version of Dynamics 365 such as Dynamics AX 2012 or on-premises deployments of Dynamics 365.
-
-
+> Tax Calculation doesn't support earlier version of Dynamics 365, such as Dynamics AX 2012, or on-premises deployments of Dynamics 365.
 
 ## Data flow
 
-The following outlines the data flow process of the Tax Calculation Service. 
+Here is an outline of the data flow process for the Tax Calculation Service. 
 
-1. View and import taxable document model configurations and model mapping configurations in RCS. If you need to extend configurations for an advanced scenario, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
-2. Create or maintain tax features in RCS. The tax feature is where you can maintain tax rates and tax applicability rules.
-3. After the tax feature setup is complete, publish the tax configurations and tax features from RCS to the Global repository.
+1. In RCS, view and import taxable document model configurations and model mapping configurations. If you must extend configurations for an advanced scenario, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
+2. In RCS, create or maintain tax features. You can use tax features to maintain tax rates and tax applicability rules.
+3. After the tax feature setup is completed, publish the tax configurations and tax features from RCS to the Global repository.
 4. In Finance, select which tax feature setup version to use for a specific legal entity.
 5. In Finance and Supply Chain Management, operate transactions as usual. When the Tax Calculation Service is needed, the client will collect information from the transaction, such as the sales order or purchase order, and package the information as payload. A request will then be sent to the Tax Calculation Service to calculate the tax.
-6. The Tax Calculation Service receives the tax calculation request from the client, completes the calculation, and then returns the tax result back to the client.
+6. The Tax Calculation Service receives the tax calculation request from the client, completes the calculation, and then returns the tax result to the client.
 7. The Dynamics 365 client receives the tax result and presents the tax calculation result on a sales tax page.
 
 ## Supported transactions
 
 Tax Calculation can be enabled by transactions. 
 
-The following transactions are supported in 10.0.21: 
+The following transactions are supported in version 10.0.21: 
 
 - Sales
 
@@ -132,7 +128,7 @@ The following transactions are supported in 10.0.21:
 
 Tax Calculation can be enabled by legal entity. 
 
-The following legal entity primary address countries/regions are supported in 10.0.21:
+The following countries/regions for a legal entity's primary address are supported in version 10.0.21:
 
 - Austria
 - Belgium
@@ -153,7 +149,6 @@ The following legal entity primary address countries/regions are supported in 10
 - Switzerland
 - United Kingdom
 - United States
-
 
 ## Related resources
 
