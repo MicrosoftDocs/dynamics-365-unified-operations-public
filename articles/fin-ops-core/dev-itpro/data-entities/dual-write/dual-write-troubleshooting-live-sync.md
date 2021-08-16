@@ -237,11 +237,11 @@ To fix this error, follow these steps.
  
 1. Add a **PrimaryPostalAddressRecId** field to the **smmContactPersonV2Entity** in AppMU. Make it internal.
 
-    ![Troubleshoot live issues 1](media/Troubleshoot_live_sync_issue_1.png)
+    ![Troubleshoot live sync_issue 1](media/Troubleshoot_live_sync_issue_1.png)
 
 2.	Add the same field to **smmContactPersonCDSV2Entity**.
 
-    ![Troubleshoot live issues 1](media/Troubleshoot_live_sync_issue_2.png)
+    ![Troubleshoot live_sync issue 2](media/Troubleshoot_live_sync_issue_2.png)
 
 3.	Add this method to the smmContactPersonCDSV2Entity class.
 
@@ -262,17 +262,14 @@ To fix this error, follow these steps.
 
 ## Error while creating a record where multiple records are sent from a Finance and Operations app to Dataverse in the same batch
 
-When you run a live sync from a Finance and Operations app to Dataverse, you might receive an error about a bad request.
-
-For any transaction, the Finance and Operations app creates data in a batch and sends it as a batch to Dataverse. If two records are created as part of the same transaction and they reference each other, then you'll receive and error similar to this one in the Finance and Operations app:
+For any transaction, the Finance and Operations app creates data in a batch and sends it as a batch to Dataverse. If two records are created as part of the same transaction and they reference each other, then may receive an error similar to the following in the Finance and Operations app:
 
 *Unable to write data to entity aaa_fundingsources. Unable to lookup ebecsfs_contracts with values {PC000000212,c27258c0-99a0-418b-83da-7718707852d8}. Unable to lookup aaa_fundingsources with values {PC000000212,80297829-5c83-ea11-a811-000d3a6aa9f7,c27258c0-99a0-418b-83da-7718707852d8}. Writes to aaa_fundingsources failed with error message Exception message: The remote server returned an error: (400) Bad Request.*
 
-You need to create entity relationships within the Finance and Operations app to indicate that the two entities are linked and there are relationships that exist between the two records within the same transaction. Here are the details from a document that Sushant has created:
+To fix it, you need to create entity relationships within the Finance and Operations app to indicate the two entities are related to each other and the related records are handled within the same transaction. 
 
-# Troubleshoot live sync issues from FinOps to Dataverse 
 
-## Enable Debug mode for troubleshooting F&O
+## Enable Debug mode for troubleshooting Finance and Operations apps
 In Dual write many times F&O will show up errors which are related to CDS instance. Some of the detailed messages could not be logged due to length of the response message and PII information. To enable verbose logging for the errors, use following steps
 
 1.	For all project configurations in F&O there is a flag IsDebugMode on DualWriteProjectConfiguration entity.
@@ -285,25 +282,31 @@ In Dual write many times F&O will show up errors which are related to CDS instan
 
 5.	The verbose logs are available on DualWriteErrorLog table.
 
-6.	To lookup data on table browser use the following link https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=  DualWriteErrorLog
+6.	To lookup data on table browser use the following link https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog
 
-7.	Update after KB 4595434 (Available for PU 37 and above) If you have this kb installed then the debug mode will capture more logs.  Detailed Error Message will capture the batch request Formatted as follows { "entityName": "UnitOfMeasureEntity", "externalEntityName": "uoms", "executionStatus": 2, "fieldResponses": [], "recordResponses": [ { "errorMessage": "Request failed with status code InternalServerError and CDS error code : Internal Server Error", "logDateTime": "2020-12-08T00:14:28.2746686Z", "verboseError": "Batch response detailed error {"Message":"ValidateClosed - Db GetCreateConnection() should be closed on End","ExceptionMessage":"ValidateClosed - Db GetCreateConnection() should be closed on End","ExceptionType":"Microsoft.Crm.CrmException","StackTrace":" at Microsoft.Crm.CrmDbConnection.ValidateClosed(Boolean raiseException)\r\n at Microsoft.Crm.LegacySqlDataAccessContextImplementation.EndRequest()\r\n at Microsoft.Crm.SqlDataAccessContext.OnEndRequest()\r\n at Microsoft.Crm.BusinessEntities.ExecutionContext.OnEndRequest()\r\n at Microsoft.Crm.Extensibility.OData.CrmODataBatchHandler.<ExecuteChangeSetAsync>d__10.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at Microsoft.Crm.Extensibility.OData.CrmODataBatchHandler.<ExecuteRequestMessagesImplAsync>d__15.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n at Microsoft.Crm.Extensibility.OData.CrmODataBatchHandler.<>c__DisplayClass8_0.<<ExecuteRequestMessagesAsync>b__0>d.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n at Microsoft.Crm.Extensibility.OData.CrmODataBatchHandler.<ExecuteRequestMessagesAsync>d__8.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n at System.Web.OData.Batch.DefaultODataBatchHandler.<ProcessBatchAsync>d__0.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\r\n at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n at System.Web.Http.Batch.HttpBatchHandler.<SendAsync>d__0.MoveNext()","ErrorCode":"0x8004023e"} " } ], "isErrorCountUpdated": false, "dualWriteProcessingStage": 4, "debugLogTrace": [ "CDS batch request --batch_4225728f-0c74-40ae-9598-ad7bdf9240a6\r\n Content-Type: multipart/mixed; boundary=changeset_d6a69b31-8b5d-4f6f-a365-281a45f2e416\r\n\r\n --changeset_d6a69b31-8b5d-4f6f-a365-281a45f2e416\r\nContent-Type: application/http\r\nContent-Transfer-Encoding: binary\r\n\r\nPOST /api/data/v9.0/uoms?tag=https://dualwrite718b5367ceebc804aos.cloudax.dynamics.com HTTP/1.1\r\nHost: test.crm.dynamics.com \r\nContent-ID: 1\r\nContent-Type: application/json; charset=utf-8\r\n\r\n{"msdyn_symbol":"pr","msdyn_externalunitclassname":"Quantity","msdyn_decimalprecision":0,"msdyn_isbaseunit":"false","msdyn_issystemunit":"false","msdyn_systemofunits":"192350000","name":"pr","msdyn_description":"Pairs"}\r\n--changeset_d6a69b31-8b5d-4f6f-a365-281a45f2e416--\r\n\r\n --batch_4225728f-0c74-40ae-9598-ad7bdf9240a6--" ] }
+7.	Update to [KB 4595434 (Available for PU 37 and above)] (https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=c29ce15a80e6b3b4c01a722d9bdae1d7e71aa3662a044cfd0b765f736cfa98e9) as it allows debug mode to capture more logs. 
 
-verboseError: Captures the long text of the error from CRM. This can be used to get more context information while debugging. debugLogTrace : Captures the actual batch request sent to CRM along with payload.
+    Detailed Error Message will capture the batch request format 
+
+    verboseError: Captures the long text of the error from CRM. This can be used to get more context information while debugging. 
+    
+    debugLogTrace : Captures the actual batch request sent to CRM along with payload.
 
 
-## Error while adding addresses for a customer or contact in FinOps or Dataverse
+## Error while adding addresses for a customer or contact in Finance and Operations apps or Dataverse
  
 Error - "Unable to write data to entity msdyn_partypostaladdresses.Writes to DirPartyPostalAddressLocationCDSEntity failed with error message Request failed with status code BadRequest and CDS error code : 0x80040265 response message: An error occurred in plugin. A record that has the attribute values Location ID already exists. The entity key Location ID Key requires that this set of attributes contains unique values. Select unique values and try again"
 
-** Resolution:** Please make sure that the keys on the Address table is as per the attached screen shot. The key on this table prior to Finance extended solution solution version 2.2.2.50 would have been just msdyn_locationid field.
+To fix it, please make sure that the keys on the Address table is as per the attached screen shot. The key on this table prior to Finance extended solution solution version 2.2.2.50 would have been just msdyn_locationid field.
 Make sure to install the dual write orchestration package version (2.2.2.60) so that it replaces the previous key created on Address table.
     
  ![Live sync troubleshooting](media/live-sync-troubleshooting-5.png)
     
-## Error while creating customer in Dataverse {"RecordError0":"Write failed for entity Customers V3 with unknown exception - Party record not found for party type 'Organization'"}
- 
-**Resolution:** Check if the customer account number already exist in F&O with a different party number. And then when the same customer account number is being created in CE a new party number is generated for this account, so when this record is sent to F&O this validation error is thrown since  the customer/account already exists in F&O with another party number
+## Error while creating customer in Dataverse 
+
+Error - {"RecordError0":"Write failed for entity Customers V3 with unknown exception - Party record not found for party type 'Organization'"}
+
+When a customer is created in Dataverse, a new party number gets generated. When this customer record along with party synchronizes to Finance and Operatios apps and there is already a customer record with a different party number, this error is thrown. To fix it, make sure to find the customer through party lookup and if none exist then create a new customer record. Otherwise, use the exisitng party to create the new customer record. 
 
 
 ## Error while creating a new customer/vendor or contact in CDS may give the error similar to "Cannot update a party's type from 'DirOrganization' to 'DirPerson', a delete of the existing party followed by an insert with the new type should be performed instead."
