@@ -264,14 +264,6 @@ If you are using the Retail SDK version 10.0.21 or lower use the **Microsoft.Dyn
         Console.WriteLine(orderHistory.Results.GetEnumerator().Current.Id);
     }
     ```
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]Url" value=https://RetailserverURL/Commerce /> 
-        <add key="resource" value="api://2fxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" /> <!-- //Application ID URI generated during the headless Commerce app registration -->
-        <add key="operatingUnitNumber" value="OUN value" />
-    </appSettings>
-    ```
-
 ### Update the configuration settings with actual values
 
 1. Use the NuGet package manager for the project to add the following NuGet packages.
