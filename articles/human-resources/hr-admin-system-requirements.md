@@ -2,7 +2,7 @@
 # required metadata
 
 title: System requirements
-description: This topic describes requirements for Microsoft Dynamics 365 Human Resources.
+description: This topic lists the system requirements for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
