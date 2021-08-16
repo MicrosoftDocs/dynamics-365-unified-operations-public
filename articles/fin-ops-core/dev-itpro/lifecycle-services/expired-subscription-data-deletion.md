@@ -36,15 +36,15 @@ You will need to take the following steps to free up the resources and remove ap
         > [!Note] 
         > If you have deployed cloud-hosted environments to more than one Azure region, there may be multiple resource groups created, make sure to delete all related resource groups. 
 1. Remove app from the subscription:  
-  1. Login to via AuzreAD PowerShell cmdlet.     
-    1. **Connect-AzureAD** (Using Tenant Administrator account  
-  1. Check if Dynamics Deployment Service application is still enabled on the AAD tenant     
-    1. **Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'"**  
-  1. If the above command returns an object, then the app is currently enabled on this tenant, and it may still have access to the subscription. Remove this application from this tenant:  
-   1. **$DDSObjectId=$(Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'").ObjectId    
-    1. **Remove-AzureADServicePrincipal -ObjectId $DDSObjectId**  
+   1. Login to via AuzreAD PowerShell cmdlet.     
+      1. **Connect-AzureAD** (Using Tenant Administrator account  
+   1. Check if Dynamics Deployment Service application is still enabled on the AAD tenant     
+       1. **Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'"**  
+   1. If the above command returns an object, then the app is currently enabled on this tenant, and it may still have access to the subscription. Remove this application from this tenant:  
+      1. **$DDSObjectId=$(Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'").ObjectId    
+      1. **Remove-AzureADServicePrincipal -ObjectId $DDSObjectId**  
   1. Verify the application has been removed successfully: 
-   1. Get-AzureADServicePrincipal -Filter "AppId eq ' b96b7e94-b82e-4e71-99a0-cf7fb188acea'" 
+      1. Get-AzureADServicePrincipal -Filter "AppId eq ' b96b7e94-b82e-4e71-99a0-cf7fb188acea'" 
 
 ## Related topics
 [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview?view=o365-worldwide)
