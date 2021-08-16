@@ -187,7 +187,7 @@ This example applies to a system where the GS1 options are set up in the followi
 
 - On the **Warehouse management parameters** page, the following global settings are established:
 
-  - **FNC1 character:** *\]1C*
+  - **FNC1 character:** *\]C1*
   - **Group separator:** *\~*
 
 - On the **GS1 application identifiers** page, the following application identifiers are relevant to this example.
@@ -219,7 +219,7 @@ After goods for a purchase order arrive at the warehouse, the worker follows the
 
 1. On the mobile device, select the **Purchase receiving** menu item.
 1. Enter the purchase order number.
-1. Select the **Item** field, and scan the following bar code: *\]1C0100000012345678\~3030\~10b1\~17220215*.
+1. Select the **Item** field, and scan the following bar code: *\]C10100000012345678\~3030\~10b1\~17220215*.
 
 Because of the settings that are established for this example, the system parses the scanned bar code in the following way.
 
