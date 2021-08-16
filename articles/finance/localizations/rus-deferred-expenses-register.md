@@ -94,7 +94,7 @@ The register lines show the following information:
 
 ### Set up the deferrals register
 
-Set up the deferrals register by following the instructions in [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). In the **Register type** field, select **Deferrals**.
+Set up the deferrals register by following the instructions in the topic, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). In the **Register type** field, select **Deferrals**.
 
 ### Examples
 
