@@ -332,8 +332,6 @@
             href: database/api/v1/reference-create-export.md
           - name: Get operation activity status
             href: database/api/v1/reference-get-status.md
-          - name: Start and stop environments
-            href: database/api/v1/reference-start-stop-environments.md
     - name: Demo data
       items: 
       - name: Demo data overview
