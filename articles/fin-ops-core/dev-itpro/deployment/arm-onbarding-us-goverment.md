@@ -33,7 +33,7 @@ To deploy Azure Resource Manager topologies, you must complete the Resource Mana
 
 You can consider Resource Manager onboarding a two-step procedure, where each step has its own sub-procedures. You must complete all these sub-procedures for every subscription that you add to the LCS project.
 
-1. Authorize the LCS Deployment Service (DSU) to work on the Azure subscription.
+1. Authorize the LCS deployment service to work on the Azure subscription.
 
     1. Authorize the workflow.
     2. Set the contributor workflow.
@@ -44,9 +44,9 @@ You can consider Resource Manager onboarding a two-step procedure, where each st
     2. Upload the Management certificate.
     3. Configure deployment settings.
 
-### Authorize the LCS DSU to work on the Azure subscription
+### Authorize the LCS deployment service to work on the Azure subscription
 
-Complete the following procedures to authorize the LCS DSU to work on the Azure subscription.
+Complete the following procedures to authorize the LCS deployment service to work on the Azure subscription.
 
 #### Authorize the workflow
 
