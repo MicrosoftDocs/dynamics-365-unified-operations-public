@@ -34,16 +34,16 @@ You will need to take the following steps to free up the resources and remove ap
 1. Remove app from the subscription:  
    1. Login to via AuzreAD PowerShell cmdlet. 
       ```powershell    
-      **Connect-AzureAD** (Using Tenant Administrator account)
+      Connect-AzureAD (Using Tenant Administrator account)
       ```
    1. Check if the LCS deployment service application is still enabled on the AAD tenant.    
        ```powershell   
-       **Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'"** 
+       Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'" 
        ```
    1. If the above command returns an object, then the app is currently enabled on this tenant, and it may still have access to the subscription. Remove this application from this tenant:  
       ```powershell   
-      **$DDSObjectId=$(Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'").ObjectId    
-      **Remove-AzureADServicePrincipal -ObjectId $DDSObjectId** 
+      $DDSObjectId=$(Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'").ObjectId    
+      Remove-AzureADServicePrincipal -ObjectId $DDSObjectId
       ```
     1. Verify the application has been removed successfully: 
        ```powershell   
