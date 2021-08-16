@@ -4,7 +4,7 @@
 title: Deferred expenses register
 description: This topic provides information about how to generate and set up deferrals.
 author: Akroshkina
-ms.date: 11/11/2020
+ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2020-09-11
 ms.dyn365.ops.version: 10.0.0
 
