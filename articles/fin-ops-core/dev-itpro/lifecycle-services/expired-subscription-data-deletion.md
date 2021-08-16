@@ -17,10 +17,6 @@ ms.search.validFrom: 2021-08-16
 
 [!include[banner](../includes/banner.md)]
 
-**NEED: Introductory paragraph**
-
-## Expired subscription and data deletion
-
 After your subscription expires beyond the 90 days retention period, Microsoft will disable the accounts and delete customer data. Your LCS implementation project will be deleted and any Microsoft-managed environments will be deprovisioned and deleted. 
 
 ## Clean up Azure subscription 
