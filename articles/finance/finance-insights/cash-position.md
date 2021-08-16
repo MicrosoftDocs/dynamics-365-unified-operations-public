@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cash position (Preview)
+title: Cash position
 description: This topic describes how the Cash flow forecasting feature predicts an organization's cash position for specific times. It also describes the options that are available for showing forecasts for different periods. 
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 ---
 
-# Cash position (preview)
+# Cash position
 
 [!include [banner](../includes/banner.md)]
 
