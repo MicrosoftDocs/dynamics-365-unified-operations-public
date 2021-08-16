@@ -3,13 +3,13 @@
 
 title: Start and stop environments
 description: This topic provides a reference for version 1 of the LCS API.
-author: AngelMarshall
+author: jorichar
 ms.date: 08/12/2021
 ms.topic: reference
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tsmarsha
+ms.author: jorichar
 ms.search.validFrom: 2021-01-31
 
 ---
