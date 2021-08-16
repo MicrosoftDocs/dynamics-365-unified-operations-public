@@ -1169,7 +1169,7 @@
         - name: Year-end close missing opening balances
           href: general-ledger/yec-mssng-open-blnces.md
         - name: How do I set up balancing financial dimensions?
-          href: general-ledger/set-up-balance-dimensions.md.md
+          href: general-ledger/set-up-balance-dimensions.md
         - name: Open financial journal templates in Office
           href: general-ledger/open-fincl-jrnls-in-office.md
         - name: Why can't I reverse this transaction?
