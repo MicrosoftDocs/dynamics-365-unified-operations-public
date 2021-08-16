@@ -21,7 +21,7 @@ This topic describes how to consume the headless Commerce APIs in external appli
 > [!NOTE]
 > Retail Server is now named headless Commerce.
 
-External applications can consume the OData service through HTTPS. headless Commerce provides multiple options for consuming the APIs:
+External applications can consume the OData service through HTTPS. Headless Commerce provides multiple options for consuming the APIs:
 
 - **Headless Commerce proxy** – A strongly typed way to consume the APIs. There are multiple types of proxies that are exposed for different application types:
 
