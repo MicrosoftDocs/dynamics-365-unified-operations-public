@@ -1,14 +1,34 @@
 ---
 # required metadata
+
 title: Cash flow tax registers
 description: This topic provides information about cash flow tax registers.
-ms.date: 01/11/2021
+ms.date: 08/16/2021
 ms.topic: article
+ms.prod: 
 author: akroshkina
+ms.technology: 
+manager: anayash
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
 ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
 ---
 
 # Cash flow tax registers
+
+[!include [banner](../includes/banner.md)]
 
 ## Overview
 
