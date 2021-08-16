@@ -56,7 +56,7 @@ You might receive an error message like the following every time that you try to
 
 *Cannot save the changes to the database. Unit of Work can not commit transaction. Unable to write data to entity uoms. Writes to UnitOfMeasureEntity failed with error message Unable to sync with entity uoms.*
 
-To fix the issue, you must make sure that the prerequisite reference data exists in both the Finance and Operations app and Dataverse. For example, if the customer that you're in the Finance and Operations app belongs to a specific customer group, make sure that the customer group exists in Dataverse.
+To fix the issue, you must make sure that the prerequisite reference data exists in both the Finance and Operations app and Dataverse. For example, if the customer record belongs to a specific customer group, then make sure that the customer group record exists in Dataverse.
 
 If data exists on both sides, and you've confirmed that the issue isn't data-related, follow these steps.
 
@@ -309,17 +309,18 @@ Error - {"RecordError0":"Write failed for entity Customers V3 with unknown excep
 When a customer is created in Dataverse, a new party number gets generated. When this customer record along with party synchronizes to Finance and Operatios apps and there is already a customer record with a different party number, this error is thrown. To fix it, make sure to find the customer through party lookup and if none exist then create a new customer record. Otherwise, use the exisitng party to create the new customer record. 
 
 
-## Error while creating a new customer/vendor or contact in CDS may give the error similar to "Cannot update a party's type from 'DirOrganization' to 'DirPerson', a delete of the existing party followed by an insert with the new type should be performed instead."
+## Error while creating a new customer/vendor or contact in Dataverse 
+
+Error - "Cannot update a party's type from 'DirOrganization' to 'DirPerson', a delete of the existing party followed by an insert with the new type should be performed instead."
+
+There is a number sequence on msdyn_party table in Dataverse. For example if an account is created in Dataverse it would create a new party say Party-001 with Party type "Organization" and send this data to Finance and Operations apps. Later when the Dataverse environment is reset or the Finance and Operations environment is linked to a different Dataverse environment, then creating a new contact record in Dataverse will try to once again create a new party starting with Party-001. This time the party record will be created with Party-001 and party type as "Person". When this data is synced, Finance and Operations apps throws this error as it already has a party record Party-001 with party type 'Organization'.
  
-**Resolution:** There is a number sequence on msdyn_party table in CDS. For example if an account is created in CDS it would create a new party say Party-001 with Party type "Organization" and send this data to F&O. Later if the CDS environment is reset or if the same F&O environment is again connected to a different CDS organization and if you are creating a new contact this time in CDS, the number sequence for msdyn_party will again start with Party-001. This time the party record will be created with Party-001 and party type a s"Person". So when this data is synced to F&O, since F&O already has Party-001 with party type 'Organization' and we see this error.
- 
-This issue mostly happens only in non -prod environments since users try connecting same F&O to different CDS orgs or reset CDS orgs.
- 
-So whenever this issue happens, make sure to change the auto number sequence for msdyn_partynumber field in msdyn_party table to a different auto number sequence.
+To fix it, make sure to change the auto number sequence on Dataverse for msdyn_partynumber field in msdyn_party table to a different auto number sequence.
+
 
 ## Performance issue on Customers or Contacts mappings
  
-To improve live sync performance of Customers and contacts, customizing the below methods in CustCustomerV3Entity and smmContactPersonCDSV2Entity entities may marginally improve performance as this process helps reduce number of records in BusinessEventsDefinition table which reduces number of events raised.
+To improve live sync performance of customers and contacts, customizing the below methods in CustCustomerV3Entity and smmContactPersonCDSV2Entity entities may marginally improve performance as this process helps reduce number of records in BusinessEventsDefinition table which reduces number of events raised.
  
 The method "getEntityDataSourceToFieldMapping" in the entity CustCustomerV3Entity  makes sure that the electronic address or postal address update of the customer triggers business events so that the updated data will be sent to Dataverse. If you do not use say URL or fax electronic contact information and don’t need this information to dual write, comment those respective lines in the below method. Every tracked field/table added in this method adds a record in the BusinessEventsDefinition table for the combination of the tracked table (RefTableName field) and tracked entity (RefEntityName field) . 
  
