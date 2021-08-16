@@ -383,7 +383,7 @@ The following APIs are used to check status. They are used during both import fl
 The **GetExecutionSummaryStatus** API is used for both import jobs and export jobs. It's used to check the status of a data project execution job. This API is applicable to both cloud deployments and on-premises deployments. 
 
 > [!NOTE]
-> The package needs to be created for the API to return the final execution status, e.g., Succeeded.
+> The package needs to be created for the API to return the final execution status, such as *Succeeded*.
 
 ```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionSummaryStatus
