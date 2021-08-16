@@ -61,7 +61,7 @@ Follow these steps to set up a TDS tax group, attach TDS tax codes to it, and de
     > [!NOTE]
     > The **Taxable basis** field can't be set to **Excl Gross amount** for the TDS tax code that has a priority ID of **1**.
 
-12. The TDS calculation is based on the formula that is defined in the **Calculation expression** field for each tax code that is attached to the TDS tax group. Select the plus sign (**+**), minus sign (**-**), multiplication sign (**\***), or division sign (**/**) button to enter the calculation expression for the selected TDS tax code in the **Calculation expression** field.
+12. The TDS calculation is based on the formula that is defined in the **Calculation expression** field for each tax code that is attached to the TDS tax group. Select the plus sign (+), minus sign (-), multiplication sign (\*), or division sign (/) button to enter the calculation expression for the selected TDS tax code in the **Calculation expression** field.
 
     > [!NOTE]
     > No calculation expression can be defined for the TDS tax code that has a priority ID of **1**.
