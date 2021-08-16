@@ -30,12 +30,11 @@ If you have deployed cloud-hosted environments in your LCS implementation projec
 You will need to take the following steps to free up the resources and remove application permissions in your AAD (Azure Active Directory) tenant and each of the Azure subscriptions previously added to LCS to deploy the cloud-hosted environments. 
 
 1.  Delete the Azure resources: 
-    a.	Go to Azure subscription in Portal.
-    b.	When a cloud-hosted environment is created, it creates a resource group in your Azure subscription. These resource group represents the resources created as part of your cloud-hosted environment deployments and will carry the same name as that of the deployment. This should be easy to identify in the resource group name list.
-    c.	Delete any resource groups with the prefix of **DynamicsDeployments-*** . 
+     a.	Go to Azure subscription in Portal.
+     b.	When a cloud-hosted environment is created, it creates a resource group in your Azure subscription. These resource group represents the resources created as part of your cloud-hosted environment deployments and will carry the same name as that of the deployment. This should be easy to identify in the resource group name list.
+     c.	Delete any resource groups with the prefix of **DynamicsDeployments-*** . 
       > [!Note] 
       > If you have deployed cloud-hosted environments to more than one Azure region, there may be multiple resource groups created, make sure to delete all related resource groups. 
-
 2.	Remove app from the subscription:
     a.	Login to via AuzreAD PowerShell cmdlet. 
      i.	**Connect-AzureAD** (Using Tenant Administrator account)
