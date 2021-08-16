@@ -35,7 +35,7 @@ This topic describes requirements for Microsoft Dynamics 365 Human Resources. It
 
 ## Supported web browsers
 
-Human Resources can run in any of the following web browsers that run on the specified operating systems: 
+Users can access Human Resources using any of the following web browsers that run on the specified operating systems: 
 
 *   Microsoft Edge (latest publicly available version) on Windows 10
 *   Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
@@ -45,7 +45,7 @@ Human Resources can run in any of the following web browsers that run on the spe
 To find the latest release for each web browser, go to the software manufacturer’s website. 
 
 > [!NOTE]
-> * To capture images that are generated from Task Recorder and include them in Microsoft Word documents, you must have a Chrome extension installed. 
+> * To enable Task Recorder to capture screenshots and include them in Microsoft Word documents that are generated, you must install a pre-release Chrome extension
 > * The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
 > * To preview PDF files, we recommend that you use modern browsers like Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
 >   Network requirements
