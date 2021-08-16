@@ -140,7 +140,7 @@ You can import connection settings from either a file or a QR code. For both app
 | ConnectionName | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
 | ActiveDirectoryClientAppId | Specify the client ID that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section. |
 | ActiveDirectoryResource | Specify the root URL of Supply Chain Management. |
-| ActiveDirectoryTenant | Specify the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
+| ActiveDirectoryTenant | Specify the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
 | Company | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
 | ConnectionType | (Optional) Specify whether the connection setting should use a certificate or a client secret to connect to an environment. Valid values are *"certificate"* and *"clientsecret"*. The default value is *"certificate"*.<p>**Note:** Client secrets can't be imported.</p> |
 | IsEditable | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are *"true"* and *"false"*. The default value is *"true"*. |
@@ -252,7 +252,7 @@ You can manually configure the app on the device so that it connects to the Supp
         > [!NOTE]
         > Don't end this value with a slash (/).
 
-    - **Active directory tenant** – Enter the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Active directory tenant** – Enter the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
 
         > [!NOTE]
         > Don't end this value with a slash (/).
