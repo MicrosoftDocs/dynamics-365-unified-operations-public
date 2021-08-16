@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.21
 # Customize step titles and instructions for the Warehouse Management mobile app
 
 > [!IMPORTANT]
-> The features that are described in this topic apply only to the new Warehouse Management mobile app. They also affect the old warehouse app, which is now deprecated.
+> The features that are described in this topic apply only to the new Warehouse Management mobile app. They do not affect the old warehouse app, which is now deprecated.
 
 This topic describes how to create and show custom instructions for every step of every task flow that you set up for the Warehouse Management mobile app. When warehouse workers receive well-written instructions, they can immediately start to use new flows without requiring previous training. This feature provides the following benefits:
 
@@ -41,7 +41,7 @@ A *step title* is a short description of what a worker should do during a step. 
 ![Example of a step title in the Warehouse Management mobile app](media/wma-step-title.png "Example of a step title in the Warehouse Management mobile app")
 
 > [!TIP]
-> Because of the large text size, you should try to keep step titles as short as possible. Otherwise, the text might be cut off. However, for long titles, workers can still do a long press on the title to open a dialog box that shows the full text.
+> Because of the large text size, you should try to keep step titles as short as possible. Otherwise, the text might be cut off. However, for long titles, workers can still press and hold the title to open a dialog box that shows the full text.
 
 ### Step instructions
 
@@ -49,7 +49,7 @@ A *step instruction* is a longer description that provides more information abou
 
 ![Example of a step instruction in the Warehouse Management mobile app](media/wma-step-instructions.png "Example of a step instruction in the Warehouse Management mobile app")
 
-The step instruction is automatically shown when a step is opened. Workers can dismiss it by tapping anywhere outside the pop-up dialog box. Additionally, the dialog box includes a **Don't show again** checkbox that workers can select to prevent the instruction from appearing the next time that they perform the same task. 
+The step instruction is automatically shown when a step is opened. Workers can dismiss it by tapping anywhere outside the pop-up dialog box. Additionally, the dialog box includes a **Don't show again** checkbox that workers can select to prevent the instruction from appearing the next time that they perform the same task.
 
 ## Load the default setup
 
@@ -64,16 +64,16 @@ To customize the title and/or instruction for a step in any number of languages,
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**.
 
-    The **Mobile device steps** page lists every step that is available for your system. Each step ID can be shared among any number of mobile device menu items. If a step ID is shared among multiple menu items, the same title and description are shown for all those menu items. However, you can create overrides to customize the title and description for specific menu items. (For more information, see the next section.)
-    
+    The **Mobile device steps** page lists every step that is available for your system. Each step ID can be shared among any number of mobile device menu items. If a step ID is shared among multiple menu items, the same title and instruction are shown for all those menu items. However, you can create overrides to customize the title and instruction for specific menu items. (For more information, see the next section.)
+
     The grid includes the following columns:
 
-    - **Menu item name** – Rows where this column is blank use the default step title and description that apply to all mobile device menu items that no override is defined for. Rows where this column is set to the name of a menu item have overrides that apply only to the specified menu item.
+    - **Menu item name** – Rows where this column is blank use the default step title and instruction that apply to all mobile device menu items that no override is defined for. Rows where this column is set to the name of a menu item have overrides that apply only to the specified menu item.
     - **Step ID** – The unique ID of the step.
     - **Title for input** – The title that is shown when the app requests new information. Typically, the fields on the page are blank (that is, they have no preset values).
     - **Title for confirmation** – The title that is shown when the app requests confirmation of a value that is already stored in the system. Typically, the fields on the page have preset values.
 
-1. Find the combination of **Step ID** and **Menu item name** values that you want to edit, and select the value in the **Step ID** column. The page that is opened lists all the available translations for the title and description of the selected step.
+1. Find the combination of **Step ID** and **Menu item name** values that you want to edit, and select the value in the **Step ID** column. The page that is opened lists all the available translations for the title and instruction of the selected step.
 1. Follow one of these steps to customize the text for any language. Both options let you edit texts for existing languages. However, only the first option lets you to add texts for new languages, whereas only the second option lets you view and edit texts for all existing menu-specific overrides of the selected language.
 
     - On the toolbar, select **Add** to open a dialog box where you can add or edit texts for any supported language. Set the **Reference language** field to the language that you want to view values for. The values are shown in the left column. Set the **Language of the translations** field to the language that you want to add or customize. In the right column, edit the values of the **Title for input**, **Instruction for input**, **Title for confirmation**, and **Instruction for confirmation** fields as you require. Then select **OK**.
