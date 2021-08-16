@@ -65,15 +65,15 @@ If the calendar is associated with the base calendar, you must check the setup o
 
 To ensure good performance, the scheduling engine will only search for a resource for a certain amount of time and for a certain number of scheduling conflicts.
 
-To review the scheduling parameters, follow these steps. <!-- KFM: I rewrote the following procedure. Please confirm that it is still correct and add the requested info. -->
+To review the scheduling parameters, follow these steps.
 
 1. Go to **Organization administration > Setup > Scheduling parameters**.
 1. Do one of the following:
     - If **Scheduling timeout enabled** is set to *No*, then skip this step.
-    - If **Scheduling timeout enabled** is set to *Yes*, then change the **Maximum scheduling time per sequence** setting. <!-- KFM: What should I change it to? Might we instead just change the toggle to *No*?  -->
+    - If **Scheduling timeout enabled** is set to *Yes*, then increase the **Maximum scheduling time per sequence** setting to allow more time for the processing to complete.
 1. Do one of the following:
     - If **Scheduling optimization timeout enabled** is set to *No*, then skip this step.
-    - If **Scheduling optimization timeout enabled** is set to *Yes*, then change the **Optimization attempts timeout** setting. <!-- KFM: What should I change it to? Might we instead just change the toggle to *No*? -->
+    - If **Scheduling optimization timeout enabled** is set to *Yes*, then increase the **Optimization attempts timeout** setting setting to allow more time for the processing to complete.
 1. If you changed any of the settings on this page, then reschedule the order to try again.
 
 ## Review capacity
