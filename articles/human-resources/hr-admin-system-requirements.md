@@ -44,14 +44,17 @@ Users can access Human Resources using any of the following web browsers that ru
 
 To find the latest release for each web browser, go to the software manufacturer’s website. 
 
-> [!NOTE]
-> * To enable Task Recorder to capture screenshots and include them in Microsoft Word documents that are generated, you must install a pre-release Chrome extension
-> * The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
-> * To preview PDF files, we recommend that you use modern browsers like Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
->   Network requirements
-> * Human Resources is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Human Resources. We recommend that you test network latency at [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test").
-> * Bandwidth requirements for Human Resources depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps).
-> 
+## Special considerations
+
+* To enable Task Recorder to capture screenshots and include them in Microsoft Word documents that are generated, you must install a pre-release Chrome extension
+* The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
+* To preview PDF files, we recommend that you use modern browsers like Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
+
+## Network requirements
+
+* Human Resources is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Human Resources. We recommend that you test network latency at [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test").
+* Bandwidth requirements for Human Resources depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps).
+ 
 > [!WARNING]
 > Don't compute bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. For customers who are concerned about bandwidth requirements, use a trial version of Human Resources.
 
