@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Budget proposals (preview)
+title: Budget proposald
 description: This topic describes the process for using a machine learning model with your organization's historical data to generate a budget proposal.
 author: panolte
 ms.date: 07/16/2021
@@ -24,7 +24,7 @@ ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.4
 ---
 
-# Budget proposals (preview)
+# Budget proposald
 
 [!include [banner](../includes/banner.md)]
 
