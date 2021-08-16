@@ -299,7 +299,7 @@ Generation of this event requires the adoption of new semantics for handling eve
 
 - The fiscal documents are booked and synced in the related period and fiscal establishment.
 - The fiscal documents have a status of **Approved** or **Canceled**.
-- The fiscal document model is **04** or **55** (a series number between 920 to 969). 
+- The fiscal document model is **04** or **55**. 
 - The tax type is **INSS**, and it's retained (that is, the **Retained tax/to recuperate** check box is selected).
 - The tax type is **Other**, it's retained (that is, the **Retained tax/to recuperate** check box is selected), and GILRAT or SENAR taxes are identified.
 

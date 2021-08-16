@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.20 (August 2021) 
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.20 (August 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.20. 
 author: kamaybac
 ms.date: 05/28/2021
@@ -13,23 +13,21 @@ ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.20 (August 2021)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.20 (August 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.20. This version has a build number of 10.0.886 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.20. This version has a build number of 10.0.886 and is available as follows:
 
 - **Preview of release:** May 2021
 - **General availability of release (self-update):** July 2021
 - **General availability of release (auto-update):** August 2021
 
-
 ## Features included in this release
 
 The following table lists the features included in this release. The *Feature* column provides links to the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), where you can see the official release dates for each feature. The *More information* column provides more details and/or links to related documentation.
 
-Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features are still in preview, while others may already be generally available.
+Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 | Feature area | Feature | More information |
 |---|---|---|
@@ -45,7 +43,6 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
-| Master planning | Negative days for Planning Optimization	| This preview feature enables Planning Optimization to consider delay tolerance based on the **Negative days** parameter defined in coverage groups. |
 | Master planning | Parallel authorizing of adjusted demand forecast | This feature allows parallel authorizing of adjusted demand forecast from the **Adjusted demand forecast** page. The intent of this feature is to increase performance when a high number of forecasts are being authorized. When authorizing, the user can specify the **Number of threads** in the authorizing dialog. |
 | Master planning | (Preview) Batchable firming and consolidation for planned bulk and pack batch orders | This feature lets you use batch jobs to firm and consolidate planned bulk and pack orders. |
 | Production control | Copy generic routes | This feature enhances the copy route function to allow users to copy routes that aren't item specific. It enables the system to update all relevant information (such as site, route group, resource requirements, and various times) after the copy route function has been used to overwrite a route that is not yet assigned to an item. |
@@ -71,7 +68,7 @@ We have recently added or significantly updated the following help topics. They 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of Finance and Operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of Finance and Operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### Bug fixes
 

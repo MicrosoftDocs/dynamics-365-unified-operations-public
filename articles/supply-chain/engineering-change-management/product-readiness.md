@@ -183,8 +183,6 @@ To assign a readiness policy to an engineering category, follow these steps.
 
 ## Readiness checks on standard products
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 You can enable product readiness checks for standard (non-engineering) products by turning on the *Product readiness checks* feature in Feature management. This feature makes a few small changes to the readiness check system so that it supports standard products.
 
 ### Enable readiness checks on standard products
