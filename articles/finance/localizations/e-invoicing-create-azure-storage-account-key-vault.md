@@ -60,7 +60,7 @@ In this topic, you will complete two main steps:
 8. Select **OK** to save the policy, and then **Save** your changes to the container.
 9. Go to **Settings \> Shared access tokens**, and set the fields. 
 10. Enter the start and expiry dates. The expiry date should be in future.
-11. In the **Permissions** field, you should select the following permissions: Read, Add, Creat, Write, Delete, List. 
+11. In the **Permissions** field, you should select the following permissions: Read, Add, Create, Write, Delete, List. 
 12. Click **Generate SAS token and URL**.
 13. Copy and store the value in the **Blob SAS URL** field. This value will be used in the next procedure and will be referred to as the *shared access signature URI*.
 
