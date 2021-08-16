@@ -409,7 +409,7 @@ Next, you must configure a certificate profile for your certificates that are st
 
 To configure a certificate profile for your certificates in Commerce headquarters, follow these steps.
 
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Certificate profiles**. 
+1. Go to **System administration \> Setup \> Certificate profiles**. 
 1. Create a new certificate profile.
 1. On the **Legal entities** FastTab, add the required legal entities.
 1. Select **Settings**.
