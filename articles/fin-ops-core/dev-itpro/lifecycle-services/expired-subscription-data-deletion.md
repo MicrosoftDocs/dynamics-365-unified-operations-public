@@ -36,7 +36,7 @@ You will need to take the following steps to free up the resources and remove ap
       ```powershell    
       Connect-AzureAD (Using Tenant Administrator account)
       ```
-   1. Check if the LCS deployment service application is still enabled on the AAD tenant.    
+   1. Check if the deployment service application is still enabled on the AAD tenant.    
        ```powershell   
        Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'" 
        ```
