@@ -925,7 +925,7 @@
         - name: Person search report
           href: gdpr/gdpr-person-search-report.md
         - name: Extend the Person search report
-          href: gdpr/gdpr-extend-person-search-report.mdFetch environment history
+          href: gdpr/gdpr-extend-person-search-report.md
         - name: Manage access to sensitive data
           href: gdpr/gdpr-auditing-sensitive-data.md
         - name: Respond to requests for personal data using Human Resources
