@@ -98,19 +98,19 @@ There are 31 data models that can be included as fields on the header of a trans
 
 
 
-There are 26 data models that are included as fields in the lines of a transaction. As with the header fields, not all fields are applicable to all transaction types. The following table provides information about which line fields are available on specific transaction types. 
+There are 26 data models that are included as fields in the lines of a transaction. As with the header fields, not all fields are applicable to all transaction types. The following table provides information about which line fields are available on specific transaction types. In some cases, the field mapping must be determined by a predefined logic. Where applicable, the logic is provided.  
 
 
 | Field                              | Business transaction type and mapping |
 |------------------------------------|---------------------------------------|
-| Amount                             |                                       |
-| Category name                      |                                       |
-| Charges code                       |                                       |
-| Commodity code                     |                                       |
-| Cost amount                        |                                       |
-| Delivery term                      |                                       |
-| Direct delivery                    |                                       |
-| Item code                          |                                       |
+| Amount                             |  - **Sales order**: New amount <br>- **Purchase order**: Net amount<br>- **Transfer order - Slip**: Amount<br>- **Transfer order - Receive**: Amount<br>- **Purchase requisition**: Net amount<br>- **Request for quotation**: Net amount<br>- **Sales quotation**: Net amount                                     |
+| Category name                      | - **Sales order**: Sales category<br>- **Purchase order**: Procurement category<br>- **Purchase requisition**: Procurement category<br>- **Request for quotation**: Procurement category<br>- **Sales quotation**: Sales category                                       |
+| Charges code                       | - **Sales order**: Charges code<br> - **Purchase order**: Charges code<br> - **Purchase requisition**: Charges code<br>- **Request for quotation**: Charges code<br>- **Sales quotation**: Charges code                                     |
+| Commodity code                     | - **Sales order**: Line > Foreign trade > Commodity<br>- **Purchase order** Line > Foreign trade > Commodity<br>- **Transfer order - Ship** Line > Foreign trade > Commodity<br>- **Transfer order - Receive**: Line > Foreign trade > Commodity <br>- **Sales quotation**: Line > Foreign trade > Commodity                                      |
+| Cost amount                        | - **Sales order**: The cost price of the item in inventory<br>- **Sales quotation**: The cost price of the item in inventory                                     |
+| Delivery term                      | - **Sales order**: Delivery terms<br>   - **Request for quotation**: Delivery terms<br>- **Sales quotation**: Delivery terms                                  |
+| Direct delivery                    | - **Sales order**: Direct delivery<br>- **Purchase order**: Direct delivery                                       |
+| Item code                          | - **Sales order**: Item number<br>- **Purchase order**: Item number<br>- **Transfer order - Ship**: Item number<br>- **Transfer order - Receive**: Item number<br>- **Purchase requisition**: Item number<br>- **Request for quotation**: Item number<br>- **Sales quotation**: Item number                                     |
 | Item type                          |                                       |
 | Line type                          |                                       |
 | Quantity                           |                                       |
@@ -124,9 +124,9 @@ There are 26 data models that are included as fields in the lines of a transacti
 | Ship to country/region type        |                                       |
 | Ship to province/state             |                                       |
 | Ship to ZIP code                   |                                       |
-| Site                               |                                       |
+| Site                               | **Sales order**<br>1. Line > Site<br>2. Product > Site<br>**Purchase order**<br>1. Line > Site<br>2. Product > Site<br>**Transfer order - Ship**: The Site selected for the From warehouse on the line<br>**Transfer order - receive**: The Site selected for the From warehouse on the line<br> **Purchase requisition**: Line > Site<br>**Request for qutoation**: Line > Site<br>**Sales quotation**<br>1. Line > Site<br>2. Product > Site                                      |
 | Transaction date                   |                                       |
-| Unit                               |                                       |
-| Variant number                     |                                       |
-| Warehouse                          |                                       |
+| Unit                               | - **Sales order**: Unit<br>- **Purchase order**: Unit<br>- **Transfer order - Ship**: Unit<br>- **Transfer order - Receive**: Unit<br>- **Purchase requisition**: Unit<br>- **Request for quotation**: Unit<br>- **Sales quotation**: Unit                                      |
+| Variant number                     | - **Sales order**: Variant number<br>- **Purchase order**: Variant number<br>- **Sales quotation**: Variant number                                      |
+| Warehouse                          | **Sales order**<br>1. Line > Warehouse<br>2. Product > Warehouse<br>**Purchase order**<br>1. Line > Warehouse<br>2. Product > Warehouse<br>**Transfer order - Ship**: From warehouse<br>**Transfer order - Receive**: To warehouse<br>**Purchase requisition**: Line > Warehouse<br>**Request for quotation**: Line > Warehouse<br>**Sales quotation**<br>1. Line > Warehouse<br>2. Product > Warehouse                                      |
 
