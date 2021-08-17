@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.22
 
 This topic covers the country/region picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
-The country/region picker is used with the geo detection and redirection feature to display recommended URLs to customers who request a URL that is not associated with their country/region. 
+The country/region picker is used with the [geo detection and redirection](geo-detection-redirection.md) feature to display recommended URLs to customers who request a URL that is not associated with their country/region. 
 
 The following illustration shows a country/region picker displayed on the home page of a site. In this example, a customer who lives in Canada requests a site URL that is not associated with Canada. The country/region picker displays and recommends sites that are associated with Canada. 
 
@@ -68,6 +68,8 @@ The URLs that you'll recommend to your customers must be configured as Country o
 | Action link                | Action link | Optional link that displays at the bottom of the country/region picker. This link can link to an internal page and be used to offer a list of all countries supported by this site. |
 
 ## Additional resources
+
+[Set up geo detection and redirection](geo-detection-redirection.md)
 
 [Module library overview](starter-kit-overview.md)
 
