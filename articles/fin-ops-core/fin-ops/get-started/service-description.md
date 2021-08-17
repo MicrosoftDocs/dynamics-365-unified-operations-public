@@ -5,7 +5,7 @@ title: Service description for Finance and Operations apps
 description: This topic provides the service description for Finance and Operations apps.
 author: tomhig
 manager: AnnBe
-ms.date: 08/13/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
