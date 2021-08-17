@@ -926,9 +926,6 @@
           href: gdpr/gdpr-person-search-report.md
         - name: Extend the Person search report
           href: gdpr/gdpr-extend-person-search-report.mdFetch environment history
-            href: lifecycle-services/api/v1/reference-environment-history.md
-          - name: Fetch environment RSAT certificate ZIP
-            href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
         - name: Manage access to sensitive data
           href: gdpr/gdpr-auditing-sensitive-data.md
         - name: Respond to requests for personal data using Human Resources
