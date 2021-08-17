@@ -120,7 +120,7 @@ Users who act as warehouse managers on both the hub and scale units should be as
 ### Supported WES processes
 The following warehouse execution processes can be enabled for a WES workload on a scale unit:
 
-- Selected wave methods for sales and transfer orders (allocation, demand replenishment, containerization, work creation, and wave label printing)
+- Selected wave methods for sales and transfer orders (validation, load creation, allocation, demand replenishment, containerization, work creation, and wave label printing)
 
 - Processing sales and transfer order warehouse work using the warehouse app (including replenishment work)
 - Querying on-hand inventory by using the warehouse app
@@ -188,10 +188,10 @@ The following table shows which outbound features are supported, and where they 
 | Process                                                      | Hub | WES workload on a scale unit |
 |--------------------------------------------------------------|-----|------------------------------|
 | Source document processing                                   | Yes | No |
-| Load and transportation management processing                | No  | No |
+| Load and transportation management processing                | Yes, but only the load planning processes. Transportation management processing is not supported  | No |
 | Release to warehouse                                         | Yes | No |
 | Planned cross docking                                        | No  | No |
-| Shipment consolidation                                       | Yes, when using load planning | Yes, when not using load planning |
+| Shipment consolidation                                       | Yes, when using load planning | Yes |
 | Shipment wave processing                                     | No  |Yes, except **Load building and sorting** |
 | Maintain shipments for wave                                  | No  | Yes|
 | Warehouse work processing (incl. license plate print)        | No  | Yes, but only for the above mentioned supported capabilities. |
@@ -214,7 +214,7 @@ The following table shows which outbound features are supported, and where they 
 | Work processing - Directed by 'Transport loading'            | No  | No |
 | Reduce picked quantity                                       | No  | No |
 | Reverse work                                                 | No  | No |
-| Reverse shipment confirmation                                | Yes | No |
+| Reverse shipment confirmation                                | No  | Yes|
 
 ### Inbound
 
