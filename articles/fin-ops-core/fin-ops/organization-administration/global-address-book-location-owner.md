@@ -35,7 +35,7 @@ Each address in the global address book has a location owner, which determines w
 
 The location owner is determined when a new address is created. When the address is created, the party for which the address is created is assigned as the location owner. 
 
-If locations are created through data entities, the location owner property **IsLocationOwner** should be set to **Yes** for the party which should be the owner of the location. If this is not set to Yes for the owner of the application, the address will not be editable in the application.
+If locations are created through data entities, the location owner property (**IsLocationOwner**) should be set to **Yes** for the party for the intended owner of the location. If this is not set to Yes for the owner of the location, the address will not be editable in the application.
 
 ## Changing location owners
 
