@@ -39,7 +39,7 @@ This topic explains the process of provisioning a new production environment for
 
 Before you begin provisioning a new production environment, the following prerequisites must be in place:
 
-- You have purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
+- You have purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this topic, contact Support.
 
 - The global administrator has signed in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and created a new Human Resources project. 
 
@@ -60,7 +60,8 @@ Considerations for additional environments:
 - **Training**: You may need a separate environment that is configured with a set of training data in order to train your employees on use of the new system. 
 - **Multi-phase project**: You may need an additional environment to support configuration, data migration, testing, or other activities in a project phase that is planned after the initial go-live of the project.
 
- > [!IMPORTANT RECOMMENDATIONS]
+ > [!IMPORTANT]
+ > As you consider your environment, we recommend the following:
  > - Use your production environment throughout your project as your GOLD configuration environment. This is important, because you can't copy a sandbox environment to a production environment. Therefore, when you go-live, your GOLD environment is your production environment, and you will complete your cutover activities in this environment.</br></br>
  > - Use your sandbox or another environment to perform a mock cutover prior to your go-live. You can do this by refreshing the production environment with your GOLD configuration into your sandbox environment.</br></br>
  > - Keep a detailed cutover checklist that includes each of the data packages required to migrate the final data into the production environment during the go-live cutover.</br></br>
