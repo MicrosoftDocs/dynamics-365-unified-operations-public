@@ -250,17 +250,10 @@ Submitting support requests online, via LCS allows Microsoft to deliver fast and
  
 ## Incident management 
 
-Microsoft responds to and resolves incidents based on the severity levels set forth in the following tables. Microsoft's incident severity levels can be changed during initial assessment of the incident and as more information about the impact and scope becomes available. If the incident is mitigated, then the incident severity remains unchanged.
+Microsoft responds to and resolves incidents based on severity levels. Microsoft's incident severity levels can be changed during initial assessment of the incident and as more information about the impact and scope becomes available. If the incident is mitigated, then the incident severity remains unchanged.
+ 
+For more information about severity levels, see [What is Initial Response Time, and how quickly can I expect to hear back from someone after submitting my support request?](/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request).
 
-### Incident severity levels
-
-| Classification | Description |
-|-------------------------|-------------------------|
-| **Severity 0</br>(Sev-0)**</br>Catastrophic | <ul><li>Catastrophic event in which all functions of a service in a region are down or inaccessible.</br><br>**Note:** Sev-0 incidents normally start as Sev-1, then get upgraded with management approval based on assessment of impact type/scope. |
-| **Severity 1</br>(Sev-1)**</br>Critical | <ul><li>Severe outage of a service caused by confirmed systemic problem, resulting in a broad scope of impact, requiring a Technical Control Bridge and engagement from applicable engineering teams.</li></br><li>Suspected breach of a security or privacy boundary. |
-|**Severity 2</br>(Sev-2)**</br>Urgent| <ul><li>Service outage with narrow scope of impact (&gt; 25% customers).</br><li>Degradation of customer experience caused by confirmed systemic event with broad scope (&gt; 25% customers).</br><li>Service outage with limited scope of impact (single organization or subset of users). |
-|**Severity 3</br>(Sev-3)**<br>Moderate | <ul><li> Degradation of customer experience caused by confirmed systemic event with narrow scope. |
-|**Severity 4</br>(Sev-4)**<br>Non-SLA impacting | <ul><li>Monitoring or customer-reported incidents requiring action to avoid potential service impact.</br><li>General maintenance events with no customer impact.</br><li>Standard service change requests.|
 
 ### Incident scope and severity level impact
 
