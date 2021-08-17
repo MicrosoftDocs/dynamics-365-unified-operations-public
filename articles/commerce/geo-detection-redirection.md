@@ -32,8 +32,8 @@ ms.search.validFrom:
 
 Geo-detection and redirection gives you the ability to detect your customers' geographic location, and use that information to suggest or redirect them to the marketized and localized site that's most appropriate for them. You can choose one of two experiences for your customers who are requesting a site URL that is not associated with the country/region they're in:
 
-1. Ask customers to choose a site or sites associated with their location, or stay on the site they     originally requested.
-2. Automatically redirect customers to the site associated with their country/region
+1. Ask customers to choose a site or sites associated with their location, or stay on the site they originally requested.
+1. Automatically redirect customers to the site associated with their country/region
 
 In the example below, a customer in Canada is requesting a site that is not associated with Canada. The country/region picker module displays the sites that have been configured for Canada. When the customer selects an option, they're taken to that site and their site preference is captured in a cookie so they're not prompted to select the site again the next time they visit. 
 
@@ -49,10 +49,10 @@ You associate countries/regions with an online store (aka online channel) in Hea
 
 To associate a country with an online store:
 
-1. navigate to the **Online stores** view under Modules -> **Retail and Commerce** -> **Channels**, or search for "online stores" in the search box. 
-2. Open the online channel you wish to associate countries with
-3. Open the Countries/Regions tab
-4. Click **+Add**, and select a country/region from the dropdown.
+1. Go to the **Online stores** view under **Modules \> Retail and Commerce \> Channels**, or search for "online stores" in the search box. 
+1. Open the online channel to which you want to associate countries.
+1. Select the **Countries/Regions** tab.
+1. Select **+Add**, and then select a country/region from the dropdown list.
 
 You can add multiple countries/regions to the online store if needed. 
 
