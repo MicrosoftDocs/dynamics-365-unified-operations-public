@@ -32,7 +32,7 @@ This topic describes how the application programming interfaces (APIs) of the El
 
 ## <a name="er-api-set-print-management-record-specific-destination"></a>API to enable users to configure ER destinations that are print management record specific
 
-This new API enables you to configure ER destinations for a particular type of business document and assign a configured named destination to a [print management](document-reporting-services.md) record. This functionality allows you to make ER destinations print management record-specific.
+This new API lets you configure ER destinations for a specific type of business document and assign a configured named destination to a [print management](document-reporting-services.md) record. Therefore, you can make ER destinations print management record specific.
 
 ```xpp
 /// <summary>Class for enabling NamedDestinationFeature for current document type.</summary>
@@ -47,11 +47,10 @@ public class ERNamedDestinationReportEnabler
     {
         return false;
     }
-
 }
 ```
 
-## <a name="er-api-pass-print-management-record-specific-destination"></a>API to run a format mapping with provided destination that is print management record specific
+## <a name="er-api-pass-print-management-record-specific-destination"></a>API to run a format mapping where the destination that is provided is print management record specific
 
 This new API can be used to force ER to deliver generated documents by using a named ER destination.
 
@@ -71,13 +70,12 @@ public interface ERIFormatMappingRunWithNamedDestination
     ERIFormatMappingRun withDestinationNamed(RefRecId _destinationNamedId)
     {
     }
-
 }
 ```
 
 ## Applicability
 
-To set up named destinations and force the ER framework to use the provided named destination, first turn on the **Allow to set up ER destinations per print management item** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
+To set up named destinations and force the ER framework to use the named destination that is provided, you must first turn on the **Allow to set up ER destinations per print management item** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
 
 ## Additional resources
 
@@ -89,7 +87,6 @@ To set up named destinations and force the ER framework to use the provided name
 
 [Configure action-dependent ER destinations](er-action-dependent-destinations.md)
 
-[Configure print management record specific ER destinations](er-named-destinations.md)
-
+[Configure print management record-specific ER destinations](er-named-destinations.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
