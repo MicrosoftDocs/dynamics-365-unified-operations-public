@@ -4,7 +4,7 @@
 title: Fixed asset inquiries and reports
 description: This topic provides information about the inquiries and reports for fixed asset acquisitions for Russia.
 author: v-oloski
-ms.date: 08/11/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
