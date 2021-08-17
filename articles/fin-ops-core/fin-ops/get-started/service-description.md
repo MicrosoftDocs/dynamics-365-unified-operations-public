@@ -252,17 +252,7 @@ Submitting support requests online, via LCS allows Microsoft to deliver fast and
 
 Microsoft responds to and resolves incidents based on severity levels. Microsoft's incident severity levels can be changed during initial assessment of the incident and as more information about the impact and scope becomes available. If the incident is mitigated, then the incident severity remains unchanged.
  
-For more information about severity levels, see [What is Initial Response Time, and how quickly can I expect to hear back from someone after submitting my support request?](/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request).
-
-
-### Incident scope and severity level impact
-
-| Incident impact | Entire geo <br>-OR- <br>less than 25% of global footprint | One customer <br>-OR- <br>subset of users belonging to one customer |
-|-------------------------|-------------------------|-------------------------|
-| Service is unavailable | Sev-1 | Sev-2 |
-| Service is usable only through a workaround or critical subset feature is malfunctioning | Sev-2 | Sev-3 |
-| Degradation of performance, or non-critical subset feature is malfunctioning | Sev-3 | Sev-4 |
-| Incidents requiring action to avoid potential impact or service disruption | Sev-3 | Sev-4 |
+For more information about severity levels, refer to the following [Severity Table](https://docs.microsoft.com/en-us/power-platform/admin/support-overview#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request).
 
 ## Business continuity with high availability and disaster recovery 
 
