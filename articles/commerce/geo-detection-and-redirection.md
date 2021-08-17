@@ -4,7 +4,7 @@
 title: Set up geo detection and redirection
 description: This topic explains the capabilities of geo detection and redirection, and now to configure it for an e-commerce site.
 author: stuharg
-ms.date: 08/11/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -26,12 +26,10 @@ ms.search.validFrom:
 
 ---
 
-
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-
-
-# Overview
+# Set up geo detection and redirection
 
 Geo-detection and redirection gives you the ability to detect your customers' geographic location, and use that information to suggest or redirect them to the marketized and localized site that's most appropriate for them. You can choose one of two experiences for your customers who are requesting a site URL that is not associated with the country/region they're in:
 
@@ -40,17 +38,11 @@ Geo-detection and redirection gives you the ability to detect your customers' ge
 
 In the example below, a customer in Canada is requesting a site that is not associated with Canada. The country/region picker module displays the sites that have been configured for Canada. When the customer selects an option, they're taken to that site and their site preference is captured in a cookie so they're not prompted to select the site again the next time they visit. 
 
-
-
-![Screenshot of the region/language picker showing options for Canada English and Canada French](./media/Geo_Country-region-picker.PNG)
-
-
+![Screenshot of the region/language picker showing options for Canada English and Canada French](./media/Geo_Country-region-picker.png)
 
 ## Enable geo redirection features
 
 To enable geo redirection for your site, ensure that the **Enable geo redirection features** feature flag is enabled for your site in site builder. To do this, go to **Settings** -> **General** and turn on **Enable geo redirection features**. NOTE: The **Enable geo redirection features** flag requires that **Enable location based store detection** first be enabled. Learn more about the [Enable location based store detection](enable-store-detection.md) feature flag. 
-
-
 
 ## Associate countries/regions with online stores(s)
 
@@ -67,11 +59,7 @@ You can add multiple countries/regions to the online store if needed.
 
 When you're finished associating countries/regions to the online store, run job 1070 (Channel configuration) in the **Distribution schedule** view (go to Modules -> **Retail and commerce** -> **Retail and commerce IT.** Once that job completes, the countries/regions you associated will be available in the Channels page under site settings in site builder. 
 
-
-
-![Screenshot showing countries/regions being mapped to an online store in Headquarters](./media/Geo_HQ-country-mapping.PNG)
-
-
+![Screenshot showing countries/regions being mapped to an online store in Headquarters](./media/Geo_HQ-Country-Mapping.png)
 
 ## Configure geo redirection rules
 
@@ -79,16 +67,14 @@ The countries/regions you make available to an online channel in site builder ca
 
 To associate countries/regions with site URLs:
 
-1. Go to the **Channels** page within site settings
-2. Click on the channel name
-3. Select a locale in the slide out
-4. Select one or more countries to associate with that URL 
-5. Click OK
-6. Click Save and publish to save your changes and publish them. 
+1. Go to the **Channels** page within site settings.
+1. Select the channel name.
+1. Select a locale in the slide out.
+1. Select one or more countries to associate with that URL. 
+1. Select **OK**.
+1. Click Save and publish to save your changes and publish them. 
 
-![Screenshot that illustrates how countries/regions are mapped to URLs in site builder](./media/Geo_Channels-config.PNG)
-
-
+![Screenshot that illustrates how countries/regions are mapped to URLs in site builder](./media/Geo_Channels-config.png)
 
 ### Geo detection and redirection logic
 
@@ -98,11 +84,7 @@ When a customer requests a URL for your site, the redirection logic determines w
 
 The workflow below illustrates the steps and decision points in the redirection logic
 
-
-
-![Workflow diagram that illustrates the steps and decision points that are part of geo redirection logic](./media/Geo_Redirection-logic.PNG)
-
-
+![Workflow diagram that illustrates the steps and decision points that are part of geo redirection logic](./media/Geo_Redirection-Logic.png)
 
 ## Configure the country/region picker module
 
@@ -112,19 +94,15 @@ To display the country/region picker on your home page, add it within the header
 
 The URLs that you'll recommend to your customers must be configured as Country objects in the module. Follow these steps for each URL that you want to recommend:
 
-1. Click **+ Add country** under Country list 
-2. Click on the newly-created box that says "Country"
-3. Enter a display string (e.g. "Canada")
-4. Enter an optional display substring (e.g. "French", or "fr-ca") 
-5. Enter an optional image from the media library.
-6. Enter the Country URL. This URL must exactly match the URL in the Channels page that is mapped to the channel and locale associated with this country. 
-7. Click OK and repeat as necessary for the countries you wish to display in the country/region picker. 
+1. Select **+ Add country** under **Country list**. 
+1. Select on the newly-created box that says "Country".
+1. Enter a display string (for example, "Canada").
+1. Enter an optional display substring (for example, "French" or "fr-ca"). 
+1. Enter an optional image from the media library.
+1. Enter the Country URL. This URL must exactly match the URL in the Channels page that is mapped to the channel and locale associated with this country. 
+1. Select **OK** and repeat as necessary for the countries you wish to display in the country/region picker. 
 
-
-
-![Screenshot that demonstrates how a country is added to the country/region picker module](./media/Geo_country-region-config.PNG)
-
-
+![Screenshot that demonstrates how a country is added to the country/region picker module](./media/Geo_Country-region-config.png)
 
 ## Configure auto-redirection
 
@@ -132,15 +110,11 @@ You can choose to auto-redirect customers in certain countries to a specific URL
 
 It is possible to associate two or more URLs to a country/region. When more than one URL is associated with a country/region, auto redirection uses the URL for the locale that is marked as the default locale for that channel. 
 
-
-
 ## Save customer site preferences
 
 When the **Enable geo redirection features** flag is set to on, geo redirection will save your customers' preferred site. When the customer selects a recommended URL from the country/region picker, the URL will be written to the _msdyn365___site_ cookie on the domain they're presently on before being taken their preferred site. The next time they request the URL that previously displayed the country/region picker, they'll be automatically redirected to their preferred site.
 
 The [Site selector module](site-selector.md) also writes the customer's site selection to the _msdyn365___site_ cookie. We recommend that you set up the Site selector so that customers can change their preferred site through the Site selector module. The site that customers select in the Site picker module will be respected by geo redirection. 
-
-
 
 ## Additional resources
 
