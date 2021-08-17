@@ -90,7 +90,7 @@ This type of synchronization is supported in Platform update 37 (PU37) and later
 
 Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables. All dual-wrtie users will need to be added to the **Dual-Write App User** security role.
 
-In order to allow non-administrator users to create rows in a dual-write enabled table, they will need to be assigned the **Dual-Write Runtime User** security role
+In order to allow non-administrator users to create rows in a dual-write enabled table, they will need to be assigned the **Dual-Write Runtime User** security role.
 
 ### Error handling capabilities
 
