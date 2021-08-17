@@ -37,7 +37,7 @@ The location owner is determined when a new address is created. When the address
 
 If locations are created through data entities, the location owner property **IsLocationOwner** should be set to **Yes** for the party which should be the owner of the location. If this is not set to Yes for the owner of the application, the address will not be editable in the application.
 
-## Managing location owners
+## Changing location owners
 
 If the location owner is not set correctly the address will not be editable using the associated party. In this situation, the location owner can be updated. This can be done by either changing or confirming the location owner.
 
