@@ -4,7 +4,7 @@
 title: Fetch environment RSAT certificate ZIP
 description: You can fetch an environment current RSAT certificate bundle through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
 author: jorichar
-ms.date: 08/12/2021
+ms.date: 08/17/2021
 ms.topic: reference
 audience: Developer, IT Pro
 ms.reviewer: sericks
