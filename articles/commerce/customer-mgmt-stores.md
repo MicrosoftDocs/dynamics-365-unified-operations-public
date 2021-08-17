@@ -45,11 +45,12 @@ Retailers can use the **All stores** page in Commerce headquarters (**Retail and
 
 Sales associates can capture multiple addresses for a customer. The customer's name and phone number are inherited from the contact information that is associated with each address. The **Addresses** FastTab of a customer record includes a **Purpose** field that sales associates can edit. If the customer type is **Person**, the default value is **Home**. If the customer type is **Organization**, the default value is **Business**. Other values that this field supports include **Home**, **Office**, and **Post box**. The value of the **Country** field for an address is inherited from the primary address that is specified on the **Operating unit** page in Commerce headquarters at **Organization administration \> Organizations \> Operating units**.
 
+
+## Sync customers and Async customers
+
 > [IMPORTANT]
 > Whenever the POS goes offline, the system automatically creates the customers asynchronously even if the Async customer creation mode is disabled. Therefore, Therefore, irrespective of your selection between Sync and Async customer creation, commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job (previous name: Synchronize customers and business partners from async mode job), and the **1010** job, so that any Async customers are converted to Sync customers in Commerce headquarters.
 
-
-## Sync customers and Async customers
 
 In Commerce, there are two modes of customer creation: Synchronous (or Sync) and Asynchronous (or Async). By default, customers are created synchronously. In other words, they are created in Commerce headquarters in real time. The Sync customer creation mode is beneficial because new customers are immediately searchable across channels. However, it also has a drawback. Because it generates [Commerce Data Exchange: Real-time Service](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) calls to Commerce headquarters, performance can be affected if many concurrent customer creation calls are made.
 
