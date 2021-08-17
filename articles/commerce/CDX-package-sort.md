@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Commerce ofing
-description: This topic provides an overview of Commerce
+title: Sort Commerce Data Exchange packages by primary key
+description: This topic provides an overview of the Commerce feature to sort CDX packages by a primary index per package.
 author: jashanno
 ms.date: 05/11/2021
 ms.topic: article
@@ -29,56 +29,25 @@ ms.dyn365.ops.version: 10.0.12
 
 
 
-# Bank data usability enhancement
+# Sort Commerce Data Exchange packages by primary key
 
 [!include [banner](../includes/banner.md)]
 
-Companies often have to enter and maintain a large amount of banking information. The cost of entering incorrect bank information can be very high. To help save time and simplify bank data registration, you can import Italian bank information from reliable sources. In this way, you help reduce the risk of errors when bank data for customers and vendors is used.
+This feature, titled more simply as **Sort CDX packages by primary key** d.
 
 ## Prerequisites
 
-Before you begin, the following prerequisites must be met:
+The **Sort CDX packages by primary key** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- The primary address of the legal entity must be in Italy.
-- The **Bank account setup enhancement** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+## Feature value
 
-## Import bank groups
-
-You can import the list of banks by using the **Bank groups** entity and the Data management framework. For more information, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
-
-The source data that is used to import bank groups can be presented as a Microsoft Excel file that has the following column names:
-
-- BANKGROUPID
-- ADDRESSCITY
-- ADDRESSCOUNTRY
-- ADDRESSCOUNTY
-- ADDRESSDESCRIPTION
-- ADDRESSDISTRICTNAME
-- ADDRESSLATITUDE
-- ADDRESSLOCATIONID
-- ADDRESSLONGITUDE
-- ADDRESSSTATE
-- ADDRESSSTREET
-- ADDRESSTIMEZONE
-- ADDRESSVALIDFROM
-- ADDRESSVALIDTO
-- ADDRESSZIPCODE
-- NAME
-- ROUTINGNUMBER
-- ROUTINGNUMBERTYPE
-- STATEMENTFORMATID
-- SUFFIX
-- BRANCHNAME\_IT
+Yo.
 
 > [!NOTE]
-> The **BANKGROUPID** value must match the **ROUTINGNUMBER** value.
+> e **BAR** vue.
 
-## Use the enhanced list of bank groups
+## Using this feature
 
-When the Bank account setup enhancement feature is turned on, two additional descriptive fields, **Branch name** and **City**, become available for bank groups.
+Whs.
 
-![Branch name and City fields.](media/emea-ita-exil-bank-pic.jpg)
-
-During the setup of a bank account, the additional descriptive fields for bank groups are available and allow for more precise selection of a bank.
-
-![Additional descriptive fields in a bank account setup.](media/emea-ita-exil-bank-pic2.jpg)
+![pic name.](media/pic_title.jpg)
