@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable customer payment predictions (preview)
+title: Enable customer payment predictions
 description: This topic explains how to turn on and configure the Customer payment predictions feature in Finance insights.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Enable customer payment predictions (preview)
+# Enable customer payment predictions
 
 [!include [banner](../includes/banner.md)]
 

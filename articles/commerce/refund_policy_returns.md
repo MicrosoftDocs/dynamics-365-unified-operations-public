@@ -47,15 +47,6 @@ To enable the channel return policy functionality in Commerce headquarters, foll
 1. Select **Enable now**.
 1. On the **Distribution schedule** page, run the **1110** (Global configuration) job to distribute the feature change.
 
-## Initialize the Commerce scheduler
-
-After enabling the **Enable channel return policies** feature, you must initialize the Commerce scheduler to ensure that new feature database changes get added via Commerce Data Exchange (CDX) synchronization. 
-
-To initialize the Commerce scheduler in Commerce headquarters, follow these steps.
-
-- Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize commerce scheduler**. Alternatively, you can search for "Initialize Commerce scheduler."
-- In the **Initialize commerce scheduler** dialog box, ensure that the **Delete existing configuration** option is set to **No**, and then select **OK**.
-
 ## Configure return policy
 
 Follow these steps to configure a return policy for a retail store or online retail channel.

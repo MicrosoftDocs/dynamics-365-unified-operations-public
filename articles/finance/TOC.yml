@@ -1170,6 +1170,8 @@
           href: general-ledger/yec-mssng-open-blnces.md
         - name: Open financial journal templates in Office
           href: general-ledger/open-fincl-jrnls-in-office.md
+        - name: Journal posting failure due to imbalance
+          href: general-ledger/posting-fail-imbalance.md
         - name: Why can't I reverse this transaction?
           href: general-ledger/cant-reverse-transctns.md
     - name: Financial reporting
@@ -1482,6 +1484,26 @@
             href: localizations/rcs-delete-environment.md
           - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
             href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
+          - name: Download ER configurations to Finance
+            items: 
+            - name: Download configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+            - name: Import configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+          - name: Global repository (GR)
+            items: 
+            - name: Import configurations from GR
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Import updated versions of ER configurations
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Enhanced filtering to find configurations in GR
+              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Upload configurations to GR
+              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+            - name: Share configurations in GR  
+              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
@@ -1520,40 +1542,56 @@
           items:
           - name: Tax Calculation overview
             href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-          - name: Get started with Tax Calculation
-            href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-          - name: Sales tax applicability and sales tax group determination logic
-            href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
-          - name: Tax feature support for transfer orders
-            href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
-          - name: Calculating tax on top of price when Prices include taxes is enabled
-            href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
-          - name: Add data fields in tax configurations
-            href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
-          - name: Add data fields in the tax integration by using extensions
-            href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-          - name: Set up an environment for master data lookup
-            href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
-          - name: Multiple VAT registration numbers
-            href: localizations/emea-multiple-vat-registration-numbers.md
-          - name: Reporting for multiple VAT registrations 
+          - name: Setup
             items:
+            - name: Get started with Tax Calculation
+              href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+            - name: Set up an environment for master data lookup
+              href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+          - name: Determination
+            items: 
+            - name: Sales tax applicability and sales tax group determination logic
+              href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+          - name: Calculation
+            items: 
+            - name: Calculate tax on prices when Prices include taxes is enabled
+              href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
+            - name: Tax calculation rounding rules
+              href: localizations/tax-calculation-rounding-rules.md
+          - name: Multiple VAT registration
+            items: 
+            - name: Multiple VAT registration numbers
+              href: localizations/emea-multiple-vat-registration-numbers.md
             - name: Reporting for multiple VAT registrations
               href: localizations/emea-reporting-for-multiple-vat-registrations.md
             - name: France reporting
               items: 
               - name: VAT declaration
-              href: localizations/emea-fra-VAT-declaration-preview-France.md
+                href: localizations/emea-fra-VAT-declaration-preview-France.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
                 href: localizations/emea-nl-vat-declaration-netherlands.md
               - name: EU sales list
                 href: localizations/emea-nl-eu-sales-list.md
+            - name: Switzerland reporting
+              items: 
+              - name: VAT declaration
+                href: localizations/emea-che-vat-declaration-switzerland.md
             - name: United Kingdom reporting
               items:
               - name: Prepare for integration with MTD for VAT
                 href: localizations/emea-gbr-mtd-vat-integration.md
+          - name: Enable Tax Calculation for transfer order
+            items: 
+            - name: Tax feature support for transfer orders
+              href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+          - name: Extension
+            items: 
+            - name: Add data fields in tax configurations
+              href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
+            - name: Add data fields in the tax integration by using extensions
+              href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
@@ -3330,6 +3368,8 @@
           href: localizations/emea-che-esr-customer-payments-import.md
         - name: Swiss QR-bills
           href: localizations/emea-che-swiss-qr-bills.md
+        - name: VAT declaration
+          href: localizations/emea-che-VAT-declaration-Switzerland.md
       - name: Thailand
         items:
         - name: Thailand overview
@@ -4101,30 +4141,6 @@
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
           - name: Import configurations (LBD)
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-        - name: Regulatory service (RCS)
-          items:
-          - name: Globalization features in RCS
-            href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
-          - name: Download ER configurations to Finance
-            items: 
-            - name: Download configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-            - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
-          - name: Global repository (GR)
-            items: 
-            - name: Import configurations from GR
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
-            - name: Import updated versions of ER configurations
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
-            - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-            - name: Upload configurations to GR
-              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
-            - name: Share configurations in GR  
-              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
-            - name: Discontinue configurations in the RCS Global repository
-              href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
