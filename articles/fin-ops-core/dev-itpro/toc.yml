@@ -948,7 +948,7 @@
           items:
           - name: Start and stop environments
             href: lifecycle-services/api/v1/reference-start-stop-environments.md
-          - name: Fetch environment metdata
+          - name: Fetch environment metadata
             href: lifecycle-services/api/v1/reference-environment-metadata.md
           - name: Fetch environment history
             href: lifecycle-services/api/v1/reference-environment-history.md
