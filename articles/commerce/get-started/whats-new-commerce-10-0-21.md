@@ -71,6 +71,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 |   Targeting   |  [Customer segmentation and targeting](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/customer-segmentation-targeting.md)  |  [Device, market, and geolocation targeting](../targeting-overview.md)    |
 |  Performance  | [Enforce custom query change tracking configurations on retail transaction tables due to performance impacts](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enforce-custom-query-change-tracking-configurations-retail-transaction-tables-due-performance-impacts.md)   | This feature improves Commerce performance when using the Data Management export framework combined with change tracking capabilities on retail transaction tables.  |
 | E-commerce   |   [Enhanced reordering experience in e-commerce](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enhanced-reordering-experience-e-commerce.md)  |   This feature introduces enhancements to the existing reordering ("buy it again") function for e-commerce sites.   |
+| Point of Sale (POS) offline   |   Modern POS offilne monitoring dashboard and seamless offline resiliency and reliability enhancements   |   This feature set is additionally being backported to the 10.0.20 release as an overall release update.  For more details, view the [Commerce offline database implementation considerations and troubleshooting](../dev-itpro/implementation-considerations-offline.md) document.   |
 
 
 ## Additional resources
