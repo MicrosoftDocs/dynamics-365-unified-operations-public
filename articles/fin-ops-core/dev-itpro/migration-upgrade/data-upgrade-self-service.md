@@ -28,7 +28,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 ## Prerequisites
 
 1. Download the AX 2012 Database Upgrade Toolkit for Dynamics 365 from Microsoft Dynamics Lifecycle Services (LCS). In the Shared asset Library, select **Model** as the asset type, and then select the model file.
-2. Create a self-service environment in LCS. The environment should be in a **Deployed** state.
+2. Create a self-service environment in LCS. The environment should be in a **Deployed** state. It must be a Microsoft-managed environment, cloud-hosted development environments can be used only for the [Upgrade from AX 2012 - Data upgrade in development environments](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/data-upgrade-2012) procedure.
 3. Download and install the [.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) if it isn't already installed.
 4. Make sure that the replication feature is installed and enabled for the source SQL Server instance. To determine whether replication is enabled, run the following SQL script.
 
