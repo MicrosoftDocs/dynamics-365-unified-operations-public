@@ -29,48 +29,51 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The global address book is a centralized repository for master data that must be stored for all internal and external persons and organizations that the company interacts with. The data that is associated with party records includes the party's name, address, and contact information. Other details vary, depending on whether the party is a person or an organization. Each party record is assigned to a party, and each party can be associated with one or more party roles in a company. Party roles include customer, prospect, worker, user, vendor, competitor, applicant, and contact. For example, the organization party First Up Consultants, can be associated with customer, business relation, and vendor roles in the CEE company, and can also be associated with the vendor role in the CEU company. Here are some of the benefits of this shared data:
+Each address in the global address book has a location owner, which determines whether the address is editable on the party record. If the party is the owner of the address, the address can be edited when accessed using the party in either the global address book or from the associated master record form (such as customer, vendor, or worker). If the party is not the owner of the address, the record cannot be edited from those forms for that party record.
 
-- The data shows the relationships that people and organizations have with other areas of the company. The relationship between two organizations changes when one organization has multiple roles, such as vendor and customer. Communication between the two organization also changes. There might be special agreements that can be negotiated to encourage a closer partnership with the other organization.
-- Setup and maintenance are easier. For example, when an address changes, the update must be made in only one place. All the other associated records are updated automatically.
+## Assigning location ownership
 
-## How the global address book works
+The location owner is determined when a new address is created. When the address is created, the party for which the address is created is assigned as the location owner. 
 
-The following illustration shows how party records, party roles, locations, and transactions interact and relate to an address book. As the illustration shows, a party record can belong to one or more address books. Each party record can store one or more locations, or addresses, and is assigned a party role. The role that is assigned to the party record can have specific transactions types associated with it. The following sections provide more information about party roles, locations, and transaction types. The following image is a graphical representation of the ways that parties, party roles, locations, and transactions interact in relation to the global address book.
+If locations are created through data entities, the location owner property **IsLocationOwner** should be set to **Yes** for the party which should be the owner of the location. If this is not set to Yes for the owner of the application, the address will not be editable in the application.
 
-[![Global address book interaction with AX entities and transactions.](./media/address-book-structure-300x157.png)](./media/address-book-structure.png)
+## Managing location owners
 
-### Party roles
+If the location owner is not set correctly the address will not be editable using the associated party. In this situation, the location owner can be updated. This can be done by either changing or confirming the location owner.
 
-Roles that are associated with party records are referred to as party roles. There are several party roles, and they can be assigned to both party types, person and organization. Here are the definitions for each party role:
+> [!NOTE]
+> Users must be assigned to a role containing the **Set location owner** privilege to have access to actions that enable change in location ownership.
 
-- **Customer** – Individuals, companies, or other entities who purchase goods and services that are produced by other individuals, companies, or entities.
-- **Prospect** – A party that might provide a service or benefit to a legal entity.
-- **Worker** – A person who assumes the role of an employee or a contractor, and who is paid in exchange for services.
-- **User** – A person who is a user of the system.
-- **Vendor** – A party that supplies products to one or more legal entities in exchange for payment.
-- **Competitor** – A person or organization that provides goods or services that are similar to the goods or services that your business provides.
-- **Applicant** – A person who makes a formal written or electronic request to work for or fill an open position in an organization.
-- **Contact** – A person, either inside or outside your organization, that you have created an entry for. In this entry, you can save information such as the person's street and email addresses, telephone and fax numbers, and webpage URLs.
+### Change location owner
 
-### Creating new party records
+You can update the location owner for a single address record from the address record in the global address book.
 
-There are two ways to enter party records in the global address book:
+1. Navigate to the global address book.
+2. Open a party record from the address book list.
+3. In the **Addresses** fast tab on the party record, select the address for which you want to change the owner. 
+4. Select the **Edit** action on the action ribbon of the **Addresses** fast tab.
+5. On the **Edit address** page, select the **Change location owner** action.
 
-- **Creating a party record when you don't know the role** – When you create a party record and don't know the role type (for example, you don't know whether the party is a customer or an opportunity), you create the record in the global address book. You can select the role type later.
-- **Creating a party record when you know the role** – If you know the role type for the party, you can create a record on the appropriate page for that type. For example, if the party is a customer, you create a record on the **Customer** page. When you create and save a record by using the page for the party's role type, the record is automatically created in the global address book.
+Optionally, you can use the action on the **Manage addresses** page for the address.
 
-### Party roles and transactions
+1. Navigate to the global address book.
+2. Open a party record from the address book list.
+3. In the **Addresses** fast tab on the party record, select teh address for which you want to change the owner.
+4. Select the **More options > Advanced** action on the action ribbon of the **Addresses** fast tab.
+5. On the action ribbon of the **Manage addresses** page, select the **Change location owner** action.
 
-For transactions that are a part of the business processes, multiple parties might be associated with each transaction. An example is a customer that needs to be referenced on project quotations.
+The action assigns location ownership for the address to the current party.
 
-### Parties locations, addresses, and contact information
+> [!NOTE]
+> The **Change location owner** action is available only if the party is not the owner of the selected location.
 
-Each party record's addresses, locations, and contact information are shared across all the party roles that are associated with that party. Therefore, when any of this information is changed, all other associated records are updated accordingly.
+### Confirm location owner
+You can confirm location owners for one or more locations on the **Confirm location owners** page. This page contains a lost of locations that are associated to a single party for which the associated party is not the location owner.
 
-### Locations and transactions
+1. Navigate to the **Confirm location owners** page (Global Address Book > Locations > Confirm location owners).
+2. Select the location for which you want to confirm the location owner.
+3. On the action ribbon of the page, select the **Confirm owner** action.
 
-When a party role is included in a transaction, the location, address, or contact information of the party can be accessed when transaction details are entered.
-
+This action sets the location owner for the location to the party displayed in the **Proposed owning party name** field of the list.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
