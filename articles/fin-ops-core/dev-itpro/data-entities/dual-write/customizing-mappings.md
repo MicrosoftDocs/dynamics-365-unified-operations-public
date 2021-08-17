@@ -92,10 +92,13 @@ Dual-write lets you filter data by using Open Data Protocol (OData) filter expre
 
     The following table shows some examples of filter expressions.
 
-    | Dataverse | Finance and Operations apps |
-    |---|---|
-    | Accounttype eq '3' | (accounttype == '3') |
-    | numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
+   || Dataverse | Finance and Operations apps |
+    |---|---|---|
+    |String field like| startswith(name, 'A')|(name like "A*")|
+    |String field not like|not contains(name, 'A')|(!(name like "*A*"))|
+    |Enumeration fields| AccountType == '3'| (AccountType == AccountType::Customer)|
+    |Dates|TransactionDate le '2021-06-23'|(TransactionDate <= 23\06\2021)|
+    |Multiple criteria combined| numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
 
     For more examples that show how to use expressions in query ranges, see [Using Expressions in Query Ranges](/dynamicsax-2012/developer/using-expressions-in-query-ranges).
     
