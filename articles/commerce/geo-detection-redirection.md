@@ -25,11 +25,10 @@ ms.author: shajain
 ms.search.validFrom: 
 
 ---
+# Set up geo detection and redirection
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
-
-# Set up geo detection and redirection
 
 Geo-detection and redirection gives you the ability to detect your customers' geographic location, and use that information to suggest or redirect them to the marketized and localized site that's most appropriate for them. You can choose one of two experiences for your customers who are requesting a site URL that is not associated with the country/region they're in:
 
