@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fetch environment metdata
+title: Fetch environment metadata
 description: This topic provides a reference for version 1 of the LCS API.
 author: jorichar
 ms.date: 08/12/2021
@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-08-32
 
 ---
 
-# Fetch environment metdata
+# Fetch environment metadata
 
 [!include [banner](../../../includes/banner.md)]
 
@@ -34,7 +34,7 @@ Within LCS, the user used in the API OAuth authentication will need to be added 
 
 ## HTTP request
 
-Use the following GET endpoint to fetch environment metdata.
+Use the following GET endpoint to fetch environment metadata.
 
 **Fetch metadata for all environments within a project**
 <!-- { "blockType": "ignored" } -->
@@ -90,7 +90,7 @@ For each environment, the following properties will be available. If a value is 
 | EnvironmentProduct | The product running on the environment. |
 | EnvironmentEndpointBaseUrl | The base URL of the environment. |
 | DeploymentState | The most recent environment operation's state. |
-| TopologyDisplayName | The product topology deloyed on the environment. |
+| TopologyDisplayName | The product topology deployed on the environment. |
 | CurrentApplicationBuildVersion | A string of the application version. |
 | CurrentApplicationReleaseName | A string of the application release name. |
 | CurrentPlatformReleaseName | A string of the platform version. |
