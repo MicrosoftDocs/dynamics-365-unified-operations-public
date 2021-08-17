@@ -87,6 +87,10 @@ GIF is also a lossless format, but it only supports 256 colors in a single image
 
 Ultimately, the goal is to find the right balance to maintain image quality while keeping the image size as small as possible.
 
+## Lazy load images and modules
+Lazy loading will defer the initialization of resources until they are needed and can make the initial display of the web page faster.  Most module library modules that display images or video have a configuration property to enable or disable lazy loading. A good practice is to ensure images that need to show up immediately upon the loading of the web page should have lazy loading turned off so they appear near instantly, images that are not in view such as those lower on a page should be lazy loaded.
+
+
 ### Disable lazy loading for images
 
 Modules that show images, such as the [content block module](../add-hero-module.md), generally don't load the images until they are needed. This "lazy loading" behavior might cause a perception of performance issues, because an image isn't loaded when the user is ready to view it. For example, when a user selects the "next" arrow in a carousel module, the next image might take a second or two to be loaded if lazy loading is enabled. Therefore, these types of modules that show images have a configuration setting that lets you disable lazy loading. Images are then loaded before they are needed, and users might perceive improved performance in some scenarios.
@@ -95,9 +99,9 @@ The following illustration image shows an example where the **Disable Lazy Load*
 
 ![Disable lazy load option selected in Commerce site builder.](media/best-practices-dev-1.png)
 
-## Enable lazy loading for a product collection module
+### Enable lazy loading for a product collection module
 
-The data action calls for the [product collection module](../product-collection-module-overview.md) can cause a small increase in page load times. Therefore, the product collection module has an **Enable module lazy load** configuration setting that enables the module to be rendered on the client side after the page has been rendered. In this way, the page is available for user interaction sooner. 
+The data action calls for the [product collection module](../product-collection-module-overview.md) can cause a small increase in page load times. Therefore, the product collection module has an **Enable module lazy load** configuration setting that enables the module to be rendered on the client side after the page has been rendered. In this way, the page is available for user interaction sooner. However if the product collection module is placed near the top of the page, it's suggested to disable lazy loading so the images show up immediately when the page is shown.
 
 The following illustration shows an example where the **Enable module lazy load** option is selected for a product collection module in Commerce site builder.
 
