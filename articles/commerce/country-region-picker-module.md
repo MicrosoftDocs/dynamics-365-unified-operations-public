@@ -2,7 +2,7 @@
 # required metadata
 
 title: Country/region picker module
-description: This topic describes how to add the country/region picker module to a site page in Microsoft Dynamics 365 Commerce, and how to configure it to display site options for your customers. 
+description: This topic covers the country/region picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce. 
 author: stuharg
 ms.date: 09/03/2021
 ms.topic: article
@@ -33,11 +33,13 @@ ms.dyn365.ops.version: Release 10.0.22
 
 This topic covers the country/region picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
-The country/region picker is used with the [geo detection and redirection](geo-detection-redirection.md) feature to display recommended URLs to customers who request a URL that is not associated with their country/region. 
+The country/region picker module uses the Commerce [geo detection and redirection](geo-detection-redirection.md) feature to display recommended URLs to customers who request a URL that is not associated with their country/region. 
 
-The following illustration shows a country/region picker displayed on the home page of a site. In this example, a customer who lives in Canada requests a site URL that is not associated with Canada. The country/region picker displays and recommends sites that are associated with Canada. 
+For example, if a customer in Canada requests a site URL that is not associated with Canada, the country/region picker module then displays and recommends sites that are associated with Canada as shown in the following example illustration.
 
-![Example of a country/region picker module displaying on a home page.](./media/Geo_country-region-module-insitu.PNG)
+The following illustration shows a country/region picker displayed on the home page of a site. In this example, a customer who lives in Canada requests a site URL that is not associated with Canada. The country/region picker then displays and recommends sites that are associated with Canada. 
+
+![Example of a country/region picker module displaying on a home page.](./media/Geo_country-region-module-insitu.png)
 
 ## Add a country/region picker module to a page
 
