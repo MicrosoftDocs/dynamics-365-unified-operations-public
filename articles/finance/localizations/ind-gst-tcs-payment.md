@@ -252,9 +252,28 @@ GST-TCS on vendor payment by an e-commerce operator must be accounted for under 
 
 3. Select **Tax information**.
 4. Notice that the GST TCS is calculated based on the defined percentage (10.0).
-
-    
+ 
     ![Customer payment journal page.](media/gst-tcs-payment-08.png)
+
+5. In the customer payment, on the **General** tab, notice that GST that was calculated on the invoice amount is excluded from the GST TCS calculation.
+
+    ![GST-TDS calculation.](media/gst-tcs-payment-09.png)
+
+  The following illustration shows the posted journal voucher.
+  
+   ![List of voucher transactions.](media/gst-tcs-payment-10.png)
+    
+
+The GST TCS on payment that the e-commerce operator makes to the vendor is posted to the GST-TCS payable account. Similarly, the GST TCS is deducted from the customer's payment.
+Ensure that the active configuration has the correct formula and posting conditions by following these steps.
+ 
+1. Change the formula part.
+
+    ![Tax formula line.](media/gst-tcs-payment-11.png)
+
+2. The current configuration contains posting conditions for GST-TCS that the **Price include sales tax** check box must be marked in the customer/vendor payment journal. While. in the payment journal, there is no segregation of payment amounts such as base amount, GST amount, and GST-TCS amount. Because of this, you should remove the price-inclusive condition from the vendor payment and the customer payment under the configuration.
+
+    [Tax document page, Posting tab, vendor and customer payment configurations and the price-inclusive condition.](media/gst-tcs-payment-11.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
