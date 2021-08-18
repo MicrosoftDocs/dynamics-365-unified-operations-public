@@ -102,9 +102,8 @@ $accessToken = "{access token string}";
 $projId = {project id integer};
 $envId = "{environment id GUID}"
 $baseLCSAPI = "lcsapi.lcs.dynamics.com";
-$prefix = "https";
 
-$url = "$prefix://$baseLCSAPI/environmentinfo/v1/rsatdownload/project/$projId/environment/$envId"
+$url = "https://$baseLCSAPI/environmentinfo/v1/rsatdownload/project/$projId/environment/$envId"
  
 $headers = @{
     "Authorization" = "Bearer $accessToken"
@@ -114,9 +113,31 @@ $headers = @{
 
 # Reset variable between executions
 $certificateResponse = $null 
+$shouldRetry = $false
 
-# Could add HTTP 429 handling and other HTTP code checks
-$certificateResponse = Invoke-RestMethod $url -Method 'GET' -Headers $headers
+do {
+    $shouldRetry = $false
+
+    try {
+
+        # GET request to LCS API
+        $certificateResponse = Invoke-RestMethod $url -Method 'GET' -Headers $headers
+
+    } catch {
+
+        # Check if this is a HTTP 429 error
+        if ($_.Exception.Response.StatusCode.value__ -eq 429) {
+
+            # Too many requests for this environment, wait and retry
+            $shouldRetry = $true
+            $retrySeconds = [int]$_.Exception.Response.Headers['Retry-After']
+            Write-Host "Too many requests - Retrying in $retrySeconds seconds"
+            Start-Sleep -Seconds $retrySeconds
+        } else {
+            throw
+        }
+    }
+} while($shouldRetry)
 
 if ((-not $certificateResponse.IsSuccess) -or ($certificateResponse.Data -eq $null)) {
     Write-Host $certificateResponse.ErrorMessage
