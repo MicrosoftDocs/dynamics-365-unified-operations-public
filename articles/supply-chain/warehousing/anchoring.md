@@ -194,7 +194,7 @@ Follow these steps to create a load for the orders that you created for this sce
 1. Go to **Warehouse management \> Loads \> Load planning workbench**.
 1. On the **Sales lines** tab, find and select all the sales order lines for sales order 1 and sales order 2.
 1. On the Action Pane, on the **Supply and demand** tab, from the **Add** group, select **To new load**.
-1. In the **Load template assignment** dialog, in the **Load template ID** field, select a load template, such as *Stnd Load Template*. <!-- KFM: I get a warning that the weight or volume is exceeded. Does that matter? Maybe use "40' Container" instead? -->
+1. In the **Load template assignment** dialog, in the **Load template ID** field, select a load template, such as *Stnd Load Template*. <!-- KFM: I get a warning that the weight or volume exceeds capacity. Does that matter? Maybe use "40' Container" instead? -->
 1. Select **OK** to close the dialog.
 1. In the **Loads** section, find and select the load that you created.
 1. On the toolbar, select **Release \> Release to warehouse**.
