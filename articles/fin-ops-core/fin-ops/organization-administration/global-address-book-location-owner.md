@@ -42,7 +42,7 @@ If locations are created through data entities, the location owner property (**I
 If the location owner is not set correctly the address will not be editable using the associated party. In this situation, the location owner can be updated. This can be done by either changing or confirming the location owner.
 
 > [!NOTE]
-> Users must be assigned to a role containing the **Set location owner** privilege to have access to actions that enable change in location ownership.
+> The **Specify location owner** feature must be enabled in **Feature management** and users must be assigned to a role containing the **Set location owner** privilege to have access to actions that enable change in location ownership.
 
 ### Change location owner
 
