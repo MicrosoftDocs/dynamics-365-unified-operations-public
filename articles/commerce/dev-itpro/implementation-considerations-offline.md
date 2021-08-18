@@ -68,7 +68,7 @@ While not an exhaustive list, here are the most used SQL Server editions for Dyn
 
 ## Troubleshooting
 
-If an error that occurs doesn't appear in the following table, create a support request, as required, so that Microsoft Support can help you fix the issue. This topic is focused on issues that you can work on directly, without the help of Microsoft Support, and issues that you can directly see but can't fix without the help of Microsoft Support.
+If an error that occurs doesn't appear in the following table, create a support request, as required, so that Microsoft Support can help you fix the issue. This section will be updated over time with additional errors so it is valuable to review this document prior to implementing or updating Modern POS registers that utilize offline databases.
 
 | Error | Description |
 |------------|------------------------|
