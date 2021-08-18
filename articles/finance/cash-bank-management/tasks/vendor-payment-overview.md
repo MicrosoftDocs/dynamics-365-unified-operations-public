@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Vendor payment overview
-description: This task guide will walk you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment. 
+description: This procedure walks you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment. 
 author: kweekley
 ms.date: 06/25/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide will walk you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment. This procedure uses the USMF demo company.
+This procedure walks you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment. This procedure uses the USMF demo company.
 
 1. Go to **Navigation pane > Modules > Accounts payable > Payments > Payment journal**.
 2. Click **New**.
