@@ -33,7 +33,7 @@ This topic describes how to invoice a sales order, including merging invoices an
 ## Create an invoice from a sales order
 1. Go to **Navigation pane > Modules > Accounts receivable > Orders > Shipped but not invoiced sales orders**.
 2. Select a sales order in the list. 
-3. On the **Action Pane**, click **Invoice > Generate > Invoice**. Note that this sales order has multiple packing slips associated with it. It will only show the word <multiple> instead of the packing slip number.  
+3. On the **Action Pane**, click **Invoice > Generate > Invoice**. Note that this sales order has multiple packing slips associated with it. It will only show the word *multiple* instead of the packing slip number.  
 4. Expand the **Parameters** section.
     - Posting must be set to Yes to post the invoice. You can also turn off posting and just print the invoice. However, you can accomplish the same result by creating a proforma invoice instead of an invoice.  
     - This option is used for batch jobs. The query is run when the batch job is run.
