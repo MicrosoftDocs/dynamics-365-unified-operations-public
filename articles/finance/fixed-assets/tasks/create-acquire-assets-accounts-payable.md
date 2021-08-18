@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create and acquire assets from Accounts payable
-description: This procedure walks through the reation and acquisition of a fixed asset with the purchasing process. 
+description: This procedure walks through the creation and acquisition of a fixed asset with the purchasing process. 
 author: saraschi2
 ms.date: 08/13/2019
 ms.topic: business-process 
