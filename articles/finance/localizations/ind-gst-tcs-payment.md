@@ -253,7 +253,7 @@ GST-TCS on vendor payment by an e-commerce operator must be accounted for under 
 3. Select **Tax information**.
 4. Notice that the GST TCS is calculated based on the defined percentage (10.0).
  
-    ![Customer payment journal page.](media/gst-tcs-payment-08.png)
+    ![GST TCS Calculation.](media/gst-tcs-payment-08.png)
 
 5. In the customer payment, on the **General** tab, notice that GST that was calculated on the invoice amount is excluded from the GST TCS calculation.
 
