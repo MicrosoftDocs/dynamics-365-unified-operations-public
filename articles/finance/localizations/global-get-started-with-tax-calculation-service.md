@@ -54,7 +54,7 @@ For a production environment, the following prerequisites must be met:
 - You must create an RCS environment for your organization, and you must have access to your account. For more information about how to create a RCS environment, see [Regulatory Configuration Service Overview](rcs-overview.md).
 - The following features must be turned on in the **Feature management** workspace of your deployed Finance or Supply Chain Management environment, based on your business needs:
 
-    - Tax Calculation service
+    - Tax Calculation
     - Support multiple VAT registration numbers
     - Tax in transfer order
     - EU sales list transfer based on tax transactions only
@@ -75,7 +75,7 @@ For a test environment, the following prerequisites must be met:
 - You must contact Microsoft, by emailing <taxcalc@microsoft.com>, to enable the flighting in your deployed Finance or Supply Chain Management environment.
 - The following features must be turned on in the **Feature management** workspace of your deployed Finance or Supply Chain Management environment, based on your business needs:
 
-	- Tax Calculation service
+	- Tax Calculation
 	- Support multiple VAT registration numbers
 	- Tax in transfer order
 	- EU sales list transfer based on tax transactions only
@@ -128,7 +128,7 @@ The steps in this section aren't related to a specific legal entity. You must co
 12. Select the draft version of the feature, and then select **Edit**. The **Tax Calculation setup** page is filled in.
 13. Select **Configuration version**. You should see the configuration version that you imported in step 8.
 
-    Microsoft provides a default tax configuration for the tax calculation. This configuration covers most of the requirements for tax calculation behaviors. It will be updated based on market feedbacks. If you must extend the configuration to meet specific requirements, see [How to build extension in tax service](./tax-service-add-data-fields-tax-integration-by-extension.md) for information about how to generate and select your own tax configuration.
+    Microsoft provides a default tax configuration for tax calculation. This configuration covers most of the requirements for tax calculation behaviors. It will be updated based on market feedbacks. If you must extend the configuration to meet specific requirements, see [How to build extension in tax service](./tax-service-add-data-fields-tax-integration-by-extension.md) for information about how to generate and select your own tax configuration.
 
 14. After you select **Configuration version**, several additional tabs appear. Follow the order that is shown here to complete the mandatory tab setup.
 
@@ -140,8 +140,8 @@ The steps in this section aren't related to a specific legal entity. You must co
 
     **Optional setup**
 
-    - **Tax group applicability** – Define a matrix that determines the tax group. If no applicability rules in this matrix match the taxable document from Dynamics 365, the tax calculation service uses the default value on the taxable document line.
-    - **Item tax group applicability** – Define a matrix that determines the item tax group. If no applicability rules in this matrix match the taxable document from Dynamics 365, the tax calculation service uses the default value on the taxable document line.
+    - **Tax group applicability** – Define a matrix that determines the tax group. If no applicability rules in this matrix match the taxable document from Dynamics 365, Tax Calculation uses the default value on the taxable document line.
+    - **Item tax group applicability** – Define a matrix that determines the item tax group. If no applicability rules in this matrix match the taxable document from Dynamics 365, Tax Calculation uses the default value on the taxable document line.
     - **Customer tax registration number applicability** – If you have multiple tax registration numbers for one customer, Tax Calculation can automatically determine the correct tax registration number. In the matrix on this tab, define the rules that should be used to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default tax registration number on taxable documents for sales transactions.
     - **Vendor tax registration number applicability** – If you have multiple tax registration numbers for one vendor, Tax Calculation can automatically determine the correct tax registration number. In the matrix on this tab, define the rules that should be used to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default tax registration number on taxable documents for purchase transactions.
     - **List code applicability** – Automatically determine the value of the **List code** field through more flexible and configurable rules. In the matrix on this tab, define the rules that should be used to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default code on taxable documents.
@@ -212,7 +212,7 @@ The steps in this section aren't related to a specific legal entity. You must co
     | D0001     | Full           |
     | D0003     | Reduced        |
 
-    For more information about how tax codes are determined in Tax Calculation service, see [Sales tax group and item sales tax group determination logic](global-sales-tax-group-determination.md).
+    For more information about how tax codes are determined in Tax Calculation, see [Sales tax group and item sales tax group determination logic](global-sales-tax-group-determination.md).
 
 23. Set up the applicability of customer tax registration numbers, vendor tax registration numbers, and list codes based on the business needs.
 24. Select **Save**, and then close the page.
@@ -228,7 +228,7 @@ The setup in this section is done by legal entity. You must configure it for eac
 1. In Finance, go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**.
 2. On the **General** tab, set the following fields:
 
-    - **Enable Tax Calculation Service** – Select this checkbox to enable the Tax Calculation Service for the legal entity. If it isn't enabled for the current legal entity, the legal entity will continue to use the existing tax engine to determine and calculate tax.
+    - **Enable Tax Calculation Service** – Select this checkbox to enable Tax Calculation for the legal entity. If it isn't enabled for the current legal entity, the legal entity will continue to use the existing tax engine to determine and calculate tax.
     - **Feature setup** – Select a published tax feature setup and version for the legal entity. For more information about how to set up and complete a published tax feature, see the previous section of this topic.
     - **Business Process** – Select the business processes to enable.
 
