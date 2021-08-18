@@ -2372,8 +2372,6 @@
                 href: localizations/apac-ind-gst-reference-groups.md
             - name: Tax transactions
               items: 
-              - name: GST TDS on payment of goods and services
-                href: localizations/ind-gst-tds-payment-goods-services.md
               - name: Purchase transactions
                 items:
                 - name: Purchases from unregistered vendors
@@ -2408,6 +2406,10 @@
                   href: localizations/apac-ind-GST-purchase-return-order.md
                 - name: Vendor advance payments where there are reverse charges
                   href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                - name: GST TDS on payment of goods and services
+                  href: localizations/ind-gst-tds-payment-goods-services.md
+                - name: GST TCS on payment of goods and services
+                  href: localizations/ind-gst-tcs-payment.md
               - name: Sales transactions
                 items:
                 - name: Sales of taxable goods to consumers
