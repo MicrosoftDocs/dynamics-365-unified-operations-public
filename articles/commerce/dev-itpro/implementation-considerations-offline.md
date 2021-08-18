@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce offline database implementation considerations and troubleshooting
+title: Commerce offline implementation considerations and troubleshooting
 description: This topic provides an overview of Commerce
 author: jashanno
 ms.date: 05/11/2021
@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
 ---
 
-# Commerce offline database implementation considerations and troubleshooting
+# Commerce offline implementation considerations and troubleshooting
 
 [!include[banner](../includes/banner.md)]
 
@@ -43,9 +43,22 @@ Before you go through this topic, it's important that you understand the concept
 
 For details regarding features that enhance or alter the data synchronization of an offline database (Based on Commerce Data Exchange (CDX)), review the CDX features detailed in the [Commerce Data Exchange best practices](CDX-Best-Practices.md)
 
+| Feature name | Description |
+|--------------|-------------|
+| Advanced offline | This feature consists of a series of settings in the offline profile. These settings make additional offline switching scenarios available, give users the ability to switch to offline mode before they sign in to the POS, and allow for enhanced Commerce headquarters availability testing, so that you can switch to offline mode more often and more easily return to online status. |
+| Offline status dashboard | A new dashboard showing the latest offline status, error, and details of the database for each device. |
+| Performance based offline switching | In. |
+
 - **Pause offline synchronization** – As a retail organization expands, it should take advantage of this offline profile feature as fully as possible. Growth is good, but data generation should be managed to help minimize the performance impact on the currently operating business. This feature enables the creation of channels, registers, and databases, but without requiring a massive, performance-affecting amount of data generation long before the registers are ever used.
 - **Advanced offline** – The previously described advanced offline features can be helpful, but they should be used only if they suit the priorities and values of the retail organization. Although the advanced offline health check interval can help maximize online time, it will also be more forceful about pushing a register to offline mode if Commerce headquarters or the Commerce Scale Unit becomes unresponsive or unavailable for any reason. It can be valuable to maximize the performance of registers by quickly switching to offline mode instead of waiting for time-outs or repeated retry responses. However, this approach must be understood and managed against the standard seamless offline model that tries to stay online as long as possible, to allow for operations such as loyalty operations, additional payment methods, and customer orders.
 
+### Advanced offline
+
+This feature can be configured in the offline profile. Three settings are related to it:
+
+- **Allow manual switch to offline before sign in** – This setting lets Modern POS users switch to offline mode before they sign in to the POS. It's helpful in scenarios where time-outs might occur before sign-in is completed, or where atypical response codes from the Commerce Scale Unit (Cloud or Self-hosted) are occurring. When this setting is turned on, a Modern POS user who is using an offline database can access the **Settings** menu from the POS sign-in page. This menu includes a new option for switching to offline mode. By selecting this option, the user can sign in directly against the offline database instead of first having to sign in via a call to the Commerce Scale Unit.
+- **Enable advanced offline switching** – This setting enables Modern POS to switch to offline mode more easily and more often. Typically, Modern POS tries to maintain its online status and switches to offline mode only when such a switch is required to continue functionality. When this setting is turned on, Modern POS can switch more often, especially in scenarios that involve sign-in and additional Commerce Scale Unit responses that might be considered a delay to POS operation. This setting is most valuable in scenarios where speed is a higher priority than maintaining availability of online-only features (for example, paying with a gift card, which requires connection to Headquarters).
+- **System health check interval (mins)** – This setting works as a subfeature of the **Enable advanced offline switching** setting that was just described. Usually, when that setting is turned off, and Modern POS is in offline mode, the POS waits a specific amount of time, based on configuration in the **Offline profile**, and then tries to reconnect to the Commerce Scale Unit during the next operation call that occurs. This advanced offline health check provides a more frequent, operation-independent method of checking online availability and switching more quickly as soon as online functionality is available again.
 
 
 ## Implementation considerations
@@ -67,6 +80,8 @@ While not an exhaustive list, here are the most used SQL Server editions for Dyn
 | Enterprise | SQL Server Enterprise is rarely necessary, but there are scenarios where it could be valuable. For example, if hosting a CSU (self-hosted) in a datacenter VM for use across a large area of many devices, removing the limitations could be valuable to maximize performance capabilities. |
 
 ### Which features to use
+
+
 
 ## Troubleshooting
 
