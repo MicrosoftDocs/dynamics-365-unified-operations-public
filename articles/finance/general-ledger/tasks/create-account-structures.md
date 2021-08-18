@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create account structures
-description: This task guide steps through creating an account structure. 
+description: This procedure walks through creating an account structure. 
 author: aprilolson
 ms.date: 07/01/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide steps through creating an account structure. The steps use demo data company USMF.
+This procedure walks through creating an account structure. The steps use demo data company USMF.
 
 1. Go to **Navigation pane > Modules > General ledger > Chart of accounts > Structures > Configure account structures**.
 2. On the **Action pane**, click **New** to open the drop dialog.
