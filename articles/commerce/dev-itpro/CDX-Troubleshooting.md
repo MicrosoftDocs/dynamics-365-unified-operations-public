@@ -63,6 +63,7 @@ If an error that occurs doesn't appear in the following table, create a support 
 
 ## Resources
 
+- [Commerce offline implementation considerations and troubleshooting](implementation-considerations-offline.md)
 - [Commerce Data Exchange best practices](CDX-Best-Practices.md)
 - [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
 - [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
