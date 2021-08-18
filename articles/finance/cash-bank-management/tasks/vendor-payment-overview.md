@@ -34,7 +34,7 @@ This procedure walks you through various methods used to create vendor payments,
 3. Select the payment journal in which to save the vendor payments. 
 4. Select the journal or manually enter it.
 5. Click **Lines**.
-6. On **Ation pane**, click **Payment proposal**.
+6. On the **Action pane**, click **Payment proposal**.
 7. Click **Create payment proposal**. The payment proposal is a query used to select invoices for payment. You can edit the list of invoices to pay before creating or generating the vendor payments.
 8. Select invoices for payment by due date, cash discount, or both. 
 9. Enter the date for comparing to the due date or cash discount. 
