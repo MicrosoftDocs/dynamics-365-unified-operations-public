@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-08-31
 
 [!include[banner](../includes/banner.md)]
 
-This topic is intended for people who implement offline functionality related to the Dynamics 365 Commerce Modern POS or Store Commerce applications. It gives an overview, implementation tips, and overall guidance and troubleshooting that should be considered.
+This topic is intended for people who implement offline functionality related to the Dynamics 365 Commerce Modern POS or Store Commerce applications. It gives an overview, implementation tips, and overall guidance that should be considered.
 
 ## Overview
 
