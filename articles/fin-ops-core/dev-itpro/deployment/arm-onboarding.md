@@ -42,7 +42,7 @@ To deploy Azure Resource Manager topologies, you must complete the onboarding pr
 ## Azure Resource Manager onboarding process
 You can consider Azure Resource Manager onboarding a two-step procedure, where each step has its own sub-procedures. You must complete all these procedures for every subscription that you add to the Microsoft Dynamics Lifecycle Services (LCS) project.
 
-1.  Authorize the LCS Deployment Service (DSU) to work on the Azure subscription.
+1.  Authorize the LCS deployment service to work on the Azure subscription.
     1.  Authorize the workflow.
     2.  Set the contributor workflow.
 
@@ -51,16 +51,16 @@ You can consider Azure Resource Manager onboarding a two-step procedure, where e
     2.  Optional: Upload the Management certificate.
     3.  Configure deployment settings.
 
-### Authorize the LCS DSU to work on the Azure subscription
+### Authorize the LCS deployment service to work on the Azure subscription
 
-Complete the following procedures to authorize the LCS DSU to work on the Azure subscription.
+Complete the following procedures to authorize the LCS deployment service to work on the Azure subscription.
 
 #### Authorize the workflow
 
 The administrator of the tenant must complete the following procedure.
 
 1.  In LCS, on the **Project** page, in the **Environments** section, click **Microsoft Azure settings**.
-2.  On the **Project settings** page, on the **Azure connectors** tab, in the **Organization list** group, click **Authorize** to start the Azure Resource Manager Contributor workflow. This workflow sets up permissions for the DSU, so that it can deploy to your subscription on your behalf.
+2.  On the **Project settings** page, on the **Azure connectors** tab, in the **Organization list** group, click **Authorize** to start the Azure Resource Manager Contributor workflow. This workflow sets up permissions for the deployment service, so that it can deploy to your subscription on your behalf.
 3.  On the **Grant admin consent** page, click **Authorize**. Then sign in by using the administrator account of the Azure subscription that you must connect to, and click **Accept**. The authorization is now shown as completed.
 
 #### Set the contributor workflow
