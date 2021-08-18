@@ -4,7 +4,7 @@
 title: Tax Calculation overview
 description: This topic explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
-ms.date: 08/09/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,7 +37,7 @@ Tax Calculation is a hyper-scalable multitenant service that enables the global 
 Tax Calculation integrates with Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Eventually, it will also integrate with Dynamics 365 Project Operations, Dynamics 365 Commerce, and other first-party and third-party applications.
 
 > [!IMPORTANT]
-> When you enable the Tax Calculation service, some operations on related data might be performed in a data center other than the data center that maintains your service data. Review the [Terms and Conditions](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) before you enable the Tax Calculation service. Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+> When you enable Tax Calculation, some operations on related data might be performed in a data center other than the data center that maintains your service data. Review the [Terms and Conditions](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) before you enable Tax Calculation. Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Tax Calculation is a microservice-based tax engine that offers exponential scalability and can help you perform the following tasks:
 
@@ -50,7 +50,7 @@ Tax Calculation is a microservice-based tax engine that offers exponential scala
 - Support list code determination.
 - Support tax calculation parameters at the tax jurisdiction level.
 
-To use the Tax Calculation Service, install the Tax Calculation add-in from your project in Microsoft Dynamics Lifecycle Services. Then complete the setup in [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/), and enable the tax calculation service in Finance and Supply Chain Management. For more information, see [Get started with tax service](global-get-started-with-tax-calculation-service.md).
+To use Tax Calculation, install the Tax Calculation add-in from your project in Microsoft Dynamics Lifecycle Services. Then complete the setup in [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/), and enable Tax Calculation in Finance and Supply Chain Management. For more information, see [Get started with tax service](global-get-started-with-tax-calculation-service.md).
 
 ## Availability
 
@@ -73,14 +73,14 @@ Tax Calculation is deployed in the following Azure geographies. More Azure geogr
 
 ## Data flow
 
-Here is an outline of the data flow process for the Tax Calculation Service. 
+Here is an outline of the data flow process for tTax Calculation. 
 
 1. In RCS, view and import taxable document model configurations and model mapping configurations. If you must extend configurations for an advanced scenario, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 2. In RCS, create or maintain tax features. You can use tax features to maintain tax rates and tax applicability rules.
 3. After the tax feature setup is completed, publish the tax configurations and tax features from RCS to the Global repository.
 4. In Finance, select which tax feature setup version to use for a specific legal entity.
-5. In Finance and Supply Chain Management, operate transactions as usual. When the Tax Calculation Service is needed, the client will collect information from the transaction, such as the sales order or purchase order, and package the information as payload. A request will then be sent to the Tax Calculation Service to calculate the tax.
-6. The Tax Calculation Service receives the tax calculation request from the client, completes the calculation, and then returns the tax result to the client.
+5. In Finance and Supply Chain Management, operate transactions as usual. When Tax Calculation is needed, the client will collect information from the transaction, such as the sales order or purchase order, and package the information as payload. A request will then be sent to calculate the tax.
+6. The tax calculation request is received from the client and the calculation is completed. The tax result is then returned to the client.
 7. The Dynamics 365 client receives the tax result and presents the tax calculation result on a sales tax page.
 
 ## Supported transactions
