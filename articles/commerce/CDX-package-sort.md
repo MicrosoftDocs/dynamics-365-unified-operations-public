@@ -21,7 +21,7 @@ This feature, titled more simply as **Sort CDX packages by primary key** d.
 
 ## Prerequisites
 
-The **Sort CDX packages by primary key** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The **Sort CDX packages by primary key** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Feature value
 
