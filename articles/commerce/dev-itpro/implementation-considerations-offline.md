@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce offline database implementation considerations and troubleshooting
+title: Commerce offline database implementation considerations
 description: This topic is intended for people who implement offline functionality related to the Dynamics 365 Commerce Modern POS or Store Commerce applications. It gives an overview, implementation tips, and overall guidance and troubleshooting that should be considered.
 author: jashanno
 ms.date: 08/18/2021
@@ -13,7 +13,7 @@ ms.author: jashanno
 ms.search.validFrom: 2021-08-31
 ---
 
-# Commerce offline database implementation considerations and troubleshooting
+# Commerce offline database implementation considerations
 
 [!include[banner](../includes/banner.md)]
 
