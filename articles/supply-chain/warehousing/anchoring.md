@@ -47,7 +47,7 @@ Before you work through the example scenario, you must enable anchoring for the 
 Use the following procedure to enable anchoring for a mobile device menu item.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
-1. In the list pane, select the record that is named *Sales Picking*. If no existing record has this name, create it. Confirm or set the following values for the record:
+1. In the list pane, select the record that is named *Sales Picking*. If no existing record has this name, create it. Confirm or set the following values for the record: <!--KFM: It would be nice to highlight those of the following settings that are especially relevant to what we are trying to show in this scenario and use a few words to explain why we have set them like that. (Nice to have) -->
 
     - **Menu item name:** *Sales Picking*
     - **Title:** *Sales Picking*
@@ -68,7 +68,7 @@ Use the following procedure to configure a work template to enable staging.
 1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
 1. In the **Work order type** field, select *Sales orders*.
 1. In the grid, select the **61 SO Stage** work template.
-1. In the **Work Template Details** section, make sure that the following lines are configured:
+1. In the **Work Template Details** section, make sure that the following lines exist and are configured as shown: <!--KFM: It would be nice to highlight those of the following settings that are especially relevant to what we are trying to show in this scenario and use a few words to explain why we have set them like that. (Nice to have) -->
 
    - Line 1:
      - **Work type:** *Pick*
@@ -194,14 +194,14 @@ Follow these steps to create a load for the orders that you created for this sce
 1. Go to **Warehouse management \> Loads \> Load planning workbench**.
 1. On the **Sales lines** tab, find and select all the sales order lines for sales order 1 and sales order 2.
 1. On the Action Pane, on the **Supply and demand** tab, from the **Add** group, select **To new load**.
-1. In the **Load template assignment** dialog, in the **Load template ID** field, select a load template, such as *Stnd Load Template*. <!-- KFM: I get a warning that the weight or volume is exceeded. Does that matter? Maybe use "20' Container" instead? -->
+1. In the **Load template assignment** dialog, in the **Load template ID** field, select a load template, such as *Stnd Load Template*. <!-- KFM: I get a warning that the weight or volume is exceeded. Does that matter? Maybe use "40' Container" instead? -->
 1. Select **OK** to close the dialog.
 1. In the **Loads** section, find and select the load that you created.
 1. On the toolbar, select **Release \> Release to warehouse**.
 1. In the **Release load to warehouse** dialog, select **OK** to release the selected load to the warehouse.
 1. Go to **Warehouse management \> Work \> All work** to view the work that was created. Make a note of the **Work ID** value, because you will need it in the next procedure. <!-- KFM: For me, no work was ever created. Are we missing a step? Also, might we select the load and then use the **Related information > Work** toolbar button instead of opening **All work**? -->
 
-   Two work IDs were created for each shipment to bring inventory from the picking locations to the staging location and from the staging location to the baydoor.
+Two work IDs were created for each shipment to bring inventory from the picking locations to the staging location and from the staging location to the baydoor.
 
 ### Sales order picking to the staging location for the first shipment
 <!-- KFM: I could not continue because I have no work. Stopped review here. -->
