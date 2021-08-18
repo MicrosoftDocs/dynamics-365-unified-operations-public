@@ -37,7 +37,9 @@ What is the difference between the two?
 
 ## Resolution
 
-Organizations typically use balancing dimensions to generate a balance sheet that’s in balance at the financial dimension level. Before setting either the **Balancing financial dimension** or the **Require the dimension to be balanced** field to **Yes**, you’ll need to determine whether or not enabling these features will change any posted transactions. If the selected financial dimension isn't already balanced on the sheet isn’t balanced, setting either field to Yes won’t bring unbalanced dimensions into balance. You might need to enter adjusting entries manually to bring the balance sheet into balance before setting either of the fields to Yes. 
+Organizations typically use balancing dimensions to generate a balance sheet that's in balance at the financial dimension level. Enabling either feature will not bring posted, unbalanced dimensions into balance. You must first enter adjusting entries manually to bring the balance sheet into balance before setting either of the fields to Yes.
+
+*Organizations typically use balancing dimensions to generate a balance sheet that’s in balance at the financial dimension level. Before setting either the **Balancing financial dimension** or the **Require the dimension to be balanced** field to **Yes**, you’ll need to determine whether or not enabling these features will change any posted transactions. If the selected financial dimension isn't already balanced on the sheet isn’t balanced, setting either field to Yes won’t bring unbalanced dimensions into balance. You might need to enter adjusting entries manually to bring the balance sheet into balance before setting either of the fields to Yes.* 
 
 The two referenced options are mutually exclusive; the option that your organization uses should be based on your business requirements.  We often hear of customers marking the balancing dimension option on both the ledger and financial dimensions, completing some or all of the additional setup that's required, but who still aren’t able to post due to an imbalance at the financial dimension level. The following information explains each option, along with an overview of how to set each one up. 
 
@@ -49,7 +51,7 @@ The balancing dimension on the **Ledger** setup page is used to enable interunit
 
   - This feature only lets you select one financial dimension to be the balancing dimension.
 
-  - Don’t select the dimension yet in the **Ledger setup** page yet.
+  - Don’t select the dimension yet in the **Ledger setup** page.
 
   - Be sure that your balance sheet is already balanced for the selected financial dimension.
 
@@ -61,7 +63,7 @@ The balancing dimension on the **Ledger** setup page is used to enable interunit
 
 - Define the interunit debit and credit main accounts on the **Accounts for automatic transactions** page (**General ledger > Posting setup > Accounts for automatic transactions**).
 
-- Set the financial dimension on **Balancing financial dimension** field on the **Ledger** setup page (**General ledger > Ledger setup > Ledger**) to Yes.
+- Select a financial dimension to use for balancing on **Balancing financial dimension** field on the **Ledger** setup page (**General ledger > Ledger setup > Ledger**).
 
 If the selected financial dimension isn’t balanced as transactions are entered and posted, the system will automatically add the debit or credit entries that are needed to balance the accounting entry during posting. The debit and credit ledger accounts for the interunit transaction are shown on the posted voucher in General ledger, but they won’t be shown on the journals or source documents for which the accounting entries were posted.
 
@@ -81,9 +83,9 @@ We often see customers defining the balancing dimension in both the ledger setup
 
 - Define the posting definitions for each type of journal or source document used by your organization. Posting definitions consume the ledger accounts from an unposted journal or source document as ‘match criteria’. It then returns the ‘generated entries’ which becomes the accounting entry. If the posting definition is correctly setup, the generated entry includes the match criteria ledger accounts, plus additional accounts to balance the accounting entry at the dimension level. For more information, see [Posting definitions](posting-definitions.md). Posting definitions aren’t supported on every type of transaction. If a posting definition can’t be defined for a journal or source document, there are two options:
 
-  - The transaction must be balanced at the financial dimension value by entering the transaction manually. For example, if a general journal entry is made and the Department dimension is the balancing dimension, you must ensure that each department value is in balance.  If the dimension isn’t balanced for each department value, the voucher won’t post until the imbalance is corrected. Correcting the imbalance requires manually adding an interunit debit or interunit credit to the voucher.
+  - The transaction must be balanced at the financial dimension value by balancing the transaction manually. For example, if a general journal entry is made and the Department dimension is the balancing dimension, you must ensure that each department value is in balance.  If the dimension isn’t balanced for each department value, the voucher won’t post until the imbalance is corrected. Correcting the imbalance requires manually adding an interunit debit or interunit credit to the voucher.
 
-  - You shouldn’t use posting definition, which means you can’t use the Balancing financial dimension feature when you set up financial dimensions. If you use posting definitions, you’ll be required to use balancing dimensions in the ledger setup. 
+  - You shouldn’t use posting definition, which means you can’t use the Balancing financial dimension feature when you set up financial dimensions. If you can't use posting definitions, you’ll be required to use balancing dimensions in the ledger setup. 
 
 - After posting definitions are defined, the financial dimensions can be marked as needed to balance. 
 
