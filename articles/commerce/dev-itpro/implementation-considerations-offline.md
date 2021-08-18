@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include[banner](../includes/banner.md)]
 
-This topic is intended for people who implement offline functionality related to the Dynamics 365 Commerce Modern POS or Store Commerce applications. It gives an overview, implementation tips, and overall guidance and troubleshooting that should be considered.
+This topic is intended for people who implement offline functionality related to the Dynamics 365 Commerce Modern POS or Store Commerce applications. This article shall detail the features and functionality, implementation tips, and troubleshooting methods related to the usage of offline functionality.
 
 ## Overview
 
@@ -41,15 +41,16 @@ Before you go through this topic, it's important that you understand the concept
 
 ### Important offline features
 
-For details regarding features that enhance or alter the usage of an offline database, review the offline features detailed in the [Commerce Data Exchange best practices](CDX-Best-Practices.md)
+For details regarding features that enhance or alter the data synchronization of an offline database (Based on Commerce Data Exchange (CDX)), review the CDX features detailed in the [Commerce Data Exchange best practices](CDX-Best-Practices.md)
 
 ## Implementation considerations
 
-This section describes configurations that you should consider when you begin to plan your implementation. The features that are described here are related to data management and data configuration. Before you read the guidance that is provided here, we highly recommend that you read [Commerce Data Exchange best practices](CDX-Best-Practices.md).
+This section describes configurations that you should consider when you begin to plan your POS usage scenarios when functioning offline. The features that are described here are related to data management and data configuration. Before you read the guidance that is provided here, we highly recommend that you read [Commerce Data Exchange best practices](CDX-Best-Practices.md).
 
-- **Create a Scheduler job calendar** – How ofll ejob).
-- **Pause offline synchronization** – As a ret used.
-- **Advanced offline** – The previously descr.
+- **Pause offline synchronization** – As a retail organization expands, it should take advantage of this offline profile feature as fully as possible. Growth is good, but data generation should be managed to help minimize the performance impact on the currently operating business. This feature enables the creation of channels, registers, and databases, but without requiring a massive, performance-affecting amount of data generation long before the registers are ever used.
+- **Advanced offline** – The previously described advanced offline features can be helpful, but they should be used only if they suit the priorities and values of the retail organization. Although the advanced offline health check interval can help maximize online time, it will also be more forceful about pushing a register to offline mode if Commerce headquarters or the Commerce Scale Unit becomes unresponsive or unavailable for any reason. It can be valuable to maximize the performance of registers by quickly switching to offline mode instead of waiting for time-outs or repeated retry responses. However, this approach must be understood and managed against the standard seamless offline model that tries to stay online as long as possible, to allow for operations such as loyalty operations, additional payment methods, and customer orders. For offline specific features, recommendations, and troubleshooting, review the [Commerce offline database implementation considerations and troubleshooting](implementation-considerations-offline.md) document.
+
+
 
 ### SQL Server versions and licenses 
 SQL Server comes in a variety of versions (such as SQL Server 2017 and SQL Server 2019) and a variety of editions (such as SQL Standard and SQL Express). For more in-depth information about these versions, see [Editions and supported features of SQL Server 2019 (15.x)](/sql/sql-server/editions-and-components-of-sql-server-version-15?view=sql-server-ver15#Cross-BoxScaleLimits). Also see the "Additional resources" later in this topic regarding additional versions.
@@ -67,6 +68,7 @@ While not an exhaustive list, here are the most used SQL Server editions for Dyn
 
 ## Additional resources
 
+- [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
 - [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
 - [Commerce Data Exchange best practices](CDX-Best-Practices.md)
 - [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
