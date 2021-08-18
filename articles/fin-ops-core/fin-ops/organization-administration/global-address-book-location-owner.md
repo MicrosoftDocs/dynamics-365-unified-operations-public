@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Managing location owners
+title: Global address book and location owners
 description: This topic explains location owners and how to change the owner in the global address book.
 author: jaredha
 ms.date: 08/16/2021
@@ -25,7 +25,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Managing location owners
+# Global address book and location owners
 
 [!include [banner](../includes/banner.md)]
 
