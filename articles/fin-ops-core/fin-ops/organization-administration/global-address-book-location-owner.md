@@ -65,7 +65,7 @@ Optionally, you can update the location owner in the **Manage addresses** page.
 This will assign the location ownership of the address to the current party.
 
 > [!NOTE]
-> The **Change location owner** option is only available if the party is not the owner of the selected location.
+> The **Change location owner** option is only available if the current party is not the owner of the selected location.
 
 ### Confirm location owner
 You can confirm location owners for one or more locations on the **Confirm location owners** page. This page contains a list of locations that are associated to a single party for which the associated party is not the location owner.
