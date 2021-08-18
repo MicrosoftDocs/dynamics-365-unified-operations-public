@@ -98,8 +98,8 @@ The following catalog is organized from core knowledge to specific domains, and 
 
 ## Exams<a name="exams"></a>
 
-| Content | Description | Format | Length |
-|---------|-------------|--------|--------|
+| Content | Description | Format |
+|---------|-------------|--------|
 | [Microsoft Certified: Dynamics 365 for Finance and Operations, Supply Chain Management Functional Consultant Associate](https://www.microsoft.com/learning/d365-functional-consultant-supply-chain-management.aspx) | Microsoft Certified: Dynamics 365 for Finance and Operations, Supply Chain Management Functional Consultants streamline cost accounting, inventory management, master planning, and warehouse management for their clients. | Certification, cost varies by region |
 | [Microsoft Certified: Dynamics 365 for Finance and Operations, Manufacturing Functional Consultant Associate](https://www.microsoft.com/learning/d365-functional-consultant-manufacturing.aspx) | Microsoft Certified: Dynamics 365 for Finance and Operations, Manufacturing Functional Consultants integrate digital and physical systems; improve visibility, manufacturing efficiency and flexibility; and lower costs for their clients. | Certification, cost varies by region |
 | [Exam MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | This exam measures your ability to accomplish the following technical tasks: use common functionality and implementation tools; configure security, processes, and options; perform data migration; and validate and support the solution. | Exam, cost varies by region |

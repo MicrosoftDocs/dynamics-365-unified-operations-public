@@ -43,7 +43,7 @@ For functional consultants, our job-task analysis research showed that everyone 
 ## Core platform knowledge<a name="core-platform-knowledge"></a>
 
 | Content | Description | Format | Length |
-|---|---|---|---|---|
+|---------|-------------|--------|--------|
 | [Use Lifecycle Services to design and plan an implementation of Finance and Operations apps](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Lifecycle Services (LCS) is a collaborative workspace that customers and their partners use to manage Finance and Operations apps projects from pre-sales to the implementation phase and finally to the production environment. It provides checklists and tools that help you manage the project, including pre-build methodologies to help with implementation and regularly updated services. | Free, self-paced online learning path | 2 hours |
 | [Configure your organization in Finance and Operations apps](/learn/paths/configure-your-organization-finance-ops/) | As a functional consultant who works with Finance and Operations apps, you must understand how to set up an organization for your customer. This learning path shows you, amongst other tasks, how to set up legal entities, implement security settings, personalize the user interface for users, design, and build mobile apps, and implement common integrations. | Free, self-paced online learning path | 12 hours |
 | [Migrate data and go live with Finance and Operations apps](/learn/paths/migrate-data-go-live-finance-operations/) | As a functional consultant, you must understand how to prepare your customer's data for migration, work with data management, and perform user acceptance testing to go live with Finance and Operations apps. | Free, self-paced online learning path | 4 hours |
@@ -82,7 +82,7 @@ For functional consultants, our job-task analysis research showed that everyone 
 ## Manufacturing<a name="manufacturing"></a>
 
 | Content | Description | Format | Length |
-|---|---|---|---|---|---|
+|---------|-------------|--------|--------|
 | [Configure and use discrete manufacturing in Dynamics 365 Supply Chain Management](/learn/paths/configure-use-discrete-manufacturing-dyn365-supply-chain-mgmt/) | If a company only produces simple products, production can be scheduled manually with the correct bill of materials (BOM) parts arriving on the production floor, at the correct time, and at the proper resource. As a functional consultant for manufacturing, you need to know how to configure Dynamics 365 Supply Chain Management for discrete manufacturing, so your customer can perform and control the production lifecycle. | Free, self-paced online learning path | 16.5 hours |
 | [Configure and use lean manufacturing in Dynamics 365 Supply Chain Management](/learn/paths/configure-use-lean-manufacturing-dyn365-supply-chain-mgmt/) | Lean manufacturing is a journey of continuous improvement. The goal is to produce exactly what the customer wants, when the customer wants it, and to do it economically. You can use lean manufacturing in a unified (mixed-mode) manufacturing environment that combines various supply, production, and sourcing strategies. These strategies include production orders, batch orders for process industries, purchase orders, and transfer orders. The lean manufacturing architecture in Dynamics 365 Supply Chain Management consists of production flows, activities, and Kanban rules. | Free, self-paced online learning path | 12.5 hours |
 | [Configure and use process manufacturing in Dynamics 365 Supply Chain Management](/learn/paths/configure-use-process-manufacturing-dyn365-supply-chain-mgmt/) | Process manufacturing is associated with formulas and manufacturing recipes, in contrast with discrete manufacturing, which uses discrete units, and bills of materials. Process manufacturing is used in manufacturing environments where production is completed in batch or semi-continuous processes. | Free, self-paced online learning path | 10.5 hours |
@@ -94,8 +94,8 @@ For functional consultants, our job-task analysis research showed that everyone 
 
 ## Supply chain management<a name="supply-chain-management"></a>
 
-| Content  | Description   | Format  | Length    |
-|---|---|---|---|---|---|
+| Content | Description | Format | Length |
+|---------|-------------|--------|--------|
 | [Configure and manage products and inventory in Dynamics 365 Supply Chain Management](/learn/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/) | Product information is the pillar of supply chain and retail applications across all industries. In the various modules of a business solution, product-specific information and configuration are required to manage the business processes that are related to products, product families, bills of materials, and product categories. Inventory reports show you in a variety of ways how much inventory you have and explain how to be more effective in your inventory investments. Master planning helps you streamline your planning based on predetermined factors, so you can efficiently plan what materials need to be purchased, transferred, or manufactured. | Free, self-paced online learning path | 14 hours |
 | [Configure and manage procurement and vendors in Dynamics 365 Supply Chain Management](/learn/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | The process of finding and working with vendors, purchasing products, and ensuring the quality of goods and services are all important factors that impact a company's reputation and success. | Free, self-paced online learning path | 14 hours |
 | [Configure and manage sales, and customers in Dynamics 365 Supply Chain Management](/learn/paths/configure-manage-sales-customers-dyn365-supply-chain-mgmt/) | The process of working with customers, understanding the life cycle of the sales process, and setting up sales agreements are all important factors that impact a company's success. | Free, self-paced online learning path | 7 hours |
@@ -118,8 +118,8 @@ For functional consultants, our job-task analysis research showed that everyone 
 
 ## Exams<a name="exams"></a>
 
-| Content  | Description  | Format  |
-|---|---|---|---|---|
+| Content | Description | Format |
+|---------|-------------|--------|
 | [Exam MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | This exam measures your ability to accomplish the following technical tasks: use common functionality and implementation tools; configure security, processes, and options; perform data migration; and validate and support the solution. | Exam, cost varies by region |
 | [Exam MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | This exam measures your ability to accomplish the following technical tasks: implement product information management; implement inventory management; implement and manage supply chain processes; and implement warehouse management and transportation management and perform business processes. | Exam, cost varies by region |
 | [Exam MB-320: Microsoft Dynamics 365 for Finance and Operations, Manufacturing](https://www.microsoft.com/learning/exam-MB-320.aspx) | This exam measures your ability to accomplish the following technical tasks: set up and configure manufacturing; create and manage production and lean orders; and create, process, and manage production batch orders. | Exam, cost varies by region |
