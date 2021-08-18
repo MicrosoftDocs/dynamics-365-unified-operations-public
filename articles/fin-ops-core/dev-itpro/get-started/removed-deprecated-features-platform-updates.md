@@ -38,6 +38,19 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Platform updates for version 10.0.21 of Finance and Operations apps
+
+### Skype presence support
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Skype for Business Online has been retired. See [The Skype for Business Online service has retired](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/the-skype-for-business-online-service-has-retired/ba-p/2596601) for more details. |
+| **Replaced by another feature?**   | Not currently, though we may consider adding presence from Teams in the future.|
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. The **Skype enabled** setting has been defaulted to off with the 10.0.21 release. Removal date is targeted for April 2022; however, the feature will stop functioning once the Skype team shuts down the service. |
+ 
+
 ## Feature deprecation notice effective May 2021
 
 ### Globalization portal in Lifecycle Services (LCS)
