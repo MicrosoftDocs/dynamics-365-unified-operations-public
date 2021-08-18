@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing
 description: This topic provides information that will help you get started with Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -186,7 +186,7 @@ For the specific steps, see the "Get started" documentation that is available fo
 7. Set the **Deploy to service environment** option to **No**.
 10. Select **OK**.
 
-## Turn on the Electronic invoicing feature in Dynamics 365 Finance or Dynamics 365 Supply Chain Management
+## Turn on the Electronic invoicing feature in Finance or Supply Chain Management
 
 1. Sign in to Finance or Supply Chain Management, and verify that you're in the correct legal entity.
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
