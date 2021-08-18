@@ -127,6 +127,14 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     7. Go to **Dynamics 365 \> Settings \> Security**, select **Teams**, and then change the view to **All Owner Teams**.
     8. Select **default team for the root Business Unit**, select **Manage Roles**, and then, in the **Manage Team Roles** dialog box, select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each table integrated through dual-write. 
     
+    >[!NOTE]
+    >Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables.
+    >All dual-write users will need to be added to the **Dual-Write App User** security role.
+    >
+    >In order to allow non-administrator users to create rows in a dual-write enabled table, they will need to be assigned 
+    >the **Dual-Write Runtime User** security role
+
+    
       For instructions on how to create a Security Role, see [Create or configure a custom security role](/power-platform/admin/database-security#create-or-configure-a-custom-security-role).
       
       > [!NOTE]
