@@ -214,7 +214,7 @@ The steps in this section aren't related to a specific legal entity. You must co
 
     For more information about how tax codes are determined in Tax Calculation service, see [Sales tax group and item sales tax group determination logic](global-sales-tax-group-determination.md).
 
-23. Repeat the steps to set up the applicability of customer tax registration numbers, vendor tax registration numbers, and list codes.
+23. Set up the applicability of customer tax registration numbers, vendor tax registration numbers, and list codes based on the business needs.
 24. Select **Save**, and then close the page.
 25. Select **Change status** \> **Complete**. After the status is changed to **Complete**, the version can no longer be edited.
 26. Select **Change status** \> **Publish**. This version of the tax feature setup will be pushed to the global repository and will be visible to each legal entity in Finance.
