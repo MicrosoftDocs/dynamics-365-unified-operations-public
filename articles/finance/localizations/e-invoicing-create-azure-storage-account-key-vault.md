@@ -4,7 +4,7 @@
 title: Create an Azure storage account and a key vault
 description: This topic explains how to create an Azure storage account and key vault. 
 author: gionoder
-ms.date: 04/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,21 +48,21 @@ In this topic, you will complete two main steps:
 ## Set up the Azure storage account to get the storage account URI
 
 1. Open the storage account that you plan to use with Electronic invoicing.
-2. Go to **Data storage** \> **Containers**, and create a new container.
+2. Go to **Data storage** > **Containers**, and create a new container.
 3. Enter a name for the container, and set the **Public access level** field to **Private (no anonymous access)**.
-4. Open the container, and go to **Settings \> Access policy**.
+4. Open the container, and go to **Settings** > **Access policy**.
 5. Select **Add policy** to add a stored access policy.
 6. Set the **Identifier** and **Permissions** fields as appropriate. In the **Permissions** field, you should select all permissions.
 
     ![Granting Blob storage permission.](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
 
 7. Enter the start and expiry dates. The expiry date should be in future.
-8. Select **OK** to save the policy, and then **Save** your changes to the container.
-9. Go to **Settings \> Shared access tokens**, and set the fields. 
-10. Enter the start and expiry dates. The expiry date should be in future.
-11. In the **Permissions** field, you should select the following permissions: Read, Add, Create, Write, Delete, List. 
-12. Click **Generate SAS token and URL**.
-13. Copy and store the value in the **Blob SAS URL** field. This value will be used in the next procedure and will be referred to as the *shared access signature URI*.
+8. Select **OK** to save the policy, and then save your changes to the container.
+9. Go to **Settings** > **Shared access tokens**, and set the field values. 
+10. Enter the start and end dates. The end date should be in future.
+11. In the **Permissions** field, select the following permissions: **Read**, **Add**, **Create**, **Write**, **Delete**, **List**. 
+12. Select **Generate SAS token and URL**.
+13. Copy and store the value in the **Blob SAS URL** field. This value will be used in the next procedure and referred to as the *shared access signature URI*.
 
 ## Set up the key vault to store the storage account URI
 
