@@ -64,6 +64,6 @@ To resolve this change in Dynamics 365 Finance, complete the following steps aft
 
 The cash flow forecasting function in Cash and bank management and the Cash flow forecasts in Finance insights must be set up and enabled to correctly show the data in the workspace.  
 
-First the cash flow forecasting and liquidity accounts must be set up and enabled. For more information, see [Cash flow forecasting]( https://docs.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-flow-forecasting.md). If this setup has been completed and you’re not seeing the results you expect, see [Troubleshoot cash flow forecasting setup]( https://docs.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-flow-forecasting-tsg.md) for more information. 
+First the cash flow forecasting and liquidity accounts must be set up and enabled. For more information, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md). If this setup has been completed and you’re not seeing the results you expect, see [Troubleshoot cash flow forecasting setup](../cash-bank-management/cash-flow-forecasting-tsg.md) for more information. 
 
 Next confirm that the **Cash and bank management > Setup > Finance Insights > Cash flow forecasts** feature has been enabled and the AI Model has completed training.  If this training has not been completed select **Forecast now** to initiate the model training. 
