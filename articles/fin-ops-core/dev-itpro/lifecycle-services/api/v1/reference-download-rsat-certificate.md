@@ -21,7 +21,7 @@ ms.search.validFrom: 2021-08-12
 
 You can fetch the Regression Suite Automation Tool (RSAT) certificate bundle for an environment through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. This API returns a Base 64–encoded zip file and a Base 64–encoded password for the private certificate password.
 
-The full process for using the 
+The full process for consuming the zip can be found on the (Regression Suite Automation Tool installation and configuration)[../../../perf-test/rsat/rsat-install-configure#if-you-have-no-remote-desktop-access-to-the-server] page.
 
 ## Permissions
 
