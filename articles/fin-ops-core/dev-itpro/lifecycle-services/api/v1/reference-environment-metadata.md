@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fetch environment metadata
-description: You can fetch environment metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. 
+description: This topic explains how to fetch environment metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. 
 author: jorichar
 ms.date: 08/17/2021
 ms.topic: reference
@@ -18,37 +18,42 @@ ms.search.validFrom: 2021-08-32
 
 [!include [banner](../../../includes/banner.md)]
 
-You can fetch environment metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. This API will return a paginated list that by default includes all environments within the project. The response can be filtered using the optional query string parameters.
+You can fetch environment metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. This API returns a paginated list that, by default, includes all environments in the project. The optional query string parameters can be used to filter the response.
 
 ## Permissions
 
 ### API application
-One of the following permissions is required to call this API. For more information about permissions and how to select them, see the [Database Movement API Authentication](../../../database/api/dbmovement-api-authentication.md) document.
+
+One of the following permissions is required to call this API. For more information about permissions and how to select them, see [Database movement API - Authentication](../../../database/api/dbmovement-api-authentication.md).
 
 | Permission type                    | Permissions (from least privileged to most privileged) |
 |------------------------------------|--------------------------------------------------------|
 | Delegated (work or school account) | user\_impersonation                                    |
 
 ### LCS
-Within LCS, the user used in the API OAuth authentication will need to be added to the project as either a Project Owner or Environment Administrator. The user must accept the invite to the project. 
+
+In LCS, the user who is used in the API OAuth authentication must be added to the project as either a project owner or an environment administrator. The user must accept the invitation to the project.
 
 ## HTTP request
 
 Use the following GET endpoint to fetch environment metadata.
 
-**Fetch metadata for all environments within a project**
+**Fetch metadata for all environments in a project**
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /environmentinfo/v1/detail/project/{projectId}/?page=1
 ```
 
-**Fetch metadata for a single environment by id**
+**Fetch metadata for a single environment by ID**
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /environmentinfo/v1/detail/project/{projectId}/?environmentId={environmentId}
 ```
 
 **Fetch metadata for a single environment by name**
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /environmentinfo/v1/detail/project/{projectId}/?environmentName={environmentName}
@@ -56,13 +61,13 @@ GET /environmentinfo/v1/detail/project/{projectId}/?environmentName={environment
 
 ## Request headers
 
-Use the following header value in the HTTP request header. 
+Use the following header values in the HTTP request header.
 
-| Header         | Value                     |
-|----------------|---------------------------|
-| Authorization  | Bearer {token} (required) |
-| 'x-ms-version' | '2017-09-15' (required)   |
-| Content-Type   | application/json          |
+| Header         | Value                         |
+|----------------|-------------------------------|
+| Authorization  | **Bearer {token}** (required) |
+| 'x-ms-version' | **'2017-09-15'** (required)   |
+| Content-Type   | **application/json**          |
 
 ## Request body
 
@@ -71,40 +76,44 @@ Don't supply a request body for this method.
 ## Response
 
 ### HTTP
-The response is always a **200 OK** response, unless you aren't correctly authenticated. Be sure to use the **IsSuccess** property to evaluate the success or failure of the action.
+
+The response is always a "200 OK" response, unless you aren't correctly authenticated. Be sure to use the **IsSuccess** property to evaluate the success or failure of the action.
 
 ### Pagination
-The result will include a boolean property `ResultHasMorePages` which indicates if another page of results is available. The `?page=` query string parameter can be used to specify an exact page to fetch.
+
+The result includes a Boolean **ResultHasMorePages** property that indicates whether another page of results is available. The **?page=** query string parameter can be used to fetch a specific page.
 
 ### Data
-For each environment, the following properties will be available. If a value is not available, `null` will be returned for the property.
 
-| Property | Detail |
-|----------------|---------------------------|
-| EnvironmentId | LCS Environment ID. |
-| EnvironmentName | Environment name. |
-| ProjectId | LCS project ID the environment is contained within. |
-| EnvironmentInfrastructure | The infrastructure type of the environment like SelfService, MicrosoftManaged. |
-| EnvironmentType | The environment type like Production, Sandbox. |
-| EnvironmentGroup | The environment group like Primary or DiasterRecovery. |
-| EnvironmentProduct | The product running on the environment. |
+For each environment, the following properties are available. If no value is available for a property, **null** is returned.
+
+| Property | Description |
+|----------|-------------|
+| EnvironmentId | The LCS environment ID. |
+| EnvironmentName | The environment name. |
+| ProjectId | The ID of the LCS project that contains the environment. |
+| EnvironmentInfrastructure | The infrastructure type of the environment (for example, **SelfService** or **MicrosoftManaged**). |
+| EnvironmentType | The environment type (for example, **Production** or **Sandbox**). |
+| EnvironmentGroup | The environment group (for example, **Primary** or **DiasterRecovery**). |
+| EnvironmentProduct | The product that is running in the environment. |
 | EnvironmentEndpointBaseUrl | The base URL of the environment. |
-| DeploymentState | The most recent environment operation's state. |
-| TopologyDisplayName | The product topology deployed on the environment. |
+| DeploymentState | The state of the most recent environment operation. |
+| TopologyDisplayName | The product topology that is deployed in the environment. |
 | CurrentApplicationBuildVersion | A string of the application version. |
 | CurrentApplicationReleaseName | A string of the application release name. |
 | CurrentPlatformReleaseName | A string of the platform version. |
 | CurrentPlatformVersion | A string of the platform release name. |
-| DeployedOnUTC | A UTC date time of when the environment was deployed. |
+| DeployedOnUTC | A Coordinated Universal Time (UTC) date/time value that indicates when the environment was deployed. |
 | CloudStorageLocation | The primary Azure location of the environment. |
 | DisasterRecoveryLocation | The secondary Azure location of the environment. |
 | DeploymentStatusDisplay | The current status of the environment. |
-| CanStart | A boolean if the environment can be started. |
-| CanStop | A boolean if the environment can be stopped. |
+| CanStart | A Boolean value that indicates whether the environment can be started. |
+| CanStop | A Boolean value that indicates whether the environment can be stopped. |
 
 ### Example response
 
-**Successful response of project-level request**
+**Successful response for a project-level request**
+
 ```json
 {
     "ResultPageCurrent": 1,
@@ -164,11 +173,11 @@ For each environment, the following properties will be available. If a value is 
 
 ## Rate limits
 
-To better load balance the requests, there are rate limits on this API:
+To better load balance requests, there are rate limits on this API:
 
- * 6 calls for each project per 1 minute
+* 6 calls for each project per minute
 
 > [!NOTE]
-> Requests that exceed the limits will be rejected with a "HTTP 429 Too Many Requests" response. The **retry-after** header will indicate the number of seconds when the request can be retried.
+> Requests that exceed the limits will be rejected, and an "HTTP 429 Too Many Requests" response will be returned. The **retry-after** header will indicate the number of seconds that the request can be retried after.
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]
