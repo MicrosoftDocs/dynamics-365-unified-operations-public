@@ -1264,6 +1264,8 @@
           href: finance-insights/use-customer-payment-predictions.md
         - name: Snapshots overview
           href: finance-insights/payment-snapshots.md
+      - name: Finance insights troubleshooting FAQ
+        href: finance-insights/finance-insights-troubleshooting-faq.md
     - name: Project management and accounting
       items:
       - name: Project management and accounting overview
