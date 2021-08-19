@@ -223,7 +223,7 @@ For an example, review the **smmContactPersonCDSV2Entity::getEntityDataSourceToF
 
 To fix this error, follow these steps.
 
-1. Add a **PrimaryPostalAddressRecId** field to the **smmContactPersonV2Entity** in AppMU. Make it internal.
+1. Add a **PrimaryPostalAddressRecId** field to the **smmContactPersonV2Entity**. Make it internal.
 
     ![Troubleshoot live sync_issue 1](media/Troubleshoot_live_sync_issue_1.png)
 
