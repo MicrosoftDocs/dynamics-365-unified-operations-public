@@ -1748,6 +1748,8 @@
             href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
           - name: Set up NF-e parameters for a fiscal establishment
             href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+          - name: NT2020.005 – Layout and validation updates in the electronic fiscal document (NF-e)
+            href: localizations/latam-bra-nfe-nt2020.005.md
           - name: NT2020.006 – Intermediary sales digital platform for NF-e
             href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
           - name: NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e
