@@ -49,7 +49,7 @@ The integrated solution lets you define your own data sources and centralize inv
 There are two approaches to viewing your inventory:
 
 - Submit a query through the high-performance API. This API can return near-real-time inventory data directly from a cached instance. You can find contracts and samples in [Inventory Visibility public APIs](inventory-visibility-api.md).
-- View the raw on-hand list. This list is periodically synced from a cached instance and is visible in Dataverse. For more information, see [Inventory Visibility app](inventory-visibility-power-platform.md).
+- View the raw on-hand list. This list is periodically synced from a cached instance and is visible in Dataverse. For more information, see [Inventory Visibility app](inventory-visibility-power-platform.md#inventory-summary).
 
 ### Soft reservations
 

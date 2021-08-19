@@ -69,6 +69,7 @@ Inventory Visibility supports the following general base dimensions.
 | Others | `VersionId` |
 | Inventory (custom) | `InventDimension1` through `InventDimension12` |
 | Extension | `ExtendedDimension1` through `ExtendedDimension8` |
+| System | `Empty` |
 
 > [!NOTE]
 > The dimension types that are listed in the preceding table are for reference only. You don't have to define them in Inventory Visibility.
@@ -197,7 +198,7 @@ When this computation formula is used, the new query result will include the cus
 ]
 ```
 
-The `MyCustomAvailableforReservation` output, based on the calculation setting in the custom measurements, is 100 + 50 + 80 + 90 + 30 – 10 – 20 – 60 – 40 = 220.
+The `MyCustomAvailableforReservation` output, based on the calculation setting in the custom measurements, is 100 + 50 - 10 + 80 - 20 + 90 + 30 - 60 - 40 = 220.
 
 ## <a name="partition-configuration"></a>Partition configuration
 
@@ -280,6 +281,9 @@ The index lets you query the on-hand inventory in the following ways:
 > [!NOTE]
 > Base dimensions that are defined in the partition configuration should not be defined in index configurations.
 
+> [!NOTE]
+> If you only need to query the inventory aggregated by all dimension combinations, you can setup a single index which contains the base dimension `Empty`.
+
 ## <a name="reservation-configuration"></a>Reservation configuration (optional)
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
@@ -342,6 +346,9 @@ In this case, the following calculation applies:
 = 10
 
 Therefore, if you try to make reservations on `iv.SoftReservOrdered`, and the quantity is less than or equal to `AvailableToReserve` (10), you can do the reservation.
+
+> [!NOTE]
+> When calling reservation API, you can specify the boolean field `ifCheckAvailForReserv` in the request body to control the reservation validation. `True` means the validation is necessary while `False` means the validation is unnecessary. The default value of `ifCheckAvailForReserv` is `True`.
 
 ### Soft reservation hierarchy
 

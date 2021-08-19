@@ -320,9 +320,9 @@ Use the **Reservation Posting** tab to post a reservation request. Before you ca
 
 To post a reservation request, you must enter a value in the request body. Use the pattern that is described in [Create one reservation event](inventory-visibility-api.md#create-one-reservation-event). Then select **Post**. To view the request response details, select **Show Details**. You can also get the **reservationId** value from the response details.
 
-## Inventory summary
+## <a name="inventory-summary"></a>Inventory summary
 
-**Inventory summary** is a customized view for the *Inventory OnHand Sum Entity*. It provides an inventory summary for products together with all dimensions. By using the **Advanced Filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters.
+**Inventory summary** is a customized view for the *Inventory OnHand Sum Entity*. It provides an inventory summary for products together with all dimensions. Periodically, the inventory summary data will be synchronized from the Inventory Visibility. By using the **Advanced Filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters.
 
 To learn more about how to use the **Advanced Filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced)
 
