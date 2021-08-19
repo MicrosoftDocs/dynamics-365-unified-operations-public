@@ -69,6 +69,6 @@ Complete the following steps in the [CDS admin portal]( https://admin.powerplatf
 
 The cash flow forecasting function in Cash and bank management, and the Cash flow forecasts feature in Finance insights must be set up and enabled to correctly show the data in the workspace.  
 
-First the cash flow forecasting and liquidity accounts must be set up and enabled. For more information, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md). If this setup has been completed and you’re not seeing the results you expect, see [Troubleshoot cash flow forecasting setup](../cash-bank-management/cash-flow-forecasting-tsg.md) for more information.
+The cash flow forecasting and liquidity accounts must be set up and enabled. For more information, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md). If this setup has been completed and you’re not seeing the results you expect, see [Troubleshoot cash flow forecasting setup](../cash-bank-management/cash-flow-forecasting-tsg.md) for more information.
 
-Next confirm that the **Cash and bank management > Setup > Finance Insights > Cash flow forecasts** feature has been enabled and the AI model has completed training. If this training has not been completed select **Forecast now** to initiate the model training.
+Next confirm that the **Cash and bank management > Setup > Finance Insights > Cash flow forecasts** feature has been enabled and the AI model has completed training. If the training has not been completed select **Forecast now** to initiate the model training.
