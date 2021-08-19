@@ -35,7 +35,7 @@ This topic lists questions about issues that can arise when you use Finance insi
 
 ## Symptom: Why can’t I map the customer payment insights Data Integration (DI) template destination column?
 
-## Resolution
+### Resolution
 
 Before the release of version 10.0.17, preview customers configured the DI template Customer payment insights results (CDS to Fin and Ops) using the Payment prediction result (preview) entity. After upgrading to 10.0.17 and later, you should should complete that mapping using the Begin using the "Customer payment insights results (CDS to Fin and Ops 10.0.17+)" DI template. You might not be able to map the DI template destination column until the data management entity list is refreshed and the Payment prediction result entity is displayed.
 
@@ -65,7 +65,7 @@ complete the following steps in the [CDS admin portal]( https://admin.powerplatf
 
 ## Symptom: Why doesn’t the Cash forecast tab in the Cash flow forecast workspace show any data?
 
-## Resolution
+### Resolution
 
 The cash flow forecasting function in Cash and bank management, and the Cash flow forecasts feature in Finance insights must be set up and enabled to correctly show the data in the workspace.  
 
