@@ -2,7 +2,7 @@
 # required metadata
 
 title: Making Tax Digital – VAT return submission in the United Kingdom
-description: This topic explains how to setup and use MTD VAT feature for VAT return submission in the United Kingdom.
+description: This topic explains how to setup and use the MTD VAT feature for VAT return submission in the United Kingdom.
 author: liza-golub
 ms.date: 08/19/2021
 ms.topic: article
