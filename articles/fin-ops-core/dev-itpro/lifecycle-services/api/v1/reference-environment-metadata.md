@@ -4,7 +4,7 @@
 title: Fetch environment metadata
 description: This topic explains how to fetch environment metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. 
 author: jorichar
-ms.date: 08/17/2021
+ms.date: 08/19/2021
 ms.topic: reference
 audience: Developer, IT Pro
 ms.reviewer: sericks
