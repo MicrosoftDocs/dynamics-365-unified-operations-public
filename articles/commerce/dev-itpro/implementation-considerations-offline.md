@@ -46,8 +46,8 @@ For details regarding features that enhance or alter the data synchronization of
 | Feature name | Description |
 |--------------|-------------|
 | Advanced offline | This feature consists of a series of settings in the offline profile. These settings make additional offline switching scenarios available, give users the ability to switch to offline mode before they sign in to the POS, and allow for enhanced Commerce headquarters availability testing, so that you can switch to offline mode more often and more easily return to online status. |
-| Offline status dashboard | A new dashboard showing the latest offline status, error, and details of the database for each device.  This dashboard can be found in the  |
-| Performance based offline switching (POS seamless offline for performance degradation) | This feature enables Modern POS devices to switch to offline mode seamlessly when encountering outbound web request performance degradation.  This feature requires, and depends, on the **Enable advanced offline switching** functionality to be enabled from the **Offline profile** page in Headquarters. The **POS seamless offline for performance degradations** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). |
+| Offline status dashboard | A new dashboard, provided in release 10.0.20 (with the quality update) and above, showing the latest offline status, error, and details of the database for each device.  This dashboard can be found in the **Retail and Commerce > Channel setup > POS setup > Register offline status** page. |
+| Performance based offline switching (POS seamless offline for performance degradation) | This feature, provided in release 10.0.20 (with the quality update) and above, enables Modern POS devices to switch to offline mode seamlessly when encountering outbound web request performance degradation.  This feature requires, and depends, on the **Enable advanced offline switching** functionality to be enabled from the **Offline profile** page in Headquarters. The **POS seamless offline for performance degradations** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). |
 
 ### Advanced offline
 
@@ -59,7 +59,7 @@ This feature can be configured in the offline profile. Three settings are relate
 
 ## Implementation considerations
 
-This section describes configurations that should be considered when you begin to plan your POS usage scenarios while functioning offline. The features that are described here are related to data management and data configuration. Before you read the guidance that is provided here, we highly recommend that you understand these concepts. To gain additional information, it is recommended to read the [Commerce Data Exchange best practices](CDX-Best-Practices.md) document.
+This section will grow over time and describes various aspects and configurations of offline that should be considered when you begin to plan your POS usage scenarios while functioning offline. The features that are described here are related to data management, offline usage, and data configuration. Before you read the guidance that is provided here, we highly recommend that you understand these concepts. To gain additional information, it is recommended to read the [Commerce Data Exchange best practices](CDX-Best-Practices.md) document.
 
 ### SQL Server versions and licenses 
 SQL Server comes in a variety of versions (such as SQL Server 2017 and SQL Server 2019) and a variety of editions (such as SQL Standard and SQL Express). For more in-depth information about these versions, see [Editions and supported features of SQL Server 2019 (15.x)](/sql/sql-server/editions-and-components-of-sql-server-version-15?view=sql-server-ver15#Cross-BoxScaleLimits). Also see the "Additional resources" later in this topic regarding additional versions.
@@ -75,10 +75,6 @@ While not an exhaustive list, here are the most used SQL Server editions for Dyn
 | Standard | SQL Server Standard is often used for CSU (self-hosted) channel databases.  This provides enough size and system utilization to typically handle a CSU (self-hosted) channel database for one to several retail store locations. While not common, the Standard version is sometimes used for offline databases to cut away any limitations and maximize offline performance. Further, a more hybrid method may be used where only a set number of Modern POS registers utilize a full Standard version while other registers utilize the Express version (Or potentially no offline database, possibly using Cloud POS instead of Modern POS). |
 | Enterprise | SQL Server Enterprise is rarely necessary, but there are scenarios where it could be valuable. For example, if hosting a CSU (self-hosted) in a datacenter VM for use across a large area of many devices, removing the limitations could be valuable to maximize performance capabilities. |
 
-### Which features to use
-
-
-
 ## Troubleshooting
 
 If an error that occurs doesn't appear in the following table, create a support request, as required, so that Microsoft Support can help you fix the issue. This section will be updated over time with additional errors so it is valuable to review this document prior to implementing or updating Modern POS registers that utilize offline databases.
@@ -88,10 +84,10 @@ If an error that occurs doesn't appear in the following table, create a support 
 | Microsoft_Dynamics_Commerce_Runtime_AuthenticationMethodDisabled Microsoft_Dynamics_Commerce_Runtime_ChannelConfigurationNotFound Microsoft_Dynamics_Commerce_Runtime_ChannelNotPublished Microsoft_Dynamics_Commerce_Runtime_InvalidChannelConfiguration |  Unable to switch to offline mode. The channel information is either not available or not configured correctly. To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
 | Microsoft_Dynamics_Commerce_Runtime_CredentialsNotConfigured Microsoft_Dynamics_Commerce_Runtime_CredentialsNotFound Microsoft_Dynamics_Commerce_Runtime_InvalidAuthenticationCredentials Microsoft_Dynamics_Commerce_Runtime_LocalLogonFailed Microsoft_Dynamics_Commerce_Runtime_UserBlockedDueToTooManyFailedLogonAttempts | Unable to switch to offline mode. The user information is either not available or not configured correctly. To resolve this issue, run the Staff scheduler job (by default, this is the 1060 scheduler job). Please contact your system administrator. |
 | Microsoft_Dynamics_Commerce_Runtime_CriticalStorageError  | To check the status offline db permissions, size, disk space (could use offline dashboard) |
-| Microsoft_Dynamics_Commerce_Runtime_ElevatedUserSameAsLoggedOnUser | CHECKING |
+| Microsoft_Dynamics_Commerce_Runtime_ElevatedUserSameAsLoggedOnUser | This error occurs when the same user attempts to perform a manager override. A different user must be used. |
 | Microsoft_Dynamics_Commerce_Runtime_RealtimeServiceNotSupported Microsoft_Dynamics_Commerce_Runtime_TransientStorageError | Unable to switch to offline mode. The offline database is either not correctly installed or not configured correctly. Verify that everything has been setup successfully. Please contact your system administrator. |
 | Microsoft_Dynamics_Commerce_Runtime_TerminalNotFound | To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
-| Microsoft_Dynamics_Internal_Server_Error | Create a support ticket |
+| Microsoft_Dynamics_Internal_Server_Error | This error covers several possible scenarios, so it is considered best to create a support ticket and get assistance directly. |
 
 
 
