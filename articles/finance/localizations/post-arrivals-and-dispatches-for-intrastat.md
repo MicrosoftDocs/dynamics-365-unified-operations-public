@@ -1,16 +1,33 @@
-﻿# Post arrivals and dispatches for Intrastat
+---
+# required metadata
+
+title: Post arrivals and dispatches for Intrastat
+description: This topic provides an example that shows how to post arrivals and dispatches for Intrastat.
+author: andosip
+ms.date: 8/19/2021
+ms.topic: article
+audience: Application User
+ms.reviewer: kfender
+ms.search.region: Global
+ms.author: v-aosipov
+ms.search.validFrom: 
+---
+
+# Post arrivals and dispatches for Intrastat
 
 This topic provides an example that shows how to post arrivals and dispatches for Intrastat. The example uses the **ITCO** legal entity.
 
 ## Setup
 
-1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest versions of the following Electronic reporting (ER) configurations for the Intrastat declaration format:
+1.  Import the latest version of the following Electronic reporting (ER) configurations:
 
     -   Intrastat model
 
     -   Intrastat report
 
     -   Intrastat (IT)
+
+ Find more details in [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 2.  In Microsoft Dynamics 365 Finance, define the following number sequences as continuous: **Gene\_397**, **Acco\_16403**, **Gene\_407**, and **PUR\_EU**.
 
