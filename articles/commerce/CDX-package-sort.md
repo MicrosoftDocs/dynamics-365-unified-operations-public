@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This feature, titled **Sort CDX packages by primary index**, optimizes the data preprocessing performance of data transformation. It is important to note that this feature does not alter any data application logic for a Commerce Scale Unit (CSU) or a Modern POS offline database nor improve performance for either of these. .
+This feature, titled **Sort CDX packages by primary index**, optimizes the data preprocessing performance of data transformation. It is important to note that this feature does not alter any data application logic for a Commerce Scale Unit (CSU) or a Modern POS offline database nor improve performance for either of these.
 
 ## Prerequisites
 
