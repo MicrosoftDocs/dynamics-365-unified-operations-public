@@ -101,7 +101,7 @@ The following illustration image shows an example where the **Disable Lazy Load*
 
 ### Enable lazy loading for a product collection module
 
-The data action calls for the [product collection module](../product-collection-module-overview.md) can cause a small increase in page load times. Therefore, the product collection module has an **Enable module lazy load** configuration setting that enables the module to be rendered on the client side after the page has been rendered. In this way, the page is available for user interaction sooner. However, if the product collection module is placed near the top of the page it is recommended to have lazy loading disable so that the images appear immediately when the web page loads.
+The data action calls for the [product collection module](../product-collection-module-overview.md) can cause a small increase in page load times. Therefore, the product collection module has an **Enable module lazy load** configuration setting that enables the module to be rendered on the client side after the page has been rendered. In this way, the page is available for user interaction sooner. However, if the product collection module is placed near the top of the page it is recommended to have lazy loading disabled so that the images appear immediately when the web page loads.
 
 The following illustration shows an example where the **Enable module lazy load** option is selected for a product collection module in Commerce site builder.
 
