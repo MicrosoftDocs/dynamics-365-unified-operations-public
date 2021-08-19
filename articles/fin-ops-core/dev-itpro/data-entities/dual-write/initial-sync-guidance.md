@@ -86,6 +86,12 @@ If you're running the initial synchronization from the Finance and Operations ap
 
 This type of synchronization is supported in Platform update 37 (PU37) and later. Therefore, you should update your Finance and Operations app to PU37 or later.
 
+### Company and Currency Exchange Tables
+
+Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables. All dual-wrtie users will need to be added to the **Dual-Write App User** security role.
+
+In order to allow non-administrator users to create rows in a dual-write enabled table, they will need to be assigned the **Dual-Write Runtime User** security role.
+
 ### Error handling capabilities
 
 #### Initial synchronization is always a full push

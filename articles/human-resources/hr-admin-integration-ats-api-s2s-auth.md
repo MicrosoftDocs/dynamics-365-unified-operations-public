@@ -39,7 +39,7 @@ The first step enable access to the Dataverse virtual tables in Power Platform i
 
 ### Creating a security role for ATS integrations
 
-One of the steps after creating the application user is to assign the user to a security role that defines the access the application will have to the endpoints. This is step 7 in [Application user creation]/powerapps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation) for single-tenant app registrations, and [Create a security role for the application user](/powerapps/developer/data-platform/use-multi-tenant-server-server-authentication#create-a-security-role-for-the-application-user) for multi-tenant registrations. 
+One of the steps after creating the application user is to assign the user to a security role that defines the access the application will have to the endpoints. This is step 7 in [Application user creation](/powerapps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation) for single-tenant app registrations, and [Create a security role for the application user](/powerapps/developer/data-platform/use-multi-tenant-server-server-authentication#create-a-security-role-for-the-application-user) for multi-tenant registrations. 
 
 The role to which you assign the application user should have access to the data entities used for your ATS integration. This doesn't exist out of the box, so a new security role will need to be created. The new role can be created following the steps outlined in [Create a security role](/power-platform/admin/create-edit-security-role#create-a-security-role).
 

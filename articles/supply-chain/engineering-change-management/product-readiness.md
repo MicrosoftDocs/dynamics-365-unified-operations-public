@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product readiness
-description: This topics explains how you can use readiness checks to ensure that the required master data is completed for a product before it's used in transactions.
+description: This topic explains how you can use readiness checks to ensure that the required master data is completed for a product before it's used in transactions.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -182,8 +182,6 @@ To assign a readiness policy to an engineering category, follow these steps.
 <a name="standard-products"></a>
 
 ## Readiness checks on standard products
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 You can enable product readiness checks for standard (non-engineering) products by turning on the *Product readiness checks* feature in Feature management. This feature makes a few small changes to the readiness check system so that it supports standard products.
 

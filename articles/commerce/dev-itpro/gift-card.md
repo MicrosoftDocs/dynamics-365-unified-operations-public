@@ -255,7 +255,7 @@ In the back office, on the **Payment services** page, configure the payment serv
 
 ## Online store payments setup
 
-To configure the payment accounts for your online store to use Adyen for external gift card processing, please refer to the [e-Commerce setup section](adyen-connector.md?tabs=8-1-3#e-commerce) of the documentation for the Adyen connector. 
+To configure the payment accounts for your online store to use Adyen for external gift card processing, see [Configure additional information for the Adyen connector](adyen-connector-setup.md#configure-additional-information-for-the-connector). 
 
 
 #### Test connector external gift card setup

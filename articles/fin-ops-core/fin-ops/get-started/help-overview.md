@@ -4,7 +4,7 @@
 title: Help system
 description: This topic provides an overview of the Help system for Finance and Operations apps.
 author: edupont04
-ms.date: 04/14/2021
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Users of the following apps can access context-sensitive Help and other content that is based on the same Help system:
 
-- Microsoft Dynamics 365 Commerce
+- Dynamics 365 Commerce
 - Dynamics 365 Finance
 - Dynamics 365 Human Resources
 - Dynamics 365 Supply Chain Management
@@ -51,12 +51,22 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365](/dynamics365/)) is
 
 You can find content on docs.microsoft.com by using any search engine. For the best results, we recommend that you use a site search, such as **site:docs.microsoft.com dynamics 365 "search term"**.
 
-<!--## Get notified about changes through an RSS feed
+## Get notified about changes through an RSS feed
 
-To subscribe to a Really Simple Syndication (RSS) feed of all updates that are to the content on docs.microsoft.com, use the following link:
+To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
 
-[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
-Commenting out this section until we have a reliable RSS feed again. We're experimenting in the BC docs with not very satisfactory results, though.-->
+[RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
+
+> [!NOTE]
+> The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.  
+
+Alternatively, you can subscribe to an RSS feed by app:
+
+- [Commerce](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-commerce%27)&locale=en-us)  
+- [Finance](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finance%27)&locale=en-us)  
+- [Human Resources](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-hr%27)&locale=en-us)  
+- [Supply Chain](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-supplychain%27)&locale=en-us)  
+- [Talent](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-talent%27)&locale=en-us)  
 
 ### Leave us feedback
 

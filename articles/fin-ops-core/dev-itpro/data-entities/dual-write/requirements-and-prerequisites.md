@@ -1,26 +1,13 @@
 ---
-
 title: System requirements and prerequisites
 description: This topic describes the system requirements and prerequisites that must be in place before you can enable dual-write for Finance and Operations apps.
-author: sabinn-msft
-ms.date: 03/20/2020
+author: NHelgren
+ms.date: 08/18/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: v-douklo
-# ms.tgt_pltfrm: 
-ms.custom:
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -30,7 +17,6 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
 
 ## What regions are available?
 
@@ -43,15 +29,15 @@ Currently, we support dual-write in the following regions:
    + India
    + Japan
    + South America
+   + United Arab Emirates
    + United Kingdom
    + United States
-
 
 ## Verify requirements and grant access
 
 Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Dataverse environment.
 
-You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a model-driven app for Dynamics 365 environment that comes with Dataverse and already has **Enable Dynamics 365 apps** set to **Yes**.
+You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a customer engagement app environment that comes with Dataverse and already has **Enable Dynamics 365 apps** set to **Yes**.
 
 :::image type="content" source="media/add_database_expanded2.png" alt-text="Enable apps switch.":::
 
@@ -126,6 +112,11 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     7. Go to **Dynamics 365 \> Settings \> Security**, select **Teams**, and then change the view to **All Owner Teams**.
     8. Select **default team for the root Business Unit**, select **Manage Roles**, and then, in the **Manage Team Roles** dialog box, select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each table integrated through dual-write. 
     
+    >[!NOTE]
+    > Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables.
+    > All dual-write users will need to be added to the **Dual-Write App User** security role.
+    > In order to allow non-administrator users to create rows in a dual-write enabled table, they will need to be assigned the **Dual-Write Runtime User** security role.
+
       For instructions on how to create a Security Role, see [Create or configure a custom security role](/power-platform/admin/database-security#create-or-configure-a-custom-security-role).
       
       > [!NOTE]
@@ -222,6 +213,5 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 ## Next steps
 
 [Use the dual-write wizard to link your environments](link-your-environment.md)
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

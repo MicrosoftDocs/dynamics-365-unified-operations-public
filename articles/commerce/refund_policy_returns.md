@@ -4,7 +4,7 @@
 title: Create and update a returns and refunds policy for a channel
 description: This topic explains how to set up a returns and refunds policy for a channel.
 author: ShalabhjainMSFT
-ms.date: 07/02/2021
+ms.date: 07/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,12 +40,12 @@ The scope of the policy is currently limited to setting the payment tenders that
 
 ## Enable return policy
 
-To enable the channel return policy functionality, do the following:
+To enable the channel return policy functionality in Commerce headquarters, follow these steps.
 
 1. Go to the **Feature Management** workspace in Dynamics 365 Commerce.
 1. Search for the **Enable channel return policies** feature in the list of feature names.
 1. Select **Enable now**.
-1. On the **Distribution schedule** page, run the **1110** (Global configuration) job to distribute the feature change. 
+1. On the **Distribution schedule** page, run the **1110** (Global configuration) job to distribute the feature change.
 
 ## Configure return policy
 

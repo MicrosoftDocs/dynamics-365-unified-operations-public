@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Cash flow forecast (preview)
+title: Cash flow forecast
 description: This topic describes the Cash flow forecasting capability.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,10 +27,9 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Cash flow forecast (preview)
+# Cash flow forecast
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Cash flow is critical to any business. Even profitable companies can face insolvency if they don't maintain the cash flow to meet immediate needs. The cash flow forecasting capability in Finance insights can help companies monitor and manage their cash balances effectively. This feature uses machine learning to help businesses forecast cash flows more accurately than they have previously. It can also help managers make decisions that optimize opportunities in the context of their current cash position. 
 

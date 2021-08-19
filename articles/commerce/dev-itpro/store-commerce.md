@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic applies to Dynamics 365 Commerce version 10.0.20 and later.
 

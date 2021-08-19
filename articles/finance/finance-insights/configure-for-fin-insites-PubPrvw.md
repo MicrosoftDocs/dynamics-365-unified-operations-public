@@ -4,7 +4,7 @@
 title: Configuration for Finance insights for public preview (preview) - version 10.0.20 and later
 description: This topic explains how to configure your system to use the capabilities that are available in Finance insights for public preview in version 10.0.20 and later.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 06/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,8 +29,6 @@ ms.dyn365.ops.version: AX 10.0.20
 # Configuration for Finance insights for public preview (preview) - version 10.0.20 and later
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview banner](../includes/preview-banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 

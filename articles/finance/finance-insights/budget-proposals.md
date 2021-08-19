@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Budget proposals (preview)
+title: Budget proposals
 description: This topic describes the process for using a machine learning model with your organization's historical data to generate a budget proposal.
 author: panolte
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,10 +24,9 @@ ms.search.validFrom: 2020-05-31
 ms.dyn365.ops.version: 10.0.4
 ---
 
-# Budget proposals (preview)
+# Budget proposals
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Organizations spend a large amount of time and resources in preparing their budgets. Much of that work is repetitive low-value-added effort, such as gathering the data that's used in the budgeting process. Additional work is needed to prepare a line-by-line budget by department. 
 

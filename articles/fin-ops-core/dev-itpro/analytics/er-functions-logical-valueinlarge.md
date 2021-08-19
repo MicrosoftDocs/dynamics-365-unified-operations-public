@@ -5,7 +5,6 @@ title: VALUEINLARGE ER function
 description: This topic provides information about how the VALUEINLARGE Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 08/17/2020
-ms.topic: article
 ms.prod: 
 ms.technology: 
 

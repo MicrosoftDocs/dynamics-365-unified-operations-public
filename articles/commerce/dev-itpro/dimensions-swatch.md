@@ -4,7 +4,7 @@
 title: Configure product dimension values to appear as swatches
 description: This topic describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters.
 author: anupamar-ms
-ms.date: 05/28/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Retail 10.0.20 update
 # Configure product dimension values to appear as swatches
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 This topic describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters. For information about product dimensions, see [Product dimensions](../../supply-chain/pim/product-dimensions.md).
 
@@ -52,7 +51,7 @@ The following illustration shows an example where colors appear as swatches on a
 
 ## Enable the display dimensions as swatches feature in Commerce headquarters
 
-To enable the display dimensions as swatches feature in Commerce headquarters, go to **Workspaces \> Feature management**, and turn on the **Enable image support for product dimension values** feature. When this feature flag is enabled, three new fields are added for each dimension in the appropriate tables in Commerce headquarters: **Hexcode**, **URL** (for images), and **RefinerGroup**.
+To enable the display dimensions as swatches feature in Commerce headquarters, go to **Workspaces \> Feature management**, and turn on the **Enable a mechanism to represent dimensions as swatch** feature. When this feature flag is enabled, three new fields are added for each dimension in the appropriate tables in Commerce headquarters: **Hexcode**, **URL** (for images), and **RefinerGroup**.
 
 ## Configure dimension values in Commerce headquarters
 
@@ -131,9 +130,22 @@ Before swatches can appear on e-commerce site pages that require dimension selec
 
 In addition, you should enable the **Include product attributes in search results** property for search results modules. If your site uses customized category pages, you should update the search results modules that are used on those pages, so that the **Include product attributes in search results** property is enabled. For more information, see [Search results module](../search-result-module.md).
 
+## Inventory awareness on swatches
+
+Swatches have an optional capability to show the inventory availability of a product variant color or dimension. For example, a product is sold in multiple sizes, but some sizes are out of stock. In this case, the swatches for the out-of-stock products are rendered differently to indicate that they are unavailable. This capability helps reduce the number of customer clicks that are required to determine product availability.
+
+The swatch inventory availability feature can be configured for use on both PDPs and search or category list pages where swatches are displayed. To activate it, you must set the **Update media on dimension selection** property to **True** in the [media gallery module](../media-gallery-module.md). That setting enables media gallery images to be updated when dimensions are selected. 
+
+> [!IMPORTANT]
+> The swatch inventory availability feature is available as of the Commerce version 10.0.21 release. It requires that Commerce module library package version 9.31 be installed.
+
+The following illustration shows an example of inventory awareness on the size swatches of a PDP.
+
+![Example of inventory awareness on the size swatches of a PDP](../dev-itpro/media/swatch_inventory.png)
+
 ## Display swatches in POS and other channels
 
-Commerce doesn't currently have an out-of-box implementation that supports the display of swatches in Point of Sale (POS) and other channels. However, you can implement swatch display functionality as an extension that makes channel APIs return the hex codes and image URLs that are required to render swatches.
+Commerce doesn't currently have an out-of-box implementation that supports the display of swatches in point of sale (POS) and other channels. However, you can implement swatch display functionality as an extension, because channel APIs return the hex codes and image URLs that are required to render swatches.
 
 ## Additional resources
 

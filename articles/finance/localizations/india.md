@@ -38,10 +38,6 @@ This topic provides links to documentation resources for India.
 ## What's new or changed for India localization
 
 - [What's new or changed for India GST in 10.0.15 - 10.0.19](ind-news-letter-10-0-15-19.md) 
-
-    > [!NOTE]
-    > There were no major updates in releases 10.0.15 - 10.0.19.
-    > 
 - [What's new or changed for India GST in 10.0.14 (October 2020)](apac-ind-news-letter-10-0-14.md)
 - [What's new or changed for India GST in 10.0.13 (September 2020)](ind-news-letter-10-0-13.md)
 - [What's new or changed for India GST in 10.0.12 (July 2020)](apac-ind-news-letter-10-0-12.md)

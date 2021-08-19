@@ -4,7 +4,7 @@
 title: Lease termination proposal
 description: This topic explains how to propose a lease for termination.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,6 @@ ms.dyn365.ops.version: 10.0.17
 # Propose a lease for termination
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 If a lease is terminated early, Asset leasing can record a termination journal entry to write off the lease liability, right-of-use (ROU) asset, and accumulated depreciation, and book a gain or loss. The early termination process terminates a lease and its associated lease books. It doesn't terminate individual lease books. This topic describes the functionality that lets you propose a lease for termination and process the lease termination journal entry.
 

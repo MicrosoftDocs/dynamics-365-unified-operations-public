@@ -3,7 +3,7 @@
 
 title: Accounting source explorer
 description: This article provides information about Accounting source explorer, which you can use for detailed analysis of the source information behind general ledger accounting entries.
-author: ShylaThompson
+author: rcarlson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -51,8 +51,10 @@ For source documents that use the source document reference identities concept, 
 
 For these documents, you can also navigate to the actual source document from Accounting source explorer.
 
-
-
-
+> [!NOTE]
+> As of version 10.0.20, the **Update** button provides two additional ranges to restrict the initial query that is run to enter data on the page. These additional ranges are also available in version 10.0.19 as a service update. The following fields were added:
+>
+> - From Voucher, To Voucher
+> - From Main account, To Main account
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
