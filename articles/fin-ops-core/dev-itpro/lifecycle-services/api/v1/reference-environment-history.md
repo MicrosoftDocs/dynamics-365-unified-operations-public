@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fetch environment history
-description: You can fetch environment history metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
+description: This topic explains how to fetch environment history metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
 author: jorichar
 ms.date: 08/17/2021
 ms.topic: reference
@@ -18,19 +18,21 @@ ms.search.validFrom: 2021-08-12
 
 [!include [banner](../../../includes/banner.md)]
 
-You can fetch environment history metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. This API will return a paginated list that includes ongoing and past operations.
+You can fetch environment history metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. This API returns a paginated list that includes ongoing and past operations.
 
 ## Permissions
 
 ### API application
-One of the following permissions is required to call this API. For more information about permissions and how to select them, see the [Database Movement API Authentication](../../../database/api/dbmovement-api-authentication.md) content.
+
+One of the following permissions is required to call this API. For more information about permissions and how to select them, see [Database movement API - Authentication](../../../database/api/dbmovement-api-authentication.md).
 
 | Permission type                    | Permissions (from least privileged to most privileged) |
 |------------------------------------|--------------------------------------------------------|
 | Delegated (work or school account) | user\_impersonation                                    |
 
 ### LCS
-Within LCS, the user used in the API OAuth authentication will need to be added to the project as either a Project Owner or Environment Administrator. The user must accept the invite to the project. 
+
+In LCS, the user who is used in the API OAuth authentication must be added to the project as either a project owner or an environment administrator. The user must accept the invitation to the project.
 
 ## HTTP request
 
@@ -43,13 +45,13 @@ GET /environmentinfo/v1/history/project/{projectId}/environment/{environmentId}/
 
 ## Request headers
 
-Use the following header value in the HTTP request header. 
+Use the following header values in the HTTP request header.
 
-| Header         | Value                     |
-|----------------|---------------------------|
-| Authorization  | Bearer {token} (required) |
-| 'x-ms-version' | '2017-09-15' (required)   |
-| Content-Type   | application/json          |
+| Header         | Value                         |
+|----------------|-------------------------------|
+| Authorization  | **Bearer {token}** (required) |
+| 'x-ms-version' | **'2017-09-15'** (required)   |
+| Content-Type   | **application/json**          |
 
 ## Request body
 
@@ -58,29 +60,33 @@ Don't supply a request body for this method.
 ## Response
 
 ### HTTP
-The response is always a **200 OK** response, unless you aren't correctly authenticated. Be sure to use the **IsSuccess** property to evaluate the success or failure of the action.
+
+The response is always a "200 OK" response, unless you aren't correctly authenticated. Be sure to use the **IsSuccess** property to evaluate the success or failure of the action.
 
 ### Pagination
-The result will include a boolean property `ResultHasMorePages` which indicates if another page of results is available. The `?page=` query string parameter can be used to specify an exact page to fetch.
+
+The result includes a Boolean **ResultHasMorePages** property that indicates whether another page of results is available. The **?page=** query string parameter can be used to fetch a specific page.
 
 ### Data
-For each history operation, the following properties will be available. If a value is not available, `null` will be returned for the property.
 
-| Property | Detail |
-|----------------|---------------------------|
+For each history operation, the following properties are available. If no value is available for a property, **null** is returned.
+
+| Property | Description |
+|----------|-------------|
 | Name | The supplied operation history name. |
 | Type | The operation type. |
-| TypeDisplay | The operation type display string. |
-| StartDateTimeUtc | UTC date time of the start of the operation. |
-| EndDateTimeUtc | UTC date time of the end of the operation. |
+| TypeDisplay | The display string for the operation type. |
+| StartDateTimeUtc | The start date and time of the operation in Coordinated Universal Time (UTC). |
+| EndDateTimeUtc | The end date and time of the operation in UTC. |
 | Status | The status of the operation. |
-| ActivityId | The operation's activity ID guid. |
-| EnvironmentId | The environment ID the operation was against. |
-| ProjectId | The project ID the operation was against. |
+| ActivityId | The globally unique identifier (GUID) for the operation's activity. |
+| EnvironmentId | The ID of the environment that the operation was performed against. |
+| ProjectId | The ID of the project that the operation was performed against. |
 
 ### Example response
 
 **Successful response**
+
 ```json
 {
     "ResultPageCurrent": 1,
@@ -120,10 +126,10 @@ For each history operation, the following properties will be available. If a val
 
 To better load balance the requests, there are rate limits on this API:
 
- * 6 calls for each environment per 30 seconds
- * 6 calls for each project per 1 minute
+* 6 calls for each environment every 30 seconds
+* 6 calls for each project per minute
 
 > [!NOTE]
-> Requests that exceed the limits will be rejected with a "HTTP 429 Too Many Requests" response. The **retry-after** header will indicate the number of seconds when the request can be retried.
+> Requests that exceed the limits will be rejected, and an "HTTP 429 Too Many Requests" response will be returned. The **retry-after** header will indicate the number of seconds that the request can be retried after.
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]
