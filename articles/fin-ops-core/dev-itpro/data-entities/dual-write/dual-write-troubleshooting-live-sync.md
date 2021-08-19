@@ -165,7 +165,7 @@ SysComputedColumn::if(SysComputedColumn::isNullExpression(ParentProject), SysCom
 
 2. Use the filter on the new computed column instead of the default column.
 
-To evaluate the filter in a development environment, you can use following x++ code to validate the results. Run this code as a standalone job in AX. This script can be used to evaluate different kinds of filters applicable for an entity before using them on dual-write maps. The query can be run against the database to evaluate discrepancies.
+To evaluate the filter in a development environment, you can use following x++ code to validate the results. Run this code as a standalone program. This script can be used to evaluate different kinds of filters applicable for an entity before using them on dual-write maps. The query can be run against the database to evaluate discrepancies.
 
 ```xpp
 var entityName = "PROJECTENTITY";
