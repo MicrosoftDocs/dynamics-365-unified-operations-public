@@ -89,19 +89,11 @@ If an error that occurs doesn't appear in the following table, create a support 
 
 | Error | Description |
 |----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| Microsoft_Dynamics_Commerce_Runtime_AuthenticationMethodDisabled
-Microsoft_Dynamics_Commerce_Runtime_ChannelConfigurationNotFound
-Microsoft_Dynamics_Commerce_Runtime_ChannelNotPublished
-Microsoft_Dynamics_Commerce_Runtime_InvalidChannelConfiguration |  Unable to switch to offline mode. The channel information is either not available or not configured correctly. To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
-| Microsoft_Dynamics_Commerce_Runtime_CredentialsNotConfigured
-Microsoft_Dynamics_Commerce_Runtime_CredentialsNotFound
-Microsoft_Dynamics_Commerce_Runtime_InvalidAuthenticationCredentials
-Microsoft_Dynamics_Commerce_Runtime_LocalLogonFailed
-Microsoft_Dynamics_Commerce_Runtime_UserBlockedDueToTooManyFailedLogonAttempts | Unable to switch to offline mode. The user information is either not available or not configured correctly. To resolve this issue, run the Staff scheduler job (by default, this is the 1060 scheduler job). Please contact your system administrator. |
+| Microsoft_Dynamics_Commerce_Runtime_AuthenticationMethodDisabled Microsoft_Dynamics_Commerce_Runtime_ChannelConfigurationNotFound Microsoft_Dynamics_Commerce_Runtime_ChannelNotPublished Microsoft_Dynamics_Commerce_Runtime_InvalidChannelConfiguration |  Unable to switch to offline mode. The channel information is either not available or not configured correctly. To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
+| Microsoft_Dynamics_Commerce_Runtime_CredentialsNotConfigured Microsoft_Dynamics_Commerce_Runtime_CredentialsNotFound Microsoft_Dynamics_Commerce_Runtime_InvalidAuthenticationCredentials Microsoft_Dynamics_Commerce_Runtime_LocalLogonFailed Microsoft_Dynamics_Commerce_Runtime_UserBlockedDueToTooManyFailedLogonAttempts | Unable to switch to offline mode. The user information is either not available or not configured correctly. To resolve this issue, run the Staff scheduler job (by default, this is the 1060 scheduler job). Please contact your system administrator. |
 | Microsoft_Dynamics_Commerce_Runtime_CriticalStorageError  | To check the status offline db permissions, size, disk space (could use offline dashboard) |
 | Microsoft_Dynamics_Commerce_Runtime_ElevatedUserSameAsLoggedOnUser | CHECKING |
-| Microsoft_Dynamics_Commerce_Runtime_RealtimeServiceNotSupported
-Microsoft_Dynamics_Commerce_Runtime_TransientStorageError | Unable to switch to offline mode. The offline database is either not correctly installed or not configured correctly. Verify that everything has been setup successfully. Please contact your system administrator. |
+| Microsoft_Dynamics_Commerce_Runtime_RealtimeServiceNotSupported Microsoft_Dynamics_Commerce_Runtime_TransientStorageError | Unable to switch to offline mode. The offline database is either not correctly installed or not configured correctly. Verify that everything has been setup successfully. Please contact your system administrator. |
 | Microsoft_Dynamics_Commerce_Runtime_TerminalNotFound | To resolve this issue, run the Channel configuration scheduler job (by default, this is the 1070 scheduler job). Please contact your system administrator. |
 | Microsoft_Dynamics_Internal_Server_Error | Create a support ticket |
 
