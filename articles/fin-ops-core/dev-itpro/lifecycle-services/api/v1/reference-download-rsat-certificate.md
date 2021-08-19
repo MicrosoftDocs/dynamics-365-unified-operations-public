@@ -154,11 +154,14 @@ if ((-not $certificateResponse.IsSuccess) -or ($certificateResponse.Data -eq $nu
     throw
 }
 
-$certificateSecret = [System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String($certificateResponse.Data.CertificateSecretEncoded))
-$certificateZip = [System.Convert]::FromBase64String($certificateResponse.Data.CertificateZipEncoded)
 $fileName = $certificateResponse.Data.Filename
+$certificateZip = [System.Convert]::FromBase64String($certificateResponse.Data.CertificateZipEncoded)
+$certificateSecret = [System.Text.Encoding]::ASCII.GetString(
+                            [System.Convert]::FromBase64String(
+                                $certificateResponse.Data.CertificateSecretEncoded))
 
-# Could add unzipping in memory and install certificates to correct local certificate stores
+# Save the zip to the local disk.
+# Could add unzipping in memory and install certificates to correct local certificate stores.
 Set-Content $fileName -Value $certificateZip -Encoding Byte
 
 Write-Host "Certificate bundle downloaded to $fileName with private certificate password $certificateSecret"
