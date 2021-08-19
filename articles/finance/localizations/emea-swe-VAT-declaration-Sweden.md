@@ -33,50 +33,50 @@ The VAT declaration in Sweden contains the following information.
 
 | Line | Description                                             | XML file element | Lookup result                                                                                                    |
 |------|---------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------|
-| 05   | Sales liable to VAT, not included in boxes 06, 07 or 08 | ForsMomsEjAnnan  | SalesLiableToVATStandard (05/10) SalesLiableToVATReduced (05/11) SalesLiableToVATReduced2 (05/12)                |
-| 06   | Self-supply liable to VAT                               | UttagMoms        | SelfSupplyLiableToVATStandard (06/10) SelfSupplyLiableToVATReduced (06/11) SelfSupplyLiableToVATReduced2 (06/12) |
-| 07   | Tax assessment basis for profit margin taxation         | UlagMargbesk     | TaxBaseProfitMarginStandard (07/10) TaxBaseProfitMarginReduced (07/11) TaxBaseProfitMarginReduced2 (07/12)       |
-| 08   | Rental income – voluntary tax liability                 | HyrinkomstFriv   | RentalIncomeStandard (08/10) RentalIncomeReduced (08/11) RentalIncomeReduced2 (08/12)                            |
+| 05   | Sales liable to VAT, not included in boxes 06, 07 or 08 | ForsMomsEjAnnan  | SalesLiableToVATStandard (05/10)</br>SalesLiableToVATReduced (05/11)</br>SalesLiableToVATReduced2 (05/12)                |
+| 06   | Self-supply liable to VAT                               | UttagMoms        | SelfSupplyLiableToVATStandard</br>(06/10) SelfSupplyLiableToVATReduced</br>(06/11) </br>SelfSupplyLiableToVATReduced2 (06/12) |
+| 07   | Tax assessment basis for profit margin taxation         | UlagMargbesk     | TaxBaseProfitMarginStandard (07/10)</br>TaxBaseProfitMarginReduced (07/11) </br>TaxBaseProfitMarginReduced2 (07/12)       |
+| 08   | Rental income – voluntary tax liability                 | HyrinkomstFriv   | RentalIncomeStandard (08/10)</br>RentalIncomeReduced (08/11)</br>RentalIncomeReduced2 (08/12)                            |
 
 **Section B. Output VAT on sales in boxes 05 – 08**
 
 | Line | Description     | XML file element | Lookup result                                                                                                                           |
 |------|-----------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| 10   | Output VAT 25 % | MomsUtgHog       | SalesLiableToVATStandard (05/10) SelfSupplyLiableToVATStandard (06/10) TaxBaseProfitMarginStandard (07/10) RentalIncomeStandard (08/10) |
-| 11   | Output VAT 12 % | MomsUtgMedel     | SalesLiableToVATReduced (05/11) SelfSupplyLiableToVATReduced (06/11) TaxBaseProfitMarginReduced (07/11) RentalIncomeReduced (08/11)     |
-| 12   | Output VAT 6 %  | MomsUtgLag       | SalesLiableToVATReduced2 (05/12) SelfSupplyLiableToVATReduced2 (06/12) TaxBaseProfitMarginReduced2 (07/12) RentalIncomeReduced2 (08/12) |
+| 10   | Output VAT 25 % | MomsUtgHog       | SalesLiableToVATStandard (05/10)</br>SelfSupplyLiableToVATStandard (06/10)</br>TaxBaseProfitMarginStandard (07/10)</br> RentalIncomeStandard (08/10) |
+| 11   | Output VAT 12 % | MomsUtgMedel     | SalesLiableToVATReduced (05/11)</br>SelfSupplyLiableToVATReduced (06/11)</br>TaxBaseProfitMarginReduced (07/11)</br>RentalIncomeReduced (08/11)     |
+| 12   | Output VAT 6 %  | MomsUtgLag       | SalesLiableToVATReduced2 (05/12)</br>SelfSupplyLiableToVATReduced2 (06/12)</br>TaxBaseProfitMarginReduced2 (07/12)</br> RentalIncomeReduced2 (08/12) |
 
 **Section C. Purchases liable to VAT**
 
 | Line | Description                                                        | XML file element   | Lookup result                                                                                                                                                                                                                                                                        |
 |------|--------------------------------------------------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 20   | Purchases of goods from another EU country                         | InkopVaruAnnatEg   | EUPurchaseGoodsStandard (20/30) EUPurchaseGoodsReduced (20/31) EUPurchaseGoodsReduced2 (20/32) EUPurchaseGoodsStandardUseTax (20/30/48) EUPurchaseGoodsReducedUseTax (20/31/48) EUPurchaseGoodsReduced2UseTax (20/32/48)                                                             |
-| 21   | Purchases of services from another EU country as per the Main Rule | InkopTjanstAnnatEg | EUPurchaseServicesStandard (21/30) EUPurchaseServicesReduced (21/31) EUPurchaseServicesReduced2 (21/32) EUPurchaseServicesStandardUseTax (21/30/48) EUPurchaseServicesReducedUseTax (21/31/48) EUPurchaseServicesReduced2UseTax (21/32/48)                                           |
-| 22   | Purchases of services from a country outside the EU                | InkopTjanstUtomEg  | PurchaseServicesOutsideEUStandard (22/30) PurchaseServicesOutsideEUReduced (22/31) PurchaseServicesOutsideEUReduced2 (22/32) PurchaseServicesOutsideEUStandardUseTax (22/30/48) PurchaseServicesOutsideEUReducedUseTax (22/31/48) PurchaseServicesOutsideEUReduced2UseTax (22/32/48) |
-| 23   | Purchases of goods in Sweden that the buyer is liable for          | InkopVaruSverige   | PurchaseGoodsDomesticRCStandard (23/30) PurchaseGoodsDomesticRCReduced (23/31) PurchaseGoodsDomesticRCReduced2 (23/32) PurchaseGoodsDomesticRCStandardUseTax (23/30/48) PurchaseGoodsDomesticRCReducedUseTax (23/31/48) PurchaseGoodsDomesticRCReduced2UseTax (23/32/48)             |
-| 24   | Other purchases of services                                        | InkopTjanstSverige | OtherPurchaseGoodsRCStandard (24/30) OtherPurchaseGoodsRCReduced (24/31) OtherPurchaseGoodsRCReduced2 (24/32) OtherPurchaseGoodsRCStandardUseTax (24/30/48) OtherPurchaseGoodsRCReducedUseTax (24/31/48) OtherPurchaseGoodsRCReduced2UseTax (24/32/48)                               |
+| 20   | Purchases of goods from another EU country                         | InkopVaruAnnatEg   | EUPurchaseGoodsStandard (20/30)</br>EUPurchaseGoodsReduced (20/31) </br>EUPurchaseGoodsReduced2 (20/32)</br>EUPurchaseGoodsStandardUseTax (20/30/48)</br>EUPurchaseGoodsReducedUseTax (20/31/48)</br>EUPurchaseGoodsReduced2UseTax (20/32/48)                                                             |
+| 21   | Purchases of services from another EU country as per the Main Rule | InkopTjanstAnnatEg | EUPurchaseServicesStandard (21/30)</br>EUPurchaseServicesReduced (21/31)</br> EUPurchaseServicesReduced2 (21/32)</br>EUPurchaseServicesStandardUseTax (21/30/48)</br>EUPurchaseServicesReducedUseTax (21/31/48)</br>EUPurchaseServicesReduced2UseTax (21/32/48)                                           |
+| 22   | Purchases of services from a country outside the EU                | InkopTjanstUtomEg  | PurchaseServicesOutsideEUStandard (22/30)</br>PurchaseServicesOutsideEUReduced (22/31)</br>PurchaseServicesOutsideEUReduced2 (22/32)</br>PurchaseServicesOutsideEUStandardUseTax (22/30/48)</br>PurchaseServicesOutsideEUReducedUseTax (22/31/48) </br>PurchaseServicesOutsideEUReduced2UseTax (22/32/48) |
+| 23   | Purchases of goods in Sweden that the buyer is liable for          | InkopVaruSverige   | PurchaseGoodsDomesticRCStandard (23/30)</br>PurchaseGoodsDomesticRCReduced (23/31)</br>PurchaseGoodsDomesticRCReduced2 (23/32)</br>PurchaseGoodsDomesticRCStandardUseTax (23/30/48)</br>PurchaseGoodsDomesticRCReducedUseTax (23/31/48) </br>PurchaseGoodsDomesticRCReduced2UseTax (23/32/48)             |
+| 24   | Other purchases of services                                        | InkopTjanstSverige | OtherPurchaseGoodsRCStandard (24/30)</br>OtherPurchaseGoodsRCReduced (24/31) </br>OtherPurchaseGoodsRCReduced2 (24/32)</br>OtherPurchaseGoodsRCStandardUseTax (24/30/48)</br>OtherPurchaseGoodsRCReducedUseTax (24/31/48)</br>OtherPurchaseGoodsRCReduced2UseTax (24/32/48)                               |
 
 **Section D. Output VAT on sales in boxes 20 – 24**
 
 | Line | Description     | XML file element  | Lookup result                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |------|-----------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 30   | Output VAT 25 % | MomsInkopUtgHog   | EUPurchaseGoodsStandard (20/30) EUPurchaseGoodsStandardUseTax (20/30/48) EUPurchaseServicesStandard (21/30) EUPurchaseServicesStandardUseTax (21/30/48) PurchaseServicesOutsideEUStandard (22/30) PurchaseServicesOutsideEUStandardUseTax (22/30/48) PurchaseGoodsDomesticRCStandard (23/30) PurchaseGoodsDomesticRCStandardUseTax (23/30/48) OtherPurchaseGoodsRCStandard (24/30) OtherPurchaseGoodsRCStandardUseTax (24/30/48) |
-| 31   | Output VAT 12 % | MomsInkopUtgMedel | EUPurchaseGoodsReduced (20/31) EUPurchaseGoodsReducedUseTax (20/31/48) EUPurchaseServicesReduced (21/31) EUPurchaseServicesReducedUseTax (21/31/48) PurchaseServicesOutsideEUReduced (22/31) PurchaseServicesOutsideEUReducedUseTax (22/31/48) PurchaseGoodsDomesticRCReduced (23/31) PurchaseGoodsDomesticRCReducedUseTax (23/31/48) OtherPurchaseGoodsRCReduced (24/31) OtherPurchaseGoodsRCReducedUseTax (24/31/48)           |
-| 32   | Output VAT 6 %  | MomsInkopUtgLag   | EUPurchaseGoodsReduced2 (20/32) EUPurchaseGoodsReduced2UseTax (20/32/48) EUPurchaseServicesReduced2 (21/32) EUPurchaseServicesReduced2UseTax (21/32/48) PurchaseServicesOutsideEUReduced2 (22/32) PurchaseServicesOutsideEUReduced2UseTax (22/32/48) PurchaseGoodsDomesticRCReduced2 (23/32) PurchaseGoodsDomesticRCReduced2UseTax (23/32/48) OtherPurchaseGoodsRCReduced2 (24/32) OtherPurchaseGoodsRCReduced2UseTax (24/32/48) |
+| 30   | Output VAT 25 % | MomsInkopUtgHog   | EUPurchaseGoodsStandard (20/30)</br>EUPurchaseGoodsStandardUseTax (20/30/48)</br>EUPurchaseServicesStandard (21/30) </br>EUPurchaseServicesStandardUseTax (21/30/48)</br>PurchaseServicesOutsideEUStandard (22/30)</br>PurchaseServicesOutsideEUStandardUseTax (22/30/48) </br>PurchaseGoodsDomesticRCStandard (23/30)</br>PurchaseGoodsDomesticRCStandardUseTax (23/30/48)</br>OtherPurchaseGoodsRCStandard (24/30)</br>OtherPurchaseGoodsRCStandardUseTax (24/30/48) |
+| 31   | Output VAT 12 % | MomsInkopUtgMedel | EUPurchaseGoodsReduced (20/31)</br>EUPurchaseGoodsReducedUseTax (20/31/48)</br>EUPurchaseServicesReduced (21/31) </br>EUPurchaseServicesReducedUseTax (21/31/48)</br>PurchaseServicesOutsideEUReduced (22/31)</br>PurchaseServicesOutsideEUReducedUseTax (22/31/48)</br>PurchaseGoodsDomesticRCReduced (23/31)</br>PurchaseGoodsDomesticRCReducedUseTax (23/31/48)</br>OtherPurchaseGoodsRCReduced (24/31)</br>OtherPurchaseGoodsRCReducedUseTax (24/31/48)           |
+| 32   | Output VAT 6 %  | MomsInkopUtgLag   | EUPurchaseGoodsReduced2 (20/32)</br>EUPurchaseGoodsReduced2UseTax (20/32/48)</br>EUPurchaseServicesReduced2 (21/32) </br>EUPurchaseServicesReduced2UseTax (21/32/48)</br>PurchaseServicesOutsideEUReduced2 (22/32)</br>PurchaseServicesOutsideEUReduced2UseTax (22/32/48) </br>PurchaseGoodsDomesticRCReduced2 (23/32)</br>PurchaseGoodsDomesticRCReduced2UseTax (23/32/48)</br>OtherPurchaseGoodsRCReduced2 (24/32)</br>OtherPurchaseGoodsRCReduced2UseTax (24/32/48) |
 
 **Section H. Import**
 
 | Line | Description             | XML file element | Lookup result                                                                                                                                                      |
 |------|-------------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 50   | Taxable basis on import | MomsUlagImport   | ImportStandard (50/60) ImportReduced (50/61) ImportReduced2 (50/62) ImportStandardUseTax (50/60/48) ImportReducedUseTax (50/61/48) ImportReduced2UseTax (50/62/48) |
+| 50   | Taxable basis on import | MomsUlagImport   | ImportStandard (50/60)</br>ImportReduced (50/61)</br>ImportReduced2 (50/62)</br>ImportStandardUseTax (50/60/48) ImportReducedUseTax</br>(50/61/48)</br>ImportReduced2UseTax (50/62/48) |
 
 **Section I. Output VAT on import in box 50**
 
 | Line | Description     | XML file element   | Lookup result                                          |
 |------|-----------------|--------------------|--------------------------------------------------------|
-| 60   | Output VAT 25 % | MomsImportUtgHog   | ImportStandard (50/60) ImportStandardUseTax (50/60/48) |
-| 61   | Output VAT 12 % | MomsImportUtgMedel | ImportReduced (50/61) ImportReducedUseTax (50/61/48)   |
-| 62   | Output VAT 6 %  | MomsImportUtgLag   | ImportReduced2 (50/62) ImportReduced2UseTax (50/62/48) |
+| 60   | Output VAT 25 % | MomsImportUtgHog   | ImportStandard (50/60)</br>ImportStandardUseTax (50/60/48) |
+| 61   | Output VAT 12 % | MomsImportUtgMedel | ImportReduced (50/61)</br>ImportReducedUseTax (50/61/48)   |
+| 62   | Output VAT 6 %  | MomsImportUtgLag   | ImportReduced2 (50/62)</br>ImportReduced2UseTax (50/62/48) |
 
 **Section E. Sales etc. exempt from VAT**
 
@@ -95,7 +95,7 @@ The VAT declaration in Sweden contains the following information.
 
 | Line | Description         | DTD file element | Lookup result                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |------|---------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 48   | Input VAT to deduct | MomsIngAvdr      | InputVAT EUPurchaseGoodsStandardUseTax (20/30/48) EUPurchaseGoodsReducedUseTax (20/31/48) EUPurchaseGoodsReduced2UseTax (20/32/48) EUPurchaseServicesStandardUseTax (21/30/48) EUPurchaseServicesReducedUseTax (21/31/48) EUPurchaseServicesReduced2UseTax (21/32/48) PurchaseServicesOutsideEUStandardUseTax (22/30/48) PurchaseServicesOutsideEUReducedUseTax (22/31/48) PurchaseServicesOutsideEUReduced2UseTax (22/32/48) PurchaseGoodsDomesticRCStandardUseTax (23/30/48) PurchaseGoodsDomesticRCReducedUseTax (23/31/48) PurchaseGoodsDomesticRCReduced2UseTax (23/32/48) OtherPurchaseGoodsRCStandardUseTax (24/30/48) OtherPurchaseGoodsRCReducedUseTax (24/31/48) OtherPurchaseGoodsRCReduced2UseTax (24/32/48) ImportStandardUseTax (50/60/48) ImportReducedUseTax (50/61/48) ImportReduced2UseTax (50/62/48) |
+| 48   | Input VAT to deduct | MomsIngAvdr      | InputVAT EUPurchaseGoodsStandardUseTax (20/30/48)</br>EUPurchaseGoodsReducedUseTax (20/31/48)</br>EUPurchaseGoodsReduced2UseTax (20/32/48)</br>EUPurchaseServicesStandardUseTax (21/30/48)</br>EUPurchaseServicesReducedUseTax (21/31/48)</br>EUPurchaseServicesReduced2UseTax (21/32/48) </br>PurchaseServicesOutsideEUStandardUseTax (22/30/48)</br>PurchaseServicesOutsideEUReducedUseTax (22/31/48)</br>PurchaseServicesOutsideEUReduced2UseTax (22/32/48) </br>PurchaseGoodsDomesticRCStandardUseTax (23/30/48)</br>PurchaseGoodsDomesticRCReducedUseTax (23/31/48)</br>PurchaseGoodsDomesticRCReduced2UseTax (23/32/48) </br>OtherPurchaseGoodsRCStandardUseTax (24/30/48)</br>OtherPurchaseGoodsRCReducedUseTax (24/31/48)</br>OtherPurchaseGoodsRCReduced2UseTax (24/32/48)</br>ImportStandardUseTax (50/60/48)</br>ImportReducedUseTax (50/61/48)</br>ImportReduced2UseTax (50/62/48) |
 
 ### Purchase reverse charge VAT
 
@@ -165,20 +165,20 @@ application and lookup results in the ER configuration.
     fields.
 
 >   **Note.** Be sure to associate all sales tax codes with lookup results. If
->   any sales tax codes should not generate values in section B, associate them
+>   any sales tax codes should not generate values in VAT declaration, associate them
 >   with the **Other** lookup result.
+
+>   **Note** If you create enough sales tax codes to generate VAT declaration boxes based on assosiation of sales tax code only, select in the column **Transaction classifier** the value **Not blank**. Alternatively if you use the same sales tax code for different transaction types, select value in the column **Transaction classifier**. For example, if you use the same sales tax code for sales and purchases, you should have at least four lines for the same sales tax code with **Transaction classifier** values: **Sales**, **SalesCreditNote**, **Purchase**, **PurchaseCreditNote**.
 
 ![](media/434c381f0f588abf84cd83518b51cf20.png)
 
->   Application parameters
-
-1.  On the Action Pane, select **Export** to export the settings in an XML file.
+4.  On the Action Pane, select **Export** to export the settings in an XML file.
     Then close the page.
 
-2.  Select the **VAT declaration Excel (SE)** configuration, and then select
+5.  Select the **VAT declaration Excel (SE)** configuration, and then select
     **Configurations \> Application specific parameters setup**.
 
-3.  Select **Import**, and select the file that you exported earlier.
+6.  Select **Import**, and select the file that you exported earlier.
 
 **Note.** When you create a new sales tax code, adjust the settings of
 application-specific parameters according to the lookup result for that new
@@ -202,7 +202,7 @@ application-specific parameters into that new version.
 >   settlement period** report and also when you select **Print** on the **Sales
 >   tax payments** page.
 
-1.  On the **Tax authorities** page, select the tax authority, and then, in the
+4.  On the **Tax authorities** page, select the tax authority, and then, in the
     **Report layout** field, select **Default**.
 
 If you're configuring the VAT declaration in a legal entity where there are
@@ -237,22 +237,47 @@ follow these steps.
 
 2.  Set the following fields.
 
-| Field                     | Description                                    |
-|---------------------------|------------------------------------------------|
-| Settlement period         | Select the settlement period.                  |
-| Sales tax payment version | Select one of the following values:            |
-| From date                 | Select the start date of the reporting period. |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Settlement period</p>
+</td>
+<td>
+<p>Select the settlement period.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sales tax payment version</p>
+</td>
+<td>
+<p>Select one of the following values:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Original</strong> &ndash; Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Corrections</strong> &ndash; Generate a report for sales tax transactions of all the subsequent sales tax payments for the period.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Total list</strong> &ndash; Generate a report for all sales tax transactions for the period, including the original and all corrections.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>From date</p>
+</td>
+<td>
+<p>Select the start date of the reporting period.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
--   **Original** – Generate a report for sales tax transactions of the original
-    sales tax payment or before the sales tax payment is generated.
-
--   **Corrections** – Generate a report for sales tax transactions of all the
-    subsequent sales tax payments for the period.
-
--   **Total list** – Generate a report for all sales tax transactions for the
-    period, including the original and all corrections.
-
-1.  Select **OK**, and review the Excel report.
+3.  Select **OK**, and review the Excel report.
 
 ### Settle and post sales tax
 
@@ -261,19 +286,46 @@ follow these steps.
 
 2.  Set the following fields.
 
-| Field                     | Description                                    |
-|---------------------------|------------------------------------------------|
-| Settlement period         | Select the settlement period.                  |
-| Sales tax payment version | Select one of the following values:            |
-| From date                 | Select the first date of the reporting period. |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Settlement period</p>
+</td>
+<td>
+<p>Select the settlement period.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sales tax payment version</p>
+</td>
+<td>
+<p>Select one of the following values:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Original</strong> &ndash; Generate the original sales tax payment for the settlement period.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Latest corrections</strong> &ndash; Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>From date</p>
+</td>
+<td>
+<p>Select the first date of the reporting period.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
--   **Original** – Generate the original sales tax payment for the settlement
-    period.
-
--   **Latest corrections** – Generate a correction sales tax payment after the
-    original sales tax payment for the settlement period was created.
-
-1.  Select **OK**.
+3.  Select **OK**.
 
 ### Add notes to the sales tax payment
 
@@ -375,7 +427,7 @@ declaration EM package**).
 
 >   **Note.** Steps 5 through 7 are optional.
 
-1.  Optional: On the **Messages** FastTab, select **Collect data**, and then
+5.  Optional: On the **Messages** FastTab, select **Collect data**, and then
     select **OK**. Sales tax payments that were generated earlier are added to
     the message. For more information, see the [Settle and post sales
     tax](#settle-and-post-sales-tax) section earlier in this topic. If you skip
@@ -383,61 +435,82 @@ declaration EM package**).
     declaration version** field in the **Electronic report parameters** dialog
     box.
 
-2.  Optional: On the **Message items** FastTab, review the sales tax payments
+6.  Optional: On the **Message items** FastTab, review the sales tax payments
     that are transferred for processing. By default, all sales tax payments of
     the selected period that weren't included in any other message of the same
     processing are included.
 
-3.  Optional: Select **Original document** to review the sales tax payments, or
+7.  Optional: Select **Original document** to review the sales tax payments, or
     select **Delete** to exclude sales tax payments from processing. If you skip
     this step, you can still generate a VAT declaration by using the **Tax
     declaration version** field in the **Electronic report parameters** dialog
     box.
 
-4.  On the **Messages** FastTab, select **Update status**.
+8.  On the **Messages** FastTab, select **Update status**.
 
-5.  In the **Update status** dialog box, select the **Ready to generate**
+9.  In the **Update status** dialog box, select the **Ready to generate**
     action, and then select **OK**. Verify that the message status is changed to
     **Ready to generate**.
 
-6.  Select **Generate report**.
+10.  Select **Generate report**.
 
-7.  To preview the VAT declaration amounts, in the **Run processing** dialog
+11.  To preview the VAT declaration amounts, in the **Run processing** dialog
     box, select **Preview report**, and then select **OK**.
 
-8.  In the **Electronic reporting parameters** dialog box, set the following
+12.  In the **Electronic reporting parameters** dialog box, set the following
     fields, and then select **OK**.
 
-| Field                   | Description                                                                                                                                                                                                                |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Settlement period       | Select the settlement period. If you selected **Collect data** in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments. |
-| Tax declaration version | Select one of the following values:                                                                                                                                                                                        |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Settlement period</p>
+</td>
+<td>
+<p>Select the settlement period.</p>
+<p>If you selected <strong>Collect data</strong> in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Tax declaration version</p>
+</td>
+<td>
+<p>Select one of the following values:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Original</strong> &ndash; Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Corrections</strong> &ndash; Generate a report for sales tax transactions of all the subsequent sales tax payments for the period.</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Total list</strong> &ndash; Generate a report for all sales tax transactions for the period, including the original and all corrections.</p>
+<p>If you selected <strong>Collect data</strong> in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
--   **Original** – Generate a report for sales tax transactions of the original
-    sales tax payment or before the sales tax payment is generated.
-
--   **Corrections** – Generate a report for sales tax transactions of all the
-    subsequent sales tax payments for the period.
-
--   **Total list** – Generate a report for all sales tax transactions for the
-    period, including the original and all corrections.
-
-If you selected **Collect data** in step 5, you can disregard this field. The
-report will be generated for the sales tax transactions that are included in the
-collected sales tax payments.
-
-1.  Select the **Attachments** button (paper clip symbol) in the upper-right
+13.  Select the **Attachments** button (paper clip symbol) in the upper-right
     corner of the page, and then select **Open** to open the Excel file. Review
     the amounts in the Excel document.
 
-2.  Select **Generate report**.
+14.  Select **Generate report**.
 
-3.  To generate a report in XML format, in the **Run processing** dialog box,
+15.  To generate a report in XML format, in the **Run processing** dialog box,
     select **Generate report**, and then select **OK**.
 
-4.  Select the **Attachments** button (paper clip symbol) in the upper-right
+16.  Select the **Attachments** button (paper clip symbol) in the upper-right
     corner of the page, and download the electronic file that was generated. You
     should manually upload this file to the government portal.
+    
+>  **Note**
+>  You may need to manually add the following line to the generated file before you upload the file to the government portal. It should be the second line in the file: 
+   >  <!DOCTYPE eSKDUpload PUBLIC "-//Skatteverket, Sweden//DTD Skatteverket eSKDUpload-DTD Version 6.0//SV" "https://www1.skatteverket.se/demoeskd/eSKDUpload_6p0.dtd">
+    
 
 ## Run a VAT declaration for multiple legal entities
 
@@ -464,7 +537,7 @@ legal entities.
 >   existing records, this field shows the identifier of the current legal
 >   entity.
 
-1.  In the **Datasources setup** grid, add a line for each additional legal
+5.  In the **Datasources setup** grid, add a line for each additional legal
     entity that must be included in reporting. For each new line, set the
     following fields.
 
@@ -480,7 +553,7 @@ legal entities.
 | Company                | Select the ID of the legal entity.                                                                                            |
 | User query             | The checkbox is automatically selected when you define criteria by selecting **Edit query**.                                  |
 
-2.  For each new line, select **Edit query**, and specify a related settlement
+6.  For each new line, select **Edit query**, and specify a related settlement
     period for the legal entity that is specified in the **Company** field on
     the line.
 
