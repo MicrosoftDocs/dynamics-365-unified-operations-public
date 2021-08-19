@@ -2,9 +2,9 @@
 # required metadata
 
 title: Checklist for Electronic messages setup for MTD VAT 
-description: This topic provides details to check setup of Electronic messages for MTD VAT.
+description: This topic provides details to check the setup of Electronic messages for MTD VAT.
 author: liza-golub
-ms.date: 07/31/2021
+ms.date: 08/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-This section provides information about how the Electronic messages functionality should be set up so that it supports both the **UK MTD VAT TEST** 
-processing (for testing purposes) and the **UK MTD VAT returns** processing (for real-life interoperation with the production HMRC web application). 
+This topic provides information about how the Electronic messages functionality should be set up so that it supports both the **UK MTD VAT TEST** 
+processing for testing purposes, and the **UK MTD VAT returns** processing for real-life interoperation with the production HMRC web application. 
 Use this information to determine whether the Electronic messages functionality is set up correctly.
 
-Although this section includes the most important information about the setup, it doesn't include all the data. 
+Although this section includes the most important information about the setup, not all of the data is included. 
 We recommend that you use a package of data entities that provides a predefined setup of the functionality and includes all the data that is required 
 to set up the processing for interoperation with MTD for VAT.
 
@@ -44,8 +44,8 @@ The following types of processing are defined to support interoperation with MTD
 
 | Name               | Description |
 |--------------------|-------------|
-| UK MTD VAT TEST    | The testing processing for the preparation and submission of VAT returns to the HMRC sandbox. |
-| UK MTD VAT returns | The processing for the preparation and submission of VAT returns to HMRC. |
+| UK MTD VAT TEST    | The test processing for the preparation and submission of VAT returns to the HMRC sandbox. |
+| UK MTD VAT returns | The processing to prepare and submit VAT returns to HMRC. |
 
 > [!IMPORTANT]
 > Security roles must be defined for both types of processing to allow access to them at the record level.
@@ -116,15 +116,14 @@ Both the **UK MTD VAT TEST** processing and the **UK MTD VAT returns** processin
 |-----------------|-------------|
 | Due date        | The due date for the obligation period. |
 | HMRC status     | The obligation status in HMRC:<ul><li><strong>O</strong> – Open</li><li><strong>F</strong> – Fulfilled</li></ul> |
-| periodKey       | The ID code for the period that the obligation belongs to. This field is hidden and can't be seen by the user. |
+| periodKey       | The ID code for the period that the obligation belongs to. This field is hidden and can't be seen. |
 | Processing date | The time when the message was processed by HMRC. |
 | Received date   | The date when the obligation was received by HMRC. |
-| Tax registration number   | VAT registration number of the company submitting VAT return. |
+| Tax registration number   | The VAT registration number of the company submitting the VAT return. |
 
 ## Electronic message item types
 
-The setup of electronic messages for both the **UK MTD VAT TEST** processing (for testing purposes) and the **UK MTD VAT returns** processing 
-(for real-life interoperation with the production HMRC web application) uses one type of electronic message item: **VAT return**.
+The setup of electronic messages for both the **UK MTD VAT TEST** processing and the **UK MTD VAT returns** processing uses one type of electronic message item: **VAT return**.
 
 ## Electronic message item statuses
 
@@ -132,12 +131,12 @@ Both the **UK MTD VAT TEST** processing and the **UK MTD VAT returns** processin
 
 | Status         | Description | Records in this status can be deleted |
 |----------------|-------------|---------------------------------------|
-| Populated      | The record has been filled in from sales tax payments. | Yes |
+| Populated      | The record was filled in from sales tax payments. | Yes |
 | Excluded       | The record is excluded from report generation. | Yes |
 | To be reported | The line will be included in the VAT return for submission. | No |
-| Reported       | The record has been included in a VAT declaration file. | No |
-| Sent           | The record has been sent to HMRC in a VAT declaration. | No |
-| Submitted      | The record has been submitted to HMRC. | No |
+| Reported       | The record was included in a VAT declaration file. | No |
+| Sent           | The record was sent to HMRC in a VAT declaration. | No |
+| Submitted      | The record was submitted to HMRC. | No |
 
 ## Electronic message statuses
 
@@ -147,17 +146,17 @@ Both the **UK MTD VAT TEST** processing and the **UK MTD VAT returns** processin
 |------------------------------------|-------------|---------------------------------------|
 | New obligation request             | A new electronic message has been created to request retrieval of VAT obligations. | Yes |
 | Retrieved VAT obligation           | The VAT obligation request has been sent. | Yes |
-| Error VAT obligations retrieving   | A technical error occurred during retrieval of VAT obligations. | Yes |
+| Error VAT obligations retrieving   | A technical error occurred during the retrieval of VAT obligations. | Yes |
 | Completed VAT obligations request  | VAT obligations have been successfully retrieved. | Yes |
 | Error VAT obligations importing    | A technical error occurred during import of VAT obligations. | Yes |
 | New VAT return                     | This sales tax payment has been included for further submission. | Yes |
 | Ready to generate VAT return       | The message is ready to generate a VAT return. | Yes |
 | Generated VAT return               | The VAT return in JSON format has been generated and attached to the message. | No |
-| Error VAT return generation        | A technical error occurred during generation of the ER report. | Yes|
+| Error VAT return generation        | A technical error occurred when the ER report was generated. | Yes|
 | Sent VAT return                    | The VAT return has been sent to HMRC in JSON format. | No |
 | Error VAT return submission        | An error occurred during submission of the VAT return. |Yes |
 | Completed VAT return               | The VAT return has been completed. | No |
-| Error VAT return import response   | A technical error occurred during import of VAT return response. | Yes |
+| Error VAT return import response   | A technical error occurred during the import of VAT return response. | Yes |
 | New liabilities request            | A new electronic message has been created to request liabilities. | Yes |
 | Error VAT liabilities request      | A technical error occurred during the request for VAT liabilities. | Yes |
 | Completed VAT liabilities request  | VAT liabilities have been successfully retrieved. | Yes |
