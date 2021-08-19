@@ -75,7 +75,7 @@ The response is always a "200 OK" response, unless you aren't correctly authenti
 | CertificateZipEncoded | A zip containing the .PFX and .CER files in a Base 64-encoded byte array. |
 | CertificateSecretEncoded | The private certificate's private secret as a Base 64-encoded string. This will change every request. |
 | ExpirationDateTimeUTC | A date and time in UTC of when the certificate is not valid after. |
-| Filename | The filename of the ZIP being returned. |
+| Filename | The filename of the zip being returned. |
 
 ### Example response
 
@@ -84,8 +84,8 @@ The response is always a "200 OK" response, unless you aren't correctly authenti
 ```json
 {
     "Data": {
-        "CertificateZipEncoded": "<base64 encoded zip>",
-        "CertificateSecretEncoded": "<base64 encoded password>",
+        "CertificateZipEncoded": "<base 64-encoded zip>",
+        "CertificateSecretEncoded": "<base 64-encoded password>",
         "ExpirationDateTimeUTC": "Thursday, June 30, 2022 8:52:13 PM",
         "Filename": "RSATCertificate_TestEnv1_20210805-100102.zip"
     },
