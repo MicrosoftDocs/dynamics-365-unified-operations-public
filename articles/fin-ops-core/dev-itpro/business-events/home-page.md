@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events overview
-description: This topic provides information about business events, which allow external systems to receive notifications from Dynamics 365 Finance and Operations apps.
+description: This topic provides information about business events, which allow external systems to receive notifications from Finance and Operations apps.
 author: Sunil-Garg
 ms.date: 04/22/2021
 ms.topic: article
