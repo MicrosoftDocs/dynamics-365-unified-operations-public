@@ -359,7 +359,7 @@ In the **Offset account** field, select **110130**.
 
 17. Review the **General** tab for the vendor invoice.
 
-![Intrastat journal line details for vendor invoice](media/ita_intrastat_journal_vendor_invoice.png)
+![Intrastat journal line details for vendor invoice](media/ita_intrastat_journal_vendor_invoice_line_details.png)
 
 18. Generate the Intrastat report for arrivals.
 
