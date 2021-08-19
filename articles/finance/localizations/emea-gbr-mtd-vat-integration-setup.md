@@ -4,7 +4,7 @@
 title: Prepare for integration with MTD for VAT (United Kingdom)
 description: This topic explains the process of setting up Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
 author: liza-golub
-ms.date: 07/30/2021
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,9 +28,8 @@ ms.dyn365.ops.version: AX 10.0.22
 
 # Prepare your environment to interoperate with HMRC's MTD for VAT
 
-After a company is [signed up for the MTD service for VAT in HMRC](https://www.gov.uk/vat-record-keeping/sign-up-for-making-tax-digital-for-vat), 
-it should complete the following tasks. 
-These tasks will prepare Finance to interoperate with the HMRC's web service to retrieve information about VAT obligations of your company and submit VAT returns.
+After your company is [signed up for the MTD service for VAT in HMRC](https://www.gov.uk/vat-record-keeping/sign-up-for-making-tax-digital-for-vat), complete the following tasks. 
+These tasks will prepare your Dynamics 365 Finance environment to interoperate with the HMRC's web service to retrieve information about the VAT obligations of your company and submit VAT returns.
 
 - [Import and set up Electronic reporting (ER) configurations](#configurations).
 - [Set up application-specific parameters for VAT Declaration format](#declaration).
@@ -46,29 +45,27 @@ These tasks will prepare Finance to interoperate with the HMRC's web service to 
 - [Set up security roles to interoperate with HMRC's MTD VAT web-service](#application).
 - [Sending fraud prevention data](#headers).
 
-## <a id="configurations"></a>Import and set up ER configurations
+## <a name="configurations"></a>Import and set up ER configurations
 
-To prepare Finance to intoperate with MTD for VAT, you must import the following ER configurations.
+To prepare Finance to intoperate with MTD for VAT, import the following ER configurations.
 
 | Number | ER configuration name                       | Type                                 | Description |
 |--------|---------------------------------------------|--------------------------------------|-------------|
-| **1**  | **Tax declaration model**                   | **Model**                            | **A generic model for different tax declarations.** |
+| 1      | Tax declaration model                       | Model                                | A generic model for different tax declarations.   |
 | 2      | Tax declaration model mapping               | Model mapping                        | A generic model mapping for VAT declarations. |
 | 3      | VAT Declaration JSON (UK)                   | Format (exporting)                   | A VAT return in JSON format for submission to HMRC. |
 | 4      | VAT Declaration Excel (UK)                  | Format (exporting)                   | The **VAT 100** report (a declaration in Microsoft Excel format). |
-| 5      | MTD VAT interoperation (UK)                 | Format (exporting)                   | A format that is used to create a URL path for HMRC endpoints and request a test user. |
+| 5      | MTD VAT interoperation (UK)                 | Format (exporting)                   | A format that's used to create a URL path for HMRC endpoints and request a test user. |
 | 6      | MTD VAT importing model mapping (UK)        | Model mapping (importing)            | The importing model mapping for VAT obligations. |
 | 7      | MTD VAT obligations importing JSON (UK)     | Format (importing)                   | The format for importing VAT obligations that are retrieved from HMRC. |
-| **8**  | **Electronic Messages framework model**     | **Model**                            | **The model for the Electronic messages framework.** |
+| 8      | Electronic Messages framework model         | Model                                | The model for the Electronic messages framework.   |
 | 9      | MTD VAT model mapping (UK)                  | Model mapping (exporting, importing) | A model mapping that supports interoperation for MTD for VAT for the UK. |
-| 10     | MTD VAT return response importing JSON (UK) | Format (importing)                   | The importing ER format that is used for the response that is received from HMRC for the VAT declaration submission. This format is used to import the response into an electronic message. |
-| 11     | MTD VAT web request headers format (UK)     | Format (exporting)                   | A format that is used to create request header parameters for the HTTPS request. |
+| 10     | MTD VAT return response importing JSON (UK) | Format (importing)                   | The importing ER format used for the response that's received from HMRC for the VAT declaration submission. This format is used to import the response into an electronic message. |
+| 11     | MTD VAT web request headers format (UK)     | Format (exporting)                   | A format that's used to create request header parameters for the HTTPS request. |
 | 12     | MTD VAT authorization format (UK)           | Format (exporting)                   | The request header parameters for the authorization code and access token. |
-| 13     | MTD VAT import token format (UK)            | Format (importing)                   | The ER format that is used to import the access token that is received from HMRC into the database. |
+| 13     | MTD VAT import token format (UK)            | Format (importing)                   | The ER format that's used to import the access token that's received from HMRC into the database. |
 
-Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article 
-that explains the changes that were introduced in the configuration version. Configuration version may contain references to the objects that are not available in your Finance version, 
-in this case importing process of such version of configuration will be locked. Import the latest version of the configuration that is available for your Finance version.
+Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article  that explains the changes introduced in the configuration version. The configuration version may contain references to the objects that aren't available in your Finance version. In this case, the import process of such a version of configuration will be locked. Import the latest version of the configuration that is available for your Finance version.
 
 > [!NOTE]
 > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the following configurations:
@@ -78,9 +75,9 @@ in this case importing process of such version of configuration will be locked. 
 >
 > ![Default for model mapping option.](media/emea-gbr-default-for-model-mapping-parameter.png)
 
-For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo).
+For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-## <a id="declaration"></a>Set up application-specific parameters for VAT Declaration format
+## <a name="declaration"></a>Set up application-specific parameters for VAT Declaration format
 
 Nine boxes on the VAT declaration for the UK must contain values that are calculated based on the tax transactions 
 that are relevant to the VAT settlement period used by the company in the reporting period.
@@ -166,7 +163,7 @@ and then import it into the **VAT Declaration Excel (UK)** format.
 > 
 >  (**!**) Setup of **ReportFieldLookup** is mandatory for all Legal entities reporting VAT as **VAT group**.
 
-## <a id="headers"></a>Set up application-specific parameters for MTD VAT web request headers format
+## <a name="headers"></a>Set up application-specific parameters for MTD VAT web request headers format
 
 It is [required by law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) in the UK to submit header data for the VAT (MTD) APIs. When the MTD VAT APIs are used, MTD-compatible software must submit HTTP fraud prevention headers that includes: client public IP, server public IP. For more information about how MTD VAT feature in Finance supports the requirement to send fraud prevention headers in MTD VAT Finance, see [Sending fraud prevention data](#headers) section of this topic.
 
@@ -233,134 +230,135 @@ When you import the setup of Electronic messages functionality for MTD for VAT f
 
 For more information about the predefined setup that is included in the data entities in the package for MTD for VAT, see [Checklist for Electronic messages setup for MTD VAT](emea-gbr-mtd-vat-integration-em-setup-checklist.md) later in this topic. 
 
-## <a id="vrn"></a>Set up VAT registration number of the company reporting VAT
+## <a name="vrn"></a>Set up VAT registration number of the company reporting VAT
 
-Starting from version 4 (KB4617940) **UK MTD VAT setup** package provides possibility to define VAT registration number of the company which must report VAT return by using MTD feature in Finance independently from the primary address and Registration ID defined for the legal entity. This possibility is enabled with **Tax registration number** additional field and allows for legal entites with multiple VAT registration to easily submit their VAT return specific to their VAT registration in the UK. For more information about supporting filing for multiple VAT registrations, see [Multiple VAT registration numbers](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers).
+Starting from version 4 (KB4617940), the **UK MTD VAT setup** package provides the possibility to define the VAT registration number of the company that must report VAT returns by using the MTD feature in Finance independently from the primary address and Registration ID defined for the legal entity. This possibility is enabled with the **Tax registration number** additional field and allows for legal entites with multiple VAT registration to easily submit their VAT returns specific to their VAT registration in the UK. For more information about supporting filing for multiple VAT registrations, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
 
-To define VAT registration number (VRN) which must be used by MTD VAT feature in Finance to interoperate with HMRC's MTD VAT API and submit VAT return for follow the next steps.
+To define the VAT registration number (VRN) which must be used by MTD VAT feature in Finance to interoperate with HMRC's MTD VAT API and submit VAT return, complete the following steps.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**. 
-2. Select **UK MTD VAT returns** processing.
-3. On the **Message additional fields** fast tab, in the **Tax registration number** field, define the VRN from the name of which the VAT return will be sent to HMRC.
-4. Save your settings.
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic messages processing** and select **UK MTD VAT returns** processing.
+2. On the **Message additional fields** FastTAb, in the **Tax registration number** field, define the VRN from the name of which the VAT return will be sent to HMRC.
+3. Save your changes.
 
-In case VRN is not specified in **Tax registration number** additional field of the **UK MTD VAT returns** processing, system retrieves VRN from **Registration ID** defined in the properties of the legal entity (**Organization administration** \> **Global Address Book** \> **Legal entities**)  that is associated with the registration category of **VAT ID**. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
+IF the VRN is not specified in the **Tax registration number** additional field of the **UK MTD VAT returns** processing, the system retrieves the VRN from **Registration ID** defined in the properties of the legal entity that's associated with the registration category of **VAT ID**. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
 
 ## <a id="format"></a>Paper format of VAT statement (VAT 100)
 
-You can generate a paper format of the **VAT 100** report by using the **Report sales tax for settlement period** dialog box (**Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**). Alternatively, you can generate the statement for a selected sales tax payment transaction from the **Sales tax payments** page (**Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**). 
+You can generate a paper format of the **VAT 100** report by going to **Tax** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**. Alternatively, you can generate the statement for a selected sales tax payment transaction by going to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments**. 
 
-To generate the **VAT 100** report in Excel format instead of [SSRS format](https://docs.microsoft.com/en-us/dynamics365/finance/get-started/removed-deprecated-features-finance#vat-100-report-for-the-united-kingdom-in-ssrs-format), you must define an ER format on the **General ledger parameters** page. 
+To generate the **VAT 100** report in Excel format instead of [SSRS format](../get-started/removed-deprecated-features-finance.md#vat-100-report-for-the-united-kingdom-in-ssrs-format), define an ER format on the **General ledger parameters** page. 
 
-1. Go to **Tax** \> **Setup** \> **General ledger parameters**.
+1. Go to **Tax** > **Setup** > **General ledger parameters**.
 2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (UK)**.
 
-## <a id="vatgroup"></a>Enable VAT return reporting for companies that report as a VAT group in the same system database
+## <a name="vatgroup"></a>Enable VAT return reporting for companies that report as a VAT group in the same system database
 
 This section of MTD feature setup is mandatory only for companies that report as a VAT group in the same system database.
 
 To prepare Finance to report a VAT return for a VAT group, make sure that your business processes and the system setup meet the following conditions:
 
-- Tax information from all the subsidiaries is registered in the same system (Finance).
+- Tax information from all the subsidiaries is registered in the same system. In this case, Finance.
 - The system correctly reflects all the tax transactions in accordance with the rules and principles of the UK.
-- Settlement periods for all the legal entities that are involved to the VAT group are identically defined in full accordance with the period intervals that are defined in the HMRC online account.
-- VAT settlement (the [Settle and post sales tax](../general-ledger/tasks/create-sales-tax-payment.md) job) is done in each subsidiary legal entity.
+- Settlement periods for all the legal entities that are involved in the VAT group are identically defined according to the period intervals that are defined in the HMRC online account.
+- VAT settlement, and the [Settle and post sales tax](../general-ledger/tasks/create-sales-tax-payment.md) job, is completed in each subsidiary legal entity.
 - A **VAT 100** report is correctly generated in paper format in each subsidiary legal entity.
 - One legal entity is set up for interoperation with HMRC, according to the information in this topic, and users can request VAT obligations from this legal entity for the VAT group.
 
-To enable Finance to report VAT return from multiple legal entities in the same system database, turn on the **Cross-company queries for the populate records actions** feature in Feature management. Go to **Workspaces** \> **Feature management**, find **Cross-company queries for the populate records actions** in the list, and then select **Enable now** in the lower right of the page.
+To enable Finance to report VAT return from multiple legal entities in the same system database, turn on the **Cross-company queries for the populate records actions** feature in Feature management. Go to **Workspaces** > **Feature management**, find **Cross-company queries for the populate records actions** in the list, and then select **Enable now**.
 
-## <a id="settlement"></a>Define a sales tax settlement period
+## <a name="settlement"></a>Define a sales tax settlement period
 
-Electronic message processing that is defined for MTD for VAT in the **UK MTD VAT setup** package is company-agnostic. Therefore, it can be implemented in any legal entity in Finance.
+Electronic message processing that's defined for MTD for VAT in the **UK MTD VAT setup** package is company-agnostic. Therefore, it can be implemented in any legal entity in Finance.
 
-Both the **UK MTD VAT returns** processing (for production) and the **UK MTD VAT TEST** processing (for testing purposes) let you collect sales tax payment transactions in the legal entity. You can then generate a VAT return in JSON or Excel format, for either production purposes or testing purposes. The collection of sales tax payment transactions is implemented by using the **Populate VAT return records** action of the **Populate record** type. To correctly collect sales tax payment transactions, you must define a sales tax settlement period for the **Populate VAT return records** action. 
+Both the **UK MTD VAT returns** processing for production, and the **UK MTD VAT TEST** processing for testing purposes, let you collect sales tax payment transactions in the legal entity. You can then generate a VAT return in JSON or Excel format, for either production or testing purposes. The collection of sales tax payment transactions is implemented by using the **Populate VAT return records** action of the **Populate record** type. To correctly collect sales tax payment transactions, define a sales tax settlement period for the **Populate VAT return records** action. 
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**, and select **Populate VAT return records**. 
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**, and select **Populate VAT return records**. 
 2. On the **Datasource setup** FastTab, select the **VAT payment** record, and then select **Edit query**. 
-3. For the **Settlement period** field of the **Sales tax payments** table, define the sales tax settlement period related to which tax transactions from the selected legal entity must be reported to HMRC.
+3. For the **Settlement period** field of the **Sales tax payments** table, define the sales tax settlement period related to the tax transactions from the selected legal entity that must be reported to HMRC.
 
-![Sales tax inquiry.](media/emea-gbr-sales-tax-inquiry.png)
+    ![Sales tax inquiry.](media/emea-gbr-sales-tax-inquiry.png)
 
 If you don't set the **Settlement period** field, all tax transactions from the selected legal entity will be considered for reporting for MTD VAT.
 
-In case your company must report VAt return as a VAT group, make sure that all the nessesary conditions that are described in [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vatgroup) are fulfilled and setup sales tax settlement period for all the legal entities included into the VAT group
+If your company must report VAt return as a VAT group, make sure that all the nessesary conditions that are described in [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vatgroup) are fulfilled and set up the sales tax settlement period for all the legal entities included in the VAT group.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**. On the **Populate records action** page, **Company** field is available in the **Datasources setup** grid. For existing records that were created during the general setup of the MTD for VAT feature, this field shows the identifier of the current legal entity. It's assumed that the settlement period for the current legal entity was set up during the general setup of the MTD for VAT feature.
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**. On the **Populate records action** page, the **Company** field is available in the **Datasources setup** grid. For existing records that were created during the general setup of the MTD for VAT feature, this field shows the identifier of the current legal entity. It's assumed that the settlement period for the current legal entity was set up during the general setup of the MTD for VAT feature.
 2. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting for the VAT group. Set the following fields.
 
     | Field name             | Value |
     |------------------------|-------|
     | Name                   | Enter a text value that will help you understand where this record comes from. For example, enter **VAT payment of Subsidiary 1**. |
-    | Message item type      | Select **VAT return**. This value is the only value that is available for all the records. |
+    | Message item type      | Select **VAT return**. This is the only value that's available for all records. |
     | Account type           | Select **All**. |
-    | Master table name      | Specify **TaxReportVoucher** for all the records. |
-    | Document number field  | Specify **Voucher** for all the records. |
-    | Document date field    | Specify **TransDate** for all the records. |
-    | Document account field | Specify **TaxPeriod** for all the records. |
+    | Master table name      | Specify the **TaxReportVoucher** for all the records. |
+    | Document number field  | Specify the **Voucher** for all the records. |
+    | Document date field    | Specify the **TransDate** for all the records. |
+    | Document account field | Specify the **TaxPeriod** for all the records. |
     | Company                | Select the ID of the subsidiary legal entity. |
-    | User query             | The check box is automatically selected when you define criteria by using **Edit query** button. |
+    | User query             | This check box is automatically selected when you define criteria by selecting **Edit query**. |
 
-3. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
+3. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that's specified in the **Company** field on the line.
 
-![Setup of data sources for a VAT group.](media/uk-mtd-populate-records-datasources.png)
+    ![Setup of data sources for a VAT group.](media/uk-mtd-populate-records-datasources.png)
 
-## <a id="sequences"></a>Number sequences for Electronic messages functionality
+## <a name="sequences"></a>Number sequences for Electronic messages functionality
 
-To work with the Electronic messages functionality, you must define related number sequences. 
+To work with the Electronic messages functionality, define the related number sequences. 
 
-1. Go to **Tax** \> **Setup** \> **General ledger parameters**.
+1. Go to **Tax** > **Setup** > **General ledger parameters**.
 2. On the **Number sequences** tab, set up two number sequences:
 
-- Message
-- Message item
+    - Message
+    - Message item
 
-## <a id="docmanagement"></a>Document management parameters
+## <a name="docmanagement"></a>Document management parameters
 
-Before you start to submit a VAT return to HMRC, you must make sure that the **JSON** and **Excel** file types are defined in the list of file types on the **File types** tab of the **Document management parameters** page (**Organization administration** \> **Document management** \> **Document management parameters**). If the **JSON** file type isn't in the list, add it.
+Before you start to submit a VAT return to HMRC, ymake sure that the **JSON** and **Excel** file types are defined in the list of file types on the **File types** tab of the **Document management parameters** page under **Organization administration** > **Document management** > **Document management parameters**. If the **JSON** file type isn't in the list, add it.
 
 ![JSON File type setup.](media/uk-mtd-json-file-type-setup.png)
 
-## <a id="processing"></a>Set up security roles for electronic message processing
+## <a name="processing"></a>Set up security roles for electronic message processing
 
 Different groups of users might require access to different electronic message processing (**UK MTD VAT TEST** or **UK MTD VAT return**). You can limit access to each type of processing, based on security groups that are defined in the system.
 
 Complete the following steps to limit access to the **UK MTD VAT TEST** processing.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**. 
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**. 
 2. Select the **UK MTD VAT TEST** processing, and add the security groups that must work with this processing for testing purposes. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
 
 Complete the following steps to limit access to the **UK MTD VAT returns** processing.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**. 
-2. Select the **UK MTD VAT returns** processing, and add the security groups that must work with this processing for real-life interoperation with the production HMRC environment. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**. 
+2. Select the **UK MTD VAT returns** processing, and add the security groups that must work with this processing for real-life interoperation with the production HMRC environment. 
 
-## <a id="application"></a>Set up security roles to interoperate with HMRC's MTD VAT web-service
+   If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
 
-When an access token to each HMRC web application (production and sandbox) is retrieved from HMRC, it's stored in the system database in an encrypted format. The access token must be used whenever a request of any type will be sent to HMRC. For security reasons, access to the access token must be limited to security groups that must send requests to HMRC. If users who aren't in one of those security groups try to send a request to HMRC, a message notifies them that they aren't allowed to interoperate by using the selected web application.
+## <a name="application"></a>Set up security roles to interoperate with HMRC's MTD VAT web-service
+
+When an access token to each HMRC web application, production and sandbox, is retrieved from HMRC, the token is stored in the system database in an encrypted format. The access token must be used whenever a request of any type is sent to HMRC. For security reasons, access to the access token must be limited to the security groups that send requests to HMRC. If a user who isn't in one of those security groups tries to send a request to HMRC, a message notifies them that they aren't allowed to interoperate by using the selected web application.
 
 Complete the following steps to set up security groups that must have access to HMRC's access token for MTD for VAT.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**. 
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Web applications**. 
 2. Select the web application that you want to define security groups for, and then add those security groups on the **Security roles** FastTab.
 
 If security roles aren't defined for a web application, only a system admin can interoperate by using the selected web application.
 
-## <a id="headers"></a>Sending fraud prevention data
+## <a name="headers"></a>Sending fraud prevention data
 
-It is [required by law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/) in the UK to submit header data for the VAT (MTD) APIs. When the MTD VAT APIs are used, MTD-compatible software must submit HTTP fraud prevention headers. This may include location information and other personal identifiers such as IP addresses. Your privacy is important to us. To learn more read our [Privacy Notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
+[By law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/),submitting header data for the VAT (MTD) APIs is required in the UK. When the MTD VAT APIs are used, MTD-compatible software must submit HTTP fraud prevention headers. This may include location information and other personal identifiers such as IP addresses. Your privacy is important to us. To learn more, read our [Privacy Notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
 
-MTD VAT feature in Finance supports fraud prevention headers required by HMRC (v.3.0 is supported starting from version 10.0.22 of Finance, KB4623487) for **WEB_APP_VIA_SERVER** for requests executed in non-batch mode and **BATCH_PROCESS_DIRECT** for requests executed in batch mode. Table below represents general implementation details of the fraud pervention headers.
+The MTD VAT feature in Finance supports the fraud prevention headers required by HMRC (v.3.0 is supported starting from version 10.0.22 of Finance, KB4623487) for **WEB_APP_VIA_SERVER** for requests executed in non-batch mode and **BATCH_PROCESS_DIRECT** for requests executed in batch mode. The following table represents general implementation details of the fraud pervention headers.
 
 | **HTTP header**                  | **Description**                  | **Implementation details**                                    |
 |----------------------------------|----------------------------------|---------------------------------------------------------------|
 | Gov-Client-Connection-Method     | Constant value: DESKTOP_APP_VIA_SERVER or BATCH_PROCESS_DIRECT (in case a request is sent in batch mode). | Constant value |
-| Gov-Client-Browser-Do-Not-Track  | A true or false value describing if the Do Not Track option is enabled on the browser. | Automatically identified by the system using JavaScript in the client browser: <ul><li>window.doNotTrack</li><li>navigator.doNotTrack</li><li>navigator.msDoNotTrack</li><li>msTrackingProtectionEnabled in window.external</li></ul> |
+| Gov-Client-Browser-Do-Not-Track  | A true or false value describing if the **Do Not Track** option is enabled on the browser. | Automatically identified by the system using JavaScript in the client browser: <ul><li>window.doNotTrack</li><li>navigator.doNotTrack</li><li>navigator.msDoNotTrack</li><li>msTrackingProtectionEnabled in window.external</li></ul> |
 | Gov-Client-Browser-JS-User-Agent | JavaScript-reported user agent string from the originating device. | Automatically identified by the system using JavaScript in the client browser: <ul><li>navigator.userAgent</li></ul> |
-| Gov-Client-Browser-Plugins       | A list of browser plugins on the originating device. | Automatically identified by the system using JavaScript in the client browser: <ul><li>navigator.plugins</li></ul> |
-| Gov-Client-Device-ID             | An identifier unique to an originating device. The format of the header was updated to accommodate latest requirement of HMRC. | GUID created by AOS and stored on the OD (browser cache for Web, DB for Batch).  |
+| Gov-Client-Browser-Plugins       | A list of browser plug-ins on the originating device. | Automatically identified by the system using JavaScript in the client browser: <ul><li>navigator.plugins</li></ul> |
+| Gov-Client-Device-ID             | An identifier unique to an originating device. The format of the header was updated to accommodate the latest requirement of HMRC. | GUID created by AOS and stored on the OD (browser cache for Web, DB for Batch).  |
 | Gov-Client-Local-IPs             | A list of all local IP addresses (IPv4 and IPv6) available to the originating device. | Automatically identified by the system using: <ul><li>System.Net.IPHostEntry and System.Net.IPAddress</li><li>WebRTC connection to local peers</li></ul> |
-| Gov-Client-Local-Ips-Timestamp   | A timestamp to show when Gov-Client-Local-IPs is collected. This header's value includes the timestamp when the client local IP was collected or in case it was defined manually, the timestamp when the request is sent to HMRC. | Current DateTime value in the format yyyy-MM-ddTHH:mm:ss.fffZ |
+| Gov-Client-Local-Ips-Timestamp   | A timestamp to show when Gov-Client-Local-IPs is collected. This header's value includes the timestamp when the client local IP was collected or if it was defined manually, the timestamp when the request is sent to HMRC. | Current DateTime value in the format yyyy-MM-ddTHH:mm:ss.fffZ |
 | Gov-Client-MAC-Addresses         | The list of MAC addresses available on the originating device. | Automatically identified by the system using: <ul><li>System.Net.NetworkInformation.NetworkInterface</li><li>System.Net.NetworkInformation.PhysicalAddress</li></ul>  |
 | Gov-Client-Multi-Factor          | A list of key-value data structures containing details of the multi-factor authentication (MFA) statuses related to the API call.  | Omitted for Dynamics 365 Finance. |
 | Gov-Client-Public-IP             | The public IP address (IPv4 or IPv6) from which the originating device makes the request. | Automatically identified by calling external web services, that return value of public IP address [(\*)](#remark). Find more information in [Set up application-specific parameters for MTD VAT web request headers format](#headers) section of this topic. |
@@ -377,18 +375,18 @@ MTD VAT feature in Finance supports fraud prevention headers required by HMRC (v
 | Gov-Vendor-Public-IP             | The public IP address of the server to which the originating device send their requests. | Automatically identified by calling external web services, that return value of public IP address [(\*)](#remark). Find more information in [Set up application-specific parameters for MTD VAT web request headers format](#headers) section of this topic. |
 | Gov-Vendor-Version               | A key-value data structure of software versions involved in handling a request. | Automatically identified by the system using Microsoft.Dynamics.BusinessPlatform.ProductInformation.Provider.ProductInfoProvider: <ul><li>ApplicationBuildVersion</li><li>PlatformBuildVersion</li></ul>  |
 
-Each time when user initiates a request to HMRC's MTD VAT API, Finance starts collecting values for all of the fraud prevention headers. When collected, Finance shows to the user all the values that were collected in respect to all the fraud prevention headers.
+Each time a user initiates a request to HMRC's MTD VAT API, Finance starts collecting values for all of the fraud prevention headers. When collected, Finance shows the user the collected values.
 
 ![Fraud prevention headers.](media/uk-mtd-fp-values.png)
 
-To continue submission of your request, user must select the check box to consent to the transmission of the information that is listed on the page. The **Submit** button then becomes available, and user can select it to submit the request to HMRC. 
+To continue submitting your request, select the check box to consent to the transmission of the information that is listed on the page. The **Submit** button then becomes available, and you can select it to submit the request to HMRC. 
 
-If user cancels the transmission at this point by selecting **Do not submit**, the status of the electronic message is changed to **Error**, and a description of the error is attached to the action log. Select **Send report** to continue the transmission of the same electronic message.
+If you cancel the transmission at this point by selecting **Do not submit**, the status of the electronic message changes to **Error**, and a description of the error is attached to the action log. Select **Send report** to continue the transmission of the same electronic message.
 
-When a request to HMRC in a batch job is initiated, the fraud prevention headers are transmitted to HMRC, and information about the headers that were sent is attached to the batch job. To view this information, go to **System administration** \> **Inquiries** \> **Batch jobs**, and select your batch job. To review the log details, select **Batch job** \> **Log** on the Action Pane.
+When a request to HMRC in a batch job is initiated, the fraud prevention headers are transmitted to HMRC, and information about the headers that were sent is attached to the batch job. To view this information, go to **System administration** > **Inquiries** > **Batch jobs**, and select your batch job. To review the log details, select **Batch job** > **Log** on the Action Pane.
 
 > [!NOTE]
-> <a id="remark"></a>(\*) Finance provides alternative possibility to using external web-addresses for retrieving public IP addresses of client and server for the cases when system admin can manually identify and specify their values. Go to **Supplementary headers** fast tab of **Tax** > **Setup** > **Electronic messages** > **Web applications** page and define manually values for **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers. These values will be used by the system in case external web-services are not defined as described in [Set up application-specific parameters for MTD VAT web request headers format](#headers) or system did not manage to obtain IP address automatically. System admin may also define value for **Gov-Vendor-Forwarded** header which will be used in case system did manage to obtain IP address automatically. In case value for **Gov-Vendor-Forwarded** header was not specified its value will be composed from values of **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers.
+> <a id="remark"></a>(\*) Finance provides an alternative possibility to using external web-addresses for retrieving public IP addresses of client and server for the cases when a system admin can manually identify and specify their values. Go to **Tax** > **Setup** > **Electronic messages** > **Web applications** and on the **Supplementary headers** FastTab. manually define the values for the **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers. These values will be used by the system in case external web-services aren't defined as described in [Set up application-specific parameters for MTD VAT web request headers format](#headers) or the system didn't automatically obtain the IP address. The system admin may also define the value for the **Gov-Vendor-Forwarded** header which is used if the system was able to obtain the IP address automatically. If the value for the **Gov-Vendor-Forwarded** header wasn't specified, its value will be composed from values in the **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers.
 > 
 > ![Supplementary headers.](media/uk-mtd-fp-manually.png)
 
