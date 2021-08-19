@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fetch an environment's RSAT certificate in a zip file
-description: This topic explains how to fetch the RSAT certificate bundle for an environment through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
+description: This topic explains how to fetch the Regression Suite Automation Tool (RSAT) certificate bundle for an environment through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
 author: jorichar
 ms.date: 08/19/2021
 ms.topic: reference
@@ -19,7 +19,9 @@ ms.search.validFrom: 2021-08-12
 
 [!include [banner](../../../includes/banner.md)]
 
-You can fetch the RSAT certificate bundle for an environment through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. This API returns a Base 64–encoded zip file and a Base 64–encoded password for the private certificate password.
+You can fetch the Regression Suite Automation Tool (RSAT) certificate bundle for an environment through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. This API returns a Base 64–encoded zip file and a Base 64–encoded password for the private certificate password.
+
+The full process for using the 
 
 ## Permissions
 
@@ -68,6 +70,13 @@ The response is always a "200 OK" response, unless you aren't correctly authenti
 
 ### Data
 
+| Property | Description |
+|----------|-------------|
+| CertificateZipEncoded | A zip containing the .PFX and .CER files in a Base64-encoded byte array. |
+| CertificateSecretEncoded | The private certificate's private secret as a Base64-encoded string. This will change every request. |
+| ExpirationDateTimeUTC | A date and time in UTC of when the certificate is not valid after. |
+| Filename | The filename of the ZIP being returned. |
+
 ### Example response
 
 **Successful response for a project-level request**
@@ -106,9 +115,8 @@ $accessToken = "{access token string}";
 $projId = {project id integer};
 $envId = "{environment id GUID}"
 $baseLCSAPI = "lcsapi.lcs.dynamics.com";
-$prefix = "https";
 
-$url = "$prefix://$baseLCSAPI/environmentinfo/v1/rsatdownload/project/$projId/environment/$envId"
+$url = "https://$baseLCSAPI/environmentinfo/v1/rsatdownload/project/$projId/environment/$envId"
  
 $headers = @{
     "Authorization" = "Bearer $accessToken"
@@ -118,9 +126,28 @@ $headers = @{
 
 # Reset variable between executions
 $certificateResponse = $null 
+$shouldRetry = $false
 
-# Could add HTTP 429 handling and other HTTP code checks
-$certificateResponse = Invoke-RestMethod $url -Method 'GET' -Headers $headers
+do {
+    $shouldRetry = $false
+
+    try {
+        # GET request to LCS API
+        $certificateResponse = Invoke-RestMethod $url -Method 'GET' -Headers $headers
+    } catch {
+        # Check if this is a HTTP 429 error
+        if ($_.Exception.Response.StatusCode.value__ -eq 429) {
+
+            # Too many requests for this environment, wait and retry
+            $shouldRetry = $true
+            $retrySeconds = [int]$_.Exception.Response.Headers['Retry-After']
+            Write-Host "Too many requests - Retrying in $retrySeconds seconds"
+            Start-Sleep -Seconds $retrySeconds
+        } else {
+            throw
+        }
+    }
+} while($shouldRetry)
 
 if ((-not $certificateResponse.IsSuccess) -or ($certificateResponse.Data -eq $null)) {
     Write-Host $certificateResponse.ErrorMessage
