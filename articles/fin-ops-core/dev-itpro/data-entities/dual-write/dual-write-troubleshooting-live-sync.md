@@ -17,50 +17,50 @@ ms.search.validFrom: 2020-03-16
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse. Specifically, it provides information that can help you fix issues with live synchronization.
+This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Microsoft Dataverse. Specifically, it provides information that can help you fix issues with live synchronization.
 
 > [!IMPORTANT]
-> Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this topic addresses might require either the system admin role or Azure Active Directory (Azure AD) tenant admin credentials. Each section explains whether a specific role or credentials are required.
 
-## Live synchronization throws a 403 Forbidden error when you create a row in a Finance and Operations app
+## Live synchronization displays an error when you create a row
 
-You might receive the following error message when you create a row in a Finance and Operations app:
+You might receive the following error message when you create a row in a Finance and Operations app.
 
 *\[{\\"error\\":{\\"code\\":\\"0x80072560\\",\\"message\\":\\"The user is not a
 member of the organization.\\"}}\], The remote server returned an error: (403)
 Forbidden."}}".*
 
-To fix the issue, follow the steps in [System requirements and prerequisites](requirements-and-prerequisites.md). To complete those steps, the dual-write application users who are created in Dataverse must have the system admin role. The default owning team must also have the system admin role.
+To fix the issue, follow the steps in [System requirements and prerequisites](requirements-and-prerequisites.md). To complete those steps, dual-write application users who were created in Dataverse must have the system admin role. The default owning team must also have the system admin role.
 
-## Live synchronization for any table consistently throws a similar error when you create a row in a Finance and Operations app
+## Live synchronization displays an error when you try to save table data
 
 **Required role to fix the issue:** System admin
 
-You might receive an error message like the following every time that you try to save table data in a Finance and Operations app:
+You might receive the following error message when you try to save table data in a Finance and Operations app.
 
 *Cannot save the changes to the database. Unit of Work can not commit transaction. Unable to write data to entity uoms. Writes to UnitOfMeasureEntity failed with error message Unable to sync with entity uoms.*
 
-To fix the issue, you must make sure that the prerequisite reference data exists in both the Finance and Operations app and Dataverse. For example, if the customer record belongs to a specific customer group, then make sure that the customer group record exists in Dataverse.
+To fix the issue, make sure that prerequisite reference data exists in both the Finance and Operations app and Dataverse. For example, if a customer record belongs to a specific customer group, then make sure that the customer group record exists in Dataverse.
 
-If data exists on both sides, and you've confirmed that the issue isn't data-related, follow these steps.
+If data exists on both places, and you've confirmed that the issue isn't data related, follow these steps:
 
-1. Open the **DualWriteProjectConfigurationEntity** using the Excel add-in. To use the add-in, enable design mode in the Finance and Operations Excel add-in and add the **DualWriteProjectConfigurationEntity** to the sheet. For more information, see [View and update entity data with Excel](../../office-integration/use-excel-add-in.md).
-2. Select the records that have issues in the dual-write map and project. Delete them. There will be two records for every dual-write mapping.
+1. Open the **DualWriteProjectConfigurationEntity** using the Excel add-in. To use the add-in, enable design mode in the Finance and Operations Excel add-in and add the **DualWriteProjectConfigurationEntity** to a worksheet. For more information, see [View and update entity data with Excel](../../office-integration/use-excel-add-in.md).
+2. Select the records that have issues in the dual-write map and project. Delete the records. There will be two records for every dual-write mapping.
 3. Publish the changes using the Excel add-in. Publishing the changes is important because it deletes the records from the entity and underlying tables.
 
 ## Handle read or write privilege errors when you create data in a Finance and Operations app
 
-You might receive a "Bad Request" error message that resembles the following example when you create data in a Finance and Operations app.
+You might receive a "Bad Request" error message when you create data in a Finance and Operations app.
 
 ![Example of the Bad Request error message.](media/error_record_id_source.png)
 
-To fix the issue, you must assign the correct security role to the team of the mapped Dynamics 365 Sales or Dynamics 365 Customer Service business unit to enable the missing privilege.
+To fix the issue, you must assign the correct security role to the team of mapped Dynamics 365 Sales or Dynamics 365 Customer Service business units to enable the missing privilege.
 
 1. In the Finance and Operations app, find the business unit that is mapped in the Data Integration connection set.
 
     ![Organization mapping.](media/mapped_business_unit.png)
 
-2. Sign in to the environment in the customer engagement app, navigate to **Setting \> Security**, and find the team of the mapped business unit.
+2. Sign in to the environment in the customer engagement app, go to **Setting \> Security**, and find the team of the mapped business unit.
 
     ![Team of the mapped business unit.](media/setting_security_page.png)
 
@@ -82,29 +82,30 @@ CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseErr
 creation failed with error Invalid URI: The URI is
 empty."}\],"isErrorCountUpdated":true}*
 
-Here is what the error looks like in the customer engagement app:
+In the customer engagement app, the error looks like the following:
 
 *An unexpected error occurred from ISV code. (ErrorType = ClientError) Unexpected exception from plug-in (Execute): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: failed to process entity account - (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.*
 
-This error occurs when the Dataverse environment is incorrectly reset at the same time that you try to create data in the Finance and Operations app.
+This error occurs when the Dataverse environment is incorrectly reset when you try to create data in the Finance and Operations app.
 
 > [!IMPORTANT]
 > If you have relinked the environments, you must stop all the entity maps before continuing with the mitigation steps.
+> 
 To fix the issue, you will need to complete steps using Dataverse and the Finance and Opertions app.
 
-1. Finance and Operations app
+1. In the Finance and Operations app, do the following:
     1. Open the **DualWriteProjectConfigurationEntity** using the Excel add-in. To use the add-in, enable design mode in the Finance and Operations Excel add-in and add the **DualWriteProjectConfigurationEntity** to the sheet. For more information, see [View and update entity data with Excel](../../office-integration/use-excel-add-in.md).
     2. Select the records that have issues in the dual-write map and project. Delete them. There will be 2 records for every dual-write mapping.
     3. Publish the changes using the Excel add-in. Publishing the changes is important because it deletes the records from the entity and underlying tables.
     4. To prevent errors when relinking the Finance and Operations or Dataverse environments, make sure that there are no remaining dual-write configurations.
-2. Dataverse
+2. In Dataverse, do the following:
     1. Sign in to your Dataverse environment, for example, `https://*****.crm.dynamics.com/`.
     2. Navigate to **Advanced Settings** \> **Advanced Find**.
     3. Select **DualWrite Runtime Configuration**.
     4. Select the column that you want view.
     5. Select **Results** to view the configurations.
     6. Delete all the instances.
-3. Finance and Operations app
+3. In the Finance and Operations app, do the following:
     1. Open the **DualWriteProjectConfigurationEntity** using the Excel add-in. To use the add-in, enable design mode in the Finance and Operations Excel add-in and add the **DualWriteProjectConfigurationEntity** to the sheet. For more information, see [View and update entity data with Excel](../../office-integration/use-excel-add-in.md).
     2. Select the records that have issues in the dual-write map and project. Delete them. There will be 2 records for every dual-write mapping.
     3. Publish the changes using the Excel add-in. Publishing the changes is important because it deletes the records from the entity and underlying tables.
@@ -191,7 +192,7 @@ You might have an issue during live sync where only a partial data is synchroniz
 > [!NOTE]
 > You must fix this issue during development.
 
-Before you start to fix the issue, review the following prerequisites:
+Before you start to fix this issue, review the following prerequisites:
 
 + Make sure your custom changes are written with in a single transaction scope.
 + `doinsert()`, `doUpdate()`, `recordset()` operations and records where `skipBusinessEvents(true)` is marked are not handled by business events and the dual-write framework. If your code is inside these functions, then dual-write will not be triggered.
