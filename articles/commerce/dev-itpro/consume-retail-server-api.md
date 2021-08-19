@@ -97,7 +97,7 @@ The client secret is also known as an *application password*. It's a string valu
 ## Register the app in the Finance and Operations app so that headless Commerce trusts it
 
 1. In Commerce Headquarters, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
-2. On the **Identity providers** FastTab, select the provider with type  `Azure Active Directory`. The values on the **Relying parties** FastTab are set based on your selection.
+2. On the **Identity providers** FastTab, select the provider with type `Azure Active Directory`. The values on the **Relying parties** FastTab are set based on your selection.
 3. On the **Relying parties** FastTab, select **Add**. Enter the client ID that was generated during the client app registration (not the headless Commerce app). Set the **Type** field to **Confidential** and the **UserType** field to **Application**.
 4. On the Action Pane, select **Save**.
 5. Select the new relying party, and then on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter the Application ID URI (this is the API URI generated during the headless Commerce app registration).
@@ -133,7 +133,7 @@ For the full list of APIs, see [Commerce Scale Unit customer and consumer APIs](
     |----------------|--------------------------------------------------------------------|
     | grant\_type    | **client\_credentials**                                            |
     | client\_id     | The client ID that was generated during the client app registration.     |
-    | client\_secret | The client secret (Secret value, not the secret ID) that was generated during the client app registration. |
+    | client\_secret | The client secret (the secret value, not the secret ID) that was generated during the client app registration. |
     | resource       | Enter the Application ID URI (this is the API URI generated during the headless Commerce app registration).       |
 
 2. After the request has finished running, the **access\_token** value will be generated in the response body. Copy this token value. You will use it to connect to the headless Commerce.
