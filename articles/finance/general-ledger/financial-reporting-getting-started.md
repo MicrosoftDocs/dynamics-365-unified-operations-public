@@ -145,6 +145,8 @@ You can create an unlimited number of reporting trees to display your organizati
 ## Financial Reporting version Slipstreaming/True-up
 Financial Reporting (FR) has a designated version of the component that is consumed by the customers as they are serviced, initiated downtime or have their environment in a Maintenance Mode. This process is known as **slipstreaming** or **true-up** since all customers are evened up to run the same version of Financial Reporting.
 
+Changes that are released with each version can be found in the [What's new or changed in Dynamics 365 Finance](whats-new-home-page.md). Platform Updates and Bug fixes can be found in the 'Additional Resources' section at the bottom of the page for each release. 
+
 The selected slipstreamed version is a reviewed and validated version of FR that is ready for production and compatible with any previous or future version of Dynamics 365 Finance.  For example, FR can be on the latest 10.0.19 build while the customer may still be on application version 10.0.16.
 
 > [!NOTE]
