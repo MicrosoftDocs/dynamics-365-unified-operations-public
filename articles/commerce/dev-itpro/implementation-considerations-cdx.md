@@ -138,4 +138,4 @@ While not an exhaustive list, here are the most used SQL Server editions for Dyn
 - [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
 - [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)] 
