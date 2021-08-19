@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Troubleshoot Finance insights setup
-description: This topic describes the Cash flow forecasting capability.
+title: Troubleshoot Finance insights setup issues
+description: This topic lists issues that can arise when you use Finance insights capabilities. It also lists the steps to resolve the issues.
 author: panolte
 ms.date: 08/20/2021
 ms.topic: article
@@ -27,17 +27,17 @@ ms.dyn365.ops.version: AX 10.0.20
 
 ---
 
-# Troubleshoot Finance insights setup
+# Troubleshoot Finance insights setup issues
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists questions about issues that can arise when you use Finance insights capabilities, and it lists the steps to resolve the the issues. 
+This topic lists issues that can arise when you use Finance insights capabilities. It also lists the steps to resolve the issues. 
 
 ## Symptom: Why can’t I map the customer payment insights Data Integration (DI) template destination column?
 
 ### Resolution
 
-Before the release of version 10.0.17, preview customers configured the DI template Customer payment insights results (CDS to Fin and Ops) using the Payment prediction result (preview) entity. After upgrading to 10.0.17 and later, you should should complete that mapping using the Begin using the "Customer payment insights results (CDS to Fin and Ops 10.0.17+)" DI template. You might not be able to map the DI template destination column until the data management entity list is refreshed and the Payment prediction result entity is displayed.
+Before the release of version 10.0.17, preview customers configured the DI template Customer payment insights results (CDS to Fin and Ops) using the Payment prediction result (preview) entity. After upgrading to 10.0.17 and later, you should complete that mapping using the Begin using the "Customer payment insights results (CDS to Fin and Ops 10.0.17+)" DI template. You might not be able to map the DI template destination column until the data management entity list is refreshed and the Payment prediction result entity is displayed.
 
 ### In Microsoft Dynamics 365 Finance
 
@@ -53,15 +53,15 @@ To resolve this change in Dynamics 365 Finance, complete the following steps aft
 
 5. On the **Data management** page click the **Target entities** tile.
 
-6. Search for “Payment prediction result”. There should one row without a “(preview)” suffix.
+6. Search for “Payment prediction result”. The results should include one row without a “(preview)” suffix.
 
 ### On the CDS admin portal
 
-complete the following steps in the [CDS admin portal]( https://admin.powerplatform.microsoft.com/environments).
+Complete the following steps in the [CDS admin portal]( https://admin.powerplatform.microsoft.com/environments).
 
 1. If you’re using a preview version of Finance insights, remove the DI project associated with the Customer payment insights results (CDS to Fin and Ops).
 
-2. Complete the steps in the [Create a data integrator project](create-data-integrate-project.md) topic, and use the "Customer payment insights results (CDS to Fin and Ops 10.0.17 and later)" template.
+2. Complete the steps in the [Create a data integrator project](create-data-integrate-project.md) topic. Use the template "Customer payment insights results (CDS to Fin and Ops 10.0.17 and later)".
 
 ## Symptom: Why doesn’t the Cash forecast tab in the Cash flow forecast workspace show any data?
 
