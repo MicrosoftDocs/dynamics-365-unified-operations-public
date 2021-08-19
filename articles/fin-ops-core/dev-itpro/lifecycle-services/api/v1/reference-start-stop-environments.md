@@ -1,27 +1,16 @@
 ---
 # required metadata
 
-title: Database movement API - Reference - v1 - Start and stop environments 
-description: This topic provides a reference for version 1 of the Database Movement API.
-author: laneswenka
-ms.date: 03/09/2021
+title: Start and stop environments
+description: You can start and stop environments through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API.
+author: jorichar
+ms.date: 08/17/2021
 ms.topic: reference
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: laswenka
+ms.author: jorichar
 ms.search.validFrom: 2021-01-31
-ms.dyn365.ops.version: 10.0.0
 
 ---
 
@@ -29,7 +18,7 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../../../includes/banner.md)]
 
-You can start and stop environments through Microsoft Dynamics Lifecycle Services (LCS) via the Database Movement API. Using these APIs will ensure the LCS environment status is synced with the actual environment. 
+You can start and stop environments through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. Using these APIs will ensure the LCS environment status is synced with the actual environment. 
 
 Note that the same validation rules from the details page in LCS apply to the API.
 
@@ -42,7 +31,7 @@ Note that the same validation rules from the details page in LCS apply to the AP
 
 ## Permissions
 
-One of the following permissions is required to call this API. For more information about permissions and how to select them, see [Authentication](../dbmovement-api-authentication.md).
+One of the following permissions is required to call this API. For more information about permissions and how to select them, see the [Database Movement API Authentication](../../../database/api/dbmovement-api-authentication.md) content.
 
 | Permission type                    | Permissions (from least privileged to most privileged) |
 |------------------------------------|--------------------------------------------------------|
