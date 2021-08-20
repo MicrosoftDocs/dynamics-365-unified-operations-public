@@ -37,7 +37,7 @@ This article provides information about the HierarchyViewer control, which lets 
 
 The HierarchyViewer control lets you represent hierarchical relationships for people, products, or organizations. It's used primarily as a graphical means to help you understand hierarchical relationships in a traditional top-down manner, and as way to navigate to the entity that is represented by the focused node. The HierarchyViewer control lets you walk through deeply nested, multilevel content in a compact space. The control expands and collapses nodes to control the parts of the tree structure that are shown. Because it's an unbound control, the HierarchyViewer data is managed by an abstraction class and is used primarily as a way to visualize data in a simple tree relationship. For hierarchy data in a traditional tree, there is a standard tree control. 
 
-[![Diagram showing HierarchyViewer control tree structure.](./media/hierarchyviewer_page.png)](./media/hierarchyviewer_page.png) 
+[![Diagram showing HierarchyViewer control tree structure.](./media/hierarchyViewer_refresh.png)](./media/hierarchyViewer_refresh.png) 
 
 > [!NOTE]
 > This visual is available starting in version 10.0.21 / Platform update 45.   
