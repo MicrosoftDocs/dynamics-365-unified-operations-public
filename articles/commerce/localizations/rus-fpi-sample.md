@@ -18,7 +18,7 @@ audience: Application User
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: France
+ms.search.region: Russia
 ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2021-8-2
