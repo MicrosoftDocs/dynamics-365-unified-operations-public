@@ -324,6 +324,10 @@ The device should now be activated and ready to use.
 
     **Solution:** Verify that the Azure AD user is mapped to a worker who has POS permission to activate devices. The **Manage device** permission for the worker should be set to **Yes**.
 
+- For MPOS on Andriod devices, the device activation and Azure AD based POS logon open Azure AD sign-in page in a standalone browser instance, and the logon is not proceeded.
+    
+    **Solution:** Verify if your CSU is in version 10.0.22 and later but MPOS is in version 10.0.21 and earlier. If so, please rebuild MPOS from latest Commerce sample repository (in version 10.0.22 and later), then update MPOS application in Android device.
+
 - Device activation isn't completed. It fails during one of the steps.
 
     **Solution:** Follow this checklist to verify that all data is correct:
