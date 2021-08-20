@@ -33,10 +33,10 @@ Usually, it's a better idea to use exception handling instead of **ttsAbort**. T
 
 ```xpp
 ttsBegin;
-    // Some statements.
-    ttsBegin;
-        // More statements.
-    ttsCommit;
+// Some statements.
+ttsBegin;
+    // More statements.
+ttsCommit;
 ttsCommit;
 ```
 
@@ -45,9 +45,10 @@ The following example selects a set of records and updates the **CustGroup** fie
 ```xpp
 Custtable custTable;
 ttsBegin;
-    select forUpdate custTable where custTable.AccountNum == '5000';
-    custTable.CustGroup = '1';
-    custTable.update();
+select forUpdate custTable 
+    where custTable.AccountNum == '5000';
+custTable.CustGroup = '1';
+custTable.update();
 ttsCommit;
 ```
 
@@ -57,9 +58,9 @@ In this example, the first failure occurs because the **forUpdate** keyword is m
 
 ```xpp
 ttsBegin;
-    select myTable; // Rejected by the forUpdate check.
-    mytable.myField = 'xyz';
-    myTable.update();
+select myTable; // Rejected by the forUpdate check.
+mytable.myField = 'xyz';
+myTable.update();
 ttsCommit;
 ```
 
@@ -69,12 +70,12 @@ In this example, the failure occurs because the transaction scope of the update 
 
 ```xpp
 ttsBegin;
-    select forUpdate * from myTable;
-    myTable.myField = 'xyz';
+select forUpdate myTable;
+myTable.myField = 'xyz';
 ttsCommit;
 
 ttsBegin;
-    myTable.update(); // Rejected by the ttsLevel check.
+myTable.update(); // Rejected by the ttsLevel check.
 ttsCommit;
 ```
 
