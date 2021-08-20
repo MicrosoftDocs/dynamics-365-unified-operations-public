@@ -46,7 +46,10 @@ Private sector entities use the term *budget reservation* to talk about encumbra
 
 You can create different types of general budget reservation to specify various characteristics and requirements, based on your purchasing needs. The characteristics include the workflow that is used for the reservation, and default values. For example, you create three reservation types. You use one type for purchase requisitions, another type for purchase orders, and another type for vendor invoices.
 
-In the general budget reservation, you can also view accounting distributions and subledger journal lines for the transaction. Ledger accounts used on general budget reservations must be included in budget control.
+In the general budget reservation, you can also view accounting distributions and subledger journal lines for the transaction.
+
+> [!NOTE]
+> Ledger accounts used on general budget reservations must be included in budget control.
 
 If you use project accounting, you can turn on tracking of committed costs for general budget reservations.
 
