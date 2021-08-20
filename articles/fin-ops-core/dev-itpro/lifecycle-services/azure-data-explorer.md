@@ -1,21 +1,20 @@
 ---
 # required metadata
 
-title: Metadata and markdown template
-description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
-author: tonyafehr
-ms.date: 06/20/2020
+title: Title
+description: Description of topic.
+author: andreashofmann1
+ms.date: 08/20/2021
 ms.topic: article
-audience: Application User, Developer, IT Pro
-ms.reviewer: rhaertle
-ms.custom: <remove if blank>
+audience: IT Pro
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
-ms.search.validFrom: 2017-06-20
+ms.author: andreash
+ms.search.validFrom: 2021-08-20
 ---
 
-# Metadata and Markdown template
+# Title
 
 [!include[banner](../includes/banner.md)]
 
-This template contains examples of
+Content goes here.
