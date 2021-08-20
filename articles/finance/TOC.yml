@@ -1574,6 +1574,9 @@
                 href: localizations/emea-nl-vat-declaration-netherlands.md
               - name: EU sales list
                 href: localizations/emea-nl-eu-sales-list.md
+            - name: Sweden reporting
+              - name: VAT declaration
+                href: localizations/emea-swe-VAT-declaration-Sweden.md
             - name: Switzerland reporting
               items: 
               - name: VAT declaration
@@ -3366,6 +3369,8 @@
           href: localizations/emea-swe-payment-formats-import.md
         - name: Sales tax payment report for Sweden
           href: localizations/emea-swe-sales-tax-payment-report-sweden.md
+        - name: VAT declaration for Sweden
+          href: localizations/emea-swe-VAT-declaration-Sweden.md
       - name: Switzerland
         items:
         - name: Switzerland overview
