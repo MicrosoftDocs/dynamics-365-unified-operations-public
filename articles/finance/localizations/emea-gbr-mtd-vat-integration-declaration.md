@@ -74,7 +74,7 @@ If your company is in Northern Ireland and provides services to counterparties i
 1. Go to **Workspaces** > **Feature management**. 
 2. Find **Company tax registration in customer invoices** in the feature list and then select **Enable** to activate the feature. 
 
-Fore more information about feature management and available options, see [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview).
+Fore more information about feature management and available options, see [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 With this feature, you can select the company tax registration ID when you post sales invoices or packing slips from:
 
@@ -97,7 +97,7 @@ When the **Company tax registration in customer invoices** feature is enabled, t
 ## Sales tax settlement periods
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax settlement periods**.
-2. Select **New** to create a new record, and specify the parameters of the sales tax settlement period. For more information, see[Set up sales tax settlement periods](h../general-ledger/tasks/set-up-sales-tax-settlement-periods.md).
+2. Select **New** to create a new record, and specify the parameters of the sales tax settlement period. For more information, see[Set up sales tax settlement periods](../general-ledger/tasks/set-up-sales-tax-settlement-periods.md).
 3. Make sure that the sales tax settlement periods you create correlate with the VAT obligation periods specified for your company's account in HMRC.
 
 ## Ledger posting groups
