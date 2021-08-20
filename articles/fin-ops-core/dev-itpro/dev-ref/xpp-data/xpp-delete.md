@@ -32,13 +32,13 @@ In the following example, all records in the NameValuePair table that satisfy th
 
 ```xpp
 ttsBegin;
-    NameValuePair nameValuePair;
+NameValuePair nameValuePair;
 
-    while select forUpdate nameValuePair
-        where nameValuePair.Name == 'Name1'
-    {
-        nameValuePair.delete();
-    }
+while select forUpdate nameValuePair
+    where nameValuePair.Name == 'Name1'
+{
+    nameValuePair.delete();
+}
 ttsCommit;
 ```
 
@@ -52,19 +52,19 @@ LedgerJournalTrans ledgerJournalTrans;
 LedgerJournalTable ledgerJournalTable;
 
 ttsBegin;
-    while select forUpdate ledgerJournalTrans
-        index hint NumVoucherIdx
-        where ledgerJournalTrans.journalNum == _journalNum
-            && ledgerJournalTrans.voucher == _voucher
-    {
-        ledgerJournalTrans.doDelete();
-        counter++;
-    }
+while select forUpdate ledgerJournalTrans
+    index hint NumVoucherIdx
+    where ledgerJournalTrans.journalNum == _journalNum
+        && ledgerJournalTrans.voucher == _voucher
+{
+    ledgerJournalTrans.doDelete();
+    counter++;
+}
 
-    if (counter && ledgerJournalTable.journalType != LedgerJournalType::Periodic)
-    {
-        NumberSeq::release(ledgerJournalTable.voucherSeries, _voucher);
-    }
+if (counter && ledgerJournalTable.journalType != LedgerJournalType::Periodic)
+{
+    NumberSeq::release(ledgerJournalTable.voucherSeries, _voucher);
+}
 ttsCommit;
 ```
 
@@ -83,7 +83,8 @@ The following example deletes all records in the NameValuePair table where the v
 
 ```xpp
 NameValuePair nameValuePair;
-delete_from nameValuePair where nameValuePair.Name == 'Name1';
+delete_from nameValuePair 
+    where nameValuePair.Name == 'Name1';
 ```
 
 In contrast to the previous example, the following example is inefficient, because it issues a separate SQL **delete** call to the database server for each record. The **delete** method never deletes more than one record per call.
@@ -92,11 +93,11 @@ In contrast to the previous example, the following example is inefficient, becau
 // Example of inefficient code.
 MyWidgetTable tabWidget; // extends xRecord.
 ttsBegin;
-    while select forUpdate tabWidget
-        where tabWidget .quantity <= 100
-    {
-        tabWidget.delete();
-    }
+while select forUpdate tabWidget
+    where tabWidget .quantity <= 100
+{
+    tabWidget.delete();
+}
 ttsCommit;
 ```
 
@@ -110,10 +111,10 @@ The following example shows the recommended way to use the **delete\_from** meth
 MyWidgetTable tabWidget; // extends xRecord.
 ttsBegin;
 while select from tabGalaxy
-    where tabGalaxy .isTrusted == 0
+    where tabGalaxy.isTrusted == 0
 {
     delete_from tabWidget
-        where tabWidget .GalaxyRecId == tabGalaxy .RecId;
+        where tabWidget.GalaxyRecId == tabGalaxy.RecId;
 }
 ttsCommit;
 ```
