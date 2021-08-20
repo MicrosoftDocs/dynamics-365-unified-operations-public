@@ -32,7 +32,7 @@ The following example fetches all the columns in the first row of the CustTable 
 
 ```xpp
 CustTable custTable;
-select * from custTable;
+select firstonly custTable;
 info("AccountNum: " + custTable.AccountNum);
 ```
 
@@ -44,11 +44,11 @@ The following example inserts a new record into the CustTable table. The **Accou
 
 ```xpp
 ttsBegin;
-    CustTable custTable;
-    select forUpdate custTable;
-    custTable.AccountNum = '2000';
-    custTable.CustGroup = '1';
-    custTable.insert();
+CustTable custTable;
+select forUpdate custTable;
+custTable.AccountNum = '2000';
+custTable.CustGroup = '1';
+custTable.insert();
 ttsCommit;
 ```
 
@@ -60,11 +60,11 @@ The following example selects the CustTable table for update. Only records where
 
 ```xpp
 ttsBegin;
-    CustTable custTable;
-    select forUpdate custTable
-        where custTable.AccountNum == '2000';
-    custTable.CreditMax = 5000;
-    custTable.update();
+CustTable custTable;
+select forUpdate custTable
+    where custTable.AccountNum == '2000';
+custTable.CreditMax = 5000;
+custTable.update();
 ttsCommit;
 ```
 
@@ -76,12 +76,12 @@ In the following example, all records in the CustTable table where the **Account
 
 ```xpp
 ttsBegin;
-    CustTable custTable;
-    while select forUpdate CustTable
-        where custTable.AccountNum == '2000'
-    {
-        custTable.delete();
-    }
+CustTable custTable;
+while select forUpdate CustTable
+    where custTable.AccountNum == '2000'
+{
+    custTable.delete();
+}
 ttsCommit;
 ```
 
@@ -152,7 +152,6 @@ while select count(CreditMax) from custTable
     where custTable.CustGroup == custGroup.CustGroup
         && custGroup.Name like "*Days*"
 {
-
     groupSummary.value("CustomerCount", custTable.CreditMax);
     groupSummary.value("CustGroup", custGroup.CustGroup);
     info(groupSummary.toString());
@@ -170,14 +169,13 @@ The following example shows how an inner join can be performed as part of a **se
 ```xpp
 CustTable custTable;
 CustGroup custGroup;
-struct output = new struct("int AccountNum; str CustGroup");
 
 while select AccountNum from custTable
     join Name from custGroup
     order by custGroup.Name, custTable.AccountNum
     where custTable.CustGroup == custGroup.CustGroup
 {
-    info(custGroup.Name + ': ' + custTable.AccountNum);
+    info(strFmt('%1: %2', custGroup.Name, custTable.AccountNum));
 }
 
 // Example output:
@@ -240,7 +238,7 @@ CustTable custTable;
 int64 iCountRows;
 select count(RecID) from custTable;
 iCountRows = custTable.RecID;
-info('Rows: ' + int642Str(iCountRows));
+info(strFmt('Rows: %1', iCountRows));
 ```
 
 ## crossCompany keyword
@@ -260,7 +258,7 @@ The **desc** keyword is an option on the **order by** or **group by** clause. It
 
 ```xpp
 CustTable custTable;
-select * from custTable
+select custTable
     order by Value desc;
 ```
 
@@ -269,12 +267,12 @@ select * from custTable
 The **exists** keyword is a method that returns a Boolean value and a **join** clause.
 
 ```xpp
-CtrTable ctrTable;
+CtrTable  ctrTable;
 CustTable custTable;
 while select AccountNum, Value from custTable
     order by AccountNum
-    exists join * from ctrTable
-    where (ctrTable.AccountNum == custTable.AccountNum)
+    exists join ctrTable
+    where ctrTable.AccountNum == custTable.AccountNum
 {
 }
 ```
@@ -330,7 +328,7 @@ while select forceNestedLoop custGroup
     join custTable
     where custGroup.CustGroup == custTable.CustGroup
 {
-    Info(custTable.CustGroup);
+    info(custTable.CustGroup);
 }
 ```
 
@@ -348,7 +346,7 @@ while select forcePlaceholders custGroup
     join custTable
     where custGroup.CustGroup == custTable.CustGroup
 {
-    Info(custTable.CustGroup);
+    info(custTable.CustGroup);
 }
 ```
 
@@ -366,7 +364,7 @@ while select forceSelectOrder custGroup
     join custTable
     where custGroup.CustGroup == custTable.CustGroup
 {
-    Info(custTable.CustGroup);
+    info(custTable.CustGroup);
 }
 ```
 
@@ -376,11 +374,11 @@ The **forUpdate** keyword selects records for update only. Depending on the unde
 
 ```xpp
 ttsBegin;
-    CustTable custTable;
-    select forUpdate custTable
-        where custTable.AccountNum == '2000';
-    custTable.CreditMax = 5000;
-    custTable.update();
+CustTable custTable;
+select forUpdate custTable
+    where custTable.AccountNum == '2000';
+custTable.CreditMax = 5000;
+custTable.update();
 ttsCommit;
 ```
 
@@ -403,7 +401,7 @@ The **in** keyword filters rows where a value is contained in a list.
 
 If you don't use the **in** keyword, the code that you write will resemble the following example.
 
-```X++
+```xpp
 // This code doesn't use the in keyword.
 private CostAmountStdAdjustment calcCostAmountStdAdjustment()
 {
@@ -423,7 +421,7 @@ private CostAmountStdAdjustment calcCostAmountStdAdjustment()
 
 If you use the **in** keyword, the code that you write will resemble the following example.
 
-```X++
+```xpp
 // This code uses the in keyword.
 private CostAmountStdAdjustment calcCostAmountStdAdjustment()
 {
@@ -596,10 +594,10 @@ CustGroup custGroupTable;
 
 while select CustGroup from custGroupTable
     order by CustGroup
-    outer join * from custGroupTable
+    outer join custGroupTable
     where custTable.CustGroup == custGroupTable.CustGroup
 {
-    Info(custTable.CustGroup + ', ' + custGroupTable.Name);
+    info(strFmt('%1, %2', custTable.CustGroup, custGroupTable.Name));
 }
 ```
 
@@ -629,12 +627,9 @@ struct struct4 = new struct
     + "str SalesOrderLineID;"
     + "int Quantity"
     );
-while select *
-    from
-        recSalesOrder
-        outer join recSalesOrderLine
-    where
-        recSalesOrder.SalesOrderID == recSalesOrderLine.SalesOrderID
+while select recSalesOrder
+    outer join recSalesOrderLine
+    where recSalesOrder.SalesOrderID  == recSalesOrderLine.SalesOrderID
         && recSalesOrderLine.Quantity == 66
 {
     struct4.value("SalesOrderID", recSalesOrder.SalesOrderID);
@@ -691,12 +686,10 @@ The **validTimeState** keyword selects rows from a table where the **ValidTimeSt
 CustPackingSlipTransHistory history;
 utcDateTime dateFrom, dateTo = DateTimeUtil::utcNow();
 anytype recid = -1;
-select
-    validTimeState(dateFrom, dateTo)
-    *
-    from history;
+select validTimeState(dateFrom, dateTo) history;
+
 recid = history.RecId;
-info('RecId:' + int642Str(recid));
+info(strFmt('RecId: %1', recid));
 ```
 
 ## where keyword
@@ -707,19 +700,19 @@ The following example finds a customer that has an **AccountNum** value that is 
 
 ```xpp
 CustTable custTable;
-select * from custTable
+select custTable
     where custTable.AccountNum > '100';
-info("AccountNum: " + custTable.AccountNum);
+info(strFmt("AccountNum: %1", custTable.AccountNum));
 ```
 
 The following examples prints the lowest **AccountNum** value that is more than 100.
 
 ```xpp
 CustTable custTable;
-select * from custTable
+select custTable
     order by accountNum
     where custTable.AccountNum > '100';
-info("AccountNum: " + custTable.AccountNum);
+info(strFmt("AccountNum: %1", custTable.AccountNum));
 ```
 
 The following example prints the highest **AccountNum** value that is more than 100.
@@ -729,7 +722,7 @@ CustTable custTable;
 select * from custTable
     order by accountNum desc
     where custTable.accountNum > "100";
-info("AccountNum: " + custTable.AccountNum);
+info(strFmt("AccountNum: %1", custTable.AccountNum));
 ```
 
 
