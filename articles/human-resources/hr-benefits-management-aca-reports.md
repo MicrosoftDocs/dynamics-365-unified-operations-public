@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate Affordable Care Act reports in Benefits management
-description: This topics describes how Benefits management helps you track information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate.
+description: This topic describes how Benefits management helps you track information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate.
 author: andreabichsel
 ms.date: 12/28/2020
 ms.topic: article

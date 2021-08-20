@@ -2,7 +2,7 @@
 title: Regression suite automation tool installation and configuration
 description: This topic contains information about how to install and configure the Regression suite automation tool (RSAT).
 author: FrankDahl
-ms.date: 01/15/2021
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -67,7 +67,7 @@ RSAT requires Selenium and web browser driver libraries. RSAT will prompt you if
 
 ![Browser driver.](media/driver-2.png)
 
-RSAT uses [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip). The Webdriver library and browser-specific drivers are downloaded to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
+RSAT uses [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip). The web driver library and browser-specific drivers are downloaded to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
 
 ## Configuration
 
@@ -182,7 +182,7 @@ After creating the certificate, configure AOS to trust the test automation conne
 
 #### If you have no Remote Desktop access to the server
 
-In cases where your Remote Desktop Protocol (RDP) access is removed, such as Microsoft-managed or self-service type sandboxes, Microsoft will generate the certificate for your environment and have it pre-configured. Follow these steps to retrieve the RSAT certificate and use it.
+In cases where your Remote Desktop Protocol (RDP) access is removed, such as Microsoft-managed or self-service type sandboxes, Microsoft will generate the certificate for your environment and have it pre-configured. Follow these steps to retrieve the RSAT certificate and use it using the LCS user interface. For automation, there is information on the [Fetch an environment's RSAT certificate in a zip file](../../lifecycle-services/api/v1/reference-download-rsat-certificate.md) API reference page.
 
 1. Under **Maintain** on your environment details page in Lifecycle Services you'll see two new options.
 
