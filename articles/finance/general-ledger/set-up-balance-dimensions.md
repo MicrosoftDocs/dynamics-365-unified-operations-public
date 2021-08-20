@@ -4,7 +4,7 @@
 title: How do I set up balancing financial dimensions?
 description: This topic describes the options for setting up and using the Balancing financial dimension feature.
 author: kweekley
-ms.date: 08/17/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
