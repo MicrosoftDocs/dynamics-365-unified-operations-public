@@ -60,9 +60,9 @@ The outbound data ownership process depends on whether you are using the load pl
 
 As soon as the final work process puts the inventory at a final shipping location (Baydoor), the scale unit signals the hub to update the source document inventory transactions to *Picked*. Until this process runs and gets synchronized back, the inventory on-hand on the scale unit workload will be physically reserved at the warehouse level and you can immediately process the outbound shipment confirmation without needing to wait for this synchronization to complete. The subsequent sales packing slip and invoicing or transfer order shipment for the load will get handled in the hub.
 
-This following diagram shows the outbound flow, and indicates where the individual business processes take place. (Select the diagram to enlarge it.) <!-- KFM: Is this diagram missing labels for hub and scale unit? -->
+This following diagram shows the outbound flow, and indicates where the individual business processes take place. (Select the diagram to enlarge it.) <!-- KFM: Is this diagram missing labels for hub and scale unit? Perlynne: Added - thanks -->
 
-[![Outbound processing flow](media/wes_outbound_warehouse_processes-small.png "Outbound processing flow")](media/wes_outbound_warehouse_processes.png)
+[![Outbound processing flow](media/wes_outbound_warehouse_processes.png "Outbound processing flow")](media/wes_outbound_warehouse_processes.png)
 
 ### Outbound processing with load planning
 
@@ -102,11 +102,11 @@ If you aren't using the *release to warehouse* process, and therefore aren't usi
 
 ![Inbound process flow.](./media/wes-inbound-ga.png "Inbound process flow")
 
-When a worker does inbound registration using a Warehouse Management mobile app receiving process against the scale unit, warehouse order **Warehouse order receipt data** <!-- KFM: What does this bold text indicate? Is this a type of warehouse order, or maybe we create a warehouse order with this name? --> is recorded and the scale unit workload will signal the hub to update the related purchase order line transactions to *Registered*. As soon as this is finished, you will be able to run a purchase order product receipt on the hub.
+When a worker does inbound registration using a Warehouse Management mobile app receiving process against the scale unit, warehouse order **Warehouse receipt entries** <!-- KFM: What does this bold text indicate? Is this a type of warehouse order, or maybe we create a warehouse order with this name? PERLYNNE: Updated name. This is where we save the actual recorded receipt data. Should we make a link down here as well to the "Warehouse order page"? - BTW I did some updates here as well after reading it again!  thanks? --> is recorded and the scale unit workload will signal the hub to update the related purchase order line transactions to *Registered*. As soon as this is finished, you will be able to run a purchase order product receipt on the hub.
 
 This following diagram shows the inbound flow, and indicates where the individual business processes take place. (Select the diagram to enlarge it.)
 
-[![Inbound processing flow](media/wes_inbound_warehouse_processes-small.png "Inbound processing flow")](media/wes_inbound_warehouse_processes.png)
+[![Inbound processing flow](media/wes_inbound_warehouse_processes.png "Inbound processing flow")](media/wes_inbound_warehouse_processes.png)
 
 ## Supported processes and roles
 
