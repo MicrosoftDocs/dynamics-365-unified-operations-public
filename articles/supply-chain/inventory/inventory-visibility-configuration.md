@@ -299,6 +299,8 @@ When you make a reservation, you might want to know whether on-hand inventory is
 
 For example, a reservation measure is based on the `SoftReservOrdered` physical measure from the `iv` (Inventory Visibility) data source. In this case, you can set up the `AvailableToReserve` calculated measure of the `iv` data source as shown here.
 
+We suggest you to set up the calculated measure containing the physical measure which the reservation measure is based on, in this way, the calculated measure quantity will be affected by the reservation measure quantity. So in this example, the `AvailableToReserve` calculated measure of the `iv` data source should contain the `SoftReservOrdered` physical measure from the `iv` as component.
+
 | Calculation type | Data source | Physical measure |
 |---|---|---|
 | Addition | `fno` | `AvailPhysical` |
@@ -354,7 +356,7 @@ Therefore, if you try to make reservations on `iv.SoftReservOrdered`, and the qu
 
 The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the product index hierarchy works for on-hand queries.
 
-The reservation hierarchy is independent of the product index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations.
+The reservation hierarchy is independent of the product index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId`, `LocationId` as components, since that they construct the partition configuration.
 
 Here is an example of a soft reservation hierarchy.
 
@@ -367,9 +369,8 @@ Here is an example of a soft reservation hierarchy.
 | `StyleId` | 5 |
 
 In this example, you can do reservation in the following dimension sequences:
+You need to specify partition for the product when you do the reservation, so the basic hierarchy you can use is `(SiteId, LocationId)`
 
-- `()` – No dimension is specified.
-- `(SiteId)`
 - `(SiteId, LocationId)`
 - `(SiteId, LocationId, ColorId)`
 - `(SiteId, LocationId, ColorId, SizeId)`

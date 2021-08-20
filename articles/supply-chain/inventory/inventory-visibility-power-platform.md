@@ -237,6 +237,8 @@ To define the soft reservation mapping, follow these steps.
     | `Subtraction` | `pos` | `outbound` |
     | `Subtraction` | `iv` | `softreservordered` |
 
+1. We suggest you to set up the AFR calculated measure containing the physical measure which serves as the soft reservation measure, in this way, the AFR calculated measure quantity will be affected by the reservation measure quantity. So in this example, the `availforreserv` calculated measure of the `iv` data source should contain the `softreservordered` physical measure from the `iv` as component.
+
 1. Open the **Configuration** page.
 1. On the **Soft Reservation Mapping** tab, set up the mapping from the physical measure to the calculated measure. For the previous example, you might use the following settings to map `availforreserv` to the previously defined `softreservordered` physical measure.
 
@@ -252,7 +254,7 @@ Before you can edit the **Soft Reservation Hierarchy** tab, you must turn on the
 
 The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the product index hierarchy works for on-hand queries.
 
-The reservation hierarchy can differ from the on-hand index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations.
+The reservation hierarchy can differ from the on-hand index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId`, `LocationId` as components, since that they construct the partition configuration. When you do the reservation, you need to specify partition for the product.
 
 #### Example
 
@@ -260,18 +262,21 @@ The following reservation hierarchy is set up in your system.
 
 | Dimension | Hierarchy |
 |---|---|
-| `ColorId` | 1 |
-| `SizeId ` | 2 |
-| `StyleId` | 3 |
+| `SiteId` | 1 |
+| `LocationId` | 2 |
+| `ColorId` | 3 |
+| `SizeId` | 4 |
+| `StyleId`| 5 |
 
 Given this reservation hierarchy, you can do reservation in the following dimension orders:
+You need to specify partition for the product when you do the reservation, so the basic hierarchy you can use is `(SiteId, LocationId)`
 
-- `()` – No dimension is given.
-- `(ColorId)`
-- `(ColorId, SizeId)`
-- `(ColorId, SizeId, StyleId)`
+- `(SiteId, LocationId)`
+- `(SiteId, LocationId, ColorId)`
+- `(SiteId, LocationId, ColorId, SizeId)`
+- `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
-The dimension order should strictly follow the reservation hierarchy sequence, dimension by dimension. For example, reservations that have `(ColorId, StyleId)` won't be allowed in this example, because this sequence isn't defined in the reservation hierarchy.
+The dimension order should strictly follow the reservation hierarchy sequence, dimension by dimension. For example, reservations that have `(SiteId, LocationId, ColorId, StyleId)` won't be allowed in this example, because this sequence isn't defined in the reservation hierarchy.
 
 ### <a name="feature-switch"></a>Control feature management
 
@@ -322,9 +327,9 @@ To post a reservation request, you must enter a value in the request body. Use t
 
 ## <a name="inventory-summary"></a>Inventory summary
 
-**Inventory summary** is a customized view for the *Inventory OnHand Sum Entity*. It provides an inventory summary for products together with all dimensions. Periodically, the inventory summary data will be synchronized from the Inventory Visibility. By using the **Advanced Filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters.
+**Inventory summary** is a customized view for the *Inventory OnHand Sum Entity*. It provides an inventory summary for products together with all dimensions. Periodically, the inventory summary data will be synchronized from the Inventory Visibility. Before you can see data in the **Inventory summary** tab, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab.
 
-To learn more about how to use the **Advanced Filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced)
+By using the **Advanced Filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the **Advanced Filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
 
 The top of the customized view provides three fields: **Default Dimension**, **Custom Dimension**, and **Measure**. You can use these fields to control which columns are visible.
 

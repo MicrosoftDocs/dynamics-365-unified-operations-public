@@ -41,6 +41,9 @@ The following table lists the APIs that are currently available:
 
 Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
+> [!NOTE]
+> The {environmentId} is the Microsoft Dynamics Lifecycle Services (LCS) environment Id.
+
 ## Find the endpoint according to your Lifecycle Services environment
 
 The microservice of Inventory Visibility is deployed on Microsoft Azure Service Fabric, in multiple geographies and multiple regions. There isn't currently a central endpoint that can automatically redirect your request to the corresponding geography and region. Therefore, you must compose the pieces of information into a URL by using the following pattern:
@@ -120,7 +123,7 @@ To get a security service token, follow these steps.
    Note the following points:
 
    - The `client_assertion` value must be the Azure AD token (`aadToken`) that you received in the previous step.
-   - The `context` value must be the environment ID where you want to deploy the add-in.
+   - The `context` value must be the LCS environment ID where you want to deploy the add-in.
    - Set all the other values as shown in the example.
 
 1. Submit an HTTP request that has the following properties:
@@ -159,6 +162,9 @@ The following table summarizes the meaning of each field in the JSON body.
 | `quantities` | The quantity that the on-hand quantity must be changed by. For example, if 10 new books are added to a shelf, this value will be `quantities:{ shelf:{ received: 10 }}`. If three books are removed from the shelf or sold, this value will be `quantities:{ shelf:{ sold: 3 }}`. |
 | `dimensionDataSource` | The data source of the dimensions that are used in the posting change event and query. If you specify the data source, you can use the custom dimensions from the specified data source. Inventory Visibility can use the dimension configuration to map the custom dimensions to the general default dimensions. If no `dimensionDataSource` value is specified, you can use only the general [base dimensions](inventory-visibility-configuration.md#data-source-configuration-dimension) in your queries. |
 | `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, _Source_) to indicate whether the event is coming from Supply Chain Management or an external system. |
+
+> [!NOTE]
+> You need to specify the SiteId, LocationId in dimensions when you create on-hand change events, set/override on-hand quantities, create reservation events, since that they construct the partition configuration. To know more about [partition configuration](inventory-visibility-configuration.md#partition-configuration).
 
 ### <a name="create-one-onhand-change-event"></a>Create one on-hand change event
 
@@ -200,6 +206,8 @@ The following example shows sample body content. In this sample, you post a chan
   "productId": "T-shirt",
   "dimensionDataSource": "pos",
   "dimensions": {
+    "SiteId": "1",
+    "LocationId": "11",
     "PosMachineId": "0001",
     "ColorId": "Red"
   },
@@ -220,9 +228,9 @@ And if the `dimensionDataSource` is set, `dimensions` can both be dimensions of 
   "organizationId": "usmf",
   "productId": "T-shirt",
   "dimensions": {
-    "ColorId": "Red",
     "SiteId": "1",
-    "LocationId": "11"
+    "LocationId": "11",
+    "ColorId": "Red"
   },
   "quantities": {
     "pos": {
@@ -276,6 +284,8 @@ The following example shows sample body content.
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
+      "PosSiteId": "1",
+      "PosLocationId": "11",
       "PosMachineId": "0001"
     },
     "quantities": {
@@ -287,6 +297,8 @@ The following example shows sample body content.
     "organizationId": "usmf",
     "productId": "Pants",
     "dimensions": {
+      "SiteId": "1",
+      "LocationId": "11",
       "ColorId": "black"
     },
     "quantities": {
@@ -341,6 +353,8 @@ The following example shows sample body content. The behavior of this API differ
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
+      "PosSiteId": "1",
+      "PosLocationId": "11",
       "PosMachineId": "0001"
     },
     "quantities": {
@@ -359,6 +373,12 @@ The following example shows sample body content. The behavior of this API differ
 To use the *Reserve* API, you must open the reservation feature and complete the reservation configuration. For more information, see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a>Create one reservation event
+
+A reservation can be made against different data source settings. To configure this, first specify the data source in `dimensionsDataSource` field, and then dimensions according to the dimension settings in the target data source in `dimensions` field.
+
+When calling reservation API, you can specify the boolean field `ifCheckAvailForReserv` in the request body to control the reservation validation. `True` means the validation is necessary while `False` means the validation is unnecessary. The default value of `ifCheckAvailForReserv` is `True`.
+
+If you want to cancel a reservation or unreserve specified inventory quantities, you just need to set the quantity as a negative value that you want to unreserve, and set the `ifCheckAvailForReserv` field as `False` to skip the validation.
 
 ```txt
 Path:
