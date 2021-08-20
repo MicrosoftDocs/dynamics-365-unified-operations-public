@@ -219,4 +219,4 @@ To find and clean up unnecessary attachments, select the electronic message, and
 
 The **Action log** FastTab saves information about all the actions that are performed for the electronic message.
 
-    [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
