@@ -37,13 +37,13 @@ Submitting a VAT return is made up of two parts:
 
 The following illustration shows a simplified diagram of the VAT obligation retrieve processing that's implemented in Electronic messages in the scope of **UK MTD VAT returns** processing.
 
-   ![VAT obligation retrieve](media/uk-mtd-obligation-schema.png)
+   ![VAT obligation retrieve.](media/uk-mtd-obligation-schema.png)
 
 2. VAT return submission
 
 The following illustration shows a simplified diagram of the VAT return submission processing that's implemented in Electronic messages in the scope of **UK MTD VAT returns** processing.
 
-   ![VAT obligation retrieve](media/uk-mtd-submission-schema.png)
+   ![VAT obligation submission.](media/uk-mtd-submission-schema.png)
 
 ## Retrieve VAT obligations from HMRC
 
