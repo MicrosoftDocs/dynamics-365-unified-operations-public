@@ -34,7 +34,7 @@ To run a **select** query, follow these steps.
 
 1. Create and configure a **SysDaQueryObject** object that specifies the table instance that will contain the designated records.
 2. Create a **SysDaSearchObject** object, and pass the **SysDaQueryObject** object to the constructor.
-3. Iterate over the results of the query by passing the **SysDaSearchObject** object to the **SysDaSearchStatement.next()** method.
+3. Iterate over the results of the query by passing the **SysDaSearchObject** object to the **SysDaSearchStatement.findNext()** method.
 
 The following example finds all rows in TestTable where **intField** \<= **5**.
 
@@ -71,7 +71,7 @@ var so = new SysDaSearchObject(qe);
 var ss = new SysDaSearchStatement();
 
 // Enumerate the designated values by using ss.
-while (ss.next(so))
+while (ss.findNext(so))
 {
     info(t.stringField);
 }
