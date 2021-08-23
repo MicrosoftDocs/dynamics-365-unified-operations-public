@@ -1575,6 +1575,7 @@
               - name: EU sales list
                 href: localizations/emea-nl-eu-sales-list.md
             - name: Sweden reporting
+              items:
               - name: VAT declaration
                 href: localizations/emea-swe-VAT-declaration-Sweden.md
             - name: Switzerland reporting
