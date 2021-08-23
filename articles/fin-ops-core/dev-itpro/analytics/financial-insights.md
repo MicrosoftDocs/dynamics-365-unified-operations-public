@@ -42,9 +42,9 @@ ms.dyn365.ops.version: 7.3
 > - **Page** – A tab in a single .pbix file. Each page can contain one or more visuals.
 > - **Visual** – A single source of data, such as a card, KPI, chart, graph, matrix, or financial statement. A page that has a financial statement as a visual can have no other visuals, because of the size of the data that is being reported on.
 
-Currently, **Financial analysis** is used to view data for either the active legal entity or all legal entities. In future releases, the workspace will evolve into the place where you can use Power BI to edit and create visuals.
+The **Financial analysis** workspace is focused on letting you view and filter the data on existing reports. You are able to add new visuals to the **Financial analysis** workspace. The **Financial analysis** workspace is available for current company as well as all companies to show data for all legal entities, regardless of the legal entities that the role has access to.
 
-The **CFO overview** workspace shows the same visuals as **Financial analysis**, but is focused on letting you view and filter the data on existing reports. In future releases, you will be able to add new visuals to the **Financial analysis** workspace. The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers. The **CFO overview** workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.
+- [Add or edit Power BI visualizations on your dashboard](/powerapps-docs/user/add-powerbi-dashboards.md)
 
 ## Dynamics 365 Finance setup
 **General ledger**
