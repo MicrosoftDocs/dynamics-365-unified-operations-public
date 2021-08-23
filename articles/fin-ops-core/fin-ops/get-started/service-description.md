@@ -27,11 +27,10 @@ ms.dyn365.ops.version: 10.0.18
 ---
 
 # Service description for Finance and Operations apps
+
 [!include[banner](../includes/banner.md)]
 
-## Overview
-
-Finance and Operations apps are Enterprise Resource Planning (ERP) software as a service (SaaS) offerings that are built on and for the Microsoft Azure Cloud. The Finance and Operations service provides organizations with the ERP functionality to support their unique requirements and help them adjust to constantly changing business environments, without managing infrastructure. Finance and Operations apps can include one or more of the following solution areas: 
+Finance and Operations apps are enterprise resource planning (ERP) software as a service (SaaS) offerings that are built on and for Microsoft Azure. The Finance and Operations service provides organizations with ERP functionality that supports their unique requirements and helps them adjust to constantly changing business environments, without requiring that they manage infrastructure. Finance and Operations apps can include one or more of the following solution areas:
 
 - [Dynamics 365 Finance](/dynamics365/finance/)
 - [Dynamics 365 Human Resources](/dynamics365/human-resources/)
@@ -39,346 +38,364 @@ Finance and Operations apps are Enterprise Resource Planning (ERP) software as a
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-These applications, plus business intelligence, infrastructure, compute, and database services enables organizations to run industry-specific and operational business processes. With the support of their implementation partner, customers determine the configuration of the business application logic to match their unique business processes. Functionality and business processes can be augmented or extended with one or any combination of the following:
+Together with business intelligence, infrastructure, compute, and database services, these apps enable organizations to run industry-specific and operational business processes. Supported by their implementation partner, customers determine the configuration of the business application logic that best suits their unique business processes. Functionality and business processes can be augmented or extended through one or a combination of the following solutions:
 
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) tools
-- [Microsoft Visual Studio](https://visualstudio.microsoft.com) based [Finance and Operations SDK](../../dev-itpro/dev-tools/developer-home-page.md) and [Azure DevOps Build Automation](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
-- Independent Software Vendor (ISV) solutions from [Microsoft AppSource](https://appsource.microsoft.com/partners)
+- [Visual Studio](https://visualstudio.microsoft.com)–based [Finance and Operations software development kit (SDK)](../../dev-itpro/dev-tools/developer-home-page.md) and [Azure DevOps build automation](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
+- Independent software vendor (ISV) solutions from [AppSource](https://appsource.microsoft.com/partners)
 
-Based on requirements, customers choose their solution approach. Working with their implementation partner, customers define, develop, and test their solution using the tools and best practices that are provided in [Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md). The following illustrates three common scenarios: 
+Based on requirements, customers choose their solution approach. They work with their implementation partner to define, develop, and test their solution by using the tools and best practices that are provided in [Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md). There are three common scenarios:
 
-![Common configuration scenarios](media/common-configuration-scenarios.png)
+- **Scenario 1** – Standard Finance and Operations configuration (no extensions)
+- **Scenario 2** – Finance and Operations configuration that includes customer-specific extensions
+- **Scenario 3** – Finance and Operations configuration that includes customer-specific extensions and one or more ISV solutions
 
--	**Solution 1:** Standard Finance and Operations configuration (no extension) 
--	**Solution 2:** Finance and Operations configuration with customer-specific extensions 
--	**Solution 3:** Finance and Operations configuration with customer-specific extensions and one or more ISV solution  
+The following illustration shows these three scenarios.
 
-Organizations can match their business growth by easily adding users and business processes with a simple, transparent subscription model. Refer to the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365) for more details.
+![Common configuration scenarios.](media/common-configuration-scenarios.png)
 
+Organizations can match their business growth by easily adding users and business processes through a simple, transparent subscription model. For more information, see the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365).
 
 ## Operating model
 
-The operating model of Finance and Operations apps defines specific roles and responsibilities for the customer, implementation partner, and Microsoft throughout the lifecycle of the service. 
+The operating model of Finance and Operations apps defines specific roles and responsibilities for the customer, implementation partner, and Microsoft throughout the lifecycle of the service.
 
-Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments within the Microsoft SaaS subscription. This includes allocating the required system infrastructure to run the service and proactive communication to customers about the service’s health. 
+Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments in the Microsoft SaaS subscription. This management includes allocating the required system infrastructure to run the service and proactively communicating with customers about the service's health.
 
-![Implementation roles and responsibilities](media/FO-Operating-Model.PNG)
+![Implementation roles and responsibilities.](media/FO-Operating-Model.PNG)
 
-For more information, see [Cloud operations and servicing](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md)
+For more information, see [Cloud operations and servicing](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
 
 ## System configuration
 
-Finance and Operations apps scale with transaction volume and user load. Each customer implementation produces a unique solution comprised of the following: 
+Finance and Operations apps scale according to the transaction volume and user load. Each customer implementation produces a unique solution that consists of the following elements:
 
--	**Data composition:** A unique set of parameters that control behavior, layout of the organization, structure of master data (such as financial and inventory dimensions), and granularity of transaction tracking. 
--	**Extension and configuration:** Extension mechanisms with code extensions, ISV solutions, and unique configurations including workflows, integrations, and report configurations. 
--	**Usage patterns:** A unique combination of online and batch usage combined with the ability to integrate with upstream and downstream systems for unified data flow and the ability to differentiate based on the information views used by customers in their business processes. 
+- **Data composition** – A unique set of parameters that control behavior, the layout of the organization, the structure of master data (such as financial and inventory dimensions), and the granularity of transaction tracking.
+- **Extension and configuration** – Extension mechanisms that use code extensions, ISV solutions, and unique configurations that include workflows, integrations, and report configurations.
+- **Usage patterns** – A unique combination of online and batch usage, together with the ability to integrate with upstream and downstream systems for unified data flow and the ability to differentiate based on the information views that customers use in their business processes.
 
-Microsoft configures customer production environments that are sized to handle the transaction volumes and user concurrency. Microsoft is responsible for: 
+Microsoft configures customer production environments that are sized to handle the transaction volumes and user concurrency. Microsoft is responsible for the following tasks:
 
--	Proper allocation of resources of production environments, based on the customer’s profiling information in the [LCS subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) 
--	Continually monitoring and diagnosing service availability of production environments 
--	Analyzing and troubleshooting system performance issues with Finance and Operations apps 
+- Correctly allocating the resources of production environments, based on the customer's profiling information in the [LCS Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md)
+- Continually monitoring and diagnosing the service availability of production environments
+- Analyzing and troubleshooting system performance issues with Finance and Operations apps
 
-To ensure that an implementation is configured for high performance, customers must:
+To ensure that an implementation is configured for high performance, customers must complete these tasks:
 
--	Provide accurate usage information for the Finance and Operations implementation in the [LCS Subscription Estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) 
-- Build and test extensions for performance and scale 
--	Test data configurations appropriately for performance
--	Ensure scalability by conducting [performance testing](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) prior to go-live.
+- Provide accurate usage information about the Finance and Operations implementation in the [LCS Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md).
+- Build and test extensions for performance and scale.
+- Appropriately test data configurations for performance.
+- Ensure scalability by doing [performance testing](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) before go-live.
 
 ## Onboarding and implementation
 
-Typical onboarding and implementation events are as follows:
+The following table shows typical onboarding and implementation events.
 
-| Request | Expected Microsoft action  | Expected customer/implementation partner action |
-|-------------------------|-------------------------|-------------------------|
-| Initial offer purchase | LCS project is created after the purchase of the offer based on event triggered by the customer. | Go through EA or CSP [commercial process](before-you-buy.md). Partner creates tenant for customer, if applicable. |
-| Add-on purchase | Grant customer access to add-on selected during the implementation. | Not applicable. |
-| Implementation planning and analysis | Provide relevant tools in LCS, such as [Business process modeler](../../dev-itpro/lifecycle-services/bpm-overview.md) and [interoperability with Azure DevOps](../../dev-itpro/lifecycle-services/synchronize-bpm-vsts.md). |Project planning, Azure DevOps, System onboarding and admin account setup.|
+| Request | Expected Microsoft action | Expected customer/implementation partner action |
+|---|---|---|
+| Initial offer purchase | An LCS project is created after the purchase of the offer, based on an event that is triggered by the customer. | Go through the Enterprise Agreement (EA) or Cloud Solution Provider (CSP) [commercial process](before-you-buy.md). The partner creates a tenant for the customer, if applicable. |
+| Add-on purchase | Grant the customer access to the add-on that is selected during implementation. | Not applicable |
+| Implementation planning and analysis | Provide relevant tools in LCS, such as [Business process modeler (BPM)](../../dev-itpro/lifecycle-services/bpm-overview.md) and [interoperability with Azure DevOps](../../dev-itpro/lifecycle-services/synchronize-bpm-vsts.md). | Do project planning, set up Azure DevOps, complete system onboarding, and set up admin accounts. |
 
 For more information, see [Onboarding an implementation project](../imp-lifecycle/onboard.md).
 
 ## Globalization
 
-Finance and Operations apps are served from a number of Azure Regions worldwide. Finance and Operations apps provide functionality to support different country/regions as well as native language. For more details, refer to [Localization and regulatory features](../../dev-itpro/lcs-solutions/country-region.md#localization-and-regulatory-features). 
+Finance and Operations apps are served from several Azure regions around the world. Finance and Operations apps provide functionality to support different countries/regions and native languages. For more information, see [Localization and regulatory features](../../dev-itpro/lcs-solutions/country-region.md#localization-and-regulatory-features).
 
-### Country specific considerations
+### Country/region-specific considerations
 
 - Customers in regulated industry or commercial organizations that do business with entities in France that require local data residency should review [Finance and Operations in France](../../dev-itpro/deployment/france-local-deployment.md).
+- Customers that have operations in China should review [Finance and Operations operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md).
 
-- Customers with operations in China should review [Finance and Operations operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md).
+## Environment and data management
 
-## Environment and data management 
-
-Typical environment and data management events performed in the service include the following:
+This section describes some typical environment and data management events that occur in the service.
 
 ### Environment and data management events for production instances
 
-LCS provides [self-service tools](../../dev-itpro/deployment/infrastructure-stack.md) and [database movement operations](../../dev-itpro/database/dbmovement-operations.md) that are used for performing environment and data management tasks. These include the following:
+LCS provides [self-service tools](../../dev-itpro/deployment/infrastructure-stack.md) and [database movement operations](../../dev-itpro/database/dbmovement-operations.md) that are used to perform environment and data management tasks. Here are some examples:
 
-**Event:** [Requesting a production instance](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment) 
-- Complete and submit the [Go-live checklist](../imp-lifecycle/prepare-go-live.md#fasttrack-go-live-assessment) to the [Microsoft FastTrack](/dynamics365/fasttrack/) team.
-- Complete the [LCS Subscription Estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) before requesting a production instance.
-- Complete all implementation tasks specified in the [LCS methodology](../../dev-itpro/lifecycle-services/create-methodology.md). 
- 
-**Event:** [Copy a sandbox database to a production instance](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md).
-- Note that this is performed when ready to do a mock go-live or an actual go-live cutover.
+- **Event:** [Requesting a production instance](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment)
 
-**Event:** [Maintenance mode](../../dev-itpro/sysadmin/maintenance-mode.md)
-- Turn on maintenance mode in LCS.
-- Complete necessary maintenance.
-- Turn off maintenance mode in LCS.
+    - Complete the [Go-live checklist](../imp-lifecycle/prepare-go-live.md#fasttrack-go-live-assessment), and submit it to the [Microsoft FastTrack](/dynamics365/fasttrack/) team.
+    - Complete the [LCS Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) before you request a production instance.
+    - Complete all the implementation tasks that are specified in the [LCS methodology](../../dev-itpro/lifecycle-services/create-methodology.md).
+
+- **Event:** [Copying a sandbox database to a production instance](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md)
+
+    Note that you perform this task when you're ready to do a mock go-live or an actual go-live cutover.
+
+- **Event:** [Maintenance mode](../../dev-itpro/sysadmin/maintenance-mode.md)
+
+    1. Turn on maintenance mode in LCS.
+    2. Complete the required maintenance.
+    3. Turn off maintenance mode in LCS.
 
 ### Environment and data management events for non-production instances
 
-LCS provides [self-service provisioning](../../dev-itpro/deployment/infrastructure-stack.md) and [database movement operations](../../dev-itpro/database/dbmovement-operations.md) that are used for performing environment and data management tasks. These include the following:
+LCS provides [self-service provisioning](../../dev-itpro/deployment/infrastructure-stack.md) and [database movement operations](../../dev-itpro/database/dbmovement-operations.md) that are used to perform environment and data management tasks. Here are some examples:
 
-**Event:** [Deploy a new sandbox instance](../../dev-itpro/deployment/deployenvironment-newinfrastructure.md)
-- Ensure that all required instances have been [planned](../imp-lifecycle/environment-planning.md) and that the applicable add-on offers have been purchased.
-- Run the deployment process in LCS.
-- Complete all tasks specified in the LCS checklists.
-- A development environment is a VM [deployed to the customer's Azure subscription](../../dev-itpro/dev-tools/access-instances.md) and is customer-managed.
+- **Event:** [Deploying a new sandbox instance](../../dev-itpro/deployment/deployenvironment-newinfrastructure.md)
 
-**Event:** [Copy golden configuration database from sandbox to production](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md).
-- Note that this is performed when ready to do a mock go-live or an actual go-live cutover.
+    - Make sure that all required instances have been [planned](../imp-lifecycle/environment-planning.md), and that the applicable add-on offers have been purchased.
+    - Run the deployment process in LCS.
+    - Complete all tasks that are specified in the LCS checklists.
+    
+    Note that a development environment is a virtual machine (VM) that has been [deployed to the customer's Azure subscription](../../dev-itpro/dev-tools/access-instances.md) and is managed by the customer.
 
-**Event:** [Restore a production point-in-time backup to a non-production instance](../../dev-itpro/database/database-pitr-prod-sandbox.md)
-- Run the [Refresh database](../../dev-itpro/database/database-refresh.md) option in LCS.
-- Post-copy: Delete or obfuscate sensitive data, adjust environment specific application configurations (such as integration endpoints), and enable or add users. Note that these changes are made by applying a [data package](../../dev-itpro/data-entities/data-entities-data-packages.md#import-a-data-package).
+- **Event:** [Copying a golden configuration database from sandbox to production](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md)
 
-**Event:** [Non-production instance database point-in-time restore](../../dev-itpro/database/database-point-in-time-restore.md)
-- Accept that the process cannot be undone.
-- Run the point-in-time restore operation in LCS.
+    Note that you perform this task when you're ready to do a mock go-live or an actual go-live cutover.
 
-**Event:** Copy Tier 2 sandbox database to a development sandbox for troubleshooting and [debugging](../../dev-itpro/database/dbmovement-scenario-debugdiag.md)  
-- Run database export operation in LCS on the Tier 2 sandbox environment.
-- Import and update the database in the development environment.
+- **Event:** [Restoring a production point-in-time backup to a non-production instance](../../dev-itpro/database/database-pitr-prod-sandbox.md)
 
-## Data back-up and retention 
+    - Run the [Refresh database](../../dev-itpro/database/database-refresh.md) option in LCS.
+    - Post-copy: Delete or obfuscate sensitive data, adjust environment-specific application configurations (such as integration endpoints), and enable or add users. Note that these changes are made by applying a [data package](../../dev-itpro/data-entities/data-entities-data-packages.md#import-a-data-package).
 
-Databases for Finance and Operations environments in the SaaS subscription are protected by automatic back-ups. Automatic back-ups are retained for 28 days for production environments (unless Microsoft performs a rollback) and 7 days for sandbox (Tier 2+) environments. A rollback of production may be performed in the event a failure occurs during any planned maintenance update.
+- **Event:** [Non-production instance database point-in-time restore](../../dev-itpro/database/database-point-in-time-restore.md)
 
-For more information about automatic back-ups, see [Automated backups - Azure SQL Database & SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
+    - Accept that the process can't be undone.
+    - Run the point-in-time restore operation in LCS.
 
-## Service activity responsibilities 
+- **Event:** Copying a Tier 2 sandbox database to a development sandbox for troubleshooting and [debugging](../../dev-itpro/database/dbmovement-scenario-debugdiag.md)
 
-The following table describes some typical scenarios and activities for the service along with the responsibilities of Microsoft, the customer, or both concerning such activities.
+    - Run the database export operation in LCS on the Tier 2 sandbox environment.
+    - Import and update the database in the development environment.
 
-| Activity  | Responsibility of Microsoft  | Responsibility of the customer |
-|-------------------------|-------------------------|------|
-| **Provisioning initial tenants**  |  |   |
-| Size projected load in LCS using the Subscription Estimator tool and request specific environment(s) to be provisioned |  | X |
-| Provision all production instances and non-production instances | X |   |
-| Validate the deployed production instances and non-production instances |  | X  |
-| **Service updates**  |  |
-| Microsoft applies service updates to designated non-production and production instances | X  | X  |
-| Download update from LCS and define, develop, and test the update, and provide code update package back to LCS |  | X  |
-| Request extension updates to be applied to the production instance |  | X |
-| Create code and data backup for production instance before applying any updates | X  |   |
-| In case of any failure, roll back production instance to code and data backup | X  |    |
-| **Data management (Backup, restore, and update)**|  |   |
-| Backup database | X  |   |
-| Determine HA and disaster recovery plan | X  |    |
-| Monitor production instance database performance | X   | X  |
-| Tuning the production instance database for performance | X  | X  |
-| Initiate copy of production instance database to non-production instance |  | X  |
-| **Update infrastructure**  |  |  |
-| Schedule regular infrastructure updates | X |    |
-| **Scale up and down (Users, storage, instances)**|  |   |
-| Purchase additional users and non-production add-ons |  |  X |
-| Changes in usage updated in the LCS Subscription Estimator tool |  | X |
-| Report any significant performance issues impacting usage of the service |  | X |
-| Proactively manage the resources needed for the applicable service | X |   |
-| Investigate and troubleshoot incidents | X | X |
-| **Security (user access)**|  |   |
-| Provide user access to the service |  |  X |
-| Provide LCS project access for managing and operating instances deployed through LCS |  | X |
-| **Monitor production instance**|  |  |
-| Monitor production instances 24x7 | X |   |
-| Notify the customer proactively of incidents with the production instance | X |   |
-| **Manage and monitor non-production instances** |  |   |
-| Manage non-production instances with LCS |  | X  |
-| Monitor non-production instances |  | X  |
+## Data backup and retention
 
-## Service update strategy 
+Databases for Finance and Operations environments in the SaaS subscription are protected by automatic backups. For production environments, automatic backups are retained for 28 days, unless Microsoft does a rollback. For sandbox (Tier 2+) environments, they are retained for seven days. A rollback of the production environment can be done if a failure occurs during any planned maintenance update.
 
-In accordance with the [software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md), Finance and Operations apps follow the Microsoft [Modern Lifecycle Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), which covers products that are serviced and supported continuously. The following illustrates the process:
- 
-![One Version](media/FO-OneVersion.PNG)
+For more information about automatic backups, see [Automated backups - Azure SQL Database & SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
-For more details refer to the following:
+## Service activity responsibilities
+
+The following table describes some typical scenarios and activities for the service. It also indicates whether Microsoft, the customer, or both Microsoft and the customer are responsibly for the activities.
+
+| Activity | Responsibility of Microsoft | Responsibility of the customer |
+|---|---|---|
+| **Provisioning initial tenants** | | |
+| Size the projected load in LCS by using the Subscription estimator tool, and request that specific environments be provisioned. | | X |
+| Provision all production instances and non-production instances. | X | |
+| Validate the deployed production instances and non-production instances. | | X |
+| **Service updates** | |
+| Microsoft applies service updates to designated non-production and production instances. | X | X |
+| Download the update from LCS, define, develop, and test the update, and provide the code update package back to LCS. | | X |
+| Request that extension updates be applied to the production instance. | | X |
+| Create a code and data backup for the production instance before any updates are applied. | X | |
+| In the event of any failure, roll back the production instance to the code and data backup. | X | |
+| **Data management (backup, restore, and update)** | | |
+| Back up the database. | X | |
+| Determine high availability (HA) and a disaster recovery plan. | X | |
+| Monitor performance of the production instance database. | X | X |
+| Tune the production instance database for performance. | X | X |
+| Initiate copying of the production instance database to a non-production instance. | | X |
+| **Updating the infrastructure** | | |
+| Schedule regular infrastructure updates. | X | |
+| **Scaling up and down (users, storage, and instances)** | | |
+| Purchase additional users and non-production add-ons. | | X |
+| Update usage changes in the LCS Subscription estimator tool. | | X |
+| Report any significant performance issues that affect use of the service. | | X |
+| Proactively manage the resources that are required for the applicable service. | X | |
+| Investigate and troubleshoot incidents. | X | X |
+| **Security (user access)** | | |
+| Provide user access to the service. | | X |
+| Provide LCS project access for the management and operation of instances that were deployed through LCS. | | X |
+| **Monitoring production instances** | | |
+| Monitor production instances 24/7. | X | |
+| Proactively notify the customer about incidents that involve the production instance. | X | |
+| **Managing and monitoring non-production instances** | | |
+| Manage non-production instances by using LCS. | | X |
+| Monitor non-production instances. | | X |
+
+## Service update strategy
+
+In accordance with the [software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md), Finance and Operations apps follow the Microsoft [Modern Lifecycle Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), which covers products that are continuously serviced and supported. The following illustration shows the process.
+
+![One Version process.](media/FO-OneVersion.PNG)
+
+For more information, see the following topics:
+
 - [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md)
 - [Configure service updates through LCS](../../dev-itpro/lifecycle-services/configure-service-updates.md)
 - [Pause service updates through LCS](../../dev-itpro/lifecycle-services/pause-service-updates.md)
 - [Get notified about service updates through LCS](../../dev-itpro/lifecycle-services/notifications-service-updates.md)
 
-## Security and administrative access 
+## Security and administrative access
 
-Administrative access to a Finance and Operations production environment is strictly controlled and logged. Customer data is handled in accordance with the Microsoft Online Services Terms. Customer's tenant administrator can access production instances or non-production instances as described in the following table.
+Administrative access to a Finance and Operations production environment is strictly controlled and logged. Customer data is handled in accordance with the Microsoft Online Services Terms. The customer's tenant administrator can access production instances or non-production instances, as described in the following table.
 
 For more information, see [Licensing terms and documentation](https://www.microsoft.com/licensing/product-licensing/products).
 
 ### Customer administrative access
 
-| Environment type | Purpose  | Level of customer access  |
-|-------------------------|-------------------------|-------------------------|
-| **Non-production**</br>Tier 1 sandbox | A non-production environment that customers deploy for development, demonstration, or training purposes. | A Tier 1 sandbox, also referred to as a cloud-hosted environment, is a customer-managed VM that is deployed to the customer's Azure subscription from LCS. Because it is a VM in the customer's  Azure subscription, the customer has full administrative access to the environment via Remote Desktop.|
-| **Non-production**</br>Tier 2 (or higher) sandbox | A non-production environment that customers deploy for user acceptance testing, integration testing, training, staging, or any other pre-production scenario. | Tier 2 and higher sandboxes are deployed to the Finance and Operations SaaS subscription. Access to Azure SQL Server databases associated with the non-production environment is granted via [just-in-time access](../../dev-itpro/database/database-just-in-time-jit-access.md). Remote Desktop access is not available.|
-| **Production** | A production environment is deployed when the project is [ready for initial go-live](/imp-lifecycle/environment-planning.md#production-system-readiness). | Production environments are deployed to the SaaS subscription. All access is through the browser, service endpoints, or through LCS.|
+| Environment type | Purpose | Level of customer access |
+|---|---|---|
+| **Non-production**<br>Tier 1 sandbox | A non-production environment that customers deploy for development, demonstration, or training purposes. | A Tier 1 sandbox (also referred to as a cloud-hosted environment) is a customer-managed VM that is deployed to the customer's Azure subscription from LCS. Because it's a VM in the customer's Azure subscription, the customer has full administrative access to the environment via Remote Desktop. |
+| **Non-production**<br>Tier 2 (or higher) sandbox | A non-production environment that customers deploy for user acceptance testing, integration testing, training, staging, or any other pre-production scenario. | Tier 2 and higher sandboxes are deployed to the Finance and Operations SaaS subscription. Access to Azure SQL databases that are associated with the non-production environment is granted via [just-in-time access](../../dev-itpro/database/database-just-in-time-jit-access.md). Remote Desktop access isn't available. |
+| **Production** | A production environment is deployed when the project is [ready for initial go-live](/imp-lifecycle/environment-planning.md#production-system-readiness). | Production environments are deployed to the SaaS subscription. All access is through the browser, service endpoints, or LCS. |
 
 ### Microsoft administrative access
 
-The following table details the different levels of access for different Microsoft administrators.
+The following table shows the different levels of access for different Microsoft administrators.
 
-| Administrator | Customer data  |
-|-------------------------|-------------------------|
-| Operations responses team<br>(Limited to key personnel only) |Yes, granted by support ticket. Access is audited and limited to the duration of the support activity. |
-| Microsoft Customer Support Services | No direct access. Customer may use screen sharing to work with support staff to debug issues. |
-| Engineering | No direct access. Operations response team may use screen sharing to work with engineering to debug issues. |
-| Others in Microsoft | No access.|
+| Administrator | Customer data |
+|---|---|
+| Operations responses team<br>(Limited to key personnel only) | Access is granted through a support ticket. Access is audited and limited to the duration of the support activity. |
+| Microsoft Customer Support Services (CSS) | No direct access. Customer can use screen sharing to work with support staff to debug issues. |
+| Engineering | No direct access. The Operations response team can use screen sharing to work with engineering to debug issues. |
+| Others in Microsoft | No access. |
 
-## Monitoring 
+## Monitoring
 
-Microsoft has invested in an extensive toolset to monitor and diagnose customers' production instances. Microsoft monitors customers' production environments 24 hours a day, 7 days a week. For more details see [Production support and monitoring](../imp-lifecycle/production-support-monitoring.md).
+Microsoft has invested in an extensive toolset that it can use to monitor and diagnose customers' production instances. Microsoft monitors customers' production environments 24 hours a day, 7 days a week. For more information, see [Production support and monitoring](../imp-lifecycle/production-support-monitoring.md).
 
-| Microsoft's responsibilities | Customer's responsibilities |
-|-------------------------|-------------------------|
-|<ul><li>Availability monitoring of the service. <br><li>Continuous monitoring and alerts through health metrics and watchdogs for critical components such as AOS, Batch, DIXF, Commerce, and Management Reporter. </br><li>Monitoring for performance degradation caused by infrastructure services (AAD, Azure SQL, etc.). </br><li>In the event Microsoft determines that a single process or batch job is causing aberrations, these processes will be thwarted after communication with the customer.|<ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues. </br><li>Application errors need to be diagnosed using the monitoring tools. Diagnose user reported performance aberrations using these tools.</br><li>Inform Microsoft in the event that there is expected load on the system beyond projected peak usage.</br><li>In the event the applicable service is unavailable in the production instance, the customer can report a [production outage](../../dev-itpro/lifecycle-services/report-production-outage.md) using LCS.|
+| Microsoft responsibilities | Customer responsibilities |
+|---|---|
+| <ul><li>Monitor availability of the service.</li><li>Continuously monitor and alert through health metrics and watchdogs for critical components such as Application Object Server (AOS), Batch, Data Import/Export Framework (DIXF), Commerce, and Management Reporter.</li><li>Monitor for performance degradation that is caused by infrastructure services (such as Azure Active Directory \[Azure AD\] and Azure SQL).</li><li>If Microsoft determines that a single process or batch job is causing aberrations, that process or job will be thwarted after communication with the customer.</li></ul> | <ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues.</li><li>Application errors must be diagnosed by using the monitoring tools. Use these tools to diagnose user-reported performance aberrations.</li><li>Inform Microsoft if there is expected load on the system beyond projected peak usage.</li><li>If the applicable service is unavailable in the production instance, the customer can use LCS to report a [production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).</li></ul> |
 
-Submitting support requests online, via LCS allows Microsoft to deliver fast and deep technical expertise in the most effective and efficient manner possible. A phone option is available, but should only be used if online is not available. For more details refer to [Phone support options](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support)
- 
-## Incident management 
+By submitting support requests online, via LCS, you enable Microsoft to deliver fast and deep technical expertise in the most effective and efficient manner. Although a phone option is available, it should be used only if the online option isn't available. For more information, see [Phone support options](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support).
 
-Microsoft responds to and resolves incidents based on severity levels. Microsoft's incident severity levels can be changed during initial assessment of the incident and as more information about the impact and scope becomes available. If the incident is mitigated, then the incident severity remains unchanged.
- 
-For more information about severity levels, refer to the following [Severity Table](https://docs.microsoft.com/en-us/power-platform/admin/support-overview#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request).
+## Incident management
 
-## Business continuity with high availability and disaster recovery 
+Microsoft responds to and fixes incidents based on severity levels. Microsoft's incident severity levels can be changed during initial assessment of the incident, and as more information about the impact and scope becomes available. If the incident is mitigated, the incident severity remains unchanged.
 
-Microsoft provides business continuity and disaster recovery for production instances of Finance and Operations apps if a Microsoft Azure region-wide outage occurs. See [Business continuity and disaster recovery](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md) for more details.
+For more information about severity levels, see [this severity table](https://docs.microsoft.com/power-platform/admin/support-overview#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request).
 
-- **High Availability**: HA functionality provides ways to prevent downtime caused by the failure of a single node within an Azure datacenter. Each service's cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. HA for databases is provided through [Azure SQL HA features](/azure/azure-sql/database/high-availability-sla).
+## Business continuity through HA and disaster recovery 
 
-- **Disaster Recovery**: [Azure DR features](/azure/best-practices-availability-paired-regions) protect each service against outages broadly impacting an entire Azure datacenter and include the following:
-  - Azure SQL active-geo replication for primary database (business database), with a Recovery Point Objective (RPO) estimate of less than or equal to 5 seconds.
-  - Geo-redundant copies of Azure blob storage (containing document attachments) in other Azure regions.
-  - Secondary region for the Azure SQL and Azure blob storage replications.
+Microsoft provides business continuity and disaster recovery for production instances of Finance and Operations apps in the event of Azure region–wide outages. For more information, see [Business continuity and disaster recovery](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
 
-The primary data stores are supported for replication. This means that components for each service, such as Management Reporter and entity store, use transformed data from the primary database, which need to be generated after the recovery site has been setup and service started. Customer code artifacts and recovered data stores are used to re-deploy the site, with a Recovery Time Objective (RTO) of up to 10 hours. This will enable state replication of the compute nodes along with networking and other components to set up the secondary site using the recovered data stores. In the event DR is utilized to recover the customer's production instance, Microsoft and customer will perform the responsibilities in [Incident management](service-description.md#incident-management).
+- **High availability** – HA functionality provides ways to prevent downtime that is caused by the failure of a single node in an Azure datacenter. Each service's cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. HA for databases is provided through [Azure SQL HA features](/azure/azure-sql/database/high-availability-sla).
+- **Disaster recovery** – [Azure disaster recovery features](/azure/best-practices-availability-paired-regions) protect each service against outages that broadly affect an entire Azure datacenter. Here are some of these features:
 
-| Microsoft's responsibilities  | Customer's responsibilities |
-|-------------------------|-------------------------|
-| Microsoft provisions a secondary environment in the Azure paired datacenter at the time of deployment of the primary production instance.</br><br>See the [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions) for details. | None |
-| Microsoft enables Geo Redundancy of SQL and Azure Storage at the time of deployment of the primary production instance. | None|
-| Microsoft enables automatic backup on the Azure SQL databases. |None |
-| On outage, Microsoft determines if a failover needs to be executed for the customer and if there will be a data loss. Data loss can be up to 5 sec. For details, see [Azure SQL Database Geo-Restore](https://azure.microsoft.com/blog/azure-sql-database-geo-restore). <br>In the event of a data loss, Microsoft will send a request to the customer asking for its sign-off on a failover. | Customer may need to provide written sign-off to trigger the failover in the event of data loss.|
-| The applicable service will be operated in limited mode on failover. Update maintenance cannot be triggered in failover mode. | Customer cannot request package deployments or other regular maintenance requests in failover mode. |
-| Microsoft fails back to the production instance in the primary Azure region when the datacenter becomes operational. Normal operations are resumed. | Customer may need to sign-off on fail back to the production instance in the primary Azure region.|
+    - Azure SQL active-geo replication for the primary database (business database), where the estimated recovery point objective (RPO) is less than or equal to five seconds.
+    - Geo-redundant copies of Azure Blob Storage (which contains document attachments) in other Azure regions.
+    - Secondary region for the Azure SQL and Azure Blob Storage replications.
 
-## Finance and Operations support offerings 
+The primary data stores are supported for replication. Therefore, components for each service, such as Management Reporter and entity store, use transformed data from the primary database. This data must be generated after the recovery site has been set up and the service has been started. Customer code artifacts and recovered data stores are used to redeploy the site. The recovery time objective (RTO) is up to 10 hours. The redeployment enables state replication of the compute nodes, together with networking and other components, to use the recovered data stores to set up the secondary site. If disaster recovery is used to recover the customer's production instance, Microsoft and the customer will meet their [incident management](service-description.md#incident-management) responsibilities.
 
-Technical support is available in markets where Finance and Operations services are offered. [Support experiences](../../dev-itpro/lifecycle-services/lcs-support.md) are provided within Lifecycle Services or Finance and Operations apps. These include the following:
+| Microsoft responsibilities | Customer responsibilities |
+|---|---|
+| Microsoft provisions a secondary environment in the Azure paired datacenter when the primary production instance is deployed. For more information, see [Business continuity and disaster recovery (BCDR): Azure Paired Regions](/azure/best-practices-availability-paired-regions). | None |
+| Microsoft enables geo-redundancy of Azure SQL and Azure Blob Storage when the primary production instance is deployed. | None |
+| Microsoft enables automatic backup on the Azure SQL databases. | None |
+| <p>When an outage occurs, Microsoft determines whether a failover must be performed for the customer, and whether there will be data loss. Data loss can be up to five seconds. For more information, see [Azure SQL Database Geo-Restore](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>In the event of data loss, Microsoft will request the customer's sign-off for a failover.</p> | In the event of data loss, the customer might have to provide written sign-off to trigger the failover. |
+| When a failover occurs, the applicable service works in limited mode. Update maintenance can't be triggered in failover mode. | The customer can't request package deployments or other regular maintenance requests in failover mode. |
+| When the datacenter becomes operational, Microsoft fails back to the production instance in the primary Azure region. Normal operations resume. | The customer might have to sign-off on failback to the production instance in the primary Azure region. |
 
- - [Issue search](../../dev-itpro/lifecycle-services/issue-search-lcs.md) in Lifecycle Services
- - [Integrated technical](../../dev-itpro/lifecycle-services/support-experience.md) support within Finance and Operations apps
- - LCS [cloud-powered support](../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md)
+## Finance and Operations support offerings
 
-Microsoft offers Finance and Operations customers three support plans: Premier, Professional Direct, and the support included in the subscription. The level of support differs per plan and highlights are provided in the following table.
+Technical support is available in markets where Finance and Operations services are offered. [Support experiences](../../dev-itpro/lifecycle-services/lcs-support.md) are provided in LCS or Finance and Operations apps. Here are some examples:
 
-| Support feature | Premier | Professional direct  | Subscription |
-|-----------------|-------------|-----------------|--------------|
+- [Issue search](../../dev-itpro/lifecycle-services/issue-search-lcs.md) in LCS
+- [Integrated technical support](../../dev-itpro/lifecycle-services/support-experience.md) in Finance and Operations apps
+- [Cloud-powered support](../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md) in LCS
+
+Microsoft offers Finance and Operations customers three support plans: Premier, Professional Direct, and the support that is included in the subscription. The level of support differs per plan. The following table shows a comparison of the three plans.
+
+| Support feature | Premier | Professional Direct | Subscription |
+|---|---|---|---|
 | Unlimited break/fix incident submission | Yes | Yes | Yes |
-| 24x7 access via LCS | Yes | Yes | Yes |
-| Incident response time | Less than 1 hour | Less than 1 hour | Next business day |
-| Advisory hours | Pools acquired per agreement | No | No |
+| 24/7 access via LCS | Yes | Yes | Yes |
+| Incident response time | Less than one hour | Less than one hour | Next business day |
+| Advisory hours | Pools are acquired per agreement. | No | No |
 | Dedicated support account manager | Yes | No | No |
-| Dedicated support engineer | Engaged under separate agreement | No | No |
+| Dedicated support engineer | Engaged under a separate agreement | No | No |
 
-For more details, refer to [Support overview](/power-platform/admin/support-overview)
+For more information, see [Support overview](/power-platform/admin/support-overview).
 
-### Process to engage support 
+### Process to engage support
 
-In case of incidents with Finance and Operations apps, customers submit support tickets to Microsoft through LCS. Microsoft Customer Support Services (CSS) handle incidents depending on the customer's support plan and severity of the incident as designated by CSS.
+In the event of incidents that involve Finance and Operations apps, customers submit support tickets to Microsoft through LCS. CSS handles the incidents, based on the customer's support plan and the severity of the incident as designated by CSS.
 
-### Service level agreement 
+### Service level agreement
 
-Microsoft is committed to an availability of 99.9% per month of the service. If Microsoft does not achieve and maintain the service level for the applicable service described in the SLA, then the customer may be eligible for a credit towards a portion of its monthly service fees for the applicable service. See the "Claims" section of the [SLA](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services) for details on how to initiate a service credit. 
+Microsoft is committed to an availability rate of 99.9 percent per month of the service. If Microsoft doesn't achieve and maintain the service level for the applicable service as described in the service level agreement (SLA), the customer might be eligible for a credit toward a portion of its monthly service fees for that service. For information about how to initiate a service credit, see the "Claims" section of the [SLA](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
 
 ## Important resources
 
-- [Trust Center](https://www.microsoft.com/trust-center): Information on where your Finance and Operations data is stored, plus additional information on privacy, compliance, and security procedures.
-
-- [Licensing terms and documentation](https://www.microsoftvolumelicensing.com/): Quickly access licensing terms, conditions, and supplemental information relevant to the use of products and services licensed through Microsoft volume licensing programs.
-
-- [Licensing terms](https://www.microsoft.com/licensing/product-licensing/): The licensing terms resources on this page define the terms and conditions for the software and online services products you purchase through Microsoft commercial licensing programs.
-
-- [Microsoft Lifecycle Policy](/lifecycle/): Provides consistent and predictable guidelines for the availability of support throughout the life of a product.
-
-- [Licensing guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365): Use this guide to improve your understanding of how to license Dynamics 365.
-
-- [Customer support](https://dynamics.microsoft.com/support/): Get industry-leading support for your Dynamics 365 apps.
-
-- [Dynamics Lifecycle Services](https://lcs.dynamics.com/): Manage your application lifecycle and move towards predictable, repeatable, high quality implementations.
+- **[Trust Center](https://www.microsoft.com/trust-center)** – Get information about where your Finance and Operations data is stored, plus additional information about privacy, compliance, and security procedures.
+- **[Licensing terms and documentation](https://www.microsoftvolumelicensing.com/)** – Quickly access licensing terms, conditions, and supplemental information that is relevant to the use of products and services that are licensed through Microsoft volume licensing programs.
+- **[Licensing terms](https://www.microsoft.com/licensing/product-licensing/)** – The resources on this page define the terms and conditions for the software and online services products that you purchase through Microsoft commercial licensing programs.
+- **[Microsoft Lifecycle Policy](/lifecycle/)** – This page provides consistent and predictable guidelines for the availability of support throughout the life of a product.
+- **[Licensing guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Use this guide to learn more about how to license Dynamics 365.
+- **[Customer support](https://dynamics.microsoft.com/support/)** – Get industry-leading support for your Dynamics 365 apps.
+- **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – Manage your application lifecycle, and move towards predictable, repeatable, high-quality implementations.
 
 ## Definitions
 
 ### [Azure region](/azure/availability-zones/az-overview#regions)
-A geographical region where one or more Azure datacenters exist; for example, US and Europe.
 
-### [Business Process Modeler (BPM)](../../dev-itpro/lifecycle-services/bpm-overview.md)
-A tool in LCS to help complete a fit-gap analysis for a given implementation using business process definitions as defined in APQC and their support within Finance and Operations apps.
+A geographical region where one or more Azure datacenters exist. Examples include US and Europe.
 
-### Cloud Solution Provider (CSP) 
-Partners who are part of Microsoft's CSP program and provide customers with value-added cloud services, support, one invoice, and customer management at scale.
+### [Business process modeler (BPM)](../../dev-itpro/lifecycle-services/bpm-overview.md)
 
-### Customer 
-A business entity that consumes Finance and Operations apps and is represented by a tenant in Microsoft Office 365.
+A tool in LCS that helps complete a fit-gap analysis for a given implementation by using business process definitions from American Productivity & Quality Center (APQC) that are supported in Finance and Operations apps.
 
-### Development environment
-Also known as a [Tier 1 sandbox](../imp-lifecycle/environment-planning.md#tier-1-vs-tier-2-and-higher). An environment used for developing extensions.
+### Cloud solution provider
 
-### Downtime 
-Any period of time when end users are unable to login or access to their active tenant, due to a failure in the unexpired platform or the service infrastructure as Microsoft determines from automated health monitoring and system logs. Downtime does not include scheduled downtime, the unavailability of service add-on features, the inability to access the service due to your modifications of the service, or periods where the scale unit capacity is exceeded.
+A partner that is part of the Microsoft Cloud Solution Provider (CSP) program, and that provides customers with value-added cloud services, support, one invoice, and customer management at scale.
 
-### Implementation partner 
-The partner who is selected by the customer to customize, configure, implement, and manage its Finance and Operations solutions.
+### Customer
 
-### Microsoft Dynamics Lifecycle Services (LCS) 
-The administrative portal for lifecycle management of Finance and Operations apps from trial to implementation to post-production management and support. For details, refer to [Lifecycle Services Resources](../../dev-itpro/lifecycle-services/lcs.md)
-
-### Microsoft Customer Support Services (CSS) 
-Microsoft's global support team dedicated to providing quality service for Finance and Operations apps.
-
-### Non-production instance 
-Any of the following instances of a service that are used by the customer for validating extensions and other development tasks:
-
-- **Sandbox Tier 1:** Developer instance (customer-hosted) 
-
-- **Sandbox Tier 2:** Standard Acceptance Testing instance 
-
-- **Sandbox Tiers 3-5:** Add-on sandboxes [details for each Tier](../imp-lifecycle/environment-planning.md#selecting-the-correct-tier-2-or-higher-environment)
-
-### Production instance 
-An Finance and Operations environment that is used by customer for managing its "live" daily transactions and business processes.
-
-### Sandbox environment 
-A non-production environment that is used by the customer for demonstration, training, user acceptance testing, validation of extensions and other testing tasks.
+A business entity that consumes Finance and Operations apps and is represented by a tenant in Office 365.
 
 ### Development environment
-A non-production sandbox environment that is used to develop extensions. Customers deploy this environment to their own Azure subscription from LCS. This environment can also be used for demonstration, training, or other testing tasks.    
 
-### Service 
-The core services included in Finance and Operations apps.
+A non-production sandbox environment that is used to develop extensions. Customers deploy this environment to their own Azure subscription from LCS. This environment can also be used for demonstration, training, or other testing tasks. It's also known as a [Tier 1 sandbox](../imp-lifecycle/environment-planning.md#tier-1-vs-tier-2-and-higher).
 
-### Service Update
-Microsoft services Finance and Operations environments on consistent basis with service updates. Customers set their service update calendar based on their business needs. For more information, refer to [One Version service updates](../../dev-itpro/lifecycle-services/oneversion-overview.md)
+### Downtime
 
-### Service level agreement for Microsoft online services (SLA)
-The SLA applies to Microsoft's online services. For more details, refer to [Service Level Agreements](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
+Any period when users can't sign in or access their active tenant because of a failure in the unexpired platform or the service infrastructure, as Microsoft determines from automated health monitoring and system logs. Downtime doesn't include scheduled downtime, the unavailability of service add-on features, the inability to access the service because of your modifications to the service, or periods where the scale unit capacity is exceeded.
 
-### Incident 
-An issue that the customer encounters while using the Finance and Operations service and submits a ticket via LCS.
+### Implementation partner
+
+The partner that the customer selects to customize, configure, implement, and manage its Finance and Operations solutions.
+
+### Incident
+
+An issue that customers encounter while they use the Finance and Operations service, and that they submit a ticket for via LCS.
+
+### Microsoft Customer Support Services (CSS)
+
+The Microsoft global support team that is dedicated to providing quality service for Finance and Operations apps.
+
+### Microsoft Dynamics Lifecycle Services (LCS)
+
+The administrative portal for lifecycle management of Finance and Operations apps from trial, to implementation, to post-production management and support. For more information, see [Lifecycle Services Resources](../../dev-itpro/lifecycle-services/lcs.md).
+
+### Non-production instance
+
+Any of the following instances of a service that the customer uses to validate extensions and perform other development tasks:
+
+- **Sandbox Tier 1** – Developer instance (customer-hosted)
+- **Sandbox Tier 2** – Standard Acceptance Testing instance
+- **Sandbox Tiers 3–5** – Add-on sandboxes
+
+For more information about Tiers 2 through 5, see [Selecting the correct Tier-2 or higher environment](../imp-lifecycle/environment-planning.md#selecting-the-correct-tier-2-or-higher-environment).
+
+### Production instance
+
+A Finance and Operations environment that the customer uses to manage its "live" daily transactions and business processes.
+
+### Sandbox environment
+
+A non-production environment that the customer uses for demonstration, training, user acceptance testing, validation of extensions, and other testing tasks.
+
+### Service
+
+Any of the core services that are included in Finance and Operations apps.
+
+### Service level agreement (SLA) for Microsoft online services
+
+The SLA applies to Microsoft online services. For more information, see [Service Level Agreements](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
+
+### Service update
+
+Microsoft services Finance and Operations environments on consistent basis through service updates. Customers set their own service update calendar, based on their business needs. For more information, see [One Version service updates](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 ### User
-A single person using Finance and Operations environments, associated with a customer's tenant.
+
+A single person who uses Finance and Operations environments, and who is associated with a customer's tenant.
