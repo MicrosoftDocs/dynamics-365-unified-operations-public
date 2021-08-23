@@ -31,25 +31,25 @@ A less known feature of the Azure Data Explorer is that it supports ingestion of
 
 ## Steps to upload to Azure Data Explorer
 1.	Run your query on LCS raw logs page.
-2.	Important: Adjust the time interval or filter to get to the right data (row limit is 5000 for export in next step).
+2.	**Important:** Adjust the time interval or filter to get to the right data (row limit is 5000 for export in next step).
 3.	Export the grid to Excel.
 
-![image](https://user-images.githubusercontent.com/45279749/130296479-6904b125-cd7b-4fee-9a1e-7e1bfb619e1e.png)
+    ![Environment monitoring page in LCS](https://user-images.githubusercontent.com/45279749/130296479-6904b125-cd7b-4fee-9a1e-7e1bfb619e1e.png)
 
-*	Open the file in Excel and save it without making any changes (this seems to fix a formatting issue)
-*	In your Azure Data Explorer, right click on the cluster in the tree view and select “ingest new data” and then on the next page “ingest data from a local file”
+4.	Open the file in Excel and save it without making any changes (this seems to fix a formatting issue).
+5.	In Azure Data Explorer, right-click on the cluster in the tree view and select **Ingest new data**. On the next page select **Ingest data from a local file**.
 
-![image](https://user-images.githubusercontent.com/45279749/130296578-7e957c4f-807f-47eb-bf8e-40b69b64a29b.png)
+    ![image](https://user-images.githubusercontent.com/45279749/130296578-7e957c4f-807f-47eb-bf8e-40b69b64a29b.png)
 
-*	Pick your cluster, name a new table for the data to be imported into, select up to 10 CSV files to import, select CSV format. Hit next a few times till your data is getting imported.
+6.	Pick your cluster, name a new table for the data to be imported into, select up to 10 CSV files to import, and select CSV format. Hit next a few times till your data is getting imported.
 
-![image](https://user-images.githubusercontent.com/45279749/130296627-8969fa68-1232-4c73-84e1-271d7af97a70.png)
+    ![image](https://user-images.githubusercontent.com/45279749/130296627-8969fa68-1232-4c73-84e1-271d7af97a70.png)
 
-* Use the Query tile to write a Kusto query against your data. 
+7. Use the Query tile to write a Kusto query against your data. 
 
-![image](https://user-images.githubusercontent.com/45279749/130296674-15db289d-b994-44cf-b783-ce3b54e33d0f.png)
+    ![image](https://user-images.githubusercontent.com/45279749/130296674-15db289d-b994-44cf-b783-ce3b54e33d0f.png)
 
-To learn more about the Kusto query language, go [here](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer).
+To learn more about the Kusto query language, see [Tutorial: Use Kusto queries in Azure Data Explorer and Azure Monitor](/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer).
 
 ## Sample queries
 ### Analysis of SQL queries occurring in the Commerce Runtime (custom or built-in)
