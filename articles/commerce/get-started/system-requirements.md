@@ -4,7 +4,7 @@
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
-ms.date: 07/23/2021
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -171,7 +171,7 @@ Additionally, we highly recommend that you consider the following aspects of per
 - The number of physical network ports (More ports enhance throughput per second.)
 - SQL Server log flush size (This factor directly affects SQL Server performance.)
 - Data read and write capabilities (This factor directly affects SQL Server performance.)
-- Will load balancing be required across multiple systems that handle separated Commerce Scale Unit subcomponents (such as multiple Retail Servers or a disaster recovery–enabled system for database failover.)
+- Will load balancing be required across multiple systems that handle separated Commerce Scale Unit subcomponents (such as multiple Retail Servers or a disaster recovery–enabled system for database failover)
 
 ## Dynamics AX 2012 R3 Connector requirements
 
