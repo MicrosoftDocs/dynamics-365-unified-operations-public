@@ -4,7 +4,7 @@
 title: Safety stock fulfillment for items
 description: This topic discusses safety stock fulfillment and how to set up safety stock quantity for items. 
 author: roxanadiaconu
-ms.date: 8/20/2021
+ms.date: 8/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -64,6 +64,8 @@ If you want to set up a minimum key that accounts for increased seasonal demand 
 |4-5|2|Minimum inventory is multiplied by a factor of 2 for April through May.|
 |6-8|2.5|Minimum inventory is multiplied by a factor of 2.5 for June through August.|
 |9-12|1|Minimum inventory reverts to the setting for September through December on the **Item coverage** page.|
+
+![Minimum or maximum key periods](media/min-max-key-periods.png "Minimum or maximum key periods")
 
 > [!NOTE]
 > You can also use a wizard to create a minimum/maximum key. On the **Minimum or maximum keys** page, on the Action Pane, select **Wizard** to open the **Minimum/Maximum Keys Wizard**. The wizard will guide you step by step through the process of creation and setting up the minimum/maximum key. 
