@@ -46,7 +46,7 @@ To complete the examples in this topic, you must have access to Microsoft Dynami
 1.	Sign in to your environment.
 2.	On the default dashboard, select **Electronic reporting**.
 3.	Select **Reporting configurations**.
-4.	Import, into the current instance of Finance, the configurations that you exported from Regulatory Configuration Services (RCS) while you were completing the steps in the [Configure ER formats to use parameters that are specified per legal entity](er-app-specific-parameters-configure-format.md) topic. Follow these steps for each Electronic reporting (ER) configuration, in the following order: data model, model mapping, and formats.
+4.	Import, into the current instance of Finance, the configurations that you exported from Regulatory Configuration Services (RCS) while you were completing the steps in the [Configure ER formats to use parameters that are specified per legal entity](er-app-specific-parameters-configure-format.md) topic. Follow these steps for each [Electronic reporting (ER)](general-electronic-reporting.md) configuration, in the following order: data model, model mapping, and formats.
 
     1. Select **Exchange \> Load from XML file**.
     2. Select **Browse** to select the file for the required ER configuration in XML format.
@@ -190,7 +190,9 @@ You can use the ER framework to set up application-specific parameters for an ER
 
 ## Reuse legal entity–dependent parameters
 
-### Export parameters
+### Duplicate existing parameters
+
+#### Export parameters
 
 1.	Go to **Organization administration \> Workspaces \> Electronic reporting**.
 2.  Select **Reporting configurations**.
@@ -202,7 +204,7 @@ You can use the ER framework to set up application-specific parameters for an ER
 
     The configured set of application-specific parameters has now been exported as an XML file.
 
-### Import parameters
+#### Import parameters
 
 1.	Select version **1.1.2** of the ER format.
 2.	On the Action Pane, select **Import**.
@@ -219,6 +221,15 @@ You can use the ER framework to set up application-specific parameters for an ER
     Be aware that if you configure application-specific parameters for one version of an ER format and import a higher version of the same format into the current Finance instance, the existing application-specific parameters won't be applied for the imported version.
     
     Also be aware that, when you select a file for import, the structure of the application-specific parameters in that file is compared with the structure of the corresponding data source of the **Lookup** type in the ER format that is selected for import. The import is done when the structure of each application-specific parameter matches the structure of the corresponding data source in the ER format that is selected for import. If the structures don't match, you receive a warning message that states that the import can't be done. If you force the import to be done, the existing application-specific parameters for the selected ER format will be cleaned up, and you must set them up from the beginning.
+
+### Re-use existing parameters
+
+Starting from the Microsoft Dynamics 365 Finance version 10.0.23, you can re-use application-specific parameters that have been configured for one version of an ER format, when you run a higher version of the same format. For doing this, you must enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled and you run one version of an ER format that is trying to read application-specific parameters, ER will try to find application-specific parameters that have been configured for the running version of this format or, when they are not available, for the nearest lower version of this format.
+
+> [!NOTE]
+> You can re-use application-specific parameters only in scope of the current legal entity.
+>
+> An exception is thrown at runtime when you run a higher version of an ER format that is trying to re-use application-specific parameters that have been configured for a lower version of the same format and the structure of at least one data source of the **Lookup** type in higher format version has changed.
 
 ## Relationship between application-specific parameters and an ER format
 
