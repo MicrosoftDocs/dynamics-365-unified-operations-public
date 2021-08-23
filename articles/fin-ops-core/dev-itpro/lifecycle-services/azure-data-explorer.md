@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Title
-description: Description of topic.
+title: Use Azure Data Explorer to query raw information logs
+description: This topic explains how to use Azure Data Explorer to query raw information logs.
 author: andreashofmann1
 ms.date: 08/20/2021
 ms.topic: article
@@ -13,19 +13,21 @@ ms.author: andreash
 ms.search.validFrom: 2021-08-20
 ---
 
-# Use Azure Data Explorer to query Raw information logs
+# Use Azure Data Explorer to query raw information logs
 
 [!include[banner](../includes/banner.md)]
 
-There are occasions when a customer, partner, consultant, or support engineer needs to look at the low-level Dynamics 365 Finance & Operations telemetry data. These use cases include troubleshooting of errors, performance-related investigations or just to gain some additional understanding of how the platform work. Telemetry data can be accessed by authorized users via the Environment monitoring part of the LCS portal, can be filtered in a few different ways and displayed inside the LCS portal’s raw logs section. A data grid can be used to inspect the log entries. LCS does not allow for more sophisticated pivoting and users can use Excel for that purpose. For that purpose, the telemetry data can also be downloaded formatted in CSV format. 
+There are occasions when a customer, partner, consultant, or support engineer needs to look at the low-level telemetry data for a Finance and Operations app. These use cases include troubleshooting of errors, performance-related investigations, or just trying to gain some additional understanding of how the Finance and Operations app works. Telemetry data can be accessed by authorized users via the Environment monitoring features of Lifecycle Services (LCS) and can be filtered in a few different ways and displayed inside the LCS's [raw information logs](monitoring-diagnostics.md#raw-information-logs). A data grid can be used to inspect the log entries. LCS does not allow for more sophisticated pivoting, so users can use Excel for that purpose. The telemetry data can also be downloaded and formatted in CSV format. 
 
-However, Excel is not the optimal tool for advanced querying of this data. The perfect tool, designed for this purpose is the Azure Data Explorer. It provides an innovative query language Kusto that is optimized for high-performance data analytics. Answering questions like “how often has a certain process taken place, how long has it taken in 90% of the times, how often per hour has a certain action taken place over the course of a day” becomes a lot easier and can be backed up with powerful graphics as well. 
+However, Excel is not the optimal tool for advanced querying of this data. The perfect tool, designed for this purpose is the Azure Data Explorer. It provides an innovative query language Kusto that is optimized for high-performance data analytics. Answering questions like *how often has a certain process taken place*, *how long has it taken in 90% of the times*, *how often per hour has a certain action taken place over the course of a day* becomes a lot easier and can be backed up with powerful graphics as well. 
 
-Here are examples how the graphics could look like:
-![image](https://user-images.githubusercontent.com/45279749/130295988-59e63346-348b-4531-a3f3-e3ab55a02719.png)
-![image](https://user-images.githubusercontent.com/45279749/130296001-e1a757e7-f2f7-4469-a5df-ae29319b2ea9.png)
+Here are examples of how the graphics could look like:
 
-A less known feature of the Azure Data Explorer is that it supports ingestion of CSV files. We can use it to get our CSV data files uploaded and staged so it can be queried with the Kusto language. If you have not setup Azure Data Explorer Cluster, follow these [steps](https://docs.microsoft.com/en-us/azure/data-explorer/create-cluster-database-portal).
+![Bar graph example 1](https://user-images.githubusercontent.com/45279749/130295988-59e63346-348b-4531-a3f3-e3ab55a02719.png)
+
+![Bar graph example 2](https://user-images.githubusercontent.com/45279749/130296001-e1a757e7-f2f7-4469-a5df-ae29319b2ea9.png)
+
+A less known feature of the Azure Data Explorer is that it supports ingestion of CSV files. We can use it to get our CSV data files uploaded and staged so it can be queried with the Kusto language. If you have not setup Azure Data Explorer Cluster, see [Quickstart: Create an Azure Data Explorer cluster and database](/azure/data-explorer/create-cluster-database-portal).
 
 ## Steps to upload to Azure Data Explorer
 *	Run your query on LCS raw logs page
