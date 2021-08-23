@@ -231,15 +231,15 @@ This part of the example shows how to use a vendor invoice to purchase services 
     6. In the **County of origin/destination** field, select **LT**.
 
 
-16.  On the Action Pane, select **Post**.
-17.  Create an Intrastat declaration for arrivals.
+16. On the Action Pane, select **Post**.
+17. Create an Intrastat declaration for arrivals.
 
-   1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
-   2. On the Action Pane, select **Transfer**.
-   3. In the **Intrastat (Transfer)** dialog box, set the **Vendor invoice** option to **Yes**.
-   4. Select **OK** to transfer the transactions, and then review the Intrastat journal.
+    1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+    2. On the Action Pane, select **Transfer**.
+    3. In the **Intrastat (Transfer)** dialog box, set the **Vendor invoice** option to **Yes**.
+    4. Select **OK** to transfer the transactions, and then review the Intrastat journal.
 
-   ![Intrastat journal](media/ita_intrastat_journal_vendor_invoice.png)
+   ![Intrastat journal page, Overview tab.](media/ita_intrastat_journal_vendor_invoice.png)
 
 18. Review the **General** tab for the purchase order.
 
@@ -263,11 +263,11 @@ This part of the example shows how to use a vendor invoice to purchase services 
 
     The following illustration shows an example of an Intrastat report.
 
-    ![Intrastat arrivals report](media/ita_intrastat_arrivals_report.png)
+    ![Intrastat arrivals report.](media/ita_intrastat_arrivals_report.png)
 
     The following illustration shows an example of an Intrastat file.
 
-    ![Intrastat arrivals report](media/ita_intrastat_arrivals_file.png)
+    ![Intrastat arrivals file.](media/ita_intrastat_arrivals_file.png)
 
 ## Post dispatches for Intrastat
 
@@ -299,7 +299,7 @@ This part of the example shows how to use a sales order to sell goods (items) to
     3. In the **Intrastat (Transfer)** dialog box, set the **Customer invoice** option to **Yes**.
     4. Select **OK** to transfer the transactions, and review the Intrastat journal. The credit note transaction is marked as a correction and has negative invoice amount.
 
-        ![Intrastat journal](media/ita_intrastat_journal_sales_order.png)
+        ![Intrastat journal page](media/ita_intrastat_journal_sales_order.png)
 
         ![Intrastat journal line details for sales order](media/ita_intrastat_journal_sales_order_line_details.png)
 
