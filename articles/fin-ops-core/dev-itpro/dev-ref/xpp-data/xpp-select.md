@@ -30,7 +30,7 @@ The following example fetches all the columns in the first row of the CustTable 
 
 ```xpp
 CustTable custTable;
-select * from custTable;
+select firstonly custTable; //this is a short notation for 'select firstonly * from custTable;'  
 info("AccountNum: " + custTable.AccountNum);
 ```
 
@@ -38,7 +38,7 @@ The following example prints the value in the **AccountNum** column of each row 
 
 ```xpp
 CustTable custTable;
-while select * from custTable
+while select custTable
 {
     info("AccountNum: " + custTable.AccountNum);
 }
@@ -48,7 +48,7 @@ The following example prints the value in the **AccountNum** column of the first
 
 ```xpp
 CustTable custTable;
-select * from custTable;
+select custTable;
 info("AccountNum: " + custTable.AccountNum);
 
 next custTable;

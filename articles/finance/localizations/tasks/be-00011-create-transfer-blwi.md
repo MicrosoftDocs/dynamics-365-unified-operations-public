@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create and transfer transactions to the BLWI (Belgium)
-description: This procedure walks you through creating BLWI report for the Belgium. 
+description: This procedure walks you through creating BLWI report for Belgium. 
 author: v-oloski
 ms.date: 07/12/2017
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through creating BLWI report for the Belgium. This procedure was created using the demo data company USSI. This functionality is available for legal entities whose primary address is in the Belgium. Also it is necessary to set up Registration ID for Belgium and fill in Registration number in order to create BLWI declaration.
+This procedure walks you through creating BLWI report for Belgium. This procedure was created using the demo data company USSI. This functionality is available for legal entities whose primary address is in the Belgium. Also it is necessary to set up Registration ID for Belgium and fill in Registration number in order to create BLWI declaration.
 
 To create and transfer transaction to the BLWI it is necessary previously to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information.
 

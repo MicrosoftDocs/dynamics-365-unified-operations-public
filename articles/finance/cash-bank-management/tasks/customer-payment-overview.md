@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Customer payment overview
-description: This task guide walks through various methods used to enter customer payments. 
+description: This procedure walks through the various methods used to enter customer payments. 
 author: kweekley
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide walks through various methods used to enter customer payments. This task uses the USMF demo company.
+This procedure walks through the various methods used to enter customer payments. This task uses the USMF demo company.
 
 1. Go to **Navigation pane > Modules > Accounts receivable > Payments > Payment journal**.
 2. Click **New**.

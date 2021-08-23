@@ -72,6 +72,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.21 (October 2021)
+            href: get-started/whats-new-changed-10-0-21.md
           - name: Finance 10.0.20 (August 2021)
             href: get-started/whats-new-changed-10-0-20.md
           - name: Finance 10.0.19 (June 2021)
@@ -1168,6 +1170,10 @@
           href: general-ledger/yec-mssng-open-blnces.md
         - name: Open financial journal templates in Office
           href: general-ledger/open-fincl-jrnls-in-office.md
+        - name: Journal posting failure due to imbalance
+          href: general-ledger/posting-fail-imbalance.md
+        - name: Why can't I reverse this transaction?
+          href: general-ledger/cant-reverse-transctns.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
@@ -1478,6 +1484,26 @@
             href: localizations/rcs-delete-environment.md
           - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
             href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
+          - name: Download ER configurations to Finance
+            items: 
+            - name: Download configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+            - name: Import configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+          - name: Global repository (GR)
+            items: 
+            - name: Import configurations from GR
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Import updated versions of ER configurations
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Enhanced filtering to find configurations in GR
+              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Upload configurations to GR
+              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+            - name: Share configurations in GR  
+              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
@@ -1506,6 +1532,8 @@
               href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
               href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+            - name: Use the electronic invoicing service to import vendor invoices
+              href: localizations/e-invoicing-get-started-import-vendor-invoices.md
             - name: Set up Electronic Invoicing
               href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
           - name: Electronic Invoicing FAQ
@@ -1514,32 +1542,56 @@
           items:
           - name: Tax Calculation overview
             href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-          - name: Get started with Tax Calculation
-            href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-          - name: Tax feature support for transfer orders
-            href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
-          - name: Add data fields in tax configurations
-            href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
-          - name: Add data fields in the tax integration by using extensions
-            href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-          - name: Set up an environment for master data lookup
-            href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
-          - name: Multiple VAT registration numbers
-            href: localizations/emea-multiple-vat-registration-numbers.md
-          - name: Reporting for multiple VAT registrations 
+          - name: Setup
             items:
+            - name: Get started with Tax Calculation
+              href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+            - name: Set up an environment for master data lookup
+              href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+          - name: Determination
+            items: 
+            - name: Sales tax applicability and sales tax group determination logic
+              href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+          - name: Calculation
+            items: 
+            - name: Calculate tax on prices when Prices include taxes is enabled
+              href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
+            - name: Tax calculation rounding rules
+              href: localizations/tax-calculation-rounding-rules.md
+          - name: Multiple VAT registration
+            items: 
+            - name: Multiple VAT registration numbers
+              href: localizations/emea-multiple-vat-registration-numbers.md
             - name: Reporting for multiple VAT registrations
               href: localizations/emea-reporting-for-multiple-vat-registrations.md
+            - name: France reporting
+              items: 
+              - name: VAT declaration
+                href: localizations/emea-fra-VAT-declaration-preview-France.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
                 href: localizations/emea-nl-vat-declaration-netherlands.md
               - name: EU sales list
                 href: localizations/emea-nl-eu-sales-list.md
+            - name: Switzerland reporting
+              items: 
+              - name: VAT declaration
+                href: localizations/emea-che-vat-declaration-switzerland.md
             - name: United Kingdom reporting
               items:
               - name: Prepare for integration with MTD for VAT
                 href: localizations/emea-gbr-mtd-vat-integration.md
+          - name: Enable Tax Calculation for transfer order
+            items: 
+            - name: Tax feature support for transfer orders
+              href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+          - name: Extension
+            items: 
+            - name: Add data fields in tax configurations
+              href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
+            - name: Add data fields in the tax integration by using extensions
+              href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
@@ -1555,7 +1607,9 @@
         - name: Low-value pool depreciation
           href: localizations/apac-aus-low-value-pool-depreciation.md
         - name: Set up reason codes for the BAS
-          href: localizations/tasks/set-up-reason-codes-australia-bas.md          
+          href: localizations/tasks/set-up-reason-codes-australia-bas.md
+        - name: Payment times reporting schema
+          href: localizations/apac-aus-payment-times-report.md
       - name: Austria
         items:
         - name: Austria overview
@@ -1694,6 +1748,8 @@
             href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
           - name: Set up NF-e parameters for a fiscal establishment
             href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+          - name: NT2020.005 – Layout and validation updates in the electronic fiscal document (NF-e)
+            href: localizations/latam-bra-nfe-nt2020.005.md
           - name: NT2020.006 – Intermediary sales digital platform for NF-e
             href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
           - name: NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e
@@ -1806,6 +1862,8 @@
           href: localizations/china.md
         - name: Finance and Operations operated by 21Vianet in China
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
+        - name: Account groups selection for Chinese voucher types
+          href: localizations/apac-chn-account-groups-selection.md
         - name: Bill of materials comparison
           href: localizations/apac-chn-bom-comparison.md
         - name: Chinese hierarchy of chart of accounts
@@ -2144,6 +2202,8 @@
           href: localizations/tasks/fr-00004-setup-method-payment.md
         - name: Update method of payment on customer
           href: localizations/tasks/fr-00004-update-method-payment-customer.md
+        - name: VAT declaration
+          href: localizations/emea-fra-VAT-declaration-preview-France.md
         - name: DAS-2 report
           href: localizations/emea-fra-das2-report.md
       - name: Germany
@@ -2168,6 +2228,8 @@
           href: localizations/tasks/de-00002-depreciation.md
         - name: Electronic transmission of VAT declaration (ELSTER)
           href: localizations/tasks/de-00003-electronic-transmission-elster.md
+        - name: German Intrastat
+          href: localizations/emea-deu-intrastat.md
         - name: VAT declaration for Germany
           href: localizations/emea-de-vat-declaration.md
         - name: Customer electronic invoices report
@@ -2312,8 +2374,6 @@
                 href: localizations/apac-ind-gst-reference-groups.md
             - name: Tax transactions
               items: 
-              - name: GST TDS on payment of goods and services
-                href: localizations/ind-gst-tds-payment-goods-services.md
               - name: Purchase transactions
                 items:
                 - name: Purchases from unregistered vendors
@@ -2348,6 +2408,10 @@
                   href: localizations/apac-ind-GST-purchase-return-order.md
                 - name: Vendor advance payments where there are reverse charges
                   href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                - name: GST TDS on payment of goods and services
+                  href: localizations/ind-gst-tds-payment-goods-services.md
+                - name: GST TCS on payment of goods and services
+                  href: localizations/ind-gst-tcs-payment.md
               - name: Sales transactions
                 items:
                 - name: Sales of taxable goods to consumers
@@ -3110,14 +3174,16 @@
               href: localizations/rus-post-budget-fixed-asset-acquisition.md
             - name: Transfer fixed assets
               href: localizations/rus-fixed-asset-transfer.md
+            - name: Unified printing forms for fixed assets 
+              href: localizations/printing-forms-fixed-assets.md
+            - name: Inquiries and reports 
+              href: localizations/rus-fa-inquiries-reports.md
           - name: Not valuable fixed assets, and working clothes
             items:
             - name: Not valuable fixed assets (NVFAs) (Russia)
               href: localizations/rus-not-valuable-assets.md
             - name: Working clothes/special rigging accounting (Russia)
               href: localizations/rus-working-clothes-instruments-accounting.md
-            - name: Unified printing forms for fixed assets 
-              href: localizations/printing-forms-fixed-assets.md
         - name: Accounts payable and receivable
           items:
           - name: Credit note corrections (Russia)
@@ -3216,6 +3282,8 @@
             href: localizations/rus-reporting-deferrals.md
         - name: Tax accounting
           items:
+          - name: Create tax registers and the tax register journal
+            href: localizations/rus-profit-tax-registers.md
           - name: Expense and income codes
             href: localizations/rus-expense-and-income-codes.md
           - name: Assets tax registers
@@ -3232,6 +3300,10 @@
             href: localizations/rus-bad-debts.md
           - name: Calculation of tax asset and tax liability registers
             href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
+          - name: Goods movement tax registers
+            href: localizations/rus-goods-movement-tax-registers.md
+          - name: Other tax registers
+            href: localizations/rus-other-tax-registers.md
       - name: Saudi Arabia
         items:
         - name: Saudi Arabia overview
@@ -3302,6 +3374,8 @@
           href: localizations/emea-che-esr-customer-payments-import.md
         - name: Swiss QR-bills
           href: localizations/emea-che-swiss-qr-bills.md
+        - name: VAT declaration
+          href: localizations/emea-che-VAT-declaration-Switzerland.md
       - name: Thailand
         items:
         - name: Thailand overview
@@ -3320,8 +3394,6 @@
           href: localizations/apac-tha-tax-branch-dimensions.md
         - name: Sales VAT report
           href: localizations/apac-tha-sales-vat-report.md
-        - name: Average VAT for purchase transactions
-          href: localizations/apac-tha-average-vat-for-purchase-transactions.md
         - name: Withholding tax
           href: localizations/apac-tha-withholding-tax.md          
       - name: United Arab Emirates (UAE)
@@ -4075,30 +4147,6 @@
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
           - name: Import configurations (LBD)
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-        - name: Regulatory service (RCS)
-          items:
-          - name: Globalization features in RCS
-            href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
-          - name: Download ER configurations to Finance
-            items: 
-            - name: Download configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-            - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
-          - name: Global repository (GR)
-            items: 
-            - name: Import configurations from GR
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
-            - name: Import updated versions of ER configurations
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
-            - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-            - name: Upload configurations to GR
-              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
-            - name: Share configurations in GR  
-              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
-            - name: Discontinue configurations in the RCS Global repository
-              href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
@@ -4329,7 +4377,7 @@
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
       - name: Open entity data in Excel and update it using the Excel add-in
         href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
-      - name: Create Open in Excel experiences
+      - name: Open in Excel experiences FAQ
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json
       - name: Add templates to the Open lines in Excel menu
         href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json
