@@ -4,7 +4,7 @@
 title: Use Azure Data Explorer to query raw information logs
 description: This topic explains how to use Azure Data Explorer to query raw information logs.
 author: andreashofmann1
-ms.date: 08/20/2021
+ms.date: 08/23/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -30,9 +30,9 @@ Here are examples of how the graphics could look like:
 A less known feature of the Azure Data Explorer is that it supports ingestion of CSV files. We can use it to get our CSV data files uploaded and staged so it can be queried with the Kusto language. If you have not setup Azure Data Explorer Cluster, see [Quickstart: Create an Azure Data Explorer cluster and database](/azure/data-explorer/create-cluster-database-portal).
 
 ## Steps to upload to Azure Data Explorer
-*	Run your query on LCS raw logs page
-*	Important: adjust the time interval or filter to get to the right data (row limit is 5000 for export in next step) 
-*	export the grid to Excel
+1.	Run your query on LCS raw logs page.
+2.	Important: Adjust the time interval or filter to get to the right data (row limit is 5000 for export in next step).
+3.	Export the grid to Excel.
 
 ![image](https://user-images.githubusercontent.com/45279749/130296479-6904b125-cd7b-4fee-9a1e-7e1bfb619e1e.png)
 
