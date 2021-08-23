@@ -20,6 +20,8 @@ ms.dyn365.ops.version: AX 10.0.19
 
 This topic applies to Dynamics 365 Commerce version 10.0.20 and later.
 
+The Store Commerce application is our next generation offering for physical stores that unifies MPOS and CPOS into a single application, provides deployment choices to retailers, improves performance and offers superior application life cycle management, while retaining all of the functionalities of MPOS and CPOS, including extensibility.
+
 The Store Commerce app in Microsoft Dynamics 365 Commerce provides rich commerce functionality for first-line workers such as cashiers, sales associates, inventory associates, stock clerks, and store managers. It lets these workers perform commerce operations such cash-and-carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
 Store Commerce provides the benefits of both Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS).
@@ -64,15 +66,15 @@ Store Commerce will have full functional parity with MPOS in the future. Current
 
 Store Commerce renders CPOS and have full functional parity with CPOS, Store Commerce  in addition supports dedicated hardware station and supports offline in the future.
 
-## Choosing between Store Commerce and MPOS
+## Choosing between Store Commerce and MPOS/CPOS
+
+If you are running MPOS or CPOS today, you should be able to move to Store Commerce, Store commerce application is currently in preview and tentatively app will be Generally Available to all in early next year, for now you can try this app in your test or UAT environment.
 
 Store Commerce renders CPOS but has full parity with MPOS. Both Store Commerce and MPOS are Universal Windows Platform (UWP) apps and they support local hardware station. Store Commerce doesn't currently support offline, but it will in the future. 
 
 Because Store Commerce uses the Chromium engine to render the UI, it provides better rendering performance than MPOS. Additionally, because Store Commerce is deployed through Microsoft Store, ALM is greatly simplified. By contrast, MPOS is self-serviced by using Microsoft Dynamics Lifecycle Service (LCS) and Commerce headquarters.
 
-Eventually, MPOS will be deprecated and replaced by Store Commerce.
-
-If you don't require offline support in your store, you should choose Store Commerce instead of MPOS.
+If you don't require offline support in your store, you should choose Store Commerce instead of MPOS because of the added benefits (Improved performance and easier superior life cycle management).
 
 <table>
 <thead>
