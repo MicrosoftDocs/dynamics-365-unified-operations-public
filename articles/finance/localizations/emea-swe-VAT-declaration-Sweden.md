@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sales tax report for Finland
+title: VAT declaration (Sweden)
 description: This topic describes how to set up and generate a value-added tax (VAT) declaration for Sweden.
 author: anasyash
 ms.date: 08/23/2021
@@ -18,6 +18,7 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Sweden
+ms.author: anasyash
 # ms.search.industry: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
