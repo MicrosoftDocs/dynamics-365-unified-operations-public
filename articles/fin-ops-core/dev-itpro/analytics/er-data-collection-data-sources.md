@@ -4,7 +4,7 @@
 title: Use DATA COLLECTION data sources in Electronic reporting formats
 description: This topic explains how to use DATA COLLECTION data sources in Electronic reporting (ER) formats.
 author: NickSelin
-ms.date: 08/13/2021
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -123,7 +123,7 @@ If the volume of transactions is much larger than the volume in the current exam
     2. Save your changes, and close the page.
 
     > [!NOTE]
-    > The new binding will pass, to a generated document, the total amount of tax values that have already been entered in a generated document.
+    > The new binding will pass, to a generated document, the total amount of tax values that have already been entered.
 
     ![Numeric elements that have updated bindings on the Format designer page](./media/er-data-collection-data-sources-02.png)
 
