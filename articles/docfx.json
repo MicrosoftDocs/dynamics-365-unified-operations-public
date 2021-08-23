@@ -87,10 +87,10 @@
     "fileMetadata": {
       "search.app": {
         "finance/**/*.md": [
-          "Finance"
+          "FinanceAndOperations"
         ],
         "supply-chain/**/*.md": [
-          "SCM"
+          "FinanceAndOperations"
         ],
         "commerce/**/*.md": [
           "Commerce"
@@ -190,8 +190,14 @@
         "talent/**/**.md": "dynamics-365-talent"
       },
       "ms.reviewer": {
-        "human-resources/**/**.md": "tfehr",
-        "talent/**/**.md": "tfehr"
+        "human-resources/**/**.md": "twheeloc",
+        "talent/**/**.md": "twheeloc"
+      },
+      "ms.topic": {
+        "fin-ops-core/dev-itpro/mobile-apps/platform/client-apis/**/**.md": "reference",
+        "fin-ops-core/dev-itpro/dev-ref/**/**.md": "reference",
+        "fin-ops-core/dev-itpro/analytics/er-formula**.md": "reference",
+        "fin-ops-core/dev-itpro/analytics/er-functions**.md": "reference"
       },
       "ms.search.scope": {
         "commerce/**/**.md": "Core, Operations, Retail, Commerce, ShowInHelp",

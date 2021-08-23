@@ -43,7 +43,7 @@ You can now use tools like SQL Server Management Studio (SSMS) to connect to the
 
 The self-service environment type has never had Remote Desktop Protocol (RDP) access or static database accounts. However, it is still possible to access the database.
 
-From the environment details page for your sandbox environment, select **Maintain** > **Enable access**, and then in the dialog box, add the IP address of your source environment. This entry will not expire, however it will be lost after the database is replaced by a database movement operation, such as database refresh or database import.
+From the environment details page for your sandbox environment, select **Maintain** > **Enable access**, and then in the dialog box, add the IP address of your source environment. This firewall entry will expire after 8 hours or it will be lost after the database is replaced by a database movement operation (whichever comes first).  This includes operations such as database refresh or database import.
 
 You also need to enter which type of access you require in the **Database Accounts** section. The available options include read or read-write access. Enter a short reason description and then select **Request access**.
 ![Request access option.](media/sql-jit2.png)

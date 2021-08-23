@@ -72,6 +72,8 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.21 (October 2021)
+            href: get-started/whats-new-scm-10-0-21.md
           - name: Supply Chain Management 10.0.20 (August 2021)
             href: get-started/whats-new-scm-10-0-20.md
           - name: Supply Chain Management 10.0.19 (June 2021)
@@ -220,6 +222,26 @@
             href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
           - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
             href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Download ER configurations to Supply Chain Management
+            items: 
+            - name: Download configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Import configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Global repository (GR)
+            items: 
+            - name: Import configurations from GR
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Import updated versions of ER configurations
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Enhanced filtering to find configurations in GR
+              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Upload configurations to GR
+              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+            - name: Share configurations in GR  
+              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
@@ -1235,30 +1257,6 @@
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
           - name: Import configurations (LBD)
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Regulatory service (RCS)
-          items:
-          - name: Globalization features in RCS
-            href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Download ER configurations to Supply Chain Management
-            items: 
-            - name: Download configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Global repository (GR)
-            items: 
-            - name: Import configurations from GR
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Import updated versions of ER configurations
-              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Upload configurations to GR
-              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
-            - name: Share configurations in GR  
-              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Discontinue configurations in the RCS Global repository
-              href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
@@ -1317,7 +1315,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Use BARCODE to generate barcode images
+          - name: Use BARCODE to generate bar code images
             href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json 
         - name: Configure model mappings
           items: 
@@ -1572,7 +1570,19 @@
       - name: Archive inventory transactions
         href: inventory/archive-inventory-transactions.md
       - name: Inventory Visibility Add-in
-        href: inventory/inventory-visibility.md
+        items:
+        - name: Inventory Visibility Add-in overview
+          href: inventory/inventory-visibility.md
+        - name: Set up Inventory Visibility
+          href: inventory/inventory-visibility-setup.md
+        - name: Configure Inventory Visibility
+          href: inventory/inventory-visibility-configuration.md
+        - name: Inventory Visibility reservations
+          href: inventory/inventory-visibility-reservations.md
+        - name: The Inventory Visibility Power App
+          href: inventory/inventory-visibility-power-platform.md
+        - name: Inventory Visibility public APIs
+          href: inventory/inventory-visibility-api.md
     - name: IoT Intelligence
       items:
         - name: IoT Intelligence home page
@@ -1601,8 +1611,12 @@
           href: master-planning/planning-optimization/planning-optimization-overview.md
         - name: Get started with Planning Optimization
           href: master-planning/planning-optimization/get-started.md
+        - name: Planning Optimization release process and release history
+          href: master-planning/planning-optimization/release-process.md
         - name: Planning Optimization fit analysis
           href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
+        - name: Differences between built-in master planning and Planning Optimization
+          href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
         - name: Parameters not used by Planning Optimization
           href: master-planning/planning-optimization/not-used-parameters.md
         - name: Apply filters to a plan
@@ -1631,6 +1645,8 @@
           href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
         - name: Coverage time fences
           href: master-planning/planning-optimization/coverage-time-fence.md
+        - name: Net requirements and pegging information with Planning Optimization
+          href: master-planning/planning-optimization/net-requirements.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Firm planned orders
@@ -1709,6 +1725,8 @@
           href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
         - name: Collaborate with internal supply chain customers
           href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+        - name: Net requirements and pegging information with built-in master planning
+          href: master-planning/net-requirements-built-in-master-planning.md
       - name: Forecasting
         items:
         - name: Demand and supply forecasting
@@ -1787,7 +1805,7 @@
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
       - name: Open entity data in Excel and update it using the Excel add-in
         href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-      - name: Create Open in Excel experiences
+      - name: Open in Excel experiences FAQ
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
       - name: Add templates to the Open lines in Excel menu
         href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -2281,6 +2299,8 @@
         href: engineering-change-management/product-readiness.md
       - name: Release product structure
         href: engineering-change-management/release-product-structure.md
+      - name: Generate variants for engineering products
+        href: engineering-change-management/engineering-variants.md
       - name: Engineering change management FAQs
         href: engineering-change-management/change-management-faq.md
     - name: Production control
@@ -2469,7 +2489,7 @@
             href: production-control/job-scheduling.md
         - name: Operate kanban jobs
           items:
-          - name: Kanban transfer board support for barcode scanners
+          - name: Kanban transfer board support for bar code scanners
             href: production-control/kanban-transfer-board-support-barcode-scanner.md
           - name: Production feedback
             href: production-control/production-feedback.md
@@ -2603,6 +2623,8 @@
         href: rebate-management/rebate-management-overview.md
       - name: Set up and configure the Rebate management module
         items:
+        - name: Turn on the Rebate management module for your system
+          href: rebate-management/rebate-management-enable.md
         - name: Rebate management parameters
           href: rebate-management/rebate-management-parameters.md
         - name: Rebate management deal workflows
@@ -2619,6 +2641,8 @@
         href: rebate-management/rebate-management-deals.md
       - name: Process, review, and post rebates
         href: rebate-management/process-review-post.md
+      - name: Manage deductions using the deduction workbench
+        href: rebate-management/deduction-workbench.md
     - name: Sales and marketing
       items:
       - name: Sales and marketing overview
@@ -3057,6 +3081,8 @@
         href: landed-cost/in-transit-processing.md
       - name: Process over/under transactions
         href: landed-cost/over-under-transactions.md
+      - name: Update tracking for put away
+        href: landed-cost/update-tracking-putaway.md
       - name: Landed cost inquiries
         href: landed-cost/landed-cost-inquiries.md
       - name: Landed cost reports
@@ -3117,6 +3143,8 @@
             href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
+          - name: Over picking for sales orders and transfer orders
+            href: warehousing/over-picking-for-sales-and-transfer-orders.md
           - name: Set different dimensions for packing and storage
             href: warehousing/packing-vs-storage-dimensions.md
           - name: Batch and license plate confirmation
@@ -3281,6 +3309,8 @@
             href: warehousing/install-configure-warehouse-management-app.md
           - name: Install and connect the warehouse app
             href: warehousing/install-configure-warehousing-app.md
+          - name: Mobile bar code support
+            href: warehousing/mobile-barcode-support.md
           - name: Scan bar codes using a camera in the Warehouse Management mobile app
             href: warehousing/scan-bar-codes-using-a-camera.md
           - name: Troubleshoot Warehouse Management mobile app connection issues
@@ -3291,6 +3321,8 @@
             href: warehousing/configure-app-field-names-priorities-warehouse.md
           - name: Set up mobile devices for warehouse work
             href: warehousing/configure-mobile-devices-warehouse.md
+          - name: Customize step titles and instructions for the Warehouse Management mobile app
+            href: warehousing/mobile-app-titles-instructions.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for completing work in a purchase order
@@ -3311,7 +3343,7 @@
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing
           href: warehousing/warehouse-app-events.md
-        - name: Customize the warehouse app
+        - name: Extend warehouse mobile processes
           items:
           - name: Process guide framework
             href: warehousing/process-guide-framework.md
@@ -3383,8 +3415,8 @@
             href: warehousing/system-group-on-open-work-list.md
           - name: Document routing layout for license plate labels
             href: warehousing/document-routing-layout-for-license-plates.md
-          - name: Mobile barcode support
-            href: warehousing/mobile-barcode-support.md
+          - name: GS1 bar codes and QR codes
+            href: warehousing/gs1-barcodes.md
           - name: Set up warehouse for transfer orders
             href: warehousing/transfer-orders-warehouse.md
           - name: Troubleshooting warehouse configuration
@@ -3509,6 +3541,12 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: You can't confirm a shipment because customer is on hold
+          href: troubleshooting/warehousing/customer-is-on-hold.md
+        - name: You can't confirm a shipment because load lines have quantity zero
+          href: troubleshooting/warehousing/load-line-quantity-is-zero.md
+        - name: Can't update a load line because the released quantity would be negative
+          href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
         - name: Canceled product receipts don't update transactions status to registered
           href: troubleshooting/warehousing/canceled-product-receipts.md
         - name: Decimal rounding of the physical updating quantity is incorrect

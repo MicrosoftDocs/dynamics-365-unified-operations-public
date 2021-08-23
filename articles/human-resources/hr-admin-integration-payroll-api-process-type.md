@@ -34,7 +34,7 @@ This topic describes the No Yes option set for Dynamics 365 Human Resources.
 
 Physical name: mshr_hrmCompProcessType
 
-This enumeration provides option set for process type in Human Resources virtual entities.
+This enumeration provides the option set for process type in Human Resources virtual entities.
 
 | Value | Label | Description |
 | --- | --- | --- |

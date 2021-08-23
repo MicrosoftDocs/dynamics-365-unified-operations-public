@@ -3,9 +3,8 @@
 
 title: Recurring integrations
 description: This topic describes recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 12/12/2019
-
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,7 +21,7 @@ ms.custom: 24821
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

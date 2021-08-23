@@ -5,7 +5,6 @@ title: SPLITLIST ER function
 description: This topic provides information about how the SPLITLIST Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 03/15/2021
-ms.topic: article
 ms.prod: 
 ms.technology: 
 

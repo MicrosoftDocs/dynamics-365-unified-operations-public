@@ -3,10 +3,8 @@ title: Macros in X++
 description: This topic describes how to create and use macros in X++.
 author: RobinARH
 ms.date: 11/03/2017
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 189441
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28

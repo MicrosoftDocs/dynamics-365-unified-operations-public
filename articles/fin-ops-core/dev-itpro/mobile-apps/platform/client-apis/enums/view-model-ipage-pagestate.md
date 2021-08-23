@@ -1,35 +1,19 @@
 ---
-# required metadata
-
 title: PageState enumeration
-description: Represents the various high-level states the a page can be in.
+description: Represents the various high-level states the page can be in.
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
-
 ---
 
 # PageState enumeration
 
 [!include [banner](../../../../includes/banner.md)]
 
-Represents the various high-level states the a page can be in.
+Represents the various high-level states the page can be in.
 
 ## Index
 

@@ -5,7 +5,7 @@
 title: Cart icon module
 description: This topic covers the cart icon module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,9 +41,14 @@ The following image shows an example of a cart icon module that displays a mini 
 
 ## Module properties
 
-- **Show mini cart** – When true, this property enables a cart summary (mini cart) to be displayed when the cart icon is hovered over. This functionality is only supported for desktop view ports.
+- **Show mini cart** – When this property is set to **True**, a cart summary (mini cart) is shown when users hover over the cart icon. This functionality is supported only for desktop view ports.
+- **Allow anonymous checkout** – When this property is set to **True**, the mini cart allows users who aren't signed in to do a guest checkout. This property is available in the Commerce version 10.0.21 release, as part of the Commerce module library package.
+- **Order of items** – This property controls the order in which items appear in the mini cart. When the **New items added to top of the list** option is selected, new items that are added to the cart appear at the top of the list of mini cart items. When the default option, **New items added to bottom of the list**, is selected, new items that are added to the cart appear at the bottom of the list of mini cart items. This property is available as of the Commerce version 10.0.21 release, as part of the Commerce module library package.
 
-## Module properties in the Adventure Works theme
+> [!IMPORTANT]
+> The **Allow anonymous checkout** and **Order of items** properties are available as of the Commerce version 10.0.21 release. They require that Commerce module library package version 9.31 be installed.
+
+## Module properties and slots in the Adventure Works theme
 
 In the Adventure Works theme, the cart icon module includes two additional slots for the mini cart. These slots are included as a module definition extension.
 

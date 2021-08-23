@@ -76,6 +76,8 @@ if(formatMappingRun.parmShowPromptDialog(true))
 
 [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 
+[Configure action-dependent ER destinations](er-action-dependent-destinations.md)
+
 [Design a new ER solution to print a custom report](er-quick-start1-new-solution.md)
 
 
