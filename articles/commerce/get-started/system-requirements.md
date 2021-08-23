@@ -171,7 +171,7 @@ Additionally, we highly recommend that you consider the following aspects of per
 - The number of physical network ports (More ports enhance throughput per second.)
 - SQL Server log flush size (This factor directly affects SQL Server performance.)
 - Data read and write capabilities (This factor directly affects SQL Server performance.)
-- Whether load balancing will be required across multiple systems that handle either separated Commerce Scale Unit subcomponents (such as multiple Retail Servers or a disaster recovery–enabled system for database failover)
+- Will load balancing be required across multiple systems that handle either separated Commerce Scale Unit subcomponents (such as multiple Retail Servers or a disaster recovery–enabled system for database failover)
 
 ## Dynamics AX 2012 R3 Connector requirements
 
