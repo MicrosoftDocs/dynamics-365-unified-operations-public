@@ -43,11 +43,11 @@ A less known feature of the Azure Data Explorer is that it supports ingestion of
 
 6.	Pick your cluster, name a new table for the data to be imported into, select up to 10 CSV files to import, and select CSV format. Hit next a few times till your data is getting imported.
 
-    ![image](https://user-images.githubusercontent.com/45279749/130296627-8969fa68-1232-4c73-84e1-271d7af97a70.png)
+    ![Data is imported.](https://user-images.githubusercontent.com/45279749/130296627-8969fa68-1232-4c73-84e1-271d7af97a70.png)
 
 7. Use the Query tile to write a Kusto query against your data. 
 
-    ![image](https://user-images.githubusercontent.com/45279749/130296674-15db289d-b994-44cf-b783-ce3b54e33d0f.png)
+    ![Use Query tile.](https://user-images.githubusercontent.com/45279749/130296674-15db289d-b994-44cf-b783-ce3b54e33d0f.png)
 
 To learn more about the Kusto query language, see [Tutorial: Use Kusto queries in Azure Data Explorer and Azure Monitor](/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer).
 
@@ -64,8 +64,6 @@ new2
 | order by TotalDuration desc
 ```
 
-![image](https://user-images.githubusercontent.com/45279749/130297232-d9ff5121-78f9-4c3c-abfc-c1bc9dabbf5c.png)
-
 ### Performance of any RetailServer calls > 100ms
 
 ```kusto
@@ -81,7 +79,3 @@ new2
 | project apiAction, percentile_executionTimeMilliseconds_90
 | render columnchart
 ```
-
-![image](https://user-images.githubusercontent.com/45279749/130297275-db70c053-e2fb-4b1f-854f-05d551ff7af5.png)
-
-![image](https://user-images.githubusercontent.com/45279749/130297287-c82a8239-f0c6-4acc-b6ec-4cd87516344b.png)
