@@ -35,7 +35,7 @@ The order lookup module provides a form that customers can use to look up orders
 
 The following illustration shows an example of the form that is rendered by the order lookup module. When customers fill out the form and select **Find your order**, they are redirected to the order details page.
 
-![Form for the order lookup module on a page](./media/OrderLookup_module.PNG)
+![Form for the order lookup module on a page.](./media/OrderLookup_module.PNG)
 
 ## Order lookup module properties
 
