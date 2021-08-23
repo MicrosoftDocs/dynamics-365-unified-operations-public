@@ -39,7 +39,7 @@ A less known feature of the Azure Data Explorer is that it supports ingestion of
 4.	Open the file in Excel and save it without making any changes (this seems to fix a formatting issue).
 5.	In Azure Data Explorer, right-click on the cluster in the tree view and select **Ingest new data**. On the next page select **Ingest data from a local file**.
 
-    ![image](https://user-images.githubusercontent.com/45279749/130296578-7e957c4f-807f-47eb-bf8e-40b69b64a29b.png)
+    ![Select Ingest new data.](https://user-images.githubusercontent.com/45279749/130296578-7e957c4f-807f-47eb-bf8e-40b69b64a29b.png)
 
 6.	Pick your cluster, name a new table for the data to be imported into, select up to 10 CSV files to import, and select CSV format. Hit next a few times till your data is getting imported.
 
