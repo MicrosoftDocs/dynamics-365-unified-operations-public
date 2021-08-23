@@ -1005,7 +1005,11 @@
         - name: Planned maintenance window FAQ
           href: lifecycle-services/planned-maintenance-window-faq.md
       - name: Monitoring and diagnostics
-        href: lifecycle-services/monitoring-diagnostics.md
+        items:
+        - name: Monitoring and diagnostics tools
+          href: lifecycle-services/monitoring-diagnostics.md
+        - name: Use Azure Data Explorer to query raw information logs
+          href: lifecycle-services/azure-data-explorer.md
       - name: Restart environment services
         href: lifecycle-services/restart-environment-services.md
       - name: Report a production outage
