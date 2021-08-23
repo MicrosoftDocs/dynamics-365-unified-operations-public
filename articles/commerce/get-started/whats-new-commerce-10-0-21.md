@@ -4,7 +4,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.21 (October 2021)
 description: This topic describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.21. 
 author: josaw1
-ms.date: 08/02/2021
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
