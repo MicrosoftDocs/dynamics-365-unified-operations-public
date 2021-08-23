@@ -117,6 +117,13 @@ Planning Optimization doesn't use the following parameters or options on the **I
     - **Date changed** – Pending *Formula versions with Co/By products* support.
     - **Consume on-hand inventory** – Pending *Consumption of on-hand inventory* support.
 
+- **Lead time** tab:
+
+    - **Purchase time** – Planning Optimization uses this parameter for calculation but doesn't transfer calculated lead time to a planned order, pending *Calculation of the "lead time" and "Working days" fields on planned orders* support. Support released in the 2021-08-06 release of Planning Optimization service.
+    - **Production time** – Planning Optimization uses this parameter for calculation but doesn't transfer calculated lead time to a planned order, pending *Calculation of the "lead time" and "Working days" fields on planned orders* support. Support released in the 2021-08-06 release of Planning Optimization service.
+    - **Transfer time** – Planning Optimization uses this parameter for calculation but doesn't transfer calculated lead time to a planned order, pending *Calculation of the "lead time" and "Working days" fields on planned orders* support. Support released in the 2021-08-06 release of Planning Optimization service.
+    - **Working days** – Planning Optimization uses these parameters for calculation but doesn't transfer calculated parameter to a planned order, pending *Calculation of the "lead time" and "Working days" fields on planned orders* support. Support released in the 2021-08-06 release of Planning Optimization service.
+
 ## Master plans page
 
 Planning Optimization doesn't use the following parameters or options on the **Master plans** page:
@@ -180,9 +187,16 @@ Planning Optimization doesn't use the following parameter option on the **Releas
 
 Planning Optimization doesn't use the following parameter option on the **Default order settings** page:
 
+- **Purchase order** FastTab:
+
+    - **Purchase lead time** - Planning Optimization uses this parameter for calculation but doesn't transfer calculated lead time to a planned order, pending *Calculation of the "lead time" and "Working days" fields on planned orders* support. Support released in the 2021-08-06 release of Planning Optimization service.
+    - **Working days** - Planning Optimization uses this parameter for calculation but doesn't transfer calculated parameter to a planned order, pending *Calculation of the "lead time" and "Working days" fields on planned orders* support. Support released in the 2021-08-06 release of Planning Optimization service.
+
 - **Inventory** FastTab:
 
     - **Delivery date control** – Planning Optimization doesn't support the *CTP* option, pending *CTP* support.
+    - **Inventory lead time** - Planning Optimization uses this parameter for calculation but doesn't transfer calculated lead time to a planned order, pending *Calculation of the "lead time" and "Working days" fields on planned orders* support. Support released in the 2021-08-06 release of Planning Optimization service.
+    - **Working days** - Planning Optimization uses this parameter for calculation but doesn't transfer calculated parameter to a planned order, pending *Calculation of the "lead time" and "Working days" fields on planned orders* support. Support released in the 2021-08-06 release of Planning Optimization service.
 
 ## Working time calendars page
 
