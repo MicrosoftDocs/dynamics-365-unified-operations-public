@@ -93,7 +93,7 @@ Because an export from Excel can take some time, it is recommended that the expo
 
 ### Why is the Publish button in the Excel Add-in unavailable? 
 
-All key and required fields must be present to publish data back to the entity. Try to edit the design to add more fields to the binding. 
+Hover over the Publish button to get more information as to why publishing currently isn't supported. Typically when this occurs, it is because all key and required fields must be present to publish data back to the entity, in which case you should open the designer and make sure all the key fields are bound.  
 
 ### Why are the Excel Add-in, the Word Add-in, and the Open in Excel options only available when the Internet is available?
 
