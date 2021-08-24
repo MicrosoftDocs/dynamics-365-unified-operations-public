@@ -4,7 +4,7 @@
 title: Commerce Data Exchange implementation guidance
 description: This topic provides an overview of Commerce Data Exchange, including implementation tips, and overall guidance.
 author: jashanno
-ms.date: 05/11/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -115,7 +115,7 @@ This section describes configurations that you should consider when you begin to
     Additionally, it's helpful to have a "dummy" channel database group that can be used to configure new channel databases, registers that have offline support (in this case, offline databases will be created), and maybe even new but unused Commerce Scale Units (either Cloud or Self-hosted). Because this "dummy" group won't be associated with any distribution schedule jobs, no data generation will ever occur for anything that is associated with it. As time and the implementation progress, the associated entities (for example, channels \[stores\] and register offline databases) will be re-associated with the correct database group. A great alternative to this approach, and perhaps even an improvement, is to use the **Pause offline synchronization** feature that was described earlier.
 
 ### SQL Server versions and licenses 
-To learn more about the versions of SQL and how to use them, review the [Commerce offline implementation considerations and troubleshooting](implementation-considerations-offline.md) document.
+To learn more about the versions of SQL Server and how to use them, review [Commerce offline implementation considerations and troubleshooting](implementation-considerations-offline.md) document.
 
 ## Additional resources
 
