@@ -141,11 +141,11 @@ The underlying framework that is used to convert the data in the database during
 For details, see [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md).
 
 ### Data upgrade (sandbox environments)
-When data upgrade in a development environment is completed, the same process can be run in a sandbox environment. The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
+When data upgrade in a development environment is completed, you must perform data upgrade in a sandbox environment (Sandbox is deployed as [Self Service environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/infrastructure-stack)). The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
 
-The following illustration shows the process for running data upgrade in a sandbox environment. The difference here is that the bacpac tool is used instead of a traditional SQL backup. This tool is required in order to convert between Microsoft SQL Server and Azure SQL Database. It's a standard SQL tool, and isn't specific to Finance and Operations.
+The following illustration shows the process for running data upgrade in a sandbox environment. The difference here is that 'AX2012 Database Upgrade Toolkit' is used instead of a traditional SQL backup etc. This toolkit is required to move your AX 2012 data to Azure SQL Database (using SQL Transaction Replication) abd to perform the data upgrade also. 
 
-![Data upgrade in a sandbox environment](./media/data-upgrade-sandbox.png)
+![Data upgrade in a sandbox environment](./media/data-upgrade-sandbox_self service.png)
 
 For details, see [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md).
  
