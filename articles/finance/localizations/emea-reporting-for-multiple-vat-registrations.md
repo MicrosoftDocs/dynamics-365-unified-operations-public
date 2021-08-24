@@ -4,7 +4,7 @@
 title: Reporting for multiple VAT registrations
 description: This topic provides information about reporting for multiple value-added tax (VAT) registrations.
 author: anasyash
-ms.date: 08/11/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -318,11 +318,11 @@ All tax registrations have the same settings for EU sales list parameters.
 | **Release** | **Country** | **ER format** | **Link to topic** |
 |-------------|-------------|---------------|-------------------|
 | 10.0.19     | All         | Tax declaration model.version.85</br>Tax declaration model mapping.version.85.138|    |
-| 10.0.19     | NL          | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17| [VAT declaration (Netherlands)](/localizations/emea-nl-vat-declaration-netherlands.md)|
-| 10.0.20     | FR          | VAT Declaration Excel (FR).version.85.15| [VAT declaration (France)](/localizations/emea-fra-vat-declaration-preview-france.md) |
-| 10.0.21     | UK          | MTD VAT importing model mapping (UK).version.31.36</br>Tax declaration model mapping.version.95.158</br>VAT Declaration Excel (UK).version.32.30.16</br>VAT Declaration JSON (UK).version.32.31 | [Prepare for integration with MRD for VAT](/localizations/emea-gbr-mtd-vat-integration)   |
-| 10.0.21     | SE          | VAT Declaration XML (SE).version.95.11</br>VAT Declaration Excel (SE).version.95.11.13|    |
-| 10.0.21     | CH          | Tax declaration model.version.96</br>Tax declaration model mapping.version.96.164</br>VAT Declaration XML (CH).version.96.16</br>VAT Declaration Excel (CH).version.96.16.9 |   |
+| 10.0.19     | NL          | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17| [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md)|
+| 10.0.20     | FR          | VAT Declaration Excel (FR).version.85.15| [VAT declaration (France)](emea-fra-vat-declaration-preview-france.md) |
+| 10.0.21     | UK          | MTD VAT importing model mapping (UK).version.31.36</br>Tax declaration model mapping.version.95.158</br>VAT Declaration Excel (UK).version.32.30.16</br>VAT Declaration JSON (UK).version.32.31 | [Prepare for integration with MRD for VAT](emea-gbr-mtd-vat-integration.md)   |
+| 10.0.21     | SE          | VAT Declaration XML (SE).version.95.11</br>VAT Declaration Excel (SE).version.95.11.13| [VAT declaration (Sweden)](emea-swe-vat-declaration-sweden.md)   |
+| 10.0.21     | CH          | Tax declaration model.version.96</br>Tax declaration model mapping.version.96.164</br>VAT Declaration XML (CH).version.96.16</br>VAT Declaration Excel (CH).version.96.16.9 | [VAT declaration (Switzerland)](emea-che-vat-declaration-switzerland.md) |
 
 
 ## Generate a VAT declaration for multiple VAT registrations
