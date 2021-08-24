@@ -4,7 +4,7 @@
 title: Commerce Data Exchange best practices
 description: This topic describes data synchronization with Commerce Data Exchange (CDX) in a Microsoft Dynamics 365 Commerce environment.
 author: jashanno
-ms.date: 07/15/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
