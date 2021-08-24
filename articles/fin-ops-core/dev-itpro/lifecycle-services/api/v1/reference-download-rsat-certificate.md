@@ -45,7 +45,7 @@ Use the following GET endpoint to fetch the zip file for an environment's RSAT c
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /environmentinfo/v1/rsatdownload/project/{projectId}/
+GET /environmentinfo/v1/rsatdownload/project/{projectId}/environment/{environmentId}
 ```
 
 ## Request headers
