@@ -140,6 +140,19 @@ Skype integration is available for environments in the public cloud. For environ
 
 ## Troubleshooting issues
 
+### Issue: The Excel add-in loads but instead of showing data, it displays "Load applets" in the task pane. 
+
+**Issue:**  The Excel add-in loads but instead of showing data, it displays "Load applets" in the task pane. 
+
+**Explanation:** This issue usually occurs due to one of three reasons: (1) incorrect sign in, (2) add-in registration data has not been intialized in the environment, or (3) ODdata issues.  
+
+**Fix:** 
+1.  **Incorrect sign in***: The most likely cause of this issue is that the user is signed in as the wrong user. This can happen if the user has multiple accounts and the browser uses the wrong user context. Before trying any other fix, you should sign out of the add-in using the user menu in the upper right and then sign back into the add-in. If the issue continues to persist, please attempt the next fix ensuring registration data is properly intialized. 
+
+2.  **Registration data not initialized**: If the issue wasn't addressed by signing back into the add-in again, another potential cause of this issue is that the environment doesn't yet have its add-in data initialized. To check this, the admin can navigate to the **Office app parameters** page. For each of the **App parameters**, **Registered applets**, and **Registered resources** tabs on that page, verify that there is data populated in each tab. If any tab has an empty grid, click the appropriate **Initialize...** button on that tab. 
+
+3.  **OData issue**: If the issue persists after attempting the previous two fixes, then the final cause of this issue could be that the OData service, through which the add-in communicates with Finance and Operations, is having a problem and not returning the registration data to the add-in. Without that data, the add-in will fail to load applets. At this stage, you will need to open a ticket with Microsoft Support and include the **Application correlation ID** from the Excel add-in with the failed session. You can find this field under **Options**.
+
 ### Issue: During sign-in to the Excel Add-in, users receive an error message saying they "cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant"
 
 **Issue:** During sign in to the Excel Add-in, a user receives an error similar to the following: 
