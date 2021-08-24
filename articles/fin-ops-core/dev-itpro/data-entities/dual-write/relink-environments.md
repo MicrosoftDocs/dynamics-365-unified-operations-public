@@ -6,7 +6,6 @@ ms.date: 04/07/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom:
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-04-07

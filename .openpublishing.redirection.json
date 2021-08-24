@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/websearchax-retired.md",
+      "redirect_url": "/dynamics365",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/supply-chain/procurement/tasks/create-purchase-release-order-creating-purchase-order.md",
       "redirect_url": "create-purchase-release-order-purchase-agreement",
       "redirect_document_id": "false"
