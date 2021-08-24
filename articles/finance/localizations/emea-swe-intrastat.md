@@ -32,9 +32,9 @@ The following fields are included in the Swedish Intrastat declaration:
 
 Import the latest version of the following Electronic reporting (ER) configurations:
 
-    - Intrastat model
-    - Intrastat report
-    - Intrastat (SE)
+   - Intrastat model
+   - Intrastat report
+   - Intrastat (SE)
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
