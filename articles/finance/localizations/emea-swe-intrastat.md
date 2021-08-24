@@ -1,4 +1,21 @@
-﻿# Swedish Intrastat
+---
+# required metadata
+
+title: Swedish Intrastat
+description: This topic contains information about Intrastat reporting in Sweden.
+author: andosip
+ms.date: 8/24/2021
+ms.topic: article
+audience: Application User
+ms.reviewer: kfender
+ms.search.region: Global
+ms.author: v-aosipov
+ms.search.validFrom: 
+---
+
+# Swedish Intrastat
+
+[!include[banner](../includes/banner.md)]
 
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Swedish Intrastat declaration contains information about the trade of goods for reporting.
 
@@ -26,7 +43,7 @@ Import the latest version of the following Electronic reporting (ER) configurati
 
 -   Intrastat (SE)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?toc=/dynamics365/finance/toc.json).
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ## Set up foreign trade parameters
 
