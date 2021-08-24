@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Migrate Prospect to cash data from Data Integrator to dual-write
 description: This topic describes how to migrate Prospect to Cash data from Data Integrator to dual-write.
 author: RamaKrishnamoorthy
 ms.date: 01/04/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form:
-# ROBOTS:
 audience: Application User, IT Pro
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
-ms.custom:
-ms.assetid:
 ms.search.region: global
-ms.search.industry:
 ms.author: ramasri
-ms.dyn365.ops.version:
-ms.search.validFrom: 2021-01-04
-
 ---
 
 # Migrate Prospect to cash data from Data Integrator to dual-write

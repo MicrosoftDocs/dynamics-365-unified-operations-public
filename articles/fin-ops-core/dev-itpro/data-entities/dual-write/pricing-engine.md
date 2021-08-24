@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Sync on-demand with the Supply Chain Management pricing engine
 description: This topic describes how to use the pricing engine in Microsoft Dynamics 365 Supply Chain Management from Dynamics 365 Sales.
 author: RamaKrishnamoorthy
 ms.date: 03/10/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2020-03-10
-
 ---
 
 # Sync on-demand with the Supply Chain Management pricing engine

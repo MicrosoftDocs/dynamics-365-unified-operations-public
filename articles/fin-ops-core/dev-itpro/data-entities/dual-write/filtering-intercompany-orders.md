@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Filter intercompany orders to avoid syncing Orders and OrderLines
 description: This topic explains how to filter intercompany orders so that the Orders and OrderLines entities aren't synced.
 author:  negudava
 ms.date: 11/09/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: negudava
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2019-09-20
-
 ---
 
 # Filter intercompany orders to avoid syncing Orders and OrderLines

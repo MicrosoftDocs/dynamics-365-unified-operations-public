@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Switch between vendor designs
 description: This topic describes how to switch vendor data integration between Finance and Operations apps and Dataverse.
 author: RamaKrishnamoorthy 
 ms.date: 09/20/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2019-09-20
-
 ---
 
 # Switch between vendor designs

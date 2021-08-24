@@ -8,7 +8,6 @@ audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-01-06
 ---
 

@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Note integration
 description: This topic describes the integration of note data in dual-write.
 author: RamaKrishnamoorthy 
 ms.date: 02/22/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2021-02-22
-
 ---
 
 # Note integration
