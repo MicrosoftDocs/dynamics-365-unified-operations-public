@@ -35,7 +35,7 @@ After you have successfully completed upgrade testing in a Standard or Premier A
 
 The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
 
-![Cutover process](./media/cutover_1.png)
+![Cutover process](./media/cutover-selfservice.png)
 
 > [!NOTE]
 > In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
@@ -45,12 +45,12 @@ The following illustration shows the overall process for cutover to go-live as i
 The high-level steps of the production environment upgrade process are the same as the Mock cutover process, refer to [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md) for detailed instructions.
 
 
-1. Turn off the AX 2012 AOS instances
-2. Create a copy of the AX 2012 database. We strongly recommend that you use a copy, because you must delete some objects in the copy that will be exported.
-3. Export the copied database to a bacpac file by using a free SQL Server tool that is named SQLPackage.exe. This tool provides a special type of database backup that can be imported into SQL Database.
-4. Upload the bacpac file to Azure storage.
-5. Download the bacpac file to the Application Object Server (AOS) machine in the sandbox environment, and then import it by using SQLPackage.exe. You must then run a script against the imported database to reset the SQL database users.
-6. Run the appropriate data upgrade package against the imported database.
+1. Ensure all pre-requisites (e.g. preupgrade checklist etc.) are fulfilled and custom code is deployed in Sandbox. Sandbox must only be used for data upgrade.
+2. Use AX2012 Database Upgrade Toolkit for Dynamics 365 from LCS.
+3. Execute Replication setup from AX2012 before hand and keep monitoring it on regular basis.
+4. Turn off the AX 2012 AOS instances.
+5. Execute Cutover steps of AX2012 Database Upgrade Toolkit for Dynamics 365.
+6. Trigger Data upgrade using the toolkit and finish data upgrade.
 
 ## Prerequisites 
 Before you can perform an upgrade in the production environment the following prerequisites must be met:
@@ -60,11 +60,11 @@ Before you can perform an upgrade in the production environment the following pr
     - The Test phase of the methodology in LCS. This is to help ensure that you’re at the stage in your project where you’re ready to start testing in the production environment.
     - After a request is submitted to Microsoft to deploy the production environment, it will take roughly 24 hours to deploy, so ensure that you leave enough time for this to happen.
 -	Apply all necessary updates and customizations (AOT deployable packages) to the production environment. There should not be any code change after signing off on a Mock cutover.
--	To schedule an upgrade, request a timeslot with the DSE team by submitting “Other” type service requests from LCS as described in the [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md). This is to ensure that the preferred timeslots will be available for you. Be aware that there is significantly higher demand for slots during the weekend, so requesting these as far in advance as possible will help attain your preferred schedule.
+-	Use [Self-service database refresh process](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-refresh#self-service-database-refresh) to copy your upgraded database from the data upgrade sandbox environment into your production environment. 
 
 ## Related articles
 - [Onboarding](../../fin-ops/imp-lifecycle/onboard.md)
-- [Submit service requests to the Dynamics Service Engineering team](../lifecycle-services/submit-request-dynamics-service-engineering-team.md).
+- [Self-service database refresh process](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-refresh#self-service-database-refresh)
 - [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
