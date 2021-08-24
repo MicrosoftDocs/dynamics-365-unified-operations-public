@@ -63,7 +63,7 @@ To set up dual-write for an existing Dataverse environment, you must create a Mi
 
 ## Linking mismatch
 
-It is possible that your LCS environment is linked to one Dataverse instance, while your dual-write environment is linked to another Dataverse instance. This linking mismatch can cause unexpected behavior, and it could end up sending data to the wrong environment. The recommended environment to use for dual-write is the one that is created as part of Power Platform integration, and long-term, this will be the only way to establish a link between environments.
+It is possible that your LCS environment is linked to one Dataverse instance, while your dual-write environment is linked to another Dataverse instance. This linking mismatch can cause unexpected behavior, and it could end up sending data to the wrong environment. The recommended environment to use for dual-write is the one that is created as part of Power Platform integration, and long term, this will be the only way to establish a link between environments.
 
 If your environment has a linking mismatch, LCS displays a warning on your environment details page similar to "Microsoft has detected that your environment is linked via Dual-write to a different destination than specified in Power Platform Integration, which is not recommended":
 
@@ -72,6 +72,6 @@ If your environment has a linking mismatch, LCS displays a warning on your envir
 If you encounter this error there are two options, based on your needs:
 
 + [Unlink and relink dual-write environments (Reset or change linking)](relink-environments.md#scenario-reset-or-change-linking) as specified on your LCS environment details page. This is the ideal option, because you can run it without Microsoft support.  
-+ If want to keep your link in dual-write, you can ask for help from Microsoft Support to change the Power Platform integration to use your existing Dataverse environment as documented in the previous section.  
++ If you want to keep your link in dual-write, you can ask for help from Microsoft Support to change the Power Platform integration to use your existing Dataverse environment as documented in the previous section.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

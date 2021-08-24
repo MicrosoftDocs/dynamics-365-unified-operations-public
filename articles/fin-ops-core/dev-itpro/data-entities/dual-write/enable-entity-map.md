@@ -24,7 +24,7 @@ When you enable a table map for dual-write, it begins at the **Not running** sta
 
 While the status is **Running**, you can pause a table. All changes are then queued until you resume. When you resume, the table goes into "catch-up mode," where all the queued changes are played back.
 
-The following illustration show an example of a table that is paused.
+The following illustration shows an example of a table that is paused.
 
 ![Paused table.](media/stop-pause-entity.png)
 
