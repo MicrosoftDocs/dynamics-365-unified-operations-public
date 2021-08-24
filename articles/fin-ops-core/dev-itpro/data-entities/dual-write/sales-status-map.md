@@ -1,28 +1,13 @@
 ---
-# required metadata
-
 title: Set up the mapping for the sales order status columns
 description: This topic explains how to set up the sales order status columns for dual-write.
 author:  dasani-madipalli
 ms.date: 06/25/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: damadipa
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-06-25
 ---
 

@@ -1170,6 +1170,8 @@
           href: general-ledger/yec-mssng-open-blnces.md
         - name: Open financial journal templates in Office
           href: general-ledger/open-fincl-jrnls-in-office.md
+        - name: Journal posting failure due to imbalance
+          href: general-ledger/posting-fail-imbalance.md
         - name: Why can't I reverse this transaction?
           href: general-ledger/cant-reverse-transctns.md
     - name: Financial reporting
@@ -1540,40 +1542,60 @@
           items:
           - name: Tax Calculation overview
             href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-          - name: Get started with Tax Calculation
-            href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-          - name: Sales tax applicability and sales tax group determination logic
-            href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
-          - name: Tax feature support for transfer orders
-            href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
-          - name: Calculating tax on top of price when Prices include taxes is enabled
-            href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
-          - name: Add data fields in tax configurations
-            href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
-          - name: Add data fields in the tax integration by using extensions
-            href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-          - name: Set up an environment for master data lookup
-            href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
-          - name: Multiple VAT registration numbers
-            href: localizations/emea-multiple-vat-registration-numbers.md
-          - name: Reporting for multiple VAT registrations 
+          - name: Setup
             items:
+            - name: Get started with Tax Calculation
+              href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+            - name: Set up an environment for master data lookup
+              href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+          - name: Determination
+            items: 
+            - name: Sales tax applicability and sales tax group determination logic
+              href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+          - name: Calculation
+            items: 
+            - name: Calculate tax on prices when Prices include taxes is enabled
+              href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
+            - name: Tax calculation rounding rules
+              href: localizations/tax-calculation-rounding-rules.md
+          - name: Multiple VAT registration
+            items: 
+            - name: Multiple VAT registration numbers
+              href: localizations/emea-multiple-vat-registration-numbers.md
             - name: Reporting for multiple VAT registrations
               href: localizations/emea-reporting-for-multiple-vat-registrations.md
             - name: France reporting
               items: 
               - name: VAT declaration
-              href: localizations/emea-fra-VAT-declaration-preview-France.md
+                href: localizations/emea-fra-VAT-declaration-preview-France.md
             - name: Netherlands reporting
               items:
               - name: VAT declaration
                 href: localizations/emea-nl-vat-declaration-netherlands.md
               - name: EU sales list
                 href: localizations/emea-nl-eu-sales-list.md
+            - name: Sweden reporting
+              items:
+              - name: VAT declaration
+                href: localizations/emea-swe-VAT-declaration-Sweden.md
+            - name: Switzerland reporting
+              items: 
+              - name: VAT declaration
+                href: localizations/emea-che-vat-declaration-switzerland.md
             - name: United Kingdom reporting
               items:
               - name: Prepare for integration with MTD for VAT
                 href: localizations/emea-gbr-mtd-vat-integration.md
+          - name: Enable Tax Calculation for transfer order
+            items: 
+            - name: Tax feature support for transfer orders
+              href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+          - name: Extension
+            items: 
+            - name: Add data fields in tax configurations
+              href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
+            - name: Add data fields in the tax integration by using extensions
+              href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
       - name: Regulatory updates
         href: localizations/regulatory-updates.md
       - name: Australia
@@ -1730,6 +1752,8 @@
             href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
           - name: Set up NF-e parameters for a fiscal establishment
             href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+          - name: NT2020.005 – Layout and validation updates in the electronic fiscal document (NF-e)
+            href: localizations/latam-bra-nfe-nt2020.005.md
           - name: NT2020.006 – Intermediary sales digital platform for NF-e
             href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
           - name: NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e
@@ -2354,8 +2378,6 @@
                 href: localizations/apac-ind-gst-reference-groups.md
             - name: Tax transactions
               items: 
-              - name: GST TDS on payment of goods and services
-                href: localizations/ind-gst-tds-payment-goods-services.md
               - name: Purchase transactions
                 items:
                 - name: Purchases from unregistered vendors
@@ -2390,6 +2412,10 @@
                   href: localizations/apac-ind-GST-purchase-return-order.md
                 - name: Vendor advance payments where there are reverse charges
                   href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                - name: GST TDS on payment of goods and services
+                  href: localizations/ind-gst-tds-payment-goods-services.md
+                - name: GST TCS on payment of goods and services
+                  href: localizations/ind-gst-tcs-payment.md
               - name: Sales transactions
                 items:
                 - name: Sales of taxable goods to consumers
@@ -2668,6 +2694,8 @@
           href: localizations/emea-ita-exil-bank-accounts-setup.md
         - name: Italian Intrastat
           href: localizations/emea-ita-intrastat.md
+        - name: Post arrivals and dispatches for Intrastat
+          href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
         - name: Miscellaneous charges per kilogram in an Intrastat declaration
           href: localizations/emea-ita-exil-misc-charges-intrastat.md
         - name: Intent letters - Invoicing usual exporters
@@ -3152,14 +3180,16 @@
               href: localizations/rus-post-budget-fixed-asset-acquisition.md
             - name: Transfer fixed assets
               href: localizations/rus-fixed-asset-transfer.md
+            - name: Unified printing forms for fixed assets 
+              href: localizations/printing-forms-fixed-assets.md
+            - name: Inquiries and reports 
+              href: localizations/rus-fa-inquiries-reports.md
           - name: Not valuable fixed assets, and working clothes
             items:
             - name: Not valuable fixed assets (NVFAs) (Russia)
               href: localizations/rus-not-valuable-assets.md
             - name: Working clothes/special rigging accounting (Russia)
               href: localizations/rus-working-clothes-instruments-accounting.md
-            - name: Unified printing forms for fixed assets 
-              href: localizations/printing-forms-fixed-assets.md
         - name: Accounts payable and receivable
           items:
           - name: Credit note corrections (Russia)
@@ -3342,6 +3372,10 @@
           href: localizations/emea-swe-payment-formats-import.md
         - name: Sales tax payment report for Sweden
           href: localizations/emea-swe-sales-tax-payment-report-sweden.md
+        - name: VAT declaration for Sweden
+          href: localizations/emea-swe-VAT-declaration-Sweden.md
+        - name: Swedish Intrastat
+          href: localizations/emea-swe-intrastat.md
       - name: Switzerland
         items:
         - name: Switzerland overview
@@ -3350,6 +3384,8 @@
           href: localizations/emea-che-esr-customer-payments-import.md
         - name: Swiss QR-bills
           href: localizations/emea-che-swiss-qr-bills.md
+        - name: VAT declaration
+          href: localizations/emea-che-VAT-declaration-Switzerland.md
       - name: Thailand
         items:
         - name: Thailand overview
@@ -4181,6 +4217,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json 
           - name: Configure LOOKUP data sources to use ER application-specific parameters
             href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json 
+          - name: Use DATA COLLECTION data sources in ER formats
+            href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json 
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
         - name: Configure model mappings
@@ -4249,6 +4287,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
           - name: Configure action-dependent destinations
             href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
+          - name: Configure print management record-specific ER destinations
+            href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/finance/toc.json
         - name: Set up a reference to an ER format
           href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
         - name: Automatically validate generated reports
@@ -4297,6 +4337,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
           - name: Application update 10.0.19
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
+          - name: Application update 10.0.21
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
         - name: Specify a custom storage location for generated documents 
           items:
           - name: Subscribe to an event to request a response from subscribing handler
@@ -4307,6 +4349,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
         - name: Initiate data source values of the USER INPUT PARAMETER type from source code
           href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
+        - name: Change code to enable users to configure and use named ER destinations
+          href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
     - name: Mobile app
       items:
       - name: Mobile app home page

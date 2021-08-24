@@ -3,7 +3,7 @@
 
 title: Data entities overview
 description: This topic describes data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["22051", "intro-internal"]
 ms.assetid: 89ee656f-3a91-42cd-a189-11744cd2415b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -91,6 +91,8 @@ Find the right online training, in person workshops, and events for your role as
 
     [Core platform knowledge](learning-catalog-administrator.md#core-platform-knowledge)
 
+    [Supply Chain Management](learning-catalog-administrator.md#scm)
+
     [Core development](learning-catalog-administrator.md#core-development)
 
     [Migration and upgrade](learning-catalog-administrator.md#migration-and-upgrade)

@@ -2,7 +2,7 @@
 title: Regression suite automation tool installation and configuration
 description: This topic contains information about how to install and configure the Regression suite automation tool (RSAT).
 author: FrankDahl
-ms.date: 01/15/2021
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -67,7 +67,7 @@ RSAT requires Selenium and web browser driver libraries. RSAT will prompt you if
 
 ![Browser driver.](media/driver-2.png)
 
-RSAT uses [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip). The Webdriver library and browser-specific drivers are downloaded to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
+RSAT uses [Selenium 3.13.1](https://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip). The web driver library and browser-specific drivers are downloaded to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
 
 ## Configuration
 
@@ -92,7 +92,7 @@ Configure your connection to the Azure DevOps project and test plan.
     > [!NOTE]
     > If you're using Azure DevOps Server, add **/DefaultCollection** to the end of your Azure DevOps URL.
 
-+ **Access Token** - The access token that allows the tool to connect to Azure DevOps. You need to create a personal access token or use an existing one that you have saved. For more information, see [Authenticate access with personal access tokens](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate).
++ **Access Token** - The access token that allows the tool to connect to Azure DevOps. You need to create a personal access token or use an existing one that you have saved. It is recommended you create this with scope selected as Full Access. For more information, see [Authenticate access with personal access tokens](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat).
 + **Project Name** - The name of your Azure DevOps project. RSAT will automatically detect project names and test plans available based the Azure DevOps URL specified. You can then select the Test Project and Test Plan.
 + **Test Plan** - The Azure DevOps test plan that contains your test cases. For more information, see [Create test plans and test suites](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan).
 
@@ -182,7 +182,7 @@ After creating the certificate, configure AOS to trust the test automation conne
 
 #### If you have no Remote Desktop access to the server
 
-In cases where your Remote Desktop Protocol (RDP) access is removed, such as Microsoft-managed or self-service type sandboxes, Microsoft will generate the certificate for your environment and have it pre-configured. Follow these steps to retrieve the RSAT certificate and use it.
+In cases where your Remote Desktop Protocol (RDP) access is removed, such as Microsoft-managed or self-service type sandboxes, Microsoft will generate the certificate for your environment and have it pre-configured. Follow these steps to retrieve the RSAT certificate and use it using the LCS user interface. For automation, there is information on the [Fetch an environment's RSAT certificate in a zip file](../../lifecycle-services/api/v1/reference-download-rsat-certificate.md) API reference page.
 
 1. Under **Maintain** on your environment details page in Lifecycle Services you'll see two new options.
 
@@ -208,7 +208,7 @@ Use the **Download** button to retrieve the certificate bundle as a .zip file.
 6. Double-click the certificate file to open it. Browse to the **Details** tab, and scroll down until you see the **Thumbprint** section. Select **Thumbprint**, and note the ID in the text box. Select or paste this thumbprint in RSAT settings.
 ![Thumbprint settings.](media/rsat-lcs4.png)
 
-You can now run your tests against the environment using this certificate. The certificate will be autorotated by Microsoft before it expires, at which time you will need to download a new version of this certificate starting from step 1 above. For self-service environments, this will be rotated every 90 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
+You can now run your tests against the environment using this certificate. The certificate will be autorotated by Microsoft before it expires, at which time you will need to download a new version of this certificate starting from step 1 above. For self-service environments, this will be rotated every 60 days during a downtime window that is closest to the expiry. These downtime windows include customer initiated package deployment, and database movement operations that target the environment.
 
 ## Manual configuration of authentication certificates
 

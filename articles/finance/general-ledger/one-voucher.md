@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 8.0.2
 # One voucher
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## What is One voucher?
@@ -86,7 +87,7 @@ Based on conversations with customers, Microsoft has compiled the following list
 
 The following scenarios can be accomplished only by using the One voucher functionality. If your organization has any of these scenarios, you must enable multiple transactions to be entered in a voucher by changing the setting of the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page. These functional gaps will be filled through other features in later releases.
 
-> [!Note]
+> [!NOTE]
 > [For each of the following scenarios the **Allow multiple transactions within one voucher** field must be set to Yes in the **General** FastTab on the **General ledger parameters** page.]
 
 ### Post vendor or customer payments in summary form to a bank account
@@ -120,15 +121,7 @@ In this scenario, the customers in the single voucher are the same customer, bec
 If the Reimbursement periodic task is run from the Accounts receivable module, it creates a transaction to move the balance from a customer to a vendor. For this scenario, One voucher must be used to reimburse the customer.
 
 ### Fixed asset maintenance: Catch-up depreciation, split asset, calculate depreciation on disposal
-The following fixed asset transactions also create multiple transactions in a single voucher:
-
-- An additional acquisition is made on an asset, and "catch-up" depreciation is calculated.
-- An asset is split.
-- A parameter to calculate depreciation on disposal is turned on, and then the asset is disposed of.
-- An asset's service date is before the acquisition date. Therefore, a depreciation adjustment is posted.
-
-> [!Note]
-> When you are entering transactions, be sure that all the transactions apply to the same fixed asset. The voucher won't be posted if it includes more than one fixed asset, even if the **New Voucher** field is set to One voucher number only on the **Journal names** page in General ledger. If you include more than one fixed asset in the voucher, the message **There can only be one fixed asset transaction per voucher** will be displayed and you won't be able to post the voucher.  
+With version 10.0.21 and later, fixed assets transactions for catch-up depreciation, splitting an asset, and calculating depreciation for the disposal of an asset will be created using different voucher numbers.
 
 ### Bills of exchange and promissory notes
 Bills of exchange and promissory notes require that One voucher be used, because the transactions move the customer or vendor balance from one Accounts receivable/Accounts payable ledger account to another, based on the state of the payment.

@@ -2,7 +2,7 @@
 title: Planning Optimization release process and release history
 description: This topic provides information about the release process and release history for Planning Optimization.
 author: crytt
-ms.date: 7/28/2021
+ms.date: 8/17/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -28,7 +28,8 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release date |
 |---|---|---|
-| <p>Resource type requirements for infinite capacity scheduling</p><p>Resource efficiency and calendar efficiency for infinite capacity scheduling</p><p>For more information, see [Scheduling with infinite capacity](infinite-capacity-planning.md). | <p>Available in feature management as of version 10.0.20.</p><p>Feature name: *Infinite capacity scheduling for Planning Optimization*</p> | July 6, 2021 |
-| General quality improvements | No feature management is required. | July 6, 2021 |
+| <p>Added **Lead time** field to planned orders.</p><p>General performance, quality, and stability improvements.</p> | No feature management is required. | August 16, 2021 |
+| <p>Added resource type requirements for infinite capacity scheduling.</p><p>Improved resource efficiency and calendar efficiency for infinite capacity scheduling.</p><p>For more information, see [Scheduling with infinite capacity](infinite-capacity-planning.md). | <p>Available in feature management as of version 10.0.20.</p><p>Feature name: *Infinite capacity scheduling for Planning Optimization*</p> | July 6, 2021 |
+| General quality improvements. | No feature management is required. | July 6, 2021 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
