@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax isn't calculated
-description: This topic provides troubleshooting information that can help when when tax isn't calculated on tax documents.
+description: This topic provides troubleshooting information that can help when tax isn't calculated on tax documents.
 author: peter-xu
 manager: beya
 ms.date: 04/29/2021

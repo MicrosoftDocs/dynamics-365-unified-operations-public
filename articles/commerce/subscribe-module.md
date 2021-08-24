@@ -27,7 +27,6 @@ ms.dyn365.ops.version: Release 10.0.8
 # Subscribe module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers subscribe modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

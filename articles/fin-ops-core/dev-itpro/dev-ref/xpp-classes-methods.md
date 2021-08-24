@@ -3,10 +3,8 @@ title: Classes and methods
 description: This topic describes how to create and use classes in X++.
 author: RobinARH
 ms.date: 06/17/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150303
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28

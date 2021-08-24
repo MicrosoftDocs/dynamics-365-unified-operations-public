@@ -3,7 +3,7 @@
 
 title: Data management and integration by using data entities overview
 description: This topic provides a brief overview of the mechanics of synchronous and asynchronous integration.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["26441", "intro-internal"]
 ms.assetid: 8aa25787-5920-4277-acff-7011200133f4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -3,8 +3,8 @@
 
 title: Fixed asset transaction options
 description: This topic describes the different methods available to create fixed asset transactions.
-author: ShylaThompson
-ms.date: 02/07/2019
+author: moaamer
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Fixed asset transaction options
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes the different methods available to create fixed asset transactions.
 
@@ -51,7 +52,7 @@ When a purchase order or the Inventory to fixed assets journal is used to acquir
 ## General ledger
 Any fixed asset transaction type can be posted in the General journal page. You can also use journals in Fixed assets to post fixed asset transactions.
 
-## Options for entering fixed asset transaction types
+### Options for entering fixed asset transaction types
 
 
 | Transaction type                    | Module                   | Options                                   |
@@ -63,13 +64,25 @@ Any fixed asset transaction type can be posted in the General journal page. You 
 | Depreciation                        | Fixed assets             | Fixed assets                              |
 |                                     | General ledger           | General journal                           |
 | Disposal                            | Fixed assets             | Fixed assets                              |
-| ** **                               | General ledger           | General journal                           |
-| ** **                               | Accounts receivable      | Free text invoice                         |
+|                                     | General ledger           | General journal                           |
+|                                     | Accounts receivable      | Free text invoice                         |
 
-
-The Depreciation periods remaining value of the fixed asset is not updated when a depreciation transaction type journal line is manually created or imported through a data entity. This value is updated when the depreciation proposal process is used to create the journal line.
+The remaining value isn't updated for the depreciation periods of a fixed asset when a depreciation transaction type journal line is created manually or imported through a data entity. The remaining value is updated when the depreciation proposal process is used to create the journal line.
 
 For more information, see [Fixed assets integration](fixed-asset-integration.md).
 
+The system prevents posting depreciation to the same period twice. For example, if two users create depreciation proposals separately for January, the depreciation from the first user will be posted in the first journal. When the second user posts depreciation in the second journal, the system checks the date that depreciation was last run and will not post depreciation for the same period a second time.
+
+### Transactions that require a different voucher number
+
+The following Fixed assets transactions will use different voucher numbers:
+
+- An additional acquisition is made on an asset, and "catch-up" depreciation is calculated.
+- An asset is split.
+- A parameter to calculate depreciation on disposal is turned on, and then the asset is disposed of.
+- An asset's service date is before the acquisition date. Therefore, a depreciation adjustment is posted.
+
+> [!NOTE]
+> When you enter transactions, be sure that all the transactions apply to the same fixed asset. A voucher won't be posted if it includes more than one fixed asset, even if the **New Voucher** field is set to **One voucher number only** on the **Journal names** page in General ledger. If you include more than one fixed asset in the voucher, the message you'll recieve the message, "There can only be one fixed asset transaction per voucher," and you won't be able to post the voucher.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

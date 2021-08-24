@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Release 10.0.20
 # Create returns in POS
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce point of sale (POS) app.
 

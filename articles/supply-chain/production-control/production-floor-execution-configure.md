@@ -75,8 +75,6 @@ This feature adds an asset management tab to the production floor execution inte
 
 ### Enable job search
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 This feature makes it possible to add a search field to the jobs list. Workers can find a specific job by entering the job ID or find all jobs for a specific order by entering the order ID. Workers can enter the ID by using a keypad or by scanning a bar code. If you'd like to use it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Job search for the production floor execution interface

@@ -83,6 +83,8 @@ When you export a database backup from an environment, some elements of the data
 * All batch jobs are set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the **SysEmailSMTPPassword** table.
+* [Maintenance mode](../sysadmin/maintenance-mode.md) settings will be disabled even if it was enabled in source.
+* Dual-write configuration.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 
 
 ### Known issues

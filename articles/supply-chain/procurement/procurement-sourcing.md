@@ -82,8 +82,7 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Create a purchase order for a one-time supplier](tasks/create-purchase-order-one-time-supplier.md)
 -   [Create a purchase order with a delivery schedule](tasks/create-purchase-order-delivery-schedule.md)
 -   [Create a purchase return order](tasks/create-purchase-return-order.md)
--   [Create a purchase release order from a purchase agreement](tasks/create-purchase-release-order-purchase-agreement.md)
--   [Create a purchase release order when creating the purchase order](tasks/create-purchase-release-order-creating-purchase-order.md)
+-   [Apply a purchase agreement when creating a purchase order](tasks/create-purchase-release-order-purchase-agreement.md)
 -   [Create a consignment replenishment order](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## Prices and discounts
