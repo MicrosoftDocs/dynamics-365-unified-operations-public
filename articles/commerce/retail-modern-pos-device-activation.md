@@ -229,9 +229,9 @@ The device should now be activated and ready to use.
 
 ### Troubleshoot installation
 
-- When Modern POS is in use, and the POS switches to offline during a transaction, an error stating **Cart version has changed** appears.
+- When Modern POS is in use and the POS switches offline during a transaction, the following error displays, "Cart version has changed".
 
-    **Solution:** Select to close and continue working as normal.  This is a known issue that is currently being repaired but will take time due to the complexity and breadth of the issue. This error does not actually cause any harm, only the inconvenience of having to close the message.
+    **Solution:** Select to close and continue working. This is a known issue that is currently being investigated. This error does not produce any issues.
 
 - Your browser blocks the download pop-up that is generated.
 
