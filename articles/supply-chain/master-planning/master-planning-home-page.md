@@ -89,7 +89,7 @@ Additional help is available as task guides. To access task guides, click the **
 
 - [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 - [Master planning - tips and tricks for troubleshooting performance](https://youtu.be/7v8BPmEs9Dg)
-- [Help! MRP is slow!](https://youtu.be/RLXybx20B5o)
+- [MRP performance tuning](https://youtu.be/RLXybx20B5o)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
