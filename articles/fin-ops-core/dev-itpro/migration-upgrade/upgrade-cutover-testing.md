@@ -40,13 +40,11 @@ There are three main workstreams during a cutover:
 
 The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
 
-![Cutover process](./media/cutover_1.png)
+![Cutover process](./media/cutover-selfservice.png)
 
-The mock cutover process is very similar to a basic data upgrade validation in a sandbox environment. We assume that you are familiar with that process, and have already performed it. Mock cutover differs in the following ways:
+The mock cutover process is very similar to data upgrade validation in a sandbox environment. We assume that you are familiar with that process, and have already performed it. Mock cutover differs in the following ways:
 
-- After you perform a data upgrade in the sandbox environment, a LCS other type service requests is needed to copy your upgraded database from the data upgrade sandbox environment into your production environment. The email template below is provided for your use
->[!Copy]
->This is a request for 2012 data upgrade database copy from the sandbox environment <source sandbox environment name> to production. I acknowledge that this will overwrite the database currently in production.
+- After you perform a data upgrade in the sandbox environment, use [Self-service database refresh process](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-refresh#self-service-database-refresh) to copy your upgraded database from the data upgrade sandbox environment into your production environment. 
 
 - We added the following tasks:
     - Perform a smoke test.
@@ -67,7 +65,7 @@ During cutover testing, the technical team is focused on performance and reliabi
 > [!NOTE]
 > For the technical workstream, the cutover testing process is the same as the high-level steps of the actual/go-live cutover process.
 
-For the technical workstream, the cutover testing process is the same described in [Upgrade from AX 2012 - Data upgrade in sandbox environments](upgrade-data-sandbox.md).
+For the technical workstream, the cutover testing process is the same described in [Upgrade from AX 2012 - Data upgrade in self service sandbox environments](data-upgrade-self-service.md).
 
 ## Functional workstream
 
