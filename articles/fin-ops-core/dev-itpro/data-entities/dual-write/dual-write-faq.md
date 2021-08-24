@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Dual-write FAQ
 description: This topic answers frequently asked questions about dual-write.
 author: robinarh
 ms.date: 07/21/2020
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: Developer
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
-ms.custom: 21311
-ms.assetid:
 ms.search.region: Global
-# ms.search.industry:
 ms.author: rhaertle
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Dual-write FAQ
