@@ -60,14 +60,14 @@ The following example shows the addition of a **slots** section that contains tw
         "slot1": {
             "friendlyName": "Content Slot 1",
             "description": "Content to be rendered in container. Max 2",
-            "allowedTypes": ["*"],
+            "allowedTypes": "*",
             "max": 2,
             "min": 0
         },
         "slot2": {
             "friendlyName": "Content Slot 2",
             "description": "Content to be rendered in container. Max 2",
-            "allowedTypes": ["*"],
+            "allowedTypes": "*",
             "max": 2,
             "min": 0
         }
