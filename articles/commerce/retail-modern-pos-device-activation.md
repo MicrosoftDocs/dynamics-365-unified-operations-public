@@ -4,7 +4,7 @@
 title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
-ms.date: 05/11/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -324,9 +324,9 @@ The device should now be activated and ready to use.
 
     **Solution:** Verify that the Azure AD user is mapped to a worker who has POS permission to activate devices. The **Manage device** permission for the worker should be set to **Yes**.
 
-- For MPOS on Andriod devices, the device activation and Azure AD based POS logon open Azure AD sign-in page in a standalone browser instance, and the logon is not proceeded.
+- For Modern POS on Android devices, the device activation and Azure AD-based POS sign-in open the Azure AD sign-in page in a standalone browser instance, and the sign-in process does not proceed.
     
-    **Solution:** Verify if your CSU is in version 10.0.22 and later but MPOS is in version 10.0.21 and earlier. If so, please rebuild MPOS from latest Commerce sample repository (in version 10.0.22 and later), then update MPOS application in Android device.
+    **Solution:** Check whether your Commerce Scale Unit is version 10.0.22 or later and that Modern POS is version 10.0.21 or earlier. If so, you must rebuild Modern POS from the latest Commerce sample repository (version 10.0.22 or later) and then update the Modern POS application on the Android devices.
 
 - Device activation isn't completed. It fails during one of the steps.
 
