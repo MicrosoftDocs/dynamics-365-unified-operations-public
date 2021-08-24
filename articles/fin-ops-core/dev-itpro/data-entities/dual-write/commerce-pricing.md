@@ -8,6 +8,7 @@ audience: Application User, IT Pro
 ms.reviewer: v-chgri
 ms.search.region: global
 ms.author: shajain
+ms.search.validFrom: 2020-01-06
 ---
 
 # Use the Dynamics 365 Commerce pricing engine with Dynamics 365 Sales

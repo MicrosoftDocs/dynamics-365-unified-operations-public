@@ -8,6 +8,7 @@ audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
+ms.search.validFrom: 2020-01-06
 ---
 
 # Troubleshoot live synchronization issues

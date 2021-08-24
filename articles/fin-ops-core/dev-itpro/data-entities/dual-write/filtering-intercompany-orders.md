@@ -8,6 +8,7 @@ audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: negudava
+ms.search.validFrom: 2020-01-06
 ---
 
 # Filter intercompany orders to avoid syncing Orders and OrderLines

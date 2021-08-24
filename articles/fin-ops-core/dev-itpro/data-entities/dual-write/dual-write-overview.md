@@ -9,6 +9,7 @@ ms.reviewer: rhaertle
 ms.custom: "intro-internal"
 ms.search.region: global
 ms.author: ramasri
+ms.search.validFrom: 2020-01-06
 ---
 
 # Dual-write overview
