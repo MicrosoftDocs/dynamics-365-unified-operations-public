@@ -4,7 +4,7 @@
 title: GST declaration for New Zealand
 description: This topic explains how to configure and generate the GST return form GST101A for New Zealand.
 author: sndray
-ms.date: 08/06/2021
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: 10.0.22
 # GST declaration form GST101A for New Zealand (NZ-00003)
 
 [!include [banner](../includes/banner.md)]
+
 [!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to set up and generate the GST return form GST101A for legal entities in New Zealand.
@@ -71,41 +72,44 @@ The GST declaration form includes a set of boxes (lines) that correspond to spec
 
 The application-specific parameters option lets you to establish the criteria of how the tax transactions will be collected and calculated in each box of the declaration form when the report is generated depending on the configuration of sales tax code. Complete the following steps to set the criteria.
 
-1. In the **Electronic reporting** workspace, select the format, and then select **Configurations > Setup** to set up the rules to identify the tax transaction in the related box of the GST return form.
+1. In the **Electronic reporting** workspace, select the format, and then select **Configurations** > **Setup** to set up the rules to identify the tax transaction in the related box of the GST return form.
 2. Select the current version and on the **Lookups** FastTab, select the lookup name **ReportFieldLookup**. This lookup identifies the list of boxes in the GST form that are required by the tax authority.
-3. On the **Conditions** FastTab, select **Add**, and in the new line in the **Lookup result** column, select the related line of the GST return form.
+3. On the **Conditions** FastTab, select **Add**, and in the **Lookup result** column of the new line, select the related line of the GST return form.
 4. In the **Tax code (Code)** column, select the sales tax code that is used to calculate the related line of GST return form.
 5. In the **Name** column, select the tax transaction classification where the sales tax code is used.
 6. Repeat steps 3-5 for all GST return form boxes (lines) and the combination of sales tax code and tax transaction types configured in your legal entity.
 7. Select **Add** again, and then follow these steps to include the final record line: 
-   - In the Lookup result column, select **NA**. 
+   
+   - In the **Lookup result** column, select **NA**. 
    - In the **Tax code (Code)** column, select **Not blank**. 
-   - In the **Name** column, select Not blank.
-By adding this last record (NA), you define the following rule: When the tax code and name that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in the GST return form. Although this rule is not used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration.
+   - In the **Name** column, select **Not blank**.
+   
+   By adding this last record (NA), you define the following rule: When the tax code and name that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in the GST return form. Although this rule isn't used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration.
+   
 8. In the **State** field, select **Completed**, and then select **Save**.
-9. Close the Application specific parameters page.
+9. Close the **Application specific parameters** page.
  
  ![GST101A declararion setup.](media/apac-nzl-gst-declaration-setup.JPG)
  
-The following table represent an example of how the user needs to configure these parameters to establish the configuration between the different boxes in the declaration form and sales tax code configuration implemented in Finance.
+The following table provides an example of how to configure these parameters to establish the configuration between the different boxes in the declaration form and sales tax code configuration implemented in Finance.
 
 |     Lookup result    |     Lookup description                                     |     Line    |     Tax code (Code)    |     Name                  |
 |----------------------|------------------------------------------------------------|-------------|------------------------|---------------------------|
-|     Box_5            |     Total   sales and income for the period                |     1       |     GST15%             |     Sales                 |
-|     Box_5            |     Total   sales and income for the period                |     2       |     GST15%             |     SalesCreditNote       |
-|     Box_6            |     Zero-rated   supplies included in Box 5                |     3       |     GST0%              |     Sales                 |
-|     Box_6            |     Zero-rated   supplies included in Box 5                |     4       |     GST0%              |     SalesCreditNote       |
-|     Box_9            |     Adjustments   from your calculation sheet              |     5       |     GSTADJ             |     Sales                 |
-|     Box_9            |     Adjustments   from your calculation sheet              |     6       |     GSTADJ             |     SalesCreditNote       |
-|     Box_11           |     Total   purchases and expenses                         |     7       |     GST15%             |     Purchase              |
-|     Box_11           |     Total   purchases and expenses                         |     8       |     GST15%             |     PurchaseCreditNote    |
-|     Box_13           |     Credit   adjustments from your calculation sheet 13    |     9       |     GSTADJ             |     Purchase              |
-|     Box_13           |     Credit   adjustments from your calculation sheet 13    |     10      |     GSTADJ             |     PurchaseCreditNote    |
-|     NA               |     Not   applicable                                       |     11      |     *Not   blank*      |     *Not   blank*         |
+|     Box_5            |     Total sales and income for the period                  |     1       |     GST15%             |     Sales                 |
+|     Box_5            |     Total sales and income for the period                  |     2       |     GST15%             |     SalesCreditNote       |
+|     Box_6            |     Zero-rated supplies included in Box 5                  |     3       |     GST0%              |     Sales                 |
+|     Box_6            |     Zero-rated supplies included in Box 5                  |     4       |     GST0%              |     SalesCreditNote       |
+|     Box_9            |     Adjustments from your calculation sheet                |     5       |     GSTADJ             |     Sales                 |
+|     Box_9            |     Adjustments from your calculation sheet                |     6       |     GSTADJ             |     SalesCreditNote       |
+|     Box_11           |     Total purchases and expenses                           |     7       |     GST15%             |     Purchase              |
+|     Box_11           |     Total purchases and expenses                           |     8       |     GST15%             |     PurchaseCreditNote    |
+|     Box_13           |     Credit adjustments from your calculation sheet 13      |     9       |     GSTADJ             |     Purchase              |
+|     Box_13           |     Credit adjustments from your calculation sheet 13      |     10      |     GSTADJ             |     PurchaseCreditNote    |
+|     NA               |     Not applicable                                         |     11      |     *Not blank*        |     *Not blank*           |
 
-To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the second row in the above table was not included in the configuration, then you will facing some errors when the report is generated because there is a credit note (sales invoice) with sales tax code = GST15% posted in the related period . We recommend using the **Tax > Inquire > Posted sales tax** menu to review all posted sales tax codes and those that are not included in this mapping of the configuration.
+To avoid issues when the report is generated, create all mappings where the sales tax codes are posted. For example, if the second row in the table above was not included in the configuration, there will be some errors when the report is generated because there is a credit note (sales invoice) with sales tax code that's equal to GST15% posted in the related period. We recommend going to **Tax** > 88Inquire** > **Posted sales tax** to review all posted sales tax codes and those that aren't included in this mapping of the configuration.
 
-The following table provides the available values in the **Name** column. This information will help you understand how the tax transactions are classified and assigned to the related sales tax code.
+The following table provides the available values in the **Name** column. This information helps you understand how the tax transactions are classified and assigned to the related sales tax code.
 
 | Classifier value                | Condition |
 |---------------------------------|-----------|
@@ -126,24 +130,23 @@ The following table provides the available values in the **Name** column. This i
 
 
 ## Set up General ledger parameters
+To generate the GST return form report in PDF format, define an ER format on the **General ledger parameters** page.
 
-To generate the GST return form report in PDF format you must define an ER format on the General ledger parameters page.
-
-1. Go to **Tax > Setup > General ledger parameters**.
-2. On the **Sales tax** tab, in the Tax options section, in the VAT statement format mapping field, select **GST101A Declaration PDF(NZ)**. If you leave the VAT statement format mapping field blank, the standard sales tax report will be generated in SSRS format.
+1. Go to **Tax** > **Setup** > **General ledger parameters**.
+2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **GST101A Declaration PDF(NZ)**. If you leave the **VAT statement format mapping** field blank, the standard sales tax report will be generated in SSRS format.
 
 
 # Generate a GST return report
-The process of preparing and submitting a GST return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see Sales tax overview (https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview)
+The process of preparing and submitting a GST return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see Sales tax overview (../general-ledger/indirect-taxes-overview.md)
 
 Follow these steps to generate the tax declaration report.
 
-1. Go to **Tax > Declarations > Sales tax > Report sales tax for settlement period** or **Settle and post sales tax**
+1. Go to **Tax** > **Declarations** > **Sales tax** > **Report sales tax for settlement period** or **Settle and post sales tax**
 2. Select the **Settlement period**.
-3. Select the **From date** and **To date**
+3. Select a value in the **From date** and **To date** fields.
 4. Select the **Sales tax payment version**.
-5. Select the **Due date** . This option is available when the sales tax payment is posted.
-7. Select **OK** to confirm the above steps. 
+5. In the **Due date** field, select a due date. This option is available when the sales tax payment is posted.
+7. Select **OK**. 
  
 
 
