@@ -51,6 +51,18 @@ Physical name: mshr_payrollfixedcompensationplanentity.
 | **Currency**<br>mshr_currency<br>*String* | Read-only <br>Required |The currency defined for the fixed compensation plan   |
 | **Personnel number**<br>mshr_personnelnumber<br>*String* | Read-only<br>Required |The employee's unique personnel number.  |
 
+## Relations
+
+|Property value | Related entity | Navigation Property | Collection type |
+| --- | --- | --- | --- |
+| _mshr_fk_employment_id_value | mshr_hcmemploymentdetailentity | mshr_FK_Employment_id | - |
+| _mshr_fk_fixedcompplan_id_value | mshr_payrollfixedcompensationplanentity | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Employee |
+| _mshr_fk_name_id_value | mshr_dirpersonnamehistoricalentity | mshr_FK_Name_id | - |
+| _mshr_fk_worker_id_value | mshr_hcmworkerbaseentity | mshr_FK_Worker_id | - |
+| _mshr_fk_workerbankaccount_id_value | mshr_hcmworkerbankaccountentity | mshr_FK_WorkerBankAccount_id |
+| _mshr_fk_variablecompaward_id_value | mshr_payrollvariablecompensationawardentity | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_Employee |
+| _mshr_fk_address_id_value | mshr_payrollworkeraddressentity | mshr_FK_Address_id | mshr_FK_PayrollWorkerAddressEntity_Worker |
+
 ## Example query
 
 **Request**
