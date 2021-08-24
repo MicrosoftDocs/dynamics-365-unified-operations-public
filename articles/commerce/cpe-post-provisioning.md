@@ -144,6 +144,9 @@ After the provisioning and configuration steps are completed, you can start to u
 
 To configure optional features for your Commerce evaluation environment, see [Configure optional features for a Commerce evaluation environment](cpe-optional-features.md).
 
+> [!NOTE]
+> Commerce evaluation environments come with a pre-loaded Azure AD B2C tenant for demonstration purposes. Configuring your own Azure AD B2C tenant is not required for evaluation environments. However, if you are configuring the evaluation environment to use your own Azure AD B2C tenant, please make sure to add “https://login.commerce.dynamics.com/_msdyn365/authresp” as a Reply URL in the AAD B2C Application through the Azure Portal.
+
 ## Additional resources
 
 [Dynamics 365 Commerce evaluation environment overview](cpe-overview.md)
@@ -163,6 +166,8 @@ To configure optional features for your Commerce evaluation environment, see [Co
 [Microsoft Azure portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
