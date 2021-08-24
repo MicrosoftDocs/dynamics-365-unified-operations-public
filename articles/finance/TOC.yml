@@ -2694,6 +2694,8 @@
           href: localizations/emea-ita-exil-bank-accounts-setup.md
         - name: Italian Intrastat
           href: localizations/emea-ita-intrastat.md
+        - name: Post arrivals and dispatches for Intrastat
+          href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
         - name: Miscellaneous charges per kilogram in an Intrastat declaration
           href: localizations/emea-ita-exil-misc-charges-intrastat.md
         - name: Intent letters - Invoicing usual exporters
