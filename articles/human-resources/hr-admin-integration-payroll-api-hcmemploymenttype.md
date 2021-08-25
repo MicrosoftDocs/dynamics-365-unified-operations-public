@@ -36,8 +36,8 @@ This enumeration provides the option set of employment type for the employee. Th
 
 | Value | Label | Description |
 | --- | --- | --- |
-| 200000000 | Employee | Employee. |
-| 200000001 | Contractor | Contractor. |
+| 200000000 | Employee | Employee |
+| 200000001 | Contractor | Contractor |
 
 ## See also
 
