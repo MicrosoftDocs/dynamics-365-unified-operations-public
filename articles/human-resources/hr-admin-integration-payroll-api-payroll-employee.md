@@ -58,7 +58,7 @@ This entity provides information about the employee. You must set the [payroll i
 
 ## Relations
 
-|Property value | Related entity | Navigation Property | Collection type |
+|Property value | Related entity | Navigation property | Collection type |
 | --- | --- | --- | --- |
 | _mshr_fk_employment_id_value | mshr_hcmemploymentdetailentity | mshr_FK_Employment_id | - |
 | _mshr_fk_fixedcompplan_id_value | [mshr_payrollfixedcompensationplanentity](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md) | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Employee |
