@@ -254,6 +254,8 @@
             href: dev-itpro/define-retail-channel-communications-cdx.md
           - name: Commerce Data Exchange troubleshooting
             href: dev-itpro/CDX-Troubleshooting.md
+          - name: Sort Commerce Data Exchange packages by primary index
+            href: CDX-package-sort.md
         - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: Publish an online store channel
