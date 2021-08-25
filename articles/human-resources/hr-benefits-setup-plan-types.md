@@ -2,9 +2,9 @@
 # required metadata
 
 title: Plan type overview
-description: A plan type in Microsoft Dynamics 365 Human Resources is a high-level grouping of specific types of benefits. Each plan type has a plan type code that determines rules for the plan type.
+description: A plan type in Microsoft Dynamics 365 Human Resources is a high-level grouping of specific types of benefits. 
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,6 +36,7 @@ A plan type is a high-level grouping of specific types of benefits. Each plan ty
 Each plan type indicates whether an employee can enroll in one plan of its type or multiple. For example, an employee would likely be able to enroll in both the **Basic life** and the **Supplemental life** policies of plan type Life. An employee would likely be allowed to enroll in only one policy of type Medical.
 
 If a plan type involves contacts, the plan type indicates whether contacts are beneficiaries or dependents. For example, a **Basic life** plan type would have beneficiaries, while a Basic medical plan type would have dependents. In some cases, a plan may not have any personal contacts. For example, a Flexible Spending Account or Parking allowance.
+
 
 A plan type may define coverage options. The coverage options are defined on the **Coverage options** page. A coverage option can specify the amount of the benefit or the contacts who are eligible for the plan type. For example, if the contact type is **Beneficiary**, the coverage option should define the terms of what the beneficiary is eligible to receive when the benefit is utilized. If the contact type is **Dependent**, the coverage option should define the relationship between the dependent and employee. 
 
