@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Develop a compensation structure
-description: This topic describes creating a fixed compensation plan and enrolling employees in the plan through eligibility rules. 
+description: This topic explains how to create a fixed compensation plan and enroll employees in the plan through eligibility rules. 
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: business-process 
