@@ -90,11 +90,11 @@ In Finance and depending on the tax configuration you can have a specific sales 
 7. In the **Transaction classifier** column, select the tax transaction classification where the sales tax group code is used.
 8. Repeat steps 3-5 for all VAT return form boxes (lines) and the combination of sales tax code and tax transaction types configured in your legal entity.
 9. Select **Add** again, and then follow these steps to include the final record line:
-   a. In the **Lookup result** column, select **Not applicable**.
-   b. In the **Sales tax group** column, select **Not blank**.
-   c. In the **Item sales tax group** column, select **Not blank**.
-   d. In the **Tax code** column, select **Not blank**.
-   c. In the **Transaction classifier** column, select **Not blank**.
+   - In the **Lookup result** column, select **Not applicable**.
+   - In the **Sales tax group** column, select **Not blank**.
+   - In the **Item sales tax group** column, select **Not blank**.
+   - In the **Tax code** column, select **Not blank**.
+   - In the **Transaction classifier** column, select **Not blank**.
 
 By adding this last record (NA), you define the following rule: When the tax code and name that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in the VAT return form. Although this rule is not used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration. 
 	
@@ -103,39 +103,39 @@ By adding this last record (NA), you define the following rule: When the tax cod
 
 The following table represent an example of how the user needs to configure these parameters to establish the configuration between the different boxes in the declaration form and sales tax code configuration implemented in Finance.
 
-|                                    Lookup   result                                   | Sales tax group | Item sales tax   group |   Tax code  |  Transacction   classifier |
-|:------------------------------------------------------------------------------------:|:---------------:|:----------------------:|:-----------:|:--------------------------:|
-| 1a. Supplies of goods / services taxed at 5%                                         | VAT_DOM         | *Not blank*            | *Not blank* | Sales                      |
-| 1a. Supplies of goods / services taxed at 5%                                         | VAT_DOM         | *Not blank*            | *Not blank* | Sales credit note          |
-| 1b. Supplies of goods / services taxed at 0%                                         | VAT_0%          | *Not blank*            | *Not blank* | Sales                      |
-| 1b. Supplies of goods / services taxed at 0%                                         | VAT_0%          | *Not blank*            | *Not blank* | Sales credit note          |
-| 1c. Supplies of goods / services tax exempt                                          | VAT_EXE         | *Not blank*            | *Not blank* | Sales Exempt               |
-| 1c. Supplies of goods / services tax exempt                                          | VAT_EXE         | *Not blank*            | *Not blank* | Sales Exempt Credit note   |
-| 1d. Supplies of goods, tax levy shifted to recipient inside GCC (reverse charge)     | VAT_RCGS        | *Not blank*            | *Not blank* | Sales                      |
-| 1d. Supplies of goods, tax levy shifted to recipient inside GCC (reverse charge)     | VAT_RCGS        | *Not blank*            | *Not blank* | Sales credit note          |
-| 1e. Supplies of services, tax levy shifted to recipient inside GCC ( reverse charge) | VAT_RCSS        | *Not blank*            | *Not blank* | Sales                      |
-| 1e. Supplies of services, tax levy shifted to recipient inside GCC ( reverse charge) | VAT_RCSS        | *Not blank*            | *Not blank* | Sales credit note          |
-| 2a. Purchases from the GCC subject to Reverse Charge Mechanism                       | VAT_RCGP        | *Not blank*            | *Not blank* | Purchase                   |
-| 2a. Purchases from the GCC subject to Reverse Charge Mechanism                       | VAT_RCGP        | *Not blank*            | *Not blank* | Purchase credit note       |
-| 2b. Purchases from outside of GCC subject to Reverse Charge Mechanism                | VAT_RCOP        | *Not blank*            | *Not blank* | Purchase                   |
-| 2b. Purchases from outside of GCC subject to Reverse Charge Mechanism                | VAT_RCOP        | *Not blank*            | *Not blank* | Purchase credit note       |
-| 3a. Exports                                                                          | VAT_EXP         | *Not blank*            | *Not blank* | Sales                      |
-| 3a. Exports                                                                          | VAT_EXP         | *Not blank*            | *Not blank* | Sales credit note          |
-| 4a. Import of Goods (Postponed payment)                                              | VAT_IMPP        | *Not blank*            | *Not blank* | Purchase                   |
-| 4a. Import of Goods (Postponed payment)                                              | VAT_IMPP        | *Not blank*            | *Not blank* | Purchase credit note       |
-| 4b. Total goods imported                                                             | VAT_IMP         | *Not blank*            | *Not blank* | Purchase                   |
-| 4b. Total goods imported                                                             | VAT_IMP         | *Not blank*            | *Not blank* | Purchase credit note       |
-| 5b. Adjustment of VAT due                                                            | *Not blank*     | *Not blank*            | VATADJ      | Sales                      |
-| 5b. Adjustment of VAT due                                                            | *Not blank*     | *Not blank*            | VATADJ      | Sales credit note          |
-| 6a. Purchases (except import of goods)                                               | VAT_DOM         | *Not blank*            | *Not blank* | Purchase                   |
-| 6a. Purchases (except import of goods)                                               | VAT_DOM         | *Not blank*            | *Not blank* | Purchase credit note       |
-| 6b. Import of goods                                                                  | VAT_IMPR        | *Not blank*            | *Not blank* | Purchase                   |
-| 6b. Import of goods                                                                  | VAT_IMPR        | *Not blank*            | *Not blank* | Purchase credit note       |
-| 6c. VAT on acquisition of fixed assets                                               | VAT_FA          | *Not blank*            | *Not blank* | Purchase                   |
-| 6c. VAT on acquisition of fixed assets                                               | VAT_FA          | *Not blank*            | *Not blank* | Purchase credit note       |
-| 6d. Adjustment of input VAT credit                                                   | *Not blank*     | *Not blank*            | VATADJ      | Purchase                   |
-| 6d. Adjustment of input VAT credit                                                   | *Not blank*     | *Not blank*            | VATADJ      | Purchase credit note       |
-| Not applicable                                                                       | *Not blank*     | *Not blank*            | *Not blank* | *Not blank*                |
+|                           Lookup   result                          | Sales tax group | Item sales <br>tax group |   Tax code  | Transaction <br>classifier |
+|:------------------------------------------------------------------:|:---------------:|:------------------------:|:-----------:|:--------------------------:|
+| 1a. Supplies of goods / services taxed at 5%                       | VAT_DOM         | *Not blank*              | *Not blank* | Sales                      |
+| 1a. Supplies of goods / services taxed at 5%                       | VAT_DOM         | *Not blank*              | *Not blank* | Sales credit note          |
+| 1b. Supplies of goods / services taxed at 0%                       | VAT_0%          | *Not blank*              | *Not blank* | Sales                      |
+| 1b. Supplies of goods / services taxed at 0%                       | VAT_0%          | *Not blank*              | *Not blank* | Sales credit note          |
+| 1c. Supplies of goods / services tax exempt                        | VAT_EXE         | *Not blank*              | *Not blank* | Sales Exempt               |
+| 1c. Supplies of goods / services tax exempt                        | VAT_EXE         | *Not blank*              | *Not blank* | Sales Exempt Credit note   |
+| 1d. Supplies of goods, tax levy shifted to recipient inside GCC    | VAT_RCGS        | *Not blank*              | *Not blank* | Sales                      |
+| 1d. Supplies of goods, tax levy shifted to recipient inside GCC    | VAT_RCGS        | *Not blank*              | *Not blank* | Sales credit note          |
+| 1e. Supplies of services, tax levy shifted to recipient inside GCC | VAT_RCSS        | *Not blank*              | *Not blank* | Sales                      |
+| 1e. Supplies of services, tax levy shifted to recipient inside GCC | VAT_RCSS        | *Not blank*              | *Not blank* | Sales credit note          |
+| 2a. Purchases from the GCC subject to Reverse Charge Mechanism     | VAT_RCGP        | *Not blank*              | *Not blank* | Purchase                   |
+| 2a. Purchases from the GCC subject to Reverse Charge Mechanism     | VAT_RCGP        | *Not blank*              | *Not blank* | Purchase credit note       |
+| 2b. Purchases from outside of GCC subject to RCM                   | VAT_RCOP        | *Not blank*              | *Not blank* | Purchase                   |
+| 2b. Purchases from outside of GCC subject to RCM                   | VAT_RCOP        | *Not blank*              | *Not blank* | Purchase credit note       |
+| 3a. Exports                                                        | VAT_EXP         | *Not blank*              | *Not blank* | Sales                      |
+| 3a. Exports                                                        | VAT_EXP         | *Not blank*              | *Not blank* | Sales credit note          |
+| 4a. Import of Goods (Postponed payment)                            | VAT_IMPP        | *Not blank*              | *Not blank* | Purchase                   |
+| 4a. Import of Goods (Postponed payment)                            | VAT_IMPP        | *Not blank*              | *Not blank* | Purchase credit note       |
+| 4b. Total goods imported                                           | VAT_IMP         | *Not blank*              | *Not blank* | Purchase                   |
+| 4b. Total goods imported                                           | VAT_IMP         | *Not blank*              | *Not blank* | Purchase credit note       |
+| 5b. Adjustment of VAT due                                          | *Not blank*     | *Not blank*              | VATADJ      | Sales                      |
+| 5b. Adjustment of VAT due                                          | *Not blank*     | *Not blank*              | VATADJ      | Sales credit note          |
+| 6a. Purchases (except import of goods)                             | VAT_DOM         | *Not blank*              | *Not blank* | Purchase                   |
+| 6a. Purchases (except import of goods)                             | VAT_DOM         | *Not blank*              | *Not blank* | Purchase credit note       |
+| 6b. Import of goods                                                | VAT_IMPR        | *Not blank*              | *Not blank* | Purchase                   |
+| 6b. Import of goods                                                | VAT_IMPR        | *Not blank*              | *Not blank* | Purchase credit note       |
+| 6c. VAT on acquisition of fixed assets                             | VAT_FA          | *Not blank*              | *Not blank* | Purchase                   |
+| 6c. VAT on acquisition of fixed assets                             | VAT_FA          | *Not blank*              | *Not blank* | Purchase credit note       |
+| 6d. Adjustment of input VAT credit                                 | *Not blank*     | *Not blank*              | VATADJ      | Purchase                   |
+| 6d. Adjustment of input VAT credit                                 | *Not blank*     | *Not blank*              | VATADJ      | Purchase credit note       |
+| Not applicable                                                     | *Not blank*     | *Not blank*              | *Not blank* | *Not Blank*                |
 
 To avoid issues when the report is generated, create all mappings where the sales tax codes and sales tax group are posted. For example, if the line of **box 1a**  has SalesCreditNote is omitted in this configuration, and tax transactions are posted by using sales tax group VAT_DOM, you will encounter issues when the report is generated. We recommend that you use the **Tax > Inquire > Posted sales tax** menu to review all posted sales tax transactions and those that are not included in this mapping of the configuration.
 
