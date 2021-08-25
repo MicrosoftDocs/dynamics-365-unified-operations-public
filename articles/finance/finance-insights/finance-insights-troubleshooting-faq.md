@@ -37,7 +37,7 @@ This topic lists issues that can arise when you use Finance insights capabilitie
 
 ### Resolution
 
-You might be using a template for an earlier version. Before the release of version 10.0.17, preview customers configured the DI template, Customer payment insights results (CDS to Fin and Ops) using the Payment prediction result (preview), entity. After upgrading to 10.0.17 and later, you should complete that mapping using the Begin using the "Customer payment insights results (CDS to Fin and Ops 10.0.17+)" DI template. You might not be able to map the DI template destination column until the data management entity list is refreshed and the Payment prediction result entity is displayed. To refresh the entity list and display the payment prediction result, you'll complete steps in Dynamics 365 Finance, and in Dataverse (previously the CDS admin portal).
+You might be using a template for an earlier version. Before the release of version 10.0.17, preview customers configured the DI template, Customer payment insights results (CDS to Fin and Ops) using the Payment prediction result (preview), entity. After upgrading to 10.0.17 and later, use using the "Begin the "Customer payment insights results (CDS to Fin and Ops 10.0.17+)" DI template" to complete that mapping. You might not be able to map the DI template destination column until the data management entity list is refreshed and the Payment prediction result entity is displayed. To refresh the entity list and display the payment prediction result, you'll complete steps in Dynamics 365 Finance, and in Dataverse (previously the CDS admin portal).
 
 ### In Microsoft Dynamics 365 Finance
 
@@ -51,9 +51,9 @@ Complete the following steps in Dynamics 365 Finance after upgrading.
 
 4. Close the **Data import/export framework parameters** page.
 
-5. On the **Data management** page click the **Data entities** tile.
+5. On the **Data management** page, click the **Data entities** tile.
 
-6. Search for “Payment prediction result”. Verify that the payment prediction results entity is not the preview version, which would include the “(preview)” suffix. If you only see en entity for a preview version, contact Microsoft Support.
+6. Search for “Payment prediction result”. Verify that the payment prediction results entity is not the preview version, which will include the “(preview)” suffix at the end of the entity name. If you only see an entity for a preview version, contact Microsoft Support.
 
 ### On the CDS admin portal
 
@@ -71,4 +71,4 @@ The cash flow forecasting function in Cash and bank management, and the Cash flo
 
 The cash flow forecasting and liquidity accounts must be set up and enabled. For more information, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md). If this setup has been completed and you’re not seeing the results you expect, see [Troubleshoot cash flow forecasting setup](../cash-bank-management/cash-flow-forecasting-tsg.md) for more information.
 
-Next confirm that the **Cash and bank management > Setup > Finance Insights > Cash flow forecasts** feature has been enabled and the AI model has completed training. If the training has not been completed select **Forecast now** to initiate the model training.
+Next confirm that the **Cash and bank management > Setup > Finance Insights > Cash flow forecasts** feature has been enabled and the AI model has completed training. If the training has not been completed select **Forecast now** to start the model training process.
