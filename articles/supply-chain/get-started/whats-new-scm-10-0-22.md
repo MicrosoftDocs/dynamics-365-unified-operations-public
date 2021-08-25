@@ -32,7 +32,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 | Feature area | Feature | More information |
 |---|---|---|
-| Planning | [Planning Optimization support for capability-based resource allocation](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) |  |
+| Planning | [Planning Optimization support for capability-based resource allocation](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | *Coming soon* |
 
 ## Feature enhancements included in this release
 
@@ -50,7 +50,8 @@ We have recently added or significantly updated the following help topics. They 
 
 | Feature area | New or updated topics |
 |---|---|
-|  |  |
+| Master planning | [Demand forecasting setup](../master-planning/demand-forecasting-setup.md) |
+| Master planning | [Net requirements and pegging information with Planning Optimization](../master-planning/planning-optimization/net-requirements.md) |
 
 ## Additional resources
 
