@@ -55,7 +55,7 @@ Physical name: mshr_payrollvariablecompensationawardentity.
 
 ## Relations 
 
-|Property value | Related entity | Navigation Property | Collection type |
+|Property value | Related entity | Navigation property | Collection type |
 | --- | --- | --- | --- |
 | _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_VariableCompAward |
 | _mshr_fk_fixedcomp_id_value | [mshr_payrollfixedcompensationplanentity](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md) | mshr_FK_FixedComp_id | mshr_FK_PayrollFixedCompensationPlanEntity_VariableCompAward |
