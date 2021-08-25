@@ -51,13 +51,14 @@ Physical name: mshr_payrollfixedcompensationplanentity.
 | **Payroll Fixed Compensation Plan entity**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | System generated | A system-generated GUID value to uniquely identify the compensation plan. |
 
 ## Relations
+
 |Property value | Related entity | Navigation Property | Collection type |
 | --- | --- | --- | --- |
-| _mshr_fk_employee_id_value | mshr_payrollemployeeentity | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_FixedCompPlan |
-| _mshr_fk_job_id_value | mshr_payrollpositionjobentity | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_FixedCompPlan |
-| _mshr_fk_payrollposition_id_value | mshr_payrollpositionentity | mshr_FK_PayrollPosition_id | mshr_FK_PayrollPositionEntity_FixedCompPlan |
+| _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_FixedCompPlan |
+| _mshr_fk_job_id_value | [mshr_payrollpositionjobentity](hr-admin-integration-payroll-api-payroll-position-job.md) | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_FixedCompPlan |
+| _mshr_fk_payrollposition_id_value | [mshr_payrollpositionentity](hr-admin-integration-payroll-api-payroll-position.md) | mshr_FK_PayrollPosition_id | mshr_FK_PayrollPositionEntity_FixedCompPlan |
 | _mshr_fk_plan_id_value | mshr_hcmcompfixedplantableentity | mshr_FK_Plan_id | - |
-| _mshr_fk_variablecompaward_id_value | mshr_payrollvariablecompensationawardentity | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_FixedComp |
+| _mshr_fk_variablecompaward_id_value | [mshr_payrollvariablecompensationawardentity](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md) | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_FixedComp |
 
 ## Example query
 
