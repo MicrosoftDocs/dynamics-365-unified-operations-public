@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Gender option set for Dynamics 365 Human Resources.
+This topic describes the Employment type option set for Dynamics 365 Human Resources.
 
 ## Option set: Employment type
 
