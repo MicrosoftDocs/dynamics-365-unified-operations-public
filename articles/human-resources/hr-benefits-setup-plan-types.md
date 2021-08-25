@@ -37,7 +37,7 @@ Each plan type indicates whether an employee can enroll in one plan of its type 
 
 If a plan type involves contacts, the plan type indicates whether contacts are beneficiaries or dependents. For example, a Basic life plan type would have beneficiaries, while a Basic medical plan type would have dependents. In some cases, a plan may not have any personal contacts. For example, a Flexible Spending Account or Parking allowance.
 
-A plan type may define coverage options. The coverage options are defined in the Coverage option page. A coverage option can specify the amount of the benefit or the contacts who are eligible for the plan type. For example, if the contact type is Beneficiary, the coverage option should define the terms of what the beneficiary is eligible to receive when the benefit is utilized. If the contact type is Dependent, the coverage option should define the relationship between the dependent and employee. 
+A plan type may define coverage options. The coverage options are defined on the **Coverage option** page. A coverage option can specify the amount of the benefit or the contacts who are eligible for the plan type. For example, if the contact type is Beneficiary, the coverage option should define the terms of what the beneficiary is eligible to receive when the benefit is utilized. If the contact type is Dependent, the coverage option should define the relationship between the dependent and employee. 
 
 > [!IMPORTANT]
 > The page includes key data that affects the options that are available when a new benefit plan is created:
