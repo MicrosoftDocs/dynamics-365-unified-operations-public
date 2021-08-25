@@ -22,7 +22,7 @@ This feature, titled **Sort CDX packages by primary index**, optimizes the data 
 
 ## Prerequisites
 
-The **Sort CDX packages by primary index** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The **Sort CDX packages by primary index** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Feature value
 
