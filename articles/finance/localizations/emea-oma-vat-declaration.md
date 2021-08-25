@@ -125,16 +125,16 @@ The following table represent an example of how the user needs to configure thes
 | 4a. Import of Goods (Postponed payment)                            | VAT_IMPP        | *Not blank*              | *Not blank* | Purchase credit note       |
 | 4b. Total goods imported                                           | VAT_IMP         | *Not blank*              | *Not blank* | Purchase                   |
 | 4b. Total goods imported                                           | VAT_IMP         | *Not blank*              | *Not blank* | Purchase credit note       |
-| 5b. Adjustment of VAT due                                          | *Not blank*     | *Not blank*              | VATADJ      | Sales                      |
-| 5b. Adjustment of VAT due                                          | *Not blank*     | *Not blank*              | VATADJ      | Sales credit note          |
+| 5b. Adjustment of VAT due                                          | *Not blank*     | *Not blank*              | VAT_ADJ     | Sales                      |
+| 5b. Adjustment of VAT due                                          | *Not blank*     | *Not blank*              | VAT_ADJ     | Sales credit note          |
 | 6a. Purchases (except import of goods)                             | VAT_DOM         | *Not blank*              | *Not blank* | Purchase                   |
 | 6a. Purchases (except import of goods)                             | VAT_DOM         | *Not blank*              | *Not blank* | Purchase credit note       |
 | 6b. Import of goods                                                | VAT_IMPR        | *Not blank*              | *Not blank* | Purchase                   |
 | 6b. Import of goods                                                | VAT_IMPR        | *Not blank*              | *Not blank* | Purchase credit note       |
 | 6c. VAT on acquisition of fixed assets                             | VAT_FA          | *Not blank*              | *Not blank* | Purchase                   |
 | 6c. VAT on acquisition of fixed assets                             | VAT_FA          | *Not blank*              | *Not blank* | Purchase credit note       |
-| 6d. Adjustment of input VAT credit                                 | *Not blank*     | *Not blank*              | VATADJ      | Purchase                   |
-| 6d. Adjustment of input VAT credit                                 | *Not blank*     | *Not blank*              | VATADJ      | Purchase credit note       |
+| 6d. Adjustment of input VAT credit                                 | *Not blank*     | *Not blank*              | VAT_ADJ     | Purchase                   |
+| 6d. Adjustment of input VAT credit                                 | *Not blank*     | *Not blank*              | VAT_ADJ     | Purchase credit note       |
 | Not applicable                                                     | *Not blank*     | *Not blank*              | *Not blank* | *Not Blank*                |
 
 To avoid issues when the report is generated, create all mappings where the sales tax codes and sales tax group are posted. For example, if the line of **box 1a**  has SalesCreditNote is omitted in this configuration, and tax transactions are posted by using sales tax group VAT_DOM, you will encounter issues when the report is generated. We recommend that you use the **Tax > Inquire > Posted sales tax** menu to review all posted sales tax transactions and those that are not included in this mapping of the configuration.
@@ -180,5 +180,6 @@ Complete the following steps to generate the tax declaration report.
    - **Purchase transactions**
    - **Sales transactions**
 8. Select **OK** to confirm the generation of reports.
+
   
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
