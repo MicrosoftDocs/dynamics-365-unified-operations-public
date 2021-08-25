@@ -32,7 +32,6 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 | Feature area | Feature | More information |
 |---|---|---|
-| Manufacturing | [Face recognition sign-in for production floor workers](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/worker-sign-in-face-recognition-production-floor-execution-interface) |  |
 | Planning | [Planning Optimization support for capability-based resource allocation](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) |  |
 
 ## Feature enhancements included in this release
@@ -41,7 +40,9 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
-|  |  |  |
+| Cost management | Create related vouchers for standard cost rounding revaluations | On making an inventory financial posting (such as a sales order invoice or inventory transaction), this feature causes the system to create a separate voucher for any related standard cost rounding revaluations, and to attach it to the financial posting voucher as a related voucher. Without this feature, the system records standard cost rounding revaluations on the same voucher posting, which can sometimes result in conflicting date information because the revaluations use the session or system date, while financial postings use the posting date. |
+| Inventory and warehouse management | Inventory Visibility integration with reservation offset | This feature can only be enabled after feature Inventory Visibility Integration is enabled. It provides the functionality to offset reservations made on Inventory Visibility. For more information, see [Inventory Visibility reservations](../inventory/inventory-visibility-reservations.md) |
+| Sales and marketing | Limit the number of sales orders that can be selected for posting | This feature lets you define the maximum number of sales orders that can be selected when posting confirmations, picking lists, packing slips, and invoices from the sales orders list page. It is enabled automatically. The feature adds a setting called **Max. number of sales orders for posting** to the **Accounts receivable parameters** page. The new setting defaults to a value of *100*. The feature helps improve the performance of the sales orders list page when a substantial number of sales orders are selected. It has no impact on the number of sales orders that can be processed by a periodic task. |
 
 ## New and updated documentation resources
 
