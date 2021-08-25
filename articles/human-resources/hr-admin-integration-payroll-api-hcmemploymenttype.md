@@ -32,7 +32,7 @@ This topic describes the Employment type option set for Dynamics 365 Human Resou
 
 ## Option set: Employment type
 
-This enumeration provides the option set of genders for the employee. This is available in the mshr_hcmemploymenttype option set.
+This enumeration provides the option set of employment type for the employee. This is available in the mshr_hcmemploymenttype option set.
 
 | Value | Label | Description |
 | --- | --- | --- |
