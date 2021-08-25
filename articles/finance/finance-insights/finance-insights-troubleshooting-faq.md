@@ -37,27 +37,27 @@ This topic lists issues that can arise when you use Finance insights capabilitie
 
 ### Resolution
 
-Before the release of version 10.0.17, preview customers configured the DI template Customer payment insights results (CDS to Fin and Ops) using the Payment prediction result (preview) entity. After upgrading to 10.0.17 and later, you should complete that mapping using the Begin using the "Customer payment insights results (CDS to Fin and Ops 10.0.17+)" DI template. You might not be able to map the DI template destination column until the data management entity list is refreshed and the Payment prediction result entity is displayed.
+You might be using a template for an earlier version. Before the release of version 10.0.17, preview customers configured the DI template, Customer payment insights results (CDS to Fin and Ops) using the Payment prediction result (preview), entity. After upgrading to 10.0.17 and later, you should complete that mapping using the Begin using the "Customer payment insights results (CDS to Fin and Ops 10.0.17+)" DI template. You might not be able to map the DI template destination column until the data management entity list is refreshed and the Payment prediction result entity is displayed. To refresh the entity list and display the payment prediction result, you'll complete steps in Dynamics 365 Finance, and in Dataverse (previously the CDS admin portal).
 
 ### In Microsoft Dynamics 365 Finance
 
-To resolve this change in Dynamics 365 Finance, complete the following steps after upgrading.
+Complete the following steps in Dynamics 365 Finance after upgrading.
 
 1. Open the **Data management** page (**System administration > Workspaces > Data management**).
 
-2. Select the **Data import/export framework parameters** tile.
+2. Select the **Framework parameters** tile, which opens the **Data import/export framework parameters** page.
 
 3. Select **Entity settings**, and then click **Refresh entity list**.
 
 4. Close the **Data import/export framework parameters** page.
 
-5. On the **Data management** page click the **Target entities** tile.
+5. On the **Data management** page click the **Data entities** tile.
 
-6. Search for “Payment prediction result”. The results should include one row without a “(preview)” suffix.
+6. Search for “Payment prediction result”. Verify that the payment prediction results entity is not the preview version, which would include the “(preview)” suffix. If you only see en entity for a preview version, contact Microsoft Support.
 
 ### On the CDS admin portal
 
-Complete the following steps in the [CDS admin portal]( https://admin.powerplatform.microsoft.com/environments).
+Complete the following steps in the [Power Platform admin center]( https://admin.powerplatform.microsoft.com/environments) to update your data integration projects.
 
 1. If you’re using a preview version of Finance insights, remove the DI project associated with the Customer payment insights results (CDS to Fin and Ops).
 
