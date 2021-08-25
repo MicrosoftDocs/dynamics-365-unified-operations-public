@@ -52,7 +52,7 @@ Physical name: mshr_payrollfixedcompensationplanentity.
 
 ## Relations
 
-|Property value | Related entity | Navigation Property | Collection type |
+|Property value | Related entity | Navigation property | Collection type |
 | --- | --- | --- | --- |
 | _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_FixedCompPlan |
 | _mshr_fk_job_id_value | [mshr_payrollpositionjobentity](hr-admin-integration-payroll-api-payroll-position-job.md) | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_FixedCompPlan |
