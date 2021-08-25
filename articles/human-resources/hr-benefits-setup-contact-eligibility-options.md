@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure personal contact eligibility options
-description: Configure eligibility options for personal contacts in Microsoft Dynamics 365 Human Resources. Personal contacts can be beneficiaries or dependents.
-author: andreabichsel
-ms.date: 06/25/2021
+description: This topic explains how to configure eligibility options for personal contacts in Microsoft Dynamics 365 Human Resources. 
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
