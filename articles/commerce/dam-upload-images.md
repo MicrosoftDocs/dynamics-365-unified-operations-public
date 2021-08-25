@@ -59,7 +59,11 @@ The default naming convention varies based on the category:
 - Product images should be named "**/Products/\{ProductNumber\}_000_001.png**"
     - 001 is the sequence of the image and it can be 001, 002, 003, 004 or 005
 - Product variant images should be named "**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**"
-    - For example: 93039 \^ \^ 2 \^ Black \^_000_001.png
+    - For example: 93039 \^  \^ 2 \^ Black \^_000_001.png
+
+In the case of product variant images, please note that if the dimension value is empty, there needs to be two whitespaces between the carets in the filename.
+
+These are examples using the default configuration. The separator character as well as dimensions are configurable and the exact naming required may vary between deployments. One method of identifying the exact naming convention required is to use the developer console of the browser to inspect the product variant image requests while changing the product dimensions while on the storefront PDP.
 
 ## Upload an image
 
