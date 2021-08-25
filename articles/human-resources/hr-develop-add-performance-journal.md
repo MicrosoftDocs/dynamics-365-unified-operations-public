@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Add to your performance journal and send praise to someone
-description: The performance journal contains information that relates to how employees meet their goals or how they performed during a period. 
+description: The performance journal contains information on how employees met their goals or how they performed during a period. 
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: business-process 
