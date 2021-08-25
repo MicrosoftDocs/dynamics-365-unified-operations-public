@@ -63,7 +63,8 @@ The default naming convention varies based on the category:
 - Product variant images with configuration dimension should be named "**/Products/\{ProductNumber\} \^ \{Configuration\}\_000_001.png**"
     - For example: 93039 \^ LB8017_000_001.png
 
-In the case of product variant images, please note that if the dimension value is empty, there must be two whitespaces between the carets in the file name.
+> [!NOTE]
+> For product variant images, if the dimension value is empty there must be two whitespaces between the carets in the file name.
 
 The examples above use the default configuration. The separator character and dimensions are configurable and the exact naming required may vary between deployments. One method of identifying the exact naming convention required is to use the developer console of the browser to inspect the product variant image requests while changing the product dimensions on the storefront product details page (PDP).
 
