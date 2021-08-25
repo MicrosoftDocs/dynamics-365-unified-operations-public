@@ -50,8 +50,8 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue | Description |
 | --- | --- | --- |
-| 594066 | ## Unable to delete Contact Information. | When a contact information is chosen to be deleted, a different contact information is deleted instead. |
-| 611339 | ## Adding a personalization causes the bank account to ignore filter and fetches the first record. | Adding a personalization is causing the bank account list to run a personalization query after the datasource query runs. This query ignores the worker filter and executes a cross join query. This results in the query fetching the top record regardless of the worker for whom the details are being viewed. |
+| 594066 | Unable to delete Contact Information | When selecting to delete a Contact information record for an employee, a contact information record other than the selected record is deleted instead. |
+| 611339 | Adding a personalization causes the bank account to ignore filter and fetches the first record. | Adding a personalization is causing the bank account list to run a personalization query after the datasource query runs, resulting in the query fetching the top record regardless of the worker for whom the details are being viewed. |
 | 591806 | ## Onboarding due date tasks are incorrectly calculated | Checklists that are created using a calendar that a big time range (example from 2005 to 2050) and user preference is set to something else than CST when applied to employees the due dates are being wrongly calculated. |   
 | 592749 | ## Leave balance is incorrect when when Cross company leave view is enabled. | When Cross company leave view is enabled, balance details do not appear correctly on ESS >> Time off >> Balance >> Current Balance. |
 | 603133 | ## Half-day definition should be disabled until Amount is set. | Half-day definition is enabled before the amount can be picked. |
