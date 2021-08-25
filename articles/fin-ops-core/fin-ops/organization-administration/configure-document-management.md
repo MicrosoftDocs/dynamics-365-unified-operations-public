@@ -324,10 +324,9 @@ The files are retrieved from SharePoint using the current user permissions by th
 
 ## Troubleshooting issues
 
-### [Fixed] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
-**Issue** : When interacting with document management or electronic reporting, users recieve an error similar to "Invalid length for a Base-64 char array or string."
+### Issue: When interacting with document management or electronic reporting, users receive an error similar to "Invalid length for a Base-64 char array or string"
 
-**Explanation**: Typically, this issue occurs because the token for the Office Apps web server is no longer valid.  
+**Explanation**: Typically, this issue occurs because the token for the Office Web Apps Server is no longer valid.  
 
 **Fix**: The admin needs to select the **Token refresh** button to the right of the **Office Web Apps Server** field on the **Document management parameters** page under the **General** tab.  
 
