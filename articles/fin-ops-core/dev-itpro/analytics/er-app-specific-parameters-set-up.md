@@ -4,7 +4,7 @@
 title: Set up the parameters of an ER format per legal entity
 description: This topic explains how you can set up the parameters of an Electronic reporting (ER) format per legal entity.
 author: NickSelin
-ms.date: 10/29/2019
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: Release 8.1.3
 # Set up the parameters of an ER format per legal entity
 
 [!include[banner](../includes/banner.md)]
+
+[!include[banner](../includes/preview-banner.md)]
 
 ## Prerequisites
 
@@ -224,12 +226,12 @@ You can use the ER framework to set up application-specific parameters for an ER
 
 ### Re-use existing parameters
 
-Starting from the Microsoft Dynamics 365 Finance version 10.0.23, you can re-use application-specific parameters that have been configured for one version of an ER format, when you run a higher version of the same format. For doing this, you must enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled and you run one version of an ER format that is trying to read application-specific parameters, ER will try to find application-specific parameters that have been configured for the running version of this format or, when they are not available, for the nearest lower version of this format.
+Starting in Microsoft Dynamics 365 Finance version 10.0.23, you can re-use application-specific parameters that have been configured for one version of an ER format, when you run a higher version of the same format. To do this, enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled and you run one version of an ER format that is trying to read application-specific parameters, ER will try to find application-specific parameters that have been configured for the running version of this format. Or, when they aren't available, for the nearest lower version of this format.
 
 > [!NOTE]
-> You can re-use application-specific parameters only in scope of the current legal entity.
+> You can re-use application-specific parameters only in the scope of the current legal entity.
 >
-> An exception is thrown at runtime when you run a higher version of an ER format that is trying to re-use application-specific parameters that have been configured for a lower version of the same format and the structure of at least one data source of the **Lookup** type in higher format version has changed.
+> An exception is thrown at runtime when you run a higher version of an ER format that is trying to re-use application-specific parameters that have been configured for a lower version of the same format and the structure of at least one data source of the **Lookup** type in the higher format version has changed.
 
 ## Relationship between application-specific parameters and an ER format
 
