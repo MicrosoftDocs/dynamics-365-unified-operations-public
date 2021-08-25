@@ -4,7 +4,7 @@
 title: Configure, install, and activate Modern POS (MPOS)
 description: This topic describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
-ms.date: 07/23/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -228,6 +228,10 @@ The device should now be activated and ready to use.
 ## Troubleshooting
 
 ### Troubleshoot installation
+
+- When Modern POS is in use and the POS switches offline during a transaction, the following error displays, "Cart version has changed".
+
+    **Solution:** Select to close and continue working. This is a known issue that is currently being investigated. This error does not produce any issues.
 
 - Your browser blocks the download pop-up that is generated.
 
