@@ -3,8 +3,8 @@
 
 title: Configure employee self service
 description: In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level navigation in Employee self service.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level navigation in Employee self service. Benefit plan tiles direct users to benefit plans that they're eligible for.
+In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level navigation in **Employee self service**. Benefit plan tiles direct users to benefit plans that they're eligible for.
 
 ## Set up a benefit plans tile
 
@@ -44,9 +44,9 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
    | Field | Description |
    | --- | --- |
    | **Tile ID** | The unique identifier for the tile. |
-   | **Tile label text** | The text that will appear for the tile on Self-service. |
+   | **Tile label text** | The text that will appear for the tile in **Employee self service**. |
    | **Description** | A description of the tile. |
-   | **Internet address** | Enter the URL to the employee self service page. |
+   | **Internet address** | Enter the URL to the **Employee self service** page. |
    | **Tile size** | The size of the tile: Small, Medium, or Large. |
    | **Target** | Specifies whether the page should open in a new window or the current window. |
    | **Tile background image** | The URL of the image to use for the tile (optional). |
@@ -66,9 +66,9 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
    | Field | Description |
    | --- | --- |
    | **Tile ID** | The unique identifier for the tile. |
-   | **Tile label text** | The text that will appear for the tile on Self service. |
+   | **Tile label text** | The text that will appear for the tile in **Employee self service**. |
    | **Description** | A description of the tile. |
-   | **Internet address** | Enter the URL to the employee self service page. |
+   | **Internet address** | Enter the URL to the **Employee self service** page. |
    | **Tile size** | The size of the tile: Small, Medium, or Large. |
    | **Target** | Specifies whether the page should open in a new window or the current window. |
    | **Tile background image** | The URL of the image to use for the tile (optional). |
