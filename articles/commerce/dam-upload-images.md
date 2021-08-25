@@ -59,7 +59,7 @@ The default naming convention varies based on the category:
 - Product images should be named "**/Products/\{ProductNumber\}\_000_001.png**"
     - 001 is the sequence of the image and it can be 001, 002, 003, 004 or 005
 - Product variant images should be named "**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**"
-    - For example: 93039 \^  \^ 2 \^ Black \^\_000_001.png
+    - For example: 93039 \^ &nbsp;\^ 2 \^ Black \^\_000_001.png
 - Product variant images with configuration dimension should be named "**/Products/\{ProductNumber\} \^ \{Configuration\}\_000_001.png**"
     - For example: 93039 \^ LB8017_000_001.png
 
