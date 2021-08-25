@@ -4,7 +4,7 @@
 title: Configure the Absence manager role
 description: This topic explains how to set up the Absence manager role for management of employee leave.
 author: hasrivas
-ms.date: 07/19/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
