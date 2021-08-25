@@ -235,6 +235,14 @@ The following table provides an overview of the inspections that ER provides. Fo
 <p><b>Runtime:</b> The last configured component is used at runtime if the draft version of the configured ER format is executed.</p>
 </td>
 </tr>
+<tr>
+<td><a href='#i17'>Inconsistent setting of Page component</a></td>
+<td>Data integrity</td>
+<td>Error</td>
+<td>
+There are more than two range components without replication. Please, remove unnecessary components.
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -871,6 +879,26 @@ Modify the configured format by deleting one of the inconsistent **Excel\\Header
 #### Option 2
 
 Modify the value of the **Header/footer appearance** property for one of the inconsistent **Excel\\Header** or **Excel\\Footer** components.
+
+## <a id="i17"></a>Inconsistent setting of Page component
+
+When you [configure](er-fillable-excel.md) an ER format component to use an Excel template to generate an outbound document, you can add the **Excel\\Page** component to paginate a generated document using ER formulas. For every **Excel\\Page** component that you add, you can add many nested [Range](er-fillable-excel.md#range-component) components keeping the compliance with the following [structure](er-fillable-excel.md#page-component-structure):
+
+-   First nested range can be configured as having the **Replication direction** property set to **No replication**. If such range is configured, it is used to make page headers in a generated document.
+-   You can add many other **Range** components speicfying the **Replication direction** property as **Vertical**. If such ranges are configured, they are used to fill in a generated documents.
+-   Last nested range can be configured as having the **Replication direction** property set to **No replication**. If such range is configured, it is used to make page footers in a generated document and add necessary page breaks.
+
+If you does not follow this structure at design time configuring an ER format in the ER format designer, a validation error occurs, and you receive the following error message: "There are more than two range components without replication. Please, remove unnecessary components."
+
+### Automatic resolution
+
+No option to automatically fix this issue is available.
+
+### Manual resolution
+
+#### Option 1
+
+Modify the configured format by changing the **Replication direction** property for all inconsistent **Excel\\Range** components.
 
 ## Additional resources
 
