@@ -38,7 +38,7 @@ This entity provides information about the employee. You must set the [payroll i
 
 >[!IMPORTANT] 
 >**FirstName**, **MiddleName**, **LastName**, **NameValidFrom**, and **NameValidTo** fields are no longer available on this entity. This ensures that there is only one date effective datasource that backs this entity.
->These fields will be available on the **DirPersonNameHistoricalEntity**, which was released in Platform update 43. There is an OData relationship from **PayrollEmployeeEntity** to **DirPersonNameHistoricalEntity** on the **Person** field. 
+>These fields will be available on the **DirPersonNameHistoricalEntity**, which was released in Platform update 43. There is an OData relationship from **PayrollEmployeeEntity** to **DirPersonNameHistoricalEntity**. 
 
 ## Properties
 
@@ -50,11 +50,23 @@ This entity provides information about the employee. You must set the [payroll i
 | **Employment end date**</br>mshr_employmentenddate</br>*Date time offset* | Read-only |The end of the employee's employment.  |
 | **Birth date**</br>mshr_birthdate</br>*Date Time Offset* | Read-only | The employee's birth date. |
 | **Gender**</br>mshr_gender</br>[mshr_hcmpersongender option set](hr-admin-integration-payroll-api-gender.md) | Read-only | The employee's gender. |
-| **Employment type**</br>mshr_employmenttype</br>[mshr_hcmpersongender option set](hr-admin-integration-payroll-api-hcmemploymenttype.md) | Read-only | The employment type. |
+| **Employment type**</br>mshr_employmenttype</br>[mshr_hcmemploymenttype option set](hr-admin-integration-payroll-api-hcmemploymenttype.md) | Read-only | The employment type. |
 | **Identification type ID**</br>mshr_identificationtypeid</br>*String* |Read-only | The identification type defined for the employee. |
 | **Identification number to**</br>mshr_identificationnumber</br>*String* | Read-only |The identification number defined for the employee. |
 | **Ready to pay**</br>mshr_readytopay</br>[mshr_noyes option set](hr-admin-integration-payroll-api-no-yes.md) | Read-only | Indicates if the employee is marked as ready to pay. |
 | **Payroll employee entity ID**</br>mshr_payrollemployeeentityid</br>*GUID* | Required</br>System generated | A system-generated GUID value to uniquely identify the employee. |
+
+## Relations
+
+|Property value | Related entity | Navigation Property | Collection type |
+| --- | --- | --- | --- |
+| _mshr_fk_employment_id_value | mshr_hcmemploymentdetailentity | mshr_FK_Employment_id | - |
+| _mshr_fk_fixedcompplan_id_value | mshr_payrollfixedcompensationplanentity | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Employee |
+| _mshr_fk_name_id_value | mshr_dirpersonnamehistoricalentity | mshr_FK_Name_id | - |
+| _mshr_fk_worker_id_value | mshr_hcmworkerbaseentity | mshr_FK_Worker_id | - |
+| _mshr_fk_workerbankaccount_id_value | mshr_hcmworkerbankaccountentity | mshr_FK_WorkerBankAccount_id |
+| _mshr_fk_variablecompaward_id_value | mshr_payrollvariablecompensationawardentity | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_Employee |
+| _mshr_fk_address_id_value | mshr_payrollworkeraddressentity | mshr_FK_Address_id | mshr_FK_PayrollWorkerAddressEntity_Worker |
 
 ## Example query for Payroll employee
 
