@@ -322,5 +322,13 @@ To extract attachments, an Attachments entity must be built for a specific busin
 
 The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. This means that the current user needs access to the files to be able to preview them or open them.
 
+## Troubleshooting issues
+
+### [Fixed] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
+**Issue** : When interacting with document management or electronic reporting, users recieve an error similar to "Invalid length for a Base-64 char array or string."
+
+**Explanation**: Typically, this issue occurs because the token for the Office Apps web server is no longer valid.  
+
+**Fix**: The admin needs to select the **Token refresh** button to the right of the **Office Web Apps Server** field on the **Document management parameters** page under the **General** tab.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
