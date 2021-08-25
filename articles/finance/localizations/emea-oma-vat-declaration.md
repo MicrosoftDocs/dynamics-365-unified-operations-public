@@ -104,7 +104,7 @@ By adding this last record (NA), you define the following rule: When the tax cod
 The following table represent an example of how the user needs to configure these parameters to establish the configuration between the different boxes in the declaration form and sales tax code configuration implemented in Finance.
 
 |                           Lookup   result                          | Sales tax group | Item sales <br>tax group |   Tax code  | Transaction <br>classifier |
-|:------------------------------------------------------------------:|:---------------:|:------------------------:|:-----------:|:--------------------------:|
+|--------------------------------------------------------------------|-----------------|--------------------------|-------------|----------------------------|
 | 1a. Supplies of goods / services taxed at 5%                       | VAT_DOM         | *Not blank*              | *Not blank* | Sales                      |
 | 1a. Supplies of goods / services taxed at 5%                       | VAT_DOM         | *Not blank*              | *Not blank* | Sales credit note          |
 | 1b. Supplies of goods / services taxed at 0%                       | VAT_0%          | *Not blank*              | *Not blank* | Sales                      |
