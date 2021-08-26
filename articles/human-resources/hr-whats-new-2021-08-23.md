@@ -52,12 +52,12 @@ The following bug fixes are included in this release.
 | --- | --- | --- |
 | 594066 | Unable to delete Contact Information | When selecting to delete a Contact information record for an employee, a contact information record other than the selected record is deleted instead. |
 | 611339 | Adding a personalization causes the bank account to ignore filter and fetches the first record. | Adding a personalization is causing the bank account list to run a personalization query after the datasource query runs, resulting in the query fetching the top record regardless of the worker for whom the details are being viewed. |
-| 591806 | ## Onboarding due date tasks are incorrectly calculated | Checklists that are created using a calendar that a big time range (example from 2005 to 2050) and user preference is set to something else than CST when applied to employees the due dates are being wrongly calculated. |   
+| 591806 | Onboarding due date tasks are incorrectly calculated | Due dates are wrongly calculated when the following conditions exist:  The checklists that are created are using a calendar that uses an extended time range (example from 2005 to 2050) and the user's preferences utilize a time zone other than CST. |   
 | 592749 | ## Leave balance is incorrect when when Cross company leave view is enabled. | When Cross company leave view is enabled, balance details do not appear correctly on ESS >> Time off >> Balance >> Current Balance. |
 | 603133 | ## Half-day definition should be disabled until Amount is set. | Half-day definition is enabled before the amount can be picked. |
 | 606546 | ## Checkbox to select multiple approved leave requests no longer visible. | |
 | 597059 | ## Worker not visible in Leave and Absence calendar if applied date range includes a day for which they have been denied a request - (597059) | | |
-| 594586 | ## Manual Updates circumvent constraint on EmploymentId being unique - (594586) | | |
+
 
 ## In preview
 
