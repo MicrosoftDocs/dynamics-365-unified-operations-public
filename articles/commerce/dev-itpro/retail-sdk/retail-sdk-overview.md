@@ -316,7 +316,6 @@ The following tables provide information about the components in the Retail SDK 
 <tr>
 <th>Documentation</th>
 <td><a href="../retail-server-icontroller-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)</a>
-<p><a href="../retail-server-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.10 and earlier)</a></p>
 </td>
 </tr>
 </tbody>
