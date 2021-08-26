@@ -39,7 +39,7 @@ Customers who place orders as registered users can see their order details when 
 
 Additionally, a link or button that takes the customer directly to the order details page for their order can be included in any order-related transactional emails. This link or button will work for orders that are placed both by registered users and by guest users.
 
-## Enable order lookup for guest checkouts
+## Enable features in Commerce headquarters
 
 To enable order lookup for guest checkouts, you must turn on the following features at **Workspaces \> Feature management** in Commerce headquarters.
 
@@ -51,7 +51,7 @@ To enable order lookup for guest checkouts, you must turn on the following featu
 
 After you turn on the **Retail anonymous user search order details opting feature** feature, you must enable the API that supports unauthenticated order lookup in Commerce headquarters. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Customer orders**. On the **Customer orders** page, on the **Order search** FastTab, set the **Enable unauthenticated order lookup** option to **Yes**, as shown in the following illustration.
 
-![Enable unauthenticated order lookup option set to Yes in Commerce headquarters.](./media/OrderLookup_enable.PNG)
+<!-- ![Enable unauthenticated order lookup option set to Yes in Commerce headquarters.](./media/OrderLookup_enable.PNG)-->
 
 ## Manage the display of personal data
 
