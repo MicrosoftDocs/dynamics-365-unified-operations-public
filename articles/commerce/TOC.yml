@@ -254,7 +254,7 @@
             href: dev-itpro/define-retail-channel-communications-cdx.md
           - name: Commerce Data Exchange troubleshooting
             href: dev-itpro/CDX-Troubleshooting.md
-       - name: Commerce offline implementation considerations and troubleshooting
+       - name: Commerce offline implementation and troubleshooting
          href: dev-itpro/implementation-considerations-offline.md
        - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
