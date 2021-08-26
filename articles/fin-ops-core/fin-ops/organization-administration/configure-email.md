@@ -316,16 +316,16 @@ Consider signing in to the affected (or all) user mailboxes to verify that they 
 
 #### Issue: 401 unauthorized error in combination with using Exchange email 
 
-**Issue**: Users are seeing a 401 unauthorized error and are using Exchange for sending email. 
+**Issue**: Users are seeing a 401 unauthorized error when using Exchange for sending email. 
 
-**Explanation**: This issue may indicate an invalid or improperly setup mailbox in Office 365. To get more information about the specific error, do the following:
+**Explanation**: This issue may indicate an invalid or improperly set up mailbox in Office 365. To get more information about the specific error, do the following:
 
 1.  Navigate to the **Email history** page.
 2.  Add a filter to **Email status** field for **Failed** emails. 
 3.  Note the value in the **Email sender** field, as that is the user that Exchange is indicating isn't a valid user with a mailbox in Office 365. 
-4.  For the appropriate email(s), examine the **Last email failure message** field in the **Failure details** section.
+4.  For the appropriate emails, examine the **Last email failure message** field in the **Failure details** section.
 
-**Fix**: To resolve this issue, you need to make sure the specified user has a valid mailbox in Office 365 and that they are enabled for login.
+**Fix**: To resolve this issue, make sure that the specified user has a valid mailbox in Office 365 and that they are enabled for sign in.
 
 ### Specific SMTP email issues 
 
