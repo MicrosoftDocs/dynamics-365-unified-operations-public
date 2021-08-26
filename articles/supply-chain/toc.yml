@@ -1707,6 +1707,8 @@
           href: master-planning/tasks/create-plan-site.md
         - name: Calendars and master planning
           href: master-planning/supply-chain-calendars-master-planning.md
+        - name: Resolve the "Not enough capacity could be found" scheduling engine error
+          href: master-planning/not-enough-capacity-error-resolution.md
         - name: Improve master planning performance
           href: master-planning/master-planning-performance.md
         - name: Improve scheduling engine performance
@@ -3479,6 +3481,8 @@
           href: troubleshooting/inventory/while-splitting-the.md
       - name: Master planning
         items:
+        - name: Not enough capacity could be found
+          href: troubleshooting/planning/not-enough-capacity-error.md
         - name: You receive an error when running the built-in master planning engine
           href: troubleshooting/planning/deprecated-master-planning-error.md
         - name: Item can't have a BOM or formula
