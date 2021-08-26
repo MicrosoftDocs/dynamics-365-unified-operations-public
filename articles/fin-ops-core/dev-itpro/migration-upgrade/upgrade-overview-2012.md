@@ -112,7 +112,7 @@ When you purchase a subscription, you will receive details about how to sign up 
 ### Identify the project as an AX 2012 upgrade
 When you first sign in to your LCS implementation project, you're guided through the **Project Onboarding** wizard. You can always visit the **Project Onboarding** wizard later using the navigation menu next to **Project Settings** in your project.
 
-While on the Project Onboarding wizard, in the **Project Scope** section, you can use the **Legacy System** field to identify the project as an AX 2012 upgrade. It's crucial that you identify the project in this way, so that the sandbox infrastructure that is deployed is compatible with the upgrade process that is outlined here. If this step isn't completed early in the project, you might accidentally deploy your Sandbox on a newer infrastructure that is incompatible with this process. In that case, the upgrade effort might be delayed.
+While on the Project Onboarding wizard, in the **Project Scope** section, you can use the **Legacy System** field to identify the project as an AX 2012 upgrade. It's crucial that you identify the project in this way.
 
 ### Perform the AX 2012 preparation tasks
 Complete the tasks that the upgrade analyzer tool discovered, and that are documented in your upgrade project plan. Your Microsoft Dynamics AX system administrator and database administrator (DBA) must complete these tasks.
@@ -128,7 +128,7 @@ From this point onward, code changes in AX 2012 should be frozen. Only emergency
 Complete the tasks from the fit gap analysis that was performed during the “Deploy a demo environment” step of the Analyze phase. These tasks will probably be a mixture of functional tasks that define the configuration and development tasks for customizations that are related to new features that are being taken up.
 
 ### Data upgrade (development environment)
-After your code upgrade tasks are completed, you can upgrade your database for the first time. This first upgrade occurs in a development environment, so that you can more easily remediate or debug any issues that are found at this stage. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. Larger sandbox environments don't offer this agility, and a minimum of several hours will be required in order to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
+After your code upgrade tasks are completed, you can upgrade your database for the first time. This first upgrade occurs in a development environment, so that you can more easily remediate or debug any issues that are found at this stage. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. Sandbox environments don't offer this agility, and a minimum of several hours will be required in order to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
 
 The following illustration shows the process. Just back up the AX 2012 database, upload it to Azure, restore it to the Finance and Operations environment, and then run the data upgrade.
 
@@ -141,11 +141,11 @@ The underlying framework that is used to convert the data in the database during
 For details, see [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md).
 
 ### Data upgrade (sandbox environments)
-When data upgrade in a development environment is completed, you must perform data upgrade in a sandbox environment (Sandbox is deployed as [Self Service environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/infrastructure-stack)). The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
+Once data upgrade in a development environment completes, you must perform data upgrade in a sandbox environment (Sandbox is deployed as [Self Service environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/infrastructure-stack)). The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
 
-The following illustration shows the process for running data upgrade in a sandbox environment. The difference here is that 'AX2012 Database Upgrade Toolkit' is used instead of a traditional SQL backup etc. This toolkit is required to move your AX 2012 data to Azure SQL Database (using SQL Transaction Replication) and to perform the data upgrade also. 
+The following illustration shows the process for running data upgrade in a sandbox environment. The difference here is that 'AX2012 Database Upgrade Toolkit for Dynamics 365' is used instead of a traditional SQL backup etc. This toolkit is required to move your AX 2012 data to Azure SQL Database (using SQL Transaction Replication) as well as to run the data upgrade. In this case, your source is AX 2012 database and target is Dynamics 365 Finance and Operations Sandbox.
 
-![Data upgrade in a sandbox environment](./media/data-upgrade-sandbox-selfservice.png)
+![Data upgrade in a sandbox environment](./media/data-upgrade-sandbox-selfservice_01.png)
 
 For details, see [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md).
  
