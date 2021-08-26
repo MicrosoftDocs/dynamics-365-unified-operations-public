@@ -1595,47 +1595,48 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 
 **Resolution:** Version 2.11.0 of the infrastructure scripts has been released to propagate these permissions so the serviceName can be retrieved.
 
-**Automatically add these permissions**:
-    1. Download the latest Infrastructure scripts.
-    1. Migrate your ConfigTemplate.xml if needed.
-    1. Run the following commands in PowerShell with Administrator privileges:
-        ```powershell
-        .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-        .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-        ```
-    1. Copy the generated VM folder to the BI node if not using the remoting scripts.
-    1. Run the following command in PowerShell with Administrator privileges:
-        ```powershell
-        # If remoting, execute
-        # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
-        .\Complete-PreReqs.ps1
-        ```
-    1. Run the following command in PowerShell with Administrator privileges to verify the setup:
-        ```powershell
-        # If Remoting, execute
-        # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
-        .\Test-D365FOConfiguration.ps1
-        ```
+#### Automatically add these permissions:
+1. Download the latest Infrastructure scripts.
+1. Migrate your ConfigTemplate.xml if needed.
+1. Run the following commands in PowerShell with Administrator privileges:
+    ```powershell
+    .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+1. Copy the generated VM folder to the BI node if not using the remoting scripts.
+1. Run the following command in PowerShell with Administrator privileges:
+    ```powershell
+    # If remoting, execute
+    # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
+    .\Complete-PreReqs.ps1
+    ```
+1. Run the following command in PowerShell with Administrator privileges to verify the setup:
+    ```powershell
+    # If Remoting, execute
+    # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Test-D365FOConfiguration.ps1
+    ```
 
 > [!IMPORTANT]
 > If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Step 20. Tear down CredSSP, if remoting was used](./setup-deploy-on-premises-pu41.md#teardowncredssp) section.
 
-**Manually add these permissions**:
-    1. Open lusrmgr.msc (Local Users and Groups)
-    1. Create a new group called **Dynamics365ReadServices**
-    1. Download the latest Infrastructure scripts to your BI (SSRS) node.
-    1. Create a file scmgroups.csv with the following content:
-        ```text
-        "Name"
-        "Dynamics365ReadServices"
-        ```
-    1. Run the following command in PowerShell with Administrator privileges:
-        ```powershell
-            .\Set-ServiceControlManagerPermissions.ps1
-        ```
-    1. Run the following command in Powershell with Administrator privileges to verify the setup:
-        ```powershell
-            .\Set-ServiceControlManagerPermissions.ps1 -Test
-        ```
+#### Manually add these permissions:
+1. Go to your BI node.
+1. Open lusrmgr.msc (Local Users and Groups)
+1. Create a new group called **Dynamics365ReadServices**
+1. Download the latest Infrastructure scripts to your BI (SSRS) node.
+1. Create a file scmgroups.csv with the following content:
+```text
+"Name"
+"Dynamics365ReadServices"
+```
+1. Run the following command in PowerShell with Administrator privileges:
+```powershell
+    .\Set-ServiceControlManagerPermissions.ps1
+```
+1. Run the following command in Powershell with Administrator privileges to verify the setup:
+```powershell
+    .\Set-ServiceControlManagerPermissions.ps1 -Test
+```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
