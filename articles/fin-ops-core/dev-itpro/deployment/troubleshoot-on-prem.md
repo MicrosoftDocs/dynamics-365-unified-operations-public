@@ -1626,17 +1626,17 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 1. Create a new group called **Dynamics365ReadServices**
 1. Download the latest Infrastructure scripts to your BI (SSRS) node.
 1. Create a file scmgroups.csv with the following content:
-```text
-"Name"
-"Dynamics365ReadServices"
-```
+    ```text
+    "Name"
+    "Dynamics365ReadServices"
+    ```
 1. Run the following command in PowerShell with Administrator privileges:
-```powershell
-.\Set-ServiceControlManagerPermissions.ps1
-```
+    ```powershell
+    .\Set-ServiceControlManagerPermissions.ps1
+    ```
 1. Run the following command in Powershell with Administrator privileges to verify the setup:
-```powershell
-.\Set-ServiceControlManagerPermissions.ps1 -Test
-```
+    ```powershell
+    .\Set-ServiceControlManagerPermissions.ps1 -Test
+    ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
