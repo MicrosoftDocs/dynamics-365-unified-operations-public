@@ -1632,11 +1632,11 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 ```
 1. Run the following command in PowerShell with Administrator privileges:
 ```powershell
-    .\Set-ServiceControlManagerPermissions.ps1
+.\Set-ServiceControlManagerPermissions.ps1
 ```
 1. Run the following command in Powershell with Administrator privileges to verify the setup:
 ```powershell
-    .\Set-ServiceControlManagerPermissions.ps1 -Test
+.\Set-ServiceControlManagerPermissions.ps1 -Test
 ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
