@@ -144,14 +144,18 @@ Skype integration is available for environments in the public cloud. For environ
 
 **Issue:**  The Excel add-in loads, but instead of showing data, it displays "Load applets" in the task pane. 
 
-**Explanation:** This issue usually occurs due to one of three reasons: (1) incorrect sign in, (2) add-in registration data has not been initialized in the environment, or (3) OData issues.  
+**Explanation:** This issue usually occurs due to one of the following reasons:
+
+-   Incorrect sign in
+-   Add-in registration data has not been initialized in the environment
+-   OData issues 
 
 **Fix:** 
-1.  **Incorrect sign in**: The most likely cause of this issue is that the user is signed in as the wrong user. This can happen if the user has multiple accounts and the browser uses the wrong user context. Before trying any other fix, you should sign out of the add-in using the user menu in the upper-right and then sign back into the add-in. If the issue continues to persist, please attempt the next fix ensuring registration data is properly initialized. 
+-  **Incorrect sign in**: The most likely cause of this issue is that the user is signed in as the wrong user. This can happen if the user has multiple accounts and the browser uses the wrong user context. Before trying any other fix, you should sign out of the add-in using the user menu in the upper-right corner and then sign back in to the add-in. If the issue continues to persist, ensure registration data is properly initialized, as noted in the following fix. 
 
-2.  **Registration data not initialized**: If the issue wasn't addressed by signing back into the add-in again, another potential cause of this issue is that the environment doesn't yet have its add-in data initialized. To check this, the admin can navigate to the **Office app parameters** page. For each of the **App parameters**, **Registered applets**, and **Registered resources** tabs on that page, verify that there is data populated in each tab. If any tab has an empty grid, click the appropriate **Initialize...** button on that tab. 
+-  **Registration data not initialized**: If the issue wasn't addressed by signing back in to the add-in, another potential cause is that the environment doesn't yet have the add-in data initialized. To check this, the admin can navigate to the **Office app parameters** page. For each of the **App parameters**, **Registered applets**, and **Registered resources** tabs on that page, verify that there is data populated in each tab. If any tab has an empty grid, select the appropriate **Initialize** button on that tab. 
 
-3.  **OData issue**: If the issue persists after attempting the previous two fixes, then the final cause of this issue could be that the OData service, through which the add-in communicates with Finance and Operations, is having a problem and not returning the registration data to the add-in. Without that data, the add-in will fail to load applets. At this stage, you will need to open a ticket with Microsoft Support and include the **Application correlation ID** from the Excel add-in with the failed session. You can find this field under **Options**.
+-  **OData issue**: If the issue persists after attempting the previous two fixes, then the final cause of this issue could be that the OData service, through which the add-in communicates with Finance and Operations, is unable to return the registration data to the add-in. Without that data, the add-in will fail to load applets. At this stage, you will need to contact Microsoft Support with information from the **Application correlation ID** from the Excel add-in with the failed session. You can find this field under **Options**.
 
 ### Issue: During sign-in to the Excel Add-in, users receive an error message saying they "cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant"
 
@@ -189,16 +193,16 @@ Skype integration is available for environments in the public cloud. For environ
 
 **Long-term fix:** We are working with the Office team to understand this issue so that it can be fixed in Excel.
 
-### Issue: VPN users see a blank authentication screen when trying to sign into the Excel Add-in
+### Issue: VPN users see a blank authentication screen when trying to sign into the Excel add-in
 
-**Issue**: Users using a virtual private network (VPN) aren't able to login to the add-in as the authentication dialog appears blank or with missing text/styling.  
+**Issue**: Users using a virtual private network (VPN) aren't able to sign in to the add-in because the authentication dialog appears blank or is missing text.  
 
-**Fix**: The issue must be solved from the customer side as the VPN software or browser settings when running under VPN are preventing their machines from retrieving resources and/or interpreting those resources correctly.
+**Fix**: The issue must be solved from the customer side, as the VPN software or browser settings when running under VPN are preventing their machines from retrieving resources and/or interpreting those resources correctly.
 
 Here are some common solutions to VPN issues:
--  Verify that the user has access to the locations listed in: [Issue: The Excel Add-in doesn't correctly run or enable sign-in](#fixed-issue-the-excel-add-in-doesnt-correctly-run-or-enable-sign-in)
+-  Verify that the user has access to the locations listed in: [Issue: The Excel Add-in doesn't correctly run or enable sign-in](#fixed-issue-the-excel-add-in-doesnt-correctly-run-or-enable-sign-in).
 -  Verify that your browser isn't set to "Display intranet sites in Compatibility view" for Microsoft Edge (or Internet Explorer 11). This can be configured by organization policy. 
--  Have the affected user compare their VPN and Edge/IE browser settings with other users who aren't impacted
+-  Have the affected user compare their VPN and Edge/IE browser settings with other users who aren't impacted.
 
 ### \[Fixed\] Issue: The Excel Add-in doesn't correctly run or enable sign-in
 
