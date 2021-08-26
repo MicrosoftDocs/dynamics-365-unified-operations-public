@@ -47,7 +47,7 @@ Follow these steps to free up the resources, and to remove application permissio
         Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'"
         ```
 
-    1. If the preceding command returns an object, the app is currently enabled on the tenant, and it might still have access to the subscription. Remove this app from this tenant.
+    1. If the preceding command returns an object, the app is currently enabled on the tenant, and it might still have access to the subscription. Remove the app from the tenant.
 
         ```powershell
         $DDSObjectId=$(Get-AzureADServicePrincipal -Filter "AppId eq 'b96b7e94-b82e-4e71-99a0-cf7fb188acea'").ObjectId
