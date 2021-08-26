@@ -4,7 +4,7 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-ms.date: 06/28/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -318,9 +318,10 @@ Consider signing in to the affected (or all) user mailboxes to verify that they 
 
 **Issue**: Users are seeing a 401 unauthorized error and are using Exchange for sending email. 
 
-**Explanation**: This may indicate an invalid or improperly setup mailbox in Office 365. To get more information about the specific error, do the following: 
-1.  Navigate to the **Email history** page
-2.  Add a filter to **Email status** field for **Failed** emails 
+**Explanation**: This issue may indicate an invalid or improperly setup mailbox in Office 365. To get more information about the specific error, do the following:
+
+1.  Navigate to the **Email history** page.
+2.  Add a filter to **Email status** field for **Failed** emails. 
 3.  Note the value in the **Email sender** field, as that is the user that Exchange is indicating isn't a valid user with a mailbox in Office 365. 
 4.  For the appropriate email(s), examine the **Last email failure message** field in the **Failure details** section.
 
