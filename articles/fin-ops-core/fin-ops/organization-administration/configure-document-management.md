@@ -324,7 +324,7 @@ The files are retrieved from SharePoint using the current user permissions by th
 
 ## Troubleshooting issues
 
-### Issue: When interacting with document management or electronic reporting, users receive an error similar to "Invalid length for a Base-64 char array or string"
+### Issue: When interacting with Document management or Electronic reporting, users receive an error similar to "Invalid length for a Base-64 char array or string"
 
 **Explanation**: Typically, this issue occurs because the token for the Office Web Apps Server is no longer valid.  
 
