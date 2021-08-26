@@ -45,9 +45,11 @@ The following procedure provides an example of how to create several variants th
 1. On the Action Pane, open the **Product** tab and, from the **Product master** group, select **Product dimensions**.
 1. The **Product dimensions** page opens. This page includes a tab for each available dimension. On each tab, add a row for each value you will support for each relevant dimension. (For this example, you might add rows on the **Color** tab for *White*, *Yellow*, and *Green*).
 1. Close the page and select **Released product variants**. Note that the first created variant (blue V-1) appears.
-1. Select **Variants suggestions**.
-1. The system suggests variants with the created color values (for example, white V-1, yellow V-1, and green V-1).
-1. Select the suggested variants and select **OK** to release the variants to the engineering company. Note that the following conditions will apply: 
+1. On the Action Pane, open the **Product variant** tab and select **Variants suggestions**.
+1. The **Variant suggestions** dialog opens. Do one of the following:
+    - At the top of the dialog, there is a section for each available dimension. For each dimension, select the check box for each value you would like to generate a variant suggestion for and then select **Suggest** from the toolbar. Relevant suggestions are then added to the **Suggested variants** section.
+    - Select **Suggest all** from the toolbar to generate variant suggestions for all available combinations of dimension values. The suggestions are then added to the **Suggested variants** section.
+1. In the **Suggested variants** section, select the check box for each variant you want to create and select **Create** to generate and release the selected variants to the engineering company. The following conditions apply:
     - None of the created variants will have a BOM or route.
     - The attributes for these variants will default from the engineering category and will not be copied from the previous variant.
 
