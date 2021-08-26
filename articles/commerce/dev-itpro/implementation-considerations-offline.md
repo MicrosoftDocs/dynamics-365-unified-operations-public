@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce offline implementation considerations and troubleshooting
+title: Commerce offline implementation and troubleshooting
 description: This topic provides an overview of Microsoft Dynamics 365 Commerce offline implementation considerations and troubleshooting.
 author: jashanno
 ms.date: 08/24/2021
@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-08-31
 
 ---
 
-# Commerce offline implementation considerations and troubleshooting
+# Commerce offline implementation and troubleshooting
 
 [!include[banner](../includes/banner.md)]
 
