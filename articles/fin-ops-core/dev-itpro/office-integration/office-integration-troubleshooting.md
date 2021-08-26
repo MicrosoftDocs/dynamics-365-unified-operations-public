@@ -189,6 +189,17 @@ Skype integration is available for environments in the public cloud. For environ
 
 **Long-term fix:** We are working with the Office team to understand this issue so that it can be fixed in Excel.
 
+### Issue: VPN users see a blank authentication screen when trying to sign into the Excel Add-in
+
+**Issue**: Users using a virtual private network (VPN) aren't able to login to the add-in as the authentication dialog appears blank or with missing text/styling.  
+
+**Fix**: The issue must be solved from the customer side as the VPN software or browser settings when running under VPN are preventing their machines from retrieving resources and/or interpreting those resources correctly.
+
+Here are some common solutions to VPN issues:
+-  Verify the user have access to the locations listed here: [Issue: The Excel Add-in doesn't correctly run or enable sign-in](#fixed-issue-the-excel-add-in-doesnt-correctly-run-or-enable-sign-in)
+-  Verify your browser isn't set to "Display intranet sites in Compatibility view" for Microsoft Edge( or Internet Explorer 11). This can be configured by organization policy. 
+-  Have the affected user compare their VPN and Edge/IE browser settings with other users who aren't impacted
+
 ### \[Fixed\] Issue: The Excel Add-in doesn't correctly run or enable sign-in
 
 **Issue:** When users try to sign into the Excel Add-in, a blank authentication dialog box appears, or an error message is shown instead of the authentication page. The user can't sign in. 
