@@ -1624,6 +1624,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 1. Go to your BI node.
 1. Open lusrmgr.msc (Local Users and Groups)
 1. Create a new group called **Dynamics365ReadServices**
+1. Add the account that your AOS runs under (i.e. axserviceuser, svc-AXSF$) to the group you created above.
 1. Download the latest Infrastructure scripts to your BI (SSRS) node.
 1. Create a file scmgroups.csv with the following content:
     ```text
