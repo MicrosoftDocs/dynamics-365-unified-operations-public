@@ -1596,7 +1596,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 **Resolution:** Version 2.11.0 of the infrastructure scripts has been released to propagate these permissions so the serviceName can be retrieved.
 
 #### Automatically add these permissions:
-1. Download the latest Infrastructure scripts.
+1. Download the latest Infrastructure scripts from the shared asset library in LCS.
 1. Migrate your ConfigTemplate.xml if needed.
 1. Run the following commands in PowerShell with Administrator privileges:
 
@@ -1630,7 +1630,8 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 1. Open lusrmgr.msc (Local Users and Groups)
 1. Create a new group called **Dynamics365ReadServices**
 1. Add the account that your AOS runs under (i.e. axserviceuser, svc-AXSF$) to the group you created above.
-1. Download the latest Infrastructure scripts to your BI (SSRS) node.
+1. Download the latest Infrastructure scripts from the shared asset library in LCS.
+1. Copy the Infrastructure scripts to your BI (SSRS) node.
 1. Create a file scmgroups.csv with the following content:
 
     ```text
