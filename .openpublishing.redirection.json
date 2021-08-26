@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/dev-itpro/retail-server-extension.md",
+      "redirect_url": "dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/dev-changes-10-13.md",
+      "redirect_url": "dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/UpcomingSDKChanges.md",
+      "redirect_url": "dev-retail-home-page",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/fin-ops/get-started/websearchax-retired.md",
       "redirect_url": "/dynamics365",
       "redirect_document_id": "false"
