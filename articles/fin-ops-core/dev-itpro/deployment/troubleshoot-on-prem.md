@@ -1575,9 +1575,9 @@ System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name,
 
 **Resolution:** Install SSMS version 17.9.1.
 
-## Report deployment fails on 10.0.19 and later
+## Report deployment fails on version 10.0.19 and later
 
-**Issue:** During deployment, the report deployment operation fails. In the report deployment log you will see the following error:
+**Issue:** During deployment, the report deployment operation fails. In the report deployment log, you will see the following error:
 
 ```stacktrace
 Publish-AXReport : Value cannot be null.
@@ -1599,18 +1599,23 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 1. Download the latest Infrastructure scripts.
 1. Migrate your ConfigTemplate.xml if needed.
 1. Run the following commands in PowerShell with Administrator privileges:
+
     ```powershell
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
+    
 1. Copy the generated VM folder to the BI node if not using the remoting scripts.
 1. Run the following command in PowerShell with Administrator privileges:
+
     ```powershell
     # If remoting, execute
     # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
     .\Complete-PreReqs.ps1
     ```
+    
 1. Run the following command in PowerShell with Administrator privileges to verify the setup:
+
     ```powershell
     # If Remoting, execute
     # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -1627,15 +1632,20 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 1. Add the account that your AOS runs under (i.e. axserviceuser, svc-AXSF$) to the group you created above.
 1. Download the latest Infrastructure scripts to your BI (SSRS) node.
 1. Create a file scmgroups.csv with the following content:
+
     ```text
     "Name"
     "Dynamics365ReadServices"
     ```
+    
 1. Run the following command in PowerShell with Administrator privileges:
+
     ```powershell
     .\Set-ServiceControlManagerPermissions.ps1
     ```
+    
 1. Run the following command in Powershell with Administrator privileges to verify the setup:
+
     ```powershell
     .\Set-ServiceControlManagerPermissions.ps1 -Test
     ```
