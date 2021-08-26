@@ -152,7 +152,7 @@ For advanced troubleshooting, you can view raw information logs. You can use a s
 - Crashes
 - Financial reporting issues
 
-For information on how to use Azure Data Explorer with raw information logs, see [Use Azure Data Explorer to query raw information logs](azure-data-explorer.md).
+For information about how to use Azure Data Explorer with raw information logs, see [Use Azure Data Explorer to query raw information logs](azure-data-explorer.md).
 
 ### SQL insights
 
