@@ -254,18 +254,18 @@
             href: dev-itpro/define-retail-channel-communications-cdx.md
           - name: Commerce Data Exchange troubleshooting
             href: dev-itpro/CDX-Troubleshooting.md
-       - name: Commerce offline implementation and troubleshooting
-         href: dev-itpro/implementation-considerations-offline.md
-       - name: Modern POS architecture
-          href: dev-itpro/retail-modern-pos-architecture.md
-        - name: Publish an online store channel
-          href: dev-itpro/retail-online-store-publishing-architecture.md
-        - name: Retail Channel Performance Power BI content
-          href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
-        - name: Payment Application Data Security Standards (PA-DSS) certification
-          href: dev-itpro/PA-DSS-Certification.md
-        - name: Commerce capabilities available in on-premises deployments
-          href: retail-onprem.md
+        - name: Commerce offline implementation and troubleshooting
+           href: dev-itpro/implementation-considerations-offline.md
+         - name: Modern POS architecture
+           href: dev-itpro/retail-modern-pos-architecture.md
+         - name: Publish an online store channel
+           href: dev-itpro/retail-online-store-publishing-architecture.md
+         - name: Retail Channel Performance Power BI content
+           href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
+         - name: Payment Application Data Security Standards (PA-DSS) certification
+           href: dev-itpro/PA-DSS-Certification.md
+         - name: Commerce capabilities available in on-premises deployments
+           href: retail-onprem.md
       - name: Deployment and hotfixes
         items:
         - name: Synchronize self-service installers in Dynamics 365 Commerce
