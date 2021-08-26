@@ -3,6 +3,7 @@
 
 title: Buy and sell leave
 description: This topic describes how to submit requests to buy and sell leave in Dynamics 365 Human Resources.
+author: twheeloc
 ms.date: 08/26/2021
 ms.topic: article
 ms.prod: 
