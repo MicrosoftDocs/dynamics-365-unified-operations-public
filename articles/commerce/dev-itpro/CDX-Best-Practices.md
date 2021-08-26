@@ -118,7 +118,7 @@ We recommend that you repeat this section for the top tables in the report, unti
 
 - [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
 - [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
-- [Commerce offline implementation considerations and troubleshooting](implementation-considerations-offline.md)
+- [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md)
 - [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
 - [Select an in-store topology](retail-in-store-topology.md)
 - [Device management implementation guidance](../implementation-considerations-devices.md)
