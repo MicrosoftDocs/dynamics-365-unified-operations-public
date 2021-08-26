@@ -23,6 +23,8 @@ This topic describes how to generate variants for engineering products.
 
 You can create one or more new variants of a product without copying information from an existing product. This is useful when you need to create several product variants at the same time.
 
+To be able to create several variants from a product you must first enable the feature **Variant generation for engineering products**. Note this feature will only show in feature management once the Engineering Change Management configuration key has been enabled.
+
 The following procedure provides an example of how to create several variants that include the color dimension.
 
 1. Open the **Released products** page (for example, go to **Engineering change management \> Common \> Released products**).
