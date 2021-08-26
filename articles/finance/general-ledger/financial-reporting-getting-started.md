@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes where to access financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
+This topic describes where to access Financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
 ## Accessing financial reporting
 
@@ -50,16 +50,16 @@ To create and generate financial reports for a legal entity, you must set up the
 -   Chart of accounts
 -   Currency
 -   Post a transaction to at least one account
--   MainAccount is listed in the Selected column in **General Ledger > Ledger Setup > Financial Reporting Setup**
+-   MainAccount is listed in the Selected column in **General ledger > Ledger setup > Financial reporting setup**
 
-## Granting security access to Financial Reporting
+## Granting security access to Financial reporting
 The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles. The following sections list these privileges and duties, together with the associated roles.
 
 ### Duties
 
 | Duty label                            | Description                                                             | AOT name                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| Maintain financial reporting security | Maintain financial reporting security and perform administrative tasks. | FinancialReportsSecurityMaintain |
+| Maintain financial reporting security | Maintain Financial reporting security and perform administrative tasks. | FinancialReportsSecurityMaintain |
 | Maintain financial reports            | Design and maintain financial reports.                                  | FinancialReportsMaintain         |
 | Generate financial reports            | Generate and refresh financial reports.                                 | FinancialReportsGenerate         |
 | Review financial performance          | Review and analyze financial performance.                               | FinancialReportsPerfReview       |
@@ -68,7 +68,7 @@ The financial reporting functions are available to users who have the appropriat
 
 | Privilege label                       | Description                                                             | AOT name                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| Maintain financial reporting security | Maintain financial reporting security and perform administrative tasks. | FinancialReportsSecuritySystemMaintain |
+| Maintain financial reporting security | Maintain Financial reporting security and perform administrative tasks. | FinancialReportsSecuritySystemMaintain |
 | Maintain financial reports            | Design and maintain financial reports.                                  | FinancialReportsMaintainReports  |
 | Generate financial reports            | Generate and refresh financial reports.                                 | FinancialReportsGenerateReports  |
 | View financial reports                | View financial reports.                                                 | FinancialReportsView             |
@@ -77,7 +77,7 @@ The financial reporting functions are available to users who have the appropriat
 
 | Privilege label                       | Duty                                  | Roles                                                                           |
 |---------------------------------------|---------------------------------------|---------------------------------------------------------------------------------|
-| Maintain financial reporting security | Maintain financial reporting security | Security administrator                                                          |
+| Maintain financial reporting security | Maintain Financial reporting security | Security administrator                                                          |
 | Maintain financial reports            | Maintain financial reports            | Accounting Manager, Accounting Supervisor, Financial Controller, Budget Manager |
 | Generate financial reports            | Generate financial reports            | CEO, CFO, Accountant                                                            |
 | View financial reports                | Review financial performance          | None assigned                                                                   |
@@ -92,7 +92,7 @@ Users who generate a report can delete their own reports. Users with the **Maint
 
 In release 10.0.8, the concept of expiration dates was introduced. A new required feature is enabled in the **All** page within the feature management workspace. The **Financial report retention policies** feature contains the following changes:
 * Newly generated reports will automatically be marked as having an expiration date of 90 days from when they are generated.
-* Any existing reports from before the feature was installed will be given a 90-day expiration period. The date may show as blank for a short period of time until the financial reporting service is running, a report is generated, and the service performs the update to existing reports with a blank expiration date. 
+* Any existing reports from before the feature was installed will be given a 90-day expiration period. The date may show as blank for a short period of time until the Financial reporting service is running, a report is generated, and the service performs the update to existing reports with a blank expiration date. 
 * Users with **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will also have the ability to modify the expiration period. Currently there are two retention options available: 
   * An expiration of 90 days.
   * An option to set the report to never expire.
@@ -142,22 +142,21 @@ One of the components that's used to build financial reports is a reporting tree
 
 You can create an unlimited number of reporting trees to display your organization’s data in various ways. Each reporting tree can contain any combination of departments and summary units, but a report definition can link to only one reporting tree at a time. 
 
-## Financial Reporting version Slipstreaming/True-up
-Financial Reporting (FR) has a designated version of the component that is consumed by the customers as they are serviced, initiated downtime or have their environment in a Maintenance Mode. This process is known as **slipstreaming** or **true-up** since all customers are evened up to run the same version of Financial Reporting.
+## Financial reporting version slipstreaming/true-up
+Finance and Operations apps are updated every month. However, Financial reporting is not necessarily updated on that same cadence. Moreover, customers have more options for when they implement updates for Finance and Operations apps. Financial reporting updates are installed automatically. Financial reporting has a designated version that's consumed in a customer environment when a service update is implemented*, when downtime is initiated, or when a customer's environment is in Maintenance Mode. This process is known as **slipstreaming** or **true-up** since all customer implementations are set to the same version of Financial reporting.
 
 Changes that are released with each version can be found in the [What's new or changed in Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Platform Updates and Bug fixes can be found in the 'Additional Resources' section at the bottom of the page for each release. 
 
-The selected slipstreamed version is a reviewed and validated version of FR that is ready for production and compatible with any previous or future version of Dynamics 365 Finance.  For example, FR can be on the latest 10.0.19 build while the customer may still be on application version 10.0.16.
+The selected slipstreamed version is a reviewed and validated version of Financial reporting that's ready for production and that's compatible with any previous or future version of Dynamics 365 Finance. For example, Financial reporting can be on the latest 10.0.19 build while the customer can still be on application version 10.0.16.
 
 > [!NOTE]
-> The only way the downgrade scenario occurs is if we abort a true-up rollout due to a major regression. As soon as a fix version is available, it will be automatically applied.
+> The only circumstance for moving to a previous version (a downgrade scenario) occurs if we stop a true-up rollout because of an issue. As soon as a fix is available, it will be applied automatically.
 
-
-Slipstream process is fully automated and does not require any customer action. There are three topologies that consume slipstream in slightly different ways:
+The slipstream process is fully automated and doesn't require any customer action. There are three topologies that consume slipstream, each in slightly different ways:
 
 - **On-Premise** deployments do not support slipstream and true-up.
-- **IaaS** topologies – slipstream logic is applied during any operation that would attempt to update Financial Reporting. It includes binary updates or broadcasts which contains binary updates.
-- **Self-Service** topology – any operation that requires FR downtime will apply the slipstream logic: 
+- **IaaS** topologies – slipstream logic is applied during any operation that would attempt to update Financial reporting. It includes binary updates or broadcasts which contains binary updates.
+- **Self-Service** topology – any operation that requires Financial reporting downtime will apply the slipstream logic: 
 -- Binary updates or broadcasts that include binary updates;
 -- OS patching or other infrastructure downtime;
 -- AOT package deployments.
@@ -179,17 +178,17 @@ Issue 1: Report Designer doesn't start when you select **New** or **Edit**.
      4. Set the drop-down menu option to **Enabled**.
      5. Select **Restart Browser**.
 
-Issue 2: The user hasn't been assigned the required permissions to use Financial Reporting. 
+Issue 2: The user hasn't been assigned the required permissions to use Financial reporting. 
 
-* To verify if the user does not have permission, select **Yes** on the error, “Unable to connect to the Financial Reporting server. Select Yes if you want to continue and specify a different server address.” Then select **Test Connection**. If you don't have permission, you will see a message that says, "Connection attempt failed. User does not have appropriate permissions to connect to the server. Contact your system administrator.”
-* Required permissions are listed above in [Granting security access to Financial Reporting](#granting-security-access-to-financial-reporting). Security in Financial Reporting is based on these privileges. You won't have access unless these privileges (or another security role that includes these privileges) are assigned to you. 
-* The **Company Users Provider to Company** integration task (which is also responsible for and known as user integration) runs on a 5-minute interval. It may take up to 10 minutes for any permission changes to take effect in Financial Reporting. 
-  If another user can open Report Designer, select **Tools**, and then select **Integration Status**. Verify that the integration map, "Company Users Provider to Company," has run successfully because you were assigned permission to use Financial Reporting. 
-* It may be possible that another error has prevented **Dynamics user to Financial Reporting user integration** from finishing. Or it's possible that a datamart reset has been initiated and not yet completed, or that another system error has occurred. Try running the process again later. If the problem persists, contact your system admin.
+* To verify if the user does not have permission, select **Yes** on the error, “Unable to connect to the Financial reporting server. Select Yes if you want to continue and specify a different server address.” Then select **Test Connection**. If you don't have permission, you will see a message that says, "Connection attempt failed. User does not have appropriate permissions to connect to the server. Contact your system administrator.”
+* Required permissions are listed above in [Granting security access to Financial reporting](#granting-security-access-to-financial-reporting). Security in Financial reporting is based on these privileges. You won't have access unless these privileges (or another security role that includes these privileges) are assigned to you. 
+* The **Company Users Provider to Company** integration task (which is also responsible for and known as user integration) runs on a 5-minute interval. It may take up to 10 minutes for any permission changes to take effect in Financial reporting. 
+  If another user can open Report Designer, select **Tools**, and then select **Integration Status**. Verify that the integration map, "Company Users Provider to Company," has run successfully because you were assigned permission to use Financial reporting. 
+* It may be possible that another error has prevented **Dynamics user to Financial reporting user integration** from finishing. Or it's possible that a datamart reset has been initiated and not yet completed, or that another system error has occurred. Try running the process again later. If the problem persists, contact your system admin.
 
 Issue 3: You can proceed past the ClickOnce Report Designer sign-in page, but are unable to complete sign in within Report Designer. 
 
-* The time set on your local computer when you enter your login credentials must be within five minutes of the time on the Financial Reporting server. If there is a difference of more than five minutes, the system will not allow sign in. 
+* The time set on your local computer when you enter your login credentials must be within five minutes of the time on the Financial reporting server. If there is a difference of more than five minutes, the system will not allow sign in. 
 * In this case, we recommend enabling the Windows option to set your PC's time automatically. 
 
 ## Additional resources
