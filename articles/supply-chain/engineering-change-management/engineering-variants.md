@@ -19,11 +19,19 @@ ms.dyn365.ops.version: 10.0.20
 
 This topic describes how to generate variants for engineering products.
 
+## Turn on variant generation for engineering products
+
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Engineering change management*
+- **Feature name:** *Variant generation for engineering products*
+
+> [!IMPORTANT]
+> The *Variant generation for engineering products* feature will only be visible on your system after you have enabled the Engineering Change Management configuration key. For instructions, see [Engineering change management overview](product-engineering-overview.md).
+
 ## Generate one or more new variants of an engineering product
 
 You can create one or more new variants of a product without copying information from an existing product. This is useful when you need to create several product variants at the same time.
-
-To be able to create several variants from a product you must first enable the feature **Variant generation for engineering products**. Note this feature will only show in feature management once the Engineering Change Management configuration key has been enabled.
 
 The following procedure provides an example of how to create several variants that include the color dimension.
 
@@ -36,7 +44,7 @@ The following procedure provides an example of how to create several variants th
 1. Add a bill of materials (BOM) and route to the variant as needed.
 1. On the Action Pane, open the **Product** tab and, from the **Product master** group, select **Product dimensions**.
 1. The **Product dimensions** page opens. This page includes a tab for each available dimension. On each tab, add a row for each value you will support for each relevant dimension. (For this example, you might add rows on the **Color** tab for *White*, *Yellow*, and *Green*).
-1. Close the page and select **Released product variants**. Note that the first created variant (white V-1) appears.
+1. Close the page and select **Released product variants**. Note that the first created variant (blue V-1) appears.
 1. Select **Variants suggestions**.
 1. The system suggests variants with the created color values (for example, white V-1, yellow V-1, and green V-1).
 1. Select the suggested variants and select **OK** to release the variants to the engineering company. Note that the following conditions will apply: 
