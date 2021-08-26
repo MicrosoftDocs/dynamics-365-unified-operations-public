@@ -35,7 +35,7 @@ After you have successfully completed upgrade testing in a Standard or Premier A
 
 The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
 
-![Cutover process](./media/cutover-selfservice.png)
+![Cutover process](./media/cutover-selfservice_01.png)
 
 > [!NOTE]
 > In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
@@ -45,12 +45,17 @@ The following illustration shows the overall process for cutover to go-live as i
 The high-level steps of the production environment upgrade process are the same as the Mock cutover process, refer to [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md) for detailed instructions.
 
 
-1. Ensure all pre-requisites (e.g. preupgrade checklist etc.) are fulfilled and custom code is deployed in Sandbox. Sandbox must only be used for data upgrade.
-2. Use AX2012 Database Upgrade Toolkit for Dynamics 365 from LCS.
-3. Execute Replication setup from AX2012 before hand and keep monitoring it on regular basis.
-4. Turn off the AX 2012 AOS instances.
-5. Execute Cutover steps of AX2012 Database Upgrade Toolkit for Dynamics 365.
-6. Trigger Data upgrade using the toolkit and finish data upgrade.
+1. Ensure all pre-requisites (e.g. pre-upgrade checklist, data clean-up etc.) are fulfilled and custom code is deployed in Sandbox. Sandbox must only be used for data upgrade.
+2. Download ‘AX2012 Database Upgrade Toolkit for Dynamics 365’ from LCS and use this toolkit from source SQL server.
+3. Execute Replication setup beforehand and keep monitoring it on regular basis using this toolkit.
+4. Turn off the AX 2012 AOS instances at the time of downtime/cut-over.
+5. Ensure Replication completes, validate replication completion (dv) by comparing the number of records between source and target using this toolkit.
+6. Execute Cutover steps using this toolkit and ensure its completion.
+7. Trigger Data upgrade using this toolkit and finish the data upgrade.
+8. Use [Self-service database refresh process](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-refresh#self-service-database-refresh) to copy your upgraded database from sandbox environment into your production environment. 
+9. Complete additional application configuration and Smoke test.
+10.	Allow users back-in.
+
 
 ## Prerequisites 
 Before you can perform an upgrade in the production environment the following prerequisites must be met:
@@ -60,7 +65,7 @@ Before you can perform an upgrade in the production environment the following pr
     - The Test phase of the methodology in LCS. This is to help ensure that you’re at the stage in your project where you’re ready to start testing in the production environment.
     - After a request is submitted to Microsoft to deploy the production environment, it will take roughly 24 hours to deploy, so ensure that you leave enough time for this to happen.
 -	Apply all necessary updates and customizations (AOT deployable packages) to the production environment. There should not be any code change after signing off on a Mock cutover.
--	Use [Self-service database refresh process](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-refresh#self-service-database-refresh) to copy your upgraded database from the data upgrade sandbox environment into your production environment. 
+
 
 ## Related articles
 - [Onboarding](../../fin-ops/imp-lifecycle/onboard.md)
