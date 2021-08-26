@@ -3,8 +3,8 @@
 
 title: Overview
 description: The Dynamics 365 Human Resources User Guide provides you with instructions on setting up Human Resources, setting up compensation and benefits for your employees, and managing your workforce.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
