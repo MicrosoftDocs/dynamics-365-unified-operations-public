@@ -51,8 +51,6 @@ To enable order lookup for guest checkouts, you must turn on the following featu
 
 After you turn on the **Retail anonymous user search order details opting feature** feature, you must enable the API that supports unauthenticated order lookup in Commerce headquarters. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Customer orders**. On the **Customer orders** page, on the **Order search** FastTab, set the **Enable unauthenticated order lookup** option to **Yes**, as shown in the following illustration.
 
-<!-- ![Enable unauthenticated order lookup option set to Yes in Commerce headquarters.](./media/OrderLookup_enable.PNG)-->
-
 ## Manage the display of personal data
 
 The **Order search** FastTab on the **Customer orders** page in Commerce headquarters includes a **Include personal data in guest order lookup** field that lets you control whether personal information is shown to customers. This personal information includes the customer's shipping address and the last four digits of the customer's credit card number. By default, personal information isn't shown to customers when unauthenticated order lookup is enabled. The following table describes the available options.
