@@ -147,7 +147,7 @@ Skype integration is available for environments in the public cloud. For environ
 **Explanation:** This issue usually occurs due to one of three reasons: (1) incorrect sign in, (2) add-in registration data has not been initialized in the environment, or (3) OData issues.  
 
 **Fix:** 
-1.  **Incorrect sign in***: The most likely cause of this issue is that the user is signed in as the wrong user. This can happen if the user has multiple accounts and the browser uses the wrong user context. Before trying any other fix, you should sign out of the add-in using the user menu in the upper right and then sign back into the add-in. If the issue continues to persist, please attempt the next fix ensuring registration data is properly initialized. 
+1.  **Incorrect sign in**: The most likely cause of this issue is that the user is signed in as the wrong user. This can happen if the user has multiple accounts and the browser uses the wrong user context. Before trying any other fix, you should sign out of the add-in using the user menu in the upper right and then sign back into the add-in. If the issue continues to persist, please attempt the next fix ensuring registration data is properly initialized. 
 
 2.  **Registration data not initialized**: If the issue wasn't addressed by signing back into the add-in again, another potential cause of this issue is that the environment doesn't yet have its add-in data initialized. To check this, the admin can navigate to the **Office app parameters** page. For each of the **App parameters**, **Registered applets**, and **Registered resources** tabs on that page, verify that there is data populated in each tab. If any tab has an empty grid, click the appropriate **Initialize...** button on that tab. 
 
@@ -196,8 +196,8 @@ Skype integration is available for environments in the public cloud. For environ
 **Fix**: The issue must be solved from the customer side as the VPN software or browser settings when running under VPN are preventing their machines from retrieving resources and/or interpreting those resources correctly.
 
 Here are some common solutions to VPN issues:
--  Verify the user have access to the locations listed here: [Issue: The Excel Add-in doesn't correctly run or enable sign-in](#fixed-issue-the-excel-add-in-doesnt-correctly-run-or-enable-sign-in)
--  Verify your browser isn't set to "Display intranet sites in Compatibility view" for Microsoft Edge( or Internet Explorer 11). This can be configured by organization policy. 
+-  Verify the user has access to the locations listed here: [Issue: The Excel Add-in doesn't correctly run or enable sign-in](#fixed-issue-the-excel-add-in-doesnt-correctly-run-or-enable-sign-in)
+-  Verify your browser isn't set to "Display intranet sites in Compatibility view" for Microsoft Edge (or Internet Explorer 11). This can be configured by organization policy. 
 -  Have the affected user compare their VPN and Edge/IE browser settings with other users who aren't impacted
 
 ### \[Fixed\] Issue: The Excel Add-in doesn't correctly run or enable sign-in
