@@ -39,7 +39,7 @@ Customers who place orders as registered users can see their order details when 
 
 Additionally, a link or button that takes the customer directly to the order details page for their order can be included in any order-related transactional emails. This link or button will work for orders that are placed both by registered users and by guest users.
 
-## Enable features in Commerce headquarters
+## Turn on necessary features in Commerce headquarters
 
 To enable order lookup for guest checkouts, you must turn on the following features at **Workspaces \> Feature management** in Commerce headquarters.
 
