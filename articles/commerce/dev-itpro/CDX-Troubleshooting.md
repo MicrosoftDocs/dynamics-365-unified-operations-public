@@ -65,7 +65,7 @@ If an error that occurs doesn't appear in the following table, create a support 
 
 - [Commerce Data Exchange best practices](CDX-Best-Practices.md)
 - [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
-- [Commerce offline implementation considerations and troubleshooting](implementation-considerations-offline.md)
+- [Commerce offline implementation troubleshooting](implementation-considerations-offline.md)
 - [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
 - [Select an in-store topology](retail-in-store-topology.md)
 - [Device management implementation guidance](../implementation-considerations-devices.md)
