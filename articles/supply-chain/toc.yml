@@ -3137,6 +3137,8 @@
             href: warehousing/troubleshoot-warehouse-reservations.md
           - name: Troubleshoot warehouse batch and serial reservation hierarchies
             href: warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md
+        - name: Release to warehouse
+          href: warehousing/release-to-warehouse-process.md
         - name: Partial release and partial shipment
           items:
           - name: Partial shipment of a transport load
