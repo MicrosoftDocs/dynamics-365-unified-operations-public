@@ -33,7 +33,7 @@ To ensure a good experience during the implementation of a project and after go-
 
 Microsoft tools and support help ensure the stability and effectiveness of your environment by providing infrastructure and application support. However, this support can be effective only if partners and clients correctly develop, test, configure, manage, and monitor the implemented system and its environments.
 
-![Support provided by Microsoft](./media/support-provided-microsoft.png)
+![Support provided by Microsoft.](./media/support-provided-microsoft.png)
 
 ## Supporting actions
 
@@ -150,7 +150,7 @@ The **Activity** tab lets you query raw logs. It provides predefined queries for
 
 Additionally, you can add your own custom filters and export the logs to a comma-separated values (CSV) file for analysis.
 
-![Activity tab](./media/activity.png)
+![Activity tab.](./media/activity.png)
 
 #### Health Metrics
 

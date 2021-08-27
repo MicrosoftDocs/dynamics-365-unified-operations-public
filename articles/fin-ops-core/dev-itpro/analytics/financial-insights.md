@@ -4,7 +4,7 @@
 title: Financial analysis
 description: Financial analysis uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.
 author: kweekley
-ms.date: 04/22/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -42,9 +42,9 @@ ms.dyn365.ops.version: 7.3
 > - **Page** – A tab in a single .pbix file. Each page can contain one or more visuals.
 > - **Visual** – A single source of data, such as a card, KPI, chart, graph, matrix, or financial statement. A page that has a financial statement as a visual can have no other visuals, because of the size of the data that is being reported on.
 
-Currently, **Financial analysis** is used to view data for either the active legal entity or all legal entities. In future releases, the workspace will evolve into the place where you can use Power BI to edit and create visuals.
+The **Financial analysis** workspace is focused on letting you view and filter the data on existing reports. You are able to add new visuals to the **Financial analysis** workspace. The **Financial analysis** workspace is available for current company as well as all companies to show data for all legal entities, regardless of the legal entities that the role has access to.
 
-The **CFO overview** workspace shows the same visuals as **Financial analysis**, but is focused on letting you view and filter the data on existing reports. In future releases, you will be able to add new visuals to the **Financial analysis** workspace. The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers. The **CFO overview** workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.
+- [Add or edit Power BI visualizations on your dashboard](/powerapps-docs/user/add-powerbi-dashboards.md)
 
 ## Dynamics 365 Finance setup
 **General ledger**
@@ -66,7 +66,7 @@ To appear on the financial statements and to be included in various other visual
 ## Entity store
 The data for **Financial analysis** is pulled from the Entity store (**System administration** \> **Setup** \> **Entity store**). If you open the **CFO overview** or **Financial analysis** workspace, and the following warning message appears in the visuals, you must update the entities.
 
-![Warning](./media/Cantdisplay.png)
+![Warning.](./media/Cantdisplay.png)
 
 You must update the following entities to see data in the **Financial analysis** workspace:
 
@@ -130,7 +130,7 @@ Users can filter the report by using the **Filter** pane on the left. This pane 
 - **Visual-level filters** – These filters are applied only to the selected visual. These filters are applied on top of the page level filters.
 - **Drill-through filter** – This filter filters from a “source” visual that is applied to the current visual when you drill through from the source visual to the current visual.
 
-![Filter options](./media/filter.png)
+![Filter options.](./media/filter.png)
 
 To remove a specific filter value, select the eraser symbol next to it. Don't remove a filter by selecting the X. If you select the X, the field that you're filtering on is removed as a filter option. If you accidentally remove a field from the filter, close the workspace, and then reopen it. The default filter settings will be reapplied.
 
@@ -175,25 +175,25 @@ Various levels of drilling are available through Power BI. Each level has a diff
 
 In the following illustration, the **Trial balance** statement is collapsed to the highest level of the row hierarchy, the main account type.
 
-![Trial balance statement](./media/trial-balance.png)
+![Trial balance statement.](./media/trial-balance.png)
 
 To view the next level of the hierarchy, the main account categories, you can set the **Drill on** field to **Rows** and then select the **Expand** button (the third button after the Drill on field). You now see all the main account categories expanded. Currently, Power BI doesn't let you expand only one row or column but still see all the other rows or columns.
 
-![Trial balance drill down on rows](./media/trial-balance2.png)
+![Trial balance drill down on rows.](./media/trial-balance2.png)
 
 To expand to the main accounts for all rows, you can again use the **Expand** button. However, to drill down to the main accounts for only one row, first select the **Drill down** button (the single downward-pointing arrow on the right side of the window), and then select the row to drill down on. The following illustration shows the result when the **Sales** row is selected after the **Drill down** button is selected.
 
-![Trial balance expand button](./media/trial-balance3.png)
+![Trial balance expand button.](./media/trial-balance3.png)
 
 After you drill down on a single row, multiple clicks are required to return to the full trial balance. The **Drill up** button (the first button after the **Drill** on field) drills up only in the context of the **Sales** category, as shown in the following illustration.
 
-![Trial balance drill up button](./media/trial-balance4.png)
+![Trial balance drill up button.](./media/trial-balance4.png)
 
 You can continue to use the **Drill up** button to return to the highest level of summarization for the rows.
 
 Power BI also has a button that lets you go to the next level in the hierarchy (the second button after the **Drill on** field). The effect of this button differs from the effect of the **Expand** button (the third button after the **Drill on** field), which is used to expand the hierarchy. When you expand the hierarchy, the hierarchy is maintained on the report. For example, as was shown earlier, if you expand on the main account type, you still see the main account type on the report. However, when you go to the next level in the hierarchy, the report no longer shows the parent in the hierarchy, as shown in the following illustration.
 
-![Trial balance drill back button](./media/trial-balance5.png)
+![Trial balance drill back button.](./media/trial-balance5.png)
 
 To see the transaction details behind the summarized balances, you can select some amounts to drill back into Financial and Operations.
 
@@ -232,7 +232,7 @@ Currently, the financial statements don't support the organizational hierarchies
 ## Data limitations
 The financial statement visuals have a limit on the number of rows that can be shown. Currently, the limit is set to 30,000. If you exceed this limit, the visual will have a warning symbol to notify you about this situation.
 
-![Data limitations](./media/data-limit.png)
+![Data limitations.](./media/data-limit.png)
 
 If the maximum is exceeded, the totals that appear on the financial statement will be incorrect, because not all the rows were loaded into the visual.
 

@@ -45,7 +45,7 @@ When assets have been selected on a maintenance downtime registration, all open 
 
 Click **Asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** to open a list of all maintenance downtime activities and see some of the information related to the activities. Click on a link in the **Maintenance downtime activities** column to open the details view. The illustration below shows an example of the **Maintenance downtime activities** list.
 
-![Figure 1](media/19-preventive-maintenance.png)
+![Figure 1.](media/19-preventive-maintenance.png)
 
 
 ## Create a maintenance downtime activity
@@ -66,7 +66,7 @@ Click **Asset management** > **Common** > **Maintenance downtime activities** > 
 
 The illustration below shows an example of the **Maintenance downtime activities** details view.
 
-![Figure 2](media/20-preventive-maintenance.png)
+![Figure 2.](media/20-preventive-maintenance.png)
 
 >[!NOTE]
 >The work order maintenance jobs and maintenance schedule lines related to the selected assets are automatically updated if new work orders or maintenance schedule lines are created after you created the maintenance downtime activity. For example, if you schedule maintenance plans or maintenance rounds on the related assets two days after the maintenance downtime activity was created, new maintenance schedule lines are automatically added to the maintenance downtime activity.
@@ -77,7 +77,7 @@ The illustration below shows an example of the **Maintenance downtime activities
 
 10. Click **OK** to start the calculation. The total number of hours is shown in the **Capacity load** overview. On the **Capacity load** tab > the **Group by...** Action Pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours. The illustration below shows the results of a **Capacity load** calculation.
 
-![Figure 3](media/21-preventive-maintenance.png)
+![Figure 3.](media/21-preventive-maintenance.png)
 
 11. After you get an overview of the capacity load, if you want to make adjustments on work order maintenance jobs or maintenance schedule lines, return to the **Maintenance downtime activities** details view and select the lines you want to adjust on the **Resulting work order maintenance jobs** and **Maintenance schedule lines** FastTabs.
 
@@ -94,7 +94,7 @@ The illustration below shows an example of the **Maintenance downtime activities
 
 16. Click **OK** to start the calculation. The total number of item forecasts is shown in the  **Item forecast** overview. On the **Item forecast** tab > the **Group by...** Action Pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted items.The illustration below shows the results of an **Item forecast** calculation.
 
-![Figure 4](media/22-preventive-maintenance.png)
+![Figure 4.](media/22-preventive-maintenance.png)
 
 - You can copy assets from one maintenance downtime activity to another. In **All maintenance downtime activities**, select the **Copy maintenance downtime activities** button, and make your selections in the **From maintenance downtime activities** and **To maintenance downtime activities** fields, and click **OK**.
 - In **All maintenance downtime activities**, click the **Maintenance schedule lines** button or the **Active work orders** button to open the related lists and view the lines related to the selected maintenance downtime activity.

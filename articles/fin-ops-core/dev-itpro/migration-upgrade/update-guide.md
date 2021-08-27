@@ -108,7 +108,7 @@ The following environments are the environments in your current release:
 + **UAT** – A pre-production environment that is used for user acceptance testing. The UAT environment is a Tier-2 (Standard Acceptance Test) or higher environment. It runs the same version of Finance and Operations apps as the production environment. It also runs the latest release version of your custom code extensions. This environment is typically connected to a copy of the production database.
 + **Prod** – Your live production environment that runs on your production database.
 
-:::image type="content" source="media/uguide-environments.png" alt-text="Environments that run your current release":::
+:::image type="content" source="media/uguide-environments.png" alt-text="Environments that run your current release.":::
 
 ### <a id="next-environments"></a>Environments that run the next version of your custom code
 
@@ -117,13 +117,13 @@ The following environments run the next version of your custom code:
 - **Dev 2** – A development environment that is used for development of the next version of your custom code extensions. It uses Azure DevOps for version control of custom code. It's connected to the development branch (**main** branch) of your custom code. For more information, see the [Manage source code branches](#manage-source-code-branches) section.
 - **Test 2** – A functional test environment that is used for testing of the next version of your custom code extensions.
 
-:::image type="content" source="media/uguide-next-environments.png" alt-text="Environments that run the next version of your custom code":::
+:::image type="content" source="media/uguide-next-environments.png" alt-text="Environments that run the next version of your custom code.":::
 
 ## Manage source code branches
 
 It's important that you follow best practices as you manage branches of custom code. In this way, you help minimize cost, and ensure the quality of your releases and updates.
 
-:::image type="content" source="media/uguide-branches.png" alt-text="Manage source code branches":::
+:::image type="content" source="media/uguide-branches.png" alt-text="Manage source code branches.":::
 
 The **main** branch (development branch) contains the latest functioning version of the next release of your code.
 
@@ -382,7 +382,7 @@ This section describes the recommended flow for two use cases that require that 
 
 When a critical bug is found in the UAT or Prod environment, fix the bug in the release branch (not in the **main** or development branch), and use the standard process to apply a deployable package to UAT and Prod.
 
-:::image type="content" source="media/uguide-hotfix.png" alt-text="Process for a hotfix":::
+:::image type="content" source="media/uguide-hotfix.png" alt-text="Process for a hotfix.":::
 
 1. In Dev 1, make the code fix in the release branch. If the required fix is in ISV code, ask the ISV to send you a new build of the current release, not the next version of the solution.
 2. Compile and test.

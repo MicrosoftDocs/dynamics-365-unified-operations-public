@@ -37,7 +37,7 @@ You can view all purchase agreements on the **Purchase agreements** list page an
 4. In the **Number sequence code** field, select the code for the number sequence that should be used to number agreements that belong to the agreement classification.
 5.  Select **Save**.
 
-![Sales agreement classification page](media/1_Sales_agreement_classifications.png)
+![Sales agreement classification page.](media/1_Sales_agreement_classifications.png)
 
 > [!NOTE]
 > You can't delete an agreement classification that is used for existing agreements.
@@ -47,7 +47,7 @@ You can view all purchase agreements on the **Purchase agreements** list page an
 1. Go to **Procurement and sourcing** \> **Setup** \> **Purchase agreement classification**.
 2. Specify the details as described in the previous section of this topic, [Create sales agreement classifications](#create-sales-agreement-classifications).
 
-![Purchase agreement classification page](media/2_Purchase_agreement_classifications.png)
+![Purchase agreement classification page.](media/2_Purchase_agreement_classifications.png)
 
 ## <a name="create-sales-agreement"></a>Create a sales agreement
 
@@ -64,7 +64,7 @@ For more information about how to create sales agreements, see [Enter sales agre
 
 4. Select **OK**.
 
-    ![Create sales agreement dialog box](media/3_Create_sales_agreement.png)
+    ![Create sales agreement dialog box.](media/3_Create_sales_agreement.png)
 
 5. On the **Sales agreements** page, on the **Sales agreement header** FastTab, specify the following details:
 
@@ -76,7 +76,7 @@ For more information about how to create sales agreements, see [Enter sales agre
     > [!NOTE]
     > Transactions can be posted only for agreements that have a status of **Effective**.
 
-    ![Sales agreement header FastTab](media/4_Sales_agreements.png)
+    ![Sales agreement header FastTab.](media/4_Sales_agreements.png)
 
 6. Switch to the **Header** view, and then, on the **General** FastTab, follow these steps:
 
@@ -87,7 +87,7 @@ For more information about how to create sales agreements, see [Enter sales agre
 
   -   In the **Subject of an agreement** section, in the **Subject of an agreement** field, enter a comment or notes about the agreement.
 
-   ![Sales agreement General FastTab](media/5_Sales_agreements.png)
+   ![Sales agreement General FastTab.](media/5_Sales_agreements.png)
 
 7. On the **Financial** FastTab, follow these steps:
 
@@ -111,12 +111,12 @@ For more information about how to create sales agreements, see [Enter sales agre
     - In the **Posting profile** field, if you specify an agreement for transactions, you can select the counterparty posting profile that should be used when transactions are posted.
      - In the **Posting profile with prepayment journal voucher** field, you can select a separate posting profile that should be used when a prepayment is registered for the agreement. If you don't set this field, a default value is taken from the **Accounts receivable parameters** page.
 
-   ![Sales agreements page](media/6_Sales_agreements.png)
+   ![Sales agreements page.](media/6_Sales_agreements.png)
 
 8. On the **Terms** FastTab, in the **Payment** section, set the fields for payment terms. In the **Payment day** field, select a calendar of payment days.
 9. On the **Contact information** FastTab, specify contact information for the agreement.
 
-    ![Sales agreements page Contact Information FastTab](media/7_Sales_agreements.png)
+    ![Sales agreements page Contact Information FastTab.](media/7_Sales_agreements.png)
 
 10. On the **Financial dimensions** FastTab, specify financial dimensions. When you specify an agreement in a document, the financial dimensions of the agreement are entered into the document dimension.
 11. Select **Save**.
@@ -127,7 +127,7 @@ For more information about how to create sales agreements, see [Enter sales agre
 2.  On the **Sales agreement** tab, in the **Setup** section, select **Commission calculation**.
 3.  On the **Commission calculation** page, set up a commission for the selected agreement. For more information about how to set up commissions, see [Register sales commissions](../../supply-chain/sales-marketing/tasks/register-sales-commissions.md).
 
-![Commission calculation page](media/8_Commission_calculation.png)
+![Commission calculation page.](media/8_Commission_calculation.png)
 
 ## Create a purchase agreement
 
@@ -144,7 +144,7 @@ For more information about how to create purchase agreements, see [Create a purc
 
 4. Select **OK**.
 
-    ![Create purchase agreement dialog box](media/9_Create_purchase_agreement.png)
+    ![Create purchase agreement dialog box.](media/9_Create_purchase_agreement.png)
 
 5. On the **Purchase agreements** page, specify the details as described in the [Create a sales agreement](#create-sales-agreement) section earlier in this topic.
 

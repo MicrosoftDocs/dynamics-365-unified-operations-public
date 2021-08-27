@@ -4,7 +4,7 @@
 title: Overview
 description: The Dynamics 365 Human Resources User Guide provides you with instructions on setting up Human Resources, setting up compensation and benefits for your employees, and managing your workforce.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
-ms.custom: 7521
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -107,6 +107,7 @@ The Dynamics 365 Human Resources User Guide provides you with instructions on se
 [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)</br>
 [Request time off](hr-employee-self-service-request-time-off.md)</br>
 [View team and company calendars](hr-employee-self-service-calendar.md)</br>
+[Configure the Absence manager role](hr-configure-absence-manager.md)</br>
 
 ## Develop employees
 

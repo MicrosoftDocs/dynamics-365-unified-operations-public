@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Reporting for multiple VAT registrations (Preview)
+title: Reporting for multiple VAT registrations
 description: This topic provides information about reporting for multiple value-added tax (VAT) registrations.
 author: anasyash
-ms.date: 06/17/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,31 +25,18 @@ ms.dyn365.ops.version:
 
 ---
 
-# Reporting for multiple VAT registrations (Preview)
+# Reporting for multiple VAT registrations 
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to do reporting for multiple value-added tax (VAT) registrations.
 
 ## Prerequisites
 
-Before you can do the reporting for multiple VAT registrations, the following prerequisites must be completed:
+Configure the Tax Calculation service. For more information, see [Tax Calculation](global-tax-calcuation-service-overview.md).
 
-1. Enable the Tax Calculation service.
-2. Configure the Tax Calculation service.
-3. Enable additional tax ID features.
-4. Set up the **Multiple VAT registrations** feature.
-
-### Enable the Tax Calculation service
-
-1. Go to **Tax** > **Setup** > Tax configuration** > **Tax service setup (Preview)**.
-2. On the **General** tab, set the **Enable tax service** option to **Yes**.
-
-    ![tax service parameters](media/Multipleid-image1.png)
-
-### Configure the Tax Calculation service
-
-For information about how to configure the Tax Calculation service, see [Tax Calculation](global-tax-calcuation-service-overview.md).
 
 ### Enable features in the feature management
 
@@ -70,9 +57,15 @@ For information about how to set up the **Multiple VAT registrations** feature, 
 
 In the **Feature management** workspace, enable the following features:
 
-   - Intrastat reporting by Multiple Tax ID
-   - EU Sales list reporting by Multiple Tax ID
-   - Sales tax declaration by Multiple Tax ID
+   - Intrastat reporting for multiple VAT registrations
+   - EU Sales list reporting for multiple VAT registrations
+   - Sales tax declaration for multiple VAT registrations
+
+## Activate feature for specific legal entity
+1. Go to **Tax** > **Setup** > **Tax configuration** > **Tax calculation parameters**.
+2. On the **General** tab, set **Enable tax service** to **Yes**.
+3. On the **Multiple VAT registrations** tab, set **VAT declaration**, **EU Sales List**, and **Intrastat** to **Yes** to activate VAT reporting, EU sales list reporting, or Intrastat reporting respectively, for the selected legal entity.
+
 
 ## Set up intra-community reporting for multiple VAT registrations
 
@@ -102,7 +95,7 @@ All tax registrations have the same settings for Intrastat parameters.
     - Rounding rules
     - Commodity code hierarchy
 
-    ![Foreign trade parameters1](media/Multipleid-image2.png)
+    ![Foreign trade parameters1.](media/Multipleid-image2.png)
 
 For more information about how to configure Intrastat, see [Intrastat overview](emea-intrastat.md).
 
@@ -113,19 +106,23 @@ For more information about how to configure Intrastat, see [Intrastat overview](
 3. In the **File format mapping** field, select the Electronic reporting (ER) format for intrastat file export, for example, select **Intrastat (NL)** for Netherlands.
 4. In the **Report format mapping** field, select the ER format for printable report layout, for example, select **Intrastat report**.
 
-    ![foreign trade parameters2](media/Multipleid-image3.png)
+    ![foreign trade parameters2.](media/Multipleid-image3.png)
 
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
 
     The following table shows the earliest ER format versions that you can select the format for.
 
-    | **Release** | **Country** | **ER format** |
-    |-------------------------|-------------------------|-------------------------|
-    | 10.0.19 | All | Intrastat model.version.16 |
-    | 10.0.19 | NL | Intrastat (NL).version.1.3 |
-    | 10.0.20 | FR | Intrastat INTRACOM (FR).version.13.5</br>Intrastat SAISUNIC (FR).version.1.3 |
-    | 10.0.20 | UK (NI) | Intrastat (UK).version.1.2 |
+    | **Release** | **Country** | **ER format**                                                                     |
+    |-------------|-------------|-----------------------------------------------------------------------------------|
+    | 10.0.19     | All         | Intrastat model.version.16                                                        |
+    | 10.0.19     | NL          | Intrastat (NL).version.1.3                                                        |
+    | 10.0.20     | FR          | Intrastat INTRACOM (FR).version.13.5</br>Intrastat SAISUNIC (FR).version.1.3      |
+    | 10.0.20     | UK (NI)     | Intrastat (UK).version.1.2                                                        |
+    | 10.0.21     | AT          | Intrastat (AT).version.16.3                                                       |
+    | 10.0.21     | DE          | Intrastat model.version.22</br>INSTAT XML.version.22.9</br>INSTAT XML (DE).version.22.9.9 |
+    | 10.0.21     | ES          | Intrastat (ES).version.16.7                                                       |
+    | 10.0.21     | SE          | Intrastat (SE).version.16.4                                                       |
 
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
@@ -143,7 +140,7 @@ Before you configure settings and start to use the Intrastat feature, analyze co
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Transaction codes**.
 2. Create the required transaction codes.
 
-    ![transaction codes](media/Multipleid-image4.png)
+    ![transaction codes.](media/Multipleid-image4.png)
 
 For each transaction code that you create, you must set up the rules that are used to calculate invoice amounts and statistical amounts for transfer orders, and for sales orders and purchase orders.
 
@@ -155,7 +152,7 @@ For each transaction code that you create, you must set up the rules that are us
 
     - **Manual:** The amount will equal the amount that is specified in the **Invoiced amount** and **Statistical value** fields on the transfer order line. These values are taken from the **Amount** field on the transfer order line.
 
-    ![transfer order](media/Multipleid-image5.png)
+    ![transfer order.](media/Multipleid-image5.png)
 
 -   For sales orders and purchase orders, set up one of the following rules:
 
@@ -170,23 +167,26 @@ All tax registrations have the same setup for compression rules.
 1. Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**.
 2. Select the values to use in the **Compression** function. Select all the values that are reported in any of the countries where you have tax registrations. For example, in 2021, the following values should be reported in some countries.
 
-    | **Value** | **Belgium** | **Netherlands** | **Northern Ireland (United Kingdom)** | **France** |
-    |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
-    | **Mandatory elements** |  |  |  |  |
-    | Direction (Flow) | Yes | Yes | Yes | Yes |
-    | Commodity code | Yes | Yes | Yes | Yes |
-    | Partner Member State | Yes | Yes | Yes | Yes |
-    | Transaction code | Yes | Yes | Yes | Yes |
-    | VAT number of partner (Tax exempt number)</br><em>Mandatory on dispatches from 2022 for all EU countries</em> | Yes | Yes | No | Yes |
-    | **Optional elements** |  |  |  |  |
-    | Country of origin</br><em>(On dispatch and/or on arrival)</em> <em>Mandatory on dispatches from 2022 for all EU countries</em> | Yes | Yes | No | Yes |
-    | Delivery terms | Yes | No | Yes | No |
-    | Mode of transport | Yes | No | No | Yes |
-    | State of origin, County of origin (Region of origin) | Yes | No | No | Yes |
-    | Statistics procedure | No | Yes | No | Yes |
-    | **Additional elements for country purposes** |  |  |  |  |
-    | Transport document (Invoice, Identification of packing slip or product receipt) | No | Yes | No | No |
-
+| **Value**                                                                                                   | **Austria** | **Belgium** | **France** | **Germany** | **Netherlands** | **Northern Ireland (United Kingdom)** | **Spain** | **Sweden** |
+|-------------------------------------------------------------------------------------------------------------|-------------|-------------|------------|-------------|-----------------|---------------------------------------|-----------|------------|
+| **Mandatory elements**                                                                                      |             |             |            |             |                 |                                       |           |            |
+| Direction (Flow)                                                                                            | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | **Yes**                               | **Yes**   | **Yes**    |
+| Commodity code                                                                                              | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | **Yes**                               | **Yes**   | **Yes**    |
+| Partner Member State                                                                                        | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | **Yes**                               | **Yes**   | **Yes**    |
+| Transaction code                                                                                            | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | **Yes**                               | **Yes**   | **Yes**    |
+| Tax exempt number (VAT number of partner)                                                                   | No          | **Yes**     | **Yes**    | No          | **Yes**         | No                                    | No        | No         |
+| *Mandatory on dispatches from 2022 for all EU countries*                                                    |             |             |            |             |                 |                                       |           |            |
+| **Optional elements**                                                                                       |             |             |            |             |                 |                                       |           |            |
+| Country of origin                                                                                           | **Yes**     | **Yes**     | **Yes**    | **Yes**     | **Yes**         | No                                    | **Yes**   | No         |
+| *(On dispatch and/or on arrival)* *Mandatory on dispatches from 2022 for all EU countries*                  |             |             |            |             |                 |                                       |           |            |
+| Delivery terms                                                                                              | No          | **Yes**     | No         | No          | No              | **Yes**                               | **Yes**   | No         |
+| Mode of transport                                                                                           | **Yes**     | **Yes**     | **Yes**    | **Yes**     | No              | No                                    | **Yes**   | No         |
+| State of origin (Region of origin) *(on dispatch and/or on arrival)*                                        | No          | **Yes**     | No         | **Yes**     | No              | No                                    | No        | No         |
+| County of origin (Region of origin) *(on dispatch and/or on arrival)*                                       | No          | No          | **Yes**    | No          | No              | No                                    | **Yes**   | No         |
+| Statistics procedure                                                                                        | **Yes**     | No          | **Yes**    | No          | **Yes**         | No                                    | **Yes**   | No         |
+| **Additional elements for country purposes**                                                                |             |             |            |             |                 |                                       |           |            |
+| Transport document (Invoice, Identification of packing slip or product receipt)                             | No          | No          | No         | No          | **Yes**         | No                                    | No        | No         |
+| Port ((Air)port of (un)loading)                                                                             | No          | No          | No         | No          | No              | No                                    | **Yes**   | No         |
 
 > [!NOTE]
 > Select all values that must be reported on the **Compression of Intrastat** page.
@@ -202,7 +202,7 @@ All tax registrations have the same setup for compression rules.
 
     This setting is mandatory in some countries, such as the United Kingdom.
 
-    ![sales tax code](media/Multipleid-image6.png)
+    ![sales tax code.](media/Multipleid-image6.png)
 
 #### Set up item sales tax groups
 
@@ -226,20 +226,23 @@ All tax registrations have the same settings for EU sales list parameters.
 3. In the **File format mapping** field, select the ER format for EU sales list report electronic format. For example, for Netherlands, select **EU Sales list (NL)**.
 4. In the **Report format mapping** field, select the ER format for printable report layout. For example, select either **EU sales list by rows report**, or **EU sales list by columns report**.
 
-    ![foreign trade parameters 3](media/Multipleid-image7.png)
+    ![foreign trade parameters 3.](media/Multipleid-image7.png)
 
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
 
     The following table shows the earliest ER format versions that you can select the format for.
 
-    | **Release** | **Country** | **ER format** |
-    |-------------------------|-------------------------|-------------------------|
-    | 10.0.19 | All | EU Sales list model.version.9 |
-    | 10.0.19 | NL | EU Sales list (NL).version.1.10 |
-    | 10.0.20 | FR | EU Sales list (FR).version.1.2 |
-    | 10.0.20 | UK (NI) | EU Sales list XML (UK).version.9.6</br>EU Sales list TXT (UK).version.9.7 |
-
+| **Release** | **Country** | **ER format**                                                          |
+|-------------|-------------|------------------------------------------------------------------------|
+| 10.0.19     | All         | EU Sales list model.version.9                                          |
+| 10.0.19     | NL          | EU Sales list (NL).version.1.10                                        |
+| 10.0.20     | FR          | EU Sales list (FR).version.1.2                                         |
+| 10.0.20     | UK (NI)     | EU Sales list XML (UK).version.9.6</br>EU Sales list TXT (UK).version.9.7 |
+| 10.0.21     | AT          | EU Sales list (AT).version.9.5                                         |
+| 10.0.21     | DE          | EU Sales list (DE).version.9.5                                         |
+| 10.0.21     | ES          | EU Sales list (ES).version.9.2                                         |
+| 10.0.21     | SE          | EU Sales list model.version.11.xml</br>EU Sales list (SE).version.11.6.xml |
 
 ## Generate intra-community reporting for multiple VAT registrations
 
@@ -249,11 +252,11 @@ All tax registrations have the same settings for EU sales list parameters.
 2. Select **Transfer**.
 3. In the **Tax registration number** dialog box, select the tax registration number to transfer transactions for, and then select **OK**.
 
-    ![transfer intrastat](media/Multipleid-image8.png)
+    ![transfer intrastat.](media/Multipleid-image8.png)
 
 4. In the **Intrastat (Transfer)** dialog box, select the documents to transfer: **Free text invoice**, **Customer invoice**, **Customer packing slips**, **Vendor invoice**, **Vendor product receipts**, **Project invoice**, or **Transfer order**. Then and select **OK**.
 
-    ![Intrastat  Transfer  dialog box](media/Multipleid-image9.png)
+    ![Intrastat  Transfer  dialog box.](media/Multipleid-image9.png)
 
 5. Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
 
@@ -264,13 +267,13 @@ All tax registrations have the same settings for EU sales list parameters.
 6. Select **Output** > **Report**.
 7. In the **Tax registration number** dialog box, select the tax registration number to generate the Intrastat report for, and then select **OK**.
 
-    ![Intrastat  Reporting  dialog box](media/Multipleid-image10.png)
+    ![Intrastat  Reporting  dialog box.](media/Multipleid-image10.png)
 
 8. In the **Intrastat Report** dialog box, in the **From date** and **To date** fields, define the period to generate the Intrastat report for.
 9. Set the **Generate file** option to **Yes** to generate an electronic reporting file. Then, in the **File name** field, enter the name of the output electronic file if applicable.
 10. Set the **Generate report** option to **Yes** to generate an Excel report. Then, in the **Report file name** field, enter the name of the output Excel file if applicable.
 
-    ![Intrastat report dialog box](media/Multipleid-image11.png)
+    ![Intrastat report dialog box.](media/Multipleid-image11.png)
 
 11. The dialog box also contains country-specific fields that are required in the country-specific Intrastat report. Set these fields as required.
 12. Select **OK** to generate the report.
@@ -281,11 +284,11 @@ All tax registrations have the same settings for EU sales list parameters.
 2. Select **Transfer**.
 3. In the **Tax registration number** dialog, select the tax registration number to transfer transactions for, and then select **OK**.
 
-    ![ESL transfer dialog box](media/Multipleid-image12.png)
+    ![ESL transfer dialog box.](media/Multipleid-image12.png)
 
 4. In the **Transfer transactions for EU sales list** dialog box, select the documents and reporting types to transfer.
 
-    ![ESL transfer dialog box2](media/Multipleid-image13.png)
+    ![ESL transfer dialog box2.](media/Multipleid-image13.png)
 
 5. Select **Select** to adjust the default filter for transactions that should be transferred, and then select **Transfer**.
 6. Transactions for the selected tax registration, documents, and reporting types are transferred. Review the transactions, and make any adjustments that are required.
@@ -295,7 +298,7 @@ All tax registrations have the same settings for EU sales list parameters.
 10. Set the **Generate file** option to **Yes** to generate an electronic reporting file. Then, in the **File name** field, enter the name of the output electronic file.
 11. Set the **Generate report** option to **Yes** to generate an Excel report. Then, in the **Report file name** field, enter the name of the output Excel file.
 
-    ![ESL report dialog box](media/Multipleid-image14.png)
+    ![ESL report dialog box.](media/Multipleid-image14.png)
 
 12. The dialog box also contains country-specific fields that are required in the country-specific EU sales list report. Set these fields as required.
 13. Select **OK** to generate the report.
@@ -305,19 +308,21 @@ All tax registrations have the same settings for EU sales list parameters.
 1. Go to **Tax &gt; Set up &gt; Parameters &gt; General ledger parameters**.
 2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, select the VAT reporting formats for each country of your tax registration.
 
-    ![GL parameters](media/Multipleid-image15.png)
+    ![GL parameters.](media/Multipleid-image15.png)
 
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
 
-    In the 10.0.19 release, a format for the Netherlands is available for preview. For more information, see [VAT declaration for Netherlands](emea-nl-vat-declaration-netherlands.md) topic.
-
-    The following table shows the earliest ER format versions, that you can select the format for.
-
-    | **Release** | **Country** | **ER format** |
-    |-------------------------|-------------------------|-------------------------|
-    | 10.0.19 | All | Tax declaration model.version.85</br>Tax declaration model mapping.version.85.138 |
-    | 10.0.19 | NL | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17 |
+    The following table shows the earliest ER format versions that you can select the format for. For more information about how to run VAT declaration for specific country, review the related topic.
+    
+| **Release** | **Country** | **ER format** | **Link to topic** |
+|-------------|-------------|---------------|-------------------|
+| 10.0.19     | All         | Tax declaration model.version.85</br>Tax declaration model mapping.version.85.138|    |
+| 10.0.19     | NL          | VAT Declaration XML (NL).version.85.14</br>VAT Declaration Excel (NL).version.85.14.17| [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md)|
+| 10.0.20     | FR          | VAT Declaration Excel (FR).version.85.15| [VAT declaration (France)](emea-fra-vat-declaration-preview-france.md) |
+| 10.0.21     | UK          | MTD VAT importing model mapping (UK).version.31.36</br>Tax declaration model mapping.version.95.158</br>VAT Declaration Excel (UK).version.32.30.16</br>VAT Declaration JSON (UK).version.32.31 | [Prepare for integration with MRD for VAT](emea-gbr-mtd-vat-integration.md)   |
+| 10.0.21     | SE          | VAT Declaration XML (SE).version.95.11</br>VAT Declaration Excel (SE).version.95.11.13| [VAT declaration (Sweden)](emea-swe-vat-declaration-sweden.md)   |
+| 10.0.21     | CH          | Tax declaration model.version.96</br>Tax declaration model mapping.version.96.164</br>VAT Declaration XML (CH).version.96.16</br>VAT Declaration Excel (CH).version.96.16.9 | [VAT declaration (Switzerland)](emea-che-vat-declaration-switzerland.md) |
 
 
 ## Generate a VAT declaration for multiple VAT registrations
@@ -331,7 +336,7 @@ All tax registrations have the same settings for EU sales list parameters.
     - **Corrections:** Generate a report for sales tax transactions of all subsequent sales tax payments for the period.
     - **Total list:** Generate a report for all sales tax transactions for the period, including the original and all corrections.
 
-    ![Report sales tax](media/Multipleid-image16.png)
+    ![Report sales tax.](media/Multipleid-image16.png)
 
 5. Select **OK** to generate the report.
 

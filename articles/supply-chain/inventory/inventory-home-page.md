@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
-ms.custom: 2094
+ms.custom: ["2094", "intro-internal"]
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -44,7 +44,7 @@ You can use Inventory management to perform the following tasks:
 The following learning map shows the major concepts and tasks that make up the framework of the Inventory management module. Click the learning map below to expand it. This learning map will help you get started.
 
 
-[![Inventory learning map](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
+[![Inventory learning map.](./media/inventory-learning-map.png)](./media/inventory-learning-map.png)
 
 ## Additional resources
 

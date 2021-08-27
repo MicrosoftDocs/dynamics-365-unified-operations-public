@@ -114,7 +114,7 @@ An additional mapping also needs to be added. Select the last **None** column to
 
 The updated mappings should look like the following image.
 
-![Departments to Operating units task](./media/DepartmentMapping.png)
+![Departments to Operating units task.](./media/DepartmentMapping.png)
 
 
 The Jobs to Job Detail task needs the following mappings updated.
@@ -127,7 +127,7 @@ The Jobs to Job Detail task needs the following mappings updated.
 
 The updated mappings should look like the image below.
 
-![Jobs to Job Detail task](./media/JobMapping.png)
+![Jobs to Job Detail task.](./media/JobMapping.png)
 
 The Workers to Work task needs the following mappings updated.
 
@@ -147,9 +147,9 @@ The Gender column transform also needs to be updated. Select the **fn** (functio
 
 The updated mappings should look like the following images.
 
-![Workers to Worker task](./media/WorkerMapping.png)
+![Workers to Worker task.](./media/WorkerMapping.png)
 
-![Gender column transform](./media/WorkerTransform.png)
+![Gender column transform.](./media/WorkerTransform.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

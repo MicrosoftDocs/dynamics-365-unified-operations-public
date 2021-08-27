@@ -42,7 +42,7 @@ The first year of service will conclude in December 2020, which means the end of
 > Yearly depreciation 50,000/5 = 10,000 monthly depreciation 10,000/12 = 833.33 <br>
 > First year depreciation 10,000/2 = 5,000  and the subsequent monthly depreciation 5,000/9 = 555.56
 
-   [![Depreciation schedule for half-year depreciation convention](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
+   [![Depreciation schedule for half-year depreciation convention.](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 The extended depreciation periods that are added by the half-year convention provide more accurate allocation of depreciation. The six-month convention represents depreciation expenses more equally, which is useful for reporting on the profit and loss statement.
 

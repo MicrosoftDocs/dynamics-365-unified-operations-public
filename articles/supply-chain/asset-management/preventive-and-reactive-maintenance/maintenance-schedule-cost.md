@@ -55,7 +55,7 @@ In Asset Management, you can calculate budget costs on maintenance schedule line
 
 The illustration below shows the results of a maintenance schedule cost calculation.
 
-![Figure 1](media/17-preventive-maintenance.png)
+![Figure 1.](media/17-preventive-maintenance.png)
 
 
 

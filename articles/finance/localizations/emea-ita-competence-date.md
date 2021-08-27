@@ -68,7 +68,7 @@ This report includes the following fields:
 -   Currency
 -   Debit or credit amount of the document
 
-![Fiscal journal report transactions](media/ITA-Competence-date-for-transactions-1-fiscal-journal.png)
+![Fiscal journal report transactions.](media/ITA-Competence-date-for-transactions-1-fiscal-journal.png)
 
 ## Example
 
@@ -79,15 +79,15 @@ The company's fiscal year is from January 1 through December 31. The balance she
 3. In the **Transaction date** field, specify April 15.
 4. Post the transaction.
 
-    ![Journal voucher page](media/ITA-Competence-date-for-transactions-2-general-journal.png)
+    ![Journal voucher page.](media/ITA-Competence-date-for-transactions-2-general-journal.png)
 
 5. Go to **General ledger** \> **Inquiries and reports** \> **Fiscal journal**, and run the report. The transaction is reported on the fiscal journal line. The **Posting date** field is set to April15, and the **Competence date** field is set to December 31.
 
-    ![Fiscal journal page](media/ITA-Competence-date-for-transactions-3-fiscal-journal.png)
+    ![Fiscal journal page.](media/ITA-Competence-date-for-transactions-3-fiscal-journal.png)
 
 6. Go to **General ledger \> Inquiries and reports \> Trial balance**, and run the report.
 
-    ![Graphical user interface, application Description automatically generated](media/ITA-Competence-date-for-transactions-4-trial-balance.png)
+    ![Graphical user interface, application Description automatically generated.](media/ITA-Competence-date-for-transactions-4-trial-balance.png)
 
 7. Go to **General ledger** \> **Inquiries and reports** \> **Voucher transactions**.
 8. On the **Voucher transactions** page, add the **Transaction date** column.
@@ -105,7 +105,7 @@ If you need to calculate the number of the documents included in the Fiscal jour
 2.	Convert the PDF to Microsoft Excel using a converter software.
 3.	Create a pivot table and in the **Rows** field, select **Docum. No.**.
 
-    ![Excel pivot table](media/ExcelPivotTable.png)
+    ![Excel pivot table.](media/ExcelPivotTable.png)
 
 The number of documents is equal to number of lines in the pivot table.
 

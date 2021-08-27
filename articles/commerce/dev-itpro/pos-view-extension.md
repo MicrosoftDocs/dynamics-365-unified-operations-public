@@ -71,7 +71,6 @@ The following table shows the POS views that currently support extensions. It al
 | SuspendTransactionView          | No                            | Yes                          | No                               |   
 | ManageShiftView                 | No                            | No                           | Yes                               |  
 | ReportDetailsView               | No                            | No                           | Yes                               |
-| SearchReceiptsView              | No                            | No                           | Yes                               |
 | TransferOrderDetailsView        | No                            | No                           | Yes                               |
 | FulfillmentLineView             | No                            | Yes                          | Yes                               |
 | ReturnTransactionView           | No                            | Yes                          | Yes                               |
@@ -81,6 +80,7 @@ The following table shows the POS views that currently support extensions. It al
 | SalesInvoicesView (10.0.11) | No                            | Yes                          | No           |
 | InventoryDocumentShippingAndReceivingView (10.0.13) | No                            | No                          | Yes           |
 | InventoryDocumentListView  | No                            | Yes (10.0.15)                          | Yes (10.0.13)          |
+| ManageShiftsView  | No                            | Yes (10.0.21)                          | No          |
 
 
 

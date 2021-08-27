@@ -81,13 +81,13 @@ When e-commerce visitors choose to check out as guests, customer records aren't 
 
 When named users (signed-in customers) go to the payment step of the checkout process, they will experience the List PI capability. The first time that a named user checks out, a **Save for my next payment** check box appears in the section where credit card information is entered. 
 
-![Save for my next payment option](../media/Payments/Save_PI.png)
+![Save for my next payment option.](../media/Payments/Save_PI.png)
 
 If this check box is selected, when a new credit card is submitted for payment, the named user's unique customer ID is sent to the payment processor, and the credit card is securely saved and mapped to the that unique customer ID. 
 
 If the same customer signs in during future visits to the storefront, they will be able to select the same credit card for payment at checkout. 
 
-![Previously saved payment instrument](../media/Payments/Saved_PI.jpg)
+![Previously saved payment instrument.](../media/Payments/Saved_PI.jpg)
 
 ### Order fulfillment and processing
 

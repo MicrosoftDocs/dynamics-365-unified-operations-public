@@ -120,7 +120,7 @@ These options allow you to remove steps from the recording. If you delete a pend
 
 ## Steps list
 
-![Example step list](media/example-step-list.png)
+![Example step list.](media/example-step-list.png)
 
 ### Step counter
 <img src="media/step-counter.png" alt="Step counter"/>

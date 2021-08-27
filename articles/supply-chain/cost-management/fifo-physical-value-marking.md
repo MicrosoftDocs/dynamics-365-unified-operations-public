@@ -57,7 +57,7 @@ In this example, the item model group isn't marked to include physical value. Th
 
 The new running average cost price reflects the average of the financially updated transactions. The following illustrations shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option isn't used. 
 
-![FIFO without Include Physical Value](./media/fifowithoutincludephysicalvalue.gif) 
+![FIFO without Include Physical Value.](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -89,7 +89,7 @@ If the **Include physical value** check box is selected for an item on the **Ite
 
 Transaction 5b will be settled against receipt transaction 1b. There will be an adjustment of USD –11.25 to this issue transaction. The new running average cost price reflects the average of the financially and physically updated transactions, USD 27.50. The following illustration shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option is used. 
 
-![FIFO with Include Physical Value](./media/fifowithincludephysicalvalue.gif) 
+![FIFO with Include Physical Value.](./media/fifowithincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -121,7 +121,7 @@ Marking is a process that lets you link, or mark, an issue transaction to a rece
 
 The new running average cost price reflects the average of the financially and physically updated transactions, USD 27.50. The following illustration shows the effects of the FIFO inventory model on this series of transactions when marking between issues and receipts is used. 
 
-![FIFO with Marking](./media/fifowithmarking.gif) 
+![FIFO with Marking.](./media/fifowithmarking.gif) 
 
 **Key to the diagram**
 

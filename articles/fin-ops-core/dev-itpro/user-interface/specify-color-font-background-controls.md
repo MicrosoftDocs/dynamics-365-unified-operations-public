@@ -119,7 +119,7 @@ public FormControl editControl(int column, int row)
 }
 ```
 
-[![Example of a table control that has colored cells](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)
+[![Example of a table control that has colored cells.](./media/tablecontrol_withcolor.png)](./media/tablecontrol_withcolor.png)
 
 ## Using color in a grid control
 

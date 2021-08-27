@@ -4,7 +4,7 @@
 title: Header module
 description: This topic covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,7 +38,7 @@ The header module includes a site logo, links to the navigation hierarchy, links
 
 The following image shows an example of a header module on a home page.
 
-![Example of a header module](./media/ecommerce-header.png)
+![Example of a header module.](./media/ecommerce-header.png)
 
 ## Properties of a header module
 
@@ -63,9 +63,16 @@ The following modules can be used in a header module:
 - **Store selector** - The store selector module can be included in a header module's store selector slot. It lets users browse and find nearby stores. Users can also specify a preferred store. That store will then be shown in the header. When the store selector module is included in the header module, its **Mode** property must be set to **Find stores**. For more information, see [Store selector module](store-selector.md).
 
 > [!NOTE]
-> - Support for using the cart icon module in header modules is available in the Dynamics 365 Commerce 10.0.11 release.
-> - Support for using the site selector module in header modules is available in the Dynamics 365 Commerce 10.0.14 release.
-> - Support for using the store selector module in header modules is available in the Dynamics 365 Commerce 10.0.15 release.
+> - Support for using the cart icon module in header modules is available as of the Dynamics 365 Commerce version 10.0.11 release.
+> - Support for using the site selector module in header modules is available as of the Dynamics 365 Commerce version 10.0.14 release.
+> - Support for using the store selector module in header modules is available as of the Dynamics 365 Commerce version 10.0.15 release.
+
+## Header module in the Adventure Works theme
+
+In the Adventure Works theme, the header module supports the **Mobile Logo** property. This property enables a logo to be specified for mobile viewports. The **Mobile Logo** property is available as a module definition extension.
+
+> [!IMPORTANT]
+> The Adventure Works theme is available as of the Dynamics 365 Commerce version 10.0.20 release.
 
 ## Create a header fragment for a page
 

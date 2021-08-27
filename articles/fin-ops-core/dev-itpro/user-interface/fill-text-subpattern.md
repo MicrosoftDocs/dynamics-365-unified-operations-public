@@ -39,7 +39,7 @@ Fill Text is used when you need a single String or StaticText control to stretch
 
 ## Wireframe
 
-[![Fill Text sub-pattern wireframe](./media/filltext1.png)](./media/filltext1.png)
+[![Fill Text sub-pattern wireframe.](./media/filltext1.png)](./media/filltext1.png)
 
 ## Model
 ### High-level structure
@@ -62,7 +62,7 @@ None
 ## Examples
 Form: **FmRental (Notes)** 
 
-[![Fill Text sub-pattern example](./media/filltext2.png)](./media/filltext2.png)
+[![Fill Text sub-pattern example.](./media/filltext2.png)](./media/filltext2.png)
 
 ## Resources
 ### Typically used by patterns

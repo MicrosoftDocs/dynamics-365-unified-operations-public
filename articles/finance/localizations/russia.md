@@ -4,7 +4,7 @@
 title: Russia overview
 description: This topic provides an overview of functionality that is specific to Russia.
 author: kfend
-ms.date: 04/13/2021
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-# ms.custom
+ms.custom: "intro-internal"
 ms.search.region: Russia
 # ms.search.industry: 
 ms.author: roschlom
@@ -158,12 +158,17 @@ This topic provides information about functionality that supports Russian regula
 - [Reporting for deferrals](rus-reporting-deferrals.md)
 
 ## Tax accounting
+- [Create tax registers and the tax register journal](rus-profit-tax-registers.md)
 - [Expense and income codes](rus-expense-and-income-codes.md)
 - [Assets tax registers](rus-assets-tax-registers.md)
 - [Deferrals tax register](rus-deferred-expenses-register.md)
 - [Cash flow tax registers](rus-cash-flow-tax-registers.md)
 - [Rated expenses registers](rus-rated-expenses-registers.md)
 - [Accounts payable debt tax registers and debt write-offs](rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md)
+- [Bad debt reserves in Accounts receivable](rus-bad-debts.md)
+- [Calculation of tax asset and tax liability registers](rus-calculation-tax-asset-tax-liability-registers.md)
+- [Goods movement tax registers](rus-goods-movement-tax-registers.md)
+- [Other tax registers](rus-other-tax-registers.md)
 
 ## Additional resources
 

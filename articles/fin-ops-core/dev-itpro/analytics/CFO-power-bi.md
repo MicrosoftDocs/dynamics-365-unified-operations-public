@@ -4,7 +4,7 @@
 title: CFO overview Power BI content
 description: This topic describes the CFO overview Microsoft Power BI content. 
 author: kweekley
-ms.date: 10/02/2010
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 

@@ -45,7 +45,7 @@ When you've finished, follow these steps.
 
 The following illustration shows the information that's in the table as it would appear on the **Collection letters** page. 
 
-[![Setting up a collection letter sequence](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
+[![Setting up a collection letter sequence.](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
 
  You must now set the two parameters that are required for this example.
 
@@ -54,7 +54,7 @@ The following illustration shows the information that's in the table as it would
     1. On the **Collections** tab, set the **Ignore payments and credit memos when calculating collection letter code** option to **Yes**.
     2. Make sure that the **Create collection letter per** field is set to **Customer**.
 
-    [![Setting Accounts receivable parameters for Credit collections](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
+    [![Setting Accounts receivable parameters for Credit collections.](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
 
 3. Go to **Accounts receivable \> Invoices \> All free text invoices**, select **New**, and then follow these steps:
 
@@ -79,7 +79,7 @@ The following illustration shows the information that's in the table as it would
 5. Repeat step 4, but enter **-200.00** in the **Unit price** field.
 6. Go to **Accounts receivable \> Customers \> All customers**, and select customer **US-045**. Then, on the Action Pane, select **Transactions \> Transactions** to review the customer transactions that you posted earlier.
 
-    [![Reviewing the posted customer transactions](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
+    [![Reviewing the posted customer transactions.](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
 
     You must now create collection letters for customer US-045.
 
@@ -98,7 +98,7 @@ The following illustration shows the information that's in the table as it would
 
     1. Notice that the collection letter code on both the header and the transaction lines is **Collection letter 1**, because this collection letter is the first collection letter in the sequence. (To view the transaction lines, you might have to select the **Transactions** FastTab.)
 
-   [![Verifying that the same collection letter code appears on the header and the lines](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
+   [![Verifying that the same collection letter code appears on the header and the lines.](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
 
     2. On the Action Pane, select **Post**.
     3. In the **Posting date** field, enter **1/19/2021**.
@@ -120,7 +120,7 @@ The following illustration shows the information that's in the table as it would
 
     1. Notice that the collection letter code on the header is **Collection letter 1**. However, the code on the transaction lines is **Collection letter 2**.
 
-   [![Verifies that different collection letter codes appear on the header and the lines](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
+   [![Verifies that different collection letter codes appear on the header and the lines.](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
 
   The codes differ because the **Ignore payments and credit memos when calculating collection letter code** option is to **Yes**.
 
@@ -128,7 +128,7 @@ The following illustration shows the information that's in the table as it would
 
 11. Go to **Credit and collections \> Setup \> Accounts receivable parameters**, and then, on the **Collections** tab, set the **Ignore payments and credit memos when calculating collection letter code** option to **No**.
 
-    [![Setting the Ignore payments and credit memos when calculating collection letter code option to No](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
+    [![Setting the Ignore payments and credit memos when calculating collection letter code option to No.](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
 
     You must now create collection letters again for customer US-045.
 
@@ -145,6 +145,6 @@ The following illustration shows the information that's in the table as it would
 
 13. Go to **Credit and collections \> Collection letter \> Review and process collection letters**, and notice that the collection letter code on both the header and the transaction lines is **Collection letter 2**.
 
-    [![Showing again that the same collection letter code appears on the header and the lines](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
+    [![Showing again that the same collection letter code appears on the header and the lines.](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
 
     The same code appears in both places because the **Ignore payments and credit memos when calculating collection letter code** option is now set to **No**.

@@ -57,14 +57,14 @@ These procedures are for a feature that was added in Dynamics 365 for Operations
 5. Select **Designer**.
 6. On the **Format designer** page, notice that the title of the root format element indicates that an Excel template is currently used.
 
-![Selecting the existing configuration](../media/er-design-configuration-word-2016-11-image01.gif)
+![Selecting the existing configuration.](../media/er-design-configuration-word-2016-11-image01.gif)
 
 ## Review the downloaded Word template
 
 1. In the Word desktop application, open the **SampleVendPaymDocReport.docx** template file that you downloaded earlier.
 2. Verify that the template contains only the layout of the document that you want to generate as ER output.
 
-![The Word template layout in the desktop application](../media/er-design-configuration-word-2016-11-image02.png)
+![The Word template layout in the desktop application.](../media/er-design-configuration-word-2016-11-image02.png)
 
 ## Replace the Excel template with the Word template and add a custom XML part
 
@@ -87,7 +87,7 @@ Currently, the Excel document is used as a template to generate the output in OP
 
 9. Notice that the title of the root format element indicates that a Word template is currently used.
 
-    ![Replacing the Excel template with the Word template and adding a custom XML part](../media/er-design-configuration-word-2016-11-image03.gif)
+    ![Replacing the Excel template with the Word template and adding a custom XML part.](../media/er-design-configuration-word-2016-11-image03.gif)
 
 10. On the **Format** tab, select **Attachments**.
 
@@ -113,7 +113,7 @@ If you're familiar with the process of designing Word documents as forms that co
 1. In the Word desktop application, open the **SampleVendPaymDocReportBounded.docx** template file.
 2. Verify that the template contains the layout of the document that you want to generate as ER output. The content controls that are used as placeholders for data that ER will enter in this template at runtime are based on the mappings that are configured between elements of the **Report** custom XML part and the content controls of the Word document.
 
-![Word template preview in the desktop application](../media/er-design-configuration-word-2016-11-image04.png)
+![Word template preview in the desktop application.](../media/er-design-configuration-word-2016-11-image04.png)
 
 ## Upload the Word template where the custom XML part is mapped to content controls
 
@@ -147,7 +147,7 @@ To run the draft version of the editable format, you must make it [runnable](../
 3. On the **Vendor payments** page, select all rows in the grid.
 4. Select **Payment status** \> **None**.
 
-    ![Payments for processing on the Vendor payments page](../media/er-design-configuration-word-2016-11-image05.png)
+    ![Payments for processing on the Vendor payments page.](../media/er-design-configuration-word-2016-11-image05.png)
 
 5. On the Action Pane, select **Generate payments**.
 6. In the dialog box that appears, follow these steps:
@@ -159,7 +159,7 @@ To run the draft version of the editable format, you must make it [runnable](../
 7. In the **Electronic report parameters** dialog box, select **OK**.
 8. The generated output is presented in Word format and contains the details of the processed payments. Analyze the generated output.
 
-    ![Generated output in Word format](../media/er-design-configuration-word-2016-11-image06.png)
+    ![Generated output in Word format.](../media/er-design-configuration-word-2016-11-image06.png)
 
 ## Additional resources
 

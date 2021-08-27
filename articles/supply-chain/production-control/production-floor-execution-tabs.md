@@ -36,7 +36,7 @@ On the **Configure production floor execution** page, you can create and configu
 
 Each tab is divided into four sections, as shown in the following illustration.
 
-![Tab layout](media/pfe-tab-layout.png "Tab layout")
+![Tab layout.](media/pfe-tab-layout.png "Tab layout")
 
 The following elements are shown in the illustration:
 
@@ -51,7 +51,7 @@ To create and configure a new tab, follow these steps:
 
 1. Select **Design tabs** on the Action Pane to open the **Design tabs** page.
 
-    ![The Design tabs page](media/pfe-design-tabs.png "The Design tabs page")
+    ![The Design tabs page.](media/pfe-design-tabs.png "The Design tabs page")
 
 1. Select **New** on the Action Pane.
 
@@ -71,7 +71,7 @@ After you designed all the tabs you need, you can associate them with a configur
 
 1. Go to **Production control \> Setup \> Manufacturing execution \> Configure production floor execution**.
 
-    ![Configure production floor execution](media/pfe-config-prod-floor-execution.png "Configure production floor execution")
+    ![Configure production floor execution.](media/pfe-config-prod-floor-execution.png "Configure production floor execution")
 
 1. On the **Tab selection** FastTab, select **Add**.
 

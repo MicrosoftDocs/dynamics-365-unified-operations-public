@@ -108,7 +108,7 @@ Import the latest versions of these configurations. The version description usua
 > - Tax declaration model mapping
 > - MTD VAT model mapping (UK)
 >
-> ![Default for model mapping option](media/emea-gbr-default-for-model-mapping-parameter.png)
+> ![Default for model mapping option.](media/emea-gbr-default-for-model-mapping-parameter.png)
 
 For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
@@ -172,7 +172,7 @@ For more information about data management, see [Data management](../../fin-ops-
 
 You must now import data from the UK MTD-VAT setup.zip file into the selected company. In the **Data management** workspace, select **Import**, and set the **Source data format** field to **Package**. Select **Upload and add**, select the **UK MTD-VAT setup.zip** file on your computer, and upload it.
 
-![Upload and add button](media/emea-gbr-mtd-vat-add-file.png)
+![Upload and add button.](media/emea-gbr-mtd-vat-add-file.png)
 
 For more information, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2ffin-and-ops%2ftoc.json).
 
@@ -230,7 +230,7 @@ Both the **UK MTD VAT returns** processing (for production) and the **UK MTD VAT
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**, and select **Populate VAT return records**. 2. On the **Datasource setup** FastTab, select the **VAT payment** record, and then select **Edit query**. 
 3. For the **Settlement period** field of the **Sales tax payments** table, define the sales tax settlement period when tax transactions from the selected legal entity must be reported to HMRC.
 
-![Sales tax inquiry](media/emea-gbr-sales-tax-inquiry.png)
+![Sales tax inquiry.](media/emea-gbr-sales-tax-inquiry.png)
 
 If you don't set the **Settlement period** field, all tax transactions from the selected legal entity will be considered for reporting for MTD for VAT.
 
@@ -276,7 +276,7 @@ For the production web application (**Dynamics 365 for Finance and Operations**)
 
 - Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and verify that **Client ID** and **Client secret** values are set for the **Dynamics 365 for Finance and Operations** web application.
 
-![Web application credentials](media/uk-mtd-credentials-setup.png)
+![Web application credentials.](media/uk-mtd-credentials-setup.png)
 
 Don't edit the record by changing or updating these values. Additionally, you don't have to create a web application of the production type on the HMRC side, because the **Dynamics 365 for Finance and Operations** web application is completely ready to interoperate in live with the production MTD service for VAT. The next steps should be to obtain and authorization code and an access token.
 
@@ -300,7 +300,7 @@ Before you can work with MTD for VAT, the VAT registration number of your legal 
 3. Go to **Organization administration** \> **Global Address Book** \> **Legal entities**, and then, on the Action Pane, select **Registration ID**.
 4. Define the VAT registration number as a registration ID that is associated with the registration category of **VAT ID** that you created in step 2.
 
-    ![Registration ID setup](media/reg-ids-setup.png)
+    ![Registration ID setup.](media/reg-ids-setup.png)
 
 After the company has obtained user credentials, an application of the production type can be authorized. An application of production type is uniquely identified by a client ID and a client secret, and is provided by Microsoft (unless the company is creating its own solution for any version of Finance). To authorize the application of the production type, complete the following tasks on the Finance side:
 
@@ -320,11 +320,11 @@ To get an authorization code from HMRC, complete the following steps.
 
 4. We recommend that you enter **read:vat write:vat** in this field, because the same application must be used for both GET and POST HTTPS requests to the web service. When you've finished, select **OK** to send the authorization request to HMRC. 
 
-![Getting an authorization code](media/uk-mtd-get-authorization-code.png)
+![Getting an authorization code.](media/uk-mtd-get-authorization-code.png)
 
 5. You're redirected to the HMRC portal for authorization. On the **Sign in** page, enter the **User ID** and **Password** values that your company obtained when it created an HMRC online account. 
 
-![Signing in to the HMRC portal](media/uk-mtd-hmrc-reg.png)
+![Signing in to the HMRC portal.](media/uk-mtd-hmrc-reg.png)
 
 6. The next page shows the authorization code. Copy it to the clipboard, and then get an access token. 
 
@@ -423,7 +423,7 @@ The **periodKey** additional field is used to store the **periodKey** value in b
 
 The following illustration shows the lifecycle of electronic message processing for the retrieval of VAT obligations.
 
-![Lifecycle of electronic message processing for VAT obligation retrieval](media/mkd-process.png)
+![Lifecycle of electronic message processing for VAT obligation retrieval.](media/mkd-process.png)
 
 The last step of the processing is an **Import VAT obligations** action of the **Electronic reporting import** type. The system defines the following behavior for this step:
 
@@ -443,11 +443,11 @@ To try different scenarios in the sandbox application, complete the following st
 2. Derive a new child format configuration under **MTD VAT web request headers format (UK)**, and open it in the designer. 
 3. Find the **Gov-Test-Scenario** property (**File** \> **JSON Object** \> **Gov-Test-Scenario**), expand it, and select **String** under it. As the **String** value, specify the scenario that you want to test. Here is an example.
 
-![String value example](media/emea-gbr-format-designer-string.png)
+![String value example.](media/emea-gbr-format-designer-string.png)
 
 4. The **Gov-Test-Scenario** property must be enabled in the format. On the **Mapping** tab, verify that the **Enabled** property value of the **Gov-Test-Scenario** node is either blank or set to **true**. To change the value of the **Enabled** property, select the **Edit** button (pencil symbol) near it.
 
-![Enabling the Gov-Test-Scenario property](media/emea-gbr-format-designer-json-object.png)
+![Enabling the Gov-Test-Scenario property.](media/emea-gbr-format-designer-json-object.png)
 
 5. Save and complete the format. 
 6. To enable the system to use the new format (where the **Gov-Test-Scenario** property is enabled) instead of the parent format to generate the request to HMRC, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web service settings**, and select the **HMRC sandbox GET** web service. 
@@ -532,7 +532,7 @@ When a VAT return in JSON format is generated and ready to be submitted to HMRC,
 > [!IMPORTANT]
 > Before you start to submit a VAT return to HMRC, you must make sure that the **JSON** file type is defined in the list of file types on the **File types** tab of the **Document management parameters** page (**Organization administration** \> **Document management** \> **Document management parameters**). If the **JSON** file type isn't in the list, add it.
 >
-> ![JSON File type setup](media/uk-mtd-json-file-type-setup.png)
+> ![JSON File type setup.](media/uk-mtd-json-file-type-setup.png)
 
 2. To start submission, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select either the **UK MTD VAT TEST** processing (for testing purposes) or the **UK MTD VAT returns** processing (for real-life interoperation with the production HMRC web application). 
 3. On the **Messages** FastTab, select the electronic message record that is related to the period that you want to submit the VAT return for, and then select **Send report**. The **Send report** button is available only for electronic messages that have the following statuses:
@@ -576,8 +576,8 @@ To prepare ER configurations to generate the common VAT return for a VAT group, 
 |-----------------------------------|-------------|
 | Tax declaration model.version.**32** | Generic model for different tax declarations. |
 | Tax declaration model mapping.version.**32.35** | Generic model mapping for VAT declarations. |
-| MTD VAT returns exporting JSON (UK).version.**32.27** | VAT return in JSON format for submission to MTD HMRC. |
-| MTD VAT returns exporting EXCEL (UK).version.**32.27.7** | **VAT 100** report (declaration in Excel format). |
+| VAT Declaration JSON (UK).version.**32.28** | VAT return in JSON format for submission to MTD HMRC. |
+| VAT Declaration Excel (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
 
 In these versions and later, the tax declaration model, model mapping, and both formats for the UK VAT return support cross-company tax transaction data sources, and they can be used to aggregate data from several legal entities. These configurations can still be used to report the VAT return for just one legal entity.
 
@@ -586,11 +586,11 @@ In these versions and later, the tax declaration model, model mapping, and both 
 
 To use the formats to report the VAT return for a group of several legal entities, you must set up application-specific parameters **for each legal entity that is included into the group**.
 
-1. In the **Electronic reporting** workspace, select **Tax declaration model**, and then, in the configuration tree, select the **MTD VAT returns exporting JSON (UK)** format. 
+1. In the **Electronic reporting** workspace, select **Tax declaration model**, and then, in the configuration tree, select the **VAT Declaration JSON (UK)** format. 
 2. In the upper-right corner, select the legal entity that tax transactions must be included for in the VAT return for the VAT group.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**. In the left pane of the **Application specific parameters** page, select the latest version of the format. Then, on the **Conditions** FastTab, define conditions. For more information about how to define conditions, see the [Set up application-specific parameters](#set-up-application-specific-parameters) section earlier in this topic. Finally, change the status to **Completed**, save your changes, and close the **Application specific parameters** page.
 4. Repeat steps 2 through 3 for the other legal entities in your system that are included in the VAT group.
-5. Repeat steps 1 through 4 above for the **MTD VAT returns exporting EXCEL (UK)** format.
+5. Repeat steps 1 through 4 above for the **VAT Declaration Excel (UK)** format.
 
 ### Set up additional Electronic messages functionality to collect data from several legal entities for VAT return reporting for a VAT group
 
@@ -619,7 +619,7 @@ In Finance version 10.0.7 and later, users can prepare a VAT return report by co
 
 When you've finished, the **Datasources setup** grid will contain lines for all the legal entities that must be included in reporting for the VAT group. A settlement period will be defined for each legal entity.
 
-![Setup of data sources for a VAT group](media/uk-mtd-populate-records-datasources.png)
+![Setup of data sources for a VAT group.](media/uk-mtd-populate-records-datasources.png)
 
 The changes to the setup of the **Populate VAT return records** action that are described here are enough to collect sales tax payment transactions from different legal entities in one electronic message, and to generate one common VAT return report in JSON format (for submission to HMRC) or Excel format (for preview).
 
@@ -750,7 +750,7 @@ For Finance and Operations 7.3, KB 4513878 must be installed.
 
 Request headers are composed in the **MTD VAT web request headers format (UK)** format in the **Electronic reporting** module. This format configuration was extended so that it includes the required nodes.
 
-![Nodes in the MTD VAT web request headers format (UK) format configuration](media/format-new-nodes-all.png)
+![Nodes in the MTD VAT web request headers format (UK) format configuration.](media/format-new-nodes-all.png)
 
 To determine the corresponding values of the headers, the **MTD VAT model mapping** configuration can call the X++ methods. The Electronic Messages framework model was also extended so that it supports the included nodes that are used to map the values of fraud prevention headers.
 
@@ -768,7 +768,7 @@ When the ER configurations are imported, fraud prevention parameters will be tra
 
 If you initiate a request to the HMRC without activating a batch job, the **Request identification information** page informs you about the information that will be sent to HMRC.
 
-![Request identification information page](media/fraud-prevention-headers-message-page.png)
+![Request identification information page.](media/fraud-prevention-headers-message-page.png)
 
 You must select the check box to consent to the transmission of the information that is listed on the page. The **Submit** button then becomes available, and you can select it to submit the request to HMRC. 
 
@@ -782,13 +782,13 @@ If, for some reason, a company decides to send requests to HMRC without transmit
 2. On the Action Pane, select **Designer** to open the child format in the designer.
 3. Select the **Gov-Client-Connection-Method** node, and set the **Enabled** property to **false**.
 
-    ![Enabled property set to false](media/format-disable-nodes.png)
+    ![Enabled property set to false.](media/format-disable-nodes.png)
 
 4. Repeat steps 1 through 3 for other fraud prevention headers. These headers include **Gov-Client-Timezone**, **Gov-Client-User-Agent**, **Gov-Vendor-Version**, and **Gov-Client-MAC-Addresses**.
 5. Save and complete the configuration.
 6. Go to **Tax** \> **Setup** \> **Electronic reporting** \> **Web service settings**. In the **Request headers format mapping** field of all the web services that are used for interoperation with HMRC, select the child format instead of the parent format that is used by default.
 
-    ![Child format selected in the Request headers format mapping field](media/web-service-format-setup.png)
+    ![Child format selected in the Request headers format mapping field.](media/web-service-format-setup.png)
 
 > [!IMPORTANT]
 > HMRC might reject API requests that don't include fraud prevention headers. We recommend that you include fraud prevention headers in the API requests that you send to HMRC.
@@ -831,17 +831,17 @@ After the ER configurations from the previous table are successfully imported, s
 2. On the **Electronic report parameters** page, in the **Scope** field, enter **write:vat read:vat**, and then select **OK** to continue. 
 3. In the **System administrator consent** dialog box that appears, read the information, select the check box to give your consent, and then select **Agree**.
 
-    ![System administrator consent dialog box](media/uk-mtd-system-administrator-consent.png)
+    ![System administrator consent dialog box.](media/uk-mtd-system-administrator-consent.png)
 
     A new record of the **System administrator consent received** type will be stored in the action log of the related web application.
 
-    ![System administrator consent received record in the action log](media/uk-mtd-system-administrator-consent-log.png)
+    ![System administrator consent received record in the action log.](media/uk-mtd-system-administrator-consent-log.png)
 
 4. If your web application wasn't previously authorized, continue the [authorization process](#obtain-an-authorization-code-for-the-production-environment) as it's described in this topic. If your web application was previously authorized on the HMRC side, you don't need to continue the authorization process and can skip all other authorization steps.
 
 If the ER configurations from previous table were successfully imported, but the system admin didn't give consent, requests to refresh the access token will be blocked. In this case, because the old access token will be used, HMRC will accept no new requests to the MTD for VAT APIs. For example, a user who sends a new VAT obligations request to HMRC will receive a "401" error. The message details will state, "Access token cannot be refreshed. System administrator must consent to transmit information outside of Dynamics 365 for Finance and Operations via initialization 'Get authorization code' button on Web applications page."
 
-![Error message if system admin consent wasn't given](media/uk-mtd-system-administrator-consent-log-error.png)
+![Error message if system admin consent wasn't given.](media/uk-mtd-system-administrator-consent-log-error.png)
 
 ## Using the MTD feature outside the UK
 
@@ -1252,8 +1252,8 @@ The following versions of the ER configurations must be imported and used for th
 |----------------------------------------------------------|-------------|
 | Tax declaration model.version.**32**                     | Generic model for different tax declarations. |
 | Tax declaration model mapping.version.**32.35**          | Generic model mapping for VAT declarations. |
-| MTD VAT returns exporting JSON (UK).version.**32.27**    | VAT return in JSON format for submission to MTD HMRC. |
-| MTD VAT returns exporting EXCEL (UK).version.**32.27.7** | **VAT 100** report (declaration in Excel format). |
+| VAT Declaration JSON (UK).version.**32.28**    | VAT return in JSON format for submission to MTD HMRC. |
+| VAT Declaration Excel (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
 
 For Finance and Operations 7.3, KB 4513052 must be installed. In addition, the latest version of the ER update and the following versions of Electronic reporting configurations must be used.
 
@@ -1261,8 +1261,8 @@ For Finance and Operations 7.3, KB 4513052 must be installed. In addition, the l
 |----------------------------------------------------------|-------------|
 | Tax declaration model.version.**32**                     | Generic model for different tax declarations. |
 | Tax declaration model mapping.version.**32.38**          | Generic model mapping for VAT declarations. |
-| MTD VAT returns exporting JSON (UK).version.**32.28**    | VAT return in JSON format for submission to MTD HMRC. |
-| MTD VAT returns exporting EXCEL (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
+| VAT Declaration JSON (UK).version.**32.28**    | VAT return in JSON format for submission to MTD HMRC. |
+| VAT Declaration Excel (UK).version.**32.28.8** | **VAT 100** report (declaration in Excel format). |
 
 These versions of the ER configurations are also compatible with Finance version 10.0.7 and later. 
 

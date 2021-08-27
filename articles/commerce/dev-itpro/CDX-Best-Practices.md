@@ -4,7 +4,7 @@
 title: Commerce Data Exchange best practices
 description: This topic describes data synchronization with Commerce Data Exchange (CDX) in a Microsoft Dynamics 365 Commerce environment.
 author: jashanno
-ms.date: 05/11/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,7 +44,7 @@ The main content of this topic is organized into tables, where the first column 
 
 The following configurations have been released but cause changes to logic that may not be useful for all usage scenarios. These features have been tested but have not been thoroughly validated in all scenarios. In the following table, maturity has been listed to provide insight in regard to confidence of functionality.
 
-The features will change from month to month, so it is valuable to check back regarding the maturity of a particular feature and whether any new features have been added. To apply any of the following features, go to **Retail and Commerce > Headquarters setup > Parameters > Commerce parameters**.  On the leftmost menu, select **Configuration parameters**.  In the page that appears, enter the key (shown in the table below) into the **Name** field and the default value (listed in the **Description** column in the table below) into the **Value** field.
+The features will change from month to month, so it is valuable to check back regarding the maturity of a particular feature and whether any new features have been added. To apply any of the following features, go to **Retail and Commerce > Headquarters setup > Parameters > Commerce shared parameters**.  On the leftmost menu, select **Configuration parameters**.  In the page that appears, enter the key (shown in the table below) into the **Name** field and the default value (listed in the **Description** column in the table below) into the **Value** field.
 
 | Feature | Key | Description |  Maturity |
 |------------------|---------------------|------------------------------|-----------------------------------|
@@ -52,13 +52,20 @@ The features will change from month to month, so it is valuable to check back re
 | Package order enforcement | CDX_ENABLE_DOWNLOAD_SESSION_DEPENDENCY_ENFORCEMENT | This parameter enforces download session application to apply in order. If a download session application fails (which would occur after a number of attempts that are defined in the **Try count times** value that is by default a value of three), the session will be marked as **Suspended** and session applications will not proceed until the suspended session is retried or canceled. Using this key, you cannot rerun previously applied sessions (sessions that are not in the **Available** or **Suspended** state).<br><br>This feature will prevent download sessions failures due to unique key exceptions that could occur after applying download sessions out of order. The default value is **0**, which means disabled. | Moderate<br><br>(Feature was released in version 10.0.18.) |
 | Roll back on failure | CDX_ENABLE_ROLLBACK_ON_FAILURE | **Due to a known issue with this key, it is not recommended for use.**  When synchronizing transactions from an offline database to the channel database (based on the P-job distribution schedule), the system normally merges records. This means that records with duplicate transaction IDs will be overwritten. With this feature, the offline synchronization will instead insert records. This insert prevents the overwrite and throws an error so the issue can be investigated. At this time, the purge of offline transactions post synchronization could fail, triggering the insert error and stopping the offline sync. Due to this, it is currently recommended that this feature should be disabled. The default value is **1**, meaning that it's enabled by default.  It is highly recommended to change this value to **0**. | Low, due to known issue.<br><br>(Feature was released in version 10.0.13.) |
 
-## Updating configurations
+## Update configurations
 
-The following should be performed after every update to the Dynamics 365 environment.
+You must initialize the base configuration data for Commerce scheduler after you do the following:
 
-| Associated areas | Best practice |
-|------------------|---------------|
-| <ul><li>Parameters</li><li>Commerce scheduler</li><li>Initialization</li></ul> | Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize commerce scheduler**. You will be asked if you would like to proceed with initializing the base configuration data for Commerce scheduler. Performing this action after every update is key to maintaining functionality as it correctly sets the configuration data for new tables or columns. There is also a parameter to **Delete existing configuration**.  Unless explicitly told to do so or working on a non-production environment where losing configuration will not create an impact, leave this set to **No**. |
+- Apply a service update.
+- Enable a Commerce feature that impacts a configuration key.
+
+To initialize the base configuration data, do the following:
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize commerce scheduler**. 
+ 
+   You will be asked if you would like to proceed with initializing the base configuration data for Commerce scheduler. Performing this action after every update is key to maintaining functionality as it correctly sets the configuration data for new tables or columns. 
+  
+2. There is a parameter to **Delete existing configuration**.  Unless you are explicitly instructed to do this, or you are working on a non-production environment where losing configuration will not create an impact, leave this set to **No**.
 
 ## Valuable configurations
 
@@ -111,6 +118,7 @@ We recommend that you repeat this section for the top tables in the report, unti
 
 - [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
 - [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
+- [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md)
 - [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
 - [Select an in-store topology](retail-in-store-topology.md)
 - [Device management implementation guidance](../implementation-considerations-devices.md)

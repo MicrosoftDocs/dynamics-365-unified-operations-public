@@ -68,7 +68,7 @@ To add hierarchy nodes, follow these steps.
 
 The following image shows the creation of a new product hierarchy node.
 
-![Create product hierarchy](media/create-product-hierarchy.png)
+![Create product hierarchy.](media/create-product-hierarchy.png)
 
 ## Other settings
 

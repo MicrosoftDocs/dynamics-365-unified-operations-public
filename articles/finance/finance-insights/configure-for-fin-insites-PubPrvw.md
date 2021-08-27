@@ -4,7 +4,7 @@
 title: Configuration for Finance insights for public preview (preview) - version 10.0.20 and later
 description: This topic explains how to configure your system to use the capabilities that are available in Finance insights for public preview in version 10.0.20 and later.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 06/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,14 +30,12 @@ ms.dyn365.ops.version: AX 10.0.20
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/preview-banner.md)]
-
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains how to configure Dynamics 365 Finance version 10.0.20 so that your system can use the capabilities that are available in Finance insights public preview.
 
 > [!NOTE]
-> The configuration steps that are described in this topic apply only to Finance version 10.0.20 and later. 'To set up Finance insights on version 10.0.19 and earlier, see [Configuration for Finance insights - versions up to 10.0.18](configure-for-fin-insites.md).
+> The configuration steps that are described in this topic apply only to Finance version 10.0.20 and later. 'To set up Finance insights on version 10.0.19 and earlier, see [Configuration for Finance insights - versions up to 10.0.19](configure-for-fin-insites.md).
 
 ## Deploy Finance
 
@@ -752,6 +750,8 @@ Follow these steps to install the Finance insights add-in.
 2. In the **Environment add-ins** section, select **Install a new add-in**.
 3. Select the **Finance insights** add-in.
 4. Agree to the terms, and then select **Install**.
+
+The add-in might take several minutes to install.
 
 ## Feedback and support
 

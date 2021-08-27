@@ -50,7 +50,7 @@ The Retail SDK includes only a few samples of end-to-end Retail Server extension
 
 The following illustration shows the class structure of the extension.
 
-![Commerce Scale Unit extension class diagram](media/RSExtensionClass.png)
+![Commerce Scale Unit extension class diagram.](media/RSExtensionClass.png)
 
 > [!NOTE]
 > Retail server does not support loading both IController and CommerceController extensions. If you include both type of extensions, then Retail server load will fail. Extensions should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the Retail server extensions to IController.
@@ -217,7 +217,7 @@ public static class CommerceRoles
 
 ### Support paging in Retail Server APIs
 
-Starting in release 10.0.18, if the API requires paging you can add the **QueryResultSettings** parameter to the API and pass the value from the client. **QueryResultSettings** contains **PagingInfo** and other parameters for records to fetch or skip.  
+Starting in release 10.0.19, if the API requires paging you can add the **QueryResultSettings** parameter to the API and pass the value from the client. **QueryResultSettings** contains **PagingInfo** and other parameters for records to fetch or skip.  
 
 The extension can pass **QueryResultSettings** to the CRT request, which the CRT request can use when there is a database query.
 

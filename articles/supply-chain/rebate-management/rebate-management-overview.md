@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
@@ -95,10 +95,9 @@ Users no longer have to handle deals or provisions in two steps. Provisions and 
 
 When rebates are calculated, the process creates transactions that can be reviewed before posting occurs. A separate process posts rebate management transactions. A journal, credit note, or debit transaction can then be created during posting to proposed transactions. Reporting statements and transaction listings can be obtained to ensure compliance, effectiveness, and transparency.
 
-
 ## Guaranteed royalty payments
 
-In Rebate management, automatic payment generation enables royalties to be handled quickly and easily, even when guaranteed minimums apply. 
+In Rebate management, automatic payment generation enables royalties to be handled quickly and easily, even when guaranteed minimums apply.
 
 ## Maximizing spend versus rebates
 
