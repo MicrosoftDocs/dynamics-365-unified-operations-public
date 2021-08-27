@@ -3,8 +3,8 @@
 
 title: General budget reservations
 description: This topic provides information about general budget reservations for Public sector.
-author: AlexRenney
-ms.date: 04/25/2019
+author: TaylorVH
+ms.date: 08/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -49,7 +49,7 @@ You can create different types of general budget reservation to specify various 
 In the general budget reservation, you can also view accounting distributions and subledger journal lines for the transaction.
 
 > [!NOTE]
-> Ledger accounts used on general budget reservations must be included in budget control. Without budget control set up the following will be encountered. General budget reservation and their consuming documents will not be encumbered / pre-encumbered. Carry-forward transactions will not create budget register entries. Canceling and finalizing general budget reservations will not reduce carry-forward budget.  These ledger accounts will not be included on the budget analysis and budget control statistics inquiries.
+> Ledger accounts used on general budget reservations must be included in budget control. If those accounts aren't included in budget control, the following things will happen. General budget reservation and their consuming documents won't be encumbered or pre-encumbered. Carry-forward transactions won't create budget register entries. Canceling and finalizing general budget reservations won't reduce carry-forward budget. These ledger accounts won't be included on the budget analysis and budget control statistics inquiries.
 
 If you use project accounting, you can turn on tracking of committed costs for general budget reservations.
 
