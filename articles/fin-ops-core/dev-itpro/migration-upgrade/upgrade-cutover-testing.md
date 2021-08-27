@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Cutover testing (Mock cutover)
 description: This topic explains how to test the cutover process between turning off a Microsoft Dynamics AX 2012 environment and turning on Finance and Operations. 
 author: jorisdg
-ms.date: 06/06/2018
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,7 +44,7 @@ The following illustration shows the overall process for cutover to go-live as i
 
 The mock cutover process is very similar to data upgrade validation in a sandbox environment. We assume that you are familiar with that process, and have already performed it. Mock cutover differs in the following ways:
 
-- After you perform a data upgrade in the sandbox environment, use [Self-service database refresh process](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-refresh#self-service-database-refresh) to copy your upgraded database from the data upgrade sandbox environment into your production environment. 
+- After you perform a data upgrade in the sandbox environment, see the instsructions in [Self-service database refresh](../database/database-refresh.md#self-service-database-refresh) to copy your upgraded database from the data upgrade sandbox environment into your production environment. 
 
 - We added the following tasks:
     - Perform a smoke test.
@@ -65,7 +65,7 @@ During cutover testing, the technical team is focused on performance and reliabi
 > [!NOTE]
 > For the technical workstream, the cutover testing process is the same as the high-level steps of the actual/go-live cutover process.
 
-For the technical workstream, the cutover testing process is the same described in [Upgrade from AX 2012 - Data upgrade in self service sandbox environments](data-upgrade-self-service.md).
+For the technical workstream, the cutover testing process is the same described in [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md).
 
 ## Functional workstream
 
