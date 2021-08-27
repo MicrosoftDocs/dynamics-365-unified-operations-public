@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Go live (Cutover)
 description: This topic explains the final cutover process from Dynamics AX 2012 to the Finance and Operations app running an upgraded version of your code and database.
 author: jorisdg
-ms.date: 10/15/2019
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
