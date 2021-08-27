@@ -3,8 +3,8 @@
 
 title: Apply prepayments to vendor invoices overview
 description: This topic describes the capability for applying prepayments to vendor invoices automatically. 
-author: abruer
-ms.date: 08/25/2021
+author: sunfzam
+ms.date: 08/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shpandey
-ms.search.validFrom: 2017-08-30
+ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
 
 ---
