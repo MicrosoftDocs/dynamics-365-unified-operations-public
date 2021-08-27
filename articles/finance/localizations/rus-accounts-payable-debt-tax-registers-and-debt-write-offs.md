@@ -62,7 +62,7 @@ Accounts payable amounts that are written off because of expiration of the limit
 
 ## Tax registers
 
-You must create and set up tax registers. For more information, see Profit tax registers. The following sections provide more information about each tax register.
+You must create and set up tax registers. For more information, see [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). The following sections provide more information about each tax register.
 
 ### Accounts payable inventory act tax register
 
@@ -122,7 +122,7 @@ In the journal, you should approve the **Accounts payable inventory act** regist
 
 ### Recognize and write off hopeless debt
 
-1. Calculate and approve the tax register journal for the previous period. For more information, see Profit tax registers.
+1. Calculate and approve the tax register journal for the previous period. For more information, see [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-and-work-with-a-tax-register-journal).
 2. Go to **Accounts payable** > **Periodic tasks** > **Amortization** > **Trade liabilities amortization**.
 3. In the **Calculation date** field, select a date that indicates the required calculation period.
 

@@ -4,7 +4,7 @@
 title: Configure export to Azure Data Lake
 description: This topic provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
-ms.date: 06/28/2021
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,7 +50,7 @@ ms.dyn365.ops.version: Platform Update 33
 The **Export to Azure Data Lake** feature is built using a microservice that exports Finance and Operations app data to Azure Data Lake and keeps the data fresh. Microservice uses the Azure service principal, **Microsoft Dynamics ERP Microservices**, to securely connect to your Azure resources. Before you configure the Export to Data Lake feature, add the  **Microsoft Dynamics ERP Microservices** service principal to your Azure Active Directory (Azure AD). This step enables Azure AD to authenticate the microservice. 
 
 > [!NOTE]
-> You will need **Azure Active Directory tenant administrator** rights to perform these steps.
+> You will need **Azure Active Directory global administrator** rights to perform these steps.
 
 To add the service principal, complete the following steps.
 1. Launch the Azure portal and go to the Azure Active Directory.

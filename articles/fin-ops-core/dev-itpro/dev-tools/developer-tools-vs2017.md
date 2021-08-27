@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Visual Studio 2017 requirements for X++
 description: This topic lists the Visual Studio 2017 components that are required to run the Visual Studio extension for X++.
 author: jorisdg
@@ -11,7 +9,6 @@ ms.reviewer: rhaertle
 ms.author: jorisde
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Visual Studio 2017 requirements for X++
@@ -49,4 +46,4 @@ The following table lists the required Visual Studio components.
 For more information on Commerce and Visual Studio 2017, see these topics.
 
 - [Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017](../../../commerce/dev-itpro/retail-sdk/migrate-sdk.md)
-- [Development and ALM changes from version 10.0.10 to 10.0.13](../../../commerce/dev-itpro/dev-changes-10-13.md)
+

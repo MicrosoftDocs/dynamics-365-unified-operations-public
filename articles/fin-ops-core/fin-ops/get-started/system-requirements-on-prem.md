@@ -4,7 +4,7 @@
 title: System requirements for on-premises deployments
 description: This topic lists the system requirements for on-premises deployments.
 author: PeterRFriis
-ms.date: 07/28/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the system requirements for the current version of Microsoft Dynamics 365 Finance + Operations (on-premises) deployments. Before you install, when this step is appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
+This topic lists the system requirements for the current version of Microsoft Dynamics 365 Finance + Operations (on-premises) deployments. Verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
 > [!IMPORTANT]
 > Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) services.
@@ -101,6 +101,7 @@ Consider the following domain requirements when you install Finance + Operations
 - The domain controller must be Microsoft Windows Server 2012 R2 or later, and the domain functional level must be 2012 R2 or more.
 
 ### Full 2-way trust
+
 For compatibility with corporate domain controllers on Windows Server 2008 R2 domain functional level (DFL), a full 2-way trust between the Windows Server 2008 R2 DFL user domain and the Windows Server 2012 R2 DFL Finance + Operations service domain is supported in Platform update 33 and later.
 
 This means that users of the Finance + Operations (on-premises) application will come from the Windows Server 2008 R2 DFL domain, and the resources and service accounts hosting the Finance + Operations (on-premises) infrastructure and services will come from the Windows Server 2012 R2 DFL domain.
@@ -110,6 +111,7 @@ Examples for a full 2-way trust setup could be.
 <img src="./media/2WayTrust.png" width="700" hspace="50" alt="Examples of supported full 2-way trust between DFL versions"/>
 
 #### Known limitations with using the full 2-way trust setup
+
 * Import of security groups from the Windows Server 2008 R2 user domain is not supported.
 
 ## Hardware requirements
@@ -284,14 +286,21 @@ Users can access Finance + Operations by using the most recent versions of these
 - Internet Explorer 11 (deprecated, not recommended)
 
 > [!NOTE]
-> For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, specifically Microsoft Edge. 
+> For optimal performance and an optimal experience, we recommend that you use the latest version of a modern browser, especially Microsoft Edge. 
+> 
+> **Version 10.0.21 and later:** Users of old versions of Microsoft Edge and Google Chrome (version 83 and earlier) will receive prompts to update their browser to the latest version. 
+>
+> Version 10.0.21 is available as part of a preview release. The content and functionality of version 10.0.21 are subject to change. For more information about preview releases, see [Service update availability](public-preview-releases.md).
 
-### Internet Explorer deprecation 
+### Internet Explorer deprecation
+
 Support for Internet Explorer 11 was deprecated in December 2020, with end of support for the browser occurring in August 2021. For more information, see [Internet Explorer deprecation announcement](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10015-of-finance-and-operations-apps).
 
-Starting in version 10.0.20, users accessing Finance and Operations apps with Internet Explorer (IE) will start seeing notifications about the end of support for that browser. Before August 17, 2021, IE users will see an informational message that IE support is soon ending. After that date, IE users will see a warning that support has officially ended. Organizations are encouraged to keep these notifications on unless IE is mandated for your users, in which case you can choose to suppress these notifications by disabling the **Internet Explorer end-of-support notifications** feature and relying on internal processes for migrating your user base to Microsoft Edge or another modern browser. 
+Starting in version 10.0.20, users accessing Finance and Operations apps with Internet Explorer will start seeing notifications about the end of support for that browser. Before August 17, 2021, Internet Explorer users will see an informational message that Internet Explorer support is soon ending. After that date, Internet Explorer users will see a warning that support has officially ended. Organizations are encouraged to keep these notifications on unless Internet Explorer is mandated for your users, in which case you can choose to suppress these notifications by disabling the **Internet Explorer end-of-support notifications** feature and relying on internal processes for migrating your user base to Microsoft Edge or another modern browser. 
 
-The current target for blocking IE usage within Finance and Operations app is April 2022. To prepare organizations and users for that block, starting in January 2022, IE users will start seeing a non-dismissible error message indicating that IE support will soon be blocked. This error message is **not** controlled by the **Internet Explorer end-of-support notifications** feature, and customers will need to contact Microsoft Support if this message needs to be suppressed for their organization.    
+The current target for blocking Internet Explorer use in Finance and Operations apps is April 2022. If your organization wants to block Internet Explorer earlier, and you're using version 10.0.21 or later, contact Microsoft Support.
+
+To prepare organizations and users for the upcoming block of Internet Explorer, in January 2022, Internet Explorer users will start to receive a non-dismissible error message that states that Internet Explorer support will soon be blocked. This error message is **not** controlled by the **Internet Explorer end-of-support notifications** feature. Customers will have to contact Microsoft Support if this message must be suppressed for their organization.
 
 ### Special considerations
 
@@ -319,6 +328,5 @@ The following Microsoft Office applications are supported in on-premises deploym
 ## Hardware and software requirements for Commerce components
 
 Currently, Finance + Operations doesn't include the Commerce components.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

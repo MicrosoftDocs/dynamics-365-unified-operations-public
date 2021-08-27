@@ -217,7 +217,7 @@ public static class CommerceRoles
 
 ### Support paging in Retail Server APIs
 
-Starting in release 10.0.18, if the API requires paging you can add the **QueryResultSettings** parameter to the API and pass the value from the client. **QueryResultSettings** contains **PagingInfo** and other parameters for records to fetch or skip.  
+Starting in release 10.0.19, if the API requires paging you can add the **QueryResultSettings** parameter to the API and pass the value from the client. **QueryResultSettings** contains **PagingInfo** and other parameters for records to fetch or skip.  
 
 The extension can pass **QueryResultSettings** to the CRT request, which the CRT request can use when there is a database query.
 
