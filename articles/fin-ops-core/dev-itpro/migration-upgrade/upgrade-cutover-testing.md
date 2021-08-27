@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Cutover testing (Mock cutover)
 description: This topic explains how to test the cutover process between turning off a Microsoft Dynamics AX 2012 environment and turning on Finance and Operations. 
 author: jorisdg
-ms.date: 06/06/2018
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,13 +40,11 @@ There are three main workstreams during a cutover:
 
 The following illustration shows the overall process for cutover to go-live as it will occur in the production environment.
 
-![Cutover process.](./media/cutover_1.png)
+![Cutover process](./media/cutover-selfservice_01.png)
 
-The mock cutover process is very similar to a basic data upgrade validation in a sandbox environment. We assume that you are familiar with that process, and have already performed it. Mock cutover differs in the following ways:
+The mock cutover process is very similar to data upgrade validation in a sandbox environment. We assume that you are familiar with that process, and have already performed it. Mock cutover differs in the following ways:
 
-- After you perform a data upgrade in the sandbox environment, a LCS other type service requests is needed to copy your upgraded database from the data upgrade sandbox environment into your production environment. The email template below is provided for your use
->[!Copy]
->This is a request for 2012 data upgrade database copy from the sandbox environment <source sandbox environment name> to production. I acknowledge that this will overwrite the database currently in production.
+- After you perform a data upgrade in the sandbox environment, see the instructions in [Self-service database refresh](../database/database-refresh.md#self-service-database-refresh) to copy your upgraded database from the data upgrade sandbox environment into your production environment. 
 
 - We added the following tasks:
     - Perform a smoke test.
@@ -54,7 +52,7 @@ The mock cutover process is very similar to a basic data upgrade validation in a
     - Allow users back in. Notify your user base that the upgrade is completed and that they can use the system again.
 
 > [!NOTE]
-> In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
+> In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
 
 ## Technical workstream
 
@@ -67,7 +65,7 @@ During cutover testing, the technical team is focused on performance and reliabi
 > [!NOTE]
 > For the technical workstream, the cutover testing process is the same as the high-level steps of the actual/go-live cutover process.
 
-For the technical workstream, the cutover testing process is the same described in [Upgrade from AX 2012 - Data upgrade in sandbox environments](upgrade-data-sandbox.md).
+For the technical workstream, the cutover testing process is the same described in [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md).
 
 ## Functional workstream
 
@@ -85,12 +83,11 @@ For each manual change, a task must be added to the cutover plan document. This 
 -	Who must do it?
 -	How long does it take?
 
-### Add users, and perform functionl tests
+### Add users, and perform functional tests
 When you have fully configured your environment, add users, and perform appropriate testing. 
 
 ## Roll back to AX 2012
 
 The goal of this task is to restore the database by using the backup that was made when AX 2012 was turned off, and then turn AX 2012 back on. The state of integrated systems might also have to be restored. However, because integrated systems vary from business to business, you must plan for this scenario independently, based on your specific circumstances. Although it's unlikely that you will have to roll back, it's very important that you have a tested process in case you require it.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
