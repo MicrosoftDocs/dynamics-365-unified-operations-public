@@ -4,7 +4,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.21 (October 2021)
 description: This topic describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.21. 
 author: josaw1
-ms.date: 08/23/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -71,7 +71,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 |   Targeting   |  [Customer segmentation and targeting](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/customer-segmentation-targeting.md)  |  [Device, market, and geolocation targeting](../targeting-overview.md)    |
 |  Performance  | [Enforce custom query change tracking configurations on retail transaction tables due to performance impacts](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enforce-custom-query-change-tracking-configurations-retail-transaction-tables-due-performance-impacts.md)   | This feature improves Commerce performance when using the Data Management export framework combined with change tracking capabilities on retail transaction tables.  |
 | E-commerce   |   [Enhanced reordering experience in e-commerce](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enhanced-reordering-experience-e-commerce.md)  |   This feature introduces enhancements to the existing reordering ("buy it again") function for e-commerce sites.   |
-| Point of Sale (POS) offline   |   Modern POS offline monitoring dashboard and seamless offline resiliency and reliability enhancements   |   This feature set is additionally being backported to the 10.0.20 release.  For more details, see the [Commerce offline database implementation considerations](../dev-itpro/implementation-considerations-offline.md) document.   |
+| Point of Sale (POS) offline   |   Modern POS offline monitoring dashboard and seamless offline resiliency and reliability enhancements   |   This feature set is additionally being backported to the 10.0.20 release.  For more details, see the [Commerce offline database implementation and troubleshooting](../dev-itpro/implementation-considerations-offline.md) document.   |
 
 
 ## Additional resources
