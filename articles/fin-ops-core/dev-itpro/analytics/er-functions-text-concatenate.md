@@ -5,7 +5,6 @@ title: CONCATENATE ER function
 description: This topic provides information about how the CONCATENATE Electronic reporting (ER) function is used
 author: NickSelin
 ms.date: 12/12/2019
-ms.topic: article
 ms.prod: 
 ms.technology: 
 

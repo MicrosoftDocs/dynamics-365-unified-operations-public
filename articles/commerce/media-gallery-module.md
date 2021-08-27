@@ -4,7 +4,7 @@
 title: Media gallery module
 description: This topic covers media gallery modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,6 +61,10 @@ In the example in the following illustration, a buy box on a PDP hosts product i
 | Images | Images that are selected from site builder Media Library | In addition to being rendered from a product, images can be curated for a media gallery module. These images will be appended to any product images that are available. This capability is available in Commerce version 10.0.12. |
 | Thumbnail orientation | **Vertical** or **Horizontal** | This property specifies whether thumbnail images should be shown in a vertical strip or a horizontal strip. |
 | Hide master product images for variant | **True** or **False** | If this property is set to **True**, when a variant is selected, images of the master product are hidden unless the variant has no images. This property doesn't affect products that have no variants. |
+| Update media on dimension selection | **True** or **False** | If this property is set to **True**, images in the media library will be updated when any dimension (such as color, style, or size) is selected, and if an image is available. This property helps simplify the browsing experience, because not every product variant dimension must be selected for the corresponding image to be updated. This property is available on the **Advanced** tab. |
+
+> [!IMPORTANT]
+> The **Update media on dimension selection** property is available as of the Commerce version 10.0.21 release. It requires that Commerce module library package version 9.31 be installed.
 
 The following illustration shows an example of a media gallery module where the full-screen and zoom options are available.
 

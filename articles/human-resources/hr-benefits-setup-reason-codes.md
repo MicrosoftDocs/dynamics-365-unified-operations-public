@@ -3,8 +3,8 @@
 
 title: Set up reason codes
 description: Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.
-author: andreabichsel
-ms.date: 01/25/2021
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: Human Resources
 Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.
 
 > [!NOTE]
-> As of January 2021, reason codes are migrating to the **Personnel management** workspace instead of the **Benefits management** workspace. For more information, see [Manually migrate reason codes to Personnel management](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
+> As of January 2021, reason codes were migrated to the **Personnel management** workspace instead of the **Benefits management** workspace. For more information, see [Manually migrate reason codes to Personnel management](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
 
 ## Create reason codes
 
-1. In the **Personnel management** workspace (or **Benefits management** workspace if your reason codes haven't yet migrated), select **Links**, and then select **Reason codes**.
+1. In the **Personnel management** workspace (or **Benefits management** workspace if your reason codes haven't migrated), select **Links**, and then select **Reason codes**.
 
 2. Select **New**.
 
@@ -49,13 +49,13 @@ Dynamics 365 Human Resources uses reason codes to explain why an employee’s be
    | **Reason code** | A unique name to identify the reason an employee would change a benefit plan enrollment. |
    | **Description** | A description of the reason code. |
 
-4. Under **Applicable scenarios**, set **Benefits management** to **Yes**. (Not applicable if your reason codes haven't yet migrated to the **Personnel management** workspace.)
+4. Under **Applicable scenarios**, set **Benefits management** to **Yes**. (Not applicable if your reason codes haven't migrated to the **Personnel management** workspace.)
 
 5. Select **Save**.
 
 ## Manually migrate reason codes to Personnel management
 
-In January 2021, reason codes are migrating to the **Personnel management** workspace instead of the **Benefits management** workspace. Most reason code data will automatically migrate in your environment. Some reason code data might not migrate. For example, reason codes now have a 15-character maximum, so any reason codes longer than 15 characters won't migrate automatically.
+In January 2021, reason codes were migrated to the **Personnel management** workspace instead of the **Benefits management** workspace. Most reason code data will automatically migrate in your environment. Some reason code data might not migrate. For example, reason codes now have a 15-character maximum, so any reason codes longer than 15 characters won't migrate automatically.
 
 You'll see a banner on the **Links** page of the **Benefits management** workspace informing you about the migration and whether any reason codes didn't migrate.
 

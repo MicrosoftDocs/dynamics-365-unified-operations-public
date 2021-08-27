@@ -4,7 +4,7 @@
 title: Remove and reinstall, or add an AOS node
 description: This topic explains how to remove an Application Object Server (AOS) node in your on-premises environment to reduce or replace a failed node.
 author: ttreen
-ms.date: 04/14/2020
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -74,7 +74,7 @@ This topic explains how to remove an Application Object Server (AOS) node in you
 10. Run the following command to save the configuration file to C:\\Temp\\ClusterConfig.json. (Make sure that the C:\\Temp path exists.)
 
     ```powershell
-    Get-ServiceFabricClusterConfiguration -UseApiVersion -ApiVersion 10-2017 >C:\Temp\ClusterConfig.json
+    Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
     ```
 
 11. In the configuration file that you saved in the previous step, in the **fabricSettings** section, in the **Setup** section, add a section for the **NodesToBeRemoved** parameter. The parameter value should be a comma-separated list of names of the nodes that must be removed. 
@@ -223,12 +223,12 @@ The next step is to start a new AOS server.
 4. Copy the contents of each infrastructure\\VMs\<VMName\> folder into the corresponding virtual machine (VM). (If you use remoting scripts, they will automatically copy the contents to the target VMs.) Then run the following Windows PowerShell scripts as an admin.
 
     > [!NOTE]
-    > If you're running remotely and repairing an existing server, you must delete the lbdscripts_remote_status.json file from the infrastructure folder to ensure the file copy process is run against all servers again.
+    > If you're running remotely and repairing an existing server, specify the -ForcePushLBDScripts switch to ensure the file copy process is run against all servers again.
 
     ```powershell
     # Install pre-req software on the VMs.
     # If Remoting, execute
-    # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <share folder path of the MSIs> -ConfigurationFilePath .\ConfigTemplate.xml
+    # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <share folder path of the MSIs> -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
     .\Configure-PreReqs.ps1 -MSIFilePath <share folder path of the MSIs>
     ```
 
@@ -245,27 +245,12 @@ The next step is to start a new AOS server.
     .\Set-CertificateAcls.ps1
     ```
 
-9. If errors occur while you run **Add-GMSAonVM.ps1**, you must run the following command. (Edit the command if your service account differs. Note that you remove the dollar sign \[\$\] from the service account name.)
+9. If errors occur while you run **Add-GMSAonVM.ps1**, you likely need to update your gMSA account. Run the following script from your infrastructure scripts folder.
 
     ```powershell
-    Get-ADServiceAccount -Identity svc-AXSF -properties PrincipalsAllowedToRetrieveManagedPassword
+    Import-Module .\D365FO-OP\D365FO-OP.psd1
+    Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
     ```
-
-    ![Get command and result.](media/525f31b6281e87fd58075f2101f75118.png)
-
-    You see a list of the servers that have permission to retrieve the password for the **svc-AXFS\$** gMSA. If you see a globally unique identifier (GUID) value for the server that was removed, ignore it.
-
-10. Copy the list of principals from the result, and use them to edit or amend the following command. (Note that, because the **Set** command isn't additive, you must add all references back in.)
-
-    ```powershell
-    Set-ADServiceAccount -Identity svc-AXSF -PrincipalsAllowedToRetrieveManagedPassword  "CN=AOS1,CN=Computers,DC=contoso,DC=com","CN=AOS2,CN=Computers,DC=contoso,DC=com","CN=AOS3,CN=Computers,DC=contoso,DC=com"
-    ```
-
-    ![Set command.](media/ff652391b87c72cacd318b588758e4fc.png)
-
-11. Run the original **Get** command to verify that the new AOS node was added back in. (Note in the example screenshot below you can see that AOS1 was added to the list of PrincipalsAllowedToRetrieveManagedPassword.)
-
-    ![Original Get command and result.](media/17b9c379b6328ed506d16270280146f4.png)
 
 12. Run the following script to validate the VM setup.
 

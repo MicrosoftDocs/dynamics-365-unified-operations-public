@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.21 (October 2021)
+          href: get-started/whats-new-platform-updates-10-0-21.md
         - name: Platform updates for version 10.0.20 (August 2021)
           href: get-started/whats-new-platform-updates-10-0-20.md
         - name: Platform updates for 10.0.19 (June 2021)
@@ -330,8 +332,6 @@
             href: database/api/v1/reference-create-export.md
           - name: Get operation activity status
             href: database/api/v1/reference-get-status.md
-          - name: Start and stop environments
-            href: database/api/v1/reference-start-stop-environments.md
     - name: Demo data
       items: 
       - name: Demo data overview
@@ -366,8 +366,10 @@
             href: deployment/plannedmaintenance-selfservice.md
           - name: Business continuity and disaster recovery
             href: sysadmin/business-continuity-disaster-recovery.md
-        - name: Complete Azure Resource Manager onboarding
+        - name: Complete the Azure Resource Manager onboarding process
           href: deployment/arm-onboarding.md
+        - name: Complete the Azure Resource Manager onboarding process for US government LCS projects
+          href: deployment/arm-onbarding-us-goverment.md
         - name: Azure ExpressRoute and Finance and Operations
           href: deployment/expressroute.md
         - name: Finance and Operations architecture
@@ -446,6 +448,8 @@
             href: deployment/onprem-adfscompatibility.md
           - name: Local agent pre-deployment and post-deployment scripts
             href: lifecycle-services/pre-post-scripts.md
+          - name: Deployment configurations for the local agent
+            href: deployment/onprem-localagent-options.md
           - name: Update the local agent
             href: lifecycle-services/update-local-agent.md
         - name: Troubleshooting
@@ -940,6 +944,16 @@
           href: lifecycle-services/lcs-works-lcs.md
         - name: LCS for partners
           href: lifecycle-services/getting-started-lcs.md
+        - name: RESTful APIs
+          items:
+          - name: Start and stop environments
+            href: lifecycle-services/api/v1/reference-start-stop-environments.md
+          - name: Fetch environment metadata
+            href: lifecycle-services/api/v1/reference-environment-metadata.md
+          - name: Fetch environment history
+            href: lifecycle-services/api/v1/reference-environment-history.md
+          - name: Fetch environment RSAT certificate ZIP
+            href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
         - name: What's new or changed in Lifecycle Services
           href: lifecycle-services/whats-new-lcs.md
       - name: Lifecycle Services user guide
@@ -1134,22 +1148,24 @@
               href: data-entities/dual-write/migrate-prospect-to-cash.md
             - name: Troubleshooting
               items:
-              - name: Verify dual-write configuration in Finance and Operations apps and Dataverse
-                href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+              - name: General troubleshooting
+                href: data-entities/dual-write/dual-write-troubleshooting.md
               - name: Troubleshoot issues during initial setup
                 href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
               - name: Troubleshoot issues during initial synchronization
                 href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-              - name: Troubleshoot dual-write issues in Finance and Operations apps
-                href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
               - name: Troubleshoot live synchronization issues
                 href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+              - name: Troubleshoot dual-write issues in Finance and Operations apps
+                href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+              - name: Troubleshoot party and global address book problems
+                href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
               - name: Troubleshoot issues related to solution awareness
                 href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
               - name: Troubleshoot issues from upgrades of Finance and Operations apps
                 href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-              - name: General troubleshooting
-                href: data-entities/dual-write/dual-write-troubleshooting.md
+              - name: Verify dual-write configuration in Finance and Operations apps and Dataverse
+                href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
         - name: Dual-write frequently asked questions
           href: data-entities/dual-write/dual-write-faq.md                  
       - name: Virtual entities
