@@ -906,6 +906,8 @@
         href: dev-tools/date-effectivity.md
       - name: Development for independent software vendors
         items:
+        - name: ISV development home page
+          href: dev-tools/isv-dev-home-page.md
         - name: Link X++ modules to packages by using ISV Studio
           href: dev-tools/isv-studio-solutions.md
         - name: ISV licensing
@@ -1018,6 +1020,8 @@
         href: lifecycle-services/performancetroubleshooting.md
       - name: Query cookbook
         href: lifecycle-services/querycookbook.md
+      - name: Expired subscriptions and data deletion
+        href: lifecycle-services/expired-subscription-data-deletion.md
       - name: Microsoft Dynamics 365 Translation Service
         items:
         - name: Dynamics 365 Translation Service overview
