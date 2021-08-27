@@ -1591,12 +1591,12 @@ Parameter name: The value supplied for parameter 'serviceName' cannot be null or
 Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 ```
 
-**Reason:** The AOS needs to retrieve the list of services running on the BI node to find the version of SSRS that is currently installed. The account that the AOS runs under does not have the appropriate permissions to get the list of services so it fails and is unable to retrieve the serviceName.
+**Reason:** The AOS needs to retrieve the list of services running on the BI node to find the version of SSRS that is currently installed. The account that the AOS runs under does not have the appropriate permissions to get the list of services, so it fails and is unable to retrieve the serviceName.
 
-**Resolution:** Version 2.11.0 of the infrastructure scripts has been released to propagate these permissions so the serviceName can be retrieved.
+**Resolution:** Version 2.11.0 of the infrastructure scripts, available from the Shared asset library in LCS, has been released to propagate these permissions so the serviceName can be retrieved.
 
 #### Automatically add these permissions:
-1. Download the latest Infrastructure scripts from the shared asset library in LCS.
+1. Download the latest infrastructure scripts from the Shared asset library in LCS.
 1. Migrate your ConfigTemplate.xml if needed.
 1. Run the following commands in PowerShell with Administrator privileges:
 
@@ -1630,8 +1630,8 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 1. Open lusrmgr.msc (Local Users and Groups)
 1. Create a new group called **Dynamics365ReadServices**
 1. Add the account that your AOS runs under (i.e. axserviceuser, svc-AXSF$) to the group you created above.
-1. Download the latest Infrastructure scripts from the shared asset library in LCS.
-1. Copy the Infrastructure scripts to your BI (SSRS) node.
+1. Download the latest infrastructure scripts from the Shared asset library in LCS.
+1. Copy the infrastructure scripts to your BI (SSRS) node.
 1. Create a file scmgroups.csv with the following content:
 
     ```text
