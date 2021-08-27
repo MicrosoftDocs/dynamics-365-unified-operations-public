@@ -21,13 +21,13 @@ A *class* is a software construct that defines the data and methods of the insta
 
 *Variables* contain the data for the class. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables*.
 
-Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance variables). By default, methods are declared to operate on the instance variables of the class. These methods are known as *instance methods* or *object methods*. 
+Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance variables). By default, methods are declared to operate on the instance variables of the class. These methods are known as *instance methods* or *object methods*.
 
 You can declare *static methods* and *static fields*, that do not have access to *instance variables*. These are described in [X++ static classes](xpp-static-classes.md).
 
 ## Declare a class
 
-You must use the **Add new item** dialog in Visual Studio to add a class to your project. 
+You must use the **Add new item** dialog in Visual Studio to add a class to your project.
 
 1. In Server Explorer, right-click the project, and then click **Add**.
 2. In the **New Item** dialog box, select **Installed > Dynamics 365 Items > Code** in the left navigation. Then select **Class**, and then enter a name for the class.
@@ -77,19 +77,19 @@ public static void TestLastName()
 
 ## Constructors
 
-To create an instance of a class, you must instantiate it by using a *constructor*. 
+To create an instance of a class, you must instantiate it by using a *constructor*.
 
-+ You can define only one **new** method (constructor) in a class. 
-+ If you do not define a constructor, a default constructor with no parameters is created automatically by the compiler. 
++ You can define only one **new** method (constructor) in a class.
++ If you do not define a constructor, a default constructor with no parameters is created automatically by the compiler.
 + You can simulate a default constructor by assigning default values to the parameters in the **new** method.
 
-The following examples defines a parameterless constructor in the **Point** class.
+The following example defines a parameterless constructor in the **Point** class.
 
 ```xpp
 class Point
 {
 
-    // Instance variables that are public. In practice, you would probably make this protected or private 
+    // Instance variables that are public. In practice, you would probably make this protected or private
     // and create accessor methods.
     public real x = 0.0;
     public real y = 0.0;
@@ -102,7 +102,7 @@ class Point
 Following is information about how to create a clean inheritance model and minimize problems when code is upgraded:
 
 + Each class must have a single public construction method unless the class is abstract. If no initialization is required, use a static construct method. Otherwise, use a static **new** method (the default constructor for the class should be protected).
-+ Each class should have at least one static **construct** method method.
++ Each class should have at least one static **construct** method.
 + Each class should have at least one static **new** method.
 + Each class should have a **new** method (the default constructor). This method should be **protected**.
 + Create accessor methods to get and set class variables.
@@ -170,6 +170,7 @@ Point ap = new Point();
 ```
 
 ## Destructors
+
 You use a *destructor* to explicitly destroy a class instance. Instances are automatically destroyed when there are no references to them. However, you can destroy objects explicitly in the following ways:
 
 + Use the **finalize** method.
@@ -186,13 +187,13 @@ The following example shows the basic structure for a call to the **finalize** m
 if (condition)
 {
     // Removes object from memory.
-    this.finalize(); 
+    this.finalize();
 }
 ```
 
 ### Set reference variable to null
 
-Set the reference variable to **null** to terminate an object. This approach destroys an object only if no other variables point to that object. You should verify that other code isn't using the variable. The following example creates an reference variable and then sets it to **null**.
+Set the reference variable to **null** to terminate an object. This approach destroys an object only if no other variables point to that object. You should verify that other code isn't using the variable. The following example creates a reference variable and then sets it to **null**.
 
 ```xpp
 Point myPoint = new Point();
@@ -230,7 +231,7 @@ info(int2Str(area));
 
 ### Static methods
 
-Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**. You don't have to instantiate an object before you use static methods. Static methods are often used to work with data that is stored in tables. Member variables can't be used in a static method. 
+Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**. You don't have to instantiate an object before you use static methods. Static methods are often used to work with data that is stored in tables. Member variables can't be used in a static method.
 
 You use the following syntax to call static methods.
 
@@ -257,7 +258,7 @@ Method declarations consist of a header and a body. The method header declares t
 
 ### Return type
 
-A return type is required for each method. If a method doesn't return anything, use the **void** keyword as the return type. 
+A return type is required for each method. If a method doesn't return anything, use the **void** keyword as the return type.
 
 The following example shows two methods. One method has a return type, but the other method doesn't have a return type.
 
@@ -276,21 +277,21 @@ int methodNameIntegerReturnValue()
 
 ### Syntax
 
-Method declaration = *Heading*  *Body* Heading = **\[** *Modifiers* **\]**  *ReturnType*  *MethodName*  **(**  *ParameterList*  **)** 
+Method declaration = *Heading*  *Body* Heading = **\[** *Modifiers* **\]**  *ReturnType*  *MethodName*  **(**  *ParameterList*  **)**
 
-Modifiers = **\[client\] \[server\] \[edit | display | public | protected | private\] \[static | abstract | final \]** 
+Modifiers = **\[client\] \[server\] \[edit | display | public | protected | private\] \[static | abstract | final \]**
 
-ReturnType = *Datatype*  **| void | anytype** 
+ReturnType = *Datatype*  **| void | anytype**
 
-MethodName = *Identifier* 
+MethodName = *Identifier*
 
-ParameterList = **\[** *Parameter*  **{ ,**  *Parameter*  **}\]** 
+ParameterList = **\[** *Parameter*  **{ ,**  *Parameter*  **}\]**
 
-Parameter = *Datatype*  *Variableidentifier*  **\[ =**  *Expression*  **\]** 
+Parameter = *Datatype*  *Variableidentifier*  **\[ =**  *Expression*  **\]**
 
-Body = **{ \[**  *VariableDeclarations*  **\] \[**  *EmbeddedFunctionDeclarations*  **\] \[**  *Statements*  **\] }** 
+Body = **{ \[**  *VariableDeclarations*  **\] \[**  *EmbeddedFunctionDeclarations*  **\] \[**  *Statements*  **\] }**
 
-EmbeddedFunctionDeclaration = *Heading*  **{\[**  *VariableDeclarations*  **\] \[**  *Statements*  **\]}** 
+EmbeddedFunctionDeclaration = *Heading*  **{\[**  *VariableDeclarations*  **\] \[**  *Statements*  **\]}**
 
 If you use the **anytype** return type, the method can return any data type.
 
@@ -298,7 +299,7 @@ If you use the **anytype** return type, the method can return any data type.
 
 ```xpp
 void update ()
-{   
+{
     // Variable declared and initialized
     CustTable this_Orig = this.orig();
 
@@ -325,8 +326,8 @@ In the following example, the **checkAccountBlocked** method returns a Boolean v
 ```xpp
 boolean checkAccountBlocked(AmountCur amountCur)
 {
-    if (this.blocked == CustVendorBlocked::All 
-        ||(this.blocked == CustVendorBlocked::Invoice 
+    if (this.blocked == CustVendorBlocked::All
+        ||(this.blocked == CustVendorBlocked::Invoice
         && amountCur > 0 ))
     return checkFailed(strFmt("@SYS7987",this.accountNum));
     return true;
@@ -334,11 +335,12 @@ boolean checkAccountBlocked(AmountCur amountCur)
 ```
 
 ## Method modifiers
+
 Several modifiers can be applied to method declarations. Some of the modifiers can be combined (for example, **final static**). Here are the method modifier keywords:
 
-+ **abstract**: The method is declared but isn't implemented in a parent class. The method must be overridden in subclasses. If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error. 
++ **abstract**: The method is declared but isn't implemented in a parent class. The method must be overridden in subclasses. If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error.
 
-    Classes can also be abstract. Sometimes, a class should not be instantiated even though it represents an abstract concept. Only subclasses should be instantiated. Base classes of this type can be declared as **abstract**. For example, you want to model the concept of an account. Accounts are abstract, because only derived classes (ledger accounts and so on) exist in the real world. This examples describes a clear case where you should declare the **Account** class as **abstract**.
+    Classes can also be abstract. Sometimes, a class should not be instantiated even though it represents an abstract concept. Only subclasses should be instantiated. Base classes of this type can be declared as **abstract**. For example, you want to model the concept of an account. Accounts are abstract, because only derived classes (ledger accounts and so on) exist in the real world. This example describes a clear case where you should declare the **Account** class as **abstract**.
 + **display**: The method's return value should be shown on a page or a report. The value can't be modified on the page or report. Typically, the return value is a calculated value, such as a sum.
 + **edit**: The method's return type should be used to provide information for a field that is used on a page. The value in the field can be modified.
 + **final**: The method can't be overridden in any class that derives from its class.
@@ -353,9 +355,9 @@ The following examples show only the method headers.
 
 ```xpp
 // A method that cannot be overridden
-final int dontAlterMe() 
+final int dontAlterMe()
 
-// A static method 
+// A static method
 static void noChange()
 
 // A display method that returns an integer
@@ -398,7 +400,7 @@ class Person
 {
     date birthDate;
 
-    // The constructor that takes a date type as a parameter. 
+    // The constructor that takes a date type as a parameter.
     // That value is assigned to the field member birthDate.
     void new(date _date)
     {
@@ -419,7 +421,7 @@ class Person
         Person person = new Person(13\5\2010);
 
         // Optional parameter's default is used.
-        Info(strFmt('Age in years today is %1 years', 
+        Info(strFmt('Age in years today is %1 years',
                 real2int(person.CalculateAgeAsOfDate())));
 
         // January 2, 2044  is the parameter value for _date.
@@ -431,7 +433,7 @@ class Person
 }
 ```
 
-This is an example of how you cannot skip to a second optional parameter. The **AddThreeInts** method has two optional parameters. The **callAdditions** method calls the **AddThreeInts** method. The commented out code tries to override only the **\_i3** default value, but the compiler requires that all prior optional parameters also be overridden in the call. 
+This is an example of how you cannot skip to a second optional parameter. The **AddThreeInts** method has two optional parameters. The **callAdditions** method calls the **AddThreeInts** method. The commented out code tries to override only the **\_i3** default value, but the compiler requires that all prior optional parameters also be overridden in the call.
 
 ```xpp
 class Additions
@@ -461,33 +463,33 @@ Class variables are protected by default. By hiding details of the internal impl
 class Point
 {
     // Instance variables
-    real x; 
+    real x;
     real y;
 
     // Constructor to initialize to a specific or default value
-    void new(real _x = 10, real _y = 10) 
+    void new(real _x = 10, real _y = 10)
     {
         x = _x;
         y = _y;
     }
 
     // Accessor methods
-    void setX(real _x) 
+    void setX(real _x)
     {
         x = _x;
     }
 
-    void setY(real _y) 
+    void setY(real _y)
     {
         y = _y;
     }
 
-    real getX() 
+    real getX()
     {
         return x;
     }
 
-    real getY() 
+    real getY()
     {
         return y;
     }
@@ -514,7 +516,7 @@ A scope defines the area in which an item can be accessed. Variables that are de
 
 ## Local functions
 
-You can declare functions inside a method. These are called local functions. While possible, it is not a best practice. Instead, you should add private methods to the class. 
+You can declare functions inside a method. These are called local functions. While possible, it is not a best practice. Instead, you should add private methods to the class.
 
 + The declarations of local functions must physically precede any non-declaration statements in the method.
 + You can declare more than one local function in your method. However, all local functions must be declared in an uninterrupted series, and the set must be terminated by one semicolon (;).

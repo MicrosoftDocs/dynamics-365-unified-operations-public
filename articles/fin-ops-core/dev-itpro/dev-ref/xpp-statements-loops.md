@@ -34,7 +34,7 @@ You use the **print** statement to output text through **System.Diagnostics.Writ
 | Feature   | print statement    | info method  |
 |-----------|--------------------|--------------|
 | Ease of invocation                        | The **print** statement automatically converts various data types into strings. It can convert multiple data types in one invocation.       | The **info** method requires that the input parameter be a string.     |
-| Ability to copy contents to the clipboard | Text is easily copied from the **Output** window to the clipboard.            | Text is easily easily copied from the **Infolog** window to the clipboard. |
+| Ability to copy contents to the clipboard | Text is easily copied from the **Output** window to the clipboard.            | Text is easily copied from the **Infolog** window to the clipboard. |
 | Typical usage                             | The **print** statement is used for convenience during testing. It can help you debug small issues without having to run a formal debugger. | The **info** method is appropriate for use in production.     |
 
 ### Example of a print statement

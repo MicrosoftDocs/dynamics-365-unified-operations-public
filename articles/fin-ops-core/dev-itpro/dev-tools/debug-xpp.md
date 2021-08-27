@@ -123,6 +123,6 @@ Put a breakpoint on the print statements by pressing F9 while that statement is 
 
 ## The Immediate window
 
-The **Immediate** window is a debugger feature that lets you to enter expressions and statements to evaluate at any given time. This feature isn't implemented in the X++ stack. However, you can still benefit from the immediate window. The snippets must be expressed in C\#, not in X++.
+The **Immediate** window is a debugger feature that lets you enter expressions and statements to evaluate at any given time. This feature isn't implemented in the X++ stack. However, you can still benefit from the immediate window. The snippets must be expressed in C\#, not in X++.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

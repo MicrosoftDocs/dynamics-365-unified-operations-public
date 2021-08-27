@@ -26,7 +26,7 @@ X++ is an object-oriented, application-aware, and data-aware programming languag
 | Best practice checks | X++ code is checked for syntax errors during compile time. The compile process also performs best practice checks. Violations of best practices can generate compiler messages.|
 | Garbage collection   | The X++ runtime execution engines have automatic mechanisms to discard objects that are no longer referenced, so that memory space can be reused. |
 | Interoperability     | Interoperability between classes written in X++ and in C\# (or other .NET Framework languages) is supported.                                      |
-| File manipulation    | File input and output is supported, including XML building and parsing. |
+| File manipulation    | File input and output are supported, including XML building and parsing. |
 | Collections          | Dynamic arrays are supported and the X++ includes several collection objects.|
 
 ## X++ compiles to Microsoft .NET CIL (Common Intermediate Language)
