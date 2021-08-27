@@ -180,7 +180,7 @@ endMth(0221989); //Returns the date 2821989.
 ```
 
 ## mkDate
-Creates a date, based on three integers that indicate the day, month, and year, respectively.
+Creates a date, based on three integers that indicate the day, month, and year, respectively. "Shorthand" values for the year argument, for example, "y", are not supported.
 
 ```xpp
 date mkDate(int day, int month, int year)

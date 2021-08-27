@@ -2,7 +2,7 @@
 title: Develop and customize home page
 description: This topic provides links to topics about development.
 author: RobinARH
-ms.date: 04/27/2020
+ms.date: 08/27/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
@@ -90,23 +90,21 @@ The Finance and Operations applications represent the next-generation enterprise
 
 ## X++ programming language
 
+### Reference
+
+- [X++ language reference](../dev-ref/xpp-language-reference.md)
+
 ### Overviews
 
-- [X++ and debugger features](new-x-debugger-features.md)
 - [Write business logic by using C\# and X++ source code](write-business-logic.md)
 - [Visual Studio 2017 requirements for X++](developer-tools-vs2017.md)
 
 ### Language support
 
-- [Changes in X++ and the X++ compiler](programming-language-support.md)
 - [EventHandlerResult classes in request or response scenarios](event-handler-result-class.md)
 - [Debug X++ code by using the debugger in Visual Studio](debug-xpp.md)
 - [Language Integrated Query (LINQ) provider for C\#](linq-provider-c.md)
 - [Write best practice rules](author-best-practice-rules.md)
-
-### Reference
-
-- [X++ language reference](../dev-ref/xpp-language-reference.md)
 
 ## Customize with extensions and overlayering
 
@@ -178,10 +176,5 @@ The client is an HTML web client that runs in all major browsers. For informatio
 
 - [Gantt control development guide](../user-interface/gantt-development-guide.md)
 - [Create a new transportation management engine](../../../supply-chain/transportation/create-new-transportation-management-engine.md)
-
-## Additional resources
-
-[Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
