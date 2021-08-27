@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Design an ER format to paginate a generated document in Excel format
-description: This topic describes how to design an Electronic reporting (ER) format to paginate a generated document in Excel format.
+title: Design an ER format to paginate a generated document in Microsoft Excel 
+description: This topic describes how to design an Electronic reporting (ER) format to paginate a generated document in Microsoft Excel.
 author: NickSelin
-ms.date: 08/23/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Version 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can configure an [Electronic reporting (ER)](general-electronic-reporting.md) format to generate an outbound document in Excel format and to manage document pagination.
+This topic explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can configure an [Electronic reporting (ER)](general-electronic-reporting.md) format to generate an outbound document in Microsoft Excel and manage document pagination.
 
-In this example, you will modify the provided by Microsoft ER format that is used to print out the control report when the Intrastat declaration is [generated](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md). This report let you observe reported Intrastat transactions. Your modifications will allow to manage pagination of a generated control report.
+In this example, you will modify the ER format provided by Microsoft that's used to print out the control report when the Intrastat declaration is [generated](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md). This report lets you observe reported Intrastat transactions. Your modifications allow you to manage the pagination of a generated control report.
 
-The procedures in this topic can be completed in the **DEMF** company. No coding is required. Before you begin, download and save the following file.
+The procedures in this topic can be completed in the **DEMF** company. No coding is required. Before you begin, download and save the following files.
 
 | **Description**   | **File name**                   |
 | ------------------|---------------------------------| 
@@ -355,13 +355,13 @@ If you plan to control page footer visibility and do not show it on the final pa
 
 ### Configure components visibility
 
-You can change visibility of page header and footer on a particular page of a generated document to achieve the following:
+You can change the visibility of the page header and footer on a particular page of a generated document to hide the following:
 
--   Hide the page header on the first page as the report header already contains column titles
--   Hide the page header on any page that contains no transactions that can happen for the last page
--   Hide the page footer on any page that contains no transactions that can happen for the last page
+    - The page header on the first page because the report header already contains column titles.
+    - The page header on any page that doesn't have transactions that can happen for the last page.
+    - The page footer on any page that doesn't have transactions that can happen for the last page.
 
-For doing this, change the **Enabled** property of the **Report page header** and **Report page footer** components:
+To do this, change the **Enabled** property of the **Report page header** and **Report page footer** components.
 
 1.  In the format tree, select the **Report page header** component that is nested under the **Report page** component.
     1.  Select **Edit** button for the **Enabled** field.
@@ -387,25 +387,30 @@ For doing this, change the **Enabled** property of the **Report page header** an
 
 ## Generate Intrastat declaration control report (updated)
 
-1.  Make sure that you have 24 transactions on the **Intrastat** page like it is shown on the illustration above. Repeat the steps of the [Generate Intrastat declaration control report](#generate-intrastat-control-report) procedure to generate and review the control report.
-    > Note that all transactions are presented on the first page and the page totals and counters equal to the report totals and counters. Page header range is hidden on the first page as the report header already contains column titles. Page header and page footer are hidden on the second page as it contains no transactions.
+1. Make sure that you have 24 transactions on the **Intrastat** page. Repeat the steps of the [Generate Intrastat declaration control report](#generate-intrastat-control-report) procedure to generate and review the control report.
+
+   All transactions are presented on the first page. The page totals and counters are equal to the report totals and counters. The page header range is hidden on the first page because the report header already contains column titles. The page header and footer are hidden on the second page because it contains no transactions.
+   
     ![The generated Excel document in the desktop application.](./media/er-paginate-excel-reports-document2.gif)
-2.  Update 2 transactions on the **Intrastat** page changing the **Item number** code from **D00006** to **L0010**. The **Active stereo speaker pair** product name of the selected **L0010** item is longer than the original **Standard speaker**. So, it must force text wrapping in the corresponding cell of a generated document. Following to this, the document pagination and page related summing and counting must be updated. Repeat the steps of the [Generate Intrastat declaration control report](#generate-intrastat-control-report) procedure to generate and review the control report.
-    > Note that currently transactions are presented on two pages and page totals and counters are properly calculated. Page header range is properly hidden on the first page and visible on the second one. Page footer is visible on both pages as they contain transactions.
-    ![The generated Excel document in the desktop application.](./media/er-paginate-excel-reports-document3.gif)
+    
+2. Update two transactions on the **Intrastat** page by changing the **Item number** code from **D00006** to **L0010**. The **Active stereo speaker pair** product name of the selected **L0010** item is longer than the original **Standard speaker**. This forces text wrapping in the corresponding cell of a generated document. Following this, the document pagination and page related summing and counting must be updated. Repeat the steps of the [Generate Intrastat declaration control report](#generate-intrastat-control-report) procedure to generate and review the control report.
+    
+    Currently, transactions are presented on two pages and page totals and counters are properly calculated. Page header range is properly hidden on the first page and visible on the second one. The page footer is visible on both pages because they contain transactions.
+   
+   ![The generated Excel document in the desktop application.](./media/er-paginate-excel-reports-document3.gif)
 
 ## Frequently asked questions
 
 ### Is there any way to recognize when the final page is processed by the **Page** format component?
 
-The **Page** component [does not expose](er-fillable-excel.md#page-component-limitations) information about the number of the processed page and the total number of pages in a generated document. Nevertheless, you can configure ER [formulas](er-formula-language.md) to recognize the final page. For example, you can do this in the following way for the provided above sample:
+The **Page** component [doesn't expose](er-fillable-excel.md#page-component-limitations) information about the number of the processed page and the total number of pages in a generated document. Nevertheless, you can configure ER [formulas](er-formula-language.md) to recognize the final page. For example,
 
--   Calculate the total number of transactions that have been already processed by using the **Report page** component. You can do this using, for example, the formula `COUNT(Total.Page.Amount.Result)`
--   Calculate the total number of transactions that must be processed based on the `model.CommodityRecord` binding that is configured for the **Report lines** component. You can do this using the formula `COUNT(model.CommodityRecord)`
--   Compare two numbers to recognize the final page - when both values are equal, the final page is generated.
+    - Calculate the total number of transactions that have already been processed by using the **Report page** component. You can do this using the formula `COUNT(Total.Page.Amount.Result)`. 
+    - Calculate the total number of transactions that must be processed based on the `model.CommodityRecord` binding that's configured for the **Report lines** component. You can do this using the formula `COUNT(model.CommodityRecord)`
+    - Compare two numbers to recognize the final page. When both values are equal, the final page is generated.
 
-> [!NOTE]
-> It is recommended to use this approach only when the **Enabled** property of the **Report lines** component contains no formula that might return [False](er-formula-supported-data-types-primitive.md#boolean) at runtime for some of the iterated [records](er-formula-supported-data-types-composite.md#record) of the bound [Record list](er-formula-supported-data-types-composite.md#record-list).
+    > [!NOTE]
+    > We recommend that you use this approach only when the **Enabled** property of the **Report lines** component contains no formula that might return [False](er-formula-supported-data-types-primitive.md#boolean) at runtime for some of the iterated [records](er-formula-supported-data-types-composite.md#record) of the bound [Record list](er-formula-supported-data-types-composite.md#record-list).
 
 ## Additional resources
 
