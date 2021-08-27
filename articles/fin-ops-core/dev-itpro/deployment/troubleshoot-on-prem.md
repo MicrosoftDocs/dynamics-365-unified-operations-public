@@ -1577,7 +1577,7 @@ System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name,
 
 ## Report deployment fails on version 10.0.19 and later
 
-**Issue:** During deployment, the report deployment operation fails. In the report deployment log, you will see the following error:
+**Issue:** During deployment, the report deployment operation fails. In the report deployment log, you will see the following error.
 
 ```stacktrace
 Publish-AXReport : Value cannot be null.
@@ -1606,7 +1606,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
     ```
     
 1. Copy the generated VM folder to the BI node if not using the remoting scripts.
-1. Run the following command in PowerShell with Administrator privileges:
+1. Run the following command in PowerShell with Administrator privileges.
 
     ```powershell
     # If remoting, execute
@@ -1614,7 +1614,7 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
     .\Complete-PreReqs.ps1
     ```
     
-1. Run the following command in PowerShell with Administrator privileges to verify the setup:
+1. Run the following command in PowerShell with Administrator privileges to verify the setup.
 
     ```powershell
     # If Remoting, execute
@@ -1623,29 +1623,29 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
     ```
 
 > [!IMPORTANT]
-> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Step 20. Tear down CredSSP, if remoting was used](./setup-deploy-on-premises-pu41.md#teardowncredssp) section.
+> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see [Step 20. Tear down CredSSP, if remoting was used](./setup-deploy-on-premises-pu41.md#teardowncredssp).
 
 #### Manually add these permissions:
 1. Go to your BI node.
-1. Open lusrmgr.msc (Local Users and Groups)
-1. Create a new group called **Dynamics365ReadServices**
-1. Add the account that your AOS runs under (i.e. axserviceuser, svc-AXSF$) to the group you created above.
+1. Open lusrmgr.msc (Local Users and Groups).
+1. Create a new group called **Dynamics365ReadServices**.
+1. Add the account that your AOS runs under (such as axserviceuser, svc-AXSF$) to the group you created above.
 1. Download the latest infrastructure scripts from the Shared asset library in LCS.
 1. Copy the infrastructure scripts to your BI (SSRS) node.
-1. Create a file scmgroups.csv with the following content:
+1. Create a file scmgroups.csv with the following content.
 
     ```text
     "Name"
     "Dynamics365ReadServices"
     ```
     
-1. Run the following command in PowerShell with Administrator privileges:
+1. Run the following command in PowerShell with Administrator privileges.
 
     ```powershell
     .\Set-ServiceControlManagerPermissions.ps1
     ```
     
-1. Run the following command in Powershell with Administrator privileges to verify the setup:
+1. Run the following command in Powershell with Administrator privileges to verify the setup.
 
     ```powershell
     .\Set-ServiceControlManagerPermissions.ps1 -Test
