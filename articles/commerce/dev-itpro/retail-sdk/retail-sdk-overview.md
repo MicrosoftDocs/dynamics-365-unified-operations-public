@@ -65,6 +65,9 @@ The Retail SDK is a build system. A simple MSBuild command from the root of the 
 
 ## Prerequisites
 
+> [!NOTE]
+> Starting in Retail SDK version 10.0.18 or later, by default the retail SDK MSBuild will check whether the SDK prerequisites are installed, if not it will show the error message and scripts to run to install the prerequisites and if Visual studio or related dependencies are missing the script will open visual studio installer with required workloads preselected and you must click the install button in the visual studio to install the missing prerequisites. The prerequisites check can be skipped by passing the parameter MSBuild /p:CheckVSDependencies=false. In 10.0.22 the msbuild will also check for the .Net runtime and SDK dependencies and it will install some missing dependencies automatically or the script will download and launch the .Net installer to manually install the missing dependencies. To skip the .Net dependencies check pass the parameter /p:InstallDotNetRuntimeSdkdependencies=false during msbuild.
+
 To develop or build extensions by using the Retail SDK, you must have the following components:
 
 - Visual Studio 2017 Community, Professional, or Enterprise edition (VM) that has the following components:
@@ -105,9 +108,6 @@ Before you start development via the Retail SDK, you must restore all the packag
 1. Open the developer Command Prompt window for Visual Studio 2017 or the MSBuild 15.0 Command Prompt window.
 2. In the Command Prompt window, go to the Retail SDK folder.
 3. Run the **msbuild /t:rebuild** command from the root of the SDK folder. The dirs.proj file in the root of the SDK folder (RetailSDK\\dirs.proj or RetailSDK\\Code\\dirs.proj) contains all the details that are required to build the full SDK.
-
-> [!NOTE]
-> Starting in Retail SDK version 10.0.18 or later, by default the retail SDK MSBuild will check whether the SDK prerequisites are installed, if not it will show the error message and scripts to run to install the prerequisites. You can skip the prerequisites check by passing the parameter MSBuild /p:CheckVSDependencies=false.
 
  ![Running MSBuild from a Command Prompt window.](media/retail-sdk-command-prompt.png)
 
