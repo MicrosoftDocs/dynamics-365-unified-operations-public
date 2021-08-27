@@ -49,7 +49,7 @@ The sales tax settlement procedure uses the country/region code of the registrat
 First, enable the following flighting:
 
 - TaxIntegrationFlight
-- TaxMultipleVATIDFlighting
+- TaxMultipleVATIDFlighting (the flight is required only before the 10.0.21 update and is removed in 10.0.21)
 - TaxMultipleVATIDFeature
 
 Then follow these steps to enable the feature.
