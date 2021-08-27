@@ -2,7 +2,7 @@
 title: Develop and customize home page
 description: This topic provides links to topics about development.
 author: RobinARH
-ms.date: 04/27/2020
+ms.date: 08/27/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
@@ -21,7 +21,7 @@ This topic provides links to topics about development.
 
 ## Overview
 
-The Finance and Operations applications represent the next-generation enterprise resource planning (ERP) offering from Microsoft. The apps enable the entire ERP application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. The apps leverage the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. The development experience includes:
+The Finance and Operations apps enable the entire enterprise resource planning (ERP) application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. The apps leverage the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. The development experience includes:
 
 - Development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
 - Microsoft Visual Studio is the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
@@ -170,9 +170,7 @@ The client is an HTML web client that runs in all major browsers. For informatio
 
 ## Development for independent software vendors
 
-- [Link X++ modules to packages by using ISV Studio](isv-studio-solutions.md)
-- [ISV licensing](isv-licensing.md)
-- [ISV licensing on-premises](isv-licensing-on-prem.md)
+- [Independent software vendor (ISV) development home page](isv-dev-home-page.md)
 
 ## Supply Chain Management
 
@@ -182,6 +180,5 @@ The client is an HTML web client that runs in all major browsers. For informatio
 ## Additional resources
 
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
