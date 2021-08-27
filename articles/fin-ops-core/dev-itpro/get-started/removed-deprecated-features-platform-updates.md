@@ -40,7 +40,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ## Feature deprecation effective August 2021
 
-### SQL reports in Lifecycle Services (LCS)
+### Microsoft Azure SQL reports in Lifecycle Services (LCS)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -50,7 +50,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | Deprecated: Planned removal date in October 2021. |
 
-### SQL actions in LCS
+### Azure SQL actions in LCS
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
