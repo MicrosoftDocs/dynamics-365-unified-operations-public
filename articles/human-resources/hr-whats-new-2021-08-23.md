@@ -53,10 +53,10 @@ The following bug fixes are included in this release.
 | 594066 | Unable to delete Contact Information | When selecting to delete a Contact information record for an employee, a contact information record other than the selected record is deleted instead. |
 | 611339 | Adding a personalization causes the bank account to ignore filter and fetches the first record. | Adding a personalization is causing the bank account list to run a personalization query after the datasource query runs, resulting in the query fetching the top record regardless of the worker for whom the details are being viewed. |
 | 591806 | Onboarding due date tasks are incorrectly calculated | Due dates are wrongly calculated when the following conditions exist:  The checklists that are created are using a calendar that uses an extended time range (example from 2005 to 2050) and the user's preferences utilize a time zone other than CST. |   
-| 592749 | ## Leave balance is incorrect when when Cross company leave view is enabled. | When Cross company leave view is enabled, balance details do not appear correctly on ESS >> Time off >> Balance >> Current Balance. |
-| 603133 | ## Half-day definition should be disabled until Amount is set. | Half-day definition is enabled before the amount can be picked. |
-| 606546 | ## Checkbox to select multiple approved leave requests no longer visible. | |
-| 597059 | ## Worker not visible in Leave and Absence calendar if applied date range includes a day for which they have been denied a request - (597059) | | |
+| 592749 | Leave balance is incorrect on employee self service. | If the employee has employment in more than one legal entity and cross company leave view is enable, the leave balance might be incorrect. |
+| 603133 | Unexpected warning when requesting time off. | When requesting time off, filling the Half-day definition field before the amount field will cause a unexpected warning. |
+| 606546 | Select field not visible in Approbed time off | Checkbox to select multiple approved leave requests was not visible. |
+| 597059 | Worker not visible in Leave and Absence calendar | A worker is not visible in the Leave and absence company calendar if the applied date range includes any day for which they have been denied a leave request. |
 
 
 ## In preview
