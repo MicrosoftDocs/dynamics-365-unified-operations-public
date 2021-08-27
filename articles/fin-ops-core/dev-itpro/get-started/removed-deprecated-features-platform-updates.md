@@ -38,6 +38,28 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Feature deprecation notice effective October 2021
+
+### SQL Reports (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are deprecating some SQL reports in LCS. You will no longer need to monitor the reports as this feature has been superseded by other services. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | These reports will no longer be available: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
+| **Deployment option**              | Cloud deployment - affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
+| **Status**                         | Deprecated: Planned removal date in October 2021. |
+
+### SQL Actions (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are deprecating some SQL actions in LCS. You will no longer need to monitor the reports as this feature has been superseded by other services. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | These reports will no longer be available: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index |
+| **Deployment option**              | Cloud deployment - affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
+| **Status**                         | Deprecated: Planned removal date in October 2021. |
+
 ## Feature deprecation notice effective May 2021
 
 ### Globalization portal in Lifecycle Services (LCS)
