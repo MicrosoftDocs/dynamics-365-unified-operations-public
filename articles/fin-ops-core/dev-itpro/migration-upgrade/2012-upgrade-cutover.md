@@ -45,16 +45,16 @@ The following illustration shows the overall process for cutover to go-live as i
 The high-level steps of the production environment upgrade process are the same as the Mock cutover process, refer to [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md) for detailed instructions.
 
 
-1. Ensure all pre-requisites (e.g. pre-upgrade checklist, data clean-up etc.) are fulfilled and custom code is deployed in sandbox environment. The sandbox environment must only be used for data upgrade.
-2. Download the **AX 2012 Database Upgrade Toolkit for Dynamics 365** from **Shared asset library > Model** in Microsoft Dynamics Lifecycle Services (LCS). Use this toolkit from source SQL Server.
-3. Execute replication setup beforehand and keep monitoring it on a regular basis using this toolkit.
+1. Be sure you've completed the [pre-upgrade checklist for data upgrade](prepare-data-upgrade.md) and custom code is deployed in sandbox environment. The sandbox environment must only be used for data upgrade.
+2. Download the **AX 2012 Database Upgrade Toolkit for Dynamics 365** from Microsoft Dynamics Lifecycle Services (LCS) in the **Shared asset library > Model** area. Use this toolkit from the source SQL Server.
+3. Execute replication setup and keep monitoring it on a regular basis using the toolkit.
 4. Turn off the AX 2012 AOS instances at the time of downtime/cut-over.
-5. Ensure replication completes. Validate replication completion (dv) by comparing the number of records between source and target using this toolkit.
-6. Execute cutover steps using this toolkit and ensure its completion.
-7. Trigger the data upgrade using this toolkit and finish the data upgrade.
+5. Ensure replication completes. Validate replication completion by comparing the number of records between source and target using this toolkit. For more information about how to validate the replication, see [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application).
+6. Execute cutover steps using the toolkit and ensure its completion.
+7. Trigger the data upgrade using the toolkit and finish the data upgrade.
 8. Use [Self-service database refresh process](../database/database-refresh.md#self-service-database-refresh) to copy your upgraded database from the sandbox environment into your production environment. 
 9. Complete application configuration and complete smoke test.
-10.	Allow users back-in.
+10.	Allow users to access the Finance and Opererations app again.
 
 
 ## Prerequisites 
