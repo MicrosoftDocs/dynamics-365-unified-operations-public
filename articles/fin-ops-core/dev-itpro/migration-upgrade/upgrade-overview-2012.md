@@ -141,9 +141,9 @@ The underlying framework that is used to convert the data in the database during
 For details, see [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md).
 
 ### Data upgrade (sandbox environments)
-Once data upgrade in a development environment completes, you must perform data upgrade in a sandbox environment (Sandbox is deployed as [Self Service environment](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/infrastructure-stack)). The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
+When data upgrade in a development environment completes, you must perform data upgrade in a sandbox environment. For more information about sandbox deployment, see [Self-service deployment overview](../deployment/infrastructure-stack.md). The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
 
-The following illustration shows the process for running data upgrade in a sandbox environment. The difference here is that 'AX2012 Database Upgrade Toolkit for Dynamics 365' is used instead of a traditional SQL backup etc. This toolkit is required to move your AX 2012 data to Azure SQL Database (using SQL Transaction Replication) as well as to run the data upgrade. In this case, your source is AX 2012 database and target is Dynamics 365 Finance and Operations Sandbox.
+The following illustration shows the process for running data upgrade in a sandbox environment. The difference here is that the **AX 2012 Database Upgrade Toolkit for Dynamics 365** is used instead of a traditional SQL backup. This toolkit is required to move your AX 2012 data to Azure SQL Database (using SQL Transaction Replication) as well as to run the data upgrade. In this case, your source is AX 2012 database and target is the Finance and Operations sandbox environment.
 
 ![Data upgrade in a sandbox environment](./media/data-upgrade-sandbox-selfservice_01.png)
 
