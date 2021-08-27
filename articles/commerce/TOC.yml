@@ -2468,10 +2468,6 @@
         items:
         - name: Retail SDK architecture
           href: dev-itpro/retail-sdk/retail-sdk-overview.md
-        - name: Upcoming changes in the Retail SDK
-          href: dev-itpro/UpcomingSDKChanges.md
-        - name: Development and ALM changes from version 10.0.10 to 10.0.13
-          href: dev-itpro/dev-changes-10-13.md
         - name: Set up a build pipeline for the independent-packaging SDK
           href: dev-itpro/build-pipeline.md
         - name: Merge the build systems for Commerce and Finance and Operations
@@ -2598,8 +2594,6 @@
           href: dev-itpro/retail-server-customer-consumer-api.md
         - name: Create Retail Server extension API (Retail SDK version 10.0.11 and later)
           href: dev-itpro/retail-server-icontroller-extension.md
-        - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and earlier)
-          href: dev-itpro/retail-server-extension.md
         - name: Retail Typescript and C# proxies
           href: dev-itpro/typescript-proxy-retail-pos.md
         - name: Consume Retail Server APIs in external applications

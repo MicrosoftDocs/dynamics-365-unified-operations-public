@@ -15,7 +15,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the system tables.
+This topic contains the documentation available for the System classes. 
+
+> [!NOTE]
+> This topic is not a complete list of the System table members. You can find a complete list of tables and their members in the Application Explorer.
 
 ## Common
 
