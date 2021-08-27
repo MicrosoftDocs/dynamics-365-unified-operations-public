@@ -439,7 +439,7 @@ void StringMethod()
 
 String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type and setting the **String Size** in the **Properties** window. In the following screenshot, **FMCreditCardNum**cannot exceed 20 characters.
 
-![FMCreditCardNum string size.](media/stringtruncationsolutionexplorer_debugfeatures.png)
+![FMCreditCardNum string size.](media/stringtruncation.png)
 
 Run the following code in the debugger by including it in a static **Main** method to observed the behavior.
 

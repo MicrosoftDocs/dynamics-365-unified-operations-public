@@ -282,7 +282,7 @@ When the **validateField** method checks whether a user has entered a value in a
 
 Casting refers to assignments between variables whose declared types are both in the same inheritance chain. A cast is either a down-cast or an up-cast. Consider the following class hierarchy.
 
-![Class hierarchy for Animal and MotorVehicle.](./media/casting_debugfeatures.png)
+![Class hierarchy for Animal and MotorVehicle.](media/casting.png)
 
 The MotorVehicle class isn't related to the Animal class, though both derive from Object. An **up-cast** happens when assigning an expression of a derived type to a base type:
 
