@@ -906,6 +906,8 @@
         href: dev-tools/date-effectivity.md
       - name: Development for independent software vendors
         items:
+        - name: ISV development home page
+          href: dev-tools/isv-home-page.md
         - name: Link X++ modules to packages by using ISV Studio
           href: dev-tools/isv-studio-solutions.md
         - name: ISV licensing
