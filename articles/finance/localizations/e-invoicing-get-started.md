@@ -116,7 +116,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
 
-7. For each table name you create, select and enter a context value according to the following table.
+6. For each table name you create, select and enter a context value according to the following table.
 
     | Feature name                         | Business document | Context |
     |--------------------------------------|-------------------|---------|
@@ -137,7 +137,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
 
-8. For each table name and context, select and enter a business document mapping value according to the following table.
+7. For each table name and context, select and enter a business document mapping value according to the following table.
 
     | Feature name                         | Business document | Business document mapping |
     |--------------------------------------|-------------------|---------------------------|
@@ -180,11 +180,11 @@ For the specific steps, see the "Get started" documentation that is available fo
 ## Deploy the Electronic invoicing feature to Connected application
 
 1. On the **Versions** tab, select a version of the Electronic invoicing feature that you want to deploy.
-4. Select **Deploy**.
-5. Set the **Deploy to connected application** option to **Yes**.
-6. On the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
-7. Set the **Deploy to service environment** option to **No**.
-10. Select **OK**.
+2. Select **Deploy**.
+3. Set the **Deploy to connected application** option to **Yes**.
+4. On the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
+5. Set the **Deploy to service environment** option to **No**.
+6. Select **OK**.
 
 ## Turn on the Electronic invoicing feature in Finance or Supply Chain Management
 
