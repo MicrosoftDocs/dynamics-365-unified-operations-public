@@ -83,7 +83,7 @@ The following sample code creates a simple Retail Server API to return an entity
 ### Sample code for a controller class bounded to a custom entity
 
 > [!NOTE]
-> Extension code should not bound the existing OOB entity, such as Customer or Product.
+> Extension code should not bound to the existing entities such as Customer, Cart or Product and if the API want to return a collection it must return only of type IEnumerable<T>, retuning any other arbitrary type like Dictionary <String, String> etc. is not supported, you may get error like 'System.Collections.Generic.Dictionary`2[System.String,System.String]' is not supported. To returns a collection Commerce APIs uses PageResult<T> which implements IEnumerable<T>, follow this pattern to return the collection.
 
 ```csharp
 // New extended controller.
