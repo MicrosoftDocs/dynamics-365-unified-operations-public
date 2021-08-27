@@ -33,33 +33,33 @@ All precompiler directives and symbols begin with the `#` character. A macro can
 
 ## #undef directive
 
-You can use the `#undef` directive to remove a macro definition that exists from a previous `#define`. After a macro name has been created by `#define` and then removed by `#undef`, the macro can be created again by another `#define`. `#undef` has no effect on macros that are created by the `#localmacro` directive. In the following code sample, the macro **MyMacro** is undefined by using the `#undef` directive. The `#undef` occurs between the two `#if` tests for its existence. The output shows only the first `#if` test was true.
+You can use the `#undef` directive to remove a macro definition that exists from a previous `#define`. After a macro name has been created by `#define` and then removed by `#undef`, the macro can be created again by another `#define`. `#undef` has no effect on macros that are created by the `#localmacro` directive.
 
 ## Use a Macro Value
 
-You can define a macro name to have a value. A macro value is a sequence of characters. A macro value is not a string (or **str**) in the formal sense of a data type. You assign a value to a macro by appending the value enclosed in parentheses at the end of a #define directive. You can use the macro symbol where you want the value to occur in the X++ code. A macro symbol is the name of the macro with the # character added as a prefix. The following code sample shows a macro symbol **\#MyMacro.** The symbol is replaced by the value of the macro.
+You can define a macro name to have a value. A macro value is a sequence of characters. A macro value is not a string (or **str**) in the formal sense of a data type. You assign a value to a macro by appending the value enclosed in parentheses at the end of a `#define` directive. You can use the macro symbol where you want the value to occur in the X++ code. A macro symbol is the name of the macro with the `#` character added as a prefix. The following code sample shows a macro symbol **\#MyMacro.** The symbol is replaced by the value of the macro.
 
 ## Test a Macro Value
 
-You can test a macro to see whether it has a value. You can also test to see whether its value is equal to a specific sequence of characters. These tests enable you to conditionally include lines of code in your X++ program. There is no way you can test whether a defined macro has a value. You can only test whether a specific value matches the value of a macro. As a best practice, any macro name that you define should always have a value, or it should never have a value. When you alternate between these modes, your code becomes difficult to understand. For macros that have a value, you can vary the value when you see fit. In the following code sample, two `#if` tests are run to determine whether the macro **MyIntMacro** exists. The **\#if.MyIntMacro()** test is true. This syntax behaves the same as **\#if.MyIntMacro.**
+You can test a macro to see whether it has a value. You can also test to see whether its value is equal to a specific sequence of characters. These tests enable you to conditionally include lines of code in your X++ program. There is no way you can test whether a defined macro has a value. You can only test whether a specific value matches the value of a macro. As a best practice, any macro name that you define should always have a value, or it should never have a value. When you alternate between these modes, your code becomes difficult to understand. For macros that have a value, you can vary the value when you see fit.
 
 ## #defInc and #defDec directives
 
 `#defInc` and `#defDec` are the only directives that interpret the value of a macro and they apply only to macros that have a value that can be converted to the formal **int** type. The value can only contain numerals. The only non-numeric character allowed is a leading negative sign (-). The integer value is treated as an X++ **int**, not as an **int64**. For macro names that are used by the `#defInc` directive, it is important that the `#define` directive that creates the macro not reside in a class declaration. The behavior of `#defInc` in these cases is unpredictable. Instead, such macros should be defined in only a method. We recommend that the `#defInc` and `#defDec` directives only be used for macros that have an integer value. The precompiler follows special rules for `#defInc` when the macro value is not an integer, or when the value is unusual or extreme. The following table lists the values that `#defInc` converts to zero (0) and then increments. When a value is converted to 0 by `#defInc`, the original value cannot be recovered, not even by `#defDec`.
 
-| Macro value       | Behavior                                                                                                                                                                                               |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Macro value       | Behavior |
+|-------------------|----------|
 | (+55)             | The positive sign (+) prefix makes the precompiler treat this as a non-numeric string. The precompiler treats all non-numeric strings as 0 when it handles a `#defInc` (or `#defDec`) directive. |
-| ("3")             | Integers enclosed in quotation marks are treated as 0. The quotation marks are discarded, and these changes persist.                                                                                   |
-| ( )               | A string of spaces is treated as 0, and then incremented.                                                                                                                                              |
-| ()                | A zero-length string is treated as 0, and then incremented, when the value is enclosed in parentheses, as in **\#define.MyMac().**                                                                     |
-| (Random string.)  | Any non-numeric string of characters is treated as 0, and then incremented.                                                                                                                            |
-| (0x12)            | Hexadecimal numbers are treated as non-numeric strings. Therefore they are converted to 0, and then incremented.                                                                                       |
-| (-44)             | Negative numbers are acceptable, including integers without the negative sign (-).                                                                                                                     |
-| (2147483647)      | The maximum positive **int** value is changed to the minimum negative **int** value by #defInc.                                                                                                       |
-| (999888777666555) | Any large number, beyond the capacity of **int** and **int64**. This is treated as the maximum positive **int** value.                                                                                 |
-| (5.8)             | Real numbers are truncated by #defDec (and #defInc). Subsequent symbol substitution shows that the truncation persists.                                                                              |
-|                   | When no value and no parentheses are provided for the directive #define.MyValuelessMacro, the precompiler rejects use of the directive #defInc.MyValuelessMacro.                                     |
+| ("3")             | Integers enclosed in quotation marks are treated as 0. The quotation marks are discarded, and these changes persist. |
+| ( )               | A string of spaces is treated as 0, and then incremented. |
+| ()                | A zero-length string is treated as 0, and then incremented, when the value is enclosed in parentheses, as in **\#define.MyMac().** |
+| (Random string.)  | Any non-numeric string of characters is treated as 0, and then incremented. |
+| (0x12)            | Hexadecimal numbers are treated as non-numeric strings. Therefore they are converted to 0, and then incremented. |
+| (-44)             | Negative numbers are acceptable, including integers without the negative sign (`-`). |
+| (2147483647)      | The maximum positive **int** value is changed to the minimum negative **int** value by `#defInc`. |
+| (999888777666555) | Any large number, beyond the capacity of **int** and **int64**. This is treated as the maximum positive **int** value. |
+| (5.8)             | Real numbers are truncated by `#defDec` (and `#defInc`). Subsequent symbol substitution shows that the truncation persists. |
+|                   | When no value and no parentheses are provided for the directive `#define.MyValuelessMacro`, the precompiler rejects use of the directive `#defInc`.MyValuelessMacro. |
 
 ## \#globaldefine directive
 
@@ -88,9 +88,9 @@ A `#define` directive can be given inside a `#localmacro` directive, and a `#loc
 
 In the Application Explorer under the Macros node, there are many library nodes that contain sets of macro directives. Both `#define` and `#localmacro` often appear in the contents of these macro libraries. You can use the **\#macrolib.MyAOTMacroLibrary** to include the contents of a macro library in your X++ code. The `#if` and `#undef` directives do not apply to `#macrolib` names. However, they do apply to `#define` directives that are the contents of a `#macrolib` macro. The directive **\#macrolib.MyAOTMacroLibrary** can also be written as **\#MyAOTMacroLibrary.** The `#macrolib` prefix is recommended because it is never ambiguous to a person who later reads the code.
 
-## #linenumber Directive
+## \#linenumber Directive
 
-You can use the #linenumber directive during your development and debugging of code. It is replaced by the physical line number in the code file.
+You can use the `#linenumber` directive during your development and debugging of code. It is replaced by the physical line number in the code file.
 
 ## Range (scope) of macros
 
