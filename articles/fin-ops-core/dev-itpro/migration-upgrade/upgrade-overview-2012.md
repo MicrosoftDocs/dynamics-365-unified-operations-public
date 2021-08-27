@@ -70,8 +70,8 @@ The upgrade analyzer tool runs against your AX 2012 environment and identifies t
 
 Additionally, as part of this step, you must install a pre-upgrade checklist in your AX 2012 environment. You can use this checklist to enter data that will be required for the upgrade procedure. For example, in one pre-upgrade checklist task, you provide the Microsoft Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user, so that each user will be able to sign in to Finance and Operations. 
 
-- If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255)
-- if upgrading from AX 2012 R2, install [KB 4048614](https://go.microsoft.com/fwlink/?linkid=869025)
+- If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255).
+- If upgrading from AX 2012 R2, install [KB 4048614](https://go.microsoft.com/fwlink/?linkid=869025).
 
 The output of the upgrade analyzer tool becomes the workstream in the upgrade project plan for your AX 2012 system administrators. For more information, see [Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool](upgrade-analyzer-tool.md).
 
@@ -111,7 +111,7 @@ When you purchase a Finance and Operations subscription, you will receive detail
 ### Identify the project as an AX 2012 upgrade
 When you first sign in to your LCS implementation project, you're guided through the **Project Onboarding** wizard. You can always visit the **Project Onboarding** wizard later using the navigation menu next to **Project Settings** in your project.
 
-While on the Project Onboarding wizard, in the **Project Scope** section, you can use the **Legacy System** field to identify the project as an AX 2012 upgrade. It's crucial that you identify the project in this way.
+In the Project Onboarding wizard, in the **Project Scope** section, you can use the **Legacy System** field to identify the project as an AX 2012 upgrade. It's crucial that you identify the project in this way.
 
 ### Perform the AX 2012 preparation tasks
 Complete the tasks that the upgrade analyzer tool discovered, and that are documented in your upgrade project plan. Your Microsoft Dynamics AX system administrator and database administrator (DBA) must complete these tasks.
@@ -149,7 +149,7 @@ The following illustration shows the process for running data upgrade in a sandb
 
 ![Data upgrade in a sandbox environment](./media/data-upgrade-sandbox-selfservice_01.png)
 
-For details, see [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md).
+For more information, see [Upgrade from AX 2012 - Data upgrade in self-service environments](data-upgrade-self-service.md).
 
 > [!NOTE]
 > If you are using Commerce functionality and in-store components as part of the AX 2012 R3 upgrade, we recommend that you review the Dynamics 365 Commerce [Phased rollout (N-1) installation, configuration, and cutover guide](../../../commerce/dev-itpro/n-1-installation-configuration.md). For sandbox and development environments, the user will need to initialize retail parameters, reinitialize the CDX schedule, and then reinitialize the CSU after data upgrade. For more information about reinitializing the CSU, see [Initialize Commerce Scale Unit (cloud)](../deployment/Initialize-Retail-Channels.md).
@@ -167,7 +167,7 @@ There are two main workstreams:
 - **Technical workstream** – This workstream is the process of running the data upgrade. Your business will enforce a limit on the amount of downtime that is allowed. During this downtime, neither product database will be available. The technical workstream might have to performance-tune its data upgrade procedure to meet the business's downtime limit. 
 - **Functional workstream** – After data upgrade, several configuration tasks will be required in the Finance and Operations environment. All these tasks must be documented and quantified, and a resource must be assigned to them, because they must fit together with the technical tasks within the business's downtime limit.
 
-For details, see 
+For additional details, see: 
 - [Upgrade from AX 2012 - Post-upgrade tasks](app-validation-process.md)
 - [Upgrade from AX 2012 - Cutover testing (Mock cutover)](upgrade-cutover-testing.md)
 
@@ -185,14 +185,14 @@ We recommend that you also freeze code changes in the Finance and Operations cod
 
 After the configuration restriction and code freeze are in place, data upgrade should be run for the last time before cutover. In this way, you can make sure that everything still works as expected. 
 
-For details, see [Validate: Prepare for go live](upgrade-go-live-prep.md).
+For more information, see [Validate: Prepare for go live](upgrade-go-live-prep.md).
 
 ### Go live
 After you have successfully completed upgrade testing in a Standard or Premier Acceptance Test environment (Sandbox Tier 2 or higher), and you have also completed a successful test cutover, the moment has arrived to upgrade your production environment and go live. 
 
 *Cutover* is the term that we use for the final process of getting a new system live. This cutover process consists of the tasks that occur after Dynamics AX 2012 is turned off but before Finance and Operations is turned on. 
 
-For details, see [Upgrade from AX 2012 - Cutover process (Go live)](2012-upgrade-cutover.md)
+For details, see [Upgrade from AX 2012 - Cutover process (Go live)](2012-upgrade-cutover.md).
 
 
 ## Supported upgrade paths
