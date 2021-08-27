@@ -34,7 +34,8 @@ This procedure shows you how to set up a new bar code definition which can then 
 1. In the **Bar code setup** field, type a value.
 1. In the **Description** field, type a value.
 1. In the **Bar code type** field, select an option.
-    * If you're using USMF, you can select 'Code 39'.  
+    * If you're using USMF, you can select 'Code 39'. 
+1. In the **Mask ID** field, you can specify the bar code mask ID. Bar code masks are used to create bar codes and to quickly identify bar codes that are scanned into the point of sale (POS).You can refer to [Set up bar code masks](https://docs.microsoft.com/en-us/dynamics365/commerce/set-up-bar-code-masks) for details
 1. In the **Size** field, enter a number.
 1. In the **Maximum length** field, enter a number.
 1. Select **Save**.
