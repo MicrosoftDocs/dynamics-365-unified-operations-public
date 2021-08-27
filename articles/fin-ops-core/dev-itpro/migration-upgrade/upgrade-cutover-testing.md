@@ -44,7 +44,7 @@ The following illustration shows the overall process for cutover to go-live as i
 
 The mock cutover process is very similar to data upgrade validation in a sandbox environment. We assume that you are familiar with that process, and have already performed it. Mock cutover differs in the following ways:
 
-- After you perform a data upgrade in the sandbox environment, see the instsructions in [Self-service database refresh](../database/database-refresh.md#self-service-database-refresh) to copy your upgraded database from the data upgrade sandbox environment into your production environment. 
+- After you perform a data upgrade in the sandbox environment, see the instructions in [Self-service database refresh](../database/database-refresh.md#self-service-database-refresh) to copy your upgraded database from the data upgrade sandbox environment into your production environment. 
 
 - We added the following tasks:
     - Perform a smoke test.
@@ -52,7 +52,7 @@ The mock cutover process is very similar to data upgrade validation in a sandbox
     - Allow users back in. Notify your user base that the upgrade is completed and that they can use the system again.
 
 > [!NOTE]
-> In this article, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
+> In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2 or 3) or higher environment connected to a SQL Azure database.
 
 ## Technical workstream
 
@@ -83,7 +83,7 @@ For each manual change, a task must be added to the cutover plan document. This 
 -	Who must do it?
 -	How long does it take?
 
-### Add users, and perform functionl tests
+### Add users, and perform functional tests
 When you have fully configured your environment, add users, and perform appropriate testing. 
 
 ## Roll back to AX 2012
