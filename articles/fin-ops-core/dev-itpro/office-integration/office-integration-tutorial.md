@@ -325,7 +325,7 @@ Export to Word experiences can be used for lightweight reporting. They are power
 The Microsoft Dynamics App for Office can be run in Word to enable the creation of templates that can then be used for document generation.
 
 1.  Create a blank document
-    1.  Go to **Common** &gt; **Comment** &gt; **Excel workbook designer**. 
+    1.  Go to **Common** &gt; **Common** &gt; **Excel workbook designer**. 
     2.  Select **Create blank document**.
     3.  Download and open the document that is generated.
 
