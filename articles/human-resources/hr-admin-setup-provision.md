@@ -49,6 +49,11 @@ Prior to provisioning your first sandbox or production environment, you may want
 
 Trial environments aren't intended to be used as production environments. They are limited to a 60-day trial period. When the trial period expires, the environment and all the data that's in it is deleted and can't be recovered. The environment cannot be converted to a sandbox or production environment. You can sign up for a new trial environment after the existing environment expires.
 
+When creating a Human Resources trial environment, a Power Apps trial environment is also created on the tenant and linked to the Human Resources environment. The Power Apps environment, named "TestDrive", has the same trial period as the Human Resources environment.
+
+> [!NOTE]
+> Provisioning a Human Resources trial environment will fail if the authenticated user does not have permission to create Power Apps trial environments. The user must be included in the user group who can create trial environments in the Power Platform admin center. For more information, see [Control who can create and manage environments in the Power Platform admin center](//power-platform/admin/control-environment-creation).
+
 ## Plan Human Resources environments
 
 Before you create your first Human Resources environment, you should carefully plan the environment needs for your project. A base subscription to Human Resources includes two environments: a production environment and a sandbox environment. Depending on the complexity of your project, you may need to purchase additional sandbox environments to support project activities. 
@@ -74,7 +79,7 @@ To use LCS to manage your Human Resources environments, you must first create an
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Human Resources.
 
    > [!NOTE]
-   > To ensure successful provisioning, the account you use to provision the Human Resources environment must be assigned to either the **System Administrator** or **System Customizer** role in the Power Apps environment associated with the Human Resources environment. See [Configure user security to resources](/power-platform/admin/database-security) for more information on assigning security roles to users in the Power Platform.
+   > To ensure successful provisioning, the account you use to provision the Human Resources environment must be assigned to either the **System Administrator** or **System Customizer** role in the Power Apps environment associated with the Human Resources environment. For more information about assigning security roles to users in the Power Platform, see [Configure user security to resources](/power-platform/admin/database-security).
 
 2. Select the plus sign (**+**) to create a project.
 
