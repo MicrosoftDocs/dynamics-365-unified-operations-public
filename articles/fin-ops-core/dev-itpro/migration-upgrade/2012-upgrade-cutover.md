@@ -69,7 +69,7 @@ Before you can perform an upgrade in the production environment the following pr
 
 ## Related articles
 - [Onboarding](../../fin-ops/imp-lifecycle/onboard.md)
-- [Self-service database refresh process](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-refresh#self-service-database-refresh)
+- [Self-service database refresh](../database/database-refresh.md#self-service-database-refresh)
 - [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
