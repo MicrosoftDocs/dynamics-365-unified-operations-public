@@ -49,20 +49,20 @@ For the processes in the warehouse management workload, the data is synced betwe
 
 A scale unit can maintain only the data that it owns. The data ownership concept for scale units helps prevent multi-master conflicts. Therefore, it's important that you understand which process data are owned by the hub and which are owned by the scale units.
 
-Depending on the business processes, the same data record can change ownership between the hub and scale units. An example for this is provided in the following section.
+Depending on the business processes, the same data record can change ownership between the hub and scale units. An example of this scenario is provided in the following section.
 
 > [!IMPORTANT]
 > Some data can be created on both the hub and on the scale unit. Examples include **License plates** and **Batch numbers**. Dedicated conflict handling is provided in case of a scenario where the same unique record gets created on both the hub and a scale unit during the same sync cycle. When this happens, the next synchronization will fail and you must go to **System administration > Inquiries > Workload inquiries > Duplicate records**, where you can view and merge the data.
 
 ## Outbound process flow
 
-The outbound data ownership process depends on whether you are using the load planning process or not. In both cases, the hub owns the *source documents*, such as sales orders and transfer orders, as well as the order allocation process and the related order transaction data. But when you use the load planning process, the loads will be created on the hub and therefore initially be owned by the hub. As part of the *Release to warehouse* process, the ownership of the load data is transferred to the dedicated scale unit deployment, which will become the owner of the subsequent *shipment wave processing* (such as work allocation, replenishment work, and demand work creation). Therefore, warehouse workers can only process outbound sales and transfer order work by using a Warehouse Management mobile app that is connected to the deployment running the specific scale unit workload.
+The outbound data ownership process depends on whether you are using the load planning process. In all cases, the hub owns the *source documents*, such as sales orders and transfer orders, as well as the order allocation process and the related order transaction data. But when you use the load planning process, the loads will be created on the hub and therefore initially be owned by the hub. As part of the *Release to warehouse* process, the ownership of the load data is transferred to the dedicated scale unit deployment, which will become the owner of the subsequent *shipment wave processing* (such as work allocation, replenishment work, and demand work creation). Therefore, warehouse workers can only process outbound sales and transfer order work by using a Warehouse Management mobile app that is connected to the deployment running the specific scale unit workload.
 
-As soon as the final work process puts the inventory at a final shipping location (Baydoor), the scale unit signals the hub to update the source document inventory transactions to *Picked*. Until this process runs and gets synchronized back, the inventory on-hand on the scale unit workload will be physically reserved at the warehouse level and you can immediately process the outbound shipment confirmation without needing to wait for this synchronization to complete. The subsequent sales packing slip and invoicing or transfer order shipment for the load will get handled in the hub.
+As soon as the final work process puts the inventory at a final shipping location (Baydoor), the scale unit signals the hub to update the source document inventory transactions to *Picked*. Until this process runs and gets synchronized back, the inventory on-hand on the scale unit workload will be physically reserved at the warehouse level and you can immediately process the outbound shipment confirmation without waiting for this synchronization to complete. The subsequent sales packing slip and invoicing or transfer order shipment for the load will get handled in the hub.
 
 This following diagram shows the outbound flow, and indicates where the individual business processes take place. (Select the diagram to enlarge it.)
 
-[![Outbound processing flow](media/wes_outbound_warehouse_processes-small.png "Outbound processing flow")](media/wes_outbound_warehouse_processes.png)
+[![Outbound processing flow.](media/wes_outbound_warehouse_processes-small.png "Outbound processing flow")](media/wes_outbound_warehouse_processes.png)
 
 ### Outbound processing with load planning
 
@@ -85,7 +85,7 @@ The hub owns the following data:
 - All cost and financial updates
 
 > [!NOTE]
-> The inbound purchase order flow is conceptually different from the outbound flow. You can operate the same warehouse on either the scale unit or the hub depending on whether the purchase order has been released to warehouse or not. Once you have released an order to the warehouse, you can only work with that order while signed in on the scale unit.
+> The inbound purchase order flow is conceptually different from the outbound flow. You can operate the same warehouse on either the scale unit or the hub depending on whether the purchase order has been released to warehouse. After you have released an order to the warehouse, you can only work with that order while signed in on the scale unit.
 >
 > If you're using the *Release to warehouse* process, [*warehouse orders*](cloud-edge-warehouse-order.md) are created, and ownership of the related receiving flow is assigned to the scale unit. The hub won't be able to register inbound receiving.
 
@@ -144,46 +144,45 @@ The following types of work can be created on a scale unit and can therefore be 
 - **Finished goods put away** – After report-as-finished production process.
 - **Co-product and by-product put away** – After report-as-finished production process.
 
-No other types source-documents processing or warehouse work are currently supported on scale units. For example, for a WES workload on a scale unit, you can't perform a transfer order receiving process (transfer receipt); instead, this must be processed by the hub instance.
+No other types of source-documents processing or warehouse work are currently supported on scale units. For example, for a WES workload on a scale unit, you can't perform a transfer order receiving process (transfer receipt); instead, this must be processed by the hub instance.
 
 > [!NOTE]
 > Mobile device menu items and buttons for unsupported functionalities aren't shown in the _Warehouse Management mobile app_ when it is connected to a scale unit deployment.
-
-> [!WARNING]
+> 
 > When you run a workload on a scale unit, you can't run unsupported processes for that specific warehouse on the hub. The tables provided later in this topic document the supported capabilities.
 >
 > Selected warehouse work types can be created both on the hub and on scale units, but can only be maintained by the owning hub or scale unit (the deployment which created the data).
 >
-> Even when a specific process is scale unit supported, be aware that all the needed data might not get synchronized from the hub to the scale unit, or from the scale unit to the hub, which risks resulting in unexpected system processing. Examples being:
+> Even when a specific process is scale unit supported, be aware that all the needed data might not get synchronized from the hub to the scale unit, or from the scale unit to the hub, which risks resulting in unexpected system processing. Examples of this scenario include:
 > 
 > - If you use a location directive query that joins a data table record that only exists at the hub deployment.
 > - If you use location status and/or location volumetric load functionalities. This data will not get synchronized between the deployments and will therefore only work when updating location inventory on-hand on one of the deployments.
 
 The following warehouse management functionality isn't currently supported for scale unit workloads:
 
-- Inbound processing of purchase order lines assigned to a load
-- Inbound processing of purchase orders for a project
-- Inbound and outbound processing for items that have active tracking dimensions **Owner** and/or **Serial number**
-- Processing of inventory that has a blocking status value
-- Changing of an inventory status during any work movement process
-- Order-committed flexible warehouse-level dimension reservations
-- Use of *Warehouse location status* functionality (the data isn't synced between the deployments)
-- Use of *Location license plate positioning* functionality
-- Use of *Product filters* and *Product filter groups*, including the **Number of days to mix batches** setting
-- Integration with quality management
-- Processing with catch-weight items
-- Processing with items only enabled for Transportation management (TMS)
-- Processing with negative on-hand inventory
-- Warehouse work processing with shipment notes
-- Warehouse work processing with material handling/warehouse automation
-- Use of product master data image (for example, on the Warehouse Management mobile app)
+- Inbound processing of purchase order lines assigned to a load.
+- Inbound processing of purchase orders for a project.
+- Inbound and outbound processing for items that have active tracking dimensions **Owner** and/or **Serial number**.
+- Processing of inventory that has a blocking status value.
+- Changing of an inventory status during any work movement process.
+- Order-committed flexible warehouse-level dimension reservations.
+- Use of *Warehouse location status* functionality (the data isn't synced between the deployments).
+- Use of *Location license plate positioning* functionality.
+- Use of *Product filters* and *Product filter groups*, including the **Number of days to mix batches** setting.
+- Integration with quality management.
+- Processing with catch-weight items.
+- Processing with items only enabled for Transportation management (TMS).
+- Processing with negative on-hand inventory.
+- Warehouse work processing with shipment notes.
+- Warehouse work processing with material handling/warehouse automation.
+- Use of product master data image (for example, on the Warehouse Management mobile app).
 
 > [!WARNING]
 > Some warehouse functionality won't be available for warehouses running the warehouse management workloads on a scale unit, and also isn't supported on the hub or on the scale unit workload.
 > 
 > Other capabilities can get processed on both, but will require careful use in some scenarios, such as when inventory on-hand gets updated for the same warehouse on both the hub and scale unit due to the asynchronous data update process.
 > 
-> Specific functionalities (such as *block work*) which are supported on both the hub and scale units will only be supported for the owner of the data.
+> Specific functionalities (such as *block work*), which are supported on both the hub and scale units, will only be supported for the owner of the data.
 
 ### Outbound (supported only for sales and transfer orders)
 
@@ -198,7 +197,7 @@ The following table shows which outbound features are supported, and where they 
 | Shipment consolidation                                       | Yes, when using load planning | Yes |
 | Shipment wave processing                                     | No  |Yes, except **Load building and sorting** |
 | Maintain shipments for wave                                  | No  | Yes|
-| Warehouse work processing (incl. license plate print)        | No  | Yes, but only for the previously mentioned supported capabilities. |
+| Warehouse work processing (incl. license plate print)        | No  | Yes, but only for the previously mentioned supported capabilities |
 | Cluster picking                                              | No  | Yes|
 | Manual packing processing, incl. 'Packed container picking' work processing | No <P>Some processing can be done after a initial picking process handled by a scale unit, but not recommended due to following blocked operations.</p>  | No |
 | Remove container from group                                  | No  | No |
@@ -266,7 +265,7 @@ The following table shows which warehouse operations and exception handing featu
 | Movement by template                               | Yes | Yes                          |
 | Warehouse transfer                                 | Yes | No                           |
 | Create transfer order from warehouse app           | Yes | No                           |
-| Adjustment (in/out)                                | Yes | Yes, but not for the adjust out scenario where inventory reservation must be removed using the **Remove reservations** setting on the inventory adjustment types.</p>                           |
+| Adjustment (in/out)                                | Yes | Yes, but not for the adjust out scenario where inventory reservation must be removed using the **Remove reservations** setting on the inventory adjustment types</p>                           |
 | Inventory status change                            | Yes | No                           |
 | Cycle counting and Counting discrepancy processing | Yes | Yes                           |
 | Reprint label (license plate printing)             | Yes | Yes                          |
@@ -287,7 +286,7 @@ The following table shows which warehouse operations and exception handing featu
 
 ### Production
 
-The following table summarizes which warehouse management production scenarios are (and aren't) currently supported on scale unit workloads.
+The following table summarizes which warehouse management production scenarios are currently supported on scale unit workloads.
 
 | Process | Hub | WES workload on a scale unit |
 |---------|-----|------------------------------|
