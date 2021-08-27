@@ -60,9 +60,9 @@ In this topic, you will complete two main steps:
 8. Select **OK** to save the policy, and then save your changes to the container.
 9. Go to **Settings** > **Shared access tokens**, and set the field values. 
 10. Enter the start and end dates. The end date should be in future.
-11. In the **Permissions** field, select the following permissions: **Read**, **Add**, **Create**, **Write**, **Delete**, **List**. 
+11. In the **Permissions** field, select the following permissions: **Read**, **Add**, **Create**, **Write**, **Delete**, and **List**. 
 12. Select **Generate SAS token and URL**.
-13. Copy and store the value in the **Blob SAS URL** field. This value will be used in the next procedure and referred to as the *shared access signature URI*.
+13. Copy and store the value in the **Blob SAS URL** field. This value will be used in the next procedure and will be referred to as the *shared access signature URI*.
 
 ## Set up the key vault to store the storage account URI
 
@@ -70,7 +70,7 @@ In this topic, you will complete two main steps:
 2. Go to **Settings** \> **Secrets**, and then select **Generate/Import** to create a new secret.
 3. On the **Create a secret** page, in the **Upload options** field, select **Manual**.
 4. Enter the name of the secret. This name will be used during setup of the service in Regulatory Configuration Service (RCS) and will be referred to as the *key vault secret name*.
-5. In the **Value** field, enter copied value *shared access signature URI*, and then select **Create**.
+5. In the **Value** field, enter the shared access signature URI that you copied in the previous procedure, and then select **Create**.
 6. Set up the access policy to grant Electronic invoicing the correct level of secure access to the secret you created. Go to **Settings \> Access policy**, and select **Add Access Policy**.
 7. Set the secret permissions for the **Get** and **List** operations.
 
