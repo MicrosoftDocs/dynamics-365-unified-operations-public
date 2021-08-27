@@ -94,7 +94,7 @@ Human Resources connects people and operations data to help you optimize workfor
 ## Additional resources
 
 ### eLearning courses
-For online courses and training, check out [Dynamics 365 Human Resources on Microsoft Learn](//learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
+For online courses and training, check out [Dynamics 365 Human Resources on Microsoft Learn](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
 
 ### Videos
 
