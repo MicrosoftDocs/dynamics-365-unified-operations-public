@@ -44,7 +44,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are deprecating some SQL reports in LCS. You will no longer need to monitor the reports as this feature has been superseded by other services. |
+| **Reason for deprecation/removal** | We are deprecating some SQL reports in LCS. You will no longer need to monitor the reports as this feature has been replaced by other services. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
