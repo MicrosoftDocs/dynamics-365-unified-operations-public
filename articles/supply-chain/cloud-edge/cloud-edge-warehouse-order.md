@@ -24,7 +24,7 @@ ms.dyn365.ops.version: 10.0.19
 
 *Warehouse orders* are a type of order used to support hub and scale unit warehouse deployments. They let you receive and ship inventory when you're running a warehouse workload on a scale unit.
 
-Warehouse orders are used as part of both inbound and outbound warehouse management processing. They will get created as part of the *Release to warehouse* process which gets initialized on the hub.
+Warehouse orders are used as part of both inbound and outbound warehouse management processing. They are created as part of the *Release to warehouse* process, which gets initialized on the hub.
 For the inbound processing the warehouse mobile app is used to register physical on-hand inventory during processing of inbound orders, this is available for purchase and production orders that specify a scale unit warehouse and items that are enabled to use warehouse management processes.
 The outbound warehouse orders are used as part of the shipment waving process  for transfer and sales orders.
 
