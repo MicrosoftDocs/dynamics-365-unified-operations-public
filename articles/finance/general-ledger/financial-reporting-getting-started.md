@@ -157,9 +157,9 @@ The slipstream process is fully automated and doesn't require any customer actio
 - **On-Premise** deployments do not support slipstream and true-up.
 - **IaaS** topologies – slipstream logic is applied during any operation that would attempt to update Financial reporting. It includes binary updates or broadcasts which contains binary updates.
 - **Self-Service** topology – any operation that requires Financial reporting downtime will apply the slipstream logic: 
--- Binary updates or broadcasts that include binary updates;
--- OS patching or other infrastructure downtime;
--- AOT package deployments.
+  - Binary updates or broadcasts that include binary updates;
+  - S patching or other infrastructure downtime;
+  - AOT package deployments.
 
 ## Troubleshooting issues opening Report Designer
 There are a few common issues that can cause problems when you open Report Designer. Those issues and the steps to resolve them are as follows.
