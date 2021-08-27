@@ -52,7 +52,7 @@ Trial environments aren't intended to be used as production environments. They a
 When creating a Human Resources trial environment, a Power Apps trial environment is also created on the tenant and linked to the Human Resources environment. The Power Apps environment, named "TestDrive", has the same trial period as the Human Resources environment.
 
 > [!NOTE]
-> Provisioning a Human Resources trial environment will fail if the authenticated user does not have permission to create Power Apps trial environments. The user must be included in the group specified for who can create trial environments in the Power Platform admin center. For more information, see [Control who can create and manage environments in the Power Platform admin center](https://docs.microsoft.com/power-platform/admin/control-environment-creation).
+> Provisioning a Human Resources trial environment will fail if the authenticated user does not have permission to create Power Apps trial environments. The user must be included in the user group who can create trial environments in the Power Platform admin center. For more information, see [Control who can create and manage environments in the Power Platform admin center](//power-platform/admin/control-environment-creation).
 
 ## Plan Human Resources environments
 
@@ -79,7 +79,7 @@ To use LCS to manage your Human Resources environments, you must first create an
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Human Resources.
 
    > [!NOTE]
-   > To ensure successful provisioning, the account you use to provision the Human Resources environment must be assigned to either the **System Administrator** or **System Customizer** role in the Power Apps environment associated with the Human Resources environment. See [Configure user security to resources](/power-platform/admin/database-security) for more information on assigning security roles to users in the Power Platform.
+   > To ensure successful provisioning, the account you use to provision the Human Resources environment must be assigned to either the **System Administrator** or **System Customizer** role in the Power Apps environment associated with the Human Resources environment. For more information about assigning security roles to users in the Power Platform, see [Configure user security to resources](/power-platform/admin/database-security).
 
 2. Select the plus sign (**+**) to create a project.
 
