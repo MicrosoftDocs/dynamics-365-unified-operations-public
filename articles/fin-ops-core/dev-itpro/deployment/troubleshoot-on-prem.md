@@ -4,7 +4,7 @@
 title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
-ms.date: 08/26/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -1059,7 +1059,7 @@ If you receive an "Unable to find certificate" error when you run Test-D365FOCon
 
 If the client and server can't communicate because they don't have a common algorithm, verify that the certificates that are created use the specified provider, as explained in the "Plan and acquire your certificates" section of the appropriate setup and deployment topic for your environment:
 
-- [Platform udpate 41 and later](setup-deploy-on-premises-pu41.md#plancert)
+- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#plancert)
 - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#plancert)
 
 ## Find a list of group managed service accounts
@@ -1106,7 +1106,7 @@ This issue occurs because AOS users aren't in the local administrator group, and
 
 1. Add AOS users as local admins, as described in the "Join VMs to the domain" section of the appropriate setup and deployment topic for your environment:
 
-    - [Platform udpate 41 and later](setup-deploy-on-premises-pu41.md#joindomain)
+    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#joindomain)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#joindomain)
  
 2. Run the **Config-PreReq** script on all the AOS machines.
