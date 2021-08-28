@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.22 of Finance and Operations apps (November 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.22 of Finance and Operations apps.
 author: sericks007
-ms.date: 08/23/2021
+ms.date: 08/27/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -34,7 +34,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops/
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
 | Client features | [Open-source software update: Upgrade Moment and remove jqWidgets](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=671c33cf-ec01-ec11-94ef-0022482594cd&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)  |  |
 | Client features | [New color picker control](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=b03a31e1-ef01-ec11-94ef-0022482594cd&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)  |  |
-| Client features | Visual updates to the Hierarchy viewer control  | [Hierarchy viewer control](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/user-interface/hierarchy-viewer-control) |
+| Client features | Visual updates to the Hierarchy viewer control  | [Hierarchy viewer control](../user-interface/hierarchy-viewer-control.md) |
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
 | <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
 
