@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Ratings refiner on E-Commerce channel is visible across the modules such as Buy-box, Search or Catalog pages though you've not opted in for Dynamics 365 Commerce's Ratings and Reviews solution.  
+title: Ratings refiner on E-Commerce channel is appearing on search results, catalog pages though Dynamics 365 Commerce's Ratings and Reviews solution is not used.  
 description: This topic provides troubleshooting guidance that can help hiding ratings refiner on products search and categories pages when you're not using Dynamics 365 Commerce's Ratings and Reviews solution.
 manager: jeffbl
 ms.date: 08/27/2021
