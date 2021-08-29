@@ -89,7 +89,7 @@ The following table describes the commands that are available on the toolbar on 
 
 | Command | Description |
 |---|---|
-| Allocate forecast | If you're using an allocation method, generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed by date (according to the selected time intervals), quantity, and amount for the whole time horizon. |
+| Allocate forecast | If you're using an allocation method, generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed by date (according to the selected time intervals), quantity, and amount for the whole time horizon. (See the [Allocate forecast](#allocate-forecast) section later in this topic.) |
 | Bulk update | Open the **Edit forecast transactions** page. (See the [Bulk update forecast transactions](#bulk-update) section later in this topic.) |
 | Inventory forecast | Open a view of the **Inventory forecast** page that is filtered for the selected item/model combination. (See the [Inventory forecast](#inventory-forecast) section later in this topic.) |
 | Create item requirement | Open a dialog box where you can create item requirements, and sales order or item journal lines for project-related forecast transactions. Although this command is available for both supply forecast lines and demand forecast lines, it can't be used on the **Supply forecast** page. |
@@ -196,7 +196,7 @@ The following table describes the commands that are available on the toolbar on 
 
 | Command | Description |
 |---|---|
-| Allocate forecast | If you're using an allocation method, generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed by date (according to the selected time intervals), quantity, and amount for the whole time horizon. |
+| Allocate forecast | If you're using an allocation method, generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed by date (according to the selected time intervals), quantity, and amount for the whole time horizon. (See the [Allocate forecast](#allocate-forecast) section later in this topic.)|
 | Bulk update | Open the **Edit forecast transactions** page. (See the [Bulk update forecast transactions](#bulk-update) section later in this topic.) |
 | Inventory forecast | Open a view of the **Inventory forecast** page that is filtered for the selected item/model combination. (See the [Inventory forecast](#inventory-forecast) section later in this topic.) |
 | Create item requirement | Open a dialog box where you can create item requirements, and sales order or item journal lines for project-related forecast transactions. |
@@ -291,7 +291,7 @@ The **Inventory dimensions** tab shows all the inventory dimension values for th
 
 ### The Allocation grid on the Demand forecast page
 
-If you're using an item allocation key, or if you've entered an item forecast for one or more future periods, you can allocate the forecast by selecting **Allocate forecast** on the toolbar on the **Overview** tab. The quantity is then distributed in the manner that is indicated by the lines in the **Allocation** grid.
+If you're using an item allocation key, or if you've entered an item forecast for one or more future periods, you can allocate the forecast by selecting **Allocate forecast** on the toolbar on the **Overview** tab. The quantity is then distributed in the manner that is indicated by the lines in the **Allocation** grid. (See the [Allocate forecast](#allocate-forecast) section later in this topic.)
 
 ## <a name="inventory-forecast"></a>Inventory forecast
 
@@ -323,6 +323,24 @@ The following table describes the fields in the grid on the **Inventory forecast
 | **Sub-BOM** | The BOM number of a specific sub-BOM. |
 | **Subroute** | The route number of a specific sub-route. |
 | (Other dimensions) | Additional dimensions can be shown as columns in the grid. To select the additional dimensions that are shown, select **Inventory \> Display dimensions** on the Action Pane. |
+
+## <a name="allocate-forecast"></a>Allocate forecast
+
+Use this procedure to process selected forecast transaction line. You can allocate the forecast; that is, the quantity is then distributed in the manner that is indicated in the dialog by the lines in the **Allocation** grid.
+
+1. On the supply or demand forecast lines page, select **Allocate forecast** on the toolbar on the **Overview** tab.
+1. In the dialog box, select the appropriate **Method** from the drop-down menu.
+
+| Field | Description |
+|---|---|
+| **Method** | <p>Select the method that is used to allocate the forecast transaction:</p><ul><li>**None** – No allocation occurs.</li><li>**Period** – Forecast the same quantity for each period. If you select this value, specify a quantity in the **Per** field and a unit of time in the **Unit** field.</li><li>**Key** – Allocate the forecast according to the period allocation key that you specify in the **Period key** field. You can use this method when you want seasonal variation to be considered.</li><ul>|
+| **Per** | <p>Enter the number of time intervals into the future that the forecast extends. This field is available only if you select *Period* in the **Method** field.</p><p>For example, you select *Period* in the **Method** field, enter *1* in the **Per** field, and select *Months* in the **Unit** field. In the **End** field, you specify an end date that extends one year into the future. In this case, one forecast line will be created for each month of the upcoming year, based on the item and quantity that are specified on the header line. |
+| **Unit** | Select the unit of the time interval: *Days*, *Months*, or *Years*. Allocation then corresponds to the number of days, months, or years that you specify in the **Per** field.|
+| **Period key** | Specify the period allocation key that is used to allocate the forecast. For more information, see [Budget planning data allocation](../../finance/budgeting/budget-planning-data-allocation.md). |
+| **End** | Specify the end date when you use the **Per** and **Unit** fields. |
+
+1. Select **OK** to confirm your selection.
+1. You can review the results under the **Allocation** tab for the same line.
 
 ## <a name="bulk-update"></a>Bulk update forecast transactions
 
