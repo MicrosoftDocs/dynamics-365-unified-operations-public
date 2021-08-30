@@ -34,10 +34,10 @@ This topic describes the dates that appear on vendor invoices, and how to set up
 
 On the **Pending vendor invoice detailed** page, the invoice header displays four dates: the invoice received date, invoice date, posting date and due date. When a vendor invoice is created, the following dates are entered by default.
 
-- **Invoice received date**: current system date.
-- **Posting date**: current system date. 
-- **Due date**: determined from posting date and payment term.
-- **Invoice date**: balnk by default and can changed as needed. If you do change this date, the date on **Due date** field will be recalculated based on the invoice date and the payment term.
+- **Invoice received date**: Displays the current system date.
+- **Posting date**: Displays the current system date. 
+- **Due date**: Determined from posting date and payment term.
+- **Invoice date**: Displays a blank value by default but can changed as needed. If you do change this date, the date on **Due date** field will be recalculated based on the invoice date and the payment term.
 
 The default entry for the invoice date is always blank, and can entered or changed as needed. If you do change this date, the date on **Due date** field will be recalculated based on the invoice date and the payment term.
 
@@ -54,7 +54,7 @@ You can let the system adjust the posting date automatically for vendor invoices
 3.	On the **Adjust posting date automatically** field, select one of the following options:
 
   - **No change**
-    This is the default selction. When it is selected, the system won't change the posting date automatically during posting.
+    This is the default selection. When it is selected, the system won't change the posting date automatically during posting.
   - **Always change posting date to system date**
      This selection always automatically changes the posting date to the system date during posting.
   - **Change posting date to system date when posting date period is closed or on hold**
