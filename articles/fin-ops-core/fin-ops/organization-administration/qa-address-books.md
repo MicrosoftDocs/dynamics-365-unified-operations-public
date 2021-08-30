@@ -71,14 +71,12 @@ You can enter party records either in the global address book or on the appropri
 
 You can set up translations of address information, so that the information appears in your user language (system language) in your program, but in another language on documents such as sales orders. You can enter translations for country/region names, address purposes, and name sequences. For example, your system language is Danish, and you create a sales order for a customer in France. In this case, you can view the customer record in Danish in the program but display the address information in French on the printed sales order. When you set up translations, you should enter a translation for every item in the list. Any item that you don't enter a translation for will appear in the system language. For example, your system language is Danish, and you send a document to a customer in Spain. If you haven't entered Spanish (ESP) translations for the address information, that information will appear in Danish both in the program and on the printed document.
 
-## After importing addresses, why am I unable to edit the records?
+## After I import addresses, why can't I edit the records?
 
-When importing addresses there is a field **IsLocationOwner**. This field indicates if the party that is associated to the location (address) is the owner of the address. If the party is the owner of the address, the address can be edited when using the party in the global address book or from the master record page (such as customer, vendor, or worker). If the party is not the owner of the address, the record cannot be edited. 
+When you import addresses, there is a field that is named **IsLocationOwner**. This field indicates whether the party that is associated with the location (address) is the owner of the address. If the party is the owner of the address, the address can be edited when the party is used in the global address book or from the master record page (such as the customer, vendor, or worker). If the party isn't the owner of the address, the record can't be edited. 
 
-When importing addresses, **IsLocationOwner** should be set to **Yes** if you want the address to be editable using the associated party. If this field is imported incorrectly, the location owner can be updated within the global address book.
+When you import addresses, the **IsLocationOwner** field should be set to **Yes** if you want the address to be editable by using the associated party. If this field is incorrectly imported, the location owner can be updated in the global address book.
 
-For more information on changing the the location owner for an imported address, see [Managing location owners](./global-address-book-location-owner.md).
-
+For more information about how to change the location owner of an imported address, see [Managing location owners](./global-address-book-location-owner.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
