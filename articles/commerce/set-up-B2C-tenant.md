@@ -42,6 +42,24 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
 > [!TIP]
 > You can further protect your site users and enhance the security of your Azure AD B2C tenants with Azure AD Identity Protection and Conditional Access. To review the capabilities available to Azure AD B2C Premium P1 and Premium P2 tenants, see [Identity Protection and Conditional Access for Azure AD B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
 
+## Dynamics Environment Pre-Requisites
+Before you begin, ensure your Dynamics 365 Commerce environment and e-Commerce channel are configured appropriately.
+  - After deployment of your Dynamics 365 Commerce environment, it is recommended to [Initialize seed data](enable-configure-retail-functionality.md) in the environment.
+  - Set "AllowAnonymousAccess" for POS Operations to 1.
+     1. In HQ, go to **POS Operations**
+     1. In the operations grid, Right-click and select **Personalize**
+     1. Select "Add a field"
+     1. Within in the list of columns available, select to add the **AllowAnonymousAccess** column
+     1. Click the "Update" button
+     1. For the 612 operation, modify the **AllowAnonymousAccess** value to 1
+     1. Run job **1090 (Registers)**
+
+- Number Sequences for customers **Manual** attribute should be set to **No**.
+     1. In HQ, navigate to **Accounts receivable parameters** (Retail and Commerce > Headquarters setup > Parameters)
+     1. Select **Number sequences**
+     1. Double-click into the Number Sequence Code value showing for the **Customer account** row.
+     1. In the **General** fast tab of the Number sequence, set **Manual** to **No**.
+
 ## Create or link to an existing AAD B2C tenant in the Azure portal
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
