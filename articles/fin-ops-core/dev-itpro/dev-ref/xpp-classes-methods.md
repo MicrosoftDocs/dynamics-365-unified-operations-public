@@ -19,7 +19,7 @@ This topic describes how to create and use classes in X++.
 
 A *class* is a software construct that defines the data and methods of the instances that are later constructed from that class. The *class* is an abstraction of an *object* in the problem domain. The instances that are constructed from the *class* are known as *instances* or *objects*. This topic uses the term *instance*. The data represents the state of the object, whereas the methods represent the behavior of the object.
 
-*Variables* contain the data for the class. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables*.
+*Variables* contain the data for the class, and are called *fields*. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables* or *instance fields*. This topic will use the term *field* in most cases.
 
 Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance fields). By default, methods are declared to operate on the instance fields of the class. These methods are known as *instance methods* or *object methods*.
 
@@ -35,16 +35,16 @@ You must use the **Add new item** dialog in Visual Studio to add a class to your
 
 All classes are public. If you remove the **public** modifier, the system still treats the class as public. You can specify other modifiers on the class declaration, such as **final** and **extends**.
 
-## Fields (variables)
+## Fields
 
-Instance fields (variables) are **protected** by default. This means that they can only be accessed in the same class or [a derived class](xpp-inheritance.md). You can modify an instance field declaration by using the **private**, **protected**, or **public** keywords.
+Instance fields are **protected** by default. This means that they can only be accessed in the same class or [a derived class](xpp-inheritance.md). You can modify an instance field declaration by using the **private**, **protected**, or **public** keywords.
 
 > [!NOTE]
 > Making a member field public may not be a good idea since it exposes the internal workings of the class to its consumers, creating a strong dependency between the class implementation and its consumers. You should always strive to only depend on a contract, not an implementation.
 
 You can assign a value to a field inline, that is, along with the declaration of the field itself. This applies to both static and instance fields.
 
-The following example shows how to use accessor methods to make the field data public. The variable **firstName** is protected, so accessor (get and set) methods are implemented to allow access to the protected field. The field **lastName** is public, so code can directly get and set the value of the field.
+The following example shows how to use accessor methods to make the field data public. The field **firstName** is protected, so accessor (get and set) methods are implemented to allow access to the protected field. The field **lastName** is public, so code can directly get and set the value of the field.
 
 ```xpp
 // This is the class definition.
@@ -79,19 +79,23 @@ public static void TestLastName()
 
 You can decorate a field with an attribute, in the same way that attributes can decorate classes and methods. The following example decorates the **myField** field with the **MyAtribute** attribute.
 
+```xpp
 class MyClass
 {
     [MyAttribute]
     public int myField;
 }
+```
 
 One particularly useful attribute is the **SysObsolete** attribute. If the **SysObsolete** attribute is applied to a field, then the compiler generates an error or warning on any reference to the field. Whether it's a warning or error depends on the second parameter in the attribute.
 
+```xpp
 class MyClass
 {
     [SysObsolete("This field is obsolete.", true)]
     public int myField;
 }
+```
 
 ## Constructors
 
@@ -107,7 +111,7 @@ The following example defines a parameterless constructor in the **Point** class
 class Point
 {
 
-    // Instance variables that are public. In practice, you would probably make this protected or private
+    // Instance fields that are public. In practice, you would probably make this protected or private.
     // and create accessor methods.
     public real x = 0.0;
     public real y = 0.0;
@@ -123,7 +127,7 @@ Following is information about how to create a clean inheritance model and minim
 + Each class should have at least one static **construct** method.
 + Each class should have at least one static **new** method.
 + Each class should have a **new** method (the default constructor). This method should be **protected**.
-+ Create accessor methods to get and set class variables.
++ Create accessor methods to get and set class fields.
 + Create **init** methods to carry out any specialized initialization tasks that should be carried out after instantiation.
 
 ### Create other objects in a constructor
@@ -134,7 +138,7 @@ A class constructor can instantiate other objects in addition to creating an ins
 
 class Point
 {
-    // Instance variables that are public. In practice, you would probably make this protected or private
+    // Instance fields that are public. In practice, you would probably make this protected or private.
     // and create accessor methods.
     public real x = 0.0;
     public real y = 0.0;
@@ -177,7 +181,7 @@ info(any2Str(customRectangle.lowerLeft.y));
 The constructor, **new**, returns a new instance of the class. The following code example creates two instances of the Point class.
 
 ```xpp
-// Declare a variable to refer to a Point instance.
+// Declare a field to refer to a Point instance.
 Point myPoint;
 
 // Create an instance of the Point class.
@@ -249,7 +253,7 @@ info(int2Str(area));
 
 ### Static methods
 
-Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**. You don't have to instantiate an object before you use static methods. Static methods are often used to work with data that is stored in tables. Member variables can't be used in a static method.
+Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**. You don't have to instantiate an object before you use static methods. Static methods are often used to work with data that is stored in tables. Member fields can't be accessed from a static method.
 
 You use the following syntax to call static methods.
 
@@ -272,7 +276,7 @@ static void main (Args _args)
 
 ### Declaration of methods
 
-Method declarations consist of a header and a body. The method header declares the method's name and return type), the method modifiers, and parameters. (The return type might be **void**.) The method body consists of variable declarations, method declarations, and statements.
+Method declarations consist of a header and a body. The method header declares the method's name and return type), the method modifiers, and parameters. (The return type might be **void**.) The method body consists of fields declarations, method declarations, and statements.
 
 ### Return type
 
@@ -318,7 +322,7 @@ If you use the **anytype** return type, the method can return any data type.
 ```xpp
 void update ()
 {
-    // Variable declared and initialized
+    // Field declared and initialized
     CustTable this_Orig = this.orig();
 
     // First statement in body (begin transaction)
@@ -365,7 +369,7 @@ Several modifiers can be applied to method declarations. Some of the modifiers c
 + **public**: Methods that are declared as **public** can be accessed anywhere that the class is accessible, and they can be overridden by subclasses. Methods that have no access modifier are implicitly public.
 + **protected**: Methods that are declared as **protected** can be called only from methods in the class and in subclasses that extend the class where the method is declared.
 + **private**: Methods that are declared as **private** can be called only from methods in the class where the private method is declared.
-+ **static**: The method is a class method and doesn't act on an instance. Static methods can't refer to instance variables. They aren't invoked on an instance of the class. Instead, they are invoked by using the class name (for example, **MyClass::aStaticProcedure()**).
++ **static**: The method is a class method and doesn't act on an instance. Static methods can't refer to instance fields. They aren't invoked on an instance of the class. Instead, they are invoked by using the class name (for example, **MyClass::aStaticProcedure()**).
 
 ### Methods that have modifiers
 
@@ -475,12 +479,12 @@ class Additions
 
 ## Accessor methods
 
-Class variables are protected by default. By hiding details of the internal implementation of a class, you can change the implementation of the class later without breaking any code that uses that class. To access the data from reference variables, you must create accessor methods. The following example defines a **Point** class that uses accessor methods to access the variables **x** and **y**.
+Class fields are protected by default. By hiding details of the internal implementation of a class, you can change the implementation of the class later without breaking any code that uses that class. To access the data from reference fields, you must create accessor methods. The following example defines a **Point** class that uses accessor methods to access the fields **x** and **y**.
 
 ```xpp
 class Point
 {
-    // Instance variables
+    // Instance fields
     real x;
     real y;
 
@@ -514,13 +518,13 @@ class Point
 }
 ```
 
-These method declarations show how the **Point** class provides access to its variables from the outside world. Other objects can manipulate the instance variables of **Point** objects by using the accessor methods.
+These method declarations show how the **Point** class provides access to its fields from the outside world. Other objects can manipulate the instance fields of **Point** objects by using the accessor methods.
 
 ```xpp
 Point myPoint = new Point();
-// Set the x variable using the accessor method.
+// Set the x fields using the accessor method.
 myPoint.setX(4.0);
-// Get the x variable using the accessor method.
+// Get the x fields using the accessor method.
 info(any2Str(myPoint.getX()));
 ```
 
