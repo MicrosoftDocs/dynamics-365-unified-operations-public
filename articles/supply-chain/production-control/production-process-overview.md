@@ -78,6 +78,49 @@ The following steps in the production life cycle can occur for all order types o
 12. **Period closure** – Some cost accounting principles, such as periodic average, back-flush costing, FIFO, or LIFO, require periodic activities to close the inventory or financial period. Typically, the system tries to report all material and resource consumption, and also corrections of inventory and scrap, before the periods are closed. This reporting is typically done by using inventory movement journals or adjustment journals. The goal is to assess the economic performance of operating units per period. In some cases, when long-running production orders are used that span the financial reporting periods, production journals are used to report the production progress and resource consumption by the end of the period.
 
 
+## Manufacturing execution systems integration
+
+Some manufacturing organizations who use Dynamics 365 Supply Chain Management, especially those with advanced manufacturing requirements, use a third-party manufacturing execution system (MES) to control their manufacturing activities for machines, equipment, and personnel instead of what is natively available in Dynamics 365. Organizations might choose a third-party MES solution, for example, because it is specifically tailored for their own vertical industry.
+
+In the integrated solution, data exchange is fully automated and near real-time, which keeps data current in both systems and eliminates the need for manual data entry. For example, when material consumption is registered in the MES system, the integration ensures that the same consumption is also registered in Dynamics 365, so up-to-date inventory records are available to other important processes such as planning, sales, and so on. 
+
+To enable this feature, enable **Manufacturing execution systems integration** feature in feature management.
+
+The solution makes it faster, easier, and cheaper for Supply Chain Management users to integrate with third-party MES systems. It offers:
+
+- Business events and interfaces that support key manufacturing execution processes
+- A centralized dashboard where the event processing history can be tracked and failing processes can be troubleshooted and resolved
+
+You can enable any or all of the processes outlined in the following subsections for integration.
+
+
+### Release production orders and production order status change business events
+
+This process provides the MES system with a business event that can be listened to in the MES about the information about which production orders to produce. Reference data related to the production order is expected to be provided with OData or data entities.
+
+### Start production order
+
+This process provides Supply Chain Management with information about production order being started using the MES system to ensure both systems have an up-to-date view of all manufacturing activities.
+
+### Report produced or scrapped quantity
+
+This process provides Supply Chain Management with information about the good and error quantities reported on a production job using the MES system, which provides shop floor supervisors with an up-to-date view of production plan progress.
+
+### Report material consumption
+
+This process provides Supply Chain Management with information from the MES system about quantities of materials consumed. This makes up-to-date inventory records available to other important processes such as planning, sales, and so on.
+
+### Report time consumed for the operation
+
+This process provides Supply Chain Management with information on the time used for a specific operation.
+
+### End production order
+
+This process tells the MES system that a production order has been updated to its final status of *Ended* in Supply Chain Management, which indicates that no more quantities will be produced on the production order.
+
+To monitor the incoming messages to the system use the form **Manufacturing execution systems integration** where you will be able to view, process and troubleshoot issues.
+
+
 ## Additional resources
 
 [Production feedback](production-feedback.md)
