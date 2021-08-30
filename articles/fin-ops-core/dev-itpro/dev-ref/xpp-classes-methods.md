@@ -21,9 +21,9 @@ A *class* is a software construct that defines the data and methods of the insta
 
 *Variables* contain the data for the class. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables*.
 
-Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance variables). By default, methods are declared to operate on the instance variables of the class. These methods are known as *instance methods* or *object methods*.
+Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance fields). By default, methods are declared to operate on the instance fields of the class. These methods are known as *instance methods* or *object methods*.
 
-You can declare *static methods* and *static fields*, that do not have access to *instance variables*. These are described in [X++ static classes](xpp-static-classes.md).
+You can declare *static methods* and *static fields*, that do not have access to *instance fields*. These are described in [X++ static classes](xpp-static-classes.md).
 
 ## Declare a class
 
@@ -35,16 +35,16 @@ You must use the **Add new item** dialog in Visual Studio to add a class to your
 
 All classes are public. If you remove the **public** modifier, the system still treats the class as public. You can specify other modifiers on the class declaration, such as **final** and **extends**.
 
-## Variables
+## Fields (variables)
 
-Instance variables are **protected** by default. This means that they can only be accessed in the same class or [a derived class](xpp-inheritance.md). You can modify an instance variable declaration by using the **private**, **protected**, or **public** keywords.
+Instance fields (variables) are **protected** by default. This means that they can only be accessed in the same class or [a derived class](xpp-inheritance.md). You can modify an instance field declaration by using the **private**, **protected**, or **public** keywords.
 
 > [!NOTE]
-> Making a member variable public may not be a good idea since it exposes the internal workings of the class to its consumers, creating a strong dependency between the class implementation and its consumers. You should always strive to only depend on a contract, not an implementation.
+> Making a member field public may not be a good idea since it exposes the internal workings of the class to its consumers, creating a strong dependency between the class implementation and its consumers. You should always strive to only depend on a contract, not an implementation.
 
 You can assign a value to a field inline, that is, along with the declaration of the field itself. This applies to both static and instance fields.
 
-The following example shows how to use accessor methods to make the variable data public. The variable **firstName** is protected, so accessor (get and set) methods are implemented to allow access to the protected variable. The variable **lastName** is public, so code can directly get and set the value of the variable.
+The following example shows how to use accessor methods to make the field data public. The variable **firstName** is protected, so accessor (get and set) methods are implemented to allow access to the protected field. The field **lastName** is public, so code can directly get and set the value of the field.
 
 ```xpp
 // This is the class definition.
@@ -63,7 +63,7 @@ public class HasAFirstName
     }
 }
 
-// This code creates an instance of the class and gets the variables.
+// This code creates an instance of the class and gets the fields.
 public static void TestLastName()
 {
     HasAFirstName hasFirstName = new HasAFirstName();
@@ -74,6 +74,24 @@ public static void TestLastName()
 }
 // The output is "Dion" and "Townes".
 ```
+
+### Field attributes
+
+You can decorate a field with an attribute, in the same way that attributes can decorate classes and methods. The following example decorates the **myField** field with the **MyAtribute** attribute.
+
+class MyClass
+{
+    [MyAttribute]
+    public int myField;
+}
+
+One particularly useful attribute is the **SysObsolete** attribute. If the **SysObsolete** attribute is applied to a field, then the compiler generates an error or warning on any reference to the field. Whether it's a warning or error depends on the second parameter in the attribute.
+
+class MyClass
+{
+    [SysObsolete("This field is obsolete.", true)]
+    public int myField;
+}
 
 ## Constructors
 
