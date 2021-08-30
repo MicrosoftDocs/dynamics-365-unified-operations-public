@@ -142,7 +142,7 @@ One of the components that's used to build financial reports is a reporting tree
 
 You can create an unlimited number of reporting trees to display your organization’s data in various ways. Each reporting tree can contain any combination of departments and summary units, but a report definition can link to only one reporting tree at a time. 
 
-## Financial reporting version slipstreaming/true-up
+## Update the Financial reporting version through slipstreaming
 Finance and Operations apps are updated every month. However, Financial reporting is not necessarily updated on that same cadence. Moreover, customers have more options for when they implement updates for Finance and Operations apps. Financial reporting updates are installed automatically. Financial reporting has a designated version that's consumed in a customer environment when a service update is implemented*, when downtime is initiated, or when a customer's environment is in Maintenance Mode. This process is known as **slipstreaming** or **true-up** since all customer implementations are set to the same version of Financial reporting.
 
 Changes that are released with each version can be found in the [What's new or changed in Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Platform Updates and Bug fixes can be found in the 'Additional Resources' section at the bottom of the page for each release. 
