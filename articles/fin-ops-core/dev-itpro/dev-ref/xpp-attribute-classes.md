@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the use of attributes in X++.
 
-An attribute is a non-abstract class that extends (inherits from) the **SysAttribute** class. Attributes represent or store metadata about types and methods. An attribute can be attached to a class, an interface, or a method of a class, interface, or table.
+An attribute is a non-abstract class that extends (inherits from) the **SysAttribute** class. Attributes represent or store metadata about types and methods. An attribute can be attached to a class, a class field, a class method, an interface, or a table.
 
 Attributes are applied to the handlers of delegates and methods, to map the handlers to those targets.
 
