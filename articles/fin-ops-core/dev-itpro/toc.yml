@@ -650,7 +650,7 @@
               href: dev-ref/xpp-interfaces.md
             - name: Libraries
               href: dev-ref/xpp-library-objects.md
-            - name: Eventsand delegates
+            - name: Events and delegates
               href: dev-ref/xpp-events.md
           - name: X++ data selection and manipulation
             items:
