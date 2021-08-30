@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-tools/programming-language-support.md",
+      "redirect_url": "../dev-ref/xpp-language-reference",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-tools/new-x-debugger-features.md",
+      "redirect_url": "../dev-ref/xpp-language-reference",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/dev-itpro/retail-server-extension.md",
       "redirect_url": "dev-retail-home-page",
       "redirect_document_id": "false"
