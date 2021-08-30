@@ -186,7 +186,7 @@ The finally clause will be executed even in transaction scope.
 The semantics of us `using` statements are not impacted by exception scope.
 
 ```xpp
-Using (var athing = new SomethingDisposable())
+using (var athing = new SomethingDisposable())
 {
     // Do work.
 }
