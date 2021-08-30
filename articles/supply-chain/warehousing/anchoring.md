@@ -47,7 +47,7 @@ Before you work through the example scenario, you must enable anchoring for the 
 Use the following procedure to enable anchoring for a mobile device menu item.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
-1. In the list pane, select the record that is named *Sales Picking*. If no existing record has this name, create it. Confirm or set the following values for the record: <!--KFM: It would be nice to highlight those of the following settings that are especially relevant to what we are trying to show in this scenario and use a few words to explain why we have set them like that. (Nice to have) -->
+1. In the list pane, select the record that is named *Sales Picking*. If no existing record has this name, create it. Confirm or set the following values for the record: 
 
     - **Menu item name:** *Sales Picking*
     - **Title:** *Sales Picking*
@@ -55,7 +55,9 @@ Use the following procedure to enable anchoring for a mobile device menu item.
     - **Use existing work:** *Yes*
     - **Directed by:** *User directed*
     - **Anchoring:** *Yes*
+      By setting this parameter, the system will anchor multiple work order lines together during sales picking.
     - **Anchor by:** *Load*
+      By setting this parameter, the system will anchor by load.
     - **Override target license plate:** *Yes*
     - **Override license plate during put:** *Yes*
     - **Keep work locked by user:** *Yes*
@@ -63,12 +65,12 @@ Use the following procedure to enable anchoring for a mobile device menu item.
 
 ### Set up a work template to allow staging
 
-Use the following procedure to configure a work template to enable staging.
+Use the following procedure to configure a work template to enable staging. This configuration will show the scenario when a worker put items for the order in a staging location. 
 
 1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
 1. In the **Work order type** field, select *Sales orders*.
 1. In the grid, select the **61 SO Stage** work template.
-1. In the **Work Template Details** section, make sure that the following lines exist and are configured as shown: <!--KFM: It would be nice to highlight those of the following settings that are especially relevant to what we are trying to show in this scenario and use a few words to explain why we have set them like that. (Nice to have) -->
+1. In the **Work Template Details** section, make sure that the following lines exist and are configured as shown: 
 
    - Line 1:
      - **Work type:** *Pick*
@@ -115,7 +117,11 @@ Use the following procedure to configure a work template to enable staging.
 
 Before you can try the anchoring functionality, you must create some demand. For this scenario, you will create three sales orders for the same customer.
 
-Before you create sales orders and shipments, make sure that the pick locations have enough inventory for all the items in the orders. Review the location directive settings to confirm the picking locations that are used for sales order picking. If you must adjust the inventory, you can create manual movements, use replenishment, or use any other flow. Then reserve the inventory.
+Before you create sales orders and shipments, make sure that the pick locations have enough inventory for all the items in the orders. Review the location directive settings to confirm the picking locations that are used for sales order picking. If you must adjust the inventory, you can create manual movements, use replenishment, or use any other flow.
+
+For this scenario the following inventory is available: 
+   - *A0001* for *100* ea in the location *06A01R2S1B*
+   - *A0002* for *100* ea in the location *06A01R3S1B*
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. Select **New** to create a sales order for order 1.
@@ -194,7 +200,7 @@ Follow these steps to create a load for the orders that you created for this sce
 1. Go to **Warehouse management \> Loads \> Load planning workbench**.
 1. On the **Sales lines** tab, find and select all the sales order lines for sales order 1 and sales order 2.
 1. On the Action Pane, on the **Supply and demand** tab, from the **Add** group, select **To new load**.
-1. In the **Load template assignment** dialog, in the **Load template ID** field, select a load template, such as *Stnd Load Template*. <!-- KFM: I get a warning that the weight or volume exceeds capacity. Does that matter? Maybe use "40' Container" instead? -->
+1. In the **Load template assignment** dialog, in the **Load template ID** field, select a load template, such as *Stnd Load Template*. 
 1. Select **OK** to close the dialog.
 1. In the **Loads** section, find and select the load that you created.
 1. On the toolbar, select **Release \> Release to warehouse**.
@@ -220,7 +226,7 @@ Two work IDs were created for each shipment to bring inventory from the picking 
 1. The last step is to complete the put work.
 1. Select **Override Loc** to override suggested staging location.
 1. In the **Work exceptions** field, set *Staging lane changed*.
-1. In the **Location** field, enter a new staging location *STAGE03*.
+1. In the **Location** field, enter a new staging location *STAGE03* (or any other stage location available that is different from the stage location initially suggested by the system).
 1. Confirm your entry.
     You receive a "Work completed" message.
 1. Go to **Warehouse management \> Work \> All work**.
@@ -258,12 +264,12 @@ Follow these steps to add an order to the load and then release it to the wareho
 1. The last step is to complete the put work.
 1. Select **Override Loc** to override suggested staging location.
 1. In the **Work exceptions** field, set *Staging lane changed*.
-1. In the **Location** field, enter a new staging location *STAGE04*.
+1. In the **Location** field, enter a new staging location *STAGE04* (or any other stage location available that is different from the stage location initially suggested by the system).
 1. Confirm your entry.
     You receive a "Work completed" message.
 1. Go to **Warehouse management \> Work \> All work**.
 1. Select Work ID for the first shipment. Verify that staging location was not updated to new staging location because the remaining open put line does not correspond to the work template line of the completed put line.
-1. Select Work ID for the second shipment. Verify that staging location was not updated to new staging location because the staging location does not correspond to the staging location of the completed put line.
+1. Select Work ID for the second shipment. Verify that staging location was not updated to new staging location because the staging location does not correspond to the staging location of the completed put line. In other words, completed put work line and the remaining open work line have different staging locations and in this case, only lines that have the same staging locations are updated.
 1. Select Work ID for the third shipment. Verify that staging location was updated to the new staging location.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
