@@ -90,23 +90,21 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 
 ## X++ programming language
 
+### Reference
+
+- [X++ language reference](../dev-ref/xpp-language-reference.md)
+
 ### Overviews
 
-- [X++ and debugger features](new-x-debugger-features.md)
 - [Write business logic by using C\# and X++ source code](write-business-logic.md)
 - [Visual Studio 2017 requirements for X++](developer-tools-vs2017.md)
 
 ### Language support
 
-- [Changes in X++ and the X++ compiler](programming-language-support.md)
 - [EventHandlerResult classes in request or response scenarios](event-handler-result-class.md)
 - [Debug X++ code by using the debugger in Visual Studio](debug-xpp.md)
 - [Language Integrated Query (LINQ) provider for C\#](linq-provider-c.md)
 - [Write best practice rules](author-best-practice-rules.md)
-
-### Reference
-
-- [X++ language reference](../dev-ref/xpp-language-reference.md)
 
 ## Customize with extensions and overlayering
 

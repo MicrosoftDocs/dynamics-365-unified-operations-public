@@ -256,6 +256,8 @@
             href: dev-itpro/CDX-Troubleshooting.md
         - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
+        - name: Commerce offline implementation and troubleshooting
+          href: dev-itpro/implementation-considerations-offline.md
         - name: Publish an online store catalog
           href: dev-itpro/retail-online-store-publishing-architecture.md
         - name: Retail Channel Performance Power BI content
