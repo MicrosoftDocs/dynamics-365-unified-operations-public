@@ -241,7 +241,7 @@ When you configure an ER format component to generate a report in the user's pre
 ## Additional resources
 
 - [Electronic Reporting overview](general-electronic-reporting.md)
-- [Electronic Reporting functions](er-formula-language.md#functions)
+- [Electronic Reporting functions](er-formula-language.md#Functions)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
