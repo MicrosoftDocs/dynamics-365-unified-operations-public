@@ -3,9 +3,9 @@
 # required metadata
 
 title: Avoid text truncation on the position hierarchy and export to Visio
-description: This article explains how to resolve an issue where the names of individuals and positions are truncated when customers view the position hierarchy in Microsoft Dynamics 365 Human Resources. Text truncation can make it difficult to take a screenshot or print the hierarchy.
-author: andreabichsel
-ms.date: 02/03/2020
+description: This topic explains how to fix the issue of truncated names of individuals and positions in the position hierarchy in Microsoft Dynamics 365 Human Resources. 
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,7 +22,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -50,7 +50,7 @@ Follow these steps to export to Visio.
 
 1. In Human Resources, open the **Positions** list page.
 
-    To include more information in the organization structure diagram, add fields to the **Positions** list, so that they are available when you use the wizard later in this procedure.
+    To include more information in the organization structure diagram, add fields to the **Positions** list, so that they are available when you use the **Organization chart wizard** later in this procedure.
 
 2. On the Action Pane, select the **Open in Microsoft Office** button, and then, under **Export to Excel**, select **Positions**. Alternatively, press Ctrl+T.
 

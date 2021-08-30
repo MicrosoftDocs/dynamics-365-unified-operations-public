@@ -4,7 +4,7 @@
 title: Payroll fixed compensation plan
 description: This topic provides details and an example query for the Payroll fixed compensation plan entity in Dynamics 365 Human Resources.
 author: jcart
-ms.date: 04/07/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,18 +38,27 @@ Physical name: mshr_payrollfixedcompensationplanentity.
 
 ## Properties
 
-| Property<br>**Physical name**<br>***Type*** | Use | Description |
+| Property</br>**Physical name**</br>***Type*** | Use | Description |
 | --- | --- | --- |
-| **Employee ID**<br>mshr_fk_employee_id_value<br>*GUID* | Read-only<br>Required<br>Foreign key:mshr_Employee_id of mshr_payrollemployeeentity entity  | Employee ID |
-| **Pay rate**<br>mshr_payrate<br>*Decimal* | Read-only<br>Required | Pay rate defined in fixed compensation plan. |
-| **Plan ID**<br>mshr_planid<br>*String* | Read-only<br>Required |Specifies the compensation plan.  |
-| **Valid from**<br>mshr_validfrom<br>*Date Time Offset* |  Read-only<br>Required |Date the employee fixed compensation is valid from.  |
-| **Payroll Fixed Compensation Plan entity**<br>mshr_payrollfixedcompensationplanentityid<br>*GUID* | Required<br>System generated | A system-generated GUID value to uniquely identify the compensation plan. |
-| **Pay frequency**<br>mshr_payfrequency<br>*String* | Read-only<br>Required |The frequency the employee will be paid.  |
-| **Valid to**<br>mshr_validto<br>*Date Time Offset* | Read-only <br>Required | Date the employee fixed compensation is valid to. |
-| **Position ID**<br>mshr_positionid<br>*String* | Read-only <br>Required | Position ID associated with the employee and fixed compensation plan enrollment. |
-| **Currency**<br>mshr_currency<br>*String* | Read-only <br>Required |The currency defined for the fixed compensation plan   |
-| **Personnel number**<br>mshr_personnelnumber<br>*String* | Read-only<br>Required |The employee's unique personnel number.  |
+| **Plan ID**</br>mshr_planid</br>*String* | Read-only | Specifies the compensation plan.  |
+| **Personnel number**</br>mshr_personnelnumber</br>*String* | Read-only | The employee's unique personnel number. |
+| **Pay rate**</br>mshr_payrate</br>*Decimal* | Read-only | Pay rate defined in fixed compensation plan. |
+| **Position ID**</br>mshr_positionid</br>*String* | Read-only | Position ID associated with the employee and fixed compensation plan enrollment. |
+| **Valid from**</br>mshr_validfrom</br>*Date Time Offset* |  Read-only | Date the employee fixed compensation is valid from.  |
+| **Valid to**</br>mshr_validto</br>*Date Time Offset* | Read-only | Date the employee fixed compensation is valid to. |
+| **Pay frequency**</br>mshr_payfrequency</br>*String* | Read-only | The frequency the employee will be paid.  |
+| **Currency**</br>mshr_currency</br>*String* | Read-only | The currency defined for the fixed compensation plan. |
+| **Payroll Fixed Compensation Plan entity**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | System generated | A system-generated GUID value to uniquely identify the compensation plan. |
+
+## Relations
+
+|Property value | Related entity | Navigation property | Collection type |
+| --- | --- | --- | --- |
+| _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_FixedCompPlan |
+| _mshr_fk_job_id_value | [mshr_payrollpositionjobentity](hr-admin-integration-payroll-api-payroll-position-job.md) | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_FixedCompPlan |
+| _mshr_fk_payrollposition_id_value | [mshr_payrollpositionentity](hr-admin-integration-payroll-api-payroll-position.md) | mshr_FK_PayrollPosition_id | mshr_FK_PayrollPositionEntity_FixedCompPlan |
+| _mshr_fk_plan_id_value | mshr_hcmcompfixedplantableentity | mshr_FK_Plan_id | - |
+| _mshr_fk_variablecompaward_id_value | [mshr_payrollvariablecompensationawardentity](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md) | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_FixedComp |
 
 ## Example query
 

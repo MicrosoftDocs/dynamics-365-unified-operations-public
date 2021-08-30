@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cash flow forecast (preview)
+title: Cash flow forecast
 description: This topic describes the Cash flow forecasting capability.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 ---
 
-# Cash flow forecast (preview)
+# Cash flow forecast
 
 [!include [banner](../includes/banner.md)]
 

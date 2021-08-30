@@ -158,6 +158,7 @@ This topic provides information about functionality that supports Russian regula
 - [Reporting for deferrals](rus-reporting-deferrals.md)
 
 ## Tax accounting
+- [Create tax registers and the tax register journal](rus-profit-tax-registers.md)
 - [Expense and income codes](rus-expense-and-income-codes.md)
 - [Assets tax registers](rus-assets-tax-registers.md)
 - [Deferrals tax register](rus-deferred-expenses-register.md)
@@ -166,6 +167,8 @@ This topic provides information about functionality that supports Russian regula
 - [Accounts payable debt tax registers and debt write-offs](rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md)
 - [Bad debt reserves in Accounts receivable](rus-bad-debts.md)
 - [Calculation of tax asset and tax liability registers](rus-calculation-tax-asset-tax-liability-registers.md)
+- [Goods movement tax registers](rus-goods-movement-tax-registers.md)
+- [Other tax registers](rus-other-tax-registers.md)
 
 ## Additional resources
 

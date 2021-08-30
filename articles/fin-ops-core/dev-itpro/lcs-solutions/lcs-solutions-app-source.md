@@ -2,7 +2,7 @@
 # required metadata
 
 title: Requirements for publishing apps on AppSource
-description: This topic points to resources that will help you understand the requirements for creating solutions for Dynamics 365 Finance and Operations apps.
+description: This topic points to resources that will help you understand the requirements for creating solutions for Finance and Operations apps.
 author: kfend
 ms.date: 07/31/2018
 ms.topic: article
