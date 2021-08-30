@@ -26,10 +26,11 @@ Environments that use Planning Optimization automatically receive the latest rel
 
 Because notifications aren't shown when Planning Optimization is updated in your environment, you can review the release notes in the following table to determine when changes were released and what functionality they introduced. This table shows the changes that were released for Planning Optimization, whether those changes are associated with a feature from feature management, and the date of the release.
 
-| Changes | Feature management details | Release date |
+| Changes | Feature management details | Release dates |
 |---|---|---|
-| <p>Added **Lead time** field to planned orders.</p><p>General performance, quality, and stability improvements.</p> | No feature management is required. | August 16, 2021 |
-| <p>Added resource type requirements for infinite capacity scheduling.</p><p>Improved resource efficiency and calendar efficiency for infinite capacity scheduling.</p><p>For more information, see [Scheduling with infinite capacity](infinite-capacity-planning.md). | <p>Available in feature management as of version 10.0.20.</p><p>Feature name: *Infinite capacity scheduling for Planning Optimization*</p> | July 6, 2021 |
-| General quality improvements. | No feature management is required. | July 6, 2021 |
+| General performance, quality, and stability improvements. | No feature management is required. | August 25 - August 30, 2021 |
+| <p>Added **Lead time** field to planned orders.</p><p>General performance, quality, and stability improvements.</p> | No feature management is required. | August 12 - August 17, 2021 |
+| <p>Added resource type requirements for infinite capacity scheduling.</p><p>Improved resource efficiency and calendar efficiency for infinite capacity scheduling.</p><p>For more information, see [Scheduling with infinite capacity](infinite-capacity-planning.md). | <p>Available in feature management as of version 10.0.20.</p><p>Feature name: *Infinite capacity scheduling for Planning Optimization*</p> | July 6 - July 12, 2021 |
+| General quality improvements. | No feature management is required. | July 6 - July 12, 2021 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
