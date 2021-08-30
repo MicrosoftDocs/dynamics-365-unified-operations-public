@@ -324,9 +324,9 @@ The device should now be activated and ready to use.
 
     **Solution:** Verify that the Azure AD user is mapped to a worker who has POS permission to activate devices. The **Manage device** permission for the worker should be set to **Yes**.
 
-- For Modern POS on Android devices, the device activation and Azure AD-based POS sign-in open the Azure AD sign-in page in a standalone browser instance, and the sign-in process does not proceed.
+- When using Modern POS on an Android device, the device activation and Azure AD-based POS sign-in open the Azure AD sign-in page in a standalone browser instance, but the sign-in process doesn't proceed.
     
-    **Solution:** Check whether your Commerce Scale Unit is version 10.0.22 or later and that Modern POS is version 10.0.21 or earlier. If so, you must rebuild Modern POS from the latest Commerce sample repository (version 10.0.22 or later) and then update the Modern POS application on the Android devices.
+    **Solution:** Check whether your Commerce Scale Unit is version 10.0.22 or later, and that Modern POS is version 10.0.21 or earlier. If so, you must rebuild Modern POS from the latest Commerce sample repository (version 10.0.22 or later) and then update the Modern POS application on the Android device.
 
 - Device activation isn't completed. It fails during one of the steps.
 
