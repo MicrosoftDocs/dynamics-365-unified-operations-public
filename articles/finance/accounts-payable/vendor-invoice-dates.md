@@ -37,9 +37,12 @@ On the **Pending vendor invoice detailed** page, the invoice header displays fou
 - **Invoice received date**: current system date.
 - **Posting date**: current system date. 
 - **Due date**: determined from posting date and payment term.
+- **Invoice date**: balnk by default and can changed as needed. If you do change this date, the date on **Due date** field will be recalculated based on the invoice date and the payment term.
 
-The invoice date is always initial, and you can change this date manually. If you do change this date, the date on **Due date** field will be recalculated based on the invoice date and the payment term.
+The default entry for the invoice date is always blank, and can entered or changed as needed. If you do change this date, the date on **Due date** field will be recalculated based on the invoice date and the payment term.
+
 Sometimes, vendor invoice could be in pending status for long time after the period close. When it’s ready for posting, the old posting date of past posting period is still used, which will not be possible since the period has been closed. As a result, AP clerk must manually change all the posting dates to the new posting period for all pending invoices created previously.
+
 This feature provides capability to let system automatically adjust the posting date according to business needs. 
 
 ## Parameter for automatically adjusting vendor invoice posting date
@@ -84,4 +87,4 @@ Two other parameters on the **Invoice** tab (**Account payable > Setup > Account
 
    If the **Check the invoice number used** parameter is set to **Reject duplicates within fiscal year**, the system uses the posting date to check for duplicate invoices during invoice posting.
 
-   If the **Require document date on vendor invoice** parameter is on, the **Invoice date on pending invoice header** field will be required. And if the Invoice date is later than the posting date, the system will display an error message.
+   If **Error option** is selected on the **Require document date on vendor invoice** parameter, the **Invoice date on pending invoice header** field will be required. If the Invoice date is later than the posting date, the system will display an error message.
