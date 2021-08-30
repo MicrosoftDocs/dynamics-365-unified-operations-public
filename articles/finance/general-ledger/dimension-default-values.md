@@ -146,4 +146,4 @@ When you return to the voucher on the journal, the **BUSINESSUNIT** dimension do
 If you're a developer and want to look at code for the defaulting process, review the following methods:
 
 - **LedgerJournalEngine.accountModified()** – This method is the main entry point for the primary account dimension defaulting process that is standard to all journals (and overridden by some journal types).
-- **LedgerJournalEngine.offsetAccountModified()** – The offset account dimension defaulting process.
+- **LedgerJournalEngine.offsetAccountModified()** – This method is the main entry point for the offset account dimension defaulting process.
