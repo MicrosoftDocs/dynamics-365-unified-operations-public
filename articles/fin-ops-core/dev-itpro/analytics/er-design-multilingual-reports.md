@@ -234,6 +234,10 @@ As described earlier in this topic, the **Label** and **Description** attributes
 - The value of an ER label that is linked to the **Label** attributes is stored in the **Label** field of the returned record.
 - The value of an ER label that is linked to the **Description** attributes is stored in the **Description** field of the returned record.
 
+## <a name=performance></a>Performance
+
+When you configure an ER format component to generate a report in the user's preferred [language](#language) or to import an inbound document the content of which is parsed by using the user's preferred language, it is recommended to enable the **Cache the preferred language of the current user for ER runs** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace. This option will improve overall execution performance especially for an ER format component containing multiple references to labels in ER formulas and bindings as well as many [validation](general-electronic-reporting-formula-designer.md#TestFormula) rules to generate user Infolog records in the user's preferred language.
+
 ## Additional resources
 
 - [Electronic Reporting overview](general-electronic-reporting.md)
