@@ -42,9 +42,9 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature. We may update this topic to include features that made it into the build after this topic was initially published. To determine how to turn on a feature, refer to the **Enabled by** column in the following table. For more information about how to use Feature management, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Feature area   | Feature                                                  | More information                         |  Enabled by             |
-|----------------|----------------------------------------------------------|--------------------------------------------------------------------|
-|  area         |   [release plan title](link to release plan)    |   [documentation title](link to doc if you know it)   |                          |
+| Feature area   | Feature                                                  | More information                                          |  Enabled by             |
+|----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
+|  add area      |   [add release plan title](link to release plan)         |   [add documentation title](link to doc if you know it)   |                         |
 
 
 
