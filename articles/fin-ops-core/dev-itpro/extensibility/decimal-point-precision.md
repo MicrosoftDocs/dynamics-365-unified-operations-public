@@ -61,7 +61,7 @@ If you require more than four decimals, extend the nuymber of decimals for the *
 
 You can extend the **PriceUnit** extended data type to change the number of decimals to a value other than the default two for price units.
 
-You can extend the **PriceQty** extended data type to change thethe number of decimals to a value other than the default two for price and charge quantities.
+You can extend the **PriceQty** extended data type to change the number of decimals to a value other than the default two for price and charge quantities.
 
 ### Overloaded data types
 
