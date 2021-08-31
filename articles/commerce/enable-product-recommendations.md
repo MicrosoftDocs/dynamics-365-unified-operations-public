@@ -50,7 +50,7 @@ This step is only required for customers running an infrastructure as a service 
 ### Setup
 
 1. In Commerce headquarters, search for the **Azure Active Directory applications** page.
-1. Verify that an entry exists for "RecommendationSystemApplication-1." If the entry does not exist, create it using the following information:
+1. Check that an entry exists for **RecommendationSystemApplication-1**. If an entry does not exist, create one using the following information:
 
     - **Client Id**: d37b07e8-dd1c-4514-835d-8b918e6f9727
     - **Name**: RecommendationSystemApplication-1
