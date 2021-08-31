@@ -245,9 +245,7 @@ Microsoft releases eight service updates to Finance and Operations apps every ye
 - November
 
 >[!NOTE]
->April and October are major feature release waves.
->[!NOTE]
->Customers may pause an individual service update for up to 3 consecutive update cycles.
+>April and October are major feature release waves.Customers may pause an individual service update for up to 3 consecutive update cycles.
 
 For more information, review the following topics:
 
