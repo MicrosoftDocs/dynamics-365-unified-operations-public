@@ -59,7 +59,7 @@ To associate countries or regions with an online store, follow these steps.
 1. Go to **Retail and Commerce \> Channels \> Online stores**, or search for "online stores" in the search box.
 1. Open the online channel that you want to associate countries or regions with.
 1. On the **Countries/Regions** FastTab, select **Add**, and then, in the **Country/region** field, select the country or region.
-1. Repeat these steps for any additional countries or regions that you want to associate with the online channel.
+1. Repeat these steps for any other countries or regions that you want to associate with the online channel.
 
 ![Example that shows countries and regions being mapped to an online store in Commerce headquarters.](./media/Geo_HQ-Country-Mapping.png)
 
