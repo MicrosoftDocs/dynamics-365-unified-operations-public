@@ -44,19 +44,41 @@ Together with business intelligence, infrastructure, compute, and database servi
 - [Visual Studio](https://visualstudio.microsoft.com)–based [Finance and Operations software development kit (SDK)](../../dev-itpro/dev-tools/developer-home-page.md) and [Azure DevOps build automation](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
 - Independent software vendor (ISV) solutions from [AppSource](https://appsource.microsoft.com/partners)
 
-Based on requirements, customers choose their solution approach. They work with their implementation partner to define, develop, and test their solution by using the tools and best practices that are provided in [Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md). There are three common scenarios:
+Based on requirements, customers choose their solution approach. They work with their implementation partner to define, develop, and test their solution by using the tools and best practices that are provided in [Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md). There are four common scenarios:
 
-- **Scenario 1** – Standard Finance and Operations configuration (no extensions)
-- **Scenario 2** – Finance and Operations configuration that includes customer-specific extensions
-- **Scenario 3** – Finance and Operations configuration that includes customer-specific extensions and one or more ISV solutions
+- Standard Finance and Operations apps configuration (no extensions)
+- Finance and Operations apps configuration that includes one or more ISV solutions
+- Finance and Operations apps configuration that includes one or more customer-specific extensions
+- Finance and Operations apps configuration that includes a combination of customer-specific extensions and one or more ISV solutions
 
 Organizations can match their business growth by easily adding users and business processes through a simple, transparent subscription model. For more information, see the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365).
 
 ## Operating model
 
-The operating model of Finance and Operations apps defines specific roles and responsibilities for the customer, implementation partner, and Microsoft throughout the lifecycle of the service.
+The operating model of Finance and Operations apps defines specific roles and responsibilities for the Customer, Implementation Partner, and Microsoft throughout the lifecycle of the service.
 
-Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments in the Microsoft SaaS subscription. This management includes allocating the required system infrastructure to run the service and proactively communicating with customers about the service's health.
+### Microsoft Responsibilities
+
+Infrastructure Management. Including:
+- Security and isolation
+- Operating systems and virtualization
+- Servers, storage and networking
+- Data center power, networking, cooling
+
+Application Platform Management. Including:
+- 24/7 application monitoring and notifications
+- Diagnostics, platform updates, patches, service updates
+- Application routing, load balancing, site replication
+- Environment provisioning and management
+- Database management, HA/DR, scale, operations
+- Compute deployment, scale up, scale down
+
+
+Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments in the Microsoft SaaS subscription. This management includes allocating the required system infrastructure to run the service and proactively communicating with customers about the service's health. Specific responsibilities include:
+
+
+
+
 
 ![Implementation roles and responsibilities.](media/FO-Operating-Model.PNG)
 
