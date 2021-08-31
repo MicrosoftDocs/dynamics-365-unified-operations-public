@@ -55,7 +55,7 @@ Organizations can match their business growth by easily adding users and busines
 
 ## Operating model
 
-The operating model of Finance and Operations apps defines specific roles and responsibilities for the Customer, Implementation Partner, and Microsoft throughout the lifecycle of the service.
+The operating model of Finance and Operations apps defines specific roles and responsibilities for the Customer, Implementation Partner, and Microsoft throughout the lifecycle of the service. For more information, see [Cloud operations and servicing](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
 
 ### Customer activities
 
@@ -83,8 +83,6 @@ Microsoft manages the Finance and Operations service by deploying, actively moni
 - Environment provisioning and management
 - Database management, HA/DR, scale, operations
 - Compute deployment, scale up, scale down
-
-For more information, see [Cloud operations and servicing](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
 
 ## System configuration
 
@@ -136,21 +134,21 @@ This section describes some typical environment and data management events that 
 
 LCS provides [self-service tools](../../dev-itpro/deployment/infrastructure-stack.md) and [database movement operations](../../dev-itpro/database/dbmovement-operations.md) that are used to perform environment and data management tasks. Here are some examples:
 
-- **Event:** [Requesting a production instance](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment)
+**Event:** [Requesting a production instance](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment)
 
-    - Complete the [Go-live checklist](../imp-lifecycle/prepare-go-live.md#fasttrack-go-live-assessment), and submit it to the [Microsoft FastTrack](/dynamics365/fasttrack/) team.
-    - Complete the [LCS Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) before you request a production instance.
-    - Complete all the implementation tasks that are specified in the [LCS methodology](../../dev-itpro/lifecycle-services/create-methodology.md).
+- Complete the [Go-live checklist](../imp-lifecycle/prepare-go-live.md#fasttrack-go-live-assessment), and submit it to the [Microsoft FastTrack](/dynamics365/fasttrack/) team.
+- Complete the [LCS Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) before you request a production instance.
+- Complete all the implementation tasks that are specified in the [LCS methodology](../../dev-itpro/lifecycle-services/create-methodology.md).
 
-- **Event:** [Copying a sandbox database to a production instance](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md)
+**Event:** [Copying a sandbox database to a production instance](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md)
 
-    Note that you perform this task when you're ready to do a mock go-live or an actual go-live cutover.
+- Note that you perform this task when you're ready to do a mock go-live or an actual go-live cutover.
 
-- **Event:** [Maintenance mode](../../dev-itpro/sysadmin/maintenance-mode.md)
+**Event:** [Maintenance mode](../../dev-itpro/sysadmin/maintenance-mode.md)
 
-    1. Turn on maintenance mode in LCS.
-    2. Complete the required maintenance.
-    3. Turn off maintenance mode in LCS.
+1. Turn on maintenance mode in LCS.
+2. Complete the required maintenance.
+3. Turn off maintenance mode in LCS.
 
 ### Environment and data management events for non-production instances
 
