@@ -1,0 +1,197 @@
+This article provides information about how to setup and submit parking slips
+and transfer orders with Carta de Porte Complemento. Carta de Porte Complemento
+is mandatory for taxpayers who transport goods and merchandise in the national
+territory from October 1st, 2021.
+
+A user can fill in transportation information in **Transportation details** form
+from:
+
+-   A sales order record including sales orders for the project (Accounts
+    receivable \> Orders \> All sales orders, Pick and Pack)
+
+-   A transfer order (Inventory management \> Outbound orders \> Transfer
+    orders, Ship.
+
+-   A shipment (Inventory management \> Outbound orders \> Shipments)
+
+-   Project requirements (Project management and accounting \> Item tasks \>
+    Project requirements, Active pane \> Manage)
+
+*Note.* A user can overview transportation information in **CFDI - Packing Slip
+Electronic Invoices** and **CFDI - Invent Transfer Electronic Invoices** page
+lists
+
+# Filling Transportation details form 
+
+![Graphical user interface Description automatically generated](media/ec4c376270ea02ef7f5f9ee44c6476c6.png)
+
+Mandatory fields for filling (highlighted by red color):
+
+**General** FastTab
+
+-   Permission type
+
+-   Transportation permission ID
+
+-   Distance and Hours
+
+**Vehicle** FastTab
+
+1.  Truck
+
+-   Registration number
+
+-   Federal motor transport configuration
+
+-   Model year
+
+1.  Driver
+
+-   RFC number or Registration number and the country for foreigners
+
+-   Driver license
+
+Fill in trailer information, if a trailer is used in transportation of goods:
+
+1.  Trailer
+
+-   Trailer registration number
+
+-   Trailer type
+
+*Note*. If there is additional trailer and/ or an additional driver, fill in the
+similar information too.
+
+Fields for a truck, a trailer, and a driver (except Federal motor transport
+configuration) can be filled in manually or using information from fixed asset
+records and from worker records (see Fixed assets, Workers).
+
+# Posting packing slips and shipping transfer order with Carta de Porte complement
+
+If a user selects **Enable CFDI packing slip** in the **Packing slip posting**
+or in the **Shipment** form, the **Generate transportation note** is selected
+automatically but the user can unselect this parameter. When **Generate
+transportation note** is selected it means that Carta de Porte complement will
+be included in xml file.
+
+![Graphical user interface, application Description automatically generated](media/61ea24857c32161a8e59e0b302e08dd0.png)
+
+![Graphical user interface, application, Word Description automatically generated](media/0ca53dfec475f03819a42e54c6f34f2f.png)
+
+# Setup
+
+## Catalogs
+
+Set up the following catalogs for fillings the **Permission type**, **Trailer
+type** and **Federal motor transport configuration** fields:
+
+Organization administration \> Setup \> EInvoice \> SAT classification \>
+Transportation
+
+-   Trailer type (SAT catalog is c_SubTipoRem)
+
+-   Permission type (SAT catalog is c_TipoPermiso)
+
+-   Federal motor transport configuration (SAT catalog is
+    c_ConfigAutotransporte)
+
+## Permission number
+
+Set up **Transportation permission ID** for filling the same field in the
+**Transportation detail** form:
+
+Organization administration \> Organizations \> Legal entities, **Transportation
+permissions** FastTab
+
+-   Fill in the permission number (provided by the SCT) for transportation
+    permission types.
+
+## Items
+
+Fill in **Net weight** and **Tare weight** (if any). **Gross weight** is filled
+in automatically (Product information management \> Products \> All released
+products, open Item record, **Manage inventory** FastTab). **Gross weight**
+values are output in xml file and should be filled.
+
+## Distance and time
+
+To speed up filling distance and transportation time in the **Transportation
+details** form, a user can set up distance and time between the shipment and
+delivery spots:
+
+Organization administration \> Setup \> EInvoice
+
+-   Transportation spots
+
+-   Transit time and distance (between pick up and drop off spots)
+
+Transportation spots are all shipment and delivery points. They can have
+different types:
+
+-   Customer
+
+-   Warehouse
+
+-   Border, if goods are delivered to border
+
+-   Other
+
+*Note*. This step can be skipped and in this case a user should fill in the
+distance and the transportation time manually in the **Transportation details**
+form. If this setting is executed a user can select pick up and drop off spots
+in the **Transportation details** form and the distance and the time are filling
+automatically.
+
+## Fixed assets
+
+If the company uses Fixed asset module a user can fill in information in the
+fixed asset record for vehicles and/or trailer which can be used when filling
+transportation information in **Transportation details** form. This information
+is needed for Carta de Porte Complemento.
+
+Open Fixed assets \> Fixed assets \> Fixed assets, **Technical information**
+FastTab
+
+**SAT classification** field group
+
+-   Vehicle type: Truck or Trailer
+
+-   Federal motor transport configuration (for truck)
+
+-   Trailer type
+
+**Model** field group
+
+-   Model year
+
+-   Serial number
+
+## Workers
+
+For filling Driver FRC number/ Registration number, license open Human resources
+\> Workers \> Employees/ Contractors/ Workers, Action pane \> Personal
+information \> Identification numbers.
+
+Identification type should have corresponding type in the field Identification
+type. For example, for driver license identification type should have value
+**Driver license**.
+
+A user can fist fill in Identification types (Human resources \> Setup \>
+Identification types) for RFC number, Registration number and Driver’s license:
+
+![](media/7139899a82c20418280154b68b8f9d65.png)
+
+## Hazardous materials
+
+If the company transport hazardous materials the feature **Hazardous materials
+product information and shipping documentation** should be enabled.
+
+How to enabling a feature see [Feature management overview - Finance &
+Operations \| Dynamics 365 \| Microsoft
+Docs](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+
+After enabling this feature, set **Hazardous materials** option to **Yes**
+(Product information management \> Products \> All released products, open Item
+record, **Manage inventory** FastTab). Then fill in hazardous material
+information: Registration code and Packing group (Action pane **Manage
+inventory** \> **Compliance** group).
