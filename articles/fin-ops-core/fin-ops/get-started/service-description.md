@@ -50,10 +50,6 @@ Based on requirements, customers choose their solution approach. They work with 
 - **Scenario 2** – Finance and Operations configuration that includes customer-specific extensions
 - **Scenario 3** – Finance and Operations configuration that includes customer-specific extensions and one or more ISV solutions
 
-The following illustration shows these three scenarios.
-
-![Common configuration scenarios.](media/common-configuration-scenarios.png)
-
 Organizations can match their business growth by easily adding users and business processes through a simple, transparent subscription model. For more information, see the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365).
 
 ## Operating model
