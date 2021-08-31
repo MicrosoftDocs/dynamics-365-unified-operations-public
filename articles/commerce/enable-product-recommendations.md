@@ -72,7 +72,7 @@ To turn on product recommendations, follow these steps.
 
 > [!NOTE]
 > - The procedure above starts the process of generating product recommendation lists. It may take several hours before the lists are available and can be viewed at the point of sale (POS) or in Dynamics 365 Commerce.
-> - This configuration does not enable all recommendations features. More advanced features such as personalized recommendations, shop similar looks, and shop similar description  are controlled by dedicated feature management entries. For more information on enabling these features, see [Enable personalized recommendations](personalized-recommendations.md), [Enable "shop similar looks" recommendations](shop-similar-looks.md), and [Enable "shop similar description" recommendations](shop-similar-description.md).
+> - This configuration does not enable all recommendations features. Advanced features such as personalized recommendations, "shop similar looks," and "shop similar description" are controlled by dedicated feature management entries. For information on enabling these features in Commerce headquarters, see [Enable personalized recommendations](personalized-recommendations.md), [Enable "shop similar looks" recommendations](shop-similar-looks.md), and [Enable "shop similar description" recommendations](shop-similar-description.md).
 
 ## Configure recommendation list parameters
 
