@@ -229,9 +229,22 @@ The following table describes some typical scenarios and activities for the serv
 
 ## Service update strategy
 
-In accordance with the [software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md), Finance and Operations apps follow the Microsoft [Modern Lifecycle Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), which covers products that are continuously serviced and supported. The following illustration shows the process.
+In accordance with the [software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md), Finance and Operations apps follow the Microsoft [Modern Lifecycle Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), which covers products that are continuously serviced and supported. 
 
-![One Version process.](media/FO-OneVersion.PNG)
+Microsoft releases 8 service updates to Dynamics 365 Finance & Operations apps each calendar year on the following months:
+
+- January
+- February
+- April*
+- May
+- July
+- August
+- October*
+- November
+
+(Denote major feature release waves)
+
+Customers may pause an individual service update for up to 3 consecutive update cycles.
 
 For more information, see the following topics:
 
