@@ -4,7 +4,7 @@
 title: Set up a B2C tenant in Commerce
 description: This topic describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/11/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,6 +41,26 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
 
 > [!TIP]
 > You can further protect your site users and enhance the security of your Azure AD B2C tenants with Azure AD Identity Protection and Conditional Access. To review the capabilities available to Azure AD B2C Premium P1 and Premium P2 tenants, see [Identity Protection and Conditional Access for Azure AD B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
+
+## Dynamics environment prerequisites
+
+Before you begin, ensure that your Dynamics 365 Commerce environment and e-commerce channel are configured appropriately by fulfilling the following prerequisites.
+
+- Set the POS operations **AllowAnonymousAccess** value to "1" in Commerce headquarters:
+    1. Go to **POS Operations**.
+    1. In the operations grid, right-click and select **Personalize**.
+    1. Select **Add a field**.
+    1. In the list of available columns, select the **AllowAnonymousAccess** column to add it.
+    1. Select **Update**.
+    1. For the **612** "Customer add" operation, change **AllowAnonymousAccess** to "1."
+    1. Run the **1090 (Registers)** job.
+- Set the number sequence customer account **Manual** attribute to **No** in Commerce headquarters:
+    1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Accounts receivable parameters**.
+    1. Select **Number sequences**.
+    1. In the **Customer account** row, double-click the **Number Sequence Code** value.
+    1. On the **General** FastTab of the number sequence, set **Manual** to **No**.
+
+After deployment of your Dynamics 365 Commerce environment, it also is recommended to [Initialize seed data](enable-configure-retail-functionality.md) in the environment.
 
 ## Create or link to an existing AAD B2C tenant in the Azure portal
 
