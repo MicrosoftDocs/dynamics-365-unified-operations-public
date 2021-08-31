@@ -156,32 +156,32 @@ LCS provides [self-service tools](../../dev-itpro/deployment/infrastructure-stac
 
 LCS provides [self-service provisioning](../../dev-itpro/deployment/infrastructure-stack.md) and [database movement operations](../../dev-itpro/database/dbmovement-operations.md) that are used to perform environment and data management tasks. Here are some examples:
 
-- **Event:** [Deploying a new sandbox instance](../../dev-itpro/deployment/deployenvironment-newinfrastructure.md)
+**Event:** [Deploying a new sandbox instance](../../dev-itpro/deployment/deployenvironment-newinfrastructure.md)
 
-    - Make sure that all required instances have been [planned](../imp-lifecycle/environment-planning.md), and that the applicable add-on offers have been purchased.
-    - Run the deployment process in LCS.
-    - Complete all tasks that are specified in the LCS checklists.
+- Make sure that all required instances have been [planned](../imp-lifecycle/environment-planning.md), and that the applicable add-on offers have been purchased.
+- Run the deployment process in LCS.
+- Complete all tasks that are specified in the LCS checklists.
     
-    Note that a development environment is a virtual machine (VM) that has been [deployed to the customer's Azure subscription](../../dev-itpro/dev-tools/access-instances.md) and is managed by the customer.
+Note that a development environment is a virtual machine (VM) that has been [deployed to the customer's Azure subscription](../../dev-itpro/dev-tools/access-instances.md) and is managed by the customer.
 
-- **Event:** [Copying a golden configuration database from sandbox to production](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md)
+**Event:** [Copying a golden configuration database from sandbox to production](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md)
 
-    Note that you perform this task when you're ready to do a mock go-live or an actual go-live cutover.
+- Note that you perform this task when you're ready to do a mock go-live or an actual go-live cutover.
 
-- **Event:** [Restoring a production point-in-time backup to a non-production instance](../../dev-itpro/database/database-pitr-prod-sandbox.md)
+**Event:** [Restoring a production point-in-time backup to a non-production instance](../../dev-itpro/database/database-pitr-prod-sandbox.md)
 
-    - Run the [Refresh database](../../dev-itpro/database/database-refresh.md) option in LCS.
-    - Post-copy: Delete or obfuscate sensitive data, adjust environment-specific application configurations (such as integration endpoints), and enable or add users. Note that these changes are made by applying a [data package](../../dev-itpro/data-entities/data-entities-data-packages.md#import-a-data-package).
+- Run the [Refresh database](../../dev-itpro/database/database-refresh.md) option in LCS.
+- Post-copy: Delete or obfuscate sensitive data, adjust environment-specific application configurations (such as integration endpoints), and enable or add users. Note that these changes are made by applying a [data package](../../dev-itpro/data-entities/data-entities-data-packages.md#import-a-data-package).
 
-- **Event:** [Non-production instance database point-in-time restore](../../dev-itpro/database/database-point-in-time-restore.md)
+**Event:** [Non-production instance database point-in-time restore](../../dev-itpro/database/database-point-in-time-restore.md)
 
-    - Accept that the process can't be undone.
-    - Run the point-in-time restore operation in LCS.
+- Accept that the process can't be undone.
+- Run the point-in-time restore operation in LCS.
 
-- **Event:** Copying a Tier 2 sandbox database to a development sandbox for troubleshooting and [debugging](../../dev-itpro/database/dbmovement-scenario-debugdiag.md)
+**Event:** Copying a Tier 2 sandbox database to a development sandbox for troubleshooting and [debugging](../../dev-itpro/database/dbmovement-scenario-debugdiag.md)
 
-    - Run the database export operation in LCS on the Tier 2 sandbox environment.
-    - Import and update the database in the development environment.
+- Run the database export operation in LCS on the Tier 2 sandbox environment.
+- Import and update the database in the development environment.
 
 ## Data backup and retention
 
