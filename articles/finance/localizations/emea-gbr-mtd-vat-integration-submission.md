@@ -179,9 +179,9 @@ The **Action log** FastTab saves information about all the actions that are perf
 > [!IMPORTANT]
 > During a VAT obligations request or a VAT return request to HMRC, you might receive a "401" error that has the following message:
 >
-> > Access token cannot be refreshed. System administrator must consent to transmit information outside of Dynamics 365 for Finance and Operations via initialization 'Get authorization code' button on Web applications page.
+> > The access token can’t be refreshed. A system administrator must enable the interoperation with HMRC’s MTD API by selecting the **Get authorization code** button on the **Web applications** page. 
 >
-> In this case, the system administrator must [authorize your Finance environment to interoperate with HMRC's MTD web service](emea-gbr-mtd-vat-integration-authorization.md), and must consent to submitting both customer content and personal data to HMRC as part of the submission of VAT information to MTD VAT. Your privacy is important to us. To learn more, read our [privacy notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
+> For more information, see [Authorize your Finance environment to interoperate with HMRC's MTD web service](emea-gbr-mtd-vat-integration-authorization.md).
 >
 > ![Error message if system admin consent wasn't given.](media/uk-mtd-system-administrator-consent-log-error.png)
 
