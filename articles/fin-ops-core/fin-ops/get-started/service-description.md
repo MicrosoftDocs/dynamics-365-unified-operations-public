@@ -57,7 +57,18 @@ Organizations can match their business growth by easily adding users and busines
 
 The operating model of Finance and Operations apps defines specific roles and responsibilities for the Customer, Implementation Partner, and Microsoft throughout the lifecycle of the service.
 
-### Microsoft Responsibilities
+### Customer activities
+
+- User identity and security management
+- Define, develop and operate business processes
+- Define, develop, test, and operate extensions
+- Monitor and manage non-production deployments
+- Manage application updates and validate extensions
+- Manage ISV solutions and 3rd party integrations
+
+### Microsoft responsibilities
+
+Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments in the Microsoft SaaS subscription. This management includes allocating the required system infrastructure to run the service and proactively communicate with customers about the service's health. 
 
 Infrastructure Management. Including:
 - Security and isolation
@@ -72,15 +83,6 @@ Application Platform Management. Including:
 - Environment provisioning and management
 - Database management, HA/DR, scale, operations
 - Compute deployment, scale up, scale down
-
-
-Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments in the Microsoft SaaS subscription. This management includes allocating the required system infrastructure to run the service and proactively communicating with customers about the service's health. Specific responsibilities include:
-
-
-
-
-
-![Implementation roles and responsibilities.](media/FO-Operating-Model.PNG)
 
 For more information, see [Cloud operations and servicing](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
 
