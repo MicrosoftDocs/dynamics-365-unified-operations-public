@@ -32,85 +32,83 @@ ms.search.validFrom:
 
 This topic explains how to set up geo detection and redirection for your e-commerce site in Microsoft Dynamics 365 Commerce.
 
-The geo detection and redirection feature in Dynamics 365 Commerce enables you to detect your customers' geographic locations, and uses that information to suggest or redirect to the marketized and localized site that's most appropriate for them. You can choose one of two experiences for your customers who are requesting a site URL that is not associated with the country/region where they are located:
+The geo detection and redirection feature in Dynamics 365 Commerce lets you detect your customers' geographic locations, and then use that information to recommend the marketized and localized site that is most appropriate for each customer, or to redirect them to that site. You can choose one of two experiences for customers who request a site URL that isn't associated with the country or region where they are located:
 
-- Ask customers to choose a site or sites associated with their location, or to proceed to the site they originally requested.
-- Automatically redirect customers to the site associated with their country/region.
+- Prompt customers to select a site or sites that are associated with their location, or give them the option to proceed to the site that they originally requested.
+- Automatically redirect customers to the site that is associated with their country or region.
 
-For example, a customer in Canada is requesting a site that is not associated with Canada. The country/region picker module dialog box then displays the sites that have been configured for Canada, as shown in the following example illustration. When the customer selects an option, they are redirected to that site and their site preference is captured in a cookie so that they are not prompted again to select the site the next time they visit. 
+For example, a customer in Canada requests a site that isn't associated with Canada. In this case, the country/region picker module shows a dialog box that lists the sites that have been configured for Canada. In the example in the following illustration, the dialog box includes options for English and French sites for Canada.
 
-![Example of a region/language picker dialog box showing options for Canada English and Canada French](./media/Geo_Country-region-picker.png)
+![Example of a region/language picker dialog box that shows options for English and French sites for Canada.](./media/Geo_Country-region-picker.png)
+
+When the customer selects an option, they are redirected to that site. The customer's site preference is also captured in a cookie. Therefore, the customer won't be prompted to select a site again the next time that they visit.
 
 ## Enable geo redirection features in Commerce site builder
 
-To enable geo redirection for your site in Commerce site builder, go to **Site settings \> General** and turn on the **Enable geo redirection features** setting. 
+To enable geo redirection for your site in Commerce site builder, go to **Site settings \> General**, and turn on the **Enable geo redirection features** setting.
 
-> [!NOTE] 
-> The **Enable geo redirection features** setting requires that the **Enable location based store detection** setting is enabled beforehand. For more information, see [Enable location-based store detection](enable-store-detection.md). 
+> [!IMPORTANT]
+> Before you turn on the **Enable geo redirection features** setting, you must turn on the **Enable location based store detection** setting. For more information, see [Enable location-based store detection](enable-store-detection.md).
 
-## Associate countries/regions with online stores(s) in Commerce headquarters
+## Associate countries and regions with online stores in Commerce headquarters
 
-Countries and regions are associated with online stores (also know as online channels) in Commerce headquarters. When you associate a country with an online store, you are submitting that customers who reside in that country or region should view the site that is mapped to that online store. 
+Countries and regions are associated with online stores (also known as online channels) in Commerce headquarters. When you associate a country or region with an online store, you indicate that customers who reside in that country or region should view the site that is mapped to that online store. You can associate multiple countries and regions with an online store as you require.
 
-To associate a country with an online store, follow these steps.
+To associate countries or regions with an online store, follow these steps.
 
-1. Go to **Modules \> Retail and Commerce \> Channels \> Online stores**, or search for "online stores" in the search box. 
-1. Open the online channel to which you want to associate countries.
-1. Select the **Countries/Regions** FastTab.
-1. Select **+Add**, and then select the country/region from the dropdown list.
+1. Go to **Retail and Commerce \> Channels \> Online stores**, or search for "online stores" in the search box.
+1. Open the online channel that you want to associate countries or regions with.
+1. On the **Countries/Regions** FastTab, select **Add**, and then, in the **Country/region** field, select the country or region.
+1. Repeat these steps for any additional countries or regions that you want to associate with the online channel.
 
-![Example illustration showing countries/regions being mapped to an online store in Commerce headquarters](./media/Geo_HQ-Country-Mapping.png)
+![Example that shows countries and regions being mapped to an online store in Commerce headquarters.](./media/Geo_HQ-Country-Mapping.png)
 
-You can add multiple countries/regions to the online store as needed. 
-
-When you're finished associating countries/regions to the online store, run job 1070 (Channel configuration) in the **Distribution schedule** view at **Modules \> Retail and Commerce \> Retail and Commerce IT**. Once that job completes, the countries/regions you associated with your online store will be available on the **Channels** page under **Site settings** in site builder. 
+When you've finished associating countries and regions with the online store, go to **Retail and Commerce \> Retail and Commerce IT**, and then, in the **Distribution schedule** view, run job 1070 (**Channel configuration**). After that job is completed, the countries and regions that you associated with the online store will be available on the **Channels** page under **Site settings** in Commerce site builder.
 
 ## Configure geo redirection rules in Commerce site builder
 
-The countries/regions you make available to an online store in site builder can be mapped to the URLs defined on the **Channels** page. When you associate a country with a URL, geo redirection can verify that the URL requested by your customer is appropriate for the country/region they reside in, or recommend one or more URLs that you declare to be intended for their location. 
+The countries and regions that you make available to an online store in Commerce site builder can be mapped to the URLs that are defined on the **Channels** page. Then, when a customer requests a URL, geo redirection can verify that the requested URL is appropriate for the country or region where the customer resides. Alternatively, it can recommend one or more URLs that you specify for the customer's location.
 
-To associate countries/regions with site URLs, follow these steps.
+To associate countries and regions with site URLs, follow these steps.
 
-1. Go to  **Site settings \> Channels**.
+1. In Commerce site builder, go to **Site settings \> Channels**.
 1. Select the channel name, and then select the locale.
-1. Select one or more countries to associate with that URL. 
+1. Select one or more countries or regions to associate with the URL.
 1. Select **OK**.
-1. Select **Save and publish** to save your changes and publish them. 
+1. Select **Save and publish** to save your changes and publish them.
 
 <!--![Example showing countries/regions mapped to URLs in site builder](./media/Geo_Channels-config.png)-->
 
 ### Geo detection and redirection logic
 
-Geo detection and redirection in Dynamics 365 Commerce works by comparing a customer's country/region to the list of countries/regions that are mapped to URLs in the **Channels** page in site builder. 
+Geo detection and redirection in Dynamics 365 Commerce works by comparing a customer's country or region to the list of countries and regions that are mapped to URLs on the **Channels** page in Commerce site builder.
 
-When a customer requests a URL for your site, the system redirection logic determines whether the customer's country/region is mapped to the URL they are requesting. If it is, the customer continues on to the URL they requested. If not, redirection logic finds the URL or URLs that are mapped to their country/region and displays them to the customer as recommended URLs for their country/region. If automatic redirection is enabled for the customer's country/region, they will automatically be redirected to the best URL for their country/region. For more information about defining which URL is used for auto-redirection, see [Configure automatic redirection](#configure-automatic-redirection) below. 
+When a customer requests a URL for your site, the system redirection logic determines whether the customer's country or region is mapped to the requested URL. If it is, the customer continues to that URL. If it isn't, redirection logic finds the URLs that are mapped to the customer's country or region, and shows those URLs to the customer as recommended URLs. If automatic redirection is enabled for the customer's country or region, the customer is automatically redirected to the best URL for that country or region. For more information about how to define which URL is used for automatic redirection, see the [Configure automatic redirection](#configure-automatic-redirection) section later in this topic.
 
-The workflow illustration below shows the steps and decision points in the redirection logic.
+The following workflow illustration shows the steps and decision points in the redirection logic.
 
-![Workflow illustration showing the steps and decision points in the redirection logic](./media/Geo_Redirection-Logic.png)
+![Workflow illustration that shows the steps and decision points in the redirection logic.](./media/Geo_Redirection-Logic.png)
 
 ## Configure the country/region picker module
 
-The country/region picker module included in the Commerce module library displays recommended URLs to customers who request a URL that is not associated with their country/region. For information on configuring the country/region picker module, see [Country/region picker module](country-region-picker-module.md).  
+The country/region picker module that is included in the Commerce module library shows recommended URLs to customers who request a URL that isn't associated with their country or region. For information about how to configure the country/region picker module, see [Country/region picker module](country-region-picker-module.md).
 
 ## Configure automatic redirection
 
-You can choose to automatically redirect customers in certain countries/regions to a specific URL you specify rather than prompting them to choose one from the list. For example, if you want to automatically send customers who live in Japan to the site that is mapped to the channel and language for Japan, you would enable **Automatic auto redirection** in the channel where that URL is configured. After you save and publish that setting, customers in Japan will automatically be sent to that URL and will not be shown the country/region picker dialog box. 
+You can choose to have customers in specific countries or regions automatically redirected to a URL that you specify instead of prompting them to select a URL in the country/region picker dialog box. For example, you want to have customers who live in Japan automatically sent to the site that is mapped to the channel and language for Japan. In this case, you turn on the **Automatic auto redirection** setting in the channel where that URL is configured. After you save and publish your change, customers in Japan will automatically be taken to that URL and won't be shown the country/region picker dialog box.
 
-It is possible to associate two or more URLs with a country/region. When more than one URL is associated with a country/region, automatic redirection uses the URL for the locale that is specified as the default locale for that channel. 
+You can associate two or more URLs with a country or region. In this case, automatic redirection uses the URL for the locale that is specified as the default locale for the channel.
 
 ## Save customer site preferences
 
-When the **Enable geo redirection features** flag is turned on in site builder, geo redirection will save your customers' preferred sites. When a customer selects a recommended URL from the country/region picker dialog box, the URL will be written to the **\_msdyn365___site\_** cookie for the domain they're presently on before they are taken to their preferred site. The next time the customer requests the URL that previously displayed the country/region picker dialog box, they will be automatically redirected to their preferred site.
+When the **Enable geo redirection features** setting is turned on in Commerce site builder, geo redirection saves your customers' site preferences. Before a customer who selects a recommended URL in the country/region picker dialog box is taken to that site, the selected URL is written to the **\_msdyn365\_\_\_site\_** cookie for the domain that the customer is currently in. Then, the next time that the customer requests the URL that previously caused the country/region picker dialog box to appear, they are automatically redirected to their preferred site.
 
-The [Site selector module](site-selector.md) also writes the customer's site selection to the **\_msdyn365___site\_** cookie. We recommend that you configure the site selector module so that customers can change their preferred site. The site that customers select in the site selector module will be respected by the geo redirection logic. 
+The [site selector module](site-selector.md) also writes a customer's site selection to the **\_msdyn365\_\_\_site\_** cookie. We recommend that you configure the site selector module so that customers can change their preferred site. The geo redirection logic will respect the site that customers select in the site selector module.
 
 ## Additional resources
 
-[Site selector module](site-selector.md) 
+[Site selector module](site-selector.md)
 
 [Enable location-based store detection](enable-store-detection.md)
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
