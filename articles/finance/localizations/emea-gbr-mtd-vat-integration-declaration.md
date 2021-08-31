@@ -4,7 +4,7 @@
 title: VAT setup details for VAT declarations in the United Kingdom
 description: This topic provides details about the value-added tax (VAT) setup for VAT declarations in the United Kingdom (UK).
 author: liza-golub
-ms.date: 08/17/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -74,7 +74,7 @@ If your company is in Northern Ireland and provides services to counterparties i
 1. Go to **Workspaces** \> **Feature management**.
 2. Find **Company tax registration in customer invoices** in the feature list, and then select **Enable**.
 
-For more information about feature management and available options, see [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+For more information about feature management and available options, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 The **Company tax registration in customer invoices** feature lets you select the company tax registration ID when you post sales invoices or packing slips from the following sources:
 
