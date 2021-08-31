@@ -32,7 +32,9 @@ ms.search.validFrom:
 
 This topic explains how to set up geo detection and redirection for your e-commerce site in Microsoft Dynamics 365 Commerce.
 
-The geo detection and redirection feature in Dynamics 365 Commerce lets you detect your customers' geographic locations, and then use that information to recommend the marketized and localized site that is most appropriate for each customer, or to redirect them to that site. You can choose one of two experiences for customers who request a site URL that isn't associated with the country or region where they are located:
+The geo detection and redirection feature in Dynamics 365 Commerce lets you detect your customers' geographic locations, and then use that information to recommend the marketized and localized site that is most appropriate for each customer. Alternatively, you can have the customer automatically redirected to the most appropriate site.
+
+You can choose one of two experiences for customers who request a site URL that isn't associated with the country or region where they are located:
 
 - Prompt customers to select a site or sites that are associated with their location, or give them the option to proceed to the site that they originally requested.
 - Automatically redirect customers to the site that is associated with their country or region.
