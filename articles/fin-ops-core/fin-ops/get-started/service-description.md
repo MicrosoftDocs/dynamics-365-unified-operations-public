@@ -59,6 +59,8 @@ The operating model of Finance and Operations apps defines specific roles and re
 
 ### Customer activities
 
+Customers work with their Partner to implement their solution and use the tools and best practice templates provided in Lifecycle Services. Common activities include:
+
 - User identity and security management
 - Define, develop and operate business processes
 - Define, develop, test, and operate extensions
@@ -68,7 +70,7 @@ The operating model of Finance and Operations apps defines specific roles and re
 
 ### Microsoft responsibilities
 
-Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments in the Microsoft SaaS subscription. This management includes allocating the required system infrastructure to run the service and proactively communicate with customers about the service's health. 
+Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments in the Microsoft SaaS subscription. This management includes allocating the required system infrastructure to run the service and proactively communicate with customers about the service's health. Responsibilities include:
 
 **Infrastructure Management**
 - Security and isolation
@@ -257,11 +259,11 @@ For more information, see the following topics:
 
 ## Security and administrative access
 
-Administrative access to a Finance and Operations production environment is strictly controlled and logged. Customer data is handled in accordance with the Microsoft Online Services Terms. The customer's tenant administrator can access production instances or non-production instances, as described in the following table.
-
-For more information, see [Licensing terms and documentation](https://www.microsoft.com/licensing/product-licensing/products).
+Administrative access to a Finance and Operations production environment is strictly controlled and logged. Customer data is handled in accordance with the [Microsoft Online Services Terms](https://www.microsoft.com/licensing/terms/productoffering). 
 
 ### Customer administrative access
+
+The customer's tenant administrator can access production instances or non-production instances, as described in the following table:
 
 | Environment type | Purpose | Level of customer access |
 |---|---|---|
@@ -271,7 +273,7 @@ For more information, see [Licensing terms and documentation](https://www.micros
 
 ### Microsoft administrative access
 
-The following table shows the different levels of access for different Microsoft administrators.
+The following table shows the different levels of access for different Microsoft administrators:
 
 | Administrator | Customer data |
 |---|---|
@@ -286,7 +288,7 @@ Microsoft has invested in an extensive toolset that it can use to monitor and di
 
 | Microsoft responsibilities | Customer responsibilities |
 |---|---|
-| <ul><li>Monitor availability of the service.</li><li>Continuously monitor and alert through health metrics and watchdogs for critical components such as Application Object Server (AOS), Batch, Data Import/Export Framework (DIXF), Commerce, and Management Reporter.</li><li>Monitor for performance degradation that is caused by infrastructure services (such as Azure Active Directory \[Azure AD\] and Azure SQL).</li><li>If Microsoft determines that a single process or batch job is causing aberrations, that process or job will be thwarted after communication with the customer.</li></ul> | <ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues.</li><li>Application errors must be diagnosed by using the monitoring tools. Use these tools to diagnose user-reported performance aberrations.</li><li>Inform Microsoft if there is expected load on the system beyond projected peak usage.</li><li>If the applicable service is unavailable in the production instance, the customer can use LCS to report a [production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).</li></ul> |
+| <ul><li>Monitor availability of the service.</li><li>Continuously monitor and alert through health metrics and watchdogs for critical components such as Application Object Server (AOS), Batch, Data Import/Export Framework (DIXF), Commerce, and Management Reporter.</li><li>Monitor for performance degradation that is caused by infrastructure services (such as Azure Active Directory \[Azure AD\] and Azure SQL).</li><li>If Microsoft determines that a single process or batch job is causing aberrations, that process or job will be terminated after communication with the customer.</li></ul> | <ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues.</li><li>Application errors must be diagnosed by using the monitoring tools. Use these tools to diagnose user-reported performance aberrations.</li><li>Inform Microsoft if there is expected load on the system beyond projected peak usage.</li><li>If the applicable service is unavailable in the production instance, the customer can use LCS to report a [production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).</li></ul> |
 
 By submitting support requests online, via LCS, you enable Microsoft to deliver fast and deep technical expertise in the most effective and efficient manner. Although a phone option is available, it should be used only if the online option isn't available. For more information, see [Phone support options](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support).
 
