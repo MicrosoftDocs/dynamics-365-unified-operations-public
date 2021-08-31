@@ -2,9 +2,9 @@
 # required metadata
 
 title: Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment
-description: This topic explains how to enable and test Azure Data Lake Storage for a Dynamics 365 Commerce environment, which is a prerequisite for enabling product recommendations.
+description: This topic provides instructions on how to connect an Azure Data Lake Storage Gen 2 solution to a Dynamics 365 Commerce environment's Entity store. This is a required step before enabling product recommendations.
 author: bebeale
-ms.date: 04/13/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,24 +31,24 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic provides instructions on how to connect an Azure Data Lake Gen 2 storage for use with Entity Store in a Dynamics 365 Commerce environment. This is a required step before enabling product recommendations.
+This topic provides instructions on how to connect an Azure Data Lake Storage Gen2 solution to a Dynamics 365 Commerce environment's Entity store. This is a required step before enabling product recommendations.
 
-In the Dynamics 365 Commerce solution, the data necessary to compute recommendations, products and transactions, are aggregated in the environment's Entity store. To make this data accessible to other Dynamics 365 services, such as data analytics, business intelligence, and personalized recommendations, it is necessary to connect the environment to a customer-owned Azure Data Lake Storage Gen 2 solution.
+In the Dynamics 365 Commerce solution, the data necessary to compute recommendations, products, and transactions are aggregated in the environment's Entity store. To make this data accessible to other Dynamics 365 services, such as data analytics, business intelligence, and personalized recommendations, it is necessary to connect the environment to a customer-owned Azure Data Lake Storage Gen2 solution.
 
-Once the above steps have been completed, all customer data in Entity Store is automatically mirrored to the customer’s Azure Data Lake Gen 2. The recommendations stack will then be granted access to the same location, once recommendations features are enabled through the Feature Management workspace.
+After the steps above have been completed, all customer data in the environment's Entity store is automatically mirrored to the customer's Azure Data Lake Storage Gen 2 solution. When recommendations features are enabled via the Feature management workspace in Commerce headquarters, the recommendations stack will be granted access to the same Azure Data Lake Storage Gen2 solution.
 
-During the entire process customer data remains protected and under their control.
+During the entire process customers' data remains protected and under their control.
 
 ## Prerequisites
 
-Dynamics 365 Entity Store must be connected to an Azure Data Lake Gen 2 storage account and accompanying services.
+A Dynamics 365 Commerce environment's Entity store must be connected to an Azure Data Lake Gen Storage Gen2 account and accompanying services.
 
-For more information about Azure Data Lake Gen 2 and how to set it up, see [Azure Data Lake Storage Gen2 official documentation](https://azure.microsoft.com/pricing/details/storage/data-lake).
+For more information about Azure Data Lake Storage Gen2 and how to set it up, see [Azure Data Lake Storage Gen2 official documentation](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
 ## Configuration steps
 
-This section covers the configuration steps necessary for enabling Azure Data Lake Gen 2 storage in an environment as it relates to product recommendations.
-For a more in-depth overview of the steps required to enable Azure Data Lake Gen 2 storage, see [Make entity store available as a Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+This section covers the configuration steps necessary for enabling Azure Data Lake Storage Gen2 in an environment as it relates to product recommendations.
+For a more in-depth overview of the steps required to enable Azure Data Lake Storage Gen2, see [Make entity store available as a Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### Enable Azure Data Lake Storage in the environment
 
@@ -70,7 +70,7 @@ The following image shows an example Azure Data Lake Storage configuration.
 1. Test the connection to Azure Data Lake Storage using the **Test Azure Storage** link.
 
 > [!NOTE]
-> If either of these tests fail, double-check that all of the KeyVault information added above is correct, then try again.
+> If either of the tests above fail, confirm that all of the KeyVault information added above is correct and then try again.
 
 Once the connection tests are successful, you must enable automatic refresh for Entity store.
 
