@@ -24,6 +24,7 @@ ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: 10.0.23
 
 ---
+# Carta de Porte complement Version 1.0
 This topic provides information about how to setup and submit parking slips and transfer orders with Carta de Porte Complemento. Carta de Porte Complemento is mandatory for taxpayers who transport goods and merchandise in the national territory from October 1st, 2021.
 
 A user can fill in transportation information in **Transportation details** form from:
@@ -38,7 +39,7 @@ A user can fill in transportation information in **Transportation details** form
 
 >[!NOTE] A user can overview transportation information in **CFDI - Packing Slip Electronic Invoices** and **CFDI - Invent Transfer Electronic Invoices** page lists
 
-# Filling Transportation details form 
+## Filling Transportation details form 
 
 ![Transportation details](media/latam-mx-transportation-details.png)
 
@@ -79,7 +80,7 @@ Trailer
 
 Fields for a truck, a trailer, and a driver (except Federal motor transport configuration) can be filled in manually or using information from fixed asset records and from worker records (see Fixed assets, Workers).
 
-# Posting packing slips and shipping transfer order with Carta de Porte complement
+## Posting packing slips and shipping transfer order with Carta de Porte complement
 
 If a user selects **Enable CFDI packing slip** in the **Packing slip posting** or in the **Shipment** form, the **Generate transportation note** is selected automatically but the user can unselect this parameter. When **Generate transportation note** is selected it means that Carta de Porte complement will be included in xml file.
 
@@ -87,9 +88,9 @@ If a user selects **Enable CFDI packing slip** in the **Packing slip posting** o
 
 ![Shipment](media/latam-mx-shipment.png)
 
-# Setup
+## Setup
 
-## Catalogs
+### Catalogs
 
 Set up the following catalogs for fillings the **Permission type**, **Trailer type** and **Federal motor transport configuration** fields:
 
@@ -101,7 +102,7 @@ Organization administration \> Setup \> EInvoice \> SAT classification \> Transp
 
 -   Federal motor transport configuration (SAT catalog is c_ConfigAutotransporte).
 
-## Permission number
+### Permission number
 
 Set up **Transportation permission ID** for filling the same field in the **Transportation detail** form:
 
@@ -109,11 +110,11 @@ Organization administration \> Organizations \> Legal entities, **Transportation
 
 -   Fill in the permission number (provided by the SCT) for transportation permission types.
 
-## Items
+### Items
 
 Fill in **Net weight** and **Tare weight** (if any). **Gross weight** is filled in automatically (Product information management \> Products \> All released products, open Item record, **Manage inventory** FastTab). **Gross weight** value is output in xml file and should be filled.
 
-## Distance and time
+### Distance and time
 
 To speed up filling distance and transportation time in the **Transportation details** form, a user can set up distance and time between the shipment and delivery spots:
 
@@ -135,7 +136,7 @@ Transportation spots are all shipment and delivery points. Spots can have differ
 
 > [!NOTE] This step can be skipped and in this case a user should fill in the distance and the transportation time manually in the **Transportation details** form. If this setting is executed a user can select pick up and drop off spots in the **Transportation details** form and the distance and the time are filling automatically.
 
-## Fixed assets
+### Fixed assets
 
 If the company implemented the **Fixed assets** module, a user can fill in information in the fixed asset record for vehicles and/or trailer which can be used when filling transportation information in **Transportation details** form. This information is needed for Carta de Porte Complemento.
 
@@ -155,7 +156,7 @@ Open Fixed assets \> Fixed assets \> Fixed assets, **Technical information** Fas
 
 -   Serial number.
 
-## Workers
+### Workers
 
 For filling Driver FRC number/ Registration number, license open Human resources \> Workers \> Employees/ Contractors/ Workers, Action pane \> Personal information \> Identification numbers.
 
