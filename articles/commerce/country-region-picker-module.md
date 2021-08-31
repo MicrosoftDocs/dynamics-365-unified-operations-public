@@ -70,7 +70,7 @@ For each URL that you want to show and recommend to customers, follow these step
 1. Optional: Select an image from the media library.
 1. In the **Country URL** field, enter the URL. This URL must exactly match the URL that appears on the **Channels** page and is mapped to the channel, including the locale that is associated with the country or region.
 1. Select **OK**.
-1. Repeat these steps for any additional country URLs that you want the country/region picker module to show.
+1. Repeat these steps for any other country URLs that you want the country/region picker module to show.
 
 ## Additional resources
 
