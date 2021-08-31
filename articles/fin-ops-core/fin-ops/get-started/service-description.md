@@ -231,18 +231,19 @@ The following table describes some typical scenarios and activities for the serv
 
 In accordance with the [software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md), Finance and Operations apps follow the Microsoft [Modern Lifecycle Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), which covers products that are continuously serviced and supported. 
 
-Microsoft releases 8 service updates to Dynamics 365 Finance & Operations apps each calendar year on the following months:
+Microsoft releases eight service updates to Finance and Operations apps every year on the following months:
 
 - January
 - February
-- April*
+- April
 - May
 - July
 - August
-- October*
+- October
 - November
 
-(* - Denotes a major feature release wave)
+[!NOTE]
+April and October are major feature release waves.
 
 Customers may pause an individual service update for up to 3 consecutive update cycles.
 
@@ -252,6 +253,7 @@ For more information, see the following topics:
 - [Configure service updates through LCS](../../dev-itpro/lifecycle-services/configure-service-updates.md)
 - [Pause service updates through LCS](../../dev-itpro/lifecycle-services/pause-service-updates.md)
 - [Get notified about service updates through LCS](../../dev-itpro/lifecycle-services/notifications-service-updates.md)
+- [Dynamics 365 Roadmap](https://dynamics.microsoft.com/en-us/roadmap/overview/)
 
 ## Security and administrative access
 
@@ -263,7 +265,7 @@ For more information, see [Licensing terms and documentation](https://www.micros
 
 | Environment type | Purpose | Level of customer access |
 |---|---|---|
-| **Non-production**<br>Tier 1 sandbox | A non-production environment that customers deploy for development, demonstration, or training purposes. | A Tier 1 sandbox (also referred to as a cloud-hosted environment) is a customer-managed VM that is deployed to the customer's Azure subscription from LCS. Because it's a VM in the customer's Azure subscription, the customer has full administrative access to the environment via Remote Desktop. |
+| **Non-production**<br>Tier 1 sandbox | A non-production environment that customers deploy for development, demonstration, or training purposes. | A Tier 1 sandbox (also referred to as a cloud-hosted environment) is a customer-managed VM that is deployed to the customer's Azure subscription from LCS. Because it is a VM in the customer's Azure subscription, the customer has full administrative access to the environment via Remote Desktop. |
 | **Non-production**<br>Tier 2 (or higher) sandbox | A non-production environment that customers deploy for user acceptance testing, integration testing, training, staging, or any other pre-production scenario. | Tier 2 and higher sandboxes are deployed to the Finance and Operations SaaS subscription. Access to Azure SQL databases that are associated with the non-production environment is granted via [just-in-time access](../../dev-itpro/database/database-just-in-time-jit-access.md). Remote Desktop access isn't available. |
 | **Production** | A production environment is deployed when the project is [ready for initial go-live](/imp-lifecycle/environment-planning.md#production-system-readiness). | Production environments are deployed to the SaaS subscription. All access is through the browser, service endpoints, or LCS. |
 
