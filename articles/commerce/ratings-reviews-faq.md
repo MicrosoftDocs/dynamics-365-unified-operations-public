@@ -3,7 +3,7 @@
 title: Dynamics 365 Commerce Ratings and Reviews FAQ
 description: This topic provides answers to frequently asked questions regarding Dynamics 365 Commerce's Ratings and Reviews.
 author: gvrmohanreddy
-ms.date: 08/28/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,6 +24,9 @@ ms.dyn365.ops.version: 10.0.22
 ---
 
 # Dynamics 365 Commerce's Ratings and Reviews FAQ
+
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic provides answers to frequently asked questions regarding Microsoft Dynamics 365 Commerce's Ratings and Reviews.
 
