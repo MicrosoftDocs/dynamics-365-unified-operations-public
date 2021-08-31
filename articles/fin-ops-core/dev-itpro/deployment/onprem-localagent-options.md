@@ -62,5 +62,7 @@ This requires that a client (i.e. the FinancialReporting service) reach out to r
 
 Some onpremises environments are not allowed to reach out into the internet. As such they may not be able to carry out this check. It is possible to disable this check by updating **skipCRLCheck** from **false** to **true**.
 
+Support for this option was introduced in release X.
+
 > [!CAUTION]
 > Only enable this deployment option if you are fully aware of the security implications of disabling this check.
