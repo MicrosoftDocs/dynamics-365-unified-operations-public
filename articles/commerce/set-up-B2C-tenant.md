@@ -47,12 +47,12 @@ Dynamics 365 Commerce uses Azure AD B2C to support user credential and authentic
 Before you begin, ensure that your Dynamics 365 Commerce environment and e-commerce channel are configured appropriately by fulfilling the following prerequisites.
 
 - Set the POS operations **AllowAnonymousAccess** value to "1" in Commerce headquarters:
-    1. Go to **POS Operations**
+    1. Go to **POS Operations**.
     1. In the operations grid, right-click and select **Personalize**.
     1. Select **Add a field**.
-    1. Within the list of available columns, select the **AllowAnonymousAccess** column to add it.
+    1. In the list of available columns, select the **AllowAnonymousAccess** column to add it.
     1. Select **Update**.
-    1. For the **612** "Customer add" operation, change the **AllowAnonymousAccess** value to "1."
+    1. For the **612** "Customer add" operation, change **AllowAnonymousAccess** to "1."
     1. Run the **1090 (Registers)** job.
 - Set the number sequence customer account **Manual** attribute to **No** in Commerce headquarters:
     1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Accounts receivable parameters**.
