@@ -38,7 +38,7 @@ Finance and Operations apps are enterprise resource planning (ERP) software as a
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Together with business intelligence, infrastructure, compute, and database services, these apps enable organizations to run industry-specific and operational business processes. Supported by their implementation partner, customers determine the configuration of the business application logic that best suits their unique business processes. Functionality and business processes can be augmented or extended through one or a combination of the following solutions:
+Together with [business intelligence](https://docs.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview), [infrastructure](https://azure.microsoft.com/en-us/global-infrastructure/), [compute](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-overview), and [database services](https://docs.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview), these apps enable organizations to run industry-specific and operational business processes. Supported by their implementation partner, customers determine the configuration of the business application logic that best suits their unique business processes. Functionality and business processes can be augmented or extended through one or a combination of the following solutions:
 
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) tools
 - [Visual Studio](https://visualstudio.microsoft.com)–based [Finance and Operations software development kit (SDK)](../../dev-itpro/dev-tools/developer-home-page.md) and [Azure DevOps build automation](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
@@ -46,7 +46,7 @@ Together with business intelligence, infrastructure, compute, and database servi
 
 Based on requirements, customers choose their solution approach. They work with their implementation partner to define, develop, and test their solution by using the tools and best practices that are provided in [Microsoft Dynamics Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lcs.md). There are four common scenarios:
 
-- Standard Finance and Operations apps configuration (no extensions)
+- Standard Finance and Operations apps "out of the box" configuration (no extensions)
 - Finance and Operations apps configuration that includes one or more ISV solutions
 - Finance and Operations apps configuration that includes one or more customer-specific extensions
 - Finance and Operations apps configuration that includes a combination of customer-specific extensions and one or more ISV solutions
@@ -144,7 +144,7 @@ LCS provides [self-service tools](../../dev-itpro/deployment/infrastructure-stac
 
 **Event:** [Copying a sandbox database to a production instance](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md)
 
-- Note that you perform this task when you're ready to do a mock go-live or an actual go-live cutover.
+- Note that this task is performed for a mock go-live or an actual go-live cutover.
 
 **Event:** [Maintenance mode](../../dev-itpro/sysadmin/maintenance-mode.md)
 
@@ -166,16 +166,16 @@ Note that a development environment is a virtual machine (VM) that has been [dep
 
 **Event:** [Copying a golden configuration database from sandbox to production](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md)
 
-- Note that you perform this task when you're ready to do a mock go-live or an actual go-live cutover.
+- Note that this task is performed for a mock go-live or an actual go-live cutover.
 
 **Event:** [Restoring a production point-in-time backup to a non-production instance](../../dev-itpro/database/database-pitr-prod-sandbox.md)
 
 - Run the [Refresh database](../../dev-itpro/database/database-refresh.md) option in LCS.
-- Post-copy: Delete or obfuscate sensitive data, adjust environment-specific application configurations (such as integration endpoints), and enable or add users. Note that these changes are made by applying a [data package](../../dev-itpro/data-entities/data-entities-data-packages.md#import-a-data-package).
+- Post-copy: Delete or obfuscate sensitive data via scripts, adjust environment-specific application configurations (such as integration endpoints), and enable or add users. Note that these changes are made by applying a [data package](../../dev-itpro/data-entities/data-entities-data-packages.md#import-a-data-package).
 
 **Event:** [Non-production instance database point-in-time restore](../../dev-itpro/database/database-point-in-time-restore.md)
 
-- Accept that the process can't be undone.
+- Accept that the process cannot be undone.
 - Run the point-in-time restore operation in LCS.
 
 **Event:** Copying a Tier 2 sandbox database to a development sandbox for troubleshooting and [debugging](../../dev-itpro/database/dbmovement-scenario-debugdiag.md)
@@ -249,13 +249,14 @@ April and October are major feature release waves.
 
 Customers may pause an individual service update for up to 3 consecutive update cycles.
 
-For more information, see the following topics:
+For more information, review the following topics:
 
 - [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md)
 - [Configure service updates through LCS](../../dev-itpro/lifecycle-services/configure-service-updates.md)
 - [Pause service updates through LCS](../../dev-itpro/lifecycle-services/pause-service-updates.md)
 - [Get notified about service updates through LCS](../../dev-itpro/lifecycle-services/notifications-service-updates.md)
-- [Dynamics 365 Roadmap](https://dynamics.microsoft.com/en-us/roadmap/overview/)
+- [Test tools to validate service updates](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview)
+- [Dynamics 365 roadmap and release waves](https://dynamics.microsoft.com/en-us/roadmap/overview/)
 
 ## Security and administrative access
 
@@ -284,13 +285,13 @@ The following table shows the different levels of access for different Microsoft
 
 ## Monitoring
 
-Microsoft has invested in an extensive toolset that it can use to monitor and diagnose customers' production instances. Microsoft monitors customers' production environments 24 hours a day, 7 days a week. For more information, see [Production support and monitoring](../imp-lifecycle/production-support-monitoring.md).
+Microsoft has invested in an extensive toolset to monitor and diagnose customers' production instances. Microsoft monitors customers' production environments 24 hours a day, 7 days a week. For more information, see [Production support and monitoring](../imp-lifecycle/production-support-monitoring.md).
 
 | Microsoft responsibilities | Customer responsibilities |
 |---|---|
 | <ul><li>Monitor availability of the service.</li><li>Continuously monitor and alert through health metrics and watchdogs for critical components such as Application Object Server (AOS), Batch, Data Import/Export Framework (DIXF), Commerce, and Management Reporter.</li><li>Monitor for performance degradation that is caused by infrastructure services (such as Azure Active Directory \[Azure AD\] and Azure SQL).</li><li>If Microsoft determines that a single process or batch job is causing aberrations, that process or job will be terminated after communication with the customer.</li></ul> | <ul><li>Monitor changes to application configurations and extensions that can cause functional and performance issues.</li><li>Application errors must be diagnosed by using the monitoring tools. Use these tools to diagnose user-reported performance aberrations.</li><li>Inform Microsoft if there is expected load on the system beyond projected peak usage.</li><li>If the applicable service is unavailable in the production instance, the customer can use LCS to report a [production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).</li></ul> |
 
-By submitting support requests online, via LCS, you enable Microsoft to deliver fast and deep technical expertise in the most effective and efficient manner. Although a phone option is available, it should be used only if the online option isn't available. For more information, see [Phone support options](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support).
+By submitting support requests online, via LCS, customers enable Microsoft to deliver fast and deep technical expertise in the most effective and efficient manner. Although a phone option is available, it should only be used  if the online option is not available. For more information, see [Phone support options](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support).
 
 ## Incident management
 
@@ -298,7 +299,7 @@ Microsoft responds to and fixes incidents based on severity levels. Microsoft's 
 
 For more information about severity levels, see [this severity table](https://docs.microsoft.com/power-platform/admin/support-overview#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request).
 
-## Business continuity through HA and disaster recovery 
+## Business continuity through high availability and disaster recovery 
 
 Microsoft provides business continuity and disaster recovery for production instances of Finance and Operations apps in the event of Azure region–wide outages. For more information, see [Business continuity and disaster recovery](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
 
@@ -310,6 +311,8 @@ Microsoft provides business continuity and disaster recovery for production inst
     - Secondary region for the Azure SQL and Azure Blob Storage replications.
 
 The primary data stores are supported for replication. Therefore, components for each service, such as Management Reporter and entity store, use transformed data from the primary database. This data must be generated after the recovery site has been set up and the service has been started. Customer code artifacts and recovered data stores are used to redeploy the site. The redeployment enables state replication of the compute nodes, together with networking and other components, to use the recovered data stores to set up the secondary site. If disaster recovery is used to recover the customer's production instance, Microsoft and the customer will meet their [incident management](service-description.md#incident-management) responsibilities.
+
+As a cloud service provider, Microsoft's Disaster Recovery plans and procedures are examined regularly through System and Organization Controls (SOC) audits. These compliance audits attest to the technical and procedural process on Microsoft's cloud services, including Dynamics 365 Finance and Operations apps. [SOC compliance](https://docs.microsoft.com/en-us/compliance/regulatory/offering-soc-2) audit reports and all other Compliance Reports are available on [Microsoft Trust Center Compliance Offerings](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home).
 
 | Microsoft responsibilities | Customer responsibilities |
 |---|---|
