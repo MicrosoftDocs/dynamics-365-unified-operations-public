@@ -43,14 +43,14 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 
 The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plans](/dynamics365/release-plans) for official release dates for each feature. We may update this topic to include features that made it into the build after this topic was initially published.
 
-| Feature area | Feature | More information |
-|----|----|----|
-| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  |
-| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  |
-| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  |
-| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  |
-| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  |
-| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  |
+| Feature area | Feature | More information |  Enabled by  |
+|----|----|----|------|
+| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  | For example, LCS or Feature management  |
+| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  | For example, LCS or Feature management  |
+| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  | For example, LCS or Feature management  |
+| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  | For example, LCS or Feature management  |
+| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  | For example, LCS or Feature management  |
+| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  | For example, LCS or Feature management  |
 
 
 ## Feature enhancements included in this release
