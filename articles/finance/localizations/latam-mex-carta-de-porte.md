@@ -47,33 +47,32 @@ Mandatory fields for filling (highlighted by red color):
 **General** FastTab
 
 -   Permission type
-
 -   Transportation permission ID
-
 -   Distance and Hours
 
 **Vehicle** FastTab
 
-1.  Truck
+Truck
 
 -   Registration number
-
 -   Federal motor transport configuration
-
 -   Model year
 
-1.  Driver
+Insurance
+
+- Vendor account
+- Vendor number
+
+Driver
 
 -   RFC number or Registration number and the country for foreigners
-
 -   Driver license
 
 Fill in trailer information, if a trailer is used in transportation of goods:
 
-1.  Trailer
+Trailer
 
 -   Trailer registration number
-
 -   Trailer type
 
 > [!NOTE]. If there is additional trailer and/ or an additional driver, fill in the similar information too.
@@ -134,11 +133,11 @@ Transportation spots are all shipment and delivery points. Spots can have differ
 
 -   Other
 
-> [!NOTE] This step can be skipped and in this case a user should fill in the distance and the transportation time manually in the **Transportation details** form. If this setting > is executed a user can select pick up and drop off spots in the **Transportation details** form and the distance and the time are filling automatically.
+> [!NOTE] This step can be skipped and in this case a user should fill in the distance and the transportation time manually in the **Transportation details** form. If this setting is executed a user can select pick up and drop off spots in the **Transportation details** form and the distance and the time are filling automatically.
 
 ## Fixed assets
 
-If the company uses Fixed asset module a user can fill in information in the fixed asset record for vehicles and/or trailer which can be used when filling transportation information in **Transportation details** form. This information is needed for Carta de Porte Complemento.
+If the company implemented the **Fixed assets** module, a user can fill in information in the fixed asset record for vehicles and/or trailer which can be used when filling transportation information in **Transportation details** form. This information is needed for Carta de Porte Complemento.
 
 Open Fixed assets \> Fixed assets \> Fixed assets, **Technical information** FastTab and fill in the following fields
 
@@ -162,14 +161,16 @@ For filling Driver FRC number/ Registration number, license open Human resources
 
 Identification type should have corresponding type in the field Identification type. For example, for driver license identification type should have value **Driver license**.
 
-A user can fist fill in Identification types (Human resources \> Setup \> Identification types) for RFC number, Registration number and Driver’s license:
+A user can fist set up Identification types (Human resources \> Setup \> Identification types) for RFC number, Registration number and Driver’s license:
 
 ![Identification numbers](media/latam-mx-identification-numbers.png)
 
 ## Hazardous materials
 
-If the company transport hazardous materials the feature **Hazardous materials product information and shipping documentation** should be enabled.
+If the company transports hazardous materials the feature **Hazardous materials product information and shipping documentation** should be enabled.
 
 How to enabling a feature see [Feature management overview - Finance & Operations \| Dynamics 365 \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 After enabling this feature, set **Hazardous materials** option to **Yes** (Product information management \> Products \> All released products, open Item record, **Manage  inventory** FastTab). Then fill in hazardous material information: Registration code and Packing group (Action pane **Manage inventory** \> **Compliance** group).
+
+![Hazardous materials](media/latam-mx-hazardous2.png)
