@@ -44,7 +44,7 @@ After your company is [signed up for the Making Tax Digital (MTD) service for va
 - [Set up document management parameters](#docmanagement).
 - [Set up security roles for electronic message processing](#processing).
 - [Set up security roles to interoperate with HMRC's MTD VAT web service](#application).
-- [Send fraud prevention data](#headers).
+- [Send fraud prevention data](#sending-headers).
 
 ## <a id="configurations"></a>Import and set up ER configurations
 
@@ -329,7 +329,7 @@ Follow these steps to set up security groups that must have access to HMRC's acc
 
 If security roles aren't defined for a web application, only a system admin can use the selected web application for interoperation.
 
-## <a id="headers"></a>Send fraud prevention data
+## <a id="sending-headers"></a>Send fraud prevention data
 
 [By law](https://developer.service.hmrc.gov.uk/guides/fraud-prevention/), header data must be submitted for the MTD VAT APIs in the UK. When the MTD VAT APIs are used, MTD-compatible software must submit HTTP fraud prevention headers. These headers might include location information and other personal identifiers, such as IP addresses. Your privacy is important to us. To learn more, read our [privacy notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
 
