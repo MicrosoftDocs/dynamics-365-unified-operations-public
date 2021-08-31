@@ -2964,6 +2964,8 @@
           href: localizations/tasks/mx-00010-e-invoicing-cfdi.md
         - name: Electronic invoices
           href: localizations/latam-mex-CFDI-electronic-invoices.md
+        - name: Carta de porte complement Version 1.0
+        - href: localizations/latam-mex-carta-de-porte.md
         - name: Electronic ledger accounting statements
           href: localizations/latam-mex-electronic-ledger-accounting-statements.md
         - name: Enter tax registration IDs for Mexican legal entities
