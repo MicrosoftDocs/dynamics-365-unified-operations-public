@@ -242,7 +242,7 @@ Microsoft releases 8 service updates to Dynamics 365 Finance & Operations apps e
 - October*
 - November
 
-(Denote major feature release waves)
+(* - Denotes a major feature release wave)
 
 Customers may pause an individual service update for up to 3 consecutive update cycles.
 
