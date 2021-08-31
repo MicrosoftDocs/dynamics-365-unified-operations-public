@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: Mexica
+ms.search.region: Mexico
 # ms.search.industry: 
 ms.author: v-oloski
 ms.search.validFrom: 2021-08-31
