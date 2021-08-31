@@ -26,7 +26,7 @@ This topic provides troubleshooting information for dual-write integration betwe
 
 You might receive the following error message when you create a row in a Finance and Operations app:
 
-> \[{\\"error\\":{\\"code\\":\\"0x80072560\\",\\"message\\":\\"The user is not a member of the organization.\\"}}\], The remote server returned an error: (403) Forbidden."}}".
+*\[{\\"error\\":{\\"code\\":\\"0x80072560\\",\\"message\\":\\"The user is not a member of the organization.\\"}}\], The remote server returned an error: (403) Forbidden."}}".*
 
 To fix the issue, follow the steps in [System requirements and prerequisites](requirements-and-prerequisites.md). To complete those steps, dual-write application users who were created in Dataverse must have the system admin role. The default owning team must also have the system admin role.
 
@@ -36,7 +36,7 @@ To fix the issue, follow the steps in [System requirements and prerequisites](re
 
 You might receive the following error message when you try to save table data in a Finance and Operations app:
 
-> Cannot save the changes to the database. Unit of Work can not commit transaction. Unable to write data to entity uoms. Writes to UnitOfMeasureEntity failed with error message Unable to sync with entity uoms.
+*Cannot save the changes to the database. Unit of Work can not commit transaction. Unable to write data to entity uoms. Writes to UnitOfMeasureEntity failed with error message Unable to sync with entity uoms.*
 
 To fix the issue, make sure that prerequisite reference data exists in both the Finance and Operations app and Dataverse. For example, if a customer record belongs to a specific customer group, make sure that the customer group record exists in Dataverse.
 
@@ -74,7 +74,7 @@ To fix the issue, you must enable the missing privilege by assigning the correct
 
 You might receive the following error message when you create data in a Finance and Operations app:
 
-> {"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Unable to generate payload for entity CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Payload creation failed with error Invalid URI: The URI is empty."}\],"isErrorCountUpdated":true}
+*{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Unable to generate payload for entity CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Payload creation failed with error Invalid URI: The URI is empty."}\],"isErrorCountUpdated":true}*
 
 Here is the error message in the customer engagement app:
 
@@ -114,7 +114,7 @@ To fix the issue, you must complete steps in both Dataverse and the Finance and 
 
 You might receive the following error message after you run a full database copy from one system to another and then try to run a database operation:
 
-> SecureConfig Organization (???) does not match actual CRM Organization (???).
+*SecureConfig Organization (???) does not match actual CRM Organization (???).*
 
 The error message is shown from the dual-write runtime plug-in to ensure that the dual-write configuration that is set up in one system can't be used in another system.
 
@@ -249,7 +249,7 @@ To fix the issue, follow these steps.
 
 For any transaction, a Finance and Operations app creates data in a batch and sends it as a batch to Dataverse. If two records are created as part of the same transaction, and they reference each other, you might receive an error message that resembles the following example in the Finance and Operations app:
 
-> Unable to write data to entity aaa_fundingsources. Unable to lookup ebecsfs_contracts with values {PC00...}. Unable to lookup aaa_fundingsources with values {PC00...}. Writes to aaa_fundingsources failed with error message Exception message: The remote server returned an error: (400) Bad Request.
+*Unable to write data to entity aaa_fundingsources. Unable to lookup ebecsfs_contracts with values {PC00...}. Unable to lookup aaa_fundingsources with values {PC00...}. Writes to aaa_fundingsources failed with error message Exception message: The remote server returned an error: (400) Bad Request.*
 
 To fix the issue, create entity relationships in the Finance and Operations app to indicate that the two entities are related to each other, and that the related records are handled in the same transaction.
 
@@ -267,7 +267,7 @@ In a Finance and Operations app, you might encounter errors that are related to 
 
 You might receive the following error message when you try to add an address for a customer or contact in Finance and Operations apps or Dataverse:
 
-> Unable to write data to entity msdyn_partypostaladdresses.Writes to DirPartyPostalAddressLocationCDSEntity failed with error message Request failed with status code BadRequest and CDS error code : 0x80040265 response message: An error occurred in plugin. A record that has the attribute values Location ID already exists. The entity key Location ID Key requires that this set of attributes contains unique values. Select unique values and try again.
+*Unable to write data to entity msdyn_partypostaladdresses.Writes to DirPartyPostalAddressLocationCDSEntity failed with error message Request failed with status code BadRequest and CDS error code : 0x80040265 response message: An error occurred in plugin. A record that has the attribute values Location ID already exists. The entity key Location ID Key requires that this set of attributes contains unique values. Select unique values and try again.*
 
 To fix the issue, install the dual-write orchestration package version (2.2.2.60), so that the keys on the **Address** table are defined as shown in the following table.
 
@@ -283,7 +283,7 @@ To fix the issue, install the dual-write orchestration package version (2.2.2.60
 
 You might receive the following error message when you try to add a customer in Dataverse:
 
-> "RecordError0":"Write failed for entity Customers V3 with unknown exception - Party record not found for party type 'Organization'"}.
+*"RecordError0":"Write failed for entity Customers V3 with unknown exception - Party record not found for party type 'Organization'"}.*
 
 When a customer is created in Dataverse, a new party number is generated. The error message is shown when the customer record, together with the party, is synced to Finance and Operations apps, but there is already a customer record that has a different party number.
 
@@ -293,7 +293,7 @@ To fix the issue, find the customer through party lookup. If the customer doesn'
 
 You might receive the following error message when you try to create a new customer, vendor, or contact in Dataverse:
 
-> Cannot update a party's type from 'DirOrganization' to 'DirPerson', a delete of the existing party followed by an insert with the new type should be performed instead.
+*Cannot update a party's type from 'DirOrganization' to 'DirPerson', a delete of the existing party followed by an insert with the new type should be performed instead.*
 
 In Dataverse, there is a number sequence on the **msdyn_party** table. When an account is created in Dataverse, a new party is created (for example **Party-001** of the **Organization** type). This data is sent to the Finance and Operations app. If the Dataverse environment is reset, or the Finance and Operations environment is linked to a different Dataverse environment, and then a new contact record is created in Dataverse, a new party value that starts with **Party-001** is created. This time, the party record that is created will be **Party-001** of the **Person** type. When this data is synced, Finance and Operations apps show the preceding error message, because party record **Party-001** of the **Organization** type already exists.
 
