@@ -70,6 +70,9 @@ Follow these steps to get an authorization code from HMRC.
     ![Setting Electronic reporting parameters.](media/uk-mtd-get-authorization-code.png)
 
 5. In the **System administrator consent** dialog box, select the checkbox to confirm that you want to enable interoperation with HMRC's MTD application programming interface (API) and use external web services. Your privacy is important to us. To learn more, read our [privacy notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
+
+    ![System administrator consent.](media/uk-mtd-sys-admin.png)
+
 6. Select **Agree** to continue, and then, in the HMRC portal, select **Continue** at the bottom of the page.
 7. In the HMRC portal for authorization, on the **Sign in** page, enter the **User ID** and **Password** values that you obtained from HMRC during your subscription for MTD. Then select **Sign in**.
 
