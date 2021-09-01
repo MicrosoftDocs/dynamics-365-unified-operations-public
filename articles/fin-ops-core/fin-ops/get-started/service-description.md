@@ -167,7 +167,8 @@ LCS provides [self-service provisioning](../../dev-itpro/deployment/infrastructu
 - Run the deployment process in LCS.
 - Complete all tasks that are specified in the LCS checklists.
     
-Note that a development environment is a virtual machine (VM) that has been [deployed to the customer's Azure subscription](../../dev-itpro/dev-tools/access-instances.md) and is managed by the customer.
+>[!NOTE]
+>A development sandbox environment is a virtual machine (VM) that is [deployed to the customer's Azure subscription](../../dev-itpro/dev-tools/access-instances.md) and managed by the customer.
 
 **Event:** [Copying a golden configuration database from sandbox to production](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md)
 
