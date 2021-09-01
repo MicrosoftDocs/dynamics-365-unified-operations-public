@@ -79,8 +79,6 @@ To associate countries and regions with site URLs, follow these steps.
 1. Select **OK**.
 1. Select **Save and publish** to save your changes and publish them.
 
-<!--![Example showing countries/regions mapped to URLs in site builder](./media/Geo_Channels-config.png)-->
-
 ### Geo detection and redirection logic
 
 Geo detection and redirection in Dynamics 365 Commerce works by comparing a customer's country or region to the list of countries and regions that are mapped to URLs on the **Channels** page in Commerce site builder.
