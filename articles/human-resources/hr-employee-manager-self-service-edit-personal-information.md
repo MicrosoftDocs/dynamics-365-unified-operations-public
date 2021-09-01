@@ -2,9 +2,9 @@
 # required metadata
 
 title: Edit personal information
-description: This article describes how to edit personal information in Employee and manager self service.
-author: andreabichsel
-ms.date: 03/19/2020
+description: This article describes how to edit personal information in Employee and Manager self service.
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-You can edit your personal information in Dynamics 365 Human Resources in the **Employee self service workspace**.
+You can edit your personal information in Dynamics 365 Human Resources in the **Employee self service** workspace.
 
 The personal information you can edit includes:
 
@@ -45,7 +45,7 @@ The personal information you can edit includes:
 >[!NOTE]
 >You might not be able to edit certain types of personal information, such as business contact details. For more information, see [Restrict editing of personal information](hr-employee-self-service-restrict-editing.md).
 
-Parameters set in the global address book determine the roles that can see your personal information.
+Parameters set on the **Global address book parameters** page determine which roles can see your personal information.
 
 1. In Human Resources, select **Employee self service**.
 

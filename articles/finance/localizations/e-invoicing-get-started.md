@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing
 description: This topic provides information that will help you get started with Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,14 +43,14 @@ Before you complete the procedures in this topic, the following prerequisites mu
 ## Import an Electronic invoicing feature from the Microsoft configuration provider 
 
 1. Sign in to your Regulatory Configuration Service (RCS) account.
-2. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
+2. In the **Globalization features** workspace, in the **Features** section, select the **Electronic invoicing** tile.
 3. Select **Import**, and then select **Synchronize**.
 4. Filter the **Configuration provider** column by the term **Microsoft**.
-5. Select the name of an Electronic invoicing feature from the table at the beginning of this topic, and then select **Import**.
+5. Select the name of an Electronic invoicing feature from the table, and then select **Import**.
 
 ## Create an Electronic invoicing feature under your organization provider
 
-1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
+1. In RCS, in the **Features** section of the **Globalization features** workspace, select the **Electronic invoicing** tile.
 2. Select **Add** > **Based on existing feature**, and in the **Name** field, enter the name of the Electronic invoicing feature.
 3. In the **Description** field, enter a description of the feature.
 4. In the **Base feature field**, select the imported Electronic invoicing feature from the Microsoft configuration provider.
@@ -116,7 +116,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
 
-7. For each table name you create, select and enter a context value according to the following table.
+6. For each table name you create, select and enter a context value according to the following table.
 
     | Feature name                         | Business document | Context |
     |--------------------------------------|-------------------|---------|
@@ -137,7 +137,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
 
-8. For each table name and context, select and enter a business document mapping value according to the following table.
+7. For each table name and context, select and enter a business document mapping value according to the following table.
 
     | Feature name                         | Business document | Business document mapping |
     |--------------------------------------|-------------------|---------------------------|
@@ -180,11 +180,11 @@ For the specific steps, see the "Get started" documentation that is available fo
 ## Deploy the Electronic invoicing feature to Connected application
 
 1. On the **Versions** tab, select a version of the Electronic invoicing feature that you want to deploy.
-4. Select **Deploy**.
-5. Set the **Deploy to connected application** option to **Yes**.
-6. On the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
-7. Set the **Deploy to service environment** option to **No**.
-10. Select **OK**.
+2. Select **Deploy**.
+3. Set the **Deploy to connected application** option to **Yes**.
+4. On the **Connect application** field, select the connection that is associated with your instance of Finance or Supply Chain Management.
+5. Set the **Deploy to service environment** option to **No**.
+6. Select **OK**.
 
 ## Turn on the Electronic invoicing feature in Finance or Supply Chain Management
 
@@ -216,7 +216,7 @@ For the specific steps, see the "Get started" documentation that is available fo
 ## Issue electronic invoices
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-2. On the **Record to include** FastTab, select **Filter**.
+2. On the **Records to include** FastTab, select **Filter**.
 3. Select **Add** to add a table name to the query filter.
 4. Select the table that contains the invoices.
 

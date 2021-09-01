@@ -4,7 +4,7 @@
 title: Create a layout container module
 description: This topic describes how to create, test, and preview a layout container module.
 author: samjarawan
-ms.date: 09/15/2020
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -60,14 +60,14 @@ The following example shows the addition of a **slots** section that contains tw
         "slot1": {
             "friendlyName": "Content Slot 1",
             "description": "Content to be rendered in container. Max 2",
-            "allowedTypes": ["*"],
+            "allowedTypes": "*",
             "max": 2,
             "min": 0
         },
         "slot2": {
             "friendlyName": "Content Slot 2",
             "description": "Content to be rendered in container. Max 2",
-            "allowedTypes": ["*"],
+            "allowedTypes": "*",
             "max": 2,
             "min": 0
         }

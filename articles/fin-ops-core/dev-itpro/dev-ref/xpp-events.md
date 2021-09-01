@@ -1,8 +1,8 @@
 ---
-title: X++ event terminology and keywords
+title: Events and delegates
 description: This topic describes event terminology and keywords in X++.
 author: robinarh
-ms.date: 06/18/2019
+ms.date: 08/27/2021
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
@@ -11,13 +11,15 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# X++ event terminology and keywords
+# Events and delegates
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes event terminology and keywords in X++. 
+This topic describes event terminology and keywords in X++.
 
-You can use the event design pattern to make your code more modular and reusable. The term *event* is a metaphor that explains how delegates are used. When something important occurs during a program run, other modules might have to process the occurrence. These important occurrences are known as *events*. When an event occurs, the program tells its notifier for the event that the notifier must send notifications about the event. A notification must be sent to all the event handlers that are subscribers of the notifier. When the program tells its notifier to send the notifications, we call that process *raising* an event. 
+You can use the event design pattern to make your code more modular and reusable. The term *event* is a metaphor that explains how delegates are used. When something important occurs during a program run, other modules might have to process the occurrence. These important occurrences are known as *events*. When an event occurs, the program tells its notifier for the event that the notifier must send notifications about the event. A notification must be sent to all the event handlers that are subscribers of the notifier. When the program tells its notifier to send the notifications, we call that process *raising* an event.
+
+A delegate can be defined in a table, form, or query, and not just in a class.
 
 The following table shows the terms that are used to describe the event metaphor.
 
@@ -41,7 +43,7 @@ The following table shows the keywords that describe the use of delegates.
 
 ## Example
 
-The two classes in the following code example demonstrate how to define an event, subscribe to an event, and raise an event. The **PointWithEvent** class defines a delegate, **moved**. The **move** method calls the **moved** delegate, thereby notifing any objects that have subscribed to the event. The **PointKeeper** class defines the **writeMove** method and assigns it as the event handler for the **moved** delegate of the **Point** instance created in the **createAndMove** method. 
+The two classes in the following code example demonstrate how to define an event, subscribe to an event, and raise an event. The **PointWithEvent** class defines a delegate, **moved**. The **move** method calls the **moved** delegate, thereby notifying any objects that have subscribed to the event. The **PointKeeper** class defines the **writeMove** method and assigns it as the event handler for the **moved** delegate of the **Point** instance created in the **createAndMove** method.
 
 ```xpp
 class PointWithEvent
@@ -91,5 +93,51 @@ class PointKeeper
 }
 ```
 
+## Event handlers and Pre/Post methods
+
+In legacy X++, it was possible to prescribe in metadata that certain methods were to be executed prior to and after the execution of a method. The information about what subscribes call was recorded on the publisher, which isn't useful in the environment. It's now possible to provide Pre and Post handlers through code, by providing the SubscribesTo attribute on the subscribers.
+
+### Example of pre and post methods
+
+```xpp
+[PreHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
+public static void PreHandler(XppPrePostArgs arguments)
+{
+    int arg = arguments.getArg("i");
+}
+
+[PostHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
+public static void PostHandler(XppPrePostArgs arguments)
+{
+    int arg = arguments.getArg("i");
+    int retvalFromMethod = arguments.getReturnValue();
+}
+
+public int Publisher(int i)
+{
+    return 1;
+}
+```
+
+This example shows a publishing method called Publisher. Two subscribers are enlisted with the PreHandlerFor and PostHandlerFor. The code shows how to access the variables, and the return values.
+
+This feature is provided for backward compatibility and, because the application code doesn't have many delegates, to publish important application events. Pre and Post handlers can easily break as the result of added or removed parameters, changed parameter types, or because methods are no longer called, or called under different circumstances. Attributes are also used for binding event handlers to delegates:
+
+```xpp
+[SubscribesTo(
+    classstr(FMRentalCheckoutProcessor),
+    delegatestr(FMRentalCheckoutProcessor, RentalTransactionAboutTobeFinalizedEvent))]
+public static void RentalFinalizedEventHandler(
+    FMRental rentalrecord, Struct rentalConfirmation)
+{
+}
+
+    delegate void RentalTransactionAboutTobeFinalizedEvent(
+        FMRental fmrentalrecord, struct RentalConfirmation)
+{
+}
+```
+
+In this case, the SubscribesTo attribute specifies that the method RentalFinalizedEventHandler should be called when the FmRentalCheckoutProcessor.RentalTransactionAboutToBeFinalizedEvent delegate is called. Since the binding between the publisher and subscribers is done through attributes, there's no way of specifying the sequence in which subscribers are called.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

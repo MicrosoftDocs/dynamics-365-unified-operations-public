@@ -3,8 +3,8 @@
 
 title: Set up training courses
 description: Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
-author: andreabichsel
-ms.date: 06/24/2019
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -85,7 +85,7 @@ For each course, you can complete the following tasks.
 - Define the minimum and maximum number of participants
 - Assign a course location and classroom
 - Recommend hotels to course participants
-- Create a course description, which you can then advertise on Employee self service
+- Create a course description, which you can then advertise on **Employee self service**
 
   >**Note**
   >You can delete a course only if no one has registered for it. 
