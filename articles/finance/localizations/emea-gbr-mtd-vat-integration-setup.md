@@ -66,7 +66,7 @@ To prepare Finance to interoperate with MTD VAT, import the following ER configu
 | 12     | MTD VAT authorization format (UK) | Format (exporting) | The request header parameters for the authorization code and access token. |
 | 13     | MTD VAT import token format (UK) | Format (importing) | The ER format that is used to import the access token that is received from HMRC into the database. |
 
-Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. If the latest configuration version contains references to the objects that aren't available in your Finance version, the import process will be locked for that configuration version. In this case, import the latest version of the configuration that is available for your Finance version.
+Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the number of the KB in the [Issue search of the LCS portal](https://lcs.dynamics.com/v2) to learn more about the changes introduced. If the latest configuration version contains references to the objects that aren't available in your Finance version, the import process will be locked for that configuration version. In this case, import the latest version of the configuration that is available for your Finance version.
 
 > [!NOTE]
 > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the following configurations:
@@ -115,14 +115,18 @@ For each value, users can define a set of sales tax codes together with a classi
 
 For more information about how boxes on the VAT declaration for the UK use the result values that are defined for the **ReportFieldLookup** application-specific parameter, see [VAT setup details for VAT declarations in the United Kingdom](emea-gbr-mtd-vat-integration-declaration.md).
 
-Before you use the **VAT Declaration JSON (UK)** and **VAT Declaration Excel (UK)** formats, set up the **ReportFieldLookup** application-specific parameter. You can download an example of this setup from the [Shared asset library in Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary).
+Before you use the **VAT Declaration JSON (UK)** and **VAT Declaration Excel (UK)** formats, set up the **ReportFieldLookup** application-specific parameter. You can download an example of this setup from the [Shared asset library in Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary) which includes setup for **Result values** provided in the table above in **Default setup of the classifier value** column.
 
-1. In LCS, go to the Shared asset library, and select **Data package** as the asset type. Then find the **UK MTD VAT ReportFieldLookup** file in the list of data package files, and download it to your computer.
+1. In LCS, go to the [Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary), and select **Data package** as the asset type. Then find the **UK MTD VAT ReportFieldLookup** file in the list of data package files, and download it to your computer.
 
     ![Downloading the UK MTD VAT ReportFieldLookup data package file from the LCS Shared asset library.](media/uk-mtd-reportfieldlookup.png)
 
 2. To set up the **ReportFieldLookup** application-specific parameter in the system, in Finance, open the **Electronic reporting** workspace, and then, in the configuration tree, under **Tax declaration model**, select the **VAT Declaration JSON (UK)** format.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you want to use. Usually, Finance runs the latest configuration version that is available in your system.
+
+    > [!NOTE]
+    > We recommend enabling **Use application specific parameters from previous versions of ER formats** feature in Feature management workspaces. When this feature is enabled, configured for the lower version of an ER format parameters automatically become applicable for the higher version of this format. When this feature is disabled, you must continue configuring application specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in Feature management workspaces starting from 10.0.23 version of Finance.
+
 4. To use the example of this setup that you downloaded from the Shared asset library as a preliminary step, select **Import** on the Action Pane, and then select the file that you downloaded.
 5. To manually define conditions, select **ReportFieldLookup** on the **Lookups** FastTab, and then specify criteria on the **Conditions** FastTab. You can also use the example file as a starting point to set up conditions. If you manually specify conditions for **ReportFieldLookup**, we recommend that you set up the **Other** value as the last condition in the list. Although this value isn't used in the **VAT Declaration JSON (UK)** format, it must be set to **Not blank** for both columns of the criteria.
 
@@ -156,6 +160,10 @@ To enable Finance to collect client and server public IP addresses, as of 10.0.2
 
 1. In the **Electronic reporting** workspace, in the configuration tree, under **Electronic Messages framework model**, select the **MTD VAT web request headers format (UK)** format.
 2. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you want to use. Usually, Finance runs the latest configuration version that is available in your system.
+
+    > [!NOTE]
+    > We recommend enabling **Use application specific parameters from previous versions of ER formats** feature in Feature management workspaces. When this feature is enabled, configured for the lower version of an ER format parameters automatically become applicable for the higher version of this format. When this feature is disabled, you must continue configuring application specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in Feature management workspaces starting from 10.0.23 version of Finance.
+
 3. On the **Lookups** FastTab, select **ExternalServiceEndpoints\_LOOKUP**. Then, on the **Conditions** FastTab, add criteria.
 4. In the **Lookup result** field, select **Gov-Client-Public-IP**. In the **ExternalServiceEndpoint** field, specify the HTTPS address of the external web service that will be called when a request is initiated to HMRC's MTD VAT API to collect the client public IP address. Your privacy is important to us. To learn more, read our [privacy notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
 5. In the **Regex** field, specify a regular expression that is specific to the external web service that you specified in the **ExternalServiceEndpoint** field, and that will enable the IP address in IPv4 or IPv6 format to be extracted from the response of the web service.
@@ -163,8 +171,6 @@ To enable Finance to collect client and server public IP addresses, as of 10.0.2
 7. In the **Lookup result** field, select **Gov-Vendor-Public-IP**. In the **ExternalServiceEndpoint** field, specify the HTTPS address of the external web service that will be called when a request is initiated to HMRC's MTD VAT API to collect the public IP address of the server. The length of this field's value is limited to 60 characters. Only HTTPS URLs are supported.
 
     The format for the Simple Traversal of User Datagram Protocol (UDP) through network address translation (NAT) server (STUN server) for Web Real-Time Communication (WebRTC) is just the STUN server address. When the endpoint doesn't start with **https://**, the system uses it as a STUN server.
-
-    Your privacy is important to us. To learn more, read our [privacy notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
 
 8. Optional: In the **Regex** field, specify a regular expression that is specific to the external web service that you specified in the **ExternalServiceEndpoint** field, and that will enable the IP address in IPv4 or IPv6 format to be extracted from the response of the web service. The length of this field's value is limited to 60 characters.
 
@@ -184,7 +190,7 @@ To enable Finance to collect client and server public IP addresses, as of 10.0.2
 The process of setting up the EM functionality for MTD VAT has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
 > [!NOTE]
-> Some records in the data entities in the package include a link to ER configurations. It's important that you import ER configurations into Finance before you start to import the data entities package.
+> Some records in the data entities in the package include a link to ER configurations. It's important that you [import ER configurations](#configurations) into Finance before you start to import the data entities package.
 
 1. In [LCS](https://lcs.dynamics.com/v2), go to the Shared asset library, and select **Data package** as the asset type. Then find **UK MTD VAT setup** in the list of data package files, and download it to your computer.
 2. After the **UK MTD VAT setup** file is downloaded, in Finance, select the company that you will interoperate with HMRC's MTD VAT API from, and then go to **Workspaces** \> **Data management**.
@@ -219,7 +225,7 @@ For more information about the predefined setup that is included in the data ent
 
 ## <a id="vrn"></a>Set up the VAT registration number of the company that is reporting VAT
 
-As of version 4 (KB4617940), the **UK MTD VAT setup** package provides the **Tax registration number** additional field. This field enables a VAT registration number that is independent of the legal entity's primary address and registration ID to be defined for the company that must report VAT returns by using the MTD VAT feature in Finance. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in the UK. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
+As of version 4 (KB4617940), the **UK MTD VAT setup** package provides the **Tax registration number** additional field for both **UK MTD VAT returns** and **UK MTD VAT TEST** EM processing. This field enables a VAT registration number that is independent of the legal entity's primary address and registration ID to be defined for the company that must report VAT returns by using the MTD VAT feature in Finance. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in the UK. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
 
 Follow these steps to define the VAT registration number that the MTD VAT feature in Finance must use to interoperate with HMRC's MTD VAT API and submit VAT returns.
 
@@ -248,8 +254,10 @@ To prepare Finance to report a VAT return for a VAT group, make sure that your b
 - The system correctly reflects all the tax transactions in accordance with the rules and principles of the UK.
 - Settlement periods for all the legal entities that are involved in the VAT group are identically defined according to the period intervals that are defined in the HMRC online account.
 - VAT settlement, and the [Settle and post sales tax](../general-ledger/tasks/create-sales-tax-payment.md) job, are completed in each subsidiary legal entity.
-- A **VAT 100** report is correctly generated in paper format in each subsidiary legal entity.
+- [Application-specific parameters for the VAT Declaration format](#declaration) are setup for **each** subsidiary legal entity and their setup configurations are completed for both **VAT Declaration JSON (UK)** and **VAT Declaration Excel (UK)** formats.
+- A [**VAT 100** report](#format) is correctly generated in paper format in each subsidiary legal entity.
 - One legal entity is set up for interoperation with HMRC according to the information in this topic, and users can request VAT obligations from this legal entity for the VAT group.
+- [Sales tax settlement periods for **Populate VAT return records** action](#settlement) are defined for each subsidiary legal entity. 
 
 To enable Finance to report VAT returns from multiple legal entities in the same system database, turn on the **Cross-company queries for the populate records actions** feature in Feature management. Go to **Workspaces** \> **Feature management**, find **Cross-company queries for the populate records actions** in the list, and then select **Enable now**.
 
@@ -270,7 +278,7 @@ Both the **UK MTD VAT returns** processing for production and the **UK MTD VAT T
 If your company must report a VAT return as a VAT group, make sure that all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vatgroup) section of this topic are met. Set up the sales tax settlement period for all the legal entities that are included in the VAT group.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**. On the **Populate records action** page, the **Datasources setup** grid includes a **Company** field. For existing records that were created during the general setup of the MTD VAT feature, this field shows the identifier of the current legal entity. It's assumed that the settlement period for the current legal entity was set up during the general setup of the MTD VAT feature.
-2. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting for the VAT group. Set the following fields.
+2. In the **Datasources setup** grid, add a line for each subsidiary legal entity that must be included in reporting for the VAT group. Set the following fields.
 
     | Field name             | Value |
     |------------------------|-------|
@@ -318,6 +326,8 @@ Follow these steps to limit access to the **UK MTD VAT returns** processing.
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
 2. Select the **UK MTD VAT returns** processing, and add the security groups that must work with this processing for real-life interoperation with the production HMRC environment. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
 
+If security roles aren't defined for a Electronic message processing, only a system admin can see this Electronic message processing on **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages** page.
+
 ## <a id="application"></a>Set up security roles to interoperate with HMRC's MTD VAT web service
 
 When an access token to each HMRC web application (production and sandbox) is retrieved from HMRC, the token is stored in the system database in an encrypted format. The access token must be used whenever a request of any type is sent to HMRC. For security reasons, access to the access token must be limited to the security groups that send requests to HMRC. If a user who isn't in one of those security groups tries to send a request to HMRC, a message notifies them that they aren't allowed to use the selected web application for interoperation.
@@ -325,7 +335,7 @@ When an access token to each HMRC web application (production and sandbox) is re
 Follow these steps to set up security groups that must have access to HMRC's access token for MTD VAT.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**.
-2. Select the web application that you want to define security groups for, and then add those security groups on the **Security roles** FastTab.
+2. Select the web application that you want to define security groups for, and then add those security groups which must be able to send requests to HMRC's API on the **Security roles** FastTab.
 
 If security roles aren't defined for a web application, only a system admin can use the selected web application for interoperation.
 
@@ -367,7 +377,7 @@ Each time that a user initiates a request to HMRC's MTD VAT API, Finance starts 
 > [!NOTE]
 > <a id="remark"></a>Finance provides an alternative to using external web addresses to retrieve public IP addresses of the client and server in cases where a system admin can manually identify and specify the values. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**. On the **Supplementary headers** FastTab, manually define the values for the **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers. The system will then use those values if external web services aren't defined as described in the [Set up application-specific parameters for MTD VAT web request headers format](#headers) section of this topic, or if the system didn't automatically obtain the IP addresses.
 >
-> The system admin can also define the value for the **Gov-Vendor-Forwarded** header. The system will then use that value if it was able to obtain the IP address automatically. If the value of the **Gov-Vendor-Forwarded** header isn't specified, its value will be composed from the values of the **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers.
+> The system admin can also define the value for the **Gov-Vendor-Forwarded** header. The system will then use that value if it was not able to obtain the IP address automatically. If the value of the **Gov-Vendor-Forwarded** header isn't specified, its value will be composed from the values of the **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers.
 >
 > ![Supplementary headers on the Web applications page.](media/uk-mtd-fp-manually.png)
 
