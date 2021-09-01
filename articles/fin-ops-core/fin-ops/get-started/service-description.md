@@ -144,7 +144,7 @@ LCS provides [self-service tools](../../dev-itpro/deployment/infrastructure-stac
 
 **Event:** [Copying a sandbox database to a production instance](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md)
 
-- Note that this task is performed for a mock go-live or an actual go-live cutover.
+- Performed for a mock go-live or an actual go-live cutover.
 
 **Event:** [Maintenance mode](../../dev-itpro/sysadmin/maintenance-mode.md)
 
@@ -166,7 +166,7 @@ Note that a development environment is a virtual machine (VM) that has been [dep
 
 **Event:** [Copying a golden configuration database from sandbox to production](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md)
 
-- Note that this task is performed for a mock go-live or an actual go-live cutover.
+- Performed for a mock go-live or an actual go-live cutover.
 
 **Event:** [Restoring a production point-in-time backup to a non-production instance](../../dev-itpro/database/database-pitr-prod-sandbox.md)
 
@@ -253,7 +253,7 @@ For more information, review the following topics:
 - [Configure service updates through LCS](../../dev-itpro/lifecycle-services/configure-service-updates.md)
 - [Pause service updates through LCS](../../dev-itpro/lifecycle-services/pause-service-updates.md)
 - [Get notified about service updates through LCS](../../dev-itpro/lifecycle-services/notifications-service-updates.md)
-- [Test tools to validate service updates](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview)
+- [Regression testing tools to validate service updates](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview)
 - [Dynamics 365 roadmap and release waves](https://dynamics.microsoft.com/en-us/roadmap/overview/)
 
 ## Security and administrative access
