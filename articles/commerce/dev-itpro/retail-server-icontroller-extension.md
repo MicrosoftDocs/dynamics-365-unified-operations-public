@@ -83,7 +83,7 @@ The following sample code creates a simple Retail Server API to return an entity
 ### Sample code for a controller class bounded to a custom entity
 
 > [!NOTE]
-> Extension code should not bound the existing OOB entity, such as Customer or Product.
+> Extension code should not bound to the existing entities such as Customer, Cart, or Product . If the API returns a collection, it must return only type IEnumerable<T>, retuning any other type like Dictionary <String, String>  is not supported. As a result, you may get an error such as “'System.Collections.Generic.Dictionary`2[System.String,System.String]' is not supported.” To return a collection, Commerce APIs uses PageResult<T>, which implements IEnumerable<T>. Follow this pattern to return the collection.
 
 ```csharp
 // New extended controller.
@@ -217,7 +217,7 @@ public static class CommerceRoles
 
 ### Support paging in Retail Server APIs
 
-Starting in release 10.0.18, if the API requires paging you can add the **QueryResultSettings** parameter to the API and pass the value from the client. **QueryResultSettings** contains **PagingInfo** and other parameters for records to fetch or skip.  
+Starting in release 10.0.19, if the API requires paging you can add the **QueryResultSettings** parameter to the API and pass the value from the client. **QueryResultSettings** contains **PagingInfo** and other parameters for records to fetch or skip.  
 
 The extension can pass **QueryResultSettings** to the CRT request, which the CRT request can use when there is a database query.
 

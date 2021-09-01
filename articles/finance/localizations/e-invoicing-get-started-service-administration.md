@@ -4,7 +4,7 @@
 title: Get started with Electronic invoicing service administration
 description: This topic explains how to get started with Electronic invoicing.
 author: gionoder
-ms.date: 05/24/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 10.0.12
 Before you complete the procedures in this topic, the following prerequisites must be in place:
 
 - You must have access to your Microsoft Dynamics Lifecycle Services (LCS) account.
-- You must have an LCS project that includes version 10.0.17 or later of Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Additionally, these apps must be deployed in one of the following Azure geographies:
+- You must have an LCS project that includes version 10.0.17 or later of Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. Additionally, these apps must be deployed in one of the following Azure geographies:
 
     - United States
     - Europe
@@ -50,20 +50,20 @@ Before you complete the procedures in this topic, the following prerequisites mu
 ## Install the add-in for microservices in Lifecycle Services
 
 1. Sign in to your LCS account, and on the LCS project dashboard, select an LCS project.
-2. In the project, on the environment dashboard, select your LCS deployment project. The project you select must must be running.
+2. In the project, on the **Environments** dashboard, select your deployed environment. The environment that you select must be running.
 3. On the **Power Platform Integration** tab, in the **Environment add-ins** field group, select **Install a new add-in**.
 4. Select **Electronic Invoicing**.
 5. In the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This is a fixed value.
-6. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account.
+6. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account. The Azure Active Directory (Azure AD) tenant that you specify should be the same tenant that is used for RCS.
 7. Review the terms and conditions, and then select the check box.
-8. Select **Install**.
+8. Select **Install**. Installation can take up to several minutes.
 
 
 ## Set up the parameters for RCS integration with Electronic invoicing
 
 1. Sign in to your RCS account.
-2. In the **Electronic reporting** workspace, in the **Related links** section, select **Electronic reporting parameters**.
-3. On the **e-Invoicing service** tab, in the **Service endpoint URI** field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.
+2. In the **Globalization features** workspace, in the **Related settings** section, select **Electronic reporting parameters**.
+3. On the **Electronic Invoicing** tab, in the **Service endpoint URI** field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.
 
     | Datacenter Azure geography | Service endpoint URI                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -72,15 +72,15 @@ Before you complete the procedures in this topic, the following prerequisites mu
     | United Kingdom             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Asia                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
-4. Verify that the **Application Id** field is set to **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
-5. In the **LCS Environment Id** field, enter the ID of your LCS environment.
+4. Verify that the **Application ID** field is set to **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value.
+5. In the **LCS Environment ID** field, enter the ID of your LCS environment.
 6. Select **Save**, and then close the page.
 
 ## Create Key Vault references
 
 1. Sign in to your RCS account.
 2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing** tile.
-3. On the **Environment setups** page, on the action Pane, select **Service environment**, and then select **Key Vault parameters**.
+3. On the **Environment setups** page, on the Action Pane, select **Service environments**, and then select **Key Vault parameters**.
 4. Select **New** to create a key vault reference.
 5. In the **Name** field, enter the name of the key vault reference. In the **Description** field, enter a description.
 6. In the **Key Vault URI** field, paste the key vault secret from Azure Key Vault. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -97,7 +97,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Create a digital certificate secret
 
-1. On the **Environment setups** page, on the action Pane, select **Service environment** and then select **Key Vault parameters**.
+1. On the **Environment setups** page, on the Action Pane, select **Service environment**, and then select **Key Vault parameters**.
 2. Select a **Key Vault reference** and then in the **Certificates** section, select **Add**.
 3. In the **Name** field, enter the name of the digital certificate secret. For more information, see [Create an Azure storage account and a key vault](e-invoicing-create-azure-storage-account-key-vault.md).
 4. In the **Description** field, enter a description.
@@ -116,17 +116,19 @@ Before you complete the procedures in this topic, the following prerequisites mu
 8. In the **User ID** field, enter the alias of the user. In the **Email** field, enter the user's email address.
 9. Select **Save**.
 10. If your country/region-specific invoices require a chain of certificates to apply digital signatures, on the Action pane, select **Key Vault parameters**, then select **Chain of certificates**, and follow these steps:
+
     1. Select **New** to create a chain of certificates.
     2. In the **Name** field, enter the name of the chain of certificate. In the **Description** field, enter a description.
     3. In the **Certificates** section, select **Add** to add a certificate to the chain.
     4. Use the **Up** or **Down** button to change the position of the certificate in the chain.
     5. Select **Save**, and then close the page.
     6. Close the page.
+
 11. On **Service environment** page, on the Action Pane, select **Publish** to publish the environment to the cloud. The value of the **Status** field is changed to **Published**.
 
 ## Create a connected application
 
-1. On the **Environment setups** page, on the action Pane, select **Connected applications**.
+1. On the **Environments setup** page, on the Action Pane, select **Connected applications**.
 2. Select **New** to create a connected application.
 3. In the **Name** field, enter the name of the application to connect.
 4. In the **Application** field, enter the URL of the Finance and Supply Chain Management environment to connect.
@@ -136,7 +138,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 
 ## Link connected applications to environments
 
-1. On the **Environment setups** page, select **New** to assign a connected application to an environment.
+1. On the **Environments setup** page, select **New** to assign a connected application to an environment.
 2. In the **Connected application** field, select a connected application.
 3. In the **Service environment** field, select a service environment.
 4. Select **Save**, and then close the page.
@@ -152,7 +154,7 @@ Before you complete the procedures in this topic, the following prerequisites mu
 ### Set up the service endpoint URL
 
 1. Go to **Organization administration \> Setup \> Electronic document parameters**.
-2. On the **Submission service** tab, in the **Service endpoint URL** field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.
+2. On the **Electronic invoicing** tab, in the **Endpoint URL** field, enter the appropriate service endpoint for your Azure geography, as shown in the following table.
 
     | Datacenter Azure geography | Service endpoint URI                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -164,15 +166,14 @@ Before you complete the procedures in this topic, the following prerequisites mu
 3. In the **Environment** field, enter the name of the service environment published in Electronic invoicing.
 4. Select **Save**, and then close the page.
 
-### Enable Flighting keys
+### Enable Flighting keys for Finance or Supply Chain Management version 10.0.17
 
-Enable Flight keys for  Microsoft Dynamics 365 Finance or  Microsoft Dynamics 365 Supply Chain Management versions 10.0.17 or earlier. 
 1. Execute the following SQL command:
 
     INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)
     
     INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('ElectronicInvoicingServiceIntegrationFeature', 1)
 
-2. Perform an IISreset command for all AOS's.
+2. Perform an IISreset command for all AOSs.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

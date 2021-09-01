@@ -3,7 +3,7 @@
 
 title: Security and data entities
 description: This topic provides information about security for data entities.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 17852
 ms.assetid: a9ede141-56fa-4310-997d-aeef184f7a52
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

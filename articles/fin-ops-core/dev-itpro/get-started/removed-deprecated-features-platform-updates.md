@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 05/26/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,7 +38,29 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
-## Feature deprecation notice effective May 2021
+## Feature deprecation effective August 2021
+
+### Microsoft Azure SQL reports in Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are deprecating some SQL reports in LCS. You will no longer need to monitor the reports as this feature has been replaced by other services. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
+| **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
+| **Status**                         | Deprecated: Planned removal date in October 2021. |
+
+### Azure SQL actions in LCS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are deprecating some SQL actions in LCS.  |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | SQL actions: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
+| **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
+| **Status**                         | Deprecated: Planned removal date in October 2021. |
+
+## Feature deprecation effective May 2021
 
 ### Globalization portal in Lifecycle Services (LCS)
 

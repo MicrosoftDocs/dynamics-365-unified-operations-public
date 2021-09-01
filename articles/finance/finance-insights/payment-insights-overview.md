@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customer payment predictions (preview)
+title: Customer payment predictions
 description: This topic describes the payment predictions capability that can help you better understand a customer's typical payment practices. This feature can also help identify circumstances that should cause you to start collection processes earlier than you might otherwise start them.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 ---
 
-# Customer payment predictions (preview)
+# Customer payment predictions
 
 [!include [banner](../includes/banner.md)]
 

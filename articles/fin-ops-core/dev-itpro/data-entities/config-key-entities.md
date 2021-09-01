@@ -3,7 +3,7 @@
 
 title: Configuration keys and data entities
 description: This topic describes the relationship between configuration keys and data entities.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 05/10/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 25341
 ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 

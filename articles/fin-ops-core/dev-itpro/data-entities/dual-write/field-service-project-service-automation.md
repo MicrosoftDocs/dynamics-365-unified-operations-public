@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Support for Field Service and Project Service Automation solutions
 description: This topic provides information about the support for Field Service solutions and Project Service Automation solutions.
 author: RamaKrishnamoorthy
 ms.date: 01/09/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 21311
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Support for Field Service and Project Service Automation solutions

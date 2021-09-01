@@ -1,26 +1,13 @@
 ---
-
 title: Enable table maps for dual-write
 description: This topic describes how the table maps work for dual-write.
-author: sabinn-msft
+author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-douklo
-# ms.tgt_pltfrm: 
-ms.custom:
-ms.assetid: 
+ms.reviewer: rhaertle
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -37,7 +24,7 @@ When you enable a table map for dual-write, it begins at the **Not running** sta
 
 While the status is **Running**, you can pause a table. All changes are then queued until you resume. When you resume, the table goes into "catch-up mode," where all the queued changes are played back.
 
-The following illustration show an example of a table that is paused.
+The following illustration shows an example of a table that is paused.
 
 ![Paused table.](media/stop-pause-entity.png)
 

@@ -126,6 +126,9 @@ To review affected transactions, block selected transactions, and send related n
     - **View history** – Open a history of actions that have been taken on the selected transaction by using the **Business impact to open transactions** dialog box. (For example, the history shows whether notifications have been sent or transactions have been blocked.) 
     - **View all transactions** – Open the full list of all transactions, not just the open transactions.
 
+> [!IMPORTANT]
+> The **Notify production** button is available only if the *Engineering notifications for production* feature is turned on in your system. For instructions, see [Engineering change management overview](product-engineering-overview.md).
+
 #### <a name="review-notifications"></a>Review and process change notifications for transactions
 
 You can read and process the change notifications that you receive in the following ways:
@@ -135,6 +138,9 @@ You can read and process the change notifications that you receive in the follow
 - For production orders, you can choose to review only the change notifications that apply to the production resources that you manage. In the **Production floor management** workspace, on the Action Pane, select **Configure my workspace** to filter the page so it shows only information about the production units, groups, and/or resources that you manage. In the **Summary** section, a tile that is named **Production orders with changed products** shows a count of notifications that match your filter settings. Select this tile to open the **Engineering notifications** page, which shows the full list of transactions that meet the criteria of your filter.
 
 As you're reviewing production order notifications on the **Engineering notifications** page, you can follow links to related change orders or production orders by selecting column values or using the related commands on the Action Pane. After you've finished evaluating a change, and after you've canceled or modified production orders as required, you can mark a notification as resolved. Select the notification, and then, on the Action Pane, select **Resolve**. The notification is removed from all users' views.
+
+> [!IMPORTANT]
+> The ability to send notifications for production orders requires that the *Engineering notifications for production* feature be turned on in your system. For instructions, see [Engineering change management overview](product-engineering-overview.md).
 
 ### Create a change order from a change request
 

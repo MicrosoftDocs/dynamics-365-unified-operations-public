@@ -4,7 +4,7 @@
 title: Sales tax applicability and sales tax group determination logic
 description: This topic explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
 author: epodkolz
-ms.date: 08/03/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -77,11 +77,11 @@ If no applicability rule is configured for the tax group or item tax group in th
 
 You can update the tax groups that the Tax calculation service determined, without having to reconfigure the Tax feature. For example, you might have to update the tax groups because the rule is incorrectly set up, or some exception to the rule is required. By setting the **Override sales tax** option to **Yes** on the line details page for a document line, you can select the required sales tax group and item sales tax group.
 
-![Override sales tax option set to Yes on the line details page for a document line](./media/Pict1 Override sales tax parameter.jpg)
+![Override sales tax option set to Yes on the line details page for a document line](media/Pict1%20Override%20sales%20tax%20parameter.jpg)
 
 The **Sales tax group** and **Item sales tax group** fields list only tax groups where the **Source** field is set to **Tax calculation service**. This value indicates that the tax groups were synchronized from the Tax feature setup in RCS.
 
-![Source field set to Tax calculation service for an item sales tax group on the Item sales tax groups page](./media/Pict2 Source field in Item sales tax group.jpg)
+![Source field set to Tax calculation service for an item sales tax group on the Item sales tax groups page](media/Pict2%20Source%20field%20in%20Item%20sales%20tax%20group.jpg)
 
 The tax codes are calculated based on the intersection of the tax codes that are defined on the **Tax group** and **Item tax group** tabs in the Tax feature setup in RCS.
 
