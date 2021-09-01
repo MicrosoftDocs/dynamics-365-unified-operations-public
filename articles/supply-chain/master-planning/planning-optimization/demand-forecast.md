@@ -157,28 +157,68 @@ The value set in the **Percent** field on the reduction key lines is not used fo
 
 This example shows how actual orders that occur during the periods that are defined by the reduction key reduce demand forecast requirements.
 
-![Advantage of running Planning Optimization during office hours](media/forecast-reduction-keys-1.png)
+![Actual orders and forecast before master planning is run](media/forecast-reduction-keys-1.png)
 
 For this example, you select **Transactions - reduction key** in the **Method used to reduce forecast requirements** field on the **Master plans** page.
 
-The following sales orders exist on January 1.
+The following demand forecast lines exist on April 1.
 
-| Month    | Number of pieces ordered |
-|----------|--------------------------|
-| January  | 956                      |
-| February | 1,176                    |
-| March    | 451                      |
-| April    | 119                      |
+| Date     | Number of pieces forecasted  |
+|----------|------------------------------|
+| April 5  | 100                          |
+| April 12 | 100                          |
+| April 19 | 100                          |
+| April 26 | 100                          |
+| May 3    | 100                          |
+| May 10   | 100                          |
+| May 17   | 100                          |
 
-If you use the same demand forecast of 1,000 pieces per month that was used in the previous example, the following requirement quantities are transferred to the master plan.
+The following sales order lines exist in April.
 
-| Month                | Number of pieces required |
+| Date     | Number of pieces requested   |
+|----------|------------------------------|
+| April 27 | 240                          |
+
+![Planned supply generated based on April orders](media/forecast-reduction-keys-2.png)
+
+The following requirement quantities are transferred to the master plan when master planning is run on April 1. You can see that the April forecast transactions were reduced by 240 demand quantity in a sequence starting with the first one.
+
+| Date                 | Number of pieces required |
 |----------------------|---------------------------|
-| January              | 44                        |
-| February             | 0                         |
-| March                | 549                       |
-| April                | 881                       |
-| May through December | 1,000                     |
+| April 5              | 0                         |
+| April 12             | 0                         |
+| April 19             | 60                        |
+| April 26             | 100                       |
+| April 27             | 240                       |
+| May 3                | 100                       |
+| May 10               | 100                       |
+| May 17               | 100                       |
+
+Now, let's assume that new orders were imported for the period of May.
+
+The following sales order lines exist in May.
+
+| Date     | Number of pieces requested   |
+|----------|------------------------------|
+| May 4    | 80                           |
+| May 11   | 130                          |
+
+![Planned supply generated based on April and May orders](media/forecast-reduction-keys-3.png)
+
+The following requirement quantities are transferred to the master plan when master planning is run on April 1. You can see that the April forecast transactions were reduced by 240 demand quantity in a sequence starting with the first one, while the May forecast transactions were reduced by 210 in total also starting from the first demand forecast transaction in May. However, the totals per period are preserved (400 in April, 300 in May).
+
+| Date                 | Number of pieces required |
+|----------------------|---------------------------|
+| April 5              | 0                         |
+| April 12             | 0                         |
+| April 19             | 60                        |
+| April 26             | 100                       |
+| April 27             | 240                       |
+| May 3                | 0                         |
+| May 4                | 80                        |
+| May 10               | 0                         |
+| May 11               | 130                       |
+| May 17               | 90                        |
 
 #### Transactions – dynamic period
 
