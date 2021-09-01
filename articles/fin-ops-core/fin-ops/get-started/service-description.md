@@ -131,7 +131,7 @@ Finance and Operations apps are served from several Azure regions around the wor
 
 ### General Data Protection Regulation (GDPR)
 
-For Finance and Operations apps, Microsoft acts as a processor. As a data processor, Finance and Operations provides processes and features that help customers comply with GDPR obligations as a data controller. For more information refer to [GDPR Overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/gdpr/gdpr-guide).
+For Finance and Operations apps, Microsoft acts as a processor. As a data processor, Finance and Operations provides processes and features that help customers comply with GDPR obligations as a data controller. For more information, refer to [GDPR Overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/gdpr/gdpr-guide).
 
 ## Environment and data management
 
