@@ -135,7 +135,7 @@ Create sales tax groups for the different types of business operations that are 
 5. For reverse charge VAT operations, create two sales tax codes, one that has a negative rate and one that has a positive rate. For more information, see [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md). As of January 1, 2021, a “reverse charge” approach can be used for acquisitions that companies in Great Britain make from counterparties in the EU, and that can be accounted for as import VAT on a VAT Return. (This accounting is also known as *postponed VAT accounting*.). 
 6. Distribute the new sales tax codes into sales tax groups and item sales tax groups. Make sure that each sales tax code is added to an item sales tax group and a sales tax group, and that the required fields are set on the **Setup** FastTab of the **Sales tax groups** page. Here are some of the required fields:
 
-    - **Exempt** and **Exempt code**
+    - **Exempt** and **Exempt code** - for export operations.
     - **Reverse charge** - for the sales tax codes set up for importing/reverse change operations with negative rate.
     - **Use tax** - for intra-community acquisitions of goods made in Northern Ireland from EU Member States. As of January 1, 2021, tax setups that use the “use tax” approach will no longer be applicable to acquisitions that companies in Great Britain make from the EU.
 
