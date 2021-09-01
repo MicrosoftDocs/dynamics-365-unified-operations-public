@@ -44,7 +44,8 @@ The following features are included in this release. Some of the listed features
 
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
-|  add area      |   [add release plan title](link to release plan)         |   [add documentation title](link to doc if you know it)   |                         |
+|  Digital commerce      |   [Geo detection and redirection for e-commerce sites](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/geo-detection-redirection-e-commerce-sites)         |  [Set up geo detection and redirection](not_in_master_yet), [Country/region picker module](link)   |                         |
+|  Omni-channel excellence  |  [Order lookup for guest checkouts](not_yet_published)    |  [Enable order lookup for guest checkouts](not_in_master_yet), [Order lookup module](net_in_master_yet) |  Retail anonymous user search order details opting feature (off by default)  |
 
 
 
