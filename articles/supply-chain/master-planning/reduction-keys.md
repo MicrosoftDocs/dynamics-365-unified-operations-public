@@ -98,6 +98,11 @@ Forecast reduction starts with the first (earliest) demand forecast record in th
 
 If there is no unconsumed forecast left in the previous reduction key period, the balance of inventory transactions quantity will be used to reduce the forecast quantity in the next month (if there is unconsumed forecast).
 
+The value set in the **Percent** field on the reduction key lines is not used for the case of **Transactions - reduction key**, only the dates are used to define the reduction key period.
+
+    > [!NOTE]
+    > Any forecast posted on the date prior to the date of running master planning with forecast planning, will be ignored and won't be used to create planned orders. For example, if your demand forecast for the month is generated on January 1, and you are running master planning including demand forecasting on January 2, the demand forecast line with January 1 date will be ignored by the calculation.
+
 #### Example: Transactions – reduction key
 
 This example shows how actual orders that occur during the periods that are defined by the reduction key reduce demand forecast requirements.
