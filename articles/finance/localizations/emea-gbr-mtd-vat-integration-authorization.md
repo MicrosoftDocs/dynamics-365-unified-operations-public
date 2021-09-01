@@ -51,21 +51,21 @@ You don't have to create a web application of the production type on the HMRC si
 
 ## Obtain an authorization code for the production environment
 
-When your company is ready to interoperate with MTD VAT in a production environment, you must create an HMRC online account if it doesn't already exist. This account is also known as a Government Gateway account. Next, link the online account to the Finance application by selecting **Dynamics 365 for Finance and Operations** as the MTD-compatible software. A user ID and password will be obtained and linked to your VAT registration number:
+When your company is [registered for VAT](https://www.gov.uk/vat-registration) and ready to interoperate with MTD VAT in a production environment, you must [create an HMRC online account](https://www.gov.uk/guidance/help-and-support-for-making-tax-digital#sign-up-for-making-tax-digital-for-vat) if it doesn't already exist. This account is also known as a Government Gateway account. Next, link the [online account](https://www.gov.uk/send-vat-return) to the Finance application by selecting **Microsoft Dynamics 365 for Finance and Operations** as the [MTD-compatible software](https://www.tax.service.gov.uk/making-tax-digital-software?_ga=2.124730698.1312416614.1630487369-812816713.1605853350). A user ID and password will be obtained and linked to your VAT registration number:
 
 - **User ID** – The name that is used to access HMRC while an authorization code is being requested.
 - **Password** – The password that is used to access HMRC while an authorization code is being requested.
 
-After you obtain your user credentials, a web application of the production type can be authorized.
+After you obtain your user credentials, a web application of the production type can be authorized from within your Finance.
 
 ### Obtain an authorization code
 
 Follow these steps to get an authorization code from HMRC.
 
 1. In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and select the **Dynamics 365 for Finance and Operations** web application.
-2. On the Action Pane, select **Get authorization code**.
-3. Select **Yes** to confirm that you want to initialize the authorization process.
-4. In the **Electronic reporting parameters** dialog box, in the **Scope** field, enter **read:vat write:vat**. Then select **OK**.
+2. On the Action Pane, select **Get authorization code** and select **Yes** to confirm that you want to initialize the authorization process.
+3. In the **Electronic reporting parameters** dialog box, in the **Scope** field, enter **read:vat write:vat**. 
+4. Select **OK**.
 
     ![Setting Electronic reporting parameters.](media/uk-mtd-get-authorization-code.png)
 
@@ -79,7 +79,7 @@ Follow these steps to get an authorization code from HMRC.
 9. The **Authorisation granted** page shows the authorization code that HMRC granted to you for your Finance environment. Copy this authorization code to the clipboard.
 
 > [!IMPORTANT]
-> The authorization code is valid for only 10 minutes. You must obtain an access token during that time. If you don't obtain the access token within 10 minutes, and the authorization code expires, you can get a new authorization code.
+> The authorization code is valid for only 10 minutes. You must [obtain an access token](#obtain-an-access-token) during that time. If you don't obtain the access token within 10 minutes, and the authorization code expires, you can get a new authorization code.
 
 ### Obtain an access token
 
