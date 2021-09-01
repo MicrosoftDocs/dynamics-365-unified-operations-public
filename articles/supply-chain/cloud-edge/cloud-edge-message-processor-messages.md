@@ -68,7 +68,7 @@ The toolbar on the **Log** tab includes the following buttons:
 
 ## Message processor batch job
 
-When running a cloud and edge deployment, the *Message processor* batch job will automatically be evoked when a new message is created for processing, so you should not need to schedule this job manually.
+When running a distributed hybrid topology with scale units, the *Message processor* batch job will automatically be evoked when a new message is created for processing, so you should not need to schedule this job manually.
 
 If necessary, you can access the batch job by going to **System administration > Message  processor > Message processor**.
 

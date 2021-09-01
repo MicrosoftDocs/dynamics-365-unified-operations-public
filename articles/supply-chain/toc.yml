@@ -304,9 +304,9 @@
           items: 
           - name: Goods in transit from vendor
             href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
-    - name: Cloud and edge
+    - name: Distributed hybrid topology
       items:
-      - name: Cloud and edge scale units for manufacturing and warehouse management workloads
+      - name: Scale units in a distributed hybrid topology
         href: cloud-edge/cloud-edge-landing-page.md
       - name: Deploy edge scale units on custom hardware using LBD
         href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
