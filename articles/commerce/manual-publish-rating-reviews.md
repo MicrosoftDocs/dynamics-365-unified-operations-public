@@ -62,7 +62,7 @@ To review and publish ratings and reviews in site builder, follow these steps.
 > - Once a rating and review is published, the status value changes from **Unpublished** to a null value (empty field).  
 > - If you select multiple ratings and reviews that have mixed statuses and then select **Publish**, ratings and reviews in the unpublished state will be published and those already published will not be published again.
 
-The following example illustration shows the site builder **Moderator** page with three unpublished ratings and review selected.
+The following example illustration shows the site builder **Moderation** page with three unpublished ratings and reviews selected.
 
 ![Commerce site builder Moderator page with three unpublished ratings and review selected](media/Ratings-reviews-publishing-reviews.png)
 
