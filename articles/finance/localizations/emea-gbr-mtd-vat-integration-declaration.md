@@ -124,7 +124,7 @@ Create sales tax groups for the different types of business operations that are 
     - Reduced (Reporting type = Service)
     - Zero (Reporting type = Item)
     - Zero (Reporting type = Service)
-    - Reverse charge domestic (Reporting type = Empty)
+    - Reverse charge (Reporting type = Empty)
 
 ## Sales tax codes
 
