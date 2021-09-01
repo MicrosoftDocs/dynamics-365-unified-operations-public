@@ -60,7 +60,7 @@ The operating model of Finance and Operations apps defines specific roles and re
 
 ### Customer activities
 
-Customers work with their Partner to implement their solution and use the tools and best practice templates provided in Lifecycle Services. Common activities include:
+Customers work with their Partner and [Microsoft FastTrack](https://docs.microsoft.com/en-us/dynamics365/fasttrack/) following the [Success by Design](https://docs.microsoft.com/en-us/dynamics365/fasttrack/success-by-design-overview) framework and using tools and best practice templates provided in [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) to implement their solution. Common activities include:
 
 - User identity and security management
 - Define, develop and operate business processes
