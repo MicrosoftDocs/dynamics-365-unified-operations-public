@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.22
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic provides troubleshooting guidance to hide the ratings refiner on products search and categories pages when the Dynamics 365 Commerce ratings and reviews solution is not enabled for an e-commerce site.
+This topic provides troubleshooting guidance to hide the ratings refiner on products search and categories pages when the Dynamics 365 Commerce ratings and reviews solution is not enabled for an e-commerce channel.
 
 ## Description
 
