@@ -49,7 +49,7 @@ When you're registered as a developer in the HMRC Developer Hub, you can create 
 
 ## <a id="user"></a>Obtain test user credentials
 
-To test the interoperation of Finance with HMRC's MTD VAT API, you must acquire test user credentials:
+To test the interoperation of Finance with sandbox of HMRC's MTD VAT API, you must acquire test user credentials:
 
 - **User ID** – The name that is used to access HMRC while an authorization code is being requested.
 - **Password** – The password that is used to access HMRC while an authorization code is being requested.
@@ -60,11 +60,11 @@ These three parameters must be used together.
 Follow these steps to get your test user credentials.
 
 1. In the HMRC portal, complete the steps that are described in the [Create a test user](https://developer.service.hmrc.gov.uk/api-test-user) section. The test user that you create there contains information about the **UserID**, **Password**, and **VAT Registration Number** fields, and their respective values.
-2. Save the **UserID**, **Password**, and **VAT Registration Number** values of the test user that you created. You will them in later steps of the process.
+2. Save the **UserID**, **Password**, and **VAT Registration Number** values of the test user that you created. You will use them in later steps of the process.
 3. In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, and select the **UK MTD VAT TEST** processing.
 4. On the **Message additional fields** FastTab, select the **Tax registration number** additional field, and enter the **VAT Registration Number** value of the test user that you created in the HMRC portal.
 
-## <a id='auth'></a>Obtain an authorization code
+## <a id='auth'></a>Obtain an authorization code for testing interoperation
 
 Follow these steps to get an authorization code.
 
@@ -81,7 +81,7 @@ Follow these steps to get an authorization code.
 8. Select **Grant authority**.
 9. The **Authorisation granted** page shows the authorization code that HMRC granted to you for testing in the sandbox application. Copy this authorization code to the clipboard.
 
-## Obtain an access token
+## Obtain an access token for testing interoperation
 
 You should initialize retrieval of an access token within 10 minutes after HMRC grants an authorization code. Otherwise, the authorization code expires, and you must get a new one.
 
@@ -93,7 +93,7 @@ You should initialize retrieval of an access token within 10 minutes after HMRC 
 
 Every access token is valid for four hours after HMRC creates it. During interoperation with HMRC, the system automatically handles the process of refreshing the access token. Therefore, you don't have to manually refresh it. However, if you want to manually refresh the access token, on the **Web applications** page, on the Action Pane, select **Refresh access token**. A refresh access token request is sent to HMRC, and a new access token from the response that is received is automatically saved in Finance.
 
-## Retrieve VAT obligations from HMRC
+## Retrieve VAT obligations from HMRC for testing interoperation
 
 After you successfully obtain an access token, your sandbox application is ready to interoperate with HMRC.
 
@@ -194,7 +194,7 @@ MTD VAT accepts VAT returns in JSON format only. Follow these steps to generate 
 
 If, for some reason, you must regenerate a VAT return in JSON format before it's submitted to HMRC, select **Update status** on the **Messages** FastTab to update the status of the related electronic message to either **New VAT return** or **Ready to generate VAT return**, depending on whether you must go back to the data collection step or the file generation step.
 
-## Submit VAT returns to HMRC
+## Submit VAT returns to HMRC for testing interoperation
 
 When a VAT return in JSON format is generated and ready to be submitted to HMRC, initialize its submission to the sandbox application. The last JSON file that was attached to the electronic message is used for the submission. To help prevent discrepancies, we recommended that you delete any unnecessary JSON files that are attached to the electronic message that you will submit to HMRC. To find and clean up unnecessary attachments, select the electronic message, and then select **Attachments** (the paper clip symbol) in the upper-right corner of the page. The **Attachments** page for the selected message is opened.
 
