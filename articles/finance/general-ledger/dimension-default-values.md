@@ -33,7 +33,7 @@ This topic describes the rules that define how default financial dimension value
 
 ## Symptom
 
-A voucher is entered in a journal, such as the general journal. The account is a vendor account, and the offset account is a bank account. The vendor's default financial dimensions are entered by default on the account, but the bank's default financial dimensions aren't entered by default on the offset account. Instead, the dimension values from the account are entered by default on the offset account.
+A voucher is entered in a journal, such as the general journal. The account is a vendor account, and the offset account is a bank account. The vendor's financial dimensions are entered by default on the account, but the bank's financial dimensions aren't entered by default on the offset account. Instead, the dimension values from the account are entered by default on the offset account.
 
 If a fixed dimension is assigned to a main account, default values are set differently. In this case, the fixed dimension value isn't entered by default on the account or offset account. Instead, it's assigned during posting.
 
@@ -41,35 +41,34 @@ You might expect the fixed dimension to be entered by default either before or a
 
 ## Resolution
 
-The following rules are followed to enter default financial dimension values on the lines of a voucher in the financial journals, such as the general journal or vendor invoice journal.
+The following rules are followed to enter financial dimension values by default on the lines of a voucher in financial journals, such as the general journal or vendor invoice journal. 
 
 1. **Journal header**
 
-    - Journal header dimensions are entered by default from default journal name dimensions.
+    - Journal header dimensions are entered by default from journal name dimensions.
 
 2. **Journal line account**
 
-    1. Journal line account dimensions are entered by default from default journal header dimensions.
-    2. If any financial dimensions are blank, their values are entered by default from default customer, vendor, bank, fixed asset, project, or ledger dimensions.
+    1. Journal line account dimensions are entered by default from journal header dimensions.
+    2. If any financial dimensions are blank, their values are entered by default from customer, vendor, bank, fixed asset, project, or ledger dimensions.
 
         - If the account type is **Ledger**, a fixed dimension on a ledger account is treated like a default dimension during transaction entry.
         - If the account type is **Customer**, **Vendor**, **Bank**, **Fixed assets**, or **Project**, the main account can't yet be determined. Therefore, a fixed dimension will never be entered by default for the account.
 
 3. **Journal line offset account**
 
+  1. First, journal line Offset Account dimensions default from journal line Account dimensions.
+  2. If any financial dimensions are blank, they will next default from Customer/Vendor/Bank/Fixed Assets/Project/Ledger default dimensions.
+    1. If the Offset account type = Ledger, a fixed dimension on a Ledger account is treated like a default dimension during transaction entry.
+    2. If the Offset account type = Customer/Vendor/Bank/Fixed Assets/Project, the main account isn't known yet so a fixed dimension will never default for the Account.
+
     1. Journal line offset account dimensions are entered by default from journal line account dimensions.
     2. If any financial dimensions are blank, they are entered by default from the journal header.
     3. If any financial dimensions are blank, they are entered by default from the **Ledger default dimensions** page.
 
-        > [TIP]
-        > You can access the **Ledger default dimensions** page from the main page for customers, vendors, banks, and fixed assets by using the following paths:
-        > 
-        > - Customer \> Ledger default dimensions
-        > - Vendor \> Ledger default dimensions
-        > - Fixed assets \> Ledger default dimensions
-        > - Project \> Ledger default dimensions
 
-        - If the offset account type is **Ledger**, a fixed dimension on a ledger account is treated like a default dimension during transaction entry. If a dimension value was already entered by default from the account, the main account's default or fixed dimension value doesn't override the default value.
+
+        - If the Offset account type is **Ledger**, a fixed dimension on a ledger account is treated like a default dimension during transaction entry. If a dimension value was already entered by default from the account on the journal line, the main account's default or fixed dimension value doesn't override the default value.
         - If the offset account type is **Customer**, **Vendor**, **Bank**, **Fixed assets**, or **Project**, the main account can't yet be determined. Therefore, a fixed dimension will never be entered by default for the account.
 
 4. **Posting**
@@ -80,7 +79,7 @@ The following rules are followed to enter default financial dimension values on 
 
     2. No other dimension values are entered by default during posting, even for additional ledger accounts that might be added during posting, such as penny rounding accounts and intercompany due to or due from accounts. The default dimension entries for additional ledger accounts are taken from the account and offset accounts.
 
-For the purpose of making default entries, the journal default process can't determine whether a blank dimension value was intentionally left blank, or whether the default entry wasn't made. If a dimension value is intentionally left blank, a value might still be entered by default by using the defaulting order that is described earlier. If you require that a dimension have a blank value, you might have to create a dimension that has a value of **0** (zero), so that it can be used in place of a blank dimension.
+For the purpose of making default entries, the journal default process can't determine whether a blank dimension value was intentionally left blank, or whether the default entry wasn't made. If a dimension value is intentionally left blank, a value might still be entered by default by using the defaulting order that is described earlier. If you require that a dimension has a blank value, you might have to create a dimension that has a value of **0** (zero), so that it can be used in place of a blank dimension.
 
 Review the following scenarios for examples of the financial dimension defaulting order.
 
