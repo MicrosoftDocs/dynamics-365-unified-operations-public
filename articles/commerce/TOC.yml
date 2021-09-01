@@ -756,6 +756,8 @@
           href: multiple-pickup-modes.md
         - name: Process a customer order pickup in POS
           href: process-order-pickup-POS.md
+        - name: Enable order lookup for guest checkouts
+          href: order-lookup-guest.md
       - name: Sales orders   
         items:
         - name: Create call center orders 
@@ -1148,6 +1150,8 @@
             href: order-confirmation-module.md 
           - name: Gift card module
             href: add-giftcard.md
+          - name: Order lookup module
+            href: order-lookup-module.md
         - name: Store finder modules
           items:
           - name: Map module
@@ -1176,6 +1180,8 @@
             href: nav-menu-module.md
           - name: Site selector module
             href: site-selector.md
+          - name: Country/region picker module
+            href: country-region-picker-module.md
         - name: Search modules
           items:
           - name: Search results module
@@ -1198,6 +1204,8 @@
         items:
         - name: Device, market, and geolocation targeting
           href: targeting-overview.md
+        - name: Set up geo detection and redirection
+          href: geo-detection-redirection.md
       - name: Experimentation
         items:
         - name: Experimentation in Dynamics 365 Commerce
