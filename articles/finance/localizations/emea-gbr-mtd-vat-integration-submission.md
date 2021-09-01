@@ -183,6 +183,6 @@ The **Action log** FastTab saves information about all the actions that are perf
 >
 > For more information, see [Authorize your Finance environment to interoperate with HMRC's MTD web service](emea-gbr-mtd-vat-integration-authorization.md).
 >
-> ![Error message if system admin consent wasn't given.](media/uk-mtd-system-administrator-consent-log-error.png)
+> ![Error message if system admin consent wasn't given.](media/uk-mtd-system-admin-consent-log-error.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
