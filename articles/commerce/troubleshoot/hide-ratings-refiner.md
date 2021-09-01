@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Ratings refiner appears on search results and category pages when Commerce ratings and reviews solution is not enabled 
+title: Ratings refiner appears on search results and category pages when ratings and reviews solution is not enabled 
 description: This topic provides troubleshooting guidance to hide the ratings refiner on products search and categories pages when the Dynamics 365 Commerce ratings and reviews solution is not enabled for an e-commerce site.
 manager: annbe
 ms.date: 09/03/2021
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.22
 
 ---
 
-# Ratings refiner appears on search results and category pages when Commerce ratings and reviews solution is not enabled 
+# Ratings refiner appears on search results and category pages when ratings and reviews solution is not enabled 
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
