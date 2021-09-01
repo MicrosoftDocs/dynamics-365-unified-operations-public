@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 To ensure consistent availability and performance, there are limits when using dual-write to write data to Dataverse and Finance and Operations apps. These limits are applied at the platform level and control dual-write transactions. These limits are designed to ensure seamless writes and to minimize failures.
 
-Finance and Operations apps and Dataverse have many processes which span large numbers records and complex, multi-table transactions. Each environment has limits around the number of transactions, the numbers of records per single transaction, and the transaction time limits (the time it takes to process the transaction). It is important to understand these limits and their impact on the live sync capabilities with dual-write.
+Finance and Operations apps and Dataverse have many processes which span large numbers records and complex, multi-table transactions. Each environment has limits around the number of transactions, the numbers of records per single transaction, and the transaction time limits (the time it takes to process the transaction). It is important to understand these limits and their effect on the live sync capabilities with dual-write.
 
 ## Transaction patterns
 
@@ -88,7 +88,7 @@ while (/* loop condition */)
 
 ## Transaction time limit
 
-When writing records using dual-write to Dataverse or Finance and Operations apps, each transaction needs to complete within a specific amount of time. If the transaction does not complete before the transaction timeout limit, then the records are not committed to Dataverse and Finance and Operations apps using dual-write. This results in a roll back of records within the timed out transaction in both the Finance and Operations and Dataverse environments.
+When writing records using dual-write to Dataverse or Finance and Operations apps, each transaction needs to complete within a specific amount of time. If the transaction does not complete before the transaction timeout limit, then the records are not committed to Dataverse and Finance and Operations apps using dual-write. This results in a rollback of records within the timed out transaction in both the Finance and Operations and Dataverse environments.
 
 For example, using dual-write to sync contract renewals from Finance and Operations apps to Dataverse, the clock starts when the business logic in Finance and Operations apps is completed and at the start of the Dataverse process. The clock ends the transaction is committed. The entire time spent in Dataverse includes the time to write as well as time for the standard and custom plugins to be processed. If the transaction exceeds the time limit, then the records would not be committed to Dataverse.
 
@@ -105,7 +105,7 @@ The following limits apply:
 Measure | Limits
 ---|---
 Number of transactions | The total number of transactions you can make per day per tenant are governed by service protection API limits which are designed to detect when client applications make extraordinary demands on server resources.<br>For more information, see [Service protection API limits](/powerapps/developer/data-platform/api-limits.md)
-Number of records per single transaction | 1000 records<br>For greater than 1000 records in a single transaction, consider splitting into multiple transactions. For more information, see the section [Transactions with more than 1000 records](#transactions-with-more-than-1000-records).
+Number of records per single transaction | 1000 records<br>If there are more than 1000 records in a single transaction, consider splitting into multiple transactions. For more information, see the section [Transactions with more than 1000 records](#transactions-with-more-than-1000-records).
 Transaction time limit | 2 minutes
 
 ## Dataverse to Finance and Operations limits
