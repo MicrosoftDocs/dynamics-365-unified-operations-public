@@ -28,7 +28,7 @@ Check out the latest information about dual-write features and changes in the [r
 
 ## August 2021 release
 
-The August 2021 hotfix release of [Dual-write application orchestration solution version](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The August 2021 release of [Dual-write application orchestration solution version 2.3.0.15](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -36,6 +36,15 @@ This release contains the features and bug fixes listed in the following table.
 |------|---------|-------|
 |Bug fix | Fixes the case where dual-write alerts fail to send. | 	General availability |
 | System tables |	Adds support for enabling dual-write for system tables. |	General availability |
+|Bug fix | Dataverse platform team has deprecated some client API and replaced them with new ones. The javascripts used in dual-write orchestration package has been upgraded to use the new client APIs.| 	General availability |
+|Bug fix | Dual-write doesn’t support offline mode. So company name will not be defaulted automatically. Field agent should select the company manually.| 	General availability |
+ |Bug fix | Vendor group field on accounts form does not filter values based on the chosen company.| 	General availability |
+|Bug fix | Vendor save in F&O fails with error message **Cannot convert the literal '' to the expected type 'Edm.Int32'**.| 	General availability |
+|Bug fix | Transformation on Vendor payment method map needs a change. The enumeration on PAYMENTSTATUS field is incorrect resulting in error message **Cannot convert the literal 'Confirmed' to expected type 'Edm.Int32'**. | 	General availability |
+|Bug fix | Sales order header and sales order line maps conflict with project contract header and project contract line maps. So unable to enable both at once.| 	General availability |
+|Bug fix | Enforce proper error message to convey **Ship To Country/Region** as a mandatory field on sales order and purchase order.| 	General availability |
+|Bug fix | Whenever a sales order is created in Sales app, default the **Invoice Customer** based on **Billing Account** value of the **Potential Customer**.| 	General availability |
+|Bug fix | Ability to toggle **Price override** field to true or false. | 	General availability |
 
 ## August 2021 release of party and global address book 
 
