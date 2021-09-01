@@ -72,8 +72,30 @@ The following scenarios are covered by the fiscal printer integration sample for
 ### Limitations of the sample
 
 - The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both stores and customers.
-- **Customer orders**
-- **Rounding in case of discounts**
-- **Petty cash operations**
+- Printing of fiscal receipts for customer order operations (deposit, pick up, ship) is not currently supported. Support of customer order operations may be added in later versions.
+- Printing of fiscal receipts for petty cash operations, such as tender declaration, float entry, tender removal, etc., is not currently supported. Support of petty cash operations may be added in later versions.
 - Daily reports (fiscal X and fiscal Z) are printed by using the fiscal printer's embedded format.
 - The fiscal printer doesn't support mixed transactions. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
+
+### Default data mapping
+
+The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
+
+- Payment method mapping:
+    ```json
+    {
+      "PaymentMethods": [
+        {"StorePaymentMethod":"1", "AtolPaymentType":0},
+        {"StorePaymentMethod":"2", "AtolPaymentType":4},
+        {"StorePaymentMethod":"3", "AtolPaymentType":1},
+        {"StorePaymentMethod":"4", "AtolPaymentType":3},
+        {"StorePaymentMethod":"5", "AtolPaymentType":0},
+        {"StorePaymentMethod":"6", "AtolPaymentType":0},
+        {"StorePaymentMethod":"7", "AtolPaymentType":4},
+        {"StorePaymentMethod":"8", "AtolPaymentType":4},
+        {"StorePaymentMethod":"10", "AtolPaymentType":4},
+        {"StorePaymentMethod":"11", "AtolPaymentType":4}
+     ]
+    }    
+    ```
+See the documentation for [ATOL integration documentation](http://integration.atol.ru/) for more information of supported payment types.
