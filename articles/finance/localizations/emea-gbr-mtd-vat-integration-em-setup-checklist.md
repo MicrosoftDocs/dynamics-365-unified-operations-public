@@ -44,7 +44,7 @@ The following types of processing are defined to support interoperation with MTD
 | UK MTD VAT returns | The processing to prepare and submit VAT returns to HMRC. |
 
 > [!IMPORTANT]
-> You must define security roles for both types of processing to enable access to them at the record level.
+> You must define security roles for both types of processing to enable access to them at the record level for business users.
 
 ## Web applications
 
@@ -69,7 +69,7 @@ The following table shows the parameters of the web applications.
 | Content type                          | application/json |
 
 > [!IMPORTANT]
-> You must define security roles for both web applications to enable access to the access token.
+> You must define security roles for both web applications to enable access to the access token and interoperation with HMRC's API for business users.
 
 ## Web service settings
 
