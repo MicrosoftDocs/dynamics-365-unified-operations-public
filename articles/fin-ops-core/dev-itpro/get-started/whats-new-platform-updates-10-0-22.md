@@ -30,13 +30,13 @@ The following features are included in this release. Some of the listed features
 
 Most of these features must be enabled using [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-| Feature area   | Feature                                                  | More information                                                                    |
-|----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Client features | [Open-source software update: Upgrade Moment and remove jqWidgets](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=671c33cf-ec01-ec11-94ef-0022482594cd&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)  |  |
-| Client features | [New color picker control](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=b03a31e1-ef01-ec11-94ef-0022482594cd&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)  |  |
-| Client features | Visual updates to the Hierarchy viewer control  | [HierarchyViewer control](../user-interface/hierarchy-viewer-control.md) |
-| <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
-| <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) |
+| Feature area   | Feature                                                  | More information              | How to enable feature |
+|----------------|----------------------------------------------------------|-------------------------------|
+| Client features | [Open-source software update: Upgrade Moment and remove jqWidgets](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=671c33cf-ec01-ec11-94ef-0022482594cd&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)  |  | Feature managment |
+| Client features | [New color picker control](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=b03a31e1-ef01-ec11-94ef-0022482594cd&formid=b28ff4ff-6e3d-40a4-bd93-e454a4b5f731)  |  | Feature management |
+| Client features | Visual updates to the Hierarchy viewer control  | [HierarchyViewer control](../user-interface/hierarchy-viewer-control.md) | Feature management |
+| <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) | <Where do you enable this feature?> |
+| <Feature area> | [Name of feature](Link to feature in the Release Plans)  | [Name of topic that provides more details](URL to topic that provides more details) | <Where do you enable this feature?> |
 
 
 ## Additional resources
