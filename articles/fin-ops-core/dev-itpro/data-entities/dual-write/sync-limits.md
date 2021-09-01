@@ -1,5 +1,5 @@
 ---
-title: Dual-write limits for live sync
+title: Dual-write limits for live synchronization
 description: This topic describes the limits when using dual-write to write data to Dataverse and Finance and Operations apps.
 author: nhelgren
 ms.date: 08/31/2021
@@ -12,7 +12,7 @@ ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Dual-write limits for live sync
+# Dual-write limits for live synchronization
 
 To ensure consistent availability and performance, there are limits when using dual-write to write data to Dataverse and Finance and Operations apps. These limits are applied at the platform level and control dual-write transactions. These limits are designed to ensure seamless writes and to minimize failures.
 
