@@ -1376,16 +1376,16 @@
         items:
         - name: Commerce localization for Russia
           href: localizations/rus-commerce-localization.md
-        - name: Fiscal printer integration sample for Russia
-          href: localizations/rus-fpi-sample.md
-        - name: Customer information management for Russia
-          href: localizations/rus-customer-information.md 
-        - name: Simplified customer address format in Commerce POS for Russia
-          href: localizations/rus-simplified-address.md
         - name: Set up Commerce localization for Russia
           href: localizations/rus-commerce-setup.md
         - name: Prepayments in Commerce for Russia
           href: localizations/rus-commerce-prepayments.md          
+        - name: Simplified customer address format in Commerce POS for Russia
+          href: localizations/rus-simplified-address.md
+        - name: Fiscal printer integration sample for Russia
+          href: localizations/rus-fpi-sample.md
+        - name: Customer information management for Russia
+          href: localizations/rus-customer-information.md 
       - name: Sweden
         items:
         - name: Cash register functionality
