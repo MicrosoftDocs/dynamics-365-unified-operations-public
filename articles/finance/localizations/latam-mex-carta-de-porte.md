@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Carta de porte complement
-description: This topic explains how to setup and submit parking slips and transfer orders with Carta de Porte Complemento.
+title: Waybill (Carta de Porte) complement
+description: This topic explains how to setup and submit parking slips and transfer orders with Waybill (Carta de Porte) complement.
 author: v-oloski
 ms.date: 08/31/2021
 ms.topic: article
@@ -24,8 +24,8 @@ ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: 10.0.23
 
 ---
-# Carta de Porte complement Version 1.0
-This topic provides information about how to setup and submit parking slips and transfer orders with Carta de Porte Complemento. Carta de Porte Complemento is mandatory for taxpayers who transport goods and merchandise in the national territory from October 1st, 2021.
+# Waybill (Carta de Porte) complement (version 1.0)
+This topic provides information about how to setup and submit parking slips and transfer orders with Waybill (Carta de Porte) complement. Waybill (Carta de Porte) complement is mandatory for taxpayers who transport goods and merchandise in the national territory from October 1st, 2021.
 
 A user can fill in transportation information in **Transportation details** form from:
 
@@ -80,9 +80,9 @@ Trailer
 
 Fields for a truck, a trailer, and a driver (except Federal motor transport configuration) can be filled in manually or using information from fixed asset records and from worker records (see Fixed assets, Workers).
 
-## Posting packing slips and shipping transfer order with Carta de Porte complement
+## Posting packing slips and shipping transfer order with Waybill (Carta de Porte) complement
 
-If a user selects **Enable CFDI packing slip** in the **Packing slip posting** or in the **Shipment** form, the **Generate transportation note** is selected automatically but the user can unselect this parameter. When **Generate transportation note** is selected it means that Carta de Porte complement will be included in xml file.
+If a user selects **Enable CFDI packing slip** in the **Packing slip posting** or in the **Shipment** form, the **Generate transportation note** is selected automatically but the user can unselect this parameter. When **Generate transportation note** is selected it means that Waybill (Carta de Porte) complement will be included in xml file.
 
 ![Packing slip posting](media/latam-mx-packing-slip-posting.png)
 
@@ -138,7 +138,7 @@ Transportation spots are all shipment and delivery points. Spots can have differ
 
 ### Fixed assets
 
-If the company implemented the **Fixed assets** module, a user can fill in information in the fixed asset record for vehicles and/or trailer which can be used when filling transportation information in **Transportation details** form. This information is needed for Carta de Porte Complemento.
+If the company implemented the **Fixed assets** module, a user can fill in information in the fixed asset record for vehicles and/or trailer which can be used when filling transportation information in **Transportation details** form. This information is needed for the Waybill (Carta de Porte) complement.
 
 Open Fixed assets \> Fixed assets \> Fixed assets, **Technical information** FastTab and fill in the following fields
 
