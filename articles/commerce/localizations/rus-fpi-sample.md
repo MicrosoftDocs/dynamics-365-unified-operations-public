@@ -39,6 +39,8 @@ Microsoft doesn't release any hardware, software, or documentation from ATOL. Fo
 > This sample code is intended to be used with certain cash register software from ATOL, a third party. You are responsible for your use of ATOL services, and any use is subject to a separate [end user agreement](http://integration.atol.ru/eula/) between you and ATOL. You understand that the data handling, compliance and security standards of ATOL may
 not be the same as Microsoft Dynamics 365 Commerce. Your privacy is important to us. To learn more read our [Privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
+See [Commerce localization for Russia](rus-commerce-localization.md) for more information on Commerce features available to customers in Russia.
+
 ## Scenarios
 
 The following scenarios are covered by the fiscal printer integration sample for Russia:
@@ -98,4 +100,5 @@ The following default data mapping is included in the fiscal document provider c
      ]
     }    
     ```
-See the documentation for [ATOL integration documentation](http://integration.atol.ru/) for more information of supported payment types.
+
+The default payment method mapping is based on the store payment method configuration in demo data. You may need to modify the mapping in the connector functional profile according to the settings of payment methods for your stores. See also the [ATOL integration documentation](http://integration.atol.ru/) for more information on payment types supported by ATOL fiscal printers.
