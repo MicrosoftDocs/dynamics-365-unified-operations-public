@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform Update 33
 >
 > **The feature may be temporarily unavailable during the preview period in your environment or the feature may not be available in your region.**
 > 
-> In the coming months, Microsoft will enable this feature in additional regions, as well as in additional environments. If your environment isn't in a region where the preview is enabled, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
+> In the coming months, Microsoft will enable this feature in additional regions, as well as in additional environments. If your environment isn't in a region listed above, [complete the survey and let us know](https://aka.ms/FnODataLakePreviewSurvey). You can also join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all). You can use the Yammer group to stay in contact and ask questions that will help you understand the feature. 
 >
 > The **Export to Data Lake** feature isn't available in Tier-1 (developer) environments. You must have a cloud-based Tier-2 or higher sandbox environment to enable this feature. 
 > 
@@ -239,9 +239,15 @@ You need the following information before you start. Keep the information handy 
 4.  In the **Setup add-in** dialog box, enter the required information. To answer the questions, you must already have a storage account. If you don't already have a storage account, create one, or ask your admin to create one on your behalf.
 5.  Accept the terms of the offer by selecting the check box, and then select **Install**.
 
-The system installs and configures the data lake for the environment. After installation and configuration are complete, you should see **Azure Data Lake** listed on the **Environment** page.
+The system installs and configures the data lake for the environment. This operation may take a few minutes. After installation and configuration are complete, you should see **Export to Data Lake** listed on the **Environment** page. You should see the status as **Installed**. If you are seeing another status, pl. see troubleshooting steps below.
 
 ## <a name="troubleshooting"></a> Troubleshooting
+
+### Add-in installation does not complete within a few minutes
+In some cases, the add-in installation may show "Installing" or "Configuring" for more than 10 minutes. This may be due to a configuration issue or a missing parameter. In this case, select the **Abort** option and follow the steps to [install the add-in](#installaddin) again. 
+
+### Add-in installation fails
+In some cases, you may see the status **Installation failed**. Failure to install is accompanied by a detailed error code. You should address the reason for failure using descriptions below. To correct the issue, You should select the **Abort** option and follow the steps to [install the add-in](#installaddin) again
 
 ### Error UnableToInitializeLakeDueToUserError
 
