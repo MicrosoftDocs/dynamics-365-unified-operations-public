@@ -91,7 +91,7 @@ The following table lists the feature enhancements included in this release. Eac
 | General ledger   |  General ledger year-end enhancements  | The setup of the year-end closing templates will be moved to a new setup page. The existing year-end close page will change, similar to the general ledger foreign currency revaluation, where a list displays each time the year end close is run or reversed. An accounting manager can initiate the year end close from the new page. <br> If the accounting manager wants to reverse the year-end close, they can select the most recent fiscal year for the appropriate legal entity and choose the Reverse year-end close button. The reversal will delete the accounting entries for the previous year-end close, and will not rerun the year-end close automatically. <br> You can rerun the year-end close, by restarting the process for the fiscal year and legal entity. The process will continue to use the General ledger parameter setting to determine whether the year-end close rerun will account for only the new or changed transactions, or completely reverse the previous close, rerunning the process for all transactions.  |
 | Tax   | (India) Enable to include tax collection at source (TCS) in the total invoice value of an invoice    | If this feature is enabled, the user will able to include TCS (Tax collection at source) tax amount in the total invoice value of the sales and purchase invoice.   |
 
-## Feature turned on by default in this release
+## Features turned on by default in this release
 
 These features will be turned on by default in 10.0.21, but they can be manually disabled:
 
