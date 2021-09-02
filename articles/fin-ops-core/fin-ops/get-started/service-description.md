@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include[banner](../includes/banner.md)]
 
-Finance and Operations apps are enterprise resource planning (ERP) software as a service (SaaS) offerings that are built on and for Microsoft Azure. The Finance and Operations service provides organizations with ERP functionality that supports their unique requirements and helps them adjust to constantly changing business environments, without requiring that they manage infrastructure. Finance and Operations apps can include one or more of the following solution areas:
+Finance and Operations apps are enterprise resource planning (ERP) software as a service (SaaS) offerings that are built on and for [Microsoft Azure](https://azure.microsoft.com/en-us/overview/what-is-azure/). The Finance and Operations service provides organizations with ERP functionality that supports their unique requirements and helps them adjust to constantly changing business environments, without requiring that they manage infrastructure. Finance and Operations apps can include one or more of the following solution areas:
 
 - [Dynamics 365 Finance](/dynamics365/finance/)
 - [Dynamics 365 Human Resources](/dynamics365/human-resources/)
