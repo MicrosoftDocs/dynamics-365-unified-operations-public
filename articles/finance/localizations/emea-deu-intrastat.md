@@ -15,7 +15,7 @@ ms.search.validFrom:
 
 # German Intrastat
 
-The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The German Intrastat declaration contains information about the trade of goods for reporting.
+The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The German Intrastat declaration contains information about the trade of goods for reporting. The report is formatted according to the guidelines of the German authorities that are presented on the following page: [https://www-idev.destatis.de/idev/doc/intra_en/hilfe6_2.html](https://www-idev.destatis.de/idev/doc/intra_en/hilfe6_2.html)
 
 The following table shows the fields that are included in the German Intrastat declaration.
 
