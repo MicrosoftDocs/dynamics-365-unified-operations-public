@@ -36,14 +36,14 @@ This release contains the features and bug fixes listed in the following table.
 |------|---------|-------|
 |Bug fix | Fixes the case where dual-write alerts fail to send. | 	General availability |
 | System tables |	Adds support for enabling dual-write for system tables. |	General availability |
-|Bug fix | Dataverse platform team has deprecated some client API and replaced them with new ones. The javascripts used in dual-write orchestration package has been upgraded to use the new client APIs.| 	General availability |
-|Bug fix | Dual-write doesn’t support offline mode. So company name will not be defaulted automatically. Field agent should select the company manually.| 	General availability |
- |Bug fix | Vendor group field on accounts form does not filter values based on the chosen company.| 	General availability |
-|Bug fix | Vendor save in F&O fails with error message **Cannot convert the literal '' to the expected type 'Edm.Int32'**.| 	General availability |
-|Bug fix | Transformation on Vendor payment method map needs a change. The enumeration on PAYMENTSTATUS field is incorrect resulting in error message **Cannot convert the literal 'Confirmed' to expected type 'Edm.Int32'**. | 	General availability |
-|Bug fix | Sales order header and sales order line maps conflict with project contract header and project contract line maps. So unable to enable both at once.| 	General availability |
-|Bug fix | Enforce proper error message to convey **Ship To Country/Region** as a mandatory field on sales order and purchase order.| 	General availability |
-|Bug fix | Whenever a sales order is created in Sales app, default the **Invoice Customer** based on **Billing Account** value of the **Potential Customer**.| 	General availability |
+|Bug fix | Some client APIs have been deprecated and replaced with new APIs. The JavaScript code in the dual-write orchestration package has been upgraded to use the new client APIs.| 	General availability |
+|Bug fix | Because dual-write doesn’t support offline mode, the company name does not automatically contain a default value. You must select the company manually.| 	General availability |
+ |Bug fix | The **Vendor** group field on the **Accounts** form does not filter values based on the selected company.| 	General availability |
+|Bug fix | Saving a **Vendor** record in a Finance and Operations app fails with the error message *Cannot convert the literal '' to the expected type 'Edm.Int32'*. | 	General availability |
+|Bug fix | The transformation on the **Vendor payment method** map required an update. The enumeration on the **PAYMENTSTATUS** field is incorrect resulting in error message *Cannot convert the literal 'Confirmed' to expected type 'Edm.Int32'*. | 	General availability |
+|Bug fix | **Sales order header** and **Sales order line** maps conflict with **Project contract header** and **Project contract line** maps. You couldn't enable both at once.| 	General availability |
+|Bug fix | Create an error message to state that **Ship To Country/Region** is a mandatory field on **Sales order** and **Purchase order**.| 	General availability |
+|Bug fix | Whenever a sales order is created in Dynamics 365 Sales, the default value of the **Invoice Customer** is based on **Billing Account** value of the **Potential Customer**.| 	General availability |
 |Bug fix | Ability to toggle **Price override** field to true or false. | 	General availability |
 
 This release includes following map changes.
