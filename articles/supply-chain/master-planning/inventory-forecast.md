@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: 10.0.21
 ---
 
 # Inventory forecasts
@@ -326,18 +326,19 @@ The following table describes the fields in the grid on the **Inventory forecast
 
 ## <a name="allocate-forecast"></a>Allocate forecast
 
-Use this procedure to process selected forecast transaction line. You can allocate the forecast; that is, the quantity is then distributed in the manner that is indicated in the dialog by the lines in the **Allocation** grid.
+Use the following procedure to process selected forecast transaction lines. When you allocate a forecast, the quantity is then distributed as indicated by the lines in the **Allocation** grid.
 
-1. On the supply or demand forecast lines page, select **Allocate forecast** on the toolbar on the **Overview** tab.
-1. In the dialog box, select the appropriate **Method** from the drop-down menu.
+1. Depending on the type of entity that you are creating a forecast for, and the type of forecast that you want to create, open a supply or demand forecast page as described in [View and manually enter forecast lines](#manual-entry).
+1. On the supply or demand forecast lines page, select a forecast line and then select **Allocate forecast** from the toolbar on the **Overview** tab.
+1. In the **Allocate forecast** dialog box, make the settings described in the following table. (The fields available depend on the value selected from the **Method** drop-down list.)
 
-| Field | Description |
-|---|---|
-| **Method** | <p>Select the method that is used to allocate the forecast transaction:</p><ul><li>**None** – No allocation occurs.</li><li>**Period** – Forecast the same quantity for each period. If you select this value, specify a quantity in the **Per** field and a unit of time in the **Unit** field.</li><li>**Key** – Allocate the forecast according to the period allocation key that you specify in the **Period key** field. You can use this method when you want seasonal variation to be considered.</li><ul>|
-| **Per** | <p>Enter the number of time intervals into the future that the forecast extends. This field is available only if you select *Period* in the **Method** field.</p><p>For example, you select *Period* in the **Method** field, enter *1* in the **Per** field, and select *Months* in the **Unit** field. In the **End** field, you specify an end date that extends one year into the future. In this case, one forecast line will be created for each month of the upcoming year, based on the item and quantity that are specified on the header line. |
-| **Unit** | Select the unit of the time interval: *Days*, *Months*, or *Years*. Allocation then corresponds to the number of days, months, or years that you specify in the **Per** field.|
-| **Period key** | Specify the period allocation key that is used to allocate the forecast. For more information, see [Budget planning data allocation](../../finance/budgeting/budget-planning-data-allocation.md). |
-| **End** | Specify the end date when you use the **Per** and **Unit** fields. |
+    | Field | Description |
+    |---|---|
+    | **Method** | <p>Select the method used to allocate the forecast transaction. Choose one of the following:</p><ul><li>**None** – No allocation occurs.</li><li>**Period** – Forecast the same quantity for each period. If you select this value, specify a quantity in the **Per** field and a unit of time in the **Unit** field.</li><li>**Key** – Allocate the forecast according to the period allocation key that you specify in the **Period key** field. You can use this method when you want seasonal variations to be considered.</li><ul>|
+    | **Per** | <p>Enter the number of time intervals into the future that the forecast extends. This field is available only if you select *Period* in the **Method** field.</p><p>For example, you might select *Period* in the **Method** field, enter *1* in the **Per** field, and select *Months* in the **Unit** field. Then, in the **End** field, you specify an end date one year into the future. In this case, one forecast line will be created for each month of the upcoming year, based on the item and quantity that are specified on the header line. |
+    | **Unit** | Select the unit of the time interval: *Days*, *Months*, or *Years*. Allocation then corresponds to the number of days, months, or years specified in the **Per** field.|
+    | **Period key** | Specify the period allocation key that is used to allocate the forecast. For more information, see [Budget planning data allocation](../../finance/budgeting/budget-planning-data-allocation.md). |
+    | **End** | Specify the end date that applies for your settings in the **Per** and **Unit** fields. |
 
 1. Select **OK** to confirm your selection.
 1. You can review the results under the **Allocation** tab for the same line.
