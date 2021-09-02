@@ -239,7 +239,7 @@ You need the following information before you start. Keep the information handy 
 4.  In the **Setup add-in** dialog box, enter the required information. To answer the questions, you must already have a storage account. If you don't already have a storage account, create one, or ask your admin to create one on your behalf.
 5.  Accept the terms of the offer by selecting the check box, and then select **Install**.
 
-The system installs and configures the data lake for the environment. This operation may take a few minutes. After installation and configuration are complete, you should see **Export to Data Lake** listed on the **Environment** page. You should see the status as **Installed**. If you are seeing another status, pl. see troubleshooting steps below.
+The system installs and configures the data lake for the environment. This operation may take a few minutes. After installation and configuration are complete, you should see **Export to Data Lake** listed on the **Environment** page. You should see the status as **Installed**. If you are seeing another status, please see the troubleshooting section below.
 
 ## <a name="troubleshooting"></a> Troubleshooting
 
