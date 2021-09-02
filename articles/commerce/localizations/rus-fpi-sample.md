@@ -51,7 +51,7 @@ The following scenarios are covered by the fiscal printer integration sample for
     - Capture a response from the fiscal printer, and store it in the channel database.
     - Taxes:
 
-        - Map the tax rates to the fiscal printer's tax types.
+        - Map tax rates to the fiscal printer's tax types.
         - Transfer mapped tax data to the fiscal printer.
 
     - Payments:
@@ -74,7 +74,7 @@ The following scenarios are covered by the fiscal printer integration sample for
 ### Limitations of the sample
 
 - The fiscal printer supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both stores and customers.
-- Printing of fiscal receipts for customer order operations (deposit, pick up, ship) is not currently supported. Support of customer order operations may be added in later versions.
+- Printing of fiscal receipts for customer order operations (e.g., deposit, pick up, ship, etc.) is not currently supported. Support of customer order operations may be added in later versions.
 - Printing of fiscal receipts for petty cash operations, such as tender declaration, float entry, tender removal, etc., is not currently supported. Support of petty cash operations may be added in later versions.
 - Daily reports (fiscal X and fiscal Z) are printed by using the fiscal printer's embedded format.
 - The fiscal printer doesn't support mixed transactions. The **Prohibit mixing sales and returns in one receipt** option should be set to **Yes** in POS functionality profiles.
@@ -111,9 +111,11 @@ To set up fiscal integration for Russia, complete the fiscal registration setup 
 
 1. [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings of the fiscal registration process that are [specific to Russia](#configure-the-fiscal-registration-process).
 1. [Set error handling settings](./setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+1. [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 1. [Enable manual execution of postponed fiscal registration](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Set up the functionality for management of customer information in POS](rus-customer-information.md#setup)
 
-#### Configure the fiscal registration process
+### Configure the fiscal registration process
 
 To enable the fiscal registration process for Russia in Commerce headquarters, follow these steps.
 
@@ -135,3 +137,7 @@ To enable the fiscal registration process for Russia in Commerce headquarters, f
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Open the functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the registration process that was created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Open the hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile.
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**. Open the distribution schedule, and select jobs **1070** and **1090** to transfer data to the channel database.
+
+### Configure channel components
+
+The fiscal printer integration sample for Russia is part of the Retail SDK. The sample is located in the **src \> FiscalIntegration \> AtolFiscalPrinterSample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/AtolFiscalPrinterSample)). [The sample consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of Commerce Runtime (CRT), and a fiscal connector, which is an extension of Hardware station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
