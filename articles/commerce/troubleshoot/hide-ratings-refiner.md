@@ -5,7 +5,7 @@ title: Ratings refiner appears on search results and category pages when the rat
 description: This topic provides troubleshooting guidance about how to hide the ratings refiner on search results and category pages when the Microsoft Dynamics 365 Commerce ratings and reviews solution isn't enabled for an e-commerce site.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 09/03/2021
+ms.date: 09/02/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
