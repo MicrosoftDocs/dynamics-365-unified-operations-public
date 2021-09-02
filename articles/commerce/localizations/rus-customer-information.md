@@ -58,8 +58,8 @@ The following example scenarios show how to work with customer information in PO
 1. Select **Add customer**, and then select **New**.
 1. Specify the new customer's attributes including:
 
-  - Primary and/or receipt email.
-  - Primary phone.
+    - Primary and/or receipt email.
+    - Primary phone.
 
 1. Save the customer record and add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
