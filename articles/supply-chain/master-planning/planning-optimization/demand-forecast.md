@@ -140,26 +140,26 @@ In this case, if you run forecast scheduling on January 1, the demand forecast r
 
 #### Transactions – reduction key
 
-If you select **Transactions - reduction key**, the forecast requirements are reduced by the qualified demand transactions that occur during the periods that are defined by the reduction key.
+If you set **Method used to reduce forecast requirements** to *Transactions - reduction key*, the forecast requirements are reduced by the qualified demand transactions that occur during the periods that are defined by the reduction key.
 
-The qualified demand is defined by the **Reduce forecast by** field on the **Coverage group** page. If you select **Orders**, then only sales order transactions are considered as qualified demand, otherwise, if you select **All transactions**, then any non-intercompany issue inventory transactions are considered as qualified demand. You can also set **Include intercompany orders** to **Yes** to also consider intercompany sales orders as qualified demand.
+The qualified demand is defined by the **Reduce forecast by** field on the **Coverage groups** page. If you set **Reduce forecast by** to *Orders*, then only sales order transactions are considered as qualified demand. Otherwise, if you set **Reduce forecast by** to *All transactions*, then any non-intercompany issue inventory transactions are considered as qualified demand. Set **Include intercompany orders** to *Yes* to also consider intercompany sales orders as qualified demand.
 
 Forecast reduction starts with the first (earliest) demand forecast record in the reduction key period. If the quantity of qualified inventory transactions is greater than the quantity of demand forecast lines in the same reduction key period, then the balance of inventory transactions quantity will be used to reduce the demand forecast quantity in the previous period (if there is unconsumed forecast).
 
 If there is no unconsumed forecast left in the previous reduction key period, the balance of inventory transactions quantity will be used to reduce the forecast quantity in the next month (if there is unconsumed forecast).
 
-The value set in the **Percent** field on the reduction key lines is not used for the case of **Transactions - reduction key**, only the dates are used to define the reduction key period.
+The value set in the **Percent** field on the reduction key lines is not used when **Method used to reduce forecast requirements** is set to *Transactions - reduction key*. Only the dates are used to define the reduction key period.
 
-    > [!NOTE]
-    > Any forecast posted on the date prior to today, the today's date included, will be ignored and won't be used to create planned orders. For example, if your demand forecast for the month is generated on January 1, and you are running master planning including demand forecasting on January 2, the demand forecast line with January 1 date will be ignored by the calculation.
+> [!NOTE]
+> Any forecast posted on or before today's date will be ignored and won't be used to create planned orders. For example, if your demand forecast for the month is generated on January 1, and you are running master planning including demand forecasting on January 2, the demand forecast line dated January 1 will be ignored by the calculation.
 
 ##### Example: Transactions – reduction key
 
-This example shows how actual orders that occur during the periods that are defined by the reduction key reduce demand forecast requirements.
+This example shows how actual orders that occur during the periods defined by the reduction key reduce demand forecast requirements.
 
-![Actual orders and forecast before master planning is run](media/forecast-reduction-keys-1.png)
+[![Actual orders and forecast before master planning is run](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-For this example, you select **Transactions - reduction key** in the **Method used to reduce forecast requirements** field on the **Master plans** page.
+For this example, you select *Transactions - reduction key* in the **Method used to reduce forecast requirements** field on the **Master plans** page.
 
 The following demand forecast lines exist on April 1.
 
@@ -179,7 +179,7 @@ The following sales order lines exist in April.
 |----------|------------------------------|
 | April 27 | 240                          |
 
-![Planned supply generated based on April orders](media/forecast-reduction-keys-2.png)
+[![Planned supply generated based on April orders](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
 
 The following requirement quantities are transferred to the master plan when master planning is run on April 1. You can see that the April forecast transactions were reduced by 240 demand quantity in a sequence starting with the first one.
 
@@ -203,7 +203,7 @@ The following sales order lines exist in May.
 | May 4    | 80                           |
 | May 11   | 130                          |
 
-![Planned supply generated based on April and May orders](media/forecast-reduction-keys-3.png)
+[![Planned supply generated based on April and May orders](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
 
 The following requirement quantities are transferred to the master plan when master planning is run on April 1. You can see that the April forecast transactions were reduced by 240 demand quantity in a sequence starting with the first one, while the May forecast transactions were reduced by 210 in total also starting from the first demand forecast transaction in May. However, the totals per period are preserved (400 in April, 300 in May).
 
