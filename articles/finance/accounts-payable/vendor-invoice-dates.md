@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor invoice dates
-description: This topic describes the dates that appear on vendor invoices, and how to set up the system to adjust the posting date automatically. 
+description: This topic describes the dates that appear on vendor invoices. It also explains how to set up the system so that it automatically adjusts the posting date.
 author: sunfzam
 ms.date: 08/30/2021
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
@@ -30,61 +30,53 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the dates that appear on vendor invoices, and how to set up the system to adjust the posting date automatically. 
+This topic describes the dates that appear on vendor invoices. It also explains how to set up the system so that it automatically adjusts the posting date.
 
-On the **Pending vendor invoice detailed** page, the invoice header displays four dates: the invoice received date, invoice date, posting date and due date. When a vendor invoice is created, the following dates are entered by default.
+On the **Pending vendor invoice detailed** page, the invoice header shows four dates: the invoice received date, the invoice date, the posting date, and the due date. When a vendor invoice is created, the following dates are entered by default:
 
-- **Invoice received date**: Displays the current system date.
-- **Posting date**: Displays the current system date. 
-- **Due date**: Determined from posting date and payment term.
-- **Invoice date**: Displays a blank value by default but can changed as needed. If you do change this date, the date on **Due date** field will be recalculated based on the invoice date and the payment term.
+- **Invoice received date** – This field is set to the current system date.
+- **Posting date** – This field is set to the current system date. 
+- **Due date** – The date in this field is calculated based on the posting date and payment terms.
+- **Invoice date** – By default, this field is blank. However, you can enter a value as you require. In that case, the date in the **Due date** field is recalculated based on the invoice date and the payment terms.
 
-The default entry for the invoice date is always blank, and can entered or changed as needed. If you do change this date, the date on **Due date** field will be recalculated based on the invoice date and the payment term.
+Sometimes, a vendor invoice might be in a pending state for a long time after the period close. When it's ready for posting, the old posting date of the past posting period is still used. However, that period has now been closed. Therefore, an Accounts payable (AP) clerk must manually change all the posting dates to the new posting period for all pending invoices that were previously created.
 
-Sometimes, vendor invoice could be in pending status for long time after the period close. When it’s ready for posting, the old posting date of past posting period is still used, which will not be possible since the period has been closed. As a result, AP clerk must manually change all the posting dates to the new posting period for all pending invoices created previously.
+The feature that is described in this topic lets you set up the system so that it automatically adjusts the posting date according to business requirements.
 
-This feature provides capability to let system automatically adjust the posting date according to business needs. 
+## Parameter for automatically adjusting the vendor invoice posting date
 
-## Parameter for automatically adjusting vendor invoice posting date
+Follow these steps to enable the system to automatically adjust the posting date for vendor invoices.
 
-You can let the system adjust the posting date automatically for vendor invoices. 
+1.	Go to **Account payable \> Setup \> Account payable parameters**.
+2.	On the **Ledger and sales tax** tab, in the **Adjust posting date automatically** field, select one of the following values:
 
-1.	Go to **Account payable > Setup > Account payable parameters**.
-2.	Open the **Ledger and sales tax** tab.
-3.	On the **Adjust posting date automatically** field, select one of the following options:
+    - **No change** – The system doesn't automatically change the posting date during posting. This value is selected by default.
+    - **Always change posting date to system date** – The system automatically changes the posting date to the system date during posting.
+    - **Change posting date to system date when posting date period is closed or on hold** – The system changes the posting date to the system date during posting, but only if the corresponding period of the posting date has a status of **Closed** or **On hold**.
+    - **Change posting date to first day of new period when posting date period is closed or on hold** – The system changes the posting date to the first day of the new open period, but only if the corresponding period of the posting date has a status of **Closed** or **On hold**.
 
-  - **No change**
-    This is the default selection. When it is selected, the system won't change the posting date automatically during posting.
-  - **Always change posting date to system date**
-     This selection always automatically changes the posting date to the system date during posting.
-  - **Change posting date to system date when posting date period is closed or on hold**
-     This selection changes the posting date to new system date during posting only if the corresponding period of posting date is **Closed** or **On hold**.
-  - **Change posting date to first day of new period when posting date period is closed or on hold**
-     This selection changes the posting date to the first day of new open period only if the corresponding period is **Closed** or **On hold**.
+## Impact of posting date changes
 
-## Impact of posting date change
-
-When the posting date on a pending vendor invoice is changed, the results of that change are as follows:
+When the posting date on a pending vendor invoice is changed, the change has the following effects:
 
 - **Due date**
-  If the **Invoice date** field is blank, the due date will be recalculated according to new posting date and payment terms. 
-  If the **Invoice date** field was entered earlier, the posting date change won't affect the due date. 
-  
-- **Cash discount date** 
-  If **Invoice date** is blank, then the new posting date is used to calculate the cash discount. 
-  If **Invoice date** is previously entered, the cash discount won't be changed.
-  
-- **Exchange rate** 
-   The exchange rate date is determined by the setting on the **Update vendor accounting using the invoice date** parameter on the **Accounts payable parameters** page (**Account payable > Setup > Account payable parameters > Invoice** tab).
 
-   If this parameter is set to **Yes**, Invoice date is used nd the posting date change won't influence the exchange rate.
+    - If the **Invoice date** field is blank, the due date is recalculated based on the new posting date and payment terms.
+    - If the **Invoice date** field was previously set, the posting date change doesn't affect the due date.
 
-   If this parameter is set to **No**, the posting date is used to calculate the exchange rate. When the posting date is updated, accounting and reporting amounts are recalculated. As a result, matching validation needs to be performed again.
+- **Cash discount date**
+
+    - If the **Invoice date** field is blank, the new posting date is used to calculate the cash discount.
+    - If the **Invoice date** field was previously set, the cash discount isn't changed.
+
+- **Exchange rate** – The exchange rate date is determined by the setting of the **Update vendor accounting using the invoice date** option on the **Invoice** tab of the **Accounts payable parameters** page (**Account payable \> Setup \> Account payable parameters**).
+
+    - If this option is set to **Yes**, the invoice date is used, and the posting date change doesn't affect the exchange rate.
+    - If this option is set to **No**, the posting date is used to calculate the exchange rate. When the posting date is updated, accounting and reporting amounts are recalculated. Therefore, matching validation must be done again.
 
 ## Validation
 
-Two other parameters on the **Invoice** tab (**Account payable > Setup > Account payable parameters > Invoice** tab) affect invoice processing.
+Two other fields on the **Invoice** tab of the **Accounts payable parameters** page (**Account payable \> Setup \> Account payable parameters**) affect invoice processing:
 
-   If the **Check the invoice number used** parameter is set to **Reject duplicates within fiscal year**, the system uses the posting date to check for duplicate invoices during invoice posting.
-
-   If **Error option** is selected on the **Require document date on vendor invoice** parameter, the **Invoice date on pending invoice header** field will be required. If the Invoice date is later than the posting date, the system will display an error message.
+- If the **Check the invoice number used** field is set to **Reject duplicates within fiscal year**, the system uses the posting date to check for duplicate invoices during invoice posting.
+- If the **Require document date on vendor invoice** field is set to **Error option**, the **Invoice date on pending invoice header** field is required. If the invoice date is later than the posting date, the system shows an error message.
