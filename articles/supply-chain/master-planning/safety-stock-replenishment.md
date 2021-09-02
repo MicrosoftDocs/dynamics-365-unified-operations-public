@@ -21,49 +21,56 @@ Safety stock indicates an additional quantity of an item held in the inventory i
 
 ## Set up safety stock levels for items
 
-Safety stock is set up as part of item coverage on the **Item coverage** page under **Released products** > **Plan** > **Coverage**.
+Safety stock is set up as part of item coverage on the **Item coverage** page under **Released products \> Plan \> Coverage**.
 
 In the **Minimum** field, enter the safety stock level that you want to maintain for the item. The value is expressed in inventory units. If you leave the field blank, the default value is zero. This field is available when you select **Period**, **Requirement**, or **Min/Max** in the **Coverage code** list. The stock level limit applies to the available inventory, which means that reservations and markings may trigger safety stock replenishment before the physical quantity goes below the specified minimum level.
 
 > [!NOTE]
 > You must define all other planned coverage dimensions before you can define the **Minimum** field. This prevents an invalid record from being used during master planning. This situation can occur if, for example, a dimension group is extended with an additional planned coverage dimension for which the minimum and maximum inventory quantities are not yet defined.
 
-You can use minimum keys to handle seasonal fluctuations in demand. For example, you can decrease the minimum inventory level for an item in the off-season, and then gradually increase the level during the other months. You create a minimum key by going to **Master planning** > **Setup** > **Coverage** > **Minimum/maximum keys**. You specify the minimum key to adjust the safety stock level by seasonality in the **Minimum key** field on the **Item coverage** page.
+You can use minimum keys to handle seasonal fluctuations in demand. For example, you can decrease the minimum inventory level for an item in the off-season, and then gradually increase the level during the other months. You create a minimum key by going to **Master planning \> Setup \> Coverage \> Minimum/maximum keys**. You specify the minimum key to adjust the safety stock level by seasonality in the **Minimum key** field on the **Item coverage** page.
 
 ## Example: Minimum key
 
-If you want to set up a minimum key that accounts for increased seasonal demand during the spring and summer months, go to **Master planning** > **Setup** > **Coverage** > **Minimum/maximum keys** and follow these steps.
+The following procedure shows an example of how to set up a minimum key that accounts for increased seasonal demand during the spring and summer months.
 
+1. Go to **Master planning \> Setup \> Coverage \> Minimum/maximum keys**.
 1. Select **New** to create a new minimum/maximum key.
 1. Enter an identifier in the **Minimum or maximum key** field and a name for the key in the **Name** field.
-1. Set the **Use the effective date** field to *Yes* and leave the **Effective date** field blank to make the key valid from the first day of the current year.
+1. Set **Use the effective date** to *Yes* and leave the **Effective date** field blank to make the key valid from the first day of the current year.
     > [!NOTE]
-    > A combination of the **Use the effective date** and **Effective date** field values defines the date that the key is valid from.
-    - When you set the **Use the effective date** field to *No*, the key would be valid from the current date or system date.
-    - When you set the **Use the effective date** field to *Yes* and fill in the **Effective date** field, the key would be valid from the date defined in the **Effective date** field.
-1. In the **Periods** section, create 12 lines and assign a number from 1 to 12 to the lines in the **Change** field. The field indicates the incremental change in the unit of time defined by the **Unit** field.
-1. In the **Unit** field, select **Months**. The **From date**, **To date**, and **Month** fields are filled in automatically, based on your selection: monthly periods starting from the first day of the current year.
-1. In the **Factor** field, enter the values that are described in the following table. The value defines the factor by which you want to multiply the minimum inventory.
+    > The combination of **Use the effective date** and **Effective date** defines the date that the key is valid from.
+    >
+    > - When **Use the effective date** is set to *No*, the key is valid from the current date or system date.
+    > - When **Use the effective date** is set to *Yes*, the key is valid from the date defined in the **Effective date** field.
 
-|Line|Enter this value|Result|
-|---|---|---|
-|1-3|1|Minimum inventory is based on the setting for January through March on the **Item coverage** page.|
-|4-5|2|Minimum inventory is multiplied by a factor of 2 for April through May.|
-|6-8|2.5|Minimum inventory is multiplied by a factor of 2.5 for June through August.|
-|9-12|1|Minimum inventory reverts to the setting for September through December on the **Item coverage** page.|
+1. In the **Periods** section, create 12 lines and make the following settings for each line:
+    - **Change** – Assign each line a unique number from 1 to 12. This field indicates the incremental change in the unit of time defined by the **Unit** field.
+    - **Unit** – Select *Months*.
+    - The **From date**, **To date**, and **Month** fields are filled in automatically based on your selections so far. Monthly periods start from the first day of the current year.
+    - **Factor** – Enter the values described in the following table. This value defines the factor by which you want to multiply the minimum inventory.
 
-![Minimum or maximum key periods](media/min-max-key-periods.png "Minimum or maximum key periods")
+    | Line (Change) | Factor | Result |
+    |---|---|---|
+    | 1-3 | 1 | Minimum inventory is based on the setting for January through March on the **Item coverage** page. |
+    | 4-5 | 2 | Minimum inventory is multiplied by a factor of 2 for April through May. |
+    | 6-8 | 2.5 | Minimum inventory is multiplied by a factor of 2.5 for June through August. |
+    | 9-12 | 1 | Minimum inventory reverts to the setting for September through December on the **Item coverage** page. |
+
+    Your settings should now resemble those in the following screen shot.
+
+    ![Minimum or maximum key periods](media/min-max-key-periods.png "Minimum or maximum key periods")
 
 > [!NOTE]
-> You can also use a wizard to create a minimum/maximum key. On the **Minimum or maximum keys** page, on the Action Pane, select **Wizard** to open the **Minimum/Maximum Keys Wizard**. The wizard will guide you step by step through the process of creation and setting up the minimum/maximum key.
+> You can also use a wizard to create a minimum/maximum key. On the **Minimum or maximum keys** page, on the Action Pane, select **Wizard** to open the **Minimum/Maximum Keys Wizard**. The wizard will guide you step-by-step through the process of creating and setting up the minimum/maximum key.
 
-If the coverage code is **Min/Max**, you can also specify the **Maximum** inventory quantity that you want to maintain for the item. The value is also expressed in inventory units. If the projected available inventory falls below the minimum quantity, master planning generates a planned order to fulfill all open requirements and brings the available inventory up to the specified maximum quantity. Just like you set up **Minimum**, you must define all other planned coverage dimensions before you can define the **Maximum** field.
+If the coverage code is *Min/Max*, you can also specify the **Maximum** inventory quantity that you want to maintain for an item. The value is also expressed in inventory units. If the projected available inventory falls below the minimum quantity, master planning generates a planned order to fulfill all open requirements and brings the available inventory up to the specified maximum quantity. Just as when you set up **Minimum**, you must define all other planned coverage dimensions before you can define the **Maximum** field.
 
 ## Example: Min/Max coverage code
 
 The minimum quantity is 10, and the maximum quantity is 15. Current on-hand inventory is 4. This gives a minimum quantity requirement of 6. However, because the maximum quantity is 15, master planning generates a planned order for 11 items.
 
-For items that follow seasonal demands, you may need to maintain different maximum levels. To do that, you need to define **Maximum keys** by going to **Master planning** > **Setup** > **Coverage** > **Minimum/maximum keys**. Fill in the **Maximum key** field on the **Item coverage** page. You can view the information about the safety stock levels, defined via minimum keys on the **Min/Max** tab, on the **Item coverage** page. You need to make sure that, for a certain period, the minimum and the maximum values are kept in sync.
+For items that follow seasonal demands, you may need to maintain different maximum levels. To do that, you need to define **Maximum keys** by going to **Master planning \> Setup \> Coverage \> Minimum/maximum keys**. Fill in the **Maximum key** field on the **Item coverage** page. You can view the information about the safety stock levels, defined via minimum keys on the **Min/Max** tab, on the **Item coverage** page. You need to make sure that, for a certain period, the minimum and the maximum values are kept in sync.
 
 ## Safety stock fulfillment
 
@@ -76,13 +83,13 @@ The following scenario shows how this parameter works and what are the differenc
 > [!NOTE]
 > For all the illustrations in this topic, the x-axis represents inventory, the y-axis represents days, the bars represent the inventory level, the arrows represent transactions, such as sales order lines, purchase order lines, or planned orders.
 
-[![Common scenario for safety stock fulfillment.](media/Scenario1.png)](media/Scenario1.png)
+[![Common scenario for safety stock fulfillment](media/Scenario1.png)](media/Scenario1.png)
 
 The **Fulfill minimum** parameter can have the following values:
 
 ### Today's date
 
-The specified minimum quantity is met on the date when master planning is run. The system tries to fulfill the safety stock limit as soon as possible, even though it can be unrealistic due to the lead time.
+The specified minimum quantity is met on the date when master planning is run. The system tries to fulfill the safety stock limit as soon as possible, even though it may be unrealistic due to the lead time.
 
 [![Requirement on today's date](media/TodayReq.png)](media/TodayReq.png)
 
