@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+[!include[banner](../includes/preview-banner.md)]
+
 ## Overview
 
 As a business user, you can use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to configure formats for outbound documents that must be generated in accordance with the legal requirements of various countries or regions. When these requirements demand that outbound documents be generated in different languages for different countries or regions, you can configure a single ER [format](general-electronic-reporting.md#FormatComponentOutbound) that contains language-dependent resources. In that way, you can reuse the format to generate outbound documents for various countries or regions. You might also want to use a single ER format to generate an outbound document in different languages for corresponding customers, vendors, subsidiaries, or any other parties.
