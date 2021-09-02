@@ -4,7 +4,7 @@
 title: Deployment configurations for the local agent
 description: This topic explains which deployment configurations can be specified, when deploying the local agent, to indicate a special configuration related to the environment.
 author: faix
-ms.date: 08/03/2021
+ms.date: 09/02/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -60,7 +60,7 @@ As part of establishing a trusted connection between a client and a server, one 
 
 This requires that a client (i.e. the FinancialReporting service) reach out to retrieve the certificate revocation list. If the certificate has been issued by a public certificate authority, then the client would need access to the internet in order to verify that the certificate has not been revoked.
 
-Some onpremises environments are not allowed to reach out into the internet. As such they may not be able to carry out this check. It is possible to disable this check by updating **skipCRLCheck** from **false** to **true**.
+Some onpremises environments are not allowed to reach out into the internet. As such, they may not be able to carry out this check. It is possible to disable this check by updating **skipCRLCheck** from **false** to **true**.
 
 Support for this option was introduced in release X.
 
