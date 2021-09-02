@@ -96,11 +96,7 @@ The cake without lactose uses lactose-free milk and could have the following att
 - Ingredient "milk" : attribute "lactose" = no
 - Ingredient "nuts" : attribute "nuts" = yes
 
-Because these products are mostly similar, it would be very convenient to pass these attributes from the children to the parent product. <!-- FKM: Which is the parent product in this example? --> To do so, you can use the *Attribute inheritance* functionality that is on the engineering version, as described in the following section.
-
-#### Set up attribute inheritance
-
-<!--KFM: We should provide a full procedure for how to set up the attribute inheritance functionality. -->
+Because these products are mostly similar, it would be very convenient to pass these attributes from the children (the two variations) to the parent product (the basic carrot cake). To do so, you can use the *Attribute inheritance* functionality, which is defined for each [engineering version](engineering-versions-product-category.md).
 
 ## Connect engineering attributes to an engineering product category
 
