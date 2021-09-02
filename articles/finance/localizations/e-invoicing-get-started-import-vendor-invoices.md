@@ -48,13 +48,17 @@ Configure an email account channel if the Electronic invoicing feature you creat
 
 1. In RCS, select the Electronic invoicing feature that you created. Make sure you select the version with a status of **Draft**.
 2. On **Setups** tab, in the grid, select a feature setup, and then select **Edit**.
-3. On the **Data channel** tab in the **Parameters** field group, select **Server address** and enter the email account provider.
-4. Select **Server port** and enter the port used by the email account provider.
-5. Select **User name secret** and enter the name of the Key vault secret that contains the ID of the email user account.
-6. Select **User password secret** and enter the name of the Key vault secret that contains the password of the email user account.
-7. Select **Subject filter**. Review and update the string that contains the default email subject to identify the email that contains the electronic vendor invoice to import.
-8. On the **Applicability rules** tab, review and update the criteria if necessary. For more information, see [Applicability rules](e-invoicing-configuration-rcs.md#applicability-rules).
-9. Select **Save** and close the page.
+3. On the **Data channel** tab in the **Parameters** field group, setup parameters and attachments filters as described in the next steps.
+4. In the field **Data channel** provide the name of the cahnnel, that should have length 10 symbols or less.
+5. In the field **Server address** enter the email account provider. As an example, for https://outlook.live.com/ Server address is "imap-mail.outlook.com".
+6. In the field **Server port** enter the port used by the email account provider. As an example, for https://outlook.live.com/ Server port is "993".
+7. In the field **User name secret** enter the name of the Key vault secret that contains the ID of the email user account. This secret must be created in Azure key vault and setup in Service environment. 
+8. In the field **User password secret** enter the name of the Key vault secret that contains the password of the email user account.
+9. Optionally define parameters **From filter**, **Subject filter**, **Date filter**.
+10. Enter names of the your mail box folders where mails will be imported from (**Main folder**), saved after successful processing (**Archive folder**), and saved after not successful processing (**Error folder**). You are not required to create these folders in the mail box, they will be created automatically after first e-invoice import and processing. 
+11. In the **Attachments filter** field group add files filtering information. Only attachments that satisfy defined filter will be processed. As an example, you can setup "\*.xml" for attachments with xml extension. The name of the attachment will be used further in Dynamics 365 Finance or Dynamics 365 Supply Chain Management during setup. 
+12. On the **Applicability rules** tab, review and update the criteria if necessary. One of the mandatory criterias - field "Channel" that should be equal to *Data channel* provided earlier. For more information, see [Applicability rules](e-invoicing-configuration-rcs.md#applicability-rules).
+13. Select **Save** and close the page.
 
 ### Configure a Microsoft SharePoint channel
 
@@ -74,10 +78,10 @@ Configure a Microsoft SharePoint channel if the Electronic invoicing feature imp
 
 To deploy the Electronic invoicing feature, see [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
 
-## Set up vendor invoice import in Finance and Supply Chain Management
+## Set up vendor invoice import in Dynamics 365 Finance or Dynamics 365 Supply Chain Management
 Complete the steps in the following two sections to set up different types of vendor invoice import.
 
-### Import vendor invoices from email
+### Import Brazilian NF-e from email
 
 1. Sign in to your Finance or Supply Chain Management environment and verify that you are in the correct legal entity.
 2. Go to **Organization administration** > **Setup** > **Electronic document parameters**.
@@ -101,19 +105,21 @@ Complete the steps in the following two sections to set up different types of ve
 ### Import PEPPOL electronic vendor invoices
 
 1. Go to the **Electronic reporting** workspace and select **Reporting configurations**.
-2. Select **Customer invoice context model** and create a derived configuration.
+2. Select *Customer invoice context model* and create a derived configuration (**Create configuration** > **Derive from Name: Customer invoice context model, Microsoft**).
 3. On the **Draft** version, select **Designer**.
-4. In the **Data model** tree, select **Customer invoice**, and then select **Map model to datasource**.
-5. In the **Definitions** tree, select **CustomerInvoice** and then select **Designer**.
-6. In the **Data sources** tree, select **Context\_Channel**. In the **Value** field, select **PEPPOL**. This is the name of the channel given in the configuration of the data channel for the Electronic invoicing feature in RCS. 
+4. In the **Data model** tree, click **Map model to datasource**.
+5. In the **Definitions** tree, select **DataChannel** and then select **Designer**.
+6. In the **Data sources** tree, expand **$Context\_Channel** container. In the **Value** field, click **Edit** and enter Data channel name. This is the name of the channel given in the configuration of the data channel for the Electronic invoicing feature in RCS. 
 7. Select **Save** and close the page.
 8. Close the page.
-9. Select **Customer invoice context model**, and on the **Versions** FastTab, select **Change Status** > **Completed**.
+9. Select newly created derived configuration from *Customer invoice context model*, and on the **Versions** FastTab, select **Change Status** > **Completed**.
 10. Go to **Organization administration** > **Setup** > **Electronic document parameters** and on the **Features** tab, make sure the **PEPPOL Global electronic invoices** is selected. 
-11. On the **External channels** tab, in the **Channels** field group, select **Add**.
-12. In the **Channel** field, enter **PEPPOL**. In the **Description** field, enter a description.
-13. In the **Company** field, select the legal entity. In the **Document context** field, select **Customer invoice context – Customer invoice context model**.
-14. Select **Save** and then close the page.
+11. On the **External channels** tab, in the **Channels** field group, click **Add**.
+12. In the **Channel** field, enter Data channel name. In the **Description** field, enter a description.
+13. In the **Company** field, select the legal entity. In the **Document context** field, select newly create derived configuration from *Customer invoice context model* and description of Mapping should be *Data channel context*.
+14. In the **Import sources** field group, click **Add**.
+15. In the **Name** field enter *Attachments filter name* and select *Vendor invoice header* in **Data entity name**, *Vendor invoice imprt - Import vendor invoice* on **Model mapping** field.
+16. Click **Save** and then close the page.
 
 
 ## Receive electronic invoices
@@ -122,9 +128,12 @@ To receive electonic invoices, follow these steps:
 1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Receive electronic documents**.
 2. Select **OK** and then close the page.
 
+The Electronic Invoicing service performs several steps during invoices import from the Data channels. There are at least two steps - accessing mail box and reading e-mail, and processing it by the service. To perform these two steps the client should call the service at least twice. The recommendation is to setup batch for receiving electronic documents.
+
 ## View receive logs for electronic invoices
 
 To view the receive logs for electronic invoices, go to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document receipt log**.
+If you don't see successfully proccesed invoices, remove filter for the table.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
