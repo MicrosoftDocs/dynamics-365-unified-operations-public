@@ -215,7 +215,7 @@ Because the DEB report is a combination of the EU Sales List and the Intrastat r
 
 ## Example
 
-The following example shows how to set up and work with NGP codes. It uses the **DEMF** legal entity.
+The following example shows how to set up French Intrastat and create the DEB report. It uses the **DEMF** legal entity.
 
 1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest versions of the following ER configurations for the Intrastat declaration format:
 
