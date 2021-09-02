@@ -68,9 +68,10 @@ The following table shows the fields that are included in the German Intrastat d
     3. In the **Report format mapping** field, select **Intrastat report**.
     4. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
     5. In the **Transaction code** field, select the transaction code for property transfers. You use this code for transactions that produce actual or planned transfers of property against compensation (financial or other). You also use it for corrections.
-    6. In the **Credit note** field, select the transaction code for the return of goods. You use this code for the return of goods after the transaction that was originally recorded under the transaction code.
-    7. In the **Authority** field, select the Intrastat authority.
-    8. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**, and enter the following information for the Intrastat authority that you selected in the previous step:
+    6. In the **Credit note** field, select the transaction code for the return of goods.
+    7. In the **Worker** field, select the contact person for Intrastat report. Alternatively, on the **Contact** tab set the fields **Name**, **Telephone**, **Fax**, **Email**, **Internet address**. This fields will be show in the report.
+    8. In the **Authority** field, select the Intrastat authority.
+    9. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**, and enter the following information for the Intrastat authority that you selected in the previous step:
 
        - Authority identification
        - Address
