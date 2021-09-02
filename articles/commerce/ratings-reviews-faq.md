@@ -1,14 +1,14 @@
 ---
 # required metadata
 title: Ratings and reviews FAQ
-description: This topic provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Commerce ratings and reviews solution.
+description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce ratings and reviews solution.
 author: gvrmohanreddy
 ms.date: 09/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
 # optional metadata
-# ms.search.form:  
+# ms.search.form: 
 #ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -28,15 +28,15 @@ ms.dyn365.ops.version: 10.0.22
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Commerce ratings and reviews solution.
+This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce ratings and reviews solution.
 
-### How do I hide the ratings refiner that appears on search results and category pages if my e-commerce site is not using the ratings and reviews solution? 
+## How do I hide the ratings refiner that appears on search results and category pages if my e-commerce site doesn't use the ratings and reviews solution?
 
-For instructions on how to hide the ratings refiner on search results and category pages in an e-commerce channel that is not using the ratings and reviews solution, see [Ratings refiner appears on search results and category pages when ratings and reviews solution is not enabled](troubleshoot/hide-ratings-refiner.md).
+For instructions about how to hide the ratings refiner on search results and category pages in an e-commerce channel that doesn't use the ratings and reviews solution, see [Ratings refiner appears on search results and category pages when the ratings and reviews solution isn't enabled](troubleshoot/hide-ratings-refiner.md).
 
-### How do I enforce the manual publishing of ratings and reviews? 
+## How do I enforce the manual publishing of ratings and reviews?
 
-For instructions on enabling and enforcing the manual publishing of ratings and reviews to avoid automatic publishing, see [Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md).
+For instructions about how to enable and enforce the manual publishing of ratings and reviews to avoid automatic publishing, see [Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md).
 
 ## Additional resources
 
@@ -46,4 +46,4 @@ For instructions on enabling and enforcing the manual publishing of ratings and 
 
 [Enable manual publishing of ratings and reviews by a moderator](manual-publish-rating-reviews.md)
 
-[Ratings refiner appears on search results and category pages when Commerce ratings and reviews solution is not enabled](troubleshoot/hide-ratings-refiner.md)
+[Ratings refiner appears on search results and category pages when the ratings and reviews solution isn't enabled](troubleshoot/hide-ratings-refiner.md)
