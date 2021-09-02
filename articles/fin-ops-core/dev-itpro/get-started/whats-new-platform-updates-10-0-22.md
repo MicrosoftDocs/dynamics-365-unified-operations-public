@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.22 of Finance and Operations apps (November 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.22 of Finance and Operations apps.
 author: sericks007
-ms.date: 09/01/2021
+ms.date: 09/03/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -41,7 +41,7 @@ The following features are included in this release. Some of the listed features
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://lcs.dynamics.com).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=615299).
 
 ### Dynamics 365: 2021 release wave 1 plan
 
