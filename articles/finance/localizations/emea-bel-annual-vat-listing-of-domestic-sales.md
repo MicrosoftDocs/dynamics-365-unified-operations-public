@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Bank file formats for Australian banks
-description: This topic provides information about Australian banks and the file formats that they accept for electronic payments.
-author: anasyash
-ms.date: 07/23/2021
+title: Annual VAT listing of domestic sales
+description: This topic provides information about Belgium annual VAT listing of domestic sales or Invoice turnover report.
+author: andosip
+ms.date: 09/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -18,7 +18,7 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
-ms.search.region: Australia
+ms.search.region: Belgium
 # ms.search.industry: 
 ms.author: anasyash
 ms.search.validFrom: 2016-02-28
@@ -70,55 +70,37 @@ Import the latest version of the following Electronic reporting (ER) configurati
 
 -   Invoice turnover report (BE)
 
-For more information, see Download ER configurations from the Global repository of Configuration service.
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ### Create registration types for company codes
 
 You must create two registration types for company codes: one for the VAT ID and one for the enterprise number.
 
-1.  
+1.  Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**.
 
-2.  
+2.  On the Action Pane, select **New** to create the registration type for the VAT ID.
 
-3.  Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**.
+3.  In the **Enter registration type details** dialog box, in the **Name** field. enter a name for the new registration type. For example, enter **VAT ID**.
 
-<!-- -->
+4.  In the **Country/region** field, select **BEL**.
 
-1.  
+5.  Select **Create**.
 
-<!-- -->
+6. On the Action Pane, select **New** to create the registration type for the enterprise number.
 
-4.  On the Action Pane, select **New** to create the registration type for the VAT ID.
+7. In the **Enter registration type details** dialog box, in the **Name** field, enter a name for the new registration type. For example, enter **ENTNUM**.
 
-5.  
+8. In the **Country/region** field, select **BEL**.
 
-6.  In the **Enter registration type details** dialog box, in the **Name** field. enter a name for the new registration type. For example, enter **VAT ID**.
-
-7.  In the **Country/region** field, select **BEL**.
-
-8.  
-
-9.  Select **Create**.
-
-10. On the Action Pane, select **New** to create the registration type for the enterprise number.
-
-11. In the **Enter registration type details** dialog box, in the **Name** field, enter a name for the new registration type. For example, enter **ENTNUM**.
-
-12. In the **Country/region** field, select **BEL**.
-
-13. Select **Create**.
+9. Select **Create**.
 
 ### Match the registration types with registration categories
 
-1.  
+1.  Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories**.  
 
-2.  Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories**.
+2.  For the registration type for the VAT ID, select the **VAT ID** registration category.
 
-3.  
-
-4.  For the registration type for the VAT ID, select the **VAT ID** registration category.
-
-5.  For the registration type for the enterprise number, select the **Enterprise ID (COID)** registration category.
+3.  For the registration type for the enterprise number, select the **Enterprise ID (COID)** registration category.
 
 ### Set up a VAT ID and enterprise number for your company
 
@@ -126,59 +108,47 @@ You must create two registration types for company codes: one for the VAT ID and
 
 2.  In the grid, select your company.
 
-3.  
+3.  On the Action Pane, select **Registration IDs**.
 
-4.  On the Action Pane, select **Registration IDs**.
+4.  On the **Registration ID** FastTab, select **Add**.
 
-5.  On the **Registration ID** FastTab, select **Add**.
+5.  In the **Registration type** field, select one of the registration types that you created earlier.
 
-6.  In the **Registration type** field, select one of the registration types that you created earlier.
+6.  Enter your company's VAT ID or enterprise number, depending on the registration type that you selected in the previous step.
 
-7.  Enter your company's VAT ID or enterprise number, depending on the registration type that you selected in the previous step.
-
-8.  Repeat steps 4 through 6 for the other registration type that you created earlier.
+7.  Repeat steps 4 through 6 for the other registration type that you created earlier.
 
 ### Set up a VAT ID and enterprise number for all your company's Belgian customers
 
-1.  
+1.  Go to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
 
-2.  Go to **Accounts receivable** &gt; **Customers** &gt; **All customers**.
+2.  On the Action Pane, select **Registration IDs**.
 
-3.  
+3.  On the **Registration ID** FastTab, select **Add**.
 
-4.  On the Action Pane, select **Registration IDs**.
+4.  In the **Registration type** field, select one of the registration types that you created earlier.
 
-5.  On the **Registration ID** FastTab, select **Add**.
+5.  Enter your customer's VAT ID or enterprise number, depending on the registration type that you selected in the previous step.
 
-6.  In the **Registration type** field, select one of the registration types that you created earlier.
-
-7.  Enter your customer's VAT ID or enterprise number, depending on the registration type that you selected in the previous step.
-
-8.  Repeat steps 3 through 5 for the other registration type that you created earlier.
+6.  Repeat steps 3 through 5 for the other registration type that you created earlier.
 
 ### Create number sequence codes for the Invoice turnover report
 
 1.  Go to **Organization administration** &gt; **Number sequences** &gt; **Number sequences**.
 
-2.  
+2.  Create a number sequence.
 
-3.  Create a number sequence.
+3.  On the **Segments** FastTab, remove all the lines, and then select **Add**.
 
-4.  On the **Segments** FastTab, remove all the lines, and then select **Add**.
+4.  In the **Segment** field, select **Alphanumeric**.
 
-5.  In the **Segment** field, select **Alphanumeric**.
+5.  In the **Value** field, enter **\#\#\#\#\#\#\#\#\#**.
 
-6.  
+6.  On the **General** FastTab, in the **Setup** section, set the **Continuous** option to **Yes**.
 
-7.  In the **Value** field, enter **\#\#\#\#\#\#\#\#\#**.
+7. Go to **General ledger** &gt; **Ledger setup** &gt; **General ledger parameters**.
 
-8.  
-
-9.  On the **General** FastTab, in the **Setup** section, set the **Continuous** option to **Yes**.
-
-10. Go to **General ledger** &gt; **Ledger setup** &gt; **General ledger parameters**.
-
-11. On the **Number sequence** tab, in the **Number sequence code** field for the **Annual sales list ID** reference, select the number sequence that you just created.
+8. On the **Number sequence** tab, in the **Number sequence code** field for the **Annual sales list ID** reference, select the number sequence that you just created.
 
 ## Generate the Invoice turnover report
 
@@ -378,6 +348,6 @@ You must create two registration types for company codes: one for the VAT ID and
 
 5.  Review the report in .xlsx format.
 
-![Table Description automatically generated](media/emea-bel-invoice-turnover-report.png)
+![Table Description automatically generated](media/emea-bel-turnover-report.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
