@@ -26,13 +26,11 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 ## Features included in this release
 
-The following table lists the features included in this release. The *Feature* column provides links to the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), where you can see the official release dates for each feature. The *More information* column provides more details and/or links to related documentation.
+The following table lists the features included in this release. The *Feature* column provides links to the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), where you can see the official release dates for each feature. The *More information* column provides more details and/or links to related documentation. To determine how to turn on a feature, refer to the *Enabled by* column. For more information about how to use feature management, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). We may update this topic to include features that made it into the build after this topic was initially published. 
 
-Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features are still in preview, while others may already be generally available.
-
-| Feature area | Feature | More information |
-|---|---|---|
-| Planning | [Planning Optimization support for capability-based resource allocation](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [Scheduling with infinite capacity](../master-planning/planning-optimization/infinite-capacity-planning.md) |
+| Feature area | Feature | More information | Enabled by |
+|---|---|---|---|
+| Planning | [Planning Optimization support for capability-based resource allocation](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [Scheduling with infinite capacity](../master-planning/planning-optimization/infinite-capacity-planning.md) | Feature management (*Infinite capacity scheduling for Planning Optimization*) |
 
 ## Feature enhancements included in this release
 
