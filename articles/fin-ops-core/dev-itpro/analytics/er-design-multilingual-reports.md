@@ -4,7 +4,7 @@
 title: Design multilingual reports in Electronic reporting
 description: This topic explains how you can use Electronic reporting (ER) labels to design and generate multilingual reports.
 author: NickSelin
-ms.date: 08/31/2021
+ms.date: 00/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -236,7 +236,7 @@ As described earlier in this topic, the **Label** and **Description** attributes
 
 ## <a name=performance></a>Performance
 
-When you configure an ER format component to generate a report in your preferred [language](#language), or to import an inbound document where the content is parsed by your preferred language, we recommend that you enable the **Cache the preferred language of the current user for ER runs** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace. This feature helps improve performance, especially for ER format components that contain multiple references to labels in ER formulas and bindings and many [validation](general-electronic-reporting-formula-designer.md#TestFormula) rules to generate user Infolog records in your preferred language.
+When you configure an ER format component to generate a report in your preferred [language](#language), or to import an inbound document where the content is parsed by your preferred language, we recommend that you enable the **Cache the preferred language of the current user for ER runs** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace. This feature helps improve performance, especially for ER format components that contain multiple references to labels in ER formulas and bindings and many [validation](general-electronic-reporting-formula-designer.md#TestFormula) rules to generate user messages in your preferred language.
 
 ## Additional resources
 
