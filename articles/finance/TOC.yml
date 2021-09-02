@@ -1660,6 +1660,8 @@
           href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
         - name: Set up and maintain PRODCOM
           href: localizations/emea-bel-prodcom-report.md
+        - name: Annual VAT listing of domestic sales
+          href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
       - name: Brazil
         items:
         - name: Brazil overview
