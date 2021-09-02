@@ -46,6 +46,12 @@ This release contains the features and bug fixes listed in the following table.
 |Bug fix | Whenever a sales order is created in Sales app, default the **Invoice Customer** based on **Billing Account** value of the **Potential Customer**.| 	General availability |
 |Bug fix | Ability to toggle **Price override** field to true or false. | 	General availability |
 
+This release includes following map changes.
++ [CDS sales quotation lines] - [quotedetails] map version 1.0.0.1
++ [CDS sales order lines] - [salesorderdetails] map version 1.0.0.1
++ [Vendors V2] - [msdyn_vendors] map version 1.0.0.3
++ [Vendor payment method] - [msdyn_vendorpaymentmethods] map version 1.0.0.1
+
 ## August 2021 release of party and global address book 
 
 The August 2021 release of the [Dual-write Party and Global Address Book Solutions 3.1.0.2](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
@@ -62,6 +68,7 @@ This release contains features and bug fixes listed in the following table.
 | Bug fix| Identify a phone number as mobile. | General availability |
 | Bug fix| Update the display name from **Parties Electronic Addresses** table to **Party Electronic Addresses** table. | General availability |
 | Party Electronic Address | Synchronize primary electronic address data from lead qualification process, account, and contact creation process to Party Electronic Addresses, and vice versa. | General availability |
+
 
 ## July 2021 release
 
