@@ -183,28 +183,28 @@ This section provides details of sales tax setup and reporting in VAT 100 report
 
 Set up sales tax code, sales tax group and item sales tax group.
 
-    ![Sales tax setup for Domestic purchase.](media/uk-mtd-setup-vatp20.png)
+![Sales tax setup for Domestic purchase.](media/uk-mtd-setup-vatp20.png)
 
 Post a vendor invoice and generate VAT 100 report. Verify the amounts in box 4 and box 7.
 
-    ![VAT 100 report for Domestic purchase.](media/uk-mtd-report-vatp20.png)
+![VAT 100 report for Domestic purchase.](media/uk-mtd-report-vatp20.png)
 
 ### Domestic sale
 
 Set up sales tax code, sales tax group and item sales tax group.
 
-    ![Sales tax setup for Domestic sale.](media/uk-mtd-setup-vats20.png)
+![Sales tax setup for Domestic sale.](media/uk-mtd-setup-vats20.png)
 
 Post a free text invoice and generate VAT 100 report. Verify the amounts in box 1 and box 6.
 
-    ![VAT 100 report for Domestic purchase.](media/uk-mtd-report-vats20.png)
+![VAT 100 report for Domestic purchase.](media/uk-mtd-report-vats20.png)
 
 ### Domestic reverse charge for services
 
 Set up sales tax code, sales tax group and item sales tax group.
 
-    ![Sales tax setup for domestic reverse charge.](media/uk-mtd-setup-rch.png)
+![Sales tax setup for domestic reverse charge.](media/uk-mtd-setup-rch.png)
 
 Post a vendor invoice and generate VAT 100 report. Verify the amounts in box 1, 4, 6 and box 7.
 
-    ![VAT 100 report for export.](media/uk-mtd-report-rch.png)
+![VAT 100 report for export.](media/uk-mtd-report-rch.png)
