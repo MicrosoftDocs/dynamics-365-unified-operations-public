@@ -35,7 +35,7 @@ This topic describes how you can handle customer information, such as the custom
 You can specify the customer information, such as the phone number and email address, when you create or edit a customer master record in POS. You can also specify it for a sales transaction by copying it from the transaction customer or entering it manually. The information can then be included in the fiscal receipt. See [Fiscal printer integration sample for Russia](rus-fpi-sample.md) for more information on generating and printing fiscal receipts.
 
 > [!NOTE]
-> The customer information is included in the fiscal receipt that is sent to the fiscal printer, but it is not printed in the sample fiscal receipt. You need to customize the sample in order to print the customer informaation in the fiscal receipt.
+> The customer information is included in the fiscal receipt that is sent to the fiscal printer, but it is not printed in the sample fiscal receipt. You need to customize the sample in order to print the customer information in the fiscal receipt.
 
 ## Example scenarios
 
