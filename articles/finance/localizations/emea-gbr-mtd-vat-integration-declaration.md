@@ -107,7 +107,7 @@ When the **Company tax registration in customer invoices** feature is enabled, t
 
 ## Sales tax groups
 
-Create sales tax groups for the different types of business operations that are applicable to your company. These operation types can include **Accounts payable Domestic**, **Accounts payable Third country**, **Accounts receivable Domestic**, **Accounts receivable Third country**, and **Reverse charge VAT**.
+Create sales tax groups for the different types of business operations that are applicable to your company. These operation types can include, for example, **Accounts payable Domestic**, **Accounts payable Third country**, **Accounts receivable Domestic**, **Accounts receivable Third country**, **Reverse charge VAT**.
 
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax groups**.
 2. Select **New** to create a record, and specify the parameters of the sales tax group. For more information, see [Set up sales tax groups and item sales tax groups](../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md).
@@ -135,27 +135,29 @@ Create sales tax groups for the different types of business operations that are 
 5. For reverse charge VAT operations, create two sales tax codes, one that has a negative rate and one that has a positive rate. For more information, see [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md). As of January 1, 2021, a “reverse charge” approach can be used for acquisitions that companies in Great Britain make from counterparties in the EU, and that can be accounted for as import VAT on a VAT Return. (This accounting is also known as *postponed VAT accounting*.). 
 6. Distribute the new sales tax codes into sales tax groups and item sales tax groups. Make sure that each sales tax code is added to an item sales tax group and a sales tax group, and that the required fields are set on the **Setup** FastTab of the **Sales tax groups** page. Here are some of the required fields:
 
-    - **Exempt** and **Exempt code** - for export operations.
-    - **Reverse charge** - for the sales tax codes set up for importing/reverse change operations with negative rate.
+    - **Exempt** and **Exempt code** - for VAT exempt operations.
+    - **Reverse charge** - for the sales tax codes set up for importing/reverse change operations with *negative* rate.
     - **Use tax** - for intra-community acquisitions of goods made in Northern Ireland from EU Member States. As of January 1, 2021, tax setups that use the “use tax” approach will no longer be applicable to acquisitions that companies in Great Britain make from the EU.
 
     The combination of these groups must lead to one sales tax code. There is an exception for the setup of reverse charge VAT operations, which Finance uses for VAT posting. These two groups, together with **Reporting type** defind for **Item sales tax group** and the **Country/region type** of the **Sales tax code**, will lead to reporting in different [boxes of the VAT declaration](#boxes).
  
-To exclude the tax base amount from box 6, you must complete the following setup.
+> [!NOTE]
+> As of January 1, 2021, dispatch of goods and related costs to customers in the EU must be excluded from box 8 if the dispatches are from Great Britain. Therefore, the sales tax code with the **Country/Region type** value set up to **EU** can be used for intra-community dispatches of goods from Northern Ireland to EU Member States only.
+
+## Set up reverse charge rules
+
+1. Go to **Tax** > **Setup** > **Parameters** > **General ledger parameters**. On the **Reverse charge** tab, select the **Enable reverse charge** check box. 
+2. In the **Purchase order sales tax group** field, select the sales tax group created and set up for importing/reverse change operations.
+
+For more information, see [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md).
+ 
+There are several scenarios (for example, postponed VAT accounting, VAT reverse charge for building and construction services) where deemed output VAT will be accounted for on the value of the invoice and added to box 1 of the VAT return but nothing will be entered in box 6 for the transaction. To exclude the tax base amount from box 6, you must complete the following setup, on example of *postponed VAT accounting* scenario.
 
 1. Go to **Tax** > **Setup** > **Sales tax** > **Reverse charge rules**, and select **New**.
 2. In the **Partner country/region type** field, select **Third country/region**. The same partner country/region type must be specified in the master data for related vendors.
 3. In the **Reverse charge item group** field select **All**.
 4. In the **Threshold amount** field, enter **0.00**.
 5. Select the **Empty tax base for outgoing tax** check box.
-
-> [!NOTE]
-> As of January 1, 2021, dispatch of goods and related costs to customers in the EU must be excluded from box 8 if the dispatches are from Great Britain. Therefore, the sales tax code with the **Country/Region type** value set up to **EU** can be used for intra-community dispatches of goods from Northern Ireland to EU Member States only.
-
-## Set up the sales tax group for reverse charge rules
-
-1. Go to **Tax** > **Setup** > **Parameters** > **General ledger parameters**. On the **Reverse charge** tab, select the **Enable reverse charge** check box. 
-2. In the **Purchase order sales tax group** field, select the sales tax group created and set up for importing/reverse change operations.
 
 ## <a id="boxes"></a>Box calculation for the VAT declaration
 
