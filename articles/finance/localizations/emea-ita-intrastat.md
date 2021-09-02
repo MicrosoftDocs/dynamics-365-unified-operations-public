@@ -651,7 +651,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 
     - **Transaction code** – Select the transaction code for property transfers. This code will be used for transactions that cause an actual or planned transfer of property against compensation, and also for corrections.
 
-    - **Credit note** – Select the transaction code for the return of goods. This code will be used for the return of goods after the original transaction is recorded under the transaction code.
+    - **Credit note** – Select the transaction code for the return of goods.
 
     - **Sales reporting period** – Select the reporting period for the export declaration: **Month** or **Quarter**. Quarterly declarations are exported in simplified format.
 
