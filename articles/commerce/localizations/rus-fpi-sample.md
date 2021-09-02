@@ -48,7 +48,7 @@ The following scenarios are covered by the fiscal printer integration sample for
 - Sales scenarios:
 
     - Print a fiscal receipt for cash-and-carry sales and returns.
-    - Capture a response from the fiscal printer, and store it in the channel database.
+    - Capture a response from the fiscal printer and store it in the channel database.
     - Taxes:
 
         - Map tax rates to the fiscal printer's tax types.
