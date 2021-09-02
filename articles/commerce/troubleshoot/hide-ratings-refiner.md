@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Ratings refiner appears on search results and category pages when ratings and reviews solution is not enabled 
-description: This topic provides troubleshooting guidance to hide the ratings refiner on products search and categories pages when the Dynamics 365 Commerce ratings and reviews solution is not enabled for an e-commerce site.
+title: Ratings refiner appears on search results and category pages when the ratings and reviews solution isn't enabled
+description: This topic provides troubleshooting guidance about how to hide the ratings refiner on search results and category pages when the Microsoft Dynamics 365 Commerce ratings and reviews solution isn't enabled for an e-commerce site.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 09/03/2021
@@ -11,7 +11,7 @@ ms.prod:
 ms.service: dynamics-365-commerce
 ms.technology: 
 # optional metadata
-# ms.search.form:  
+# ms.search.form: 
 #ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -27,26 +27,26 @@ ms.dyn365.ops.version: 10.0.22
 
 ---
 
-# Ratings refiner appears on search results and category pages when ratings and reviews solution is not enabled 
+# Ratings refiner appears on search results and category pages when the ratings and reviews solution isn't enabled
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic provides troubleshooting guidance to hide the ratings refiner on products search and categories pages when the Dynamics 365 Commerce ratings and reviews solution is not enabled for an e-commerce channel.
+This topic provides troubleshooting guidance about how to hide the ratings refiner on search results and category pages when the Microsoft Dynamics 365 Commerce ratings and reviews solution isn't enabled for an e-commerce site.
 
 ## Description
 
-Ratings refiner appears on search results and category pages in an e-commerce channel. 
+The ratings refiner appears on search results and category pages in an e-commerce channel that doesn't use the ratings and reviews solution.
 
 ## Resolution
 
-### Enable "Hide rating" setting in Commerce site builder. 
+### Enable the Hide rating setting in Commerce site builder
 
-To enable the **Hide rating** setting in site builder to hide the ratings refiner on search results and category pages, follow these steps.
+To enable the **Hide rating** setting in Commerce site builder, so that the ratings refiner is hidden on search results and category pages, follow these steps.
 
 1. Go to **Site Settings \> Extensions**.
 1. Under **Ratings and Reviews**, select the **Hide rating** checkbox.
-1. Select **Save and publish**. 
+1. Select **Save and publish**.
 
 ## Additional resources
 
