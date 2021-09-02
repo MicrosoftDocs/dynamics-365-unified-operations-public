@@ -5,7 +5,7 @@ title: Fiscal printer integration sample for Russia
 description: This topic provides an overview of the fiscal integration sample for Italy.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/20/2021
+ms.date: 09/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
