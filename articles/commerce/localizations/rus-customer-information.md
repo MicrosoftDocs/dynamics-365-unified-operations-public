@@ -4,7 +4,7 @@
 title: Customer information management for Russia
 description: This topic describes how to handle customer information in POS for Russia.
 author: EvgenyPopovMBS
-ms.date: 08/20/2021
+ms.date: 09/02/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -32,7 +32,10 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic describes how you can handle customer information, such as the customer's phone number or email address, in the Commerce point of sale (POS) for Russia.
 
-You can specify the customer information, such as the phone number and email address, when you create or edit a customer master record in POS. You can also specify it for a sales transaction by copying it from the transaction customer or entering it manually. The information can then be included in the fiscal receipt.
+You can specify the customer information, such as the phone number and email address, when you create or edit a customer master record in POS. You can also specify it for a sales transaction by copying it from the transaction customer or entering it manually. The information can then be included in the fiscal receipt. See [Fiscal printer integration sample for Russia](rus-fpi-sample.md) for more information on generating and printing fiscal receipts.
+
+> [!NOTE]
+> The customer information is included in the fiscal receipt that is sent to the fiscal printer, but it is not printed in the sample fiscal receipt. You need to customize the sample in order to print the customer informaation in the fiscal receipt.
 
 ## Example scenarios
 
@@ -46,7 +49,7 @@ The following example scenarios show how to work with customer information in PO
 1. Choose whether a phone number or an email address is to be specified.
 1. Enter the customer information, and then select **OK**.
 1. Register payments for the transaction, and then finalize the transaction.
-1. The fiscal receipt includes the customer information.
+1. The fiscal receipt that is sent to the fiscal printer includes the customer information.
 
 ### Scenario 2: Make a sale to a new named customer
 
@@ -54,14 +57,16 @@ The following example scenarios show how to work with customer information in PO
 1. Add items to the cart.
 1. Select **Add customer**, and then select **New**.
 1. Specify the new customer's attributes including:
+
   - Primary and/or receipt email.
   - Primary phone.
+
 1. Save the customer record and add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
 1. Because the inquiry for customer information has been activated, but customer information hasn't been added to the transaction, the **Enter customer information** dialog box is opened. Select **Yes**, and then select **Copy from transaction customer**.
 1. Choose whether the phone number or the email address is to be copied to the customer information.
 1. Verify the customer information, and then select **OK**.
-1. The fiscal receipt includes the customer information.
+1. The fiscal receipt that is sent to the fiscal printer includes the customer information.
 
 > [!NOTE]
 > If you need to specify a different customer for the transaction, you must clear the customer information and then copy it again after the new customer is added.
@@ -79,7 +84,7 @@ The following example scenarios show how to work with customer information in PO
 1. Choose whether a phone number or an email address is to be specified.
 1. Enter the customer information, and then select **OK**.
 1. Register payments for the transaction, and then finalize the transaction.
-1. The fiscal receipt includes the customer information.
+1. The fiscal receipt that is sent to the fiscal printer includes the customer information.
 
 ## Setup
 
