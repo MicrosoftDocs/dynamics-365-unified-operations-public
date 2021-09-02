@@ -174,3 +174,37 @@ The default setup of the VAT declaration that is proposed in the scope of the Ma
 | Box 7      | The total value of purchases and all other inputs, excluding any VAT. | <p>To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period and that have the following classification values:</p><ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li><li>UseTax</li><li>UseTaxCreditNote</li></ul> |
 | Box 8      | The total value of intra-community dispatches of goods and related costs, excluding VAT, from Northern Ireland to EU member states. | <p>To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period, and that have a **Reporting type** other than **Service**, a **Country/Region type** value of **EU**, and the following classification values:</p><ul><li>SaleExempt</li><li>SalesExemptCreditNote</li><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul> |
 | Box 9      | The total value of intra-community acquisitions of goods and related costs, excluding VAT, in Northern Ireland from EU member states. | <p>To calculate the amount in this box, combine the tax base amounts of tax transactions that are posted during the reporting period, and that have a **Reporting type** value other than **Service**, a **Country/Region type** value of **EU**, and the following classification values:</p><ul><li>UseTax</li><li>UseTaxCreditNote</li><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li></ul> |
+
+## Examples of correct VAT setup
+
+This section provides details of sales tax setup and reporting in VAT 100 report for some commonly used scenarios in the United Kingdom (UK).
+
+### Domestic purchase
+
+Set up sales tax code, sales tax group and item sales tax group.
+
+    ![Sales tax setup for Domestic purchase.](media/uk-mtd-setup-vatp20.png)
+
+Post a vendor invoice and generate VAT 100 report. Verify the amounts in box 4 and box 7.
+
+    ![VAT 100 report for Domestic purchase.](media/uk-mtd-report-vatp20.png)
+
+### Domestic sale
+
+Set up sales tax code, sales tax group and item sales tax group.
+
+    ![Sales tax setup for Domestic sale.](media/uk-mtd-setup-vats20.png)
+
+Post a free text invoice and generate VAT 100 report. Verify the amounts in box 1 and box 6.
+
+    ![VAT 100 report for Domestic purchase.](media/uk-mtd-report-vats20.png)
+
+### Domestic reverse charge for services
+
+Set up sales tax code, sales tax group and item sales tax group.
+
+    ![Sales tax setup for domestic reverse charge.](media/uk-mtd-setup-rch.png)
+
+Post a vendor invoice and generate VAT 100 report. Verify the amounts in box 1, 4, 6 and box 7.
+
+    ![VAT 100 report for export.](media/uk-mtd-report-rch.png)
