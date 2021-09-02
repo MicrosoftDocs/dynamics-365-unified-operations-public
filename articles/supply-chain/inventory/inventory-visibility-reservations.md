@@ -53,7 +53,7 @@ The reservation hierarchy can differ from the index hierarchy. This independence
 
 To configure a soft reservation hierarchy in Power Apps, open the **Configuration** page, and then, on the **Soft reservation hierarchy** tab, set up the reservation hierarchy by adding and/or modifying dimensions and their hierarchy levels.
 
-Your soft reservation hierarchy should contain `SiteId`, `LocationId` as components, since that they construct the partition configuration. To know more about how to set up reservation configuration, see [Reservation configuration](inventory-visibility-configuration.md#reservation-configuration).
+Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components because they construct the partition configuration. For more information about how to configure reservations, see [Reservation configuration](inventory-visibility-configuration.md#reservation-configuration).
 
 ### Call the reservation API
 
@@ -61,9 +61,9 @@ Reservations are made in the Inventory Visibility service by submitting a POST r
 
 For a reservation, the request body must contain an organization ID, a product ID, reserved quantities, and dimensions. The request generates a unique reservation ID for each reservation record. The reservation record contains the unique combination of the product ID and dimensions.
 
-When calling reservation API, you can specify the boolean field `ifCheckAvailForReserv` in the request body to control the reservation validation. `True` means the validation is necessary while `False` means the validation is unnecessary. The default value of `ifCheckAvailForReserv` is `True`.
+When calling the reservation API, you can control the reservation validation by specifying the boolean parameter `ifCheckAvailForReserv` in the request body. `True` means the validation is necessary while `False` means the validation is unnecessary. The default value of `ifCheckAvailForReserv` is `True`.
 
-If you want to cancel a reservation or unreserve specified inventory quantities, you just need to set the quantity as a negative value that you want to unreserve, and set the `ifCheckAvailForReserv` field as `False` to skip the validation.
+If you want to cancel a reservation or unreserve specified inventory quantities, set the quantity as a negative value and set the `ifCheckAvailForReserv` parameter as `False` to skip the validation.
 
 Here is an example of the request body, for reference.
 

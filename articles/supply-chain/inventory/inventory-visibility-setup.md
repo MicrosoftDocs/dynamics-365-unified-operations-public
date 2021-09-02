@@ -115,7 +115,7 @@ After you register an application and add a client secret to Azure AD, follow th
 1. Select **Install**. The status of the add-in is shown as **Installing**. When the installation is completed, refresh the page. The status should change to **Installed**.
 
 > [!IMPORTANT]
-> If you have more than one LCS environments to be used, please create different AAD applications for these environments. Using same application ID and tenant ID to install Inventory Visibility Add-in for different environments will cause token issue for former environments, only the last installed one will be valid.
+> If you have more than one LCS environment, please create different AAD applications for these environments. Using same application ID and tenant ID to install the Inventory Visibility Add-in for different environments will cause token issue for older environments&mdash;only the last one to be installed will be valid.
 
 ## <a name="uninstall-add-in"></a>Uninstall the Inventory Visibility Add-in
 

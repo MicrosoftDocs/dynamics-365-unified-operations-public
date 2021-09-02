@@ -282,7 +282,7 @@ The index lets you query the on-hand inventory in the following ways:
 > Base dimensions that are defined in the partition configuration should not be defined in index configurations.
 
 > [!NOTE]
-> If you only need to query the inventory aggregated by all dimension combinations, you can setup a single index which contains the base dimension `Empty`.
+> If you only need to query inventory aggregated by all dimension combinations, you can set up a single index which contains the base dimension `Empty`.
 
 ## <a name="reservation-configuration"></a>Reservation configuration (optional)
 
@@ -299,7 +299,7 @@ When you make a reservation, you might want to know whether on-hand inventory is
 
 For example, a reservation measure is based on the `SoftReservOrdered` physical measure from the `iv` (Inventory Visibility) data source. In this case, you can set up the `AvailableToReserve` calculated measure of the `iv` data source as shown here.
 
-We suggest you to set up the calculated measure containing the physical measure which the reservation measure is based on, in this way, the calculated measure quantity will be affected by the reservation measure quantity. So in this example, the `AvailableToReserve` calculated measure of the `iv` data source should contain the `SoftReservOrdered` physical measure from the `iv` as component.
+We recommend that you set up the calculated measure to contain the physical measure that the reservation measure is based on. In this way, the calculated measure quantity will be affected by the reservation measure quantity. So in this example, the `AvailableToReserve` calculated measure of the `iv` data source should contain the `SoftReservOrdered` physical measure from `iv` as component.
 
 | Calculation type | Data source | Physical measure |
 |---|---|---|
@@ -350,13 +350,13 @@ In this case, the following calculation applies:
 Therefore, if you try to make reservations on `iv.SoftReservOrdered`, and the quantity is less than or equal to `AvailableToReserve` (10), you can do the reservation.
 
 > [!NOTE]
-> When calling reservation API, you can specify the boolean field `ifCheckAvailForReserv` in the request body to control the reservation validation. `True` means the validation is necessary while `False` means the validation is unnecessary. The default value of `ifCheckAvailForReserv` is `True`.
+> When calling the reservation API, you can control the reservation validation by specifying the boolean parameter `ifCheckAvailForReserv` in the request body. `True` means the validation is necessary while `False` means the validation is unnecessary. The default value of `ifCheckAvailForReserv` is `True`.
 
 ### Soft reservation hierarchy
 
 The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the product index hierarchy works for on-hand queries.
 
-The reservation hierarchy is independent of the product index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId`, `LocationId` as components, since that they construct the partition configuration.
+The reservation hierarchy is independent of the product index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components because they construct the partition configuration.
 
 Here is an example of a soft reservation hierarchy.
 

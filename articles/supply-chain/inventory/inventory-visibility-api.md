@@ -42,7 +42,7 @@ The following table lists the APIs that are currently available:
 Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 > [!NOTE]
-> The {environmentId} is the Microsoft Dynamics Lifecycle Services (LCS) environment Id.
+> The {environmentId} is the Microsoft Dynamics Lifecycle Services (LCS) environment ID.
 
 ## Find the endpoint according to your Lifecycle Services environment
 
@@ -164,7 +164,7 @@ The following table summarizes the meaning of each field in the JSON body.
 | `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, _Source_) to indicate whether the event is coming from Supply Chain Management or an external system. |
 
 > [!NOTE]
-> You need to specify the SiteId, LocationId in dimensions when you create on-hand change events, set/override on-hand quantities, create reservation events, since that they construct the partition configuration. To know more about [partition configuration](inventory-visibility-configuration.md#partition-configuration).
+> You must specify the `SiteId` and `LocationId` in dimensions when you create on-hand change events, set or override on-hand quantities, or create reservation events. This is because these parameters construct the [partition configuration](inventory-visibility-configuration.md#partition-configuration).
 
 ### <a name="create-one-onhand-change-event"></a>Create one on-hand change event
 
@@ -219,8 +219,7 @@ The following example shows sample body content. In this sample, you post a chan
 }
 ```
 
-The following example shows sample body content without `dimensionDataSource`, in this case `dimensions` will be the [base dimensions](inventory-visibility-configuration.md#data-source-configuration-dimension).
-And if the `dimensionDataSource` is set, `dimensions` can both be dimensions of the data source or the base dimensions.
+The following example shows sample body content without `dimensionDataSource`. In this case, `dimensions` will be the [base dimensions](inventory-visibility-configuration.md#data-source-configuration-dimension). If `dimensionDataSource` is set, `dimensions` can be either the data source dimensions or the base dimensions.
 
 ```json
 {
@@ -374,11 +373,11 @@ To use the *Reserve* API, you must open the reservation feature and complete the
 
 ### <a name="create-one-reservation-event"></a>Create one reservation event
 
-A reservation can be made against different data source settings. To configure this, first specify the data source in `dimensionsDataSource` field, and then dimensions according to the dimension settings in the target data source in `dimensions` field.
+A reservation can be made against different data source settings. To configure this, first specify the data source in the `dimensionDataSource` parameter, and then dimensions according to the dimension settings in the target data source in the `dimensions` parameter.
 
-When calling reservation API, you can specify the boolean field `ifCheckAvailForReserv` in the request body to control the reservation validation. `True` means the validation is necessary while `False` means the validation is unnecessary. The default value of `ifCheckAvailForReserv` is `True`.
+When calling the reservation API, you can control the reservation validation by specifying the boolean parameter `ifCheckAvailForReserv` in the request body. `True` means the validation is necessary while `False` means the validation is unnecessary. The default value of `ifCheckAvailForReserv` is `True`.
 
-If you want to cancel a reservation or unreserve specified inventory quantities, you just need to set the quantity as a negative value that you want to unreserve, and set the `ifCheckAvailForReserv` field as `False` to skip the validation.
+If you want to cancel a reservation or unreserve specified inventory quantities, set the quantity as a negative value and set the `ifCheckAvailForReserv` parameter as `False` to skip the validation.
 
 ```txt
 Path:
@@ -500,11 +499,11 @@ Body:
     }
 ```
 
-In the body part of this request, `dimensionDataSource` is still an optional parameter, if not set, `filters` will be treated as *base dimensions*. There are **4** required fileds in `filters`: `organizationId`, `productId`, `siteId`, `locationId`.
+In the body part of this request, `dimensionDataSource` is still an optional parameter. If it isn't set, `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `siteId`, `locationId`.
 
 - `organizationId` should contains only one value, but it is still an array.
-- `productId` can contains one or more values, if it is an empty array, all products' result will be returned.
-- `siteId` and `locationId` is two solid fields used in Inventory Visibility for partitioning.
+- `productId` can contains one or more values. If it is an empty array, all products will be returned.
+- `siteId` and `locationId` are used in Inventory Visibility for partitioning.
 
 The `groupByValues` should follow your configuration for indexing, see [Product index hierarchy configuration](./inventory-visibility-configuration.md#index-configuration).
 
@@ -527,7 +526,7 @@ The following example shows sample body content:
 }
 ```
 
-To query all products' result in a specific site and location:
+To query all products in a specific site and location:
 
 ```json
 {

@@ -237,7 +237,7 @@ To define the soft reservation mapping, follow these steps.
     | `Subtraction` | `pos` | `outbound` |
     | `Subtraction` | `iv` | `softreservordered` |
 
-1. We suggest you to set up the AFR calculated measure containing the physical measure which serves as the soft reservation measure, in this way, the AFR calculated measure quantity will be affected by the reservation measure quantity. So in this example, the `availforreserv` calculated measure of the `iv` data source should contain the `softreservordered` physical measure from the `iv` as component.
+1. We recommend that you to set up the AFR calculated measure so that it contains the physical measure that serves as the soft reservation measure. In this way, the AFR calculated measure quantity will be affected by the reservation measure quantity. So in this example, the `availforreserv` calculated measure of the `iv` data source should contain the `softreservordered` physical measure from `iv` as component.
 
 1. Open the **Configuration** page.
 1. On the **Soft Reservation Mapping** tab, set up the mapping from the physical measure to the calculated measure. For the previous example, you might use the following settings to map `availforreserv` to the previously defined `softreservordered` physical measure.
@@ -254,7 +254,7 @@ Before you can edit the **Soft Reservation Hierarchy** tab, you must turn on the
 
 The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the product index hierarchy works for on-hand queries.
 
-The reservation hierarchy can differ from the on-hand index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId`, `LocationId` as components, since that they construct the partition configuration. When you do the reservation, you need to specify partition for the product.
+The reservation hierarchy can differ from the on-hand index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components because they construct the partition configuration. When you do the reservation, you must specify a partition for the product.
 
 #### Example
 
@@ -268,15 +268,14 @@ The following reservation hierarchy is set up in your system.
 | `SizeId` | 4 |
 | `StyleId`| 5 |
 
-Given this reservation hierarchy, you can do reservation in the following dimension orders:
-You need to specify partition for the product when you do the reservation, so the basic hierarchy you can use is `(SiteId, LocationId)`
+Given this reservation hierarchy, you can do reservation in the following dimension orders. You must specify a partition for the product when you do the reservation, so the basic hierarchy you can use is `(SiteId, LocationId)`
 
 - `(SiteId, LocationId)`
 - `(SiteId, LocationId, ColorId)`
 - `(SiteId, LocationId, ColorId, SizeId)`
 - `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
-The dimension order should strictly follow the reservation hierarchy sequence, dimension by dimension. For example, reservations that have `(SiteId, LocationId, ColorId, StyleId)` won't be allowed in this example, because this sequence isn't defined in the reservation hierarchy.
+The dimension order should strictly follow the reservation hierarchy sequence, dimension by dimension. For example, reservations that have `(SiteId, LocationId, ColorId, StyleId)` won't be allowed in this example because this sequence isn't defined in the reservation hierarchy.
 
 ### <a name="feature-switch"></a>Control feature management
 
@@ -323,20 +322,20 @@ To post an on-hand query, enter the query in the request body. Use the pattern t
 
 Use the **Reservation Posting** tab to post a reservation request. Before you can post a reservation request, you must turn on the *OnHandReservation* feature. For more information about this feature, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
 
-To post a reservation request, you must enter a value in the request body. Use the pattern that is described in [Create one reservation event](inventory-visibility-api.md#create-one-reservation-event). Then select **Post**. To view the request response details, select **Show Details**. You can also get the **reservationId** value from the response details.
+To post a reservation request, you must enter a value in the request body. Use the pattern that is described in [Create one reservation event](inventory-visibility-api.md#create-one-reservation-event). Then select **Post**. To view the request response details, select **Show details**. You can also get the `reservationId` value from the response details.
 
 ## <a name="inventory-summary"></a>Inventory summary
 
-**Inventory summary** is a customized view for the *Inventory OnHand Sum Entity*. It provides an inventory summary for products together with all dimensions. Periodically, the inventory summary data will be synchronized from the Inventory Visibility. Before you can see data in the **Inventory summary** tab, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab.
+**Inventory summary** is a customized view for the *Inventory OnHand Sum* entity. It provides an inventory summary for products together with all dimensions. Periodically, the inventory summary data will be synchronized from Inventory Visibility. Before you can see data in the **Inventory summary** tab, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab.
 
-By using the **Advanced Filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the **Advanced Filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
+By using the **Advanced filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options lets you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the **Advanced filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
 
-The top of the customized view provides three fields: **Default Dimension**, **Custom Dimension**, and **Measure**. You can use these fields to control which columns are visible.
+The top of the customized view provides three fields: **Default dimension**, **Custom dimension**, and **Measure**. You can use these fields to control which columns are visible.
 
 You can select the column header to filter or sort the current result.
 
-The bottom of the customized view shows information such as "50 records (29 selected)" or "50 records." This information refers to the currently loaded records from the **Advanced Filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records.
+The bottom of the customized view shows information such as "50 records (29 selected)" or "50 records." This information refers to the currently loaded records from the **Advanced filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records.
 
-At the bottom of the view is a **Load more** button that you can use to load more records from Dataverse. The default number of records that is loaded is 50. When you select **Load more**, the next 1,000 available records are loaded into the view. The number on the **Load More** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
+At the bottom of the view is a **Load more** button that you can use to load more records from Dataverse. The default number of records that is loaded is 50. When you select **Load more**, the next 1,000 available records are loaded into the view. The number on the **Load more** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
 
 ![Inventory Summary](media/inventory-visibility-onhand-list.png "Inventory Summary")
