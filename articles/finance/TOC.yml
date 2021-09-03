@@ -7,7 +7,7 @@
     - name: Get started
       items:
       - name: Service description
-        href: ../fin-ops-core/fin-ops/get-started/service-description.md
+        href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/finance/toc.json
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
       - name: Sign up for preview subscriptions
