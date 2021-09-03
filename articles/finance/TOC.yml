@@ -2878,6 +2878,8 @@
         items:
         - name: Oman overview
           href: localizations/oman.md
+        - name: VAT declaration for Oman (OM-00003)
+          href: localizations/emea-oma-vat-declaration.md
       - name: Netherlands
         items:
         - name: Netherlands overview
