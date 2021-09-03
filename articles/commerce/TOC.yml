@@ -6,6 +6,8 @@
       href: index.md
     - name: Get started
       items:
+      - name: Service description
+        href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/commerce/toc.json
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
       - name: One Version service updates 
