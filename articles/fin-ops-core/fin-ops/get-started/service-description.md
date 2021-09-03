@@ -28,7 +28,7 @@ Finance and Operations apps are enterprise resource planning (ERP) software as a
 
 Together with [business intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastructure](https://azure.microsoft.com/global-infrastructure/), [compute](/azure/service-fabric/service-fabric-overview), and [database services](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview), these apps enable organizations to run industry-specific and operational business processes. Supported by their implementation partner, customers determine the configuration of the business application logic that best suits their unique business processes. Functionality and business processes can be augmented or extended through one or a combination of the following solutions:
 
-- Built in [User Experience Personalization](personalize-user-experience.md)
+- Built in [personalization experience](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) tools
 - [Visual Studio](https://visualstudio.microsoft.com)–based [Finance and Operations software development kit (SDK)](../../dev-itpro/dev-tools/developer-home-page.md) and [Azure DevOps build automation](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
 - Independent software vendor (ISV) solutions from [AppSource](https://appsource.microsoft.com/partners)
