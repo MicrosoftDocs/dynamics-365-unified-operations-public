@@ -1280,8 +1280,6 @@
           items: 
           - name: Import configurations from GR
             href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
-          - name: Import updated versions of ER configurations
-            href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
           - name: Enhanced filtering to find configurations in GR
             href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
           - name: Upload configurations to GR
