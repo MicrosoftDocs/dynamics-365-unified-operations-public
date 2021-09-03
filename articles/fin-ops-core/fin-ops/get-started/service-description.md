@@ -202,7 +202,7 @@ The following table describes some typical scenarios and activities for the serv
 | In the event of any failure, roll back the production instance to the code and data backup. | X | |
 | **Data management (backup, restore, and update)** | | |
 | Back up the database. | X | |
-| Determine high availability (HA) and a disaster recovery plan. | X | |
+| Determine high availability and a disaster recovery plan. | X | |
 | Monitor performance of the production instance database. | X | X |
 | Tune the production instance database for performance. | X | X |
 | Initiate copying of the production instance database to a non-production instance. | | X |
