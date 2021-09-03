@@ -61,18 +61,18 @@ Customers work with their partner and [Microsoft FastTrack](/dynamics365/fasttra
 
 Microsoft manages the Finance and Operations service by deploying, actively monitoring, and servicing customer sandbox and production environments in the Microsoft SaaS subscription. This management includes allocating the required system infrastructure to run the service and proactively communicate with customers about the service's health. Responsibilities include:
 
-**Infrastructure Management**
+**Infrastructure management**
 - Security and isolation
 - Operating systems and virtualization
 - Servers, storage and networking
 - Data center power, networking, cooling
 
-**Application Platform Management**
+**Application platform management**
 - 24/7 application monitoring and notifications
 - Diagnostics, platform updates, patches, service updates
 - Application routing, load balancing, site replication
 - Environment provisioning and management
-- Database management, HA/DR, scale, operations
+- Database management, high availability (HA)/disaster recovery (DR), scale, operations
 - Compute deployment, scale up, scale down
 
 ## System configuration
