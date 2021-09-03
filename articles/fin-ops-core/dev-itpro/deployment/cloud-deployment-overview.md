@@ -120,7 +120,7 @@ Customers are required to complete additional setup to connect to virtual machin
 > Microsoft will run periodic tests on the Microsoft-managed environments validating that the environments are sufficiently restricted.
 > Microsoft reserves the right to and will remove any IP Address safe list rules that violate the above guidelines, immediately without providing notice.
  
-### Partner/Customer-managed environments 
+### Customer-managed/Tier-1 environments 
 By default, Remote Desktop is enabled for all environments that are not managed by Microsoft. We recommend that customers restrict access to any environments that belong to their subscriptions. This can be done by configuring Network Security Group rules on the environments directly in Azure Portal.
 
 ## Windows Remoting (WinRM)
