@@ -1,6 +1,6 @@
 ---
 title: Dual-write limits for live synchronization
-description: This topic describes the limits when using dual-write to write data to Dataverse and Finance and Operations apps.
+description: This topic describes the limits when dual-write is used to write data to Finance and Operations apps and Microsoft Dataverse.
 author: nhelgren
 ms.date: 08/31/2021
 ms.topic: article
@@ -14,23 +14,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dual-write limits for live synchronization
 
-To ensure consistent availability and performance, there are limits when using dual-write to write data to Dataverse and Finance and Operations apps. These limits are applied at the platform level and control dual-write transactions. These limits are designed to ensure seamless writes and to minimize failures.
+For more consistent availability and performance, limits apply when dual-write is used to write data to Finance and Operations apps and Microsoft Dataverse. These limits control dual-write transactions and are applied at the platform level. They are designed to ensure seamless writes and to help minimize failures.
 
-Finance and Operations apps and Dataverse have many processes which span large numbers records and complex, multi-table transactions. Each environment has limits around the number of transactions, the numbers of records per single transaction, and the transaction time limits (the time it takes to process the transaction). It is important to understand these limits and their effect on the live sync capabilities with dual-write.
+Finance and Operations apps and Dataverse have many processes that span large numbers of records and complex, multi-table transactions. Each environment has limits on the number of transactions, the number of records per transaction, and transaction time (that is, the time that is required to process the transaction). It's important that you understand these limits and their effect on the live synchronization capabilities of dual-write.
 
 ## Transaction patterns
 
 A process can write data in two different transaction patterns:
 
-- [Single transaction](#single-transaction): All data written as part of the process is part of single transaction.
+- **[Single transaction](#single-transaction)** – All data that is written as part of the process is part of a single transaction.
+- **[Multiple transactions](#multiple-transactions)** – All the data that is written as part of the process is split into multiple transactions.
 
-- [Multiple transactions](#multiple-transactions): All the data written as part of the process is split into multiple transactions.
+### Single transaction
 
-## Single transaction
+In a single transaction, all data that is written as part of the process is part of a single transaction. If a failure occurs, the whole transaction is rolled back.
 
-In a single transaction, all data written as part of the process is part of single transaction. When there is a failure, the entire transaction is rolled back.
-
-A common example is a process creating multiple invoices in a single transaction. In this case, either all invoices are committed in one transaction or if there is an error, all invoices are rolled back. The following code examples create multiple invoices in a single transaction.
+A common example is a process that creates multiple invoices in a single transaction. In this case, either all invoices are committed in one transaction or, if an error occurs, all invoices are rolled back. The following code examples create multiple invoices in a single transaction.
 
 ```xpp
 ttsbegin;// Transaction start
@@ -51,11 +50,11 @@ ttsbegin;// Transaction start
 ttscommit;// Transaction end
 ```
 
-## Multiple transactions
+### Multiple transactions
 
-In multiple transactions: All the data written as part of this process is split into multiple transactions. When there is a failure, the entire group of multiple transactions is not rolled back. Each transaction is rolled back or committed independently. A transaction with a failure is rolled back. A transaction without a failure is committed.
+In multiple transactions, all the data that is written as part of the process is split into multiple transactions. If a failure occurs, the whole group of multiple transactions isn't rolled back. Instead, each transaction is independently rolled back or committed. Any transaction that has a failure is rolled back. Any transaction that has no failure is committed.
 
-A common example is a process creating multiple invoices. Each invoice is created in a separate transaction and if there is an error, only the invoice included in a specific transaction would roll back. The rest of the invoices would be committed successfully. The following code examples create multiple invoices, one per transaction.
+A common example is a process that creates multiple invoices. Each invoice is created in a separate transaction, and if an error occurs, only the invoice that is included in a specific transaction is rolled back. The remaining invoices are successfully committed. The following code examples create multiple invoices, one per transaction.
 
 ```xpp
 ttsbegin; // Transaction start
@@ -88,39 +87,39 @@ while (/* loop condition */)
 
 ## Transaction time limit
 
-When writing records using dual-write to Dataverse or Finance and Operations apps, each transaction needs to complete within a specific amount of time. If the transaction does not complete before the transaction timeout limit, then the records are not committed to Dataverse and Finance and Operations apps using dual-write. This results in a rollback of records within the timed out transaction in both the Finance and Operations and Dataverse environments.
+When dual-write is used to write records to Finance and Operations apps or Dataverse, each transaction must be completed within a specific amount of time. If a transaction isn't completed before the transaction time limit is reached, the records aren't committed to Finance and Operations apps and Dataverse by using dual-write. In this case, the records in the transaction are rolled back in both the Finance and Operations environment and the Dataverse environment.
 
-For example, using dual-write to sync contract renewals from Finance and Operations apps to Dataverse, the clock starts when the business logic in Finance and Operations apps is completed and at the start of the Dataverse process. The clock ends the transaction is committed. The entire time spent in Dataverse includes the time to write as well as time for the standard and custom plugins to be processed. If the transaction exceeds the time limit, then the records would not be committed to Dataverse.
+For example, when dual-write is used to sync contract renewals from Finance and Operations apps to Dataverse, the timer begins when the business logic in Finance and Operations apps is completed and the Dataverse process is started. The timer ends when the transaction is committed. The whole time that is spent in Dataverse includes the time that is required to write, and also the time that is required to process the standard and custom plugins. If the transaction exceeds the time limit, the records aren't committed to Dataverse.
 
-The same is true when you write data using dual-write in the other direction, from Dataverse to Finance and Operations apps.
+The same principle applies when dual-write is used to write data in the other direction, from Dataverse to Finance and Operations apps.
 
-## Dual-write live sync limits
+## Dual-write live synchronization limits
 
-The following tables describe the dual-write live sync limits while writing data between Dataverse and Finance and Operations apps. These limits are specific to the direction of flow of data; from Finance and Operations apps to Dataverse and from Dataverse to Finance and Operations apps.
+The following tables describe the dual-write live synchronization limits that apply when data is written between Finance and Operations apps and Dataverse. These limits are specific to the direction of the data flow: from Finance and Operations apps to Dataverse, or from Dataverse to Finance and Operations apps.
 
-## Finance and Operations apps To Dataverse time limits
+### From Finance and Operations apps to Dataverse
 
-The following limits apply:
+The following limits apply when data is written from Finance and Operations apps to Dataverse.
 
-Measure | Limits
----|---
-Number of transactions | The total number of transactions you can make per day per tenant are governed by service protection API limits which are designed to detect when client applications make extraordinary demands on server resources.<br>For more information, see [Service protection API limits](/powerapps/developer/data-platform/api-limits.md)
-Number of records per single transaction | 1000 records<br>If there are more than 1000 records in a single transaction, consider splitting into multiple transactions. For more information, see the section [Transactions with more than 1000 records](#transactions-with-more-than-1000-records).
-Transaction time limit | 2 minutes
+| Measure | Limits |
+|---|---|
+| Number of transactions | The total number of transactions that you can perform per day per tenant is governed by service protection API limits that are designed to detect when client applications make extraordinary demands on server resources. For more information, see [Service protection API limits](/powerapps/developer/data-platform/api-limits.md). |
+| Number of records per single transaction | <p>1,000 records</p><p>If there are more than 1,000 records in a single transaction, consider splitting that transaction into multiple transactions. For more information, see the [Transactions with more than 1,000 records](#transactions-with-more-than-1000-records) section of this topic.</p> |
+| Transaction time limit | 2 minutes |
 
-## Dataverse to Finance and Operations limits
+### From Dataverse to Finance and Operations apps
 
-The following limits apply:
+The following limits apply when data is written from Dataverse to Finance and Operations apps.
 
-Measure | Limits
----|---
-Number of transactions | The number of transactions may be impacted by priority-based throttling limits that are designed to prevent over-utilization of resources and preserve the systems responsiveness.<br>For more information, see [Priority-based throttling](../data-entities/priority-based-throttling.md).
-Number of records per single transaction* | There is a payload size limit on Dataverse which limits how many records can be transferred over. The limit is 116.85 MB per transaction. For more information, see [Error: Message size exceeded when sending context to Sandbox](/powerapps/developer/data-platform/troubleshoot-plug-in#error-message-size-exceeded-when-sending-context-to-sandbox). The usage depends on the multiple factors like entity complexity, type of columns used, and mapped fields. Therefore, the limit cannot be expressed as a simple number of records.<br>Dataverse will reject the transaction (referred to as message) with the following error code:<br>*Error Code: -2147220970 Error Message: Message size exceeded when sending context to Sandbox. Message size: ### MB*<br>If there are more than 116.65 MB records in a single transaction, consider splitting into multiple transactions. For more information, see the section [Transactions with more than 1000 records](#transactions-with-more-than-1000-records).
-Transaction timeout | 2 minutes
+| Measure | Limits |
+|---|---|
+| Number of transactions | The number of transactions might be affected by priority-based throttling limits that are designed to help prevent over-utilization of resources and preserve system responsiveness. For more information, see [Priority-based throttling](../data-entities/priority-based-throttling.md). |
+| Number of records per single transaction | <p>A payload size limit on Dataverse limits the number of records that can be transferred. The limit is 116.85 megabytes (MB) per transaction. For more information, see [Error: Message size exceeded when sending context to Sandbox](/powerapps/developer/data-platform/troubleshoot-plug-in#error-message-size-exceeded-when-sending-context-to-sandbox). Use of this limit depends on the multiple factors, such entity complexity, the type of columns that is used, and mapped fields. Therefore, the limit can't be expressed as a simple number of records.</p><p>If the limit is exceeded, Dataverse rejects the transaction (referred to as a *message*), and the following error code is used:</p><p>*Error Code: -2147220970 Error Message: Message size exceeded when sending context to Sandbox. Message size: ### MB*</p><p>If the size of the records in a single transaction exceeds 116.65 MB, consider splitting the transaction into multiple transactions. For more information, see the [Transactions with more than 1,000 records](#transactions-with-more-than-1000-records) section of this topic.</p> |
+| Transaction timeout | 2 minutes |
 
-## Transactions with more than 1000 records
+## Transactions with more than 1,000 records
 
-It is common to have scenarios with transactions of more than 1000 records. In these cases, we recommend splitting it into multiple transactions. The following examples demonstrate how to make multiple transactions based on record IDs.
+Scenarios where transactions have more than 1,000 records are common. In these scenarios, we recommend that you split single transactions into multiple transactions. The following code examples show how to make multiple transactions, based on record IDs.
 
 ```xpp
 ttsbegin;// Transaction start.
@@ -180,4 +179,3 @@ if (committPending == true)
     ttscommit; // Transaction end.
 }
 ```
-
