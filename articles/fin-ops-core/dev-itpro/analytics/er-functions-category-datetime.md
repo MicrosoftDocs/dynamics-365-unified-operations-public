@@ -36,8 +36,9 @@ Electronic reporting (ER) date and time functions can be used to extract informa
 
 | Function | Description |
 |----------|-------------|
-| [AddDays](er-functions-datetime-adddays.md) | This function returns a *DateTime* value that is the specified number of days before or after a specified start date. |
-| [DateFormat](er-functions-datetime-dateformat.md) | This function returns a *String* value that presents a given date value as text in the specified format and in an optionally specified culture. |
+| [AddDays](er-functions-datetime-adddays.md) | This function returns a *[DateTime](er-formula-supported-data-types-primitive.md#datetime)* value that is the specified number of days before or after a specified start date. |
+| [ChangeTimeZone](er-functions-datetime-changetimezone.md) | This function returns a *DateTime* value that is converted from a given date/time in one time zone to a date/time in another time zone. |
+| [DateFormat](er-functions-datetime-dateformat.md) | This function returns a *[String](er-formula-supported-data-types-primitive.md#string)* value that presents a given date value as text in the specified format and in an optionally specified culture. |
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | This function returns a *String* value that presents a given date/time value as text in the specified format and in an optionally specified culture. |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | This function returns a *DateTime* value that is converted from a given text value in the specified format and in an optionally specified culture to a date/time value. |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | This function returns a *DateTime* value that is converted from a given date value to a date/time value in Coordinated Universal Time (Greenwich Mean Time \[GMT\]). |
