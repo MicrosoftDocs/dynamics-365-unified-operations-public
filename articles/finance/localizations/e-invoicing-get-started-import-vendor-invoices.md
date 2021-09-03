@@ -132,8 +132,8 @@ Complete the steps in the following two sections to set up different types of ve
 
 The Electronic Invoicing service performs two steps during invoice import from the data channels:
 
-    1. Accessing the mail box and reading e-mail.
-    2. Processing the emails. 
+1. Accesses the mail box and reading e-mail.
+2. Processes the emails. 
     
 To perform these two steps, the client should call the service manually for each step. However, we recommend that you set up batch for receiving electronic documents.
 
