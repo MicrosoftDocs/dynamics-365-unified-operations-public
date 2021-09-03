@@ -39,7 +39,7 @@ Warehouse management workloads enable cloud and edge scale units to run selected
 
 ## Prerequisites
 
-You must have a Dynamics 365 Supply Chain Management hub and a scale unit that has been deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Use scale units to increase resilience for supply chain management workloads](cloud-edge-landing-page.md).
+You must have a Dynamics 365 Supply Chain Management hub and a scale unit that has been deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Scale units in a distributed hybrid topology](cloud-edge-landing-page.md).
 
 ## How the warehouse execution workload works on scale units
 
