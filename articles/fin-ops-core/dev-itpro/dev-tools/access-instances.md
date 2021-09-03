@@ -132,10 +132,12 @@ For POS customizations, you must also follow these steps on the guest VM.
 
 ### Provisioning the administrator user
 
-For developer access, you must be an administrator on the instance. For environments provisioned through LCS we encourage you to deploy with the correct user. To provision your own credentials as an administrator on a local virtual machine or after provisioning from LCS, run the admin user provisioning tool. On the local virtual machine there is a link provided on the desktop. On cloud environments you can find the tool in **K:\AOSService\PackagesLocalDirectory\bin**.
+For developer access, you must be an administrator on the instance. For environments provisioned through LCS we encourage you to deploy with the correct user (visit the FAQ section for more details). To provision your own credentials as an administrator on a local virtual machine, run the admin user provisioning tool. On the local virtual machine there is a link provided on the desktop.
 
 1.  Run the admin user provisioning tool as an administrator (right-click the icon, and then click **Run as administrator**).
 2.  Enter your email address, and then select **Submit**.
+
+_**Please note that Admin user provisioning tool is not supported on enviornments provisioned through LCS, it should be used only on local virtual machines.**_
 
 ### Commerce configuration
 
@@ -242,6 +244,48 @@ To restart the local runtime and redeploy all the packages, follow these steps.
 
 This process might take a while. The process is completed when the cmd.exe window closes. If you just want to restart AOS (without redeploying the runtime), run **iisreset** from an administrator **Command Prompt** window, or restart AOSWebApplication from IIS.
 
+## Frequently asked questions
 
+### As a Partner/ISV how can I facilitate cloud-hosted deployments for customers I am working with:
+Tier1/Customer managed environment should be deployed under the customer AAD (Azure Active Directory) tenant, this ensures that all the configuration and integrations are provisioned correctly for any given environment. The tenant and environment association is determined based on user who deployed the environment.
+
+To facilitate this, we recommend partners to follow this process to create customer specific CHE environments:
+1.	Environment should be deployed via a user from the tenant with which the environment will be used. Admin provisioning tool should not be used to change the tenant for a Tier1/Customer managed/Cloud-hosted environment.
+2.	This will ensure that deployment gets registered under correct tenant.
+
+Also please note that AAD tenant associated with Azure Subscription does not play any role in environment configuration. Azure Subscription and the corresponding connector configuration are used only to deploy Azure resources.
+
+### I have executed Admin provisioning tool on my development environment and now I am getting login errors: (Error: AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application)
+As stated above, it is very important to get the FnO environments deployed under the correct AAD tenant. Changing AAD tenant settings post deployment is not supported for Tier1/customer managed environments deployed via LCS (Dynamics Lifecycle Services).
+
+### How can I fix my existing environment where I am getting login errors?
+If you have such environments where admin provisioning tool was used in the past to update the tenant settings, recommendation is to delete such environments and deploy them under the correct AAD tenant.
+
+Following steps can help you fix the environments that are modified:
+1.	Retrieve following values from from web.config.
+     ```powershell
+     $AADTenant = <Value of Aad.TenantDomainGUID from web.config>
+     $EnvironmentUrl = <Value of Infrastructure.HostUrl from web.config>
+
+     # For example, if value is spn:fd663e81-110e-4c18-8995-ddf534bcf5e1 then take only fd663e81-110e-4c18-8995-ddf534bcf5e1
+     $AADRealm = <Value of Aad.Realm from web.config without spn: prefix. >
+     ```
+
+
+2.	Execute following commands _**via Tenant Admin account for the AAD tenant in the web.config**_
+     ```powershell
+     # Using tenant admin account under this tenant login to via AzureAD PowerShell cmdlet.
+     Connect-AzureAD
+
+     # Get Service Principal details
+     $SP = Get-AzureADServicePrincipal -Filter "AppId eq '$AADRealm'"
+
+     #Add Reply URLs
+     $SP.ReplyUrls.Add("$EnvironmentUrl")
+     $SP.ReplyUrls.Add("$EnvironmentUrl/oauth")
+
+     #Set/Update Reply URL
+     Set-AzureADServicePrincipal -ObjectId $SP.ObjectId -ReplyUrls $SP.ReplyUrls
+     ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
