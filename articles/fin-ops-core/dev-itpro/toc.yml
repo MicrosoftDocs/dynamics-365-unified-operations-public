@@ -1052,6 +1052,8 @@
               href: data-entities/dual-write/connection-setup.md
             - name: Considerations for initial synchronization
               href: data-entities/dual-write/initial-sync-guidance.md
+            - name: Limits for live synchronization
+              href: data-entities/dual-write/sync-limits.md
             - name: Dual-write setup from Lifecycle Services
               href: data-entities/dual-write/lcs-setup.md
             - name: Enable dual-write for existing Finance and Operations apps
