@@ -1174,6 +1174,8 @@
           href: general-ledger/set-up-balance-dimensions.md
         - name: Open financial journal templates in Office
           href: general-ledger/open-fincl-jrnls-in-office.md
+        - name: Default financial dimensions on financial journals
+          href: general-ledger/dimension-default-values.md
         - name: Journal posting failure due to imbalance
           href: general-ledger/posting-fail-imbalance.md
         - name: Why can't I reverse this transaction?
