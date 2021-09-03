@@ -132,7 +132,7 @@ LCS provides [self-service tools](../../dev-itpro/deployment/infrastructure-stac
 
 **Event:** [Requesting a production instance](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment)
 
-- Complete the [Go-live checklist](../imp-lifecycle/prepare-go-live.md#fasttrack-go-live-assessment), and submit it to the [Microsoft FastTrack](/dynamics365/fasttrack/) team.
+- Complete the [Go-live checklist](../imp-lifecycle/prepare-go-live.md), and submit it to the [Microsoft FastTrack](/dynamics365/fasttrack/) team.
 - Complete the [LCS Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) before you request a production instance.
 - Complete all the implementation tasks that are specified in the [LCS methodology](../../dev-itpro/lifecycle-services/create-methodology.md).
 
