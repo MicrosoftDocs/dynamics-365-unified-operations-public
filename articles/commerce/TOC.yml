@@ -1278,7 +1278,7 @@
             href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
           - name: Global repository (GR)
             items: 
-            - name: Import configurations from GR
+          - name: Import configurations from GR
               href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Import updated versions of ER configurations
               href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
