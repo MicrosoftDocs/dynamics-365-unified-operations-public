@@ -1890,16 +1890,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
           - name: Import configurations (LBD)
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
-        - name: Regulatory configuration service
+        - name: Regulatory configuration service (RCS)
           items:
-          - name: Regulatory configuration service overview
+          - name: Regulatory configuration service (RCS) overview 
             href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
-          - name: Regulatory configuration service - Globalization features
-            href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-          - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
-            href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-          - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
-            href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
           - name: Download ER configurations to Commerce
             items: 
             - name: Download configurations from RCS
