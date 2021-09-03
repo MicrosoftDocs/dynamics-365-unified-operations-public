@@ -290,7 +290,7 @@ By submitting support requests online, via LCS, customers enable Microsoft to de
 
 Microsoft responds to and fixes incidents based on severity levels. Microsoft's incident severity levels can be changed during initial assessment of the incident, and as more information about the impact and scope becomes available. If the incident is mitigated, the incident severity remains unchanged.
 
-For more information about severity levels, see [this severity table](https://docs.microsoft.com/power-platform/admin/support-overview#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request).
+For more information about severity levels, see [this severity table](/power-platform/admin/support-overview#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request).
 
 ## Business continuity through high availability and disaster recovery 
 
