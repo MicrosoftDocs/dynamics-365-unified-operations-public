@@ -4,7 +4,7 @@
 title: Calculate inventory availability for retail channels
 description: This topic describes how a company can use Microsoft Dynamics 365 Commerce to view estimated on-hand availability for products in the online and store channels.
 author: hhainesms
-ms.date: 04/23/2021
+ms.date: 09/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: Release 10.0.10
 # Calculate inventory availability for retail channels
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how a company can use Microsoft Dynamics 365 Commerce to view estimated on-hand availability for products in the online and store channels.
 
@@ -47,6 +48,21 @@ The following inventory changes are currently considered in the channel-side inv
 - Inventory sold through customer orders in store or online channel
 - Inventory returned to store
 - Inventory fulfilled (pick, pack, ship) from store warehouse
+
+To use the channel-side inventory calculation, you must enable the **Optimized product availability calculation** feature.
+
+If your Commerce environment is in release **10.0.8 through 10.0.11**, follow these steps.
+
+1. In Commerce headquarters, go to **Retail and Commerce** \> **Commerce shared parameters**.
+1. On the **Inventory** tab, in the **Product availability job** field, select **Use optimized process for product availability job**.
+
+If your Commerce environment is in release **10.0.12 or later**, follow these steps.
+
+1. In Commerce headquarters, go to **Workspaces \> Feature management**, and enable the **Optimized product availability calculation** feature.
+1. If your online and store channels use the same fulfillment warehouses, you must also enable the **Enhanced e-Commerce channel-side inventory calculation logic** feature. In that way, the channel-side calculation logic will consider the unposted transactions that are created in the store channel. (Those transactions can be cash-and-carry transactions, customer orders, and returns.)
+1. Run the **1070** (**Channel configuration**) job.
+
+If your Commerce environment was upgraded from a release that is earlier than Commerce version 10.0.8, after you enable the **Optimized product availability calculation** feature, you must also run **Initialize commerce scheduler** for the feature to take effect. To run the initialization, go to **Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler**.
 
 To use the channel-side inventory calculation, as a prerequisite a periodic snapshot of inventory data from headquarters created by the **Product availability** job must be sent to the channel databases. The snapshot represents the information that headquarters has about inventory availability for a specific combination of a product or product variant and a warehouse. It includes only the inventory transactions that were processed and posted in headquarters at the time when the snapshot was taken, and it might not be 100 percent accurate in real time because of the constant sales processing that occurs across distributed servers.
 
@@ -77,9 +93,7 @@ Commerce provides the following APIs for e-commerce scenarios to query inventory
 
 Both APIs internally use the channel-side calculation logic and return estimated **physical available** quantity, **total available** quantity, **unit of measure (UoM)**, and **inventory level** for the requested product and warehouse. The returned values can be shown on your e-commerce site if you want, or they can be used to trigger other business logic on your e-commerce site. For example, you can prevent the purchase of products with an "out of stock" inventory level.
 
-Although other APIs that are available in Commerce can go directly to headquarters to fetch on-hand quantities for products, we don't recommend that they be used in an e-commerce environment because of potential performance issues and the impact that these frequent requests can have on your headquarters servers. Additionally, with channel-side calculation, the two APIs mentioned above can provide a more accurate estimate of a product's availability by taking into account the transactions created in the channels that aren’t yet known to headquarters.
-
-To use the two APIs, you must enable the **Optimized product availability calculation** feature through the **Feature management** workspace in headquarters. If your online and store channels use the same fulfillment warehouses, you must also enable the **Enhanced e-Commerce channel-side inventory calculation logic** feature to have the channel-side calculation logic within the two APIs to factor in the unposted transactions (cash-and-carry, customer orders, returns) created in the store channel. You will need to run the **1070** (**Channel configuration**) job after enabling these features.
+Although other APIs that are available in Commerce can go directly to headquarters to fetch on-hand quantities for products, we don't recommend that they be used in an e-commerce environment because of potential performance issues and the impact that these frequent requests can have on your headquarters servers. Additionally, with channel-side calculation, the two APIs mentioned above can provide a more accurate estimate of a product's availability by taking into account the transactions created in the channels that aren't yet known to headquarters.
 
 To define how product quantity should be returned in the API output, follow these steps.
 
@@ -89,17 +103,17 @@ To define how product quantity should be returned in the API output, follow thes
 
 The **Quantity in API output** setting provides three options:
 
-- **Return inventory quantity** - Physical available and total available quantity of a requested product are returned in API output.
-- **Return inventory quantity subtracting inventory buffer** - The quantity returned in the API output is adjusted by subtracting the inventory buffer value. For more information about the inventory buffer, see [Configure inventory buffers and inventory levels](inventory-buffers-levels.md).
-- **Not return inventory quantity** - Only the inventory level is returned in the API output. For more information about inventory levels, see [Configure inventory buffers and inventory levels](inventory-buffers-levels.md).
+- **Return inventory quantity** – Physical available and total available quantity of a requested product are returned in API output.
+- **Return inventory quantity subtracting inventory buffer** – The quantity returned in the API output is adjusted by subtracting the inventory buffer value. For more information about the inventory buffer, see [Configure inventory buffers and inventory levels](inventory-buffers-levels.md).
+- **Not return inventory quantity** – Only the inventory level is returned in the API output. For more information about inventory levels, see [Configure inventory buffers and inventory levels](inventory-buffers-levels.md).
 
 You can use the `QuantityUnitTypeValue` API parameter to specify the unit type in which you would like the APIs to return quantity. This parameter supports the **inventory unit** (default), **purchase unit**, and **sell unit** options. The returned quantity is rounded to the defined precision of the corresponding unit of measure (UOM) in headquarters.
 
 The **GetEstimatedAvailability** API offers the following input parameters to support different query scenarios:
 
-- `DefaultWarehouseOnly` - Use this parameter to query inventory for a product in the online channel's default warehouse. 
-- `FilterByChannelFulfillmentGroup` and `SearchArea` - Use these two parameters to query inventory for a product from all pickup locations within a specific search area, based on `longitude`, `latitude`, and `radius`. 
-- `FilterByChannelFulfillmentGroup` and `DeliveryModeTypeFilterValue` - Use these two parameters to query inventory for a product from specific warehouses that are linked to an online channel's fulfillment group and are configured to support certain modes of delivery. The `DeliveryModeTypeFilterValue` parameter supports the **all** (default), **shipping**, and **pickup** options. For example, in a scenario where an online order can be fulfilled from multiple shipping warehouses, you can use these two parameters to query a product's inventory availability in all of those shipping warehouses. The API in this case returns the product's on-hand quantity and inventory level in each of the shipping warehouses, plus an aggregated quantity and an aggregated inventory level from all shipping warehouses in the query scope.
+- `DefaultWarehouseOnly` – Use this parameter to query inventory for a product in the online channel's default warehouse. 
+- `FilterByChannelFulfillmentGroup` and `SearchArea` – Use these two parameters to query inventory for a product from all pickup locations within a specific search area, based on `longitude`, `latitude`, and `radius`. 
+- `FilterByChannelFulfillmentGroup` and `DeliveryModeTypeFilterValue` – Use these two parameters to query inventory for a product from specific warehouses that are linked to an online channel's fulfillment group and are configured to support certain modes of delivery. The `DeliveryModeTypeFilterValue` parameter supports the **all** (default), **shipping**, and **pickup** options. For example, in a scenario where an online order can be fulfilled from multiple shipping warehouses, you can use these two parameters to query a product's inventory availability in all of those shipping warehouses. The API in this case returns the product's on-hand quantity and inventory level in each of the shipping warehouses, plus an aggregated quantity and an aggregated inventory level from all shipping warehouses in the query scope.
  
 The Commerce buy box, store selector, wishlist, cart, and cart icon modules consume the APIs and parameters mentioned above to display inventory level messages across the e-commerce site. Commerce site builder provides various inventory settings to control merchandising and purchase behavior. For more information, see [Apply inventory settings](inventory-settings.md).
 
@@ -140,6 +154,5 @@ To ensure the best possible estimate of inventory, it's critical that you use th
 > - For performance reasons, when channel-side inventory availability calculations are used to make an inventory availability request using the e-Commerce API's or the POS channel-side inventory logic, the calculation uses a cache to determine whether enough time has passed to justify running the calculation logic again. The default cache is set to 60 seconds. For example, you turned on channel-side calculation for your store and viewed the on-hand inventory for a product on the **Inventory lookup** page. If one unit of the product is then sold, the **Inventory lookup** page won't show the reduced inventory until the cache has been cleared. After users post transactions in POS, they should wait 60 seconds before they verify that the on-hand inventory has been reduced.
 
 If your business scenario requires a smaller cache time, contact your product support representative for assistance.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

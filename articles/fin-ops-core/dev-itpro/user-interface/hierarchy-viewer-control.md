@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: HierarchyViewer control
 description: This article describes the HierarchyViewer control, which lets you represent hierarchical relationships for people, products, or organizations.
-author: RobinARH
-ms.date: 06/20/2017
+author: jasongre
+ms.date: 08/25/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 31081
-ms.assetid: 09358d27-6edc-420a-a7b6-83785b8ba0c6
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # HierarchyViewer control
@@ -37,9 +22,12 @@ This article provides information about the HierarchyViewer control, which lets 
 
 The HierarchyViewer control lets you represent hierarchical relationships for people, products, or organizations. It's used primarily as a graphical means to help you understand hierarchical relationships in a traditional top-down manner, and as way to navigate to the entity that is represented by the focused node. The HierarchyViewer control lets you walk through deeply nested, multilevel content in a compact space. The control expands and collapses nodes to control the parts of the tree structure that are shown. Because it's an unbound control, the HierarchyViewer data is managed by an abstraction class and is used primarily as a way to visualize data in a simple tree relationship. For hierarchy data in a traditional tree, there is a standard tree control. 
 
-[![Diagram showing HierarchyViewer control tree structure.](./media/hierarchyviewer_page.png)](./media/hierarchyviewer_page.png) 
+![Diagram showing HierarchyViewer control tree structure.](./media/hierarchyViewer_refresh.png)
 
-The HierarchyViewer control shows, at most, three levels on a single branch at any time. A breadcrumb trail shows the path of parents down the current tree branch. The top level shows the current top node and will always have one member. This member isn't necessarily the root. The second level, the child node, can have an indefinite number of member nodes. By default, three of these member nodes are shown on each page. The number of member nodes that is shown can be set by using the **Number of children** property. The control will page right and left through the members of the child level. The last level, the grandchild node, can have an indefinite number of member nodes. The number of visible member nodes is controlled by the **Number of Grandchildren** property. The HierarchyViewer control will page up and down through members of the grandchild level. The interactive display of nodes requires no business logic.
+> [!NOTE]
+> This visual is available starting with [platform updates for version 10.0.22 of Finance and Operations](../get-started/whats-new-platform-updates-10-0-22.md).
+
+The HierarchyViewer control shows four levels of information at any given time. The current node is the current focus of the tree, which is not necessarily the root node. The current node is represented by the largest physical node in the current view and it has a colored bar on the left. Above the current node is a trail of smaller parent nodes from the root node down to the current node. Below the current node is a level of children nodes, and there can be an indefinite number of nodes at this level. By default, three children nodes are shown at a time on each page, but that can changed by adjusting the **Number of children** property. The **Next** and **Previous** link buttons allow the user to page to other nodes at the child level. Finally, there is a level of grandchildren nodes that are showon for each child node. Each child can have an indefinite number of grandchild nodes, and the number of grandchildren shown at one time for each child node is controlled by the **Number of Grandchildren** property. Users can use the **Next** and **Previous** arrow buttons to page up and down through members at the grandchild level. The interactive display of nodes requires no business logic.
 
 ## Business logic interaction
 The HierarchyViewer control offers data visualization and navigation. The HierarchyViewer control is a read-only control. It can be used to select an entity (employee, product, or organization), and corresponding data can then be managed though other display and input fields on the form, outside the HierarchyViewer control. This is accomplished by a selection event that is raised on each user focus on each node.
@@ -107,10 +95,6 @@ protected void loadNodeDescendants(HcmPositionNode _node, int _depth, Common _co
 ```
 
 ## Changing node visuals
-You can't change node visuals. The intended design is for the control to offer a set of unbound controls that have a default layout that you can manipulate by using an **ExtendedStyle** property to offer a predefined set of alternatives that the author can select.
-
-
-
-
+You can't change node visuals. The design presents a consistent visual and user interaction. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

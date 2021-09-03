@@ -4,7 +4,7 @@
 title: Commerce Data Exchange implementation guidance
 description: This topic provides an overview of Commerce Data Exchange, including implementation tips, and overall guidance.
 author: jashanno
-ms.date: 05/11/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -115,27 +115,17 @@ This section describes configurations that you should consider when you begin to
     Additionally, it's helpful to have a "dummy" channel database group that can be used to configure new channel databases, registers that have offline support (in this case, offline databases will be created), and maybe even new but unused Commerce Scale Units (either Cloud or Self-hosted). Because this "dummy" group won't be associated with any distribution schedule jobs, no data generation will ever occur for anything that is associated with it. As time and the implementation progress, the associated entities (for example, channels \[stores\] and register offline databases) will be re-associated with the correct database group. A great alternative to this approach, and perhaps even an improvement, is to use the **Pause offline synchronization** feature that was described earlier.
 
 ### SQL Server versions and licenses 
-SQL Server comes in a variety of versions (such as SQL Server 2017 and SQL Server 2019) and a variety of editions (such as SQL Standard and SQL Express). For more in-depth information about these versions, see [Editions and supported features of SQL Server 2019 (15.x)](/sql/sql-server/editions-and-components-of-sql-server-version-15?view=sql-server-ver15#Cross-BoxScaleLimits). Also see the "Additional resources" later in this topic regarding additional versions.
-
-For SQL Server versions, the only recommendation is to use a version that is currently still within the mainstream support date. Support dates can be searched for, by product, in [Search Product and Services Lifecycle Information](/lifecycle/products/).
-
-#### Which SQL Server edition to use
-While not an exhaustive list, here are the most used SQL Server editions for Dynamics 365 Commerce. The use cases for each edition are also described.
-
-| Edition | Use cases |
-|--------------|-------------|
-| Express | SQL Server Express has some major limitations (such as CPU core count or RAM usage), but the most major limiting factor is the 10 GB database size limit.  As a result, Express is often used for a Modern POS offline database, not for a CSU (self-hosted) channel database. If the Express edition is used for a CSU (self-hosted), be aware that there could be data synchronization issues if the database ever reaches the 10 GB maximum size limit, which could cause issues such as loss of data. When using the Express edition, it is crucial to use compression and the Dynamics 365 Commerce features to exclude data from offline databases. For more information about SQL compression, see [Commerce Data Exchange best practices](CDX-Best-Practices.md#enable-table-and-index-compression). We recommended that you maintain a database at 8 GB in size, or less. |
-| Standard | SQL Server Standard is often used for CSU (self-hosted) channel databases.  This provides enough size and system utilization to typically handle a CSU (self-hosted) channel database for one to several retail store locations. |
-| Enterprise | SQL Server Enterprise is rarely necessary, but there are scenarios where it could be valuable. For example, if hosting a CSU (self-hosted) in a datacenter VM for use across a large area of many devices, removing the limitations could be valuable to maximize performance capabilities. |
+To learn more about the versions of SQL Server and how to use them, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 
 ## Additional resources
 
 - [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
 - [Commerce Data Exchange best practices](CDX-Best-Practices.md)
+- [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md)
 - [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
 - [Select an in-store topology](retail-in-store-topology.md)
 - [Device management implementation guidance](../implementation-considerations-devices.md)
 - [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
 - [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)] 
