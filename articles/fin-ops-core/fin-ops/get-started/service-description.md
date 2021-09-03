@@ -4,26 +4,14 @@
 title: Service description for Finance and Operations apps
 description: This topic provides the service description for Finance and Operations apps.
 author: tomhig
-manager: AnnBe
-ms.date: 08/17/2021
+ms.date: 09/03/2021
 ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: NotInTOC
 ms.search.region: Global
-# ms.search.industry:
 ms.author: whigginb
-ms.search.validFrom: 2021-03-31
-ms.dyn365.ops.version: 10.0.18
+ms.search.validFrom: 2021-09-03
+
 ---
 
 # Service description for Finance and Operations apps
