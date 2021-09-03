@@ -35,15 +35,13 @@ ms.dyn365.ops.version: 10.0.22
 
 ## Warehouse execution on scale units
 
-This feature enables scale units to run selected processes from the warehouse management capabilities.
-
-In this topic, warehouse management executions in a warehouse that is defined as a scale unit are known as a *Warehouse execution system* (*WES*).
+Warehouse management workloads enable cloud and edge scale units to run selected processes from the warehouse management capabilities.
 
 ## Prerequisites
 
 You must have a Dynamics 365 Supply Chain Management hub and a scale unit that has been deployed with the warehouse management workload. For more information about the architecture and deployment process, see [Use scale units to increase resilience for supply chain management workloads](cloud-edge-landing-page.md).
 
-## How the WES workload works on scale units
+## How the warehouse execution workload works on scale units
 
 For the processes in the warehouse management workload, the data is synced between the hub and the scale units.
 
@@ -110,9 +108,9 @@ This following diagram shows the inbound flow, and indicates where the individua
 
 ## Supported processes and roles
 
-Not all warehouse management processes are supported in a WES workload on a scale unit. Therefore, we recommend that you assign roles that match the functionality that is available to each user.
+Not all warehouse management processes are supported in a warehouse execution workload on a scale unit. Therefore, we recommend that you assign roles that match the functionality that is available to each user.
 
-To facilitate this process, a sample role that is named *Warehouse manager on workload* is included in the demo data at **System administration \> Security \> Security configuration**. The purpose of this role is to enable warehouse managers to access the WES on the scale unit. The role grants access to the pages that are relevant in the context of a workload that is hosted on a scale unit.
+To facilitate this process, a sample role that is named *Warehouse manager on workload* is included in the demo data at **System administration \> Security \> Security configuration**. The purpose of this role is to enable warehouse managers to access the warehouse execution workload on the scale unit. The role grants access to the pages that are relevant in the context of a workload that is hosted on a scale unit.
 
 User roles on a scale unit are assigned as part of the initial data synchronization from the hub to the scale unit.
 
@@ -120,9 +118,9 @@ To modify the roles that are assigned to a user, go to **System administration \
 
 Users who act as warehouse managers on both the hub and scale units should be assigned the existing *Warehouse worker* role. Be aware that this role grants warehouse workers access to features (such as transfer order receiving processing) that appear in the user interface (UI) but aren't currently supported on scale units.
 
-### Supported WES processes
+### Supported warehouse execution processes
 
-The following warehouse execution processes can be enabled for a WES workload on a scale unit:
+The following warehouse execution processes can be enabled for a warehouse execution workload on a scale unit:
 
 - Selected wave methods for sales and transfer orders (validation, load creation, allocation, demand replenishment, containerization, work creation, and wave label printing)
 
@@ -144,7 +142,7 @@ The following types of work can be created on a scale unit and can therefore be 
 - **Finished goods put away** – After report-as-finished production process.
 - **Co-product and by-product put away** – After report-as-finished production process.
 
-No other types of source-documents processing or warehouse work are currently supported on scale units. For example, for a WES workload on a scale unit, you can't perform a transfer order receiving process (transfer receipt); instead, this must be processed by the hub instance.
+No other types of source-documents processing or warehouse work are currently supported on scale units. For example, for a warehouse execution workload on a scale unit, you can't perform a transfer order receiving process (transfer receipt); instead, this must be processed by the hub instance.
 
 > [!NOTE]
 > Mobile device menu items and buttons for unsupported functionalities aren't shown in the _Warehouse Management mobile app_ when it is connected to a scale unit deployment.
@@ -188,7 +186,7 @@ The following warehouse management functionality isn't currently supported for s
 
 The following table shows which outbound features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
 
-| Process                                                      | Hub | WES workload on a scale unit |
+| Process                                                      | Hub | Warehouse execution workload on a scale unit |
 |--------------------------------------------------------------|-----|------------------------------|
 | Source document processing                                   | Yes | No |
 | Load and transportation management processing                | Yes, but only the load planning processes. Transportation management processing is not supported  | No |
@@ -223,7 +221,7 @@ The following table shows which outbound features are supported, and where they 
 
 The following table shows which inbound features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
 
-| Process                                                          | Hub | WES workload on a scale unit<BR>*(Items marked "Yes" apply only for warehouse orders)* |
+| Process                                                          | Hub | Warehouse execution workload on a scale unit<BR>*(Items marked "Yes" apply only for warehouse orders)* |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
 | Source&nbsp;document&nbsp;processing                             | Yes | No |
 | Load and transportation management processing                    | Yes | No |
@@ -255,7 +253,7 @@ The following table shows which inbound features are supported, and where they a
 
 The following table shows which warehouse operations and exception handing features are supported, and where they are supported, when the warehouse management workloads are used in cloud and edge scale units.
 
-| Process                                            | Hub | WES workload on a scale unit |
+| Process                                            | Hub | Warehouse execution workload on a scale unit |
 |----------------------------------------------------|-----|------------------------------|
 | License plate inquire                              | Yes | Yes                          |
 | Item inquire                                       | Yes | Yes                          |
@@ -288,14 +286,14 @@ The following table shows which warehouse operations and exception handing featu
 
 The following table summarizes which warehouse management production scenarios are currently supported on scale unit workloads.
 
-| Process | Hub | WES workload on a scale unit |
+| Process | Hub | Warehouse execution workload on a scale unit |
 |---------|-----|------------------------------|
 | Report as finished and finished goods put away | Yes | Yes |
 | Co-product and by-product put away | Yes | Yes |
 | <p>All other warehouse management processes that are related to production, including:</p><li>Release to warehouse</li><li>Production wave processing</li><li>Raw material picking</li><li>Kanban put away</li><li>Kanban picking</li><li>Start production order</li><li>Production scrap</li><li>Production last pallet</li><li>Register material consumption</li><li>Empty kanban</li></ul> | Yes | No |
 | Raw material replenishment | No | No |
 
-## Maintaining scale units for WES
+## Maintaining scale units for warehouse execution
 
 Several batch jobs run on both the hub and scale units.
 
