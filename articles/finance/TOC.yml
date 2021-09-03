@@ -1556,6 +1556,8 @@
               href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
           - name: Determination
             items: 
+            - name: Tax calculation data model
+              href: localizations/tax-calculation-data-model-overview.md
             - name: Sales tax applicability and sales tax group determination logic
               href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
           - name: Calculation
