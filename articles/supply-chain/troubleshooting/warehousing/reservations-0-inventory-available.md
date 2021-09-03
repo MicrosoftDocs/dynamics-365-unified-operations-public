@@ -1,6 +1,6 @@
 --- 
 title: Can't make inventory reservations because 0.00 are available 
-Description: You receive an error saying the system can't make reservations because only 0.00 are available in the inventory. This issue is probably caused by open work. 
+description: You receive an error saying the system can't make reservations because only 0.00 are available in the inventory. This issue is probably caused by open work. 
 author: perlynne 
 ms.date: 06/24/2021 
 ms.topic: troubleshooting 
@@ -12,6 +12,7 @@ ms.author: perlynne
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
+
 # System can't make reservations because 0.00 are available in the inventory
 
 ## Symptoms
