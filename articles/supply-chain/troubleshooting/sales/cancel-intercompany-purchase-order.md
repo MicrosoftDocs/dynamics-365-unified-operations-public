@@ -4,7 +4,7 @@ description: In Microsoft Dynamics 365 Supply Chain Management versions 10.0.13 
 author: SmithaNataraj 
 ms.date: 06/24/2021 
 ms.topic: troubleshooting 
-# ms.search.form: 
+ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 audience: Application User 
 ms.reviewer: kamaybac 
 ms.search.region: Global 

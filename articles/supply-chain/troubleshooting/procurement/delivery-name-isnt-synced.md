@@ -4,7 +4,7 @@ description: After you change the delivery address on a purchase order header, t
 author: kamaybac
 ms.date: 05/31/2021
 ms.topic: troubleshooting
-ms.search.form: 
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global

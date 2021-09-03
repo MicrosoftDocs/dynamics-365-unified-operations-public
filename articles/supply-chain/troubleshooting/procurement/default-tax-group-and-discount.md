@@ -4,7 +4,7 @@ description: A default tax group and a default cash discount aren't filled in fr
 author: kamaybac
 ms.date: 05/31/2021
 ms.topic: troubleshooting
-ms.search.form: 
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -22,5 +22,3 @@ If you're using an invoice account that differs from the customer account, a def
 ## Resolution
 
 This behavior is by design. The default values for the tax group, cash discounts, and other price information are based on the customer account, not the invoice account.
-
-

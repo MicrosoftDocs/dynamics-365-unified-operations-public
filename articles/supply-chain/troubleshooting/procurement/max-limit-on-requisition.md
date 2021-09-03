@@ -4,7 +4,7 @@ description: The purchase agreement maximum limit isn't effective on a purchase 
 author: kamaybac
 ms.date: 05/31/2021
 ms.topic: troubleshooting
-ms.search.form: 
+ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global

@@ -4,7 +4,7 @@ description: When working with sales quotations, you can't set a sales quantity 
 author: SmithaNataraj 
 ms.date: 06/24/2021 
 ms.topic: troubleshooting 
-# ms.search.form: 
+ms.search.form: SalesQuotationTable, SalesQuotationTableListPage
 audience: Application User 
 ms.reviewer: kamaybac 
 ms.search.region: Global 

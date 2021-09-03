@@ -4,7 +4,7 @@ description: An update conflict occurs when the inventory valuation method is ei
 author: AndersGirke
 ms.date: 05/31/2021
 ms.topic: troubleshooting
-ms.search.form:
+ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global

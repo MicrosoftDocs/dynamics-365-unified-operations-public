@@ -4,7 +4,7 @@ description: Trade agreements can be created from rejected RFQs. The system does
 author: kamaybac
 ms.date: 05/31/2021
 ms.topic: troubleshooting
-ms.search.form: 
+ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global

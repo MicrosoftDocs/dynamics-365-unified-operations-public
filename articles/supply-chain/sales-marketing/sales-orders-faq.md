@@ -4,7 +4,7 @@ description: This page addresses frequently asked questions that come up when wo
 author: SmithaNataraj 
 ms.date: 06/24/2021 
 ms.topic: troubleshooting 
-# ms.search.form: 
+ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 audience: Application User 
 ms.reviewer: kamaybac 
 ms.search.region: Global 

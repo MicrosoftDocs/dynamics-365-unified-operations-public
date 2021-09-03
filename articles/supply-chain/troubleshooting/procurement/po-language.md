@@ -4,7 +4,7 @@ description: The product name on a purchase order is shown in the system languag
 author: kamaybac
 ms.date: 05/31/2021
 ms.topic: troubleshooting
-ms.search.form: 
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
