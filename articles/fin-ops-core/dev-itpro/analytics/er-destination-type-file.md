@@ -35,7 +35,7 @@ You can configure a file destination for each FOLDER or FILE component of an Ele
 
 On the **Destination settings** page, if you set **Enabled** to **Yes**, an open or save dialog box opens when the configuration has finished running.
 
-[![Destination setting page](./media/ER_Destinations-EnableFileDestination.png)](./media/ER_Destinations-EnableFileDestination.png)
+[![Destination setting page.](./media/ER_Destinations-EnableFileDestination.png)](./media/ER_Destinations-EnableFileDestination.png)
 
 ## Additional resources
 

@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 06/21/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,8 +45,8 @@ The Finance + Operations application consists of three main components:
 
 These components depend on the following system software:
 
-- Microsoft Windows Server 2019 or Microsoft Windows Server 2016 (Only English-language operating system installations are supported.)
-- Microsoft SQL Server 2016 SP2
+- Microsoft Windows Server (Only English-language operating system installations are supported.)
+- Microsoft SQL Server
 
     > [!IMPORTANT]
     > Full-Text Search must be enabled.
@@ -60,9 +60,9 @@ These components depend on the following system software:
     SSIS is deployed on AOS VMs.
 
 - SQL Server Management Studio
-- Standalone Microsoft Azure Service Fabric 7.2 or later
+- Standalone Microsoft Azure Service Fabric
 - Microsoft Windows PowerShell 5.0 or later
-- Active Directory Federation Services (AD FS) on Windows Server 2019 or Windows Server 2016
+- Active Directory Federation Services (AD FS) on Windows Server
 - Domain controller
 
     > [!IMPORTANT]
@@ -72,7 +72,10 @@ These components depend on the following system software:
     > - [Understanding Active Directory Domain Services (AD DS) Functional Levels](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))
     > - [Full 2-way trust](../../fin-ops/get-started/system-requirements-on-prem.md#full-2-way-trust)
 
-- Optional but **highly** recommended: Active Directory Certificate Services (AD CS) on Windows Server 2019 or Windows Server 2016
+- Optional but **highly** recommended: Active Directory Certificate Services (AD CS) on Windows Server
+
+> [!IMPORTANT]
+> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
 
 ## LCS
 
@@ -102,18 +105,21 @@ If you're using VMware, you must implement the fixes that are documented on the 
 - [After upgrading a virtual machine to hardware version 11, network dependent workloads experience performance degradation (2129176)](https://kb.vmware.com/s/article/2129176)
 - [Several issues with vmxnet3 virtual adapter](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
- > [!WARNING]
- > Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
+> [!WARNING]
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Microsoft Azure Cloud services. However, it is supported to run on [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 The hardware configuration includes the following components:
 
-- A standalone Service Fabric cluster that is based on Windows Server 2019 or Windows Server 2016 VMs
+- A standalone Service Fabric cluster that is based on Windows Server VMs
 - SQL Server (Both Clustered SQL and Always-On are supported.)
 - AD FS for authentication
 - Server Message Block (SMB) version 3 file share for storage
-- Optional: Microsoft Office Server 2017
+- Optional: Microsoft Office Server
 
 For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md).
+
+> [!IMPORTANT]
+> For supported versions, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md).
 
 ### Hardware layout
 
@@ -200,8 +206,8 @@ Before you start the setup, the following prerequisites must be in place. The se
 
 - Active Directory Domain Services (AD DS) must be installed and configured in your network.
 - AD FS must be deployed.
-- SQL Server 2016 SP2 must be installed on the SSRS machines.
-- SQL Server Reporting Services 2016 must be installed (but not configured) in **Native** mode on the SSRS machines.
+- SQL Server must be installed on the SSRS machines.
+- SSRS must be installed (but not configured) in **Native** mode on the SSRS machines.
 - Optional: AD CS is installed and configured in your network.
 
 The following table shows the prerequisite software that is installed on the VMs by the infrastructure setup scripts that are downloaded from LCS.
@@ -322,7 +328,7 @@ DNS is integrated with AD DS, and lets you organize, manage, and find resources 
 1. Sign in to the domain controller machine, select **Start**. Then open DNS Manager by entering **dnsmgmt.msc** and selecting the **dnsmgmt (DNS)** application.
 2. Right-click the domain controller name in the console tree, and then select **New Zone** \> **Next**.
 3. Select **Primary Zone**.
-4. Leave the **Store the zone in Active Directory (available only if the DNS Server is a writeable domain controller** check box selected, and then select **Next**.
+4. Leave the **Store the zone in Active Directory (available only if the DNS Server is a writeable domain controller** checkbox selected, and then select **Next**.
 5. Select **To all DNS Servers running on Domain Controllers in this domain: Contoso.com**, and then select **Next**.
 6. Select **Forward Lookup Zone**, and then select **Next**.
 7. Enter the zone name for your setup, and then select **Next**. For example, enter **d365ffo.onprem.contoso.com**.
@@ -336,7 +342,7 @@ In the new DNS zone, for **each** Service Fabric cluster node of the **AOSNodeTy
 1. Find the newly created zone under the **Forward Lookup Zones** folder in DNS Manager.
 2. Select and hold (or right-click) the new zone, and then select **New Host**.
 3. Enter the name and IP address of the Service Fabric node. (For example, enter **ax** as the name and **10.179.108.12** as the IP address.) Then select **Add Host**.
-4. Leave both check boxes cleared.
+4. Leave both checkboxes cleared.
 5. Repeat steps 1 through 4 for each additional AOS node.
 
 #### Set up an A record for the orchestrator
@@ -345,7 +351,7 @@ In the new DNS zone, for **each** Service Fabric cluster node of the **Orchestra
 
 1. Select and hold (or right-click) the new zone, and then select **New Host**.
 2. Enter the name and IP address of the Service Fabric node. (For example, enter **sf** as the name and **10.179.108.15** as the IP address.) Then select **Add Host**.
-3. Leave both check boxes cleared.
+3. Leave both checkboxes cleared.
 4. Repeat steps 1 through 3 for each additional orchestrator node.
 
 ### <a name="joindomain"></a>Step 5. Join VMs to the domain
@@ -371,7 +377,7 @@ Microsoft has provided several scripts to help improve the setup experience. Fol
 2. On the dashboard, select the **Shared asset library** tile.
 3. Select **Model** as the asset type, and then, in the grid, select the row for **Dynamics 365 for Operations on-premises - Deployment scripts**.
 4. Select **Versions**, and download the latest version of the zip file for the scripts.
-5. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** check box.
+5. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
 6. Copy the zip file to the machine that will be used to run the scripts.
 7. Unzip the files into a folder that is named **infrastructure**.
 
@@ -544,7 +550,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 ### <a name="setupsfcluster"></a>Step 10. Set up a standalone Service Fabric cluster
 
 1. Download the [Service Fabric standalone installation package](https://go.microsoft.com/fwlink/?LinkId=730690) to one of your Service Fabric nodes.
-2. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** check box.
+2. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
 3. Copy the zip file to one of the nodes in the Service Fabric cluster, and unzip it. Make sure that the **infrastructure** folder has access to this folder.
 3. Go to the **infrastructure** folder, and run the following command to generate the Service Fabric **ClusterConfig.json** file.
 
@@ -572,7 +578,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 8. After the cluster is created, open Service Fabric Explorer on any client machine, and validate the installation:
 
     1. Install the Service Fabric client certificate in the **CurrentUser\\My** certificate store if it isn't already installed.
-    2. In Internet Explorer, select **Tools** (the gear symbol), and then select **Compatibility View settings**. Clear the **Display intranet sites in Compatibility View** check box.
+    2. In Internet Explorer, select **Tools** (the gear symbol), and then select **Compatibility View settings**. Clear the **Display intranet sites in Compatibility View** checkbox.
     3. Go to `https://sf.d365ffo.onprem.contoso.com:19080`, where **sf.d365ffo.onprem.contoso.com** is the host name of the Service Fabric cluster that is specified in the zone. If DNS name resolution isn't configured, use the IP address of the machine.
     4. Select the client certificate. The **Service Fabric Explorer** page appears.
     5. Verify that all nodes appear as green.
@@ -648,7 +654,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     1. In Server Manager, select **File and Storage Services** \> **Shares**.
     2. Select **Tasks** \> **New Share** to create a share. Name the new share **aos-storage**.
     3. Leave **Allow caching of share** selected.
-    4. Select the **Encrypt data access** check box.
+    4. Select the **Encrypt data access** checkbox.
     5. Grant **Modify** permissions for every machine in the Service Fabric cluster except **OrchestratorType**.
     6. Grant **Modify** permissions for the user AOS domain user (**contoso\\AXServiceUser**) and the gMSA user (**contoso\\svc-AXSF$**).
 
@@ -693,7 +699,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
 ### <a name="setupsql"></a>Step 13. Set up SQL Server
 
-1. Install SQL Server 2016 SP2 with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
+1. Install SQL Server with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
     > [!IMPORTANT]
     > You must enable the [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode).
@@ -764,16 +770,17 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 ### <a name="configuredb"></a>Step 14. Configure the databases
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
-2. On the dashboard, select the **Shared asset library** tile.
-3. Select **Model** as the asset type. Then, in the grid, select the data type for the release that you want, and download the zip file.
+1. On the dashboard, select the **Shared asset library** tile.
+1. Select **Model** as the asset type. Then, in the grid, select the data type for the release that you want, and download the zip file.
 
     | Release | Database |
     |---------|----------|
     | On-premises Platform update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Demo Data |
     | On-premises Platform update 41 | Dynamics 365 for Operations on-premises, Version 10.0.17 Empty Data |
 
-4. The zip file contains a single backup (.bak) file. Select the file to download, based on your requirements.
-5. Make sure that the database section in the **infrastructure\\ConfigTempate.xml** file is configured correctly with the following information:
+1. The zip file contains a single backup (.bak) file. Select the file to download, based on your requirements.
+1. After the zip file is downloaded, verify that it's unblocked. Select and hold (or right-click) the file, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
+1. Make sure that the database section in the **infrastructure\\ConfigTempate.xml** file is correctly configured with the following information:
 
     - The database name.
     - The database file and log settings. The database settings should not be lower than the default values that are specified.
@@ -783,7 +790,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     > - The user who is running the SQL service and the user who is running the scripts should have **Read** access on the folder or share where the backup file is located.
     > - If an existing database already has the same name, it won't be overwritten.
 
-6. Copy the **infrastructure** folder to the SQL Server machine. Then open Windows PowerShell in elevated mode, and go to the folder.
+1. Copy the **infrastructure** folder to the SQL Server machine. Then open Windows PowerShell in elevated mode, and go to the folder.
 
 #### Configure the OrchestratorData database
 
@@ -905,7 +912,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 To enable Data management and SSIS workloads, you must install SSIS on each AOS VM. Follow these steps on each AOS VM.
 
 1. Verify that the machine has access to the SSIS installation, and open the **SSIS Setup** wizard.
-2. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** check boxes.
+2. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** checkboxes.
 3. Complete the setup, and verify that the installation was successful.
 
 For more information, see [Install Integration Services (SSIS)](/sql/integration-services/install-windows/install-integration-services).
@@ -949,7 +956,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
 ### <a name="configureadfs"></a>Step 18. Configure AD FS
 
-Before you can complete this procedure, AD FS must be deployed on Windows Server 2019 or Windows Server 2016. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
+Before you can complete this procedure, AD FS must be deployed on Windows Server. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
 Finance + Operations requires additional configuration of AD FS, beyond the default out-of-box configuration. The following Windows PowerShell commands must be run on the machine where the AD FS role service is installed. The user account must have enough permissions to administer AD FS. For example, the user must have a domain administrator account. For complex AD FS scenarios, consult your domain administrator.
 
@@ -993,7 +1000,7 @@ For more information about how to use the script, see the documentation that is 
 .\Publish-ADFSApplicationGroup.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
 ```
 
-![Application group properties](./media/OPSetup_05_ApplicatioGroupProperties.png)
+![Application group properties.](./media/OPSetup_05_ApplicatioGroupProperties.png)
 
 Finally, verify that you can access the AD FS OpenID configuration URL on a Service Fabric node of the **AOSNodeType** type. To do this check, try to open `https://<adfs-dns-name>/adfs/.well-known/openid-configuration` in a web browser. If you receive a message that states that the site isn't secure, you haven't added your AD FS SSL certificate to the Trusted Root Certification Authorities store. This step is described in the AD FS deployment guide. If you're using remoting, you can run the following command to install the certificate on all nodes in the Service Fabric cluster.
 
@@ -1013,7 +1020,7 @@ You've now completed the setup of the infrastructure. The following sections des
 3. Select **On-premises connectors**.
 4. Select **Add** to create a new on-premises connector. 
 5. On the **1: Setup host infrastructure** tab, select **Download agent installer**.
-6. After the zip file is downloaded, verify that it's unblocked. Select and hold (or right-click) the file, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** check box.
+6. After the zip file is downloaded, verify that it's unblocked. Select and hold (or right-click) the file, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
 7. Unzip the agent installer on one of the Service Fabric nodes of the **OrchestratorType** type.
 8. After the file is unzipped, go back to your on-premises connector in LCS.
 9. On the **2: Configure agent** tab, select **Enter configuration**, and enter the configuration settings. To get the required values, run the following command on any machine that has the **infrastructure** folder and up-to-date configuration files.
@@ -1059,29 +1066,29 @@ If the previous remoting Windows PowerShell window was accidentally closed, and 
 
     During the preparation phase, LCS assembles the Service Fabric application packages for your environment. It then sends a message to the local agent to start deployment. You should notice that the environment state is **Preparing**.
 
-    ![Environment in a Preparing state](./media/Preparing2021.png)
+    ![Environment in a Preparing state.](./media/Preparing2021.png)
 
 4. Select **Full details** to open the environment details page. Notice that the upper-right corner of the page shows the environment status as **Preparing**.
 
-    ![Environment details page showing Preparing status](./media/Details_Preparing2021.png)
+    ![Environment details page showing Preparing status.](./media/Details_Preparing2021.png)
 
     The local agent picks up the deployment request, starts the deployment, and communicates back to LCS when the environment is ready. When deployment is started, you should notice that the environment state is changed to **Deploying**.
 
-    ![Environment in a Deploying state](./media/Deploying2021.png)
+    ![Environment in a Deploying state.](./media/Deploying2021.png)
 
 5. Select **Full details** to open the environment details page. Notice that the upper-right corner of the page shows the environment status as **Deploying**.
 
-    ![Environment details page showing Deploying status](./media/Details_Deploying2021.png)
+    ![Environment details page showing Deploying status.](./media/Details_Deploying2021.png)
 
 6. If the deployment fails, the environment state is changed to **Failed**, and the **Reconfigure** button becomes available for the environment. Fix the underlying issue, select **Reconfigure**, update any configuration changes, and then select **Deploy** to retry the deployment.
 
-    ![Reconfigure button for an environment in a Failed state](./media/Failed2021.png)
+    ![Reconfigure button for an environment in a Failed state.](./media/Failed2021.png)
 
     For information about how to reconfigure an environment, see [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md).
 
 The following illustration shows a successful deployment. Notice that the upper-right corner of the page shows the environment status as **Deployed**.
 
-![Successfully deployed environment](./media/Deployed2021.png)
+![Successfully deployed environment.](./media/Deployed2021.png)
 
 ### <a name="connect"></a>Step 22. Connect to your Finance + Operations environment
 

@@ -36,13 +36,13 @@ You can use the Microsoft Dynamics AX 2009 Data migration tool (DMT) to migrate 
 ## Architecture
 The following illustration describes the architecture of the DMT, and how data from the source system (AX 2009) is processed and moved to the target system (Finance and Operations).
 
-![Data migration technical flow](media/dmt_technical_flow.png)
+![Data migration technical flow.](media/dmt_technical_flow.png)
 
 ## Data migration process
 
 The following illustration shows the overall process of collecting and preparing the data in your AX 2009 instance and then importing that data into your new environment.
 
-![Data migration process](media/dmt_process_flow.PNG)
+![Data migration process.](media/dmt_process_flow.PNG)
 
 Before you can use the DMT to export data from the source environment (AX 2009), you must complete the following pre-processing tasks:
 

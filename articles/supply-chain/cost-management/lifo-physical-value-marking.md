@@ -59,7 +59,7 @@ In this example, the item model group isn't marked to include physical value. Th
 
 The new running average cost price reflects the average of the financially updated transactions, USD 15.00. The following illustration shows the effects of the LIFO inventory model on this series of transactions when the **Include physical value** option isn't used. 
 
-![LIFO without Include Physical Value](./media/lifowithoutincludephysicalvalue.gif) 
+![LIFO without Include Physical Value.](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -95,7 +95,7 @@ Transaction 6a will be adjusted to receipt transaction 4b. The system won't sett
 
 The following illustration shows the effects of the LIFO inventory model on this series of transactions when the **Include physical value** option is used. 
 
-![LIFO with Include Physical Value](./media/lifowithincludephysicalvalue.gif) 
+![LIFO with Include Physical Value.](./media/lifowithincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -139,7 +139,7 @@ The new running average cost price reflects the average of the financially and p
 
 The following illustration shows the effects of the LIFO inventory model on this series of transactions when marking between issues and receipts is used. 
 
-![LIFO with Marking](./media/lifowithmarking.gif) 
+![LIFO with Marking.](./media/lifowithmarking.gif) 
 
 **Key to diagram**
 

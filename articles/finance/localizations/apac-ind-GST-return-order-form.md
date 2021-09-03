@@ -74,11 +74,11 @@ ms.dyn365.ops.version: 10.0.4
 
 The following illustration shows the financial entry for the **Credit only**/**Replace and scrap**/**Scrap** disposition code.
 
-![Financial entry for the Credit only/Replace and scrap/Scrap disposition code](media/Annotation-2019-05-20-163321.png)
+![Financial entry for the Credit only/Replace and scrap/Scrap disposition code.](media/Annotation-2019-05-20-163321.png)
 
 The following illustration shows the financial entry for the **Credit**/**Replace and credit** disposition code.
 
-![Financial entry for the Credit/Replace and credit disposition code](media/Annotation-2019-05-20-163405.png)
+![Financial entry for the Credit/Replace and credit disposition code.](media/Annotation-2019-05-20-163405.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

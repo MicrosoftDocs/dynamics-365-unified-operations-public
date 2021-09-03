@@ -45,7 +45,7 @@ Similarly, in the **third-party status** column, the following values may be dis
 
 The diagram below shows both sets of statuses and how they relate to each other.
 
-[ ![Experimentation statuses](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+[ ![Experimentation statuses.](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

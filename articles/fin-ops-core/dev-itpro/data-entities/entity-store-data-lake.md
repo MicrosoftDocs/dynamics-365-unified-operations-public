@@ -56,7 +56,7 @@ You need to enable automated Entity store refresh before enabling Data Lake inte
 
 You will now see the new experience.
 
-![New UI experience](./media/entity-store-data-lake-03.png)
+![New UI experience.](./media/entity-store-data-lake-03.png)
 
 After the new experience is turned on, you can define the refresh for each aggregate measurement. The following refresh options are available:
 
@@ -137,7 +137,7 @@ The following sections describe each task in more detail.
 4. In the **Key permissions** field, select **Get** and **List** permissions.
 5. In the **Secret permissions** field, select **Get** and **List** permissions.
 
-    ![Get and List permissions](./media/entity-store-data-lake-05.png)
+    ![Get and List permissions.](./media/entity-store-data-lake-05.png)
 
 6. Select **Save**.
 
@@ -151,7 +151,7 @@ The following sections describe each task in more detail.
     - **DNS name:** Enter the DNS name of Key Vault.
     - **Secret name:** Enter the name of the secret that you added to Key Vault together with connection string information.
 
-    ![Data connections tab on the System parameters page](./media/entity-store-data-lake-04.png)
+    ![Data connections tab on the System parameters page.](./media/entity-store-data-lake-04.png)
 
 3. Select the **Test Azure Key Vault** and **Test Azure Storage** links to validate that system can access the configuration information that you provided.
 4. Select the **Enable data connection** check box.

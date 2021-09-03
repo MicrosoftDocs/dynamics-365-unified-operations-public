@@ -18,7 +18,7 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.scope: 
 # ms.tgt_pltfrm: 
-ms.custom: 260624
+ms.custom: ["260624", "intro-internal"]
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail, eCommerce

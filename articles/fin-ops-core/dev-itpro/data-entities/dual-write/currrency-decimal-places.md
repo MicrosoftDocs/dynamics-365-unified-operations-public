@@ -1,28 +1,13 @@
 ---
-# required metadata
-
 title: Currency data-type migration for dual-write
 description: This topic describes how to change the number of decimal places that dual-write supports for currency.
 author: RamaKrishnamoorthy 
 ms.date: 04/06/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-04-06
 ---
 
@@ -85,13 +70,13 @@ There are some limitations:
 
 After migration is completed, admins can set the currency precision. Go to **Settings \> Administration**, and select **System Settings**. Then, on the **General** tab, change the value of the **Set the currency precision that is used for pricing throughout the system** column, as shown in the following illustration.
 
-![System settings for currency](media/currency-system-settings.png)
+![System settings for currency.](media/currency-system-settings.png)
 
 ### Business Management: Currencies
 
 If you require that the currency precision for a specific currency differ from the currency precision that is used for pricing, you can change it. Go to **Settings \> Business Management**, select **Currencies**, and select the currency to change. Then set the **Currency Precision** column to the number of decimal places that you want, as shown in the following illustration.
 
-![Currency settings for a specific locale](media/specific-currency.png)
+![Currency settings for a specific locale.](media/specific-currency.png)
 
 ### tables: Currency column
 

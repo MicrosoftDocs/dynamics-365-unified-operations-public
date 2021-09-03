@@ -54,11 +54,11 @@ Before a retail channel is created, ensure you follow the [channel prerequisites
 
 The following image shows the creation of a new retail channel.
 
-![New retail channel](media/channel-setup-retail-1.png)
+![New retail channel.](media/channel-setup-retail-1.png)
 
 The following image shows an example retail channel.
 
-![Example retail channel](media/channel-setup-retail-2.png)
+![Example retail channel.](media/channel-setup-retail-2.png)
 
 ## Other settings
 
@@ -68,7 +68,7 @@ In addition, see [Screen layouts for the point of sale (POS)](pos-screen-layouts
 
 The following image shows an example retail channel setup configuration.
 
-![Example retail channel configuration](media/channel-setup-retail-3.png)
+![Example retail channel configuration.](media/channel-setup-retail-3.png)
 
 ## Additional channel set up
 
@@ -78,7 +78,7 @@ Additional tasks required for online channel setup include setting up payment me
 
 The following image shows various additional retail channel setup options on the **Set up** tab.
 
-![Set up channel](media/channel-setup-retail-4.png)
+![Set up channel.](media/channel-setup-retail-4.png)
 
 ### Set up payment methods
 
@@ -93,7 +93,7 @@ To set up payment methods, for each payment type supported on this channel follo
 
 The following image shows an example of a cash payment method.
 
-![Example payment methods](media/channel-setup-retail-5.png)
+![Example payment methods.](media/channel-setup-retail-5.png)
 
 ### Set up cash declaration
 
@@ -102,7 +102,7 @@ The following image shows an example of a cash payment method.
 
 The following image shows an example of a cash declaration.
 
-![Setup up cash declarations](media/channel-setup-retail-6.png)
+![Setup up cash declarations.](media/channel-setup-retail-6.png)
 
 ### Set up modes of delivery
 
@@ -116,7 +116,7 @@ To change or add a mode of delivery, follow these steps.
 
 The following image shows an example of a mode of delivery.
 
-![Set up modes of delivery](media/channel-setup-retail-7.png)
+![Set up modes of delivery.](media/channel-setup-retail-7.png)
 
 ### Set up income/expense account
 
@@ -133,7 +133,7 @@ To set up income/expense account, follow these steps.
 
 The following image shows an example of an income/expense account.
 
-![Set up income/expense accounts](media/channel-setup-retail-8.png)
+![Set up income/expense accounts.](media/channel-setup-retail-8.png)
 
 ### Set up sections
 
@@ -159,7 +159,7 @@ To set up a fulfillment group assignment, follow these steps.
 
 The following image shows an example of a fulfillment group assignment setup.
 
-![Set up fulfillment group assignments](media/channel-setup-retail-9.png)
+![Set up fulfillment group assignments.](media/channel-setup-retail-9.png)
 
 ### Set up safes
 

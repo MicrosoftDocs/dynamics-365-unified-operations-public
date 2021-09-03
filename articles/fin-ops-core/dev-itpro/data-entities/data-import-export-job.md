@@ -3,7 +3,7 @@
 
 title: Data import and export jobs overview
 description: Use the Data management workspace to create and manage data import and export jobs.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
@@ -17,9 +17,10 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -112,7 +113,7 @@ There are two mapping views: **Mapping visualization**, which is the default vie
 
 You can generate a mapping on the page by selecting **Generate source mapping**. A generated mapping behaves like an automatic mapping. Therefore, you must manually map any unmapped fields.
 
-![Data mapping](./media/dixf-map.png)
+![Data mapping.](./media/dixf-map.png)
 
 ## Verify the security for your import or export job
 Access to the **Data management** workspace can be restricted, so that non-administrator users can access only specific data jobs. Access to a data job implies full access to the execution history of that job and access to the staging tables. Therefore, you must make sure that appropriate access controls are in place when you create a data job.
@@ -138,7 +139,7 @@ You can run a job one time by selecting the **Import** or **Export** button afte
 ## Validate that the job ran as expected
 The job history is available for troubleshooting and investigation on both import and export jobs. Historical job runs are organized by time ranges.
 
-![Job history ranges](./media/dixf-job-history.md.png)
+![Job history ranges.](./media/dixf-job-history.md.png)
 
 Each job run provides the following details:
 

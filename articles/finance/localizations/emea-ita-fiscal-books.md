@@ -271,11 +271,11 @@ To hide these functions from the user interface for all security roles, follow t
 3.	Select **Action menu items** > **TransactionReversal_Cust**. 
 4.	Select **Deny** for **Read**, **Update**, **Create**, **Delete**.
 
-![Security configuration](./media/security-configuration.png)
+![Security configuration.](./media/security-configuration.png)
 
 5.	On the **Unpublished objects** tab, select **Publish all**.
 
-![Unpublished objects](./media/unpublished-objects.png)
+![Unpublished objects.](./media/unpublished-objects.png)
 
 7.	Repeat these steps for the privilege, **Reverse vendor transactions**.
 

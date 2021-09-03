@@ -55,7 +55,7 @@ There are two methods for generating electronic invoices:
 
 The following illustration shows the process for generating an electronic invoice by using the CFDI method. 
 
-![The electronic invoice process for Mexico](./media/about-electronic-invoices-cfdi.jpg "Electronic invoicing generation process for CFDI method")    
+![The electronic invoice process for Mexico.](./media/about-electronic-invoices-cfdi.jpg "Electronic invoicing generation process for CFDI method")    
 
 ### Requirements for using electronic invoices
 

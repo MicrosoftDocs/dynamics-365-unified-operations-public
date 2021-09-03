@@ -43,7 +43,7 @@ The [Invite customers to register and use your customer portal](https://youtu.be
 
 Contacts in Power Apps portals are stored as records in the **Contacts** table in Microsoft Dataverse. Dual-write then syncs these records to Microsoft Dynamics 365 Supply Chain Management as required.
 
-![System diagram for Customer portal contacts](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
+![System diagram for Customer portal contacts.](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
 
 Before you start to invite new customers, make sure that you've enabled the **Contact** table mapping in dual-write.
 

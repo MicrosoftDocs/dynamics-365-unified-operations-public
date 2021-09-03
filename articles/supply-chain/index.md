@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: 
@@ -86,7 +86,7 @@ The following tech conference recordings discuss supply chain management functio
 - **Master planning:**
   - [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
   - [Master planning - tips and tricks for troubleshooting performance](https://youtu.be/7v8BPmEs9Dg)
-  - [Help! MRP is slow!](https://youtu.be/RLXybx20B5o)
+  - [MRP performance tuning](https://youtu.be/RLXybx20B5o)
 - **Product information management:**
   - [Product configurator in Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Warehouse management:**

@@ -41,16 +41,16 @@ To deploy a cloud development environment in your LCS project:
 1. Create a connection between an LCS project and your Azure subscription. You will need your Azure subscription ID and authorize the use of the subscription.
 2. Select **+** under **Environments** to deploy.
 
-    ![LCS Onboard methodology](media/access-instances-5.jpeg)
+    ![LCS Onboard methodology.](media/access-instances-5.jpeg)
     
 3. Select an application and platform version.
 4. Select an environment topology. For more information, see [Sign up for preview subscriptions](sign-up-preview-subscription.md).
     
 5. If you chose a cloud-hosted environment, select which Azure connector you want to use. Then select **Deploy**.
 
-    ![Deploy environment](media/access-instances-3.jpeg)
+    ![Deploy environment.](media/access-instances-3.jpeg)
     
-![Cloud-hosted instances](media/CloudHostedPicture.jpg)
+![Cloud-hosted instances.](media/CloudHostedPicture.jpg)
 
 ## Cloud environment that is provisioned through LCS
 
@@ -72,7 +72,7 @@ The system can be accessed by end users. The administrator can add users to this
 
 Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this topic).
 
-![Restricted admin access](media/restricted-admin.png)
+![Restricted admin access.](media/restricted-admin.png)
 
 For environments deployed **before Platform update 12**:
 1.  Click the VM name.
@@ -171,7 +171,7 @@ Follow the steps in this section if you are also configuring for Commerce.
     }
     ```
         
-    [![Command in the Windows PowerShell ISE window](./media/retailconfig02-1024x529.png)](./media/retailconfig02.png)
+    [![Command in the Windows PowerShell ISE window.](./media/retailconfig02-1024x529.png)](./media/retailconfig02.png)
 
 4.  Update the following SQL script, and run it in on AXDB for that environment. Supply values for the following parameters from the preceding Windows PowerShell script output:
 

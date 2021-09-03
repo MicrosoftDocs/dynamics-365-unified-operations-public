@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Italy
 # ms.search.industry: 
 ms.author: roschlom
@@ -37,6 +37,8 @@ This topic provides links to documentation resources for Italy.
 - [Yearly tax communication](emea-ita-yearly-tax-communication.md)
 - [VAT management and reporting by tax point date (Date of VAT register)](emea-ita-vat-management.md)
 - [Competence date for transactions](emea-ita-competence-date.md)
+- [Italian Intrastat](emea-ita-intrastat.md)
+- [Post arrivals and dispatches for Intrastat](emea-ita-post-arrivals-and-dispatches-for-intrastat.md)
 - [Manual depreciation of fixed assets](emea-ita-depreciation-of-fixed-assets.md)
 - [Packing slip date verification on invoices](emea-ita-packing-slip-date-verification-on-invoice.md)
 - [Post and print a packing slip with transportation delivery details](emea-ita-packing-slip.md)

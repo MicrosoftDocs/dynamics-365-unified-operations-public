@@ -1,26 +1,13 @@
 ---
-
 title: Enable dual-write for existing Finance and Operations apps
 description: Learn how to enable dual-write for existing instances of Finance and Operations apps, and also for a new or existing Dataverse environment.
-author: sabinn-msft
+author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-douklo
-# ms.tgt_pltfrm: 
-ms.custom:
-ms.assetid: 
+ms.reviewer: rhaertle
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---

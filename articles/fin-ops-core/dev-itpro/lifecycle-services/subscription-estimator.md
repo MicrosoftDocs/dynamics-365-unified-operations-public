@@ -37,7 +37,7 @@ Follow these steps to use the Subscription estimator tool.
 1. In LCS, open the project that is associated with the implementation project.
 2. At the top of the page, select the hamburger icon, and then select **Subscription estimator**.
 
-    [![subscription estimator](./media/subscription_estimator_01.png)](./media/subscription_estimator_01.png)
+    [![subscription estimator.](./media/subscription_estimator_01.png)](./media/subscription_estimator_01.png)
 
 3. Download the sample usage profile.
 4. Answer the required questions on each tab. If you're a Commerce customer, be sure to answer the questions on the **Retail and Commerce** tab.

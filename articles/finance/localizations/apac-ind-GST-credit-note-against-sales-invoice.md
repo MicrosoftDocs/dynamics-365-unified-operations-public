@@ -65,7 +65,7 @@ ms.dyn365.ops.version: 10.0.4
 1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
 2. Select **Voucher**.
 
-![Example](media/Annotation-2019-05-20-162812.png)
+![Example.](media/Annotation-2019-05-20-162812.png)
 
 > [!NOTE]
 > You can create a sales credit note through the general ledger and a free text invoice.

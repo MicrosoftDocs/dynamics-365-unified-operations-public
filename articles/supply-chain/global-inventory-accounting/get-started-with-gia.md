@@ -7,6 +7,7 @@ ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: "intro-internal"
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
@@ -37,7 +38,7 @@ Global Inventory Accounting doesn't currently support all the cost management fe
 > [!IMPORTANT]
 > To use Global Inventory Accounting, you must have an LCS-enabled high-availability environment (not a OneBox environment). Additionally, you must be running Supply Chain Management version 10.0.19 or later.
 
-To sign up for the Global Inventory Accounting public preview, send your LCS environment ID by email to the [Global Inventory Accounting team](mailto:GlobalInventoryAccounting@service.microsoft.com). After you're approved for the program, the team will send you a follow-up email that contains a Global Inventory Accounting beta key and your service endpoints. After you receive the beta key, you can [install the add-in](#install).
+To sign up for the Global Inventory Accounting public preview, send your LCS environment ID by email to the [Global Inventory Accounting team](mailto:GlobalInvAccount@microsoft.com). After you're approved for the program, the team will send you a follow-up email that contains a Global Inventory Accounting beta key and your service endpoints. After you receive the beta key, you can [install the add-in](#install).
 
 ## Licensing
 

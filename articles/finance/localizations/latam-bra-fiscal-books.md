@@ -17,8 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 270004
-
+ms.custom: ["270004", "intro-internal"]
 ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: sndray

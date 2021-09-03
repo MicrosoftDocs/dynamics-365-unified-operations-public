@@ -37,7 +37,7 @@ Page summary modules help simplify the entry of page summary metadata that can b
 The Dynamics 365 Commerce module library contains several page summary modules, such as page summary, category page summary, list page summary, and product page summary modules. Each page summary module has search engine optimization (SEO) metadata that is tuned for the specific page types that the module will be used for. All summary page modules share the same set of properties, which are described in the next section.
 
 > [!NOTE]
-> The product page summary module, included with Commerce module library version 9.27 and higher, uses the [Schema.org product schema](https://schema.org/product) to insert basic JSON product metadata into a product page's header section. This metadata is automatically generated using the same Commerce Runtime (CRT) API data actions used by the buy box module and other product page metadata. Schema.org structured product metadata is often used by major search engines to render rich search results. By default, the product page summary module includes the product name, product description, offer (currency and pricing) information, and default image location per the Schema.org product schema specification. If necessary, this module and the data actions used by it can be extended using the Commerce online SDK to augment or modify metadata requirements.
+> The product page summary module, included with Commerce module library version 9.27 and higher, uses the [Schema.org product schema](https://schema.org/Product) to insert basic JSON product metadata into a product page's header section. This metadata is automatically generated using the same Commerce Runtime (CRT) API data actions used by the buy box module and other product page metadata. Schema.org structured product metadata is often used by major search engines to render rich search results. By default, the product page summary module includes the product name, product description, offer (currency and pricing) information, and default image location per the Schema.org product schema specification. If necessary, this module and the data actions used by it can be extended using the Commerce online SDK to augment or modify metadata requirements.
 
 
 ## Summary page module properties
@@ -61,11 +61,11 @@ To add a page summary module to a template, follow these steps.
 1. In the **HTML Head** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Add Module** dialog box, select the **Page summary** module (or another page summary module, such as **List page summary**), and then select **OK**. Make sure that you add the appropriate page summary module for the page types that the template will be used for.
 
-    ![Adding a new module](media/page-summary-1.png)
+    ![Adding a new module.](media/page-summary-1.png)
 
 After the summary module is added, it should resemble the example in the following illustration. The module can now be configured, and the template can be saved and published.
 
-![Page summary module added](media/page-summary-2.png)
+![Page summary module added.](media/page-summary-2.png)
 
 > [!NOTE]
 > Although you can set default values in the template, those values can be overridden on pages that use the template.

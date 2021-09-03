@@ -17,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 17771
+ms.custom: ["17771", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sijoshi
@@ -36,7 +36,7 @@ This topic provides an overview of the Retail software development kit (SDK). Mi
 
 The Retail SDK includes the code, code samples, templates, and tools that are required to extend or customize existing Commerce functionality. The SDK supports rapid development, full MSBuild integration, and package generation. The following image shows the relationship between the development environment and the cloud components.
 
-![Commerce components](media/developer-environment.png)
+![Commerce components.](media/developer-environment.png)
 
 > [!NOTE]
 > The Retail SDK supports the Transport Layer Security (TLS) 1.2 standard. Any customization that you build by using the Retail SDK should follow the TLS 1.2 standard.
@@ -85,11 +85,18 @@ To develop or build extensions by using the Retail SDK, you must have the follow
     + [runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
     + TypeScript version 2.2.2
 
+Visual Studio 2017 has TypeScript 3.1 as the default version. You must install version 2.2.2 because the POS app is based on that version. In Visual Studio, select **Tools \> Get Tools and Features**. On the **Individual components** tab, select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section, and install it.
+
+- .NET Developer Pack:
+    +  [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
+    +  [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net462-developer-pack-offline-installer)
+    
+- [Web Deploy v3.6 ](https://www.microsoft.com/download/confirmation.aspx?id=43717)
+
+
 If the SDK compilation fails with the following error message, "The current .NET SDK does not support targeting .NET Standard 2.0", try installing the x86 version of the .NET 2.1 SDK and runtime.
 + [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-2.1.524-windows-x86-installer)
 + [.NET Core 2.1 Runtime](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-2.1.28-windows-x86-installer)
-
-Visual Studio 2017 has TypeScript 3.1 as the default version. You must install version 2.2.2 because the POS app is based on that version. In Visual Studio, select **Tools \> Get Tools and Features**. On the **Individual components** tab, select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section, and install it.
 
 ## Build the Retail SDK
 
@@ -102,7 +109,7 @@ Before you start development via the Retail SDK, you must restore all the packag
 > [!NOTE]
 > Starting in Retail SDK version 10.0.18 or later, by default the retail SDK MSBuild will check whether the SDK prerequisites are installed, if not it will show the error message and scripts to run to install the prerequisites. You can skip the prerequisites check by passing the parameter MSBuild /p:CheckVSDependencies=false.
 
- ![Running MSBuild from a Command Prompt window](media/retail-sdk-command-prompt.png)
+ ![Running MSBuild from a Command Prompt window.](media/retail-sdk-command-prompt.png)
 
 ## Retail SDK components
 
@@ -283,7 +290,6 @@ The following tables provide information about the components in the Retail SDK 
 <tr>
 <th>Documentation</th>
 <td><a href="../retail-server-icontroller-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)</a>
-<p><a href="../retail-server-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.10 and earlier)</a></p>
 </td>
 </tr>
 </tbody>
@@ -310,7 +316,6 @@ The following tables provide information about the components in the Retail SDK 
 <tr>
 <th>Documentation</th>
 <td><a href="../retail-server-icontroller-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)</a>
-<p><a href="../retail-server-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.10 and earlier)</a></p>
 </td>
 </tr>
 </tbody>
@@ -437,13 +442,13 @@ Both the key file for the strong name and the app package signing certificate ca
 
 It's easy to add new projects to the Retail SDK's build system. You can either clone one of the many existing projects or start a new project. You just have to make some adjustments in a text editor, as shown in the following illustration. The relative path of the **Import** elements should be adjusted, and the **AssemblyName** element should use the predefined **AssemblyNamePrefix** property. These adjustments are required to get various tasks for free, such as versioning, code signing, uniform assembly naming, and automatic dropping to the References folder.
 
-![Code for adding new projects](media/retailsdk09.png)
+![Code for adding new projects.](media/retailsdk09.png)
 
 ### Changing the build order or adding to the build
 
 MSBuild traversal files (dirs.proj files) are used to build the whole directory tree of the Retail SDK. The following illustration shows the main traversal file of the Retail SDK. Similar files might also exist in subdirectories. Notice that Visual Studio solution files (.sln files) are similar to traversal files. Both types of file direct the MSBuild engine to process other build scripts.
 
-![Code for changing the build order or adding to the build](media/retailsdk10.png)
+![Code for changing the build order or adding to the build.](media/retailsdk10.png)
 
 After new code is added, most of it should be put in a new folder. You must also add it to the traversal structure by adding it to one or more dirs.proj files. In the previous illustration, the Extensions folder is highlighted on line 10. The quickest way to get started with a new dirs.proj file is to copy an existing file, correct the paths in the **Import** elements, and update the **ProjectFiles** elements in the **ItemGroup** element.
 
@@ -457,7 +462,7 @@ If only one project requires special handling, it's better to explicitly make th
 
 The **CommerceRuntime** and **RetailServer** extension dynamic-link libraries (DLLs) must be copied into the bin folder of the locally installed RetailServer web application. Users can configure the Customization.setting file so that the DLLs are automatically copied into the bin folder of the local RetailServer web application whenever new versions of these files are built from the extension project.
 
-![Code for automatically adding new DLLs](media/retailsdk11.png)
+![Code for automatically adding new DLLs.](media/retailsdk11.png)
 
 ## Application Lifecycle Management
 
@@ -467,7 +472,7 @@ A good Application Lifecycle Management (ALM) solution provides version control,
 
 To work efficiently in a team, or even just to be able to go back and look at some changes that were made earlier, you must have a good branching strategy and versioning discipline. The following illustration shows a simple branching strategy that might work well for most teams. The version numbers are fictitious. For more information, see, [Adopt a Git branching strategy](/azure/devops/repos/git/git-branching-guidance).
 
-![Branching and merging](media/retailsdk12.png)
+![Branching and merging.](media/retailsdk12.png)
 
 ### Retail SDK mirror branch
 

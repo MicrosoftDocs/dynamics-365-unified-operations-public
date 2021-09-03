@@ -17,7 +17,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 141393
+ms.custom: ["141393", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Retail

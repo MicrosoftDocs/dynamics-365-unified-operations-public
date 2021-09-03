@@ -53,7 +53,7 @@ To create an Azure DevOps GitHub repo, follow these steps.
 
 1. Enter a project name and a description. Select **Private** or **Enterprise** visibility, so that the project is accessible to your organization and developers.
 
-    ![Azure DevOps new project page](media/code-sharing-2.png)
+    ![Azure DevOps new project page.](media/code-sharing-2.png)
 
 1. For this example, you will use Git to clone the SDK code. Git is a free, open-source distributed version control system. Go to <https://git-scm.com/downloads> to download and install the latest build. You should be able to accept all the default installation values.
 
@@ -188,7 +188,7 @@ To create and configure a new build pipeline in Azure DevOps, follow these steps
 
 1. Monitor the agent job logs to learn when the job is completed.
 
-    ![Azure DevOps showing running job with agent job logs](media/code-sharing-21.png)
+    ![Azure DevOps showing running job with agent job logs.](media/code-sharing-21.png)
 
 1. After the job is completed, in the left navigation pane, under **Pipelines**, select **Pipelines**. Then, on the **Runs** tab, under **All pipeline runs**, select the pipeline run to download the deployable package.
 

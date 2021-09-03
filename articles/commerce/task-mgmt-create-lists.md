@@ -74,7 +74,7 @@ To add task links while you create a task, follow these steps.
 
 The following illustration shows the selection of task links in the **Edit task** dialog box.
 
-![Selecting task links in the Edit task dialog box](media/HQ-POS-Tasks-Linking.png)
+![Selecting task links in the Edit task dialog box.](media/HQ-POS-Tasks-Linking.png)
 
 ### Configure a POS operation so that it can be linked to a task
 

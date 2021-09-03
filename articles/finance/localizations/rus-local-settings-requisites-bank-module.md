@@ -85,7 +85,7 @@ In the lower pane of **Import of data** dialog box, use the following buttons to
 > [!NOTE]
 > Before defining a document template, create the templates as files and attach them to the record. You can determine if a document is attached by using the number indicator on the **Document attachment** icon.
 
-![Bank account](media/rus-bank-account.jpg)
+![Bank account.](media/rus-bank-account.jpg)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

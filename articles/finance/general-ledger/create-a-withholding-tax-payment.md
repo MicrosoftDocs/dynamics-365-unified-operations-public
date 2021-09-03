@@ -43,7 +43,7 @@ The Withholding tax payment job procedure settles withholding tax balances from 
 6. Select **Update** to post withholding tax payment voucher to the withholding tax settlement account.
 7. Click **OK**.
 
-![Parameters for withholding tax payment](media/withholding-tax-payment.png)
+![Parameters for withholding tax payment.](media/withholding-tax-payment.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

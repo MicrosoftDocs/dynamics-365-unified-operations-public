@@ -16,7 +16,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-# ms.custom: NotInToc
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry:
 ms.author: sunilg
@@ -115,14 +115,14 @@ The following list provides details about the prerequisites for setting up the M
 
 - Identify your Finance and Operations environment administrator. You can find that information in the **Environment details** section.
 
-    ![Environment details tab](media/EnvironmentDetails.png)
+    ![Environment details tab.](media/EnvironmentDetails.png)
 
 - Validate your Microsoft Power Platform environment governance policy. To validate, you must be a **Global administrator** or **Power Platform administrator**.
 
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
     2. Select the **Settings** button (gear symbol) in the upper-right corner of the page to open the **Power Platform settings** pane.
 
-        ![Power Platform settings pane](media/PowerPlatformSettings.png)
+        ![Power Platform settings pane.](media/PowerPlatformSettings.png)
 
 - For organizations that **do not allow everyone** to create Microsoft Power Platform production environments, the Finance and Operations environment administrator account for your environment must be added to one of the following Microsoft Power Platform admin roles. To make this change, you must be a **Global Administrator**.
 
@@ -143,7 +143,7 @@ The Microsoft Power Platform integration can be enabled when you create a new Fi
 
 When you set up a new Finance and Operations environment in LCS, the deployment wizard includes several sections where you can set values. One of those sections is named **Power Platform Integration**.
 
-![Power Platform Integration section in the deployment wizard](media/powerplat_integration_step0.png)
+![Power Platform Integration section in the deployment wizard.](media/powerplat_integration_step0.png)
 
 Follow these steps to configure the **Power Platform Integration** section.
 
@@ -167,7 +167,7 @@ To set up after the Finance and Operations environment has been deployed, follow
 1. After the Finance and Operations environment has been deployed through LCS, open the **Environment details** page in LCS.
 2. In the **Power Platform integration** section, select **Setup**.
 
-    ![Setup button in the Power Platform Integration section](media/powerplat_integration_step1.png) 
+    ![Setup button in the Power Platform Integration section.](media/powerplat_integration_step1.png) 
 
 3. In the **Power Platform environment setup** dialog box, agree to the terms and conditions, and then select **Setup** at the bottom of the dialog box.
 
@@ -185,9 +185,9 @@ To set up after the Finance and Operations environment has been deployed, follow
 
     After the Dataverse environment is provisioned, the **Install a new add-in** and the **Dual-write application** buttons become available in the **Power Platform integration** section.
 
-    ![Install a new add-in button](media/InstallANewAddIn.png)
+    ![Install a new add-in button.](media/InstallANewAddIn.png)
 
-    ![Dual-write application button](media/powerplat_integration_dwApp_button.png)
+    ![Dual-write application button.](media/powerplat_integration_dwApp_button.png)
 
 > [!IMPORTANT]
 > The **language** and **currency** values of the Dataverse environment that is created and linked to your Finance and Operations environment are automatically determined, based on the physical address of your Azure AD tenant. For example, if that address is in Redmond, Washington, USA, the language will be English by default, and the currency will be US dollars (USD).
@@ -199,7 +199,7 @@ To set up after the Finance and Operations environment has been deployed, follow
 
 Setup can fail at various stages of the deployment of the Dataverse-based environment. 
 
-![Dual-write setup failure](media/Error.png)
+![Dual-write setup failure.](media/Error.png)
 
 - Anytime the setup fails, an error message will be displayed. Based on the error message, you may need to address licensing or capacity issues. After these have been resolved, you can then use the **Resume** button in the **Power Platform integration** section of the **Environment details** page in LCS to finish the setup.
 

@@ -1,5 +1,5 @@
 ---
-title: Cloud and edge scale units for manufacturing and warehouse management workloads
+title: Scale units in a distributed hybrid topology
 description: This topic provides information about cloud and edge scale units for manufacturing and warehouse management workloads.
 author: cabeln
 ms.date: 04/22/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Cloud and edge scale units for manufacturing and warehouse management workloads
+# Scale units in a distributed hybrid topology
 
 [!include [banner](../includes/banner.md)]
 
@@ -22,11 +22,11 @@ ms.dyn365.ops.version: 10.0.19
 >
 > When you enable cloud and edge scale units, you will be asked to affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. To learn more about data processing for cloud and edge scale units, see the [Data processing during management of scale units](#data-processing-management) section later in this topic.
 
-## Core value proposition for scale units
+## Core value proposition for a distributed hybrid topology
 
-Companies that work with manufacturing and distribution must be able to run key business processes 24/7, without interruption and at scale. Cloud and edge scale units enable companies to run key mission-critical manufacturing and warehouse processes without interruption, even when faced with occasional network connectivity or latency issues.
+Companies that work with manufacturing and distribution must be able to run key business processes 24/7, without interruption and at scale. A distributed hybrid topology enables companies to run key mission-critical manufacturing and warehouse processes without interruption, even when faced with occasional network connectivity or latency issues.
 
-Cloud and edge scale units enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. Scale units are provided through the following add-ins for your Supply Chain Management subscription:
+A distributed hybrid topology introduces the concept of *scale units*, which enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. Scale units are provided through the following add-ins for your Supply Chain Management subscription:
 
 - Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available April 2021*)
 - Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available soon*)
@@ -37,7 +37,7 @@ Workload capabilities are being released on a continuous basis through increment
 
 Scale units extend your central Supply Chain Management hub environment by adding dedicated processing capacity. Scale units can run in the cloud. Alternatively, they can run on the edge, on-premises at your local facility.
 
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with scale units":::
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 with scale units.":::
 
 Scale units provide resilience, reliability, and scale for the assigned workloads. Edge scale units can be temporarily disconnected from the cloud hub environment, and workers continue to work in the assigned workloads on the edge.
 
@@ -98,7 +98,7 @@ Your current production environment must be tagged with the **Self-Service** typ
 > [!IMPORTANT]
 > Environment types that run as infrastructure as a service (IaaS) aren't supported. These environments are typically tagged with the **Microsoft Managed** type in LCS. If you have environments of this type, work with your Microsoft contact to understand your migration timeline to the **Self-Service** type.
 
-Microsoft is in the process of transitioning all cloud environments of Supply Chain Management from an IaaS model to a topology that is hosted in Service Fabric. This move brings better scalability and helps make service management easier. Therefore, deployment and maintenance operations are faster. Likewise, service components are being migrated to the concept of microservices, and the service hosting model will [transition](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) from a virtual machine (VM) model to a lightweight containerized architecture.
+Microsoft is in the process of transitioning all cloud environments of Supply Chain Management from an IaaS model to a topology that is hosted in Service Fabric. This move brings better scalability and helps make service management easier. Therefore, deployment and maintenance operations are faster. Likewise, service components are being migrated to the concept of microservices, and the service hosting model will [transition](/virtualization/windowscontainers/about/containers-vs-vm) from a virtual machine (VM) model to a lightweight containerized architecture.
 
 Ultimately, the same Service Fabric–based containerized service infrastructure will power both cloud and edge instances of the service, regardless of whether an instance is a hub in the cloud, or a scale unit in the cloud or on the edge.
 
@@ -153,7 +153,7 @@ Scale units are offered in multiple stock keeping units (SKUs) and pricing optio
 
 The entry-level SKU is known as *Basic*, and the more performant SKU is known as *Standard*. Each SKU is pre-loaded with a specific number of monthly transactions. However, you can increase the monthly transaction budget by adding overage add-ins for each SKU.
 
-:::image type="content" source="media/SKUs-highlevel.png" alt-text="Add-ins for cloud scale units":::
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Add-ins for cloud scale units.":::
 
 > [!TIP]
 > To identify the sizing that best meets your needs, work with your partner and Microsoft to understand the monthly transaction size that you require.
@@ -177,11 +177,11 @@ If the tenant that you're looking for isn't in the list, go to [LCS](https://lcs
 
 For each tenant, the list shows the onboarding status.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="List of tenants on the Dynamics 365 Tenants tab":::
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="List of tenants on the Dynamics 365 Tenants tab.":::
 
 Select **Click here to get started** to request onboarding for the LCS tenant. You must accept the terms. You must also supply a business email address where Microsoft can send communications that are related the onboarding process.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Sign-up submission for a tenant":::
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Sign-up submission for a tenant.":::
 
 Microsoft will review your request and inform you about the next steps by sending an email to the address that you supplied in the sign-up form. Microsoft will be working closely with you to enable scale units in the hybrid topology for your business scenario.
 
@@ -191,13 +191,13 @@ After the onboarding is completed, you can use the port to configure scale units
 
 Go to the [Scale Unit Manager portal](https://aka.ms/SCMSUM), and sign in by using your tenant account. On the **Configure scale units** page, you can add a hub environment if it isn't already listed. You can then select the hub that you want to configure with scale units and workloads.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale unit and workload management experience":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale unit and workload management experience.":::
 
 To add one or more scale units that are available in your subscriptions, select **Add scale units**.
 
 On the **Defined workloads** tab, use the **Create workload** button to add a warehouse management workload to one of your scale units. For each workload, you must specify the context of the processes that will be owned by the workload. For warehouse management workloads, the context is a specific warehouse in a specific site and legal entity.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Workload creation":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Workload creation.":::
 
 > [!TIP]
 > Over time, incremental enhancements will be added to the Scale Unit Manager experience to help make lifecycle management operations easier. The specific capabilities for the current release are documented in an onboarding handbook that is available to customers who are in the process of onboarding to the distributed, hybrid topology for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->

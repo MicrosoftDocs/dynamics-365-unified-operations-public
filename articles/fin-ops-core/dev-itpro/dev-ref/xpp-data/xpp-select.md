@@ -2,11 +2,9 @@
 title: Select data
 description: This topic describes select statements in the X++ language.
 author: robinarh
-ms.date: 06/16/2020
-ms.topic: article
+ms.date: 08/27/2021
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 150273
 ms.search.region: Global
 ms.author: rhaertle
 ms.dyn365.ops.version: AX 7.0.0
@@ -32,7 +30,7 @@ The following example fetches all the columns in the first row of the CustTable 
 
 ```xpp
 CustTable custTable;
-select * from custTable;
+select firstonly custTable; //this is a short notation for 'select firstonly * from custTable;'  
 info("AccountNum: " + custTable.AccountNum);
 ```
 
@@ -40,7 +38,7 @@ The following example prints the value in the **AccountNum** column of each row 
 
 ```xpp
 CustTable custTable;
-while select * from custTable
+while select custTable
 {
     info("AccountNum: " + custTable.AccountNum);
 }
@@ -50,7 +48,7 @@ The following example prints the value in the **AccountNum** column of the first
 
 ```xpp
 CustTable custTable;
-select * from custTable;
+select custTable;
 info("AccountNum: " + custTable.AccountNum);
 
 next custTable;
@@ -58,6 +56,5 @@ info("AccountNum: " + custTable.AccountNum);
 ```
 
 For more examples, see [Select statement](xpp-select-statement.md).
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

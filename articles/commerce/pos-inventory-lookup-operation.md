@@ -4,7 +4,7 @@
 title: Inventory lookup operation in POS
 description: This topic describes how to use the inventory lookup operation in Dynamics 365 Commerce point of sale (POS) to view the on-hand inventory availability of products across stores and warehouses. 
 author: boycezhu
-ms.date: 05/11/2021
+ms.date: 08/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -42,36 +42,40 @@ When the inventory lookup operation is started from the POS application, the POS
 
 For an individual product, the inventory lookup operation provides an inventory lookup list view showing the following product information for a list of locations:
 
-- **Inventory** - Refers to the "available physical" quantity of a product.
-- **Reserved** - Refers to the "physical reserved" quantity retrieved from headquarters.
-- **Ordered** - Refers to the "ordered in total" quantity retrieved from headquarters.
-- **Unit** - Refers to the inventory unit of measure configured in headquarters.
+- **Inventory** – Refers to the "available physical" quantity of a product.
+- **Reserved** – Refers to the "physical reserved" quantity retrieved from headquarters.
+- **Ordered** – Refers to the "ordered in total" quantity retrieved from headquarters.
+- **Unit** – Refers to the inventory unit of measure configured in headquarters.
 
 The list view of locations includes all stores and warehouses that are configured in the fulfillment groups that the current store is linked to, as shown in the following example image.
 
-![Inventory lookup operation list view](media/inventory-lookup-list-view.png)
+![Inventory lookup operation list view.](media/inventory-lookup-list-view.png)
+
+> [!NOTE]
+> Make sure your current store is included in the associated fulfillment groups.
 
 The following actions are available on the POS app bar:
 
-- **Sort** - This action lets the POS user sort the data in the list view based on various criteria. Location-based sorting is the default sort option. 
-  - **Geo location** (from the closest location to the farthest location, compared with the current store)
-  - **Name** (in ascending or descending order)
-  - **Store number** (in ascending or descending order)
-  - **Inventory** (in descending order)
-  - **Reserved** (in descending order)
-  - **Ordered** (in descending order)
-- **Filter** - This action lets the POS user view filtered data for a specific location.
-- **Show store availability** - This action lets the POS user view the available-to-promise (ATP) quantities for a product in the selected store.
-- **Show store location** - This action opens a separate page to show the map view, address, and store hours for the selected store.
-- **Pick up in store** - This action creates a customer order for the product that will be picked up from the selected store, and redirects the user to the transaction screen.
-- **Ship product** - This action creates a customer order for the product that will be shipped from the selected store, and redirects the user to the transaction screen.
-- **View all variants** - For a product with variants, this action switches from a list view to a matrix view that displays inventory information for all variants of the product.
-- **Add to transaction** - This action adds the product to the cart and redirects the user to the transaction screen.
+- **Sort** – This action lets the POS user sort the data in the list view based on various criteria. Location-based sorting is the default sort option.
+
+    - **Geo location** (from the closest to the farthest location, based on the distance to the current store)
+    - **Name** (in ascending or descending order)
+    - **Store number** (in ascending or descending order)
+    - **Inventory** (in descending order)
+    - **Reserved** (in descending order)
+    - **Ordered** (in descending order)
+
+- **Filter** – This action lets the POS user view filtered data for a specific location.
+- **Show store availability** – This action lets the POS user view the available-to-promise (ATP) quantities for a product in the selected store.
+- **Show store location** – This action opens a separate page to show the map view, address, and store hours for the selected store.
+- **Pick up in store** – This action creates a customer order for the product that will be picked up from the selected store, and redirects the user to the transaction screen.
+- **Ship product** – This action creates a customer order for the product that will be shipped from the selected store, and redirects the user to the transaction screen.
+- **View all variants** – For a product with variants, this action switches from a list view to a matrix view that displays inventory information for all variants of the product.
+- **Add to transaction** – This action adds the product to the cart and redirects the user to the transaction screen.
 
 > [!NOTE]
-> For a location-based sort, the distance between a location and current store is determined by the coordinates (latitude and longitude) defined in Commerce headquarters. For a store, the location information is defined in the primary address of the operating unit associated with the store. For a non-store warehouse, the location information is defined in the warehouse address. If the current store doesn't have coordinates properly defined, the location-based sort option will display the current store at the top of the list and then sort other locations by name.
-
-> [!NOTE]
+> The location-based sort that was introduced in the Commerce version 10.0.17 release shows the current store at the top. For other locations, the distance between the location and the current store is determined by the coordinates (latitude and longitude) that are defined in Commerce headquarters. For a store, the location information is defined in the primary address of the operating unit that is associated with the store. For a non-store warehouse, the location information is defined in the warehouse address. Before version 10.0.17, the list view always shows the current store at the top and sorts other locations alphabetically.
+>
 > The **Show store availability**, **Show store location**, **Pick up in store**, and **Ship product** actions are not available for non-store locations.
 
 ## Inventory lookup matrix view for variants
@@ -80,7 +84,7 @@ For a master product with variants, the inventory lookup operation also provides
 
 The following example image shows the inventory lookup matrix view in POS.
 
-![Inventory lookup operation matrix view](media/inventory-lookup-matrix-view.png)
+![Inventory lookup operation matrix view.](media/inventory-lookup-matrix-view.png)
 
 In the matrix view, each cell represents an individual variant, and displays an on-hand inventory (available physical) value in the lower-right corner, as well as **reserved** (physical reserved) and **ordered** (ordered in total) values in the upper-left corner. The following table explains the meaning of the various on-hand values.
 
@@ -94,12 +98,12 @@ The display order of the dimension values in the matrix view is based on the dim
 
 The following actions are available in the matrix view cell:
 
-- **Sell now** - This action adds the selected variant to the cart, and redirects the user to the transaction screen.
-- **Pick up in store** - This action creates a customer order for the selected variant that will be picked up from the selected store, and redirects the user to the transaction screen.
-- **Ship product** - This action creates a customer order for the selected variant that will be shipped from the selected store, and redirects the user to the transaction screen.
-- **Availability** - This action takes the user to a separate page showing the ATP quantities for the selected variant in the selected store.
-- **Show all locations** - This action switches to the standard inventory availability list view showing the inventory information for the selected variant.
-- **View product details** - This action redirects the user to the product details page (PDP) of the selected variant.
+- **Sell now** – This action adds the selected variant to the cart, and redirects the user to the transaction screen.
+- **Pick up in store** – This action creates a customer order for the selected variant that will be picked up from the selected store, and redirects the user to the transaction screen.
+- **Ship product** – This action creates a customer order for the selected variant that will be shipped from the selected store, and redirects the user to the transaction screen.
+- **Availability** – This action takes the user to a separate page showing the ATP quantities for the selected variant in the selected store.
+- **Show all locations** – This action switches to the standard inventory availability list view showing the inventory information for the selected variant.
+- **View product details** – This action redirects the user to the product details page (PDP) of the selected variant.
 
 ## Access inventory lookup from other pages in POS
 
@@ -107,7 +111,7 @@ POS users can access the inventory lookup operation from other pages in POS.
 
 The following example image shows inventory lookup results from a PDP in POS.
 
-![Inventory lookup from product details page](media/inventory-lookup-from-product-details-page.png)
+![Inventory lookup from product details page.](media/inventory-lookup-from-product-details-page.png)
 
 On the PDP of a master product, you can use the **View all variants** action on the app bar to launch the inventory lookup matrix view that displays inventory availability information for the current store for all variants of a product. For an individual product, the PDP displays the on-hand inventory (available physical) value of that product for the current store. Additionally, you can select the **Other stores inventory** link to launch the inventory lookup operation to check the inventory availability of a product across other stores or warehouses.
 
@@ -125,7 +129,5 @@ In Commerce release 10.0.9 and earlier, the **available physical** value in the 
 [POS user interface visual configurations](pos-screen-layouts.md)
 
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

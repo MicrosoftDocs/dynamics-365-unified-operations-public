@@ -33,7 +33,7 @@ Often, you extend tables so that you can store additional data for later but als
 
 In the following illustration, an InventTable extension is used to define an index for a new field on the InventTable table.
 
-![New index](media/AddIndex.jpg) 
+![New index.](media/AddIndex.jpg) 
 
 > [!WARNING]
 > You should not use this approach to create unique indexes. This change is an intrusive change that might break the solutions of other independent software vendors (ISVs) if those solutions are deployed in the same environment. This capability will be removed in future platform releases.

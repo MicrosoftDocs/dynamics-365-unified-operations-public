@@ -20,7 +20,7 @@ ms.search.scope:
 # ms.custom: NotInTOC
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tfehr
+ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
 ---
@@ -28,7 +28,6 @@ ms.dyn365.ops.version: 10.0.18
 #  Withholding tax declaration for Egypt (EG-00005)
 
 [!include[banner](../includes/banner.md)]
-
 [!include[banner](../includes/preview-banner.md)]
 
 ## Overview
@@ -108,7 +107,7 @@ To generate the WHT declaration form reports in Microsoft Excel, define an ER fo
 2. On the **Withholding tax** tab, in the **WHT declaration format mapping** field, select **WHT Declaration Excel (EG)**. If you leave the field blank, the standard sales tax report will be generated in SSRS format.
 
 
-![Declaration form](media/egypt-wht-declaration-setup1.png)
+![Declaration form.](media/egypt-wht-declaration-setup1.png)
 
 ## Generate the Withholding declaration forms
 The process of preparing and submitting a Withholding declaration form for a specific period is based on the withholding tax transactions posted during the settle and post payment tax job. For more information about global withholding tax, see [Global withholding tax](../general-ledger/global-withholding-tax-overview.md).
@@ -118,7 +117,7 @@ Complete the following steps to generate the tax declaration report.
 1. Go to **Tax** > **Declarations** > **Withholding tax** > **Withholding tax payment*.
 2. Select the settlement period and then select the from date for the report. 
 3. Enter the transaction date and then select **OK**.
-4. In the dialog box that opens, select one or more of the form types **Form No 41 **, **Form No 11**, or **None**. If you select **None**, the standard report is generated. 
+4. In the dialog box that opens, select one or more of the form types **Form No 41**, **Form No 11**, or **None**. If you select **None**, the standard report is generated. 
 5. Select the language. All reports are translated in **en-us** and **ar-eg**.
 6. Enter the branch and name of the bank where the tax payment will be paid.
 7. Select the business type and then enter the check and document numbers. 

@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Finance insights home page (preview)
+title: Finance insights home page
 description: Finance insights provides configurable and extensible models to help you accurately and intelligently predict your company's cash flow, predict when you will receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent machine learning models.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 14151
+ms.custom: ["14151", "intro-internal"]
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 # ms.search.industry: 
@@ -26,15 +26,14 @@ ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Finance insights home page (preview)
+# Finance insights home page
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Finance insights provides configurable and extensible models to help you accurately and intelligently predict your company's cash flow, predict when you will receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent machine learning models. When these new capabilities are combined with automation in vendor payments and collections, they provide a rich and intelligent financial system that drives decision making and helps you take action to respond effectively to current and anticipated business challenges.
 
 > [!NOTE]
-> Finance insights preview is available for deployment in the United States of America, Canada, United Kingdom, Europe, Asia Pacific, Australia and New Zealand. Microsoft is incrementally adding support for more regions. To enable Finance insights on production environments, [Export to Data Lake](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake) capabilities should be enabled on the production environment first.
+> Finance insights preview is available for deployment in the United States of America, Canada, United Kingdom, Europe, Asia Pacific, Australia and New Zealand. Microsoft is incrementally adding support for more regions. To enable Finance insights on production environments, [Export to Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) capabilities should be enabled on the production environment first.
 
 > [!NOTE]
 > This functionality is being offered as a set of preview features. As a preview feature, you should not use the resulting machine learning models to drive or influence your business decisions or budgeting proposals. Your use of this feature is governed by [Supplemental Terms of Use](https://go.microsoft.com/fwlink/?linkid=2105274).

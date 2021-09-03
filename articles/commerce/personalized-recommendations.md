@@ -54,7 +54,7 @@ To turn on personalization, follow these steps.
 1. Select the **Personalized product recommendations** feature.
 1. In the **Personalized product recommendations** properties pane, select **Enable now**.
 
-![Turning on personalization](./media/FeatureManagement_Personalized.PNG)
+![Turning on personalization.](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > When you turn on personalization, the process of generating personalized product recommendation lists is started. Up to one day might be required before these lists are available and visible online and at the POS.
@@ -77,7 +77,7 @@ Before the "Picks for you" list can appear on any e-Commerce page, the following
 
 The following illustration shows an example of a "Picks for you" list on an online store page.
 
-![Online Picks for you list](./media/picksforyou.png)
+![Online Picks for you list.](./media/picksforyou.png)
 
 ### "Recommended for customer" lists at the POS
 
@@ -85,7 +85,7 @@ To enhance their clienteling experience, retailers can personalize existing cust
 
 The following illustration shows an example of a "Recommended for customer" list on a POS terminal.
 
-![Recommended for customer list at the POS](./media/picksonpos.png)
+![Recommended for customer list at the POS.](./media/picksonpos.png)
 
 ## Apply personalization to existing recommendation lists
 
@@ -93,7 +93,7 @@ Retailers can apply personalization to existing recommendation lists, such as "N
 
 For example, a signed-in user has already bought the black watch and the brown work boots that appear in the "Trending - default" list in the following illustration. Therefore, the user will see new products instead of those products, as shown in the "Trending - personalized" list.
 
-![Applying personalization](./media/applypersonalization.png)
+![Applying personalization.](./media/applypersonalization.png)
 
 To apply personalization to an existing recommendation list in the Commerce site builder, follow these steps.
 
@@ -103,7 +103,7 @@ To apply personalization to an existing recommendation list in the Commerce site
 1. In the **Select product list configuration** dialog box, under **Type**, select the list type.
 1. Select the **Apply Personalization** check box, and then select **OK**.
 
-    ![Applying personalization to a trending list](./media/ApplyPersonalizationToTrending.PNG)
+    ![Applying personalization to a trending list.](./media/ApplyPersonalizationToTrending.PNG)
 
 1. Save the page, finish editing it, and then publish it. After the page is published, signed-in users will see personalized trending lists.
 

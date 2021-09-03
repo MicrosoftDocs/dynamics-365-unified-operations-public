@@ -70,7 +70,7 @@ be accessible from the restricted tables.
         application using the XDS::SetContext API is the same as the value
         defined in the **Context String** field for the policy.
 
-        ![AOTXDS conceptual model](media/c74bc4ea12f084dfbaddb024685843e8.jpg)
+        ![AOTXDS conceptual model.](media/c74bc4ea12f084dfbaddb024685843e8.jpg)
 
 In the Application Object Tree (AOT), policies and their components are
 displayed under **Security \> Policies.**
