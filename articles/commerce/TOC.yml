@@ -706,6 +706,8 @@
           href: configure-ratings-reviews.md
         - name: Sync product ratings
           href: sync-product-ratings.md
+        - name: Enable manual publishing of ratings and reviews by a moderator
+          href: manual-publish-rating-reviews.md
         - name: Ratings and reviews FAQ
           href: ratings-reviews-faq.md
       - name: Manage your inventory  
