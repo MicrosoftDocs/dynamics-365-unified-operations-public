@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.22
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.22. This version has a build number of 10.0.960 <!-- KFM: find new build number --> and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.22. This version has a build number of 10.0.995 and is available as follows:
 
 - **Preview of release:** September 2021
 - **General availability of release (self-update):** October 2021
@@ -50,18 +50,20 @@ We have recently added or significantly updated the following help topics. These
 
 | Feature area | New or updated topics |
 |---|---|
+| Engineering change management | [Engineering change management overview](../engineering-change-management/product-engineering-overview.md) now lists all related, optional features available in feature management |
 | Master planning | [Demand forecasting setup](../master-planning/demand-forecasting-setup.md) |
 | Master planning | [Net requirements and pegging information with Planning Optimization](../master-planning/planning-optimization/net-requirements.md) |
+| Warehouse management | [Release to warehouse](../warehousing/release-to-warehouse-process.md) provides a detailed overview of the full release to warehouse process |
 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.22 includes platform updates. To learn more, see [Platform updates for version 10.0.22 of Finance and Operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md). <!-- KFM: Get new link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.22 includes platform updates. To learn more, see [Platform updates for version 10.0.22 of Finance and Operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md). <!-- KFM: Confirm link -->
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.22, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=605166&dbType=3&qc=4b9449bf0d947113983bd0697140bf4d8727bfafd5566aa682cb38db343374de). <!-- KFM: Get new link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.22, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=615299).
 
 ### Dynamics 365 and industry clouds: 2021 release wave 2 plan
 
