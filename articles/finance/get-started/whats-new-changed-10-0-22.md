@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.22 (November 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.22 preview release.
 author: kfend
-ms.date: 08/27/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,36 +33,21 @@ ms.dyn365.ops.version: 10.0.22
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.22. This version has a build number of x.x.xx and is available as follows:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.22. This version has a build number of 10.0.95 and is available as follows:
 
 - **Preview of release**: September 2021
 - **General availability of release (self-update)**: October 2021
 - **General availability of release (auto-update)**: November 2021
 
-## Features included in this release
-
-The following features are included in this release. Some of the listed features are still in preview, while others may already be generally available. See the [release plans](/dynamics365/release-plans) for official release dates for each feature. We may update this topic to include features that made it into the build after this topic was initially published.
-
-| Feature area | Feature | More information |  Enabled by  |
-|----|----|----|------|
-| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  | For example, LCS or Feature management  |
-| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  | For example, LCS or Feature management  |
-| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  | For example, LCS or Feature management  |
-| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  | For example, LCS or Feature management  |
-| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  | For example, LCS or Feature management  |
-| (Feature area name) | (Link to release plans topic) | (Link to docs topic)  | For example, LCS or Feature management  |
-
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed in the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance). If you want to use or turn off any of these features, you must do that in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 | Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+| General ledger  | Generate the **Sales tax payment by code** report in the sales tax currency   | Prior to 10.0.22, this feature wasn't enabled by default. To use this feature, you had to manually enable it. With the release of 10.0.22, this feature is now enabled by default. For more information about this feature, see [Print the Sales tax by payment code report](../general-ledger/print-sales-tax-payment-by-code-report.md).   |
+
 
 
 
@@ -72,7 +57,7 @@ The following table lists the feature enhancements included in this release. Eac
 Dynamics 365 Finance 10.0.22 includes platform updates. To learn more, see [Platform updates for version 10.0.22 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md). 
 
 ### Bug fixes 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=605166).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=615299).
 
 ### Regulatory updates
 For information about regulatory updates for Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
