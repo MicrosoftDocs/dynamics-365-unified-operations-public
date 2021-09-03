@@ -1,6 +1,6 @@
 ---
 title: Item RM can't be reserved when production order is released 
-description: When releasing a production order, you may get the error: "Item RM could not be fully reserved." Ensure full quantity is available or reserve items manually. 
+description: 'When releasing a production order, you may get the error: "Item RM could not be fully reserved." Ensure full quantity is available or reserve items manually.'
 author: SmithaNataraj 
 ms.date: 06/24/2021 
 ms.topic: troubleshooting 

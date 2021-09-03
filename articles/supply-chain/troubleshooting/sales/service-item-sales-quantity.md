@@ -7,11 +7,12 @@ ms.topic: troubleshooting
 ms.search.form: SalesQuotationTable, SalesQuotationTableListPage
 audience: Application User 
 ms.reviewer: kamaybac 
-ms.search.region: Global 
+ms.search.region: Global
+ms.author: smnatara 
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
-ms.dyn365.ops.version: 10.0.20 
 --- 
+
 # Can't change the sales quantity of a service item on a sales quotation line
 
 ## Symptoms
