@@ -4,7 +4,7 @@
 title: Use the electronic invoicing service to import vendor invoices
 description: This topic provides information about how to import vendor invoices using the Electronic Invoicing service.
 author: gionoder
-ms.date: 09/02/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -129,17 +129,24 @@ Complete the steps in the following two sections to set up different types of ve
 
 
 ## Receive electronic invoices
+
+The Electronic Invoicing service performs two steps during invoice import from the data channels:
+
+    1. Accessing the mail box and reading e-mail.
+    2. Processing the emails. 
+    
+To perform these two steps, the client should call the service manually for each step. However, we recommend that you set up batch for receiving electronic documents.
+
 To receive electonic invoices, follow these steps:
 
 1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Receive electronic documents**.
 2. Select **OK** and then close the page.
 
-The Electronic Invoicing service performs several steps during invoices import from the Data channels. There are at least two steps - accessing mail box and reading e-mail, and processing it by the service. To perform these two steps the client should call the service at least twice. The recommendation is to setup batch for receiving electronic documents.
 
 ## View receive logs for electronic invoices
 
 To view the receive logs for electronic invoices, go to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document receipt log**.
-If you don't see successfully proccesed invoices, remove filter for the table.
+If you don't see successfully proccesed invoices, remove the table filter.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
