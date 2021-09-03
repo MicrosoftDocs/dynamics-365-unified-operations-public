@@ -44,11 +44,11 @@ Organizations can match their business growth by easily adding users and busines
 
 ## Operating model
 
-The operating model of Finance and Operations apps defines specific roles and responsibilities for the Customer, Implementation Partner, and Microsoft throughout the lifecycle of the service. For more information, see [Cloud operations and servicing](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
+The operating model of Finance and Operations apps defines specific roles and responsibilities for the customer, implementation partner, and Microsoft throughout the lifecycle of the service. For more information, see [Cloud operations and servicing](../../dev-itpro/lifecycle-services/cloud-operations-servicing.md).
 
 ### Customer activities
 
-Customers work with their Partner and [Microsoft FastTrack](/dynamics365/fasttrack/) following the [Success by Design](/dynamics365/fasttrack/success-by-design-overview) framework and using tools and best practice templates provided in [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) to implement their solution. Common activities include:
+Customers work with their partner and [Microsoft FastTrack](/dynamics365/fasttrack/) following the [Success by Design](/dynamics365/fasttrack/success-by-design-overview) framework and using tools and best practice templates provided in [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) to implement their solution. Common activities include:
 
 - User identity and security management
 - Define, develop and operate business processes
