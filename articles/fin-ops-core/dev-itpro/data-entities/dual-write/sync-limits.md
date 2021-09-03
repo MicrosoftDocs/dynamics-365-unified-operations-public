@@ -14,6 +14,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dual-write limits for live synchronization
 
+[!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 For more consistent availability and performance, limits apply when dual-write is used to write data to Finance and Operations apps and Microsoft Dataverse. These limits control dual-write transactions and are applied at the platform level. They are designed to ensure seamless writes and to help minimize failures.
 
 Finance and Operations apps and Dataverse have many processes that span large numbers of records and complex, multi-table transactions. Each environment has limits on the number of transactions, the number of records per transaction, and transaction time (that is, the time that is required to process the transaction). It's important that you understand these limits and their effect on the live synchronization capabilities of dual-write.
@@ -179,3 +183,5 @@ if (committPending == true)
     ttscommit; // Transaction end.
 }
 ```
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
