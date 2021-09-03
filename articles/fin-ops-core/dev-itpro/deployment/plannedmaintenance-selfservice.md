@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-05-13
 ---
 
 # Planned maintenance in self-service environments FAQ
-Planned maintenance is any maintenance activity that Microsoft needs to perform on your environments either according to a published schedule or Microsoft provides at least 5 days’ notice. This topic provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
+Planned maintenance is any maintenance activity that Microsoft needs to perform on your environments according to a published schedule. This topic provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
 
 ## What are the types of planned maintenance activities that are performed on an environment?
 Some of the common planned maintenance activities performed by Microsoft are:
@@ -41,10 +41,10 @@ August 2021 | August 22, 2021 | August 21, 2021 | August 21, 2021
 September 2021 | September 26, 2021 | September 25, 2021 | September 25, 2021
 
 ## How are operating system maintenance updates applied?
-Microsoft sends email notification to customers 5 days ahead of the operating system maintenance, based on the preceding schedule. The email specifies the environments that will be updated and the downtime window. Customers are strongly encouraged to take the maintenance in the given window. In the event that there is an unavoidable reason that customers cannot take the downtime, they can request to reschedule the maintenance. Instructions for requesting to reschedule the maintenance is included in the email.
+This service maintenance is planned outside of normal business hours to help minimize any potential impact to your environment. For environments with users in other parts of the world, we recognize that "outside of normal business hours" might affect you differently. We are working hard to improve Microsoft Dynamics 365 and minimize the impact of these maintenance windows in the future. Going forward, operating system maintenance schedules will be posted here and you won’t receive future notifications for operating system maintenance.
 
 ## Can operating system updates be applied in zero downtime?
-Yes, Microsoft is rolling out near-zero downtime operating system maintenance starting May 2021. Customers selected for near-zero downtime operating system updates will be notified through the email notifications sent 5 days prior to the maintenance based on the preceding schedule.
+Yes, Microsoft is rolling out near-zero downtime operating system maintenance starting May 2021. 
 
 ## What does near-zero downtime maintenance mean?
 Customers can continue to operate the system during the maintenance activity. They may experience brief interruptions or disconnects during this window, but will not need to take a full downtime.
