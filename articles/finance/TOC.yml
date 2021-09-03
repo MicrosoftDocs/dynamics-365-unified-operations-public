@@ -74,6 +74,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.22 (November 2021)
+            href: get-started/whats-new-changed-10-0-22.md
           - name: Finance 10.0.21 (October 2021)
             href: get-started/whats-new-changed-10-0-21.md
           - name: Finance 10.0.20 (August 2021)
@@ -1478,17 +1480,17 @@
         items:
         - name: Globalization services overview
           href: localizations/globalization-services-overview.md?toc=/dynamics365/finance/toc.json
-        - name: Regulatory configuration service
+        - name: Regulatory configuration service (RCS)
           items:
-          - name: Regulatory configuration service overview
+          - name: Regulatory configuration service (RCS) overview
             href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
-          - name: Regulatory configuration service - Globalization features
+          - name: Regulatory configuration service (RCS) - Globalization features
             href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
-          - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
+          - name: Create ER configurations in Regulatory configuration service (RCS) and upload to the Global repository
             href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
-          - name: Regulatory Configuration Service - Delete an RCS environment
+          - name: Regulatory Configuration Service (RCS) - Delete an RCS environment
             href: localizations/rcs-delete-environment.md
-          - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
+          - name: Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation
             href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
           - name: Download ER configurations to Finance
             items: 
@@ -1556,6 +1558,8 @@
               href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
           - name: Determination
             items: 
+            - name: Tax calculation data model
+              href: localizations/tax-calculation-data-model-overview.md
             - name: Sales tax applicability and sales tax group determination logic
               href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
           - name: Calculation
@@ -2994,6 +2998,8 @@
         items:
         - name: Oman overview
           href: localizations/oman.md
+        - name: VAT declaration for Oman (OM-00003)
+          href: localizations/emea-oma-vat-declaration.md
       - name: Netherlands
         items:
         - name: Netherlands overview
@@ -4163,6 +4169,30 @@
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
           - name: Import configurations (LBD)
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
+        - name: Regulatory configuration service (RCS)
+          items:
+          - name: Regulatory configuration service (RCS) overview
+            href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
+          - name: Download ER configurations to Finance
+            items: 
+            - name: Download configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+            - name: Import configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+          - name: Global repository (GR)
+            items: 
+            - name: Import configurations from GR
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Import updated versions of ER configurations
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Enhanced filtering to find configurations in GR
+              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Upload configurations to GR
+              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+            - name: Share configurations in GR  
+              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json  
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
