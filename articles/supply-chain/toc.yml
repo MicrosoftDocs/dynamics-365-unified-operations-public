@@ -3527,7 +3527,7 @@
           href: troubleshooting/procurement/line-number-increments.md
         - name: The purchase agreement maximum limit isn't effective on a purchase requisition
           href: troubleshooting/procurement/max-limit-on-requisition.md
-        - name: "Object reference not set" error occurs during purchase order confirmation
+        - name: Error "Object reference not set" occurs during purchase order confirmation
           href: troubleshooting/procurement/object-reference-not-set.md
         - name: Accounting distributions are either over- or under-distributed
           href: troubleshooting/procurement/over-under-distribution.md

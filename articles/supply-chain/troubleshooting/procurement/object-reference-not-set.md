@@ -13,8 +13,7 @@ ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.13
 ---
 
-# "Object reference not set" error occurs during purchase order confirmation
-
+# Error "Object reference not set" occurs during purchase order confirmation
 
 ## Symptoms
 
