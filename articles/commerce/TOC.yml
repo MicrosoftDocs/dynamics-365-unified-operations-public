@@ -1264,7 +1264,7 @@
         items:
         - name: Regulatory configuration service (RCS) overview
           href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
-        - name:(RCS)  Regulatory configuration service (RCS) - Globalization features
+        - name: (RCS)  Regulatory configuration service (RCS) - Globalization features
           href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
         - name: Create ER configurations in Regulatory configuration service (RCS) and upload to the Global repository
           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
