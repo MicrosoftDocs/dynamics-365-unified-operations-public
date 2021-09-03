@@ -49,7 +49,8 @@ The following features are included in this release. Some of the listed features
 |  E-commerce      |   [Geo-detection and redirection for e-commerce sites](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/geo-detection-redirection-e-commerce-sites.md) | [Set up geo detection and redirection](../geo-detection-redirection.md)<p>[Country/region picker module](../country-region-picker-module.md)</p>   |                    Site builder settings    |
 | Merchandising | Optimized product availability calculation | [Calculate inventory availability for retail channels](../calculated-inventory-retail-channels.md) | Feature management |
 | Merchandising | [Require moderator for ratings and reviews](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/require-moderator-ratings-reviews.md) | [Enable manual publishing of ratings and reviews by a moderator](../manual-publish-rating-reviews.md) | Site builder settings  |
-
+| Extensibility | Set up your own local development environment for Dynamics 365 Commerce without Lifecycle Service | [Set up your own local development environment](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.32/src/ScaleUnitSample/.vscode) | |
+| Extensibility | Develop Commerce Cloud Scale Unit (CRT and API) extension using Visual Studio Code | [Develop CSU extension using VS Code](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.32/src/ScaleUnitSample/.vscode) | |
 
 ## Additional resources
 
