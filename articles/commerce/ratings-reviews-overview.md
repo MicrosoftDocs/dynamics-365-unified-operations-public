@@ -27,12 +27,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Ratings and reviews overview
 
-
 [!include [banner](includes/banner.md)]
 
 This topic covers ratings and reviews in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Ratings and reviews are crucial for e-Commerce customers who want to know how other customers perceive a product. They can also help consumers make purchase decisions. In Dynamics 365 Commerce, the ratings and reviews solution lets retailers capture product reviews and ratings from customers. Retailers can then show average ratings and review information across their e-Commerce website.
 
