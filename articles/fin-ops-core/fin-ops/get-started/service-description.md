@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include[banner](../includes/banner.md)]
 
-Finance and Operations apps are enterprise resource planning (ERP) software as a service (SaaS) offerings that are built on and for [Microsoft Azure](https://azure.microsoft.com/en-us/overview/what-is-azure/). The Finance and Operations service provides organizations with ERP functionality that supports their unique requirements and helps them adjust to constantly changing business environments, without requiring that they manage infrastructure. Finance and Operations apps can include one or more of the following solution areas:
+Finance and Operations apps are enterprise resource planning (ERP) software as a service (SaaS) offerings that are built on and for [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/). The Finance and Operations service provides organizations with ERP functionality that supports their unique requirements and helps them adjust to constantly changing business environments, without requiring that they manage infrastructure. Finance and Operations apps can include one or more of the following solution areas:
 
 - [Dynamics 365 Finance](/dynamics365/finance/)
 - [Dynamics 365 Human Resources](/dynamics365/human-resources/)
@@ -38,9 +38,9 @@ Finance and Operations apps are enterprise resource planning (ERP) software as a
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Together with [business intelligence](https://docs.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview), [infrastructure](https://azure.microsoft.com/en-us/global-infrastructure/), [compute](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-overview), and [database services](https://docs.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview), these apps enable organizations to run industry-specific and operational business processes. Supported by their implementation partner, customers determine the configuration of the business application logic that best suits their unique business processes. Functionality and business processes can be augmented or extended through one or a combination of the following solutions:
+Together with [business intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastructure](https://azure.microsoft.com/global-infrastructure/), [compute](/azure/service-fabric/service-fabric-overview), and [database services](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview), these apps enable organizations to run industry-specific and operational business processes. Supported by their implementation partner, customers determine the configuration of the business application logic that best suits their unique business processes. Functionality and business processes can be augmented or extended through one or a combination of the following solutions:
 
-- Built in [User Experience Personalization](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/personalize-user-experience)
+- Built in [User Experience Personalization](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) tools
 - [Visual Studio](https://visualstudio.microsoft.com)–based [Finance and Operations software development kit (SDK)](../../dev-itpro/dev-tools/developer-home-page.md) and [Azure DevOps build automation](../../dev-itpro/dev-tools/developer-home-page.md#build-automation-using-azure)
 - Independent software vendor (ISV) solutions from [AppSource](https://appsource.microsoft.com/partners)
@@ -60,7 +60,7 @@ The operating model of Finance and Operations apps defines specific roles and re
 
 ### Customer activities
 
-Customers work with their Partner and [Microsoft FastTrack](https://docs.microsoft.com/en-us/dynamics365/fasttrack/) following the [Success by Design](https://docs.microsoft.com/en-us/dynamics365/fasttrack/success-by-design-overview) framework and using tools and best practice templates provided in [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) to implement their solution. Common activities include:
+Customers work with their Partner and [Microsoft FastTrack](/dynamics365/fasttrack/) following the [Success by Design](/dynamics365/fasttrack/success-by-design-overview) framework and using tools and best practice templates provided in [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) to implement their solution. Common activities include:
 
 - User identity and security management
 - Define, develop and operate business processes
@@ -128,11 +128,11 @@ Finance and Operations apps are served from several Azure regions around the wor
 
 - Customers in regulated industry or commercial organizations that do business with entities in France that require local data residency should review [Finance and Operations in France](../../dev-itpro/deployment/france-local-deployment.md).
 - Customers that have operations in China should review [Finance and Operations operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md).
-- Customers that have operations in Russia should review the [Russian personal data localization law](https://docs.microsoft.com/en-us/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
+- Customers that have operations in Russia should review the [Russian personal data localization law](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### General Data Protection Regulation (GDPR)
 
-For Finance and Operations apps, Microsoft acts as a processor. As a data processor, Finance and Operations provides processes and features that help customers comply with GDPR obligations as a data controller. For more information, refer to [GDPR Overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/gdpr/gdpr-guide).
+For Finance and Operations apps, Microsoft acts as a processor. As a data processor, Finance and Operations provides processes and features that help customers comply with GDPR obligations as a data controller. For more information, refer to [GDPR Overview](../../dev-itpro/gdpr/gdpr-guide.md).
 
 ## Environment and data management
 
@@ -260,7 +260,7 @@ For more information, review the following topics:
 - [Configure service updates through LCS](../../dev-itpro/lifecycle-services/configure-service-updates.md)
 - [Pause service updates through LCS](../../dev-itpro/lifecycle-services/pause-service-updates.md)
 - [Get notified about service updates through LCS](../../dev-itpro/lifecycle-services/notifications-service-updates.md)
-- [Regression testing tools to validate service updates](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview)
+- [Regression testing tools to validate service updates](../../dev-itpro/perf-test/rsat/rsat-overview.md)
 - [Dynamics 365 roadmap and release waves](https://dynamics.microsoft.com/en-us/roadmap/overview/)
 
 ## Security and administrative access
@@ -308,7 +308,7 @@ For more information about severity levels, see [this severity table](https://do
 
 Microsoft provides business continuity and disaster recovery for production instances of Finance and Operations apps in the event of Azure region–wide outages. For more information, see [Business continuity and disaster recovery](../../dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
 
-- **High availability** – HA functionality provides ways to prevent downtime that is caused by the failure of a single node in an Azure datacenter. Each service's cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. HA for databases is provided through [Azure SQL HA features](https://docs.microsoft.com/en-us/azure/azure-sql/database/high-availability-sla).
+- **High availability** – HA functionality provides ways to prevent downtime that is caused by the failure of a single node in an Azure datacenter. Each service's cloud architecture uses Azure availability sets for the compute tier to prevent single-point-of-failure events. HA for databases is provided through [Azure SQL HA features](/azure/azure-sql/database/high-availability-sla).
 - **Disaster recovery** – [Azure disaster recovery features](/azure/best-practices-availability-paired-regions) protect each service against outages that broadly affect an entire Azure datacenter. Here are some of these features:
 
     - Azure SQL active-geo replication for the primary database (business database).
@@ -317,7 +317,7 @@ Microsoft provides business continuity and disaster recovery for production inst
 
 The primary data stores are supported for replication. Therefore, components for each service, such as Management Reporter and entity store, use transformed data from the primary database. This data must be generated after the recovery site has been set up and the service has been started. Customer code artifacts and recovered data stores are used to redeploy the site. The redeployment enables state replication of the compute nodes, together with networking and other components, to use the recovered data stores to set up the secondary site. If disaster recovery is used to recover the customer's production instance, Microsoft and the customer will meet their [incident management](service-description.md#incident-management) responsibilities.
 
-Microsoft's Disaster Recovery plans and procedures are examined regularly through System and Organization Controls (SOC) audits. These compliance audits attest to the technical and procedural process of Microsoft's DR, including Dynamics 365 Finance and Operations apps. [SOC compliance](https://docs.microsoft.com/en-us/compliance/regulatory/offering-soc-2) audit reports and all other Compliance Reports are available on [Microsoft Trust Center Compliance Offerings](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home).
+Microsoft's Disaster Recovery plans and procedures are examined regularly through System and Organization Controls (SOC) audits. These compliance audits attest to the technical and procedural process of Microsoft's DR, including Dynamics 365 Finance and Operations apps. [SOC compliance](/compliance/regulatory/offering-soc-2) audit reports and all other Compliance Reports are available on [Microsoft Trust Center Compliance Offerings](/compliance/regulatory/offering-home).
 
 | Microsoft responsibilities | Customer responsibilities |
 |---|---|
