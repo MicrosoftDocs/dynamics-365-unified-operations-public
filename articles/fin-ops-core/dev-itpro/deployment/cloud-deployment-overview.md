@@ -4,7 +4,7 @@
 title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
 author: LaneSwenka
-ms.date: 06/04/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
