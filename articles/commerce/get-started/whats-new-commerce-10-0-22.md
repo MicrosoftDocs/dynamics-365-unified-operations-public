@@ -44,10 +44,10 @@ The following features are included in this release. Some of the listed features
 
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
-|  Digital commerce      |   [Geo detection and redirection for e-commerce sites](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/geo-detection-redirection-e-commerce-sites)         |  [Set up geo detection and redirection](not_in_master_yet), [Country/region picker module](link)   |                         |
-|  Omni-channel excellence  |  [Order lookup for guest checkouts](not_yet_published)    |  [Enable order lookup for guest checkouts](not_in_master_yet), [Order lookup module](net_in_master_yet) |  Retail anonymous user search order details opting feature (off by default)  |
-| | Enable the asynchronous creation for customer addresses | [Customer management in stores](../customer-mgmt-stores.md) | |
-| | Optimized product availability calculation | [Calculate inventory availability for retail channels](../calculated-inventory-retail-channels.md) | |
+|  Digital commerce      |   [Geo detection and redirection for e-commerce sites](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/geo-detection-redirection-e-commerce-sites)         |  [Set up geo detection and redirection](../geo-detection-redirection.md), [Country/region picker module](../country-region-picker-module.md)   |                         |
+|  Omni-channel excellence  |  [Order lookup for guest checkouts](not_yet_published)    |  [Enable order lookup for guest checkouts](../order-lookup-guest.md), [Order lookup module](../order-lookup-module.md) |  Retail anonymous user search order details opting feature (off by default)  |
+| | Enable the asynchronous creation for customer addresses | [Customer management in stores](../customer-mgmt-stores.md) | Enable the asynchronous creation for customer addresses feature |
+| | Optimized product availability calculation | [Calculate inventory availability for retail channels](../calculated-inventory-retail-channels.md) | Optimized product availability calculation feature |
 | | Enable manual publishing of ratings and reviews | [Enable manual publishing of ratings and reviews by a moderator](../manual-publish-rating-reviews.md) | |
 
 
