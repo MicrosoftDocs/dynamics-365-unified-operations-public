@@ -1,5 +1,5 @@
 --- 
-title: Inventory owner %1 not allowed when processing movements
+title: Inventory owner not allowed when processing movements
 description: You may receive the error, "The inventory owner %1 is not allowed." Warehouse management processes support only inventory that is owned by the legal entity. 
 author: perlynne 
 ms.date: 06/24/2021 
@@ -12,8 +12,7 @@ ms.author: perlynne
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Add error code? -->
-# Inventory owner %1 is not allowed when processing movements in the warehouse app
+# Inventory owner not allowed when processing movements in the warehouse app
 
 ## Symptoms
 

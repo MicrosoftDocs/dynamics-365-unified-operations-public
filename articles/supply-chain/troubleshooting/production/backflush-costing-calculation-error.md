@@ -12,8 +12,6 @@ ms.author: smnatara
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Because this has been fixed, this page is no longer relevant. Should it be deleted or left as is? -->
-<!-- KFM: Add error code? -->
 
 # Backflush costing calculation error during inventory closing
 

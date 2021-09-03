@@ -12,7 +12,6 @@ ms.author: smnatara
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Add error code? -->
 
 # Total good quantity error when trying to end a production order
 

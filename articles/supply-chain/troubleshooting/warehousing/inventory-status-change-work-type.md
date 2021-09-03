@@ -12,7 +12,6 @@ ms.author: perlynne
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Add error code? -->
 # Can't select Inventory status change in the Work type column
 
 ## Symptoms

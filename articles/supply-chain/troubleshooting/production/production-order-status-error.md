@@ -12,7 +12,6 @@ ms.author: smnatara
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Add error codes? -->
 
 # Error when changing status of production order from Reported as finished to End
 

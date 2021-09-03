@@ -12,8 +12,6 @@ ms.author: smnatara
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Because of this fix, this page seems pretty irrelevant. Should we keep it as is or delete it altogether? -->
-<!-- KFM: Add error code? -->
 
 # Can't end a production order because of a BOM consumptionCost value error
 

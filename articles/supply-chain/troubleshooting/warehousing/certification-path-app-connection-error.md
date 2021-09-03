@@ -4,7 +4,7 @@ description: If the Warehouse Management app shows the error "Trust anchor for c
 author: ivanv-microsoft 
 ms.date: 06/24/2021 
 ms.topic: troubleshooting 
-# ms.search.form:  
+ms.search.form: WMA
 audience: Application User 
 ms.reviewer: kamaybac 
 ms.search.region: Global 
@@ -12,7 +12,6 @@ ms.author: ivanv
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Add error code? -->
 # Trust anchor for certification path not found when setting up app connection
 
 ## Symptoms

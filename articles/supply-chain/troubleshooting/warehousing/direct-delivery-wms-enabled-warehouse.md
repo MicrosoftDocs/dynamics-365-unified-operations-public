@@ -12,7 +12,6 @@ ms.author: perlynne
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Add error code? -->
 # Direct delivery not able to process for WMS-enabled warehouse
 
 ## Symptoms

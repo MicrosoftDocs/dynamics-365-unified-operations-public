@@ -12,7 +12,6 @@ ms.author: perlynne
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Add error code? -->
 # Can't create load line for return sales order due to invalid inventory dimensions
 
 ## Symptoms

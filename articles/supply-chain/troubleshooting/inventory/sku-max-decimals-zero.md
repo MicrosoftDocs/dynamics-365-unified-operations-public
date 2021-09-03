@@ -15,7 +15,6 @@ ms.dyn365.ops.version: 10.0.16
 
 # Maximum number of decimals for the stock keeping unit is 0
 
-<!-- KFM: Add error code? -->
 
 ## Symptoms
 

@@ -12,7 +12,6 @@ ms.search.validFrom: 2021-06-24
 ms.dyn365.ops.version: 10.0.20 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Add error code? -->
 # Can't change the sales quantity of a service item on a sales quotation line
 
 ## Symptoms

@@ -12,7 +12,7 @@ ms.author: perlynne
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: This has a fix, so is this even still relevant? --> 
+
 # Can't move license plate if serial number has Blank issue and Blank receipt allowed
 
 ## Symptoms

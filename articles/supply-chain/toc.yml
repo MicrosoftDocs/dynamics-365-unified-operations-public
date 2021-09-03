@@ -2109,6 +2109,8 @@
           href: procurement/tasks/submit-approve-project-budget.md
         - name: Submit and approve project budget revisions
           href: procurement/tasks/submit-approve-project-budget-revision.md
+      - name: Procurement FAQ
+        href: procurement/procurement-faq.md
     - name: Product information management
       items:
       - name: Product information overview
@@ -2265,6 +2267,8 @@
             href: pim/tasks/approve-product-configuration-model.md
           - name: Transfer data for product models
             href: pim/tasks/transfer-data-product-models.md
+      - name: Product information management FAQ
+        href: pim/product-information-faq.md
     - name: Engineering change management
       items:
       - name: Engineering change management overview
@@ -3108,7 +3112,7 @@
       - name: Outbound warehouse operations
         items:
         - name: Flexible warehouse-level dimension reservation policy
-          href: warehousing/flexible-warehouse-level-dimension-reservation.m
+          href: warehousing/flexible-warehouse-level-dimension-reservation.md
         - name: Release to warehouse
           href: warehousing/release-to-warehouse-process.md
         - name: Partial release and partial shipment

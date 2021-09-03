@@ -12,7 +12,6 @@ ms.author: perlynne
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Add error code? -->
 # Picking work can't be unblocked because of unfinished replenishment work
 
 ## Symptoms

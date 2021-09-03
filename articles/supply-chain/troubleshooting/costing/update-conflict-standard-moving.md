@@ -12,7 +12,6 @@ ms.author: aevengir
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.15
 ---
-<!-- KFM: Add error codes? -->
 
 # An update conflict occurs when the inventory valuation method is either standard cost or moving average
 

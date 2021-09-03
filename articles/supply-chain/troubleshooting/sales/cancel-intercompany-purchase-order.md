@@ -12,8 +12,7 @@ ms.author: smnatara
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Issue was solved. Should this topic be deleted or left as is? -->
-<!-- KFM: Add error code? -->
+
 # Can't cancel an intercompany purchase order that's linked to a sales order
 
 ## Symptoms

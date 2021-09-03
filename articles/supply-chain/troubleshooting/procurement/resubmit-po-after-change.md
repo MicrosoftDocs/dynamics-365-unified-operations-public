@@ -15,7 +15,6 @@ ms.dyn365.ops.version: 10.0.14
 
 # Error on resubmitting a purchase order to a workflow after a change
 
-<!-- KFM: Add error code? -->
 
 ## Symptoms
 

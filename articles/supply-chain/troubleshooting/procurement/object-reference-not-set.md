@@ -15,7 +15,6 @@ ms.dyn365.ops.version: 10.0.13
 
 # "Object reference not set" error occurs during purchase order confirmation
 
-<!-- KFM: Add error code? -->
 
 ## Symptoms
 

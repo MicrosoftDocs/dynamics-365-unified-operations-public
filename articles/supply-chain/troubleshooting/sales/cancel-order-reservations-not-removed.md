@@ -12,7 +12,6 @@ ms.author: smnatara
 ms.search.validFrom: 2021-06-24
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Add error code? -->
 # Reservations cannot be removed when canceling an order
 
 ## Symptoms

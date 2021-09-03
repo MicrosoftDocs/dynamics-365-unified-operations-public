@@ -15,7 +15,6 @@ ms.dyn365.ops.version: 10.0.13
 
 # Accounting distributions are either over- or under-distributed
 
-<!-- KFM: Add error code? -->
 
 ## Symptoms
 

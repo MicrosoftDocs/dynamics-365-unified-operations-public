@@ -12,7 +12,6 @@ ms.author: perlynne
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Add error code? -->
 # Invalid license plate error when scanning license plate ID in the mobile app
 
 ## Symptoms

@@ -12,7 +12,6 @@ ms.author: johanho
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-<!-- KFM: Add error code? -->
 
 # Error when the Report as finished journal is posted
 

@@ -15,7 +15,6 @@ ms.dyn365.ops.version: 10.0.13
 
 # Can't change the effective date for an approved vendor
 
-<!-- KFM: Add error code? -->
 
 ## Symptoms
 

@@ -15,7 +15,6 @@ ms.dyn365.ops.version: 10.0.13
 
 # Purchase orders don't reflect the language settings of the legal entity
 
-<!-- KFM: Add error code? -->
 
 ## Symptoms
 

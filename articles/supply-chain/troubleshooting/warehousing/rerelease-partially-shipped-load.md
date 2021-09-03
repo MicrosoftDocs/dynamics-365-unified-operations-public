@@ -12,7 +12,7 @@ ms.author: perlynne
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 
-<!-- KFM: Because of this fix, this page is now relevant. Should it be deleted or left as is? -->
+
 # Can't re-release a partially shipped load to the warehouse
 
 ## Symptoms

@@ -15,7 +15,6 @@ ms.dyn365.ops.version: 10.0.13
 
 # An exception occurs during vendor invoice posting
 
-<!-- KFM: Add error code? -->
 
 ## Symptoms
 
