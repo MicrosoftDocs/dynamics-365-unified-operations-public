@@ -249,7 +249,7 @@ For more information, review the following topics:
 - [Pause service updates through LCS](../../dev-itpro/lifecycle-services/pause-service-updates.md)
 - [Get notified about service updates through LCS](../../dev-itpro/lifecycle-services/notifications-service-updates.md)
 - [Regression testing tools to validate service updates](../../dev-itpro/perf-test/rsat/rsat-overview.md)
-- [Dynamics 365 roadmap and release waves](https://dynamics.microsoft.com/en-us/roadmap/overview/)
+- [Dynamics 365 roadmap and release waves](https://dynamics.microsoft.com/roadmap/overview/)
 
 ## Security and administrative access
 
