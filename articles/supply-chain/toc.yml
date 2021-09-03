@@ -1276,7 +1276,7 @@
             - name: Enhanced filtering to find configurations in GR
               href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
             - name: Upload configurations to GR
-              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
             - name: Share configurations in GR  
               href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
             - name: Discontinue configurations in the RCS Global repository
