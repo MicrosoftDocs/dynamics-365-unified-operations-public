@@ -2,7 +2,7 @@
 title: Deploy and access development environments
 description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-ms.date: 06/21/2021
+ms.date: 09/03/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
