@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.22 (November 2021)
+          href: get-started/whats-new-platform-updates-10-0-22.md
         - name: Platform updates for version 10.0.21 (October 2021)
           href: get-started/whats-new-platform-updates-10-0-21.md
         - name: Platform updates for version 10.0.20 (August 2021)
@@ -1050,6 +1052,8 @@
               href: data-entities/dual-write/connection-setup.md
             - name: Considerations for initial synchronization
               href: data-entities/dual-write/initial-sync-guidance.md
+            - name: Limits for live synchronization
+              href: data-entities/dual-write/sync-limits.md
             - name: Dual-write setup from Lifecycle Services
               href: data-entities/dual-write/lcs-setup.md
             - name: Enable dual-write for existing Finance and Operations apps
