@@ -4,7 +4,7 @@
 title: GST declaration for New Zealand
 description: This topic explains how to configure and generate the GST return form GST101A for New Zealand.
 author: sndray
-ms.date: 08/23/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -136,7 +136,7 @@ To generate the GST return form report in PDF format, define an ER format on the
 2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **GST101A Declaration PDF(NZ)**. If you leave the **VAT statement format mapping** field blank, the standard sales tax report will be generated in SSRS format.
 
 
-# Generate a GST return report
+## Generate a GST return report
 The process of preparing and submitting a GST return report for a period is based on sales tax payment transactions that were posted during the Settle and post sales tax job. For more information about sales tax settlement and reporting, see [Sales tax overview[(../general-ledger/indirect-taxes-overview.md)
 
 Follow these steps to generate the tax declaration report.
