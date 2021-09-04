@@ -74,29 +74,29 @@ To view, create, or edit an engineering attribute, follow these steps.
 
 ### Engineering attribute inheritance
 
-For product structures, such as bills of materials (BOMs) or formulas, selected attributes can be passed from the children items up to the parent items (which you could think of as *reverse inheritance*).
+For product structures, such as bills of materials (BOMs) or formulas, selected attributes can be passed from the children items up to the parent items. You can think of this process as "reverse inheritance."
 
 #### Turn on this feature for your system
 
-If your system doesn't already include the features described in this section, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Improved attribute inheritance for Engineering Change Management* feature.
+If your system doesn't already include the features that are described in this section, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Improved attribute inheritance for Engineering Change Management* feature.
 
-#### Attribute inheritances example
+#### Attribute inheritance example
 
-For example, for a food product such as a carrot cake, the system must record each of the allergens that the product contains. The carrot cake could be modelled in the system as an engineering product with a formula, which contains its ingredients such as flour, milk, carrots, and nuts. In this example, the company provides two models of carrot cake: one with lactose and one without.
+For a food product such as a carrot cake, the system must record each allergen that the product contains. The carrot cake can be modeled in the system as an engineering product that has a formula. This formula contains the carrot cake's ingredients, such as flour, milk, carrots, and nuts. In this example, the company provides two models for carrot cake: one that contains lactose and one that doesn't.
 
-The cake with lactose could have the following attributes at the ingredient level:
+The cake that contains lactose has the following attributes at the ingredient level:
 
-- Ingredient "flour" : attribute "gluten" = yes
-- Ingredient "milk" : attribute " lactose" = yes
-- Ingredient "nuts" : attribute "nuts" = yes
+- Ingredient "flour": attribute "gluten" = yes
+- Ingredient "milk": attribute " lactose" = yes
+- Ingredient "nuts": attribute "nuts" = yes
 
-The cake without lactose uses lactose-free milk and could have the following attributes at the ingredient level:
+The cake that doesn't contain lactose uses lactose-free milk and has the following attributes at the ingredient level:
 
-- Ingredient "flour" : attribute "gluten" = yes
-- Ingredient "milk" : attribute "lactose" = no
-- Ingredient "nuts" : attribute "nuts" = yes
+- Ingredient "flour": attribute "gluten" = yes
+- Ingredient "milk": attribute "lactose" = no
+- Ingredient "nuts": attribute "nuts" = yes
 
-Because these products are mostly similar, it would be very convenient to pass these attributes from the children (the two variations) to the parent product (the basic carrot cake). To do so, you can use the *Attribute inheritance* functionality, which is defined for each [engineering version](engineering-versions-product-category.md).
+Because these products are mostly similar, it might be convenient to pass these attributes from the children (the two variations) to the parent product (the basic carrot cake). To implement this "reverse inheritance," you can use the *Attribute inheritance* functionality. This functionality is defined for each [engineering version](engineering-versions-product-category.md).
 
 ## Connect engineering attributes to an engineering product category
 
