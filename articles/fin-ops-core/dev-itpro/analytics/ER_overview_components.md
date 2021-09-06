@@ -64,6 +64,8 @@ A model mapping that supports incoming electronic documents has the following ca
 
 A data model component is designed for each business domain that should be used as a unified data source for reporting that isolates reporting from the physical implementation of data sources. It represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
 
+## Format component
+
 #### <a name="FormatComponentOutbound"></a>Format components for outgoing electronic documents
 
 A format component is the scheme of the reporting output that will be generated at run time. A scheme consists of the following elements:
@@ -104,7 +106,7 @@ The following illustration shows how the data flows for these formats.
 
 To run a single ER format configuration to import data from an incoming electronic document, you must identify the desired mapping of a format configuration, and also the integration point of a model mapping. You can use the same model mapping and destinations together with different formats for different type of incoming documents.
 
-#### Component versioning
+## Component versioning
 
 Versioning is supported for ER components. The following workflow is provided to manage changes in ER components:
 
@@ -118,11 +120,11 @@ Versions that have either **Completed** or **Shared** status are available for o
 - The component can be serialized in XML format and exported as a file in XML format.
 - The component can be reserialized from an XML file and imported into the application as a new version of an ER component.
 
-#### Component date effectivity
+## Component date effectivity
 
 ER component versions are date-effective. You can set the **Effective from** date for an ER component to specify the date that the component becomes effective for reporting processes. The application session date is used to define whether a component is valid for execution. If more than one version is valid for a particular date, the latest version is used for reporting processes.
 
-#### Component access
+## Component access
 
 Access to ER format components depends on the setting for the ISO country/region code. When this setting is blank for a selected version of a format configuration, a format component can be accessed from any company at run time. When this setting contains ISO country/region codes, a format component is available only from companies that have a primary address that is defined for one of a format component's ISO country/region codes.
 
