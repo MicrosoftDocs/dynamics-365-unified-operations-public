@@ -1607,7 +1607,7 @@
         items:
         - name: Inventory Visibility Add-in overview
           href: inventory/inventory-visibility.md
-        - name: Install the Inventory Visibility Add-in
+        - name: Install and set up Inventory Visibility
           href: inventory/inventory-visibility-setup.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md

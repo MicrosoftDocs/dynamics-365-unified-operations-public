@@ -29,7 +29,7 @@ Inventory Visibility provides a model-driven app for visualization. The app cont
 
 ## Prerequisites
 
-Before you begin, install and set up the Inventory Visibility Add-in as described in [Install the Inventory Visibility Add-in](inventory-visibility-setup.md).
+Before you begin, install and set up the Inventory Visibility Add-in as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
 ## <a name="configuration"></a>Configuration
 

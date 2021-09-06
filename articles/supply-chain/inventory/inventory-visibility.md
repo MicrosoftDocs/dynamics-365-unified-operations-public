@@ -38,7 +38,7 @@ You can integrate Inventory Visibility with multiple third-party systems by sett
 
 ## Inventory Visibility integration with Dynamics 365 Supply Chain Management
 
-The integrated solution pulls inventory data from Dynamics 365 Supply Chain Management and continuously tracks inventory changes. For more information, see [Install the Inventory Visibility Add-in](inventory-visibility-setup.md) and [Configure Inventory Visibility](inventory-visibility-configuration.md).
+The integrated solution pulls inventory data from Dynamics 365 Supply Chain Management and continuously tracks inventory changes. For more information, see [Install and set up Inventory Visibility](inventory-visibility-setup.md) and [Configure Inventory Visibility](inventory-visibility-configuration.md).
 
 ## Get a global view of inventory
 
