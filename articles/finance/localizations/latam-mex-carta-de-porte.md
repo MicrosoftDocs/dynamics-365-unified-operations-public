@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.23
 # Waybill (Carta de Porte) complement (version 1.0)
 This topic provides information about how to setup and submit parking slips and transfer orders with Waybill (Carta de Porte) complement. Waybill (Carta de Porte) complement is mandatory for taxpayers who transport goods and merchandise in the national territory from October 1st, 2021.
 
-A user can fill in transportation information in **Transportation details** form from:
+For generation of waybill complement in CFDI documents a user should fill in transportation information in **Transportation details** form from:
 
 -   A sales order record including sales orders for the project (Accounts receivable \> Orders \> All sales orders, Action pane \> Pick and Pack).
 
