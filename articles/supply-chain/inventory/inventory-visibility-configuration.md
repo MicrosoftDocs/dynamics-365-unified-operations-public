@@ -34,18 +34,22 @@ Before you start to work with Inventory Visibility, you must complete the follow
 
 Before you begin, install and set up the Inventory Visibility Add-in as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
-## <a name="configuration"></a>The Configuration page of the Inventory Visibility app
-
-In Power Apps, the **Configuration** page of the [Inventory Visibility app](inventory-visibility-power-platform.md) helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default settings. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems.
-
-After the configuration is completed, be sure to select **Update Configuration** in the app.
-
 ## <a name="feature-switch"></a>Enable Inventory Visibility features in Power Apps feature management
 
 The Inventory Visibility Add-in adds several new features to your Power Apps installation. By default, these features are turned off. To use them, open the **Configuration** page in Power Apps, and then, on the **Feature Management** tab, turn on the following features.
 
 - *OnHandReservation*
 - *OnHandMostSpecificBackgroundService*
+
+## <a name="get-service-endpoint"></a>Find the service endpoint
+
+If you don't know the correct Inventory Visibility service endpoint, open the **Configuration** page in Power Apps, and then select **Show Service Endpoint** in the upper-right corner. The page will show the correct service endpoint.
+
+## <a name="configuration"></a>The Configuration page of the Inventory Visibility app
+
+In Power Apps, the **Configuration** page of the [Inventory Visibility app](inventory-visibility-power-platform.md) helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default settings. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems.
+
+After the configuration is completed, be sure to select **Update Configuration** in the app.
 
 ## Data source configuration
 
@@ -472,13 +476,9 @@ After you sign in, the configuration is updated in the Inventory Visibility serv
 > [!NOTE]
 > Be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
 
-## <a name="get-service-endpoint"></a>Find the service endpoint
-
-If you don't know the correct Inventory Visibility service endpoint, open the **Configuration** page in Power Apps, and then select **Show Service Endpoint** in the upper-right corner. The page will show the correct service endpoint.
-
 ## <a name="default-configuration-sample"></a>Default configuration sample
 
-During its initialization stage, Inventory Visibility sets up a default configuration. You can modify the configuration as you require.
+During its initialization stage, Inventory Visibility sets up a default configuration, which is detailed here. You can modify this configuration as you require.
 
 ### Data source configuration
 
