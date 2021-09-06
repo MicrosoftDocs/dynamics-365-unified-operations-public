@@ -237,7 +237,7 @@ To define the soft reservation mapping, follow these steps.
     | `Subtraction` | `pos` | `outbound` |
     | `Subtraction` | `iv` | `softreservordered` |
 
-1. We recommend that you to set up the AFR calculated measure so that it contains the physical measure that serves as the soft reservation measure. In this way, the AFR calculated measure quantity will be affected by the reservation measure quantity. So in this example, the `availforreserv` calculated measure of the `iv` data source should contain the `softreservordered` physical measure from `iv` as component.
+    We recommend that you to set up the AFR calculated measure so that it contains the physical measure that serves as the soft reservation measure. In this way, the AFR calculated measure quantity will be affected by the reservation measure quantity. Therefore, in this example, the `availforreserv` calculated measure of the `iv` data source should contain the `softreservordered` physical measure from `iv` as a component.
 
 1. Open the **Configuration** page.
 1. On the **Soft Reservation Mapping** tab, set up the mapping from the physical measure to the calculated measure. For the previous example, you might use the following settings to map `availforreserv` to the previously defined `softreservordered` physical measure.
@@ -254,7 +254,7 @@ Before you can edit the **Soft Reservation Hierarchy** tab, you must turn on the
 
 The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the product index hierarchy works for on-hand queries.
 
-The reservation hierarchy can differ from the on-hand index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components because they construct the partition configuration. When you do the reservation, you must specify a partition for the product.
+The reservation hierarchy can differ from the on-hand index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration. When you do the reservation, you must specify a partition for the product.
 
 #### Example
 
@@ -268,7 +268,7 @@ The following reservation hierarchy is set up in your system.
 | `SizeId` | 4 |
 | `StyleId`| 5 |
 
-Given this reservation hierarchy, you can do reservation in the following dimension orders. You must specify a partition for the product when you do the reservation, so the basic hierarchy you can use is `(SiteId, LocationId)`
+Given this reservation hierarchy, you can do reservation in the following dimension orders. You must specify a partition for the product when you do the reservation. Therefore, the basic hierarchy that you can use is `(SiteId, LocationId)`.
 
 - `(SiteId, LocationId)`
 - `(SiteId, LocationId, ColorId)`
@@ -326,9 +326,9 @@ To post a reservation request, you must enter a value in the request body. Use t
 
 ## <a name="inventory-summary"></a>Inventory summary
 
-**Inventory summary** is a customized view for the *Inventory OnHand Sum* entity. It provides an inventory summary for products together with all dimensions. Periodically, the inventory summary data will be synchronized from Inventory Visibility. Before you can see data in the **Inventory summary** tab, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab.
+**Inventory summary** is a customized view for the *Inventory OnHand Sum* entity. It provides an inventory summary for products together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. Before you can see data on the **Inventory summary** tab, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab.
 
-By using the **Advanced filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options lets you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the **Advanced filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
+By using the **Advanced filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the **Advanced filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
 
 The top of the customized view provides three fields: **Default dimension**, **Custom dimension**, and **Measure**. You can use these fields to control which columns are visible.
 
