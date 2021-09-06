@@ -30,7 +30,7 @@ The LCS code upgrade service automatically checks your upgraded code into Azure 
 - **Projects** are solutions that you can use during upgrade. One solution, CodeMergeSolution, is the solution that contains projects with the elements that have conflicts and need to be resolved. Another solution, UpgradedSolution, contains a collection of projects, one for each upgraded model.
 
 ## Map Azure DevOps to your development box
-1.  In Visual Studio, connect to your account by going to **Team explorer &gt; Select Team Projects &gt; Servers &gt; Add.**
+1.  In Visual Studio, connect to your account by going to **Team Explorer &gt; Select Team Projects &gt; Servers &gt; Add.**
 2.  Enter the URL to your team project. Select **Close**.
 3.  Make sure the Azure DevOps account shows up. On the right, choose the project that you want to work on. Select **Connect**.
 4.  Now you need to map your workspace to the Azure DevOps folders. Go to the **Source Code Explorer** and do this mapping:

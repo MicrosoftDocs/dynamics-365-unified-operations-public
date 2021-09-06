@@ -12,7 +12,6 @@ ms.author: perlynne
 ms.search.validFrom: 2021-04-11
 ms.dyn365.ops.version: 10.0.19
 ---
-
 # An error occurs when the location is selected during picking list registration
 
 KB number: 4613106
