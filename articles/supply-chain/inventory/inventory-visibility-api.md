@@ -42,7 +42,7 @@ The following table lists the APIs that are currently available:
 Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 > [!NOTE]
-> The {environmentId} is the Microsoft Dynamics Lifecycle Services (LCS) environment ID.
+> The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Find the endpoint according to your Lifecycle Services environment
 
@@ -97,13 +97,13 @@ To get a security service token, follow these steps.
 
    ```json
    {
-     "token_type": "Bearer",
-     "expires_in": "3599",
-     "ext_expires_in": "3599",
-     "expires_on": "1610466645",
-     "not_before": "1610462745",
-     "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-     "access_token": "eyJ0eX...8WQ"
+       "token_type": "Bearer",
+       "expires_in": "3599",
+       "ext_expires_in": "3599",
+       "expires_on": "1610466645",
+       "not_before": "1610462745",
+       "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+       "access_token": "eyJ0eX...8WQ"
    }
    ```
 
@@ -111,12 +111,12 @@ To get a security service token, follow these steps.
 
    ```json
    {
-     "grant_type": "client_credentials",
-     "client_assertion_type": "aad_app",
-     "client_assertion": "{Your_AADToken}",
-     "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-     "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
-     "context_type": "finops-env"
+       "grant_type": "client_credentials",
+       "client_assertion_type": "aad_app",
+       "client_assertion": "{Your_AADToken}",
+       "scope": "https://inventoryservice.operations365.dynamics.com/.default",
+       "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
+       "context_type": "finops-env"
    }
    ```
 
@@ -137,9 +137,9 @@ To get a security service token, follow these steps.
 
    ```json
    {
-     "access_token": "{Returned_Token}",
-     "token_type": "bearer",
-     "expires_in": 3600
+       "access_token": "{Returned_Token}",
+       "token_type": "bearer",
+       "expires_in": 3600
    }
    ```
 
@@ -164,7 +164,7 @@ The following table summarizes the meaning of each field in the JSON body.
 | `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, _Source_) to indicate whether the event is coming from Supply Chain Management or an external system. |
 
 > [!NOTE]
-> You must specify the `SiteId` and `LocationId` in dimensions when you create on-hand change events, set or override on-hand quantities, or create reservation events. This is because these parameters construct the [partition configuration](inventory-visibility-configuration.md#partition-configuration).
+> The `SiteId` and `LocationId` parameters construct the [partition configuration](inventory-visibility-configuration.md#partition-configuration). Therefore, you must specify them in dimensions when you create on-hand change events, set or override on-hand quantities, or create reservation events.
 
 ### <a name="create-one-onhand-change-event"></a>Create one on-hand change event
 
@@ -201,21 +201,21 @@ The following example shows sample body content. In this sample, you post a chan
 
 ```json
 {
-  "id": "123456",
-  "organizationId": "usmf",
-  "productId": "T-shirt",
-  "dimensionDataSource": "pos",
-  "dimensions": {
-    "SiteId": "1",
-    "LocationId": "11",
-    "PosMachineId": "0001",
-    "ColorId": "Red"
-  },
-  "quantities": {
-    "pos": {
-      "inbound": 1
+    "id": "123456",
+    "organizationId": "usmf",
+    "productId": "T-shirt",
+    "dimensionDataSource": "pos",
+    "dimensions": {
+        "SiteId": "1",
+        "LocationId": "11",
+        "PosMachineId": "0001",
+        "ColorId": "Red"
+    },
+    "quantities": {
+        "pos": {
+            "inbound": 1
+        }
     }
-  }
 }
 ```
 
@@ -223,19 +223,19 @@ The following example shows sample body content without `dimensionDataSource`. I
 
 ```json
 {
-  "id": "123456",
-  "organizationId": "usmf",
-  "productId": "T-shirt",
-  "dimensions": {
-    "SiteId": "1",
-    "LocationId": "11",
-    "ColorId": "Red"
-  },
-  "quantities": {
-    "pos": {
-      "inbound": 1
+    "id": "123456",
+    "organizationId": "usmf",
+    "productId": "T-shirt",
+    "dimensions": {
+        "SiteId": "1",
+        "LocationId": "11",
+        "ColorId": "Red"
+    },
+    "quantities": {
+        "pos": {
+            "inbound": 1
+        }
     }
-  }
 }
 ```
 
@@ -277,33 +277,33 @@ The following example shows sample body content.
 
 ```json
 [
-  {
-    "id": "123456",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
-    "dimensionDataSource": "pos",
-    "dimensions": {
-      "PosSiteId": "1",
-      "PosLocationId": "11",
-      "PosMachineId": "0001"
+    {
+        "id": "123456",
+        "organizationId": "usmf",
+        "productId": "T-shirt",
+        "dimensionDataSource": "pos",
+        "dimensions": {
+            "PosSiteId": "1",
+            "PosLocationId": "11",
+            "PosMachineId": "0001"
+        },
+        "quantities": {
+            "pos": { "inbound": 1 }
+        }
     },
-    "quantities": {
-      "pos": { "inbound": 1 }
+    {
+        "id": "654321",
+        "organizationId": "usmf",
+        "productId": "Pants",
+        "dimensions": {
+            "SiteId": "1",
+            "LocationId": "11",
+            "ColorId": "black"
+        },
+        "quantities": {
+            "pos": { "outbound": 3 }
+        }
     }
-  },
-  {
-    "id": "654321",
-    "organizationId": "usmf",
-    "productId": "Pants",
-    "dimensions": {
-      "SiteId": "1",
-      "LocationId": "11",
-      "ColorId": "black"
-    },
-    "quantities": {
-      "pos": { "outbound": 3 }
-    }
-  }
 ]
 ```
 
@@ -346,22 +346,22 @@ The following example shows sample body content. The behavior of this API differ
 
 ```json
 [
-  {
-    "id": "123456",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
-    "dimensionDataSource": "pos",
-    "dimensions": {
-      "PosSiteId": "1",
-      "PosLocationId": "11",
-      "PosMachineId": "0001"
-    },
-    "quantities": {
-      "pos": {
-        "inbound": 1
-      }
+    {
+        "id": "123456",
+        "organizationId": "usmf",
+        "productId": "T-shirt",
+        "dimensionDataSource": "pos",
+        "dimensions": {
+             "PosSiteId": "1",
+            "PosLocationId": "11",
+            "PosMachineId": "0001"
+        },
+        "quantities": {
+            "pos": {
+                "inbound": 1
+            }
+        }
     }
-  }
 ]
 ```
 
@@ -373,11 +373,11 @@ To use the *Reserve* API, you must open the reservation feature and complete the
 
 ### <a name="create-one-reservation-event"></a>Create one reservation event
 
-A reservation can be made against different data source settings. To configure this, first specify the data source in the `dimensionDataSource` parameter, and then dimensions according to the dimension settings in the target data source in the `dimensions` parameter.
+A reservation can be made against different data source settings. To configure this type of reservation, first specify the data source in the `dimensionDataSource` parameter. Then, in the `dimensions` parameter, specify dimensions according to the dimension settings in the target data source.
 
-When calling the reservation API, you can control the reservation validation by specifying the boolean parameter `ifCheckAvailForReserv` in the request body. `True` means the validation is necessary while `False` means the validation is unnecessary. The default value of `ifCheckAvailForReserv` is `True`.
+When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required. The default value is `True`.
 
-If you want to cancel a reservation or unreserve specified inventory quantities, set the quantity as a negative value and set the `ifCheckAvailForReserv` parameter as `False` to skip the validation.
+If you want to cancel a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation.
 
 ```txt
 Path:
@@ -414,19 +414,19 @@ The following example shows sample body content.
 
 ```json
 {
-  "id": "reserve-0",
-  "organizationId": "usmf",
-  "productId": "T-shirt",
-  "quantity": 1,
-  "quantityDataSource": "iv",
-  "modifier": "softreservordered",
-  "ifCheckAvailForReserv": true,
-  "dimensions": {
-    "SiteId": "1",
-    "LocationId": "11",
-    "ColorId": "Red",
-    "SizeId": "Small"
-  }
+    "id": "reserve-0",
+    "organizationId": "usmf",
+    "productId": "T-shirt",
+    "quantity": 1,
+    "quantityDataSource": "iv",
+    "modifier": "softreservordered",
+    "ifCheckAvailForReserv": true,
+    "dimensions": {
+        "SiteId": "1",
+        "LocationId": "11",
+        "ColorId": "Red",
+        "SizeId": "Small"
+    }
 }
 ```
 
@@ -499,45 +499,45 @@ Body:
     }
 ```
 
-In the body part of this request, `dimensionDataSource` is still an optional parameter. If it isn't set, `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `siteId`, `locationId`.
+In the body part of this request, `dimensionDataSource` is still an optional parameter. If it isn't set, `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `siteId`, and `locationId`.
 
-- `organizationId` should contains only one value, but it is still an array.
-- `productId` can contains one or more values. If it is an empty array, all products will be returned.
+- `organizationId` should contains only one value, but it's still an array.
+- `productId` can contains one or more values. If it's an empty array, all products will be returned.
 - `siteId` and `locationId` are used in Inventory Visibility for partitioning.
 
-The `groupByValues` should follow your configuration for indexing, see [Product index hierarchy configuration](./inventory-visibility-configuration.md#index-configuration).
+The `groupByValues` parameter should follow your configuration for indexing. For more information, see [Product index hierarchy configuration](./inventory-visibility-configuration.md#index-configuration).
 
-The `returnNegative` controls if the results contains negative entries or not.
+The `returnNegative` parameter controls whether the results contain negative entries.
 
-The following example shows sample body content:
+The following example shows sample body content.
 
 ```json
 {
-  "dimensionDataSource": "pos",
-  "filters": {
-    "organizationId": ["usmf"],
-    "productId": ["T-shirt"],
-    "siteId": ["1"],
-    "LocationId": ["11"],
-    "ColorId": ["Red"]
-  },
-  "groupByValues": ["ColorId", "SizeId"],
-  "returnNegative": true
+    "dimensionDataSource": "pos",
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": ["T-shirt"],
+        "siteId": ["1"],
+        "LocationId": ["11"],
+        "ColorId": ["Red"]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true
 }
 ```
 
-To query all products in a specific site and location:
+The following examples shows how to query all products in a specific site and location.
 
 ```json
 {
-  "filters": {
-    "organizationId": ["usmf"],
-    "productId": [],
-    "siteId": ["1"],
-    "LocationId": ["11"],
-  },
-  "groupByValues": ["ColorId", "SizeId"],
-  "returnNegative": true
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": [],
+        "siteId": ["1"],
+        "LocationId": ["11"],
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true
 }
 ```
 
