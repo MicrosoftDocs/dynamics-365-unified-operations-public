@@ -61,7 +61,6 @@ To configure Adyen payment connector in Commerce POS for Brazil, follow these st
 1. Create a record and specify CNPJ for the card processor aquiring company.
 1. Go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**.
 1. Specify the card processor code created in the step above for the desired electronic payment types. Also it is required to choose a payment system.
-1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
 1. Add the electronic payment types created in the step above to your stores payment methods by clicking on the **Electronic payment setup** button.
 
 ## Additional resources
