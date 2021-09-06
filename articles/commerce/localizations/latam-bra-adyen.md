@@ -34,7 +34,7 @@ The Dynamics 365 Payment Connector for Adyen is an out-of-the-box payment connec
 The following Brazil-specific Dynamics 365 Payment Connector for Adyen features are enabled after the Commerce localization for Brazil has been set up and deployed:
 
 - Support for sales with credit and debit cards (that is, double-purpose cards).
-- Saving payment-related data, such as card type, transaction code (NSU), and acquirer's CNPJ (Cadastro Nacional da Pessoa Jurídica) in sales transactions and reporting it in electronic fiscal documents:
+- Saving payment-related data, such as card type, transaction code (NSU - Número Sequencial Único), and acquirer's CNPJ (Cadastro Nacional da Pessoa Jurídica) in sales transactions and reporting it in electronic fiscal documents:
 NFC-e (Nota Fiscal de Consumidor Eletrônica),
 NF-e (Nota Fiscal Eletrônica),
 CF-e (Cupom Fiscal Eletrônico).
@@ -47,9 +47,9 @@ As a result, the card payment is registered in Adyen with selected payment prefe
 
 ## Saving payment-related data
 
-When a retial sale is paid by card, the following card payment data is being stored in electronic fiscal document in the card payment data block and transmitted to SEFAZ (Secretaria de Estado de Fazenda):
+When a retial sale is paid by card, the following card payment information is being stored in electronic fiscal document in the card payment data block and transmitted to SEFAZ (Secretaria de Estado de Fazenda):
 - Accreditation - CNPJ of the payment transfer aquiring company,
-- Card banner - card type Visa, MasterCard, etc.
+- Card banner - card type such as Visa, MasterCard, etc.
 - Transaction code (NSU) - identification number of a sales transaction using cards.
 
 
@@ -67,4 +67,5 @@ To configure Adyen payment connector in Commerce POS for Brazil, follow these st
 ## Additional resources
 
 [Dynamics 365 Payment Connector for Adyen overview](../dev-itpro/adyen-connector.md)
+
 [Set up Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector-setup.md)
