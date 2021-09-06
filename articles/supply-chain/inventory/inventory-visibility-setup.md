@@ -36,7 +36,7 @@ Before you install the Inventory Visibility, you must complete the following tas
     - `Inventory Visibility Integration.zip` (if the version of Supply Chain Management that you're running is earlier than version 10.0.18)
 
 > [!NOTE]
-> The countries and regions that are currently supported include Canada (CCA, ECA), the United States (WUS, EUS), the European Union (NEU, WEU), the United Kingdom (SUK, WUK), Australia (EAU, SEAU), Japan (EJP, WJP), Brazil(SBR, SCUS).
+> The countries and regions that are currently supported include Canada (CCA, ECA), the United States (WUS, EUS), the European Union (NEU, WEU), the United Kingdom (SUK, WUK), Australia (EAU, SEAU), Japan (EJP, WJP), and Brazil (SBR, SCUS).
 
 If you have any questions about these prerequisites, contact the Inventory Visibility product team.
 
@@ -115,7 +115,7 @@ After you register an application and add a client secret to Azure AD, follow th
 1. Select **Install**. The status of the add-in is shown as **Installing**. When the installation is completed, refresh the page. The status should change to **Installed**.
 
 > [!IMPORTANT]
-> If you have more than one LCS environment, please create different AAD applications for these environments. Using same application ID and tenant ID to install the Inventory Visibility Add-in for different environments will cause token issue for older environments&mdash;only the last one to be installed will be valid.
+> If you have more than one LCS environment, create a different Azure AD application for each environment. If you use same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. Only the last one that was installed will be valid.
 
 ## <a name="uninstall-add-in"></a>Uninstall the Inventory Visibility Add-in
 
