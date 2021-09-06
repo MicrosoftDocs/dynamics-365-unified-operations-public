@@ -106,7 +106,7 @@ The offset quantity follows the inventory quantity that is specified on inventor
 
 ### Set up the reservation offset modifier
 
-Enable the *Inventory Visibility integration with reservation offset* feature and set up the reservation offset modifier as described in [Turn on and set up the reservation feature](#turn-on).
+If you haven't already done so, set up the reservation modifier as described in [Turn on and set up the reservation feature](#turn-on).
 
 ### Set up reservation IDs
 
