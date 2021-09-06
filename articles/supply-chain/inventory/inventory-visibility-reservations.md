@@ -27,9 +27,6 @@ You can optionally set up Microsoft Dynamics 365 Supply Chain Management (and ot
 
 When you turn on the reservation feature, Supply Chain Management automatically becomes ready to offset reservations that are made by using Inventory Visibility.
 
-> [!NOTE]
-> The offset functionality requires Supply Chain Management version 10.0.22 or later. If you want to use Inventory Visibility reservations, we recommend that you wait until you've upgraded Supply Chain Management to version 10.0.22 or later.
-
 ## Turn on the reservation feature
 
 To turn on the reservation feature, follow these steps.
@@ -40,6 +37,7 @@ To turn on the reservation feature, follow these steps.
 1. Sign in to Supply Chain Management.
 1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**.
 1. Under **Reservation offset**, set the **Enable reservation offset** option to *Yes*.
+1. If you want to use Inventory Visibility reservations (recommended but optional; requires version 10.0.22 or later), then sign in to Supply Chain Management and use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to enable the *Inventory Visibility integration with reservation offset* feature.
 
 ## Use the reservation feature in Inventory Visibility
 
