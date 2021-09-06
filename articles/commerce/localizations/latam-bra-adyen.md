@@ -34,7 +34,10 @@ The Dynamics 365 Payment Connector for Adyen is an out-of-the-box payment connec
 The following Brazil-specific Dynamics 365 Payment Connector for Adyen features are enabled after the Commerce localization for Brazil has been set up and deployed:
 
 - Support for sales with credit and debit cards (that is, double-purpose cards).
-- Saving payment-related data, such as card type and transaction code (NSU), in sales transactions and reporting it in electronic fiscal documents NFC-e/NF-e/CF-e.
+- Saving payment-related data, such as card type, transaction code (NSU), and acquirer's CNPJ (Cadastro Nacional da Pessoa Jurídica) in sales transactions and reporting it in electronic fiscal documents:
+NFC-e (Nota Fiscal de Consumidor Eletrônica),
+NF-e (Nota Fiscal Eletrônica),
+CF-e (Cupom Fiscal Eletrônico).
 
 ## Double-purpose cards
 
@@ -44,25 +47,18 @@ As a result, the card payment is registered in Adyen with selected payment prefe
 
 ## Saving payment-related data
 
-Generation of NFC-e (Nota Fiscal do Consumidor eletrônica) electronic fiscal documents for retail sales (model 65), submission of the electronic fiscal documents via the government's web services, and printing of DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) NFC-e receipts.
+When a retial sale is paid by card, the following card payment data is being stored in electronic fiscal document in the card payment data block and transmitted to SEFAZ (Secretaria de Estado de Fazenda):
+- Accreditation - CNPJ of the payment transfer aquiring company,
+- Card banner - card type Visa, MasterCard, etc.
+- Transaction code (NSU) - identification number of a sales transaction using cards.
 
-This feature includes capabilities for entering, viewing, and modifying CNPJ (Cadastro Nacional da Pessoa Jurídica)/CPF (Cadastro de Pessoas Físicas) tax registration numbers or Foreigner IDs, and for registering these numbers in NFC-e, NF-e, and CF-e, and printed receipts.
-
-
-
-		Card type in electronic fiscal receipt (find out that data is needed for cards: payment reference, card type, etc.) - generate the data in builder.
-	a. Card type name of a bank card has to be populated in sales transactions registered using the EFT service
-	b. EFT-related data needs to be reported in EFDs (card payment data must be transmitted to Sefaz): 
-	Accreditation - an acquirer CNPJ, code of the TEF creditor
-	Card banner - Visa, MasterCard, etc.
-Transaction code (NSU) - the code that is displayed on the printed form by the card machine
 
 ## Setup
 To configure Adyen payment connector in Commerce POS for Brazil, follow these steps:
 
 1. Complete the setup described in [Set up Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector-setup.md).
 1. Go to **Retail and Commerce \> Channel setup \> Payment methods \> Card processors**.
-1. Create a record and specify CNPJ for the card processor aquiring company. This acquirer's CNPJ must be transmitted to Sefaz through NFC-e in the card payment data block.
+1. Create a record and specify CNPJ for the card processor aquiring company.
 1. Go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**.
 1. Specify the card processor code created in the step above for the desired electronic payment types. Also it is required to choose a payment system.
 1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
@@ -70,5 +66,5 @@ To configure Adyen payment connector in Commerce POS for Brazil, follow these st
 
 ## Additional resources
 
-[Dynamics 365 Payment Connector for Adyen overview] (../dev-itpro/adyen-connector.md)
+[Dynamics 365 Payment Connector for Adyen overview](../dev-itpro/adyen-connector.md)
 [Set up Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector-setup.md)
