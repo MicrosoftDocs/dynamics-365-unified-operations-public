@@ -25,15 +25,19 @@ Inventory Visibility provides a model-driven app for visualization. The app cont
 - It provides a user interface (UI) for on-hand configuration and soft reservation configuration.
 - It supports real-time on-hand inventory queries on various dimension combinations.
 - It provides a UI for posting reservation requests.
-- It provides a customized view of the inventory on-hand for products together with all dimensions
+- It provides a customized view of the inventory on-hand for products together with all dimensions.
 
 ## Prerequisites
 
 Before you begin, install and set up the Inventory Visibility Add-in as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
+## Open the Inventory Visibility app
+
+To open the Inventory Visibility app, sign in to your Power Apps environment and open **Inventory Visibility**.
+
 ## <a name="configuration"></a>Configuration
 
-The **Configuration** page helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default setting. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration in [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems.
+The **Configuration** page of the Inventory Visibility app helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes a default setup for Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default setting. Hereafter, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems.
 
 For complete details on how to configure the solution, see [Configure Inventory Visibility](inventory-visibility-configuration.md).
 
