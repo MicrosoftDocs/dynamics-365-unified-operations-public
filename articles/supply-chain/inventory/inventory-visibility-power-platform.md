@@ -29,13 +29,13 @@ Inventory Visibility provides a model-driven app for visualization. The app cont
 
 ## Prerequisites
 
-Before you begin, install and set up the Inventory Visibility Add-in as described in [Set up Inventory Visibility](inventory-visibility-setup.md).
+Before you begin, install and set up the Inventory Visibility Add-in as described in [Install the Inventory Visibility Add-in](inventory-visibility-setup.md).
 
 ## <a name="configuration"></a>Configuration
 
 The **Configuration** page helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default setting. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration in [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems.
 
-For complete details on how to configure the solution, see [Inventory Visibility configuration](inventory-visibility-configuration.md).
+For complete details on how to configure the solution, see [Configure Inventory Visibility](inventory-visibility-configuration.md).
 
 ## Operational visibility
 

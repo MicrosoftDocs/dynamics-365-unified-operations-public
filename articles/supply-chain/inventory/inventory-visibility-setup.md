@@ -1,5 +1,5 @@
 ---
-title: Set up Inventory Visibility
+title: Install the Inventory Visibility Add-in
 description: This topic describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# Set up Inventory Visibility
+# Install the Inventory Visibility Add-in
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
@@ -147,6 +147,8 @@ Make sure that the following features are turned on in your Supply Chain Managem
 | Enable or disable using inventory dimensions on InventSumDelta table | 10.0.12 | InventUseDimOfInventSumDeltaToggle |
 
 ### <a name="setup-inventory-visibility-integration"></a>Set up Inventory Visibility integration
+
+Once you have installed the add-in, prepare your Supply Chain Management system to work with it by doing the following steps.
 
 1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the following features:
     - *Inventory Visibility Integration* – Required.

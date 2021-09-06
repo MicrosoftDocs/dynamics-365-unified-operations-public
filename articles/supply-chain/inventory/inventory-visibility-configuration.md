@@ -32,7 +32,7 @@ Before you start to work with Inventory Visibility, you must complete the follow
 
 ## Prerequisites
 
-Before you begin, install and set up the Inventory Visibility Add-in as described in [Set up Inventory Visibility](inventory-visibility-setup.md).
+Before you begin, install and set up the Inventory Visibility Add-in as described in [Install the Inventory Visibility Add-in](inventory-visibility-setup.md).
 
 ## <a name="configuration"></a>The Configuration page of the Inventory Visibility app
 
