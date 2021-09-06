@@ -47,13 +47,13 @@ If you don't know the correct Inventory Visibility service endpoint, open the **
 
 ## <a name="configuration"></a>The Configuration page of the Inventory Visibility app
 
-In Power Apps, the **Configuration** page of the [Inventory Visibility app](inventory-visibility-power-platform.md) helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default settings. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems.
+In Power Apps, the **Configuration** page of the [Inventory Visibility app](inventory-visibility-power-platform.md) helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default settings. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems. The remaining sections of this topic explain how to use each part of the **Configuration** page.
 
 After the configuration is completed, be sure to select **Update Configuration** in the app.
 
 ## Data source configuration
 
-The data source represents the system that your data comes from. Example data source names include `fno` (which stands for "Dynamics 365 Finance and Operations apps") and `pos` (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
+Each data source represents a system that your data comes from. Example data source names include `fno` (which stands for "Dynamics 365 Finance and Operations apps") and `pos` (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
 
 > [!NOTE]
 > The `fno` data source is reserved for Dynamics 365 Supply Chain Management.
