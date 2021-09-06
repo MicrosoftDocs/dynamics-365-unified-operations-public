@@ -64,7 +64,7 @@ The region short name can be found in the Microsoft Dynamics Lifecycle Services 
 
 The island number is where your LCS environment is deployed on Service Fabric. There is currently no way to get this information from the user side.
 
-Microsoft has built a user interface (UI) in Power Apps so that you can get the complete endpoint of the microservice. For more information, see [Find the service endpoint](inventory-visibility-power-platform.md#get-service-endpoint).
+Microsoft has built a user interface (UI) in Power Apps so that you can get the complete endpoint of the microservice. For more information, see [Find the service endpoint](inventory-visibility-configuration.md#get-service-endpoint).
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 

@@ -27,17 +27,20 @@ You can optionally set up Microsoft Dynamics 365 Supply Chain Management (and ot
 
 When you turn on the reservation feature, Supply Chain Management automatically becomes ready to offset reservations that are made by using Inventory Visibility.
 
-## Turn on the reservation feature
+## <a name="turn-on"></a>Turn on and set up the reservation feature
 
 To turn on the reservation feature, follow these steps.
 
-1. In Power Apps, open **Inventory Visibility**.
+1. Sign into Power Apps and open **Inventory Visibility**.
 1. Open the **Configuration** page.
 1. On the **Feature Management** tab, turn on the *OnHandReservation* feature.
 1. Sign in to Supply Chain Management.
-1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**.
-1. Under **Reservation offset**, set the **Enable reservation offset** option to *Yes*.
-1. If you want to use Inventory Visibility reservations (recommended but optional; requires version 10.0.22 or later), then sign in to Supply Chain Management and use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to enable the *Inventory Visibility integration with reservation offset* feature.
+1. Go to the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace and enable the *Inventory Visibility integration with reservation offset* feature (requires version 10.0.22 or later).
+1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**, open the **Reservation offset** tab and make the following settings:
+    - **Enable reservation offset** – Set to *Yes* to enable this functionality.
+    - **Reservation offset modifier** – Select the inventory transaction status that will offset reservations made on Inventory Visibility. This setting determines the order processing stage that triggers offsets. The stage is traced by the order's inventory transaction status. Choose one of the following:
+        - *On order* – For the *On transaction* status, an order will send an offset request when it's created. The offset quantity will be the quantity of the created order.
+        - *Reserve* – For the *Reserve ordered transaction* status, an order will send an offset request when it's reserved, picked, packing-slip posted, or invoiced. The request will be triggered only once, for the first step when the mentioned process occurs. The offset quantity will be the quantity where the inventory transaction status changed from *On order* to *Reserved ordered* (or later status) on the corresponding order line.
 
 ## Use the reservation feature in Inventory Visibility
 
@@ -49,7 +52,7 @@ The reservation hierarchy describes the sequence of dimensions that must be spec
 
 The reservation hierarchy can differ from the index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations.
 
-To configure a soft reservation hierarchy in Power Apps, open the **Configuration** page, and then, on the **Soft reservation mapping** tab, set up the reservation hierarchy by adding and/or modifying dimensions and their hierarchy levels.
+To configure a soft reservation hierarchy in Power Apps, open the **Configuration** page, and then, on the **Soft reservation mapping** tab, set up the reservation hierarchy by adding and/or modifying dimensions and their hierarchy levels. For more information, see [Inventory Visibility configuration](inventory-visibility-configuration.md).
 
 ### Call the reservation API
 
@@ -101,18 +104,9 @@ For inventory transaction statuses that include a specified reserve offset modif
 
 The offset quantity follows the inventory quantity that is specified on inventory transactions. The offset doesn't take effect if no reserved quantity remains in the Inventory Visibility service.
 
-> [!NOTE]
-> The offset functionality is available as of version 10.0.22
+### Set up the reservation offset modifier
 
-### Set up the reserve offset modifier
-
-The reserve offset modifier determines the order processing stage that trigger offsets. The stage is traced by the order's inventory transaction status. To set up the reserve offset modifier, follow these steps.
-
-1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters \> Reservation offset**.
-1. Set the **Reserve offset modifier** field to one of the following values:
-
-    - *On order* – For the *On transaction* status, an order will send an offset request when it's created.
-    - *Reserve* – For the *Reserve ordered transaction* status, an order will send an offset request when it's reserved, picked, packing-slip posted, or invoiced. The request will be triggered only once, for the first step when the mentioned process occurs.
+Enable the *Inventory Visibility integration with reservation offset* feature and set up the reservation offset modifier as described in [Turn on and set up the reservation feature](#turn-on).
 
 ### Set up reservation IDs
 
