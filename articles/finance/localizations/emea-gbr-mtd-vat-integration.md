@@ -4,7 +4,7 @@
 title: Making Tax Digital – VAT return submission in the United Kingdom
 description: This topic explains how to set up and use the Making Tax Digital for VAT (MTD VAT) feature for VAT return submission in the United Kingdom.
 author: liza-golub
-ms.date: 08/19/2021
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,7 +55,7 @@ For more information about MTD for VAT, see [Making Tax Digital for VAT: legisla
 
 As HMRC mentions in the Making Tax Digital for Business VAT Guide for Vendors, users must sign up for the MTD service for VAT, even if they have already signed up to use the MTD service for income tax. For more information about how to get ready for MTD, see [Making Tax Digital: how VAT businesses and other VAT entities can get ready](https://www.gov.uk/government/publications/making-tax-digital-how-vat-businesses-and-other-vat-entities-can-get-ready).
 
-The solution that supports the [MTD for VAT requirements](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-api/1.0) is based on the [Electronic messages](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/electronic-messaging) functionality. This functionality provides a flexible approach for setting up and supporting reporting processes. The setup package for MTD VAT feature covers the following scope of interoperation to help companies in the UK meet their MTD obligations:
+The solution that supports the [MTD for VAT requirements](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/vat-api/1.0) is based on the [Electronic messages](../general-ledger/electronic-messaging.md) functionality. This functionality provides a flexible approach for setting up and supporting reporting processes. The setup package for MTD VAT feature covers the following scope of interoperation to help companies in the UK meet their MTD obligations:
 
 - **Retrieve VAT obligations (Mandatory):** Users can initiate a request to HMRC to obtain VAT obligations for a specific period. In response to each user's request, HMRC posts information about the company's VAT obligations that is defined in the company's profile on the HMRC side. VAT obligations contain information about the VAT period, the due date for submission, and the status of the obligation. Finance reflects this information.
 - **Submit VAT return for period (Mandatory):** The system collects information about VAT returns. The information that is collected is based on the sales tax payment transactions that are posted in the system by using the sales tax settlement process, with respect to the VAT obligations that are registered in the system. After this information is collected, a VAT return report in JavaScript Object Notation (JSON) format is generated. The user submits this report to HMRC. Finance reflects the HMRC response to the submission.
@@ -64,7 +64,7 @@ The solution that supports the [MTD for VAT requirements](https://developer.serv
 
 The setup package for MTD VAT feature doesn't cover the View VAT Return endpoint that might be required. However, the Electronic messages functionality lets you set up and support this endpoint.
 
-The MTD VAT feature in Finance supports filing a VAT return for [Multiple VAT registrations](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) and for companies that report as a [VAT group](https://www.gov.uk/hmrc-internal-manuals/vat-groups) in the same system database.
+The MTD VAT feature in Finance supports filing a VAT return for [Multiple VAT registrations](emea-multiple-vat-registration-numbers.md) and for companies that report as a [VAT group](https://www.gov.uk/hmrc-internal-manuals/vat-groups) in the same system database.
 
 ## <a name="privacy-notice"></a>Privacy notice
 
