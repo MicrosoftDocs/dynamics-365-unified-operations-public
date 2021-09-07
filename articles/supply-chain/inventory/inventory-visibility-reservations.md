@@ -52,9 +52,11 @@ The reservation hierarchy describes the sequence of dimensions that must be spec
 
 The reservation hierarchy can differ from the index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations.
 
-To configure a soft reservation hierarchy in Power Apps, open the **Configuration** page, and then, on the **Soft reservation hierarchy** tab, set up the reservation hierarchy by adding and/or modifying dimensions and their hierarchy levels. For more information, see [Configure Inventory Visibility](inventory-visibility-configuration.md).
+To configure a soft reservation hierarchy in Power Apps, open the **Configuration** page, and then, on the **Soft reservation hierarchy** tab, set up the reservation hierarchy by adding and/or modifying dimensions and their hierarchy levels.
 
-Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration. For more information about how to configure reservations, see [Reservation configuration](inventory-visibility-configuration.md#reservation-configuration).
+Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration.
+
+For more information about how to configure reservations, see [Reservation configuration](inventory-visibility-configuration.md#reservation-configuration).
 
 ### Call the reservation API
 

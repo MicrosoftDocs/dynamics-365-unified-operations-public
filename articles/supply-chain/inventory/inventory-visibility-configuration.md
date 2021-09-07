@@ -380,8 +380,8 @@ Before you set up this mapping, the physical measures, calculated measures, and 
 
 To define the soft reservation mapping, follow these steps.
 
-1. Define the physical measure that serves as the soft reservation measure (for example, `softreservordered`).
-1. On the **Calculated measure** tab of the **Configuration** page, define the *available for reservation* (AFR) calculated measure that contains the AFR computation formula that you want to map to the physical measure. For example, you might set up `availforreserv` (available for reservation) so that it's mapped to the previously defined `softreservordered` physical measure. In this way, you can find which quantities that have the `softreservordered` inventory status will be available for reservation. The following table shows the AFR computation formula.
+1. Define the physical measure that serves as the soft reservation measure (for example, `SoftReservOrdered`).
+1. On the **Calculated measure** tab of the **Configuration** page, define the *available for reservation* (AFR) calculated measure that contains the AFR computation formula that you want to map to the physical measure. For example, you might set up `AvailableToReserve` (available for reservation) so that it's mapped to the previously defined `SoftReservOrdered` physical measure. In this way, you can find which quantities that have the `SoftReservOrdered` inventory status will be available for reservation. The following table shows the AFR computation formula.
 
     | Calculation type | Data source | Physical measure |
     |---|---|---|
@@ -393,7 +393,7 @@ To define the soft reservation mapping, follow these steps.
     We recommend that you set up the calculated measure so that it contains the physical measure that the reservation measure is based on. In this way, the calculated measure quantity will be affected by the reservation measure quantity. Therefore, in this example, the `AvailableToReserve` calculated measure of the `iv` data source should contain the `SoftReservOrdered` physical measure from `iv` as a component.
 
 1. Open the **Configuration** page.
-1. On the **Soft Reservation Mapping** tab, set up the mapping from the physical measure to the calculated measure. For the previous example, you might use the following settings to map `availforreserv` to the previously defined `softreservordered` physical measure.
+1. On the **Soft Reservation Mapping** tab, set up the mapping from the physical measure to the calculated measure. For the previous example, you might use the following settings to map `AvailableToReserve` to the previously defined `SoftReservOrdered` physical measure.
 
     | Physical measure data source | Physical measure | Available for reservation data source | Available for reservation calculated measure |
     |---|---|---|---|
@@ -402,7 +402,7 @@ To define the soft reservation mapping, follow these steps.
     > [!NOTE]
     > If you can't edit the **Soft Reservation Mapping** tab, you may need to turn on the *OnHandReservation* feature on the **Feature Management** tab.
 
-Now, when you do reservation on `softreservordered`, Inventory Visibility will automatically find `availforreserv` and its related computation formula to do the reservation validation.
+Now, when you do reservation on `SoftReservOrdered`, Inventory Visibility will automatically find `AvailableToReserve` and its related computation formula to do the reservation validation.
 
 For example, you have the following on-hand inventory in Inventory Visibility.
 
@@ -446,7 +446,7 @@ Therefore, if you try to make reservations on `iv.SoftReservOrdered`, and the qu
 
 The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the product index hierarchy works for on-hand queries.
 
-The reservation hierarchy is independent of the product index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration.
+The reservation hierarchy is independent of the product index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration. When you do the reservation, you must specify a partition for the product.
 
 Here is an example of a soft reservation hierarchy.
 
