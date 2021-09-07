@@ -100,5 +100,8 @@ When you print free text, customer, and project credit notes, they will include 
 > [!NOTE]
 > Make sure that the printable formats of the documents are correctly configured, on the assumption that references to original invoices will be printed.
 
+## References to original invoices in debit notes
+
+Add a new feauture here... 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
