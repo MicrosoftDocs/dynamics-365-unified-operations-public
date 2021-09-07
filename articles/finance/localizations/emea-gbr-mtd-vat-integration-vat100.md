@@ -54,7 +54,7 @@ Before you start to generate the **VAT 100** report, make sure that the followin
     For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 2. The **ReportFieldLookup** application-specific parameters is set up for the **VAT Declaration Excel (UK)** format in ER. For more information, see [Set up application-specific parameters for the VAT Declaration format](emea-gbr-mtd-vat-integration-setup.md#declaration).
-3. To define the **VAT Declaration Excel (UK)** format, go to **Tax** \> **Setup** \> **General ledger parameters**. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, enter the format information. For more information, see [Generate the VAT statement (VAT 100 report) in paper format](emea-gbr-mtd-vat-integration-setup.md#generate-the-vat-statement-vat-100-report-in-paper-format).
+3. To define the **VAT Declaration Excel (UK)** format, go to **Tax** \> **Setup** \> **General ledger parameters**. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, enter the format information.
 
 ## Generate a VAT 100 report
 
