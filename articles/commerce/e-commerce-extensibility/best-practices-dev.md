@@ -108,7 +108,7 @@ The following illustration shows an example where the **Enable module lazy load*
 ![Enable module lazy load option selected in Commerce site builder.](media/best-practices-dev-2.png)
 
 ### Modules that don't support lazy loading but rely on user context
-Some module library modules do not include the **Enable module lazy load** config setting but require user context data and have been designed to automatically render on the client.  For custom modules that require user context (eg: cookie compliance), you should ensure the module is rendered on the client side.
+Some module library modules don't include the **Enable module lazy load** configuration setting, but require user context data and have been designed to automatically render on the client. For custom modules that require user context (eg: cookie compliance), you should ensure the module is rendered on the client side.
 
 ## Cache configuration
 
