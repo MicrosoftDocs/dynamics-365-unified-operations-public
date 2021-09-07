@@ -197,7 +197,7 @@ Set up sales tax code, sales tax group and item sales tax group.
 
 Post a free text invoice and generate VAT 100 report. Verify the amounts in box 1 and box 6.
 
-![VAT 100 report for Domestic purchase.](media/uk-mtd-report-vats20.png)
+![VAT 100 report for Domestic sale.](media/uk-mtd-report-vats20.png)
 
 ### Domestic reverse charge for services
 
