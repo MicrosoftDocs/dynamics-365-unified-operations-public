@@ -4,7 +4,7 @@
 title: Grid capabilities
 description: This topic describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 08/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -162,6 +162,13 @@ If your organization discovers a page that has some issues utilizing the new gri
  ```this.forceLegacyGrid();```
 
 This API will be honored until the October 2021 release, when the new grid control becomes mandatory. If any issues require that this API be used, report them to Microsoft.
+
+### Forcing a page to use the new grid after previously opting out the grid
+If you have opted out an individual page from using the new grid, you might want to later re-enable the new grid after the underlying issues were solved. To do this, you simply need to remove the call to `forceLegacyGrid()`. The change will not take effect until one of the following occurs:
+
+- **Environment redeployment**: When an environment is updated and redeployed, the table that stores the pages that have opted out of the new grid (FormControlReactGridState) is automatically cleared.
+
+- **Manual clearing of the table**: For development scenarios, you will need to use SQL to clear the FormControlReactGridState table and then restart the AOS. This combination of actions will reset the caching of pages that have opted out of the new grid.  
 
 ## [Developer] Size-to-available-width columns
 If a developer sets the **WidthMode** property to **SizeToAvailable** for columns inside the new grid, those columns initially have the same width that they would have if the property were set to **SizeToContent**. However, they stretch to use any extra available width inside the grid. If the property is set to **SizeToAvailable** for multiple columns, all those columns share any extra available width inside the grid. However, if a user manually resizes one of those columns, the column becomes static. It will remain at that width and will no longer stretch to take up extra available grid width.  

@@ -128,7 +128,7 @@ Additionally, download the following Excel file that contains the modified templ
 
 | Content description | File name                 |
 |---------------------|---------------------------|
-| Report template     | [Check template Excel.xlsx](https://download.microsoft.com/download/1/f/6/1f671963-73aa-48d5-ae69-45f21fe7dfb4/Cheque%20template.xlsx) |
+| Report template     | [Check template Excel.xlsx](https://download.microsoft.com/download/3/b/d/3bd3b944-da8f-43b4-8533-3c1292a4c3ef/CheckTemplateExcel.xlsx) |
 
 ### <a name="ExampleProvider"></a>Activate a configuration provider
 

@@ -43,7 +43,6 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
-| Master planning | Negative days for Planning Optimization	| This feature enables Planning Optimization to consider delay tolerance based on the **Negative days** parameter defined in coverage groups. |
 | Master planning | Parallel authorizing of adjusted demand forecast | This feature allows parallel authorizing of adjusted demand forecast from the **Adjusted demand forecast** page. The intent of this feature is to increase performance when a high number of forecasts are being authorized. When authorizing, the user can specify the **Number of threads** in the authorizing dialog. |
 | Master planning | (Preview) Batchable firming and consolidation for planned bulk and pack batch orders | This feature lets you use batch jobs to firm and consolidate planned bulk and pack orders. |
 | Production control | Copy generic routes | This feature enhances the copy route function to allow users to copy routes that aren't item specific. It enables the system to update all relevant information (such as site, route group, resource requirements, and various times) after the copy route function has been used to overwrite a route that is not yet assigned to an item. |

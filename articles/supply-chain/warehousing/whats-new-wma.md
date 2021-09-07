@@ -2,7 +2,7 @@
 title: What's new or changed in the Warehouse Management mobile app
 description: This topic lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 author: ivanv-microsoft
-ms.date: 06/07/2021
+ms.date: 07/30/2021
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
@@ -18,6 +18,42 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../includes/banner.md)]
 
 This topic lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 2.0.9.0
+
+This version fixes an issue where the app could stop responding if users page up from the top of a list.
+
+## Version 2.0.8.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Added support for the [step instructions feature](mobile-app-titles-instructions.md) that was introduced in Supply Chain Management version 10.0.21.
+- Added hint animation to show users that they can close overlays by swiping down.
+- Added support for function keys on action lists and menus. Users can hold down any function key for three seconds to get a list of available commands.
+- Fixed an issue that caused the following error message to be shown on some devices: "Cannot find a suitable view for the specified size."
+- Fixed an issue where full-screen mode didn't always work when the on-screen keyboard is used.
+- Fixed an issue where page swiping didn't work on Windows devices.
+- Fixed various issues that caused the system to stop responding.
+
+## Version 2.0.7.0
+
+### New features, fixes, and improvements in version 2.0.7.0
+
+- Added a section to the **About** page that checks latest released version of the app.
+- Made it easier to flick and swipe between pages.
+- Changed the icon for the ascending/descending button on the work list.
+- Reduced the margins on the **Details** card to allow it to fit more information.
+- Applied various performance improvements to reduce the issue of the app becoming slower over time.
+- If there are more controls than fit on the screen, resulting in paging, the spinner control no longer scrolls the same way as the page.
+- Prioritize showing the last scanned value over showing the task title, so if they overlap the task title will be truncated.
+- Fixed various issues that caused the system to stop responding.
+- Text in various places is no longer cut off in some languages.
+- The app now runs in full-screen mode by default.
+- Fixed an issue that would occasionally cause scans to be ignored on main page with certain devices.
+
+### Known issues in version 2.0.7.0
+
+- On some devices, you will get the following error message when you start the app or begin a task: "Cannot find a suitable view for the specified size." If you see this error message on any of your devices, you must downgrade the Warehouse Management mobile app to version 2.0.6.0 on that device and wait to upgrade until the next version of the app is released.
 
 ## Version 2.0.6.0
 

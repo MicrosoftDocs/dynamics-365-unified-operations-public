@@ -5,7 +5,7 @@ title: Database movement API - Reference - v1 - List database backups
 description: This topic provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
 author: laneswenka
 ms.date: 09/30/2019
-ms.topic: article
+ms.topic: reference
 ms.prod: 
 ms.technology: 
 

@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 10.0.14
 # Record right-of-use asset depreciation (Preview)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 For leases that are recognized on an organization's balance sheet, the right-of-use (ROU) asset is amortized on a monthly basis. This topic explains how to create the journal entry for the amortization. The amortization debits the expense ledger account and credits the accumulated depreciation ledger account, based on the setup of your posting profile and the lease type. These entries can be created for each lease, or they can be created for multiple leases by using the batch journal functionality.
 
@@ -42,6 +44,9 @@ For leases that are recognized on an organization's balance sheet, the right-of-
 
 2. Select the period of depreciation, and then select **Create journal**. You receive a message that states that the journal that will be used to record depreciation was created.
 3. Select **Journals \> Asset leasing journals** to open the **Asset leasing journal** page, where you can view the depreciation expense journal entry that was created.
+
+   The system locks certain financial fields from being edited to prevent any variances between the transactions and the schedules. Some fields that are locked include: **Account**, **Amounts**, **Financial dimensions**, **Currency**, and **Transaction type**. Additionally, you won't be able to add or delete journal entry lines in any Asset leasing journal entries, as this might cause variances between the schedules and the transactions.
+
 4. Select the journal entry, and then select **Post** to record the depreciation entry to General ledger.
 
 ## Calculation of ROU asset amortization expense for operating leases

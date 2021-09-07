@@ -22,16 +22,18 @@ ms.dyn365.ops.version: 10.0.19
 
 ## What are warehouse orders?
 
-*Warehouse orders* are a type of order that was created to support hub and scale unit warehouse deployments. They let you receive inventory when you're running a warehouse workload on a scale unit. They are currently used only with purchase orders.
+*Warehouse orders* are a type of order used to support hub and scale unit warehouse deployments. They let you receive and ship inventory when you're running a warehouse workload on a scale unit.
 
-Warehouse orders are used as part of warehouse management processing, such as when the Warehouse Management mobile app is used to register physical on-hand inventory during processing of an inbound purchase order. Warehouse orders are created as part of the *Release to warehouse* process that is available for purchase orders that specify a scale unit warehouse and items that are enabled to use warehouse management processes.
+Warehouse orders are used as part of both inbound and outbound warehouse management processing. They are created as part of the *Release to warehouse* process, which gets initialized on the hub.
+For the inbound processing the warehouse mobile app is used to register physical on-hand inventory during processing of inbound orders, this is available for purchase and production orders that specify a scale unit warehouse and items that are enabled to use warehouse management processes.
+The outbound warehouse orders are used as part of the shipment waving process  for transfer and sales orders.
 
 > [!IMPORTANT]
 > Warehouse orders are available only in deployments that use [warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md).
 
-## Create a warehouse order
+## Create an inbound warehouse order
 
-To create a warehouse order, follow these steps.
+To create an inbound warehouse order for a purchase order process, follow these steps.
 
 1. Sign in to the instance of Microsoft Dynamics 365 Supply Chain Management that is running on the hub. (You must initiate the *Release to warehouse* process while you're signed in on the hub.)
 1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.

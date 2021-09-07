@@ -1,13 +1,13 @@
 ---
 title: User-specified team owner
 description: This topic explains how set a user-specified team owner instead of using the default team owner.  
-author: sabinn-msft
+author: nhelgren
 ms.date: 04/26/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2021-04-26
 ms.dyn365.ops.version: AX 7.0.0
 ---

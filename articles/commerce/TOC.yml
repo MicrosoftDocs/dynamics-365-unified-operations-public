@@ -6,6 +6,8 @@
       href: index.md
     - name: Get started
       items:
+      - name: Service description
+        href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/commerce/toc.json
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
       - name: One Version service updates 
@@ -94,6 +96,10 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.22 (November 2021)
+            href: get-started/whats-new-commerce-10-0-22.md
+          - name: Commerce 10.0.21 (October 2021)
+            href: get-started/whats-new-commerce-10-0-21.md
           - name: Commerce 10.0.20 (August 2021)
             href: get-started/whats-new-commerce-10-0-20.md
           - name: Commerce 10.0.19 (June 2021)
@@ -252,9 +258,13 @@
             href: dev-itpro/define-retail-channel-communications-cdx.md
           - name: Commerce Data Exchange troubleshooting
             href: dev-itpro/CDX-Troubleshooting.md
+          - name: Sort Commerce Data Exchange packages by primary index
+            href: CDX-package-sort.md
         - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
-        - name: Publish an online store channel
+        - name: Commerce offline implementation and troubleshooting
+          href: dev-itpro/implementation-considerations-offline.md
+        - name: Publish an online store catalog
           href: dev-itpro/retail-online-store-publishing-architecture.md
         - name: Retail Channel Performance Power BI content
           href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
@@ -702,6 +712,10 @@
           href: configure-ratings-reviews.md
         - name: Sync product ratings
           href: sync-product-ratings.md
+        - name: Enable manual publishing of ratings and reviews by a moderator
+          href: manual-publish-rating-reviews.md
+        - name: Ratings and reviews FAQ
+          href: ratings-reviews-faq.md
       - name: Manage your inventory  
         items:
         - name: Inventory   
@@ -752,6 +766,8 @@
           href: multiple-pickup-modes.md
         - name: Process a customer order pickup in POS
           href: process-order-pickup-POS.md
+        - name: Enable order lookup for guest checkouts
+          href: order-lookup-guest.md
       - name: Sales orders   
         items:
         - name: Create call center orders 
@@ -1144,6 +1160,8 @@
             href: order-confirmation-module.md 
           - name: Gift card module
             href: add-giftcard.md
+          - name: Order lookup module
+            href: order-lookup-module.md
         - name: Store finder modules
           items:
           - name: Map module
@@ -1172,6 +1190,8 @@
             href: nav-menu-module.md
           - name: Site selector module
             href: site-selector.md
+          - name: Country/region picker module
+            href: country-region-picker-module.md
         - name: Search modules
           items:
           - name: Search results module
@@ -1190,6 +1210,12 @@
         items:
         - name: Generate online channel reports
           href: generate-reports.md
+      - name: Targeting
+        items:
+        - name: Device, market, and geolocation targeting
+          href: targeting-overview.md
+        - name: Set up geo detection and redirection
+          href: geo-detection-redirection.md
       - name: Experimentation
         items:
         - name: Experimentation in Dynamics 365 Commerce
@@ -1252,16 +1278,36 @@
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
       - name: User-defined certificate profiles for retail stores
         href: localizations/certificate-profiles-for-retail-stores.md
-      - name: Regulatory configuration service
+      - name: Regulatory configuration service (RCS)
         items:
-        - name: Regulatory configuration service overview
+        - name: Regulatory configuration service (RCS) overview
           href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Regulatory configuration service - Globalization features
+        - name: (RCS)  Regulatory configuration service (RCS) - Globalization features
           href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-        - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
+        - name: Create ER configurations in Regulatory configuration service (RCS) and upload to the Global repository
           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-        - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
+        - name: Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation
           href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
+        - name: Download ER configurations to Commerce
+          items: 
+          - name: Download configurations from RCS
+            href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+          - name: Import configurations from RCS
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+          - name: Global repository (GR)
+            items: 
+            - name: Import configurations from GR
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+            - name: Import updated versions of ER configurations
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+            - name: Enhanced filtering to find configurations in GR
+              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+            - name: Upload configurations to GR
+              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+            - name: Share configurations in GR  
+              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria
@@ -1309,6 +1355,12 @@
         - name: Cash register functionality
           href: localizations/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
+          href: localizations/emea-fra-fi-deployment.md
+        - name: Fiscal archive and data integrity verification
+          href: localizations/emea-fra-fiscal-archive.md
+        - name: Migrating from legacy functionality for France
+          href: localizations/emea-fra-fi-migration.md
+        - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-fra-deployment.md
       - name: Germany
         items:
@@ -1343,7 +1395,13 @@
       - name: Russia
         items:
         - name: Commerce localization for Russia
-          href: localizations/rus-commerce-localization.md   
+          href: localizations/rus-commerce-localization.md
+        - name: Simplified customer address format in Commerce POS for Russia
+          href: localizations/rus-simplified-address.md
+        - name: Set up Commerce localization for Russia
+          href: localizations/rus-commerce-setup.md
+        - name: Prepayments in Commerce for Russia
+          href: localizations/rus-commerce-prepayments.md          
       - name: Sweden
         items:
         - name: Cash register functionality
@@ -1850,10 +1908,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
           - name: Import configurations (LBD)
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
-        - name: Regulatory service (RCS)
+        - name: Regulatory configuration service (RCS)
           items:
-          - name: Globalization features in RCS
-            href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+          - name: Regulatory configuration service (RCS) overview 
+            href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
           - name: Download ER configurations to Commerce
             items: 
             - name: Download configurations from RCS
@@ -1930,6 +1988,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/commerce/toc.json
             - name: Modify and run formats to use Document management files
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
+          - name: Use BARCODE to generate barcode images
+            href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json 
+          - name: Configure LOOKUP data sources to use ER application-specific parameters
+            href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/commerce/toc.json 
+          - name: Use DATA COLLECTION data sources in ER formats
+            href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json 
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
           - name: Use BARCODE to generate barcode images
@@ -2000,6 +2064,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/commerce/toc.json
           - name: Configure action-dependent destinations
             href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/commerce/toc.json
+          - name: Configure print management record-specific ER destinations
+            href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/commerce/toc.json
         - name: Set up a reference to an ER format
           href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/commerce/toc.json
         - name: Automatically validate generated reports
@@ -2048,6 +2114,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
           - name: Application update 10.0.19
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
+          - name: Application update 10.0.21
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.jso
         - name: Specify a custom storage location for generated documents 
           items:
           - name: Subscribe to an event to request a response from subscribing handler
@@ -2058,6 +2126,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
         - name: Initiate data source values of the USER INPUT PARAMETER type from source code
           href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
+        - name: Change code to enable users to configure and use named ER destinations
+          href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/commerce/toc.json
     - name: Finance and Operations (Dynamics 365) mobile app
       items:
       - name: Mobile app home page
@@ -2102,7 +2172,7 @@
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
       - name: Open entity data in Excel and update it using the Excel add-in
         href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
-      - name: Create Open in Excel experiences
+      - name: Open in Excel experiences FAQ
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
       - name: Add templates to the Open lines in Excel menu
         href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
@@ -2350,6 +2420,8 @@
             href: e-commerce-extensibility/globalize-modules.md
           - name: Set up Azure Key Vault for secure key management
             href: e-commerce-extensibility/set-up-key-vault.md
+          - name: Create a request pipeline plug-in hook
+            href: e-commerce-extensibility/request-pipeline-hook.md
         - name: Develop data actions
           items:
           - name: Data actions overview
@@ -2412,6 +2484,12 @@
           items:
           - name: Configure and enable connectors
             href: e-commerce-extensibility/connectors.md
+        - name: Performance
+          items:
+          - name: Configure page caching
+            href: e-commerce-extensibility/page-caching.md
+          - name: Data action instance cache
+            href: e-commerce-extensibility/instance-cache.md
         - name: Telemetry and analytics
           items: 
           - name: Telemetry logger
@@ -2434,10 +2512,6 @@
         items:
         - name: Retail SDK architecture
           href: dev-itpro/retail-sdk/retail-sdk-overview.md
-        - name: Upcoming changes in the Retail SDK
-          href: dev-itpro/UpcomingSDKChanges.md
-        - name: Development and ALM changes from version 10.0.10 to 10.0.13
-          href: dev-itpro/dev-changes-10-13.md
         - name: Set up a build pipeline for the independent-packaging SDK
           href: dev-itpro/build-pipeline.md
         - name: Merge the build systems for Commerce and Finance and Operations
@@ -2564,8 +2638,6 @@
           href: dev-itpro/retail-server-customer-consumer-api.md
         - name: Create Retail Server extension API (Retail SDK version 10.0.11 and later)
           href: dev-itpro/retail-server-icontroller-extension.md
-        - name: Create new Retail Server extension API (Retail SDK version 10.0.11 and earlier)
-          href: dev-itpro/retail-server-extension.md
         - name: Retail Typescript and C# proxies
           href: dev-itpro/typescript-proxy-retail-pos.md
         - name: Consume Retail Server APIs in external applications
@@ -2682,6 +2754,8 @@
           href: troubleshoot/pickup-store-missing.md
         - name: Items without inventory can be checked out
           href: troubleshoot/items-without-inventory-checked-out.md
+        - name: Ratings refiner appears on search results and category pages when the ratings and reviews solution isn't enabled
+          href: troubleshoot/hide-ratings-refiner.md
       - name: SDK troubleshooting
         items:
         - name: Set up an e-commerce development environment to debug against a Tier 1 Retail Server VM

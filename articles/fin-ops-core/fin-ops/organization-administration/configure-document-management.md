@@ -4,7 +4,7 @@
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 06/28/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -322,5 +322,12 @@ To extract attachments, an Attachments entity must be built for a specific busin
 
 The files are retrieved from SharePoint using the current user permissions by the WOPI service. Those files are then rendered in HTML to provide a document preview. This means that the current user needs access to the files to be able to preview them or open them.
 
+## Troubleshooting issues
+
+### Issue: When interacting with Document management or Electronic reporting, users receive an error similar to "Invalid length for a Base-64 char array or string"
+
+**Explanation**: Typically, this issue occurs because the token for the Office Web Apps Server is no longer valid.  
+
+**Fix**: The admin needs to select the **Token refresh** button to the right of the **Office Web Apps Server** field on the **Document management parameters** page under the **General** tab.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

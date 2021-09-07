@@ -1,5 +1,5 @@
 ---
-title: Cloud and edge scale units for manufacturing and warehouse management workloads
+title: Scale units in a distributed hybrid topology
 description: This topic provides information about cloud and edge scale units for manufacturing and warehouse management workloads.
 author: cabeln
 ms.date: 04/22/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Cloud and edge scale units for manufacturing and warehouse management workloads
+# Scale units in a distributed hybrid topology
 
 [!include [banner](../includes/banner.md)]
 
@@ -22,11 +22,11 @@ ms.dyn365.ops.version: 10.0.19
 >
 > When you enable cloud and edge scale units, you will be asked to affirm that you understand that some data that is related to the configuration and processing of cloud and edge scale units might be stored in a data center that is located in the United States. To learn more about data processing for cloud and edge scale units, see the [Data processing during management of scale units](#data-processing-management) section later in this topic.
 
-## Core value proposition for scale units
+## Core value proposition for a distributed hybrid topology
 
-Companies that work with manufacturing and distribution must be able to run key business processes 24/7, without interruption and at scale. Cloud and edge scale units enable companies to run key mission-critical manufacturing and warehouse processes without interruption, even when faced with occasional network connectivity or latency issues.
+Companies that work with manufacturing and distribution must be able to run key business processes 24/7, without interruption and at scale. A distributed hybrid topology enables companies to run key mission-critical manufacturing and warehouse processes without interruption, even when faced with occasional network connectivity or latency issues.
 
-Cloud and edge scale units enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. Scale units are provided through the following add-ins for your Supply Chain Management subscription:
+A distributed hybrid topology introduces the concept of *scale units*, which enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. Scale units are provided through the following add-ins for your Supply Chain Management subscription:
 
 - Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available April 2021*)
 - Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available soon*)
@@ -98,7 +98,7 @@ Your current production environment must be tagged with the **Self-Service** typ
 > [!IMPORTANT]
 > Environment types that run as infrastructure as a service (IaaS) aren't supported. These environments are typically tagged with the **Microsoft Managed** type in LCS. If you have environments of this type, work with your Microsoft contact to understand your migration timeline to the **Self-Service** type.
 
-Microsoft is in the process of transitioning all cloud environments of Supply Chain Management from an IaaS model to a topology that is hosted in Service Fabric. This move brings better scalability and helps make service management easier. Therefore, deployment and maintenance operations are faster. Likewise, service components are being migrated to the concept of microservices, and the service hosting model will [transition](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) from a virtual machine (VM) model to a lightweight containerized architecture.
+Microsoft is in the process of transitioning all cloud environments of Supply Chain Management from an IaaS model to a topology that is hosted in Service Fabric. This move brings better scalability and helps make service management easier. Therefore, deployment and maintenance operations are faster. Likewise, service components are being migrated to the concept of microservices, and the service hosting model will [transition](/virtualization/windowscontainers/about/containers-vs-vm) from a virtual machine (VM) model to a lightweight containerized architecture.
 
 Ultimately, the same Service Fabric–based containerized service infrastructure will power both cloud and edge instances of the service, regardless of whether an instance is a hub in the cloud, or a scale unit in the cloud or on the edge.
 
