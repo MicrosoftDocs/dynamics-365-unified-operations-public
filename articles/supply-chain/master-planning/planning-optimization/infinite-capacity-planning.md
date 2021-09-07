@@ -27,7 +27,7 @@ Before you can use this feature, it must be turned on in your system. Admins can
 - **Module:** *Master planning*
 - **Feature name:** *Infinite capacity scheduling for Planning Optimization*
 
-For more information about this feature, see also [Scheduling with resource selection based on capability](capability-based-scheduling.md).
+For more information about this feature, see [Scheduling with resource selection based on capability](capability-based-scheduling.md).
 
 ## Added functionality
 
@@ -42,7 +42,7 @@ During the scheduling process, the system also considers the *resource requireme
 - Resource type
 - Resource
 - Resource group
-- Capability (for more information, see [Scheduling with resource selection based on capability](capability-based-scheduling.md))
+- Capability (For more information, see [Scheduling with resource selection based on capability](capability-based-scheduling.md).)
 
 > [!NOTE]
 > Requirements that are related to human resources, such as skills or certificate requirements, aren't yet supported.
