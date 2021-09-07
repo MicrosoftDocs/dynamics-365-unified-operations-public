@@ -56,7 +56,7 @@ When a retail sale is paid by card, the following card payment information is st
 
 To configure the Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil, follow these steps.
 
-1. Complete the configuartion steps described in [Set up Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector-setup.md).
+1. Complete the configuration steps described in [Set up Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector-setup.md).
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Payment methods \> Card processors**.
 1. Create a record and specify the CNPJ number for the card processor acquiring company.
 1. Go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**.
