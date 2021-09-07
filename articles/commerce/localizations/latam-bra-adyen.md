@@ -46,7 +46,7 @@ Double-purpose cards that are both debit and credit cards are common in Brazilia
 ## Saving payment-related data
 
 When a retail sale is paid by card, the following card payment information is stored in the card payment data block of the electronic fiscal document and is transmitted to SEFAZ (Secretaria de Estado de Fazenda):
-- Accreditation - The CNPJ number of the payment transfer aquiring company.
+- Accreditation - The CNPJ number of the payment transfer acquiring company.
 - Card banner - Card type (for example, Visa or MasterCard).
 - Transaction code (NSU) - The identification number of a sales transaction using cards.
 
@@ -58,7 +58,7 @@ Adyen payment connector in Commerce POS for Brazil, follow these steps:
 
 1. Complete the setup described in [Set up Dynamics 365 Payment Connector for Adyen](../dev-itpro/adyen-connector-setup.md).
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Payment methods \> Card processors**.
-1. Create a record and specify the CNPJ number for the card processor aquiring company.
+1. Create a record and specify the CNPJ number for the card processor acquiring company.
 1. Go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**.
 1. Specify the card processor CNPJ number entered above for the desired electronic payment types. It is required to choose a payment system.
 1. Select **Electronic payment setup** to add the electronic payment types created above to your store's payment methods.
