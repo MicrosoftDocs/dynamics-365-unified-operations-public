@@ -261,7 +261,7 @@ As stated above, it is very important to get the FnO environments deployed under
 ### How can I fix my existing environment where I am getting login errors?
 If you have such environments where admin provisioning tool was used in the past to update the tenant settings, recommendation is to delete such environments and deploy them under the correct AAD tenant.
 
-Following steps can help you fix the environments that are modified:
+In cases where environment cannot be deleted and redeployed, exiting environment's url will have to be added to the configured AAD Teanant. Following commands can be executed by Tenant Admin:
 1.	Retrieve following values from from web.config.
      ```powershell
      $AADTenant = <Value of Aad.TenantDomainGUID from web.config>
