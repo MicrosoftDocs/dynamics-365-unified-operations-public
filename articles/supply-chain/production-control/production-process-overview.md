@@ -74,7 +74,7 @@ In the integrated solution, data exchange is fully automated and near real-time,
 
 The solution makes it faster, easier, and cheaper for Supply Chain Management users to integrate with third-party MES systems. It offers:
 
-- Business events and interfaces that support key manufacturing execution processes <!-- Are these documented anywhere? Are these the same as the "processes" we list later? -->
+- Business events and interfaces that support the key manufacturing execution processes listed in the table later in this section.
 - A centralized dashboard where the event processing history can be tracked and failing processes can be troubleshooted and resolved
 
 ### Turn on the MES integration feature
@@ -86,11 +86,11 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 ### Processes available for MES integration
 
-You can enable any or all of the processes outlined in the following table for integration. <!-- How can I enable these? Is this really enough information to make use of this feature? -->
+You can enable any or all of the processes outlined in the following table for integration.
 
 | Process name | Description |
 |---|---|
-| Release production orders and production order status change business events | This process provides a business event that an MES can listened to to get information about which production orders to produce. Reference data related to the production order is expected to be provided with OData or data entities. |
+| Release production orders and production order status change business events | This process provides a business event that an MES can listen to to get information about which production orders to produce. Reference data related to the production order is expected to be provided with OData or data entities. |
 | Start production order | This process provides Supply Chain Management with information about production orders being started using the MES system. It ensures that both systems have an up-to-date view of all manufacturing activities. |
 | Report produced or scrapped quantity | This process provides Supply Chain Management with information about the good and error quantities reported on a production job using the MES system. This provides shop floor supervisors with an up-to-date view of production plan progress. |
 | Report material consumption | This process provides Supply Chain Management with information from the MES system about the quantities of materials consumed. This makes up-to-date inventory records available to other important processes such as planning, sales, and so on. |
