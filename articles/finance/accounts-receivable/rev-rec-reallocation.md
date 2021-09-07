@@ -51,7 +51,6 @@ There are a few important limitations on the reallocation process:
    - This limitation is removed on release 10.0.17 and later.
 
 ## Set up reallocation
-
 One parameter affects the reallocation process.
 
 Because reallocation can be done on a sales order that is partially or fully invoiced, any previous accounting entries for the invoice must be corrected by using the new, reallocated revenue prices. This correction is done by reversing the original invoice's accounting entry and posting a new accounting entry that is based on the reallocated revenue prices.
@@ -83,7 +82,6 @@ If the **Post invoice corrections to Accounts receivable** option is set to **No
 As has been mentioned, you can update only General ledger, or you can update both General ledger and Accounts receivable. Both approaches have pros and cons. We recommend that you evaluate your organization's requirements to determine which option you should use. If you update both General ledger and Accounts receivable, the correct accounting entries will be shown on the new invoice and can be viewed from the document on the **Customer transactions** page. Additionally, the settlement process will use the updated accounting entries to post any cash discounts and gains or losses. On the other hand, the credit document and the new invoice will appear on customer statements and aging reports, just as other credit documents and customer invoices do. The description of those documents will indicate that they were created through an accounting correction.
 
 ## Run the reallocation process
-
 To start the reallocation process, select **Reallocate price with new order lines** in any sales order that you must reallocate. Alternatively, go to **Revenue recognition \> Periodic tasks \> Reallocate price with new order lines**, and then enter the appropriate filters, such as the customer account.
 
 [![Reallocate price with new order lines page.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
@@ -117,23 +115,22 @@ After you've finished selecting the required sales order lines, use the buttons 
 ## Undo a reallocation
 Undoing a reallocation is accomplished by running another reallocation. The reallocation is done again, and the user changes which sales order lines are included in the second reallocation process. 
 
-If a reallocation has been done across two or more separate sales orders, the reallocation can be undone by selecting Reallocate price with new order lines from any sales order included in the reallocation. The menu under Revenue recognition > Periodic tasks > Reallocate price with new order lines cannot be used to undo a reallocation.  The reallocation window under Period tasks only displays sales orders with no Reallocation ID, which is assigned after the document has been reallocated.
+If a reallocation has been done across two or more separate sales orders, the reallocation can be undone by selecting **Reallocate price with new order lines** from any sales order included in the reallocation. The menu under **Revenue recognition > Periodic tasks > Reallocate price with new order lines** can't be used to undo a reallocation.  The reallocation window under Period tasks only displays sales orders with no Reallocation ID, which is assigned after the document has been reallocated.
 
-After the page has opened, unmark the one or more sales orders that should be excluded from the contractual agreement.  Use the appropriate buttons, such as Update reallocation and Process, to process the reallocation as normal.  If all sales orders are unmarked except for the active sales order, the Reallocation ID will be removed upon processing the change. 
+After the page has opened, unmark any sales orders that should be excluded from the contractual agreement. Use the appropriate buttons, such as **Update reallocation** and **Process**, to process the reallocation. If all sales orders are unmarked except for the active sales order, the Reallocation ID will be removed when the change is processed. 
 
-If a reallocation has been done by adding a new line onto a fully or partially invoiced sales order, the reallocation can only be “undone” by removing the line from the sales order and running the reallocation again with the line removed.  The sales order line must be removed because all lines on a sales order are presumed to be part of the same contract.  It is not possible to unmark a sales order line while on the Reallocate price with new order lines page. 
+If a reallocation has been done by adding a new line onto a fully or partially invoiced sales order, the reallocation can only be “undone” by removing the line from the sales order and running the reallocation again with the line removed.  The sales order line must be removed because all lines on a sales order are presumed to be part of the same contract.  It is not possible to unmark a sales order line while on the **Reallocate price with new order lines** page. 
 
 ## Reallocate multiple times
 Multiple reallocations can be done against the same sales order when multiple changes have been made to the contract. Every reallocation triggers the assignment of a reallocation ID to the sales order or group of sales orders, to group together the changes. If multiple reallocations are done, each additional reallocation uses the same reallocation ID as the first reallocation. 
 
-For example, let’s say that sales order 00045 is entered with multiple lines.  The sales order is fully invoiced. A new sales order line is added to the sales order after it was fully invoiced, and the reallocation is run by opening the Reallocate price with new order lines page from sales order 00045 or from under the Periodic tasks. The reallocation ID of Reall000001 is assigned to the sales order. 
+For example, let’s say that sales order 00045 is entered with multiple lines.  The sales order is fully invoiced. A new sales order line is added to the sales order after it was fully invoiced, and the reallocation is run by opening the **Reallocate price with new order lines** page from sales order 00045 or from under the Periodic tasks. The reallocation ID of Reall000001 is assigned to the sales order. 
 
-A second sales order, 00052, is created for the same contract. The reallocation can be run again by opening the Reallocate price with new order lines page from sales order 00045, but not from sales order 00052.  If you open the Reallocate price with new order lines page from sales order 00052, sales order 00045 will not display because it has been assigned a Reallocation ID.  Only sales orders without a Reallocation ID will display.  
+A second sales order, 00052, is created for the same contract. The reallocation can be run again by opening the **Reallocate price with new order lines** page from sales order 00045, but not from sales order 00052.  If you open the **Reallocate price with new order lines** page from sales order 00052, sales order 00045 will not display because it has been assigned a Reallocation ID.  Only sales orders without a Reallocation ID will display.  
 
-There are two options to perform the second reallocation.  First, you can undo the reallocation of sales order 00045, which will remove the reallocation ID. You can then perform the reallocation from either sales order 00045 or 00052.  Second, you can open the Reallocate price with new order lines page from sales order 00045 and add the second sales order.  Upon processing the reallocation, both sales orders 00045 and 00052 will be assigned reallocation ID Reall000001.
+There are two options to perform the second reallocation. First, you can undo the reallocation of sales order 00045, which will remove the reallocation ID. You can then perform the reallocation from either sales order 00045 or 00052. Second, you can open the **Reallocate price with new order lines** page from sales order 00045 and add the second sales order.  Upon processing the reallocation, both sales orders 00045 and 00052 will be assigned reallocation ID Reall000001.
 
 ## Scenarios for reallocation
-
 The following topics go through various scenarios for revenue recognition:
 
 - [Revenue recognition reallocation – Scenario 1](rev-rec-reallocation-scenario-1.md) – Two sales orders are entered, but they are only confirmed. The same scenario will produce similar results if more than two sales orders are in a confirmed state.
