@@ -100,6 +100,7 @@ The purpose of the dimension configuration is to standardize the multi-system in
 | Others | `VersionId` |
 | Inventory (custom) | `InventDimension1` through `InventDimension12` |
 | Extension | `ExtendedDimension1` through `ExtendedDimension8` |
+| System | `Empty` |
 
 > [!NOTE]
 > The dimension types that are listed in the preceding table are for reference only. You don't have to define them in Inventory Visibility.
@@ -263,7 +264,7 @@ When this computation formula is used, the new query result will include the cus
 ]
 ```
 
-The `MyCustomAvailableforReservation` output, based on the calculation setting in the custom measurements, is 100 + 50 + 80 + 90 + 30 – 10 – 20 – 60 – 40 = 220.
+The `MyCustomAvailableforReservation` output, based on the calculation setting in the custom measurements, is 100 + 50 – 10 + 80 – 20 + 90 + 30 – 60 – 40 = 220.
 
 ## <a name="partition-configuration"></a>Partition configuration
 
@@ -355,6 +356,8 @@ The index lets you query the on-hand inventory in the following ways:
 
 > [!NOTE]
 > Base dimensions that are defined in the partition configuration should not be defined in index configurations.
+> 
+> If you must query only inventory that is aggregated by all dimension combinations, you can set up a single index that contains the base dimension `Empty`.
 
 ## <a name="reservation-configuration"></a>Reservation configuration (optional)
 
@@ -380,19 +383,21 @@ To define the soft reservation mapping, follow these steps.
 1. Define the physical measure that serves as the soft reservation measure (for example, `softreservordered`).
 1. On the **Calculated measure** tab of the **Configuration** page, define the *available for reservation* (AFR) calculated measure that contains the AFR computation formula that you want to map to the physical measure. For example, you might set up `availforreserv` (available for reservation) so that it's mapped to the previously defined `softreservordered` physical measure. In this way, you can find which quantities that have the `softreservordered` inventory status will be available for reservation. The following table shows the AFR computation formula.
 
-    | Modifier | Data source | Measure |
+    | Calculation type | Data source | Physical measure |
     |---|---|---|
-    | `Addition` | `fno` | `availphysical` |
-    | `Addition` | `pos` | `inbound` |
-    | `Subtraction` | `pos` | `outbound` |
-    | `Subtraction` | `iv` | `softreservordered` |
+    | Addition | `fno` | `AvailPhysical` |
+    | Addition | `pos` | `Inbound` |
+    | Subtraction | `pos` | `Outbound` |
+    | Subtraction | `iv` | `SoftReservOrdered` |
+
+    We recommend that you set up the calculated measure so that it contains the physical measure that the reservation measure is based on. In this way, the calculated measure quantity will be affected by the reservation measure quantity. Therefore, in this example, the `AvailableToReserve` calculated measure of the `iv` data source should contain the `SoftReservOrdered` physical measure from `iv` as a component.
 
 1. Open the **Configuration** page.
 1. On the **Soft Reservation Mapping** tab, set up the mapping from the physical measure to the calculated measure. For the previous example, you might use the following settings to map `availforreserv` to the previously defined `softreservordered` physical measure.
 
     | Physical measure data source | Physical measure | Available for reservation data source | Available for reservation calculated measure |
     |---|---|---|---|
-    | `iv` | `softreservordered` | `iv` | `availforreserv` |
+    | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
 
     > [!NOTE]
     > If you can't edit the **Soft Reservation Mapping** tab, you may need to turn on the *OnHandReservation* feature on the **Feature Management** tab.
@@ -432,13 +437,16 @@ In this case, the following calculation applies:
 
 Therefore, if you try to make reservations on `iv.SoftReservOrdered`, and the quantity is less than or equal to `AvailableToReserve` (10), you can do the reservation.
 
+> [!NOTE]
+> When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required. The default value is `True`.
+
 ### Soft reservation hierarchy
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the product index hierarchy works for on-hand queries.
 
-The reservation hierarchy is independent of the product index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations.
+The reservation hierarchy is independent of the product index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration.
 
 Here is an example of a soft reservation hierarchy.
 
@@ -450,10 +458,8 @@ Here is an example of a soft reservation hierarchy.
 | `SizeId` | 4 |
 | `StyleId` | 5 |
 
-In this example, you can do reservation in the following dimension sequences:
+In this example, you can do reservation in the following dimension sequences. You must specify a partition for the product when you do the reservation. Therefore, the basic hierarchy that you can use is `(SiteId, LocationId)`.
 
-- `()` – No dimension is specified.
-- `(SiteId)`
 - `(SiteId, LocationId)`
 - `(SiteId, LocationId, ColorId)`
 - `(SiteId, LocationId, ColorId, SizeId)`

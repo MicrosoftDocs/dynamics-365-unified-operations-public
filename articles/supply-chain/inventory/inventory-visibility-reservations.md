@@ -52,13 +52,19 @@ The reservation hierarchy describes the sequence of dimensions that must be spec
 
 The reservation hierarchy can differ from the index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations.
 
-To configure a soft reservation hierarchy in Power Apps, open the **Configuration** page, and then, on the **Soft reservation mapping** tab, set up the reservation hierarchy by adding and/or modifying dimensions and their hierarchy levels. For more information, see [Configure Inventory Visibility](inventory-visibility-configuration.md).
+To configure a soft reservation hierarchy in Power Apps, open the **Configuration** page, and then, on the **Soft reservation hierarchy** tab, set up the reservation hierarchy by adding and/or modifying dimensions and their hierarchy levels. For more information, see [Configure Inventory Visibility](inventory-visibility-configuration.md).
+
+Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration. For more information about how to configure reservations, see [Reservation configuration](inventory-visibility-configuration.md#reservation-configuration).
 
 ### Call the reservation API
 
 Reservations are made in the Inventory Visibility service by submitting a POST request to the service's URL, such as `/api/environment/{environment-ID}/onhand/reserve`.
 
 For a reservation, the request body must contain an organization ID, a product ID, reserved quantities, and dimensions. The request generates a unique reservation ID for each reservation record. The reservation record contains the unique combination of the product ID and dimensions.
+
+When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required. The default value is `True`.
+
+If you want to cancel a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation.
 
 Here is an example of the request body, for reference.
 
