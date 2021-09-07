@@ -103,7 +103,7 @@ You can enable any or all of the processes outlined in the following table for i
 
 ### Monitor incoming messages
 
-To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page (<!-- KFM: provide full nav path -->), where you can view, process, and troubleshoot issues.
+To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page, where you can view, process, and troubleshoot issues.
 
 ## Additional resources
 
