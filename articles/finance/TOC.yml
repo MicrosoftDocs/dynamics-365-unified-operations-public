@@ -3449,21 +3449,21 @@
             - name: Making Tax Digital (MTD) VAT return submission in the United Kingdom 
               href: localizations/emea-gbr-mtd-vat-integration.md
             - name: Prepare your environment to interoperate with HMRC's MTD VAT web service
-              href: emea-gbr-mtd-vat-integration-setup.md
+              href: localizations/emea-gbr-mtd-vat-integration-setup.md
             - name: Authorize your Finance environment to interoperate with HMRC's MTD web servic
-              href: emea-gbr-mtd-vat-integration-authorization.md
+              href: localizations/emea-gbr-mtd-vat-integration-authorization.md
             - name: Test interoperation with the MTD VAT sandbox
-              href: emea-gbr-mtd-vat-integration-sandbox.md
+              href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
             - name: Submit a VAT return to HMRC's MTD web service
-              href: emea-gbr-mtd-vat-integration-submission.md
+              href: localizations/emea-gbr-mtd-vat-integration-submission.md
             - name: Checklist for Electronic messages setup for MTD VAT
-              href: emea-gbr-mtd-vat-integration-em-setup-checklist.md
+              href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
             - name: Generate a VAT declaration in paper format (VAT 100 report)
-              href: emea-gbr-mtd-vat-integration-vat100.md
+              href: localizations/emea-gbr-mtd-vat-integration-vat100.md
             - name: VAT setup details for VAT declarations in the United Kingdom
-              href: emea-gbr-mtd-vat-integration-declaration.md 
+              href: localizations/emea-gbr-mtd-vat-integration-declaration.md 
             - name: Retrieve information about VAT payments and liabilities from HMRC
-              href: emea-gbr-mtd-vat-integration-optional-scenarios.md
+              href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
         - name: Statistics on payment practices report
           href: localizations/emea-gbr-statistics-on-payment-practices-report.md
       - name: United States
