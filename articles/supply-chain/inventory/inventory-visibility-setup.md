@@ -1,5 +1,5 @@
 ---
-title: Set up Inventory Visibility
+title: Install the Inventory Visibility Add-in
 description: This topic describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# Set up Inventory Visibility
+# Install and set up Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
@@ -131,7 +131,7 @@ To uninstall inventory data that is stored in your Dataverse subscription, open 
 
 After you delete these solutions, the data that is stored in tables will also be deleted.
 
-## <a name="setup-dynamics-scm"></a>Set up Supply Chain Management
+## <a name="setup-dynamics-scm"></a>Set up Inventory Visibility in Supply Chain Management
 
 ### <a name="deploy-inventory-visibility-package"></a>Deploy the Inventory Visibility integration package
 
@@ -151,8 +151,23 @@ Make sure that the following features are turned on in your Supply Chain Managem
 
 ### <a name="setup-inventory-visibility-integration"></a>Set up Inventory Visibility integration
 
-1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the *Inventory Visibility Integration* feature.
-1. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters**, and enter the URL of the environment where you're running Inventory Visibility. For more information, see [Find the service endpoint](inventory-visibility-power-platform.md#get-service-endpoint).
+Once you have installed the add-in, prepare your Supply Chain Management system to work with it by doing the following steps.
+
+1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the following features:
+    - *Inventory Visibility Integration* – Required.
+    - *Inventory Visibility integration with reservation offset* – Recommended but optional. Requires version 10.0.22 or later. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
+
+1. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters**.
+1. Open the **General** tab and make the following settings:
+    - **Inventory Visibility endpoint** – Enter the URL of the environment where you're running Inventory Visibility. For more information, see [Find the service endpoint](inventory-visibility-configuration.md#get-service-endpoint).
+    - **Maximum number of records in a single request** – Set to the maximum number of records to include in a single request. You must enter a positive integer less than or equal to 1000. The default value is 512. We strongly recommend keeping the default value unless you have received advice from Microsoft Support or are otherwise certain that you need to change it.
+
+1. If you enabled the optional *Inventory Visibility integration with reservation offset* feature, open the **Reservation offset** tab and make the following settings:
+    - **Enable reservation offset** – Set to *Yes* to enable this functionality.
+    - **Reservation offset modifier** – Select the inventory transaction status that will offset reservations made on Inventory Visibility. This setting determines the order processing stage that triggers offsets. The stage is traced by the order's inventory transaction status. Choose one of the following:
+        - *On order* – For the *On transaction* status, an order will send an offset request when it's created. The offset quantity will be the quantity of the created order.
+        - *Reserve* – For the *Reserve ordered transaction* status, an order will send an offset request when it's reserved, picked, packing-slip posted, or invoiced. The request will be triggered only once, for the first step when the mentioned process occurs. The offset quantity will be the quantity where the inventory transaction status changed from *On order* to *Reserved ordered* (or later status) on the corresponding order line.
+
 1. Go to **Inventory Management \> Periodic \> Inventory Visibility Integration**, and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
