@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Mexico
@@ -95,11 +95,11 @@ If you select **Enable CFDI packing slip** in the **Packing slip posting** or **
 Set up the following catalogs to add information to the **Permission type**, **Trailer type** and **Federal motor transport configuration** fields.
 
 1. Go to **Organization administration** > **Setup** > **EInvoice** > **SAT classification** > **Transportation**.
-2. On the **Transportation** page, create the following:
+2. On the **Transportation** page, create the following catalogs:
 
-  - Trailer type (SAT catalog is c_SubTipoRem)
-  - Permission type (SAT catalog is c_TipoPermiso)
-  - Federal motor transport configuration (SAT catalog is c_ConfigAutotransporte)
+  - For **Trailer type**, the SAT catalog is **c_SubTipoRem**.
+  - For **Permission type**, the SAT catalog is **c_TipoPermiso**.
+  - For **Federal motor transport configuration**, the is SAT catalog is **c_ConfigAutotransporte**.
 
 ### Permission number
 
@@ -114,22 +114,19 @@ Set up the following catalogs to add information to the **Permission type**, **T
 
 ### Distance and time
 
-To speed up filling distance and transportation time in the **Transportation details** form, a user can set up distance and time between the shipment and delivery spots:
+You can define the distance and time information between shipment delivery locations in advance. Then, when someone enters distance and transportation time on the **Transportation details** page, they can save time by selecting existing values instead of having to calculate new ones. Complete the following steps to set up time and distance information between transportation spots.
 
-Organization administration \> Setup \> EInvoice
+1. Go to **Organization administration** > **Setup** > **EInvoice**.
+2. On the **EInvoice** page, enter or select transportation spots.
+3. Enter the time and distance between the two spots. Transportation spots are all shipment and delivery points. Spots can have different types including:
 
-  - Transportation spots.
-  - Transit time and distance (between pick up and drop off spots).
-
-Transportation spots are all shipment and delivery points. Spots can have different types:
-
-  - Customer.
-  - Warehouse.
-  - Border, if goods are delivered to border.
-  - Other
+    - Customer
+    - Warehouse
+    - Border, if goods are delivered to border.
+    - Other
 
 > [!NOTE] 
-> This step can be skipped and in this case a user should fill in the distance and the transportation time manually in the **Transportation details** form. If this setting is executed a user can select pick up and drop off spots in the **Transportation details** form and the distance and the time are filling automatically.
+> You can skip this procedure. However, if you do, you will need to enter the distance and transportation time manually in the **Transportation details** page.
 
 ### Fixed assets
 
