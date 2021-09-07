@@ -20,6 +20,15 @@ ms.dyn365.ops.version: 10.0.20
 
 By specifying resource requirements for an operation of a production route, you define what is required to perform the operation. It can be a specific resource or a resource group, combination of skills or capabilities, and so on. This topic describes resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
 
+## Turn on the capability-based scheduling feature
+
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Master planning*
+- **Feature name:** *Infinite capacity scheduling for Planning Optimization*
+
+For more information about this feature, see also [Scheduling with infinite capacity](infinite-capacity-planning.md).
+
 ## Capability-based scheduling
 
 A capability is the ability if an operations resource to perform a particular activity. An operations resource can have more than one capability assigned to it, and a capability can be assigned to more than one resource. Capabilities can be assigned to all types of resources, including tools, vendors, machines, locations, facilities, and human resources.
@@ -33,7 +42,7 @@ To assign capabilities to an operations resource, use the **Capabilities** FastT
 - **Effective** – Specify the first date on which the capability/resource assignment applies. During scheduling, the system will not use a capability/resource with an expired capability even if it otherwise satisfies the requirements.
 - **Expiration** – Specify the last date on which the capability/resource assignment applies. During scheduling, the system will not use a capability/resource with an expired capability even if it otherwise satisfies the requirements.
 - **Level** – Specify the resource's level of proficiency regarding the capability. The scheduling engine considers the level of proficiency during the resource selection if you specify **Minimum level needed** value for the capability resource requirement. The system will select only those resources that have the required capability at a level that is equal or exceeds the minimum level that is specified in the resource requirement.
-- **Priority** – <!-- KFM: Description needed -->
+- **Priority** – This field isn't yet supported by Planning Optimization, but if you are using the built-in planning engine, you can use the **Priority** field in the capability/resource assignment to define the resource priority. During scheduling, the system will first select the resource with the highest priority (the lowest numeric value in the **Priority** field), given that *Priority* is selected in the **Primary resource selection** field on the **Scheduling parameters** page.
 
 ## Example
 
