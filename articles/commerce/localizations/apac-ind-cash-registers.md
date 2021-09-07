@@ -4,7 +4,7 @@
 title: Goods and Services Tax (GST) integration for cash registers for India
 description: This topic provides an overview of the cash register functionality that is available for India. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 09/17/2019
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -430,10 +430,10 @@ It is also recommended that you enable the **Do not aggregate returns** paramete
 
 ## Manage customer registration numbers from POS
 
-> [!NOTE]
-> This functionality is available in Application update 10.0.6 and later.
-
 You can specify customer registration numbers, such as GSTIN, VAT number (TIN), and PAN number, when creating or editing a customer master record and a customer address record in POS. The customer registration numbers may be printed in receipts or used for searching customers in POS.
+
+> [!NOTE]
+> It isn't possible to specify customer registration numbers in POS when **Create customer in async mode** is enabled in the POS functionality profile. Support for the ssync customer creation mode may be added in future updates.
 
 ### Configure printing customer registration numbers in receipts
 
