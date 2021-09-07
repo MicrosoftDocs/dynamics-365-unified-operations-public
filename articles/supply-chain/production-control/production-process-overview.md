@@ -77,6 +77,10 @@ The solution makes it faster, easier, and cheaper for Supply Chain Management us
 - Business events and interfaces that support the key manufacturing execution processes listed in the table later in this section.
 - A centralized dashboard where the event processing history can be tracked and failing processes can be troubleshooted and resolved
 
+The following illustration shows a typical collection of business events, processes, and messages exchanged in an integrated solution.
+
+![Typical integration scenario](media/3p-mes-scenario.png "Typical integration scenario")
+
 ### Turn on the MES integration feature
 
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
