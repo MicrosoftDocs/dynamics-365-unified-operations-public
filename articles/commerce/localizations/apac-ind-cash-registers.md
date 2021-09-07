@@ -430,10 +430,10 @@ It is also recommended that you enable the **Do not aggregate returns** paramete
 
 ## Manage customer registration numbers from POS
 
-> [!NOTE]
-> This functionality is available in Application update 10.0.6 and later.
-
 You can specify customer registration numbers, such as GSTIN, VAT number (TIN), and PAN number, when creating or editing a customer master record and a customer address record in POS. The customer registration numbers may be printed in receipts or used for searching customers in POS.
+
+> [!NOTE]
+> It is not possible to specify customer registration numbers in POS when **Create customer in async mode** is enabled in the POS functionality profile. Support for the Async customer creation mode may be added in future updates.
 
 ### Configure printing customer registration numbers in receipts
 
