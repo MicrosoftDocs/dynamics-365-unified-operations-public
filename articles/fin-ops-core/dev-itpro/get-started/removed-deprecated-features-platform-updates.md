@@ -187,7 +187,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | The [new grid control](../..//fin-ops/get-started/grid-capabilities.md) |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | In version 10.0.13, the new grid control is generally available, and customers can optionally turn on this feature. The new grid control will become mandatory in the October 2021 release. When the new grid control becomes mandatory, the **forceLegacyGrid()** API will no longer be honored. |
+| **Status**                         | In version 10.0.13, the new grid control is generally available, and customers can optionally turn on this feature. The new grid control will become on by default with the October 2021 release and is currently targeted to be mandatory in April 2022. When the new grid control becomes mandatory, the **forceLegacyGrid()** API will no longer be honored. |
 
 ### Personalization without saved views 
 
