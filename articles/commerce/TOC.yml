@@ -1270,7 +1270,7 @@
           href: localizations/latam-bra-nfce-contingency-mode.md          
         - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters 
           href: localizations/latam-bra-retail-statements.md
-        - name: Adyen payment connector in Commerce POS for Brazil 
+        - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil 
           href: localizations/latam-bra-adyen.md          
       - name: Eastern Europe
         items: 
