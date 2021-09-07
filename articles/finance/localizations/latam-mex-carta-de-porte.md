@@ -29,139 +29,144 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to set up and submit parking slips and transfer orders with the Waybill (Carta de Porte) complement. The Waybill (Carta de Porte) complement is mandatory for taxpayers who transport goods and merchandise in the national territory starting October 1st, 2021.
+This topic provides information about how to set up and submit parking slips and transfer orders with the Waybill (Carta de Porte) complement. As of October 1, 2021, the Waybill (Carta de Porte) complement is mandatory for taxpayers who transport goods and merchandise in the national territory.
 
-To generate the Waybill complement in CFDI documents, fill in transportation information in the **Transportation details** page from one of the following business documents:
+To generate the Waybill (Carta de Porte) complement in electronic invoice (CFDI) documents, enter transportation information on the **Transportation details** page. You can open this page from any of the following business documents:
 
-- A sales order record. This includes sales orders for the project. Sales order records can be found under **Accounts receivable** > **Orders** > **All sales orders**, and on the Action Pane select **Pick and Pack**.
-- A transfer order, which is located under **Inventory management** > **Outbound orders** > **Transfer orders**, and on the Action Pane select **Ship**.
-- A shipment, which is located under **Inventory management** > **Outbound orders** > **Shipments**.
-- Project requirements, which are under **Project management and accounting** > **Item tasks > Project requirements**, and on the Action Pane select **Manage**.
+- **A sales order record:** These sales orders include sales orders for the project. Go to **Accounts receivable** \> **Orders** \> **All sales orders**. On the Action Pane, select **Pick and Pack**.
+- **A transfer order:** Go to **Inventory management** \> **Outbound orders** \> **Transfer orders**, On the Action Pane, select **Ship**.
+- **A shipment:** Go to **Inventory management** \> **Outbound orders** \> **Shipments**.
+- **Project requirements:** Go to **Project management and accounting** \> **Item tasks** \> **Project requirements**, On the Action Pane, select **Manage**.
 
-> [!NOTE] 
+> [!NOTE]
 > You can view transportation information on the **CFDI - Packing Slip Electronic Invoices** and **CFDI - Invent Transfer Electronic Invoices** list pages.
 
 ## Transportation details page
 
-This section provides information about the fields that are required on the **Transportation details field**. In the graphic, the required fields can been highlighted.
+This section provides information about the fields that are required on the **Transportation details** page. In the following illustration, the required fields have been highlighted.
 
-![Transportation details](media/latam-mx-transportation-details.png)
+![Transportation details page.](media/latam-mx-transportation-details.png)
 
+### General FastTab
 
-### **General** FastTab:
+The following fields are required:
 
-  - **Permission type**
-  - **Transportation permission ID**
-  - **Distance**
-  - **Hours**
+- **Permission type**
+- **Transportation permission ID**
+- **Distance**
+- **Hours**
 
-### **Vehicle** FastTab
+### Vehicle FastTab
 
-**Truck** field group
+In the **Vehicle** section, the following fields are required:
 
-  - **Registration number**
-  - **Federal motor transport configuration**
-  - **Model year**
+- **Registration number**
+- **Federal motor transport configuration**
+- **Model year**
 
-**Insurance** field group
+In the **Insurance** section, the following fields are required:
 
-  - **Vendor account**
-  - **Vendor number**
+- **Vendor account**
+- **Policy number**
 
-**Driver** field group
+In the **Driver** section, the following fields are required:
 
-  - **RFC number** or **Registration number** 
-  - **Country/region**
-  - **Driver license**
+- **Registration number** or **RFC number**
+- **Driver license**
+- **Country/region**
 
-If a trailer is used in the transportation of goods, enter the following field information in the **Trailer** field group:
+In the **Trailer** section, set the following fields if a trailer is used in the transportation of goods:
 
-  - **Trailer registration number**
-  - **Trailer type**
+- **Trailer registration number**
+- **Trailer type**
 
 > [!NOTE]
-> If there is an additional trailer or an additional driver, include that information.
+> If there is an additional trailer, set the fields in the **Additional trailer** section. If there is an additional driver, set the fields in the **Additional driver** section.
 
-Excluding Federal motor transport configurations, fields for a truck, a trailer, and a driver can be filled in manually or by using information from fixed assetand worker records.
+All the fields for a truck, trailer, and driver, except the **Federal motor transport configuration** field, can be filled in either manually or by using information from fixed asset and worker records.
 
 ## Posting packing slips and shipping transfer orders with the Waybill (Carta de Porte) complement
 
-If you select **Enable CFDI packing slip** in the **Packing slip posting** or **Shipment** pages, the **Generate transportation note** is selected automatically. However, you can clear this parameter if necessary. If **Generate transportation note** is selected, the Waybill (Carta de Porte) complement will be included in xml file.
+If you select **Enable CFDI packing slip** on the **Packing slip posting** or **Shipment** page, the **Generate transportation note** parameter is automatically selected. However, you can clear this parameter as you require. If **Generate transportation note** is selected, the Waybill (Carta de Porte) complement will be included in the XML file.
 
 ## Setup
 
 ### Catalogs
 
-Set up the following catalogs to add information to the **Permission type**, **Trailer type** and **Federal motor transport configuration** fields.
+Follow these steps to set up the Mexican tax authorities (SAT) catalogs to add information to the **Permission type**, **Trailer type**, and **Federal motor transport configuration** fields.
 
-1. Go to **Organization administration** > **Setup** > **EInvoice** > **SAT classification** > **Transportation**.
-2. On the **Transportation** page, create the following catalogs:
+1. Go to **Organization administration** \> **Setup** \> **EInvoice** \> **SAT classification** \> **Transportation**.
+2. On the **Transportation** page, create the following SAT catalogs:
 
-  - For **Trailer type**, the SAT catalog is **c_SubTipoRem**.
-  - For **Permission type**, the SAT catalog is **c_TipoPermiso**.
-  - For **Federal motor transport configuration**, the is SAT catalog is **c_ConfigAutotransporte**.
+    - For the **Trailer type** field, the SAT catalog is **c\_SubTipoRem**.
+    - For the **Permission type** field, the SAT catalog is **c\_TipoPermiso**.
+    - For the **Federal motor transport configuration** field, the SAT catalog is **c\_ConfigAutotransporte**.
 
 ### Permission number
 
-1. Go to **Organization administration** > **Organizations** > **Legal entities**.
-2. Expand the **Transportation permissions** FastTab and in the **Transportation permission ID** field, enter the permission number provided by the SCT.
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2. On the **Transportation permissions** FastTab, in the **Transportation permission ID** field, enter the permission number that is provided by the Mexican Secretariat for Communications and Transport (SCT).
 
 ### Items
 
 1. Go to **Product information management** \> **Products** \> **All released products**.
-2. Select and open the item record you want to work with and expand the**Manage inventory** FastTab.
-3. Fill in the **Net weight** and **Tare weight** fields if necessary. The value in the **Gross weight** field is filled in automatically.
+2. Select and open the item record that you want to work with.
+3. On the **Manage inventory** FastTab, set the **Net weight** and **Tare weight** fields if they are required. The **Gross weight** field is automatically set.
 
 ### Distance and time
 
-You can define the distance and time information between shipment delivery locations in advance. Then, when someone enters distance and transportation time on the **Transportation details** page, they can save time by selecting existing values instead of having to calculate new ones. Complete the following steps to set up time and distance information between transportation spots.
+You can define information about the distance and transportation time between shipment delivery locations in advance. Then, when users enter distance and transportation time on the **Transportation details** page, they can save time by selecting existing values instead of having to calculate new values. Follow these steps to set up information about the distance and transportation time between transportation spots.
 
-1. Go to **Organization administration** > **Setup** > **EInvoice**.
+1. Go to **Organization administration** \> **Setup** \> **EInvoice**.
 2. On the **EInvoice** page, enter or select transportation spots.
-3. Enter the time and distance between the two spots. Transportation spots are all shipment and delivery points. Spots can have different types including:
+3. Enter the time and distance between the two spots. Transportation spots are all shipment and delivery points. Spots can have different types. Here are some examples:
 
     - Customer
     - Warehouse
-    - Border, if goods are delivered to border.
+    - Border (if goods are delivered to border)
     - Other
 
 > [!NOTE] 
-> You can skip this procedure. However, if you do, you will need to enter the distance and transportation time manually in the **Transportation details** page.
+> You can skip this procedure. However, in that case, you must manually enter the distance and transportation time on the **Transportation details** page.
 
 ### Fixed assets
 
-If your company has implemented the **Fixed assets** module, enter information in the fixed asset record for vehicles or trailers. This information can then be used on the **Transportation details** page. This information is needed for the Waybill (Carta de Porte) complement.
+If your company has implemented the **Fixed assets** module, enter information in the fixed asset record for vehicles or trailers. This information can then be used on the **Transportation details** page. This information is required for the Waybill (Carta de Porte) complement.
 
-1. Go to **Fixed assets** > **Fixed assets** > **Fixed assets**. 
-2. On the **Technical information** FastTab, enter the following field information.
+1. Go to **Fixed assets** \> **Fixed assets** \> **Fixed assets**.
+2. On the **Technical information** FastTab, set the following fields:
 
-  - **SAT classification** field group:
+    - In the **SAT classification** section:
 
-      - Vehicle type
-      - Federal motor transport configuration (for trucks only)
-      - Trailer type
+        - **Vehicle type**
+        - **Federal motor transport configuration** (for trucks only)
+        - **Trailer type**
 
-  - **Model** field group:
+    - In the **Model** section:
 
-      - Model year
-      - Serial number
+        - **Model year**
+        - **Serial number**
 
 ### Workers
 
-Complete the following steps to enter driver FRC numbers, registration numbers, and license information. Before you start, ensure that identification types have been set up under **Human resources** > **Setup** > **Identification types**.
+Follow these steps to enter FRC numbers, registration numbers, and license information for drivers. Before you start, make sure that identification types have been set up at **Human resources** \> **Setup** \> **Identification types**.
 
-1. Go to **Human resources** > **Workers** > **Employees/Contractors/Workers**.
-2. On the Action Pane, select **Personal information** > **Identification numbers**.
+1. Go to **Human resources** \> **Workers** \> **Employees/Contractors/Workers**.
+2. On the Action Pane, select **Personal information** \> **Identification numbers**.
 3. In the **Identification type** field, select the corresponding type. For example, for a driver license identification type, select **Driver license**.
 
 ## Hazardous materials
 
-If the company transports hazardous materials, enable the feature **Hazardous materials product information and shipping documentation** in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+If the company transports hazardous materials, enable the **Hazardous materials product information and shipping documentation** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
-1. After you enable the feature, go to **Product information management** \> **Products** \> **All released products**.
-2. Open the item record and on the **Manage  inventory** FastTab, set the **Hazardous materials** field to **Yes**. 
-3. On the Action Pane, select **Manage inventory** > **Compliance** and then enter addition hazardous material information.
+After you enable the feature, follow these steps to enter additional hazardous material information.
 
-![Hazardous materials](media/latam-mx-hazardous2.png)
+1. Go to **Product information management** \> **Products** \> **All released products**.
+2. Open the item record, and then, on the **Manage inventory** FastTab, set the **Hazardous materials** option to **Yes**.
+3. On the Action Pane, select **Manage inventory** \> **Compliance**.
+4. On the **Item hazardous materials** page, on the header, set the **Regulation code** field.
+5. On the **Material management** FastTab, in the **Packing group** section, set the **Packing group** field.
+
+![Item hazardous materials page.](media/latam-mx-hazardous2.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
