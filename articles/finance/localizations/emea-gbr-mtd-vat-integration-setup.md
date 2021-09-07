@@ -334,7 +334,7 @@ If security roles aren't defined for a web application, only a system admin can 
 
 The MTD VAT feature in Finance supports the fraud prevention headers that HMRC requires for **WEB\_APP\_VIA\_SERVER** (for requests that are run in non-batch mode) and **BATCH\_PROCESS\_DIRECT** (for requests that are run in batch mode). As of Finance version 10.0.22, KB4623487, v.3.0 is supported.
 
-To review the general implementation details for the fraud prevention headers, see the [Fraud prevention headers table](link to come).
+To review the general implementation details for the fraud prevention headers, see the [Fraud prevention headers table](/dynamics/s-e/365business/fraud_prevent_header).
 
 Each time that a user initiates a request to HMRC's MTD VAT API, Finance starts to collect values for all the fraud prevention headers. When the values are collected, Finance shows them to the user.
 
