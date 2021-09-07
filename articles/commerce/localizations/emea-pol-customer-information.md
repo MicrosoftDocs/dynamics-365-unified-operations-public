@@ -4,7 +4,7 @@
 title: Customer information management for Poland
 description: This topic describes how to handle customer information in Retail POS for Poland.
 author: sepism
-ms.date: 03/25/2020
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod:
 ms.technology:
