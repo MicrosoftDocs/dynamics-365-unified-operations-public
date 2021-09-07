@@ -36,7 +36,7 @@ This topic describes how you can handle customer information, such as the custom
 You can specify the customer's VAT number when you create or edit a customer master record in POS. You can also specify a VAT number for a sales transaction by copying it from the transaction customer or entering it manually. The customer information can then be printed on both regular and fiscal receipts, and it can be used for invoicing purposes.
 
 > [!NOTE]
-> It is not possible to specify a VAT number for a customer in POS when **Create customer in async mode** is enabled in the POS functionality profile. Support for the Async customer creation mode may be added in future updates.
+> It isn't possible to specify a VAT number for a customer in POS when **Create customer in async mode** is enabled in the POS functionality profile. Support for the async customer creation mode may be added in future updates.
 
 ## Setup
 
