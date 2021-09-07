@@ -143,7 +143,7 @@ On the date when master planning is run, if the available inventory isn't under 
 
 On the date when master planning is run, if the available inventory is not under the safety stock limit, **Today's date + procurement time** will provide the following result, because it postpones the fulfillment until the end of the procurement lead time.
 
-![Planning an item with Requirement coverage code and First issue fulfillment.](media/ReqTodayLT.png)
+![Fulfillment postponed until the end of the procurement lead time.](media/ReqTodayLT.png)
 
 ### Coverage time fence
 
