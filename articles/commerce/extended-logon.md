@@ -64,6 +64,8 @@ To delete the extended logon that is assigned to a worker, search for the worker
 
 ## Extending extended logon
 
+Out of the box, the extended logon only allows for five significant characters as unique identifier. For example, if you configure two cards with the IDs “1234567” and “1234578” they will be considered the same “12345”. You could build extension to support more characters as identifier. For detailed instructions, check [Extending the Extended Logon functionality for MPOS and Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+
 The logon service can be extended to support additional extended logon devices, such as palm scanners. For more information, see the POS extensibility documentation.
 
 ## Using extended logon
