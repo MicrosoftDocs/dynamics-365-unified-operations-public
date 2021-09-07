@@ -4,7 +4,7 @@ description: This topic gives an overview of the production processes. It descri
 author: johanhoffmann
 ms.date: 09/07/2021
 ms.topic: article
-ms.search.form:
+ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace, ProdParmCostEstimation, ProdParmRelease, ProdSchedule, ProdTableListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
