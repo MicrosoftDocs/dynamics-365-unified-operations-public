@@ -4,7 +4,7 @@
 title: Electronic messaging
 description: This topic provides overview and setup information for electronic messaging in Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 08/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -64,6 +64,16 @@ The EM functionality supports the following scenarios:
 - Store and review all the reports that are generated.
 - Store and review all the log information that is related to actions that are run for a message or message item.
 - Control the processing through various message statuses and message item statuses.
+
+## Security privileges
+
+The following security privileges are available for electronic messages.
+
+| Security privilege           | Access level | Association |
+|------------------------------|--------------|-------------|
+| Maintain electronic messages | This privilege gives full access to the EM functionality. If you have this privilege, you can set up electronic messaging and run all the processing. | This privilege is included in the **Maintain sales tax transactions** security duty. That duty, in turn, is included in the **Accountant** security role. |
+| View electronic messages     | This privilege gives read-only access to the EM functionality. If you have this privilege, you can view the electronic messaging settings and messages. However, you can't set up or run anything. | This privilege is included in the **Inquire into sales tax transaction status** security duty. That duty, in turn, is included in the following security roles:<ul><li>Collections manager</li><li>Accounts receivable clerk</li><li>Accounts receivable manager</li><li>Tax accountant</li><li>Accountant</li><li>Accounting manager</li><li>Accounting supervisor</li><li>Sales manager</li><li>Accounts payable clerk</li></ul> |
+| Operate electronic messages  | This privilege gives access only to the **Electronic messages** and **Electronic message items** pages. If you have this privilege, you can run all the processing that is called from those pages. | This privilege is included in the **Operate electronic messages** security duty. That duty, in turn, is included in the **Electronic messages operator** security role. |
 
 ## Country-specific regulatory features supported by the EM functionality
 
