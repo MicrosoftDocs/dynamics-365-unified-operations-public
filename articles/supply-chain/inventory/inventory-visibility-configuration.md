@@ -69,6 +69,7 @@ Inventory Visibility supports the following general base dimensions.
 | Others | `VersionId` |
 | Inventory (custom) | `InventDimension1` through `InventDimension12` |
 | Extension | `ExtendedDimension1` through `ExtendedDimension8` |
+| System | `Empty` |
 
 > [!NOTE]
 > The dimension types that are listed in the preceding table are for reference only. You don't have to define them in Inventory Visibility.
@@ -197,7 +198,7 @@ When this computation formula is used, the new query result will include the cus
 ]
 ```
 
-The `MyCustomAvailableforReservation` output, based on the calculation setting in the custom measurements, is 100 + 50 + 80 + 90 + 30 – 10 – 20 – 60 – 40 = 220.
+The `MyCustomAvailableforReservation` output, based on the calculation setting in the custom measurements, is 100 + 50 – 10 + 80 – 20 + 90 + 30 – 60 – 40 = 220.
 
 ## <a name="partition-configuration"></a>Partition configuration
 
@@ -279,6 +280,8 @@ The index lets you query the on-hand inventory in the following ways:
 
 > [!NOTE]
 > Base dimensions that are defined in the partition configuration should not be defined in index configurations.
+> 
+> If you must query only inventory that is aggregated by all dimension combinations, you can set up a single index that contains the base dimension `Empty`.
 
 ## <a name="reservation-configuration"></a>Reservation configuration (optional)
 
@@ -294,6 +297,8 @@ Reservation configuration is required if you want to use the soft reservation fe
 When you make a reservation, you might want to know whether on-hand inventory is currently available for reservation. The validation is linked to a calculated measure that represents a computation formula of a combination of physical measures.
 
 For example, a reservation measure is based on the `SoftReservOrdered` physical measure from the `iv` (Inventory Visibility) data source. In this case, you can set up the `AvailableToReserve` calculated measure of the `iv` data source as shown here.
+
+We recommend that you set up the calculated measure so that it contains the physical measure that the reservation measure is based on. In this way, the calculated measure quantity will be affected by the reservation measure quantity. Therefore, in this example, the `AvailableToReserve` calculated measure of the `iv` data source should contain the `SoftReservOrdered` physical measure from `iv` as a component.
 
 | Calculation type | Data source | Physical measure |
 |---|---|---|
@@ -343,11 +348,14 @@ In this case, the following calculation applies:
 
 Therefore, if you try to make reservations on `iv.SoftReservOrdered`, and the quantity is less than or equal to `AvailableToReserve` (10), you can do the reservation.
 
+> [!NOTE]
+> When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required. The default value is `True`.
+
 ### Soft reservation hierarchy
 
 The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the product index hierarchy works for on-hand queries.
 
-The reservation hierarchy is independent of the product index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations.
+The reservation hierarchy is independent of the product index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration.
 
 Here is an example of a soft reservation hierarchy.
 
@@ -359,10 +367,8 @@ Here is an example of a soft reservation hierarchy.
 | `SizeId` | 4 |
 | `StyleId` | 5 |
 
-In this example, you can do reservation in the following dimension sequences:
+In this example, you can do reservation in the following dimension sequences. You must specify a partition for the product when you do the reservation. Therefore, the basic hierarchy that you can use is `(SiteId, LocationId)`.
 
-- `()` – No dimension is specified.
-- `(SiteId)`
 - `(SiteId, LocationId)`
 - `(SiteId, LocationId, ColorId)`
 - `(SiteId, LocationId, ColorId, SizeId)`
