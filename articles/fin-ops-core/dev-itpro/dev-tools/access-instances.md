@@ -247,23 +247,26 @@ This process might take a while. The process is completed when the cmd.exe windo
 
 ## Frequently asked questions
 
-### As a Partner/ISV how can I facilitate cloud-hosted deployments for customers I am working with:
-Tier1/Customer managed environment should be deployed under the customer AAD (Azure Active Directory) tenant, this ensures that all the configuration and integrations are provisioned correctly for any given environment. The tenant and environment association is determined based on user who deployed the environment.
+### As a partner/ISV, how can I facilitate cloud-hosted deployments for customers I am working with?
+A Tier 1/customer-managed environment should be deployed under the customer's Azure Active Directory (AAD) tenant, which ensures that all the configuration and integrations are provisioned correctly for any given environment. The tenant and environment association is determined based on the user who deployed the environment.
 
-To facilitate this, we recommend partners to follow this process to create customer specific CHE environments:
-1.	Environment should be deployed via a user from the tenant with which the environment will be used. Admin provisioning tool should not be used to change the tenant for a Tier1/Customer managed/Cloud-hosted environment.
+To facilitate cloud-hosted deployments, we recommend that partners follow these steps to create customer-specific, cloud-hosted environments:
+
+1.	Environment should be deployed via a user from the tenant with which the environment will be used. Admin provisioning tool should not be used to change the tenant for a Tier 1/customer-managed/cloud-hosted environment.
 2.	This will ensure that deployment gets registered under correct tenant.
 
-Also please note that AAD tenant associated with Azure Subscription does not play any role in environment configuration. Azure Subscription and the corresponding connector configuration are used only to deploy Azure resources.
+Note that the AAD tenant associated with the Azure subscription does not play any role in environment configuration. The Azure subscription and the corresponding connector configuration are used only to deploy Azure resources.
 
-### I have executed Admin provisioning tool on my development environment and now I am getting login errors: (Error: AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application)
-As stated above, it is very important to get the FnO environments deployed under the correct AAD tenant. Changing AAD tenant settings post deployment is not supported for Tier1/customer managed environments deployed via LCS (Dynamics Lifecycle Services).
+### I have executed the Admin provisioning tool on my development environment and now I am getting the following login error. Error: AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application.)
+As stated above, it is very important to get the Finance and Opertations environments deployed under the correct AAD tenant. Changing AAD tenant settings after deployment is not supported for Tier 1/customer-managed environments deployed via LCS.
 
 ### How can I fix my existing environment where I am getting login errors?
-If you have such environments where admin provisioning tool was used in the past to update the tenant settings, recommendation is to delete such environments and deploy them under the correct AAD tenant.
+If you have environments where the admin provisioning tool was used in the past to update the tenant settings, we recommend that you delete such environments and deploy them under the correct AAD tenant.
 
-In cases where environment cannot be deleted and redeployed, existing environment's url will have to be added to the configured AAD Tenant. Following commands can be executed by Tenant Admin:
+In cases where the environment cannot be deleted and redeployed, existing environment's URL will have to be added to the configured AAD tenant. The following commands can be executed by the tenant admin:
+
 1.	Retrieve following values from from web.config.
+
      ```powershell
      $AADTenant = <Value of Aad.TenantDomainGUID from web.config>
      $EnvironmentUrl = <Value of Infrastructure.HostUrl from web.config>
@@ -272,8 +275,8 @@ In cases where environment cannot be deleted and redeployed, existing environmen
      $AADRealm = <Value of Aad.Realm from web.config without spn: prefix. >
      ```
 
+2.	Execute the following commands **via tenant admin account for the AAD tenant in the web.config file**
 
-2.	Execute following commands _**via Tenant Admin account for the AAD tenant in the web.config**_
      ```powershell
      # Using tenant admin account under this tenant login to via AzureAD PowerShell cmdlet.
      Connect-AzureAD
