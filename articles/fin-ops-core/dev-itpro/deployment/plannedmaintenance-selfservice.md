@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-05-13
 ---
 
 # Planned maintenance in self-service environments FAQ
-Planned maintenance is any maintenance activity that Microsoft needs to perform on your environments either according to a published schedule or Microsoft provides at least 5 days’ notice. This topic provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
+Planned maintenance is any maintenance activity that Microsoft needs to perform on your environments according to a published schedule.This topic provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
 
 ## What are the types of planned maintenance activities that are performed on an environment?
 Some of the common planned maintenance activities performed by Microsoft are:
@@ -34,17 +34,18 @@ A planned maintenance window is typically during the dark hours of the geographi
 ## What is the schedule for operating system maintenance?
 Month and year | Americas (5:00 AM - 8:00 AM UTC) | EMEA (2:00 AM - 5:00 AM UTC) | APAC (6:00 PM - 9:00 PM UTC)
 ---------- | -------------------------- | ---------------------- | ----------------------
-May 2021 | May 23, 2021 | May 22, 2021 | May 22, 2021
-June 2021 | June 20, 2021 | June 19, 2021 | June 19, 2021
-July 2021 | July 25, 2021 | July 24, 2021 | July 24, 2021
-August 2021 | August 22, 2021 | August 21, 2021 | August 21, 2021
 September 2021 | September 26, 2021 | September 25, 2021 | September 25, 2021
+October 2021 | October 24, 2021 | October 23, 2021 | October 23, 2021
+November 2021 | December 5, 2021 | December 4, 2021 | December 4, 2021
+December 2021 | January 9, 2021 | January 8, 2021 | January 8, 2022
+January 2022 | January 23, 2021 | January 22, 2021 | January 22, 2021
+February 2022 | February 20, 2021 | February 19, 2021 | February 19, 2021
 
 ## How are operating system maintenance updates applied?
-Microsoft sends email notification to customers 5 days ahead of the operating system maintenance, based on the preceding schedule. The email specifies the environments that will be updated and the downtime window. Customers are strongly encouraged to take the maintenance in the given window. In the event that there is an unavoidable reason that customers cannot take the downtime, they can request to reschedule the maintenance. Instructions for requesting to reschedule the maintenance is included in the email.
+This service maintenance is planned outside of normal business hours to help minimize any potential impact to your environment. For environments with users in other parts of the world, we recognize that "outside of normal business hours" might affect you differently. We are working hard to improve Microsoft Dynamics 365 and minimize the impact of these maintenance windows in the future. Going forward, Infrastructure Maintenance schedules will be posted here and you won’t receive future notifications for Infrastructure Maintenance.
 
 ## Can operating system updates be applied in zero downtime?
-Yes, Microsoft is rolling out near-zero downtime operating system maintenance starting May 2021. Customers selected for near-zero downtime operating system updates will be notified through the email notifications sent 5 days prior to the maintenance based on the preceding schedule.
+Yes, Microsoft has started rolling out near-zero downtime Infrastructure Maintenance starting May 2021.
 
 ## What does near-zero downtime maintenance mean?
 Customers can continue to operate the system during the maintenance activity. They may experience brief interruptions or disconnects during this window, but will not need to take a full downtime.
@@ -75,4 +76,4 @@ The following issues are known to occur during the near-zero downtime maintenanc
   - Review the integration message that were published during the planned maintenance window. If you find any that are in an in-process state, these should be terminated and re-published.
 
 ## Is it possible to reschedule near-zero downtime operating system maintenance?
-No. In order to help with planning, the schedule for operating system maintenance will be published in advance every 6 months. Always refer to the published schedule, and be sure to plan important activities outside the operating system update window.
+No. In order to help with planning, the schedule for Infrastructure Maintenance will be published in advance every 6 months. Always refer to the published schedule, and be sure to plan important activities outside the operating system update window.
