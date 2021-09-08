@@ -127,7 +127,28 @@ You can use the **Workflow history** page to reset the workflow status to **Draf
 ## Viewing the invoice total on the Pending vendor invoices page
 You can view the invoice total on the **Pending vendor invoices** page by enabling the **Display invoice total on pending vendor invoices list** parameter on the **Accounts payable parameters** page. 
 
+## Vendor open transactions report
+The Vendor open transactions report provides detailed information about the open transactions for each vendor as of the date entered in the **Open transactions per** field. This report is commonly used in audit procedure of balance verification between Vendor books transactions and Ledger accounts transactions. 
 
+For each transaction, the report includes: 
+
+- Invoice number
+- Transaction date
+- Voucher number
+- Transaction amount in the transaction currency and accounting currency
+- The Credit balance in the transaction currency and accounting currency
+- The Debit balance in the transaction currency and accounting currency
+- The subtotal amount in the accounting currency
+- The payment due date
+
+## How to filter the data on this report
+When you generate this report, the following default parameters are displayed. You can use these parameters to filter the data that will be displayed on the report.
+
+- **Exclude future settlement**: Select this check box to exclude transactions that are settled after date in **Open transactions per**.
+
+- **Open transactions per**: Enter a date to include transactions that are openon that date. If you don’t enter a date, the date is set to the system date by default. The next time the report is run, date that was last entered will be default entry in this field.
+
+You can further restrict the transaction data that’s included by using filters under the **Record to include** field. 
 
 ## Additional resources
 
