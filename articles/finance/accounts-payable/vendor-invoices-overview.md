@@ -141,7 +141,7 @@ For each transaction, the report includes:
 - The subtotal amount in the accounting currency
 - The payment due date
 
-## How to filter the data on this report
+### Filter the data on the report
 When you generate this report, the following default parameters are displayed. You can use these parameters to filter the data that will be displayed on the report.
 
 - **Exclude future settlement**: Select this check box to exclude transactions that are settled after date in **Open transactions per**.
