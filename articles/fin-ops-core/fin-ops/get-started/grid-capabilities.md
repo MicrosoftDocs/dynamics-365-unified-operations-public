@@ -4,7 +4,7 @@
 title: Grid capabilities
 description: This topic describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 08/04/2021
+ms.date: 09/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,7 @@ The new grid control provides several useful and powerful capabilities that you 
 -  Calculating totals
 -  Typing ahead of the system
 -  Evaluating math expressions 
--  Grouping tabular data (enabled separately using the **(Preview) Grouping in grids** feature)
+-  Grouping tabular data (enabled separately using the **Grouping in grids** feature)
 -  Freezing columns
 
 ## Calculating totals
@@ -97,7 +97,7 @@ As a productivity booster, users can enter mathematical formulas in numeric cell
 To make the system recognize a value as an expression, start the value with an equal sign (**=**). For more information about the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## Grouping tabular data
-Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** feature, which is generally available in version 10.0.16/Platform update 40 and is dependent on the new grid control feature, allows users to organize their tabular data in interesting ways within Finance and Operations apps. Because this feature extends the **Totals** feature, **Grouping** allows you to get meaningful insights into the data by providing subtotals at the group level.
+Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** feature, which is dependent on the new grid control feature, allows users to organize their tabular data in interesting ways within Finance and Operations apps. Because this feature extends the **Totals** feature, **Grouping** allows you to get meaningful insights into the data by providing subtotals at the group level.
 
 To use this feature, right-click the column that you want to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new **Group by** column to the beginning of the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group: 
 -  Data value for the group 
@@ -112,9 +112,6 @@ After you've grouped data by a single column, you can group the data by a differ
 
 At any point, you can remove the grouping on any column by right-clicking that column and selecting **Ungroup**. You can also remove the grouping from all columns by selecting **Grid options** and then **Ungroup all**.   
 
-Note, prior to version 10.0.16/Platform update 40, only one level of grouping is supported. In these versions, if the data is grouped and you select **Group by this column** for a different column, the original grouping is replaced.  
-
-
 ### Expanding and collapsing groups
 The initial grouping of data will have all groups expanded. You can create summarized views of the data by collapsing individual groups, or you can use group expanding and collapsing to assist in navigating through the data. To expand or collapse a group, select the chevron (>) button in the corresponding group header row. Note that the expand/collapse state of individual groups is **not** saved in personalization.
 
@@ -122,10 +119,10 @@ The initial grouping of data will have all groups expanded. You can create summa
 In the same way that you can select (or unselect) all rows in the grid by selecting the check box at the top of the first column in the grid, you can also quickly select (or unselect) all the rows in a group by selecting the check box in the corresponding group header row. The check box in the group header row will always reflect the current selection state of rows in that group, regardless of whether all rows are selected, no rows are selected, or only some rows are selected.
 
 ### Hiding column names
-When grouping data, the default behavior is to show the column name in the group header row. Starting in version 10.0.14/Platform update 38, you can choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
+When grouping data, the default behavior is to show the column name in the group header row. You can choose to suppress the column name in group header rows by selecting **Grid options** > **Hide group column name**.
 
 ## Freezing columns
-Some columns in a grid might be important enough for context that you don't want them to scroll out of view. Instead, you want the values in those columns always to be visible. In version 10.0.17, the **Freeze columns in grid** feature provides this flexibility to users. 
+Some columns in a grid might be important enough for context that you don't want them to scroll out of view. Instead, you may want the values in those columns to always be visible. The **Freeze columns in grid** feature provides this flexibility to users. 
 
 To freeze a column, right-click in the column's header, and then select **Freeze column**. The first time that you complete this step, the selected column becomes the first column and will no longer scroll out of view. Any subsequent column that you freeze will be added to the right of the last frozen column. You can use the standard Move functionality to reorder frozen columns as you require. However, frozen columns can't be moved so that they appear among the set of unfrozen columns. Likewise, unfrozen columns can't be moved so that they appear among the set of frozen columns.
 
@@ -136,32 +133,16 @@ Note that the row selection and row status columns in the new grid are always fr
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
 
-**10.0.9 / Platform update 33 and later**
+The **New grid control** feature is available directly in Feature management in any environment. After enabling the feature in Feature management, all subsequent user sessions will utilize the new grid control. 
 
-The **New grid control** feature is available directly in Feature management in any environment. Like other public preview features, enabling this feature in production is subject to the [Supplemental Terms of Use Agreement](public-preview-terms.md).  
-
-**10.0.8 / Platform update 32 and 10.0.7 / Platform update 31**
-
-The **New grid control** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments in order to provide additional testing and design changes by following the steps below.
-
-1.	**Enable the flight**: Execute the following SQL statement: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
-
-2. **Reset IIS** to flush the static flighting cache. 
-
-3.	**Find the feature**: Go to the **Feature management** workspace. If **New grid control** does not appear in the list of all features, select **Check for updates**.   
-
-4.	**Enable the feature**: Find the **New grid control** feature in the list of features, and select **Enable now** on the details pane. Note that a browser refresh is required. 
-
-All subsequent user sessions will start with the new grid control enabled.
+This feature is enabled by default starting in version 10.0.21 and is targeted to become mandatory with version 10.0.25. 
 
 ## [Developer] Opting out individual pages from using the new grid 
-If your organization discovers a page that has some issues utilizing the new grid, an API is available starting in version 10.0.13/Platform update 37 to allow an individual form to use the legacy grid control while still permitting the rest of the system to utilize the new grid control. To opt out an individual page from the new grid, add the following call post `super()` in the `run()` method for the form.
+If your organization discovers a page that has some issues utilizing the new grid, an API is available to allow an individual form to use the legacy grid control while still permitting the rest of the system to utilize the new grid control. To opt out an individual page from the new grid, add the following call post `super()` in the `run()` method for the form.
 
  ```this.forceLegacyGrid();```
 
-This API will be honored until the October 2021 release, when the new grid control becomes mandatory. If any issues require that this API be used, report them to Microsoft.
+This API will be honored until the new grid control becomes mandatory, which is currently targeted for April 2022. If any issues require that this API be used, report them to Microsoft.
 
 ### Forcing a page to use the new grid after previously opting out the grid
 If you have opted out an individual page from using the new grid, you might want to later re-enable the new grid after the underlying issues were solved. To do this, you simply need to remove the call to `forceLegacyGrid()`. The change will not take effect until one of the following occurs:
