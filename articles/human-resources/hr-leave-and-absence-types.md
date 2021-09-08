@@ -81,7 +81,7 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 ## Configure the required attachment per leave type
 
 > [!NOTE]
-> To use the **Attachment required** field, you must first turn on the **(Preview) Configure required attachment for leave requests** feature in Feature management. For more information about how to turn on preview features, see [Manage features](hr-admin-manage-features.md).
+> To use the **Attachment required** field, you must first turn on the **Configure required attachment for leave requests** feature in Feature management. For more information about how to turn on features, see [Manage features](hr-admin-manage-features.md).
 
 1. On the **Leave and absence** page, on the **Links** tab, under **Setup**, select **Leave and absence types**.
 
@@ -92,7 +92,7 @@ Employees will be required to upload an attachment when they submit a new leave 
 ## Configure leave units (hours/days) per leave type
 
 > [!NOTE]
-> To use the leave units per leave type functionality, you must first turn on the **(Preview) Configure leave units per leave type** feature in Feature management. For more information about how to turn on preview features, see [Manage features](hr-admin-manage-features.md).
+> To use the leave units per leave type functionality, you must first turn on the **Configure leave units per leave type** feature in Feature management. For more information about how to turn on features, see [Manage features](hr-admin-manage-features.md).
 
 > [!IMPORTANT]
 > By default, the leave types in a legal entity use the leave units from the configuration of leave parameters at the legal entity level.
