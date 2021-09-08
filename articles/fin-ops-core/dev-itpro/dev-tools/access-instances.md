@@ -132,7 +132,7 @@ For POS customizations, you must also follow these steps on the guest VM.
 
 ### Provisioning the administrator user
 
-For developer access, you must be an administrator on the instance. For environments provisioned through LCS, we encourage you to deploy with the correct user (see the [Frequently asked questions](access-instances.md#frequently-asked-questions) section for more details). To provision your own credentials as an administrator on a local virtual machine, run the Admin user provisioning tool. On the local virtual machine, there is a link provided on the desktop.
+For developer access, you must be an administrator on the instance. For environments provisioned through LCS, we encourage you to deploy with the correct user (see the [Frequently asked questions](access-instances.md#frequently-asked-questions) section for more details). To provision your own credentials as an administrator on a local virtual machine, run the admin user provisioning tool. On the local virtual machine, there is a link provided on the desktop.
 
 1.  Run the admin user provisioning tool as an administrator (right-click the icon, and then click **Run as administrator**).
 2.  Enter your email address, and then select **Submit**.
