@@ -135,7 +135,7 @@ Note that the row selection and row status columns in the new grid are always fr
 
 The **New grid control** feature is available directly in Feature management in any environment. After enabling the feature in Feature management, all subsequent user sessions will utilize the new grid control. 
 
-This feature is enabled by default starting in 10.0.21 / Platform update 45 and is targeted to become mandatory with 10.0.25 / Platform update 49. 
+This feature is enabled by default starting in version 10.0.21 and is targeted to become mandatory with version 10.0.25. 
 
 ## [Developer] Opting out individual pages from using the new grid 
 If your organization discovers a page that has some issues utilizing the new grid, an API is available to allow an individual form to use the legacy grid control while still permitting the rest of the system to utilize the new grid control. To opt out an individual page from the new grid, add the following call post `super()` in the `run()` method for the form.
