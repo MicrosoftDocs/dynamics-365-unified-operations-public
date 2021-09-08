@@ -43,10 +43,10 @@ A planned maintenance window is typically during the dark hours of the geographi
 |February 2022 | February 20, 2021 | February 19, 2021 | February 19, 2021|
 
 ## How are operating system maintenance updates applied?
-This service maintenance is planned outside of normal business hours to help minimize any potential impact to your environment. For environments with users in other parts of the world, we recognize that "outside of normal business hours" might affect you differently. We are working hard to improve Microsoft Dynamics 365 and minimize the impact of these maintenance windows in the future. Going forward, Infrastructure Maintenance schedules will be posted here and you won’t receive future notifications for Infrastructure Maintenance.
+This service maintenance is planned outside of normal business hours to help minimize any potential impact to your environment. For environments with users in other parts of the world, we recognize that "outside of normal business hours" might affect you differently. We are working hard to improve Microsoft Dynamics 365 and minimize the impact of these maintenance windows in the future. Going forward, infrastructure maintenance schedules will be posted here and you won’t receive future notifications for infrastructure maintenance.
 
 ## Can operating system updates be applied in zero downtime?
-Yes, Microsoft has started rolling out near-zero downtime Infrastructure Maintenance starting May 2021.
+Yes, Microsoft began rolling out near-zero downtime infrastructure maintenance in May 2021.
 
 ## What does near-zero downtime maintenance mean?
 Customers can continue to operate the system during the maintenance activity. They may experience brief interruptions or disconnects during this window, but will not need to take a full downtime.
@@ -77,4 +77,4 @@ The following issues are known to occur during the near-zero downtime maintenanc
   - Review the integration message that were published during the planned maintenance window. If you find any that are in an in-process state, these should be terminated and re-published.
 
 ## Is it possible to reschedule near-zero downtime operating system maintenance?
-No. In order to help with planning, the schedule for Infrastructure Maintenance will be published in advance every 6 months. Always refer to the published schedule, and be sure to plan important activities outside the operating system update window.
+No. In order to help with planning, the schedule for infrastructure maintenance will be published in advance every six months. Always refer to the published schedule, and be sure to plan important activities outside the operating system update window.
