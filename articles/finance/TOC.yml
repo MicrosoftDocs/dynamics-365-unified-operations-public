@@ -3450,20 +3450,20 @@
               href: localizations/emea-gbr-mtd-vat-integration.md
             - name: Prepare your environment to interoperate with HMRC's MTD VAT web service
               href: localizations/emea-gbr-mtd-vat-integration-setup.md
-            - name: Authorize your Finance environment to interoperate with HMRC's MTD web servic
-              href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-            - name: Test interoperation with the MTD VAT sandbox
-              href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-            - name: Submit a VAT return to HMRC's MTD web service
-              href: localizations/emea-gbr-mtd-vat-integration-submission.md
             - name: Checklist for Electronic messages setup for MTD VAT
               href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-            - name: Generate a VAT declaration in paper format (VAT 100 report)
-              href: localizations/emea-gbr-mtd-vat-integration-vat100.md
-            - name: VAT setup details for VAT declarations in the United Kingdom
-              href: localizations/emea-gbr-mtd-vat-integration-declaration.md 
+            - name: Test interoperation with the MTD VAT sandbox
+              href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+            - name: Authorize your Finance environment to interoperate with HMRC's MTD web servic
+              href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+            - name: Submit a VAT return to HMRC's MTD web service
+              href: localizations/emea-gbr-mtd-vat-integration-submission.md
             - name: Retrieve information about VAT payments and liabilities from HMRC
               href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+            - name: VAT setup details for VAT declarations in the United Kingdom
+              href: localizations/emea-gbr-mtd-vat-integration-declaration.md 
+            - name: Generate a VAT declaration in paper format (VAT 100 report)
+              href: localizations/emea-gbr-mtd-vat-integration-vat100.md
         - name: Statistics on payment practices report
           href: localizations/emea-gbr-statistics-on-payment-practices-report.md
       - name: United States
