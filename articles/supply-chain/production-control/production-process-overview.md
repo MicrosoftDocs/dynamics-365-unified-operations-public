@@ -76,7 +76,7 @@ In the integrated solution, data exchange is fully automated and occurs in near 
 The solution makes it faster, easier, and cheaper for Supply Chain Management users to integrate with third-party MESs. It offers the following features:
 
 - Business events and interfaces that support [key manufacturing execution processes](#processes-available-for-mes-integration)
-- A centralized dashboard where the event processing history can be tracked, and where failing processes can be troubleshooted and fixed
+- A centralized dashboard where you can track the event processing history, and troubleshoot and fix processes that fail
 
 The following illustration shows a typical collection of business events, processes, and messages that are exchanged in an integrated solution.
 
