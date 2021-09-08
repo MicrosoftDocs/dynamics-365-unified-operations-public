@@ -2,7 +2,7 @@
 # required metadata
 
 title: Waybill (Carta de Porte) complement
-description: This topic explains how to set up and submit parking slips and transfer orders with the Waybill (Carta de Porte) complement.
+description: This topic explains how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement.
 author: v-oloski
 ms.date: 09/07/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to set up and submit parking slips and transfer orders with the Waybill (Carta de Porte) complement. As of October 1, 2021, the Waybill (Carta de Porte) complement is mandatory for taxpayers who transport goods and merchandise in the national territory.
+This topic provides information about how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement. As of October 1, 2021, the Waybill (Carta de Porte) complement is mandatory for taxpayers who transport goods and merchandise in the national territory.
 
 To generate the Waybill (Carta de Porte) complement in electronic invoice (CFDI) documents, enter transportation information on the **Transportation details** page. You can open this page from any of the following business documents:
 
@@ -85,7 +85,7 @@ In the **Trailer** section, set the following fields if a trailer is used in the
 
 All the fields for a truck, trailer, and driver, except the **Federal motor transport configuration** field, can be filled in either manually or by using information from fixed asset and worker records.
 
-## Posting packing slips and shipping transfer orders with the Waybill (Carta de Porte) complement
+## Posting packing slips and shipping transfer orders that include the Waybill (Carta de Porte) complement
 
 If you select **Enable CFDI packing slip** on the **Packing slip posting** or **Shipment** page, the **Generate transportation note** parameter is automatically selected. However, you can clear this parameter as you require. If **Generate transportation note** is selected, the Waybill (Carta de Porte) complement will be included in the XML file.
 
@@ -149,7 +149,7 @@ If your company has implemented the **Fixed assets** module, enter information i
 
 ### Workers
 
-Follow these steps to enter FRC numbers, registration numbers, and license information for drivers. Before you start, make sure that identification types have been set up at **Human resources** \> **Setup** \> **Identification types**.
+Follow these steps to enter RFC numbers, registration numbers, and license information for drivers. Before you start, make sure that identification types have been set up at **Human resources** \> **Setup** \> **Identification types**.
 
 1. Go to **Human resources** \> **Workers** \> **Employees/Contractors/Workers**.
 2. On the Action Pane, select **Personal information** \> **Identification numbers**.
@@ -164,8 +164,10 @@ After you enable the feature, follow these steps to enter additional hazardous m
 1. Go to **Product information management** \> **Products** \> **All released products**.
 2. Open the item record, and then, on the **Manage inventory** FastTab, set the **Hazardous materials** option to **Yes**.
 3. On the Action Pane, select **Manage inventory** \> **Compliance**.
-4. On the **Item hazardous materials** page, on the header, set the **Regulation code** field.
+4. On the **Item hazardous materials** page, on the header, set the **Regulation code** field. 
 5. On the **Material management** FastTab, in the **Packing group** section, set the **Packing group** field.
+
+> [!NOTE] To select for **Regulaction code** and **Packing group** values, you should first fill in the **Hazardous material regulation** and **Hazardous material packing groups** tables in accordence with the SAT catalogs **c_MaterialPeligroso** and **c_TipoEmbalaje** (Product information management \> Setup \> Hazardous material shipping documentation).    
 
 ![Item hazardous materials page.](media/latam-mx-hazardous2.png)
 
