@@ -19,11 +19,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period.
 
-The production of products, a process that is also known as the production life cycle, follows specific steps that are required to complete the manufacture of an item. The life cycle begins with the creation of the production order, batch order, or kanban. It ends with a finished, manufactured item that is ready for either a customer or another phase of production. Each step in the life cycle requires different kinds of information to complete the process. As each step is completed, the production order, batch order, or kanban shows a change in the production status. Different types of products require different manufacturing processes.  
+The production of products, a process that is also known as the production life cycle, follows specific steps that are required to complete the manufacture of an item. The life cycle begins with the creation of the production order, batch order, or kanban. It ends with a finished, manufactured item that is ready for either a customer or another phase of production. Each step in the life cycle requires different kinds of information to complete the process. As each step is completed, the production order, batch order, or kanban shows a change in the production status. Different types of products require different manufacturing processes.
 
-The **Production control** module is linked to other modules, such as **Product information management**, **Inventory management**, **General ledger**, **Warehouse management**, **Project accounting**, and **Organization administration**. This integration supports the information flow that is required to complete the manufacturing of a finished item.  
+The **Production control** module is linked to other modules, such as **Product information management**, **Inventory management**, **General ledger**, **Warehouse management**, **Project accounting**, and **Organization administration**. This integration supports the information flow that is required to complete the manufacturing of a finished item.
 
-The production process is typically influenced by the cost accounting and inventory valuation methods that are chosen for a specific production process. Supply Chain Management supports both actual cost (first in, first out \[FIFO\]; last in, first out \[LIFO\]; moving average; and periodic weighted average) and standard cost methods. Lean manufacturing is implemented based on the backflush costing principle.  
+The production process is typically influenced by the cost accounting and inventory valuation methods that are chosen for a specific production process. Supply Chain Management supports both actual cost (first in, first out \[FIFO\]; last in, first out \[LIFO\]; moving average; and periodic weighted average) and standard cost methods. Lean manufacturing is implemented based on the backflush costing principle.
 
 The choice of the cost measurement methods also defines the requirements for reporting about material and resource consumption during the production process. Typically, actual cost methods require accurate reporting on the job level, whereas periodic costing methods allow for less granular reporting of material and resource consumption.
 
@@ -52,6 +52,7 @@ The following steps in the production life cycle can occur for all order types o
 1. **Created** – You can create a production order, batch order, or kanban manually, or you can configure the system to generate them based on various demand signals. Master planning creates production orders, batch orders, or kanbans by firming planned orders. Other demand signals are sales orders or pegged supply signals from other production orders or kanbans. For fixed-quantity kanbans, demand signals are generated when kanbans are registered as empty.
 1. **Estimated** – You can calculate estimates for material and resource consumption. The estimation generates inventory transactions for raw materials that have a status of **On order**. The receipts for main products, co-products, and by-products are generated when production orders or batch orders are estimated. If the BOM contains lines of the **Pegged supply** type, purchase orders for materials or subcontracted operation services are generated and pegged to the production order or batch order. Items or orders are reserved according to the reservation strategy of the production order, and the price of the finished goods is calculated based on parameter settings.
 1. **Scheduled** – You can schedule production based on operations, individual jobs, or both.
+
     - **Operations scheduling** – This scheduling method provides a rough, long-term plan. By using this method, you can assign start and end dates to production orders. If the production orders are attached to route operations, you can assign them to cost center groups.
     - **Job scheduling** – This scheduling method provides a detailed plan. Each operation is broken down into individual jobs that have specific dates, times, and assigned operations resources. If finite capacity is used, jobs are assigned to operations resources based on availability. You can view and change the schedule in a Gantt chart.
     - **Kanban schedule** – Kanban jobs are scheduled on the kanban schedule board or automatically scheduled based on the automatic planning configuration of the kanban rules.
@@ -68,18 +69,18 @@ The following steps in the production life cycle can occur for all order types o
 
 ## Manufacturing execution systems integration
 
-Some manufacturing organizations that use Dynamics 365 Supply Chain Management, especially those with advanced manufacturing requirements, use a third-party manufacturing execution system (MES) to control their manufacturing activities for machines, equipment, and personnel instead of what is natively available in Dynamics 365. Organizations might choose a third-party MES solution, for example, because it is specifically tailored for their own vertical industry.
+Some manufacturing organizations that use Supply Chain Management use the native functionality in Dynamics 365 to control their manufacturing activities for machines, equipment, and personnel. However, other manufacturing organizations, especially those that have advanced manufacturing requirements, use a third-party manufacturing execution system (MES) instead. Organizations might choose a third-party MES solution because, for example, it's specifically tailored to their vertical industry.
 
-In the integrated solution, data exchange is fully automated and near real-time, which keeps data current in both systems and eliminates the need for manual data entry. For example, when material consumption is registered in the MES system, the integration ensures that the same consumption is also registered in Dynamics 365, so up-to-date inventory records are available to other important processes such as planning, sales, and so on.
+In the integrated solution, data exchange is fully automated and occurs in near real time. Therefore, data is kept current in both systems, and no manual data entry is required. For example, when material consumption is registered in the MES, the integration ensures that the same consumption is also registered in Dynamics 365. Therefore, up-to-date inventory records are available to other important processes, such as planning and sales.
 
-The solution makes it faster, easier, and cheaper for Supply Chain Management users to integrate with third-party MES systems. It offers:
+The solution makes it faster, easier, and cheaper for Supply Chain Management users to integrate with third-party MESs. It offers the following features:
 
-- Business events and interfaces that support the key manufacturing execution processes listed in the table later in this section.
-- A centralized dashboard where the event processing history can be tracked and failing processes can be troubleshooted and resolved
+- Business events and interfaces that support [key manufacturing execution processes](#processes-available-for-mes-integration)
+- A centralized dashboard where the event processing history can be tracked, and where failing processes can be troubleshooted and fixed
 
-The following illustration shows a typical collection of business events, processes, and messages exchanged in an integrated solution.
+The following illustration shows a typical collection of business events, processes, and messages that are exchanged in an integrated solution.
 
-![Typical integration scenario](media/3p-mes-scenario.png "Typical integration scenario")
+![Typical integration scenario.](media/3p-mes-scenario.png "Typical integration scenario.")
 
 ### Turn on the MES integration feature
 
@@ -90,20 +91,20 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 ### Processes available for MES integration
 
-You can enable any or all of the processes outlined in the following table for integration.
+You can enable any or all of the following processes for integration.
 
 | Process name | Description |
 |---|---|
-| Release production orders and production order status change business events | This process provides a business event that an MES can listen to to get information about which production orders to produce. Reference data related to the production order is expected to be provided with OData or data entities. |
-| Start production order | This process provides Supply Chain Management with information about production orders being started using the MES system. It ensures that both systems have an up-to-date view of all manufacturing activities. |
-| Report produced or scrapped quantity | This process provides Supply Chain Management with information about the good and error quantities reported on a production job using the MES system. This provides shop floor supervisors with an up-to-date view of production plan progress. |
-| Report material consumption | This process provides Supply Chain Management with information from the MES system about the quantities of materials consumed. This makes up-to-date inventory records available to other important processes such as planning, sales, and so on. |
-| Report time consumed for the operation | This process provides Supply Chain Management with information on the time used for a specific operation. |
-| End production order | This process tells the MES system that Supply Chain Management has updated a production order to its final status of *Ended*, which indicates that no more quantities will be produced on the production order. |
+| Release production orders and production order status change business events | This process provides a business event that the MES can listen to, to get information about the production orders that should be produced. Reference data that is related to the production order is expected to be provided through Open Data Protocol (OData) or data entities. |
+| Start production order | This process provides Supply Chain Management with information about production orders that are being started by using the MES. It ensures that both systems have an up-to-date view of all manufacturing activities. |
+| Report produced or scrapped quantity | This process provides Supply Chain Management with information about the good and error quantities that are reported on a production job by using the MES. It ensures that shop floor supervisors have an up-to-date view of production plan progress. |
+| Report material consumption | This process provides Supply Chain Management with information from the MES about the quantities of materials that are consumed. It makes up-to-date inventory records available to other important processes, such as planning and sales. |
+| Report time consumed for the operation | This process provides Supply Chain Management with information about the time that is used for a specific operation. |
+| End production order | This process informs the MES that Supply Chain Management has updated a production order to its final status of *Ended*. This status indicates that no more quantities will be produced on the production order. |
 
 ### Monitor incoming messages
 
-To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page, where you can view, process, and troubleshoot issues.
+To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page. There, you can view, process, and troubleshoot issues.
 
 ## Additional resources
 
