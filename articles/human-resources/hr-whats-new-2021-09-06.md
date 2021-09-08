@@ -61,11 +61,10 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue | Description |
 | --- | --- | --- |
-| 610128 | Error on publishing data when using the HcmDiscussionOverallCommentEntity | Trying to update a performance review, using the entity 'HcmDiscussionOverallCommentEntity' via Excel, would cause an error. |
+| 610128 | Error on publishing data when using the HcmDiscussionOverallCommentEntity | Publishing data from an Excel workbook to the HcmDiscussionOverralCommentEntity results in the error: "Cannot locate data source record of type HcmTopicOverrall". |
 | 589073 | EEO-1 report counts "Non Specifc" and Blank values for "Gender" field as "Female" value. | The EEO-1 report was generating a -default- value of Female for the Gender field unless a Male is specified. |
-| 589617 | Time-off card balance, Available to buy and Available to Sell balance do not appear when user roles are restricted to a specific legal entity. | Balances do not appear correctly  on Time-off card, available to buy and available to Sell,  if user (employee role) is  restricted to a specific legal entity  |
-| 604310 | Absence manager tab should be hidden when the user does not have absence hierarchy assigned. | For a given legal entity, if the user does not have a absence hierarchy associated, then the tab should be hidden in the self service portal.
-Unless, the cross company parameter is enabled and the user has at least 1 absence hierarchy association. |
+| 589617 | Time-off card balance, Available to buy and Available to Sell balance do not appear when user roles are restricted to a specific legal entity. | Balances do not appear correctly on Time-off card, available to buy and available to Sell, if user (employee role) is  restricted to a specific legal entity.  |
+| 604310 | Absence manager tab should be hidden when the user does not have absence hierarchy assigned. | For a given legal entity, if the user does not have a absence hierarchy associated, then the tab should be hidden in the self service portal. Unless, the cross company parameter is enabled and the user has at least 1 absence hierarchy association. |
 
 ## In preview
 
