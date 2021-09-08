@@ -4,7 +4,7 @@
 title: Best practices for Dynamics 365 Commerce development 
 description: This topic describes some best practices to follow when developing Dynamics 365 Commerce customizations. 
 author: samjarawan
-ms.date: 08/19/2021
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -106,6 +106,10 @@ The data action calls for the [product collection module](../product-collection-
 The following illustration shows an example where the **Enable module lazy load** option is selected for a product collection module in Commerce site builder.
 
 ![Enable module lazy load option selected in Commerce site builder.](media/best-practices-dev-2.png)
+
+### Modules that don't support lazy loading but rely on user context
+
+Some module library modules don't include the **Enable module lazy load** configuration setting since they require user context data and have been designed to automatically render on the client. For custom modules that require user context (for example, custom cookie compliance modules), you should ensure that the modules are rendered on the client side.
 
 ## Cache configuration
 
