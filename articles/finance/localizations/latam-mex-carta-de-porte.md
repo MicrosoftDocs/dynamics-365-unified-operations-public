@@ -157,7 +157,7 @@ Follow these steps to enter RFC numbers, registration numbers, and license infor
 
 ## Hazardous materials
 
-If the company transports hazardous materials, enable the **Hazardous materials product information and shipping documentation** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+If the company transports hazardous materials, enable the **Hazardous materials product information and shipping documentation** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 After you enable the feature, follow these steps to enter additional hazardous material information.
 
