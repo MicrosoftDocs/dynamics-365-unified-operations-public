@@ -42,13 +42,13 @@ This topic provides links to documentation resources for United Kingdom.
 - Making Tax Digital (MTD) for VAT
   - [Making Tax Digital (MTD) VAT return submission in the United Kingdom](emea-gbr-mtd-vat-integration.md)
   - [Prepare your environment to interoperate with HMRC's MTD VAT web service](emea-gbr-mtd-vat-integration-setup.md)
-  - [Authorize your Finance environment to interoperate with HMRC's MTD web service](emea-gbr-mtd-vat-integration-authorization.md) 
-  - [Test interoperation with the MTD VAT sandbox](emea-gbr-mtd-vat-integration-sandbox.md)
-  - [Submit a VAT return to HMRC's MTD web service](emea-gbr-mtd-vat-integration-submission.md)
   - [Checklist for Electronic messages setup for MTD VAT](emea-gbr-mtd-vat-integration-em-setup-checklist.md)
-  - [Generate a VAT declaration in paper format (VAT 100 report)](emea-gbr-mtd-vat-integration-vat100.md)
-  - [VAT setup details for VAT declarations in the United Kingdom](emea-gbr-mtd-vat-integration-declaration.md )
+  - [Test interoperation with the MTD VAT sandbox](emea-gbr-mtd-vat-integration-sandbox.md)
+  - [Authorize your Finance environment to interoperate with HMRC's MTD web service](emea-gbr-mtd-vat-integration-authorization.md) 
+  - [Submit a VAT return to HMRC's MTD web service](emea-gbr-mtd-vat-integration-submission.md)
   - [Retrieve information about VAT payments and liabilities from HMRC](emea-gbr-mtd-vat-integration-optional-scenarios.md)
+  - [VAT setup details for VAT declarations in the United Kingdom](emea-gbr-mtd-vat-integration-declaration.md )
+  - [Generate a VAT declaration in paper format (VAT 100 report)](emea-gbr-mtd-vat-integration-vat100.md)
 - [Statistics on payment practices report](emea-gbr-statistics-on-payment-practices-report.md)
 - [Finance (Globalization) guidance about Brexit impact](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 
