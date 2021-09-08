@@ -4,7 +4,7 @@
 title: Waybill (Carta de Porte) complement
 description: This topic explains how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement.
 author: v-oloski
-ms.date: 09/07/2021
+ms.date: 09/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -167,8 +167,9 @@ After you enable the feature, follow these steps to enter additional hazardous m
 4. On the **Item hazardous materials** page, on the header, set the **Regulation code** field. 
 5. On the **Material management** FastTab, in the **Packing group** section, set the **Packing group** field.
 
-> [!NOTE] To select for **Regulaction code** and **Packing group** values, you should first fill in the **Hazardous material regulation** and **Hazardous material packing groups** tables in accordence with the SAT catalogs **c_MaterialPeligroso** and **c_TipoEmbalaje** (Product information management \> Setup \> Hazardous material shipping documentation).    
+> [!NOTE] 
+> To select values for the **Regulation code** and **Packing group** fields, first fill in the **Hazardous material regulation** and **Hazardous material packing groups** tables in accordence with the SAT catalogs **c_MaterialPeligroso** and **c_TipoEmbalaje** which are located under **Product information management** > **Setup** > **Hazardous material shipping documentation**.    
 
-![Item hazardous materials page.](media/latam-mx-hazardous2.png)
+    ![Item hazardous materials page.](media/latam-mx-hazardous2.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
