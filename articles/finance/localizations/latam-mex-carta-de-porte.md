@@ -170,6 +170,6 @@ After you enable the feature, follow these steps to enter additional hazardous m
 > [!NOTE] 
 > To select values for the **Regulation code** and **Packing group** fields, first fill in the **Hazardous material regulation** and **Hazardous material packing groups** tables in accordence with the SAT catalogs **c_MaterialPeligroso** and **c_TipoEmbalaje** which are located under **Product information management** > **Setup** > **Hazardous material shipping documentation**.    
 
-    ![Item hazardous materials page.](media/latam-mx-hazardous2.png)
+   ![Item hazardous materials page.](media/latam-mx-hazardous2.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
