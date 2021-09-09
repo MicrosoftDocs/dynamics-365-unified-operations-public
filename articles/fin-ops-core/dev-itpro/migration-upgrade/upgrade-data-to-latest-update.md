@@ -4,7 +4,7 @@
 title: Upgrade data in development or demo environments
 description: This topic provides instructions for upgrading your Finance and Operations application release.
 author: laneswenka
-ms.date: 06/29/2020
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
