@@ -69,7 +69,10 @@ The following illustration shows the class structure of the extension.
     [RoutePrefix("SimpleExtension")]
     ```
 
-8. Add the **BindEntity** attribute on the controller class. This attribute is required if you're creating a new controller and exposing an entity.
+> [!NOTE]
+> Adding RoutePrefix attribute is optional, if you add RoutePrefix attribute you must add BindEntity attribute with only custom entity. Adding out of the box RoutePrefix such as Customers, Products etc. and binding out of the box entities like Product, Cart, Customer is not supported, add only custom RoutePrefix and Custom entity.
+
+8. Add the **BindEntity** attribute on the controller class. This step is optional, add only if you're adding the RoutePrefix and returning a custom entity.
 
 ```csharp
 [BindEntity(typeof(SimpleEntity))]
