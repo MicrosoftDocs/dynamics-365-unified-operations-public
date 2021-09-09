@@ -199,7 +199,7 @@ In **Solution Explorer**, in the FleetManagement Discounts project, double-click
 This class contains event handler implementations that subscribe to the **Updating** and **Inserting** events of the **FMRentalCharge** table. Microsoft Dynamics AX introduces data events that can occur on tables and other types. You can subscribe to data events of a table, enabling your application to extend business logic without overlayering base X++ code. Later in this tutorial, you'll see how easy it is to subscribe to table events.
 
 > [!NOTE]
-> Notice that this class is an extension class (indicated by the \_Extension suffix). You can author event handlers in any class, this class does not need to be an extension class. Extension classes are needed in order to create extension methods. For more details on extension methods, refer to the "Extension methods" section of the [X++ debugger features](../dev-tools/new-x-debugger-features.md) article.
+> Notice that this class is an extension class (indicated by the \_Extension suffix). You can author event handlers in any class, this class does not need to be an extension class. Extension classes are needed in order to create extension methods. For more details on extension methods, refer to the "Extension methods" section of the [Extension methods](../dev-ref/xpp-classes-methods.md#extension-methods) article.
 
 ### View the plug-in classes
 
@@ -465,5 +465,5 @@ To deploy your extension to another environment, for example, a test, pre-produc
 
 [Download FMLab sample code](https://github.com/Microsoft/FMLab)
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

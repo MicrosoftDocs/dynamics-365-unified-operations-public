@@ -4,7 +4,7 @@
 title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: PeterRFriis
-ms.date: 04/28/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -1059,7 +1059,7 @@ If you receive an "Unable to find certificate" error when you run Test-D365FOCon
 
 If the client and server can't communicate because they don't have a common algorithm, verify that the certificates that are created use the specified provider, as explained in the "Plan and acquire your certificates" section of the appropriate setup and deployment topic for your environment:
 
-- [Platform udpate 41 and later](setup-deploy-on-premises-pu41.md#plancert)
+- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#plancert)
 - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#plancert)
 
 ## Find a list of group managed service accounts
@@ -1106,7 +1106,7 @@ This issue occurs because AOS users aren't in the local administrator group, and
 
 1. Add AOS users as local admins, as described in the "Join VMs to the domain" section of the appropriate setup and deployment topic for your environment:
 
-    - [Platform udpate 41 and later](setup-deploy-on-premises-pu41.md#joindomain)
+    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#joindomain)
     - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#joindomain)
  
 2. Run the **Config-PreReq** script on all the AOS machines.
@@ -1575,5 +1575,80 @@ System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name,
 
 **Resolution:** Install SSMS version 17.9.1.
 
+## Report deployment fails on version 10.0.19 and later
+
+**Issue:** During deployment, the report deployment operation fails. In the report deployment log, you will see the following error.
+
+```stacktrace
+Publish-AXReport : Value cannot be null.
+Parameter name: The value supplied for parameter 'serviceName' cannot be null or empty.
+At C:\ProgramData\SF\AOS12\Fabric\work\Applications\AXSFType_App110\AXSF.Scripts.1.0.20210617153432\Reporting.psm1:492 char:9
++         Publish-AXReport -MaxDegreeOfParallelism 1 -ErrorAction Conti ...
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++ CategoryInfo          : OpenError: (Microsoft.Dynam...shReportCommand:PublishReportCommand) [Publish-AXReport], ArgumentNullException
++ FullyQualifiedErrorId : Value cannot be null.
+Parameter name: The value supplied for parameter 'serviceName' cannot be null or empty.
+Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
+```
+
+**Reason:** The AOS needs to retrieve the list of services running on the BI node to find the version of SSRS that is currently installed. The account that the AOS runs under does not have the appropriate permissions to get the list of services, so it fails and is unable to retrieve the serviceName.
+
+**Resolution:** Version 2.11.0 of the infrastructure scripts, available from the Shared asset library in LCS, has been released to propagate these permissions so the serviceName can be retrieved.
+
+#### Automatically add these permissions:
+1. Download the latest infrastructure scripts from the Shared asset library in LCS.
+1. Migrate your ConfigTemplate.xml if needed.
+1. Run the following commands in PowerShell with Administrator privileges:
+
+    ```powershell
+    .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
+    
+1. Copy the generated VM folder to the BI node if not using the remoting scripts.
+1. Run the following command in PowerShell with Administrator privileges.
+
+    ```powershell
+    # If remoting, execute
+    # .\Complete-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
+    .\Complete-PreReqs.ps1
+    ```
+    
+1. Run the following command in PowerShell with Administrator privileges to verify the setup.
+
+    ```powershell
+    # If Remoting, execute
+    # .\Test-D365FOConfiguration-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Test-D365FOConfiguration.ps1
+    ```
+
+> [!IMPORTANT]
+> If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see [Step 20. Tear down CredSSP, if remoting was used](./setup-deploy-on-premises-pu41.md#teardowncredssp).
+
+#### Manually add these permissions:
+1. Go to your BI node.
+1. Open lusrmgr.msc (Local Users and Groups).
+1. Create a new group called **Dynamics365ReadServices**.
+1. Add the account that your AOS runs under (such as axserviceuser, svc-AXSF$) to the group you created above.
+1. Download the latest infrastructure scripts from the Shared asset library in LCS.
+1. Copy the infrastructure scripts to your BI (SSRS) node.
+1. Create a file scmgroups.csv with the following content.
+
+    ```text
+    "Name"
+    "Dynamics365ReadServices"
+    ```
+    
+1. Run the following command in PowerShell with Administrator privileges.
+
+    ```powershell
+    .\Set-ServiceControlManagerPermissions.ps1
+    ```
+    
+1. Run the following command in Powershell with Administrator privileges to verify the setup.
+
+    ```powershell
+    .\Set-ServiceControlManagerPermissions.ps1 -Test
+    ```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

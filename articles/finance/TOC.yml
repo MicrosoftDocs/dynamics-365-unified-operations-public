@@ -6,6 +6,8 @@
       href: index.md
     - name: Get started
       items:
+      - name: Service description
+        href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/finance/toc.json
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
       - name: Sign up for preview subscriptions
@@ -72,6 +74,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.22 (November 2021)
+            href: get-started/whats-new-changed-10-0-22.md
           - name: Finance 10.0.21 (October 2021)
             href: get-started/whats-new-changed-10-0-21.md
           - name: Finance 10.0.20 (August 2021)
@@ -1168,8 +1172,12 @@
           href: general-ledger/rvrs-settgs-on-jrnls-lines.md
         - name: Year-end close missing opening balances
           href: general-ledger/yec-mssng-open-blnces.md
+        - name: How do I set up balancing financial dimensions?
+          href: general-ledger/set-up-balance-dimensions.md
         - name: Open financial journal templates in Office
           href: general-ledger/open-fincl-jrnls-in-office.md
+        - name: Default financial dimensions on financial journals
+          href: general-ledger/dimension-default-values.md
         - name: Journal posting failure due to imbalance
           href: general-ledger/posting-fail-imbalance.md
         - name: Why can't I reverse this transaction?
@@ -1472,17 +1480,17 @@
         items:
         - name: Globalization services overview
           href: localizations/globalization-services-overview.md?toc=/dynamics365/finance/toc.json
-        - name: Regulatory configuration service
+        - name: Regulatory configuration service (RCS)
           items:
-          - name: Regulatory configuration service overview
+          - name: Regulatory configuration service (RCS) overview
             href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
-          - name: Regulatory configuration service - Globalization features
+          - name: Regulatory configuration service (RCS) - Globalization features
             href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
-          - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
+          - name: Create ER configurations in Regulatory configuration service (RCS) and upload to the Global repository
             href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
-          - name: Regulatory Configuration Service - Delete an RCS environment
+          - name: Regulatory Configuration Service (RCS) - Delete an RCS environment
             href: localizations/rcs-delete-environment.md
-          - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
+          - name: Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation
             href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
           - name: Download ER configurations to Finance
             items: 
@@ -1550,6 +1558,8 @@
               href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
           - name: Determination
             items: 
+            - name: Tax calculation data model
+              href: localizations/tax-calculation-data-model-overview.md
             - name: Sales tax applicability and sales tax group determination logic
               href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
           - name: Calculation
@@ -2964,6 +2974,8 @@
           href: localizations/tasks/mx-00010-e-invoicing-cfdi.md
         - name: Electronic invoices
           href: localizations/latam-mex-CFDI-electronic-invoices.md
+        - name: Waybill (Carta de Porte) complement (version 1.0)
+          href: localizations/latam-mex-carta-de-porte.md
         - name: Electronic ledger accounting statements
           href: localizations/latam-mex-electronic-ledger-accounting-statements.md
         - name: Enter tax registration IDs for Mexican legal entities
@@ -2988,6 +3000,8 @@
         items:
         - name: Oman overview
           href: localizations/oman.md
+        - name: VAT declaration for Oman (OM-00003)
+          href: localizations/emea-oma-vat-declaration.md
       - name: Netherlands
         items:
         - name: Netherlands overview
@@ -3430,6 +3444,28 @@
             href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
           - name: Set up sales tax groups for reverse charge VAT
             href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md      
+        - name: United Kingdom reporting
+          items:
+          - name: Making Tax Digital (MTD) for VAT
+            items: 
+            - name: Making Tax Digital (MTD) VAT return submission in the United Kingdom 
+              href: localizations/emea-gbr-mtd-vat-integration.md
+            - name: Prepare your environment to interoperate with HMRC's MTD VAT web service
+              href: localizations/emea-gbr-mtd-vat-integration-setup.md
+            - name: Checklist for Electronic messages setup for MTD VAT
+              href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+            - name: Test interoperation with the MTD VAT sandbox
+              href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+            - name: Authorize your Finance environment to interoperate with HMRC's MTD web servic
+              href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+            - name: Submit a VAT return to HMRC's MTD web service
+              href: localizations/emea-gbr-mtd-vat-integration-submission.md
+            - name: Retrieve information about VAT payments and liabilities from HMRC
+              href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+            - name: VAT setup details for VAT declarations in the United Kingdom
+              href: localizations/emea-gbr-mtd-vat-integration-declaration.md 
+            - name: Generate a VAT declaration in paper format (VAT 100 report)
+              href: localizations/emea-gbr-mtd-vat-integration-vat100.md
         - name: Statistics on payment practices report
           href: localizations/emea-gbr-statistics-on-payment-practices-report.md
       - name: United States
@@ -4157,6 +4193,30 @@
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
           - name: Import configurations (LBD)
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
+        - name: Regulatory configuration service (RCS)
+          items:
+          - name: Regulatory configuration service (RCS) overview
+            href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
+          - name: Download ER configurations to Finance
+            items: 
+            - name: Download configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+            - name: Import configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+          - name: Global repository (GR)
+            items: 
+            - name: Import configurations from GR
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Import updated versions of ER configurations
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Enhanced filtering to find configurations in GR
+              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+            - name: Upload configurations to GR
+              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+            - name: Share configurations in GR  
+              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json  
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
