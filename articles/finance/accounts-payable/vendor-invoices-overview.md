@@ -146,7 +146,7 @@ When you generate this report, the following default parameters are displayed. Y
 
 - **Exclude future settlement**: Select this check box to exclude transactions that are settled after date in **Open transactions per**.
 
-- **Open transactions per**: Enter a date to include transactions that are open on that date. If you don’t enter a date, the date is set to the system date by default. The next time the report is run, date that was last entered will be default entry in this field.
+- **Open transactions per**: Enter a date to include transactions that are open on that date. If you don’t enter a date, the date is set to the maximum date by default. (The maximum date is the latest date the system will accept, which is December 31, 2154.) The next time the report is run, date that was last entered will be the default entry in this field.
 
 You can further restrict the transaction data that’s included by using filters under the **Record to include** field. 
 
