@@ -45,7 +45,8 @@ Electronic reporting (ER) text functions can be used to perform operations on da
 | [Left](er-functions-text-left.md) | This function returns a *String* value that presents the specified number of characters from the start of the specified string. |
 | [Len](er-functions-text-len.md) | This function returns an *Integer* value that presents the number of characters in the specified string. |
 | [Lower](er-functions-text-lower.md) | This function returns the specified text string as a *String* value after it has been converted to lowercase letters. |
-| [Mid](er-functions-text-mid.md) | This function returns a *String* value that presents the specified number of characters from the specified string, starting at the specified position. |
+| [Mid](er-functions-text-mid.md) | This function returns a *[String](er-formula-supported-data-types-primitive.md#string)* value that presents the specified number of characters from the specified string, starting at the specified position. |
+| [NewGUID](er-functions-text-newguid.md) | This function returns a newly generated *[GUID](er-formula-supported-data-types-primitive.md#guid)* value. |
 | [NumberFormat](er-functions-text-numberformat.md) | This function returns a *String* value that presents the specified number in the specified format and in an optionally specified culture. |
 | [NumeralsToText](er-functions-text-numeralstotext.md) | This function returns the specified number as a *String* value after it has been spelled out (that is, converted to text strings) in the specified language. |
 | [PadLeft](er-functions-text-padleft.md) | This function returns a *String* value of the specified length, where the start of the specified string is padded with one or more instances of the specified characters. |
