@@ -2,47 +2,45 @@
 # required metadata
 
 title: Delay exact price and discount calculation
-description: This topic describes the delayed price calculation capability in POS and call center.
-author: hhaines
-
-ms.date: 9/9/2021
-ms.topic: shajain
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: shajain
-ms.search.validFrom: 
-ms.dyn365.ops.version: 10.0.22
+description: This topic describes the delayed price calculation capability in Microsoft Dynamics 365 Commerce POS and call center.
+author: boycezhu
+ms.date: 09/09/2021
+ms.topic: article
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgri
+ms.search.region: Global
+ms.author: boycez
+ms.search.validFrom: 2017-06-20
 ---
 
 # Delay exact price calculation for improved performance
+  
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 Commerce supports creation of discounts such as Mix and match, Threshold, and Quantity discounts (aka multiline discounts) which are applied when more than one sales line of the sales order or sales quote are combined together. So, whenever a new line is added to the order, the pricing engine evaluates the entire cart to find out if any of these multiline discounts can be applied. Thus, as the sales order grows, adding a new line to the order gets slower. It is very common for B2B companies and some B2C companies to have large order sizes and thus the order taking gets more time consuming for such orders. However, for such large orders, usually it is more important to enable the user to add the items quickly rather than showing the exact price and discount for the order after each item is added to the cart. But, the user should be allowed to view the exact total whenever they want or before finalizing the order. The capability for delaying the exact price and discount calculation has been available in POS for many years, but with 10.0.22 release, we have made it available for call center as well.
+This topic describes the delayed price calculation capability in Microsoft Dynamics 365 Commerce point of sale (POS) and call center.
 
-**Enable delayed price and discount calculation in POS:**
-1. Navigate to the functionality profile associated to the physical store and expand the "**Amount**" fast tab.
-1. Enable the configuration "**Manually calculate multiple item discounts**"
-1. Open the screen layout designer for the registers where this delayed calculation should be enabled
-1. Add a button for "**Calculate total**" operation to the desired button grid
-1. Run the **1070** and **1090** jobs
+Dynamics 365 Commerce supports the creation of multiline discounts such as mix and match, threshold, and quantity discounts that are applied when more than one sales line of a sales order or sales quote are combined together. Whenever a new line is added to an order, the Commerce pricing engine evaluates the entire cart to detect if any of these multiline discounts can be applied. A result of this is that as a sales order grows, adding a new line to the order slows order processing. 
+
+It is very common for business-to-business (B2B) companies and some business-to-consumer (B2C) companies to have large order sizes and thus the order taking gets more time consuming for such orders. However, for such large orders usually it is more important to enable the user to add the items quickly rather than showing the exact price and discount for the order after each item is added to the cart. But, the user should be allowed to view the exact total whenever they want or before finalizing the order. The capability for delaying the exact price and discount calculation has been available in POS for many years, but with 10.0.22 release, we have made it available for call center as well.
+
+## Enable delayed price and discount calculation for POS
+
+To enable delayed price and discount calculation in POS, follow these steps.
+
+1. In Commerce headquarters, go to the functionality profile associated with the physical store.
+1. Select the "**Amount**" FastTab to expand it.
+1. Enable the configuration **Manually calculate multiple item discounts**.
+1. Open the screen layout designer for the registers where the delayed calculation should be enabled.
+1. Add a button for the **Calculate total** operation to the desired button grid.
+1. Run the **1070** and **1090** jobs.
 
 With the above setup, when the items are added to the transaction, then the multiline discounts are not calculated unless the cashier presses the "**Calculate total**" button. The system will not allow the cashier to capture payment unless the cashier presses the above button. However, once this button is pressed for a transaction, then for that transaction, the cashier does not need to press it again even if additional items have been added to the cart. This is because, after this button is pressed, the multiline discounts will always be calculated.
 
-**Enable delayed price and discount calculation in Call center:**
+## Enable delayed price and discount calculation for call center
 
+To enable delayed price and discount calculation in call center, follow these steps.
+
+1. In Commerce headquarters, go to **Workspaces \> Feature management**.
 1. Navigate to the Feature management workspace and enable the feature **"Prevent unintentional price calculation for commerce order"**. This is a pre-requisite for enabling the delayed price and discount calculation feature. Note: This feature is enabled by default for new deployments.
 1. Navigate to the "**Commerce parameters** -> **Prices and discounts** -> **Miscellaneous**" section and enable the configuration "**Manually calculate multi-line prices and discounts**"
 
