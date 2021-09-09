@@ -1478,6 +1478,8 @@
       items:
       - name: Globalization resources
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
+      - name: GST declaration form GST101A for New Zealand (NZ-00003)
+        href: localizations/apac-nzl-gst-declaration.md
       - name: Globalization services
         items:
         - name: Globalization services overview
