@@ -4,7 +4,7 @@
 title: List of ER functions in the Date and time category
 description: This topic provides information about the date and time functions that are supported in Electronic reporting (ER).
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 09/09/2021
 ms.prod: 
 ms.technology: 
 
