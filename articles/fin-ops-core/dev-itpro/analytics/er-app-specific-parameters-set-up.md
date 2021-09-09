@@ -4,7 +4,7 @@
 title: Set up the parameters of an ER format per legal entity
 description: This topic explains how you can set up the parameters of an Electronic reporting (ER) format per legal entity.
 author: NickSelin
-ms.date: 08/25/2021
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
