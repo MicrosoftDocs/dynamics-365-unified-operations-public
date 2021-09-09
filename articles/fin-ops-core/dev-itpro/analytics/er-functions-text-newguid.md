@@ -4,7 +4,7 @@
 title: NEWGUID ER function
 description: This topic provides information about how the NEWGUID Electronic reporting (ER) function is used.
 author: NickSelin
-ms.date: 9/8/2021
+ms.date: 09/09/2021
 ms.prod: 
 ms.technology: 
 
