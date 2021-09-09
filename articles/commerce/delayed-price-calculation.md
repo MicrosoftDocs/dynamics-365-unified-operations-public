@@ -29,24 +29,26 @@ To enable delayed price and discount calculation in POS, follow these steps.
 
 1. In Commerce headquarters, go to the functionality profile associated with the physical store.
 1. Select the "**Amount**" FastTab to expand it.
-1. Enable the configuration **Manually calculate multiple item discounts**.
+1. Enable the **Manually calculate multiple item discounts** configuration.
 1. Open the screen layout designer for the registers where the delayed calculation should be enabled.
 1. Add a button for the **Calculate total** operation to the desired button grid.
 1. Run the **1070** and **1090** jobs.
 
-With the above setup, when the items are added to the transaction, then the multiline discounts are not calculated unless the cashier presses the "**Calculate total**" button. The system will not allow the cashier to capture payment unless the cashier presses the above button. However, once this button is pressed for a transaction, then for that transaction, the cashier does not need to press it again even if additional items have been added to the cart. This is because, after this button is pressed, the multiline discounts will always be calculated.
+With the setup above, multiline discounts are not calculated when items are added to the transaction unless the cashier selects the **Calculate total** button. The system will not allow the cashier to capture payment until the **Calculate total** button is selected. However, once the **Calculate total** button is selected for a transaction, multiline discounts will always be calculated for that transaction and the cashier will not need to select it again even if additional items are added to the cart.
 
 ## Enable delayed price and discount calculation for call center
 
 To enable delayed price and discount calculation in call center, follow these steps.
 
 1. In Commerce headquarters, go to **Workspaces \> Feature management**.
-1. Navigate to the Feature management workspace and enable the feature **"Prevent unintentional price calculation for commerce order"**. This is a pre-requisite for enabling the delayed price and discount calculation feature. Note: This feature is enabled by default for new deployments.
-1. Navigate to the "**Commerce parameters** -> **Prices and discounts** -> **Miscellaneous**" section and enable the configuration "**Manually calculate multi-line prices and discounts**"
+1. Enable the **Prevent unintentional price calculation for commerce order** feature. This is a prerequisite for enabling the delayed price and discount calculation feature. 
+    > [!NOTE]
+    > This feature is enabled by default for new deployments.
+1. Go to **Commerce parameters \> Prices and discounts \> Miscellaneous** and enable the **Manually calculate multi-line prices and discounts** configuration.
 
-With this feature enabled, the exact price and discount calculation for the sales order and sales quote being created or edited in the call center would be delayed. The pricing engine will only consider the sales line that is being added or edited and will ignore the other sales lines, unless the user presses one of the three buttons i.e. **Recalculate**, **Totals** or **Complete**. This means unless one of these buttons are pressed, the net amount for an item includes the price calculation and simple discounts i.e. discount percentage or amount off on an individual item, but the Mix and match, Threshold and Quantity discounts are not applied. Whenever the users want to view the exact price and discounts, then they can press one of the buttons mentioned above. 
+Once the **Prevent unintentional price calculation for commerce order** feature is enabled, the exact price and discount calculation for the sales order and sales quote being created or edited in the call center will be delayed. The pricing engine will only consider the sales line that is being added or edited and will ignore other sales lines. The net amount for an item will include the price calculation and simple discounts (discount percentage or amount off on an individual item) but mix and match, threshold, and quantity discounts will not be applied. When call center users want to view the exact price including all discounts, they can select one of the three buttons: **Recalculate**, **Totals**, or **Complete**. 
 
 > [!NOTE]
-> For call center orders, the system shows a warning message indicating that the user must remember to press one of the above buttons for exact price and discount calculation. For orders where the "Complete" button is displayed, there is no way for the users to miss calculating the exact price and discount as the Complete button must be pressed to complete the order capture. However, for orders where the "Complete" button is not available, there is no action that indicates the completion of the order capture, so it is the responsibility of the user to press one of the above mentioned buttons before finishing the order capture.
+> For call center orders, the system displays a warning message indicating that the user must remember to select the **Recalculate**, **Totals**, or **Complete** button for exact price and discount calculation. For orders where the **Complete** button is displayed, there is no way for the users to miss calculating the exact price and discount because the **Complete** button must be selected to complete the order capture. For orders where the **Complete** button is not available, there is no action that indicates the completion of the order capture, so it is the responsibility of the call center user to select either the **Recalculate** or **Totals** button before completing the order capture.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
