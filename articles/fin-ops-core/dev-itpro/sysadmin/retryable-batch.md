@@ -91,12 +91,12 @@ A batch job that has a smaller transaction size reduces the amount of work that 
 
 In this context, *idempotent* means that a retry won't change or affect the overall result. For example, something should be done only one time and won't be done more than one time. Therefore, something that is done in the original run won't be done again during the retry.
 
-### What is max retry BatchRetryable supports and retry interval ?
+### What is the maximum number of retries that BatchRetryable supports, and what is the retry interval?
 
-MaxRetryCount is the configured number of retries that will be applied to a task irrespective of the type of the exception. If a task fails, the batch platform evaluates the number of times it has been retried and if its lesser than configured value, task is put back into ready state to be picked up again.
-BatchRetryable starts from 5 seconds and stops retry after interval time reaches 5 minutes. (Interval time increases as like 5,8,16,32...)
+**MaxRetryCount** specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **MaxRetryCount**, the task is put back into a ready state so that it can be picked up again.
 
-### Can I make changes to maximum retry and retry interval ?
+The **BatchRetryable** interface starts after five seconds and stops retrying after the interval time reaches five minutes. (Interval time increases in the following way: 5, 8, 16, 32, and so on.)
 
-BatchRetryable feature allows to handle SQL connection transient issue and mainly controlled by framework. Customer cannot update (max number of retry count, interval of retry) settings for BatchRetryable.
+### Can I change the maximum number of retries and the retry interval?
 
+The **BatchRetryable** interface enables transient SQL connection issues to be handled. It's mainly controlled by the framework. Customers can't update setting for **BatchRetryable**, such as the maximum number of retries and the retry interval.
