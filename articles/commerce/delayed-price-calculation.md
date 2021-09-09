@@ -5,7 +5,7 @@ title: Delay exact price and discount calculation
 description: This topic describes the delayed price calculation capability in POS and call center.
 author: hhaines
 
-ms.date: 11/05/2021
+ms.date: 9/9/2021
 ms.topic: shajain
 ms.prod: 
 ms.technology: 
