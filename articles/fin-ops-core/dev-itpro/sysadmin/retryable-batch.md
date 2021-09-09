@@ -90,3 +90,13 @@ A batch job that has a smaller transaction size reduces the amount of work that 
 ### What does idempotent mean for a batch job?
 
 In this context, *idempotent* means that a retry won't change or affect the overall result. For example, something should be done only one time and won't be done more than one time. Therefore, something that is done in the original run won't be done again during the retry.
+
+### What is max retry BatchRetryable supports and retry interval ?
+
+MaxRetryCount is the configured number of retries that will be applied to a task irrespective of the type of the exception. If a task fails, the batch platform evaluates the number of times it has been retried and if its lesser than configured value, task is put back into ready state to be picked up again.
+BatchRetryable starts from 5 seconds and stops retry after interval time reaches 5 minutes. (Interval time increases as like 5,8,16,32...)
+
+### Can I make changes to maximum retry and retry interval ?
+
+BatchRetryable feature allows to handle SQL connection transient issue and mainly controlled by framework. Customer cannot update (max number of retry count, interval of retry) settings for BatchRetryable.
+
