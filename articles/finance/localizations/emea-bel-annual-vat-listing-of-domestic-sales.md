@@ -54,8 +54,8 @@ The following fields are shown on the **Invoice turnover** report:
 
 Import the latest version of the following Electronic reporting (ER) configurations:
 
-    - Invoice turnover report model
-    - Invoice turnover report (BE)
+   - Invoice turnover report model
+   - Invoice turnover report (BE)
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
