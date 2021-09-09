@@ -27,7 +27,7 @@ The capability for delaying exact price and discount calculation has long been a
 
 ## Enable delayed price and discount calculation for POS
 
-To enable delayed price and discount calculation in POS, follow these steps.
+To enable delayed price and discount calculation for POS, follow these steps.
 
 1. In Commerce headquarters, go to the functionality profile associated with the physical store.
 1. Select the "**Amount**" FastTab to expand it.
@@ -40,13 +40,13 @@ With the setup above, multiline discounts are not calculated when items are adde
 
 ## Enable delayed price and discount calculation for call center
 
-To enable delayed price and discount calculation in call center, follow these steps.
+To enable delayed price and discount calculation for call center, follow these steps.
 
 1. In Commerce headquarters, go to **Workspaces \> Feature management**.
 1. Enable the **Prevent unintentional price calculation for commerce order** feature. This is a prerequisite for enabling the delayed price and discount calculation capability. 
     > [!NOTE]
     > This feature is enabled by default for new deployments.
-1. Go to **Commerce parameters \> Prices and discounts \>. 
+1. Go to **Commerce parameters \> Prices and discounts**. 
 1. In the **Miscellaneous** section, enable the **Manually calculate multi-line prices and discounts** configuration.
 
 Once the delayed price and discount calculation capability is enabled, the exact price and discount calculation for the sales order and sales quote being created or edited in the call center will be delayed. The pricing engine will only consider the sales line that is being added or edited and will ignore other sales lines. The net amount for an item includes the price calculation and simple discounts (discount percentage or amount off on an individual item) but mix and match, threshold, and quantity discounts will not be applied. When call center users want to view the exact price including all discounts, they can select one of three buttons: **Recalculate**, **Totals**, or **Complete**. 
