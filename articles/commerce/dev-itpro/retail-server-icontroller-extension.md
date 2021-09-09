@@ -4,7 +4,7 @@
 title: Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
 description: This topic explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
 author: mugunthanm
-ms.date: 02/17/2021
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -70,9 +70,9 @@ The following illustration shows the class structure of the extension.
     ```
 
 > [!NOTE]
-> Adding RoutePrefix attribute is optional, if you add RoutePrefix attribute you must add BindEntity attribute with only custom entity. Adding out of the box RoutePrefix such as Customers, Products etc. and binding out of the box entities like Product, Cart, Customer is not supported, add only custom RoutePrefix and Custom entity.
+> Adding RoutePrefix attribute is optional. If you add the **RoutePrefix** attribute, you must add the **BindEntity** attribute with only the custom entity. Adding out of the box **RoutePrefix** (for example, Customers and Product) and binding out of the box entities (for example, Product, Cart, and Customer) is not supported. You can add only custom **RoutePrefix** and **Custom** entity.
 
-8. Add the **BindEntity** attribute on the controller class. This step is optional, add only if you're adding the RoutePrefix and returning a custom entity.
+8. Add the **BindEntity** attribute on the controller class. This step is optional. Add the attribute only if you're adding the **RoutePrefix** and returning a custom entity.
 
 ```csharp
 [BindEntity(typeof(SimpleEntity))]
