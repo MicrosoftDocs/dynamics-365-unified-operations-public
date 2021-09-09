@@ -1,6 +1,6 @@
 ---
-title: Integrate the POS with a new hardware device
-description: This topic explains how to integrate the point of sale (POS) with a new hardware device.
+title: Integrate the POS with a new hardware device and generate extension installer
+description: This topic explains how to integrate the point of sale (POS) with a new hardware device and generate extension installer.
 author: mugunthanm
 ms.date: 07/27/2020
 ms.topic: article
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to integrate the point of sale (POS) with a new hardware device. 
+This topic explains how to integrate the point of sale (POS) with a new hardware device and generate extension installer. 
 
 To call Hardware station from the POS, you must use a request and a response:
 
@@ -194,50 +194,6 @@ namespace Contoso
 }
 ```
 
-## Sample code for Retail SDK versions before version 10.0.11
-
-```csharp
-namespace Contoso
-{
-    namespace Commerce.HardwareStation.ISVExtensionDevice
-    {
-        using System;
-        using System.Composition;
-        using System.Web.Http;
-        using Microsoft.Dynamics.Commerce.HardwareStation;
-
-        /// <summary>;
-        /// Fiscal register peripheral web API controller class.
-        /// </summary>
-
-        [Export("ISVEXTENSIONDEVICE", typeof(IHardwareStationController))]
-        [Authorize]
-        public class ISVExtensionDeviceController : HardwareStationController, IHardwareStationController
-        {
-            /// <summary>
-            /// Sample.
-            /// </summary>
-            /// <param name="request">Custom request.<param>
-            /// <returns>Result of Custom response.</returns>
-
-            [HttpPost]
-            public CustomResponse Sample(CustomRequest request)
-            {
-                ThrowIf.Null(request, "request");
-                try
-                {
-                    return null;
-                }
-                catch (Exception ex)
-                {
-                    throw ex;
-                }
-            }
-        }
-    }
-}
-```
-
 ## Sample POS code to call the Hardware station extension
 
 From your POS extension, call the Hardware station by using the following pattern.
@@ -249,11 +205,19 @@ let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<Hardw
 return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
 ```
 
-## Generate an extension installer for the shared Hardware station for application release 10.0.18 or later
+### If you are not using the independent POS packaging SDK or sealed HWS installer then follow the steps in [Create deployable packages](retail-sdk/retail-sdk-packaging.md) to generate the package for deployment.
 
-Dynamics 365 Commerce 10.0.18 and later supports sealed installers. You can generate an extension installer separately from the base installer, and the installer can be independently installed and serviced. This will work only if you are using the [sealed self-service installers](enhanced-mass-deployment.md).
+## Package the HWS extension with Modern POS to use local HWS
 
-To generate the sealed extension installer for shared a Hardware station, follow these steps:
+To package the HWS extension with Modern POS to use local HWS (this applicable if you are using POS independent packaging SDK ,application release 10.0.18 or later), the HWS extension must be packaged with the POS, in the modern pos js proj add reference to your HWS project and then use the POS installer project to create extension installer. Check the sample js proj in [Dynamics365Commerce.InStore/src/PosSample/ModernPos/ModernPos.jsproj GitHub repo](https://github.com/microsoft/Dynamics365Commerce.InStore).
+
+If you have only HWS extension, remove all the other unwanted project reference from the sample. ModernPos.jsproj creates the msix installer and then the installer project consumes this and creates the exe installer, HWS extension will be deployed as UWP app extension.
+
+## Generate an extension installer for the Hardware station
+
+Dynamics 365 Commerce 10.0.18 and later supports sealed installers. You can generate an extension installer separately from the base installer, and the installer can be independently installed and serviced. This will work only if you are using the [sealed self-service installers](enhanced-mass-deployment.md). 
+
+To generate the sealed extension installer for the Hardware station, follow these steps:
 
 1. Download the [sample Hardware station installer project](https://github.com/microsoft/Dynamics365Commerce.InStore/tree/release/9.31/src/HardwareStationSample/HardwareStation.Installer) from GitHub and open the **HardwareStation.Installer.csproj** project in Visual Studio.
 2. Add your Hardware station extension project as a project reference to the **HardwareStation.Installer.csproj** installer project. Remove the existing sample project reference from the **HardwareStation.Installer.csproj** project.
@@ -278,9 +242,5 @@ To generate the sealed extension installer for shared a Hardware station, follow
 9. Close POS if it's running.
 10. Open POS and configure it to use the shared Hardware station.
 11. Validate the extension hardware station scenario.
-
-## Generate an extension installer for the shared Hardware station for Dynamics 365 Commerce 10.0.17 or earlier
-
-To generate an extension installer for the shared Hardware station for Dynamics 365 Commerce 10.0.17 or earlier, follow the steps in [Create deployable packages](retail-sdk/retail-sdk-packaging.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
