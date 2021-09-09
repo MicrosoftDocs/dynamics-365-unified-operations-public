@@ -19,6 +19,18 @@ ms.dyn365.ops.version: 10.0.21
 
 This topic lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.0.10.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Added animation when swiping through lists and pages.
+- Text now wraps correctly on the connection error page.
+- Combo boxes without default values now display correctly.
+- Information in the subheader area is now shown only on the full details page.
+- Empty input fields are no longer shown on the details card.
+- Confirmation values are no longer duplicated on the details card.
+- Fixed various issues that caused the system to stop responding.
+
 ## Version 2.0.9.0
 
 This version fixes an issue where the app could stop responding if users page up from the top of a list.
