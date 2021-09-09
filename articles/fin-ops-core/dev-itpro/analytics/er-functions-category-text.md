@@ -4,7 +4,7 @@
 title: List of ER functions of the text category
 description: This topic provides information about the text functions that are supported in Electronic reporting (ER).
 author: NickSelin
-ms.date: 04/02/2020
+ms.date: 09/09/2021
 ms.prod: 
 ms.technology: 
 
