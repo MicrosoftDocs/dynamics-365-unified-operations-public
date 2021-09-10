@@ -450,6 +450,8 @@
           href: accounts-receivable/tasks/review-collections-information.md
         - name: Collections process automation
           href: accounts-receivable/collections-process-automate.md
+        - name: Configure parameters for collections process automation 
+          href: accounts-receivable/config-paramtrs-collections-proc-automate.md
         - name: Credit management setup
           href: accounts-receivable/cm-credit-mgmt-setup.md
         - name: Credit management setup information
@@ -1476,6 +1478,8 @@
       items:
       - name: Globalization resources
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
+      - name: GST declaration form GST101A for New Zealand (NZ-00003)
+        href: localizations/apac-nzl-gst-declaration.md
       - name: Globalization services
         items:
         - name: Globalization services overview
@@ -1668,6 +1672,8 @@
           href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
         - name: Set up and maintain PRODCOM
           href: localizations/emea-bel-prodcom-report.md
+        - name: Annual VAT listing of domestic sales
+          href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
       - name: Brazil
         items:
         - name: Brazil overview
