@@ -105,7 +105,7 @@ The following illustration shows the rule that applies when a voucher has only j
 
 •	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
 
-Otherwise, if the journal amount is debit (positive) ,sales tax direction is Sales Tax Receivable; if the journal amount is credit (negative) ,sales tax direction is Sales Tax Payable.
+Otherwise, if the journal amount is debit (positive), sales tax direction is Sales Tax Receivable; if the journal amount is credit (negative) ,sales tax direction is Sales Tax Payable.
 
 The following diagram illustrates the rule graphically.
 
