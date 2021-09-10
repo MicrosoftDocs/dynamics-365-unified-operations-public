@@ -37,15 +37,23 @@ Before cookies can be stored, the user must give consent. The Dynamics 365 Comme
 
 ##  Cookie APIs
 
-The Dynamics 365 Commerce online SDK provides a set of APIs that access cookies from within the **props.context.request** API, as shown in the following example.
+The Dynamics 365 Commerce online SDK provides a set of APIs that access cookies from within the **props.context.request.cookies** API, as shown in the following interface.
 
 ```typescript
-get<T>(cookieName: string, isEssential?: boolean): ICookieValue<T>;
-set<T>(cookieName: string, cookieValue: T, options?: ICookieSetOptions): void;
-remove(cookieName: string): void;
-isConsentGiven(): boolean;
-setConsentCookie(): void;
-deleteConsentCookie(): void;
+export interface ICookieContext {
+    get<T>(cookieName: string): ICookieValue<T>;
+    set<T>(cookieName: string, cookieValue: T, options?: ICookieSetOptions): void;
+    getCartCookie(): string;
+    setCartCookie(cart: Cart, isAuthenticated: boolean): void;
+    getCheckoutCartCookie(): string;
+    setCheckoutCartCookie(cart: Cart, isAuthenticated: boolean): void;
+    removeCheckoutCartCookie(): void;
+    remove(cookieName: string): void;
+    isConsentGiven(): boolean;
+    setConsentCookie(): void;
+    deleteConsentCookie(): void;
+    getTargetIdCookie(): string;
+}
 ```
 
 ### Obtain user consent
