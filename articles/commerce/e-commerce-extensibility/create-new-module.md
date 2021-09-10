@@ -43,7 +43,7 @@ The following example shows how to create a module that is named **product-featu
 yarn msdyn365 add-module product-feature
 ```
 
-It can take 20 to 30 seconds to create a module and generate all the template files for it. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
+After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
 
 ## Preview a module
 
