@@ -314,7 +314,7 @@ Follow these steps to set up electronic messages to collect data from multiple l
 1. Go to **Workspaces** > **Feature management**.
 2. Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.
 3. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
-4. On the **Populate records action** page, select the line for **FR Populate VAT return records**.
+4. On the **Populate records action** page, select the line for **CH Populate VAT return records**.
 
    In the **Datasources setup** grid, a new **Company** field is available. For existing records, this field shows the identifier of the current legal entity.
 
