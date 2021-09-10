@@ -28,6 +28,7 @@ Planning Optimization results might differ from results from the built-in master
 | Plan copy, delete plan, and plan version cleanup | <p>The following items are disabled under **Master planning \> Master planning \> Maintain plans** in the navigation pane:</p><ul><li>Plan copy</li><li>Delete plan</li><li>Plan version cleanup</li></ul> |
 | Return orders | Return orders aren't considered. |
 | Scheduling related features | For details, see [Scheduling with infinite capacity](infinite-capacity-planning.md#limitations). |
+| Safety stock fulfillment and pegging | Planning Optimization always uses *Today's date + procurement time* option for the **Fulfill minimum** field on the **Item coverage** page. If the procurement time isn't included for safety stock, planned orders that are created for current low on-hand inventory will always be delayed because of the lead time. This behavior can cause significant noise and unwanted planned orders. The *Safety stock* requirement type is not included and not displayed on the **Net requirements** page. However, the **Minimum** field value is still taken into account for planned orders calculation during master planning. |
 | Transport calendars | The value in the **Transport calendar** column on the **Modes of delivery** page is ignored. |
 
 ## Additional resources
