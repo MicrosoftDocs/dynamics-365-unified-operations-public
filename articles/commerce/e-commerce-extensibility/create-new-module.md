@@ -67,7 +67,7 @@ Module names are case-insensitive. We recommended that you use whole words for m
 
 By default all modules are rendered server-side, but deferred loading of some modules may be needed to improve page load performance. For more information, see [Page load data actions](page-load-data-action.md).
 
-Any references to window or document objects that are only available in the context of a browser should be handled appropriately during server-side rendering. This will avoid unexpected rendering behavior such as page flicker and Document Object Model (DOM) mismatch issues. The following SDK utility function can be used for this purpose.
+Any references to window or document objects that are only available in the context of a browser should be handled appropriately during server-side rendering. This will avoid unexpected rendering behavior such as page flicker and Document Object Model (DOM) mismatch issues. The **MsDyn365.isBrowser** SDK utility function can be used for this purpose as shown in the below example.
 
 ```typescript
 import MsDyn365 from '@msdyn365-commerce/core';
