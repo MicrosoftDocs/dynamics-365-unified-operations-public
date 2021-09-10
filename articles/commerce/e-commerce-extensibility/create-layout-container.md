@@ -98,7 +98,7 @@ export default CampaignContainer;
 
 ## Test a layout container module
 
-To test a container module in a local development environment, you must use a [page mock](test-page-mock).
+To test a container module in a local development environment, you must use a [page mock](test-page-mock.md).
 
 The following example shows a sample page mock, campaign-containerMock.json, that you can use for testing. The file is saved in the \\src\\pageMocks directory.
 
