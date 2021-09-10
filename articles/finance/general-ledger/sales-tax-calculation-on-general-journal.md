@@ -3,7 +3,7 @@
 
 title: Sales tax calculation on general journal lines
 description: This topic explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
-author: EricWang
+author: EricWangChen
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
