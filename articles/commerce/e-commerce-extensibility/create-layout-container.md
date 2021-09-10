@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to create, test, and preview a layout container module.
 
-The Microsoft Dynamics 365 Commerce online software development kit (SDK) provides a **yarn msdyn365 add-module MODULE\_NAME** command-line interface (CLI) command. To create a new layout container module, you run this command to create a standard module, replacing **MODULE\_NAME** with the name that you want to give to your module. Then change the **$type** value to **containerModule**.
+The Microsoft Dynamics 365 Commerce online SDK provides an [add-module](cli-command-reference.md#add-module) command-line interface (CLI) command. To create a new layout container module, you run this command to create a standard module, providing a module name that you want to give to your module. Then change the **$type** value to **containerModule** in the module's definition file.
 
 ### Examples
 
@@ -44,7 +44,7 @@ yarn msdyn365 add-module campaign-container
 
 After the command has finished running, open the new module's definition file, campaignContainer.definition.json, and change the **$type** value to **containerModule**.
 
-The following example shows the addition of a **slots** section that contains two slots for this container.
+The following example shows the addition of a **slots** section that contains two slots for this container.  Notice how each slot allows you to define the **allowedTypes** to limit which modules are allowed inside a slot as well as the minimum and maximum number of modules allowed to be inserted into the slot.
 
 ```json
 {
@@ -98,7 +98,7 @@ export default CampaignContainer;
 
 ## Test a layout container module
 
-To test a container module in a local development environment, you must use a page mock.
+To test a container module in a local development environment, you must use a [page mock](test-page-mock).
 
 The following example shows a sample page mock, campaign-containerMock.json, that you can use for testing. The file is saved in the \\src\\pageMocks directory.
 
