@@ -187,5 +187,13 @@ Here are some of the consolidation scenarios that Financial reporting supports:
 ## Generating consolidated financial statements
 For information about scenarios where you might generate consolidate financial statements, see [Generate consolidated financial statements](./generating-consolidated-financial-statements.md).
 
+## Performance enhancement for large consolidations
+Environments with high GL volumes can run slower. To solve for this problem, a solution was created that supports parallel processing with a user defined number of dates.  The key is to add an extension point to the consolidation that returns a container of date ranges where the base implementation would contain one date range for the consolidation start date and end date. There would to be validation that the date ranges don't have gaps or overlap. The date ranges would be used to create parallel batch bundles for each date range and the base implementation would result in one batch bundle per company just like today. The number of date ranges can be customized based for the customer's preference with an extension. This simplifies testing because the impact on the existing code is minimal because there is no date allocation logic which would be as complex to test as it was flexible. The only new tests are the batch bundle creation, the date range validation, and a few date ranges to ensure everything comes together for the final batch task.
+
+This has enhanced the consolidation in General ledger when it is run in a batch. The enhancement improves the performance of the consolidation in General ledger and works by splitting the consolidation into multiple tasks that can be processed in parallel. The default is for each task to process eight days of General ledger activity and an extension point has been added if you need to customize the number tasks that are created.
+
+Turn on this feature in feature management. 
+
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
