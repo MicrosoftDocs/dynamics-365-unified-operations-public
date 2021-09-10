@@ -4,7 +4,7 @@
 title: VAT declaration (Switzerland)
 description: This topic provides information about how to set up and generate a value-added tax declaration for Switzerland.
 author: anasyash
-ms.date: 08/12/2021
+ms.date: 09/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
