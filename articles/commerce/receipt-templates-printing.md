@@ -4,7 +4,7 @@
 title: Set up and design receipt formats
 description: This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Dynamics 365 Commerce includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 author: rubencdelgado
-ms.date: 06/20/2017
+ms.date: 09/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,15 +51,13 @@ This article describes how to modify form layouts to control how receipts, invoi
 
 ## Print images
 
-The receipt designer includes a **Logo** variable that can be used to specify an image to be printed on the receipt. Images that are included in receipts using the **Logo** variable should be monochrome bitmap (.bmp) file types. If a .bmp image is specified in the receipt designer, but is not printing when sent to the printer, one of the following may be the cause:
+The receipt designer includes a **Logo** variable that can be used to specify an image to be printed on the receipt. Images that are included in receipts using the **Logo** variable should be monochrome bitmap (.bmp) file types. If a .bmp image is specified in the receipt designer, but is not printing when sent to the printer, one of the following issues may be the cause:
 
-1. The file size may be too large or the pixel dimensions on the image are not compatible with the printer.  If this occurs, try reducing the image file resolution or dimensions.
+1. The file size may be too large or the pixel dimensions of the image may not compatible with the printer. If this occurs, try reducing the image file resolution or dimensions.
 
-2. Some OPOS printer drivers don’t implement the PrintMemoryBitmap method that hardware station uses to print logo images. Try adding the following flag to the HardwareStation.Extension.config of your dedicated or shared hardware station:
+2. Some Object Linking and Embedding for Point Of Sale (OPOS) printer drivers don't implement the **PrintMemoryBitmap** method that hardware stations use to print logo images. If this occurs, try adding the following flag to the **HardwareStation.Extension.config** file of your dedicated or shared hardware station:
 
 `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
-
-
 
 ## Design a receipt format
 
