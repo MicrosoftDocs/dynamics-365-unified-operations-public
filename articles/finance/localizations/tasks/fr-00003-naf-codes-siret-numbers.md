@@ -35,7 +35,7 @@ This procedure also shows how to enter siret numbers for customers, vendors, and
 
 
 
-This procedure was created using the demo data company FRSI. This functionality is available for legal entities whose primary address is in France. You should be in either
+This procedure was created using the demo data company FRSI. This functionality is available for legal entities whose primary address is in France.
 
 
 ## Set up a NAF code
@@ -73,7 +73,7 @@ This procedure was created using the demo data company FRSI. This functionality 
 7. In the NAF code field, enter or select a value.
 8. Click Save.
 
-## Set up commerce registration, a legal form, and a NAF code for a legal entity
+## Set up commerce registration, a legal form, a NAF code, and a Siret number for a legal entity
 1. Go to Organization administration > Organizations > Legal entities.
 2. Expand the Registration numbers section.
 3. Click Edit.
@@ -83,6 +83,9 @@ This procedure was created using the demo data company FRSI. This functionality 
 6. In the Legal form field, type a value.
     * Enter the legal type of the legal entity, such as non-profit organization, manufacturing company, or financial institution.  
 7. Click Save.
+8. Expand the Tax registration section.
+9. In the Tax registration field enter a Siret number of the legal entity.
+10. Click Save. 
 
 
 
