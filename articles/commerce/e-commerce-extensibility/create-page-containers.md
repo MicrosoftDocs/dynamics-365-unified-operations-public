@@ -33,11 +33,11 @@ This topic describes how to create a page container module in Microsoft Dynamics
 
 A page container is a module that controls the core structure of a page through specific layout regions that are known as *slots*. For example, a page container might have slots that are defined for the header area, main content area, and footer area. A page container can be embedded only at the root of a page, and each page must have only one page container.
 
-Like layout container modules, page container modules can define *named slots* that are exposed in the template authoring tool. Page authors can configure which modules go into each slot, and the container rendering code then controls the layout of those slots. Configuration settings can also be exposed to page authors so that they can further configure the layout.
+Page authors can configure which modules go into each slot, and the container rendering code then controls the layout of those slots. Configuration settings can also be exposed to page authors so that they can further configure the layout.
 
 ## Create a new page container module
 
-The Microsoft Dynamics 365 Commerce online software development kit (SDK) provides a **yarn msdyn365 add-module MODULE\_NAME** command-line interface (CLI) command. To create a page container module, you use this command to create a new module, and then change the **$type** value to **pageModule**.
+The Microsoft Dynamics 365 Commerce online SDK provides an [add-module](cli-command-reference.md#add-module) command-line interface (CLI) command. To create a page container module, you use this command to create a new module, and then change the **$type** value to **pageModule** in the module's definition file.
 
 For example, run the following command to create a module that is named **campaign-page-container**.
 
