@@ -47,17 +47,17 @@ Before you work through the example scenario, you must enable anchoring for the 
 Use the following procedure to enable anchoring for a mobile device menu item.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
-1. In the list pane, select the record that is named *Sales Picking*. If no existing record has this name, create it. Confirm or set the following values for the record: 
+1. In the list pane, select the record that is named *Sales Picking*. If no existing record has this name, create it. Confirm or set the following values for the record:
 
     - **Menu item name:** *Sales Picking*
     - **Title:** *Sales Picking*
     - **Mode:** *Work*
     - **Use existing work:** *Yes*
     - **Directed by:** *User directed*
-    - **Anchoring:** *Yes*
-      By setting this parameter, the system will anchor multiple work order lines together during sales picking.
-    - **Anchor by:** *Load*
-      By setting this parameter, the system will anchor by load.
+    - **Anchoring:** *Yes*  
+      This setting causes the system to anchor multiple work order lines together during sales picking.
+    - **Anchor by:** *Load*  
+      This setting causes the system to anchor by load.
     - **Override target license plate:** *Yes*
     - **Override license plate during put:** *Yes*
     - **Keep work locked by user:** *Yes*
@@ -65,12 +65,12 @@ Use the following procedure to enable anchoring for a mobile device menu item.
 
 ### Set up a work template to allow staging
 
-Use the following procedure to configure a work template to enable staging. This configuration will show the scenario when a worker put items for the order in a staging location. 
+Use the following procedure to configure a work template to enable staging. This configuration will support the scenario where a worker puts items for an order in a staging location.
 
 1. Go to **Warehouse management \> Setup \> Work \> Work templates**.
 1. In the **Work order type** field, select *Sales orders*.
 1. In the grid, select the **61 SO Stage** work template.
-1. In the **Work Template Details** section, make sure that the following lines exist and are configured as shown: 
+1. In the **Work Template Details** section, make sure that the following lines exist and are configured as shown:
 
    - Line 1:
      - **Work type:** *Pick*
@@ -97,13 +97,13 @@ Use the following procedure to configure a work template to enable staging. This
 
 1. On the Action Pane, select **Edit query** to open the query editor.
 
-1. On the **Range** tab, make sure that the following line is configured:
+1. On the **Range** tab, make sure that the following line is present:
     - **Table:** *Temporary work transactions*
     - **Derived Table:** *Temporary work transactions*
     - **Field:** *Warehouse*
     - **Criteria:** *61*
 
-1. On the **Sorting** tab, make sure that the following line is configured:
+1. On the **Sorting** tab, make sure that the following line is present:
     - **Table:** *Temporary work transactions*
     - **Derived Table:** *Temporary work transactions*
     - **Field:** *Shipment ID*
@@ -113,85 +113,93 @@ Use the following procedure to configure a work template to enable staging. This
 1. On the Action Pane, select **Work header breaks**.
 1. On the line where the **Field name** field is set to *Shipment ID*, make sure that the **Group by this field** check box is marked.
 
+<!-- KFM: Based on the various notes below, we should maybe have a section here where we do the following:
+
+- Create all required license plates
+- Create all required staging locations (STAGE03 and STAGE04). Note that they should use the staging location profile.
+- Create the required on-hand (move here from the "Create demand" section.) Note that warehouse, location, and license plate are all required (I think)
+
+We could do this in an abbreviated style if you like (rather than detailed step-by-step, which would probably get quite lengthy). Example follows:
+
+
+### Set up license plates, locations, and inventory
+
+Before you create sales orders and shipments, you must make sure that the required locations, license plates, and inventory exist. Do the following steps.
+
+1. Go to **Warehouse management \> Setup \> Warehouse \> License plates** and create the following two license plates.
+    - **License plate:** *MyLP1*
+    - **License plate:** *MyLP2*
+1. Go to **Warehouse management \> Setup \> Warehouse \> Locations** and create the following locations if they aren't already present.
+    - **Warehouse:** *61* | **Location:** *06A01R2S1B* | **Location profile ID:** *PICK-06* | **Zone ID:** *FLOOR*
+    - **Warehouse:** *61* | **Location:** *06A01R3S1B* | **Location profile ID:** *PICK-06* | **Zone ID:** *FLOOR*
+    - **Warehouse:** *61* | **Location:** *STAGE01* | **Location profile ID:** *STAGE*
+    - **Warehouse:** *61* | **Location:** *STAGE02* | **Location profile ID:** *STAGE*
+    - **Warehouse:** *61* | **Location:** *STAGE03* | **Location profile ID:** *STAGE*
+    - **Warehouse:** *61* | **Location:** *STAGE04* | **Location profile ID:** *STAGE*
+1. Make sure the following inventory is available. If you must adjust the inventory, you can create manual movements, use replenishment, or use any other flow.
+    - **Item number:** *A0001** | *Quantity:** *100* | **Warehouse:** *61* | **Location:** *06A01R2S1B* | **License plate:** *MyLP1*
+    - **Item number:** *A0002** | *Quantity:** *100* | **Warehouse:** *61* | **Location:** *06A01R3S1B* | **License plate:** *MyLP2*
+1. Something about "Review the location directive settings to confirm the picking locations that are used for sales order picking" ???  (I didn't need to do this, I don't think, but if it's needed we should describe it here.)
+
+-->
+
 ### Create demand
 
 Before you can try the anchoring functionality, you must create some demand. For this scenario, you will create three sales orders for the same customer.
 
+<!-- KFM: I have proposed moving these prerequisites to the previous section.  
+
 Before you create sales orders and shipments, make sure that the pick locations have enough inventory for all the items in the orders. Review the location directive settings to confirm the picking locations that are used for sales order picking. If you must adjust the inventory, you can create manual movements, use replenishment, or use any other flow.
 
-For this scenario the following inventory is available: 
-   - *A0001* for *100* ea in the location *06A01R2S1B*
-   - *A0002* for *100* ea in the location *06A01R3S1B*
+For this scenario, the following inventory must be available:
+
+- *100* ea of **Item number** *A0001* at **Warehouse** *61*, **Location** *06A01R2S1B*
+- *100* ea of **Item number** *A0002* at **Warehouse** *61*, **Location** *06A01R3S1B*
+
+ -->
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. Select **New** to create a sales order for order 1.
 1. In the **Create sales order** dialog, set the following values:
 
-    - **Customer:** *US-001*
+    - **Customer account:** *US-001*
     - **Warehouse:** *61*
 
 1. Select **OK**.
-1. A new line is added to the **Sales order lines** FastTab. Set the following values for it:
+1. The new sales order opens, and includes a new empty line on the **Sales order lines** FastTab. Set the following values for the empty line:
 
     - **Item number:** *A0001*
     - **Quantity:** *1*
 
-1. Select **Add line** from the toolbar to add a second line, and set the following values:
+1. Select **Add line** from the toolbar to add a second sales order line, and set the following values:
 
     - **Item number:** *A0002*
     - **Quantity:** *1*
 
 1. Repeat the following steps for each sales line on the order to reserve inventory for it:
 
+    1. On the **Sales order lines** FastTab, select a sales order line.
     1. On the **Sales order lines** FastTab, on the **Inventory** menu, select **Reservation**.
     1. On the **Reservation** page, select **Reserve lot**, and then close the page.
-    1. Select **Save**.
+    1. On the Action Pane, select **Save**.
 
-1. Select **New** to create a sales order for order 2.
-1. In the **Create sales order** dialog, set the following values:
-
+1. Create a second sales order using a procedure similar to the one you used to create sales order 1, but this time use the following settings:
     - **Customer:** *US-001*
     - **Warehouse:** *61*
+    - Oder lines:
+        - **Item number:** *A0001* | **Quantity:** *2*
+        - **Item number:** *A0002* | **Quantity:** *2*
 
-1. Select **OK**.
-1. A new line is added to the **Sales order lines** FastTab. Set the following values:
+1. Using a procedure similar to the one you used for sales order 1, reserve each line in sales order 2.
 
-    - **Item number:** *A0001*
-    - **Quantity:** *2*
-
-1. Select **Add line** to add a second line, and set the following values:
-
-    - **Item number:** *A0002*
-    - **Quantity:** *2*
-
-1. Repeat the following steps for each sales line on the order to reserve inventory for it:
-
-    1. On the **Sales order lines** FastTab, on the **Inventory** menu, select **Reservation**.
-    1. On the **Reservation** page, select **Reserve lot**, and then close the page.
-    1. Select **Save**.
-
-1. Select **New** to create a sales order for order 3.
-1. In the **Create sales order** dialog, set the following values:
-
+1. Create a third sales order using a procedure similar to the one you used to create sales order 1, but this time use the following settings:
     - **Customer:** *US-001*
     - **Warehouse:** *61*
+    - Oder lines:
+        - **Item number:** *A0001* | **Quantity:** *3*
+        - **Item number:** *A0002* | **Quantity:** *3*
 
-1. Select **OK**.
-1. A new line is added to the **Sales order lines** FastTab. Set the following values:
-
-    - **Item number:** *A0001*
-    - **Quantity:** *3*
-
-1. Select **Add line** to add a second line, and set the following values:
-
-    - **Item number:** *A0002*
-    - **Quantity:** *3*
-
-1. Repeat the following steps for each sales line on the order to reserve inventory for it:
-
-    1. On the **Sales order lines** FastTab, on the **Inventory** menu, select **Reservation**.
-    1. On the **Reservation** page, select **Reserve lot**, and then close the page.
-    1. Select **Save**.
+1. Using a procedure similar to the one you used for sales order 1, reserve each line in sales order 3.
 
 ## Use the load planning workbench to create a load and release it to the warehouse
 
@@ -200,41 +208,38 @@ Follow these steps to create a load for the orders that you created for this sce
 1. Go to **Warehouse management \> Loads \> Load planning workbench**.
 1. On the **Sales lines** tab, find and select all the sales order lines for sales order 1 and sales order 2.
 1. On the Action Pane, on the **Supply and demand** tab, from the **Add** group, select **To new load**.
-1. In the **Load template assignment** dialog, in the **Load template ID** field, select a load template, such as *Stnd Load Template*. 
+1. In the **Load template assignment** dialog, in the **Load template ID** field, select a load template, such as *Stnd Load Template*.
 1. Select **OK** to close the dialog.
 1. In the **Loads** section, find and select the load that you created.
 1. On the toolbar, select **Release \> Release to warehouse**.
 1. In the **Release load to warehouse** dialog, select **OK** to release the selected load to the warehouse.
-1. Go to **Warehouse management \> Work \> All work** to view the work that was created. Make a note of the **Work ID** value, because you will need it in the next procedure. <!-- KFM: For me, no work was ever created. Are we missing a step? Also, might we select the load and then use the **Related information > Work** toolbar button instead of opening **All work**? -->
-
-Two work IDs were created for each shipment to bring inventory from the picking locations to the staging location and from the staging location to the baydoor.
+1. Go to **Warehouse management \> Work \> All work** to view the work that was created. You should find two new work IDs, one for each shipment. Each work ID has pick and put lines that bring inventory from the picking locations to the staging location and from the staging location to the baydoor. Make a note of the **Work ID** value for the first shipment, because you will need it in the next procedure.
 
 ### Sales order picking to the staging location for the first shipment
-<!-- KFM: I could not continue because I have no work. Stopped review here. -->
-1. Sign in to the Warehouse Management mobile app as a worker in warehouse *61*.
+
+1. Sign in to the Warehouse Management mobile app as a worker in warehouse *61*. (In the standard demo data, you can sign in by using _61_ as the user ID and _1_ as the password.)
 1. On the main menu, select **Outbound**.
 1. On the **Outbound** menu, select **Sales Picking**.
 1. Select the **ID** field, and then enter the work ID for the first shipment.
 1. Confirm your entry.
-1. In the **LP** field, enter a license plate number for the first item.
+1. In the **LP** field, enter a license plate number for the first item. <!-- KFM: It says the LP must exist in the right location. We should probably have told the reader or create one and then apply it when creating the on-hand. -->
 1. Confirm your entry.
-1. In the **Target LP** field, enter a license plate number.
+1. In the **Target LP** field, enter a license plate number. <!-- KFM: Seems like I can enter anything here. Does it matter at all? -->
    You will pick all lines that were created from the processed wave onto the same target license plate.
 1. Confirm your entry.
-1. In the **LP** field, enter a license plate number for the second item.
+1. In the **LP** field, enter a license plate number for the second item. <!-- KFM: Again, it says this must already exist. We should probably have told the reader to create one and then apply it when creating the on-hand.  -->
 1. Confirm your entry.
-1. The last step is to complete the put work.
-1. Select **Override Loc** to override suggested staging location.
+1. The last step is to complete the put work. <!-- KFM: Is this what we are about to do with the remaining steps, or is it something I need to do here? -->
+1. Select **Override Loc** to override suggested staging location. <!-- KFM: I suspect this might be the most important step for what we are trying to show here. We should point this out and add a bit more detail about it. -->
 1. In the **Work exceptions** field, set *Staging lane changed*.
-1. In the **Location** field, enter a new staging location *STAGE03* (or any other stage location available that is different from the stage location initially suggested by the system).
-1. Confirm your entry.
-    You receive a "Work completed" message.
+1. In the **Location** field, enter a new staging location *STAGE03* (or any other stage location available that is different from the stage location initially suggested by the system). <!-- KFM: STAGE03 isn't valid. Can we suggest one that already exists in demo data? Otherwise, we should add steps to create the one we need. -->
+1. Confirm your entry. You receive a "Work completed" message.
 1. Go to **Warehouse management \> Work \> All work**.
-1. Select Work ID for the first shipment. Verify that the staging location was updated by the location defined in the mobile device.
-1. Select Work ID for the second shipment. Verify that the staging location was updated to new staging location due to the anchoring setup.
+1. Open the work ID for the first shipment. Verify that the staging location was updated to the new location (*STAGE03*) defined using the mobile device.
+1. Open the work ID for the second shipment. Verify that the staging location was updated to new staging location (*STAGE03*) due to the anchoring setup.
 
-> [!IMPORTANT]
-> Location for all the remaining open put work lines that have the same staging location and generated from the same work template line will be updated to the new location.
+> [!NOTE]
+> The location for all the remaining open put work lines that have the same staging location and that were generated from the same work template line will be updated to the new location.
 
 ## Use the load planning workbench to add new sales order to the existing load
 
@@ -242,10 +247,11 @@ Follow these steps to add an order to the load and then release it to the wareho
 
 1. Go to **Warehouse management \> Loads \> Load planning workbench**.
 1. On the **Sales lines** tab, find and select all the sales order lines for sales order 3.
-1. On the Action Pane, on the **Supply and demand** tab, from the **Add** group, select **To existing load** to add the selected order lines to an existing Load.
+1. On the Action Pane, on the **Supply and demand** tab, from the **Add** group, select **To existing load** to add the selected order lines to an existing load.
 1. Select **OK** to close the dialog.
 1. In the **Loads** section, find and select the load from the previous steps.
 1. Select **Release \> Release to warehouse** to release the selected load to the warehouse.
+1. In the **Release load to warehouse** dialog, select **OK** to release the selected load to the warehouse.
 1. Go to **Warehouse management \> Work \> All work** to view the work that was created. Make a note of the **Work ID** value, because you will need it in the next procedure.
 
 ### Sales order picking to the staging location for the third shipment
@@ -255,21 +261,20 @@ Follow these steps to add an order to the load and then release it to the wareho
 1. On the **Outbound** menu, select **Sales Picking**.
 1. Select the **ID** field, and then enter the work ID for the third shipment.
 1. Confirm your entry.
-1. In the **LP** field, enter a license plate number for the first item.
+1. In the **LP** field, enter a license plate number for the first item. <!-- KFM: Again, it says this must already exist. We should probably have told the reader to create one and then apply it when creating the on-hand.  -->
 1. Confirm your entry.
-1. In the **Target LP** field, enter a license plate number.
+1. In the **Target LP** field, enter a license plate number. <!-- KFM: Seems like I can enter anything here. Does it matter at all? -->
 1. Confirm your entry.
-1. In the **LP** field, enter a license plate number for the second item.
+1. In the **LP** field, enter a license plate number for the second item.<!-- KFM: Again, it says this must already exist. We should probably have told the reader to create one and then apply it when creating the on-hand.  -->
 1. Confirm your entry.
-1. The last step is to complete the put work.
-1. Select **Override Loc** to override suggested staging location.
+1. The last step is to complete the put work. <!-- KFM: Is this what we are about to do with the remaining steps, or is it something I need to do here? -->
+1. Select **Override Loc** to override suggested staging location. <!-- KFM: I suspect this might be the most important step for what we are trying to show here. We should point this out and add a bit more detail about it. -->
 1. In the **Work exceptions** field, set *Staging lane changed*.
-1. In the **Location** field, enter a new staging location *STAGE04* (or any other stage location available that is different from the stage location initially suggested by the system).
-1. Confirm your entry.
-    You receive a "Work completed" message.
+1. In the **Location** field, enter a new staging location *STAGE04* (or any other stage location available that is different from the stage location initially suggested by the system). <!-- KFM: STAGE04 isn't valid. Can we suggest one that already exists in demo data? Otherwise, we should add steps to create the one we need. -->
+1. Confirm your entry. You receive a "Work completed" message.
 1. Go to **Warehouse management \> Work \> All work**.
-1. Select Work ID for the first shipment. Verify that staging location was not updated to new staging location because the remaining open put line does not correspond to the work template line of the completed put line.
-1. Select Work ID for the second shipment. Verify that staging location was not updated to new staging location because the staging location does not correspond to the staging location of the completed put line. In other words, completed put work line and the remaining open work line have different staging locations and in this case, only lines that have the same staging locations are updated.
-1. Select Work ID for the third shipment. Verify that staging location was updated to the new staging location.
+1. Open the work ID for the first shipment. Verify that staging location was not updated to the new staging location (*STAGE04*) because the remaining open put line does not correspond to the work template line of the completed put line.
+1. Open the work ID for the second shipment. Verify that staging location was not updated to the new staging location (*STAGE04*) because the staging location does not correspond to the staging location of the completed put line. In other words, the completed put work line and the remaining open work line have different staging locations and, in this case, only lines that have the same staging locations are updated.
+1. Open the work ID for the third shipment. Verify that staging location was updated to the new staging location (*STAGE04*).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
