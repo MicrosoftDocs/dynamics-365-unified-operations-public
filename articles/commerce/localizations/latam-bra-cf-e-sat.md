@@ -38,9 +38,9 @@ Commerce functionality for Brazil supports the CF-e model 59 format for Brazilia
 Registration of electronic fiscal documents for retail sales in an integrated SAT device (Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) is one of the fiscal registration methods available to retailers in the São Paulo state of Brazil. The feature includes the generation of CF-e electronic fiscal documents (Cupom Fiscal eletrônico, model 59) for sales transactions in retail point of sale (POS) and registration of the electronic fiscal documents in the SAT fiscal device.
 
 ## Feature details
-This feature enables fiscal registration of retail sales in a SAT device connected to a hardware station. It takes advantage of the [fiscal integration framework](https://docs.microsoft.com/en-us/dynamics365/retail/localizations/fiscal-integration-for-retail-channel), meaning it supports all of the built-in fiscal integration capabilities. It is included in the out-of-the-box solution but must be configured to be used.
+This feature enables fiscal registration of retail sales in a SAT device connected to a hardware station. It takes advantage of the [fiscal integration framework](../localizations/fiscal-integration-for-retail-channel.md), meaning it supports all of the built-in fiscal integration capabilities. It is included in the out-of-the-box solution but must be configured to be used.
 
-The generation of the electronic fiscal document model 59 (CF-e) is based on an [Electronic reporting](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting) configuration and is done by the electronic reporting runtime engine that is part of the Commerce runtime.
+The generation of the electronic fiscal document model 59 (CF-e) is based on an [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) configuration and is done by the electronic reporting runtime engine that is part of the Commerce runtime.
 
 The feature currently does not support customer orders that are picked up in POS. Support for the customer order pickup operation will be added later.
 
@@ -80,7 +80,7 @@ To cancel a sale, follow these steps.
 > [!NOTE]
 > Cancelling of approved CF-e issued by other stores is not supported. Only the CF-e issued by the same store can be cancelled. 
 
-### Scenario 3: Make a cash-and-carry sale of goods in offline contingency mode
+### Scenario 3: Make a cash-and-carry sale of goods in contingency mode
 
 If the NFC-e is choosen as a main mode of a store establishment, POS must generate CF-e documents via SAT device when the store's internet connection isn't available, or when the SEFAZ (Secretaria de Estado de Fazenda) authorization service is down. This is considered as using SAT as contingency mode.
 
@@ -104,33 +104,20 @@ The operations for issuing gift cards and adding value to gift cards aren't subj
 
 ## Custom fields for CF-e-SAT fiscal receipts
 
-DANFE fiscal receipts can implement and use the following custom fields to include additional information:
+In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md), a CF-e-SAT for model 59 fiscal receipt can include the following custom field:
 
-- **Access key (Chave de acesso)** – The access key that consists of 11 blocks, each of which has four digits.
-- **Authorization protocol (Protocolo de Autorização)** – The number that is obtained from SEFAZ when NFC-e or NF-e fiscal documents are issued.
-- **Fiscal data of the issuer (Emitente)**:
+- **Barcode (Código de barras)** – You can add a bar code field to CF-e-SAT for model 59 fiscal receipts for sales. This barcode is a graphical representation of the **Access key (Chave de acesso)**. BARCODE_BR
+    FISCALDOCUMENTBARCODEFIRST_BR 
+	FISCALDOCUMENTBARCODESECOND_BR
+- **Testing environment (SAT em condição de teste)** - text "= TESTE = ", and 3 lines of ">" characters in case when the SAT is in test condition.
+- **Total value (Valor total)** – The total amount of the cancellation receipt. CANCELFISCALDOCUMENTTOTALAMOUNT_BR
+- **Access key (Chave de acesso)** – The access key of the cancellation receipt. CANCELFISCALDOCUMENTACCESSKEY_BR
+- **QR-code** – A receipt can include a QR code for CF-e-SAT model 59 for the cancellation, referring to the canceled sale. CANCELFISCALDOCUMENTQRCODETEXT_BR
+- **Barcode** - A receipt can include a barcode for CF-e-SAT model 59 for sales cancellations.  CANCELBARCODE_BR
+	CANCELFISCALDOCUMENTBARCODEFIRST_BR
+	CANCELFISCALDOCUMENTBARCODESECOND_BR
+- **Date of issue (Emissão / Data de recebimento)** – The date and time when the receipt is issued. CANCELFISCALDOCUMENTISSUEDATE_BR
 
-    - **Name** – The corporate name of the fiscal establishment.
-    - **CNPJ** – The CNPJ number of the fiscal establishment.
-    - **IE** – The state registration ID of the fiscal establishment.
-    - **Address** – The address of the fiscal establishment.
-
-- **Date of issue (Emissão / Data de recebimento)** – The date and time when the receipt is issued.
-- **NFC-e / NF-e number (Número)** – The number of the electronic fiscal document.
-- **Series (Série)** – The series of the electronic fiscal document.
-- **Type of operation (Saída / Entrada )** – The input or output type of the operation.
-- **Fiscal data of the customer (Destinatário)**:
-
-    - **Name** – The name of the recipient or corporation.
-    - **CPF/CNPJ/Foreigner ID** – The CPF/CNPJ number or foreigner ID of the recipient.
-    - **Address** – The address of the recipient.
-
-- **Quantity (Qtd.)** – The quantity of items.
-- **Total value of the item (Valor total)** – The amount per item.
-- **Total quantity (Qtd. total de itens)** – The total quantity of items on the receipt.
-- **Total value (Valor total)** – The total amount of the receipt.
-- **QR-code** – A receipt can include a QR code for DANFE model 65 for sales.
-- **Taxpayer Interest Message (Mensagem de Interesse do Contribuinte)** – An approximate breakdown of the tax burden in NFC-e fiscal documents.
 
 ## Additional resources
 
