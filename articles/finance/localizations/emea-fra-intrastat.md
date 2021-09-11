@@ -3,13 +3,13 @@
 
 title: French Intrastat
 description: This topic contains information about Intrastat declaration in France.
-author: andosip
+author: anasyash
 ms.date: 07/9/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 
