@@ -239,9 +239,7 @@ The following table provides an overview of the inspections that ER provides. Fo
 <td><a href='#i17'>Inconsistent setting of Page component</a></td>
 <td>Data integrity</td>
 <td>Error</td>
-<td>
-There are more than two range components without replication. Remove the unnecessary components.
-</td>
+<td>There are more than two range components without replication. Please, remove unnecessary components.</td>
 </tr>
 </tbody>
 </table>
@@ -882,17 +880,17 @@ Modify the value of the **Header/footer appearance** property for one of the inc
 
 ## <a id="i17"></a>Inconsistent setting of Page component
 
-When you [configure](er-fillable-excel.md) an ER format component to use an Excel template to generate an outbound document, you can add the **Excel\\Page** component to paginate a generated document using ER formulas. For every **Excel\\Page** component that you add, you can add many nested [Range](er-fillable-excel.md#range-component) components while remaining compliant with the following [structure](er-fillable-excel.md#page-component-structure):
+When you [configure](er-fillable-excel.md) an ER format component to use an Excel template to generate an outbound document, you can add the **Excel\\Page** component to paginate a generated document by using ER formulas. For every **Excel\\Page** component that you add, you can add many nested [Range](er-fillable-excel.md#range-component) components and still remain compliant with the following [structure](er-fillable-excel.md#page-component-structure):
 
-    - The first nested range can be configured with the **Replication direction** property set to **No replication**. If such a range is configured, the range is used to make page headers in a generated document.
-    - You can add many other **Range** components that specify the **Replication direction** property as **Vertical**. If such ranges are configured, they are used to fill in generated documents.
-    - The last nested range can be configured with the **Replication direction** property set to **No replication**. If such range is configured, the range is used to make page footers in a generated document and add necessary page breaks.
+- The first nested **Range** component can be configured so that the **Replication direction** property is set to **No replication**. This range is used to make page headers in generated documents.
+- You can add many other nested **Range** components where the **Replication direction** property is set to **Vertical**. These ranges are used to fill in generated documents.
+- The last nested **Range** component can be configured so that the **Replication direction** property is set to **No replication**. This range is used to make page footers in generated documents and to add the required page breaks.
 
-If you don't follow this structure of configuring an ER format in the ER format designer at design time, a validation error occurs. You will receive the following error message: "There are more than two range components without replication. Please, remove unnecessary components."
+If you don't follow this structure for an ER format in the ER format designer at design time, a validation error occurs, and you receive the following error message: "There are more than two range components without replication. Please, remove unnecessary components."
 
 ### Automatic resolution
 
-There is no option available to automatically fix this issue.
+No option to automatically fix this issue is available.
 
 ### Manual resolution
 
