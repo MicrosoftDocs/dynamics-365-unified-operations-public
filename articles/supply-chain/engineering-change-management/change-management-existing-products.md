@@ -52,7 +52,7 @@ Therefore, if you have a distinct product, you can change it only to an engineer
 
 An *engineering product category* must be assigned to every engineering product. You will do this assignment when you run the **Convert to engineering product** wizard. Engineering product categories must exist for all relevant standard products *before* you can convert those products.
 
-The engineering product category provides a basis for creating an engineering product, and it establishes a set of default values and policies. Engineering attributes and their default values, as defined for the engineering category, are also applied to the resulting product. You can edit the attribute values or add more engineering attributes to the product once it has been converted to engineering product.
+The engineering product category provides a basis for creating an engineering product, and it establishes a set of default values and policies. Engineering attributes and their default values (as defined for the engineering category) are also applied to the resulting engineering product. You can edit the attribute values and/or add more engineering attributes to the resulting product as needed.
 
 The engineering product category must match the product that you assign it to. For example, the product type and dimension group must match both the product and its engineering product category. For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
