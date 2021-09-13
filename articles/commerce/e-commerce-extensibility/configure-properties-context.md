@@ -105,7 +105,7 @@ In the following example, the **dependentSchemas** property specifies that whene
                 "subTitle" : {
                     "type": "string",
                     "friendlyName": "Product Sub Title",
-                    "description":  "Product sub title.",
+                    "description":  "Product sub title."
                 }
             },
             "required": ["productTitle"]
