@@ -54,6 +54,8 @@ An *engineering product category* must be assigned to every engineering product.
 
 The engineering product category provides a basis for creating an engineering product, and it establishes a set of default values and policies. The engineering product category must match the product that you assign it to. For example, the product type and dimension group must match both the product and its engineering product category. For more information, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
 
+With the assignment of the engineering category and its defaulting of values and policies, the attributes and its default values from the categories will also be defaulted. You can edit the attribute values or add more engineering attributes to the product once it has been converted to engineering product.
+
 > [!IMPORTANT]
 > The **Convert to engineering product** wizard can convert product only to engineering products where the version isn't tracked in transactions. Therefore, the **Track version in transactions** option must be set to *No* for engineering product categories that you create to convert existing products.
 
