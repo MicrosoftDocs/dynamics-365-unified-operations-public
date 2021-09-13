@@ -4,7 +4,7 @@
 title: Set up POS hybrid app on Android and iOS
 description: This topic shows how to set up the POS hybrid app on Android and iOS.
 author: mugunthanm 
-ms.date: 05/18/2020
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -101,13 +101,13 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
 
 ## Hybrid app signing and distribution
 
-To sign and distribute the Android and iOS app, refer to the below options suggested by the Android and iOS app teams.
+To sign and distribute the Android and iOS app, refer to the following options:
 
-**Android:**
-- [Signing the Android Application Package](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/signing/?tabs=windows)
+**Android**
+- [Signing the Android Application Package](https://docs.microsoft.com/xamarin/android/deploy-test/signing/?tabs=windows)
 - [Android app distribution](https://developer.android.com/distribute/marketing-tools/alternative-distribution)
 
-**iOS:**
+**iOS**
 - [iOS Code Signing](https://developer.apple.com/support/code-signing/)
 - [iOS app distribution](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)
 
