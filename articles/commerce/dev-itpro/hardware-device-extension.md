@@ -1,6 +1,6 @@
 ---
-title: Integrate the POS with a new hardware device and generate extension installer
-description: This topic explains how to integrate the point of sale (POS) with a new hardware device and generate extension installer.
+title: Integrate the POS with a new hardware device and generate the extension installer
+description: This topic explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer.
 author: mugunthanm
 ms.date: 07/27/2020
 ms.topic: article
@@ -12,11 +12,11 @@ ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update, AX 10.0.11
 ---
 
-# Integrate the POS with a new hardware device
+# Integrate the POS with a new hardware device and generate the extension installer
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to integrate the point of sale (POS) with a new hardware device and generate extension installer. 
+This topic explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer. 
 
 To call Hardware station from the POS, you must use a request and a response:
 
@@ -205,13 +205,17 @@ let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<Hardw
 return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
 ```
 
-### If you are not using the independent POS packaging SDK or sealed HWS installer then follow the steps in [Create deployable packages](retail-sdk/retail-sdk-packaging.md) to generate the package for deployment.
+> [!NOTE]
+> If you are not using the independent POS packaging SDK or sealed HWS installer then follow the steps in [Create deployable packages](retail-sdk/retail-sdk-packaging.md) to generate the package for deployment.
 
 ## Package the HWS extension with Modern POS to use local HWS
 
-To package the HWS extension with Modern POS to use local HWS (this applicable if you are using POS independent packaging SDK ,application release 10.0.18 or later), the HWS extension must be packaged with the POS, in the modern pos js proj add reference to your HWS project and then use the POS installer project to create extension installer. Check the sample js proj in [Dynamics365Commerce.InStore/src/PosSample/ModernPos/ModernPos.jsproj GitHub repo](https://github.com/microsoft/Dynamics365Commerce.InStore).
+> [!NOTE]
+> This section is applicable if you are using POS independent packaging SDK with version 10.0.22 or later of Finance and Operations apps.
+ 
+To package the HWS extension with Modern POS to use local HWS, the HWS extension must be packaged with the POS. In the Modern POS JavaScript project, add a reference to your HWS project. Then use the POS installer project to create extension installer. For more information, see the sample JavaScript project in the [Dynamics365Commerce.InStore/src/PosSample/ModernPos/ModernPos.jsproj GitHub repo](https://github.com/microsoft/Dynamics365Commerce.InStore).
 
-If you have only HWS extension, remove all the other unwanted project reference from the sample. ModernPos.jsproj creates the msix installer and then the installer project consumes this and creates the exe installer, HWS extension will be deployed as UWP app extension.
+If you have only HWS extension, remove all the other unwanted project references from the sample. The **ModernPos.jsproj** project creates the **msix** installer and then the installer project consumes this and creates the **exe** installer. THe HWS extension will be deployed as a UWP app extension.
 
 ## Generate an extension installer for the Hardware station
 
