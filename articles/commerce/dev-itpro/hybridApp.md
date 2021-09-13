@@ -99,12 +99,18 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
   3.  Launch the MPOS app. You should be able to sign in and activate the device.
 
 
-## Hybrid app distribution
+## Hybrid app signing and distribution
 
-To distribute the Android and iOS app, refer to the following distribution options suggested by the Android and iOS app teams.
+To sign and distribute the Android and iOS app, refer to the below options suggested by the Android and iOS app teams.
 
+**Android:**
+- [Signing the Android Application Package](https://docs.microsoft.com/en-us/xamarin/android/deploy-test/signing/?tabs=windows)
 - [Android app distribution](https://developer.android.com/distribute/marketing-tools/alternative-distribution)
+
+**iOS:**
+- [iOS Code Signing](https://developer.apple.com/support/code-signing/)
 - [iOS app distribution](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)
+
 
   
 ## Dedicated hardware station support for the hybrid Android app
