@@ -242,7 +242,7 @@ All tax registrations have the same settings for EU sales list parameters.
 | 10.0.21     | AT          | EU Sales list (AT).version.9.5                                         |
 | 10.0.21     | DE          | EU Sales list (DE).version.9.5                                         |
 | 10.0.21     | ES          | EU Sales list (ES).version.9.2                                         |
-| 10.0.21     | SE          | EU Sales list model.version.11.xml</br>EU Sales list (SE).version.11.6.xml |
+| 10.0.21     | SE          | EU Sales list model.version.13.xml</br>EU Sales list (SE).version.13.7.xml |
 
 ## Generate intra-community reporting for multiple VAT registrations
 

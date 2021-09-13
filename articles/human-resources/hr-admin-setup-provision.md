@@ -47,6 +47,8 @@ Before you begin provisioning a new production environment, the following prereq
 
 Prior to provisioning your first sandbox or production environment, you may want to provision a [Human Resources trial environment](https://go.microsoft.com/fwlink/p/?LinkId=2115962) to validate Human Resources functionality. Trial environments contain fictitious data that can be used to explore the program in a safe manner. Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. 
 
+Trial environments provide the ability to evaluate human resources functionality for individuals who do not already have access to a Human Resources environment. If you are provisioning a trial environment and the authenticated user already has access to one or more existing Human Resources environments, the user will be redirected to the existing environment or list of environments.
+
 Trial environments aren't intended to be used as production environments. They are limited to a 60-day trial period. When the trial period expires, the environment and all the data that's in it is deleted and can't be recovered. The environment cannot be converted to a sandbox or production environment. You can sign up for a new trial environment after the existing environment expires.
 
 When creating a Human Resources trial environment, a Power Apps trial environment is also created on the tenant and linked to the Human Resources environment. The Power Apps environment, named "TestDrive", has the same trial period as the Human Resources environment.
