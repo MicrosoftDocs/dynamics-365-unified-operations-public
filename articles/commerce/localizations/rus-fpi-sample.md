@@ -141,3 +141,173 @@ To enable the fiscal registration process for Russia in Commerce headquarters, f
 ### Configure channel components
 
 The fiscal printer integration sample for Russia is part of the Retail SDK. The sample is located in the **src \> FiscalIntegration \> AtolFiscalPrinterSample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/AtolFiscalPrinterSample)). [The sample consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of Commerce Runtime (CRT), and a fiscal connector, which is an extension of Hardware station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
+
+[!WARNING]
+> Due to limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it is currently not possible to use it for this fiscal integration sample. You need to use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). Next sections describes how to enable the sample using the previous version of the Retail SDK.
+
+#### Copy sample files to Retail SDK
+
+1. Auxiliary files:
+    1. Copy the **repo.props** file from **Dynamics365Commerce.Solutions** to the **RetailSDK\\src\\SampleExtensions** folder.
+    1. Copy the **CustomizationPackage.props** file from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample** to the **RetailSDK\\src\SampleExtensions** folder.
+    1. Open the **CustomizationPackage.props** file and replace the following line
+
+    ``` xml
+    <Import Project="..\..\..\repo.props" />
+    ``` 
+
+    by the following line:
+
+    ``` xml
+    <Import Project="repo.props" />
+    ``` 
+1. Commerce runtime extension files:
+
+    1. Copy the **DocumentProvider.AtolSample** folder from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample\\CommerceRuntime** to the **RetailSDK\\SampleExtensions\\CommerceRuntime** folder.
+
+### Hardware station extension files copying
+
+From **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample\\HardwareStation** copy **Connector.AtolSample** folder to **RetailSDK\\SampleExtensions\\HardwareStation** folder.
+
+### Include coppied commerce runtime extension project to solution
+
+1. Find **RetailSDK\SampleExtensions\CommerceRuntime\CommerceRuntimeSamples.sln** and run it.
+
+2. In **CommerceRuntimeSamples.sln** add existing project **DocumentProvider.AtolSample.csproj** from **RetailSDK\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample** and save it.
+
+### Include coppied hardware station extension project to solution
+
+1. Find **RetailSDK\SampleExtensions\HardwareStation\HardwareStationSamples.sln** and run it.
+
+2. In **HardwareStationSamples.sln** add existing project **Connector.AtolSample.csproj** from **RetailSDK\\SampleExtensions\\HardwareStation\\Connector.AtolSample** and save it.
+
+### Adjusting commerce runtime extension project
+
+1. Find **RetailSDK\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample\\DocumentProvider.AtolSample.csproj** file and open it as text file;
+
+2. In **DocumentProvider.AtolSample.csproj** file copy next lines to top of Project section:
+
+    ``` xml
+    <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
+    <Import Project="..\..\..\BuildTools\Common.props" />
+    <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
+    ```
+
+3. In **DocumentProvider.AtolSample.csproj** file copy next line to bottom of Project section:
+
+    ``` xml
+    <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
+    ```
+
+### Adjusting hardware station extension project
+
+1. Find **RetailSDK\\SampleExtensions\\HardwareStation\\Connector.AtolSample\\Connector.AtolSample.csproj** file and open it as text file;
+
+2. In **Connector.AtolSample.csproj** file copy next lines to top of Project section:
+
+    ``` xml
+    <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
+    <Import Project="..\..\..\BuildTools\Common.props" />
+    <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
+    ```
+
+3. In **DocumentProvider.AtolSample.csproj** file copy next line to bottom of Project section:
+
+    ``` xml
+    <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
+    ```
+
+### Commerce runtime extension components
+
+The Commerce runtime extension components are copied in the Retail SDK. To complete the following procedures, open the CRT solution,  **CommerceRuntimeSamples.sln**, under  **RetailSdk\SampleExtensions\CommerceRuntime**.
+
+1.  Find the  **DocumentProvider.AtolSample**  project, and build it.
+
+2.  In the  **DocumentProvider.AtolSample\bin\Debug**  folder, find the  **Contoso.CommerceRuntime.DocumentProvider.AtolSample.dll**  assembly file.
+
+3.  Copy the assembly file to the CRT extensions folder:
+
+    - **Commerce Scale Unit:**  Copy the assembly to the  **\bin\ext**  folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
+	
+    - **Local CRT on Modern POS:**  Copy the assembly to the  **\ext**  folder under the local CRT client broker location.
+	
+5.  Find the extensions configuration file for CRT:
+
+    - **Commerce Scale Uni:**  The file is named  **commerceruntime.ext.config**, and it's in the bin\ext folder under the IIS Commerce Scale Uni site location.
+	
+    - **Local CRT on Modern POS:**  The file is named  **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+	
+6.  Register the CRT change in the extensions configuration file. Add  **source="assembly" value="Contoso.CommerceRuntime.DocumentProvider.AtolSample"**.
+
+7.  Restart the Commerce Scale Unit:
+
+    - **Commerce Scale Uni:**  Restart the Commerce Scale Uni site from IIS Manager.
+	
+    - **Client broker:**  End the  **dllhost.exe**  process in Task Manager, and then restart Modern POS.
+	
+### Hardware station extension components
+
+The Hardware station extension components are copied in the Retail SDK. To complete the following procedures, open the Hardware Station solution,  **HardwareStationSamples.sln**, under  **RetailSdk\SampleExtensions\HardwareStation**.
+
+1.  Find the  **Connector.AtolSample**  project, and build it.
+
+2.  In the  **Connector.AtolSample\bin\Debug**  folder, find the  **Contoso.HardwareStation.Connector.AtolSample.dll**  assembly file.
+
+3.  Copy the files to a deployed Hardware station machine:
+
+    -   **Remote Hardware station:**  Copy the files to the  **bin**  folder under the IIS Hardware station site location.
+	
+    -   **Local Hardware station:**  Copy the files to the Modern POS client broker location.
+	
+4.  Find the configuration file for the Hardware station's extensions. The file is named  **HardwareStation.Extension.config**:
+
+    -   **Remote Hardware station:**  The file is located under the IIS Hardware station site location.
+	
+    -   **Local Hardware station:**  The file is located under the Modern POS client broker location.
+	
+5.  Add the following section to the  **composition**  section of the config file.
+
+    ```xml
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
+    ```
+	
+7.  Restart the Hardware station service:
+
+    -   **Remote Hardware station:**  Restart the Hardware station site from IIS Manager.
+	
+    -   **Local Hardware station:**  End the  **dllhost.exe**  process in Task Manager, and then restart Modern POS.
+
+# Registration of migrated projects in RetailSDK
+
+1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
+
+    - In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section.
+
+        ``` xml
+        <add source="assembly" value="Contoso.CommerceRuntime.DocumentProvider.AtolSample" />
+        ```
+
+    - In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
+
+        ``` xml
+        <add source="assembly" value="Contoso.HardwareStation.Connector.AtolSample" />
+        ```
+
+2. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
+
+    - Add the following lines to include the CRT extensions in the deployable packages.
+
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.CommerceRuntime.DocumentProvider.AtolSample.dll" />
+        ```
+
+    - Add the following line to include the Hardware station extension in the deployable packages.
+
+        ``` xml
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.HardwareStation.Connector.AtolSample.dll" />
+        ```
+
+3. Complete all the required setup tasks that are described in the [Set up Commerce localization for Russia](#rus-commerce-setup) section.
+4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
