@@ -108,4 +108,4 @@ To activate the inquiry for customer information, enable the **(Russia) Customer
 
 ### Configure channel components
 
-To make the functionality that is specific to Russia available, you must configure extensions for commerce channel components.
+To make the functionality that is specific to Russia available, you must configure extensions for commerce channel components. See [Enable Russia-specific Commerce components](./rus-commerce-setup.md#enable-russia-specific-commerce-components) for more details.
