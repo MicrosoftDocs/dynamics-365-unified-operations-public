@@ -4,7 +4,7 @@
 title: Test modules with module mocks
 description: This topic describes how to test modules by using module mocks. 
 author: samjarawan
-ms.date: 09/15/2020
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
