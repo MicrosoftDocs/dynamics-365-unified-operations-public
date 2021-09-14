@@ -4,7 +4,7 @@
 title: Create a new module
 description: This topic describes how to create a new module in Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/29/2020
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -67,7 +67,7 @@ Module names are case-insensitive. We recommended that you use whole words for m
 
 By default all modules are rendered server-side, but deferred loading of some modules may be needed to improve page load performance. For more information, see [Page load data actions](page-load-data-action.md).
 
-Any references to window or document objects that are only available in the context of a browser should be handled appropriately during server-side rendering. This will avoid unexpected rendering behavior such as page flicker and Document Object Model (DOM) mismatch issues. The **MsDyn365.isBrowser** SDK utility function can be used for this purpose as shown in the below example.
+Any references to window or document objects that are only available in the context of a browser should be handled appropriately during server-side rendering. This will avoid unexpected rendering behavior such as page flicker and Document Object Model (DOM) mismatch issues. The **MsDyn365.isBrowser** SDK utility function can be used for this purpose as shown in the following example.
 
 ```typescript
 import MsDyn365 from '@msdyn365-commerce/core';
