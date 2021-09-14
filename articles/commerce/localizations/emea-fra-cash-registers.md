@@ -154,7 +154,7 @@ When a shift is closed, the event is registered in the POS audit event log. The 
 - The previous signature for the same register. A blank value is used for the first signed shift closing event.
 
 > [!NOTE]
-> Due to the requirement to keep a chain of closed shifts for the same register, closing a shift on a register that is different from the one that the shift was opened on is not supported. Such option may be added in later updates.
+> Due to the requirement to maintain a chain of closed shifts for the same register, closing a shift on a register that is different from the one that the shift was opened on is not supported. Such option may be added in later updates.
 
 You can view the signature of a closed shift, together with the shift data that was used to generate it, on the **Fiscal registration results** tab of the **Shifts** page in Commerce headquarters.
 
