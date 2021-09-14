@@ -5,7 +5,7 @@
 title: Call Commerce Scale Unit APIs
 description: This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
 author: samjarawan
-ms.date: 09/15/2020
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
 
-To call Scale Unit APIs, you must use the Retail Server proxy library that the Commerce online SDK provides. This proxy library is also known as TypeScriptProxy or TSProxy. It allows for streamlined communication with the Scale Unit from JavaScript-based or TypeScript-based environments.
+To call Commerce Scale Unit APIs, you must use the Retail Server proxy library that the Commerce online software development kit (SDK) provides. This proxy library is also known as TypeScriptProxy or TSProxy. It allows for streamlined communication with the Commerce Scale Unit from JavaScript-based or TypeScript-based environments.
 
 ## Install the Retail Server proxy
 
@@ -91,7 +91,7 @@ For a list of all the available Retail Server APIs in each data action manager, 
 
 ## Retail Server proxy data methods
 
-The Retail Server proxy is closely linked to the [Data Action Framework](data-actions.md). Therefore, for every Scale Unit API, there are two exposed Retail Server proxy methods:
+The Retail Server proxy is closely linked to the [Data Action Framework](data-actions.md). Therefore, for every Commerce Scale Unit API, there are two exposed Retail Server proxy methods:
 
 - **The createInput method** – This method creates an **IActionInput** class that can be used either to run a [page load data action](page-load-data-action.md), or to do a direct state update or fetch via the **actionContext.update()** or **actionContext.get()** methods. This method is always named **create{RETAIL\_SERVER\_API\_NAME}Input**.
 - **The action method** – This method can be invoked on its own as an [event-based data action](event-based-data-actions.md), or it can be added inside another action method to create a [data action chain](chain-data-actions.md). This method is always named **{RETAIL\_SERVER\_API\_NAME}Async**.
