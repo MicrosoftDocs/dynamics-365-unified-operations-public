@@ -4,7 +4,7 @@
 title: Create a page container module
 description: This topic describes how to create a page container module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/15/2020
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,7 +37,7 @@ Page authors can configure which modules go into each slot, and the container re
 
 ## Create a new page container module
 
-The Microsoft Dynamics 365 Commerce online SDK provides an [add-module](cli-command-reference.md#add-module) command-line interface (CLI) command. To create a page container module, you use this command to create a new module, and then change the **$type** value to **pageModule** in the module's definition file.
+The Microsoft Dynamics 365 Commerce online software development kit (SDK) provides an [add-module](cli-command-reference.md#add-module) command-line interface (CLI) command. To create a page container module, you use this command to create a new module, and then change the **$type** value to **pageModule** in the module's definition file.
 
 For example, run the following command to create a module that is named **campaign-page-container**.
 
