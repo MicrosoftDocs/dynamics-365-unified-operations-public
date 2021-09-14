@@ -4,7 +4,7 @@
 title: Request properties object
 description: This topic covers the request properties object in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/31/2020
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -149,8 +149,7 @@ interface IRequestContext {
 
 ## Test a module that has an authenticated signed-in state
 
-Some modules might require that the state be **signed-in** follow the steps in the [simulate-the-signed-in-state](test-page-mock.md#simulate-the-signed-in-state) topic to create a page mock with signed in user state for testing modules.
-
+Some modules might require that the state be **signed-in** for testing. To create a page mock with the signed-in user state for testing modules, follow the steps in [simulate-the-signed-in-state](test-page-mock.md#simulate-the-signed-in-state).
 
 ## Additional resources
 
