@@ -2438,7 +2438,7 @@
             href: e-commerce-extensibility/core-data-actions.md
           - name: Call Retail Server APIs
             href: e-commerce-extensibility/call-retail-server-apis.md
-          - name: Call Retail Server extension APIs
+          - name: Call Commerce Scale Unit extension APIs
             href: e-commerce-extensibility/call-retail-extension-api.md
         - name: Advanced data action topics
           items:
