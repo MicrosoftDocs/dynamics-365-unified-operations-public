@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-The `CHANGETIMEZONE` function returns a *[DateTime](er-formula-supported-data-types-primitive.md#datetime)* value in Coordinated Universal Time (Greenwich Mean Time \[GMT\]) that is converted from a given date/time in one time zone to a date/time in another time zone.
+The `CHANGETIMEZONE` function returns a *[DateTime](er-formula-supported-data-types-primitive.md#datetime)* value in Coordinated Universal Time (Greenwich Mean Time \[GMT\]) that is converted from a given date/time value in one time zone to a date/time value in another time zone.
 
 ## Syntax
 
@@ -42,35 +42,35 @@ CHANGETIMEZONE (datetime, base time zone, target time zone)
 
 `datetime`: *DateTime*
 
-A date/time value in Coordinated Universal Time (Greenwich Mean Time \[GMT\]) time zone that represents the date/time to convert.
+A date/time value in the Coordinated Universal Time time zone that represents the date/time value to convert.
 
 `base time zone`: *[String](er-formula-supported-data-types-primitive.md#string)*
 
-The name of a time zone to which a given date/time is shifted before conversion.
+The name of the time zone that a given date/time value is shifted to before conversion.
 
 `target time zone`: *String*
 
-The name of a time zone to which a converted date/time is shifted during conversion.
+The name of the time zone that a converted date/time value is shifted to during conversion.
 
 ## Return values
 
 *DateTime*
 
-The resulting date/time value in Coordinated Universal Time (Greenwich Mean Time \[GMT\]) time zone.
+The resulting date/time value in the Coordinated Universal Time time zone.
 
 ## Usage notes
 
 To specify source and target time zones, you can use time zone names that are [provided](https://data.iana.org/time-zones/releases/) by the [Internet Assigned Numbers Authority (IANA)](https://www.iana.org/) or that are [supported](/windows-hardware/manufacture/desktop/default-time-zones) by Microsoft Windows.
 
-The exception **Time zone '\<time zone name\>' does not exist** is thrown at runtime when the provided name isn't found in the IANA list or in the Windows registry. 
+At runtime, the exception "Time zone '\<time zone name\>' does not exist" is thrown if the provided name isn't found in the IANA list or in the Windows registry.
 
-The conversion takes into account the UTC DST offset for time zones where daylight saving time (DST) is observed. The latest available information about the UTC DST offset is used during conversion.
+For time zones where daylight saving time is observed, the conversion considers the Coordinated Universal Time daylight saving time offset. The latest available information about this offset is used during conversion.
 
 ## Example 1
 
 In this example, the time zone names for Windows are used.
 
-You can configure the **DSX** data source of the **Calculated field** type that contains the following expression:
+You configure the **DSX** data source of the **Calculated field** type. It contains the following expression.
 
 ```vb
 CONCATENATE(
@@ -80,19 +80,18 @@ CONCATENATE(
 )
 ```
 
-When you configure the expression of the **DSY** data source of the **Calculated field** type as `DATETIMEVALUE ("01-Jun-2021 12:55:00", "dd-MMM-yyyy HH:mm:ss", "EN")`, the **DSX** data source returns the text **2021-06-01T12:55:00.0000000+00:00 -> 2021-05-31T23:55:00.0000000+00:00** showing that the time difference between the two provided time zones on June, 1st is greater than 24 hours. This means that the converted date/time is one day earlier than the given date/time as the base time zone is ahead of the target one.
+If you configure the expression of the **DSY** data source of the **Calculated field** type as `DATETIMEVALUE ("01-Jun-2021 12:55:00", "dd-MMM-yyyy HH:mm:ss", "EN")`, the **DSX** data source returns the text **2021-06-01T12:55:00.0000000+00:00 -> 2021-05-31T23:55:00.0000000+00:00**. This text shows that the time difference between the two provided time zones on June 1 is more than 24 hours. Therefore, the converted date/time value is one day earlier than the given date/time value, because the base time zone is ahead of the target time zone.
 
-When you configure the expression of the **DSY** data source of the **Calculated field** type as `DATETIMEVALUE ("01-Dec-2021 12:55:00", "dd-MMM-yyyy HH:mm:ss", "EN")`, the **DSX** data source returns the text **2021-12-01T12:55:00.0000000+00:00 -> 2021-12-01T00:55:00.0000000+00:00** showing that the time difference between the two provided time zones on December, 1st is less than 24 hours. This means that the converted date/time is equal to the given date/time.
+If you configure the expression of the **DSY** data source of the **Calculated field** type as `DATETIMEVALUE ("01-Dec-2021 12:55:00", "dd-MMM-yyyy HH:mm:ss", "EN")`, the **DSX** data source returns the text **2021-12-01T12:55:00.0000000+00:00 -> 2021-12-01T00:55:00.0000000+00:00**. This text shows that the time difference between the two provided time zones on December 1 is less than 24 hours. Therefore, the converted date/time value equals the given date/time value.
 
 > [!NOTE]
-> The same expression returns a different variance between the provided and converted date/time values for the same pair of time zones as the different UTC DST offset is observed for provided time zones on a given date/time.
-
+> The same expression returns a different variance between the provided and converted date/time values for the same pair of time zones because a different Coordinated Universal Time daylight saving time offset is observed for the provided time zones on a given date/time.
 
 ## Example 2
 
 In this example, the IANA time zone names are used.
 
-You can configure the **DSX** data source of the **Calculated field** type that contains the following expression:
+You configure the **DSX** data source of the **Calculated field** type. It contains the following expression.
 
 ```vb
 CONCATENATE(
@@ -102,14 +101,13 @@ CONCATENATE(
 )
 ```
 
-When you configure the expression of the **DSY** data source of the **Calculated field** type as `DATETIMEVALUE ("01-Jun-2021 12:55:00", "dd-MMM-yyyy HH:mm:ss", "EN")`, the **DSX** data source returns the text **2021-06-01T12:55:00.0000000+00:00 -> 2021-05-31T23:55:00.0000000+00:00** showing that the time difference between the two provided time zones on June, 1st is greater than 24 hours. This means that the converted date/time is one day earlier than the given date/time as the base time zone is ahead of the target one.
+If you configure the expression of the **DSY** data source of the **Calculated field** type as `DATETIMEVALUE ("01-Jun-2021 12:55:00", "dd-MMM-yyyy HH:mm:ss", "EN")`, the **DSX** data source returns the text **2021-06-01T12:55:00.0000000+00:00 -> 2021-05-31T23:55:00.0000000+00:00**. This text shows that the time difference between the two provided time zones on June 1 is more than 24 hours. Therefore, the converted date/time value is one day earlier than the given date/time value, because the base time zone is ahead of the target time zone.
 
-When you configure the expression of the **DSY** data source of the **Calculated field** type as `DATETIMEVALUE ("01-Dec-2021 12:55:00", "dd-MMM-yyyy HH:mm:ss", "EN")`, the **DSX** data source returns the text **2021-12-01T12:55:00.0000000+00:00 -> 2021-12-01T00:55:00.0000000+00:00** showing that the time difference between the two provided time zones on December, 1st is less than 24 hours. Thsi means that the converted date/time is equal to the given date/time.
-
+If you configure the expression of the **DSY** data source of the **Calculated field** type as `DATETIMEVALUE ("01-Dec-2021 12:55:00", "dd-MMM-yyyy HH:mm:ss", "EN")`, the **DSX** data source returns the text **2021-12-01T12:55:00.0000000+00:00 -> 2021-12-01T00:55:00.0000000+00:00**. This text shows that the time difference between the two provided time zones on December 1 is less than 24 hours. Therefore, the converted date/time value equals the given date/time value.
 
 ## Example 3
 
-You can configure the **DSX** data source of the **Calculated field** type containing the following expression:
+You configure the **DSX** data source of the **Calculated field** type. It contains the following expression.
 
 ```vb
 CONCATENATE(
@@ -119,26 +117,25 @@ CONCATENATE(
 )
 ```
 
-When you configure the expression of the **DSY** data source of the **Calculated field** type as `DATETIMEVALUE ("01-Jun-2021 12:55:00", "dd-MMM-yyyy HH:mm:ss", "EN")`, the **DSX** data source returns the text **2021-06-01T12:55:00.0000000+00:00 -> 2021-06-02T01:55:00.0000000+00:00'** showing that the time difference between the two provided time zones on June, 1st is greater than 24 hours. This means that the converted date/time is one day later than the given date/time as the target time zone is ahead of the base one.
+If you configure the expression of the **DSY** data source of the **Calculated field** type as `DATETIMEVALUE ("01-Jun-2021 12:55:00", "dd-MMM-yyyy HH:mm:ss", "EN")`, the **DSX** data source returns the text **2021-06-01T12:55:00.0000000+00:00 -> 2021-06-02T01:55:00.0000000+00:00'**. This text shows that the time difference between the two provided time zones on June 1 is more than 24 hours. Therefore, the converted date/time value is one day later than the given date/time value, because the target time zone is ahead of the base time zone.
 
 ## Example 4
 
-You can receive a date/time stamp from an external source as a text that contains no time zone information, though you may be aware of the time zone in which that source is operated. For example, it can be the time stamp **01/12/2021 12:55:00** from a service that is operated in Spain. To properly save this date/time value to database, complete the following conversion:
+You might receive a date/time stamp from an external source as text that contains no time zone information. However, you might know the time zone that the source is operated in. For example, you receive the date/time stamp **01/12/2021 12:55:00** from a service that is operated in Spain. To correctly save this date/time value to the database, complete the following conversion:
 
-- Configure the **DSY** data source of the **Calculated field** type to convert a date/time stamp from a text to the GMT date/time value:
+- Configure the **DSY** data source of the **Calculated field** type to convert a date/time stamp from text to the Coordinated Universal Time date/time value.
 
     `DATETIMEVALUE ("01/12/2021 12:55:00", "dd/MM/yyyy HH:mm:ss", "ES")`
 
-- Configure the **DSX** data source of the **Calculated field** type to shift to GMT the converted date/time value as the date/time of the time zone of the external source:
+- Configure the **DSX** data source of the **Calculated field** type to shift the converted date/time value to Coordinated Universal Time as the date/time value of the time zone of the external source.
 
     `CHANGETIMEZONE(DSY, "Romance Standard Time", "GMT Standard Time")`
 
 > [!NOTE]
-> When you use the `CHANGETIMEZONE` function for date/time conversion, pay attention to the fact that any date/time value is stored in database as the GMT time zone value. For presenting date/time values on application pages, this value is transformed taking into account the time zone that is [set](../../fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md) as a preferred zone for the currently logged application user.
+> When you use the `CHANGETIMEZONE` function for date/time conversion, be aware that any date/time value is stored in the database as the value in the Coordinated Universal Time time zone. Before this value can be presented on application pages, it's transformed. The transformation considers the time zone that is [set](../../fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md) as a preferred zone for the currently signed-in application user.
 
 ## Additional resources
 
 [Date and time functions](er-functions-category-datetime.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
