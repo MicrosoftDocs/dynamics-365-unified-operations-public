@@ -142,7 +142,7 @@ To enable the fiscal registration process for Russia in Commerce headquarters, f
 
 The fiscal printer integration sample for Russia is part of the Retail SDK. The sample is located in the **src \> FiscalIntegration \> AtolFiscalPrinterSample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/AtolFiscalPrinterSample)). [The sample consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of Commerce Runtime (CRT), and a fiscal connector, which is an extension of Hardware station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
-[!WARNING]
+> [!WARNING]
 > Due to limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it is currently not possible to use it for this fiscal integration sample. You need to use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). Next sections describes how to enable the sample using the previous version of the Retail SDK.
 
 #### Copy the sample files to Retail SDK
@@ -151,16 +151,13 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 	1. Copy the **repo.props** file from **Dynamics365Commerce.Solutions** to the **RetailSDK\\src\\SampleExtensions** folder.
 	1. Copy the **CustomizationPackage.props** file from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample** to the **RetailSDK\\src\SampleExtensions** folder.
 	1. Open the **CustomizationPackage.props** file and replace the following line
-
-	``` xml
-	<Import Project="..\..\..\repo.props" />
-	``` 
-
+		``` xml
+		<Import Project="..\..\..\repo.props" />
+		``` 
 	with the following line:
-
-	``` xml
-	<Import Project="repo.props" />
-	``` 
+		``` xml
+		<Import Project="repo.props" />
+		``` 
     
 1. Commerce runtime extension files:
 	1. Copy the **DocumentProvider.AtolSample** folder from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample\\CommerceRuntime** to the **RetailSDK\\SampleExtensions\\CommerceRuntime** folder.
@@ -177,39 +174,33 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 	1. Find the **RetailSDK\SampleExtensions\\HardwareStation\\HardwareStationSamples.sln** and open it.
 	1. Add the **Connector.AtolSample.csproj** project located in the **RetailSDK\\SampleExtensions\\HardwareStation\\Connector.AtolSample** folder.
 
-#### Adjusting extension projects
+#### Adjust extension projects
 
 1. Commerce runtime extension project:
 	1. Find the **RetailSDK\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample\\DocumentProvider.AtolSample.csproj** file and open it as a text file.
 	1. Add the following lines to the top of the Project section:
-
-	``` xml
-	<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
-	<Import Project="..\..\..\BuildTools\Common.props" />
-	<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
-	```
-	
+		``` xml
+		<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
+		<Import Project="..\..\..\BuildTools\Common.props" />
+		<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
+		```
 	1. Add the following lines to the bottom of the Project section:
-
-	``` xml
-	<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
-	```
+		``` xml
+		<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
+		```
 
 1. Hardware station extension project:
 	1. Find the **RetailSDK\\SampleExtensions\\HardwareStation\\Connector.AtolSample\\Connector.AtolSample.csproj** file and open it as text file.
 	1. Add the following lines to the top of the Project section:
-
-	``` xml
-	<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
-	<Import Project="..\..\..\BuildTools\Common.props" />
-	<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
-	```
-
-	2. Add the following lines to the bottom of the Project section:
-
-	``` xml
-	<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
-	```
+		``` xml
+		<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
+		<Import Project="..\..\..\BuildTools\Common.props" />
+		<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
+		```
+	1. Add the following lines to the bottom of the Project section:
+		``` xml
+		<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
+		```
 
 ### Commerce runtime extension components
 
