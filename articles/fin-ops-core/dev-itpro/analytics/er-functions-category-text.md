@@ -37,7 +37,7 @@ Electronic reporting (ER) text functions can be used to perform operations on da
 | Function | Description |
 |----------|-------------|
 | [Char](er-functions-text-char.md) | This function returns a *String* value that presents a single character that is referenced by the specified Unicode number. |
-| [Concatenate](er-functions-text-concatenate.md) | This function returns  all the specified text strings as a *String* value after they have been joined into one string. |
+| [Concatenate](er-functions-text-concatenate.md) | This function returns all the specified text strings as a *String* value after they have been joined into one string. |
 | [Format](er-functions-text-format.md) | This function returns the specified string a *String* value after it has been formatted by substituting any occurrences of **%N** with the *N*th argument. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | This function searches for a specific *Enum* value in the specified enumeration data source by using the enumeration name that is specified as a *String* value. If the *Enum* value is found, the function returns it. |
 | [GuidValue](er-functions-text-guidvalue.md) | This function converts the specified input of the *String* type to a data item of the *GUID* type. |
