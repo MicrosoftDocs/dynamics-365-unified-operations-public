@@ -20,7 +20,8 @@ ms.dyn365.ops.version: 10.0.21
 
 Sealed bidding keeps vendor bid replies secret until they are unsealed by purchasing personnel. All bids that are related to a request for quotation (RFQ) are unsealed at the same time after the expiration date for bid entry. Before a bid is unsealed, only users who have dedicated user roles and who represent the vendor can access it.
 
-<!--KFM: Legal disclaimer should go here once approved. -->
+> [!IMPORTANT]
+> Modifying or extending forms, or creating new forms or business logic may defeat the protection Microsoft provides for sealed bidding. You bear the risk of using any modifications, extensions, new forms or business logic, or the inability to use the sealed bidding feature due to such modifications, extensions, new forms, or business logic.  Microsoft is not responsible for any damages arising from any modifications or extensions to forms, or any new forms or business logic that you create, or any third party creates for you. Microsoft does not provide technical or other support for any modifications, extensions, new forms, or business logic made by you or any third party on your behalf. You are solely responsible for complying with all applicable laws or regulations concerning sealed bidding.
 
 ## How bids are kept secure
 
@@ -117,9 +118,12 @@ To set the default bid type that is assigned to new RFQ cases that are assigned 
 > [!TIP]
 > A solicitation type doesn't have to be assigned when a new RFQ is created. If a solicitation type is assigned, the default bid type of an RFQ can retrieve it. Otherwise, the default solicitation type that is defined in Procurement and sourcing parameters can be used.
 
-## Sealed bidding process
+## The sealed bidding process
 
 Sealed bidding follows almost the same process that is described in [Requests for quotation (RFQs) overview](request-quotations.md). The main difference is that the bid data and its attachments are kept encrypted until the bid is unsealed.
+
+> [!IMPORTANT]
+> [Questionnaires](/dynamicsax-2012/appuser-itpro/view-and-respond-to-questionnaires) are not encrypted and should not be used to collect sensitive information
 
 Here is an outline of the process:
 
