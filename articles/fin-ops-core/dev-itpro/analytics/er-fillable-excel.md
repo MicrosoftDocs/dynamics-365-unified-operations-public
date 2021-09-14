@@ -4,7 +4,7 @@
 title: Design a configuration for generating documents in Excel format
 description: This topic describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
 author: NickSelin
-ms.date: 08/26/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -177,11 +177,11 @@ If you want pagination-related summing and counting to compute running totals an
 When you use the **Page** component for Excel pagination, you won't know the final number of pages in a generated document until the pagination is completed. Therefore, you can't calculate the total number of pages by using ER formulas and print the correct number of pages of a generated document on any page before the last page.
 
 > [!TIP]
-> To achieve this result in an Excel header or footer by using the special Excel [formatting](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) for headers and footers.
+> To achieve this result in an Excel header or footer by using the special Excel [formatting](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) for headers and footers.
 
 Configured **Page** components aren't considered when you update an Excel template in the editable format in Dynamics 365 Finance version 10.0.22. This functionality is considered for further releases of Finance.
 
-If you configure your Excel template to use [conditional formatting](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting), it might not work as expected in some cases.
+If you configure your Excel template to use [conditional formatting](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting), it might not work as expected in some cases.
 
 ### Applicability
 
