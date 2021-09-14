@@ -4,7 +4,7 @@
 title: Test modules by using page mocks
 description: This topic describes how to test modules by using page mocks.
 author: samjarawan
-ms.date: 09/15/2020
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -192,13 +192,13 @@ Some modules might have logic that must check the signed-in state of the user be
 }
 ```
 
-If you must simulate real data or the token that is returned from Commerce Server follow the below steps
+If you must simulate real data or the token that is returned from Commerce Server, follow the steps below.
 
-The user information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable. While the F12 browser tools are open and a user is signed in, open a console window, and enter **\_\_\_initialData\_\_\_.requestContext.user** to see the object. 
+The user information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable. While the F12 browser tools are open and a user is signed in, open a console window and enter **\_\_\_initialData\_\_\_.requestContext.user** to see the object. 
 
-To get started, follow these steps.
+To simulate real data or the token that is returned from Commerce Server, follow these steps.
 
-1. Load the e-Commerce webpage that you're working on, and sign in or create a new account.
+1. Load the e-commerce site page that you're working on, and sign in or create a new account.
 1. Open your web browser's debugging tools. For example, if you're using Google Chrome or Microsoft Edge, you can open the developer tools by pressing the **F12** key. 
 1. Open a console window, and enter **\_\_\_initialData\_\_\_.requestContext.user** to see the object. (User information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable.)
 1. Add the module that must be tested to a page mock.
@@ -222,11 +222,9 @@ To get started, follow these steps.
     },
     ```
 
-1. Update the user information (**token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress**) from the web browser's debugging tools.
+1. Update the user information (**token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress**) obtained from the web browser's debugging tools.
 
 The user information can now be obtained in the React component from within the **this.props.context.request.user** object.
-
-
 
 ## Create a dynamic page mock from a production e-Commerce page
 
