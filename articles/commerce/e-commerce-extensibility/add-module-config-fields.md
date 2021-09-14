@@ -123,7 +123,7 @@ The following example shows how the various supported data types are used.
         "bgImage": {
             "type": "image",
             "friendlyName": "Background image",
-            "description": "Background image
+            "description": "Background image"
         },
         "images": {
             "type": "array",
