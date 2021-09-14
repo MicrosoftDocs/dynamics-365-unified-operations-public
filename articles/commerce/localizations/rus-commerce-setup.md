@@ -66,6 +66,9 @@ To enable Modern POS extension components, follow these steps.
         "extensionPackages": [
             {
                 "baseUrl": "Microsoft/Addresses.RU"
+            },
+            {
+                "baseUrl": "Microsoft/FiscalCustomer.RU"
             }
         ]
     }
@@ -86,6 +89,9 @@ To enable the Cloud POS extension components to be loaded in the **extensions.js
     "extensionPackages": [
         {
             "baseUrl": "Microsoft/Addresses.RU"
+        },
+        {
+            "baseUrl": "Microsoft/FiscalCustomer.RU"
         }
     ]
 }
