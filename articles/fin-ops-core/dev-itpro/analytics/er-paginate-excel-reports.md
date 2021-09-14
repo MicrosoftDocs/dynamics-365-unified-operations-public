@@ -4,7 +4,7 @@
 title: Design an ER format to paginate generated documents in Excel
 description: This topic explains how to design an Electronic reporting (ER) format that paginates a generated document in Microsoft Excel.
 author: NickSelin
-ms.date: 09/08/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -415,7 +415,7 @@ To change the visibility, update the **Enabled** property of the **Report page h
 
     All transactions are presented on the first page. The page totals and counters equal the report totals and counters. The page header range is hidden on the first page because the report header already contains column titles. The page header and footer are hidden on the second page because that page contains no transactions.
 
-    ![Generated Excel document in the desktop application.](./media/er-paginate-excel-reports-document2.gif)
+    ![Generated Excel document in desktop application.](./media/er-paginate-excel-reports-document2.gif)
 
 2. Update two transactions on the **Intrastat** page by changing the **Item number** code from **D00006** to **L0010**. Notice that the product name of the new item, **Active stereo speaker pair**, is longer than the product name of the original item, **Standard speaker**. This situation forces text wrapping in the corresponding cell of the generated document. Document pagination, and page-related summing and counting, must now be updated. Repeat the steps in the [Generate an Intrastat declaration control report](#generate-intrastat-control-report) section to generate and review the control report.
 
