@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-Sealed bidding keeps vendor bid replies secret until they are unsealed by purchasing personnel. All bids that are related to a request for quotation (RFQ) are unsealed at the same time after the expiration date for bid entry. Before a bid is unsealed, only users who have dedicated user roles and who represent the vendor can access it.
+Sealed bidding keeps vendor bid replies secret until they are unsealed by purchasing personnel. All bids that are related to a request for quotation (RFQ) are first available to be unsealed upon bid expiry. Before a bid is unsealed, only users who have dedicated user roles and who represent the vendor can access it.
 
 > [!IMPORTANT]
 > Modifying or extending forms, or creating new forms or business logic may defeat the protection Microsoft provides for sealed bidding. You bear the risk of using any modifications, extensions, new forms or business logic, or the inability to use the sealed bidding feature due to such modifications, extensions, new forms, or business logic.  Microsoft is not responsible for any damages arising from any modifications or extensions to forms, or any new forms or business logic that you create, or any third party creates for you. Microsoft does not provide technical or other support for any modifications, extensions, new forms, or business logic made by you or any third party on your behalf. You are solely responsible for complying with all applicable laws or regulations concerning sealed bidding.
