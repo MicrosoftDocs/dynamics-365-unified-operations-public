@@ -145,77 +145,71 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 [!WARNING]
 > Due to limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it is currently not possible to use it for this fiscal integration sample. You need to use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). Next sections describes how to enable the sample using the previous version of the Retail SDK.
 
-#### Copy sample files to Retail SDK
+#### Copy the sample files to Retail SDK
 
 1. Auxiliary files:
-    1. Copy the **repo.props** file from **Dynamics365Commerce.Solutions** to the **RetailSDK\\src\\SampleExtensions** folder.
-    1. Copy the **CustomizationPackage.props** file from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample** to the **RetailSDK\\src\SampleExtensions** folder.
-    1. Open the **CustomizationPackage.props** file and replace the following line
+	1. Copy the **repo.props** file from **Dynamics365Commerce.Solutions** to the **RetailSDK\\src\\SampleExtensions** folder.
+	1. Copy the **CustomizationPackage.props** file from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample** to the **RetailSDK\\src\SampleExtensions** folder.
+	1. Open the **CustomizationPackage.props** file and replace the following line
 
-    ``` xml
-    <Import Project="..\..\..\repo.props" />
-    ``` 
+	``` xml
+	<Import Project="..\..\..\repo.props" />
+	``` 
 
-    by the following line:
+	with the following line:
 
-    ``` xml
-    <Import Project="repo.props" />
-    ``` 
+	``` xml
+	<Import Project="repo.props" />
+	``` 
+    
 1. Commerce runtime extension files:
+	1. Copy the **DocumentProvider.AtolSample** folder from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample\\CommerceRuntime** to the **RetailSDK\\SampleExtensions\\CommerceRuntime** folder.
 
-    1. Copy the **DocumentProvider.AtolSample** folder from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample\\CommerceRuntime** to the **RetailSDK\\SampleExtensions\\CommerceRuntime** folder.
+1. Hardware station extension files:
+	1. Copy the **Connector.AtolSample** folder from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample\\HardwareStation** to the **RetailSDK\\SampleExtensions\\HardwareStation** folder.
 
-### Hardware station extension files copying
+#### Include extension projects to solutions
 
-From **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample\\HardwareStation** copy **Connector.AtolSample** folder to **RetailSDK\\SampleExtensions\\HardwareStation** folder.
+1. Commerce runtime solution:
+	1. Find the **RetailSDK\SampleExtensions\\CommerceRuntime\\CommerceRuntimeSamples.sln** solution and open it.
+	1. Add the **DocumentProvider.AtolSample.csproj** project located in the **RetailSDK\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample** folder.
+1. Hardware station solution:
+	1. Find the **RetailSDK\SampleExtensions\\HardwareStation\\HardwareStationSamples.sln** and open it.
+	1. Add the **Connector.AtolSample.csproj** project located in the **RetailSDK\\SampleExtensions\\HardwareStation\\Connector.AtolSample** folder.
 
-### Include coppied commerce runtime extension project to solution
+#### Adjusting extension projects
 
-1. Find **RetailSDK\SampleExtensions\CommerceRuntime\CommerceRuntimeSamples.sln** and run it.
+1. Commerce runtime extension project:
+	1. Find the **RetailSDK\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample\\DocumentProvider.AtolSample.csproj** file and open it as a text file.
+	1. Add the following lines to the top of the Project section:
 
-2. In **CommerceRuntimeSamples.sln** add existing project **DocumentProvider.AtolSample.csproj** from **RetailSDK\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample** and save it.
+	``` xml
+	<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
+	<Import Project="..\..\..\BuildTools\Common.props" />
+	<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
+	```
+	
+	1. Add the following lines to the bottom of the Project section:
 
-### Include coppied hardware station extension project to solution
+	``` xml
+	<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
+	```
 
-1. Find **RetailSDK\SampleExtensions\HardwareStation\HardwareStationSamples.sln** and run it.
+1. Hardware station extension project:
+	1. Find the **RetailSDK\\SampleExtensions\\HardwareStation\\Connector.AtolSample\\Connector.AtolSample.csproj** file and open it as text file.
+	1. Add the following lines to the top of the Project section:
 
-2. In **HardwareStationSamples.sln** add existing project **Connector.AtolSample.csproj** from **RetailSDK\\SampleExtensions\\HardwareStation\\Connector.AtolSample** and save it.
+	``` xml
+	<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
+	<Import Project="..\..\..\BuildTools\Common.props" />
+	<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
+	```
 
-### Adjusting commerce runtime extension project
+	2. Add the following lines to the bottom of the Project section:
 
-1. Find **RetailSDK\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample\\DocumentProvider.AtolSample.csproj** file and open it as text file;
-
-2. In **DocumentProvider.AtolSample.csproj** file copy next lines to top of Project section:
-
-    ``` xml
-    <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
-    <Import Project="..\..\..\BuildTools\Common.props" />
-    <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
-    ```
-
-3. In **DocumentProvider.AtolSample.csproj** file copy next line to bottom of Project section:
-
-    ``` xml
-    <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
-    ```
-
-### Adjusting hardware station extension project
-
-1. Find **RetailSDK\\SampleExtensions\\HardwareStation\\Connector.AtolSample\\Connector.AtolSample.csproj** file and open it as text file;
-
-2. In **Connector.AtolSample.csproj** file copy next lines to top of Project section:
-
-    ``` xml
-    <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
-    <Import Project="..\..\..\BuildTools\Common.props" />
-    <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
-    ```
-
-3. In **DocumentProvider.AtolSample.csproj** file copy next line to bottom of Project section:
-
-    ``` xml
-    <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
-    ```
+	``` xml
+	<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
+	```
 
 ### Commerce runtime extension components
 
