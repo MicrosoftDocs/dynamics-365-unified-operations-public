@@ -1478,8 +1478,6 @@
       items:
       - name: Globalization resources
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
-      - name: GST declaration form GST101A for New Zealand (NZ-00003)
-        href: localizations/apac-nzl-gst-declaration.md
       - name: Globalization services
         items:
         - name: Globalization services overview
@@ -3002,12 +3000,6 @@
           href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
         - name: Vendor registration IDs
           href: localizations/tasks/mx-00008-vendor-registration-ids.md
-      - name: Oman
-        items:
-        - name: Oman overview
-          href: localizations/oman.md
-        - name: VAT declaration for Oman (OM-00003)
-          href: localizations/emea-oma-vat-declaration.md
       - name: Netherlands
         items:
         - name: Netherlands overview
@@ -3024,6 +3016,10 @@
           href: localizations/emea-nl-vat-declaration-netherlands.md
         - name: EU sales list
           href: localizations/emea-nl-EU-sales-list.md
+      - name: New Zealand
+        items: 
+        - name: GST declaration form GST101A for New Zealand (NZ-00003)
+          href: localizations/apac-nzl-gst-declaration.md
       - name: Norway
         items:
         - name: Norway overview
@@ -3040,6 +3036,12 @@
           href: localizations/emea-nor-satndard-audit-file-for-tax.md
         - name: Customer electronic invoices in Norway
           href: localizations/emea-nor-e-invoices.md
+      - name: Oman
+        items:
+        - name: Oman overview
+          href: localizations/oman.md
+        - name: VAT declaration for Oman (OM-00003)
+          href: localizations/emea-oma-vat-declaration.md
       - name: Poland
         items:
         - name: Poland overview
