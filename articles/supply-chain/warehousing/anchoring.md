@@ -113,15 +113,6 @@ Use the following procedure to configure a work template to enable staging. This
 1. On the Action Pane, select **Work header breaks**.
 1. On the line where the **Field name** field is set to *Shipment ID*, make sure that the **Group by this field** check box is marked.
 
-<!-- KFM: Based on the various notes below, we should maybe have a section here where we do the following:
-
-- Create all required license plates
-- Create all required staging locations (STAGE03 and STAGE04). Note that they should use the staging location profile.
-- Create the required on-hand (move here from the "Create demand" section.) Note that warehouse, location, and license plate are all required (I think)
-
-We could do this in an abbreviated style if you like (rather than detailed step-by-step, which would probably get quite lengthy). Example follows:
-
-
 ### Set up license plates, locations, and inventory
 
 Before you create sales orders and shipments, you must make sure that the required locations, license plates, and inventory exist. Do the following steps.
@@ -139,24 +130,10 @@ Before you create sales orders and shipments, you must make sure that the requir
 1. Make sure the following inventory is available. If you must adjust the inventory, you can create manual movements, use replenishment, or use any other flow.
     - **Item number:** *A0001** | *Quantity:** *100* | **Warehouse:** *61* | **Location:** *06A01R2S1B* | **License plate:** *MyLP1*
     - **Item number:** *A0002** | *Quantity:** *100* | **Warehouse:** *61* | **Location:** *06A01R3S1B* | **License plate:** *MyLP2*
-1. Something about "Review the location directive settings to confirm the picking locations that are used for sales order picking" ???  (I didn't need to do this, I don't think, but if it's needed we should describe it here.)
-
--->
 
 ### Create demand
 
 Before you can try the anchoring functionality, you must create some demand. For this scenario, you will create three sales orders for the same customer.
-
-<!-- KFM: I have proposed moving these prerequisites to the previous section.  
-
-Before you create sales orders and shipments, make sure that the pick locations have enough inventory for all the items in the orders. Review the location directive settings to confirm the picking locations that are used for sales order picking. If you must adjust the inventory, you can create manual movements, use replenishment, or use any other flow.
-
-For this scenario, the following inventory must be available:
-
-- *100* ea of **Item number** *A0001* at **Warehouse** *61*, **Location** *06A01R2S1B*
-- *100* ea of **Item number** *A0002* at **Warehouse** *61*, **Location** *06A01R3S1B*
-
- -->
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. Select **New** to create a sales order for order 1.
@@ -201,7 +178,7 @@ For this scenario, the following inventory must be available:
 
 1. Using a procedure similar to the one you used for sales order 1, reserve each line in sales order 3.
 
-## Use the load planning workbench to create a load and release it to the warehouse
+### Use the load planning workbench to create a load and release it to the warehouse
 
 Follow these steps to create a load for the orders that you created for this scenario and then release it to the warehouse.
 
@@ -229,10 +206,9 @@ Follow these steps to create a load for the orders that you created for this sce
 1. Confirm your entry.
 1. In the **LP** field, enter a license plate number for the second item. <!-- KFM: Again, it says this must already exist. We should probably have told the reader to create one and then apply it when creating the on-hand.  -->
 1. Confirm your entry.
-1. The last step is to complete the put work. <!-- KFM: Is this what we are about to do with the remaining steps, or is it something I need to do here? -->
-1. Select **Override Loc** to override suggested staging location. <!-- KFM: I suspect this might be the most important step for what we are trying to show here. We should point this out and add a bit more detail about it. -->
+1. Suppose that the worker has now collected the order, but when they get to the staging location specified in the work, they find that the space is already occupied. However, the worker can see another location (*STAGE03*) is available nearby. Therefore, the worker will request to change the staging location, and because the anchoring feature is enabled, the system will then automatically update the staging location for this and all related work. Start by selecting **Override Loc** to override suggested staging location.
 1. In the **Work exceptions** field, set *Staging lane changed*.
-1. In the **Location** field, enter a new staging location *STAGE03* (or any other stage location available that is different from the stage location initially suggested by the system). <!-- KFM: STAGE03 isn't valid. Can we suggest one that already exists in demo data? Otherwise, we should add steps to create the one we need. -->
+1. In the **Location** field, enter a new staging location *STAGE03*.
 1. Confirm your entry. You receive a "Work completed" message.
 1. Go to **Warehouse management \> Work \> All work**.
 1. Open the work ID for the first shipment. Verify that the staging location was updated to the new location (*STAGE03*) defined using the mobile device.
@@ -241,7 +217,7 @@ Follow these steps to create a load for the orders that you created for this sce
 > [!NOTE]
 > The location for all the remaining open put work lines that have the same staging location and that were generated from the same work template line will be updated to the new location.
 
-## Use the load planning workbench to add new sales order to the existing load
+### Use the load planning workbench to add the new sales order to the existing load
 
 Follow these steps to add an order to the load and then release it to the warehouse.
 
@@ -267,7 +243,6 @@ Follow these steps to add an order to the load and then release it to the wareho
 1. Confirm your entry.
 1. In the **LP** field, enter a license plate number for the second item.<!-- KFM: Again, it says this must already exist. We should probably have told the reader to create one and then apply it when creating the on-hand.  -->
 1. Confirm your entry.
-1. The last step is to complete the put work. <!-- KFM: Is this what we are about to do with the remaining steps, or is it something I need to do here? -->
 1. Select **Override Loc** to override suggested staging location. <!-- KFM: I suspect this might be the most important step for what we are trying to show here. We should point this out and add a bit more detail about it. -->
 1. In the **Work exceptions** field, set *Staging lane changed*.
 1. In the **Location** field, enter a new staging location *STAGE04* (or any other stage location available that is different from the stage location initially suggested by the system). <!-- KFM: STAGE04 isn't valid. Can we suggest one that already exists in demo data? Otherwise, we should add steps to create the one we need. -->
