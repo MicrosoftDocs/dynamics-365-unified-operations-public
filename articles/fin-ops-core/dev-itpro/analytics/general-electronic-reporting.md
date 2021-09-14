@@ -53,7 +53,9 @@ The ER engine has the following capabilities:
 
 ### Components
 
-ER supports two types of components: **Data model** and **Format**.
+ER supports next types of components: **Data model**, **Model mapping**,  **Format** and **Metadata**.
+For more information, see [Electronic reporting (ER) components](ER_overview_components.md)).
+
 
 #### Data model and model mapping components
 
