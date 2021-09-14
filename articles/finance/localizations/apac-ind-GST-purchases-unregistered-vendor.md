@@ -62,7 +62,7 @@ ms.dyn365.ops.version: 10.0.4
     - **CGST:** 5 percent
     - **SGST:** 10 percent
 
-    ![Tax document page.](media/Annotation-2019-05-15-161112.png)
+    ![Tax document page, Tax details FastTab.](media/Annotation-2019-05-15-161112.png)
 
 8. Select **Close**.
 9. Select **Submit**.
@@ -140,7 +140,7 @@ The following illustration shows the financial entry for the purchase of service
 
 The following illustration shows the financial entry on invoice payment.
 
-![Financial entry on invoice payment.](media/Annotation-2019-05-15-170044.png)
+![Financial entry invoice payment.](media/Annotation-2019-05-15-170044.png)
 
 The following illustration shows the financial entry for purchases where the load on inventory is set to 100 percent.
 
