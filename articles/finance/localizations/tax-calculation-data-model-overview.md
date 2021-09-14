@@ -4,7 +4,7 @@
 title: Tax calculation data model
 description: This topic provides information about the tax data model, and how the field values of each data model are determined by the context of tax calculation transactions.
 author: kailiang
-ms.date: 08/16/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
