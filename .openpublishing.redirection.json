@@ -1,6 +1,136 @@
 {
   "redirections": [
     {
+      "source_path": "articles/supply-chain/cost-management/troubleshoot-costmanagement.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/costing/aging-report-discrepancies",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/inventory/troubleshoot-inventory-operations.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/inventory/cant-find-workflow-dropdown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/master-planning/troubleshoot-masterplanning.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/planning/bom-explosion-works-differently",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/troubleshooting-productconfigurator.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/products/cant-delete-released-prod",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/troubleshooting-productinformation.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/products/cant-delete-released-prod",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/troubleshoot-procurementworkflows.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/procurement/accounting-over-under-distributed",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/troubleshoot-purchaseorders.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/procurement/accounting-over-under-distributed",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/troubleshooting-pricediscountagreements.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/procurement/accounting-over-under-distributed",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/troubleshooting-productreceiptinvoicing.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/procurement/accounting-over-under-distributed",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/troubleshoot-discretemanufacturing.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/production/backflush-costing-calculation-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/troubleshoot-processmanufacturing.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/production/backflush-costing-calculation-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/sales-marketing/troubleshooting-sales.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/sales/bundle-item-intercompany-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/sales-marketing/troubleshooting-salesquotation.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/sales/bundle-item-intercompany-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-app-connection.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-configuration.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-inbound.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-loads-shipments.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-outbound.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-partial-release-shipment.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-picking-packing.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-replenishment.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-reservations.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-setup.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-upgrade-migration.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-work.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/dev-tools/programming-language-support.md",
       "redirect_url": "../dev-ref/xpp-language-reference",
       "redirect_document_id": "false"
@@ -4747,17 +4877,17 @@
       "redirect_document_id": "true"
     },
     {
-      "source_path": "supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017-update.md",
+      "source_path": "articles/supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017-update.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process",
       "redirect_document_id": "true"
     },
     {
-      "source_path": "supply-chain/warehousing/warehouse-mobile-devices-portal.md",
+      "source_path": "articles/supply-chain/warehousing/warehouse-mobile-devices-portal.md",
       "redirect_url": "/dynamics365/dev-itpro/migration-upgrade/deprecated-features.md#warehouse-mobile-devices-portal",
       "redirect_document_id": "false"
     },
     {
-      "source_path": "supply-chain/warehousing/change-warehouse-mobile-device-displays.md",
+      "source_path": "articles/supply-chain/warehousing/change-warehouse-mobile-device-displays.md",
       "redirect_url": "/dynamics365/dev-itpro/migration-upgrade/deprecated-features.md#warehouse-mobile-devices-portal",
       "redirect_document_id": "false"
     },

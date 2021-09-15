@@ -3,7 +3,7 @@
 title: Feature management overview
 description: This topic describes the Feature management feature and how you can use it.
 author: Peakerbl
-ms.date: 07/30/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,7 +26,6 @@ ms.dyn365.ops.version: 10.0.2
 # Feature management overview
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../../includes/preview-banner.md)]
 
 Features are added and updated in every release. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. You can then use the workspace to view feature documentation, and to enable or disable features.
 

@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Configure page caching
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how to configure page caching in Microsoft Dynamics 365 Commerce, to help improve the performance of e-commerce pages that sent back to customers.
 

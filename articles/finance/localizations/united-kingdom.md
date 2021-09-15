@@ -3,8 +3,8 @@
 
 title: United Kingdom overview
 description: This topic provides links to documentation resources for the United Kingdom. 
-author: ShylaThompson
-ms.date: 02/24/2021
+author: kfend
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: "intro-internal"
 ms.search.region: United Kingdom
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -39,7 +39,16 @@ This topic provides links to documentation resources for United Kingdom.
   - [Set up reverse charge VAT item groups, rules, and parameters](tasks/gb-00002-reverse-charge-vat-item-groups.md)
   - [Create a purchase order that includes items subject to reverse charge VAT](tasks/purchase-order-reverse-charge-vat.md)
   - [Create a sales order that includes items subject to reverse charge VAT](tasks/gb-00002-sales-order.md)
-- [Making Tax Digital for VAT](emea-gbr-mtd-vat-integration.md)
+- Making Tax Digital (MTD) for VAT
+  - [Making Tax Digital (MTD) VAT return submission in the United Kingdom](emea-gbr-mtd-vat-integration.md)
+  - [Prepare your environment to interoperate with HMRC's MTD VAT web service](emea-gbr-mtd-vat-integration-setup.md)
+  - [Checklist for Electronic messages setup for MTD VAT](emea-gbr-mtd-vat-integration-em-setup-checklist.md)
+  - [Test interoperation with the MTD VAT sandbox](emea-gbr-mtd-vat-integration-sandbox.md)
+  - [Authorize your Finance environment to interoperate with HMRC's MTD web service](emea-gbr-mtd-vat-integration-authorization.md) 
+  - [Submit a VAT return to HMRC's MTD web service](emea-gbr-mtd-vat-integration-submission.md)
+  - [Retrieve information about VAT payments and liabilities from HMRC](emea-gbr-mtd-vat-integration-optional-scenarios.md)
+  - [VAT setup details for VAT declarations in the United Kingdom](emea-gbr-mtd-vat-integration-declaration.md )
+  - [Generate a VAT declaration in paper format (VAT 100 report)](emea-gbr-mtd-vat-integration-vat100.md)
 - [Statistics on payment practices report](emea-gbr-statistics-on-payment-practices-report.md)
 - [Finance (Globalization) guidance about Brexit impact](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 
