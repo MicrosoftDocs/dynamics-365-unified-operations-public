@@ -84,24 +84,24 @@ The following scenarios are covered by the fiscal printer integration sample for
 The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
 
 - Payment method mapping:
-    ```json
-    {
-      "PaymentMethods": [
-        {"StorePaymentMethod":"1", "AtolPaymentType":0},
-        {"StorePaymentMethod":"2", "AtolPaymentType":4},
-        {"StorePaymentMethod":"3", "AtolPaymentType":1},
-        {"StorePaymentMethod":"4", "AtolPaymentType":3},
-        {"StorePaymentMethod":"5", "AtolPaymentType":0},
-        {"StorePaymentMethod":"6", "AtolPaymentType":0},
-        {"StorePaymentMethod":"7", "AtolPaymentType":4},
-        {"StorePaymentMethod":"8", "AtolPaymentType":4},
-        {"StorePaymentMethod":"10", "AtolPaymentType":4},
-        {"StorePaymentMethod":"11", "AtolPaymentType":4}
-     ]
-    }    
-    ```
+	```json
+	{
+		"PaymentMethods": [
+			{"StorePaymentMethod":"1", "AtolPaymentType":0},
+			{"StorePaymentMethod":"2", "AtolPaymentType":4},
+			{"StorePaymentMethod":"3", "AtolPaymentType":1},
+			{"StorePaymentMethod":"4", "AtolPaymentType":3},
+			{"StorePaymentMethod":"5", "AtolPaymentType":0},
+			{"StorePaymentMethod":"6", "AtolPaymentType":0},
+			{"StorePaymentMethod":"7", "AtolPaymentType":4},
+			{"StorePaymentMethod":"8", "AtolPaymentType":4},
+			{"StorePaymentMethod":"10", "AtolPaymentType":4},
+			{"StorePaymentMethod":"11", "AtolPaymentType":4}
+		]
+	}    
+	```
 
-The default payment method mapping is based on the store payment method configuration in demo data. You may need to modify the mapping in the connector functional profile according to the settings of payment methods for your stores. See also the [ATOL integration documentation](http://integration.atol.ru/) for more information on payment types supported by ATOL fiscal printers.
+	The default payment method mapping is based on the store payment method configuration in demo data. You may need to modify the mapping in the connector functional profile according to the settings of payment methods for your stores. See also the [ATOL integration documentation](http://integration.atol.ru/) for more information on payment types supported by ATOL fiscal printers.
 
 ## Set up fiscal integration for Russia
 
@@ -239,8 +239,8 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 		```
 	
 	1.  Restart the Hardware station service:
-	- **Remote Hardware station:** Restart the Hardware station site from IIS Manager.
-	- **Local Hardware station:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
+		- **Remote Hardware station:** Restart the Hardware station site from IIS Manager.
+		- **Local Hardware station:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
 #### Install fiscal printer driver
 
@@ -251,7 +251,7 @@ Install the driver of the fiscal printer to the Hardware station machine. See th
 
 #### Production environment
 
-Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
+Follow these additional steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
 1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
