@@ -4,7 +4,7 @@
 title: Electronic reporting conponents
 description: This topic describes the Electronic reporting components.
 author: AnastasiaMiroshkina
-ms.date: 15/06/2021
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Electronic reporting (ER) components
 
-ER supports next types of components: **Data model**, **Model mapping**,  **Format** and **Metadata**.
+ER supports next types of components: **Data model**, **Model mapping**, **Format** and **Metadata**.
 
 ## Data model component
 
