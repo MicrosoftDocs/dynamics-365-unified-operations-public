@@ -65,9 +65,9 @@ Module names are case-insensitive. We recommended that you use whole words for m
 
 ## Deferred module rendering
 
-By default all modules are rendered server-side, but deferred loading of some modules may be needed to improve page load performance. For more information, see [Page load data actions](page-load-data-action.md).
+By default, all modules are rendered server-side, but deferred loading of some modules may be needed to improve page load performance. For more information, see [Page load data actions](page-load-data-action.md).
 
-Any references to window or document objects that are only available in the context of a browser should be handled appropriately during server-side rendering. This will avoid unexpected rendering behavior such as page flicker and Document Object Model (DOM) mismatch issues. The **MsDyn365.isBrowser** SDK utility function can be used for this purpose as shown in the following example.
+To help prevent unexpected rendering behavior, such as page flicker and Document Object Model (DOM) mismatch issues, any references to window or document objects that are available only in the context of a browser should be appropriately handled during server-side rendering. The **MsDyn365.isBrowser** SDK utility function can be used for this purpose, as shown in the following example.
 
 ```typescript
 import MsDyn365 from '@msdyn365-commerce/core';
@@ -79,7 +79,7 @@ if (MsDyn365.isBrowser) {
 
 ## Module error handling 
 
-If a module encounters an error during server-side rendering, the failed module is then wrapped into an **ErrorModule** component to prevent any module-level render error from breaking the page. For example, a module using window or document objects during a server-side render would fail because these objects are non-existent on the server-side. In this case, the module would then be wrapped in an error component. The module would then attempt to render again on the client. In development mode, to determine if a module failed on server side use a `?debug=true` query string parameter.
+If a module encounters an error during server-side rendering, the failed module is then wrapped into an **ErrorModule** component to prevent any module-level render error from breaking the page. For example, a module using window or document objects during a server-side render would fail because these objects are non-existent on the server side. In this case, the module would then be wrapped in an error component. The module would then attempt to render again on the client. In development mode, to determine if a module failed on the server side, use a `?debug=true` query string parameter.
 
 ## Additional resources
 
