@@ -28,8 +28,6 @@ ms.dyn365.ops.version: AX 10.0.23
 
 # Tax settlement rounding based on the customized currency decimal places
 
-[!include [banner](../includes/banner.md)]
-
 This topic explains the functionality of the feature "Tax settlement rounding based on the customized currency decimal places".
 
 ### Requirements
@@ -45,5 +43,3 @@ Due to the high value of the currency in Gulf region countries, customers usuall
 Enable this feature when you have customized decimal places (E.g., extended to 3 decimal places) for the amount data types. Tax settlements can round with the same precision. Setup the round-off parameter to the corresponding precision in the configuration of sales tax authorities in the tax module.
 
 [![Tax authority round-off](./media/tax-settle-tax-authority-round-off.png)](./media/tax-settle-tax-authority-round-off.png)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
