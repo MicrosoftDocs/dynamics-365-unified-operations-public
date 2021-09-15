@@ -27,7 +27,7 @@ These topics describe dual-write integration.
     - [What does dual-write mean for developers and architects of customer engagement app?](dual-write-overview.md#developer-architect)
 
 + [What's new or changed in dual-write](whats-new-dual-write.md)
-+ [Frequently asked questions](dual-write-faq.md)    
++ [Frequently asked questions](dual-write-faq.md)
 
 ## Dual-write setup
 
