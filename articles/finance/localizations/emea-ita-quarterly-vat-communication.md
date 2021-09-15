@@ -3,8 +3,8 @@
 
 title: Quarterly VAT communication report
 description: This topic provides information about Quarterly VAT communication report in Italy.
-author: LizaGolub
-ms.date: 02/09/2021
+author: liza-golub
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -152,7 +152,7 @@ When you've finished updating the format, save, close, and complete it.
 
 A new menu item for the **Quarterly VAT communication (LIPE)** report must be associated with the format that you created and updated for your legal entity.
 
-1. Go to **Tax** \> **Setup** \> **Parameters** \> **General ledger parameters**.
+1. Go to **Tax** > **Setup** > **Parameters** > **General ledger parameters**.
 2. On the **Sales tax** tab, on the **Quarterly VAT communication** FastTab, in the **Format mapping** field, select the **Quarterly VAT Communication** format that you created.
 
     ![Set up Quarterly VAT Communication format in General ledger parameters.](./media/gl-parameters-er-format.png)
