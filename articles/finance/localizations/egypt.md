@@ -30,8 +30,6 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This topic includes information and links to documentation resources for Egypt.
 
 - [Configure registration numbers](emea-egy-reg-numbers.md)
