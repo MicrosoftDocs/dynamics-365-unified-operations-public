@@ -150,7 +150,7 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 1. Auxiliary files:
 	1. Copy the **repo.props** file from **Dynamics365Commerce.Solutions** to the **RetailSDK\\src\\SampleExtensions** folder.
 	1. Copy the **CustomizationPackage.props** file from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample** to the **RetailSDK\\src\SampleExtensions** folder.
-	1. Open the **CustomizationPackage.props** file and replace the following line
+	1. Open the **CustomizationPackage.props** file and replace the following line:
 		
 		``` xml
 		<Import Project="..\..\..\repo.props" />
@@ -205,65 +205,42 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 		<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
 		```
 
-### Commerce runtime extension components
+#### Build extension projects
 
-The Commerce runtime extension components are copied in the Retail SDK. To complete the following procedures, open the CRT solution,  **CommerceRuntimeSamples.sln**, under  **RetailSdk\SampleExtensions\CommerceRuntime**.
+1. Commerce runtime extension components
+	1. Open the **CommerceRuntimeSamples.sln** solution under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+	1. Find the **DocumentProvider.AtolSample** project, and build it.
+	1. Find the **Contoso.CommerceRuntime.DocumentProvider.AtolSample.dll** assembly file in the **DocumentProvider.AtolSample\\bin\\Debug** folder.
+	1. Copy the assembly file to the CRT extension folder:
+		- **Commerce Scale Unit:**  Copy the assembly to the  **\\bin\\ext**  folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
+		- **Local CRT on Modern POS:**  Copy the assembly to the  **\\ext**  folder under the local CRT client broker location.
+	1. Find the extension configuration file for CRT:
+		- **Commerce Scale Unit:**  The file is named  **commerceruntime.ext.config**, and it's in the bin\ext folder under the IIS Commerce Scale Unit site location.
+		- **Local CRT on Modern POS:**  The file is named  **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+	1.  Register the CRT change in the extensions configuration file. Add  **source="assembly" value="Contoso.CommerceRuntime.DocumentProvider.AtolSample"**.
+	1.  Restart the Commerce Scale Unit:
+		- **Commerce Scale Unit:**  Restart the Commerce Scale Unit site from IIS Manager.
+		- **Client broker:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
-1.  Find the  **DocumentProvider.AtolSample**  project, and build it.
+1. Hardware station extension components:
+	1. Open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
+	1. Find the **Connector.AtolSample** project, and build it.
+	1. Find the **Contoso.HardwareStation.Connector.AtolSample.dll** assembly file in the **Connector.AtolSample\\bin\\Debug** folder.
+	1. Copy the assembly file to a deployed Hardware station machine:
+		- **Remote Hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location.
+		- **Local Hardware station:** Copy the files to the Modern POS client broker location.
+	1. Find the extension configuration file for Hardware station. The file is named  **HardwareStation.Extension.config**:
+		- **Remote Hardware station:** The file is located under the IIS Hardware station site location.
+		- **Local Hardware station:** The file is located under the Modern POS client broker location.
+	1. Add the following section to the  **composition**  section of the config file.
 
-2.  In the  **DocumentProvider.AtolSample\bin\Debug**  folder, find the  **Contoso.CommerceRuntime.DocumentProvider.AtolSample.dll**  assembly file.
-
-3.  Copy the assembly file to the CRT extensions folder:
-
-    - **Commerce Scale Unit:**  Copy the assembly to the  **\bin\ext**  folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
+		```xml
+		<add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
+		```
 	
-    - **Local CRT on Modern POS:**  Copy the assembly to the  **\ext**  folder under the local CRT client broker location.
-	
-5.  Find the extensions configuration file for CRT:
-
-    - **Commerce Scale Uni:**  The file is named  **commerceruntime.ext.config**, and it's in the bin\ext folder under the IIS Commerce Scale Uni site location.
-	
-    - **Local CRT on Modern POS:**  The file is named  **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
-	
-6.  Register the CRT change in the extensions configuration file. Add  **source="assembly" value="Contoso.CommerceRuntime.DocumentProvider.AtolSample"**.
-
-7.  Restart the Commerce Scale Unit:
-
-    - **Commerce Scale Uni:**  Restart the Commerce Scale Uni site from IIS Manager.
-	
-    - **Client broker:**  End the  **dllhost.exe**  process in Task Manager, and then restart Modern POS.
-	
-### Hardware station extension components
-
-The Hardware station extension components are copied in the Retail SDK. To complete the following procedures, open the Hardware Station solution,  **HardwareStationSamples.sln**, under  **RetailSdk\SampleExtensions\HardwareStation**.
-
-1.  Find the  **Connector.AtolSample**  project, and build it.
-
-2.  In the  **Connector.AtolSample\bin\Debug**  folder, find the  **Contoso.HardwareStation.Connector.AtolSample.dll**  assembly file.
-
-3.  Copy the files to a deployed Hardware station machine:
-
-    -   **Remote Hardware station:**  Copy the files to the  **bin**  folder under the IIS Hardware station site location.
-	
-    -   **Local Hardware station:**  Copy the files to the Modern POS client broker location.
-	
-4.  Find the configuration file for the Hardware station's extensions. The file is named  **HardwareStation.Extension.config**:
-
-    -   **Remote Hardware station:**  The file is located under the IIS Hardware station site location.
-	
-    -   **Local Hardware station:**  The file is located under the Modern POS client broker location.
-	
-5.  Add the following section to the  **composition**  section of the config file.
-
-    ```xml
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
-    ```
-	
-7.  Restart the Hardware station service:
-
-    -   **Remote Hardware station:**  Restart the Hardware station site from IIS Manager.
-	
-    -   **Local Hardware station:**  End the  **dllhost.exe**  process in Task Manager, and then restart Modern POS.
+	1.  Restart the Hardware station service:
+	- **Remote Hardware station:** Restart the Hardware station site from IIS Manager.
+	- **Local Hardware station:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
 # Registration of migrated projects in RetailSDK
 
