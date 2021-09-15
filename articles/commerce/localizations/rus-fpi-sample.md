@@ -145,7 +145,7 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 > [!WARNING]
 > Due to limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it is currently not possible to use it for this fiscal integration sample. You need to use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). Next sections describe how to enable the sample using the previous version of the Retail SDK.
 
-#### Copy the sample files to Retail SDK
+#### Copy sample files to Retail SDK
 
 1. Auxiliary files:
 	1. Copy the **repo.props** file from **Dynamics365Commerce.Solutions** to the **RetailSDK\\src\\SampleExtensions** folder.
@@ -242,7 +242,9 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 	- **Remote Hardware station:** Restart the Hardware station site from IIS Manager.
 	- **Local Hardware station:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
-# Registration of migrated projects in RetailSDK
+#### Production environment
+
+Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
 1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
@@ -258,7 +260,7 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
         <add source="assembly" value="Contoso.HardwareStation.Connector.AtolSample" />
         ```
 
-2. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
+1. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
     - Add the following lines to include the CRT extensions in the deployable packages.
 
@@ -272,7 +274,6 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.HardwareStation.Connector.AtolSample.dll" />
         ```
 
-3. Complete all the required setup tasks that are described in the [Set up Commerce localization for Russia](#rus-commerce-setup) section.
-4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
-5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+1. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
