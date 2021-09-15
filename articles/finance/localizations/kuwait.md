@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
-ms.search.region: Bahrain
+ms.search.region: Kuwait
 # ms.search.industry: 
 ms.author: ilyako
 ms.search.validFrom: 2020-06-04
