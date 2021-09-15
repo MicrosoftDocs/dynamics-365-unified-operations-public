@@ -145,13 +145,13 @@ The Commerce runtime extension components are included in the Retail SDK. To com
 
 1. Find the extensions configuration file for CRT:
 
-    - **Commerce Scale Uni:** The file is named **commerceruntime.ext.config**, and it's in the bin\\ext folder under the IIS Commerce Scale Uni site location.
+    - **Commerce Scale Uni:** The file is named **commerceruntime.ext.config**, and it's in the bin\\ext folder under the IIS Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
 1. Register the CRT change in the extensions configuration file. Add **source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample"**.
 1. Restart the Commerce Scale Unit:
 
-    - **Commerce Scale Uni:** Restart the Commerce Scale Uni site from IIS Manager.
+    - **Commerce Scale Uni:** Restart the Commerce Scale Unit site from IIS Manager.
     - **Client broker:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
 #### Hardware station extension components
