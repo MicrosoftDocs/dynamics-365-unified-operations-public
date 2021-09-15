@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [preview feature](./includes/preview-feature.md)]
-
 > [!NOTE]
 > If you want to mark an employee as ready to pay, you must first enable the **(Preview) payroll integration** functionality in feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).
 
@@ -77,10 +75,9 @@ If one of these validations fails, you cannot mark the employee as ready to pay.
 
 If the **Ready to pay** field is **No**, this is an indication that you must perform an action to ensure the worker profile is complete. This will not stop the data to be exposed in any data entity. 
 
-## Known issues
+## Process Automation
 
-- You must disable the feature **Streamlined employee entry** in feature management. The tiles in the compensation management workspace won't work properly if you use this feature.
-- On the **Worker** page, the **Payroll tab**, **Ready to pay** group is available to any user role. 
+You can automate the validation of all employees using the [Process Automation](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation) in the Compensation management workspace, under links, Process Automations.
 
 ## See also
 
