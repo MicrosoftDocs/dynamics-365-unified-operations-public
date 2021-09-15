@@ -118,7 +118,7 @@ The following example shows how the various supported data types are used.
         "subTitle": {
             "type": "richText",
             "friendlyName": "SubTitle",
-            "description": "Subtitle rich text field"
+            "description": "Sub title rich text field"
         },
         "bgImage": {
             "type": "image",
