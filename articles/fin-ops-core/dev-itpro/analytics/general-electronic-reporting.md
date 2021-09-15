@@ -4,7 +4,7 @@
 title: Electronic reporting (ER) overview
 description: This topic provides an overview of the Electronic reporting tool. It describes key concepts, supported scenarios, and formats that are part of the solution.
 author: NickSelin
-ms.date: 04/23/2021
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -53,7 +53,12 @@ The ER engine has the following capabilities:
 
 ### Components
 
-ER supports next types of components: **Data model**, **Model mapping**,  **Format** and **Metadata**.
+ER supports the following types of components: 
+  - **Data model**
+  - **Model mapping**
+  - **Format**
+  - **Metadata**
+
 For more information, see [Electronic reporting (ER) components](ER_overview_components.md)).
 
 
