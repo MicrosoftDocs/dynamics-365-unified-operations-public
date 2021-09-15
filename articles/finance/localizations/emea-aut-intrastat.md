@@ -3,13 +3,13 @@
 
 title: Austrian Intrastat
 description: This topic contains information about the Austrian Intrastat report.
-author: tonyafehr
+author: anasyash
 ms.date: 09/15/2021
 ms.topic: article
 audience: 
-ms.reviewer: 
+ms.reviewer: kfend 
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 
