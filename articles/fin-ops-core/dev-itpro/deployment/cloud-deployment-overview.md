@@ -4,7 +4,7 @@
 title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
 author: LaneSwenka
-ms.date: 06/04/2021
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -148,7 +148,7 @@ Production environments are configured with Azure disaster recovery support that
 Only primary data stores are supported by replication. The Financial reporting services and Entity store database use transformed data from the primary database and must be generated after the recovery site has been set up and the Finance and Operations service has started. 
 
 ## Service availability in Azure Regions
-Finance and Operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see the [Service description white paper](https://aka.ms/D365-Cloud-Service-Operations).
+Finance and Operations apps can be deployed into a subset of Microsoft Azure datacenters using Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. With Finance and Operations apps, customers can specify the region or datacenter where their customer data will be stored. Microsoft may replicate data to other regions for data durability, but we will not replicate or move customer data outside the geographical location. For more details, see [Service description for Finance and Operations apps](../../fin-ops/get-started/service-description.md).
 
 > [!IMPORTANT]
 > Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it.
