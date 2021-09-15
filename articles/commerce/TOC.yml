@@ -668,6 +668,8 @@
           href: tasks/base-price-trade-agreements.md
         - name: Create trade agreements using category pricing rules
           href: tasks/category-pricing-rules-trade-agreements.md
+        - name: Delay exact price and discount calculation
+          href: delayed-price-calculation.md
       - name: Recommendations 
         items:
         - name: Product recommendations overview 
