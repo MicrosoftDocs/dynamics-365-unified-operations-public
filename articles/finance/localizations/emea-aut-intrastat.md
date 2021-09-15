@@ -9,7 +9,7 @@ ms.topic: article
 audience: 
 ms.reviewer: 
 ms.search.region: Global
-ms.author: andosip
+ms.author: v-aosipov
 ms.search.validFrom: 
 ---
 # Austrian Intrastat
