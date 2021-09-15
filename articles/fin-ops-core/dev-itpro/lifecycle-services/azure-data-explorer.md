@@ -24,8 +24,10 @@ Excel is not the optimal tool for advanced querying of this data. A tool that is
 Here are two examples of how these types of graphics could look.
 
 ![Bar graph example 1.](https://user-images.githubusercontent.com/45279749/130295988-59e63346-348b-4531-a3f3-e3ab55a02719.png)
+![Bar graph example 1}](media/ADE1.png)
 
 ![Bar graph example 2.](https://user-images.githubusercontent.com/45279749/130296001-e1a757e7-f2f7-4469-a5df-ae29319b2ea9.png)
+![Bar graph example 2}](media/ADE2.png)
 
 A lesser-known feature of the Azure Data Explorer is that it supports CSV files. You can use Azure Data Explorer to get CSV data files uploaded and staged so they can be queried with the Kusto language. To set up Azure Data Explorer cluster, see [Quickstart: Create an Azure Data Explorer cluster and database](/azure/data-explorer/create-cluster-database-portal).
 
@@ -39,19 +41,23 @@ To upload to Azure Data Explorer, follow these steps:
 2.	Export the grid to Excel.
 
     ![Environment monitoring page in LCS.](https://user-images.githubusercontent.com/45279749/130296479-6904b125-cd7b-4fee-9a1e-7e1bfb619e1e.png)
+    ![Environment monitoring page in LCS.](media/ADE3.png)
 
 3.	Open the file in Excel and save it without making any changes (this will fix any formatting issues).
 4.	In Azure Data Explorer, right-click the cluster in the tree view and select **Ingest new data**. On the next page, select **Ingest data from a local file**.
 
     ![Select Ingest new data.](https://user-images.githubusercontent.com/45279749/130296578-7e957c4f-807f-47eb-bf8e-40b69b64a29b.png)
+    ![Select Ingest new data.](media/ADE4.png)
 
 5.	Select a cluster. Provide a name for the new table for the data to be imported into, and then select up to 10 CSV files to import. Select CSV format. Select **Next** until your data is imported.
 
     ![Data is imported.](https://user-images.githubusercontent.com/45279749/130296627-8969fa68-1232-4c73-84e1-271d7af97a70.png)
+    ![Data is imported.](media/ADE5.png)
 
 6. Select the **Query** tile to display an area where you can write a Kusto query against your data. 
 
     ![Use Query tile.](https://user-images.githubusercontent.com/45279749/130296674-15db289d-b994-44cf-b783-ce3b54e33d0f.png)
+    ![Use Query tile.](media/ADE6.png)
 
 To learn more about the Kusto query language, see [Tutorial: Use Kusto queries in Azure Data Explorer and Azure Monitor](/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer).
 
