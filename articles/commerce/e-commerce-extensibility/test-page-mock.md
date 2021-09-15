@@ -192,15 +192,15 @@ Some modules might have logic that must check the signed-in state of the user be
 }
 ```
 
-If you must simulate real data or the token that is returned from Commerce Server, follow the steps below.
+Use the following procedure if you must simulate real data or the token that is returned from Commerce Server.
 
-The user information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable. While the F12 browser tools are open and a user is signed in, open a console window and enter **\_\_\_initialData\_\_\_.requestContext.user** to see the object. 
+The user information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable. While the web browser's developer (F12) tools are open and a user is signed in, you can view the object by opening a console window and entering **\_\_\_initialData\_\_\_.requestContext.user**. 
 
 To simulate real data or the token that is returned from Commerce Server, follow these steps.
 
 1. Load the e-commerce site page that you're working on, and sign in or create a new account.
-1. Open your web browser's debugging tools. For example, if you're using Google Chrome or Microsoft Edge, you can open the developer tools by pressing the **F12** key. 
-1. Open a console window, and enter **\_\_\_initialData\_\_\_.requestContext.user** to see the object. (User information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable.)
+1. Open your web browser's debugging tools. For example, if you're using Google Chrome or Microsoft Edge, you can open the developer tools by selecting the **F12** key. 
+1. Open a console window, and enter **\_\_\_initialData\_\_\_.requestContext.user** to view the object. (User information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable.)
 1. Add the module that must be tested to a page mock.
 1. In the **renderingContext** section of the page mock, add the following **userContext** section.
 
@@ -222,9 +222,9 @@ To simulate real data or the token that is returned from Commerce Server, follow
     },
     ```
 
-1. Update the user information (**token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress**) obtained from the web browser's debugging tools.
+1. Update the user information (**token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress**) that you obtained from the web browser's debugging tools.
 
-The user information can now be obtained in the React component from within the **this.props.context.request.user** object.
+The user information can now be obtained from within the **this.props.context.request.user** object in the React component.
 
 ## Create a dynamic page mock from a production e-Commerce page
 
