@@ -50,6 +50,7 @@ These topics describe dual-write integration.
 ## Managing dual-write after setup
 
 + [Customize table and column mappings](customizing-mappings.md)
++ [Customization guidance for dual-write](custom-best-practices.md)
 + [Handling multiple table maps](multiple-entity-maps.md)
 + [Edit a legal entity after dual-write setup](edit-legal-entity.md)
 + [Error management and alert notifications](errors-and-alerts.md)
