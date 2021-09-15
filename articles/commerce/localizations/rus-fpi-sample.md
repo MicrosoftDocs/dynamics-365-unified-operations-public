@@ -114,6 +114,7 @@ To set up fiscal integration for Russia, complete the fiscal registration setup 
 1. [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 1. [Enable manual execution of postponed fiscal registration](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 1. [Set up the functionality for management of customer information in POS](rus-customer-information.md#setup)
+1. [Configure channel components](#configure-channel-components).
 
 ### Configure the fiscal registration process
 
@@ -170,16 +171,16 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 
 #### Include extension projects to solutions
 
-1. Commerce runtime solution:
+1. The Commerce runtime solution:
 	1. Find the **RetailSDK\SampleExtensions\\CommerceRuntime\\CommerceRuntimeSamples.sln** solution and open it.
 	1. Add the **DocumentProvider.AtolSample.csproj** project located in the **RetailSDK\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample** folder.
-1. Hardware station solution:
+1. The Hardware station solution:
 	1. Find the **RetailSDK\SampleExtensions\\HardwareStation\\HardwareStationSamples.sln** and open it.
 	1. Add the **Connector.AtolSample.csproj** project located in the **RetailSDK\\SampleExtensions\\HardwareStation\\Connector.AtolSample** folder.
 
 #### Adjust extension projects
 
-1. Commerce runtime extension project:
+1. The Commerce runtime extension project:
 	1. Find the **RetailSDK\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample\\DocumentProvider.AtolSample.csproj** file and open it as a text file.
 	1. Add the following lines to the top of the Project section:
 		``` xml
@@ -192,7 +193,7 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 		<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
 		```
 
-1. Hardware station extension project:
+1. The Hardware station extension project:
 	1. Find the **RetailSDK\\SampleExtensions\\HardwareStation\\Connector.AtolSample\\Connector.AtolSample.csproj** file and open it as text file.
 	1. Add the following lines to the top of the Project section:
 		``` xml
@@ -207,7 +208,7 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 
 #### Build extension projects
 
-1. Commerce runtime extension components
+1. The Commerce runtime extension components:
 	1. Open the **CommerceRuntimeSamples.sln** solution under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 	1. Find the **DocumentProvider.AtolSample** project, and build it.
 	1. Find the **Contoso.CommerceRuntime.DocumentProvider.AtolSample.dll** assembly file in the **DocumentProvider.AtolSample\\bin\\Debug** folder.
@@ -222,7 +223,7 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 		- **Commerce Scale Unit:**  Restart the Commerce Scale Unit site from IIS Manager.
 		- **Client broker:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
-1. Hardware station extension components:
+1. The Hardware station extension components:
 	1. Open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
 	1. Find the **Connector.AtolSample** project, and build it.
 	1. Find the **Contoso.HardwareStation.Connector.AtolSample.dll** assembly file in the **Connector.AtolSample\\bin\\Debug** folder.
