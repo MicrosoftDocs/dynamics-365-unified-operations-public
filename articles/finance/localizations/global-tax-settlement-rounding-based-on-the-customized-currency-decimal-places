@@ -1,0 +1,49 @@
+---
+# required metadata
+
+title: Tax settlement rounding based on the customized currency decimal places
+description: This topic explains the functionality of the feature "Tax settlement rounding based on the customized currency decimal places".
+author: shtao
+ms.date: 09/15/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region:
+# ms.search.industry: 
+ms.author: shtao
+ms.search.validFrom:
+ms.dyn365.ops.version: AX 10.0.23
+---
+
+# Tax settlement rounding based on the customized currency decimal places
+
+[!include [banner](../includes/banner.md)]
+
+This topic explains the functionality of the feature "Tax settlement rounding based on the customized currency decimal places".
+
+### Requirements
+
+Dynamics 365 release version should be equal to or higher than 10.0.23(PU47).
+
+### Background
+
+Due to the high value of the currency in Gulf region countries, customers usually extended the amount(money) data type to 3 or 4 or higher decimal places according to the topic [Extending decimal point precision for selected data types](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/decimal-point-precision). And the tax settlement functionality (**Tax > Declarations > Sales tax > Settle and post sales tax**) also needs to round with the same precision. If the tax settlement does not use the same rounding precision (decimal place) from the customized currency, the tax settlement will lose the accuracy of the amount, resulting in the voucher imbalance.
+
+### Functionality
+
+Enable this feature when you have customized decimal places (E.g., extended to 3 decimal places) for the amount data types. Tax settlements can round with the same precision. Setup the round-off parameter to the corresponding precision in the configuration of sales tax authorities in the tax module.
+
+[![Tax authority round-off](./media/tax-settle-tax-authority-round-off.png)](./media/tax-settle-tax-authority-round-off.png)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
