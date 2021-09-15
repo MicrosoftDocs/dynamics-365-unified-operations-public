@@ -194,4 +194,4 @@ Follow these steps to set up basic inventory to enable transfer order transactio
         ![Setting up Inter-unit receivable posting.](../media/image16.png)
         
         
-  [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+  [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
