@@ -242,6 +242,13 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 	- **Remote Hardware station:** Restart the Hardware station site from IIS Manager.
 	- **Local Hardware station:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
+#### Install fiscal printer driver
+
+Install the driver of the fiscal printer to the Hardware station machine. See the manufacturer's documentation for detailed guidelines.
+
+> [!NOTE]
+> If you are using a 64-bit driver, set the **Enable 32-bit Applications** parameter to **False** for the Hardware station application pool in IIS Manager. Otherwise, if you are using a 32-bit driver, set the **Enable 32-bit Applications** parameter to **True**.
+
 #### Production environment
 
 Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
