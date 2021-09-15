@@ -133,7 +133,7 @@ For POS customizations, you must also follow these steps on the guest VM.
 
 ### Provisioning the administrator user
 
-For developer access, you must be an administrator on the instance. For environments that are provisioned through LCS, we encourage you to deploy with the correct user. (For more information, see the [Frequently asked questions](access-instances.md#frequently-asked-questions) section later in this topic.) To provision your own credentials as an administrator on a local VM, run the Admin user provisioning tool. On the local VM, a link is provided on the desktop.
+For developer access, you must be an administrator on the instance. For environments that are provisioned through LCS, we encourage you to deploy with the correct user. For more information, see [Frequently asked questions](access-instances.md#frequently-asked-questions). To provision your own credentials as an administrator on a local VM, run the Admin user provisioning tool. On the local VM, a link is provided on the desktop.
 
 1. Run the admin user provisioning tool as an administrator (right-click the icon, and then click **Run as administrator**).
 2. Enter your email address, and then select **Submit**.
@@ -256,16 +256,16 @@ A Tier 1/customer-managed environment should be deployed under the customer's Az
 
 To facilitate cloud-hosted deployments, we recommend that partners follow this step to create customer-specific, cloud-hosted environments. In this way, they will ensure that the deployment is registered under the correct tenant.
 
-- Deploy the environment via a user from the tenant that the environment will be used with. The Admin provisioning tool should not be used to change the tenant for a Tier 1/customer-managed/cloud-hosted environment.
+- Deploy the environment via a user from the tenant that the environment will be used with. The Admin user provisioning tool should not be used to change the tenant for a Tier 1/customer-managed/cloud-hosted environment.
 
 > [!NOTE]
 > The Azure AD tenant that is associated with the Azure subscription doesn't play any role in environment configuration. The Azure subscription and the corresponding connector configuration are used only to deploy Azure resources.
 
-### I have run the Admin provisioning tool on my development environment, and now I receive the following sign-in error: "Error: AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application."
+### I have run the Admin user provisioning tool on my development environment, and now I receive the following sign-in error: "Error: AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application."
 As was stated earlier, it's very important that Finance and Operations environments be deployed under the correct Azure AD tenant. For Tier 1/customer-managed environments that are deployed via LCS, changes to the Azure AD tenant settings aren't supported after deployment.
 
 ### How can I fix my existing environment where I am getting sign-in errors?
-If you have environments where the Admin provisioning tool was previously used to update the tenant settings, we recommend that you delete those environments and then redeploy them under the correct Azure AD tenant.
+If you have environments where the Admin user provisioning tool was previously used to update the tenant settings, we recommend that you delete those environments and then redeploy them under the correct Azure AD tenant.
 
 If an existing environment can't be deleted and redeployed, its URL must be added to the configured Azure AD tenant. The following commands can be run by the tenant admin.
 
