@@ -1637,7 +1637,9 @@
         - name: VAT statement
           href: localizations/emea-aut-vat-statement-details.md
         - name: Cross-border services report
-          href: localizations/emea-aut-cross-border-services-report.md
+          href: localizations/emea-aut-vat-statement-details.md
+        - name: Intrastats report
+          href: localizations/emea-aut-intrastat.md
         - name: Purchase duties
           href: localizations/emea-aut-purchase-duties.md
       - name: Bahrain
