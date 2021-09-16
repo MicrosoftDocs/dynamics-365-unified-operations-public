@@ -2518,8 +2518,6 @@
           href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Set up a build pipeline for the independent-packaging SDK
           href: dev-itpro/build-pipeline.md
-        - name: Merge the build systems for Commerce and Finance and Operations
-          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
           href: dev-itpro/retail-sdk/migrate-sdk.md
         - name: Retail SDK extensibility samples
