@@ -3,7 +3,7 @@
 
 title: Batch business events
 description: This topic provides details about batch business events.
-author: sarvanisathish
+author: matapg007
 ms.date: 02/25/2021
 ms.topic: article
 ms.prod:
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.custom: NotInTOC
 ms.search.region: Global
 # ms.search.industry:
-ms.author: sarvanis
+ms.author: matgupta
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.17
 ---
