@@ -146,6 +146,9 @@ For more information about how to import ER formats, see [Download ER configurat
 
 To automatically generate a VAT declaration, associate sales tax codes in the application and lookup results in the ER configuration.
 
+> [!NOTE]
+> We recommend enabling **Use application specific parameters from previous versions of ER formats** feature in Feature management workspaces. When this feature is enabled, configured for the lower version of an ER format parameters automatically become applicable for the higher version of this format. When this feature is disabled, you must continue configuring application specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in Feature management workspaces starting from 10.0.23 version of Finance. For more information about **Set up the parameters of an ER format per legal entity** , see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+
 1. Go to **Workspaces** > **Electronic reporting**, and select **Reporting configurations**.
 2. Select the **VAT declaration XML (SE)** configuration, and then select **Configurations** > **Application specific parameters setup**.
 3. On the **Conditions** FastTab, associate the sales tax codes and report fields.
