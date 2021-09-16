@@ -4,7 +4,7 @@
 title: Customer information management for Italy
 description: This topic describes how to handle customer information in POS for Italy.
 author: sepism
-ms.date: 01/14/2020
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod:
 ms.technology:
