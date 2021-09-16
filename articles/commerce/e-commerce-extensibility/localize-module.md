@@ -4,7 +4,7 @@
 title: Localize a module
 description: This topic describes how to localize a module for rendering, and how to localize general module information, such as the module name, description, and configuration fields.
 author: samjarawan
-ms.date: 01/28/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ This topic describes how to localize a module for rendering. It also describes h
 
 ## Localize module-rendered strings
 
-For modules that render strings, the data might already be localized when it's received from the content management system (CMS). For example, a product title might come back from Dynamics 365 Commerce in a localized format. Therefore, it doesn't require localization. However, some strings that are defined in the module might require localization. For example, a module that renders a list page might have **Next** and **Previous** buttons that are used for page navigation. The labels for those buttons must be localized.
+For modules that render strings, the data might already be localized when it's received from the content management system (CMS). For example, a product title might come back from Dynamics 365 Commerce in a localized format. Therefore, it doesn't require localization. However, some strings that are defined in the module might require localization. For example, a module that renders a list page might have **Next** and **Previous** buttons that are used for page navigation. The labels for those buttons can be localized if the module will be rendered in multiple languages.
 
 ### Create a new resource string
 
@@ -42,11 +42,8 @@ Resources are stored in locale-specific JavaScript Object Notation (JSON) files 
 Here is an example of the file structure:
 
 * /src
-
     * /resources
-
         * /modules
-
             * global.json
             * en-us.json
             * de-de.json
