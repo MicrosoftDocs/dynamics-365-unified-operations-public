@@ -150,7 +150,7 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 
 1. Auxiliary files:
 	1. Copy the **repo.props** file from **Dynamics365Commerce.Solutions** to the **RetailSDK\\src\\SampleExtensions** folder.
-	1. Copy the **CustomizationPackage.props** file from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample** to the **RetailSDK\\src\SampleExtensions** folder.
+	1. Copy the **CustomizationPackage.props** file from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample** to the **RetailSDK\\src\\SampleExtensions** folder.
 	1. Open the **CustomizationPackage.props** file and replace the following line:
 		
 		``` xml
@@ -164,24 +164,24 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 		``` 
     
 1. Commerce runtime extension files:
-	1. Copy the **DocumentProvider.AtolSample** folder from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample\\CommerceRuntime** to the **RetailSDK\\SampleExtensions\\CommerceRuntime** folder.
+	1. Copy the **DocumentProvider.AtolSample** folder from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample\\CommerceRuntime** to the **RetailSDK\\src\\SampleExtensions\\CommerceRuntime** folder.
 
 1. Hardware station extension files:
-	1. Copy the **Connector.AtolSample** folder from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample\\HardwareStation** to the **RetailSDK\\SampleExtensions\\HardwareStation** folder.
+	1. Copy the **Connector.AtolSample** folder from **Dynamics365Commerce.Solutions\\src\\FiscalIntegration\\AtolFiscalPrinterSample\\HardwareStation** to the **RetailSDK\\src\\SampleExtensions\\HardwareStation** folder.
 
 #### Include extension projects to solutions
 
 1. The Commerce runtime solution:
-	1. Find the **RetailSDK\SampleExtensions\\CommerceRuntime\\CommerceRuntimeSamples.sln** solution and open it.
-	1. Add the **DocumentProvider.AtolSample.csproj** project located in the **RetailSDK\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample** folder.
+	1. Find the **RetailSDK\\src\\SampleExtensions\\CommerceRuntime\\CommerceRuntimeSamples.sln** solution and open it.
+	1. Add the **DocumentProvider.AtolSample.csproj** project located in the **RetailSDK\\src\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample** folder.
 1. The Hardware station solution:
-	1. Find the **RetailSDK\SampleExtensions\\HardwareStation\\HardwareStationSamples.sln** and open it.
-	1. Add the **Connector.AtolSample.csproj** project located in the **RetailSDK\\SampleExtensions\\HardwareStation\\Connector.AtolSample** folder.
+	1. Find the **RetailSDK\\src\\SampleExtensions\\HardwareStation\\HardwareStationSamples.sln** and open it.
+	1. Add the **Connector.AtolSample.csproj** project located in the **RetailSDK\\src\\SampleExtensions\\HardwareStation\\Connector.AtolSample** folder.
 
 #### Adjust extension projects
 
 1. The Commerce runtime extension project:
-	1. Find the **RetailSDK\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample\\DocumentProvider.AtolSample.csproj** file and open it as a text file.
+	1. Find the **RetailSDK\\src\\SampleExtensions\\CommerceRuntime\\DocumentProvider.AtolSample\\DocumentProvider.AtolSample.csproj** file and open it as a text file.
 	1. Add the following lines to the top of the Project section:
 		``` xml
 		<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
@@ -194,7 +194,7 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 		```
 
 1. The Hardware station extension project:
-	1. Find the **RetailSDK\\SampleExtensions\\HardwareStation\\Connector.AtolSample\\Connector.AtolSample.csproj** file and open it as text file.
+	1. Find the **RetailSDK\\src\\SampleExtensions\\HardwareStation\\Connector.AtolSample\\Connector.AtolSample.csproj** file and open it as text file.
 	1. Add the following lines to the top of the Project section:
 		``` xml
 		<Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
@@ -209,7 +209,7 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 #### Build extension projects
 
 1. The Commerce runtime extension components:
-	1. Open the **CommerceRuntimeSamples.sln** solution under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+	1. Open the **CommerceRuntimeSamples.sln** solution under **RetailSDK\\src\\SampleExtensions\\CommerceRuntime**.
 	1. Find the **DocumentProvider.AtolSample** project, and build it.
 	1. Find the **Contoso.CommerceRuntime.DocumentProvider.AtolSample.dll** assembly file in the **DocumentProvider.AtolSample\\bin\\Debug** folder.
 	1. Copy the assembly file to the CRT extension folder:
@@ -224,7 +224,7 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 		- **Client broker:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
 1. The Hardware station extension components:
-	1. Open the **HardwareStationSamples.sln** solution under **RetailSdk\\SampleExtensions\\HardwareStation**.
+	1. Open the **HardwareStationSamples.sln** solution under **RetailSDK\\src\\SampleExtensions\\HardwareStation**.
 	1. Find the **Connector.AtolSample** project, and build it.
 	1. Find the **Contoso.HardwareStation.Connector.AtolSample.dll** assembly file in the **Connector.AtolSample\\bin\\Debug** folder.
 	1. Copy the assembly file to a deployed Hardware station machine:
@@ -284,4 +284,3 @@ Follow these additional steps to create deployable packages that contain Commerc
 
 1. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-
