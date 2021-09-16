@@ -51,7 +51,7 @@ This article describes how to modify form layouts to control how receipts, invoi
 
 ## Print images
 
-The receipt designer includes a **Logo** variable that can be used to specify an image that should be printed on the receipt. Images that are included in receipts that use the **Logo** variable should be monochrome bitmap (.bmp) file types. If a bitmap image is specified in the receipt designer but isn't printed when the receipt is sent to the printer, one of the following issues might be the cause:
+The receipt designer includes a **Logo** variable. You can use this variable to specify an image that should be printed on receipts. Images that are printed on receipts by using the **Logo** variable should be monochrome bitmap (.bmp) file types. If a bitmap image is specified in the receipt designer but isn't printed when the receipt is sent to the printer, one of the following issues might be the cause:
 
 - The file size is too large, or the pixel dimensions of the image isn't compatible with the printer. In this case, try to reduce the resolution or dimensions of the image file.
 - Some Object Linking and Embedding for Point of Sale (OPOS) printer drivers don't implement the **PrintMemoryBitmap** method that hardware stations use to print logo images. In this case, try to add the following flag to the **HardwareStation.Extension.config** file of your dedicated or shared hardware station:
