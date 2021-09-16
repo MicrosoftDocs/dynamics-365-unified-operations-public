@@ -26,7 +26,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Call Retail Server APIs
+# Call Commerce Scale Unit APIs
 
 [!include [banner](../includes/banner.md)]
 
