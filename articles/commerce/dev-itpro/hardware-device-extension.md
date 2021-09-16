@@ -22,24 +22,26 @@ This topic explains how to integrate the point of sale (POS) with a new hardware
 
 Hardware Station is used by Modern POS and Cloud POS to connect to hardware peripherals, such as printers, cash drawers, scanners, and payment terminals. 
 
-[![HWS-Local-Traditional.](./media/hws-local-300x236.png)](./media/hws-local.png)
+![HWS-Local-Traditional](media/hws-local.png)
 
-[![HWS-Shared.](./media/hws-shared-300x224.png)](./media/hws-shared.png)
+![HWS-Shared](media/hws-shared.png)
 
 ## Hardware Station setup
+
 Before you start, use the information in [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) to install Hardware Station, and to get a feel of what hardware is and how it's installed.
 
 ## Hardware Station architecture
-Hardware Station exposes Web API for Hardware Station application programming interfaces (APIs). Hardware Station can be extended either by implementing a new controller for a new device (for example, a cash dispenser) or by overriding an existing controller for an existing device type (for example, a new Audio Jack magnetic stripe reader (MSR) implementation).
 
-[![Hardware Station Architecture.](./media/hardware-station-architecture-1024x764.png)](./media/hardware-station-architecture.png)
+Hardware Station exposes Web APIs for Hardware Station application programming interfaces (APIs). Hardware Station can be extended either by implementing a new controller for a new device (for example, a cash dispenser) or by overriding an existing controller for an existing device type (for example, a new Audio Jack magnetic stripe reader (MSR) implementation).
+
+![Hardware Station Architecture](media/hardware-station-architecture-1024x764.png)
 
 ## Hardware Station extensibility scenarios
-Extensibility in Hardware Station is achieved by using [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/), which is supported by .NET. **Extensibility guideline:** Always write your extension in your own extension assembly. That way, you're writing a true extension, and upgrades will be much easier. There are two basic scenarios for extension:
+
+Extensibility in Hardware Station is achieved by using the [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/), which is supported by .NET. **Extensibility guideline:** Always write your extension in your own extension assembly. That way, you're writing a true extension, and upgrades will be much easier. There are two basic scenarios for extension:
 
 -   **Adding a new device** – The out-of-box Hardware Station doesn't already support the device (for example, a cash dispenser). Therefore, you must add support for the new device in Hardware Station.
 -   **Adding a new device type for an existing device** – The out-of-box Hardware Station implementation already supports the device (for example, an MSR), but you must add support for a specific device type (for example, an Audio Jack MSR implementation).
-
 
 To call custom Hardware station APIs from the POS, you must use a request and a response:
 
