@@ -42,7 +42,7 @@ As of the Commerce version 10.0.19 release, a new **Discount lines** value is av
 The items that are listed on the **Lines** FastTab of the **Threshold discounts** page should be considered the qualifying items for a promotion, whereas the items that are listed on the **Threshold discount lines** FastTab should be considered the discounted items. The threshold amount that is specified on the **Lines** FastTab is checked against the qualifying lines to determine whether the threshold has been met. If the threshold is met, the discount is applied to the items that are listed on the **Threshold discount lines** FastTab. 
 
 > [!NOTE]
-> The discounted items should **not** be included in qualifying items, otherwise from discount calculation perspective, those items are not considered as gifts.
+> The discounted items should *not* be included in qualifying items. If they are, from discount calculation perspective, those items are not considered as gifts.
 
 ## Promotion configuration examples
 
