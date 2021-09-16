@@ -41,6 +41,8 @@ The topic includes information about how to complete the following tasks:
 - Set up EM functionality.
 - Work with EM functionality for RTIR.
 
+Online invoicing system of Hungary requires mandatory usage of TLS 1.2. For more information about how to enabling TLS 1.2, see [How to enable TLS 1.2](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2). 
+
 ## Import ER configurations
 
 To prepare your Microsoft Dynamics 365 Finance application for RTIR, you must import the following ER configurations.
@@ -70,6 +72,9 @@ For more information about how to download ER configurations from the Microsoft 
 The format that is used to report invoice data to the Hungarian Online Invoicing System requires specific values from enumerated lists for some elements (for example, units of measure or line expression indicators). For these elements, before you start to use RTIR, you must set up application-specific parameters that the **RTIR Invoice Data (HU)** format will use.
 
 When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
+
+> [!NOTE]
+> We recommend enabling **Use application specific parameters from previous versions of ER formats** feature in Feature management workspaces. When this feature is enabled, configured for the lower version of an ER format parameters automatically become applicable for the higher version of this format. When this feature is disabled, you must continue configuring application specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in Feature management workspaces starting from 10.0.23 version of Finance. For more information about **Set up the parameters of an ER format per legal entity** , see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 ### Line expression indicator
 
