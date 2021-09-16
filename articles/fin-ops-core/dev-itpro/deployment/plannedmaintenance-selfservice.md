@@ -3,13 +3,13 @@
 
 title: Planned maintenance in self-service environments FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
-author: sarvanis
+author: rashmansur
 ms.date: 09/08/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: rashmim
 ms.search.validFrom: 2021-05-13
 
 ---
