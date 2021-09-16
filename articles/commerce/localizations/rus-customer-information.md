@@ -4,7 +4,7 @@
 title: Customer information management for Russia
 description: This topic describes how to handle customer information in POS for Russia.
 author: EvgenyPopovMBS
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod:
 ms.technology:
