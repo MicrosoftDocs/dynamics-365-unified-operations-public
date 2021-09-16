@@ -24,7 +24,7 @@ Hardware Station is used by Modern POS and Cloud POS to connect to hardware peri
 
 ![HWS-Local-Traditional](media/hws-local.png)
 
-![HWS-Shared](media/hws-shared.png)
+![Shared Hardware Station](media/hws-shared.png)
 
 ## Hardware Station setup
 
