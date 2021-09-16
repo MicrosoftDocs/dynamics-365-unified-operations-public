@@ -380,7 +380,12 @@ To import Electronic reporting (ER) configurations, go to **Workspaces** \> **El
 
 ### Set up application specific parameters for VAT declaration fields
 
-To automatically generate a VAT declaration, associate sales tax codes and report fields in the ER configuration. To set up report fields, follow these steps:
+To automatically generate a VAT declaration, associate sales tax codes and report fields in the ER configuration. 
+
+> [!NOTE]
+> We recommend enabling **Use application specific parameters from previous versions of ER formats** feature in Feature management workspaces. When this feature is enabled, configured for the lower version of an ER format parameters automatically become applicable for the higher version of this format. When this feature is disabled, you must continue configuring application specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in Feature management workspaces starting from 10.0.23 version of Finance. For more information about **Set up the parameters of an ER format per legal entity** , see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+
+To set up report fields, follow these steps:
 
 1. Go to **Workspaces** > **Electronic reporting**, and then select **Reporting configurations**.
 2. Select the **VAT declaration XML (NL)** configuration, and then select **Configurations** > **Application specific parameters setup**.
