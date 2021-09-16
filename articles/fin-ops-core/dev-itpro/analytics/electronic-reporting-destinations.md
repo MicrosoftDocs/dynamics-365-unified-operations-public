@@ -4,7 +4,7 @@
 title: Electronic reporting (ER) destinations
 description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-ms.date: 05/19/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -198,7 +198,7 @@ If you generate an ER configuration in Excel format and want to convert it to PD
 
 [![Selecting a page orientation for PDF conversion.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
-To have the option to select the PDF page orientation, you must install Finance version 10.0.10 or later. In versions of Finance **before version 10.0.23**, this option offers the following page orientation options:
+To have the option to select the PDF page orientation, install Finance version 10.0.10 or later. In versions of Finance **before version 10.0.23**, this option offers the following page orientation options:
 
 - Portrait
 - Landscape
