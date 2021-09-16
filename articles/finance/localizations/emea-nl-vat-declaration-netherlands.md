@@ -4,7 +4,7 @@
 title: VAT declaration (Netherlands)
 description: This topic provides information about VAT declaration for Netherlands.
 author: anasyash
-ms.date: 06/17/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,8 +28,6 @@ ms.dyn365.ops.version:
 # VAT declaration for Netherlands
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 To automatically generate the VAT declaration, you must create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration electronic reporting format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see *Set up application parameters for declaration fields* later in this topic.
 

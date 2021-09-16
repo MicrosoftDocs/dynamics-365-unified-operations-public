@@ -22,7 +22,12 @@ The *Infinite capacity scheduling for Planning Optimization* feature introduces 
 
 ## Turn on the infinite capacity scheduling feature
 
-If your system doesn't already include the feature that is described in this topic, open the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, and turn on the *Infinite capacity scheduling for Planning Optimization* feature.
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module:** *Master planning*
+- **Feature name:** *Infinite capacity scheduling for Planning Optimization*
+
+For more information about this feature, see [Scheduling with resource selection based on capability](capability-based-scheduling.md).
 
 ## Added functionality
 
@@ -37,7 +42,7 @@ During the scheduling process, the system also considers the *resource requireme
 - Resource type
 - Resource
 - Resource group
-- Capability
+- Capability (For more information, see [Scheduling with resource selection based on capability](capability-based-scheduling.md).)
 
 > [!NOTE]
 > Requirements that are related to human resources, such as skills or certificate requirements, aren't yet supported.

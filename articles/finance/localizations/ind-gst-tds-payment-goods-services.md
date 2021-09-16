@@ -3,7 +3,7 @@
 
 title: GST TDS on payment of goods and services
 description: This topic provides information about how to deduct GST-TDS on payments of goods and services.
-author: EricWang
+author: EricWangChen
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 

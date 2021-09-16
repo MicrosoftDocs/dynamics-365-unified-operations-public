@@ -4,7 +4,7 @@
 title: Payment times reporting schema
 description: This topic explains how to set up, create, and generate the Payment times reporting schema for Australia.
 author: sndray
-ms.date: 07/21/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,8 +28,6 @@ ms.dyn365.ops.version:
 # Payment times reporting schema
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to set up, create, and generate the Payment times reporting schema (PTRS) that is required for Australian legal entities.
 

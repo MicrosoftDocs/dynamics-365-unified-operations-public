@@ -107,7 +107,7 @@ The following limits apply when data is written from Finance and Operations apps
 
 | Measure | Limits |
 |---|---|
-| Number of transactions | The total number of transactions that you can perform per day per tenant is governed by service protection API limits that are designed to detect when client applications make extraordinary demands on server resources. For more information, see [Service protection API limits](/powerapps/developer/data-platform/api-limits.md). |
+| Number of transactions | The total number of transactions that you can perform per day per tenant is governed by service protection API limits that are designed to detect when client applications make extraordinary demands on server resources. For more information, see [Service protection API limits](/powerapps/developer/data-platform/api-limits). |
 | Number of records per single transaction | <p>1,000 records</p><p>If there are more than 1,000 records in a single transaction, consider splitting that transaction into multiple transactions. For more information, see the [Transactions with more than 1,000 records](#transactions-with-more-than-1000-records) section of this topic.</p> |
 | Transaction time limit | 2 minutes |
 

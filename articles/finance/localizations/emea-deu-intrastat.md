@@ -3,19 +3,21 @@
 
 title: German Intrastat
 description: This topic contains information about Intrastat declaration in Germany.
-author: andosip
-ms.date: 08/2/2021
+author: anasyash
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 
 # German Intrastat
 
-The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The German Intrastat declaration contains information about the trade of goods for reporting.
+[!include [banner](../includes/banner.md)]
+
+The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The German Intrastat declaration contains information about the trade of goods for reporting. The report is formatted according to the guidelines of the German authorities that are presented on the [6.2 File declarations in INSTAT/XML format](https://www-idev.destatis.de/idev/doc/intra_en/hilfe6_2.html) page.
 
 The following table shows the fields that are included in the German Intrastat declaration.
 
@@ -68,15 +70,16 @@ The following table shows the fields that are included in the German Intrastat d
     3. In the **Report format mapping** field, select **Intrastat report**.
     4. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
     5. In the **Transaction code** field, select the transaction code for property transfers. You use this code for transactions that produce actual or planned transfers of property against compensation (financial or other). You also use it for corrections.
-    6. In the **Credit note** field, select the transaction code for the return of goods. You use this code for the return of goods after the transaction that was originally recorded under the transaction code.
-    7. In the **Authority** field, select the Intrastat authority.
-    8. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**, and enter the following information for the Intrastat authority that you selected in the previous step:
+    6. In the **Credit note** field, select the transaction code for the return of goods.
+    7. In the **Worker** field, select the contact person for Intrastat report. Alternatively, on the **Contact** tab enter or select values in the **Name**, **Telephone**, **Fax**, **Email**, and **Internet address** fields. These fields are included in the report.
+    8. In the **Authority** field, select the Intrastat authority.
+    9. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax authorities**, and enter the following information for the Intrastat authority that you selected in the previous step:
 
        - Authority identification
        - Address
        - Contact information
 
-    9. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country or region, in the **Country/region type** field, select **EU**, so that the country or region appears on your Intrastat report.
+    10. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country or region, in the **Country/region type** field, select **EU**, so that the country or region appears on your Intrastat report.
 
 4. Set up region codes.
 
