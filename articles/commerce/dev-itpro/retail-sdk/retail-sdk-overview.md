@@ -77,19 +77,20 @@ To develop or build extensions by using the Retail SDK, you must have the follow
     - .NET Core cross-platform development
     - Mobile development with .NET (required for hybrid app development)
 
-- The following runtimes:
+- The following SDK and runtimes:
 
     + [sdk-2.1.202-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.202-windows-x64-installer)
     + [sdk-2.1.513-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.1.513-windows-x64-installer)
     + [runtime-2.0.9-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.0.9-windows-x64-installer)
     + [runtime-2.1.17-windows-x64-installer](https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-2.1.17-windows-x64-installer)
+    + [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-3.1.412-windows-x64-installer)
     + TypeScript version 2.2.2
 
 Visual Studio 2017 has TypeScript 3.1 as the default version. You must install version 2.2.2 because the POS app is based on that version. In Visual Studio, select **Tools \> Get Tools and Features**. On the **Individual components** tab, select the **TypeScript 2.2 SDK from SDKs, libraries, and frameworks** section, and install it.
 
 - .NET Developer Pack:
     +  [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
-    +  [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
+    +  [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net462-developer-pack-offline-installer)
     
 - [Web Deploy v3.6 ](https://www.microsoft.com/download/confirmation.aspx?id=43717)
 
@@ -290,7 +291,6 @@ The following tables provide information about the components in the Retail SDK 
 <tr>
 <th>Documentation</th>
 <td><a href="../retail-server-icontroller-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)</a>
-<p><a href="../retail-server-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.10 and earlier)</a></p>
 </td>
 </tr>
 </tbody>
@@ -317,7 +317,6 @@ The following tables provide information about the components in the Retail SDK 
 <tr>
 <th>Documentation</th>
 <td><a href="../retail-server-icontroller-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)</a>
-<p><a href="../retail-server-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.10 and earlier)</a></p>
 </td>
 </tr>
 </tbody>

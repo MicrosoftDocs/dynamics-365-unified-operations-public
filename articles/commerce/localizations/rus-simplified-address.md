@@ -28,7 +28,6 @@ ms.dyn365.ops.version: 10.0.21
 # Simplified customer address format in Commerce POS for Russia
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 This topic describes the simplified Russian address format and explains how to enable it in Microsoft Dynamics 365 Commerce point of sale (POS) for Russia.
 

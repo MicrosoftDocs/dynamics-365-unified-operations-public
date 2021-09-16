@@ -4,7 +4,7 @@
 title: Commerce Data Exchange troubleshooting
 description: This topic provides information that will help you troubleshoot CDX in implementations.
 author: jashanno
-ms.date: 08/01/2020
+ms.date: 08/26/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -65,6 +65,7 @@ If an error that occurs doesn't appear in the following table, create a support 
 
 - [Commerce Data Exchange best practices](CDX-Best-Practices.md)
 - [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
+- [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md)
 - [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
 - [Select an in-store topology](retail-in-store-topology.md)
 - [Device management implementation guidance](../implementation-considerations-devices.md)

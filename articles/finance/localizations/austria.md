@@ -61,6 +61,7 @@ For general information about the setup of VAT statements, see [VAT reporting fo
 | Report                     | How to get to the report | Additional information                 |
 |----------------------------|--------------------------|----------------------------------------|
 |Cross-border services report|**General ledger** > **Reports** > **External** > **Cross-border services**|This report prints a summary of the incoming and outgoing cross-border services, countries that are the providers or recipients of the cross-border services, and net amounts paid for the services. This report is typically used by accounting managers, accountants, and sales managers to inquire into the status of sales transactions. For more information, see [Cross-border services report](emea-aut-cross-border-services-report.md).|
+|Intrastat report|**Tax** > **Declarations** > **Foreign trade** > **Intrastat**|You can use the Intrastat page to generate and report information about trade among European Union (EU) countries. The Austrian Intrastat declaration contains information about the trade of goods for reporting. For more information, see [Austrian Intrastat](emea-aut-intrastat.md).|
 
 
 ## Additional resources

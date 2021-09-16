@@ -47,7 +47,14 @@ Before you begin provisioning a new production environment, the following prereq
 
 Prior to provisioning your first sandbox or production environment, you may want to provision a [Human Resources trial environment](https://go.microsoft.com/fwlink/p/?LinkId=2115962) to validate Human Resources functionality. Trial environments contain fictitious data that can be used to explore the program in a safe manner. Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. 
 
+Trial environments provide the ability to evaluate human resources functionality for individuals who do not already have access to a Human Resources environment. If you are provisioning a trial environment and the authenticated user already has access to one or more existing Human Resources environments, the user will be redirected to the existing environment or list of environments.
+
 Trial environments aren't intended to be used as production environments. They are limited to a 60-day trial period. When the trial period expires, the environment and all the data that's in it is deleted and can't be recovered. The environment cannot be converted to a sandbox or production environment. You can sign up for a new trial environment after the existing environment expires.
+
+When creating a Human Resources trial environment, a Power Apps trial environment is also created on the tenant and linked to the Human Resources environment. The Power Apps environment, named "TestDrive", has the same trial period as the Human Resources environment.
+
+> [!NOTE]
+> Provisioning a Human Resources trial environment will fail if the authenticated user does not have permission to create Power Apps trial environments. The user must be included in the user group who can create trial environments in the Power Platform admin center. For more information, see [Control who can create and manage environments in the Power Platform admin center](//power-platform/admin/control-environment-creation).
 
 ## Plan Human Resources environments
 
@@ -74,7 +81,7 @@ To use LCS to manage your Human Resources environments, you must first create an
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Human Resources.
 
    > [!NOTE]
-   > To ensure successful provisioning, the account you use to provision the Human Resources environment must be assigned to either the **System Administrator** or **System Customizer** role in the Power Apps environment associated with the Human Resources environment. See [Configure user security to resources](/power-platform/admin/database-security) for more information on assigning security roles to users in the Power Platform.
+   > To ensure successful provisioning, the account you use to provision the Human Resources environment must be assigned to either the **System Administrator** or **System Customizer** role in the Power Apps environment associated with the Human Resources environment. For more information about assigning security roles to users in the Power Platform, see [Configure user security to resources](/power-platform/admin/database-security).
 
 2. Select the plus sign (**+**) to create a project.
 
@@ -135,7 +142,12 @@ Use the following guidance when determining which Power Apps environment to depl
    
     - **Unsupported geographies** - The environment must be in a supported geography. For more information, see [Supported geographies](hr-admin-setup-provision.md#supported-geographies).
 
-6. After you've determined the correct environment to use, you can continue with the provisioning process. 
+6. Dual-write capabilities for integrating Human Resources data with the Power Apps environment can only be used if the **Enable Dynamics 365 apps** option is selected for the environment. See [Dual-write home page](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) for more information on Dual-write.
+
+    > [!NOTE]
+    > The **Enable Dynamics 365 apps** option must be selected at the time the Power Apps environment is created. If the option is not selected at the time of provisioning, you won't be able to use Dual-write to integrate data between Dynamics 365 Human Resources and the Power Apps environment, or install Dynamics 365 apps such as Dynamics 365 Sales and Field Service on the environment. This option is not reversible. For more information, see [Some important considerations when creating a new environment](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) on the Power Platform documentation site.
+
+7. After you've determined the correct environment to use, you can continue with the provisioning process. 
 
 ### Supported geographies
 

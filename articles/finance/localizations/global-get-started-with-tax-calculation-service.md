@@ -54,13 +54,9 @@ For a production environment, the following prerequisites must be met:
 - You must create an RCS environment for your organization, and you must have access to your account. For more information about how to create a RCS environment, see [Regulatory Configuration Service Overview](rcs-overview.md).
 - The following features must be turned on in the **Feature management** workspace of your deployed Finance or Supply Chain Management environment, based on your business needs:
 
-    - Tax Calculation
+    - Tax Calculation Service
     - Support multiple VAT registration numbers
     - Tax in transfer order
-    - EU sales list transfer based on tax transactions only
-    - Intrastat reporting by Multiple Tax ID
-    - EU Sales list reporting by Multiple Tax ID
-    - Sales tax declaration by Multiple Tax ID
 
 - The following features must be turned on in the **Feature management** workspace of your deployed RCS environment.
 
@@ -70,18 +66,14 @@ For a production environment, the following prerequisites must be met:
 
 For a test environment, the following prerequisites must be met:
 
-- You must have access to your LCS account, and you must have a deployed LCS project that has a Tier 2 or above environment that runs Dynamics 365 version 10.0.18 with KB4616360, or a later version.
+- You must have access to your LCS account, and you must have a deployed LCS project that has a Tier 2 or above environment that runs Dynamics 365 version 10.0.21 or a later version.
 - You must create an RCS environment for your organization, and you must have access to your account. For more information about how to create a RCS environment, see [Regulatory Configuration Service Overview](rcs-overview.md).
 - You must contact Microsoft, by emailing <taxcalc@microsoft.com>, to enable the flighting in your deployed Finance or Supply Chain Management environment.
 - The following features must be turned on in the **Feature management** workspace of your deployed Finance or Supply Chain Management environment, based on your business needs:
 
-	- Tax Calculation
+	- Tax Calculation Service
 	- Support multiple VAT registration numbers
 	- Tax in transfer order
-	- EU sales list transfer based on tax transactions only
-	- Intrastat reporting by Multiple Tax ID
-	- EU Sales list reporting by Multiple Tax ID
-	- Sales tax declaration by Multiple Tax ID
 
 - The following features must be turned on in the **Feature management** workspace of your deployed RCS environment.
 
@@ -108,12 +100,12 @@ The steps in this section aren't related to a specific legal entity. You must co
 7. Go to **Tax Data Model**, expand the file tree, and then select **Tax Configuration**.
 8. Select the correct tax configuration version, based on you Finance version, and then select **Import**.
 
-    | Release version | Tax configuration                       | Model mapping                   |
-    | --------------- | --------------------------------------- | ------------------------------- |
-    | 10.0.18         | Tax Configuration - Europe 30.12.82     |                                 |
-    | 10.0.19         | Tax Calculation Configuration 36.38.193 |                                 |
-    | 10.0.20         | Tax Calculation Configuration 40.43.208 |                                 |
-    | 10.0.21         | Tax Calculation Configuration 40.46.212 | Dataverse Model Mapping 40.46.9 |
+    | Release version | Tax configuration                       |
+    | --------------- | --------------------------------------- |
+    | 10.0.18         | Tax Configuration - Europe 30.12.82     |
+    | 10.0.19         | Tax Calculation Configuration 36.38.193 |
+    | 10.0.20         | Tax Calculation Configuration 40.43.208 |
+    | 10.0.21         | Tax Calculation Configuration 40.46.212 |
 
 9. In the **Globalization features** workspace, select **Features**, select the **Tax Calculation** tile, and then select **Add**.
 10. Select one of the following feature types:

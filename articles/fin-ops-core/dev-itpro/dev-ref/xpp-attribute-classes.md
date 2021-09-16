@@ -2,7 +2,7 @@
 title: X++ attribute classes
 description: This topic describes the use of attributes in X++.
 author: pvillads
-ms.date: 06/20/2017
+ms.date: 08/27/2021
 audience: Developer
 ms.reviewer: rhaertle
 ms.search.region: Global
@@ -17,9 +17,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the use of attributes in X++.
 
-An attribute is a non-abstract class that extends (inherits from) the **SysAttribute** class. Attributes represent or store metadata about types and methods. An attribute can be attached to a class, an interface, or a method of a class, interface, or table.
+An attribute is a non-abstract class that extends (inherits from) the **SysAttribute** class. Attributes represent or store metadata about types and methods. An attribute can be attached to a class, a class field, a class method, an interface, or a table.
+
+Attributes are applied to the handlers of delegates and methods, to map the handlers to those targets.
 
 ## Creating an attribute class
+
 An attribute class can extend the **SysAttribute** class directly, or it can extend any descendant of the **SysAttribute** class. The **SysAttribute** class cannot be used as an attribute because it is declared **abstract**. The following example shows the declaration and design of an ordinary attribute class that you could create.
 
 ```xpp
@@ -55,6 +58,8 @@ public class RegularClass
 }
 ```
 
+You can omit the suffix of the attribute name if the suffix is `Attribute`. For example, you could use `[Practice]` instead `[PracticeAttribute]` in the preceding example.
+
 ### Attribute constructors
 
 You can enable your attribute class to store tailored metadata each time it is used to decorate a class, by having its constructor take parameters. The parameters for the constructor must be literals of the primitive types, such as **int,** **enum,** or **str**. The compiler does not construct an instance of the attribute class. It stores the name of the attribute class, plus the literal values for its constructor. Therefore, if the logic in an attribute constructor would throw an exception, the exception would not be found by decorating a class with the attribute. The exception would be found later when a process looks at a class to see the attribute it is decorated with. That is when the attribute is constructed.
@@ -64,6 +69,7 @@ You can enable your attribute class to store tailored metadata each time it is u
 All attribute classes have the suffix **Attribute** in their name. The **Attribute** suffix is the name convention that we recommend, but it is not a system requirement. You can determine whether a class **extends** directly from **SysAttribute** by selecting the class in the **Application Explorer** and reviewing the **Extends** property in the **Properties** window.
 
 ## SysObsoleteAttribute
+
 The system provides several attributes, including the **SysObsoleteAttribute** class. One use of the **SysObsoleteAttribute** class is to notify the compiler that the compile should fail if a particular method is called in the source code. The compiler rejects the compile, and displays the specific message that is stored in this use of the attribute. The **SysObsoleteAttribute** class can also be used to notify the compiler to issue warning messages instead of errors.
 
 ### SysObsoleteAttribute code example
@@ -77,17 +83,18 @@ class Bicycle
 ```
 
 ## Metadata reflection
+
 You use reflection to find the attribute metadata that is attached to a class. The classes to use for attribute reflection are as follows:
 
--   **DictClass** class – For classes and interfaces.
--   **DictMethod** class – For methods on classes, interfaces, or tables.
+- **DictClass** class – For classes and interfaces.
+- **DictMethod** class – For methods on classes, interfaces, or tables.
 
 On the previous reflection classes, the methods for reflecting on attribute metadata are as follows:
 
--   **getAllAttributes** method
--   **getAttribute** method
--   **getAttributedClasses** method
--   **getAttributes** method
+- **getAllAttributes** method
+- **getAttribute** method
+- **getAttributedClasses** method
+- **getAttributes** method
 
 > [!NOTE]
 > There is no mechanism for listing all methods or classes that are adorned with a particular attribute from X++ code. However, because the X++ compiler records this information in the cross reference database, the information can be mined from there.
@@ -161,8 +168,5 @@ static void AttributeReflection33Job(Args _args)
 }
 **************/
 ```
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

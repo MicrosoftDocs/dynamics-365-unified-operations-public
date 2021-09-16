@@ -59,7 +59,7 @@ The following code example demonstrates a **while** loop that traverses a contai
 
 ```xpp
 container cont = ["one", "two", "three"];
-int no = 0;
+int no = 1;
 while (no <= conlen(cont))
 {
     info(conPeek(cont, no));

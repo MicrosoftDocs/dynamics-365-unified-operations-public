@@ -5,6 +5,10 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: September 06, 2021
+      href: hr-whats-new-2021-09-06.md
+    - name: August 23, 2021
+      href: hr-whats-new-2021-08-23.md
     - name: August 09, 2021
       href: hr-whats-new-2021-08-09.md
     - name: July 26, 2021
@@ -544,6 +548,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
         - name: Configure address books
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
+        - name: Manage location owners
+          href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-location-owner.md?toc=/dynamics365/human-resources/toc.json
       - name: Workflow system
         items:
         - name: Workflow system overview

@@ -4,7 +4,7 @@
 title: Belgium overview
 description: This topic provides an overview of functionality specific to Belgium.
 author: ShylaThompson
-ms.date: 04/08/2021
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,6 +48,7 @@ For information about standard reports that can help you with the INTERVAT tax d
 |Belgisch Luxemburgs Wissel Instituut (BLWI) report|**Tax** > **Declarations** > **Foreign trade** > **BLWI** | To set up BLWI information, see [Set up payment balance reporting (Belgium)](tasks/be-00011-set-up-payment-balance-reporting.md). To generate the BLWI report, see [Create and transfer transactions to the BLWI (Belgium)](tasks/be-00011-create-transfer-blwi.md).| 
 |PRODCOM report|**Tax** > **Declarations** > **Foreign trade** > **PRODCOM**|Manufacturers of industrial products send the PRODCOM report to the Nationaal Instituut voor de Statistiek (NIS) in response to the routine PRODCOM survey. The PRODCOM report displays production statistics for industrial products that are manufactured by production companies operating in Belgium. This report is typically used by accounting managers and accountants. For more information, see [Set up and maintain PRODCOM](emea-bel-prodcom-report.md). |
 |Journal reports|**General ledger** > **Inquiries and reports** > **Journal reports**|Periodically, Belgian companies must print a report for each journal. The report provides a chronological list of all the postings to the general ledger accounts for each journal. These reports prove the integrity of the accountancy and are used during financial audits to reconcile VAT settlement with the postings on the corresponding general ledger accounts. For more information, see [Journal reports (Posting journals)](emea-bel-journal-reports.md). |
+|Annual VAT listing of domestic sales| **Tax** > **Inquiries and reports** > **Sales tax reports** > **Invoice turnover report – Belgium** | The Invoice turnover report is sent to the authorities once a year. It's used to report the turnover for Belgian VAT-obliged customers, if that turnover exceeds a specific amount. The report includes invoices from customer transactions where the customers have an enterprise number that is formatted according to the guidelines of the Belgian authorities. For more information, see [Annual VAT listing of domestic sales](emea-bel-annual-vat-listing-of-domestic-sales.md). |
 
 ## Additional resources
 
