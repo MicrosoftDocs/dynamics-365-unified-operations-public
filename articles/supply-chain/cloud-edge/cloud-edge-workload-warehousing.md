@@ -160,7 +160,7 @@ The following warehouse management functionality isn't currently supported for s
 
 - Inbound processing of purchase order lines assigned to a load.
 - Inbound processing of purchase orders for a project.
-- Use of voyages and managing of landed cost and tracking of goods in transit.
+- Managing landed costs, using voyages, and tracking goods in transit.
 - Inbound and outbound processing for items that have active tracking dimensions **Owner** and/or **Serial number**.
 - Processing of inventory that has a blocking status value.
 - Changing of an inventory status during any work movement process.
