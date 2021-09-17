@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.21
 # Sealed bidding for RFQs
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Sealed bidding keeps vendor bid replies secret until they are unsealed by purchasing personnel. All bids that are related to a request for quotation (RFQ) are first available to be unsealed upon bid expiry. Before a bid is unsealed, only users who have dedicated user roles and who represent the vendor can access it.
 
@@ -165,7 +164,7 @@ The following conditions apply during sealed bidding:
 - As the bid progresses, procurement professionals can view its status. The status will be either *Vendor is updating* or *Submitted by vendor*.
 - The status of the lines in a sealed bid remains *Sent* until the bid is unsealed.
 - If the vendor chooses to decline a bid, the bid will have a **Reply Progress** status of *Declined by vendor*. This status will be visible to procurement personnel.
-- Answers in questionnaires are **not** stored in encrypted form in the database. Therefore, they aren't sealed. However, they won't be visible in the RFQ user interface until the case is unsealed. 
+- Answers in questionnaires are **not** stored in encrypted form in the database. Therefore, they aren't sealed. However, they won't be visible in the RFQ user interface until the case is unsealed.
 
 ### All sealed bid activities are logged
 
@@ -191,4 +190,4 @@ The process of comparing and approving previously sealed bids is the same as the
 
 ## The RFQ activity log can never be deleted
 
-Nobody, not even administrators and Microsoft Support, can edit or delete the RFQ activity log. This restriction helps ensure the fairness of the sealed bidding process. It also helps ensure that an accurate audit trail is maintained. 
+Nobody, not even administrators and Microsoft Support, can edit or delete the RFQ activity log. This restriction helps ensure the fairness of the sealed bidding process. It also helps ensure that an accurate audit trail is maintained.
