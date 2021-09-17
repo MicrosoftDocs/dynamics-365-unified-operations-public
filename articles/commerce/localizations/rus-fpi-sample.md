@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fiscal printer integration sample for Russia
-description: This topic provides an overview of the fiscal integration sample for Italy.
+description: This topic provides an overview of the fiscal integration sample for Russia.
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 09/21/2021
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-## Introduction
+This topic provides an overview of the fiscal integration sample for Russia.
 
 The Dynamics 365 Commerce functionality for Russia includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and supports the application programming interface (API) of fiscal printers from [ATOL](http://integration.atol.ru/). The sample enables communication with a fiscal printer that is connected via a communication (COM) port by using a native software driver. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
