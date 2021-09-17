@@ -4,7 +4,7 @@
 title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
-ms.date: 05/24/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -178,8 +178,8 @@ Determine the **Environment type** of your production environment and follow the
 ### Self-service
 1. In LCS, open the **Full details** for the production environment to load the **Environment page**.
 2. In the **Maintain** menu, select **Move database**.
-3. In the options of operations select **Refresh database**.
-4. In the **Source environment** chose the sandbox where your golden configuration is. Note the important instructions found on the [Refresh database page](database-refresh.md) for this kind of operation.
+3. For the operations options, select **Refresh database**.
+4. In the **Source environment**, select the sandbox where your golden configuration is. Note the important instructions found on the [Refresh database page](database-refresh.md) for this operation.
 5. Select the check box to confirm that you understand this operation will overwrite the production database. The operation starts immediately after submitting the request.
 
 ### Microsoft-managed
