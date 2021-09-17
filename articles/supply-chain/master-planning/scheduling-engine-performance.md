@@ -74,7 +74,7 @@ As an example, consider a route shown in the following table and image, which se
 
 When sending this to the engine, it is split out into eight jobs, as shown in the following illustration (select the image to enlarge it).
 
-[![Scheduling engine jobs](media/scheduling-engine-jobs.png "Scheduling engine jobs."](media/scheduling-engine-jobs-large.png)
+[![Scheduling engine jobs](media/scheduling-engine-jobs.png "Scheduling engine jobs.")](media/scheduling-engine-jobs-large.png)
 
 The standard link between two jobs is `FinishStart`, meaning that the end time of one job must be before the start time of another job. Because the setup must be performed by the same resource that will later do the process, there are `OnSameResource` constraints between them. Between the jobs for primary and secondary operation for 10, there are `StartStart` and `FinishFinish` links, which means that the jobs must both start and end at the same time, and there are `NotOnSameResource` constraints, which will prevent the same resource for primary and secondary.
 

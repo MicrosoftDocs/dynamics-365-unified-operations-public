@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use Customer payment predictions (preview)
+title: Use Customer payment predictions
 description: This topic walks through the prerequisites and the broad steps that are required to use a trial version of Finance insights.
 author: ShivamPandey-msft
 ms.date: 07/17/2021
@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
 
 ---
-# Use Customer payment predictions (preview)
+# Use Customer payment predictions
 
 [!include [banner](../includes/banner.md)]
 

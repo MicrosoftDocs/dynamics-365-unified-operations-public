@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.21
 # Manage deductions using the deduction workbench
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 This topic describes how to use the deduction workbench to process customer payments that include deductions.
 

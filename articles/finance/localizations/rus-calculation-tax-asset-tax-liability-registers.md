@@ -3,7 +3,7 @@
 
 title: Calculation of tax asset and tax liability registers
 description: This topic provides information about the two methods that tax registers use to calculate tax differences
-ms.date: 07/20/2021
+ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 author: akroshkina
@@ -27,6 +27,8 @@ ms.search.validFrom:
 ---
 
 # Calculation of tax asset and tax liability registers
+
+[!include [banner](../includes/banner.md)]
 
 According to Russian legislation, the accounting profit and the profit tax base are formed according to different legislation and rules. Therefore, two tax types have been developed:
 
@@ -149,7 +151,7 @@ Before you complete this procedure, you must create expense codes. For more info
 
 ### <a name="difference">Set up tax differences registers</a>
 
-Create the registers of temporary and constant tax differences for one of the calculation methods, as described in Profit tax registers journal.
+Create the registers of temporary and constant tax differences for one of the calculation methods, as described in the topic, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 Follow these steps to set up the **Calculation of temporary tax differences by balance method** and **Calculation of temporary tax differences** tax registers.
 
 1. Go to **Tax** > **Setup** > **Profit tax** > **Registers**.
@@ -308,3 +310,5 @@ For each line of the **Calculation of constant tax differences** tax register, t
 
     ![Tax differences by balance method page.](media/ru_tax_differ10.png)
 
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Improve the prediction model (preview)
+title: Improve the prediction model
 description: This topic describes features that you can use to improve the performance of prediction models.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 ---
 
-# Improve the prediction model (preview)
+# Improve the prediction model
 
 [!include [banner](../includes/banner.md)]
 

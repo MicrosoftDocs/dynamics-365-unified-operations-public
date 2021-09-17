@@ -4,7 +4,7 @@
 title: DATEVALUE ER function
 description: This topic provides information about how the DATEVALUE Electronic reporting (ER) function is used.
 author: NickSelin
-ms.date: 12/04/2019
+ms.date: 09/08/2021
 ms.prod: 
 ms.technology: 
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `DATEVALUE` function returns a *Date* value that is converted from a given text value in the specified format and in an optionally specified [culture](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) to a date value. For information about the supported formats, see [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) and [custom](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+The `DATEVALUE` function returns a *[Date](er-formula-supported-data-types-primitive.md#date)* value that is converted from a given text value in the specified format and in an optionally specified [culture](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) to a date value. For information about the supported formats, see [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) and [custom](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## Syntax 1
 
@@ -46,17 +46,17 @@ DATEVALUE (text, format, culture)
 
 ## Arguments
 
-`text`: *String*
+`text`: *[String](er-formula-supported-data-types-primitive.md#string)*
 
 Text that represents the value to format.
 
 `format`: *String*
 
-The format of the given text.
+The format of the given text. For information about the supported formats, see [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) and [custom](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 `culture`: *String*
 
-The culture that is used for formatting of the given text.
+The culture that is used for formatting of the given text. For information about the supported cultures, see [culture](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
 
 ## Return values
 

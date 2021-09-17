@@ -1,6 +1,6 @@
 ---
 title: PageState enumeration
-description: Represents the various high-level states the a page can be in.
+description: Represents the various high-level states the page can be in.
 author: robinarh
 ms.date: 08/01/2017
 audience: Developer
@@ -13,7 +13,7 @@ ms.author: rhaertle
 
 [!include [banner](../../../../includes/banner.md)]
 
-Represents the various high-level states the a page can be in.
+Represents the various high-level states the page can be in.
 
 ## Index
 

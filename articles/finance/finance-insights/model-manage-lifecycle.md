@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Model management lifecycle (preview)
+title: Model management lifecycle
 description: This topic describes ways to maintain your organization's machine learning models to optimize the predictions that they generate.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 ---
 
-# Model management lifecycle (preview)
+# Model management lifecycle
 
 [!include [banner](../includes/banner.md)]
 

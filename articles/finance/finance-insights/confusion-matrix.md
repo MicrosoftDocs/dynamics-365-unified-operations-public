@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Results of machine learning models (preview)
+title: Results of machine learning models
 description: This topic discusses confusion matrices, classification problems, and accuracy in machine learning (ML) models. The purpose is to enhance your understanding of accuracy in ML prediction results.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
 
 ---
-# Results of machine learning models (preview)
+# Results of machine learning models
 
 [!include [banner](../includes/banner.md)]
 

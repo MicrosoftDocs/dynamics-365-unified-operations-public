@@ -47,7 +47,7 @@ This topic describes how manufacturing execution workloads work with cloud and e
 
 As the following illustration shows, the manufacturing lifecycle is divided into three phases: *Plan*, *Execute*, and *Finalize*.
 
-[![Manufacturing execution phases when a single environment is used](media/mes-phases.png "Manufacturing execution phases when a single environment is used."](media/mes-phases-large.png)
+[![Manufacturing execution phases when a single environment is used](media/mes-phases.png "Manufacturing execution phases when a single environment is used.")](media/mes-phases-large.png)
 
 The _Plan_ phase includes product definition, planning, order creation and scheduling, and release. The release step indicates the transition from the _Plan_ phase to the _Execute_ phase. When a production order is released, the production order jobs will be visible on the production floor and ready for execution.
 
@@ -57,7 +57,7 @@ When a production job is marked as completed, it moves from the _Execute_ phase 
 
 As the following illustration shows, when scale units are used, the _Execute_ phase is split out as a separate workload.
 
-[![Manufacturing execution phases when scale units are used](media/mes-phases-workloads.png "Manufacturing execution phases when scale units are used."](media/mes-phases-workloads-large.png)
+[![Manufacturing execution phases when scale units are used](media/mes-phases-workloads.png "Manufacturing execution phases when scale units are used.")](media/mes-phases-workloads-large.png)
 
 The model now goes from a single-instance installation to a model that is based on the hub and scale units. The _Plan_ and _Finalize_ phases run as back-office operations on the hub, and the manufacturing execution workload runs on the scale units. Data is transferred asynchronously between the hub and scale units.
 

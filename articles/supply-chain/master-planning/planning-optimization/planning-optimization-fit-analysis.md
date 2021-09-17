@@ -55,6 +55,9 @@ To see the Planning Optimization fit analysis result, go to **Master planning** 
 
 The following table shows the various results that can be shown after a fit analysis. Number signs (_\#_) will be replaced with a number that indicates the number of records that have the listed issue. Supported or in-preview features are available with version 10.0.9 or later (unless a higher version number is listed in the "Expected availability" column).
 
+> [!NOTE]
+> Some inconsistencies can't be identified by the Planning Optimization fit analysis. For more information, see [Differences between classic master planning and Planning Optimization](planning-optimization-differences-with-built-in.md).
+
 | Feature | Listed issue | Explanation | Expected availability |
 | --- | --- | --- | --- |
 | Actions | Coverage groups with Actions calculation enabled: _\#_ | This feature is pending. Currently, actions aren't generated during master planning when Planning Optimization is enabled, regardless of this setting. The main purpose of actions is to suggest changes to existing orders. Evaluate if actions are actively applied as part of your business processes or if the delay information related to the orders is sufficient. | April 2022 |
@@ -108,6 +111,10 @@ The following table shows the various results that can be shown after a fit anal
 [Planning Optimization overview](planning-optimization-overview.md)
 
 [Get started with Planning Optimization](get-started.md)
+
+[Differences between classic master planning and Planning Optimization](planning-optimization-differences-with-built-in.md)
+
+[Parameters not used by Planning Optimization](not-used-parameters.md)
 
 [View plan history and planning logs](plan-history-logs.md)
 

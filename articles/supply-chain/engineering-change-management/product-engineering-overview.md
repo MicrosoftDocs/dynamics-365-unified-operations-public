@@ -4,7 +4,7 @@
 title: Engineering change management overview
 description: This topic provides an overview of engineering change management, which helps you plan and manage product versioning, and manage product lifecycles and engineering changes.
 author: t-benebo
-ms.date: 11/11/2020
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: Release 10.0.21
 ---
 
 # Engineering change management overview
@@ -47,9 +47,11 @@ Engineering change management helps you plan and manage product versioning, and 
 
 The preceding video ([Change management capabilities in Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
-## Turn on the engineering change management and version dimension features for your system
+## Turn on the engineering change management features for your system
 
-Before you can use engineering change management, you must enable both the *Engineering Change Management* feature and its configuration key. If you also want to track the version dimension of products in transactions (optional), then you must also enable the *Product version dimension* feature and its configuration key.
+Before you can use engineering change management, you must enable both the *Engineering Change Management* feature and its configuration key. If you also want to track the version dimension of products in transactions (optional), you must also enable both the *Product version dimension* feature and its configuration key. After those prerequisites are set up as required, you will be able to turn on additional optional features for engineering change management.
+
+### Turn on the basic engineering change management features
 
 First, turn on the features by following these steps.
 
@@ -57,6 +59,8 @@ First, turn on the features by following these steps.
 1. Check for updates.
 1. Turn on the feature that is named *Engineering Change Management*.
 1. If you want to use it, also turn on the feature that is named *Product dimension version*.
+
+### Turn on the required configuration keys
 
 Next, turn on the configuration keys by following these steps.
 
@@ -74,5 +78,18 @@ Next, turn on the configuration keys by following these steps.
 
 > [!IMPORTANT]
 > Starting in April 2022, the license keys for both **Engineering Change Management** and **Product dimension - Version** will be enabled by default for all new installations, but you will still be able to disable them if needed.
+
+### Turn on additional engineering change management features
+
+After you turn on the basic engineering change management features and enable their configuration keys, several additional and optional engineering change management features are added to feature management. Each of those features is listed under the **Engineering change management** module. The following table describes each optional feature and provides links for more information.
+
+| Feature name in feature management | Description |
+|---|---|
+| Enable change management on existing products | <p>This feature lets you convert existing products to engineering products so that you can start to manage them by using engineering change management.</p><p>For more information, see [Enable change management on existing products](change-management-existing-products.md).</p> |
+| Engineering notifications for production | <p>When a product is changed in engineering, it might be important to notify production about those changes. In that way, production workers can take appropriate action, such as component substitution, bill of materials (BOM) replacement, or route replacement. This feature lets you notify production about changes to products that are being produced.</p><p>For more information, see [Manage changes to engineering products](engineering-change-management.md).</p> |
+| Improved attribute inheritance for Engineering Change Management | <p>This feature simplifies the management of attributes for finished goods or intermediate items. When this feature is turned on, it's easier to identify all the attributes that belong to an item, and you can select the attributes that should be propagated from that item to its parent item. This feature is useful when, for example, one component of a finished good is fragile, toxic, or flammable, because you can easily identify the fragile, toxic, or flammable attribute and propagate it to the finished good.</p><p>For more information, see [Engineering attributes and engineering attribute search](engineering-attributes-and-search.md).</p> |
+| Product readiness checks | <p>This feature lets you set up readiness checks for standard (non-engineering) products. Use product readiness checks to ensure that each product is fully defined and all the required policies are configured before the product is made available and used in transactions. If you disable this feature after you've used it for a while, all existing readiness checks for standard products will be deleted.</p><p>For more information, see [Product readiness](product-readiness.md).</p> |
+| Manage changes to formulas and their ingredients | <p>This feature lets you track changes to formula ingredients, co-products, and by-products.</p><p>For more information, see [Manage changes in formulas and their ingredients](manage-formula-changes.md).</p> |
+| Variant generation for engineering products | <p>This feature lets you generate variants for engineering products, based on available dimension values.</p><p>For more information, see [Generate variants for engineering products](engineering-variants.md).</p> |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

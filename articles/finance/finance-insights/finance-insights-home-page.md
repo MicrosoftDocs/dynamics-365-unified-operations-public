@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Finance insights home page (preview)
+title: Finance insights home page
 description: Finance insights provides configurable and extensible models to help you accurately and intelligently predict your company's cash flow, predict when you will receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent machine learning models.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Finance insights home page (preview)
+# Finance insights home page
 
 [!include [banner](../includes/banner.md)]
 

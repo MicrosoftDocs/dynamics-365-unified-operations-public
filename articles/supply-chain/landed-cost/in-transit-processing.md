@@ -153,8 +153,6 @@ Landed cost adds a new work order type that is named *Goods in transit* to the *
 
 #### Work header breaks
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Work templates that have a work order type of *Goods in transit* can be configured to split work headers. On the **Work templates** page, follow one of these steps:
 
 - On the **General** tab for the template, set work header maximums. These maximums work in the same way that they work for purchase order work templates. (For more information, see [purchase order work templates](/dynamicsax-2012/appuser-itpro/create-a-work-template).)

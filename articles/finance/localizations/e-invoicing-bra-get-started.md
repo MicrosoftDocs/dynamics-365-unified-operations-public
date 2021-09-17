@@ -58,7 +58,7 @@ Complete these steps before you deploy the application setup to your Finance or 
 
 This section complements the **Country-specific configuration of Application setup** section in the topic, [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
-1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing* tile.
+1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
 2. On the **Electronic invoicing Features** page, verify that the **Brazilian NF-e (BR)** Electronic invoicing feature is selected.
 3. On the **Versions** tab, verify that the **Draft** version is selected.
 4. On the **Setups** tab, select **Application setup** and in the **Connected application** field, select the application to where you want to deploy.

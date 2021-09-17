@@ -1,26 +1,13 @@
 ---
-
 title: Customize table and column mappings
 description: This topic explains how to customize table and column mappings.
-author: sabinn-msft
+author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-douklo
-# ms.tgt_pltfrm: 
-ms.custom:
-ms.assetid: 
+ms.reviewer: rhaertle
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -30,8 +17,6 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-
 
 The out-of-box table maps have predefined table and column mappings that enable the flow of data between two apps. In this way, they serve as "blueprints." However, because every business is different, the default table maps might sometimes not be enough. Therefore, dual-write fully supports customization by providing ways to change table maps and column mappings.
 
@@ -92,15 +77,18 @@ Dual-write lets you filter data by using Open Data Protocol (OData) filter expre
 
     The following table shows some examples of filter expressions.
 
-    | Dataverse | Finance and Operations apps |
-    |---|---|
-    | Accounttype eq '3' | (accounttype == '3') |
-    | numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
+    | Filter | Dataverse | Finance and Operations apps |
+    |---|---|---|
+    |String field like| startswith(name, 'A')|(name like "A*")|
+    |String field not like|not contains(name, 'A')|(!(name like "*A*"))|
+    |Enumeration fields| AccountType == '3'| (AccountType == AccountType::Customer)|
+    |Dates|TransactionDate le '2021-06-23'|(TransactionDate <= 23\06\2021)|
+    |Multiple criteria combined| numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
 
     For more examples that show how to use expressions in query ranges, see [Using Expressions in Query Ranges](/dynamicsax-2012/developer/using-expressions-in-query-ranges).
-    
+
     Currently, we do not support nested lookups in dual-write source filter. Only standard filter operators directly against table columns are supported. For more examples, see [Standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators).
-    
+
 ## Add new table maps
 
 Although Microsoft is continuing to add new tables, you can also add standard or custom table maps.

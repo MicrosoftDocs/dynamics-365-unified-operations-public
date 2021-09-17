@@ -2,9 +2,9 @@
 # required metadata
 
 title: Generate Affordable Care Act reports in Benefits management
-description: This topics describes how Benefits management helps you track information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate.
-author: andreabichsel
-ms.date: 12/28/2020
+description: This topic describes how Benefits management tracks information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Benefits management helps you track information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate. Like the ACA reporting capability in the old **Benefits** workspace, this functionality applies only to legal entities in the United States.
+Benefits management tracks information that is reported on Form 1095-B and Form 1095-C for the Affordable Care Act (ACA) employer mandate. Like the ACA reporting capability in the old **Benefits** workspace, this functionality applies only to legal entities in the United States.
 
 To use this functionality, you must first turn on **Advanced Benefits Management**. For more information, including important caveats about Benefits management, see [Enable or disable Benefits management](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
@@ -151,7 +151,7 @@ You can generate ACA 1095-B and 1095-C forms, and then distribute them to each o
 2. Change the parameters as required, and then select **OK**.
 
     > [!NOTE]
-    > If you're printing 1095-C forms for more than 500 employees, you will receive more than one PDF file. We recommend that you increase the value of the **Maximum file size in megabytes** field on the **Document management parameters** page to **150**. (To quickly open that page, you can use the search field on the navigation bar.)
+    > If you're printing 1095-C forms for more than 500 employees, you will receive more than one PDF file. We recommend that you increase the value of the **Maximum file size in megabytes** field on the **Document management parameters** page to **150**. (To quickly open that page, use the search field on the navigation bar.)
     >
     > ![Changing the maximum file size.](./media/hr-benefits-management-aca-maximum-file-size.png)
 

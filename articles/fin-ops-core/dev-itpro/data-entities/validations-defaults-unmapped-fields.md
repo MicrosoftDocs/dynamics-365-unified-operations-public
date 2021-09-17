@@ -3,7 +3,7 @@
 
 title: Validations, default values, and unmapped fields
 description: This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 4624
 ms.assetid: 7ea995fa-8ea0-403d-8a68-f19993c40a6d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

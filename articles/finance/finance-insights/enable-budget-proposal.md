@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable budget proposals (preview)
+title: Enable budget proposals
 description: This topic explains how to turn on the Budget proposal feature in Finance Insights.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Enable budget proposals (preview)
+# Enable budget proposals
 
 [!include [banner](../includes/banner.md)]
 

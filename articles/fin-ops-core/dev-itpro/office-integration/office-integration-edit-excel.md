@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create Open in Excel experiences
+title: Open in Excel experiences FAQ
 description: Learn about creating Open in Office experiences for Excel and Word.
 author: jasongre
 ms.date: 11/17/2020
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create Open in Excel experiences
+# Open in Excel experiences FAQ
 
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 

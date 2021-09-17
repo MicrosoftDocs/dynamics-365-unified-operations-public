@@ -20,7 +20,7 @@ ms.search.scope:
 # ms.custom: NotInTOC
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tfehr
+ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
 ---

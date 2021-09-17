@@ -1,29 +1,15 @@
 ---
-# required metadata
-
 title: Call Retail Server extension APIs
 description: This topic describes how to call Microsoft Dynamics 365 Retail Server extension APIs from data actions or directly from module code.
 author: samjarawan
 ms.date: 08/18/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2020-01-22
 ms.dyn365.ops.version: Release 10.0.8
-
 ---
 # Call Retail Server extension APIs
 
@@ -34,7 +20,7 @@ This topic describes how to call Microsoft Dynamics 365 Retail Server extension 
 Dynamics 365 Retail Server extension APIs can be called from either the point of sale (POS) system or from e-Commerce modules and data actions. To call the APIs from e-Commerce modules and data actions, you must create proxy module TypeScript (.ts) files by using a tool that is provided as part of the Dynamics 365 Retail software development kit (SDK). You can then include these files in your e-Commerce configurations and use them to call the Retail Server extension APIs from e-Commerce modules and data actions.
 
 > [!NOTE]
-> This topic doesn't explain how to create Retail Server extensions. For more information, see [Create a new Retail Server extension](../dev-itpro/retail-server-extension.md).
+> This topic doesn't explain how to create Retail Server extensions. For more information, see [Create a Retail Server extension API](../dev-itpro/retail-server-icontroller-extension.md).
 
 It's assumed that the following prerequisites are in place:
 

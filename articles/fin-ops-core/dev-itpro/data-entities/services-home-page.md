@@ -3,7 +3,7 @@
 
 title: Service endpoints overview
 description: This topic describes the service endpoints that are available.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
@@ -17,11 +17,10 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: ["21311", "intro-internal"]
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

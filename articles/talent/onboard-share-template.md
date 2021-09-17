@@ -2,7 +2,7 @@
 # required metadata
 
 title: Share content with other contributors in Dynamics 365 Talent - Onboard
-description: This topics explains how to share onboarding guides and templates with other contributors in the Microsoft Dynamics 365 Talent - Onboard app.
+description: This topic explains how to share onboarding guides and templates with other contributors in the Microsoft Dynamics 365 Talent - Onboard app.
 author: andreabichsel
 ms.date: 05/20/2019
 ms.topic: article

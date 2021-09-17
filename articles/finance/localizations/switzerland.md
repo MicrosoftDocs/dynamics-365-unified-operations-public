@@ -33,6 +33,7 @@ This topic provides links to documentation resources for Switzerland.
 
 - [ESR customer payments import](emea-che-esr-customer-payments-import.md)
 - [Swiss QR-bills](emea-che-swiss-qr-bills.md)
+- [VAT declaration](emea-che-VAT-declaration-Switzerland.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

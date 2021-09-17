@@ -68,7 +68,7 @@ Lean manufacturing provides visibility into the current status of manufacturing 
 The following list describes the specialized kanban boards:
 -   Kanban job scheduling – Provides an overview of the kanban jobs. The board displays kanban jobs and their status for one or multiple work cells. The jobs are listed according to the planning periods (days or weeks) that are defined in the production flow model. The board also displays the capacity consumption for each planning period, so that you can monitor the scheduled load. You can change the status of kanban jobs, reschedule kanban jobs to different planning periods, and perform other tasks.
 -   Kanban board for transfer jobs – This board provides an overview of the current transfer jobs. You can update and register picking lists, start and complete transfer jobs, and perform other tasks.
--   Kanban board for process jobs – This board is designed to support the normal production flow and give an overview of the current situation in one or multiple work cells. From this board Kanbans can be prioritized, picked, or manufactured. The board is also designed to support barcode scanning for the reporting of Kanbans.
+-   Kanban board for process jobs – This board is designed to support the normal production flow and give an overview of the current situation in one or multiple work cells. From this board Kanbans can be prioritized, picked, or manufactured. The board is also designed to support bar code scanning for the reporting of Kanbans.
 
 ## Kanban jobs and integration with Supply Chain Management processes
 Kanban jobs are fully integrated with current processes for inventory transactions in Supply Chain Management.

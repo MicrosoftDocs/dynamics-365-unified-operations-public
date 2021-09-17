@@ -73,7 +73,7 @@ Additionally, before you can adjust item cost in a secondary currency, verify th
     - **Percent** (For more information, see the [Method for calculating a percentage adjustment](#method-for-calculating-a-percentage-adjustment) section.)
     - **From ledger account** (For more information, see the [Method for calculating adjustment amounts from a ledger account](#method-for-calculating-adjustment-amounts-from-a-ledger-account) section.)
         
-     ![Functions for calculating adjustment amounts page.](media/2%20Functions%20for%20calculating%20adjustment%20amounts.png)
+     ![Functions for calculating adjustment amounts page where you can view items on hand or item transactions](media/2%20Functions%20for%20calculating%20adjustment%20amounts.png)
 
 10. Select **Next**.
 11. Set the parameters for the selected method of adjustment. The parameters vary, depending on the method that you selected.
@@ -135,10 +135,10 @@ To cancel adjustments that are done by the wizard, on the **Closing and adjustme
     - In the **Amount** field, enter the amount.
     - In the **Allocation principle** field, select **Value** or **Quantity**.
 
-    ![Functions for calculating adjustment amounts page.](media/7%20Adjustment%20with%20amount.png)
+    ![Functions for calculating adjustment amounts page where you select Amount and click Next](media/7%20Adjustment%20with%20amount.png)
 
 4. Select **Next**.
-5. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard(#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
+5. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.
 
 ### Method for calculating an adjustment to a value
 
@@ -149,7 +149,7 @@ To cancel adjustments that are done by the wizard, on the **Closing and adjustme
     - In the **Value** field, enter the value.
     - In the **Allocation principle** field, select **Value** or **Quantity**.
 
-    ![Functions for calculating adjustment amounts page.](media/8%20Adjustment%20to%20value.png)
+    ![Functions for calculating adjustment amounts page where you select Value and click Next.](media/8%20Adjustment%20to%20value.png)
 
 4. Select **Next**.
 5.  Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard(#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
@@ -163,7 +163,7 @@ To cancel adjustments that are done by the wizard, on the **Closing and adjustme
     - In the **Percent** field, enter the percentage.
     - In the **Adjust** field, select **Positive on-hand inventory** or **On-hand inventory total**.
 
-    ![Functions for calculating adjustment amounts page.](media/9%20Percentage%20adjustment.png)
+    ![Functions for calculating adjustment amounts page where you select Percent and click Next.](media/9%20Percentage%20adjustment.png)
 
 4. Select **Next**.
 5. Complete the remaining steps of the adjustment as described in the [Adjust item cost by using the Inventory adjustment wizard](#adjust-item-cost-using-inventory-adjustment-wizard) section.

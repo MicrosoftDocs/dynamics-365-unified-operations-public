@@ -2,7 +2,7 @@
 title: Headless commerce architecture
 description: This topic describes the architecture of the headless commerce.
 author: mugunthanm
-ms.date: 06/20/2017
+ms.date: 06/03/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: rhaertle

@@ -3,7 +3,7 @@
 
 title: Data management error descriptions
 description: This topic describes the error messages that you might encounter in data management.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 25341
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2018-09-15
 ms.dyn365.ops.version: Platform update 20
 

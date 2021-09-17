@@ -68,7 +68,7 @@ The following illustration shows the business process for registering intermedia
 
 ## Create inventory owners (suppliers) for a commissioner
 
-1. Go to **Inventory ** \> **Setup** \> **Dimensions** \> **Inventory owners**.
+1. Go to **Inventory** \> **Setup** \> **Dimensions** \> **Inventory owners**.
 2. Select **New** to create an inventory owner.
 3. In the **Owner** field, enter the code for the owner.
 4. In the **Account type** field, select **Vendor**.

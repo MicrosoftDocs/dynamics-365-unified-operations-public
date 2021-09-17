@@ -56,6 +56,7 @@ This topic includes information and links to resources that can help you set up 
 - [Setup method of payment](tasks/fr-00004-setup-method-payment.md)
 - [Update method of payment on customer](tasks/fr-00004-update-method-payment-customer.md)
 - [VAT declaration](emea-fra-VAT-declaration-preview-France.md)
+- [DAS2 report](emea-fra-das2-report.md)
 - Commerce
   - [Cash register functionality](../../commerce/localizations/emea-fra-cash-registers.md)
   - [Deployment guidelines for cash registers](../../commerce/localizations/emea-fra-deployment.md)

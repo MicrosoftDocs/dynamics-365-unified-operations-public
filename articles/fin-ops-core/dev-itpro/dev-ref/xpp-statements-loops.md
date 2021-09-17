@@ -2,7 +2,7 @@
 title: Comments, using, and print statements
 description: This topic describes statements in X++.
 author: robinarh
-ms.date: 12/02/2019
+ms.date: 08/27/2021
 audience: Developer
 ms.devlang: xpp
 ms.reviewer: rhaertle
@@ -34,7 +34,7 @@ You use the **print** statement to output text through **System.Diagnostics.Writ
 | Feature   | print statement    | info method  |
 |-----------|--------------------|--------------|
 | Ease of invocation                        | The **print** statement automatically converts various data types into strings. It can convert multiple data types in one invocation.       | The **info** method requires that the input parameter be a string.     |
-| Ability to copy contents to the clipboard | Text is easily copied from the **Output** window to the clipboard.            | Text is easily easily copied from the **Infolog** window to the clipboard. |
+| Ability to copy contents to the clipboard | Text is easily copied from the **Output** window to the clipboard.            | Text is easily copied from the **Infolog** window to the clipboard. |
 | Typical usage                             | The **print** statement is used for convenience during testing. It can help you debug small issues without having to run a formal debugger. | The **info** method is appropriate for use in production.     |
 
 ### Example of a print statement
@@ -55,7 +55,7 @@ print hello, " -- ", fortytwo, " -- ", now, " -- ", dialog;
 
 // int2Str converter is needed when using info().
 info("Hello");
-info(int2Str(fortytwo)); 
+info(int2Str(fortytwo));
 
 // Output to Infolog window:
 // Hello
@@ -63,7 +63,8 @@ info(int2Str(fortytwo));
 ```
 
 ## TODO comments
-The compiler recognizes the string **TODO** when it occurs at the start of a comment. The **TODO** string prompts the compiler to report the rest of the comment text in the **Task List** window in Microsoft Visual Studio. To open the **Task List** window, select **View**, and then select **Task Window**. The **Task Window** reports the line number where the **TODO** comment can be found in the code. 
+
+The compiler recognizes the string **TODO** when it occurs at the start of a comment. The **TODO** string prompts the compiler to report the rest of the comment text in the **Task List** window in Microsoft Visual Studio. To open the **Task List** window, select **View**, and then select **Task Window**. The **Task Window** reports the line number where the **TODO** comment can be found in the code.
 
 Here are the rules for using **TODO** in comments:
 
@@ -83,7 +84,7 @@ The following examples show **TODO** comments.
 // An example of using TODO in the // style of comment.
 public boolean isLate()
 {
-    // TODO: Finish this stub. 
+    // TODO: Finish this stub.
     return true;
 }
 
@@ -99,8 +100,13 @@ public boolean isLate()
 
 The **changeSite**, **pause**, and **window** keywords are no longer a part of the X++ language. These keywords will cause compilation errors if you use them.
 
+## Ignored statements: server and client
+
+In previous versions (AX2012 and earlier), you could designate a method to run on either the client or the server. This is no longer possible, because all X++ code is executed as .NET CIL on the server. The keywords `client` and `server` are ignored. Their use doesn't cause a compile error, but they should not be used in any new X++ code.
+
 ## using clauses
-You use **using** clauses so that you don't have to provide the fully qualified name of a type. The **using** clause must precede the class that it applies, and it's required in every source file that you want it to apply to. Typically, all **using** clauses are put at the beginning of the source file. You can also provide aliases that introduce a short name for a fully qualified name. Aliases can denote namespaces or classes. 
+
+You use **using** clauses so that you don't have to provide the fully qualified name of a type. The **using** clause must precede the class that it applies, and it's required in every source file that you want it to apply to. Typically, all **using** clauses are put at the beginning of the source file. You can also provide aliases that introduce a short name for a fully qualified name. Aliases can denote namespaces or classes.
 
 The following example shows a **using** clause, a namespace alias, and a class alias.
 
@@ -122,6 +128,7 @@ class UsingClass
 ```
 
 ## using statements
+
 The **using** statement helps guarantee that objects that implement **IDisposable** are disposed of correctly. When you use an **IDisposable** object, you should declare and instantiate it in a **using** statement. The **using** statement calls the **Dispose** method on the object in the correct way, even if an exception occurs while you're calling methods on the object. You can achieve the same result by putting the object inside a **try** block and then explicitly calling **Dispose** in a **finally** block. The **using** statement simplifies the syntax and disposes of the object correctly. Here is the syntax for a **using** statement:
 
 **using (** *expression* **) {** *statement* **}**
@@ -138,6 +145,5 @@ static void AnotherMethod()
     }
 }
 ```
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

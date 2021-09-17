@@ -512,7 +512,7 @@ You can reprint these wave labels by going to **Warehouse management \> Inquirie
 
 ## Scenario 3: Wave label printing for multi-tiered labels
 
-This scenario shows how to use the wave label printing functionality when the warehousing processes require several tiers of shipping labels. For example, separate labels might have to be printed for cartons and pallets, and a break label might have to be printed for a whole shipment. Break labels are a separate type of label that can be used as a divider between rolls and containers, such as labels for the shipment ID and a barcode, so that the labels can easily be sorted after they are printed.
+This scenario shows how to use the wave label printing functionality when the warehousing processes require several tiers of shipping labels. For example, separate labels might have to be printed for cartons and pallets, and a break label might have to be printed for a whole shipment. Break labels are a separate type of label that can be used as a divider between rolls and containers, such as labels for the shipment ID and a bar code, so that the labels can easily be sorted after they are printed.
 
 The main difference between the configuration of this scenario and the configuration of scenario 1, besides the fact that break labels are enabled, is that multiple wave label types must be associated with wave label templates and unit sequence group lines. To accomplish this configuration, you set up the following elements for this scenario:
 

@@ -4,7 +4,7 @@
 title: Embed third-party apps 
 description: This topic explains how to embed third-party apps to augment the product's functionality.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,11 +28,10 @@ ms.dyn365.ops.version: 10.0.19
 # Embed third-party apps
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-Many customers use a range of applications to run their business. Some of those applications are third-party web apps that work in conjunction with Finance and Operations apps. To provide a more seamless user experience, you can use the **(Preview) Full page apps** feature to embed those third-party apps directly into your Finance and Operations apps (provided that the third-party apps allow themselves to be embedded). In this way, users can access the websites and apps that they require without having to switch tabs or windows.
+Many customers use a range of applications to run their business. Some of those applications are third-party web apps that work in conjunction with Finance and Operations apps. To provide a more seamless user experience, you can use the **Full page apps** feature to embed those third-party apps directly into your Finance and Operations apps (provided that the third-party apps allow themselves to be embedded). In this way, users can access the websites and apps that they require without having to switch tabs or windows.
 
-Before you can embed third-party apps into the product, you must turn on the **(Preview) Full page apps** feature in Feature management. You can then use one of the following methods to embed a third-party app or website. These methods are analogous to the methods that are used to embed canvas apps from Microsoft Power Apps into Finance and Operations apps.
+Before you can embed third-party apps into the product, you must turn on the **Full page apps** feature in Feature management. You can then use one of the following methods to embed a third-party app or website. These methods are analogous to the methods that are used to embed canvas apps from Microsoft Power Apps into Finance and Operations apps.
 
 - Embed the app or website on an existing page as a new tab page (pivot tab, FastTab, blade, or workspace section).
 - Create a new full-page experience for the app or website from the dashboard.
@@ -69,7 +68,7 @@ Use this procedure if you want to supplement an existing page in the system with
 Use this procedure if the app that you want to embed isn't related to an existing page, or if you just want a full-page experience for the app inside the Finance and Operations app.
 
 1. Open the dashboard.
-2. Select and hold (or right-click) the page, select **Personalize**, and then select **Add a page**.
+2. Select and hold (or right-click) on the dashboard, select **Personalize**, and then select **Add a page**.
 3. In the **Add a page** pane, select **Website**.
 4. Configure the embedded app:
 
@@ -81,15 +80,15 @@ Use this procedure if the app that you want to embed isn't related to an existin
     > - The app or website must be configured to allow itself to be embedded.
 
 5. Select **Save** to add the app to the dashboard as a new tile.
-6. Select the new tile on the dashboard, and confirm that the app appears as expected. If the app isn't rendered, see the [Troubleshooting](#troubleshooting) section later in this topic.
+6. Select the new tile on the dashboard, and confirm that the app appears as expected. If the app isn't being rendered, see the [Troubleshooting](#troubleshooting) section later in this topic.
 
 ## Sharing embedded apps
 
 After you've embedded an app by using one of the methods that are described in the previous sections, you might want to share the view with other users in the system. To share an embedded app, use one of the following methods:
 
-- **Publish the view (Recommended):** If the embedded app has been saved to a view, the recommended and preferred way to share it is to publish the view to users who have the appropriate security roles. Then, all users who have the security roles that are targeted by the published view will see the app in Finance and Operations apps. For more information about how to publish a view, see [Publishing views](saved-views.md#publishing-views).
+- **Publish the view (Recommended):** If the embedded app has been saved to a view, the recommended and preferred way to share it is to publish the view to users who have the appropriate security roles in the targeted legal entities. In this case, only the desired users will see the embedded app on that page. For more information about how to publish a view, see [Publishing views](saved-views.md#publishing-views).
 
-    You can also publish an app that has been embedded as a full-page experience from the dashboard. On the dashboard, select and hold (or right-click) the tile that is associated with the app, select **Personalize**, and then select **Publish page**. Currently, you can publish only to security roles. However, the capability to publish to legal entities will be added before the feature becomes generally available.
+    You can also publish an app that has been embedded as a full-page experience from the dashboard. On the dashboard, select and hold (or right-click) the tile that is associated with the app, select **Personalize**, and then select **Publish page**. An experience that resembles the *Publishing views* experience is shown, and you can select the security roles to publish to. In update 10.0.21 or later, if the **Improved legal entity support for saved views** feature is turned on, you can also publish the app to the desired legal entities.
 
 - **Copy the personalization:** For pages that don't support views (for example, dialog boxes or workspaces), or for the full-page app experience, you can copy the personalization to the appropriate users. For more information, see [Sharing personalizations](personalize-user-experience.md#sharing-personalizations).
 

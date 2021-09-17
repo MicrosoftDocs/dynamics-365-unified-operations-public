@@ -29,7 +29,7 @@ All Open Data Protocol (OData) entities in Finance and Operations apps are avail
 
 ## Virtual entities for core Human Resources
 
-Core Human Resources entities can also be virtualized, just as Finance and Operations entities can. For more information, see [Core HR virtual entities](/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+Core Human Resources entities can also be virtualized, just as Finance and Operations entities can. For more information, see [Configure Dataverse virtual tables](../../../human-resources/hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## Architecture
 

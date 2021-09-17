@@ -4,7 +4,7 @@
 title: Email ER destination type
 description: This topic explains how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
 author: NickSelin
-ms.date: 07/27/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -58,9 +58,22 @@ To send one or more output files by email, follow these steps.
 
 ## Configure an email destination
 
-You can specify the email sender and email recipients, and you can edit the subject and body of the email message. You can set up constant text for the email subject and body, or you can use ER [formulas](er-formula-language.md) to dynamically create email texts.
+### Email content
 
-By default, an email is sent on behalf of the current user. To specify a different email sender, you must configure the **From** field.
+You can edit the subject and body of the email message.
+
+In the **Subject** field, enter the text of the email subject that should appear in the subject field of an electronic message that is generated at runtime. In the **Body** field, enter the text of the email body that should appear in the body field of an electronic message. You can set up constant text for the email subject and body, or you can use ER [formulas](er-formula-language.md) to dynamically create email text at runtime. The configured formula must return a value of the [String](er-formula-supported-data-types-primitive.md#string) type.
+
+The body of your email is composed in TEXT or HTML format, depending on the email client. You can use any layout, styling, and branding that HTML and inline Cascading Style Sheets (CSS) allow for.
+
+> [!NOTE]
+> Email clients impose layout and style limitations that might require adjustments to the HTML and CSS that you use for the message body. We recommend that you familiarize yourself with the best practices for creating HTML that the most popular email clients will support.
+>
+> Use the correct encoding to implement a carriage return, depending on the body formatting. For more information, see the definition of the [String](er-formula-supported-data-types-primitive.md#string) data type.
+
+### Email addresses
+
+You can specify the email sender and email recipients. By default, email is sent on behalf of the current user. To specify a different email sender, you must configure the **From** field.
 
 > [!NOTE]
 > When an email destination is configured, the **From** field is visible only to users who have the `ERFormatDestinationSenderEmailConfigure` security privilege, **Configure the sender email address for ER format destinations**.

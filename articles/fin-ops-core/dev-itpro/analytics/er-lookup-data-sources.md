@@ -4,7 +4,7 @@
 title: Configure Lookup data sources to use ER application-specific parameters
 description: This topic explains how you can configure Lookup data sources in Electronic reporting (ER) formats to use ER application-specific parameters.
 author: NickSelin
-ms.date: 04/02/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -74,7 +74,7 @@ You can set up the lookup rules for the selected ER format by using the UI that 
 The following illustration shows how the `Model.Data.Summary.LevelByLookup` data source of the **Calculated field** type can be configured to call the configured **Lookup** data source providing the required parameters. To process this call at runtime, ER goes through the list of configured rules in the defined sequence to locate the first rule that satisfies the provided conditions. In this example, it's the rule that contains the tax code that matches the provided one. As the result, the most appropriate rule is found and the enumeration value that is configured for the found rule is returned by this data source.
 
 > [!NOTE]
-> An exception is thrown when no applicable rule is found. To prevent these exceptions, configure additional rules at the end of the rules list to handle cases when a non-configured value or no value is provided. Use the **\*Not blank*** and **\*Blank*** options accordingly.  
+> An exception is thrown when no applicable rule is found. To prevent these exceptions, configure additional rules at the end of the rules list to handle cases when a non-configured value or no value is provided. Use the **\*Not blank**\* and **\*Blank**\* options accordingly.  
 >
 > ![Add a data source to call the configured Lookup data source.](./media/er-lookup-data-sources-img7.png)
 

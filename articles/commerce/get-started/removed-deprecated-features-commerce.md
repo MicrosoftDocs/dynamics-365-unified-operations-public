@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Commerce 
 description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw
-ms.date: 01/11/2021
+ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,6 +38,55 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+## Features removed or deprecated in the Commerce 10.0.21 release
+
+[!include [banner](../includes/preview-banner.md)]
+
+### Retail SDK distributed by using Lifecycle Services
+
+The Retail SDK ships in Lifecycle Services (LCS). This mode of distribution is deprecated in release 10.0.21. Going forward, Retail SDK reference packages, libraries, and samples will be published in public repositories on GitHub.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The Retail SDK ships in LCS. The LCS process takes a few hours to finish, and the process has to be repeated for every update. Going forward, Retail SDK reference packages, libraries, and samples will be published in public repositories on GitHub. Extension samples and reference packages can be consumed easily, and the updates finish in a few minutes. |
+| **Replaced by another feature?**   |  [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
+| **Product areas affected**         | Retail SDK |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: As of release 10.0.21, the SDK shipped via the LCS VMs will be removed in October 2022. |
+
+### Retail deployable package and combined POS, Hardware station, and Cloud Scale unit installers
+
+Retail deployable packages generated using the Retail SDK MSBuild is deprecated in 10.0.21. Going forward, use the Cloud Scale Unit (CSU) package for Cloud Scale unit extensions (Commerce Runtime, channel database, Headless commerce APIs, Payments, and Cloud Point of Sale (POS)). Use extension-only installers for POS, Hardware station, and Cloud scale unit self-hosted.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | A Retail deployable package is a combined package that contains a complete set of extension packages and installers. This combined package makes the deployment complex, as CSU extensions go to Cloud scale unit and installers are deployed in stores. The installers include the extension and base product, which makes the updates difficult. With every upgrade, a code merge and package generation is required. To simplify this process, the extension packages are now separated into components for easy deployment and management. With the new approach, extensions and base product installers are separated and can be independently serviced and upgraded without a code merge or repackaging.|
+| **Replaced by another feature?**   | CSU extensions, POS extension installers, Hardware station extension installers |
+| **Product areas affected**         | Dynamics 365 Commerce extension and deployment |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: As of release 10.0.21, support for deploying RetailDeployablePackage in LCS will be removed in October 2022. |
+
+For more information, see:
+
++ [Generate a separate package for Commerce Cloud Scale Unit (CSU)](../dev-itpro/retail-sdk/retail-sdk-packaging.md#generate-a-separate-package-for-commerce-cloud-scale-unit-csu)
++ [Create a Modern POS extension package](../dev-itpro/pos-extension/mpos-extension-packaging.md)
++ [Integrate the POS with a new hardware device](../dev-itpro/hardware-device-extension.md)
++ Code samples
+    + [Cloud Scale Unit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
+    + [POS, CSU and Hardware station](https://github.com/microsoft/Dynamics365Commerce.InStore)
+
+### ModernPos.Sln and CloudPOs.sln in the Retail SDK
+
+POS extension development using ModernPos.sln, CloudPOs.sln, POS.Extension.csproj, and the POS folder is deprecated in release 10.0.21. Going forward, use the POS-independent packaging SDK for POS extensions.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | In earlier versions of the Retail SDK, if there are POS extensions, a code merge and repackaging is required to update to the latest version of the POS. The code merge was a time-consuming upgrade process and you had to maintain the full Retail SDK in the repository. You also had to compile the core POS.App project. By using the independent packaging model, you must maintain only your extension. The process of updating to the latest version of the POS extensions is as easy as updating the version of the NuGet package that your project consumes. Extensions can be deployed independently, and services use the extension installers. The base POS can be deployed and maintained separately, and no code merge or repackaging with the base installer or code is required. |
+| **Replaced by another feature?**   | [POS-independent packaging SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
+| **Product areas affected**         | Dynamics 365 Commerce POS extension and deployment |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: As of release 10.0.21, support for combined POS packages and extension model using the ModernPos.Sln, CloudPOs.sln, and POS.Extensons.csproj in Retail SDK will be removed in October 2022. |
 
 ## Features removed or deprecated in the Commerce 10.0.17 release
 

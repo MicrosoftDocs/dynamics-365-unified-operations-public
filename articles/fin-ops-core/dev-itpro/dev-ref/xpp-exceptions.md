@@ -15,9 +15,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes exception handling in X++. You handle errors by using the **throw**, **try**...**catch**, **finally**, and **retry** statements to generate and handle exceptions. 
+This topic describes exception handling in X++. You handle errors by using the **throw**, **try**...**catch**, **finally**, and **retry** statements to generate and handle exceptions.
 
-An *exception* is a regulated jump away from the sequence of program execution. The instruction where program execution resumes is determined by **try**...**catch** blocks and the type of exception that is thrown. An exception is represented by a value of the **Exception** enumeration, or an instance of .NET's System.Exception class or a derived class. One exception that is often thrown is the **Exception::error** enum value. A common practice is to write diagnostic information to the Infolog before the exception is thrown. 
+An *exception* is a regulated jump away from the sequence of program execution. The instruction where program execution resumes is determined by `try...catch` blocks and the type of exception that is thrown. An exception is represented by a value of the **Exception** enumeration, or an instance of .NET's `System.Exception` class or a derived class. One exception that is often thrown is the **Exception::error** enum value. A common practice is to write diagnostic information to the Infolog before the exception is thrown.
 
 The **Global::error** method is often the best way to write diagnostic information to the Infolog. For example, your method might receive an input parameter value that isn't valid. In this case, the method can throw an exception to immediately transfer control to a **catch** code block that contains logic for handling this error situation. You don't necessarily have to know the location of the **catch** block that will receive control when the exception is thrown.
 
@@ -70,29 +70,29 @@ catch
 
 ## try, catch, finally, and retry statements
 
-When an exception is thrown, it's first processed through the <strong>catch</strong> list of the innermost <strong>try</strong> block. If a <strong>catch</strong> block is found that handles the kind of exception that is being thrown, program control jumps to that <strong>catch</strong> block. If the <strong>catch</strong> list has no block that specifies the exception, the system passes the exception to the <strong>catch</strong> list of the next-innermost <strong>try</strong> block. The <strong>catch</strong> statements are processed in the same sequence as they appear in the code. 
+When an exception is thrown, it's first processed through the **catch** list of the innermost **try** block. If a **catch** block is found that handles the kind of exception that is being thrown, program control jumps to that **catch** block. If the **catch** list has no block that specifies the exception, the system passes the exception to the **catch** list of the next-innermost **try** block. The **catch** statements are processed in the same sequence as they appear in the code.
 
-It's a common practice to have the first <strong>catch</strong> statement handle the <strong>Exception::Error</strong> enum value. One strategy is to have the last <strong>catch</strong> statement leave the exception type unspecified. In this case, the last <strong>catch</strong> statement handles all exceptions that aren't handled by any earlier <strong>catch</strong> statement. This strategy is appropriate for the outermost <strong>try</strong>...<strong>catch</strong> blocks. 
+It's a common practice to have the first **catch** statement handle the **Exception::Error** enum value. One strategy is to have the last **catch** statement leave the exception type unspecified. In this case, the last **catch** statement handles all exceptions that aren't handled by any earlier **catch** statement. This strategy is appropriate for the outermost **try**...**catch** blocks.
 
-An optional *<strong><em>finally</em></strong>* clause can be included in <strong>try</strong>...<strong>catch</strong> statements. The semantics of a <strong>finally</strong> clause are the same as they are in C\#. The statements in the <strong>finally</strong> clause are executed when control leaves the <strong>try</strong> block, either normally or through an exception. 
+An optional *finally* clause can be included in **try**...**catch** statements. The semantics of a **finally** clause are the same as they are in C\#. The statements in the **finally** clause are executed when control leaves the **try** block, either normally or through an exception.
 
-The <strong>retry</strong> statement can be written only in a <strong>catch</strong> block. The <strong>retry</strong> statement causes control to jump up to the first line of code in the associated <strong>try</strong> block. The <strong>retry</strong> statement is used when the cause of the exception can be fixed by the code in the <strong>catch</strong> block. The <strong>retry</strong> statement gives the code in the <strong>try</strong> block another opportunity to succeed. The <strong>retry</strong> statement erases all messages that have been written to the Infolog since program control entered the <strong>try</strong> block. 
+The **retry** statement can be written only in a **catch** block. The **retry** statement causes control to jump up to the first line of code in the associated **try** block. The **retry** statement is used when the cause of the exception can be fixed by the code in the **catch** block. The **retry** statement gives the code in the **try** block another opportunity to succeed. The **retry** statement erases all messages that have been written to the Infolog since program control entered the **try** block.
 
-> [!NOTE] 
+> [!NOTE]
 > You must make sure that your **retry** statements don't cause an infinite loop. As a best practice, the **try** block should include a variable that you can test to find out whether you're in a loop.
 
 ```xpp
-try 
-{ 
+try
+{
     // Code here.
 }
-catch (Exception::Numeric) 
-{ 
-    info("Caught a Numeric exception."); 
+catch (Exception::Numeric)
+{
+    info("Caught a Numeric exception.");
 }
-catch 
-{ 
-    info("Caught an exception."); 
+catch
+{
+    info("Caught an exception.");
 }
 finally
 {
@@ -104,11 +104,11 @@ finally
 
 If no **catch** statement handles the exception, it's handled by the system exception handler. The system exception handler doesn't write to the Infolog. Therefore, an unhandled exception can be hard to diagnose. We recommended that you follow all these guidelines to provide effective exception handling:
 
--   Have a **try** block that contains all your statements in the outermost frame on the call stack.
--   Have an unqualified **catch** block at the end of your outermost **catch** list.
--   Avoid throwing an **Exception** enum value directly.
--   Throw the enum value that is returned from one of the following methods on the **Global** class: **Global::error**, **Global::warning**, or **Global::info**. (You can omit the implicit **Global::** prefix).
--   When you catch an exception that hasn't been shown in the Infolog, call the **Global::info** function to show it.
++ Have a **try** block that contains all your statements in the outermost frame on the call stack.
++ Have an unqualified **catch** block at the end of your outermost **catch** list.
++ Avoid throwing an **Exception** enum value directly.
++ Throw the enum value that is returned from one of the following methods on the **Global** class: **Global::error**, **Global::warning**, or **Global::info**. (You can omit the implicit **Global::** prefix).
++ When you catch an exception that hasn't been shown in the Infolog, call the **Global::info** function to show it.
 
 **Exception::CLRError**, **Exception::UpdateConflictNotRecovered**, and system kernel exceptions are examples of exceptions that aren't automatically shown in the Infolog.
 
@@ -163,7 +163,7 @@ static Exception error
 
 The return type is the **Exception::Error** enum value. The **error** method doesn't throw an exception. It just provides an enum value that can be used in a **throw** statement. The **throw** statement throws the exception. Here are descriptions of the parameters for the **error** method. Only the first parameter is required.
 
-- <strong>SysInfoLogStr</strong> txt is a <strong>str</strong> of the message text. It can also be a label reference, such as <strong>strFmt("@SYS12345", strThingName)</strong>.
+- **SysInfoLogStr** txt is a **str** of the message text. It can also be a label reference, such as **strFmt("@SYS12345", strThingName)**.
 - The **URL** helpUrl is a reference to the location of a Help topic in Application Explorer, such as **"KernDoc:\\\\\\\\Functions\\\\substr"**. The parameter value is ignored if \_sysInfoAction is supplied.
 - The **SysInfoAction** is an instance of a class that extends the **SysInfoAction** class. The method overrides that we recommend for the child class are the **description** method, the **run** method, the **pack** method, and the **unpack** method.
 
@@ -179,6 +179,34 @@ Occasionally, you want to do nothing inside your **catch** block. However, the X
 
 If an exception is thrown inside a transaction, the transaction is automatically canceled (that is, a **ttsAbort** operation occurs). This behavior applies for both exceptions that are thrown manually and exceptions that the system throws. When an exception is thrown inside a **ttsBegin**-**ttsCommit** transaction block, no **catch** statement inside that transaction block can process the exception, (unless it is a **UpdateConflict** or a **DuplicateKeyException**). Instead, the innermost **catch** statements that are outside the transaction block are the first **catch** statements that are tested.
 
+The finally clause will be executed even in transaction scope.
+
+## Exceptions and `using` statements
+
+The semantics of us `using` statements are not impacted by exception scope.
+
+```xpp
+using (var athing = new SomethingDisposable())
+{
+    // Do work.
+}
+```
+
+Is exactly the same as:
+
+```xpp
+var athing = new SomethingDisposable();
+try
+{
+    // Do work.
+}
+finally
+{
+    if (athing != null)
+        athing.Dispose();
+}
+```
+
 ## Examples of exception handling
 
 ### Showing exceptions in the Infolog
@@ -187,14 +215,14 @@ The following code example shows exceptions in the Infolog.
 
 ```xpp
 // This example shows that a direct throw of Exception::Error does not
-// display a message in the Infolog. This is why we recommend the 
-// Global::error method. 
+// display a message in the Infolog. This is why we recommend the
+// Global::error method.
 static void TryCatchThrowError1Job(Args _args)
 {
 /***
     The 'throw' does not directly add a message to the Infolog.
     The exception is caught.
-***/    
+***/
     try
     {
         info("In the 'try' block. (j1)");
@@ -218,8 +246,8 @@ Caught 'Exception::Error'.
 The following code example uses the **error** method to write exception information to the Infolog.
 
 ```xpp
-// This example shows that the use of the Global::error method 
-// is a reliable way to display exceptions in the Infolog. 
+// This example shows that the use of the Global::error method
+// is a reliable way to display exceptions in the Infolog.
 static void TryCatchGlobalError2Job(Args _args)
 {
     /***
@@ -250,10 +278,10 @@ Caught 'Exception::Error'.
 The following code example handles a **CLRError** exception.
 
 ```xpp
-// This example shows that a CLRError exception is not displayed 
+// This example shows that a CLRError exception is not displayed
 // in the Infolog unless you catch the exception and manually
 // call the info method. The use of the CLRInterop::getLastException
-// method is also demonstrated. 
+// method is also demonstrated.
 static void TryCatchCauseCLRError3Job(Args _args)
 {
     /***
@@ -283,12 +311,12 @@ static void TryCatchCauseCLRError3Job(Args _args)
 Message (03:55:10 pm)
 In the 'try' block. (j3)
 Caught 'Exception::CLRError'.
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> 
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. --->
     System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
 Parameter name: startIndex
     at System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
     at System.String.Substring(Int32 startIndex)
-    at ClrBridgeImpl.InvokeClrInstanceMethod(ClrBridgeImpl* , ObjectWrapper* objectWrapper, Char* pszMethodName, 
+    at ClrBridgeImpl.InvokeClrInstanceMethod(ClrBridgeImpl* , ObjectWrapper* objectWrapper, Char* pszMethodName,
     Int32 argsLength, ObjectWrapper** arguments, Boolean* argsAreByRef, Boolean* isException)
 **********/
 }
@@ -300,8 +328,8 @@ The following code example uses a **retry** statement.
 
 ```xpp
 // This example shows how to use the retry statement. The print
-// statements are included because retry causes earlier Infolog 
-// messages to be erased. 
+// statements are included because retry causes earlier Infolog
+// messages to be erased.
 static void TryCatchRetry4Job(Args _args)
 {
     /***
@@ -357,7 +385,7 @@ The following code example throws an exception in a transaction block.
 ```xpp
 // This examples uses three levels of try nesting to illustrate
 // where an exception is caught when the exception is thrown inside
-// a ttsBegin-ttsCommit transaction block. 
+// a ttsBegin-ttsCommit transaction block.
 static void TryCatchTransaction5Job(Args _args)
 {
     /***
@@ -401,15 +429,15 @@ End of job.
 
 ### Using Global::error with a SysInfoAction parameter
 
-When your code throws an exception, it can write messages to the Infolog. You can make those Infolog messages more helpful by using the **SysInfoAction** class. 
+When your code throws an exception, it can write messages to the Infolog. You can make those Infolog messages more helpful by using the **SysInfoAction** class.
 
-In the following example, a **SysInfoAction** parameter is passed in to the **Global::error** method. The **error** method writes the message to the Infolog. When the user double-clicks the Infolog message, the **SysInfoAction.run** method is run. 
+In the following example, a **SysInfoAction** parameter is passed in to the **Global::error** method. The **error** method writes the message to the Infolog. When the user double-clicks the Infolog message, the **SysInfoAction.run** method is run.
 
-In the **run** method, you can write code that helps diagnose or fix the issue that caused the exception. The object that is passed in to the **Global::error** method is constructed from a class that you write that extends **SysInfoAction**. 
+In the **run** method, you can write code that helps diagnose or fix the issue that caused the exception. The object that is passed in to the **Global::error** method is constructed from a class that you write that extends **SysInfoAction**.
 
-The following code sample is shown in two parts. 
+The following code sample is shown in two parts.
 
-- The first part shows a job that calls the **Global::error** method and then throws the returned value. An instance of the **SysInfoAction\_PrintWindow\_Demo** class is passed in to the **error** method. 
+- The first part shows a job that calls the **Global::error** method and then throws the returned value. An instance of the **SysInfoAction\_PrintWindow\_Demo** class is passed in to the **error** method.
 - The second part shows the **SysInfoAction\_PrintWindow\_Demo** class.
 
 #### Part 1: Calling Global::error
@@ -469,24 +497,23 @@ public class SysInfoAction_PrintWindow_Demo extends SysInfoAction
 
 The following table shows the exception literals that are the values of the **Exception** enumeration.
 
-| Exception literal                 | Description                                                                                                                                                         |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Break                             | The user pressed Break or Ctrl+C.                                                                                                                                   |
-| CLRError                          | An error occurred while the CLR functionality was being used.                                                                                                       |
-| CodeAccessSecurity                | An error occurred while the **CodeAccessPermission.demand** method was being used.                                                                                  |
-| DDEerror                          | An error occurred while the **DDE** system class was being used.                                                                                                    |
-| Deadlock                          | A database deadlock occurred, because several transactions are waiting for each other.                                                                              |
+| Exception literal                 | Description    |
+|-----------------------------------|---------------------------------------------------|
+| Break                             | The user pressed Break or Ctrl+C. |
+| CLRError                          | An error occurred while the CLR functionality was being used. |
+| CodeAccessSecurity                | An error occurred while the **CodeAccessPermission.demand** method was being used. |
+| DDEerror                          | An error occurred while the **DDE** system class was being used. |
+| Deadlock                          | A database deadlock occurred, because several transactions are waiting for each other. |
 | DuplicateKeyException             | An error occurred in a transaction that is using Optimistic Concurrency Control. The transaction can be retried (use a **retry** statement in the **catch** block). |
 | DuplicateKeyExceptionNotRecovered | An error occurred in a transaction that is using Optimistic Concurrency Control. The code won't be retried. This exception can't be caught inside a transaction.    |
-| Error                             | A fatal error occurred. The transaction has been stopped.                                                                                                           |
-| Info                              | This exception literal holds a message for the user. Don't throw an **info** exception.                                                                             |
-| Internal                          | An internal error occurred in the development system.                                                                                                               |
-| Numeric                           | An error occurred while the **str2int**, **str2int64**, or **str2num** function was being used.                                                                     |
-| Sequence                          |                                                                                                                                                                     |
+| Error                             | A fatal error occurred. The transaction has been stopped. |
+| Info                              | This exception literal holds a message for the user. Don't throw an **info** exception. |
+| Internal                          | An internal error occurred in the development system. |
+| Numeric                           | An error occurred while the **str2int**, **str2int64**, or **str2num** function was being used. |
+| Sequence                          | |
 | UpdateConflict                    | An error occurred in a transaction that is using Optimistic Concurrency Control. The transaction can be retried (use a **retry** statement in the **catch** block). |
 | UpdateConflictNotRecovered        | An error occurred in a transaction that is using Optimistic Concurrency Control. The code won't be retried. This exception can't be caught within a transaction.    |
-| Warning                           | An exceptional event has occurred. Although the user might have to take action, the event isn't fatal. Don't throw a **warning** exception.                         |
-| [SQL connection error X++ exception](sql-connection-error.md)       | An error occured when during the query execution. The transaction will be canceled. This exception can't be caught within a transaction. |
-
+| Warning                           | An exceptional event has occurred. Although the user might have to take action, the event isn't fatal. Don't throw a **warning** exception. |
+| [SQL connection error X++ exception](sql-connection-error.md)       | An error occurred when during the query execution. The transaction will be canceled. This exception can't be caught within a transaction. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

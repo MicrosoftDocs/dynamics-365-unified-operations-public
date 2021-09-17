@@ -3,7 +3,7 @@
 
 title: Test services by using third-party utilities
 description: This topic describes how to set up third-party utilities to test services.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 24841
 ms.assetid: 7137b0a0-1473-4134-b769-ede5e07fd6f5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

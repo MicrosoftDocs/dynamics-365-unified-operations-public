@@ -51,7 +51,7 @@ You must configure components for inbound and outbound warehouse process workflo
 - Full batch and serial item support
 - Various item receiving capabilities
 - Multiple picking strategies
-- Out-of-the-box support for the next generation of barcode scanners
+- Out-of-the-box support for the next generation of bar code scanners
 - Pallet/container types for warehouse processes
 - Advanced counting capabilities
 - Label printing and label routing with Zebra ZPL support
