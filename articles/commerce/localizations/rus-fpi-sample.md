@@ -112,7 +112,7 @@ To set up fiscal integration for Russia, complete the fiscal registration setup 
 1. [Set error handling settings](./setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 1. [Enable manual execution of postponed fiscal registration](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-1. [Set up the functionality for management of customer information in POS](rus-customer-information.md#setup)
+1. [Set up the functionality for management of customer information in POS](rus-customer-information.md#setup).
 1. [Configure channel components](#configure-channel-components).
 
 ### Configure the fiscal registration process
@@ -126,11 +126,11 @@ To enable the fiscal registration process for Russia in Commerce headquarters, f
     1. Download the fiscal connector configuration file at **HardwareStation \> Connector.AtolSample \> ConfigurationTemplate \> ConnectorAtolSample.xml** (for example, [the file for release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.31/src/FiscalIntegration/AtolFiscalPrinterSample/HardwareStation/Connector.AtolSample/ConfigurationTemplate/ConnectorAtolSample.xml)).
     1. Download the fiscal document provider configuration file at **CommerceRuntime \> DocumentProvider.AtolSample \> ConfigurationTemplate \> DocumentProviderAtolSample.xml** (for example, [the file for release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.31/src/FiscalIntegration/AtolFiscalPrinterSample/CommerceRuntime/DocumentProvider.AtolSample/ConfigurationTemplate/DocumentProviderAtolSample.xml)).
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration file that you downloaded earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors** and load the fiscal connector configuration file that you downloaded earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers** and load the fiscal document provider configuration file that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type to **Internal**. Update the other connection settings as required.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**, and create a new fiscal connector group for the connector functional profile that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups** and create a new fiscal connector group for the connector functional profile that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Open the functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the registration process that was created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Open the hardware profile that is linked to the Commerce Hardware Station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile.
