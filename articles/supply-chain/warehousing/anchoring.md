@@ -199,12 +199,12 @@ Follow these steps to create a load for the orders that you created for this sce
 1. On the **Outbound** menu, select **Sales Picking**.
 1. Select the **ID** field, and then enter the work ID for the first shipment.
 1. Confirm your entry.
-1. In the **LP** field, enter a license plate number for the first item. <!-- KFM: It says the LP must exist in the right location. We should probably have told the reader or create one and then apply it when creating the on-hand. -->
+1. In the **LP** field, enter a license plate number for the first item (*MyLP1*).
 1. Confirm your entry.
-1. In the **Target LP** field, enter a license plate number. <!-- KFM: Seems like I can enter anything here. Does it matter at all? -->
+1. In the **Target LP** field, enter any number (the targe license plate doesn't need to exist already).
    You will pick all lines that were created from the processed wave onto the same target license plate.
 1. Confirm your entry.
-1. In the **LP** field, enter a license plate number for the second item. <!-- KFM: Again, it says this must already exist. We should probably have told the reader to create one and then apply it when creating the on-hand.  -->
+1. In the **LP** field, enter a license plate number for the second item (*MyLP2*).
 1. Confirm your entry.
 1. Suppose that the worker has now collected the order, but when they get to the staging location specified in the work, they find that the space is already occupied. However, the worker can see another location (*STAGE03*) is available nearby. Therefore, the worker will request to change the staging location, and because the anchoring feature is enabled, the system will then automatically update the staging location for this and all related work. Start by selecting **Override Loc** to override suggested staging location.
 1. In the **Work exceptions** field, set *Staging lane changed*.
@@ -237,15 +237,15 @@ Follow these steps to add an order to the load and then release it to the wareho
 1. On the **Outbound** menu, select **Sales Picking**.
 1. Select the **ID** field, and then enter the work ID for the third shipment.
 1. Confirm your entry.
-1. In the **LP** field, enter a license plate number for the first item. <!-- KFM: Again, it says this must already exist. We should probably have told the reader to create one and then apply it when creating the on-hand.  -->
+1. In the **LP** field, enter a license plate number for the first item (*MyLP1*).
 1. Confirm your entry.
-1. In the **Target LP** field, enter a license plate number. <!-- KFM: Seems like I can enter anything here. Does it matter at all? -->
+1. In the **Target LP** field, enter any number (the targe license plate doesn't need to exist already).
 1. Confirm your entry.
-1. In the **LP** field, enter a license plate number for the second item.<!-- KFM: Again, it says this must already exist. We should probably have told the reader to create one and then apply it when creating the on-hand.  -->
+1. In the **LP** field, enter a license plate number for the second item (*MyLP2*).
 1. Confirm your entry.
-1. Select **Override Loc** to override suggested staging location. <!-- KFM: I suspect this might be the most important step for what we are trying to show here. We should point this out and add a bit more detail about it. -->
+1. As with the first load, suppose the worker finds that the specified staging location isn't available and therefore would like to use a different one. Select **Override Loc** to override suggested staging location.
 1. In the **Work exceptions** field, set *Staging lane changed*.
-1. In the **Location** field, enter a new staging location *STAGE04* (or any other stage location available that is different from the stage location initially suggested by the system). <!-- KFM: STAGE04 isn't valid. Can we suggest one that already exists in demo data? Otherwise, we should add steps to create the one we need. -->
+1. In the **Location** field, enter a new staging location *STAGE04*.
 1. Confirm your entry. You receive a "Work completed" message.
 1. Go to **Warehouse management \> Work \> All work**.
 1. Open the work ID for the first shipment. Verify that staging location was not updated to the new staging location (*STAGE04*) because the remaining open put line does not correspond to the work template line of the completed put line.
