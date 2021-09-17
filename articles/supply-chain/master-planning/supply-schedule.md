@@ -1,5 +1,5 @@
 ---
-title: The Supply schedule page
+title: Supply schedule page
 description: This topic provides information about the Supply schedule page and its capabilities.
 author: crytt
 ms.date: 9/3/2021
@@ -13,75 +13,75 @@ ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# The Supply schedule page
+# Supply schedule page
 
 [!include [banner](../includes/banner.md)]
 
-The **Supply schedule** page displays a comprehensive overview of supply and demand for a product (or product family) filtered by location, master plan, and time periods. You can also use the **Supply schedule** page to create new orders, modify existing planned orders, and run master planning.
+The **Supply schedule** page shows a comprehensive overview of supply and demand for a product or product family. The information is filtered by location, master plan, and periods. You can also use the page to create new orders, modify existing planned orders, and run master planning.
 
 ## Open the Supply schedule page
 
 You can open the **Supply schedule** page in any of the following ways:
 
-- Go to **Master planning \> Master planning \> Supply schedule** to open the **Modify filter** dialog. In the dialog, specify which plan and product you are looking for by entering filter values in the fields provided (this collection of values is referred to elsewhere in this topic as "the filter" or "the current filter"). Then select **OK**.
+- Go to **Master planning \> Master planning \> Supply schedule**. In the **Modify filter** dialog box, specify the plan and product that you're looking for by entering filter values in the fields that are provided. (In the rest of this topic, the collection of filter values that you enter is referred to as "the filter" or "the current filter.") When you've finished, select **OK**.
 - Go to **Product information management \> Products \> Released products**. Select or open a product. Then, on the Action Pane, on the **Plan** tab, in the **View** group, select **Supply schedule**.
 - Go to **Master planning \> Setup \> Demand forecasting \> Item allocation keys**. Select an item allocation key that is used as a product family. Then, on the Action Pane, select **Supply schedule**.
 - Go to **Master planning \> Master planning \> Planned orders**. Select or open a planned order. Then, on the Action Pane, on the **View** tab, in the **View** group, select **Supply schedule**.
 
 > [!NOTE]
-> When you open the **Supply schedule** page from a product, product family, or planned order, you don't need to enter values into the filter; the system will use the default period template.
+> When you open the **Supply schedule** page from a product, product family, or planned order, you don't have to enter filter values. The system will use the default period template.
 
 ## Use the Supply schedule page
 
-The **Supply schedule** page consists of the upper section and the **Period end inventory** FastTab, an additional FastTab that becomes visible depending on the line selected in the upper section, and the FactBox pane (to view a FactBox, expand the **Related information** pane on the right edge of the page).
+The **Supply schedule** page consists of an upper section, the **Period end inventory** FastTab, an additional FastTab that becomes visible, based on the line that is selected in the upper section, and the FactBox pane. (To open the FactBox pane and view a FactBox, select **Related information** on the right edge of the page.)
 
 ### Upper section
 
-The upper section of the **Supply schedule** page contains a grid with data for a product or product family broken down by time periods defined by **Period template** value from the filter. The following information is displayed:
+The upper section of the **Supply schedule** page contains a grid that shows the following data for a product or product family. This data is broken down by periods that are defined by the **Period template** value from the filter.
 
-- **Period start inventory** line – Shows the expected inventory balance as of the start of the period if all orders in the system are to take place.
-- **Period end inventory** line – Shows the expected inventory balance as of the end of the period if all orders in the system are to take place.
-- **Period end pegged inventory** line – Shows the amount of the inventory as of the end of the period that is pegged against future demand.
-- **Period net supply** line – Shows the difference between supply and demand in the period.
-- **Minimum inventory** node – Shows safety stock for a product or product family. Select this node and then select the **Expand** or **Collapse** toolbar buttons to expand or collapse the node. The node is only displayed when there is a safety stock for the product or product family.
-- **Demand** node – Shows demand for a product or product family grouped by transaction type. Select this node and then select the **Expand** or **Collapse** toolbar buttons to expand or collapse the node. Demand transaction types include sales, transfers, inventory journals, and so on. The node is only displayed when there is a demand for the product or product family.
-- **Supply** node – Shows supply for a product or product family grouped by transaction type. Select this node and then select the **Expand** or **Collapse** toolbar buttons to expand or collapse the node. Supply transaction types include production, purchase, transfers, and so on. The node is only displayed when there is a supply for the product or product family.
+- **Period start inventory** – This line shows the expected inventory balance at the start of the period if all orders in the system occur.
+- **Period end inventory** – This line shows the expected inventory balance at the end of the period if all orders in the system occur.
+- **Period end pegged inventory** – This line shows the amount of inventory at the end of the period that is pegged against future demand.
+- **Period net supply** – This line shows the difference between supply and demand in the period.
+- **Minimum inventory** – This node shows safety stock for a product or product family. To expand or collapse this node, select it, and then select **Expand** or **Collapse** on the toolbar. This node is shown only when there is safety stock for the product or product family.
+- **Demand** – This node shows demand for a product or product family. The demand is grouped by transaction type. To expand or collapse this node, select it, and then select **Expand** or **Collapse** on the toolbar. Demand transaction types include sales, transfers, and inventory journals. This node is shown only when there is demand for the product or product family.
+- **Supply** – This node shows supply for a product or product family. The supply is grouped by transaction type. To expand or collapse this node, select it, and then select **Expand** or **Collapse** on the toolbar. Supply transaction types include production, purchase, and transfers. This node is shown only when there is supply for the product or product family.
 
-Many of the toolbar commands, FactBox displays, and FastTab displays depend on what you have selected in the upper section. You'll typically select a transaction type by choosing one of the rows under the **Supply** or **Demand** node, and then choose a time period by selecting a specific column for your chosen row.
+Many of the available toolbar buttons, FactBox displays, and FastTab displays depend on your selections in the upper section. Typically, you will choose a transaction type by selecting one of the rows under the **Supply** or **Demand** node. You will then choose a period by selecting a specific column for the selected row.
 
-The toolbar provided in the upper section of the **Supply schedule** page (above the grid) provides the following commands:
+The toolbar above the grid in the upper section of the **Supply schedule** page provides the following buttons:
 
-- **Expand/Collapse** – Expands or collapses a selected node (such as the **Demand** node, **Supply** node, and their subnodes. (Nodes show a [+] or [-] prefix).
-- **New** menu – Each of the entries in this menu opens a dialog or page that lets you add a specific type of item for the selection. Available entries include **Forecast supply**, **Planned order**, **Scheduled kanban**, **New production order**, **Purchase order**, and **Transfer order**.
-- **Master planning** – Runs master planning. This opens a dialog where you can specify the plan to run. By default, the **Master plan** field is set to match the current filter.
-- **Max. report as finished** – Opens the **Max. report as finished** page for the product defined in the current filter.
-- **Update planned orders** – Opens the **Planned orders** page, which shows planned orders for the product or the product family defined in the current filter.
-- **Level** – Spreads planned orders according to the settings from the opened dialog.
-- **Material plan policy by location** – Opens the **Item coverage** page for the product defined in the current filter.
-- **Kanban rule** – Opens the **Kanban rules** page for the product defined in the current filter.
+- **Expand/Collapse** – Expand or collapse a selected node, such as the **Demand** node, the **Supply** node, and their subnodes. (Nodes show a **\[+\]** or **\[-\]** prefix to indicate whether they are currently collapsed or expanded.)
+- **New** – Open a menu where each command, in turn, opens a dialog box or page that lets you add a specific type of item for the selection. Available commands include **Forecast supply**, **Planned order**, **Scheduled kanban**, **New production order**, **Purchase order**, and **Transfer order**.
+- **Master planning** – Run master planning. A dialog box appears, where you can specify the plan to run. By default, the **Master plan** field is set to match the current filter.
+- **Max. report as finished** – Open the **Max. report as finished** page for the product that is defined in the current filter.
+- **Update planned orders** – Open the **Planned orders** page, which shows planned orders for the product or product family that is defined in the current filter.
+- **Level** – Spread planned orders according to the settings from the dialog box that appears.
+- **Material plan policy by location** – Open the **Item coverage** page for the product defined in the current filter.
+- **Kanban rule** – Open the **Kanban rules** page for the product that is defined in the current filter.
 
 ### FastTabs
 
 The **Supply schedule** page can contain following FastTabs:
 
-- **Period end inventory** – Shows the period end inventory data in a graphical format.
-- **Supply profile** – Shows the supply data in a graphical format. This FastTab becomes visible when you select a **Supply** node or a line underneath it in the upper section.
-- **Summary** – Shows summary details related to the transaction type that you select in the upper section. For example, if you select **Sales** under the **Demand** node, the **Summary** FastTab will display fields related to sales orders, such as **Requested sales order lines** or **Total amount**. If you select **Production orders** under the **Supply \> Production** node, the **Summary** FastTab will display fields related to production orders, such as **Production orders** scheduled or **Total scheduled**. Field values will depend on the time period that you select in the upper section. 
-- **[Transaction type] – [Time period]** (for example **Sales orders - Backlog** or **Production orders - Week 37**) – Shows orders in a period of time, depending on the transaction type and time period selected in the upper section.
+- **Period end inventory** – This FastTab shows the period end inventory data in a graphical format.
+- **Supply profile** – This FastTab shows the supply data in a graphical format. It becomes visible when you select a **Supply** node or a line below it in the upper section.
+- **Summary** – This FastTab shows summary details that are related to the transaction type that you selected in the upper section. For example, if you select **Sales** under the **Demand** node, this FastTab shows fields that are related to sales orders, such as **Requested sales order lines** or **Total amount**. If you select **Production orders** under the **Production** subnode of the **Supply** node, this FastTab shows fields that are related to production orders, such as **Production orders scheduled** or **Total scheduled**. Field values depend on the period that you selected in the upper section. 
+- **\[Transaction type\] - \[Period\]** – This FastTab shows orders for the transaction type and period that you selected in the upper section. The name of the FastTab reflects those selections. For example, it might be named **Sales orders - Backlog** or **Production orders - Week 37**.
 
-### The Action Pane
+### Action Pane
 
-The following commands are available on the Action Pane:
+The following buttons are available on the Action Pane:
 
-- **Modify filter** – Opens the **Modify filter** dialog box, where you can update filter values and then reopen the **Supply schedule** page based on the updated filter settings.
-- **Show delays** – Highlights the relevant lines in the upper section if there is a delayed order of that transaction type.
+- **Modify filter** – Open the **Modify filter** dialog box, where you can update filter values and then reopen the **Supply schedule** page, which reflects the updated filter settings.
+- **Show delays** – Highlight the relevant lines in the upper section if there is a delayed order of that transaction type.
 
-### The FactBox pane
+### FactBox pane
 
-To view a FactBox, expand the **Related information** pane on the right edge of the page. The following FactBoxes are available on the **Supply schedule** page:
+To open the FactBox pane and view a FactBox, select **Related information** on the right edge of the page. The following FactBoxes are available on the **Supply schedule** page:
 
-- **Item details** – Shows basic information about the product defined in the current filter. The FactBox will be empty if you have defined a product family in the filter.
-- **Actions** – Shows actions for the orders of the transaction type selected in the upper section.
-- **Delays** – Shows delays for the orders of the transaction type that you select in the upper section.
+- **Item details** – This FactBox shows basic information about the product that is defined in the current filter. It's blank if you defined a product family in the filter.
+- **Actions** – This FactBox shows actions for the orders of the transaction type that you selected in the upper section.
+- **Delays** – This FactBox shows delays for the orders of the transaction type that you selected in the upper section.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
