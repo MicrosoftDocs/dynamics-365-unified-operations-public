@@ -58,14 +58,14 @@ One of the biggest performance hits to a web page can be the downloading of imag
 1. Use CSS to generate images for items such as buttons whenever possible.
 1. Upload high quality/resolution marketing or product images to the Commerce site builder [Media Library](https://docs.microsoft.com/en-us/dynamics365/commerce/dam-overview), where the image resizer will be used automatically during rendering.
 1. Include width and height properties for each image
-  1. For each module that uses images, open the **theme.settings.json** file in the **/src/settings** directory in the SDK install location
-  1. Locate the module you wish to update. 
-  1. Ensure the image properties include width and height parameters. Learn more: [Configure theme settings](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/configure-theme-settings)
+    1. For each module that uses images, open the **theme.settings.json** file in the **/src/settings** directory in the SDK install location
+    1. Locate the module you wish to update. 
+    1. Ensure the image properties include width and height parameters. Learn more: [Configure theme settings](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/configure-theme-settings)
 1. Disable lazy loading for images* 
-  1. Open Commerce Site Builder
-  1. Navigate to the module with an image that should not be lazy loaded
-  1. Select the checkbox next to "Disable Lazy Load"
-  1. Save, preview, and publish your content.
+    1. Open Commerce Site Builder
+    1. Navigate to the module with an image that should not be lazy loaded
+    1. Select the checkbox next to "Disable Lazy Load"
+    1. Save, preview, and publish your content.
   
 *Note: for a Product Collection Module, ensure lazy loading is enabled by selecting the "Enable module lazy load" checkbox
 
@@ -75,7 +75,7 @@ Use these options to validate that the module was successfully excluded.
 
 - **Description or Purpose:** Verify page performance
 - **Steps to Run:**  Run performance tests before and after optimizing your images
-- **Passing Result:** Performance is improved after optimizaing your images
+- **Passing Result:** Performance is improved after optimizing your images
 
 ## Additional resources
 
