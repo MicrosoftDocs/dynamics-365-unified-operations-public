@@ -78,13 +78,11 @@ You have two options to validate that the module was successfully excluded.
 
 ### Method 2: 
 
-**Description or Purpose:** Verify the module was successfully excluded
-
-**Steps to Run:**  Test the module in a development environment: 
-1. Run the Node server by using the "yarn start" command
-1. Visit the URL http://localhost:4000/modules?type=&lt;your-module-name&rt;  
-
-**Passing Result:** The excluded module is not rendered
+- **Description or Purpose:** Verify the module was successfully excluded
+- **Steps to Run:**  Test the module in a development environment: 
+    1. Run the Node server by using the "yarn start" command
+    1. Visit the URL http://localhost:4000/modules?type=&lt;your-module-name&rt;  
+- **Passing Result:** The excluded module is not rendered
 
 ## Additional resources
 -	e-Commerce platform software development kit (SDK): https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/ecommerce-platform-sdk 
