@@ -284,17 +284,38 @@ Set up the fiscal integration by completing the following steps that are describ
 
 ## Deployment guidelines for cash registers for Germany
 
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+
 The fiscal registration service integration sample for Germany is part of the Retail SDK. For more information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 This sample consists of extensions for the Commerce runtime (CRT) and Hardware station. To run this sample, you must modify and build the CRT and Hardware station projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
+
+# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+
+> [!NOTE]
+> Started since 10.0.21 the fiscal registration service integration sample for Germany requires using sealed installers of Retail SDK components.
+
+The sample's code can be found in repository [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions)
+
+This sample consists of extensions for the CRT, Hardware station, and POS. To run this sample, you must beforehand install the sealed version of Commerce Scale Unit, Hardware station and POS. After installing the retail components, you should build the EFR solution and run installers for each component. We recommend that you use an unmodified microsoft/Dynamics365Commerce.Solutions to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
+
+---
 
 Follow these steps to set up a development environment so that you can test and extend the sample.
 
 ### Enable CRT extensions
 
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+
 The CRT extension components are included in the CRT samples. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
+# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+
+The CRT extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **Efr.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
+
 #### DocumentProvider.EFRSample component
+
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Find the **Runtime.Extensions.DocumentProvider.EFRSample** project, and build it.
 2. In the **Runtime.Extensions.DocumentProvider.EFRSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll** assembly file.
@@ -316,6 +337,8 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 #### DocumentProvider.DataModelEFR component
 
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+
 1. Find the **Runtime.Extensions.DocumentProvider.DataModelEFR** project, and build it.
 2. In the **Runtime.Extensions.DocumentProvider.DataModelEFR\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll** assembly file.
 3. Copy the assembly file to the CRT extensions folder:
@@ -334,7 +357,32 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
     ```
 
+# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+
+1. Find the **EFR** solution, and build it.
+
+2. Build the CRT extension installer:
+
+    - **Commerce Scale Unit:** In the **Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.EFR.Installer** installer.
+    - **Local CRT on Modern POS:** In the **Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** folder, find the **ModernPOS.EFR.Installer** installer.
+
+3. Start the extension installer from command line as follows:
+
+    - **Commerce Scale Unit:**
+
+    ```Console
+    ScaleUnit.EFR.Installer.exe install --verbosity 0
+    ```
+
+    - **Local CRT on Modern POS:**
+
+    ```Console
+    ModernPOS.EFR.Installer.exe install --verbosity 0
+    ```
+
 #### Update the extension configuration file
+
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Find the extension configuration file for CRT:
 
@@ -349,9 +397,17 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 ### Enable Hardware station extensions
 
-The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the solution **HardwareStationSamples.sln.sln** under **RetailSdk\\SampleExtensions\\HardwareStation**.
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+
+The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the solution **HardwareStationSamples.sln** under **RetailSdk\\SampleExtensions\\HardwareStation**.
+
+# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+
+The Hardware station extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **Efr.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
 
 #### EFRSample component
+
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Find the **HardwareStation.Extension.EFRSample** project, and build it.
 2. In the **Extension.EFRSample\\bin\\Debug** folder, find following assembly files:
@@ -375,9 +431,23 @@ The Hardware station extension components are included in the Hardware station s
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
     ```
 
+# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+
+1. Find the **EFR** solution, and build it.
+
+2. In the **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EFR.Installer** installer.
+
+3. Start the extension installer from command line as follows:
+
+    ```Console
+    HardwareStation.EFR.Installer.exe install --verbosity 0
+    ```
+
 ### Set up the registration process
 
 To enable the registration process, follow these steps to set up Commerce Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
@@ -398,7 +468,30 @@ To enable the registration process, follow these steps to set up Commerce Headqu
 9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
 10. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and run jobs **1070** and **1090** to transfer data to the channel database.
 
+# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
+2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml**.
+3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configurations. The configuration file is **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\Configurations\\DocumentProviders\\DocumentProviderFiscalEFRSampleGermany.xml**.
+4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
+
+    > [!NOTE]
+    > By default, the **Include customer data** option is set to **Yes**. If you don't want customer information such as names and addresses to be sent to the fiscal registration service, you can change the setting to **No**.
+
+5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Update the connection settings as required.
+
+    > [!WARNING]
+    > By default, the **Show fiscal registration notifications** parameter is turned on. We recommend that you leave it turned on, because the fiscal registration service sends notifications about some specific errors that might occur during fiscal registration (for example, a transaction wasn't signed at the moment of registration).
+
+6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
+7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
+8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
+9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
+10. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and run jobs **1070** and **1090** to transfer data to the channel database.
+
 ### Production environment
+
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 In the previous procedure, you enabled the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
@@ -438,6 +531,10 @@ In the previous procedure, you enabled the extensions that are components of the
 3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 5. Complete all the required setup tasks that are described in the [Set up Commerce for Germany](#set-up-commerce-for-germany) section earlier in this topic.
+
+# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+
+Using samples from [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) for deployable package creation requires migration of samples to Retail SDK.
 
 ## Design of extensions
 
