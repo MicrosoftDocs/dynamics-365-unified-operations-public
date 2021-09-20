@@ -48,7 +48,7 @@ yarn
 
 ### Module rendering fails after upgrading to SDK version 1.31
 
-The Microsoft Dynamics 365 Commerce online software development kit (SDK), version 1.31, introduced a change on how modules are rendered in the **development** environment. There were a number of issues because modules failed to load on the server side. Even though this happened during the development, because modules can be rendered both on server and client, the issue is masked. Also, server-side failures are less obvious, which makes them harder to detect. To make the failure more apparent, the SDK now renders a message that there is an issue rendering the module on the server and that the issue should be addressed to render the module successfully in development environment. This validation only happens in the **development** environment. The **production** environment isn't affected. 
+The Microsoft Dynamics 365 Commerce online software development kit (SDK), version 1.31 introduced a change on how modules are rendered in the **development** environment. During module development, modules can be rendered both on server and client side, if modules were failing on server side, the failure can be masked due to also running on client side, making server side failures hard to detect. To make the failure more apparent, the SDK now renders a message that there is an issue rendering the module on the server and that the issue should be addressed to render the module successfully in development environment. This validation only happens in the **development** environment. The **production** environment is not affected. 
 
 Here is an example of the error message displayed in developer mode:
 
