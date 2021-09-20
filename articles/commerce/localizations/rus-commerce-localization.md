@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.21
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
-This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia, and describes the scope of Commerce functionality that is specific to Russia. It includes information about features and functionality that are designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that typically affect retail businesses in Russia (within the scope of [Russian localization](../../finance/localizations/russia.md)).
+This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia and describes the scope of Commerce functionality that is specific to Russia. It includes information about features and functionality that are designed to address specific federal tax, retail, accounting, financial, or statutory reporting laws or regulations that typically affect retail businesses in Russia (within the scope of [Russian localization](../../finance/localizations/russia.md)).
 
 Because laws and regulations vary in the way that they affect organizations, Commerce doesn't address all laws, regulations, or commercial requirements in Russia. For more information, see the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
@@ -63,7 +63,7 @@ Scenarios are supported by Commerce localization for Russia include:
 
 Fiscal registration is the immediate registration of retail sales per local fiscal laws that are aimed at preventing tax fraud in the retail industry. The main fiscal registration method available in Russia entails using a specialized device called a fiscal printer or online cash register that is connected to POS.
 
-Commerce functionality for Russia includes a [sample integration](./rus-fpi-sample.md) of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](./fiscal-integration-for-retail-channel.md) and supports the application programming interface (API) of fiscal printers from [ATOL](http://integration.atol.ru/). The sample enables communication with a fiscal printer that is connected via a communication (COM) port by using a native software driver. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
+Commerce functionality for Russia includes a [sample integration](./rus-fpi-sample.md) of the point of sale (POS) with a fiscal printer. This sample extends the [fiscal integration functionality](./fiscal-integration-for-retail-channel.md) and supports the application programming interface (API) of fiscal printers from [ATOL](http://integration.atol.ru/). It enables communication with a fiscal printer that is connected via a communication (COM) port by using a native software driver. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
 ## Availability of Commerce localization features for Russia
 
