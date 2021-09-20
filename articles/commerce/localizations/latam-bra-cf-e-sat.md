@@ -116,13 +116,13 @@ Add the following POS labels to the **POS** section of the **Language text** pag
 
 | Language ID | Text ID | Text                                         |
 |-------------|---------|----------------------------------------------|
-| en-US       | 900023  | Barcode block 1 (22 digits)              | 
+| en-US       | 900023  | Barcode block 1 (22 digits)                  | 
 | en-US       | 900024  | Barcode block 2 (22 digits)                  | 
-| en-US       | 900025  | Trade name(xFant)                            | 
+| en-US       | 900025  | Issuer's trade name                          | 
 | en-US       | 900026  | Issuer's establishment city registration     | 
 | en-US       | 900027  | Testing environment                          | 
 | en-US       | 900028  | Testing environment (">"-characters lines)   | 
-| en-US       | 900029  | Cancellation Total value (Valor total)       | 
+| en-US       | 900029  | Cancellation Total value 				       | 
 | en-US       | 900030  | Cancellation Access key                      | 
 | en-US       | 900031  | Cancellation QR-code      				   | 
 | en-US       | 900032  | Cancellation Barcode (44 characters)         | 
@@ -134,19 +134,19 @@ On the **Custom fields** page, add the following records for the custom fields f
 
 | Name                                                | Type    | Caption text ID |
 |-----------------------------------------------------|---------|-----------------|
-| FISCALDOCUMENTBARCODEFIRST\_BR                      | Receipt | 900001          |
-| FISCALDOCUMENTBARCODESECOND\_BR                     | Receipt | 900002          |
-| FISCALDOCUMENTESTABLISHMENTTRADENAME\_BR            | Receipt | 900003          |
-| CCMNUM\_BR     									  | Receipt | 900004          |
-| EFDADDITIONALFISCALMESSAGETESTINGENVIRONMENT\_BR    | Receipt | 900005          |
-| EFDADDITIONALFISCALMESSAGETESTINGENVIRONMENTROW\_BR | Receipt | 900006          |
-| CANCELFISCALDOCUMENTTOTALAMOUNT\_BR      			  | Receipt | 900007          |
-| CANCELFISCALDOCUMENTACCESSKEY\_BR                   | Receipt | 900009          |
-| CANCELFISCALDOCUMENTQRCODETEXT\_BR                  | Receipt | 900010          |
-| CANCELBARCODE\_BR                					  | Receipt | 900011          |
-| CANCELFISCALDOCUMENTBARCODEFIRST\_BR     			  | Receipt | 900012          |
-| CANCELFISCALDOCUMENTBARCODESECOND\_BR          	  | Receipt | 900013          |
-| CANCELFISCALDOCUMENTISSUEDATE\_BR       			  | Receipt | 900014          |
+| FISCALDOCUMENTBARCODEFIRST\_BR                      | Receipt | 900023          |
+| FISCALDOCUMENTBARCODESECOND\_BR                     | Receipt | 900024          |
+| FISCALDOCUMENTESTABLISHMENTTRADENAME\_BR            | Receipt | 900025          |
+| CCMNUM\_BR     									  | Receipt | 900026          |
+| EFDADDITIONALFISCALMESSAGETESTINGENVIRONMENT\_BR    | Receipt | 900027          |
+| EFDADDITIONALFISCALMESSAGETESTINGENVIRONMENTROW\_BR | Receipt | 900028          |
+| CANCELFISCALDOCUMENTTOTALAMOUNT\_BR      			  | Receipt | 900029          |
+| CANCELFISCALDOCUMENTACCESSKEY\_BR                   | Receipt | 900030          |
+| CANCELFISCALDOCUMENTQRCODETEXT\_BR                  | Receipt | 900031          |
+| CANCELBARCODE\_BR                					  | Receipt | 900032          |
+| CANCELFISCALDOCUMENTBARCODEFIRST\_BR     			  | Receipt | 900033          |
+| CANCELFISCALDOCUMENTBARCODESECOND\_BR          	  | Receipt | 900034          |
+| CANCELFISCALDOCUMENTISSUEDATE\_BR       			  | Receipt | 900035          |
 
 ### Configure receipt formats
 
@@ -156,8 +156,9 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 - **Header:** Add the following fields:
 
+	- **Trade name (Nome fantasia)** - trade name of the fiscal establishment.
     - **Testing environment (SAT em condição de teste)** - text "= TESTE = ", and 3 lines of ">" characters in case when the SAT is in test condition.
-	- **Cancellation Date of issue (Emissão / Data de recebimento)** – The date and time when the cancellation receipt is issued. CANCELFISCALDOCUMENTISSUEDATE_BR
+	- **Cancellation Date of issue (Emissão / Data de recebimento)** – The date and time when the cancellation receipt is issued.
 	
 - **Lines:** Add the following fields:
 	

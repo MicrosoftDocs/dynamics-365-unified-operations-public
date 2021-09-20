@@ -166,9 +166,9 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Type of operation (Saída / Entrada )** – The input or output type of the operation.
     - **Fiscal data of the customer (Destinatário)**:
 
-        - **Name** – The name of the recipient or corporation.
-        - **CPF/CNPJ/Foreigner ID** – The CPF/CNPJ number or foreigner ID of the recipient.
-        - **Address** – The address of the recipient.
+        - **Name** – The name or corporate name of the customer.
+        - **CPF/CNPJ/Foreigner ID** – The CPF/CNPJ number or foreigner ID of the customer.
+        - **Address** – The address of the customer.
 
 - **Lines:** Add the following fields:
 
