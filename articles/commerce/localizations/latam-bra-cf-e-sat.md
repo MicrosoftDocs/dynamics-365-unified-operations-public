@@ -104,7 +104,7 @@ The operations for issuing gift cards and adding value to gift cards aren't subj
 
 ## Custom fields for CF-e-SAT fiscal receipts
 
-In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md), a CF-e-SAT for model 59 fiscal receipt can include the following custom field:
+In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md), a CF-e-SAT for model 59 fiscal receipt can include the following custom fields:
 
 - **Barcode (Código de barras)** – You can add a bar code field to CF-e-SAT for model 59 fiscal receipts for sales. This barcode is a graphical representation of the **Access key (Chave de acesso)**. BARCODE_BR
     FISCALDOCUMENTBARCODEFIRST_BR 
@@ -116,7 +116,7 @@ In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md), 
 - **Barcode** - A receipt can include a barcode for CF-e-SAT model 59 for sales cancellations.  CANCELBARCODE_BR
 	CANCELFISCALDOCUMENTBARCODEFIRST_BR
 	CANCELFISCALDOCUMENTBARCODESECOND_BR
-- **Date of issue (Emissão / Data de recebimento)** – The date and time when the receipt is issued. CANCELFISCALDOCUMENTISSUEDATE_BR
+- **Date of issue (Emissão / Data de recebimento)** – The date and time when the cancellation receipt is issued. CANCELFISCALDOCUMENTISSUEDATE_BR
 
 
 ## Additional resources
