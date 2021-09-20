@@ -136,7 +136,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 The Commerce runtime extension components are included in the Retail SDK. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
-1. Find the **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample** project and build it.
+1. Find the **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample** project, and build it.
 1. In the **Extensions.DocumentProvider.EpsonFP90IIISample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll** assembly file.
 1. Copy the assembly file to the CRT extensions folder:
 
@@ -158,7 +158,7 @@ The Commerce runtime extension components are included in the Retail SDK. To com
 
 The Hardware station extension components are included in the Retail SDK. To complete the following procedures, open the Hardware Station solution, **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
-1. Find the **HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample** project and build it.
+1. Find the **HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample** project, and build it.
 2. In the **Extensions.EpsonFP90IIIFiscalDeviceSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll** assembly file.
 3. Copy the files to a deployed Hardware station machine:
 
@@ -197,7 +197,7 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 ### Production environment
 
-To create deployable packages that contain Commerce components and apply those packages in a production environment, follow these steps
+To create deployable packages that contain Commerce components, and apply those packages in a production environment, follow these steps.
 
 1. Complete the steps that are described in the [Enable extensions](#enable-extensions) section earlier in this topic.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
