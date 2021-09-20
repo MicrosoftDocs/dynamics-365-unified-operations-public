@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Electronic reporting conponents
+title: Electronic reporting coponents
 description: This topic describes the Electronic reporting components.
 author: AnastasiaMiroshkina
-ms.date: 15/06/2021
-ms.topic: article
+ms.date: 09/20/2021
+ms.topic: 
 ms.prod: 
 ms.technology: 
 
@@ -27,42 +27,49 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Electronic reporting (ER) components
+# Electronic reporting components
 
-ER supports next types of components: **Data model**, **Model mapping**,  **Format** and **Metadata**.
+[!include [banner](../includes/banner.md)]
+
+Electronic reporting (ER) supports the following types of components: 
+
+  - **Data model**
+  - **Model mapping**
+  - **Format** 
+  - **Metadata**
 
 ## Data model component
 
-A data model component is an abstract representation of a data structure. It's used to describe a specific business domain area with enough detail to satisfy the reporting requirements for that domain. A data model component consists of the following parts:
+A data model component is an abstract representation of a data structure. This component describes a specific business domain area with enough detail to satisfy the reporting requirements for that domain. A data model component consists of the following parts:
 
-- <a name="DataModelComponent"></a>A data model, as a set of domain-specific business entities and a hierarchically structured definition of relations between those entities.
-- <a name="ModelMappingComponent"></a>A model mapping that links selected application data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
+- Data model: A set of domain-specific business entities and a hierarchically structured definition of relations between the entities.
+- Model mapping: Selected application data sources are linked to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
 
-A business entity of a data model is represented as a container (record). Business entity properties are represented as data items (fields). Each data item has a unique name, label, description, and value. The value of each data item can be designed so that it's recognized as a string, integer, real, date, enumeration, Boolean, and so on. Additionally, it can be another record or records list.
+The business entity of a data model is represented as a container, or record. Business entity properties are represented as data items, or fields. Each data item has a unique name, label, description, and value. The value of each data item can be designed to be recognized as a string, integer, real, date, enumeration, or Boolean. Additionally, the data item can be another record or records list.
 
-A single data model component can contain several hierarchies of domain-specific business entities. It can also contain model mappings that support a report-specific data flow at run time. The hierarchies are differentiated by a single record that has been selected as a root for model mapping. For example, the data model of the payment domain area might support the following mappings:
+A single data model component can contain several hierarchies of domain-specific business entities. The component can also contain model mappings that support a report-specific data flow at run time. The hierarchies are differentiated by a single record that's selected as a root for model mapping. For example, the data model of the payment domain area might support the following mappings:
 
-- Company \> Vendor \> Payment transactions of the AP domain
-- Customer \> Company \> Payment transactions of the AR domain
+- Company > Vendor > Payment transactions of the AP domain
+- Customer > Company > Payment transactions of the AR domain
 
-Note that business entities such as company and payment transactions are designed one time. Different mappings then reuse them.
+Business entities, such as company and payment transactions, are only designed one time. After that, different mappings can reuse them as needed.
 
-## Model Mapping component
+## Model mapping component
 
-Model mapping links application data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
+Model mapping links application data sources to individual elements of a data model that specify at run time, the data flow and rules of business data population to a data model component.
 
-A model mapping that supports outgoing electronic documents has the following capabilities:
+A model mapping that supports outgoing electronic documents can:
 
-- It can use different data types as data sources for a data model. For example, it can use tables, data entities, methods, or enums.
-- It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
-- It supports the transformation of data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas. For more information, see [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)).
+- Use different data types as data sources for a data model. For example, tables, data entities, methods, or enums.
+- Support user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
+- Support data transformation into required groups. You can also filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas. For more information, see [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)).
 
-A model mapping that supports incoming electronic documents has the following capabilities:
+A model mapping that supports incoming electronic documents can:
 
-- It can use different updatable data elements as targets. These data elements include tables, data entities, and views. The data can be updated by using the data from incoming electronic documents. Multiple targets can be used in a single model mapping.
-- It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
+- Use different updatable data elements as targets. These data elements include tables, data entities, and views. The data can be updated by using incoming data from electronic documents. Multiple targets can be used in a single model mapping.
+- Supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
 
-A data model component is designed for each business domain that should be used as a unified data source for reporting that isolates reporting from the physical implementation of data sources. It represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
+A data model component is designed for each business domain that's used as a unified data source for reporting that isolates reporting from the physical implementation of data sources. The component represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
 
 ## Format component
 
@@ -129,3 +136,7 @@ ER component versions are date-effective. You can set the **Effective from** dat
 Access to ER format components depends on the setting for the ISO country/region code. When this setting is blank for a selected version of a format configuration, a format component can be accessed from any company at run time. When this setting contains ISO country/region codes, a format component is available only from companies that have a primary address that is defined for one of a format component's ISO country/region codes.
 
 Different versions of a data format component can have different settings for ISO country/region codes.
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
