@@ -48,7 +48,11 @@ Before you start to set up or use this feature, you must make sure that it's ava
 Supply Chain Management uses encryption keys to protect all sealed bids and keep them secret until the appropriate time. It takes advantage of the capabilities of Key Vault to generate and manage the required keys. Therefore, you must set up a connection from Supply Chain Management to a key vault to enable the system.
 
 > [!IMPORTANT]
-> The key vault must be created in an Azure subscription that is owned by your organization (not the subscription where you're running Supply Chain Management).
+> The key vaults that you use for sealed bidding must meet the following requirements:
+>
+> - If you use a sandbox for development and testing, then you must have one dedicated key vault for the sandbox and a separate one for production.
+> - Each key vault must be created in an Azure subscription that is owned by your organization (not the subscription where you're running Supply Chain Management).
+> - Each key vault must be used exclusively for sealed bidding. You must not use your sealed-bidding key values for any other purpose.
 
 Every bid retrieves its own secret key. This key is used every time that a user views, updates, or unseals the bid.
 
