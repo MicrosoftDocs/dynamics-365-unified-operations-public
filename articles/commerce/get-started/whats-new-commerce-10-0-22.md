@@ -4,7 +4,7 @@
 title: Preview features in Dynamics 365 Commerce 10.0.22 (November 2021)
 description: This topic describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.22. 
 author: josaw1
-ms.date: 09/03/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,11 +46,11 @@ The following features are included in this release. Some of the listed features
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
 |  Customer management | Enable the asynchronous creation for customer addresses | [Customer management in stores](../customer-mgmt-stores.md) | Feature management |
 |  Customer orders  |  Order lookup for guest checkouts    |  [Enable order lookup for guest checkouts](../order-lookup-guest.md)<p>[Order lookup module](../order-lookup-module.md)</p> |  Feature management   |
-|  E-commerce      |   [Geo-detection and redirection for e-commerce sites](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/geo-detection-redirection-e-commerce-sites.md) | [Set up geo detection and redirection](../geo-detection-redirection.md)<p>[Country/region picker module](../country-region-picker-module.md)</p>   |                    Site builder settings    |
+|  E-commerce      |   [Geo-detection and redirection for e-commerce sites](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/geo-detection-redirection-e-commerce-sites) | [Set up geo detection and redirection](../geo-detection-redirection.md)<p>[Country/region picker module](../country-region-picker-module.md)</p>   |                    Site builder settings    |
 | Extensibility | Set up your own local development environment for Dynamics 365 Commerce without Lifecycle Service | [Set up your own local development environment](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.32/src/ScaleUnitSample/.vscode) | |
 | Extensibility | Develop Commerce Cloud Scale Unit (CRT and API) extension using Visual Studio Code | [Develop CSU extension using VS Code](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.32/src/ScaleUnitSample/.vscode) | |
 | Merchandising | Optimized product availability calculation | [Calculate inventory availability for retail channels](../calculated-inventory-retail-channels.md) | Feature management |
-| Merchandising | [Require moderator for ratings and reviews](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/require-moderator-ratings-reviews.md) | [Enable manual publishing of ratings and reviews by a moderator](../manual-publish-rating-reviews.md) | Site builder settings  |
+| Merchandising | [Require moderator for ratings and reviews](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/require-moderator-ratings-reviews) | [Enable manual publishing of ratings and reviews by a moderator](../manual-publish-rating-reviews.md) | Site builder settings  |
 
 ## Additional resources
 
