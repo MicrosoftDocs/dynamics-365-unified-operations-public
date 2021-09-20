@@ -3187,6 +3187,8 @@
             href: warehousing/warehouse-slotting.md
           - name: Location directive inventory picking aging
             href: warehousing/location-directive-inventory-picking-aging.md
+          - name: Anchoring
+            href: warehousing/anchoring.md
           - name: Outbound sorting
             href: warehousing/outbound-sorting.md
           - name: Put to wall - put to store
