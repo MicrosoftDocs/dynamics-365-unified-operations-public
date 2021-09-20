@@ -276,7 +276,7 @@ Install the driver of the fiscal printer on the Hardware Station machine. For de
 
 #### Production environment
 
-Follow these additional steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
+Follow these additional steps to create deployable packages that contain Commerce components, and apply those packages in a production environment.
 
 1. Make the following changes in the package configuration files in the **RetailSdk\\Assets** folder:
 
