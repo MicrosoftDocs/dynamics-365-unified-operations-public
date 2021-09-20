@@ -68,9 +68,7 @@ If the entities don't exist in either environment, you can create tables in both
 
     ![Dataverse keys for Account](media/custom-account-keys.png)
 
-    In the **Customers V3** table map, you can see that **accountnumber** is mapped to **CustomerAccount**. For more information on creating new table maps, see [Customize table and column mappings](customizing-mappings.md).
-
-    ![SalesAccouht mapping](media/custom-mapping.png)
+    If you check the the **Customers V3** table map, you can see that **accountnumber** is mapped to **CustomerAccount**.
 
 ## Best practices for dual-write
 
@@ -107,7 +105,7 @@ If the entities don't exist in either environment, you can create tables in both
 + Changes are triggered only if the modifications are on the mapped fields in the Finance and Operations app. In customer engagement apps, all field modifications trigger dual-write sync.
 + Every filter evaluation should provide a valid result.
 + Data sources that do not have any fields mapped are not tracked.
-+ Entity relationships within Finance and Operations app must indicate to dual-write that the two entities are linked and there are relationships that exist between the two records within the same transaction. Dual-write batching depends on entity relationships explicitly defined and considered to sequence the record insertion if both parent and child record are part of the same transaction on related entities. If there is a business process in Finance and Operations apps that involves several entities and has to be enabled as batch mode for customer engagement, dual-write expects the relationships to be identified and defined on the entity. The following screenshot shows the relationship between **Sales Order header V2** and **Sales Order Line V2**.
++ Entity relationships within the Finance and Operations app must indicate to dual-write that the two entities are linked and there are relationships that exist between the two records within the same transaction. Dual-write batching depends on entity relationships explicitly defined and considered to sequence the record insertion if both parent and child record are part of the same transaction on related entities. If there is a business process in Finance and Operations apps that involves several entities and has to be enabled as batch mode for customer engagement, dual-write expects the relationships to be identified and defined on the entity. The following screenshot shows the relationship between **Sales Order header V2** and **Sales Order Line V2**.
 
     ![Relationship in Finance and Operations app](media/custom-sales-order.png)
 
@@ -143,7 +141,7 @@ while(qRun.next())
 
 For Dataverse tables, filter expressions can be verified by adding the expression as filter condition on the Odata expression.
 
-```dos
+```powerappsfl
 https://<Env URL>/api/data/v9.0/<TableName>?$filter=<fieldname> eq <value>
 ```
 
