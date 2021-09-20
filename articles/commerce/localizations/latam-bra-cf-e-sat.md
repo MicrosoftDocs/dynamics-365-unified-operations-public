@@ -104,7 +104,7 @@ The operations for issuing gift cards and adding value to gift cards aren't subj
 
 ## Custom fields for CF-e-SAT fiscal receipts
 
-In addition to the fields described in the [Common list of custom fields for DANFE](latam-bra-nfce.md#custom-fields-for-danfe-fiscal-receipts) and [Simplified DANFE for model 55 fiscal receipt](latam-bra-nfce-cancel-return#simplified-danfe-for-model-55-fiscal-receipt) chapters, a CF-e-SAT for model 59 fiscal receipt can include the following custom fields.
+In addition to the fields described in the [Common list of custom fields for DANFE](latam-bra-nfce.md#custom-fields-for-danfe-fiscal-receipts) and [Simplified DANFE for model 55 fiscal receipt](latam-bra-nfce-cancel-return.md#simplified-danfe-for-model-55-fiscal-receipt) chapters, a CF-e-SAT for model 59 fiscal receipt can include the following custom fields.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
@@ -167,10 +167,10 @@ In the Receipt format designer, add the following custom fields to the appropria
 - **Footer:** Add the following fields:
 
     - **Barcode (Código de barras)** – You can add a bar code field to CF-e-SAT for model 59 fiscal receipts for sales. This barcode is a graphical representation of the **Access key (Chave de acesso)** (44 digits).
-    - **Barcode block 1**, **Barcode block 2** – You can add 22-digits bar code fields to CF-e-SAT for model 59 fiscal receipts for sales. This barcode is a graphical representation of the **Access key (Chave de acesso)** divided into two parts of 22 digits.
+    - **Barcode block 1**, **Barcode block 2** – You can add 22-digits bar code fields to CF-e-SAT for model 59 fiscal receipts for sales printed on till roll. This barcode is a graphical representation of the **Access key (Chave de acesso)** divided into two parts of 22 digits.
     - **Cancellation QR-code** – A receipt can include a QR code for CF-e-SAT model 59 for the cancellation, referring to the canceled sale.
     - **Cancellation Barcode** - A receipt can include a barcode for CF-e-SAT model 59 for sales cancellations. This barcode is a graphical representation of the **Cancellation Access key (Chave de acesso)** (44 digits).  
-    - **Cancellation Barcode block 1**, **Cancellation Barcode block 2** – You can add 22-digits bar code fields to CF-e-SAT for model 59 fiscal receipts for sales cancellations. This barcode is a graphical representation of the **Access key (Chave de acesso)** divided into two parts of 22 digits.
+    - **Cancellation Barcode block 1**, **Cancellation Barcode block 2** – You can add 22-digits bar code fields to CF-e-SAT for model 59 fiscal receipts for sales cancellations printed on till roll. This barcode is a graphical representation of the **Access key (Chave de acesso)** divided into two parts of 22 digits.
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
