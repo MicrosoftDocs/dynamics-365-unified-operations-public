@@ -1,5 +1,5 @@
 ---
-title: Supply schedule page
+title: Supply schedule
 description: This topic provides information about the Supply schedule page and its capabilities.
 author: crytt
 ms.date: 9/3/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# Supply schedule page
+# Supply schedule
 
 [!include [banner](../includes/banner.md)]
 
