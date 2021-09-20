@@ -2,7 +2,7 @@
 # required metadata
 title: NFC-e fiscal document functionality in Commerce POS for Brazil
 description: This topic gives an overview of NFC-e fiscal document functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
-author: v-ankvik
+author: akviklis
 manager: annbe
 ms.date: 06/10/2021
 ms.topic: article
@@ -19,7 +19,7 @@ ms.reviewer: v-chgri
 # ms.custom: 
 ms.search.region: Brazil
 ms.search.industry: Retail
-ms.author: v-ankvik
+ms.author: akviklis
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.18
 
@@ -82,7 +82,7 @@ The operations for issuing gift cards and adding value to gift cards aren't subj
 
 ## Custom fields for DANFE fiscal receipts
 
-DANFE fiscal receipts can implement and use the following custom fields to include additional information:
+DANFE fiscal receipts can implement and use the following custom fields to include additional information.
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
@@ -198,3 +198,5 @@ For more information about how to work with receipt formats, see [Set up and des
 [Postponed registration of NFC-e documents issued in offline contingency mode](latam-bra-nfce-contingency-mode.md)
 
 [Post Brazilian fiscal documents via retail statements in Commerce headquarters](latam-bra-retail-statements.md)
+
+[Set up and design receipt formats](../receipt-templates-printing.md).

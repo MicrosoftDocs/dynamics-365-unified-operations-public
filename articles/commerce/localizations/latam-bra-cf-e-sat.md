@@ -104,20 +104,75 @@ The operations for issuing gift cards and adding value to gift cards aren't subj
 
 ## Custom fields for CF-e-SAT fiscal receipts
 
-In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md), a CF-e-SAT for model 59 fiscal receipt can include the following custom fields:
+In addition to the fields described in the [Common list of custom fields for DANFE](latam-bra-nfce.md#custom-fields-for-danfe-fiscal-receipts) and [Simplified DANFE for model 55 fiscal receipt](latam-bra-nfce-cancel-return#simplified-danfe-for-model-55-fiscal-receipt) chapters, a CF-e-SAT for model 59 fiscal receipt can include the following custom fields.
 
-- **Barcode (Código de barras)** – You can add a bar code field to CF-e-SAT for model 59 fiscal receipts for sales. This barcode is a graphical representation of the **Access key (Chave de acesso)**. BARCODE_BR
-    FISCALDOCUMENTBARCODEFIRST_BR 
-	FISCALDOCUMENTBARCODESECOND_BR
-- **Testing environment (SAT em condição de teste)** - text "= TESTE = ", and 3 lines of ">" characters in case when the SAT is in test condition.
-- **Total value (Valor total)** – The total amount of the cancellation receipt. CANCELFISCALDOCUMENTTOTALAMOUNT_BR
-- **Access key (Chave de acesso)** – The access key of the cancellation receipt. CANCELFISCALDOCUMENTACCESSKEY_BR
-- **QR-code** – A receipt can include a QR code for CF-e-SAT model 59 for the cancellation, referring to the canceled sale. CANCELFISCALDOCUMENTQRCODETEXT_BR
-- **Barcode** - A receipt can include a barcode for CF-e-SAT model 59 for sales cancellations.  CANCELBARCODE_BR
-	CANCELFISCALDOCUMENTBARCODEFIRST_BR
-	CANCELFISCALDOCUMENTBARCODESECOND_BR
-- **Date of issue (Emissão / Data de recebimento)** – The date and time when the cancellation receipt is issued. CANCELFISCALDOCUMENTISSUEDATE_BR
+### Configure custom fields so that they can be used in receipt formats for sales receipts
 
+You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
+
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet to your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or more than 900001.
+
+Add the following POS labels to the **POS** section of the **Language text** page.
+
+| Language ID | Text ID | Text                                         |
+|-------------|---------|----------------------------------------------|
+| en-US       | 900023  | Barcode block 1 (22 digits)              | 
+| en-US       | 900024  | Barcode block 2 (22 digits)                  | 
+| en-US       | 900025  | Trade name(xFant)                            | 
+| en-US       | 900026  | Issuer's establishment city registration     | 
+| en-US       | 900027  | Testing environment                          | 
+| en-US       | 900028  | Testing environment (">"-characters lines)   | 
+| en-US       | 900029  | Cancellation Total value (Valor total)       | 
+| en-US       | 900030  | Cancellation Access key                      | 
+| en-US       | 900031  | Cancellation QR-code      				   | 
+| en-US       | 900032  | Cancellation Barcode (44 characters)         | 
+| en-US       | 900033  | Cancellation Barcode block 1 (22 characters) | 
+| en-US       | 900034  | Cancellation Barcode block 2 (22 characters) | 
+| en-US       | 900035  | Cancellation Date of issue                   | 
+
+On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that the **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
+
+| Name                                                | Type    | Caption text ID |
+|-----------------------------------------------------|---------|-----------------|
+| FISCALDOCUMENTBARCODEFIRST\_BR                      | Receipt | 900001          |
+| FISCALDOCUMENTBARCODESECOND\_BR                     | Receipt | 900002          |
+| FISCALDOCUMENTESTABLISHMENTTRADENAME\_BR            | Receipt | 900003          |
+| CCMNUM\_BR     									  | Receipt | 900004          |
+| EFDADDITIONALFISCALMESSAGETESTINGENVIRONMENT\_BR    | Receipt | 900005          |
+| EFDADDITIONALFISCALMESSAGETESTINGENVIRONMENTROW\_BR | Receipt | 900006          |
+| CANCELFISCALDOCUMENTTOTALAMOUNT\_BR      			  | Receipt | 900007          |
+| CANCELFISCALDOCUMENTACCESSKEY\_BR                   | Receipt | 900009          |
+| CANCELFISCALDOCUMENTQRCODETEXT\_BR                  | Receipt | 900010          |
+| CANCELBARCODE\_BR                					  | Receipt | 900011          |
+| CANCELFISCALDOCUMENTBARCODEFIRST\_BR     			  | Receipt | 900012          |
+| CANCELFISCALDOCUMENTBARCODESECOND\_BR          	  | Receipt | 900013          |
+| CANCELFISCALDOCUMENTISSUEDATE\_BR       			  | Receipt | 900014          |
+
+### Configure receipt formats
+
+For every receipt format that is required, change the value of the **Print behavior** field to **Always print**.
+
+In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
+
+- **Header:** Add the following fields:
+
+    - **Testing environment (SAT em condição de teste)** - text "= TESTE = ", and 3 lines of ">" characters in case when the SAT is in test condition.
+	- **Cancellation Date of issue (Emissão / Data de recebimento)** – The date and time when the cancellation receipt is issued. CANCELFISCALDOCUMENTISSUEDATE_BR
+	
+- **Lines:** Add the following fields:
+	
+    - **Cancellation Total value (Valor total)** – The total amount of the cancellation receipt.
+    - **Cancellation Access key (Chave de acesso)** – The access key of the cancellation receipt.
+
+- **Footer:** Add the following fields:
+
+    - **Barcode (Código de barras)** – You can add a bar code field to CF-e-SAT for model 59 fiscal receipts for sales. This barcode is a graphical representation of the **Access key (Chave de acesso)** (44 digits).
+    - **Barcode block 1**, **Barcode block 2** – You can add 22-digits bar code fields to CF-e-SAT for model 59 fiscal receipts for sales. This barcode is a graphical representation of the **Access key (Chave de acesso)** divided into two parts of 22 digits.
+    - **Cancellation QR-code** – A receipt can include a QR code for CF-e-SAT model 59 for the cancellation, referring to the canceled sale.
+    - **Cancellation Barcode** - A receipt can include a barcode for CF-e-SAT model 59 for sales cancellations. This barcode is a graphical representation of the **Cancellation Access key (Chave de acesso)** (44 digits).  
+    - **Cancellation Barcode block 1**, **Cancellation Barcode block 2** – You can add 22-digits bar code fields to CF-e-SAT for model 59 fiscal receipts for sales cancellations. This barcode is a graphical representation of the **Access key (Chave de acesso)** divided into two parts of 22 digits.
+
+For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
 ## Additional resources
 
@@ -132,3 +187,5 @@ In addition to the [common list of custom fields for DANFE](latam-bra-nfce.md), 
 [Postponed registration of NFC-e documents issued in offline contingency mode](latam-bra-nfce-contingency-mode.md)
 
 [Post Brazilian fiscal documents via retail statements in Commerce headquarters](latam-bra-retail-statements.md)
+
+[Set up and design receipt formats](../receipt-templates-printing.md).
