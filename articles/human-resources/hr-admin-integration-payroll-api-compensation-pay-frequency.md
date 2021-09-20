@@ -24,7 +24,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Person name history
+# Compensation pay frequency
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
