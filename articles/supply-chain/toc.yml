@@ -1651,6 +1651,8 @@
           href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
         - name: Parameters not used by Planning Optimization
           href: master-planning/planning-optimization/not-used-parameters.md
+        - name: Supply schedule
+          href: master-planning/supply-schedule.md
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with demand forecast
@@ -3185,6 +3187,8 @@
             href: warehousing/warehouse-slotting.md
           - name: Location directive inventory picking aging
             href: warehousing/location-directive-inventory-picking-aging.md
+          - name: Anchoring
+            href: warehousing/anchoring.md
           - name: Outbound sorting
             href: warehousing/outbound-sorting.md
           - name: Put to wall - put to store
@@ -3341,6 +3345,8 @@
             href: warehousing/display-older-batches-within-warehouses.md
           - name: Pick oldest batch on a mobile device
             href: warehousing/pick-oldest-batch.md
+        - name: Global mobile device parameters
+          href: warehousing/mobile-device-parameters.md
         - name: Mobile device user settings
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing
