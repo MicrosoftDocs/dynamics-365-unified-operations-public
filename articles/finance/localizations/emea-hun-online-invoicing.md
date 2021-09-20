@@ -4,7 +4,7 @@
 title: Online invoicing system
 description: This topic describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
 author: anasyash
-ms.date: 05/27/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,7 +41,7 @@ The topic includes information about how to complete the following tasks:
 - Set up EM functionality.
 - Work with EM functionality for RTIR.
 
-Online invoicing system of Hungary requires mandatory usage of TLS 1.2. For more information about how to enabling TLS 1.2, see [How to enable TLS 1.2](https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2). 
+Online invoicing system of Hungary require the use of TLS 1.2. For more information about how to enable TLS 1.2, see [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2). 
 
 ## Import ER configurations
 
@@ -74,7 +74,7 @@ The format that is used to report invoice data to the Hungarian Online Invoicing
 When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
 > [!NOTE]
-> We recommend enabling **Use application specific parameters from previous versions of ER formats** feature in Feature management workspaces. When this feature is enabled, configured for the lower version of an ER format parameters automatically become applicable for the higher version of this format. When this feature is disabled, you must continue configuring application specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in Feature management workspaces starting from 10.0.23 version of Finance. For more information about **Set up the parameters of an ER format per legal entity** , see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 ### Line expression indicator
 
