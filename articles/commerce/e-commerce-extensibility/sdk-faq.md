@@ -31,6 +31,32 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
+### Updating to Webpack 5
+
+Dynamics 365 Commerce Online SDK offers support for bundling the commerce application using latest Webpack 5 version. Webpack 5 offers improved bundling with better tree shaking and code generation which could reduce the amount of JavaScript downloaded and processed on a page.
+
+Webpack 5 can be opted in with the release of Microsoft Dynamics 365 Commerce online software development kit (SDK), version 1.32 (10.0.22). With the upcoming online SDK release 1.34 (10.0.24) Webpack 5 will become the default and no opt in will be required.
+
+You can enable Webpack 5 by running ```yarn msdyn365 upgrade-webpack``` command as shown below. The command will update the package.json with the list of dependencies needed for webpackv5. Once the package.json is updated the new dependencies should be installed by running 'yarn'.
+
+```
+yarn msdyn365 upgrade-webpack
+
+yarn
+```
+
+
+### Module rendering fails after upgrading to SDK version 1.31
+
+The Microsoft Dynamics 365 Commerce online software development kit (SDK), version 1.31, introduced a change on how modules are rendered in the **development** environment. There were a number of issues because modules failed to load on the server side. Even though this happened during the development, because modules can be rendered both on server and client, the issue is masked. Also, server-side failures are less obvious, which makes them harder to detect. To make the failure more apparent, the SDK now renders a message that there is an issue rendering the module on the server and that the issue should be addressed to render the module successfully in development environment. This validation only happens in the **development** environment. The **production** environment isn't affected. 
+
+Here is an example of the error message displayed in developer mode:
+
+*test-module' threw exception*
+
+*Error: Error during server side rendering for module test-module of type test-module. NOTE: This error is only displayed in DEVELOPER mode. This won't affect PRODUCTION. This is a safety measure so developer can address issues that happen on the server. Please, address the following issue: window is not defined*
+
+
 ### Why are my custom Application Insights API calls failing to build after I upgrade to the Commerce online SDK version 9.30 release?
 
 The Commerce online SDK version 9.30 release includes an update from the deprecated [Applications Insights SDK](https://www.npmjs.com/package/applicationinsights-js) to the newer [Microsoft Application Insights JavaScript SDK - Web](https://www.npmjs.com/package/@microsoft/applicationinsights-web).
@@ -264,16 +290,6 @@ The module library modules have been updated with the correct calling pattern to
 ### After upgrading to module library version 9.23 (10.0.13 release), cloned modules or view extensions that import "CartlineComponent" or "WishListIconComponent" components may display the errors "export 'CartlineComponent' was not found in '@msdyn365-commerce/components'" or "export 'WishListIconComponent' was not found in '@msdyn365-commerce/components'".
 
 The "CartlineComponent" and "WishListIconComponent" components have been renamed to "CartLineItemComponent" and "WishlistIconComponent" respectively. If the previous component names are used in either a cloned module or a view extension, the build errors mentioned above will be displayed. To fix these issues, update the previous component names to the new component names in the cloned module or view extension code.
-
-### Module rendering fails after upgrading to SDK version 1.31
-
-The Microsoft Dynamics 365 Commerce online software development kit (SDK), version 1.31, introduced a change on how modules are rendered in the **development** environment. There were a number of issues because modules failed to load on the server side. Even though this happened during the development, because modules can be rendered both on server and client, the issue is masked. Also, server-side failures are less obvious, which makes them harder to detect. To make the failure more apparent, the SDK now renders a message that there is an issue rendering the module on the server and that the issue should be addressed to render the module successfully in development environment. This validation only happens in the **development** environment. The **production** environment isn't affected. 
-
-Here is an example of the error message displayed in developer mode:
-
-*test-module' threw exception*
-
-*Error: Error during server side rendering for module test-module of type test-module. NOTE: This error is only displayed in DEVELOPER mode. This won't affect PRODUCTION. This is a safety measure so developer can address issues that happen on the server. Please, address the following issue: window is not defined*
 
 ## Additional resources
 
