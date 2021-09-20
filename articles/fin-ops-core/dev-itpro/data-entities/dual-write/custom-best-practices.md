@@ -24,9 +24,9 @@ Before customizing any maps, you should be familiar with the tasks in [Customize
 
 ## Guidance when the entity is in both the Finance and Operations app and Dataverse
 
-If the entity is in both environmeents, create a dual-write map if the entity is in both environments.
+If the entity is in both environments, create a dual-write map if the entity is in both environments.
 
-+ Integration keys for the entity on both Finops and Dataverse should match. If the entity key is not available on any side, make sure to create entity keys. These integration key fields should be mapped with each other in the map.
++ Integration keys for the entity in both environments should match. If the entity key is not available on any side, make sure to create entity keys. These integration key fields should be mapped with each other in the map.
 + Company field should not be present in the mapping if the entity is a legal entity-specific, because the company field would already be part of the key. For an example, review the **Customer groups (msdyn\_customergroups)** entity mapping.
 + Add filters to either the Finance and Operations environment or the Dataverse environment to trigger the dual-write map only on certain criteria. The **Customers V3 - Accounts or CDS Contacts V2 (Contacts)** map has several filters that you can use as examples.
 
@@ -41,10 +41,10 @@ If the entity is in only the Finance and Operations app, create a new entity in 
 
 If the entity is only in Dataverse, create a new entity in the Finance and Operations environment and then add a map.
 
-Create the new entity, including all the required fields. Make sure it is Data management-enabled and public so that the entity can be consumed by Odata. For more information on creating a new entity refer to [Build and consume data entities](../build-consuming-data-entities.md).
+Create the new entity, including all the required fields. Make sure it is Data management-enabled and public so that the entity can be consumed by Odata. For more information on creating a new entity, see [Build and consume data entities](../build-consuming-data-entities.md).
 
 + If data in Finance and Operations is supposed to be legal entity-specific, make sure to add a lookup field to **cdm\_companies** in the Dataverse entity. If the Finance and Operations entity is global, then a field for company is not required in the Dataverse entity.
-+ Make sure that that bothe entities have the entity key fields. Dual-write requires the same entity keys on both Finance and Operations and Dataverse environments.  The key fields on both Finance and Operations and Dataverse should be mapped to each other. Do not add the **company** field in the mapping. For an example, review the **Vendors V2 - msdyn\_vendors mapping**.
++ Make sure that both entities have the entity key fields. Dual-write requires the same entity keys on both Finance and Operations and Dataverse environments.  The key fields on both Finance and Operations and Dataverse should be mapped to each other. Do not add the **company** field in the mapping. For an example, review the **Vendors V2 - msdyn\_vendors mapping**.
 
 ## Add attributes to a mapping
 
@@ -52,11 +52,11 @@ If the entities exist in both environments and are mapped, you can add attribute
 
 ## Create and update do not trigger the attributes to sync to Dataverse
 
-In some situations, the entities exist in both environments, but create and update do not trigger the attributes to sync to Dataverse. Navigate to the **BusinessEventsDefinition** table by using SQL in the Finance and Operations virtual machine or using table browser. Ensure that there is a record for the combination of the affected table which has updated date (in the **RefTableName** field) and entity name (in the **RefEntityName** field).
+In some situations, the entities exist in both environments, but create and update do not trigger the attributes to sync to Dataverse. Navigate to the **BusinessEventsDefinition** table by using SQL in the Finance and Operations virtual machine or using table browser. Ensure that there is a record for the combination of the affected table that has an updated date (in the **RefTableName** field) and entity name (in the **RefEntityName** field).
 
 ## Guidance when entities are not available in either the Finance and Operations app or Dataverse
 
-If the entites don't exist in either environment, you can create tables in both environments and then create the app by following these steps:
+If the entities don't exist in either environment, you can create tables in both environments and then create the app by following these steps:
 
 1. Create a new table in Dataverse with all the required fields by following the steps in [Create a custom table](/modules/create-manage-entities/2-custom-entity). If the table should store legal entity-specific data make sure to add a lookup field to **cdm\_companies** in the new Dataverse table. If the table stores global data, then a field for company is not required in the Dataverse table.
 2. Create a new entity in Finance and Operations with all the required fields. Make sure it is Data management-enabled and public so that the entity can be consumed by Odata. For more information on creating a new entity, see [Build and consume data entities](../build-consuming-data-entities.md).
@@ -64,7 +64,7 @@ If the entites don't exist in either environment, you can create tables in both 
 
     ![Properties for CustCustomerV3Entity](media/custom-customer-account.png)
 
-    In Dataverse, accountnumber is defined as the key for the Account table.
+    In Dataverse, **accountnumber** is defined as the key for the Account table.
 
     ![Dataverse keys for Account](media/custom-account-keys.png)
 
@@ -98,21 +98,21 @@ If the entites don't exist in either environment, you can create tables in both 
     // Transaction end
     ```
 
-+ The following are not be handled by business events and subsequently not handled by dual-write:
++ The following are not handled by business events and are therefore not handled by dual-write:
     + **doUpdate** method
     + **doInsert** method
     + set-based operations (**insert** and **update**)
     + records where **skipBusinessEvents(true)** is marked
-+ Business events must be registered for the data source that is mapped. There can be data sources that are outer joined and marked as readonly in the Finance and Operations app. These data sources are not tracked.
++ Business events must be registered for the data source that is mapped. There can be data sources that are outer-joined and marked as readonly in the Finance and Operations app. These data sources are not tracked.
 + Changes are triggered only if the modifications are on the mapped fields in the Finance and Operations app. In customer engagement apps, all field modifications trigger dual-write sync.
 + Every filter evaluation should provide a valid result.
-+ Data sources which do not have any fields mapped are not tracked.
-+ Entity relationships within Finance and Operations app must indicate to dual-write that the two entities are linked and there are relationships that exist between the two records within the same transaction. Dual-write batching depends on entity relationships explicitly defined and considered to sequence the record insertion if both parent and child record are part of same transaction on related entities. If there is a business process in Finance and Operations apps that involves several entities and has to be enabled as batch mode for customer engagement, dual-write expects the relationships to be identified and defined on the entity. The following screenshot show the relationship between **Sales Order header V2** and **Sales Order Line V2**.
++ Data sources that do not have any fields mapped are not tracked.
++ Entity relationships within Finance and Operations app must indicate to dual-write that the two entities are linked and there are relationships that exist between the two records within the same transaction. Dual-write batching depends on entity relationships explicitly defined and considered to sequence the record insertion if both parent and child record are part of the same transaction on related entities. If there is a business process in Finance and Operations apps that involves several entities and has to be enabled as batch mode for customer engagement, dual-write expects the relationships to be identified and defined on the entity. The following screenshot shows the relationship between **Sales Order header V2** and **Sales Order Line V2**.
 
     ![Relationship in Finance and Operations app](media/custom-sales-order.png)
 
 + To avoid performance issues, avoid using large number of data sources in dual-write data tables that raise multiple events for a record change. Do not map unwanted fields in dual-write and avoid excessive business logic on tables and entities.
-+ If a custom entity in the Finance and Operations app is company-specific (the primary company context property of entity is set to **DataAreaId**), then the related Dataverse table should have company lookup as one of the key columns. Mapping between the shared entity and the company-specific entity is not allowed. You can determine if a Finance and Operations app entity is shared or company-specific by looking at the **entity** property in Visual Studio Application Explorer. For more information, see [Cross company behaviour of Data entities](../cross-company-behavior.md).
++ If a custom entity in the Finance and Operations app is company-specific (the primary company context property of entity is set to **DataAreaId**), then the related Dataverse table should have company lookup as one of the key columns. Mapping between the shared entity and the company-specific entity is not allowed. You can determine if a Finance and Operations app entity is shared or company-specific by looking at the **entity** property in Visual Studio Application Explorer. For more information, see [Cross company behavior of Data entities](../cross-company-behavior.md).
 
     ![Properties of SalesOrderLineEntity](media/custom-data-entity-view.png)
 
