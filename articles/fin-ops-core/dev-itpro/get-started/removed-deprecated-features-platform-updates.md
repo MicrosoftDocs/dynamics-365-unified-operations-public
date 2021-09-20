@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 09/08/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,7 +44,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are deprecating some SQL reports in LCS. You will no longer need to monitor the reports as this feature has been replaced by other services. |
+| **Reason for deprecation/removal** |   All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention.|
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |

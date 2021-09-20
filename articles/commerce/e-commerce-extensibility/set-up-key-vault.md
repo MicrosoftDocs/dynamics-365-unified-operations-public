@@ -4,7 +4,7 @@
 title: Set up Azure Key Vault for secure key management
 description: This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.  
 author: samjarawan
-ms.date: 05/27/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -60,32 +60,7 @@ To create a new Key Vault, follow these steps.
 
 Next, the e-commerce Node application needs to be configured to securely communicate with Retail Server.
 
-For the following steps, you will need to have the tenant ID of the Azure App Service hosting your Node application, as well as the client ID of the managed identity tied to your Azure App Service. If you do not have access to Azure App Service, work with your service integrator or support team to obtain the required information.
-
-### Find and copy your tenant ID
-
-To find your tenant ID, follow these steps.
-
-1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
-1. Go to the directory containing the Azure App Service hosting your Node application.
-1.	Go to **Azure Active Directory**.
-1.	In the left navigation pane, select **Properties**.
-1.	Find and copy the **Tenant ID**.
-
-### Find and copy the client ID of the managed identity for your Node application
-
-To find the client ID of the managed identity for your Node application, follow these steps.
-
-1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
-1. Go to the directory containing the Azure App Service hosting your Node application.
-1.	In the left navigation pane, select **Identity**.
-1.	Select the **User assigned** tab.
-1.	Select the managed identity resource for your Node application.
-1. In the left navigation pane, select **Overview**, and then copy the **Client ID** value.
-
-The following example image highlights the **Client ID** value on the Azure Portal **Overview** page.
-
-![Azure Portal Overview page with the Client ID value highlighted.](media/key-vault-01.png)
+For the following steps, you will need to have the tenant ID of the Azure App Service hosting your Node application, as well as the client ID of the managed identity tied to your Azure App Service. You will not have access to these IDs, so please work with your service integrator or support team to obtain the required information. Once you have these IDs available you can continue with the steps below.
 
 ### Add your Node application details into Retail Server’s authentication allow list
 
@@ -94,10 +69,10 @@ To add your Node application details into Retail Server's authentication allow l
 1. In Commerce headquarters, go to **Commerce Shared Parameters**.
 1.	Select the **Identity Providers** tab.
 1.	In the first section named **IDENTITY PROVIDERS**, select **Add**.
-1. For **Issuer Value**, enter `https://sts.windows.net/<TENANT_ID>/`, where **\<TENANT_ID>** is your tenant ID.
-1. For **Name**, enter "Azure AD".
+1. For **Issuer Value**, enter `https://sts.windows.net/<TENANT_ID>/`, where **\<TENANT_ID>** is your tenant ID. Ensure that no extra trailing spaces are added.
+1. For **Name**, enter "Azure AD". The name is case sensitive, so ensure that it is copied exactly as shown.
 1. For **Type**, enter "Active Directory".
-1.	In the second section named **RELYING PARTIES**, add an entry with the client ID of your managed identity. 
+1.	In the second section named **RELYING PARTIES**, add an entry with the **client ID** of your managed identity. 
 1. For **Type**, select **Confidential**.
 1. For **UserType**, select **Application**.
 1. Provide a name for your Node application.
