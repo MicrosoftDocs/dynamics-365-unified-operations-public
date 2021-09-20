@@ -52,7 +52,7 @@ Supply Chain Management uses encryption keys to protect all sealed bids and keep
 >
 > - If you use a sandbox for development and testing, then you must have one dedicated key vault for the sandbox and a separate one for production.
 > - Each key vault must be created in an Azure subscription that is owned by your organization (not the subscription where you're running Supply Chain Management).
-> - Each key vault must be used exclusively for sealed bidding. You must not use your sealed-bidding key values for any other purpose.
+> - Each key vault must be used exclusively for sealed bidding. You must not use your sealed-bidding key vaults for any other purpose.
 
 Every bid retrieves its own secret key. This key is used every time that a user views, updates, or unseals the bid.
 
