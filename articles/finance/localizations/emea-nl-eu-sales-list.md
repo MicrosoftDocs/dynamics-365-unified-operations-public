@@ -4,7 +4,7 @@
 title: EU sales list for Netherlands
 description: This topic provides information about how to generate the EU sales list for Netherlands.
 author: anasyash
-ms.date: 09/14/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,7 +55,7 @@ To set up XML namespaces for the EU sales list in XML, follow these steps:
 For more information about how to get the values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](#get-xsd-schema-and-namespaces-for-the-dutch-taxonomy).
 
 > [!NOTE]
-> We recommend enabling **Use application specific parameters from previous versions of ER formats** feature in Feature management workspaces. When this feature is enabled, configured for the lower version of an ER format parameters automatically become applicable for the higher version of this format. When this feature is disabled, you must continue configuring application specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in Feature management workspaces starting from 10.0.23 version of Finance. For more information about **Set up the parameters of an ER format per legal entity** , see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 ### Set up EU sales list reporting formats
 
