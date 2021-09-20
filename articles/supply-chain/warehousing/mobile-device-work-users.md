@@ -71,6 +71,22 @@ Once the required workers and employees are set up in the system, you can assign
 
 <!-- KFM: Description needed. -->
 
+In the following procedure, it will be explained how to change the language for each warehouse app user. When you sign into the warehouse management app the language will change to the language setup for the user as explained here. The worker selected in step 3 of the "Set up mobile device user accounts" section will be the one determining the language to be used. You can use different worker accounts if you need separate languages per user. 
+
+1. Go to **System administration** > **Users** > **Users**.
+2. Select the user that has the worker you need to change language for selected in the "Person" column. If the worker is not tied to a user account you need to do that first.
+3. Click on **User options**. 
+4. Go to **Preferences**. 
+5. Make the following settings:
+    -  **Language** - Enter the language you want be used for this worker. This setting will also control the date format seen on the warehouse mobile app
+    -  **Date, time, and number format** - The language you set here will determine tha number format seen on the warehouse mobile app. 
+
+
+It is important to note that the display language in the warehouse app is decided in two other occassions before the user signs in. 
+1. When the app is not connected to an SCM environment, for example the first time the app is installed and is started, the device language is used. Changing the device language will change the language of the app. You can change the language in the respective settings of your device, where to find it can differ depending on the operating system and version used. 
+2. When connecting to an SCM environment, the language is determined based on the Warehouse Managment mobile app user that is associated with the Azure AD application: https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app#create-and-configure-a-user-account-in-supply-chain-management
+
+
 ## Set the time zone for each warehouse app user
 
 <!-- KFM: Description needed. -->
