@@ -1631,6 +1631,8 @@
           href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
         - name: Parameters not used by Planning Optimization
           href: master-planning/planning-optimization/not-used-parameters.md
+        - name: Supply schedule
+          href: master-planning/supply-schedule.md
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with demand forecast
