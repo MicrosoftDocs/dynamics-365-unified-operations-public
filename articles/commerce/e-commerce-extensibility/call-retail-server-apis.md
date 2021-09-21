@@ -5,7 +5,7 @@
 title: Call Commerce Scale Unit APIs
 description: This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
 author: samjarawan
-ms.date: 09/14/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,7 +37,7 @@ To call Commerce Scale Unit APIs, you must use the Retail Server proxy library t
 ## Install the Retail Server proxy
 
 
-The Retail Server proxy is available for download via the Dynamics 365 NPM feed and should be added by default. If it isn't there, you can get it by adding a reference in the packages.json file.
+The Retail Server proxy is available for download via the Dynamics 365 NPM feed and should be added by default. If it isn't there, you can get it by adding a reference in the package.json file.
 
 
 To install the proxy in your software development kit (SDK) development environment, follow these steps.
