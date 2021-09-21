@@ -94,10 +94,10 @@ You can find the canceled updates via the **View recent canceled updates** in th
 > The functionality noted in this section is available as part of a preview release. The content and the functionality are subject to change.
 
 ### Overview 
-In addition to the default sandbox and production environments, if you have additional sandbox environments deployed in your LCS implementation project, now the additional sandbox environments will also be auto updated with the One Version service update. 
+In addition to the default sandbox environment and the production environment, if you have additional sandbox environments deployed in your LCS implementation project, now the additional sandbox environments will also be auto-updated with the One Version service update. 
 
 ### Update additional sandbox environments
-The additional sandbox environments will be updated on the same cadence as your production environment, based on your update settings. If you have multiple additional sandbox environments, they will be scheduled for update together.
+The additional sandbox environments will be updated on the same cadence as your production environment, based on your update settings. If you have multiple, additional sandbox environments, they will be scheduled for update together.
 
 If you have not deployed the production environment, none of the additional sandbox environments will be auto-updated. 
 
