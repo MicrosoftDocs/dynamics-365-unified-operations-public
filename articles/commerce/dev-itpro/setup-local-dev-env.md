@@ -162,61 +162,62 @@ While the local scale unit is serving the requests, use the **DEBUG CONSOLE** to
     - ASP.NET  Core 3.1 based Retail Server capable of interacting with HQ via RTS
     - Cloud POS
 
-You can find URLs corresponding to the just deployed CPOS and CSU if you review the base installer's log towards the end when CSU and CPOS are health-checked. In order to populate the Channel database with data from HQ you will need to execute the step #28 from here assuming you have already performed previous steps described in that document.
+You can find URLs corresponding to the just deployed CPOS and CSU if you review the base installer's log towards the end when CSU and CPOS are health-checked. To populate the Channel database with data from HQ, execute step #28 from here (assuming you have already performed previous steps described in that document).
 
 ## Switching from IIS mode to Self-Hosted mode
 
-If you will switch between IIS and Self-Host modes make sure to do the below steps (if this is your first run - you can skip them because those settings are default ones):
+If you switch between IIS and self-hosted modes make sure run the following steps. (If this is your first run, you can skip them because those settings are default ones.)
 
-- In  Visual Studio Code hit the button Run and Debug (Ctrl+Shift+D), a Drop Down Menu with a green arrow will be displayed under the top navigation bar, select there Debug with Self-Host
-- Open the file .vscode/tasks.json and make sure baseProduct_UseSelfHost is set to false.
+- In Visual Studio Code click **Run and Debug** (Ctrl+Shift+D). A drop down menu with a green arrow will be displayed under the top navigation bar. Select **Debug with Self-Host**.
+- Open the file `.vscode/tasks.json` and make sure that `baseProduct_UseSelfHost` is set to `false`.
 
-### Once F5 is hit the following will be done automatically (supported in Visual Studio Code only)
+After you click F5, the following are done automatically (supported in Visual Studio Code only):
 
-- The Scale Unit Sample code is compiled. This essentially means an extension compilation which results in a package containing Sealed CSU Extension installer.
-- The Base Sealed Scale Unit installer is deployed if it was not deployed yet.
-- The package containing Demo Data is downloaded from the SDK's feed and then being applied to the Channel DB
-- Sealed Scale Unit Extension installer is deployed
-- Web browser page with a result of a call to CSU's health-check endpoint is rendered
-- The debugger is attached to the process hosting the CSU and the CSU is ready to serve incoming requests at the Url http://localhost:12345 .
+- The Scale Unit Sample code is compiled. The compilation results in a package that contains the Sealed CSU Extension installer.
+- The Base Sealed Scale Unit installer is deployed if it was not yet deployed.
+- The package containing demo data is downloaded from the SDK's feed and then applied to the Channel database.
+- The Sealed Scale Unit Extension installer is deployed.
+- A web browser page with a result of a call to CSU's health-check endpoint is displayed.
+- The debugger is attached to the process hosting the CSU and the CSU is ready to serve incoming requests at the Url http://localhost:12345.
 
-While the local scale unit is serving the requests, you can observe "DEBUG CONSOLE" to watch its internal diagnostics logging in real-time which can be helpful while debugging.
+While the local scale unit is serving the requests, use the **DEBUG CONSOLE** to watch the scale unit's internal diagnostics logging in real-time. The log can be helpful when you are debugging.
 
-## Deploy extension package to production:
+## Deploy the extension package to production
 
-Once the build is successfully completed, you can leverage the outputs to deploy your extensions:
+If the build finishes without errors, you can use the outputs to deploy your extensions:
 
-- **Cloud Scale Unit extension package** is in ScaleUnit\bin\Debug\netstandard2.0 folder - used for Cloud deployments.
-- **Scale Unit extension installer** is in Installer\bin\Debug\net461 - used for on-prem (in-store) installations.
+- **Cloud Scale Unit extension package** - This page is in the `ScaleUnit\bin\Debug\netstandard2.0` folder and is used for Cloud deployments.
+- **Scale Unit extension installer** - This installeder is in the `Installer\bin\Debug\net461`folder and is used for on-prem (in-store) installations.
 
-It's recommended to setup a [build pipeline to generate the package](build-pipeline.md), [steps to deploy the package is documented here](retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
+You should setup up a build pipeline to generate the package and then deploy it. For more information, [Set up a build pipeline for the independent-packaging SDK](build-pipeline.md) and [Deploy the package to CSU](retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
 
 ### Troubleshooting
 
-If anything doesn't go as expected while the packages were deployed, review the verbose set of logs and associated messages in the TERMINAL tab. If you cannot figure out what is wrong on your own, then contact Microsoft to get help and provide:
+To troubleshoot deployment problems, review the verbose set of logs and associated messages in the **TERMINAL** tab of Visual Studio Code. If you cannot figure out what is wrong on your own, then contact Microsoft to get help and provide:
 
-- Verbose description of the actions performed.
+- A verbose description of the actions performed.
 - The log file referenced at the very beginning and the very end of the Base Product's deployment process output.
--  Visual Studio Code Terminal's output including warnings/errors.
+- Visual Studio Code Terminal's output including warnings/errors.
 
-Runtime logs corresponding to Retail Server and Async Client (in case of IIS host) can be found in Event Viewer under Windows Logs->Application. Filter the log by the Sources:
+Runtime logs corresponding to Retail Server and Async Client (in case of IIS host) can be found in the Event Viewer under **Windows Logs, Application**. Filter the log by these sources:
 
 - Microsoft Dynamics - Async Client Service
 - Microsoft Dynamics - Retail Server
-- Self-Hosted CSU will also print runtime logs directly to the  Visual Studio Code Terminal.
+
+Self-hosted CSU will also print runtime logs directly to the  Visual Studio Code Terminal.
 
 ## Out Of the Box Tasks in  Visual Studio Code
 
-A set of tasks is available via  Visual Studio Code's Terminal->Run Task... to achieve various goals:
+A set of tasks is available when using Visual Studio Code's **Terminal->Run Task**:
 
 - **build-extension** - builds an extension.
 - **check-msbuild** - reveals msbuild's version available for Visual Studio Code.
-- **check-ps-bitness** - checks if PowerShell available for Visual Studio Code is of required 64 bit version.
+- **check-ps-bitness** - checks if the PowerShell available for Visual Studio Code is the required 64 bit version.
 - **clean-extension** - cleans build output generated while the extension was built.
-- **install** - verifies all Dev Time prerequisites and then performs all required actions for the selected mode (Self-Hosted vs IIS) to deploy the Scale Unit ready for a debug session. This includes installation of the Base Scale Unit as well as Extension Installer.
-- **uninstall** - uninstall an Extension and Base Scale Unit.
-- **uninstall-base-product** - uninstalls Base Scale Unit. Will fail if it detects an installed Extension.
-- **uninstall-extension** - uninstalls an Extension.
+- **install** - verifies all development-time prerequisites and then performs all required actions for the selected mode (Self-hosted or IIS) to deploy the Scale Unit are ready for a debug session. This task includes installation of the Base Scale Unit as well as Extension Installer.
+- **uninstall** - uninstall an extension and Base Scale Unit.
+- **uninstall-base-product** - uninstalls the Base Scale Unit. Fails if it detects an installed extension.
+- **uninstall-extension** - uninstalls an extension.
 
 ### Feedback
 
