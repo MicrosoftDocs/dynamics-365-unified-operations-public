@@ -74,7 +74,7 @@ Follow the instructions in this section to manually update from TSLint to ESLint
 
 #### Replace TSLint with ESLint
 
-After you [update to SDK version 1.28](sdk-updates.md) or later, you must create an ESLint file and change your **packages.json** file so that it includes the ESLint dependencies. You must also update the commands so that they use ESLint. You can leave the TSLint dependency in the **packages.json** file if you want to use both TSLint and ESLint. After you update to ESLint, you might receive new warnings against your code. You can fix or ignore the warnings as required.
+After you [update to SDK version 1.28](sdk-updates.md) or later, you must create an ESLint file and change your **package.json** file so that it includes the ESLint dependencies. You must also update the commands so that they use ESLint. You can leave the TSLint dependency in the **package.json** file if you want to use both TSLint and ESLint. After you update to ESLint, you might receive new warnings against your code. You can fix or ignore the warnings as required.
 
 ##### Create an .eslintrc.js file
 
