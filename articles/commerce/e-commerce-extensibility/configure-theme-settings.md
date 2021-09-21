@@ -4,7 +4,7 @@
 title: Configure theme settings
 description: This topic describes how to configure theme settings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 06/29/2020
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to configure theme settings in Microsoft Dynamics 365 Commerce.
 
-The Dynamics 365 Commerce e-Commerce online software development kit (SDK) lets theme designers specify various layouts for each module. Theme designers can then control specific layout options for images. The layouts are specified in the /src/themes/THEME_NAME/THEME_NAME.theme.settings.json file.
+The Dynamics 365 Commerce e-Commerce online software development kit (SDK) lets theme designers specify various layouts for each module. Theme designers can then control specific layout options for images. The layouts are specified in the **/src/themes/THEME_NAME/THEME_NAME.theme.settings.json** file.
 
 ## Example theme.settings.json file
 
-The following example shows how module layouts that have specific size values for image settings can be added to the theme.settings.json file. Each layout will be exposed in the authoring tool when the module is configured. In the example below, the **content-block** module is configured so that it has three layouts: **full-width**, **left-right** and **tile**. Each layout specifies height and width image settings for each of the defined viewport sizes.
+The following example shows how module layouts that have specific size values for image settings can be added to the theme.settings.json file. Each layout will be exposed in the authoring tool when the module is configured. In the example below, the **content-block** module is configured so that it has three layouts: **full-width**, **left-right**, and **tile**. Each layout specifies height and width image settings for each of the defined viewport sizes.
 
 ``` json
 {
@@ -138,7 +138,7 @@ The following example shows how module layouts that have specific size values fo
                 }
             }
         }
-    }
+    },
     "gridSettings": {
         "xs": 768,
         "sm": 991,
