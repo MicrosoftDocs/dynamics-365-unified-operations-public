@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Go Live and Update Checklist
-description: This topic provides a list of checklist steps to help you go live with or update your Microsoft Dynamics eCommerce implementation project.
+title: Go live and update checklist
+description: This topic provides a list of checklist steps to help you go live with or update your Microsoft Dynamics 365 Commerce implementation project.
 author: mssle
 ms.date: 09/17/2021
 ms.topic: article
@@ -13,11 +13,9 @@ ms.author: sheaton
 ms.search.validFrom: 2021-09-20
 ---
 
-# Go Live and Update Checklist
+# Go live and update checklist
 
 [!include[banner](../includes/banner.md)]
-
-## Overview
 
 This topic provides a list of checklist steps to help you go live with or update your Microsoft Dynamics eCommerce implementation project. It points to content that will help you configure your system to work smoothly and effectively. 
 
@@ -33,7 +31,7 @@ Download a copy of the current go live checklist from https://aka.ms/d365fogoliv
 
 ## Additional resources
 
-- [Best practices for Dynamics 365 Commerce development](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/best-practices-dev)
+- [Best practices for Dynamics 365 Commerce development](/commerce/e-commerce-extensibility/best-practices-dev)
 
 
   
