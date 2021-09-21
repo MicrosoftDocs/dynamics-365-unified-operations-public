@@ -31,28 +31,28 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
-### Updating to Webpack 5
+### Can I opt in to using Webpack 5?
 
-The Dynamics 365 Commerce online SDK offers support for bundling the Commerce application using the latest Webpack 5 version. Webpack 5 offers improved bundling with better tree shaking and code generation that can reduce the amount of JavaScript downloaded and processed on a page.
+The Dynamics 365 Commerce online SDK offers support for bundling the Commerce application using the latest Webpack 5 release. Webpack 5 offers improved bundling with better tree shaking and code generation that can reduce the amount of JavaScript downloaded and processed on a page.
 
-Webpack 5 can be opted in with the version 1.32 (10.0.22) release of the online SDK. With version 1.34 (10.0.24) of the online SDK, Webpack 5 will become the default and no opt in will be required.
+Webpack 5 can be opted in with the version 1.32 (Commerce version 10.0.22) release of the online SDK. With version 1.34 (Commerce version 10.0.24) of the online SDK, Webpack 5 will become the default option and no opt in will be required.
 
-You can enable Webpack 5 by running the **yarn msdyn365 upgrade-webpack** command as shown below. This command updates the package.json with the list of dependencies needed for Webpack 5. Once the package.json is updated, the new dependencies should be installed by running **yarn**.
+You can enable Webpack 5 by running the **yarn msdyn365 upgrade-webpack** command as shown below. This command updates the package.json with the list of dependencies needed for Webpack 5. Once the package.json is updated, the new dependencies are installed by running **yarn**.
 
 ```Console
 yarn msdyn365 upgrade-webpack
 
 yarn
 ```
-### Module rendering fails after upgrading to SDK version 1.31
+### How can I make server-side module failures more apparent?
 
-Version 1.3 of the Dynamics 365 Commerce online SDK introduced a change in how modules are rendered in the development environment. During module development, modules can be rendered on both server-side and client-side. If modules were failing on the server-side, the failure could be masked due to also running on client side, making server-side failures hard to detect. 
+Version 1.3 of the Dynamics 365 Commerce online SDK introduced a change in how modules are rendered in the development environment. During module development, modules can be rendered on both server-side and client-side. If modules are failing on the server-side, those failures can be masked and hard to detect due to the modules also running on client side. 
 
-To make server-side failures more apparent, version 1.31 of the online SDK now renders a message that there is an issue rendering the module on the server and that the issue must be addressed to render the module successfully in development environment. This validation only happens in the development environment (the production environment is not affected). 
+To make server-side failures more apparent, version 1.31 of the online SDK generates a message stating that there is an issue rendering the module on the server and that the issue must be addressed to successfull render the module in the development environment. This validation only occurs in the development environment (production environment is not affected). 
 
-Here is an example of the error message displayed in developer mode:
+The following is an example of the error message displayed in developer mode:
 
-`test-module' threw exception`
+`'test-module' threw exception`
 
 `Error: Error during server side rendering for module test-module of type test-module. NOTE: This error is only displayed in DEVELOPER mode. This won't affect PRODUCTION. This is a safety measure so developer can address issues that happen on the server. Please, address the following issue: window is not defined.`
 
