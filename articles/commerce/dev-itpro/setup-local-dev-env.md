@@ -29,7 +29,7 @@ Cloud-based and local environments are supported:
 + Local: There are two options to set up a development environment on your own machine:
 
     - **Self-hosted CSU** – This environment type deploys the CSU locally (self hosted-hosted as an executable). There is no IIS, no Commerce data sync, and no Headquarters (HQ) connectivity for real-time calls. With this option there will not be any data sync between the HQ and CSU channel databases. Channel databases will be populated with the default demo data for development purpose. All the requests and calls to HQ will be mocked by the local CSU. For example, a call to issue gift card will be mocked by the local CSU.
-    - **IIS-Hosted CSU** - This environment type deploys the CSU in IIS and sets up an async client to sync the data between the HQ and CSU channel databases. It also sets up real-time connection support with the HQ. This setup requires some additional configuration like AAD app setup and certificates deployment. For detailed step to install the IIS-Hosted CSU, see [Configure and install IIS-Hosted Commerce Scale Unit document.](retail-store-scale-unit-configuration-installation#configure-a-new-commerce-scale-unit)
+    - **IIS-Hosted CSU** - This environment type deploys the CSU in IIS and sets up an async client to sync the data between the HQ and CSU channel databases. It also sets up real-time connection support with the HQ. This setup requires some additional configuration like AAD app setup and certificates deployment. For detailed step to install the IIS-Hosted CSU, see [Configure and install IIS-Hosted Commerce Scale Unit document.](retail-store-scale-unit-configuration-installation.md#configure-a-new-commerce-scale-unit)
 
 ## Local self-hosted CSU
 
@@ -124,7 +124,7 @@ Prerequisites:
     - **baseProduct_RetailServerAadResourceId** - This value is the resource ID of the above registered AAD application. Use the value described as Application ID URI in  step #3c [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application) .
     - **baseProduct_CposAadClientId** - This value is AAD Application Client ID representing your Cloud POS. Follow the step #4 in [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application) to create the application and retrieve its Application (client) ID. This completes the CSU/CPOS setup in AAD. Follow the step #6 from [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application) to complete required setup in HQ.
     - **baseProduct_AsyncClientAadClientId** - This value is the AAD Application Client ID used by Async Client when it needs to authenticate with HQ. To create this application register one more AAD application by following steps 3a-3b in [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application). To register only the created application with HQ, follow step #2 from [here](https://community.dynamics.com/ax/b/axforretail/posts/service-to-service-authentication-in-ax7).
-    - **baseProduct_Config** - Specify only the file name, not the full path, corresponding to the Channel Database Configuration downloadable from HQ as described in the step #4 of the task [Download the CSU installer](retail-store-scale-unit-configuration-installation#download-the-commerce-scale-unit-installer). After you download the file from HQ, put it in the [Download](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-ScaleUnit?path=/src/ScaleUnitSample/Download&version=GC0acfab2d3d7cbd734ea5b19f2b2ac6713d7391ef) folder.
+    - **baseProduct_Config** - Specify only the file name, not the full path, corresponding to the Channel Database Configuration downloadable from HQ as described in the step #4 of the task [Download the CSU installer](retail-store-scale-unit-configuration-installation.md#download-the-commerce-scale-unit-installer). After you download the file from HQ, put it in the [Download](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-ScaleUnit?path=/src/ScaleUnitSample/Download&version=GC0acfab2d3d7cbd734ea5b19f2b2ac6713d7391ef) folder.
     - **baseProduct_UseSelfHost** - Set this value to **false**.
 
 ## Debug an extension using the self-hosted CSU
@@ -162,7 +162,7 @@ While the local scale unit is serving the requests, use the **DEBUG CONSOLE** to
     - ASP.NET  Core 3.1 based Retail Server capable of interacting with HQ via RTS
     - Cloud POS
 
-You can find URLs corresponding to the just deployed CPOS and CSU if you review the base installer's log towards the end when CSU and CPOS are health-checked. To populate the Channel database with data from HQ, execute step #28 from here (assuming you have already performed previous steps described in that document).
+You can find URLs corresponding to the just deployed CPOS and CSU if you review the base installer's log towards the end when CSU and CPOS are health-checked. To populate the Channel database with data from HQ, execute step #28 from [Configure a new Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#configure-a-new-commerce-scale-unit) (assuming you have already performed previous steps described in that document).
 
 ## Switching from IIS mode to Self-Hosted mode
 
@@ -219,7 +219,7 @@ A set of tasks is available when using Visual Studio Code's **Terminal->Run Task
 - **uninstall-base-product** - uninstalls the Base Scale Unit. Fails if it detects an installed extension.
 - **uninstall-extension** - uninstalls an extension.
 
-### Feedback
+### Support
 
 If the setup doesn't work as expected or you need help, reach out via:
 
