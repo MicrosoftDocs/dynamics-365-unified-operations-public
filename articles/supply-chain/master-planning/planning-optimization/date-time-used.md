@@ -45,3 +45,73 @@ Planning Optimization uses the following parameters during its operation in rela
 | Planned ordering time | PlannedOrderingTime | The ordering date calculated by the Planning Optimization service. | Order date (ReqDateOrder), Order time (ReqTimeOrder) |
 | Planned activity start time | PlannedActivityStartTime | The date the activity for this receipt should start.| Start date (SchedFromDate) |
 | Receipt time delay | ReceiptTimeDelay | Time span between planned receipt time and required receipt time. | Delay (days) (FuturesDays), Delayed to time (FuturesTime) |
+
+## Examples of date parameters usage by Planning Optimization
+
+The plans in the diagrams below are at a day level, but Planning Optimization is run at a more detailed level (e.g. margins can be in hours; the Planning Ordering Time can be 22/1/2021, 11:35, etc.).
+
+### Scenario 1
+
+One sales order with requested issue time on 22/1 getting covered by one purchase order.
+
+- No lead time.
+- No calendars (all days open).
+- No margins.
+
+![Simple scenario.](media/planning-service-dates-1.png)
+
+### Scenario 2
+
+One sales order with requested issue time on 22/1 getting covered by one purchase order.
+
+- 3 days lead time.
+- No calendars (all days open).
+- No margins.
+
+![Lead time scenario.](media/planning-service-dates-2.png)
+
+### Scenario 3
+
+One sales order with requested issue time on 22/1 getting covered by one purchase order.
+
+- 3 days lead time.
+- 4 days ordering margin.
+- 5 days availability margin.
+- No calendars (all days open).
+
+![Margins scenario.](media/planning-service-dates-3.png)
+
+### Scenario 4
+
+One sales order with requested issue time on 22/1 getting covered by one purchase order. Same settings as Scenario 3, except for the planning date that has been moved to 15/1. Backward scheduling (red markers) fails, because the POT would have to happen before Today. Because of that, master planning must schedule forwards, causing delays.
+
+![Delays scenario.](media/planning-service-dates-4.png)
+
+### Scenario 5
+
+One sales order on Warehouse1 with requested issue time on 22/1 getting covered by one transfer order from Warehouse2, which gets covered with a planned purchase order.
+
+- 3 days transfer lead time (Warehouse1).
+- 2 days purchase lead time (Warehouse2).
+- No calendars (all days open).
+
+![Transfers scenario.](media/planning-service-dates-5.png)
+
+### Scenario 6
+
+One sales order with requested issue time on 22/1 getting covered by one purchase order. 
+
+- 3 days lead time.
+- Issue calendar (closed Friday)
+- Availability calendar (closed Thursday, Friday)
+- Receipt calendar (closed Tuesday, Wednesday, Sunday)
+- Lead time calendar (closed Thursday, Friday)
+- Ordering calendar (open Monday, Saturday)
+
+![Lead time with calendars scenario.](media/planning-service-dates-6.png)
+
+### Scenario 7
+
+One sales order with requested issue time on 22/1 getting covered by one purchase order. Same settings as Scenario 6, except for the planning date that has been moved to 13/1. Backward scheduling (red markers) fails, because the POT would have to happen before Today. Because of that, master planning must schedule forwards, causing delays.
+
+![Delays with calendars scenario.](media/planning-service-dates-7.png)
