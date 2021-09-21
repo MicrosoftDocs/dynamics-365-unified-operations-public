@@ -4,7 +4,7 @@
 title: Fiscal printer integration sample for Italy
 description: This topic provides an overview of the fiscal integration sample for Italy.
 author: josaw
-ms.date: 10/08/2019
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -145,13 +145,13 @@ The Commerce runtime extension components are included in the Retail SDK. To com
 
 1. Find the extensions configuration file for CRT:
 
-    - **Commerce Scale Uni:** The file is named **commerceruntime.ext.config**, and it's in the bin\\ext folder under the IIS Commerce Scale Uni site location.
+    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the bin\\ext folder under the IIS Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
 1. Register the CRT change in the extensions configuration file. Add **source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample"**.
 1. Restart the Commerce Scale Unit:
 
-    - **Commerce Scale Uni:** Restart the Commerce Scale Uni site from IIS Manager.
+    - **Commerce Scale Unit:** Restart the Commerce Scale Unit site from IIS Manager.
     - **Client broker:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
 #### Hardware station extension components
@@ -187,17 +187,17 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 1. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from **RetailSdk\\SampleExtensions\\HardwareStation\\Entension.EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml**.
 2. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from **RetailSdk\\SampleExtensions\\CommerceRuntime\\Entension.DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml**.
-3. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Technical profiles**. Create a new profile, and select the loaded connector from the earlier step. Update the connection settings if an update is required.
-4. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and select the loaded connector and document provider from the earlier steps. Update data mapping settings if an update is required.
-5. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional group**. Create a new group, and select the connector functional profile from the earlier step.
-6. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Registration process**. Create a new process, and select the connector functional group from the earlier step.
+3. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Technical profiles**. Create a new profile, and then select the loaded connector from the earlier step. Update the connection settings if an update is required.
+4. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and then select the loaded connector and document provider from the earlier steps. Update data mapping settings if an update is required.
+5. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional group**. Create a new group, and then select the connector functional profile from the earlier step.
+6. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Registration process**. Create a new process, and then select the connector functional group from the earlier step.
 7. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Open the functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the registration process that was created earlier.
 8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Open the hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile.
-9. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+9. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and then select jobs **1070** and **1090** to transfer data to the channel database.
 
 ### Production environment
 
-Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
+To create deployable packages that contain Commerce components, and apply those packages in a production environment, follow these steps.
 
 1. Complete the steps that are described in the [Enable extensions](#enable-extensions) section earlier in this topic.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
@@ -228,7 +228,7 @@ Follow these steps to create deployable packages that contain Commerce component
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
 
-4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+4. Start the MSBuild Command Prompt for Visual Studio utility, and then run **msbuild** under the Retail SDK folder to create deployable packages.
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ## Design of extensions
