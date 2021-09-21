@@ -19,7 +19,7 @@ ms.search.validFrom: 2021-09-20
 
 This topic describes how to improve website performance by excluding unused JavaScript modules in Microsoft Dynamics 365 Commerce. 
 
-Dynamics 365 Commerce comes with a large set of modules referred to as the Commerce [module library](./starter-kit-overview.md). If there are modules that won't be used on your e-commerce site, they can be excluded to reduce the JavaScript chunk size. The excluded modules will not be rendered on the live e-commerce site or available within Commerce site builder when authoring pages.
+Dynamics 365 Commerce comes with a large set of modules referred to as the Commerce [module library](../starter-kit-overview.md). If there are modules that won't be used on your e-commerce site, they can be excluded to reduce the JavaScript chunk size. The excluded modules will not be rendered on the live e-commerce site or available within Commerce site builder when authoring pages.
 
 ## When should I use this topic?
 This topic applies to the following configurations:
@@ -50,7 +50,7 @@ This topic applies to the following configurations:
 
 ### Pre-conditions:
 
-- You have installed the Online SDK. For more information, see [Install the online SDK](./dev-itpro/ecommerce-platform-sdk.md).
+- You have installed the Online SDK. For more information, see [Install the online SDK](../dev-itpro/ecommerce-platform-sdk.md).
 
 ### Steps to complete:
 
@@ -86,7 +86,7 @@ You have two options to validate that the module was successfully excluded.
 
 ## Additional resources
 
-[Install the online SDK](./dev-itpro/ecommerce-platform-sdk.md)
+[Install the online SDK](../dev-itpro/ecommerce-platform-sdk.md)
 
-[Set up a development environment](./e-commerce-extensibility/setup-dev-environment.md) 
+[Set up a development environment](../e-commerce-extensibility/setup-dev-environment.md) 
   
