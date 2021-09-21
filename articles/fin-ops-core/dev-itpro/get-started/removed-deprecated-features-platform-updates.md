@@ -48,7 +48,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
-| **Status**                         | Deprecated: Planned removal date in October 2021. |
+| **Status**                         | Removed |
 
 ### Azure SQL actions in LCS
 
@@ -58,7 +58,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | SQL actions: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
-| **Status**                         | Deprecated: Planned removal date in October 2021. |
+| **Status**                         | Removed |
 
 ## Feature deprecation effective May 2021
 
