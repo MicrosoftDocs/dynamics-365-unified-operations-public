@@ -4,7 +4,7 @@
 title: Create a new module
 description: This topic describes how to create a new module in Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/29/2020
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to create a new module in Dynamics 365 Commerce.
 
-To create a new module in Commerce, the online software development kit (SDK) provides the **add-module** command-line interface (CLI) command. When you run the command as in the following example, you replace **MODULE\_NAME** with the name that you want to give to the new module. 
+To create a new module in Commerce, the online software development kit (SDK) provides the [add-module](cli-command-reference.md#add-module) command-line interface (CLI) command. When you run the command as in the following example, you replace **MODULE\_NAME** with the name that you want to give to the new module. 
 
 **yarn msdyn365 add-module MODULE\_NAME**
 
@@ -43,7 +43,7 @@ The following example shows how to create a module that is named **product-featu
 yarn msdyn365 add-module product-feature
 ```
 
-It can take 20 to 30 seconds to create a module and generate all the template files for it. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
+After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
 
 ## Preview a module
 
@@ -65,9 +65,9 @@ Module names are case-insensitive. We recommended that you use whole words for m
 
 ## Deferred module rendering
 
-By default all modules are rendered server-side, but deferred loading of some modules may be needed to improve page load performance. For more information, see [Page load data actions](page-load-data-action.md).
+By default, all modules are rendered server-side, but deferred loading of some modules may be needed to improve page load performance. For more information, see [Page load data actions](page-load-data-action.md).
 
-Any references to window or document objects that are only available in the context of a browser should be handled appropriately during server-side rendering. This will avoid unexpected rendering behavior such as page flicker and Document Object Model (DOM) mismatch issues. The following SDK utility function can be used for this purpose.
+To help prevent unexpected rendering behavior, such as page flicker and Document Object Model (DOM) mismatch issues, any references to window or document objects that are available only in the context of a browser should be appropriately handled during server-side rendering. The **MsDyn365.isBrowser** SDK utility function can be used for this purpose, as shown in the following example.
 
 ```typescript
 import MsDyn365 from '@msdyn365-commerce/core';
@@ -79,7 +79,7 @@ if (MsDyn365.isBrowser) {
 
 ## Module error handling 
 
-If a module encounters an error during server-side rendering, the failed module is then wrapped into an **ErrorModule** component to prevent any module-level render error from breaking the page. For example, a module using window or document objects during a server-side render would fail because these objects are non-existent on the server-side. In this case, the module would then be wrapped in an error component. The module would then attempt to render again on the client. In development mode, to determine if a module failed on server side use a `?debug=true` query string parameter.
+If a module encounters an error during server-side rendering, the failed module is then wrapped into an **ErrorModule** component to prevent any module-level render error from breaking the page. For example, a module using window or document objects during a server-side render would fail because these objects are non-existent on the server side. In this case, the module would then be wrapped in an error component. The module would then attempt to render again on the client. In development mode, to determine if a module failed on the server side, use a `?debug=true` query string parameter.
 
 ## Additional resources
 

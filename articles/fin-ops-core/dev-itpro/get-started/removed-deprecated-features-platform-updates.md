@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 09/03/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,7 +44,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are deprecating some SQL reports in LCS. You will no longer need to monitor the reports as this feature has been replaced by other services. |
+| **Reason for deprecation/removal** |   All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention.|
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
@@ -187,7 +187,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | The [new grid control](../..//fin-ops/get-started/grid-capabilities.md) |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | In version 10.0.13, the new grid control is generally available, and customers can optionally turn on this feature. The new grid control will become mandatory in the October 2021 release. When the new grid control becomes mandatory, the **forceLegacyGrid()** API will no longer be honored. |
+| **Status**                         | In version 10.0.13, the new grid control is generally available, and customers can optionally turn on this feature. The new grid control will become on by default with the October 2021 release and is currently targeted to be mandatory in April 2022. When the new grid control becomes mandatory, the **forceLegacyGrid()** API will no longer be honored. |
 
 ### Personalization without saved views 
 

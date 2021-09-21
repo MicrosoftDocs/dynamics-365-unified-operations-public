@@ -4,7 +4,7 @@
 title: Service update availability
 description: This topic provides information about the different release options.
 author: ShellyBakke
-ms.date: 04/06/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -42,20 +42,20 @@ Customers will be able to take up to 8 service updates per year and are required
 > [!NOTE] 
 > Sandbox auto-update takes place 7 days prior to the production update.  End of service indicates the date when no new cumulative service updates will be provided.
 
-|          Version          | Preview availability (PEAP) | Generally available (self-update) | Auto-update schedule (via LCS Update Settings) production start date |   End of service   |
-|:-------------------------:|:---------------------------:|:---------------------------------:|:--------------------------------------------------------------------:|:------------------:|
-|          10.0.24          |       December 3, 2021      |          January 14, 2022         |                           February 4, 2022                           |   April 15, 2022   |
-|          10.0.23          |       October 15, 2021      |         December 10, 2021         |                           December 31, 2021                          |   March 18, 2022   |
-|          10.0.22          |      September 3, 2021      |          October 22, 2021         |                           November 5, 2021                           |  January 14, 2022  |
-|          10.0.21          |        August 2, 2021       |         September 17, 2021        |                            October 1, 2021                           |  December 10, 2021 |
-|          10.0.20          |         May 28, 2021        |           July 16, 2021           |                             July 30, 2021                             |  October 22, 2021  |
-|          10.0.19          |        April 23, 2021       |            June 18, 2021           |                             July 2, 2021                             | September 17, 2021 |
-|          10.0.18          |        March 5, 2021        |           April 16, 2021          |                            April 30, 2021                            |    July 16, 2021   |
-|          10.0.17          |       February 1, 2021      |           March 19, 2021          |                             April 2, 2021                            |    June 11, 2021   |
-|          10.0.16          |      November 20, 2020      |          January 22, 2021         |                           February 1, 2021                           |   April 30, 2021   |
-
-
-
+|     Version     | Preview availability (PEAP) | Generally available (self-update) | Auto-update schedule (via LCS Update Settings) production start date |   End of service   |
+|-----------------|-----------------------------|-----------------------------------|----------------------------------------------------------------------|--------------------|
+|     10.0.30     |      September 2, 2022      |        October 21, 2022           |                          November 4, 2022                            | January 13, 2023   |
+|     10.0.29     |      August 1, 2022         |        September 16, 2022         |                          September 30, 2022                          | December 9, 2022   |
+|     10.0.28     |      May 27, 2022           |        July 15, 2022              |                          July 29, 2022                               | October 21, 2022   |
+|     10.0.27     |      April 22, 2022         |        June 17, 2022              |                          July 1, 2022                                | September 16, 2022 |
+|     10.0.26     |      March 4, 2022          |        April 15, 2022             |                          April 29, 2022                              | July 15, 2022      |
+|     10.0.25     |      January 31, 2022       |        March 18, 2022             |                          April 1, 2022                               | June 10, 2022      |
+|     10.0.24     |      December 3, 2021       |        January 14, 2022           |                          February 4, 2022                            | April 15, 2022     |
+|     10.0.23     |      October 15, 2021       |        December 10, 2021          |                          December 31, 2021                           | March 18, 2022     |
+|     10.0.22     |      September 3, 2021      |        October 22, 2021           |                          November 5, 2021                            | January 14, 2022   |
+|     10.0.21     |      August 2, 2021         |        September 17, 2021         |                          October 1, 2021                             | December 10, 2021  |
+|     10.0.20     |      May 28, 2021           |        July 16, 2021              |                          July 30, 2021                               | October 22, 2021   |
+|     10.0.19     |      April 23, 2021         |        June 18, 2021              |                          July 2, 2021                                | September 17, 2021 | 
             
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.

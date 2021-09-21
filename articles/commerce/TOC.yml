@@ -6,6 +6,8 @@
       href: index.md
     - name: Get started
       items:
+      - name: Service description
+        href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/commerce/toc.json
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
       - name: One Version service updates 
@@ -94,12 +96,12 @@
           items:
           - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
+          - name: Commerce 10.0.22 (November 2021)
+            href: get-started/whats-new-commerce-10-0-22.md
           - name: Commerce 10.0.21 (October 2021)
             href: get-started/whats-new-commerce-10-0-21.md
           - name: Commerce 10.0.20 (August 2021)
             href: get-started/whats-new-commerce-10-0-20.md
-          - name: Commerce 10.0.19 (June 2021)
-            href: get-started/whats-new-commerce-10-0-19.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -664,6 +666,8 @@
           href: tasks/base-price-trade-agreements.md
         - name: Create trade agreements using category pricing rules
           href: tasks/category-pricing-rules-trade-agreements.md
+        - name: Delay exact price and discount calculation
+          href: delayed-price-calculation.md
       - name: Recommendations 
         items:
         - name: Product recommendations overview 
@@ -708,6 +712,10 @@
           href: configure-ratings-reviews.md
         - name: Sync product ratings
           href: sync-product-ratings.md
+        - name: Enable manual publishing of ratings and reviews by a moderator
+          href: manual-publish-rating-reviews.md
+        - name: Ratings and reviews FAQ
+          href: ratings-reviews-faq.md
       - name: Manage your inventory  
         items:
         - name: Inventory   
@@ -758,6 +766,8 @@
           href: multiple-pickup-modes.md
         - name: Process a customer order pickup in POS
           href: process-order-pickup-POS.md
+        - name: Enable order lookup for guest checkouts
+          href: order-lookup-guest.md
       - name: Sales orders   
         items:
         - name: Create call center orders 
@@ -1150,6 +1160,8 @@
             href: order-confirmation-module.md 
           - name: Gift card module
             href: add-giftcard.md
+          - name: Order lookup module
+            href: order-lookup-module.md
         - name: Store finder modules
           items:
           - name: Map module
@@ -1178,6 +1190,8 @@
             href: nav-menu-module.md
           - name: Site selector module
             href: site-selector.md
+          - name: Country/region picker module
+            href: country-region-picker-module.md
         - name: Search modules
           items:
           - name: Search results module
@@ -1200,6 +1214,8 @@
         items:
         - name: Device, market, and geolocation targeting
           href: targeting-overview.md
+        - name: Set up geo detection and redirection
+          href: geo-detection-redirection.md
       - name: Experimentation
         items:
         - name: Experimentation in Dynamics 365 Commerce
@@ -1262,15 +1278,15 @@
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
       - name: User-defined certificate profiles for retail stores
         href: localizations/certificate-profiles-for-retail-stores.md
-      - name: Regulatory configuration service
+      - name: Regulatory configuration service (RCS)
         items:
-        - name: Regulatory configuration service overview
+        - name: Regulatory configuration service (RCS) overview
           href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Regulatory configuration service - Globalization features
+        - name: (RCS)  Regulatory configuration service (RCS) - Globalization features
           href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-        - name: Create ER configurations in Regulatory configuration service and upload to the Global repository
+        - name: Create ER configurations in Regulatory configuration service (RCS) and upload to the Global repository
           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-        - name: Regulatory Configuration Service – Lifecycle Services storage deprecation
+        - name: Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation
           href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
         - name: Download ER configurations to Commerce
           items: 
@@ -1278,20 +1294,20 @@
             href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
           - name: Import configurations from RCS
             href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
-        - name: Global repository (GR)
-          items: 
-          - name: Import configurations from GR
-            href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
-          - name: Import updated versions of ER configurations
-            href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
-          - name: Enhanced filtering to find configurations in GR
-            href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
-          - name: Upload configurations to GR
-            href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-          - name: Share configurations in GR  
-            href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
-          - name: Discontinue configurations in the RCS Global repository
-            href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
+          - name: Global repository (GR)
+            items: 
+            - name: Import configurations from GR
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+            - name: Import updated versions of ER configurations
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+            - name: Enhanced filtering to find configurations in GR
+              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+            - name: Upload configurations to GR
+              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+            - name: Share configurations in GR  
+              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria
@@ -1312,6 +1328,8 @@
           href: localizations/latam-bra-nfce-contingency-mode.md          
         - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters 
           href: localizations/latam-bra-retail-statements.md
+        - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil 
+          href: localizations/latam-bra-adyen.md          
       - name: Eastern Europe
         items: 
         - name: Common
@@ -1380,12 +1398,16 @@
         items:
         - name: Commerce localization for Russia
           href: localizations/rus-commerce-localization.md
-        - name: Simplified customer address format in Commerce POS for Russia
-          href: localizations/rus-simplified-address.md
         - name: Set up Commerce localization for Russia
           href: localizations/rus-commerce-setup.md
         - name: Prepayments in Commerce for Russia
           href: localizations/rus-commerce-prepayments.md          
+        - name: Simplified customer address format in Commerce POS for Russia
+          href: localizations/rus-simplified-address.md
+        - name: Fiscal printer integration sample for Russia
+          href: localizations/rus-fpi-sample.md
+        - name: Customer information management for Russia
+          href: localizations/rus-customer-information.md 
       - name: Sweden
         items:
         - name: Cash register functionality
@@ -1892,6 +1914,30 @@
             href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
           - name: Import configurations (LBD)
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
+        - name: Regulatory configuration service (RCS)
+          items:
+          - name: Regulatory configuration service (RCS) overview 
+            href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+          - name: Download ER configurations to Commerce
+            items: 
+            - name: Download configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+            - name: Import configurations from RCS
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+          - name: Global repository (GR)
+            items: 
+            - name: Import configurations from GR
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+            - name: Import updated versions of ER configurations
+              href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+            - name: Enhanced filtering to find configurations in GR
+              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+            - name: Upload configurations to GR
+              href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+            - name: Share configurations in GR  
+              href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+            - name: Discontinue configurations in the RCS Global repository
+              href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
@@ -2396,7 +2442,7 @@
             href: e-commerce-extensibility/event-based-data-actions.md
           - name: Core data actions
             href: e-commerce-extensibility/core-data-actions.md
-          - name: Call Retail Server APIs
+          - name: Call Commerce Scale Unit APIs
             href: e-commerce-extensibility/call-retail-server-apis.md
           - name: Call Retail Server extension APIs
             href: e-commerce-extensibility/call-retail-extension-api.md
@@ -2474,8 +2520,6 @@
           href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Set up a build pipeline for the independent-packaging SDK
           href: dev-itpro/build-pipeline.md
-        - name: Merge the build systems for Commerce and Finance and Operations
-          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
           href: dev-itpro/retail-sdk/migrate-sdk.md
         - name: Retail SDK extensibility samples
@@ -2588,8 +2632,6 @@
                       href: dev-itpro/pos-extension/consume-apis-pos.md
       - name: Hardware Station extensibility
         items:
-        - name: Hardware Station and extensibility
-          href: dev-itpro/hardware-station-extensibility.md
         - name: Integrate POS with a new hardware device
           href: dev-itpro/hardware-device-extension.md
       - name: Retail Server extensibility
@@ -2714,6 +2756,8 @@
           href: troubleshoot/pickup-store-missing.md
         - name: Items without inventory can be checked out
           href: troubleshoot/items-without-inventory-checked-out.md
+        - name: Ratings refiner appears on search results and category pages when the ratings and reviews solution isn't enabled
+          href: troubleshoot/hide-ratings-refiner.md
       - name: SDK troubleshooting
         items:
         - name: Set up an e-commerce development environment to debug against a Tier 1 Retail Server VM
