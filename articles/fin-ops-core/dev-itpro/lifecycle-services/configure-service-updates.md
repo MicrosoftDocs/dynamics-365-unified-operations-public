@@ -89,7 +89,7 @@ A scheduled update could be canceled for various reasons. Here are some of the c
 
 You can find the canceled updates via the **View recent canceled updates** in the update settings. It will show all canceled updates, if any, within the last 2 scheduled updates.
 
-## Additional sandbox environment (Preview)
+## Additional sandbox environments (Preview)
 > [!IMPORTNAT]
 > The functionality noted in this section is available as part of a preview release. The content and the functionality are subject to change.
 
