@@ -1,6 +1,6 @@
 ---
-title: About currency conversions
-description: This topic explains currency conversions
+title: Intercompany currency conversions
+description: This topic explains currency conversions for intercompany transactions
 author: GalynaFedorova
 ms.date: 09/01/2021
 ms.topic: article
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About currency conversions
+# Intercompany currency conversions
 
 [!include [banner](../../includes/banner.md)]
 

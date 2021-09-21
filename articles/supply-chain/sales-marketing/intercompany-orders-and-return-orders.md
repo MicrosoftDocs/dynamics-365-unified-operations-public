@@ -1,5 +1,5 @@
 ---
-title: About intercompany orders and return orders
+title: Intercompany orders and return orders
 description: This topic explains intercompany orders and return orders
 author: GalynaFedorova
 ms.date: 09/01/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About intercompany orders and return orders
+# Intercompany orders and return orders
 
 [!include [banner](../../includes/banner.md)]
 

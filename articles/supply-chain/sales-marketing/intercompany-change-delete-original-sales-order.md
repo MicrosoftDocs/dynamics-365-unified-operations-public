@@ -1,5 +1,5 @@
 ---
-title: About changing and deleting an original sales order
+title: Change or delete an original intercompany sales order
 description: This topic explains changing and deleting an original sales order functionality
 author: GalynaFedorova
 ms.date: 09/01/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About changing and deleting an original sales order
+# Change or delete an original intercompany sales order
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: About creating intercompany purchase orders or sales orders in several companies
+title: Creating intercompany purchase and sales orders in several companies
 description: This topic explains how to create intercompany purchase orders or sales orders in several companies
 author: GalynaFedorova
 ms.date: 09/01/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About creating intercompany purchase orders or sales orders in several companies
+# Creating intercompany purchase and sales orders in several companies
 
 [!include [banner](../../includes/banner.md)]
 

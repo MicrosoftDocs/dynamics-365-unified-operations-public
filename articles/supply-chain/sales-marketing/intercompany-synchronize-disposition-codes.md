@@ -1,5 +1,5 @@
 ---
-title: About synchronization of disposition codes
+title: Synchronize disposition codes
 description: This topic explains synchronization of disposition codes
 author: GalynaFedorova
 ms.date: 09/01/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About synchronization of disposition codes
+# Synchronize disposition codes
 
 [!include [banner](../../includes/banner.md)]
 

@@ -1,6 +1,6 @@
 ---
-title: About registering picking lists
-description: This topic explains what will happen when you register the batch numbers and serial numbers 
+title: Intercompany batch and serial numbers
+description: This topic explains what will happen when you register batch numbers and serial numbers for intercompany orders
 author: GalynaFedorova
 ms.date: 09/01/2021
 ms.topic: article
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About registering picking lists
+# Intercompany batch and serial numbers
 
 [!include [banner](../../includes/banner.md)]
 

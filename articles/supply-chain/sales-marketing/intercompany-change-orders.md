@@ -1,5 +1,5 @@
 ---
-title: About changing intercompany orders
+title: Change intercompany orders
 description: This topic explains changing intercompany orders functionality
 author: GalynaFedorova
 ms.date: 09/01/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About changing intercompany orders
+# Change intercompany orders
 
 [!include [banner](../../includes/banner.md)]
 

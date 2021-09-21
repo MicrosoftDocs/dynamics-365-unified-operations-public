@@ -28,8 +28,10 @@ Do these steps in legal entity B, as shown in the illustration.
 1. Go to  **Accounts receivable  \>  Sales orders  \>  All sales orders**.
 1. On the Action Pane, select  **Sales order**  to create a sales order.
 1. In the  **Create sales order**  page, select a customer account. On the  **General**  FastTab, make sure that the  **Intercompany**  check box is selected. This indicates that the selected customer is an intercompany customer.
-14. Enter or modify the information, select  **OK** , and then complete the order lines as usual.
+1. Enter or modify the information, select  **OK** , and then complete the order lines as usual.
+
     The  **Delivery address**  field value is copied from the intercompany sales order header to the intercompany purchase order header. The  **Item number**  field value, including product dimensions, and the  **Delivery date**  and  **Currency code**  field values are copied from the intercompany sales order lines to the intercompany purchase order lines.
+
 1. In the order header, select  **Intercompany**  to view the related intercompany purchase order.
 1. On the order lines, select  **Intercompany**  to view information about on-hand inventory for intercompany trade.
 

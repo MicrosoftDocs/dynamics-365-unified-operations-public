@@ -1,5 +1,5 @@
 ---
-title: About intercompany master scheduling
+title: Intercompany master scheduling
 description: This topic explains intercompany master scheduling
 author: GalynaFedorova
 ms.date: 09/01/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About intercompany master scheduling
+# Intercompany master scheduling
 
 [!include [banner](../../includes/banner.md)]
 

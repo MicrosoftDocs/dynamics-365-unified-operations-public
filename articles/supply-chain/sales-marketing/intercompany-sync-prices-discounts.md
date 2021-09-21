@@ -1,6 +1,6 @@
 ---
-title: About synchronization of prices and discounts
-description: This topic explains synchronization of prices and discounts
+title: Synchronize intercompany prices and discounts
+description: This topic explains synchronization of prices and discounts for intercompany sales orders and purchase orders
 author: GalynaFedorova
 ms.date: 09/01/2021
 ms.topic: article
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About synchronization of prices and discounts
+# Synchronize intercompany prices and discounts
 
 [!include [banner](../../includes/banner.md)]
 

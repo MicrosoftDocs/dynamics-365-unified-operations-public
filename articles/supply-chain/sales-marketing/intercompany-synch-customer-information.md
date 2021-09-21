@@ -1,6 +1,6 @@
 ---
-title: About synchronization of customer information
-description: This topic explains synchronization of customer information
+title: Synchronize intercompany customer information
+description: This topic explains synchronization of customer information for intercompany orders
 author: GalynaFedorova
 ms.date: 09/01/2021
 ms.topic: article
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About synchronization of customer information
+# Synchronize intercompany customer information
 
 [!include [banner](../../includes/banner.md)]
 

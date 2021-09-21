@@ -1,5 +1,5 @@
 ---
-title: About intercompany reservations
+title: Intercompany reservations
 description: This topic explains the marking
 author: GalynaFedorova
 ms.date: 09/01/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About intercompany reservations
+# Intercompany reservations
 
 [!include [banner](../../includes/banner.md)]
 

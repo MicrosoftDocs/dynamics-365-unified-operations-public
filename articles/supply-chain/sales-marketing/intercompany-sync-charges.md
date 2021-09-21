@@ -1,6 +1,6 @@
 ---
-title: About synchronization of charges
-description: This topic explains synchronization of charges
+title: Synchronize intercompany charges
+description: This topic explains synchronization of intercompany charges
 author: GalynaFedorova
 ms.date: 09/01/2021
 ms.topic: article
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About synchronization of charges
+# Synchronize intercompany charges
 
 [!include [banner](../../includes/banner.md)]
 
