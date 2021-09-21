@@ -3,7 +3,7 @@
 
 title: Track user sign-ins 
 description: This topic explains how to create an audit log of users who have signed in and used Finance and Operations apps.
-author: manalidongre
+author: angelmarshall
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: tsmarsha
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
 

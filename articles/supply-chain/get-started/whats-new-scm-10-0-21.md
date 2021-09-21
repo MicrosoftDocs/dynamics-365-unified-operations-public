@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.21 (October 2021) 
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.21 (October 2021) 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.21. 
 author: kamaybac
 ms.date: 08/09/2021
@@ -13,12 +13,11 @@ ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.21 (October 2021)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.21 (October 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.21. This version has a build number of 10.0.960 and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.21. This version has a build number of 10.0.960 and is available as follows:
 
 - **Preview of release:** August 2021
 - **General availability of release (self-update):** September 2021
@@ -42,13 +41,14 @@ The deployment will work despite the warning. However, the following known issue
 
 The following table lists the features included in this release. The *Feature* column provides links to the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), where you can see the official release dates for each feature. The *More information* column provides more details and/or links to related documentation.
 
-Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them. Some of the listed features are still in preview, while others may already be generally available.
+Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
 | Feature area | Feature | More information |
 |---|---|---|
-| Inventory&nbsp;and&nbsp;logistics | [Global Inventory Accounting Add-in for Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Global Inventory Accounting home page](../global-inventory-accounting/global-inventory-accounting-home.md) |
+| Inventory&nbsp;and&nbsp;logistics | [Global Inventory Accounting Add-in for Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Global Inventory Accounting home page](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Inventory&nbsp;and&nbsp;logistics | [Post on-hand adjustments using codes connected to offset accounts](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Reason codes for inventory counting](../warehousing/reason-codes-for-counting-journals.md) |
 | Inventory&nbsp;and&nbsp;logistics | [Sales quotation referenced data export policy](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Choose whether changes to data referenced by quotations will cause those quotations (or lines) to be included in the next incremental export. Your incremental exports will run more quickly if you choose not to include such quotations or lines.<br><br>This feature adds a setting called **Skip sales quotation referenced data during change tracking** to the **Accounts receivable parameters** page. |
+| Inventory&nbsp;and&nbsp;logistics | Sealed bidding <!-- KFM: Add RP link when available --> | [Sealed bidding for RFQs](../procurement/sealed-bidding.md) |
 | Inventory&nbsp;and&nbsp;logistics | [Scan barcodes in the warehouse using GS1 format standards](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1 bar codes and QR codes](../warehousing/gs1-barcodes.md) |
 | Inventory&nbsp;and&nbsp;logistics | [Soft reservation for the Inventory Visibility Add-in](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Inventory Visibility reservations](../inventory/inventory-visibility-reservations.md) |
 | Inventory&nbsp;and&nbsp;logistics | [Deduction and catch-weight enhancements for Rebate management](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Manage deductions using the deduction workbench](../rebate-management/deduction-workbench.md )<br><br>[Process, review, and post rebates](../rebate-management/process-review-post.md)<br><br>[Rebate management deals](../rebate-management/rebate-management-deals.md) |

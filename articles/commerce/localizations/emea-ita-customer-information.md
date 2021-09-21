@@ -4,7 +4,7 @@
 title: Customer information management for Italy
 description: This topic describes how to handle customer information in POS for Italy.
 author: sepism
-ms.date: 01/14/2020
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -36,7 +36,7 @@ This topic describes how you can handle customer information, such as the custom
 You can specify the customer information, such as the fiscal code or lottery code, when you create or edit a customer master record in POS. You can also specify the lottery code for a sales transaction by copying it from the transaction customer or entering it manually. The lottery code can then be printed on both regular and fiscal receipts, and it can be used for the national lottery. Personal fiscal codes can also be used to search for a customer in POS.
 
 > [!NOTE]
-> This functionality is available in version 10.0.7 and later.
+> It isn't possible to specify a lottery code for a customer in POS when **Create customer in async mode** is enabled in the POS functionality profile. Support for the async customer creation mode may be added in future updates.
 
 ## Setup
 

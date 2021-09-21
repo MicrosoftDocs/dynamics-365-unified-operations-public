@@ -4,7 +4,7 @@
 title: Embed canvas apps from Power Apps
 description: This topic explains how to embed canvas apps from Microsoft Power Apps into the client to augment the product's functionality.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,6 @@ ms.dyn365.ops.version: Platform update 14
 # Embed canvas apps from Power Apps
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Power Apps is a service that lets developers and non-technical users build custom business apps for mobile devices, tablets, and the web without writing code. Finance and Operations apps support integration with Power Apps. Canvas apps that you, your organization, or the broader ecosystem develop can be embedded into Finance and Operations apps to augment the product's functionality. For example, you might build a canvas app from Power Apps to supplement a Finance and Operations app with information that is retrieved from another system.
 

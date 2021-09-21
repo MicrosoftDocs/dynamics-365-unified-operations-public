@@ -50,6 +50,8 @@ The following features are included in this release. Some of the listed features
 | Finance insights | [Intelligent budget proposal](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/intelligent-budget-proposal) | [Budget proposals](../finance-insights/budget-proposals.md) |
 | Finance insights | [Treasurer workspace](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/treasurer-workspace) | [Cash position](../finance-insights/cash-position.md) |
 
+> [!Note]
+> The Finance insights add-in must be installed from Lifecycle Services (LCS) before you can turn on Finance insights in the **Feature management** workspace. 
 
 ## Feature enhancements included in this release
 
@@ -66,7 +68,7 @@ The following table lists the feature enhancements included in this release. Eac
 Dynamics 365 Finance 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md). 
 
 ### Bug fixes 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=d0dad8eee2af234e8c288e2a7df14c579004518673d014be511f900cfed008f8).
+For information about the bug fixes included in this update, sign in to LCS and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=586707&dbType=3&qc=d0dad8eee2af234e8c288e2a7df14c579004518673d014be511f900cfed008f8).
 
 ### Regulatory updates
 For information about regulatory updates for Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 

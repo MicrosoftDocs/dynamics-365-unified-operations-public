@@ -4,7 +4,7 @@
 title: Monitoring and diagnostics tools in Lifecycle Services (LCS)
 description: This topic describes the tools that Microsoft Dynamics Lifecycle Services provides to help you monitor, diagnose, and analyze the health of the environments.
 author: angelmarshall
-ms.date: 08/03/2020
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -151,6 +151,8 @@ For advanced troubleshooting, you can view raw information logs. You can use a s
 - Deadlocks
 - Crashes
 - Financial reporting issues
+
+For information about how to use Azure Data Explorer with raw information logs, see [Use Azure Data Explorer to query raw information logs](azure-data-explorer.md).
 
 ### SQL insights
 

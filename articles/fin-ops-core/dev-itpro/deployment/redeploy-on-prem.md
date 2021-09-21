@@ -3,7 +3,7 @@
 
 title: Redeploy on-premises environments
 description: This topic provides information about redeploying an on-premises environment.
-author: sarvanisathish
+author: PeterRFriis
 ms.date: 10/14/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sarvanis
+ms.author: peterfriis
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
 
