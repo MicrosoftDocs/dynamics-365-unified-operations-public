@@ -89,32 +89,33 @@ A scheduled update could be canceled for various reasons. Here are some of the c
 
 You can find the canceled updates via the **View recent canceled updates** in the update settings. It will show all canceled updates, if any, within the last 2 scheduled updates.
 
-## Additional sandbox (Preview)
+## Additional sandbox environment (Preview)
 > [!IMPORTNAT]
-> The functionality noted in this topic is available as part of a preview release. The content and the functionality are subject to change.
+> The functionality noted in this section is available as part of a preview release. The content and the functionality are subject to change.
 
 ### Overview 
 In addition to the default sandbox and production environments, if you have additional sandbox environments deployed in your LCS implementation project, now the additional sandbox environments will also be auto updated with the One Version service update. 
 
-### Update additional sandbox
-The additional sandbox environments will be updated on the same cadence as your production environment based on your update settings. If you have multiple additional sandbox environments, they will be scheduled for update together.
+### Update additional sandbox environments
+The additional sandbox environments will be updated on the same cadence as your production environment, based on your update settings. If you have multiple additional sandbox environments, they will be scheduled for update together.
 
-If you have not deployed the production environment, none of the additional sandbox environments will be auto updated. 
+If you have not deployed the production environment, none of the additional sandbox environments will be auto-updated. 
 
 If there’s any update failure on the production environment or any of the additional sandbox environments, it will not interfere with the remaining updates.  That is, if the production update failed, the additional sandbox update will continue.  Similarity, if you have multiple additional sandbox environments and one of them failed during the update, the others will continue.  
 
-You can self-update any of your environments prior to the scheduled service update.  If you have self-updated to the latest version on an environment, then the scheduled service update will not apply update on that environment again. 
+You can self-update any of your environments prior to the scheduled service update.  If you have self-updated to the latest version on an environment, then the scheduled service update will not apply a update on that environment again. 
 
-### Change default sadnbox 
-If you already have selected a default sandbox environment and want to change it with one of the additional sandbox environments, the change may take effect in the next scheduled service update.
+### Change default sadnbox enviornment
+If you already have selected a default sandbox environment, and want to change it with one of the additional sandbox environments, the change may take effect in the next scheduled service update.
 
 ### Pause update
-Additional sandbox environments cannot be paused independently.  However, if you pause the default sandbox, then both production and additional sandbox environments will be paused automatically. If you pause production, then the additional sandbox will be pause as well. 
-Current [pause service updates](pause-service-updates.md) policy still applies.
+Additional sandbox environments cannot be paused independently.  However, if you pause the default sandbox environment, then both the production enviornment and additional sandbox environments will be paused automatically. If you pause the production environment, then additional sandbox enviornments will be paused, as well. 
+
+The current [pause service updates](pause-service-updates.md) policy still applies.
 
 ### Email notifications 
-If your additional sandbox environment is scheduled for a update, you will receive reminder email notifications 7 days prior to the scheduled service update.
-Upon update completes, you will also receive email notification regarding the update result per environments.
+If your additional sandbox environments are scheduled for an update, you will receive reminder email notifications 7 days prior to the scheduled service update.
+After the update completes, you will also receive email notification regarding the update result, per environments.
 
 
 
