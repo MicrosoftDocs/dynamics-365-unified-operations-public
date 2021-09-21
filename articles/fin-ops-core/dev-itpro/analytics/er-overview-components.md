@@ -4,7 +4,7 @@
 title: Electronic reporting coponents
 description: This topic describes the Electronic reporting components.
 author: AnastasiaMiroshkina
-ms.date: 09/20/2021
+ms.date: 09/21/2021
 ms.topic: 
 ms.prod: 
 ms.technology: 
@@ -67,15 +67,15 @@ A model mapping that supports outgoing electronic documents can:
 A model mapping that supports incoming electronic documents can:
 
 - Use different updatable data elements as targets. These data elements include tables, data entities, and views. The data can be updated by using incoming data from electronic documents. Multiple targets can be used in a single model mapping.
-- Supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
+- Support user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
 
-A data model component is designed for each business domain that's used as a unified data source for reporting that isolates reporting from the physical implementation of data sources. The component represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
+A data model component is designed for each business domain that's used as a unified data source for reporting. The unifued data source isolates reporting from the physical implementation of data sources. The component represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
 
 ## Format component
 
-#### <a name="FormatComponentOutbound"></a>Format components for outgoing electronic documents
+### Format components for outgoing electronic documents
 
-A format component is the scheme of the reporting output that will be generated at run time. A scheme consists of the following elements:
+A format component is the scheme of the reporting output that's generated at run time. A scheme consists of the following elements:
 
 - A format that defines the structure and content of the outgoing electronic document that is generated at run time.
 - Data sources, as a set of user input parameters and a domain-specific data model that uses a selected model mapping.
@@ -84,34 +84,34 @@ A format component is the scheme of the reporting output that will be generated 
 
 A format component supports the following functions:
 
-- Creation of reporting output as individual files in various formats, such as text, XML, Microsoft Word document, or worksheet.
-- Creation of multiple files separately and encapsulation of those files into zip files.
+- Creating a reporting output as individual files in various formats, such as text, XML, Microsoft Word document, or worksheet.
+- Creating multiple files separately and encapsulating the files into zip files.
 
 A format component lets you attach specific files that can be used in the reporting output:
 
-- Excel workbooks that contain a worksheet that can be used as a template for output in the OPENXML worksheet format
-- Word files that contain a document that can be used as a template for output in the Microsoft Word document format
-- Other files that can be incorporated into the format's output as predefined files
+- Excel workbooks that contain a worksheet that can be used as a template for output in the OPENXML worksheet format.
+- Word files that contain a document that can be used as a template for output in the Microsoft Word document format.
+- Other files that can be incorporated into the format's output as predefined files.
 
 The following illustration shows how the data flows for these formats.
 
-[![Data flow for outgoing format components](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+   [![Data flow for outgoing format components](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
 To run a single ER format configuration and generate an outgoing electronic document, you must identify the mapping of the format configuration.
 
-#### <a name="FormatComponentInbound"></a>Format components for incoming electronic documents
+### Format components for incoming electronic documents
 
-A format component is the scheme of the incoming document that is imported at run time. A scheme consists of the following elements:
+A format component is the scheme of the incoming document that's imported at run time. A scheme consists of the following elements:
 
-- A format that defines the structure and content of the incoming electronic document that contains data that is imported at run time. A format component is used to parse an incoming document in various formats, such as text and XML.
+- A format that defines the structure and content of the incoming electronic document that contains data which is imported at run time. A format component is used to parse an incoming document in various formats, such as text and XML.
 - A format mapping that binds individual format elements to elements of a domain-specific data model. At run time, the elements in the data model specify the data flow and the rules for importing data from an incoming document, and then store the data in a data model.
 - A format validation, as a set of configurable rules that control data import at run time, depending on the running context. For example, there might be a rule that stops data import of a bank statement that has a vendor's payments and throws an exception when a specific vendor's attributes are missing, such as the vendor identification code.
 
 The following illustration shows how the data flows for these formats.
 
-[![Data flow for incoming format components](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+   [![Data flow for incoming format components](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
-To run a single ER format configuration to import data from an incoming electronic document, you must identify the desired mapping of a format configuration, and also the integration point of a model mapping. You can use the same model mapping and destinations together with different formats for different type of incoming documents.
+To run a single ER format configuration to import data from an incoming electronic document, identify the desired mapping of a format configuration and the integration point of a model mapping. You can use the same model mapping and destinations together with different formats for different types of incoming documents.
 
 ## Component versioning
 
@@ -129,7 +129,7 @@ Versions that have either **Completed** or **Shared** status are available for o
 
 ## Component date effectivity
 
-ER component versions are date-effective. You can set the **Effective from** date for an ER component to specify the date that the component becomes effective for reporting processes. The application session date is used to define whether a component is valid for execution. If more than one version is valid for a particular date, the latest version is used for reporting processes.
+ER component versions are date-effective. You can set the effective from date for an ER component to specify the date that the component becomes effective for reporting processes. The application session date is used to define whether a component is valid for execution. If more than one version is valid for a particular date, the latest version is used for reporting processes.
 
 ## Component access
 
