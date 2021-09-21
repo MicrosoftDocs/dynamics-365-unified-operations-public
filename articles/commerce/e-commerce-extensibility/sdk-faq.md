@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
-### Can I opt in to using Webpack 5?
+### Can I opt in to using Webpack 5 for bundling the Commerce application?
 
 The Dynamics 365 Commerce online SDK offers support for bundling the Commerce application using the latest Webpack 5 release. Webpack 5 offers improved bundling with better tree shaking and code generation that can reduce the amount of JavaScript downloaded and processed on a page.
 
@@ -48,7 +48,7 @@ yarn
 
 Version 1.3 of the Dynamics 365 Commerce online SDK introduced a change in how modules are rendered in the development environment. During module development, modules can be rendered on both server-side and client-side. If modules are failing on the server-side, those failures can be masked and hard to detect due to the modules also running on client side. 
 
-To make server-side failures more apparent, version 1.31 of the online SDK generates a message stating that there is an issue rendering the module on the server and that the issue must be addressed to successfull render the module in the development environment. This validation only occurs in the development environment (production environment is not affected). 
+To make server-side failures more apparent, version 1.31 of the online SDK generates a message stating that there is an issue rendering the module on the server and that the issue must be addressed to successfully render the module in the development environment. This validation only occurs in the development environment (production environment is not affected). 
 
 The following is an example of the error message displayed in developer mode:
 
