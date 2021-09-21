@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Improve Performance by Optimizing Images
+title: Improve performance by optimizing images
 description: This topic describes how to improve website performance by optimizing your use of images in Microsoft Dynamics 365 Commerce.
 author: mssle
 ms.date: 09/17/2021
@@ -21,6 +21,7 @@ ms.search.validFrom: 2021-09-20
 This topic describes how to improve website performance by optimizing your use of images in Microsoft Dynamics 365 Commerce. 
 
 ## When should I use this topic?
+
 This topic applies to the following configurations:
 
 <table>
@@ -49,7 +50,7 @@ This topic applies to the following configurations:
 
 ### Pre-conditions:
 
-- You have installed the Online SDK. Read more: https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/ecommerce-platform-sdk
+- You have installed the Dynamics 365 Commerce online software development kit (SDK). For more information, see [Install the online SDK](./dev-itpro/ecommerce-platform-sdk.md).
 
 ### Steps to complete:
 
@@ -79,12 +80,15 @@ Use these options to validate that the module was successfully excluded.
 
 ## Additional resources
 
-Additional resources
-- [Install the Online SDK](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/ecommerce-platform-sdk)
-- [Media Library](https://docs.microsoft.com/en-us/dynamics365/commerce/dam-overview)
-- [Configure theme settings](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/configure-theme-settings)
-- [Optimize images](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/best-practices-dev#optimize-images) 
-- [Enable lazy loading for product collection modules](https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/best-practices-dev#enable-lazy-loading-for-a-product-collection-module) 
+[Install the online SDK](./dev-itpro/ecommerce-platform-sdk.md)
+
+[Digital asset management overview](./dam-overview.md)
+
+[Configure theme settings](./e-commerce-extensibility/configure-theme-settings.md)
+
+[Optimize images](./e-commerce-extensibility/best-practices-dev.md#optimize-images) 
+
+[Enable lazy loading for product collection modules](./e-commerce-extensibility/best-practices-dev.md#enable-lazy-loading-for-a-product-collection-module) 
 
 
   
