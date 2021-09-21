@@ -93,6 +93,40 @@ To view a different benefits period, select it from the **Period** dropdown.
 
 ![Change period.](./media/hr-benefits-management-workspace-period.png)
 
+
+## Open enrollment tab
+
+You can view your action items by either selecting a tile or a tab. If you select a tab, you can view and select workers right on the workspace page.
+The open enrollment tab provides key metrics for the open enrollment process. 
+
+By default, information regarding open enrollment will be displayed 30 days before the **Enrollment start date** as defined in **Period Setup** in **Benefits management-links-Periods-Enrollment start **.  To change this setting, navigate to**Human Resource Shared parameters- Benefits management – Open enrollment options – Number of **.  
+
+The following information is available in the open enrollment tab
+ - Employees that have not started the open enrollment process
+ - Employees that have elections in process
+ - Employees that have completed the election process
+ - Unconfirmed selections
+
+**Summary Section**
+
+**Not started tile** – The not started tile gives a count of employees that have not started the enrollment process.  The query is showing employees that do not have any plans selected, waived or checked out for the open enrollment plan period.  Mandatory plans are ignored and not included because they are selected by default for the employee.  Drilling into this tile will display the **Worker benefits plan** form with a list of employees that have not started the open enrollment process
+
+> [!NOTE]
+> If you do not want to track the open enrollment progress for a **Plan type**, you can exclude it by navigating to **Benefits management-Links-Employee self service parameters-Benefit plans tile setup-Track open enrollment progress**.  For example, you may plans created where **Plan type** = ‘Other’.  These plans might be optional plans that you don’t want to track enrollment progress for. If you uncheck this plan type, plans of these types will be ignored when tracking enrollment progress or completion in the open enrollment tab.  This setting applies to selected plan type for all periods and legal entities.
+
+**Elections in progress tile** – The elections in progress tiles gives a count of employees that have elections in progress.  The query is showing employees that have plans that have at least one plan that is waived or selected.  Mandatory plans are ignored and not included because they are selected by default for the employee.  Drilling into this tile will display the **Worker Benefit Plans Bulk Update form**, with only selected and waived plans being displayed.
+
+**Enrolled in benefits tile** – The enrolled in benefits tile gives a a count of employees that are fully enrolled in benefits.   The underlying query is showing employees where all plans have either been selected or waived.  The query will exclude plans that are not being tracked for open enrollment in the Employee self service parameters form.  Drilling into this tile will display the **Worker benefit plans** form with a list of employees based on the above query.
+
+**Unconfirmed selections tile**– The unconfirmed selections tiles gives a count of employees that have plans that are selected or waived and need to be confirmed.  Drilling into this tile will display the **Worker Benefit Plans Bulk Update** form.
+
+
+**Activity tab**
+
+**Not started tab** - The not started tab gives a list of employees that have not started the enrollment process.  The query is showing employees that do not have any plans selected, waived or checked out for the open enrollment plan period.  Mandatory plans are ignored and not included because they are selected by default for the employee.  Drilling into the worker will display the **Worker benefit plans detail** form.
+
+**Elections in progress tab**- The elections in progress tab gives a list of employees that have elections in progress.  The query is showing employees that have plans that have at least one plan that is waived or selected.  Mandatory plans are ignored and not included because they are selected by default for the employee.  Drilling into the worker will display the **Worker benefit plans detail** form .
+
 ## View more options
 
 To view more information and actions you can take, select **Links**.
