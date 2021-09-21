@@ -56,11 +56,11 @@ This topic applies to the following configurations:
 One of the biggest performance hits to a web page can be the downloading of images. You can reduce the size of your images and improve actual and perceived performance using the instructions below.
 
 1. Use CSS to generate images for items such as buttons whenever possible.
-1. Upload high quality/resolution marketing or product images to the Commerce site builder [Media Library](../dam-overview), where the image resizer will be used automatically during rendering.
+1. Upload high quality/resolution marketing or product images to the Commerce site builder [Media Library](../dam-overview.md), where the image resizer will be used automatically during rendering.
 1. Include width and height properties for each image
     1. For each module that uses images, open the **theme.settings.json** file in the **/src/settings** directory in the SDK install location
     1. Locate the module you wish to update. 
-    1. Ensure the image properties include width and height parameters. Learn more: [Configure theme settings](../e-commerce-extensibility/configure-theme-settings)
+    1. Ensure the image properties include width and height parameters. Learn more: [Configure theme settings](../e-commerce-extensibility/configure-theme-settings.md)
 1. Disable lazy loading for images* 
     1. Open Commerce Site Builder
     1. Navigate to the module with an image that should not be lazy loaded
