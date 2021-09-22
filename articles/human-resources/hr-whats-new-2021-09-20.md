@@ -63,7 +63,6 @@ The following bug fixes are included in this release.
 | ## (618326) | Wrong report parametersform displays is ESS for the benefits statement. | When navigating to the benefits statement in ESS, the report parameters form is the incorrect form. |
 | ## (618327) | Closed and future periods are showing in the reports parameter form for the benefits statement. |  When navigating to the benefits statement report destination form, the user is able to select benefit plans that are closed or not open, which results in a blank form.  If the period is not an open period, it shouldn't display in the period drop list. |
 | ## (613422) | Truncated text in compensation action. | |
-| ## (617291) | FilterCaptionBuilder fails to build on PU47 | | 
 | ## (614603) | Error Message "Field 'Personnel action type' must be filled in." on HcmWorkerNewWorker form when worker personnel actions parameter not enabled | |
 | 615367 | Approved time off tab throwing warning and displaying incorrectly | If the leave unit was set to Days before enabling the feature "Configure leave units per leave type", the Approved time off tab would throw an invalid warning and display incorrect columns. |
 
