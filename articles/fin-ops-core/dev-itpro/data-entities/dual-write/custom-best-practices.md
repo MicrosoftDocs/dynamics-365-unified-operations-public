@@ -51,7 +51,9 @@ If the entities exist in both environments and are mapped, you can add attribute
 
 ## Create and update operations don't trigger the synchronization of attributes to Dataverse
 
-In some situations, the entities exist in both environments, but create and update operations don't trigger the synchronization of attributes to Dataverse. Go to the **BusinessEventsDefinition** table either by using SQL on the Finance and Operations virtual machine (VM) or by using the table browser. Make sure that there is a record for the combination of the affected table that has an updated date (in the **RefTableName** field) and the entity name (in the **RefEntityName** field).
+In some situations, the entities exist in both environments, but create and update operations don't trigger the synchronization of attributes to Dataverse. Go to the **BusinessEventsDefinition** table either by using SQL on the Finance and Operations virtual machine (VM) or by using the table browser. Make sure that there is a record for the combination of the affected table that has an updated date (in the **RefTableName** field) and the entity name (in the **RefEntityName** field). An example is shown in the following image.
+
+![BusinessEventsDefinition table browser](media/custom-business-event.png)
 
 ## Guidance when entities aren't available in either the Finance and Operations app or Dataverse
 
@@ -68,6 +70,8 @@ If the entities don't exist in either environment, you can create tables in both
     ![Dataverse keys for Account](media/custom-account-keys.png)
 
     If you review the **Customers V3** table map, you can see that **accountnumber** is mapped to **CustomerAccount**.
+    
+    ![Table map for account number](media/custom-table-map.png)
 
 ## Best practices for dual-write
 
@@ -106,7 +110,7 @@ If the entities don't exist in either environment, you can create tables in both
 + Changes are triggered only if the modifications are on the mapped fields in the Finance and Operations app. In customer engagement apps, all field modifications trigger dual-write synchronization.
 + Every filter evaluation should provide a valid result.
 + Data sources aren't tracked if they don't have any fields that are mapped.
-+ Entity relationships in the Finance and Operations app must indicate to dual-write that the two entities are linked, and that relationships exist between the two records in the same transaction. Dual-write batching depends on entity relationships that are explicitly defined and considered to sequence the record insertion if both the parent record and child record are part of the same transaction on related entities. If a business process in the Finance and Operations app involves several entities and must be enabled as batch mode for customer engagement, dual-write expects the relationships to be identified and defined on the entity. The following illustration shows the relationship between **Sales Order header V2** and **Sales Order Line V2**.
++ Entity relationships in the Finance and Operations app must indicate to dual-write that the two entities are linked, and that relationships exist between the two records in the same transaction. Dual-write batching depends on entity relationships that are explicitly defined and considered to sequence the record insertion if both the parent record and child record are part of the same transaction on related entities. If a business process in the Finance and Operations app involves several entities and must be enabled as batch mode in the customer engagement app, dual-write expects the relationships to be identified and defined on the entity. The following illustration shows the relationship between **Sales Order header V2** and **Sales Order Line V2**.
 
     ![Relationship in Finance and Operations app](media/custom-sales-order.png)
 
