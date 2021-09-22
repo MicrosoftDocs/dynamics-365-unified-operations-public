@@ -76,7 +76,7 @@ The VAT declaration in Austria contains the following information.
 
 | Box | XML element | Description                                                   | Lookup          | Lookup result                                  |
 |-----|-------------|---------------------------------------------------------------|-----------------|------------------------------------------------|
-| 070 | KZ070       | Total amount of the tax base for intra-community acquisitions | Turnover lookup | EUPurchases (070) EUPurchasesTaxFree (070/071) |
+| 070 | KZ070       | Total amount of the tax base for intra-community acquisitions | Turnover lookup | EUPurchases (070)</br>EUPurchasesTaxFree (070/071) |
 | 071 | KZ071       | Tax free and zero rated intra-community acquisitions          | Turnover lookup | EUPurchasesTaxFree (070/071)                   |
 | \-  | \-          | **Total amount of taxable intra-community acquisitions**      | \-              | **KZ070 – KZ071**                              |
 
@@ -221,34 +221,56 @@ following subsections of section 4, "Calculation of sales tax":
 4.  On the **Conditions** FastTab, set the following fields to associate the
     sales tax codes and operations.
 
-| Field                  | Description                                                                                                                                                                                                                                                                                                         |
-|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lookup result          | Select the value of the turnover. For more information about the turnover values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this topic.                                                                                         |
-| Tax code               | Select the sales tax code to associate with the operation. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box.   |
-| Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available: |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Lookup result</p>
+</td>
+<td>
+<p>Select the value of the turnover. For more information about the turnover values and their assignment to VAT declaration rows, see the <a href="#_VAT_declaration_overview_1">VAT declaration overview</a> section earlier in this topic.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Tax code</p>
+</td>
+<td>
+<p>Select the sales tax code to associate with the operation. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box.</p>
+<p>We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Transaction classifier</p>
+</td>
+<td>
+<p>If you created enough sales tax codes to determine a declaration box, select <strong>*Not blank*</strong>.</p>
+<p>If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Purchase</strong></p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>PurchaseExempt</strong> (tax-exempt purchase)</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>PurchaseReverseCharge</strong> (tax receivable from a purchase reverse charge)</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Sales</strong></p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SalesExempt</strong> (tax-exempt sale)</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>SalesReverseCharge</strong> (tax payable from a purchase reverse charge or a sales reverse charge)</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Use tax</strong></p>
+<p>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is <strong>PurchaseCreditNote</strong> (purchase credit note).</p>
+</td>
+</tr>
+</tbody>
+</table>
 
--   **Purchase**
-
--   **PurchaseExempt** (tax-exempt purchase)
-
--   **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)
-
--   **Sales**
-
--   **SalesExempt** (tax-exempt sale)
-
--   **SalesReverseCharge** (tax payable from a purchase reverse charge or a
-    sales reverse charge)
-
--   **Use tax**
-
-For each transaction classifier, a classifier for the credit note is also
-available. For example, one of these classifiers is **PurchaseCreditNote**
-(purchase credit note).
-
-[**Note:** Be sure to associate all sales tax codes with lookup results. If any
-sales tax codes should not generate values in the previously mentioned
-subsections of section 4, associate them with the **Other** lookup result.]
+> **Note:** Be sure to associate all sales tax codes with lookup results. If any
+> sales tax codes should not generate values in the previously mentioned
+> subsections of section 4, associate them with the **Other** lookup result.
 
 ![Application specific parameters;Application specific parameters AT](media/78122f1e3f66743f0cb7e7377d93e7dd.png)
 
@@ -268,10 +290,10 @@ following subsections of section 4, "Calculation of sales tax," and in section
 2.  On the **Conditions** FastTab, associate the sales tax codes and report
     fields.
 
->   [**Note:** Be sure to associate all sales tax codes with lookup results. If
+>   **Note:** Be sure to associate all sales tax codes with lookup results. If
 >   any sales tax codes should not generate values in the previously mentioned
 >   subsections of section 4, or in section 5, associate them with the **Other**
->   lookup result.]
+>   lookup result.
 
 ![](media/972efc3680f3683444f895b28cad394f.png)
 
@@ -420,11 +442,11 @@ messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electro
 2.  Select **Print report**. Select **OK** and review the Excel file that is
     generated for the selected sales tax payment line.
 
-[**Note:** The report is generated only for the selected line of the sales tax
-payment. If you must generate, for example, a corrective declaration that
-contains all corrections for the period, or a replacement declaration that
-contains original data and all corrections, use the **Report sales tax for
-settlement period** periodic task.]
+> **Note:** The report is generated only for the selected line of the sales tax
+> payment. If you must generate, for example, a corrective declaration that
+> contains all corrections for the period, or a replacement declaration that
+> contains original data and all corrections, use the **Report sales tax for
+> settlement period** periodic task.
 
 ## Generate a VAT declaration from electronic messages
 
@@ -448,7 +470,7 @@ that you imported earlier from the LCS Shared asset library.
 4.  Select the message line that is created, enter a description, and then
     specify the start and end dates for the declaration.
 
->   **[Note:** Steps 5 through 7 are optional.]
+>   **Note:** Steps 5 through 7 are optional.
 
 1.  Optional: On the **Messages** FastTab, select **Collect data**, and then
     select **OK**. The sales tax payments that were generated earlier are added
