@@ -4,7 +4,7 @@
 title: Commerce localization for Russia
 description: This topic provides an overview of the localization of Microsoft Dynamics 365 Commerce for Russia.
 author: akviklis@microsoft.com
-ms.date: 09/21/2021
+ms.date: 09/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -48,7 +48,7 @@ Features in Commerce headquarters and the point of sale (POS) that are available
 
 ### Supported scenarios
 
-Scenarios are supported by Commerce localization for Russia include:
+Scenarios that are supported by Commerce localization for Russia include:
 
 - Cash-and-carry sales of goods.
 - Returns of cash-and-carry sales of goods.
@@ -74,12 +74,13 @@ Commerce functionality for Russia includes a [sample integration](./rus-fpi-samp
 | Handling of customer returns according to local requirements | X |  |  |
 | A sample of the integration of the POS with a fiscal printer | X |  |  |
 | Support of customer orders in fiscal printer integration |  | X |  |
-| Return policies (payment method control, etc.) |  | X |  |
 | Processing of issued gift cards as prepayments, along with related fiscal printer functionality |  | X |  |
 | Processing of loyalty point redemptions as price discounts in retail transactions, along with related fiscal printer functionality |  | X |  |
 | Payment integration |  | X |  |
 | E-commerce capabilities for Russia |  | X |  |
 | Cash collection |  | X |  |
+| Restrictions on returning items from selected item groups |  |  | X |
+| Aggregation of sales and returns registered in one shift |  |  | X |
 | Gift card policies |  |  | X |
 | Pricing enhancements |  |  | X |
 | Labeling enhancements |  |  | X |
