@@ -79,8 +79,8 @@ Commerce functionality for Russia includes a [sample integration](./rus-fpi-samp
 | Payment integration |  | X |  |
 | E-commerce capabilities for Russia |  | X |  |
 | Cash collection |  | X |  |
-| Restrictions on returning items from selected item groups |  |  | X |
-| Aggregation of sales and returns registered in one shift |  |  | X |
+| Restrictions on returns of items that belong to selected item groups |  |  | X |
+| Aggregation of sales and returns that are registered within one shift |  |  | X |
 | Gift card policies |  |  | X |
 | Pricing enhancements |  |  | X |
 | Labeling enhancements |  |  | X |
