@@ -59,11 +59,8 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue | Description |
 |---|---|---|
-| ## (619774) | Editing address description does not sync to CDS in real time. | When editing the description for a worker address, the updated description does not get synced in real time to CDS. |
-| ## (618326) | Wrong report parametersform displays is ESS for the benefits statement. | When navigating to the benefits statement in ESS, the report parameters form is the incorrect form. |
-| ## (618327) | Closed and future periods are showing in the reports parameter form for the benefits statement. |  When navigating to the benefits statement report destination form, the user is able to select benefit plans that are closed or not open, which results in a blank form.  If the period is not an open period, it shouldn't display in the period drop list. |
-| ## (613422) | Truncated text in compensation action. | |
-| ## (614603) | Error Message "Field 'Personnel action type' must be filled in." on HcmWorkerNewWorker form when worker personnel actions parameter not enabled | |
+| 619774 | Editing address description does not sync to CDS in real time. | When editing the description for a worker address, the updated description does not get synced in real time to CDS. Updated subscription on LogisticsLocation table to send update. |
+| 614603| Error Message "Field 'Personnel action type' must be filled in." on Worker form when worker personnel actions parameter not enabled | When hiring a new worker or navigating to the worker page, the error message "Field 'Personnel action type' must be filled in." was being displayed, even though Personnel Actions were off. |
 | 615367 | Approved time off tab throwing warning and displaying incorrectly | If the leave unit was set to Days before enabling the feature "Configure leave units per leave type", the Approved time off tab would throw an invalid warning and display incorrect columns. |
 
 
@@ -75,6 +72,16 @@ The following new features are in preview. For more information about how to tur
 |---|---|---|
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
 | Custom fields in Eligibility |[Custom fields support in eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management) | [Using custom fields in eligibility processing](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules#using-custom-fields-in-eligibility-rules) |
+| Benefits statement |[Benefits Statement](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/benefits-summary-statement) |  |
+
+### Benefits statement known issues: 
+
+| Issue | Description |
+|---|---|
+| Report parameters form in ESS for the benefits statement is incorrect. | When navigating to the benefits statement in ESS, the report parameters form displays 'records to include' and 'run in the background' fast tabs.  These need to be removed. |
+| Closed and future periods are showing in the reports parameter form for the benefits statement. |  When navigating to the benefits statement report destination form, the user is able to select benefit plans periods that are closed or are future dated, which results in a blank form.  Only the current benefit plan period should display in the list |
+|Error when emailing report using GER report destination | The benefits statement can be set to use email parameters within the GER Report destinations form.  However, when completing the setup and printing the report, the user will receive a formatting error and the benefits statement will not be sent.|
+
 
 ## Coming soon
 
@@ -83,7 +90,7 @@ For a complete list of planned features and their scheduled releases, see [Overv
 | Feature | Details |
 |---|---|
 | Platform update 10.0.21 (45) | Roll-out of Platform update 10.0.21 is scheduled to begin with the service release on October 4, 2021. For more information, see [Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
-| Benefits statement | Benefits statement for viewing an employee's current benefit elections. For more information, see [Benefits Statement](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/benefits-summary-statement) in the Release wave document. |
+
 
 ## See also
 
