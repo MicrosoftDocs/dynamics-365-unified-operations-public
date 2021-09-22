@@ -72,7 +72,7 @@ One important difference between filtering in Finance and Operations apps and fi
 Any query syntax that doesn't match the preceding templates is interpreted as the **matches** operator.
 
 ### Other frequent filter expressions
-Users may want to filter for blank values in column. While there is no filter operator for this specifically, the syntax for performing this filtering remains the same as AX2012. With either the **matches** operator or the **is equal to** operator, users can type **""** to retrieve rows with blank values for the current column. For example, **First Name IS ""** will find all records where the first name is blank. Note that "" only matches rows where the column value is the empty string and does not match rows where the column value is NULL or 0.
+Users may want to filter for blank values in column. While there is no filter operator for this specifically, the syntax for performing this filtering remains the same as Dynamics AX 2012. With either the **matches** operator or the **is equal to** operator, users can type **""** to retrieve rows with blank values for the current column. For example, **First Name IS ""** will find all records where the first name is blank. Note that "" only matches rows where the column value is the empty string and does not match rows where the column value is NULL or 0.
 
 Users may also want to filter for records that do not belong to a specific list of values. While "is not one of" is not a filter operator, this filter expression can be achieved using the **matches** operator by negating each list item in the list. For example,  **!circle, !square** will find all records that are neither "circle" nor "square." 
     
