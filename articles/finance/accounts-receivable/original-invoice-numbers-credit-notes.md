@@ -102,6 +102,7 @@ When you print free text, customer, and project credit notes, they will include 
 
 ## References to original invoices in debit notes
 
-Add a new feauture here... 
+By default, references to original invoices can be entered for credit notes only, i.e. when making negative (decreasing) corrections of original invoices.
+To enbale similar possibility for positive (increasing) corrections, turn on the **References to original invoices in debit notes** feature in the **Feature management** workspace.  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
