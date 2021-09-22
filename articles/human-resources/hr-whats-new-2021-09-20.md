@@ -47,9 +47,8 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 |---|---|---|
-| ## Payroll Integration V2 GA readiness - (616164) | | |
-| | | |
-| | | |
+| Enable simplified payroll integration (Payroll integration APIs) | [Enable simplified integration with payroll providers](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Payroll integration API](hr-admin-integration-payroll-api-introduction.md) |
+| Enable employees to be marked as ready to be paid | [Enable employees to be marked as ready to be paid](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-employees-be-marked-as-ready-pay) | [Ready to pay](/dynamics365/human-resources/hr-compensation-payroll) |
 
 ### Bug fixes
 
@@ -60,13 +59,13 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue | Description |
 |---|---|---|
-| ## Editing address description does not sync to CDS in real time - (619774)
-| ## Wrong report parametersform displays is ESS for the benefits statement - (618326)
-| ## Closed and future periods are showing in the reports parameter form for the benefits statement - (618327)
-| ## [Supporting the Platform  - Dynamic 365 Human Resources - New Compensation Action]: On applying text spacing info icon appears truncated under "New compensation action" pane. - (613422)
-| ## FilterCaptionBuilder fails to build on PU47 - (617291)
-| ## Error Message "Field 'Personnel action type' must be filled in." on HcmWorkerNewWorker form when worker personnel actions parameter not enabled - (614603)
-| ## Approved time off tab throwing warning and displaying incorrectly - (615367)
+| ## (619774) | Editing address description does not sync to CDS in real time. | When editing the description for a worker address, the updated description does not get synced in real time to CDS. |
+| ## (618326) | Wrong report parametersform displays is ESS for the benefits statement. | When navigating to the benefits statement in ESS, the report parameters form is the incorrect form. |
+| ## (618327) | Closed and future periods are showing in the reports parameter form for the benefits statement. |  When navigating to the benefits statement report destination form, the user is able to select benefit plans that are closed or not open, which results in a blank form.  If the period is not an open period, it shouldn't display in the period drop list. |
+| ## (613422) | Truncated text in compensation action. | |
+| ## (617291) | FilterCaptionBuilder fails to build on PU47 | | 
+| ## (614603) | Error Message "Field 'Personnel action type' must be filled in." on HcmWorkerNewWorker form when worker personnel actions parameter not enabled | |
+| 615367 | Approved time off tab throwing warning and displaying incorrectly | If the leave unit was set to Days before enabling the feature "Configure leave units per leave type", the Approved time off tab would throw an invalid warning and display incorrect columns. |
 
 
 ## In preview
@@ -75,9 +74,7 @@ The following new features are in preview. For more information about how to tur
 
 | Feature | Release plan | Documentation |
 |---|---|---|
-| Enable simplified payroll integration (Payroll integration APIs) | [Enable simplified integration with payroll providers](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Payroll integration API](hr-admin-integration-payroll-api-introduction.md) |
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
-| Enable employees to be marked as ready to be paid | [Enable employees to be marked as ready to be paid](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-employees-be-marked-as-ready-pay) | [Ready to pay](/dynamics365/human-resources/hr-compensation-payroll) |
 | Custom fields in Eligibility |[Custom fields support in eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management) | [Using custom fields in eligibility processing](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules#using-custom-fields-in-eligibility-rules) |
 
 ## Coming soon
