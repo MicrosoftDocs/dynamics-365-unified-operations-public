@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Benefits Statement
-description: Benefit statements explain the benefits that an employee is currrently enrolled in.
+title: Benefits statement
+description: The Benefits statement report explains the benefits that an employee is currrently enrolled in.
 author: twheeloc
 ms.date: 09/21/2021
 ms.topic: article
@@ -29,40 +29,41 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Benefits statement
 
-The benefits statement provides a statement of the benefits that an employee is currently enrolled in. The report can be accessed by an employee directly or by
-the benefit administrator. The benefit statement provides a list of the employee’s enrolled benefits, coverage options, costs and any enrolled dependents or beneficiaries. The statement can be printed for a single worker or multiple workers.
+The **Benefits statement** report provides a statement of the benefits that an employee is currently enrolled in. The report can be accessed by an employee directly or by the benefit administrator. The benefit statement provides a list of the employee’s enrolled benefits, coverage options, costs, and any enrolled dependents or beneficiaries. The statement can be printed for a single worker or multiple workers.
 
 > [!NOTE]
-The **Benefits statement** feature is dependent upon the **Benefits management** feature switch being enabled in **Feature management**. Once the **Benefits management** feature is on, the **Benefits statement** feature can be enabled. The **Benefits statement** feature can be turned off in feature management, once it’s turned on.
+The **Benefits statement** feature must be enabled in the **Feature management** workspace. In order to do this, the **Benefits management** feature must be turned on in Feature management. 
 
 
 ## Importing the Benefits statement 
 
-You must import the **Benefits statement** via report configuration before the **Benefits Statement** will be available.
+You must import the **Benefits statement** using report configuration before the **Benefits statement** will be available. To do this, complete the following steps:
 
-1.  Navigate to **System Administration** workspace.
+1.  Go to **System Administration** workspace.
 
 2.  Select the **Electronic Reporting** tile.
 
 3.  Go to **Configuration providers** and select **Repositories**.
 
-  ![Repositories.](https://user-images.githubusercontent.com/26801678/134203290-7faf7245-ed08-44e9-95a1-a7ba278c42c6.png)
+  ![Repositories selection.](https://user-images.githubusercontent.com/26801678/134203290-7faf7245-ed08-44e9-95a1-a7ba278c42c6.png)
 
-4.  Select **HR Resources** from the list and **Open** from the menu.
+4.  Select **HR Resources** from the list, and then select **Open**.
 
-    ![Configuration Repositories](https://user-images.githubusercontent.com/26801678/134203619-b3fd087d-1fe9-45ef-a588-1afedfe38dfd.png)
+    ![Configuration repositories.](https://user-images.githubusercontent.com/26801678/134203619-b3fd087d-1fe9-45ef-a588-1afedfe38dfd.png)
 
-5.  Select the **Benefit statement model** in the left pane and expand it, so that **Benefit statement format** displays.
+5.  Select the **Benefit statement model** in the left pane and expand it so that **Benefit statement format** displays.
 
 6.  Select **Benefit statement format** on the left pane.
 
 7.  On the right side of the screen, there will be a **Versions** FastTab. Select **Import**.
 
-    ![Versions](https://user-images.githubusercontent.com/26801678/134203763-f12ef549-e326-400d-ac69-b25fc94af47b.png)
+    ![Versions FastTab.](https://user-images.githubusercontent.com/26801678/134203763-f12ef549-e326-400d-ac69-b25fc94af47b.png)
 
 ## Generate the Benefits statement as a PDF File
 
-By default, the **Benefit statement** will print in a **Microsoft Word** document format. To print to a **PDF** format, you will need to configure the PDF option in **Electronic reporting destination** (**System administration workspace** > **Electronic reporting** > **Related links** > **Electronic reporting destination**).
+By default, the **Benefits statement** will print as a Microsoft Word document. To print in a PDF format, you will need to configure the PDF option in **Electronic reporting destination**. 
+
+1. To do this, go to **System administration workspace** > **Electronic reporting** > **Related links** > **Electronic reporting destination**.
 
 1.  Select **New**.
 
@@ -74,20 +75,20 @@ By default, the **Benefit statement** will print in a **Microsoft Word** documen
 
 5.  In the **File component name** field, select **Benefit statement**.
 
-6.  Select the **Convert to PDF** checkbox.
+6.  Select the **Convert to PDF** check box.
 
 7.  Select **Settings** from the menu item. 
 
-    ![File Destination](https://user-images.githubusercontent.com/26801678/134203881-a3f1ebc3-d816-485d-a53b-026cc29cae64.png)
+    ![File destination.](https://user-images.githubusercontent.com/26801678/134203881-a3f1ebc3-d816-485d-a53b-026cc29cae64.png)
 
-8.  Select the **File** fast tab and select **Enabled**.
+8.  Select the **File** FastTab, and then select **Enabled**.
 
-![Enabled](https://user-images.githubusercontent.com/26801678/134203994-55d793dd-45fc-458c-a27a-2139b18aff1e.png)
+![Enabled option selected.](https://user-images.githubusercontent.com/26801678/134203994-55d793dd-45fc-458c-a27a-2139b18aff1e.png)
 
 9.  Select **OK**.
    
 > [!NOTE]
-> The benefits management feature is in a Preview state. There is a known issue when using the email destination setting in the **Electronic reporting destination** report. The user will receive an error message and the email will fail to send.
+> The benefits management feature is in a Preview state. There is a known issue when using the email destination setting in the **Electronic reporting destination** report. You may receive an error message and the email will fail to send.
 
 The **Benefit statement** can be generated from the following pages:
 
@@ -100,14 +101,14 @@ The **Benefit statement** can be generated from the following pages:
 -   **Employee self service** > **Benefits** > **View benefit statement**
 
 > [!NOTE]
->  Access to the **Benefit statement** in **Employee self service** is controlled by the privilege **View benefit statement**. This is under the **Employee Self-Service Benefits** duty. This privilege is granted to employees by default.
+>  Access to the **Benefit statement** in **Employee self-service** is controlled by the privilege **View benefit statement**. This is under the **Employee Self-Service Benefits** duty. This privilege is granted to employees by default.
 
-## Report contents:
+## Report contents
 
-The **Benefit statement** will print the confirmed plan selections of the employee, including any waived plans.
+The **Benefit statement** will print the confirmed plan selections of the employee, including any waived plans. The following image shows an example of this report. 
 
-![Report.](https://user-images.githubusercontent.com/26801678/134204058-61baa318-fede-4795-a256-acdf3217f9f9.png)
+![Benefit statement report.](https://user-images.githubusercontent.com/26801678/134204058-61baa318-fede-4795-a256-acdf3217f9f9.png)
 
-The report will display the **Plan**, **Coverage option**, **Employee cost**, and **Employer cost**. The statement will also list any covered dependents. If the plan has beneficiaries associated to it, the beneficiaries and their distribution priority and percent will display.
+The report will display the **Plan**, **Coverage option**, **Employee cost**, and **Employer cost**. The report will also list any covered dependents. If the plan has beneficiaries associated to it, the beneficiaries and their distribution priority and percent will display.
 
-The **Benefit statement** report can be printed for multiple employees at a time via the **Records to include** FastTab on the **Benefit statement** print page.
+The **Benefit statement** report can be printed for multiple employees at the same time using the **Records to include** FastTab on the **Benefit statement** page.
