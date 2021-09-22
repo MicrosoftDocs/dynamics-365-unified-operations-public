@@ -1104,6 +1104,8 @@
           href: general-ledger/enable-delayed-tax-calculation.md         
         - name: Create a sales tax payment
           href: general-ledger/tasks/create-sales-tax-payment.md
+        - name: Tax settlement rounding based on customized currency decimal places
+          href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
         - name: Create sales tax transactions on documents
           href: general-ledger/tasks/create-sales-tax-transactions-documents.md
         - name: Set up ledger posting groups for sales tax
