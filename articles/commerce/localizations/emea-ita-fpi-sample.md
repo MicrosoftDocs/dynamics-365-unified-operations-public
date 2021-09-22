@@ -134,27 +134,56 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 #### Commerce runtime extension components
 
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+
 The Commerce runtime extension components are included in the Retail SDK. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
 1. Find the **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample** project, and build it.
-1. In the **Extensions.DocumentProvider.EpsonFP90IIISample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll** assembly file.
-1. Copy the assembly file to the CRT extensions folder:
+2. In the **Extensions.DocumentProvider.EpsonFP90IIISample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll** assembly file.
+3. Copy the assembly file to the CRT extensions folder:
 
     - **Commerce Scale Unit:** Copy the assembly to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-1. Find the extensions configuration file for CRT:
+4. Find the extensions configuration file for CRT:
 
-    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the bin\\ext folder under the IIS Commerce Scale Unit site location.
+    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the bin\\ext folder under the IIS Commerce Scale Uni site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-1. Register the CRT change in the extensions configuration file. Add **source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample"**.
-1. Restart the Commerce Scale Unit:
+5. Register the CRT change in the extensions configuration file. Add **source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample"**.
+6. Restart the Commerce Scale Unit:
 
     - **Commerce Scale Unit:** Restart the Commerce Scale Unit site from IIS Manager.
     - **Client broker:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
+# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+
+The CRT extension components are included in the EpsonFP90IIISample solution from Fiscal Integration folder. To complete the following procedures, open the EpsonFP90IIISample solution, **EpsonFP90IIISample.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample**.
+
+1. Find the **EpsonFP90IIISample** solution, and build it.
+
+2. Build the CRT extension installer:
+
+    - **Commerce Scale Unit:** In the **EpsonFP90IIISample\\ScaleUnit\\ScaleUnit.EpsonFP90III.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.EpsonFP90III.Installer** installer.
+    - **Local CRT on Modern POS:** In the **EpsonFP90IIISample\\ModernPOS\\ModernPos.EpsonFP90III.Installer\\bin\\Debug\\net461** folder, find the **ModernPos.EpsonFP90III.Installer** installer.
+
+3. Start the extension installer from command line as follows:
+
+    - **Commerce Scale Unit:**
+
+    ```Console
+    ScaleUnit.EpsonFP90III.Installer.exe install --verbosity 0
+    ```
+
+    - **Local CRT on Modern POS:**
+
+    ```Console
+    ModernPos.EpsonFP90III.Installer.exe install --verbosity 0
+    ```
+
 #### Hardware station extension components
+
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 The Hardware station extension components are included in the Retail SDK. To complete the following procedures, open the Hardware Station solution, **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
@@ -169,11 +198,11 @@ The Hardware station extension components are included in the Retail SDK. To com
 
     - **Remote Hardware station:** The file is located under the IIS Hardware station site location.
     - **Local Hardware station:** The file is located under the Modern POS client broker location.
-	
+
 5. Add the following section to the **composition** section of the config file.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
     ```
 
 6. Restart the Hardware station service:
@@ -181,12 +210,40 @@ The Hardware station extension components are included in the Retail SDK. To com
     - **Remote Hardware station:** Restart the Hardware station site from IIS Manager.
     - **Local Hardware station:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
+# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+
+The Hardware station extension components are included in the EpsonFP90IIISample solution from Fiscal Integration folder. To complete the following procedures, open the EpsonFP90IIISample solution, **EpsonFP90IIISample.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample**.
+
+1. Find the **EpsonFP90IIISample** solution, and build it.
+
+2. In the **EpsonFP90IIISample\\HardwareStation\\HardwareStation.EpsonFP90III.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EpsonFP90III.Installer** installer.
+
+3. Start the extension installer from command line as follows:
+
+    ```Console
+    HardwareStation.EpsonFP90III.Installer.exe install --verbosity 0
+    ```
+
 ### Set up the registration process
 
 To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from **RetailSdk\\SampleExtensions\\HardwareStation\\Entension.EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml**.
-2. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from **RetailSdk\\SampleExtensions\\CommerceRuntime\\Entension.DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml**.
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+
+1. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml**.
+2. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml**.
+3. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Technical profiles**. Create a new profile, and then select the loaded connector from the earlier step. Update the connection settings if an update is required.
+4. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and then select the loaded connector and document provider from the earlier steps. Update data mapping settings if an update is required.
+5. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional group**. Create a new group, and then select the connector functional profile from the earlier step.
+6. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Registration process**. Create a new process, and then select the connector functional group from the earlier step.
+7. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Open the functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the registration process that was created earlier.
+8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Open the hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile.
+9. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and then select jobs **1070** and **1090** to transfer data to the channel database.
+
+# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+
+1. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\HardwareStation\\EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml**.
+2. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\CommerceRuntime\\DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml**.
 3. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Technical profiles**. Create a new profile, and then select the loaded connector from the earlier step. Update the connection settings if an update is required.
 4. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and then select the loaded connector and document provider from the earlier steps. Update data mapping settings if an update is required.
 5. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional group**. Create a new group, and then select the connector functional profile from the earlier step.
@@ -198,6 +255,8 @@ To enable the registration process, follow these steps to set up Headquarters. F
 ### Production environment
 
 To create deployable packages that contain Commerce components, and apply those packages in a production environment, follow these steps.
+
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Complete the steps that are described in the [Enable extensions](#enable-extensions) section earlier in this topic.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
@@ -211,7 +270,7 @@ To create deployable packages that contain Commerce components, and apply those 
     - In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
 
         ``` xml 
-        <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample" />
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
         ```
 
 3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
@@ -231,6 +290,10 @@ To create deployable packages that contain Commerce components, and apply those 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and then run **msbuild** under the Retail SDK folder to create deployable packages.
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
+# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+
+Using samples from [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) for deployable package creation requires migration of samples to Retail SDK.
+
 ## Design of extensions
 
 ### Commerce runtime extension design
@@ -242,7 +305,7 @@ The Commerce runtime extension is **Runtime.Extensions.DocumentProvider.EpsonFP9
 For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 #### Request handler
-	
+
 The **DocumentProviderEpsonFP90III** request handler is the entry point for the request to generate documents from the fiscal printer.
 
 The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Headquarters.
