@@ -4,7 +4,7 @@
 title: SDK and module library kit updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 07/30/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,7 +55,7 @@ The version numbers that are used in the preceding example are in the format *X.
 
 SDK dependencies are backward-compatible and can be pulled down at any time. The module library minor versions are dependent on the Commerce Scale Unit. Therefore, they can't be higher than the versions that are shown in the table that follows.
 
-Patch versions won't change dependencies on the Commerce Scale Unit. Therefore, they can be updated at any time. Since the patch version number is not included for some of the packages in the package.json file, such as the 'starter-pack', 'fabrikam-design-kit' and 'retail-proxy', running **yarn** will pick up any patch releases newer than the current downloaded package.
+Patch versions don't change dependencies on the Commerce Scale Unit and can be updated at any time. Since the patch version number is not included for some of the packages in the package.json file such as **starter-pack**, **fabrikam-design-kit**, and **retail-proxy**, running the **yarn** command will pick up any patch releases newer than the current downloaded package.
 
 ### Module library versions mapped to Commerce Scale Unit versions 
 
