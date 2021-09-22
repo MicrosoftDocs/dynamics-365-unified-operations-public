@@ -55,7 +55,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | We are deprecating some SQL actions in LCS.  |
-| **Replaced by another feature?**   | No |
+| **Replaced by another feature?**   | We have built an automated system which renders these capabilities obsolete |
 | **Product areas affected**         | SQL actions: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | Deprecated: Planned removal date in October 2021. |
