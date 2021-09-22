@@ -5,7 +5,7 @@ title: Overview of fiscal integration for Commerce channels
 description: This topic provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/10/2021
+ms.date: 09/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -143,6 +143,7 @@ The following fiscal integration samples are currently available in the Commerce
 - [Fiscal registration service integration sample for Czech Republic](./emea-cze-fi-sample.md)
 - [Control unit integration sample for Sweden](./emea-swe-fi-sample.md)
 - [Fiscal registration service integration sample for Germany](./emea-deu-fi-sample.md)
+- [Fiscal printer integration sample for Russia](./rus-fpi-sample.md)
 
 The following fiscal integration functionality is also implemented by using the fiscal integration framework, but it's available out of the box and isn't included in the Commerce SDK:
 
