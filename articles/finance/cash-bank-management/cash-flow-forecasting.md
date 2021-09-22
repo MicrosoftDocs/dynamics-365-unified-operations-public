@@ -93,7 +93,7 @@ You can override the default setting for the **Liquidity account** field for spe
 
 Budgets that are created from budget models can be included in cash flow forecasts. On the **Budgeting** tab of the **Cash flow forecast setup** page, select the budget models to include in the forecast. By default, new budget register entries are included in forecasts after the budget model has been enabled for cash flow forecasting.
 
-Budget register entries can be included in the cash flow forecast on an individual basis through personalization.  Adding the "Include in cash flow forecasts" column to budget register entries form will overwrite the setup page to include an individual budget register entry in the forecast.
+Budget register entries can be included in the cash flow forecast on an individual basis through personalization. When you add the "Include in cash flow forecasts" column to the **Budget register entry** page, the system will overwrite the settings on the **Cash flow forecast setup** page to include an individual budget register entry in the forecast.
 
 ### Inventory management
 
