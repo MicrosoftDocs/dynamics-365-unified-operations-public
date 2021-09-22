@@ -123,7 +123,7 @@ When you've completed all the required configuration steps, you can submit elect
 ## Related topics
 
 - [Get started with the Electronic invoicing add-in for Saudi Arabia](e-invoicing-sa-get-started.md)
-- [References to original invoices in credit notes](original-invoice-numbers-credit-notes.md)
+- [References to original invoices in credit notes](../../accounts-receivable/original-invoice-numbers-credit-notes.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
