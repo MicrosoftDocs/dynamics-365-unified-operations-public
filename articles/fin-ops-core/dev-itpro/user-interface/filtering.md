@@ -4,7 +4,7 @@
 title: Filtering options
 description: This topic explains the filtering options that are available.
 author: jasongre
-ms.date: 01/02/2020
+ms.date: 09/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
