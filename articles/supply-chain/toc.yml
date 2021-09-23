@@ -2762,7 +2762,7 @@
           - name: Synchronize intercompany customer information
             href: sales-marketing/intercompany-synch-customer-information.md
         - name: Intercompany purchase orders
-            items:
+          items:
           - name: Create and invoice an intercompany purchase order for internal use
             href: sales-marketing/intercompany-purchase-order-for-internal-use.md
           - name: Check intercompany order price discrepancies
