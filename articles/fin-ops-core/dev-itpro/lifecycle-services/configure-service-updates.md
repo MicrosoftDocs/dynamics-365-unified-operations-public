@@ -112,7 +112,7 @@ Additional sandbox environments cannot be paused independently. However, if you 
 The current [pause service updates](pause-service-updates.md) policy still applies.
 
 ### Email notifications 
-If your additional sandbox environments are scheduled for an update, you will receive reminder email notifications 7 days prior to the scheduled service update.
+If your additional sandbox environments are scheduled for an update, you will receive reminder email notifications 6 days prior to the scheduled service update.
 After the update completes, you will also receive email notification regarding the update result for each environment.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
