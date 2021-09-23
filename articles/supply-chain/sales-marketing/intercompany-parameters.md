@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.22
 
 In an intercompany organization, you can set up parameters that determine how you trade between different legal entities. These parameters are determined by the fields that you select. You can select different combinations to reflect different trading scenarios.
 
-The following examples include scenarios for an intercompany organization with two levels and one with three levels.
+The following two examples describe scenarios for intercompany organizations, one with two levels and one with three levels.
 
 ## Example 1: Two-level intercompany chain
 
@@ -34,7 +34,7 @@ In this example, the pricing on the original sales order, which is directed to t
 
 The order header information is controlled from the original sales order to the external customer. Any change on the intercompany sales order is not synchronized to the original sales order.
 
-In Legal entity A, in the **Intercompany** page for vendors, select **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
+In Legal entity A, on the **Intercompany** page for vendors, select **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
 
 - **Print packing slip automatically**
 - **Post invoice automatically**
@@ -56,7 +56,7 @@ In the **Intercompany purchase order <-> Intercompany sales order** field group,
 - **Batch number**
 - **Serial number**
 
-In Legal entity B, in the **Intercompany** page for customers, select **Sales order policies**. Select the following fields in the **Intercompany sales order creation** field group:
+In Legal entity B, on the **Intercompany** page for customers, select **Sales order policies**. Select the following fields in the **Intercompany sales order creation** field group:
 
 - **Sales order numbering** : **Company + original number**
 - **Allow summary update of documents for original customer**
@@ -67,7 +67,7 @@ In the **Intercompany sales order prices** field group, select the following fie
 - **Allow price edit**
 - **Allow discount edit**
 
-In the **Intercompany sales order -\&gt; Intercompany purchase order** field group, select the following fields:
+In the **Intercompany sales order \> Intercompany purchase order** field group, select the following fields:
 
 - **Batch number**
 - **Serial number**
@@ -115,7 +115,7 @@ In Legal entity B, on the **Intercompany** page for customers, select **Sales or
 - **Sales order numbering** : **Company + original number**
 - **Allow summary update of documents for original customer**
 
-In the **Intercompany sales order -\&gt; Intercompany purchase order** field group, select the following fields:
+In the **Intercompany sales order \> Intercompany purchase order** field group, select the following fields:
 
 - **Batch number**
 - **Serial number**

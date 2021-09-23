@@ -1,6 +1,6 @@
 ---
 title: Synchronize disposition codes
-description: This topic explains synchronization of disposition codes
+description: This topic explains synchronization of disposition codes for intercompany commerce
 author: GalynaFedorova
 ms.date: 09/01/2021
 ms.topic: article
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# Synchronize disposition codes
+# Synchronize intercompany disposition codes
 
 [!include [banner](../../includes/banner.md)]
 

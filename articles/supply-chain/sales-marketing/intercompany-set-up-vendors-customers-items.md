@@ -23,7 +23,7 @@ To prepare your organization for intercompany trade, you must define the vendors
 1. Select the vendor to define as an intercompany vendor.
 1. On the Action Pane, on the **General** tab, select **Intercompany**.
 1. Specify intercompany setup parameters for the vendor account. These parameters include the customer legal entity and account, sales order policies, purchase order policies, value mapping, and purchase agreement and sales agreement policies. You also specify whether to use base data values from the vendor account or from the customer account in the other legal entity.
-1. Go to **Product information management \> Released products**.
+1. Go to **Product information management \> Products \> Released products**.
 1. On the **Released products** list page, select the items to assign to the vendor, so that the items are available for intercompany trade. For each item, open the **Released product details** page. On the **Purchase** tab, in the **Vendor** field, type the vendor number.
 1. Go to **Accounts receivable \> Customers \> All customers**.
 1. Select the customer to define as an intercompany customer.

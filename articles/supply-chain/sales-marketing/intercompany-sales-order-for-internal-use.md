@@ -1,6 +1,6 @@
 ---
-title: Create and invoice an intercompany sales order for internal use
-description: This topic explains how to create and invoice an intercompany sales order for internal use
+title: Create an intercompany sales order for internal use
+description: This topic explains how to Create an intercompany sales order for internal use
 author: GalynaFedorova
 ms.date: 09/01/2021
 ms.topic: article
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# Create and invoice an intercompany sales order for internal use
+# Create an intercompany sales order for internal use
 
 [!include [banner](../../includes/banner.md)]
 
