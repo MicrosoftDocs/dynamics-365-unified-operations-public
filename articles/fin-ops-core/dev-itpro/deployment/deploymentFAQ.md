@@ -149,10 +149,17 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 | Canada | Canada East | 52.155.27.128/26 |
 | Europe | North Europe | 52.155.160.192/26 |
 | Europe | West Europe | 20.61.88.128/26<br/>51.105.159.192/26 |
+| France | France Central | 51.138.205.48/28 |
+| France | France South<sup>2</sup> | 52.136.140.96/28 |
 | India | India Cental | 20.193.248.192/26 |
 | India | India South | 20.40.5.0/26 |
 | Japan | Japan East | 20.48.77.192/26 |
 | Japan | Japan West | 20.39.179.192/26 |
+| South Africa | South Africa North | 102.133.204.16/28 |
+| South Africa | South Africa West<sup>2</sup> | 102.133.78.96/28 |
+| Switzerland | Switzerland North | 51.103.164.128/28 |
+| Switzerland | Switzerland West<sup>2</sup> | 51.107.230.128/28 |
+| United Arab Emirates | UAE North | 20.203.41.96/28 |
 | United Kingdom | UK South | 51.11.26.192/26 |
 | United Kingdom | UK West | 51.137.139.0/26 |
 | United States | Central US | 13.86.98.128/26 |
@@ -160,6 +167,8 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 | United States | West US | 52.250.195.128/26 |
 
 <sup>1</sup> For Azure Regions with multiple IP Prefixes, such as West Europe, outbound requests will utilize IP Addresses from any of the listed IP Prefixes.
+
+<sup>2</sup> Denotes a BCDR-only Azure Region. Outbound requests will only originate from this region in Disaster Recovery scenarios that require regional failover within the geography.
 
 ## What does the downtime look like for self-service migrations?
 Self-service migration for any environment takes three hours of 100% downtime, with a six-hour pre-migration window leading up to the actual migration downtime of 3 hours. The environment will be available with limited servicing capabilities during the six-hour pre-migration window, but will be completely unavailable in the three-hour migration window. We recommend that customers do not schedule any servicing activity, like package deployment, during the pre-migration window because it will interfere with migrations and will trigger a migration cancellation.
