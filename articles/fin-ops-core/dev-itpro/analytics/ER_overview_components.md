@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Electronic reporting (ER) components
 
-ER supports next types of components: **Data model**, **Model mapping**, **Format** and **Metadata**.
+ER supports next types of components: **Data model**, **Model mapping**, **Format**, and **Metadata**.
 
 ## Data model component
 
@@ -55,7 +55,7 @@ A model mapping that supports outgoing electronic documents has the following ca
 
 - It can use different data types as data sources for a data model. For example, it can use tables, data entities, methods, or enums.
 - It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
-- It supports the transformation of data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas. For more information, see [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)).
+- It supports the transformation of data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas. For more information, see [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md).
 
 A model mapping that supports incoming electronic documents has the following capabilities:
 
