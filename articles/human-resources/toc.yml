@@ -485,6 +485,12 @@
         items:
           - name: Payroll worker benefit plan
             href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
+      - name: Other entities
+        items:
+          - name: Person name history
+            href: hr-admin-integration-payroll-api-person-name-history.md
+          - name: Conversion rate
+            href: hr-admin-integration-payroll-api-compensation-pay-frequency.md
       - name: Option sets
         items:
           - name: Gender
