@@ -79,6 +79,12 @@ This feature makes it possible to add a search field to the jobs list. Workers c
 
 - Job search for the production floor execution interface
 
+### Enable reporting on co- and by-products
+
+This feature makes it possible for workers to use the production floor execution interface to report progress on batch orders, including reporting on co-products and by-products. If you'd like to use it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Report on co- and by-products from the production floor execution interface
+
 ## Work with production floor execution configurations
 
 To create and maintain device configurations, go to **Production control \> Setup \> Manufacturing execution \> Configure production floor execution**. The **Configure production floor execution** page shows a list of existing configurations. On this page, you can perform the following actions:

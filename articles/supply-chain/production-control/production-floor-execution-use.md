@@ -115,6 +115,10 @@ When a worker completes or partially completes a job, they can report good quant
 
 ## Reporting good quantities on batch orders with co-products and by-products
 
+Workers can use the production floor execution interface to report progress on batch orders, including reporting on co-products and by-products.
+
+Some manufactures, especially those within the process industries, use batch orders to manage their production processes. Batch orders are created from formulas, which can be defined to have co-product and by-product output. When reporting feedback on such batch orders, the amount of output needs to be registered on the formula item as well as the co-products and by-products.
+
 When a worker completes or partially completes a job on a batch order, they can report good or scrap quantities for each product defined as an output for the order. The products defined as output for a batch order can be of type *Formula*, *Co-product*, or *By-product*.
 
 The worker reports good quantities on the products by selecting a job on the **Active jobs** tab and then selecting **Report progress**.
@@ -123,17 +127,17 @@ Then, in the **Report progress** dialog box, the worker can select among the pro
 
 ![Report co-products and by-products.](media/report-co-by-products.png "Report co-products and by-products")
 
-<!-- KFM: Include info on variations? -->
+<!-- KFM: Is any configuration needed for this feature? Feature management (yes)? -->
 
-## Reporting on batch orders for planning items
+### Reporting on batch orders for planning items
 
-When a worker completes a job on a batch order for a planning item, the worker will only be reporting quantities on co-products and by-products, because a planning item does not contain an item of type Formula.
+When a worker completes a job on a batch order for a planning item, the worker will only report quantities on co-products and by-products because planning items don't contain an item of type *Formula*.
 
-## Reporting co-product variation
+### Reporting co-product variation
 
-If a batch order is created from a formula version where Co-products variations is set <!-- KFM: Where is this set? Is that a field name? -->, the worker can report on co-products that are not part of the definition for the batch orders. This is used in scenarios where an unexpected product output can occur in the production process.
+If a batch order is created from a formula version where Co-products variations is set <!-- KFM: Where is this set? Is that a field name? -->, the worker can report on co-products that are not part of the definition for the batch orders. This is used in scenarios where unexpected product output can occur in the production process.
 
-In this case, the worker can specify the co-product and quantity to report by selecting **Co-products variations** in the report progress dialog. This lets the worker select from a list of all the released products defined as co-products. <!-- KFM: Combine with section on reporting co and bi products? -->
+In this case, the worker can specify the co-product and quantity to report by selecting **Co-products variations** in the report progress dialog. This lets the worker select from a list of all the released products defined as co-products.
 
 ## Reporting scrap
 
