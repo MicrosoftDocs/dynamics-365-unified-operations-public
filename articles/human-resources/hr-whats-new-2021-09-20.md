@@ -59,9 +59,9 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue | Description |
 |---|---|---|
-| 619774 | Editing address description does not sync to CDS in real time. | When editing the description for a worker address, the updated description does not get synced in real time to CDS. Updated subscription on LogisticsLocation table to send update. |
-| 614603| Error Message "Field 'Personnel action type' must be filled in." on Worker form when worker personnel actions parameter not enabled | When hiring a new worker or navigating to the worker page, the error message "Field 'Personnel action type' must be filled in." was being displayed, even though Personnel Actions were off. |
-| 615367 | Approved time off tab throwing warning and displaying incorrectly | If the leave unit was set to Days before enabling the feature "Configure leave units per leave type", the Approved time off tab would throw an invalid warning and display incorrect columns. |
+| 619774 | Editing address description does not sync to CDS in real time. | When editing the description for a worker address, the updated description does not get synced in real time to CDS. Updated subscription on Logistics Location table to send update. |
+| 614603| Error on the **Worker** page when the **Worker personnel actions** parameter is not selected. | When hiring a new worker or navigating to the **Worker** page, the following error occors: "Field **Personnel action type** must be filled in.", even though **Personnel actions** are off. |
+| 615367 | **Approved time off** tab displays a warning and displaying incorrectly. | If the leave unit is set to **Days** before enabling the feature **Configure leave units per leave type**, the **Approved time off** tab  displays an invalid warning and incorrect columns. |
 
 
 ## In preview
@@ -72,15 +72,15 @@ The following new features are in preview. For more information about how to tur
 |---|---|---|
 | Benefits management workspace | [Benefits management workspace (Preview)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Benefits management workspace](hr-benefits-management-workspace.md) |
 | Custom fields in Eligibility |[Custom fields support in eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management) | [Using custom fields in eligibility processing](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules#using-custom-fields-in-eligibility-rules) |
-| Benefits statement |[Benefits Statement](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/benefits-summary-statement) | [Benefits statement](Dynamics-365-Operations/articles/human-resources/hr-benefits-statement.md) |
+| Benefits statement |[Benefits Statement](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/benefits-summary-statement) | [Benefits statement](hr-benefits-statement.md) |
 
 ### Benefits statement known issues: 
 
 | Issue | Description |
 |---|---|
-| Report parameters form in ESS for the benefits statement is incorrect. | When navigating to the benefits statement in ESS, the report parameters form displays 'records to include' and 'run in the background' fast tabs.  These need to be removed. |
-| Closed and future periods are showing in the reports parameter form for the benefits statement. |  When navigating to the benefits statement report destination form, the user is able to select benefit plans periods that are closed or are future dated, which results in a blank form.  Only the current benefit plan period should display in the list |
-|Error when emailing report using GER report destination | The benefits statement can be set to use email parameters within the GER Report destinations form.  However, when completing the setup and printing the report, the user will receive a formatting error and the benefits statement will not be sent.|
+| **Report parameters** page in **Employee self service** for the benefit statement is incorrect. | When navigating to the **Benefit statement** in **Employee self service**, the **Report parameters** page displays **Records to include** and **Run in the background** FastTabs.  These need to be removed. |
+| Closed and future periods are displayed in the **Reports parameter** page for the benefits statement. | When navigating to the **Benefit statement report** destination page, the user is able to select benefit plans periods that are closed or are future dated, which results in a blank page. Only the current benefit plan period should display in the list. |
+|Error when emailing report using GER report destination. | The benefits statement can be set to use email parameters within the **GER Report destinations** page. When completing the setup and printing the report, the user will receive a formatting error and the benefits statement will not be sent.|
 
 
 ## Coming soon
