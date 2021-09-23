@@ -67,7 +67,6 @@ This entity provides information about the employee. You must set the [payroll i
 | _mshr_fk_workerbankaccount_id_value | mshr_hcmworkerbankaccountentity | mshr_FK_WorkerBankAccount_id | mshr_FK_HcmWorkerBankAccountEntity_PayrollEmployee |
 | _mshr_fk_variablecompaward_id_value | [mshr_payrollvariablecompensationawardentity](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md) | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_Employee |
 | _mshr_fk_address_id_value | [mshr_payrollworkeraddressentity](hr-admin-integration-payroll-api-payroll-worker-address.md) | mshr_FK_Address_id | mshr_FK_PayrollWorkerAddressEntity_Worker |
-| _mshr_fk_employeev2_id_value | mshr_hcmemployeev2entity | mshr_FK_EmployeeV2_id | - |
 
 ## Example query for Payroll employee
 
@@ -93,7 +92,6 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
     "mshr_readytopay": 200000000,
     "mshr_dataareaid": "USMF",
     "mshr_primaryfield": "000041 | USMF | 4/5/2011 07:00:00 am",
-    "_mshr_fk_employeev2_id_value": "00000125-0000-0000-d5ff-004105000000",
     "_mshr_fk_employment_id_value": "00000d4e-0000-0000-0600-014105000000",
     "_mshr_fk_fixedcompplan_id_value": "00000598-0000-0000-4cd0-fda002000000",
     "_mshr_fk_name_id_value": "00000832-0000-0000-d700-014105000000",
