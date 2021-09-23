@@ -136,29 +136,30 @@ With self-service migrations, we are changing the outbound IP addresses in regio
 The inbound IP address to the AOS is dynamic. This can, and will, change over time as infrastructure changes occur.
 
 > [!NOTE]
-> The outbound IP address from the AOS will remain static for the duration of an individual AOS session, which is currently listed to end in June 2021. 
+> The outbound IP address from the AOS will be an IP address from the listed ranges based on the Azure Region of your deployment. The specific outbound IP address may vary across outbound requests, even from within the same session.
 
-| Region | IP prefix
-|---------------------|-------------|
-| West US | 52.250.195.128/26
-| East US | 52.255.218.64/26
-| Central US | 13.86.98.128/26
-| West EUR | 51.105.159.192/26
-| West EUR-2 | 20.61.88.128/26
-| North EUR | 52.155.160.192/26
-| UK West | 51.137.139.0/26
-| UK South | 51.11.26.192/26
-| Australia East | 20.40.190.0/26
-| Australia SouthEast | 20.40.165.192/26
-| Canada Central | 20.151.60.0/26
-| Canada East | 52.155.27.128/26
-| Brazil South | 191.234.130.0/26
-| East Asia | 52.229.231.64/26
-| South East Asia | 20.44.247.0/26
-| Japan East | 20.48.77.192/26
-| Japan West | 20.39.179.192/26
-| India South | 20.40.5.0/26
-| India Cental | 20.193.248.192/26
+| Geography | Azure Region | IP prefixes<sup>1</sup> |
+|---|---|---|
+| Asia Pacific | East Asia | 52.229.231.64/26 |
+| Asia Pacific | Southeast Asia | 20.44.247.0/26 |
+| Australia | Australia East | 20.40.190.0/26 |
+| Australia | Australia Southeast | 20.40.165.192/26 |
+| Brazil | Brazil South | 191.234.130.0/26 |
+| Canada | Canada Central | 20.151.60.0/26 |
+| Canada | Canada East | 52.155.27.128/26 |
+| Europe | North Europe | 52.155.160.192/26 |
+| Europe | West Europe | 20.61.88.128/26<br/>51.105.159.192/26 |
+| India | India Cental | 20.193.248.192/26 |
+| India | India South | 20.40.5.0/26 |
+| Japan | Japan East | 20.48.77.192/26 |
+| Japan | Japan West | 20.39.179.192/26 |
+| United Kingdom | UK South | 51.11.26.192/26 |
+| United Kingdom | UK West | 51.137.139.0/26 |
+| United States | Central US | 13.86.98.128/26 |
+| United States | East US | 52.255.218.64/26 |
+| United States | West US | 52.250.195.128/26 |
+
+<sup>1</sup> For Azure Regions with multiple IP Prefixes, such as West Europe, outbound requests will utilize IP Addresses from any of the listed IP Prefixes.
 
 ## What does the downtime look like for self-service migrations?
 Self-service migration for any environment takes three hours of 100% downtime, with a six-hour pre-migration window leading up to the actual migration downtime of 3 hours. The environment will be available with limited servicing capabilities during the six-hour pre-migration window, but will be completely unavailable in the three-hour migration window. We recommend that customers do not schedule any servicing activity, like package deployment, during the pre-migration window because it will interfere with migrations and will trigger a migration cancellation.
