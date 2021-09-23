@@ -4,8 +4,7 @@
 title: Cash flow forecasting
 description: This topic provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
 author: saraschi2
-manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -91,9 +90,10 @@ You can override the default setting for the **Liquidity account** field for spe
 
 ### Budgeting
 
-Budgets that are created from budget models can be included in cash flow forecasts. On the **Budgeting** tab of the **Cash flow forecast setup** page, select the budget models to include in the forecast. By default, new budget register entries are included in forecasts after the budget model has been enabled for cash flow forecasting.
+Budgets that are created from budget models can be included in cash flow forecasts. On the **Cash flow forecast setup** page on the **Budgeting** tab, select the budget models to include in the forecast. By default, new budget register entries are included in forecasts after the budget model has been enabled for cash flow forecasting.
 
 Budget register entries can be included in the cash flow forecast on an individual basis through personalization. When you add the "Include in cash flow forecasts" column to the **Budget register entry** page, the system will overwrite the settings on the **Cash flow forecast setup** page to include an individual budget register entry in the forecast.
+
 
 ### Inventory management
 
@@ -146,7 +146,7 @@ The **Cash overview – all companies** workspace shows cash flow forecasting an
 
 The **Cash overview – current company** workspace shows cash flow forecasting analytics in the company’s defined accounting currency. The accounting currency that is used for the analytics is defined on the **Ledger** page. This workspace shows an overview of cash flow forecasting and bank account balances for the current company. A chart of cash inflows and outflows gives an overview of future cash movements and balances in the accounting currency, together with detailed information about the forecasted transactions. You can also see the forecasted currency balances.
 
-For more information about the cash flow forecasting analytics, see the [Cash overview Power BI content](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content) topic.
+For more information about the cash flow forecasting analytics, see [Cash overview Power BI content](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content).
 
 Additionally, you can view cash flow forecasting data for specific accounts, orders, and items on the following pages:
 
