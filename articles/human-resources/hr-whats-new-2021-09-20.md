@@ -59,9 +59,9 @@ The following bug fixes are included in this release.
 
 | Issue number | Issue | Description |
 |---|---|---|
-| 619774 | Editing address description does not sync to CDS in real time. | When editing the description for a worker address, the updated description does not get synced in real time to CDS. Updated subscription on Logistics Location table to send update. |
-| 614603| Error on the **Worker** page when the **Worker personnel actions** parameter is not selected. | When hiring a new worker or navigating to the **Worker** page, the following error occors: "Field **Personnel action type** must be filled in.", even though **Personnel actions** are off. |
-| 615367 | **Approved time off** tab displays a warning and displaying incorrectly. | If the leave unit is set to **Days** before enabling the feature **Configure leave units per leave type**, the **Approved time off** tab  displays an invalid warning and incorrect columns. |
+| 619774 | Editing address description does not sync to Dataverse in real time. | When editing the description for a worker address, the updated description does not get synced in real time to Dataverse. The subscription in the **Logistics Location** table was updated for sending an update. |
+| 614603| Error on the **Worker** page when the **Worker personnel actions** parameter is not selected. | When hiring a new worker or navigating to the **Worker** page, the following error displays, "Field **Personnel action type** must be filled in", even if **Personnel actions** are turned off. |
+| 615367 | **Approved time off** tab displays a warning and displays incorrectly. | If the leave unit is set to **Days** before enabling the feature **Configure leave units per leave type**, the **Approved time off** tab displays an invalid warning and incorrect columns. |
 
 
 ## In preview
@@ -74,7 +74,7 @@ The following new features are in preview. For more information about how to tur
 | Custom fields in Eligibility |[Custom fields support in eligibility processing](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management) | [Using custom fields in eligibility processing](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules#using-custom-fields-in-eligibility-rules) |
 | Benefits statement |[Benefits Statement](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/benefits-summary-statement) | [Benefits statement](hr-benefits-statement.md) |
 
-### Benefits statement known issues: 
+### Benefits statement known issues
 
 | Issue | Description |
 |---|---|
