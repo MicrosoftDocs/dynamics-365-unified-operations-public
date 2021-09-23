@@ -1,25 +1,15 @@
 ---
 title: Regression suite automation tool tutorial
 description: This topic shows how to use Regression suite automation tool (RSAT). It describes various features and provides examples that use advanced scripting.
-author: robinarh
-ms.date: 01/15/2021
+author: FrankDahl
+ms.date: 09/23/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
 audience: Application User, Developer, IT Pro
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
-ms.custom: 21761
 ms.search.region: Global
-# ms.search.industry:
-ms.author: rhaertle
+ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-
 ---
 
 # Regression suite automation tool tutorial
@@ -89,13 +79,14 @@ This feature takes screenshots of the steps that were performed during task reco
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
-- To use this feature while running RSAT by the CLI like from DevOps, open the **Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value of the following element from **false** to **true**.
+
+- To use this feature while running RSAT by the CLI (for example, Azure DevOps), open the **Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value of the following element from **false** to **true**.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-When your then run test cases, RSAT will generate snapshots (images) of the steps and save these under the playback folder of the test cases in the working diretory. Under the playback folders a separate sub-folder is created called **StepSnapshots** that will contain snapshots for the test case that is run.
+When you run test cases, RSAT generates snapshots (images) of the steps and saves them in the playback folder of the test cases in the working diretory. In the playback folder, a separate subfolder is created named **StepSnapshots**. That folder contains snapshots for the test cases that are run.
 
 ## Assignment
 
