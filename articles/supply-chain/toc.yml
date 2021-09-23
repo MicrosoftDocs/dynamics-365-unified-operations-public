@@ -2763,22 +2763,22 @@
           items:
           - name: Creating intercompany purchase and sales orders in several companies
             href: sales-marketing/intercompany-orders-in-several-companies.md
-          - name: Change or delete an original intercompany sales order
-            href: sales-marketing/intercompany-change-delete-original-sales-order.md
-          - name: Change intercompany orders
-            href: sales-marketing/intercompany-change-orders.md
-          - name: Intercompany reservations
-            href: sales-marketing/intercompany-reservations.md
-          - name: Intercompany batch and serial numbers
-            href: sales-marketing/intercompany-batch-serial-numbers.md
-          - name: Intercompany packing slips
-            href: sales-marketing/intercompany-packing-slips.md
           - name: Intercompany orders and return orders
             href: sales-marketing/intercompany-orders-and-return-orders.md
           - name: Create an intercompany sales order for internal use
             href: sales-marketing/intercompany-sales-order-for-internal-use.md
           - name: Create and invoice an intercompany sales order for an external customer
             href: sales-marketing/intercompany-sales-order-for-external-customer.md
+          - name: Intercompany reservations
+            href: sales-marketing/intercompany-reservations.md
+          - name: Change or delete an original intercompany sales order
+            href: sales-marketing/intercompany-change-delete-original-sales-order.md
+          - name: Change intercompany orders
+            href: sales-marketing/intercompany-change-orders.md
+          - name: Intercompany batch and serial numbers
+            href: sales-marketing/intercompany-batch-serial-numbers.md
+          - name: Intercompany packing slips
+            href: sales-marketing/intercompany-packing-slips.md
           - name: Register payments automatically for intercompany customer invoices
             href: sales-marketing/intercompany-register-customer-payments-automatically.md
         - name: Intercompany purchase orders
