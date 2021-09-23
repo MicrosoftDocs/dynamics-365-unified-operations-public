@@ -2740,7 +2740,7 @@
           - name: Intercompany batch and serial numbers
             href: sales-marketing/intercompany-batch-serial-numbers.md
           - name: Intercompany packing slips
-            href: sales-marketing/intercompany-print-packing-slips.md
+            href: sales-marketing/intercompany-packing-slips.md
           - name: Intercompany orders and return orders
             href: sales-marketing/intercompany-orders-and-return-orders.md
           - name: Synchronize disposition codes
