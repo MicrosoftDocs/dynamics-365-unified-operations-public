@@ -95,12 +95,12 @@ You can enable any or all of the following processes for integration.
 
 | Process name | Description |
 |---|---|
-| Release production orders and production order status change business events | This process provides a business event that the MES can listen to, to get information about the production orders that should be produced. Reference data that is related to the production order is expected to be provided through Open Data Protocol (OData) or data entities. |
+| Release production orders and production order status change business events | This process provides a business event that the MES can listen to, to get information about the production orders that should be produced. Reference data that is related to the production order is expected to be shared from Supply Chain Management to the MES through Open Data Protocol (OData) or data entities. |
 | Start production order | This process provides Supply Chain Management with information about production orders that are being started by using the MES. It ensures that both systems have an up-to-date view of all manufacturing activities. |
 | Report produced or scrapped quantity | This process provides Supply Chain Management with information about the good and error quantities that are reported on a production job by using the MES. It ensures that shop floor supervisors have an up-to-date view of production plan progress. |
 | Report material consumption | This process provides Supply Chain Management with information from the MES about the quantities of materials that are consumed. It makes up-to-date inventory records available to other important processes, such as planning and sales. |
 | Report time consumed for the operation | This process provides Supply Chain Management with information about the time that is used for a specific operation. |
-| End production order | This process informs the MES that Supply Chain Management has updated a production order to its final status of *Ended*. This status indicates that no more quantities will be produced on the production order. |
+| End production order | This process informs Supply Chain Management that the MES has updated a production order to its final status of *Ended*. This status indicates that no more quantities will be produced on the production order. |
 
 ### Monitor incoming messages
 
