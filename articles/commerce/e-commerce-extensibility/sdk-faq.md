@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce online SDK FAQ
 description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 09/21/2021
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
