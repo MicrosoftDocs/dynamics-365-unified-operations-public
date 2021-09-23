@@ -1,5 +1,5 @@
 ---
-title:Intercompany parameters
+title: Intercompany parameters
 description: This topic explains intercompany parameters
 author: GalynaFedorova
 ms.date: 09/01/2021

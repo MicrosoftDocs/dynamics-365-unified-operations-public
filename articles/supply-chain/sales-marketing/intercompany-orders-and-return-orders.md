@@ -25,7 +25,7 @@ When you create an intercompany sales order, Microsoft Dynamics 365 Supply Chain
 
 This is true for two-legged orders (transactions between two related companies) and for most three-legged companies (when an intercompany transaction originates with a sales order for an external customer).
 
-## Example
+## Intercompany order example
 
 You have two related companies. Company A is a sales subsidiary, and Company B is a distribution unit. Intercompany sales orders and purchase orders are created automatically in the following scenarios:
 
@@ -41,7 +41,7 @@ Intercompany return orders, similar to regular return orders, are initiated in t
 
 In Microsoft Dynamics 365 Supply Chain Management, intercompany sales and purchase agreements are automatically updated to reflect a returned item. The sales or purchase agreement commitment for that item is automatically adjusted to reflect the change in the quantity or the amount when an item is returned.
 
-## Example
+## Intercompany return order example
 
 Company A creates a purchase order that is linked to a purchase agreement for an intercompany item. An intercompany sales order is automatically created in Company B that is linked to the corresponding sales agreement. The purchase agreement and the sales agreement are related as intercompany agreements.
 
