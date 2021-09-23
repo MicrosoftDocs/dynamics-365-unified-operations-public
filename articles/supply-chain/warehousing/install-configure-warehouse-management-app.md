@@ -113,7 +113,7 @@ For more information about how to set up web service applications in Azure AD, s
     - [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
     - [How to: Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## Create and configure a user account in Supply Chain Management
+## <a name="user-azure-ad"></a>Create and configure a user account in Supply Chain Management
 
 To enable Supply Chain Management to use your Azure AD application, follow these steps.
 
@@ -121,7 +121,7 @@ To enable Supply Chain Management to use your Azure AD application, follow these
 
     1. In Supply Chain Management, go to **System administration \> Users \> Users**.
     1. Create a user.
-    1. Assign the warehousing mobile device user.
+    1. Assign the *Warehousing mobile device user* role to the user.
 
     ![Assign the warehousing mobile device user.](media/app-connect-app-users.png "Assign the warehousing mobile device user")
 
@@ -129,7 +129,7 @@ To enable Supply Chain Management to use your Azure AD application, follow these
 
     1. Go to **System administration \> Setup \> Azure Active Directory applications**.
     1. Create a line.
-    1. Enter the client ID that you made a note of in the previous section, give it a name, and select the user that you just created. We recommend that you tag all your devices. Then, if a device is lost, you can easily remove its access to Supply Chain Management from this page.
+    1. Enter the client ID that you made a note of in the previous section, give it a name, and select the user that you just created. We recommend that you tag all your devices. Then, if a device is lost, you can easily remove its access to Supply Chain Management from this page. <!-- KFM: Is this really true? How does this work? -->
 
     ![Azure Active Directory applications.](media/app-connect-aad-apps.png "Azure Active Directory applications")
 

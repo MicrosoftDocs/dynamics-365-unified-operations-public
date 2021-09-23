@@ -21,11 +21,11 @@ Each time a worker starts using the warehouse app, they must sign in using a use
 
 ## Set up the required worker and employee records
 
-Before you can set up warehouse app users, each worker must already exist as a Supply Chain Management employee or worker in the **Human Resources** module. <!-- KFM: Add links for more info and instructions. I can help find these... -->
+Before you can set up warehouse app users, each worker must already exist as a Supply Chain Management employee or worker in the **Human Resources** module.
 
-## Set up mobile device user accounts
+## <a name="set-wma-users"></a>Set up mobile device user accounts
 
-Once the required workers and employees are set up in the system, you can assign warehouse app users to each of them and set up other options that affect how they can use the app.
+Once the required workers and employees are set up in the **Human Resources** module, you can assign warehouse app users to each of them and set up other options that affect how they can use the app.
 
 1. Go to **Warehouse management \> Setup \> Worker**.
 1. Either select an existing worker from the list pane (to edit an existing one) or add a new record by selecting **New** on the Action Pane.
@@ -67,26 +67,28 @@ Once the required workers and employees are set up in the system, you can assign
 1. On the Action Pane, select **Save**.
 1. If you added a new user account, the **Set password** dialog box appears, where you can create a simple password that the user can use to sign in to the mobile app. Enter a simple password (twice) and select **Save password** to continue.
 
-## Select a preferred language for each warehouse app user
+## Set the language, number formats, and time zone for each warehouse app user
 
-<!-- KFM: Description needed. -->
+ When a worker signs in to the Warehouse Management mobile app, the language, date/time formats, and time zone will change to match that worker's preferences. The account settings for the **Worker** selected in step 3 of [Set up mobile device user accounts](#set-wma-users) section determines the settings used. Use different worker accounts if you need separate settings per user. The following procedure shows how to change the language, date/time formats, and time zone for each warehouse app user.
 
-In the following procedure, it will be explained how to change the language for each warehouse app user. When you sign into the warehouse management app the language will change to the language setup for the user as explained here. The worker selected in step 3 of the "Set up mobile device user accounts" section will be the one determining the language to be used. You can use different worker accounts if you need separate languages per user. 
+1. Go to **Warehouse management \> Setup \> Worker** and find the name of the worker you want to set up. Make sure that worker has all of the required warehouse app user accounts listed on the **Users** FastTab. If necessary, create a new worker and/or add warehouse app user accounts as described in [Set up mobile device user accounts](#set-wma-users).
+1. Go to **System administration \> Users \> Users**.
+1. Select the user account where the **Person** column shows the name of the worker you found in step 1. <!-- KFM: Please confirm this step and the following note. -->
+    > [!IMPORTANT]
+    > The **User ID** values you see listed here are *not* related to those shown on the **Users** FastTab of the **Worker** page you looked at in step 1.
 
-1. Go to **System administration** > **Users** > **Users**.
-2. Select the user that has the worker you need to change language for selected in the "Person" column. If the worker is not tied to a user account you need to do that first.
-3. Click on **User options**. 
-4. Go to **Preferences**. 
-5. Make the following settings:
-    -  **Language** - Enter the language you want be used for this worker. This setting will also control the date format seen on the warehouse mobile app
-    -  **Date, time, and number format** - The language you set here will determine tha number format seen on the warehouse mobile app. 
+1. On the Action Pane, select **User options**.
+1. Open the **Preferences** tab.
+1. Make the following settings:
+    - **Language** – Select the language preferred by this worker. This setting will also control the date format seen on the warehouse app. <!-- KFM: Does this really affect the date format? What about the next setting? -->
+    - **Date, time, and number format** – Select the language that will determine the date, time, and number formats seen on the warehouse app.
+    - **Time zone** – Select the time zone where the worker works. This will affect the time stamp for all registrations the worker makes using the app. <!-- KFM: Please confirm this step -->
+
+> [!NOTE]
+> In some cases, the warehouse app won't be able to find specific worker settings for establishing the language, date/time formats, and time zone. The following rules apply:
+>
+> - When the app is not connected to a Supply Chain Management environment (for example the first time the app is installed and is started) the device language is used. Changing the device language will change the language of the app. See the documentation for your device and/or operating system for details about how to make this settings for the local device.
+> - When the app is connected to a Supply Chain Management environment, but no preferences are set for the signed-in worker, the language, date/time formats, and time zone are selected based on the Warehouse Management mobile app user used to establish the connection to the Azure AD application. For more information, see [Create and configure a user account in Supply Chain Management](install-configure-warehouse-management-app.md#user-azure-ad) <!-- KFM: Is it really a mobile app user that we set there? I think it's an SCM user. -->
 
 
-It is important to note that the display language in the warehouse app is decided in two other occassions before the user signs in. 
-1. When the app is not connected to an SCM environment, for example the first time the app is installed and is started, the device language is used. Changing the device language will change the language of the app. You can change the language in the respective settings of your device, where to find it can differ depending on the operating system and version used. 
-2. When connecting to an SCM environment, the language is determined based on the Warehouse Managment mobile app user that is associated with the Azure AD application: https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app#create-and-configure-a-user-account-in-supply-chain-management
-
-
-## Set the time zone for each warehouse app user
-
-<!-- KFM: Description needed. -->
+<!-- KFM: Add a note about time zones, as requested by support? -->
