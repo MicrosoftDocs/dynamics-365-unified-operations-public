@@ -2039,8 +2039,12 @@
           href: procurement/purchase-order-approval-confirmation.md
         - name: Purchase order approval mobile workspace
           href: procurement/purchase-order-mobile-workspace.md
+        - name: Create and invoice an intercompany purchase order for internal use
+          href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+        - name: Check intercompany order price discrepancies
+          href: sales-marketing/intercompany-check-price-discrepancies.md
         - name: Record the receipt of goods on the purchase order
-          href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+          href: procurement/tasks/record-receipt-goods-purchase-order.md
       - name: Purchase order creation
         items:
         - name: Create purchase orders manually
@@ -2731,6 +2735,62 @@
           href: sales-marketing/tasks/mass-sales-quotations.md
         - name: Create and edit sales quotations
           href: sales-marketing/tasks/create-edit-sales-quotations.md
+      - name: Intercompany trade
+        items:
+        - name: Set up intercompany trade
+          items:
+          - name: Set up intercompany trade
+            href: sales-marketing/intercompany-trade-set-up.md
+          - name: Intercompany parameters
+            href: sales-marketing/intercompany-parameters.md
+          - name: Set up vendors, customers, and items for intercompany trade
+            href: sales-marketing/intercompany-set-up-vendors-customers-items.md
+          - name: Set up charges on intercompany orders
+            href: sales-marketing/intercompany-set-up-charges.md
+          - name: Set up parameters to post an intercompany order
+            href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
+        - name: Synchronize intercompany information
+          items:
+          - name: Synchronize intercompany prices and discounts
+            href: sales-marketing/intercompany-sync-prices-discounts.md
+          - name: Synchronize intercompany charges
+            href: sales-marketing/intercompany-sync-charges.md
+          - name: Synchronize intercompany customer information
+            href: sales-marketing/intercompany-synch-customer-information.md
+          - name: Synchronize intercompany disposition codes
+            href: sales-marketing/intercompany-synchronize-disposition-codes.md
+        - name: Intercompany sales orders and invoices
+          items:
+          - name: Creating intercompany purchase and sales orders in several companies
+            href: sales-marketing/intercompany-orders-in-several-companies.md
+          - name: Intercompany orders and return orders
+            href: sales-marketing/intercompany-orders-and-return-orders.md
+          - name: Create an intercompany sales order for internal use
+            href: sales-marketing/intercompany-sales-order-for-internal-use.md
+          - name: Create and invoice an intercompany sales order for an external customer
+            href: sales-marketing/intercompany-sales-order-for-external-customer.md
+          - name: Intercompany reservations
+            href: sales-marketing/intercompany-reservations.md
+          - name: Change or delete an original intercompany sales order
+            href: sales-marketing/intercompany-change-delete-original-sales-order.md
+          - name: Change intercompany orders
+            href: sales-marketing/intercompany-change-orders.md
+          - name: Intercompany batch and serial numbers
+            href: sales-marketing/intercompany-batch-serial-numbers.md
+          - name: Intercompany packing slips
+            href: sales-marketing/intercompany-packing-slips.md
+          - name: Register payments automatically for intercompany customer invoices
+            href: sales-marketing/intercompany-register-customer-payments-automatically.md
+        - name: Intercompany purchase orders
+          items:
+          - name: Create and invoice an intercompany purchase order for internal use
+            href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+          - name: Check intercompany order price discrepancies
+            href: sales-marketing/intercompany-check-price-discrepancies.md
+        - name: Intercompany currency conversions
+          href: sales-marketing/intercompany-currency-conversions.md
+        - name: Intercompany master scheduling
+          href: sales-marketing/intercompany-master-scheduling.md
       - name: Returns
         items:
         - name: Sales returns
