@@ -147,6 +147,8 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 | Brazil | Brazil South | 191.234.130.0/26 |
 | Canada | Canada Central | 20.151.60.0/26 |
 | Canada | Canada East | 52.155.27.128/26 |
+| China | China East 2 | 52.131.245.128/26 |
+| China | China North 2 | 52.130.157.64/26 |
 | Europe | North Europe | 52.155.160.192/26 |
 | Europe | West Europe | 20.61.88.128/26<br/>51.105.159.192/26 |
 | France | France Central | 51.138.205.48/28 |
