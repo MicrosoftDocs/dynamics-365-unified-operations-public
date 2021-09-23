@@ -39,9 +39,11 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to export a database fro
 To maintain the system that performs database export from LCS, a limit on the maximum bacpac size is being imposed. This limit is set at 50 GB for each bacpac exported. The reasons for this limit include: 
 
 - A centralized system is performing the exports for multiple customers in the same geographic region, and this system has constraints on disk space.  
-- Azure SQL neatly compresses the data in the bacpac format and in many cases, where customers exceed 50 GB, customizations or binary data drastically oversize the backup file.  
+- Azure SQL neatly compresses the data in the bacpac format and in many cases, where customers exceed 50 GB, customizations or binary data drastically oversize the backup file. 
 
-If you experience an export failure because the resulting bacpac is over 50 GB in size, try running the following SQL script against your sandbox database to identify the top 15 tables by size in megabytes.  Any tables that are for data entity staging (they will have "staging" at the end of the table name) can be truncated. Any tables that are storing binary or blob data (JSON/XML/binary) should either be truncated or the contents of that field should be deleted to free up space. Binary data cannot be compressed, so storing large volumes of data in the database itself will cause you to quickly reach the 50 GB limit.
+Follow the [cleanup routines](cleanuproutines.md) to reduce the size of the database.
+
+If the above clean up routines did not help to bring the bacpac to under 50 GB in size, try running the following SQL script against your sandbox database to identify the top 15 tables by size in megabytes.  Any tables that are for data entity staging (they will have "staging" at the end of the table name) can be truncated. Any tables that are storing binary or blob data (JSON/XML/binary) should either be truncated or the contents of that field should be deleted to free up space. Binary data cannot be compressed, so storing large volumes of data in the database itself will cause you to quickly reach the 50 GB limit.
 
 ```sql
 USE [YourDBName] -- replace your dbname
