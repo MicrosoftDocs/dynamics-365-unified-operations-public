@@ -31,7 +31,7 @@ If you do not work with direct delivery, you must manually generate the packing 
 
 If you work with direct delivery, a packing slip can be printed automatically for the intercompany purchase order and the original sales order when you post the packing slip on the intercompany sales order.
 
-To print packing slips automatically, in the  **Intercompany**  page for purchase orders, select both of the  **Print packing slip automatically**  fields.
+To print packing slips automatically, on the **Intercompany** page for purchase orders, select both of the **Print packing slip automatically** fields.
 
 If you update the packing slip on the intercompany sales order, the changes are reflected automatically on the intercompany purchase order and the original sales order.
 

@@ -88,7 +88,7 @@ The order header information is controlled from the original sales order to the 
 
 The following parameters should be selected:
 
-In Legal entity A, in the **Intercompany** page for vendors, select **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
+In Legal entity A, on the **Intercompany** page for vendors, select **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
 
 - **Print packing slip automatically**
 - **Post invoice automatically**
@@ -110,7 +110,7 @@ In the **Intercompany purchase order <-> Intercompany sales order** field group,
 - **Batch number**
 - **Serial number**
 
-In Legal entity B, in the **Intercompany** page for customers, select **Sales order policies**. Select the following fields in the **Intercompany sales order creation** field group:
+In Legal entity B, on the **Intercompany** page for customers, select **Sales order policies**. Select the following fields in the **Intercompany sales order creation** field group:
 
 - **Sales order numbering** : **Company + original number**
 - **Allow summary update of documents for original customer**
@@ -125,7 +125,7 @@ In the **Intercompany customer invoice posting** field group, select the followi
 - **Unit price equal to cost price**
 - **Initiate original customer invoice posting**
 
-In Legal entity B, in the **Intercompany** page for vendors, select **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
+In Legal entity B, on the **Intercompany** page for vendors, select **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
 
 - **Print packing slip automatically**
 - **Post invoice automatically**
@@ -148,7 +148,7 @@ In the **Intercompany purchase order <-> Intercompany sales order** field group,
 - **Batch number**
 - **Serial number**
 
-In Legal entity C, in the **Intercompany** page for customers, select **Sales order policies**. Select the following fields in the **Intercompany sales order creation** field group:
+In Legal entity C, on the **Intercompany** page for customers, select **Sales order policies**. Select the following fields in the **Intercompany sales order creation** field group:
 
 - **Sales order numbering** : **Number sequence code**
 - **Allow summary update of documents for original customer**

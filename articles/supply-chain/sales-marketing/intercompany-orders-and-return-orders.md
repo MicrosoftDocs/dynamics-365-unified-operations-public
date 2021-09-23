@@ -21,7 +21,7 @@ This topic describes how intercompany purchase orders, sales orders, return orde
 
 ## About intercompany orders
 
-When you create an intercompany sales order, Microsoft Dynamics 365 Supply Chain Management  creates a corresponding purchase order automatically. Similarly, creating an intercompany purchase order prompts the automatic creation of a corresponding intercompany sales order.
+When you create an intercompany sales order, Microsoft Dynamics 365 Supply Chain Management creates a corresponding purchase order automatically. Similarly, creating an intercompany purchase order prompts the automatic creation of a corresponding intercompany sales order.
 
 This is true for two-legged orders (transactions between two related companies) and for most three-legged companies (when an intercompany transaction originates with a sales order for an external customer).
 
@@ -37,7 +37,7 @@ You have two related companies. Company A is a sales subsidiary, and Company B i
 
 You can return intercompany items much like ordinary returns. However, with intercompany items, the return order from the external customer creates an intercompany purchase order. This, in turn, leads to the automatic creation of an intercompany sales return order. You can also return an intercompany item without an external customer return order.
 
-Intercompany return orders, similar to regular return orders, are initiated in the  **Create return order**  page.
+Intercompany return orders, similar to regular return orders, are initiated on the **Create return order** page.
 
 In Microsoft Dynamics 365 Supply Chain Management, intercompany sales and purchase agreements are automatically updated to reflect a returned item. The sales or purchase agreement commitment for that item is automatically adjusted to reflect the change in the quantity or the amount when an item is returned.
 

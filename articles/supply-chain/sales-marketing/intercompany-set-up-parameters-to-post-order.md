@@ -24,13 +24,13 @@ When an intercompany customer invoice is posted, you can set it up to post both 
 
 You must set up the following parameters:
 
-1. Go to  **Sales and marketing  \> Sales orders \> All sales orders**. Select sales order that you want to work with.
-1. On the sales order, on the Action Pane, select **Header view**  and then select the  **Intercompany settings**  FastTab and open it.
-1. Go to the Action Pane,  on the  **Sales order**  tab and then select **Edit**.
-1. Go back to the  **Intercompany settings**  FastTab and select  **Direct delivery**  to enable direct delivery throughout the intercompany chain (all orders).
-1. Select  **Save**  to save the sales order with the new setting. Then select  **Close**  to close the sales order.
-1. Go to  **Procurement and sourcing \>  Vendors  \> All vendors**. On the  **General**  tab, select  **Intercompany**.
-1. In the  **Intercompany**  page, select the  **Purchase order policies**  link. In the **Intercompany purchase order (direct delivery)** field group, select  **Post invoice automatically**  and remove the check mark from the  **Print invoice automatically**  field.
-1. In the **Original sales order (direct delivery)** field group, select the  **Post invoice automatically**  field and the  **Print invoice automatically**  field.
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**. Select sales order that you want to work with.
+1. On the sales order, on the Action Pane, select **Header view** and then select the **Intercompany settings** FastTab and open it.
+1. Go to the Action Pane, on the **Sales order** tab and then select **Edit**.
+1. Go back to the **Intercompany settings** FastTab and select **Direct delivery** to enable direct delivery throughout the intercompany chain (all orders).
+1. Select **Save** to save the sales order with the new setting. Then select **Close** to close the sales order.
+1. Go to **Procurement and sourcing \> Vendors \> All vendors**. On the **General** tab, select **Intercompany**.
+1. On the **Intercompany** page, select the **Purchase order policies** link. In the **Intercompany purchase order (direct delivery)** field group, select **Post invoice automatically** and remove the check mark from the **Print invoice automatically** field.
+1. In the **Original sales order (direct delivery)** field group, select the **Post invoice automatically** field and the **Print invoice automatically** field.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.22
 When the currency code on the original sales order and the intercompany purchase order differ, the following fields are currency-converted if synchronization is enabled:
 
 - **Unit price**
-- **Sales charges**  or  **Charges on purchases**
+- **Sales charges** or **Charges on purchases**
 - **Discount**
 - **Multiline discount**
 
@@ -29,7 +29,7 @@ These fields are then synchronized with the intercompany sales order line.
 However, because the currency on the intercompany purchase order and the intercompany sales order is always synchronized, the following fields are synchronized without using currency conversion:
 
 - **Unit price**
-- **Sales charges**  or  **Charges on purchases**
+- **Sales charges** or **Charges on purchases**
 - **Discount**
 - **Discount percent**
 - **Multiline discount**
