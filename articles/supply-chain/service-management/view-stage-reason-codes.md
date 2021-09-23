@@ -4,11 +4,9 @@
 title: View stage reason codes 
 description: View and modify the list of stage reasons for a service order.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -49,3 +47,6 @@ View and modify the list of stage reasons for a service order. Use stage reasons
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

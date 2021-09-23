@@ -3,11 +3,9 @@
 title: Receipt of deferrals 
 description: This topic explains how to create and post receipt transactions for deferrals that were manually created. It also explains how to reverse receipt transactions.
 author: anasyash
-manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -44,7 +42,7 @@ You use the **Journal voucher** page to create a receipt transaction for deferra
 
     A transaction of the **Receipt** type is created for the deferral. This transaction has the specified receipt date.
 
-    ![Journal voucher page](media/rus-deferral-transactions-01.png)
+    ![Journal voucher page.](media/rus-deferral-transactions-01.png)
 
 11. On the Action Pane, select **Validate** \> **Validate** and then **Post** \> **Post** to validate and post the journal.
 12. Go to **General ledger** \> **Deferrals** \> **Deferrals** to view the deferrals that are generated. To view the transaction details on the **Deferrals transactions** page, on the Action Pane, select **Deferrals models**, and then select **Transactions**.
@@ -62,3 +60,6 @@ Deferrals that are created after the fixed asset is disposed of are reversed whe
 5. In the **Date of storno** field, select the reversal date. All transactions that are created on this date are reversed.
 6. Select the **By all models** check box to reverse transactions that are created by using the tax value model and the base value model.
 7. Select **OK** to reverse the transaction.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

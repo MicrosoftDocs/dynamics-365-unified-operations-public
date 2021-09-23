@@ -4,11 +4,9 @@
 title: Script injectors
 description: This topic covers script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 The Dynamics 365 Commerce module library provides two prebuilt script injector modules: **external script** and **inline script**. You can add these modules to a page or page template to inject inline or external scripts into the HTML head, body begin, or body end of a page as needed. For example, you can add a script for integration with third-party analytics, or other service scripts.
 
 ## External script module
@@ -45,13 +41,13 @@ The external script module includes the **execute script asynchronously** and **
 
 The following illustration shows an external script injector module that is being configured on a page template. The **Script source** property box is where you add the URL that points to the script source code that will be injected into the HTML for the rendered page.
 
-![External script module properties in site builder](media/script-injector.png)
+![External script module properties in site builder.](media/script-injector.png)
 
 ## Inline script module
 
 The inline script module allows you to add inline JavaScript code directly to a page template or page. After the module is added using Commerce site builder, the script can be pasted into the **Inline script** property box, as highlighted in the following illustration. 
 
-![Inline script module properties in site builder](media/inline-script-injector.png)
+![Inline script module properties in site builder.](media/inline-script-injector.png)
 
 > [!NOTE]
 > When adding script to the **Inline script** property box, you do not need to add the outer **\<script\>** tags, just the inline JavaScript code.
@@ -132,9 +128,7 @@ export default (props: IMyScriptInjectorViewProps) => {
     const scriptContents = `window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', 'UA-XXXXX-Y', 'auto');ga('send', 'pageview')`;
     return (
         <HtmlHeadInclude>
-            <script data-load-point='headStart'>
-               {scriptContents}
-            </script>
+            <script data-load-point='headStart' dangerouslySetInnerHTML={{ __html: scriptContents}} />
             <script data-load-point='headStart' async src={props.config.scriptSource} />
         </HtmlHeadInclude>
     );
@@ -142,7 +136,7 @@ export default (props: IMyScriptInjectorViewProps) => {
 ```
 
 > [!NOTE]
-> Inline script content should be saved as a string and then inserted into the script, and the **data-load-point** attribute must be specified on script tags. This attribute controls where the script tag should be placed. Possible values include **headStart**, **headEnd**, **bodyStart**, and **bodyEnd**.
+> Inline script content should be saved as a string and then inserted into the script using the React **dangerouslySetInnerHTML** attribute (to avoid escaping special characters), and the **data-load-point** attribute must be specified on script tags. This attribute controls where the script tag should be placed. Possible values include **headStart**, **headEnd**, **bodyStart**, and **bodyEnd**.
 
 The **HtmlHeadInclude** component can also be used to insert **\<title\>**, **\<meta\>**, **\<link\>**, and **\<style\>** tags into the head of an HTML document. Unlike scripts, these elements do not need a **data-load-point** attribute as they will always be placed in the head.
 
@@ -151,3 +145,6 @@ After a custom script injector module is deployed to a Dynamics 365 Commerce env
 ## Additional resources
 
 [Online channel extensibility overview](overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

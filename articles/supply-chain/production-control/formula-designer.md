@@ -4,11 +4,9 @@
 title: Formula designer
 description: This topic explains how to use the formula designer to analyze and maintain formulas in a tree view.
 author: cvocph 
-manager: tfehr
 ms.date: 06/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -124,3 +122,6 @@ Click **Setup** to customize the information that is shown in the tree view of t
 |     BOM     | Use the check boxes to select the criteria that are shown in the tree structure. The formula designer shows the selected criteria at the bottom of both tabs. |
 |    Route    |                                           Use the check boxes to select the criteria that are shown for the routes.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

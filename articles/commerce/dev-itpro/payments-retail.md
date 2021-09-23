@@ -4,11 +4,9 @@
 title: Payments FAQ
 description: This topic describes the payment options that are available in Dynamics 365 Commerce.
 author: athinesh99
-manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-retail
 ms.technology:
 
 # optional metadata
@@ -49,8 +47,8 @@ ms.dyn365.ops.version: Version 1611
 
 ## Which payment providers are supported and in what regions?
 
-- Adyen is supported for card present and card not present transactions. For a list of supported regions, visit the [Dynamics 365 Payment Connector for Adyen overview page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3).
-- PayPal is supported for online purchases. For a list of supported regions, visit the [Dynamics 365 Payment Connector for PayPal overview page](https://docs.microsoft.com/dynamics365/commerce/paypal).
+- Adyen is supported for card present and card not present transactions. For a list of supported regions, visit the [Dynamics 365 Payment Connector for Adyen overview page](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3).
+- PayPal is supported for online purchases. For a list of supported regions, visit the [Dynamics 365 Payment Connector for PayPal overview page](../paypal.md).
 - The **TestConnector** isn't supported for user acceptance testing (UAT) or for production (prod). The **TestConnector** is for sandbox and development use only, and is for sample use only. 
 - Mastercard Simplify is no longer supported for new customers.
 
@@ -66,7 +64,7 @@ Yes, but you must connect them using customization.
 
 ## What is the Service level agreement (SLA) for out-of-box payment connectors like Adyen?
 
-For the Adyen connector, refer to the Adyen connector [overview page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) if the issue is related to set up. For other setup or functional issues with the connector itself, create a support request with Microsoft. If the issue is originating from the device itself or Adyen's processing service, contact Adyen support at support-dynamics365@adyen.com.
+For the Adyen connector, refer to the Adyen connector [overview page](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) if the issue is related to set up. For other setup or functional issues with the connector itself, create a support request with Microsoft. If the issue is originating from the device itself or Adyen's processing service, contact Adyen support at support-dynamics365@adyen.com.
 
 ## If a supported payment provider issues an update, will Microsoft automatically update the payment connector or do I need to work with the payment provider to get the updated payment connector?
 
@@ -78,3 +76,6 @@ If a payment connector update is issued by the payment connector provider, the u
 - [Deploy payment connectors](deploy-payment-connector.md)
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

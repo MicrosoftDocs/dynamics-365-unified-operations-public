@@ -1,26 +1,12 @@
 ---
-# required metadata
 title: ListMetadata type
 description: Metadata for list control.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
 ---
 
 # ListMetadata type
@@ -300,3 +286,6 @@ OnRowSelect: function(row: [Row](view-model-control-list-ilist-irow.md)): void (
 An event that is triggered when a row is selected.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

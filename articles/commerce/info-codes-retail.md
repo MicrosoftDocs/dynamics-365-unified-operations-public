@@ -4,11 +4,9 @@
 title: Info codes and info code groups
 description: This article provides an overview about info codes, info code groups, and how to use them.
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -60,3 +58,6 @@ You can link info codes so that when one info code is triggered, another info co
 **Example 2: Link info codes to info code groups**
 
 When you sell certain products, for example mobile devices, you always want to collect a specific set of information, such as telephone number, mobile equipment identifier (MEID), and serial number. However, you also want to collect different information for a tablet versus a mobile phone. You can set up an info code group that includes prompts for the telephone number, MEID, and the serial number, and then link the info code group to an individual info code. When the product-specific info code is triggered, the info code group can be triggered next to enable you to collect the common data without having to define multiple sets of linked info codes for each device.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

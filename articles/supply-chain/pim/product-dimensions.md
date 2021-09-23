@@ -4,11 +4,9 @@
 title: Product dimensions
 description: There are five product dimensions - color, configuration, size, style, and version. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
 author: t-benebo 
-manager: tfehr
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -127,7 +125,7 @@ Before you can use the version dimension, it must be turned on in your system. T
 
 ### Areas where the version dimension isn't supported
 
-The following areas don't support the version dimension, because the introduction of this dimension would cause breaking changes:
+The following areas don't support the version dimension (you can still use these areas but you won't be able to add versioned products (products where the version dimension is used) to them). For example, you can't add a versioned item to a vendor catalog. This is because adding products with the version dimension to these areas would cause breaking changes.
 
 - Cost object monthly statement
 - Cost object statement cache
@@ -151,3 +149,6 @@ The version dimension works like the other product dimensions. However, because 
 
 > [!IMPORTANT]
 > If you turn on and use the version dimension, some solutions that reference the inventory dimensions might stop working as expected. To confirm and fix these issues, contact the independent software vendor (ISV) for your affected solutions. For more information, see [Enable the version dimension](#enable-version-dim).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

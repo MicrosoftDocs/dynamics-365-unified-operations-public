@@ -4,11 +4,9 @@
 title: FactBox form patterns
 description: This topic provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
 author: jasongre
-manager: AnnBe
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
 
-Usage
------
+## Usage
 
 In general, FactBoxes are used to provide “related information” for a record. They help guarantee that the user doesn't have to open additional forms to get important information, such as totals, balances, overdue orders, and email addresses. The Factbox Grid pattern should be used when there is a child collection (potential for multiple rows) of related information. Two patterns are described in this document:
 
@@ -49,11 +46,11 @@ In general, FactBoxes are used to provide “related information” for a record
 ## Wireframe
 ### Form Part FactBox Grid
 
-[![Illustration of Form Part FactBox grid](./media/factbox1.png)](./media/factbox1.png)
+[![Illustration of Form Part FactBox grid.](./media/factbox1.png)](./media/factbox1.png)
 
 ### Form Part FactBox Card
 
-[![Illustration of Form Part FactBox card](./media/factbox2.png)](./media/factbox2.png)
+[![Illustration of Form Part FactBox card.](./media/factbox2.png)](./media/factbox2.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -120,13 +117,13 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **CustTable** &gt; **ContactsInfoPart** 
 
-[![Example of Form Part FactBox grid](./media/factbox3.png)](./media/factbox3.png)
+[![Example of Form Part FactBox grid.](./media/factbox3.png)](./media/factbox3.png)
 
 ### Form Part FactBox Card
 
 Form: **CustTable** &gt; **CustStatisticsStatistics** 
 
-[![Example of Form Part FactBox card](./media/factbox4.png)](./media/factbox4.png)
+[![Example of Form Part FactBox card.](./media/factbox4.png)](./media/factbox4.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -157,10 +154,13 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [AX 2012 MSDN List Page Guidelines (including FactBoxes)](https://msdn.microsoft.com/library/gg853328.aspx)
+-   [AX 2012 MSDN List Page Guidelines (including FactBoxes)](/dynamicsax-2012/developer/list-page-user-experience-guidelines)
 
 #### AX 2012 example
 
 **CustTable** &gt; **ContactsInfoPart** 
 
-[![Example of FactBox](./media/factbox5.png)](./media/factbox5.png)
+[![Example of FactBox.](./media/factbox5.png)](./media/factbox5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

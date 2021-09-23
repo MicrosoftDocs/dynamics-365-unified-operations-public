@@ -4,11 +4,9 @@
 title: Videos
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
 author: sericks007
-manager: AnnBe
-ms.date: 12/01/2020
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,7 +40,6 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ### Data integration
 
-- [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg)
 - [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### Data management
@@ -92,12 +89,12 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ## Videos for Dynamics 365 Finance
 
+### Business document management
+- [Create a new business document using Business Document Management](https://www.youtube.com/watch?v=gAIYl-mM_pw)
+
 ### Customize the app
 - [Add custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Embed Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
-
-### Expenses
-- [Expense experience](https://youtu.be/Ocy-MsTvEE0)
 
 ### Financial reporting
 - [Find the version of Report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
@@ -123,6 +120,9 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 
 ## Videos for Dynamics 365 Supply Chain Management
+
+### Business document management
+- [Create a new business document using Business Document Management](https://www.youtube.com/watch?v=gAIYl-mM_pw)
 
 ### Costs
 - [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
@@ -173,3 +173,6 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 [FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: License codes and configuration keys report
 description: This topic points you to a report that lists the license codes and configuration keys available in Finance and Operations.
 author: sericks007
-manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -40,7 +38,10 @@ When you purchase Finance and Operations, all functionality is included. By defa
 When a license code or configuration key is disabled, the associated module or feature is removed from the user interface. Large sets of functionality, such as modules, are controlled by license codes. Many license codes, in turn, enable configuration keys that allow you to enable and disable functionality at a more detailed level.
 
 ## To view the report
-The [License codes and configuration keys report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each configuration key that is available. The report also indicates the license code and menu items associated with each configuration key. For more information, see [Find information about standard data entities](../data-entities/data-entities-report.md).
+The **License codes and configuration keys report**, included with the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61), lists each configuration key that is available. The report also indicates the license code and menu items associated with each configuration key. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

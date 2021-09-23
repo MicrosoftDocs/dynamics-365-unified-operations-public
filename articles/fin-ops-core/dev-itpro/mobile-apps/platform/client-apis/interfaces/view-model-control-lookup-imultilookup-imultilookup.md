@@ -1,26 +1,12 @@
 ---
-# required metadata
 title: MultiLookup type
 description: Multi-Lookup control type. Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
 ---
 
 # MultiLookup type
@@ -232,3 +218,6 @@ An event that is triggered when the input control's data changes.
 > Inherited from [InputControl](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md).[onDataChanged](view-model-control-basecontrol-iinputcontrol-iinputcontrol.md#ondatachanged)
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

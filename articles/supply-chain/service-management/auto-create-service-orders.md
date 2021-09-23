@@ -4,11 +4,9 @@
 title: Automatically create service orders  
 description: You can generate service orders that are based on a service agreement for the valid period of the service agreement.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -63,3 +61,6 @@ The service agreement lasts from January 1, 2012 until December 31, 2012. Two se
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

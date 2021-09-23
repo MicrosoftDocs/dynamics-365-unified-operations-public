@@ -4,11 +4,9 @@
 title: Identify and resolve conflicts in segregation of duties
 description: This topic explains how to identify and resolve conflicts in segregation of duties.
 author: peakerbl
-manager: AnnBe 
 ms.date: 01/04/2021
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -62,3 +60,6 @@ When you assign users to roles, the rules for segregation of duties are automati
 
 > [!NOTE]
 > If several conflicts are listed for the same user, select the user record and evaluate assigned roles on the **Users** page. To avoid this conflict, validate each rule after it's added or modified.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

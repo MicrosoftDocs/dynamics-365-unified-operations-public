@@ -4,11 +4,9 @@
 title: Schedule a production order
 description: This procedure shows how to schedule a production order. 
 author: johanhoffmann
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -56,3 +54,6 @@ This procedure shows how to schedule a production order. The demo data company u
 6. Close the page.
 7. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

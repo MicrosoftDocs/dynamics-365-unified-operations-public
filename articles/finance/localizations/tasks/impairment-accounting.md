@@ -4,11 +4,9 @@
 title: Setup impairment accounting common parameters and posting profile
 description: Use this task to learn how to define impairment accounting common parameters and posting profiles. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 02/28/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -62,3 +60,6 @@ This procedure uses the JPMF demo company data.
 9. In the Offset account field, specify the desired values.
 10. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

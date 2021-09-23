@@ -1,31 +1,31 @@
 ---
 # required metadata
-title: Set Benefits management and Employee self-service parameters for all companies
-description: Configure parameters for Benefits management and Employee self-service in Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-manager: tfehr
-ms.date: 12/07/2020
+title: Set Benefits management and Employee self service parameters for all companies
+description: Configure parameters for Benefits management and Employee self service in Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 # optional metadata
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Set Benefits management and Employee self-service parameters for all companies
+# Set Benefits management and Employee self service parameters for all companies
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Before you can set up benefit plans in Microsoft Dynamics 365 Human Resources, you must configure Benefits management parameters. These parameters set default values, reason codes, and other options. 
 
@@ -54,7 +54,7 @@ Before you can set up benefit plans in Microsoft Dynamics 365 Human Resources, y
 
 3. Select **Save**.
 
-## Configure Employee self-service parameters
+## Configure Employee self service parameters
 
 1. In the **Benefits management** workspace, under **Setup**, select **Human Resources Parameters**.
 
@@ -62,9 +62,12 @@ Before you can set up benefit plans in Microsoft Dynamics 365 Human Resources, y
 
    | Field | Description |
    | --- | --- |
-   | **Benefit verification** | The verification text to use during self-service benefits checkout. |
+   | **Benefit verification** | The verification text to use during self service benefits checkout. |
    | **Auto select designees** | Specifies whether to automatically select dependents and beneficiaries based on their eligibility for plan options. |
 
 3. Select **Save**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

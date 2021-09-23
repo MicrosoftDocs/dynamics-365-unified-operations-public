@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 10 (August 2017)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 10. This version was released in August 2017.
 author: tonyafehr
-manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -55,3 +53,6 @@ This feature will make users more productive when using the Excel add-in to crea
 ## Skype support for Human Resources and Retail
 
 Skype integration is now enabled in all applications that have been developed using the cloud platform. While Skype integration has been enabled in the Finance and Operations apps for some time, this feature is also available in other applications, including Human Resources and Retail.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

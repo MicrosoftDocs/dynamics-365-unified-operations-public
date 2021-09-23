@@ -3,12 +3,10 @@
 
 title: Reprint and void wave labels
 description: This topic explains how to void and reprint existing wave labels.
-author: GarmMSFT
-manager: PJacobse
+author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
 # ms.prod:
-ms.service: dynamics-ax-applications
 # ms.technology:
 
 # optional metadata
@@ -17,7 +15,7 @@ ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWa
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: PJacobse
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
 # ms.custom:
 ms.search.region: Global
@@ -225,3 +223,9 @@ Work exceptions control the behavior of short picking. Follow these steps to set
 1. Select **Short pick**.
 1. Select the work exception code that you created for this scenario.
 1. If you selected the correct exception, the **Void and reprint** check box should be available. Select this box and confirm. When confirmed, the label roll sequence identified by the **Label build ID** field is recalculated based on the changed work line quantity. It's then reprinted on the specified printer.
+
+## Additional resources
+
+- [Wave label printing](configure-wave-label-printing.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

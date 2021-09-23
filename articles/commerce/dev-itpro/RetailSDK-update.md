@@ -4,11 +4,9 @@
 title: Upgrade the Retail channel extension to the latest Retail SDK
 description: This topic explains how to upgrade the commerce channel extension from earlier releases to the latest update of the Retail SDK. 
 author: mugunthanm
-manager: AnnBe
 ms.date: 11/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -167,3 +165,6 @@ In 7.0, you should have completed most of the customizations inline. To upgrade 
 
 ## Generate a deployable package for validation
 Complete the steps in the topic, [Create deployable packages](retail-sdk/retail-sdk-packaging.md), to generate the deployable package for validation.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

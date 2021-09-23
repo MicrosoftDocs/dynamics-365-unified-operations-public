@@ -1,26 +1,12 @@
 ---
-# required metadata
 title: PageMetadata type
 description: PageMetadata type
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
 ---
 
 # PageMetadata type
@@ -152,3 +138,6 @@ OnTaskSubmitting: function(taskOptions: any): any (optional)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

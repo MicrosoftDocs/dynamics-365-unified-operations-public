@@ -4,11 +4,9 @@
 title: Test data actions with mocks
 description: This topic describes how to test data actions with mock data.
 author: samjarawan
-manager: annbe
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to test data actions with mock data.
 
-## Overview
-
 By mocking data actions in Microsoft Dynamics 365 Commerce, you can replace the output of a data action with the data that is specified in the actionmock.json file that has been loaded. An action mock is useful if you want to test your module without invoking the actual action. You will have to use this approach if you haven't configured your Commerce server (**MSDyn365Commerce_BASEURL** property) in the .env file. For more information about .env files, see [Configure a development environment (.env) file](configure-env-file.md).
 
 ## Action mock structure
@@ -43,7 +39,7 @@ To create a data action mock, create a new file under the **/src/module/&lt;MODU
 
 ```/src/modules/product-feature/mocks/myModuleMock.actionmock.json```
 
-After the file is created, you can simulate the data action return object inside the file by specifying the **CasheObjectType** and **CacheKey** values that are defined in the data action. The **CacheKey** value can be set to "**&#42;**" to accept any cache key. For more information, see [Data actions](data-actions.md).
+After the file is created, you can simulate the data action return object inside the file by specifying the **CacheObjectType** and **CacheKey** values that are defined in the data action. The **CacheKey** value can be set to "**&#42;**" to accept any cache key. For more information, see [Data actions](data-actions.md).
 
 The following example shows how the **&lt;MODULE\_MOCK\_NAME&gt;.actionmock.json** file should be structured.
 
@@ -163,3 +159,6 @@ If no action mock file name is specified, the package name is used to search for
 [Core data actions](core-data-actions.md)
 
 [Call Retail Server APIs](call-retail-server-apis.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

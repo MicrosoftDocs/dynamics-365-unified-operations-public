@@ -4,11 +4,9 @@
 title: Revenue recognition bundles
 description: This topic describes the bundle functionality that is included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item and multiple component items.
 author: kweekley
-manager: aolson
 ms.date: 01/04/2021
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -34,7 +32,7 @@ ms.dyn365.ops.version: 10.0.7
 This topic describes the bundle functionality that is included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item and multiple component items. The parent item is entered on a sales order, so that order entry is more efficient. However, it's then exploded into the component items. Internal documents, such as the packing slip, will list the component items. However, external documents will show only the parent item.
 
 > [!NOTE]
-> Microsoft Dynamics 365 Commerce  channels, such as online, point of sale (POS), and call centers, don't support revenue recognition (including the bundle functionality). Items that are configured to use revenue recognition should not be added to orders or transactions that are created in Commerce channels.
+> Microsoft Dynamics 365 Commerce  channels, such as online, point of sale (POS), and call centers, don't support revenue recognition (including the bundle functionality). This also includes the Prospect to cash solution for Dynamics 365 Supply Chain Management and Dynamics 365 Sales. Items that are configured to use revenue recognition should not be added to orders or transactions that are created in Commerce channels or in the Prospect to cash solution.
 
 To set up bundles, you must enter the configuration keys for revenue recognition. However, you can use bundles even if revenue recognition isn't set up. Likewise, you can use revenue recognition if bundles aren't set up. If revenue recognition is set up, the component items determine the revenue price and the revenue schedule that is used for revenue recognition or deferral when a sales order is invoiced.
 
@@ -66,15 +64,15 @@ The following base sales prices are defined for the component items:
 
 A sales order is entered for customer US-004, Cave Wholesales. The only line that is entered is for the Laptop bundle item. The default unit price for the parent line can be taken from numerous places, such as the trade agreement or the base sales price. In this example, $2,300 was manually entered as the unit price.
 
-[![Laptop bundle item on a sales order](./media/bundle-01.png)](./media/bundle-01.png)
+[![Laptop bundle item on a sales order.](./media/bundle-01.png)](./media/bundle-01.png)
 
 Because the sales order contains a bundle, it must be confirmed. The confirmation dialog box shows the components of the bundle.
 
-[![Confirm sales order dialog box that shows the component items](./media/bundle-02.png)](./media/bundle-02.png)
+[![Confirm sales order dialog box that shows the component items.](./media/bundle-02.png)](./media/bundle-02.png)
 
 However, the printed confirmation report will show only the parent item of the bundle, because that report is the external-facing document for the customer.
 
-[![Confirmation report that shows only the parent item](./media/bundle-03.png)](./media/bundle-03.png)
+[![Confirmation report that shows only the parent item.](./media/bundle-03.png)](./media/bundle-03.png)
 
 After the sales order is confirmed, the parent item is still shown on the sales order, but its status has been changed to **Canceled**. Additionally, the net amount is tracked in the **Bundle net amount** field. This amount is required to print the invoice, because the invoice shows the parent item, not the component items.
 
@@ -92,7 +90,7 @@ The sum of the components must equal $2,300, and it does ($1,713.73 + $450.98 + 
 
 If changes are required for all component items, the parent item can be removed. In this case, the component items are also removed. The parent item can then be added again, and the required edits can be completed before the sales order is confirmed.
 
-[![Bundle item that includes changes to the component items](./media/bundle-04.png)](./media/bundle-04.png)
+[![Bundle item that includes changes to the component items.](./media/bundle-04.png)](./media/bundle-04.png)
 
 When the sales order is picked and packed, the documents will include only the components of the bundle. The packing slip and invoice must include a full bundle. Otherwise, they can't be posted. For example, the dialog box shows three component items. If you try to delete one of them, you receive an error message that states that all products in the bundle must be shipped before they can be invoiced.
 
@@ -102,16 +100,19 @@ A partial amount can be shipped and invoiced only if the quantity is reduced for
 
 The final step is to invoice the sales order. During invoicing, the invoice dialog box will show the component items.
 
-[![Invoice dialog box that shows the component items](./media/bundle-06.png)](./media/bundle-06.png)
+[![Invoice dialog box that shows the component items.](./media/bundle-06.png)](./media/bundle-06.png)
 
 However, the printed invoice will show only the parent item.
  
-[![Printed invoice that shows only the parent item](./media/bundle-07.png)](./media/bundle-07.png)
+[![Printed invoice that shows only the parent item.](./media/bundle-07.png)](./media/bundle-07.png)
 
 The invoice journal that is created after posting occurs doesn't include the parent item from the bundle, because that item has a status of **Canceled**.
 
-[![Invoice journal that doesn't include the parent item](./media/bundle-08.png)](./media/bundle-08.png)
+[![Invoice journal that doesn't include the parent item.](./media/bundle-08.png)](./media/bundle-08.png)
 
 It's important that the invoice journal not include the parent item from the bundle, because any processes that are performed after the invoice is posted are based on that invoice journal. For example, if you create a credit note from the **Sell** tab on the Action Pane, the credit note that is created will include the component items but not the parent item.
 
-[![Credit note that shows the component items but not the parent item](./media/bundle-09.png)](./media/bundle-09.png)
+[![Credit note that shows the component items but not the parent item.](./media/bundle-09.png)](./media/bundle-09.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

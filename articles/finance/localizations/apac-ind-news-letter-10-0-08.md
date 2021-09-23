@@ -4,11 +4,9 @@
 title: What's new or changed for India GST in 10.0.08 (February 2020)
 description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.08.
 author: prabhatb
-manager: Annbe
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,17 +36,17 @@ This topic includes a summary of the new features and critical bug fixes release
 In India, the invoice received from the supplier may have different tax rates from the purchase order, which is supported by the tax rate type functionality.
  
 You can enable the feature in the **Feature management** workspace. The name of the feature is **(India) Enable changing tax rate type in purchase invoice**.
- ![Featue management, (India) Enable changing tax rate type in purchase invoice](media/GST-changing-tax-rate-type-1-10-0-08.png )
+ ![Featue management, (India) Enable changing tax rate type in purchase invoice.](media/GST-changing-tax-rate-type-1-10-0-08.png )
  
 With the feature enabled, you can update the tax rate type in the tax information for a purchase invoice, so you can apply a different tax rate if needed.
 
-![Tax rate type information](media/GST-tax-rate-type-tax-information-2-10-0-08.png)
+![Tax rate type information.](media/GST-tax-rate-type-tax-information-2-10-0-08.png)
 
 ### Data consistency check
 
 You can verify and fix a data inconsistency issue regarding GTE. To do this, go to **System administration** > **Periodic tasks** > **Database** > **Consistency check**. We recommend that you run this consistency check in your environment.
 
-![Consistency check dialog page](media/GST-tax-rate-type-tax-information-3-10-0-08.PNG)
+![Consistency check dialog page.](media/GST-tax-rate-type-tax-information-3-10-0-08.PNG)
 
 ### GST number sequence issue
 A posting failure can occur due to missing or incorrect setup of the GST number sequence. To resolve the issue and set up the GST number sequence correctly, complete the procedures in the [Define GSTINs and reference number sequences](apac-ind-gst-define-gstin-numbers-number-sequences.md) and [Set up GST reference number groups](apac-ind-gst-reference-groups.md) topics.
@@ -74,3 +72,6 @@ A posting failure can occur due to missing or incorrect setup of the GST number 
 -	The GTE set off hierarchy version is not the latest version. 
 -	There is an issue with the journal voucher description transaction for GST transactions.
 -	Per government notification, there is a change in the hierarchy of the tax settlement components.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create Commerce payment packaging for Finance and Operations deployment
 description: This topic explains how to package a payment connector for Finance and Operations deployment in Microsoft Dynamics 365 Commerce.
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -52,7 +50,7 @@ To create a payment package that you can deploy, follow the steps in the next se
 
     The model name must be prefixed with (that is, start with) **RetailPaymentConnectors**. After this prefix, add information about the custom model name. For example, the model that you create might be named **RetailPaymentConnectorsCustomConnector**. Only model names that begin with the **RetailPaymentConnectors** prefix will be loaded in the Commerce payment connector options.
 
-    ![Add parameters page in the Create model wizard](./media/CreateModel.png)
+    ![Add parameters page in the Create model wizard.](./media/CreateModel.png)
 
 3. Select the **Create new package** option, and then select **Next**.
 4. Select the required referenced package, and then select **Next**.
@@ -60,9 +58,14 @@ To create a payment package that you can deploy, follow the steps in the next se
 6. In Solution Explorer, select the project, right-click **References**, and then select **Add Reference**.
 7. Add all the payment connector assemblies and their dependencies to the project as references.
 
-    ![Add Reference dialog box](./media/Reference.png)
+    ![Add Reference dialog box.](./media/Reference.png)
+    
+[!NOTE]
+> All payment connector dll’s must be portable, having portable and non-portable payment connector dll’s will cause issues when loading the connector.
 
 8. If your extension needs an HTML and CSS file for the implementation, then add them as a resource file to your project. During deployment, the HTML files will be copied to the AosService\WebRoot\Resources\Html folder. The CSS files will be copied to the AosService\WebRoot\Resources\Styles folder, then accessed with the following URL format.
+
+Ex: GetPaymentAcceptPoint implementation should be updated to return this URL, if required.
 
 ```
 https://AOSUrl/resources/html/Myhtml.html
@@ -74,13 +77,13 @@ https://AOSUrl/resources/styles/Mycss.css
 9. If you don't have any other payment X++ extensions that are related to the payment connector, build the solution.
 
 > [!NOTE]
-> If there are no other extensions package, then continue with these steps. If you have additional extensions packages, then combine all of them into  all-in-one deployable packages. If you do not do this, this package will override other packages. For more information, see [All-in-one deployable packages](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages).
+> If there are no other extensions package, then continue with these steps. If you have additional extensions packages, then combine all of them into  all-in-one deployable packages. If you do not do this, this package will override other packages. For more information, see [All-in-one deployable packages](../../fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages.md).
 
 10. To create the deployable package, on the **Dynamics 365** menu, select **Deploy \> Create Deployment Package**.
 11. Select the model that you created earlier, specify the location of the package file, and then select **Create**.
 
 
-    ![Create Deployment Package dialog box](./media/Create.png)
+    ![Create Deployment Package dialog box.](./media/Create.png)
 
     Visual Studio builds the model and creates the deployable package.
 
@@ -94,3 +97,6 @@ For information about how to apply a deployable package to an environment, see [
 ## Remove a deployable package
 
 For information about how to uninstall or remove a deployable package from an environment, see [Uninstall a package](../../fin-ops-core/dev-itpro/deployment/uninstall-deployable-package.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Pickup information module
 description: This topic covers the pickup information module and describes how to add it to checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 11/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -46,7 +44,7 @@ If multiple items are selected for pickup across multiple stores, the pickup inf
 
 The following illustration shows an example of time slot selection through the pickup information module on a checkout page.
 
-![Example of a pickup information module on a checkout page](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Example of a pickup information module on a checkout page.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## Module properties
 
@@ -62,7 +60,7 @@ For instructions about how to add a pickup information module to a checkout page
 
 The following illustration shows an example of an e-Commerce checkout page that includes time slots for pickup line items.
 
-![Example of an e-Commerce checkout page that includes time slots for pickup line items](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Example of an e-Commerce checkout page that includes time slots for pickup line items.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## Additional resources
 
@@ -73,3 +71,6 @@ The following illustration shows an example of an e-Commerce checkout page that 
 [Order confirmation module](order-confirmation-module.md)
 
 [Order details module](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

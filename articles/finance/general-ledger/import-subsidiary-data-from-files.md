@@ -4,11 +4,9 @@
 title: Import subsidiary data from files
 description: This topic explains how to prepare data from external systems so that it can be imported into Microsoft Dynamics 365 Finance.
 author: jinniew
-manager: AnnBe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -66,3 +64,6 @@ This topic explains how to prepare data from external systems so that it can be 
 8. Set the **Batch Processing** option to **Yes** to run the consolidation as a batch job at a specific time. To run the consolidation immediately, select **OK**. 
 
 The transactions and balances that were specified for consolidation in the subsidiaries are added to the appropriate accounts in the consolidated legal entity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

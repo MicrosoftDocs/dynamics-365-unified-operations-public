@@ -4,11 +4,9 @@
 title: Simple List and Details form pattern
 description: This topic provides information about the Simple List and Details form pattern. This pattern is used to maintain data for entities of medium complexity.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the Simple List and Details form pattern. This pattern is used to maintain data for entities of medium complexity.
 
-Usage
------
+## Usage
 
 The Simple List and Details (SL+D) pattern is used to maintain data for entities of medium complexity. Entities of medium complexity are those entities that have six or more fields. The Simple List pattern should be used for simple entities that have fewer than six fields. There are some exceptions where entities that have up to 15 fields are still considered simple entities. The Simple List and Details pattern is prescribed when these conditions are met:
 
@@ -51,7 +48,7 @@ Three patterns are described in this document:
 
 ## Wireframe
 
-[![Simple list and details wireframe](./media/simplelistanddetails1-1024x575.png)](./media/simplelistanddetails1.png)
+[![Simple list and details wireframe.](./media/simplelistanddetails1-1024x575.png)](./media/simplelistanddetails1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -132,19 +129,19 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **PaymTerm** 
 
-[![Simple List and Details – List Grid example](./media/sldSimpleListExample.png)](./media/sldSimpleListExample.png)
+[![Simple List and Details – List Grid example.](./media/sldSimpleListExample.png)](./media/sldSimpleListExample.png)
 
 ### Simple List and Details – Tabular Grid
 
 Form: **ExchangeRate** 
 
-[![Simple List and Details - Tabular Grid example](./media/sldGridExample.png)](./media/sldGridExample.png)
+[![Simple List and Details - Tabular Grid example.](./media/sldGridExample.png)](./media/sldGridExample.png)
 
 ### Simple List and Details – Tree
 
 Form: **CaseCategorySetup** 
 
-[![Simple List and Details – Tabular Grid example](./media/sldTreeExample.png)](./media/sldTreeExample.png)
+[![Simple List and Details – Tabular Grid example.](./media/sldTreeExample.png)](./media/sldTreeExample.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -167,4 +164,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![AX 2012 example](./media/simplelistanddetails5.png)](./media/simplelistanddetails5.png)
+[![AX 2012 example.](./media/simplelistanddetails5.png)](./media/simplelistanddetails5.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

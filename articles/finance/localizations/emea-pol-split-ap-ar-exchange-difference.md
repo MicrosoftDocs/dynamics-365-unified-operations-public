@@ -4,11 +4,9 @@
 title: Split the realized exchange difference amount into the difference of the invoice net value and the VAT amount
 description: This topic explains how to split the realized exchange difference amount into the difference of the invoice net value and the value-added tax (VAT) amount.
 author: anasyash
-manager: 
 ms.date: 04/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,7 +51,7 @@ Follow these steps to set up a ledger account that can be used to post the excha
 1. Go to **General ledger** \> **Currencies** \> **Currency revaluation accounts**. 
 2. On the **Currency revaluation accounts** page, select the currency code, and then, in the **Ledger** field, select the code of the legal entity.
 
-    ![Currency revaluation accounts page](media/Currency-revaluation-accounts.png)
+    ![Currency revaluation accounts page.](media/Currency-revaluation-accounts.png)
 
 2. Select a line where the **Posting** field is set to **Realized gain** or **Realized loss**.
 3. Set up the main account, and select the ledger account to post the realized exchange difference to.
@@ -234,3 +232,6 @@ In this example:
 
 - 10.00 (= 11.90 × 80.00 ÷ 95.20) is the exchange difference that is related to the net value of the invoice.
 - 1.90 (= 11.90 – 10.00) is the exchange difference that is related to the tax amount of the invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

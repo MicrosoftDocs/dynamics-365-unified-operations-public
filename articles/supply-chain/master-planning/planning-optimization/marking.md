@@ -4,11 +4,9 @@
 title: Inventory marking with Planning Optimization
 description: This topic provides information about the options that are available for marking inventory in firmed orders when you use Planning Optimization.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,3 +49,6 @@ When you firm a planned order, the **Firming** dialog box provides an **Update m
 - **No** – No inventory marking is applied.
 - **Standard** – Inventory marking is updated according to the pegging. A requirement order (demand) is marked against a fulfillment order (supply). If some quantity remains on the fulfillment order, it isn't marked, and the reference information is left blank. For example, if a sales order for 100 ea is pegged against a purchase order for 150 ea, reference information will be assigned only to the sales order.
 - **Extended** – Both the requirement order (demand) and the fulfillment order (supply) are marked, regardless of any quantity that remains on the fulfillment order. For example, if a sales order for 100 ea is pegged against a purchase order for 150 ea, reference information will be assigned to both the sales order and the purchase order.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

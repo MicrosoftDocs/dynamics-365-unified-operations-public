@@ -1,32 +1,14 @@
 ---
-# required metadata
-
 title: Troubleshoot issues related to solution awareness
 description: This topic provides troubleshooting information that can help you fix issues that are related to solution awareness.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2020-03-16
-
+ms.search.validFrom: 2020-01-06
 ---
 
 # Troubleshoot issues related to solution awareness
@@ -49,3 +31,6 @@ On the **Dual-write** page, you might receive an error message that resembles th
 *The entity with a name 'msdyn\_dualwriteentitymap' with namemapping='Logical' was not found in the MetadataCache.*
 
 To fix the issue, make sure that the dual-write core solution is installed in Dataverse. The dual-write core solution is a prerequisite for solution awareness.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

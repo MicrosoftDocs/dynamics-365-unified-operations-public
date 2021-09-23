@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (December 3, 2019)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent for December 3, 2019.
+author: andreabichsel
 ms.date: 12/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -48,7 +45,7 @@ Changes described in this section apply to build number 8.1.2646. The numbers in
 
 ### Feature management workspace
 
-The **Feature management** workspace provides a list of features delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+The **Feature management** workspace provides a list of features delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 All new features remain in preview for at least 30 days, and typically 30-60 days. Major features are generally available in October and April of each year following the preview period. As soon as you see new capabilities in the **Feature management** workspace, you can turn them on. Some features may be on by default.
  
@@ -74,7 +71,7 @@ This change accurately reflects the type of worker entered (contractor or employ
 
 ### Email notifications for new hire actions don't contain name information due to security policies (383402)
 
-This change corrects the information displayed in the first or surname fields within the placeholders for workflow when advanced security is enabled.
+This change corrects the information displayed in the first or surname columns within the placeholders for workflow when advanced security is enabled.
 
 ### System allows two full-day leave requests for the same day (379284)
 
@@ -84,9 +81,9 @@ With this change, you can't issue two leave requests for the same day.
 
 With this change, the address change list is now sorted by **Effective date**.
 
-### Leave requests should allow deletes from Common Data Service to Talent (376999)
+### Leave requests should allow deletes from Dataverse to Talent (376999)
 
-With this change, draft and canceled leave requests can be deleted from Common Data Service and then removed from Talent.
+With this change, draft and canceled leave requests can be deleted from Dataverse and then removed from Talent.
 
 ### Delete earning codes is allowed when the same earning code is assigned to an employee (371792)
 
@@ -96,19 +93,19 @@ In this release, you must first remove the earning code from the employee before
 
 With this change, the leave and absence workflow continue through all steps when more than one approval stage is configured for the request.
 
-### Issue date doesn't sync to Common Data Service when updated or entered in Talent (397361)
+### Issue date doesn't sync to Dataverse when updated or entered in Talent (397361)
 
-This change corrects a problem where the issue date for **Person identification** records didn't sync to Common Data Service from Talent.
+This change corrects a problem where the issue date for **Person identification** records didn't sync to Dataverse from Talent.
 
 ### Hierarchy circular reference error issued when assigning a manager to a position (386659)
 
 This change corrects a unique scenario where a circular reference error appears when assigning a new manager to a position.
 
-### Common Data Service Entities that now support custom fields
+### Dataverse tables that now support custom columns
 
-The following Common Data Service entities now support custom fields:
+The following Dataverse tables now support custom columns:
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Bank Account Disbursement | cdm_bankaccountdisbursement |
 | Benefit Calculation Frequency | cdm_benefitcalculationfrequency |
@@ -116,7 +113,7 @@ The following Common Data Service entities now support custom fields:
 | Benefit Calculation Rate | cdm_benefitcalculationrate |
 | Benefit Calculation Rate Detail | cdm_benefitcalculationratedetail |
 | Benefit Option | cdm_benefitoption |
-| Benefit Plan | cdm_benefitplan (Not enabled for custom field support) |
+| Benefit Plan | cdm_benefitplan (Not enabled for custom column support) |
 | Benefit Type | cdm_benefittype |
 | Business Process Calendar | cdm_businessprocesscalendar |
 | Business Process Group Assignment | cdm_businessprocessgroupassignment |
@@ -167,7 +164,7 @@ The following Common Data Service entities now support custom fields:
 | Work Calendar Day | cdm_workcalendarday |
 | Work Calendar Holiday |cdm_workcalendarholiday |
 | Work Calendar Holiday Line | cdm_workcalendarholidayline |
-| Work Calendar Time Interval | cdm_workcalendartimeinterval (Not enabled for custom field support) |
+| Work Calendar Time Interval | cdm_workcalendartimeinterval (Not enabled for custom column support) |
 | Worker | cdm_worker |
 | Worker Address | cdm_workeraddress |
 | Worker Bank Account | cdm_workerbankaccount |
@@ -182,4 +179,7 @@ Preview features are only available in **Sandbox** environments.
 
 ### Print performance reviews
 
-See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
+See [Print performance reviews](/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

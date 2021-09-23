@@ -4,11 +4,9 @@
 title: Templates and layouts overview
 description: This topic covers templates and layouts in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: Global
 ms.search.industry: 
 ms.author: niholman
@@ -38,7 +36,7 @@ A good way to start to work with templates is to understand the functional benef
 
 The following illustration shows the page model hierarchy behind a rendered webpage.
 
-![Page model diagram](../commerce/media/page-model-diagram.png)
+![Page model diagram.](../commerce/media/page-model-diagram.png)
 
 | Entity        | Basic function |
 |---------------|----------------|
@@ -104,7 +102,7 @@ Preset layout and custom layouts are edited in different parts of the authoring 
 
 The following illustrations shows scenarios for preset and custom layouts.
 
-![Preset and custom layout scenarios](../commerce/media/template-figure1.png)
+![Preset and custom layout scenarios.](../commerce/media/template-figure1.png)
 
 To start to use preset layouts, see [Work with preset layouts](work-with-layouts.md).
 
@@ -115,3 +113,6 @@ To start to use preset layouts, see [Work with preset layouts](work-with-layouts
 [Work with preset layouts](work-with-layouts.md)
 
 [Work with publish groups](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

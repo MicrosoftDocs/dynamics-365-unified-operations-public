@@ -4,11 +4,9 @@
 title: Update environments from version 8.0 to 10.0.X
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to 10.0.X application releases.
 author: laneswenka
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -69,12 +67,12 @@ Apply this same package back to the build server where you saved the package, as
 ## Begin branch work for version control and remove any application hotfixes
 While the new environments are deploying, begin the branching work for your update. Use the following branch structure in version control as an example.  Branching design varies for each customer, so be careful to adjust your steps accordingly based on how your branches are set up.
 
-[![VersionControl](./media/VersionControl.png)](./media/VersionControl.png)
+[![VersionControl.](./media/VersionControl.png)](./media/VersionControl.png)
 
 ### Prepare using Visual Studio
 On any other development machine (other than the new ones being deployed), open Visual Studio and visit the Source Control Explorer. You will create a new branch that will be isolated for the 10.0.X update.
 
-[![BranchFor81](./media/BranchFor81.png)](./media/BranchFor81.png)
+[![BranchFor81.](./media/BranchFor81.png)](./media/BranchFor81.png)
 
 Next, delete any Microsoft package folders in this branch. You can have packages, such as ApplicationSuite, checked in from applying hotfixes on 8.0 which need to be removed. When only your custom packages or ISVs remain, check these changes in to the branch.
 
@@ -126,3 +124,6 @@ To prevent this from occurring, ensure that you compile your extensions on an 10
 There is a known issue where IIS/Application Pools are not fully restarted when the DVT or ETW step runs. The failure occurs because the DVTs are trying to connect to your environment's URL. To resolve this issue, click **Resume** on your deployment in LCS to retry the step.  We are working to add a timer and automatic retry to resolve this issue.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

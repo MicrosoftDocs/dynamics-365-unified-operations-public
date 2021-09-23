@@ -1,32 +1,14 @@
 ---
-# required metadata
-
 title: Guidance for dual-write setup
 description: This topic describes the scenarios that are supported for dual-write setup.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 10/12/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
 ms.search.validFrom: 2020-01-06
-
 ---
 
 # Guidance for dual-write setup
@@ -142,3 +124,6 @@ For links to an example and an alternative approach, see the [Example](#example)
 For an example, see [Enabling the Customers V3—Contacts table map](enable-entity-map.md#enable-table-map)
 
 For an alternative approach that is based on data volumes in each entity that must run an initial synchronization, see [Considerations for initial synchronization](initial-sync-guidance.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Restart environment services
 description: This topic explains how to restart individual services in environments that are deployed through Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-manager: AnnBe
 ms.date: 03/26/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -62,3 +60,6 @@ To restart a specific service in a deployed environment, follow these steps.
  
   > [!NOTE]
   > This functionality is only available in Tier-2+ Sandbox environments and not in the production environment.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

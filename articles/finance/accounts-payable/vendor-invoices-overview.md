@@ -4,11 +4,9 @@
 title: Vendor invoices overview
 description: This topic provides general information about vendor invoices.
 author: abruer
-manager: AnnBe
-ms.date: 12/18/2019
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 13971
+ms.custom: ["13971", "intro-internal"]
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 # ms.search.industry: 
@@ -32,8 +30,10 @@ ms.dyn365.ops.version: AX 7.0.0
 # Vendor invoices overview
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-This topic provides general information about vendor invoices. Vendor invoices are requests for received payment for products and services. Vendor invoices might represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.
+
+This topic provides general information about vendor invoices. Vendor invoices are requests for payment for products and services. Vendor invoices might represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.
 
 ## Vendor invoices
 
@@ -78,7 +78,9 @@ Following are several ways you can prevent an invoice from being submitted to a 
 
 - **Invoice contains unallocated charges.** The person who submitted the invoice will receive an alert that the invoice has unallocated charges so they can correct the invoice before resubmitting it to workflow. This feature is available if the **Prohibit submission to workflow when there are unallocated charges on a vendor invoice** parameter on the **Feature management** page is turned on.
 
-- **Invoice contains the same invoice number as another posted invoice.** The person who submitted the invoice will receive an alert that an invoice with a duplicate number was found, and they can correct it before resubmitting to workflow. This alert will be displayed when the **Check the invoice number used** parameter in Accounts payable is set to **Reject duplicate**. This feature is available if the **Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers** parameter on the **Feature management** page is turned on.  
+- **Invoice contains the same invoice number as another posted invoice.** The person who submitted the invoice will receive a message indicating that an invoice with a duplicate number was found. The duplicate number can be corrected before resubmitting the invoice to workflow. This alert will be displayed when the **Check the invoice number used** parameter in Accounts payable is set to **Reject duplicate**. This feature is available if the **Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers** parameter on the **Feature management** page is turned on.
+
+- **Invoice contains a line where the invoice quantity is less than the matched product receipt quantity.** The person who submits the invoice or attempts to post will receive a message that the quantities aren’t equal. This message provides an opportunity to correct the values before resubmitting the invoice to workflow. This feature is available if the **Block posting and submission of vendor invoices to workflow** parameter on the **Feature management** page is turned on and the **Block posting and submission to workflow** parameter on the **Accounts payable parameters** page is turned on.  
 
 ## Matching vendor invoices to product receipts
 
@@ -134,3 +136,6 @@ You can view the invoice total on the **Pending vendor invoices** page by enabli
 - [Key invoice data into accounts payable using an approval journal](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Key invoice data into the AP system using invoice pool](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Record a vendor invoice in the invoice journal](tasks/record-vendor-invoice-invoice-journal.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Build operational workspaces
 description: This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -51,7 +49,7 @@ This topic provides detailed information about workspaces and the patterns and s
 - Provide visual impact.
 - Be constructed using prescriptive patterns and best practices that lead to minimal COGS and fast response times.
 
-[![Example of a workspace](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png) 
+[![Example of a workspace.](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png) 
 
 To accomplish these goals, the operation workspace pattern was developed.
 
@@ -180,3 +178,6 @@ A tile caching system has been implemented to improve performance of workspaces,
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

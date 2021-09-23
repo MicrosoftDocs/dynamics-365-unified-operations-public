@@ -4,11 +4,9 @@
 title: ISR declaration report and supporting processes for Mexico
 description: In Mexico, all individuals or corporations must file a monthly Impuesto sobre la renta (ISR) declaration report. This topic provides information about generating this report.
 author: sndray
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,7 +48,7 @@ Before you generate the ISR report, configure the concept category and define th
 
 You must create concepts to identify the different sections of the report, and then attach one or more main accounts for each concept. You can attach a range or specific main accounts, depending on the structure of your chart of accounts. When a main account is attached, you can select **Debits** to use the debit amount only, **Credit** to use the credit amount only, or **Both**. The ISR report shows the value, based on the concept that you configured. **Example**
 
-|               |                                                          |
+| &nbsp;        | &nbsp;                                                   |
 |---------------|----------------------------------------------------------|
 | **Revenue**   | Main Accounts 4010001, 401002, 4010003, 4100001, 4100002 |
 | **Inventory** | Main Accounts 1155001, 1155002, 1155003                  |
@@ -81,3 +79,6 @@ You can generate a detailed ISR report, or the report can summarize each main ac
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

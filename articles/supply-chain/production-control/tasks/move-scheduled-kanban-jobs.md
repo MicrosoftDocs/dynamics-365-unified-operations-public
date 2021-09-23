@@ -4,11 +4,9 @@
 title: Move scheduled kanban jobs
 description: This procedure focuses on moving planned process kanban jobs to a different period. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 11/07/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -65,3 +63,6 @@ This procedure focuses on moving planned process kanban jobs to a different peri
 2. Click **Forward**. Notice that the job is moved one line down on the list. 
 
 3. Click **Backward**. Notice that the job is moved one line up on the list.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

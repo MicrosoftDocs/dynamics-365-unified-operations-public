@@ -4,11 +4,9 @@
 title: Details Master form pattern
 description: This topic provides information about the Details Master form pattern. A details form is the primary method for entering data.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the Details Master form pattern. A details form is the primary method for entering data.
 
-Usage
------
+## Usage
 
 A details form is the primary method for entering data. These forms let the user view, edit, and act upon data. All content on these form types is structured into FastTabs that can be expanded and collapsed, so that multiple FastTabs can be open at the same time. The FastTabs can contain fields or a grid, and each FastTab can have a local toolbar. Two patterns are described in this document:
 
@@ -50,21 +47,21 @@ In both cases, the grid view is structured the same.
 
 #### Details view
 
-[![Details Master wireframe: Details view](./media/detailsmaster1-1024x578.png)](./media/detailsmaster1.png)
+[![Details Master wireframe: Details view.](./media/detailsmaster1-1024x578.png)](./media/detailsmaster1.png)
 
 #### Grid view
 
-[![Details Master wireframe: Grid view](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)
+[![Details Master wireframe: Grid view.](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)
 
 ### Details Master with Standard Tabs
 
 #### Details view
 
-[![Details Master with Standard Tabs wireframe: Details view](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)
+[![Details Master with Standard Tabs wireframe: Details view.](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)
 
 #### Grid view
 
-[![Details Master with Standard Tabs wireframe: Grid view](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)
+[![Details Master with Standard Tabs wireframe: Grid view.](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -212,15 +209,15 @@ Form: **CustTable**
 
 #### Details view (navigation list off)
 
-[![Details Master (basic) example: Details view (navigation list off)](./media/detailsmaster5-1024x510.png)](./media/detailsmaster5.png)
+[![Details Master (basic) example: Details view (navigation list off).](./media/detailsmaster5-1024x510.png)](./media/detailsmaster5.png)
 
 #### Details view (navigation list on)
 
-[![Details Master (basic) example: Details view (navigation list on)](./media/detailsmaster6-1024x509.png)](./media/detailsmaster6.png)
+[![Details Master (basic) example: Details view (navigation list on).](./media/detailsmaster6-1024x509.png)](./media/detailsmaster6.png)
 
 #### Grid view
 
-[![Details Master (basic) example: Grid view](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)
+[![Details Master (basic) example: Grid view.](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)
 
 ### Details Master with Standard Tabs
 
@@ -228,15 +225,15 @@ Form: **HcmWorker**
 
 #### Details view (navigation list off)
 
-[![Details Master w/Standard Tabs example: Details view (navigation list off)](./media/detailsmaster8-1024x508.png)](./media/detailsmaster8.png)
+[![Details Master w/Standard Tabs example: Details view (navigation list off).](./media/detailsmaster8-1024x508.png)](./media/detailsmaster8.png)
 
 #### Details view (navigation list on)
 
-[![Details Master with Standard Tabs example: Details view (navigation list on)](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)
+[![Details Master with Standard Tabs example: Details view (navigation list on).](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)
 
 #### Grid view
 
-[![Details Master with Standard Tabs example: Grid view](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)
+[![Details Master with Standard Tabs example: Grid view.](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -250,21 +247,24 @@ None.
 ### AX 2012 content
 
 #### AX 2012 links
--   [AX 2012 MSDN Details Forms](https://msdn.microsoft.com/library/hh397318.aspx)
+-   [AX 2012 MSDN Details Forms](/dynamicsax-2012/developer/details-forms)
 
 #### AX 2012 example
 
 ##### Details Master (basic)
 
-[![AX 2012 example: Details Master (basic) 1](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png) 
+[![AX 2012 example: Details Master (basic) 1.](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png) 
 
-[![AX 2012 example: Details Master (basic) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)
+[![AX 2012 example: Details Master (basic) 2.](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)
 
 ##### Details Master with Standard Tabs
 
-[![AX 2012 example: Details Master with Standard Tabs 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
+[![AX 2012 example: Details Master with Standard Tabs 1.](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
 
-[![AX 2012 example: Details Master with Standard Tabs 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
+[![AX 2012 example: Details Master with Standard Tabs 2.](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

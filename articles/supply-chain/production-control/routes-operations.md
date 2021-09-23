@@ -4,11 +4,9 @@
 title: Routes and operations
 description: This topic provides information about routes and operations. 
 author: sorenva
-manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about routes and operations. A route defines the process for producing a product or product variant. It describes each step (operation) in the production process and the order that these steps must be performed in. For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.
 
-Overview
---------
+## Overview
 
 A route describes the order of operations that is required in order to produce a product or product variant. For each operation, the route also defines the operations resources that are required, the time that is required in order to set up and perform the operation, and how the cost should be calculated. You can use the same route to produce multiple products, or you can define a unique route for each product or product variant. You can even have multiple routes for the same product. In this case, the route that is used varies, depending on factors such as the quantity that must be produced. The definition of a route in Supply Chain Management consists of four separate elements that, together, describe the production process:
 
@@ -52,7 +49,7 @@ A route describes the order of operations that is used to produce a product or p
 
 A simple route is sequential, and there is only one starting point for the route.  
 
-[![Simple route](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Simple route.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 If you enable only simple routes in the Production control parameters, Supply Chain Management automatically generates the operation numbers (10, 20, 30, and so on) when you define the route.
 
@@ -60,7 +57,7 @@ If you enable only simple routes in the Production control parameters, Supply Ch
 
 If you enable the more complex route networks in the Production control parameters, you can define routes that have multiple starting points and operations that can be run in parallel.  
 
-[![Route network](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Route network.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Each operation can have only one successor operation, and the entire route must end in a single operation.
@@ -71,7 +68,7 @@ If you enable the more complex route networks in the Production control paramete
 
 Sometimes, a combination of multiple operations resources that have different characteristics is required in order to perform an operation. For example, an assembly operation might require a machine, a tool, and one worker for every two machines to oversee the operation. This example can be modeled by using parallel operations, where one operation is designated as the primary operation and the others are secondary.  
 
-[![Route that has primary and secondary operations](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Route that has primary and secondary operations.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Typically, the primary operation represents the bottleneck resource and dictates the run time for the secondary operations. However, during scheduling that involves finite capacity, the resources that are scheduled for both the primary operation and the secondary operations must be available and have free capacity at the same time.  
 
@@ -85,7 +82,7 @@ A route must be approved before it can be used in the planning or manufacturing 
 
 Each route can be approved or unapproved separately. However, note that, when a route is unapproved, all related route versions are also unapproved. In the Production control parameters, you can specify whether routes can be unapproved, and whether approved routes can be changed.  
 
-If you must keep a log that records who approves each route, you can require electronic signatures for route approval. Users will then have to confirm their identity by using an [electronic signature](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+If you must keep a log that records who approves each route, you can require electronic signatures for route approval. Users will then have to confirm their identity by using an [electronic signature](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ## Operations
 An operation is a step in the production process. Each operation has an ID and a simple description. The following tables shows typical examples of operations from a machine shop.
@@ -191,7 +188,7 @@ When you activate a route version, you designate it as the default route version
 
 ### Electronic signatures
 
-If you must keep a log that records who approves and activates each route version, you can require electronic signatures for these tasks. Users who approve and activate route versions will then have to confirm their identity by using an [electronic signature](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+If you must keep a log that records who approves and activates each route version, you can require electronic signatures for these tasks. Users who approve and activate route versions will then have to confirm their identity by using an [electronic signature](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ### Product change that uses case management
 
@@ -259,7 +256,10 @@ Therefore, when Activation is selected for Overlap, the rest of the settings (Jo
 
 - [Resource capabilities](resource-capabilities.md)
 
-- [Electronic signature overview](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [Electronic signature overview](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Point of sale (POS) payment extension
-description: You can implement the core payment logic in the payment device or payment connector using the Hardware station APIs by using the extension points in POS to support payment extensibility.
+description: This topic describes how to implement the core payment logic in the payment device or payment connector using the Hardware station APIs.
 author: mugunthanm
-manager: AnnBe
 ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -350,3 +348,6 @@ The full code sample, with how to pass extension properties, is available in Ret
 **PaymentTerminalVoidPaymentRequestHandler**, the void request, is a payment request from POS that initiates the void card payment request. You override this request if you want to change the void workflow. To override the request, you need to extend the **PaymentTerminalVoidPaymentRequestHandler** in POS.
 
 Extending the void and refund request code pattern is same as the authorize and capture request. The full code sample for the void and refund payment request, with how to pass extension properties, is available in Retail SDK app update 3 in the RetailSDK\Code\POS\Extensions\PaymentSample folder.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

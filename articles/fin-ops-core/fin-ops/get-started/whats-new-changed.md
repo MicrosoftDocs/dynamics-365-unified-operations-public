@@ -5,11 +5,9 @@
 title: What's new or changed in Finance and Operations apps home page
 description: This page points you to topics that can help you learn about the new features in the latest Finance and Operations applications.
 author: josaw1
-manager: AnnBe
 ms.date: 02/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -20,7 +18,7 @@ audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 27141
+ms.custom: ["27141", "intro-internal"]
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 # ms.search.industry: 
@@ -41,7 +39,7 @@ To see what's new or changed in each release of a Finance and Operations app, se
 
 - **Finance:** [What's new or changed in Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md) 
 - **Supply Chain Management:** [What's new or changed in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md) 
-- **Commerce:** [What's new or changed in Dynamics 365 Commerce](../../../retail/get-started/whats-new-home-page.md)
+- **Commerce:** [What's new or changed in Dynamics 365 Commerce](../../../commerce/get-started/whats-new-home-page.md)
 - **Human Resources:** [What's new or changed in Dynamics 365 Human Resources](../../../human-resources/hr-admin-whats-new.md)
 
 ## Platform updates
@@ -56,3 +54,6 @@ To see what's new or changed in Lifecycle Services, see the following topic:
 - [What's new or changed in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/whats-new-lcs.md)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

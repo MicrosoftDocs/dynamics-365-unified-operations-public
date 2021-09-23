@@ -4,11 +4,9 @@
 title: ER Configure destinations
 description: This procedure demonstrates how to set up and use different destinations for Electronic reporting (ER) output components, such as a folder or a file. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -63,3 +61,6 @@ The format used in this example is ISO20022 Credit transfer, but you can use any
 21. In the Subject field, type a value.
 22. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

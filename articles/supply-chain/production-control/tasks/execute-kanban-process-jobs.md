@@ -4,11 +4,9 @@
 title: Execute kanban process jobs
 description: This procedure focuses on executing kanban process jobs. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -58,3 +56,6 @@ This procedure focuses on executing kanban process jobs. The first job is comple
 6. In the Good quantity field, enter a number.
 7. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

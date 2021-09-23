@@ -4,11 +4,9 @@
 title: Cart module
 description: This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 A cart module shows the items that have been added to the cart before the customer proceeds to checkout. The module also shows an order summary and lets the customer apply or remove promotional codes.
 
 The cart module supports signed-in checkout and guest checkout. It also supports a **Back to shopping** link. You can configure the route for this link at **Site Settings \> Extensions \> Routes**.
@@ -43,11 +39,11 @@ The cart module renders data based on the cart ID, which is a browser cookie ava
 
 The following image shows an example of a cart page on the Fabrikam site.
 
-![Example of a cart module on the Fabrikam site](./media/cart2.PNG)
+![Example of a cart module on the Fabrikam site.](./media/cart2.PNG)
 
 The following image shows an example of a cart page on the Fabrikam site. In this example, there is a handling fee for a line item.
 
-![Example of a cart module with a handling fee for a line item](./media/ecommerce-handling-fee.png)
+![Example of a cart module with a handling fee for a line item.](./media/ecommerce-handling-fee.png)
 
 ## Cart module properties and slots
 
@@ -121,3 +117,6 @@ To add a cart module to a new page and set the required properties, follow these
 [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
 
 [Create an online functionality profile](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

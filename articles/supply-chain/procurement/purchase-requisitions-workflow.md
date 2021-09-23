@@ -3,12 +3,10 @@
 
 title: Purchase requisition workflow
 description: The workflow process moves purchase requisitions through the review process, from an initial status of Draft to a final status of Approved. When a purchase requisition is submitted for review, the workflow process is started. After a purchase requisition is approved, a purchase order can be generated for the purchase requisition lines and submitted to the vendor for order fulfillment.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -58,7 +56,7 @@ The following illustration shows how a purchase requisition can flow through the
 -   **Purchasing agent** – The user who performs a procurement review and can approve the document.
 -   **The requester's manager** – The user who performs a managerial review and can approve the document.
 
-![Purchase requisition workflow review process](./media/purchreqworkflowoverview_submission.gif)  
+![Purchase requisition workflow review process.](./media/purchreqworkflowoverview_submission.gif)  
 In this example, the workflow process for the purchase requisition includes the following steps:
 
 1.  The preparer submits a purchase requisition for review.
@@ -81,7 +79,7 @@ The following roles are included in the workflow process for this example:
 -   **Department manager** – The user who performs an expenditure review and can approve the document.
 -   **Group manager** – The user who performs a signature authority review and can approve the document.
 
-![Purchase requisition line workflow review process](./media/purchreqlineworkflowoverview.gif)  
+![Purchase requisition line workflow review process.](./media/purchreqlineworkflowoverview.gif)  
 In this example, the workflow process for the purchase requisition lines includes the following steps:
 
 1.  The preparer submits a purchase requisition for review. Each line is routed to the reviewer who is configured to receive it in the workflow process.
@@ -112,8 +110,7 @@ You can set up the expenditure reviewers on the **Purchase requisition expenditu
 
 To use one of the expenditure reviewers that you set up in a workflow, you must set the **Type of participant** option to **Expenditure participants** in the **Assignment** properties for the relevant workflow element.
 
-Additional resources
---------
+## Additional resources
 
 [Create a requisition for consumption](tasks/create-requisition-consumption.md)
 
@@ -125,3 +122,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

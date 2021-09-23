@@ -4,11 +4,9 @@
 title: Create a BOM line event kanban rule
 description: This task focuses on the setup needed to create an event kanban rule to ensure supply for production BOM lines in a mixed lean and classic production environment. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -84,3 +82,6 @@ This task focuses on the setup needed to create an event kanban rule to ensure s
     * Notice the kanban created to supply M0001 for the estimated production order.  
     * This is the last step!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

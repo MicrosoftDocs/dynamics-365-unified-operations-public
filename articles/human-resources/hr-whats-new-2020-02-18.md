@@ -3,12 +3,10 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (February 18, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for February 18, 2020.
-author: Andreabichsel
-manager: AnnBe
+author: andreabichsel
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,13 +28,15 @@ ms.dyn365.ops.version: Human Resources
 ---
 # What's new or changed in Dynamics 365 Human Resources (February 18, 2020)
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2903. The numbers in parentheses in some headings refer to LCS support numbers for reference.
 
 ## Platform update 32 
 
-Platform update 32 is now available. For more information, see [What's new or changed in Platform update 32 for Finance and Operations (February 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
+Platform update 32 is now available. For more information, see [What's new or changed in Platform update 32 for Finance and Operations (February 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 ## Search values are remembered when changing view options in streamlined employee form (383833)
 
@@ -46,17 +46,17 @@ The new **Worker** form now remembers  search values when you change the view op
 
 Fixed and variable compensation management tiles now display the correct records in the new **Worker** form. Applies only to the streamlined employee form preview feature. You can enable this preview feature in **Feature management**. For more information, see [Manage features](hr-admin-manage-features.md).
 
-## Empty Status field for some leave request records in Common Data Service (414915)
+## Empty Status field for some leave request records in Dataverse (414915)
 
-This change corrects an issue in Common Data Service when the **Status** field in a leave request is set to **Review**. Common Data Service now reflects the status.
+This change corrects an issue in Dataverse when the **Status** field in a leave request is set to **Review**. Dataverse now reflects the status.
 
 ## Skill gap analysis only possible for assigned job (411390)
 
 You can now do a skill gap analysis on any job defined in Human Resources.
 
-## System currency doesn't sync from Common Data Service to Human Resources in new environments (418011)
+## System currency doesn't sync from Dataverse to Human Resources in new environments (418011)
 
-The system currency in Common Data Service can now sync to Human Resources.
+The system currency in Dataverse can now sync to Human Resources.
 
 ## In preview
 
@@ -66,9 +66,9 @@ The system currency in Common Data Service can now sync to Human Resources.
 
 ## Coming soon
 
-### Updated Common Data Service solution
+### Updated Dataverse solution
 
-A new Common Data Service solution will be available soon with the following changes:
+A new Dataverse solution will be available soon with the following changes:
 
 | Description | Change |
 | ----------------------------------------- | --- |
@@ -79,11 +79,13 @@ A new Common Data Service solution will be available soon with the following cha
 | New variable compensation setup entities | **Compensation variable plan type**</br>**Compensation variable plan**</br>**Vesting rules**</br>**Compensation variable plan level** |
 | New **Worker calendar employment** entity | **Work calendar entity** added |
 | New **Payroll position detail** entity | **Payroll position detail** added |
-| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Common Data Service. It won't be initially referenced from **Job Position** or **Job** entities. |
+| New **Title** entity | **Title** added. The new **Title** entity will be included in the sync process between Human Resources and Dataverse. It won't be initially referenced from **Job Position** or **Job** entities. |
 
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Budget analysis in the public sector
 description: This topic describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -71,9 +69,8 @@ The **Budget control statistics** page is the tool to use when you want to analy
 
 The following table explains the differences between these pages.
 
-|                                                                                                                         |                                                                                             |
-|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Budget control statistics page**                                                                                      | **Budget analysis page**                                                                    |
+| Budget control statistics page | Budget analysis                        |
+|---|---|
 | Shows the budget balances for a budget cycle and a budget model for a single financial dimension value or budget group. | Shows the combined budget amounts for multiple financial dimension values at the same time. |
 | Includes data from both confirmed and unconfirmed encumbrances.                                                         | Includes data from confirmed encumbrances only.                                             |
 | Includes data from expense accounts only.                                                                               | Includes data from both revenue and expense accounts.                                       |
@@ -111,3 +108,6 @@ After you change the settings at the top of the page, click **Update totals** to
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

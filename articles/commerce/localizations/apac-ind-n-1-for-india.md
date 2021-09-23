@@ -4,11 +4,9 @@
 title: Support for upgrade and N-1 for India
 description: This topic provides an overview N-1 support for Commerce customers in India.
 author: kfend 
-manager: ezubov
 ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -52,3 +50,6 @@ GST configuration data differs between AX 2012 and Commerce versions. A special 
 2. Click **OK**.
 
 Each time tax configuration changes are made and finalized the above operation should be run before sending the data to the AX 2012 channel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

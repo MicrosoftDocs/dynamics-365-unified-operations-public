@@ -4,11 +4,9 @@
 title: Create email templates for transactional events 
 description: This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-manager: annbe
-ms.date: 06/01/2020
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.8
 
 This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Dynamics 365 Commerce provides an out-of-box solution for sending emails that alert customers about transactional events (for example, when an order is placed, an order is ready for pickup, or an order has been shipped). This topic describes the steps for creating, uploading, and configuring the email templates that are used to send transactional emails.
 
 ## Create an email template
@@ -43,7 +39,7 @@ Before you can map a specific transactional event to an email template, you must
 
 To create an email template, follow these steps.
 
-1. In Commerce headquarters, go to **Organization email templates**, which is under **Retail and Commerce \> Headquarters setup \> Organization email templates** or **Organization administration \> Setup \> Organization email templates**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Organization email templates** or **Organization administration \> Setup \> Organization email templates**.
 1. Select **New**.
 1. Under **General**, set the following fields:
 
@@ -82,28 +78,36 @@ Here is an example.
 
 The following placeholders retrieve and show data that is defined at the sales order level (as opposed to the sales line level).
 
-| Placeholder name    | Placeholder value                                                |
-|---------------------|------------------------------------------------------------------|
-| customername        | The name of the customer who placed the order.                   |
-| salesid             | The sales ID of the order.                                       |
-| deliveryaddress     | The delivery address for shipped orders.                         |
-| customeraddress     | The address of the customer.                                     |
-| deliverydate        | The delivery date.                                               |
-| shipdate            | The ship date.                                                   |
-| modeofdelivery      | The delivery mode of the order.                                  |
-| charges             | The total charges for the order.                                 |
-| tax                 | The total tax for the order.                                     |
-| total               | The total amount for the order.                                  |
-| ordernetamount      | The total amount for the order, minus the total tax.             |
-| discount            | The total discount for the order.                                |
-| storename           | The name of the store where the order was placed.                |
-| storeaddress        | The address of the store that placed the order.                  |
-| storeopenfrom       | The opening time of the store that placed the order.             |
-| storeopento         | The closing time of the store that placed the order.             |
-| pickupstorename     | The name of the store where the order will be picked up.         |
-| pickupstoreaddress  | The address of the store where the order will be picked up.      |
-| pickupopenstorefrom | The opening time of the store where the order will be picked up. |
-| pickupopenstoreto   | The closing time of the store where the order will be picked up. |
+| Placeholder name     | Placeholder value                                            |
+| -------------------- | ------------------------------------------------------------ |
+| customername         | The name of the customer who placed the order.               |
+| customeraddress      | The address of the customer.                                 |
+| customeremailaddress | The email address that the customer entered at checkout.     |
+| salesid              | The sales ID of the order.                                   |
+| orderconfirmationid  | The cross-channel ID that was generated at order creation. |
+| channelid            | The ID of the retail or online channel that the order was placed through. |
+| deliveryname         | The name that is specified for the delivery address.        |
+| deliveryaddress      | The delivery address for shipped orders.                     |
+| deliverydate         | The delivery date.                                           |
+| shipdate             | The ship date.                                               |
+| modeofdelivery       | The delivery mode of the order.                              |
+| ordernetamount       | The total amount for the order, minus the total tax.         |
+| discount             | The total discount for the order.                            |
+| charges              | The total charges for the order.                             |
+| tax                  | The total tax for the order.                                 |
+| total                | The total amount for the order.                              |
+| storename            | The name of the store where the order was placed.            |
+| storeaddress         | The address of the store that placed the order.              |
+| storeopenfrom        | The opening time of the store that placed the order.         |
+| storeopento          | The closing time of the store that placed the order.         |
+| pickupstorename      | The name of the store where the order will be picked up.\* |
+| pickupstoreaddress   | The address of the store where the order will be picked up.\* |
+| pickupopenstorefrom  | The opening time of the store where the order will be picked up.\* |
+| pickupopenstoreto    | The closing time of the store where the order will be picked up.\* |
+| pickupchannelid      | The channel ID of the store that is specified for a pickup mode of delivery.\* |
+| packingslipid        | The ID of the packing slip that was generated when lines in an order were packed.\* |
+
+\* These placeholders return data only when they are used for the **Order ready for pickup** notification type. 
 
 ### Order line placeholders (sales line level)
 
@@ -111,7 +115,10 @@ The following placeholders retrieve and show data for individual products (lines
 
 | Placeholder name               | Placeholder value |
 |--------------------------------|-------------------|
-| productid                      | The product ID for the line. |
+| productid                      | <p>The ID of the product. This ID accounts for variants.</p><p><strong>Note:</strong> This placeholder has been deprecated in favor of **lineproductrecid**.</p> |
+| lineproductrecid               | The ID of the product. This ID accounts for variants. It uniquely identifies an item at the variant level. |
+| lineitemid                     | The product-level ID of the product. (This ID doesn't account for variants.) |
+| lineproductvariantid           | The ID of the product variant. |
 | lineproductname                | The name of the product. |
 | lineproductdescription         | The description of the product. |
 | linequantity                   | The number of units that were ordered for the line, plus the unit of measure (for example, **ea**, or **pair**). |
@@ -130,6 +137,8 @@ The following placeholders retrieve and show data for individual products (lines
 | linedeliverydate               | The delivery date for the line. |
 | linedeliverymode               | The delivery mode for the line. |
 | linedeliveryaddress            | The delivery address for the line. |
+| linepickupdate                 | The pickup date that the customer specified, for orders that use a pickup mode of delivery. |
+| linepickuptimeslot             | The pickup time range that the customer specified, for orders that use a pickup mode of delivery. |
 | giftcardnumber                 | The gift card number, for products of the gift card type. |
 | giftcardbalance                | The gift card balance, for products of the gift card type. |
 | giftcardmessage                | The gift card message, for products of the gift card type. |
@@ -173,11 +182,8 @@ Here is an example.
 
 Receipts can be emailed to customers who make purchases at a retail point of sale (POS). In general, the steps for creating the emailed receipt template are the same as the steps for creating templates for other transactional events. However, the following changes are required:
 
-- The email ID of the email template must be **emailRecpt**.
 - The text of the receipt is inserted into the email by using the **%message%** placeholder. To ensure that the receipt body is correctly rendered, surround the **%message%** placeholder with HTML **&lt;pre&gt;** and **&lt;/pre&gt;** tags.
-- Line breaks in the HTML for the header and footer of the email are converted to HTML **&lt;br /&gt;** tags so that the receipt body is rendered correctly. To eliminate unwanted vertical space in your receipt emails, remove line breaks from any place in the HTML where vertical space isn't required.
-
-For more information about how to configure email receipts, see [Set up email receipts](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
+- The **%receiptid%** placeholder can be used to show a QR code or bar code that represents the receipt ID. (QR codes and bar codes are dynamically generated and served by a third-party service.) For more information about how to show a QR code or bar code in an emailed receipt, see [Add a QR code or bar code to transactional and receipt emails](add-qr-code-barcode-email.md).
 
 ## Upload the email HTML
 
@@ -203,6 +209,9 @@ For more information about how to configure emails in Dynamics 365 Commerce, see
 
 [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md)
 
-[Set up email receipts](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
+[Set up email receipts](/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [Send email receipts from Modern POS ](email-receipts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

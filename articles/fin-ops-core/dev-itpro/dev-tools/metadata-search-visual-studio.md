@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Metadata search in Visual Studio
 description: This article describes how to use metadata search to search your code and metadata for arbitrary patterns and content.
 author: RobinARH
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-platform
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: Developer
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
 ms.custom: 83303
 ms.assetid: 4d686948-a78d-48fa-bbf8-28da7880eec7
 ms.search.region: Global
-# ms.search.industry:
 ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Metadata search in Visual Studio
@@ -41,17 +26,17 @@ Given the large volume of the code base and metadata, it is often necessary to f
 
 You can access the Metadata search tool window from the **Dynamics 365 &gt; Metadata Search** menu command. Enter your search query to start the search. Results will start populating in the window asynchronously as you type. You can double-click any result line to navigate to the corresponding X++ code or metadata that matches your search query.
 
-[![Metadata search tool window](./media/posted_metasearch.png)](./media/posted_metasearch.png)
+[![Metadata search tool window.](./media/posted_metasearch.png)](./media/posted_metasearch.png)
 
 You can also select one or more results, right-click, and then add these elements to a project. You don’t need to wait for the search to complete before you start interacting with the search results.
 
-[![Add to new project from metadata search](./media/addnewproject_metasearch.png)](./media/addnewproject_metasearch.png)
+[![Add to new project from metadata search.](./media/addnewproject_metasearch.png)](./media/addnewproject_metasearch.png)
 
 ## Navigate To window
 
 The **Navigate To** window is invoked using the **Ctrl+‘,’** (the comma character) shortcut keys. Pressing **Ctrl+‘,’** displays the query entry box in top-right corner of the Visual Studio main document window. You can also access the **Navigate To** window from the Visual Studio **Edit** menu. Enter you search query and see the results appear as you type. A progress indicator will stop when the search is complete. You don’t need to wait for the search to complete to start interacting with the results.
 
-[![Navigate To window](./media/typeform_metasearch.png)](./media/typeform_metasearch.png)
+[![Navigate To window.](./media/typeform_metasearch.png)](./media/typeform_metasearch.png)
 
 ## Search query syntax
 
@@ -80,7 +65,7 @@ Where `<filter_i>` is one of the acceptable filter names, and <`filter_i_value>`
 
 You can get help about using filter and filter syntax by opening the drop-down menu available in the search box.
 
-[![Metadata search filter button](./media/metadatasearchfilter.jpg)]
+[![Metadata search filter button.](./media/metadatasearchfilter.jpg)]
 
 ## Examples
 
@@ -104,3 +89,6 @@ You can get help about using filter and filter syntax by opening the drop-down m
 |`code:"insert" type:table,form`    | Finds all places in the source code of either forms or tables that contain "insert".   |
 |`code:"public display" type:form,method`  | Finds all form methods that contain the code "public display". |
 |`type:formbuttoncontrol property:text=` | Finds all form Button Controls that have **empty** text properties. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

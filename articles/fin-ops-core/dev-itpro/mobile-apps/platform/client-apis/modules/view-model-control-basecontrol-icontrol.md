@@ -1,26 +1,12 @@
 ---
-# required metadata
 title: Control module
 description: Controls are what make up the content of a page.
 author: robinarh
-manager: AnnBe
 ms.date: 11/10/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
 ---
 
 # Control module
@@ -103,3 +89,6 @@ ControlType: "FileUpload" &#124; "Barcode" &#124; "Input" &#124; "MultilineInput
 
 Controls must be assigned any of the types listed in ControlType.
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

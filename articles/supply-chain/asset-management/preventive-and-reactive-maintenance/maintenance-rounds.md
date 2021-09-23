@@ -3,12 +3,10 @@
 
 title: Maintenance rounds
 description: This topic explains maintenance rounds in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -87,7 +85,7 @@ In **Asset Management**, you can create maintenance rounds for various assets, o
 
 The illustration below shows and example of a maintenance round containing three assets.
 
-![Figure 1](media/13-preventive-maintenance.png)
+![Figure 1.](media/13-preventive-maintenance.png)
 
 
 ## Schedule maintenance rounds
@@ -113,11 +111,14 @@ When you've set up a maintenance round, you run a schedule job to schedule all t
 
 The two illustrations below show a schedule job in the **Schedule maintenance rounds** dialog, and the maintenance schedule lines created in **All maintenance schedule** based on that schedule job.
 
-![Figure 2](media/14-preventive-maintenance.png)
+![Figure 2.](media/14-preventive-maintenance.png)
 
-![Figure 3](media/15-preventive-maintenance.png)
+![Figure 3.](media/15-preventive-maintenance.png)
 
 - When work orders are manually created on assets that are covered by a vendor warranty, a dialog box is shown to make the user aware of the warranty. The creation of the work order can then be canceled. The check for a warranty relation is omitted for work orders that are automatically created.  
 - You can set up a batch job on the **Run in the background** FastTab to schedule rounds at regular intervals.  
 - If a round is included in several work order pools (refer to [Work order pools](../work-orders/work-order-pools.md)), one record is shown for each pool in **Open maintenance schedule pools**. This is done to optimize the filtering options for work order pools.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

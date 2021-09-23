@@ -4,11 +4,9 @@
 title: Enable location-based store detection
 description: This topic describes how to turn on location-based store detection for your Dynamics 365 Commerce site.
 author: brianshook
-manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,18 +27,15 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Enable location-based store detection
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to turn on location-based store detection for your Dynamics 365 Commerce site.
-
-## Overview
 
 Location-based store detection in Commerce lets you provide relevant site content to customers, based on their location. When location-based store detection is turned on, the Commerce rendering service uses the country/region information from the IP address of the customer's web browser to direct the customer to the best geographical site configuration that is available.
 
 ## Privacy notice
 
-If you turn on the location-based store detection feature, information from the customer's browser is sent to a Microsoft location service. This information is then used to provide the customer content that is relevant to his or her location. Both the information that is sent from the customer's browser and the location-based information that is returned to the customer are subject to privacy and cookie compliance policies.
+If you turn on the location-based store detection feature, information from the customer's browser is sent to a Microsoft location service. This information is then used to provide the customer content that is relevant to the customer's location. Both the information that is sent from the customer's browser and the location-based information that is returned to the customer are subject to privacy and cookie compliance policies.
 
 ## Turn on location-based store detection
 
@@ -72,3 +67,6 @@ To turn on location-based store detection in Commerce, follow these steps.
 [Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

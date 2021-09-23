@@ -4,11 +4,9 @@
 title: Configure a development environment (.env) file
 description: This topic describes how to configure the development environment (.env) file that is used in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to configure the .env file that is used for the development environment in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 The .env file that is provided as part of the Dynamics 365 Commerce online software development kit (SDK) is a simple configuration text file. It defines a set of variables that is used by a Node app that runs in the development environment.
 
@@ -137,7 +133,7 @@ To find the channel operating unit number, follow these steps.
 1. Go to the Commerce website.
 1. In the search field at the top of the page, enter **Online channels**, and then select the channel to use. You should see an **Operating unit number** column, as shown in the following illustration.
 
-    ![Operating unit number column on the Dynamics 365 Commerce website](media/operating-unit-number.png)
+    ![Operating unit number column on the Dynamics 365 Commerce website.](media/operating-unit-number.png)
 
 The following example shows the syntax for this variable.
 
@@ -160,7 +156,7 @@ To find the channel ID, follow these steps.
 1. On the Action Pane, on the **Options** tab, in the **Page options** group, select **Record Info**.
 1. In the **Record information** dialog box, the value of the **Record-ID** field is the channel ID. Copy this value.
 
-    ![Record-ID field on the Dynamics 365 Retail website](media/channel-id.png)
+    ![Record-ID field on the Dynamics 365 Retail website.](media/channel-id.png)
 
 The following example shows the syntax for this variable.
 
@@ -190,7 +186,7 @@ To get the CMS tenant ID in Dynamics 365 Commerce, follow these steps.
 1. Select the first image.
 1. In the property pane on the right, find the URL in the **Public URL** field. Your CMS tenant ID is the string between **/cms/api/** and **/imageFileData**. For example, in the URL **../cms/api/fabrikam/imageFileData/..**, the CMS tenant ID is **fabrikam**.
 
-    ![Public URL field in Dynamics 365 Commerce](media/obtain-tenant-id.png)
+    ![Public URL field in Dynamics 365 Commerce.](media/obtain-tenant-id.png)
 
 After you've finished changing the .env file, restart the Node server by using the **yarn start** command.
 
@@ -205,3 +201,6 @@ After you've finished changing the .env file, restart the Node server by using t
 [Configure an e-commerce development environment against a Commerce cloud environment](debug-tier-1.md)
 
 [Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

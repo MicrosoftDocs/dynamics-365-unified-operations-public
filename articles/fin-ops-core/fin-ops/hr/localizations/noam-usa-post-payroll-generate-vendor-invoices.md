@@ -4,11 +4,9 @@
 title: Post payroll distributions and generate vendor invoices
 description: This topic walks you through the process for posting payroll distributions and generating the required vendor invoices.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -130,3 +128,6 @@ To generate multiple invoices for one vendor, follow these steps.
 2. In the **Pay period** field, select the pay period to post pay statements for. The list includes only the pay periods that are available for the pay cycle. The default pay period is the first open pay period. However, you can select any open pay period in the list.
 3. Select **Vendor invoice**, select the vendor to generate invoices for, and then click **OK**.
 4. To verify that the vendor invoice was generated, click the pay statement to show the **Pay statement** details. Verify that the **Included in invoice** check box is selected on the pay statement lines for the benefits that are associated with the vendor. You can also verify that at least one vendor invoice was created for the vendor.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

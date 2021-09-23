@@ -4,11 +4,9 @@
 title: Manage attributes and attribute groups
 description: This topic describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields. 
 author: ashishmsft
-manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -76,7 +74,7 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
     - Name one attribute type **Lens shape**, and add the following values: **Oval**, **Square**, and **Rectangle**.
     - Name the other attribute type **Sunglass brand**, and add the following values: **Ray ban**, **Aviator**, and **Oakley**.
 
-![Attribute types](media/AttributeType.png)
+![Attribute types.](media/AttributeType.png)
 
 ### Set up an attribute
 
@@ -85,7 +83,7 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 3. Create an attribute that is named **Lens**.
 4. Set the **Attribute type** field to **Lens shape**.
 
-![Attributes](media/Attribute.png)
+![Attributes.](media/Attribute.png)
 
 ## Attribute metadata
 
@@ -107,7 +105,7 @@ Here are the remaining attribute metadata options on the **Attributes** page:
 
 These options were originally intended to improve the search functionality for the online storefront. Although Commerce doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK). Customers can use this SDK to put products into a search index of their choice. Although the product data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
 
-For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
+For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](/SharePoint/search/search-schema-overview).
 
 ## Filter settings for attributes
 
@@ -140,7 +138,7 @@ The **Filter display preferences** page includes the following fields:
     - 200 – 500
     - 500 or more
 
-![Attribute filter settings](media/AttributeFilterSettings.PNG)
+![Attribute filter settings.](media/AttributeFilterSettings.PNG)
 
 ## Attribute groups
 
@@ -148,7 +146,7 @@ After attributes have been defined, they can be assigned to attribute groups. An
 
 You can also set default values for attributes that are included in an attribute group. For example, you add an attribute for color to an attribute group and select **Blue** as the default attribute value. In this case, when the attribute group is added to a product that includes color as one of its attributes, **Blue** appears as the default color for that product.
 
-![Attribute groups](media/AttributeGroup.png)
+![Attribute groups.](media/AttributeGroup.png)
 
 ### Create an attribute group
 
@@ -161,7 +159,7 @@ You can also set default values for attributes that are included in an attribute
 
 One or more attribute groups can be associated with category nodes in the following types of category hierarchies: Commerce product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy. Then, when products are categorized, they inherit the attributes that are included in the attribute groups.
 
-![Product hierarchy – Product attribute groups](media/AGRetailProdHierarchy.PNG)
+![Product hierarchy – Product attribute groups.](media/AGRetailProdHierarchy.PNG)
 
 Follow these steps to assign attribute groups to categories in the Commerce product hierarchy.
 
@@ -206,7 +204,7 @@ One or more attribute groups can be associated with one or more stores in the st
     3. Select the **Fashion Accessories** category node, select the **Fashion Sunglasses** category, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.
     4. Select the **Menswear** category node, select the **Pants** category, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.
 
-![Channel categories and product attributes – Attribute groups](media/CCPAttrGrp.png)
+![Channel categories and product attributes – Attribute groups.](media/CCPAttrGrp.png)
 
 ## Overriding attribute values
 
@@ -220,7 +218,7 @@ The default values of attributes can be overridden for individual products at th
 4. Select the required product in the grid. Then, on the Action Pane, on the **Product** tab, in the **Set up** group, select **Product attributes**.
 5. Select an attribute in the left pane, and then update its value in the right pane.
 
-![Product details page – Product attribute groups](media/ProdDetailsProdAttrValues.png)
+![Product details page – Product attribute groups.](media/ProdDetailsProdAttrValues.png)
 
 ### Override the attribute values of products in a catalog
 
@@ -239,7 +237,7 @@ The default values of attributes can be overridden for individual products at th
     > [!NOTE]
     > If shared product media and shared product attributes are created, they apply to all the products.
 
-![Catalog product attribute groups](media/CatalogProdAttrValues.png)
+![Catalog product attribute groups.](media/CatalogProdAttrValues.png)
 
 ### Override the attribute values of products in a channel
 
@@ -260,3 +258,6 @@ The default values of attributes can be overridden for individual products at th
 
     > [!NOTE]
     > If shared product media and shared product attributes are created, they apply to all the products.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

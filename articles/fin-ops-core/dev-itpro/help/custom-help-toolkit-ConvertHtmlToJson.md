@@ -4,10 +4,8 @@
 title: Custom Help Toolkit - The ConvertHtmlToJson tool
 description: This topic describes the ConvertHtmlToJson tool that is included in the Custom Help Toolkit for Finance and Operations apps. 
 author: edupont04
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
-ms.service: dynamics-ax-platform
 
 # optional metadata
 
@@ -67,3 +65,6 @@ ConvertHtmlToJson.exe --h D:\D365-Operations\d365F-O\supply-chain\de -j D:\D365-
 [Deploy custom Help to Azure](walkthrough-help-azure.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
 [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

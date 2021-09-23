@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 15 (March 2018)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 15. This version was released in March 2018. 
 author: tonyafehr
-manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -69,7 +67,7 @@ Data management honors the configuration key settings on data entities, tables, 
 
 ## Embed Power Apps
 
-Microsoft Power Apps, a service that allows developers and nontechnical users to build custom business apps without writing code, is now supported. You can add an embedded PowerApp to a page as well as edit, delete, or share the embedded PowerApp. You can also build a PowerApp to leverage data from Finance and Operations. For more information, see [Embed Power Apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+Microsoft Power Apps, a service that allows developers and nontechnical users to build custom business apps without writing code, is now supported. You can add an embedded PowerApp to a page as well as edit, delete, or share the embedded PowerApp. You can also build a PowerApp to leverage data from Finance and Operations. For more information, see [Embed Power Apps](embed-power-apps.md).
 
 ## Extension and overlayering options in Visual Studio
 
@@ -90,7 +88,7 @@ The Message Center has been upgraded to the new Action Center. Not only have the
 
 Dynamics 365 Talent provides "getting started" workbooks so users can use Excel to interactively view, edit, and create data. These workbooks, powered by the Excel add-in, provide a productive environment configuration experience. With this enhancement, you can move data from one environment to another by reading data into Excel from one environment, change the environment address, and then publish the data into the new environment.
 
-For more information, see [Copy environment data](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#copy-environment-data).
+For more information, see [Copy environment data](/../../dev-itpro/office-integration/use-excel-add-in.md#copy-environment-data).
 
 ## Power users can add custom fields to forms without developer customization
 
@@ -163,3 +161,6 @@ public final class abClassTable_Extension
 ```
 
 The form or form extension can then consume the display and edit methods from a form control by providing the **\<ClassName\>.\<MethodName\>** in the DataMethod property.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

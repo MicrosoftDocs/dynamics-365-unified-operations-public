@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (April 30, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for April 30, 2019.
+author: andreabichsel
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -59,11 +56,11 @@ The option to provide feedback is located on the **Help** menu (**?**) in Talent
 
 ### Improvements to the user interface for duplicate employee detection
 
-Because of this change, duplicates are now detected as you set name fields, and a status indicator shows the number of duplicates that have been detected. A link that is provided opens a page where you can evaluate whether you should use one of the duplicates. To avoid interrupting data entry, the duplicates page isn't automatically opened. You must select the link to open the page.
+Because of this change, duplicates are now detected as you set name columns, and a status indicator shows the number of duplicates that have been detected. A link that is provided opens a page where you can evaluate whether you should use one of the duplicates. To avoid interrupting data entry, the duplicates page isn't automatically opened. You must select the link to open the page.
 
-### Common Data Service entity support for custom fields
+### Dataverse table support for custom columns
 
-In this week's release, the following entities now support custom fields: Employment, Benefit type, and Pay cycle.
+In this week's release, the following tables now support custom columns: Employment, Benefit type, and Pay cycle.
 
 ### An error occurs when an off-boarding checklist is assigned (299877)
 
@@ -77,9 +74,9 @@ This change corrects an issue that occurs when you're rehiring an employee from 
 
 This change corrects an issue that occurs when you use advanced compensation security. When advanced security is turned on, employee self-service now shows the summary compensation amounts for both employees and managers. Before this change, summary values appeared as 0 (zero).
 
-### If a position without a title is created in Common Data Service, no position is created in Talent (314562)
+### If a position without a title is created in Dataverse, no position is created in Talent (314562)
 
-This week's changes correct an issue that occurs when you create positions in Common Data Service but don't provide a title.
+This week's changes correct an issue that occurs when you create positions in Dataverse but don't provide a title.
 
 ### Error message in performance journal entries in employee self-service (314134)
 
@@ -104,3 +101,6 @@ The ability to track employee time off and understand how time off is calculated
 ### Email support for alerts
 
 In platform update 26 for Finance and Operations, users can create alert rules that automatically send email notifications to contacts when notifications are triggered by an event.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

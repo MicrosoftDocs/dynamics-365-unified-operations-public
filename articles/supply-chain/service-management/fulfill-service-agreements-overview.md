@@ -4,11 +4,9 @@
 title: Fulfill service agreements overview 
 description: This topic provides an overview of the tasks to fulfill service agreements. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/03/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -111,3 +109,6 @@ The following table lists the forms that support the Fulfill service contracts b
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

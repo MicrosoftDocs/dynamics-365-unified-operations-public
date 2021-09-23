@@ -4,11 +4,9 @@
 title: Split a fixed asset
 description: This topic explains how to split a percentage of one asset book to a new asset book.
 author: saraschi2
-manager: AnnBe 
 ms.date: 08/06/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -65,3 +63,6 @@ Before a fully depreciated asset is split, the asset book status should be manua
     - An Acquisition transaction is created for the new asset for the same amount.
 
 4. Select **Post**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

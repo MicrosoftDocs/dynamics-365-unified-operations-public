@@ -4,11 +4,9 @@
 title: Promo banner module
 description: This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -34,15 +32,13 @@ ms.dyn365.ops.version:
 
 This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Promo banner modules are used to show inline informational messages on a page. They can be used to show site-wide promotions that appear on all pages of an e-Commerce site. 
 
 Promo banner modules support a text message and a link. If multiple messages are added to a promo banner module, it becomes a rotating carousel banner that lets customers cycle through all the messages. 
 
 Promo banner modules are driven by data from the content management system (CMS) and can be put on any page.
 
-## Usage examples of promo banners in e-Commerce
+## Usage examples of promo banners in e-commerce
 
 Promo banners can be used in the site header to show site-wide promotions or messages, as in the following examples.
 
@@ -54,7 +50,7 @@ Promo banners can be used in the site header to show site-wide promotions or mes
 
 The following image shows an example of a promo banner.
 
-![Example of a promo banner module](./media/ecommerce-Promobanner.PNG)
+![Example of a promo banner module.](./media/ecommerce-Promobanner.PNG)
 
 ## Promo banner module properties
 
@@ -67,6 +63,10 @@ The following image shows an example of a promo banner.
 | Show carousel flipper     | **True** or **False**              | A value that indicates whether the carousel flippers should be shown, so that customers can manually cycle through multiple banner items. |
 | Text alignment            | **Right**, **Left**, or **Center** | The text alignment in the promo banner module. |
 | Link                      | A URL                              | The URL for an optional link. |
+|Text alignment             | **Right**, **Left**, or **Center** | This property is available as a theme extension in the Adventure Works theme. It lets a user set the text alignment in the promo banner. |
+
+> [!IMPORTANT]
+> The Adventure Works theme is available as of the Dynamics 365 Commerce version 10.0.20 release.
 
 ## Add a promo banner module to a page 
 
@@ -87,7 +87,6 @@ To add a promo banner module to a page and set the required properties, follow t
 > [!NOTE]
 > A promo banner is typically used in the page header slot or a subheader slot.
 
-
 ## Additional resources
 
 [Module library overview](starter-kit-overview.md)
@@ -99,3 +98,6 @@ To add a promo banner module to a page and set the required properties, follow t
 [Content block module](add-hero-module.md)
 
 [Video player module](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

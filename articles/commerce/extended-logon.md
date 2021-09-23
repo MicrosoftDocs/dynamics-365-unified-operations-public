@@ -3,12 +3,10 @@
 
 title: Set up extended logon functionality for MPOS and Cloud POS
 description: This topic covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).
-author: rubencdelgado
-manager: AnnBe
-ms.date: 06/20/2017
+author: boycezhu
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
@@ -58,7 +56,7 @@ When the **Staff card logon requires password** option is enabled, the staff car
 
 ## Assigning an extended logon
 
-By default, only managers can assign extended logon to workers. To assign extended logon, go to **Extended log on** in POS. Then search for a worker by entering his or her operator ID in the search field. Select the worker, and then click **Assign**. On the next page, swipe or scan the extended logon to assign to the worker. If the swipe or scan is successfully read, the **OK** button becomes available. Click **OK** to save the extended logon for that worker.
+By default, only managers can assign extended logon to workers. To assign extended logon, go to **Extended log on** in POS. Then search for a worker by entering the worker's operator ID in the search field. Select the worker, and then click **Assign**. On the next page, swipe or scan the extended logon to assign to the worker. If the swipe or scan is successfully read, the **OK** button becomes available. Click **OK** to save the extended logon for that worker.
 
 ## Deleting an extended logon
 
@@ -66,8 +64,13 @@ To delete the extended logon that is assigned to a worker, search for the worker
 
 ## Extending extended logon
 
+Extended logon only allows five significant characters to be the unique identifier out-of-the-box. For example, if you configure two cards with the IDs “1234567” and “1234578”, they'll both be considered to be “12345”. You could build an extension to support more characters. For detailed instructions, check [Extending the Extended Logon functionality for MPOS and Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+
 The logon service can be extended to support additional extended logon devices, such as palm scanners. For more information, see the POS extensibility documentation.
 
 ## Using extended logon
 
-When extended logon is configured, and a worker has been assigned a bar code or magnetic stripe, the worker just has to swipe or scan his or her card while the POS logon page is displayed. If a password is also required before logon can proceed, the worker is prompted to enter his or her password.
+When extended logon is configured, and a worker has been assigned a bar code or magnetic stripe, the worker just has to swipe or scan the worker's card while the POS logon page is displayed. If a password is also required before logon can proceed, the worker is prompted to enter the worker's password.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

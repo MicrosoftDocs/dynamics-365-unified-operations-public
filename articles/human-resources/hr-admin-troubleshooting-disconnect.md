@@ -2,13 +2,11 @@
 # required metadata
 
 title: Client disconnects
-description: This article explains what to do if the customer is disconnected from his or her environment and doesn't know why.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: This topic explains what to do if the customer is disconnected from the environment.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -31,13 +29,15 @@ ms.dyn365.ops.version: Human Resources
 
 # Client disconnects
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 **Environment details** 
 
 This issue can occur in all environments.
  
 **Symptom** 
 
-The customer is disconnected from his or her environment and doesn't know why. The customer receives one of the following error messages:
+The customer is disconnected from the environment and doesn't know why. The customer receives one of the following error messages:
 
 - We've lost your connection. Click Close to continue working.
 - It appears you lost network connectivity, click Retry to try again.
@@ -57,3 +57,6 @@ Microsoft Dynamics 365 Human Resources disconnects users when two different sess
 Make sure that only one environment is open at a time for a given browser type. Users can open multiple sessions to the same environment (that is, multiple tabs in the same browser).
 
 Users who want to jump between two environments at the same time should open each environment in a different browser type. (For example, user A can view environment 1 in Chrome and environment 2 in Microsoft Edge.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

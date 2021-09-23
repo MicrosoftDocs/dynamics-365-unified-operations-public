@@ -4,11 +4,9 @@
 title: Migrate channels to a different Commerce Scale Unit
 description: This topic explains how to migrate a Microsoft Dynamics 365 Commerce channel to a different Commerce Scale Unit.
 author: AamirAllaq
-manager: AnnBe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -86,3 +84,6 @@ You can continue to use the origin CSU to serve other channels.
 > Do not delete the origin CSU. Doing so may make the store unoperable.
 
 After you've completed all the procedures in a sandbox UAT environment, repeat them in your production environment.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

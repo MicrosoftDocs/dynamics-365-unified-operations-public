@@ -2,13 +2,11 @@
 # required metadata
 
 title: Generate earnings for workers
-description: This topic describes the various ways that you can generate earnings for workers. You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually.
+description: This topic describes the various ways that you can generate earnings for workers.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -201,3 +199,6 @@ After you generate earnings, you must release them before you can create pay sta
 [Post payroll distributions and generate vendor invoices](noam-usa-post-payroll-generate-vendor-invoices.md)
 
 [Process existing payroll payments](noam-usa-existing-payroll-payments.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

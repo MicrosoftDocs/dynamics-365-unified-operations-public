@@ -4,11 +4,9 @@
 title: Vendor collaboration invoicing workspace
 description: This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,8 +36,7 @@ This topic explains how you can view vendor invoices and submit invoices from th
 The **Vendor collaboration invoicing** workspace can be used to view vendor invoice information and to submit invoices to the system using workflow capabilities.
 
 
-Vendor collaboration invoicing workspace
-----------------------------------------
+## Vendor collaboration invoicing workspace
 
 ### Summary tiles
 
@@ -66,3 +63,6 @@ For more information, see [Vendor collaboration with external vendors](../../sup
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

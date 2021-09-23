@@ -3,12 +3,10 @@
 
 title: Maintenance status
 description: This topic explains how to calculate maintenance status in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -64,11 +62,14 @@ In Asset Management, you can make an overview calculation for a specific period 
 
 In the screenshot below, the **Year** and **Month** buttons have been activated. With these **Group by** options selected, you get a general overview on a monthly basis of workload and throughput related to maintenance requests and work orders. 
 
-![Example of monthly workload](media/13-controlling-and-reporting.png)
+![Example of monthly workload.](media/13-controlling-and-reporting.png)
 
 ## Example 2
 
 In the screenshot below, information about functional locations has been added. Now it is possible to compare workload and throughput across functional locations, which may represent geographical locations, factories, or work areas. 
 
-![Example of monthly workload with functional locations](media/14-controlling-and-reporting.png)
+![Example of monthly workload with functional locations.](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

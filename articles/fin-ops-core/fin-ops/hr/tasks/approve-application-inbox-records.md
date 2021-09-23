@@ -4,11 +4,9 @@
 title: Approve application inbox records
 description: This procedure shows how to review applications received through the Employee self-service pages. 
 author: andreabichsel
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -51,3 +49,6 @@ This procedure shows how to review applications received through the Employee se
 2. In the list, click the link in the selected row.
 3. Expand the Attachments section.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,32 +1,14 @@
 ---
-# required metadata
-
 title: X++ date runtime functions
 description: This topic describes the date run-time functions.
 author: RobinARH
-manager: AnnBe
 ms.date: 11/03/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 31341
-ms.assetid: fbaf07ef-63d0-40aa-bef5-e44d6c6a4643
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # X++ date runtime functions
@@ -35,8 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the date run-time functions.
 
-dayName
--------
+## dayName
 
 Retrieves the name of the day of the week that is specified by a number.
 
@@ -199,7 +180,7 @@ endMth(0221989); //Returns the date 2821989.
 ```
 
 ## mkDate
-Creates a date, based on three integers that indicate the day, month, and year, respectively.
+Creates a date, based on three integers that indicate the day, month, and year, respectively. "Shorthand" values for the year argument, for example, "y", are not supported.
 
 ```xpp
 date mkDate(int day, int month, int year)
@@ -692,3 +673,6 @@ year(0221998); //Returns the value 1998.
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

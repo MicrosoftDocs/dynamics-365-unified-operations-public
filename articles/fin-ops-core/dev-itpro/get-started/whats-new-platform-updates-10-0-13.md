@@ -4,11 +4,9 @@
 title: Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)
 description: This topic lists the features are included in the platform updates for version 10.0.13 of Finance and Operations apps.
 author: sericks007
-manager: AnnBe
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -46,15 +44,15 @@ This topic lists the features that are included in the platform updates for vers
 -  Priority-based throttling<br>- For more information, see 
 [Priority-based throttling](../data-entities/priority-based-throttling.md). 
 
--  [Saved views - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- For more information, see 
+-  [Saved views - general availability](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- For more information, see 
 [Saved views](../../fin-ops/get-started/saved-views.md). 
 
--  [New grid control - general availability](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-grid-control--general-availability)<br>- For more information, see 
+-  [New grid control - general availability](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-grid-control--general-availability)<br>- For more information, see 
 [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md). 
 
--  [Upgrade three jQuery components libraries](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/upgrade-three-jquery-components-libraries)
+-  [Upgrade three jQuery components libraries](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/upgrade-three-jquery-components-libraries)
 
--  [Allow validation of control state in task recordings](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-task-recorder-capabilities)<br>- For more information, see the "Validate" section in 
+-  [Allow validation of control state in task recordings](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/new-task-recorder-capabilities)<br>- For more information, see the "Validate" section in 
 [Task recorder resources](../user-interface/task-recorder.md#validate). To use this feature in combination with the Regression suite automation tool (RSAT), you must update to [RSAT 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=57357).  
 
 
@@ -68,7 +66,7 @@ For information about the bug fixes that are included in this update, sign in to
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 2 plan](/dynamics365-release-plan/2020wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated platform features
 
@@ -80,3 +78,6 @@ The [Removed or deprecated platform features](removed-deprecated-features-platfo
 A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic 12 months before the removal of any feature from the product.
 
 For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

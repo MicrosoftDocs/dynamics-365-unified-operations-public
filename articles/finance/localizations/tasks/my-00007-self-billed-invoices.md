@@ -4,11 +4,9 @@
 title: MY-00007 Self-billed invoices
 description: This procedure walks you through the Creation and printing of Vendor self-billed invoice. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -96,3 +94,6 @@ This procedure was created using the demo data company MYMF.
     * Review the Self-billed invoice report for accuracy.  
     * Verify that the Self-billed invoice report includes the GST summary section, the GST code, the Amount origin, the Quantity and the GST amount.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

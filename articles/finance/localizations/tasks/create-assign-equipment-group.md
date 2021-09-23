@@ -4,11 +4,9 @@
 title: Create and assign an equipment group
 description: Use this procedure to learn how to create an equipment group and configure an equipment group it to a fixed asset. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -66,3 +64,6 @@ This procedure was created using the demo data company JPMF.
 4. In the Fixed asset equipment group field, type a value.
 5. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

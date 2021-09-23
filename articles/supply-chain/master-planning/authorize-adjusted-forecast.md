@@ -4,11 +4,9 @@
 title: Authorize an adjusted forecast
 description: Not all forecast data must be authorized immediately. This article explains how you can specify the period that a forecast is authorized for. It also explains how you can authorize the forecast for specific companies and forecast models.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -45,8 +43,7 @@ You can select the companies and the forecast models to authorize the forecast f
 
 It's very important that you understand how the **Save the manual adjustments made to the baseline demand forecast** check box works. If you've made manual adjustments to the statistical baseline forecast, the adjusted values are authorized for use, even if this check box is cleared. However, the changes are discarded after the authorization. Therefore, the next time that a forecast is generated, that forecast is only a statistical forecast and doesn't have any manual overrides, even if **Transfer manual adjustments to the demand forecast** is selected. Therefore, you can consider the **Save the manual adjustments made to the baseline demand forecast** check box a mechanism that lets you keep or discard all manual changes.
 
-Additional resources
---------
+## Additional resources
 
 [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
@@ -54,3 +51,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

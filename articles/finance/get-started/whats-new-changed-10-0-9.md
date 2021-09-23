@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Finance version 10.0.9 (April 2020)
-description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.8.
+description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.9.
 author: roschlom
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,35 +36,35 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Fin
 - **General availability (self-update):** March 2020
 - **Auto-update:** April 2020
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
+The following features are included in this release. The feature titles link to additional information on the [Release plans](/dynamics365/release-plans/) site. 
 
-- [Daily statement of Treasures accountability ](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/daily-statement-treasurers-accountability)
+- [Daily statement of Treasures accountability ](/dynamics365-release-plan/2020wave1/dynamics365-finance/daily-statement-treasurers-accountability)
 
- - [Update bank balances when posting transactions using advanced ledger entry](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
+ - [Update bank balances when posting transactions using advanced ledger entry](/dynamics365-release-plan/2020wave1/dynamics365-finance/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
  
- - [Vendor bidding – RFQ questions from vendors and summarized responses](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
+ - [Vendor bidding – RFQ questions from vendors and summarized responses](/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
  
- - [Credit management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/credit-management)
+ - [Credit management](/dynamics365-release-plan/2020wave1/dynamics365-finance/credit-management)
  
- - [Extended Italian localization: separate accounts for credit notes](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-separate-accounts-credit-notes)
+ - [Extended Italian localization: separate accounts for credit notes](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-separate-accounts-credit-notes)
  
- - [Extended Italian localization: sales invoice lines sorting by packing slips](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-sales-invoice-lines-sorting-packing-slips)
+ - [Extended Italian localization: sales invoice lines sorting by packing slips](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-sales-invoice-lines-sorting-packing-slips)
  
- - [Extended Italian localization: miscellaneous charges per kilogram in Intrastat declaration](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-miscellaneous-charges-per-kilogram-intrastat-declaration)
+ - [Extended Italian localization: miscellaneous charges per kilogram in Intrastat declaration](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-miscellaneous-charges-per-kilogram-intrastat-declaration)
  
- - [Extended Italian localization: bank account setup enhancement](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-bank-account-setup-enhancement)
+ - [Extended Italian localization: bank account setup enhancement](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-bank-account-setup-enhancement)
  
- - [Extended Italian localization: posting invoices with zero amount](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-posting-invoices-zero-amount)
+ - [Extended Italian localization: posting invoices with zero amount](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-posting-invoices-zero-amount)
  
- - [Extended Italian localization: advanced notes management](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-advanced-notes-management)
+ - [Extended Italian localization: advanced notes management](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-advanced-notes-management)
 
-- [Extended Italian localization: improved inquiry on debit/credit](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-improved-inquiry-debitcredit)
+- [Extended Italian localization: improved inquiry on debit/credit](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-improved-inquiry-debitcredit)
 
-- [Extended Italian localization: tax invoice for goods delivered for free](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-tax-invoice-goods-delivered-free)
+- [Extended Italian localization: tax invoice for goods delivered for free](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-italian-localization-tax-invoice-goods-delivered-free)
 
-- [Extended Swiss localization: QR-bill implementation](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-swiss-localization-qr-bill-implementation)
+- [Extended Swiss localization: QR-bill implementation](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-swiss-localization-qr-bill-implementation)
 
-- [Extended French localization: ISO 20022 format for international payment and treasury transfer](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-french-localization-iso20022-format-international-payment-treasury-transfer)
+- [Extended French localization: ISO 20022 format for international payment and treasury transfer](/dynamics365-release-plan/2020wave1/dynamics365-finance/extended-french-localization-iso20022-format-international-payment-treasury-transfer)
 
 ## Additional resources
 
@@ -79,14 +77,14 @@ Microsoft Dynamics 365 Finance 10.0.9 includes Platform update 33. To learn more
 For information about the bug fixes included in each of the updates that are part of 10.0.9, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=415034&dbType=3&qc=7bdf05cf1859a5a56f4b9c0dae88fa1653d489181b3a2c1f19429225daf5724b).
 
 ### Regulatory updates
-For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](https://docs.microsoft.com/dynamics365/finance/localizations/regulatory-updates). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
+For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
 
 ### Dynamics 365: 2020 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2020 release wave 1 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan/2020wave1/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 
@@ -98,3 +96,6 @@ The [Removed or deprecated features](removed-deprecated-features-finance.md) top
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Synchronize self-service installers in Dynamics 365 Commerce
-description: This topic explains how to use Asset and Shared asset libraries in Microsoft Dynamics Lifecycle Services (LCS), and Dynamics 365 Headquarters, to upload and synchronize self-service installers so that they can be used with the standard self-service download mechanism.
+description: This topic explains how to upload and synchronize self-service installers so that they can be used with the standard self-service download mechanism.
 author: jashanno
-manager: AnnBe
-ms.date: 07/14/2020
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics-365-retail
 ms.technology:  
 
 # optional metadata
@@ -47,11 +45,15 @@ This topic explains how to use the Asset library and Shared asset library in Mic
 
 ## Overview
 
-The **Retail Self-service package** subsection in the Shared asset library stores all monthly releases for self-service installers. These installers include Modern POS (which includes the offline version), Commerce Scale Unit (which was formerly known as Retail Store Scale Unit \[RSSU\]), and hardware station. You can also upload customized installers into both this library and the project-level Asset library. By using these locations, you can then synchronize the available installers in Dynamics 365 Headquarters. After synchronization is completed, all the installers that are available between these two libraries (and whatever previously existed in the environment) will be accessible for the standard self-service download processes that are described in detail in separate topics (see the links in the table of terms earlier in this topic).
+The **Retail Self-service package** subsection in the **Shared asset library** stores all monthly releases for self-service installers. These installers include Modern POS (which includes the offline version), Commerce Scale Unit (which was formerly known as Retail Store Scale Unit \[RSSU\]), and hardware station. You can also upload customized installers into both this library and the project-level Asset library. By using these locations, you can then synchronize the available installers in Dynamics 365 Headquarters. After synchronization is completed, all the installers that are available between these two libraries (and whatever previously existed in the environment) will be accessible for the standard self-service download processes that are described in detail in separate topics (see the links in the table of terms earlier in this topic).
 
 The following illustration shows a generic example of the **Retail Self-service package** subsection in the Shared asset library (or Asset library).
 
-![Retail Self-service package subsection in the Shared asset library](media/SharedAssets.jpg)
+![Retail Self-service package subsection in the Shared asset library.](media/SharedAssets.jpg)
+
+## Upload or modify the self-service installer packages
+
+When viewing the **Retail Self-service package files** subsection in the **Shared asset library**, the listings will include what is published by Microsoft and anything uploaded by the project owners and users. Regardless of who uploads the package file (Microsoft or a user), the file can be edited to add additional details. At the top of the package listings are buttons. The first button is the **Upload** button, the second is the **Delete** button, and the third is the **Edit** button. Using the **Upload** button, a user can upload a customized package or custom installer/file that is needed for that particular project. Regardless of how the file was uploaded, any package can be selected and the **Edit** button can be used to alter the friendly name and add an informational description to the file. The legacy self-service installer packages that are uploaded by Microsoft or customized and uploaded by a project user/developer can provide easier reading, understanding, and detailing by adding a useful description. Then, when synchronized, the installers showcased can be more easily viewed, understood, and utilized.
 
 ## Synchronize installers in Dynamics 365 Headquarters
 
@@ -63,8 +65,8 @@ The following illustration shows a generic example of the **Retail Self-service 
     >
     > As noted at the beginning of this topic, the earlier self-service package upload method is obsolete but will continue to be supported until it's removed in the future.
 
-4. On the same page, you can select default packages that will be used throughout headquarters in their relevant locations (**Devices**, **All stores**, and **Channel database**).
-5. Perform standard configuration and installation flows for Modern POS, hardware station, or Commerce Scale Unit by using the links in the following table.
+3. On the same page, you can select default packages that will be used throughout headquarters in their relevant locations (**Devices**, **All stores**, and **Channel database**).
+4. Perform standard configuration and installation flows for Modern POS, hardware station, or Commerce Scale Unit by using the links in the following table.
 
 > [!NOTE]
 > There are several installers.  Modern POS, Modern POS with offline (note that this is a separate installer), Commerce Scale Unit (self-hosted, formerly named *Retail Store Scale Unit*), hardware station, and the less frequent installers (AX 2012 R3 support installers and the Peripheral Simulator).
@@ -74,3 +76,6 @@ The following illustration shows a generic example of the **Retail Self-service 
 | Modern POS | [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md) |
 | Hardware station | [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) |
 | Commerce Scale Unit (formerly known as Retail Store Scale Unit) | [Configure and install Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md) |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

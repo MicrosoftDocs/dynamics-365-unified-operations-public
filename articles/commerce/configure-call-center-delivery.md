@@ -4,11 +4,9 @@
 title: Configure call center delivery modes and charges
 description: This topic describes how to set up modes of delivery and charges for a call center order in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -72,11 +70,11 @@ In the **Lines** section, you can define one or more charges by currency, as you
 
 Companies often configure tiered charges. In this case, the amount that customers pay for delivery is based on the order value. To configure tiered charges, enter values in the **From amount** and **To amount** fields in addition to defining the charge itself in the **Charges value** field. For example, for orders that have a value that is less than $50, a retailer charges $5.95 for ground shipping. For orders that have a value that is equal to or more than $50, but less than $100, the retailer charges $7.95. Finally, for orders that have a value that is equal to or more than $100, the retailer provides free shipping. The following illustration shows the configuration of these charges.
 
-![Fixed tiered charges example](media/fixedtieredcharges.png)
+![Fixed tiered charges example.](media/fixedtieredcharges.png)
 
 You can use a mixture of categories for charges, depending on your business requirements. For example, for all orders that have a value that is less than $100, there is a fixed charge of $9.95 for shipping. Then, for orders that have a value that is equal to or more than $100, delivery charges are calculated at a rate of 5 percent of the order value. The following illustration shows the configuration of these charges.
 
-![Mixed tiered charges example](media/mixedtieredcharges.png)
+![Mixed tiered charges example.](media/mixedtieredcharges.png)
 
 ## Apply delivery modes during order entry in a call center
 
@@ -99,3 +97,6 @@ You can optionally link an expedite code to any delivery mode that you configure
 For example, for orders that will be shipped by next-day air, picking must be done in the warehouse by 1 PM every day. In this case, an expedite code can be created, and that code can be linked to any next-day delivery mode that is configured in the system. When the warehouse creates its pick wave, the appropriate expedite code in the **Expedite** field can be used as a filter, so that picking is run only for orders that have delivery modes that are linked to that code.
 
 Additionally, when a call center order is entered, an expedite code can be manually applied either to the sales order header or to an individual sales order line. Again, the code can be used for sorting or reporting purposes. Sometimes, an order must be handled carefully because of a customer service issue. In this case, a specific expedite code can be applied to the order header or lines to help identify and prioritize the order during the fulfillment process.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Derogatory depreciation for France
 description: This article provides information about derogatory depreciation and how to set it up. In derogatory depreciation, an extra amount of depreciation is calculated as the difference between the depreciation amount on the tax value model and the depreciation amount on the accounting value model during the life of a fixed asset.
 author: Anasyash
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -50,3 +48,6 @@ On the **Fixed asset posting profiles** page, you set up general ledger accounts
 ## Additional resources
 
 - [Fixed asset value model and depreciation book merge](../fixed-assets/fixed-asset-value-model-depreciation-book-merge.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

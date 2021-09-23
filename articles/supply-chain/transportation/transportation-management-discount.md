@@ -4,11 +4,9 @@
 title: Transportation management discounts
 description: This topic describes the options for setting up discounts for transportation charges.
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,3 +35,6 @@ To set up discounts for transportation management, go to **Transportation manage
 You can choose whether to pass the discount on to your customer (by setting the discount type to customer) or to retain it in the company (by setting the discount type to shipper). This lets you define a setup in which you earn a margin on the calculated freight charges.
 
 You can set up multiple qualifiers for each discount, such as carrier, carrier service, delivery terms, customer, destination, and more.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

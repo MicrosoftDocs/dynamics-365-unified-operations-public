@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Modify formats to generate documents that have application data
-description: To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 3 - Modify model and mapping)". 
+description: This topic describes how to design reporting configurations to generate an electronic document and update application data.
 author: NickSelin
-manager: AnnBe 
 ms.date: 06/19/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -153,3 +151,6 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 46. Close the page.
 47. Close the page.
 48. Close the page.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

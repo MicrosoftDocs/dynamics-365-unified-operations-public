@@ -4,11 +4,9 @@
 title: Control warehouse work by using work templates and location directives
 description: This topic describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.
 author: perlynne
-manager: tfehr
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -80,4 +78,7 @@ Location directives determine *where* items should be picked and *where* they sh
 ## Additional resources
 
 - Video: [Warehouse management configuration deep dive](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Help topic: [Create location directives](create-location-directive.md)
+- Help topic: [Work with location directives](create-location-directive.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

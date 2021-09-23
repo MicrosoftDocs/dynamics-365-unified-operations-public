@@ -4,11 +4,9 @@
 title: Prepare a process kanban job when materials are available for the work cell
 description: This task focuses on preparing a process kanban job when all materials are available for the work cell. 
 author: johanhoffmann
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -43,3 +41,6 @@ This task focuses on preparing a process kanban job when all materials are avail
 6. Click Prepare.
     * The preparation process is now completed. The selected check box for all rows in the picking list indicates that the supply status is picked.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

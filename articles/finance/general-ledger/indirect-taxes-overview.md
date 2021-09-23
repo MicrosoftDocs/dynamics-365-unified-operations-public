@@ -4,11 +4,9 @@
 title: Sales tax overview
 description: This topic provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,7 @@ ms.reviewer: roschlom
 
 
 # ms.tgt_pltfrm: 
-ms.custom: 13111
+ms.custom: ["13111", "intro-internal"]
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
 # ms.search.industry: 
@@ -37,14 +35,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 
-Overview
---------
+## Overview
 
 The sales tax framework supports many types of indirect taxes, such as sales tax, value-added tax (VAT), goods and services tax (GST), unit-based fees, and withholding tax. These taxes are calculated and documented during purchase and sales transactions. Periodically, they must be reported and paid to tax authorities. 
 
 The following diagram shows the entities of the tax setup and how they are related.
 
-[![Diagram showing overview of tax setup entities](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Diagram showing overview of tax setup entities.](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 For every sales tax that a company must account for, a sales tax code must be defined. A sales tax code stores the tax rates and calculation rules for the sales tax. 
 
@@ -103,3 +100,6 @@ However, if you are using a conditional sales tax, you settle with the tax autho
 If you use postdated check as the payment method, when the payment is created, the bank account isn't cleared. In some countries, the VAT becomes 'realized' liability when the payment clears the bank, which means the postdated check is settled. You can enable it by selecting **Realize the conditional tax when postdated checks are drawn** in **Cash and bank management > Setup > Cash and bank management parameters > Postdated checks**.
 
 For more information, see [Set up withholding tax](tasks/set-up-withholding-tax.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Extensibility FAQ
 description: This topic provides answers to some frequently asked questions about extensibility.
 author: FrankDahl
-manager: AnnBe
 ms.date: 02/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 audience: Developer
@@ -80,7 +74,7 @@ We plan to provide monthly updates of platform and application after Microsoft D
 
 ## Why wasn't my extensibility request accepted?
 
-Some extensibility requests break changes. Some of the more common potentially breaking requests are listed here along with potential workarounds. In addition, read [Creating extensions](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/add-enum-value) to understand the existing platform extension capabilities and [Tips for logging extensibility requests](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/tips-for-logging-extensibility-requests) to learn more about how to create solid requests if a capability doesn't exist in the latest release.
+Some extensibility requests break changes. Some of the more common potentially breaking requests are listed here along with potential workarounds. In addition, read [Creating extensions](add-enum-value.md) to understand the existing platform extension capabilities and [Tips for logging extensibility requests](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/tips-for-logging-extensibility-requests) to learn more about how to create solid requests if a capability doesn't exist in the latest release.
 
 ### Why can't EDT.StringSize be made extensible?
 
@@ -113,3 +107,6 @@ Some extensibility requests break changes. Some of the more common potentially b
 Throughout the application, an effort has been made to avoid breaking changes to APIs made by customers, partners, or ISVs. When a class or method has the **InternalUseOnlyAttribute** applied to it, this means that the API is for internal use only and could change without warning. If customers, partners, or ISVs use or extend an API with **InternalUseOnlyAttribute**, this could create issues because the API could change at any time, which would require changes in their extensions before an update can be applied. This could result in urgent changes and the need to recompile. Developers should not depend on these classes and methods remaining unchanged.
 
 Calls to classes and methods with the **InternalUseOnlyAttribute** will result in compiler warnings. Starting in Platform update 20 to Platform update 24, targeting classes and methods with **InternalUseOnlyAttribute** using Chain of Command will result in compiler errors. In Platform update 25 and later, we plan to continue to issue compiler warnings. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

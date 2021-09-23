@@ -4,11 +4,9 @@
 title: Accounts payable in the public sector overview
 description: This article introduces you to the public sector Accounts payable functionality that is integrated with Microsoft Dynamics 365 Finance. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project Accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 19661
+ms.custom: ["19661", "intro-internal"]
 ms.assetid: b4c903dd-5ec7-4ec5-9dc9-77ba4f00fab8
 ms.search.region: Global
 ms.search.industry: Public sector
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article introduces you to the public sector Accounts payable functionality that is integrated with Dynamics 365 Finance. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project Accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
 
-What are the prerequisites for setting up Accounts payable in the public sector?
---------------------------------------------------------------------------------
+## What are the prerequisites for setting up Accounts payable in the public sector?
 
 Before you begin to adjust the settings and enter your data, you should complete the following tasks:
 
@@ -118,3 +115,6 @@ For more information, see the following topics:
 [Import and create multiple one-time vendors and invoices](tasks/import-multiple-one-time-vendors.md)
 
 [Set up purchase agreement classifications](tasks/set-up-purchase-agreement-classifications-public-sector.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

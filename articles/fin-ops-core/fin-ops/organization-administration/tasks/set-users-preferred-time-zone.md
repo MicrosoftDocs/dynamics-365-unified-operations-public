@@ -4,11 +4,9 @@
 title: Set a user's preferred time zone
 description: This topic explains how a user in the System Administrator role can set the time zone for a user. 
 author: pvillads
-manager: AnnBe 
 ms.date: 07/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -38,3 +36,6 @@ The following topic explains how a user in the System Administrator role can set
 5. In the **Time zone** field, select an option from the drop-down list.
 6. Select **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

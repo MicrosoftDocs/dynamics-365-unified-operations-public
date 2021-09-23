@@ -4,11 +4,9 @@
 title: Kanban job scheduling for lean manufacturing
 description: This article provides information about visual control over kanban job scheduling and various ways to schedule kanban jobs.  
 author: cvocph
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -71,8 +69,10 @@ The available capacity by day or week is defined by the calendar that is assigne
 
 The **Kanban job scheduling** list page contains a FactBox that shows the available and booked period capacity for the selected work cell. Depending on the selected schedule periods in the production flow model, the periods show days or weeks.
 
-Additional resources
---------
+## Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

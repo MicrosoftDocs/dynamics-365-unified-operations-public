@@ -2,13 +2,11 @@
 # required metadata
 
 title: Lifecycle Services resources
-description: Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your implementations of the Dynamics 365 Finance and Operations apps.
+description: Lifecycle Services (LCS) for Microsoft Dynamics provides an environment and services that can help you manage your application lifecycle.
 author: kfend
-manager: AnnBe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -47,7 +45,7 @@ Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that p
 -   [Customization analysis in Lifecycle Services (LCS)](./ax-2012/customization-analysis-lcs.md)
 -   [Infrastructure estimator in Lifecycle Services (LCS)](./ax-2012/infrastructure-estimator-lcs.md)
 -   [Issue search in Lifecycle Services (LCS)](issue-search-lcs.md)
--   [License sizing estimator in Lifecycle Services (LCS)](./ax-2012/license-sizing-estimator-lcs.md)
+-   [License sizing estimator in Lifecycle Services (LCS)](/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs)
 -   [Request for proposals (RFP) responses](./ax-2012/rfp-responses-lcs.md)
 -   [System diagnostics in Lifecycle Services (LCS)](./ax-2012/system-diagnostics-lcs.md)
 -   [Upgrade analysis in Lifecycle Services (LCS)](./ax-2012/upgrade-analysis-lcs.md)
@@ -62,3 +60,6 @@ Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that p
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

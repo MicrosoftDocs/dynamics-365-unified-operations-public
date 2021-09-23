@@ -4,11 +4,9 @@
 title: Forecast reduction keys
 description: This topic provides examples that show how to set up a reduction key. It includes information about the various reduction key settings and the results of each. You can use a reduction key to define how to reduce forecast requirements.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -92,7 +90,18 @@ In this case, if you run forecast scheduling on January 1, the demand forecast r
 
 ### Transactions – reduction key
 
-If you select **Transactions - reduction key**, the forecast requirements are reduced by the transactions that occur during the periods that are defined by the reduction key.
+If you set the **Method used to reduce forecast requirements** field to *Transactions - reduction key*, the forecast requirements are reduced by the qualified demand transactions that occur during the periods that are defined by the reduction key.
+
+The qualified demand is defined by the **Reduce forecast by** field on the **Coverage groups** page. If you set the **Reduce forecast by** field to *Orders*, only sales order transactions are considered qualified demand. If you set it to *All transactions*, any non-intercompany issue inventory transactions are considered qualified demand. If intercompany sales orders should also be considered qualified demand, set the **Include intercompany orders** option to *Yes*.
+
+Forecast reduction starts with the first (earliest) demand forecast record in the reduction key period. If the quantity of qualified inventory transactions is more than the quantity of demand forecast lines in the same reduction key period, the balance of inventory transactions quantity will be used to reduce the demand forecast quantity in the previous period (if there is unconsumed forecast).
+
+If no unconsumed forecast remains in the previous reduction key period, the balance of inventory transactions quantity will be used to reduce the forecast quantity in the next month (if there is unconsumed forecast).
+
+The value of the **Percent** field on the reduction key lines isn't used when the **Method used to reduce forecast requirements** field is set to *Transactions - reduction key*. Only the dates are used to define the reduction key period.
+
+> [!NOTE]
+> Any forecast that is posted on or before today's date will be ignored and won't be used to create planned orders. For example, if your demand forecast for the month is generated on January 1, and you run master planning that includes demand forecasting on January 2, the calculation will ignore the demand forecast line that is dated January 1.
 
 #### Example: Transactions – reduction key
 
@@ -202,7 +211,7 @@ Therefore, the following planned orders are created.
 A forecast reduction key is used in the **Transactions - reduction key** and **Percent- reduction key** methods for reducing forecast requirements. Follow these steps to create and set up a reduction key.
 
 1. Go to **Master planning \> Setup \> Coverage \> Reduction keys**.
-2. Select **New** or press **Ctrl+N** to create a reduction key.
+2. Select **New** to create a reduction key.
 3. In the **Reduction key** field, enter a unique identifier for the forecast reduction key. Then, in the **Name** field, enter a name. 
 4. Define the periods and the reduction key percentage in each period:
 
@@ -230,3 +239,6 @@ When you select **Transactions - reduction key** or **Transactions - dynamic per
 ## Additional resources
 
 [Master plans overview](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Generate and post payment fee
 description: This task walks you through generating and posting a payment fee for Japan. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -50,3 +48,6 @@ This task was created using the demo data company JPMF.
     * You can also try to change the amount of payment, third party bank account, or the bank account to see that different combinations of these fields will result in a different payment fee amount.  
 10. Click Post.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

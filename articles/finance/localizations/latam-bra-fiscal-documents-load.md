@@ -4,11 +4,9 @@
 title: Generate fiscal documents for a load
 description: This topic explains how to generate fiscal documents for a load for Brazil.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/05/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -145,3 +143,6 @@ If you don't have access to the pages that are used to complete this task, conta
 | Configuration keys            | Click **System administration** &gt; **Setup** &gt; **Licensing** &gt; **License configuration**. Expand the **Trade** license key, and then select the **Warehouse and Transportation management** configuration key. |
 | Security roles and duties     | To perform this task, you must be a member of a security role that includes the **Maintain customer invoice transactions** (CustInvoiceCustomerInvoiceTransMaintain) duty. |
 | Security roles and privileges | To perform this task, you must be a member of a security role that includes the **Loads** (WHSLoadTableInvoicePost\_BR) privilege. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

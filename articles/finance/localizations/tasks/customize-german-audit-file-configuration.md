@@ -4,11 +4,9 @@
 title: Customize German audit file configuration
 description: This procedure shows how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -89,3 +87,6 @@ This procedure was created using the demo data company DEMF with Germany as the 
 54. In the Description field, type a value.
 55. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

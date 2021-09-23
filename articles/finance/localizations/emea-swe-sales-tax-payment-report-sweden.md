@@ -4,11 +4,9 @@
 title: Sales tax report for Sweden
 description: This topic explains how to set up and generate the sales tax report for legal entities in Sweden.
 author: anasyash
-manager: AnnBe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -189,7 +187,7 @@ The following example shows how you can set up sales tax codes and sales tax rep
 4. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Original**.
 5. Print the report, and review the data.
 
-    ![Sales tax reporting original list](media/1_Sales_tax_reporting.png)
+    ![Sales tax reporting original list.](media/1_Sales_tax_reporting.png)
 
 6. Post the new transaction. For example, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 
@@ -200,14 +198,17 @@ The following example shows how you can set up sales tax codes and sales tax rep
 7. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Latest corrections**.
 8. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Corrections**. The following illustration shows the result.
 
-    ![Sales tax reporting list of corrections](media/2_Sales_tax_reporting.png)
+    ![Sales tax reporting list of corrections.](media/2_Sales_tax_reporting.png)
 
 9. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Total list**. The following illustration shows the result.
 
-    ![Sales tax reporting total list](media/3_Sales_tax_reporting.png)
+    ![Sales tax reporting total list.](media/3_Sales_tax_reporting.png)
 
 ## Report VAT declaration to the Tax authority
 
 After you've generated the Swedish sales tax report, use the data on it to fill in the VAT declaration for the Swedish Tax Agency in the official format. For example, the following illustration shows what the Swedish VAT declaration has looked like since 2016.
 
-![Swedish VAT declaration report](media/4_Swedish_VAT_declaration.png)
+![Swedish VAT declaration report.](media/4_Swedish_VAT_declaration.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

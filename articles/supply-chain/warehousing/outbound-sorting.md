@@ -4,11 +4,9 @@
 title: Outbound sorting
 description: This topic provides information about outbound sorting. This functionality makes it easier to handle small containers, and helps warehouse workers better plan and organize pallet capacity in the truck.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -669,3 +667,6 @@ You must complete the sorted inventory picking work. When it's completed, the in
     Work is completed.
 
 From this point forward, all other warehouse processes apply.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Replenishment with withdrawal kanbans
 description: This topic describes how the withdrawal kanban is used for material replenishment for manufacturing activities.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,13 +33,12 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic describes how the withdrawal kanban is used for material replenishment for manufacturing activities.
 
 ## Workflow for material replenishment that uses the withdrawal kanban
--------------------------------------------------------------------
 
 The withdrawal kanban can be used to move a kanban of a single item between warehouses and production locations where the material is consumed. The withdrawal kanban supports a pull-based solution for material replenishment, where a pull signal is required in order to trigger supply for a specific demand. 
 
 The following scenario shows a pull-based replenishment system where a pull signal triggers the creation of a kanban to replenish material for a production process. 
 
-[![Pull signal triggers the creation of a kanban to replenish material for a production process](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![Pull signal triggers the creation of a kanban to replenish material for a production process.](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  Withdrawal kanban
 2.  Kanban “from” location and put location for warehouse work
@@ -78,7 +75,7 @@ If the distance between the warehouse locations and the production input locatio
 
 In the following scenario, the transfer activity of the withdrawal kanban is configured to transfer between two locations in the same warehouse. The transfer activity of the withdrawal kanban is set up so that it’s completed automatically. 
 
-[![Transfer activity is automatically completed when kanban picking work is processed](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![Transfer activity is automatically completed when kanban picking work is processed.](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  Shared warehouse for raw materials and production
 2.  Warehouse locations for raw materials
@@ -89,3 +86,6 @@ In the following scenario, the transfer activity of the withdrawal kanban is con
 
 After a kanban is consumed at the production input location, the kanban is reported as empty, and a new kanban is added to the flow. When the kanban is created, a wave line is added to a kanban wave. When the kanban wave is processed, warehouse work for kanban picking is created. The warehouse worker processes the work for kanban picking and is directed by the work to pick the material for the kanban in a warehouse location. As this warehouse worker confirms the pick, the kanban is automatically completed, and the warehouse worker is guided to the put the material to the production input location.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

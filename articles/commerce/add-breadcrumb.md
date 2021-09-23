@@ -4,11 +4,9 @@
 title: Breadcrumb module 
 description: This topic covers breadcrumb modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -34,8 +32,6 @@ ms.dyn365.ops.version:
 
 This topic covers breadcrumb modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Breadcrumb modules are used to provide secondary navigation on site pages. They are typically shown at the top of a page, below the header. Although breadcrumb modules can be added to any page, they are most often used on product details pages (PDPs), to show the product category hierarchy and provide a quick way to move around a site. A breadcrumb module can also be used to show a "Back to results" link when users open a PDP from a search or list page. In this way, users can quickly return to their filtered list page to continue shopping.
 
 On pages that have product category context, such as PDPs and category pages, breadcrumb modules show the category hierarchy. On pages that don't have category context, breadcrumb modules show **&lt;Site root&gt; / &lt;Current page&gt;** by default. Breadcrumb modules can also be manually configured on other types of site pages to show links to specific pages on the site.
@@ -45,7 +41,7 @@ On pages that have product category context, such as PDPs and category pages, br
 
 The following image shows an example of a breadcrumb module that shows the category hierarchy on a PDP.
 
-![Example of a breadcrumb module](./media/ecommerce-breadcrumb.PNG)
+![Example of a breadcrumb module.](./media/ecommerce-breadcrumb.PNG)
 
 ## Breadcrumb module settings
 
@@ -98,3 +94,6 @@ To add a breadcrumb module to a PDP and set the required properties, follow thes
 [Buy box module](add-buy-box.md)
 
 [SDK and module library updates](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

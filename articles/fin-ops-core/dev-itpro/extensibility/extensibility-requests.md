@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Extensibility requests
 description: This topic explains how to file a request for additional extension points for Finance and Operations. 
 author: FrankDahl
-manager: AnnBe
 ms.date: 06/02/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -55,7 +49,7 @@ Extensibility requests are logged using a specific project in LCS. Logged reques
 
 In your LCS project, at the top of the page, select the hamburger icon and then click **Support** menu item.
 
-![Extensibility support requests](media/extensibility-support-requests.png)
+![Extensibility support requests.](media/extensibility-support-requests.png)
 
 You can view the list of logged extensibility support requests and their status. Click the request ID to review details of the logged request. 
 
@@ -75,7 +69,7 @@ When you click **Manage extensibility options**,  you can view all of the inform
   > Note that Microsoft does not guarantee that all requests will be provided by the date given. However, the required date provides an indication that will be considered when planning for requests at Microsoft.
 
 
-![Maintain extensibility support options](media/extensibility-options.png)
+![Maintain extensibility support options.](media/extensibility-options.png)
 
 Extensibility support options can be updated to reflect any changes after a request is created. After you have made your updates to the request, click **Update** to notify Microsoft of your changes.
 
@@ -90,7 +84,7 @@ Microsoft rarely enables requests by adding inline delegates, so when possible, 
 
 Click **Attach file from computer** to upload documents that you can attach to requests. You can use the attachments to supply code snippets that provide additional details for the request. We recommend that you be as specific as possible with your requests.
 
-![Create extensibility support request](media/create-extensibility-request.png)
+![Create extensibility support request.](media/create-extensibility-request.png)
 
 Log a request for each instance. Do not bundle multiple requests into one. If multiple requests are related, consider adding a document or description that includes request ID's so that any work on the requests is considered in context.
 
@@ -115,3 +109,6 @@ After Dynamics 365 for Finance and Operations release 8.0, we plan to release fr
 ## Still have questions?
 
 Read the [Extensibility FAQ](app-sealing-faq.md) and the other resources listed on the [Extensibility home page](extensibility-home-page.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Update code and environments for Commerce projects
 description: This topic describes recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
-manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 # optional metadata
 
@@ -34,13 +32,13 @@ ms.dyn365.ops.version: Retail 7.3
 
 An environment can be updated by updating either its data or its code.
 
-There are multiple ways to update the data. For examples that show how to get data into an environment, see [Data entities and data packages](../../dev-itpro/data-entities/integration-overview.md).
+There are multiple ways to update the data. For examples that show how to get data into an environment, see [Integration between Finance and Operations apps and third-party services](../../dev-itpro/data-entities/integration-overview.md).
 
 When you update an environment, you should also consider moving the whole database. This approach lets you quickly and easily duplicate the data from one environment to another.
 
 Other updates are code updates. The environment page in Microsoft Dynamics Lifecycle Services (LCS) tracks the updates that have been applied and the updates that must be applied. The following illustration shows an environment that has 79 outstanding X++ fixes, 14 outstanding binary updates, and nine outstanding platform binary updates.
 
-![LCS environment page](./media/17-LCS-environment-page.png)
+![LCS environment page.](./media/17-LCS-environment-page.png)
 
 Platform code is at a very low level, and no Microsoft Dynamics 365 Commerce features are implemented in the platform. Therefore, stand-alone platform binary updates don't require that you retest any Commerce-specific code. Examples of features that are implemented in the platform are the Data Import/Export Framework (DIXF) and the batch framework.
 
@@ -52,13 +50,13 @@ Application updates or hotfixes are delivered in X++ source code. Therefore, the
 
 Note that some updates require both an application update and a binary update. For hotfix recommendations, see the next section.
 
-Third-party packages resemble application packages, but they are developed by other people. For more information about how to use independent software vendor (ISV) packages, see [Manage Runtime Packages](../../dev-itpro/dev-tools/manage-runtime-packages.md).
+Third-party packages resemble application packages, but they are developed by other people. For more information about how to use independent software vendor (ISV) packages, see [Manage Runtime Packages](../../fin-ops-core/dev-itpro/dev-tools/manage-runtime-packages.md).
 
 ## Updating data by restoring the database
 
 In one useful and typical operation, the whole database is moved from one environment to another. For example, you might move the production database to development environments when you're preparing to develop additional features. Alternatively, you might move the golden setup database to the production database as part of the go-live process.
 
-For more details, see [Copy Database From Azure SQL to SQL Server](../../dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md). If source and destination environments don't have the same binary version, you should also do either a build and a database synchronization (for a development environment), or a deployment (for a sandbox or production environment).
+For more details, see [Copy Database From Azure SQL to SQL Server](/dynamics365/commerce/dev-itpro/dbmovement-operations). If source and destination environments don't have the same binary version, you should also do either a build and a database synchronization (for a development environment), or a deployment (for a sandbox or production environment).
 
 Every time that a database that has been moved from a different environment is restored, specific links in the database can be broken. The Environment reprovisioning tool fixes all these broken links for the default database group, regardless of type of environment that is used. The general guideline is that if the database comes from a different environment, the Environment reprovisioning tool must be run.
 
@@ -90,7 +88,7 @@ Another approach is to take all hotfixes frequently and run only part of the UAT
 
 Just as the branching strategy is dictated by project, team, or other constraints, your project has flexibility about how the changes are propagated through the branches. The following illustration shows an example of the process. However, this example might be too simple for some projects and too complex for other projects. The important point is that a project should have a plan. Different persons in the team will have different responsibilities (development, deployment, code merges, sign-off, and so on), and the role ownership should be clearly defined.
 
-![Branch diagram](./media/1-1-diagram.png)
+![Branch diagram.](./media/1-1-diagram.png)
 
 ### Steps 1–3: Obtain and apply updates
 
@@ -106,7 +104,7 @@ For the X++ code, developers just synchronize the Metadata folder and do a full 
 
 If major new changes have been checked in by other members of the team (for example new files, configuration changes, or a new Retail SDK), it isn't enough to synchronize and build the new files. Remember that a few web applications that are installed on the developer machine won't be updated through a compilation. Those web applications must be deployed. Use the LCS package deployment to deploy the commerce package that can be produced at an MSBuild command prompt. For smaller code changes, new package deployments aren't required in order to keep the dev environments in sync if the incremental changes are dropped to the install locations. 
 
-![Environment change history](./media/1-2-environment-change-history.png)
+![Environment change history.](./media/1-2-environment-change-history.png)
 
 ### Step 4: Move changes from the Dev branch to the Main branch
 
@@ -116,19 +114,19 @@ In this example, the Dev and Main branches have been separated to provide an opp
 
 Use your build environment to produce officially built packages from the code in the Main branch.
 
-![Build Definitions Unified Operations](./media/1-3-build-definition-unified-operations.png)
+![Build Definitions Unified Operations.](./media/1-3-build-definition-unified-operations.png)
 
 When the build is completed, find the packages that were built, download them, and rename them according to your naming conventions.
 
-![Artifacts Explorer](./media/1-4-artifacts-explorer.png)
+![Artifacts Explorer.](./media/1-4-artifacts-explorer.png)
 
 Then upload the packages to the LCS Asset library.
 
-![Asset library](./media/1-5-asset-library.png)
+![Asset library.](./media/1-5-asset-library.png)
 
 Finally, deploy the packages to your test environments.
 
-![Environment change history UAT](./media/1-6-environment-change-history-UAT.png)
+![Environment change history UAT.](./media/1-6-environment-change-history-UAT.png)
 
 ### Step 4.3: Deploy packages to the production environment
 
@@ -136,7 +134,7 @@ When all the required tests are passed, you're ready to deploy the same packages
 
 There are many considerations when you update a production environment, such as downtime, downtime mitigation, data migration, store updates, and mass deployment. It's very important that you have a plan of all the steps that are required for an update, because Commerce projects usually require more than just deployment. For some additional considerations, see the "Tips" section of this topic.
 
-It's assumed that the planning for go-live was started much earlier. For more details, see [Implementation lifecycle](../../fin-and-ops/imp-lifecycle/implementation-lifecycle.md).
+It's assumed that the planning for go-live was started much earlier. For more details, see [Implementation lifecycle](../../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md).
 
 ### Step 5: Merge the code from the Main branch to the ProdRel1 branch
 
@@ -148,7 +146,7 @@ You should always deploy binary updates and platform updates by using LCS packag
 
 Finance and Commerce customization packages should not be deployed to a build environment.
 
-![Environment change history build](./media/1-7-environment-change-history-build.png)
+![Environment change history build.](./media/1-7-environment-change-history-build.png)
 
 ## Compare LCS tile counts
 
@@ -161,11 +159,11 @@ Environments that are used for work of the same release should also have the sam
 
 Notice that after you've finished updating an environment, the tile counts for the available updates are significantly lower than they were when you started.
 
-![LCS Dev Environment](./media/LCSDevEnvironmentpage.png)
+![LCS Dev Environment.](./media/LCSDevEnvironmentpage.png)
 
 ## Move to a new version
 
-To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy a new environment. You must also run a code upgrade and a database upgrade, if these upgrades are applicable. For more details, see [Code migration home page](../../dev-itpro/migration-upgrade/code-migration-home-page.md).
+To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy a new environment. You must also run a code upgrade and a database upgrade, if these upgrades are applicable. For more details, see [Code migration home page](../../fin-ops-core/dev-itpro/migration-upgrade/code-migration-home-page.md).
 
 ## Tips
 - Decide on a good package naming convention for names in the LCS Asset library and for the names of zip packages that are downloaded. In this way, you can more easily determine what package you've deployed and where it came from. Avoid spaces in package names. Here is an example of a naming convention:
@@ -198,3 +196,6 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
 [Set up new environments, Azure DevOps, and branches for Commerce projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Testing and performance issues](./retail-implementation-testing-performance.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

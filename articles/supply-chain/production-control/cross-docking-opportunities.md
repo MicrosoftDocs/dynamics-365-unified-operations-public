@@ -4,11 +4,9 @@
 title: Cross-docking from production orders to outbound docks
 description: This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -34,8 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 
-Introduction
-------------
+## Introduction
 
 Cross-docking from production to an outbound location is relevant for manufacturers who produce high volume and ideally want to ship the finished products as soon as they are reported as finished from the production lines. The purpose is to ship the products to distribution centers that are physically located close to the customer demand, rather than build up inventory at the manufacturing site.
 
@@ -49,7 +46,7 @@ A product is reported as finished to the production output location (3) and a f
 -   If a trailer is already assigned to the bay door, the truck driver will be directed to load the product directly to the trailer.
 -   If there is no planned activity for transferring the product, the fork lift driver will be directed to put the product away to a location in the internal warehouse (5).
 
-[![opportunistic cross-docking](./media/scenario1.png)](./media/scenario1.png)
+[![opportunistic cross-docking.](./media/scenario1.png)](./media/scenario1.png)
 
 ## Configure cross-docking
 You configure the cross-docking process in **work policies**. A work policy includes a work order type, location, and product. In the following example, cross-docking is configured for product X and location Y.
@@ -130,3 +127,6 @@ After a product is reported as finished at the production line it is transferred
 -   The cross docking scenario is supported for batch and serial controlled items, both with the batch and serial number dimensions defined above and below location in the reservation hierarchy. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

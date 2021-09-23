@@ -4,11 +4,9 @@
 title: Create an organization hierarchy
 description: Use the following procedure to create an organizational hierarchy. 
 author: sericks007
-manager: AnnBe 
 ms.date: 12/15/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -51,3 +49,6 @@ The demo data company used to create this procedure is USMF.
     - Add organizations, as necessary.  
     - To add an organization, click **Edit** and then **Insert** to add the organization. When you are done making changes you can **Save** a draft and/or **Publish** the changes.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

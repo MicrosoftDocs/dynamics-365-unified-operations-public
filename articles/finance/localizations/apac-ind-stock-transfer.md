@@ -4,11 +4,9 @@
 title: Stock transfer orders for India
 description:  This topic provides information about the stock transfer functionality that is available for India in Microsoft Dynamics 365 Finance.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -123,3 +121,6 @@ You must also set up main accounts to post inventory cost for transfer orders to
     > If the "Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order" feature is enabled in the **Feature management** workspace, it is only possible to receive a previously posted shipment. You need to select **Shipment** in the **Update** field when posting a receipt and select a previously posted shipment in the **Shipment voucher** field.
     
 You can also cancel a previously posted stock transfer order shipment if no receipts have been posted for this order. On the **Transfer orders** page, select **Transfer order** > **Transfer order history**. On the **Transfer order history** page, select a previously posted shipment. Select **Cancel**, and confirm the cancellation of the shipment. The shipment will be canceled, and all inventory movements and GST that was posted for the shipment will be reversed. The "Transfer Order Cancellation" feature in the **Feature management** workspace must be enabled to cancel transfer order shipments.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

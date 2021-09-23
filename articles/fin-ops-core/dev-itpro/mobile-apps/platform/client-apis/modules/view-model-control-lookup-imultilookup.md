@@ -1,26 +1,12 @@
 ---
-# required metadata
 title: Multi-Lookup module
 description: Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
 ---
 
 # Multi-Lookup module
@@ -143,3 +129,6 @@ Multi-Lookup controls are similar to regular lookups except they allow multiple 
 | [OnLookupPageCreate](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreate) |OnLookupPageCreate: function(args: any, multiLookup: any): void (optional)  <br>|  |
 | [OnLookupPageCreated](../interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md#onlookuppagecreated) |OnLookupPageCreated: function(args: any, multiLookup: any): void (optional)  <br>|  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

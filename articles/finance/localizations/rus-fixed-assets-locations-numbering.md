@@ -4,11 +4,9 @@
 title: Set up fixed asset locations and numbering (Russia)
 description: This topic explains how to set up locations and numbering for Russian fixed asset.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -87,3 +85,6 @@ This number sequence is used for all fixed assets that are assigned to the fixed
 1. Select **Fixed assets (Russia)** \> **Periodic** \> **Create barcodes from FA inventory number**.
 2. On the **Records to include** FastTab, select **Filter**, and then, in the **Assets** dialog box, enter the criteria that are used to select fixed assets. Then select **OK** to return to the **Create barcodes from FA inventory number** dialog box.
 4. Select **OK**. If you haven't specified a bar code for the fixed asset, the value that you specified in the **FA inventory number** field appears in the **Bar code** field on the **Fixed assets** page (**Fixed assets (Russia)** \> **Common** \> **Fixed assets**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

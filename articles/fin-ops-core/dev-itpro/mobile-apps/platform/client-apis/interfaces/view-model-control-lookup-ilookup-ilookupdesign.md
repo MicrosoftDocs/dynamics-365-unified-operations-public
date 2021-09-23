@@ -1,26 +1,12 @@
 ---
-# required metadata
 title: LookupDesign type
 description: Lookup design object type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
 ---
 
 # LookupDesign type
@@ -101,7 +87,7 @@ This will modify the color of all headers, items, labels, and icons within the c
 Consider setting the background color at the same time as necessary when setting this attribute.<br>
 Note: if color is set to "theme", the theme color of the app will be used.<br>
 The following colors are available: <br>
-![Image of available colors](../../../media/colors.PNG)
+![Image of available colors.](../../../media/colors.PNG)
 
 > Inherited from [Design](view-model-ipage-idesign.md).[color](view-model-ipage-idesign.md#color)
 
@@ -202,3 +188,6 @@ The type of the control as a string.
 > Inherited from [Design](view-model-ipage-idesign.md).[type](view-model-ipage-idesign.md#type)
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

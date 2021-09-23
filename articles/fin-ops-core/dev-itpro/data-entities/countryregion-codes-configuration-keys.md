@@ -3,12 +3,10 @@
 
 title: Country/region codes and configuration keys
 description: This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region.
-author: Sunil-Garg
-manager: AnnBe
+author: peakerbl
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 4644
 ms.assetid: 86eda511-b1a6-46d2-bd0f-f9991b727f1a
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -114,3 +112,5 @@ Entity E1
 
 |_F4 (UK inferred)
 ```
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,16 +4,14 @@
 title: Create a lease group
 description: This topic explains how to set up lease groups. Lease groups are required to create new leases.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: TaxTable
+ms.search.form: AssetLeaseGroupTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -55,3 +53,6 @@ After you create lease groups, you can assign books to each group. When you crea
 1. Go to **Asset leasing \> Setup \> Lease group**.
 2. Select a lease group, and then select **Books**.
 3. Select **New**, and then, in the **Book type** field, select the book to assign to the lease group. You can assign multiple books to a lease group if a lease must be accounted for in different ways.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

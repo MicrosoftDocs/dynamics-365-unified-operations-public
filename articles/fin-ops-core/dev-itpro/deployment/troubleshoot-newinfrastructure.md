@@ -4,11 +4,9 @@
 title: Troubleshoot environments deployed through self-service deployment
 description: This topic explains how to troubleshoot and diagnose issues in an environment that was deployed using the self-service deployment experience.
 author: laneswenka
-manager: AnnBe
 ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -43,7 +41,7 @@ To open the **Environment Monitoring** dashboard, follow the steps listed below:
 
 On the Environment Monitoring dashboard, you will see two tabs: **Overview** and **Activity**.
 
-[![Diagnose Issues](./media/DiagnoseIssues.jpg)](./media/DiagnoseIssues.jpg)
+[![Diagnose Issues.](./media/DiagnoseIssues.jpg)](./media/DiagnoseIssues.jpg)
 
 ## Overview tab
 
@@ -77,3 +75,6 @@ The **Activity** tab shows a predefined set of queries for advanced troubleshoot
 > The Environment monitoring will also include advanced SQL troubleshooting tools to diagnose and mitigate performance issues. This feature is currently not available but will be added soon. 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

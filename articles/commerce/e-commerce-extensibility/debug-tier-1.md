@@ -4,11 +4,9 @@
 title: Configure an e-commerce development environment against a Commerce cloud environment
 description: This topic describes how to set up an e-commerce online development environment to debug against a Microsoft Dynamics 365 Commerce cloud development environment.
 author: samjarawan
-manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 This topic describes how to set up an e-commerce online development environment to debug against a Microsoft Dynamics 365 Commerce cloud development environment.
 
-## Overview
-
 An e-commerce development environment can be configured to debug your live e-commerce website or to test e-commerce configuration changes against various Commerce cloud environments, such as "Dev," "Test," "UAT," or "Prod" environments. This environment is useful for testing and debugging e-commerce modules and data actions against Retail Server extensions. After it's configured, modules and data actions that use Retail Server APIs will directly call the Retail Server in the Commerce cloud environment. Otherwise, mock data will be required.
 
 ## Install the Commerce online SDK
@@ -51,7 +47,7 @@ The online SDK uses Node.js as the JavaScript runtime to render modules and e-co
 
 To get the Retail Server URL if you're debugging against a Commerce development environment, go to [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com/), and select the project and the environment. Then, in the upper-right corner of the page, select **Login \> Retail Server URL**, as shown in the following illustration.
 
-![Retail Server URL in LCS](media/lcs-retail-server-url.png)
+![Retail Server URL in LCS.](media/lcs-retail-server-url.png)
 
 A new tab should be opened, and the URL should resemble the following example: 
 
@@ -127,3 +123,6 @@ When the Retail Server is configured with HTTP instead of HTTPS, you may receive
 [Configure a development environment (.env) file](configure-env-file.md)
 
 [Set up Azure DevOps code sharing and create a build pipeline](set-up-code-sharing-build-pipeline.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

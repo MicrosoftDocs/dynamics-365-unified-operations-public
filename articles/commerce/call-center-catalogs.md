@@ -4,11 +4,9 @@
 title: Call center catalogs
 description: This topic describes the call center–specific functionality for catalogs in Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -46,7 +44,7 @@ Direct-to-consumer marketing companies are very focused on tracking the response
 
 Go to **Retail and Commerce** \> **Catalogs and assortments** \> **All catalogs** to configure your catalog.
 
-When you create a new catalog, you must first link the catalog to one or more channels. This is done in the **Commerce channels** FastTab on the **Catalog setup** form. Click **Add** and select one or more channels. Only items linked to your selected channel [assortments](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments) can be used when creating the catalog.
+When you create a new catalog, you must first link the catalog to one or more channels. This is done in the **Commerce channels** FastTab on the **Catalog setup** form. Click **Add** and select one or more channels. Only items linked to your selected channel [assortments](/dynamics365/unified-operations/retail/assortments) can be used when creating the catalog.
 
 To add products to a catalog, a navigation hierarchy must be chosen. The navigation hierarchy will support the category structure for the catalog. You must pick from one of the navigation hierarchies linked to the channels selected on the **Commerce channels** FastTab of the **Catalog** page. If a navigation channel was not linked to a channel previously, go to **Retail and Commerce** \> **Channel setup** \> **Channel categories and product attributes** to link a navigation hierarchy default to each of your channels.
 
@@ -105,3 +103,6 @@ On the **Catalogs** tab, options for configuring a **Payment schedule** and **Fr
 ## Additional notes
 
 Currently, when a source code ID is applied to a sales order in call center, it is used to drive prices, promotions, scripts and up-sell/cross-sell's that are catalog specific. The system will not prohibit or prevent a product that is not in the catalog from being ordered on the sales order. If an item is ordered that is not part of the catalog, the system will first use the **Price group** that is defined on the call center channel (**Retail and Commerce** \> **Channels** \> **Call centers** \> **All call centers**) for item price or promotions. If no specific channel price is found, the base selling price of the item will be used.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

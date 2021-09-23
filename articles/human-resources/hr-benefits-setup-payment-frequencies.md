@@ -3,12 +3,10 @@
 
 title: Set up payment frequencies
 description: Microsoft Dynamics 365 Human Resources uses payment frequencies to calculate the annual benefit salary, determine the benefit premium amount an employee pays each pay period, and how often providers are paid.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,19 +15,21 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Set up payment frequencies
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Microsoft Dynamics 365 Human Resources uses payment frequencies to calculate the annual benefit salary, determine the benefit premium amount an employee pays each pay period, and how often providers are paid.
 
@@ -60,3 +60,6 @@ The conversion factors fields identify the conversion factor from the payment fr
    | **Hourly conversion factor** | The annual conversion factor for the payment frequency. For example, the annual conversion factor for the monthly pay frequency is: </br></br>(12 monthly payments / 2080 hours) = 0.005769
 
 4. Select **Save**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

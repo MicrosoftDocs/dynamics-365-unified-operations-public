@@ -4,11 +4,9 @@
 title: Create online channel and define channel attributes
 description: This procedure walks through creating a new online channel and adding it to the organization hierarchy. 
 author: jashanno
-manager: AnnBe 
 ms.date: 06/04/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -68,3 +66,6 @@ This procedure walks through creating a new online channel and adding it to the 
 3. Run the 1070 distribution schedule to sync changes to the channel database. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

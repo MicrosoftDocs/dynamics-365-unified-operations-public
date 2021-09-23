@@ -4,11 +4,9 @@
 title: Post transition adjustment journal entries in Asset leasing
 description: This topic describes the functionality that lets you transition a lease portfolio to the new lease accounting standards, Accounting Standards Codification Topic 842 (ASC 842) and International Financial Reporting Standard 16 (IFRS 16).
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,3 +49,6 @@ To post a transition adjustment in compliance with the new accounting standards,
 
 5. To view the journal entry, select **Asset leasing journals**.
 6. Select the new journal, and then select **Post**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

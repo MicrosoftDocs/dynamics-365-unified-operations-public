@@ -8,12 +8,10 @@ ms.author: epodkolz
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-manager: annbe
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
@@ -93,7 +91,7 @@ Here is an example for bi-monthly reporting.
 ## Configure the ER model and format for the report
 To review or change the reporting formats, you must use Electronic reporting (ER) functionality. You can find the VAT statement format for legal entities that have a primary address in Norway on the **Configurations** page (**Organization administration** > **Electronic reporting** > **Configurations**). In the tree of ER models, expand the **Vat declaration model** node, and then select **VAT declaration (NO)**.
 
-You can use the designer to review or change the configuration that you selected in the model tree. For more information, see [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md).
+You can use the designer to review or change the configuration that you selected in the model tree. For more information, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 > [!NOTE]
 > The same VAT declaration model is used for Austria, Czech Republic, Estonia, Finland, Latvia, Lithuania, and Norway. This model aggregates tax data that is required for VAT declaration.
@@ -122,3 +120,6 @@ You can use the designer to review or change the configuration that you selected
 
 > [!NOTE]
 > You can combine several sales tax payments and print one combined report/XML file that includes summarized data for all selected records. You can combine only records that are related to one settlement period, and that have the same **From date** and **To date** values. For example, you can combine an **Original version** record and its **Corrections/Latest corrections** record.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Assortment management
 description: This topic explains the basic concepts of assortment management in Dynamics 365 Commerce and provides implementation considerations for your project.
 author: jblucher
-manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -42,27 +40,27 @@ The overall product mix of a channel is determined by the published assortments 
 
 In the following example, a unique assortment is configured for each store. In this case, only product 1 is available at store 1, and only product 2 is available at store 2.
 
-![Each product is available at one store](./media/Managing-assortments-figure1.png)
+![Each product is available at one store.](./media/Managing-assortments-figure1.png)
 
 To make product 2 available at store 1, you can add the product to assortment 1.
 
-![Product 2 added to assortment 1](./media/Managing-assortments-figure2.png)
+![Product 2 added to assortment 1.](./media/Managing-assortments-figure2.png)
 
 Alternatively, you can add store 1 to assortment 2.
 
-![Store 1 added to assortment 2](./media/Managing-assortments-figure3.png)
+![Store 1 added to assortment 2.](./media/Managing-assortments-figure3.png)
 
 ### Organization hierarchies
 
 In situations where multiple channels share the same product assortments, you can configure the assortments by using the Commerce assortment organization hierarchy. When nodes from this hierarchy are added, all channels in that node and its child nodes will be included.
 
-![Organization hierarchy](./media/Managing-assortments-figure4.png)
+![Organization hierarchy.](./media/Managing-assortments-figure4.png)
 
 ### Product categories
 
 Similarly, on the product side, you can include groups of products by using product category hierarchies. You can configure assortments by including one or more category hierarchy nodes. In this case, the assortment will include all products in that category node and its child nodes.
 
-![Product categories](./media/Managing-assortments-figure5.png)
+![Product categories.](./media/Managing-assortments-figure5.png)
 
 ### Excluded products or categories
 
@@ -71,7 +69,7 @@ In addition to including products and categories in assortments, you can use the
 > [!NOTE]
 > If a product is both included and excluded in one or more assortments by definition, the product will always be considered excluded.
 
-![Excluded product](./media/Managing-assortments-figure6.png)
+![Excluded product.](./media/Managing-assortments-figure6.png)
 
 ### Global and released products
 
@@ -111,3 +109,6 @@ Consider the following implementation requirements as you plan and manage assort
 - **Sales and returns outside assortments** – This capability helps retailers effectively manage their assortments by letting them limit the number of available products to products that belong to the core product mix for the store. This capability also helps retailers handle situations where a product was mistakenly omitted from an assortment, or where a product was returned outside the effective dates for the assortment.
 
 If product data doesn't exist in the channel database, the POS makes real-time calls to headquarters to retrieve the required information, so that the product can be sold, returned, or put on a customer order. Product information that is retrieved in this manner is available only during the scope of that transaction. The product isn't added to the assortment definition. Therefore, subsequent real-time calls will be made as required.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

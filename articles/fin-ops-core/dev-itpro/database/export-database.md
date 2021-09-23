@@ -4,11 +4,9 @@
 title: Export a database
 description: This topic explains how to export a database for Finance and Operations.
 author: LaneSwenka
-manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -41,9 +39,11 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to export a database fro
 To maintain the system that performs database export from LCS, a limit on the maximum bacpac size is being imposed. This limit is set at 50 GB for each bacpac exported. The reasons for this limit include: 
 
 - A centralized system is performing the exports for multiple customers in the same geographic region, and this system has constraints on disk space.  
-- Azure SQL neatly compresses the data in the bacpac format and in many cases, where customers exceed 50 GB, customizations or binary data drastically oversize the backup file.  
+- Azure SQL neatly compresses the data in the bacpac format and in many cases, where customers exceed 50 GB, customizations or binary data drastically oversize the backup file. 
 
-If you experience an export failure because the resulting bacpac is over 50 GB in size, try running the following SQL script against your sandbox database to identify the top 15 tables by size in megabytes.  Any tables that are for data entity staging (they will have "staging" at the end of the table name) can be truncated. Any tables that are storing binary or blob data (JSON/XML/binary) should either be truncated or the contents of that field should be deleted to free up space. Binary data cannot be compressed, so storing large volumes of data in the database itself will cause you to quickly reach the 50 GB limit.
+If you need to reduce the size of the database, follow the [cleanup routines](../sysadmin/cleanuproutines.md).
+
+If the above cleanup routines did not help to bring the bacpac file to under 50 GB in size, try running the following SQL script against your sandbox database to identify the top 15 tables by size in megabytes. Any tables for data entity staging (they will have "staging" at the end of the table name) can be truncated. Any tables that store binary or blob data (JSON/XML/binary) should either be truncated or the contents of that field should be deleted to free up space. Binary data cannot be compressed, so storing large volumes of data in the database itself will cause you to quickly reach the 50 GB limit.
 
 ```sql
 USE [YourDBName] -- replace your dbname
@@ -85,6 +85,8 @@ When you export a database backup from an environment, some elements of the data
 * All batch jobs are set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the **SysEmailSMTPPassword** table.
+* [Maintenance mode](../sysadmin/maintenance-mode.md) settings will be disabled even if it was enabled in source.
+* Dual-write configuration.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 
 
 ### Known issues
@@ -96,3 +98,6 @@ The export process can time out on Azure SQL Database when large databases are i
 #### Export doesn't show any progress in LCS
 
 The export process differs from other database movement operations, and the general package deployment doesn't use a runbook. Therefore, the progress indicator in LCS doesn't show any output, even though it typically shows output in other scenarios. The LCS team is working to identify known error codes so that they can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

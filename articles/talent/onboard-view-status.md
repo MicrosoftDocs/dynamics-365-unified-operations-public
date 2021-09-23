@@ -4,11 +4,9 @@
 title: View the status of onboarding employees and your tasks
 description: This topic explains how to use the Microsoft Dynamics 365 Talent - Onboard app to track where new hires are in their onboarding process.
 author: andreabichsel
-manager:
 ms.date: 05/02/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-talent
 ms.technology:
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: anbichse
 # ms.tgt_pltfrm:
 # ms.custom:
 # ms.assetid:
@@ -38,12 +35,12 @@ Microsoft Dynamics 365 Talent: Onboard lets you view the progress that your new 
 
 1. On the left menu, select **Guides**. You see an overview of the progress for all the onboarding guides that you've sent.
 
-    ![[Viewing the status of onboarding guides](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
+    ![[Viewing the status of onboarding guides.](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
 
 2. To drill down, select the guide that you want to view.
 3. Select the **Activities** tab to see which activities your new hire has completed.
 
-    ![[Viewing activities that the new hire has completed](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
+    ![[Viewing activities that the new hire has completed.](./media/onboard-status-activities.png)](./media/onboard-status-activities.png)
 
 ## View onboarding tasks that are assigned to you
 
@@ -60,5 +57,8 @@ Microsoft Dynamics 365 Talent: Onboard lets you view the progress that your new 
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
 - [What's new or changed in Dynamics 365 Talent](./whats-new.md)
-- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release plans](/business-applications-release-notes/index)
 - [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create icons for workspace tiles
 description: This topic provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
 author: jasongre
-manager: AnnBe
-ms.date: 08/12/2019
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -54,51 +52,37 @@ Guidelines for creating images for custom workspace tiles are below. The recomme
 
 Following these recommendations ensures that your workspace icon matches the styling and size of other workspace icons and that the content of your workspace icon does not get cropped by the CSS applied to the image.
 
-### Images for Platform update 29 or later
 -   The image file should be a PNG file with a 1:1 aspect ratio.
--   The recommended image size is 50 x 50 pixels, with the icon being contained within a centered **30 x 30 px** square (see the illustration below).
+-   The recommended minimum image size is 50 × 50 pixels (px), where the icon is contained in a square that is centered in the image. For the minimum 50 × 50 px image size, the icon should be contained in a **30 × 30 px** square in the center of the image.
+
+    > [!NOTE]
+    > The crispness of out-of-box workspace icons and custom workspace icons might differ at different zoom levels. The reason for this difference is that images in PNG format have a fixed resolution, whereas out-of-box workspace icons are font glyphs that scale smoothly. For better resolution at different zoom levels, consider creating larger images with the same relative dimensions. For example, create 200 × 200 px or 400 × 400 px images.
+
 -   The icon should have a **white background with transparent content**. 
 -   The framework will set a default background color for the transparent portions of your image so that it will match the current user theme.
 
-### Images for Platform update 28 or earlier
--   The image file should be a PNG file with a 1:1 aspect ratio.
--   The recommended image size is 50 x 50 pixels, with the icon being contained within a centered **21 x 21 px** square (see the illustration below).
--   The icon should have a **transparent background with white content**.
--   The framework will set a default background color for the transparent portions of your image so that it will match the current user theme.
 
 ## Example 
 Consider the following image/icon that is to be used for a new workspace. 
 
-[![Icon to be used for a new workspace](./media/newlogo3.png)](./media/newlogo3.png) 
+[![Icon to be used for a new workspace.](./media/newlogo3.png)](./media/newlogo3.png) 
 
-### Platform update 29 or later 
 
 This icon would be converted to an image with a **white background and transparent content** with the icon centered in a larger image canvas as shown.  
 
-![Workspace icon following new guidance](./media/baseIcon_img_PU29.png) 
+![Workspace icon following new guidance.](./media/baseIcon_img_PU29.png) 
 
 To understand how this relates to the sizing recommendations, here is the workspace icon image overload with the new sizing recommendations.   
 
-![Workspace icon with new sizing recommendations](./media/baseIcon_Guides_PU29.png) 
+![Workspace icon with new sizing recommendations.](./media/baseIcon_Guides_PU29.png) 
 
 Using this image on a workspace tile yields the following result on the dashboard. 
 
-[![Result on the dashboard when image used on workspace tile](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
-
-
-### Platform update 28 or earlier
-For older versions of the product, the icon would be converted to an image with a transparent background and white content with the icon centered in the image canvas as shown. 
-
-![Workspace icon for older versions](./media/newicon.png) 
-
-To understand how this relates to the sizing recommendations, here is the workspace icon image overload with the previous sizing recommendations.   
-
-![Workspace icon with previous sizing recommendations](./media/newicon_guides.png) 
-
-Using this image on a workspace tile yields the following result on the dashboard. 
-
-[![Result on the dashboard when image used on workspace tile](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
+[![Result on the dashboard when image used on workspace tile.](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

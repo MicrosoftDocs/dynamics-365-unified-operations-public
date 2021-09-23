@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (December 6, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for December 6, 2018.
+author: andreabichsel
 ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -28,6 +25,7 @@ ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
 
 ---
+
 # What's new or changed in Dynamics 365 Talent - Core HR (December 6, 2018)
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
@@ -53,19 +51,19 @@ The personalization toolbar has been restyled in Platform update 22 for Finance 
 
 ### Optimized "is one of" filtering experience
 
-The "is one of" filtering operator is available for most fields when using the Filter Pane and grid header drop-down lists. This operator allows a user to filter a field based on multiple values. A new and improved experience for the "is one of" operator is available in Platform update 22 for Finance and Operations. To learn more, see [Optimized "is one of" filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+The "is one of" filtering operator is available for most columns when using the Filter Pane and grid header drop-down lists. This operator allows a user to filter a column based on multiple values. A new and improved experience for the "is one of" operator is available in Platform update 22 for Finance and Operations. To learn more, see [Optimized "is one of" filtering experience](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
-### Paste lists from Excel into filter fields with the "is one of" operator
+### Paste lists from Excel into filter columns with the "is one of" operator
 
-For some tasks, users might have a list of values in Excel that they'd like to use to filter data in Talent. For example, a Human Resource user might have identified a set of employees from a report that need additional research in the system, and it would be ideal for this user to be able to copy the list directly from Excel into a filter field in Talent.
+For some tasks, users might have a list of values in Excel that they'd like to use to filter data in Talent. For example, a Human Resource user might have identified a set of employees from a report that need additional research in the system, and it would be ideal for this user to be able to copy the list directly from Excel into a filter column in Talent.
 
-Starting in Platform update 22 for Finance and Operations, the "is one of" operator in the Filter Pane and grid column filtering now recognizes lists copied from Excel so that they can be pasted directly into a filter field. This includes a collection of values copied from different rows and columns in Excel. To learn more about this feature, see [Paste lists from Excel into filter fields with the "is one of" operator](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Starting in Platform update 22 for Finance and Operations, the "is one of" operator in the Filter Pane and grid column filtering now recognizes lists copied from Excel so that they can be pasted directly into a filter column. This includes a collection of values copied from different rows and columns in Excel. To learn more about this feature, see [Paste lists from Excel into filter columns with the "is one of" operator](/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## In preview
 
 ### Configure UK payroll integration between Talent and Dayforce
 
-The integration between Talent and Ceridian Dayforce is available in preview for the UK. Refer to the following topic for more information, [Configure the payroll integration between Talent and Dayforce](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
+The integration between Talent and Ceridian Dayforce is available in preview for the UK. Refer to the following topic for more information, [Configure the payroll integration between Talent and Dayforce](/dynamics365/unified-operations/talent/configure-payroll-integration).
 
 ## Coming soon
 
@@ -102,24 +100,24 @@ The following issues have been identified in the current template for integratin
 
 The Departments to Operating unit task needs the following mappings updated.
 
-| Existing source field          | New source field |
+| Existing source column          | New source column |
 | -------------------------------|------------------|
 | cdm_description (Description)  | cdm_name (Name)  |
 
-An additional mapping also needs to be added. Select the last **None** field to add the following mapping.
+An additional mapping also needs to be added. Select the last **None** column to add the following mapping.
 
-| Source field                   | Destination field    |
+| Source column                   | Destination column    |
 | -------------------------------|----------------------|
 | cdm_description (Description)  | NAMEALIAS (NAMEALIAS)|
 
 The updated mappings should look like this.
 
-![Departments to Operating units task](./media/DepartmentMapping.png)
+![Departments to Operating units task.](./media/DepartmentMapping.png)
 
 
 The Jobs to Job Detail task needs the following mappings updated.
 
-| Existing source field          | New source field                   |
+| Existing source column          | New source column                   |
 | -------------------------------|------------------------------------|
 | cdm_name (Name)                | cdm_description (Description)      |
 | cdm_name (Description)         | cdm_jobdescription(Job Description)|
@@ -127,27 +125,30 @@ The Jobs to Job Detail task needs the following mappings updated.
 
 The updated mappings should look like this.
 
-![Jobs to Job Detail task](./media/JobMapping.png)
+![Jobs to Job Detail task.](./media/JobMapping.png)
 
 The Workers to Work task needs the following mappings updated.
 
-| Existing source field                 | New source field                               |
+| Existing source column                 | New source column                               |
 | --------------------------------------|------------------------------------------------|
 | cdm_emailaddress1 (Email Address 1)   | cdm_primaryemailaddress (Primary Email Address |
 | cdm_telephone1 (Telephone 1)          | cdm_primarytelephone (Primary Telephone)       |
 
-The Gender field transform also needs to be updated. Select the **fn** (function) map type for Gender and update the following value mappings.
+The Gender column transform also needs to be updated. Select the **fn** (function) map type for Gender and update the following value mappings.
 
-| Common Data Service Value   | Finance and Operations value |
-| ------------|------------------ -----------|
+| Dataverse Value   | Finance and Operations value |
+| ------------|------------------|
 | 75440000    | Male                         |
 | 75440001    | Female                       |
-| 75440002    | None                         | 
+| 75440002    | None                         |
 | 75440003    | NonSpecific                  |
 
 The updated mappings should look like this.
 
-![Workers to Worker task](./media/WorkerMapping.png)
+![Workers to Worker task.](./media/WorkerMapping.png)
 
-![Gender field transform](./media/WorkerTransform.png)
+![Gender column transform.](./media/WorkerTransform.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

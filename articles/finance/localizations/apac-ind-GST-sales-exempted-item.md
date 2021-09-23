@@ -3,12 +3,10 @@
 
 title: Sales of exempted items
 description: This topic provides information about the sale of exempted items.
-author: EricWang
-manager: RichardLuan
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -51,4 +49,7 @@ ms.dyn365.ops.version: 10.0.4
 1. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
 2. Select **Voucher**.
 
-![Example](media/Annotation-2019-05-20-150217.png)
+![Example.](media/Annotation-2019-05-20-150217.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

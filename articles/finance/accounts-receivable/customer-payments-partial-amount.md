@@ -4,11 +4,9 @@
 title: Customer payments for a partial amount
 description: Sometimes, customers make a payment that is less than the amount of an invoice. This article describes the various options for handling this situation. The options that are available to you depend on your business requirements and configuration.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Sometimes, customers make a payment that is less than the amount of an invoice. This article describes the various options for handling this situation. The options that are available to you depend on your business requirements and configuration.
 
-Partial payment with no discount
---------------------------------
+## Partial payment with no discount
 
 Customers might make a partial payment because they just don't have enough cash on hand to pay the invoice in full, or because there is a dispute about an item on the invoice. In this situation, the invoice can be partially settled with the payment. The invoice will remain open and will show a balance.
 
@@ -64,3 +61,6 @@ Customers might make a partial payment where the remaining amount won't be paid 
 
 
 For more information, see [Deposit customer payments](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

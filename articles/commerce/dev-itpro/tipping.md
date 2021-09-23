@@ -4,11 +4,9 @@
 title: Support for tipping in the payments SDK
 description: This topic describes the support for accepting tips on payment terminals in the payments software development kit (SDK).
 author: rubendel
-manager: annbe
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -81,3 +79,6 @@ We recommend that a header-level charge be used to add the tip amount to the tra
 
 - [Adyen connector overview](adyen-connector.md?tabs=10-0-14.md)
 - [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

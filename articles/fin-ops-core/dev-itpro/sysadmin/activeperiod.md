@@ -4,11 +4,9 @@
 title: Active batch periods
 description: This topic provides information about setting up and working with active batch periods.
 author: hasaid
-manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -47,7 +45,7 @@ With the release of Platform update 21, an additional level of control over when
 2.	Enter the name of the batch job, and specify start and end dates that the batch job is active. 
 4.	Click **Save**.
 
-![Active Period Form](./media/active-periods.png)
+![Active Period Form.](./media/active-periods.png)
 
 ## Assign active periods to batch jobs
 
@@ -55,5 +53,8 @@ With the release of Platform update 21, an additional level of control over when
 2.	Select the batch job that you want to assign a period to, and click **Edit**.
 3.	In the **Active period** field, select the active period that you want to assign, and then click **Save**.
 
-![Assign Active Period](./media/assign-active-period.png)
+![Assign Active Period.](./media/assign-active-period.png)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

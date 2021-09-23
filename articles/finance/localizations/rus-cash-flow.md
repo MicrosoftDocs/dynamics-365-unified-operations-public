@@ -4,11 +4,9 @@
 title: Cash flow management (Russia)
 description: This topic walks you through an example that shows how to set up and use cash flow management in Microsoft Dynamics 365 Finance.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -120,12 +118,12 @@ After you complete the example that is provided in this topic, you will be able 
 1. Go to **Organization administration \> Organizations \> Organization hierarchies**.
 2. In the left pane, select **Centralized Payments**.
 
-    ![Organization hierarchy for centralized payments](media/rus-org-hierarchy.jpg)
+    ![Organization hierarchy for centralized payments.](media/rus-org-hierarchy.jpg)
 
 3. Select **View**.
 4. On the **Hierarchy designer** page, create a hierarchy where **Contoso Entertainment Systems Russia** (**RUMF**) is the legal entity of the payment and **Contoso Retail RUS** (**RURT**) is the operating legal entity.
 
-    ![Organization hierarchy designer](media/rus-org-hierarchy-designer.jpg)
+    ![Organization hierarchy designer.](media/rus-org-hierarchy-designer.jpg)
 
 5. Publish the new hierarchy.
 
@@ -136,7 +134,7 @@ After you complete the example that is provided in this topic, you will be able 
 3. Select the required workflow type: **Workflow type for payment requests approval** or **Payment schedule journal approval workflow**.
 4. Set up the new workflow by using the new **Approve the payment request** or **Approve payment schedule journal** workflow element.
 
-    ![Workflow elements](media/rus-cash-flow-workflow.jpg)
+    ![Workflow elements.](media/rus-cash-flow-workflow.jpg)
 
 5. Activate the new workflow.
 
@@ -331,7 +329,7 @@ This step should be completed for a Treasury company.
 18. If all the data is filled in, and workflow approval can start, on the Action Pane, on the **Payment request** tab, in the **Generate** group, select **Confirmation**.
 19. Select **Workflow \> Submit**.
 
-    ![Submitting a payment request for workflow approval](media/rus-workflow-submit.jpg)
+    ![Submitting a payment request for workflow approval.](media/rus-workflow-submit.jpg)
 
 The status of a payment request is automatically updated. The following table describes all the payment request statuses.
 
@@ -411,7 +409,7 @@ The system will create a payment request by copying all the main requisites from
 12. On the Action Pane, on the **General** tab, in the **Related information** group, select **Request origin**.
 13. Verify that the vendor transaction is a source for the payment request.
 
-    ![Vendor transactions](media/rus-vendor-transactions.jpg)
+    ![Vendor transactions.](media/rus-vendor-transactions.jpg)
 
     > [!NOTE]
     > You can't change the payment requisites (method of payment, due date, vendor bank account, and so on) on an open vendor transaction if a payment request exists for that transaction. Instead, you should change the payment requisites in the payment request. They will then be automatically synced on the open vendor transaction.
@@ -500,7 +498,7 @@ Follow these steps to update a payment request.
 1. Go to **Cash and bank management \> Cash flow management \> All payment requests**.
 2. Select a payment request that the **Outdated** check box is selected for.
 
-    ![Outdated check box on payment requests](media/rus-outdated-check-box.jpg)
+    ![Outdated check box on payment requests.](media/rus-outdated-check-box.jpg)
 
     The system automatically selects this check box if the original source of a payment request has been changed through settlement or unsettlement. A selected check box indicates that the amount to pay of the payment request differs from the amount of the open vendor or customer transaction.
 
@@ -540,7 +538,7 @@ This step should be completed for a Treasury company.
 
 5. The **Dimensions** FastTab defines how the lines of the payment schedule journal are aggregated. The analytic report of the payment schedule journal also uses these dimensions. Use the arrow buttons to move dimensions to or from the **Selected dimensions** list.
 
-    ![Dimensions for payment schedule journals](media/rus-journal-names-dimensions.jpg)
+    ![Dimensions for payment schedule journals.](media/rus-journal-names-dimensions.jpg)
 
 6. The **Legal entities** FastTab defines the legal entities that are used to generate payment schedule journals. Use the arrow buttons to move legal entities to or from the **Selected sources** list.
 7. On the **Journal data sources** FastTab, select **Add line** to create a record.
@@ -579,7 +577,7 @@ This step should be completed for a Treasury company.
 9. Close the page.
 10. On the **Payment schedule journal** page, select **Payment schedule** to review the payment schedule sheet. If a cash shortage or surplus is detected and should be prevented, you can make changes.
 
-    ![Payment schedule sheet](media/rus-payment-schedule-sheet.jpg)
+    ![Payment schedule sheet.](media/rus-payment-schedule-sheet.jpg)
 
 11. Set the **Show totals per payment accounts** option to **Yes** if the payment schedule sheet should be calculated based on payment accounts.
 12. Set the **Show totals per method of payments** option to **Yes** if the payment schedule sheet should be calculated based on methods of payments.
@@ -588,16 +586,16 @@ This step should be completed for a Treasury company.
 
     If the minimum cash balance for a currency or a payment account is exceeded, the payment schedule sheet highlights the **Estimated balance** amounts in yellow.
 
-    ![Payment schedule sheet overview](media/rus-payment-schedule-sheet-overview.jpg)
+    ![Payment schedule sheet overview.](media/rus-payment-schedule-sheet-overview.jpg)
 
 15. If the **Payment request** license configuration key is turned on, select the amount for a **Payment request** journal data source. If the **Payment request** license configuration key isn't turned on, select an **Accounts payable** or **Accounts receivable** journal data source. Select **Show origin** to open the sources of that amount.
 16. Select the amount for a **Payment request** journal data source, and then select **Change payment sources**.
 
-    ![Change payment sources button on a payment schedule sheet](media/rus-change-payment-sources.jpg)
+    ![Change payment sources button on a payment schedule sheet.](media/rus-change-payment-sources.jpg)
 
 17. Select payment sources that should be moved to another date, or that should be paid by using another method of payment or payment account.
 
-    ![Payment schedule balancing](media/rus-payment-schedule-balancing.jpg)
+    ![Payment schedule balancing.](media/rus-payment-schedule-balancing.jpg)
 
 18. Select **Multiple change**, specify the new payment details in the **Modify payment attributes** dialog box, and then select **OK**.
 
@@ -612,7 +610,7 @@ This step should be completed for a Treasury company.
 
     Approvers might see the following actions during the approval workflow: **Approve**, **Reject**, **Request change**, **Delegate**, **Recall**, and **View history**.
 
-    ![Workflow actions](media/rus-workflow-actions.jpg)
+    ![Workflow actions.](media/rus-workflow-actions.jpg)
 
 26. If the payment plan is approved, select **Confirm**. The status of the payment requests that are included is changed to **Scheduled**.
 27. On the **Payment request** page, on the Action Pane, on the **General** tab, in the **Related information** group, select **Payment schedule journal**.
@@ -642,7 +640,7 @@ This step should be completed for a Treasury company.
 16. On the **Payment schedule journal** page, select **Functions \> Generate payments**.
 17. Set the parameters for payment journal generation.
 
-    ![Parameters for payment journal generation](media/rus-payments-payment-schedule-journal.jpg)
+    ![Parameters for payment journal generation.](media/rus-payments-payment-schedule-journal.jpg)
 
 18. Select **OK**.
 19. Select **Accounts payable \> Payments \> Vendor payment journal** to validate and process the vendor payment journal that is created.
@@ -651,3 +649,6 @@ This step should be completed for a Treasury company.
 Standard payment proposal functionality will process open transactions that are linked to a payment request that has **Accepted** status.
 
 The payment proposal algorithm includes additional changes that are applied when payment requests are used. The system considers the posting profile, the setting of the **Prepayment** parameter, and the payment order requisites that are filled in on payment requests.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

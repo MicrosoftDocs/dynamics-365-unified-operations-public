@@ -3,12 +3,10 @@
 
 title: What's new or changed in Dynamics 365 Human Resources (March 24, 2020)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for March 24, 2020.
-author: Andreabichsel
-manager: AnnBe
+author: andreabichsel
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -30,6 +28,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # What's new or changed in Dynamics 365 Human Resources (March 24, 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -63,7 +63,7 @@ The following preview features became available on February 3, 2020:
 
 - **Benefits management preview feature** - For more information, including known issues, see [Benefits management overview](hr-benefits-management-overview.md).
 
-## Common Data Service solution is now available with the following changes:
+## Dataverse solution is now available with the following changes:
 
 | Description | Change |
 | --- | --- |
@@ -75,12 +75,12 @@ The following preview features became available on February 3, 2020:
 | New variable compensation setup entities | <ul><li>**Compensation variable plan type**</li><li>**Compensation variable plan**</li><li>**Vesting rules**</li><li>**Compensation variable plan level**</li></ul> |
 | New **Worker calendar employment** entity | <ul><li>**Work calendar entity** added</li></ul> |
 | New **Payroll position detail** entity | <ul><li>**Payroll position detail** added</li></ul> |
-| New **Title** entity | <ul><li>**Title** added</li></ul>The new **Title** entity is included in Common Data Service but isn't referenced from the **Job Position** or **Job** entities at this time. |
+| New **Title** entity | <ul><li>**Title** added</li></ul>The new **Title** entity is included in Dataverse but isn't referenced from the **Job Position** or **Job** entities at this time. |
 
 > [!NOTE]
-> Financial dimensions for both positions and employment provide one-direction integration for updates from Human Resources to Common Data Service. Financial dimensions updates don't currently synchronize from Common Data Service to Human Resources.
+> Financial dimensions for both positions and employment provide one-direction integration for updates from Human Resources to Dataverse. Financial dimensions updates don't currently synchronize from Dataverse to Human Resources.
 
-Over the next few weeks, these entity changes will be available in all environments. To manually install the latest Common Data Service solution for Human Resources:
+Over the next few weeks, these entity changes will be available in all environments. To manually install the latest Dataverse solution for Human Resources:
 
 1.	Go to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
@@ -123,6 +123,8 @@ The **Employment Detail** entity has been updated with the following fields: **P
 ## See also
 
 [What's new or changed in Human Resources](hr-admin-whats-new.md)</br>
-[Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Overview of Dynamics 365 Human Resources 2019 release wave 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Update process](hr-admin-setup-update-process.md)</br>
 [Manage features](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (October 1, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for October 1, 2019.
+author: andreabichsel
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -74,9 +71,9 @@ With this week's changes, a new configuration option has been added to disable *
 
 With this week's release, attachments are enabled for feedback items in the performance journal page.
 
-### Leave request details don't sync from Common Data Service to Talent (369608)
+### Leave request details don't sync from Dataverse to Talent (369608)
 
-With these changes, leave request details that are updated in Common Data Service will sync back to Talent.
+With these changes, leave request details that are updated in Dataverse will sync back to Talent.
 
 ### Job description doesn't display for the job in the Skill gap analysis page (369398)
 
@@ -87,3 +84,6 @@ In this week's build, the description will display when selecting the job in the
 ### Print performance reviews
 
 Employees, managers, and HR professionals will be able to print an employee's performance review.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

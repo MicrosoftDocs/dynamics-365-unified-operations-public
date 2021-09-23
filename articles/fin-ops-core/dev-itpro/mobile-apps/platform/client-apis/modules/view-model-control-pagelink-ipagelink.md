@@ -1,26 +1,12 @@
 ---
-# required metadata
 title: Pagelink module
 description: A pagelink is a control that navigates to another page.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
 ---
 
 # Pagelink module
@@ -143,3 +129,6 @@ A pagelink is a control that navigates to another page.
 | ---- | --------- | ----------- |
 | [OnNavigate](../interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md#onnavigate) |OnNavigate: function(navigation: [NavigationArgs](../interfaces/view-model-ipage-inavigationargs.md) &#124; string): any (optional)  <br>|An event that is triggered when the navigation is triggered.<br>  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

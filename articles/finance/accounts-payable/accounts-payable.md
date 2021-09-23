@@ -4,11 +4,9 @@
 title: Accounts payable home page
 description: This topic provides an overview of Accounts payable.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 21901
+ms.custom: ["21901", "intro-internal"]
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
 # ms.search.industry: 
@@ -39,7 +37,7 @@ You can enter vendor invoices manually or receive them electronically through a 
 
 **Business processes**
 
-[![Diagram of business processes](./media/AP-process.PNG)](./media/AP-process.PNG)
+[![Diagram of business processes.](./media/AP-process.PNG)](./media/AP-process.PNG)
 
 ## Set up Accounts payable
 
@@ -129,7 +127,7 @@ The following topics provide information about settlements. Settlement is the pr
 
 #### What's new and in development
 
-Go to the [Microsoft Dynamics 365 release plans](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned. 
+Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to see what new features are planned. 
 
 #### Blogs
 
@@ -151,3 +149,6 @@ Check out the how-to videos that are now available on the [Microsoft Dynamics 36
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

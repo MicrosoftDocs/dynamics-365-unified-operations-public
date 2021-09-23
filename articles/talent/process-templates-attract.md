@@ -4,11 +4,9 @@
 title: Create a hiring process template in Attract
 description: This topic provides information about how to create a hiring process template in Attract.
 author: andreabichsel
-manager: AnnBe
 ms.date: 10/15/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -59,7 +56,7 @@ Follow these steps to create a hiring process template.
 
 1. Go to **Templates**.
 2. Select **New**.
-3. In the **Template name** field, enter a name for the template, and then select **Create**.
+3. In the **Template name** column, enter a name for the template, and then select **Create**.
 4. In the **Choose the approval process** list, select **Default** to require approval for a job.
 5. Select to enable or disable prospects.
 6. Optional: Add or remove stages.
@@ -76,3 +73,6 @@ Follow these steps to create a hiring process template.
     - To remove an activity, expand it, and then select the trash can button on the activity header.
 
 8. Select **Save**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

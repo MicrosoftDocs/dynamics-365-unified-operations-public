@@ -4,11 +4,9 @@
 title: Client internet connectivity
 description: This topic covers what will happen if a client machine cannot access the internet in on-premises deployments.
 author: jasongre
-manager: AnnBe
 ms.date: 05/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -59,3 +57,6 @@ The client internet connectivity options can be found on the **System administra
 ## Why does the client connect to the Skype for Business API when it first loads?
 
 When the client loads, it performs a quick call (ping) to the Skype for Business API to check if an internet connection is available. If it isn’t available then the client functions in a disconnected fashion. An environment doesn’t need to have Skype for Business visible/enabled for this check to be made.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

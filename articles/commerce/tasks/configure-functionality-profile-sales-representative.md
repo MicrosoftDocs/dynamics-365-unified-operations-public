@@ -4,11 +4,9 @@
 title: Configure the functionality profile for a sales representative
 description: This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives. 
 author: jblucher
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -38,3 +36,6 @@ This procedure demonstrates how to configure a store's functionality profile set
 4. In the Prompt for sales representative field, select an option.
 5. Select Yes in the Require sales representative field.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

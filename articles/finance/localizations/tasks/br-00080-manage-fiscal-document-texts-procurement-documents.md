@@ -4,11 +4,9 @@
 title: Manage fiscal document text in procurement documents (Brazil)
 description: Set up fiscal document source text. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/24/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -52,3 +50,6 @@ Set up fiscal document source text
 19. Click Save.
 20. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

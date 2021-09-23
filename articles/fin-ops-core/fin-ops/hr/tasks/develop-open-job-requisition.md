@@ -4,11 +4,9 @@
 title: Develop and open job requisition
 description: Recruitment projects help manage the recruiting process. 
 author: andreabichsel
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -68,3 +66,6 @@ Recruitment projects help manage the recruiting process. For each recruitment pr
     * The Started status means that the project is ready to receive applications.  
 33. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
  
 title: Create a purchase order with a delivery schedule
 description: This topic demonstrates how to create a delivery schedule for a purchase order. 
-author: RichardLuan
-manager: tfehr 
+author: kamaybac
 ms.date: 08/01/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -21,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -76,3 +74,6 @@ The purchase order must be confirmed before the product receipt can be processed
 6. Collapse the **Lines** section.
 7. Select **OK** to post the receipt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

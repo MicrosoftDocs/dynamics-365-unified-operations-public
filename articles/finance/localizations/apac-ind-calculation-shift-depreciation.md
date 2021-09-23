@@ -4,11 +4,9 @@
 title: Shift depreciation calculation for Indian fixed assets
 description: This topic walks you through the process of calculating shift depreciation for India fixed assets in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
-manager: AnnBe
 ms.date: 01/05/2018
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -72,3 +70,6 @@ The following table shows the various formulas that are used to calculate shift 
 | Straight-line percentage or Reducing-balance method | Seasonal or Non-seasonal | On the **Value models** page, select the **Override fixed asset calendar days?** check box, and specify the number of days in the **Asset working days** field. | \[(Cost of acquisition or Written-down value – Scrap value) × Percentage that is defined for the type of shift\] × Number of days that the asset is used during the period ÷ Asset working days |
 
 Full depreciation is calculated if the value of an asset is less than or equal to the value that is specified in the **Max. acquisition value to avail full depreciation** field on the **Fixed assets parameters** page. In this case, the days that are specified in the **Min. working days for seasonal industries** field or the **Min. working days for non-seasonal industries** field aren't considered when depreciation is calculated.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

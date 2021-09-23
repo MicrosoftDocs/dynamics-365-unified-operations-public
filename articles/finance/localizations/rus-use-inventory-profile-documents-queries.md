@@ -3,11 +3,9 @@
 title: Use an inventory profile in documents and queries
 description: This topic provides information about using inventory profile.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -116,7 +114,7 @@ If you process invoice-factures later (for example, from a vendor invoice journa
 2. Select a vendor invoice that doesn't have a processed invoice-facture, and then select **Create facture \> Update facture**.
 3. On the **Update facture** page, in the upper pane, in the **Kind of activity** field, select the kind of activity that you want to process factures for. The lower pane shows the invoices that have the selected kind of activity.
 
-   ![Update facture page](media/14_Update_facture.png)
+   ![Update facture page.](media/14_Update_facture.png)
 
 The system saves the kind of activity that is used for posting in the product receipts, invoices, and invoice-factures for the purchase order. You can view the kind of activity in the following places:
 
@@ -748,3 +746,6 @@ Find more details in the following topics:
 
 -  [Inventory profile overview](rus-inventory-profile-overview.md)
 -  [Set up an inventory profile](rus-set-up-inventory-profile.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

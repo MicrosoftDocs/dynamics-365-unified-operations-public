@@ -4,11 +4,9 @@
 title: Maintain planned orders
 description: This topic provides information about how to manage planned orders. It describes how you can update the status of planned orders, firm them, and filter for planned orders that have the same status as a selected planned order.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -64,10 +62,12 @@ If you are planning to firm many orders at the same time, parallelizing the run 
 > [!NOTE]
 > The option for **Parallelize firming** is only shown when you have more than one planned order selected for firming.
 
-Additional resources
---------
+## Additional resources
 
 [Master plans overview](master-plans.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

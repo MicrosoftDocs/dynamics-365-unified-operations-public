@@ -4,11 +4,9 @@
 title: Master plans overview
 description: Use various master plans to support your company's daily working operations, simulate different planning strategies that you want to monitor, and implement a company policy, such as a policy about internal performance or customer satisfaction. 
 author: roxanadiaconu
-manager: tfehr
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 7911
+ms.custom: ["7911", "intro-internal"]
 ms.assetid: a116b7de-3d6d-4321-87ba-5a5d99c2f64e
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -49,8 +47,7 @@ You can also set up the starting dynamic plan so that it is updated with the new
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Coverage settings](coverage-settings.md)
 
@@ -60,3 +57,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

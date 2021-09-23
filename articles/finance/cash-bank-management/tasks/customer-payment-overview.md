@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Customer payment overview
-description: This task guide walks through various methods used to enter customer payments. 
+description: This procedure walks through the various methods used to enter customer payments. 
 author: kweekley
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -18,7 +16,7 @@ audience: Application User
 # ms.devlang:  
 ms.reviewer: roschlom
 # ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
@@ -29,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide walks through various methods used to enter customer payments. This task uses the USMF demo company.
+This procedure walks through the various methods used to enter customer payments. This task uses the USMF demo company.
 
 1. Go to **Navigation pane > Modules > Accounts receivable > Payments > Payment journal**.
 2. Click **New**.
@@ -54,3 +52,6 @@ This task guide walks through various methods used to enter customer payments. T
 21. In the **Payment reference** field, enter a payment reference. The payment reference is only required if you mark to include the payment on a deposit slip.  
 22. On **Action pane**, click **Post** to post the customer payments. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

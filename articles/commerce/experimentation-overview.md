@@ -4,11 +4,9 @@
 title: Experimentation in Dynamics 365 Commerce
 description: Experimentation enables the creation, editing, and management of page layout and content treatments in site builder. End-to-end experimentation support is enabled for e-commerce pages and entities within a page.
 author:  sushma-rao 
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
@@ -45,7 +43,7 @@ You can create, edit, and manage page and content treatments known as **variatio
 ## Experimentation lifecycle
 Setting up an experiment, creating variations, and running an experiment is an iterative process. The diagram below illustrates the experimentation lifecycle in Commerce and the third-party service. 
 
-[ ![Experimentation lifecycle](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![Experimentation lifecycle.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 To learn more about each step in the experimentation process, refer to the following topics.
 - [Identify a hypothesis and determine metrics for an experiment](experimentation-identify.md)
@@ -60,3 +58,6 @@ To learn more about each step in the experimentation process, refer to the follo
 
 ## Next step
 [Identify a hypothesis and determine success metrics for an experiment](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

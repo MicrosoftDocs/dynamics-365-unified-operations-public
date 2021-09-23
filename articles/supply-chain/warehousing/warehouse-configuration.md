@@ -4,11 +4,9 @@
 title: Warehouse configuration overview
 description: This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
 author: perlynne
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 11554
+ms.custom: ["11554", "intro-internal"]
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
 ms.search.region: Global
 # ms.search.industry: 
@@ -116,10 +114,12 @@ As the name suggests, location directives are used to direct the work transactio
 
 To make it easier and quicker to define the actions that are associated with each location directive line, use one of the predefined strategies. For example, you can use the **Empty location with no incoming work** strategy to search for free locations in a warehouse, or you can use **FEFO batch reservation** strategy for outbound sales picking.
 
-Additional resources
---------
+## Additional resources
 
 [Configure locations in a WMS-enabled warehouse](tasks/configure-locations-wms-enabled-warehouse.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

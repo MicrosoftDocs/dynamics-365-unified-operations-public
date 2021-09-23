@@ -3,11 +3,9 @@
 title: Expense and income codes
 description: This topic provides information about the expense and income codes available for Russia.
 author: anasyash
-manager: AnnBe
 ms.date: 08/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,7 +38,7 @@ You should set the value of the **ExpenseAndIncomeCode** field in the following 
 
 1.  Go to **Tax** \> **Setup** \> **Profit tax** \> **Expense codes**.
 
-    ![Expense codes page](media/1_Expense_codes.png)
+    ![Expense codes page.](media/1_Expense_codes.png)
 
 2.  On the Action Pane, select **Tree view** to view expense and income codes as a tree, and then select **New** to create a code.
 3.  In the **Expense code** field, enter the expense or income code. The code should be unique.
@@ -73,7 +71,7 @@ You should set the value of the **ExpenseAndIncomeCode** field in the following 
 
     For example, amounts for ledger transactions **Debit 62.110** and **Credit 90.110**, where the **ExpenseAndIncomeCode** financial dimension is either set to **901010200** or left blank, will be assigned to income code **901010200** (**Revenue from sales of goods**).
 
-    ![Expense code and ledger relation page, Financial dimensions FastTab](media/2_Expense_code_and_ledger_relation.png)
+    ![Expense code and ledger relation page, Financial dimensions FastTab.](media/2_Expense_code_and_ledger_relation.png)
 
 8.  On the **Expense code and ledger relation** page, in the header, set the following values:
 
@@ -95,3 +93,6 @@ You should set the value of the **ExpenseAndIncomeCode** field in the following 
 
     > [!NOTE]
     > The **ExpenseAndIncomeCode** dimension is selected as the dimension for expense and income codes on the **General ledger parameters** page. It can’t be changed. If you set the **Empty dimension using** option to **Yes**, the expense or income code will also include transactions that have the same ledger accounts, but the **ExpenseAndIncomeCode** field is blank.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,18 +1,12 @@
 ---
 
-# required metadata
-
 title: Register subclasses for factory methods
 description: This topic describes how to register your own variations for the factories.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -45,7 +39,7 @@ In X++, the factories use reflection to perform the following tasks:
 
 The following illustrations shows a typical decorated hierarchy.
 
-![Class hierarchy that has three subclasses, each of which is decorated with an attribute](media/hierarchy.png)
+![Class hierarchy that has three subclasses, each of which is decorated with an attribute.](media/hierarchy.png)
 
 In X++, two extension frameworks serve the same purpose. The implementer of the factory method determines which extension framework should be used:
 
@@ -92,3 +86,6 @@ class smmLeadCaseAssociationProvider implements CaseIAssociation
     // Your code here.
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

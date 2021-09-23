@@ -3,12 +3,10 @@
 
 title: Procurement and sourcing home page
 description: This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,11 +17,11 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 50651
+ms.custom: ["50651", "intro-internal"]
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -84,19 +82,18 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Create a purchase order for a one-time supplier](tasks/create-purchase-order-one-time-supplier.md)
 -   [Create a purchase order with a delivery schedule](tasks/create-purchase-order-delivery-schedule.md)
 -   [Create a purchase return order](tasks/create-purchase-return-order.md)
--   [Create a purchase release order from a purchase agreement](tasks/create-purchase-release-order-purchase-agreement.md)
--   [Create a purchase release order when creating the purchase order](tasks/create-purchase-release-order-creating-purchase-order.md)
+-   [Apply a purchase agreement when creating a purchase order](tasks/create-purchase-release-order-purchase-agreement.md)
 -   [Create a consignment replenishment order](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## Prices and discounts
 -   [Purchase agreements](purchase-agreements.md)
 -   [Create a purchase agreement](tasks/create-purchase-agreement.md)
--   [Vendor rebates](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (white paper)
+-   [Vendor rebates](/dynamics/s-e/) (white paper)
 
 ## Product receipt and invoicing
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
--   [Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
--   [Vendor posting profiles](../../financials/accounts-payable/vendor-posting-profiles.md)
+-   [Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
+-   [Vendor posting profiles](../../finance/accounts-payable/vendor-posting-profiles.md)
 
 ## Procurement and sourcing workflows
 -   [Procurement and sourcing overview](procurement-sourcing-overview.md)
@@ -109,3 +106,6 @@ Procurement and sourcing covers all steps from identifying a need for product an
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

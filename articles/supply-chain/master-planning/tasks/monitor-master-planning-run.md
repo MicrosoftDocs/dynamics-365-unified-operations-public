@@ -4,11 +4,9 @@
 title: Monitor a master planning run
 description: This topic explains how the production planner can see whether a master planning run is in progress. 
 author: josaw1
-manager: tfehr 
 ms.date: 11/04/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -130,3 +128,6 @@ The color is shown only on the lowest level in the Gantt chart. Select **Expand 
 1. In the grid, select the row where the **Field** field is set to **Item number**.
 1. In the **Criteria** field, enter a value.
 1. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

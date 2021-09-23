@@ -3,12 +3,10 @@
 
 title: Create maintenance budgets
 description: This topic explains how to create a maintenance budget in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -57,9 +55,12 @@ Maintenance budgets are based on the cost types that are used in Asset Managemen
     > [!NOTE]
     > After you've approved a maintenance budget, you can't recalculate or adjust the related lines on the **Maintenance budget lines** page unless you first remove the approval. To remove the approval of a maintenance budget, select it on the **Maintenance budgets** page, and then select **Approve**. Then, in the **Approve budget** dialog box, select **OK**.
 
-![Maintenance Budgets](media/01-maintenance-budgets.png)
+![Maintenance Budgets.](media/01-maintenance-budgets.png)
 
 You can also create a new maintenance budget by copying an existing budget. On the **Maintenance budgets** page, select the budget to copy, and then select **Copy**. This approach is useful if, for example, you've created a budget for one month and want to copy it to other months.
 
 > [!NOTE]
 > The maintenance budget calculates only budget costs based on maintenance schedule lines. To calculate actual costs for the same period, you can do that calculation on the **Asset cost control** page. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

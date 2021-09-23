@@ -3,12 +3,10 @@
 
 title: Payment of invoices that include tax
 description: This topic provides information about payment of an invoice that includes tax.
-author: EricWang
-manager: RichardLuan
+author: EricWangChen
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -98,3 +96,6 @@ The following table shows the tax entries that are generated when an invoice pay
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

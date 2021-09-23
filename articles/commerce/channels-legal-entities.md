@@ -4,11 +4,9 @@
 title: Create legal entities
 description: This topic describes how to create legal entities in Microsoft Dynamics 365 Commerce, which must be created and configured before creating channels.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,12 +27,9 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Create legal entities
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to create legal entities in Microsoft Dynamics 365 Commerce, which must be created and configured before creating channels.
-
-## Overview
 
 A legal entity is an organization that has a registered or legislated legal structure. Legal entities can enter into legal contracts and are required to prepare statements that report on their performance.
 
@@ -53,7 +48,7 @@ To create a new legal entity in Dynamics 365 Commerce, follow these steps.
 1. In the **Country/region** field, enter or select a value.
 1. Select **OK**. 
 
-   ![Legal entity creation](media/legal-entities.png)
+   ![Legal entity creation.](media/legal-entities.png)
 
 1. In the **General** section, provide the following general information about the legal entity: 
    1. Enter a search name, if a search name is required. A search name is an alternate name that can be used to search for this legal entity. 
@@ -76,7 +71,7 @@ To create a new legal entity in Dynamics 365 Commerce, follow these steps.
 
 The following image shows details of an example legal entity.
 
-![Legal entity general section](media/legal-entities-general.png)
+![Legal entity general section.](media/legal-entities-general.png)
    
 ## Additional resources
 
@@ -89,3 +84,6 @@ The following image shows details of an example legal entity.
 [Channels overview](channels-overview.md)
 
 [Channel setup prerequisites](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Task Double form pattern
 description: This article provides information about the Task Double form pattern. This pattern was previously used to present a parent and child entity in the same form.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,14 +33,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the Task Double form pattern. This pattern was previously used to present a parent and child entity in the same form.
 
-Usage
------
+## Usage
 
 This type of form has previously been used when you wanted to present parent/child entities in the same form. This isn't a recommended pattern for new forms. No new forms should be created that use this pattern. This pattern will provide structure and stability for legacy forms, and will also provide a migration path to more modern form patterns.
 
 ## Wireframe
 
-![Task Double form wireframe](./media/patterntaskdouble.png)]
+![Task Double form wireframe.](./media/patterntaskdouble.png)]
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -113,7 +110,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Example
 Form: **HRMAbsenceTableHistory** 
 
-[![Task Double example](./media/taskdouble2-1024x639.png)](./media/taskdouble2.png)
+[![Task Double example.](./media/taskdouble2-1024x639.png)](./media/taskdouble2.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -126,4 +123,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![AX 2012 visual example](./media/taskdouble3.png)](./media/taskdouble3.png)
+[![AX 2012 visual example.](./media/taskdouble3.png)](./media/taskdouble3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

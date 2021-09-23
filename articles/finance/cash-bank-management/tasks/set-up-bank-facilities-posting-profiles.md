@@ -4,11 +4,9 @@
 title: Set up bank facilities and posting profiles for letters of guarantee
 description: This task creates a Bank facility and posting profile that is needed to process a letter of guarantee. 
 author: kweekley
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -80,3 +78,6 @@ This task uses the USMF demo company.
 10. Click Save.
 11. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

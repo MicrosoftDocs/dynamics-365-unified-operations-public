@@ -4,11 +4,9 @@
 title: Set up asset retirement obligation for fixed assets for Japan
 description: This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired for Japan.
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,7 +44,7 @@ Asset retirement obligation (ARO) is used to distribute the retirement cost of a
 > [!NOTE]
 >\* Steps 2 and 3 are repeated multiple times throughout the service life of the fixed asset.
 
-![T-account representation of the ARO transactions](./media/aro-t-account.png) 
+![T-account representation of the ARO transactions.](./media/aro-t-account.png) 
 
 ## Setup information
 To use ARO, you must complete the following setup tasks:
@@ -72,3 +70,6 @@ If you don't have access to the pages that are used to complete this task, conta
 |    Configuration keys     | Ensure that the Fixed <strong>Assets</strong> configuration key is available under the <strong>Data Dictionary</strong> &gt; <strong>Configuration Keys</strong> node in the Application Object Tree (AOT). |
 | Security roles and duties |                                                  To perform this task, you must be a member of the <strong>-Maintain fixed assets-</strong> security role.                                                  |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

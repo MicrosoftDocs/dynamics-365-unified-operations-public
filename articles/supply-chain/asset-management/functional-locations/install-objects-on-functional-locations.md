@@ -3,12 +3,10 @@
 
 title: Install assets on functional locations
 description: This topic explains how to install assets on functional locations in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -87,3 +85,6 @@ After the setup data is available, you're ready to create an asset.
 1. On the **All Functional locations** page, make sure that the functional location where you want the asset to be automatically created uses the functional location type that you created for this purpose.
 2. Select the functional location in the list.
 3. Select **Update functional location state**, and then select the lifecycle state that you created for this purpose. One asset is now automatically installed on the functional location. This asset has the same name as the functional location.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

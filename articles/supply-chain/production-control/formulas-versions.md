@@ -4,11 +4,9 @@
 title: Formulas and formula versions
 description: This topic provides information about formulas and formula versions. A formula defines the materials, ingredients, and outcomes of a specific process in process manufacturing. Formulas are used to plan and produce products in process manufacturing.
 author: cvocph 
-manager: tfehr
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -74,3 +72,6 @@ The Scalable feature is available only if all the item components in the formula
 
 ## Use Step consumption
 Step consumption eliminates the requirement that you must enter a quantity on the **Formula line** tab for an ingredient. Instead, Step consumption is configured so that it has a **From series** value and a **Quantity** value. The information from the Step consumption per series record that satisfies the quantity on the batch order is selected. Step consumption is useful when the consumption rate isn't linear with respect to the batch order size and only increases the requirement when a specific quantity threshold is met. To enable this feature for a new formula, under the **Consumption calculation** group, change the formula setting for the applicable ingredient from **Standard** to **Step**. You specify this consumption method on the **Setup** tab of the **Formula line** page.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

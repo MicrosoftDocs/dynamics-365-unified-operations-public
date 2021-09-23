@@ -4,11 +4,9 @@
 title: Acquire and dispose a CIAP fixed asset
 description: Fiscal books can acquire and dispose of fixed assets that are ICMS tax long term return.
 author: v-gonode
-manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -76,3 +74,6 @@ Use this functionality to register in Fiscal books module the disposal of a fixe
 14.	On the **CIAP Report**, in the **Fiscal establishment** field, select a fiscal establishment.
 15.	Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

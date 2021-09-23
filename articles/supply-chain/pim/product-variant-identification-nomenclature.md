@@ -4,11 +4,9 @@
 title: Nomenclature of product variant numbers and names
 description: This topic describes how you can set up a product number nomenclature to replace the fixed [Product master number - Configuration - Size - Color - Style] format.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -194,10 +192,12 @@ Depending on the nomenclature, the system might try to assign a non-unique produ
 
 During one step of the configuration process, the system suggests a configuration value according to the nomenclature. In this step, you can manually change the configuration value. When you save the configuration, the system verifies that the configuration value is unique. If the value that you entered isn't unique, you receive an error message. To save the configuration, you must enter a unique configuration value.
 
-Additional resources
---------
+## Additional resources
 
 [Create a product number nomenclature for predefined product variants](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 
 [Create a product number nomenclature for configured product variants](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

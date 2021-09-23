@@ -4,11 +4,9 @@
 title: Hazardous materials overview
 description: This topic provides an overview of features that are related to handling and documenting hazardous materials during product information management and warehouse management.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: damadipa
@@ -29,13 +27,12 @@ ms.dyn365.ops.version: Release 10.0.11
 # Hazardous materials overview
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 To remain compliant with shipping and transport regulations, organizations that ship materials that are classified as dangerous goods must include additional paperwork with their shipments. The hazardous materials feature lets customers store information that is related to released items. This information can then be used to help prepare shipping documentation. An organization that ships dangerous goods must have its own processes and procedures for managing the shipping process. Microsoft Dynamics 365 Supply Chain Management is just a tool that can help generate the required documents.
 
 The following diagram illustrates the steps needed to set up and use the hazardous materials feature.
 
-![Setup and use of the hazardous materials feature](media/hazmat-overview.png "Setup and use of the hazardous materials feature")
+![Setup and use of the hazardous materials feature.](media/hazmat-overview.png "Setup and use of the hazardous materials feature")
 
 The hazardous materials feature is set up in Product information management and provides documents that can be printed through Warehouse management. Therefore, broadly speaking, those areas are the two main areas where you will review, set up, and use this feature's functionality:
 
@@ -66,3 +63,6 @@ For more information about how to set up regulations and values for hazardous ma
 ## Warehouse management
 
 When you prepare a shipment in Warehouse management, you will be able to print several new reports that use the information that you set up in Product information management. For more information about the available reports and how to use them, see [Hazardous materials inquiries and reports](hazmat-reports.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

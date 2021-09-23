@@ -4,11 +4,9 @@
 title: Pause service updates through Lifecycle Services (LCS)
 description: This topic explains how to pause service updates to your environments.
 author: angelmarshall
-manager: AnnBe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -101,3 +99,6 @@ There are two ways to cancel pauses, so that updates are resumed:
 In both cases, an email is sent to inform the stakeholders.
 
 For more information about service updates, see [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

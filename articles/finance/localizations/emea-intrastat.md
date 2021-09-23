@@ -4,11 +4,9 @@
 title: Intrastat overview
 description: This topic provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 28581
+ms.custom: ["28581", "intro-internal"]
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
 ms.author: epopov
@@ -80,7 +78,7 @@ The following table lists the prerequisites for Intrastat reporting.
 </tr>
 <tr class="odd">
 <td>Product category hierarchy (sales hierarchy, procurement hierarchy)</td>
-<td>Assign the Intrastat commodity codes to the category nodes on the <strong>Commodity codes</strong> tab of the <strong>Category hierarchy</strong> page. When you assign a commodity code to a parent category node, that code is applicable to all child category nodes. The selected commodity codes will be available in the <strong>Selected</strong> view when you select a commodity code in the released product details, and on sales order, purchase order, and transfer order lines.</td>
+<td>Assign the Intrastat commodity codes to the category nodes on the <strong>Commodity codes</strong> tab of the <strong>Category hierarchy</strong> page. When you assign a commodity code to a parent category node, that code is applicable to all child category nodes. The selected commodity codes will be available in the <strong>Selected</strong> view when you select a commodity code in the product details, and on sales order, purchase order, and transfer order lines.</td>
 </tr>
 <tr class="even">
 <td>Released product details</td>
@@ -91,6 +89,7 @@ The following table lists the prerequisites for Intrastat reporting.
 <li><strong>Country/region of origin</strong> – Select the default country/region where the goods were completely obtained or produced.</li>
 <li><strong>State/province of origin/destination</strong> – Select the default state/province of destination for arrivals and the state/province of origin for dispatches.</li>
 <li><strong>Net weight in kg</strong></li>
+<li><strong>Exclude</strong> - Enable this parameter to not transfer transactions with this product to Intrastat</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -244,3 +243,6 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

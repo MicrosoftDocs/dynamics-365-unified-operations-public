@@ -4,11 +4,9 @@
 title: Planning Optimization extensibility
 description: This topic describes the extensibility scenarios that are supported in Planning Optimization. 
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -76,3 +74,6 @@ When you add custom logic, consider the following constraints and best practices
 - The `jobCompletedSuccessfully` method is called outside the transaction scope. Therefore, the plan is already visible to the user when the custom logic starts to run. If your customization sets additional fields on planned orders, it's important that you let users know that the values of those fields will eventually be consistent (in other words, they might be out of date immediately after a planning job is completed).
 - Another master planning job can start when the `jobCompletedSuccessfully` method is called. The new job might affect the full plan or part of the plan. The new job might update or delete the same planned orders or requirement transactions that were created or updated as part of the planning job that was handled in `jobCompletedSuccessfully`. Update conflict exceptions must be handled when this event is extended.
 - Avoid using single transaction scope when you extend this method. A single master planning run can produce millions of requirement transactions and hundreds of thousands of planned orders. If all these transactions and planned orders are processed in the scope of a single transaction, many SQL locks will occur and block other planning processes. Additionally, if the transaction is held for a long time, "ghost records" will be created in the SQL database. Ghost records will negatively affect every process in the system.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

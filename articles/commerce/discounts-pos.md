@@ -4,11 +4,9 @@
 title: Show discounts in POS 
 description: This topic explains how Microsoft Dynamics 365 Commerce helps sales associates learn about promotions and how they can be used for cross-sell and upsell motions.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-Commerce
 ms.technology: 
 
 # optional metadata
@@ -39,7 +37,7 @@ Promotions play an important role in motivating customers who are making purchas
 
 Commerce includes an operation that is named "View all discounts." This operation shows all the discounts that are currently running in a store. The "View all discounts" operation can be mapped to a button in the point of sale (POS), and that button can be added to the **Welcome** page or the **Transaction** page. The following illustration shows an example of the **All discounts** page that is opened.
 
-![All discounts page](./media/View_all_discounts.png "All discounts page")
+![All discounts page.](./media/View_all_discounts.png "All discounts page")
 
 To show discounts, the system looks for all the discounts that match one or more of the following conditions:
 
@@ -67,8 +65,11 @@ The following illustrations show the logic that determines which discounts are s
 
 The following illustration shows the logic that is used when the discount concurrency control is set to **Best price and compound within priority, never compound across priorities**.
 
-![Logic for Best price and compound within priority, never compound across priorities](./media/Model_1.png "Logic for Best price and compound within priority, never compound across priorities").
+![Logic for Best price and compound within priority, never compound across priorities.](./media/Model_1.png "Logic for Best price and compound within priority, never compound across priorities").
 
 The following illustration shows the logic that is used when the discount concurrency control is set to **Best price only within priority, always compound across priority**.
 
-![Logic for Best price only within priority, always compound across priority](./media/Model_2.png "Logic for Best price only within priority, always compound across priority").
+![Logic for Best price only within priority, always compound across priority.](./media/Model_2.png "Logic for Best price only within priority, always compound across priority").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

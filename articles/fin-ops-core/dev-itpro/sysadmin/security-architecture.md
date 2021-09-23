@@ -4,11 +4,9 @@
 title: Security architecture
 description: This topic provides an overview of the security architecture of Finance and Operations.
 author: Peakerbl
-manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -36,7 +34,7 @@ This topic provides an overview of the security architecture of Finance and Oper
 
 When you understand the security architecture, you can more easily customize security to fit the requirements of your business. The following diagram provides a high-level overview of the security architecture. 
 
-[![Diagram showing overview of security architecture](./media/security-architecture.png)](./media/security-architecture.png)
+[![Diagram showing overview of security architecture.](./media/security-architecture.png)](./media/security-architecture.png)
 
 ## Authentication
 By default, only authenticated users who have user rights can establish a connection. 
@@ -65,3 +63,6 @@ Additionally, the Table Permissions Framework helps protect some data. Data secu
 Auditing of user sign in and sign out is enabled, which means that the system logs when a user signs in or out of the application. A sign out is logged even if the user's session expires or ends.
 
 A system administrator or security administrator can access the audit logs by going to  the **User log** page (**System administration** > **Inquiries** > **User log**).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

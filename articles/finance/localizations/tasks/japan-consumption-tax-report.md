@@ -4,11 +4,9 @@
 title: Generate Japan consumption tax report
 description: This procedure walks you through generating the Japan consumption tax report. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -67,3 +65,6 @@ This procedure walks you through generating the Japan consumption tax report. Th
 
 > [!NOTE]
 > To calculate the consumption tax report that should be submitted from October 1, 2019, you must turn on the **Japanese sales tax report** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

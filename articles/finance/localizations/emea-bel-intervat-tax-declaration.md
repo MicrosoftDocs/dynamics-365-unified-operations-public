@@ -4,11 +4,9 @@
 title: INTERVAT tax declaration
 description: This topic provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only.
 author: anasyash
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -122,7 +120,7 @@ For more information about how to set up the VAT statement, see [VAT reporting f
 
 Create lines on the **INTERVAT setup** page (**Tax \> Setup \> Sales tax \> INTERVAT setup**). The information that you enter on this page is used when you select **Open Web site** on the **INTERVAT tax declaration** page. Create an element for each language. Set the following fields: **Language**, **Description**, and **URL**.
 
-![Intervat setup page](media/1_Intervat_setup.png)
+![Intervat setup page.](media/1_Intervat_setup.png)
 
 ### Set up sales tax reporting codes
 
@@ -600,7 +598,7 @@ In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2), i
 
 -   INTERVAT format (BE)
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Additional sales tax report boxes
 
@@ -672,7 +670,7 @@ You can also close the tax period by generating a sales tax payment (**Tax \> De
 4.  Select **OK**. The system generates the INTERVAT tax declaration line and an INTERVAT XML file.
 5.  Review the information in the declaration.
 
-![INTERVAT tax declaration page](media/2_Intervat_tax%20declaration.png)
+![INTERVAT tax declaration page.](media/2_Intervat_tax%20declaration.png)
 
 6.  On the **General** tab, review the following fields: **INTERVAT ID**, **Date**, **Period**, **Start date**, **End date**, **Period frequency**, **Status**, and **File name**.
 7.  On the **Frame I: General information** tab, review the following fields. You can edit these fields, even if the period was closed. The exceptions are the fields in the **Pro-rata percentages** section. Those fields are read-only.
@@ -706,7 +704,7 @@ To print an INTERVAT tax declaration for several tax periods, follow these steps
 1.  Go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **INTERVAT summary tax declaration**.
 2.  Use the filters to specify criteria for selecting data, and then review the information on the report.
 
-![Generated INTERVAT summary tax declarations report](media/3_Intervat_summary_tax_declarations.png)
+![Generated INTERVAT summary tax declarations report.](media/3_Intervat_summary_tax_declarations.png)
 
 ## Example
 The following example shows how you can set up sales tax codes and sales tax reporting codes, post transactions, and generate the INTERVAT tax declaration.
@@ -772,7 +770,7 @@ Instead of codes **55** and **59**, you can use corrective codes **63** and **64
 9.  In the **Report sales tax for settlement period** dialog box, in the **Sales tax payment version** field, select **Original**.
 10.  Select **OK**, and review the data.
 
-![Generated INTERVAT tax declaration page](media/4_Intervat_tax_declaration.png)
+![Generated INTERVAT tax declaration page.](media/4_Intervat_tax_declaration.png)
 
 Notice that the amount of the credit note is shown in code **84**.
 
@@ -780,7 +778,7 @@ Notice that the amount of the credit note is shown in code **84**.
 12.  Select **New** to create a line for February 2020.
 13.  Select **Tax corrections \> Adjustments**, and create a line.
 
-![Adjustments page](media/5_Adjustments.png)
+![Adjustments page.](media/5_Adjustments.png)
 
 14.  Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**.
 15.  In the **Settle and post sales tax** dialog box, in the **Sales tax payment version** field, select **Original**.
@@ -793,15 +791,15 @@ Notice that the amount of the credit note is shown in code **84**.
    -   **Update:** No
    -   **Format mapping:** INTERVAT format (BE)
 
-![New INTERVAT tax declaration page](media/6_Intervat.png)
+![New INTERVAT tax declaration page.](media/6_Intervat.png)
 
 18.  Select **OK**, open the file, and review the report.
 
-![xml INTERVAT tax declaration report](media/7_Intervat_XML.png)
+![xml INTERVAT tax declaration report.](media/7_Intervat_XML.png)
 
 19.  Select **Details**, and review the data.
 
-![INTERVAT details page](media/8_Intervat_details.png)
+![INTERVAT details page.](media/8_Intervat_details.png)
 
 Notice that the amount in **62** code equals **200**.
     
@@ -812,3 +810,6 @@ For information about reconciliation reports for Belgium, see [Reconciliation re
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

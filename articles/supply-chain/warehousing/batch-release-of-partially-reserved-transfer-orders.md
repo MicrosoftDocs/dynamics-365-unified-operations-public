@@ -3,12 +3,10 @@
 
 title: Batch release of partially reserved transfer orders
 description: This topic describes how to set up and apply batch release of partially reserved transfer orders from a mobile device.
-author: pjacobse
-manager: tfehr
+author: perlynne
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,7 @@ ms.reviewer: kamaybac
 ms.custom: 269384
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: pjacobse
+ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -102,3 +100,6 @@ earlier.
 -   To set the **Quantity** and **Allow release of partially released orders**
     parameters for sales orders, click **Warehouse management** \> **Release to
     warehouse** \> **Automatic release of sales orders**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

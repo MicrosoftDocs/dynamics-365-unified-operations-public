@@ -4,11 +4,9 @@
 title: Sales complementary fiscal documents for Brazil
 description: This topic describes sales complementary invoice for the Brazilian localization.
 author: sndray
-manager: AnnBe
 ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes sales complementary invoice for the Brazilian localization.
 
-Overview
---------
+## Overview
 
 According to the fiscal regulations in Brazil, a specific fiscal document that is known as a complementary invoice (Nota fiscal complementar) is issued or received for correction purposes. For example, if the prices of goods or services from the original invoice were incorrectly registered, a complementary invoice is required in order to fix the error. Complementary invoices apply only if the difference is positive. In other words, they apply only if the current prices or taxes amounts are more than original prices or taxes amounts. Because fiscal invoices of this type are considered complements of the original invoices, the original invoices don’t have to be canceled. Companies are obligated to issue or receive complementary invoice for the following reasons:
 
@@ -61,7 +58,7 @@ Before you can create or post sales complementary fiscal documents, the followin
 -   **Sales tax code for PIS** – Specify the sales tax code that is used for the Programa de Integração Social (PIS) tax calculation amount.
 
 ## Examples
-[![Examples of an original invoice and sales complementary fiscal documents of each of the three types](./media/salescomplementary-1024x409.png)](./media/salescomplementary.png)
+[![Examples of an original invoice and sales complementary fiscal documents of each of the three types.](./media/salescomplementary-1024x409.png)](./media/salescomplementary.png)
 
 For more information, see the following topics:
 
@@ -75,3 +72,6 @@ For more information, see the following topics:
  - [Cancel a customer fiscal document (project)](tasks/br-00092-cancel-customer-fiscal-document-project.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

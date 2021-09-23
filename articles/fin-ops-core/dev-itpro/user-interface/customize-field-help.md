@@ -4,11 +4,9 @@
 title: Customize field descriptions
 description: This article describes how you can customize existing field descriptions and add your own descriptions.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -57,8 +55,7 @@ The pattern for label IDs is @FieldDescriptions\_*ModuleName:PageName*\_*Control
 - @FieldDescriptions\_ProcurementAndSourcing:PurchLineBackOrder\_LinkViewCheckBox is the ID for the label for the <strong>Link on change view</strong> option (LinkViewCheckBox) on the <strong>Backorder purchase lines</strong> page (PurchLineBackOrder).
 
 
-Additional resources
---------
+## Additional resources
 
 [Create localizable labels](create-localizable-labels-client.md)
 
@@ -66,3 +63,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Keyboard shortcuts for extensible controls
 description: This topic outlines the recommended method for implementing keyboard shortcuts for extensible controls.
 author: robinarh
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -319,3 +317,6 @@ Shortcuts: $dyn.extendPrototype($dyn.controls.Form.prototype.Shortcuts, {
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

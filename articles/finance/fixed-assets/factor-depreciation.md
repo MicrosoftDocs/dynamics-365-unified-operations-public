@@ -4,11 +4,9 @@
 title: Factor depreciation
 description: This article gives an overview of the factor depreciation method.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -83,3 +81,6 @@ The value in the **Factor** field is equal to **50**. In this case, the deprecia
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

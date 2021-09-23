@@ -4,11 +4,9 @@
 title: Sample for POS integration with control units for Sweden (legacy)
 description: This topic is the building and installation guide for the sample for control unit integration for Sweden. 
 author: EvgenyPopovMBS
-manager: Annbe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -323,3 +321,6 @@ Follow these steps to create and apply deployable packages that contain Commerce
 4. Run **msbuild** for the whole Retail SDK to create deployable packages.
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

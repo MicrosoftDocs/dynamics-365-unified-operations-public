@@ -4,11 +4,9 @@
 title: Create and associate a hardware station
 description: This procedure walks through how to create a new hardware station. 
 author: jashanno
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -59,3 +57,6 @@ This procedure walks through how to create a new hardware station. A new hardwar
 23. In the EFT terminal ID field, type a value.
 24. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

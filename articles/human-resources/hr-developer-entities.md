@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Common Data Service entities
-description: Microsoft Dynamics 365 Human Resources uses Common Data Service to enable extensibility and integration scenarios.
+title: Dataverse tables
+description: Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
 author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -29,19 +27,20 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Common Data Service entities
+# Dataverse tables
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Microsoft Dynamics 365 Human Resources uses Common Data Service to enable extensibility and integration scenarios.
+Microsoft Dynamics 365 Human Resources uses Dataverse to enable extensibility and integration scenarios.
 
-For more information about Common Data Service, see [What is Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
+> [!NOTE]
+> Human Resources entities correspond to Dataverse tables. For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
-The following Human Resources entities are available in Common Data Service.
+The following Dataverse tables are available based on Human Resources entities.
 
-## Benefit entities
+## Benefit tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Benefit Calculation Frequency | cdm_benefitcalculationfrequency |
 | Benefit Calculation Frequency Pay Period | cdm_benefitcalculationfrequencypayperiod |
@@ -51,9 +50,9 @@ The following Human Resources entities are available in Common Data Service.
 | Benefit Plan | cdm_benefitplan (Not enabled for custom field support) |
 | Benefit Type | cdm_benefittype |
 
-## Business process tasks entities
+## Business process tasks tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Business Process Calendar | cdm_businessprocesscalendar |
 | Business Process Group Assignment | cdm_businessprocessgroupassignment |
@@ -62,9 +61,9 @@ The following Human Resources entities are available in Common Data Service.
 | Checklist Template Header | cdm_businessprocesstemplateheader |
 | Checklist Template Task | cdm_businessprocesstemplatetask |
 
-## Compensation entities
+## Compensation tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Compensation Fixed Plan | cdm_compensationfixedplan |
 | Compensation Grid | cdm_compensationgrid |
@@ -81,9 +80,9 @@ The following Human Resources entities are available in Common Data Service.
 | Vesting Rule | cdm_vestingrule |
 | Worker Fixed Compensation | cdm_workerfixedcompensation |
 
-## Organization entities
+## Organization tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Department | cdm_department |
 | Employment | cdm_employment |
@@ -99,11 +98,11 @@ The following Human Resources entities are available in Common Data Service.
 | Title | cdm_title |
 
 > [!NOTE]
-> Financial dimensions for **Position Type**, **Position Worker Assignment**, and **Employment** provide one-direction integration to Common Data Service. Financial dimensions updates currently can't synchronize from Common Data Service to Human Resources. 
+> Financial dimensions for **Position Type**, **Position Worker Assignment**, and **Employment** provide one-direction integration to Dataverse. Financial dimensions updates currently can't synchronize from Dataverse to Human Resources. 
 
-## Leave and absence entities
+## Leave and absence tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Leave Bank Transaction | cdm_leavebanktransaction |
 | Leave Enrollment | cdm_leaveenrollment |
@@ -113,9 +112,9 @@ The following Human Resources entities are available in Common Data Service.
 | Leave Type | cdm_leavetype |
 | Leave Type Reason Code | cdm_leavetypereasoncode |
 
-## Payroll entities
+## Payroll tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Pay Cycle | cdm_paycycle |
 | Pay Period | cdm_payperiod |
@@ -123,9 +122,9 @@ The following Human Resources entities are available in Common Data Service.
 | Bank Account Disbursement | cdm_bankaccountdisbursement |
 | Tax Region | cdm_taxregion |
 
-## Worker entities
+## Worker tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Worker | cdm_worker |
 | Worker Address | cdm_workeraddress |
@@ -139,48 +138,55 @@ The following Human Resources entities are available in Common Data Service.
 | Work Calendar Time Interval | cdm_workcalendartimeinterval (Not enabled for custom field support) |
 | Worker Bank Account | cdm_workerbankaccount |
 
-## Worker setup entities
+## Worker setup tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Veteran Status | cdm_veteranstatus |
 | Ethnic Origin | cdm_ethnicorigin |
 | Reason Code | cdm_reasoncode |
 | Person Identification Issuing Agency | cdm_personidentificationissuingagency |
 
-## Competency entities
+## Competency tables
 
-| Name | Entity |
+| Name | Table |
 | --- | --- |
 | Skill Type | cdm_skilltype |
 
-## Entity relationship models
+## Table relationship models
 
 ### Worker
 
-![Worker](./media/HCMCommon-worker-entity-diagram.png)
+![Worker.](./media/HCMCommon-worker-entity-diagram.png)
 
 ### Job and Job Position
 
-![Job and Job Position](./media/HCMCommon-job-and-job-position-entity-diagram.png)
+![Job and Job Position.](./media/HCMCommon-job-and-job-position-entity-diagram.png)
 
 ### Benefits
 
-![Benefits](./media/HCMCommon-benefits-entity-diagram.png)
+![Benefits.](./media/HCMCommon-benefits-entity-diagram.png)
 
 ### Compensation
 
-![Compensation](./media/HCMCommon-compensation-entity-diagram.png)
+![Compensation.](./media/HCMCommon-compensation-entity-diagram.png)
 
 ### Leave
 
-![Leave](./media/HCMCommon-leave-entity-diagram.png)
+![Leave.](./media/HCMCommon-leave-entity-diagram.png)
 
 ### Work Calendar
 
-![Work Calendar](./media/HCMCommon-work-calendar-entity-diagram.png)
+![Work Calendar.](./media/HCMCommon-work-calendar-entity-diagram.png)
 
 ## See also
 
-[Choose a data integration technology](hr-admin-integration-choose-technology.md)</br>
-[Configure Common Data Service integration](hr-admin-integration-common-data-service.md)
+[Choose a data integration technology](hr-admin-integration-choose-technology.md)<br>
+[Configure Dataverse integration](hr-admin-integration-common-data-service.md)<br>
+[Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)<br>
+[What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminology updates](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Translate user interface files
 description: This topic explains how to use the UI translation service for Microsoft Dynamics 365 products.
 author: kfend
-manager: AnnBe
-ms.date: 03/29/2018
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -40,7 +38,7 @@ For more information about the Microsoft Dynamics 365 Translation Service, see [
 ## Create a translation request
 1. In Microsoft Dynamics Lifecycle Services (LCS), on the DTS dashboard, select **Add** to create a new translation request.
 
-    ![Add button](./media/dts-request1.png "Add button")
+    ![Add button.](./media/dts-request1.png "Add button")
 
     You can open the DTS dashboard either from the LCS home page or from within a project. For more information, see [Accessing DTS](./translation-service-overview.md#accessing-dts).
 
@@ -54,7 +52,7 @@ For more information about the Microsoft Dynamics 365 Translation Service, see [
     | Product version | Select a product version. If you accessed DTS from within a LCS project, this field shows the default product version information from the project. However, you can select a different version. |
     | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business requires that multiple target languages be translated for the same source language, you can select all of the target languages in one request. Select the target languages using the check box next to the language name. This saves time and allows you to track the status of all the target language translations in one request. The fields list all the languages that are supported for the selected product name and version. Language names that are shown in **bold** type are General Availability (GA) languages for Microsoft Dynamics products. This means that Microsoft-trained machine translation (MT) systems are available in those languages and the MT system is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT system uses the general domain training. |
 
-![Selecting languages](./media/dts-target-lang.png "Selecting languages")
+![Selecting languages.](./media/dts-target-lang.png "Selecting languages")
 
 3. Select **Create**. Verify the request details were selected correctly and then click **Yes** to continue. 
 
@@ -78,7 +76,7 @@ Create one zip file that contains all the UI files in the source language that y
 ### Upload XLIFF translation memory files (Optional)
 If you have XLIFF TM files from a previous UI translation request, or if you used the [Align tool](use-translation-service-tm.md) to create an XLIFF TM, create a zip file that contains all TM files before you upload them. Strings that match are then recycled to help guarantee consistency between product versions. For more information about XLIFF TMs, see [Translation memory files](use-translation-service-tm.md).
 
-![TM upload](./media/dts-tm-upload.png "TM upload")
+![TM upload.](./media/dts-tm-upload.png "TM upload")
 
 If you created the translation request for multiple target languages, you must select which target language the TM file is for. 
 
@@ -88,11 +86,11 @@ However, if neither the source language nor the target language is a Microsoft G
 
 After you've finished uploading files, select **Submit** to start the translation process. 
 
-After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request with multiple target languages, you will see each target language status displayed n a separate line with the same request ID. Selecting a line on the dashboard will extend the dashboard window to the right to show the request summary information.  
+After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request for multiple target languages, the status of each target language is shown on a separate line that has the same request ID. If you select a line on the dashboard, the dashboard page will be extended to the right to show a summary of the request information.  
 
 To see the request status, click a request ID link on the dashboard. The **Request status** tab shows the source files list you uploaded with the summary of the request information.
 
-![Request status tab](./media/dts-request-status.png "Request status tab")
+![Request status tab.](./media/dts-request-status.png "Request status tab")
 
 Note that the processing time depends on the number of requests that are in the DTS queue and the word count in the source files that you submit.
 
@@ -103,9 +101,10 @@ Note that the processing time depends on the number of requests that are in the 
     + If you're using a generic MT system, requests can be completed in a few minutes, depending on the file size.
 
 ## After translation is completed
-When processing of your translation request is completed, you receive an email notification from DTS. You can then view the result on the **Request output** tab of the request details page.
 
-![Request output tab](./media/dts-output.png "Request output tab")
+When your translation request has been processed, you will receive an email notification from DTS. You can then view the result on the **Request output** tab of the **Request details** page.
+
+![Request output tab.](./media/dts-output.png "Request output tab")
 
 For UI translation requests, two types of output file are available after the translation process is completed. 
 
@@ -125,6 +124,9 @@ When you've finished reviewing and editing the translation files in XLIFF, you m
 3. In the prompt, confirm the upload. 
 4. The **Request output** tab promptly refreshes the content. Expand the target language node you just regenerated to verify the **Modified** timestamp and then download the updated output files. 
 
-![Regenerated output](./media/dts-regenerate-output.png "Regenerated output")
+![Regenerated output.](./media/dts-regenerate-output.png "Regenerated output")
 
 You can repeat the regeneration process as many times as you require.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

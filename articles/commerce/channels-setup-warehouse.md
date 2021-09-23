@@ -4,11 +4,9 @@
 title: Set up a warehouse
 description: This topic describes how to set up a warehouse to be used with a new channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,12 +27,9 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Warehouse set up
 
-
 [!include [banner](includes/banner.md)]
 
 This topic describes how to set up a warehouse to be used with a new channel in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Each Commerce channel requires a configured warehouse to be associated with it. The following procedures provide the minimum configuration required to set up a warehouse for a Commerce channel. For more information regarding warehouse setup, please see the [Warehouse management overview](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
@@ -54,7 +49,7 @@ To configure a warehouse site, follow these steps.
 
 The following image shows an example warehouse site.
 
-![Example warehouse site](media/warehouse-site.png)
+![Example warehouse site.](media/warehouse-site.png)
 
 ## Set up a warehouse
 
@@ -107,7 +102,7 @@ To set up warehouse inventory locations for standard, damaged, and returned inve
     
 The following image shows a San Francisco warehouse inventory location setup.
 
-![Example inventory location setup](media/warehouse-inventory-locations.png)
+![Example inventory location setup.](media/warehouse-inventory-locations.png)
     
 ## Complete warehouse setup
 
@@ -130,7 +125,7 @@ To complete warehouse setup, follow these steps.
 
 The following image shows details for a configured warehouse.
 
-![Example configured warehouse](media/warehouse-sample.png)
+![Example configured warehouse.](media/warehouse-sample.png)
 
 ## Additional resources
 
@@ -150,3 +145,6 @@ The following image shows details for a configured warehouse.
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

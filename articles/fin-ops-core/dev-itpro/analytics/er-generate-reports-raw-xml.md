@@ -4,11 +4,9 @@
 title: Generate reports by adding content as raw XML
 description: You can design Electronic reporting (ER) formats that generate outgoing documents in XML format.
 author: NickSelin
-manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -43,3 +41,6 @@ You can use the new **RAW XML** format element to design Electronic reporting (E
 > Be aware that the framework doesn't control whether the XML content that is placed to the generated document by using the **RAW XML** format element is correct.
 
 To learn more about this feature, play the **ER Use raw XML data to generate XML reports (Part 1: Design data model)** and **ER Use raw XML data to generate XML reports (Part 2: Design and run report)** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process, and can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). These task guides walk you through the process of configuring an ER format to insert raw XML data into generated files.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

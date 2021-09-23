@@ -4,11 +4,9 @@
 title: Set up vendors for 1099 reporting
 description: This topic explains how to set up vendor records so that a 1099 box is associated with a main account. 
 author: v-kiarnd
-manager: Ann Beebe
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -117,3 +115,6 @@ The system evaluates any vendor where the **Report 1099** option selected. It th
 
 > [!NOTE]
 > A new column that is named **Created by the 1099 update process** has been added to the **Tax 1099 transactions** page. The check boxes in this column are selected to show that the new update process updated the 1099 balance. If the check box for a row is cleared, standard functionality was used to create the transaction. To open the **Tax 1099 transactions** page, go to **Accounts payable \> Periodic tasks \> Vendor settlement for 1099s \> Vendor 1099 transactions**. Alternatively, go to **Accounts payable \> Vendors \> All vendors**, select a vendor, and then, on the Action Pane, on the **Vendor** tab, in the **Tax information** group, select **Vendor settlement for 1099s \> Vendor 1099 transactions**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

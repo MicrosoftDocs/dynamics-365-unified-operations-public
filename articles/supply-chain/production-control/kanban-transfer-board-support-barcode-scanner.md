@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Kanban transfer board support for barcode scanners
-description: The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.
+title: Kanban transfer board support for bar code scanners
+description: The Kanban transfer board supports scanner input from a widget bar code scanner to Select, Start, Complete, and Empty a kanban job.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -29,14 +27,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Kanban transfer board support for barcode scanners
+# Kanban transfer board support for bar code scanners
 
 [!include [banner](../includes/banner.md)]
 
-The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.
+The Kanban transfer board supports scanner input from a widget bar code scanner to Select, Start, Complete, and Empty a kanban job.
 
-Registration modes
-------------------
+## Registration modes
 
 On the **Scanner registration** FastTab you can select the registration mode, which controls the action when you scan a kanban card number or manually type the number in the Kanban card number field.
 
@@ -48,8 +45,7 @@ On the **Scanner registration** FastTab you can select the registration mode, wh
 | Select                | Registers a Kanban card number and automatically selects the referenced job in the Kanban list. |
 
  
-Registration mode Select
-------------------------
+## Registration mode Select
 
 When you use a bar code reader to select a job, the display mode of the kanban board changes. In this mode, the following conditions apply:
 
@@ -195,3 +191,6 @@ The status of the selected job and the status of any pegged jobs for event kanba
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

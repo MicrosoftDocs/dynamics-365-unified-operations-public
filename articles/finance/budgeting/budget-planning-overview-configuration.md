@@ -4,11 +4,9 @@
 title: Budget planning overview
 description: This topic describes budget planning. It contains information that can help you configure budget planning and set up budget planning processes.
 author: panolte
-manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 17251
+ms.custom: ["17251", "intro-internal"]
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 # ms.search.industry: 
@@ -47,7 +45,7 @@ An organization can configure budget planning, and then set up budget planning p
 - **Budget planning stages** – Budget planning stages define the steps that a budget plan follows from its beginning through final approval. Budget planning stages are arranged in budget planning workflows.
 - **Budget planning workflows** – Budget planning workflows consist of and define budget planning stages. Budget planning workflows are associated with budgeting workflows. Budgeting workflows are the automated and manual processes that move budget plans through the budget planning stages.
 
-[![Budget planning terminology](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![Budget planning terminology.](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### Typical tasks
 
@@ -72,17 +70,17 @@ An optional but recommended first step is to create a schema that shows your org
 
 The following illustration shows a generic example, where separate budget planning workflows are created for different levels of the organization. Stages are defined in each workflow, and specific scenarios are assigned to each stage to hold the budget data. Tasks are completed to move the data from one stage to the next. For example, amounts can be allocated or aggregated to different accounts, approvals, or other reviews. In this illustration, italic text indicates a scenario that can't be edited during the stage, or data that is historical or has been approved at an earlier stage and therefore should not be changed.
 
-[![Budget planning generic schema](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Budget planning generic schema.](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
 The following illustration shows an example where the corporate headquarters estimate the baseline amounts for the initial budget and distribute them to Sales departments. The Sales departments then estimate and submit their forecast back to the headquarters, where the budget manager aggregates and adjusts the forecast. Finally, the budget manager sends the adjusted budget amounts to the chief financial officer (CFO) for review, final adjustments, and approval.
 
-[![Budget planning schema example](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
+[![Budget planning schema example.](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ### Organization hierarchy for budget planning
 
 On the **Organization hierarchy** page, you can specify an organization hierarchy as a budget planning hierarchy for each budget planning process. The budget planning hierarchy doesn't have to match the standard organization hierarchy that is used for other purposes. Because this hierarchy is used to aggregate and distribute data, you might want it to have a different structure. In the example schema, the Sales departments are under a headquarters level that includes Budget and Finance departments. This structure likely differs from the structure that is used to manage operations for the Sales departments. Only one organization hierarchy can be assigned to each budget planning process.
 
-For more information, see [Organizations and organizational hierarchies](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+For more information, see [Organizations and organizational hierarchies](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### User security
 
@@ -100,7 +98,7 @@ A good practice is to create a budget planning workflow for each level of a budg
 
 You create a budgeting workflow for budget planning on the **Budgeting workflows** page. The process resembles the process for creating other workflows. The following illustration shows an example of a workflow for the headquarters.
 
-[![Budgeting workflow for budget planning](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Budgeting workflow for budget planning.](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
 The workflow includes the following elements:
 
@@ -148,11 +146,11 @@ When you set up a stage allocation, you associate the budget planning workflow a
 
 In the example schema that appears earlier in this topic, an allocation is done to transfer amounts from a budget plan and scenarios in the "Baseline" stage for the headquarters to another budget plan and scenarios in the "Estimate" stage for the Sales departments. The following illustration shows the relevant section of the example schema.
 
-[![Stage allocation](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Stage allocation.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
 Additionally, in the example schema, an aggregation is done from budget plans and scenarios in the "Submitted" stage for the  Sales departments to a parent plan in the "Rollup" stage for the headquarters. The following illustration shows the relevant section of the example schema.
 
-[![Aggregation](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Aggregation.](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### Priorities
 
@@ -170,7 +168,7 @@ In addition to columns for budget amounts, you can define columns for the projec
 
 For the example schema, you might want to create columns for the "PY Sales," "Contracts," and "Forecast" scenarios. (The following illustration shows the relevant section of the schema.) You can then break out one or all of these scenarios into separate columns for each quarter of the fiscal year, so that the Sales department manager can accurately enter forecast amounts for each period.
 
-[![Columns](./media/columns.png)](./media/columns.png)
+[![Illustration of sections of the schema for adding columns.](./media/columns.png)](./media/columns.png)
 
 You also specify whether each layout element (column) is editable, and whether it's available in any worksheet template that is created for that layout. For the example schema, in the layout that is used for the "Estimate" stage, the "Forecast" columns are editable, but the "PY Sales" and "Contracts" columns are read-only.
 
@@ -208,4 +206,7 @@ You can also use the **Actions** menu to create a new process by copying an exis
 
 Another useful command on the **Actions** menu is **View budget process status**. This command graphically shows the budget plans in a process, together with relevant data, such as the workflow status of the plans, summaries by amount and unit, and one-click navigation to the budget plans themselves.
 
-[![Budget planning process status](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![Budget planning process status.](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

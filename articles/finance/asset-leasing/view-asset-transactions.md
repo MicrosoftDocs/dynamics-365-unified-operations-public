@@ -4,16 +4,14 @@
 title: View liability, asset, and expense transactions
 description: This topic explains how to view transactions for a leased asset. These transactions include lease liability transactions and executory expense transactions that have been posted.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: SysQueryForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -52,3 +50,6 @@ The **Asset transaction** page shows the transactions that either increase or de
 To view the lease expense transactions, select a lease on the **Lease summary** page, and then select **Books** to open the lease books that are attached to the lease record. Then select **Expense transactions**.
 
 The **Expense transactions** page shows all the expenses that have been posted against the lease, such as interest expenses, depreciation expenses, and any executory costs.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

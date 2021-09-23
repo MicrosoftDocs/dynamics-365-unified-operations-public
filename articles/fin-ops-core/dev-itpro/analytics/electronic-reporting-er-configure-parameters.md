@@ -4,11 +4,9 @@
 title: Configure the Electronic reporting (ER) framework
 description: This topic explains how to configure parameters of the Electronic reporting (ER) framework.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -65,14 +63,14 @@ On the **General** tab of the **Electronic reporting parameters** page, set the 
 - **Enable design mode**
 
     - Set this option to **Yes** to enable embedded ER designers, so that users can create their own ER configurations.
-    - Set this option to **No** to require that users access the functionality of ER designers by signing up for [Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+    - Set this option to **No** to require that users access the functionality of ER designers by signing up for [Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 - **Disable tracing of ER performance in data handling**
 
     - Set this option to **No** to allow Microsoft Telemetry to collect information about the average time that is required to process a single incoming or outgoing record as an ER configuration. This information is tracked as a specific health metric of the environment, and it will help Microsoft quickly identify and address issues that affect customers who use the ER framework.
     - Set this option to **Yes** to stop collecting telemetry information.
 
-[![General tab of the Electronic reporting parameters page](./media/er-configure-parameters-main.png)](./media/er-configure-parameters-main.png)
+[![General tab of the Electronic reporting parameters page.](./media/er-configure-parameters-main.png)](./media/er-configure-parameters-main.png)
 
 ## <a name="ManageDocumentsParameters">Parameters to manage documents</a>
 
@@ -90,19 +88,19 @@ On the **Attachments** tab of the **Electronic reporting parameters** page, set 
 
     For more information, see [Backup storage of ER templates](er-backup-storage-templates.md).
 
-[![Attachments tab of the Electronic reporting parameters page](./media/er-configure-parameters-documents.png)](./media/er-configure-parameters-documents.png)
+[![Attachments tab of the Electronic reporting parameters page.](./media/er-configure-parameters-documents.png)](./media/er-configure-parameters-documents.png)
 
 ## LCS parameters
 
 On the **LCS** tab of the **Electronic reporting parameters** page, define the number of parallel threads that should be used to load an ER configuration from repositories in Microsoft Dynamics Lifecycle Services (LCS), so that the configurations are loaded in the most efficient manner. The value can vary from **1** through **15**, depending on the available resources of the current program. Based on this setting and the number of other tasks and their priorities, the real number of threads will be defined automatically.
 
-[![LCS tab of the Electronic reporting parameters page](./media/er-configure-parameters-lcs.png)](./media/er-configure-parameters-lcs.png)
+[![LCS tab of the Electronic reporting parameters page.](./media/er-configure-parameters-lcs.png)](./media/er-configure-parameters-lcs.png)
 
 ## RCS parameters
 
-On the **RCS** tab of the **Electronic reporting parameters** page, sign up for [Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+On the **RCS** tab of the **Electronic reporting parameters** page, sign up for [Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
-[![RCS tab of the Electronic reporting parameters page](./media/er-configure-parameters-rcs.png)](./media/er-configure-parameters-rcs.png)
+[![RCS tab of the Electronic reporting parameters page.](./media/er-configure-parameters-rcs.png)](./media/er-configure-parameters-rcs.png)
 
 ## Active ER configurations provider
 
@@ -135,4 +133,7 @@ In addition to the basic functionality, ER has other functionality that you can 
 
 - [Electronic reporting (ER) overview](general-electronic-reporting.md)
 - [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
-- [Configuration service of Regulatory Services](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration)
+- [Configuration service of Regulatory Services](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

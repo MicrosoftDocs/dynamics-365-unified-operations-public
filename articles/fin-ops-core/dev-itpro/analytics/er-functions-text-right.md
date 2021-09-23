@@ -4,11 +4,8 @@
 title: RIGHT ER function
 description: This topic provides information about how the RIGHT Electronic reporting (ER) function is used.
 author: NickSelin
-manager: kfend
 ms.date: 12/10/2019
-ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -64,3 +61,6 @@ The resulting text value.
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

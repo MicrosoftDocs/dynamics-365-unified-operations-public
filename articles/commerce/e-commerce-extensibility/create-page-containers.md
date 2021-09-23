@@ -4,11 +4,9 @@
 title: Create a page container module
 description: This topic describes how to create a page container module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,15 +31,13 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to create a page container module in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 A page container is a module that controls the core structure of a page through specific layout regions that are known as *slots*. For example, a page container might have slots that are defined for the header area, main content area, and footer area. A page container can be embedded only at the root of a page, and each page must have only one page container.
 
-Like layout container modules, page container modules can define *named slots* that are exposed in the template authoring tool. Page authors can configure which modules go into each slot, and the container rendering code then controls the layout of those slots. Configuration settings can also be exposed to page authors so that they can further configure the layout.
+Page authors can configure which modules go into each slot, and the container rendering code then controls the layout of those slots. Configuration settings can also be exposed to page authors so that they can further configure the layout.
 
 ## Create a new page container module
 
-The Microsoft Dynamics 365 Commerce online software development kit (SDK) provides a **yarn msdyn365 add-module MODULE\_NAME** command-line interface (CLI) command. To create a page container module, you use this command to create a new module, and then change the **$type** value to **pageModule**.
+The Microsoft Dynamics 365 Commerce online software development kit (SDK) provides an [add-module](cli-command-reference.md#add-module) command-line interface (CLI) command. To create a page container module, use this command to create a new module, and then change the **$type** value to **pageModule** in the module's definition file.
 
 For example, run the following command to create a module that is named **campaign-page-container**.
 
@@ -135,7 +131,7 @@ The following example shows a page mock that can be used for testing. It's saved
                         "primary": [
                             {
                                 "id": "primaryArea__0",
-                                "typeName": "myContainer"
+                                "typeName": "myContainer",
                                 "modules": {
                                     "slot1": [
                                         { 
@@ -212,3 +208,6 @@ To preview the page in a local web browser, follow these steps.
 [Create a layout container module](create-layout-container.md)
 
 [Localize a module](localize-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Register and post a postdated check for a vendor
 description: You can register the details of a postdated check before you issue the check to a vendor by using the journal voucher. 
 author: kweekley
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -58,3 +56,6 @@ The role of this task guides is Treasurer. This task uses the USMF demo company.
 16. Close the page.
 17. Click the Postdated checks tab.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

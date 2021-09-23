@@ -4,11 +4,9 @@
 title: Simple Details form pattern
 description: This article describes the Simple Details form pattern. This pattern is used when only a simple set of fields must be presented to the user.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the Simple Details form pattern. This pattern is used when only a simple set of fields must be presented to the user.
 
-Usage
------
+## Usage
 
 The Simple Details pattern is used when only a simple set of fields must be presented to the user. Examples include the display of totals and customer balances. Typically, view mode is used for the Simple Details pattern. However, in cases where the form provides editable information, the edit mode should be synced to the parent form. Four patterns are described in this document:
 
@@ -47,7 +44,7 @@ The Simple Details pattern is used when only a simple set of fields must be pres
 
 ## Wireframe
 
-[![Simple Details wireframe](./media/simpledetails1-1024x578.png)](./media/simpledetails1.png)
+[![Simple Details wireframe.](./media/simpledetails1-1024x578.png)](./media/simpledetails1.png)
 
 ## Pattern changes
 There are no planned changes for the use of this pattern in the current version of Microsoft Dynamics AX.
@@ -126,25 +123,25 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **AgreementLine** 
 
-[![Simple Details with Toolbar and Fields](./media/simpledetails2-1024x688.png)](./media/simpledetails2.png)
+[![Simple Details with Toolbar and Fields.](./media/simpledetails2-1024x688.png)](./media/simpledetails2.png)
 
 ### Simple Details w/FastTabs
 
 Form: **PlanActivityServiceDetails** 
 
-[![Simple Details with FastTab](./media/simpledetails3-1024x587.png)](./media/simpledetails3.png)
+[![Simple Details with FastTab.](./media/simpledetails3-1024x587.png)](./media/simpledetails3.png)
 
 ### Simple Details w/Standard Tabs
 
 Form: **HcmEmploymentDateManager** (Click **Human Resources** &gt; **Common** &gt; **Workers** &gt; **Workers**, click **General** &gt; **Versions** &gt; **Employment History**, and then click **Date Manager**.) 
 
-[![Simple Details with Standard Tabs](./media/simpledetails4-1024x588.png)](./media/simpledetails4.png)
+[![Simple Details with Standard Tabs.](./media/simpledetails4-1024x588.png)](./media/simpledetails4.png)
 
 ### Simple Details w/Panorama
 
 Form: **PdsMRCEventTracker** 
 
-[![Simple Details with Panorama](./media/simpledetails5-1024x510.png)](./media/simpledetails5.png)
+[![Simple Details with Panorama.](./media/simpledetails5-1024x510.png)](./media/simpledetails5.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -154,3 +151,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 -   Investigate whether Simple Details forms that show a small amount of related content should have a different presentation than a full-page form.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

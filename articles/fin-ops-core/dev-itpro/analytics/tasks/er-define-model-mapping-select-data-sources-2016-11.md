@@ -2,13 +2,11 @@
 # required metadata 
  
 title: Define ER model mappings and select data sources for them
-description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can select data sources for an Electronic reporting data model. 
+description: This topic describes how a System Administrator or an Electronic Reporting Developer can select data sources for an Electronic reporting data model.
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -160,3 +158,6 @@ The following steps explain how a user in the System Administrator or Electronic
 71. Close the page.
 72. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Spanish promissory note options
 description: This topic describes options and changes for the basic promissory note functionality that is implemented in Microsoft Dynamics 365 Finance for legal entities in Spain.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,3 +51,6 @@ If the **Confirming invoices treatment** parameter is set to **Yes**, a separate
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

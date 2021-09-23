@@ -4,11 +4,9 @@
 title: Suspend and resume a transaction in the point of sale (POS)
 description: This topic explains how users can suspend in-progress transactions and then resume them later or on a different register by using Dynamics 365 Commerce.
 author: jblucher
-manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -86,3 +84,6 @@ To quickly and easily recall a suspended transaction, scan the barcode on the pr
 ### Void a suspended transaction
 
 You can void suspended transactions either by recalling the transaction and then performing the **Void transaction** operation, or by selecting the transaction in the **Recall transaction** list and selecting **Void** on the app bar. Alternatively, the store can be configured to prompt users to void suspended transactions when they close their shift.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

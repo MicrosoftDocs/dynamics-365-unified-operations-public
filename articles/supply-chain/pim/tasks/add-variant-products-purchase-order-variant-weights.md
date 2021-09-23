@@ -4,11 +4,9 @@
 title: Add variant products to purchase orders using variant weights
 description: This procedure walks through the steps for using variant weights to auto populate purchase order lines for each variant of a product. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 11/14/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -50,3 +48,6 @@ This procedure walks through the steps for using variant weights to auto populat
 17. Set Quantity to '1000'.
 18. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

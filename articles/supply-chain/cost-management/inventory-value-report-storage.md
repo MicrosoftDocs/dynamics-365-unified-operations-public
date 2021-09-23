@@ -4,11 +4,9 @@
 title: Inventory value storage report
 description: This topic explains how to run an Inventory value storage report and make the output available digitally, either as an interactive page in Microsoft Dynamics 365 Supply Chain Management or as an exported document in any of several formats.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -109,3 +107,6 @@ The following example shows how to export an **Inventory value report** report.
 1. On the **Execution summary** page that appears, you can view the status of your export job and a list of the entities that were exported. In the **Entity processing status** section, select the **Inventory value** entity in the list, and then select **Download file** to download the data that was exported from that entity.
 
 For more information about how to use data management to export data, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

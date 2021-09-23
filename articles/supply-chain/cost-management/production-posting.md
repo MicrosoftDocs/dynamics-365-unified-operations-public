@@ -4,11 +4,9 @@
 title: Production posting
 description: This article provides information about different types of postings in the production process.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -60,3 +58,6 @@ In the **Production control parameters**, you can use the **Ledger posting** fie
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

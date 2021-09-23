@@ -4,11 +4,9 @@
 title: Accounting distributions and journal entries for vendor invoices
 description: Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
 author: abruer
-manager: AnnBe
 ms.date: 08/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
 
-Accounting distributions 
--------------------------
+## Accounting distributions 
 
 You can use the following buttons in the Vendor invoice page to view, and possibly modify, the accounting distributions for each amount on the vendor invoice.
 -   **Distribute amounts** – View and modify the accounting distributions for an individual line and any child lines, such as taxes or charges. You can also view and modify the accounting distributions for the child line directly from the Sales tax transactions page or the Charges transactions page.
@@ -234,8 +231,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 </table>
 
 
-Distributing taxes
-------------------
+## Distributing taxes
 
 Accounting distributions for taxes cannot be created until taxes are calculated. To calculate sales taxes, you must complete one of the following tasks in the Vendor invoice page:
 -   View the invoice total.
@@ -254,3 +250,6 @@ If the subledger journal entry is incorrect when you preview it before you journ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

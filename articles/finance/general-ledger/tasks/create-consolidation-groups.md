@@ -4,11 +4,9 @@
 title: Create consolidation groups and additional consolidation accounts
 description: This procedure shows how to create a consolidation account group and then add accounts to the group. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -49,3 +47,6 @@ This procedure shows how to create a consolidation account group and then add ac
 8. In the Consolidation account field, type a value.
 9. In the Consolidation account name field, type a value.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

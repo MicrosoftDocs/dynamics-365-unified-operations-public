@@ -5,11 +5,9 @@
 title: Analytical workspaces
 description: This topic lists the embedded, analytical workspaces that are available and points you to resources where you can learn more about them.
 author: sericks007
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -52,3 +50,6 @@ ms.dyn365.ops.version: July 2017 update
 - [Vendor payments workspace](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [Warehouse performance Power BI content](warehouse-power-bi-content.md)
 - [Workforce metrics Power BI content](workforce-analysis-power-bi-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

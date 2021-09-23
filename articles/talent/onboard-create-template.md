@@ -4,11 +4,9 @@
 title: Create an onboarding template by using Dynamics 365 Talent - Onboard
 description: This topic explains you to use the Dynamics 365 Talent - Onboard app to create a template for an onboarding guide for your new hires. This task is an essential first step in a human capital management (HCM) hire-to-retire strategy.
 author: andreabichsel
-manager:
 ms.date: 05/02/2019
 ms.topic: article
 ms.prod:
-ms.service: dynamics-365-talent
 ms.technology:
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: anbichse
 # ms.tgt_pltfrm:
 # ms.custom:
 # ms.assetid:
@@ -43,14 +40,14 @@ Microsoft Dynamics 365 Talent: Onboard provides various templates that can help 
     - If the template is from the gallery, select **Save as my template**, enter a new name for the template, and select **Save**.
     - If the template is from **My templates**, select **Save as template**, enter a new name for the template, and select **Save**.
 
-    [![Creating a template from an existing template](./media/onboard-save-template.png)](./media/onboard-save-template.png)
+    [![Creating a template from an existing template.](./media/onboard-save-template.png)](./media/onboard-save-template.png)
 
 ## Create a new onboarding template
 
 1. On the left menu, select **Templates**.
 2. Under **My templates**, select the **Add** (plus sign \[**+**\]) tile.
 
-    [![Creating a new template](./media/onboard-create-new-template.png)](./media/onboard-create-new-template.png)
+    [![Creating a new template.](./media/onboard-create-new-template.png)](./media/onboard-create-new-template.png)
 
 3. In the **Create a guide template** dialog box, enter a name for the template, and then select **Save**.
 
@@ -65,5 +62,8 @@ Microsoft Dynamics 365 Talent: Onboard provides various templates that can help 
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
 - [What's new or changed in Dynamics 365 Talent](./whats-new.md)
-- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release plans](/business-applications-release-notes/index)
 - [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Operations platform update 7 (May 2017)
 description: This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.4542.16189.
 author: tonyafehr
-manager: AnnBe
 ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -118,3 +116,6 @@ public class abFormEvent
         }
     }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

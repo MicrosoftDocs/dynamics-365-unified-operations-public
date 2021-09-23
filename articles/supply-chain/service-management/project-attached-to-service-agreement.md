@@ -4,11 +4,9 @@
 title: Project attached to service agreement 
 description: You can attach service agreements to projects of every type except the Time project type.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -41,3 +39,6 @@ You register and post all service order transactions through the project that yo
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Load building workbench
 description: This topic describes how to work with the load building workbench.
 author: Henrikan
-manager:  
 ms.date: 10/30/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -68,3 +66,6 @@ You can now assign the load building strategy to a load building template. Alter
 1. Review the proposed loads and proposed load lines.
 1. On the Action Pane, select **Create loads** to create loads that are based on the source document lines on the **Proposed load lines** FastTab.
 1. Close the **Load building workbench** page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

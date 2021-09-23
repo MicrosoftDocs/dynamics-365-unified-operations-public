@@ -4,11 +4,9 @@
 title: Hiring candidate through recruiting
 description: This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project. 
 author: andreabichsel
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -48,3 +46,6 @@ This procedure enables a recruiter to hire an applicant who submitted an applica
 15. Expand or collapse the Contact information section.
 16. Expand or collapse the Personal information section.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

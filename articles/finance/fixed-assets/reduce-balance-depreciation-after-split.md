@@ -4,11 +4,9 @@
 title: Reduce balance depreciation after a split
 description: This topic describes the method that is used in Fixed assets to calculate depreciation after an asset is split by using the reduce balance method.
 author: moaamer
-manager: Ann Beebe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -44,8 +42,11 @@ For example, the following conditions are in effect:
 - The depreciation of the first fiscal year equals $18,000, the monthly depreciation equals $150, and the asset is then depreciated until November 2019, in the amount of $738.75.
 - In November 2019, 80 percent of the asset is split to another fixed asset.
 
-[![Reduce balance depreciation after a split](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
+[![Reduce balance depreciation after a split.](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
 
 The amount to depreciate for the original asset is $1,822.25. This amount equals the NBV before the split transaction is posted ($9,111.25), plus the acquisition adjustment that is generated during posting of the split transaction (-$8,000), plus the depreciation adjustment that is generated during the split transaction ($711). Therefore, the depreciation for the second year is (1,822.25 × 18 percent) ÷ 12 = $27.33.
 
 The amount to depreciate for the new fixed asset in the first year is (8,000 × 18 percent) ÷ 12 = $120.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

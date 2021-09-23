@@ -4,16 +4,14 @@
 title: Master planning with demand forecasts
 description: This topic explains how to include demand forecasts during master planning with Planning Optimization.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -142,32 +140,85 @@ In this case, if you run forecast scheduling on January 1, the demand forecast r
 
 #### Transactions – reduction key
 
-If you select **Transactions - reduction key**, the forecast requirements are reduced by the transactions that occur during the periods that are defined by the reduction key.
+If you set the **Method used to reduce forecast requirements** field to *Transactions - reduction key*, the forecast requirements are reduced by the qualified demand transactions that occur during the periods that are defined by the reduction key.
+
+The qualified demand is defined by the **Reduce forecast by** field on the **Coverage groups** page. If you set the **Reduce forecast by** field to *Orders*, only sales order transactions are considered qualified demand. If you set it to *All transactions*, any non-intercompany issue inventory transactions are considered qualified demand. If intercompany sales orders should also be considered qualified demand, set the **Include intercompany orders** option to *Yes*.
+
+Forecast reduction starts with the first (earliest) demand forecast record in the reduction key period. If the quantity of qualified inventory transactions is more than the quantity of demand forecast lines in the same reduction key period, the balance of inventory transactions quantity will be used to reduce the demand forecast quantity in the previous period (if there is unconsumed forecast).
+
+If no unconsumed forecast remains in the previous reduction key period, the balance of inventory transactions quantity will be used to reduce the forecast quantity in the next month (if there is unconsumed forecast).
+
+The value of the **Percent** field on the reduction key lines isn't used when the **Method used to reduce forecast requirements** field is set to *Transactions - reduction key*. Only the dates are used to define the reduction key period.
+
+> [!NOTE]
+> Any forecast that is posted on or before today's date will be ignored and won't be used to create planned orders. For example, if your demand forecast for the month is generated on January 1, and you run master planning that includes demand forecasting on January 2, the calculation will ignore the demand forecast line that is dated January 1.
 
 ##### Example: Transactions – reduction key
 
 This example shows how actual orders that occur during the periods that are defined by the reduction key reduce demand forecast requirements.
 
-For this example, you select **Transactions - reduction key** in the **Method used to reduce forecast requirements** field on the **Master plans** page.
+[![Actual orders and forecast before master planning is run.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-The following sales orders exist on January 1.
+For this example, you select *Transactions - reduction key* in the **Method used to reduce forecast requirements** field on the **Master plans** page.
 
-| Month    | Number of pieces ordered |
-|----------|--------------------------|
-| January  | 956                      |
-| February | 1,176                    |
-| March    | 451                      |
-| April    | 119                      |
+The following demand forecast lines exist on April 1.
 
-If you use the same demand forecast of 1,000 pieces per month that was used in the previous example, the following requirement quantities are transferred to the master plan.
+| Date     | Number of pieces forecasted |
+|----------|-----------------------------|
+| April 5  | 100                         |
+| April 12 | 100                         |
+| April 19 | 100                         |
+| April 26 | 100                         |
+| May 3    | 100                         |
+| May 10   | 100                         |
+| May 17   | 100                         |
 
-| Month                | Number of pieces required |
-|----------------------|---------------------------|
-| January              | 44                        |
-| February             | 0                         |
-| March                | 549                       |
-| April                | 881                       |
-| May through December | 1,000                     |
+The following sales order lines exist in April.
+
+| Date     | Number of pieces requested |
+|----------|----------------------------|
+| April 27 | 240                        |
+
+[![Planned supply generated based on April orders.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+The following requirement quantities are transferred to the master plan when master planning is run on April 1. As you see, the April forecast transactions were reduced by the demand quantity of 240 in a sequence, starting from the first of those transactions.
+
+| Date     | Number of pieces required |
+|----------|---------------------------|
+| April 5  | 0                         |
+| April 12 | 0                         |
+| April 19 | 60                        |
+| April 26 | 100                       |
+| April 27 | 240                       |
+| May 3    | 100                       |
+| May 10   | 100                       |
+| May 17   | 100                       |
+
+Now, assume that new orders were imported for the period of May.
+
+The following sales order lines exist in May.
+
+| Date   | Number of pieces requested |
+|--------|----------------------------|
+| May 4  | 80                         |
+| May 11 | 130                        |
+
+[![Planned supply generated based on April and May orders.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+The following requirement quantities are transferred to the master plan when master planning is run on April 1. As you see, the April forecast transactions were reduced by the demand quantity of 240 in a sequence, starting from the first of those transactions. However, the May forecast transactions were reduced by a total of 210, starting from the first demand forecast transaction in May. However, the totals per period are preserved (400 in April and 300 in May).
+
+| Date     | Number of pieces required |
+|----------|---------------------------|
+| April 5  | 0                         |
+| April 12 | 0                         |
+| April 19 | 60                        |
+| April 26 | 100                       |
+| April 27 | 240                       |
+| May 3    | 0                         |
+| May 4    | 80                        |
+| May 10   | 0                         |
+| May 11   | 130                       |
+| May 17   | 90                        |
 
 #### Transactions – dynamic period
 
@@ -252,7 +303,7 @@ Therefore, the following planned orders are created.
 A forecast reduction key is used in the **Transactions - reduction key** and **Percent- reduction key** methods for reducing forecast requirements. Follow these steps to create and set up a reduction key.
 
 1. Go to **Master planning \> Setup \> Coverage \> Reduction keys**.
-2. Select **New** or press **Ctrl+N** to create a reduction key.
+2. Select **New** to create a reduction key.
 3. In the **Reduction key** field, enter a unique identifier for the forecast reduction key. Then, in the **Name** field, enter a name. 
 4. Define the periods and the reduction key percentage in each period:
 
@@ -268,11 +319,78 @@ A forecast reduction key must be assigned to the coverage group of the item. Fol
 2. On the **Other** FastTab, in the **Reduction key** field, select the reduction key to assign to the coverage group. The reduction key then applies to all items that belong to the coverage group.
 3. To use a reduction key to calculate forecast reduction during master scheduling, you must define this setting in the setup of the forecast plan or the master plan. Go to one of the following locations:
 
-    - Master planning \> Setup \> Plans \> Forecast plans
-    - Master planning \> Setup \> Plans \> Master plans
+    - **Master planning \> Setup \> Plans \> Forecast plans**
+    - **Master planning \> Setup \> Plans \> Master plans**
 
 4. On the **Forecast plans** or **Master plans** page, on the **General** FastTab, in the **Method used to reduce forecast requirements** field, select either **Percent - reduction key** or **Transactions - reduction key**.
 
 ### Reduce a forecast by transactions
 
 When you select **Transactions - reduction key** or **Transactions - dynamic period** as the method for reducing forecast requirements, you can specify which transactions reduce the forecast. On the **Coverage groups** page, on the **Other** FastTab, in the **Reduce forecast by** field, select **All transactions** if all transactions should reduce the forecast or **Orders** if only sales orders should reduce the forecast.
+
+## Forecast models and submodels
+
+This section describes how to create forecast models and how to combine multiple forecast models by setting up submodels.
+
+A *forecast model* names and identifies a specific forecast. After you've created the forecast model, you can add forecast lines to it. To add forecast lines for multiple items, use the **Demand forecast lines** page. To add forecast lines for a specific selected item, use the **Released products** page.
+
+A forecast model can include forecasts from other forecast models. To achieve this result, you add other forecast models as *submodels* of a parent forecast model. You must create each relevant model before you can add it as a submodel of a parent forecast model.
+
+The resulting structure gives you a powerful way to control forecasts, because it lets you combine (aggregate) the input from multiple individual forecasts. Therefore, from a planning point of view, it's easy to combine forecasts for simulations. For example, you might set up a simulation that is based on the combination of a regular forecast with the forecast for a spring promotion.
+
+### Submodel levels
+
+There is no limit on the number of submodels that can be added to a parent forecast model. However, the structure can be only one level deep. In other words, a forecast model that is a submodel of another forecast model can't have its own submodels. When you add submodels to a forecast model, the system checks whether that forecast model is already a submodel of another forecast model.
+
+If master planning encounters a submodel that has its own submodels, you receive an error message.
+
+#### Submodel levels example
+
+Forecast model A has forecast model B as a submodel. Therefore, forecast model B can't have its own submodels. If you try to add a submodel to forecast model B, you receive the following error message: "Forecast model B is a submodel for model A."
+
+### Aggregating forecasts across forecast models
+
+Forecast lines that occur on the same day will be aggregated across their forecast model and its submodels.
+
+#### Aggregation example
+
+Forecast model A has forecast models B and C as submodels.
+
+- Forecast model A includes a demand forecast for 2 pieces (pcs) on June 15.
+- Forecast model B includes a demand forecast for 3 pcs on June 15.
+- Forecast model C includes a demand forecast for 4 pcs on June 15.
+
+The resulting demand forecast will be a single demand for 9 pcs (2 + 3 + 4) on June 15.
+
+> [!NOTE]
+> Each submodel uses its own parameters, not the parameters of the parent forecast model.
+
+### Create a forecast model
+
+To create a forecast model, follow these steps.
+
+1. Go to **Master planning \> Setup \> Demand forecasting \> Forecast models**.
+1. On the Action Pane, select **New**.
+1. Set the following fields for the new forecast model:
+
+    - **Model** – Enter a unique identifier for the model.
+    - **Name** – Enter a descriptive name for the model.
+    - **Stopped** – Usually, you should set this option to *No*. Set it to *Yes* only if you want to prevent editing of all forecast lines that are assigned to the model.
+
+    > [!NOTE]
+    > The **Include in cash flow forecasts** field and the fields on the **Project** FastTab aren't related to master planning. Therefore, you can ignore them in this context. You must consider them only when you work with forecasts for the **Project management and accounting** module.
+
+### Assign submodels to a forecast model
+
+To assign submodels to a forecast model, follow these steps.
+
+1. Go to **Inventory management \> Setup \> Forecast \> Forecast models**.
+1. In the list pane, select the forecast model to set up a submodel for.
+1. On the **Submodel** FastTab, select **Add** to add a row to the grid.
+1. In the new row, set the following fields:
+
+    - **Submodel** – Select the forecast model to add as a submodel. This forecast model must already exist, and it must not have any submodels of its own.
+    - **Name** – Enter a descriptive name for the submodel. For example, this name might indicate the submodel's relation to the parent forecast model.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

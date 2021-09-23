@@ -4,11 +4,9 @@
 title: Enable duplicate payment protection for payment connector
 description: This topic describes how to enable duplicate payment protection for a given payment connector.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -55,7 +53,7 @@ In order to enable support for duplicate payment protection, the corresponding p
 ## Understanding duplicate payment protection flows
 The Retail POS has been extended to invoke the new requests, `GetTransactionReferencePaymentTerminalDeviceRequest` and `GetTransactionByTransactionReferencePaymentTerminalDeviceRequest` in various scenarios across the POS, such as immediately before an **Authorize** request is issued to the payment connector. The purpose of these new requests is to detect and recover successfully processed payment through the payment connector before a new payment request is issued. The following diagram illustrates a simple scenario where a payment request is successfully processed through the payment connector but the POS has crashed before it can receive the response. Subsequently, the POS is able to recover the previously processed payment through the duplicate payment protection feature. 
 
-![Duplicate Payment Protection Flows](media/PAYMENTS/DUPLICATE-PAYMENT-PROTECTION/DuplicatePaymentProtectionFlow.jpg)
+![Duplicate Payment Protection Flows.](media/PAYMENTS/DUPLICATE-PAYMENT-PROTECTION/DuplicatePaymentProtectionFlow.jpg)
 
 
 ### Supported POS flows
@@ -196,3 +194,6 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceResponse(Payment
 |---|---|
 | paymentInfo | The recovered payment transaction. This is identical to the payment response returned for any other payment request, such as **Authorize** or **Refund**. |
                                                                                                                                                                                                                                                                                                             
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

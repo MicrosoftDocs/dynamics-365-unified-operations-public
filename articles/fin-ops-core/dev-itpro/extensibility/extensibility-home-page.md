@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Extensibility home page
 description: This topic provides links to topics about extensibility.
 author: FrankDahl
-manager: AnnBe
 ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -19,7 +13,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 268724
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -134,3 +128,6 @@ When you make your solution extensible, you also help guarantee that you won't b
 
 + For pointers that can help you avoid breaking your consumers, see [Breaking changes](breaking-changes.md).
 + The [compatibility checker tool](compatibility-checker-tool.md) can detect metadata breaking changes against a given baseline release or update, helping to ensure backward compatibility.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

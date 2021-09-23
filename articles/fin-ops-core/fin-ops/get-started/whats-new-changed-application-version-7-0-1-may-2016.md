@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics AX application version 7.0.1 (May 2016)
 description: This article describes features that are either new or changed in Microsoft Dynamics AX application version 7.0.1. This version was released in May 2016 and has a build number of 7.0.1265.23014.
 author: sericks007
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -83,7 +81,7 @@ This article describes features that are either new or changed in Microsoft Dyna
 </tr>
 <tr>
 <td>Support BOMs that include items with different product dimensions of the same item.</td>
-<td>When using one or multiple of the product dimensions in production, you can have situations where you would like to produce an item, based on a different variant of the same item. For more information, see <a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">this blog</a>.</td>
+<td>When using one or multiple of the product dimensions in production, you can have situations where you would like to produce an item, based on a different variant of the same item. For more information, see <a href="/archive/blogs/axmfg/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item">this blog</a>.</td>
 </tr>
 <tr>
 <td>Production orders with circular structures at the first level of their BOMs are excluded from BOM level calculation for material resource planning.</td>
@@ -111,3 +109,6 @@ This article describes features that are either new or changed in Microsoft Dyna
 [What's new or changed in Finance and Operations home page](whats-new-changed.md)
 
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

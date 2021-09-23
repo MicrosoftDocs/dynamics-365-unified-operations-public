@@ -4,11 +4,9 @@
 title: Manage several derived mappings for a single model root
 description: This topic explains how to manage several derived mappings that were configured for a single model root.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,7 +59,7 @@ To add the standard ER configurations to your current instance of Finance, you m
 2. On the **Localization configurations** page, in the **Configurations** section, select the **Reporting configurations** tile.
 3. On the **Configurations** page, in the configuration tree in the left pane, expand **Invoice model**.
 
-    ![Reviewing the imported configurations on the Configurations page](./media/er-multiple-model-mappings-image1.png)
+    ![Reviewing the imported configurations on the Configurations page.](./media/er-multiple-model-mappings-image1.png)
 
 4. Review the **Free text invoice (Excel)** format:
 
@@ -72,7 +70,7 @@ To add the standard ER configurations to your current instance of Finance, you m
     
        Thecurrent ER format is configured to use the **InvoiceCustomer** root definition of **Invoice model**. When this format is run, and the **Model** data source is called, the model mapping that is configured for the **InvoiceCustomer** root definition is used to access application data and fill in the data model.
 
-        ![Reviewing the model data source on the Format designer page](./media/er-multiple-model-mappings-image2.png)
+        ![Reviewing the model data source on the Format designer page.](./media/er-multiple-model-mappings-image2.png)
 
     6. Close the **Format designer** page.
 
@@ -85,7 +83,7 @@ To add the standard ER configurations to your current instance of Finance, you m
         + The **Customer Invoice** model mapping is configured for the **InvoiceCustomer** root definition of **Invoice model**. Therefore, when the **Free text invoice (Excel)** ER format is run, the **Customer Invoice** model mapping of this ER configuration can be chosen to access application data and fill in the data model.
         + The **Project Invoice** model mapping is configured for the **InvoiceProject** root definition of **Invoice model**. Therefore, when the **Project invoice (Excel)** ER format is run, the **Project Invoice** model mapping of this ER configuration can be chosen to access application data and fill in the data model.
 
-        ![Invoice model mapping on the Model to datasource mapping page](./media/er-multiple-model-mappings-image3.png)
+        ![Invoice model mapping on the Model to datasource mapping page.](./media/er-multiple-model-mappings-image3.png)
 
     4. Close the **Model to datasource mapping** page.
     5. On the **Versions** FastTab, select **Delete** to delete all versions of this ER configuration that are later than version 240.175.
@@ -96,7 +94,7 @@ To add the standard ER configurations to your current instance of Finance, you m
     2. On the Action Pane, select **Designer**.
     3. On the **Model to datasource mapping** page, notice that the current ER model mapping configuration contains the **InvoiceProject** model mapping, and that this model mapping is configured for the **InvoiceProject** root definition of **Invoice model**. When the **Project invoice (Excel)** ER format is run, select the **InvoiceProject** model mapping of this ER configuration to access application data and fill in the data model.
 
-        ![Project invoice model mapping on the Model to datasource mapping page](./media/er-multiple-model-mappings-image4.png)
+        ![Project invoice model mapping on the Model to datasource mapping page.](./media/er-multiple-model-mappings-image4.png)
 
     4. Close the **Model to datasource mapping** page.
     5. On the **Versions** FastTab, select **Delete** to delete all versions of this ER configuration that are later than version 226.35.
@@ -121,7 +119,7 @@ This section explains how to [customize](er-quick-start3-customize-report.md#cus
 
 7. On the Action Pane, select **Designer** to review the model mappings of this configuration.
 
-    ![Reviewing the invoice model mappings on the Model to datasource mapping page](./media/er-multiple-model-mappings-image5.png)
+    ![Reviewing the invoice model mappings on the Model to datasource mapping page.](./media/er-multiple-model-mappings-image5.png)
 
     > [!TIP]
     > You can now open any of the ER model mapping components of this ER configuration in the designer to configure your custom logic. For more information, see [Customize the model mapping configuration](er-quick-start3-customize-report.md#customize-the-model-mapping-configuration).
@@ -132,7 +130,7 @@ You now have **Invoice model mapping** and **Invoice model mapping Litware** con
  
 > More than one model mapping exists for the '\<model name\> (\<root descriptor\>)' data model in the configurations \<configuration names separated by commas\>. Set one of the configurations as default.
 
-![Opening the format for editing on the Configurations page](./media/er-multiple-model-mappings-image6.gif)
+![Opening the format for editing on the Configurations page.](./media/er-multiple-model-mappings-image6.gif)
 
 ### Customize the Project invoice model mapping (RDP) configuration
 
@@ -144,7 +142,7 @@ You now have **Invoice model mapping** and **Invoice model mapping Litware** con
 6. For the **Project invoice model mapping Litware** configuration that is currently selected in the configuration tree, set the **Run Draft** option to **Yes**.
 7. On the Action Pane, select **Designer** to review the model mappings of this configuration.
 
-    ![Review the customized project invoice model mappings on the Model to datasource mapping page](./media/er-multiple-model-mappings-image7.png)
+    ![Review the customized project invoice model mappings on the Model to datasource mapping page.](./media/er-multiple-model-mappings-image7.png)
 
 8. Close the **Model to datasource mapping** page.
 
@@ -155,7 +153,7 @@ You now have **Invoice model mapping**, **Project invoice model mapping (RDP)**,
 1. On the **Configurations** page, in the configuration tree in the left pane, select **Invoice model mapping Litware**.
 2. Set the **Default for model mapping** option to **Yes**.
 
-    ![Setting the model mapping as the default model mapping on the Configurations page](./media/er-multiple-model-mappings-image8.png)
+    ![Setting the model mapping as the default model mapping on the Configurations page.](./media/er-multiple-model-mappings-image8.png)
 
     Because of this setting, the **Customer Invoice Copy** model mapping is used when you run the **Free text invoice (Excel)**, or when you edit or validate it. The **Customer invoice** model mapping from the **Invoice model mapping** configuration is ignored.
 
@@ -173,7 +171,7 @@ You now have **Invoice model mapping**, **Project invoice model mapping (RDP)**,
 5. On the **Model to datasource mapping** page, select **Edit** to make the page editable, as required.
 6. Select the **Project Invoice Copy** model mapping, and then select the **Is deleted** check box for it.
 
-    ![Setting the model mapping as virtually deleted on the Model to datasource mapping page](./media/er-multiple-model-mappings-image9.png)
+    ![Setting the model mapping as virtually deleted on the Model to datasource mapping page.](./media/er-multiple-model-mappings-image9.png)
 
     Because of this setting, the **Invoice model mapping Litware** configuration is treated as though it has no model mapping for the **InvoiceProject** root definition. The **InvoiceProject Copy** model mapping issued by default. The configuration, **Project invoice model mapping Litware**, which contains this model mapping, is marked as the default configuration. Because it is marked as default, it has a higher priority than the **InvoiceProject** model mapping from the **Project invoice model mapping (RDP)** configuration.
 
@@ -186,3 +184,6 @@ The **InvoiceProject Copy** model mapping of the **Project invoice model mapping
 - [Manage ER model mapping in separate ER configurations](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Configure country context dependent ER model mappings](er-country-dependent-model-mapping.md)
 - [Electronic reporting framework API changes](er-apis-app10-0-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

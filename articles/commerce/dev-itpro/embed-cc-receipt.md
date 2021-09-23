@@ -4,11 +4,9 @@
 title: Embed processor credit card receipts in customer receipts
 description: This topic explains how to embed credit card receipts from payment processors into a customer's itemized transaction receipt.
 author: rubendel
-manager: annbe
 ms.date: 04/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -64,18 +62,21 @@ The following items are required to embed processor credit card receipts into cu
 
 5. Select the **Header** section at the bottom of the left pane, and then drag the **EFT Message** receipt variable into the header.
 
-    ![EFT Message variable in the header of the cardholder's receipt](media/Cardholders.png)
+    ![EFT Message variable in the header of the cardholder's receipt.](media/Cardholders.png)
 
 6. Select **Save**.
 7. While the receipt designer is still open, select **Select format** in the upper-left corner to open the receipt selector.
 8. In the receipt selector, select the receipt of the **Receipt** type that will be used at the POS. If you're using demo data, select receipt format **1\_p**.
 9. In the receipt designer, select the **Footer** section at the bottom of the left pane, and then drag the **Card Tender Details** receipt variable into the footer.
 
-    ![Card Tender Details variable in the footer of the customer's receipt](media/customersreceipt.png)
+    ![Card Tender Details variable in the footer of the customer's receipt.](media/customersreceipt.png)
 
 10. Select **Save**.
 11. Sync the changes to the POS by using the **1090** distribution schedule.
 12. Close the shift in the POS, and then open a new shift.
 13. Perform a credit card transaction to confirm that the processor's credit card receipt is embedded into the customer's receipt.
 
-    ![Customer's receipt that includes credit card details](media/receipt_w_cc.png)
+    ![Customer's receipt that includes credit card details.](media/receipt_w_cc.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

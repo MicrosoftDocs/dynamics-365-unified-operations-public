@@ -1,26 +1,12 @@
 ---
-# required metadata
 title: PageLinkMetadata type
 description: Page link metadata type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-applications
-ms.technology:
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry:
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
 ---
 
 # PageLinkMetadata type
@@ -131,7 +117,7 @@ Inherited from [ControlMetadata](view-model-control-basecontrol-icontrol-icontro
 Icon: string (optional)
 
 Name of the icon that is displayed in the page link control.
-Here is a [list of available icons](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/AXSymbolFont).
+Here is a [list of available icons](/dynamics/s-e/).
 
 ### IconSize
 
@@ -219,3 +205,6 @@ OnNavigate: function(navigation: [NavigationArgs](view-model-ipage-inavigationar
 
 An event that is triggered when the navigation is triggered.
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

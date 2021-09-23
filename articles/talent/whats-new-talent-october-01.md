@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent - Core HR (October 1, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for October 1, 2018.
+author: andreabichsel
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -67,7 +64,7 @@ leavers in an organization. Options include: Prorated, Full accrual, and No accr
 
 ## Other changes
 
--   Employee entity updated - The **Personal** title can now be updated using the Excel
+-   Employee table updated - The **Personal** title can now be updated using the Excel
     add-in/data management.
 
 -   Security change to allow removal of the **Delete** and **Deactivate** buttons in
@@ -81,3 +78,6 @@ leavers in an organization. Options include: Prorated, Full accrual, and No accr
     closed. If the FactBoxes are closed when the **Worker** page is loaded, the
     **Attachments** buttons will be enabled. (This issue will be fixed in the next
     platform update.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

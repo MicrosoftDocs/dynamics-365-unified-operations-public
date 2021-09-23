@@ -3,11 +3,9 @@
 title: Allocation of miscellaneous charges in proportion to weight and volume 
 description: This topic provides information about allocating miscellaneous charges.
 author: v-nadyuz
-manager: AnnBe
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -54,11 +52,14 @@ Miscellaneous charges can be allocated to the cost of goods, either works or ser
     - On the Action Pane, select the **Financials** tab **\> Maintain charges \> Maintain charges**. Charges created in this way will be allocated between all the order lines according to the allocation method.
     - On the **Lines** FastTab, select the line on which the charges will be allocated, and then select **Financials \> Maintain charges** to maintain miscellaneous charges on the line.
 
-![Maintain miscellaneous charges on a line](media/1%20Update%20facture.png)
+![Maintain miscellaneous charges on a line.](media/1%20Update%20facture.png)
 
 4. On the Action Pane, select the **Financials** tab **\> Maintain charges \> Allocate charges** to allocate charges.
 5. On the **Allocate charges** page, in the **Charges allocation** field, select one of the new allocation methods: **Gross weight** or **Volume**.
 
-![Allocate charges page](media/2%20Allocate%20charges.png)
+![Allocate charges page.](media/2%20Allocate%20charges.png)
 
 6. Specify other details and post the facture as usual.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

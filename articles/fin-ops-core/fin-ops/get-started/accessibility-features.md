@@ -4,11 +4,9 @@
 title: Accessibility features
 description: This topic describes the functionality that is designed to help users who have various disabilities.
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -59,13 +57,13 @@ Every action that is provided on a page can be accessed from a keyboard, via the
 
 You want to run the **Email notification log** action that appears in the **Email notification** group on the **Sales order** tab on the Action Pane.
 
-![Email notification log action on the Action Pane](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "'Email notification log' action on the Action Pane")
+![Email notification log action on the Action Pane.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "'Email notification log' action on the Action Pane")
 
 One option is to use your keyboard. Press Ctrl+F6 to move focus to the Action Pane, and then press Tab repeatedly to move through all the tabs and actions, until the **Email notification log** action has focus.
 
 However, you can also run the action more directly. From anywhere on the page, press Ctrl+Apostrophe (') to show the search box for actions.
 
-![Search box for actions](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Search box for actions")
+![Search box for actions.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Search box for actions")
 
 In the search box, type words that describe the action. The action is made available to you, and you can run it directly. For example, by typing **email**, **notific** (a partial word), or **log**, you can "jump" to the Email notification log functionality.
 
@@ -102,3 +100,6 @@ On smartphones and other small screens, the controls and the form layout will re
 ## Guidance to help developers and customers incorporate accessible thinking in their customizations
 
 To learn more about Microsoft best practices for enabling accessibility, see [Accessibility in forms, products, and controls](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Action design guidelines
 description: This topic provides in-depth information on designing mobile apps.
 author: robinarh
-manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -70,7 +68,7 @@ Lookups for fields in the mobile app don't have a correlation to the advanced lo
 2.  After you've finished designing the action, select the field to add rich lookup functionality to, and then click **Properties**.
 3.  In the **Control properties** dialog box, select the list view page that you identified or created in step 1, and set the other related properties. 
 
-![Setting the control properties](media/lookupdesigner.png)
+![Setting the control properties.](media/lookupdesigner.png)
 
 4.  Save and publish your changes to the action.
 
@@ -116,3 +114,5 @@ function main(metadataService, dataService, cacheService, $q) {
     }; 
 }
 ```
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

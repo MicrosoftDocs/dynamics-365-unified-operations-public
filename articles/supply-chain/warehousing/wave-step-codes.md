@@ -4,11 +4,9 @@
 title: Wave step codes
 description: This topic provides an overview of wave step codes and how they are used.
 author: josaw1
-manager: tfehr
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -96,3 +94,6 @@ The following procedure helps guarantee that the replenishment template that you
 6. In the **Wave step code** field, select the wave step code that you selected in the replenishment template.
 
 You perform these steps for each legal entity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

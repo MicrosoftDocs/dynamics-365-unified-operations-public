@@ -4,11 +4,9 @@
 title: Domains in Dynamics 365 Commerce
 description: This topic describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrShoo
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -44,7 +42,7 @@ When provisioning an e-commerce environment in [Microsoft Dynamics Lifecycle Ser
 
 The following illustration shows the LCS e-commerce provisioning screen with the **Supported host names** box highlighted. 
 
-![LCS e-commerce provisioning screen with the **Supported host names** box highlighted](./media/Domains_ProvisioningeCommerceScreen.png)
+![LCS e-commerce provisioning screen with the **Supported host names** box highlighted.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 You can create a service request to add additional domains to an environment if provisioning has already occurred. To create a service request in LCS, within your environment go to **Support \> Support issues** and select **Submit an incident**.
 
@@ -62,7 +60,7 @@ When you first set up a site in site builder, the **Setup your Site** dialog box
 
 The following illustration shows the **Setup your Site** dialog box for a site named "default" when you access the site for the first time in site builder.
 
-![**Setup your Site** dialog box](./media/Domains_SetupyoursiteScreen.png)
+![**Setup your Site** dialog box.](./media/Domains_SetupyoursiteScreen.png)
 
 The **Select a domain** box allows you to associate one of the supported host names provided for your site in LCS to your site in site builder.
 
@@ -85,11 +83,11 @@ After your site is set up with a path, all URLs associated with pages in site bu
 
 The following illustration shows the **New URL** dialog box in site builder with an example URL path highlighted. 
 
-![**New URL** dialog box in site builder](./media/Domains_PageSetup2a.png)
+![**New URL** dialog box in site builder.](./media/Domains_PageSetup2a.png)
 
 The following illustration shows the **URLs** page in site builder with an example URL highlighted in the list.
 
-![Run user flow option in policy flow](./media/Domains_URLsInSiteBuilder2a.png)
+![Run user flow option in policy flow.](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## Domains in site builder
 
@@ -157,7 +155,7 @@ The Commerce-supplied Azure Front Door instance does not support apex domains (r
 
   [Deploy a new e-commerce tenant](deploy-ecommerce-site.md)
 
-  [Set up an online store channel](online-stores.md)
+  [Set up an online store channel](./channel-setup-online.md)
 
   [Create an e-commerce site](create-ecommerce-site.md)
 
@@ -176,3 +174,6 @@ The Commerce-supplied Azure Front Door instance does not support apex domains (r
   [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
   [Enable location-based store detection](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata 
  
 title: ER Upgrade your format by adopting a new, base version of that format
-description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration. 
+description: This topic describes how to maintain an Electronic reporting (ER) format configuration. 
 author: NickSelin
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -246,3 +244,6 @@ To do this, Proseware, Inc. needs to change the base configuration version for t
 ## Test the customized format for payment files generation
 Complete the steps in the "Use created format to generate electronic documents for payments" procedure in parallel Finance and Operations session. Select the created 'BACS (UK fictitious custom)' format in electronic payment method parameters. Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements. The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Checkout module
 description: This topic describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -34,15 +32,13 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to add a checkout module to a page and set the required properties.
 
-## Overview
-
 A checkout module is a special container that hosts all modules that are required to create an order. It presents a step-by-step flow that a customer uses to enter all the relevant information to make a purchase. It captures the shipping address, shipping method, and billing information. It also provides an order summary and other information that is related to a customer order.
 
 A checkout module renders data based on the cart ID. This cart ID is saved as a browser cookie. A cart ID is required to render information in the checkout module, such as the items in the order, the total amount, and discounts. 
 
 The following image shows an example of a Fabrikam checkout module on a checkout page.
 
-![Example of a checkout module](./media/Checkout.PNG)
+![Example of a checkout module.](./media/Checkout.PNG)
 
 ## Checkout module properties
 
@@ -61,13 +57,13 @@ A checkout module shows an order summary and provides the functionality for plac
 
     The following image shows an example of a shipping address module on a checkout page.
 
-    ![Example of a shipping address module](./media/ecommerce-shippingaddress.PNG)
+    ![Example of a shipping address module.](./media/ecommerce-shippingaddress.PNG)
 
 - **Delivery options** – This module lets a customer select a mode of delivery for an order. For more information about this module, see [Delivery options module](delivery-options-module.md).
 
     The following image shows an example of a delivery options module on a checkout page.
  
-    ![Example of a delivery options module](./media/ecommerce-deliveryoptions.PNG)
+    ![Example of a delivery options module.](./media/ecommerce-deliveryoptions.PNG)
 
 - **Checkout section container** – This module is a container that you can put multiple modules inside to create a section within the checkout flow. For example, you can put all payment-related modules inside this container to make them appear as one section. This module affects only the layout of the flow.
 
@@ -79,7 +75,7 @@ A checkout module shows an order summary and provides the functionality for plac
 
     The following image shows an example of gift card, loyalty points, and payment modules on a checkout page.
 
-    ![Example of gift card, loyalty points, and payment modules on a checkout page](./media/ecommerce-payments.PNG)
+    ![Example of gift card, loyalty points, and payment modules on a checkout page.](./media/ecommerce-payments.PNG)
 
 - **Contact information** – This module lets a customer add or change the contact information (email address) for an order.
 
@@ -89,7 +85,7 @@ A checkout module shows an order summary and provides the functionality for plac
 
     The following image shows an example of terms and conditions on a checkout page.
 
-    ![Example of terms and conditions on a checkout page](./media/ecommerce-checkout-terms.PNG)
+    ![Example of terms and conditions on a checkout page.](./media/ecommerce-checkout-terms.PNG)
 
 ## Commerce Scale Unit interaction
 
@@ -131,3 +127,6 @@ To add a checkout module to a new page and set the required properties, follow t
 [Order details module](order-confirmation-module.md)
 
 [Gift card module](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

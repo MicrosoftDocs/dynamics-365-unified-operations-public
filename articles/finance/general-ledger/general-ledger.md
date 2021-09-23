@@ -4,11 +4,9 @@
 title: General ledger and Financial reporting overview
 description: Use General ledger to define and manage the legal entity’s financial records.  
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 65431
+ms.custom: ["65431", "intro-internal"]
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 # ms.search.industry: 
@@ -47,7 +45,7 @@ currency amounts. At the end of a fiscal year, you must generate closing transac
 - [General ledger account balances](general-ledger-account-balances.md)
 - [Financial dimensions](financial-dimensions.md)
 
-[![Business process](./media/GL-process.PNG)](./media/GL-process.PNG)
+[![Business process.](./media/GL-process.PNG)](./media/GL-process.PNG)
 
 ## Sales tax
 Every company collects and pays taxes to various tax authorities. The rules and rates vary by country/region, state, county, and city.
@@ -66,7 +64,7 @@ your tax authorities require.
 
 #### What's new and in development
 
-Go to the [Microsoft Dynamics 365 release plans](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features have been planned. 
+Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to see what new features have been planned. 
 
 #### Financial reporting
 Go to the [Financial reporting overview](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) topic for information about financial reports.
@@ -86,3 +84,6 @@ Check out the how-to videos that are now available on the
 
 - [What you should know about ledger in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

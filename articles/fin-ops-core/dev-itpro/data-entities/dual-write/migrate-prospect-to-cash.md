@@ -1,32 +1,14 @@
 ---
-# required metadata
-
 title: Migrate Prospect to cash data from Data Integrator to dual-write
 description: This topic describes how to migrate Prospect to Cash data from Data Integrator to dual-write.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-applications
-ms.technology:
-
-# optional metadata
-
-ms.search.form:
-# ROBOTS:
 audience: Application User, IT Pro
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
-ms.custom:
-ms.assetid:
 ms.search.region: global
-ms.search.industry:
 ms.author: ramasri
-ms.dyn365.ops.version:
-ms.search.validFrom: 2021-01-04
-
+ms.search.validFrom: 2020-01-06
 ---
 
 # Migrate Prospect to cash data from Data Integrator to dual-write
@@ -102,3 +84,6 @@ Because data from the **Products** table is designed to flow one way, from the F
 ## Quote and Quote product tables
 
 For the **Quote** table, follow the instructions in the [Order table](#order-table) section earlier in this topic. For the **Quote product** table, follow the instructions in the [Order products table](#order-products-table) section.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

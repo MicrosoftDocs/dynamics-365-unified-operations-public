@@ -4,11 +4,9 @@
 title: Initiate data source values of the USER INPUT PARAMETER type from source code
 description: This topic describes how the data source values of the USER INPUT PARAMETER type can be initiated from source code.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -81,11 +79,11 @@ For more information, review the source code of the `BankPaymBalanceXML` applica
 
 The `email`, `fromDate`, and `toDate` variables are used to store values that have been entered on other pages other than the ER dialog box before an ER format has been called. The `runER()` method of this class [runs](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) an ER format mapping that uses these variables to initiate values of several data sources. The prefix of every path of such a data source (such as `erParmEmail`, `erParmFromDate`, or `erParmToDate` constants in the sample code) is defined as the name of a format data source of the *Model* type (**model** value).
 
-![ER format designer showing the list of data sources of the 'BLWI format (BE)' configuration that includes the 'model' data source](./media/er-initiate-uip-data-source-value-from-source-code-1.png)
+![ER format designer showing the list of data sources of the 'BLWI format (BE)' configuration that includes the 'model' data source.](./media/er-initiate-uip-data-source-value-from-source-code-1.png)
 
 The suffix of every path of such a data source is defined as the path to the relevant data source of a model mapping that is used at runtime. In the sample code, this can include `parameters.Email`, `parameters.FromDate`, or `parameters.ToDate`.
 
-![ER model mapping designer showing the list of data sources of the 'BLWI model mapping' configuration that includes data sources of the 'User input parameter' type](./media/er-initiate-uip-data-source-value-from-source-code-2.png)
+![ER model mapping designer showing the list of data sources of the 'BLWI model mapping' configuration that includes data sources of the 'User input parameter' type.](./media/er-initiate-uip-data-source-value-from-source-code-2.png)
 
 ## Format components for inbound electronic documents
 
@@ -129,7 +127,7 @@ Pay attention to the `_executionID`, `_gerConfigName`, and `bankAccount` variabl
 
 From the Global repository, import the **Camt.053 Format** ER format configuration that is called by using this application class to your Finance instance. The **Bank statement model** configuration is imported automatically with the imported ER format configuration. Additionally, import the **Bank statement mapping to destination** ER configuration that contains a model mapping using to update application data.
 
-![ER model mapping designer showing the list of data sources of the 'Bank statement mapping to destination' configuration that includes data sources of the 'User input parameter' type](./media/er-initiate-uip-data-source-value-from-source-code-3.png)
+![ER model mapping designer showing the list of data sources of the 'Bank statement mapping to destination' configuration that includes data sources of the 'User input parameter' type.](./media/er-initiate-uip-data-source-value-from-source-code-3.png)
 
 ## Limitations
 You can only initiate data source values of the *User input parameter* type that are configured in an ER model mapping that is used at runtime. The data source values of the *User input parameter* type that are configured in an ER format can't be initiated from the source code.
@@ -139,3 +137,6 @@ You can only initiate data source values of the *User input parameter* type that
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
 [Parse incoming documents](er-parse-incoming-documents.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

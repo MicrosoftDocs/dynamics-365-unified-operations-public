@@ -4,11 +4,9 @@
 title: General ledger in the public sector overview
 description: This topic describes the General ledger functionality that is available for the public sector.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 27211
+ms.custom: ["27211", "intro-internal"]
 ms.assetid: d737c743-e224-4a30-b4c3-e9568eaddd8c
 ms.search.region: Global
 ms.search.industry: Public sector
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the General ledger functionality that is available for the public sector.
 
-How do General ledger parameters need to be set for public sector organizations?
---------------------------------------------------------------------------------
+## How do General ledger parameters need to be set for public sector organizations?
 
 Most General ledger parameters are set the same way for public sector and private sector organizations. In addition, there are public sector parameters that are used for the year-end process for funds. Set these parameters on the **General ledger parameters** page, in the **Ledger** section, on the **Fiscal year close** FastTab:
 
@@ -61,10 +58,12 @@ You can use posting definitions to create subledger journal lines for originatin
 ## How do I collect and analyze data to meet the Common Governmentwide Accounting Classification (CGAC) requirements?
 You can use derived financial hierarchies to collect and analyze posted transaction data for specific main account numbers, full account numbers, and financial dimension values. To learn more, see [Derived financial hierarchies in the public sector](derived-financial-hierarchies-public-sector.md).
 
-Additional resources
---------
+## Additional resources
 
 [General ledger and Financial reporting overview](../general-ledger/general-ledger.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

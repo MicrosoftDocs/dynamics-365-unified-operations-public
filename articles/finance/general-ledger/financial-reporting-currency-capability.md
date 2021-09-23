@@ -4,11 +4,9 @@
 title: Currency capabilities in financial reporting
 description: Financial reporting includes features that support complex currency reporting requirements.
 author: panolte
-manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -46,6 +44,8 @@ By default, all report amounts are summarized and presented in the accounting cu
 
 - In the row definition, you can specify a **Row modifier** with the attribute set to **Transaction currency** with a currency code listed as the restriction. When you restrict the row to a specific currency, only transactions that are entered for the matching currency will be displayed. This is also the case when you restrict a column to a currency. 
 
+> [!NOTE]
+> When you use the **Transaction currency** attribute, if you don't specify a currency filter, the system will include transactions in all the currencies that you have transactions for. We recommend that you specify a currency filter to prevent the row from showing an aggregate amount that isn't meaningful when the report is generated.
 
 ## Reporting on currency
 By default, any amount appearing on a report will appear as the accounting currency amount. Any of the following actions will cause some level of translation to take place:
@@ -133,3 +133,6 @@ Financial reporting will calculate the amount of the difference from currency ca
 
 Put all of the accounts in a range, from assets to expenses. The difference will be the same amount as the rounding adjustment (CTA) and you can use the total to verify that the rounding adjustment dialog doesn't include any missing account balances. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

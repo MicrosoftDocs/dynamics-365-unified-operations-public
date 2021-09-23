@@ -4,11 +4,9 @@
 title: Define partial location cycle counting process 
 description: When you use cycle count plans to create counting work, you can guide the actual counting operations by requesting that only specific products and product variants be counted instead of all on-hand inventory at the location. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 06/23/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -74,3 +72,6 @@ When you use cycle count plans to create counting work, you can guide the actual
 14. Click OK.
 15. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

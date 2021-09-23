@@ -4,11 +4,9 @@
 title: Automated Entity store refresh
 description: This topic describes how to enable automated Entity store refresh.
 author: MilindaV2
-manager: AnnBe
 ms.date: 01/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -51,7 +49,7 @@ Complete the following steps to enable automated Entity store refresh.
 
 You will now see the new experience.
 
-![New UI experience](./media/entity-store-data-lake-3.JPG)
+![New UI experience.](./media/entity-store-data-lake-3.JPG)
 
 After the new experience is turned on, you can define the refresh for each aggregate measurement. The following refresh options are available:
 
@@ -64,3 +62,6 @@ An admin can also refresh any aggregate measurement on demand by clicking the **
 
 > [!IMPORTANT]
 > When automated refresh is enabled, the system can disable the refresh of aggregate measurements. You must revisit aggregate measurements and validate that appropriate refresh intervals have been applied.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

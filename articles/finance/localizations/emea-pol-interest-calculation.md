@@ -4,11 +4,9 @@
 title: Tax interest and free-hand interest for Poland
 description: This topic walks you through the process of setting up and calculating tax interest for Poland.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 05/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -105,3 +103,6 @@ In Poland, the tax interest rates are determined by the Ministry of Finance. The
 11. Set the **Tax interest** option to **Yes** to calculate the free-hand interest and tax interest.
 12. On the **Records to include** FastTab, select **Filter** to find and select records for the interest calculation.
 13. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

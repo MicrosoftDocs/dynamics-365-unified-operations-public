@@ -4,11 +4,9 @@
 title: Electronic signatures overview
 description: This article provides an overview of electronic signatures and describes how they can be used.
 author: maertenm
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 13611
+ms.custom: ["13611", "intro-internal"]
 ms.assetid: 98dc6b79-1895-45d8-9dd1-2c8a351b58af
 ms.search.region: Global
 # ms.search.industry: 
@@ -114,3 +112,6 @@ To designate approvers, follow these steps.
 1. On the **Options** page, on the **Accounts** tab, click **Designate approver**.
 2. In the **Approver user ID** field, select the ID of the user who must sign for another user's changes.
 3. In the **Sign for user ID** field, select the ID of the user whose changes must be signed for.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

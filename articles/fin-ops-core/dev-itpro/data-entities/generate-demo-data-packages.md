@@ -4,11 +4,9 @@
 title: Generate demo data by using data packages
 description: This topic explains how to use demo data packages to generate data for your system.
 author: panolte
-manager: AnnBe
-ms.date: 06/06/2018
+ms.date: 04/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -47,7 +45,7 @@ Here are some of the benefits of using data packages instead of a database to de
 
 The demo data packages are designed to be layered on top of each other, as shown in the following illustration.
 
-![Demo data packages](./media/demodatapackages_layers.png)
+![Demo data packages.](./media/demodatapackages_layers.png)
 
 However, the global information for one demo scenario might have completely different requirements than the global information for another demo scenario. For example, the dimensions for one scenario will interfere with the dimensions for another scenario. In this case, a separate global information package will be created, and only packages that are related to that global information can be layered on top of the package.
 
@@ -179,10 +177,6 @@ After you load the data packages, you must also manually follow these steps.
 4. After you load the Project management and accounting packages, you must run the **Resource capacity roll-up** batch job. You can run this job from the **Synchronize resource capacity roll-ups** page (**Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resource capacity roll-ups**). Specify an end date that lets you schedule resources a long time in the future. After the batch job is run, automatic generation of team functionality will be enabled in the project's work breakdown structure (WBS).
 5. Add Print management settings for each module.
 
-### Scenario scripts
-
-Scripts have been provided for many of the scenarios that the demo data supports. You can find these scripts in [Demo data scripts](https://go.microsoft.com/fwlink/?linkid=861599).
-
 ## Transactions and automatic posting
 
 Many scenarios for demo data require that transactions be processed after they are imported. You can process transactions by using the Ready to post feature. This feature includes both a page that lets you define the transactions that should be posted, and an entity that lets you import the definitions and automatically run them.
@@ -252,3 +246,6 @@ The following columns appear in the **Ready to post** entity.
 Insert the **Ready to post** entity at the end of your data project, after all the transaction entities. In the data project, specify a sequence number that is larger than the sequence numbers that are used for the transactions entities.
 
 If you have a mixture of transactions, some of which should be processed whereas others should not be processed, you must use date and document ranges to limit the transactions that are processed. If you can't use the ranges, you must use a separate data package for the unposted transactions.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

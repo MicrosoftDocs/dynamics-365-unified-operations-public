@@ -4,11 +4,9 @@
 title: Monitor service activities  
 description: The Dispatch board form provides an at-a-glance status update for the various scheduled service activities, and tools for tracking the general flow of service orders in your company.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/04/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -64,3 +62,6 @@ Click **Service management** \> **Periodic** \> **Dispatch board**.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

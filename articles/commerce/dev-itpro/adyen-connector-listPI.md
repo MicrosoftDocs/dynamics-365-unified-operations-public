@@ -4,11 +4,9 @@
 title: Saving online payment instruments with the Adyen connector
 description: This topic describes how to save payment instruments by using the Adyen connector for e-commerce.
 author: rubendel
-manager: AnnBe
 ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -60,14 +58,14 @@ The List PI capability requires the following elements:
 - A payment connector that is compatible with the List PI capability
 - A payment processor that maps unique customer IDs to the payment instruments that the customers want that payment processor to save
 
-For more information about how to implement payment connectors and the software development kit (SDK) in general, visit the [Commerce for IT pros and developers home page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+For more information about how to implement payment connectors and the software development kit (SDK) in general, visit the [Commerce for IT pros and developers home page](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
 ## Setup
 
 The List PI capability requires the following components and setup steps:
 
-- **E-commerce integration** – An online storefront integration with Commerce is required. For more information about the e-Commerce SDK, see [e-Commerce platform software development kit (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk).
-- **Online payments configuration** – The Dynamics 365 Payment Connector for Adyen supports List PI out of the box. For information about how to configure payments for online stores, see [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). 
+- **E-commerce integration** – An online storefront integration with Commerce is required. For more information about the e-Commerce SDK, see [e-Commerce platform software development kit (SDK)](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk).
+- **Online payments configuration** – The Dynamics 365 Payment Connector for Adyen supports List PI out of the box. For information about how to configure payments for online stores, see [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). 
 
     In addition to completing the ecommerce setup steps that are described in that topic, you must set the **Allow saving payment information in e-commerce** option in the Payment accounts fasttab of the **Online store** form to **Yes**. 
 
@@ -83,13 +81,13 @@ When e-commerce visitors choose to check out as guests, customer records aren't 
 
 When named users (signed-in customers) go to the payment step of the checkout process, they will experience the List PI capability. The first time that a named user checks out, a **Save for my next payment** check box appears in the section where credit card information is entered. 
 
-![Save for my next payment option](../media/Payments/Save_PI.png)
+![Save for my next payment option.](../media/Payments/Save_PI.png)
 
 If this check box is selected, when a new credit card is submitted for payment, the named user's unique customer ID is sent to the payment processor, and the credit card is securely saved and mapped to the that unique customer ID. 
 
 If the same customer signs in during future visits to the storefront, they will be able to select the same credit card for payment at checkout. 
 
-![Previously saved payment instrument](../media/Payments/Saved_PI.jpg)
+![Previously saved payment instrument.](../media/Payments/Saved_PI.jpg)
 
 ### Order fulfillment and processing
 
@@ -109,4 +107,7 @@ The main difference between the standard flow and the List PI flow is that the c
 
 ## Related articles
 
-- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

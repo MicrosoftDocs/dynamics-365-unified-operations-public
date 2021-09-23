@@ -4,11 +4,9 @@
 title: Add recommendations to the transaction screen
 description: This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 Commerce.
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -49,7 +47,7 @@ You can display product recommendations on your POS device when you use Commerce
 6. When you log in, a page similar to the one below appears. The layout will be different depending on the customizations that were made for your store.
 
 
-    [![Layout designer](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Layout designer.](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## Choose a display option
 
@@ -64,11 +62,11 @@ There are two configurations options available. Choose the option that works bes
 1. Reduce the height of the transaction lines details area so that it is the same height as the customer panel to its left.
 
 
-    [![Height of the transaction lines details area reduced](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![Height of the transaction lines details area reduced.](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. From the menu on the left, drag and drop the recommendations control to between the transaction line details area and the button grid in the center bottom of the transaction screen. Resize the control so it fits in that space.
 
-    [![Recommendations control added to the layout](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Recommendations control added to the layout.](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. Click the **X** to save and exit Layout designer.
@@ -83,13 +81,13 @@ There are two configurations options available. Choose the option that works bes
 
 2. Click **Customize**.
 
-    [![Customization - Tab control dialog box](./media/pic-5.png)](./media/pic-5.png)
+    [![Customization - Tab control dialog box.](./media/pic-5.png)](./media/pic-5.png)
 
 3. Click **New tab**.
 4. Find the new tab that you just added. You may need to scroll down.
 5. In the **Contents** drop-down, select **Recommended products**.
 
-    [![Selecting Recommended products in the Contents field](./media/pic-6.png)](./media/pic-6.png)
+    [![Selecting Recommended products in the Contents field.](./media/pic-6.png)](./media/pic-6.png)
 
 6. In the **Label** field, type a name for the recommendations tab. For example, type 'Recommended products'.
 7. In the **Image** field, select the image to appear on the tab.
@@ -122,3 +120,6 @@ There are two configurations options available. Choose the option that works bes
 [Create recommendations with demo data](product-recommendations-demo-data.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

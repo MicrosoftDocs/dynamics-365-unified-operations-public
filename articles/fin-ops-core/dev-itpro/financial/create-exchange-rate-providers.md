@@ -3,12 +3,10 @@
 
 title: Create exchange rate providers
 description: This topic describes how to set up an exchange rate provider. 
-author: RobinARH
-manager: AnnBe
+author: RyanCCarlson2
 ms.date: 05/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 72153
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jbye
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -42,12 +40,12 @@ This topic describes the steps that are required in order to set up an exchange 
 -   **Exchange rate provider configuration** – The configuration settings of an exchange rate provider that determine how it will be used.
 -   **Exchange rate service** – A free or paid subscription service that provides a list of exchange rates that have been published. Foreign Exchange Rates Powered by OANDA is an example of a service that provides exchange rates.
 -   **The framework** – The import currency exchange rates framework that coordinates the retrieval of exchange rates from providers and appropriate storage of the exchange rates.
--   **SysPlugin framework** - This extension framework is based on the Managed Extension Framework. The Managed Extension Framework makes the SysPlugin extension framework available to non-X++ code. For more information, see [Register subclasses for factory methods] (https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/register-subclass-factory-methods). 
+-   **SysPlugin framework** - This extension framework is based on the Managed Extension Framework. The Managed Extension Framework makes the SysPlugin extension framework available to non-X++ code. For more information, see [Register subclasses for factory methods] (../extensibility/register-subclass-factory-methods). 
 
 ## Conceptual/class model
 The following illustration shows the main interfaces and classes that make up the exchange rate provider framework, and the relationships among them. New exchange rate providers should be derived from the **IExchangeRateProvider** interface. Exchange rate providers are written in X++. Because X++ is a .NET language, it's easy to use the Microsoft .NET Framework in our provider. 
 
-[![Conceptual/class model of the exchange rate provider framework](./media/exchangerates.png)](./media/exchangerates.png) 
+[![Conceptual/class model of the exchange rate provider framework.](./media/exchangerates.png)](./media/exchangerates.png) 
 
 Here are the interfaces and classes that are shown in the illustration:
 
@@ -512,3 +510,6 @@ Because there are no limits to the method that the exchange rate providers use t
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

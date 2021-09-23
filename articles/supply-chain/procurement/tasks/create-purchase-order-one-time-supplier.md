@@ -3,12 +3,10 @@
  
 title: Create a purchase order for a one-time supplier
 description: This procedure shows you how to create a purchase order for a one-time supplier. 
-author: RichardLuan
-manager: tfehr 
+author: kamaybac
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -21,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -41,3 +39,6 @@ This procedure shows you how to create a purchase order for a one-time supplier.
 5. Click OK.
     * The purchase order can now be completed and processed like any other order. There are no special characteristics related to how this is done. The invoice will account a due transaction on the vendor account that was created with the order, and payment will then be processed.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

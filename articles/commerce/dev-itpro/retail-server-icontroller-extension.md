@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)
+title: Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
 description: This topic explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
 author: mugunthanm
-manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.11
 
 ---
 
-# Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)
+# Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
 
 [!include [banner](../includes/banner.md)]
 
@@ -52,7 +50,7 @@ The Retail SDK includes only a few samples of end-to-end Retail Server extension
 
 The following illustration shows the class structure of the extension.
 
-![Commerce Scale Unit extension class diagram](media/RSExtensionClass.png)
+![Commerce Scale Unit extension class diagram.](media/RSExtensionClass.png)
 
 > [!NOTE]
 > Retail server does not support loading both IController and CommerceController extensions. If you include both type of extensions, then Retail server load will fail. Extensions should have either IController or CommerceController. If you are migrating to the IController extension, migrate all the Retail server extensions to IController.
@@ -71,7 +69,10 @@ The following illustration shows the class structure of the extension.
     [RoutePrefix("SimpleExtension")]
     ```
 
-8. Add the **BindEntity** attribute on the controller class. This attribute is required if you're creating a new controller and exposing an entity.
+> [!NOTE]
+> Adding RoutePrefix attribute is optional. If you add the **RoutePrefix** attribute, you must add the **BindEntity** attribute with only the custom entity. Adding out of the box **RoutePrefix** (for example, Customers and Product) and binding out of the box entities (for example, Product, Cart, and Customer) is not supported. You can add only custom **RoutePrefix** and **Custom** entity.
+
+8. Add the **BindEntity** attribute on the controller class. This step is optional. Add the attribute only if you're adding the **RoutePrefix** and returning a custom entity.
 
 ```csharp
 [BindEntity(typeof(SimpleEntity))]
@@ -85,7 +86,7 @@ The following sample code creates a simple Retail Server API to return an entity
 ### Sample code for a controller class bounded to a custom entity
 
 > [!NOTE]
-> Extension code should not bound the existing OOB entity, such as Customer or Product.
+> Extension code should not bind to the existing entities such as Customer, Cart, or Product . If the API returns a collection, it must return only type `IEnumerable<T>`, returning any other type like `Dictionary <String, String>` is not supported. As a result, you may get an error such as `System.Collections.Generic.Dictionary2[System.String,System.String] is not supported.` To return a collection, Commerce APIs uses `PageResult<T>`, which implements `IEnumerable<T>`. Follow this pattern to return the collection.
 
 ```csharp
 // New extended controller.
@@ -217,6 +218,52 @@ public static class CommerceRoles
 }
  ```
 
+### Support paging in Retail Server APIs
+
+Starting in release 10.0.19, if the API requires paging you can add the **QueryResultSettings** parameter to the API and pass the value from the client. **QueryResultSettings** contains **PagingInfo** and other parameters for records to fetch or skip.  
+
+The extension can pass **QueryResultSettings** to the CRT request, which the CRT request can use when there is a database query.
+
+The full sample code is available in the Retail SDK:
+RetailSDK\SampleExtensions\CommerceRuntime\Extensions.StoreHoursSample\StoreHoursDataService.cs
+RetailSDK\SampleExtensions\RetailServer\Extensions.StoreHoursSample\StoreHoursController.cs"
+
+```csharp
+
+    [HttpPost]
+        [Authorization(CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee)]
+        public async Task<PagedResult<SampleDataModel.StoreDayHours>> GetStoreDaysByStore(IEndpointContext context, string StoreNumber, QueryResultSettings queryResultSettings)
+        {
+            var request = new GetStoreHoursDataRequest(StoreNumber) { QueryResultSettings = queryResultSettings };
+            var hoursResponse = await context.ExecuteAsync<GetStoreHoursDataResponse>(request).ConfigureAwait(false);
+            return hoursResponse.DayHours;
+        }
+
+```
+
+```csharp
+
+private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
+            {
+                ThrowIf.Null(request, "request");
+
+                using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
+                {
+                    var query = new SqlPagedQuery(request.QueryResultSettings)
+                    {
+                        DatabaseSchema = "ext",
+                        Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
+                        From = "CONTOSORETAILSTOREHOURSVIEW",
+                        Where = "STORENUMBER = @storeNumber",
+                    };
+
+                    query.Parameters["@storeNumber"] = request.StoreNumber;
+                    return new GetStoreHoursDataResponse(await databaseContext.ReadEntityAsync<DataModel.StoreDayHours>(query).ConfigureAwait(false));
+                }
+            }
+            
+  ```
+
 ### Register the extension
 
 1. Build the extension project, and copy the binary to the **\\RetailServer\\webroot\\bin\\Ext** folder.
@@ -285,3 +332,6 @@ The following example shows how to update the **add** element in the **RetailPro
     </composition> 
 </retailProxyExtensions> 
 ```
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

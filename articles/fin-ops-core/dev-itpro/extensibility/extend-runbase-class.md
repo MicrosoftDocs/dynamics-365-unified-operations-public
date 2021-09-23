@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Extend the RunBase class
 description: This topic contains an example that shows how a RunBase class can be augmented end to end.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 02/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -161,3 +155,6 @@ final class MySysUserLogCleanup_Extension
 ```
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

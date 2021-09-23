@@ -4,11 +4,9 @@
 title: Correct inventory tracking information
 description: This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information. 
 author: MarkusFogelberg
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -65,3 +63,6 @@ This procedure walks you through the process of creating and posting an inventor
 2. Click Transactions.
     * Here you can see the transactions that were created when you posted your journal.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Preview and publish an experiment
 description: This topic describes how to preview and publish an experiment from Dynamics 365 Commerce.
 author:  sushma-rao 
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -32,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 This topic describes how to preview and publish your experiment in Dynamics 365 Commerce after you've [connected your experiment and edited your variations](experimentation-connect-edit.md). The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate topics.
 
-[ ![Experimentation user journey - Preview & Publish](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
+[ ![Experimentation user journey - Preview & Publish.](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
 ## Preview your experiment variations
 You can preview your variations and continue editing them until they look the way you want them to.
@@ -63,3 +61,6 @@ When using publish groups with experiments, there are some important considerati
 
 ## Next step
 [Run and monitor an experiment](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

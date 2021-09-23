@@ -3,12 +3,10 @@
 
 title: Functional location types
 description: This topic describes how to create functional location types in Asset Management.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -71,3 +69,6 @@ Now, the default functional location type to be used only on a default functiona
 
 >[!NOTE] 
 >On the **General** FastTab, you can get an overview of the number of asset types, maintenance plans, asset attribute requirements, permitted types, attributes, and functional locations set up on the functional location type. The **Functional locations** field shows the number of functional locations that use the functional location type. You can use the **Copy** button to copy settings from a functional location type to the selected functional location type.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

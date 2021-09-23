@@ -4,11 +4,9 @@
 title: Define asset idle period and validate depreciation process
 description: Use this task to learn how to define fixed asset idle period. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -115,3 +113,6 @@ This task uses the JPMF demo company data.
 17. Click OK.
     * Validate no depreciation journal is created for the idle period  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: User interface development home page
 description: This topic contains links to topics about developing user interface elements.
 author: RobinARH
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 191453
+ms.custom: "intro-internal"
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
 ms.search.region: Global
 # ms.search.industry: 
@@ -101,3 +99,6 @@ The form metamodel continues to be used to define controls and application logic
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

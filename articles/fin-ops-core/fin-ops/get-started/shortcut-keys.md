@@ -4,11 +4,9 @@
 title: Keyboard shortcuts
 description: This topic provides an overview of the shortcut key combinations that you can use when you're working with Finance and Operations apps.
 author: jasongre
-manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -261,3 +259,6 @@ As of Platform update 11, users can discover currently available shortcuts direc
 
 [Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

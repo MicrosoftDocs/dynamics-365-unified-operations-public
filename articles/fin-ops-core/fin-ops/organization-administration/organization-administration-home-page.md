@@ -4,11 +4,9 @@
 title: Organization administration home page
 description: This topic points to resources that will help you in your organization.
 author: sericks007
-manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 20421
+ms.custom: ["20421", "intro-internal"]
 ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
 ms.search.region: Global
 # ms.search.industry: 
@@ -107,3 +105,6 @@ Record templates can help you to create records more quickly. You can create a r
 - [Configure document management](configure-document-management.md)
 - [Configure and send email](configure-email.md)
 - [Date/time data and time zones](date-time-zones.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

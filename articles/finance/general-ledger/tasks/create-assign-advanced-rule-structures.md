@@ -4,11 +4,9 @@
 title: Create and assign advanced rule structures
 description: This topic explains how to create and assign an advanced rule structure to an account structure. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 07/19/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -61,3 +59,6 @@ This topic explains how to create and assign an advanced rule structure to an ac
 17. Close the page.
 18. Select **Activate**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

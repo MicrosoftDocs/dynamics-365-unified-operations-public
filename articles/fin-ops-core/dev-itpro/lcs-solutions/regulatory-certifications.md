@@ -2,13 +2,11 @@
 # required metadata
 
 title: Regulatory certification information in feature titles
-description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must include details about any regulatory certifications that the solution requires in order to be legally compliant for sale in the intended market. This article shows how information about certifications is used in the title of the feature.
+description: This topic describes how information about certifications is used in the title of the feature.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -60,3 +58,6 @@ For more information about BPM, see [Flowcharts in Business process modeler (BPM
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

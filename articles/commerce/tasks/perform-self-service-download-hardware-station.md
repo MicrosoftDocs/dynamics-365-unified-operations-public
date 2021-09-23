@@ -4,11 +4,9 @@
 title: Perform Self service to download hardware station
 description: This procedure walks through how to download a pre-defined hardware station. 
 author: jashanno
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -38,3 +36,6 @@ This procedure walks through how to download a pre-defined hardware station. The
 5. In the list, find and select the desired record.
 6. Click Download.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

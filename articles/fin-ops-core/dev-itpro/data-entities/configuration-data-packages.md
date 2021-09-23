@@ -4,11 +4,9 @@
 title: Configuration data packages
 description: This topic provides an overview of the configuration data packages for the July 2017 release of Microsoft Dynamics 365 for Finance and Operations.
 author: saraschi2
-manager: AnnBe
 ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -327,3 +325,6 @@ A generic chart of accounts is included in the configuration data packages. When
 | Terms of delivery                                       |                     |                 | X           |
 | Terms of payment                                        |                     |                 | X           |
 | Total discount customer groups                          |                     |                 | X           |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

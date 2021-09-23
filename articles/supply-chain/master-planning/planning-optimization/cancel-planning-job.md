@@ -4,11 +4,9 @@
 title: Cancel a planning job
 description: This topic explains how to cancel an active planning job that uses the Planning optimization functionality.
 author: ChristianRytt
-manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -62,3 +60,6 @@ The job status will be **Canceling** until the Planning Optimization service con
 [View plan history and planning logs](plan-history-logs.md)
 
 [Apply filters to a plan](plan-filters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

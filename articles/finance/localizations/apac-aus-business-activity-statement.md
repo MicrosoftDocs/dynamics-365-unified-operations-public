@@ -4,11 +4,9 @@
 title: Business activity statement 
 description: This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form that all businesses submit to the Australian Taxation Office to report their taxation obligations.
 author: anasyash
-manager: tfehr
 ms.date: 01/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -630,7 +628,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
     | Date | The date when tax is settled. This field is automatically set when you create a sales tax payment. |
     | Voucher | The voucher number of the sales tax payment. This field is automatically set when you create a sales tax payment. |
 
-    ![Additional BAS report boxes page](media/apac-aus-bas-additional-boxes.png)
+    ![Additional BAS report boxes page.](media/apac-aus-bas-additional-boxes.png)
 
     > [!NOTE]
     > When you create a sales tax payment, the date and voucher are filled in for the period, and you can no longer edit the line. If a line on the **Additional BAS report boxes** page wasn&#39;t manually created, it&#39;s automatically created when the _Sales tax payment_ or _Settle and post GST_ procedure is run.
@@ -2781,3 +2779,6 @@ For example, for customer invoices, go to **Accounts receivable > Invoices > All
 
 > [!Note]
 > Transactions weren&#39;t generated for amounts in fields **W1**, **F1**, and **F2**, because those fields aren&#39;t related to tax.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

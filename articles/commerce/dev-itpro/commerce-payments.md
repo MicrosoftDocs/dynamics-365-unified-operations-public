@@ -4,11 +4,9 @@
 title: Omni-channel Commerce order payments
 description: This topic describes the omni-channel Commerce order payments feature in Microsoft Dynamics 365 Commerce.
 author: rubendel
-manager: annbe
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -40,7 +38,7 @@ This topic describes the omni-channel Commerce order payments feature in Microso
 | Term | Description |
 |---|---|
 | Commerce payment | A payment that is associated with a customer order that was generated at the POS or in the e-commerce storefront. |
-| Order completion | The business logic in the call center that ensures that payments have been collected before an order is submitted. The **Enable order completion** setting in the call center parameters is used to turn on this business logic. For more information, see [Enable order completion](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion). 
+| Order completion | The business logic in the call center that ensures that payments have been collected before an order is submitted. The **Enable order completion** setting in the call center parameters is used to turn on this business logic. For more information, see [Enable order completion](../set-up-order-processing-options.md#enable-order-completion). 
 | Call center order | An order that a call center user creates in Commerce headquarters. |
 | Accounts receivable (AR) sales order | An order that a user who isn't a call center user creates through Accounts receivable in Commerce headquarters. Payments for AR sales orders can't be edited through call center order completion. |
 
@@ -50,17 +48,17 @@ Dynamics 365 Commerce consists of three main channels: POS, e-commerce, and call
 
 The following illustration shows an order that was created in the call center. Notice that the **Payments** button is available when the row for this order is selected. 
 
-![Call center order that the Payments button is available for](../dev-itpro/media/COP_CC_PAY.png)
+![Call center order that the Payments button is available for.](../dev-itpro/media/COP_CC_PAY.png)
 
 The following illustration shows an order that was created at the POS. Notice that the **Payments** button is unavailable when the row for this order is selected.
 
-![POS order that the Payments button is unavailable for](../dev-itpro/media/COP_NONCC_PAY.png)
+![POS order that the Payments button is unavailable for.](../dev-itpro/media/COP_NONCC_PAY.png)
 
 In Commerce version 10.0.13 and later, you can access the **Payments** page for orders that were created in e-commerce and the POS. Additionally, when the omni-channel Commerce order payments feature is turned on, the orders can be edited by using the order completion function that was previously available only for call center orders.
 
 With this feature enabled, the **Sales order summary** dialog can be used to edit payments for orders originating in POS and e-commerce.  
 
-![Payments button available for a POS or e-commerce order that was created while the feature was turned on](../dev-itpro/media/COP_ORDERCOMPLETION.png)
+![Payments button available for a POS or e-commerce order that was created while the feature was turned on.](../dev-itpro/media/COP_ORDERCOMPLETION.png)
 
 ## Prerequisites
 
@@ -68,7 +66,7 @@ To turn on the omni-channel Commerce order payments feature, you must first turn
 
 If any of the prerequisites are missing when you try to turn on the omni-channel Commerce order payments feature, you receive a message that states that you can't continue until the prerequisite features and configurations are in place.
 
-![Message about prerequisite features and configurations](../dev-itpro/media/COP_PRE.png)
+![Message about prerequisite features and configurations.](../dev-itpro/media/COP_PRE.png)
 
 ### Prerequisite features
 
@@ -77,7 +75,7 @@ The following features are required for omni-channel Commerce order payments to 
 | Feature name | Description |
 |---|---|---|
 | Unified payment posting journal defaults for Commerce | This feature changes the way that business logic creates customer payment and customer refund payment journals for orders that are created through the call center, POS, or e-commerce channel. |
-| Omni-channel payments | This feature enables omni-channel payment scenarios, such as buy online, pick up in store. For more information, see [Omni-channel payments overview](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments). |  
+| Omni-channel payments | This feature enables omni-channel payment scenarios, such as buy online, pick up in store. For more information, see [Omni-channel payments overview](../omni-channel-payments.md). |  
 | Duplicate payment protection on invoicing | This feature enables duplicate payment protection for invoicing scenarios. Commerce payments functionality might affect customizations in invoicing scenarios. If your organization has invoicing customizations, make sure that they are refactored before you turn on Commerce payments functionality in production environments. | 
 | Enable refunds over multiple captures | This functionality improves that capability to do multiple linked refunds against an order. |
 | Enable manual void of expired credit card payment lines when authorizations are expired | This feature adds support for manual deletion of payment lines if they expire and the authorization cannot be refreshed. |
@@ -90,19 +88,19 @@ You must map payment methods in all channels to corresponding operations, so tha
 
 The following illustration shows the mapping of a payment method to an operation in call center.
 
-![Payment method mapped to an operation in call center](../dev-itpro/media/COP_OPERATION.png)
+![Payment method mapped to an operation in call center.](../dev-itpro/media/COP_OPERATION.png)
 
 #### Configure a call center
 
-To manage POS and e-commerce order payments through Commerce headquarters, you must configure at least one call center channel. For more information about how to create a call center channel, see [Set up a call center channel](https://docs.microsoft.com/dynamics365/commerce/channel-setup-callcenter#overview).
+To manage POS and e-commerce order payments through Commerce headquarters, you must configure at least one call center channel. For more information about how to create a call center channel, see [Set up a call center channel](../channel-setup-callcenter.md#overview).
 
 #### Set up users as call center users
 
-Users who will edit Commerce payments in Commerce headquarters must be set up as users of the call center channel. For more information about how to set up call center users, see [Set up a call center channel user](https://docs.microsoft.com/dynamics365/commerce/channel-setup-callcenter#set-up-channel-users).
+Users who will edit Commerce payments in Commerce headquarters must be set up as users of the call center channel. For more information about how to set up call center users, see [Set up a call center channel user](../channel-setup-callcenter.md#set-up-channel-users).
 
 #### Turn on order completion for call centers
 
-The order completion function must be turned on for call centers. Order completion enforces business logic that makes sure that orders can be paid during fulfillment. For more information about order completion, see [Enable order completion](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion).
+The order completion function must be turned on for call centers. Order completion enforces business logic that makes sure that orders can be paid during fulfillment. For more information about order completion, see [Enable order completion](../set-up-order-processing-options.md#enable-order-completion).
 
 #### Remove the Pay later option from the POS
 
@@ -114,16 +112,17 @@ After the prerequisites that are described in the previous section are in place,
 
 1. In the **Feature management** workspace, select the **All** tab to view the list of all features, and then search for **Omni-channel Commerce order payments**.
 
-    ![Omni-channel Commerce order payments feature in the Feature management workspace](../dev-itpro/media/COP_ENABLE.png)
+    ![Omni-channel Commerce order payments feature in the Feature management workspace.](../dev-itpro/media/COP_ENABLE.png)
 
 2. Select the feature, and then select **Enable now**.
 
 > [!IMPORTANT]
 > The omni-channel Commerce order payments feature includes many changes to payments and order management workflows. You should do exhaustive testing before you turn on this feature in a production environment.
+> After this feature is enabled, the 1070 and 1110 scheduler jobs must be run to synchronize changes to the channel database. 
 
 To distinguish channel orders that are created while the omni-channel Commerce order payments feature is turned on from other orders, the system shows a **Payments type** field on the order header when the feature is turned on. For POS and e-commerce orders, this field is set to **Commerce**.
 
-![Order where the Payments type field is set to Commerce](../dev-itpro/media/COP_HEADERCOM.png)
+![Order where the Payments type field is set to Commerce.](../dev-itpro/media/COP_HEADERCOM.png)
 
 For call center orders, the **Payments type** field is set to **Call Center**. For sales orders that are created in Accounts receivable, the field isn't shown.
 
@@ -216,10 +215,13 @@ To support omni-channel Commerce order payments, changes to existing functionali
 
 In Commerce version 10.0.12 and earlier, payment journal assignment is inconsistent across channels. In Commerce version 10.0.13 and later, if the omni-channel Commerce order payments feature is turned on, all channels use the payment vouchers that are specified on the **Posting** tab of the **Commerce parameters** page.
 
-![Payment voucher assignment on the Commerce parameters page](../dev-itpro/media/COP_VOUCH.png)
+![Payment voucher assignment on the Commerce parameters page.](../dev-itpro/media/COP_VOUCH.png)
 
 ### Check payment method
 
 Orders that are created at the POS don't include a check number when they're created in Commerce headquarters. When the omni-channel Commerce order payments feature is turned on, **9999** will be entered as the check number for orders that are created at the POS and paid for by check.
 
 Additionally, the check number won't be required when **Check** is specified as the refund method of payment.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

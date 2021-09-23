@@ -4,11 +4,9 @@
 title: Modules overview
 description: This topic provides an overview of module development in Microsoft Dynamics 365 Commerce. It includes best practices about when and how to extend a module's style or features.
 author: samjarawan
-manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -79,7 +77,7 @@ By using Commerce site builder, you can make the following code-free style chang
 
 By using the online SDK, you can make custom theme changes to achieve the following results:
 
-- [Modify the module CSS](../css-override-files.md) to change any of a module's styling.
+- [Modify the module CSS](theming.md) to change any of a module's styling.
 - [Extend a module's view](theme-module-extensions.md) to change the rendered HTML layout.
 - [Extend a module's definition file](theme-module-extensions.md) to add or remove configuration fields, slots, data actions, or resources.
 - [Override a module library component](override-theme-component.md) to change the component behavior.
@@ -119,7 +117,7 @@ If you're building custom modules, you can expose style presets so that site aut
 
 The following illustration shows the style presets that are available for the promo banner module. If the background color is changed, the new color will be used for all instances of the module on the site after the change is published.
 
-![Style presets that are available for the promo banner module](media/module-overview-1.png)
+![Style presets that are available for the promo banner module.](media/module-overview-1.png)
 
 #### CSS override file
 
@@ -139,7 +137,7 @@ If you must target a change to one or a few instances of module, but not all of 
 
 The following illustration shows a header module in site builder after publication. The **Custom CSS class name** setting is highlighted.
 
-![Custom CSS class name setting in a header module in site builder](media/module-overview-2.png)
+![Custom CSS class name setting in a header module in site builder.](media/module-overview-2.png)
 
 ### Theme changes
 
@@ -227,3 +225,6 @@ If you require a feature that isn't available in the set of modules in the modul
 [Create a new module](create-new-module.md)
 
 [Data action overrides](data-action-overrides.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

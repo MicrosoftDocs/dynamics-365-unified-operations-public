@@ -4,11 +4,9 @@
 title: Connect an experiment and edit variations
 description: This topic describes how to connect an experiment in a third-party service to Dynamics 365 Commerce, and how to edit variations for the experiment.
 author:  sushma-rao 
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -34,7 +32,7 @@ This topic describes how to connect your experiment in Commerce and make changes
 
 The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate topics.
 
-[ ![Experimentation user journey - Connect & Edit](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
+[ ![Experimentation user journey - Connect & Edit.](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
 After you've [set up your experiment](experimentation-setup.md) in a third-party service, you'll connect the experiment in Dynamics 365 Commerce and edit the experiment variations.
 
@@ -98,3 +96,6 @@ If you defined the scope of your experiment as **entire** in the **Connect exper
 
 ## Next step
 [Preview and publish an experiment](experimentation-preview-publish.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

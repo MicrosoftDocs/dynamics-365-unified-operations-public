@@ -4,11 +4,9 @@
 title: Deprecation of methods and metadata elements
 description: This topic provides information about the deprecation of methods and metadata elements that become obsolete as the code base evolves. 
 author: jorisdg
-manager: AnnBe
-ms.date: 03/01/2019
+ms.date: 02/19/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -16,7 +14,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -52,4 +50,7 @@ Here are some tips that you, as a consumer of the Microsoft code base, can use t
 
 ## List of deprecated methods and metadata elements
 
-For reference, download the Microsoft Excel file, available on the [Deprecation of methods and metadata elements](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/DeprecationMME) page of CustomerSource, which shows the artifacts that have been marked for deprecation in each major release.
+For reference, download the Microsoft Excel file, [ObsoleteElementsPerVersion.xlsx](https://mbs2.microsoft.com/fileexchange/?fileID=d6b5589b-c2c7-4cdd-a6b9-87e080cb2f05), which shows the artifacts that have been marked for deprecation in each major release.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

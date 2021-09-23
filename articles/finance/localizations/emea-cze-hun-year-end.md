@@ -4,11 +4,9 @@
 title: Year-end close for Czech Republic and Hungary
 description: This topic provides information about the year-end closing process and opening transactions for the Czech Republic and Hungary.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 05/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,3 +44,6 @@ Before you can post opening transactions to a different account for each of main
 
 ## Additional resources
 [Year-end close](../general-ledger/year-end-close.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

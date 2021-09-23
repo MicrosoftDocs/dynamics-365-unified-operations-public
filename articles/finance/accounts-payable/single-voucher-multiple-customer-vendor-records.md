@@ -4,11 +4,9 @@
 title: Single voucher with multiple customer or vendor records
 description: This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions of Microsoft Dynamics 365 Finance, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing. 
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -216,8 +214,6 @@ On the related voucher for cash discount, the financial dimensions will be used 
 | ARP-00001   | 403300-002-023- | Customer cash discount | 2.00      |            |
 | ARP-00001   | 130100-002-     | Customer balance       |           | 2.00       |
 
-### 
-
 ## One voucher with a netting for multiple customers and vendors
 Netting can be useful when an organization purchases and sells to the same company. Rather than paying the vendor invoices and waiting to receive payment for the customer invoices, the vendor and customer invoices are netted. The netting transaction is settled against the outstanding balances. 
 
@@ -238,3 +234,6 @@ To avoid unwanted issues with future settlements for this transaction, instead o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

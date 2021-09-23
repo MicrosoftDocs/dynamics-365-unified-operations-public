@@ -4,11 +4,9 @@
 title: Create advanced rules for journals
 description: This procedure steps through creating advanced rules for journals. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -60,3 +58,6 @@ This procedure steps through creating advanced rules for journals. This includes
 4. In the tree, check 'the group that you want to allow posting for this journal name.'.
 5. Click **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

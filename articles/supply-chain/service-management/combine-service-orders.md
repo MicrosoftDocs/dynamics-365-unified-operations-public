@@ -4,11 +4,9 @@
 title: Combine service orders  
 description: You can combine service orders.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -116,3 +114,6 @@ Additional grouping of service order lines into service orders occurs according 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

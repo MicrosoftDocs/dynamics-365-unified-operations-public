@@ -2,13 +2,11 @@
 # required metadata
 
 title: Point-in-time restore of the production database to a sandbox environment
-description: This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time restore (PITR) of the production database to a sandbox user acceptance testing (UAT) environment.
+description: This topic describes how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
 author: LaneSwenka
-manager: AnnBe
-ms.date: 12/15/2020
+ms.date: 08/4/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -32,7 +30,7 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time restore (PITR) of the production database to a user acceptance testing (UAT) sandbox environment. Microsoft maintains [automated backups](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups) of the business and financial reporting databases for 28 days for Production environments and 7 days for Sandbox environments.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time restore (PITR) of the production database to a user acceptance testing (UAT) sandbox environment. Microsoft maintains [automated backups](/azure/sql-database/sql-database-automated-backups) of the business and financial reporting databases for 28 days for Production environments and 7 days for Sandbox environments.
 
 > [!IMPORTANT]
 > Microsoft doesn't support copying production data to a sandbox environment for the purpose of production reporting.
@@ -64,11 +62,12 @@ When you refresh a production environment to a sandbox environment, or a sandbox
 * Simple Mail Transfer Protocol (SMTP) Relay server in the SysEmailParameters table.
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-* Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
+* All files stored in Azure blob storage. This includes document attachments (from the DocuValue and DocuDeletedValue tables) and custom Microsoft Office templates (from the DocuTemplate table).
 * All users except the admin will be set to **Disabled** status.
 * All batch jobs will be set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
+* Dual-write configuration.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 
 Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because SMTP is still turned on in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
 
@@ -87,7 +86,7 @@ Here is the list of requirements and conditions of operation for a database refr
 - A refresh performs a delete operation on the original target database.
 - The target environment will be available until the database copy has reached the target server. After that point, the environment will be offline until the refresh process is completed.
 - The refresh will affect only the application and Financial Reporting databases.
-- Documents in Azure Blob storage aren't copied from one environment to another. Therefore, attached document handling documents and templates won't be changed and will remain in their current state.
+-  No **file stored in Azure blob storage is copied** from one environment to another. This includes **document attachments and custom Microsoft Office templates**. These documents won't be changed and will remain in their current state. 
 - All users except the Admin user and other internal service user accounts will be unavailable. Therefore, the Admin user can delete or obfuscate data before  other users are allowed back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management integration jobs that have recurring import and export enabled must be fully processed and stopped in the target system before the restore is started. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. In this way, you ensure that there are no orphaned files from either system in Azure storage. This step is important because orphaned files can't be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
@@ -136,8 +135,11 @@ Conversely, if your production environment is newer than your target sandbox env
 
 ### The source and target are on different infrastructure (Microsoft-managed vs. self-Service)
 
-The PITR process is not supported between Microsoft-managed and self-service environments across different regions. For example, if the production environment is Microsoft-managed and in East US2 and a PITR is needed to the sandbox environment, which is self-service and in East US, PITR is not supported. The alternative is to move the production environment to self-service or opt for a regular database refresh instead.
+The PITR process is not supported between a Microsoft-managed environment as a source and a self-service environment as a destination. For example, if the production environment is Microsoft-managed and in East US, and a PITR is needed for the sandbox environment, which is self-service and in East US. PITR is not supported. The alternative is to move the production environment to self-service or opt for a regular database refresh instead.
 
 ### Point in time restore between source and target that are both on self-Service, in different regions
 The PITR process is not supported between self-service environments across different regions. For example, if the production environment is in East US and a PITR is needed for the sandbox environment, which is self-service and in West Europe, PITR is not supported. The alternative is to get both the environments in the same region or opt for a regular database refresh instead.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

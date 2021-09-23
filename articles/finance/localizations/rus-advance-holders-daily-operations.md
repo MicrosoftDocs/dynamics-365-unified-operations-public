@@ -3,11 +3,9 @@
 title: Daily operations for advance holders in Russia
 description: This topic provides information about daily operations, such as handling cash and closing balances, for advance holders for Russia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -248,3 +246,6 @@ Use this procedure to cancel a periodic settlement for advance holder transactio
 2. In the **Date of transaction** field, select the advance holder transaction date. All transactions that were settled before this date will be reversed.
 3. On the **Records to include** FastTab, define additional filtering for the transactions to cancel settlements for.
 4. Select **OK** to cancel the periodic settlement.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

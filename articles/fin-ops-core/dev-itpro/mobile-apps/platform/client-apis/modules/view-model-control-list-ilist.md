@@ -1,26 +1,12 @@
 ---
-# required metadata
 title: List module
 description: A list is a control that contains any numbers of rows.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
 ---
 
 # List module
@@ -227,3 +213,6 @@ Row <br>
 | [isEntitySyncPending](../interfaces/view-model-control-list-ilist-irow.md#isentitysyncpending) |isEntitySyncPending(): boolean|  |
 | [select](../interfaces/view-model-control-list-ilist-irow.md#select) |select(): any|  |
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

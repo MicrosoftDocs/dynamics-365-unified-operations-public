@@ -4,11 +4,9 @@
 title: Post jobs to Broadbean from Attract
 description: This topic explains how to use Dynamics 365 Talent - Attract to post jobs to Broadbean
 author: pganapmsft
-manager: AnnBe
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -16,7 +14,6 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -58,7 +55,7 @@ Attract passes the following information to Broadbean:
 After Broadbean successfully completes the posting, the **Postings** section of the job in Attract shows the Broadbean status as **Posted**.
 
 > [!NOTE]
-> - Broadbean requires the **Industry** field. Currently, this field is set to **IT** by default. However, you can change the value to the correct industry in the window for Broadbean job posting.
+> - Broadbean requires the **Industry** column. Currently, this column is set to **IT** by default. However, you can change the value to the correct industry in the window for Broadbean job posting.
 > - It takes some time for Broadbean to finish posting your job to all the job boards that you selected. Therefore, there might be a slight delay before Attract provides a status update for the job.
 
 ### View a Broadbean job posting
@@ -106,3 +103,6 @@ If you're having trouble posting a job to Broadbean, try these steps.
 [Create, approve, and post jobs in Attract](./creating-jobs-attract.md)
 
 [Enable Broadbean integration in Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

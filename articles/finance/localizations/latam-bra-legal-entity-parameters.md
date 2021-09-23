@@ -4,11 +4,9 @@
 title: Parameters for legal entities in Brazil
 description: To collect and submit tax statements that report on performance, a Brazilian legal entity requires specific fiscal information. This topic explains how to set the parameters to specify this information.
 author: sndray
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,12 +33,11 @@ ms.dyn365.ops.version: Version 1611
 
 To collect and submit tax statements that report on performance, a Brazilian legal entity requires specific fiscal information. This topic explains how to set the parameters to specify this information.
 
-Brazilian legal entity overview
--------------------------------
+## Brazilian legal entity overview
 
 A Brazilian legal entity is organized by fiscal establishments that function in the same way and are in the same operations of a branch. There is a primary fiscal establishment that is considered the Matriz, and related fiscal establishments that are located in other states or outside Brazil. The following illustration shows the structure of a Brazilian legal entity and related fiscal establishments. 
 
-[![structure of a Brazilian legal entity and related fiscal establishments](./media/bralegalentity-236x300.png)](./media/bralegalentity.png)
+[![structure of a Brazilian legal entity and related fiscal establishments.](./media/bralegalentity-236x300.png)](./media/bralegalentity.png)
 
 ## Fiscal establishments
 A fiscal establishment is a physical location of a legal entity, such as a subsidiary, branch, plant, distribution center, warehouse, or store, that requires a Cadastro Nacional da Pessoa Jurídica (CNPJ) or Inscrição Estadual (IE) tax registration number. A legal entity can have multiple fiscal establishments. Fiscal establishments issue and receive fiscal documents, and assess and pay taxes. You can perform the following tasks:
@@ -325,3 +322,6 @@ In Brazil, you must specify the accountant details for tax reporting in the mont
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

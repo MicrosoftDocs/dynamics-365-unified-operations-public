@@ -4,11 +4,9 @@
 title: Create a new warehouse layout
 description: This topic describes how to set up information about the locations in a warehouse. 
 author: perlynne
-manager: tfehr 
 ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -64,3 +62,6 @@ This topic describes how to set up information about the locations in a warehous
 7. Close the page.
 8. Refresh the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

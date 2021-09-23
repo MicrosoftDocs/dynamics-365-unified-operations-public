@@ -1,30 +1,12 @@
 ---
-# required metadata
-
 title: CacheService type
 description: Provides ability to access data from the device cache and update data into the device cache.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
-
 ---
 
 # CacheService type
@@ -79,3 +61,6 @@ setData(cacheKey: string, data: any): any
 
 #### Returns any
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

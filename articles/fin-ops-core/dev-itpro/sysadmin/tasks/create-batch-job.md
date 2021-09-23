@@ -4,11 +4,9 @@
 title: Create a batch job
 description: A batch job is a group of tasks that are submitted to an Application Object Server (AOS) instance for automatic processing. 
 author: maertenm
-manager: AnnBe 
 ms.date: 06/21/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -57,3 +55,6 @@ A batch job is a group of tasks that are submitted to an Application Object Serv
     - **Withhold**: Set the batch job as **withhold** so it is withheld from the batch job scheduler. Equivalent to *stop*.
     - **Waiting**: Set the batch job as **waiting** so it is waiting to be picked up by the batch job scheduler. Equivalent to *go*.
 5. Click **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Extend inventory on-hand data entities
 description: This topic provides an example that shows how to add extended fields to the INVENTORSITEONHANDENTITY and INVENTWAREHOUSEONHANDENTITY views, so that the capabilities of the inventory on-hand data entities can work with the extensions.
 author: sherry-zheng
-manager: tfehr
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -30,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management provides [extensibility](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) features that let you [add fields to tables through extension](../../fin-ops-core/dev-itpro/extensibility/add-field-extension). This topic provides an example that shows how to add extended fields to the `INVENTORSITEONHANDENTITY` and `INVENTWAREHOUSEONHANDENTITY` views, so that the capabilities of the inventory on-hand data entities can work with the extensions. For more information about data entities, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
+Microsoft Dynamics 365 Supply Chain Management provides [extensibility](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) features that let you [add fields to tables through extension](../../fin-ops-core/dev-itpro/extensibility/add-field-extension.md). This topic provides an example that shows how to add extended fields to the `INVENTORSITEONHANDENTITY` and `INVENTWAREHOUSEONHANDENTITY` views, so that the capabilities of the inventory on-hand data entities can work with the extensions. For more information about data entities, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 > [!NOTE]
 > Here is a list of some of the inventory on-hand data entities:
@@ -73,3 +71,6 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 ```
 
 After you complete these steps, you can extend the inventory on-hand by site and inventory on-hand by warehouse data entities by adding the new fields. In this way, you ensure that the extended fields are recognized and included during data migration that uses those data entities.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

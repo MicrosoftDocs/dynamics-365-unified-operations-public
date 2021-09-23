@@ -4,11 +4,9 @@
 title: Goods and Service Tax (GST) project transactions
 description: This topic provides information about transactions for Goods and Service Tax (GST) projects.
 author: kfend
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -42,16 +40,16 @@ ms.search.validFrom: 2019-7-02
 1. Go to **Project management and accounting** \> **Quotations** \> **Project quotations**.
 2. Create a project quotation.
 
-    ![Project quotations page](media/gst-proj-trans-01.png)
+    ![Project quotations page.](media/gst-proj-trans-01.png)
 
 3. Select **Tax information**.
 
-    ![Tax information dialog box](media/gst-proj-trans-02.png)
+    ![Tax information dialog box.](media/gst-proj-trans-02.png)
 
 4. Select **OK**.
 5. On the Action Pane, on the **Quote** tab, in the **Tax** group, select **Tax document**.
 
-    ![Tax document page](media/gst-proj-trans-03.png)
+    ![Tax document page.](media/gst-proj-trans-03.png)
 
 6. Close the page.
 7. On the Action Pane, select **Workflow** \> **Submit** to start the quotation workflow.
@@ -70,7 +68,7 @@ ms.search.validFrom: 2019-7-02
 2. Create a project contract.
 3. On the Action Pane, on the **Project contract** tab, in the **Attachments** group, select **Tax information**.
 
-    ![Tax information dialog box](media/gst-proj-trans-04.png)
+    ![Tax information dialog box.](media/gst-proj-trans-04.png)
 
 ## Create a project
 
@@ -82,7 +80,7 @@ ms.search.validFrom: 2019-7-02
 6. Select **Create project**.
 7. On the Action Pane, on the **Project** tab, in the **Setup** group, select **Tax information**.
 
-    ![Tax information dialog box](media/gst-proj-trans-05.png)
+    ![Tax information dialog box.](media/gst-proj-trans-05.png)
 
 8. Select **OK**.
 
@@ -91,21 +89,21 @@ ms.search.validFrom: 2019-7-02
 1. On the **Projects** page, on the Action Pane, on the **Project** tab, in the **Journals** group, select **Expense**.
 2. Select **New** to create a journal, and then select **Lines** to create a project expense journal.
 
-    ![Journal voucher page](media/gst-proj-trans-06.png)
+    ![Journal voucher page.](media/gst-proj-trans-06.png)
 
 3. Select the **General** tab.
 4. On the **Invoice** tab, enter the invoice information.
 5. Select **Tax information** \> **Cost**.
 
-    ![Tax information dialog box](media/gst-proj-trans-07.png)
+    ![Tax information dialog box.](media/gst-proj-trans-07.png)
 
 6. Select **OK**, and then select **Tax information** \> **Invoice**.
 
-    ![Tax information dialog box](media/gst-proj-trans-08.png)
+    ![Tax information dialog box.](media/gst-proj-trans-08.png)
 
 7. Select **OK**, and then select **Tax document**.
 
-    ![Tax document page](media/gst-proj-trans-09.png)
+    ![Tax document page.](media/gst-proj-trans-09.png)
 
 8. Close the page.
 9. Select **Post** \> **Post**.
@@ -128,15 +126,15 @@ ms.search.validFrom: 2019-7-02
 2. Select **New** to create a journal, and then select **Lines**.
 3. Create a project hour journal.
 
-    ![Journal lines for hours page](media/gst-proj-trans-10.png)
+    ![Journal lines for hours page.](media/gst-proj-trans-10.png)
 
 4. Select the **General** tab.
 
-    ![General tab of the Journal lines for hours page](media/gst-proj-trans-11.png)
+    ![General tab of the Journal lines for hours page.](media/gst-proj-trans-11.png)
 
 5. Save the record, and then select **Tax information**.
 
-    ![Tax information dialog box](media/gst-proj-trans-12.png)
+    ![Tax information dialog box.](media/gst-proj-trans-12.png)
 
 6. Select **OK**.
 7. Select **Post**.
@@ -149,15 +147,15 @@ ms.search.validFrom: 2019-7-02
 2. Select **New** to create a journal, and then select **Lines**.
 3. Create an item journal.
 
-    ![Journal lines, inventory page](media/gst-proj-trans-13.png)
+    ![Journal lines, inventory page.](media/gst-proj-trans-13.png)
 
 4. Select the **Project** tab.
 
-    ![Project tab of the Journal lines, inventory page](media/gst-proj-trans-14.png)
+    ![Project tab of the Journal lines, inventory page.](media/gst-proj-trans-14.png)
 
 5. Save the record, and then select **Tax information**.
 
-    ![Tax information dialog box](media/gst-proj-trans-15.png)
+    ![Tax information dialog box.](media/gst-proj-trans-15.png)
 
 6. Select **OK**.
 7. Select **Post**.
@@ -171,11 +169,11 @@ ms.search.validFrom: 2019-7-02
 3. Create a journal line.
 4. Select the **General** tab.
 
-    ![Journal lines page](media/gst-proj-trans-16.png)
+    ![Journal lines page.](media/gst-proj-trans-16.png)
 
 5. Select **Tax information**.
 
-    ![Tax information dialog box](media/gst-proj-trans-17.png)
+    ![Tax information dialog box.](media/gst-proj-trans-17.png)
 
 6. Select **OK**.
 7. Select **Post**.
@@ -187,12 +185,12 @@ ms.search.validFrom: 2019-7-02
 1. On the **Projects** page, on the Action Pane, on the **Manage** tab, in the **Bill** group, select **On-account transactions**.
 2. Select **New**, and enter a sales price.
 
-    ![On-account page](media/gst-proj-trans-18.png)
+    ![On-account page.](media/gst-proj-trans-18.png)
 
 3. Select **Tax information**.
 4. On the **GST** FastTab, in the **Service accounting codes** field, select the Services Accounting Code (SAC).
 
-    ![Tax information dialog box](media/gst-proj-trans-19.png)
+    ![Tax information dialog box.](media/gst-proj-trans-19.png)
 
 5. Select **OK**.
 6. Close the page.
@@ -204,13 +202,13 @@ ms.search.validFrom: 2019-7-02
 3. Select **View details**.
 4. Select **Tax information**.
 
-    ![Tax information dialog box](media/gst-proj-trans-20.png)
+    ![Tax information dialog box.](media/gst-proj-trans-20.png)
 
 5. Select **OK**.
 6. Close the page.
 7. Select **Tax document**.
 
-    ![Tax document page](media/gst-proj-trans-21.png)
+    ![Tax document page.](media/gst-proj-trans-21.png)
 
 8. Close the page.
 
@@ -221,13 +219,13 @@ ms.search.validFrom: 2019-7-02
 3. On the **Fee** tab, select the additional fee record, and then select **View details**.
 4. Select **Tax information**.
 
-    ![Tax information dialog box](media/gst-proj-trans-22.png)
+    ![Tax information dialog box.](media/gst-proj-trans-22.png)
 
 5. Select **OK**.
 6. Close the page.
 7. Select **Tax document**.
 
-    ![Tax document page](media/gst-proj-trans-23.png)
+    ![Tax document page.](media/gst-proj-trans-23.png)
 
 8. Close the page.
 9. Select **Post**.
@@ -243,7 +241,7 @@ ms.search.validFrom: 2019-7-02
 5. Select **Tax information**.
 6. On the **GST** FastTab, in the **Service accounting codes** field, select the SAC.
 
-    ![Tax information dialog box](media/gst-proj-trans-24.png)
+    ![Tax information dialog box.](media/gst-proj-trans-24.png)
 
 7. Select **OK**.
 8. Close the page.
@@ -257,7 +255,7 @@ ms.search.validFrom: 2019-7-02
 
 The following illustration shows an example of the **Tax invoice** report.
 
-![Tax invoice report](media/gst-proj-trans-25.png)
+![Tax invoice report.](media/gst-proj-trans-25.png)
 
 ## Create a service management
 
@@ -265,7 +263,7 @@ The following illustration shows an example of the **Tax invoice** report.
 2. Create a service agreement.
 3. Select **Create service orders**.
 
-    ![Create service orders dialog box](media/gst-proj-trans-26.png)
+    ![Create service orders dialog box.](media/gst-proj-trans-26.png)
 
 4. Select **OK**.
 
@@ -273,7 +271,7 @@ The following illustration shows an example of the **Tax invoice** report.
 
 1. On the **Service agreements** page, on the Action Pane, on the **Deliver** tab, in the **Service orders** group, select **View**.
 
-    ![Service orders page](media/gst-proj-trans-27.png)
+    ![Service orders page.](media/gst-proj-trans-27.png)
 
 2. Select **Edit**.
 3. On the Action Pane, on the **Service order** tab, in the **Show** group, switch to the header view.
@@ -281,7 +279,7 @@ The following illustration shows an example of the **Tax invoice** report.
 5. On the Action Pane, on the **Dispatch** tab, in the **Service stage** group, select **Next stage**.
 6. On the Action Pane, on the **Invoice** tab, in the **Post** group, select **Service order**.
 
-    ![Post service orders dialog box](media/gst-proj-trans-28.png)
+    ![Post service orders dialog box.](media/gst-proj-trans-28.png)
 
 7. Select **OK**.
 
@@ -294,3 +292,6 @@ The following illustration shows an example of the **Tax invoice** report.
 5. Select **Post**.
 6. Select **OK**.
 7. Select **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

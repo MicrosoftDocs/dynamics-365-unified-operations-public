@@ -2,25 +2,11 @@
 title: Considerations for initial synchronization
 description: This topic provides information about constraints, known issues, and guidance for the initial synchronization of dual-write.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 10/12/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom:
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: ramasri
 ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
@@ -49,7 +35,7 @@ If you first activate the map in dual-write and then start to import data, migra
 
 ### Limit of 500,000 rows per run
 
-The maximum number of rows that is allowed through initial synchronization is 500,000 per run. The limit of 500,000 rows applies to each legal table, because each legal entity runs separately. For more information, see [Integrate data into Dataverse](https://docs.microsoft.com/power-platform/admin/data-integrator). In particular, pay attention to the note that states, "To optimize performance and not overload the apps, we currently limit project executions to 500k rows per execution per project."
+The maximum number of rows that is allowed through initial synchronization is 500,000 per run. The limit of 500,000 rows applies to each legal table, because each legal entity runs separately. For more information, see [Integrate data into Dataverse](/power-platform/admin/data-integrator). In particular, pay attention to the note that states, "To optimize performance and not overload the apps, we currently limit project executions to 500k rows per execution per project."
 
 If there must be more than 500,000 rows in a run when you the initial synchronization, we recommend that you migrate data into the Finance and Operations app and Dataverse separately, and skip the initial synchronization.
 
@@ -87,6 +73,12 @@ As a workaround you can split the initial sync into these steps:
 If you're running the initial synchronization from the Finance and Operations app to Dataverse and the Finance and Operations data export takes more than five minutes, then the initial sync might time out. The time-out can happen if the data table has virtual columns with the `postLoad` method, or the export query isn't optimized (for example, if it has missing indexes).
 
 This type of synchronization is supported in Platform update 37 (PU37) and later. Therefore, you should update your Finance and Operations app to PU37 or later.
+
+### Company and Currency Exchange Tables
+
+Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables. All dual-wrtie users will need to be added to the **Dual-Write App User** security role.
+
+In order to allow non-administrator users to create rows in a dual-write enabled table, they will need to be assigned the **Dual-Write Runtime User** security role.
 
 ### Error handling capabilities
 
@@ -297,3 +289,6 @@ For information about known issues, see [Troubleshoot issues during initial sync
 - Position worker assignments (cdm\_positionworkerassignmentmaps)
 - Warehouse locations (msdyn\_inventorylocations)
 - Modes of delivery (msdyn\_shipvias)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

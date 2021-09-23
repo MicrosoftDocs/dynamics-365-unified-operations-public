@@ -3,12 +3,10 @@
 
 title: Design-time metadata for Segmented Entry controls
 description: Describes the design-time metadata properties for Segmented Entry controls.
-author: robinarh
-manager: AnnBe
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 25591
 ms.assetid: b8c5d7a4-ee2b-4ab1-b042-88472b97f035
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ghenriks
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -37,7 +35,7 @@ Describes the design-time metadata properties for Segmented Entry controls.
 
 The custom properties for the Segmented Entry control are found under the Controller group. Here is an example.
 
-[![SEC Property Sheet Example](./media/10.jpg)](./media/10.jpg)
+[![SEC Property Sheet Example.](./media/10.jpg)](./media/10.jpg)
 
 Certain properties may be non-editable based on the Controller class that is selected. This is because only certain properties are relevant for each of the various controller classes.  For more information, see [Valid properties](#valid-properties).
 
@@ -165,3 +163,6 @@ LedgerDimensionAccountAlias: No
 [Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
 [Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

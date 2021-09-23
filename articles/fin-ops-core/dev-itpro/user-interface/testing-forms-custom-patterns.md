@@ -4,11 +4,9 @@
 title: Test forms that use custom patterns
 description: This topic how to test forms using custom patterns.
 author: jasongre
-manager: AnnBe
 ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic how to test forms using custom patterns.
 
-Introduction
-------------
+## Introduction
 
 By adhering to form patterns, you gain various benefits. For example, form patterns correctly set layout properties so that forms are laid out responsively. However, when form pattern coverage is lacking (for example, there currently isn't support for many extensible controls), or when a form or container has unique requirements/uses that don't fit any pattern, developers can set the pattern to Custom. The developer then becomes responsible for ensuring a correct and responsive form layout.
 
@@ -112,3 +109,6 @@ For information about the layout properties, and for guidelines about scenarios 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

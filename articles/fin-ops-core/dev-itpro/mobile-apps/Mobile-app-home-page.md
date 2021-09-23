@@ -4,11 +4,9 @@
 title: Mobile app home page
 description: This topic describes the Finance and Operations (Dynamics 365) mobile app and provides links to resources that can help you implement it in your organization.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 272853
+ms.custom: "intro-internal"
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 # ms.search.industry: 
@@ -35,8 +33,7 @@ ms.search.validFrom: 2017-02-28
 
 This topic describes the **Finance and Operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.
 
-Overview
---------
+## Overview
 
 The mobile app enables your organization to make its business processes available on mobile devices. After your IT admin enables the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The mobile app includes the following features that can help increase productivity:
 
@@ -48,7 +45,7 @@ The mobile app enables your organization to make its business processes availabl
 ## Elements of the mobile app
 Navigation in the mobile app consists of four basic concepts: the dashboard, workspaces, pages, and actions. 
 
-[![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![Navigation concepts in the mobile app.](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. When you start the app, you go to the **dashboard**.
 2. On the dashboard, you can see a list of **workspaces** that have been published.
@@ -62,7 +59,7 @@ Navigation in the mobile app consists of four basic concepts: the dashboard, wor
 ## Implementation process
 The following illustration shows the process for implementing both mobile workspaces that are provided by Microsoft and custom mobile workspaces. 
 
-[![Mobile apps implementation process](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![Mobile apps implementation process.](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 The following table includes links to resources that can help you implement both mobile workspaces that are provided by Microsoft and custom mobile workspaces. The numbers in the first column correspond to the numbered steps in the previous illustration.
 
@@ -99,8 +96,8 @@ The following table includes links to resources that can help you implement both
 <li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Inventory on-hand mobile workspace</a></li>
 <li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Sales orders mobile workspaces</a></li>
 <li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Vendor collaboration mobile workspace</a></li>
-<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Project time entry mobile workspace</a></li>
-<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Expense management mobile workspace</a></li>
+<li><a href="/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace">Project time entry mobile workspace</a></li>
+<li><a href="/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace">Expense management mobile workspace</a></li>
 
 </ul></td>
 </tr>
@@ -157,3 +154,6 @@ The following table includes links to resources that can help you implement both
 
 ## Troubleshooting
 [Mobile platform resources](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

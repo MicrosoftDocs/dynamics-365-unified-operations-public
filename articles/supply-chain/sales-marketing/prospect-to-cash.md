@@ -4,11 +4,9 @@
 title: Prospect to cash
 description: This topic provides an overview of the Prospect to cash solution between Dynamics 365 Supply Chain Management and Dynamics 365 Sales. 
 author: ChristianRytt 
-manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -85,3 +83,6 @@ To use the Prospect to cash solution, you must install the following components:
 
 - Dynamics 365 Sales version 1612 (8.2.1.207) (DB 8.2.1.207) online or a later version
 - Prospect to cash solution for Dynamics 365 Sales, version 1.15.0.0 or a later version. The solution is available for download from AppSource. [Download Dynamics 365, Prospect to Cash](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

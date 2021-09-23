@@ -4,11 +4,9 @@
 title: Model aggregate data
 description: This tutorial will walk you through the process of modeling aggregate data.
 author: MilindaV2
-manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -77,7 +75,7 @@ If you have already imported the Fleet management tutorial project, skip to the 
 ## Model an aggregate measurement for rental charges
 Often, when a user asks for additional information, you get a request for one or more new reports. Imagine that the manager of a rental car company has called and asked for a report. The manager is interested in finding out how the rental business is performing. The manager wants a report that shows rental revenue by month. You soon find out that the manager is interested in a breakdown of rental revenues. The manager wants to know whether the rental revenue is high in cases where they have sold additional services, for example, car seats, GPS, re-fueling, as opposed to the base rental charge. As it turns out, the manager suspects that specific customer groups are driving revenue up, and this is why the manager wanted the report in the first place. The manager insists on adding Customer group to the report. Because the revenue must be considered in relation to the number of rentals, the manager doesn’t want a few large corporate rentals to skew her analysis. You both agree that the number of rentals needs to be shown along with revenue. We could represent this requirement as a set of business questions using a matrix. Rows indicate the **measures** (or numbers) and the columns indicate the **dimensions** (or slicers). An "X" in the intersection between a measure and a dimension indicates that the measure needs to be "grouped by" the dimension.
 
-|                       | Rental date | Customer group | Rental charge type |
+| Item                  | Rental date | Customer group | Rental charge type |
 |-----------------------|-------------|----------------|--------------------|
 | **Revenue**           | X           | X              | X                  |
 | **Number of rentals** | X           | X              | X                  |
@@ -90,7 +88,7 @@ In this section you will add a new measure group to an existing aggregate measur
 
 1. In **Solution Explorer**, expand the **Analytics** folder of the project, and then double-click the aggregate measurement, **FMTAggregateMeasurement**. The aggregate measurement will be launched in the designer. Notice that the existing aggregate measurement contains two measure groups related to vehicle inventory and rental details. You will create a new measure group related to rental charges.
 
-    [![Aggregate measures in the AOT](./media/fmtaggregatemeasurement.png)](./media/fmtaggregatemeasurement.png)
+    [![Aggregate measures in the AOT.](./media/fmtaggregatemeasurement.png)](./media/fmtaggregatemeasurement.png)
 
 2. In **Solution Explorer**, expand the **Views** folder of the project, and then select the **FMTRentalChargeExtendedView** view.
 3. Drag-and-drop the **FMTRentalChargeExtendedView** into the root node of the **FMTAggregateMeasurement** aggregate measurement in the designer. Notice that a new measure group is created and the values of properties have been applied as follows.
@@ -128,7 +126,7 @@ To analyze rental revenue by the different charge types, you need to be able to 
 4. In **Application Explorer**, expand the **AOT** and click **Data Model** &gt; **Tables**. Drag-and-drop the **FMTChargeType** table from **Application Explorer** onto the root node of the newly created **FMTChargeType** dimension in the designer. Notice that dimension attributes and corresponding keys have been added using the AutoReport field group of the table.
 5. Expand the **Attributes** node of the new dimension. Notice that several attributes have been created for you by default. The system has also created a dimension key based on unique indexes of the table. You can add additional fields by dragging and dropping them into the **Fields** node.
 
-    [![Attribute list for FMTChargeType](./media/fmtchargetype.png)](./media/fmtchargetype.png)
+    [![Attribute list for FMTChargeType.](./media/fmtchargetype.png)](./media/fmtchargetype.png)
 
 6. Save the new dimension.
 7. You may get a warning asking you to rename the field name Description to avoid the MDX reserved word. Even though the aggregate dimension may not be deployed to SSAS in this aggregate measurement, it's possible that this dimension may be used by an aggregate measurement deployed to SSAS in the future. To avoid potential issues in the future, rename the field name **Description** to **ChargeDescription**.
@@ -142,7 +140,7 @@ Next, create dimension references to new and existing dimensions so that revenue
 3. Drag-and-drop them into the **Dimensions** node of the **FMTRentalChargeExtendedView** measure group. Notice that dimension references have been created along with relations.
 4. Save changes to **FMTAggregateMeasurement**. Review the property sheet for the dimension relation and notice that the **Use Table relations** property is set to **Yes**. Notice that the drag-and-drop operation created relationships between the measure group dimensions **FMTRentalChargeExtendedView** and **FMTChargeType**, **FMTCustomerProfile**. Review the property sheet for the dimension relation and notice that the **Use Table relations** property is set to **Yes**.
 
-    [![Properties window for Dimension FMTChargeType](./media/fmtchargetype2.png)](./media/fmtchargetype2.png)
+    [![Properties window for Dimension FMTChargeType.](./media/fmtchargetype2.png)](./media/fmtchargetype2.png)
 
     > [!NOTE]
     > In platform update 1611 and later, **UseTableRelations** property has been removed. When a new dimension reference is created, system will default existing relationships. You can continue to provide an explicit relationship by changing the relationship field that was defaulted. Providing an explicit relationship is equal to setting **UseTableRelationship** to **No**.
@@ -152,7 +150,7 @@ Next, create dimension references to new and existing dimensions so that revenue
 7. Select **CustomerID** as the value for property **DimensionAttribute**. Select the relationship shown below. Select **Customer** for the property value **RelatedField**.
 8. Save changes to **FMTAggregateMeasurement**.
 
-    [![Properties window for DimensionRelationConstraint](./media/fmt4.png)](./media/fmt4.png)
+    [![Properties window for DimensionRelationConstraint.](./media/fmt4.png)](./media/fmt4.png)
 
 9. In this scenario, we specified a relationship because the system was unable to find one. You could also specify a different relationship if you want to override the system choice by setting **Use Table Relations property** to **No**.
 
@@ -165,7 +163,7 @@ Assume that for analysis purposes, you want to enable slicing by the start date 
     > [!NOTE]
     > If the table or the view used to model the measure group is a Company-specific table, for example it contains DATAAREAID as part of the key), a **Company** dimension relation will be created by default. In this case, the view we used is not a company specific one.
 
-    [![List of dimensions in the AOT](./media/fmt5.png)](./media/fmt5.png)
+    [![List of dimensions in the AOT.](./media/fmt5.png)](./media/fmt5.png)
 
 2. Select the **Date** dimension and specify the following properties.
 
@@ -178,7 +176,7 @@ Assume that for analysis purposes, you want to enable slicing by the start date 
 4. Select the Relationship shown. Right-click and select the property sheet. Select **StartDate** for the value of **Related field** property.
 5. The relationship you defined should look like the following screenshot.
 
-    ![BIDateDimensionsView.Date==FMTRentalChargeExtendedView.StartDate](./media/fmt6.png)
+    ![BIDateDimensionsView.Date==FMTRentalChargeExtendedView.StartDate.](./media/fmt6.png)
 
 6. Next, enable slicing of measures by the TransactionDate dimension. TransactionDate is also a date dimension, so you will add another reference to the date dimension and associate that with the corresponding field that contains the transaction date. When more than one date dimension is used as a slicer, each date dimension is known as a **Role playing date dimension**.
 7. Under the **FMTRentalChargeExtendedView** measure group, right-click the **Dimensions** node, and then click **New Dimension**. A new dimension will be added to the list of dimension references.
@@ -204,7 +202,7 @@ Assume that for analysis purposes, you want to enable slicing by the start date 
 
     The relationship you defined should look like the following screenshot.
 
-    [![Relationships for FMTRentalChargeExtendedView](./media/fmy7.png)](./media/fmy7.png)
+    [![Relationships for FMTRentalChargeExtendedView.](./media/fmy7.png)](./media/fmy7.png)
 
 12. Save the aggregate measurement.
 
@@ -215,14 +213,14 @@ Now that you have completed modeling the aggregate measurement, you can deploy t
 | Option                | Considerations |
 |-----------------------|----------------|
 | In-memory real-time   | This option will leverage the In-memory Column store indexes of SQL Server database to deploy Aggregate Measurements. This option is recommended when the Aggregate measurement is used for embedded analytics within the client where you need **real-time analytics**. For an overview of concepts on real-time analytics, see [Analytics, aggregate measurements, and KPI modeling](analytics.md). |
-| Stage in Entity Store | This option leverages Entity store, the operational data store that enables **near real-time PowerBI reporting**. If you choose this option, Aggregate measurement can be deployed to Entity store and you can schedule the data to be refreshed periodically. For an overview of this approach, refer to the blog post here: [https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) |
+| Stage in Entity Store | This option leverages Entity store, the operational data store that enables **near real-time PowerBI reporting**. If you choose this option, Aggregate measurement can be deployed to Entity store and you can schedule the data to be refreshed periodically. For an overview of this approach, refer to the blog post here: [https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update) |
 
 > [!NOTE]
 > **SSAS Cube** option is no longer supported when modeling aggregate measurements.
 
 1. Select the **FMTAggregateMeasurement** node. Right-click and select **Properties**. Select **InMemoryRealTime** as the value for the property **Usage**.
 
-    [![Usage and SSASCube selected in Properties window](./media/fmt9.png)](./media/fmt9.png)
+    [![Usage and SSASCube selected in Properties window.](./media/fmt9.png)](./media/fmt9.png)
 
 2. InMemoryRealTime aggregate models are deployed to SQL Server using Non-Clustered Column Store Index (NCCI) technology. NCCIs is an in-memory technology that enables analytical and operational workloads to be served from SQL server database. NCCI indexes can be defined on tables similar to any other index. While NCCI indexes can be defined manually, framework has the ability to analyze index requirements and add them to underlying tables where necessary.
 3. Right-click **FMAggregateMeasurement** in Solution Explorer, and then click **Add Column store indices option**. You will notice several new indexes being added by the system.
@@ -293,3 +291,6 @@ Next you will preview the KPI definition in the client.
     | Green if more than | 110        |
 
 8. Click **Save** on the bottom left to save changes. Notice that the KPI status color has changed in the KPI tile shown.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

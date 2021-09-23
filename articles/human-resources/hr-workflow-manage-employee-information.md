@@ -4,11 +4,9 @@
 title: Use workflows to manage employee information
 description: This article explains how you can use the workflow capability for Human resources to manage employee information. For example, you can associate a workflow with a position and configure an approval workflow that is started when employees change their record.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
@@ -30,6 +28,8 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Use workflows to manage employee information
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article explains how you can use the workflow capability for Human resources to manage employee information. For example, you can associate a workflow with a position and configure an approval workflow that is started when employees change their record.
 
@@ -78,3 +78,6 @@ To configure a basic workflow that is started when employees request changes to 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

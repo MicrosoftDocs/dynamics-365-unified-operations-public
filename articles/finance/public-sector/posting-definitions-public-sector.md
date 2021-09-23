@@ -4,11 +4,9 @@
 title: Posting definitions in the public sector
 description: This article provides examples of public sector posting definitions that you can use to create subledger journal lines for originating transactions that meet selected criteria. Examples include budget appropriations, pooled cash settlements, write-offs, COD settlements, advanced ledger entries, general ledger year-end close, and proprietary funds.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -611,8 +609,7 @@ In this example, Fund 601 is defined as a **Proprietary** fund class on the **Fu
 
 The posting definition looks for a match on any account part of the Expense account structure. Therefore, when 601-66100-130- is evaluated, the same ledger account is used, the amount is reversed to close the account, and the balancing generated ledger entry is created.
 
-Additional resources
---------
+## Additional resources
 
 [Accounts payable](../accounts-payable/accounts-payable.md)
 
@@ -626,3 +623,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

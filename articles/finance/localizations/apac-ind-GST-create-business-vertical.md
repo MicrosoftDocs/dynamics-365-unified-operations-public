@@ -3,17 +3,15 @@
 
 title: Create a business vertical
 description: This topic explains how to create a business vertical. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
-author: EricWang
-manager: RichardLuan
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form: 
+ms.search.form: TaxBusinessVerticalsTable_IN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
@@ -21,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -49,3 +47,6 @@ Follow these steps to create a business vertical.
 3. Enter a name, description, and entity code for the new business vertical.
 4. Select **Close**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

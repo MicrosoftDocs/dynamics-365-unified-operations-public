@@ -4,11 +4,9 @@
 title: Create service orders automatically   
 description: You can create service orders for one service agreement or for several service agreements.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -74,3 +72,6 @@ When you create service orders manually or automatically from the service agreem
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

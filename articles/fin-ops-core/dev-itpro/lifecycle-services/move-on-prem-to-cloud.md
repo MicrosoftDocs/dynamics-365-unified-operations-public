@@ -4,11 +4,9 @@
 title: Move LCS implementation projects from on-premises to the cloud
 description: This topic explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
 author: MartinWalkerDynSA
-manager: AnnBe
-ms.date: 08/26/2020
+ms.date: 02/02/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -38,7 +36,7 @@ If you don't already have cloud subscription licenses, work with your cloud serv
 
 ## Configure LCS cloud implementation project
 
-If no Finance and Operations cloud-named user subscription licenses have previously been activated on the Azure AD tenant, a new Microsoft Dynamics Lifecycle Services (LCS) cloud implementation project is automatically provisioned. Otherwise, you must open a support request to have an LCS cloud implementation project created. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant#requesting-multiple-lcs-projects-on-the-same-azure-ad-tenant).
+If no Finance and Operations cloud-named user subscription licenses have previously been activated on the Azure AD tenant, a new Microsoft Dynamics Lifecycle Services (LCS) cloud implementation project is automatically provisioned. Otherwise, you must open a support request to have an LCS cloud implementation project created. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md).
 
 After your LCS cloud implementation project has been created, you must fully configure it. As part of this configuration, you must add users, an Azure DevOps association, and subscription estimates, fill in the Asset library and Business process modeler (BPM), and more.
 
@@ -55,7 +53,7 @@ You should consider developing your updated interfaces in such a way that they c
 
 1. Deploy a tier-2 environment.
 2. Apply the same code package that is applied in your on-premises production environment (or, as appropriate, in the current build from the cloud integration development branch that was discussed in the previous section). This code package should be a single, complete deployable package that includes any independent software vendor (ISV) solutions and licenses.
-3. In SQL Server Management Studio (SSMS), run the following Transact-SQL (T-SQL) commands against the sandbox database to preserve the current Admin account and Azure AD tenant ID information in that database. Save the results.
+3. In SQL Server Management Studio (SSMS), run the following Transact-SQL (T-SQL) commands against the sandbox database to preserve the current Admin account, Azure AD tenant ID information, and Data management framework (DMF) shared working directory in that database. Save the results.
 
     ```sql
     SELECT SID,NETWORKALIAS,NETWORKDOMAIN,IDENTITYPROVIDER from USERINFO WHERE ID = 'Admin'
@@ -64,15 +62,16 @@ You should consider developing your updated interfaces in such a way that they c
     SELECT TENANTID from PROVISIONINGMESSAGETABLE
     SELECT TENANTID from B2BINVITATIONCONFIG
     SELECT TENANTID from RETAILSHAREDPARAMETER
+    SELECT SHAREDFOLDERPATH from DMFPARAMETERS
     ```
 
-4. Copy the database from on-premises to online. The export and import process that you use is the same process that is described in the [Golden configuration promotion](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-scenario-goldenconfig) database movement tutorial. However, in this case, the source database is the existing on-premises production SQL database, and you must use the sqlpackage.exe approach that is described for importing into a developer environment. If you use the LCS self-service database import option instead, some data won't be imported, as noted in the warnings about data elements that are cleaned up. The target database information that is available in the LCS environment details must be used instead of the placeholders that are shown in the following code.
+4. Copy the database from on-premises to online. The export and import process that you use is the same process that is described in the [Golden configuration promotion](../database/dbmovement-scenario-goldenconfig.md) database movement tutorial. However, in this case, the source database is the existing on-premises production SQL database, and you must use the sqlpackage.exe approach that is described for importing into a developer environment. If you use the LCS self-service database import option instead, some data won't be imported, as noted in the warnings about data elements that are cleaned up. The target database information that is available in the LCS environment details must be used instead of the placeholders that are shown in the following code.
 
     ```powershell
     SqlPackage.exe /a:import /sf:D:\BacpacToImport\my.bacpac /tsn:<Azure SQL database server> /tdn:<target database name> /tu:<axdbadmin user from LCS> /tp:<axdbadmin password from LCS> /p:CommandTimeout=1200
     ```
 
-5. Restore the Admin account and Azure AD tenant ID information. Also remove the **SF** schema and its tables, if they are present.
+5. Restore the Admin account, Azure AD tenant ID, and DMF shared directory values. Also remove the **SF** schema and its tables, if they are present.
 
     ```sql
     UPDATE USERINFO SET SID='<preserved SID>', NETWORKALIAS='<preserved NETWORKALIAS>', NETWORKDOMAIN='<preserved NETWORKDOMAIN>', IDENTITYPROVIDER='<preserved IDENTITYPROVIDER>' WHERE ID = 'Admin'
@@ -81,13 +80,14 @@ You should consider developing your updated interfaces in such a way that they c
     UPDATE PROVISIONINGMESSAGETABLE SET TENANTID='<preserved TENANTID>'
     UPDATE B2BINVITATIONCONFIG SET TENANTID='<preserved TENANTID>'
     UPDATE RETAILSHAREDPARAMETER SET TENANTID='<preserved TENANTID>'
+    UPDATE DMFPARAMETERS SET SHAREDFOLDERPATH='<preserved SHAREDFOLDERPATH>'
     DROP TABLE IF EXISTS SYNCLOG
     DROP TABLE IF EXISTS SYNCLOCK
     DROP SCHEMA IF EXISTS SF
     ```
 
 6. Reimport all other users, and assign the appropriate security roles.
-7. Direct printing in a cloud environment is done via the Document Routing Agent (DRA). Set up sandbox DRAs as described in [Install the Document Routing Agent to enable network printing](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent), so that regression testing can include your printing scenarios.
+7. Direct printing in a cloud environment is done via the Document Routing Agent (DRA). Set up sandbox DRAs as described in [Install the Document Routing Agent to enable network printing](../analytics/install-document-routing-agent.md), so that regression testing can include your printing scenarios.
 8. Copy document handling attachments to the cloud. Document handling attachments aren't stored in the database. If they must be preserved, you must move them separately. For instructions, see the [Migrate document handling attachments to your sandbox](#migrate-document-handling-attachments-to-your-sandbox) section later in this topic.
 9. Run a complete regression test cycle. This cycle should include testing of integrations.
 10. Resolve any issues that are discovered during testing. For each issue, document and keep track of the correcting adjustments that you make in the sandbox, and repeat them in the on-premises source. If any change must not be made in the on-premises environment, because it's incompatible with the correct functioning of that environment, we recommend that you create a DMF data package for it instead of manually applying it for each iteration of the migration process.
@@ -95,7 +95,7 @@ You should consider developing your updated interfaces in such a way that they c
 
 ## Repeat the migration to production
 
-1. Deploy the new production environment. Note that the regular prerequisites apply. For example, you must have an active subscription estimator, complete the LCS methodology phases before the operate phase, and complete the FastTrack readiness review. For more information, see [Prepare for go-live](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live).
+1. Deploy the new production environment. Note that the regular prerequisites apply. For example, you must have an active subscription estimator, complete the LCS methodology phases before the operate phase, and complete the FastTrack readiness review. For more information, see [Prepare for go-live](../../fin-ops/imp-lifecycle/prepare-go-live.md).
 2. Apply the final version of the software deployable package to production.
 3. Stop making data changes to the on-premises production environment.
 4. Repeat steps 3 through 6 in the [Do a trial migration and resolve issues](#do-a-trial-migration-and-resolve-issues) section to copy the final/up-to-date on-premises production database to the cloud sandbox.
@@ -188,3 +188,6 @@ Document handling attachments for Finance + Operations (on-premises) environment
     ```
 
 5. Test a sample of the document handling attachments to make sure that they can now be accessed in the sandbox environment.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

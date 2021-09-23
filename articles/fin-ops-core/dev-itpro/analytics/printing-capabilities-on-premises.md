@@ -3,12 +3,10 @@
 
 title: Document generation, publishing, and printing in on-premises deployments
 description: This topic describes the capabilities for generating, publishing, and printing documents in on-premises deployments.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: Platform update 8 
 ---
@@ -46,7 +44,7 @@ The following options are available for document publishing:
 - **File** – Produce a PDF file that is downloaded directly to the browser for local printing.
 - **Print** – Send documents directly to network printers from all supported platforms. These platforms include mobile devices.
 
-![Document publishing services](media/document-publishing-services.png)
+![Document publishing services.](media/document-publishing-services.png)
 
 For a high-level summary of the options for information access that are available in the cloud-hosted solution, see [Document printing overview](print-documents.md).
 
@@ -55,7 +53,7 @@ Unlike the cloud-hosted service, the on-premises publishing service produces doc
 
 The following illustration shows the components that are involved in document printing.
 
-![Document printing](media/Cloud-vs-on-premises.png)
+![Document printing.](media/Cloud-vs-on-premises.png)
 
 For information about how to use extensions to manage availability of the embedded drill-through links in application reports, see the Appendix.
 
@@ -64,7 +62,7 @@ Administrators can use built-in administrative pages to manage access to network
 
 The following illustration shows the page that is used to manage network printers.
 
-![Manage network printers page](media/manage-network-printers.png)
+![Manage network printers page.](media/manage-network-printers.png)
 
 ## Appendix
 
@@ -85,3 +83,6 @@ class Controller extends SrsReportRunController
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

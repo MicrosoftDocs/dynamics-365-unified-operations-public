@@ -4,11 +4,9 @@
 title: Create and associate a device
 description: This procedure walks through how to create a new device and associate it to a register. 
 author: jashanno
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -42,3 +40,6 @@ This procedure walks through how to create a new device and associate it to a re
 9. In the list, click the link in the selected row.
 10. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

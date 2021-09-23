@@ -4,11 +4,9 @@
 title: Depreciation methods (Russia)
 description: This topic describes the various fixed asset depreciation methods for Russia.
 author: anasyash
-manager: AnnBe
 ms.date: 09/20/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -144,3 +142,6 @@ You can create a tax non-linear group depreciation method on the **Depreciation 
 
 - [Set up depreciation (Russia)](rus-depreciation-setup.md)
 - [Calculate depreciation for Russia](rus-depreciation-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

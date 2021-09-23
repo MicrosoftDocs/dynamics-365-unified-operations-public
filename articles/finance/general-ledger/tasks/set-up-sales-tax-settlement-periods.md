@@ -4,11 +4,9 @@
 title: Set up sales tax settlement periods
 description: This topic explains how to set up sales tax settlement periods in Dynamics 365 Finance.
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/05/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -42,9 +40,7 @@ This task uses the USMF demo company.
 7. In the **Terms of payment** field, select the desired record in the drop-down menu. The related Sales tax authority can be set up as a vendor and the Sales tax settlement will create an open vendor invoice. The Terms of payment defines the Due date for the open vendor invoice.  
 8. Select a type for the settlement period intervals.
 9. Enter the number of Period interval units per period. For example, a quarter has 3 months.
-10. Select or clear the **Use batch processing for sales tax settlement** check box. The settlement process for the settlement period can be processed as batch job in the background. This is recommended for a large number of tax transactions within a period interval.  
-    > [!NOTE]
-    > Currently this is not supported in Spain, Japan, and the Netherlands.
+10. Select or clear the **Use batch processing for sales tax settlement** check box. The settlement process for the settlement period can be processed as batch job in the background. This is recommended for a large number of tax transactions within a period interval.
 11. Select or clear the **Prevent generating offset tax transactions** check box. By default, the system generates offset tax transactions during the settlement process, which cause can performance issue if there are a large number of tax transactions within a period interval. Select this check box to prevent generating offset tax transactions.
 12. Expand the **Period intervals** tab.
 13. Select **Add**.
@@ -53,3 +49,6 @@ This task uses the USMF demo company.
 16. Select **New period interval**. Once the first period interval has been entered, new periods can be created automatically. You can come back and add new period intervals as required.  
 17. Close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

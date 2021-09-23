@@ -4,11 +4,9 @@
 title: Make Entity store available as a Data Lake
 description: This topic explains how to make Entity store available as a Microsoft Azure Data Lake.
 author: MilindaV2
-manager: AnnBe
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -58,7 +56,7 @@ You need to enable automated Entity store refresh before enabling Data Lake inte
 
 You will now see the new experience.
 
-![New UI experience](./media/entity-store-data-lake-03.png)
+![New UI experience.](./media/entity-store-data-lake-03.png)
 
 After the new experience is turned on, you can define the refresh for each aggregate measurement. The following refresh options are available:
 
@@ -139,7 +137,7 @@ The following sections describe each task in more detail.
 4. In the **Key permissions** field, select **Get** and **List** permissions.
 5. In the **Secret permissions** field, select **Get** and **List** permissions.
 
-    ![Get and List permissions](./media/entity-store-data-lake-05.png)
+    ![Get and List permissions.](./media/entity-store-data-lake-05.png)
 
 6. Select **Save**.
 
@@ -153,7 +151,7 @@ The following sections describe each task in more detail.
     - **DNS name:** Enter the DNS name of Key Vault.
     - **Secret name:** Enter the name of the secret that you added to Key Vault together with connection string information.
 
-    ![Data connections tab on the System parameters page](./media/entity-store-data-lake-04.png)
+    ![Data connections tab on the System parameters page.](./media/entity-store-data-lake-04.png)
 
 3. Select the **Test Azure Key Vault** and **Test Azure Storage** links to validate that system can access the configuration information that you provided.
 4. Select the **Enable data connection** check box.
@@ -161,3 +159,6 @@ The following sections describe each task in more detail.
 Entity store data should now be populated in the storage location that you provided, not in the relational Entity store database.
 
 The aggregate measurements and refresh options that you select in the Entity store UI should now apply to data that is copied to Data Lake.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Analytics, aggregate measurements, and KPI modeling
 description: This topic discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 author: MilindaV2
-manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -79,3 +77,6 @@ Aggregate measurements are deployed to Microsoft SQL Server non-clustered column
 
 ## KPI modeling and customization
 In AX 2012 and earlier versions, KPIs and business indicators had to be modeled by using native SQL Server development tools. Although users could pin a KPI or business indicator to a Role Center by using the **Business Overview** Web Part, they could not modify a KPI definition, such as the goal. Users can use a rich client form to modify a KPI definition that was built and shipped by a developer. Users can also define new KPIs by using the aggregate data that is contained in aggregate measurements. A developer can model a KPI definition in Microsoft Visual Studio and ship it to a customer, either as a project or together with an independent software vendor (ISV) solution. After a KPI is defined, users can customize it at run time.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

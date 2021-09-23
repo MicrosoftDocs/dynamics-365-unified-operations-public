@@ -4,11 +4,9 @@
 title: Configure account structures
 description: This topic provides information about account structures and financial dimensions.
 author: aprilolson
-manager: AnnBe
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -53,9 +51,9 @@ To illustrate a best practice for setting up an account structure, let's assume 
 
 **Profit and loss account structure**
 
-|Main account          | Business unit    |Department          | Cost center    |
-|----------------------|-----------|----------------------|-----------|
-|400000..999999 | *;” “|*;” “|*;” “|*;” “|
+|Main account          | Business unit    |Department          | Cost center    | &nbsp; |
+|----------------------|------------------|--------------------|-----------|---|
+|400000..999999 | \*;” “| \*;” “| \*;” “| \*;” “|
 
 **Advanced rule for adding a Customer**
 
@@ -72,7 +70,7 @@ The **Segments** and **Allowed values details** section provides a grid like exp
 
 The **Allowed value details** section guides you through creating criteria using **Operators** such as begins with, is between, includes, and many others.
 
-[![Allow values](./media/account.png)](./media/account.png) 
+[![Allow values.](./media/account.png)](./media/account.png) 
 
 Allowed values will default onto a journal or accounting distribution entry page when there are no other possible values to select according to the account structure setup.
 
@@ -111,3 +109,6 @@ When setting up your account structures there are some best practices you can fo
 When you are satifisfied with your new setup or a change to an account structure, you must activate it. If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure. Posted transactions are not impacted with account structure changes.
 
 For more information, see [Plan your chart of accounts](plan-chart-of-accounts.md), [Financial dimensions](financial-dimensions.md) and [Enter account and dimension combinations (segmented entry control)](enter-account-dimension-combinations-segmented-entry-control.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

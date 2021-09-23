@@ -4,11 +4,9 @@
 title: Customer credit groups
 description: This topic provides information about customer credit groups.
 author: mikefalkner
-manager: AnnBe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,3 +44,6 @@ You can set up customer credit groups on the **Customer credit groups** page (**
 After you've finished setting up a customer credit group, you can add customers to it by specifying their legal entity and customer account ID. When you add a new customer to a customer credit group, the system searches for the same customer account across all legal entities and prompts you to add it to the customer credit group.
 
 Use the **Aged balances** menu to view the details of the aging balance for all invoice customers in a customer credit group. The **Aging balance** page shows a summary of the aged balances for the invoice customer accounts.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Asset types
 description: This topic explains how to create asset types in Asset Management. It also describes the elements that are related to asset types.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
@@ -52,9 +50,9 @@ First, you set up the required asset types. Next, you create the asset models th
 7. Select **Save**.
 8. On the **Maintenance job types** FastTab, select the maintenance job types that should be related to the asset type:
 
-    - To select a maintenance job type, select it in the **Maintenance job types remaining** field, and then select the right arrow button ![Right arrow button](media/29-setup-for-objects.png) to move it to the **Maintenance job types selected** section.
-    - To select all available maintenance job types, select the ![Forward all arrow](media/30-setup-for-objects.png) button. All maintenance job types are transferred from the **Maintenance job types remaining** field to the **Maintenance job types selected** field.
-    - To cancel the selection of a maintenance job type, select it in the **Maintenance job types selected** field, and then select the left arrow button ![Left arrow button](media/31-setup-for-objects.png) to move it to the **Maintenance job types remaining** field.
+    - To select a maintenance job type, select it in the **Maintenance job types remaining** field, and then select the right arrow button ![Right arrow button.](media/29-setup-for-objects.png) to move it to the **Maintenance job types selected** section.
+    - To select all available maintenance job types, select the ![Forward all arrow.](media/30-setup-for-objects.png) button. All maintenance job types are transferred from the **Maintenance job types remaining** field to the **Maintenance job types selected** field.
+    - To cancel the selection of a maintenance job type, select it in the **Maintenance job types selected** field, and then select the left arrow button ![Left arrow button.](media/31-setup-for-objects.png) to move it to the **Maintenance job types remaining** field.
 
 9. You can also select the counters that should be related to the asset type. On the **Counters** FastTab, make your selections by using the methods that are described for maintenance job types in step 8. For more information about the setup of counters, see [Counters](counters.md).
 10. You can also select the attribute types that should be related to the asset type. On the **Attribute types** FastTab, make your selections by using the methods that are described for maintenance job types in step 8. Then, to create the preferred sequence of attribute types, select an attribute type in the **Attribute types selected** field, and use the up arrow and down arrow buttons to move it. The sequence of attribute types will be shown on assets that use this asset type. For more information about asset attributes, see [Maintenance attribute types](../setup-for-functional-locations/specification-types.md).
@@ -101,3 +99,6 @@ On the **Spare parts** page, you can also create new spare parts for existing co
 
 To see whether the spare part on the selected line is used anywhere else in Asset Management (for example, in relation to assets and work orders), select **Item where used** to open **Item where used** page. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Set up garnishments and tax levies
-description: This topic explains how to set up garnishments and tax levies. Garnishments and tax levies are created and managed by using the benefit framework. This framework helps guarantee that the effect that garnishments and tax levies have on payroll is handled correctly.
+description: This topic explains how to set up garnishments and tax levies.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -255,3 +253,6 @@ The next step is to enroll workers in garnishments and tax levies. For more info
 [Set up benefits](noam-usa-benefit-set-up-tasks.md)
 
 [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

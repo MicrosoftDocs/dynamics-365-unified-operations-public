@@ -4,11 +4,9 @@
 title: Enter applicant and application data manually
 description: This procedure shows how to manually maintain information about applicants and their application. 
 author: andreabichsel
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -64,3 +62,6 @@ This procedure shows how to manually maintain information about applicants and t
 6. Click Save.
     * After saving the application, you can attach documents to it, including the applicant's experience, awards, and cover letter.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,13 +2,11 @@
 # required metadata
 
 title: Cloud operations and servicing
-description: The Finance and Operations apps are managed services. This means that Microsoft is responsible for managing and operating the production environments. Microsoft’s Dynamics Service Engineering team is available 24 hours a day, 7 days a week, and 365 days a year to operate and manage our customers' production systems. 
+description: This topic describes cloud operations and servicing.
 author: laneswenka
-manager: AnnBe
 ms.date: 10/03/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -33,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 For customers, partners, and Microsoft to be successful in this endeavor, we must ensure that most of the actions are self-serve with the Microsoft Dynamics Service Engineering (DSE) team managing by exception. To attain this self-serve mode, the Microsoft Product team continues to add more automation around the various features needed to operate an environment.
+
+The Finance and Operations apps are managed services. This means that Microsoft is responsible for managing and operating the production environments. Microsoft’s Dynamics Service Engineering team is available 24 hours a day, 7 days a week, and 365 days a year to operate and manage our customers' production systems.
 
 ## Monitor and troubleshoot the health of your environment
 A key tenant for a successful onboarding experience to the cloud service is knowing the health of your environments at all times and being able to troubleshoot health issues when necessary. Lifecycle Services (LCS), which is the admin center for Finance and Operations, contains a collection of monitoring and diagnostics tools which can help ensure that you have an accurate view of the environments that you manage. For more information, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](monitoring-diagnostics.md).
@@ -88,3 +88,6 @@ These are the options for managing databases, including the ability to copy a da
 When the status of the package application is changed, LCS sends a notification to all of the users in a project. Any additional stakeholders who should be notified must be specified in the notification list.
 1. To add additional stakeholders, in LCS, in the Environment details view, click Notification list.
 2. Add the email address of each user who must be notified, and then click Save.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

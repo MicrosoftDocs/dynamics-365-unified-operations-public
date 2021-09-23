@@ -4,11 +4,9 @@
 title: FR-00002 Customer and vendor account statements
 description: You can print accounts statements for customers and vendors that display information for a time period that you select. 
 author: EvgenyPopovMBS
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -52,3 +50,6 @@ This functionality is available for legal entities whose primary address is in F
 4. In the Assessment date field, enter a date.
 5. Click OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

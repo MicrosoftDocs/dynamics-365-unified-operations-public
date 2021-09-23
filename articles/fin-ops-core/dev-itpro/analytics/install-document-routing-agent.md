@@ -3,12 +3,10 @@
 
 title: Install the Document Routing Agent to enable network printing
 description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
-author: TJVass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 98663
 ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -60,7 +58,7 @@ Applications use the Document Routing Agent to manage the spooling of documents 
 1. Open the **Manage network printers** page (**Organization administration** &gt; **Setup** &gt; **Network printers**).
 2. On the **Options** tab, in the **Application** group, click **Download document routing agent installer**.
 
-    [![download-document-routing-agent-installer](./media/download-document-routing-agent-installer.png)](./media/download-document-routing-agent-installer.png)
+    [![download-document-routing-agent-installer.](./media/download-document-routing-agent-installer.png)](./media/download-document-routing-agent-installer.png)
 
 3. Run the downloaded file to begin the installation process.
 4. Complete the setup process.
@@ -74,7 +72,7 @@ Use the following procedure to configure the client application so that it can c
 2. On your desktop, run the Document Routing Agent.
 3. On the toolbar, click **Settings**.
 
-    [![the-document-routing-agent-window](./media/the-document-routing-agent-window.png)](./media/the-document-routing-agent-window.png)
+    [![the-document-routing-agent-window.](./media/the-document-routing-agent-window.png)](./media/the-document-routing-agent-window.png)
 
 4. Add the following settings:
 
@@ -96,7 +94,7 @@ Before you complete this procedure, make sure that you've installed all the netw
 1. On the toolbar, click **Printers**.
 2. Select the printers to make available in the applications.
 
-    [![printers-to-add](./media/printers-to-add.png)](./media/printers-to-add.png)
+    [![printers-to-add.](./media/printers-to-add.png)](./media/printers-to-add.png)
 
 3. Specify a default name for the printer.
 4. Click **OK**.
@@ -108,7 +106,7 @@ Use client pages to manage access to the network printers that have been registe
 
 1. Open the **Manage network printers** page (**Organization administration** &gt; **Setup** &gt; **Network printers**).
 
-    [![manage-network-printers-page](./media/manage-network-printers-page.png)](./media/manage-network-printers-page.png)
+    [![manage-network-printers-page.](./media/manage-network-printers-page.png)](./media/manage-network-printers-page.png)
 
 2. Edit the existing entries that are mapped to each network printer. As part of your changes, edit the connection path.
 3. To include a printer as an option in the **Print Destinations** field, set the **Active** field to **Yes**.
@@ -146,3 +144,6 @@ Yes. To access the agent installation links, the user must be part of the **Docu
 ### How many network printers can the Document Routing Agent support?
 
 The number of supported network printers depends on the number of legal entities and the number of network printers deployed. If you have fifty printers and one legal entity, a single Document Routing Agent can handle the load (although you'd want more than one to ensure high availability). If you have a large number of printers and legal entities, we recommend that you do some performance testing to determine the number of Document Routing Agents that you'll need.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

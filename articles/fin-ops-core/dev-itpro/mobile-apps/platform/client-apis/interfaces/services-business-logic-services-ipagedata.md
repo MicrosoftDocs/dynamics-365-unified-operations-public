@@ -1,30 +1,12 @@
 ---
-# required metadata
-
 title: PageData type
 description: Represents the data that is loaded into a page.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
-
 ---
 
 # PageData type
@@ -85,3 +67,6 @@ may not have a simple value and thus cannot be accessed via this API.
 
 #### Returns any
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

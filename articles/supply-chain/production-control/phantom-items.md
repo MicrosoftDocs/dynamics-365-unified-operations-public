@@ -4,11 +4,9 @@
 title: Phantom items
 description: This topic describes, in detail, how the Phantom line type can be used for the lines of a bill of materials (BOM) and a formula in Dynamics 365 Supply Chain Management.
 author: ShylaThompson
-manager: tfehr
 ms.date: 06/15/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,12 +31,12 @@ ms.dyn365.ops.version: 8.1
 This topic describes, in detail, how the Phantom line type can be used for the lines of a bill of materials (BOM) and a formula. 
 In the following illustration, (a) is the BOM for product H and parts F and G, and (b) is the route sheet for products H and part F.
 
-![Product H and part F](media/product-H-part-F.png)
+![Product H and part F.](media/product-H-part-F.png)
 
 
 This illustration shows an example of a BOM structure in two levels. Finished product H represents a product for a machine assembly. The machine assembly consists of two parts, an electrical unit (F) that has two materials (A and B) and a group of packaging materials (G) that also has two materials (C and D). Another material (E) is used during the general assembly of the machine.
 
-![Product H and part F](media/product-H-part-B.png)
+![Product H and part F.](media/product-H-part-B.png)
 
 The preceding illustration represents the Engineering BOM for product H. This structure provides a good overview of the parts and components of the overall machine assembly. However, although product designers might prefer to see the BOM represented in this way, this structure might not correctly represent the way that the machine is built on the shop floor. 
 
@@ -59,20 +57,23 @@ The transition between the Engineering BOM and the Manufacturing BOM is enabled 
 ## Multilevel phantom BOM structures
 The Phantom line type can be used in multilevel BOM structures, as shown in the following illustration. In this illustration, (a) is the BOM for product G, and (b) is the route sheet for parts E and F and product G. 
 
-![Product G and part F with route sheets](media/product-G-route-sheet-G.png)
+![Product G and part F with route sheets.](media/product-G-route-sheet-G.png)
 
 
 The following illustration shows the resulting Manufacturing BOM and route sheet if the BOM lines for parts E and F are configured so that the line type is Phantom. In this illustration, (a) is the BOM for product G, and (b) is the route sheet for product G.
 
-![Product G](media/product-G.png)
+![Product G.](media/product-G.png)
 
 
 ## Phantom and route network
 Phantom BOMs can also be used for a BOM that has a route network. In a route network, one or more operations run in parallel. The following illustration shows an example of a route network that is used in a multilevel BOM. In this illustration, (a) is the BOM for product G and part F, and (b) is the route sheet for product G and part F, which has a route network.
 
-![Product G and part F](media/product-G-part-F.png)
+![Product G and part F.](media/product-G-part-F.png)
 
 
 In the following illustration, (a) is the BOM for product G and part F, and (b) is the route sheet for product G and part F.
 
-![Product G and part F with route sheets](media/product-G-part-F-with-route-sheet.png)
+![Product G and part F with route sheets.](media/product-G-part-F-with-route-sheet.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Set up dispositions codes
 description: This procedure focuses on the setup of a disposition code that can be used on a mobile device for the return order receiving process. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 11/11/2016
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -42,3 +40,6 @@ This procedure focuses on the setup of a disposition code that can be used on a 
 6. In the Return disposition code field, type a value.
     * The return disposition code determines the remainder of the return order process for the items registered. In this example, the customer should receive a credit note. Add a returns disposition code that contains an action Credit.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

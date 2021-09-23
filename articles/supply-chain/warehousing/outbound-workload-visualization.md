@@ -4,11 +4,9 @@
 title: Outbound workload visualization
 description: This topic provides information about outbound workload visualization. This functionality lets warehouse managers and supervisors create custom workload charts that can be used to monitor the progress of current work and the amount of it that remains. Warehouse managers can create multiple views and set up automatic refresh as they require.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -67,7 +65,7 @@ To set up an outbound workload visualization, follow these steps.
     - **Days to include** – Enter the number of days in the past that the chart should be generated for.
     - **Work order type** – Select the outbound work order types to filter on.
 
-    ![Configure filters page](media/work-viz-filters-1.png "Configure filters page")
+    ![Configure filters page.](media/work-viz-filters-1.png "Configure filters page")
 
 1. Close the **Configure filters** page to return to the **Outbound workload visualizations** page.
 
@@ -77,11 +75,11 @@ To set up an outbound workload visualization, follow these steps.
     - **Last refreshed** – This field shows the date and time when the information in the chart was last updated.
     - **Estimated/actual time** – If labor standards are set up in your system, set this option to *Yes* to show accumulated estimated picking times at the top of each column in the chart. If you aren't using labor standards, this option is unavailable.
 
-    ![Example visualization](media/work-viz-chart.png "Example visualization")
+    ![Example visualization.](media/work-viz-chart.png "Example visualization")
 
 1. Select any bar in the chart to view the associated work line details.
 
-    ![Work line details](media/work-viz-work-details.png "Work line details")
+    ![Work line details.](media/work-viz-work-details.png "Work line details")
 
 ## Example: Outbound workload visualization for zones
 
@@ -99,6 +97,9 @@ For this example, you want to set up a visualization that shows work lines for e
 
 The following illustration shows an example of the resulting chart.
 
-![Zone vs. work status visualization](media/work-viz-chart.png "Zone vs. work status visualization")
+![Zone vs. work status visualization.](media/work-viz-chart.png "Zone vs. work status visualization")
 
 This chart shows two zones that are named **FLOOR** and **BULK**, plus a zone that is named **Blank**. The **Blank** zone represents all work lines that aren't members of any zones. The chart always shows all unrelated filtered data as **Blank**, to provide as much visibility as possible. In the **FLOOR** zone, the chart shows three closed lines and four open lines. In the **BULK** zone, the chart shows four closed lines, one open line, and 24 canceled lines. Finally, the chart shows eight closed lines that aren't part of any zone and are therefore listed as **Blank**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

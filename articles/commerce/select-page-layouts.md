@@ -4,11 +4,9 @@
 title: Select page layouts
 description: This topic explains how to create and select page layouts in Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -83,3 +81,8 @@ To select a different layout for an existing page, follow these steps.
 
 [Verify page content accessibility](verify-accessibility.md)
 
+[Create dynamic e-commerce pages based on URL parameters](create-dynamic-pages.md)
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

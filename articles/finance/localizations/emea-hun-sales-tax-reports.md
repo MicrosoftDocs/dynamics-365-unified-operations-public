@@ -4,11 +4,9 @@
 title: Sales tax reports for Hungary
 description: This topic provides information about the Sales tax declaration information and Itemized VAT statement reports
 author: anasyash
-manager: tfehr
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -69,7 +67,7 @@ This report also includes the same information for each partner separately, and 
 1. Go to **Tax** \> **Periodic tasks** \> **VAT reporting**.
 2. In the upper part of the **VAT reporting** page, set the **Date** and **Settlement period** fields. The grid shows settlement periods that are available for VAT reporting.
 
-    ![VAT reporting page](media/HU-sales-tax-reports-1.png)
+    ![VAT reporting page.](media/HU-sales-tax-reports-1.png)
 
 3. Select the line for the required settlement period, and then select **Create report**.
 4. In the **Sales tax declaration information** dialog box, set the following fields.
@@ -218,3 +216,6 @@ The **Itemized VAT statement** report contains the following data:
 
 In this table, line 102 includes the sales order, line 103 includes the credit note for the sales order, and line 105 includes two vendor invoices.
 Other sections contain the same information for each partner separately, and the list of invoices for each item.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

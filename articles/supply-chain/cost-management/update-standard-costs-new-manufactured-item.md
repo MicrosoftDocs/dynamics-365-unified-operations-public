@@ -4,11 +4,9 @@
 title: Update standard costs for a new manufactured item
 description: This article provides guidance for updating standard costs for a new manufactured item. 
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -56,3 +54,6 @@ To add new manufacturing items throughout the frozen period, follow these steps.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

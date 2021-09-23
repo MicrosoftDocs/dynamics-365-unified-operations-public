@@ -4,11 +4,9 @@
 title: Accounting distributions
 description: This topic provides information about accounting distributions and describes the options that are available for processing them.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,3 +59,6 @@ The generic accounting distribution capabilities provide the following options f
 In version 10.0.13, a feature has been added that validates the accounting distribution table to ensure that new fields are properly set up. This feature is called **Enable additional validation of data for documents using the source document accounting framework**. To use the feature, you must enable it using the **Feature management** workspace. To enable the feature, search for the feature name in the **Search** field on the **Feature management** page, and then select **Enable now**.
 
 For more information, see [Accounting distributions and subledger journal entries for vendor invoices](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

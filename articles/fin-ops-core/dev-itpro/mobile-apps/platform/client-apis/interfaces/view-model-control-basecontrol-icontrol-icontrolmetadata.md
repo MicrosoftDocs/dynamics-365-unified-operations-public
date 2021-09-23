@@ -1,30 +1,12 @@
 ---
-# required metadata
-
 title: ControlMetadata type
 description: Interface for the metadata of a control. Overriding control metadata can modify a controls&#x27; look and behavior.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
-
 ---
 
 # ControlMetadata type
@@ -145,3 +127,6 @@ Type: [ControlType](../modules/view-model-control-basecontrol-icontrol.md#contro
 String indicating the control type.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

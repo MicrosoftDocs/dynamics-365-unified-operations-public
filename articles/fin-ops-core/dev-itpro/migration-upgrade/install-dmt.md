@@ -4,11 +4,9 @@
 title: AX 2009 migration - Install the Data migration tool 
 description: This topic explains how to set up the Data migration tool (DMT) so that you can migrate your data from Microsoft Dynamics AX 2009.
 author: kfend
-manager: AnnBe
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -44,7 +42,7 @@ This topic explains how to set up the Data migration tool (DMT) so that you can 
 - SQL Server authentication must support both SQL authentication and Microsoft Windows authentication.
 - Microsoft Access database engines that follows the version guidance in the following table.
 
-    |                                   | SQL Server 2008                 | SQL Server 2012 and later |
+    | Office version                    | SQL Server 2008                 | SQL Server 2012 and later |
     |-----------------------------------|---------------------------------|---------------------------|
     | **No Microsoft Office on the VM** | Access engine 32-bit            | Access engine 64-bit      |
     | **Microsoft Office 32-bit**       | Access engine 32-bit            | Access engine 64-bit      |
@@ -158,3 +156,6 @@ If you receive an error message that states, "DIXF service is unavailable," comp
 5. Select all three check boxes to apply all the rules, and then select **Next**.
 6. Enter the name of the rule, and then select **Finish**.
 7. Repeat these steps for outbound rules.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

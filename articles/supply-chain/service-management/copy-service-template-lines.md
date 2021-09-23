@@ -4,11 +4,9 @@
 title: Copy service templates lines 
 description: Template information can be copied to either a service agreement or a service order.
 author: ShylaThompson
-manager: tfehr
 ms.date: 10/11/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -64,3 +62,6 @@ The service template lines are now copied to the new service order, together wit
 [Service templates](service-template.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Cost control workspace
 description: This topic provides information about the Cost control workspace. This workspace is a central point where managers who are responsible for controlling a cost object or a set of cost objects within a dimension or across dimensions can access reports. 
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -122,7 +120,7 @@ The **Cost control** workspace is designed as a web report. Therefore, all manag
 
 The list of reports that are available for users, such as managers, is controlled by the setting of the **Published** option on the **Cost control workspace configurations** page.
 
-![A report that users can see in the Cost control workspace](./media/report-cost-control.png)
+![A report that users can see in the Cost control workspace.](./media/report-cost-control.png)
 
 A manager can select the fiscal calendar period to view. The session date is used to determine the default current period.
 
@@ -142,11 +140,11 @@ A grid shows each cost element that is associated with the cost element dimensio
 
 Two charts show a summary of actual versus budget and budget variance by period.
 
-![Charts that show a summary of actual versus budget and budget variance by period](./media/cost-element-details-operations.png)
+![Charts that show a summary of actual versus budget and budget variance by period.](./media/cost-element-details-operations.png)
 
 Users can click **Cost entries** to drill down into the entry details as required.
 
-![Cost entries](./media/cost-entries.png)
+![Cost entries.](./media/cost-entries.png)
 
 For example, rent is an expenditure that is distributed to cost centers. A user who wants to understand the rent cost that their cost center must carry can drill down to see how rent has been calculated.
 
@@ -154,10 +152,13 @@ If users click **Allocation base** on the **Cost entries** page, a dialog box ap
 
 In the following example, the allocation base is of the **Formula allocation base** type, and the formula is shown. The factors that define the formula are listed. Additionally, a grid shows the calculation that is done per cost object.
 
-![Calculations per cost object](./media/cost-entries-allocation-base.png)
+![Calculations per cost object.](./media/cost-entries-allocation-base.png)
 
 Additional resources 
 
 [Define access rights for cost object controllers](access-rights-cost-object-controller.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

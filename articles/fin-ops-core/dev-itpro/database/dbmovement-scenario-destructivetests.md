@@ -4,11 +4,9 @@
 title: Destructive testing 
 description: This topic explains a destructive testing scenario for Finance and Operations.
 author: LaneSwenka
-manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -68,3 +66,6 @@ If you didn't start with a database backup (.bacpac) file but instead have the U
 The advantage of using point-in-time-restore is that you can avoid dealing with database backup (.bacpac) files and can reduce the time between destructive testing sessions.
 
 The disadvantage is that, because of current limitations of point-in-time restore, you must record a new restore date and time in your time zone after the restore is completed. Because point-in-time restore always creates a new database, the original date and time that were used won't be available as a restore point on the new database.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

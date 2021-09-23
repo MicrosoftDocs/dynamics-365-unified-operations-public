@@ -4,11 +4,9 @@
 title: Cash management improvements
 description: This topic describes the cash management improvements in POS for Dynamics 365 Commerce.
 author: anpurush
-manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -66,3 +64,6 @@ In Retail version 10.0.3 and later, the following capabilities that are related 
 - During reconciliation, if the selected transaction doesn't balance, the user must enter a description of the reason for the unbalanced reconciliation. Users can select a single transaction and reconcile it with the relevant reason description as they require.
 - Users can continue to reconcile and unreconcile transactions until the shift is closed. After a shift is closed, the transactions can't be unreconciled.
 - When a user chooses to close a shift, Commerce validates that there are no unreconciled cash management transactions in the shift. Users can't close a shift if there are unreconciled transactions.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

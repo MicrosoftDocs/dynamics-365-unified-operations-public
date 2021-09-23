@@ -4,11 +4,9 @@
 title: Retail statements
 description: This topic describes how statements are created and posted.
 author: ashishmsft
-manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -37,7 +35,7 @@ In Dynamics 365 Commerce, the statement posting process is used to account for t
 
 The following illustration shows the statement posting process. In this process, transactions that are recorded in the POS are transmitted to the client by using the Commerce scheduler. After the client receives the transactions, you can create, calculate, and post the transaction statement for the store.
 
-[![Statement posting process](./media/retail-statements.png)](./media/retail-statements.png)
+[![Statement posting process.](./media/retail-statements.png)](./media/retail-statements.png)
 
 ## Creating and posting statements
 
@@ -91,3 +89,6 @@ When you post a statement, sales orders and invoices are created for the sales i
 - Sales for which a customer was added to the transaction in POS generate separate sales orders and invoices, one for each unique customer.
 
 Payment journals are automatically created for the payments in the statement, and the inventory is updated for the POS store.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

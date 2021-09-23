@@ -1,13 +1,11 @@
 ---
 # required metadata
 title: What's new or changed in Dynamics 365 Talent - Core HR (December 14, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR for December 14, 2018.
+author: andreabichsel
 ms.date: 12/14/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -16,7 +14,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -41,9 +38,9 @@ This topic describes features that are either new or changed in Core HR.
 
 Each year, Applicable Large Employers (ALEs) must provide each full-time employees with a 1095-C. In addition, if the employer provides self-insured coverage they must provide the 1095-C (if they are an ALE) and a 1095-B (if they are a small employer) to any employee, full-time or part-time, covered under one of their offered health plans. This feature provides printable forms for both the 1095-C and 1095-B.
 
-### During import SubmittedByPersonId field on HcmPerfJournalEntity is ignored
+### During import SubmittedByPersonId column on HcmPerfJournalEntity is ignored
 
-When importing/exporting performance journal entries, the **Submitted by** field is ignored. With this change, the value **imported/exported** will reflect the value in the table during the export, when importing the system will be updated with the value supplied in the import file.
+When importing/exporting performance journal entries, the **Submitted by** column is ignored. With this change, the value **imported/exported** will reflect the value in the table during the export, when importing the system will be updated with the value supplied in the import file.
 
 ### Analytics tab on 'Leave and absence' workspace displays "OpenConnectionError" error for non-system Admin roles
 
@@ -55,7 +52,7 @@ A change has been made to correct the error "Getting the parent node failed" whe
 
 ### Must be System Admin to see the Payroll tab in the Position page
 
-A change has been made to include the correct security elements in the existing privilege: "Maintain payroll worker and position detail". With this change, by default, the Payroll Administrator will have access to the Payroll fields on the Position page.
+A change has been made to include the correct security elements in the existing privilege: "Maintain payroll worker and position detail". With this change, by default, the Payroll Administrator will have access to the Payroll columns on the Position page.
 
 ### Error when submitting performance review to manager and the %Reviews.PerfPeriod% placeholder is used in the Submission instructions
 
@@ -67,7 +64,7 @@ With this change, leap days are now supported in Power BI.
 
 ### Integration between Core HR and Attract
 
-A change has been made to update the integration between Core HR and Attract related to candidates to hire. For candidates to hire to be visible in the **Personnel Management** workspace, the following Common Data Service entities are used:
+A change has been made to update the integration between Core HR and Attract related to candidates to hire. For candidates to hire to be visible in the **Personnel Management** workspace, the following Dataverse tables are used:
 
 Job Application
 - Status Reason needs to be set to Offer Accepted
@@ -105,24 +102,24 @@ The following issues have been identified in the current template for integratin
 
 The Departments to Operating unit task needs the following mappings updated.
 
-| Existing source field          | New source field |
+| Existing source column          | New source column |
 | -------------------------------|------------------|
 | cdm_description (Description)  | cdm_name (Name)  |
 
-An additional mapping also needs to be added. Select the last **None** field to add the following mapping.
+An additional mapping also needs to be added. Select the last **None** column to add the following mapping.
 
-| Source field                   | Destination field    |
+| Source column                   | Destination column    |
 | -------------------------------|----------------------|
 | cdm_description (Description)  | NAMEALIAS (NAMEALIAS)|
 
 The updated mappings should look like the following image.
 
-![Departments to Operating units task](./media/DepartmentMapping.png)
+![Departments to Operating units task.](./media/DepartmentMapping.png)
 
 
 The Jobs to Job Detail task needs the following mappings updated.
 
-| Existing source field          | New source field                   |
+| Existing source column          | New source column                   |
 | -------------------------------|------------------------------------|
 | cdm_name (Name)                | cdm_description (Description)      |
 | cdm_name (Description)         | cdm_jobdescription(Job Description)|
@@ -130,18 +127,18 @@ The Jobs to Job Detail task needs the following mappings updated.
 
 The updated mappings should look like the image below.
 
-![Jobs to Job Detail task](./media/JobMapping.png)
+![Jobs to Job Detail task.](./media/JobMapping.png)
 
 The Workers to Work task needs the following mappings updated.
 
-| Existing source field                 | New source field                               |
+| Existing source column                 | New source column                               |
 | --------------------------------------|------------------------------------------------|
 | cdm_emailaddress1 (Email Address 1)   | cdm_primaryemailaddress (Primary Email Address |
 | cdm_telephone1 (Telephone 1)          | cdm_primarytelephone (Primary Telephone)       |
 
-The Gender field transform also needs to be updated. Select the **fn** (function) map type for Gender and update the following value mappings.
+The Gender column transform also needs to be updated. Select the **fn** (function) map type for Gender and update the following value mappings.
 
-| Common Data Service value                   | Finance and Operations value                     |
+| Dataverse value                   | Finance and Operations value                     |
 | ----------------------------|--------------------------------------------------|
 | 75440000                    | Male                                             |
 | 75440001                    | Female                                           |
@@ -150,6 +147,9 @@ The Gender field transform also needs to be updated. Select the **fn** (function
 
 The updated mappings should look like the following images.
 
-![Workers to Worker task](./media/WorkerMapping.png)
+![Workers to Worker task.](./media/WorkerMapping.png)
 
-![Gender field transform](./media/WorkerTransform.png)
+![Gender column transform.](./media/WorkerTransform.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: What's new or changed in Dynamics 365 for Operations platform update 3 (November 2016)
 description: This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 3. This version was released in November 2016 and has a build number of 7.0.4307.16141.
 author: sericks007
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -198,3 +196,6 @@ Lifecycle Services (LCS) releases new features every month. For information abou
 ## Additional resources
 
 [What's new or changed in Finance and Operations home page](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

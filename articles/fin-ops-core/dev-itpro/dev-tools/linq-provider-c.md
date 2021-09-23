@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Language Integrated Query (LINQ) provider for C#
 description: This topic discusses the LINQ provider.
 author: pvillads
-manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod:
-ms.service: dynamics-ax-platform
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: Developer
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
 ms.custom: 26751
 ms.assetid: 8bd10c93-9d5e-49d7-b20f-7f804e16e76c
 ms.search.region: Global
-# ms.search.industry:
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Language Integrated Query (LINQ) provider for C\#
@@ -187,8 +172,4 @@ private IEnumerable RichCustomers(bool orderByName)
 
 LINQ queries can be applied for CRUD operations. But the model for updating, deleting, and inserting records isn't useful for the expression of set based operations. We're now working on extensions to add to the LINQ model that will translate into set based operations.
 
-## Additional resources
-
-[Changes in X++ and the X++ compiler](programming-language-support.md)
-
-[Develop and customize home page](developer-home-page.md)
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

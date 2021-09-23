@@ -4,11 +4,9 @@
 title: Reduction days example   
 description: Reduction days example. 
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -125,3 +123,6 @@ When the transactions for March 2011 are invoiced, the sales price of EUR 200 is
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

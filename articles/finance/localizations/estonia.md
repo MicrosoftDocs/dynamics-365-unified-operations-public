@@ -4,11 +4,9 @@
 title: Estonia overview
 description: This topic provides an overview of functionality specific to Estonia.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-# ms.custom
+ms.custom: "intro-internal"
 ms.search.region: Estonia
 # ms.search.industry: 
 ms.author: roschlom
@@ -38,5 +36,8 @@ This topic includes information and links to resources that should be considered
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: Estonia report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Estonia.html)
-- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Determine the BOM version
 description: During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site. 
 author: roxanadiaconu
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -47,3 +45,6 @@ A valid BOM version, whether site-specific or general, must meet the required cr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

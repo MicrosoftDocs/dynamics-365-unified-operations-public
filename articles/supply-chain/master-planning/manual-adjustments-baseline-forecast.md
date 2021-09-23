@@ -4,11 +4,9 @@
 title: Make manual adjustments to the baseline forecast
 description: This topic explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
 author: roxanadiaconu
-manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -79,8 +77,7 @@ The **Demand forecast details** page shows the following information in graphica
 
 You can also make manual adjustments to the forecast on the **Demand forecast details** page, by modifying the values in the **Forecast** row in the **Forecast** section.
 
-Additional resources
---------
+## Additional resources
 
 [Monitor forecast accuracy](monitor-forecast-accuracy.md)
 
@@ -88,3 +85,6 @@ Additional resources
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

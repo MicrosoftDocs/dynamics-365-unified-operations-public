@@ -4,11 +4,9 @@
 title: Call point of sale (POS) APIs or operations from POS extensions
 description: The Retail POS APIs help you to build extensions or add new features to POS. 
 author: mugunthanm
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -376,3 +374,6 @@ To consume APIs in an extension, follow these steps:
 2.  Sign in to POS and add any item to a transaction.
 3.  Add any customer to a transaction.
 4.  Click the **Pay** button and commit the transaction. A dialog box should display asking if you want to save the attribute.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

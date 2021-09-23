@@ -4,11 +4,9 @@
 title: Set up sales tax reporting codes
 description: The Sales tax reporting codes refer to a field number that's listed on a sales tax report.  
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -41,3 +39,6 @@ This recording uses the DEMF demo company.
 6. In the **Brief description** field, enter a description for internal purposes.
 7. Click **Save**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

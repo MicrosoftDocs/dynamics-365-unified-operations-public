@@ -4,11 +4,9 @@
 title: Batch manager security role
 description: This topic provides information about the batch manager security role that is used to manage batch job.
 author: hasaid
-manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -44,11 +42,11 @@ Complete the following steps to assign the Batch manager security role to a spec
 
 1. Select **System administration** > **Security** > **Assign users to roles**.
 
-![Assign User To Roles](./media/assign-batchmanager-role.png) 
+![Assign User To Roles.](./media/assign-batchmanager-role.png) 
 
 2. Select **Batch Job Manager**, and on the left pane, select **Manually assign/exclude user**.
 
-![Batch Manager Role](./media/assign-batchmanager-role-2.png) 
+![Batch Manager Role.](./media/assign-batchmanager-role-2.png) 
 
 3. Select a user from the list, and then select **Assign to role**.
 4. Close the page. 
@@ -57,4 +55,7 @@ Complete the following steps to assign the Batch manager security role to a spec
 
 The **run by user** functionality allows Batch managers to specify a user to run the batch job. This functionality is useful when you want to change the user who is currently assigned to run the job or if you want to quickly set a user while copying the batch jobs from one company to another. You can also use this functionality to copy batch jobs.
 
-![RunBy User](./media/runby-user.png)  
+![RunBy User.](./media/runby-user.png)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,16 +4,14 @@
 title: Compounding interval functionality
 description: This topic provides information that will help you choose among monthly, quarterly, semiannual, and annual compounding intervals.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: AssetLeaseDetail
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -164,3 +162,6 @@ The following table lists the first 12 months of the payment schedule. Note the 
 
 > [!NOTE]
 > If the annuity type is changed to **Annuity due**, the payment will be in January instead of December.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Configure approval steps in a workflow
 description: This topic explains how to configure the properties of an approval step.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -166,7 +164,7 @@ Follow these steps to specify who the approval step should be assigned to.
 
     - **Single approver** – The action that is applied to the document is determined by the first person who responds. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue is the first person who responds to the document, the action that she takes is applied to the document. If Sue rejects the document, it's rejected and sent back to Sam. If Sue approves the document, it's sent to Ann for approval.
 
-        ![Workflow that has an approval process](./media/workflow_multipleusersinstep.gif)
+        ![Workflow that has an approval process.](./media/workflow_multipleusersinstep.gif)
 
     - **Majority of approvers** – The action that is applied to the document is determined when most of the approvers respond. For example, Sam has submitted an expense report for USD 15,000. The expense report is currently assigned to Sue, Jo, and Bill. If Sue and Jo are the first two approvers who respond, the action that they take is applied to the document.
 
@@ -286,3 +284,6 @@ If a user doesn't take action on a document in the allotted time, the document i
 
 5. Repeat steps 3 through 4 for each user that should be added to the escalation path. You can change the order of the users.
 6. If the users in the escalation path don't respond in the allotted time, the system automatically take action on the document. To specify the action that the system takes, select the **Action** row, and then, on the **End action** tab, select an action.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

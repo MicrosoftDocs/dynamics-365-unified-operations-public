@@ -2,13 +2,11 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (February 7, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
-author: Andreabichsel
-manager: AnnBe
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent for February 7, 2019.
+author: andreabichsel
 ms.date: 02/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
 ms.technology: 
 
 # optional metadata
@@ -17,7 +15,6 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -59,11 +56,14 @@ For example:
 *Associated compensation levels:* B1 and B2 - Each level has a defined range of values. B1 = Min 50,000, Mid 60,000, Max 75,000 and B2 = Min 65,000, Mid 74,000, Max 85,000. 
 When creating fixed compensation for employees, based on the eligibility rules defined, each fixed plan can now point to the same job and to different levels on the job. This allows for plans to be defined in different regions/companies and point to the same job but different ranges without duplicating jobs to account for these differences.
 
-### Compensation level field has been added to the Employee fixed compensation entity 
-With this update, the employee fixed compensation entity has been updated to include the **Compensation level** field. This addition makes it easier to update employee fixed compensation plans. 
+### Compensation level column has been added to the Employee fixed compensation table 
+With this update, the employee fixed compensation table has been updated to include the **Compensation level** column. This addition makes it easier to update employee fixed compensation plans. 
 
 ### Update Job family when updating and creating new positions
 When changing the job on a position, **Job family** will now default based on the job selected.
 
 ### Performance improvements when rendering workspaces
 Analytics tabs on workspaces will now load only when accessing those pages. An indicator will display during the initial rendering of the page in the upper-left corner of the page.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

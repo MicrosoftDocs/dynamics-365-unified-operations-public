@@ -3,12 +3,10 @@
 
 title: Vendor portal user security
 description: This article explains how to set up security for external vendors who use the Vendor portal. This information applies only to the February 2016 &amp; May 2016 versions of Dynamics AX.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 30231
 ms.assetid: 3574db17-81c7-4c5a-999b-0098aa0b9cda
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -47,10 +45,12 @@ Before you create a user account for someone who will use the Vendor portal, you
 
 If the same person requires access to the Vendor portal for multiple vendor accounts (for different legal entities, perhaps), each of that person's user accounts must be associated with the same registered contact person. The **Vendor (external)** role includes all the basic capabilities that are required in order to use the functionality that is available in the Vendor portal. This setup helps guarantee that the user interface that the external user sees is focused on the intended scenario only.
 
-Additional resources
---------
+## Additional resources
 
 [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

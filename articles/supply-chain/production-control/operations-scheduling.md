@@ -4,11 +4,9 @@
 title: Operations scheduling
 description: This topic provides information about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -80,10 +78,12 @@ When you run operations scheduling, you can cancel specific parts of the routing
 ## Finite materials
 If you're working with finite materials, scheduling also depends on the availability of the materials that are required for production. If there aren't enough available components for the production, production can be delayed. You can base scheduling on the use of materials by specifying the materials that must be available for production. When you optimize on both resource capacity and the availability of materials, production is calculated according to these restrictions. A production order can't be scheduled to start until capacity and materials are available at the same time and in the required quantities.
 
-Additional resources
---------
+## Additional resources
 
 [Operations scheduling options](operation-scheduling-options.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Assign a free text invoice template to a customer
 description: This task demonstrates how to assign a free text invoice template to a customer. 
 author: ShivamPandey-msft
-manager: AnnBe 
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -52,3 +50,6 @@ This task demonstrates how to assign a free text invoice template to a customer.
     + Yearly – Select this option and enter the number of years in the Per field. For example, if you enter 2, an invoice will be generated every two years for this customer.  
 14. In the **Per** field, enter a number.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

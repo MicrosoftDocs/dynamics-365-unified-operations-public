@@ -4,11 +4,9 @@
 title: Overhead calculation
 description: This topic describes the typical processes for calculating and allocating overhead costs.
 author: AndersGirke
-manager: AnnBe
 ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.search.validFrom: 2016-11-30
 
 This topic describes the typical processes for calculating and allocating overhead costs.
 
-Term definition
----------------
+## Term definition
 
 Overhead costs are the costs that are incurred in order to run a business, but that can't be directly attributed to any specific business activity, product, or service. Overhead costs provide critical support for the generation of profit-making activities. Here are some examples of overhead costs:
 
@@ -55,7 +52,7 @@ Overhead calculation runs the cost accounting policies in the correct order. You
 
 Overhead calculation is run independently of the version. Therefore, you can calculate the Budget version before the Actual version. Overhead calculation consists of four steps, as shown in the following illustration. In each step, a journal header is created that has journal entries. This journal header keeps the input data for each calculation step. Policies and rules are applied to each journal line, and cost entries are generated as output. Therefore, you always have full traceability. 
 
-[![Overhead calculation](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![Overhead calculation.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## Calculate and allocate the Electricity overhead cost
 In Financial accounting, some costs, such as electricity, are registered as a lump sum. Therefore, detailed managerial insight isn't provided for Cost accounting. In Cost accounting, to provide correct managerial insight across all organizational units and levels, costs must flow through the organizational units. This flow must be based on either an accurate record of the consumption or a fair assessment. In the general ledger, an electricity cost can be posted as shown in the following table.
@@ -625,7 +622,7 @@ For more information, see [Perform overhead calculation](cost-rollup.md#perform-
 
 Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Finance supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the correct order to perform the allocations in. The balance of a cost object is allocated by a single allocation base. Allocations across cost objects dimensions and their respective members are supported. The allocation order is controlled by the cost control unit. 
 
-[![Reciprocal method](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Reciprocal method.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### Define the cost allocation
 
@@ -1418,3 +1415,6 @@ In Financial accounting, a cost of 10,000.00 for Electricity is posted to a dumm
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

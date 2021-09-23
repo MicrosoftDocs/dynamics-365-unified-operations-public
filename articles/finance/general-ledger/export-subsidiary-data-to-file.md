@@ -4,11 +4,9 @@
 title: Export subsidiary data to files
 description: This topic explains how to prepare to export data from Microsoft Dynamics 365 Finance and then import it into a consolidated legal entity.
 author: jinniew
-manager: AnnBe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -76,3 +74,6 @@ You use the **Export** page (**System administration \> Workspaces \> Import/Exp
 5. Select **OK** to run the export.
 
 When the export is completed, you receive a message that shows the number of records that were saved in each file. You can then import the files into the consolidated legal entity.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

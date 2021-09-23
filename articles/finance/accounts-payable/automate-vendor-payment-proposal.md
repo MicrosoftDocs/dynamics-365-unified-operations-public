@@ -4,11 +4,9 @@
 title: Automate vendor payment proposals
 description: This topic explains how organizations that pay vendors on a recurring schedule can automate the process of generating vendor payment proposals.
 author: kweekley
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -105,11 +103,11 @@ We recommend that you evaluate whether the automation will be beneficial to your
 
 After the vendor payment proposal automation series is created, the occurrences for each payment are shown in the process automation weekly view. For vendor payments, the process automation weekly view has been added to both the **Vendor payments** workspace and the **Process automation** page.
 
-[![Process automation weekly view in the Vendor payments workspace](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![Process automation weekly view in the Vendor payments workspace.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 The process automation weekly view in the **Vendor payments** workspace shows only vendor payment proposal automations. It shows all occurrences of payments for the current week, for all legal entities that the signed-in user has security permissions to. For example, if the AP payment clerk is responsible for payments in the USMF and USSI companies, they will see the occurrences of the vendor payment proposal automation for those two companies but not for other companies.
 
-[![Process automation weekly view for the USMF and USSI companies](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Process automation weekly view for the USMF and USSI companies.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Each occurrence shows the company that the payment journal was or will be created in. If payments are created by using centralized payments, the company that is shown is the company that payments will be created in. The occurrence doesn't necessarily show which companies' invoices will be paid.
 
@@ -149,3 +147,6 @@ The following duties and privileges have been added for vendor payment proposal 
 | Inquiry into schedule occurrences | Accounts payable payment clerk, Accounts payable Centralized payment clerk | This duty grants the rights to view the payment proposal automation occurrences through the following privileges:<ul><li>View schedule occurrences</li><li>View the occurrence weekly view</li></ul> |
 | Inquire into schedule series      | None                                                                       | This duty grants the rights to view the settings of the series and occurrences through the following privileges:<ul><li>View schedule occurrences</li><li>View the occurrences list page</li><li>View the occurrence weekly view</li></ul>|
 | Maintain schedule occurrences     | None                                                                       | This duty grants the rights to create and maintain an occurrence through the following privileges:<ul><li>Maintain schedule occurrences</li><li>View the occurrence weekly view</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,12 +3,10 @@
 
 title: Update the state code and union territory
 description: This topic explains how to update the state code and union territory. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
-author: EricWang
-manager: RichardLuan
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -50,4 +48,7 @@ Follow these steps to update the state code and union territory.
 4. Set the **Union territory** option to **Yes** to identify the state as a union territory.
 5. Select **Close**.
 
-![Address setup](media/IND-GST-UpdateState.png)
+![Address setup.](media/IND-GST-UpdateState.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

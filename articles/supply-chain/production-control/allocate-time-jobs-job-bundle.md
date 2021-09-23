@@ -4,11 +4,9 @@
 title: Allocate time to jobs in a job bundle
 description: In Manufacturing execution, you can bundle jobs. You can then start multiple jobs at the same time on the Job list page.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -86,7 +84,7 @@ The following table illustrates the formula for calculating allocated time. Here
 ## Net time allocation key
 The following table illustrates the formula for calculating allocated time. Here is the formula: Calculated time per reporting = Bundle time ÷ Number of jobs
 
-|                              | 09:00–10:00 (1 hour) | 10:00–11:00 (1 hour) | 11:00–13:00 (2 hours) | 13:00–15:00 (2 hours) | Allocated time |
+| Example                       | 09:00–10:00 (1 hour) | 10:00–11:00 (1 hour) | 11:00–13:00 (2 hours) | 13:00–15:00 (2 hours) | Allocated time |
 |------------------------------|----------------------|----------------------|-----------------------|-----------------------|----------------|
 | Number of jobs in the bundle | 1                    | 3                    | 2                     | 1                     | Not applicable |
 | Job 1                        | 1 ÷ 1 = 1 hour       | 1 ÷ 3 = 0.33 hour    | Not applicable        | Not applicable        | 1.33 hours     |
@@ -114,3 +112,6 @@ The corrected cost per hour and the job time are posted in a production journal.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

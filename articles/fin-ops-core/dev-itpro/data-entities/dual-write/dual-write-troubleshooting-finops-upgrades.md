@@ -1,35 +1,17 @@
 ---
-# required metadata
-
-title: Troubleshoot issues related to upgrades of Finance and Operations apps
+title: Troubleshoot issues from upgrades of Finance and Operations apps
 description: This topic provides troubleshooting information that can help you fix issues that are related to upgrades of Finance and Operations apps.
 author: RamaKrishnamoorthy 
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: 
 ms.author: ramasri
-ms.dyn365.ops.version: 
-ms.search.validFrom: 2020-03-16
-
+ms.search.validFrom: 2020-01-06
 ---
 
-# Troubleshoot issues related to upgrades of Finance and Operations apps
+# Troubleshoot issues from upgrades of Finance and Operations apps
 
 [!include [banner](../../includes/banner.md)]
 
@@ -74,7 +56,7 @@ On the **Dual-write** page, you might receive an error message that resembles th
 
 *Missing source field \<field name\> in the schema.*
 
-![Example of the missing source column error message](media/error_missing_field.png)
+![Example of the missing source column error message.](media/error_missing_field.png)
 
 To fix the issue, first follow these steps to make sure that the columns are in the table.
 
@@ -95,3 +77,6 @@ If the issue still isn't fixed, follow these steps.
 4. Open the **Table mapping** page from the **Dual-write** page in the Finance and Operations app.
 5. If the attribute is not auto-populated on the map, add it manually by clicking **Add attribute** button and then clicking **Save**. 
 6. Select the map and click **Run**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -3,11 +3,9 @@
 title: Transactions through intermediary
 description: This topic provides information about the functionality for accounting intermediary deals that are made by an agent. 
 author: v-nadyuz
-manager: AnnBe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -70,7 +68,7 @@ The current implementation of this functionality has the following limitations:
 7. In the **Kind of inventory** field, specify **Common**.
 8. Select **Save**.
 
-![Inventory profiles page](media/1_Inventory_profiles.jpg)
+![Inventory profiles page.](media/1_Inventory_profiles.jpg)
 
 ### Set up the Inventory profile and Owner tracking dimensions
 
@@ -85,7 +83,7 @@ The current implementation of this functionality has the following limitations:
 
 6. Select **Save**.
 
-![Tracking dimension groups page](media/2_Tracking_dimension_groups.jpg)
+![Tracking dimension groups page.](media/2_Tracking_dimension_groups.jpg)
 
 ### Set up a number sequence for the report for the principal
 
@@ -93,3 +91,6 @@ The current implementation of this functionality has the following limitations:
 2. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **Report code** reference.
 
 For more information, see [Purchases on commission](rus-purchases-on-commission.md) and [Sales on commission](rus-sales-on-commission.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

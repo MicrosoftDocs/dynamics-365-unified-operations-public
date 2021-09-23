@@ -4,11 +4,9 @@
 title: Product collection modules
 description: This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,12 +27,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Product collection modules
 
-
 [!include [banner](includes/banner.md)]
 
 This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Product discovery is a primary tool that retailers use to engage with their customers on an e-Commerce website. Product collection modules help retailers build compelling shopping experiences by providing an intuitive visual interface that can be used to quickly author product collections.
 
@@ -49,7 +44,7 @@ The sources for product collections can be lists of the following four types:
 
 The following illustration shows the different types of product collections being used on an e-Commerce site.
 
-![Example of the different types of product collections on an e-Commerce site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Example of the different types of product collections on an e-Commerce site.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Always use product collection modules to show a group of products of a similar type.
@@ -70,6 +65,10 @@ The following table describes various types of product collection modules in Dyn
 | Frequently bought together | Artificial intelligence/Machine learning | This module uses machine learning to analyze consumer purchase patterns and recommend related items that are frequently bought together with a given product. This list can show personalized results for a signed-in user if the site author chooses that option. |
 | People also like           | Artificial intelligence/Machine learning | This module uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. This list can show personalized results for a signed-in user if the site author chooses that option. |
 | Picks for you              | Artificial intelligence/Machine learning | This module uses machine learning to analyze the purchase patterns of the signed-in user and provide personalized recommendations that are based on those purchase patterns. For a guest user, this list will be collapsed. |
+
+## Supported modules 
+
+The product collection module supports the [quick view module](quick-view-module.md), which lets users view product information and add items to the cart from a product collection page.
 
 ## Add a product collection module to a category page
 
@@ -112,3 +111,8 @@ The following table shows the list types that are available for selection in the
 [Buy box module](add-buy-box.md)
 
 [Product recommendations overview](product-recommendations.md)
+
+[Quick view module](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

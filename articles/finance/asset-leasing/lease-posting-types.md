@@ -4,16 +4,14 @@
 title: Lease posting types
 description: This topic describes the posting types that are used for asset leasing transactions.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: AssetLeasePostingAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -96,15 +94,6 @@ The account is associated with the contra-asset account of the ROU asset. This a
 **Debit:** Depreciation expense XXX<br>
 **Credit:** Accumulated depreciation XXX
 
-## Retained earnings
-
-The account is associated with retained earnings. This account might be either debited or credited in a transition adjustment journal entry by using the full retrospective method or the cumulative catch-up option A method. The difference between the initial ROU asset and lease liability is booked to retained earnings. In rare cases, the retained earnings might also be affected during lease modification, if the classification of a lease is changed from finance to operating to write the ROU asset up or down so that it equals the lease liability.
-
-**Example journal entries:** Transition adjustment (full retrospective or cumulative catch-up option A method)<br>
-**Debit:** Lease liability XXX<br>
-**Credit:** Lease asset XXX<br>
-**Credit:** Retained earnings XXX
-
 ## Variable payment
 
 The account is associated with variable lease payments that are produced by an index revaluation under ASC 842, ASC 840, and IAS 17 leases. In the lease payment schedule, variable payments are included in the **Variable payment** column. This account is debited when an invoice is created against a payment schedule line that contains a variable payment.
@@ -158,3 +147,6 @@ The account that is selected for each expense type is debited when a payment for
 
 > [!NOTE]
 > The offset account is selected at the lease level on the lines for the executory cost payment schedule. This offset account can associated with the vendor, or with a ledger account.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

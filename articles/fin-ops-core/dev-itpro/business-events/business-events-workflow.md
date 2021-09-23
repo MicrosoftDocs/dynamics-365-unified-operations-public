@@ -4,11 +4,9 @@
 title: Workflow business events
 description: Workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,7 +50,7 @@ After a workflow is submitted by a user, it is added to a queue and run using th
 
 There are five different categories of workflow business events. The category will show up in Microsoft Power Automate to help with event selection.
 
-![Business event categories in Microsoft Power Automate](media/Business-event-category.png  "Business event categories in Microsoft Power Automate")
+![Business event categories in Microsoft Power Automate.](media/Business-event-category.png  "Business event categories in Microsoft Power Automate")
 - **Category: Workflow type** 
      - These events will fire on workflow events like started and completed. All workflow instances will be represented in this category.
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID, for example "Workflow_BudgetPlanReview_000002"
@@ -86,7 +84,7 @@ An approval or task work item can be completed in Power Automate using the follo
 
 To enable external completion of work items, the work item action manager class needs to implement the IValidateWorkflowWorkItemAction interface. The standard WorkflowWorkItemActionManager class has implemented this interface. In Platform update 32, the TrvWorkflowWorkItemActionManager class was updated to implement the IValidateWorkflowWorkItemAction interface. Use the existing IValidateWorkflowWorkItemAction implementations as examples to notify updates about other WorkflowWorkItemActionManager classes.
 
-For a step-by-step guide to setting up work item completion in Microsoft Power Automate, see [Consume workflow approval business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow).
+For a step-by-step guide to setting up work item completion in Microsoft Power Automate, see [Consume workflow approval business events](how-to/how-to-flow.md).
 
 ## Templates for work item completion in Power Automate
 
@@ -113,3 +111,6 @@ If a flow is trying to handle approval for work items, but it isn't firing, then
  - Is the event subscription from Flow visible in the Business Events form?
 - Are the workflow configuration and the event subscription from Flow for the correct legal entity (company)?
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

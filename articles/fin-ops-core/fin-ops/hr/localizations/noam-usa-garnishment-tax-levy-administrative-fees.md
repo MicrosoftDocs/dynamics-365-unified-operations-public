@@ -2,13 +2,11 @@
 # required metadata
 
 title: Garnishments, tax levies, and administrative fees FAQ
-description: This topic lists frequently asked questions and answers about garnishments and tax levies. It provides information to help you quickly and accurately set up garnishments and tax levies to keep your organization in compliance with applicable laws, regulations, and court orders. If you have a question that isn't answered here or in the related topics, confer with your legal advisors.
+description: This topic lists frequently asked questions and answers about garnishments and tax levies.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -95,3 +93,6 @@ Yes. For example, if 1,000.00 remains before a worker's pay reaches 0 (zero), an
 [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 
 [Enroll workers in garnishments or tax levies](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

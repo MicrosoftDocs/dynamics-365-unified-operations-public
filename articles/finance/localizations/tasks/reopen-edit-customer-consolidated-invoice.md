@@ -4,11 +4,9 @@
 title: Reopen and edit a customer consolidated invoice
 description: In Japan, when you miss an invoice during the consolidation process, you will need to reopen the consolidated invoice to add the missed invoice. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -58,3 +56,6 @@ This procedure was created using the demo data company JPMF.
     * Confirm that the sales orders that were invoiced before the Consolidation date are included.  
 3. Click Confirm.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

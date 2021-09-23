@@ -1,30 +1,12 @@
 ---
-# required metadata
-
 title: ImageMetadata type
 description: Image metadata type.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
-
 ---
 
 # ImageMetadata type
@@ -202,3 +184,6 @@ The relative horizontal size of the image.
 Sizes are about equivalent to CSS em sizes.
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

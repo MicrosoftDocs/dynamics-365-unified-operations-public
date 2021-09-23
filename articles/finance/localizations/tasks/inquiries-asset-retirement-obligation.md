@@ -4,11 +4,9 @@
 title: Inquiries of the asset retirement obligation related transactions
 description: For Japan, transactions and amounts of asset retirement obligations (ARO) need to be reported separately from the underlying fixed assets. 
 author: ShylaThompson
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -58,3 +56,6 @@ This task uses the JPMF demo company data.
 5. Expand or collapse the Posted amount section.
 6. Expand or collapse the Difference section.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

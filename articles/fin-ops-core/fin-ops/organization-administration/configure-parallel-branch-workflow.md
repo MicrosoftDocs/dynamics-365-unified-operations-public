@@ -4,11 +4,9 @@
 title: Configure parallel branches in a workflow
 description: To configure a parallel branch, complete the following procedures in the workflow editor.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -56,3 +54,6 @@ Follow these steps to design and configure the elements of a parallel branch.
 ## Additional resources
 
 [Create workflows overview](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

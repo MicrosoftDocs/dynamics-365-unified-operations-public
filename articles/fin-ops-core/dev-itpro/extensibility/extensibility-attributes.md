@@ -1,18 +1,12 @@
 ---
-# required metadata
-
 title: Attributes that make methods extensible
 description: This topic provides information about attributes that make methods extensible.
 author: MichaelFruergaardPontoppidan
-manager: AnnBe
 ms.date: 03/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -37,7 +31,7 @@ This topic describes the various attributes that can be used to control extensib
 
 The following table provides an overview of the default support for extensibility and accessibility on methods. The table also provides guidance on the method signature changes.
 
-|   | Hookable | Wrappable | Replaceable | Accessibility | Signature | 
+| Attribute  | Hookable | Wrappable | Replaceable | Accessibility | Signature | 
 |---|----------|-----------|-------------|---------------|-----------|
 | **private** | No | N/A | N/A | Accessible from within class it is defined in. | Signature can be changed |
 | **protected internal** | No | Yes, from Platform update 25 onward | No | Accessible from with the class it is defined, from derived classes, and from classes in the same model. | Signature must remain compatible |
@@ -92,3 +86,6 @@ When a method is replaceable, it can be extended by using CoC, and the execution
 + **Don't** write logic that has a different responsibility than the logic that is being replaced.
 + **Do** call the base functionality (call next) when the replacement logic doesn't apply.
 + **Avoid** replacing logic completely by not calling the base functionality (call next).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

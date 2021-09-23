@@ -4,11 +4,9 @@
 title: Retail discounts
 description: This topic provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
 author: shajain
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -19,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 16181
+ms.custom: ["16181", "intro-internal"]
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
 ms.search.industry: Retail
@@ -56,7 +54,7 @@ This section describes the properties that are common to all types of discounts.
 
 When you manage discounts, it's important that you understand each discount option individually, but it is equally important that you understand which options affect each other and how. The common settings for discounts fall into two categories. In the first category are settings that filter discounts for consideration. Examples include **Status**, **Currency**, and **Unit of measure**. Settings in the second category control the order in which multiple discounts are considered and applied. Examples include **Discount concurrency mode** and **Pricing priority**. The following image shows the various properties of a discount.
 
-![Discount properties](./media/discount-properties.png "Discount properties")
+![Discount properties.](./media/discount-properties.png "Discount properties")
 
 ### Discount ID
 
@@ -180,3 +178,6 @@ Starting with the Retail 8.1.1 release, we have added the capability to set up d
 - Expire discounts when they are no longer valid. In this way, you prevent the total number of discounts that the pricing engine considers during a transaction from growing unbounded. Otherwise, the performance of discount calculation can be affected over time.
 - Leverage the supplemental categories to group the products, for example clearance products or last season products.
 - Always avoid or minimize overlapping discount lines.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

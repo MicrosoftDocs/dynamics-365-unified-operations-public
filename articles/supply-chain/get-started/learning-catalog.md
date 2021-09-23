@@ -7,7 +7,6 @@ ms.date: 07/23/2020
 ms.author: margoc
 
 ms.prod:
-ms.service: Dynamics365Operations
 ms.technology:
 
 # optional metadata
@@ -23,11 +22,11 @@ ms.dyn365.ops.version: 8.1
 
 Find the right online training, in person workshops, and events for your role as a user of the Dynamics 365 Supply Chain application.
 
-<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
 
 :::row:::
     :::column:::
-<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
 
     ### Business and Technical Decision Makers
 
@@ -91,6 +90,8 @@ Find the right online training, in person workshops, and events for your role as
     [Get started](learning-catalog-administrator.md#get-started)
 
     [Core platform knowledge](learning-catalog-administrator.md#core-platform-knowledge)
+
+    [Supply Chain Management](learning-catalog-administrator.md#scm)
 
     [Core development](learning-catalog-administrator.md#core-development)
 
@@ -185,3 +186,6 @@ Find the right online training, in person workshops, and events for your role as
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

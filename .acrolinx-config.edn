@@ -1,5 +1,6 @@
 {:allowed-branchname-matches ["^master$"]
- :allowed-filename-matches ["articles"]
+ :allowed-filename-matches ["(?i)articles/(?:(?!finance/localizations|fin-ops-core/dev-itpro/data-entities/dual-write/includes))"]
+ :use-skip-label true
  :targets
  {
      :scores

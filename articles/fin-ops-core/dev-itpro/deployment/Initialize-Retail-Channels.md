@@ -4,11 +4,9 @@
 title: Initialize Commerce Scale Unit (cloud)
 description: This topic explains how to initialize Commerce Scale Unit (cloud).
 author: AamirAllaq
-manager: AnnBe
-ms.date: 08/10/2020
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology:
 
 # optional metadata
@@ -42,6 +40,17 @@ This topic describes the steps for initializing Commerce Scale Unit (cloud).
 
 1. Deploy a Tier-2 sandbox or production environment that has application version 8.1.2.x or later.
 2. If you require more than 1 RCSU per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Access request for multiple Commerce Cloud Scale Units** and indicate the environment ID, number of CSUs, and corresponding datacenter regions. The request will be completed within five business days. If you do not require multiple CSUs per environment, you do not need to create a support request. 
+3. Ensure that Retail license configuration keys are enabled in your environment. For more information, see [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md). You must have the following keys turned on to use Commerce Scale Unit.
+
+- RetailBasic
+- RetaileCommerce - If you plan to use E-Commerce for Dynamics 365 Commerce.
+- RetailGiftCard - If you plan to use gift cards.
+- RetailInvent - If you plan to use inventory.
+- RetailModernPos - If you plan to use point of sale (POS).
+- RetailReplenishment - If you plan to use replenishments.
+- RetailScheduler
+- RetailStores - If you plan to use POS.
+
 
 ## Region availability
 Commerce Scale Unit is available for deployment in the following regions.
@@ -73,15 +82,15 @@ Commerce Scale Unit is available for deployment in the following regions.
 
 Deployment capacity in Limited capacity regions are extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in Limited capacity regions, you can file a support request to be added to the waitlist.
 
-![Map showing region availability](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
+![Map showing region availability.](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
 
 ## Initialize Commerce Scale Unit as part of a new environment deployment
 
 Please make sure the headquarters is available. This is required to register the scale unit with the headquarters during the initialization process. It is not recommended to initialize a scale unit when the headquarters is under servicing, as it may become unavailable during its servicing process.
 
 1. Make sure the headquarters environment is available and not in [Maintenance mode](../sysadmin/maintenance-mode.md).
-2. In LCS, on the environment details page, select **Environment features \> Retail**.
-3. On the Retail setup deployment page, select **Initialize**.
+2. In LCS, on the environment details page, select **Environment features \> Commerce**.
+3. On the Commerce setup deployment page, select **Initialize**.
 4. Select the version of the Commerce Scale Unit to initialize.
 5. Select a region to initialize Commerce Scale Unit in.
 
@@ -168,3 +177,6 @@ Here is what occurs after initialization is completed:
 - Stand-alone hardware station instances will continue to work.
 - POS channel–side reports will be reset and won't show data from before the initialization.
 - Show journal operation will also be reset and won't show data from before the initialization.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

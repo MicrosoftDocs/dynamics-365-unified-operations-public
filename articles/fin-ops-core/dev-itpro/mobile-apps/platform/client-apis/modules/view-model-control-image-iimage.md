@@ -1,26 +1,12 @@
 ---
-# required metadata
 title: Image module
 description: Image control for representing images in the mobile app. Images can be of any of the following types&amp;58 DataUri, Base64, URL, AOTResource, or Symbol.
 author: robinarh
-manager: AnnBe
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-applications
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
 ---
 
 # Image module
@@ -142,3 +128,6 @@ ImageStyleType: "square" &#124; "symbol" &#124; "wide" &#124; "circular" &#124; 
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../../../includes/footer-banner.md)]

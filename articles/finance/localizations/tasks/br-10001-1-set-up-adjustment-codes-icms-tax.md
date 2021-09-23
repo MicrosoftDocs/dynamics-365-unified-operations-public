@@ -4,11 +4,9 @@
 title: Set up adjustment codes for ICMS tax (Brazil)
 description: In the Sistema Publico de Escrituração Digital (SPED) fiscal text file, record C197 includes information about adjustments of Imposto sobre Circulação de Mercadorias e Serviços (ICMS) information on fiscal documents. 
 author: sndray
-manager: AnnBe 
 ms.date: 06/26/2017
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -45,3 +43,6 @@ In the Sistema Publico de Escrituração Digital (SPED) fiscal text file, record
 12. In the **Main account** field, specify the desired values.
 13. Select **Save** and then close the page.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

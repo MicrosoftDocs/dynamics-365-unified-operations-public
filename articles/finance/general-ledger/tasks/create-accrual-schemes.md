@@ -4,11 +4,9 @@
 title: Create accrual schemes
 description: This topic explains how to create an accrual scheme. 
 author: aprilolson
-manager: AnnBe 
 ms.date: 07/19/2019
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -43,3 +41,6 @@ This topic explains how to create an accrual scheme. This task uses the USMF dem
 10. In the **Number of occurrences by period** field, enter a number.
 11. In the **Post transactions** field, select when the transactions should be posted, such as **Monthly**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

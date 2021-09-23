@@ -4,11 +4,9 @@
 title: Security diagnostics for task recordings
 description: This topic provides information about how to analyze and manage security permission requirements based on a task recording.
 author: Peakerbl
-manager: AnnBe 
 ms.date: 05/05/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -44,7 +42,7 @@ This topic provides information about how to analyze and manage security permiss
 
 4. In the **User ID** field, select a user. If the user does not have permissions for some menu items, the **Missing permissions** field will update to **Yes**.
   
-  ![Security menu item details page](../media/Security-Menu-Item-Details.png)
+  ![Security menu item details page.](../media/Security-Menu-Item-Details.png)
 
 5. Select **Add Reference** to see a list of the security objects, including roles, duties, and privileges that grant the missing permission.
 6. Select a security object from the list:
@@ -52,3 +50,6 @@ This topic provides information about how to analyze and manage security permiss
 	- If **Role** is selected, select **Add role to user**. This will open the **Assign users to roles** page. For more information, see [Assign users to security roles](assign-users-security-roles.md) page.
 	- If **Duty** is selected, select **Add duty to role**, select the roles that the duty should be added to, and then select **OK**.
 	- If **Privilege** is selected, select **Add privilege to duties**, select the roles that the duty should be added to, and then select **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

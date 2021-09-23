@@ -4,11 +4,9 @@
 title: Product-related translations FAQ
 description: This topic describes how to manage translations for products, product dimension values, and product attributes. 
 author: cvocph
-manager: tfehr
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to manage translations for products, product dimension values, and product attributes. 
 
-What product-related data can be translated?
---------------------------------------------
+## What product-related data can be translated?
 
 You can create translations for the following product-related information:
 -   Names and descriptions of products.
@@ -131,3 +128,6 @@ Translations of product-related information can be managed at any time. When tra
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

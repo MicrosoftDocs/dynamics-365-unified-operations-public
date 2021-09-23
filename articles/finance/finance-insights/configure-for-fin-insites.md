@@ -1,14 +1,12 @@
 ---
 # required metadata
 
-title: Configuration for Finance Insights (preview)
-description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
+title: Configuration for Finance insights - before version 10.0.19
+description: This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights for versions before 10.0.19.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 11/25/2020
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -28,13 +26,14 @@ ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Configuration for Finance insights (preview)
+# Configuration for Finance insights for private preview (preview) - before version 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/preview-banner.md)]
-
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+> [!NOTE]
+> The following procedures for setting up Finance insights are valid for Microsoft Dynamics 365 Finance before version 10.0.19. To set up Finance insights on version 10.0.20 and later, see [Configuration for Finance Insights (preview) - versions 10.0.20 and beyond](configure-for-fin-insites-PubPrvw.md).
 
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 
@@ -44,232 +43,40 @@ Deploy the environments by following these steps.
 
 1. In Microsoft Dynamics Lifecycle Services (LCS), create or update a Dynamics 365 Finance environment. The environment requires app version 10.0.11/Platform update 35 or later.
 2. The environment must be a high-availability (HA) environment in Sandbox. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. If you're using Contoso demo data, you will require additional sample data to use the Customer payment predictions, Cash flow forecasts, and Budget forecasts features. 
+3. If you are configuring Finance insights in a Sandbox environment, you might need to copy production data to that environment for predictions to work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn’t contain enough historical data to train the prediction model adequately. 
 
 ## Configure Dataverse
 
-You can complete the manual configuration steps that follow, or you can speed up the configuration process by using the Windows PowerShell script that is provided. When the PowerShell script has finished running, it will give you values to use to configure Finance insights. 
+Use the following steps to configure Dataverse for Finance insights.
 
+1. Open the environment page in LCS and verify that the **Power Platform Integration** section is already setup.
+    1. If it is already set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Copy the Dataverse environment name.
+    2. If it is not set up, follow these steps:
+        1. Select the **Setup** button in the Power Platform Integration section. It may take up to an hour for the environment to be set up.
+        2. If the Dataverse environment is successfully set up, the Dataverse environment name linked to the Dynamics 365 Finance Environment should be listed. Copy the Dataverse environment name.
 > [!NOTE]
-> Open PowerShell on your PC to run the script. You may need PowerShell version 5. The Microsoft Azure CLI "Try it" option may not work.
+> After completing the environment set up, **DO NOT** select the **Link to CDS for Apps** button. This is not needed for Finance Insights and will disable the ability to complete the required Environment Add-ins in LCS.
 
-# [Manual configuration steps](#tab/configuration-steps)
-
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Dataverse environment in the same Active Directory tenant:
+2. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and follow these steps to create a new Dataverse environment in the same Active Directory tenant:
 
     1. Open the **Environments** page.
 
-        [![Environments page](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
+        [![Environments page.](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
 
-    2. Select **New environment**.
-    3. In the **Type** field, select **Sandbox**.
-    4. Set the **Create Database** option to **Yes**.
-    5. Select **Next**.
-    6. Select the language and currency for your organization.
-    7. Accept the default values for the other fields.
-    8. Select **Save**.
-    9. Refresh the **Environments** page.
-    10. Wait until the value of the **State** field is updated to **Ready**.
-    11. Make a note of the Dataverse organization ID.
-    12. Select the environment, and then select **Settings**.
-    13. Select **Resources \> All Legacy Settings**.
-    14. On the top navigation bar, select **Settings**, and then select **Customizations**.
-    15. Select **Developer Resources**.
-    16. Set the **Instance Reference Information ID** field to the Dataverse organization ID value that you made a note of earlier.
-    17. In the browser's address bar, make a note of the URL for the Dataverse organization. For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.
+    2. Select the Dataverse environment created above and then select **Settings**.
+    3. Select **Resources \> All Legacy Settings**.
+    4. On the top navigation bar, select **Settings**, and then select **Customizations**.
+    5. Select **Developer Resources**.
+    6. Copy the **Dataverse organization ID** value.
+    7. In the browser's address bar, make a note of the URL for the Dataverse organization. For example, the URL might be `https://org42b2b3d3.crm.dynamics.com`.
 
-2. If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):
+3. If you plan to use the Cash flow forecasts or Budget forecasts feature, follow these steps to update the annotation limit for your organization to at least 50 megabytes (MB):
 
     1. Open the [Power Apps portal](https://make.powerapps.com).
     2. Select the environment that you just created, and then select **Advanced settings**.
     3. Select **Settings \> Email Configuration**.
     4. Change the value of the **Maximum file size** field to **51,200**. (The value is expressed in kilobytes \[KB\].)
     5. Select **OK** to save your changes.
-
-# [Windows PowerShell configuration script](#tab/powershell-configuration-script)
-
-```azurecli-interactive
-Write-Output 'The following modules need to be present for execution of this script:'
-Write-Output '  Microsoft.PowerApps.Administration.PowerShell'
-Write-Output '  Microsoft.PowerApps.PowerShell'
-Write-Output '  Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
-
-try {
-    $moduleConsent = Read-Host 'Is it ok to install or update these modules as needed? (yes/no)'
-    if ($moduleConsent -ne 'yes' -and $moduleConsent -ne 'y') {
-        Write-Warning 'User declined to install required modules.'
-        return
-    }
-
-    $module = 'Microsoft.PowerApps.Administration.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '2.0.61' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '2.0.61' -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    $module = 'Microsoft.PowerApps.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '1.0.9' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '1.0.9' -AllowClobber -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    $module = 'Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '3.3.0.892' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '3.3.0.892' -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    Write-Output '================================================================================='
-
-    $useMfa = $false
-    $useMfaPrompt = Read-Host "Does your organization require the use of multi-factor authentication? (yes/no)"
-    if ($useMfaPrompt -eq 'yes' -or $useMfaPrompt -eq 'y') {
-        $useMfa = $true
-    }
-    if(-not $useMfa) {
-        $credential = Get-Credential -Message 'Power Apps Credential'
-    }
-
-    $orgFriendlyName = Read-Host "Enter the name of the CDS Organization to use or create: (blank for 'FinanceInsightsOrg')"
-    if ($orgFriendlyName.Trim() -eq '') {
-        $orgFriendlyName = 'FinanceInsightsOrg'
-    }
-
-    $isDefaultOrgPrompt = Read-Host ("Is '" + $orgFriendlyName + "' the default organization for your tenant? (yes/no)")
-    if ($isDefaultOrgPrompt -eq 'yes' -or $isDefaultOrgPrompt -eq 'y') {
-        $isDefaultOrg = $true
-    }
-
-    if ($credential) {
-        Add-PowerAppsAccount -Username $credential.UserName -Password $credential.Password
-    }
-    else {
-        Add-PowerAppsAccount
-    }
-
-    if ($isDefaultOrg) {
-        $orgMatch = ('(default)')
-        $environment = (Get-AdminPowerAppEnvironment | Where-Object { $_.IsDefault -eq $true })
-    }
-    else {
-        $orgMatch = ('{0} (*)' -f $orgFriendlyName)
-        $environment = (Get-AdminPowerAppEnvironment | Where-Object { ($_.IsDefault -eq $false -and ($_.DisplayName -eq $orgFriendlyName -or $_.DisplayName -like $orgMatch)) })
-    }
-
-    $getCrmOrgParams = @{ 'OnlineType' = 'Office365' }
-    if ($credential) {
-        $getCrmOrgParams.Credential = $credential
-    }
-
-    if ($null -eq $environment) {
-        Write-Output '================================================================================='
-        Write-Output 'PowerApps environment not found. A new one will be provisioned.'
-
-        $invalid = 'invalid'
-
-        $location = $invalid
-        $cdsLocations = (Get-AdminPowerAppEnvironmentLocations | Select-Object LocationName).LocationName
-        while (-not ($location -in $cdsLocations)) {
-            $location = (Read-Host -Prompt "Enter the location in which to create the new PowerApps environment: ('help' to see values)")
-            if ($location -eq 'help') {
-                $cdsLocations
-            }
-        }
-
-        $currency = $invalid
-        $cdsCurrencies = (Get-AdminPowerAppCdsDatabaseCurrencies -Location $location | Select-Object CurrencyName).CurrencyName
-        while ($currency -ne '' -and -not ($currency -in $cdsCurrencies)) {
-            $currency = (Read-Host -Prompt "Enter the currency to use for the new PowerApps environment: ('help' to see values, blank for default)")
-            if ($currency -eq 'help') {
-                $cdsCurrencies
-            }
-        }
-
-        $language = $invalid
-        $cdsLanguages = (Get-AdminPowerAppCdsDatabaseLanguages -Location $location | Select-Object LanguageName, LanguageDisplayName)
-        while ($language -ne '' -and -not ($language -in $cdsLanguages.LanguageName)) {
-            $language = (Read-Host -Prompt "Enter the language name to use for the new PowerApps environment: ('help' to see values, blank for default)")
-            if ($language -eq 'help') {
-                $cdsLanguages | Format-Table -Property LanguageName, LanguageDisplayName
-            }
-        }
-
-        Write-Output 'Provisioning PowerApps environment. This may take several minutes.'
-
-        $sleep = 15
-
-        $envParams = @{ 'DisplayName' = $orgFriendlyName; 'EnvironmentSku' = 'Sandbox'; 'ProvisionDatabase' = $true; 'Location' = $location; 'WaitUntilFinished' = $true }
-        if ($language.Trim() -ne '') {
-            $envParams.LanguageName = $language
-        }
-        if ($currency.Trim() -ne '') {
-            $envParams.CurrencyName = $currency
-        }
-        $newEnvResult = New-AdminPowerAppEnvironment @envParams
-        if (($null -eq $newEnvResult) -or ($newEnvResult.CommonDataServiceDatabaseProvisioningState -ne 'Succeeded')) {
-            Write-Warning 'Failed to create to PowerApps environment'
-            if ($null -ne $newEnvResult) {
-                $newEnvResult
-            }
-        }
-        else {
-            $environment = $null
-            $retryCount = 0
-            while (($null -eq $environment) -and ($retryCount -lt 5)) {
-                Start-Sleep -Seconds $sleep
-                $environment = (Get-AdminPowerAppEnvironment | Where-Object { ($_.DisplayName -like $orgMatch) })
-            }
-            Write-Output ("Provisioned PowerApps environment with name: '" + $environment.DisplayName + "'")
-        }
-
-        Write-Output 'Waiting for CDS organization provisioning. This may take several minutes.'
-        if (-not $credential) {
-            $sleep = 120
-            Write-Output 'You may be prompted for credentials multiple times while checking the status of the provisioning.'
-        }
-
-        while ($null -eq $crmOrg) {
-            Start-Sleep -Seconds $sleep
-            $crmOrg = (Get-CrmOrganizations @getCrmOrgParams) | Where-Object { $_.FriendlyName -eq $orgFriendlyName }
-        }
-    }
-    else {
-        $crmOrgs = Get-CrmOrganizations @getCrmOrgParams
-        if ($UseDefaultOrganization -eq $true) {
-            $crmOrg = $crmOrgs | Where-Object { $_.FriendlyName -match $orgMatch }
-        }
-        else {
-            $crmOrg = $crmOrgs | Where-Object { $_.FriendlyName -eq $orgFriendlyName }
-        }
-    }
-
-    Write-Output '================================================================================='
-    Write-Output 'Values for PowerAI LCS Add-In:'
-    Write-Output ("  CDS organization url:             " + $crmOrg.WebApplicationUrl)
-    Write-Output ("  CDS organization ID:              " + $crmOrg.OrganizationId)
-}
-catch {
-    Write-Error $_.Exception.Message
-    Write-Warning $_.Exception.StackTrace
-    $inner = $_.Exception.InnerException
-    while ($null -ne $inner) {
-        Write-Output 'Inner Exception:'
-        Write-Error $_.Exception.Message
-        Write-Warning $_.Exception.StackTrace
-        $inner = $inner.InnerException
-    }
-}
-```
----
 
 ## Configure the Azure setup
 
@@ -292,20 +99,23 @@ catch {
 
 # [Use a Windows PowerShell script](#tab/use-a-powershell-script)
 
-A Windows PowerShell script has been provided, so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). If you prefer to do manual setup, skip this procedure, and continue with the procedure in the [Manual setup](#manual-setup) section.
+A Windows PowerShell script has been provided, so that you can easily set up the Azure resources that are described in [Configure export to Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). If you prefer to do manual setup, skip this procedure, and continue with the procedure in the [Manual setup](#manual-setup) section.
 
 > [!NOTE]
 > Follow the steps below to run the PowerShell script. The Azure CLI "Try it" option, or running the script on your PC may not work.
 
-Follow these steps to configure Azure by using the Windows PowerShell script. You must have rights to create an Azure resource group, Azure resources, and an Azure AD application. For information about the required permissions, see [Check Azure AD permissions](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
+Follow these steps to configure Azure by using the Windows PowerShell script. You must have rights to create an Azure resource group, Azure resources, and an Azure AD application. For information about the required permissions, see [Check Azure AD permissions](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
 1. In the [Azure portal](https://portal.azure.com), go to your target Azure subscription. Select the **Cloud Shell** button to the right of the **Search** field.
 2. Select **PowerShell**.
-3. Create storage, if you're prompted to do so. Then upload the Windows PowerShell script to the session.
-4. Run the script.
-5. Follow the prompts to run the script.
-6. Use the information from the script output to install the **Export to Data Lake** add-in in LCS.
-7. Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).
+3. Create storage if you're prompted to do so.
+4. Go to the **Azure CLI** tab and select **Copy**.  
+5. Open Notepad and paste the PowerShell script. Save the file as ConfigureDataLake.ps1.
+6. Upload the Windows PowerShell script to the session using the menu option for upload in Cloud Shell.
+7. Run the script .\ConfigureDataLake.ps1.
+8. Follow the prompts to run the script.
+9. Use the information from the script output to install the **Export to Data Lake** add-in in LCS.
+10. Use the information from the script output to enable the entity store on the **Data connections** page in Finance (**System administration \> System parameters \> Data connections**).
 
 ### Manual setup
 
@@ -453,8 +263,10 @@ If you can't find any of the preceding applications, try the following steps.
 
 ```
 function New-FinanceDataLakeAzureResources {
-    $defaultSecretExpiryInYear = 1
+    Assert-ScriptSetup
 
+    $ClientAppName = 'Finance Data Lake Application'
+    $DefaultSecretExpiryInYear = 1
     $MicrosoftDynamicsERPMicroservicesAppId = '0cdb527f-a8d1-4bf8-9436-b352c68682b2'
     $MicrosoftDynamicsERPMicroservicesCDSAppId = '703e2651-d3fc-48f5-942c-74274233dba8'
     $AIBuilderAuthorizationServiceAppId = 'ad40333e-9910-4b61-b281-e3aeeb8c3ef3'
@@ -467,74 +279,65 @@ function New-FinanceDataLakeAzureResources {
     $userContext = ConvertFrom-Json ((az ad signed-in-user show) -join '')
     $user = Get-AzureADUser -Filter ("UserPrincipalName eq '" + $userContext.UserPrincipalName + "'")
 
-    $subscriptionId = (Read-Host -Prompt "Enter the Azure Subscription ID: (blank for default)")
-    if ($subscriptionId.Trim() -ne '') {
-        $azSubscription = Select-AzSubscription -SubscriptionId $subscriptionId
-    }
-
-    $resourceGroupName = (Read-Host -Prompt "Enter the Azure Resource Group name: (blank for 'FinanceDataLake')")
-    if ($null -eq $resourceGroupName -or $resourceGroupName.Trim() -eq '') {
-        $resourceGroupName = 'FinanceDataLake'
-    }
-    $resourceGroup = Get-AzResourceGroup -Name $resourceGroupName -ErrorAction SilentlyContinue
-
-    if (-not ($resourceGroup)) {
-        $resourceLocation = ''
-        $azResourceLocations = (Get-AzLocation | Select-Object Location).Location
-        while ($resourceLocation.Trim() -eq '' -or (-not ($resourceLocation -in $azResourceLocations))) {
-            $resourceLocation = (Read-Host -Prompt "Enter the location in which to create the Azure Resource Group: ('help' to see values)")
-            if ($resourceLocation -eq 'help') {
-                $azResourceLocations
-                $resourceLocation = ''
-            }
+    Set-AzureSubscription
+    
+    $resourceGroup = $null
+    $ResourceGroupName = 'D365FinanceInsightsDataLake'
+    $ResourceGroupNameSuffix = ''
+    $FullResourceGroupName = ''
+    Write-Output ("The default Azure Resource Group name is '{0}'" -f $ResourceGroupName)
+    while (-not ($resourceGroup)) {
+        $ResourceGroupNameSuffix = (Read-Host -Prompt "Enter optional Azure Resource Group name suffix: (leave blank for no suffix)")
+        if ([string]::IsNullOrWhitespace($ResourceGroupNameSuffix))
+        {
+            $FullResourceGroupName = $ResourceGroupName
         }
-        $resourceGroup = New-AzResourceGroup -Name $resourceGroupName -Location $resourceLocation
-    }
-    else {
-        $resourceLocation = $resourceGroup.Location
-    }
+        else
+        {
+            if ($ResourceGroupNameSuffix -notmatch "^[A-Za-z0-9]+$") {
+                Write-Warning "The Azure Resource Group name suffix can only include alphanumeric characters."
+                continue
+            }
 
-    $clientAppName = (Read-Host -Prompt "Enter the name of the application registration: (blank for 'Finance Data Lake Application')")
-    if ($clientAppName.Trim() -eq '') {
-        $clientAppName = 'Finance Data Lake Application'
-    }
+            if ($ResourceGroupNameSuffix.Length -gt 60) {
+                Write-Warning "The Azure Resource Group name suffix cannot be longer than 60 characters."
+                continue
+            }
 
-    Write-Output '================================================================================='
+            $FullResourceGroupName = $ResourceGroupName + $ResourceGroupNameSuffix
+        }
+        
+        $resourceGroup = Get-AzResourceGroup -Name $FullResourceGroupName -ErrorAction SilentlyContinue
 
-    $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $MicrosoftDynamicsERPMicroservicesAppId + "'")
-    if (-not $service) {
-        New-AzureADServicePrincipal -AppId $MicrosoftDynamicsERPMicroservicesAppId | Format-Table -AutoSize
-        $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $MicrosoftDynamicsERPMicroservicesAppId + "'")
-        Write-Output ("Added AAD Enterprise Application 'Microsoft Dynamics ERP Microservices' with Application ID {0}" -f $MicrosoftDynamicsERPMicroservicesAppId)
+        if (-not ($resourceGroup)) {
+            Write-Output ("Your new Azure Resource Group name is '{0}'" -f $FullResourceGroupName)
+            $resourceLocation = ''
+            $azResourceLocations = (Get-AzLocation | Select-Object Location).Location
+            while ([string]::IsNullOrWhitespace($resourceLocation) -or (-not ($resourceLocation -in $azResourceLocations))) {
+                $resourceLocation = (Read-Host -Prompt "Enter the location in which to create the Azure Resource Group: ('help' to see values)")
+                if ($resourceLocation -eq 'help') {
+                    Write-Output ("List of available regions is '{0}'" -f ($azResourceLocations -join ','))
+                }
+                elseif ([string]::IsNullOrWhitespace($resourceLocation) -or (-not ($resourceLocation -in $azResourceLocations)))
+                {
+                    Write-Warning ("The provided location is not available for resource group. List of available regions is '{0}'" -f ($azResourceLocations -join ','))
+                }
+            }
+            $resourceGroup = New-AzResourceGroup -Name $FullResourceGroupName -Location $resourceLocation
+            Write-Output ("Created Azure Resource Group '{0}'" -f $resourceGroup.ResourceGroupName)
+        }
+        else {
+            Write-Output ("Found Azure Resource Group '{0}'" -f ($resourceGroup.ResourceGroupName))
+        }
     }
-    else {
-        Write-Output ("Found AAD Enterprise Application 'Microsoft Dynamics ERP Microservices' with Application ID {0}" -f $MicrosoftDynamicsERPMicroservicesAppId)
-    }
-    $MicrosoftDynamicsERPMicroservicesAppObjectId = $service.ObjectId
-
-    $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $MicrosoftDynamicsERPMicroservicesCDSAppId + "'")
-    if (-not $service) {
-        New-AzureADServicePrincipal -AppId $MicrosoftDynamicsERPMicroservicesCDSAppId | Format-Table -AutoSize
-        Write-Output ("Added AAD Enterprise Application 'Microsoft Dynamics ERP Microservices CDS' with Application ID {0}" -f $MicrosoftDynamicsERPMicroservicesCDSAppId)
-    }
-    else {
-        Write-Output ("Found AAD Enterprise Application 'Microsoft Dynamics ERP Microservices CDS' with Application ID {0}" -f $MicrosoftDynamicsERPMicroservicesCDSAppId)
-    }
-
-    $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AIBuilderAuthorizationServiceAppId + "'")
-    if (-not $service) {
-        New-AzureADServicePrincipal -AppId $AIBuilderAuthorizationServiceAppId | Format-Table -AutoSize
-        $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AIBuilderAuthorizationServiceAppId + "'")
-        Write-Output ("Added AAD Enterprise Application 'AI Builder Authorization Service' with Application ID {0}" -f $AIBuilderAuthorizationServiceAppId)
-    }
-    else {
-        Write-Output ("Found AAD Enterprise Application 'AI Builder Authorization Service' with Application ID {0}" -f $AIBuilderAuthorizationServiceAppId)
-    }
-    $aibuilderAuthorizationServiceObjectId = $service.ObjectId
 
     Write-Output '================================================================================='
+    $MicrosoftDynamicsERPMicroservicesAppObjectId = Create-ADServicePrincipal -AppId $MicrosoftDynamicsERPMicroservicesAppId
+    Create-ADServicePrincipal -AppId $MicrosoftDynamicsERPMicroservicesCDSAppId | Out-Null
+    $aibuilderAuthorizationServiceObjectId = Create-ADServicePrincipal -AppId $AIBuilderAuthorizationServiceAppId
+    Write-Output ('=================================================================================')
 
-    $clientAppSPN = Get-AzureADServicePrincipal -Filter ("DisplayName eq '" + $clientAppName + "'")
+    $clientAppSPN = Get-AzureADServicePrincipal -Filter ("DisplayName eq '" + $ClientAppName + "'")
     if (-not ($clientAppSPN)) {
         $keyVaultPrincipal = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $KeyVaultServicePrincipalAppId + "'")
         if (-not $keyVaultPrincipal)
@@ -559,18 +362,18 @@ function New-FinanceDataLakeAzureResources {
         $graphAccess.ResourceAppId = $graphPrincipal.AppId
         $graphAccess.ResourceAccess = (New-Object -TypeName "microsoft.open.azuread.model.resourceAccess" -ArgumentList $userRead.Id, "Scope")
 
-        $clientApp = New-AzureADApplication -DisplayName $clientAppName -RequiredResourceAccess @($keyVaultAccess, $graphAccess)
-        $clientAppSPN = New-AzureADServicePrincipal -AppId $clientApp.AppId -Tags @($clientAppName)
+        $clientApp = New-AzureADApplication -DisplayName $ClientAppName -RequiredResourceAccess @($keyVaultAccess, $graphAccess)
+        $clientAppSPN = New-AzureADServicePrincipal -AppId $clientApp.AppId -Tags @($ClientAppName)
         $clientAppId = $clientApp.AppId
-        Write-Output ('Created App Registration "' + $clientAppName + '" with Application Id: ' + $clientAppId)
+        Write-Output ('Created App Registration "' + $ClientAppName + '" with Application Id: ' + $clientAppId)
     }
     else {
-        $clientApp = Get-AzureADApplication -Filter ("DisplayName eq '" + $clientAppName + "'")
+        $clientApp = Get-AzureADApplication -Filter ("DisplayName eq '" + $ClientAppName + "'")
         $clientAppId = $clientApp.AppId
-        Write-Output ('Found App Registration "' + $clientAppName + '" with Application Id: ' + $clientAppId)
+        Write-Output ('Found App Registration "' + $ClientAppName + '" with Application Id: ' + $clientAppId)
     }
             
-    $clientAppSecretCredential = New-AzureADApplicationPasswordCredential -ObjectId $clientApp.ObjectId -CustomKeyIdentifier "ClientAppAccessKey" -EndDate (get-date).AddYears($defaultSecretExpiryInYear)
+    $clientAppSecretCredential = New-AzureADApplicationPasswordCredential -ObjectId $clientApp.ObjectId -CustomKeyIdentifier "ClientAppAccessKey" -EndDate (get-date).AddYears($DefaultSecretExpiryInYear)
     $ClientAppSecret = $clientAppSecretCredential.Value
     $clientAppSpId = $clientAppSPN.ObjectId
 
@@ -580,36 +383,93 @@ function New-FinanceDataLakeAzureResources {
     $templateObject = ConvertFrom-Json $azureTemplate -AsHashtable
     $templateObject.{$schema} = "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#"
     Write-Output 'Provisioning Azure resources. This may take a few minutes.'
-    $deployment = New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateObject $templateObject -aibuilderAppObjectId $aibuilderAuthorizationServiceObjectId -clientAppId $clientAppId -clientAppSecret $ClientAppSecret -clientAppSpObjectId  $clientAppSpId -microserviceSpObjectId $MicrosoftDynamicsERPMicroservicesAppObjectId -userSpObjectId $user.ObjectId
+    try {
+        $deployment = New-AzResourceGroupDeployment -ResourceGroupName $FullResourceGroupName -TemplateObject $templateObject -aibuilderAppObjectId $aibuilderAuthorizationServiceObjectId -clientAppId $clientAppId -clientAppSecret $ClientAppSecret -clientAppSpObjectId  $clientAppSpId -microserviceSpObjectId $MicrosoftDynamicsERPMicroservicesAppObjectId -userSpObjectId $user.ObjectId -Force -ErrorAction Stop
+    }
+    catch {
+        $ErrorMessage = $_.Exception.Message
+        if ($ErrorMessage.Contains("not allowed to be updated"))
+        {
+            Write-Error ($ErrorMessage)
+            Write-Warning "Some items in the existing resource group $FullResourceGroupName could not be updated. To resolve the issue, remove the existing resource group $FullResourceGroupName and run the script again."
+        }
+        else {
+            throw
+        }
 
+    }
     if ($deployment.ProvisioningState -eq 'Succeeded') {
         Write-Output "Successfully deployed the following resources to Azure:"
         Write-Output ("  Key Vault:                         " + $deployment.Outputs.keyVaultName.Value)
         Write-Output ("  Storage Account:                   " + $deployment.Outputs.storageAccountName.Value)
+        
+        $keyVault = Get-AzKeyVault -VaultName $deployment.Outputs.keyVaultName.Value
+        $tenantId = (Get-AzContext).Tenant.Id
+
+        Write-Output "Values for LCS Data Lake Add-In:"
+        Write-Output ("  Tenant ID:                         " + $tenantId)
+        Write-Output ("  DNS Name:                          " + $keyVault.VaultUri)
+        Write-Output "  Storage account secret name:       storage-account-name"
+        Write-Output "  Application ID secret name:        app-id"
+        Write-Output "  Application Secret secret name:    app-secret"
+        Write-Warning "Copy this information for the LCS Add-in for easy access. Azure Cloud Shell will eventually time out and close."
+
+        Write-Output '================================================================================='
+        Write-Output "Values for System parameters > Data connections:"
+        Write-Output ("  Application ID:                    " + $clientAppId)
+        Write-Output ("  Application Secret:                " + $ClientAppSecret)
+        Write-Output ("  DNS name:                          " + $keyVault.VaultUri)
+        Write-Output "  Secret name:                       storage-account-connection-string"
+        Write-Warning "Copy this information for the System parameters for easy access. Azure Cloud Shell will eventually time out and close."
     }
     else {
         Write-Output ("Provisioning Azure resources failed with the following state: " + $deployment.ProvisioningState)
-        Write-Output ("Some of the resources may have been created in resource group: " + $resourceGroupName)
+        Write-Output ("Some of the resources may have been created in resource group: " + $FullResourceGroupName)
+    }
+}
+
+function Assert-ScriptSetup {
+    if ($PSVersionTable.PSEdition -ne 'Core' -or -not $env:ACC_TID) { 
+        throw "This script needs to be uploaded and run from Azure Cloud Shell (PowerShell)." 
+    }
+    
+    if ((Get-AzContext) -eq $null -and (Connect-AzAccount) -eq $null) {
+        throw 'Unable to connect to Azure account.'
+    }
+}
+
+function Set-AzureSubscription {
+    $azSubscription = $null
+    while (-not ($azSubscription)) {
+        $subscriptionId = (Read-Host -Prompt "Enter the Azure Subscription ID: (leave blank for default)")
+        if ([string]::IsNullOrWhitespace($subscriptionId)){
+            break
+        }
+        elseif (-not [guid]::TryParse($subscriptionId, $([ref][guid]::Empty))) {
+                Write-Warning "Azure Subscription ID must be a valid GUID."
+                continue
+        }
+
+        $azSubscription = Select-AzSubscription -SubscriptionId $subscriptionId
+    }
+}
+
+function Create-ADServicePrincipal {
+    param (
+        [string] $AppId
+    )
+
+    $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AppId + "'")
+    if (-not $service) {
+        New-AzureADServicePrincipal -AppId $AppId | Out-Null
+        $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AppId + "'")
+        Write-Host ("Added AAD Enterprise Application {0} with Application ID {1}" -f $service.DisplayName,$AppId)
+    }
+    else {
+        Write-Host ("Found AAD Enterprise Application {0} with Application ID {1}" -f $service.DisplayName,$AppId)
     }
 
-    Write-Output '================================================================================='
-
-    $keyVault = Get-AzKeyVault -VaultName $deployment.Outputs.keyVaultName.Value
-    Write-Output "Values for LCS Data Lake Add-In:"
-    Write-Output ("  Tenant ID:                         " + $subscriptionContext.Context.Subscription.TenantId)
-    Write-Output ("  DNS Name:                          " + $keyVault.VaultUri)
-    Write-Output "  Storage account secret name:       storage-account-name"
-    Write-Output "  Application ID secret name:        app-id"
-    Write-Output "  Application Secret secret name:    app-secret"
-    Write-Warning "Copy this information for the LCS Add-in as it is not saved. Azure Cloud Shell will eventually time out and close."
-
-    Write-Output '================================================================================='
-    Write-Output "Values for System parameters > Data connections:"
-    Write-Output ("  Application ID:                    " + $clientAppId)
-    Write-Output ("  Application Secret:                " + $ClientAppSecret)
-    Write-Output ("  DNS name:                          " + $keyVault.VaultUri)
-    Write-Output "  Secret name:                       storage-account-connection-string"
-    Write-Warning "Copy this information for the System parameters as it is not saved. Azure Cloud Shell will eventually time out and close."
+    return $service.ObjectId
 }
 
 $azureTemplate = @"
@@ -873,11 +733,17 @@ $azureTemplate = @"
 "@
 
 try {
+  Start-Transcript -path (Join-Path $HOME Provision-FinInsights-Azure.log)
   New-FinanceDataLakeAzureResources
 }
 catch {
   Write-Error $_.Exception.Message
-  Write-Warning $_.Exception.StackTrace
+
+  if ($PSItem.Exception.StackTrace -ne $null)
+  {
+      Write-Warning $_.Exception.StackTrace
+  }
+
   $inner = $_.Exception.InnerException
   while ($null -ne $inner) {
     Write-Output 'Inner Exception:'
@@ -886,22 +752,14 @@ catch {
     $inner = $inner.InnerException
   }
 }
+finally {
+  Stop-Transcript
+}
 
 ```
 ---
 
-## Configure the entity store
 
-Follow these steps to set up the entity store in your Finance environment.
-
-1. Go to **System administration \> Setup \> System parameters \> Data connections**.
-2. Set the **Enable Data Lake integration** option to **Yes**.
-3. Set the following Key Vault fields:
-
-    - **Application (client) ID** – Enter the application client ID that you created earlier.
-    - **Application Secret** – Enter the secret that you saved for the application that you created earlier.
-    - **DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.
-    - **Secret name** – Enter **storage-account-connection-string**.
 
 ## Configure the data lake
 
@@ -933,11 +791,26 @@ The add-in will be installed within a few minutes.
 
     | Value                                                    | Description |
     |----------------------------------------------------------|-------------|
-    | CDS Organization URL                                     | The Dataverse organization URL of the Dataverse instance. To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Advanced settings**, and copy the URL. (The URL ends with "dynamics.com.") |
-    | CDS Org ID                                               | The environment ID of the Dataverse instance. To find this value, open the [Power Apps portal](https://make.powerapps.com), select the **Settings** button (gear symbol) in the upper-right upper corner, select **Customizations \> Developer resources \> Instance Reference Information**, and copy the **ID** value. |
-    | CDS Tenant ID (Directory ID from AAD)               | The tenant ID of the Dataverse instance. To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value. |
-    | Provide user object ID who has system administrator role | The Azure AD user object ID of the user in Dataverse. This user must be a system administrator of the Dataverse instance. To find this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory \> Users**, select the user, and then, in the **Identity** section, copy the **Object ID** value. |
-    | Is this the default CDS environment for the tenant?      | If the Dataverse instance was the first production instance that was created, select this check box. If the Dataverse instance was manually created, clear this check box. |
+    | CDS Organization URL                                     | The Dataverse organization URL copied from above. |
+    | CDS Org ID                                               | The Dataverse organization ID copied from above. |
+5. Enable **Is this the default environment for you Tenant**.
+
+The add-in might take several minutes to install.
+    
+## Configure the entity store
+
+Follow these steps to set up the entity store in your Finance environment.
+
+1. Go to **System administration \> Setup \> System parameters \> Data connections**.
+2. Set the following key vault fields:
+
+    - **Application (client) ID** – Enter the application client ID that you created earlier.
+    - **Application Secret** – Enter the secret that you saved for the application that you created earlier.
+    - **DNS name** – You can find the Domain Name System (DNS) name on the application details page for the application that you created earlier.
+    - **Secret name** – Enter **storage-account-connection-string**.
+3. Enable **Enable Data Lake integration**.
+4. Select **Test Azure Key Vault** and verify there are no errors.
+5. Select **Test Azure storage** and verify there are no errors.
 
 ## Feedback and support
 
@@ -946,3 +819,6 @@ Please send an email to [Customer payment insights (Preview)](mailto:fiap@micros
 ## Privacy notice
 
 Previews (1) might use less privacy and fewer security measures than the Dynamics 365 Finance and Operations service, (2) aren't included in the service level agreement (SLA) for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) have limited support.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

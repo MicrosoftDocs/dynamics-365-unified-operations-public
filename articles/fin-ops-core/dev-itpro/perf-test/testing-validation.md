@@ -1,17 +1,11 @@
 ---
-# required metadata
-
 title: Testing and validations
 description: This tutorial shows you how to create and run test cases.
 author: jorisdg
-manager: AnnBe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
-
-# optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
@@ -35,8 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial shows you how to create and run test cases.
 
-Prerequisites
--------------
+## Prerequisites
 
 You will need to deploy Developer Topology with Developer and Build VM.
 
@@ -47,7 +40,7 @@ You will need to deploy Developer Topology with Developer and Build VM.
 -   Import Task Recorder recordings into Visual Studio to generate test code.
 -   Integrate a Test module with a build machine.
 
-[![Integrate a test module](./media/54.png)](./media/54.png)  
+[![Integrate a test module.](./media/54.png)](./media/54.png)  
 
 ## Use SysTest Framework to author unit/component test code
 You can create new test cases to test the functionality in an application.
@@ -60,12 +53,12 @@ You can create new test cases to test the functionality in an application.
 1.  In **Solution Explorer**, right-click the new project, and then click **Properties**.
 1.  Set the **Model** property to **FleetManagementUnitTests**, and then click **OK**. 
 
-    [![Model property](./media/56.png)](./media/56.png)
+    [![Model property.](./media/56.png)](./media/56.png)
 
 1.  Right-click the FleetManagementUnitTestSample project, point to **Add**, and then click **New Item**.
 1.  In the **Add New Item** window, select **Class** as the type of element to add. Name the new class FMUnitTestSample, and then click **Add**. 
 
-    [![Add new item](./media/57.png)](./media/57.png)
+    [![Add new item.](./media/57.png)](./media/57.png)
 
 1. In the first line of the code for the new class, indicate that the class extends the SysTestCase class.
 1. Add the following code to define the methods for the class. These methods define two additional tests.
@@ -128,7 +121,7 @@ You can create new test cases to test the functionality in an application.
 1. Click **Run selected test** to execute specific test case.
 1. Test Explorer will show the results of test after it is complete. 
 
-    [![Completed test](./media/59-300x290.png)](./media/59.png)
+    [![Completed test.](./media/59-300x290.png)](./media/59.png)
 
 ## Test isolation
 For a test to be of high value it must be reliable. A test will pass or fail consistently, independent of other factors such as other tests. One typical cause of unreliable tests is leaking state, such as data left behind in the data base that influences downstream tests. To prevent this type of issue, you can use the ```SysTestTransaction``` attribute.
@@ -150,13 +143,13 @@ Example:
 ## Test module creation to manage test code and FormAdaptors
 Creating a test specific module helps to keep test code together and manageable.
 
-1. Open **Visual Studio** and go to **Finance and Operations** > **Model Management** > **Create model**.
+1. Open **Visual Studio** and go to **Dynamics 365** > **Model Management** > **Create model**.
 
 2. Enter the model name, select the layer, and then enter any additional details. Note that it's a good idea to include the word **Test** in the name of the test module. The default build definition is configured to discover all test modules that contain the word **Test**. 
    
 3. Because this model holds forms from the Application Platform/Foundation, add references to models shown below.
 
-    [![Model references](./media/62-1024x786.png)](./media/62.png)
+    [![Model references.](./media/62-1024x786.png)](./media/62.png)
 
 After the base test module is in place, you can import a Task Recorder recording to generate test code. When you import a Task Recorder recording XML, test code is generated using FormAdaptors. Form adaptors are wrapper classes over forms which provide strongly typed API that can be used to test form functionality. We have included pre-generated FormAdapters for each package for built-in forms. In the test module, add a reference to the corresponding Form Adaptor for packages and Test Essentials, which has helper methods to execute test code.
 
@@ -165,11 +158,11 @@ You can generate test code from Task Recorder recording to execute headless (non
 
 1. Record a scenario in by using Task Recorder.
 
-2. To import a Task Recording, in Visual Studio, click **Finance and Operations** > **Addins** > **Import Task Recording**. 
+2. To import a Task Recording, in Visual Studio, click **Dynamics 365** > **Addins** > **Import Task Recording**. 
 
 3. In the **Import Task Recording** dialog, select the Test Module (ISVTestModule) under which you want to import task recording, and browse to recording xml file. 
 
-    [![Test module](./media/64-249x300.png)](./media/64.png)
+    [![Test module.](./media/64-249x300.png)](./media/64.png)
 
 4. The task recording import process generates test code that is based on the SysTestAdapter and FormAdaptor which can be viewed in Visual Studio IDE. We do not expect you to change any test source code that is generated as part of this step.
   
@@ -181,13 +174,16 @@ You can generate test code from Task Recorder recording to execute headless (non
 
 6. From menu options, select **Test** &gt; **Windows**, and then click **Test Explorer**. After the Test Explorer window is open, it will try to discover test from test code and list all the available tests as shown below.
 
-    [![Test explorer](./media/67-1024x658.png)](./media/67.png)
+    [![Test explorer.](./media/67-1024x658.png)](./media/67.png)
 
 7. Select the test and then click **Run** &gt; **Execute selected**. This will execute test against the locally deployed environment. 
 
-    [![Execute selected](./media/68-1024x652.png)](./media/68.png)
+    [![Execute selected.](./media/68-1024x652.png)](./media/68.png)
 
 ## Integration of the test module with build process
 After the test module is a part of source control, the build process template will discover all test modules, which contain the word **Test** in the name. The following illustration shows build and test execution as part of Visual Studio Online. 
 
-[![Build and test execution](./media/69.png)](./media/69.png)
+[![Build and test execution.](./media/69.png)](./media/69.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

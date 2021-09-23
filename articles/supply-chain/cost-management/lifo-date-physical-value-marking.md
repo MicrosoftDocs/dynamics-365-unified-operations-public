@@ -4,11 +4,9 @@
 title: LIFO Date with physical value and marking
 description: Last in, First out Date (LIFO Date) is an inventory model based on the LIFO principle. Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction. By using LIFO Date, if there is no receipt before the issue, the issue is settled against any receipts that occur after the date of the issue. Several issues on the same date may be settled in the order of last issue, last receipt. 
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -61,7 +59,7 @@ In this example, the item model group isn't marked to include physical value. Th
 
 The new running average cost price reflects the average of the financially updated transactions at USD 15.00. 
 
-The following illustration shows the effects of the LIFO Date inventory model when the **Include physical value** option isn't used. ![LIFO Date with Include Physical Value](./media/lifodatewithoutincludephysicalvalue.gif) 
+The following illustration shows the effects of the LIFO Date inventory model when the **Include physical value** option isn't used. ![LIFO Date with Include Physical Value.](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -96,7 +94,7 @@ The illustration that follows shows these transactions:
 
 The new running average cost price reflects the average of the financially updated transactions at USD 20.00. 
 
-The following illustration shows the effects of the LIFO inventory model when the **Include physical value** option is used. ![LIFO Date with Include Physical Value](./media/lifodatewithincludephysicalvalue.gif) 
+The following illustration shows the effects of the LIFO inventory model when the **Include physical value** option is used. ![LIFO Date with Include Physical Value.](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -142,7 +140,7 @@ The illustration that follows shows these transactions:
 
 The new running average cost price reflects the average of the financially and physically updated transactions at USD 27.50. 
 
-The following illustration shows the effects of the LIFO inventory model when marking between issues and receipts is used. ![LIFO Date with Marking](./media/lifodatewithmarking.gif) 
+The following illustration shows the effects of the LIFO inventory model when marking between issues and receipts is used. ![LIFO Date with Marking.](./media/lifodatewithmarking.gif) 
 
 **Key to the diagram**
 
@@ -160,3 +158,6 @@ The following illustration shows the effects of the LIFO inventory model when ma
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

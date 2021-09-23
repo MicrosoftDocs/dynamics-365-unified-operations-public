@@ -4,11 +4,9 @@
 title: Canadian Harmonized sales tax
 description: This topic provides information about the functionality to support Harmonized sales tax for the public sector.
 author: velofog
-manager: Ann Beebe
 ms.date: 04/2/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -76,7 +74,7 @@ To be applied, the sales tax codes defined here must be present in the HST rule 
 
 The order in which rules are applied are somewhat complex. The following graphic illustrates the principle:
 
-> [![Define HST rules](./media/define-hst-rules.png)](./media/define-hst-rules.png)
+> [![Define HST rules.](./media/define-hst-rules.png)](./media/define-hst-rules.png)
 
 The sales tax codes selected for the dimension line will be following if the transaction uses a Sales tax group and Item sales tax group with all of the tax codes included.
 
@@ -87,3 +85,6 @@ The sales tax codes selected for the dimension line will be following if the tra
 |	Fund 101, Division 121	                | Tax2, Tax3      |
 |	Fund 303, Any Division except 141	      | Tax1, Tax2, Tax3|
 |	Fund 303, Division 141	                | Tax1            |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Create an original budget and then reverse preliminary budget entries in the public sector
 description: This topic provides information about how to create and reverse an original budget entry using budget model and dimension values that have preliminary budget amounts. 
 author: twheeloc
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -52,3 +50,6 @@ When you create an original budget entry and use the budget model and dimension 
     * To make optional selections, click the Unlock icon at the top of the page.  
 18. Click Update.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

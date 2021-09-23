@@ -4,11 +4,9 @@
 title: Extend Commerce Data Exchange - Real-time Service
 description: This topic explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class.
 author: mugunthanm
-manager: AnnBe
 ms.date: 11/30/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -33,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can extend Commerce Data Exchange (CDX) - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables clients to interact with Commerce functionality in real time.
+This topic explains how you can extend Commerce Data Exchange (CDX) - Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables clients to interact with Commerce functionality in real time. Finance and Operation databases and classes can’t be accessed directly from Retail server. You should access them through the CDX class extension using the Finance and Operations and Commerce Runtime extension.
 
 To extend Commerce Data Exchange - Real-time Service, you create a new method in the **RetailTransactionServiceEx** class. This method must meet the following criteria:
 
@@ -70,7 +68,7 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
 
 11. In the code editor, add the following code. 
 
-    ```C#
+    ```X++
     [ExtensionOf(classStr(RetailTransactionServiceEx))]
     final class ContosoRetailTransactionServiceSample
     {
@@ -79,27 +77,27 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
 
 12. Inside the class, add a new method to do your custom logic. This is the method that you will call from CRT to do the custom logic.
 
-    ```C#
+    ```X++
     [ExtensionOf(classStr(RetailTransactionServiceEx))]
-    final class ContosoRetailTransactionServiceSample
+    final class ContosoRetailTransactionServiceSample_Extension
     {
         public static container SerialCheck(str _serialNum)
         {
             boolean success = false;
             str errorMessage;
             int fromLine;
-
-            ttsbegin;
-
+            
             try
             {
                 if (_serialNum)
                 {
-                    // check whether the serial number exists
+                     ttsbegin;
+                   // check whether the serial number exists
 
                     // Add your custom logic
 
                     errorMessage = "Serial number found";
+                    ttscommit;
                 }
                 else
                 {
@@ -110,10 +108,9 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
             }
             catch (Exception::Error)
             {
+                ttsAbort;
                 error = RetailTransactionServiceUtilities::getInfologMessages(fromLine);
             }
-
-            ttscommit;
 
             // Return sanitized error code.
             errorMessage = RetailTransactionServiceUtilities::getErrorCode(errorMessage);
@@ -172,3 +169,6 @@ if(request.RequestContext.Runtime.Configuration.IsMasterDatabaseConnectionString
 ```
 
 -   If the connection to the CDX method failed, an error message might display saying that the operation cannot be performed if there is no connectivity to HQ or that you need to have mitigation logic if this operation needs to work if there is no connectivity to the CDX method.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

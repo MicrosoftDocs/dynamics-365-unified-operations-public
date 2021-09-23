@@ -2,13 +2,11 @@
 # required metadata
 
 title: Self-service upgrade to the latest version
-description: This topic explains the process for moving to the latest update of Finance and Operations.
+description: This topic describes the process for moving to the latest update of Finance and Operations.
 author: laneswenka
-manager: AnnBe
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -212,7 +210,7 @@ After you've signed off on your upgrade, you must update aggregate measurements.
 
 After you've committed the upgrade in the sandbox UAT environment, you've finished the upgrade process in the sandbox environment. You can now begin the same process in your production environment. The steps that you follow are the same.
 
-If you encounter an issue that causes excessive downtime during your production upgrade, use the [Report production outage](https://docs.microsoft.com/business-applications-release-notes/April18/dynamics365-finance-operations/report-production-outage) process to alert Microsoft and get help.
+If you encounter an issue that causes excessive downtime during your production upgrade, use the [Report production outage](/business-applications-release-notes/April18/dynamics365-finance-operations/report-production-outage) process to alert Microsoft and get help.
 
 ### Upgrade additional environments
 
@@ -235,3 +233,6 @@ This DVT error is intermittent and can be resolved by using the **Resume** butto
 **Application configuration sync failed. Call to TTSCOMMIT without first calling TTSBEGIN.**
 
 This TTSCOMMIT error is intermittent and can be resolved by using the **Resume** button for your data upgrade package. When you select **Resume**, the process resumes at the same step. (This issue is fixed in PU 21.)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

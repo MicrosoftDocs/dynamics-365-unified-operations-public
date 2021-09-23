@@ -4,11 +4,9 @@
 title: Publish journal lines and documents from Excel
 description: This topic explains how to enter and publish lines for general journals from Microsoft Excel. It includes information about the various templates that you can use, depending on the type of transactions that you're entering.
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -37,9 +35,8 @@ This topic explains how to enter and publish lines for general journals from Mic
 
 Users can enter and publish lines for financial journals from Microsoft Excel. After a user creates a journal, the **Open lines in Excel** button displays the templates that are available. Templates are designed to support specific scenarios, however not every combination of account type is supported in the journal. The following table shows the templates that are available and the account types which they support.
 
-|                          |                                                                                                                         |                                                                                         |
+| Template             | Supported account types | How to access the template                                                          |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **Template**             | **Supported account types**                                                                                             | **How to access the template**                                                          |
 | Ledger journal lines     | Account: Ledger, Customer, Vendor, Bank Offset account: Ledger, Customer, Vendor, Bank Intercompany is supported.       | General journal                                                                         |
 | Invoice register         | Account: Vendor Offset account: Ledger Intercompany isn't supported.                                                    | AP invoice register                                                                     |
 | Invoice journal          | Accounts: Vendor Offset account: Ledger Intercompany is supported.                                                      | AP invoice journal                                                                      |
@@ -53,9 +50,12 @@ Users can enter and publish lines for financial journals from Microsoft Excel. A
 
 When the lines are published, they are validated to make sure that they comply with the rules that are set up in the financial journals. After the lines are published, users can edit or post the vouchers from Dynamics 365 Finance. 
 
-To add financial dimensions to a template, additional changes are required. For additional information, see [Add dimensions to the Microsoft Excel template](../../dev-itpro/financial/add-dimensions-excel-templates.md). After dimensions are added to the entity, they are available in the Excel designer and can be added to the template.
+To add financial dimensions to a template, additional changes are required. For additional information, see [Add dimensions to the Microsoft Excel template](../../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md). After dimensions are added to the entity, they are available in the Excel designer and can be added to the template.
 
 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

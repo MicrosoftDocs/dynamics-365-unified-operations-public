@@ -4,11 +4,9 @@
 title: Impairment accounting for fixed assets for Japan
 description: This topic includes information about impairment accounting for fixed assets in Japan.
 author: yijialuan
-manager: AnnBe
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -75,3 +73,6 @@ Yes, you can generate the following reports that contain information about impai
 - [Setup impairment accounting common parameters and posting profile](./tasks/impairment-accounting.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

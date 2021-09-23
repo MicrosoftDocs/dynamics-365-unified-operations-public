@@ -4,11 +4,9 @@
 title: Run and monitor an experiment
 description: This topic describes how to run and monitor an experiment in a third-party service. It also describes how to make changes to variations after the experiment started.
 author:  sushma-rao 
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -34,7 +32,7 @@ This topic describes how to run and monitor your experiment in a third-party app
 
 The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate topics.
 
-[ ![Experimentation user journey - Run & Monitor](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
+[ ![Experimentation user journey - Run & Monitor.](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 
 After you publish your variations, all of the steps you need to do in Commerce to run your experiment are complete. The next step is determining which variation to show to each user when they request a page. The third-party service makes that determination, but first you have to activate the experiment within the service. Since the steps for activating an experiment vary from service to service, you'll need to follow the instructions included with your service or provider. If the experiment is not activated, users will only see the default version of the page (no variations will be displayed).
 
@@ -56,3 +54,6 @@ If for any reason you need to modify your variations, follow the steps below.
 
 ## Next step
 [Promote a variation and complete an experiment](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

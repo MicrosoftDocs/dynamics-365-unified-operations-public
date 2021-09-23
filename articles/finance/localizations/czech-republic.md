@@ -4,11 +4,9 @@
 title: Czech Republic overview
 description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to the Czech Republic.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -18,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-# ms.custom
+ms.custom: "intro-internal"
 ms.search.region: Czech Republic
 # ms.search.industry: 
 ms.author: roschlom
@@ -96,5 +94,8 @@ For more information, see [Year-end close for Czech Republic and Hungary](emea-c
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: Czech Republic report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/CzechRepublic.html)
-- [Electronic reporting overview](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

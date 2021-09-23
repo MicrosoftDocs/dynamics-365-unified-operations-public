@@ -4,11 +4,9 @@
 title: Manage Content Security Policy (CSP)
 description: This topic describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -33,8 +31,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 CSP is an additional layer of security that helps detect and mitigate some types of web attacks. The purpose of these attacks can range from data theft, to site defacement, to the distribution of malware. CSP provides an extensive set of policy directives that help you control the resources that a site page is allowed to load. Each directive defines the restrictions for a specific type of resource.
 
 When CSP is turned on for an e-Commerce site, it helps enhance security by blocking connections, scripts, fonts, and other types of resources that originate from unknown or malicious sources. In Dynamics 365 Commerce, CSP is turned on by default. However, it will likely require additional configuration for most sites. The Dynamics 365 Commerce online software development kit (SDK) provides a default list of allowed source URLs that style, script, and application programming interface (API) calls can be made from. You can edit this list on the **Extensions** tab in the site builder tool.
@@ -53,7 +49,7 @@ To turn off CSP for a site, follow these steps.
 1. Select **Site settings**, and then select the **Extensions** tab.
 1. On the **Content security policy** tab, select the **Disable content security policy** check box.
 
-    ![Disable content security check box on the Content Security Policy tab](media/content-security-policy-disable.png)
+    ![Disable content security check box on the Content Security Policy tab.](media/content-security-policy-disable.png)
 
 1. Select **Save and publish**.
 
@@ -103,7 +99,7 @@ The following example procedure shows how to configure a CSP directive so that a
 1. Select **Site settings**, and then select the **Extensions** tab.
 1. On the **Content security policy** tab, under **script-src**, select **Add**, and then enter the full URL of the external script that should be called.
 
-    ![URL for an external script on the Content Security Policy tab](media/content-security-policy.png)
+    ![URL for an external script on the Content Security Policy tab.](media/content-security-policy.png)
 
 1. Select **Save and publish**.
 
@@ -113,7 +109,7 @@ When you first configure CSP for a site, some pages probably won't be loaded at 
 
 The following illustration shows an example of CSP errors in a web browser's developer tools.
 
-![CSP errors in a web browser's developer tools](media/content-security-policy-errors.png)
+![CSP errors in a web browser's developer tools.](media/content-security-policy-errors.png)
 
 There are two CSP errors in this example:
 
@@ -122,7 +118,7 @@ There are two CSP errors in this example:
 
 The following screenshot shows what the fixed settings look like on the **Content Security Policy** tab in Commerce.
 
-![Fixed settings on the Content Security Policy tab](media/content-security-policy-fixed.png)
+![Fixed settings on the Content Security Policy tab.](media/content-security-policy-fixed.png)
 
 ## Update page mocks that use CSP
 
@@ -157,3 +153,6 @@ You can turn off CSP in a page mock by using the following code.
 [Add script code to site pages to support telemetry](add-telemetry.md)
 
 [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: GDPR data requests for Lifecycle Services (LCS)
 description: This topic offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). 
 author: tfehr
-manager: AnnBe
 ms.date: 05/18/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -46,3 +44,6 @@ To export a user, the administrator can use filtering to find a specific user, s
 ## Additional resources
 - [Official GDPR site](https://www.eugdpr.org/)
 - [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77b002ad-06f7-4a9b-8493-e18e2cb0577f&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

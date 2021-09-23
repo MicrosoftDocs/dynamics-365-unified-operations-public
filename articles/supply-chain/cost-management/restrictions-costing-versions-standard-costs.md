@@ -4,11 +4,9 @@
 title: Restrictions on costing versions for standard costs
 description: This topic describes the restrictions that apply to a costing version for standard costs. 
 author: AndersGirke
-manager: tfehr
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,8 +44,7 @@ The following restrictions help guarantee adherence to standard costing principl
 
 The item cost data for standard costs can be copied to another costing version that contains standard costs or planned costs. However, the item cost data for planned costs can't be copied to a cost version that contains standard costs, because the restrictions that are listed earlier in this topic don't apply to planned costs.
 
-Related topics
---------
+## Related topics
 
 [Costing versions overview](costing-versions.md)
 
@@ -55,3 +52,6 @@ Related topics
 
 [Prepare to maintain standard costs for manufactured items](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

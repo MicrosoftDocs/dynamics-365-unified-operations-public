@@ -4,11 +4,9 @@
 title: What's new or changed in Finance and Operations apps version 10.0.5 (October 2019)
 description: This topic describes features that are either new or changed in Finance and Operations apps version 10.0.5. This version releases in October.
 author: tonyafehr
-manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -36,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic describes features that are either new or changed in Finance and Operations apps, including Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management version 10.0.5. This version has a build number of 10.0.197. While the general availability date is in October, the new features are available for early release in August. For more information about version 10.0.5, see [Additional resources](whats-new-changed-10-0-5.md#additional-resources).
 
 
-To learn about the new features and changes in the latest releases of Dynamics 365 Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.5](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5).
+To learn about the new features and changes in the latest releases of Dynamics 365 Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.5](../../../commerce/get-started/whats-new-10-0-5.md).
 
 
 ## Revenue recognition
@@ -75,7 +73,7 @@ This feature helps you control the currency (either the accounting or reporting 
 
 You can now define the currency gender. On **Currencies** page, select **Declension**. In the **Gender** field, select **Masculine**, **Feminine**, or **Neuter**. This parameter may have influence on declension of the amount written in text in local language on a Cash order. For example, if the amount of 1,01 EUR is written in English text as *One euro 01 cent* on a cash order, when you set up **Gender** for EUR currency as **Neuter**, this amount will be translated to Czech language and written on a cash order as *Edno euro 01 cent*.
 
-For information about existing functionality, see [Update how amounts are displayed on reports and documents](https://docs.microsoft.com/dynamics365/finance/localizations/emea-amount-printing-forms).
+For information about existing functionality, see [Update how amounts are displayed on reports and documents](../../../finance/localizations/emea-amount-printing-forms.md).
 
 ## Cash control (Public Sector)
 
@@ -90,7 +88,7 @@ You can validate whether the default dimensions for a forecast position are corr
 ## Deferred put
 The deferred processing functionality lets warehouse workers continue to do other work while the put operation is processed in the background. Deferred processing is useful when many work lines must be processed and the worker can let that work be processed asynchronously. It's also useful when the server can have ad-hoc or unplanned increases in processing time, and the increased processing time might affect the user's productivity.
 
-For more information, see [Deferred processing of warehouse work](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/deferred-put)
+For more information, see [Deferred processing of warehouse work](/dynamics365/unified-operations/supply-chain/warehousing/deferred-put)
 
 ## Journal unlock
 A new button is available on the journal page to unlock a journal that has a status of **Locked by system** set to Yes. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named **Journal Unlock button** on the **Feature management** page.
@@ -106,7 +104,7 @@ Version 10.0.5 includes Platform update 29. To learn more about Platform update 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated.
@@ -117,3 +115,6 @@ The [Removed or deprecated features for Finance and Operations](../../dev-itpro/
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

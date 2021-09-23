@@ -4,11 +4,9 @@
 title: Depreciation effects with reversals
 description: This article discusses potential implications of reversing a fixed asset transaction. 
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -93,10 +91,12 @@ Depreciation is understated by 16.95 (983.62 - 966.67).
 
 
 
-Additional resources
---------
+## Additional resources
 
 [Fixed asset depreciation](fixed-asset-depreciation.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

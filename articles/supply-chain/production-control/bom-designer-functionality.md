@@ -4,11 +4,9 @@
 title: BOM designer functionality
 description: This topic describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs).
 author: cvocph
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -124,3 +122,6 @@ Click **Setup** to customize the information that is shown in the tree view of t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

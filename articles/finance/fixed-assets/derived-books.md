@@ -4,11 +4,9 @@
 title: Derived books
 description: This article provides an overview of derived book functionality.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,3 +50,6 @@ For more information, see [Post with derived books](post-derived-value-models.md
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

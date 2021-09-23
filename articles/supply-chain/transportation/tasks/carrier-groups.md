@@ -4,11 +4,9 @@
 title: Carrier groups
 description: This topic describes how to set up data for carrier groups.
 author: Henrikan
-manager:  
 ms.date: 10/30/2020
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -40,3 +38,6 @@ When multiple shipping carriers and carrier services exist for the same route se
 1. In the **Name** field, enter a descriptive name for the group.
 1. On the **Details** FastTab, add a row, and select a shipping carrier and a carrier service for it. Repeat this step until you've added as many carriers as you require for the group.
 1. Close the page.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: Prepare a process kanban job when materials are not available for the work cell
 description: This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse. 
 author: ChristianRytt
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -53,3 +51,6 @@ This procedure focuses on preparing a process kanban job when some materials are
 6. Click Prepare.
     * Notice that an icon in the Job status indicates that the job is now ready.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

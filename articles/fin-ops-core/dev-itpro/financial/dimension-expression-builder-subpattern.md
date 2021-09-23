@@ -3,12 +3,10 @@
 
 title: Dimension Expression Builder subpattern
 description: This article describes the Dimension Expression Builder subpattern, which is applied to container controls that use the Dimension Expression Builder control.  
-author: jasongre
-manager: AnnBe
+author: RyanCCarlson2
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -23,7 +21,7 @@ ms.custom: 29451
 ms.assetid: 6ab0f75d-3168-4dfe-b2ce-d17d3861216e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jasongre
+ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -35,13 +33,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes the Dimension Expression Builder subpattern, which is applied to container controls that use the Dimension Expression Builder control.  
 
-Usage
------
+## Usage
 
 The Dimension Expression Builder pattern is used when you have a group or tab page that uses the Dimension Expression Builder control.
 
 ## Wireframe
-[![dimensionExpressionBuilderWireframe](./media/dimensionexpressionbuilderwireframe.png)](./media/dimensionexpressionbuilderwireframe.png)
+
+[![Wireframe for container.](media/dimensionexpressionbuilderwireframe.png)](./media/dimensionexpressionbuilderwireframe.png)
 
 ## Model
 ### High-level structure
@@ -64,7 +62,7 @@ Dimension Expression Builder
 None
 
 ## Examples
-Form: **BudgetControlConfiguration (RulesDetailsCriteriaFastTabPage)** (**Budgeting** &gt; **Setup** &gt; **Budget control** &gt; **Budget control configuration**) [![dimensionExpressionBuilderExample](./media/dimensionexpressionbuilderexample.png)](./media/dimensionexpressionbuilderexample.png)
+Form: **BudgetControlConfiguration (RulesDetailsCriteriaFastTabPage)** (**Budgeting** &gt; **Setup** &gt; **Budget control** &gt; **Budget control configuration**) [![Example of form.](media/dimensionexpressionbuilderexample.png)](./media/dimensionexpressionbuilderexample.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -75,5 +73,4 @@ This section will have answers to frequently asked questions that are related to
 
 None
 
-
-
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

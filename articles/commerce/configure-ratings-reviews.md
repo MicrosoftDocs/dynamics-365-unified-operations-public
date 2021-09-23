@@ -4,11 +4,9 @@
 title: Configure ratings and reviews
 description: This topic describes how to configure your e-Commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/17/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -34,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to configure your e-Commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.
 
-## Overview
-
 Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision by showing them what other customers think about those products. For e-Commerce websites, ratings and reviews are also a mechanism for collecting customer feedback about products. 
 
 ## Configure a site to show ratings and reviews
@@ -53,7 +49,7 @@ To configure a site to show ratings and reviews, follow these steps.
 
 The following illustration shows what this configuration looks like in Dynamics 365 Commerce.
 
-![Configuring a site to show ratings and reviews](media/rnr-eCommerce-site-appsettings.png)
+![Configuring a site to show ratings and reviews.](media/rnr-eCommerce-site-appsettings.png)
 
 ## Link a product rating to the Reviews section of a PDP
 
@@ -67,7 +63,7 @@ To link a product rating to the **Reviews** section of the PDP, follow these ste
 
 The following illustration shows what this configuration looks like in Dynamics 365 Commerce.
 
-![Linking a product rating to the Reviews section of a PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Linking a product rating to the Reviews section of a PDP.](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## Configure the link for the privacy and policy page
 
@@ -82,7 +78,7 @@ To configure the link for the privacy and policy page, follow these steps.
 
 The following illustration shows what this configuration looks like in Dynamics 365 Commerce.
 
-![Configuring the link for the privacy and policy page](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Configuring the link for the privacy and policy page.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## Configure ratings and reviews modules on product details pages
 
@@ -99,3 +95,6 @@ For information on configuring ratings and reviews modules on product details pa
 [Configure ratings and reviews modules on product details pages](ratings-reviews-modules.md)
 
 [Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

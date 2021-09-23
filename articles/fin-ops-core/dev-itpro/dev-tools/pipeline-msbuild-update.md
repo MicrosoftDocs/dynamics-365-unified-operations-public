@@ -1,31 +1,16 @@
 ---
-# required metadata
-
 title: Update a legacy pipeline in Azure Pipelines
 description: This topic explains how to update a legacy pipeline in Azure Pipelines to use a newer version of Visual Studio.
 author: jorisdg
-manager: AnnBe
 ms.date: 09/23/2020
 ms.topic: article
-ms.prod: 
-ms.service: dynamics-ax-platform
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jorisde
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Update a legacy pipeline in Azure Pipelines
@@ -66,3 +51,6 @@ The following four properties, in three tasks in the pipeline, need to be update
 | Execute Tests | Test platform version | Visual Studio 2015 | Visual Studio 2017 |
 | Execute Tests | Other console options | `/Platform:X64 /InIsolation /UseVsixExtensions:true` | `/Platform:X64 /InIsolation /TestAdapterPath:"$(VsixExtensionFolder)"` |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

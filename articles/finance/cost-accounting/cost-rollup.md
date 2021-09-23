@@ -4,11 +4,9 @@
 title: Cost rollup policy and overhead calculation 
 description: This topic provides information about how to determine the correct level of secondary cost elements and create cost rollup rules that fit into organization reporting and cost traceability. 
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -52,7 +50,7 @@ To avoid these implications, Cost accounting lets you configure cost allocation 
 
 Imagine that an organization has the following structure with 4 cost centers.
 
-![Example of an organization structure](./media/dimension-hierarchy-org.png)
+![Example of an organization structure.](./media/dimension-hierarchy-org.png)
 
 **Cost object dimension**
 
@@ -157,8 +155,7 @@ Cost allocation rules can be set up as follows.
 | CC001                                | Total         | **HR services**        |
 | CC002                                | Total         | **Financial services** |
 
-<br>How cost flows between cost centers 
----------------------------------------------------
+## <br>How cost flows between cost centers 
 
 If you want to learn how cost flows between the cost centers in the organization, you can create cost elements of the type **Secondary** for each cost center. These cost elements will then be used to transfer balances between the cost centers during the overhead calculation.
 
@@ -306,3 +303,6 @@ The clear separation between **Cost allocation** and **Cost rollup policies** pr
 -  [Cost element dimensions](cost-elements.md)
 -  [Dimension hierarchy](dimension-hierarchy.md)
 -  [Overhead calculation](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

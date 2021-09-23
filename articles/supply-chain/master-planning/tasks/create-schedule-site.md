@@ -4,11 +4,9 @@
 title: Create a schedule for a site
 description: This procedure shows how to schedule production orders that are not yet started for a site. 
 author: ShylaThompson
-manager: tfehr 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -58,3 +56,6 @@ This procedure shows how to schedule production orders that are not yet started 
 4. Click Materials.
     * On this page, you can see the estimated material consumption for the operations on the production order and the current available inventory.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

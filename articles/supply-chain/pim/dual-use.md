@@ -4,11 +4,9 @@
 title: Dual-use goods
 description: This topic explains how to keep track of products that are identified as dual-use goods, store certificate numbers for each relevant product and destination country, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -111,3 +109,6 @@ You use the **Dual use certificates** page to set up and manage the required dua
     | Print on invoice | Select this check box to print the certificate number on invoices that are addressed to the specified country during the specified date range. |
     | Print on packing slip | Select this check box to print the certificate number on packing slips that are addressed to the specified country during the specified date range. |
     | Print on sales order | Select this check box to print the certificate number on sales orders that are addressed to the specified country during the specified date range. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

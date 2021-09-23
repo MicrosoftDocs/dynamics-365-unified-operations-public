@@ -4,11 +4,9 @@
 title: Entity modeling
 description: This topic explains relational modeling concepts using virtual entities for Finance and Operations entities.
 author: Sunil-Garg
-manager: AnnBe
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod:
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -33,7 +31,7 @@ ms.dyn365.ops.version: 10.0.12
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](https://docs.microsoft.com/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
+> This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
 > The public entity name that is exposed in Dataverse metadata for the Finance and Operations virtual entity uses the physical name of the Finance and Operations entity. This could be different from the public name of the entity as exposed by the OData metadata in Finance and Operations apps.
 
@@ -47,7 +45,7 @@ By default, virtual entities for Finance and Operations apps don't exist in Data
 
 When a virtual entity is generated for a Finance and Operations entity, the system tries to create each field in the Finance and Operations entity in the corresponding virtual entity in Dataverse. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between Finance and Operations and Dataverse. For data types that are supported, the field properties in Dataverse are set based on the properties in Finance and Operations.
 
-This rest of this section describes supported and unsupported data types. For more information about fields in Dataverse, see [Fields overview](https://docs.microsoft.com/powerapps/maker/common-data-service/fields-overview).
+This rest of this section describes supported and unsupported data types. For more information about fields in Dataverse, see [Fields overview](/powerapps/maker/common-data-service/fields-overview).
 
 | Data type in Finance and Operations | Modeled data type in Dataverse |
 |-------------------------------------|------------------------------------------|
@@ -131,17 +129,17 @@ Note that if an error is encountered when any part of a Finance and Operations v
 
 Native entity–to–native entity relationships are the standard Dataverse functionality, where relationships are resolved by using the GUID of the related entity. (This GUID is the entity key.) The GUID identifies the unique entity record in the related entity.
 
-### Virtual entity–to–virtual entity relationships
+### Virtual table–to–virtual table relationships
 
-The relationships between two Finance and Operations virtual entities are driven by the relation metadata in the Finance and Operations entities. As was explained earlier, these relations are generated as relationships in Dataverse when the virtual entity is generated. As in the behavior for native entities in Dataverse, these relationships use the GUID to identify the unique record of the entity in Finance and Operations. Semantically, the GUID on the Finance and Operations virtual entity behaves like the GUID on the native Dataverse entity. For information about the implementation of the GUID in Finance and Operations virtual entities, see the [Entity key/primary key](entity-modeling.md#entity-keyprimary-key) section earlier in this topic.
+The relationships between two Finance and Operations virtual entities are driven by the relation metadata in the Finance and Operations entities. As was explained earlier, these relations are generated as relationships in Dataverse when the virtual entity is generated. As in the behavior for native entities in Dataverse, these relationships use the GUID to identify the unique record of the entity in Finance and Operations. Semantically, the GUID on the Finance and Operations virtual entity behaves like the GUID on the native Dataverse table. For information about the implementation of the GUID in Finance and Operations virtual entities, see the [Entity key/primary key](entity-modeling.md#entity-keyprimary-key) section earlier in this topic.
 
 In the preceding example, the GUID of the related entity is the entity key of Entity B and will be used to build queries to identify a record in Finance and Operation. The relation that Entity A has to Entity B will be used.
 
 Therefore, in effect, the entity name is the only information that is used in a relation that comes from Finance and Operations. The entity name gives access to the primary field in the related entity, so that it can be shown in the lookup. It also gives access to the GUID of the related entity, so that it can be used in other queries, as was explained earlier. The actual field that the relation is built on in the Finance and Operations entity isn't used at all.
 
-### Virtual entity–to–native entity relationship
+### Virtual table–to–native table relationship
 
-As was explained earlier, the GUID is the only information that is used to uniquely identify a record in a native Dataverse entity (including in native entity–to–native entity relationships) or in a Finance and Operations virtual entity (including in virtual entity–to–virtual entity relationships). However, consider an example where you want to show sales orders from Finance and Operations for Account A in Dataverse. The query that is sent to Finance and Operations for this relationship will have a WHERE clause on the GUID of the entity key of the native accounts entity in Dataverse, because the sales orders must be filtered for a specific account in Dataverse. However, because Finance and Operations doesn't have any information about the GUID of the entity in Dataverse, the query won't return any sales orders. The query will be successful only if the WHERE clause has conditions that are based on the fields that Finance and Operations understands.
+As was explained earlier, the GUID is the only information that is used to uniquely identify a record in a native Dataverse table (including in native entity–to–native entity relationships) or in a Finance and Operations virtual entity (including in virtual entity–to–virtual entity relationships). However, consider an example where you want to show sales orders from Finance and Operations for Account A in Dataverse. The query that is sent to Finance and Operations for this relationship will have a WHERE clause on the GUID of the entity key of the native accounts entity in Dataverse, because the sales orders must be filtered for a specific account in Dataverse. However, because Finance and Operations doesn't have any information about the GUID of the entity in Dataverse, the query won't return any sales orders. The query will be successful only if the WHERE clause has conditions that are based on the fields that Finance and Operations understands.
 
 Therefore, how can the GUID of the accounts entity in Dataverse be replaced with fields that are in Finance and Operations, in such a way that the query that is sent to Finance and Operations will return the correct list of sales orders?
 
@@ -195,7 +193,7 @@ Note that Finance and Operations virtual entities support only the reading of at
 
 ## OData actions
 
-OData actions in the Finance and Operations entities are made available as custom actions in Dataverse. For more information about custom actions and what they enable in Dataverse, see [Custom actions](https://docs.microsoft.com/powerapps/developer/common-data-service/custom-actions).
+OData actions in the Finance and Operations entities are made available as custom actions in Dataverse. For more information about custom actions and what they enable in Dataverse, see [Custom actions](/powerapps/developer/common-data-service/custom-actions).
 
 Input and output parameters of the following types are supported. If an input or output parameter is of a different type, the OData action doesn't appear as the SDK message in Dataverse.
 
@@ -225,3 +223,6 @@ Finance and Operations create, read, update, and delete (CRUD) business logic on
 ## Calculated/unmapped fields
 
 Calculated and unmapped fields in Finance and Operations entities are also available in the corresponding virtual entities in Dataverse.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

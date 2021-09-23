@@ -4,11 +4,9 @@
 title: Clean up the TaxDocumentJSON table 
 description: This topic explains how free up space in the database by removing old data from the TaxDocumentJSON table.
 author: prabhatb
-manager: Annbe
 ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-applications
 ms.technology: 
 
 # optional metadata
@@ -65,6 +63,9 @@ Before you begin the cleanup, complete the following tasks:
 
 4. On the **Records to include** FastTab, specify the conditions that you confirmed with the customer's business department. For example, you've agreed to remove the tax document JSON before March 31, 2018. In this case, in the **Tax document extension information for India** section, in the **Transaction date** field, specify **31/3/2018**.
 
-    ![Transaction date field in the Tax document extension information for India section](media/tax-document-json-02.png)
+    ![Transaction date field in the Tax document extension information for India section.](media/tax-document-json-02.png)
 
 5. Select **OK** to start the cleanup.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

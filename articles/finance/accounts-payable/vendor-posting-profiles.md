@@ -4,11 +4,9 @@
 title: Vendor posting profiles
 description: Vendor posting profiles control the posting of vendor transactions to the general ledger.
 author: abruer
-manager: AnnBe
 ms.date: 06/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -35,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Vendor posting profiles control the posting of vendor transactions to the general ledger.
 
-Vendor posting profiles
------------------------
+## Vendor posting profiles
 
 Vendor posting profiles enable you to assign general ledger accounts and document settings to all vendors, a group of vendors, or a single vendor. These settings will be used when you create purchase orders, vendor invoices, and cash payments. For some transactions, you can select a posting profile that differs from and takes precedence over the posting profiles that are set up for transactions on this page. The default posting profile is defined on the **Ledger and Sales Tax** FastTab on the **Accounts payable parameters** page. The default posting profile is then included automatically on the header of new documents where you can change it to a different posting profile, if needed.
 
@@ -123,3 +120,6 @@ Specify the following values to set up your posting profile
 | **Settlement** | Select this option to enable automatic settlement of transactions that have this posting profile. If this option is cleared, you must manually settle transactions by using the **Settle open transactions** page. |
 | **Cancel**     | Select this option if you want to be able to cancel transactions that have this posting profile.                                                                                                               |
 | **Close**      | Select a posting profile to change to when transactions that have this posting profile are closed. A transaction is regarded as closed when it has been settled in full.                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

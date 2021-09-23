@@ -4,11 +4,9 @@
 title: Setup method of payment for ISO20022 direct debit
 description: This procedure shows how to set up the customer method of payment for ISO20022 direct debit or any other payment type using electronic reporting. 
 author: mrolecki
-manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
-ms.service: dynamics-ax-applications 
 ms.technology:  
  
 # optional metadata 
@@ -55,3 +53,6 @@ This is the third of five procedures that demonstrate the customer payment proce
     * Select the Require mandate parameter for customer payment formats, which require including mandate information in the payment message, like SEPA direct debit.  
 9. Click Save.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

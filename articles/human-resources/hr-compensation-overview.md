@@ -2,13 +2,11 @@
 # required metadata
 
 title: Compensation plans
-description: Compensation and Benefits Managers can use Compensation management to maintain and process fixed and variable compensation plans for the organization's employees.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+description: This topic describes how to use compensation management to manage and process compensation plans.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata
@@ -17,13 +15,13 @@ ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
-ms.custom: 7521
+ms.custom: "intro-internal"
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -31,7 +29,9 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Compensation plans
 
-Compensation and Benefits Managers can use Compensation management to maintain and process fixed and variable compensation plans for the organization's employees.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Compensation and benefits managers can use **Compensation management** to maintain and process fixed and variable compensation plans for the organization's employees.
 
 ### Introduction
 
@@ -48,7 +48,7 @@ The following table lists components of the compensation process that can be int
 <thead>
 <tr class="header">
 <th>Component</th>
-<th>More information…</th>
+<th>More information</th>
 </tr>
 </thead>
 <tbody>
@@ -94,7 +94,7 @@ The following table lists components of the compensation process that can be int
 </tr>
 <tr class="even">
 <td>Control point</td>
-<td>The control point defines what you consider to be the ideal pay rate for all employees at a compensation level. For grade plan structures, control points are typically the midpoint of the ranges. Band structures rarely use control points. You can specify the control point for a fixed compensation plan in the Fixed compensation plans form.</td>
+<td>The control point defines what you consider to be the ideal pay rate for all employees at a compensation level. For grade plan structures, control points are typically the midpoint of the ranges. Band structures rarely use control points. You can specify the control point for a fixed compensation plan in the **Fixed compensation plans** page.</td>
 </tr>
 <tr class="odd">
 <td>Job functions</td>
@@ -126,8 +126,7 @@ The following table lists components of the compensation process that can be int
 ## Process events
 A process event calculates compensation information for a specific period for all employees who are enrolled in one or more fixed or variable compensation plans. You can run a process event repeatedly to test or update calculated compensation results.
 
-Compensation events
--------------------
+## Compensation events
 
 Each time a process event is run, a compensation event is created.  Compensation events contain the results of the compensation process for each employee included in that process event.  When the calculations are correct, you can load the compensation event to update the compensation records for the employees who are affected by the process event.
 
@@ -136,3 +135,6 @@ After you run a process event, you can recommend adjustments to an employee’s 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

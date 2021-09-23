@@ -4,11 +4,9 @@
 title: Engineering companies and data ownership rules
 description: This topic explains how you can use one or more engineering companies to ensure that the master data for products is centrally created and maintained. An engineering company represents the company that owns the engineering products and its engineering-relevant data.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -70,3 +68,6 @@ Because the engineering company owns the engineering-relevant data, it controls 
 
     - When these documents are released to other legal entities, the documents are protected from being removed by the operational company.
     - Other legal entities can add completely new, local documents. The operational company owns and maintains these local documents.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

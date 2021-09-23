@@ -4,11 +4,9 @@
 title: Create item requirements for service orders 
 description: If you need to reserve specific items for a service order, you can create inventory item requirements for it.  
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -75,3 +73,6 @@ Item requirements for service orders are processed through a project. To create 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

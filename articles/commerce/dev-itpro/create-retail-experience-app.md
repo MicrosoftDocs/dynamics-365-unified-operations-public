@@ -4,11 +4,9 @@
 title: Create and apply branding to the Retail Experience app
 description: This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 author: josaw1
-manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
 ms.technology: 
 
 # optional metadata
@@ -42,7 +40,7 @@ The Retail Experience app supports the Android and iOS phone platforms. The app 
 
 You can download Xamarin from [Visual Studio Tools for Xamarin](https://www.xamarin.com/download). 
 
-For a tutorial that shows how to install Xamarin on Windows, see [Installing Xamarin](https://docs.microsoft.com/xamarin/get-started/installation/index?pivots=windows).
+For a tutorial that shows how to install Xamarin on Windows, see [Installing Xamarin](/xamarin/get-started/installation/index?pivots=windows).
 
 ### Update Xamarin
 
@@ -206,3 +204,6 @@ To learn how to maintain your signing identities and certificates, refer to [Wha
 
 > [!NOTE]
 > If you are using the certificates as a part of Apple Developer Enterprise Program and you install an app manually (such as for testing), then you must also manually establish trust. For more information, see [Install custom enterprise apps on iOS](https://support.apple.com/HT204460).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -4,11 +4,9 @@
 title: View and design financial reports
 description: This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 Finance.
 author: jcart1106
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -201,3 +199,6 @@ In this exercise, you'll be creating a new report. The report is a side-by-side 
 [View financial reports](../../../finance/general-ledger/view-financial-reports.md)
 
 [Dynamics 365 Finance Blog](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
