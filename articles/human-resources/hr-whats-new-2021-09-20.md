@@ -90,7 +90,7 @@ For a complete list of planned features and their scheduled releases, see [Overv
 | Feature | Details |
 |---|---|
 | Platform update 10.0.21 (45) | Roll-out of Platform update 10.0.21 is scheduled to begin with the service release on October 4, 2021. For more information, see [Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
-|Performance journals extended reports view | This feature will become enabled by default in the next rollout. |
+|Performance journals extended reports view | This feature will become enabled by default in the next roll-out. |
 
 
 ## See also
