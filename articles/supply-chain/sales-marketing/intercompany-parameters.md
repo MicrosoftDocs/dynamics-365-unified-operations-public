@@ -1,5 +1,5 @@
 ---
-title: About intercompany parameters
+title:Intercompany parameters
 description: This topic explains intercompany parameters
 author: GalynaFedorova
 ms.date: 09/01/2021
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
 ---
 
-# About intercompany parameters
+# Intercompany parameters
 
 [!include [banner](../../includes/banner.md)]
 
@@ -21,7 +21,7 @@ In an intercompany organization, you can set up parameters that determine how yo
 
 The following examples include scenarios for an intercompany organization with two levels and one with three levels.
 
-**Example 1: Two-level intercompany chain**
+## Example 1: Two-level intercompany chain
 
 The intercompany organization includes the following legal entities:
 
@@ -34,7 +34,7 @@ In this example, the pricing on the original sales order, which is directed to t
 
 The order header information is controlled from the original sales order to the external customer. Any change on the intercompany sales order is not synchronized to the original sales order.
 
-In Legal entity A, in the  **Intercompany**  page for vendors, select  **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
+In Legal entity A, in the **Intercompany** page for vendors, select **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
 
 - **Print packing slip automatically**
 - **Post invoice automatically**
@@ -44,35 +44,35 @@ In the **Intercompany purchase order (direct delivery)** field group, select the
 
 - **Post invoice automatically**
 
-In the  **Original sales order <-> Intercompany purchase order**  group, select the following fields:
+In the **Original sales order <-> Intercompany purchase order** group, select the following fields:
 
 - **Customer information**
 - **RMA number**
 
-In the  **Intercompany purchase order <-> Intercompany sales order**  field group, select the following fields:
+In the **Intercompany purchase order <-> Intercompany sales order** field group, select the following fields:
 
 - **Customer information**
 - **RMA number**
 - **Batch number**
 - **Serial number**
 
-In Legal entity B, in the  **Intercompany**  page for customers, select  **Sales order policies**. Select the following fields in the  **Intercompany sales order creation**  field group:
+In Legal entity B, in the **Intercompany** page for customers, select **Sales order policies**. Select the following fields in the **Intercompany sales order creation** field group:
 
-- **Sales order numbering** :  **Company + original number**
+- **Sales order numbering** : **Company + original number**
 - **Allow summary update of documents for original customer**
 
-In the  **Intercompany sales order prices**  field group, select the following fields:
+In the **Intercompany sales order prices** field group, select the following fields:
 
 - **Price and discount search**
 - **Allow price edit**
 - **Allow discount edit**
 
-In the  **Intercompany sales order -\&gt; Intercompany purchase order**  field group, select the following fields:
+In the **Intercompany sales order -\&gt; Intercompany purchase order** field group, select the following fields:
 
 - **Batch number**
 - **Serial number**
 
-**Example 2: Three-level intercompany chain**
+## Example 2: Three-level intercompany chain
 
 The intercompany organization includes the following legal entities:
 
@@ -88,7 +88,7 @@ The order header information is controlled from the original sales order to the 
 
 The following parameters should be selected:
 
-In Legal entity A, in the  **Intercompany**  page for vendors, select  **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
+In Legal entity A, in the **Intercompany** page for vendors, select **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
 
 - **Print packing slip automatically**
 - **Post invoice automatically**
@@ -98,34 +98,34 @@ In the **Intercompany purchase order (direct delivery)** field group, select the
 
 - **Post invoice automatically**
 
-In the  **Original sales order <-> Intercompany purchase order**  field group, select the following fields:
+In the **Original sales order <-> Intercompany purchase order** field group, select the following fields:
 
 - **Customer information**
 - **RMA number**
 
-In the  **Intercompany purchase order <-> Intercompany sales order**  field group, select the following fields:
+In the **Intercompany purchase order <-> Intercompany sales order** field group, select the following fields:
 
 - **Customer information**
 - **RMA number**
 - **Batch number**
 - **Serial number**
 
-In Legal entity B, in the  **Intercompany**  page for customers, select  **Sales order policies**. Select the following fields in the  **Intercompany sales order creation**  field group:
+In Legal entity B, in the **Intercompany** page for customers, select **Sales order policies**. Select the following fields in the **Intercompany sales order creation** field group:
 
-- **Sales order numbering** :  **Company + original number**
+- **Sales order numbering** : **Company + original number**
 - **Allow summary update of documents for original customer**
 
-In the  **Intercompany sales order -\&gt; Intercompany purchase order**  field group, select the following fields:
+In the **Intercompany sales order -\&gt; Intercompany purchase order** field group, select the following fields:
 
 - **Batch number**
 - **Serial number**
 
-In the  **Intercompany customer invoice posting**  field group, select the following fields:
+In the **Intercompany customer invoice posting** field group, select the following fields:
 
 - **Unit price equal to cost price**
 - **Initiate original customer invoice posting**
 
-In Legal entity B, in the  **Intercompany**  page for vendors, select  **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
+In Legal entity B, in the **Intercompany** page for vendors, select **Purchase order policies**. Select the following fields in the **Original sales order (direct delivery)** field group:
 
 - **Print packing slip automatically**
 - **Post invoice automatically**
@@ -135,34 +135,34 @@ In the **Intercompany purchase order (direct delivery)** field group, select the
 
 - **Post invoice automatically**
 
-In the  **Original sales order<-> Intercompany purchase order**  field group, select the following fields:
+In the **Original sales order<-> Intercompany purchase order** field group, select the following fields:
 
 - **Customer information**
 - **RMA number**
 - **Price and discount**
 
-In the  **Intercompany purchase order <-> Intercompany sales order**  field group, select the following fields:
+In the **Intercompany purchase order <-> Intercompany sales order** field group, select the following fields:
 
 - **Customer information**
 - **RMA number**
 - **Batch number**
 - **Serial number**
 
-In Legal entity C, in the  **Intercompany**  page for customers, select  **Sales order policies**. Select the following fields in the  **Intercompany sales order creation**  field group:
+In Legal entity C, in the **Intercompany** page for customers, select **Sales order policies**. Select the following fields in the **Intercompany sales order creation** field group:
 
-- **Sales order numbering** :  **Number sequence code**
+- **Sales order numbering** : **Number sequence code**
 - **Allow summary update of documents for original customer**
 
-In the  **Intercompany sales order prices**  field group, select the following field:
+In the **Intercompany sales order prices** field group, select the following field:
 
 - **Price and discount search**
 
-In the  **Intercompany customer invoice posting**  field group, select the following fields:
+In the **Intercompany customer invoice posting** field group, select the following fields:
 
 - **Unit price equal to cost price**
 - **Initiate original customer invoice posting**
 
-In the  **Intercompany sales order <-> Intercompany purchase order**  field group, select the following fields:
+In the **Intercompany sales order <-> Intercompany purchase order** field group, select the following fields:
 
 - **Batch number**
 - **Serial number**
