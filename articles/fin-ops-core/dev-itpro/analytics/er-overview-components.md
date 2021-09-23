@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Electronic reporting coponents
+title: Electronic reporting components
 description: This topic describes the Electronic reporting (ER) components.
 author: AnastasiaMiroshkina
 ms.date: 09/21/2021
