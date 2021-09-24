@@ -108,6 +108,6 @@ Use the following procedure to add city information to any existing countyr/regi
 4. Enter the ZIP/postal code and select the corresponding city.
 5. Enter the street name, where the ZIP/postal code is effective.
 6. Enter the lowest and highest street numbers that use the ZIP/postal code, and enter the number types. For example, the ZIP/postal code may apply only to odd numbered street addresses.
-7. Select the **State/province**, **County*, **District**, and **Time zone** for the ZIP/postal code.
+7. Select the **State/province**, **County**, **District**, and **Time zone** for the ZIP/postal code.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
