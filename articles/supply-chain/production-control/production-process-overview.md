@@ -2,7 +2,7 @@
 title: Production process overview
 description: This topic gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
 author: johanhoffmann
-ms.date: 09/07/2021
+ms.date: 09/13/2019
 ms.topic: article
 ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace, ProdParmCostEstimation, ProdParmRelease, ProdSchedule, ProdTableListPage
 audience: Application User
@@ -66,45 +66,6 @@ The following steps in the production life cycle can occur for all order types o
 1. **Put away** and **Ship to order** – After product receipt and quality assessment, optional put-away work directs the received products to the next point of consumption, to a finished goods warehouse, or to a shipment zone if there are ship-to-order requirements.
 1. **Ended** – Before production is ended, actual costs are calculated for the quantity that was produced. All estimated costs of material, labor, and overhead are reversed and replaced with actual costs. If you select the **End job** check box when you run the cost calculation, the production order status changes to **Ended**. This status prevents any additional costs from being posted to a completed production order.
 1. **Period closure** – Some cost accounting principles, such as periodic average, back-flush costing, FIFO, or LIFO, require periodic activities to close the inventory or financial period. Typically, the system tries to report all material and resource consumption, and also corrections of inventory and scrap, before the periods are closed. This reporting is typically done by using inventory movement journals or adjustment journals. The goal is to assess the economic performance of operating units per period. In some cases, when long-running production orders are used that span the financial reporting periods, production journals are used to report the production progress and resource consumption by the end of the period.
-
-## Manufacturing execution systems integration
-
-Some manufacturing organizations that use Supply Chain Management use the native functionality in Dynamics 365 to control their manufacturing activities for machines, equipment, and personnel. However, other manufacturing organizations, especially those that have advanced manufacturing requirements, use a third-party manufacturing execution system (MES) instead. Organizations might choose a third-party MES solution because, for example, it's specifically tailored to their vertical industry.
-
-In the integrated solution, data exchange is fully automated and occurs in near real time. Therefore, data is kept current in both systems, and no manual data entry is required. For example, when material consumption is registered in the MES, the integration ensures that the same consumption is also registered in Dynamics 365. Therefore, up-to-date inventory records are available to other important processes, such as planning and sales.
-
-The solution makes it faster, easier, and cheaper for Supply Chain Management users to integrate with third-party MESs. It offers the following features:
-
-- Business events and interfaces that support [key manufacturing execution processes](#processes-available-for-mes-integration)
-- A centralized dashboard where you can track the event processing history, and troubleshoot and fix processes that fail
-
-The following illustration shows a typical collection of business events, processes, and messages that are exchanged in an integrated solution.
-
-![Typical integration scenario.](media/3p-mes-scenario.png "Typical integration scenario.")
-
-### Turn on the MES integration feature
-
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Production control*
-- **Feature name:** *Manufacturing execution systems integration*
-
-### Processes available for MES integration
-
-You can enable any or all of the following processes for integration.
-
-| Process name | Description |
-|---|---|
-| Release production orders and production order status change business events | This process provides a business event that the MES can listen to, to get information about the production orders that should be produced. Reference data that is related to the production order is expected to be shared from Supply Chain Management to the MES through Open Data Protocol (OData) or data entities. |
-| Start production order | This process provides Supply Chain Management with information about production orders that are being started by using the MES. It ensures that both systems have an up-to-date view of all manufacturing activities. |
-| Report produced or scrapped quantity | This process provides Supply Chain Management with information about the good and error quantities that are reported on a production job by using the MES. It ensures that shop floor supervisors have an up-to-date view of production plan progress. |
-| Report material consumption | This process provides Supply Chain Management with information from the MES about the quantities of materials that are consumed. It makes up-to-date inventory records available to other important processes, such as planning and sales. |
-| Report time consumed for the operation | This process provides Supply Chain Management with information about the time that is used for a specific operation. |
-| End production order | This process informs Supply Chain Management that the MES has updated a production order to its final status of *Ended*. This status indicates that no more quantities will be produced on the production order. |
-
-### Monitor incoming messages
-
-To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page. There, you can view, process, and troubleshoot issues.
 
 ## Additional resources
 
