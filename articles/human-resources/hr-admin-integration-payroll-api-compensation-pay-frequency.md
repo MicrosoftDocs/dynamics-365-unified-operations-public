@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Compensation pay frequency entity for Dynamics 365 Human Resources.
+This topic describes the Compensation pay frequency entity in Dynamics 365 Human Resources.
 
 Physical name: mshr_hcmpayrateconversionentity.
 
@@ -47,8 +47,8 @@ This entity provides information about the pay rate conversion for a given compe
 | **Pay rate conversion**</br>mshr_payrateconversion</br>*String* | Read-only | A unique string to identify the conversion rate. |
 | **Period**</br>mshr_period</br>*period option set* | Read-only | The main period for the given pay rate conversion. |
 | **Weekly pay rate conversion**</br>mshr_weeklyconversionfactor</br>*Decimal* | Read-only | The weekly conversion factor for the payment frequency. |
-| **Data area id**</br>mshr_dataareaid</br>*String* | Read-only | Specifies the legal entity (company). |
-| **Compensation pay frequency entity ID**</br>mshr_dirpersonnamehistoricalentityid</br>*GUID* | System generated | A system-generated GUID value to uniquely identify the record. |
+| **Data area id**</br>mshr_dataareaid</br>*String* | Read-only | The legal entity (company). |
+| **Compensation pay frequency entity ID**</br>mshr_dirpersonnamehistoricalentityid</br>*GUID* | System generated | A system-generated globally unique identifier (GUID) value to uniquely identify the record. |
 
 ## Example query for Payroll employee
 
