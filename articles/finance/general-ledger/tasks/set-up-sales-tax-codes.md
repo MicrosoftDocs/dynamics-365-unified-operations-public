@@ -46,6 +46,12 @@ This task uses the USMF demo company.
 12. Close the page.
 13. Select **Save**.
 
+Starting from version **10.0.22 of Finance**, in case you are using [**Tax service**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview) and [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace, you can use **Type of tax** field to specify type of the tax code. The following values are available:
 
+- Standard VAT,
+- Reduced VAT,
+- VAT 0%,
+- Excise,
+- Other.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
