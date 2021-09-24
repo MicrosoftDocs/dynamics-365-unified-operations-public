@@ -136,9 +136,9 @@ With self-service migrations, we are changing the outbound IP addresses in regio
 The inbound IP address to the AOS is dynamic. This can, and will, change over time as infrastructure changes occur.
 
 > [!NOTE]
-> The outbound IP address from the AOS will be an IP address from the listed ranges based on the Azure Region of your deployment. The specific outbound IP address may vary across outbound requests, even from within the same session.
+> The outbound IP address from the AOS will be an IP address from the listed ranges based on the Azure region of your deployment. The specific outbound IP address may vary across outbound requests, even from within the same session.
 
-| Geography | Azure Region | IP prefixes<sup>1</sup> |
+| Geography | Azure region | IP prefixes<sup>1</sup> |
 |---|---|---|
 | Asia Pacific | East Asia | 52.229.231.64/26 |
 | Asia Pacific | Southeast Asia | 20.44.247.0/26 |
@@ -168,9 +168,9 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 | United States | East US | 52.255.218.64/26 |
 | United States | West US | 52.250.195.128/26 |
 
-<sup>1</sup> For Azure Regions with multiple IP Prefixes, such as West Europe, outbound requests will utilize IP Addresses from any of the listed IP Prefixes.
+<sup>1</sup> For Azure regions with multiple IP prefixes, such as West Europe, outbound requests will utilize IP addresses from any of the listed IP prefixes.
 
-<sup>2</sup> Denotes a BCDR-only Azure Region. Outbound requests will only originate from this region in Disaster Recovery scenarios that require regional failover within the geography.
+<sup>2</sup> Denotes a BCDR-only Azure region. Outbound requests will only originate from this region in disaster recovery scenarios that require regional failover within the geography.
 
 ## What does the downtime look like for self-service migrations?
 Self-service migration for any environment takes three hours of 100% downtime, with a six-hour pre-migration window leading up to the actual migration downtime of 3 hours. The environment will be available with limited servicing capabilities during the six-hour pre-migration window, but will be completely unavailable in the three-hour migration window. We recommend that customers do not schedule any servicing activity, like package deployment, during the pre-migration window because it will interfere with migrations and will trigger a migration cancellation.
