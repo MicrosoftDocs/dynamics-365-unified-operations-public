@@ -34,7 +34,7 @@ Before you install the Inventory Visibility, you must complete the following tas
 > [!NOTE]
 > The countries and regions that are currently supported include Canada (CCA, ECA), the United States (WUS, EUS), the European Union (NEU, WEU), the United Kingdom (SUK, WUK), Australia (EAU, SEAU), Japan (EJP, WJP), and Brazil (SBR, SCUS).
 
-If you have any questions about these prerequisites, contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
+If you have any questions about these prerequisites, please contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
 ## <a name="install-add-in"></a>Install the Inventory Visibility Add-in
 
@@ -45,10 +45,10 @@ After you register an application and add a client secret to Azure AD, follow th
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index).
 1. On the home page, select the project where your environment is deployed.
 1. On the project page, select the environment where you want to install the add-in.
-1. On the environment page, scroll down until you find the **Environment add-ins** section in the **Power Platform integration** section. There, you can find the Dataverse environment name. Please check whether the Dataverse environment name is the same Dataverse environment that you want to use for inventory visibility.
+1. On the environment page, scroll down until you find the **Environment add-ins** section in the **Power Platform integration** section. There, you can find the Dataverse environment name. Confirm that the Dataverse environment name is the one that you want to use for inventory visibility.
 
     > [!NOTE]
-    > Currently, only Dataverse environments that were created by using LCS are supported. If your Dataverse environment was created in some other way (for example, by using the Power Apps admin center), and if it's linked to your Supply Chain Management environment, you must first contact the Inventory Visibility product team to fix the mapping issue. You can then install Inventory Visibility.
+    > Currently, only Dataverse environments that were created by using LCS are supported. If your Dataverse environment was created in some other way (for example, by using the Power Apps admin center), and if it's linked to your Supply Chain Management environment, you must first contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to fix the mapping issue. You can then install Inventory Visibility.
 
 1. In the **Environment add-ins** section, select **Install a new add-in**.
 
@@ -65,7 +65,7 @@ After you register an application and add a client secret to Azure AD, follow th
 
 1. Agree to the terms and condition by selecting the **Terms and conditions** checkbox.
 1. Select **Install**. The status of the add-in is shown as **Installing**. When the installation is completed, refresh the page. The status should change to **Installed**.
-1. Go to the Dataverse, choose the **Apps** section from the left menu list, check whether the **Inventory Visibility** Power Apps is installed successfully. If the Apps doesn't exist, please contact the Inventory Visibility product team.
+1. Go to Dataverse and choose the **Apps** section from the left menu list and check whether the **Inventory Visibility** Power Apps is installed successfully. If the **Apps** section doesn't exist, please contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
 > [!IMPORTANT]
 > If you have more than one LCS environment, create a different Azure AD application for each environment. If you use same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. Only the last one that was installed will be valid.
@@ -74,7 +74,7 @@ After you register an application and add a client secret to Azure AD, follow th
 
 To uninstall the Inventory Visibility Add-in, select **Uninstall** on the LCS page. The uninstallation process terminates the Inventory Visibility Add-in, unregisters the add-in from LCS, and deletes any temporary data that is stored in the Inventory Visibility Add-in data cache. However, the primary inventory data that is stored in your Dataverse subscription isn't deleted.
 
-To uninstall inventory data that is stored in your Dataverse subscription, open [Power Apps](https://make.powerapps.com), select **Environment** on the navigation bar, and select the Dataverse environment that is bonded with your LCS environment. Then go to **Solutions**, and delete the following five solutions with order:
+To uninstall inventory data that is stored in your Dataverse subscription, open [Power Apps](https://make.powerapps.com), select **Environment** on the navigation bar, and select the Dataverse environment that is bonded with your LCS environment. Then go to **Solutions** and delete the following five solutions, in order:
 
 1. Anchor solution for Inventory Visibility application in Dynamics 365 solutions
 1. Dynamics 365 FNO SCM Inventory Visibility Applications Solution

@@ -77,7 +77,7 @@ Microsoft has built a user interface (UI) in Power Apps so that you can get the 
 
 The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate an _Azure Active Directory (Azure AD) token_ by using your Azure AD application. You must then use the Azure AD token to get the _access token_ from the security service.
 
-Microsoft has provided an out-of-box *Postman* get token collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
+Microsoft provides an out-of-box *Postman* get token collection. You can import this collection into your *Postman* software by using the following shared link: [www.getpostman.com/collections/496645018f96b3f0455e](https://www.getpostman.com/collections/496645018f96b3f0455e).
 
 To get a security service token, follow these steps.
 
@@ -146,7 +146,7 @@ To get a security service token, follow these steps.
    ```
 
 > [!IMPORTANT]
-> When you use the *Postman* request collection to call Inventory Visibility Public APIs, you need to add Bearer Token for every request. Choose the **Authorization** tab under the Request URL, select **Bearer Token** type, copy the access token that was fetched in the last step. In later sections, `$access_token` will be used to represent the token that was fetched in the last step.
+> When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, go to the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this topic, `$access_token` will be used to represent the token that was fetched in the last step.
 
 ## <a name="create-onhand-change-event"></a>Create on-hand change events
 
@@ -506,7 +506,7 @@ In the body part of this request, `dimensionDataSource` is still an optional par
 
 - `organizationId` should contains only one value, but it's still an array.
 - `productId` can contains one or more values. If it's an empty array, all products will be returned.
-- `siteId` and `locationId` are used in Inventory Visibility for partitioning. You can specify more than one `siteId` and `locationId` at the same time in the **Query on-hand** request. You must spcify the `siteId` and `locationId`, Inventory Visibility is not supported for missing partitioning currently. We will support only specify **SiteIds** later.
+- `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` in a *Query on-hand* request. In the current release, you must specify both `siteId` and `locationId`.
 
 The `groupByValues` parameter should follow your configuration for indexing. For more information, see [Product index hierarchy configuration](./inventory-visibility-configuration.md#index-configuration).
 
