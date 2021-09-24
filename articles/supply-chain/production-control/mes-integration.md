@@ -98,18 +98,122 @@ Each line in the `ReportFinishedLines` section of the `ProdProductionOrderReport
 
 | Field name | Status | Type |
 |---|---|---|
-| `LineNumber` | ???? | Real |
+| `LineNumber` | Optional | Real |
+| `ItemNumber` | Optional | String|
+| `ProductionType` | Optional | Enum (MainItem \| Formula \| BOM \| Co_Product \| By_Product \| None), extensible |
+| `ReportedErrorQuantity` | Optional | real|
+| `ReportedGoodQuantity` | Optional | real|
+| `ReportedErrorCatchWeightQuantity` | Optional | Real |
+| `ReportedGoodCatchWeightQuantity` | Optional | Real |
+| `AcceptError` | Optional |Boolean |
+| `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
+| `ExecutedDateTime` | Optional | DateTime |
+| `ReportAsFinishedDate` | Optional | Date |
+| `AutomaticBOMConsumptionRule` | Optional | Enum (FlushingPrincip \| Always \| Never) |
+| `AutomaticRouteConsumptionRule` | Optional |Enum (RouteDependent \| Always \| Never) |
+| `RespectFlushingPrincipleDuringOverproduction` | Optional | Boolean |
+| `ProductionJournalNameId` | Optional | String |
+| `PickingListProductionJournalNameId` | Optional | String|
+| `RouteCardProductionJournalNameId` | Optional | String |
+| `FromOperationNumber` | Optional |integer|
+| `ToOperationNumber` | Optional |integer|
+| `InventoryLotId` | Optional | String |
+| `BaseValue` | Optional | String |
+| `EndJob` | Optional | Boolean |
+| `EndPickingList` | Optional | Boolean |
+| `EndRouteCard` | Optional | Boolean |
+| `PostNow` | Optional | Boolean |
+| `AutoUpdate` | Optional | Boolean |
+| `ProductColorId` | Optional | String|
+| `ProductConfigurationId` | Optional | String |
+| `ProductSizeId` | Optional | String |
+| `ProductStyleId` | Optional | String |
+| `ProductVersionId` | Optional | String |
+| `ItemBatchNumber` | Optional | String |
+| `ProductSerialNumber` | Optional | String |
+| `LicensePlateNumber` | Optional | String |
+| `InventoryStatusId` | Optional | String |
+| `ProductionWarehouseId` | Optional | String |
+| `ProductionSiteId` | Optional | String |
+| `ProductionWarehouseLocationId` | Optional | String |
 
-...
+<!-- FKM: Not sure what to do with this, maybe more info would help: "(extensible with other dimensions)" -->
 
 ### Material consumption (picking list) message
 
-...
+The material consumption (picking list) message is named `ProdProductionOrderPickingList` and supports the fields listed in the following table.
+
+| Field name | Status | Type |
+|---|---|---|
+| `ProductionOrderNumber` | Mandatory | String |
+| `JournalNameId` | Optional | String |
+| `PickingListLines` | Mandatory | A list of lines (at least one), each of which contains the payload described in the following table. |
+
+Each line in the `PickingListLines` section of the `ProdProductionOrderPickingList` message supports the fields listed in the following table.
+
+| Field name | Status | Type |
+|---|---|---|
+| `ItemNumber` | Mandatory | String |
+| `ConsumptionBOMQuantity` | Optional | Real |
+| `ProposalBOMQuantity` | Optional | Real |
+| `ScrapBOMQuantity` | Optional | Real |
+| `BOMUnitSymbol` | Optional | String |
+| `ConsumptionInventoryQuantity` | Optional | Real |
+| `ProposalInventoryQuantity` | Optional | Real |
+| `ConsumptionCatchWeightQuantity` | Optional | Real |
+| `ProposalCatchWeightQuantity` | Optional | Real |
+| `ConsumptionDate` | Optional | Date |
+| `OperationNumber` | Optional |  Integer |
+| `LineNumber` | Optional | Real |
+| `PositionNumber` | Optional | String |
+| `IsConsumptionEnded` | Optional | Boolean |
+| `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
 
 ### Time used for operation (route card) message
 
-...
+The time used for operation (route card) message is named `ProdProductionOrderRouteCard` and supports the fields listed in the following table.
+
+| Field name | Status | Type |
+|---|---|---|
+| `ProductionOrderNumber` | Mandatory | String |
+| `JournalNameId` | Optional | String |
+| `RouteCardLines` | Mandatory | A list of lines (at least one), each of which contains the payload described in the following table. |
+
+Each line in the `RouteCardLines` section of the `ProdProductionOrderRouteCard` message supports the fields listed in the following table.
+
+| Field name | Status | Type |
+|---|---|---|
+| `OperationNumber` | Mandatory | mandatory, Integer |
+| `OperationPriority` | Optional | Enum (Primary \| Secondary1 \| Secondary2 \| ... \| Secondary20) |
+| `OperationId` | Optional | String |
+| `OperationsResourceId` | Optional | String |
+| `Worker` | Optional | String |
+| `HoursRouteCostCategoryId` | Optional | String |
+| `QuantityRouteCostCategoryId` | Optional | String |
+| `HourlyRate` | Optional | Real |
+| `Hours` | Optional | Real |
+| `GoodQuantity` | Optional | Real |
+| `ErrorQuantity` | Optional | Real |
+| `CatchWeightGoodQuantity` | Optional | Real |
+| `CatchWeightErrorQuantity` | Optional | Real |
+| `QuantityPrice` | Optional | Real |
+| `ProcessingPercentage` | Optional | Real |
+| `ConsumptionDate` | Optional | Date |
+| `TaskType` | Optional | Enum (QueueBefore \| Setup \| Process \| Overlap \| Transport \| QueueAfter \| Burden) |
+| `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
+| `OperationCompleted` | Optional | Boolean |
+| `BOMConsumption` | Optional | Boolean |
+| `ReportAsFinished` | Optional | Boolean |
 
 ### End production order message
 
-...
+The end production order message is named `ProdProductionOrderEnd` and supports the fields listed in the following table.
+
+| Field name | Status | Type |
+|---|---|---|
+| `ProductionOrderNumber` | Mandatory | String |
+| `ExecutedDateTime` | Optional | DateTime |
+| `EndedDate` | Optional | Date |
+| `UseTimeAndAttendanceCost` | Optional | Boolean |
+| `AutoReportAsFinished` | Optional | Boolean |
+| `AutoUpdate` | Optional | Boolean |
