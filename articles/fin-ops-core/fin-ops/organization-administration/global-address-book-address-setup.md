@@ -48,3 +48,63 @@ Use this section of the form to enter and set up address component information a
   - **Not active** - Do not use this object in an address for the selected format type.
   - **Expand** - Display the name of the country/region, state, or county instead of the assigned code.
   - **Special** - Indicates that the field countains the same separator characters.
+
+## Set up country/region information
+Use the **Country/region** section of the form to define country/region information for address setup.
+
+1. In the **Address setup** form, select **Country/region** in the left pane.
+2. Click **New** to create a new line.
+3. Enter the code, a short name, and the full name of the country/region. For example, "DEU", "Germany", and "Federal Republic of Germany".
+4. Select the address format, as defined on the **Address format** section of the form, to be used for the country/region. 
+5. In the **Time zone** field, select the time zone of the country/region.
+6. Enter the ISO code for the country/region.
+7. If required for your financial, purchasing, or sales transactions, enter the **BACEN code**, **IOR facility ID**, **Code by OKSM**, and select whether the country/region is a member of customs union.
+8. Select the **Use ZIP + 4 postal code validation rules** toggle to enable only valid 5-digit or 9-digit ZIP/postal codes.
+
+## Set up state/province information
+Use the **State/province** section of the form to define state/province information for address setup.
+
+1. In the **Address setup** form, select **State/province** in the left pane.
+2. In the **Country/region** filter, select the country/region for which you will be adding a state/province.
+3. Select the **New** action to create a new line.
+4. Enter the state/province code and the name of the state/province.
+5. Select the time zone for the state/province.
+6. Define the state code for the state/province, and any additional codes required for transactional information.
+7. Select the **Default state/province** toggle to define whether the state/province will be the default for the selected country/region. The state/province that is selected as the default state/province will be the default value entered in state/province field when a new county or city record is created.
+
+## Set up county information
+Use the following procedure to add county information to any existing country/regions or state/provinces.
+
+1. In the **Address setup** form, select **County** in the left pane.
+2. Click New to create a new line.
+3. In the **Country/region** field, select the country/region in which the county is located.
+4. In the **State or province** field, select the state where the county is located.
+5. Enter the name and a brief description of the county.
+
+## Set up city information
+Use the following procedure to add city information to any existing countyr/regions or state/provinces.
+
+1. In the **Address setup** form, select **City** in the left pane.
+2. Click **New** to create a new line.
+3. In the **Country/region** field, select the country/region to which you are adding the city information.
+4. Enter the name of the city and a brief description.
+5. Select the state or county where the city is located.
+
+## Set up district information
+
+1. In the **Address setup** form, select **District** in the left pane.
+2. Use the filters to select the **Country/region**, **State/province**, **County**, and **City**, as appropriate, in which the district is located.
+3. Click **New** to create a new line.
+4. Enter the name of the district and a brief description.
+
+## Set up ZIP/postal code information
+
+1. In the **Address setup** form, select **ZIP/postal codes** in the left pane.
+2. Use the filter to select the **Country/region** location for the ZIP/postal code.
+3. Click **New** to create a new line.
+4. Enter the ZIP/postal code and select the corresponding city.
+5. Enter the street name, where the ZIP/postal code is effective.
+6. Enter the lowest and highest street numbers that use the ZIP/postal code, and enter the number types. For example, the ZIP/postal code may apply only to odd numbered street addresses.
+7. Select the **State/province**, **County*, **District**, and **Time zone** for the ZIP/postal code.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
