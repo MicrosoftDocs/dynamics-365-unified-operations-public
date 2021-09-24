@@ -239,7 +239,7 @@ This sample consists of extensions for the CRT, Hardware station, and POS. To ru
 
 The sample's code can be found in repository [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions)
 
-This sample consists of extensions for the CRT, Hardware station, and POS. To run this sample, you must beforehand install the sealed version of Commerce Scale Unit, Hardware station and POS. After installing these retail components, you should build the EFR solution and run installers for each component. We recommend that you use an unmodified microsoft/Dynamics365Commerce.Solutions to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
+This sample consists of extensions for the CRT, Hardware station, and POS. To run this sample, you must beforehand install the sealed version of Commerce Scale Unit, Hardware station and POS. After installing these retail components, you should build the EFR solution and run installers for each component. We recommend that you use an unmodified solution files from this repository to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
 
 ---
 
@@ -251,13 +251,7 @@ Follow these steps to set up a development environment so that you can test and 
 
 The CRT extension components are included in the CRT samples. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
-
-The CRT extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **Efr.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
-
 #### DocumentProvider.EFRSample component
-
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Find the **Runtime.Extensions.DocumentProvider.EFRSample** project, and build it.
 2. In the **Runtime.Extensions.DocumentProvider.EFRSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll** assembly file.
@@ -296,33 +290,7 @@ The CRT extension components are included in the EFR solution from Fiscal Integr
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
     ```
-
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
-
-1. Find the **Efr** solution, and build it.
-
-2. Build the CRT extension installer:
-
-    - **Commerce Scale Unit:** In the **Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.EFR.Installer** installer.
-    - **Local CRT on Modern POS:** In the **Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** folder, find the **ModernPOS.EFR.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
-    - **Commerce Scale Unit:**
-
-    ```Console
-    ScaleUnit.EFR.Installer.exe install --verbosity 0
-    ```
-
-    - **Local CRT on Modern POS:**
-
-    ```Console
-    ModernPOS.EFR.Installer.exe install --verbosity 0
-    ```
-
 #### Update extension configuration file
-
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Find the extension configuration file for CRT:
 
@@ -336,20 +304,11 @@ The CRT extension components are included in the EFR solution from Fiscal Integr
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventAustria" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsAustria" />
     ```
-
 ### Enable Hardware station extensions
-
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the solution, **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
-
-The Hardware station extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **EFR.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
-
 #### EFRSample component
-
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Find the **HardwareStation.Extension.EFRSample** project, and build it.
 2. In the **Extension.EFRSample\\bin\\Debug** folder, find following files:
@@ -373,21 +332,7 @@ The Hardware station extension components are included in the EFR solution from 
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
     ```
 
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
-
-1. Find the **EFR** solution, and build it.
-
-2. In the **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EFR.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
-    ```Console
-    HardwareStation.EFR.Installer.exe install --verbosity 0
-    ```
-
 ### Enable Modern POS extension components
-
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and make sure that it can be compiled without errors. Additionally, make sure that you can run Modern POS from Microsoft Visual Studio by using the **Run** command.
 
@@ -412,14 +357,7 @@ The Hardware station extension components are included in the EFR solution from 
 3. Rebuild the solution.
 4. Run Modern POS in the debugger, and test the functionality.
 
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
-
-> [!IMPORTANT]
-> In the current version, POS extensions are not enabled!
-
 ### Enable Cloud POS extension components
-
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and make sure that it can be compiled without errors.
 2. Enable the extensions to be loaded by adding the following lines in **extensions.json**.
@@ -442,8 +380,88 @@ The Hardware station extension components are included in the EFR solution from 
 
 # [Retail 10.0.21 and later](#tab/retail-10-0-21)
 
-> [!IMPORTANT]
-> In the current version, POS extensions are not enabled!
+[!WARNING] Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), the next commerce runtime (CRT) extensions **Microsoft.Dynamics.Commerce.Runtime.ReceiptsAustria**, **Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventAustria**,**Microsoft.Dynamics.Commerce.Runtime.XZReportsAustria** can't currently be loaded and used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS) until this limitation will be resolved.
+
+
+The CRT extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **Efr.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
+
+#### DocumentProvider.EFRSample component
+
+1. Find the **Runtime.Extensions.DocumentProvider.EFRSample** project, and build it.
+2. In the **Runtime.Extensions.DocumentProvider.EFRSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll** assembly file.
+3. Copy the assembly file to the CRT extensions folder:
+
+    - **Commerce Scale Unit:** Copy the assembly to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
+    - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
+
+4. Find the extension configuration file for CRT:
+
+    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+5. Register the CRT change in the extension configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
+    ```
+
+#### DocumentProvider.DataModelEFR component
+
+1. Find the **Runtime.Extensions.DocumentProvider.DataModelEFR** project, and build it.
+2. In the **Runtime.Extensions.DocumentProvider.DataModelEFR\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll** assembly file.
+3. Copy the assembly file to the CRT extensions folder:
+
+    - **Commerce Scale Unit:** Copy the assembly to the **\\bin\\ext** folder under the IIS Commerce Scale Unit site location.
+    - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
+
+4. Find the extension configuration file for CRT:
+
+    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+5. Register the CRT change in the extension configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
+    ```
+#### Install the commerce extensions
+
+1. Find the **Efr** solution, and build it.
+
+2. Build the CRT extension installer:
+
+    - **Commerce Scale Unit:** In the **Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.EFR.Installer** installer.
+    - **Local CRT on Modern POS:** In the **Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** folder, find the **ModernPOS.EFR.Installer** installer.
+
+3. Start the extension installer from command line as follows:
+
+    - **Commerce Scale Unit:**
+
+    ```Console
+    ScaleUnit.EFR.Installer.exe install --verbosity 0
+    ```
+
+    - **Local CRT on Modern POS:**
+
+    ```Console
+    ModernPOS.EFR.Installer.exe install --verbosity 0
+    ```
+
+### Enable Hardware station extensions
+
+The Hardware station extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **EFR.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
+
+#### EFRSample component
+
+1. Find the **EFR** solution, and build it.
+
+2. In the **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EFR.Installer** installer.
+
+3. Start the extension installer from command line as follows:
+
+    ```Console
+    HardwareStation.EFR.Installer.exe install --verbosity 0
+    ```
 
 ### Set up the registration process
 
