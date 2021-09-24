@@ -64,6 +64,30 @@ While not an exhaustive list, here are the most used SQL Server editions for Dyn
 | Standard | SQL Server Standard is often used for CSU (self-hosted) channel databases.  This provides enough size and system utilization to typically handle a CSU (self-hosted) channel database for one to several retail store locations. While not common, the Standard version is sometimes used for offline databases to cut away any limitations and maximize offline performance. Further, a more hybrid method may be used where only a set number of Modern POS registers utilize a full Standard version while other registers utilize the Express version (or potentially no offline database, possibly using Cloud POS instead of Modern POS). |
 | Enterprise | SQL Server Enterprise is rarely necessary, but there are scenarios where it could be valuable. For example, if hosting a CSU (self-hosted) in a datacenter VM for use across a large area of many devices, removing the limitations could be valuable to maximize performance capabilities. |
 
+### Offline testing
+It is crucial to properly test Modern POS and offline functionality when performing updates. Here is a non-exhaustive list of functions to test while offline to verify proper functionality:
+
+ - Test cashier and manager logon.
+ - Test shift opening and closing.
+ - Test product browsing using categories.
+ - Test product search using the search bar.
+ - Test a cash and carry transaction.
+ - Test blind returns.
+ - Test discounts.
+ - Test unit of measure changes.
+ - Test payment functionality (all below should work and be available while offline):
+   - Cash
+   - Currency
+   - Check
+   - Loyalty
+   - Card
+   - Customer account
+   - Gift card
+ - Test **Show journal**.
+ - Start a transaction while in online mode, then force switch to offline (disconnect from internet rather than manually switching to offline) and continue to checkout.
+ - Perform the previous test when the offline database doesn't have the latest data for, as an example, the customer (missing) or a product (missing) in cart. The expectation here is that there will be a warning or error message and the cashier should be able to continue using MPOS in offline mode to perform new cash and carry transactions.
+ - Switch to online after performing one or more transactions while offline, then switch back online and verify that the transactions are uploaded.
+
 ## Troubleshooting
 
 If the following table does not list an error that you are receiving, create a support request, so that Microsoft Support can help you fix the issue. This section will be updated over time with additional errors so it is valuable to review this document prior to implementing or updating Modern POS registers that utilize offline databases.
