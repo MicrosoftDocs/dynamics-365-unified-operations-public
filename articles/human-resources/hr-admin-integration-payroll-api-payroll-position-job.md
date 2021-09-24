@@ -41,18 +41,18 @@ Physical name: mshr_payrollpositionjobentity.
 | Property</br>**Physical name**</br>***Type*** | Use | Description |
 | --- | --- | --- |
 | **Position ID**</br>mshr_positionid</br>*String* | Read-only | The ID of the position. |
-| **Valid from**</br>mshr_validto</br>*Date Time Offset* | Read-only | Date the position and job relationship is valid from. |
-| **Valid to**</br>mshr_validto</br>*Date Time Offset* | Read-only | Date the position and job relationship is valid to.  |
+| **Valid from**</br>mshr_validto</br>*Date Time Offset* | Read-only | That date that the position and job relationship is valid from. |
+| **Valid to**</br>mshr_validto</br>*Date Time Offset* | Read-only | The date that the position and job relationship is valid to. |
 | **Job ID**</br>mshr_jobid</br>*String* | Read-only | The ID of the job. |
-| **Primary field**</br>mshr_primaryfield</br>*String* | System generated |  |
-| **Payroll position job entity ID**</br>mshr_payrollpositionjobentityid</br>*Guid* | System generated. | A system-generated GUID value to uniquely identify the job. |
+| **Primary field**</br>mshr_primaryfield</br>*String* | System generated | The primary field. |
+| **Payroll position job entity ID**</br>mshr_payrollpositionjobentityid</br>*Guid* | System generated. | A system-generated globally unique identifier (GUID) value to uniquely identify the job. |
 
 ## Relations
 
-|Property value | Related entity | Navigation property | Collection type |
+| Property value | Related entity | Navigation property | Collection type |
 | --- | --- | --- | --- |
 | _mshr_fk_fixedcompplan_id_value | mshr_payrollfixedcompensationplanentity | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Job |
-| _mshr_fk_jobdetail_id_value | mshr_hcmjobdetailentity | mshr_FK_JobDetail_id | - |
+| _mshr_fk_jobdetail_id_value | mshr_hcmjobdetailentity | mshr_FK_JobDetail_id | Not applicable |
 | _mshr_fk_payroll_id_value | mshr_payrollpositionentity | mshr_FK_Payroll_id | mshr_FK_PayrollPositionEntity_Job |
 
 ## Example query
