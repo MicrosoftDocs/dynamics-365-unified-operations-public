@@ -4,7 +4,7 @@
 title: Configure service updates through Lifecycle Services (LCS)
 description: This topic explains how to specify how and when you receive service updates for your environments.
 author: angelmarshall
-ms.date: 09/21/2021
+ms.date: 09/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -88,10 +88,7 @@ A scheduled update could be canceled for various reasons. Here are some of the c
 
 You can find the canceled updates via the **View recent canceled updates** in the update settings. It will show all canceled updates, if any, within the last 2 scheduled updates.
 
-## Additional sandbox environments (Preview)
-> [!NOTE] 
-> The functionality noted in this section is available as part of a preview release. The content and the functionality are subject to change.
-
+## Additional sandbox environments
 In addition to the default sandbox environment and the production environment, if you have additional sandbox environments deployed in your LCS implementation project, the additional sandbox environments will also be auto-updated with the One Version service update. 
 
 ### Update additional sandbox environments
