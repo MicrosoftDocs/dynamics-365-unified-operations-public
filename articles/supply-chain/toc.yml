@@ -3129,6 +3129,8 @@
         href: landed-cost/landed-cost-vs-tms.md
       - name: Set up and configure the Landed cost module
         items:
+        - name: Turn on the Landed cost module for your system
+          href: landed-cost/landed-cost-enable.md
         - name: Landed cost parameters
           href: landed-cost/landed-cost-parameters.md
         - name: Landed cost procurement and sourcing parameters
