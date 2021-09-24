@@ -80,8 +80,6 @@
             href: get-started/whats-new-changed-10-0-21.md
           - name: Finance 10.0.20 (August 2021)
             href: get-started/whats-new-changed-10-0-20.md
-          - name: Finance 10.0.19 (June 2021)
-            href: get-started/whats-new-changed-10-0-19.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -450,6 +448,8 @@
           href: accounts-receivable/tasks/review-collections-information.md
         - name: Collections process automation
           href: accounts-receivable/collections-process-automate.md
+        - name: Configure parameters for collections process automation 
+          href: accounts-receivable/config-paramtrs-collections-proc-automate.md
         - name: Credit management setup
           href: accounts-receivable/cm-credit-mgmt-setup.md
         - name: Credit management setup information
@@ -1272,6 +1272,8 @@
           href: finance-insights/use-customer-payment-predictions.md
         - name: Snapshots overview
           href: finance-insights/payment-snapshots.md
+      - name: Finance insights troubleshooting FAQ
+        href: finance-insights/finance-insights-troubleshooting-faq.md
     - name: Project management and accounting
       items:
       - name: Project management and accounting overview
@@ -1635,7 +1637,9 @@
         - name: VAT statement
           href: localizations/emea-aut-vat-statement-details.md
         - name: Cross-border services report
-          href: localizations/emea-aut-cross-border-services-report.md
+          href: localizations/emea-aut-vat-statement-details.md
+        - name: Austrian Intrastat
+          href: localizations/emea-aut-intrastat.md
         - name: Purchase duties
           href: localizations/emea-aut-purchase-duties.md
       - name: Bahrain
@@ -1668,6 +1672,8 @@
           href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
         - name: Set up and maintain PRODCOM
           href: localizations/emea-bel-prodcom-report.md
+        - name: Annual VAT listing of domestic sales
+          href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
       - name: Brazil
         items:
         - name: Brazil overview
@@ -2996,12 +3002,6 @@
           href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
         - name: Vendor registration IDs
           href: localizations/tasks/mx-00008-vendor-registration-ids.md
-      - name: Oman
-        items:
-        - name: Oman overview
-          href: localizations/oman.md
-        - name: VAT declaration for Oman (OM-00003)
-          href: localizations/emea-oma-vat-declaration.md
       - name: Netherlands
         items:
         - name: Netherlands overview
@@ -3018,6 +3018,10 @@
           href: localizations/emea-nl-vat-declaration-netherlands.md
         - name: EU sales list
           href: localizations/emea-nl-EU-sales-list.md
+      - name: New Zealand
+        items: 
+        - name: GST declaration form GST101A for New Zealand (NZ-00003)
+          href: localizations/apac-nzl-gst-declaration.md
       - name: Norway
         items:
         - name: Norway overview
@@ -3034,6 +3038,12 @@
           href: localizations/emea-nor-satndard-audit-file-for-tax.md
         - name: Customer electronic invoices in Norway
           href: localizations/emea-nor-e-invoices.md
+      - name: Oman
+        items:
+        - name: Oman overview
+          href: localizations/oman.md
+        - name: VAT declaration for Oman (OM-00003)
+          href: localizations/emea-oma-vat-declaration.md
       - name: Poland
         items:
         - name: Poland overview
@@ -4121,6 +4131,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
             - name: Run formats to dynamically add columns to Excel reports
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+          - name: Design an ER format to paginate generated documents in Excel
+            href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/finance/toc.json 
         - name: Design configurations to generate reports in Word format
           items:
           - name: Design a new ER configuration to generate reports in Word format

@@ -4,7 +4,7 @@
 title: Configure service updates through Lifecycle Services (LCS)
 description: This topic explains how to specify how and when you receive service updates for your environments.
 author: angelmarshall
-ms.date: 06/30/2020
+ms.date: 09/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -62,10 +62,9 @@ Follow these steps to change your update settings.
         - **Select a day of the week:** Select the day in the week when you want to receive updates.
         - **Select a time slot:** Select the time slot when you want to receive updates.
 
-        > [!NOTE]
+        > [!IMPORTANT]
         > Currently, only a few options are available for the day of the week and time slot options. Microsoft will add more options soon, such as weekdays for customers.
         
-        > [!IMPORTANT]
         > If the above time slots do not meet your needs, you always have the option to do a self-update at a time that is convinient to you by taking the update and applying it to your environments using the regular servicing flows.
 
  3. When you've finished setting the configuration options, select **Save**.
@@ -89,6 +88,28 @@ A scheduled update could be canceled for various reasons. Here are some of the c
 
 You can find the canceled updates via the **View recent canceled updates** in the update settings. It will show all canceled updates, if any, within the last 2 scheduled updates.
 
+## Additional sandbox environments
+In addition to the default sandbox environment and the production environment, if you have additional sandbox environments deployed in your LCS implementation project, the additional sandbox environments will also be auto-updated with the One Version service update. 
 
+### Update additional sandbox environments
+The additional sandbox environments will be updated on the same cadence as your production environment, based on your update settings. If you have additional sandbox environments, they will be scheduled for update together.
+
+If you have not deployed the production environment, none of the additional sandbox environments will be auto-updated.
+
+If there’s any update failure on the production environment or any of the additional sandbox environments, it will not interfere with the remaining updates. That is, if the production update failed, the additional sandbox update will continue. Similarly, if you have additional sandbox environments and one of them failed during the update, the others will continue.
+
+You can self-update any of your environments prior to the scheduled service update. If you have self-updated to the latest version on an environment, then the scheduled service update will not apply an update on that environment again.
+
+### Change the default sandbox environment
+If you already have selected a default sandbox environment, and want to change it with one of the additional sandbox environments, the change will take effect in the next scheduled service update.
+
+### Pause service updates
+Additional sandbox environments cannot be paused independently. However, if you pause the default sandbox environment, then both the production environment and additional sandbox environments will be paused automatically. If you pause the production environment, then additional sandbox environments will also be paused.
+
+The current [pause service updates](pause-service-updates.md) policy still applies.
+
+### Email notifications 
+If your additional sandbox environments are scheduled for an update, you will receive reminder email notifications 6 days prior to the scheduled service update.
+After the update completes, you will also receive email notification regarding the update result for each environment.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

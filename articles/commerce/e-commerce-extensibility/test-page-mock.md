@@ -4,7 +4,7 @@
 title: Test modules by using page mocks
 description: This topic describes how to test modules by using page mocks.
 author: samjarawan
-ms.date: 09/15/2020
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -192,7 +192,39 @@ Some modules might have logic that must check the signed-in state of the user be
 }
 ```
 
-If you must simulate real data or the token that is returned from Commerce Server after a user signs in, sign in to your production e-Commerce site, and use the F12 browser tools to copy the data. The user information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable. While the F12 browser tools are open and a user is signed in, open a console window, and enter **\_\_\_initialData\_\_\_.requestContext.user** to see the object. You can then update the **userContext** properties in the preceding example as required. Those properties include **token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress**.
+Use the following procedure if you must simulate real data or the token that is returned from Commerce Server.
+
+The user information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable. While the web browser's developer (F12) tools are open and a user is signed in, you can view the object by opening a console window and entering **\_\_\_initialData\_\_\_.requestContext.user**. 
+
+To simulate real data or the token that is returned from Commerce Server, follow these steps.
+
+1. Load the e-commerce site page that you're working on, and sign in or create a new account.
+1. Open your web browser's debugging tools. For example, if you're using Google Chrome or Microsoft Edge, you can open the developer tools by selecting the **F12** key. 
+1. Open a console window, and enter **\_\_\_initialData\_\_\_.requestContext.user** to view the object. (User information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable.)
+1. Add the module that must be tested to a page mock.
+1. In the **renderingContext** section of the page mock, add the following **userContext** section.
+
+    ```typescript
+    "userContext": {
+        "token": "<TOKEN>",
+        "isAuthenticated": true,
+        "signInUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signin",
+        "signOutUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signout",
+        "signUpUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signup",
+        "editProfileUrl": "https://dev.fabrikam.com/fedev/_msdyn365/editprofile",
+        "signinName": "<User Name>",
+        "firstName": "<User First Name>",
+        "lastName": "<User Last Name>",
+        "tenantId": "",
+        "customerAccountNumber": "<User Account Number(HQ)>",
+        "name": "<User Name>",
+        "emailAddress": "<User Email Address>"
+    },
+    ```
+
+1. Update the user information (**token**, **signinName**, **firstName**, **lastName**, **customerAccountNumber**, **name**, and **emailAddress**) that you obtained from the web browser's debugging tools.
+
+The user information can now be obtained from within the **this.props.context.request.user** object in the React component.
 
 ## Create a dynamic page mock from a production e-Commerce page
 

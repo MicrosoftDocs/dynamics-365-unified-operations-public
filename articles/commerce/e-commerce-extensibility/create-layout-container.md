@@ -4,7 +4,7 @@
 title: Create a layout container module
 description: This topic describes how to create, test, and preview a layout container module.
 author: samjarawan
-ms.date: 08/24/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes how to create, test, and preview a layout container module.
 
-The Microsoft Dynamics 365 Commerce online software development kit (SDK) provides a **yarn msdyn365 add-module MODULE\_NAME** command-line interface (CLI) command. To create a new layout container module, you run this command to create a standard module, replacing **MODULE\_NAME** with the name that you want to give to your module. Then change the **$type** value to **containerModule**.
+The Microsoft Dynamics 365 Commerce online software development kit (SDK) provides an [add-module](cli-command-reference.md#add-module) command-line interface (CLI) command that you can use to create a new layout container module. To create the module, first run the command with the new module name, and then change the **$type** value in the new module's definition file to **containerModule**.
 
 ### Examples
 
@@ -44,7 +44,7 @@ yarn msdyn365 add-module campaign-container
 
 After the command has finished running, open the new module's definition file, campaignContainer.definition.json, and change the **$type** value to **containerModule**.
 
-The following example shows the addition of a **slots** section that contains two slots for this container.
+The following example shows the addition of a **slots** section that contains two slots for this container. Notice that each slot lets you define **allowedTypes** to limit the types of modules that are allowed inside that slot. You can also specify the maximum and minimum number of modules that can be inserted into the slot.
 
 ```json
 {
@@ -98,7 +98,7 @@ export default CampaignContainer;
 
 ## Test a layout container module
 
-To test a container module in a local development environment, you must use a page mock.
+To test a container module in a local development environment, you must use a [page mock](test-page-mock.md).
 
 The following example shows a sample page mock, campaign-containerMock.json, that you can use for testing. The file is saved in the \\src\\pageMocks directory.
 

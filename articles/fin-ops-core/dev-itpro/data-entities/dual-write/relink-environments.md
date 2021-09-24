@@ -33,7 +33,6 @@ In this scenario, dual-write is enabled between Finance and Operations and Datav
     - **DualWriteProjectConfiguration**
     - **DualWriteFieldConfiguration**
     - **BusinessEventsDefinition**
-    - **Dual Write Runtime Configurations**
 
 4. You may want to relink Finance and Operations UAT environment against Dataverse UAT environment. 
 5. Enable the maps.
@@ -43,12 +42,7 @@ If the backup and restore processes are running on Dataverse, then follow these 
 1. Sign in to Finance and Operations UAT environment.
 2. Stop all table maps.
 3. Unlink the dual-write connection as the Dataverse UAT environment will be pointing towards Finance and Operations production environment.
-4. Delete the data from the key tables on Dataverse.
-
-    - **DualWriteProjectConfiguration**
-    - **DualWriteFieldConfiguration**
-    - **BusinessEventsDefinition**
-
+4. Delete the data from the **Dual Write Runtime Configurations** table on Dataverse.
 5. You may want to relink Finance and Operations UAT environment against Dataverse UAT environment.
 6. Enable the maps.
 

@@ -3,13 +3,13 @@
 
 title: Italian Intrastat
 description: This topic contains information about Intrastat reporting in Italy.
-author: andosip
-ms.date: 7/9/2021
+author: anasyash
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 
@@ -595,13 +595,10 @@ You must send two reports to the authority. One report is for intracommunity dis
 
 - **Cover page**
 
-- **Section 1. Goods** – This section contains information about normal transactions and credit notes that are related to invoices for goods in the same reporting period as the Intrastat declaration period.
-
-- **Section 2. Corrections for goods** – This section contains information about corrections and credit notes that are related to invoices for goods in previous Intrastat reporting periods.
-
-- **Section 3. Services** – This section contains information about normal transactions and credit notes that are related to invoices for services in the same reporting period as the Intrastat declaration period.
-
-- **Section 4. Corrections for services** – This section contains information about corrections and credit notes that are related to invoices for services in previous Intrastat reporting periods.
+- **Section 1. Goods**: This section contains information about normal transactions and credit notes that are related to invoices for goods in the same reporting period as the Intrastat declaration period.
+- **Section 2. Corrections for goods**: This section contains information about corrections and credit notes that are related to invoices for goods in previous Intrastat reporting periods.
+- **Section 3. Services**: This section contains information about normal transactions and credit notes that are related to invoices for services in the same reporting period as the Intrastat declaration period.
+- **Section 4. Corrections for services**: This section contains information about corrections and credit notes that are related to invoices for services in previous Intrastat reporting periods.
 
 ## Set up Intrastat
 
@@ -609,21 +606,14 @@ You must send two reports to the authority. One report is for intracommunity dis
 
 The following general information should be set up before you start to work with Intrastat:
 
--   Commodity codes. For services, you should define six-digit commodity codes.
-
--   Transaction codes. Note that Italy uses one-digit transaction codes.
-
--   Transport methods.
-
--   Statistics procedures.
-
--   Foreign trade parameters.
-
--   Warehousing.
-
--   Released product details.
-
--   Agent contact information.
+   - Commodity codes. For services, you should define six-digit commodity codes.
+   - Transaction codes. Note that Italy uses one-digit transaction codes.
+   - Transport methods.
+   - Statistics procedures.
+   - Foreign trade parameters.
+   - Warehousing.
+   - Released product details.
+   - Agent contact information.
 
 For more information, see [Intrastat overview](emea-intrastat.md).
 
@@ -631,97 +621,68 @@ For more information, see [Intrastat overview](emea-intrastat.md).
 
 Follow these steps to set up Italian-specific options so that you can work with Intrastat.
 
-1.  In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest version of the following Electronic reporting (ER) configurations for the Intrastat declaration:
+1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), in the Shared asset library, download the latest version of the following Electronic reporting (ER) configurations for the Intrastat declaration:
 
-    -   Intrastat model
+    - Intrastat model
+    - Intrastat report
+    - Intrastat (IT)
 
-    -   Intrastat report
+    For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-    -   Intrastat (IT)
+2. In Dynamics 365 Finance, go to **Tax** > **Setup** > **Foreign trade parameters**.
+3. On the **Intrastat** tab, on the **General** FastTab, set the following fields:
 
-For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    - **County of origin/destination**: Select your company's county. This county will be used on dispatches.
+    - **Transaction code**: Select the transaction code for property transfers. This code will be used for transactions that cause an actual or planned transfer of property against compensation, and also for corrections.
 
-2.  In Dynamics 365 Finance, go to **Tax** &gt; **Setup** &gt; **Foreign trade parameters**.
+    - **Credit note**: Select the transaction code for the return of goods.
+    - **Sales reporting period**: Select the reporting period for the export declaration: **Month** or **Quarter**. Quarterly declarations are exported in simplified format.
+    - **Purchase reporting period**: Select the reporting period for the import declaration: **Month** or **Quarter**. Quarterly declarations are exported in simplified format.
 
-3.  On the **Intrastat** tab, on the **General** FastTab, set the following fields:
+4. On the **Electronic reporting** FastTab, set the following fields:
 
-    - **County of origin/destination** – Select your company's county. This county will be used on dispatches.
+    - **File format mapping**: Select **Intrastat (IT)**.
+    - **Report format mapping**: Select **Intrastat report**.
 
-    <!-- -->
+5. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
+6. On the **Statistical value** FastTab, set the **Print and export statistical data** option to **Yes** if necessary. This setting activates transfer of the statistical section. The statistical section consists of data about weights, additional units, statistical values, delivery terms, delivery schedules, transport modes, and regions of origin.
 
-    - **Transaction code** – Select the transaction code for property transfers. This code will be used for transactions that cause an actual or planned transfer of property against compensation, and also for corrections.
+    > [!NOTE]
+    > For a quarterly declaration, the Intrastat report won't include the statistical section, or information about delivery terms and transport modes. For more information, see the table in the [Overview](#overview) section of this topic.
 
-    - **Credit note** – Select the transaction code for the return of goods. This code will be used for the return of goods after the original transaction is recorded under the transaction code.
+7. On the **Country/region properties** tab, list all the countries or regions that your organization does business with. For each country or region, set the following fields:
 
-    - **Sales reporting period** – Select the reporting period for the export declaration: **Month** or **Quarter**. Quarterly declarations are exported in simplified format.
+    - **Party country/region**: Select the country/region code.
+    - **Intrastat code**: Enter the two-digit Intrastat code.
+    - **Currency**: Specify the national currency of the country or region. If the vendor is based in an EU country that doesn't use the euro, invoice amounts will be reported in both the vendor's currency and euros. For example, if the vendor is based in Denmark, the reported amounts for the import declaration will be in both Danish kroner (DKK) and euros (EUR).
+    - **Country/region type**: Select the country's or region's type in relation to your organization. For the Intrastat journal, only countries or regions of the **EU** and **Special domestic** type will be transferred.
 
-    - **Purchase reporting period** – Select the reporting period for the import declaration: **Month** or **Quarter**. Quarterly declarations are exported in simplified format.
+    > [!NOTE]
+    > For countries or regions of the **Special domestic** type, the following fields are omitted from the Intrastat report file: **Weight**, **Additional units**, **Statistical value**, **Delivery terms**, **Transport code**, **Country/region of origin/destination**, and **County of origin/destination**. For example, in the **Party country/region** field, select **SMR (San Marino)**, and then, in the **Country/region type** field, select **Special domestic**.
 
-4.  On the **Electronic reporting** FastTab, set the following fields:
-
-    - **File format mapping** – Select **Intrastat (IT)**.
-
-    <!-- -->
-
-    - **Report format mapping** – Select **Intrastat report**.
-
-5.  On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
-
-6.  On the **Statistical value** FastTab, set the **Print and export statistical data** option to **Yes** if necessary. This setting activates transfer of the statistical section. The statistical section consists of data about weights, additional units, statistical values, delivery terms, delivery schedules, transport modes, and regions of origin.
-
->[!NOTE]
->
->For a quarterly declaration, the Intrastat report won't include the statistical section, or information about delivery terms and transport modes. For more information, see the table in the [Overview](#overview) section of this topic.
-
-7.  On the **Country/region properties** tab, list all the countries or regions that your organization does business with. For each country or region, set the following fields:
-
-- **Party country/region** – Select the country/region code.
-
-- **Intrastat code** – Enter the two-digit Intrastat code.
-
-- **Currency** – Specify the national currency of the country or region. If the vendor is based in an EU country that doesn't use the euro, invoice amounts will be reported in both the vendor's currency and euros. For example, if the vendor is based in Denmark, the reported amounts for the import declaration will be in both Danish kroner (DKK) and euros (EUR).
-
-- **Country/region type** – Select the country's or region's type in relation to your organization. For the Intrastat journal, only countries or regions of the **EU** and **Special domestic** type will be transferred.
-
->[!NOTE]
->
->For countries or regions of the **Special domestic** type, the following fields are omitted from the Intrastat report file: **Weight**, **Additional units**, **Statistical value**, **Delivery terms**, **Transport code**, **Country/region of origin/destination**, and **County of origin/destination**. For example, in the **Party country/region** field, select **SMR (San Marino)**, and then, in the **Country/region type** field, select **Special domestic**.
-
-8.  Go to **Accounts payable** &gt; **Setup** &gt; **Terms of delivery**.
-
-9.  In the grid, select the delivery terms.
-
+8. Go to **Accounts payable** > **Setup** > **Terms of delivery**.
+9. In the grid, select the delivery terms.
 10. On the **General** FastTab, in the **Intrastat code** field, enter the one-digit code that will be used on the Intrastat report.
-
 11. Assign tax-exempt numbers to customers and vendors by following these steps. These numbers will appear on the Intrastat report.
+12. Go to **Tax** > **Setup** > **Sales tax** > **Tax exempt numbers**, and list all tax-exempt numbers for your customers and vendors. For each partner, set the following fields:
 
--   Go to **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Tax exempt numbers**, and list all tax-exempt numbers for your customers and vendors. For each partner, set the following fields:
+    - **Country/region**: Select the partner's country or region.
+    - **Tax exempt number**: Enter the partner's tax-exempt number.
+    - **Company name**: Enter the partner's name.
 
-    - **Country/region** – Select the partner's country or region.
+13. Go to **Accounts receivable** > **Customers** > **All customers**, and follow these steps for every customer:
 
-    - **Tax exempt number** – Enter the partner's tax-exempt number.
+    1. Select a customer.
+    2. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select **All**.
+    3. Select the customer's tax-exempt number.
 
-    - **Company name** – Enter the partner's name.
+14. Go to **Accounts payable** > **Vendors** > **All vendors**, and follow these steps for every vendor:
 
-<!-- -->
+    1. Select a vendor.
+    2. On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select **All**.
+    3. Select the vendor's tax-exempt number.
 
--   Go to **Accounts receivable** &gt; **Customers** &gt; **All customers**, and follow these steps for every customer:
-
-    1.  Select a customer.
-
-    2.  On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select **All**.
-
-    3.  Select the customer's tax-exempt number.
-
--   Go to **Accounts payable** &gt; **Vendors** &gt; **All vendors**, and follow these steps for every vendor:
-
-    1.  Select a vendor.
-
-    2.  On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select **All**.
-
-    3.  Select the vendor's tax-exempt number.
-
-12. Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Italy, select **Tax exempt number**, **Transaction code**, **Commodity**, **Delivery terms**, **Transport**, **Country/region**, **Country/region of origin**, **County of origin**, **County of origin/destination**, **Currency**, **Month**, **Quarter**, and **Correction year**.
+15. Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Italy, select **Tax exempt number**, **Transaction code**, **Commodity**, **Delivery terms**, **Transport**, **Country/region**, **Country/region of origin**, **County of origin**, **County of origin/destination**, **Currency**, **Month**, **Quarter**, and **Correction year**.
 
 ## Italian vendor invoice journal for foreign trade
 
@@ -760,10 +721,10 @@ To open the Intrastat journal, go to **Tax** &gt; **Declarations** &gt; **Foreig
 >
 >If you receive a negative correction (credit note) in the same period as the reporting period, you must manually change the Intrastat journal by following these steps.
 >
->1.  Go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
->2.  Find and delete the transaction that is marked as a correction.
->3.  Find the original transaction, and change the value of the **Invoice amount** field as appropriate.
->For example, you have an invoice for 10,000, and you receive a credit note for -2,000. In this case, you must open the Intrastat journal, and find and delete the transaction for -2,000. Then find the original transaction for 10,000, and set the invoice amount to 8,000 (= 10,000 - 2,000).
+> 1. Go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+> 2. Find and delete the transaction that is marked as a correction.
+> 3. Find the original transaction, and change the value of the **Invoice amount** field as appropriate.
+> For example, you have an invoice for 10,000, and you receive a credit note for -2,000. In this case, you must open the Intrastat journal, and find and delete the transaction for -2,000. Then find the original transaction for 10,000, and set the invoice amount to 8,000 (= 10,000 - 2,000).
 
 ### Intrastat transfer
 
@@ -771,235 +732,30 @@ On the Action Pane, you can select **Transfer** to automatically transfer the in
 
 Alternatively, you can manually enter transactions by selecting **New** on the Action Pane.
 
-For each transaction, you can set several Italy-specific parameters on the **General** tab.
+For each transaction, you can set several Italy-specific parameters on the **General** tab. The following table provides more information about the fields.
 
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Field</strong></p>
-</td>
-<td>
-<p><strong>Description</strong></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>General</strong> section</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Item type</p>
-</td>
-<td>
-<p>This field can be set to <strong>Goods</strong> or <strong>Services</strong>.</p>
-<p>For a transaction to be considered a service, your invoice line should be set up in one of the following ways:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It has no commodity code.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It has a six-digit commodity code</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Country/region of origin</strong> section</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>County of origin</p>
-</td>
-<td>
-<p>The county of origin of the product or service. This value is specified on the <strong>Released products</strong> page.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Codes</strong> section</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Mode of delivery</p>
-</td>
-<td>
-<p>The mode of delivery. To specify the mode of delivery, go to <strong>Sales and marketing</strong> &gt; <strong>Setup</strong> &gt; <strong>Distribution</strong> &gt; <strong>Modes of delivery</strong>.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Corrections</strong> section</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Month</p>
-</td>
-<td>
-<p>The month of the original transaction.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Quarter</p>
-</td>
-<td>
-<p>The quarter of the original transaction.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Correction year</p>
-</td>
-<td>
-<p>The year of the original transaction.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Original Intrastat record</p>
-</td>
-<td>
-<p>For service corrections, enter the number of the original Intrastat record.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Invoice value</strong> section</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Currency</p>
-</td>
-<td>
-<p>The national currency of the partner.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Invoice amount in transaction currency</p>
-</td>
-<td>
-<p>The invoice amount in the national currency of the partner.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Invoice charges amount in transaction currency</p>
-</td>
-<td>
-<p>The invoice charges in the national currency of the partner.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Invoice value in transaction currency</p>
-</td>
-<td>
-<p>The invoice value in the national currency of the partner.</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Field | Description |
+|-------|-------------|
+| Item type | This field can be set to **Goods** or **Services**.<br> For a transaction to be considered a service, your invoice line should be set up in one of the following ways:<br>- It has no commodity code<br>- It has a six-digit commodity code  |
+| County of origin | The county of origin of the product or service. This value is specified on the **Released products** page. |
+| Mode of delivery | The mode of delivery. <br>To specify the mode of delivery, go to **Sales and marketing** > **Setup** > **Distribution** > **Modes of delivery**. |
+| Month | The month of the original transaction. |
+| Quarter | The quarter of the original transaction. |
+| Correction year | The year of the original transaction. |
+| Original Intrastat record | For service corrections, enter the number of the original Intrastat record. |
+| Currency | The national currency of the partner. |
+| Invoice amount in transaction currency | The invoice amount in the national currency of the partner. |
+| Invoice charges amount in transaction currency | The invoice charges in the national currency of the partner. |
+| Invoice value in transaction currency | The invoice value in the national currency of the partner. |
 
 For more information about the invoice charges in the national currency of the partner, see [Intrastat overview prerequisites (Miscellaneous charges)](emea-intrastat.md).
 
 ### Generate an Intrastat report
 
-1.  To generate an Intrastat report, go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**.
-
-2.  On the Action Pane, select **Output** &gt; **Report**.
-
-3.  In the **Intrastat Report** dialog box, set the following fields.
-
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Field</strong></p>
-</td>
-<td>
-<p><strong>Description</strong></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><strong>Date</strong> section</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>From date</p>
-</td>
-<td>
-<p>Select the start date for the report.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>To date</p>
-</td>
-<td>
-<p>Select the end date for the report.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><strong>Export options</strong> section</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Generate file</p>
-</td>
-<td>
-<p>Set this option to <strong>Yes</strong> to generate a .txt file.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>File name</p>
-</td>
-<td>
-<p>Enter the name of the .txt file for your Intrastat report.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Generate report</p>
-</td>
-<td>
-<p>Set this option to <strong>Yes</strong> to generate an .xlsx file.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Report file name</p>
-</td>
-<td>
-<p>Enter the name of the .xlsx file for your Intrastat report.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Direction</p>
-</td>
-<td>
-<p>Select <strong>Arrivals</strong> for a report about intracommunity arrivals. Select <strong>Dispatches</strong> for a report about intracommunity dispatches.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><strong>File format mapping</strong> section</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Reference number</p>
-</td>
-<td>
-<p>Enter the document number. This value will affect the <strong>File number</strong> code on the Intrastat file report. For more information, see File format.</p>
-</td>
-</tr>
-</tbody>
-</table>
+1. To generate an Intrastat report, go to **Tax** > **Declarations** > **Foreign trade** > **Intrastat**.
+2. On the Action Pane, select **Output** > **Report**.
+3. In the **Intrastat Report** dialog box, select the start and end dates for the report.
+4. In the **Generate file** field, select **Yes** to generate a .txt file and enter the name of the file.
+5. In the **Generate report** field, select **Yes** to generate a .xlsx file and then enter the name of the report.
+6. Select **Arrivals** or **Dispatches** based on what the report is about.
+7. In the **Reference number** field, enter the document number. This value affects the file number code on the Intrastat file report. 

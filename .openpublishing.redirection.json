@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/dev-itpro/hardware-station-extensibility.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/hardware-device-extension",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/hardware-device-extension",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/cost-accounting-service-home.md",
+      "redirect_url": "/dynamics365/supply-chain/global-inventory-accounting/global-inventory-accounting-home ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/cost-accounting-service-get-started.md",
+      "redirect_url": "/dynamics365/supply-chain/global-inventory-accounting/get-started-with-gia ",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/supply-chain/cost-management/troubleshoot-costmanagement.md",
       "redirect_url": "/dynamics365/supply-chain/troubleshooting/costing/aging-report-discrepancies",
       "redirect_document_id": "false"

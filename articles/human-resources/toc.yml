@@ -5,6 +5,8 @@
     items:
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: September 20, 2021
+      href: hr-whats-new-2021-09-20.md
     - name: September 06, 2021
       href: hr-whats-new-2021-09-06.md
     - name: August 23, 2021
@@ -782,6 +784,8 @@
             href: hr-benefits-process-rate-changes.md
         - name: ACA reporting
           href: hr-benefits-management-aca-reports.md
+        - name: Benefits statement
+          href: hr-benefits-statement.md
       - name: Define and manage a benefits program
         href: hr-benefits-manage-program.md
       - name: Benefit eligibility policies
