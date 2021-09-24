@@ -208,7 +208,7 @@ Starting from version 10.0.22 of Finance, in case you are using [**Tax service**
 
 | **Parameter name**            | **Value**                          |
 |-------------------------------|------------------------------------|
-| Company Tax Id                | Select the **Company Tax Id** of the company from the name of which you will be reporting to SII system of Spain. |
+| Company Tax Id                | Select the VAT registration number of the company from the name of which you will be reporting to SII system of Spain in **Company Tax Id** field. |
 
 4. Expand **Records to include** FastTab and specify additional criteria to be applied to the datasources of Finance from which invoices will be populated in EM items. Following datasources are available:
 
@@ -614,7 +614,8 @@ Starting from version **10.0.22 of Finance**, in case you are using [**Tax servi
 
 After [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace, make sure to provide the following setup:
 
-1. Define the VAT registration number of the company from the name of which you will be reporting to SII system of Spain in **Company Tax Id** field.
+1. Define the VAT registration number of the company from the name of which you will be reporting to SII system of Spain in **Company Tax Id** field in parameters of the [**SIIGenerateItems executable class**](#set-up-the-siigenerateitems-executable-class).
+2. Specify needful criteria for **Transfer order history** data source on **Records to include** FastTab of parameters of the [**SIIGenerateItems executable class**](#set-up-the-siigenerateitems-executable-class).
 
 ## Use EM functionality to report to the SII system
 
