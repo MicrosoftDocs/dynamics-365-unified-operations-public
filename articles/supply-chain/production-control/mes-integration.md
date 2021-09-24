@@ -56,9 +56,9 @@ To monitor the incoming messages to the system, open the **Manufacturing executi
 
 ## Call the API
 
-To call any of the APIs, send a `POST` request to the following endpoint URL:<br>`/api/services/SysMessageServices/SysMessageService/SendMessage`
+To call the MES integration API, send a `POST` request to the following endpoint URL:<br>`/api/services/SysMessageServices/SysMessageService/SendMessage`
 
-Send a request body similar to the following, replacing the values for *_companyId*, *_messageType* and *_messageContent* as needed. See the next section for details about the various message types supported by the API and how to design their content.
+Send a request body similar to the following, replacing the values for `_companyId`, `_messageType` and `_messageContent` as needed. See the next section for details about the various message types supported by the API and how to design their content.
 
 ```json
 {
@@ -76,7 +76,7 @@ The following subsections describe each type of message that can be exchanged th
 
 ### Start production order message
 
-The start production order message is named `ProdProductionOrderStart` and supports the fields listed in the following table.
+The *start production order* message `_messageType` is `ProdProductionOrderStart`. It supports the fields listed in the following table.
 
 | Field name | Status | Type |
 |---|---|---|
@@ -87,7 +87,7 @@ The start production order message is named `ProdProductionOrderStart` and suppo
 
 ### Report as finished message
 
-The report as finished message is named `ProdProductionOrderReportFinished` and supports the fields listed in the following table.
+The *report as finished* message `_messageType` is `ProdProductionOrderReportFinished`. It supports the fields listed in the following table.
 
 | Field name | Status | Type |
 |---|---|---|
@@ -141,7 +141,7 @@ Each line in the `ReportFinishedLines` section of the `ProdProductionOrderReport
 
 ### Material consumption (picking list) message
 
-The material consumption (picking list) message is named `ProdProductionOrderPickingList` and supports the fields listed in the following table.
+The *material consumption (picking list)* message `_messageType` is `ProdProductionOrderPickingList`. It supports the fields listed in the following table.
 
 | Field name | Status | Type |
 |---|---|---|
@@ -171,7 +171,7 @@ Each line in the `PickingListLines` section of the `ProdProductionOrderPickingLi
 
 ### Time used for operation (route card) message
 
-The time used for operation (route card) message is named `ProdProductionOrderRouteCard` and supports the fields listed in the following table.
+The *time used for operation (route card)* message `_messageType` is `ProdProductionOrderRouteCard`. It supports the fields listed in the following table.
 
 | Field name | Status | Type |
 |---|---|---|
@@ -207,7 +207,7 @@ Each line in the `RouteCardLines` section of the `ProdProductionOrderRouteCard` 
 
 ### End production order message
 
-The end production order message is named `ProdProductionOrderEnd` and supports the fields listed in the following table.
+The *end production order* message `_messageType` is `ProdProductionOrderEnd`. It supports the fields listed in the following table.
 
 | Field name | Status | Type |
 |---|---|---|
