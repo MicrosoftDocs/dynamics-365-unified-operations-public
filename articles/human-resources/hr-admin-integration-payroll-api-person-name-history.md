@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Person name history entity for Dynamics 365 Human Resources.
+This topic describes the Person name history entity in Dynamics 365 Human Resources.
 
 Physical name: mshr_dirpersonnamehistoricalentity.
 
@@ -36,8 +36,8 @@ Physical name: mshr_dirpersonnamehistoricalentity.
 
 This entity provides information about the name history for a given person.
 
->[!IMPORTANT] 
->**FirstName**, **MiddleName**, **LastName**, **NameValidFrom**, and **NameValidTo** fields are no longer available on the Payroll employee entity. This ensures that there is only one date effective datasource that backs this entity.
+> [!IMPORTANT] 
+> The **FirstName**, **MiddleName**, **LastName**, **NameValidFrom**, and **NameValidTo** fields are no longer available on the Payroll employee entity. They have been removed to ensure that only one date-effective data source backs this entity.
 
 ## Properties
 
@@ -47,17 +47,16 @@ This entity provides information about the name history for a given person.
 | **Last name prefix**</br>mshr_lastnameprefix</br>*String*) | Read-only | The last name prefix. |
 | **Last name**</br>mshr_lastname</br>*String*) | Read-only | The last name. |
 | **Middle name**</br>mshr_middlename</br>*String*) | Read-only | The middle name. |
-| **Valid to**</br>mshr_validto</br>*String*) | Read-only |  The date the name is valid to. |
+| **Valid to**</br>mshr_validto</br>*String*) | Read-only | The date that the name is valid to. |
 | **Party number**</br>mshr_partynumber</br>*String* | Read-only | A user-readable, system-generated unique identifier for the person. |
 | **Primary field**</br>mshr_primaryfield</br>*String* | Read-only | The unique identifier of the record. |
-| **Person name history entity ID**</br>mshr_dirpersonnamehistoricalentityid</br>*GUID* | System generated | A system-generated GUID value to uniquely identify the record. |
+| **Person name history entity ID**</br>mshr_dirpersonnamehistoricalentityid</br>*GUID* | System generated | A system-generated globally unique identifier (GUID) value to uniquely identify the record. |
 
 ## Relations
 
-|Property value | Related entity | Navigation property | Collection type |
+| Property value | Related entity | Navigation property | Collection type |
 | --- | --- | --- | --- |
-| - | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | - | mshr_FK_PayrollEmployeeEntity_Name |
-
+| Not applicable | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | Not applicable | mshr_FK_PayrollEmployeeEntity_Name |
 
 ## Example query for Payroll employee
 
