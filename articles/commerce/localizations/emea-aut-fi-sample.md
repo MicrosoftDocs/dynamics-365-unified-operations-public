@@ -380,7 +380,8 @@ The Hardware station extension components are included in the Hardware station s
 
 # [Retail 10.0.21 and later](#tab/retail-10-0-21)
 
-[!WARNING] Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), the next commerce runtime (CRT) extensions **Microsoft.Dynamics.Commerce.Runtime.ReceiptsAustria**, **Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventAustria**,**Microsoft.Dynamics.Commerce.Runtime.XZReportsAustria** can't currently be loaded and used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS) until this limitation will be resolved.
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), the next commerce runtime (CRT) extensions **Microsoft.Dynamics.Commerce.Runtime.ReceiptsAustria**, **Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventAustria**,**Microsoft.Dynamics.Commerce.Runtime.XZReportsAustria** can't currently be loaded and used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS) until this limitation will be resolved.
 
 
 The CRT extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **Efr.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
@@ -463,6 +464,8 @@ The Hardware station extension components are included in the EFR solution from 
     HardwareStation.EFR.Installer.exe install --verbosity 0
     ```
 
+---
+
 ### Set up the registration process
 
 To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
@@ -500,6 +503,8 @@ To enable the registration process, follow these steps to set up Headquarters. F
 8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. To enable registration of non-fiscal events on the POS, on the **Functions** FastTab, under **POS**, set the **Audit** option to **Yes**.
 9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
 10. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+
+---
 
 ### Production environment
 
