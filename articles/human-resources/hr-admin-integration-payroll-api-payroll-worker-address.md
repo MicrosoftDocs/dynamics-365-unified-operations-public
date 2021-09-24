@@ -40,24 +40,24 @@ This entity provides the payroll residency location and payroll work location fo
 
 | Property</br>**Physical name**</br>***Type*** | Use | Description |
 | --- | --- | --- |
-| **Personnel number**</br>mshr_personnelnumber</br>*String* | Read-only | The employee's unique personnel number.  |
-| **Location ID**</br>mshr_locationidbr>*String* | Read-only | The ID for the address.  |
-| **Lived in address**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes option set](hr-admin-integration-payroll-api-no-yes.md)* | Read-only | Denotes if the address is where the employee lives. |
-| **Worked in address** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes option set](hr-admin-integration-payroll-api-no-yes.md)* | Read-only | Denotes if the address is where the employee works. |
-| **Country region**</br>mshr_countryregionid</br>*String* | Read-only</br>Required | The country region defined for the address. |
-| **Postal code**</br>mshr_zipcode<br>*String* | Read-only |The identification number defined for the employee. |
-| **Street**</br>mshr_street</br>*String* | Read-only | The street defined for the address. |
-| **City**</br>mshr_city</br>*String* | Read-only | The city defined for the address. |
-| **State**</br>mshr_state</br>*String* | Read-only | The state defined for the address. |
-| **County**</br>mshr_county</br>*String* | Read-only | The county defined for the address. |
-| **Valid from**</br>mshr_postaladdressvalidfrom</br>*Date Time Offset* | Read-only | The date the address is valid from. |
-| **Valid to**</br>mshr_postaladdressvalidto</br>*Date Time Offset* | Read-only | The date the address is valid to. |
-| **Primary field**</br>mshr_primaryfield</br>*String* | Read-only | The primary field.  |
-| **Payroll worker address ID**</br>mshr_payrollworkeraddressentityid</br>*GUID* | System generated | A system-generated GUID value to uniquely identify the address. |
+| **Personnel number**</br>mshr_personnelnumber</br>*String* | Read-only | The employee's unique personnel number. |
+| **Location ID**</br>mshr_locationidbr>*String* | Read-only | The ID for the address. |
+| **Lived in address**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes option set](hr-admin-integration-payroll-api-no-yes.md)* | Read-only | A value that indicates whether the address is where the employee lives. |
+| **Worked in address** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes option set](hr-admin-integration-payroll-api-no-yes.md)* | Read-only | A value that indicates whether the address is where the employee works. |
+| **Country region**</br>mshr_countryregionid</br>*String* | Read-only</br>Required | The country or region that is defined for the address. |
+| **Postal code**</br>mshr_zipcode<br>*String* | Read-only | The identification number that is defined for the employee. |
+| **Street**</br>mshr_street</br>*String* | Read-only | The street that is defined for the address. |
+| **City**</br>mshr_city</br>*String* | Read-only | The city that is defined for the address. |
+| **State**</br>mshr_state</br>*String* | Read-only | The state or province that is defined for the address. |
+| **County**</br>mshr_county</br>*String* | Read-only | The county that is defined for the address. |
+| **Valid from**</br>mshr_postaladdressvalidfrom</br>*Date Time Offset* | Read-only | The date that the address is valid from. |
+| **Valid to**</br>mshr_postaladdressvalidto</br>*Date Time Offset* | Read-only | The date that the address is valid to. |
+| **Primary field**</br>mshr_primaryfield</br>*String* | Read-only | The primary field. |
+| **Payroll worker address ID**</br>mshr_payrollworkeraddressentityid</br>*GUID* | System generated | A system-generated globally unique identifier (GUID) value to uniquely identify the address. |
 
 ## Relations
 
-|Property value | Related entity | Navigation property | Collection type |
+| Property value | Related entity | Navigation property | Collection type |
 | --- | --- | --- | --- |
 | _mshr_fk_worker_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Worker_id | mshr_FK_PayrollEmployeeEntity_Address |
 
