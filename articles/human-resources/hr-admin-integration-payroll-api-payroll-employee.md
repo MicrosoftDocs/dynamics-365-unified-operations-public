@@ -54,7 +54,7 @@ This entity provides information about the employee. You must set the [payroll i
 | **Identification type ID**</br>mshr_identificationtypeid</br>*String* |Read-only | The identification type defined for the employee. |
 | **Identification number to**</br>mshr_identificationnumber</br>*String* | Read-only |The identification number defined for the employee. |
 | **Ready to pay**</br>mshr_readytopay</br>[mshr_noyes option set](hr-admin-integration-payroll-api-no-yes.md) | Read-only | Indicates if the employee is marked as ready to pay. |
-| **Payroll employee entity ID**</br>mshr_payrollemployeeentityid</br>*GUID* | System generated | A system-generated GUID value to uniquely identify the employee. |
+| **Payroll employee entity ID**</br>mshr_payrollemployeeentityid</br>*GUID* | System generated | A system-generated globally unique identifier (GUID) value to uniquely identify the employee. |
 
 ## Relations
 
