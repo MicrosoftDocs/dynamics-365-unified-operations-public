@@ -128,10 +128,15 @@ To enable Supply Chain Management to use your Azure AD application, follow these
 1. Associate your Azure AD application with the Warehouse Management mobile app user:
 
     1. Go to **System administration \> Setup \> Azure Active Directory applications**.
-    1. Create a line.
-    1. Enter the client ID that you made a note of in the previous section, give it a name, and select the user that you just created. We recommend that you tag all your devices. Then, if a device is lost, you can easily remove its access to Supply Chain Management from this page. <!-- KFM: Is this really true? How does this work? -->
+    1. Select **New** from the Action Pane to create a line.
+    1. Enter the **Client ID** that you made a note of in the previous section, give it a **Name**, and select the **User ID** that you just created.
 
     ![Azure Active Directory applications.](media/app-connect-aad-apps.png "Azure Active Directory applications")
+
+> [!TIP]
+> One way to make use of these settings is to create a new client ID in Azure for each of your physical devices and then add each client ID to the **Azure Active Directory applications** page. Then, if a device is lost, you can easily remove its access to Supply Chain Management by removing its client ID from this page. (This works because the connection credentials saved on each device also specify a client ID, as described later in this topic.)
+>
+> Also, the default language, number format, and time zone settings for each client ID are established by the preferences set for the **User ID** mapped here, so you might use those preferences to establish default settings for each device or collection of devices based on the client ID. However, these default settings will be overridden if they are also defined for the *warehouse app user account* a worker uses to sign in on the device (see also [Mobile device user accounts](mobile-device-work-users.md)).
 
 ## <a name="authenticate"></a>Authenticate by using a certificate or client secret
 
