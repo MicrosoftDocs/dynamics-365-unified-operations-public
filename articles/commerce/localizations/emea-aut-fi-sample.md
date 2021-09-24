@@ -555,6 +555,8 @@ The previous procedure enables the extensions that are components of the fiscal 
 
 Using samples from [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) for deployable package creation requires a migration of samples to Retail SDK.
 
+---
+
 ## Design of extensions
 
 ### Commerce runtime extension design
