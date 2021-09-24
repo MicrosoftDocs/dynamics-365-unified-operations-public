@@ -397,9 +397,6 @@ By using a **pre-release** Chromium browser extension that works for both the ne
     ```
 4.  Open the latest Microsoft Edge browser or Google Chrome.
 5.  Select **Settings and more &gt; Extensions** in Microsoft Edge (or **Customize and control Google Chrome &gt; More tools &gt; Extensions** in Google Chrome).
-
-    ![This image shows the location of the Extensions menu in Google Chrome.](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
-
 6.  Select **Developer mode**.
 7.  Click **Load unpacked extension**.
 8.  Browse to the folder that contains the Task recorder extension by using the path **FMLab-master \> FMLab \> TaskRecorderScreenshot**, and then select **Select Folder**.
