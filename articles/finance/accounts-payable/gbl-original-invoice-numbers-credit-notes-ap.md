@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: References to original invoices in credit notes (vendor invoices)
-description: This topic describes how to create reference to original invoice when creating a credit note.
+title: Reference original invoices in credit notes (vendor invoices)
+description: This topic describes how to create a reference to an original invoice when creating a credit note.
 author: v-oloski
 ms.date: 09/23/2021
 ms.topic: article
@@ -26,64 +26,47 @@ ms.dyn365.ops.version: 10.0.20
 
 ---
 
-# References to original invoices in credit notes (vendor invoices)
+# Reference original invoices in credit notes (vendor invoices)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describeshow to create reference to original invoice when
-creating a credit note.
+This topic describes how to create a reference to an original invoice when creating a credit note.
 
-# Prerequisites
+## Prerequisites
  
-In the **Feature management** workspace, enable the **Enable credit invoicing
-for vendor invoices** feature. For more information, see [Feature management
-overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+In the **Feature management** workspace, enable the feature, **Enable credit invoicing for vendor invoices**. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-The functionality that is described in this topic applies to the following
-documents:
+The functionality that is described in this topic applies to the following business documents:
 
 **Accounts payable**
 
--   Purchase order
-
--   Invoice journal,
-
--   Invoice register
+- Purchase order
+- Invoice journal
+- Invoice register
 
 **General ledger**
 
--   General journal
+- General journal
 
-# How to define reference to original invoice
+## Define reference to an original invoice
 
-Use the following procedures to define reference to original invoice in the following 
-the document types.
+Use the following procedures to define a reference to an original invoice in the specified business document types.
 
-## Vendor credit note (purchase order)
+### Vendor credit note (purchase order)
 
-1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1. Go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
+2. Create a new purchase order or use existing one to create a credit note.
+3. On the Action Pane, on the **Invoice** tab, in the **Introduce** group, select **Credit invoicing**.
+4. Enter the reason for the correction and the reference to the original invoice.
 
-2. Create a new purchase order or use existing one for creation credit note.
+### Vendor credit note (ledger journals)
 
-3. On the Action Pane, on the **Invoice** tab, in the **Introduce**
-group, select **Credit invoicing**.
-
-4. Enter the reason for the correction and the reference to the original
-invoice.
-
-## Vendor credit note (ledger journals)
-
-1. Go to **Accounts payable** \> **Invoice journals** or **Accounts payable** \> **Invoice
-register or General ledger** \> **Journal entries** \> **General journals**.
-
+1. Go to **Accounts payable** > **Invoice journals** or **Accounts payable** > **Invoice register or General ledger** > **Journal entries** > **General journals**.
 2. Create a new journal and new journal lines.
+3. On the Action Pane, select **Functions** > **Credit invoicing**.
+4. Enter the reason for the correction and the reference to the originalinvoice.
 
-3. On the Action Pane, click the **Functions** button, then click **Credit
-invoicing**.
-
-4. Enter the reason for the correction and the reference to the original
-invoice.
-
-> [!NOTE]. The **Credit invoicing** function is visible in a general journal (Journal voucher) if value in **Account type** field is equal to **Vendor**.
+> [!NOTE]
+> The **Credit invoicing** function is visible in a general journal voucher if the **Account type** field is set to **Vendor**.
 
  
