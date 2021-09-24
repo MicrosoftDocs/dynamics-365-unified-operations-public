@@ -29,9 +29,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Global regions in which you organization operates may have different address format types. Your organization must have the flexibility to adjust to the appropriate address format when displaying a postal address for each region. You can use the **Address setup** form to set up the postal address formats required for your organization.
+Global regions in which your organization operates may have different address format types. You must have the ability to adjust to the appropriate address format when displaying a postal address for each region. You can use the **Address setup** form to set up the postal address formats required for your organization.
 
 ## Define address parameters
+Use the **Parameters** section of the **Address setup** form to define which fields must be validated when creating addresses in the application. You may select to require validation for **ZIP/postal code**, **District**, and **City** values. If, for each respective option, the option is not selected to validate the field, then no validation occurs for that field when creating new addresses in the global address book. The field is a free-text field in which the user can enter any value. If the option is selected to validate the respective field, then the value entered in the field when creating a new address in the global address book must be a value already created in address setup. 
+
+For example, if the **City** option is selected under **Validate on creating addresses** section, then when creating a new address in the global address book, the **City** value entered for the new address must be selected from the list of cities set up in the **City** section of the **Address setup** form.
 
 ## Set up address formats
 Use this section of the form to enter and set up address component information and formatting. As you enter address information for a selected address type, the **Preview** field in the upper-right pane displays how the address will appear.
@@ -70,13 +73,13 @@ Use the **State/province** section of the form to define state/province informat
 4. Enter the state/province code and the name of the state/province.
 5. Select the time zone for the state/province.
 6. Define the state code for the state/province, and any additional codes required for transactional information.
-7. Select the **Default state/province** toggle to define whether the state/province will be the default for the selected country/region. The state/province that is selected as the default state/province will be the default value entered in state/province field when a new county or city record is created.
+7. Select the **Default state/province** toggle to define whether the state/province will be the default for the selected country/region. The state/province that is selected as the default state/province will be the default value entered in state/province fields when a new county or city record is created.
 
 ## Set up county information
 Use the following procedure to add county information to any existing country/regions or state/provinces.
 
 1. In the **Address setup** form, select **County** in the left pane.
-2. Click New to create a new line.
+2. Click **New** to create a new line.
 3. In the **Country/region** field, select the country/region in which the county is located.
 4. In the **State or province** field, select the state where the county is located.
 5. Enter the name and a brief description of the county.
