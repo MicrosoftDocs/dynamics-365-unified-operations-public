@@ -77,7 +77,7 @@ If the **Ready to pay** field is **No**, this is an indication that you must per
 
 ## Process Automation
 
-You can automate the validation of all employees using the [Process Automation](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation) in the Compensation management workspace, under links, Process Automations.
+You can automate the validation of all employees using [Process Automation](/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation) in the **Compensation management** workspace > **Links** > **Parameters** > **Process Automations**.
 
 ## See also
 
