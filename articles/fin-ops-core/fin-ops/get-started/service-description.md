@@ -26,7 +26,7 @@ Finance and Operations apps are enterprise resource planning (ERP) software as a
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Together with [business intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastructure](https://azure.microsoft.com/global-infrastructure/), [compute](/azure/service-fabric/service-fabric-overview), and [database services](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview), these apps enable organizations to run industry-specific and operational business processes. Supported by their implementation partner, customers determine the configuration of the business application logic that best suits their unique business processes. Functionality and business processes can be augmented or extended through one or a combination of the following solutions:
+Together with [business intelligence](/power-bi/fundamentals/power-bi-service-overview), [infrastructure](https://azure.microsoft.com/global-infrastructure/), [compute](/azure/service-fabric/service-fabric-overview), and [database services](https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/), these apps enable organizations to run industry-specific and operational business processes. Supported by their implementation partner, customers determine the configuration of the business application logic that best suits their unique business processes. Functionality and business processes can be augmented or extended through one or a combination of the following solutions:
 
 - Built in [personalization experience](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) tools
@@ -195,17 +195,17 @@ The following table describes some typical scenarios and activities for the serv
 | Provision all production instances and non-production instances. | X | |
 | Validate the deployed production instances and non-production instances. | | X |
 | **Service updates** | |
-| Microsoft applies service updates to designated non-production and production instances. | X | X |
-| Download the update from LCS, define, develop, and test the update, and provide the code update package back to LCS. | | X |
-| Request that extension updates be applied to the production instance. | | X |
+| Apply service updates to designated non-production and production instances. | X | |
+| Manually apply service updates from LCS to sandbox instances. Define, develop, and test the update, and provide the code update package back to LCS. | | X |
+| Request and schedule extension updates be applied to production instance. | | X |
 | Create a code and data backup for the production instance before any updates are applied. | X | |
 | In the event of any failure, roll back the production instance to the code and data backup. | X | |
 | **Data management (backup, restore, and update)** | | |
 | Back up the database. | X | |
 | Determine high availability and a disaster recovery plan. | X | |
-| Monitor performance of the production instance database. | X | X |
-| Tune the production instance database for performance. | X | X |
-| Initiate copying of the production instance database to a non-production instance. | | X |
+| Monitor performance of the production instance database. | X | |
+| Tune the production instance database for performance. | X | |
+| Perform production instance database point-in-time refresh to a non-production instance. | | X |
 | **Updating the infrastructure** | | |
 | Schedule regular infrastructure updates. | X | |
 | **Scaling up and down (users, storage, and instances)** | | |
@@ -213,7 +213,7 @@ The following table describes some typical scenarios and activities for the serv
 | Update usage changes in the LCS Subscription estimator tool. | | X |
 | Report any significant performance issues that affect use of the service. | | X |
 | Proactively manage the resources that are required for the applicable service. | X | |
-| Investigate and troubleshoot incidents. | X | X |
+| Investigate and troubleshoot incidents. | X | |
 | **Security (user access)** | | |
 | Provide user access to the service. | | X |
 | Provide LCS project access for the management and operation of instances that were deployed through LCS. | | X |
