@@ -37,12 +37,17 @@ For more information about the SII system of Spain, see the [Immediate Supply of
 
 Microsoft Dynamics 365 Finance supports the full cycle of processing, including the format generation and submission of the following reports to the SII system of Spain:
 
-   - 'Libro de registro de facturas Expedidas': Record book of issued invoices 
-   - 'Libro de registro de facturas Recibidas': Record book of received invoices
-   - 'Libro de registro de determinadas operaciones intracomunitarias': Record book of certain intra-community operations
-   - 'Cobros sobre facturas registradas en el Libro de registro de Facturas Expedidas': Payments for invoices registered in the record book of issued invoices
-   - 'Pagos para facturas registradas en el Libro de registro de Facturas Recibidas': Payments for invoices registered in the record book of received invoices
-   - 'Cobros en Metálico': Payments in cash
+   - 'Libro de registro de facturas Expedidas': **Record book of issued invoices**,
+   - 'Libro de registro de facturas Recibidas': **Record book of received invoices**,
+   - 'Libro de registro de determinadas operaciones intracomunitarias': **Record book of certain intra-community operations**,
+   - 'Cobros sobre facturas registradas en el Libro de registro de Facturas Expedidas': **Payments for invoices registered in the record book of issued invoices**,
+   - 'Pagos para facturas registradas en el Libro de registro de Facturas Recibidas': **Payments for invoices registered in the record book of received invoices**,
+   - 'Cobros en Metálico': **Payments in cash**.
+
+Starting from version **10.0.22 of Finance**, in case you are using [**Tax service**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview) and [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace, you can [report to SII system of Spain from a legal entity with primary address outside of Spain](#multiple-vat) the following reports:
+
+- 'Libro de registro de facturas Expedidas': **Record book of issued invoices**,
+- 'Libro de registro de facturas Recibidas': **Record book of received invoices**.
 
 This topic describes how to set up and use Microsoft Dynamics 365 Finance to interoperate with the SII system of Spain. It includes information about how to complete the following tasks:
 
@@ -204,7 +209,7 @@ In the Message item types group:
 | Vendor payments               | PagosProveedores                   |
 | Intracommunity operations     | OperacionesIntracomunitarias       |
 
-Starting from version 10.0.22 of Finance, in case you are using [**Tax service**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tax-service-set-up-environment-master-data-lookup?toc=/dynamics365/finance/toc.json) and [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace, additional **Multiple Tax ID parameters** group in **Add new electronic message items** dialog box will be visible. Set the following values for the parameters in this group.
+Starting from version 10.0.22 of Finance, in case you are using [**Tax service**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview) and [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace, additional **Multiple Tax ID parameters** group in **Add new electronic message items** dialog box will be visible. Set the following values for the parameters in this group.
 
 | **Parameter name**            | **Value**                          |
 |-------------------------------|------------------------------------|
@@ -217,7 +222,7 @@ Starting from version 10.0.22 of Finance, in case you are using [**Tax service**
 | CUSTOMER INVOICE JOURNAL      | This datasource helps to populate data from **Customer invoice journal** table as EM items of **FacturasСliente** type for reporting to SII system of Spain. |
 | VENDOR INVOICE JOURNAL        | This datasource helps to populate data from **Vendor invoice journal** table as EM items of **FacturasProveedores** type for reporting to SII system of Spain. |
 | PROJECT INVOICE               | This datasource helps to populate data from **Project invoice** table as EM items of **FacturasСliente** type for reporting to SII system of Spain. |
-| TRANSFER ORDER HISTORY        | This datasource helps to populate data from **Transfer order history** table as EM items of **FacturasСliente** and **FacturasProveedores** types for reporting to SII system of Spain. This datasource is available starting from version 10.0.22 of Finance, in case you are using [**Tax service**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tax-service-set-up-environment-master-data-lookup?toc=/dynamics365/finance/toc.json) and [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace. |
+| TRANSFER ORDER HISTORY        | This datasource helps to populate data from **Transfer order history** table as EM items of **FacturasСliente** and **FacturasProveedores** types for reporting to SII system of Spain. This datasource is available starting from version 10.0.22 of Finance, in case you are using [**Tax service**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview) and [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace. |
 
 5.  Select **OK** to initiate the executable class.
 
@@ -605,9 +610,9 @@ To verify that you correctly set up the parameters for the **SIIGenerateItems** 
 2.  Select the **SIIGenerateItems** executable class that is associated with the **EMCreateItemsController** executable class name.
 3.  On the Action Pane, select **Parameters**, and then set up the **TipoOperacion** value for the **Intra-community operation ID** additional field.
 
-## Reporting to SII system of Spain for multiple VAT registrations
+## <a id="multiple-vat"></a>Reporting to SII system of Spain for multiple VAT registrations
 
-Starting from version **10.0.22 of Finance**, in case you are using [**Tax service**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tax-service-set-up-environment-master-data-lookup?toc=/dynamics365/finance/toc.json) and [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace, you can report to SII system of Spain the following reports:
+Starting from version **10.0.22 of Finance**, in case you are using [**Tax service**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview) and [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace, you can report to SII system of Spain the following reports:
 
 - 'Libro de registro de facturas Expedidas': **Record book of issued invoices**,
 - 'Libro de registro de facturas Recibidas': **Record book of received invoices**.
