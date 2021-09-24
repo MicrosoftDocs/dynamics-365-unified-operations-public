@@ -53,3 +53,63 @@ You can enable any or all of the following processes for integration.
 ## Monitor incoming messages
 
 To monitor the incoming messages to the system, open the **Manufacturing execution systems integration** page. There, you can view, process, and troubleshoot issues.
+
+## Call the API
+
+To call any of the APIs, send a `POST` request to the following endpoint URL:<br>`/api/services/SysMessageServices/SysMessageService/SendMessage`
+
+Send a request body similar to the following, replacing the values for *_companyId*, *_messageType* and *_messageContent* as needed. See the next section for details about the various message types supported by the API and how to design their content.
+
+```json
+{
+    "_companyId": "USMF",
+    "_messageQueue": "JmgMES3P",
+    "_messageType": "ProdProductionOrderReportFinished",
+    "_messageContent":
+    "{\"ProductionOrderNumber\": \"P000123\", \"ReportFinishedLines\": [{\"ItemNumber\": \"A0001\", \"ReportedGoodQuantity\": 10, \"ReportAsFinishedDate\": \"2021-01-01\"}]}"
+}
+```
+
+## API message types and content
+
+The following subsections describe each type of message that can be exchanged though the MES integration API.
+
+### Start production order message
+
+The start production order message is named `ProdProductionOrderStart` and supports the fields listed in the following table.
+
+| Field name | Status | Type |
+|---|---|---|
+| `ProductionOrderNumber` | Mandatory | String |
+| `StartedQuantity` | Optional | Real |
+| `StartedDate` | Optional | Date |
+| `AutomaticBOMConsumptionRule` | Optional | Enum (FlushingPrincip \| Always \| Never) |
+
+### Report as finished message
+
+The report as finished message is named `ProdProductionOrderReportFinished` and supports the fields listed in the following table.
+
+| Field name | Status | Type |
+|---|---|---|
+| `ProductionOrderNumber` | Mandatory | String |
+| `ReportFinishedLines` | Mandatory | A list of lines (at least one), each of which contains the payload described in the following table. |
+
+Each line in the `ReportFinishedLines` section of the `ProdProductionOrderReportFinished` message supports the fields listed in the following table.
+
+| Field name | Status | Type |
+|---|---|---|
+| `LineNumber` | ???? | Real |
+
+...
+
+### Material consumption (picking list) message
+
+...
+
+### Time used for operation (route card) message
+
+...
+
+### End production order message
+
+...
