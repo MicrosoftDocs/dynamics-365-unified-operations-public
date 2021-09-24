@@ -46,11 +46,11 @@ Use this section of the form to enter and set up address component information a
 5. In the **Address application object** field, select the first object that must appear when an address for this format is displayed. For example, **Street**.
 6. In the **Separator** field, enter the character that should separate this object from the next object when the address is displayed. For example, a comma.
 7. Select the check boxes to indicate the following:
-  - **New line** - Display this object on a new line.
-  - **Data entry only** - Display this object only when entering the address. If this check box is selected, the object will not be displayed when the address is printed.
-  - **Not active** - Do not use this object in an address for the selected format type.
-  - **Expand** - Display the name of the country/region, state, or county instead of the assigned code.
-  - **Special** - Indicates that the field countains the same separator characters.
+   - **New line** - Display this object on a new line.
+   - **Data entry only** - Display this object only when entering the address. If this check box is selected, the object will not be displayed when the address is printed.
+   - **Not active** - Do not use this object in an address for the selected format type.
+   - **Expand** - Display the name of the country/region, state, or county instead of the assigned code.
+   - **Special** - Indicates that the field countains the same separator characters.
 
 ## Set up country/region information
 Use the **Country/region** section of the form to define country/region information for address setup.
