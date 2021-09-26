@@ -43,6 +43,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 [!include [banner](../includes/preview-banner.md)]
 
+### Overlapping discounts handling setting in Commerce parameters
+
+The “overlapping discounts handling” setting in Commerce parameters is deprecated in 10.0.21 release. Going forward, Commerce pricing engine will use single algorithm to determine the optimal combination of overlapping discounts.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The “overlapping discounts handling” setting in Commerce parameters controls how Commerce pricing engine searches and determines the optimal combination of overlapping discounts. It currently offers three options. The “best performance” option ultilizes an advanced heuristics algorithm and [marginal value ranking](https://docs.microsoft.com/dynamics365/commerce/optimal-combination-overlapping-discounts) method to prioritize, evaluate and determine the best discount combination in a timely manner. The “balanced calculation” in our current code base works exactly the same as the “best performance”, so it’s essentially a duplicated option. The “best discount” option uses a legacy algorithm that brute forces through all possible discount combinations during price calculation. For orders with large lines and quantities, this option might result in performance issues.<br><br>In order to simplify configuration, improve performance and reduce incidents caused by legacy algorithm, we will remove this setting entirely and update Commerce pricing engine internal logic to only use the advanced algorithm (behind "best performance" option) going forward. |
+| **Replaced by another feature?**   | No. We recommend organizations that use "balanced calculation" or "best discount" option for this setting to switch to the "best performance" option prior to this feature removal. |
+| **Product areas affected**         | Pricing and discounts |
+| **Deployment option**              | All |
+| **Status**                         | As of 10.0.21 release, the "overlapping discounts handling" setting will be removed from Commerce parameters in October 2022. |
+
 ### Retail SDK distributed by using Lifecycle Services
 
 The Retail SDK ships in Lifecycle Services (LCS). This mode of distribution is deprecated in release 10.0.21. Going forward, Retail SDK reference packages, libraries, and samples will be published in public repositories on GitHub.
