@@ -113,29 +113,29 @@ When a worker completes or partially completes a job, they can report good quant
 
 ![Report progress dialog box.](media/pfei-report-progress-dialog.png "Report progress dialog box")
 
-## Reporting good quantities on batch orders with co-products and by-products
+## Reporting good quantities on batch orders that have co-products and by-products
 
-Workers can use the production floor execution interface to report progress on batch orders, including reporting on co-products and by-products.
+Workers can use the production floor execution interface to report progress on batch orders. This reporting includes reporting on co-products and by-products.
 
-Some manufactures, especially those within the process industries, use batch orders to manage their production processes. Batch orders are created from formulas, which can be defined to have co-product and by-product output. When reporting feedback on such batch orders, the amount of output needs to be registered on the formula item as well as the co-products and by-products.
+Some manufacturers, especially in process industries, use batch orders to manage their production processes. Batch orders are created from formulas, and those formulas can be defined so that they have co-products and by-products as output. When feedback about those batch orders is reported, the amount of output must be registered on the formula item, and also on the co-products and by-products.
 
-When a worker completes or partially completes a job on a batch order, they can report good or scrap quantities for each product defined as an output for the order. The products defined as output for a batch order can be of type *Formula*, *Co-product*, or *By-product*.
+When a worker completes or partially completes a job on a batch order, they can report good or scrap quantities for each product that is defined as output for the order. Products that are defined as output for a batch order can be of the *Formula*, *Co-product*, or *By-product* type.
 
-The worker reports good quantities on the products by selecting a job on the **Active jobs** tab and then selecting **Report progress**.
+To report good quantities on the products, a worker selects a job on the **Active jobs** tab and then selects **Report progress**.
 
-Then, in the **Report progress** dialog box, the worker can select among the products defined as output for the batch order to report on. The worker can select one or many products from the list and then select **Report progress**. For each product, the quantity is blank by default and the worker can enter the quantity in the numeric keyboard. The worker can move between the selected products by using the **Previous** and **Next** buttons. After the quantities are entered for each product, the worker can update the status of the job to *In progress*, *Stopped*, or *Completed*.
+Then, in the **Report progress** dialog box, the worker can select among the products that are defined as output for the batch order to report on. The worker can select one or many products in the list, and then select **Report progress**. For each product, the quantity is blank by default, and the worker can use the numeric keyboard to enter the quantity. The worker can use the **Previous** and **Next** buttons to move between the selected products. After the quantity is entered for each product, the worker can update the status of the job to *In progress*, *Stopped*, or *Completed*.
 
 ![Report co-products and by-products.](media/report-co-by-products.png "Report co-products and by-products")
 
 ### Reporting on batch orders for planning items
 
-When a worker completes a job on a batch order for a planning item, the worker will only report quantities on co-products and by-products because planning items don't contain an item of type *Formula*.
+When a worker completes a job on a batch order for a planning item, they will report quantities only on co-products and by-products, because planning items don't contain an item of the *Formula* type.
 
 ### Reporting co-product variation
 
-If a batch order is created from a formula version where **Co-products variations** is set to *Yes*, the worker can report on co-products that are not part of the definition for the batch orders. This is used in scenarios where unexpected product output can occur in the production process.
+If a batch order is created from a formula version where the **Co-products variations** option is set to *Yes*, the worker can report on co-products that aren't part of the definition for the batch orders. This functionality is used in scenarios where unexpected product output can occur in the production process.
 
-In this case, the worker can specify the co-product and quantity to report by selecting **Co-products variations** in the report progress dialog. This lets the worker select from a list of all the released products defined as co-products.
+In this case, the worker can specify the co-product and quantity to report by selecting **Co-products variations** in the report progress dialog box. The worker can then select among all the released products that are defined as co-products.
 
 ## Reporting scrap
 
