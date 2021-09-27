@@ -572,7 +572,7 @@ Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** 
 
 ### Commerce Scale Unit (self-hosted) components.
 
-1. Download the Commerce Scale Unit, Hardware station, Modern POS component installers and install each one as prerequisites. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md).
+1. Download the Commerce Scale Unit, Hardware station, Modern POS component installers and install each one as prerequisites. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](../dev-itpro/Enhanced-Mass-Deployment.md).
 
 2. Start the extension installer from command line
 
