@@ -46,7 +46,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
+| Module | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
 | Cost management | Inventory closing progress details | This preview feature enables a detailed view of inventory closing progress. |
 | Procurement and sourcing | Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow | This preview feature improves error checking when users submit and approve purchase requisitions that exceed the remaining balance of a general budget reservation line. This helps prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow. |
