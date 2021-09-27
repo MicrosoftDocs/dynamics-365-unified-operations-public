@@ -4,7 +4,7 @@
 title: Set up sales tax codes
 description: This topic explains how to set up sales tax codes in Dynamics 365 Finance. 
 author: twheeloc
-ms.date: 09/24/2021
+ms.date: 09/27/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -48,10 +48,10 @@ This task uses the USMF demo company.
 
 Starting in Finance version 10.0.22, if you are using the [**Tax service**](../localizations/global-tax-calcuation-service-overview.md) and [**Support multiple VAT registration numbers**](../localizations/emea-multiple-vat-registration-numbers.md) features is enabled in the **Feature management** workspace, you can use **Type of tax** field to specify type of the tax code. The following values are available:
 
-- Standard VAT,
-- Reduced VAT,
-- VAT 0%,
-- Excise,
-- Other.
+- Standard VAT
+- Reduced VAT
+- VAT 0%
+- Excise
+- Other
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
