@@ -54,17 +54,17 @@ This entity provides information about the employee. You must set the [payroll i
 | **Identification type ID**</br>mshr_identificationtypeid</br>*String* |Read-only | The identification type defined for the employee. |
 | **Identification number to**</br>mshr_identificationnumber</br>*String* | Read-only |The identification number defined for the employee. |
 | **Ready to pay**</br>mshr_readytopay</br>[mshr_noyes option set](hr-admin-integration-payroll-api-no-yes.md) | Read-only | Indicates if the employee is marked as ready to pay. |
-| **Payroll employee entity ID**</br>mshr_payrollemployeeentityid</br>*GUID* | Required</br>System generated | A system-generated GUID value to uniquely identify the employee. |
+| **Payroll employee entity ID**</br>mshr_payrollemployeeentityid</br>*GUID* | System generated | A system-generated globally unique identifier (GUID) value to uniquely identify the employee. |
 
 ## Relations
 
 |Property value | Related entity | Navigation property | Collection type |
 | --- | --- | --- | --- |
-| _mshr_fk_employment_id_value | mshr_hcmemploymentdetailentity | mshr_FK_Employment_id | - |
+| _mshr_fk_employment_id_value | mshr_hcmemploymentdetailentity | mshr_FK_Employment_id | mshr_FK_HcmEmploymentDetailEntity_PayrollEmployee |
 | _mshr_fk_fixedcompplan_id_value | [mshr_payrollfixedcompensationplanentity](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md) | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Employee |
 | _mshr_fk_name_id_value | mshr_dirpersonnamehistoricalentity | mshr_FK_Name_id | - |
-| _mshr_fk_worker_id_value | mshr_hcmworkerbaseentity | mshr_FK_Worker_id | - |
-| _mshr_fk_workerbankaccount_id_value | mshr_hcmworkerbankaccountentity | mshr_FK_WorkerBankAccount_id | - |
+| _mshr_fk_worker_id_value | mshr_hcmworkerbaseentity | mshr_FK_Worker_id | mshr_FK_HcmWorkerBaseEntity_PayrollEmployee |
+| _mshr_fk_workerbankaccount_id_value | mshr_hcmworkerbankaccountentity | mshr_FK_WorkerBankAccount_id | mshr_FK_HcmWorkerBankAccountEntity_PayrollEmployee |
 | _mshr_fk_variablecompaward_id_value | [mshr_payrollvariablecompensationawardentity](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md) | mshr_FK_VariableCompAward_id | mshr_FK_PayrollVariableCompensationAwardEntity_Employee |
 | _mshr_fk_address_id_value | [mshr_payrollworkeraddressentity](hr-admin-integration-payroll-api-payroll-worker-address.md) | mshr_FK_Address_id | mshr_FK_PayrollWorkerAddressEntity_Worker |
 
