@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985

@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Release 10.0.12
 
 # Warehouse management on-hand entries cleanup job
 
+[!include [banner](../includes/banner.md)]
+
 The performance of queries that are used to calculate on-hand inventory is affected by the number of records in the tables that are involved. One way to help improve the performance is to reduce the number of records that the database must consider.
 
 This topic describes the on-hand entries cleanup job, which deletes unneeded records in the InventSum and WHSInventReserve tables. These tables store on-hand information for items that are enabled for warehouse management processing. (These items are referred to as WHS items.) Deletion of these records can significantly improve the performance of on-hand calculations.

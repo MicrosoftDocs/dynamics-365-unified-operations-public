@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Release 10.0.11
 
 # Moving average fallback cost sequence
 
+[!include [banner](../includes/banner.md)]
+
 One way that you can calculate the cost of your inventory is by using a _moving average_. Up to three cost values can be associated with each inventory item:
 
 - **Last issue** – The last issue cost that was assigned before inventory went negative

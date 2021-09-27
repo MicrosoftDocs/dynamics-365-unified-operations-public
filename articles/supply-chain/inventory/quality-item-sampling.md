@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Quality management item sampling
 
+[!include [banner](../includes/banner.md)]
+
 Item sampling is used as part of a quality association. It defines the amount of current physical inventory that must be inspected. Sampling can be based on fixed quantities, a percentage, or a full license plate.
 
 ## Set up item sampling

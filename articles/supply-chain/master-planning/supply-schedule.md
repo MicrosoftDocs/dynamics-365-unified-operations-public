@@ -1,7 +1,7 @@
 ---
 title: Supply schedule
 description: This topic provides information about the Supply schedule page and its capabilities.
-author: crytt
+author: ChristianRytt
 ms.date: 9/3/2021
 ms.topic: article
 ms.search.form: ReqSupplyDemandSchedule, ReqSupplyDemandScheduleFilters, ReqSupplyDemandItemDetails, ReqTransFuturesActionsPart, ReqSupplyDemandOverviewLegendPart

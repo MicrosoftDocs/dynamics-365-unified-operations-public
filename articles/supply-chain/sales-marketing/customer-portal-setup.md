@@ -26,6 +26,7 @@ ms.dyn365.ops.version: Release 10.0.13
 
 # Install, set up, and update the Customer portal
 
+[!include [banner](../includes/banner.md)]
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## Licensing requirements

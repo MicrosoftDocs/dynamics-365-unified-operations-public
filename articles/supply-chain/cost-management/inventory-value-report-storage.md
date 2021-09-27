@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Release 10.0.9
 
 # Inventory value storage report
 
+[!include [banner](../includes/banner.md)]
+
 This topic explains how to run an **Inventory value storage** report and make the output available digitally, either as an interactive page in Microsoft Dynamics 365 Supply Chain Management or as an exported document in any of several formats.
 
 When you view the report in your browser, columns and aggregate balances are dynamically adjusted, depending on the layout that you've configured. You can sort the results, filter them, drill down into the data, and more.

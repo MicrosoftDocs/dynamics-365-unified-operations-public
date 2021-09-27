@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Rating profiles
 
+[!include [banner](../includes/banner.md)]
+
 A rating profile resembles a logistics contract (but not a legal contract). It's used to determine transportation tariffs for loads. 
 
 Each rating profile is unique to a shipping carrier. In the profile, you associate the shipping carrier with a rate master. The rate master defines the rate base assignment and the rate base. The rate base determines the rate of the carrier.

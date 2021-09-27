@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Release 10.0.8
 
 # Work split
 
+[!include [banner](../includes/banner.md)]
+
 Work split functionality lets you split large work IDs (that is, work orders that have several lines) into several smaller work IDs that you can then assign to multiple warehouse workers. In this way, the same work creation number can be picked simultaneously by several warehouse workers.
 
 > [!IMPORTANT]

@@ -16,7 +16,7 @@ ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: 
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
 # ms.custom:
