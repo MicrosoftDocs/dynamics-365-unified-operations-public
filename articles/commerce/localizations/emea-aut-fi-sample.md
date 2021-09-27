@@ -226,7 +226,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 ## Deployment guidelines for cash registers for Austria
 
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
 
 The fiscal registration service integration sample for Austria is part of the Retail SDK. For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
@@ -235,7 +235,7 @@ This sample consists of extensions for the CRT, Hardware station, and POS. To ru
 # [Retail 10.0.22 and later](#tab/retail-10-0-22)
 
 > [!WARNING]
-> Started since 10.0.22 the fiscal integration sample for Austria was published in repository [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions). This sample requires a [sealed commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) to be installed beforehand. Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
+> Started since 10.0.22 the fiscal integration sample for Austria was published in GitHub repository. This sample requires a [sealed commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) to be installed as a prerequisite. Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
 
 The sample's code can be found in repository [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
 
@@ -247,7 +247,7 @@ Follow these steps to set up a development environment so that you can test and 
 
 ### Enable Commerce runtime extensions
 
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
 
 The CRT extension components are included in the CRT samples. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
@@ -466,7 +466,7 @@ The Hardware station extension components are included in the EFR solution from 
 
 To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
@@ -506,7 +506,7 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 The previous procedure enables the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
 
 1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
@@ -553,7 +553,7 @@ The steps to generate Commerce Cloud Scale Unit (CSU) package are following:
 
 1. Clone or download the [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
 
-Select the correct release branch version according to your SDK/application release. Detailed steps to clone can be in [Download Retail SDK samples and reference packages from GitHub and NuGet](sdk-github.md).
+Select the correct release branch version according to your SDK/application release. Detailed steps to clone can be in [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 
 2. Build the project **ScaleUnite.EFR** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\ScaleUnit**. This project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. CloudScaleUnitExtensionPackage.zip package can be uploaded to LCS and deployed to CSU.
 
