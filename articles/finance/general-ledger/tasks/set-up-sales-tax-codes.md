@@ -46,7 +46,7 @@ This task uses the USMF demo company.
 12. Close the page.
 13. Select **Save**.
 
-Starting in Finance version 10.0.22, if you are using the [**Tax service**](../localizations/global-tax-calcuation-service-overview.md) and [**Support multiple VAT registration numbers**](../localizations/emea-multiple-vat-registration-numbers.md) features is enabled in the **Feature management** workspace, you can use **Type of tax** field to specify type of the tax code. The following values are available:
+Starting in Finance version 10.0.22, if you are using the [**Tax service**](../../localizations/global-tax-calcuation-service-overview.md) and [**Support multiple VAT registration numbers**](../../localizations/emea-multiple-vat-registration-numbers.md) features is enabled in the **Feature management** workspace, you can use **Type of tax** field to specify type of the tax code. The following values are available:
 
 - Standard VAT
 - Reduced VAT
