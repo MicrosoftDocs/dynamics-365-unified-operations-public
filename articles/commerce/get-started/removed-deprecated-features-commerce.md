@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Commerce 
 description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw
-ms.date: 08/16/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,15 +45,15 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Overlapping discounts handling setting in Commerce parameters
 
-The “overlapping discounts handling” setting in Commerce parameters is deprecated in 10.0.21 release. Going forward, Commerce pricing engine will use single algorithm to determine the optimal combination of overlapping discounts.
+The **Overlapping discounts handling** setting in **Commerce parameters** is deprecated in the Commerce version 10.0.21 release. Going forward, the Commerce pricing engine will use a single algorithm to determine the optimal combination of overlapping discounts.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The “overlapping discounts handling” setting in Commerce parameters controls how Commerce pricing engine searches and determines the optimal combination of overlapping discounts. It currently offers three options. The “best performance” option ultilizes an advanced heuristics algorithm and [marginal value ranking](https://docs.microsoft.com/dynamics365/commerce/optimal-combination-overlapping-discounts) method to prioritize, evaluate and determine the best discount combination in a timely manner. The “balanced calculation” in our current code base works exactly the same as the “best performance”, so it’s essentially a duplicated option. The “best discount” option uses a legacy algorithm that brute forces through all possible discount combinations during price calculation. For orders with large lines and quantities, this option might result in performance issues.<br><br>In order to simplify configuration, improve performance and reduce incidents caused by legacy algorithm, we will remove this setting entirely and update Commerce pricing engine internal logic to only use the advanced algorithm (behind "best performance" option) going forward. |
-| **Replaced by another feature?**   | No. We recommend organizations that use "balanced calculation" or "best discount" option for this setting to switch to the "best performance" option prior to this feature removal. |
+| **Reason for deprecation/removal** | The **Overlapping discounts handling** setting in **Commerce parameters** controls how the Commerce pricing engine searches and determines the optimal combination of overlapping discounts. It currently offers three options. The **Best performance** option ultilizes an advanced heuristics algorithm and [marginal value ranking](https://docs.microsoft.com/dynamics365/commerce/optimal-combination-overlapping-discounts) method to prioritize, evaluate, and determine the best discount combination in a timely manner. The **Balanced calculation** setting in our current code base works the same as the **Best performance** setting, so it’s essentially a duplicated option. The **Best discount** option uses a legacy algorithm that proceeds through all possible discount combinations during the price calculation. For orders with large lines and quantities, this option may result in performance issues.<br><br>In order to simplify configuration, improve performance, and reduce incidents caused by the legacy algorithm, we will remove this setting entirely and update the Commerce pricing engine internal logic to only use the advanced algorithm (the algorithm behind the **Best performance** option) going forward. |
+| **Replaced by another feature?**   | No. We recommend that organizations that use the **Balanced calculation** or **Best discount** option switch to the **Best performance** option before this feature is removed. |
 | **Product areas affected**         | Pricing and discounts |
 | **Deployment option**              | All |
-| **Status**                         | As of 10.0.21 release, the "overlapping discounts handling" setting will be removed from Commerce parameters in October 2022. |
+| **Status**                         | As of the 10.0.21 release, the **Overlapping discounts handling** setting will be removed from **Commerce parameters** on October 2022. |
 
 ### Retail SDK distributed by using Lifecycle Services
 
