@@ -4,7 +4,7 @@
 title: Retail software development kit (SDK)
 description: The Retail SDK includes code, code samples, templates, and tools that you can use to customize commerce functionality.
 author: robinarh
-ms.date: 01/29/2020
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,8 +52,10 @@ The Retail SDK includes the code, code samples, templates, and tools that are re
 > 
 > [Public feed for reference package](https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json)
 
-
 The Retail SDK is available in development environments that are provisioned via Microsoft Dynamics Lifecycle Services (LCS), in the virtual hard disks (VHDs) that are downloaded from LCS, and in hotfix packages that are deployed to the LCS environment. For more information, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md) and [Apply updates to cloud environments](../../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md).
+
+> [!NOTE]
+> In release 10.0.21, the development VM in LCS will not include Visual Studio 2017 and other dependencies that are required for Commerce development. You need to install the prerequisites by running MSBuild from the Retail SDK or manually install the prerequisites for Commerce development.
 
 To access the Retail SDK, sign in to the development virtual machine (VM), and go to the K:\\RetailSDK folder. You can obtain new versions of the Retail SDK by applying any Commerce binary hotfix from LCS to the development environment. After hotfix deployment is completed, you can find the new version of the SDK inside the K:\\RetailSDK\\Update folder.
 
@@ -107,8 +109,13 @@ Before you start development via the Retail SDK, you must restore all the packag
 2. In the Command Prompt window, go to the Retail SDK folder.
 3. Run the **msbuild /t:rebuild** command from the root of the SDK folder. The dirs.proj file in the root of the SDK folder (RetailSDK\\dirs.proj or RetailSDK\\Code\\dirs.proj) contains all the details that are required to build the full SDK.
 
-> [!NOTE]
-> Starting in Retail SDK version 10.0.18 or later, by default the retail SDK MSBuild will check whether the SDK prerequisites are installed, if not it will show the error message and scripts to run to install the prerequisites. You can skip the prerequisites check by passing the parameter MSBuild /p:CheckVSDependencies=false.
+### MSBuild arguments to skip the prerequisites check
+
+MSBuild will check whether the required dependencies are installed for Commerce development. If the dependencies are not found, then the MSBuild scripts will try to install the missing dependencies. This check will occur every time MSBuild runs. To skip this check, pass the follow arguments value as false:
+
+MSBuild /p:CheckVSDependencies=false – Build argument added in release 10.0.18
+
+MSBuild /p:InstallDotNetRuntimeSdkdependencies=False – Build argument added in release 10.0.22
 
  ![Running MSBuild from a Command Prompt window.](media/retail-sdk-command-prompt.png)
 
