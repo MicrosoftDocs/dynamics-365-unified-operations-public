@@ -19,7 +19,7 @@ ms.reviewer:
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jaredha
+ms.author: twheeloc
 ms.search.validFrom: 2021-09-23
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -65,7 +65,7 @@ Use the **Country/region** tab to define the country/region information for the 
 3. In the **Address format** field, select an address format to use for the country/region. The address formats that are defined on the **Address format** tab of the page are available for selection. 
 4. In the **Time zone** field, select the time zone of the country/region.
 5. Enter the International Organization for Standardization (ISO) code for the country/region.
-6. In the **BACEN code**, **IOR facility ID**, and **Code by OKSM** fields, enter values if they are required for your financial, purchasing, or sales transactions. Also select whether the country/region is a member of customs union.
+6. In the **BACEN code**, **IOR facility ID**, and **Code by OKSM** fields, enter values if they are required for your financial, purchasing, or sales transactions. Also select whether the country/region is a member of the customs union.
 7. To enable only valid five-digit or nine-digit ZIP/postal codes, select the **Use ZIP + 4 postal code validation rules** option.
 
 ## Set up state/province information
@@ -76,7 +76,7 @@ Use the **State/province** tab to define the state/province information for the 
 2. Select **New** to create a new line.
 3. Enter the state/province code and the name of the state/province.
 4. Select the time zone for the state/province.
-5. Define the IT state code for the state/province, and any additional codes that are required for transactional information.
+5. Enter the IT state code for the state/province, and any additional codes that are required for transactional information.
 6. To define the state/province as the default state/province for the selected country/region, select the **Default state/province** option. The default state/province will be entered by default in state/province fields when a new county or city record is created.
 
 ## Set up county information
