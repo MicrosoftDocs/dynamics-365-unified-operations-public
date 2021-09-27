@@ -549,6 +549,8 @@ The previous procedure enables the extensions that are components of the fiscal 
 
 # [Retail 10.0.22 and later](#tab/retail-10-0-22)
 
+### Commerce Cloud Scale Unit (CSU) package
+
 The steps to generate Commerce Cloud Scale Unit (CSU) package are following:
 
 1. Clone or download the [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
@@ -559,14 +561,38 @@ Select the correct release branch version according to your SDK/application rele
 
 Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the NuGet package manager in Visual Studio according to your SDK/application version.
 
-## Deploy the packages
+## Deploy the packages to CSU
 
 1. Go to https://lcs.dynamics.com/v2.
 2. Sign in to LCS, and open a project. Then, on the hamburger menu, select Asset library.
-3. Select the **Software deployable package** asset type, and then select the **+** button to upload the package. Provide a package name and description and then add the package file by selecting **Add file**.
+3. Select the **Cloud Scale Unit Extension** asset type, and then select the **+** button to upload the package. Provide a package name and description and then add the package file by selecting **Add file**.
 4. After the upload is complete, select **Confirm** to complete the upload process.
 5. The package will be validated by LCS in a few minutes. After validation is complete, mark the package as Release candidate.
 6. After upload, the package needs to be deployed to the environment. For more information, follow the steps outlined in Apply updates and extensions to Commerce Scale Unit (cloud).
+
+### Commerce Scale Unit (self-hosted) components.
+
+1. Download the Commerce Scale Unit, Hardware station, Modern POS component installers and install each one as prerequisites. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md).
+
+2. Start the extension installer from command line
+
+- For **Commerce Scale Unit:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** path
+
+    ```Console
+    ScaleUnit.EFR.Installer.exe install --verbosity 0
+    ```
+
+- For **Local CRT on Modern POS:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** path
+
+    ```Console
+    ModernPOS.EFR.Installer.exe install --verbosity 0
+    ```
+
+- For **Hardware station** under In the ****Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** path
+
+    ```Console
+    HardwareStation.EFR.Installer.exe install --verbosity 0
+    ```
 
 ---
 
