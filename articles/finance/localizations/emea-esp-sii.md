@@ -184,7 +184,7 @@ Three executable classes are included in the two types of electronic messages pr
 | SIIPartyAttributesEvaluation | For filled-in EM items (in **Creado** status), this class evaluates the values for the following additional fields: <ul><li>Registration number (ID)</li><li>Tax ID type (IDType)</li><li>Party ISO code (CodigoPais)</li></ul>                                        |
 | MonitorCollectionInCash      | This class monitors changes in the data of records of the **Collections in cash** report and then updates the status of EM items in the appropriate manner. |
 
-### Set up the SIIGenerateItems executable class
+### <a id="siigenerateitems"></a>Set up the SIIGenerateItems executable class
 
 1.  To set up parameters of the **SIIGenerateItems** executable class, go to **Tax \> Setup \> Electronic messages \> Executable class settings**.
 2.  On the **Executable class settings** page, select the **SIIGenerateItems** executable class that is associated with the **EMCreateItemsController** executable class name.
@@ -222,7 +222,7 @@ Starting from version 10.0.22 of Finance, in case you are using [**Tax service**
 | CUSTOMER INVOICE JOURNAL      | This datasource helps to populate data from **Customer invoice journal** table as EM items of **FacturasСliente** type for reporting to SII system of Spain. |
 | VENDOR INVOICE JOURNAL        | This datasource helps to populate data from **Vendor invoice journal** table as EM items of **FacturasProveedores** type for reporting to SII system of Spain. |
 | PROJECT INVOICE               | This datasource helps to populate data from **Project invoice** table as EM items of **FacturasСliente** type for reporting to SII system of Spain. |
-| TRANSFER ORDER HISTORY        | This datasource helps to populate data from **Transfer order history** table as EM items of **FacturasСliente** and **FacturasProveedores** types for reporting to SII system of Spain. This datasource is available starting from version 10.0.22 of Finance, in case you are using [**Tax service**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview) and [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace. |
+| TRANSFER ORDER HISTORY        | This datasource helps to populate data from **Transfer order history** table as EM items of **FacturasСliente** and **FacturasProveedores** types for reporting to SII system of Spain. This datasource is available starting from version 10.0.22 of Finance, in case you are using [**Tax service**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview) and [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace. Find more information about how to [Report to SII system of Spain for multiple VAT registrations](#multiple-vat) |
 
 5.  Select **OK** to initiate the executable class.
 
@@ -617,10 +617,12 @@ Starting from version **10.0.22 of Finance**, in case you are using [**Tax servi
 - 'Libro de registro de facturas Expedidas': **Record book of issued invoices**,
 - 'Libro de registro de facturas Recibidas': **Record book of received invoices**.
 
-After [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace, make sure to provide the following setup:
+After [**Support multiple VAT registration numbers**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers) feature is enabled in the **Feature management** workspace, make sure to provide the following setup to be able to report to SII system from a legal entity with primary address outside of Spain:
 
-1. Define the VAT registration number of the company from the name of which you will be reporting to SII system of Spain in **Company Tax Id** field in parameters of the [**SIIGenerateItems executable class**](#set-up-the-siigenerateitems-executable-class).
-2. Specify needful criteria for **Transfer order history** data source on **Records to include** FastTab of parameters of the [**SIIGenerateItems executable class**](#set-up-the-siigenerateitems-executable-class).
+1. Enable **Sales tax declaration for multiple VAT registrations** feature in **Feature management** workspace.
+2. Select **VAT delcarion** checkbox on **Multiple VAT registrations** tab of **Tax calcualtion parameters** page.
+3. Define the VAT registration number of the company from the name of which you will be reporting to SII system of Spain in **Company Tax Id** field in parameters of the [**SIIGenerateItems executable class**](#siigenerateitems).
+4. Specify needful criteria for **Transfer order history** data source on **Records to include** FastTab of parameters of the [**SIIGenerateItems executable class**](#siigenerateitems).
 
 ## Use EM functionality to report to the SII system
 
