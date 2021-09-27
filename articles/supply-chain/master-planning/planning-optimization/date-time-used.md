@@ -1,7 +1,7 @@
 ---
 title: Date and time parameters used by Planning Optimization
 description: This topic lists the date and time parameters that Planning Optimization currently uses during its operation.
-author: crytt
+author: ChristianRytt
 ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
