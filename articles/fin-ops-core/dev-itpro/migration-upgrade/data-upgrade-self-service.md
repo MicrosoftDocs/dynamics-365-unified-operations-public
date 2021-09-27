@@ -296,7 +296,7 @@ You can use the following options to review the reports of the replication valid
 
 - **Scenario 2:** Migration app database connectivity failed for the source database server or the target database server.
 
-    **Solution:** In the migration app, complete step 1, [Data upgrade preparation: Environment setup activity](data-upgrade-self-service#complete-the-data-replication-and-upgrade).
+    **Solution:** In the migration app, complete step 1, [Data upgrade preparation: Environment setup activity](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade).
 
 - **Scenario 3:** The snapshot for any of the publications failed. This failure can be tracked in the Replication Monitor.
 
