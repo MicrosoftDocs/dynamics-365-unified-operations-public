@@ -561,7 +561,7 @@ Select the correct release branch version according to your SDK/application rele
 
 Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the NuGet package manager in Visual Studio according to your SDK/application version.
 
-## Deploy the packages to CSU
+#### Deploy the package to CSU
 
 1. Go to https://lcs.dynamics.com/v2.
 2. Sign in to LCS, and open a project. Then, on the hamburger menu, select Asset library.
@@ -570,7 +570,7 @@ Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** 
 5. The package will be validated by LCS in a few minutes. After validation is complete, mark the package as Release candidate.
 6. After upload, the package needs to be deployed to the environment. For more information, follow the steps outlined in Apply updates and extensions to Commerce Scale Unit (cloud).
 
-### Commerce Scale Unit (self-hosted) components.
+### Commerce Scale Unit (self-hosted) components
 
 1. Download the Commerce Scale Unit, Hardware station, Modern POS component installers and install each one as prerequisites. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](../dev-itpro/Enhanced-Mass-Deployment.md).
 
