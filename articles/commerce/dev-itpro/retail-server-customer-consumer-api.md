@@ -400,6 +400,22 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetEstimatedAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | ProductWarehouseInventoryInformation  | Employee, Customer, Anonymous, Application               | Get estimated product availability based on search criteria.                                                                                               |
 | GetEstimatedProductWarehouseAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | IEnumerable\<ProductWarehouse\>                 | Employee, Customer, Anonymous, Application               | Get estimated product availability for specific product warehouse pairs.                                                                                               |
 
+## Product lists controller
+
+| API                        | Parameter                               | Return value                             | Supported Commerce Roles | Description                                   |
+|----------------------------|-----------------------------------------|------------------------------------------|--------------------------|-----------------------------------------------|
+| Search     | ProductListSearchCriteria productListSearchCriteria, QueryResultSettings queryResultSettings               | PagedResult\<ProductList\>                          | Employee, Customer, Anonymous                 | Gets the product lists filtered by search criteria.                  |
+| AddProductListLines | string productListId, IEnumerable\<ProductListLine\> productListLines | PagedResult\<ProductListLine\> | Employee, Customer, Anonymous                 | Creates the product list lines for product list. |
+| UpdateProductListLines | string productListId, IEnumerable\<ProductListLine\> productListLines | PageResult\<ProductListLine\> | Employee, Customer, Anonymous                 | Update the product list lines. |
+| GetProductListLines | string productListId, string searchText, QueryResultSettings queryResultSettings | PagedResult\<ProductListLine\> | Employee, Customer, Anonymous            | Gets the product list lines. |
+| RemoveProductListLines | string productListId, IEnumerable\<ProductListLine\> lines| NullResponse | Employee, Customer, Anonymous                 | Removes lines from the product list. |
+| CopyCartToProductList | string cartId, string destinationProductListId, bool isRewrite, bool isQuantityAggregate | ProductList | Employee, Customer                 | Copies the cart content to product list lines. |
+| GetEntityByKey | string productListId    | ProductList  | Employee, Customer                 | Gets a single product list by id. |
+| CreateEntity   | ProductList productList | ProductList  | Employee, Customer                 | Creates the product list. |
+| PatchEntity    | ProductList productList | ProductList  | Employee, Customer                 | Updates the product list properties. Used for partial updates.|
+| UpdateEntity   | ProductList productList | ProductList  | Employee, Customer                 | Updates the product list properties. Used for partial updates. |
+| DeleteEntity   | string productListId    | NullResponse | Employee, Customer                | Deletes the product list. |
+
 ## Sales orders fulfillment controller
 
 | API                            | Parameter                                                                                                                                  | Return value                       | Supported Commerce Roles | Description                                                                |
