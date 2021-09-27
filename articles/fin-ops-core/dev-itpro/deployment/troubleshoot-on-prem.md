@@ -1593,7 +1593,10 @@ Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 
 **Reason:** The AOS needs to retrieve the list of services running on the BI node to find the version of SSRS that is currently installed. The account that the AOS runs under does not have the appropriate permissions to get the list of services, so it fails and is unable to retrieve the serviceName.
 
-**Resolution:** Version 2.11.0 of the infrastructure scripts, available from the Shared asset library in LCS, has been released to propagate these permissions so the serviceName can be retrieved.
+**Resolution:** Version 2.11.1 of the infrastructure scripts, available from the Shared asset library in LCS, has been released to propagate these permissions so the serviceName can be retrieved.
+
+> [!NOTE]
+> If you used 2.11.0 of the infrastructure scripts, please download the newest version and go through the steps below again.
 
 #### Automatically add these permissions:
 1. Download the latest infrastructure scripts from the Shared asset library in LCS.

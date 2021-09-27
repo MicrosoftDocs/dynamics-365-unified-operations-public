@@ -71,14 +71,16 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 | Product | Deployment options | Application version | Platform release | Release or expiration dates|
 |--------|--------|----|----|--------|
 | ... |
+| Finance + Operations | Base deployment + Service update | 10.0.26 | PU50 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.25 | PU49 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.24 | PU48 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Base deployment + Service update | 10.0.23 | PU47 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.22 | PU46 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Base deployment + Service update | 10.0.21 | PU45 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
 | Finance + Operations | Base deployment + Service update | 10.0.20 | PU44 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
 | Finance + Operations | Service update | 10.0.19 | PU43 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Service update | 10.0.18 | PU42 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Base deployment + Service update | 10.0.17 | PU41 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Service update | 10.0.16 | PU40 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Service update | 10.0.15 | PU39 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Base deployment + Service update | 10.0.14* |  PU38 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Service update | 10.0.13* | PU37 |[One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Service update | 10.0.18* | PU42 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Base deployment + Service update | 10.0.17* | PU41 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
 
 \* Expired version. All customers must be on the latest version of Finance + Operations according to the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).
 
