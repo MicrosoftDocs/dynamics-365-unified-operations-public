@@ -41,12 +41,14 @@ This task uses the USMF demo company.
 8. On the **Action Pane** at the top of the interface, select **Sales tax code**.
 9. Select **Values**.
 10. Enter the value for this tax code in the **value** column.
-    - On the **Calculation** FastTab, in the Origin field, if Amount per unit is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.  If the tax code is not a unit based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.     
+
+    On the **Calculation** FastTab, in the **Origin** field, if **Amount per unit** is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.  If the tax code is not a unit-based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.     
+
 11. Select **Save**.
 12. Close the page.
 13. Select **Save**.
 
-Starting in Finance version 10.0.22, if you are using the [**Tax service**](../../localizations/global-tax-calcuation-service-overview.md) and [**Support multiple VAT registration numbers**](../../localizations/emea-multiple-vat-registration-numbers.md) features is enabled in the **Feature management** workspace, you can use **Type of tax** field to specify type of the tax code. The following values are available:
+As of Microsoft Dynamics 365 Finance version 10.0.22, if you're using the [Tax service](../../localizations/global-tax-calcuation-service-overview.md), and the [**Support multiple VAT registration numbers**](../../localizations/emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can use **Type of tax** field to specify type of the tax code. The following values are available:
 
 - Standard VAT
 - Reduced VAT
