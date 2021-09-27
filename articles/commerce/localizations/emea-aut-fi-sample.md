@@ -588,7 +588,7 @@ Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** 
     ModernPOS.EFR.Installer.exe install --verbosity 0
     ```
 
-- For **Hardware station** under In the ****Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** path
+- For **Hardware station** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** path
 
     ```Console
     HardwareStation.EFR.Installer.exe install --verbosity 0
