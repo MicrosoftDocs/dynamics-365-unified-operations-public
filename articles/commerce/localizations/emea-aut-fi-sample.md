@@ -491,8 +491,8 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 ---
 
-    - DocumentProviderEFRSampleAustria.xml
-    - DocumentProviderNonFiscalEFRSampleAustria.xml
+ - DocumentProviderEFRSampleAustria.xml
+ - DocumentProviderNonFiscalEFRSampleAustria.xml
 
 4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create two new connector functional profiles, one for each document provider that you loaded earlier, and select the connector that you loaded earlier. Update the data mapping settings as required.
 5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Update the connection settings as required.
