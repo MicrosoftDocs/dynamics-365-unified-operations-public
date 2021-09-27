@@ -411,14 +411,20 @@ The system defines the value of the **TipoFactura** additional field according t
 3.  If the invoice type isn't defined in step 2, define it according to the setup of additional field values.
 4.  If the invoice type isn't defined in step 3, set the value to **F1**.
 
-Financial reasons can be specified for invoices that are posted from the following documents:
+**Financial reasons** can be specified for invoices that are posted from the following documents:
 
 -   Sales order
 -   Free text invoice
 -   Purchase order
 -   Projects
--   Accounts Payable (AP) journal
+-   Vendor invoice journal (AP)
 -   General ledger (GL) general journal
+
+> [!NOTE]
+> When you [report to SII system of Spain from legal entity with primary address out of Spain](#multiple-vat) **Financial reasons** can be specified for invoices that are posted from the following documents only:
+> - Purchase order
+> - Vendor invoice journal (AP)
+> - General ledger (GL) general journal
 
 When you create an invoice from the types of documents that invoices can be created from, you can set up a specific reason for the invoice. The **GenerateMessageItem** action will analyze this reason, and the reason SII code will be set for the electronic message item.
 
