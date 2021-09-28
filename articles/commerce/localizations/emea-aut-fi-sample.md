@@ -381,49 +381,9 @@ The Hardware station extension components are included in the Hardware station s
 # [Retail 10.0.22 and later](#tab/retail-10-0-22)
 
 The CRT extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **Efr.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
+### Install the commerce extensions
 
-#### DocumentProvider.EFRSample component
-
-1. Find the **Runtime.Extensions.DocumentProvider.EFRSample** project, and build it.
-2. In the **Runtime.Extensions.DocumentProvider.EFRSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll** assembly file.
-3. Copy the assembly file to the CRT extensions folder:
-
-    - **Commerce Scale Unit:** Copy the assembly to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
-    - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
-
-4. Find the extension configuration file for CRT:
-
-    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
-    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
-
-5. Register the CRT change in the extension configuration file.
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
-    ```
-
-#### DocumentProvider.DataModelEFR component
-
-1. Find the **Runtime.Extensions.DocumentProvider.DataModelEFR** project, and build it.
-2. In the **Runtime.Extensions.DocumentProvider.DataModelEFR\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll** assembly file.
-3. Copy the assembly file to the CRT extensions folder:
-
-    - **Commerce Scale Unit:** Copy the assembly to the **\\bin\\ext** folder under the IIS Commerce Scale Unit site location.
-    - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
-
-4. Find the extension configuration file for CRT:
-
-    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
-    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
-
-5. Register the CRT change in the extension configuration file.
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
-    ```
-#### Install the commerce extensions
-
-1. Find the **Efr** solution, and build it.
+1. Find the **Efr** solution and build it.
 
 2. Build the CRT extension installer:
 
@@ -444,13 +404,13 @@ The CRT extension components are included in the EFR solution from Fiscal Integr
     ModernPOS.EFR.Installer.exe install --verbosity 0
     ```
 
-### Enable Hardware station extensions
+### Install Hardware station extensions
 
 The Hardware station extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **EFR.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
 
 #### EFRSample component
 
-1. Find the **EFR** solution, and build it.
+1. Find the **EFR** solution and build it.
 
 2. In the **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EFR.Installer** installer.
 
