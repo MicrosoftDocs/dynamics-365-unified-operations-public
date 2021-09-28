@@ -27,7 +27,7 @@ For Austria, you must configure two lookups: **Turnover lookup** and **Report fi
 
 In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
 
-## VAT declaration overview
+## <a name="VAT_declaration_overview_1"></a>VAT declaration overview
 
 The VAT declaration in Austria contains the following information.
 
