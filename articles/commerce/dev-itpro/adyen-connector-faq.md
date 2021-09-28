@@ -49,6 +49,10 @@ Yes. Modern POS requires a known IP address to communicate with the Adyen paymen
 
 Yes. Adyen can work with any merchant bank.
 
+### If configuring Card Type Bin Range mapping in Dynamics for the Adyen Connector, how many digits can I use?
+
+Adyen returns the first 6 digits of the card for matching. 6 digits is the maximum for card type bin range mapping when using the Dynamics Adyen Payment Connector.
+
 ## Next steps
 
 For guidance on troubleshooting common issues related to the Dynamics 365 Payment Connector for Adyen, see [Troubleshoot Dynamics 365 Payment Connector for Adyen](adyen-connector-troubleshoot.md). 
