@@ -49,6 +49,7 @@ The business entity of a data model is represented as a container, or record. Bu
 
 A single data model component can contain several hierarchies of domain-specific business entities. It can also contain model mappings that support a report-specific data flow at runtime. The hierarchies are differentiated by a single record that is selected as a root for model mapping. For example, the data model of the payment domain area might support the following mappings:
 
+
 - Company \> Vendor \> Payment transactions of the AP domain
 - Customer \> Company \> Payment transactions of the AR domain
 
@@ -95,20 +96,6 @@ A format component lets you attach specific files that can be used in the report
 
 The following illustration shows how the data flows for these formats.
 
-[![Data flow for outgoing format components.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
-
-To run a single ER format configuration and generate an outgoing electronic document, you must identify the mapping of the format configuration.
-
-### Format components for incoming electronic documents
-
-A format component is the scheme of the incoming document that is imported at runtime. A scheme consists of the following elements:
-
-- A format that defines the structure and content of the incoming electronic document that contains data that is imported at runtime. A format component is used to parse an incoming document in various formats, such as text and XML.
-- A format mapping that binds individual format elements to elements of a domain-specific data model. At runtime, the elements in the data model specify the data flow and the rules for importing data from an incoming document. They then store the data in a data model.
-- A format validation, as a set of configurable rules that control data import at runtime, depending on the running context. For example, there might be a rule that stops data import of a bank statement that has a vendor's payments, and throws an exception when a specific vendor's attributes are missing, such as the vendor identification code.
-
-The following illustration shows how the data flows for these formats.
-
 [![Data flow for incoming format components.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 To run a single ER format configuration to import data from an incoming electronic document, identify the desired mapping of a format configuration and the integration point of a model mapping. You can use the same model mapping and destinations together with different formats for different types of incoming documents.
@@ -138,3 +125,4 @@ Access to ER format components depends on the setting for the International Orga
 Different versions of a data format component can have different settings for ISO country/region codes.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
