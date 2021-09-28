@@ -201,7 +201,7 @@ Follow these steps to define which sales tax codes generate which boxes in the f
 <p>Lookup result</p>
 </td>
 <td>
-<p>Select the value of the turnover. For more information about the turnover values and their assignment to VAT declaration rows, see the <a href="#_VAT_declaration_overview_1">VAT declaration overview</a> section earlier in this topic.</p>
+<p>Select the value of the turnover. For more information about the turnover values and their assignment to VAT declaration rows, see the <a href="#VAT_declaration_overview_1">VAT declaration overview</a> section earlier in this topic.</p>
 </td>
 </tr>
 <tr>
