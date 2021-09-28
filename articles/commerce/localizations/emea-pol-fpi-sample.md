@@ -240,6 +240,8 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\HardwareStation\\ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml**
 
+---
+
 2. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from
 
 # [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
@@ -249,6 +251,8 @@ To enable the registration process, follow these steps to set up Headquarters. F
 # [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
 
 **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\CommerceRuntime\\DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml**.
+
+---
 
 3. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Technical profiles**. Create a new profile, and select the loaded connector from the earlier step. Update connection settings if an update is required.
 4. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and select the loaded connector and document provider from the earlier steps. Update data mapping settings, if an update is required.

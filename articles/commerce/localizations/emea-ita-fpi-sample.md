@@ -249,6 +249,8 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\CommerceRuntime\\DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml**.
 
+---
+
 3. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Technical profiles**. Create a new profile, and then select the loaded connector from the earlier step. Update the connection settings if an update is required.
 4. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and then select the loaded connector and document provider from the earlier steps. Update data mapping settings if an update is required.
 5. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional group**. Create a new group, and then select the connector functional profile from the earlier step.
