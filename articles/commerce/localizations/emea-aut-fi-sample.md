@@ -245,9 +245,9 @@ This sample consists of extensions for the CRT, Hardware station, and POS. To ru
 
 Follow these steps to set up a development environment so that you can test and extend the sample.
 
-### Enable Commerce runtime extensions
-
 # [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
+
+### Enable Commerce runtime extensions
 
 The CRT extension components are included in the CRT samples. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
@@ -381,9 +381,10 @@ The Hardware station extension components are included in the Hardware station s
 # [Retail 10.0.22 and later](#tab/retail-10-0-22)
 
 The CRT extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **Efr.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
-### Install the commerce extensions
 
-1. Find the **Efr** solution and build it.
+### Install Commerce runtime extensions
+
+1. Find the **EFR** solution and build it.
 
 2. Build the CRT extension installer:
 
