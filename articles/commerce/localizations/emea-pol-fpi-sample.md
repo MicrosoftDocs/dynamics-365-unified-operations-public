@@ -152,39 +152,12 @@ The Commerce runtime (CRT) extension components are included in the Retail SDK. 
     - **Commerce Scale Unit:** Restart the Commerce service site from IIS Manager.
     - **Client broker:** End the **dllhost.exe** process in Task Manager, and then restart Modern POS.
 
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
-
-The CRT extension components are included in the Posnet solution from Fiscal Integration folder. To complete the following procedures, open the Posnet solution, **Posnet.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet**.
-
-1. Find the **Posnet** solution, and build it.
-
-2. Build the CRT extension installer:
-
-    - **Commerce Scale Unit:** In the **Posnet\\ScaleUnit\\ScaleUnit.Posnet.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.Posnet.Installer** installer.
-    - **Local CRT on Modern POS:** In the **Posnet\\ModernPOS\\ModernPos.Posnet.Installer\\bin\\Debug\\net461** folder, find the **ModernPos.Posnet.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
-    - **Commerce Scale Unit:**
-
-    ```Console
-    ScaleUnit.Posnet.Installer.exe install --verbosity 0
-    ```
-
-    - **Local CRT on Modern POS:**
-
-    ```Console
-    ModernPOS.Posnet.Installer.exe install --verbosity 0
-    ```
-
 #### Hardware station extension components
-
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 The Hardware station extension components are included in the Retail SDK. To complete the following procedures, open the Hardware Station solution, **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
 
-1. Find the **Extension.PosnetThermalFVFiscalPrinterSample** project, and build it.
-2. In the **Extension.PosnetThermalFVFiscalPrinterSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll** assembly file.
+1. Find the **HardwareStation.Extension.PosnetThermalFVFiscalPrinterSample** project, and build it.
+2. In the **Extension.Posnet.ThermalFVFiscalPrinterSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.PosnetThermalFVFiscalPrinterSample.dll** assembly file.
 3. Copy the files to a deployed Hardware station machine:
 
     - **Remote Hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location. Copy the printer driver libraries (**libposcmbth.dll**, **libcmbth\_serial.dll**, and **cmbth\_pl.lng**).
@@ -205,9 +178,43 @@ The Hardware station extension components are included in the Retail SDK. To com
 
 # [Retail 10.0.21 and later](#tab/retail-10-0-21)
 
+> [!WARNING]
+> Started since 10.0.21 the fiscal integration sample for Poland was published in GitHub repository. This sample requires a [sealed commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) to be installed as a prerequisite. Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
+
+The sample's code can be found in repository [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
+
+This sample consists of extensions for the CRT and Hardware station. To run this sample, you must beforehand install the sealed version of Commerce Scale Unit and Hardware station. After installing these retail components, you should build the Posnet solution and run installers for each component. We recommend that you use an unmodified solution files from this repository to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
+
+The CRT extension components are included in the EpsonFP90IIISample solution from Fiscal Integration folder. To complete the following procedures, open the Posnet solution, **Posnet.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet**.
+
+### Install the commerce extensions
+
+1. Find the **Posnet** solution and build it.
+
+2. Build the CRT extension installer:
+
+    - **Commerce Scale Unit:** In the **Posnet\\ScaleUnit\\ScaleUnit.Posnet.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.Posnet.Installer** installer.
+    - **Local CRT on Modern POS:** In the **Posnet\\ModernPOS\\ModernPos.Posnet.Installer\\bin\\Debug\\net461** folder, find the **ModernPos.Posnet.Installer** installer.
+
+3. Start the extension installer from command line as follows:
+
+    - **Commerce Scale Unit:**
+
+    ```Console
+    ScaleUnit.Posnet.Installer.exe install --verbosity 0
+    ```
+
+    - **Local CRT on Modern POS:**
+
+    ```Console
+    ModernPOS.Posnet.Installer.exe install --verbosity 0
+    ```
+
+#### Install Hardware station extensions
+
 The Hardware station extension components are included in the Posnet solution from Fiscal Integration folder. To complete the following procedures, open the Posnet solution, **Posnet.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet**.
 
-1. Find the **Posnet** solution, and build it.
+1. Find the **Posnet** solution and build it.
 
 2. In the **Posnet\\HardwareStation\\HardwareStation.PosnetThermalFVFiscalPrinter.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.PosnetThermalFVFiscalPrinter.Installer** installer.
 
@@ -217,26 +224,32 @@ The Hardware station extension components are included in the Posnet solution fr
     HardwareStation.PosnetThermalFVFiscalPrinter.Installer.exe install --verbosity 0
     ```
 
+---
+
 ### Set up the registration process
 
 To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
+1. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from
+
 # [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
-1. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml**.
-2. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml**.
-3. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Technical profiles**. Create a new profile, and select the loaded connector from the earlier step. Update connection settings if an update is required.
-4. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and select the loaded connector and document provider from the earlier steps. Update data mapping settings, if an update is required.
-5. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional group**. Create a new group, and select the connector functional profile from the earlier step.
-6. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Registration process**. Create a new process, and select the connector functional group from the earlier step.
-7. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Open the functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the registration process that was created earlier.
-8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Open the hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile.
-9. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+**RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml**.
 
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
 
-1. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Connectors**. Import the configuration from **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\HardwareStation\\ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml**.
-2. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\CommerceRuntime\\DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml**.
+**Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\HardwareStation\\ThermalDeviceSample\\Configuration\\ConnectorPosnetThermalFVEJ.xml**
+
+2. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Fiscal Document providers**. Import the configuration from
+
+# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+
+**RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml**.
+
+# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
+
+**Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\CommerceRuntime\\DocumentProvider.PosnetSample\\Configuration\\DocumentProviderPosnetSample.xml**.
+
 3. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Technical profiles**. Create a new profile, and select the loaded connector from the earlier step. Update connection settings if an update is required.
 4. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional profiles**. Create a new profile, and select the loaded connector and document provider from the earlier steps. Update data mapping settings, if an update is required.
 5. Go to **Retail and Commerce \> Channel Setup \> Fiscal Integration \> Connector Functional group**. Create a new group, and select the connector functional profile from the earlier step.
@@ -285,7 +298,52 @@ Follow these steps to create deployable packages that contain Commerce component
 
 # [Retail 10.0.21 and later](#tab/retail-10-0-21)
 
-Using samples from [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) for deployable package creation requires migration of samples to Retail SDK.
+### Commerce Cloud Scale Unit (CSU) package
+
+The steps to generate Commerce Cloud Scale Unit (CSU) package are following:
+
+1. Clone or download the [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
+
+Select the correct release branch version according to your SDK/application release. Detailed steps to clone can be in [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+
+2. Build the project **ScaleUnite.Posnet** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\ScaleUnit**. This project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. CloudScaleUnitExtensionPackage.zip package can be uploaded to LCS and deployed to CSU.
+
+Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the NuGet package manager in Visual Studio according to your SDK/application version.
+
+#### Deploy the package to CSU
+
+1. Go to https://lcs.dynamics.com/v2.
+2. Sign in to LCS, and open a project. Then, on the hamburger menu, select Asset library.
+3. Select the **Cloud Scale Unit Extension** asset type, and then select the **+** button to upload the package. Provide a package name and description and then add the package file by selecting **Add file**.
+4. After the upload is complete, select **Confirm** to complete the upload process.
+5. The package will be validated by LCS in a few minutes. After validation is complete, mark the package as Release candidate.
+6. After upload, the package needs to be deployed to the environment. For more information, follow the steps outlined in Apply updates and extensions to Commerce Scale Unit (cloud).
+
+### Commerce Scale Unit (self-hosted) components
+
+1. Download the Commerce Scale Unit, Hardware station, Modern POS component installers and install each one as prerequisites. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](../dev-itpro/Enhanced-Mass-Deployment.md).
+
+2. Start the extension installer from command line
+
+- For **Commerce Scale Unit:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\ScaleUnit\\ScaleUnit.Posnet.Installer\\bin\\Debug\\net461** path
+
+    ```Console
+    ScaleUnit.Posnet.Installer.exe install --verbosity 0
+    ```
+
+- For **Local CRT on Modern POS:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\ModernPOS\\ModernPos.Posnet.Installer\\bin\\Debug\\net461** path
+
+    ```Console
+    ModernPos.Posnet.Installer.exe install --verbosity 0
+    ```
+
+- For **Hardware station** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\HardwareStation\\HardwareStation.PosnetThermalFVFiscalPrinter.Installer\\bin\\Debug\\net461** path
+
+    ```Console
+    HardwareStation.PosnetThermalFVFiscalPrinter.Installer.exe install --verbosity 0
+    ```
+
+---
 
 ## Design of extensions
 
