@@ -3769,6 +3769,8 @@
       items:
       - name: Electronic reporting overview
         href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+      - name: Electronic reporting components
+        href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
       - name: Configurations
         items:
         - name: Create configurations
