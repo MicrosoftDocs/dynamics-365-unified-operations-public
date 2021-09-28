@@ -114,20 +114,13 @@ According to Saudi Arabiaian legal requirements, invoices that are issued to cus
 3. In **Overview** section, create a line for the selected unit.
 4. In the **Value** section, in **Value** field, enter an external code to use for the selected unit, according to the official codification.
 
-## Configure products
-
-According to ...
-
-### Enter GTIN codes
+## Enter products codes
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
 2. Select a product, and then, on the Action Pane, on the **Manage inventory** tab, in the **Warehouse** group, select **GTIN codes**.
-3. Enter the GTIN code for the selected product.
-
-### Enter external codes
-
-1. Go to **Product information management** \> **Setup** \> **Categories and attributes** \> **Category hierarchies**.
-2. Create a 
+3. Enter the GTIN code for the selected product. This code will be then used as a standard product identifier.
+4. On the Action Pane, on the **Sell** tab, in the **Related information** group, select **External item desription**.
+5. In **External item number** field, enter a customer-specific code for the selected product. This code will be then used as a Buyer's product identifier.
 
 ## Submit electronic invoices
 
