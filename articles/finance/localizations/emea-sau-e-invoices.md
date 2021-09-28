@@ -32,15 +32,16 @@ ms.dyn365.ops.version: 10.0.23
 [!include [banner](../includes/banner.md)]
 
 
-According to Saudi Arabiaian legal requirements, invoices that are issued for customers must be generated and submitted in an electronic format. Electronic invoice submission requires the following two-part system configuration:
+According to Saudi Arabiaian legal requirements, invoices that are issued to customers must be generated and submitted in an electronic format. Electronic invoices generation and submission requires the following two-part system configuration:
 
-1. **Electronic invoicing add-in** configuration. For more information, see [Get started with the Electronic invoicing add-in for Saudi Arabia](e-invoicing-sa-get-started.md).
+1. **Electronic invoicing service** configuration. For more information, see [Get started with the Electronic invoicing add-in for Saudi Arabia](e-invoicing-sa-get-started.md).
 2. **Microsoft Dynamics 365 Finance** configuration, which is covered in this topic.
 
 ## Prerequisites
 
-- Electronic invoicing add-in configuration is completed, and all required parts for Saudi Arabia are ready to use.
+- Electronic invoicing service configuration is completed, and all required parts for Saudi Arabia are ready to use.
 - The primary address of the legal entity must be in Saudi Arabia.
+- In the **Feature management** workspace, turn on the **(Saudi Arabia) QR codes in Tax and Simplified invoices** feature. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Configure registration numbers
 
@@ -69,7 +70,7 @@ According to Saudi Arabiaian legal requirements, invoices that are issued for cu
 2. Select a legal entity, and then, on the Action Pane, select **Registration IDs**.
 3. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 4. In the **Registration type** field, select the registration type that you created in the [Configure registration numbers](#configure-registration-numbers) section earlier in this topic.
-6. In the **Registration number** field, enter a valid legal entity registration number.
+6. In the **Registration number** field, enter a valid legal entity registration number. This number will be then used as legal entity commercial registration identifier.
 
 ## Configure customer data
 
@@ -85,7 +86,7 @@ According to Saudi Arabiaian legal requirements, invoices that are issued for cu
 2. Select a customer, and then, on the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 3. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 5. In the **Registration type** field, select the registration type that you created in the [Configure registration numbers](#configure-registration-numbers) section earlier in this topic.
-6. In the **Registration number** field, enter a valid customer registration number.
+6. In the **Registration number** field, enter a valid customer registration number. This number will be then used as customer's commercial registration identifier.
 
 ## Configure sales tax codes
 
