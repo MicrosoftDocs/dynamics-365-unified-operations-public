@@ -205,7 +205,6 @@ The Hardware station extension components are included in the Hardware station s
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
-    <add source="assembly" value="Interop.CleanCash_1_1" />
     ```
 
 ### Enable Modern POS extension components
@@ -352,7 +351,6 @@ The previous procedure enables the extensions that are components of the fiscal 
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
-        <add source="assembly" value="Interop.CleanCash_1_1" />
         ```
 
 2. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
@@ -585,7 +583,6 @@ The migration process should consist of the following steps.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
-    <add source="assembly" value="Interop.CleanCash_1_1" />
     ```
 
 #### Update Modern POS
@@ -693,7 +690,6 @@ The migration process should consist of the following steps.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
-    <add source="assembly" value="Interop.CleanCash_1_1" />
     ```
 
 3. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
