@@ -126,38 +126,32 @@ Complete the fiscal integration setup steps that are described in [Set up the fi
 
 ## Deployment guidelines for cash registers for Sweden
 
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+# [Retail 10.0.22 and earlier](#tab/retail-10-0-22)
 
 This topic serves as a deployment guide that shows how to enable the localization of Microsoft Dynamics 365 Commerce for Sweden. The localization is part of the Retail SDK. For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 This sample consists of extensions for the Commerce runtime (CRT), POS, and Hardware station. To run this sample, you must modify and build the CRT and Hardware station projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Azure DevOps, where no files have been changed yet.
 
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+# [Retail 10.0.23 and later](#tab/retail-10-0-23)
 
-> [!NOTE]
-> Started since 10.0.21 the fiscal registration service integration sample for Sweden requires using sealed installers of Retail SDK components.
+> [!WARNING]
+> Started since 10.0.23 the fiscal integration sample for Sweden was published in GitHub repository. This sample requires a [sealed commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) to be installed as a prerequisite. Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
 
-This topic serves as a deployment guide that shows how to enable the localization of Microsoft Dynamics 365 Commerce for Sweden. The sample's code can be found in repository [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions)
+This topic serves as a deployment guide that shows how to enable the localization of Microsoft Dynamics 365 Commerce for Sweden. The localization samples code can be found in repository [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions)
 
-This sample consists of extensions for the Commerce runtime (CRT), POS, and Hardware station. To run this sample, you must beforehand install the sealed version of Commerce Scale Unit, Hardware station and POS. After installing the retail components, you should build the CleanCash solution and run installers for each component. We recommend that you use an unmodified microsoft/Dynamics365Commerce.Solutions to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
+This sample consists of extensions for the Commerce runtime (CRT), POS, and Hardware station. To run this sample, you must beforehand install the sealed version of Commerce Scale Unit, Hardware station and POS. After installing the retail components, you should build the CleanCash solution and run installers for each component. We recommend that you use an unmodified files from this repository to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
 
 ---
 
 Follow these steps to configure a development environment so that you can test and extend the sample. You must also complete all the required setup tasks that are described in the [Setting up the integration with control units](#setting-up-the-integration-with-control-units) section.
 
-### Enable CRT extensions
+# [Retail 10.0.22 and earlier](#tab/retail-10-0-22)
 
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+### Enable CRT extensions
 
 The CRT extension components are included in the CRT samples. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
-
-The CRT extension components are included in the CleanCash solution from Fiscal Integration folder. To complete the following procedures, open the CleanCash solution, **CleanCash.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\CleanCash**.
-
 #### DocumentProvider.CleanCashSample component
-
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Find the **Runtime.Extensions.DocumentProvider.CleanCashSample** project, and build it.
 2. In the **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll** assembly file.
@@ -176,33 +170,7 @@ The CRT extension components are included in the CleanCash solution from Fiscal 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
     ```
-
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
-
-1. Find the **CleanCash** solution, and build it.
-
-2. Build the CRT extension installer:
-
-    - **Commerce Scale Unit:** In the **CleanCash\\ScaleUnit\\ScaleUnit.CleanCash.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.CleanCash.Installer** installer.
-    - **Local CRT on Modern POS:** In the **CleanCash\\ModernPOS\\ModernPos.CleanCash.Installer\\bin\\Debug\\net461** folder, find the **ModernPos.CleanCash.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
-    - **Commerce Scale Unit:**
-
-    ```Console
-    ScaleUnit.CleanCash.Installer.exe install --verbosity 0
-    ```
-
-    - **Local CRT on Modern POS:**
-
-    ```Console
-    ModernPOS.CleanCash.Installer.exe install --verbosity 0
-    ```
-
 #### Update the extension configuration file
-
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Find the extension configuration file for CRT:
 
@@ -217,21 +185,13 @@ The CRT extension components are included in the CleanCash solution from Fiscal 
 
 ### Enable Hardware station extensions
 
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
-
 The Hardware station extension components are included in the Hardware station samples. To complete the following procedures, open the solution, **HardwareStationSamples.sln**, under **RetailSdk\\SampleExtensions\\HardwareStation**.
-
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
-
-The Hardware station extension components are included in the CleanCash solution from Fiscal Integration folder. To complete the following procedures, open the CleanCash solution, **CleanCash.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\CleanCash**.
 
 #### CleanCash component
 
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
-
 1. Find the **HardwareStation.Extension.CleanCashSample** project, and build it.
-2. In the **Extension.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.CleanCashSample.dll** assembly file.
-3. Copy the assembly file to the Hardware station extensions folder:
+2. In the **Extension.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.CleanCashSample.dll** and **Interop.CleanCash_1_1.dll** assembly files.
+3. Copy the assembly files to the Hardware station extensions folder:
 
     - **Shared hardware station:** Copy the file to the **bin** folder under the IIS Hardware station site location.
     - **Dedicated hardware station on Modern POS:** Copy the file to the Modern POS client broker location.
@@ -244,24 +204,11 @@ The Hardware station extension components are included in the CleanCash solution
 5. Add the following line to the **composition** section of the configuration file.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
-    ```
-
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
-
-1. Find the **CleanCash** solution, and build it.
-
-2. In the **CleanCash\\HardwareStation\\HardwareStation.CleanCash.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.CleanCash.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
-    ```Console
-    HardwareStation.CleanCash.Installer.exe install --verbosity 0
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
+    <add source="assembly" value="Interop.CleanCash_1_1" />
     ```
 
 ### Enable Modern POS extension components
-
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and make sure that it can be compiled without errors. Additionally, make sure that you can run Modern POS from Microsoft Visual Studio by using the **Run** command.
 
@@ -286,14 +233,7 @@ The Hardware station extension components are included in the CleanCash solution
 3. Rebuild the solution.
 4. Run Modern POS in the debugger, and test the functionality.
 
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
-
-> [!IMPORTANT]
-> In the current version, POS extensions are not enabled!
-
 ### Enable Cloud POS extension components
-
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and make sure that it can be compiled without errors.
 2. Enable the extensions that must be loaded by adding the following lines in the **extensions.json** file.
@@ -314,33 +254,77 @@ The Hardware station extension components are included in the CleanCash solution
 3. Rebuild the solution.
 4. Run the solution by using the **Run** command and following the steps in the Retail SDK handbook.
 
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+# [Retail 10.0.23 and later](#tab/retail-10-0-23)
+### Install Commerce extensions
 
-> [!IMPORTANT]
-> In the current version, POS extensions are not enabled!
+The CRT extension components are included in the CleanCash solution from Fiscal Integration folder. To complete the following procedures, open the CleanCash solution, **CleanCash.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\CleanCash**.
 
+1. Find the **CleanCash** solution and build it.
+
+2. Build the CRT extension installer:
+
+    - **Commerce Scale Unit:** In the **CleanCash\\ScaleUnit\\ScaleUnit.CleanCash.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.CleanCash.Installer** installer.
+    - **Local CRT on Modern POS:** In the **CleanCash\\ModernPOS\\ModernPos.CleanCash.Installer\\bin\\Debug\\net461** folder, find the **ModernPos.CleanCash.Installer** installer.
+
+3. Start the extension installer from command line as follows:
+
+    - **Commerce Scale Unit:**
+
+    ```Console
+    ScaleUnit.CleanCash.Installer.exe install --verbosity 0
+    ```
+
+    - **Local CRT on Modern POS:**
+
+    ```Console
+    ModernPOS.CleanCash.Installer.exe install --verbosity 0
+    ```
+### Install Hardware station extensions
+
+The Hardware station extension components are included in the CleanCash solution from Fiscal Integration folder. To complete the following procedures, open the CleanCash solution, **CleanCash.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\CleanCash**.
+
+#### CleanCash component
+
+1. Find the **CleanCash** solution and build it.
+
+2. In the **CleanCash\\HardwareStation\\HardwareStation.CleanCash.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.CleanCash.Installer** installer.
+
+3. Start the extension installer from command line as follows:
+
+    ```Console
+    HardwareStation.CleanCash.Installer.exe install --verbosity 0
+    ```
+
+---
 ### Set up the registration process
 
 To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
-
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.CleanCashSample\\Configuration\\ConnectorCleanCashSample.xml**.
-3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configuration. The file location is **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.CleanCashSample\\Configuration\\DocumentProviderFiscalCleanCashSample.xml**.
-4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
-5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Update the connection settings as required.
-6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
-7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
-8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
-9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the control unit will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
-10. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is
 
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+# [Retail 10.0.22 and earlier](#tab/retail-10-0-22)
 
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **Dynamics365Commerce.Solutions\\FiscalIntegration\\CleanCash\\HardwareStation\\Connector.CleanCashSample\\Configuration\\ConnectorCleanCashSample.xml**.
-3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configuration. The file location is **Dynamics365Commerce.Solutions\\FiscalIntegration\\CleanCash\\CommerceRuntime\\DocumentProvider.CleanCashSample\\Configuration\\DocumentProviderFiscalCleanCashSample.xml**.
+**RetailSdk\\SampleExtensions\\HardwareStation\\Extension.CleanCashSample\\Configuration\\ConnectorCleanCashSample.xml**.
+
+# [Retail 10.0.23 and later](#tab/retail-10-0-23)
+
+**Dynamics365Commerce.Solutions\\FiscalIntegration\\CleanCash\\CommerceRuntime\\DocumentProvider.CleanCashSample\\Configuration\\DocumentProviderFiscalCleanCashSample.xml**.
+
+---
+
+3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configuration. The file location is
+
+# [Retail 10.0.22 and earlier](#tab/retail-10-0-22)
+
+**RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.CleanCashSample\\Configuration\\DocumentProviderFiscalCleanCashSample.xml**.
+
+# [Retail 10.0.23 and later](#tab/retail-10-0-23)
+
+**Dynamics365Commerce.Solutions\\FiscalIntegration\\CleanCash\\CommerceRuntime\\DocumentProvider.CleanCashSample\\Configuration\\DocumentProviderFiscalCleanCashSample.xml**.
+
+---
+
 4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
 5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Update the connection settings as required.
 6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group for the connector functional profile that you created earlier.
@@ -353,7 +337,7 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 The previous procedure enables the extensions that are components of the fiscal registration service integration sample. In addition to completing that procedure, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
+# [Retail 10.0.22 and earlier](#tab/retail-10-0-22)
 
 1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
@@ -364,10 +348,11 @@ The previous procedure enables the extensions that are components of the fiscal 
         <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
         ```
 
-    - In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
+    - In the **HardwareStation.Extension.config** configuration file, add the following lines to the **composition** section.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
+        <add source="assembly" value="Interop.CleanCash_1_1" />
         ```
 
 2. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
@@ -382,6 +367,7 @@ The previous procedure enables the extensions that are components of the fiscal 
 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Interop.CleanCash_1_1.dll" />
         ```
 
 3. Enable the POS extension by adding the following lines in the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder.
@@ -399,9 +385,54 @@ The previous procedure enables the extensions that are components of the fiscal 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
-# [Retail 10.0.21 and later](#tab/retail-10-0-21)
+# [Retail 10.0.23 and later](#tab/retail-10-0-23)
 
-Using samples from [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) for deployable package creation requires migration of samples to Retail SDK.
+### Commerce Cloud Scale Unit (CSU) package
+
+The steps to generate Commerce Cloud Scale Unit (CSU) package are following:
+
+1. Clone or download the [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
+
+Select the correct release branch version according to your SDK/application release. Detailed steps to clone can be in [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+
+2. Build the project **ScaleUnit.Posnet** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\ScaleUnit**. This project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. CloudScaleUnitExtensionPackage.zip package can be uploaded to LCS and deployed to CSU.
+
+Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the NuGet package manager in Visual Studio according to your SDK/application version.
+
+#### Deploy the package to CSU
+
+1. Go to https://lcs.dynamics.com/v2.
+2. Sign in to LCS, and open a project. Then, on the hamburger menu, select Asset library.
+3. Select the **Cloud Scale Unit Extension** asset type, and then select the **+** button to upload the package. Provide a package name and description and then add the package file by selecting **Add file**.
+4. After the upload is complete, select **Confirm** to complete the upload process.
+5. The package will be validated by LCS in a few minutes. After validation is complete, mark the package as Release candidate.
+6. After upload, the package needs to be deployed to the environment. For more information, follow the steps outlined in Apply updates and extensions to Commerce Scale Unit (cloud).
+
+### Commerce Scale Unit (self-hosted) components
+
+1. Download the Commerce Scale Unit, Hardware station, Modern POS component installers and install each one as prerequisites. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](../dev-itpro/Enhanced-Mass-Deployment.md).
+
+2. Start the extension installer from command line
+
+- For **Commerce Scale Unit:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\ScaleUnit\\ScaleUnit.Posnet.Installer\\bin\\Debug\\net461** path
+
+    ```Console
+    ScaleUnit.Posnet.Installer.exe install --verbosity 0
+    ```
+
+- For **Local CRT on Modern POS:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\ModernPOS\\ModernPOS.Posnet.Installer\\bin\\Debug\\net461** path
+
+    ```Console
+    ModernPOS.Posnet.Installer.exe install --verbosity 0
+    ```
+
+- For **Hardware station** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\HardwareStation\\HardwareStation.PosnetThermalFVFiscalPrinter.Installer\\bin\\Debug\\net461** path
+
+    ```Console
+    HardwareStation.PosnetThermalFVFiscalPrinter.Installer.exe install --verbosity 0
+    ```
+
+---
 
 ## Design of the extensions
 
@@ -515,8 +546,8 @@ The migration process should consist of the following steps.
 #### Update Hardware station
 
 1. Find the **HardwareStation.Extension.CleanCashSample** project, and build it.
-2. In the **Extension.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.CleanCashSample.dll** assembly file.
-3. Copy the assembly file to the Hardware station extensions folder:
+2. In the **Extension.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.CleanCashSample.dll** and **Interop.CleanCash_1_1.dll** assembly files.
+3. Copy the assembly files to the Hardware station extensions folder:
 
     - **Shared hardware station:** Copy the file to the **bin** folder under the IIS Hardware station site location.
     - **Dedicated hardware station on Modern POS:** Copy the file to the Modern POS client broker location.
@@ -550,10 +581,11 @@ The migration process should consist of the following steps.
     ```
     ---
 
-6. Add the following line to the **composition** section of the extension configuration file.
+6. Add the following lines to the **composition** section of the extension configuration file.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
+    <add source="assembly" value="Interop.CleanCash_1_1" />
     ```
 
 #### Update Modern POS
@@ -617,7 +649,7 @@ The migration process should consist of the following steps.
 
 2. Enable the current sample CRT extensions by making the following changes in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder.
 
-    ``` xml	
+    ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
     ```
@@ -657,24 +689,26 @@ The migration process should consist of the following steps.
     ```
     ---
 
-2. Enable the current sample Hardware station extension by adding the following line to the **composition** section in the **HardwareStation.Extension.config** configuration file.
+2. Enable the current sample Hardware station extension by adding the following lines to the **composition** section in the **HardwareStation.Extension.config** configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
+    <add source="assembly" value="Interop.CleanCash_1_1" />
     ```
 
 3. Make the following changes in the **Customization.settings** package customization configuration file under the **BuildTools** folder:
 
     - Remove the following lines to exclude the earlier Hardware station extension from deployable packages.
 
-        ``` xml 
+        ``` xml
         <ISV_CommerceRuntime_CustomizableFileInclude="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll" />
         ```
 
-    - Add the following line to include the current sample Hardware station extension in deployable packages.
+    - Add the following lines to include the current sample Hardware station extension in deployable packages.
 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Interop.CleanCash_1_1.dll" />
         ```
 
 #### Update Modern POS
