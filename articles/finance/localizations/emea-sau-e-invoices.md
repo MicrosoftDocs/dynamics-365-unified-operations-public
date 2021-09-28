@@ -122,6 +122,9 @@ According to Saudi Arabiaian legal requirements, invoices that are issued to cus
 4. On the Action Pane, on the **Sell** tab, in the **Related information** group, select **External item desription**.
 5. In **External item number** field, enter a customer-specific code for the selected product. This code will be then used as a Buyer's product identifier.
 
+> [!NOTE]
+> Internal item numbers defined in the system will be used as Seller's products identifiers by default.
+
 ## Configure printable invoice layouts
 
 1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
