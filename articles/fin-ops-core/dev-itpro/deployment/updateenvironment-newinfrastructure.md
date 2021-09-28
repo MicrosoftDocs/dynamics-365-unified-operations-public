@@ -117,7 +117,9 @@ After you've marked an update as a release candidate, follow these steps to upda
 > [!NOTE]
 > If there is an on-going operation in the environment, or if the environment is already running on the same version or a later version, the scheduled update is canceled. When a scheduled update is canceled, an email notification is sent to all project stakeholders. Customers can also cancel an update by selecting **Cancel** on the environment details page. If customers want to reschedule or change an update, they can cancel the current operation and schedule a new one.
 
-> For environments that are deployed in the modern infrastructure stack, if servicing is unsuccessful, the environment is automatically rolled back. To learn why the operation was unsuccessful, you can download the logs from the environment history page.
+### Apply Update Failures:
+For environments that are deployed in the modern infrastructure stack usually, the default behavior is if servicing is unsuccessful, the environment is automatically rolled back. To learn why the operation was unsuccessful, you can download the logs from the environment history page.
 
+But for environments with larger databases where rollback may result in extended downtime, we intentionally put the environment in failed state to see if forward progress can be made to get that operation to finish successfully to avoid doing the rollback. If it is determined that the operation cannot move forward then the rollback is initiated on such failures as well.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
