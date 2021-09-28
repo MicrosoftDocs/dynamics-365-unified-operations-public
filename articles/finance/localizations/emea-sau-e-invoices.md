@@ -143,7 +143,7 @@ Similarly, the invoice type can be defined for Free text invoices.
 2. Create a new or select an existing open free text invoice and navigate to the invoice header.
 3. On **General** FastTab, in **Invoice** group, in **Invoice type** field, select a required value.
 
-## Submit electronic invoices
+## Issue electronic invoices
 
 When you've completed all the required configuration steps, you can generate electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
