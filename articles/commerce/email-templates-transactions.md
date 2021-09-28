@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: v-chgri
+ms.reviewer: josaw
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -32,6 +32,104 @@ ms.dyn365.ops.version: Release 10.0.8
 This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce provides an out-of-box solution for sending emails that alert customers about transactional events (for example, when an order is placed, an order is ready for pickup, or an order has been shipped). This topic describes the steps for creating, uploading, and configuring the email templates that are used to send transactional emails.
+
+
+
+## Notification types
+
+When certain events occur as part of the order and customer lifecycle, notifications can be configured to inform the customer via email about the event. You map an email template to a notification type by creating a Commerce email notification profile. See the [Set up an email notification profile](email-notification-profiles.md) for more information about setting up a notification profile.
+
+Dynamics 365 Commerce supports the following notificaiton types.
+
+### Order created
+
+This notification is triggered when a Commerce new sales order has been created in Headquarters. 
+
+> [!NOTE]
+>
+> This notification does not get invoked for cash and carry transactions that happen in POS, an emailed and/or printed receipt is generated instead. See [Send email receipts from Modern POS (MPOS)](email-receipts.md) for more information.
+
+### Order confirmed
+
+This notification is triggered when an order confirmation document is generated on the sales order from headquarters. 
+
+### Picking completed
+
+This notification is triggered when a picking list for an order is marked as completed in headquarters. 
+
+> [!NOTE] 
+>
+> This notification type does not get triggered when an item is marked as picked in point of sale (POS). 
+
+### Packing completed
+
+This notification is triggered when a packing slip document is generated for the order in headquarters or point of sale.  
+
+The packing completed notification type supports the following additional email placeholders to facilitate order ready for pickup and order lookup functionality from transactional emails. 
+
+| Placeholder name    | Purpose                                                      |
+| ------------------- | ------------------------------------------------------------ |
+| pickupstorename     | The name of the store where the order is available for pickup |
+| pickupstoreaddress  | The address of the store where the order is available for pickup |
+| pickupstorehourfrom | The opening hour of the pickup store                         |
+| pickupstorehourto   | The closing hour of the pickup store                         |
+| pickupchannelid     | The store channel ID of the pickup store                     |
+| packingslipid       | The ID of the packing slip for the order to be picked up     |
+| confirmationid      | The order confirmation ID (sometimes referred to as the channel reference ID) of the order to be picked up |
+
+Learn more about the customer check-in and order lookup features by reading the [Set up geo detection and redirection](https://docs.microsoft.com/en-us/dynamics365/commerce/geo-detection-redirection) and [Enable order lookup for guest checkouts](https://docs.microsoft.com/en-us/dynamics365/commerce/order-lookup-guest) help topics. 
+
+### Order ready for pickup
+
+This notification is triggered when an order with one or more lines whose mode of delivery is "Customer pickup" is marked as packed. 
+
+> [!NOTE] 
+>
+> The order ready for pickup notification type has been deprecated in favor of the packing complete notification type that you customize by mode of delivery. Learn more about [customizing notification types by mode of delivery](http://) for more information.  
+
+### Order shipped
+
+This notification is triggered when an order with a non-store pickup mode of delivery is invoiced. 
+
+> [!NOTE] 
+>
+> The order shipped notification type has been deprecated in favor of the order invoiced notification type that you customize by mode of delivery. See [customizing notification types by mode of delivery](http://) for more information. 
+
+### Order invoiced
+
+This notification is triggered when an order is invoiced in point of sale POS or headquarters.  
+
+### Issue gift card
+
+This notification is triggered when a sales order which contains a product of type gift card is invoiced.
+
+> [!NOTE]
+>
+> This email will be sent to the recipient of the gift card, which is set either manually or programmatically in the Packing tab under Line details within an individual line within a sales order. 
+
+The issue gift card notification type supports the following additional placeholders:
+
+| Placeholder name      | Purpose                                                      |
+| --------------------- | ------------------------------------------------------------ |
+| iftcardnumber         | Gift card number for products of type gift card              |
+| giftcardbalance       | Gift card balance for products of type gift card             |
+| giftcardmessage       | Gift card message for products of type gift card             |
+| giftcardpin           | Gift card pin for products of type gift card. Specific to external gift cards |
+| giftcardexpiration    | Gift card expiration for products of type gift card. Specific to external gift cards |
+| giftcardrecipientname | Gift card recipient name for products of type gift card      |
+| giftcardbuyername     | Gift card buyer name for products of type gift card          |
+
+For more information about gift cards, see the [E-commerce digital gift cards](https://docs.microsoft.com/en-us/dynamics365/commerce/digital-gift-cards) and [Support for external gift cards](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/gift-card) help topics. 
+
+### Order cancellation
+
+This notification is triggered when an order is cancelled in headquarters. 
+
+### Customer created
+
+This notification is triggered when a new customer entity is created in headquarters. 
+
+
 
 ## Create an email template
 
@@ -78,15 +176,15 @@ Here is an example.
 
 The following placeholders retrieve and show data that is defined at the sales order level (as opposed to the sales line level).
 
-| Placeholder name     | Placeholder value                                            |
+| Placeholder name     | Purpose                                                      |
 | -------------------- | ------------------------------------------------------------ |
 | customername         | The name of the customer who placed the order.               |
 | customeraddress      | The address of the customer.                                 |
 | customeremailaddress | The email address that the customer entered at checkout.     |
 | salesid              | The sales ID of the order.                                   |
-| orderconfirmationid  | The cross-channel ID that was generated at order creation. |
+| orderconfirmationid  | The cross-channel ID that was generated at order creation.   |
 | channelid            | The ID of the retail or online channel that the order was placed through. |
-| deliveryname         | The name that is specified for the delivery address.        |
+| deliveryname         | The name that is specified for the delivery address.         |
 | deliveryaddress      | The delivery address for shipped orders.                     |
 | deliverydate         | The delivery date.                                           |
 | shipdate             | The ship date.                                               |
@@ -100,7 +198,7 @@ The following placeholders retrieve and show data that is defined at the sales o
 | storeaddress         | The address of the store that placed the order.              |
 | storeopenfrom        | The opening time of the store that placed the order.         |
 | storeopento          | The closing time of the store that placed the order.         |
-| pickupstorename      | The name of the store where the order will be picked up.\* |
+| pickupstorename      | The name of the store where the order will be picked up.\*   |
 | pickupstoreaddress   | The address of the store where the order will be picked up.\* |
 | pickupopenstorefrom  | The opening time of the store where the order will be picked up.\* |
 | pickupopenstoreto    | The closing time of the store where the order will be picked up.\* |
@@ -113,7 +211,7 @@ The following placeholders retrieve and show data that is defined at the sales o
 
 The following placeholders retrieve and show data for individual products (lines) in the sales order.
 
-| Placeholder name               | Placeholder value |
+| Placeholder name               | Purpose |
 |--------------------------------|-------------------|
 | productid                      | <p>The ID of the product. This ID accounts for variants.</p><p><strong>Note:</strong> This placeholder has been deprecated in favor of **lineproductrecid**.</p> |
 | lineproductrecid               | The ID of the product. This ID accounts for variants. It uniquely identifies an item at the variant level. |
