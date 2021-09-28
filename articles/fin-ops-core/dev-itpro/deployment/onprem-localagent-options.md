@@ -65,4 +65,4 @@ Some onpremises environments are not allowed to reach out into the internet. As 
 Support for this option was introduced in release X.
 
 > [!CAUTION]
-> Only enable this deployment option if you are fully aware of the security implications of disabling this check.
+> By disabling the certificate revocation list of a certificate, the security check will not be performed. You bear the risk of disabling it. You should only enable this deployment option if you are fully aware of the security implications of disabling this check.
