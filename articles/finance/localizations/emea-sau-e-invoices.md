@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.23
 [!include [banner](../includes/banner.md)]
 
 
-According to Saudi Arabiaian legal requirements, invoices that are issued to customers must be generated and submitted in an electronic format. Electronic invoices generation and submission requires the following two-part system configuration:
+According to Saudi Arabiaian legal requirements, invoices that are issued to customers must be generated in an electronic format. Electronic invoices generation requires the following two-part system configuration:
 
 1. **Electronic invoicing service** configuration. For more information, see [Get started with the Electronic invoicing add-in for Saudi Arabia](e-invoicing-sa-get-started.md).
 2. **Microsoft Dynamics 365 Finance** configuration, which is covered in this topic.
@@ -122,9 +122,30 @@ According to Saudi Arabiaian legal requirements, invoices that are issued to cus
 4. On the Action Pane, on the **Sell** tab, in the **Related information** group, select **External item desription**.
 5. In **External item number** field, enter a customer-specific code for the selected product. This code will be then used as a Buyer's product identifier.
 
+## Configure printable invoice layouts
+
+1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
+2. Click on **Print management**.
+3. Select **Customer invoice** report and refer to **SalesInvoice.Report_SA** layout in the **Report format** field.
+4. Select **Free text invoice** report and refer to **FreeTextInvoice.Report_SA** layout in the **Report format** field.
+
+## Define invoice type
+
+The system allows to define an invoice type either as **Tax invoice** or **Simplified invoice**.
+
+1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+2. Create a new or select an existing open order and navigate to the order header.
+3. On **General** FastTab, in **Status** group, in **Invoice type** field, select a required value.
+
+Similarly, the invoice type can be defined for Free text invoices.
+
+1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+2. Create a new or select an existing open free text invoice and navigate to the invoice header.
+3. On **General** FastTab, in **Invoice** group, in **Invoice type** field, select a required value.
+
 ## Submit electronic invoices
 
-When you've completed all the required configuration steps, you can submit electronic invoices. For more information about how to submit electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
+When you've completed all the required configuration steps, you can generate electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
 ## Related topics
 
