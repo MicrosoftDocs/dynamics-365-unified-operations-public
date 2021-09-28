@@ -305,7 +305,7 @@ Follow these steps to set up a development environment so that you can test and 
 
 ### Enable Commerce runtime extensions
 
-# [Retail 10.0.21 and earlier](#tab/retail-10-0-20)
+# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
 
 The CRT extension components are included in the CRT samples. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
@@ -349,8 +349,6 @@ The CRT extension components are included in the CRT samples. To complete the fo
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
     ```
 #### Update the extension configuration file
-
-# [Retail 10.0.20 and earlier](#tab/retail-10-0-20)
 
 1. Find the extension configuration file for CRT:
 
