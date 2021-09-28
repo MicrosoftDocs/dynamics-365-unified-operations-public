@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic explains how to manage ratings and reviews in Microsoft Dynamics 365 Commerce site builder.
 
-## Overview
-
 Dynamics 365 Commerce uses Microsoft Azure Cognitive Service to automatically moderate review text by redacting profane words. In addition, moderators can use Dynamics 365 Commerce site builder to implement the following manual tasks:
 
 - Moderate reviews by responding to them or removing them.

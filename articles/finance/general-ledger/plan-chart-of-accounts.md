@@ -2,7 +2,7 @@
 # required metadata
 
 title: Plan your chart of accounts
-description: This topics provides information that will help you plan the chart of accounts for your organization.
+description: This topic provides information that will help you plan the chart of accounts for your organization.
 author: aprilolson
 ms.date: 04/02/2018
 ms.topic: article

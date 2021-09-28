@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure eligibility rules and options
-description: Set eligibility rules and options in Benefits management in Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/25/2021
+description: This topic describes how to set eligibility rules and options in Benefits management in Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -160,8 +160,7 @@ Rules can be further expanded to use multiple conditions within a single criteri
 ### Eligibility conditions within a custom field criterion 
 Similar to above, custom fields can be used when creating eligibility rules and work in the same manner. For example, you may want to offer internet reimbursement to the Fargo and Copenhagen employees who are working from home, as the internet costs are higher in those locations. To do this, create two custom fields: **Office location** (picklist) and **Working from home** (check box). Then create a rule called **WFH Employees**. The criterion for the rule is where **Office Location = Fargo** or **Copenhagen** *and*  where **Working from home = Yes**.
 
-Th
-e custom eligibility rules would need to be set up as indicated in the following image. 
+The custom eligibility rules would need to be set up as indicated in the following image. 
 
 ![Eligibility conditions within a cusom field criterion.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
@@ -223,13 +222,13 @@ You can use flex credit programs to enroll employees in benefits according to a 
 
    | Field | Description |
    | --- | --- |
-   | Benefit credit ID | The unique identifier of the flex credit program. |
-   | Description | A description of the flex credit program. | 
-   | From date | The date the flex credit program becomes active. |
-   | To date | The end date of the flex credit program. You can leave the default value (12/31/2154) to indicate that the flex credit program doesn't have a scheduled expiration. |
-   | Total credit value | The number of credits each employee will have to use for their benefits. |
-   | Prorate rule | The rule to use for prorating flex credits when an employee is hired in the middle of the flex credit period. </br></br><ul><li>**None** – The employee receives no flex credits if they are hired after the flex credit program period begins.</li><li>**Full credit** – The employee receives the full amount of flex credits, regardless of when they are hired.</li><li>**Prorate** – The employee receives a prorated amount of flex credits based on their start date.</li></ul> |
-   | Flex credit prorate formula | The rule to use for prorating flex credits for employees who are hired in the middle of a benefit period for the flex credit program. The proration is based on the employment start date. This field is only used if you select **Prorate** in the **Prorate rule** field. </br></br><ul><li>**Daily** – Prorates the number of flex credits an employee receives to the day level. The total number of flex credits is divided by the number of days in the period. For example, if your benefit period is 400 days, the system will divide the total number of flex credits by 400 to calculate the number of flex credits employees receive per day.</li><li>**Current month** – Prorates the number of flex credits an employee receives to the month level, rounded to the current month. The total number of flex credits is divided by the number of months in the period. For example, if your benefit period is 15 months, the system will divide the total number of flex credits by 15 to calculate the number of flex credits employees receive per month.</li><li>**Following month** – Prorates the number of flex credits an employee receives to the month level, rounded to the next month. The total number of flex credits is divided by the number of months in the period. For example, if your benefit period is 15 months, the system divides the total number of flex credits by 15 to calculate the number of flex credits employees receive per month.</li></ul> |
+   | **Benefit credit ID** | The unique identifier of the flex credit program. |
+   | **Description** | A description of the flex credit program. | 
+   | **From date** | The date the flex credit program becomes active. |
+   | **To date** | The end date of the flex credit program. You can leave the default value (12/31/2154) to indicate that the flex credit program doesn't have a scheduled expiration. |
+   | **Total credit value** | The number of credits each employee will have to use for their benefits. |
+   | **Prorate rule** | The rule to use for prorating flex credits when an employee is hired in the middle of the flex credit period. </br></br><ul><li>**None** – The employee receives no flex credits if they are hired after the flex credit program period begins.</li><li>**Full credit** – The employee receives the full amount of flex credits, regardless of when they are hired.</li><li>**Prorate** – The employee receives a prorated amount of flex credits based on their start date.</li></ul> |
+   | **Flex credit prorate formula** | The rule to use for prorating flex credits for employees who are hired in the middle of a benefit period for the flex credit program. The proration is based on the employment start date. This field is only used if you select **Prorate** in the **Prorate rule** field. </br></br><ul><li>**Daily** – Prorates the number of flex credits an employee receives to the day level. The total number of flex credits is divided by the number of days in the period. For example, if your benefit period is 400 days, the system will divide the total number of flex credits by 400 to calculate the number of flex credits employees receive per day.</li><li>**Current month** – Prorates the number of flex credits an employee receives to the month level, rounded to the current month. The total number of flex credits is divided by the number of months in the period. For example, if your benefit period is 15 months, the system will divide the total number of flex credits by 15 to calculate the number of flex credits employees receive per month.</li><li>**Following month** – Prorates the number of flex credits an employee receives to the month level, rounded to the next month. The total number of flex credits is divided by the number of months in the period. For example, if your benefit period is 15 months, the system divides the total number of flex credits by 15 to calculate the number of flex credits employees receive per month.</li></ul> |
    
    Be sure that each benefit plan is enrolled in only one flex credit program per benefit period. Otherwise, the system won't know which flex credit program to use to grant flex credits and you will encounter problems. 
 

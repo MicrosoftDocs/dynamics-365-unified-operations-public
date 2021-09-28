@@ -57,7 +57,7 @@ The following table provides more details about the content of each file.
 
 ## Enable the feature for batch processing
 
-In the **Feature management** workspace, enable the feature, **GB/T 24589 running in batch.**
+In the **Feature management** workspace, enable the feature, **(China) GB/T 24589 running in batch.**
 
 ## Import electronic reporting configurations
 

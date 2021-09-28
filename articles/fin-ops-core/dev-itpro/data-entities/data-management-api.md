@@ -3,7 +3,7 @@
 
 title: Data management package REST API
 description: This topic describes the Data management framework's package REST API.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2017-03-31
 ms.dyn365.ops.version: Platform update 5
 

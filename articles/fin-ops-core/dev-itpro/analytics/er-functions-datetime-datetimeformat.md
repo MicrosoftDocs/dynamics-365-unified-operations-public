@@ -4,7 +4,7 @@
 title: DATETIMEFORMAT ER function
 description: This topic provides information about how the DATETIMEFORMAT Electronic reporting (ER) function is used.
 author: NickSelin
-ms.date: 01/04/2021
+ms.date: 09/08/2021
 ms.prod: 
 ms.technology: 
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `DATETIMEFORMAT` function returns a *String* value that presents a given date/time value as text in the specified format and in an optionally specified [culture](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). For information about the supported formats, see [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) and [custom](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+The `DATETIMEFORMAT` function returns a *[String](er-formula-supported-data-types-primitive.md#string)* value that presents a given date/time value as text in the specified format and in an optionally specified [culture](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). For information about the supported formats, see [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) and [custom](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## Syntax 1
 
@@ -46,20 +46,20 @@ DATETIMEFORMAT (datetime, format, culture)
 
 ## Arguments
 
-`datetime`: *DateTime*
+`datetime`: *[DateTime](er-formula-supported-data-types-primitive.md#datetime)*
 
 A date/time value that represents the date and time to format.
 
 `format`: *String*
 
-The format of the output string.
+The format of the output string. For information about the supported formats, see [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) and [custom](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 > [!NOTE]
 > The format string is case-sensitive when you use either a standard format or a custom format. For example, the [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) "d" format specifier returns the date by using the short date pattern, whereas the standard "D" format specifier returns the date by using the long date pattern. Additionally, the [custom](/dotnet/standard/base-types/custom-date-and-time-format-strings) "M" format specifier returns the month from 1 through 12, whereas the custom "m" format specifier returns the minute from 0 through 59.
 
 `culture`: *String*
 
-The culture to use for formatting.
+The culture to use for formatting. For information about the supported cultures, see [culture](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
 
 ## Return values
 

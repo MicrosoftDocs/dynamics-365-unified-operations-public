@@ -2,9 +2,9 @@
 # required metadata
 
 title: Human Resources virtual tables FAQ
-description: This topic is a list of frequently asked questions about Human Resources virtual entities.
+description: This topic provides answers to some frequently asked questions about Human Resources virtual entities.
 author: jaredha
-ms.date: 05/26/2021
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic is a collection of frequently asked questions about virtual tables in Dynamics 365 Human Resources.
+This topic provides answers to some frequently asked questions about virtual tables in Dynamics 365 Human Resources.
 
 > [!NOTE]
 > For more information about Dataverse (formerly Common Data Service) and terminology updates, see [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)

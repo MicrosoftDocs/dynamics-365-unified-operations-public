@@ -3,7 +3,7 @@
 
 title: Data management overview
 description: This topic provides information about data management in Finance and Operations.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
@@ -22,7 +22,7 @@ ms.custom: ["96283", "intro-internal"]
 ms.assetid: e67f5edc-1087-4867-8955-b2a40d94217f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -3,7 +3,7 @@
 
 title: Application Connector
 description: This topic provides information about the Application Connector for Microsoft Power Automate and Logic Apps.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 03/08/2021
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,7 @@ ms.reviewer: sericks
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom:
 ms.dyn365.ops.version: 2019-02-28
 ---

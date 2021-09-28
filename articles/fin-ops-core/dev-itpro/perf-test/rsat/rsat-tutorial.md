@@ -1,25 +1,15 @@
 ---
 title: Regression suite automation tool tutorial
 description: This topic shows how to use Regression suite automation tool (RSAT). It describes various features and provides examples that use advanced scripting.
-author: robinarh
-ms.date: 01/15/2021
+author: FrankDahl
+ms.date: 09/23/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
 audience: Application User, Developer, IT Pro
-# ms.devlang:
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm:
-ms.custom: 21761
 ms.search.region: Global
-# ms.search.industry:
-ms.author: rhaertle
+ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-
 ---
 
 # Regression suite automation tool tutorial
@@ -84,13 +74,19 @@ After the test case is run, the message in the Excel parameter file is compared 
 
 This feature takes screenshots of the steps that were performed during task recording. It is useful for auditing or debugging purposes.
 
-- To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value of the following element from **false** to **true**.
+- To use this feature while running RSAT with the user interface, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value of the following element from **false** to **true**.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-When your run the test case, RSAT will generate snapshots (images) of the steps in the playback folder of the test cases in the working diretory. If you are using an older version of RSAT, the images are saved to **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, a separate folder is created for each test case that is run.
+- To use this feature while running RSAT by the CLI (for example, Azure DevOps), open the **Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value of the following element from **false** to **true**.
+
+    ```xml
+    <add key="VerboseSnapshotsEnabled" value="false" />
+    ```
+
+When you run test cases, RSAT generates snapshots (images) of the steps and saves them in the playback folder of the test cases in the working diretory. In the playback folder, a separate subfolder is created named **StepSnapshots**. That folder contains snapshots for the test cases that are run.
 
 ## Assignment
 
@@ -523,7 +519,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 The following example uses an Open Data Protocol (OData) call to find the order status of a purchase order. If the status isn't **invoiced**, you can, for example, call an RSAT test case that posts the invoice.
 
-```xpp
+```powershell
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )

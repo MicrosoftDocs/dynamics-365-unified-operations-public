@@ -3,8 +3,8 @@
 
 title: Restrict editing of personal information
 description: Restrict employees from editing contact details in Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 03/03/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
 ---
@@ -58,7 +58,7 @@ This topic describes how to restrict employees from editing contact details in D
 
 After you've restricted employees from adding or editing contact details, they can see the information, but can't change it.
 
-In this example, where employees are restricted from editing **Business** contact details, they can still see the information in Employee self service:
+In this example, where employees are restricted from editing **Business** contact details, they can still see the information in **Employee self service**:
 
 ![View business contact details.](./media/hr-employee-self-service-restrict-view.png)
 

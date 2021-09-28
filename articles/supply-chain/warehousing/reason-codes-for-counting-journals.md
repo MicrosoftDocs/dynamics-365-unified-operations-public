@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 10.0.21
 # Reason codes for inventory counting
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Reason codes let you analyze the results of a counting process and any discrepancies that occur during that process. You can specify the reason for doing the count, such as a broken pallet or a stock adjustment that is based on inventory samples. At the same time, you can use the adjustment functionality to post the value of on-hand inventory adjustments to the appropriate offset account, based on the reason for each inventory adjustment.
 
@@ -46,8 +45,6 @@ Before you set up the system, we recommend that you define a strategy for workin
 - Should the reason codes drive financial offset account posting?
 
 ## Turn on reason code features in your system
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 If you don't see all the features that are described in this topic in your system, you probably have to turn on the *Post on-hand adjustments using configurable reason codes connected to offset accounts* feature. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
