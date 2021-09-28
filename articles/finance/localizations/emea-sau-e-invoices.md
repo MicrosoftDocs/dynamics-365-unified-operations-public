@@ -64,13 +64,19 @@ According to Saudi Arabiaian legal requirements, invoices that are issued to cus
 2. Select a legal entity.
 3. On the **Addresses** FastTab, add a valid primary address for the selected legal entity.
 
-### Enter the legal entity registration number
+### Enter the legal entity tax registration number
+
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2. Select a legal entity, and then, expand **Tax registration** FastTab.
+3. In the **Tax registration number** field, enter a valid legal entity tax registration number. This number will be then used as Seller's VAT identifier.
+
+### Enter the legal entity commercial registration number
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select a legal entity, and then, on the Action Pane, select **Registration IDs**.
 3. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 4. In the **Registration type** field, select the registration type that you created in the [Configure registration numbers](#configure-registration-numbers) section earlier in this topic.
-6. In the **Registration number** field, enter a valid legal entity registration number. This number will be then used as legal entity commercial registration identifier.
+6. In the **Registration number** field, enter a valid legal entity registration number. This number will be then used as Seller's commercial registration identifier.
 
 ## Configure customer data
 
@@ -80,13 +86,19 @@ According to Saudi Arabiaian legal requirements, invoices that are issued to cus
 2. Select a customer.
 3. On the **Addresses** FastTab, add a valid address for the selected customer.
 
+### Enter the customer tax registration number
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+2. Select a customer, and then, expand **Invoice and delivery** FastTab.
+3. In the **Tax exempt number** field, enter a valid customer tax registration number. This number will be then used as Buyer's VAT identifier.
+
 ### Enter the customer registration number
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 2. Select a customer, and then, on the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 3. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 5. In the **Registration type** field, select the registration type that you created in the [Configure registration numbers](#configure-registration-numbers) section earlier in this topic.
-6. In the **Registration number** field, enter a valid customer registration number. This number will be then used as customer's commercial registration identifier.
+6. In the **Registration number** field, enter a valid customer registration number. This number will be then used as Buyer's commercial registration identifier.
 
 ## Configure sales tax codes
 
