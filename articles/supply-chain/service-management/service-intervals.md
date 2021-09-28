@@ -3,7 +3,7 @@
 
 title: Service intervals
 description: Service interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders.
-author: ShylaThompson
+author: kamaybac
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 

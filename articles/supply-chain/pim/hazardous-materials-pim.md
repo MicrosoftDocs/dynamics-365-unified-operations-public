@@ -3,7 +3,7 @@
 
 title: Hazardous materials
 description: This topic provides information about hazardous material documents and information that is stored in your environment.
-author: lachlancashMS
+author: t-benebo
 ms.date: 01/10/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: 
 

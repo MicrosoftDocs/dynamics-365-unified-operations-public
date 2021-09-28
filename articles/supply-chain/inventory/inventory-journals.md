@@ -3,7 +3,7 @@
 
 title: Inventory journals
 description: This topic describes how you can use inventory journals to post various types of physical inventory transactions.
-author: perlynne
+author: yufeihuang
 ms.date: 04/05/2018
 ms.topic: article
 ms.prod:
@@ -23,7 +23,7 @@ ms.custom: 51631
 ms.assetid: 3fedeaaf-502f-483c-93d2-ab266828189e
 ms.search.region: Global
 # ms.search.industry:
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

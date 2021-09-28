@@ -3,7 +3,7 @@
 
 title: Service agreements overview
 description: Service agreement groups are useful for sorting and filtering service agreements.
-author: ShylaThompson
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

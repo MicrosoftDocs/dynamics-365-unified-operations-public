@@ -3,7 +3,7 @@
 
 title: Service objects overview
 description: Service objects are a customer’s assets and products for which you can perform a service.
-author: ShylaThompson
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 

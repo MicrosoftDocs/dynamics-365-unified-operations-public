@@ -3,7 +3,7 @@
 
 title: Template BOMs  
 description: A template bill of materials (BOM) provides a standardized list of components for service objects that are serviced regularly. 
-author: ShylaThompson
+author: kamaybac
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: 

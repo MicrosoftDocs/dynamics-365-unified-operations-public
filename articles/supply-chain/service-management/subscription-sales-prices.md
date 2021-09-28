@@ -3,7 +3,7 @@
 
 title: Subscription sales prices  
 description: When you create a subscription, the sales price is derived from the sales price setup that was created in the Sales price (subscription) form.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

@@ -21,7 +21,7 @@ ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: Release 10.0.8
+ms.dyn365.ops.version: 10.0.8
 ---
 
 # Work split

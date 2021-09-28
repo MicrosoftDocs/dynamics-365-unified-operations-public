@@ -3,7 +3,7 @@
 
 title: Create service objects 
 description: Service objects are a customer’s assets and products for which you can perform a service. 
-author: ShylaThompson
+author: kamaybac
 ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 

@@ -3,7 +3,7 @@
  
 title: Define coverage rules for items
 description: The demo data company used to create this procedure is USMF. 
-author: ShylaThompson
+author: ChristianRytt
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Define coverage rules for items
 
