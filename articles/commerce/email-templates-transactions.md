@@ -4,7 +4,7 @@
 title: Create email templates for transactional events 
 description: This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 09/28/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,12 +28,11 @@ ms.dyn365.ops.version: Release 10.0.8
 # Create email templates for transactional events
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce provides an out-of-box solution for sending emails that alert customers about transactional events (for example, when an order is placed, an order is ready for pickup, or an order has been shipped). This topic describes the steps for creating, uploading, and configuring the email templates that are used to send transactional emails.
-
-
 
 ## Notification types
 
@@ -128,8 +127,6 @@ This notification is triggered when an order is cancelled in headquarters.
 ### Customer created
 
 This notification is triggered when a new customer entity is created in headquarters. 
-
-
 
 ## Create an email template
 
