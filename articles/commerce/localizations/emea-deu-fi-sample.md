@@ -529,7 +529,7 @@ In the previous procedure, you enabled the extensions that are components of the
 
 Select the correct release branch version according to your SDK/application release. Detailed steps to clone can be in [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 
-2. Build the project **ScaleUnite.EFR** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\ScaleUnit**. This project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. CloudScaleUnitExtensionPackage.zip package can be uploaded to LCS and deployed to CSU.
+2. Build the project **ScaleUnit.EFR** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\ScaleUnit**. This project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. CloudScaleUnitExtensionPackage.zip package can be uploaded to LCS and deployed to CSU.
 
 Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the NuGet package manager in Visual Studio according to your SDK/application version.
 
