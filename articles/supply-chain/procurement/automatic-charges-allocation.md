@@ -32,6 +32,17 @@ Based on the customer that you're working with or the item that you're selling, 
 
 Automatic charges, or auto charges, are automatically applied when you create a sales order or a purchase order. You can define auto charges for specific vendors, customers, groups of vendors, or items. You can also define auto charges that apply to all vendors, customers, or items.
 
+## Set up parameters
+
+The **Procurement and sourcing parameters** page has a few settings that are especially relevant when you want to allocate charges automatically. Use the **Find auto charges for header** to specify whether charges should automatically be allocated for purchase order header and **Find auto charges for line** to specify whether charges should automatically be allocated for purchase order line.
+
+To complete this setup, follow these steps.
+1.	Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
+1.	On the **Prices** tab, set the following fields:
+    - **Find auto charges for header** – Set this field to *Yes*.
+    - **Find auto charges for line** – Set this field to *Yes*.
+
+
 ## Set up charges codes
 
 To allocate charges, you must first define charges codes.
