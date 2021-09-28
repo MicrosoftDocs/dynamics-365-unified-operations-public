@@ -284,6 +284,8 @@
         href: accounts-payable/broker-contract.md
       - name: Royalty contract management
         href: accounts-payable/royalty-contract.md
+      - name: Reference original invoices in credit notes (vendor invoices)
+        href: accounts-payable/gbl-original-invoice-numbers-credit-notes-ap.md
       - name: Payments and settlements
         items:
         - name: Centralized payments for Accounts payable
