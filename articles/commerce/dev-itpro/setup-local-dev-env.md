@@ -1,6 +1,6 @@
 ---
 title: Set up a local development environment
-description: This topic explains how to setup a local development environment for Microsoft Dynamics 365 Commerce Cloud scale unit (CSU) and POS development.
+description: This topic explains how to set up a local development environment for Microsoft Dynamics 365 Commerce Cloud scale unit (CSU) and Point of Sale (POS) development.
 author: mugunthanm
 ms.date: 09/16/2021
 ms.topic: article
@@ -18,210 +18,209 @@ ms.dyn365.ops.version: AX 10.0.22
 
 This topic explains how to set up a local development environment for Microsoft Dynamics 365 Commerce Cloud scale unit (CSU) and Point of Sale (POS) development. It applies to Dynamics 365 Commerce application version 10.0.22 and later.
 
-> [!NOTE]
-> The environment setup described in this topic is onl for extension development. It can't be used for testing, user acceptance testing (UAT), or production.
+> [!IMPORTANT]
+> The environment setup that is described in this topic can be used only for extension development. It can't be used for testing, user acceptance testing (UAT), or production.
 
-## Commerce supports different development environment types
+## Supported development environment types
 
-Cloud-based and local environments are supported:
+Commerce supports both cloud-based environments and local environments.
 
-+ Cloud-based: Deploy a cloud-based development environment using [Lifecycle Service (LCS)](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md)
-+ Local: There are two options to set up a development environment on your own machine:
++ **Cloud-based:** Deploy a cloud-based development environment by using [Microsoft Dynamics Lifecycle Service (LCS)](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
++ **Local:** You have two options for setting up a development environment on your own machine:
 
-    - **Self-hosted CSU** – This environment type deploys the CSU locally (self hosted-hosted as an executable). There is no IIS, no Commerce data sync, and no Headquarters (HQ) connectivity for real-time calls. With this option there will not be any data sync between the HQ and CSU channel databases. Channel databases will be populated with the default demo data for development purpose. All the requests and calls to HQ will be mocked by the local CSU. For example, a call to issue gift card will be mocked by the local CSU.
-    - **IIS-Hosted CSU** - This environment type deploys the CSU in IIS and sets up an async client to sync the data between the HQ and CSU channel databases. It also sets up real-time connection support with the HQ. This setup requires some additional configuration like AAD app setup and certificates deployment. For detailed step to install the IIS-Hosted CSU, see [Configure and install IIS-Hosted Commerce Scale Unit document.](retail-store-scale-unit-configuration-installation.md#configure-a-new-commerce-scale-unit)
+    - **Self-hosted CSU** – This environment type deploys the CSU locally (self-hosted as an executable file). There is no Internet Information Services (IIS), Commerce data synchronization, or Headquarters (HQ) connectivity for real-time calls. If you use this option, no data synchronization occurs between the HQ and CSU channel databases. Channel databases are filled with the default demo data for development purposes. All requests and calls to HQ, such as a call to issue a gift card, are mocked by the local CSU.
+    - **IIS-hosted CSU** – This environment type deploys the CSU in IIS and sets up an Async Client to sync the data between the HQ and CSU channel databases. It also sets up support for real-time connections with HQ. This setup requires some additional configuration. For example, Azure Active Directory (Azure AD) apps must be set up, and certificates must be deployed. For detailed information about how to install the IIS-hosted CSU, see [Configure and install IIS-Hosted Commerce Scale Unit document](retail-store-scale-unit-configuration-installation.md#configure-a-new-commerce-scale-unit).
 
 ## Local self-hosted CSU
 
-This is a very lightweight version of the scale unit. It provides a quick way to develop a wide spectrum of CRT/RTS extensions that require minimal or no dependencies on other systems and services.
+This version of the scale unit is very lightweight. It provides a quick way to develop a wide range of Commerce runtime (CRT)/RTS extensions that require minimal or no dependencies on other systems and services.
 
-Pros:
+**Pros:**
 
-- Doesn't require HQ.
-- Doesn't require IIS. Retail Server is hosted in a console app.
-- TLS configuration is not required.
-- RTS communication is mocked via a set of demo-mode CRT Handlers.
-- Async Client is not needed. The Channel database is automatically populated with a demo data.
-- Requires very few parameters to initiate the Scale Unit deployment so the required prerequisites are minimal. For example, no certificates have to be explicitly created and provided to the installer.
-- Provides very fast and easy introduction into CRT/Retail Server development and runtime capabilities.
+- HQ isn't required.
+- IIS isn't required. Retail Server is hosted in a console app.
+- Configuration of Transport Layer Security (TLS) isn't required.
+- RTS communication is mocked via a set of demo-mode CRT handlers.
+- Async Client isn't required. The channel database is automatically filled with a demo data.
+- Very few parameters are required to initiate the scale unit deployment. Therefore, the deployment prerequisites are minimal. For example, no certificates must be explicitly created and provided to the installer.
+- This version provides a very fast and easy introduction to CRT/Retail Server development and runtime capabilities.
 
-Cons:
+**Cons:**
 
-- Doesn't match the topology used in real production environments (no CPOS, no Async Client, no RTS calls, no HTTPS).
-- Real Time operations cannot be fully tested. They must be mocked.
+- This version doesn't match the topology that is used in real production environments, because there is no Cloud POS (CPOS), Async Client, or HTTPS, and there are no RTS calls.
+- Real-time operations can't be fully tested. They must be mocked.
 
-## Local IIS CSU
+## Local IIS-hosted CSU
 
-IIS mode is a complete on-prem Scale Unit with all the components matching real production deployments where nothing is mocked.
+IIS mode is a complete on-premises scale unit, where all the components match real production deployments, and nothing is mocked.
 
-Pros:
+**Pros:**
 
-- Represents fully capable on-prem Scale Unit hosting Retail Server in IIS.
-- Employs real (not mocked) RTS interaction with HQ.
-- Includes Async Client populating the Channel DB based on HQ DB data as regular Scale Unit does. Therefore, no demo data is involved.
+- This version represents a fully capable on-premises scale unit that hosts Retail Server in IIS.
+- It uses real (not mocked) RTS interaction with HQ.
+- It includes Async Client, which fills the channel database, based on data in the HQ database, just as a regular scale unit does. Therefore, no demo data is involved.
 
-Cons:
+**Cons:**
 
-- Requires additional steps for creating certificates and AAD registrations, and downloading the configuration file from HQ.
+- Additional steps are required to create certificates and Azure AD registrations, and to download the configuration file from HQ.
 
 ## Prerequisites for setting up the local development environment
 
-Before you set up the self-hosted or IIS environment, install these prerequisites, in this order:
+Before you set up the self-hosted or IIS-hosted environment, complete the following prerequisites in this order:
 
-1. Install .Net Core SDK 3.1 for Windows x64 from [Download .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1).
-2. Install any edition of [SQL server](/sql-server/sql-server-downloads) with full text search enabled. For more information, see [Add Features to an Instance of SQL Server (Setup)](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). The minimum supported version is 13.0.5026.0 SqlServer 2016 SP2.
+1. Install .NET Core SDK 3.1 for Windows x64 from [Download .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1).
+2. Install any edition of [SQL server](/sql-server/sql-server-downloads), and enable full text search. For more information, see [Add Features to an Instance of SQL Server (Setup)](/sql/database-engine/install-windows/add-features-to-an-instance-of-sql-server-setup). The minimum supported version is 13.0.5026.0 SqlServer 2016 SP2.
+
     + Enable Mixed (SQL + Windows/Integrated) authentication.
-    + If you don't have a default instance of SQL Server installed then the deployment of CSU will fail with an error indicating an instance could not be located. If you want to use a named instance instead then modify the file **Install.ps1** (You can find this script in Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Scripts folder) by inserting this line after line #78:
+    + If no default instance of SQL Server is installed, the deployment of CSU will fail. An error message will indicate that an instance could not be found. If you want to use a named instance instead, edit the **Install.ps1** file by inserting the following line after line 78. (You can find this script in **Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Scripts** folder.)
 
-    ```powershell
-    $installerArgs += $("--sqlservername", "PutYourSqlServerSeenInSSMSHere")
-    ```
+        ```powershell
+        $installerArgs += $("--sqlservername", "PutYourSqlServerSeenInSSMSHere")
+        ```
 
-    Substitute **PutYourSqlServerSeenInSSMSHere** with your SQL Server name.
+        (When you insert this line, substitute **PutYourSqlServerSeenInSSMSHere** with your SQL Server name.)
 
-3. Installed NuGet.exe from [Download latest version NuGet.exe](https://www.nuget.org/downloads). Copy it to some location and then add update the PATH environment variable to point to the folder.
-4. If msbuild is not installed then install the Visual Studio tools from [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/). Expand the section **Tools for Visual Studio**. Download and run **Build Tools for Visual Studio**. Do not specify any components. Select **Install** for the default installation.
+3. Install NuGet.exe from [Available NuGet Distribution Versions](https://www.nuget.org/downloads). Copy it to some location, and then add update the **PATH** environment variable so that it points to that location.
+4. If MSBuild isn't installed, install the Visual Studio tools from [Download Visual Studio Tools](https://visualstudio.microsoft.com/downloads/). Expand the **Tools for Visual Studio** section, and download and run **Build Tools for Visual Studio**. Don't specify any components. Select **Install** for the default installation.
 
-    After it is installed, open a command prompt and run the command `where msbuild`. If msbuild is not found, run the command from within **Developer Command Prompt for VS**.
+    + After Visual Studio tools are installed, open a Command Prompt window, and run the command `where msbuild`. If msbuild.exe isn't found, run the command from Visual Studio Developer Command Prompt.
+    + After you find msbuild.exe, make sure that the **PATH** environment variable points to the folder that contains "msbuild" at the beginning of the path. The path should contain a version of msbuild.exe that is at least version 15. To determine the version number, run the command `msbuild /version`.
+    + To verify that the **PATH** variable is set correctly, run the command `msbuild/version` from a regular command prompt. Don't use Developer Command Prompt. The command should print a version number of at least 15. After you've finished setting up MSBuild, restart Visual Studio Code.
 
-    After you locate msbuild.exe, make sure that the PATH environment variable contains a path to the folder containing msbuild at the beginning of the path. The path should contain an msbuild.exe of at least version 15. To check the version, run the command `msbuild /version`.
-
-    To verify that the PATH variable is set correctly, run the command `msbuild/version` from within a plain command prompt. Don't use the Developer Command Prompt. It should print at least version 15. After you finish setting up msbuild, restart Visual Studio Code.
-
-5. Install the Microsoft.NET.Sdk using the previously downloaded **Tools for Visual Studio** to install the SDK by navigating to **Individual components**. Enter **.NET SDK** and check the checkbox for .NET SDK. Select **Install**.
-6. Install 64 bit Node.JS from [Download and Install Node](https://nodejs.org/en/download/) and make sure that PATH environment variable contains its location. If you are prompted, check the checkbox **Automatically install the necessary tools**.
-7. Install 64-bit version of Visual Studio Code for Windows from [Download Visual Studio Code](https://code.visualstudio.com/download).
-8. Install the C# for Visual Studio Code (powered by OmniSharp) extension for Visual Studio Code by following the [Install the extension VS document]( Managing Extensions in Visual Studio Code)
-9. Clone or download the [Scale Unit GitHub repo](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit).
-10. Navigate to the [Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary) and select the section **Retail Self-service package**. Find the file ending with **Commerce Scale Unit (PREVIEW)**. Make sure to select there the version for the release you need, for example 10.0.22 or 10.0.23. Download the file and put it in your download folder. You can find the download folder in scale unit GitHub repo you cloned or downloaded in the previous step (Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Download/).
+5. Install Microsoft.NET.Sdk by using the previously downloaded Visual Studio tools. Go to **Individual components**, enter **.NET SDK**, select the checkbox for the .NET SDK, and then select **Install**.
+6. Install the 64-bit version of Node.JS from [Download and Install Node](https://nodejs.org/en/download/). Make sure that the **PATH** environment variable point to the location. If you're prompted, select the **Automatically install the necessary tools** checkbox.
+7. Install the 64-bit version of Visual Studio Code for Windows from [Download Visual Studio Code](https://code.visualstudio.com/download).
+8. Install the C# for Visual Studio Code (powered by OmniSharp) extension for Visual Studio Code by following the [Install the extension VS document](Managing Extensions in Visual Studio Code).
+9. Clone or download the [Scale Unit GitHub repository (repo)](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit).
+10. In LCS, go to the [Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary), select **Retail Self-service package** as the asset type, and find the file that ends with **Commerce Scale Unit (PREVIEW)**. Be sure to select the version for the release that you require (for example, version 10.0.22 or 10.0.23). Download the file, and put it in the **Download** folder in the Scale Unit GitHub repo that you cloned or downloaded in the previous step (**Dynamics365Commerce.ScaleUnit/src/ScaleUnitSample/Download/**).
 
 ## Additional prerequisites for IIS-hosted CSU
 
-Prerequisites:
-
-+ IIS with several features turned on, the installer will report any required but not yet enabled features.
-+ Transport Layer Security (TLS) 1.2 should be enabled in the system (not TLS 1.0/1.1). You can leave this prerequisite check to the installer. The installer will print out actionable instructions if your machine needs changes for TSL 1.2.
++ IIS is required, and several features must be turned on. The installer will report any features that are required but that aren't yet enabled.
++ TLS 1.2 should be enabled in the system. (You should not use TLS 1.0 or 1.1.) You can let the installer check for this prerequisite. If your machine requires changes for TSL 1.2, the installer will show actionable instructions.
 + You can proactively configure strong cryptography for TLS by making the following changes in the **.vscode/tasks.json** file:
 
-    - **baseProduct_Port** - You can keep the default port 446 or change it to any value you want. If you specify the port used by another application then the Base Installer deployment will detect that and ask you to provide another port.
-    - **baseProduct_SslCertFullPath** - This path should point to the SSL certificate used by CSU Web Site to be capable of HTTPS communication. For this non-production setup the certificate can be a Self-Signed one and it must be stored in LocalMachine/Personal certificate store. Generate the certificate by following these steps:
+    - **baseProduct\_Port** – You can keep the default port (446), or you can change it to any value that you want. If the port that you specify is used by another application, the base installer deployment will prompt you to specify a different port.
+    - **baseProduct\_SslCertFullPath** – This path should point to the Secure Sockets Layer (SSL) certificate that the CSU website uses for HTTPS communication. For this non-production setup, the certificate can be self-signed. It must be stored in the **LocalMachine/Personal** certificate store. To generate the certificate, follow these steps:
 
-        1. Open IIS and double-click the icon for your machine name.
-        2. Double-click **Server Certificates** icon.
-        3. On right-hand side click the link **Create Self-Signed Certificate**.
-        4. A popup asks you to provide a friendly name of the certificate. Specify there Fully Qualified Domain Name (FQDN) of your machine which includes the machine name itself as well as a domain if it is joined into one. You can find out FQDN by executing the Powershell command `[System.Net.Dns]::GetHostEntry("")`. The FQDN can also be retrieved from the System widget of the Windows Control Panel, look in the field Full computer name.
-        5. Keep the default value for the certificate store - **Personal**.
-        6. After you select **OK**, find the new certificate in the list and double-click it.
-        7. Select the **Details** tab and locate a **Thumbprint**.
-        8. Copy and paste the thumbprint into a text editor. Convert it to uppercase and specify it at the end of the predefined template for the option **baseProduct_SslCertFullPath** so that it looks like: `store:///My/LocalMachine?FindByThumbprint=YourThumbprintGoesHere`.
+        1. Open IIS, and double-tap (or double-click) the icon for your machine name.
+        2. Double-tap (or double-click) **Server Certificates**.
+        3. On the right, select **Create Self-Signed Certificate**.
+        4. When you're prompted to provide a friendly name for the certificate, specify the fully qualified domain name (FQDN) of your machine. The FQDN includes the machine name itself and a domain, if the machine is joined to a domain. You can find the FQDN by running the Windows PowerShell command `[System.Net.Dns]::GetHostEntry("")`. You can also get the FQDN from **Full computer name** field in the **System** control panel item in Windows.
+        5. Keep the default value for the certificate store (**Personal**).
+        6. Select **OK**.
+        7. Find the new certificate in the list, and double-tap (or double-click) it.
+        8. On the **Details** tab, find the **Thumbprint** value.
+        9. Copy and paste the thumbprint into a text editor, and convert all the letters to uppercase. Then add the converted value to the end of the predefined template for the **baseProduct\_SslCertFullPath** option, so that the template resembles `store:///My/LocalMachine?FindByThumbprint=YourThumbprintGoesHere`.
 
         > [!NOTE]
-        > The base installer requires 2 more certificates, so there are 3 certificates in total. For all production deployments 3 different certificates should be created for security reasons. For this development setup you may decide to save time and use the same certificate for all 3 configuration options if this is not against your policies. In this case you can provide the same thumbprint in the 2 options described below.
+        > The base installer requires two more certificates, for a total of three. For all production deployments, three different certificates should be created for security reasons. However, for this development setup, you can save time by using the same certificate for all three configuration options, unless this approach violates your policies. In this case, you can provide the same thumbprint for the next two parameters.
 
-    - **baseProduct_RetailServerCertFullPath** - Update this parameter with the thumbprint of the certificate that you create. This certificate is used to represent Retail Server's identity. The identity is used, for example, when CSU issues security tokens for POS scenarios. To create this certificate, follow the same process as for the above SSL certificate but specify any FriendlyName you want, for example, RsTestIdentity. You will need this certificate later when you set up the AAD application.
-    - **baseProduct_AsyncClientCertFullPath** - This certificate is used by Async Client when it acquires a security token from AAD for communicating with HQ. Follow the same process above to create the certificate. Again, you can name it anything you want, for example, AsyncClientTestIdentity.
-    - **baseProduct_RetailServerAadClientId** - This value is the AAD Application Client ID that represents the Retail Server's identity. It is used, for example, when CSU issues security tokens for POS scenarios. Follow step #3 in [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application) to create the application and retrieve its Application (client) ID.
-    - **baseProduct_RetailServerAadResourceId** - This value is the resource ID of the above registered AAD application. Use the value described as Application ID URI in  step #3c [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application) .
-    - **baseProduct_CposAadClientId** - This value is AAD Application Client ID representing your Cloud POS. Follow the step #4 in [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application) to create the application and retrieve its Application (client) ID. This completes the CSU/CPOS setup in AAD. Follow the step #6 from [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application) to complete required setup in HQ.
-    - **baseProduct_AsyncClientAadClientId** - This value is the AAD Application Client ID used by Async Client when it needs to authenticate with HQ. To create this application register one more AAD application by following steps 3a-3b in [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application). To register only the created application with HQ, follow step #2 from [here](https://community.dynamics.com/ax/b/axforretail/posts/service-to-service-authentication-in-ax7).
-    - **baseProduct_Config** - Specify only the file name, not the full path, corresponding to the Channel Database Configuration downloadable from HQ as described in the step #4 of the task [Download the CSU installer](retail-store-scale-unit-configuration-installation.md#download-the-commerce-scale-unit-installer). After you download the file from HQ, put it in the [Download](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-ScaleUnit?path=/src/ScaleUnitSample/Download&version=GC0acfab2d3d7cbd734ea5b19f2b2ac6713d7391ef) folder.
-    - **baseProduct_UseSelfHost** - Set this value to **false**.
+    - **baseProduct\_RetailServerCertFullPath** – Update this parameter with the thumbprint of the certificate that you create. This certificate represents Retail Server's identity. The identity is used, for example, when CSU issues security tokens for POS scenarios. To create this certificate, follow the same procedure that you used for the SSL certificate, but specify any friendly name that you want (for example, **RsTestIdentity**). You will need this certificate later, when you set up the Azure AD application.
+    - **baseProduct\_AsyncClientCertFullPath** – Async Client uses this certificate when it acquires a security token from Azure AD for communication with HQ. To create this certificate, follow the same procedure that you used for the SSL certificate, but specify any friendly name that you want (for example, **AsyncClientTestIdentity**).
+    - **baseProduct\_RetailServerAadClientId** – The value is the Azure AD application client ID that represents the Retail Server's identity. It's used, for example, when CSU issues security tokens for POS scenarios. To create the application and retrieve its application (client) ID, follow step 3 in [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application).
+    - **baseProduct\_RetailServerAadResourceId** – The value is the resource ID of the registered Azure AD application. Use the value that is described as the "application ID URI" in step 3c in [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application).
+    - **baseProduct\_CposAadClientId** – The value is the Azure AD application client ID that represents CPOS. To create the application and retrieve its application (client) ID, follow step 4 in [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application). This step completes the CSU/CPOS setup in Azure AD. To complete the required setup in HQ, follow step 6 in [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application).
+    - **baseProduct\_AsyncClientAadClientId** – The value is the Azure AD application client ID that Async Client uses when it must authenticate with HQ. To create this application, register one more Azure AD application by following steps 3a through 3b in [How to configure CPOS to use your own Azure AD application](https://community.dynamics.com/ax/b/axforretail/posts/how-to-point-cpos-to-use-your-own-azure-ad-application). To register only the created application with HQ, follow step 2 in [Service to Service authentication in AX7](https://community.dynamics.com/ax/b/axforretail/posts/service-to-service-authentication-in-ax7).
+    - **baseProduct\_Config** – Specify only the file name, not the full path, that corresponds to the channel database configuration that can be downloaded from HQ as described in step 4 in [Download the CSU installer](retail-store-scale-unit-configuration-installation.md#download-the-commerce-scale-unit-installer). After you download the file from HQ, put it in the [Download](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-ScaleUnit?path=/src/ScaleUnitSample/Download&version=GC0acfab2d3d7cbd734ea5b19f2b2ac6713d7391ef) folder.
+    - **baseProduct\_UseSelfHost** – Set this value to **false**.
 
-## Debug an extension using the self-hosted CSU
+## Debug an extension by using the self-hosted CSU
 
-1. Launch Visual Studio Code as administrator and open the `src\ScaleUnitSample` folder. You can find the `ScaleUnitSample` in scale unit GitHub repo you cloned or downloaded earlier.
-2. Open the file `.vscode/tasks.json`, and set `baseProduct_UseSelfHost`  to `true`.
-3. Select **Terminal**, **Run Task**, and **build-extension**.
+1. Open Visual Studio Code as an administrator.
+2. In the Scale Unit GitHub repo that you cloned or downloaded earlier, open the **src\\ScaleUnitSample** folder.
+2. Open the **.vscode/tasks.json** file, and set **baseProduct\_UseSelfHost** to **true**.
+3. On the **Terminal** menu, select **Run Task**, and enter **build-extension**.
 
-    If there is an error that the running scripts is disabled on this system, then open a command prompt as administrator and execute `powershell Set-ExecutionPolicy RemoteSigned`. Restart Visual Studio Code. Do not change the ExecutionPolicy on production machines unless you understand the implications of changing security policies.
+    If you receive an error message that states that the running script is disabled on this system, open a Command Prompt window as an administrator, and run `powershell Set-ExecutionPolicy RemoteSigned`. Then close and reopen Visual Studio Code. Don't change the execution policy on production machines unless you understand the implications of changing security policies.
 
-4. Put a break point in your extension method and click F5 to debug the extension.
+4. Put a break point in your extension method, and select the **F5** key to debug the extension.
 
-After you click F5, the following are done automatically (supported in Visual Studio Code only):
+After you select **F5**, the following actions are automatically performed. (These actions are supported in Visual Studio Code only.)
 
-- The Scale Unit Sample code is compiled. The compilation results in a package that contains the Sealed CSU Extension installer.
-- The Base Sealed Scale Unit installer is deployed if it was not yet deployed.
-- The package containing demo data is downloaded from the SDK's feed and then applied to the Channel database.
+- The scale unit sample code is compiled. The compilation produces a package that contains the Sealed CSU Extension installer.
+- The Base Sealed Scale Unit installer is deployed if it wasn't already deployed.
+- The package that contains demo data is downloaded from the SDK's feed and applied to the channel database.
 - The Sealed Scale Unit Extension installer is deployed.
-- A web browser page with a result of a call to CSU's health-check endpoint is displayed.
-- The debugger is attached to the process hosting the CSU and the CSU is ready to serve incoming requests at the Url http://localhost:12345.
+- A web browser window is opened that shows the results of a call to CSU's health check endpoint.
+- The debugger is attached to the process that is hosting the CSU, and the CSU is ready to serve incoming requests at the URL `http://localhost:12345`.
 
-While the local scale unit is serving the requests, use the **DEBUG CONSOLE** to watch the scale unit's internal diagnostics logging in real-time. The log can be helpful when you are debugging.
+While the local scale unit is serving the requests, use the Debug Console to watch logging of the scale unit's internal diagnostics in real time. The log can be helpful when you're debugging.
 
-## Debug an extension using the IIS-Hosted CSU
+## Debug an extension by using the IIS-hosted CSU
 
-1. In Visual Studio Code click **Run and Debug** (Ctrl+Shift+D). A drop down menu with a green arrow will be displayed under the top navigation bar. Select **Debug with IIS**.
-2. Click F5. Like debugging in self-hosted CSU mode, the base installer is deployed first and then the extension installer is deployed.
-3. The base installer performs prerequisite checks and reports any actions required. The prerequisites include SQL Server, IIS, TLS, and .Net Core Hosting Bundle.
-4. After the base and extension packages are deployed, Visual Studio Code opens a browser window with the results of a call to health-check. It also displays a dialog asking to attach a debugger. Attaching is optional. If you want to attach, then type **w3wp** in the list of processes and select the row that contains **RssuCore**. **RssuCore** is the name of the IIS Application Pool used to run the CSU web site.
+1. In Visual Studio Code, select **Run and Debug** (or select **Ctrl+Shift+D**). A drop-down menu that has a green arrow appears under the top navigation bar. Select **Debug with IIS**.
+2. Select the **F5** key. As when you debug in self-hosted CSU mode, the base installer is deployed first. Then the extension installer is deployed.
+3. The base installer performs prerequisite checks and reports any actions that are required. The prerequisites include SQL Server, IIS, TLS, and .Net Core Hosting Bundle.
+4. After the base and extension packages are deployed, Visual Studio Code opens a web browser window that shows the results of a call to health check. Visual Studio Code also opens a dialog box that prompts you to attach a debugger. This step is optional. If you want to attach a debugger, enter **w3wp** in the list of processes, and select the row that contains **RssuCore**. RssuCore is the name of the IIS application pool that is used to run the CSU website.
 
-    You now have a fully functional On-Prem deployed Scale Unit that includes:
+You now have a fully functional on-premises deployed scale unit that includes the following elements:
 
-    - Channel database
-    - Async Client
-    - ASP.NET  Core 3.1 based Retail Server capable of interacting with HQ via RTS
-    - Cloud POS
+- Channel database
+- Async Client
+- ASP.NET Core 3.1–based Retail Server that can interact with HQ via RTS
+- CPOS
 
-You can find URLs corresponding to the just deployed CPOS and CSU if you review the base installer's log towards the end when CSU and CPOS are health-checked. To populate the Channel database with data from HQ, execute step #28 from [Configure a new Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#configure-a-new-commerce-scale-unit) (assuming you have already performed previous steps described in that document).
+To find URLs that correspond to the CPOS and CSU that you just deployed, review the base installer's log. The URLs appear near the end of the log, where CSU and CPOS are health-checked. To fill in the channel database with data from HQ, follow step 28 in [Configure a new Commerce Scale Unit](retail-store-scale-unit-configuration-installation.md#configure-a-new-commerce-scale-unit). (You must have already completed the previous steps in that document.)
 
-## Switching from IIS mode to Self-Hosted mode
+## Switching from IIS mode to self-hosted mode
 
-If you switch between IIS and self-hosted modes make sure run the following steps. (If this is your first run, you can skip them because those settings are default ones.)
+If you switch between IIS and self-hosted modes, be sure to follow these steps. (If this is your first run, you can skip these steps, because the values that are described here are the default values.)
 
-- In Visual Studio Code click **Run and Debug** (Ctrl+Shift+D). A drop down menu with a green arrow will be displayed under the top navigation bar. Select **Debug with Self-Host**.
-- Open the file `.vscode/tasks.json` and make sure that `baseProduct_UseSelfHost` is set to `false`.
+- In Visual Studio Code, select **Run and Debug** (or select **Ctrl+Shift+D**). A drop-down menu that has a green arrow appears under the top navigation bar. Select **Debug with Self-Host**.
+- Open the **.vscode/tasks.json** file, and make sure that **baseProduct\_UseSelfHost** is set to **false**.
 
-After you click F5, the following are done automatically (supported in Visual Studio Code only):
+After you select **F5**, the following actions are automatically performed. (These actions are supported in Visual Studio Code only.)
 
-- The Scale Unit Sample code is compiled. The compilation results in a package that contains the Sealed CSU Extension installer.
-- The Base Sealed Scale Unit installer is deployed if it was not yet deployed.
-- The package containing demo data is downloaded from the SDK's feed and then applied to the Channel database.
+- The scale unit sample code is compiled. The compilation produces a package that contains the Sealed CSU Extension installer.
+- The Base Sealed Scale Unit installer is deployed if it wasn't already deployed.
+- The package that contains demo data is downloaded from the SDK's feed and applied to the channel database.
 - The Sealed Scale Unit Extension installer is deployed.
-- A web browser page with a result of a call to CSU's health-check endpoint is displayed.
-- The debugger is attached to the process hosting the CSU and the CSU is ready to serve incoming requests at the Url http://localhost:12345.
+- A web browser window is opened that shows the results of a call to CSU's health check endpoint.
+- The debugger is attached to the process that is hosting the CSU, and the CSU is ready to serve incoming requests at the URL `http://localhost:12345`.
 
-While the local scale unit is serving the requests, use the **DEBUG CONSOLE** to watch the scale unit's internal diagnostics logging in real-time. The log can be helpful when you are debugging.
+While the local scale unit is serving the requests, use the Debug Console to watch logging of the scale unit's internal diagnostics in real time. The log can be helpful when you're debugging.
 
 ## Deploy the extension package to production
 
-If the build finishes without errors, you can use the outputs to deploy your extensions:
+If the build is completed without errors, you can use the outputs to deploy your extensions:
 
-- **Cloud Scale Unit extension package** - This page is in the `ScaleUnit\bin\Debug\netstandard2.0` folder and is used for Cloud deployments.
-- **Scale Unit extension installer** - This installeder is in the `Installer\bin\Debug\net461`folder and is used for on-prem (in-store) installations.
+- **Cloud Scale Unit extension package** – This package is in the **ScaleUnit\\bin\\Debug\\netstandard2.0** folder and is used for Cloud deployments.
+- **Scale Unit extension installer** – This installer is in the **Installer\\bin\\Debug\\net461** folder and is used for on-premises (in-store) installations.
 
-You should setup up a build pipeline to generate the package and then deploy it. For more information, [Set up a build pipeline for the independent-packaging SDK](build-pipeline.md) and [Deploy the package to CSU](retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
+You should set up a build pipeline to generate the package and then deploy it. For more information, see [Set up a build pipeline for the independent-packaging SDK](build-pipeline.md) and [Deploy the package to CSU](retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
 
 ### Troubleshooting
 
-To troubleshoot deployment problems, review the verbose set of logs and associated messages in the **TERMINAL** tab of Visual Studio Code. If you cannot figure out what is wrong on your own, then contact Microsoft to get help and provide:
+To troubleshoot deployment issues, review the verbose set of logs and associated messages on the **Terminal** tab of Visual Studio Code. If you can't determine what is wrong on your own, contact Microsoft for help. When you contact Microsoft, provide the following data:
 
-- A verbose description of the actions performed.
-- The log file referenced at the very beginning and the very end of the Base Product's deployment process output.
-- Visual Studio Code Terminal's output including warnings/errors.
+- A verbose description of the actions that were performed
+- The log file that is referenced at the very beginning and the very end of the output for the Base Product's deployment process
+- The output of the Visual Studio Code terminal, including warnings and errors
 
-Runtime logs corresponding to Retail Server and Async Client (in case of IIS host) can be found in the Event Viewer under **Windows Logs, Application**. Filter the log by these sources:
+You can find runtime logs that correspond to Retail Server and Async Client (in the case of an IIS host) in Event Viewer, under **Windows Logs \> Application**. Filter the log by the following sources:
 
 - Microsoft Dynamics - Async Client Service
 - Microsoft Dynamics - Retail Server
 
-Self-hosted CSU will also print runtime logs directly to the  Visual Studio Code Terminal.
+Self-hosted CSU will also print runtime logs directly to the Visual Studio Code terminal.
 
-## Out Of the Box Tasks in  Visual Studio Code
+## Out-of-box tasks in Visual Studio Code
 
-A set of tasks is available when using Visual Studio Code's **Terminal->Run Task**:
+The following set of tasks is available when you select the **Run Task** command on the **Terminal** menu in Visual Studio Code:
 
-- **build-extension** - builds an extension.
-- **check-msbuild** - reveals msbuild's version available for Visual Studio Code.
-- **check-ps-bitness** - checks if the PowerShell available for Visual Studio Code is the required 64 bit version.
-- **clean-extension** - cleans build output generated while the extension was built.
-- **install** - verifies all development-time prerequisites and then performs all required actions for the selected mode (Self-hosted or IIS) to deploy the Scale Unit are ready for a debug session. This task includes installation of the Base Scale Unit as well as Extension Installer.
-- **uninstall** - uninstall an extension and Base Scale Unit.
-- **uninstall-base-product** - uninstalls the Base Scale Unit. Fails if it detects an installed extension.
-- **uninstall-extension** - uninstalls an extension.
+- **build-extension** – Build an extension.
+- **check-msbuild** – Show the version of MSBuild that is available for Visual Studio Code.
+- **check-ps-bitness** – Determine whether the version of Windows PowerShell that is available for Visual Studio Code is the required 64-bit version.
+- **clean-extension** – Clean the build output that was generated while the extension was built.
+- **install** – Verify all development-time prerequisites, and then perform all required actions for the selected mode (Self-hosted or IIS) to deploy the scale unit are ready for a debug session. This task includes installation of the Base Scale Unit and Extension installer.
+- **uninstall** – Uninstall an extension and the Base Scale Unit.
+- **uninstall-base-product** – Uninstall the Base Scale Unit. This task fails if it detects an installed extension.
+- **uninstall-extension** – Uninstall an extension.
 
 ### Support
 
-If the setup doesn't work as expected or you need help, reach out via:
+If the setup doesn't work as expected, or if you need help, use the following links to get support:
 
 + [microsoft/Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/issues)
 + [Dynamics 365 Commerce Forum](https://community.dynamics.com/365/commerce/f/dynamics-365-commerce-forum)
