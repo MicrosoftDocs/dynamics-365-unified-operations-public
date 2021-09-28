@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.7
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This sample fiscal integration functionality replaces the earlier [Sample for POS integration with control units for Sweden](retail-sdk-control-unit-sample.md). The earlier sample doesn't take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will become obsolete in later updates. For information about how to migrate from the earlier sample to the current sample, see the [Migrating from the earlier integration sample](#migrating-from-the-earlier-integration-sample) section.
+> This sample fiscal integration functionality replaces the earlier [Sample for POS integration with control units for Sweden](retail-sdk-control-unit-sample.md). The earlier sample doesn't take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will become obsolete in later updates. For information about how to migrate from the earlier sample to the sample that corresponds with Dynamics 365 Commerce **10.0.22 and earlier** version, see the [Migrating from the earlier integration sample](#migrating-from-the-earlier-integration-sample) section.
 
 ## Introduction
 
