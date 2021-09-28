@@ -1574,10 +1574,6 @@
               href: localizations/emea-multiple-vat-registration-numbers.md
             - name: Reporting for multiple VAT registrations
               href: localizations/emea-reporting-for-multiple-vat-registrations.md
-            - name: Austria reporting 
-              items: 
-              - name: VAT declaration
-                href: localizations/emea-aut-vat-declaration-austria.md
             - name: France reporting
               items: 
               - name: VAT declaration
@@ -1644,8 +1640,6 @@
           href: localizations/emea-aut-intrastat.md
         - name: Purchase duties
           href: localizations/emea-aut-purchase-duties.md
-        - name: VAT declaration
-          href: localizations/emea-aut-vat-declaration-austria.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
