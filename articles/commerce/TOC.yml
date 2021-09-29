@@ -2331,7 +2331,11 @@
     - name: Extensibility
       items: 
       - name: Commerce development and extensibility
-        href: dev-itpro/dev-retail-home-page.md
+        items:
+          - name: Commerce for IT pros and developers
+            href: dev-itpro/dev-retail-home-page.md
+          - name: Set up a local development environment
+            href: dev-itpro/setup-local-dev-env.md
       - name: Online channel extensibility
         items:
         - name: Online channel extensibility overview
