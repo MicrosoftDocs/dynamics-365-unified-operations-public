@@ -3,7 +3,7 @@
 
 title: Create service agreements
 description: This topic describes how to use features in the Service management and the Project management and accounting modules to create service agreements.
-author: ShylaThompson
+author: kamaybac
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 

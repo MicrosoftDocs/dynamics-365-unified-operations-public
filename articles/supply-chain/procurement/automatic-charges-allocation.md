@@ -3,7 +3,7 @@
 
 title: Automatic allocation of charges
 description: The charges feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically allocate charges to purchase orders or sales orders.
-author: dasani-madipalli
+author: Henrikan
 ms.date: 10/01/2020
 ms.topic: article
 ms.prod: 
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
 
 # Automatic allocation of charges

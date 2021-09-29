@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan
 ms.search.validFrom: 2020-10-16
-ms.dyn365.ops.version: Release 10.0.14
+ms.dyn365.ops.version: 10.0.14
 ---
 
 # Transportation management modes and methods

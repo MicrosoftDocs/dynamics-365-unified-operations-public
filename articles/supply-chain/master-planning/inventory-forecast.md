@@ -1,7 +1,7 @@
 ---
 title: Inventory forecasts
 description: This topic describes the supply and demand forecast functionality that can be used to create inventory forecasts in Microsoft Dynamics 365 Supply Chain Management.
-author: crytt
+author: ChristianRytt
 ms.date: 06/08/2021
 ms.topic: article
 ms.search.form: EcoResProductDetailsExtended, ForecastSales, ForecastPurch, ForecastInvent

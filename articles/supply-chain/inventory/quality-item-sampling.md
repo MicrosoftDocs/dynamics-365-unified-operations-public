@@ -3,7 +3,7 @@
  
 title: Quality management item sampling
 description: This topic describes how to set up item sampling.
-author: rachel-profitt
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process 
 ms.prod: 
@@ -19,12 +19,14 @@ ms.reviewer: kamaybac
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: raprofit
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Quality management item sampling
+
+[!include [banner](../includes/banner.md)]
 
 Item sampling is used as part of a quality association. It defines the amount of current physical inventory that must be inspected. Sampling can be based on fixed quantities, a percentage, or a full license plate.
 

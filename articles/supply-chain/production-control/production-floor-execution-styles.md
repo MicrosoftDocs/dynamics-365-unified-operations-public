@@ -16,7 +16,7 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
 
 # Style the production floor execution interface
