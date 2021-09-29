@@ -170,6 +170,21 @@ Starting with the Retail 8.1.1 release, we have added the capability to set up d
 > [!NOTE]
 > The capability to set up promotions based on dimensions is not supported for price adjustments. The specific interface for defining the dimensions are removed in Retail versions 10.0.4 and later.
 
+## Improved discount computation
+
+The ability to find and compute applicable discounts in a performant manner is a critical factor to the retailer's overall business efficiency. Starting **10.0.23** release, Commerce pricing engine introduces a feature to achieve faster discount lookup and computation at runtime by leveraging flattened data schema. With this feature, discount data configured in Commerce headquarters is de-normalized before sent to channel databases. And the publishing of flattened discount data is triggered automatically when a discount is enabled.
+
+To enable the improved discount computation feature, please follow the steps below.
+
+1. In Commerce headquarters, go to **Retail and Commerce** > **Pricing and discounts** section.
+1. Click **Process commerce discounts**, and in the prompted dialog, schedule the batch job to run on a recurrent basis.
+1. Navigate to the **Feature management** workspace.
+1. Search and enable a feature named **Improve discount computation performance by using flattened discount tables**.
+1. Run **1020** (**Prices and discounts**) and **1070** (**Channel configuration**) distribution schedule jobs.
+
+> [!NOTE]
+> Please ensure you test this feature extensively before enabling it on production environments, especially when you have customizations in Commerce pricing engine.
+
 ## Best practices
 
 - Before you create discounts, document your discounting strategy and procedure. Keep your documentation up to date as your use of the product evolves.
