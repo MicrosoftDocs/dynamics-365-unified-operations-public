@@ -39,7 +39,7 @@ In some cases, a journal can't be posted, and the following message is shown: "T
 
 During posting to General ledger, every voucher must be balanced in the transaction currency, accounting currency, and reporting currency, if those currencies are defined on the **Ledger setup** page. (Vouchers are balanced when the total debits equal the total credits.)
 
-At the bottom of the journal lines page, totals are shown in the accounting currency and reporting currency. They are **not** shown in the transaction currency for foreign currency transactions. Additionally, the error message that users receive during simulation or posting shows the differences only in the accounting currency and reporting currency. It doesn't show them in the transaction currency, because a single voucher can have more than one transaction currency, and the journal can include vouchers in different transaction currencies. Therefore, it's important that you verify that the transaction currency amounts for every voucher are balanced.
+At the bottom of the journal lines page, totals are shown in the accounting currency and reporting currency. They are **not** shown in the transaction currency for foreign currency transactions. Additionally, the error message that users receive during simulation or posting shows the differences only in the accounting currency and reporting currency. It doesn't show them in the transaction currency, because a single voucher can have more than one transaction currency, and the journal can include vouchers in different transaction currencies. Therefore, it's important that you verify that the transaction currency amounts for every voucher that has only one transaction currency are balanced.
 
 ### Transaction currency
 
@@ -64,3 +64,20 @@ If the voucher has more than one transaction currency, each line of the voucher 
 If all the lines of a voucher have the same transaction currency, and if the transaction currency amounts are balanced, the system verifies that the reporting currency amounts are balanced. If the voucher is entered in a foreign currency, the exchange rate on the voucher lines is used to translate the transaction currency amounts to the reporting currency. First, each line of the voucher is translated. Then the lines are summed to determine the total debits and total credits. Because each line is translated, the total debits and total credits might not be balanced. Nevertheless, if the difference is within the **Maximum penny-rounding in the reporting currency** value that is defined on the **General ledger parameters** page, the voucher will be posted, and the difference will automatically be posted to the Penny difference account.
 
 If the voucher has more than one transaction currency, each line of the voucher is translated to the reporting currency, and then the lines summed to determine the total debits and total credits. To be considered balanced, the debits and credits must be balanced, and there must be no penny rounding difference.
+
+### Example for accounting currency imbalance
+
+> [!NOTE]
+> The reporting currency is calculated in the same way as the acccounting currency.
+
+Exchange rate: 1.5
+
+|Line|Voucher|Account|Debit (Transaction)|Credit (Transaction)|Debit (Accounting)|Credit (Accounting)|
+|--------|--------|--------|--------|---------|---------|---------|
+|1|001|1101-01|3.33||5.00 (4.995)||
+|2|001|1101-02|3.33||5.00 (4.995)||
+|3|001|1101-03|3.34||5.01||
+|4|001|4101-||10.00||15.00|
+|**Total**|||10.00|10.00|**15.01**|15.00|
+
+The accounting currency is out-of-balance by 0.01, but as long as the accounting currency penny difference is 0.01 or greater, this voucher is balanecd and will post successfully.
