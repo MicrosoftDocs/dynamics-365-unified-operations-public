@@ -71,15 +71,15 @@ With [Continuous service updates](on-prem-version-update-policy.md#continuous-se
 | Product | Deployment options | Application version | Platform release | Release or expiration dates|
 |--------|--------|----|----|--------|
 | ... |
-| Finance + Operations | Base deployment + Service update | 10.0.26 | Platform updates for 10.0.26 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.25 | Platform updates for 10.0.25 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.24 | Platform updates for 10.0.24 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Base deployment + Service update | 10.0.23 | Platform updates for 10.0.23 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.22 | Platform updates for 10.0.22 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Base deployment + Service update | 10.0.21 | Platform updates for 10.0.21 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Base deployment + Service update | 10.0.20 | Platform updates for 10.0.20 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
-| Finance + Operations | Service update | 10.0.19 | Platform updates for 10.0.19 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
-| Finance + Operations | Service update | 10.0.18* | Platform updates for 10.0.18 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Base deployment + Service update | 10.0.26 | Platform updates for version 10.0.26 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.25 | Platform updates for version 10.0.25 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.24 | Platform updates for version 10.0.24 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Base deployment + Service update | 10.0.23 | Platform updates for version 10.0.23 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.22 | Platform updates for version 10.0.22 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Base deployment + Service update | 10.0.21 | Platform updates for version 10.0.21 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Base deployment + Service update | 10.0.20 | Platform updates for version 10.0.20 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md?#targeted-release-schedule-dates-subject-to-change) |
+| Finance + Operations | Service update | 10.0.19 | Platform updates for version 10.0.19 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
+| Finance + Operations | Service update | 10.0.18* | Platform updates for version 10.0.18 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
 | Finance + Operations | Base deployment + Service update | 10.0.17* | PU41 | [One Version schedule](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)|
 
 \* Expired version. All customers must be on the latest version of Finance + Operations according to the [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).
