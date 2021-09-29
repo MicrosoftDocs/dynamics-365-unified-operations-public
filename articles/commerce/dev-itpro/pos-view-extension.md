@@ -87,12 +87,11 @@ The following table shows the POS views that currently support extensions. It al
 > [!NOTE]
 > The table shown above is updated based on the latest released version and hotfix. In earlier versions, some of these extension points will not be available.
 
-> [!NOTE]
-> In Show journal (lines grid) and Return transaction view custom columns are supported using the row sub fields. These sub fields will be displayed as rows instead of columns, like the info code messages or serial number or discounts values.
+> In Show journal (lines grid) and Return transaction view, custom columns are supported using the row sub fields. These sub fields will be displayed as rows instead of columns, like the info code messages or serial number or discounts values.
 
 ## Custom filter extension
 
-Custom filter extensions are supported in **Show journal view**, **Search order view**, **FulfillmentLine view**, **Inventory Document Shipping and Receiving view** and **Search order views** also supports setting default parameters for search in the user interface (UI) using extensions. For example, if you want to add a default store search parameter you can do that by using an extension and showing that in the UI. 
+Custom filter extensions are supported in **Show journal view**, **Search order view**, **FulfillmentLine view**, and **Inventory Document Shipping and Receiving view**. **Search order views** also supports setting default parameters for search in the user interface (UI) using extensions. For example, if you want to add a default store search parameter you can do that by using an extension and showing that in the UI. 
 
 Sample code for custom filter extensions are available in the Retail SDK (...\RetailSDK\Code\POS\Extensions\SampleExtensions\ViewExtensions\SearchOrders\SampleOrderSearchTextFilter.ts).
 
