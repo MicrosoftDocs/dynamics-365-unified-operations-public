@@ -3,7 +3,7 @@
 
 title: Product identifiers 
 description: This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
-author: cvocph
+author: t-benebo
 ms.date: 03/27/2020
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: kamaybac
+ms.author: benebotg
 ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2017-12-31
 

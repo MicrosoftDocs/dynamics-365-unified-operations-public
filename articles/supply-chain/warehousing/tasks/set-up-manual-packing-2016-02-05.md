@@ -3,7 +3,7 @@
  
 title: Set up manual packing (February 2016 & May 2016)
 description: The packing process allows you to validate and pack products into containers. 
-author: ShylaThompson
+author: Mirzaab
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up manual packing (February 2016 & May 2016)
 

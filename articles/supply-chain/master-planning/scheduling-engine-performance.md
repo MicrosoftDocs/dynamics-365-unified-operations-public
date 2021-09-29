@@ -21,7 +21,7 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: 
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: 
 

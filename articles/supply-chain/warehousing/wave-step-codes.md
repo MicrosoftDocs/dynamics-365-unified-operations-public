@@ -3,7 +3,7 @@
 
 title: Wave step codes
 description: This topic provides an overview of wave step codes and how they are used.
-author: josaw1
+author: Mirzaab
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 

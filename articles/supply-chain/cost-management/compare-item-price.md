@@ -23,7 +23,7 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2020-03-01
-ms.dyn365.ops.version: Release 10.0.9
+ms.dyn365.ops.version: 10.0.9
 
 ---
 

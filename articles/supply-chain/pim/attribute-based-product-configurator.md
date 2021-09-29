@@ -3,7 +3,7 @@
 
 title: Attribute-based sales prices for constraint-based product configuration
 description: This topic describes how to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route. 
-author: sorenva 
+author: t-benebo
 ms.date: 10/2/2020
 ms.topic: article
 ms.prod: 
@@ -19,12 +19,14 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: sorenand
+ms.author: benebotg
 ms.search.validFrom: 2020-08-17
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
 
 # Attribute-based sales prices for constraint-based product configuration
+
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route. You can build several sales price models for each product configuration model.
 

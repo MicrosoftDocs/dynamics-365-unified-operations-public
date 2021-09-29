@@ -3,7 +3,7 @@
 
 title: Operations resources
 description: Operations resources perform the activities of a project or a production process. They can be of different types, and can have different capabilities. 
-author: sorenva
+author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 61943
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

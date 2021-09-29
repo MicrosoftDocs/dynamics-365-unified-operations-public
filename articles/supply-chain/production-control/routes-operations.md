@@ -3,7 +3,7 @@
 
 title: Routes and operations
 description: This topic provides information about routes and operations. 
-author: sorenva
+author: johanhoffmann
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable, ProdRouteJob, ProdRouteTrans, ProdRouteOverview, ProdRouteJobOverview, ProdRouteJobListPagePreviewPane, RouteTable, RouteVersionFeasibility, ProdRouteJobCurrent, RouteGroup, RouteProductionOrder, EngChgCaseRouteTablePart, EcoResProductProdTypeFormulaNoActiveRouteFormPart, 
-ms.author: sorenand
+ms.author: johanho
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

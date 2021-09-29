@@ -20,13 +20,15 @@ ms.reviewer: kamaybac
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 
 ---
 
 # Shipment consolidation policies
+
+[!include [banner](../includes/banner.md)]
 
 The shipment consolidation process that uses shipment consolidation policies allows for automated shipment consolidation during automated and manual release to the warehouse. The automated consolidation that was available before this feature was introduced had hard-coded fields and was based on the **Consolidate shipment at release to warehouse** field that was set for a warehouse.
 

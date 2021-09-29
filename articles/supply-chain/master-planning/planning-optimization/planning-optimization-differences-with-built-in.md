@@ -1,7 +1,7 @@
 ---
 title: Differences between built-in master planning and Planning Optimization
 description: This topic lists features that Planning Optimization doesn't yet support and that aren't listed on the Planning Optimization fit analysis page.
-author: crytt
+author: ChristianRytt
 ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
