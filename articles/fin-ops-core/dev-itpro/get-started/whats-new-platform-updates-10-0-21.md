@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.21 of Finance and Operations apps.
 author: sericks007
-ms.date: 09/13/2021
+ms.date: 09/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,7 +46,7 @@ Some features must be enabled using [Feature management](../../fin-ops/get-start
 |----------------|----------------------------------------------------------|-------------------------------------------------------------------------------------|
 | Client features | [Improved legal entity support for saved views](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/improved-legal-entity-support-saved-views)  | [Saved views](../../fin-ops/get-started/saved-views.md) |
 | System administration | [Enhanced support for full feature lifecycle in Feature management](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/enhanced-support-full-feature-lifecycle-feature-management)| [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
-| Availability monitoring | **Enhanced self-monitoring for availability issues**<br><br>Through synthetic monitoring, Microsoft will now be able to perform continuous monitoring of API monitors to provide proactive visibility into API issues before customers find the issues themselves. This addition will allow for end-to-end coverage of specific scenarios, such as setting up probes to validate build-out deployments, monitoring a service/scenario independent of the service deployment cycle, and testing availability of dependencies. <br><br> Customers will notice that some new elements will be added to their environments, such as an Azure Active Directory application (monitoring app), a Microsoft-managed user account (monitoring app user), a security role and security duty for monitoring the app user, and an OData entity (/data/SysMonDatas). <br><br>The only action item required is that you must not delete or modify any of these elements in order for the availability monitoring to work as intended. | Not applicable | 
+| Availability monitoring | [Synthetic monitoring of Service Fabric environments](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/synthetic-monitoring-service-fabric-environments) | Not applicable | 
 | Developer tools | Visual Studio 2019 is now officially supported. | [Development tools in Visual Studio](../dev-tools/development-tools-overview.md) |
 
 ## Additional resources
