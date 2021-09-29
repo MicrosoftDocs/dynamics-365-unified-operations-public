@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen FAQ
 description: This topic provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 07/29/2021
+ms.date: 09/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -49,46 +49,45 @@ Yes. Modern POS requires a known IP address to communicate with the Adyen paymen
 
 Yes. Adyen can work with any merchant bank.
 
-### If configuring Card Type Bin Range mapping in Dynamics for the Adyen Connector, how many digits can I use?
+### When configuring card type bin range mapping in Commerce for the Adyen Connector, how many digits can I use?
 
-Adyen returns the first 6 digits of the card for matching. 6 digits is the maximum for card type bin range mapping when using the Dynamics Adyen Payment Connector.
+Adyen returns the first six digits of the card for matching, which is the maximum for card type bin range mapping when using the Dynamics 365 Payment Connector for Adyen.
 
-### How do Dynamics 365 Commerce transaction events align to Adyen payment statuses?
+### How do Commerce transaction events align with Adyen payment status codes?
 
-The following are common payment events in Dynamics 365 Commerce and the corresponding payment status codes in the Adyen Portal (as seen in the "Payments" section):
+The following are common payment events in Dynamics 365 Commerce and their corresponding payment status codes as seen in the "Payments" section of the Adyen portal.
 
 #### Point-of-Sale (POS) terminal
 
-| Commerce event | Adyen payment status |
+| Commerce event | Adyen payment status code |
 |---|---|
-| Initial transaction in progress | AuthorisedPending |
-| Successful Transaction | Authorised |
-| Successful Transaction in progress | SentForSettle |
-| Successful Transaction completed | Settled |
-| Void | Cancelled (if authorized state only) or Refunded (if funds have been captured)|
-| Cancel | *Cancelled items are not expected to show in Adyen portal* |
-| Linked Refund | SentForRefund or Refunded|
-| Unlinked Refund | *Original payment line remains in final state, Authorised or similar*, New line shows 'RefundPending' for the payment method used |
-| External Gift Card as Payment Method | SettledExternally |
-| External Gift Card Add Funds| RefundPending |
+| Initial transaction in progress | **AuthorisedPending** |
+| Successful transaction | **Authorised** |
+| Successful transaction in progress | **SentForSettle** |
+| Successful transaction completed | **Settled** |
+| Void | **Cancelled** (if authorized state only) or **Refunded** (if funds have been captured)|
+| Cancel | Cancelled items are not expected to show in the Adyen portal. |
+| Linked refund | **SentForRefund** or **Refunded**|
+| Unlinked refund | Original payment line remains in final state (for example, **Authorized**), new line shows **RefundPending** for the payment method used. |
+| External gift card as payment method | **SettledExternally** |
+| External gift card add funds| **RefundPending** |
 
+#### Call center and online channels
 
-#### Call Center and Online channels
-
-| Commerce event | Adyen payment status |
+| Commerce event | Adyen payment status code |
 |---|---|
-| Successful Transaction | Authorised |
-| Authorisation | Settled |
-| Void | Cancelled (if authorized state only) or Refunded (if funds have been captured)|
-| Cancel | *Cancelled items are not expected to show in Adyen portal* |
-| Linked Refund | *Call Center Only* SentForRefund or Refunded|
-| Unlinked Refund | *Call Center Only, Original payment line remains in final state, Authorised or similar*, New line shows 'RefundPending' for the payment method used |
-| External Gift Card as Payment Method | SettledExternally |
-| External Gift Card Add Funds| RefundPending |
+| Successful Transaction | **Authorised** |
+| Authorisation | **Settled** |
+| Void | **Cancelled** (if authorized state only) or **Refunded** (if funds have been captured)|
+| Cancel | Cancelled items are not expected to show in Adyen portal. |
+| Linked Refund | *Call center only* - **SentForRefund** or **Refunded**|
+| Unlinked Refund | *Call center only* -  Original payment line remains in final state (for example, **Authorized**), new line shows **RefundPending** for the payment method used. |
+| External Gift Card as Payment Method | **SettledExternally** |
+| External Gift Card Add Funds| **RefundPending** |
 
-Call Center and Online Store will consider a payment successful while Adyen may still be processing the payment originating service for settled state.
+Call center and online store will consider a payment successful even when Adyen may still be processing the payment originating service for settled state.
 
-For a complete list of Adyen payment status codes, see the ayments lifecycle info from Adyen at [Payments lifecycle](https://docs.adyen.com/account/payments-lifecycle)
+For a complete list of Adyen payment status codes, see [Payments lifecycle](https://docs.adyen.com/account/payments-lifecycle).
 
 ## Next steps
 
