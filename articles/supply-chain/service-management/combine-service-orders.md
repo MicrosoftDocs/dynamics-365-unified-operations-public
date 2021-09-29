@@ -45,14 +45,14 @@ When you create service order lines automatically in the **Service agreements** 
 
 You create a service agreement that has a start date on 03-31-2007. In the **Combine service orders** field, you specify **By service object**. You then create the following service agreement lines:
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">

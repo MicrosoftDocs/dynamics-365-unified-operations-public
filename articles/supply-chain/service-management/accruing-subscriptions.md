@@ -69,7 +69,7 @@ To be able to accrue revenue for subscriptions, the **Accrue revenue** check box
 
 ## Enable revenue accrual on a subscription group
 
-1.  Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
+Click **Service management** \> **Setup** \> **Service subscriptions** \> **Subscription groups**.
 
 ## Periods
 
@@ -79,8 +79,8 @@ The following table provides an overview of which accrual periods can be set up 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">

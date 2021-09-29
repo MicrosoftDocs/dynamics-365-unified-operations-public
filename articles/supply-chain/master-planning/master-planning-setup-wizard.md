@@ -2,7 +2,7 @@
 # required metadata
 
 title: Master planning setup wizard 
-description: This topic describes various important strategies and parameters that are used to set up master planning.
+description: This topic describes how to run the master planning setup wizard to set up master planning.
 author: ChristianRytt
 ms.date: 10/21/2019
 ms.topic: article

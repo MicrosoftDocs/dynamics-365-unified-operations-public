@@ -48,7 +48,7 @@ The following example shows how the values of an inventory object and a cost obj
 
 The following table shows the calculation result for a cost object. You can view the result on the **Cost object** page.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="14%" />
 <col width="14%" />
@@ -84,7 +84,7 @@ The following table shows the calculation result for a cost object. You can view
 
 The following table shows the calculation result for an inventory object. You can view the result by clicking **Physical quantity** on the **Cost object** page.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="11%" />
 <col width="11%" />

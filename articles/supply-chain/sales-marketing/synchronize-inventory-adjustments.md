@@ -76,12 +76,12 @@ The following illustrations show the template mapping in Data integration.
 
 ### Inventory adjustment (Field Service to Supply Chain Management): Inventory adjustment
 
-[![Template mapping in Data integration.](./media/FSAdj1.png)](./media/FSAdj1.png)
+[![Template mapping in Data integration, Inventory adjustment (Field Service to Supply Chain Management): Inventory adjustment.](./media/FSAdj1.png)](./media/FSAdj1.png)
 
 
 ### Inventory transfer (Field Service to Supply Chain Management): Inventory transfer
 
-[![Template mapping in Data integration.](./media/FSTrans1.png)](./media/FSTrans1.png)
+[![Template mapping in Data integration, Inventory transfer (Field Service to Supply Chain Management): Inventory transfer.](./media/FSTrans1.png)](./media/FSTrans1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

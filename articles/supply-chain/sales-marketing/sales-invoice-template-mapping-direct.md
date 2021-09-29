@@ -120,11 +120,11 @@ The following illustrations show an example of a template mapping in Data integr
 
 ### SalesInvoiceHeader
 
-![Template mapping in Data integration.](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
+![Template mapping in Data integration for SalesInvoiceHeader.](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
 
 ### SalesInvoiceLine
 
-![Template mapping in Data integration.](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
+![Template mapping in Data integration for SalesInvoiceLine.](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
 
 
 

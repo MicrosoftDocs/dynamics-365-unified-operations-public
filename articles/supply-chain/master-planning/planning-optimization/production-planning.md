@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.13
 
 # Production planning
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Planning Optimizations supports several production scenarios. If you're migrating from the existing, built-in master planning engine, it's important to be aware of some changed behavior.
 

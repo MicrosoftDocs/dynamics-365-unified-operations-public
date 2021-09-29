@@ -8,7 +8,7 @@ ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOr
 audience: Application User 
 ms.reviewer: kamaybac 
 ms.search.region: Global 
-ms.reviewer: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2021-06-24 
 ms.dyn365.ops.version: 10.0.20 
 --- 

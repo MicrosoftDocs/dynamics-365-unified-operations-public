@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.17
 
 # Coverage time fences
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to set up *coverage time fences* when you're using Planning Optimization. Planners can define the planning horizon (the coverage time fence in days), and exclude supply and demand that falls beyond that horizon. Therefore, coverage time fences help prevent "noise" that is caused by supply suggestions that you don't have to react to for months. Examples include next year's forecast and customer orders that are placed far beyond the normal lead time.
 

@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.15
 
 # Carrier groups
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 A carrier group is a collection of shipping carriers and carrier services. Each carrier group specifies the preferred sequence for the shipping carriers and carrier services that belong to it.
 

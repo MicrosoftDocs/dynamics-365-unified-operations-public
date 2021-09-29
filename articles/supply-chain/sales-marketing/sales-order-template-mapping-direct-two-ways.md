@@ -193,19 +193,19 @@ The following illustrations show an example of a template mapping in Data integr
 
 ### Sales Orders (Supply Chain Management to Sales) - Direct: OrderHeader
 
-[![Template mapping in Data integration.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![Template mapping in Data integration, Sales Orders (Supply Chain Management to Sales) - Direct: OrderHeader.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### Sales Orders (Supply Chain Management to Sales) - Direct: OrderLine
 
-[![Template mapping in Data integration.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![Template mapping in Data integration, Sales Orders (Supply Chain Management to Sales) - Direct: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### Sales Orders (Sales to Supply Chain Management) - Direct: OrderHeader
 
-[![Template mapping in Data integration.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![Template mapping in Data integration, Sales Orders (Sales to Supply Chain Management) - Direct: OrderHeader.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### Sales Orders (Sales to Supply Chain Management) - Direct: OrderLine
 
-[![Template mapping in Data integration.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![Template mapping in Data integration, Sales Orders (Sales to Supply Chain Management) - Direct: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
 ## Related topics
 

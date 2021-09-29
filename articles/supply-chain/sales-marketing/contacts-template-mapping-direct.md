@@ -121,13 +121,13 @@ The following illustrations show an example of a template mapping in Data integr
 > [!NOTE]
 > The mapping shows which column information will be synchronized from Sales to Supply Chain Management.
 
-### Contact to contact
+### Contact to contact example
 
-![Template mapping in Data integrator.](./media/contacts-direct-template-mapping-data-integrator-1.png)
+![Contact to contact template mapping in Data integrator.](./media/contacts-direct-template-mapping-data-integrator-1.png)
 
-### Contact to customer
+### Contact to customer example
 
-![Template mapping in Data integrator.](./media/contacts-direct-template-mapping-data-integrator-2.png)
+![Contact to customer template mapping in Data integrator.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
 ## Related topics

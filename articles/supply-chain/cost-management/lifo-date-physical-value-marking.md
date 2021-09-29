@@ -59,7 +59,9 @@ In this example, the item model group isn't marked to include physical value. Th
 
 The new running average cost price reflects the average of the financially updated transactions at USD 15.00. 
 
-The following illustration shows the effects of the LIFO Date inventory model when the **Include physical value** option isn't used. ![LIFO Date with Include Physical Value.](./media/lifodatewithoutincludephysicalvalue.gif) 
+The following illustration shows the effects of the LIFO Date inventory model when the **Include physical value** option isn't used. 
+
+![LIFO Date without the Include physical value option.](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -94,7 +96,9 @@ The illustration that follows shows these transactions:
 
 The new running average cost price reflects the average of the financially updated transactions at USD 20.00. 
 
-The following illustration shows the effects of the LIFO inventory model when the **Include physical value** option is used. ![LIFO Date with Include Physical Value.](./media/lifodatewithincludephysicalvalue.gif) 
+The following illustration shows the effects of the LIFO inventory model when the **Include physical value** option is used. 
+
+![LIFO Date with the Include physical value option.](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Key to the diagram**
 

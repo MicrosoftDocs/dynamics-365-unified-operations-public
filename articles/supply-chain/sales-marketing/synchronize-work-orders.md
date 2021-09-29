@@ -65,19 +65,19 @@ The following illustrations show the template mapping in Data integration.
 
 ### Work Orders with Project (Field Service to Supply Chain Management): WorkOrderHeader
 
-[![Template mapping in Data integration.](./media/FSWOP1.png)](./media/FSWOP1.png)
+[![Template mapping in Data integration, Work Orders with Project (Field Service to Supply Chain Management): WorkOrderHeader.](./media/FSWOP1.png)](./media/FSWOP1.png)
 
 ### Work Orders with Project (Field Service to Supply Chain Management): WorkOrderHeaderProject
 
-[![Template mapping in Data integration.](./media/FSWOP2.png)](./media/FSWOP2.png)
+[![Template mapping in Data integration, Work Orders with Project (Field Service to Supply Chain Management): WorkOrderHeaderProject.](./media/FSWOP2.png)](./media/FSWOP2.png)
 
 ### Work Orders with Project (Field Service to Supply Chain Management): WorkOrderProduct
 
-[![Template mapping in Data integration.](./media/FSWOP3.png)](./media/FSWOP3.png)
+[![Template mapping in Data integration, Work Orders with Project (Field Service to Supply Chain Management): WorkOrderProduct.](./media/FSWOP3.png)](./media/FSWOP3.png)
 
 ### Work Orders with Project (Field Service to Supply Chain Management): WorkOrderService
 
-[![Template mapping in Data integration.](./media/FSWOP4.png)](./media/FSWOP4.png)
+[![Template mapping in Data integration, Work Orders with Project (Field Service to Supply Chain Management): WorkOrderService.](./media/FSWOP4.png)](./media/FSWOP4.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

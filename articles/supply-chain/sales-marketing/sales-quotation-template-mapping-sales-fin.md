@@ -134,11 +134,11 @@ The following illustrations show an example of a template mapping in data integr
 
 ### QuoteHeader
 
-![Template mapping in data integrator.](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
+![Template mapping in data integrator, QuoteHeader.](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
 
 ### QuoteLine
 
-![Template mapping in data integrator.](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
+![Template mapping in data integrator, QuoteLine.](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
 
 ## Related topics
 
