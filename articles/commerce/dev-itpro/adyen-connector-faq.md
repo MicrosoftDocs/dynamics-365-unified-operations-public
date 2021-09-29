@@ -53,6 +53,43 @@ Yes. Adyen can work with any merchant bank.
 
 Adyen returns the first 6 digits of the card for matching. 6 digits is the maximum for card type bin range mapping when using the Dynamics Adyen Payment Connector.
 
+### How do Dynamics 365 Commerce transaction events align to Adyen payment statuses?
+
+The following are common payment events in Dynamics 365 Commerce and the corresponding payment status codes in the Adyen Portal (as seen in the "Payments" section):
+
+#### Point-of-Sale (POS) terminal
+
+| Commerce event | Adyen payment status |
+|---|---|
+| Initial transaction in progress | AuthorisedPending |
+| Successful Transaction | Authorised |
+| Successful Transaction in progress | SentForSettle |
+| Successful Transaction completed | Settled |
+| Void | Cancelled (if authorized state only) or Refunded (if funds have been captured)|
+| Cancel | *Cancelled items are not expected to show in Adyen portal* |
+| Linked Refund | SentForRefund or Refunded|
+| Unlinked Refund | *Original payment line remains in final state, Authorised or similar*, New line shows 'RefundPending' for the payment method used |
+| External Gift Card as Payment Method | SettledExternally |
+| External Gift Card Add Funds| RefundPending |
+
+
+#### Call Center and Online channels
+
+| Commerce event | Adyen payment status |
+|---|---|
+| Successful Transaction | Authorised |
+| Authorisation | Settled |
+| Void | Cancelled (if authorized state only) or Refunded (if funds have been captured)|
+| Cancel | *Cancelled items are not expected to show in Adyen portal* |
+| Linked Refund | *Call Center Only* SentForRefund or Refunded|
+| Unlinked Refund | *Call Center Only, Original payment line remains in final state, Authorised or similar*, New line shows 'RefundPending' for the payment method used |
+| External Gift Card as Payment Method | SettledExternally |
+| External Gift Card Add Funds| RefundPending |
+
+Call Center and Online Store will consider a payment successful while Adyen may still be processing the payment originating service for settled state.
+
+For a complete list of Adyen payment status codes, see the ayments lifecycle info from Adyen at [Payments lifecycle](https://docs.adyen.com/account/payments-lifecycle)
+
 ## Next steps
 
 For guidance on troubleshooting common issues related to the Dynamics 365 Payment Connector for Adyen, see [Troubleshoot Dynamics 365 Payment Connector for Adyen](adyen-connector-troubleshoot.md). 
