@@ -124,7 +124,7 @@ In the **Full order list** view, you can manually select a line in the list and 
 
 ### Over-delivery shipping validations
 
-Validations occur during the receiving process for the document lines. They include validations for over-delivery. If a user tries to ship more inventory than was ordered on a transfer order, but either over-delivery isn't configured or the quantity that is shipped exceeds the over-delivery tolerance that is configured for the transfer order line, the user receives an error and isn't allowed to ship the excess quantity.
+Validations occur during the fulfillment process for the document lines. They include validations for over-delivery. If a user tries to ship more inventory than was ordered on a transfer order, but either over-delivery isn't configured or the quantity that is shipped exceeds the over-delivery tolerance that is configured for the transfer order line, the user receives an error and isn't allowed to ship the excess quantity.
 
 ### Underdelivery close lines
 
