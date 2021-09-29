@@ -1,3 +1,16 @@
+---
+# required metadata
+
+title: Sales update history cleanup job failure or performance issues
+description: The Sales history cleanup job would fail or take very long if there is large amount of sales update data. In this case, the users should enable the Sales history cleanup performance improvement feature.
+author: myvakalo
+ms.date: 29/09/2021
+ms.topic: troubleshooting
+ms.prod: D365 for Finance and Operations
+ms.technology: 
+
+---
+
 # Sales update history cleanup job failure or performance issues 
 
 ## Symptoms 
