@@ -51,7 +51,7 @@ You must also have access to the development environment for this topology.
 
 ### Configure the ER framework
 
-Follow the steps in [Configure the ER framework](er-quick-start2-customize-report#ConfigureFramework) to set up the minimal set of ER parameters. You must complete this setup before you start to use the ER framework to import inbound documents from a custom source.
+Follow the steps in [Configure the ER framework](er-quick-start2-customize-report.md#ConfigureFramework) to set up the minimal set of ER parameters. You must complete this setup before you start to use the ER framework to import inbound documents from a custom source.
 
 ### Import an ER format configuration
 
