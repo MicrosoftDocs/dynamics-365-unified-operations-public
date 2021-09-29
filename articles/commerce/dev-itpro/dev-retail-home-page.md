@@ -31,6 +31,10 @@ This page lists the resources that are available for IT pros and developers who 
 - [Publish an online store channel](retail-online-store-publishing-architecture.md)
 - [Retail channel performance PowerBI.com solution](../../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
+## Development
+
+- [Set up a local development environment](setup-local-dev-env.md)
+
 ## Deployment
 
 - [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
