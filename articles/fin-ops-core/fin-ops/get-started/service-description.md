@@ -196,7 +196,7 @@ The following table describes some typical scenarios and activities for the serv
 | Validate the deployed production instances and non-production instances. | | X |
 | **Service updates** | |
 | Apply service updates to designated non-production and production instances. | X | |
-| Manually apply service updates from LCS to sandbox instances. Define, develop, and test the update, and provide the code update package back to LCS. | | X |
+| Manually apply service updates from LCS to sandbox instances. Define, develop, test the update, and provide the code update package back to LCS. | | X |
 | Request and schedule extension updates be applied to production instance. | | X |
 | Create a code and data backup for the production instance before any updates are applied. | X | |
 | In the event of any failure, roll back the production instance to the code and data backup. | X | |
