@@ -14,7 +14,7 @@ This is due to high volume sales updates which creates large amount of sales upd
 
 ## Resolution 
 
-The performance issue of the earlier *Sales update history cleanup* job has been improved and a new version is available from application version 10.0.19 onwards. It is the [*Sales history cleanup performance improvements*](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) feature and can be found under Feature management. 
+The performance issue of the earlier *Sales update history cleanup* job has been improved and a new version is available from application version 10.0.19 onwards. It is the [*Sales history cleanup performance improvements*](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md) feature and can be found under Feature management. 
 
 Below are the exact steps needed to be taken for the feature to be properly enabled, depending on your environment version. 
 
