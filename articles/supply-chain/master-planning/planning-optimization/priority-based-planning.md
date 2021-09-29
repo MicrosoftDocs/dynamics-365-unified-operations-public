@@ -1,16 +1,16 @@
 ---
 title: Priority-based planning
-description: XXXX
-author: XXXX
-ms.date: MM/DD/YYYY
+description: This topic describes the priority-based planning feature of Supply Chain Management
+author: ChristianRytt
+ms.date: 10/15/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: XXXX
-ms.search.validFrom: YYYY-MM-DD
-ms.dyn365.ops.version: 10.0.18
+ms.author: crytt
+ms.search.validFrom: 2021-10-15
+ms.dyn365.ops.version: 10.0.23
 ---
 
 # Priority-based planning
@@ -22,7 +22,7 @@ This topic describes the priority-based planning feature of Supply Chain Managem
 
 Priority-based planning lets you prioritize replenishment orders to ensure that urgent demand is prioritized over less important demand. For example, a stockout replenishment order will be prioritized over a standard refill replenishment order. The system can automatically split larger orders into separate smaller orders, with order lines grouped by priority, and then process all high-priority orders first.
 
-<!--KFM: Add link to, and update the following topic? : [Scheduling with resource selection based on capability](capability-based-scheduling.md) -->
+<!--KFM: Add link to, and update the following topic? : [Scheduling with resource selection based on capability](capability-based-scheduling.md). We have a **Priority** field there. -->
 
 ## Turn on priority-based planning for your system
 
@@ -33,19 +33,11 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 ## Where and how planning priorities are assigned
 
-*Planning priority* information on supply and demand is the backbone for priority-based planning. Planning priority defines the importance of a demand or supply line. This is used by Planning Optimization when the coverage code is set to *Priority*. Planning priority is normally a number between 0 and 100, where 0 is the most important value.
+*Planning priority* information on supply and demand is the backbone for priority-based planning. Planning priority defines the importance of a demand or supply line. This is used by Planning Optimization when the coverage code is set to *Priority*.
 
-Planning priority is displayed and set using the **Planning priority** field, which you can find on each of the pages listed in the following table.
+Planning priority is normally a number between 0 and 100, where 0 is the most important value. The priority is displayed and set using the **Planning priority** field, which you can find on the following pages: **Demand forecast lines**, **Sales order details**, **Purchase order details**, **Transfer order details**, and **Planned order details**.
 
-| Page | Field location | Value source |
-|---|---|---|
-| **Demand forecast lines** | Select a line in the upper section and then open the **Item** tab. | Default value or set manually |
-| **Sales order details** | Select a line on the **Sales order lines** FastTab and then open the **Delivery** tab on the **Line details** FastTab. | Default value, from intercompany, or set manually |
-| **Purchase order details** | Select a line on the **Purchase order lines** FastTab and then open the **Delivery** tab on the **Line details** FastTab. | Set during firming from planned orders, from intercompany, or set manually |
-| **Transfer order details** | Select a line on the **Transfer order lines** FastTab and then open the **Delivery** tab on the **Line details** FastTab. | Set during firming from planned order or set manually |
-| **Planned order details** | On the **General** FastTab. | The value is calculated during master planning or set manually |
-
-When **Coverage code** is set to *Priority*, <!--KFM: Where is this setting? --> Planning Optimization balances supply with demand using a demand-driven approach while calculating the planning priority and considering the values set for the **Minimum**, **Reorder point** and **Maximum** fields on the **Item coverage** page for each released product.
+When **Coverage code** for the relevant item or coverage group is set to *Priority*, Planning Optimization balances supply with demand using a demand-driven approach while calculating the planning priority and considering the values set for the **Minimum**, **Reorder point** and **Maximum** fields on the **Item coverage** page for each released product.
 
 > [!NOTE]
 > The *Priority* value for **Coverage code** is only available when Planning Optimization is enabled.
@@ -104,7 +96,7 @@ Priority-based planning differs from traditional timeline calculations in the fo
 To work with the planning priority models, go to **Master planning \> Setup \> Planning priority models**. As already discussed, one of the most important settings of a model is **Priority calculation method**. This setting controls the calculation method used when a priority value is assigned to planned orders by master planning.
 
 > [!NOTE]
-> Model confirmations apply organization-wide across all legal entities. <!--KFM: What do you mean by "confirmations"? -->
+> Model confirmations apply organization-wide across all legal entities. <!--KFM: What do you mean by "confirmations"? "Configurations" maybe? -->
 
 ### Coverage group
 
@@ -115,7 +107,7 @@ Start by setting up a new coverage group as described in [Define coverage rules 
 
 ### Item coverage
 
-See [Coverage settings](../coverage-settings.md) for details about how to set up item coverage. The **Coverage code** selected on the coverage group is copied over to the **Item coverage** settings and can be overridden if needed. It can occur that an item coverage record has **Coverage code** set to *Planning* while the related coverage group will have no **Planning priority model** defined. If no planning priority model is defined, any model with **Priority calculation method** set to *Percent of maximum inventory quantity* and **Planned order creation** set to *Single supply with most important priority* is applied by default.
+Start by setting up item coverage settings as described in [Coverage settings](../coverage-settings.md). The **Coverage code** selected on the coverage group is copied over to the **Item coverage** settings and can be overridden if needed. It can occur that an item coverage record has **Coverage code** set to *Planning* while the related coverage group will have no **Planning priority model** defined. If no planning priority model is defined, any model with **Priority calculation method** set to *Percent of maximum inventory quantity* and **Planned order creation** set to *Single supply with most important priority* is applied by default.
 
 Set **Coverage code** to *Priority* to unlock the **Reorder point** field on **Item coverage** settings.
 
@@ -135,7 +127,7 @@ This choice for the reorder point could be based on a lead time of 7 days with a
 To work with your planning priority models:
 
 1. Go to **Master planning \> Setup \> Planning priority models**.
-1. Either select an existing model from the list pane or select New from the Action Pane to create a new one.
+1. Either select an existing model from the list pane or select **New** from the Action Pane to create a new one.
 1. Make the following settings in the header of the record:
 
     - **Name** – Enter a name for the new model. The name must be unique across all legal entities in your organization.
@@ -150,32 +142,34 @@ To work with your planning priority models:
 
     - **Consider demand priority** – Set this to *Yes* to limit priority of a new planned order created for supply (no lower than the related demand's priority). Set this to *No* to calculate supply order's priority without consideration for the demand order's priority.
 
-1. In the **Planning priority ranges** grid, add a new row and make the following settings for it. (If multiple rows exist and you insert a new row, then the planning priority will be defaulted to the average of the selected row and the one above it.)
+1. If you set **Priority calculation method** to *Priority ranges*, then on the **Planning priority ranges** FastTab, use the **Add** and **Remove** toolbar buttons to add or remove priority range rows as needed. If multiple rows exist and you insert a new row, then the planning priority will default to the average of the selected row and the one above it. Make the following settings for each row:
 
-    - **Planning priority** – Enter any positive values between 0.00 and 100.00. This represents the planning priority used for this planning priority range. The lowest priority is considered the most important one <!--KFM: Do you mean lowest priority VALUE? -->. A default value is assigned, but you can change it as needed. The **Planning priority** can't be the same for two or more planning priority ranges within the same planning priority model.
+    - **Planning priority** – Enter any value between 0.00 and 100.00. This represents the planning priority used for this row. The lowest priority is considered the most important one <!--KFM: Do you mean "The system considers orders that have the lowest priority value to be the most important and will place those orders first." ?  -->. A default value is assigned, but you can change it as needed. The **Planning priority** can't be the same for two or more planning priority ranges within the same planning priority model.
     - **Description** – Enter a description of the planning priority range (such as *Reorder point to Maximum*).
     - **From quantity** – This read-only value represents the lower limit of the planning priority range. It is based on the **To quantity** and **Percentage of to quantity** settings for the previous planning priority range.
     - **To quantity** – Select a field from the item coverage used to define the range's upper limit. The following values are supported and will influence the **From quantity** of the next range:
-        - *Zero* – Represents a negative to zero range (*Zero or less* to*Zero*). The**Percent of to quantity** field isn't editable (always 100%) for rows with this value.
+        - *Zero* – Represents a negative to zero range (*Zero or less* to *Zero*). The **Percent of to quantity** field isn't editable (always 100%) for rows with this value.
         - *Minimum inventory quantity* – Represents the **Minimum** value for an item on the **Item coverage** page. The **Percent of to quantity** field is editable and is used to set the **From quantity** of the next range (for example, to *80% of Minimum inventory quantity*).
         - *Reorder point* – Represents the **Reorder point** value for an item on the **Item coverage** page. The **Percent of to quantity** field is editable and is used to set the **From quantity** value for the next range (for example, to *80% of Reorder point*).
         - *Maximum inventory quantity* – Represents the **Maximum** value for an item on the **Item coverage** page. The **Percent of to quantity** field is editable and is used to set the **From quantity** of the next range (for example, to *80% of Minimum inventory quantity*).
-        - *Infinite* – Represents an infinite upper level of the range (*Infinite or less* to*Infinite*). The**Percent of to quantity** field isn't editable (always 100%) for rows with this value.
-    - **Percent of to quantity** – Enter a percentage value for calculating the upper limit of the planning priority range based on the value selected for the **To quantity**. For example, with **To quantity** set to *Minimum inventory quantity* and**Percent of to quantity** set to *50*, the upper limit will be 50% of the minimum inventory quantity from the related item coverage.
+        - *Infinite* – Represents an infinite upper level of the range (*Infinite or less* to*Infinite*). The **Percent of to quantity** field isn't editable (always 100%) for rows with this value.
+    - **Percent of to quantity** – Enter a percentage value for calculating the upper limit of the planning priority range based on the value selected for the **To quantity**. For example, with **To quantity** set to *Minimum inventory quantity* and **Percent of to quantity** set to *50*, the upper limit will be 50% of the minimum inventory quantity from the related item coverage.
 
 1. Expand the **Planning priority defaults** FastTab and enter values as needed into the various fields here to establish default planning priorities for each type of supply or demand line (sales order, purchase order, transfer order, or demand forecast). Only positive values can be entered.
 
 ## View and maintain planning priority
 
-Each of the following pages provides a **Planning priority** field, which is normally a number between 0 and 100, where 0 is most important:
+Planning priority is displayed and set using the **Planning priority** field, which you can find on each of the pages listed in the following table. The priority is set as a number between 0 and 100, where 0 is most important.
 
-- **Master planning \> Forecasting \> Manual forecast entry \> Demand forecast lines \> Item \> Planning priority** – The **Planning priority** field could contain a default value or a manually set value.
-- **Sales and marketing \> Sales orders \> All sales orders \> Sales order lines \> Delivery** – The **Planning priority** field could contain a default value, a value pushed from an intercompany process, or a manually set value.
-- **Procurement and sourcing \> Purchase orders \> Purchase order lines \> Delivery** – The **Planning priority** field could contain a value set while firming a planned order, a value pushed from an intercompany process, or a manually set value.
-- **Inventory management \> Outbound orders \>Transfer order \> Transfer order lines \> Delivery** – The **Planning priority** field could contain a value set while firming a planned order or a manually set value.
-- **Master planning \> Master planning \> Planned orders** – The **Planning priority** field could contain a value calculated during master planning or a manually set value.
+| Page | Field location | Value source |
+|---|---|---|
+| **Demand forecast lines** | Select a line in the upper section and then open the **Item** tab. | Default value or set manually |
+| **Sales order details** | Select a line on the **Sales order lines** FastTab and then open the **Delivery** tab on the **Line details** FastTab. | Default value, from intercompany, or set manually |
+| **Purchase order details** | Select a line on the **Purchase order lines** FastTab and then open the **Delivery** tab on the **Line details** FastTab. | Set during firming from planned orders, from intercompany, or set manually |
+| **Transfer order details** | Select a line on the **Transfer order lines** FastTab and then open the **Delivery** tab on the **Line details** FastTab. | Set during firming from planned order or set manually |
+| **Planned order details** | On the **General** FastTab. | The value is calculated during master planning or set manually |
 
-### Intercompany
+### Intercompany trade
 
 The planning priority value on intercompany supply and demand lines is shared between the linked entities. Modification on either side will be reflected on the linked order line.
 
