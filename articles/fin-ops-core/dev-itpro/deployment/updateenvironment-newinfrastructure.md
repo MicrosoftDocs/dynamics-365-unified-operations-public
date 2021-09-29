@@ -121,6 +121,6 @@ After you've marked an update as a release candidate, follow these steps to upda
 For environments that are deployed in the modern infrastructure stack, if servicing is unsuccessful, the environment is automatically rolled back in most cases. To learn why the operation was unsuccessful, you can download the logs from the environment history page.
 
 > [!NOTE]
-> For a small subset of environments where rollback may result in extended downtime (due to large database sizes), we intentionally put the environment in failed state to see if forward progress can be made to get that operation to finish successfully to avoid doing the rollback. If it is determined that the operation cannot move forward then the rollback is initiated on such failures as well.
+> For a small subset of environments where rollback may result in extended downtime, such as when the database size is large, the environment is left in a failed state and internal alerts are raised to determine if actions can be taken to avoid performing the rollback. If the failed operation cannot move forward after manual evaluation, then the normal rollback process is initiated.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
