@@ -31,7 +31,7 @@ The following features are included in this release. Some of the listed features
 | Feature area    | Feature | More information | Enabled by|
 |-----------------|---------|------------------|---------------------------|
 | Client features | [Open-source software update – upgrade Moment and remove jQWidgets](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/open-source-software-update-upgrade-moment-remove-jqwidgets)| Not applicable | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
-| Client features | [New color picker control](dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-color-picker-control) | Not applicable | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
+| Client features | [New color picker control](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-color-picker-control) | Not applicable | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 | Client features | <p>**Visual updates to the Hierarchy viewer control**</p><p>Modifications were made to the HierarchyViewer control to improve its accessibility, especially for 400-percent zoom scenarios. These modifications included restyling the control so that it's aligned with the Fluent design language, to help readability of the control at all zoom levels. | [HierarchyViewer control](../user-interface/hierarchy-viewer-control.md) | Default |
 
 ## Additional resources
