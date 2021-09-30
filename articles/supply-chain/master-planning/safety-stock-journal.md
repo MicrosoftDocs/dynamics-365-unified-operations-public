@@ -32,17 +32,17 @@ The definition of an item's minimum quantity provides the starting point for fur
 
 The **Minimum** value can be set manually on the **Item coverage** page, by data management framework (*Item coverage* data entities), or by safety stock calculation done by safety stock journals.
 
-## Calculating minimum coverage based on historical usage
+## Calculate minimum coverage based on historical usage
 
 Safety stock journals are used to calculate a proposed minimum quantity based on an item's historical usage, either for min/max purposes or for inventory plan purposes. Historical usage represents all issue transactions during a specified time period, including sales order transactions, inventory adjustments, and other issue transactions. The calculations also identify the impact of the proposed minimum quantity on inventory value, and the change in inventory value compared to the current minimum quantities.
 
-Each safety stock journal line represents an item and its coverage dimensions. These journal lines are created and displayed on the safety stock journal lines page <!-- KFM: Is this the actual page name? I couldn't find it. -->. The business process for using the safety stock journals to calculate the proposed minimum quantities is described later in this topic.
+Each safety stock journal line represents an item and its coverage dimensions. These journal lines are created and displayed on the **Safety stock journal lines** page (available at **Master planning > Master planning > Run > Safety stock calculation**). The business process for using the safety stock journals to calculate the proposed minimum quantities is described later in this topic.
 
 The planner uses a safety stock journal to calculate proposed minimum quantities for selected items based on historical usage during selected periods. The proposed minimums can be manually overridden if needed, and you can review the potential impact on inventory value of the proposed minimums. Posting the journal automatically updates the associated minimum quantities in item coverage.
 
 ### Create a new safety stock journal name
 
-<!-- KFM: Intro is needed. Why do we need this? Describe what a "name" is and how it is different from the journal itself. Why might I have more than one of these? -->
+<!-- KFM: Intro is needed. For example: Why are doing this? Describe what a "name" is and how it is different from the journal itself. Why might I have more than one of these? -->
 
 1. Go to **Master planning \> Setup \> Safety stock journal names**.
 1. On the Action Pane, select **New**.
@@ -58,7 +58,7 @@ The planner uses a safety stock journal to calculate proposed minimum quantities
 
 This step creates a journal and automatically adds lines to it, where each line identifies an item, its coverage dimensions, and several calculated quantities from the usage history. The calculated quantities include average issues per the item's lead time, average issues per month, and the monthly standard deviation.
 
-Journal lines can only be created automatically when no lines exist. <!-- KFM: You mean when creating a new journal? -->
+Journal lines can only be created automatically when no lines exist. <!-- KFM: You mean for the displayed/selected journal? -->
 
 1. Go to **Master planning > Master planning > Run > Safety stock calculation**.
 1. On the Action Pane, select **New**. A new safety stock journal is created.
@@ -84,16 +84,16 @@ This step calculates a proposed minimum for each journal line and the line's pot
 1. Open the journal you want to calculate a proposal for (or create a new one as described in the previous section).
 1. On the **Journal lines** FastTab, select **Calculate proposal** from the toolbar. <!-- KFM: Should I select any lines? Does that have any effect? -->
 1. The **Calculate proposal for minimum inventory level** dialog opens. Make the following settings:
-    - **Use average issue during lead time** – Select this radio button to <!-- KFM: Description needed. -->. Then, enter a **Multiplication factor** to use to adjust the proposal (usually, the factor represents a service level you want to maintain <!-- KFM: Some practical advice for how to set this would help. What is reasonable?-->). <!-- KFM: Default is zero! What does that mean? -->
-    - **Use service level** – <!-- KFM: Description needed. Also explain how to use the **Service level** field enabled when this is selected -->
+    - **Use average issue during lead time** – Select this radio button to <!-- KFM: Description needed. -->. Then, enter a **Multiplication factor** to apply to adjust the proposal (usually, the factor represents a service level you want to maintain <!-- KFM: Some practical advice for how to set this would help. What is reasonable? What is the effect? -->). <!-- KFM: Default is zero! What does that mean? -->
+    - **Use service level** – <!-- KFM: Description needed. Also explain how to use the **Service level** field enabled when this is selected. We claim the **Multiplication factor** also represents a service level--how is this different? -->
     - **Lead time margin** – <!-- KFM: Description needed. -->
     - **Use the calculated minimum quantity as the new minimum quantity** – <!-- KFM: Description needed. -->
     - **Run in the background** – On this FastTab, choose whether to run the job in batch mode and/or set up a recurrent schedule. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
-1. Select **OK**. The results of the calculation are now shown in the **Calculated minimum quantity** column of the **Journal lines** FastTab. <!-- KFM: Is this correct? For me, nothing changed. What does the **Calculated minimum** tell me? Are other calculations results shown here, such as **New minium quantity**? Where do I find other info mentioned, such as the impact on inventory value? Has anything changed so far, or did we just get some calculations? -->
+1. Select **OK**. The results of the calculation are now shown in the **Calculated minimum quantity** column of the **Journal lines** FastTab. <!-- KFM: Is this correct? For me, nothing changed. What does the **Calculated minimum** tell me? Are other calculations results shown here, such as under **New minium quantity**? Where do I find other info mentioned, such as the impact on inventory value? Has anything changed so far, or did we just get some calculations? We should provide a full list of columns and fields (e.g., under **Line details**) that represent interesting results here. -->
 
 ### Update minimum quantity
 
-You can select any line in a safety stock journal and manually override the value for its **New minimum quantity** field. You can also manually create journal lines <!-- KFM: When mention manual lines here? It never comes up again. Should probably instead be mentioned in the section about creating journals and lines. -->. This approach prevents calculation of a proposed minimum, which means that you must enter it manually <!-- KFM: Which approach? Creating manual lines? -->. However, you can still view the potential impact on inventory value of the proposed minimum <!-- KFM: Where do I find the "proposed minimum"? -->, and also the potential change in inventory value compared to the currently specified minimum.
+You can select any line in a safety stock journal and manually override the value for its **New minimum quantity** field. You can also manually create journal lines <!-- KFM: Why mention manual lines here? It never comes up again. Should probably instead be mentioned in the section about creating journals and lines. -->. This approach prevents calculation of a proposed minimum, which means that you must enter it manually <!-- KFM: Which approach? Creating manual lines? -->. However, you can still view the potential impact on inventory value of the proposed minimum <!-- KFM: Where do I find the "proposed minimum"? -->, and also the potential change in inventory value compared to the currently specified minimum.
 
 1. Go to **Master planning > Master planning > Run > Safety stock calculation**.
 1. Open the journal you want to edit (or create a new one as described previously).
