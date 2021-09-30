@@ -2,7 +2,7 @@
 title: Inventory Visibility public APIs
 description: This topic describes the public APIs that are provided by Inventory Visibility.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 09/30/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
+ms.dyn365.ops.version: 10.0.22
 ---
 
 # Inventory Visibility public APIs
