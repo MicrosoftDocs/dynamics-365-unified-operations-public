@@ -4,7 +4,7 @@
 title: Electronic reporting framework API changes for Application update 10.0.23
 description: This topic describes how the APIs of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.23.
 author: NickSelin
-ms.date: 09/21/2021
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,12 +31,13 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
 
 This topic describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.23.
 
 ## <a name="er-api-extend-file-source"></a>API to extend the list of ER sources of inbound documents
 
-To implement a custom ER [source](er-configure-data-import-sharepoint.md#configure-er-sources-for-the-er-format) of inbound documents, you must use the following public interfaces:
+To implement a custom ER [source](er-configure-data-import-sharepoint.md#configure-er-sources-for-the-er-format) of inbound documents, use the following public interfaces:
 
 - `ERIImportFile`
 - `ERIImportFileSourceSettings`
@@ -125,7 +126,7 @@ public interface ERIImportFileSourceSettings extends SysPackable
     }
 
     /// <summary>
-    /// Gets a settings key, this key should starts with or be an implementation class name, also this key should be persistent and should not be changed over time.
+    /// Gets a settings key, this key should start with or be an implementation class name. This key should also be persistent and shouldn't be changed over time.
     /// This key will be used to retrieve this type of settings from a settings storage.
     /// </summary>
     /// <remarks>Examples of good keys: MyCustomFileSourceSettings, MyCustomFileSourceSettings#UniqueKey.</remarks>
@@ -180,7 +181,7 @@ public interface ERIImportFileSourceSettingsStorage
 }
 ```
 
-These interfaces lets you offer parameters of a custom source in the **ER source settings** dialog box, so that they can be set at design time. The configured source can then be used to access in a configured custom source [inbound](general-electronic-reporting.md#FormatComponentInbound) documents that must be imported at runtime.
+These interfaces let you offer custom source parameters in the **ER source settings** dialog box, so that they can be set at design time. The configured source can be used to access, in a configured custom source, [inbound](general-electronic-reporting.md#FormatComponentInbound) documents that must be imported at runtime.
 
 To learn more about this interface, complete the example in [Implement a custom source of inbound documents](er-custom-file-source.md).
 
