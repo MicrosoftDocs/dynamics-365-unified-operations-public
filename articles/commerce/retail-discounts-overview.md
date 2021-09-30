@@ -4,7 +4,7 @@
 title: Retail discounts
 description: This topic provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
 author: shajain
-ms.date: 11/03/2020
+ms.date: 10/15/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
 ms.custom: ["16181", "intro-internal"]
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
@@ -30,8 +30,8 @@ ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
 # Retail discounts
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-## Overview
 This topic provides an overview of the discounts functionality in the Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management. However, this topic does not cover the various discounts types in detail, for example, simple, quantity, mix and match, and threshold discounts. These details will be covered in separate topics created for each of these discount types.
 
 Because retailers require flexible discounting, and discount styles and types vary by industry, there are many ways to define discounts in Commerce. The discounting functionality was added on top of the existing discount functionality in the core product (Supply Chain Management), resulting in some duplication of functionality. As a result, the discount types can be configured for five different entities: customer, loyalty program, channel, catalog, and affiliations. Because of the number of discounting options, it's especially important that you plan and document your discounting strategy.
@@ -172,18 +172,18 @@ Starting with the Retail 8.1.1 release, we have added the capability to set up d
 
 ## Improved discount computation
 
-The ability to find and compute applicable discounts in a performant manner is a critical factor to the retailer's overall business efficiency. Starting **10.0.23** release, Commerce pricing engine introduces a feature to achieve faster discount lookup and computation at runtime by leveraging flattened data schema. With this feature, discount data configured in Commerce headquarters is de-normalized before sent to channel databases. And the publishing of flattened discount data is triggered automatically when a discount is enabled.
+The ability to find and compute applicable discounts in a performant manner is a critical factor to a retailer's overall business efficiency. As of the Commerce version **10.0.23** release, the Commerce pricing engine includes an improved discount computation feature that achieves faster discount lookup and computation at runtime by using flattened data schema. With this feature, discount data configured in Commerce headquarters is denormalized before sent to channel databases, and the publishing of flattened discount data is triggered automatically when a discount is enabled.
 
-To enable the improved discount computation feature, please follow the steps below.
+To enable the improved discount computation feature, follow these steps.
 
-1. In Commerce headquarters, go to **Retail and Commerce** > **Pricing and discounts** section.
-1. Click **Process commerce discounts**, and in the prompted dialog, schedule the batch job to run on a recurrent basis.
-1. Navigate to the **Feature management** workspace.
-1. Search and enable a feature named **Improve discount computation performance by using flattened discount tables**.
-1. Run **1020** (**Prices and discounts**) and **1070** (**Channel configuration**) distribution schedule jobs.
+1. In Commerce headquarters, go to **Retail and Commerce \> Pricing and discounts**.
+1. Select **Process commerce discounts** In the dialog box that appears, schedule the batch job to run on a recurrent basis.
+1. Go to **Workspaces \> Feature management**.
+1. Search for and enable the **Improve discount computation performance by using flattened discount tables** feature.
+1. Run the **1020** (**Prices and discounts**) and **1070** (**Channel configuration**) distribution schedule jobs.
 
 > [!NOTE]
-> Please ensure you test this feature extensively before enabling it on production environments, especially when you have customizations in Commerce pricing engine.
+> Ensure that you test this feature extensively before enabling it in production environments, especially when you have customizations in the Commerce pricing engine.
 
 ## Best practices
 
