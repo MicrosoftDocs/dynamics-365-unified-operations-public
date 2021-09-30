@@ -37,13 +37,13 @@ In some cases, a journal can't be posted, and the following message is shown: "T
 
 ## Resolution
 
-During posting to General ledger, every voucher must be balanced in the transaction currency, accounting currency, and reporting currency, if those currencies are defined on the **Ledger setup** page. (Vouchers are balanced when the total debits equal the total credits.)
+During posting to General ledger, every voucher on the journal must be balanced in the transaction currency, accounting currency, and reporting currency, if those currencies are defined on the **Ledger setup** page. (Vouchers are balanced when the total debits equal the total credits.)
 
-At the bottom of the journal lines page, totals are shown in the accounting currency and reporting currency. They are **not** shown in the transaction currency for foreign currency transactions. Additionally, the error message that users receive during simulation or posting shows the differences only in the accounting currency and reporting currency. It doesn't show them in the transaction currency, because a single voucher can have more than one transaction currency, and the journal can include vouchers in different transaction currencies. Therefore, it's important that you verify that the transaction currency amounts for every voucher that has only one transaction currency are balanced.
+At the bottom of the journal lines page, totals are shown in the accounting currency and reporting currency. They are **not** shown in the transaction currency, or entered currency, for foreign currency transactions. Additionally, the error message that users receive during simulation or posting shows the differences only in the accounting currency and reporting currency. It doesn't show them in the transaction currency, because a single voucher can have more than one transaction currency, and the journal can include vouchers in different transaction currencies. Therefore, it's important that you manually verify that the transaction currency amounts for every voucher that has only one transaction currency are balanced.
 
 ### Transaction currency
 
-During simulation and posting, the system verifies that every voucher is balanced in the transaction currency. For every voucher that is entered, there can be one or more currencies for the transaction currency. For example, a voucher that is entered in the general journal might have two transaction currencies when cash is transferred from a bank account that uses euros (EUR) to a bank account that uses Canadian dollars (CAD).
+During simulation and posting, the system verifies that every voucher that contains only one transaction currency is balanced in the transaction currency. For every voucher that is entered, there can be one or more currencies for the transaction currency. For example, a voucher that is entered in the general journal might have two transaction currencies when cash is transferred from a bank account that uses euros (EUR) to a bank account that uses Canadian dollars (CAD).
 
 If a voucher has only one transaction currency, the total debits must equal the total credits for that voucher. Customers have encountered the following scenarios where the posting correctly failed because the transaction currency amounts weren't balanced:
 
