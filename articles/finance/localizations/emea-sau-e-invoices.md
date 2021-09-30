@@ -151,6 +151,7 @@ Similarly, the invoice type can be defined for Free text invoices.
 When printing Customer invoices based on Sales orders or Free text invoices, the title of an invoice will reflect the type, **Tax invoice** or **Simplified invoice**.
 Additionally, QR codes will be printed.
 
+![Invoice printout](media/sau-qr-invoice.jpg)
 
 ## Issue electronic invoices
 
