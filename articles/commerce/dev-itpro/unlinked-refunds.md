@@ -52,7 +52,7 @@ The following payment method variants support unlinked refunds out of the box:
 
 Not all payment method variants support unlinked refunds. The following table provides a list of common payment method support capability for linked and unlinked refunds.
 
-|     Payment Method           |     Linked refund supported    |     Unlinked refund supported    |
+|     Payment Method           |     Linked refund    |     Unlinked refund    |
 |------------------------------|:--------------------------------:|:----------------------------------:|
 |     amexcommercial           |     Yes                        |     Yes                          |
 |     amexconsumer             |     Yes                        |     Yes                          |
@@ -74,11 +74,11 @@ Not all payment method variants support unlinked refunds. The following table pr
 |     visahipotecario          |     Yes                        |     Yes                          |
 |     visasaraivacard          |     Yes                        |     Yes                          |
 |     vpay                     |     Yes                        |     Yes                          |
-|     givex                    |     No                         |     Yes                          |
-|     svs                      |     No                         |     Yes                          |
+|     givex                    |     **No**                         |     Yes                          |
+|     svs                      |     **No**                         |     Yes                          |
 |     cup                      |     Yes                        |     Yes                          |
 |     diners                   |     Yes                        |     Yes                          |
-|     interac                  |     No                         |     Yes                          |
+|     interac                  |     **No**                         |     Yes                          |
 |     jcb                      |     Yes                        |     Yes                          |
 |     jcb_applepay             |     Yes                        |     Yes                          |
 |     unionpay                 |     Yes                        |     Yes                          |
