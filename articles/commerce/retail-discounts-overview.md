@@ -172,7 +172,7 @@ Starting with the Retail 8.1.1 release, we have added the capability to set up d
 
 ## Improved discount computation
 
-The ability to find and compute applicable discounts in a performant manner is a critical factor to a retailer's overall business efficiency. As of the Commerce version **10.0.23** release, the Commerce pricing engine includes an improved discount computation feature that achieves faster discount lookup and computation at runtime by using flattened data schema. With this feature, discount data configured in Commerce headquarters is denormalized before sent to channel databases, and the publishing of flattened discount data is triggered automatically when a discount is enabled.
+The ability to find and compute applicable discounts in a performant manner is a critical factor to a retailer's overall business efficiency. As of the Commerce version **10.0.23** release, the Commerce pricing engine includes an improved discount computation feature that achieves faster discount lookup and computation at runtime by using flattened data schema. With this feature, discount data configured in Commerce headquarters is denormalized before being sent to channel databases, and the publishing of flattened discount data is triggered automatically when a discount is enabled.
 
 To enable the improved discount computation feature, follow these steps.
 
