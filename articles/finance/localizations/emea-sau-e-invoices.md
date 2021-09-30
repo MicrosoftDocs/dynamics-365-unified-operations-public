@@ -125,13 +125,6 @@ According to Saudi Arabiaian legal requirements, invoices that are issued to cus
 > [!NOTE]
 > Internal item numbers defined in the system will be used as Seller's products identifiers by default.
 
-## Configure printable invoice layouts
-
-1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
-2. Click on **Print management**.
-3. Select **Customer invoice** report and refer to **SalesInvoice.Report_SA** layout in the **Report format** field.
-4. Select **Free text invoice** report and refer to **FreeTextInvoice.Report_SA** layout in the **Report format** field.
-
 ## Define invoice type
 
 The system allows to define an invoice type either as **Tax invoice** or **Simplified invoice**.
@@ -145,6 +138,19 @@ Similarly, the invoice type can be defined for Free text invoices.
 1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 2. Create a new or select an existing open free text invoice and navigate to the invoice header.
 3. On **General** FastTab, in **Invoice** group, in **Invoice type** field, select a required value.
+
+## Configure printable invoice layouts
+
+1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
+2. Click on **Print management**.
+3. Select **Customer invoice** report and refer to **SalesInvoice.Report_SA** layout in the **Report format** field.
+4. Select **Free text invoice** report and refer to **FreeTextInvoice.Report_SA** layout in the **Report format** field.
+
+## Print invoices
+
+When printing Customer invoices based on Sales orders or Free text invoices, the title of an invoice will reflect the type, **Tax invoice** or **Simplified invoice**.
+Additionally, QR codes will be printed.
+
 
 ## Issue electronic invoices
 
