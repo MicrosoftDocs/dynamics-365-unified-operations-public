@@ -4,7 +4,7 @@
 title: Process unlinked refunds with the Dynamics 365 Commerce Adyen Connector
 description: This topic describes how unlinked refunds work using the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: BrianShook
-ms.date: 09/29/2021
+ms.date: 09/30/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
@@ -17,7 +17,7 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how unlinked refunds work using the Microsoft Dynamics 365 Payment Connector for Adyen, and reviews the ability to process a refund against a new payment method in point of sale (POS) or call center.
+This topic describes how unlinked refunds work using the Microsoft Dynamics 365 Payment Connector for Adyen and reviews the ability to process a refund against a new payment method in point of sale (POS) or call center.
 
 The Dynamics 365 Payment Connector for Adyen supports the ability to process refunds using a different payment method than was used for the original transaction. While it is recommended to use [linked refunds](linked-refunds.md) to process a refund against the originating payment method provided, there are scenarios where refunding to a different method is required. For example, the original card used for the original payment may now be expired, lost, or cancelled by the user. 
 
