@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen FAQ
 description: This topic provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 09/29/2021
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,7 +55,7 @@ Adyen returns the first six digits of the card for matching, which is the maximu
 
 ### How do Commerce transaction events align with Adyen payment status codes?
 
-The following are common payment events in Dynamics 365 Commerce and their corresponding payment status codes as seen in the "Payments" section of the Adyen portal.
+The following are common payment events in Dynamics 365 Commerce and their corresponding payment status codes as listed in the "Payments" section of the Adyen portal.
 
 #### Point-of-Sale (POS) terminal
 
@@ -80,12 +80,12 @@ The following are common payment events in Dynamics 365 Commerce and their corre
 | Authorisation | **Settled** |
 | Void | **Cancelled** (if authorized state only) or **Refunded** (if funds have been captured)|
 | Cancel | Cancelled items are not expected to show in Adyen portal. |
-| Linked Refund | *Call center only* - **SentForRefund** or **Refunded**|
-| Unlinked Refund | *Call center only* -  Original payment line remains in final state (for example, **Authorized**), new line shows **RefundPending** for the payment method used. |
+| Linked Refund | **SentForRefund** or **Refunded** (*Call center only*)|
+| Unlinked Refund | Original payment line remains in final state (for example, **Authorized**), new line shows **RefundPending** for the payment method used. (*Call center only*)|
 | External Gift Card as Payment Method | **SettledExternally** |
 | External Gift Card Add Funds| **RefundPending** |
 
-Call center and online store will consider a payment successful even when Adyen may still be processing the payment originating service for settled state.
+Call center and online store will consider a payment successful even when Adyen may still be processing the payment originating service for the settled state.
 
 For a complete list of Adyen payment status codes, see [Payments lifecycle](https://docs.adyen.com/account/payments-lifecycle).
 
