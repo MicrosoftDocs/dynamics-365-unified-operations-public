@@ -1,4 +1,7 @@
-title: PPN declaration for Indonesia (id-00004)
+---
+# required metadata
+
+title: PPN declaration for Indonesia (ID-00004)
 description: This topic explains how to configure and generate the SPT Masa PPN 1111( Pajak Pertambahan Nilai) form for Indonesia
 author: sndray
 ms.date: 09/30/2021
@@ -75,7 +78,7 @@ The Application-specific parameters option let the users to establish the criter
 
 **BoxA1 - Export of Tangible BKP / Intangible BKP / JKP** . As per legal definition, in this box should be reported the total amount of export sales invoices including credit notes as well.
 
-In Finance and depending on the tax configuration you can have a specific sales tax group or item tax group or sales tax code implemented that represents and calculates the operations classified as export sales invoices. In this example, it is necessary to configure **Box 1a** as follows:
+In Finance and depending on the tax configuration you can have a specific sales tax group or item tax group or sales tax code implemented that represents and calculates the operations classified as export sales invoices. In this example, it is necessary to configure **BoxA1** as follows:
 
 1. In the Electronic reporting workspace, select **Configurations** > **Setup** to set up the rules to identify the tax transaction into the related box of the SPT Masa PPN 1111 form.
 2. Select the current version. On the **Lookups** FastTab, select the lookup name **ReportFieldLookup**. This lookup identifies the list of boxes (lines) in the SPT Masa PPN 1111 required by the tax authority. 
@@ -133,5 +136,67 @@ The following table represents an example of how the user needs to configure the
 To help prevent issues when the report is generated, create all mappings where the sales tax codes and sales tax group are posted. For example, if **SalesCreditNote** is omitted on the line for **BoxA2** in this configuration, and tax transactions are posted by using the **PPN_DOM** sales tax group, you will encounter issues when the report is generated. We recommend that you select **Tax** \> **Inquire** \> **Posted sales tax** to review all posted sales tax transactions and transactions that aren't included in this mapping of the configuration.
 
 The following table provides the available values for the **Transaction classifier** field. This information will help you understand how the tax transactions are classified and assigned to the related sales tax code.
+
+| Classifier                      | Condition                            |
+|---------------------------------|--------------------------------------|
+| PurchaseCreditNote              | Credit   note                        |
+|                                 | Tax direction = Sales tax receivable |
+| Purchase                        | Not   credit note                    |
+|                                 | Tax direction = Sales tax receivable |
+| SalesCreditNote                 | Credit   note                        |
+|                                 | Tax direction = Sales tax payable    |
+| Sales                           | Not   credit note                    |
+|                                 | Tax direction = Sales tax payable    |
+| PurchaseExemptCreditNote        | Credit   note                        |
+|                                 | Tax direction = Tax-free purchase    |
+| PurchaseExempt                  | Not   credit note                    |
+|                                 | Tax direction = Tax-free purchase    |
+| SalesExemptCreditNote           | Credit   note                        |
+|                                 | Tax direction = Tax-free sales       |
+| SaleExempt                      | Not   credit note                    |
+|                                 | Tax direction = Tax-free sales       |
+| UseTaxCreditNote                | Credit   note                        |
+|                                 | Tax direction = Use tax              |
+| UseTax                          | Not   credit note                    |
+|                                 | Tax direction = Use tax              |
+| PurchaseReverseChargeCreditNote | Credit   note                        |
+|                                 | Tax direction = Sales tax receivable |
+|                                 | ReverseCharge_W = Yes                |
+| PurchaseReverseCharge           | Not   credit note                    |
+|                                 | Tax direction = Sales tax receivable |
+|                                 | ReverseCharge_W = Yes                |
+| SalesReverseChargeCreditNote    | Credit   note                        |
+|                                 | Tax direction = Sales tax payable    |
+|                                 | ReverseCharge_W = Yes                |
+| SalesReverseCharge              | Not   credit note                    |
+|                                 | Tax direction = Sales tax payable    |
+|                                 | ReverseCharge_W = Yes                |
+
+## Set up General ledger parameters
+
+To generate the SPT Masa PPN 1111 form report in Excel format, define an ER format on the **General ledger parameters** page.
+
+1. Go to **Tax** \> **Setup** \> **General ledger parameters**.
+2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (ID)**. If you leave the field blank, the standard sales tax report will be generated in SQL Server Reporting Services (SSRS) format.
+
+## Generate a SPT Masa PPN 1111 report
+
+The process of preparing and submitting a SPT Masa PPN 1111 report for a period is based on sales tax payment transactions that were posted during the **Settle and post sales tax** job. For more information about sales tax settlement and reporting, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
+
+Follow these steps to generate the tax declaration report.
+
+1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period** or **Settle and post sales tax**.
+2. Select the settlement period.
+3. Select the "from" date.
+4. Select the sales tax payment version.
+5. Select **OK**. 
+6. In the next dialog box, enter the business activity code.
+7. 
+8. Enter the amount of the credit from the previous period, if applicable, or leave the amount as **0** (zero).
+9. 
+
+8. Select **OK** to confirm the generation of reports.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
 
