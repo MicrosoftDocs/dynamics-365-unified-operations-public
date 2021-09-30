@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Unlinked refunds using the Dynamics 365 Commerce Adyen Connector
+title: Process unlinked refunds with the Dynamics 365 Commerce Adyen Connector
 description: This topic describes how unlinked refunds work using the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: BrianShook
 ms.date: 09/29/2021
@@ -13,27 +13,28 @@ ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
 ---
 
-# Unlinked refunds using the Dynamics 365 Commerce with Adyen Connector
+# Process unlinked refunds with the Dynamics 365 Commerce with Adyen Connector
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how unlinked refunds work using the Microsoft Dynamics 365 Payment Connector for Adyen. This article reviews the ability to process the refund against a new payment method in POS or Call Center.
+This topic describes how unlinked refunds work using the Microsoft Dynamics 365 Payment Connector for Adyen, and reviews the ability to process the refund against a new payment method in pont of sale (POS) or call center.
 
 The Dynamics 365 Payment Connector for Adyen supports the ability to process refunds using a different payment method than was used for the original transaction. While it is recommended to use [linked refunds](linked-refunds.md) to process a refund against the originating payment method provided, there are scenarios where refunding to a different method is required. For example, the original card used for the original payment may now be expired, lost, or cancelled by the user. 
 
 ## Prerequisites
 
-[Payment Method Setup](https://docs.microsoft.com/en-us/dynamics365/commerce/payment-methods)
+The following prerequisites must be completed before the Dynamics 365 Payment Connector for Adyen can process unlinked refunds:
 
-[Omni-channel payments setup](https://docs.microsoft.com/en-us/dynamics365/commerce/omni-channel-payments)
+- Set up [payment methods](../payment-methods.md).
+- Set up [omni-channel payments](../omni-channel-payments.md).
 
 ## Additional configuration
 
-Customers who aren't using the out-of-box implementation of the Dynamics 365 Payment Connector for Adyen must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this topic can be implemented by using the standard payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](adyen-connector.md) provides an out-of-box implementation of every scenario that is described here.
+The [Dynamics 365 Payment Connector for Adyen](adyen-connector.md) provides an out-of-box implementation of every scenario that is described below. Customers who aren't using the out-of-box implementation of the Dynamics 365 Payment Connector for Adyen must set up the connector that supports tokenization of credit cards. All the scenarios described below can be implemented by using the standard payments software development kit (SDK) that is provided with Commerce. 
 
 ## Supported refund scenarios
 
-Dynamics 365 Commerce supports refunds of a transaction that was previously approved and confirmed. Refunds can be either a full refund or a partial refund of the transaction. Refunds cannot exceed the full amount of the original authorization which occurred. Unlinked refunds are only supported in POS and Call Center.
+Dynamics 365 Commerce supports refunds of transactions that were previously approved and confirmed. Refunds can consist of either a full refund or a partial refund of the transaction. Refunds cannot exceed the full amount of the original payment authorization. Unlinked refunds are only supported in POS and Call Center.
 
 ## Enable unlinked refunds functionality
 
@@ -49,17 +50,48 @@ The following payment method variants support unlinked refunds out of the box:
 - Cards
 - Wallet
 
-Not all payment method variants support unlinked refunds. Review the Adyen payment method variant specific documentation for further confirmation.
+Not all payment method variants support unlinked refunds. The following table provides a list of common payment method support capability for linked and unlinked refunds.
+
+|     Payment Method           |     Linked refund supported    |     Unlinked refund supported    |
+|------------------------------|:--------------------------------:|:----------------------------------:|
+|     amexcommercial           |     Yes                        |     Yes                          |
+|     amexconsumer             |     Yes                        |     Yes                          |
+|     amexcorporate            |     Yes                        |     Yes                          |
+|     amexdebit                |     Yes                        |     Yes                          |
+|     amexprepaid              |     Yes                        |     Yes                          |
+|     amexprepaidreloadable    |     Yes                        |     Yes                          |
+|     amexsmallbusiness        |     Yes                        |     Yes                          |
+|     discover                 |     Yes                        |     Yes                          |
+|     maestro                  |     Yes                        |     Yes                          |
+|     maestrouk                |     Yes                        |     Yes                          |
+|     mc                       |     Yes                        |     Yes                          |
+|     mcalphabankbonus         |     Yes                        |     Yes                          |
+|     mcprepaidanonymous       |     Yes                        |     Yes                          |
+|     visa                     |     Yes                        |     Yes                          |
+|     visaalphabankbonus       |     Yes                        |     Yes                          |
+|     visacheckout             |     Yes                        |     Yes                          |
+|     visadankort              |     Yes                        |     Yes                          |
+|     visahipotecario          |     Yes                        |     Yes                          |
+|     visasaraivacard          |     Yes                        |     Yes                          |
+|     vpay                     |     Yes                        |     Yes                          |
+|     givex                    |     No                         |     Yes                          |
+|     svs                      |     No                         |     Yes                          |
+|     cup                      |     Yes                        |     Yes                          |
+|     diners                   |     Yes                        |     Yes                          |
+|     interac                  |     No                         |     Yes                          |
+|     jcb                      |     Yes                        |     Yes                          |
+|     jcb_applepay             |     Yes                        |     Yes                          |
+|     unionpay                 |     Yes                        |     Yes                          |
 
 ### Process an unlinked refund in POS
 
-When a customer brings in an item for return and provides a receipt within the allowed period for returns, as the cashier processes the payment for the return the **Return Payment** dialog box will include an option to **Choose a payment method**. Here the option to choose a supported payment method for refunds (Card, Wallet)
+When a customer returns an item with a valid receipt within the allowed period for returns, when a POS cashier processes the payment for the return the **Return Payment** dialog box will include an option to **Choose a payment method** from the supported payment methods for refunds (cards, wallet).
 
-### Process an unlinked refund in Call Center
+### Process an unlinked refund in call center
 
-When processing an unlinked refund in call center against an order, a call center employee choosing a different payment method from the originating method will be prompted to get an administrator override in order to process the different payment method for the refund.
+When processing an unlinked refund in call center against an order, a call center employee choosing a different payment method from the originating method will be prompted to obtain an administrator override PIN in order to process the different payment method for the refund.
 
-### Set up administrator override PIN for call center
+#### Set up administrator override PIN for call center
 
 To set up an administrator override PIN for call center in Commerce headquarters, follow these steps.
 
