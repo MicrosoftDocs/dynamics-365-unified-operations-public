@@ -49,8 +49,8 @@ You can split only loads that meet all the following criteria:
 
 - One or more load lines have picked quantities.
 - The load status is less than loaded.
-- There is no load line data. (This data is created through license plate consolidation on the staging location, and the *Confirm and transfer* feature doesn't support license plate consolidation.)
-- No inventory is currently awaiting packing at a packing location. (The *Confirm and transfer* feature doesn't support inventory that has been picked to the pack station but hasn't yet been packed.)
+- There is no load line data. (This data is created through license plate consolidation on the staging location, and the Confirm and transfer feature doesn't support license plate consolidation.)
+- No inventory is currently awaiting packing at a packing location. (The *Confirm and transfer* feature doesn't support inventory that has been picked to the pack station but hasn't yet been packed unless containers that are packed are placed at staging locations with loading work created.)
 
 > [!NOTE]
 > This functionality differs from the transport load functionality, which should be used in warehouses that can never plan and create loads before picking, but that instead load the available transportation space after picking is completed.
