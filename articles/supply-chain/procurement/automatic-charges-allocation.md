@@ -34,14 +34,13 @@ Automatic charges, or auto charges, are automatically applied when you create a 
 
 ## Set up parameters
 
-The **Procurement and sourcing parameters** page has a few settings that are especially relevant when you want to allocate charges automatically. Use the **Find auto charges for header** to specify whether charges should automatically be allocated for purchase order header and **Find auto charges for line** to specify whether charges should automatically be allocated for purchase order line.
+The **Procurement and sourcing parameters** page has a few settings that are especially relevant when you want to allocate charges automatically. To complete this setup, follow these steps.
 
-To complete this setup, follow these steps.
-1.	Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
-1.	On the **Prices** tab, set the following fields:
-    - **Find auto charges for header** – Set this field to *Yes*.
-    - **Find auto charges for line** – Set this field to *Yes*.
-
+1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
+1. Open the **Prices** tab.
+1. On the **Prices** FastTab, make the following settings:
+    - **Find auto charges for header** – Specifies whether charges should automatically be allocated for purchase order headers. Set this to *Yes* to use automatic allocation of charges.
+    - **Find auto charges for line** – Specifies whether charges should automatically be allocated for purchase order lines. Set this to *Yes* to use automatic allocation of charges.
 
 ## Set up charges codes
 
