@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to use the Asset library and Shared asset library in Microsoft Dynamics Lifecycle Services (LCS), and Dynamics 365 Headquarters, to upload and synchronize self-service installers so that they can be used with the standard self-service download mechanism. Take note that this functionality does not apply to environments that are not continuously managed by Microsoft, such as on-premises environments or a VHD (Virtual Hard Disk). For such environments, it is highly recommended to download and use the installers directly from LCS (which is where the installers are published at this time).
+This topic explains how to use the Asset library and Shared asset library in Microsoft Dynamics Lifecycle Services (LCS), and Dynamics 365 Headquarters, to upload and synchronize self-service installers so that they can be used with the standard self-service download mechanism. Note that this functionality does not apply to environments that are not continuously managed by Microsoft, such as on-premises environments or a VHD (Virtual Hard Disk). For such environments, it is highly recommended to download and use the installers directly from LCS (which is where the installers are published at this time).
 
 > [!IMPORTANT]
 > The earlier method of uploading self-service packages is currently still supported. However, it's obsolete and will be removed in the future.
