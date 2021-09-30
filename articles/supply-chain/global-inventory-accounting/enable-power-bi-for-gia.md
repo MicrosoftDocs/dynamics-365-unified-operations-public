@@ -47,7 +47,7 @@ To set up the Power BI integration, follow these steps.
     1. Go to **My workspace**, find the dataset for Global Inventory Accounting, and then, on the **Options** menu, select **Settings**.
     1. In **Settings for Global Inventory Accounting**, expand **Parameters**, and update all parameters as required. In particular, be sure to check the following settings:
         1. Overwrite the default **CdsUrl** and **EnvironmentId** values using the values found on the **Environment details** page in LCS (in the **Power Platform integration** section). <!-- KFM: The last half of this sentence was unclear in the original. I don't have access to LCS, so please confirm this description. -->
-        1. Verify that the updated credentials are now shown in the **Data source credentials** section.
+        1. Verify the credentials shown in the **Data source credentials** section. <!-- KFM: What should we see here? What does success look like? -->
     1. Verify that the Power BI reports found at **My workspace \> Reports \> Global Inventory Accounting** are now working correctly and display content from your system. <!-- KFM: I was unsure what we should verify here, so I added "are now working correctly and display content from your system". Is that correct? -->
 
 1. Register the application as described in [Configure PowerBI.com integration](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process).
