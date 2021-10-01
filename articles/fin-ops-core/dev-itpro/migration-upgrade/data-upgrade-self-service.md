@@ -47,7 +47,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     SELECT @installed;
     ```
 
-    If the replication components aren't installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication?view=sql-server-ver15) to install them.
+    If the replication components aren't installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication) to install them.
 
 5. Enable and start the SQL Server Agent on the source database server.
 
