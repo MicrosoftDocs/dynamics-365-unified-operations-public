@@ -136,8 +136,9 @@ Each line in the `ReportFinishedLines` section of the `ProdProductionOrderReport
 | `ProductionWarehouseId` | Optional | String |
 | `ProductionSiteId` | Optional | String |
 | `ProductionWarehouseLocationId` | Optional | String |
+| `InventoryDimension1` to `InventoryDimension12` | Optional | String |
 
-<!-- FKM: Not sure what to do with this, maybe more info would help: "(extensible with other dimensions)" More info: [Add new inventory dimensions through extension](../../fin-ops-core/dev-itpro/extensibility/inventory-dimensions.md) -->
+The 12 extensible dimension (`InventoryDimension1` to `InventoryDimension12`) require customization and aren't always used. For more information about these, see [Add new inventory dimensions through extension](../../fin-ops-core/dev-itpro/extensibility/inventory-dimensions.md).
 
 ### Material consumption (picking list) message
 
