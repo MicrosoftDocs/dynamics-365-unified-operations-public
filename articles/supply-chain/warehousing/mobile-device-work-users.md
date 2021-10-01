@@ -34,35 +34,35 @@ Once the required workers and employees are set up in the **Human Resources** mo
     1. Select **Select**.
     1. On the Action Pane, select **Save**.
 
-1. The default profile can be used to guide the warehouse worker at the packing station on what process to use when operating at the packing station, or to save the preferred profile settings for the worker. On the **Profile** FastTab, make the following settings:
-    - **Container packing policy** – The container packing policy defines how containers on the pack station should be processed. By specifying a container packing policy here it will be pre-selected for the worker when opening the pack station. <!-- MF: See blog post here: https://cloudblogs.microsoft.com/dynamics365/no-audience/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/ -->
-    - **Packing profile ID** – The Packing profile ID can define which packing policy and container settings to use. If the Packing profile ID is associated with a Container packing policy, it is not possible to change the Container packing policy setting on this page. 
+1. A default profile can be used to guide the warehouse worker at the packing station on what process to use when operating at the packing station, or to save the preferred profile settings for the worker. On the **Profile** FastTab, make the following settings:
+    - **Container packing policy** – Select a container packing policy, which defines how containers at the packing station should be processed. The container packing policy specified here will be pre-selected for the worker when opening the packing station. For more information, see the blog post [Improved packing functionality](https://cloudblogs.microsoft.com/dynamics365/no-audience/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611)
+    - **Packing profile ID** – Select a packing profile ID, which defines which packing policy and container settings to use. If the selected packing profile ID is associated with a container packing policy, you won't be able to change the **Container packing policy** setting on this page.
 
-1. The **Default packing station** FastTab can be used to set default values on the pack station login for this worker. The can be changed when opening the pack station. On the **Default packing station** FastTab, make the following settings:
-    - **Site** – Select the default Site to use.
-    - **Warehouse** – Select the default Warehouse to use. 
-    - **Location** – Specify the packing location to use.
+1. Use the **Default packing station** FastTab to set the default packing station that applies when this worker signs in. The worker can still select another packing station if needed. On the **Default packing station** FastTab, make the following settings:
+    - **Site** – Select the site where the default packing station is located.
+    - **Warehouse** – Select the warehouse where the default packing station is located.
+    - **Location** – Select the location of the default packing station.
 
 1. The **Users** FastTab lets you create any number of warehouse app user accounts for the selected worker. Each account is associated with a specific warehouse or warehouses. Use the toolbar to add or remove user accounts, reset the password for a selected account, or assign warehouses to a selected account. For each user account, make the following settings:
 
     - **User ID** – Enter a unique ID.
     - **User name** – Enter a name for the ID.
-    - **Default warehouse** – Set the default warehouse that the worker will be performing work in. Additional warehouses can be assigned in the toolbar, and the user can change between warehouses by using the mobile device menu item indirect activty "Change warehouse".
-    - **Menu name** – Select the root menu that will be starting page for the user. Being able to set this up per worker is useful to control the menu structure each worker can use, for example workers only active in the outbound area could have a menu tailored for their work tasks. 
-    - **Inactive** – If a worker enters the wrong password in the warehouse app 5 times their user will be set to inactive. You would then need to remove the inactive flag with this setting.
+    - **Default warehouse** – Set the default warehouse where the worker usually works. Additional warehouses can be assigned in the toolbar, and the worker can change between warehouses by using the mobile device menu item **Change warehouse** indirect activity.
+    - **Menu name** – Select the root menu that will be starting page for the worker. Being able to set this up per worker is useful to control the menu structure each worker can use. For example workers that are only active in the outbound area could have a menu tailored for tasks related to outbound operations for that area.
+    - **Inactive** – Indicates that the user account is inactive. This can happen if a worker enters the wrong password in the warehouse app 5 times in a row, but you could also set this check box manually. Clear this check box to make the user active again.
 
 1. On the **Work** FastTab, make the following settings:
 
-    - **Allow pick location override** – When selected, this setting will allow the user to override location on picking steps. This can be useful if the physical inventory doesn't match the system suggested location.
-    - **Allow put location override** – When selected, this setting will allow the user to override location on put steps. This could be useful if the suggested put location is full or unavailable for the moment, or if staging locations changed.
-    - **Allow sales over picking** – During sales order picking, when this setting is selected it will allow the user to over-pick. For more info see: https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/over-picking-for-sales-and-transfer-orders
-    - **Allow transfer order over picking** – During transfer order picking, when this setting is selected it will allow the user to over-pick. For more info see: https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/over-picking-for-sales-and-transfer-orders
-    - **Allow movement of inventory with associated work** – When selected, this setting will allow workers to move inventory, even if it has been reserved or is associated with other work already. For more info see: https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/move-inventory-associated-work
-    - **Allow manual item reallocation** – During short-picking it is possible to have automatic and manual item reallocation so that users are guided to pick inventory from another location. While automatic reallocation is available for all users, manual reallocation requires explicit setup for that user. Controlling this per worker can be helpful to device the visibility each worker may have, as items in quaratine or bulk area might only be picked by trusted workers. <!-- MF: See blog post here: https://cloudblogs.microsoft.com/dynamics365/no-audience/2016/11/07/automatic-and-manual-item-reallocation-during-the-short-picking-dynamics-365-for-operations-1611/ -->
-    - **Is a cycle count supervisor** – When selected, this user is set to be a cycle count supervisor and all cycle counts performed on the warehouse app will be immediately approved. The maximum percentage, quantity and value limits are not considered when this option is selected.
-    - **Maximum percentage limit** – The highest percentate limit that a cycle count can vary from the expected count without requiring a supervisor approval.
-    - **Maximum quantity limit** – The total quantity that the entered quantity can differ from the expected quantity in units withour requiring a supervisor approval.
-    - **Maximum value limit** –  The maximum amount that the cost of the inventory can differ from the expected cost without requiring approval by a cycle count supervisor.
+    - **Allow pick location override** – Set to *Yes* to allow the worker to override location on picking steps. This can be useful if the physical inventory doesn't match the system suggested location.
+    - **Allow put location override** – Set to *Yes* to allow the worker to override location on put steps. This could be useful if the suggested put location is full or unavailable for the moment, or if staging locations changed.
+    - **Allow sales over picking** – Set to *Yes* to allow the worker to over-pick when picking sales orders. For more information, see [Over-picking for sales orders and transfer orders](over-picking-for-sales-and-transfer-orders.md).
+    - **Allow transfer order over picking** – Set to *Yes* to allow the worker to over-pick when picking transfer orders. For more information, see [Over-picking for sales orders and transfer orders](over-picking-for-sales-and-transfer-orders.md).
+    - **Allow movement of inventory with associated work** – Set to *Yes* to allow the worker to move inventory that is already reserved or is associated with other work already. For more information, see [Movement of inventory with associated work in Warehouse management](move-inventory-associated-work.md).
+    - **Allow manual item reallocation** – Set to *Yes* to enable manual reallocation for the worker during short picking. Item reallocation guides workers to pick inventory from another location. While automatic reallocation is available for all workers, manual reallocation requires explicit setup for that worker. Controlling this per worker can be helpful to control the visibility each worker has, for example because picking items from the quarantine or bulk area might be restricted to trusted workers. For more information, see the blog post [Automatic and manual item reallocation during short picking](https://cloudblogs.microsoft.com/dynamics365/no-audience/2016/11/07/automatic-and-manual-item-reallocation-during-the-short-picking-dynamics-365-for-operations-1611/).
+    - **Is a cycle count supervisor** – Set to *Yes* to make this worker a cycle count supervisor, which means that all cycle counts that this worker performs on the warehouse app will be immediately approved. **Maximum percentage limit**, **Maximum quantity limit**, and **Maximum value limit** are not considered for workers where this option is selected.
+    - **Maximum percentage limit** – Enter the highest percentage limit that a cycle count can vary from the expected count without requiring supervisor approval.
+    - **Maximum quantity limit** – Enter the total quantity that the entered quantity can differ from the expected quantity (in units) without requiring supervisor approval.
+    - **Maximum value limit** – Enter the maximum amount that the cost of the inventory can differ from the expected cost without requiring approval by a cycle count supervisor.
 
 1. On the Action Pane, select **Save**.
 1. If you added a new user account, the **Set password** dialog box appears, where you can create a simple password that the user can use to sign in to the mobile app. Enter a simple password (twice) and select **Save password** to continue.
