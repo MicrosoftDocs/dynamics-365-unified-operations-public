@@ -47,7 +47,7 @@ You can use the fields at the top of the **Message processor messages** page to 
   - *Queued* – The message is ready to be processed by the message processor.
   - *Processed* – The message was successfully processed by the message processor.
   - *Canceled* – The message was processed, but processing failed.
-- **Message content** – This filter does a full-text search of message content. (Message content is not shown in the grid.) The filter treats most special symbols (such as "-") as spaces, and treats all space characters as Boolean OR operators. T=For example, this means if you search for a specific `journalid` value equal "USMF-123456", the system will find all messages that contain "USMF" or "123456", which is likely to be a long list. Therefore, it would be better to enter just "123456" alone because that will return more specific results.
+- **Message content** – This filter does a full-text search of message content. (Message content is not shown in the grid.) The filter treats most special symbols (such as "-") as spaces, and treats all space characters as Boolean OR operators. For example, this means if you search for a specific `journalid` value equal "USMF-123456", the system will find all messages that contain "USMF" or "123456", which is likely to be a long list. Therefore, it would be better to enter just "123456" alone because that will return more specific results.
 
 ## Example message type: Request inventory adjustment financial update
 
@@ -68,7 +68,7 @@ The toolbar on the **Log** tab includes the following buttons:
 
 ## Message processor batch job
 
-When running a cloud and edge deployment, the *Message processor* batch job will automatically be evoked when a new message is created for processing, so you should not need to schedule this job manually.
+When running a distributed hybrid topology with scale units, the *Message processor* batch job will automatically be evoked when a new message is created for processing, so you should not need to schedule this job manually.
 
 If necessary, you can access the batch job by going to **System administration > Message  processor > Message processor**.
 

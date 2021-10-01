@@ -3,7 +3,7 @@
  
 title: Set up a work template for purchase orders
 description: This topic describes how to set up a simple work template to be used when putting away received items. 
-author: ShylaThompson
+author: Mirzaab
 ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up a work template for purchase orders
 

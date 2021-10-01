@@ -4,7 +4,7 @@
 title: Bahrain overview
 description: This topic provides an overview of functionality specific to Bahrain. 
 author: ilkond
-ms.date: 08/28/2020
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: "intro-internal"
 ms.search.region: Bahrain
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: ilyako
 ms.search.validFrom: 2020-06-04
 ms.dyn365.ops.version: 10.0.13
 

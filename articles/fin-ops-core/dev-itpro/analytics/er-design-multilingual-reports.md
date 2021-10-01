@@ -4,7 +4,7 @@
 title: Design multilingual reports in Electronic reporting
 description: This topic explains how you can use Electronic reporting (ER) labels to design and generate multilingual reports.
 author: NickSelin
-ms.date: 04/21/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Design multilingual reports in Electronic reporting
 
 [!include[banner](../includes/banner.md)]
+
+[!include[banner](../includes/preview-banner.md)]
 
 ## Overview
 
@@ -234,10 +236,14 @@ As described earlier in this topic, the **Label** and **Description** attributes
 - The value of an ER label that is linked to the **Label** attributes is stored in the **Label** field of the returned record.
 - The value of an ER label that is linked to the **Description** attributes is stored in the **Description** field of the returned record.
 
+## <a name=performance></a>Performance
+
+When you configure an ER format component to generate a report in your preferred [language](#language), or to import an inbound document where the content is parsed by your preferred language, we recommend that you enable the **Cache the preferred language of the current user for ER runs** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace. This feature helps improve performance, especially for ER format components that contain multiple references to labels in ER formulas and bindings and many [validation](general-electronic-reporting-formula-designer.md#TestFormula) rules to generate user messages in your preferred language.
+
 ## Additional resources
 
 - [Electronic Reporting overview](general-electronic-reporting.md)
-- [Electronic Reporting functions](er-formula-language.md#functions)
+- [Electronic Reporting functions](er-formula-language.md#Functions)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

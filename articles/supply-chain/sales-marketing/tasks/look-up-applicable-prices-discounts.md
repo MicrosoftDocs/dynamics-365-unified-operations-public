@@ -3,7 +3,7 @@
  
 title: Look up applicable prices and discounts
 description: This procedure shows how to find the price and/or discount for a product which is currently valid for a specific customer, without creating a sales order. 
-author: omulvad
+author: Henrikan
 ms.date: 11/10/2016
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

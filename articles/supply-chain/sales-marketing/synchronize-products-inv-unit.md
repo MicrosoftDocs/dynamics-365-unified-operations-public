@@ -3,7 +3,7 @@
 
 title: Synchronize products with inventory unit from Supply Chain Management to Field Service
 description: This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
-author: ChristianRytt
+author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3 
 ms.search.validFrom: 2018-12-01
 

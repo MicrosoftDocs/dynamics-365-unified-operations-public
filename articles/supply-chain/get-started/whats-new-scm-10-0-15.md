@@ -40,7 +40,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 The following features are included in this release. Follow the links to the [release plan](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
 
-- Cloud and edge scale unit management with manufacturing and warehouse execution workloads<br> - For more information, see [Cloud and edge scale units for manufacturing and warehouse management workloads](../cloud-edge/cloud-edge-landing-page.md).
+- Cloud and edge scale unit management with manufacturing and warehouse execution workloads<br> - For more information, see [Scale units in a distributed hybrid topology](../cloud-edge/cloud-edge-landing-page.md).
 
 - [Create and process transfer orders from the warehouse app](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - For more information, see [Create transfer orders from the warehouse app](../warehousing/create-transfer-order-from-warehouse-app.md).
 

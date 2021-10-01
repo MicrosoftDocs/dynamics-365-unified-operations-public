@@ -3,7 +3,7 @@
 
 title: Inventory Visibility Add-in overview
 description: This topic explains what Inventory Visibility is and describes its features.
-author: sherry-zheng
+author: yufeihuang
 ms.date: 10/26/2020
 ms.topic: article
 ms.prod:
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
 
 # Inventory Visibility Add-in overview
@@ -36,22 +36,20 @@ As a microservice that is built on Microsoft Dataverse, Inventory Visibility pro
 
 You can integrate Inventory Visibility with multiple third-party systems by setting configuration options for standardized inventory dimensions and setting up transaction types. Inventory Visibility also supports customized extensibility through configurable calculated quantities.
 
-## Supported features
+## Inventory Visibility integration with Dynamics 365 Supply Chain Management
 
-### Inventory Visibility integration with Dynamics 365 Supply Chain Management
+The integrated solution pulls inventory data from Dynamics 365 Supply Chain Management and continuously tracks inventory changes. For more information, see [Install and set up Inventory Visibility](inventory-visibility-setup.md) and [Configure Inventory Visibility](inventory-visibility-configuration.md).
 
-The integrated solution pulls inventory data from Dynamics 365 Supply Chain Management and continuously tracks inventory changes. For more information, see [Set up Inventory Visibility](inventory-visibility-setup.md).
+## Get a global view of inventory
 
-### Get a global view of inventory
-
-The integrated solution lets you define your own data sources and centralize inventory data. For more information, see [Inventory Visibility configuration](inventory-visibility-configuration.md).
+The integrated solution lets you define your own data sources and centralize inventory data. For more information, see [Configure Inventory Visibility](inventory-visibility-configuration.md).
 
 There are two approaches to viewing your inventory:
 
 - Submit a query through the high-performance API. This API can return near-real-time inventory data directly from a cached instance. You can find contracts and samples in [Inventory Visibility public APIs](inventory-visibility-api.md).
 - View the raw on-hand list. This list is periodically synced from a cached instance and is visible in Dataverse. For more information, see [Inventory Visibility app](inventory-visibility-power-platform.md).
 
-### Soft reservations
+## Soft reservations
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 

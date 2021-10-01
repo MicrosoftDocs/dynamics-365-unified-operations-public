@@ -2,9 +2,9 @@
 # required metadata
 
 title: Create fixed compensation plans
-description: Fixed compensation refers to an employee's regular gross salary or wages. This article describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
-author: andreabichsel
-ms.date: 06/20/2017
+description: This topic describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
@@ -31,14 +31,14 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Fixed compensation refers to an employee's regular gross salary or wages. This article describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
+Fixed compensation refers to an employee's regular gross salary or wages. This topic describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
 
 Fixed compensation amounts can be calculated for your employees, based on factors such as performance, region, and budget increases. Dynamics 365 Human Resources supports step, grade, and band compensation types.
 
 ## Fixed compensation components
 ### Compensation levels
 
-You can use **compensation levels** to set compensation for various jobs, to help guarantee that the employees who hold those jobs are paid fairly. On the **Compensation levels** page, you can set up the compensation levels that are required for each step, grade, and band plan. Use the **Up** and **Down** buttons to put the levels in the correct order, according to their type. By setting compensation levels on a job, you help guarantee that all employees who hold a position for that job are paid at the same level.
+You can use **Compensation levels** to set compensation for various jobs, to help guarantee that the employees who hold those jobs are paid fairly. On the **Compensation levels** page, you can set up the compensation levels that are required for each step, grade, and band plan. Use the **Up** and **Down** buttons to put the levels in the correct order, according to their type. By setting compensation levels on a job, you help guarantee that all employees who hold a position for that job are paid at the same level.
 
 ### Reference points
 
@@ -46,7 +46,7 @@ You can use **compensation levels** to set compensation for various jobs, to hel
 
 ### Compensation grids
 
-After you set up the levels and reference points, they can be combined to create a **compensation grid**. On the **Compensation grids** page, define information about the grid. For example, specify what the grid designed to be used for, what type of plan it will be used with, and which reference points or columns are required in the grid. After you've finished entering that information, click **Compensation structure** to add levels and amounts to your grid. 
+After you set up the levels and reference points, they can be combined to create a **Compensation grid**. On the **Compensation grids** page, define information about the grid. For example, specify what the grid designed to be used for, what type of plan it will be used with, and which reference points or columns are required in the grid. After you've finished entering that information, click **Compensation structure** to add levels and amounts to your grid. 
 
 **Tip:** Use the **Mass changes** function on the compensation structure to set initial amounts, and then increment by percentages or amounts across your levels or reference points.
 
@@ -61,13 +61,13 @@ The **Out of range tolerance** setting lets you specify how strict you want to b
 
 The **Hire rule** setting lets you specify whether all employees should receive the same increase, regardless of the date that they were hired (**Hire rule** = **None**), or whether employees should receive a percentage of the award, based on how long they were employed during the cycle (**Hire rule** = **Percent**). 
 
-A **range utilization matrix** is useful if you want either to reduce the time that is required for employees to reach the midpoint of their range, or to increase the time that is required for employees to reach to the maximum reference point in the range. For example, you want to give employees who are in the bottom 25 percent of their range 110 percent of their target award, but you want to give employees who are in the top 25 percent of their range only 80 percent of their target award, to prevent them from reaching the maximum as quickly. 
+A **Range utilization matrix** is useful if you want either to reduce the time that is required for employees to reach the midpoint of their range, or to increase the time that is required for employees to reach to the maximum reference point in the range. For example, you want to give employees who are in the bottom 25 percent of their range 110 percent of their target award, but you want to give employees who are in the top 25 percent of their range only 80 percent of their target award, to prevent them from reaching the maximum as quickly. 
 
 After you define the basics of the fixed compensation plan, you can set up the compensation structure for the plan. Click **Set up compensation**. A dialog slider opens that gives you three options:
 
--   Create a new compensation grid by selecting a reference point setup and giving the grid a name.
--   Create a new compensation grid by making a copy of an existing grid that you can use as a starting point.
--   Use an existing compensation grid that has already been defined. All compensation plans that use the same grid receive updates if that grid is changed.
+-   **Create a new compensation matrix** by selecting a reference point setup and giving the grid a name.
+-   **Create a new compensation matrix** by making a copy of an existing grid that you can use as a starting point.
+-   **Use an existing compensation matrix** that has already been defined. All compensation plans that use the same grid receive updates if that grid is changed.
 
 After you select an option, the **Compensation structure** page opens, and you can make changes to the new compensation grid or the existing compensation grid.
 
@@ -78,7 +78,7 @@ The first step in enrolling employees in a fixed compensation plan is to determi
 
 **Note:** Eligibility rules are used to determine eligibility for both fixed and variable compensation plans. 
 
-The eligibility rule considers the value of specific fields in the Job, Position, and Employee records to determine whether an employee is eligible for a compensation plan.
+The eligibility rule considers the value of specific fields in the **Job**, **Position**, and **Employee** records to determine whether an employee is eligible for a compensation plan.
 
 -   On the **Job** page, the eligibility rule considers the following fields:
     -   The **Job** field
@@ -90,7 +90,7 @@ The eligibility rule also considers labor unions that are associated with the em
 
 ### Define fixed compensation actions
 
-**Fixed compensation actions** are used when you set or apply changes to an employee's fixed compensation. Fixed compensation actions let you provide descriptive names for the types of actions that a Compensation and benefits manager can perform. Different action types have special logic behind them, so that they can be used at specific times. 
+**Fixed compensation actions** are used when you set or apply changes to an employee's fixed compensation. Fixed compensation actions let you provide descriptive names for the types of actions that a compensation and benefits manager can perform. Different action types have special logic behind them, so that they can be used at specific times. 
 
 For example, when the fixed compensation is set up for an employee, only actions that have a type of **Hire/Rehire** can be used. In this case, you might want to create three different actions of the **Hire/Rehire** type, and name them **Hire**, **Rehire**, and **Transfer**. You then have a more descriptive explanation of why the fixed compensation was given to an employee or changed.
 
@@ -98,9 +98,9 @@ For example, when the fixed compensation is set up for an employee, only actions
 
 You can now assign an employee to a fixed compensation plan. Open the **Employees** page, and select the employee to enroll in the compensation plan. On the Action Pane, click **Compensation** &gt; **Fixed plan**. You can now create a new fixed compensation action for that employee. 
 
-**Note:** The compensation plan field shows only the plans that an employee is eligible for under the eligibility rules that were set up for each plan. If no eligibility rule is set up for a plan, no employees will be eligible for that plan. 
+**Note:** The **Compensation plan** field shows only the plans that an employee is eligible for under the eligibility rules that were set up for each plan. If no eligibility rule is set up for a plan, no employees will be eligible for that plan. 
 
-The system verifies that the compensation amount that is specified for a compensation plan of the grade or band type is within the minimum and maximum reference points for the given compensation level on the employee's job. If the compensation amount is outside the allowed range, a warning or error message is displayed, depending on the tolerance level that is set on the fixed compensation plan.
+The compensation amount that is specified for a compensation plan of the grade or band type is verified that it is within the minimum and maximum reference points for the given compensation level on the employee's job. If the compensation amount is outside the allowed range, a warning or error message is displayed, depending on the tolerance level that is set on the fixed compensation plan.
 
 
 

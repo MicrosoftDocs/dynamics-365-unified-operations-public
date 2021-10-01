@@ -3,7 +3,7 @@
 
 title: Service subscriptions
 description: Subscriptions are based on a time-and-materials project. You can create subscriptions from a project, from the Service subscriptions page, or by using a service subscription group.
-author: ShylaThompson
+author: kamaybac
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 

@@ -4,7 +4,7 @@
 title: Test modules with module mocks
 description: This topic describes how to test modules by using module mocks. 
 author: samjarawan
-ms.date: 09/15/2020
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,7 +37,7 @@ Modules typically get their data from data actions and configuration fields, and
 
 Module mock data files are stored under the **/src/&lt;MODULE\_NAME&gt;/mocks** directory. The default mock file uses the **&lt;MODULE\_NAME&gt;.json** file, but you can add other mock files. To specify different module mock data files when you test in a web browser, append a colon (**:**) and a comma-separated list of mock file names (but without the **.json** file name extension) to the module name.
 
-For example, for a module mock data file that is named **mockTest1.json** and added to the module **mocks** directory, use the URL `http://localhost:4000/modules?type=product-feature:mockTest1`. In this example, the mock name is **product-feature**, which is used in the URL.
+For example, for a module mock data file that is named **mockTest1.json** and added to the module **mocks** directory, use the URL `http://localhost:4000/modules?type=product-feature:mockTest1`. In this example, the mock name is **mockTest1**, which is used in the URL.
 
 ## Mock configuration and data fields
 

@@ -3,7 +3,7 @@
 
 title: Canada GST/HST Internet File Transfer (GIFT)
 description: This topic explains how to configure and use the Canada Goods and Services Tax or Harmonized Sales Tax (GST/HST) Internet File Transfer (GIFT) feature.
-author: ericwang
+author: EricWangChen
 ms.date: 08/20/2019
 ms.topic: article
 ms.prod: 
@@ -22,7 +22,7 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Canada
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
 

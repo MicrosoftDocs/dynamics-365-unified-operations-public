@@ -36,7 +36,7 @@ Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that ha
     + Total Tax
     + Total Amount
     
-5. To ensure that the system considers trade and sales agreements to calculate the price:
+5. To ensure that the system considers trade agreements to calculate the price:
     1. Navigate to your Supply Chain Management environment.
     2. Navigate to **Accounts receivable \> Setup \> Accounts receivable parameters**.
     3. Select the **Prices** tab in the side navigation bar.
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that ha
 
 When you select **Price Order** in Sales, the **Totals** function on the **Sales Order \> View** tab in Supply Chain Management is called for the associated sales order. The values in the order total in Sales are used to fill in the corresponding columns in Supply Chain Management.
 
-When the sales order total is calculated in Supply Chain Management, the calculation evaluates the existing trade agreements and sales agreements for the customer and the products that are listed in the sales order. This information is used to calculate the totals. When **Price Order** is selected, Sales automatically reflects all the setup that has been done in Supply Chain Management.
+When the sales order total is calculated in Supply Chain Management, the calculation evaluates the existing trade agreements for the customer and the products that are listed in the sales order. This information is used to calculate the totals. When **Price Order** is selected, Sales automatically reflects all the setup that has been done in Supply Chain Management.
 
 ## Limitations
 
@@ -55,6 +55,7 @@ When the columns in Sales are filled in, the following limitations apply:
 + The setup of charges and charge allocations in Supply Chain Management isn't replicated in Sales.
 + Pricing doesn't consider special retail pricing that is specified in the **Retail Channel** column on the sales order line page in Supply Chain Management.
 + Discounts that are defined in the **Trade Allowance Management** section of Supply Chain Management aren't considered.
++ Pricing doesn't consider sales agreements.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

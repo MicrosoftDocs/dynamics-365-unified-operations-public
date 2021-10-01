@@ -4,7 +4,7 @@
 title: Upgrade data in development or demo environments
 description: This topic provides instructions for upgrading your Finance and Operations application release.
 author: laneswenka
-ms.date: 06/29/2020
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,12 +57,6 @@ In Tier 2 or higher environments, including Production, you will run through the
 
      Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\AosService\PackagesLocalDirectory" -metadatadir        J:\AosService\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
      ```
-
-1. If you're upgrading from Microsoft Dynamics AX 2012, install the following application X++ hotfixes in the destination environment before you run the data upgrade:
-
-    - KB 4033183 - Dynamics AX 2012 R2 or Dynamics AX 2012 R3 Pre-CU8 non-retail upgrade fails with Object not found for dbo.RETAILTILLLAYOUTZONE.
-    - KB 4040692 - Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Operations 7.2 upgrade fails on RetailSalesLine duplicate index on SalesLineIdx.
-    - KB 4035490 - Performance issue with GeneralJournalAccountEntry MainAccount field upgrade script.
 
 1. If you're upgrading to Dynamics 365 Finance version 10.0.9 or 10.0.10, install the quality updates in the destination environment before you run the data upgrade.
 1. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required because the demo data contains bad records for some kernel X++ classes.

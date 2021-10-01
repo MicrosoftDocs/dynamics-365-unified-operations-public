@@ -104,10 +104,6 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
 
-### Cost management
-
-- [Troubleshoot cost management](../cost-management/troubleshoot-costmanagement.md)
-
 ### Asset management
 
 - [Set up the Asset management mobile workspace](../asset-management/set-up-asset-management-mobile.md)
@@ -119,8 +115,6 @@ We have recently added or significantly updated the following help topics. They 
 - [Partial location cycle counting](../warehousing/partial-location-cycle-counting.md)
 
 - [Pick line grouping](../warehousing/pick-line-grouping.md)
-
-- [Troubleshoot inventory operations](../inventory/troubleshoot-inventory-operations.md)
 
 - [Warehouse slotting](../warehousing/warehouse-slotting.md)
 
