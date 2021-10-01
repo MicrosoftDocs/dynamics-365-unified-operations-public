@@ -21,9 +21,11 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: aevengir
 ms.search.validFrom: 2020-04-23
-ms.dyn365.ops.version: Release 10.0.12
+ms.dyn365.ops.version: 10.0.12
 ---
 # Cost calculation level
+
+[!include [banner](../includes/banner.md)]
 
 The bill of materials (BOM) level that is named **Cost calculation level** excludes production orders and batch orders from its calculations. The system uses this level when it runs cost calculations in costing versions. In processes such as recalculation and inventory close, the system uses the **Costing level** BOM level instead.
 

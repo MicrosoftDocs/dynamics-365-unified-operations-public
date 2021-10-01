@@ -48,7 +48,7 @@ Sales associates can capture multiple addresses for a customer. The customer's n
 
 ## Sync customers and Async customers
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > Whenever the POS goes offline, the system automatically creates the customers asynchronously, even if the Async customer creation mode is disabled. Therefore, regardless of your selection between Sync and Async customer creation, Commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job (formerly named the **Synchronize customers and business partners from async mode** job), and the **1010** job, so that any Async customers are converted to Sync customers in Commerce headquarters.
 
 In Commerce, there are two modes of customer creation: Synchronous (or Sync) and Asynchronous (or Async). By default, customers are created synchronously. In other words, they are created in Commerce headquarters in real time. The Sync customer creation mode is beneficial because new customers are immediately searchable across channels. However, it also has a drawback. Because it generates [Commerce Data Exchange: Real-time Service](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) calls to Commerce headquarters, performance can be affected if many concurrent customer creation calls are made.

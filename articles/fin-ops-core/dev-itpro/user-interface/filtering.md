@@ -4,7 +4,7 @@
 title: Filtering options
 description: This topic explains the filtering options that are available.
 author: jasongre
-ms.date: 01/02/2020
+ms.date: 09/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,7 +57,7 @@ One important difference between filtering in Finance and Operations apps and fi
 
 | Filter operator                      | Finance and Operations apps query syntax |
 |--------------------------------------|------------------------------------------|
-| Is “circle” /  Is equal to “circle”        | “circle”                                    |
+| Is exactly “circle” /  Is equal to “circle”        | “circle”                                    |
 | Is not “circle” / Is not equal to “circle” | “!circle”                                   |
 | Is one of “circle”, “square”, “circlesquare”     | “circle,square,circlesquare”                         |
 | Contains “circle”                       | “\*circle\*”                                |
@@ -71,8 +71,11 @@ One important difference between filtering in Finance and Operations apps and fi
 
 Any query syntax that doesn't match the preceding templates is interpreted as the **matches** operator.
 
-Note that the syntax for looking for blank values in a column remains the same as AX2012. With either the **matches** operator or the **is equal to** operator, you can type **""** to retrive rows with blank values for the current column. For example, **First Name IS ""** will finds all records where the first name is blank.    
+### Other frequent filter expressions
+Users may want to filter for blank values in column. While there is no filter operator for this specifically, the syntax for performing this filtering remains the same as Dynamics AX 2012. With either the **matches** operator or the **is equal to** operator, users can type **""** to retrieve rows with blank values for the current column. For example, **First Name IS ""** will find all records where the first name is blank. Note that "" only matches rows where the column value is the empty string and does not match rows where the column value is NULL or 0.
 
+Users may also want to filter for records that do not belong to a specific list of values. While "is not one of" is not a filter operator, this filter expression can be achieved using the **matches** operator by negating each list item in the list. For example,  **!circle, !square** will find all records that are neither "circle" nor "square." 
+    
 ## Filter Pane
 The Filter Pane provides an easy-to-use interface for filtering full page lists. The Filter Pane is an inline pane that slides in from the left side of the screen and pushes the page content to the right, so that users can see the data that they want to filter. Users open this filter mechanism by clicking the system-defined **Show filters** button on the left side of the page. After it has been opened, the Filter Pane remains visible until the user goes to a new page, or until the user closes the Filter Pane by using the **Hide filters** button.
 

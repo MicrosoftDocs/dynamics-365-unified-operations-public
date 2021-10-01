@@ -3,7 +3,7 @@
  
 title: Check the availability of stock
 description: This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. 
-author: ShylaThompson
+author: yufeihuang
 ms.date: 06/25/2019
 ms.topic: business-process 
 ms.prod:  
@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Check the availability of stock
 

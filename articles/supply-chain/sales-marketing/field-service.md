@@ -3,7 +3,7 @@
 
 title: Integration with Microsoft Dynamics 365 Field Service overview
 description: This topic provides an overview of the Integration with Microsoft Dynamics 365 Field Service. 
-author: ChristianRytt
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update 
 ms.search.validFrom: 2017-07-8
 
@@ -62,7 +62,7 @@ The additional functionality in this second phase focused on giving field techni
 - Supply Chain Management projects connected with Dynamics 365 Field Service work orders
 - Dynamics 365 Field Service work orders with link to Supply Chain Management projects, apply this project number to the sales order to allow invoicing from the project. 
 
-![Synchronization of business processes between Supply Chain Management and Field Service.](./media/FSv2overview.png)
+![Synchronization of business processes between Supply Chain Management and Field Service, including inventory and project information.](./media/FSv2overview.png)
 
 ### The second phase of the integration between Field Service and Supply Chain Management enables synchronization with the following templates:
 - Warehouses (Supply Chain Management to Field Service) - Warehouses from Supply Chain Management to Field Service [Advanced Query] 

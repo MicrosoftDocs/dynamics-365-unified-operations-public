@@ -3,7 +3,7 @@
 
 title: Unit of measure conversion per product variant
 description: This topic explains how to set up unit of measure conversions for product variants. It includes an example of the setup.
-author: johanhoffmann
+author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.reviewer: kamaybac
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: johanho
+ms.author: benebotg
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10.0
 

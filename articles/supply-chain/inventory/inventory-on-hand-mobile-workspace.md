@@ -3,7 +3,7 @@
 
 title: Inventory on-hand mobile workspace
 description: This topic provides information about the Inventory on-hand mobile workspace. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
-author: Mirzaab
+author: yufeihuang
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 267094
 ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mirzaab
+ms.author: yufeihuang
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 

@@ -4,7 +4,7 @@
 title: Update an environment
 description: This topic explains how to update an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
-ms.date: 06/08/2021
+ms.date: 09/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -117,7 +117,10 @@ After you've marked an update as a release candidate, follow these steps to upda
 > [!NOTE]
 > If there is an on-going operation in the environment, or if the environment is already running on the same version or a later version, the scheduled update is canceled. When a scheduled update is canceled, an email notification is sent to all project stakeholders. Customers can also cancel an update by selecting **Cancel** on the environment details page. If customers want to reschedule or change an update, they can cancel the current operation and schedule a new one.
 
-> For environments that are deployed in the modern infrastructure stack, if servicing is unsuccessful, the environment is automatically rolled back. To learn why the operation was unsuccessful, you can download the logs from the environment history page.
+### Rollback
+For environments that are deployed in the modern infrastructure stack, if servicing is unsuccessful, the environment is automatically rolled back in most cases. To learn why the operation was unsuccessful, you can download the logs from the environment history page.
 
+> [!NOTE]
+> For a small subset of environments where rollback may result in extended downtime, such as when the database size is large, the environment is left in a failed state to determine if actions can be taken to avoid performing the rollback. If the failed operation cannot move forward, then the normal rollback process is initiated.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

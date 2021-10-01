@@ -1398,12 +1398,16 @@
         items:
         - name: Commerce localization for Russia
           href: localizations/rus-commerce-localization.md
-        - name: Simplified customer address format in Commerce POS for Russia
-          href: localizations/rus-simplified-address.md
         - name: Set up Commerce localization for Russia
           href: localizations/rus-commerce-setup.md
         - name: Prepayments in Commerce for Russia
           href: localizations/rus-commerce-prepayments.md          
+        - name: Simplified customer address format in Commerce POS for Russia
+          href: localizations/rus-simplified-address.md
+        - name: Fiscal printer integration sample for Russia
+          href: localizations/rus-fpi-sample.md
+        - name: Customer information management for Russia
+          href: localizations/rus-customer-information.md 
       - name: Sweden
         items:
         - name: Cash register functionality
@@ -2220,6 +2224,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
         - name: Configure the global address book
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
+        - name: Address setup
+          href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
         - name: Address books FAQ
           href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
         - name: Configure address books
@@ -2329,7 +2335,11 @@
     - name: Extensibility
       items: 
       - name: Commerce development and extensibility
-        href: dev-itpro/dev-retail-home-page.md
+        items:
+          - name: Commerce for IT pros and developers
+            href: dev-itpro/dev-retail-home-page.md
+          - name: Set up a local development environment
+            href: dev-itpro/setup-local-dev-env.md
       - name: Online channel extensibility
         items:
         - name: Online channel extensibility overview

@@ -284,6 +284,8 @@
         href: accounts-payable/broker-contract.md
       - name: Royalty contract management
         href: accounts-payable/royalty-contract.md
+      - name: Reference original invoices in credit notes (vendor invoices)
+        href: accounts-payable/gbl-original-invoice-numbers-credit-notes-ap.md
       - name: Payments and settlements
         items:
         - name: Centralized payments for Accounts payable
@@ -1272,6 +1274,8 @@
           href: finance-insights/use-customer-payment-predictions.md
         - name: Snapshots overview
           href: finance-insights/payment-snapshots.md
+      - name: Finance insights troubleshooting FAQ
+        href: finance-insights/finance-insights-troubleshooting-faq.md
     - name: Project management and accounting
       items:
       - name: Project management and accounting overview
@@ -1574,6 +1578,10 @@
               href: localizations/emea-multiple-vat-registration-numbers.md
             - name: Reporting for multiple VAT registrations
               href: localizations/emea-reporting-for-multiple-vat-registrations.md
+            - name: Austria reporting 
+              items: 
+              - name: VAT declaration
+                href: localizations/emea-aut-vat-declaration-austria.md
             - name: France reporting
               items: 
               - name: VAT declaration
@@ -1640,6 +1648,8 @@
           href: localizations/emea-aut-intrastat.md
         - name: Purchase duties
           href: localizations/emea-aut-purchase-duties.md
+        - name: VAT declaration
+          href: localizations/emea-aut-vat-declaration-austria.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
@@ -2676,8 +2686,6 @@
           href: localizations/emea-ita-vat-statements-details.md
         - name: Quarterly VAT communication report
           href: localizations/emea-ita-quarterly-vat-communication.md
-        - name: Black list report
-          href: localizations/emea-ita-black-list-report.md
         - name: Competence date and fiscal journal
           href: localizations/emea-ita-competence-date.md
         - name: Depreciation of fixed assets
@@ -3801,6 +3809,8 @@
       items:
       - name: Electronic reporting overview
         href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+      - name: Electronic reporting components
+        href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
       - name: Configurations
         items:
         - name: Create configurations
@@ -4509,6 +4519,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
         - name: Configure the global address book
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
+        - name: Address setup
+          href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/finance/toc.json
         - name: Address books FAQ
           href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
         - name: Configure address books

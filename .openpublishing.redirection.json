@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "articles/finance/localizations/emea-ita-black-list-report.md",
+      "redirect_url": "italy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md",
+      "redirect_url": "/dynamics365/supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/dev-itpro/hardware-station-extensibility.md",
       "redirect_url": "/dynamics365/commerce/dev-itpro/hardware-device-extension",
       "redirect_document_id": "false"

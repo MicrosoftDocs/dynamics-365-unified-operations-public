@@ -20,8 +20,6 @@
           href: get-started/whats-new-platform-updates-10-0-21.md
         - name: Platform updates for version 10.0.20 (August 2021)
           href: get-started/whats-new-platform-updates-10-0-20.md
-        - name: Platform updates for 10.0.19 (June 2021)
-          href: get-started/whats-new-platform-updates-10-0-19.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1080,6 +1078,8 @@
           items:
             - name: Customize entity and field mappings
               href: data-entities/dual-write/customizing-mappings.md
+            - name: Customization guidance for dual-write
+              href: data-entities/dual-write/custom-best-practices.md
             - name: Handling multiple entity maps
               href: data-entities/dual-write/multiple-entity-maps.md
             - name: Edit a legal entity after dual-write setup
