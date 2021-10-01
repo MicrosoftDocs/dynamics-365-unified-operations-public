@@ -86,7 +86,7 @@ An overview of each path is given below:
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
     ```
     > [!NOTE] 
-    > Substitute <DB-Name> with the appropriate value in your case (for example, AXDB). If you would like to edit more values, refer to the appendix of this topic.
+    > Substitute `<DB-Name>` with the appropriate value in your case (for example, AXDB). If you would like to edit more values, refer to the appendix of this topic.
 
     The script will run a database connection test to check that the information you provide is valid.
 
