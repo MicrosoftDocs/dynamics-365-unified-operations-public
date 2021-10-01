@@ -4,7 +4,7 @@
 title: Commerce offline implementation and troubleshooting
 description: This topic provides an overview of Microsoft Dynamics 365 Commerce offline implementation considerations and troubleshooting.
 author: jashanno
-ms.date: 09/30/2021
+ms.date: 10/01/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -65,28 +65,29 @@ While not an exhaustive list, here are the most used SQL Server editions for Dyn
 | Enterprise | SQL Server Enterprise is rarely necessary, but there are scenarios where it could be valuable. For example, if hosting a CSU (self-hosted) in a datacenter VM for use across a large area of many devices, removing the limitations could be valuable to maximize performance capabilities. |
 
 ### Offline testing
-It is crucial to properly test Modern POS and offline functionality when performing updates. To verify proper functionality, here is a non-exhaustive list of functions to test while offline:
+When you perform updates, it's crucial that you thoroughly test Modern POS (MPOS) and offline functionality. Here is a non-exhaustive list of functions that you should test while you're offline, to verify correct functionality:
 
- - Test cashier and manager logon.
- - Test shift opening and closing.
- - Test product browsing using categories.
- - Test product search using the search bar.
- - Test a cash and carry transaction.
- - Test blind returns.
- - Test discounts.
- - Test unit of measure changes.
- - Test payment functionality (all payments types, listed below, should work and be available while offline):
-   - Cash
-   - Currency
-   - Check
-   - Loyalty
-   - Card
-   - Customer account
-   - Gift card
- - Test **Show journal**.
- - Start a transaction while in online mode, then force the switch to offline (disconnect from internet rather than manually switching to offline) and continue to checkout.
- - Perform the previous test when the offline database doesn't have the latest data for, as an example, the customer (missing) or a product (missing) in cart. The expectation here is that there will be a warning or error message and the cashier should be able to continue using MPOS in offline mode to perform new cash and carry transactions.
- - Switch to online after performing one or more transactions while offline, then switch back online and verify that the transactions are uploaded.
+-	Test cashier and manager sign-in.
+-	Test shift opening and closing.
+-	Test product browsing by using categories.
+-	Test product search by using the search bar.
+-	Test a cash and carry transaction.
+-	Test blind returns.
+-	Test discounts.
+-	Test unit of measure changes.
+-	Test payment functionality. All the following payment types should work and be available while you're offline:
+  -	Cash
+  - Currency
+  - Check
+  -	Loyalty
+  -	Card
+  -	Customer account
+  -	Gift card
+-	Test **Show journal**.
+-	Start a transaction while you're in online mode. Then force the switch to offline mode (that is, disconnect the system from the internet instead of manually switching to offline mode), and continue to checkout.
+-	Perform the previous test when the offline database doesn't have the latest data for the customer (missing) or a product (missing) in cart, for example. In this case, the expectation is that the cashier will receive a warning or error message, but will still be able to continue to use MPOS in offline mode to perform new cash and carry transactions.
+-	Perform one or more transactions while you're offline. Then switch back to online mode, and verify that the transactions are uploaded.
+
 
 ## Troubleshooting
 
