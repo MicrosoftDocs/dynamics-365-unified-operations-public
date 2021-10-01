@@ -30,12 +30,13 @@ ms.dyn365.ops.version: 10.0.23
 # Implement a custom source of inbound documents
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
-To import data from an inbound document by using the ER framework, you must configure an ER [format](general-electronic-reporting.md#FormatComponentInbound) that supports the import and then run a model mapping of the **To destination** type that uses that format as a data source. To import data, you must navigate to the document that you want to import. You can use a SharePoint folder as the standard ER source of inbound documents that can be imported in unattended mode. To learn more about this, review the [Configure data import from SharePoint](er-configure-data-import-sharepoint.md) topic.
+To import data from an inbound document by using the ER framework, configure an ER [format](general-electronic-reporting.md#FormatComponentInbound) that supports the import and then run a model mapping of the **To destination** type that uses that format as a data source. To import data, navigate to the document that you want to import and use a SharePoint folder as the standard ER source of inbound documents that can be imported in unattended mode. To learn more about this, review the topic, [Configure data import from SharePoint](er-configure-data-import-sharepoint.md)
 
-The application programming interface (API) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework lets you [extend](er-apis-app10-0-23.md#er-api-extend-file-source) the list of ER sources that you can use to access inbound documents that ER formats [parse](/er-parse-incoming-documents.md) for data import. With this new ER capability, you can use ER configurations to perform data import from documents that are stored in your custom source.
+The application programming interface (API) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework lets you [extend](er-apis-app10-0-23.md#er-api-extend-file-source) the list of ER sources you can use to access inbound documents that ER formats [parse](/er-parse-incoming-documents.md) for data import. With this new ER capability, you can use ER configurations to perform data import from documents that are stored in your custom source.
 
-This topic includes an overview of the main tasks that you must complete to implement and start using a custom ER source of inbound documents. Completing these tasks, you will use the same example with import of vendor transactions as in the referred above SharePoint related topic. The steps of these tasks can be completed in the **USMF** company in Microsoft Dynamics 365 Finance.
+This topic includes an overview of the main tasks that you must complete to implement and start using a custom ER source of inbound documents. To complete these tasks, you will use the same example with import of vendor transactions as you do in the SharePoint topic linked to earlier in this topic. The steps of these tasks can be completed in the **USMF** company in Microsoft Dynamics 365 Finance.
 
 ## Prerequisites
 
@@ -51,11 +52,11 @@ You must also have access to the development environment for this topology.
 
 ### Configure the ER framework
 
-Follow the steps in [Configure the ER framework](er-quick-start2-customize-report.md#ConfigureFramework) to set up the minimal set of ER parameters. You must complete this setup before you start to use the ER framework to import inbound documents from a custom source.
+Follow the steps in the topic, [Configure the ER framework](er-quick-start2-customize-report.md#ConfigureFramework) to set up the minimal set of ER parameters. Complete this setup before you start to use the ER framework to import inbound documents from a custom source.
 
 ### Import an ER format configuration
 
-The steps of further tasks use the ER configurations that are mentioned in the referred above SharePoint related topic. If you have not yet played the task guide of that topic, download the following files.
+Additional tasks use the ER configurations that are mentioned in the SharePoint topic previously referred to. If you haven't played the task guide of that topic, download the following files.
 
 | Content description                                    | File                                                                       |
 |--------------------------------------------------------|----------------------------------------------------------------------------|
@@ -63,7 +64,7 @@ The steps of further tasks use the ER configurations that are mentioned in the r
 | ER format configuration                                         | [1099format-import-from-excel.xml](???) |
 | Inbound file in .XLSX format containing sample data for import  | [1099import-data.xlsx](https://download.microsoft.com/download/f/f/4/ff4dbce9-8364-4391-adee-877945ff01f7/1099import-data.xlsx) |
 
-Then, use the [Loald from XML file](er-defer-sequence-element.md#import-the-sample-er-configurations) ER option to import the downloaded ER configurations to your Finance instance in the following sequence:
+Use the [Load from XML file](er-defer-sequence-element.md#import-the-sample-er-configurations) ER option to import the downloaded ER configurations to your Finance instance in the following sequence:
 
 - ER data model configuration
 - ER format configuration
@@ -78,10 +79,11 @@ Then, use the [Loald from XML file](er-defer-sequence-element.md#import-the-samp
 
 ## Extend the source code
 
-1. Append your Microsoft Visual Studio project with a new class (`ContosoInboundFile` in this example), and write code that uses the `ERIImportFile` public interface to describe a custom inbound file. Note that the following must be specified to comply with the ER framework requirements of handling inbound files:
+1. Append your Microsoft Visual Studio project with a new class. In this example, it's `ContosoInboundFile`.
+2. Write code that uses the `ERIImportFile` public interface to describe a custom inbound file. The following must be specified to comply with the ER framework requirements of handling inbound files:
 
-    -   A key to uniquely identify at runtime a custom source among potentially many sources (the `sourceSettingsKey` variable in this example) as well as methods to get and set this key.
-    -   [*DateTime*](er-formula-supported-data-types-primitive.md#datetime) values to specify the date and time of an inbound file creation and modification (the `createdDateTime` and `modifiedDateTime` variables in this example) as well as methods to get and set these dates. They are used at runtime to sort and filter inbound documents that are recognized in a custom source.
+    -  A key to uniquely identify a custom source at runtime among potentially many sources (the `sourceSettingsKey` variable in this example) and methods to get and set this key.
+    - [*DateTime*](er-formula-supported-data-types-primitive.md#datetime) values to specify the date and time of an inbound file creation and modification (the `createdDateTime` and `modifiedDateTime` variables in this example) as well as methods to get and set these dates. They are used at runtime to sort and filter inbound documents that are recognized in a custom source.
     -   A method to load an inbound file from a custom source (the `Load()` method in this example).
     -   A method to delete an imported file in a custom storage (the `Delete()` method in this example).
     -   A method to expose additional information about an inbound file (the `parmAdditionalInfo()` method in this example) to store this info and extract it upon request.
