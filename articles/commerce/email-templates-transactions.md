@@ -113,7 +113,7 @@ The issue gift card notification type supports the following additional placehol
 | giftcardrecipientname | Gift card recipient name for products of type gift card.      |
 | giftcardbuyername     | Gift card buyer name for products of type gift card.          |
 
-For more information about gift cards, see [E-commerce digital gift cards](digital-gift-cards.md) and [Support for external gift cards](../dev-itpro/gift-card.md) help topics. 
+For more information about gift cards, see [E-commerce digital gift cards](digital-gift-cards.md) and [Support for external gift cards](dev-itpro/gift-card.md). 
 
 ### Order cancellation
 
