@@ -4,7 +4,7 @@
 title: Mass deployment of sealed Commerce self-service components
 description: This topic explains how to use the framework for self-service component installers to silently install and service deployments.
 author: jashanno
-ms.date: 09/30/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,9 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic is for the sealed framework, component installers released each month, beginning with the 10.0.18 release and made available in Lifecycle Services (LCS) in the Shared Asset library. Note that the first several releases of these new installers are marked as **(Preview)**. This does not mean that the installers are not valid for production; rather, it is only to differentiate the installers while we verify any additional functional needs required for the usage of the new installers. Based on the release of these new installers, we plan to deprecate the legacy installers approximately in April 2022. This topic explains how to use these new installers to perform silent installation and servicing updates via command line arguments. Using these arguments, mass deployment could be performed through a variety of possible ways.
+This topic applies to the sealed framework, component installers that are released every month , beginning with the 10.0.18 release, and that are made available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Note that the first several releases of these new installers are designated as **(Preview)**. However, the only purpose of this designation is to differentiate the new installers while Microsoft determines whether there are any additional functional requirements to use them. It doesn't mean that the installers aren't valid for production. Based on the release of these new installers, Microsoft plans to deprecate the old (legacy) installers in or around April 2022. 
+
+This topic explains how to use the new installers to perform silent installation and servicing updates via command-line arguments. These arguments let you do mass deployment in several different ways.
 
 > [!NOTE]
 > The new self-service, sealed installers will not be made available in Headquarters and are only downloadable through LCS.
