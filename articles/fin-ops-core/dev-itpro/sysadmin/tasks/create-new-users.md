@@ -32,7 +32,7 @@ Before you can access Finance and Operations apps, you must first be added to th
 For information about how to buy and license for Finance and Operations apps, see [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## Assign a license to a user
-System admins can [assign licenses to users](/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) in the [Microsoft 365 admin center](/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+System admins can [assign licenses to users](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) in the [Microsoft 365 admin center](/office365/admin/admin-overview/about-the-admin-center).
 
 ## Add an external user in Azure AD and assign a license 
 External users must be represented in your tenant directory (Azure Active Directory (Azure AD)) so that they can be assigned licenses. Those external users should be added to the tenant in Azure AD as guest users and then assigned the appropriate licenses. A requirement for Finance and Operations apps is that the guest user's company must use Azure AD. For more information, see [Add Azure Active Directory B2B collaboration users in the Azure portal](/azure/active-directory/b2b/add-users-administrator).

@@ -106,7 +106,7 @@ The disaster recovery environment should have a similar configuration as the pro
 
 ## SQL Server Always-On Availability configuration
 
-The business data database (AXDB) should be replicated to the secondary datacenter, typically using SQL Server Always-On availability groups feature. For more information, see [Always On availability groups](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
+The business data database (AXDB) should be replicated to the secondary datacenter, typically using SQL Server Always-On availability groups feature. For more information, see [Always On availability groups](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server).
 
 | Database | Replicated |
 |----------|------------|
