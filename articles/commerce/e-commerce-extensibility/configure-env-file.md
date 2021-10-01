@@ -41,7 +41,7 @@ The default .env file that is provided with the online SDK should resemble the f
 ### Environment File ##################################################################
 # This is a simple configuration 
 # Online documentation for this file is available at 
-# https://docs.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/configure-env-file
+# /en-us/dynamics365/commerce/e-commerce-extensibility/configure-env-file
 ########################################################################################
 
 # MSDyn365_APP_TYPE variable is required. It can be set only to the value partner.

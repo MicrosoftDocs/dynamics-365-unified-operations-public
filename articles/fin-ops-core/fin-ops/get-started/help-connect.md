@@ -35,7 +35,7 @@ In this topic, you will find an overview of the components of the Help system fo
 
 ## Help architecture
 
-Finance and Operations apps include conceptual overviews and other topics that are published to the [https://docs.microsoft.com/dynamics365](/dynamics365/) site. This content can then be accessed from the in-product **Help** pane. The following illustration shows the parts of the Help system.
+Finance and Operations apps include conceptual overviews and other topics that are published to the [/dynamics365](/dynamics365/) site. This content can then be accessed from the in-product **Help** pane. The following illustration shows the parts of the Help system.
 
 [![Help architecture.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -44,7 +44,7 @@ The in-product Help system pulls articles from docs.microsoft.com and other conn
 ## Adding task guides
 
 > [!NOTE]
-> The **Task guides** tab isn't currently available in Human Resources or Commerce. <!--We are currently working to enable this functionality in a future release.--> However, the task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. For both Human Resources and Commerce, procedural Help is available on the [https://docs.microsoft.com/dynamics365](/dynamics365/) site.
+> The **Task guides** tab isn't currently available in Human Resources or Commerce. <!--We are currently working to enable this functionality in a future release.--> However, the task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. For both Human Resources and Commerce, procedural Help is available on the [/dynamics365](/dynamics365/) site.
 
 On the **System parameters** page, system admins can configure access to the relevant task guide libraries for an implementation.
 
