@@ -39,7 +39,7 @@ It is explained in [Prerequisites to generate an FEC audit file in France](emea-
 - Voucher number was used for inventory transaction with 0.00 amount which is not reflected general leger account entries table.
 - A gap in a number sequence of general leger account entries caused by a technical issue.
 
-Use [**Missing numbers justification**](#missing-numbers-justification) annex to report general ledger account transactions that are missing in the **FEC Main** file due to above explained reasons.
+Starting from 10.0.23 version of Finance, use [**Missing numbers justification**](#missing-numbers-justification) annex to report general ledger account transactions that are missing in the **FEC Main** file due to above explained reasons.
 
 The following sections list the data sources that are used in the FEC main file and annexes.
 
@@ -203,27 +203,35 @@ The following table shows the **FEC main file including fiscal year opening bala
 
 ## <a id="missing-numbers-justification"></a>Missing numbers justification annex
 
+Starting from 10.0.23 version of Finance, **Missing numbers justification** annex represents data collected from Fiance for the following scenarios where consistency of sequence of numbers of general leger account entries (Voucher) can be interrupted in the **FEC Main** file:
+
+- **Scenario 1**: General leger account entry is created in accounting but not reported in FEC when the amount is 0.00.
+- **Scenario 2**: Voucher number was used for inventory transaction with 0.00 amount which is not reflected general leger account entries table.
+- **Scenario 3**: A gap in a number sequence of general leger account entries caused by a technical issue.
+
+Use [**Missing numbers justification**](#missing-numbers-justification) annex to report general ledger account transactions that are missing in the **FEC Main** file due to above explained reasons.
+
 The following table shows the **FEC main file including fiscal year opening balances details for customers and vendors** data structure definitions.
 
 | Number | Name          | Type           | Description (FR) | Description (EN) | ER data source |
 |--------|---------------|----------------|------------------|------------------|----------------|
-| 1      | JournalCode   | Alphanumérique | Le code journal de l'écriture comptable | The journal code of the accounting entry. | \$FECExtendedAggregation/\$JournalCodeText |
-| 2      | JournalLib    | Alphanumérique | Le libellé journal de l'écriture comptable | The journal caption of the accounting entry. | \$FECExtendedAggregation/\$JournalLibText |
-| 3      | EcritureNum   | Alphanumérique | Le numéro sur une séquence continue de l'écriture comptable | The number in a continuous sequence for the accounting entry. | \$FECExtendedAggregation/\$Voucher |
-| 4      | EcritureDate  | Date           | La date de comptabilisation de l'écriture comptable | The posting date of the accounting entry. | \$FECExtendedAggregation/\$Date |
-| 5      | CompteNum     | Alphanumérique | Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français | The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts. Information on multiple customers or vendors transactions can be found in respective annexes. | \$FECExtendedAggregation/\$LedgerAccount |
-| 6      | CompteLib     | Alphanumérique | Le libellé de compte, conformément à la nomenclature du plan comptable français | The account name in accordance with the nomenclature of the French chart of accounts. | \$FECExtendedAggregation/\$LedgerAccountName |
-| 7      | CompAuxNum    | Alphanumérique | Le numéro de compte auxiliaire (à blanc si non utilisé) | The auxiliary account number. This field is blank if it isn't used. | \$FECExtendedAggregation/\$AccountNum |
-| 8      | CompAuxLib    | Alphanumérique | Le libellé de compte auxiliaire (à blanc si non utilisé) | The auxiliary account description. This field is blank if it isn't used. | \$FECExtendedAggregation/\$PartyName |
-| 9      | PieceRef      | Alphanumérique | La référence de la pièce justificative | The reference of the supporting document. If reference of the supporting document cannot be found, this field is populated with EcritureNum. | \$FECExtendedAggregation/\$PieceNum |
-| 10     | PieceDate     | Date           | La date de la pièce justificative | The date of the supporting document. | \$FECExtendedAggregation/\$PieceDate |
-| 11     | EcritureLib   | Alphanumérique | Le libellé de l'écriture comptable | The wording of the accounting entry. | \$FECExtendedAggregation/\$EcritureLib |
-| 12     | Montant       | Numérique      | Le montant au débit/ au crédit | The debit/credit amount. | \$FECExtendedAggregation/\$AbsAmount |
-| 13     | Sens          | Numérique      | Le sens: "D" au débit; "C" au crédit | The direction: **D** = debit, **C** = credit | \$FECExtendedAggregation/\$Direction |
-| 14     | EcritureLet   | Alphanumérique | Le lettrage de l'écriture comptable (à blanc si non utilisé) | The lettering of the accounting entry. This field is blank if it isn't used. | \$FECExtendedAggregation/\$LastSettleVoucher |
-| 15     | DateLet       | Date           | La date de lettrage (à blanc si non utilisé) | The lettering date. This field is blank if it isn't used. | \$FECExtendedAggregation/\$LastSettleDate |
-| 16     | ValidDate     | Date           | La date de validation de l'écriture comptable | The validation date of the accounting entry. | \$FECExtendedAggregation/\$ValidDate |
-| 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | \$FECExtendedAggregation/\$AmountCur |
-| 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | $FECExtendedAggregation/$CurrencyCode |
+| 1      | JournalCode   | Alphanumérique | Le code journal de l'écriture comptable | The journal code of the accounting entry. | \$VouchersOmissions/\$JournalCodeText<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 2      | JournalLib    | Alphanumérique | Le libellé journal de l'écriture comptable | The journal caption of the accounting entry. | $VouchersOmissions/$JournalLib<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 3      | EcritureNum   | Alphanumérique | Le numéro sur une séquence continue de l'écriture comptable | The number in a continuous sequence for the accounting entry. | $VouchersOmissions/$Voucher<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 4      | EcritureDate  | Date           | La date de comptabilisation de l'écriture comptable | The posting date of the accounting entry. | $VouchersOmissions/$Date<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 5      | CompteNum     | Alphanumérique | Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français | The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts. Information on multiple customers or vendors transactions can be found in respective annexes. | $VouchersOmissions/$AccountNum<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 6      | CompteLib     | Alphanumérique | Le libellé de compte, conformément à la nomenclature du plan comptable français | The account name in accordance with the nomenclature of the French chart of accounts. | $VouchersOmissions/$AccountName<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 7      | CompAuxNum    | Alphanumérique | Le numéro de compte auxiliaire (à blanc si non utilisé) | The auxiliary account number. This field is blank if it isn't used. | $VouchersOmissions/$CompteAuxNum<ul><li>Scenario 1: </li><li>Scenario 2: N/A</li><li>Scenario 3: N/A</li></ul> |
+| 8      | CompAuxLib    | Alphanumérique | Le libellé de compte auxiliaire (à blanc si non utilisé) | The auxiliary account description. This field is blank if it isn't used. | $VouchersOmissions/$CompteAuxLib<ul><li>Scenario 1: </li><li>Scenario 2: N/A</li><li>Scenario 3: N/A</li></ul> |
+| 9      | PieceRef      | Alphanumérique | La référence de la pièce justificative | The reference of the supporting document. If reference of the supporting document cannot be found, this field is populated with EcritureNum. | $VouchersOmissions/$PieceRef<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 10     | PieceDate     | Date           | La date de la pièce justificative | The date of the supporting document. | $VouchersOmissions/$PieceDate<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 11     | EcritureLib   | Alphanumérique | Le libellé de l'écriture comptable | The wording of the accounting entry. | $VouchersOmissions/$EcritureLib<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 12     | Montant       | Numérique      | Le montant au débit/ au crédit | The debit/credit amount. | $VouchersOmissions/$AbsAmount<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 13     | Sens          | Numérique      | Le sens: "D" au débit; "C" au crédit | The direction: **D** = debit, **C** = credit | $VouchersOmissions/$Direction<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 14     | EcritureLet   | Alphanumérique | Le lettrage de l'écriture comptable (à blanc si non utilisé) | The lettering of the accounting entry. This field is blank if it isn't used. | $VouchersOmissions/$EcritureLet<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 15     | DateLet       | Date           | La date de lettrage (à blanc si non utilisé) | The lettering date. This field is blank if it isn't used. | $VouchersOmissions/$DateLet<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 16     | ValidDate     | Date           | La date de validation de l'écriture comptable | The validation date of the accounting entry. | $VouchersOmissions/$Date<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | $VouchersOmissions/$AmountCur<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
+| 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | $VouchersOmissions/$Currency<ul><li>Scenario 1: </li><li>Scenario 2: </li><li>Scenario 3: </li></ul> |
 
 
