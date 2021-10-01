@@ -25,18 +25,19 @@ One of the key differences is that while the built-in master planning engine use
 The following table lists the parameters that Planning Optimization uses when processing issue or demand transactions:
 
 <!-- KFM: By "Equivalent in Dynamics 365 Supply Chain Management" do we mean "Equivalent in the built-in master planing engine"?.  Also, what is "ReqTrans"?-->
+<!-- OBA: By "Equivalent in Dynamics 365 Supply Chain Management" i mean "Equivalent field in the Dynamics 365 Supply Chain Management". Parameter name in Planning Optimization means that it is a field in the microservice which gets the data from D365 side.  "ReqTrans" is the name of the table in the codebase.-->
 | Parameter | Parameter name in Planning Optimization | Description | Equivalent in Dynamics 365 Supply Chain Management (`ReqTrans`) |
 |---|---|---|---|
 | Planned issue time | `PlannedIssueTime` | The date the issue is currently planned for.| To date (`FuturesDate`), Delayed to time (`FuturesTime`) |
 | Requested issue time | `RequestedIssueTime` | The date of issue requested by the user and set in Supply Chain Management. It is applicable only for released or approved planned orders. THe default value for planned orders is blank.| Requested date (`ReqDateDlvOrig`) |
-| Required issue time | `RequiredIssueTime` | The required issue date adjusted by Planning Optimization. If the requested issue time is in the past at the time Planning Optimization is run, the required issue time will be adjusted to the first open day not earlier than today's date. If the requested issue time is set on the date unavailable by a calendar <!-- KFM: What do we mean by "set on the date unavailable by a calendar"? -->, the required issue time will be adjusted to the first open day before that date. | Requirement date (`ReqDate`), Requirement time (`ReqTime`) |
-| Issue time delay | `IssueTimeDelay` | The time difference between the planned issue time and the requested issue time for approved and released orders or required issue time. <!-- KFM: What do we mean by "or required issue time"? --> | Delay (`days`) (`FuturesDays`) <!-- KFM: Are we missing a common name for `FuturesDays`? --> |
+| Required issue time | `RequiredIssueTime` | The required issue date adjusted by Planning Optimization. If the requested issue time is in the past at the time Planning Optimization is run, the required issue time will be adjusted to the first open day not earlier than today's date. If the requested issue time is set on the date unavailable by a calendar <!-- KFM: What do we mean by "set on the date unavailable by a calendar"? OBA: Blocked in the calendar-->, the required issue time will be adjusted to the first open day before that date. | Requirement date (`ReqDate`), Requirement time (`ReqTime`) |
+| Issue time delay | `IssueTimeDelay` | The time difference between the planned issue time and the requested issue time for approved and released orders or required issue time. <!-- KFM: What do we mean by "or required issue time"? --> | Delay (`days`) (`FuturesDays`) <!-- KFM: Are we missing a common name for `FuturesDays`? --> <!-- OBA: No, "FuturesDays" is the field name, while "Delay (days)" is the full UI label for that field so I suggest removing "'" from there--> |
 
 ## Receipt transactions
 
 The following table lists the parameters that Planning Optimization uses when processing receipt or supply transactions:
 
-<!-- KFM: By "Equivalent in Dynamics 365 Supply Chain Management" do we mean "Equivalent in the built-in master planing engine"?.  Also, what are "ReqTrans" and ReqPO?-->
+<!-- KFM: By "Equivalent in Dynamics 365 Supply Chain Management" do we mean "Equivalent in the built-in master planing engine"?.  Also, what are "ReqTrans" and ReqPO? OBA: these are table names-->
 | Parameter | Parameter name in Planning Optimization | Description | Equivalent in Dynamics 365 Supply Chain Management (`ReqTrans`, `ReqPO`) |
 |---|---|---|---|
 | Planned availability time | `PlannedAvailabilityTime` | The date the receipt is actually planned for to be available.| Requirement date (`ReqDate`), Requirement time (`ReqTime`) |
