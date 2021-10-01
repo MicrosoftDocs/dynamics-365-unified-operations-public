@@ -36,97 +36,92 @@ Dynamics 365 Commerce provides an out-of-box solution for sending emails that al
 
 ## Notification types
 
-When certain events occur as part of the order and customer lifecycle, notifications can be configured to inform the customer via email about the event. You map an email template to a notification type by creating a Commerce email notification profile. See the [Set up an email notification profile](email-notification-profiles.md) for more information about setting up a notification profile.
+When certain events occur as part of the order and customer lifecycle, notifications can be configured to inform customers via email about those events. To accomplsih this you must map an email template to a notification type by creating a Commerce email notification profile. For information about setting up an email notification profile, see [Set up an email notification profile](email-notification-profiles.md).
 
-Dynamics 365 Commerce supports the following notificaiton types.
+Dynamics 365 Commerce supports the following notification types.
 
 ### Order created
 
-This notification is triggered when a Commerce new sales order has been created in Headquarters. 
+The *order created* notification is triggered when a new sales order has been created in Commerce headquarters. 
 
 > [!NOTE]
->
-> This notification does not get invoked for cash and carry transactions that happen in POS, an emailed and/or printed receipt is generated instead. See [Send email receipts from Modern POS (MPOS)](email-receipts.md) for more information.
+> The order created notification is not invoked for cash and carry transactions that happen at a point of sale (POS) terminal, in this case an emailed and/or printed receipt is generated instead. For more information, see [Send email receipts from Modern POS (MPOS)](email-receipts.md).
 
 ### Order confirmed
 
-This notification is triggered when an order confirmation document is generated on the sales order from headquarters. 
+The *order confirmed* notification is triggered when an order confirmation document is generated on the sales order from Commerce headquarters. 
 
 ### Picking completed
 
-This notification is triggered when a picking list for an order is marked as completed in headquarters. 
+The *picking completed* notification is triggered when a picking list for an order is marked as completed in Commerce headquarters. 
 
 > [!NOTE] 
->
-> This notification type does not get triggered when an item is marked as picked in point of sale (POS). 
+> The picking completed notification type is not triggered when an item is marked as picked at a POS terminal. 
 
 ### Packing completed
 
-This notification is triggered when a packing slip document is generated for the order in headquarters or point of sale.  
+The *packing completed* notification is triggered when a packing slip document is generated for the order in Commerce headquarters at a POS terminal.  
 
-The packing completed notification type supports the following additional email placeholders to facilitate order ready for pickup and order lookup functionality from transactional emails. 
+The packing completed notification type supports the following additional email placeholders to facilitate "order ready for pickup" and order lookup functionality from transactional emails. 
 
 | Placeholder name    | Purpose                                                      |
 | ------------------- | ------------------------------------------------------------ |
-| pickupstorename     | The name of the store where the order is available for pickup |
-| pickupstoreaddress  | The address of the store where the order is available for pickup |
-| pickupstorehourfrom | The opening hour of the pickup store                         |
-| pickupstorehourto   | The closing hour of the pickup store                         |
-| pickupchannelid     | The store channel ID of the pickup store                     |
-| packingslipid       | The ID of the packing slip for the order to be picked up     |
-| confirmationid      | The order confirmation ID (sometimes referred to as the channel reference ID) of the order to be picked up |
+| pickupstorename     | The name of the store where the order is available for pickup. |
+| pickupstoreaddress  | The address of the store where the order is available for pickup. |
+| pickupstorehourfrom | The opening hour of the pickup store.                         |
+| pickupstorehourto   | The closing hour of the pickup store.                         |
+| pickupchannelid     | The store channel ID of the pickup store.                     |
+| packingslipid       | The ID of the packing slip for the order to be picked up.     |
+| confirmationid      | The order confirmation ID (sometimes referred to as the channel reference ID) of the order to be picked up. |
 
-Learn more about the customer check-in and order lookup features by reading the [Set up geo detection and redirection](https://docs.microsoft.com/en-us/dynamics365/commerce/geo-detection-redirection) and [Enable order lookup for guest checkouts](https://docs.microsoft.com/en-us/dynamics365/commerce/order-lookup-guest) help topics. 
+For more information about the customer check-in and order lookup features, see [Set up geo detection and redirection](geo-detection-redirection.md) and [Enable order lookup for guest checkouts](order-lookup-guest.md). 
 
 ### Order ready for pickup
 
-This notification is triggered when an order with one or more lines whose mode of delivery is "Customer pickup" is marked as packed. 
+The *order ready for pickup* notification is triggered when an order with one or more lines whose mode of delivery is "Customer pickup" is marked as packed. 
 
 > [!NOTE] 
->
-> The order ready for pickup notification type has been deprecated in favor of the packing complete notification type that you customize by mode of delivery. Learn more about [customizing notification types by mode of delivery](http://) for more information.  
+> The order ready for pickup notification type has been deprecated in favor of the "order packed" notification type, which is customized by mode of delivery.   
 
 ### Order shipped
 
-This notification is triggered when an order with a non-store pickup mode of delivery is invoiced. 
+The *order shipped* notification is triggered when an order with a non-store pickup mode of delivery is invoiced. 
 
 > [!NOTE] 
->
-> The order shipped notification type has been deprecated in favor of the order invoiced notification type that you customize by mode of delivery. See [customizing notification types by mode of delivery](http://) for more information. 
+> The order shipped notification type has been deprecated in favor of the "order invoiced" notification type, which is customized by mode of delivery.
 
 ### Order invoiced
 
-This notification is triggered when an order is invoiced in point of sale POS or headquarters.  
+The *order invoiced* notification is triggered when an order is invoiced in POS or Commerce headquarters.  
 
 ### Issue gift card
 
-This notification is triggered when a sales order which contains a product of type gift card is invoiced.
+The *issue gift card* notification is triggered when a sales order that contains a product of type "gift card" is invoiced.
 
 > [!NOTE]
->
-> This email will be sent to the recipient of the gift card, which is set either manually or programmatically in the Packing tab under Line details within an individual line within a sales order. 
+> The issue gift card notification email is sent to the gift card recipient. The gift card recipient is specified manually or programmatically in Commerce headquarters within an individual line of a sales order on the **Packing** tab under **Line details**. 
 
 The issue gift card notification type supports the following additional placeholders:
 
 | Placeholder name      | Purpose                                                      |
 | --------------------- | ------------------------------------------------------------ |
-| iftcardnumber         | Gift card number for products of type gift card              |
-| giftcardbalance       | Gift card balance for products of type gift card             |
-| giftcardmessage       | Gift card message for products of type gift card             |
-| giftcardpin           | Gift card pin for products of type gift card. Specific to external gift cards |
-| giftcardexpiration    | Gift card expiration for products of type gift card. Specific to external gift cards |
-| giftcardrecipientname | Gift card recipient name for products of type gift card      |
-| giftcardbuyername     | Gift card buyer name for products of type gift card          |
+| iftcardnumber         | Gift card number for products of type gift card.              |
+| giftcardbalance       | Gift card balance for products of type gift card.             |
+| giftcardmessage       | Gift card message for products of type gift card.             |
+| giftcardpin           | Gift card PIN for products of type gift card. Specific to external gift cards. |
+| giftcardexpiration    | Gift card expiration for products of type gift card. Specific to external gift cards. |
+| giftcardrecipientname | Gift card recipient name for products of type gift card.      |
+| giftcardbuyername     | Gift card buyer name for products of type gift card.          |
 
-For more information about gift cards, see the [E-commerce digital gift cards](https://docs.microsoft.com/en-us/dynamics365/commerce/digital-gift-cards) and [Support for external gift cards](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/gift-card) help topics. 
+For more information about gift cards, see [E-commerce digital gift cards](digital-gift-cards.md) and [Support for external gift cards](../dev-itpro/gift-card.md) help topics. 
 
 ### Order cancellation
 
-This notification is triggered when an order is cancelled in headquarters. 
+The *order cancellation* notification is triggered when an order is cancelled in Commerce headquarters. 
 
 ### Customer created
 
-This notification is triggered when a new customer entity is created in headquarters. 
+The *customer created* notification is triggered when a new customer entity is created in Commerce headquarters. 
 
 ## Create an email template
 
