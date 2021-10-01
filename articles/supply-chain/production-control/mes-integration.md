@@ -137,7 +137,7 @@ Each line in the `ReportFinishedLines` section of the `ProdProductionOrderReport
 | `ProductionSiteId` | Optional | String |
 | `ProductionWarehouseLocationId` | Optional | String |
 
-<!-- FKM: Not sure what to do with this, maybe more info would help: "(extensible with other dimensions)" -->
+<!-- FKM: Not sure what to do with this, maybe more info would help: "(extensible with other dimensions)" More info: [Add new inventory dimensions through extension](../../fin-ops-core/dev-itpro/extensibility/inventory-dimensions.md) -->
 
 ### Material consumption (picking list) message
 
@@ -218,24 +218,21 @@ The *end production order* message `_messageType` is `ProdProductionOrderEnd`. I
 | `AutoReportAsFinished` | Optional | Boolean |
 | `AutoUpdate` | Optional | Boolean |
 
+## Receive feedback on the state of a message
 
-## How to receive feedback of the state of a message
+After the manufacturing execution system has sent a message to Supply Chain Management, it may be relevant have Supply Chain Management return feedback about the state of the message. For example, this may be relevant in the following cases:
 
-Once the manufacturing execution system has sent the messages to dynamics, it may be relevant to close the feedback loop and give feedback about the state of a specific message. For example, it may be relevant in the following cases: 
+- There might not be a person responsible for supervising the manufacturing execution system integration on a constant basis.
+- Even if there is a person responsible for supervising the manufacturing execution system integration, they might want to be notified by email when there is a failed message, so they know that they need to take action.
+- The manufacturing execution system my need to show an error message to inform the shop floor operator or somebody from the IT department to take action.
+- The manufacturing execution system may need to recalculate the order schedule after receiving a failure message (such as a production order failed to start).
 
-- There may not be a person responsible for supervising the manufacturing execution systems integration on a constant basis. 
-- There may be a person responsible for supervising the manufacturing execution systems integration, but for convenience would like to be notified by email when there is a failed message, so he/she knows that needs to take action.
-- It may be needed to surface the error on the manufacturing execution system itself to make aware the shop floor operator or an IT personnel to take action
-- The manufacturing execution system may need to recalculate the schedule of orders in case of a failed message such as a production order start failed
-	
-For these cases, the standard alerts in dynamics supply chain management may be leveraged. 
-	
-To see how the standard alerts works please [see alerts overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/alerts-overview)
-	
-Or view the video Alert rule options in Dynamics 365 for Finance and Operations:[Alert rule options in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
-	
-Two examples of receiving feedback of the state of the messages would be the following:
+In these cases, you can leverage the standard alerts feature in Supply Chain Management. For details about how standard alerts work, see the following sources:
+
+- Help topic: [Alerts overview](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
+- Video: [Alert rule options in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
+
+For example, you might set up the following alerts to provide feedback on the state of a message:
 
 - Create a business event ("Send externally") for when a message is "Failed"
-- Send a notification and a mail to the IT admin or production floor manager 
-
+- Send a notification and a mail to the IT admin or production floor manager
