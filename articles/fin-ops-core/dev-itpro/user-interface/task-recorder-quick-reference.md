@@ -48,7 +48,7 @@ Choose this option if you need to add or remove steps. You can also use this mod
 </colgroup>
 <tbody>
 <tr class="odd">
-<td> <a href="./media/Update-recording-steps-menu.png"><img src="./media/Update-recording-steps-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290301" width="197" height="136" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
+<td> <a href="./media/Update-recording-steps-menu.png"><img src="./media/Update-recording-steps-menu.png" alt="Update recording steps." class="alignnone size-full wp-image-290301" width="197" height="136" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Recording is ready." class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
 <td><h3 id="opensave-fromto-this-pc">Open/Save from/to this PC</h3>
 These options allow you to open a recording that is saved on your computer, or save a recording to your computer.
 <h3 id="opensave-fromto-lcs">Open/Save from/to Lifecycle Services</h3>
