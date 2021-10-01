@@ -24,22 +24,22 @@ ms.search.region: France
 
 # Structure of Dynamics 365 Finance data sources for the FEC
 
-In Microsoft Dynamics 365 Finance, you can generate the **FEC main** (Fichier des écritures comptables) file and the following annexes:
+In Microsoft Dynamics 365 Finance, you can generate the [**FEC main**](#fec-main) (Fichier des écritures comptables) file and the following annexes:
 
-- **Customers balance** - Customers fiscal year opening balances annex 
-- **Vendors balance** - Vendors fiscal year opening balances annex 
-- **Customers transactions** - Customers transactions annex for a specified period
-- **Vendors transactions** - Vendors transactions annex for a specified period
+- [**Customers balance**](#customers-balances) - Customers fiscal year opening balances annex 
+- [**Vendors balance**](#vendors-balances) - Vendors fiscal year opening balances annex 
+- [**Customers transactions**](#customers-transactions) - Customers transactions annex for a specified period
+- [**Vendors transactions**](#vendors-transactions) - Vendors transactions annex for a specified period
 
-An FEC that includes customer and vendor fiscal year opening balances (**FEC Main Extended**) can also be generated. Use this option for companies that have only a few records during the reporting period. The reporting period must include the beginning of the fiscal year.
+An FEC that includes customer and vendor fiscal year opening balances ([**FEC Main Extended**](#fec-main-extended)) can also be generated. Use this option for companies that have only a few records during the reporting period. The reporting period must include the beginning of the fiscal year.
 
-It is explained in [Prerequisites to generate an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites) section, to accommodates article 100 of BOI-CF-IOR-60-40-20, the numbering must be must be continuous, consistent and sequencial. This is why it is recommended to set **Continuous** field to **Yes** for number sequences. In some scenarios consistency of sequence of numbers of general leger account entries (Voucher) can be interrupted in the **FEC Main** file due to following reasons:
+It is explained in [Prerequisites to generate an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites) section, to accommodates article 100 of BOI-CF-IOR-60-40-20, the numbering must be continuous, consistent and sequencial. This is why it is recommended to set **Continuous** field to **Yes** for number sequences. In some scenarios consistency of sequence of numbers of general leger account entries (Voucher) can be interrupted in the **FEC Main** file due to following reasons:
 
 - General leger account entry is created in accounting but not reported in FEC when the amount is 0.00.
 - Voucher number was used for inventory transaction with 0.00 amount which is not reflected general leger account entries table.
 - A gap in a number sequence of general leger account entries caused by a technical issue.
 
-Use **Missing numbers justification** annex to report general ledger transactions missing in the **FEC Main** file due to above explained reasons.
+Use [**Missing numbers justification**](#missing-numbers-justification) annex to report general ledger account transactions that are missing in the **FEC Main** file due to above explained reasons.
 
 The following sections list the data sources that are used in the FEC main file and annexes.
 
@@ -68,7 +68,7 @@ The following table shows the **Main FEC file for the period specified** data st
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | \$GeneralJournalView\_FR/GeneralJournalAccountEntryTransactionCurrencyAmount |
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | \$GeneralJournalView\_FR/GeneralJournalAccountEntryTransactionCurrencyCode |
 
-## Customers fiscal year opening balances annex 
+## <a id="customers-balances"></a>Customers fiscal year opening balances annex 
 
 Customers fiscal year opening transactions are posted as summary transactions in general ledger. To provide detailed information on fiscal year opening transactions by customers, the **Customers fiscal year opening balances annex** is implemented. This annex collects the amounts of opening balances by customers at the beginning of the fiscal year and provides this information together with the opening transaction voucher from the general ledger.
 
@@ -95,7 +95,7 @@ The following table shows the **Customers fiscal year opening balances annex** d
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | CustTransGroupedByLedgerAccount/aggregated/AmountCur |
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | CustTransGroupedByLedgerAccount/grouped/CurrencyCode |
 
-## Vendors fiscal year opening balances annex 
+## <a id="vendors-balances"></a>Vendors fiscal year opening balances annex 
 
 Vendors fiscal year opening transactions are posted as summary transactions in general ledger. To provide detailed information on fiscal year opening transactions by vendors, the **Vendors fiscal year opening balances annex** is implemented. This annex collects amounts of opening balances by vendors on the beginning of the fiscal year and represents this information in combination with opening transaction voucher from general ledger.
 
@@ -122,7 +122,7 @@ The following table shows the **Vendors fiscal year opening balances annex** dat
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | VendTransGroupedByLedgerAccount/aggregated/AmountCur |
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | VendTransGroupedByLedgerAccount/grouped/CurrencyCode |
 
-## Customers transactions annex for the period specified
+## <a id="customers-transactions"></a>Customers transactions annex for the period specified
 
 **Customers transactions annex for the period specified** annex can be requested to provide additional details on customers transactions. For example, in case a company uses [Allow multiple transactions within one voucher](../../finance/general-ledger/one-voucher.md) parameter on the **General** tab of the **General ledger parameters** page, one voucher can be assigned to multiple customers transactions. To provide detailed infomration by customers accounts for such scenario, **Customers transactions annex for the period specified** annex is implemented. 
 
@@ -149,7 +149,7 @@ The following table shows the **Customers transactions annex for the period spec
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | \$CustTrans/AmountCur|
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | \$CustTrans/CurrencyCode |
 
-## Vendors transactions annex for the period specified
+## <a id="vendors-transactions"></a>Vendors transactions annex for the period specified
 
 **Vendors transactions annex for the period specified** annex can be requested to provide additional details on vendors transactions. For example, in case a company uses [Allow multiple transactions within one voucher](../../finance/general-ledger/one-voucher.md) parameter on the **General** tab of the **General ledger parameters** page, one voucher can be assigned to multiple vendors transactions. To provide detailed infomration by vendors accounts for such scenario, **Vendors transactions annex for the period specified** annex is implemented. 
 
@@ -176,7 +176,7 @@ The following table shows the **Vendors transactions annex for the period specif
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | \$VendTrans/AmountCur |
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | \$VendTrans/CurrencyCode |
 
-## FEC main file including fiscal year opening balances details for customers and vendors
+## <a id="fec-main-extended"></a>FEC main file including fiscal year opening balances details for customers and vendors
 
 The following table shows the **FEC main file including fiscal year opening balances details for customers and vendors** data structure definitions.
 
@@ -200,3 +200,30 @@ The following table shows the **FEC main file including fiscal year opening bala
 | 16     | ValidDate     | Date           | La date de validation de l'écriture comptable | The validation date of the accounting entry. | \$FECExtendedAggregation/\$ValidDate |
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | \$FECExtendedAggregation/\$AmountCur |
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | $FECExtendedAggregation/$CurrencyCode |
+
+## <a id="missing-numbers-justification"></a>Missing numbers justification annex
+
+The following table shows the **FEC main file including fiscal year opening balances details for customers and vendors** data structure definitions.
+
+| Number | Name          | Type           | Description (FR) | Description (EN) | ER data source |
+|--------|---------------|----------------|------------------|------------------|----------------|
+| 1      | JournalCode   | Alphanumérique | Le code journal de l'écriture comptable | The journal code of the accounting entry. | \$FECExtendedAggregation/\$JournalCodeText |
+| 2      | JournalLib    | Alphanumérique | Le libellé journal de l'écriture comptable | The journal caption of the accounting entry. | \$FECExtendedAggregation/\$JournalLibText |
+| 3      | EcritureNum   | Alphanumérique | Le numéro sur une séquence continue de l'écriture comptable | The number in a continuous sequence for the accounting entry. | \$FECExtendedAggregation/\$Voucher |
+| 4      | EcritureDate  | Date           | La date de comptabilisation de l'écriture comptable | The posting date of the accounting entry. | \$FECExtendedAggregation/\$Date |
+| 5      | CompteNum     | Alphanumérique | Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français | The account number, the first three characters of which must correspond to figures that respect the standards of the French chart of accounts. Information on multiple customers or vendors transactions can be found in respective annexes. | \$FECExtendedAggregation/\$LedgerAccount |
+| 6      | CompteLib     | Alphanumérique | Le libellé de compte, conformément à la nomenclature du plan comptable français | The account name in accordance with the nomenclature of the French chart of accounts. | \$FECExtendedAggregation/\$LedgerAccountName |
+| 7      | CompAuxNum    | Alphanumérique | Le numéro de compte auxiliaire (à blanc si non utilisé) | The auxiliary account number. This field is blank if it isn't used. | \$FECExtendedAggregation/\$AccountNum |
+| 8      | CompAuxLib    | Alphanumérique | Le libellé de compte auxiliaire (à blanc si non utilisé) | The auxiliary account description. This field is blank if it isn't used. | \$FECExtendedAggregation/\$PartyName |
+| 9      | PieceRef      | Alphanumérique | La référence de la pièce justificative | The reference of the supporting document. If reference of the supporting document cannot be found, this field is populated with EcritureNum. | \$FECExtendedAggregation/\$PieceNum |
+| 10     | PieceDate     | Date           | La date de la pièce justificative | The date of the supporting document. | \$FECExtendedAggregation/\$PieceDate |
+| 11     | EcritureLib   | Alphanumérique | Le libellé de l'écriture comptable | The wording of the accounting entry. | \$FECExtendedAggregation/\$EcritureLib |
+| 12     | Montant       | Numérique      | Le montant au débit/ au crédit | The debit/credit amount. | \$FECExtendedAggregation/\$AbsAmount |
+| 13     | Sens          | Numérique      | Le sens: "D" au débit; "C" au crédit | The direction: **D** = debit, **C** = credit | \$FECExtendedAggregation/\$Direction |
+| 14     | EcritureLet   | Alphanumérique | Le lettrage de l'écriture comptable (à blanc si non utilisé) | The lettering of the accounting entry. This field is blank if it isn't used. | \$FECExtendedAggregation/\$LastSettleVoucher |
+| 15     | DateLet       | Date           | La date de lettrage (à blanc si non utilisé) | The lettering date. This field is blank if it isn't used. | \$FECExtendedAggregation/\$LastSettleDate |
+| 16     | ValidDate     | Date           | La date de validation de l'écriture comptable | The validation date of the accounting entry. | \$FECExtendedAggregation/\$ValidDate |
+| 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | \$FECExtendedAggregation/\$AmountCur |
+| 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | $FECExtendedAggregation/$CurrencyCode |
+
+
