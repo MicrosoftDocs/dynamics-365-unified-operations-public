@@ -105,7 +105,7 @@ A thorough analysis of each issue should be done before the issue is reported. T
 
 There are several [support plans](https://go.microsoft.com/fwlink/?LinkId=871952) to choose from. Therefore, every business should be able to find a plan that meets its needs.
 
-Before you request support, it's important that you choose the correct level of severity. For information about how to identify the correct severity level and estimate the initial response time for your request, see [Support overview](https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&amp;bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request) and [Report a production outage](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage).
+Before you request support, it's important that you choose the correct level of severity. For information about how to identify the correct severity level and estimate the initial response time for your request, see [Support overview](/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&amp;bc=/dynamics365/breadcrumb/toc.json#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request) and [Report a production outage](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/report-production-outage).
 
 ## Monitoring elements
 
@@ -127,7 +127,7 @@ You can sign up to receive email communication. In this way, you can ensure that
 
 ### Environment monitoring
 
-Environment monitoring is a set of tools that help you monitor and [troubleshoot the health of your environments through LCS](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics).
+Environment monitoring is a set of tools that help you monitor and [troubleshoot the health of your environments through LCS](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics).
 
 On a specific environment page for a project, the **Monitoring** section includes a **Environment monitoring** link that will take you to the **Environment monitoring dashboard**.
 
@@ -158,7 +158,7 @@ The **Health Metrics** dashboard provides a series of line charts that are filte
 
 #### SQL Insights
 
-SQL Insights provides advanced SQL troubleshooting tools that enable performance analysis. Some of these tools resemble the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For a more detailed explanation, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting) and watch the [Performance troubleshooting tools TechTalk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18).
+SQL Insights provides advanced SQL troubleshooting tools that enable performance analysis. Some of these tools resemble the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For a more detailed explanation, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/performancetroubleshooting) and watch the [Performance troubleshooting tools TechTalk](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18).
 
 SQL Insights is a reliable way to collect performance metrics on demand. It lets customers and partners run a predefined set of actions that can be used to mitigate issues in a sandbox or production environment. Because it queries SQL Server directly, you get query store metrics in near real time.
 
