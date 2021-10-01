@@ -2,14 +2,14 @@
 title: Integrate with third-party manufacturing execution systems
 description: This topic explains how you can integrate Suppl Chain Management with a third-party manufacturing execution system (MES)
 author: t-benebo
-ms.date: 09/24/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
-ms.search.validFrom: 2021-09-24
+ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
 ---
 

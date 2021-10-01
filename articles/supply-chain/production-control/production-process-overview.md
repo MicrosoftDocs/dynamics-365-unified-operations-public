@@ -7,6 +7,7 @@ ms.topic: article
 ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace, ProdParmCostEstimation, ProdParmRelease, ProdSchedule, ProdTableListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: ["19832", "intro-internal"]
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
