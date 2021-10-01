@@ -3,7 +3,7 @@
 
 title: Resolve issues after entity store maintenance
 description: This topic describes procedures that must be completed after entity store maintenance.
-author: sarvanisathish
+author: MilindaV2
 ms.date: 04/09/2021
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: sarvanis
+ms.author: milindav
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ---

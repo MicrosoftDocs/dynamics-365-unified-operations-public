@@ -3,7 +3,7 @@
 
 title: Dispatch board   
 description: A dispatch board is the central location from which you can view the status of activities in a service order. 
-author: ShylaThompson
+author: kamaybac
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: 

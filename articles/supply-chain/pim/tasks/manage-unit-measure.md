@@ -3,7 +3,7 @@
  
 title: Manage units of measure
 description: This topic describes how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
-author: sorenva
+author: t-benebo
 ms.date: 04/09/2021
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sorenand
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Manage units of measure
 

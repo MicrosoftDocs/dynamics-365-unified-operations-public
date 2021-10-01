@@ -3,7 +3,7 @@
 
 title: Inventory statuses
 description: This article describes how you can use inventory statuses to categorize and keep track of inventory.
-author: MarkusFogelberg
+author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
 # ms.search.industry:
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

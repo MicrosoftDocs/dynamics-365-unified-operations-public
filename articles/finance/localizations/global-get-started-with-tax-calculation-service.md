@@ -105,7 +105,7 @@ The steps in this section aren't related to a specific legal entity. You must co
     | 10.0.18         | Tax Configuration - Europe 30.12.82     |
     | 10.0.19         | Tax Calculation Configuration 36.38.193 |
     | 10.0.20         | Tax Calculation Configuration 40.43.208 |
-    | 10.0.21         | Tax Calculation Configuration 40.46.212 |
+    | 10.0.21         | Tax Calculation Configuration 40.48.215 |
 
 9. In the **Globalization features** workspace, select **Features**, select the **Tax Calculation** tile, and then select **Add**.
 10. Select one of the following feature types:

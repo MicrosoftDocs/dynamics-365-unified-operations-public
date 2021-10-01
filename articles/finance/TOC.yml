@@ -80,8 +80,6 @@
             href: get-started/whats-new-changed-10-0-21.md
           - name: Finance 10.0.20 (August 2021)
             href: get-started/whats-new-changed-10-0-20.md
-          - name: Finance 10.0.19 (June 2021)
-            href: get-started/whats-new-changed-10-0-19.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -286,6 +284,8 @@
         href: accounts-payable/broker-contract.md
       - name: Royalty contract management
         href: accounts-payable/royalty-contract.md
+      - name: Reference original invoices in credit notes (vendor invoices)
+        href: accounts-payable/gbl-original-invoice-numbers-credit-notes-ap.md
       - name: Payments and settlements
         items:
         - name: Centralized payments for Accounts payable
@@ -1274,6 +1274,8 @@
           href: finance-insights/use-customer-payment-predictions.md
         - name: Snapshots overview
           href: finance-insights/payment-snapshots.md
+      - name: Finance insights troubleshooting FAQ
+        href: finance-insights/finance-insights-troubleshooting-faq.md
     - name: Project management and accounting
       items:
       - name: Project management and accounting overview
@@ -1576,6 +1578,10 @@
               href: localizations/emea-multiple-vat-registration-numbers.md
             - name: Reporting for multiple VAT registrations
               href: localizations/emea-reporting-for-multiple-vat-registrations.md
+            - name: Austria reporting 
+              items: 
+              - name: VAT declaration
+                href: localizations/emea-aut-vat-declaration-austria.md
             - name: France reporting
               items: 
               - name: VAT declaration
@@ -1637,9 +1643,13 @@
         - name: VAT statement
           href: localizations/emea-aut-vat-statement-details.md
         - name: Cross-border services report
-          href: localizations/emea-aut-cross-border-services-report.md
+          href: localizations/emea-aut-vat-statement-details.md
+        - name: Austrian Intrastat
+          href: localizations/emea-aut-intrastat.md
         - name: Purchase duties
           href: localizations/emea-aut-purchase-duties.md
+        - name: VAT declaration
+          href: localizations/emea-aut-vat-declaration-austria.md
       - name: Bahrain
         items: 
         - name: Bahrain overview
@@ -2676,8 +2686,6 @@
           href: localizations/emea-ita-vat-statements-details.md
         - name: Quarterly VAT communication report
           href: localizations/emea-ita-quarterly-vat-communication.md
-        - name: Black list report
-          href: localizations/emea-ita-black-list-report.md
         - name: Competence date and fiscal journal
           href: localizations/emea-ita-competence-date.md
         - name: Depreciation of fixed assets
@@ -3801,6 +3809,8 @@
       items:
       - name: Electronic reporting overview
         href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+      - name: Electronic reporting components
+        href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
       - name: Configurations
         items:
         - name: Create configurations
@@ -4129,6 +4139,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
             - name: Run formats to dynamically add columns to Excel reports
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+          - name: Design an ER format to paginate generated documents in Excel
+            href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/finance/toc.json 
         - name: Design configurations to generate reports in Word format
           items:
           - name: Design a new ER configuration to generate reports in Word format
@@ -4507,6 +4519,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
         - name: Configure the global address book
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
+        - name: Address setup
+          href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/finance/toc.json
         - name: Address books FAQ
           href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
         - name: Configure address books

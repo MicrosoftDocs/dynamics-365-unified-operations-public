@@ -3,7 +3,7 @@
  
 title: Copy a formula
 description: This procedure focuses on creating a formula that includes the same ingredients as an existing formula, but with minor differences. 
-author: ShylaThompson
+author: johanhoffmann
 ms.date: 11/11/2016
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

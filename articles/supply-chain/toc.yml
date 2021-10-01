@@ -80,8 +80,6 @@
             href: get-started/whats-new-scm-10-0-21.md
           - name: Supply Chain Management 10.0.20 (August 2021)
             href: get-started/whats-new-scm-10-0-20.md
-          - name: Supply Chain Management 10.0.19 (June 2021)
-            href: get-started/whats-new-scm-10-0-19.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -1653,6 +1651,8 @@
           href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
         - name: Parameters not used by Planning Optimization
           href: master-planning/planning-optimization/not-used-parameters.md
+        - name: Supply schedule
+          href: master-planning/supply-schedule.md
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with demand forecast
@@ -1761,8 +1761,6 @@
           href: master-planning/tasks/create-intercompany-plan.md
         - name: View outbound planned intercompany demand
           href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-        - name: Collaborate with internal supply chain customers
-          href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
         - name: Net requirements and pegging information with built-in master planning
           href: master-planning/net-requirements-built-in-master-planning.md
       - name: Forecasting
@@ -2019,6 +2017,8 @@
           href: procurement/request-quotations.md
         - name: Create a request for quotation
           href: procurement/tasks/create-request-quotation.md
+        - name: Sealed bidding for RFQs
+          href: procurement/sealed-bidding.md
         - name: Create a requisition that uses an RFQ
           href: procurement/tasks/create-requisition-uses-rfq.md
         - name: Create a scoring method for RFQs
@@ -2037,8 +2037,12 @@
           href: procurement/purchase-order-approval-confirmation.md
         - name: Purchase order approval mobile workspace
           href: procurement/purchase-order-mobile-workspace.md
+        - name: Create and invoice an intercompany purchase order for internal use
+          href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+        - name: Check intercompany order price discrepancies
+          href: sales-marketing/intercompany-check-price-discrepancies.md
         - name: Record the receipt of goods on the purchase order
-          href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+          href: procurement/tasks/record-receipt-goods-purchase-order.md
       - name: Purchase order creation
         items:
         - name: Create purchase orders manually
@@ -2729,6 +2733,62 @@
           href: sales-marketing/tasks/mass-sales-quotations.md
         - name: Create and edit sales quotations
           href: sales-marketing/tasks/create-edit-sales-quotations.md
+      - name: Intercompany trade
+        items:
+        - name: Set up intercompany trade
+          items:
+          - name: Set up intercompany trade
+            href: sales-marketing/intercompany-trade-set-up.md
+          - name: Intercompany parameters
+            href: sales-marketing/intercompany-parameters.md
+          - name: Set up vendors, customers, and items for intercompany trade
+            href: sales-marketing/intercompany-set-up-vendors-customers-items.md
+          - name: Set up charges on intercompany orders
+            href: sales-marketing/intercompany-set-up-charges.md
+          - name: Set up parameters to post an intercompany order
+            href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
+        - name: Synchronize intercompany information
+          items:
+          - name: Synchronize intercompany prices and discounts
+            href: sales-marketing/intercompany-sync-prices-discounts.md
+          - name: Synchronize intercompany charges
+            href: sales-marketing/intercompany-sync-charges.md
+          - name: Synchronize intercompany customer information
+            href: sales-marketing/intercompany-synch-customer-information.md
+          - name: Synchronize intercompany disposition codes
+            href: sales-marketing/intercompany-synchronize-disposition-codes.md
+        - name: Intercompany sales orders and invoices
+          items:
+          - name: Creating intercompany purchase and sales orders in several companies
+            href: sales-marketing/intercompany-orders-in-several-companies.md
+          - name: Intercompany orders and return orders
+            href: sales-marketing/intercompany-orders-and-return-orders.md
+          - name: Create an intercompany sales order for internal use
+            href: sales-marketing/intercompany-sales-order-for-internal-use.md
+          - name: Create and invoice an intercompany sales order for an external customer
+            href: sales-marketing/intercompany-sales-order-for-external-customer.md
+          - name: Intercompany reservations
+            href: sales-marketing/intercompany-reservations.md
+          - name: Change or delete an original intercompany sales order
+            href: sales-marketing/intercompany-change-delete-original-sales-order.md
+          - name: Change intercompany orders
+            href: sales-marketing/intercompany-change-orders.md
+          - name: Intercompany batch and serial numbers
+            href: sales-marketing/intercompany-batch-serial-numbers.md
+          - name: Intercompany packing slips
+            href: sales-marketing/intercompany-packing-slips.md
+          - name: Register payments automatically for intercompany customer invoices
+            href: sales-marketing/intercompany-register-customer-payments-automatically.md
+        - name: Intercompany purchase orders
+          items:
+          - name: Create and invoice an intercompany purchase order for internal use
+            href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+          - name: Check intercompany order price discrepancies
+            href: sales-marketing/intercompany-check-price-discrepancies.md
+        - name: Intercompany currency conversions
+          href: sales-marketing/intercompany-currency-conversions.md
+        - name: Intercompany master scheduling
+          href: sales-marketing/intercompany-master-scheduling.md
       - name: Returns
         items:
         - name: Sales returns
@@ -3067,6 +3127,8 @@
         href: landed-cost/landed-cost-vs-tms.md
       - name: Set up and configure the Landed cost module
         items:
+        - name: Turn on the Landed cost module for your system
+          href: landed-cost/landed-cost-enable.md
         - name: Landed cost parameters
           href: landed-cost/landed-cost-parameters.md
         - name: Landed cost procurement and sourcing parameters
@@ -3185,6 +3247,8 @@
             href: warehousing/warehouse-slotting.md
           - name: Location directive inventory picking aging
             href: warehousing/location-directive-inventory-picking-aging.md
+          - name: Anchoring
+            href: warehousing/anchoring.md
           - name: Outbound sorting
             href: warehousing/outbound-sorting.md
           - name: Put to wall - put to store
@@ -3341,6 +3405,8 @@
             href: warehousing/display-older-batches-within-warehouses.md
           - name: Pick oldest batch on a mobile device
             href: warehousing/pick-oldest-batch.md
+        - name: Global mobile device parameters
+          href: warehousing/mobile-device-parameters.md
         - name: Mobile device user accounts
           href: warehousing/mobile-device-work-users.md
         - name: Mobile device user settings

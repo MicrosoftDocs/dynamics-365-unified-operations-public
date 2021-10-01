@@ -102,8 +102,6 @@
             href: get-started/whats-new-commerce-10-0-21.md
           - name: Commerce 10.0.20 (August 2021)
             href: get-started/whats-new-commerce-10-0-20.md
-          - name: Commerce 10.0.19 (June 2021)
-            href: get-started/whats-new-commerce-10-0-19.md
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -668,6 +666,8 @@
           href: tasks/base-price-trade-agreements.md
         - name: Create trade agreements using category pricing rules
           href: tasks/category-pricing-rules-trade-agreements.md
+        - name: Delay exact price and discount calculation
+          href: delayed-price-calculation.md
       - name: Recommendations 
         items:
         - name: Product recommendations overview 
@@ -1398,12 +1398,16 @@
         items:
         - name: Commerce localization for Russia
           href: localizations/rus-commerce-localization.md
-        - name: Simplified customer address format in Commerce POS for Russia
-          href: localizations/rus-simplified-address.md
         - name: Set up Commerce localization for Russia
           href: localizations/rus-commerce-setup.md
         - name: Prepayments in Commerce for Russia
           href: localizations/rus-commerce-prepayments.md          
+        - name: Simplified customer address format in Commerce POS for Russia
+          href: localizations/rus-simplified-address.md
+        - name: Fiscal printer integration sample for Russia
+          href: localizations/rus-fpi-sample.md
+        - name: Customer information management for Russia
+          href: localizations/rus-customer-information.md 
       - name: Sweden
         items:
         - name: Cash register functionality
@@ -2220,6 +2224,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
         - name: Configure the global address book
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
+        - name: Address setup
+          href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
         - name: Address books FAQ
           href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
         - name: Configure address books
@@ -2329,7 +2335,11 @@
     - name: Extensibility
       items: 
       - name: Commerce development and extensibility
-        href: dev-itpro/dev-retail-home-page.md
+        items:
+          - name: Commerce for IT pros and developers
+            href: dev-itpro/dev-retail-home-page.md
+          - name: Set up a local development environment
+            href: dev-itpro/setup-local-dev-env.md
       - name: Online channel extensibility
         items:
         - name: Online channel extensibility overview
@@ -2438,7 +2448,7 @@
             href: e-commerce-extensibility/event-based-data-actions.md
           - name: Core data actions
             href: e-commerce-extensibility/core-data-actions.md
-          - name: Call Retail Server APIs
+          - name: Call Commerce Scale Unit APIs
             href: e-commerce-extensibility/call-retail-server-apis.md
           - name: Call Retail Server extension APIs
             href: e-commerce-extensibility/call-retail-extension-api.md
@@ -2516,8 +2526,6 @@
           href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Set up a build pipeline for the independent-packaging SDK
           href: dev-itpro/build-pipeline.md
-        - name: Merge the build systems for Commerce and Finance and Operations
-          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
           href: dev-itpro/retail-sdk/migrate-sdk.md
         - name: Retail SDK extensibility samples
@@ -2630,8 +2638,6 @@
                       href: dev-itpro/pos-extension/consume-apis-pos.md
       - name: Hardware Station extensibility
         items:
-        - name: Hardware Station and extensibility
-          href: dev-itpro/hardware-station-extensibility.md
         - name: Integrate POS with a new hardware device
           href: dev-itpro/hardware-device-extension.md
       - name: Retail Server extensibility

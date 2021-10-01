@@ -3,7 +3,7 @@
 
 title: Quarantine orders
 description: This topic describes how to use quarantine orders to block inventory.
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ms.search.region: Global
 # ms.search.industry:
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

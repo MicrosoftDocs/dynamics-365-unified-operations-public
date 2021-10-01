@@ -3,13 +3,13 @@
 
 title: Planned maintenance in self-service environments FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
-author: sarvanis
-ms.date: 09/08/2021
+author: rashmansur
+ms.date: 09/21/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sarvanis
+ms.author: rashmim
 ms.search.validFrom: 2021-05-13
 
 ---
@@ -38,9 +38,9 @@ A planned maintenance window is typically during the dark hours of the geographi
 | September 2021 | September 26, 2021 | September 25, 2021 | September 25, 2021 |
 | October 2021 | October 24, 2021 | October 23, 2021 | October 23, 2021 |
 | November 2021 | December 5, 2021 | December 4, 2021 | December 4, 2021 |
-| December 2021 | January 9, 2021 | January 8, 2021 | January 8, 2022 |
-| January 2022 | January 23, 2021 | January 22, 2021 | January 22, 2021 |
-| February 2022 | February 20, 2021 | February 19, 2021 | February 19, 2021 |
+| December 2021 | January 9, 2022 | January 8, 2022 | January 8, 2022 |
+| January 2022 | January 23, 2022 | January 22, 2022 | January 22, 2022 |
+| February 2022 | February 20, 2022 | February 19, 2022 | February 19, 2022 |
 
 ## How are operating system maintenance updates applied?
 This service maintenance is planned outside normal business hours to help minimize any potential impact on your environment. For environments that have users in other parts of the world, we recognize that "outside normal business hours" might affect you differently. We are working hard to improve Microsoft Dynamics 365 and minimize the impact of these maintenance windows in the future. Going forward, infrastructure maintenance schedules will be posted here, and you won't receive future notifications for infrastructure maintenance.

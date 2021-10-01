@@ -25,6 +25,8 @@ ms.dyn365.ops.version: 10.0.15
 ---
 # Load building workbench
 
+[!include [banner](../../includes/banner.md)]
+
 The load building workbench lets you apply load building strategies when you create loads.
 
 ## Create a load building strategy
