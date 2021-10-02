@@ -1,6 +1,6 @@
 ---
 title: Integrate with third-party manufacturing execution systems
-description: This topic explains how you can integrate Suppl Chain Management with a third-party manufacturing execution system (MES)
+description: This topic explains how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
 author: t-benebo
 ms.date: 10/01/2021
 ms.topic: article
@@ -17,9 +17,9 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-Some manufacturing organizations that use Supply Chain Management use the native functionality in Dynamics 365 to control their manufacturing activities for machines, equipment, and personnel. However, other manufacturing organizations, especially those that have advanced manufacturing requirements, use a third-party manufacturing execution system (MES) instead. Organizations might choose a third-party MES solution because, for example, it's specifically tailored to their vertical industry.
+Some manufacturing organizations that use Microsoft Dynamics 365 Supply Chain Management use the native functionality in Dynamics 365 to control their manufacturing activities for machines, equipment, and personnel. However, other manufacturing organizations, especially those that have advanced manufacturing requirements, use a third-party manufacturing execution system (MES) instead. Organizations might choose a third-party MES solution because, for example, it's specifically tailored to their vertical industry.
 
-In the integrated solution, data exchange is fully automated and occurs in near real time. Therefore, data is kept current in both systems, and no manual data entry is required. For example, when material consumption is registered in the MES, the integration ensures that the same consumption is also registered in Dynamics 365. Therefore, up-to-date inventory records are available to other important processes, such as planning and sales.
+In the integrated solution, data exchange is fully automated and occurs in near-real time. Therefore, data is kept current in both systems, and no manual data entry is required. For example, when material consumption is registered in the MES, the integration ensures that the same consumption is also registered in Dynamics 365. Therefore, up-to-date inventory records are available to other important processes, such as planning and sales.
 
 The solution makes it faster, easier, and cheaper for Supply Chain Management users to integrate with third-party MESs. It offers the following features:
 
@@ -56,9 +56,11 @@ To monitor the incoming messages to the system, open the **Manufacturing executi
 
 ## Call the API
 
-To call the MES integration API, send a `POST` request to the following endpoint URL:<br>`/api/services/SysMessageServices/SysMessageService/SendMessage`
+To call the MES integration API, send a `POST` request to the following endpoint URL:
 
-Send a request body similar to the following, replacing the values for `_companyId`, `_messageType` and `_messageContent` as needed. See the next section for details about the various message types supported by the API and how to design their content.
+`/api/services/SysMessageServices/SysMessageService/SendMessage`
+
+The body of the request that you send should resemble the following example. Replace the values for `_companyId`, `_messageType`, and `_messageContent` as required. For information about the various message types that the API supports and how to design their content, see the next section.
 
 ```json
 {
@@ -72,11 +74,11 @@ Send a request body similar to the following, replacing the values for `_company
 
 ## API message types and content
 
-The following subsections describe each type of message that can be exchanged though the MES integration API.
+This section describes each type of message that can be exchanged through the MES integration API.
 
 ### Start production order message
 
-The *start production order* message `_messageType` is `ProdProductionOrderStart`. It supports the fields listed in the following table.
+For the *start production order* message, the `_messageType` value is `ProdProductionOrderStart`. The following table shows the fields that this message supports.
 
 | Field name | Status | Type |
 |---|---|---|
@@ -87,22 +89,22 @@ The *start production order* message `_messageType` is `ProdProductionOrderStart
 
 ### Report as finished message
 
-The *report as finished* message `_messageType` is `ProdProductionOrderReportFinished`. It supports the fields listed in the following table.
+For the *report as finished* message, the `_messageType` value is `ProdProductionOrderReportFinished`. The following table shows the fields that this message supports.
 
 | Field name | Status | Type |
 |---|---|---|
 | `ProductionOrderNumber` | Mandatory | String |
-| `ReportFinishedLines` | Mandatory | A list of lines (at least one), each of which contains the payload described in the following table. |
+| `ReportFinishedLines` | Mandatory | A list of lines (at least one), each of which contains the payload that is described in the next table |
 
-Each line in the `ReportFinishedLines` section of the `ProdProductionOrderReportFinished` message supports the fields listed in the following table.
+The following table shows the fields that each line in the `ReportFinishedLines` section of the `ProdProductionOrderReportFinished` message supports.
 
 | Field name | Status | Type |
 |---|---|---|
 | `LineNumber` | Optional | Real |
 | `ItemNumber` | Optional | String|
 | `ProductionType` | Optional | Enum (MainItem \| Formula \| BOM \| Co_Product \| By_Product \| None), extensible |
-| `ReportedErrorQuantity` | Optional | real|
-| `ReportedGoodQuantity` | Optional | real|
+| `ReportedErrorQuantity` | Optional | Real|
+| `ReportedGoodQuantity` | Optional | Real|
 | `ReportedErrorCatchWeightQuantity` | Optional | Real |
 | `ReportedGoodCatchWeightQuantity` | Optional | Real |
 | `AcceptError` | Optional |Boolean |
@@ -115,8 +117,8 @@ Each line in the `ReportFinishedLines` section of the `ProdProductionOrderReport
 | `ProductionJournalNameId` | Optional | String |
 | `PickingListProductionJournalNameId` | Optional | String|
 | `RouteCardProductionJournalNameId` | Optional | String |
-| `FromOperationNumber` | Optional |integer|
-| `ToOperationNumber` | Optional |integer|
+| `FromOperationNumber` | Optional | Integer|
+| `ToOperationNumber` | Optional | Integer|
 | `InventoryLotId` | Optional | String |
 | `BaseValue` | Optional | String |
 | `EndJob` | Optional | Boolean |
@@ -138,19 +140,19 @@ Each line in the `ReportFinishedLines` section of the `ProdProductionOrderReport
 | `ProductionWarehouseLocationId` | Optional | String |
 | `InventoryDimension1` to `InventoryDimension12` | Optional | String |
 
-The 12 extensible dimension (`InventoryDimension1` to `InventoryDimension12`) require customization and aren't always used. For more information about these, see [Add new inventory dimensions through extension](../../fin-ops-core/dev-itpro/extensibility/inventory-dimensions.md).
+The 12 extensible dimensions (`InventoryDimension1` through `InventoryDimension12`) require customization and aren't always used. For more information about them, see [Add new inventory dimensions through extension](../../fin-ops-core/dev-itpro/extensibility/inventory-dimensions.md).
 
 ### Material consumption (picking list) message
 
-The *material consumption (picking list)* message `_messageType` is `ProdProductionOrderPickingList`. It supports the fields listed in the following table.
+For the *material consumption (picking list)* message, the `_messageType` value is `ProdProductionOrderPickingList`. The following table shows the fields that this message supports.
 
 | Field name | Status | Type |
 |---|---|---|
 | `ProductionOrderNumber` | Mandatory | String |
 | `JournalNameId` | Optional | String |
-| `PickingListLines` | Mandatory | A list of lines (at least one), each of which contains the payload described in the following table. |
+| `PickingListLines` | Mandatory | A list of lines (at least one), each of which contains the payload that is described in the next table |
 
-Each line in the `PickingListLines` section of the `ProdProductionOrderPickingList` message supports the fields listed in the following table.
+The following table shows the fields that each line in the `PickingListLines` section of the `ProdProductionOrderPickingList` message supports.
 
 | Field name | Status | Type |
 |---|---|---|
@@ -164,7 +166,7 @@ Each line in the `PickingListLines` section of the `ProdProductionOrderPickingLi
 | `ConsumptionCatchWeightQuantity` | Optional | Real |
 | `ProposalCatchWeightQuantity` | Optional | Real |
 | `ConsumptionDate` | Optional | Date |
-| `OperationNumber` | Optional |  Integer |
+| `OperationNumber` | Optional | Integer |
 | `LineNumber` | Optional | Real |
 | `PositionNumber` | Optional | String |
 | `IsConsumptionEnded` | Optional | Boolean |
@@ -172,19 +174,19 @@ Each line in the `PickingListLines` section of the `ProdProductionOrderPickingLi
 
 ### Time used for operation (route card) message
 
-The *time used for operation (route card)* message `_messageType` is `ProdProductionOrderRouteCard`. It supports the fields listed in the following table.
+For the *time used for operation (route card)* message, the `_messageType` value is `ProdProductionOrderRouteCard`. The following table shows the fields that this message supports.
 
 | Field name | Status | Type |
 |---|---|---|
 | `ProductionOrderNumber` | Mandatory | String |
 | `JournalNameId` | Optional | String |
-| `RouteCardLines` | Mandatory | A list of lines (at least one), each of which contains the payload described in the following table. |
+| `RouteCardLines` | Mandatory | A list of lines (at least one), each of which contains the payload that is described in the next table |
 
-Each line in the `RouteCardLines` section of the `ProdProductionOrderRouteCard` message supports the fields listed in the following table.
+The following table shows the fields that each line in the `RouteCardLines` section of the `ProdProductionOrderRouteCard` message supports.
 
 | Field name | Status | Type |
 |---|---|---|
-| `OperationNumber` | Mandatory | mandatory, Integer |
+| `OperationNumber` | Mandatory | Mandatory, Integer |
 | `OperationPriority` | Optional | Enum (Primary \| Secondary1 \| Secondary2 \| ... \| Secondary20) |
 | `OperationId` | Optional | String |
 | `OperationsResourceId` | Optional | String |
@@ -208,7 +210,7 @@ Each line in the `RouteCardLines` section of the `ProdProductionOrderRouteCard` 
 
 ### End production order message
 
-The *end production order* message `_messageType` is `ProdProductionOrderEnd`. It supports the fields listed in the following table.
+For the *end production order* message, the `_messageType` value is `ProdProductionOrderEnd`. The following table shows the fields that this message supports.
 
 | Field name | Status | Type |
 |---|---|---|
@@ -219,21 +221,21 @@ The *end production order* message `_messageType` is `ProdProductionOrderEnd`. I
 | `AutoReportAsFinished` | Optional | Boolean |
 | `AutoUpdate` | Optional | Boolean |
 
-## Receive feedback on the state of a message
+## Receive feedback about the state of a message
 
-After the manufacturing execution system has sent a message to Supply Chain Management, it may be relevant have Supply Chain Management return feedback about the state of the message. For example, this may be relevant in the following cases:
+After the MES has sent a message to Supply Chain Management, it might be relevant for Supply Chain Management to return feedback about the state of the message. Here are some examples of cases where this behavior might be relevant:
 
-- There might not be a person responsible for supervising the manufacturing execution system integration on a constant basis.
-- Even if there is a person responsible for supervising the manufacturing execution system integration, they might want to be notified by email when there is a failed message, so they know that they need to take action.
-- The manufacturing execution system my need to show an error message to inform the shop floor operator or somebody from the IT department to take action.
-- The manufacturing execution system may need to recalculate the order schedule after receiving a failure message (such as a production order failed to start).
+- There is no person who is responsible for constantly supervising the MES integration.
+- The person who is responsible for supervising the MES integration wants to be notified by email when a message fails, so that they know that they have to take action.
+- The MES must show an error message to inform the shop floor operator or somebody from the IT department that they have to take action.
+- The MES must recalculate the order schedule after it receives a failure message (for example, because a production order failed to start).
 
-In these cases, you can leverage the standard alerts feature in Supply Chain Management. For details about how standard alerts work, see the following sources:
+In these cases, you can take advantage of the standard alert feature in Supply Chain Management. For information about how standard alerts work, see the following resources:
 
 - Help topic: [Alerts overview](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
 - Video: [Alert rule options in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
-For example, you might set up the following alerts to provide feedback on the state of a message:
+For example, you might set up the following alerts to provide feedback about the state of a message:
 
-- Create a business event ("Send externally") for when a message is "Failed"
-- Send a notification and a mail to the IT admin or production floor manager
+- Create a business event ("Send externally") that is used when a message is *Failed*.
+- Send a notification and email to the IT admin or production floor manager.
