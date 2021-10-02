@@ -46,8 +46,8 @@ Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow cu
 
 For the code upgrade service to recognize your source code, your Azure DevOps project must contain a Team Foundation Version Control (TFVC) code repository. In addition, the code repository folder structure must conform to the following strict pattern. 
 
- - For code and metadata: /<DevOps project name>/Trunk/Main/Metadata
- - For Visual Studio project and solution files: /<DevOps project name>/Trunk/Main/Projects
+ - For code and metadata: `/<DevOps project name>/Trunk/Main/Metadata`
+ - For Visual Studio project and solution files: `/<DevOps project name>/Trunk/Main/Projects`
  
  You can create new folders directly in the Azure DevOps web interface under **Repos**.
  

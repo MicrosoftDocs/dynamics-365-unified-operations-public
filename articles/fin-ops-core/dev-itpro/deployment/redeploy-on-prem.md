@@ -38,7 +38,7 @@ Before you delete the environment you plan to update, use the following steps to
 2. Select the connector to your environment, and then click **Edit**.
 3. On the **Edit connector** tab, navigate to **Configure Agent** > **Enter Configuration**.
 4. Copy the value of the Download Fileshare location in the **Configuration Settings** section. You will need this later.
-5. Log in to the on-premises environment file share machine and copy the **\agent\wp<environment name>\StandaloneSetup\config.json**. You can use the configuration settings in this json file to redeploy your environment.
+5. Log in to the on-premises environment file share machine and copy the `\agent\wp<environment name>\StandaloneSetup\config.json`. You can use the configuration settings in this json file to redeploy your environment.
 
 ### Configuration settings
 The following tables provide information about configuration settings. Use the **Configuration setting** value from the .json file that you saved in the previous procedure.

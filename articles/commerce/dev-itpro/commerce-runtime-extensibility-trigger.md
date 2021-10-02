@@ -100,7 +100,10 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
 ### Register the extension
 
 Copy and paste the extension library to **...\RetailServer\webroot\bin\ext folder** and update the **commerceRuntime.ext.config** file with the custom extension library information under composition section. In this example, **Contoso.Commerce.Runtime.Services** is the  custom extension name.
-    <add source="assembly" value="Contoso.Commerce.Runtime.Services" /> 
+
+```xml
+<add source="assembly" value="Contoso.Commerce.Runtime.Services" /> 
+```
 
 For the CRT extension to work in offline mode, update **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext\CommerceRuntime.MPOSOffline.ext.config** with the extension library information under the composition section. Then copy and paste the extension library to **...\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker\ext**.
 
