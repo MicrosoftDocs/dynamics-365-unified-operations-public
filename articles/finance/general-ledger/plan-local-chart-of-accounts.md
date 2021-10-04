@@ -12,15 +12,15 @@ ms.technology:
 # optional metadata
 
 ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts, LedgerConsolidateAccountGroup, MainAccountConsolidateAccount, DimensionDetails, MainAccountDetails
-# ROBOTS: 
+ROBOTS: 
 audience: Application User
-# ms.devlang: 
+ms.devlang: 
 ms.reviewer: roschlom
-# ms.tgt_pltfrm: 
+ms.tgt_pltfrm: 
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
 ms.search.region: Global
-# ms.search.industry: 
+ms.search.industry: 
 ms.author: veneva
 ms.search.validFrom: 09/30/2021
 ms.dyn365.ops.version: AX 7.0.0
@@ -31,237 +31,225 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-*For the purpose of this article, we will use:*
+This topic provides information that will help you plan the chart of accounts (COA) when your organization includes legal entities that must meet requirements for specific localities that they do business in. For the purpose of this article, we will use the following terms.
 
--   *Global – as is the Chart of Accounts (CoA) that is used by the organization globally and in most of the cases is the one that you would consolidate to*
+- Global – refers to the COA that's used by the organization globally and in most of the cases is the one that you would consolidate to.
 
--   *Local – as is the CoA used by legal entities in a specific country for the reason listed below*
+- Local – refers the COA used by legal entities in a specific country for the reason listed below.
 
--   *Shared – as is the ability in D365 Finance to use the same without additional effort in more than one legal entity. Both the global and the local CoA can be shared.*
+- Shared – refers the ability to use the same COA in more than one legal entity. Both the global and the local COA can be shared.
 
-In Dynamics 365 Finance, multiple Chart of Accounts (CoA) can be created and each one can be shared. A shared CoA means that the same CoA can be used by more than one legal entity, but each legal entity can only be assigned one CoA. The CoA used by a legal entity is defined on the **Ledger** page.
+You can create and share multiple COAs. A shared COA means that the same COA can be used by more than one legal entity, but each legal entity can only be assigned one COA. The COA used by a legal entity is defined on the **Ledger** page. 
 
-When designing the CoA, many organizations aim for a global CoA. The shared CoA capability allows for creation of a global CoA, including benefits from creating a single CoA to easier governance and control, maintenance, and reporting.
+When designing the COA, many organizations aim for a global COA. The shared COA capability allows for creation of a global COA, including benefits from creating a single COA, which makes governance and control, maintenance, and reporting easier.
 
-While a global CoA is desired by most organizations and easiest to implement, some legal entities require a local CoA. A few examples of scenarios that require a local CoA include the following:
+While a global COA is desired by most organizations and is the easiest to implement, some legal entities require a local COA. A few examples of scenarios that require a local COA include the following:
 
--   Local statutory requirements
+- Local statutory requirements
 
--   Local accounting standards requirements
+- Local accounting standards requirements
 
--   Industry requirements
+- Industry requirements
 
--   Company specific reporting and analysis requirements
+- Company-specific reporting and analysis requirements
 
-When your organization requires a legal entity to utilize a local CoA, there are two options:
+When your organization requires a legal entity to use a local COA, there are two options.
 
-1.  Assign the global CoA and define other means for the local requirements
+1. Assign the global COA and define other means for the local requirements.
 
-2.  Assign the local CoA to the legal entity and define relations to the global CoA
+2. Assign the local COA to the legal entity and define relations to the global COA.
 
 Deciding the approach to use can be determined by the organization structure and the reporting structure.
 
-If a global CoA is assigned to the legal entity, the options to meet local reporting requirements are as follows:
+If a global COA is assigned to the legal entity, the options to meet local reporting requirements are as follows:
 
--   Local consolidation
+- Local consolidation
 
--   Financial dimension to track local CoA
+- Financial dimension to track local COA
 
--   Create local main accounts within the global CoA
+- Create local main accounts within the global COA
 
--   External mapping to local CoA
+- External mapping to local COA
 
-If a local CoA is assigned to the legal entity, the options to meet global reporting requirements are as follows:
+If a local COA is assigned to the legal entity, only one option is available at this time for meeting global reporting requirements, which is Global consolidation.
 
--   Global consolidation
+## Global COA assigned to legal entity
 
-# Global CoA assigned to legal entity
+When you need to assign a global COA to a legal entity, there are four options for configuring the system available. In each of option, a single COA is configured and linked to each legal entity in the **Ledger** page. Each option then uses a different approach to meet the localization requirements. The following sections outline the high-level steps to configure the system for the localization requirements along with the advantages and disadvantages of each option.
 
-When assigning a global CoA to a legal entity, there are four options for configuring the system. In each of the approaches, a single CoA is configured and linked to each legal entity in the **Ledger** page. Each option then uses a different approach to meet the localization requirements. The following section outlines the high-level steps to configure the system for the localization requirements along with the pros and cons of each.
+## Local consolidation
 
-### Local consolidation
+The local consolidation option is the recommended approach for meeting local chart of account requirements and leveraging the functionality in the system that was designed for this purpose.
 
-The local consolidation option is the recommended approach for meeting local chart of account requirements and leveraging the functionality in Dynamics 365 Finance that was designed for this purpose.
+### Set up consolidation for a local chart of accounts 
 
--   How
+   1.  Create a single global COA with all the required main accounts.
 
-    1.  Create a single global CoA with all the required main accounts.
+   2.  Assign the global COA on the **Ledger** page in each legal entity.
 
-    2.  Assign the global CoA on the **Ledger** page in each legal entity.
+   3.  Create a consolidation legal entity for each localization required.
 
-    3.  Create a consolidation legal entity for each localization required.
+   4.  If there is only one localization required, configure the **Consolidation account** on the **Main account** page or use **Consolidation groups** and **Additional consolidation accounts**.
 
-    4.  If there is only one localization required:
+   5.  If you need more than one localization, or if both the account number and account name require translation, use **Consolidation groups** and **Additional consolidation accounts** to represent the localization requirements.
 
-        -   Configure the **Consolidation account** on the **Main account** page or use **Consolidation groups** and **Additional consolidation accounts**
+   6.  Run the consolidation process to transform the value from the source legal entity using the global COA to the consolidation company using the local COA.
 
-    5.  If there is more than one localization required or if both the account number and account name require translation:
+### Advantages
 
-        -   Use **Consolidation groups** and **Additional consolidation accounts** to represent the localization requirements
+- Consistent way of working across the organization
 
-    6.  Run consolidation process to transform the value from the source legal entity using the global CoA to the consolidation company using the local CoA(s).
+- One translation of the local position
 
--   Pros
+- Support translation of both the main account ID and the name of each main account
 
-    -   Consistent way of working across the organization
+- Supports multiple localization
 
-    -   One translation of the local position
+#### Disadvantages
 
-    -   Support translation of both the main account ID and the name of each main account
+-   Additional consolidation company creation
 
-    -   Supports multiple localization
+-   Additional consolidation process
 
--   Cons
+-   Can only report on the localized chart after the consolidation process is complete
 
-    -   Additional consolidation company creation
+## Financial dimension for local chart of accounts
 
-    -   Additional consolidation process
+The financial dimension for a local COA approach uses a financial dimension, where the financial dimension values represent the local main accounts that are required for the localization. This approach works well if there is only one localization required, but it becomes less usable as you add more localizations and financial dimensions.
 
-    -   Can only report on the localized chart after the consolidation process is complete
+### Set up a financial dimension for a local chart of accounts
 
-### Financial dimension for local CoA
+1. Create a single global COA with all the required main accounts.
 
-The financial dimension for local CoA approach uses a financial dimension, where the financial dimension values represent the local main accounts that are required for the localization. This approach works well if there is only one localization required and becomes more unusable as you add more localizations and financial dimensions.
+2. Assign the global COA on the **Ledger** page in each legal entity.
 
--   How
+3. Create a **Financial dimension** to represent the local COA.
 
-    1.  Create a single global CoA with all the required main accounts.
+4. Create **Financial dimension values** to represent the main accounts in the local COA.
 
-    2.  Assign the global CoA on the **Ledger** page in each legal entity.
+5. Update the account structure to include the "local COA" financial dimension.
 
-    3.  Create a **Financial dimension** to represent the local CoA.
+6. Ensure the "local COA" financial dimension is always populated and that it doesn't allow a blank value. Consider using derived dimension or fixed dimensions.
 
-    4.  Create **Financial dimension values** to represent the main accounts in the local CoA
+7. Create a financial dimension set with the 'local COA' dimension as the first selected financial dimension. The financial dimension set can be used when generating the trial balance.
 
-    5.  Update the account structure to include the "local CoA" financial dimension
+### Advantages
 
-    6.  Ensure the "local CoA" financial dimension is always populated and doesn't allow a blank value
+- Both Global and Local COA main accounts exist on the transaction level. Global is the main account and local is the financial dimension value.
 
-        -   Consider using derived dimension or fixed dimensions
+- Real-time reporting and view of both global and local finance position
 
-    7.  Create a financial dimension set with the 'local CoA' dimension as the first selected financial dimension. The financial dimension set can be used when generating the trial balance.
+### Disadvantages
 
--   Pros
+- In General ledger parameters, if 'Values used for summary account' is defined as Accounting distributions, the financial dimensions which represent the main account for the expense/asset/revenue will incorrectly be used for the Accounts receivable and Accounts payable summary account. We recommended defining this setting as a Source document instead to ensure that the correct financial dimension values are used.
 
-    -   Both Global and Local CoA main accounts exist on transaction level. Global is the main account and local is the financial dimension value.
+- If many local COAs are required and one financial dimension is used for all, the list of financial dimension values that are used could become long and difficult to use.
 
-    -   Real-time reporting and view of both global and local finance position
+- If many local COAs are required and a separate financial dimension is used to represent each one, adding financial dimensions, and financial dimension sets, can have negative effects on the usability and performance of the system.
 
--   Cons
+- Careful consideration is required on the number of financial dimensions, the number of values within each one, and the number of financial dimension sets, as this could affect system performance.
 
-    -   In GL parameters, if 'Values used for summary account' is defined as Accounting distributions, the financial dimensions which represent the main account for the expense/asset/revenue will incorrectly be used for the AR and AP summary account. It is recommended to define this setting as Source document instead to ensure the correct financial dimension values.
+## Local main accounts within the global COA
 
-    -   If many local CoA are required and one financial dimension is used for all: the financial dimension values list could become very big
+The local main accounts within the global COA approach is that the local COA main accounts are included in the global COA.
 
-    -   If many local CoA are required and separate financial dimension is used to represent each: adding financial dimensions, and financial dimension sets, can have negative effects on the usability and performance of the system.
+### Set up local main accounts withing the global COA
 
-    -   Careful consideration is required on the number of financial dimensions, the number of values within each one, and the number of financial dimension sets, as this could affect the performance
+1.  Create a single COA which includes the main accounts for both the global COA and the local COA.
 
-### Local main accounts within the global CoA
+2.  Assign the COA on the **Ledger** page in each legal entity.
 
-The local main accounts within the global CoA approach is that the local CoA main accounts are included in the global CoA.
+3.  Create **Total accounts** in the COA to sum up the main accounts that represent the same purpose.
 
--   How
+4.  Create **Legal entity overrides** on each local account to prevent transactions from other legal entities that the local account wasn't designed for.
 
-    1.  Create a single CoA which includes the main accounts for both the global CoA and the local CoA.
+5.  Create **Legal entity overrides** on each global account to prevent transaction from the localization legal entities.
 
-    2.  Assign the CoA on the **Ledger** page in each legal entity.
+### Advantages
 
-    3.  Create **Total accounts** in the CoA to sum up the main accounts that represent the same purpose.
+- Real-time view of both Global and Local finance position in specific reports and views in the system, for example a Balance sheet financial report or using the period button on the Total account.
 
-    4.  Create **Legal entity overrides** on each local account to prevent transactions from other legal entities that the local account is not designed for.
+- Saves your having an additional segment in the Ledger account.
 
-    5.  Create **Legal entity overrides** on each global account to prevent transaction from the localization legal entities.
+### Disadvantages
 
--   Pros
+- Total accounts usage and visibility is limited. For example, total accounts aren't visible on the **Trial balance** list page.
 
-    -   Real-time view of both Global and Local finance position in specific reports and views in the system, e.g. Balance sheet financial report or using the period button on the Total account
+- Maintenance will require additional effort.
 
-    -   Saving additional segment in the Ledger account
+- Creating financial reports will require additional manual effort.
 
--   Cons
+## External mapping to local COA
 
-    -   Total accounts usage and visibility is limited. E.g. Total accounts are not visible on the Trial balance list page
+The adoption of a global COA assumes that you are managing the mapping and localizations outside of the system. In this approach you simply create a single global COA in Dynamics 365 Finance and handle the requirements outside of the system.
 
-    -   Maintenance would require additional effort
+### Set up external mapping to a local chart of accounts
 
-    -   Creating financial reports requires additional manual effort
+1. Create a single global COA with all the required main accounts.
 
-4.  External mapping to local CoA
+2. Assign the global COA on the **Ledger** page in each legal entity.
 
-The adoption of a global CoA assumes that you are managing the mapping and localizations outside of the system. In this approach you simply create a single global CoA in Dynamics 365 Finance and handle the requirements outside of the system.
+3. Mapping to the local COA is done outside of Dynamics 365 Finance.
 
--   How
+### Advantages
 
-    1.  Create a single global CoA with all the required main accounts.
+- Unified ways of working across the organization
 
-    2.  Assign the global CoA on the **Ledger** page in each legal entity.
+### Disadvantages
 
-    3.  Mapping to the local CoA is done outside of Dynamics 365 Finance
+- No local reporting from the system
 
--   Pros
+- Prone to error when creating financial reports
 
-    -   Unified ways of working across the organization
+## Local COA assigned to legal entity
 
--   Cons
-
-    -   No local reporting from the system
-
-    -   Prone to error when creating financial reports
-
-## Local CoA assigned to legal entity
-
-When your organization decides to not use a global CoA across your legal entities, a separate CoA is created for each unique local CoA. Each legal entity is then linked to their corresponding CoA on the **Ledger** page.
+When your organization decides to not use a global COA across your legal entities, a separate COA is created for each unique local COA. Each legal entity is then linked to their corresponding COA on the **Ledger** page.
 
 ### Global consolidation
 
-With this approach, a consolidation company is used to roll-up and combine the balances from each source local company into the combined global CoA within the consolidation company. This requires maintaining a mapping of each local CoA to the global CoA in the consolidation company.
+With this approach, a consolidation company is used to roll-up and combine the balances from each source local company into the combined global COA within the consolidation company. This requires maintaining a mapping of each local COA to the global COA in the consolidation company.
 
--   How
+### Set up a global consolidation
 
-    1.  Create a separate CoA for each legal entity that has a different local CoA. Note that if some legal entities have the same local CoA, only one local CoA is required and can be shared.
+1. Create a separate COA for each legal entity that has a different local COA. Note that if some legal entities have the same local COA, only one local COA is required and can be shared.
 
-    2.  Assign the appropriate CoA on the **Ledger** page in each legal entity.
+2. Assign the appropriate COA on the **Ledger** page in each legal entity.
 
-    3.  Create a CoA for the global CoA for each consolidation company that has a different global CoA. (optional)
+3. Create a COA for the global COA for each consolidation company that has a different global COA (optional).
 
-    4.  Create a consolidation legal entity for each consolidation level required and assign the appropriate CoA on the **Ledger** page.
+4. Create a consolidation legal entity for each consolidation level required and assign the appropriate COA on the **Ledger** page.
 
-    5.  If there is only one consolidation required:
+5. If there is only one consolidation required, configure the **Consolidation account** on the **Main account** page.
 
-        -   Configure the **Consolidation account** on the **Main account** page
+6. If there more than one consolidation is required, or if both the account number and account name require translation, use **Consolidation groups** and **Additional consolidation accounts** to represent the global COA requirements.
 
-    6.  If there is more than one consolidation required or if both the account number and account name require translation:
+7. Run the consolidation process to transfer the balances from the local legal entities to the consolidated legal entity, which uses the consolidation accounts defined in steps 5 or 6.
 
-        -   Use **Consolidation groups** and **Additional consolidation accounts** to represent the global CoA requirements
+### Advantages
 
-    7.  Run the consolidation process to transfer the balances from the local legal entities to the consolidated legal entity, which uses the consolidation accounts defined in steps 5 or 6.
+- Local accounting standards format applies natively
 
--   Pros
+- Easier way of working for the local finance team
 
-    -   Local accounting standards format applies natively
+### Disadvantages
 
-    -   Easier way of working for the local finance team
+- No real-time view of the global position
 
--   Cons
-
-    -   No real-time view of the global position
-
-    -   Consolidation process may be run more frequently
+- Consolidation process might be run more frequently
 
 For more information, see the following topics:
 
--   [Plan your chart of accounts](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/plan-chart-of-accounts)
+- [Plan your chart of accounts](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/plan-chart-of-accounts)
 
--   [Configure ledgers](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/configure-ledger)
+- [Configure ledgers](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/configure-ledger)
 
--   [Financial dimensions and posting](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/default-dimensions#balancing-dimension)
+- [Financial dimensions and posting](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/default-dimensions#balancing-dimension)
 
--   [Financial dimension sets](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimension-sets)
+- [Financial dimension sets](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimension-sets)
 
--   [Consolidation and elimination overview](https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/consolidation-elimination-overview)
+- [Consolidation and elimination overview](https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/consolidation-elimination-overview)
 
--   [Consolidation account groups and additional consolidation accounts - Finance \| Dynamics 365 \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/consolidation-account-groups-consolidation-accounts)
+- [Consolidation account groups and additional consolidation accounts - Finance \| Dynamics 365 \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/consolidation-account-groups-consolidation-accounts)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
