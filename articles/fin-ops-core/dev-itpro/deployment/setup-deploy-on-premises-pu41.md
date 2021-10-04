@@ -497,7 +497,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     > [!IMPORTANT]
     > - You must install the Database Engine when you install SSRS.
     > - Do **not** configure the SSRS instance. The reporting service will automatically configure everything.
-    > - Environments that were deployed with a base topology older than Platform update 41, do not need to go through the steps below. In those environments, SSRS should be configured manually according to [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
+    > - Environments that were deployed with a base topology older than Platform update 41, do not need to go through the following steps. In those environments, SSRS should be configured manually according to [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
 
 1. For each BI node, follow these steps:
 
@@ -523,7 +523,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     > [!NOTE]
     > These scripts will **not** configure SSRS. SSRS will get configured during deployment by the Service Fabric service (ReportingService) deployed to that node.
     > 
-    > These scripts will, instead, grant the necessary permissions for the Service Fabric service (ReportingService) to carry out the necessary configuration.
+    > Instead, these scripts will grant the necessary permissions for the Service Fabric service (ReportingService) to carry out the necessary configuration.
 
 ### <a name="setupvms"></a>Step 11. Set up VMs
 
@@ -939,7 +939,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
     - **AccountPassword** – The encrypted domain user password for the AOS domain user (**contoso\\axserviceuser**).
     > [!NOTE]
-    > If you are deploying with a recent base deployment where a gMSA account is used instead of the domain user, leave the **AccountPassword** field blank. However, ensure that it is present as the installers will still look for it. We will address this in a future update.
+    > If you are deploying with a recent base deployment where a gMSA account is used instead of the domain user, leave the **AccountPassword** field blank. However, you need to ensure that it is present, as the installers will still look for it. We will address this in a future update.
     - **SqlUser** – The encrypted SQL user (**axdbadmin**) that has access to the Finance + Operations database (**AXDB**)
     - **SqlPassword** – The encrypted SQL password.
 
