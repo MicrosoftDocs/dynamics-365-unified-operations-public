@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Configure consolidated invoice parameters and setup for accounts payable
-description: In Japan, consolidated invoices can be enabled to fit the Japanese business practices. 
+description: This topic explains how to set up and configure consolidated invoices. 
 author: ShylaThompson
 ms.date: 08/29/2018
 ms.topic: business-process 
