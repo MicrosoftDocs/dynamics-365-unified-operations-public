@@ -312,7 +312,7 @@ To configure CRT extension components, follow these steps.
 
     - **Commerce Scale Unit:** The file is named **Commerceruntime.ext.config**, and it's located in the **bin\\ext** folder under the Internet Information Services (IIS) Commerce Scale Unit site location.
 
-2. Register the CRT change in the extension configuration file.
+1. Register the CRT change in the extension configuration file.
 
 ```xml
 <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
@@ -322,11 +322,11 @@ To configure CRT extension components, follow these steps.
 <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
  ```
  
-3. Find the Web.config file for CRT.
+1. Find the Web.config file for CRT.
 
     - **Commerce Scale Unit:** The file is named **Web.config**, and it's located in the **\RetailServer\webroot** folder.
 
-4. Update this Web.config file by adding the new extension library name in the extensionComposition section.
+1. Update this Web.config file by adding the new extension library name in the extensionComposition section.
  
 ```xml
 <extensionComposition>
@@ -334,11 +334,11 @@ To configure CRT extension components, follow these steps.
 </extensionComposition>
 ```
 
-5. Find the extension configuration file for Local CRT on Modern POS:
+1. Find the extension configuration file for Local CRT on Modern POS:
 
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's located in the local CRT client broker location.
 
-6. Register the local CRT on Modern POS change in the extension configuration file.
+1. Register the local CRT on Modern POS change in the extension configuration file.
 
  ```xml
  <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
@@ -350,6 +350,20 @@ To configure CRT extension components, follow these steps.
 
 > [!WARNING]
 > Don't edit the **Commerceruntime.config** and **CommerceRuntime.MPOSOffline.config** files. These files aren't intended for any customizations.
+
+1. Find the extension configuration file for Local CRT on Modern POS:
+
+    - **Retail proxy on Modern POS:** The file is named **RetailProxy.MPOSOffline.Ext.config**, and it's located in the local CRT client broker location.
+
+1. Register the local CRT on Modern POS change in the extension configuration file.
+
+ ```xml
+		<retailProxyExtensions>
+		  <composition>
+		    <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.EfdBrazil" />
+		  </composition>
+		</retailProxyExtensions>
+ ```
  
 ### Enable Modern POS extension components
 
