@@ -3,7 +3,7 @@
 
 title: Tax engine overview
 description: This topic provides an overview of the Tax engine functionality in Microsoft Dynamics 365 Finance.
-author: EricWangChen
+author: kailiang
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: "intro-internal"
 ms.search.region: India
 # ms.search.industry: 
-ms.author: wangchen
+ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
