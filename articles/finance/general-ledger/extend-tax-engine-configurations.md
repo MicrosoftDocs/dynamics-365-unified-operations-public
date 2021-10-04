@@ -3,7 +3,7 @@
 
 title: Extend tax engine configurations
 description: This topic provides information about extending tax engine configurations.
-author: yijialuan
+author: kailiang
 ms.date: 05/24/2021
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,7 @@ ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: riluan
+ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
