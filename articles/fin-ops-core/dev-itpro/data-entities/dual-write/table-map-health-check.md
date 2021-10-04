@@ -1,43 +1,74 @@
 ---
 title: Errors codes for table map health check
 description: This topic describes how to use the Microsoft Dynamics 365 Commerce pricing engine to create sales quotations in Dynamics 365 Sales.
-author: 
-ms.date: 11/19/2020
+author: nhelgren
+ms.date: 10/04/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: v-chgri
+ms.reviewer: rhaertle
 ms.search.region: global
-ms.author: shajain
-ms.search.validFrom: 2020-01-06
+ms.author: nhelgren
+ms.search.validFrom: 2021-10-04
 ---
 
 # Errors codes for table map health check
 
 [!include [banner](../../includes/banner.md)]
 
-100 (Minimum required FnO platform version is PU 43 to run FnO recommendations)
-This feature required FnO platform to be on PU 43 and above.
+## Error 100
 
-400 (No business events registration data found for the entity {fnoUniqueEntityName} which means either the map is not running or all the field mapping are unidirectional)
-500 No project configurations found for project {project.Name }. This could be either the project is not enabled or all the field mappings are unidirectional from CE -> FO
-Check the mappings for the table map . If they are unidirectional from CE to FnO then there will not be any traffic generated for live sync from FnO -> Dataverse
+The error is *Minimum required Finance and Operations platform version is PU 43 to run Finance and Operations recommendations.*
 
-900 Invalid source filter {sourceFilter} format for entity {fnoUniqueEntityName}.
-The source filter specified on table map for FnO is not syntactically correct. Use TSG to validate the filter criteria.
+This feature requires platform updates for version 10.0.19 or later of Finance and Operations apps.
 
-1000 Entity {fnoUniqueEntityName} query used for Dual write live sync is {fnoEntityFilterQueryString}. Records which meet the query criteria will be picked up for live sync.
-The entity query returned is the backing SQL query for the entity. Please check for inner joins or filters on the query which can potentially impact the business data being picked up for live sync. Inner Joins and filters are mandatory conditions that needs to be fulfilled for each records being picked up for Dual-write live sync.
+## Error 400
 
-1300 Virtual fields {s.EntityFieldName} for entity {fnoEntityMetadata.EntityProperties.LogicalEntityName} may not be tracked for dual write.
-Virtual fields from FnO are not enabled for tracking. The live sync can synchronize the data but it wont be able to pick up the changes made on such columns.
+The error is *No business events registration data found for the entity {Finance and Operations UniqueEntityName} which means either the map is not running or all the field mapping are unidirectional.*
 
-1500 There should be at least one field mapped to a non lookup field on CE to enable tracking on the data source {datasource.DataSourceName}
-The data source from the entity does not have any field mapped for Dual write. Any modifications done on the underlying table will not be tracked for Dual write.
+## Error 500
 
-1600 Datasource : {datasource.DataSourceName} for entity {fnoEntityMetadata.EntityProperties.LogicalEntityName} has a range. only records that satisfy the range condition are picked up for outbound
-Entities in FnO can have datasources which have filter ranges enabled. These ranges define the records picked up as part of live sync. If there are some records that are getting skipped from FnO to CE please check if the records meet the range criteria on the entity. A simple way to check is to run a select * from <EntityName> where <Provide Appropriate filter criteria for the records in question> on SQL.
+The error is *No project configurations found for project {project name}. This could be either the project is not enabled or all the field mappings are unidirectional from customer engagement to Finance and Operations.*
 
-1700 Table : {datasourceTable.Key.subscribedTableName} for entity {datasourceTable.Key.entityName} is tracked for entity {origTableToEntityMaps.EntityName}. Same table tracked for multiple entities can impact system performance for live sync transactions.
-If same table is tracked by multiple entities then any modification on the table will trigger DW evaluation for the linked entities. Although the filter clauses would only send the valid records the evaluation can potentially lead to performance issue if there are long running query or unoptimized query plans. This may not be avoidable from the business point of view but if there are lot of intersecting tables across multiple entities consider simplifying the entity or checking optimizations for entity queries.
+Check the mappings for the table map. If they are unidirectional from customer engagement to Finance and Operations, then there will not be any traffic generated for live sync from Finance and Operations to Dataverse.
+
+## Error 900
+
+The error is *Invalid source filter {sourceFilter} format for entity {Finance and Operations UniqueEntityName}.*
+
+The source filter specified on table map for Finance and Operations is not syntactically correct. Use the troubleshooting guide to validate the filter criteria.
+
+## Error 1000
+
+The error is *Entity {Finance and Operations UniqueEntityName} query used for dual-write live sync is {Finance and Operations EntityFilterQueryString}. Records which meet the query criteria will be picked up for live sync.*
+
+The entity query returned is the backing SQL query for the entity. Check for inner joins or filters on the query which might impact the business data being picked up for live sync. Inner joins and filters are mandatory conditions that needs to be fulfilled for each record being picked up for dual-write live sync.
+
+## Error 1300
+
+The error is *Virtual fields {s.EntityFieldName} for entity {Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName} may not be tracked for dual-write.*
+
+Virtual fields from Finance and Operations tables are not enabled for tracking. The live sync can synchronize the data but it won't be able to pick up the changes made on these columns.
+
+## Error 1500
+
+The error is *There should be at least one field mapped to a non lookup field on customer engagement to enable tracking on the data source {datasource.DataSourceName}.*
+
+The data source from the entity does not have any field mapped for dual-write. Any modifications done on the underlying table will not be tracked for dual-write.
+
+## Error 1600
+
+The error is *Datasource : {datasource.DataSourceName} for entity {Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName} has a range. Only records that satisfy the range condition are picked up for outbound.*
+
+Entities in Finance and Operations can have data sources that have filter ranges enabled. These ranges define the records picked up as part of live sync. If some records are skipped from Finance and Operations to customer engagement, check if the records meet the range criteria on the entity. A simple way to check is to run a SQL query like this:
+
+```sql
+select * from <EntityName> where <filter criteria for the records> on SQL.
+```
+
+## Error 1700
+
+The error is *Table : {datasourceTable.Key.subscribedTableName} for entity {datasourceTable.Key.entityName} is tracked for entity {origTableToEntityMaps.EntityName}. Same tables tracked for multiple entities can impact system performance for live sync transactions.*
+
+If the same table is tracked by multiple entities then any modification on the table will trigger dual-write evaluation for the linked entities. Although the filter clauses would only send the valid records the evaluation might cause a performance issue if there are long running queries or unoptimized query plans. This problem may not be avoidable from the business point of view but if there are lot of intersecting tables across multiple entities, consider simplifying the entity or checking optimizations for entity queries.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
