@@ -3,7 +3,7 @@
 
 title: Tax engine import configuration
 description: This topic provides information about import tax engine configuration.
-author: yijialuan
+author: kailiang
 ms.date: 10/15/2018
 ms.topic: article
 ms.prod: 
