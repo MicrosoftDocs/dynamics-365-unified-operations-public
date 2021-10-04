@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 09/17/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -478,7 +478,54 @@ For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
     .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-### <a name="setupvms"></a>Step 9. Set up VMs
+### <a name="setupssis"></a>Step 9. Set up SSIS
+
+To enable Data management and SSIS workloads, you must install SSIS on each AOS VM. Follow these steps on each AOS VM.
+
+1. Verify that the machine has access to the SSIS installation, and open the **SSIS Setup** wizard.
+2. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** checkboxes.
+3. Complete the setup, and verify that the installation was successful.
+
+For more information, see [Install Integration Services (SSIS)](/sql/integration-services/install-windows/install-integration-services).
+
+### <a name="setupssrs"></a>Step 10. Set up SSRS
+
+You can configure more than one SSRS node. For more information, see [Configuring High Availability for SSRS nodes](./onprem-SSRSHA.md).
+
+1. Before you begin, make sure that the [prerequisites](#prerequisites) that are listed at the beginning of this topic are in place.
+
+    > [!IMPORTANT]
+    > - You must install the Database Engine when you install SSRS.
+    > - Do **not** configure the SSRS instance. The reporting service will automatically configure everything.
+    > - Environments that were deployed with a base topology older than Platform update 41, do not need to go through the following steps. In those environments, SSRS should be configured manually according to [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
+
+1. For each BI node, follow these steps:
+
+    1. Copy the **infrastructure** folder. Then open Windows PowerShell in elevated mode, and go to the folder.
+    1. Run the following commands.
+
+        ```powershell
+        .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
+        .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
+        ```
+
+        The Initialize-Database.ps1 script maps the gMSA to the following databases and roles.
+
+        | User           | Database | Database role |
+        |----------------|----------|---------------|
+        | svc-ReportSvc$ | master   | db\_owner |
+        | svc-ReportSvc$ | msdb     | db\_datareader, db\_datawriter, db\_securityadmin |
+
+        The Configure-Database.ps1 script performs the following action:
+
+        - Grant the **CREATE ANY DATABASE** permission to **\[contoso\\svc-ReportSvc$\]**.
+    
+    > [!NOTE]
+    > These scripts will **not** configure SSRS. SSRS will get configured during deployment by the Service Fabric service (ReportingService) deployed to that node.
+    > 
+    > Instead, these scripts will grant the necessary permissions for the Service Fabric service (ReportingService) to carry out the necessary configuration.
+
+### <a name="setupvms"></a>Step 11. Set up VMs
 
 1. Run the following command to export the scripts that must be run on each VM.
 
@@ -547,7 +594,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 > [!IMPORTANT]
 > If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Step 20. Tear down CredSSP, if remoting was used](#teardowncredssp) section.
 
-### <a name="setupsfcluster"></a>Step 10. Set up a standalone Service Fabric cluster
+### <a name="setupsfcluster"></a>Step 12. Set up a standalone Service Fabric cluster
 
 1. Download the [Service Fabric standalone installation package](https://go.microsoft.com/fwlink/?LinkId=730690) to one of your Service Fabric nodes.
 2. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
@@ -587,7 +634,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     > - If your client machine is a server machine (for example, a machine that is running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
-### <a name="configurelcs"></a>Step 11. Configure LCS connectivity for the tenant
+### <a name="configurelcs"></a>Step 13. Configure LCS connectivity for the tenant
 
 An on-premises local agent is used to orchestrate deployment and servicing of Finance + Operations through LCS. To establish connectivity from LCS to the Finance + Operations tenant, you must configure a certificate that enables the local agent to act on behalf on your Azure AD tenant (for example, contoso.onmicrosoft.com).
 
@@ -627,7 +674,7 @@ Only user accounts that have the Global Administrator directory role can add cer
 > .\Add-CertToServicePrincipal.ps1 -CertificateThumbprint 'OnPremLocalAgent Certificate Thumbprint' -TenantId 'xxxx-xxxx-xxxx-xxxx'
 > ```
 
-### <a name="setupfile"></a>Step 12. Set up file storage
+### <a name="setupfile"></a>Step 14. Set up file storage
 
 You must set up the following SMB 3.0 file shares:
 
@@ -660,6 +707,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
     > [!NOTE]
     > To add machines, you might have to enable **Computers** under **Object Types**. To add service accounts, you might have to enable **Service Accounts** under **Object Types**.
+    > 
+    > If you are deploying with a recent base deployment where a gMSA account is used instead of the domain user, you can skip adding the **AOSDomainUser** account to the fileshare ACLs.
 
 3. Set up the **\\\\DAX7SQLAOFILE1\\agent** file share:
 
@@ -697,7 +746,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     Set-Acl $AgentFolder.FullName $Acl;
     ```
 
-### <a name="setupsql"></a>Step 13. Set up SQL Server
+### <a name="setupsql"></a>Step 15. Set up SQL Server
 
 1. Install SQL Server with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
@@ -767,7 +816,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 > [!IMPORTANT]
 > If you used remoting, be sure to run the cleanup steps after the setup is completed. For instructions, see the [Step 20. Tear down CredSSP, if remoting was used](#teardowncredssp) section.
 
-### <a name="configuredb"></a>Step 14. Configure the databases
+### <a name="configuredb"></a>Step 16. Configure the databases
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 1. On the dashboard, select the **Shared asset library** tile.
@@ -870,7 +919,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
         | svc-FRPS$       | gMSA | db\_owner     |
         | svc-FRAS$       | gMSA | db\_owner     |
 
-### <a name="encryptcred"></a>Step 15. Encrypt credentials
+### <a name="encryptcred"></a>Step 17. Encrypt credentials
 
 1. On any client machine, install the encipherment certificate in the **LocalMachine\\My** certificate store.
 2. Grant the current user **Read** access to the private key of this certificate.
@@ -889,6 +938,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     ```
 
     - **AccountPassword** – The encrypted domain user password for the AOS domain user (**contoso\\axserviceuser**).
+    > [!NOTE]
+    > If you are deploying with a recent base deployment where a gMSA account is used instead of the domain user, leave the **AccountPassword** field blank. However, you need to ensure that it is present, as the installers will still look for it. We will address this in a future update.
     - **SqlUser** – The encrypted SQL user (**axdbadmin**) that has access to the Finance + Operations database (**AXDB**)
     - **SqlPassword** – The encrypted SQL password.
 
@@ -906,53 +957,6 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
     > [!WARNING]
     > After you've finished invoking all the **Invoke-ServiceFabricEncryptText** commands, remember to delete the Windows PowerShell history. Otherwise, your non-encrypted credentials will be visible.
-
-### <a name="setupssis"></a>Step 16. Set up SSIS
-
-To enable Data management and SSIS workloads, you must install SSIS on each AOS VM. Follow these steps on each AOS VM.
-
-1. Verify that the machine has access to the SSIS installation, and open the **SSIS Setup** wizard.
-2. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** checkboxes.
-3. Complete the setup, and verify that the installation was successful.
-
-For more information, see [Install Integration Services (SSIS)](/sql/integration-services/install-windows/install-integration-services).
-
-### <a name="setupssrs"></a>Step 17. Set up SSRS
-
-You can configure more than one SSRS node. For more information, see [Configuring High Availability for SSRS nodes](./onprem-SSRSHA.md).
-
-1. Before you begin, make sure that the [prerequisites](#prerequisites) that are listed at the beginning of this topic are in place.
-
-    > [!IMPORTANT]
-    > - You must install the Database Engine when you install SSRS.
-    > - Do **not** configure the SSRS instance. The reporting service will automatically configure everything.
-    > - Environments that were deployed with a base topology older than Platform update 41, do not need to go through the steps below. In those environments, SSRS should be configured manually according to [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
-
-1. For each BI node, follow these steps:
-
-    1. Copy the **infrastructure** folder. Then open Windows PowerShell in elevated mode, and go to the folder.
-    1. Run the following commands.
-
-        ```powershell
-        .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
-        .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
-        ```
-
-        The Initialize-Database.ps1 script maps the gMSA to the following databases and roles.
-
-        | User           | Database | Database role |
-        |----------------|----------|---------------|
-        | svc-ReportSvc$ | master   | db\_owner |
-        | svc-ReportSvc$ | msdb     | db\_datareader, db\_datawriter, db\_securityadmin |
-
-        The Configure-Database.ps1 script performs the following action:
-
-        - Grant the **CREATE ANY DATABASE** permission to **\[contoso\\svc-ReportSvc$\]**.
-    
-    > [!NOTE]
-    > These scripts will **not** configure SSRS. SSRS will get configured during deployment by the Service Fabric service (ReportingService) deployed to that node.
-    > 
-    > These scripts will, instead, grant the necessary permissions for the Service Fabric service (ReportingService) to carry out the necessary configuration.
 
 ### <a name="configureadfs"></a>Step 18. Configure AD FS
 
