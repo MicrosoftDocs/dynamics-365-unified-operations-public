@@ -153,7 +153,7 @@ The financial dimension for a local COA approach uses a financial dimension, whe
 
 The local main accounts within the global COA approach is that the local COA main accounts are included in the global COA.
 
-### Set up local main accounts withing the global COA
+### Set up local main accounts within the global COA
 
 1.  Create a single COA which includes the main accounts for both the global COA and the local COA.
 
@@ -243,7 +243,7 @@ For more information, see the following topics:
 
 - [Configure ledgers](configure-ledger.md)
 
-- [Financial dimensions and posting](default-dimensions.md)
+- [Financial dimensions and posting](Default-dimensions.md##balancing-dimension)
 
 - [Financial dimension sets](financial-dimension-sets.md)
 
