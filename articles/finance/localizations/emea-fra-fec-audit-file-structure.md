@@ -4,7 +4,7 @@
 title: Structure of Dynamics 365 Finance data sources for the FEC
 description: This topic describes the structure of Microsoft Dynamics 365 Finance data sources for the Fichier des écritures comptables (FEC).
 author: liza-golub
-ms.date: 05/10/2021
+ms.date: 10/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,22 +24,22 @@ ms.search.region: France
 
 # Structure of Dynamics 365 Finance data sources for the FEC
 
-In Microsoft Dynamics 365 Finance, you can generate the [**FEC main**](#fec-main) (Fichier des écritures comptables) file and the following annexes:
+In Microsoft Dynamics 365 Finance, you can generate the [FEC main](#fec-main) (Fichier des écritures comptables) file and the following annexes:
 
-- [**Customers balance**](#customers-balances) - Customers fiscal year opening balances annex 
-- [**Vendors balance**](#vendors-balances) - Vendors fiscal year opening balances annex 
-- [**Customers transactions**](#customers-transactions) - Customers transactions annex for a specified period
-- [**Vendors transactions**](#vendors-transactions) - Vendors transactions annex for a specified period
+- [Customers balance](#customers-balances): Customers fiscal year opening balances annex 
+- [Vendors balance](#vendors-balances):Vendors fiscal year opening balances annex 
+- [Customers transactions](#customers-transactions):Customers transactions annex for a specified period
+- [Vendors transactions](#vendors-transactions): Vendors transactions annex for a specified period
 
-An FEC that includes customer and vendor fiscal year opening balances ([**FEC Main Extended**](#fec-main-extended)) can also be generated. Use this option for companies that have only a few records during the reporting period. The reporting period must include the beginning of the fiscal year.
+Tou can also generate an FEC that includes customer and vendor fiscal year opening balances ([FEC Main Extended](#fec-main-extended)). Use this option for companies that have only a few records during the reporting period. The reporting period must include the beginning of the fiscal year.
 
-It is explained in [Prerequisites to generate an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites) section, to accommodates article 100 of BOI-CF-IOR-60-40-20, the numbering must be continuous, consistent and sequencial. This is why it is recommended to set **Continuous** field to **Yes** for number sequences. In some scenarios consistency of sequence of numbers of general leger account entries (Voucher) can be interrupted in the **FEC Main** file due to following reasons:
+Explained in [Prerequisites to generate an FEC audit file in France](emea-fra-fec-audit-file-pre-requisites) section, to accommodates article 100 of BOI-CF-IOR-60-40-20, the numbering must be continuous, consistent, and sequential. The numbering requirements is why it's recommended to set the **Continuous** field to **Yes** for number sequences. In some scenarios, the consistency of the sequence of numbers of general ledger account entries (Voucher) can be interrupted in the **FEC Main** file because of:
 
-- General leger account entry is created in accounting but not reported in FEC when the amount is 0.00.
-- Voucher number was used for inventory transaction with 0.00 amount which is not reflected general leger account entries table.
-- A gap in a number sequence of general leger account entries caused by a technical issue.
+- General ledger account entry is created in accounting but not reported in FEC when the amount is 0.00.
+- Voucher number is used for an inventory transaction with a zero amount which isn't reflected in the general ledger account entries table.
+- A gap in a number sequence of general ledger account entries caused by a technical issue.
 
-Starting from 10.0.23 version of Finance, use [**Missing numbers justification**](#missing-numbers-justification) annex to report general ledger account transactions that are missing in the **FEC Main** file due to above explained reasons.
+Starting version 10.0.23 of Finance, use the [Missing numbers justification](#missing-numbers-justification) annex to report general ledger account transactions that are missing in the **FEC Main** file due to the reasons previously explained.
 
 The following sections list the data sources that are used in the FEC main file and annexes.
 
@@ -203,13 +203,13 @@ The following table shows the **FEC main file including fiscal year opening bala
 
 ## <a id="missing-numbers-justification"></a>Missing numbers justification annex
 
-Starting from 10.0.23 version of Finance, **Missing numbers justification** annex represents data collected from Fiance for the following scenarios where consistency of sequence of numbers of general leger account entries (Voucher) can be interrupted in the **FEC Main** file:
+Starting in version 10.0.23 of Finance, the **Missing numbers justification** annex represents data collected from Fiance for the following scenarios where the consistency of the sequence of numbers of general ledger account entries (Voucher) can be interrupted in the **FEC Main** file:
 
-- **Scenario 1**: General leger account entry is created in accounting but not reported in FEC when the amount is 0.00.
-- **Scenario 2**: Voucher number was used for inventory transaction with 0.00 amount which is not reflected general leger account entries table.
-- **Scenario 3**: A gap in a number sequence of general leger account entries caused by a technical issue.
+- **Scenario 1**: A general ledger account entry is created in accounting but not reported in FEC when the amount is 0.00.
+- **Scenario 2**: A voucher number is used for an inventory transaction with an amount of zero which isn't reflected in the general ledger account entries table.
+- **Scenario 3**: A gap in a number sequence of general ledger account entries that's caused by a technical issue.
 
-Use [**Missing numbers justification**](#missing-numbers-justification) annex to report general ledger account transactions that are missing in the **FEC Main** file due to above explained reasons.
+Use the [Missing numbers justification](#missing-numbers-justification) annex to report general ledger account transactions that are missing in the **FEC Main** file because of these reasons.
 
 The following table shows the **FEC main file including fiscal year opening balances details for customers and vendors** data structure definitions.
 
