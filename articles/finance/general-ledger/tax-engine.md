@@ -19,7 +19,7 @@ ms.reviewer: roschlom
 ms.custom: "intro-internal"
 ms.search.region: India
 # ms.search.industry: 
-ms.author: riluan
+ms.author: kailiang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
