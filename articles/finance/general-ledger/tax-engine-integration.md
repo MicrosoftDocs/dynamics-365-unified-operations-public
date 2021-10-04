@@ -396,7 +396,7 @@ The following table lists the taxable document fields that are mapped in Finance
 | Provisional Assessment         | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | No |
 | Foreign party                  | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | No |
 | Nature of Assesse              | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | Company |
-| Preferrential Party            | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | No |
+| Preferential Party            | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | No |
 | GTA-Commercial vendor          | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | No |
 | Ledger Currency                | TaxableDocumentRowDataProviderHeader.fillInFields                           | Yes                          | |
 | Total Discount Percentage      | TaxableDocumentRowDataProviderHeader.fillInFields                           | No                           | |
