@@ -91,6 +91,8 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
     - **NumberOfPublishers** – By default, this parameter is set to **2**. We recommend that you use this value.
 
+8. We recommend, not to setup/configure replication during peak times when the system resources/memory usage/IO operations are high. When resources are being used to the max (~>90% is already consumed)  then the replication can get delayed, by retrying many times for the availability of the resources and might get failed sometimes. So start replication during off hours when the system resources are at minimum usage(during off-peak time)
+
 ## Data upgrade process
 
 ### Run the AX2012DataMigration.exe application
