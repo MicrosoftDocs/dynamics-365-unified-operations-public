@@ -3,7 +3,7 @@
 
 title: Tax engine integration
 description: This topic provides information about Tax engine integration.
-author: yijialuan
+author: EricWangChen
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 
