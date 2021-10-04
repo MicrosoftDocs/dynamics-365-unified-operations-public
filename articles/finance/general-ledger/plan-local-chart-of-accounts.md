@@ -239,17 +239,17 @@ With this approach, a consolidation company is used to roll-up and combine the b
 
 For more information, see the following topics:
 
-- [Plan your chart of accounts](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/plan-chart-of-accounts)
+- [Plan your chart of accounts](plan-chart-of-accounts.md)
 
-- [Configure ledgers](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/configure-ledger)
+- [Configure ledgers](configure-ledger.md)
 
-- [Financial dimensions and posting](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/default-dimensions#balancing-dimension)
+- [Financial dimensions and posting](default-dimensions.md)
 
-- [Financial dimension sets](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimension-sets)
+- [Financial dimension sets](financial-dimension-sets.md)
 
-- [Consolidation and elimination overview](https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/consolidation-elimination-overview)
+- [Consolidation and elimination overview](../budgeting/consolidation-elimination-overview.md)
 
-- [Consolidation account groups and additional consolidation accounts - Finance \| Dynamics 365 \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/consolidation-account-groups-consolidation-accounts)
+- [Consolidation account groups and additional consolidation accounts](../budgeting/consolidation-account-groups-consolidation-accounts.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
