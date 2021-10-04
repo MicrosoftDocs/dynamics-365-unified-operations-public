@@ -103,7 +103,7 @@ The local consolidation option is the recommended approach for meeting local cha
 
 - Support translation of both the main account ID and the name of each main account
 
-- Supports multiple localization
+- Supports multiple localizations
 
 #### Disadvantages
 
@@ -173,7 +173,7 @@ The local main accounts within the global COA approach is that the local COA mai
 
 ### Disadvantages
 
-- Total accounts usage and visibility is limited. For example, total accounts aren't visible on the **Trial balance** list page.
+- Total accounts usage and visibility are limited. For example, total accounts aren't visible on the **Trial balance** list page.
 
 - Maintenance will require additional effort.
 
@@ -207,7 +207,7 @@ When your organization decides to not use a global COA across your legal entitie
 
 ### Global consolidation
 
-With this approach, a consolidation company is used to roll-up and combine the balances from each source local company into the combined global COA within the consolidation company. This requires maintaining a mapping of each local COA to the global COA in the consolidation company.
+With this approach, a consolidation company is used to roll up and combine the balances from each source local company into the combined global COA within the consolidation company. This requires maintaining a mapping of each local COA to the global COA in the consolidation company.
 
 ### Set up a global consolidation
 
@@ -221,7 +221,7 @@ With this approach, a consolidation company is used to roll-up and combine the b
 
 5. If there is only one consolidation required, configure the **Consolidation account** on the **Main account** page.
 
-6. If there more than one consolidation is required, or if both the account number and account name require translation, use **Consolidation groups** and **Additional consolidation accounts** to represent the global COA requirements.
+6. If more than one consolidation is required, or if both the account number and account name require translation, use **Consolidation groups** and **Additional consolidation accounts** to represent the global COA requirements.
 
 7. Run the consolidation process to transfer the balances from the local legal entities to the consolidated legal entity, which uses the consolidation accounts defined in steps 5 or 6.
 
@@ -243,7 +243,7 @@ For more information, see the following topics:
 
 - [Configure ledgers](configure-ledger.md)
 
-- [Financial dimensions and posting](Default-dimensions.md##balancing-dimension)
+- [Financial dimensions and posting](Default-dimensions.md#balancing-dimension)
 
 - [Financial dimension sets](financial-dimension-sets.md)
 
