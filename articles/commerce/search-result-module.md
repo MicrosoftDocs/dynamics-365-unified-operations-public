@@ -88,6 +88,36 @@ To add a search results module to a category page, follow these steps.
 1. In the **Choose a template** dialog box, select the **Search results** template that you created, enter **Category page** for **Page name**, and then select **OK**. Because all the values are set in the template, the page is ready to be published.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
+## Enable inventory awareness on search results module
+
+Customers generally expect the e-commerce site to be inventory-aware throughout the browsing experience so that they can make decisions on what to do in case of no inventory. The search results module can be enhanced to incorporate inventory data and provide the following experiences:
+
+- Display inventory availability label along with products
+- Hide out of stock products
+- Display out of stock products at the end of list
+	
+To enable such experiences, as prerequisites, the followings need to be configured in Commerce headquarters.
+
+First, in **Feature management** workspace, enable a feature named **Enhanced e-Commerce product discovery to be inventory-aware**, which is available in 10.0.20 release and later. 
+
+Then, go to **Retail and Commerce** > **Retail and Commerce IT** > **Products and inventory**, click **Populate product attributes with inventory level**. In the prompt dialog, give a name to a dedicated product attribute that will be created to capture inventory availability, and select an on-hand quantity based on which you want the inventory level to be calculated.
+
+> [!NOTE]
+> For consistent inventory level calculation across product details page and product list pages in the e-commerce site, please ensure you select the same quantity for the **Inventory availability based on** setting in Commerce headquarters, and for the **Inventory level based on** setting in the Site builder. For more information about inventory settings in Site builder, see [Apply inventory settings](https://docs.microsoft.com/dynamics365/commerce/inventory-settings).
+
+Next, run the job in the background. The job is responsible for creating a new product attribute as defined in former step, and populating that product attribute for each master product with the latest inventory level value. Considering the inventory availability for a product constantly changes as the product being sold or assortment being updated, it's strongly recommended to schedule the job as a batch processing.
+
+> [!NOTE]
+> For products displayed in search results module, the inventory level is populated at master product level rather than individual variant level, and only has two possible values - one indicates "available" and the other indicates "out of stock". The actual value text is retrieved from [inventory level profile](https://docs.microsoft.com/dynamics365/commerce/inventory-buffers-levels) definition. A master product is considered out of stock only when **all** its variants are out of stock. The inventory level of a variant is determined based on the product's inventory level profile definition. 
+
+Finally, after the job is executed, properly configure the newly created product attribute for the e-commerce site that you want to enable inventory awareness on search results module.
+
+1. Navigate to the **Retail and Commerce** > **Channel setup** > **Channel categories and product attributes** form, select an e-commerce site.
+1. Click and open an associated attribute group, add the newly created product attribute to the group, then close the form.
+1. Click **Set attribute metadata**, select the newly added product attribute, and turn on the **Show attribute on channel**, **Retrievable**, **Can be refined** and **Can be queries** toggles.
+
+With all above configuration done, the refiners on search results page will display an inventory based filter, and the search results module will retrieve inventory data behind the scenes. You could then configure the **Inventory settings for product list pages** in Site builder to control how out-of-stock products should be displayed in search results module. For more details about that site level inventory setting, see [Apply inventory settings](https://docs.microsoft.com/dynamics365/commerce/inventory-settings).
+
 ## Additional resources
 
 [Default category landing page and search results page overview](category-search-page-overview.md)
