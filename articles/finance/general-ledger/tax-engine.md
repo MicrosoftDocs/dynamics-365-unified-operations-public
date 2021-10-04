@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
 ms.search.region: India
