@@ -194,20 +194,24 @@ In the receipt format designer, add Brazilian custom fields to the appropriate r
 
 To set up the fiscal registration process in Commerce headquarters, follow these steps. For more information, see [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md).
 
+1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
+
+    1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
+    1. Open the last available release branch (for example, **[release/9.32](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.32)**).
+    1. Open **src \> FiscalIntegration \> ElectronicFiscalDocumentsBrazil**.
+    1. Download the fiscal connector configuration files at **Configurations \> Connectors** (for example, [the files for release/9.32](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.32/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/Connectors)):
+        - SubmitConnector.xml
+        - SatConnector.xml
+        - ContingencyConnector.xml
+    1. Download the fiscal document provider configuration files at **Configurations \> Document** (for example, [the files for release/9.32](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.32/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/DocumentProviders)):
+        - SubmitProvider.xml
+        - SatProvider.xml
+        - ContingencyProvider.xml
+
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 1. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**.
-1. Load the connector configuration from the [Commerce Fiscal Integration repository (repo)](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations). The following files are located under [**Configurations\\Connectors**](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations%2FConnectors):
-
-    - SubmitConnector.xml
-    - ContingencyConnector.xml
-
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**.
-1. Load the document provider configurations from the [Commerce Fiscal Integration repo](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations). The following configuration files are located under [**Configurations\\DocumentProviders**](https://msazure.visualstudio.com/D365/_git/Commerce-Samples-EndToEndSolutions?path=%2Fsrc%2FFiscalIntegration%2FElectronicFiscalDocumentsBrazil%2FConfigurations%2FDocumentProviders):
-
-    - SubmitProvider.xml
-    - ContingencyProvider.xml
-
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration files that you downloaded earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration files that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**.
 1. For each document provider that you just loaded the configuration for, create connector functional profiles, and select the fiscal connectors that you loaded the configuration for earlier. Update data mapping settings as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
