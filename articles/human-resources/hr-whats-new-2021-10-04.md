@@ -47,7 +47,6 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 |---|---|---|
-| Select a default state/province per country/region in address setup | -- | [Set up state/province information](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup?toc=/dynamics365/human-resources/toc.json#set-up-stateprovince-information) |
 | Platform update 10.0.21 (45) | -- | [Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
 
 
