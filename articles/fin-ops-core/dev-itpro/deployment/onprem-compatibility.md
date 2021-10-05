@@ -64,7 +64,7 @@ This section covers the following SQL Server components:
 
 ## Active Directory Federation Services (AD FS)
 
-Active Directory Federation Services is a server role that can be installed on a machine running Windows Server. 
+Active Directory Federation Services (AD FS) is a server role that can be installed on a machine running Windows Server. 
 
 | Version                                                     | Supported since  | End of life   |
 |-------------------------------------------------------------|------------------|---------------|
@@ -73,8 +73,8 @@ Active Directory Federation Services is a server role that can be installed on a
 
 > [!IMPORTANT]
 > - AD FS on Windows Server 2016 only supports authentication through the Azure Active Directory Authentication Library (ADAL).
-> - Please deploy your AD FS on Windows Server 2019 in order to be able to uptake the upcoming migration to the Microsoft Authentication Library
-> (MSAL). For more information on MSAL, see [Migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
+> - In order to uptake the upcoming migration to the Microsoft Authentication Library, you need to deploy your AD FS on Windows Server 2019 
+> (MSAL). For more information, see [Migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
 
 ## Minimum Azure Service Fabric runtime
 
