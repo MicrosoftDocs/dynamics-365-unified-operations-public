@@ -360,7 +360,7 @@ To configure CRT extension components, follow these steps.
  ```xml
 		<retailProxyExtensions>
 		  <composition>
-		    <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.EfdBrazil" />
+		    <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.ElectronicFiscalDocumentBrazil" />
 		  </composition>
 		</retailProxyExtensions>
  ```
