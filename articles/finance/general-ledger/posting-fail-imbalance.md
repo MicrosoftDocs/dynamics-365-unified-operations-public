@@ -49,7 +49,7 @@ If a voucher has only one transaction currency, the total debits must equal the 
 
 - The total debits and total credits were **not** balanced in the transaction currency, but they were balanced for the accounting currency and reporting currency. A customer assumed that the voucher would still be posted. However, that assumption was incorrect. **The transaction currency amounts on a voucher must always be balanced when all lines of the voucher have the same transaction currency.**
 - The voucher was imported with a data entity through the Data Management Framework (DMF), and the user thought that the transaction currency amounts were balanced. In the import file, some of the amounts had more than two decimal places, and more than two decimal places were included when the amounts were imported. Therefore, the debits didn't equal the credits, because they were off by a fraction of a penny. The journal didn't reflect this difference on the lines of the voucher, because the amounts that are shown have only two decimal places.
-- The voucher was imported with a data enity through the Data Management Framework (DMF), and the user thought that the transaction currency amounts were balanced. Although the **voucher** was balanced, some lines on the voucher had different transaction dates. If you added the total debits and total credits in the transaction currency per **voucher and transaction date**, they weren't balanced. This requirement is enforced when you enter a voucher through the general journal in the system. However, it isn't enforced when a voucher is imported with a data entity through the DMF.
+- The voucher was imported with a data entity through the Data Management Framework (DMF), and the user thought that the transaction currency amounts were balanced. Although the **voucher** was balanced, some lines on the voucher had different transaction dates. If you added the total debits and total credits in the transaction currency per **voucher and transaction date**, they weren't balanced. This requirement is enforced when you enter a voucher through the general journal in the system. However, it isn't enforced when a voucher is imported with a data entity through the DMF.
 
 In one supported scenario, a voucher can have more than one transaction currency. In this case, the system does **not** verify that the debits equal the credits in the transaction currency, because the currencies don't match. Instead, the system verifies that the accounting currency and reporting currency amounts are balanced.
 
@@ -65,7 +65,7 @@ If all the lines of a voucher have the same transaction currency, and if the tra
 
 If the voucher has more than one transaction currency, each line of the voucher is translated to the reporting currency and rounded to two decimal places, and then the lines are summed to determine the total debits and total credits. To be considered balanced, the debits and credits must be balanced, either as translated or including the reporting currency penny rounding difference.
 
-### Example for accounting currency imbalance
+### Example for an accounting currency imbalance
 
 > [!NOTE]
 > The reporting currency amount is calculated from the transaction currency amount in the same way as the acccounting currency amount.
@@ -80,4 +80,4 @@ Exchange rate: 1.5
 |4|001|4101-|EUR||10.00||15.00|
 |**Total**||||10.00|10.00|**15.01**|**15.00**|
 
-The accounting currency is out-of-balance by 0.01, but as long as the accounting currency penny difference is 0.01 or greater, a penny difference adjustment will automatically be added to the voucher and it will post successfully.
+The accounting currency is out-of-balance by 0.01, but as long as the Maximum penny-rounding in the accounting currency is 0.01 or greater, the difference will automatically be posted to the Penny difference account and the voucher will post successfully.
