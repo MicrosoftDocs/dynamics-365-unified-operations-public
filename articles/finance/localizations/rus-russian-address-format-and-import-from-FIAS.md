@@ -133,7 +133,7 @@ The Federal Informational Address System (or FIAS) address database might be req
 2. Go to **System administration** \> **Workspaces** \> **Data management**.
 3. In the **Import / Export** section, select the **Import** tile to create a new import job.
     
-    ![A screenshot of a social media post Description automatically generated.](media/9%20Data%20management.jpg)
+    ![Data management workspace, Import/export section, Import tile.](media/9%20Data%20management.jpg)
 
 4. In the **Group name** field, enter **ImportFiasMetadata**.
 5. In the **Description** field, enter a description.
@@ -148,8 +148,6 @@ The Federal Informational Address System (or FIAS) address database might be req
    After you select each file, select **Upload and add**.
 
 7. Select **Save**.
-
-    ![A screenshot of a social media post Description automatically generated.](media/10%20Import.jpg)
 
 ### Set up a template to import FIAS data
 
@@ -170,7 +168,7 @@ The Federal Informational Address System (or FIAS) address database might be req
 
 8. Select **Save**.
 
-    ![A screenshot of a social media post Description automatically generated.](media/11%20Template.jpg)
+    ![List of entities just added.](media/11%20Template.jpg)
 
 ### Set up a job for a full FIAS import
 
@@ -185,7 +183,7 @@ When you import FIAS data into the system the first time, you should create a jo
 7. In the **Source data format** field, select **VerticalBarSeparated-Unicode**.
 8. Select **OK**, and then select **Save**.
 
-    ![A screenshot of a social media post Description automatically generated.](media/12%20Import.jpg)
+    ![Import page, with fias full import job details.](media/12%20Import.jpg)
 
 ### Set up a job to import FIAS delta
 
@@ -201,11 +199,11 @@ To update existing address data, you should create a job to import FIAS delta.
 8. In the **Source data format** field, select **XML-Attribute**.
 9. Select **OK**.
 
-    ![A screenshot of a cell phone Description automatically generated.](media/13%20Import.jpg)
+    ![Import page wtih fias delta import job details.](media/13%20Import.jpg)
 
 10. For each entity, select the button in the **View map** column to open the **Map source to staging** page.
 
-    ![A screenshot of a cell phone Description automatically generated.](media/14%20Map%20source%20to%20staging.jpg)
+    ![Map source to staging page.](media/14%20Map%20source%20to%20staging.jpg)
 
 11. On the **Transformations** tab, select **New**, and then select **Upload file** to open the **Select a file** dialog box.
 12. Select **Browse**, and select the following transformations:
