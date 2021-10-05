@@ -203,7 +203,7 @@ To set up the fiscal registration process in Commerce headquarters, follow these
         - SubmitConnector.xml
         - SatConnector.xml
         - ContingencyConnector.xml
-    1. Download the fiscal document provider configuration files at **Configurations \> Document** (for example, [the files for release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/DocumentProviders)):
+    1. Download the fiscal document provider configuration files at **Configurations \> DocumentProviders** (for example, [the files for release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/DocumentProviders)):
         - SubmitProvider.xml
         - SatProvider.xml
         - ContingencyProvider.xml
