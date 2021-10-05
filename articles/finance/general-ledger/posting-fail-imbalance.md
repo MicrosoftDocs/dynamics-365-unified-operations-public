@@ -80,4 +80,4 @@ Exchange rate: 1.5
 |4|001|4101-|EUR||10.00||15.00|
 |**Total**||||10.00|10.00|**15.01**|**15.00**|
 
-The accounting currency is out-of-balance by 0.01, but as long as the accounting currency penny difference is 0.01 or greater, this voucher is balanced and will post successfully.
+The accounting currency is out-of-balance by 0.01, but as long as the accounting currency penny difference is 0.01 or greater, a penny difference adjustment will automatically be added to the voucher and it will post successfully.
