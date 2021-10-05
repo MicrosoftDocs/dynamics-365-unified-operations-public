@@ -72,9 +72,8 @@ Active Directory Federation Services is a server role that can be installed on a
 | Active Directory Federation Services on Windows Server 2016 | Original release | 10.0.26       |
 
 > [!IMPORTANT]
-> AD FS on Windows Server 2016 only supports authentication through the ADAL libraries.
-> Please deploy your AD FS on Windows Server 2019 in order to be able to uptake the upcoming migration to the MSAL libraries.
-> For more information on MSAL see [Migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration)
+> - AD FS on Windows Server 2016 only supports authentication through the ADAL libraries.
+> - Please deploy your AD FS on Windows Server 2019 in order to be able to uptake the upcoming migration to the MSAL libraries. For more information on MSAL, see [Migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
 
 ## Minimum Azure Service Fabric runtime
 
