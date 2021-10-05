@@ -4,7 +4,7 @@
 title: Implement a custom ER source of inbound documents
 description: This topic explains how to extend the list of Electronic reporting (ER) sources to access inbound documents for data import.
 author: NickSelin
-ms.date: 09/21/2021
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,7 +61,7 @@ Additional tasks use the ER configurations that are mentioned in the SharePoint 
 | Content description                                    | File                                                                       |
 |--------------------------------------------------------|----------------------------------------------------------------------------|
 | ER data model configuration                                     | [1099model.xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml) |
-| ER format configuration                                         | [1099format-import-from-excel.xml](???) |
+| ER format configuration                                         | [1099format-import-from-excel.xml](https://download.microsoft.com/download/b/3/8/b38faf0a-fbaf-4e9e-84c2-dedae7464880/1099format-import-from-excel.xml) |
 | Inbound file in .XLSX format containing sample data for import  | [1099import-data.xlsx](https://download.microsoft.com/download/f/f/4/ff4dbce9-8364-4391-adee-877945ff01f7/1099import-data.xlsx) |
 
 Use the [Load from XML file](er-defer-sequence-element.md#import-the-sample-er-configurations) ER option to import the downloaded ER configurations to your Finance instance in the following sequence:
