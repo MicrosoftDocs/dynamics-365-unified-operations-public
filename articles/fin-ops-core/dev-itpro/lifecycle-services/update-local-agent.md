@@ -34,7 +34,7 @@ This topic explains how to update the local agent. The latest version of the loc
 
 | Local agent version | Capability | 
 |---------------------|------------|
-| 2.7.0               | This version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. |
+| 2.7.0               | Enables deploying 10.0.21 and later versions. Additionally, this version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. |
 | 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning timeout. |
 | 2.5.0               | This version updates dependencies and fixes a cleanup bug. |
 | 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. |
@@ -57,6 +57,7 @@ This topic explains how to update the local agent. The latest version of the loc
 - The LBDTelemetry-Agent application can start correctly even if the Event Viewer is open. 
 
 > [!IMPORTANT]
+> This release is a prerequisite for deploying 10.0.21 and later releases.
 > This release requires that a new local agent configuration file be downloaded from LCS. If you encounter issues, refer to [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md). 
 
 ## What's new in local agent 2.6.0
