@@ -81,6 +81,10 @@ The following new features are in preview. For more information about how to tur
 |---|---|
 |Error when emailing report using GER report destination. | The benefits statement can be set to use email parameters within the **GER Report destinations** page. When completing the setup and printing the report, the user will receive a formatting error and the benefits statement will not be sent.|
 
+### Feature management changes
+| Feature | Description |
+|---|---|
+|Performance journals extended reports view | This feature will become enabled by default in the next roll-out. |
 
 ## Coming soon
 
@@ -89,7 +93,7 @@ For a complete list of planned features and their scheduled releases, see [Overv
 | Feature | Details |
 |---|---|
 | Platform update 10.0.21 (45) | Roll-out of Platform update 10.0.21 is scheduled to begin with the service release on October 4, 2021. For more information, see [Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
-|Performance journals extended reports view | This feature will become enabled by default in the next roll-out. |
+
 
 
 ## See also
