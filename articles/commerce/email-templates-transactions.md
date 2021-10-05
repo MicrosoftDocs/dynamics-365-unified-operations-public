@@ -81,7 +81,7 @@ For more information about the customer check-in and order lookup features, see 
 The *order ready for pickup* notification type is triggered when an order that has one or more lines where the mode of delivery is **Customer pickup** is marked as packed.
 
 > [!NOTE]
-> The order ready for pickup notification type has been deprecated in favor of the order packed notification type, which is customized by mode of delivery.
+> The order ready for pickup notification type has been deprecated in favor of the packing completed notification type, which is customized by mode of delivery.
 
 ### Order shipped
 
