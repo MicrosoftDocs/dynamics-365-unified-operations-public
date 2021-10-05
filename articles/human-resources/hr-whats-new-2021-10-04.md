@@ -81,10 +81,11 @@ The following new features are in preview. For more information about how to tur
 |---|---|
 |Error when emailing report using GER report destination. | The benefits statement can be set to use email parameters within the **GER Report destinations** page. When completing the setup and printing the report, the user will receive a formatting error and the benefits statement will not be sent.|
 
-### Feature management changes
+## Feature management changes
+
 | Feature | Description |
 |---|---|
-|Performance journals extended reports view | This feature will become enabled by default in the next roll-out. |
+|Performance journals extended reports view | This feature will become enabled by default in this release. |
 
 ## Coming soon
 
