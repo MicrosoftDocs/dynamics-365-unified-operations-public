@@ -49,18 +49,6 @@ Planning Optimization doesn't use the following parameters or options on the **M
   - **Production** – Pending *Scheduling* support.
   - Fields in the **Project** section – Pending *Scheduling* support.
 
-- **Standard update** tab:
-
-  - **Update marking** – Pending *Firming* support.
-  - **Stop firming if an error occurs** – Pending *Firming* support.
-  - **Group by vendor** – Pending *Firming* support.
-  - **Group by buyer group** – Pending *Firming* support.
-  - **Group by purchase agreement** – Pending *Firming* support.
-  - **Group by period** – Pending *Firming* support.
-  - **Find purchase agreement** – Pending *Firming* support.
-  - **Group by planning priority** – Pending *Firming* support.
-  - **Group by period** – Pending *Firming* support.
-
 ## Coverage groups page
 
 Planning Optimization doesn't use the following parameters or options on the **Coverage groups** page:
