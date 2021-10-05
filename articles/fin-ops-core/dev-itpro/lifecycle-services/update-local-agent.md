@@ -52,9 +52,9 @@ This topic explains how to update the local agent. The latest version of the loc
 
 ## What's new in local agent 2.7.0
 
-- Local agent 2.7.0 is a prerequisite for deploying 10.0.21 and later releases. 
-- This release introduces the possibility of specifying a limited set of deployment options to specify environment-specific deployment options. Most notably, this release will allow deploying on environments with Microsoft SQL Server 2019. For all possible configurations, see [Local agent deployment configurations](../../dev-itpro/deployment/onprem-localagent-options.md).
-- Additionally, this release addresses an issue where the gMSA account that the local agent executes under loses permission to the private key for some certificates.
+- Local agent 2.7.0 is a prerequisite to deploy 10.0.21 and later releases. 
+- This release introduces the possibility of specifying a limited set of deployment options for environment-specific deployment options. Most notably, this release will allow you to deploy on environments with Microsoft SQL Server 2019. For all possible configurations, see [Local agent deployment configurations](../../dev-itpro/deployment/onprem-localagent-options.md).
+- Additionally, this release addresses an issue where the gMSA account that the local agent executes under will lose permission to the private key for some certificates.
 - The LBDTelemetry-Agent application can start correctly even if the Event Viewer is open. 
 
 > [!IMPORTANT]
