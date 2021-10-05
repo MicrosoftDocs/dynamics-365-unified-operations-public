@@ -47,7 +47,8 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 |---|---|---|
-| | | |
+| Select a default state/province per country/region in address setup | -- | [Set up state/province information](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup?toc=/dynamics365/human-resources/toc.json#set-up-stateprovince-information) |
+| Platform update 10.0.21 (45) | -- | [Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
 
 
 ### Bug fixes
@@ -60,8 +61,7 @@ The following bug fixes are included in this release.
 | Issue number | Issue | Description |
 |---|---|---|
 | 598896 | Employee amount does not display until after the employee has completed the enrollment | In employee self service, the employee amount for the benefit was not being displayed.  This bug fixes this issue so that the employee amount is displayed in the benefits self-service form.  |
-| #619387 | ## Fix PU45 BP Build Errors - | |
-| #613440 | ## Unable to Export Data from Data Management | |
+| 613440 | Unable to Export Data from Data Management | When exporting data for a project in **Data management**, the export fails unexpectedly. |
 | 618327 | Closed and future periods are showing in the reports parameter form for the benefits statement | When navigating to the **Benefit statement** in **Employee self service**, the **Report parameters** page displays **Records to include** and **Run in the background** FastTabs.  These sections were removed.|
 | 618326 | Wrong report parameters form displays is ESS for the benefits statement| When navigating to the **Benefit statement report** destination page, the user was able to select benefit plans periods that are closed or are future dated, which results in a blank page. Only the current benefit plan period should display in the list |
 
@@ -93,7 +93,7 @@ For a complete list of planned features and their scheduled releases, see [Overv
 
 | Feature | Details |
 |---|---|
-| Platform update 10.0.21 (45) | Roll-out of Platform update 10.0.21 is scheduled to begin with the service release on October 4, 2021. For more information, see [Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
+| Platform update 10.0.22 (46) | Roll-out of Platform update 10.0.22 is scheduled to begin with the service release on November 1, 2021. For more information, see [Platform updates for version 10.0.22 of Finance and Operations apps (November 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
 
 
 
