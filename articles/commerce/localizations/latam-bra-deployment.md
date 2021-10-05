@@ -197,13 +197,13 @@ To set up the fiscal registration process in Commerce headquarters, follow these
 1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
 
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    1. Open the last available release branch (for example, **[release/9.32](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.32)**).
+    1. Open the last available release branch (for example, **[release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31)**).
     1. Open **src \> FiscalIntegration \> ElectronicFiscalDocumentsBrazil**.
-    1. Download the fiscal connector configuration files at **Configurations \> Connectors** (for example, [the files for release/9.32](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.32/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/Connectors)):
+    1. Download the fiscal connector configuration files at **Configurations \> Connectors** (for example, [the files for release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/Connectors)):
         - SubmitConnector.xml
         - SatConnector.xml
         - ContingencyConnector.xml
-    1. Download the fiscal document provider configuration files at **Configurations \> Document** (for example, [the files for release/9.32](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.32/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/DocumentProviders)):
+    1. Download the fiscal document provider configuration files at **Configurations \> Document** (for example, [the files for release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/ElectronicFiscalDocumentsBrazil/Configurations/DocumentProviders)):
         - SubmitProvider.xml
         - SatProvider.xml
         - ContingencyProvider.xml
@@ -312,7 +312,7 @@ To configure CRT extension components, follow these steps.
 
     - **Commerce Scale Unit:** The file is named **Commerceruntime.ext.config**, and it's located in the **bin\\ext** folder under the Internet Information Services (IIS) Commerce Scale Unit site location.
 
-1. Register the CRT change in the extension configuration file.
+2. Register the CRT change in the extension configuration file.
 
 ```xml
 <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
@@ -322,11 +322,11 @@ To configure CRT extension components, follow these steps.
 <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxServiceBrazil" />
  ```
  
-1. Find the Web.config file for CRT.
+3. Find the Web.config file for CRT.
 
     - **Commerce Scale Unit:** The file is named **Web.config**, and it's located in the **\RetailServer\webroot** folder.
 
-1. Update this Web.config file by adding the new extension library name in the extensionComposition section.
+4. Update this Web.config file by adding the new extension library name in the extensionComposition section.
  
 ```xml
 <extensionComposition>
@@ -334,11 +334,11 @@ To configure CRT extension components, follow these steps.
 </extensionComposition>
 ```
 
-1. Find the extension configuration file for Local CRT on Modern POS:
+5. Find the extension configuration file for Local CRT on Modern POS:
 
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's located in the local CRT client broker location.
 
-1. Register the local CRT on Modern POS change in the extension configuration file.
+6. Register the local CRT on Modern POS change in the extension configuration file.
 
  ```xml
  <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
@@ -351,11 +351,11 @@ To configure CRT extension components, follow these steps.
 > [!WARNING]
 > Don't edit the **Commerceruntime.config** and **CommerceRuntime.MPOSOffline.config** files. These files aren't intended for any customizations.
 
-1. Find the extension configuration file for Local CRT on Modern POS:
+7. Find the extension configuration file for Local CRT on Modern POS:
 
     - **Retail proxy on Modern POS:** The file is named **RetailProxy.MPOSOffline.Ext.config**, and it's located in the local CRT client broker location.
 
-1. Register the local CRT on Modern POS change in the extension configuration file.
+8. Register the local CRT on Modern POS change in the extension configuration file.
 
  ```xml
 		<retailProxyExtensions>
