@@ -48,6 +48,8 @@ To create a coupon, you create the discount and the coupon separately. You then 
 > 
 > While using the coupon in the call center channel, you need to select the **Recalculate** button **(Sell tab > Calculate > Recalculate)** in order for the discount associated to the coupon to get applied. This additional step will be removed in a future release.
 
+To apply a coupon to a sales transaction in POS, you could use **coupon code** or **coupon bar code**. To use coupon code, please ensure the **Add coupon code** operation is configured in the POS Transaction [screen layout](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts), you then need to click this operation and enter the coupon code in the prompt side panel. To use coupon bar code, you could simply scan the bar code or enter the bar code using the numeric keyboard on the Transaction screen.
+
 ### Limited-use coupons
 
 Coupons can be configured as limited-use coupons. The usage limit can be defined per customer or channel, or as a global limit. This limit is enforced when the code or bar code is entered or scanned in POS or during sales order entry.
