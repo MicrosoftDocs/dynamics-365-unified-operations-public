@@ -32,7 +32,9 @@ ms.dyn365.ops.version: Version 10.0.8
 
 This topic describes the use of the Retained earnings calculation enhancement for Financial reporting. This enhancement has implications for organizations that use currency translation.
 
-When you enable this feature, any retained earnings account that has the Currency translation type set to Transaction date will calculate the accounting currency balance of the account using change in the current year and the exchange rate at the end of the year. The total retained earning balance at the end of any year will be a total of each calculated year. 
+> [!NOTE] To turn this feature on or off, please log a support ticket. 
+> 
+> When you enable this feature, any retained earnings account that has the Currency translation type set to Transaction date will calculate the accounting currency balance of the account using change in the current year and the exchange rate at the end of the year. The total retained earning balance at the end of any year will be a total of each calculated year. 
 
 |     Retained   earnings                                                                             	|     Currency    	|     2018      	|     2019      	|     2020      	|     2021      	|
 |:----------------------------------------------------------------------------------------------------	|:----------------:	|---------------:	|---------------:	|---------------:	|---------------:	|
@@ -49,4 +51,4 @@ Assume that you're closing the year on December 31st. When the Retained earnings
 
 When the feature is turned on, the Retained earnings as of December 31, 2021 in Reporting currency is $288.75. This number is made up of the calculated balances as shown by (d). 
 
-  > [!NOTE] To opt in or to opt out of this feature, you must log a support ticket to get this turned on for your organization. 
+   
