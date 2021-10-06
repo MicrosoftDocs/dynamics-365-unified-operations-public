@@ -26,10 +26,15 @@ There is a section in the localagent-config.json file that is labeled deployment
 				"office365AdfsCompatibility": {
 					"value": "false"
 				},
-				"sqlServerVersion" : {
+				"sqlServerVersion": {
 					"value": "2016"
 				},
-				...
+				"isMultiSubnetFailoverEnabled": {
+					"value": "false"
+				},
+				"skipCRLCheck" : {
+					"value": "false"
+				}
 			},
     ...
 ```
@@ -62,7 +67,7 @@ This requires that a client (i.e. the FinancialReporting service) reach out to r
 
 Some onpremises environments are not allowed to reach out into the internet. As such, they may not be able to carry out this check. It is possible to disable this check by updating **skipCRLCheck** from **false** to **true**.
 
-Support for this option was introduced in release X.
+Support for this option was introduced in release 10.0.21 through a quality update. Additionally, at least local agent 2.7.1 is required to use this option.
 
 > [!CAUTION]
 > By disabling the certificate revocation list of a certificate, the security check will not be performed. You bear the risk of disabling it. You should only enable this deployment option if you are fully aware of the security implications of disabling this check.
