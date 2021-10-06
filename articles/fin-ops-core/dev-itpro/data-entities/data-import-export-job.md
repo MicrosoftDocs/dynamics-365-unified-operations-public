@@ -205,16 +205,10 @@ moving window thereby, always leaving the history for the specified number of da
 > [!NOTE]
 > If records in the staging tables are not cleaned up completely, ensure that the cleanup job is scheduled to run in recurrence. As explained above, in any clean up execution the job will only clean up as many execution ID's as is possible within the provided maximum hours. In order to continue cleanup of any remaining staging records, the job must be scheduled to run periodically.
 
-## Job history clean up and archival (available for preview in Platform update 39 or version 10.0.15)
+## Job history clean up and archival 
 The job history clean up and archival functionality replaces the previous versions of the clean up functionality. This section will explain these new capabilities.
 
-One of the main changes to the clean up functionality is the use of system batch job for cleaning up the history. The use of system batch job allows Finance and Operations apps to have the clean up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at 12 midnight and will retain the execution history for the most recent 7 days. The purged history is archived for future retrieval.
-
-> [!NOTE]
-> Because this functionality is in preview, the system batch job will not delete any execution history until it is enabled via the flight DMFEnableExecutionHistoryCleanupSystemJob. When the feature is generally available in a future release, this flight will not be required and the system batch job will start to purge and archive after the system is ready, based on the defined schedule as explained above. 
-
-> [!NOTE]
-> In a future release, the previous versions of the clean up functionality will be removed from Finance and Operations apps.
+One of the main changes to the clean up functionality is the use of system batch job for cleaning up the history. The use of system batch job allows Finance and Operations apps to have the clean up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at 12 midnight and will retain the execution history for the most recent 7 days. The purged history is archived for future retrieval. From version 10.0.20 this festure in always on. The feature was in preview from version 10.0.15.
 
 The second change in the clean up process is the archival of the purged execution history. The clean up job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be available for 7 days in the blob during which time it can be downloaded. The default longevity of 7 days for the archived file can be changed to a maximum of 90 days in the parameters.
 
