@@ -52,7 +52,7 @@ This topic explains how to update the local agent. The latest version of the loc
 
 ## What's new in local agent 2.7.1
 
-- Local agent 2.7.1 introduces a new deployment option to [Specify that checking the Certificate Revocation List of a certificate should be skipped](../../dev-itpro/deployment/onprem-localagent-options?branch=osfaixat%2FonpremCRL#specify-that-checking-the-certificate-revocation-list-of-a-certificate-should-be-skipped).
+- Local agent 2.7.1 introduces a new deployment option to [Specify that checking the Certificate Revocation List of a certificate should be skipped](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-checking-the-certificate-revocation-list-of-a-certificate-should-be-skipped).
 - This release addresses a bug where the **office365AdfsCompatibility** deploymentOption was not being correctly set.
 
 ## What's new in local agent 2.7.0
