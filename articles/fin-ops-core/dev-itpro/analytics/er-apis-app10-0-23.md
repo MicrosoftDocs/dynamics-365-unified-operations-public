@@ -193,5 +193,4 @@ To learn more about this interface, complete the example in [Implement a custom 
 
 [Configure access to SharePoint for file storage](er-configure-data-import-sharepoint.md)
 
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
