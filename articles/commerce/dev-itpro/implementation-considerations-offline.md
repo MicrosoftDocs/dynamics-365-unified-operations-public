@@ -4,7 +4,7 @@
 title: Commerce offline implementation and troubleshooting
 description: This topic provides an overview of Microsoft Dynamics 365 Commerce offline implementation considerations and troubleshooting.
 author: jashanno
-ms.date: 08/24/2021
+ms.date: 10/01/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -51,7 +51,7 @@ The advanced offline feature can be configured in the offline profile. The follo
 This section describes various aspects and configurations of offline that should be considered when you begin to plan your POS usage scenarios while functioning offline. The features that are described here are related to data management, offline usage, and data configuration. Before you read the guidance that is provided, we highly recommend that you understand these concepts. To gain additional information, we recommended that you read [Commerce Data Exchange best practices](CDX-Best-Practices.md).
 
 ### SQL Server versions and licenses 
-SQL Server comes in a variety of versions (such as SQL Server 2017 and SQL Server 2019) and a variety of editions (such as SQL Standard and SQL Express). For more in-depth information about these versions, see [Editions and supported features of SQL Server 2019 (15.x)](/sql/sql-server/editions-and-components-of-sql-server-version-15?view=sql-server-ver15#Cross-BoxScaleLimits). Also see the [Additional resources](implementation-considerations-offline.md#additional-resources) listed at the bottom of this topic.
+SQL Server comes in a variety of versions (such as SQL Server 2017 and SQL Server 2019) and a variety of editions (such as SQL Standard and SQL Express). For more in-depth information about these versions, see [Editions and supported features of SQL Server 2019 (15.x)](/sql/sql-server/editions-and-components-of-sql-server-version-15#Cross-BoxScaleLimits). Also see the [Additional resources](implementation-considerations-offline.md#additional-resources) listed at the bottom of this topic.
 
 For SQL Server versions, the only recommendation is to use a version that is currently still within the mainstream support date. Support dates can be searched for, by product, in [Search Product and Services Lifecycle Information](/lifecycle/products/).
 
@@ -63,6 +63,31 @@ While not an exhaustive list, here are the most used SQL Server editions for Dyn
 | Express | When using SQL Server Express as a SQL Server version for the offline database, it is important to understand that there are some limitations, such as CPU core count or RAM usage. The largest limiting factor is the 10 GB database size limit. Given the ability to use this version freely, Express is often used for a Modern POS offline database and not for a CSU (self-hosted) channel database. If the Express edition is used for a CSU (self-hosted), be aware that there could be data synchronization issues if the database ever reaches the 10 GB maximum size limit, which could cause issues such as loss of data. When using the Express edition, it is crucial to use compression and the Dynamics 365 Commerce features to exclude data from offline databases. For more information about SQL compression, see [Commerce Data Exchange best practices](CDX-Best-Practices.md#enable-table-and-index-compression). We recommended that you maintain a database at 8 GB in size, or less. |
 | Standard | SQL Server Standard is often used for CSU (self-hosted) channel databases.  This provides enough size and system utilization to typically handle a CSU (self-hosted) channel database for one to several retail store locations. While not common, the Standard version is sometimes used for offline databases to cut away any limitations and maximize offline performance. Further, a more hybrid method may be used where only a set number of Modern POS registers utilize a full Standard version while other registers utilize the Express version (or potentially no offline database, possibly using Cloud POS instead of Modern POS). |
 | Enterprise | SQL Server Enterprise is rarely necessary, but there are scenarios where it could be valuable. For example, if hosting a CSU (self-hosted) in a datacenter VM for use across a large area of many devices, removing the limitations could be valuable to maximize performance capabilities. |
+
+### Offline testing
+When you perform updates, it's crucial that you thoroughly test Modern POS (MPOS) and offline functionality. Here is a non-exhaustive list of functions that you should test while you're offline, to verify correct functionality:
+
+-	Test cashier and manager sign-in.
+-	Test shift opening and closing.
+-	Test product browsing by using categories.
+-	Test product search by using the search bar.
+-	Test a cash and carry transaction.
+-	Test blind returns.
+-	Test discounts.
+-	Test unit of measure changes.
+-	Test payment functionality. All the following payment types should work and be available while you're offline:
+    -	Cash
+    - Currency
+    - Check
+    -	Loyalty
+    -	Card
+    -	Customer account
+    -	Gift card
+-	Test **Show journal**.
+-	Start a transaction while you're in online mode. Then force the switch to offline mode (that is, disconnect the system from the internet instead of manually switching to offline mode), and continue to checkout.
+-	Perform the previous test when the offline database doesn't have the latest data for the customer (missing) or a product (missing) in cart, for example. In this case, the expectation is that the cashier will receive a warning or error message, but will still be able to continue to use MPOS in offline mode to perform new cash and carry transactions.
+-	Perform one or more transactions while you're offline. Then switch back to online mode, and verify that the transactions are uploaded.
+
 
 ## Troubleshooting
 

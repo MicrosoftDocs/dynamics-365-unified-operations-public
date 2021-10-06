@@ -3,7 +3,7 @@
 
 title: Tax thresholds for India FAQ
 description: This topic provides information about tax thresholds for India.
-author: yijialuan
+author: EricWangChen
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # # ms.search.industry: 
-ms.author: riluan
+ms.author: wangchen
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 

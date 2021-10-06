@@ -3,7 +3,7 @@
  
 title: Correct inventory tracking information
 description: This procedure walks you through the process of creating and posting an inventory transfer journal in order to correct inventory tracking information. 
-author: MarkusFogelberg
+author: yufeihuang
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Correct inventory tracking information
 

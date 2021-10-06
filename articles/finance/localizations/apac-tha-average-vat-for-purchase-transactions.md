@@ -170,18 +170,18 @@ between the VAT businesses and the non-VAT businesses is 50 percent to
 The VAT is calculated and posted to different accounts, as shown in the
 following table.
 
-<table style="width: 100.058%;">
+<table>
 <tbody>
 <tr>
-<td style="width: 49.2322%;">
+<td>
 <p><strong>VAT calculated and posted when the invoice is posted</strong></p>
 </td>
-<td style="width: 49.3858%;">
+<td>
 <p><strong>VAT calculated and adjusted when the invoice is settled with updated VAT ratio</strong></p>
 </td>
 </tr>
 <tr>
-<td style="width: 49.2322%;">
+<td>
 <p>The invoice amount is THB 100.00.</p>
 <p>The total VAT that is applicable to the invoice is 7 percent, and the calculated VAT amount is THB 7.00.</p>
 <ul>
@@ -238,7 +238,7 @@ following table.
 </tbody>
 </table>
 </td>
-<td style="width: 49.3858%;">
+<td>
 <p>A payment of THB 100.00 is made to settle the invoice.</p>
 <p>The total VAT that is applicable to the invoice is 7 percent, and the calculated VAT amount is THB 7.00.</p>
 <ul>

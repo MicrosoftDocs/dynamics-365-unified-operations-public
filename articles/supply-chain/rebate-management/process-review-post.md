@@ -22,7 +22,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # Process, review, and post rebates
@@ -47,8 +47,6 @@ The **Calculate FIFO purchase price** periodic task must be run to calculate the
 Go to **Rebates management \> Periodic tasks \> Calculate FIFO purchase price**. In the dialog box that appears, select **OK** to run the calculation.
 
 ## Create source transactions
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 You can create the sales orders or purchase orders that have source transactions either before or after you create an applicable Rebate management deal.
 
@@ -162,8 +160,6 @@ Instead of processing specific deals or deal lines, you can run a batch job to p
 
 ### Process deals by using the rebate workbench
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Instead of processing specific deals or deal lines, you can use the *rebate workbench* to process multiple deals at the same time. You can optionally apply record filters and/or set up a recurring schedule. You don't have to select any rows. The system will process all lines that meet the date and filter requirements that you set up.
 
 To process deals by using the rebate workbench, follow these steps.
@@ -217,8 +213,6 @@ To view and edit Rebate management transactions using the rebate deals list page
 > If you're using a claims process, when you process the next period, the transaction list will include any unclaimed transactions from the previous posting, plus any new transactions for the selected period.
 
 ### View and edit Rebate management transactions by using the rebate workbench
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 To view and edit Rebate management transactions by using the rebate workbench, follow these steps.
 
@@ -299,8 +293,6 @@ Instead of posting transactions for specific deals or deal lines, you can run a 
 
 ### Post transactions by using the rebate workbench
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 After you've processed provision, rebate, or write-off transactions, follow these steps to use the rebate workbench to review and post the generated transactions for one or more specific transaction lines for all deals.
 
 1. Go to **Rebate management \> Rebate management deals \> Rebate workbench**.
@@ -336,8 +328,6 @@ To review the journal entries that are associated with a Rebate management deal,
 
 ### Review journals by using the rebate workbench
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 To review journals by using the rebate workbench, follow these steps.
 
 1. Go to **Rebate management \> Rebate management deals \> Rebate workbench**.
@@ -346,8 +336,6 @@ To review journals by using the rebate workbench, follow these steps.
 1. A list of relevant journals, documents, or items appears. To view more information about any journal, document, or item, select its row, and then, on the Action Pane, select **View details**.
 
 ## Rebate management transactions on the deduction workbench
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 When you post a Rebate management transaction that has one of the following **Payment type** values, the system creates a customer deduction journal or a free text invoice for the relevant customer account:
 
@@ -362,8 +350,6 @@ For more information, see [Manage deductions using the deduction workbench](dedu
 
 ## Purge unposted transactions
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 After you've processed provision, rebate, or write-off transactions, follow these steps to purge selected unposted transactions.
 
 1. Go to **Rebate management \> Rebate management deals \> Rebate workbench**.
@@ -372,8 +358,6 @@ After you've processed provision, rebate, or write-off transactions, follow thes
 4. Select **OK** to delete the unposted transactions.
 
 ## Cancel a posted provision
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 After you've processed and posted a provision, follow these steps to cancel the posted provision transactions.
 

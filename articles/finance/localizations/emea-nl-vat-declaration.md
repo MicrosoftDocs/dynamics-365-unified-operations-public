@@ -4,7 +4,6 @@
 title: VAT declaration for the Netherlands
 description: This topic explains how to set up and generate the value-added tax (VAT) declaration for legal entities in the Netherlands. 
 author: anasyash
-ms.author: AnnBe
 ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
@@ -19,6 +18,7 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Netherlands
+ms.author: anasyash
 # ms.search.industry: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: 

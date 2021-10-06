@@ -3,7 +3,7 @@
 
 title: Nets import format
 description: This topic provides information about importing payment information in the Nets format.
-author: ShylaThompson
+author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.reviewer: kfend
 ms.custom: 262704
 ms.search.region: Norway
 # ms.search.industry: 
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

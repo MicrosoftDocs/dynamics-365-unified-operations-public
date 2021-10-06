@@ -3,7 +3,7 @@
 
 title: Credit subscription transactions  
 description: This topic shows how to credit subscription transactions.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

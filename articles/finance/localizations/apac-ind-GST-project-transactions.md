@@ -44,12 +44,12 @@ ms.search.validFrom: 2019-7-02
 
 3. Select **Tax information**.
 
-    ![Tax information dialog box.](media/gst-proj-trans-02.png)
+    ![Tax information dialog box when creating a project quotation.](media/gst-proj-trans-02.png)
 
 4. Select **OK**.
 5. On the Action Pane, on the **Quote** tab, in the **Tax** group, select **Tax document**.
 
-    ![Tax document page.](media/gst-proj-trans-03.png)
+    ![Tax document page when creating a project quotation.](media/gst-proj-trans-03.png)
 
 6. Close the page.
 7. On the Action Pane, select **Workflow** \> **Submit** to start the quotation workflow.
@@ -80,7 +80,7 @@ ms.search.validFrom: 2019-7-02
 6. Select **Create project**.
 7. On the Action Pane, on the **Project** tab, in the **Setup** group, select **Tax information**.
 
-    ![Tax information dialog box.](media/gst-proj-trans-05.png)
+    ![Tax information dialog box when creating a project.](media/gst-proj-trans-05.png)
 
 8. Select **OK**.
 
@@ -95,15 +95,15 @@ ms.search.validFrom: 2019-7-02
 4. On the **Invoice** tab, enter the invoice information.
 5. Select **Tax information** \> **Cost**.
 
-    ![Tax information dialog box.](media/gst-proj-trans-07.png)
+    ![Tax information dialog box when creating an expense journal.](media/gst-proj-trans-07.png)
 
 6. Select **OK**, and then select **Tax information** \> **Invoice**.
 
-    ![Tax information dialog box.](media/gst-proj-trans-08.png)
+    ![Tax information dialog box for invoices when creating an expense journal.](media/gst-proj-trans-08.png)
 
 7. Select **OK**, and then select **Tax document**.
 
-    ![Tax document page.](media/gst-proj-trans-09.png)
+    ![Tax document page when creating an expense journal.](media/gst-proj-trans-09.png)
 
 8. Close the page.
 9. Select **Post** \> **Post**.
@@ -134,7 +134,7 @@ ms.search.validFrom: 2019-7-02
 
 5. Save the record, and then select **Tax information**.
 
-    ![Tax information dialog box.](media/gst-proj-trans-12.png)
+    ![Tax information dialog box for creating an hour journal.](media/gst-proj-trans-12.png)
 
 6. Select **OK**.
 7. Select **Post**.
@@ -155,7 +155,7 @@ ms.search.validFrom: 2019-7-02
 
 5. Save the record, and then select **Tax information**.
 
-    ![Tax information dialog box.](media/gst-proj-trans-15.png)
+    ![Tax information dialog box for creating an item journal.](media/gst-proj-trans-15.png)
 
 6. Select **OK**.
 7. Select **Post**.
@@ -173,7 +173,7 @@ ms.search.validFrom: 2019-7-02
 
 5. Select **Tax information**.
 
-    ![Tax information dialog box.](media/gst-proj-trans-17.png)
+    ![Tax information dialog box for creating a fee journal.](media/gst-proj-trans-17.png)
 
 6. Select **OK**.
 7. Select **Post**.
@@ -190,7 +190,7 @@ ms.search.validFrom: 2019-7-02
 3. Select **Tax information**.
 4. On the **GST** FastTab, in the **Service accounting codes** field, select the Services Accounting Code (SAC).
 
-    ![Tax information dialog box.](media/gst-proj-trans-19.png)
+    ![Tax information dialog box for creating an on-account transaction.](media/gst-proj-trans-19.png)
 
 5. Select **OK**.
 6. Close the page.
@@ -202,13 +202,13 @@ ms.search.validFrom: 2019-7-02
 3. Select **View details**.
 4. Select **Tax information**.
 
-    ![Tax information dialog box.](media/gst-proj-trans-20.png)
+    ![Tax information dialog box for creating a project invoice proposal.](media/gst-proj-trans-20.png)
 
 5. Select **OK**.
 6. Close the page.
 7. Select **Tax document**.
 
-    ![Tax document page.](media/gst-proj-trans-21.png)
+    ![Tax document page when creating a project invoice proposal.](media/gst-proj-trans-21.png)
 
 8. Close the page.
 
@@ -219,13 +219,13 @@ ms.search.validFrom: 2019-7-02
 3. On the **Fee** tab, select the additional fee record, and then select **View details**.
 4. Select **Tax information**.
 
-    ![Tax information dialog box.](media/gst-proj-trans-22.png)
+    ![Tax information dialog box for updating additional fees.](media/gst-proj-trans-22.png)
 
 5. Select **OK**.
 6. Close the page.
 7. Select **Tax document**.
 
-    ![Tax document page.](media/gst-proj-trans-23.png)
+    ![Tax document page when updating additional fees.](media/gst-proj-trans-23.png)
 
 8. Close the page.
 9. Select **Post**.
@@ -241,7 +241,7 @@ ms.search.validFrom: 2019-7-02
 5. Select **Tax information**.
 6. On the **GST** FastTab, in the **Service accounting codes** field, select the SAC.
 
-    ![Tax information dialog box.](media/gst-proj-trans-24.png)
+    ![Tax information dialog box for creating a customer advance invoice.](media/gst-proj-trans-24.png)
 
 7. Select **OK**.
 8. Close the page.

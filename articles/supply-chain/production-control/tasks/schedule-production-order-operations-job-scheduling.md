@@ -3,7 +3,7 @@
  
 title: Schedule a production order with operations and job scheduling
 description: This topic focuses on scheduling a production order with operations scheduling and job scheduling. 
-author: ChristianRytt
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Schedule a production order with operations and job scheduling
 

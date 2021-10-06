@@ -3,7 +3,7 @@
 
 title: Project attached to service agreement 
 description: You can attach service agreements to projects of every type except the Time project type.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 

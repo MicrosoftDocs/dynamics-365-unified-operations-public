@@ -4,7 +4,7 @@
 title: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
 description: This topic explains which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
-ms.date: 08/03/2021
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,6 +61,20 @@ This section covers the following SQL Server components:
 
 > [!IMPORTANT]
 > Using multiple versions of Microsoft SQL Server throughout a single environment is not supported.
+
+## Active Directory Federation Services (AD FS)
+
+Active Directory Federation Services (AD FS) is a server role that can be installed on a machine running Windows Server. 
+
+| Version                                                     | Supported since  | End of life   |
+|-------------------------------------------------------------|------------------|---------------|
+| Active Directory Federation Services on Windows Server 2019 | 10.0.17          | Not available |
+| Active Directory Federation Services on Windows Server 2016 | Original release | 10.0.26       |
+
+> [!IMPORTANT]
+> - AD FS on Windows Server 2016 only supports authentication through the Azure Active Directory Authentication Library (ADAL).
+> - In order to uptake the upcoming migration to the Microsoft Authentication Library, you need to deploy your AD FS on Windows Server 2019 
+> (MSAL). For more information, see [Migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration).
 
 ## Minimum Azure Service Fabric runtime
 

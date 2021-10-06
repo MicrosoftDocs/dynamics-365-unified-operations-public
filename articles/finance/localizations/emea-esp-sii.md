@@ -2,9 +2,9 @@
 # required metadata
 
 title: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
-description: This topic describes how to set up and use Microsoft Dynamics 365 Finance to interoperate with the SII system of Spain.
+description: This topic describes how to set up and use Dynamics 365 Finance to interoperate with the SII system of Spain.
 author: liza-golub
-ms.date: 07/05/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,14 +37,19 @@ For more information about the SII system of Spain, see the [Immediate Supply of
 
 Microsoft Dynamics 365 Finance supports the full cycle of processing, including the format generation and submission of the following reports to the SII system of Spain:
 
-   - 'Libro de registro de facturas Expedidas': Record book of issued invoices 
-   - 'Libro de registro de facturas Recibidas': Record book of received invoices
-   - 'Libro de registro de determinadas operaciones intracomunitarias': Record book of certain intra-community operations
-   - 'Cobros sobre facturas registradas en el Libro de registro de Facturas Expedidas': Payments for invoices registered in the record book of issued invoices
-   - 'Pagos para facturas registradas en el Libro de registro de Facturas Recibidas': Payments for invoices registered in the record book of received invoices
-   - 'Cobros en Metálico': Payments in cash
+- 'Libro de registro de facturas Expedidas': **Record book of issued invoices**
+- 'Libro de registro de facturas Recibidas': **Record book of received invoices**
+- 'Libro de registro de determinadas operaciones intracomunitarias': **Record book of certain intra-community operations**
+- 'Cobros sobre facturas registradas en el Libro de registro de Facturas Expedidas': **Payments for invoices registered in the record book of issued invoices**
+- 'Pagos para facturas registradas en el Libro de registro de Facturas Recibidas': **Payments for invoices registered in the record book of received invoices**
+- 'Cobros en Metálico': **Payments in cash**
 
-This topic describes how to set up and use Microsoft Dynamics 365 Finance to interoperate with the SII system of Spain. It includes information about how to complete the following tasks:
+As of Finance version 10.0.22, if you're using the [Tax service](global-tax-calcuation-service-overview.md), and the [**Support multiple VAT registration numbers**](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace, you can [report the following reports to the SII system of Spain from a legal entity that has a primary address outside Spain](#multiple-vat):
+
+- 'Libro de registro de facturas Expedidas': **Record book of issued invoices**
+- 'Libro de registro de facturas Recibidas': **Record book of received invoices**
+
+This topic describes how to set up and use Finance to interoperate with the SII system of Spain. It includes information about how to complete the following tasks:
 
 -   Import Electronic reporting (ER) configurations.
 -   Set up Electronic messaging (EM) functionality.
@@ -165,7 +170,7 @@ Internet addresses are subject to change by AEAT. Therefore, we recommend that y
 After the data entities are imported into the database, complete the following tasks. When you've completed them, the electronic message functionality will be ready to use.
 
 1.  Set up executable class parameters.
-2.  Set up additional fields and automactically defined rules.
+2.  Set up additional fields and automatically defined rules.
 3.  Set up number sequences for electronic messages.
 4.  Set up security roles for electronic message processing.
 
@@ -175,45 +180,51 @@ Three executable classes are included in the two types of electronic messages pr
 
 | **Executable class name**    | **Description**                                                                                                                                             |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SIIGenerateItems             | This class fills in EM items of the following types:                                                                                                        |
-| SIIPartyAttributesEvaluation | For filled-in EM items (in **Creado** status), this class evaluates the values for the following additional fields:                                         |
+| SIIGenerateItems             | This class fills in EM items of the following types: <ul><li>Customer invoice (FacturasСliente)</li><li>Vendor invoice (FacturasProveedores)</li><li>Customer payment (PagosCliente)</li><li>Vendor payment (PagosProveedores)</li><li>Intra-community operations (OperacionesIntracomunitarias)</li></ul><p>For filled-in EM items, this class evaluates values for the following additional fields:</p><ul><li>Invoice type (TipoFactura)</li><li>Summary reference (NumSerieFactura)</li><li>Special schema code (ClaveRegimenEspecialOTrascendencia)</li><li>Intracommunity transaction ID (TipoOperacion)</li></ul> |
+| SIIPartyAttributesEvaluation | For filled-in EM items (in **Creado** status), this class evaluates the values for the following additional fields: <ul><li>Registration number (ID)</li><li>Tax ID type (IDType)</li><li>Party ISO code (CodigoPais)</li></ul>                                        |
 | MonitorCollectionInCash      | This class monitors changes in the data of records of the **Collections in cash** report and then updates the status of EM items in the appropriate manner. |
 
--   Customer invoice (FacturasСliente)
--   Vendor invoice (FacturasProveedores)
--   Customer payment (PagosCliente)
--   Vendor payment (PagosProveedores)
--   Intra-community operations (OperacionesIntracomunitarias)
+### <a id="siigenerateitems"></a>Set up the SIIGenerateItems executable class
 
-For filled-in EM items, this class evaluates values for the following additional fields:
-
--   Invoice type (TipoFactura)
--   Summary reference (NumSerieFactura)
--   Special schema code (ClaveRegimenEspecialOTrascendencia)
--   Intracommunity transaction ID (TipoOperacion)
--   Registration number (ID)
--   Tax ID type (IDType)
--   Party ISO code (CodigoPais)
-
-### Set up the SIIGenerateItems executable class
-
-1.  To set up parameters of the **SIIGenerateItems** executable class, go to **Tax \> Setup \> Electronic messages \> Executable class settings**.
+1.  To set up parameters of the **SIIGenerateItems** executable class, go to **Tax** > **Setup** > **Electronic messages** > **Executable class settings**.
 2.  On the **Executable class settings** page, select the **SIIGenerateItems** executable class that is associated with the **EMCreateItemsController** executable class name.
-3.  On the Action Pane, select **Parameters**, and then, in the dialog box that appears, set the following values for the parameters of the executable class.
+3.  On the Action Pane, select **Parameters**, and then, in the **Add new electronic message items** dialog box that appears, set the following values for the parameters of the executable class.
 
-| **Parameter name**            | **Value**                          |
-|-------------------------------|------------------------------------|
-| Invoice type                  | TipoFactura                        |
-| Summary reference             | NumSerieFactura                    |
-| Special scheme code           | ClaveRegimenEspecialOTrascendencia |
-| Intracommunity transaction ID | TipoOperacion                      |
-| Customer invoices             | FacturasСliente                    |
-| Customer payments             | PagosCliente                       |
-| Vendor invoices               | FacturasProveedores                |
-| Vendor payments               | PagosProveedores                   |
-| Intracommunity operations     | OperacionesIntracomunitarias       |
+   In the **Additional fields** group:
 
-4.  Select **OK** to initiate the executable class.
+   | **Parameter name**            | **Value**                          |
+   |-------------------------------|------------------------------------|
+   | Invoice type                  | TipoFactura                        |
+   | Summary reference             | NumSerieFactura                    |
+   | Special scheme code           | ClaveRegimenEspecialOTrascendencia |
+   | Intracommunity transaction ID | TipoOperacion                      |
+
+   In the **Message item types** group:
+
+   | **Parameter name**            | **Value**                          |
+   |-------------------------------|------------------------------------|
+   | Customer invoices             | FacturasСliente                    |
+   | Customer payments             | PagosCliente                       |
+   | Vendor invoices               | FacturasProveedores                |
+   | Vendor payments               | PagosProveedores                   |
+   | Intracommunity operations     | OperacionesIntracomunitarias       |
+
+Starting in Finance version 10.0.22, if you are using the [**Tax service**](global-tax-calcuation-service-overview.md) and have the feature, [**Support multiple VAT registration numbers**](emea-multiple-vat-registration-numbers.md) enabled in the **Feature management** workspace, an additional **Multiple Tax ID parameters** group will be visible in the **Add new electronic message items** dialog box. Set the following values for the parameters in this group.
+
+   | **Parameter name**            | **Value**                          |
+   |-------------------------------|------------------------------------|
+   | Company Tax Id                | Select the VAT registration number of the company from the name of which you will be reporting to SII system of Spain in **Company Tax Id** field. |
+
+4. Expand the **Records to include** FastTab and specify additional criteria to be applied to the datasources of Finance from which invoices will be populated in EM items. The following datasources are available:
+
+   | **Datasources**               | **Description**                          |
+   |-------------------------------|------------------------------------|
+   | CUSTOMER INVOICE JOURNAL      | This datasource populates data from **Customer invoice journal** table as EM items of **FacturasСliente** type for reporting to the SII system of Spain. |
+   | VENDOR INVOICE JOURNAL        | This datasource populates data from **Vendor invoice journal** table as EM items of **FacturasProveedores** type for reporting to the SII system of Spain. |
+   | PROJECT INVOICE               | This datasource populates data from **Project invoice** table as EM items of **FacturasСliente** type for reporting to the SII system of Spain. |
+   | TRANSFER ORDER HISTORY        | This datasource populates data from **Transfer order history** table as EM items of the **FacturasСliente** and **FacturasProveedores** types for reporting to the SII system of Spain. This datasource is available starting in Finance version 10.0.22 if you are using the [**Tax service**](global-tax-calcuation-service-overview.md) and the [**Support multiple VAT registration numbers**](emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace. For more information, see the section, [Report to SII system of Spain for multiple VAT registrations](#multiple-vat). |
+
+5.  Select **OK** to initiate the executable class.
 
 ![Add new Electronic message items pane.](media/emea-esp-sii-siigenerateitems-executable-class.png)
 
@@ -223,11 +234,11 @@ For filled-in EM items, this class evaluates values for the following additional
 2.  On the **Executable class settings** page, select the **SIIPartyAttributesEvaluation** executable class that is associated with the **EMAdditionalFieldsEvaluationController_ES** executable class name.
 3.  On the Action Pane, select **Parameters**, and then, in the dialog box that appears, set the following values for the parameters of the executable class.
 
-| **Parameter name**  | **Value**  |
-|---------------------|------------|
-| Registration number | ID         |
-| Tax ID type         | IDType     |
-| Party ISO code      | CodigoPais |
+    | **Parameter name**  | **Value**  |
+    |---------------------|------------|
+    | Registration number | ID         |
+    | Tax ID type         | IDType     |
+    | Party ISO code      | CodigoPais |
 
 4.  Select **OK** to initiate the executable class.
 
@@ -239,10 +250,10 @@ For filled-in EM items, this class evaluates values for the following additional
 2.  On the **Executable class settings** page, select the **MonitorCollectionInCash** executable class that is associated with the **EMCheckChangesCollectionInCashController_ES** executable class name.
 3.  On the Action Pane, select **Parameters**, and then in the dialog box that appears, set the following values for the parameters of the executable class.
 
-| **Parameter name** | **Value**            |
-|--------------------|----------------------|
-| Pending cancel     | CancelacionPendiente |
-| Corrected          | Corregido            |
+    | **Parameter name** | **Value**            |
+    |--------------------|----------------------|
+    | Pending cancel     | CancelacionPendiente |
+    | Corrected          | Corregido            |
 
 4.  Select **OK** to initiate the executable class.
 
@@ -260,8 +271,8 @@ EM items have additional fields that are included in the two types of electronic
 | CodigoPais                         | ISO code                       | **SII** and **CollectionInCash**. This field is applicable to all EM item types.                                                                                                               | **EvaluationFields** action, **SIIPartyAttributesEvaluation** executable class.                                                                                                                                                                                                                                    |
 | ClaveRegimenEspecialOTrascendencia | Special scheme code            | **SII** only. This field is applicable only to the **FacturasСliente** and **FacturasProveedores** EM item types.                                                                              | **GenerateMessageItem** action, **SIIGenerateItems** executable class. The default value is **01**. Setup of automatically defined rules is available.                                                                                                                                                                   |
 | NumSerieFactura                    | Summary reference              | **SII** only. This field is applicable only to the **FacturasСliente** and **FacturasProveedores** EM item types.                                                                              | **GenerateMessageItem** action, **SIIGenerateItems** executable class.                                                                                                                                                                                                                                             |
-| TipoFactura                        | Invoice type                   | **SII** only. This field is applicable only to the **FacturasСliente** and **FacturasProveedores** EM item types                                                                               | **GenerateMessageItem** action, **SIIGenerateItems** executable class. The default value is **01**. Setup of automatically defined rules is available.                                                                                                                                                                   |
-| TipoOperacion                      | Intra-community operation type | **SII** only. This field is applicable only to the **OperacionesIntracomunitarias** EM item type.                                                                                              | Manual definition. The default value is **A**. Setup of automatcially defined rules is available and can be applied during execution of the **GenerateMessageItem** action.                                                                                                                                              |
+| TipoFactura                        | Invoice type                   | **SII** only. This field is applicable only to the **FacturasСliente** and **FacturasProveedores** EM item types                                                                               | **GenerateMessageItem** action, **SIIGenerateItems** executable class. The default value is **F1**. Setup of automatically defined rules is available.                                                                                                                                                                   |
+| TipoOperacion                      | Intra-community operation type | **SII** only. This field is applicable only to the **OperacionesIntracomunitarias** EM item type.                                                                                              | Manual definition. The default value is **A**. Setup of automatically defined rules is available and can be applied during execution of the **GenerateMessageItem** action.                                                                                                                                              |
 | EmitidaPorTerceros                 | Issued by third parties        | **SII** only. This field is applicable only to the **FacturasСliente** EM item type.                                                                                                           | Manual definition only. The default value is **N**. Setup of automatically defined rules is available.                                                                                                                                                                                                                   |
 | EntidadSucedidaNIF                 | Succeeded legal entity Tax ID  | **SII** only. This field is applicable only to the **FacturasСliente**, **FacturasProveedores**, and **OperacionesIntracomunitarias** EM item types.                                           | Manual definition. Setup of automatically defined rules is available.                                                                                                                                                                                                                                                    |
 | EntidadSucedidaNombreRazon         | Succeeded legal entity name    | **SII** only. This field is applicable only to the **FacturasСliente**, **FacturasProveedores**, and **OperacionesIntracomunitarias** EM item types.                                           | Manual definition. Setup of automatically defined rules is available.                                                                                                                                                                                                                                                    |
@@ -406,8 +417,14 @@ Financial reasons can be specified for invoices that are posted from the followi
 -   Free text invoice
 -   Purchase order
 -   Projects
--   Accounts Payable (AP) journal
+-   Vendor invoice journal (AP)
 -   General ledger (GL) general journal
+
+> [!NOTE]
+> When you [report to SII system of Spain from legal entity with primary address out of Spain](#multiple-vat), you can specify financial reasons for invoices that are posted from the following documents only:
+> - Purchase order
+> - Vendor invoice journal (AP)
+> - General ledger (GL) general journal
 
 When you create an invoice from the types of documents that invoices can be created from, you can set up a specific reason for the invoice. The **GenerateMessageItem** action will analyze this reason, and the reason SII code will be set for the electronic message item.
 
@@ -500,13 +517,13 @@ You can set up automatically defined rules for any value from the preceding list
 -   **Account type:** Select **All**, **Customer**, or **Vendor**.
 -   **Account code:** Select **All**, **Group**, or **Table**.
 
-> [!NOTE]
-> You can specify this criterion only when **Account type** is set to either **Customer** or **Vendor**.
+    > [!NOTE]
+    > You can specify this criterion only when **Account type** is set to either **Customer** or **Vendor**.
 
 -   **Account/Group number**
 
-> [!NOTE]
-> You can specify this criterion only when **Account code** is set to either **Group** or **Table**.
+    > [!NOTE]
+    > You can specify this criterion only when **Account code** is set to either **Group** or **Table**.
 
 -   **Sales tax group**
 
@@ -526,7 +543,7 @@ When **Sales tax group** and **Item sales tax group** columns are used in the se
 
 The search by **Sales tax group** and **Item sales tax group** can be divided into four substages. All four substages are implemented for each of the three stages that were mentioned earlier, until a suitable record is found.
 
-1.  Search for a record where both the **Sales tax group** and **Item sales tax group** fields have a value and they match the values that were passed as parameters.
+1.  Search for a record where both the **Sales tax group** and **Item sales tax group** fields have a value, and they match the values that were passed as parameters.
 2.  If no record is found in substage 1, search for a record where the value of the **Sales tax group** matches the sales tax group that was passed as a parameter, but the **Item sales tax group** field is blank. (A blank field represents "any.")
 3.  If no record is found in substage 2, search for a record where the **Sales tax group** field is blank, but the value of the **Item sales tax group** field matches the item sales tax group that was passed as a parameter.
 4.  If no record is found in substage 3, search for a record where both the **Sales tax group** field and the **Item sales tax group** fields are blank.
@@ -542,8 +559,8 @@ To work with the Electronic messages functionality, you must define related numb
 1.  Go to **Tax** \> **Setup** \> **General ledger parameters**.
 2.  On the **Number sequences** tab, set up two number sequences:
 
--   Message
--   Message item
+    -   Message
+    -   Message item
 
 ## Set up security roles for electronic message processing
 
@@ -598,6 +615,20 @@ To verify that you correctly set up the parameters for the **SIIGenerateItems** 
 1.  Go to **Tax \> Setup \> Electronic messages \> Executable class settings**.
 2.  Select the **SIIGenerateItems** executable class that is associated with the **EMCreateItemsController** executable class name.
 3.  On the Action Pane, select **Parameters**, and then set up the **TipoOperacion** value for the **Intra-community operation ID** additional field.
+
+## <a name="multiple-vat"></a>Reporting to SII system of Spain for multiple VAT registrations
+
+Starting in Finance version 10.0.22, if you are using the [Tax service](global-tax-calcuation-service-overview.md) and have enabled the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature in the **Feature management** workspace, you can report the following reports to the SII system of Spain:
+
+- 'Libro de registro de facturas Expedidas': **Record book of issued invoices**
+- 'Libro de registro de facturas Recibidas': **Record book of received invoices**
+
+After the **Support multiple VAT registration numbers** feature is enabled, provide the following setup so that you can report to the SII system from a legal entity with a primary address outside of Spain.
+
+1. In the **Feature management** workspace, enable the **Sales tax declaration for multiple VAT registrations** feature.
+2. On the **Tax calculation parameters** page, on the **Multiple VAT registrations** tab, select the **VAT delcarion** check box.
+3. Define the VAT registration number of the company from the name that you will be reporting to SII system of Spain in the **Company Tax Id** field in the [**SIIGenerateItems executable class**](#siigenerateitems) parameters.
+4. Specify the **Transfer order history** data source on **Records to include** FastTab of the [**SIIGenerateItems executable class**](#siigenerateitems) parameters.
 
 ## Use EM functionality to report to the SII system
 
@@ -660,7 +691,7 @@ To run SII processing in batch mode for automated processing of interoperation w
 2.  On the Action Pane, select **Run processing**.
 3.  In the dialog box, in the **Processing** field, select **SII**.
 4.  If you want to run all the possible actions for **SII** processing, clear the **Choose action** check box. If you want to run only a specific action, select the **Choose action** check box, and then, in the **Action** field, select the action to run.
-5.  Define the parameters of the batch processing on the **Run in the background** FastTab in the the **Run processing** dialog box. For more information about batch processing, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
+5.  Define the parameters of the batch processing on the **Run in the background** FastTab in the **Run processing** dialog box. For more information about batch processing, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### Exclude an invoice from reporting to the SII system
 

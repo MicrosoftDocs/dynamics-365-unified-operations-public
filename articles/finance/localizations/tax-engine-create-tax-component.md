@@ -3,8 +3,8 @@
 
 title: Create tax components
 description: This topic explains how to create tax components manually and by using predefined rules.
-author: yijialuan
-ms.date: 08/13/2019
+author: EricWangChen
+ms.date: 09/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: Kristin Fender 
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 07/30/2019
 ms.dyn365.ops.version: 7.3
 

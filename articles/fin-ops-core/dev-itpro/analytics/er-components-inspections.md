@@ -4,7 +4,7 @@
 title: Inspect the configured ER component to prevent runtime issues
 description: This topic explains how to inspect the configured Electronic reporting (ER) components to prevent runtime issues that might occur.
 author: NickSelin
-ms.date: 03/04/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -234,6 +234,12 @@ The following table provides an overview of the inspections that ER provides. Fo
 <p>Headers/footers (&lt;component type: Header or Footer&gt;) are inconsistent</p>
 <p><b>Runtime:</b> The last configured component is used at runtime if the draft version of the configured ER format is executed.</p>
 </td>
+</tr>
+<tr>
+<td><a href='#i17'>Inconsistent setting of Page component</a></td>
+<td>Data integrity</td>
+<td>Error</td>
+<td>There are more than two range components without replication. Please, remove unnecessary components.</td>
 </tr>
 </tbody>
 </table>
@@ -871,6 +877,26 @@ Modify the configured format by deleting one of the inconsistent **Excel\\Header
 #### Option 2
 
 Modify the value of the **Header/footer appearance** property for one of the inconsistent **Excel\\Header** or **Excel\\Footer** components.
+
+## <a id="i17"></a>Inconsistent setting of Page component
+
+When you [configure](er-fillable-excel.md) an ER format component to use an Excel template to generate an outbound document, you can add the **Excel\\Page** component to paginate a generated document by using ER formulas. For every **Excel\\Page** component that you add, you can add many nested [Range](er-fillable-excel.md#range-component) components and still remain compliant with the following [structure](er-fillable-excel.md#page-component-structure):
+
+- The first nested **Range** component can be configured so that the **Replication direction** property is set to **No replication**. This range is used to make page headers in generated documents.
+- You can add many other nested **Range** components where the **Replication direction** property is set to **Vertical**. These ranges are used to fill in generated documents.
+- The last nested **Range** component can be configured so that the **Replication direction** property is set to **No replication**. This range is used to make page footers in generated documents and to add the required page breaks.
+
+If you don't follow this structure for an ER format in the ER format designer at design time, a validation error occurs, and you receive the following error message: "There are more than two range components without replication. Please, remove unnecessary components."
+
+### Automatic resolution
+
+No option to automatically fix this issue is available.
+
+### Manual resolution
+
+#### Option 1
+
+Modify the configured format by changing the **Replication direction** property for all inconsistent **Excel\\Range** components.
 
 ## Additional resources
 

@@ -3,7 +3,7 @@
 
 title: Delivery alternatives
 description: Sales order takers can use the Delivery alternatives page to discover alternative order fulfillment options.
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 271623
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 

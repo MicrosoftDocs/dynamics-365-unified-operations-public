@@ -3,7 +3,7 @@
 
 title: Reason codes for service orders   
 description: Use reason codes to help explain the status of a service order when the stage of a service order is updated. 
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
