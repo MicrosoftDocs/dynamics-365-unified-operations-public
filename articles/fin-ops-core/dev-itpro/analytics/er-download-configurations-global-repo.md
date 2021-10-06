@@ -68,7 +68,7 @@ This topic explains how to download [Electronic reporting (ER) configurations](g
     > [!NOTE]
     > The **Import** button is unavailable for ER configuration versions that are already present in the current Finance instance.
 
-    ![Configuration repository page.](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Configuration repository page, Configurations FastTab.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## Import filtered configurations
 
@@ -82,7 +82,7 @@ This topic explains how to download [Electronic reporting (ER) configurations](g
 4. On the **Configurations** FastTab, select **Import** to download the filtered configurations from the Global repository to the current instance.
 5. On the **Configurations** FastTab, select **Reset filter** to clean up the specified selection conditions.
 
-    ![Configuration repository page.](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Configuration repository page, Versions FastTab, Import button.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Depending on the ER settings, configurations are validated after they are imported. You might be notified about any inconsistency issues that are discovered. Before you can use the imported configuration version, you must resolve the issues. For more information, see the list of related resources for this topic.
