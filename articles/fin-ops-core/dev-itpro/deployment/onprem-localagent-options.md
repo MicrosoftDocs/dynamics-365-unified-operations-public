@@ -65,9 +65,9 @@ As part of establishing a trusted connection between a client and a server, one 
 
 This requires that a client (i.e. the FinancialReporting service) reach out to retrieve the certificate revocation list. If the certificate has been issued by a public certificate authority, then the client would need access to the internet in order to verify that the certificate has not been revoked.
 
-Some onpremises environments are not allowed to reach out into the internet. As such, they may not be able to carry out this check. It is possible to disable this check by updating **skipCRLCheck** from **false** to **true**.
+Some on-premises environments are not allowed to reach out to the internet. As such, they may not be able to carry out this check. It is possible to disable this check by updating **skipCRLCheck** from **false** to **true**.
 
-Support for this option was introduced in release 10.0.21 through a quality update. Additionally, at least local agent 2.7.1 is required to use this option.
+Support for this option was introduced in version 10.0.21 through a quality update. Additionally, at least local agent 2.7.1 is required to use this option.
 
 > [!CAUTION]
 > By disabling the certificate revocation list of a certificate, the security check will not be performed. You bear the risk of disabling it. You should only enable this deployment option if you are fully aware of the security implications of disabling this check.
