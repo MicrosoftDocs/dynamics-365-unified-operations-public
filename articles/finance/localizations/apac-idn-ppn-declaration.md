@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: PPN declaration for Indonesia (ID-00004)
+title: VAT declaration for Indonesia (ID-00004)
 description: This topic explains how to configure and generate the SPT Masa PPN 1111( Pajak Pertambahan Nilai) form for Indonesia
 author: sndray
 ms.date: 09/30/2021
@@ -25,7 +25,7 @@ ms.dyn365.ops.version: 10.0.20
 
 ---
 
-# PPN declaration for Indonesia (ID-00004)
+# VAT declaration for Indonesia (ID-00004)
 
 This topic explains how to set up and generate the VAT return form for legal entities in Indonesia.
 The VAT return form is commonly referred as **SPT Masa PPN 1111( Pajak Pertambahan Nilai)** and it should be issued by the corporate taxpayers to report the calculation of the amount of tax both to report Value add tax (PPN) and Luxury Goods Sales Tax (PPnBM) owed. The function of the SPT Masa PPN 1111 form is in addition to reporting payment or payment of taxes, but can also be used to report property and liabilities and tax deposits from cutters or collectors.
