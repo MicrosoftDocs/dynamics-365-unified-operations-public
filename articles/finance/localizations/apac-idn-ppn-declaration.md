@@ -186,7 +186,7 @@ Follow these steps to generate the tax declaration report.
 
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period** or **Settle and post sales tax**.
 2. Select the settlement period.
-3. Select the "from" date.
+3. Select the "From" date.
 4. Select the sales tax payment version.
 5. Select **OK**. 
 6. In the next dialog box, complete the following information:
