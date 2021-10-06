@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to documentation resources for Egypt.
+This topic includes information and links to documentation resources for Indonesia.
 
 - [VAT declaration for Indonesia](apac-idn-ppn-declaration.md)
 - [Withholding tax declarations for Indonesia](apac-idn-wht-declaration.md)
