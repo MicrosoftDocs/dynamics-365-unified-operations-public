@@ -98,7 +98,7 @@ Customers generally expect an e-commerce site to be inventory-aware throughout t
 	
 To enable such experiences, the following prerequisite settings must be configured in Commerce headquarters.
 
-### Enable the "Enhanced e-Commerce product discovery to be inventory-aware" feature
+### Enable the Enhanced e-Commerce product discovery to be inventory-aware feature
 
 > [!NOTE]
 > The **Enhanced e-Commerce product discovery to be inventory-aware** feature is available as of the Commerce version 10.0.20 release.
@@ -108,7 +108,7 @@ To enable the **Enhanced e-Commerce product discovery to be inventory-aware** in
 1. Go to **Workspaces \> Feature management**.
 1. Search for the **Enhanced e-Commerce product discovery to be inventory-aware** feature, and then enable the feature.
 
-### Configure the "Populate product attributes with inventory level" job
+### Configure the Populate product attributes with inventory level job
 
 The **Populate product attributes with inventory level** job creates a new product attribute to capture inventory availability and populates that product attribute with the latest inventory level value for each master product. Since the inventory availability of a product or assortment being sold constantly changes, it's strongly recommended to schedule the job as a batch process.
 
