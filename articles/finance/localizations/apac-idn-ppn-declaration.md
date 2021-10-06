@@ -39,7 +39,7 @@ The  **SPT Masa PPN 1111( Pajak Pertambahan Nilai)** form in Dynamics 365 Financ
 - B2 (Input Tax recoverable for Domestic)
 - B3 (Input Tax non recoverable) 
 	
-  ## Prerequisites
+## Prerequisites
 
 - The primary address of the legal entity must be in Oman.
 
@@ -83,7 +83,7 @@ In Finance and depending on the tax configuration you can have a specific sales 
 1. In the Electronic reporting workspace, select **Configurations** > **Setup** to set up the rules to identify the tax transaction into the related box of the SPT Masa PPN 1111 form.
 2. Select the current version. On the **Lookups** FastTab, select the lookup name **ReportFieldLookup**. This lookup identifies the list of boxes (lines) in the SPT Masa PPN 1111 required by the tax authority. 
 3. On the **Conditions** FastTab, select **Add**, and in the new line in the **Lookup result** column, select the related line of SPT Masa PPN 1111 form.
-4. In the **Sales tax group** column, select the sales tax group that is used to calculate the related line of SPT Masa PPN 1111 form. Example: PPN_EXP
+4. In the **Sales tax group** column, select the sales tax group that is used to calculate the related line of SPT Masa PPN 1111 form. Example: PPN_EXP.
 5. In the **Item sales tax group** column, select **Not blank** because the box 1a is going to be identified by Sales tax group only.
 6. In the **Tax code** column, select **Not blank** because the box 1a is going to be identified by Sales tax group only.
 7. In the **Transaction classifier** column, select the tax transaction classification where the sales tax group code is used.
@@ -95,14 +95,14 @@ In Finance and depending on the tax configuration you can have a specific sales 
    - In the **Tax code** column, select **Not blank**.
    - In the **Transaction classifier** column, select **Not blank**.
 
-By adding this last record (NA), you define the following rule: When the tax code and name that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in the VAT return form. Although this rule is not used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration. 
+By adding this last record **(NA)**, you define the following rule: When the tax code and name that is passed as an argument doesn't satisfy any of the previous rules, the transactions will not be included in the VAT return form. Although this rule is not used when generating the report, the rule does help to avoid errors in report generation when there is a missing rule configuration. 
 
-In addition to this configuration, complete the steps below to classify the type of tax required by tax authority. You must be able to indicate if the tax is PPN or PPNnBM (luxury tax)
+In addition to this configuration, complete the steps below to classify the type of tax required by tax authority. You must be able to indicate if the tax is PPN or PPNnBM (luxury tax).
 
 1. In the Electronic reporting workspace, select **Configurations** > **Setup** to set up the rules to identify the tax transaction into the related box of the SPT Masa PPN 1111 form.
 2. Select the current version. On the **Lookups** FastTab, select the lookup name **TaxTypeLookup**. This lookup identifies the type of tax in the SPT Masa PPN 1111 required by the tax authority. 
-3. On the **Conditions** FastTab, select **Add**, and in the new line in the **Lookup result** column, select the type of tax. Example: PPN
-4.In the **Tax code** column, select the sales tax code that represent the tax type selected in the first column.  Example: PPN10%
+3. On the **Conditions** FastTab, select **Add**, and in the new line in the **Lookup result** column, select the type of tax. Example: PPN.
+4.In the **Tax code** column, select the sales tax code that represent the tax type selected in the first column.  Example: PPN10%.
 5.Repeat steps 3-4 for all sales tax code configured in your legal entity.
 6.Select **Add** again, and then follow these steps to include the final record line:
    - In the **Lookup result** column, select **NA - Not applicable**.
@@ -131,7 +131,6 @@ The following table represents an example of how the user needs to configure the
 | BoxAdj        | Adjustments                                                    | 15   | *Blank*          | *Blank*              | PPN_ADJ     | Purchase               |
 | BoxAdj        | Adjustments                                                    | 16   | *Blank*          | *Blank*              | PPN_ADJ     | PurchaseCreditNote     |
 | NA            | Not applicable                                                 | 17   | *Not blank*      | *Not blank*          | *Not blank* | *Not blank*            |
-
 
 To help prevent issues when the report is generated, create all mappings where the sales tax codes and sales tax group are posted. For example, if **SalesCreditNote** is omitted on the line for **BoxA2** in this configuration, and tax transactions are posted by using the **PPN_DOM** sales tax group, you will encounter issues when the report is generated. We recommend that you select **Tax** \> **Inquire** \> **Posted sales tax** to review all posted sales tax transactions and transactions that aren't included in this mapping of the configuration.
 
@@ -190,12 +189,14 @@ Follow these steps to generate the tax declaration report.
 3. Select the "from" date.
 4. Select the sales tax payment version.
 5. Select **OK**. 
-6. In the next dialog box, enter the business activity code.
-7. 
-8. Enter the amount of the credit from the previous period, if applicable, or leave the amount as **0** (zero).
-9. 
-
-8. Select **OK** to confirm the generation of reports.
+6. In the next dialog box, complete the following information:
+	- The business activity code.
+	- The amount of Compensation for excess VAT due to the correction of the Tax Period VAT SPT if applicable.
+	- The amount of Previous Tax Period VAT excess compensation if applicable.
+	- The Date of compensation for excess VAT if applicable.
+	- The amount of VAT paid in advance in the same tax period.
+	- The number of version. Valid number from 0 to 7. 
+7. Select **OK** to confirm the generation of reports.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
