@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Currency capabilities in financial reporting
-description: Financial reporting includes features that support complex currency reporting requirements.
+title: Currency capabilities in Financial reporting
+description: This topic describes the Financial reporting enhancement that supports complex currency reporting requirements.
 author: jiwo
 ms.date: 09/20/2021
 ms.topic: article
@@ -26,29 +26,28 @@ ms.dyn365.ops.version: Version 10.0.8
 
 ---
 
-# Currency capabilities in financial reporting
+# Currency capabilities in Financial reporting
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the use of the Retained earnings calculation enhancement for Financial reporting. This enhancement has implications for organizations that use currency translation.
+This topic describes how the **Retained earnings calculation** enhancement for Financial reporting is used. This enhancement has implications for organizations that use currency translation.
 
-> [!NOTE] To turn this feature on or off, please log a support ticket. 
-> 
-> When you enable this feature, any retained earnings account that has the Currency translation type set to Transaction date will calculate the accounting currency balance of the account using change in the current year and the exchange rate at the end of the year. The total retained earning balance at the end of any year will be a total of each calculated year. 
+> [!NOTE] To turn the enhancement on or off, log a support ticket.
+>
+> When you turn on the enhancement, any retained earnings account where the currency translation type is set to **Transaction date** will calculate the accounting currency balance by using the change in the current year and the exchange rate at the end of the year. The total retained earning balance at the end of any year will be a sum of each calculated year.
 
-|     Retained   earnings                                                                             	|     Currency    	|     2018      	|     2019      	|     2020      	|     2021      	|
-|:----------------------------------------------------------------------------------------------------	|:----------------:	|---------------:	|---------------:	|---------------:	|---------------:	|
-|     Balance at   12/31/XXXX without enhancement turned on (a)                                       	|     USD         	|     100.00    	|     150.00    	|     225.00    	|     250.00    	|
-|     Balance at   12/31/XXXX with enhancement turned on and currency translation used (b)            	|     USD         	|     100.00    	|     50.00     	|     75.00     	|     25.00     	|
-|     Exchange rate   on 12/31/XXXX (c)                                                               	|                 	|     1.10      	|     1.15      	|     1.20      	|     1.25      	|
-|     Exchange rate   on 12/31/XXXX translated (d) Calculation is (b*c)                               	|     EUR         	|     110.00    	|     57.50     	|     90.00     	|     31.25     	|
-|     Retained   earnings as of 12/31/2021 with the feature turned on (a)                             	|     USD         	|     100.00    	|     150.00    	|     225.00    	|     250.00    	|
-|     Exchange rate   on 12/31/XXXX in the Reporting currency, without the feature turned on (a*c)    	|     EUR         	|     110.00    	|     172.50    	|     270.00    	|     312.50    	|
-|     Exchange rate   on 12/31/XXXX in the Reporting currency, with the feature turned on sum (d)     	|     EUR         	|     110.00    	|     167.50    	|     257.50    	|     288.75    	|
+| Retained earnings                                                                                | Currency | 2018   | 2019   | 2020   | 2021   |
+|--------------------------------------------------------------------------------------------------|----------|--------|--------|--------|--------|
+| Balance on 12/31/XXXX when the enhancement is turned off (a).                                    | USD      | 100.00 | 150.00 | 225.00 | 250.00 |
+| Balance on 12/31/XXXX when the enhancement is turned on and currency translation is used (b).    | USD      | 100.00 | 50.00  | 75.00  | 25.00  |
+| Exchange rate on 12/31/XXXX (c).                                                                 |          | 1.10   | 1.15   | 1.20   | 1.25   |
+| Translated exchange rate on 12/31/XXXX (d). The calculation is b × c.                           | EUR      | 110.00 | 57.50  | 90.00  | 31.25  |
+| Retained earnings as of 12/31/2021 when the enhancement is turned on (a).                            | USD      | 100.00 | 150.00 | 225.00 | 250.00 |
+| Exchange rate in the reporting currency on 12/31/XXXX when the enhancement is turned off (a × c).    | EUR      | 110.00 | 172.50 | 270.00 | 312.50 |
+| Summed exchange rate in the reporting currency on 12/31/XXXX when the enhancement is turned on (d). | EUR      | 110.00 | 167.50 | 257.50 | 288.75 |
 
-### What happens when you turn on this feature?
-Assume that you're closing the year on December 31st. When the Retained earnings calculation enhancement is turned on, the change in the current year will be calculated using the currency rate as of that date. In this scenario without the feature turned on, the Retained earnings as of December 31 will be 250.00. The amount in Reporting currency is $312.50, which is the $250.00 multiplied by 1.25 which was the exchange rate as of December 31, 2021. 
+### What happens when you turn on this enhancement?
 
-When the feature is turned on, the Retained earnings as of December 31, 2021 in Reporting currency is $288.75. This number is made up of the calculated balances as shown by (d). 
+For this example, you're closing the year on December 31. If the **Retained earnings calculation** enhancement is turned on, the change in the current year will be calculated by using the currency rate as of that date. If the enhancement is turned off, the retained earnings as of December 31 will be 250.00. The amount in the reporting currency will be $312.50. This amount equals the $250.00 multiplied by 1.25, which was the exchange rate as of December 31, 2021.
 
-   
+If the enhancement is turned on, the retained earnings in the reporting currency as of December 31, 2021, will be $288.75. This number is made up of the calculated balances, as shown by (d).
