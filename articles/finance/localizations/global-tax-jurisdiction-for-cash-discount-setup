@@ -30,20 +30,15 @@ ms.dyn365.ops.version: AX 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-
-
 [!include [banner](../includes/preview-banner.md)]
 
 This topic provides information about setup of cash discount calculation options.
 When a single legal entity has several VAT registrations in different countries/regions, the requirements how to calculate cash discounts and sales tax may vary in these countries/regions. If different cash discounts calculation options are required for different VAT registrations, you can set up these options in the Tax calculation feature setup on the Tax jurisdictions parameters and Tax jurisdictions applicability tabs.
 
-
 ## Tax jurisdictions parameters setup
 Finance supports the following generic combinations of cash discount calculation:
 
-PICT-1
-
-TABLE-1
+![Cash discount options](media/TaxJurisdictionCashDisc_01.png)
 
 | Parameter/Option| Option1 | Option2 |
 |-----------------------------------------------|-----|-----|
@@ -60,19 +55,18 @@ Currently, the Tax calculation setup in RCS doesn’t support the cross-measure 
 
 To set up cash discounts calculation option in the Tax calculation feature setup, create a Tax jurisdiction code in the Tax jurisdiction parameters tab.
 
-PICT-2
+![Tax jurisdiction parameters](media/TaxJurisdictionCashDisc_02.png)
 
 The Default parameters on the General FastTab will be used when no matching rule in the Tax jurisdiction applicability is found.
 On the Tax jurisdiction applicability tab create rules when one or another cash discount calculation option should be applied. You can pick the Header-level fields for the determination.
 
-PICT-3
+![Tax jurisdiction applicability](media/TaxJurisdictionCashDisc_03.png)
 
 ### Example of cash discount parameters setup
 As an example, for tax jurisdiction code determination, either Ship To/Ship From Country/Region or Invoice To country/Region can be used.
 When a Sales order is created for the customer in DEU, the Option1 will be determined, and for the customer in BEL – Option2.
 Results of the cash discount and sales tax calculation for the Sales order for the Net amount 1000 with a 4% cash discount:
 
-TABLE-2
 | Sales order / Tax jurisdiction code| Option1| Option2|
 |-----------------------------------------------|-----|-----|
 | Net amount | 1 000 | 1 000 |
