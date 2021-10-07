@@ -1,0 +1,84 @@
+---
+# required metadata
+
+title: Using Tax jurisdiction parameters for Cash discount calculation setup
+description: This topic provides information about setup of cash discount calculation options.
+author: epodkolz
+ms.date: 09/21/2021
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region:
+# ms.search.industry: 
+ms.author: epodkolz
+ms.search.validFrom:
+ms.dyn365.ops.version: AX 10.0.23
+---
+
+# Using Tax jurisdiction parameters for Cash discount calculation setup
+
+[!include [banner](../includes/banner.md)]
+
+
+
+[!include [banner](../includes/preview-banner.md)]
+
+This topic provides information about setup of cash discount calculation options.
+When a single legal entity has several VAT registrations in different countries/regions, the requirements how to calculate cash discounts and sales tax may vary in these countries/regions. If different cash discounts calculation options are required for different VAT registrations, you can set up these options in the Tax calculation feature setup on the Tax jurisdictions parameters and Tax jurisdictions applicability tabs.
+
+
+## Tax jurisdictions parameters setup
+Finance supports the following generic combinations of cash discount calculation:
+
+PICT-1
+
+TABLE-1
+
+| Parameter/Option| Option1 | Option2 |
+|-----------------------------------------------|-----|-----|
+| Reverse sales tax on cash discount | Yes | No |
+| Deduct cash discount before sales tax calculation | No | Yes |
+| Cash discount is calculated on amount including sales tax (Parameter is available for Customer and Vendor side) | Yes | No |
+
+
+> [!NOTE]
+> The parameters ‘Deduct Cash Discount Before Tax Calculation’ and ‘Calculate Cash Discount On Amount Including Tax’ are mutually exclusive.
+Currently, the Tax calculation setup in RCS doesn’t support the cross-measure validation, the validation will be run in Finance during retrieving the parameters from the Tax calculation service.
+> 
+> For a Tax jurisdiction code, do not mark both ‘Deduct Cash Discount Before Tax Calculation’ and ‘Calculate Cash Discount On Amount Including Tax’ parameters as Yes in the Tax calculation feature setup.
+
+To set up cash discounts calculation option in the Tax calculation feature setup, create a Tax jurisdiction code in the Tax jurisdiction parameters tab.
+
+PICT-2
+
+The Default parameters on the General FastTab will be used when no matching rule in the Tax jurisdiction applicability is found.
+On the Tax jurisdiction applicability tab create rules when one or another cash discount calculation option should be applied. You can pick the Header-level fields for the determination.
+
+PICT-3
+
+### Example of cash discount parameters setup
+As an example, for tax jurisdiction code determination, either Ship To/Ship From Country/Region or Invoice To country/Region can be used.
+When a Sales order is created for the customer in DEU, the Option1 will be determined, and for the customer in BEL – Option2.
+Results of the cash discount and sales tax calculation for the Sales order for the Net amount 1000 with a 4% cash discount:
+
+TABLE-2
+| Sales order / Tax jurisdiction code| Option1| Option2|
+|-----------------------------------------------|-----|-----|
+| Net amount | 1 000 | 1 000 |
+| Invoice Amount | 1 190 | 1201.60 |
+| Sales tax amount | 190 (1000*19%) | 201.60 ((1000-40)*21%) |
+| Cash discount amount | 47.60 (1190*4%) | 40 (1000*4%) |
+
+
+(*) For the calculation purposes the tax rates used for Option1 is 19% and Option2 is 21%.
