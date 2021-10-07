@@ -49,6 +49,6 @@ This topic describes how the **Retained earnings calculation** enhancement for F
 
 ### What happens when you turn on this enhancement?
 
-For this example, you're closing the year on December 31. If the **Retained earnings calculation** enhancement is turned on, the change in the current year will be calculated by using the currency rate as of that date. If the enhancement is turned off, the retained earnings as of December 31 will be 250.00. The amount in the reporting currency will be $312.50. This amount equals the $250.00 multiplied by 1.25, which was the exchange rate as of December 31, 2021.
+For this example, you're closing the year on December 31. If the **Retained earnings calculation** enhancement is turned on, the change in the current year will be calculated by using the currency rate as of that date. If the enhancement is turned off, the retained earnings as of December 31 will be USD250.00. The amount in the reporting currency will be EUR312.50. This amount equals the USD250.00 multiplied by 1.25, which was the exchange rate as of December 31, 2021.
 
-If the enhancement is turned on, the retained earnings in the reporting currency as of December 31, 2021, will be $288.75. This number is made up of the calculated balances, as shown by (d).
+If the enhancement is turned on, the retained earnings in the reporting currency as of December 31, 2021, will be EUR288.75. This number is made up of the calculated balances, as shown by (d).
