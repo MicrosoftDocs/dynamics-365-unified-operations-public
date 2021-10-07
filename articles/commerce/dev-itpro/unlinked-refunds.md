@@ -4,7 +4,7 @@
 title: Process unlinked refunds with the Dynamics 365 Commerce Adyen Connector
 description: This topic describes how unlinked refunds work when the Microsoft Dynamics 365 Payment Connector for Adyen is used.
 author: BrianShook
-ms.date: 09/30/2021
+ms.date: 10/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
