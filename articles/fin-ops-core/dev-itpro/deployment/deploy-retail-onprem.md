@@ -30,6 +30,9 @@ ms.dyn365.ops.version: 8.1.1
 
 This topic covers the installation steps for Commerce channel components in an on-premises environment.
 
+> [!IMPORTANT]
+    > Take note that there is a known issue at this time and Self-service packages will not correctly apply to on-premises environments. It is currently recommended to pull the installers directly from LCS and use them as needed. This would mean Headquarters would no longer be used to download the installers (Only the configuration files, as needed).
+
 ## Overview
 
 Channel functionality, in an on-premises environment, is enabled exclusively via use of Commerce Scale Unit (self-hosted). For an overview, see [Commerce Scale Unit (self-hosted)](../../../commerce/dev-itpro/retail-store-system-begin.md). 
@@ -53,7 +56,8 @@ Before you can start installation of channel components, you must first complete
     .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/' -SendProductSupportTelemetryToMicrosoft
     ```
     > [!IMPORTANT]
-    > The above steps apply to version 10.0 and later.  For the original 8.1.3 release of Retail on-premises functionality, the original version of the script delimiters must be used.
+    > Take note that there is a known issue at this time and Self-service packages will not correctly apply to on-premises environments. It is currently recommended to pull the installers directly from LCS and use them as needed. This would mean Headquarters would no longer be used to download the installers (Only the configuration files, as needed).
+    > The above steps apply to version 10.0 and later.
     >
     > ```powershell
     > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>' -SendProductSupportTelemetryToMicrosoft
@@ -117,6 +121,7 @@ Before you can start installation of channel components, you must first complete
 26.  On the **General** tab, select the **Initialize** link to configure seed data for Commerce functionality.
 
      > [!NOTE]
+     > Read the important message at the beginning of this article regarding a known issue with installers no longer functioning through Headquarters for download.
      > The installers will not download from their relevant pages the first time a download is attempted.  This is because the installers have only just been placed into the download location and the associated database values do not yet exist.  In Headquarters, when the **Download** functionality is attempted (for example, Commerce Scale Unit or Modern POS), an error will display and then an automated upload functionality will be initiated to allow the installers to be downloaded the second time that the download is attempted. (Wait one minute before attempting to download the installer again).
      >
      > The Peripheral Simulator (downloaded on the Hardware profile page in headquarters) will not be available until at least one Hardware profile has been created and is functional. After that point has been achieved, the following script can be run.
