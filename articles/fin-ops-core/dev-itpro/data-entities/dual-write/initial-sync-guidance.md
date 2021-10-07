@@ -74,7 +74,7 @@ If you're running the initial synchronization from the Finance and Operations ap
 
 This type of synchronization is supported in Platform update 37 (PU37) and later. Therefore, you should update your Finance and Operations app to PU37 or later.
 
-### Security Role for write access
+### Security role for write access
 
 Every user in a customer engagement organization with dual-write must be added to the **Dual-Write Runtime User** role. Without this role, users will be unable to create any rows in tables in the customer engagement organization.
 
