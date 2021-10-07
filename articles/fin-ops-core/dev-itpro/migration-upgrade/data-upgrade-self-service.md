@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This topic explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: rashmansur
-ms.date: 09/27/2021
+ms.date: 10/07/2021
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -196,6 +196,9 @@ After the validation is successful, the application presents a set of menu optio
 
 8. **Cutover: Remove non-primary key publication and temporary tables**
 
+    > ![Warning]
+    > This step only applies to customers XXXX.
+
     This step performs the following actions:
 
     1. Clean up the temporary tables that were created for non-primary key tables in the source database.
@@ -207,6 +210,10 @@ After the validation is successful, the application presents a set of menu optio
     > To learn more about the **'dv'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this topic.
 
 9. **Cutover: Create constraint for non-primary key tables**
+
+    > ![Warning]
+    > This step only applies to customers XXXX.
+
 
     This step extracts constraints for the non-primary key tables from the source database and creates them in the target database.
  
