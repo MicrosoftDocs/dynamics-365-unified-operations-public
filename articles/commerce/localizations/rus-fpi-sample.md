@@ -154,9 +154,9 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 1. Open the **RetailSDK\\src\\nuget.config** file.
 1. Add the following line to the bottom of the **packageSources** section.
 
-        ``` xml
-        <add key="dynamics365-commerce" value="https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json" />
-        ```
+``` xml
+<add key="dynamics365-commerce" value="https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json" />
+```        
 
 #### Copy sample files to Retail SDK
 
