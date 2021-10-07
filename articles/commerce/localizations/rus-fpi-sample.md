@@ -149,6 +149,15 @@ The fiscal printer integration sample for Russia is part of the Retail SDK. The 
 > [!WARNING]
 > Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). The following sections describe how to use the previous version of the Retail SDK to enable the sample.
 
+#### Adjust package sources in nuget.config
+
+1. Open the **RetailSDK\\src\\nuget.config** file.
+1. Add the following line to the bottom of the **packageSources** section.
+
+        ``` xml
+        <add key="dynamics365-commerce" value="https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/nuget/v3/index.json" />
+        ```
+
 #### Copy sample files to Retail SDK
 
 1. For the auxiliary files:
