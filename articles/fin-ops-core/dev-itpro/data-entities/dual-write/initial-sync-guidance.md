@@ -76,7 +76,7 @@ This type of synchronization is supported in Platform update 37 (PU37) and later
 
 ### Security Role for write access
 
-Every user in a Dynamics 365 CE Dual Write organization must be added to the **Dual-Write Runtime User** role. Without this role, the users will be unable to create any rows within the Dynamics CE organization.
+Every user in a customer engagement organization with dual-write must be added to the **Dual-Write Runtime User** role. Without this role, users will be unable to create any rows in tables in the customer engagement organization.
 
 ### Company and Currency Exchange Tables Required Security Role
 
