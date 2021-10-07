@@ -32,7 +32,8 @@ ms.dyn365.ops.version: Version 10.0.8
 
 This topic describes how the **Retained earnings calculation** enhancement for Financial reporting is used. This enhancement has implications for organizations that use currency translation.
 
-> [!NOTE] To turn the enhancement on or off, log a support ticket.
+> [!NOTE]
+> To turn the enhancement on or off, log a support ticket.
 >
 > When you turn on the enhancement, any retained earnings account where the currency translation type is set to **Transaction date** will calculate the accounting currency balance by using the change in the current year and the exchange rate at the end of the year. The total retained earning balance at the end of any year will be a sum of each calculated year.
 
