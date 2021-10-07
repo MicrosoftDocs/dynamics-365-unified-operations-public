@@ -38,7 +38,7 @@ This topic describes how the **Retained earnings calculation** enhancement for F
 > When you turn on the enhancement, any retained earnings account where the currency translation type is set to **Transaction date** will calculate the accounting currency balance by using the change in the current year and the exchange rate at the end of the year. The total retained earning balance at the end of any year will be a sum of each calculated year.
 
 | Retained earnings                                                                                | Currency | 2018   | 2019   | 2020   | 2021   |
-|--------------------------------------------------------------------------------------------------|----------|--------|--------|--------|--------|
+|--------------------------------------------------------------------------------------------------|:----------:|--------:|--------:|--------:|--------:|
 | Balance on 12/31/XXXX when the enhancement is turned off (a).                                    | USD      | 100.00 | 150.00 | 225.00 | 250.00 |
 | Balance on 12/31/XXXX when the enhancement is turned on and currency translation is used (b).    | USD      | 100.00 | 50.00  | 75.00  | 25.00  |
 | Exchange rate on 12/31/XXXX (c).                                                                 |          | 1.10   | 1.15   | 1.20   | 1.25   |
