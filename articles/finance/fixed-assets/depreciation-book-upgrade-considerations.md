@@ -3,7 +3,7 @@
 
 title: Depreciation book upgrade overview
 description: In previous releases, there were two valuation concepts for fixed assets, value models, and depreciation books. 
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["221624", "intro-internal"]
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
