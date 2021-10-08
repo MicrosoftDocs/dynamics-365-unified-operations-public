@@ -197,7 +197,7 @@ After the validation is successful, the application presents a set of menu optio
 8. **Cutover: Remove non-primary key publication and temporary tables**
 
     > ![Warning]
-    > This step only applies to customers using **AX 2012 Database Upgrade Toolkit for Dynamics 365** app version lower then 9.
+    > This step only applies to customers using **AX 2012 Database Upgrade Toolkit for Dynamics 365** app version 8 or earlier.
 
     This step performs the following actions:
 
@@ -212,8 +212,7 @@ After the validation is successful, the application presents a set of menu optio
 9. **Cutover: Create constraint for non-primary key tables**
 
     > ![Warning]
-    > This step only applies to customers using **AX 2012 Database Upgrade Toolkit for Dynamics 365** app version lower then 9.
-
+    > This step only applies to customers using **AX 2012 Database Upgrade Toolkit for Dynamics 365** app version 8 or earlier.
 
     This step extracts constraints for the non-primary key tables from the source database and creates them in the target database.
  
