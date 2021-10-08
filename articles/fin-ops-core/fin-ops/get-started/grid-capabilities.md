@@ -36,6 +36,8 @@ The new grid control provides several useful and powerful capabilities that you 
 -  Evaluating math expressions 
 -  Grouping tabular data (enabled separately using the **Grouping in grids** feature)
 -  Freezing columns
+-  Autofit column width
+-  Stretchable columns
 
 ## Calculating totals
 In Finance and Operations apps, users have the ability to see totals at the bottom of numeric columns in grids. A footer section at the bottom of the grid shows these totals. 
@@ -129,6 +131,9 @@ To freeze a column, right-click in the column's header, and then select **Freeze
 To unfreeze a column, right-click in the frozen column's header, and then select **Unfreeze column**. 
 
 Note that the row selection and row status columns in the new grid are always frozen as the first two columns. Therefore, when these columns are included in a grid, they will always be visible to users, regardless of the horizontal scroll position in the grid. These two columns can't be reordered.
+
+## Autofit column width
+Similar to Excel, users can automatically force a column to resize based on the content currently shown in that column. You can do this by double clicking on the resize handler on the column, or by putting focus into the column header and pressing **A** (for autofit). This capability is available starting in 10.0.23 / Platform update 47.  
 
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
