@@ -31,225 +31,178 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you plan the chart of accounts when your organization includes legal entities that must meet requirements for specific localities that they do business in. For the purpose of this article, we will use the following terms.
+This topic provides information that will help you plan the chart of accounts when your organization includes legal entities that must meet requirements for specific localities where they do business. This topic uses the following terms to describe charts of accounts:
 
-- Global – refers to the chart of accounts that's used by the organization globally and in most cases is the one that you would consolidate to.
+- **Global** – The chart of accounts that the organization uses globally. In most cases, you will consolidate to this chart of accounts.
+- **Local** – A chart of accounts that legal entities in a specific country or region use.
+- **Shared** – A chart of accounts that more than one legal entity can use. Both the global chart of accounts and local charts of accounts can be shared.
 
-- Local – refers the chart of accounts used by legal entities in a specific country for the reasons listed below.
+You can create and share multiple charts of accounts. A shared chart of accounts can be used by more than one legal entity, but only one chart of accounts can be assigned to each legal entity. The chart of accounts that a legal entity uses is defined on the **Ledger** page.
 
-- Shared – refers the ability to use the same COA in more than one legal entity. Both the global and the local COA can be shared.
+When they design the chart of accounts, many organizations aim for a global chart of accounts. The shared chart of accounts capability allows for the creation of a global chart of accounts. There are benefits to creating and using a single chart of accounts. For example, governance and control, maintenance, and reporting are easier.
 
-You can create and share multiple chart of accounts. A shared chart of accounts means that the same chart of accounts can be used by more than one legal entity, but each legal entity can only be assigned one chart of accounts. The chart of accounts used by a legal entity is defined on the **Ledger** page. 
-
-When designing the chart of accounts, many organizations aim for a global one. The shared chart of accounts capability allows for creation of a global chart of accounts. There are benefits to creating and using a single one, which include making governance and control, maintenance, and reporting easier.
-
-While a global chart of accounts is preferred by most organizations and is the easiest to implement, some legal entities require a local chart of accounts. Some scenarios that require a local chart of accounts include the following:
+Most organizations prefer a global chart of accounts, and it's the easiest type to implement. Nevertheless, some legal entities require a local chart of accounts for the following reasons:
 
 - Local statutory requirements
-
-- Local accounting standards requirements
-
+- Requirements of local accounting standards
 - Industry requirements
-
 - Company-specific reporting and analysis requirements
 
-When your organization requires a legal entity to use a local chart of accounts, two options are available for implementing it.
+If your organization requires that a legal entity use a local chart of accounts, two options are available for implementing it:
 
-1. Assign the global chart of accounts and define other means for the local requirements.
+- Assign the global chart of accounts, and define other means of meeting the local requirements.
+- Assign a local chart of accounts to the legal entity, and define relations to the global chart of accounts.
 
-2. Assign the local chart of accounts to the legal entity and define relations to the global chart of accounts.
+The organization structure and the reporting structure determine the option that is used.
 
-Deciding which approach to use can be determined by the organization structure and the reporting structure.
+If the global chart of accounts is assigned to the legal entity, the following options are available for meeting local reporting requirements:
 
-If a global chart of accounts is assigned to the legal entity, the options to meet local reporting requirements are as follows:
+- Do local consolidation.
+- Use a financial dimension to track the local chart of accounts.
+- Create local main accounts in the global chart of accounts.
+- Do external mapping to the local chart of accounts.
 
-- Local consolidation
+If a local chart of accounts is assigned to the legal entity, only option is currently available for meeting global reporting requirements: you must do global consolidation.
 
-- Financial dimension to track local chart of accounts
+## Global chart of accounts assigned to a legal entity
 
-- Create local main accounts within the global chart of accounts
+If you must assign the global chart of accounts to a legal entity, four options are available for configuring the system, as described earlier. For all four options, a single chart of accounts is configured and linked to each legal entity on the **Ledger** page. Each option then uses a different approach to meet the localization requirements. The following sections outline the high-level steps to configure the system for the localization requirements. They also describe the advantages and disadvantages of each option.
 
-- External mapping to local chart of accounts
+### Do local consolidation
 
-If a local chart of accounts is assigned to the legal entity, only one option is available at this time for meeting global reporting requirements, which is Global consolidation.
+Local consolidation is the recommended approach for meeting local chart of account requirements and taking advantage of the system functionality that was designed for this purpose.
 
-## Global chart of accounts assigned to legal entity
+#### Set up consolidation for a local chart of accounts
 
-When you need to assign a global chart of accounts to a legal entity, there are four options available for configuring the system. In each of option, a single chart of accounts is configured and linked to each legal entity on the **Ledger** page. Each option then uses a different approach to meet the localization requirements. The following sections outline the high-level steps to configure the system for the localization requirements along with the advantages and disadvantages of each option.
+1. Create a single global chart of accounts that includes all the required main accounts.
+2. In each legal entity, assign the global chart of accounts on the **Ledger** page.
+3. Create a consolidation legal entity for each localization that is required.
+4. Follow one of these steps:
 
-## Local consolidation
+    - If only one localization is required, configure the consolidation account on the **Main account** page, or use the **Consolidation groups** and **Additional consolidation accounts** pages.
+    - If more than one localization is required, or if both the account number and the account name require translation, use the **Consolidation groups** and **Additional consolidation accounts** pages to represent the localization requirements.
 
-The local consolidation option is the recommended approach for meeting local chart of account requirements and leveraging the functionality in the system that was designed for this purpose.
+5. Run the consolidation process to transform the value from the source legal entity that uses the global chart of accounts to the consolidation company that uses the local chart of accounts.
 
-### Set up consolidation for a local chart of accounts 
+#### Advantages
 
-1. Create a single global chart of accounts with all the required main accounts.
+- This approach provides a consistent way of working across the organization.
+- One translation of the local position is done.
+- This approach supports translation of both the main account ID and the name of each main account.
+- It supports multiple localizations.
 
-2. Assign the global chart of accounts on the **Ledger** page in each legal entity.
+#### Disadvantages
 
-3. Create a consolidation legal entity for each localization required.
+- An additional consolidation company is created.
+- An additional consolidation process is completed.
+- This approach can report on the localized chart only after the consolidation process is completed.
 
-4. If only one localization is required, configure the **Consolidation account** on the **Main account** page or use **Consolidation groups** and **Additional consolidation accounts**.
+### Use a financial dimension to track the local chart of accounts
 
-5. If you need more than one localization, or if both the account number and account name require translation, use **Consolidation groups** and **Additional consolidation accounts** to represent the localization requirements.
+This approach uses a financial dimension where the financial dimension values represent the local main accounts that are required for the localization. It works well if only one localization is required. However, it becomes less usable as you add more localizations and financial dimensions.
 
-6. Run the consolidation process to transform the value from the source legal entity using the global chart of accounts to the consolidation company using the local chart of accounts.
+#### Set up a financial dimension for a local chart of accounts
 
-### Advantages
+1. Create a single global chart of accounts that includes all the required main accounts.
+2. In each legal entity, assign the global chart of accounts on the **Ledger** page.
+3. Create a financial dimension that represents the local chart of accounts.
+4. Create financial dimension values that represent the main accounts in the local chart of accounts.
+5. Update the account structure so that it includes the "local chart of accounts" financial dimension.
+6. Ensure that the "local chart of accounts" financial dimension always has a value, and that it doesn't allow a blank value. Consider using derived dimensions or fixed dimensions.
+7. Create a financial dimension set where the "local chart of accounts" financial dimension is the first selected financial dimension. The financial dimension set can be used when the trial balance is generated.
 
-- Consistent way of working across the organization
+#### Advantages
 
-- One translation of the local position
+- The main accounts of both global and local charts of accounts exist on the transaction level. The main account is global, and the financial dimension value is local.
+- This approach provides real-time reporting and views of both the global finance position and the local finance position.
 
-- Support translation of both the main account ID and the name of each main account
+#### Disadvantages
 
-- Supports multiple localizations
+- In General ledger parameters, if the **Values used for summary account** field is set to **Accounting distributions**, the financial dimensions that represent the main account for the expense/asset/revenue will be incorrectly used for the Accounts receivable and Accounts payable summary account. We recommended that you set the field to a source document instead to ensure that the correct financial dimension values are used.
+- If many local charts of accounts are required, and one financial dimension is used for all of them, the list of financial dimension values that are used can become long and difficult to work with.
+- If many local charts of accounts are required, and a separate financial dimension is used to represent each one, the usability and performance of the system can be affected when financial dimensions and financial dimension sets are added.
+- We recommend that you carefully consider the number of financial dimensions that you require, the number of values in each one, and the number of financial dimension sets, because all these factors can affect system performance.
 
-### Disadvantages
+### Create local main accounts in the global chart of accounts
 
--   Additional consolidation company creation
+In this approach, the local main accounts in the global chart of accounts include the main accounts in the local chart of accounts in the global chart of accounts.
 
--   Additional consolidation process
+#### Set up local main accounts in the global chart of accounts
 
--   Can only report on the localized chart after the consolidation process is complete
+1. Create a single chart of accounts that includes the main accounts for both the global chart of accounts and the local chart of accounts.
+2. In each legal entity, assign the chart of accounts on the **Ledger** page.
+3. Create total accounts in the chart of accounts to sum the main accounts that represent the same purpose.
+4. Create legal entity overrides on each local account to prevent transactions from other legal entities that the local account wasn't designed for.
+5. Create legal entity overrides on each global account to prevent transactions from the localization legal entities.
 
-## Financial dimension for local chart of accounts
+#### Advantages
 
-The financial dimension for a local chart of accounts approach uses a financial dimension, where the financial dimension values represent the local main accounts that are required for the localization. This approach works well if there is only one localization required, but it becomes less usable as you add more localizations and financial dimensions.
+- A real-time view of both the global finance position and the local finance position is available on specific reports and in specific views in the system, such as a balance sheet financial report. It can also be accessed by using the **Period** button on the total account.
+- You don't have an additional segment in the ledger account.
 
-### Set up a financial dimension for a local chart of accounts
+#### Disadvantages
 
-1. Create a single global chart of accounts with all the required main accounts.
+- Total account use and visibility are limited. For example, total accounts aren't visible on the **Trial balance** list page.
+- Maintenance requires additional effort.
+- The creation of financial reports requires additional manual effort.
 
-2. Assign the global chart of accounts on the **Ledger** page in each legal entity.
+### Do external mapping to the local chart of accounts
 
-3. Create a **Financial dimension** to represent the local chart of accounts.
+Adoption of a global chart of accounts assumes that you're managing the mapping and localizations outside the system. In this approach, you just create a single global chart of accounts in Microsoft Dynamics 365 Finance and handle the requirements outside the system.
 
-4. Create **Financial dimension values** to represent the main accounts in the local chart of accounts.
+#### Set up external mapping to a local chart of accounts
 
-5. Update the account structure to include the "local chart of accounts" financial dimension.
+1. Create a single global chart of accounts that includes all the required main accounts.
+2. In each legal entity, assign the global chart of accounts on the **Ledger** page.
+3. Do the mapping to the local chart of accounts outside Finance.
 
-6. Ensure the "local chart of accounts" financial dimension is always populated and that it doesn't allow a blank value. Consider using derived dimension or fixed dimensions.
+#### Advantages
 
-7. Create a financial dimension set with the "local chart of accounts" dimension as the first selected financial dimension. The financial dimension set can be used when generating the trial balance.
+- This approach provides unified ways of working across the organization.
 
-### Advantages
+#### Disadvantages
 
-- Both Global and Local chart of accounts main accounts exist on the transaction level. Global is the main account and local is the financial dimension value.
-
-- Real-time reporting and view of both global and local finance position.
-
-### Disadvantages
-
-- In General ledger parameters, if the **Values used for summary account** field is set to **Accounting distributions**, the financial dimensions which represent the main account for the expense/asset/revenue will incorrectly be used for the Accounts receivable and Accounts payable summary account. We recommended defining this setting as a source document instead to ensure that the correct financial dimension values are used.
-
-- If many local charts of accounts are required and one financial dimension is used for all of them, the list of financial dimension values that are used could become long and difficult to work with.
-
-- If many local charts of accounts are required and a separate financial dimension is used to represent each one, adding financial dimensions, and financial dimension sets, can have negative effects on the usability and performance of the system.
-
-- We recommend that you carefully consider the number of financial dimensions that you need, the number of values within each one, and the number of financial dimension sets, as this could affect system performance.
-
-## Local main accounts within the global chart of accounts
-
-Following this approach, the local main accounts within the global chart of accounts includes the local chart of accounts main accounts in the global chart of accounts.
-
-### Set up local main accounts within the global chart of accounts
-
-1.  Create a single chart of accounts which includes the main accounts for both the global chart of accounts and the local chart of accounts.
-
-2.  Assign the chart of accounts on the **Ledger** page in each legal entity.
-
-3.  Create **Total accounts** in the chart of accounts to sum up the main accounts that represent the same purpose.
-
-4.  Create **Legal entity overrides** on each local account to prevent transactions from other legal entities that the local account wasn't designed for.
-
-5.  Create **Legal entity overrides** on each global account to prevent transaction from the localization legal entities.
-
-### Advantages
-
-- Real-time view of both Global and Local finance position in specific reports and views in the system, for example a Balance sheet financial report or using the period button on the Total account.
-
-- Saves your having an additional segment in the Ledger account.
-
-### Disadvantages
-
-- Total accounts usage and visibility are limited. For example, total accounts aren't visible on the **Trial balance** list page.
-
-- Maintenance will require additional effort.
-
-- Creating financial reports will require additional manual effort.
-
-## External mapping to local chart of accounts
-
-The adoption of a global chart of accounts assumes that you are managing the mapping and localizations outside of the system. In this approach you simply create a single global chart of accounts in Dynamics 365 Finance and handle the requirements outside of the system.
-
-### Set up external mapping to a local chart of accounts
-
-1. Create a single global chart of accounts with all the required main accounts.
-
-2. Assign the global chart of accounts on the **Ledger** page in each legal entity.
-
-3. Mapping to the local chart of accounts is done outside of Dynamics 365 Finance.
-
-### Advantages
-
-- Unified ways of working across the organization
-
-### Disadvantages
-
-- No local reporting from the system
-
-- Prone to error when creating financial reports
+- No local reporting from the system is available.
+- This approach is prone to error when financial reports are created.
 
 ## Local chart of accounts assigned to legal entity
 
-When your organization decides not use a global chart of accounts across legal entities, a separate chart of accounts is created for each unique local chart of accounts. Each legal entity is then linked to their corresponding chart of accounts on the **Ledger** page.
+If your organization decides not to use a global chart of accounts across legal entities, a separate chart of accounts is created for each unique local chart of accounts. Each legal entity is then linked to the corresponding chart of accounts on the **Ledger** page.
 
-### Global consolidation
+### Do global consolidation
 
-With this approach, a consolidation company is used to roll up and combine the balances from each source local company into the combined global chart of accounts within the consolidation company. This requires maintaining a mapping of each local chart of accounts to the global chart of accounts in the consolidation company.
+In this approach, a consolidation company is used to roll up and combine the balances from each source local company into the combined global chart of accounts in the consolidation company. This approach requires that you maintain a mapping of each local chart of accounts to the global chart of accounts in the consolidation company.
 
-### Set up a global consolidation
+#### Set up global consolidation
 
-1. Create a separate chart of accounts for each legal entity that has a different local chart of accounts. Note that if some legal entities have the same local chart of accounts, only one local chart of accounts is required and it can be shared.
+1. Create a separate chart of accounts for each legal entity that has a different local chart of accounts. If any legal entities have the same local chart of accounts, only one local chart of accounts is required, and it can be shared.
+2. In each legal entity, assign the appropriate chart of accounts on the **Ledger** page.
+3. Optional: Create a chart of accounts for the global chart of accounts of each consolidation company that has a different global chart of accounts.
+4. Create a consolidation legal entity for each consolidation level that is required, and assign the appropriate chart of accounts on the **Ledger** page.
+5. Follow one of these steps:
 
-2. Assign the appropriate chart of accounts on the **Ledger** page in each legal entity.
+    - If only one consolidation is required, configure the consolidation account on the **Main account** page.
+    - If more than one consolidation is required, or if both the account number and the account name require translation, use the **Consolidation groups** and **Additional consolidation accounts** pages to represent the requirements for the global chart of accounts.
 
-3. Create a chart of accounts for the global chart of accounts for each consolidation company that has a different global chart of accounts (optional).
+6. Run the consolidation process to transfer the balances from the local legal entities to the consolidated legal entity. This consolidated legal entity uses the consolidation accounts that you defined in step 5.
 
-4. Create a consolidation legal entity for each consolidation level required and assign the appropriate chart of accounts on the **Ledger** page.
+#### Advantages
 
-5. If there is only one consolidation required, configure the **Consolidation account** on the **Main account** page.
+- The local accounting standards format is applied natively.
+- This approach gives the local finance team an easier way to work.
 
-6. If more than one consolidation is required, or if both the account number and account name require translation, use the **Consolidation groups** and **Additional consolidation accounts** pages to represent the global chart of accounts requirements.
+#### Disadvantages
 
-7. Run the consolidation process to transfer the balances from the local legal entities to the consolidated legal entity, which uses the consolidation accounts defined in steps 5 or 6.
+- No real-time view of the global position is available.
+- The consolidation process might be run more often.
 
-### Advantages
-
-- Local accounting standards format applies natively
-
-- Easier way of working for the local finance team
-
-### Disadvantages
-
-- No real-time view of the global position
-
-- Consolidation process might be run more frequently
-
-For more information, see the following topics:
+## Additional resources
 
 - [Plan your chart of accounts](plan-chart-of-accounts.md)
-
 - [Configure ledgers](configure-ledger.md)
-
 - [Financial dimensions and posting](Default-dimensions.md#balancing-dimension)
-
 - [Financial dimension sets](financial-dimension-sets.md)
-
 - [Consolidation and elimination overview](../budgeting/consolidation-elimination-overview.md)
-
 - [Consolidation account groups and additional consolidation accounts](../budgeting/consolidation-account-groups-consolidation-accounts.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
