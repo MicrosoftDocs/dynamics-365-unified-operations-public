@@ -3,7 +3,7 @@
 
 title: Depreciation effects with reversals
 description: This article discusses potential implications of reversing a fixed asset transaction. 
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 2961
 ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
