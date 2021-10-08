@@ -83,7 +83,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     </IgnoreFunctions>
     ```
 
-    > [!WARNING]
+    > [!IMPORTANT]
     > The tables and functions that are specified in these XML files won't be replicated in the target database, and the same format should be followed.
     
 7. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
@@ -131,7 +131,7 @@ After the validation is successful, the application presents a set of menu optio
     - Distribution database path (for example, **D:\\SQLServer\\Data**)
     - Replication snapshot path (for example, **D:\\SQLServer\\Snapshot**)
 
-    > [!WARNING]
+    > [!IMPORTANT]
     > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. The paths should be in the local disk of the machine. Avoid using shared paths.
     > 
     > We recommend that you have a static IP address for the virtual machine (VM) or machine (for the allowlist in step 1). In this way, you help prevent connection issues with the target database.
@@ -191,12 +191,12 @@ After the validation is successful, the application presents a set of menu optio
 
     If AX Service acquires a schema lock during creation of the primary key publication, those tables will be ignored and omitted from the publication. They will be added to temporary tables and marked for replication during creation of the cutover publication.
 
-    > [!WARNING]
+    > [IMPORTANT]
     > Don't move on to next step until the **DataReplicationStatus** property for this step is shown as completed.
 
 8. **Cutover: Remove non-primary key publication and temporary tables**
 
-    > ![Warning]
+    > ![IMPORTANT]
     > This step only applies to customers using **AX 2012 Database Upgrade Toolkit for Dynamics 365** app version 8 or earlier.
 
     This step performs the following actions:
@@ -211,7 +211,7 @@ After the validation is successful, the application presents a set of menu optio
 
 9. **Cutover: Create constraint for non-primary key tables**
 
-    > ![Warning]
+    > ![IMPORTANT]
     > This step only applies to customers using **AX 2012 Database Upgrade Toolkit for Dynamics 365** app version 8 or earlier.
 
     This step extracts constraints for the non-primary key tables from the source database and creates them in the target database.
