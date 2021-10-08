@@ -153,7 +153,6 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Execute the default action in a grid<blockquote>[!NOTE] This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks.</blockquote> | Enter                           |
 | Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
 | Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |
-| Move the current column to the next/previous position (with focus in the header row)                                   | Ctrl+Shift+Right arrow / Ctrl+Shift+Left arrow |
 | Open grid filtering for the current column (with focus in the header row)                                              | Enter                           |
 | Resize the current column to fit the contents (with focus in the header row)                                           | A                               |
 
