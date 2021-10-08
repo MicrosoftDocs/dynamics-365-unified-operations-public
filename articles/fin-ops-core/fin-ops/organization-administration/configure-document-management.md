@@ -71,7 +71,7 @@ To configure SharePoint storage, follow these steps.
 
 4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name. This verifies that the security and license are working correctly. 
 5. Optional: Click **Open SharePoint** to open the specified SharePoint host name in a browser. Note that this does not verify security, it just opens the SharePoint path in a browser tab for easy exploration.
-6. Optional: On the **General** tab, turn on **Open attachments in new window**. With the attachment opening in a new window, this should prevent the Finance and Operations user session from resetting. 
+6. Optional: On the **General** tab, turn on **Open attachments in new window**.  See the [Other configuration](#other-configuration) section for more details. 
 
 ### Troubleshooting SharePoint communication
 
@@ -128,7 +128,7 @@ Here are some other configuration options to consider:
 
 - On the **Document management parameters** page, on the **General** tab, you can use the **Use active document tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Therefore, turn on this option only when it's required.
 - On the **Document management parameters** page, on the **General** tab, you can use the **Maximum file size in megabytes** field to set the maximum file size for attachments. Note that when SharePoint is used as a document type, users can only upload a document up to a maximum file size of 262 megabytes. 
-- On the **Document management parameters** page, on the **General** tab, you can use the **Open attachments in new window** option to determine if attachments are opened in place or in a new window or tab. You should consider using this option especially if you are using SharePoint for storing attachments. 
+- On the **Document management parameters** page, on the **General** tab, you can use the **Open attachments in new window** option to determine if attachments are opened in place or in a new window or tab. You should consider turning on this option especially if you are using SharePoint for storing attachments, as this will prevent the Finance and Operations user session from resetting when opening attachments. Note this option is available starting in 10.0.23 / Platform update 47. 
 - On the **Options** page (**Settings** \> **User options**), on the **Preferences** tab, you can use the **Enable document handling** option to disable document handling (document management).
 
 ## Accessing document management attachments 
