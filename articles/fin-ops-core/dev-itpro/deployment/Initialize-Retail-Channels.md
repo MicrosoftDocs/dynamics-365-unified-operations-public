@@ -39,7 +39,7 @@ This topic describes the steps for initializing Commerce Scale Unit (cloud).
 ## Prerequisites
 
 1. Deploy a Tier-2 sandbox or production environment that has application version 8.1.2.x or later.
-2. If you require more than 1 RCSU per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Access request for multiple Commerce Cloud Scale Units** and indicate the environment ID, number of CSUs, and corresponding datacenter regions. The request will be completed within five business days. If you do not require multiple CSUs per environment, you do not need to create a support request. 
+2. You can self-deploy up to 2 Scale Units per enviornment. If you require more than 2 CSUs per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Request for additional Commerce Scale Unit** and indicate the environment ID, number of CSUs, and desired datacenter regions. The request will be completed within five business days. If you do not require more than 2 CSUs per environment, you do not need to create a support request. 
 3. Ensure that Retail license configuration keys are enabled in your environment. For more information, see [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md). You must have the following keys turned on to use Commerce Scale Unit.
 
 - RetailBasic
