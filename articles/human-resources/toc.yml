@@ -2,9 +2,11 @@
   href: ./index.md
   items:
   - name: What's new
-    items:
+    items:    
     - name: What's new or changed in Human Resources
       href: hr-admin-whats-new.md
+    - name: October 4, 2021
+      href: hr-whats-new-2021-10-04.md
     - name: September 20, 2021
       href: hr-whats-new-2021-09-20.md
     - name: September 06, 2021
