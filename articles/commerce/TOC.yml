@@ -802,7 +802,7 @@
           href: POS-serial-returns.md
         - name: Linked refunds
           href: dev-itpro/linked-refunds.md
-        - name: Process unlinked refunds with the Dynamics 365 Commerce Adyen Connector
+        - name: Process unlinked refunds with the Dynamics 365 Commerce Payment Connector for Adyen
           href: dev-itpro/unlinked-refunds.md
         - name: Sell and return products not included in a store's assortment
           href: sell-return-outside-assortments.md
