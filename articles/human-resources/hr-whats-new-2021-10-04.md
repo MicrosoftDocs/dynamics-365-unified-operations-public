@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Human Resources October 05, 2021
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for October 05, 2021.
+title: What's new or changed in Dynamics 365 Human Resources October 5, 2021
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for October 5, 2021.
 author: marcelbf
 ms.date: 10/05/2021
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# What's new or changed in Dynamics 365 Human Resources October 05, 2021
+# What's new or changed in Dynamics 365 Human Resources October 5, 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -62,7 +62,7 @@ The following bug fixes are included in this release.
 | 598896 | Employee amount does not display until after the employee has completed the enrollment | On the **Employee self service** page, the employee amount for the benefit was not displayed. The employee amount is now displayed on the **Benefits self-service** page.  |
 | 613440 | Unable to export data from **Data Management** | When exporting data for a project in **Data management**, the export fails unexpectedly. |
 | 618327 | Closed and future periods are showing on the **Reports parameters** page for the benefits statement | When navigating to the **Benefit statement** in **Employee self service**, the **Report parameters** page displays **Records to include** and **Run in the background** FastTabs. These sections were removed.|
-| 618326 | Wrong **Report parameters** page displays in **Employee self service** for the benefits statement| When navigating to the **Benefit statement report** destination page, the user was able to select benefit plans periods that are closed or are future dated, which results in a blank page. Only the current benefit plan period should display in the list. |
+| 618326 | An incorrect **Report parameters** page displays in **Employee self service** for the benefits statement| When navigating to the **Benefit statement report** destination page, the user was able to select benefit plans periods that are closed or are future dated, which results in a blank page. Only the current benefit plan period should display in the list. |
 
 ## In preview
 
@@ -78,7 +78,7 @@ The following new features are in preview. For more information about how to tur
 
 | Issue | Description |
 |---|---|
-|Error when emailing report using **GER report destination**. | The benefits statement can be set to use the email parameters on the **GER Report destinations** page. When completing the setup and printing the report, the user will receive a formatting error and the benefits statement will not be sent.|
+|Error when emailing report using **GER report destination** | The benefits statement can be set to use the email parameters on the **GER Report destinations** page. When completing the setup and printing the report, the user will receive a formatting error and the benefits statement will not be sent.|
 
 ## Feature management changes
 
