@@ -56,7 +56,7 @@ The following table lists the feature enhancements included in this release. Eac
 | Feature area | Feature name in feature management | More information |  
 |---|---|---|
 | Accounts payable  | Process automation - additional support added for modifying query filters   | This feature lets you add tables and filters to process automation queries that are used when you create or edit series or individual occurrences of the process.  |  
-|   |   |   |  
+| Globalization  | (Russia) Run Inventory balance turnover report calculation in batch  | The feature provides the possibility to run the Inventory balance turnover report in batch, to store the result of the calculation, and to view the reports generated earlier.  |  
 |   |   |   |  
 |   |   |   |  
 
