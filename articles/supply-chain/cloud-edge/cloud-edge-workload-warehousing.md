@@ -191,7 +191,6 @@ The following table shows which outbound features are supported, and where they 
 |--------------------------------------------------------------|-----|------------------------------|
 | Source document processing                                   | Yes | No |
 | Load and transportation management processing                | Yes, but only the load planning processes. Transportation management processing is not supported  | No |
-| Landed cost and goods in transit receiving                                         | Yes | No |
 | Release to warehouse                                         | Yes | No |
 | Planned cross docking                                        | No  | No |
 | Shipment consolidation                                       | Yes, when using load planning | Yes |
@@ -227,6 +226,7 @@ The following table shows which inbound features are supported, and where they a
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
 | Source&nbsp;document&nbsp;processing                             | Yes | No |
 | Load and transportation management processing                    | Yes | No |
+| Landed cost and goods in transit receiving                       | Yes | No |
 | Inbound shipment confirmation                                    | Yes | No |
 | Purchase order release to warehouse (warehouse order processing) | Yes | No |
 | Cancellation of warehouse order lines<p>Note that this only is supported when no registration has happened against the line</p> | Yes | No |
