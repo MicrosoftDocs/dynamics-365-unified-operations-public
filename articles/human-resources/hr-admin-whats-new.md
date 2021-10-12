@@ -45,6 +45,7 @@ For more information about upcoming features or the update process for Human Res
 
 To find out what's new or changed in each biweekly release of Human Resources, see the following topics:
 
+[October 5, 2021](hr-whats-new-2021-10-04.md)</br>
 [September 20, 2021](hr-whats-new-2021-09-20.md)</br>
 [September 6, 2021](hr-whats-new-2021-09-06.md)</br>
 [August 23, 2021](hr-whats-new-2021-08-23.md)</br>
