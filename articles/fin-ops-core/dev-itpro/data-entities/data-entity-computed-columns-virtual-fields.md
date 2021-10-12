@@ -58,6 +58,7 @@ The two types of unmapped fields are computed and virtual. Unmapped fields alway
 - Is controlled by custom X++ code.
 - Read and write happens through custom X++ code.
 - Virtual fields are typically used for intake values that are calculated by using X++ code and can't be replaced by computed columns.
+- Search and filtering on virtual fields are not supported.
 
 ### Properties of unmapped fields
 
