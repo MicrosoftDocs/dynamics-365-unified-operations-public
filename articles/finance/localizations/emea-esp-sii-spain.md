@@ -4,7 +4,7 @@
 title: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII) of Spain to support multiple VAT registration numbers
 description: This topic describes the scope of SII feature of Spain to support multiple VAT registration numbers.
 author: liza-golub
-ms.date: 10/13/2021
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,5 +39,3 @@ As of Finance version 10.0.22, if you're using the [**Tax Calculation**](global-
 
 - 'Libro de registro de facturas Expedidas': **Record book of issued invoices**
 - 'Libro de registro de facturas Recibidas': **Record book of received invoices**
-
-This topic describes how to set up and use Finance to interoperate with the SII system of Spain. It includes information about how to complete the following tasks:
