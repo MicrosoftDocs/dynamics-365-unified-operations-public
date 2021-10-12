@@ -31,13 +31,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up General ledger posting accounts for disposing of assets.
+This topic explains how to set up General ledger posting accounts when you're disposing assets.
 
-On the **Fixed assets posting profiles** page, on the **Ledger accounts** FastTab, select **Disposal - sale** and **Disposal - scrap** to set up postings to the ledger.
+To set up postings to the ledger, select **Disposal - sale** and **Disposal - scrap** in the **Ledger accounts** FastTab on the **Fixed assets posting profiles** page.
 
-For both transaction types, the ledger account is credited for the disposal value of the fixed asset. The debit is posted to an offset account, which might, for example, be a bank account. If a fixed asset is sold to a customer, the customer account is used instead of the offset account.
+For both transaction types (disposing of an asset by sale or scrap), the ledger account is credited for the disposal value of the fixed asset. The debit is posted to an offset account, which might, for example, be a bank account. If a fixed asset is sold to a customer, the customer account is used instead of the offset account.
 
-Click **Disposal** and then click **Sale** or **Scrap**, and then set up detailed accounts to reverse the net book value of the fixed asset. You can also enter information in the **Post value** and **Sales value type** fields on the **Disposal parameters** page. 
+Click **Disposal** and then click **Sale** or **Scrap**, and then set up detailed accounts to reverse the net book value of the fixed asset. You can also enter information in the **Post value** and **Sales value type** fields on the **Disposal parameters** page. For more information, see [Dispose of a fixed asset as scrap](dispose-of-a-fixed-asset-as-scrap.md).
 
 The disposal transaction for an asset in a low-value pool reduces the net book value of the low-value pool by the disposed amount only. However, when the sale of an asset exceeds the net book value of the low-value pool, the net book value is reduced to zero.
 
