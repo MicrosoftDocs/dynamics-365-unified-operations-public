@@ -88,7 +88,7 @@ To support this new behavior, a new column for the row status has been added to 
 When users are entering data ahead of the place where the server is processing, they can expect a few degradations in the data entry experience, such as a lack of lookups, control-level validation, and entry of default values. Users who need a drop-down list to find a value are encouraged to wait for the server to catch up to the current row. Control-level validation and entry of default values will also occur when the server processes that row.   
 
 ### Pasting from Excel
-Users have always been able to export data from grids in Finance and Operations apps to Excel by using the **Export to Excel** mechanism. However, the ability to enter data ahead of the system enables the new grid to support copying tables from Excel and pasting them directly into grids in Finance and Operations apps. The grid cell that the paste operation is initiated from determines where the copied table begins to be pasted in. The contents of the grid are overwritten by the contents of the copied table, except in two cases:
+Users have always been able to export data from grids in Finance and Operations apps to Microsoft Excel by using the **Export to Excel** mechanism. However, the ability to enter data ahead of the system enables the new grid to support copying tables from Excel and pasting them directly into grids in Finance and Operations apps. The grid cell that the paste operation is initiated from determines where the copied table begins to be pasted in. The contents of the grid are overwritten by the contents of the copied table, except in two cases:
 
 - If the number of columns in the copied table exceeds the number of columns that remain in the grid, starting from the paste location, the user is notified that the extra columns have been ignored. 
 - If the number of rows in the copied table exceeds the number of rows in the grid, starting from the paste location, the existing cells are overwritten by the pasted content, and any extra rows from the copied table are inserted as new rows at the bottom of the grid. 
@@ -133,7 +133,7 @@ To unfreeze a column, right-click in the frozen column's header, and then select
 Note that the row selection and row status columns in the new grid are always frozen as the first two columns. Therefore, when these columns are included in a grid, they will always be visible to users, regardless of the horizontal scroll position in the grid. These two columns can't be reordered.
 
 ## Autofit column width
-Similar to Excel, users can automatically force a column to resize based on the content currently shown in that column. You can do this by double clicking on the resize handler on the column, or by putting focus into the column header and pressing **A** (for autofit). This capability is available starting in version 10.0.23.  
+Similar to Excel, users can automatically force a column to resize based on the content currently shown in that column. To do this, double click on the resize handler on the column, or by putting focus into the column header and pressing **A** (for autofit). This capability is available starting in version 10.0.23.  
 
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
