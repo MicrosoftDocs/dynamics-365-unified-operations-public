@@ -22,8 +22,6 @@ This topic describes the priority-based planning feature of Supply Chain Managem
 
 Priority-based planning lets you prioritize replenishment orders to ensure that urgent demand is prioritized over less important demand. For example, a stockout replenishment order will be prioritized over a standard refill replenishment order. The system can automatically split larger orders into separate smaller orders, with order lines grouped by priority, and then process all high-priority orders first.
 
-<!--KFM: Add link to, and update the following topic? : [Scheduling with resource selection based on capability](capability-based-scheduling.md). We have a **Priority** field there. -->
-
 ## Turn on priority-based planning for your system
 
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
@@ -75,7 +73,7 @@ The following additional rules come into effect when the **Priority calculation 
 
 - If the **Consider demand priority** option is enabled for the planned priority model, then priority set at each demand line will limit the priority range bucket. A new planned order for supply will receive a priority no lower than the demand's priority. The range's upper value is considered a threshold against which the demand's priority value is compared. If the demand priority is exactly in the middle between the upper threshold values of two ranges, then the range with the highest priority (lowest priority value) is chosen.
 - When the **Planned order creation** option for the planned priority model is set to *Single supply with most important priority*, then only a single supply will be created to fulfill all the way up to the maximum, and the priority will be set to that of the first range that would trigger a supply.
-- If there is nothing on-hand and no supply and demand <!--KFM: Do you mean "no demand" or that there IS demand? -->, then the **Planning priority ranges** line with **From quantity** set to *Zero* will be used.
+- If there is nothing on-hand and no supply and no demand, then the **Planning priority ranges** line with **From quantity** set to *Zero* will be used.
 - If there is demand but no on-hand or expected supply, then the **Planning priority ranges** line with **From quantity** set to *Zero or less* will be used.
 - The **Consider demand priority** setting will still have an effect when evaluating the range that the demand is part of.
 
@@ -96,7 +94,7 @@ Priority-based planning differs from traditional timeline calculations in the fo
 To work with the planning priority models, go to **Master planning \> Setup \> Planning priority models**. As already discussed, one of the most important settings of a model is **Priority calculation method**. This setting controls the calculation method used when a priority value is assigned to planned orders by master planning.
 
 > [!NOTE]
-> Model confirmations apply organization-wide across all legal entities. <!--KFM: What do you mean by "confirmations"? "Configurations" maybe? -->
+> Planning priority models apply organization-wide across all legal entities.
 
 ### Coverage group
 
@@ -144,7 +142,7 @@ To work with your planning priority models:
 
 1. If you set **Priority calculation method** to *Priority ranges*, then on the **Planning priority ranges** FastTab, use the **Add** and **Remove** toolbar buttons to add or remove priority range rows as needed. If multiple rows exist and you insert a new row, then the planning priority will default to the average of the selected row and the one above it. Make the following settings for each row:
 
-    - **Planning priority** – Enter any value between 0.00 and 100.00. This represents the planning priority used for this row. The lowest priority is considered the most important one <!--KFM: Do you mean "The system considers orders that have the lowest priority value to be the most important and will place those orders first." ?  -->. A default value is assigned, but you can change it as needed. The **Planning priority** can't be the same for two or more planning priority ranges within the same planning priority model.
+    - **Planning priority** – Enter any value between 0.00 and 100.00. This represents the planning priority used for this row. The lowest priority value is considered most important. A default value is assigned, but you can change it as needed. The **Planning priority** can't be the same for two or more planning priority ranges within the same planning priority model.
     - **Description** – Enter a description of the planning priority range (such as *Reorder point to Maximum*).
     - **From quantity** – This read-only value represents the lower limit of the planning priority range. It is based on the **To quantity** and **Percentage of to quantity** settings for the previous planning priority range.
     - **To quantity** – Select a field from the item coverage used to define the range's upper limit. The following values are supported and will influence the **From quantity** of the next range:
