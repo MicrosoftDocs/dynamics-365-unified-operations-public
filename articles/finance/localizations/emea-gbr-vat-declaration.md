@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: VAT return of the United Kingdom to support multiple VAT registration numbers
+title: Support for multiple VAT registration numbers in the VAT return of the United Kingdom
 description: This topic explains how to support multiple value-added tax (VAT) registration numbers in a VAT return of the United Kingdom.
 author: liza-golub
 ms.date: 10/12/2021
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: AX 10.0.21
 
 ---
 
-# VAT return of the United Kingdom to support multiple VAT registration numbers
+# Support for multiple VAT registration numbers in the VAT return of the United Kingdom
 
 [!include [banner](../includes/banner.md)]
 
