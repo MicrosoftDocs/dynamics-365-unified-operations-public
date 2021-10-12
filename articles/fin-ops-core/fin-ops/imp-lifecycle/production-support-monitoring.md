@@ -4,7 +4,7 @@
 title: Production support and monitoring
 description: This topic describes the types of support that are involved in the project lifecycle and best practices for monitoring your environments.
 author: PedroTubal
-ms.date: 04/12/2021
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
