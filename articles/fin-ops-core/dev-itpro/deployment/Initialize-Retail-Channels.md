@@ -34,12 +34,12 @@ If you're using a Tier-2 sandbox or production environment that has application 
 This topic describes the steps for initializing Commerce Scale Unit (cloud).
 
 > [!IMPORTANT]
-> For existing customers using retail channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you update your retail channels to use Commerce Scale Unit. New environments deployed without Commerce Scale Unit will no longer receive quality and service updates for cloud-hosted retail channel components. There is no action required for customers who exclusively use Commerce Scale Unit (self-hosted).  Contact your Microsoft FastTrack solution architect if you require an extension.
+> For existing customers using retail channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you update your retail channels to use Commerce Scale Unit (CSU). New environments deployed without Commerce Scale Unit will no longer receive quality and service updates for cloud-hosted retail channel components. There is no action required for customers who exclusively use Commerce Scale Unit (self-hosted).  Contact your Microsoft FastTrack solution architect if you require an extension.
 
 ## Prerequisites
 
 1. Deploy a Tier-2 sandbox or production environment that has application version 8.1.2.x or later.
-2. You can self-deploy up to 2 Scale Units per enviornment. If you require more than 2 CSUs per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Request for additional Commerce Scale Unit** and indicate the environment ID, number of CSUs, and desired datacenter regions. The request will be completed within five business days. If you do not require more than 2 CSUs per environment, you do not need to create a support request. 
+2. You can self-deploy up to 2 CSUs per enviornment. If you require more than 2 CSUs per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Request for additional Commerce Scale Unit** and indicate the environment ID, number of CSUs, and desired datacenter regions. The request will be completed within five business days. If you do not require more than 2 CSUs per environment, you do not need to create a support request. 
 3. Ensure that Retail license configuration keys are enabled in your environment. For more information, see [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md). You must have the following keys turned on to use Commerce Scale Unit.
 
 - RetailBasic
