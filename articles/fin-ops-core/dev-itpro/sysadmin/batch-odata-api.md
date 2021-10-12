@@ -4,7 +4,7 @@
 title: Batch OData API
 description: One sentence description of this content.
 author: matapg007
-ms.date: 10/12/2022
+ms.date: 10/12/2021
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
