@@ -133,7 +133,7 @@ To unfreeze a column, right-click in the frozen column's header, and then select
 Note that the row selection and row status columns in the new grid are always frozen as the first two columns. Therefore, when these columns are included in a grid, they will always be visible to users, regardless of the horizontal scroll position in the grid. These two columns can't be reordered.
 
 ## Autofit column width
-Similar to Excel, users can automatically force a column to resize based on the content currently shown in that column. To do this, double click on the resize handler on the column, or by putting focus into the column header and pressing **A** (for autofit). This capability is available starting in version 10.0.23.  
+Similar to Excel, users can automatically force a column to resize based on the content currently shown in that column. To do this, double click on the sizing handles in the column, or by putting focus into the column header and pressing **A** (for autofit). This capability is available starting in version 10.0.23.  
 
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
