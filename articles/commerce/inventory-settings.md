@@ -4,7 +4,7 @@
 title: Apply inventory settings
 description: This topic covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 04/23/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,10 +55,10 @@ In Commerce, inventory settings are defined at **Site Settings \> Extensions \> 
 > [!IMPORTANT] 
 > The **Inventory level for multiple warehouses** setting is available as of the Commerce version 10.0.19 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Inventory settings for product list pages** - This setting defines how out of stock products should be displayed in product lists such as product collection and search results modules. The availale values are Display in-order with other products, hide out of stock products from list, and Display out of stock products at the end of the list. In order to use this site setting, you must configure some prerequisite settings in Commerce headquarters. See [Enable inventory awareness for the search results module](https://review.docs.microsoft.com/dynamics365/commerce/search-result-module#enable-inventory-awareness-for-the-search-results-module) for more details.
+- **Inventory settings for product list pages** - This setting defines how out of stock products should be displayed in product lists rendered by product collection and search results modules. The available values are **Display in-order with other products**, **Hide out of stock products from list**, and **Display out of stock products at the end of the list**. To use this setting, you must first configure some prerequisite settings in Commerce headquarters. For more information, see [Enable inventory awareness for the search results module](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
 
 > [!IMPORTANT] 
-> The **Inventory settings for product list pages** setting is available as of the Commerce version 10.0.20 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+> The **Inventory settings for product list pages** setting is available as of the Commerce version 10.0.20 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions on updating the appsettings.json file, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Inventory ranges** – This setting defines the inventory ranges that message are shown for on site modules. It's applicable only if either the **Total Available** value or the **Physical Available** value is selected for the **Inventory level based on** setting. The available values are **All**, **Low and out of stock**, and **Out of stock**.
 
