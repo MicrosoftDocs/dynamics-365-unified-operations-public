@@ -157,7 +157,7 @@ Additionally, you can add your own custom filters and export the logs to a comma
 The **Health Metrics** dashboard provides a series of line charts that are filtered by instance (AOS or Batch AOS) and time frame. On the **AOS** tab, you can observe SQL execution. On the **System** tab, you can observe system memory and CPU utilization over time. This tool lets you easily identify behavioral changes. Therefore, it can help you trace issues over time and the impact of changes in the solution.
 
 
-For additional content related to LCS environments monitoring please read the document [Performance troubleshooting using tools in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/performancetroubleshooting.md). 
+For additional content related to monitoring LCS environments, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/performancetroubleshooting.md). 
 
 Although it's important that you monitor your environments, you don't have to be on constant lookout. Microsoft also uses the emails that are provided in the LCS notification list to alert you about important issues and actions that you must take, and to provide preventive guidance for the implementation itself.
 
