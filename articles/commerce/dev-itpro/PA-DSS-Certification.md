@@ -38,8 +38,8 @@ PA-DSS implementation guides that are available are linked to in the **Version**
 
 ## Past certification
 
-| Release | Version  | Build  |
-| ----------------------|-------- | ----------- |
+| Release | Version  | 
+| ----------------------|-------- | 
 | Microsoft Dynamics AX | 2012 R3 |
 | Microsoft Dynamics AX | 7.0     |
 | Microsoft Dynamics 365 for Operations | 1611 (7.1)  |
@@ -49,8 +49,8 @@ PA-DSS implementation guides that are available are linked to in the **Version**
 
 ## Current certification
 
-| Release  | Version | Build  |
-| ----------------------------|---------------------- | ----------- |
+| Release  | Version |
+| ----------------------------|---------------------- | 
 | Microsoft Dynamics 365 Commerce | [10.0.12](https://download.microsoft.com/download/f/8/3/f83fbcf3-dc8b-46f8-a552-939300cb39b6/PA-DSS%20Implementation%20Guide%20for%20Microsoft%20Dynamics%20365%20Commerce%2010.0.12.pdf)  |
 | Microsoft Dynamics 365 Commerce | [10.0.18](https://mbs2.microsoft.com/fileexchange/?fileID=e37f50d7-767b-47e2-a162-68dc88ee5a44) |
 
