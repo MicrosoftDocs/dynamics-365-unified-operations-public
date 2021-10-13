@@ -1,6 +1,6 @@
 ---
 title: Pause dual-write for maintenance
-description: This topic explains error logs and alert notifications that can help you troubleshoot issues.
+description: This topic explains how to pause a table map.
 author: nhelgren
 ms.date: 10/13/2021
 ms.topic: article
