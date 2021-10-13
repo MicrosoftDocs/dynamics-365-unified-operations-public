@@ -26,7 +26,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: AX 10.0.23
 ---
 
-# Using Tax jurisdiction parameters for Cash discount calculation setup
+# Using tax jurisdiction parameters for cash discount calculation setup
 
 [!include [banner](../includes/banner.md)]
 
