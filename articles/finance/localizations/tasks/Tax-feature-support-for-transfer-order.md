@@ -53,7 +53,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         2. Select **By Net Amount** in the **Tax component** field.
         3. Select **Save**.
         4. Select **Add** in the **Rate** table.
-        5. Swtich **Is Exempt** to **Yes** in the **General** section.
+        5. Set **Is Exempt** to **Yes** in the **General** section.
         6. In the **Exempt Code** field, enter **EC**.
 
     - When a transfer order is received at a Belgium warehouse, the reverse charge mechanism is applied by using the **BE-RC-21** and **BE-RC+21** tax codes.
@@ -64,7 +64,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         3. Select **Save**.
         4. Select **Add** in the **Rate** table.
         5. Enter **-21** in the **Tax Rate** field.
-        6. Swtich **Is Reverse Charge** to **Yes** in the **General** section.
+        6. Set **Is Reverse Charge** to **Yes** in the **General** section.
         7. Select **Save**.
         
         Create the tax code **BE-RC+21**.
@@ -82,11 +82,11 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
     4. In the **Tax Group** column, enter **AR-EU** and then select the **NL-Exempt** tax code.
     5. Select **Add** to add a tax group.
     6. In the **Tax Group** column, enter **RC-VAT** and then select the **BE-RC-21** and **BE-RC+21** tax codes.
-4. Define Item tax group
+4. Define Item tax group.
     1. Select **Manage columns**, and then select the line field **Item Tax Group**.
-    2. Click the button **->** and then click **OK**.
-    3. Click **Add** to add an item tax group.
-    4. Enter **FULL** in the column **Item Tax Group**, Select tax codes **BE-RC-21**, **BE-RC+21** and **NL-Exempt**.
+    2. Select **->** and then select **OK**.
+    3. Select **Add** to add an item tax group.
+    4. Enter **FULL** in the column **Item Tax Group**. Select tax codes **BE-RC-21**, **BE-RC+21**, and **NL-Exempt**.
 5. Define the applicability of the tax group.
 
     1. Select **Manage columns**, and then select columns that should be used to build the applicability table.
@@ -152,7 +152,7 @@ Follow these steps to enable and set up taxes for transfer orders.
 5. Verify that the related tax codes, tax groups, item tax groups, and VAT registration numbers have been set up in Finance according to the tax calculation service guidance.
 6. Set up an interim transit account. This step is required only when the tax that is applied to a transfer order isn't applicable to a tax exempted or reverse charge mechanism.
 
-    1. Go to **Tax** > **Setup** > **Sales tax** \ **Ledger posting groups**.
+    1. Go to **Tax** > **Setup** > **Sales tax** > **Ledger posting groups**.
     2. In the **Interim transit** field, select a ledger account.
 
        ![Selecting an interim transit account.](../media/image10.png)
