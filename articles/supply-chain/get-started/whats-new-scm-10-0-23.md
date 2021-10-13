@@ -31,7 +31,7 @@ The following table lists the features that are included in this release. The *F
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Inventory&nbsp;and&nbsp;logistics | [Pause tasks in the Warehouse Management mobile app](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/park-tasks-warehouse-management-mobile-app) | <!-- KFM: Add link to topic when ready --> | Feature management (*Warehouse management app detours*) |
-| Inventory&nbsp;and&nbsp;logistics | [Warehouse app promoted fields](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Customize step titles and instructions for the Warehouse Management mobile app](../warehousing/mobile-app-titles-instructions.md) <!-- KFM: Might move to its own topic... --> | Feature management (*Warehouse app promoted fields*) |
+| Inventory&nbsp;and&nbsp;logistics | [Warehouse app promoted fields](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | <!-- KFM: Add link to topic when ready --> | Feature management (*Warehouse app promoted fields*) |
 | Production control | [Report on co- and by-products from the production floor execution interface](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-process-manufacturing) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management (*Report on co- and by-products from the production floor execution interface*) |
 
 ## Feature enhancements included in this release
@@ -44,7 +44,9 @@ The following table lists the feature enhancements that are included in this rel
 | Inventory and warehouse management | \[Russia\] Post storno financial inventory transactions according to the correction flag in the financial voucher for Sales orders | This feature impacts the credit note corrections functionality for Russia. It enables posting of inventory transactions for sales invoices in accordance with the correction option in the general ledger. Once this feature is enabled, there are no more discrepancies between **Correction** flag on financial voucher of inventory transaction and **Storno** flag on inventory transactions. |
 | Inventory and warehouse management | (Russia) Run Inventory balance turnover report calculation in batch | For Russian localizations of Supply Chain Management, this feature provides the possibility to run the *Inventory balance turnover* report in batch, to store it, and to view the reports generated earlier. |
 | Inventory and warehouse management | (Russia) Use translations to local language in country or region-specific primary forms in Inventory management | For Russian localizations of Supply Chain Management, this feature enables the use of Russian translations for product/item names and units of measure in the following Russian-specific inventory printouts: Counting list (INV-3), Counting list (INV-5), and Counting list (INV-6). |
-| Production control | (Preview) Auto-picking of warehouse enabled materials for auto-posted picking lists | This preview feature lets you auto-pick and resolve inventory dimensions for auto-posted, derived, and backflushed picking list journals |
+| Procurement and sourcing | Clean up purchase-order update history | This feature lets you clean up temporary historical records related to purchase-order updates. It adds a new button called **Clean up purchase update history** to the Action Pane of the **All purchase orders** page. This feature is enabled by default. |
+| Production control | (Preview) Auto-picking of warehouse enabled materials for auto-posted picking lists | This preview feature lets you auto-pick and resolve inventory dimensions for auto-posted, derived, and backflushed picking list journals. |
+| Production control | Validate expiration of raw materials against planned consumption date | This feature changes how batch expiration dates are validated when reserving a batch of raw material to be used during production. When this feature is enabled, the batch expiration date is validated against the planned consumption date (the raw material date), as established on the production BOM line or batch order formula line. When this feature is disabled, the batch expiration date is validated against the planned delivery date of the production or batch order (as previously). |
 | Sales and marketing | Clean up sales-order update history | This feature lets you clean up temporary historical records related to sales-order updates. It adds a new button called **Clean up sales update history** to the Action Pane of the detail and list pages for sales orders. |
 | Sales and marketing | Improve "Top 100" customers report performance | This feature improves the performance of the **Top 100** customers report by always running the report across all customers (which is its intended use) rather than by allowing custom queries. When this feature is enabled, all **Records to include** settings are disabled in the **Top 100** report dialog. |
 | Warehouse management | Scale unit support for release to warehouse of outbound orders | When this preview feature is enabled, outbound orders can be released from the hub directly to the scale unit where the orders will be fulfilled. |
@@ -55,9 +57,15 @@ We have recently added or significantly updated the following help topics. These
 
 | Feature area | New or updated topics |
 |---|---|
-
-<!-- KFM: Add these -->
-
+| Engineering change management | [Engineering attributes and engineering attribute search](../engineering-change-management/engineering-attributes-and-search.md) now describes how engineering attribute inheritance works. |
+| Master planning | [Master planning with demand forecasts](../master-planning/planning-optimization/demand-forecast.md) and [Forecast reduction keys](../master-planning/reduction-keys.md) now provide more information about how to work with reduction keys. |
+| Master planning | [Safety stock fulfillment for items](../master-planning/safety-stock-replenishment.md) now provides more information about using minimum/maximum keys. |
+| Master planning | [Inventory forecasts](../master-planning/inventory-forecast.md) now provides more information about allocating forecasts. |
+| Master planning | [Supply schedule](../master-planning/supply-schedule.md) |
+| Warehouse management | [Global mobile device parameters](../warehousing/mobile-device-parameters.md) |
+| Warehouse management | [Anchoring](../warehousing/anchoring.md) |
+| Sales and marketing | Intercompany trade is now described in detail, starting with [Set up intercompany trade](../sales-marketing/intercompany-trade-set-up.md) and its related topics. |
+| Inventory management | Inventory Visibility documentation has been expanded and updated, starting with [Inventory Visibility Add-in overview](../inventory/inventory-visibility.md) and its related topics. |
 
 ## Additional resources
 
