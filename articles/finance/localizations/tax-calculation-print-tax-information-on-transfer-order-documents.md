@@ -41,7 +41,7 @@ The following tax relevant data is added to the transfer order documents.
 
 To configure these data, you must complete the following main steps:
 
-1. [Enable and set up the tax feature for transfer orders](Tax-feature-support-for-transfer-order.md).
+1. [Enable and set up the tax feature for transfer orders](tasks/Tax-feature-support-for-transfer-order.md).
 2. [Create and set up multiple tax registration numbers for a legal entity](emea-multiple-vat-registration-numbers.md).
 3. Set up the exempt code, description, tax directives, and print code in tax codes. For this example, three tax codes are created and synchronized in Microsoft Dynamics 365 Finance: **NL-Exempt**, **BE-RC-21**, and **BE-RC+21**.
 
@@ -89,4 +89,4 @@ Follow these steps to print the transfer overview document.
 3. On the **Records to include** tab, select **Filter**, select the transfer order number, and then select **OK**.
 4. Select **OK** to print the transfer overview document.
 
-  [!INCLUDE [footer-include](../../../includes/footer-banner.md)]
+  [!INCLUDE [footer-include](../../includes/footer-banner.md)]
