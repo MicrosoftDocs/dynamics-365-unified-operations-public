@@ -1084,6 +1084,8 @@
               href: data-entities/dual-write/multiple-entity-maps.md
             - name: Edit a legal entity after dual-write setup
               href: data-entities/dual-write/edit-legal-entity.md
+            - name: Pause dual-write for maintenance
+              href: data-entities/dual-write/pause-for-maintenance.md
             - name: Error management and alert notifications
               href: data-entities/dual-write/errors-and-alerts.md
             - name: Application lifecycle management
