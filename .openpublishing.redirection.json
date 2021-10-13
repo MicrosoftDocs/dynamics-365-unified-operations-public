@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/finance/asset-leasing/post-transition-adjust-journal.md",
+      "redirect_url": "adjust-lease",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/emea-ita-black-list-report.md",
       "redirect_url": "italy",
       "redirect_document_id": "false"
