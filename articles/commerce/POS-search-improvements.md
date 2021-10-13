@@ -152,7 +152,5 @@ The following list shows the how the cloud-powered customer search functionality
 > The customer search capability using the Azure Cognitive Search service is available in limited regions for preview. The customer search capability is *not* available in the following regions:
 > - Brazil
 > - India
-> - Canada
-> - United Kingdom
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
