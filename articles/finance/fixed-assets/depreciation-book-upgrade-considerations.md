@@ -2,7 +2,7 @@
 # required metadata
 
 title: Depreciation book upgrade overview
-description: In previous releases, there were two valuation concepts for fixed assets, value models, and depreciation books. 
+description: This topic describes the current book functionality in Fixed assets, which is based on the value model functionality that was available in earlier versions, but that also includes all the functionality that was previously provided only in depreciation books. 
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,10 +31,11 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the current book functionality in Fixed assets, which is based on the value model functionality that was available in earlier versions, but that also includes all the functionality that was previously provided only in depreciation books. 
+This topic describes the current book functionality in Fixed assets, which is based on the value model functionality that was available in earlier versions, but that also includes all the functionality that was previously provided only in depreciation books. The value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. Book functionality lets you use a single set of pages, inquiries, and reports for all your organization’s fixed asset processes. This topic provides some things to consider for the upgrade. 
 
-Book functionality lets you use a single set of pages, inquiries, and reports for all your organization’s fixed asset processes. The tables in this topic describe earlier functionality for depreciation books and value models, together with current functionality for books.
+The upgrade process will move your existing setup and all existing transactions to the new book structure. Value models will remain as they currently are, as a book that posts to the general ledger. Depreciation books will be moved to a book that has the Post to general ledger option set to No. Depreciation book journal names will be moved to a general ledger journal name with the posting layer set to None. Depreciation book transactions will be moved to Fixed asset transactions.
 
+Before running the data upgrade, you should understand the two options available for upgrading depreciation book journal lines to transaction vouchers, and the number sequence that will be used for the voucher series.
 Option 1:  **System-defined number sequence** - This is the default option to optimize upgrade performance. The upgrade will not use the number sequences framework, but instead will allocate vouchers with a set-based approach. After the upgrade, the new number sequence will be created with the **Next number set** appropriately based on the upgraded transactions. By default, the number sequence used will be in the FADBUpgr\#\#\#\#\#\#\#\#\# format. There are a few parameters available to you to adjust the format when using this approach:
 
 -   **Number sequence code** – The code to identify the number sequence. This number sequence code cannot exist since it will be created by the upgrade.
