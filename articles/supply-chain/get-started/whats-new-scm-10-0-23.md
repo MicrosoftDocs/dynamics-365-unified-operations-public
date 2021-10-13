@@ -30,8 +30,8 @@ The following table lists the features that are included in this release. The *F
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory&nbsp;and&nbsp;logistics | [Pause tasks in the Warehouse Management mobile app](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/park-tasks-warehouse-management-mobile-app) | <!-- KFM: Add link to topic when ready --> | Feature management (*Warehouse management app detours*) |
-| Inventory&nbsp;and&nbsp;logistics | [Warehouse app promoted fields](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | <!-- KFM: Add link to topic when ready --> | Feature management (*Warehouse app promoted fields*) |
+| Inventory&nbsp;and&nbsp;logistics | [Pause tasks in the Warehouse Management mobile app](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/park-tasks-warehouse-management-mobile-app) | *Coming soon.* <!-- KFM: Add link to topic when ready --> | Feature management (*Warehouse management app detours*) |
+| Inventory&nbsp;and&nbsp;logistics | [Warehouse app promoted fields](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | *Coming soon.* <!-- KFM: Add link to topic when ready --> | Feature management (*Warehouse app promoted fields*) |
 | Production control | [Report on co- and by-products from the production floor execution interface](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-process-manufacturing) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management (*Report on co- and by-products from the production floor execution interface*) |
 
 ## Feature enhancements included in this release
