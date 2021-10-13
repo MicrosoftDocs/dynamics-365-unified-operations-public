@@ -40,6 +40,19 @@ Once it is done, the status is marked **Completed** and then you can change the 
 
 ![Initial sync retry without errors.](media/Initial-sync-rerun-4.png)
 
+## Catch-up errors from pausing a table map
+
+When you [resume a table map after pausing](pause-for-maintenance.md), some records might error out and fail to write due to various reasons including business validations on destination app. In these cases, the records will continue to remain in the queue and can be viewed under the **Catch-up errors** tab.
+
+![Queued records retry selected.](media/Queued-Insights-retry-selected3.png "Queued records retry selected")
+
+The detailed Error message will help you fix the underlying issue after which you could **Retry selected** records or **Retry All** records. Once the retry is successful, **Retry status** will be marked as **Completed**.
+
+![Queued records completed.](media/Queued-Insights-retry-selected4.png "Queued records retry selected")
+
+> [!NOTE]
+> Errored records will be available in the queue for 7 days after which will the queue will be purged. In some cases, you may no longer need these records and they can be deleted from the queue.
+
 ## Alert notifications
 
 As an admin, you can create one or more alert settings to handle cases of planned or unplanned maintenance. For example, you can set up the dual-write system to notify you by email if a specific error threshold is reached because of, for example, network errors. The dual-write system can also take action on your behalf. For example, it can pause or stop dual-write.
