@@ -74,10 +74,10 @@ Dynamics 365 Finance 10.0.23 includes platform updates. To learn more, see [Plat
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXX).
 
-#### Date filter on Transaction log
+##### Date filter on Transaction log
 As customers use Dynamics 365 Finance over time, the quantity of data posted within General ledger continues to grow. This has an impact on performance when opening the Transaction log. To improve performance when looking at the Transaction log, this change now opens the page with a default date filter that shows transactions posted over the last seven days. The default filter can be changed using the filter on the **Date** column. 
 
-#### Prevent consolidation processing/deletion for same date range at same time
+##### Prevent consolidation processing/deletion for same date range at same time
 Sometimes customers restart a consolidation process for a date range while the process is still running. This can happen if the customer believes the process wasn’t started correctly, or that it became stalled after it was started. When the process is restarted, the same date range is entered for the consolidation while the process that had been started with that date range is still running. Customers might even go to the consolidation transactions and attempt to delete the consolidation results for the same date range while that consolidation process is still running. Issues can arise when multiple processes are run on the same data set at the same time. A change has been added that provides a validation to ensure that a consolidation process, or deletion, can’t be performed for the same date range when another consolidation is already in progress. As part of this change, consolidations must now be done using a batch, rather than in real time.
 
 ### Regulatory updates
