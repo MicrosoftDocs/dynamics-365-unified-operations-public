@@ -126,7 +126,9 @@ This approach uses a financial dimension where the financial dimension values re
 ### Create local main accounts in the global chart of accounts
 
 *What the copy editor asked about:* In this approach, the local main accounts in the global chart of accounts include the main accounts in the local chart of accounts in the global chart of accounts.
+
 *Original version:* The local main accounts within the global CoA approach is that the local CoA main accounts are included in the global CoA.
+
 *Should it say this:* In this approach, the local main accounts in the local chart of accounts are included in the global chart of accounts.
 
 
