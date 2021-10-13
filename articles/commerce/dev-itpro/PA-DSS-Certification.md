@@ -44,7 +44,7 @@ PA-DSS implementation guides that are available are linked to in the **Version**
 | Microsoft Dynamics AX | 7.0     |
 | Microsoft Dynamics 365 for Operations | 1611 (7.1)  |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | July 2017 (7.2) |
-| Microsoft Dynamics 365 for Retail | July 2017 | 7.2  |
+| Microsoft Dynamics 365 for Retail | July 2017 (7.2)  |
 | Microsoft Dynamics 365 for Finance and Operations | 10.0  |
 
 ## Current certification
