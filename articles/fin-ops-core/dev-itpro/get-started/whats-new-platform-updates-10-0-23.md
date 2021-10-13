@@ -30,8 +30,8 @@ The following features are included in this release. Some of the listed features
 
 | Feature area    | Feature | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
-| Client features  | <p>**Open attachments in a new window**</p><p>Users may want to open attachments in a new window instead of in place from the **Attachments** page. This is especially useful in cases where attachments are being stored in SharePoint, as opening the attachment in a new page prevents the Finance and Operations user session from resetting.</p>  | [Configure document management](../../fin-ops/organization-administration/configure-document-management.md)  |  Option on the **Document management parameters** page |
-| Client features  | <p>**Auto resize a grid column to fit contents**</p><p>Similar to Excel, users with the **New grid control** feature enabled can double-click on a column's sizing handles to automatically resize the column to fit the current contents in that column.</p>  | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | Included with the **New grid control** feature  |
+| Client features  | <p>**Open attachments in a new window**</p><p>Users might want to open attachments in a new window instead of from the **Attachments** page. This is especially useful in cases where attachments are being stored in SharePoint, as opening the attachment in a new page prevents the user session from resetting.</p>  | [Configure document management](../../fin-ops/organization-administration/configure-document-management.md)  |  Option on the **Document management parameters** page |
+| Client features  | <p>**Auto resize a grid column to fit contents**</p><p>Similar to Microsoft Excel, users with the **New grid control** feature enabled can double-click on a column's sizing handles to automatically resize the column to fit the current contents in that column.</p>  | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | Included with the **New grid control** feature  |
 
 ## Additional resources
 
@@ -39,7 +39,7 @@ The following features are included in this release. Some of the listed features
 
 For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/).
 
-### Dynamics 365: 2021 release wave 1 plan
+### Dynamics 365: 2021 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
