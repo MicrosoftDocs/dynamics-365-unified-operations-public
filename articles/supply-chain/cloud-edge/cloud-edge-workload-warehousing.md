@@ -174,8 +174,8 @@ The following warehouse management functionality isn't currently supported for s
 - Processing with negative on-hand inventory.
 - Warehouse work processing with shipment notes.
 - Warehouse work processing with material handling/warehouse automation.
-- Use of product master data image (for example, on the Warehouse Management mobile app).
-- Use of the cross-company data sharing for products functionality.
+- Product master data images (for example, on the Warehouse Management mobile app).
+- Cross-company data sharing for products.
 
 > [!WARNING]
 > Some warehouse functionality won't be available for warehouses running the warehouse management workloads on a scale unit, and also isn't supported on the hub or on the scale unit workload.
