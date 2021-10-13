@@ -31,8 +31,6 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This topic provides information about how to get started with Tax Calculation. It guides you through the configuration steps in Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance, and Dynamics 365 Supply Chain Management. It then reviews the common process for using Tax Calculation capabilities in Finance and Supply Chain Management transactions.
 
 The setup consists of four main steps:
