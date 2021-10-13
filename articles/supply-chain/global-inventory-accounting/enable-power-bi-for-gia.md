@@ -46,9 +46,9 @@ To set up the Power BI integration, follow these steps.
 
     1. Go to **My workspace**, find the dataset for Global Inventory Accounting, and then, on the **Options** menu, select **Settings**.
     1. In **Settings for Global Inventory Accounting**, expand **Parameters**, and update all parameters as required. In particular, be sure to check the following settings:
-        1. Overwrite the default **Dataverse Url** and **Environment Id** values using the values found on the **Environment details** page in LCS (in the **Power Platform integration** section). <!-- KFM: The last half of this sentence was unclear in the original. I don't have access to LCS, so please confirm this description. -->
-        1. Click **Edit credentials** of **Cds** in the **Data source credentials** section and sign in with the account of dataverse under **OAuth2** authentication method. <!-- KFM: What should we see here? What does success look like? [Ban] There should be no error nor warning message displayed. [Ban] The text "Cds" is hardcoded by power BI which can not be changed...-->
-    1. Verify that the Power BI reports found at **My workspace \> Reports \> Global Inventory Accounting** are now working correctly and display content from your system. <!-- KFM: I was unsure what we should verify here, so I added "are now working correctly and display content from your system". Is that correct? [Ban]: Yes, you are correct.-->
+        1. Overwrite the default **Dataverse Url** and **Environment Id** values using the values found on the **Environment details** page in LCS (in the **Power Platform integration** section).
+        1. Select the **Edit credentials** link next to the **Cds** label in the **Data source credentials** section. Then sign in to your Dataverse account using the **OAuth2** authentication method.
+    1. Verify that the Power BI reports found at **My workspace \> Reports \> Global Inventory Accounting** are now working correctly and display content from your system.
 
 1. Register the application as described in [Configure PowerBI.com integration](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process).
 1. Integrate the **Global Inventory Accounting** Power BI report file into Dynamics 365 Supply Chain Management by following these steps:
