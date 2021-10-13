@@ -13,7 +13,7 @@ ms.author: sericks
 ms.search.validFrom: 2021-10-31
 
 ---
-# Platform updates for version 10.0.23 of Finance and Operations apps (January 2021)
+# Platform updates for version 10.0.23 of Finance and Operations apps (January 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
