@@ -33,8 +33,6 @@ The following features are included in this release. Some of the listed features
 | Client features  | <p>**Open attachments in a new window**</p><p>Users might want to open attachments in a new window instead of from the **Attachments** page. This is especially useful in cases where attachments are being stored in SharePoint, as opening the attachment in a new page prevents the user session from resetting.</p>  | [Configure document management](../../fin-ops/organization-administration/configure-document-management.md)  |  Option on the **Document management parameters** page |
 | Client features  | <p>**Auto resize a grid column to fit contents**</p><p>Similar to Microsoft Excel, users with the **New grid control** feature enabled can double-click on a column's sizing handles to automatically resize the column to fit the current contents in that column.</p>  | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | Included with the **New grid control** feature, which is enabled by default.<br><br>If you need to enable this feature, enable the **New grid control** in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).  |
 
-## Additional resourceshttps://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
-
 ### Bug fixes
 
 For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/).
