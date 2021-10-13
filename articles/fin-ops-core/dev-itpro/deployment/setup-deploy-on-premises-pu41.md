@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 09/27/2021
+ms.date: 10/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -767,7 +767,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
     ```powershell
     #If you need to create self-signed certs
-    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -ClusterConfigFilePath .\ClusterConfig.json
+    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser -ConfigurationFilePath .\ConfigTemplate.xml
 
     .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1,SQL2 -SqlListenerName SQL-LS -ProtectTo CONTOSO\dynuser
     ```
@@ -776,7 +776,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
     ```powershell
     #If you need to create self-signed certs
-    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser -ClusterConfigFilePath .\ClusterConfig.json
+    #.\New-SelfSigned-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser -ConfigurationFilePath .\ConfigTemplate.xml
 
     .\New-ADCS-SQLCert-AllVMs.ps1 -SqlMachineNames SQL1 -ProtectTo CONTOSO\dynuser
     ```
