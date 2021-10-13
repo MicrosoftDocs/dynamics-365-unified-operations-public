@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.23 (December 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.23 preview release.
 author: kfend
-ms.date: 10/08/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,7 +45,6 @@ The following features are included in this release. Some of the listed features
 
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
-| Finance insights | [Forecast bank balance](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/forecast-bank-balance) | [Cash flow forecast](../finance-insights/cash-flow-forecast-intro.md) |   |
 |Tax Calculation    | [Integration with free text invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/tax-calculation-service--integration-free-text-invoice)   | [Tax Calculation integration with Finance and Operation](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | Admins, makers, marketers, or analysts, automatically   |
 |Electronic Invoicing    | [Configurable e-invoice submission to Italian SDI system](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/electronic-invoicing-service-configurable-e-invoice-submission-italian-sdi-sistema-di-interscambio-system-preview)   | [Electronic invoicing overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-service-overview)   | Admins, makers, or analysts   |
 |    |    |    |    |
@@ -56,7 +55,6 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature name in feature management | More information |  
 |---|---|---|
-| Accounts payable  | Process automation - additional support added for modifying query filters   | This feature lets you add tables and filters to process automation queries that are used when you create or edit series or individual occurrences of the process.  |  
 | Tax Calculation  |Tax in transfer order   | This feature is enhanced in 10.0.23 to enable printing tax information on transfer order documents. See [Print tax information on transfer order documents](https://go.microsoft.com/fwlink/?linkid=2174529) for more information.   |  
 | Tax Calculation   |Tax Calculation Service   |This feature is enhanced in 10.0.23 to support legal entity's primary address in Japan, Malaysia, Singapore and Thailand. See Supported countries/regions section in [Tax Calculation overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview?toc=/dynamics365/finance/toc.json#supported-countriesregions) for more information.  |  
 | Globalization  | (Russia) Run Inventory balance turnover report calculation in batch  | The feature provides the possibility to run the Inventory balance turnover report in batch, to store the result of the calculation, and to view the reports generated earlier.  |
