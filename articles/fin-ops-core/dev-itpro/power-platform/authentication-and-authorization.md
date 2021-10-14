@@ -33,7 +33,7 @@ Finance and Operations and Power Platform maintain separate user security, and u
 
 ## User provisioning
 
-### Creating Finance and Operations Users in Power Platform
+### Creating Finance and Operations users in Power Platform
 
 There are three methods in which creating Finance and Operations users in the Power Platform environment can be automated:
 
@@ -46,3 +46,13 @@ Although there are methods to automate the creation of Finance and Operations us
 ### Creating Power Platform users in Finance and Operations
 
 Administrators can manually import Power Platform users into Finance and Operations from Azure Active Directory. This can be done with the **Import users** action in Finance and Operations. See [Import new users from Azure AD](../sysadmin/tasks/create-new-users#import-new-users-from-azure-ad) for more information.
+
+## Security model
+
+Power Platform users working in Dataverse can interact with Finance and Operations entities through virtual entities and receive business events triggered by user actions in Finance and Operations. To interact with virtual entities in Dataverse, the user must have privileges to the virtual entity metadata. When a transaction is performed in Dataverse, a virtual entity call is made to Finance and Operations where it authorizes the user's request, validating against the user's security role and privileges defined in Finance and Operations.
+
+For more information on the Dataverse virtual entity interaction and security model with Finance and Operations, see the [Architecture](./virtual-entities-overview) section of the virtual entities overview documentation.
+
+## Security roles for Finance and Operations users created in Power Platform
+
+When users with the **Dynamics 365 Finance** license are automatically created as users in Power Platform, the Power Platform user is automatically assigned both the **Finance and Operations Basic user** and **Environment Maker** security roles.
