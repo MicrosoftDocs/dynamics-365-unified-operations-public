@@ -1004,6 +1004,8 @@
         href: power-platform/overview.md
       - name: Enabling the Power Platform integration
         href: power-platform/enable-power-platform-integration.md
+      - name: Authentication and authorization
+        href: power-platform/authentication-and-authorization.md
       - name: Dual-write
         items: 
         - name: Dual-write home page
