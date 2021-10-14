@@ -3,8 +3,8 @@
 
 title: Enable Dataverse virtual entities
 description: This topic provides steps for enabling Finance and Operations virtual entities in Dataverse.
-author: Sunil-Garg
-ms.date: 07/13/2020
+author: jaredha
+ms.date: 10/14/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -19,8 +19,8 @@ ms.reviewer: sericks
 # ms.custom: NotInToc
 ms.search.region: Global
 # ms.search.industry:
-ms.author: sunilg
-ms.search.validFrom: 2020-05-31
+ms.author: jaredha
+ms.search.validFrom: 2021-10-14
 ms.dyn365.ops.version: 10.0.12
 ---
 
