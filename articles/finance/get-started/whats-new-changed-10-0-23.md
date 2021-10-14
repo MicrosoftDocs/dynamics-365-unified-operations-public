@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.23 (December 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.23 preview release.
 author: kfend
-ms.date: 10/08/2021
+ms.date: 10/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,8 +36,7 @@ ms.dyn365.ops.version: 10.0.23
 This topic lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.23. This version has a build number of 10.0.xxx and is available as follows:
 
 - **Preview of release**: October 2021
-- **General availability of release (self-update)**: November 2021
-- **General availability of release (auto-update)**: December 2021
+- **General availability of release (self-update)**: December 2021
 
 ## Features included in this release
 
@@ -45,10 +44,9 @@ The following features are included in this release. Some of the listed features
 
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
-| Finance insights | [Forecast bank balance](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/forecast-bank-balance) | [Cash flow forecast](../finance-insights/cash-flow-forecast-intro.md) |   |
-|Tax Calculation    | [Integration with free text invoice](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/tax-calculation-service--integration-free-text-invoice)   | [Tax Calculation integration with Finance and Operation](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | Admins, makers, marketers, or analysts, automatically   |
-|Electronic Invoicing    | [Configurable e-invoice submission to Italian SDI system](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/electronic-invoicing-service-configurable-e-invoice-submission-italian-sdi-sistema-di-interscambio-system-preview)   | [Electronic invoicing overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-service-overview)   | Admins, makers, or analysts   |
-|    |    |    |    |
+|Tax Calculation    | [Integration with free text invoice](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/tax-calculation-service--integration-free-text-invoice)   | [Tax Calculation integration with Finance and Operations](/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | Admins, makers, marketers, or analysts, automatically   |
+|Electronic Invoicing    | [Configurable e-invoice submission to Italian SDI system](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/electronic-invoicing-service-configurable-e-invoice-submission-italian-sdi-sistema-di-interscambio-system-preview)   | [Electronic invoicing overview](/dynamics365/finance/localizations/e-invoicing-service-overview)   | Admins, makers, or analysts   |
+
 
 ## Feature enhancements included in this release
 
@@ -56,14 +54,12 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Feature area | Feature name in feature management | More information |  
 |---|---|---|
-| Accounts payable  | Process automation - additional support added for modifying query filters   | This feature lets you add tables and filters to process automation queries that are used when you create or edit series or individual occurrences of the process.  |  
-| Tax Calculation  |Tax in transfer order   | This feature is enhanced in 10.0.23 to enable printing tax information on transfer order documents. See [Print tax information on transfer order documents](https://go.microsoft.com/fwlink/?linkid=2174529) for more information.   |  
-| Tax Calculation   |Tax Calculation Service   |This feature is enhanced in 10.0.23 to support legal entity's primary address in Japan, Malaysia, Singapore and Thailand. See Supported countries/regions section in [Tax Calculation overview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-tax-calcuation-service-overview?toc=/dynamics365/finance/toc.json#supported-countriesregions) for more information.  |  
+| Tax Calculation  |Tax in transfer order   | This feature is enhanced in 10.0.23 to enable printing tax information on transfer order documents. For more information, see [Print tax information on transfer order documents](https://go.microsoft.com/fwlink/?linkid=2174529) for more information.   |  
+| Tax Calculation   |Tax Calculation Service   |This feature is enhanced in 10.0.23 to support legal entity's primary address in Japan, Malaysia, Singapore, and Thailand. See the section, **Supported countries/regions** in the topic, [Tax Calculation overview](../localizations/global-tax-calcuation-service-overview.md) for more information.  |  
 | Globalization  | (Russia) Run Inventory balance turnover report calculation in batch  | The feature provides the possibility to run the Inventory balance turnover report in batch, to store the result of the calculation, and to view the reports generated earlier.  |
 | Globalization  | (Russia) Post storno financial inventory transactions according to the correction flag in the financial voucher for Sales orders  | This feature impacts the Credit note corrections functionality for Russia. It enables posting of inventory transactions for Sales invoices in accordance with the correction option in the general ledger. Once the feature is enabled, there are no more discrepancies between Correction flag on financial voucher of inventory transaction and Storno flag on Inventory transactions.  | 
 | Globalization  | (Czech) Enable manual input sales tax amounts for reversing prepayment sales tax amounts | The feature enables a possibility to manually input sale tax amounts for reversing prepayment sales tax amount when settling a vendor invoice against a prepayment. When a user marks an invoice and a prepayment for settlement the system displays dialog form Reverse sales tax amounts for input sales tax amounts for reversing. The dialog form is displayed if sales tax rates in prepayment are different from invoice sales tax rates. | 
-| Revenue recognition  | Revenue recognition conversion to feature management from license configuration | Revenue Recognition will be turned on and off using feature management. Users will be able to enable/disable Revenue Recognition module within the Feature management workspace. In the future, the configuration key for Revenue Recognition will be deprecated. The configuration key will still be available, but as it’s being deprecated, toggling the configuration key won’t have any impact on Revenue Recognition functionality.   |
-|   |   |   |  
+| Revenue recognition  | Revenue recognition conversion to feature management from license configuration | Revenue recognition can be turned on and off using feature management. Users can enable the **Revenue recognition** module in the **Feature management** workspace. In the future, the **Revenue recognition** configuration key will be deprecated. The configuration key will still be available, but because it’s being deprecated, toggling the configuration key won’t have any impact on Revenue recognition functionality.   |
 
 
 ## Additional resources
@@ -75,7 +71,7 @@ Dynamics 365 Finance 10.0.23 includes platform updates. To learn more, see [Plat
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXXX).
 
 ##### Date filter on Transaction log
-As customers use Dynamics 365 Finance over time, the quantity of data posted within General ledger continues to grow. This has an impact on performance when opening the Transaction log. To improve performance when looking at the Transaction log, this change now opens the page with a default date filter that shows transactions posted over the last seven days. The default filter can be changed using the filter on the **Date** column. 
+As customers use Finance over time, the quantity of data posted within General ledger continues to grow. This growth has an impact on performance when opening the Transaction log. To improve performance when looking at the Transaction log, this change now opens the page with a default date filter that shows transactions posted over the last seven days. The default filter can be changed using the filter on the **Date** column. 
 
 ##### Prevent consolidation processing/deletion for same date range at same time
 Sometimes customers restart a consolidation process for a date range while the process is still running. This can happen if the customer believes the process wasn’t started correctly, or that it became stalled after it was started. When the process is restarted, the same date range is entered for the consolidation while the process that had been started with that date range is still running. Customers might even go to the consolidation transactions and attempt to delete the consolidation results for the same date range while that consolidation process is still running. Issues can arise when multiple processes are run on the same data set at the same time. A change has been added that provides a validation to ensure that a consolidation process, or deletion, can’t be performed for the same date range when another consolidation is already in progress. As part of this change, consolidations must now be done using a batch, rather than in real time.
