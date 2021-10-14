@@ -72,7 +72,7 @@ If a payment connector update is issued by the payment connector provider, the u
 
 ## Does Dynamics 365 Commerce support a 'cash out' or 'cash back' operation during the checkout process in Point-of-Sale (POS)?
 
-No, cash back or cash out options are not supported in point-of-sale during a transaction.
+No, cash back or cash out options are not supported in point-of-sale during a transaction. However, customizations via extensibility can be achieved using cash returns and payment operations (similar to how Gift Card "cash out" patterns are used). 
 
 ## Related topics
 
