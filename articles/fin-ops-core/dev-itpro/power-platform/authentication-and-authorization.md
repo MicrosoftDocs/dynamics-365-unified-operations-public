@@ -53,6 +53,19 @@ Power Platform users working in Dataverse can interact with Finance and Operatio
 
 For more information on the Dataverse virtual entity interaction and security model with Finance and Operations, see the [Architecture](./virtual-entities-overview) section of the virtual entities overview documentation.
 
-## Security roles for Finance and Operations users created in Power Platform
+### Security roles in Power Platform
 
-When users with the **Dynamics 365 Finance** license are automatically created as users in Power Platform, the Power Platform user is automatically assigned both the **Finance and Operations Basic user** and **Environment Maker** security roles.
+When users with the **Dynamics 365 Finance** license are automatically created as users in Power Platform, the Power Platform user is automatically assigned both the **Finance and Operations Basic User** and **Environment Maker** security roles.
+
+- The **Finance and Operations Basic User** security role allows the user to access and update virtual entities and business events. Whenever a virtual entity or business event is activated in the Dataverse environment the virtual entity or business event privileges are automatically granted to the security role.
+- The **Environment Maker** security role allows the user to create Power Apps and flows in Power Automate. 
+
+For information on manually assigning security roles to Power Platform users in the Power Platform admin center, see [Assign a security role to a user](https://docs.microsoft.com/power-platform/admin/assign-security-roles).
+
+### Security roles in Finance and Operations
+
+The security roles assigned to a user in Finance and Operations will depend on the system access the user requires to perform his or her assigned duties and responsibilities. The security roles in Finance and Operations will determine the application data to which the user has access. A user will not be able to access data through the Power Platform integration if the user's assigned security roles in Finance and Operations do not grant permissions to the data.
+
+The security role for Finance and Operatins must be added manually by the system administrator. Different security roles can be assigned to the user in Finance and 
+
+
