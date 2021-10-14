@@ -4,7 +4,7 @@
 title: Payments FAQ
 description: This topic describes the payment options that are available in Dynamics 365 Commerce.
 author: athinesh99
-ms.date: 10/16/2020
+ms.date: 10/14/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -70,9 +70,9 @@ For the Adyen connector, refer to the Adyen connector [overview page](/dynamics3
 
 If a payment connector update is issued by the payment connector provider, the updated version of the payment connector will be included in the next planned release of Dynamics 365 Commerce. However, the customer can also work directly with the payment connector provider to uptake it earlier.
 
-## Does Dynamics 365 Commerce support a 'cash out' or 'cash back' operation during the checkout process in Point-of-Sale (POS)?
+## Does Dynamics 365 Commerce support a "cash out" or "cash back" operation during the checkout process in point of sale (POS)?
 
-No, cash back or cash out options are not supported in point-of-sale during a transaction. However, customizations via extensibility can be achieved using cash returns and payment operations (similar to how Gift Card "cash out" patterns are used). 
+No, cash back or cash out options are not supported in POS during a transaction. However, customizations via extensibility can be achieved using cash returns and payment operations that are similar to gift card "cash out" operations. 
 
 ## Related topics
 
