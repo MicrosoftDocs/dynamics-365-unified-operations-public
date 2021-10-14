@@ -48,6 +48,8 @@ Ensure the following solutions are installed in Dataverse.
 
 - **MicrosoftOperationsERPVE** - This is the API-managed solution, which will contain the generated virtual entities as they are made visible.
 
+When updates are available for the virtual entity solution, they can be manually applied in the Power Platform admin center. See [Manage Dynamics 365 apps] in the Power Platform documentation for more information on manually installing and updating the virtual entity solution. For Finance and Operations environments that are linked to a Power Platform environment, available updates to the virtual entity solution are applied automatically.
+
 ## Authentication and authorization
 
 After the solutions are imported in the Dataverse environment, both environments must be set up to connect to each other. Dataverse will call Finance and Operations using Service-to-Service (S2S) authentication, based on an Azure Active Directory (AAD) application. This new AAD application represents the single instance of the Dataverse environment. If you have multiple pairs of Dataverse and Finance and Operations environments, separate AAD applications for each pair must be created to ensure connections are established between the correct pair of Finance and Operations and Power Platform environments. 
