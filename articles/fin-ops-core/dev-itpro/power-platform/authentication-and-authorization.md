@@ -37,7 +37,7 @@ Finance and Operations and Power Platform maintain separate user security, and u
 
 There are three methods in which creating Finance and Operations users in the Power Platform environment can be automated:
 
-1. The first method occurs during initial creation of a linked environment. When a new Power Platform environment is created as a linked environment to a Finance and Operations environment, all active users created in the Microsoft 365 admin center who are assigned the **Dynamics 365 Finance** license are automatically added as users in the new Power Platform environment. See [Enabling the Microsoft Power Platform integration](/enable-power-platform-integration.md) for more information on creating linked environments. 
+1. The first method occurs during initial creation of a linked environment. When a new Power Platform environment is created as a linked environment to a Finance and Operations environment, all active users created in the Microsoft 365 admin center who are assigned the **Dynamics 365 Finance** license are automatically added as users in the new Power Platform environment. See [Enabling the Microsoft Power Platform integration](./enable-power-platform-integration.md) for more information on creating linked environments. 
 2. The second method occurs when a new user is added in the Microsoft 365 admin center. When a new user is created and assigned the **Dynamics 365 Finance** license, the new user is automatically created as a user in Power Platform environments linked to a Finance and Operations environment. It can take up to an hour for the new user to be created in Power Platform. 
 3. If a user who is assigned the **Dynamics 365 Finance** license signs into the Power Platform environment prior to the user synchronization, then the user record is created when first accessing the Power Platform environment.
 
@@ -45,4 +45,4 @@ Although there are methods to automate the creation of Finance and Operations us
 
 ### Creating Power Platform users in Finance and Operations
 
-Administrators can manually import Power Platform users into Finance and Operations from Azure Active Directory. This can be done with the **Import users** action in Finance and Operations. See [Import new users from Azure AD](/create-new-users.md#import-new-users-from-azure-ad) for more information.
+Administrators can manually import Power Platform users into Finance and Operations from Azure Active Directory. This can be done with the **Import users** action in Finance and Operations. See [Import new users from Azure AD](./create-new-users#import-new-users-from-azure-ad) for more information.
