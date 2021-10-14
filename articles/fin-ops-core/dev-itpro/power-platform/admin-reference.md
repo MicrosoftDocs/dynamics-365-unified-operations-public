@@ -48,7 +48,7 @@ Ensure the following solutions are installed in Dataverse.
 
 - **MicrosoftOperationsERPVE** - This is the API-managed solution, which will contain the generated virtual entities as they are made visible.
 
-When updates are available for the virtual entity solution, they can be manually applied in the Power Platform admin center. See [Manage Dynamics 365 apps] in the Power Platform documentation for more information on manually installing and updating the virtual entity solution. For Finance and Operations environments that are linked to a Power Platform environment, available updates to the virtual entity solution are applied automatically.
+When updates are available for the virtual entity solution, they can be manually applied in the Power Platform admin center. See [Manage Dynamics 365 apps](https://docs.microsoft.com/power-platform/admin/manage-apps) in the Power Platform documentation for more information on manually installing and updating the virtual entity solution. For Finance and Operations environments that are linked to a Power Platform environment, available updates to the virtual entity solution are applied automatically.
 
 ## Authentication and authorization
 
