@@ -45,4 +45,4 @@ Although there are methods to automate the creation of Finance and Operations us
 
 ### Creating Power Platform users in Finance and Operations
 
-Administrators can manually import Power Platform users into Finance and Operations from Azure Active Directory. This can be done with the **Import users** action in Finance and Operations. See [Import new users from Azure AD](./create-new-users#import-new-users-from-azure-ad) for more information.
+Administrators can manually import Power Platform users into Finance and Operations from Azure Active Directory. This can be done with the **Import users** action in Finance and Operations. See [Import new users from Azure AD](../sysadmin/tasks/create-new-users#import-new-users-from-azure-ad) for more information.
