@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2
-description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2.
+title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3
+description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3.
 author: ShellyBakke
 ms.date: 06/21/2021
 ms.topic: article
@@ -28,9 +28,11 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, and Dynamics AX 2012 R2 ends on October 9, 2018. After that date, only security hotfixes will continue to be provided for these three versions through the extended support period that continues until April 12, 2022. For more information, see [support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX).
+Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, and Dynamics AX 2012 R2 ended on October 9, 2018. After that date, only security hotfixes will continue to be provided for these three versions through the extended support period that continues until April 12, 2022. For more information, see [support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX).
 
-Mainstream support for Dynamics AX 2012 R3 continues through October 12, 2021. Microsoft will continue making security hotfixes, non-security hotfixes, and regulatory updates for Dynamics AX 2012 R3 throughout that mainstream support period. The source code for these non-binary, non-security hotfixes and regulatory updates will continue to be available for customers, and their partners, active on the Enhancement Plan or Software Assurance. Customers and partners can get the source code from packages attached to relevant Dynamics AX 2012 R3 KB articles published on Lifecycle Services (LCS) and discoverable through Issue Search.
+Mainstream support for Dynamics AX 2012 R3 ended on October 12, 2021. 
+During mainstream support period, Microsoft will continue making security hotfixes, non-security hotfixes, and regulatory updates for Dynamics AX 2012 R3. 
+The source code for these non-binary, non-security hotfixes and regulatory updates will continue to be available for customers, and their partners, active on the Enhancement Plan or Software Assurance. Customers and partners can get the source code from packages attached to relevant Dynamics AX 2012 R3 KB articles published on Lifecycle Services (LCS) and discoverable through Issue Search.
 
 Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Retail, and Human Resources:
 
@@ -53,7 +55,7 @@ No. Neither non-security hotfixes nor regulatory updates will be available for t
 
 While the ability to request a non-security hotfix for select products is included with Unified Support Advanced and Performance Levels, Microsoft has determined that non-security hotfixes cannot be provided with a *commercially reasonable* effort for these products. As a result, no requests for non-security hotfixes or regulatory updates will be accepted. However, Microsoft will continue making security hotfixes, non-security hotfixes, and regulatory updates for Dynamics AX 2012 R3 throughout that mainstream support period. The source code for these non-binary, non-security hotfixes and regulatory updates will continue to be available for customers, and their partners, active on the Enhancement Plan or Software Assurance. Dynamics AX 2009 SP1, Dynamics AX 2012, and Dynamics AX 2012 R2 customers can selectively integrate those changes as required. Customers and partners can get the source code from packages attached to relevant Dynamics AX 2012 R3 KB articles published on LCS and discoverable through LCS Issue Search.
 
-### I knew about the regulatory change before October 9, 2018, but it has the law enforcement date after October 9, 2018. Will I still get a regulatory update for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, and Dynamics AX 2012 R2?
+### I knew about the regulatory change before October 9, 2018, but it has the law enforcement date after October 9, 2018. Will I still get a regulatory update for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, and Dynamics AX 2012 R2? (same question and same answer for Dynamics AX 2012 R3 after October 12th, 2021)
 
 No, we will only provide regulatory updates for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, and Dynamics AX 2012 R2 for regulatory changes with the law enforcement dates on or earlier than October 9, 2018.
 
@@ -63,9 +65,9 @@ No, there is no difference.
 
 ### What happens if a new bug is found by a customer in Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, or Dynamics AX 2012 R2?
 
-The bug must be reproducible in Dynamics AX 2012 R3. If it is reproducible and accepted, then a hotfix will be provided for Dynamics AX 2012 R3 and the customers can elect to integrate this hotfix in their version themselves, or work with their partners to integrate the changes.
+The bug must be reproducible in Dynamics AX 2012 R3. If it is reproducible and accepted, then a hotfix will be provided for Dynamics AX 2012 R3 during MainStream Support phase, and the customers can elect to integrate this hotfix in their version themselves, or work with their partners to integrate the changes.
 
-### How are binary hotfixes handled for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, and Dynamics AX 2012 R2?
+### How are binary hotfixes handled for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3?
 
 If a hotfix is needed for a part of the system where Microsoft does not provide the source code and it is not a security bug, the hotfix will not be provided.
 
