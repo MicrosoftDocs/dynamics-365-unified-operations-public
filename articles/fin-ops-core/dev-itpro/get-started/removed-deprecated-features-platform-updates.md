@@ -38,6 +38,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Platform updates for version 10.0.23 of Finance and Operations apps
+
+### SystemNotificationsManager.AddNotification API
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Desire to require additional parameters when adding notifications in this way. |
+| **Replaced by another feature?**   | SystemNotificationsManager.AddSystemNotification(). This API mandates developers explicitly set ExpirationDateTime and RuleID for generated notifications. |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Planned removal date is April 2022. |
+
 ## Platform updates for version 10.0.21 of Finance and Operations apps
 
 ### Skype for Business Online support
