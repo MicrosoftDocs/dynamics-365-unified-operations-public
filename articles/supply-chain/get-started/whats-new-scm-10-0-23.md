@@ -36,7 +36,9 @@ The following table lists the features that are included in this release. The *F
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists the feature enhancements that are new for this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+
+If you want to use any of these features, you must explicitly enable them in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), where they are listed using the names shown in the *Feature name in feature management* column of the following table (unless otherwise noted).
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
@@ -49,7 +51,7 @@ The following table lists the feature enhancements that are included in this rel
 | Production control | Validate expiration of raw materials against planned consumption date | This feature changes how batch expiration dates are validated when reserving a batch of raw material to be used during production. When this feature is enabled, the batch expiration date is validated against the planned consumption date (the raw material date), as established on the production BOM line or batch order formula line. When this feature is disabled, the batch expiration date is validated against the planned delivery date of the production or batch order (as previously). |
 | Sales and marketing | Clean up sales-order update history | This feature lets you clean up temporary historical records related to sales order updates. It adds a new button called **Clean up sales update history** to the Action Pane of the detail and list pages for sales orders. |
 | Sales and marketing | Improve "Top 100" customers report performance | This feature improves the performance of the **Top 100** customers report by always running the report across all customers (which is its intended use) rather than by allowing custom queries. When this feature is enabled, all **Records to include** settings are disabled in the **Top 100** report dialog. |
-| Warehouse management | Scale unit support for release to warehouse of outbound orders | When this preview feature is enabled, outbound orders can be released from the hub directly to the scale unit where the orders will be fulfilled. |
+| Warehouse management | Scale unit support for release to warehouse of outbound orders | When this feature is enabled, outbound orders can be released from the hub directly to the scale unit where the orders will be fulfilled. |
 
 ## New and updated documentation resources
 
