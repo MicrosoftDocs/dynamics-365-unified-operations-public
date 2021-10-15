@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: 10.0.21
 
 ---
-# Preview features in in Dynamics 365 Commerce 10.0.21 (October 2021)
+# What's new and changed in Dynamics 365 Commerce 10.0.21 (October 2021)
 
 [!include [banner](../includes/banner.md)]
 
