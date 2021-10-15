@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3
+title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2, and Dynamics AX 2012 R3
 description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3.
 author: ShellyBakke
-ms.date: 06/21/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,15 +24,13 @@ ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ---
 
-# End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2
+# End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2, and Dynamics AX 2012 R3
 
 [!include[banner](../includes/banner.md)]
 
-Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, and Dynamics AX 2012 R2 ended on October 9, 2018. After that date, only security hotfixes will continue to be provided for these three versions through the extended support period that continues until April 12, 2022. For more information, see [support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX).
+Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, and Dynamics AX 2012 R2 ended on October 9, 2018. Only security hotfixes will continue to be provided for these three versions through the extended support period that continues until April 12, 2022. For more information, see [support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX).
 
-Mainstream support for Dynamics AX 2012 R3 ended on October 12, 2021. 
-During mainstream support period, Microsoft will continue making security hotfixes, non-security hotfixes, and regulatory updates for Dynamics AX 2012 R3. 
-The source code for these non-binary, non-security hotfixes and regulatory updates will continue to be available for customers, and their partners, active on the Enhancement Plan or Software Assurance. Customers and partners can get the source code from packages attached to relevant Dynamics AX 2012 R3 KB articles published on Lifecycle Services (LCS) and discoverable through Issue Search.
+Mainstream support for Dynamics AX 2012 R3 ended on October 12, 2021. Microsoft will continue making security hotfixes, non-security hotfixes, and regulatory updates for Dynamics AX 2012 R3 throughout that mainstream support period. The source code for these non-binary, non-security hotfixes and regulatory updates will continue to be available for customers, and their partners, active on the Enhancement Plan or Software Assurance. Customers and partners can get the source code from packages attached to relevant Dynamics AX 2012 R3 KB articles published on Lifecycle Services (LCS) and discoverable through Issue Search.
 
 Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Retail, and Human Resources:
 
