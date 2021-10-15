@@ -4,7 +4,7 @@
 title: Prepare your environment to interoperate with HMRC's MTD VAT web service
 description: This topic explains how to set up Making Tax Digital for value-added tax (MTD VAT) in the United Kingdom (UK).
 author: liza-golub
-ms.date: 09/07/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,6 +45,8 @@ After your company is [signed up for the Making Tax Digital (MTD) service for va
 - [Set up security roles for electronic message processing](#processing).
 - [Set up security roles to interoperate with HMRC's MTD VAT web service](#application).
 - [Send fraud prevention data](#sending-headers).
+
+MTD VAT APIs require that you use TLS 1.2. For more information about how to enable TLS 1.2, see [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2). 
 
 ## <a id="configurations"></a>Import and set up ER configurations
 
