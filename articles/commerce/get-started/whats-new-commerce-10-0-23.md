@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.23 (December 2021)
+title: Preview features in Dynamics 365 Commerce 10.0.23
 description: This topic describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.23. 
 author: josaw1
 ms.date: 10/15/2021
@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
 
 ---
-# Preview features in in Dynamics 365 Commerce 10.0.23 (December 2021)
+# Preview features in in Dynamics 365 Commerce 10.0.23
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
