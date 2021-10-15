@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2
-description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2.
+title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3
+description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3.
 author: ShellyBakke
 ms.date: 06/21/2021
 ms.topic: article
@@ -24,13 +24,13 @@ ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ---
 
-# End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2
+# End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX2012 R2 and Dynamics AX 2012 R3
 
 [!include[banner](../includes/banner.md)]
 
 Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, and Dynamics AX 2012 R2 ends on October 9, 2018. After that date, only security hotfixes will continue to be provided for these three versions through the extended support period that continues until April 12, 2022. For more information, see [support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX).
 
-Mainstream support for Dynamics AX 2012 R3 continues through October 12, 2021. Microsoft will continue making security hotfixes, non-security hotfixes, and regulatory updates for Dynamics AX 2012 R3 throughout that mainstream support period. The source code for these non-binary, non-security hotfixes and regulatory updates will continue to be available for customers, and their partners, active on the Enhancement Plan or Software Assurance. Customers and partners can get the source code from packages attached to relevant Dynamics AX 2012 R3 KB articles published on Lifecycle Services (LCS) and discoverable through Issue Search.
+Mainstream support for Dynamics AX 2012 R3 ended on October 12, 2021.  After that date, only security hotfixes will continue to be provided through the extended support period that continues until  January 10, 2023.  For more information, see [support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX).
 
 Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Retail, and Human Resources:
 
@@ -43,7 +43,11 @@ Customers are advised to upgrade to the latest version of Finance and Operations
 
 Mainstream support ends on October 9, 2018.
 
-### Was the information of the end date of the mainstream support for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, and Dynamics AX 2012 R2 available before?
+### When does the mainstream support for Dynamics AX 2012 R3 end?
+
+Mainstream support ends on Ocotober 12, 2021.
+
+### Was the information of the end date of the mainstream support for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3 available before?
 
 Yes, it was always publicly available on the Microsoft Support Lifecycle site at [support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX).
 
@@ -51,7 +55,7 @@ Yes, it was always publicly available on the Microsoft Support Lifecycle site at
 
 No. Neither non-security hotfixes nor regulatory updates will be available for the Dynamics AX products during the Extended Support phase of the product lifecycle (Dynamics AX 2009 SP1, Dynamics AX 2012, Dynamics AX 2012 R2, or Dynamics AX 2012 R3).
 
-While the ability to request a non-security hotfix for select products is included with Unified Support Advanced and Performance Levels, Microsoft has determined that non-security hotfixes cannot be provided with a *commercially reasonable* effort for these products. As a result, no requests for non-security hotfixes or regulatory updates will be accepted. However, Microsoft will continue making security hotfixes, non-security hotfixes, and regulatory updates for Dynamics AX 2012 R3 throughout that mainstream support period. The source code for these non-binary, non-security hotfixes and regulatory updates will continue to be available for customers, and their partners, active on the Enhancement Plan or Software Assurance. Dynamics AX 2009 SP1, Dynamics AX 2012, and Dynamics AX 2012 R2 customers can selectively integrate those changes as required. Customers and partners can get the source code from packages attached to relevant Dynamics AX 2012 R3 KB articles published on LCS and discoverable through LCS Issue Search.
+While the ability to request a non-security hotfix for select products is included with Unified Support Advanced and Performance Levels, Microsoft has determined that non-security hotfixes cannot be provided with a *commercially reasonable* effort for these products. As a result, no requests for non-security hotfixes or regulatory updates will be accepted. 
 
 ### I knew about the regulatory change before October 9, 2018, but it has the law enforcement date after October 9, 2018. Will I still get a regulatory update for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, and Dynamics AX 2012 R2?
 
@@ -61,13 +65,32 @@ No, we will only provide regulatory updates for Dynamics AX 2009 Service Pack 1,
 
 No, there is no difference.
 
-### What happens if a new bug is found by a customer in Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, or Dynamics AX 2012 R2?
-
-The bug must be reproducible in Dynamics AX 2012 R3. If it is reproducible and accepted, then a hotfix will be provided for Dynamics AX 2012 R3 and the customers can elect to integrate this hotfix in their version themselves, or work with their partners to integrate the changes.
-
-### How are binary hotfixes handled for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, and Dynamics AX 2012 R2?
+### How are binary hotfixes handled for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, Dynamics AX 2012 R2, and Dynamics AX 2012 R3?
 
 If a hotfix is needed for a part of the system where Microsoft does not provide the source code and it is not a security bug, the hotfix will not be provided.
 
+### Can I access information about upcoming legislation changes in supported countries?
+
+Yes, all legislation changes regardless of source (vendors, MS own research, Localization community....) are stored in the Lifecycle Service (LCS) alerting project.  To access LCS alerting project:
+      Sign up:  Send email request to join Localization community (under NDA) at DynRegW@microsoft.com
+      Access:  Log into LCS project "Regulatory Alerts - Worldwide" (available only for companies with NDA or indivdiduals who signed up for the Insider Program)
+      Alerting guide:  Inform Microsoft about country/region regulation alerts and track the status of regulatory features
+
+Please note the LCS alerting project includes all identified/reported legislation changes (alerts) but not actual MS plans.
+
+### Can I get visibility into Microsoft plans for releases of new Regulatory features?
+
+Yes, in LCS issue search, information is published regarding upcoming regulatory updates for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Project Operations.  
+
+#### Are details about released Regulatory features available?
+
+Yes, for larger features, we are publishing documentation at:  https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/finance/toc.json.
+
+### Can I view and try actual Regulatory features on Dynamics 365 prior to release?
+Yes, if you have purchased cloud licenses for Dynamics 365 and you have access to the PEAP (Preview Early Access Program). For regulatory changes specified by authorities early, the features will be available in PEAP prior to LAw enforced date (or latest date for first filing).
+
+### Can I access the code and configurations for Regulatory features prior to release?
+Yes, the code will be available in the LCS project "PEAP Assets", in the Asset Library under Software Deployable package.  To sign-up for the PEAP program complete this form:  https://aka.ms/peap.  
+Configurations are available in the Global repository.  Please see Download ER configurations from the Global repository of Configuration service - Finance & Operations | Dynamics 365 | Microsoft Docs for Details.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
