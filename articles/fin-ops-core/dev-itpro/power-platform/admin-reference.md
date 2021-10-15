@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.12
 This topic provides step-by-step guidance for configuring virtual entities for Finance and Operations apps in Dataverse. 
 
 > [!NOTE]
-> The configuration steps outlined in this topic are required only for Finance and Operations environments that are not linked to a Power Platform environment. For Finance and Operations environments that are linked to a Power Platform environment, the virtual entity configuration outlined in this topic is done automatically as part of the linking process. These steps are required to enable virtual entities only for Finance and Operations environments that are not linked to a Power Platform environment. See [Enabling the Microsoft Power Platform integration](enable-power-platform-integration.md) for information on linking Finance and Operations to a Power Platform environment.
+> The configuration steps outlined in this topic are required only for Finance and Operations environments for which the Power Platform integration has not been enabled. For Finance and Operations environments that have the Power Platform integration enabled, the virtual entity configuration outlined in this topic is done automatically as part of the process to enable the integration, linking the environments. See [Enabling the Microsoft Power Platform integration](enable-power-platform-integration.md) for information on enabling the Power Platform integration for Finance and Operations environments.
 
 ## Getting the virtual entity solution
 The Dataverse solution for Finance and Operations virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [Finance and Operations virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
@@ -48,7 +48,10 @@ Ensure the following solutions are installed in Dataverse.
 
 - **MicrosoftOperationsERPVE** - This is the API-managed solution, which will contain the generated virtual entities as they are made visible.
 
-When updates are available for the virtual entity solution, they can be manually applied in the Power Platform admin center. See [Manage Dynamics 365 apps](https://docs.microsoft.com/power-platform/admin/manage-apps) in the Power Platform documentation for more information on manually installing and updating the virtual entity solution. For Finance and Operations environments that are linked to a Power Platform environment, available updates to the virtual entity solution are applied automatically.
+When updates are available for the virtual entity solution, they can be manually applied in the Power Platform admin center. See [Manage Dynamics 365 apps](https://docs.microsoft.com/power-platform/admin/manage-apps) in the Power Platform documentation for more information on manually installing and updating the virtual entity solution. 
+
+> [!NOTE]
+> For Finance and Operations environments for which the Power Platform integration is enabled, available updates to the virtual entity solution are applied automatically.
 
 ## Authentication and authorization
 
