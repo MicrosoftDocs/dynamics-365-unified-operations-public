@@ -47,7 +47,7 @@ The following features are included in this release. Some of the listed features
 |   E-commerce  |  Enable inventory awareness for the search results module    |  [Search results module](../search-result-module.md)  |  Feature management (*Enhanced e-Commerce product discovery to be inventory-aware*)  |
 |   E-commerce  |  Configure site builder for e-commerce product search being inventory aware    |  [Apply inventory settings](../inventory-settings.md)  |  Site builder settings  |
 |   Merchandising |   [Improved pricing computation performance by using flattened discount tables](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/improved-pricing-computation-performance-using-flattened-discount-tables)   |   [Retail discounts](../retail-discounts-overview.md)  |  Feature management (*Improve discount computation performance by using flattened discount tables feature.*)  |
-|   Office integration  |   Create email templates for transactional events  |  [Create email templates for transactional events](email-templates-transactions.md)   |
+|   Office integration  |   Create email templates for transactional events  |  [Create email templates for transactional events](email-templates-transactions.md)   | Enabled by default  |
 
 ## Additional resources
 
