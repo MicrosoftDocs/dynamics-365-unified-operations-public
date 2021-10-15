@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.23 (December 2021)
+title: What's new or changed in Dynamics 365 Finance 10.0.23 
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.23 preview release.
 author: kfend
 ms.date: 10/15/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.23
 
 ---
 
-# Preview features in Dynamics 365 Finance 10.0.23 (December 2021)
+# Preview features in Dynamics 365 Finance 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
