@@ -25,7 +25,7 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. See the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features) for official release dates for each feature.
+The following table lists the features that are included in this release.
 
 | Feature area    | Feature | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
