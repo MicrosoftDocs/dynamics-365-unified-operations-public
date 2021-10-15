@@ -65,7 +65,7 @@ No, there is no difference.
 
 The bug must be reproducible in Dynamics AX 2012 R3. If it is reproducible and accepted, then a hotfix will be provided for Dynamics AX 2012 R3 during MainStream Support phase, and the customers can elect to integrate this hotfix in their version themselves, or work with their partners to integrate the changes.
 
-### How are binary hotfixes handled for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3?
+### How are binary hotfixes handled for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, Dynamics AX 2012 R2, and Dynamics AX 2012 R3?
 
 If a hotfix is needed for a part of the system where Microsoft does not provide the source code and it is not a security bug, the hotfix will not be provided.
 
