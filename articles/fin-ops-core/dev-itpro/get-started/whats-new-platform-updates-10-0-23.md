@@ -25,12 +25,12 @@ This topic lists the features that are included in the platform updates for vers
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. The *Feature* column provides links to the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/planned-features), where you can see the official release dates for each feature. The *More information* column provides more details and/or links to related documentation. To determine how to turn on a feature, see the *Enabled by* column. For more information about how to use feature management, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). We might update this topic to include features that made it into the build after this topic was initially published.
+The following table lists the features that are included in this release. 
 
 | Feature area    | Feature | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
 | Client features  | <p>**Open attachments in a new window**</p><p>Users might want to open attachments in a new window instead of from the **Attachments** page. This is especially useful in cases where attachments are being stored in SharePoint, as opening the attachment in a new page prevents the user session from resetting.</p>  | [Configure document management](../../fin-ops/organization-administration/configure-document-management.md)  |  Option on the **Document management parameters** page |
-| Client features  | <p>**Auto resize a grid column to fit contents**</p><p>Similar to Microsoft Excel, users with the **New grid control** feature enabled can double-click on a column's sizing handles to automatically resize the column to fit the current contents in that column.</p>  | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | Included with the **New grid control** feature, which is enabled by default in Feature management.  |
+| Client features  | <p>**Auto resize a grid column to fit contents**</p><p>Similar to Microsoft Excel, users with the **New grid control** feature enabled can double-click on a column's sizing handles to automatically resize the column to fit the current contents in that column.</p>  | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | Included with the **New grid control** feature, which is enabled by default in Feature management(../../fin-ops/get-started/feature-management/feature-management-overview.md).  |
 
 ### Bug fixes
 
