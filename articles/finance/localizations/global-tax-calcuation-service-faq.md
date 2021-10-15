@@ -28,8 +28,6 @@ ms.dyn365.ops.version: AX 10.0.21
 
 # Tax Calculation FAQ
 
-[!include [banner](../includes/banner.md)]
-
 This topic answers frequently asked questions about the Tax Calculation service functionality.
 
 ## When will the service be generally available? 
@@ -88,11 +86,11 @@ The correction process is the same as of today. If a user finds out that tax is 
 
 The triggers for the Tax Calculation service in Finance and Operations are the same as the triggers for the existing tax engine today. 
 
-## Why I can’t see any value in the drop list of the “Feature setup name” field in the setup: Tax > Setup > Tax configuration > Tax calculation parameters?
+## Why can’t I see any value in the drop list of the “Feature setup name” field in the setup: Tax > Setup > Tax configuration > Tax calculation parameters?
 
 The tax calculation feature should be completed and published in RCS. Also check if the tenant between RCS and Finance and Operations is the same.
 
-## Why I can’t turn on “Enable tax calculation service” parameter in the setup: Tax > Setup > Tax configuration > Tax calculation parameter?
+## Why can’t I turn on “Enable tax calculation service” parameter in the setup: Tax > Setup > Tax configuration > Tax calculation parameter?
 
 Some countries are not supported yet. Check the legal entity primary address. The supported countries/regions list is available in [Supported countries/regions](global-tax-calcuation-service-overview.md#supported-countriesregions).
 
