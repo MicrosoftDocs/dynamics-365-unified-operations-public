@@ -52,7 +52,7 @@ A local product search searches in the following product properties:
 - Barcode
 - Search name
 
-### Additional local product search capabilities
+### Additional local product search capabilities (aka Conventional SQL full-text search) 
 
 - For multiple-keyword searches (that is, for searches that use search terms), retailers can configure whether the search results include results that match *any* search term or only results that match *all* search terms. The setting for this functionality is available in the POS functionality profile, in a new group that is named **Product search**. The default setting is **Match any search term**. This setting is also the recommended setting. When the **Match any search term** setting is used, all products that fully or partially match one or more search terms are returned as results. Those results are automatically sorted in ascending order of products that have the most keyword matches (full or partial).
 
@@ -60,6 +60,8 @@ A local product search searches in the following product properties:
 
     - The search is done on individual product properties. For example, only products that have all the searched keywords in at least one product property are returned.
     - Dimensions aren't searched.
+> [!NOTE]
+> Following configurations of 'Match any search term'/'Match all search terms' in POS functionality profiles are only applicable for 'local' product search (aka Conventional SQL full-text search) experiences, whereas this configuration has no effect on 'Cloud' powered search experiences as new search engine has it's own advanced algorithm that power search relevance for product search results. 
 
 - Retailers can configure product search to show search suggestions as users type product names. A new setting for this functionality is available in the POS functionality profile, in a group that is named **Product search**. The setting is named **Show search suggestions while typing**. This functionality can help employees quickly find the product that they are searching for, because they don't have to type the whole name manually.
 - The product search algorithm now also searches for the searched terms in the **Search name** property of the product.
