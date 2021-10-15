@@ -32,7 +32,7 @@ Before you can set up promoted fields, you must complete the following procedure
     - **Module:** *Warehouse management*
     - **Feature name:** *Warehouse app step instructions*
 
-    For more information about the *Warehouse app promoted fields* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md). This feature is a prerequisite for the *Warehouse app promoted fields* feature.
+    For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md). This feature is a prerequisite for the *Warehouse app promoted fields* feature.
 
 1. Enable the feature that is listed in the following way:
 
@@ -66,7 +66,7 @@ To use the specified sample records and values to work through this scenario, yo
 
 ### Configure sales picking with promoted steps on the license plate step
 
-In this procedure, you will configure a detour for the **Sales picking** menu item in the license plate step.
+In this procedure, you will set up promoted and highlighted fields for the **Sales picking** menu item in the license plate step.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**.
 1. Find the step ID that is named *LicensePlateId*, and select it.

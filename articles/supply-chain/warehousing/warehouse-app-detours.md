@@ -107,7 +107,7 @@ The warehouse work is now completed. The worker successfully opened a detour to 
 
 ## Sample scenario 2: Item inquiry with movement and adjustment detours
 
-This scenario shows how to configure movement and adjustments as multiple detours in the location inquiry task flow. Workers will then be able to do a lookup of a specific location, and immediately from the inquiry complete tasks from the inquiry task flow. This capability can be useful in situations where a worker arrives at a location, finds that the inventory in the location differs from what is registered in the system, and must therefore adjust or move goods.
+This scenario shows how to configure movement and adjustments as multiple detours in the location inquiry task flow. This capability can be useful in situations where a worker arrives at a location, finds that the inventory in the location differs from what is registered in the system, and must therefore adjust or move goods.
 
 You can replace the location inquiry with a license plate inquiry or an item inquiry as you require.
 
@@ -150,7 +150,7 @@ In this procedure, you will do a location inquiry by using the Warehouse Managem
 1. Open the Warehouse Management mobile app, and sign in to warehouse 24. (In the standard demo data, sign in by using *24* as the user ID and *1* as the password.)
 1. Select the **Inventory** menu, and then select the **Location inquiry** menu item.
 1. Enter a location to inquire about, such as *FL-001*.
-1. When the list appears, long-press one of the cards in it to show the available detours.
+1. When the list appears, tap and hold on one of the cards in it to show the available detours.
 1. Select **Movement**.
 1. Notice that the license plate has been copied from the card that you selected. Confirm the value.
 1. You can now follow the standard task flow to complete the movement. After the work is completed, open the actions menu, and select **Cancel**.
