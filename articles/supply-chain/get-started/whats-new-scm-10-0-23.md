@@ -18,11 +18,10 @@ ms.dyn365.ops.version: 10.0.23
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.23. This version has a build number of 10.0.995 <!-- KFM: Update build number --> and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.23. This version has a build number of 10.0.1037 <!-- KFM: Confirm build number --> and is available as follows:
 
 - **Preview of release:** October 2021 <!-- KFM: Confirm all months -->
-- **General availability of release (self-update):** November 2021
-- **General availability of release (auto-update):** December 2021
+- **General availability of release (self-update):** December 2021
 
 ## Features included in this release
 
@@ -30,8 +29,9 @@ The following table lists the features that are included in this release. The *F
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory&nbsp;and&nbsp;logistics | [Pause tasks in the Warehouse Management mobile app](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/park-tasks-warehouse-management-mobile-app) | *Coming soon.* <!-- KFM: Add link to topic when ready --> | Feature management (*Warehouse management app detours*) |
-| Inventory&nbsp;and&nbsp;logistics | [Warehouse app promoted fields](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | *Coming soon.* <!-- KFM: Add link to topic when ready --> | Feature management (*Warehouse app promoted fields*) |
+| Global address book | Define a default state/province for each country/region in address setup | You now have the ability to define a default state/province for each country/region in the address setup for the global address book. When a default state/province is selected, the selected state/province will be the default value entered in state/province fields when a new county or city record is created for that country/region.<p>For more information, see [Address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json) | Enabled by default. |
+| Inventory&nbsp;and&nbsp;logistics | [Pause tasks in the Warehouse Management mobile app](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/park-tasks-warehouse-management-mobile-app) | [Configure detours for steps in mobile device menu items](../warehousing/warehouse-app-detours.md) | Feature management (*Warehouse management app detours*) |
+| Inventory&nbsp;and&nbsp;logistics | [Warehouse app promoted fields](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Configure promoted fields for steps in the mobile device](../warehousing/warehouse-app-promoted-fields.md)| Feature management (*Warehouse app promoted fields*) |
 | Production control | [Report on co- and by-products from the production floor execution interface](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-process-manufacturing) | [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md) | Feature management (*Report on co- and by-products from the production floor execution interface*) |
 
 ## Feature enhancements included in this release
