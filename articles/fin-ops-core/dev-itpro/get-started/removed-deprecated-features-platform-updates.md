@@ -48,7 +48,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | SystemNotificationsManager.AddSystemNotification(). This API mandates developers explicitly set ExpirationDateTime and RuleID for generated notifications. |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated. Planned removal date is April 2022. |
+| **Status**                         | Deprecated. Planned removal date is April 2023. |
 
 ## Platform updates for version 10.0.21 of Finance and Operations apps
 
