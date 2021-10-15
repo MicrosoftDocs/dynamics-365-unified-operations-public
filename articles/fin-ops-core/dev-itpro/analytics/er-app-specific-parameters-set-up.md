@@ -84,6 +84,7 @@ You can use the ER framework to set up application-specific parameters for an ER
     The lookup presents the list of tax codes for selection. This list is returned by the **Model.Data.Tax** data source that has been configured in the base ER format. Because this data source contains the **Name** field, the name of each tax code appears in the lookup.
 
     ![Code field look up on the ER application-specific parameters page.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+
     
 7.	Select the **VAT19** tax code.
 8.	In the **Lookup result** field of the new record, select the drop-down arrow to open the lookup. The lookup presents the list of values for the TaxationLevel format enumeration for selection.
@@ -250,13 +251,14 @@ In the preceding example, you have accessed application-specific parameters of a
 1.  Either reuse an existing **ERSolutionAppSpecificParametersDesigner** menu item, or implement your own **ERSolutionAppSpecificParametersDesigner** menu item.
 
     ![Menu item display of ERSolutionAppSpecificParametersDesigner.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+
     
 2.  Follow one of these steps:
 
     1.  Create a new menu item button, and link it to the corresponding record from the **ERSolutionTable** table by setting its **Data Source** property to **ERSolutionTable**.
     
         ![Display of new menu item settings.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
-        
+
     2.  Create a simple button, and override the **Clicked** method as shown in the following example.
     
         By using this approach, you can specify a unique solution ID (defined via the **GUID** value) to allow access to the application-specific parameters of only a specific ER format and descendant copies that have been derived from it.

@@ -4,7 +4,7 @@
 title: Set up and design receipt formats
 description: This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Dynamics 365 Commerce includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 author: rubencdelgado
-ms.date: 06/20/2017
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,7 +51,12 @@ This article describes how to modify form layouts to control how receipts, invoi
 
 ## Print images
 
-The receipt designer includes a **Logo** variable that can be used to specify images to be printed on the receipt. Images that are included in receipts using the **Logo** variable should be monochrome bitmap (.bmp) file types. If a .bmp image is specified in the receipt designer, but is not printing when sent to the printer, the file size may be too large or the pixel dimensions on the image are not compatible with the printer. If this occurs, try reducing the image file resolution.   
+The receipt designer includes a **Logo** variable. You can use this variable to specify an image that should be printed on receipts. Images that are printed on receipts by using the **Logo** variable should be monochrome bitmap (.bmp) file types. If a bitmap image is specified in the receipt designer but isn't printed when the receipt is sent to the printer, one of the following issues might be the cause:
+
+- The file size is too large, or the pixel dimensions of the image isn't compatible with the printer. In this case, try to reduce the resolution or dimensions of the image file.
+- Some Object Linking and Embedding for Point of Sale (OPOS) printer drivers don't implement the **PrintMemoryBitmap** method that hardware stations use to print logo images. In this case, try to add the following flag to the **HardwareStation.Extension.config** file of your dedicated or shared hardware station:
+
+    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## Design a receipt format
 
@@ -73,7 +78,7 @@ Use the form layout designer to graphically create the layout of the form docume
     - **Align** – Set the alignment of the field to either **Left** or **Right**.
     - **Fill char** – Specify the white space character. By default, an empty space is used, but you can enter any character.
     - **Prefix** – Enter the value that appears at the beginning of the field. This setting applies only to the **Lines** section of the layout.
-    - **Characters** – Specify the maximum number of characters that the field can contain if the element contains a variable. If the text in the field is longer than the number of character that you specify, the text is truncated to fit the field.
+    - **Characters** – Specify the maximum number of characters that the field can contain if the element contains a variable. If the text in the field is longer than the number of characters that you specify, the text is truncated to fit the field.
     - **Variable** – This check box is selected automatically if the element contains a variable and can't be customized.
     - **Font type** – Set the font style to either **Regular** or **Bold**. Bold letters use two times as much space as regular letters. Therefore, some characters might be truncated.
     - **Font size** – Set the font size to either **Regular** or **Large**. Large letters are two times higher than regular letters. Therefore, using large letters may lead to overlapping text in the receipt.

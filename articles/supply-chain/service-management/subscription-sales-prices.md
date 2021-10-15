@@ -3,7 +3,7 @@
 
 title: Subscription sales prices  
 description: When you create a subscription, the sales price is derived from the sales price setup that was created in the Sales price (subscription) form.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -26,10 +26,9 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Subscription sales prices   
+# Subscription sales prices
 
 [!include [banner](../includes/banner.md)]
-
 
 When you create a subscription, the sales price is derived from the sales price setup that was created in the **Sales price (subscription)** form.
 
@@ -37,14 +36,14 @@ In the **Sales price (subscription)** form, you can create sales prices for a sp
 
 If the period code and currency are identical for the subscription and the sales price, subscription sales prices are selected on the basis of the priorities listed in the following table. A blank cell in the table indicates an empty field and an X indicates a value that is equal to the value in the subscription from which the transaction is generated.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -124,7 +123,6 @@ If the period code and currency are identical for the subscription and the sales
 </tbody>
 </table>
 
-
 When a subscription fee is created, the sales price with the greatest level of detail, as noted in the table above, is selected as the subscription sales price.
 
 ## Update and index subscription sales prices
@@ -139,15 +137,15 @@ When you create a subscription fee, the sales price is based on the sales price 
 
 You want to set up subscription sales prices of EUR 500 for a new project 9030. In the **Sales price (subscription)** form, you create a subscription sales price line as indicated in the following table.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -178,14 +176,14 @@ Note that the **Category** and **Subscription** fields are empty.
 
 You then create the following subscriptions.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -230,14 +228,14 @@ Subscription fees that have a sales price of EUR 500 are created for both subscr
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -278,15 +276,15 @@ Subscription fees that have a sales price of EUR 500 are created for both subscr
 
 Later, you decide that you want to specify sales prices for the category SubCat1 for project 9030. Therefore, you create a new sales price line that has a sales price of EUR 550 for the combination of project 9030 and fee category SubCat1. There are now two subscription sales price lines for project 9030, as shown in the following table.
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -321,19 +319,18 @@ Later, you decide that you want to specify sales prices for the category SubCat1
 </tbody>
 </table>
 
-
 You repeat the procedure described above to create subscription fees for both subscriptions in the subscription group Sub1. The following table shows the transactions that are created for each subscription that is attached to the subscription group.
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -371,16 +368,10 @@ You repeat the procedure described above to create subscription fees for both su
 </tbody>
 </table>
 
-
 In the first transaction for subscription 00020\_135, the sales price of EUR 550 derives from the subscription sales price that is set up for the combination of the specific project and category. In the second transaction for subscription 00021\_135, the sales price of EUR 500 is used as the project subscription sales price because there is no price set up for the combination of project 9030 and category SubCat2.
 
 ## See also
 
 [Update and index subscription sales prices](update-and-index-subscription-sales-prices.md)
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

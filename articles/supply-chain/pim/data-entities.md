@@ -3,7 +3,7 @@
 
 title: Product data entities 
 description: This topic provides information about the different entities that can be used to import and export product data. 
-author: cvocph
+author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: kamaybac
+ms.author: benebotg
 ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2019-12-1
 

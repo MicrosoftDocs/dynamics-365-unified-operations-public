@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.22 (November 2021)
+          href: get-started/whats-new-platform-updates-10-0-22.md
         - name: Platform updates for version 10.0.21 (October 2021)
           href: get-started/whats-new-platform-updates-10-0-21.md
         - name: Platform updates for version 10.0.20 (August 2021)
           href: get-started/whats-new-platform-updates-10-0-20.md
-        - name: Platform updates for 10.0.19 (June 2021)
-          href: get-started/whats-new-platform-updates-10-0-19.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -590,24 +590,22 @@
           href: dev-tools/update-development-tools.md
       - name: X++ programming language
         items:
-        - name: X++ and debugger features
-          href: dev-tools/new-x-debugger-features.md
-        - name: Visual Studio 2017 requirements for X++
-          href: dev-tools/developer-tools-vs2017.md
-        - name: Debug X++ code
-          href: dev-tools/debug-xpp.md
-        - name: EventHandlerResult classes in request or response scenarios
-          href: dev-tools/event-handler-result-class.md
-        - name: 'Write business logic using C# and X++ source code'
-          href: dev-tools/write-business-logic.md
-        - name: Changes in X++ and the X++ compiler
-          href: dev-tools/programming-language-support.md
-        - name: 'LINQ provider for C#'
-          href: dev-tools/linq-provider-c.md
-        - name: Write best practice rules
-          href: dev-tools/author-best-practice-rules.md
-        - name: Application Explorer properties
-          href: dev-ref/application-explorer-aot-properties.md
+        - name: X++ language support
+          items:
+          - name: Visual Studio 2017 requirements for X++
+            href: dev-tools/developer-tools-vs2017.md
+          - name: Debug X++ code
+            href: dev-tools/debug-xpp.md
+          - name: EventHandlerResult classes in request or response scenarios
+            href: dev-tools/event-handler-result-class.md
+          - name: 'Write business logic using C# and X++ source code'
+            href: dev-tools/write-business-logic.md
+          - name: 'LINQ provider for C#'
+            href: dev-tools/linq-provider-c.md
+          - name: Write best practice rules
+            href: dev-tools/author-best-practice-rules.md
+          - name: Application Explorer properties
+            href: dev-ref/application-explorer-aot-properties.md
         - name: X++ language reference
           items:
           - name: X++ language reference overview
@@ -652,7 +650,7 @@
               href: dev-ref/xpp-interfaces.md
             - name: Libraries
               href: dev-ref/xpp-library-objects.md
-            - name: Events
+            - name: Events and delegates
               href: dev-ref/xpp-events.md
           - name: X++ data selection and manipulation
             items:
@@ -906,6 +904,8 @@
         href: dev-tools/date-effectivity.md
       - name: Development for independent software vendors
         items:
+        - name: ISV development home page
+          href: dev-tools/isv-dev-home-page.md
         - name: Link X++ modules to packages by using ISV Studio
           href: dev-tools/isv-studio-solutions.md
         - name: ISV licensing
@@ -1005,7 +1005,11 @@
         - name: Planned maintenance window FAQ
           href: lifecycle-services/planned-maintenance-window-faq.md
       - name: Monitoring and diagnostics
-        href: lifecycle-services/monitoring-diagnostics.md
+        items:
+        - name: Monitoring and diagnostics tools
+          href: lifecycle-services/monitoring-diagnostics.md
+        - name: Use Azure Data Explorer to query raw information logs
+          href: lifecycle-services/azure-data-explorer.md
       - name: Restart environment services
         href: lifecycle-services/restart-environment-services.md
       - name: Report a production outage
@@ -1018,6 +1022,8 @@
         href: lifecycle-services/performancetroubleshooting.md
       - name: Query cookbook
         href: lifecycle-services/querycookbook.md
+      - name: Expired subscriptions and data deletion
+        href: lifecycle-services/expired-subscription-data-deletion.md
       - name: Microsoft Dynamics 365 Translation Service
         items:
         - name: Dynamics 365 Translation Service overview
@@ -1048,6 +1054,8 @@
               href: data-entities/dual-write/connection-setup.md
             - name: Considerations for initial synchronization
               href: data-entities/dual-write/initial-sync-guidance.md
+            - name: Limits for live synchronization
+              href: data-entities/dual-write/sync-limits.md
             - name: Dual-write setup from Lifecycle Services
               href: data-entities/dual-write/lcs-setup.md
             - name: Enable dual-write for existing Finance and Operations apps
@@ -1070,6 +1078,8 @@
           items:
             - name: Customize entity and field mappings
               href: data-entities/dual-write/customizing-mappings.md
+            - name: Customization guidance for dual-write
+              href: data-entities/dual-write/custom-best-practices.md
             - name: Handling multiple entity maps
               href: data-entities/dual-write/multiple-entity-maps.md
             - name: Edit a legal entity after dual-write setup

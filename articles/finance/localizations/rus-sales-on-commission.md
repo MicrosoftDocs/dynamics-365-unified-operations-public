@@ -127,7 +127,7 @@ The following illustration shows the business process for registering intermedia
 9. Select **Print** to open the **Report for principal to Microsoft Excel** dialog box, and then select **OK** to print the report for the principal.
 10. The principal reissues the facture to the agent, based on the factures that the agent issues to the buyer. The principal learns about these factures from the printed report for the principal. Use the **Approved** check box to select the lines that the principal reissues the facture for, and then select **Approval** \> **Approve all** to approve the lines on the report.
 
-    ![Report for principal page.](media/29_Report_for_principal.jpg)
+    ![Report for principal page, approving lines on the report.](media/29_Report_for_principal.jpg)
 
 11. Select **Facture** \> **Update facture** to generate the factures that were reissued by the principal.
 12. On the **Update facture** page, in the **Commission trade** section, make sure that the **Buyer** and **Facture** fields are automatically set. If they are blank, select the customer in the **Buyer** field and the number of the sales order facture that was created in the **Facture** field.
@@ -183,7 +183,7 @@ The amount of prepayment that is received from the customer can be allocated amo
 7. Create a report for the principal, and update the lines on shipments.
 8. In the bottom part of the **Report for principal** page, on the **Prepayments** tab, in the **Voucher** field, select the customer prepayment voucher to include the prepayment on the report for the principal that is responsible for VAT prepayment.
 
-    ![Report for principal page.](media/35_Report_for_principal.jpg)
+    ![Report for principal page, Prepayments tab.](media/35_Report_for_principal.jpg)
 
 9. Select **Transactions** to view the allocated amount in the **Amount in reporting currency** field.
 

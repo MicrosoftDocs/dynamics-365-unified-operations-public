@@ -91,7 +91,7 @@ Yes. Line amounts for a purchase order can be viewed, including the current orde
 
 Let’s say you view a purchase order line with purchases posted to two ledger accounts. One ledger account is for office furniture ordered from a vendor. The second ledger account is for office supplies. The ordered amount is equal to the sum of the invoiced amounts, pending invoice amounts, and invoice remaining amounts. The received amount is the portion of the ordered amount that has been received from the vendor.
 
-<table style="width:100%;">
+<table>
 
 <col width="16%" />
 <col width="16%" />

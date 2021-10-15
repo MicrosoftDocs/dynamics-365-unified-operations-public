@@ -22,7 +22,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
-ms.dyn365.ops.version: Release 10.0.17
+ms.dyn365.ops.version: 10.0.17
 ---
 
 # Goods-in-transit processing
@@ -152,8 +152,6 @@ This section describes features that the **Landed cost** module adds to work tem
 Landed cost adds a new work order type that is named *Goods in transit* to the **Work templates** page. This work order type should be configured in the same manner as the [purchase order work templates](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 #### Work header breaks
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Work templates that have a work order type of *Goods in transit* can be configured to split work headers. On the **Work templates** page, follow one of these steps:
 

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Post a project invoice with a payment slip
-description: You can post a free text invoice with a payment slip attachment in a specified format. 
+description: This topic explains how to post a project invoice with a payment slip in a specified format. 
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-You can post a free text invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
+You can post a project invoice with a payment slip attachment in a specified format. The payment slip is printed with the creditor identification number and invoice number to identify the payment.
 
 Before you can complete this procedure, you must first set up a payment slip format and set up payment slips for customer invoices. 
 

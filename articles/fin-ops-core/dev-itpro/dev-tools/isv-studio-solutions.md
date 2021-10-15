@@ -34,7 +34,7 @@ https://partner.microsoft.com/dashboard/commercial-marketplace/offers/<product-I
 
 ## Update your X++ model descriptors
 
-For all models that make up your solution, locate the descriptor XML files. For every descriptor that belongs to a solution, update the `SolutionId` tag with the product ID from Partner Center.
+For all models that make up your solution, locate the descriptor XML files. For every descriptor that belongs to a solution, update the `SolutionId` tag with the product ID from Partner Center. The order of the elements must match the following example to get the expected results.
 
 :::code language="xml" source="code/descriptor.xml" highlight="19,20":::
 

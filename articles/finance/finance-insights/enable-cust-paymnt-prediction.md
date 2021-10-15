@@ -46,7 +46,7 @@ This topic explains how to turn on and configure the Customer payment prediction
 2. Turn on the Customer payment insights feature:
 
     1. Go to **System administration \> Workspaces \> Feature management**.
-    2. Find the feature that is named **Customer payment insights (preview)**.
+    2. Find the feature that is named **(Preview) Customer payment insights**.
     3. Select **Enable now**.
 
     The Customer payment insights feature is now turned on and ready to be configured.

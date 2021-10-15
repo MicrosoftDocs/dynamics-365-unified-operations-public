@@ -4,7 +4,7 @@
 title: Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
 description: This topic explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
 author: mugunthanm
-ms.date: 02/17/2021
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -69,7 +69,10 @@ The following illustration shows the class structure of the extension.
     [RoutePrefix("SimpleExtension")]
     ```
 
-8. Add the **BindEntity** attribute on the controller class. This attribute is required if you're creating a new controller and exposing an entity.
+> [!NOTE]
+> Adding RoutePrefix attribute is optional. If you add the **RoutePrefix** attribute, you must add the **BindEntity** attribute with only the custom entity. Adding out of the box **RoutePrefix** (for example, Customers and Product) and binding out of the box entities (for example, Product, Cart, and Customer) is not supported. You can add only custom **RoutePrefix** and **Custom** entity.
+
+8. Add the **BindEntity** attribute on the controller class. This step is optional. Add the attribute only if you're adding the **RoutePrefix** and returning a custom entity.
 
 ```csharp
 [BindEntity(typeof(SimpleEntity))]
@@ -83,7 +86,7 @@ The following sample code creates a simple Retail Server API to return an entity
 ### Sample code for a controller class bounded to a custom entity
 
 > [!NOTE]
-> Extension code should not bound the existing OOB entity, such as Customer or Product.
+> Extension code should not bind to the existing entities such as Customer, Cart, or Product . If the API returns a collection, it must return only type `IEnumerable<T>`, returning any other type like `Dictionary <String, String>` is not supported. As a result, you may get an error such as `System.Collections.Generic.Dictionary2[System.String,System.String] is not supported.` To return a collection, Commerce APIs uses `PageResult<T>`, which implements `IEnumerable<T>`. Follow this pattern to return the collection.
 
 ```csharp
 // New extended controller.

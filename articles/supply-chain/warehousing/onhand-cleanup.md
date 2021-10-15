@@ -21,10 +21,12 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: Release 10.0.12
+ms.dyn365.ops.version: 10.0.12
 ---
 
 # Warehouse management on-hand entries cleanup job
+
+[!include [banner](../includes/banner.md)]
 
 The performance of queries that are used to calculate on-hand inventory is affected by the number of records in the tables that are involved. One way to help improve the performance is to reduce the number of records that the database must consider.
 

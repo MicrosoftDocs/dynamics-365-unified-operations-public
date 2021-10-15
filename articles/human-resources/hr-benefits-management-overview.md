@@ -2,9 +2,9 @@
 # required metadata
 
 title: Benefits management overview
-description: Overview of Benefits management feature in Dynamics 365 Human Resources. Offer your employees extended benefits options with an easy-to-use online experience.
-author: andreabichsel
-ms.date: 07/13/2021
+description: This topic provides an overview of the Benefits management feature in Dynamics 365 Human Resources. 
+author: twheeloc  
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-To remain competitive, you must offer a rich set of benefits to attract and retain your best employees. In addition to standard benefits like medical and dental coverage, you might also want to offer expanded services like adoption assistance, recreation programs, and clothing allowances. Benefits management in Microsoft Dynamics 365 Human Resources provides you with a flexible solution that supports a wide variety of benefit options. Human Resources also includes an easy-to-use employee experience that showcases your offerings.
+To remain competitive, you must offer a rich set of benefits to attract and retain your best employees. In addition to standard benefits like medical and dental coverage, you might also want to offer expanded services like adoption assistance, recreation programs, and clothing allowances. Benefits management in Microsoft Dynamics 365 Human Resources provides a flexible solution that supports a wide variety of benefit options. Human Resources also includes an easy-to-use employee experience that showcases your offerings.
 
 - Enhanced benefits plans let you create and manage unique benefit plans and support complex benefit rate tables and nested tiers. You can easily create benefit programs, bundles, and auto-enrollment rules for an easier employee experience.
 - Flex credit programs let you prorate to support retirement and other life events.
@@ -42,13 +42,13 @@ To remain competitive, you must offer a rich set of benefits to attract and reta
 If you would like to access the demo data, you'll need to redeploy your sandbox environment.
 
 > [!NOTE]
-> You can now customize Benefits management forms. You can now add custom fields related to coverage rates to the **Coverage option** form for benefit plans. For more information about working with custom fields, see [Custom fields](hr-developer-custom-fields.md).
+> You can now customize Benefits management pages. Custom fields related to coverage rates can be added to the **Coverage option** page for benefit plans. For more information about working with custom fields, see [Custom fields](hr-developer-custom-fields.md).
 >
 > ![Benefits management custom fields](media/hr-benefits-management-custom-fields.png)
 
 ## Enable Benefits management
 
-This topic describes how to turn on features in Human Resources. It also tells which existing features in Human Resources are replaced by Benefits management or which features are disabled after you turn on Benefits management.
+This topic describes how to turn on features in Human Resources. It also explains which existing features in Human Resources are replaced by Benefits management and which features are disabled after you turn on Benefits management.
 
 > [!IMPORTANT]
 > After you enable Benefits management in a **Production** environment, you can't disable it. We recommend enabling and testing Benefits management in a **Sandbox** environment before enabling it in a **Production** environment. There are significant differences between the legacy Benefit functionality and new Benefits management functionality that require additional setup and should be tested prior to being placed into production.

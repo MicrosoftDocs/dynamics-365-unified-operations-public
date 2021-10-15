@@ -3,7 +3,7 @@
 
 title: Add an address to a service order   
 description: This topic describes how to add a customer address to a service order.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/02/2018
 ms.topic: article
 ms.prod: 
