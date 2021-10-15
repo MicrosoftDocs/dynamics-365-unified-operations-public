@@ -48,7 +48,7 @@ In an age of malware, full connectivity, and compliance risks, nothing is comple
 
 ### Does the Excel Add-in support Office for Mac?
 
-No. Support for Apple Mac and iOS is currently under development. The Office JavaScript (JS) APIs work differently in Apple Safari and Microsoft Edge/Internet Explorer, especially in respect to authentication. For details about platform support for the Office JS APIs, see [Office Add-in host and platform availability](/office/dev/add-ins/overview/office-add-in-availability).
+No. The Office JavaScript (JS) APIs work differently in Apple Safari and Microsoft Edge/Internet Explorer, especially in respect to authentication. For details about platform support for the Office JS APIs, see [Office Add-in host and platform availability](/office/dev/add-ins/overview/office-add-in-availability).
 
 ### What version of Office is required for the Excel Add-in to support AD FS?
 
