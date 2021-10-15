@@ -1174,6 +1174,8 @@
           href: business-events/system-business-events.md
         - name: Alerts as business events
           href: business-events/alerts-business-events.md
+        - name: Data events
+          href: business-events/data-events.md
         - name: Business events in Power Automate
           href: business-events/business-events-flow.md
         - name: Business events developer documentation
