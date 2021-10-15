@@ -4,7 +4,7 @@
 title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 08/26/2021
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,6 +27,7 @@ ms.dyn365.ops.version: July 2017 update
 # Configure document management
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
 
@@ -71,6 +72,7 @@ To configure SharePoint storage, follow these steps.
 
 4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name. This verifies that the security and license are working correctly. 
 5. Optional: Click **Open SharePoint** to open the specified SharePoint host name in a browser. Note that this does not verify security, it just opens the SharePoint path in a browser tab for easy exploration.
+6. Optional: On the **General** tab, turn on **Open attachments in new window**. For more information, see the [Other configuration](#other-configuration) section later in this topic. 
 
 ### Troubleshooting SharePoint communication
 
@@ -123,10 +125,11 @@ Document preview (WOPI) will not work in environments with an IP safe list enabl
 
 ## Other configuration
 
-Here are some other configuration options to consider, although these options are rarely used:
+Here are some other configuration options to consider:
 
-- On the **Document management parameters** page, on the **General** tab, you can use the **Use Document Tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Therefore, turn on this option only when it's required.
+- On the **Document management parameters** page, on the **General** tab, you can use the **Use active document tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Therefore, turn on this option only when it's required.
 - On the **Document management parameters** page, on the **General** tab, you can use the **Maximum file size in megabytes** field to set the maximum file size for attachments. Note that when SharePoint is used as a document type, users can only upload a document up to a maximum file size of 262 megabytes. 
+- On the **Document management parameters** page, on the **General** tab, you can use the **Open attachments in new window** option to determine if attachments are opened in place or in a new window or tab. You should consider turning on this option especially if you are using SharePoint for storing attachments, as this will prevent the Finance and Operations user session from resetting when opening attachments. Note that this option is available starting in version 10.0.23. 
 - On the **Options** page (**Settings** \> **User options**), on the **Preferences** tab, you can use the **Enable document handling** option to disable document handling (document management).
 
 ## Accessing document management attachments 
