@@ -75,7 +75,7 @@ Demand forecasting is performed in a customer's own Azure subscription while int
 
 ### Machine learning workspace
 
-#### Create new workspace
+#### Step 1: Create new workspace
 
 Use the wizard available in Azure portal that creates a new machine learning workspace, few key points to keep in mind:
 
@@ -83,7 +83,7 @@ Use the wizard available in Azure portal that creates a new machine learning wor
 - Make sure that selected region is the same as the region of your instance of Dynamics 365 Supply Chain Management is deployed to otherwise some data might be passing region boundaries, please see[privacy note](#) <!--KFM: link needed --> for the details.
 - Use dedicated resources such as resource group, storage account, container registry, keyvault, networking resources, etc. Note that storage account name is needed for configuration on the "Set up Azure Machine Learning Service connection parameters" form.
 
-#### Configure compute resources
+#### Step 2: Configure compute resources
 
 Navigate to Studio web URL once the machine learning workspace is created (the link is available on the overview page of the workspace). Then choose Compute navigation menu item. Please create these compute resources:
 
@@ -92,7 +92,7 @@ Navigate to Studio web URL once the machine learning workspace is created (the l
   - Name: e2ecpucluster.
   - Virtual machine size: this setting must be adjusted according to the volume of data that will be used as an input to demand forecasting. Max nodes count should not exceed 11 since 1 will be used to trigger the demand forecast generation and max count of nodes to generate actual forecast is 10 (adjusted in the parameters.py file described in the next step). On each node there will be several worker processes executing forecasting script in parallel. The total number of worker processes in your job is \[number of cores a node has\] \* node count. Example, if the compute cluster has type Standard\_D4 (8 cores) and max 11 nodes, then the effective level of parallelism is 80 taken into account node count set to 10 in parameters.py.
 
-#### Create pipelines
+#### Step 3: Create pipelines
 
 Download scripts from [github repository](https://github.com/microsoft/Dynamics-365-Supply-Chain-Management-Demand-Forecasting-With-Azure-Machine-Learning-Service) and upload following files under Notebooks/Users/\[current user\]/src:
 
