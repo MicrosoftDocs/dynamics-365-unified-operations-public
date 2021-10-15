@@ -100,6 +100,9 @@ Advanced notes can be directly attached automatically to sales order confirmatio
 
   ![Forms setup page, highlight of Direct attachment to documents parameter.](media/attach-documents.jpg)
 
+> [!NOTE]
+> It is recommended to turn on the parameter **Direct attachment to documents"** when affected documents are planned to be posted with **Summary update** option enabled.
+
 ## Advanced notes processing
 
 ### Generating advanced notes
