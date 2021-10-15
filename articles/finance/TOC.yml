@@ -240,6 +240,8 @@
           href: accounts-payable/auto-vendr-invc-process.md
         - name: Setup options for vendor invoice automation
           href: accounts-payable/vnd-invoice-set-up-options.md
+        - name: Generate invoice lines when importing vendor invoices
+          href: accounts-payable/auto-create-invc-lines-at-import.md
         - name: Submit invoices to the workflow system and match product receipt lines
           href: accounts-payable/submit-invoice-workflow-automatically.md
         - name: View vendor invoice automation results
@@ -272,6 +274,8 @@
           href: accounts-payable/tasks/research-resolve-exceptions.md
       - name: Vendor posting profiles
         href: accounts-payable/vendor-posting-profiles.md
+      - name: Vendor invoice dates
+        href: accounts-payable/vendor-invoice-dates.md
       - name: Foreign currency revaluation for Accounts payable and Accounts receivable
         href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
       - name: Mobile invoice approvals
