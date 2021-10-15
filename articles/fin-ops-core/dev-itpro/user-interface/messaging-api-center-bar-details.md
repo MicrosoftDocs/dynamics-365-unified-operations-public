@@ -102,16 +102,16 @@ The following messaging types are supported: **MessageSeverity::Info**, **Messag
 ## SystemNotificationsManager() 
 The **SystemNotificationsManager()** class allows you to send notifications to the Action center. This class provides the following features: 
 
-+ Associating one or more actions to the notification 
-+ Routing a notification to a set of users, or to all the users in one or more security roles
-+ Defining an expiration date for the notification
-+ Tracking the state of the notification (e.g. you can mark a notification as "Completed")  
-+ Defining what rule or process is raising the notification by RuleID  
++ Associating one or more actions to the notification. 
++ Routing a notification to a set of users, or to all the users in one or more security roles.
++ Defining an expiration date for the notification.
++ Tracking the state of the notification (such as, you can mark a notification as "Completed").  
++ Defining what rule or process is raising the notification by RuleID.  
 
 In this example, a notification is raised after an export to Excel is completed by a user. The message will be available in the Action center for the next 48 hours, after which the link to the exported file is no longer available.   
 
 > [!NOTE]
-> The **AddNotification()** API was previously used in this example. That API is deprecated as of version 10.0.23 and is replaced by the **AddSystemNotification()** API. The new API mandates the setting of RuleID and ExpirationDateTime. 
+> The **AddNotification()** API was previously used in this example. As of version 10.0.23, that API is deprecated and is replaced by the **AddSystemNotification()** API. The new API rquires that you set RuleID and ExpirationDateTime. 
 
 ![Example of a message sent using the SystemNotificationsManager API.](./media/cli-systemNotification.png)
 
