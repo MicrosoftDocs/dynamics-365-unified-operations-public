@@ -63,7 +63,7 @@ For one-box development environments, you can create a database in the local Mic
 
 You should also create a SQL user account for sign-in to the database. Write down the server name, database name, and the SQL user ID and password. You will use this information when you configure the entity export option in the next section.
 
-If you're using the BYOD feature for integration with a business intelligence (BI) tool, you should consider using clustered columnstore indexes (CCIs). CCIs are in-memory indexes that improve the performance of read queries that are typical in analytical and reporting workloads.
+If you're using the BYOD feature for integration with a business intelligence (BI) tool, you should consider using clustered columnstore indexes (CCIs): [olumnstore indexes: Overview] {/sql/relational-databases/indexes/columnstore-indexes-overview?view=sql-server-ver15).
 
 > [!NOTE]
 > Your BYOD database must be accessible to Finance and Operations apps. If you encounter issues where you are unable access to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately. For more details for self-service deployments: [Self-service deployment FAQ](/deploymentFAQ#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment).
@@ -88,7 +88,7 @@ If you're using the BYOD feature for integration with a business intelligence (B
 
 4. Select **Validate**, and make sure that the connection is successful.
 
-    - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied. However, CCIs are currently supported only on SQL premium databases. Therefore, to enable this option, you must create at least use compute size S3 in the Standard service tier.
+    - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining CCIs for entities that are copied. CCIs are currently supported from compute size S3 in the Standard service tier.
     - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit size** parameter in the Data management framework.
 
 For scenarios in which reporting systems read data from BYOD, there is always the challenge of ensuring that the reporting systems get consistent data from BYOD while the sync is in progress. You can achieve this result by not having the reporting systems read directly from the staging tables created by the BYOD process. The staging tables hold the data while data is being synced from the instance and hence will be constantly changing. Use the SQL trigger feature to determine when the data sync has been completed, and then hydrate the downstream reporting systems.
