@@ -56,7 +56,7 @@ Follow these steps to set the parameter that controls whether references to the 
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 2. On the **Updates** tab, on the **Invoice** FastTab, set the **Apply the credit invoicing layout into sales and project invoice reports** option to **Yes**.
 
-![Configuring Accounts receivable parameters](media/original-invoice-number-in-credit-note.jpg)
+![Configuring Accounts receivable parameters.](media/original-invoice-number-in-credit-note.jpg)
 
 ## Define references to original invoices
 
@@ -70,7 +70,7 @@ Use the following procedures to define references to original invoices, based on
 4. On the Action Pane, on the **Invoice** tab, in the **Functions** group, select **Credit invoicing**.
 5. Enter the reference to the original invoice, and select the reason for the correction.
 
-![Defining the reference for a free text invoice](media/reference-original-invoice-FTI.jpg)
+![Defining the reference for a free text invoice.](media/reference-original-invoice-FTI.jpg)
 
 ### Customer credit note
 
@@ -79,7 +79,7 @@ Use the following procedures to define references to original invoices, based on
 3. On the Action Pane, on the **Sell** tab, in the **Credit note** group, select **Credit note**.
 4. Enter the reason for the correction. The reference to the original invoice is automatically established.
 
-![Defining the reference for a sales order](media/reference-original-invoice-SO.jpg)
+![Defining the reference for a sales order.](media/reference-original-invoice-SO.jpg)
 
 ### Project credit note
 
@@ -89,13 +89,13 @@ Use the following procedures to define references to original invoices, based on
 4. Select **Credit invoicing**.
 5. Enter the reason for the correction. The reference to the original invoice is automatically established.
 
-![Defining the reference for a project invoice](media/reference-original-invoice-project.jpg)
+![Defining the reference for a project invoice.](media/reference-original-invoice-project.jpg)
 
 ## Printing credit notes
 
 When you print free text, customer, and project credit notes, they will include the reference to the original invoice and the correction reason.
 
-![Printed credit note](media/credit-note-FTI.jpg)
+![Printed credit note.](media/credit-note-FTI.jpg)
 
 > [!NOTE]
 > Make sure that the printable formats of the documents are correctly configured, on the assumption that references to original invoices will be printed.

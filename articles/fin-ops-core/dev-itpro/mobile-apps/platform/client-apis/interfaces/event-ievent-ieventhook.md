@@ -1,28 +1,13 @@
 ---
-# required metadata
-
 title: EventHook type<T>
 description: EventHook type
 author: robinarh
 ms.date: 08/01/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
   
-# optional metadata
-
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
-
 ---
 
 # EventHook type&lt;T&gt;

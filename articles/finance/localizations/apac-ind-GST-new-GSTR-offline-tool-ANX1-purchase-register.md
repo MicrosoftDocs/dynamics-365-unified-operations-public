@@ -143,7 +143,7 @@ Follow these steps to load the report configuration into workspaces.
 
 3. Import the configuration files in the same order that you loaded them in.
 
-![Configurations page](media/New-Offline-Tool-004.PNG)
+![Configurations page.](media/New-Offline-Tool-004.PNG)
 
 ### Map the report configuration in the tax setup
 
@@ -152,7 +152,7 @@ Follow these steps to map the report configuration in the tax setup.
 1. Go to **Tax \> Setup \> Tax configuration \> Tax setup**, and select **Configurations**.
 2. On the **Configurations** page, on the **Reporting configurations** tab, select the report configuration, and then select the **Select** check box.
 
-    ![Reporting configurations tab on the Configurations page](media/New-Offline-Tool-005.PNG)
+    ![Reporting configurations tab on the Configurations page.](media/New-Offline-Tool-005.PNG)
 
 3. In the **Report data provider** field, select a value.
 4. Select the **Close** button.
@@ -170,7 +170,7 @@ Follow these steps to map the report configuration in the tax setup.
 4. In the **Configuration** field, select **GST ANX-1 Govt. Offline Tool**.
 5. In the **File name** field, enter a name for the file to save the report in CSV format.
 
-    ![GER export to GSTR CSV dialog box for the ANX-1 report](media/New-Offline-Tool-006.PNG)
+    ![GER export to GSTR CSV dialog box for the ANX-1 report.](media/New-Offline-Tool-006.PNG)
 
 6. Select **OK**.
 
@@ -189,7 +189,7 @@ The GST ANX-1 report is generated in CSV format. It will include a total of 10 w
 
 For example, here are some of the columns that the **B2B** worksheet contains: **GSTIN/UIN of Recipient**, **Trade/Legal Name**, **Document Type**, **Document Number**, **Document Date**, **Document Value**, **Place of Supply**, **Differential % of Tax Rate**, **Supply Covered Under Sec 7 of IGST Act**, and **HSN Code**.
 
-![B2B sheet of the GST ANX-1 report](media/New-Offline-Tool-007.PNG)
+![B2B sheet of the GST ANX-1 report.](media/New-Offline-Tool-007.PNG)
 
 ### Purchase Register report data
 
@@ -200,10 +200,10 @@ For example, here are some of the columns that the **B2B** worksheet contains: *
 5. In the **Configuration** field, select **Purchase Register**.
 6. In the **File name** field, enter a name for the file to save the report in CSV format.
 
-    ![GER export to GSTR CSV dialog box for the Purchase Register report](media/New-Offline-Tool-008.PNG)
+    ![GER export to GSTR CSV dialog box for the Purchase Register report.](media/New-Offline-Tool-008.PNG)
 
 7. Select **OK**.
 
 The Purchase Register report is generated. This report contains the following columns: **GSTIN of supplier**, **Trade/Legal name**, **Type of inward supplies**, **Document type**, **Document number**, **Document date**, **Taxable value**, **Total tax**, **Integrated tax**, **Central tax**, **State/UT tax**, and **Cess**.
 
-![Purchase Register report](media/New-Offline-Tool-009.PNG)
+![Purchase Register report.](media/New-Offline-Tool-009.PNG)

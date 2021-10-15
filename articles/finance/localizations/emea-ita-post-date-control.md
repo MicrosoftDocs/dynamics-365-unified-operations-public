@@ -46,7 +46,7 @@ Complete the following steps to configure posting date control.
 1. Go to **Tax** > **Setup** > **Sales tax** > **Italian sales tax book sections**. 
 2. In the **Skip posting date control** column, select whether posting date control is required for a selected sales tax book section.
 
-![Posting date control](media/emea-ita-post-date-control.jpg)
+![Posting date control.](media/emea-ita-post-date-control.jpg)
 
  - If the field isn't enabled, which is the default option, the system doesn't allow posting of new invoices with dates earlier than the date of the latest posted invoice.  
  - If the field is enabled, the system allows posting with any date.

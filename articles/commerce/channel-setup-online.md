@@ -59,11 +59,11 @@ To create and configure a new online channel, follow these steps.
 
 The following image shows the creation of a new online channel.
 
-![New online channel](media/channel-setup-online-1.png)
+![New online channel.](media/channel-setup-online-1.png)
 
 The following image shows an example online channel.
 
-![Example online channel](media/channel-setup-online-2.png)
+![Example online channel.](media/channel-setup-online-2.png)
 
 ## Set up languages
 
@@ -79,7 +79,7 @@ Additional tasks that are required for online channel setup include setting up p
 
 The following image shows **Modes of delivery**, **Payment methods**, and **Fulfillment group assignment** setup options on the **Set up** tab.
 
-![Additional online channel setup actions](media/channel-setup-online-3.png)
+![Additional online channel setup actions.](media/channel-setup-online-3.png)
 
 ### Set up payment methods
 
@@ -94,7 +94,7 @@ To set up payment methods, for each payment type supported on this channel follo
 
 The following image shows an example of a cash payment method.
 
-![Example payment methods](media/channel-setup-retail-5.png)
+![Example payment methods.](media/channel-setup-retail-5.png)
 
 ### Set up modes of delivery
 
@@ -108,7 +108,7 @@ To change or add a mode of delivery, follow these steps.
 
 The following image shows an example of a mode of delivery.
 
-![Set up modes of delivery](media/channel-setup-retail-7.png)
+![Set up modes of delivery.](media/channel-setup-retail-7.png)
 
 ### Set up a fulfillment group assignment
 
@@ -122,7 +122,7 @@ To set up a fulfillment group assignment, follow these steps.
 
 The following image shows an example of a fulfillment group assignment setup.
 
-![Set up fulfillment group assignment](media/channel-setup-retail-9.png)
+![Set up fulfillment group assignment.](media/channel-setup-retail-9.png)
 
 ## Additional resources
 

@@ -19,7 +19,7 @@ ms.reviewer: roschlom
 
 
 # ms.tgt_pltfrm: 
-ms.custom: 13111
+ms.custom: ["13111", "intro-internal"]
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
 # ms.search.industry: 
@@ -41,7 +41,7 @@ The sales tax framework supports many types of indirect taxes, such as sales tax
 
 The following diagram shows the entities of the tax setup and how they are related.
 
-[![Diagram showing overview of tax setup entities](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Diagram showing overview of tax setup entities.](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 For every sales tax that a company must account for, a sales tax code must be defined. A sales tax code stores the tax rates and calculation rules for the sales tax. 
 

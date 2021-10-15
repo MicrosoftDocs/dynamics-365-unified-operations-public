@@ -238,7 +238,7 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 ### Static image or animated gif
 
-![this is the alt text](../images/Logo_DotNet.png)
+![this is the alt text.](../images/Logo_DotNet.png)
 
 ### Image with border
 
@@ -281,6 +281,6 @@ It's important to use the following alert styles so they render with the proper 
 > This is IMPORTANT
 
 And they'll render like this:
-![Alert styles](../images/alerts.png)
+![Alert styles.](../images/alerts.png)
 
 

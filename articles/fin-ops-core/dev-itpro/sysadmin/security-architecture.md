@@ -34,7 +34,7 @@ This topic provides an overview of the security architecture of Finance and Oper
 
 When you understand the security architecture, you can more easily customize security to fit the requirements of your business. The following diagram provides a high-level overview of the security architecture. 
 
-[![Diagram showing overview of security architecture](./media/security-architecture.png)](./media/security-architecture.png)
+[![Diagram showing overview of security architecture.](./media/security-architecture.png)](./media/security-architecture.png)
 
 ## Authentication
 By default, only authenticated users who have user rights can establish a connection. 

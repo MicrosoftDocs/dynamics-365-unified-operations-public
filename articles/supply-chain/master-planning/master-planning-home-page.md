@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -54,7 +54,7 @@ Master scheduling plans typically involve the short term, which can be anywhere 
 
 The following learning map shows the major concepts and tasks that make up the framework of the Master planning module. Click the links in the [Quick links](#quick-links) section to learn how to use the module.
 
-[![Learning map for master planning](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
+[![Learning map for master planning.](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## Quick links
 
@@ -89,7 +89,7 @@ Additional help is available as task guides. To access task guides, click the **
 
 - [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 - [Master planning - tips and tricks for troubleshooting performance](https://youtu.be/7v8BPmEs9Dg)
-- [Help! MRP is slow!](https://youtu.be/RLXybx20B5o)
+- [MRP performance tuning](https://youtu.be/RLXybx20B5o)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

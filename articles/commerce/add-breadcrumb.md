@@ -41,7 +41,7 @@ On pages that have product category context, such as PDPs and category pages, br
 
 The following image shows an example of a breadcrumb module that shows the category hierarchy on a PDP.
 
-![Example of a breadcrumb module](./media/ecommerce-breadcrumb.PNG)
+![Example of a breadcrumb module.](./media/ecommerce-breadcrumb.PNG)
 
 ## Breadcrumb module settings
 

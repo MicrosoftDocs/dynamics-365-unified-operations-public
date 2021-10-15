@@ -4,7 +4,7 @@
 title: Modify row definition cells
 description: This topic describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information.
 author: ShylaThompson
-ms.date: 02/11/2019
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -179,7 +179,7 @@ In the **Format Code** column in a row definition, the **DES**, **LFT**, **RGT**
 
 In the following example, a user wants to prevent the heading and underscores in the **Total Cash** row of her report from being printed, because there was no activity in either of the cash accounts. Therefore, in row 220 (which, as the **---** format code indicates, is a formatting row), in the **Related Formulas/Rows/Units** cell, the user enters **250**, which is the row code of the amount row that the user wants to suppress.
 
-[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition.](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## Select the base row for a column calculation
 In relational reporting, you assign one or more base rows in the row definition by using the **CBR** (change base row) format code. A base row is then referenced by a calculation in the column definition. Here are some typical examples of CBR calculations:
@@ -404,7 +404,7 @@ The **Link to Financial Dimensions** cell contains links to the financial data t
 2. Double-click a cell in the **Link to Financial Dimensions** column.
 3. In the **Dimensions** dialog box, double-click a cell under the dimension name.
 4. In the dialog box for the dimension, select **Individual or range**.
-5. In the **From** field, enter the starting dimension, or click ![Browse](media/browse.gif "Browse") to search for available dimensions. To enter a range of dimensions, enter the ending dimension in the **To** field.
+5. In the **From** field, enter the starting dimension, or click ![Browse.](media/browse.gif "Browse") to search for available dimensions. To enter a range of dimensions, enter the ending dimension in the **To** field.
 6. Click **OK** to close the dialog box for the dimension. The **Dimensions** dialog box displays the updated dimension or range.
 7. Click **OK** to close the **Dimensions** dialog box.
 
@@ -481,7 +481,7 @@ The following table describes the fields in the **Dimensions** dialog box.
 
 | Item                | Description |
 |---------------------|-------------|
-| Individual or range | In the **From** field, enter the name of an account, or click the **Browse** button ![Browse](media/browse.gif "Browse") to browse for the account. To select a range, enter or browse for a value in the **To** field. |
+| Individual or range | In the **From** field, enter the name of an account, or click the **Browse** button ![Browse.](media/browse.gif "Browse") to browse for the account. To select a range, enter or browse for a value in the **To** field. |
 | Dimension Value Set | In the **Name** field, enter the name of a dimension value set. To create, modify, copy, or delete a set, click **Manage Dimension Value Sets**. The **Formula** field is populated with the formula from the **Link to Financial Dimensions** cell for this dimension value set in the row definition. |
 | Totaling accounts   | In the **Name** field, enter or browse for a dimension of totaling accounts. The **Formula** field is populated with the formula in the **Link to Financial Dimensions** cell for this totaling account in the report definition. |
 

@@ -4,7 +4,7 @@
 title: Personnel actions FAQ
 description: This article contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.
 author: andreabichsel
-ms.date: 06/16/2017
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,7 +50,7 @@ There are two types of personnel actions:
 ## What do the statuses of the personnel actions mean?
 Personnel actions can have the following statuses:
 
-- **Draft** – If workflow is used, the action hasn’t been submitted. If workflow isn’t used, the action hasn’t been completed.
+- **Draft** – If workflow is used, the action hasn't been submitted. If workflow isn't used, the action hasn't been completed.
 - **In review** – The personnel action has been submitted to workflow, but the workflow is not completed.
 - **Approved waiting** – The workflow is completed, but the changes are still in process. Canceled – The workflow was canceled or the personnel action was recalled. Rejected – The action request was rejected by the approver.
 - **Processing action** – The action request has been approved and the changes are being processed.
@@ -59,7 +59,7 @@ Personnel actions can have the following statuses:
 - **Denied** – The action request was denied by the approver.
 
 ## Can I delete a personnel action?
-Yes, you can delete personnel actions that have a status of **Draft**, **Error**, **Failed**, or **Canceled**.
+Yes, you can delete personnel actions that have a status of **Draft**, **Error**, **Failed**, or **Canceled**. You can delete personnel actions that have a status of **Completed** only if you've set the **Allow deleting completed worker actions** option to **Yes** on the **Human resources shared parameters** page.
 
 ## What is the fastest way to check the status of a personnel action request?
 Open any of the personnel action list pages and select a personnel action.
@@ -75,10 +75,10 @@ If a personnel action request fails, follow these steps to resolve the error and
 
 ## What happens to a personnel action that uses workflow when the final approval is completed?
 If there are no errors, the personnel action becomes read-only. (You can view the history on the
-**All worker actions** list page, but you can’t change the personnel action.) When the status of a
+**All worker actions** list page, but you can't change the personnel action.) When the status of a
 personnel action is **Completed**, the position or worker record has already been updated. To view the changes that were performed, open the **Positions** or **Workers** list page.
 
-## Why do I receive the following error when I enter a non-zero value in the Pay rate field? “The value is out of its valid range – it much be between 0.00 and 0.00”
+## Why do I receive the following error when I enter a non-zero value in the Pay rate field? "The value is out of its valid range – it much be between 0.00 and 0.00"
 You receive this message because the Level field in the Job form is blank for the job that is associated with the selected position.
 
 To resolve this error, follow these steps:
@@ -90,10 +90,10 @@ To resolve this error, follow these steps:
 > 5. In the Level field, select a level.
 > 6. Close the Job page.
 > 7. Close the Position page.
-> 8. Return to the Compensation tab on the Worker page, select Fixed compensation.  Select New and enter the employee’s position in the Position field.  Enter a value in the Plan field, and then enter the employee’s compensation in the Pay rate field.
+> 8. Return to the Compensation tab on the Worker page, select Fixed compensation.  Select New and enter the employee's position in the Position field.  Enter a value in the Plan field, and then enter the employee's compensation in the Pay rate field.
 
-## Why can’t I change the effective date in the header of the Worker action form?
-You can’t change the effective date because the field is populated with the most logical date for the action type.
+## Why can't I change the effective date in the header of the Worker action form?
+You can't change the effective date because the field is populated with the most logical date for the action type.
 
 For example:
 

@@ -63,7 +63,7 @@ Before you begin the cleanup, complete the following tasks:
 
 4. On the **Records to include** FastTab, specify the conditions that you confirmed with the customer's business department. For example, you've agreed to remove the tax document JSON before March 31, 2018. In this case, in the **Tax document extension information for India** section, in the **Transaction date** field, specify **31/3/2018**.
 
-    ![Transaction date field in the Tax document extension information for India section](media/tax-document-json-02.png)
+    ![Transaction date field in the Tax document extension information for India section.](media/tax-document-json-02.png)
 
 5. Select **OK** to start the cleanup.
 

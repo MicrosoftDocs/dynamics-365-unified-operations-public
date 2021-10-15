@@ -3,7 +3,7 @@
 
 title: Develop composite data entities
 description: A composite entity is a concept that allows you to build a single entity by leveraging multiple entities that are related to each other. 
-author: Sunil-Garg
+author: peakerbl
 ms.date: 03/27/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 18411
 ms.assetid: 1cb19868-cbfd-4f45-bc47-39b9f303583d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -40,7 +40,7 @@ Composite entity is concept that allows you to build a single entity by leveragi
 ## Example
 Sales Header and Sales Line are two different entities in the system. In case the customer requirement suggests that header and lines are part of a single document, then these two entities can be merged as a composite entity. Sample sales order entity: The composite entity (MySalesTableCompositeEntity) represents a sales orders document which is comprised of Sales Order header entity (MySalesTableEntity) and Sales Order Line entity (MySalesTableLineEntity).
 
-[![DevelopingCompositeEntities (17)](./media/developingcompositeentities-17-1024x290.png)](./media/developingcompositeentities-17.png)
+[![DevelopingCompositeEntities (17).](./media/developingcompositeentities-17-1024x290.png)](./media/developingcompositeentities-17.png)
 
 Based on the linked entities, these entities can be exposed as an XML document with embedded element tags for entities. XML is the only way to expose a composite entity in data management.
 
@@ -73,24 +73,24 @@ Make sure that the entities are related to each other. In this example the indiv
 
 Add a relation to parent entity in the relations node. Example – MySalesLineEntity has relationship to MySalesTableEntity.
 
-[![DevelopingCompositeEntities (18)](./media/developingcompositeentities-18.png)](./media/developingcompositeentities-18.png)
+[![DevelopingCompositeEntities (18).](./media/developingcompositeentities-18.png)](./media/developingcompositeentities-18.png)
 
 ### Step 3: Create a new composite entity
 
 1. Add a new **Dynamics 365** artifact item of type **Composite entity** to the project.
 2. In designer mode, right-click the entity and select **New Root Data Entity Reference**.
 
-    [![DevelopingCompositeEntities (2)](./media/developingcompositeentities-2.png)](./media/developingcompositeentities-2.png)
+    [![DevelopingCompositeEntities (2).](./media/developingcompositeentities-2.png)](./media/developingcompositeentities-2.png)
 
 3. Set the data entity to parent data entity. In this case its MySalesTableEntity.
 4. Right-click the parent entity node and select **New Embedded Data Entity Reference**.
 
-    [![DevelopingCompositeEntities (3)](./media/developingcompositeentities-3.png)](./media/developingcompositeentities-3.png)
+    [![DevelopingCompositeEntities (3).](./media/developingcompositeentities-3.png)](./media/developingcompositeentities-3.png)
 
 5. Set the embedded data entity as the child entity. In this case it is MySalesLineEntity.
 6. Set the **Relation** property from the drop-down list on the embedded data entity properties.
 
-    [![DevelopingCompositeEntities (4)](./media/developingcompositeentities-4.png)](./media/developingcompositeentities-4.png)
+    [![DevelopingCompositeEntities (4).](./media/developingcompositeentities-4.png)](./media/developingcompositeentities-4.png)
 
 7. Composite entity supports multi-level child entities.
 
@@ -100,11 +100,11 @@ You need to create relationships between the parent and child entity staging tab
 
 1. Add a foreign key relation on MySalesLineStaging table.
 
-    [![DevelopingCompositeEntities (5)](./media/developingcompositeentities-5.png)](./media/developingcompositeentities-5.png)
+    [![DevelopingCompositeEntities (5).](./media/developingcompositeentities-5.png)](./media/developingcompositeentities-5.png)
 
 2. Add two columns, RowId and ParentRowId (type int), on all the staging tables associated with the composite data entity. Refer to SysCompositeHeaderStaging table for the columns properties.
 
-    [![DevelopingCompositeEntities (7)](./media/developingcompositeentities-7.png)](./media/developingcompositeentities-7.png)
+    [![DevelopingCompositeEntities (7).](./media/developingcompositeentities-7.png)](./media/developingcompositeentities-7.png)
 
 These columns are used to define runtime relationships during the target data movement.
 
@@ -117,7 +117,7 @@ For local testing the composite entity metadata needs to be refreshed.
 
 1. Go to **DIXF Parameters &gt; Entity settings**. Click **Refresh entity list**.
 
-    [![DevelopingCompositeEntities (8)](./media/developingcompositeentities-8-1024x212.png)](./media/developingcompositeentities-8.png)
+    [![DevelopingCompositeEntities (8).](./media/developingcompositeentities-8-1024x212.png)](./media/developingcompositeentities-8.png)
 
 2. Alternately, you can write the following job to refresh the composite entity list metadata.
 

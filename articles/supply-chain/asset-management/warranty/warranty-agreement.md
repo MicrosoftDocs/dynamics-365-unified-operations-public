@@ -56,7 +56,7 @@ A warranty agreement can include several agreement lines to cover the warranty f
     3. In the **Interval** field, enter a number. This field defines the number of periods that the warranty should be valid for.
     4. In the **Percent** field, enter the coverage percentage for the warranty line. The percentage indicates how much is covered by your company.
 
-![Warranty page](media/01-warranty.png)
+![Warranty page.](media/01-warranty.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

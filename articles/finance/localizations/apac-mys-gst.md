@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Malaysia Goods and Services Tax
-description: This topic provides information about how to set up Goods and Services Tax (GST) for a Malaysian company.
+title: Malaysian Goods and Services Tax (GST)/Sales and Service Tax (SST)
+description: This topic provides information about how to set up Goods and Services Tax (GST) and Sales and Service Tax (SST) for a Malaysian company.
 author: mrolecki
-ms.date: 05/17/2017
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,29 +27,31 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Malaysia Goods and Services Tax
+# Malaysian Goods and Services Tax (GST)/Sales and Service Tax (SST)
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you set up Goods and Services Tax (GST) for a Malaysian company. It also explains the functionality that's provided for GST.
+This topic provides information that will help you set up Goods and Services Tax (GST) and Sales and Service Tax (SST) for a Malaysian company. It also explains the functionality that is provided for GST/SST.
 
 GST is a multi-stage tax on domestic consumption. GST is charged on all taxable supplies of goods and services in Malaysia, except those goods and services that are explicitly exempted. GST is also charged on the importation of goods and services into Malaysia.
 
-## Enabling the Malaysia GST features
+The Malaysian government replaced GST with SST as of September 1, 2018. The GST regime has been in place since April 1, 2015.
 
-You can enable the GST features only if the country/region of the legal entity's address is Malaysia.
+## Enabling the Malaysian GST/SST features
 
-### GST registration number
+You can enable the GST/SST features only if the country or region of the legal entity's address is Malaysia.
 
-The GST registration number is printed on your tax invoices and on some reports. You maintain it in the address information for your legal entity. You must first define a registration type on the **Tax registration type** page. Make sure that the country/region code is **MYS**, and that the **Primary for country** check box is selected. Then, in the legal entity's primary address, add the tax registration number for GST. Select the tax registration type that you defined, and then enter your GST registration number.
+### GST/SST registration number
 
-### General ledger parameters for GST
+The GST/SST registration number is printed on your tax invoices and some reports. You maintain it in the address information for your legal entity. You must first define a registration type on the **Tax registration type** page. Make sure that the country/region code is **MYS**, and that the **Primary for country** checkbox is selected. Then, in the legal entity's primary address, add the tax registration number for GST/SST. Select the tax registration type that you defined, and then enter your GST/SST registration number.
+
+### General ledger parameters for GST/SST
 
 On the **General ledger parameters** page, on the **Sales tax** tab, on the **GST options** FastTab, specify the following GST parameters.
 
 | Section | Parameters |
 |---|---|
-| GST invoice | <ul><li>**Use self-billed invoice** – Set the slider to **Yes** if you must issue self-billed invoices in some circumstances.</li><li>**GST invoice format** – Select either **Full invoice** or **Simplified invoice** as the printing format for GST invoices. Most organizations use full invoices. However, in some case, the Director General can, upon written request, allow registered persons to issue simplified tax invoices to their customers.</li><li>**Invoice type** – Select either **GST invoice** or **Invoice** as the default invoice type for sales orders, free text invoices, and project invoices. Most organizations use GST invoices.</li></ul> |
+| GST invoice | <ul><li>**Use self-billed invoice** – Set this option to **Yes** if you must issue self-billed invoices in some circumstances.</li><li>**GST invoice format** – Select either **Full invoice** or **Simplified invoice** as the printing format for GST invoices. Most organizations use full invoices. However, in some case, the Director General can, upon written request, allow registered persons to issue simplified tax invoices to their customers.</li><li>**Invoice type** – Select **GST invoice**, **Invoice**, or **Service invoice** as the default invoice type for sales orders, free text invoices, and project invoices. Most organizations use GST invoices.</li></ul> |
 | GST audit file | <ul><li>**GAF version** – Specify the version of the GST audit file (GAF). This information is included in the GAF that is generated.</li></ul> |
 | GST summary | <p>Specify the information that should be includes in the GST summary text of a GST invoice:</p><ul><li>**Exempt GST print code** – Specify the print code that is used for exempt GST codes.</li><li>**Include delimiter in summary text** – Set the slider to **Yes** to include the delimiter in summary text.</li><li>**Delimiter** – Specify the delimiter to use on GST summary lines.</li><li>**Include tax code in summary text** – Set the slider to **Yes** to include tax codes in summary text.</li><li>**Include tax value in summary text** – Set the slider to **Yes** to include tax values in summary text.</li></ul> |
 
@@ -83,6 +85,8 @@ A sample tax invoice is provided that adds the following details to a standard s
 -   The GST summary
 
 To print a GST invoice for a sales order, on the sales order header, select **GST invoice** as the invoice type. However, to print a commercial invoice, select **Invoice** as the invoice type. You can also print simplified invoices for sales orders by changing the value of the **GST invoice format** field on the **General ledger parameters** page to **Simplified invoice**. A sample simplified invoice is provided. This invoice differs from the sample full tax invoice in that it omits the invoice title, and the name and address of the recipient. The same functionality is available for free text invoices.
+
+The Sales Tax and Service Tax were governed the Sales Tax Act 2018 and the Service Tax Act 2018. The Sales Tax was a federal consumption tax that was imposed on a wide variety of goods, whereas the Service Tax was levied on customers who consumed some taxable services. According to those acts, any amount that is expressed in a currency other than the Malaysian ringgit must also be expressed in Malaysian ringgit. The selling rate of the prevailing exchange in Malaysia at the time of the sale of taxable goods is used.
 
 ### Relief clauses on invoices
 

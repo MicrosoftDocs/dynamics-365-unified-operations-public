@@ -50,11 +50,11 @@ In addition, the theme can expose different properties for each layout. A theme 
 
 The following image shows an example of a content block module with a hero layout.
 
-![Example of a hero module](./media/Hero.PNG)
+![Example of a hero module.](./media/Hero.PNG)
 
 The following image shows an example of a content block module with a feature layout.
 
-![Examples of feature modules](./media/Feature.PNG)
+![Examples of feature modules.](./media/Feature.PNG)
 
 ## Content block module properties
 

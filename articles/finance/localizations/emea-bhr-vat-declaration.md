@@ -81,7 +81,7 @@ After you've finished downloading the ER configurations from Lifecycle Services 
 
 The VAT declaration form includes a set of boxes (lines) that correspond to specific parts of the VAT return process. Each box should include information about the base, adjustment, and VAT amounts. To include the requirements established by the form, you must configure each box with the information that is automatically provided from the sales tax transactions generated from sales, purchases, or other operations where VAT tax is posted through the sales tax code configuration.
 
-![Declaration form](media/emea-bhr-vat-Declaration-Form.png)
+![Declaration form.](media/emea-bhr-vat-Declaration-Form.png)
 
 #### Example
 
@@ -112,7 +112,7 @@ By adding this last record (NA), you define the following rule: When the tax cod
 9. Close the **Application specific parameters** page.
 
 
-![Set up specific parameters](media/emea-bhr-vat-Format-Setup.png)
+![Set up specific parameters.](media/emea-bhr-vat-Format-Setup.png)
 
 
 The following table represent an example of how the user needs to configure these parameters to establish the configuration between the different boxes in the declaration form and sales tax code configuration implemented in Finance.

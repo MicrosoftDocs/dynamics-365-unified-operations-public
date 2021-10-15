@@ -3,7 +3,7 @@
 
 title: Synchronize products in Supply Chain Management to products in Field Service
 description: This topic discusses the templates and underlying task that are used to synchronize products from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update 
 ms.search.validFrom: 2017-07-8
 
@@ -73,7 +73,7 @@ The following illustrations show the template mapping in Data integration.
 
 ### Field Service Products (Supply Chain Management to Field Service): Products - Products
 
-[![Template mapping in Data integration](./media/FSProduct.png)](./media/FSProduct.png)
+[![Template mapping in Data integration.](./media/FSProduct.png)](./media/FSProduct.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

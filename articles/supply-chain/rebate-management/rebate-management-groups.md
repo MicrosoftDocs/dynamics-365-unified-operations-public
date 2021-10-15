@@ -22,14 +22,14 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # Rebate management groups
 
 [!include [banner](../includes/banner.md)]
 
-Rebate and deduction calculations can be driven by groups. Rebate management groups can be created for customers, vendors, and items. They can be attached to a master record.
+Rebate management calculations can be driven by groups. Rebate management groups can be created for customers, vendors, and items. They can be attached to a master record.
 
 ## Rebate management customer groups
 
@@ -53,10 +53,9 @@ To view, add, or remove customers for a selected group, follow these steps.
 1. Go to **Rebate management \> Rebate management groups setup \> Customer groups**.
 1. Select the group to manage.
 1. On the Action Pane, select **Customers**. The **Rebate management groups** page appears and shows a list of customers that are already members of the selected group.
-1. To add a new customer to the group, select **New** on the Action Pane to add a row to the grid. Then set the following fields for the new row:
+1. To add a new customer to the group, select **New** on the Action Pane to add a row to the grid. Then set the following field for the new row:
 
     - **Customer account** – Select the customer account ID.
-    - **Name** – Enter a name and/or description of the customer.
 
 1. To remove a customer from the group, select the customer, and then select **Delete** on the Action Pane.
 
@@ -65,10 +64,9 @@ To view, add, or remove group assignments for a selected customer, follow these 
 1. Go to **Accounts receivable \> Customers \> All customers**.
 1. Select the customer to work with.
 1. On the Action Pane, on the **Customer** tab, in the **Rebate management** group, select **Rebate management groups**. The **Rebate management groups** page appears and shows a list of groups that the selected customer already belongs to.
-1. To add the customer to a new group, select **New** on the Action Pane to add a row to the grid. Then set the following fields for the new row:
+1. To add the customer to a new group, select **New** on the Action Pane to add a row to the grid. Then set the following field for the new row:
 
     - **Rebate management group** – Select the group to add the customer to.
-    - **Description** – Enter a description of the group (for example, to explain why the customer is a member of it).
 
 1. To remove a customer from a group, select the group, and then select **Delete** on the Action Pane.
 
@@ -92,10 +90,9 @@ To view, add, or remove vendors for a selected group, follow these steps.
 1. Go to **Rebate management \> Rebate management groups setup \> Vendor groups**.
 1. Select the group to manage.
 1. On the Action Pane, select **Vendors**. The **Rebate management groups** page appears and shows a list of vendors that are already members of the selected group.
-1. To add a new vendor to the group, select **New** on the Action Pane to add a row to the grid. Then set the following fields for the new row:
+1. To add a new vendor to the group, select **New** on the Action Pane to add a row to the grid. Then set the following field for the new row:
 
     - **Vendor account** – Select the vendor account ID.
-    - **Name** – Enter a name and/or description of the vendor.
 
 1. To remove a vendor from the group, select the vendor, and then select **Delete** on the Action Pane.
 
@@ -104,10 +101,9 @@ To view, add, or remove group assignments for a selected vendor, follow these st
 1. Go to **Accounts payable \> Vendors \> All vendors**.
 1. Select the vendor to work with.
 1. On the Action Pane, on the **Vendor** tab, in the **Rebate management** group, select **Rebate management groups**. The **Rebate management groups** page appears and shows a list of groups that the selected vendor already belongs to.
-1. To add the vendor to a new group, select **New** on the Action Pane to add a row to the grid. Then set the following fields for the new row:
+1. To add the vendor to a new group, select **New** on the Action Pane to add a row to the grid. Then set the following field for the new row:
 
     - **Rebate management group** – Select the group to add the vendor to.
-    - **Description** – Enter a description of the group (for example, to explain why the vendor is a member of it).
 
 1. To remove a vendor from a group, select the group, and then select **Delete** on the Action Pane.
 
@@ -131,10 +127,9 @@ To view, add, or remove items for a selected group, follow these steps.
 1. Go to **Rebate management \> Rebate management groups setup \> Item groups**.
 1. Select the group to manage.
 1. On the Action Pane, select **Items**. The **Rebate management groups** page appears and shows a list of items that are already members of the selected group.
-1. To add a new item to the group, select **New** on the Action Pane to add a row to the grid. Then set the following fields for the new row:
+1. To add a new item to the group, select **New** on the Action Pane to add a row to the grid. Then set the following field for the new row:
 
     - **Item account** – Select the item account ID.
-    - **Product name** – Enter a name and/or description of the item.
 
 1. To remove an item from the group, select the item, and then select **Delete** on the Action Pane.
 
@@ -143,10 +138,9 @@ To view, add, or remove group assignments for a selected item, follow these step
 1. Go to **Product information management \> Products \> Released products**.
 1. Select the item to work with.
 1. On the Action Pane, on the **Product** tab, in the **Rebate management** group, select **Rebate management groups**. The **Rebate management groups** page appears and shows a list of groups that the selected item already belongs to.
-1. To add the item to a new group, select **New** on the Action Pane to add a row to the grid. Then set the following fields for the new row:
+1. To add the item to a new group, select **New** on the Action Pane to add a row to the grid. Then set the following field for the new row:
 
     - **Rebate management group** – Select the group to add the item to.
-    - **Description** – Enter a description of the group (for example, to explain why the item is a member of it).
 
 1. To remove an item from a group, select the group, and then select **Delete** on the Action Pane.
 

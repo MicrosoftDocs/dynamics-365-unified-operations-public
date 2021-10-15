@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lifecycle Services resources
-description: Lifecycle Services (LCS) for Microsoft Dynamics provides an environment and services that can help you manage the your application lifecycle.
+description: Lifecycle Services (LCS) for Microsoft Dynamics provides an environment and services that can help you manage your application lifecycle.
 author: kfend
 ms.date: 06/01/2020
 ms.topic: article

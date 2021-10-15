@@ -58,7 +58,7 @@ Applications use the Document Routing Agent to manage the spooling of documents 
 1. Open the **Manage network printers** page (**Organization administration** &gt; **Setup** &gt; **Network printers**).
 2. On the **Options** tab, in the **Application** group, click **Download document routing agent installer**.
 
-    [![download-document-routing-agent-installer](./media/download-document-routing-agent-installer.png)](./media/download-document-routing-agent-installer.png)
+    [![download-document-routing-agent-installer.](./media/download-document-routing-agent-installer.png)](./media/download-document-routing-agent-installer.png)
 
 3. Run the downloaded file to begin the installation process.
 4. Complete the setup process.
@@ -72,7 +72,7 @@ Use the following procedure to configure the client application so that it can c
 2. On your desktop, run the Document Routing Agent.
 3. On the toolbar, click **Settings**.
 
-    [![the-document-routing-agent-window](./media/the-document-routing-agent-window.png)](./media/the-document-routing-agent-window.png)
+    [![the-document-routing-agent-window.](./media/the-document-routing-agent-window.png)](./media/the-document-routing-agent-window.png)
 
 4. Add the following settings:
 
@@ -94,7 +94,7 @@ Before you complete this procedure, make sure that you've installed all the netw
 1. On the toolbar, click **Printers**.
 2. Select the printers to make available in the applications.
 
-    [![printers-to-add](./media/printers-to-add.png)](./media/printers-to-add.png)
+    [![printers-to-add.](./media/printers-to-add.png)](./media/printers-to-add.png)
 
 3. Specify a default name for the printer.
 4. Click **OK**.
@@ -106,7 +106,7 @@ Use client pages to manage access to the network printers that have been registe
 
 1. Open the **Manage network printers** page (**Organization administration** &gt; **Setup** &gt; **Network printers**).
 
-    [![manage-network-printers-page](./media/manage-network-printers-page.png)](./media/manage-network-printers-page.png)
+    [![manage-network-printers-page.](./media/manage-network-printers-page.png)](./media/manage-network-printers-page.png)
 
 2. Edit the existing entries that are mapped to each network printer. As part of your changes, edit the connection path.
 3. To include a printer as an option in the **Print Destinations** field, set the **Active** field to **Yes**.

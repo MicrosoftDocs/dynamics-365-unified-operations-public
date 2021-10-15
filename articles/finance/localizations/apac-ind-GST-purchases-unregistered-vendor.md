@@ -3,7 +3,7 @@
 
 title: Purchases from unregistered vendors
 description: This topic explains how to work with purchase requisitions for unregistered vendors.
-author: EricWang
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.4
 
     The **Tax information** button becomes available.
 
-    ![Purchase requisitions page](media/Annotation-2019-05-15-153813.png)
+    ![Purchase requisitions page.](media/Annotation-2019-05-15-153813.png)
 
 3. Select **Tax information**.
 4. On the **GST** FastTab, validate the default values for the following fields:
@@ -62,7 +62,7 @@ ms.dyn365.ops.version: 10.0.4
     - **CGST:** 5 percent
     - **SGST:** 10 percent
 
-    ![Tax document page](media/Annotation-2019-05-15-161112.png)
+    ![Tax document page, Tax details FastTab.](media/Annotation-2019-05-15-161112.png)
 
 8. Select **Close**.
 9. Select **Submit**.
@@ -99,7 +99,7 @@ ms.dyn365.ops.version: 10.0.4
     - **CGST:** 5 percent
     - **SGST:** 10 percent
 
-    ![Tax document page](media/Annotation-2019-05-15-163603.png)
+    ![Tax document page.](media/Annotation-2019-05-15-163603.png)
 
 2. If you change any tax attributes after the order line is created, select **Recalculate** to recalculate the tax.
 3. Select **Close**, and then select **Confirm**.
@@ -114,37 +114,37 @@ ms.dyn365.ops.version: 10.0.4
 
 The following illustration shows the financial entry for the purchase of goods.
 
-![Financial entry for the purchase of goods](media/Annotation-2019-05-15-165701.png)
+![Financial entry for the purchase of goods.](media/Annotation-2019-05-15-165701.png)
 
 > [!NOTE]
 > After the authority payment, the credit should be claimed.
 
 The following illustration shows the financial entry for the purchase of services.
 
-![Financial entry for the purchase of services](media/Annotation-2019-05-15-165743.png)
+![Financial entry for the purchase of services.](media/Annotation-2019-05-15-165743.png)
 
 The following illustration shows the financial entry on invoice payment.
 
-![Financial entry on invoice payment](media/Annotation-2019-05-15-165829.png)
+![Financial entry on invoice payment.](media/Annotation-2019-05-15-165829.png)
 
 > [!NOTE]
 > An appropriate Service Accounting Code (SAC) must be selected.
 
 The following illustration shows the financial entry for the purchase of goods where the ITC category is set to **Others**.
 
-![Financial entry for the purchase of goods where the ITC category is set to Others](media/Annotation-2019-05-15-165912.png)
+![Financial entry for the purchase of goods where the ITC category is set to Others.](media/Annotation-2019-05-15-165912.png)
 
 The following illustration shows the financial entry for the purchase of services where the service category is set to **Others**.
 
-![Financial entry for the purchase of services where the service category is set to Others](media/Annotation-2019-05-15-165958.png)
+![Financial entry for the purchase of services where the service category is set to Others.](media/Annotation-2019-05-15-165958.png)
 
 The following illustration shows the financial entry on invoice payment.
 
-![Financial entry on invoice payment](media/Annotation-2019-05-15-170044.png)
+![Financial entry invoice payment.](media/Annotation-2019-05-15-170044.png)
 
 The following illustration shows the financial entry for purchases where the load on inventory is set to 100 percent.
 
-![Financial entry for purchases where the load on inventory is set to 100 percent](media/Annotation-2019-05-15-170133.png)
+![Financial entry for purchases where the load on inventory is set to 100 percent.](media/Annotation-2019-05-15-170133.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

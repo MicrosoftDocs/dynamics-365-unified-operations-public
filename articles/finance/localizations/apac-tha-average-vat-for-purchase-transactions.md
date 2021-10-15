@@ -170,18 +170,18 @@ between the VAT businesses and the non-VAT businesses is 50 percent to
 The VAT is calculated and posted to different accounts, as shown in the
 following table.
 
-<table style="width: 100.058%;">
+<table>
 <tbody>
 <tr>
-<td style="width: 49.2322%;">
+<td>
 <p><strong>VAT calculated and posted when the invoice is posted</strong></p>
 </td>
-<td style="width: 49.3858%;">
+<td>
 <p><strong>VAT calculated and adjusted when the invoice is settled with updated VAT ratio</strong></p>
 </td>
 </tr>
 <tr>
-<td style="width: 49.2322%;">
+<td>
 <p>The invoice amount is THB 100.00.</p>
 <p>The total VAT that is applicable to the invoice is 7 percent, and the calculated VAT amount is THB 7.00.</p>
 <ul>
@@ -238,7 +238,7 @@ following table.
 </tbody>
 </table>
 </td>
-<td style="width: 49.3858%;">
+<td>
 <p>A payment of THB 100.00 is made to settle the invoice.</p>
 <p>The total VAT that is applicable to the invoice is 7 percent, and the calculated VAT amount is THB 7.00.</p>
 <ul>
@@ -364,12 +364,12 @@ Revenue Department of Thailand every month.
 The following illustration shows an example of a detailed **Average
 VAT** report.
 
-![detailed Average VAT report](media/apac-tha-detailed-average-vat-report.png)
+![detailed Average VAT report.](media/apac-tha-detailed-average-vat-report.png)
 
 The following illustration shows an example of a summarized **Average
 VAT** report.
 
-![summarized Average VAT report](media/apac-tha-summarized-average-vat-report.png)
+![summarized Average VAT report.](media/apac-tha-summarized-average-vat-report.png)
 
 The following table explains the information that is shown on the
 **Average VAT** report.
@@ -476,7 +476,7 @@ The following transactions are created for the voucher:
 
 - **Deductible VAT:** THB 70 × 50 percent = THB 28
 
-    ![Voucher transactions](media/apac-tha-voucher-transactions.png)
+    ![Voucher transactions.](media/apac-tha-voucher-transactions.png)
 
 7.  Go to **Accounts payable &gt; Payments &gt; Vendor payment
     journal**, and settle the transaction.
@@ -504,4 +504,4 @@ and realized VAT](apac-tha-unrealized-vat.md).
 The difference between the old nondeductible VAT and the new
 nondeductible VAT amount is THB 10.50.
 
-![Average VAT report](media/apac-tha-average-vat-report.png)
+![Average VAT report.](media/apac-tha-average-vat-report.png)

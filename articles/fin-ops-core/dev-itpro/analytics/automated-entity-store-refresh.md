@@ -49,7 +49,7 @@ Complete the following steps to enable automated Entity store refresh.
 
 You will now see the new experience.
 
-![New UI experience](./media/entity-store-data-lake-3.JPG)
+![New UI experience.](./media/entity-store-data-lake-3.JPG)
 
 After the new experience is turned on, you can define the refresh for each aggregate measurement. The following refresh options are available:
 

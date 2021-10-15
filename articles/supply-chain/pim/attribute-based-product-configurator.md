@@ -3,7 +3,7 @@
 
 title: Attribute-based sales prices for constraint-based product configuration
 description: This topic describes how to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route. 
-author: sorenva 
+author: t-benebo
 ms.date: 10/2/2020
 ms.topic: article
 ms.prod: 
@@ -19,12 +19,14 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: sorenand
+ms.author: benebotg
 ms.search.validFrom: 2020-08-17
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
 
 # Attribute-based sales prices for constraint-based product configuration
+
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route. You can build several sales price models for each product configuration model.
 
@@ -38,7 +40,7 @@ To set your default currency:
 1. Open the **Constraint-Based product configuration models** tab.
 1. Open the **Default currency** drop-down list and select your currency.
 
-    ![Set the default currency for constraint-based product configuration](media/prod-config-currency.png "Set the default currency for constraint-based product configuration")
+    ![Set the default currency for constraint-based product configuration.](media/prod-config-currency.png "Set the default currency for constraint-based product configuration")
 
 1. If you'd like to attach an Excel file with a price breakdown for all order or quotation lines, then in the **Price model** section, set **Attach** to *Yes*.
 
@@ -65,7 +67,7 @@ The following example shows a base price of a static number of 899.95 EUR, which
 - For rosewood cabinet finish, add 119.95 EUR.
 - Add 12.95 EUR for each unit of speaker height.
 
-![Example price model](media/prod-config-rules-example.png "Example price model")
+![Example price model.](media/prod-config-rules-example.png "Example price model")
 
 ## Add support for multiple currencies
 
@@ -86,7 +88,7 @@ To add explicit prices in an additional currency:
 
 In the example below, _EUR_ is the default currency, and _USD_ has been added as an additional currency.
 
-![Example of a model with multiple currencies](media/prod-config-rules-currency-example.png "Example of a model with multiple currencies")
+![Example of a model with multiple currencies.](media/prod-config-rules-currency-example.png "Example of a model with multiple currencies")
 
 > [!NOTE]
 > You can't add expression rules that are unique for a non-default currency. To create expression rules that would be relevant only for a currency other than the default currency, set the price expression for the default currency to zero. Then set the appropriate expression for the non-default currency.
@@ -98,11 +100,11 @@ To test how the sales prices work in a configuration session, open the edit page
 - Use the configuration settings offered here to select product options and then see how they affect the value shown for **Price and ship date**.
 - Select **View price breakdown** to download an Excel document that shows full details about how the price was calculated.
 
-![Test your product model](media/prod-config-test.png "Test your product model")
+![Test your product model.](media/prod-config-test.png "Test your product model")
 
 The downloaded spreadsheet shows both the absolute value and the contribution as a percentage for each active price element. If you have set the **Attach** price model option on the **Product information management parameters** page, this Excel sheet gets attached to the order or quotation line.
 
-![Excel spreadsheet showing price breakdown](media/prod-config-excel-example.png "Excel spreadsheet showing price breakdown")
+![Excel spreadsheet showing price breakdown.](media/prod-config-excel-example.png "Excel spreadsheet showing price breakdown")
 
 ## Set up selection criteria for price models
 
@@ -121,7 +123,7 @@ To set up selection criteria for price models:
     - **Valid from** - Specify the first day when the query will apply.
     - **Expire by** - Specify the last date when the query will apply.
 
-    ![Price model criteria](media/prod-config-price-model-criteria.png "Price model criteria")
+    ![Price model criteria.](media/prod-config-price-model-criteria.png "Price model criteria")
 
 1. Select the row for the query you want to define and then select **Edit** on the **Action Pane**. The query designer dialog box opens. It works like most query designers in Supply Chain Management. Use it to define the conditions under which the price model for the row you selected should be applied.
 
@@ -142,7 +144,7 @@ The final step is to specify attribute-based sales prices for the product model 
 1. Select the target product configuration model.
 1. On the Action Pane, open the **Model** tab and, from the **Product model details** group, select **Versions**.
 1. The **Versions** page opens. Make sure the **Pricing method** is set to **Attribute based**.
-    ![Set the pricing method to attribute based](media/prod-config-versions.png "Set the pricing method to attribute based")
+    ![Set the pricing method to attribute based.](media/prod-config-versions.png "Set the pricing method to attribute based")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

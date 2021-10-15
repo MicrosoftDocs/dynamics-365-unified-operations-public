@@ -20,7 +20,7 @@ ms.search.scope:
 # ms.custom: NotInTOC
 ms.search.region: Global
 # ms.search.industry:
-ms.author: tfehr
+ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
 ---
@@ -82,7 +82,7 @@ The application-specific parameters let you establish the criteria of how tax tr
 
 The sales and purchase book reports for Egypt include a set of columns that correspond to specific transaction classifications as types of operations, products, and documents that are specific for Egypt. Instead of including these new classifications as new entry data when the transactions are posted, the classifications will be determined based on different lookups introduced in **Configurations** > **Set up application-specific parameters** > **Setup** to meet the requirements of VAT reports for Egypt. 
 
-![Application specific parameters page](media/egypt-vat-declaration-setup1.png)
+![Application specific parameters page.](media/egypt-vat-declaration-setup1.png)
 
 These following lookup configurations are used to classify the transactions in purchase and sales VAT books reports:
 
@@ -211,7 +211,7 @@ To generate the VAT return form report in Microsoft Excel format, define an ER f
 2. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (EG)**. If you leave the field blank, the standard sales tax report will be generated in SSRS format.
 3. Select the **Category hierarchy**. This category enables the commodity code in Foreign trade tab transactions to allow users to select and classify goods and services. The description of this classification is detailed in sales and purchase transaction reports. This configuration is optional.
 
-![Declaration form](media/egypt-vat-declaration-setup2.png)
+![Declaration form.](media/egypt-vat-declaration-setup2.png)
 
 
 ## Generate a VAT return report

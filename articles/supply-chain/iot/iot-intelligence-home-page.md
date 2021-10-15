@@ -17,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom:
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: rhaertle
@@ -48,7 +48,7 @@ IoT Intelligence supports the following scenarios:
 
 The following illustration shows the interaction of Azure IoT Hub, IoT Intelligence, and Supply Chain Management.
 
-![IoT Hub, IoT Intelligence, and Supply Chain Management](media/iot_intelligence.png)
+![IoT Hub, IoT Intelligence, and Supply Chain Management.](media/iot_intelligence.png)
 
 ## Setup
 

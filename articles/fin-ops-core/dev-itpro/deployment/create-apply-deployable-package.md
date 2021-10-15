@@ -39,7 +39,7 @@ In order to deploy your code and customizations to a runtime environment (demo, 
 > [!NOTE]
 > Custom payment connector for Commerce needs to be packaged using a combined AOT deployable package. For more information, see [Create payment packaging for Application Explorer in Service Fabric deployments](../../../commerce/dev-itpro/payment-connector-package.md).
 
-![Create and apply a deployment package](./media/createandapplydeployablepackage.png)
+![Create and apply a deployment package.](./media/createandapplydeployablepackage.png)
 
 > [!NOTE]
 > Application Deployable Packages do not contain source code.
@@ -52,10 +52,10 @@ We recommend using a build environment to create deployable packages. You can al
 On a development environment, after you have completed development and testing, follow these steps to create a deployable package in Visual Studio.
 
 1.  In Microsoft Visual Studio, select **Dynamics 365** &gt; **Deploy** &gt; **Create Deployment Package**.
-![Create deployment package](./media/createdeploymentpackage-986x1024.png)
+![Create deployment package.](./media/createdeploymentpackage-986x1024.png)
 
 2.  Select the packages that contain your models, and then select a location in which to create the deployable package. 
-![Select a location](./media/pack4.png)
+![Select a location.](./media/pack4.png)
 
 3.  After a deployable package is created, sign in to Lifecycle Services, and then, in your LCS project, click the **Asset Library** tile.
 

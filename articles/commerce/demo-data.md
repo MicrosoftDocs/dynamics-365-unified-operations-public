@@ -37,13 +37,13 @@ This topic provides information about the screen layouts that are included with 
 
 The sample screen layouts that are included with Commerce demo data provide content that is optimized for various retail segments, store worker roles, and devices. A single layout can contain several layout sizes and combinations of button grids, to help ensure coverage as store workers move between devices and stations. This topic highlights the differences between these layouts, the operations that they provide, and the overall experiences that they deliver.
 
-![Cross-device demo data layouts](../commerce/media/demo-screen-layouts-fig-1-1.png)
+![Cross-device demo data layouts.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
 ## Anatomy of a screen layout ID
 
 To find screen layouts, go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS** \> **Screen layouts**.
 
-![Screen layouts page](../commerce/media/demo-screen-layouts-fig-2-1.png)
+![Screen layouts page.](../commerce/media/demo-screen-layouts-fig-2-1.png)
 
 Screen layout IDs can have a maximum of 10 characters. The ID is a string that consists of three pieces of information, in this order:
 
@@ -83,7 +83,7 @@ F4MGR
 
 The following illustration shows an example of the Welcome screen for a Fabrikam store manager.
 
-![Welcome screen for the Fabrikam store manager](../commerce/media/demo-screen-layouts-fig-2-2.png)
+![Welcome screen for the Fabrikam store manager.](../commerce/media/demo-screen-layouts-fig-2-2.png)
 
 ## Layout sizes
 
@@ -112,7 +112,7 @@ The following table shows the layout sizes that are provided for typical screen 
 > [!TIP]
 > POS automatically selects layout sizes, based on the closest size that is available for the screen resolution of the current app window. To find the screen layout ID and layout resolution that are currently used, in Modern POS (MPOS) or Retail Cloud POS (CPOS), open the **Settings** page, and look in the **Session information** section. You can also see the actual window resolution for your current application or browser frame. After you have this information, you can find the source of the layout content by going to **Channel setup** \> **POS setup** \> **POS** \> **Screen layouts**.
 
-![Screen layouts and layout resolutions/sizes in Commerce and POS](../commerce/media/demo-screen-layouts-fig-3-1.png)
+![Screen layouts and layout resolutions/sizes in Commerce and POS.](../commerce/media/demo-screen-layouts-fig-3-1.png)
 
 ## Companies and brands
 
@@ -133,19 +133,19 @@ The following illustrations show examples of the welcome page and transaction pa
 
 ### Adventure Works
 
-![Demo data welcome page for Adventure Works](../commerce/media/demo-screen-layouts-fig-4-1a.png)
+![Demo data welcome page for Adventure Works.](../commerce/media/demo-screen-layouts-fig-4-1a.png)
 
-![Demo data transaction page for Adventure Works](../commerce/media/demo-screen-layouts-fig-4-1b.png)
+![Demo data transaction page for Adventure Works.](../commerce/media/demo-screen-layouts-fig-4-1b.png)
 
 ### Fabrikam
 
-![Demo data welcome page for Fabrikam](../commerce/media/demo-screen-layouts-fig-4-2a.png)
+![Demo data welcome page for Fabrikam.](../commerce/media/demo-screen-layouts-fig-4-2a.png)
 
-![Demo data transaction page for Fabrikam](../commerce/media/demo-screen-layouts-fig-4-2b.png)
+![Demo data transaction page for Fabrikam.](../commerce/media/demo-screen-layouts-fig-4-2b.png)
 
 ### Contoso
 
-![Demo data layouts for Contoso](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Demo data layouts for Contoso.](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## User sign in matrix
 
@@ -172,7 +172,7 @@ Users have been provided for the various screen layouts. By using the following 
 
 <!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**. -->
 
-<!-- ![Images in Dynamics 365 Commerce](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
+<!-- ![Images in Dynamics 365 Commerce.](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
 
 <!-- Use the [POS Icon and Image Mapping](../commerce/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 

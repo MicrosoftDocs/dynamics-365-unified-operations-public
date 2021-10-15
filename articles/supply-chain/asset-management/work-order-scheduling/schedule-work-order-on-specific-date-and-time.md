@@ -43,13 +43,13 @@ If a work order must be scheduled on a specific date *and* time, you can overrid
 
 4. On the **Work order header** FastTab, insert start and end dates and times in the **Expected start** and **Expected end** fields.
 
-    ![Figure 1](media/05-work-order-scheduling.png)
+    ![Figure 1.](media/05-work-order-scheduling.png)
 
 5. On the **General** tab, click **Schedule** to use the standard scheduling process, or click **Dispatch** if you want to assign the work order to a specific worker.
 
 6. In order to override any existing capacity reservations to ensure that the work order is scheduled in the expected period, make the selections as shown in the figure below in the **Schedule work order** dialog > **Finite capacity** section. This means that the scheduling process will ignore existing capacity reservations because the work order must start on the expected start time.
 
-    ![Figure 2](media/06-work-order-scheduling.png)
+    ![Figure 2.](media/06-work-order-scheduling.png)
 
 7. Click **OK** to start scheduling.
 

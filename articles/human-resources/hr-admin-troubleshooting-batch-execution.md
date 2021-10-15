@@ -50,7 +50,7 @@ When a batch job is stuck in an **Executing** or **Canceling** state, you can re
 
 5. On the **Select new status** page, select **Waiting**, and then select **OK**.
 
-   ![Select a new batch job status](./media/hr-admin-reset-batch-job-status.png)
+   ![Select a new batch job status.](./media/hr-admin-reset-batch-job-status.png)
 
 ## See also
 

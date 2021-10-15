@@ -43,7 +43,7 @@ In the following example, a new field, **MyInventLocationId**, is added to the I
 
 The following illustration shows the new relation.
 
-![New relation](media/AddRelationToExistingTable.jpg)
+![New relation.](media/AddRelationToExistingTable.jpg)
 
 ## Troubleshooting
 

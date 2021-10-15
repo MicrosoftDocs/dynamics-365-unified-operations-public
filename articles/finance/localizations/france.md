@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.search.region: France
 # ms.search.industry: 
 ms.author: roschlom
@@ -45,6 +45,7 @@ This topic includes information and links to resources that can help you set up 
 - [Derogatory depreciation](emea-fra-derogatory-depreciation.md)
 - [French bills of exchange and promissory notes](tasks/fr-00004-french-bills-exchange-promissory-notes.md)
 - [Audit File for France (FEC) overview](emea-fra-fec-audit-file.md)
+- [French Intrastat](emea-fra-intrastat.md)
 - [NAF codes and siret numbers](emea-fra-naf-codes-siret-numbers.md)
 - [Set up NAF codes and Siret numbers](tasks/fr-00003-naf-codes-siret-numbers.md)
 - [Penalties for past due customer payments](emea-fra-apply-penalty-customer-payment-past-due.md)
@@ -54,6 +55,8 @@ This topic includes information and links to resources that can help you set up 
 - [RB/SL depreciation](emea-fra-rbsl-depreciation.md)
 - [Setup method of payment](tasks/fr-00004-setup-method-payment.md)
 - [Update method of payment on customer](tasks/fr-00004-update-method-payment-customer.md)
+- [VAT declaration](emea-fra-VAT-declaration-preview-France.md)
+- [DAS2 report](emea-fra-das2-report.md)
 - Commerce
   - [Cash register functionality](../../commerce/localizations/emea-fra-cash-registers.md)
   - [Deployment guidelines for cash registers](../../commerce/localizations/emea-fra-deployment.md)

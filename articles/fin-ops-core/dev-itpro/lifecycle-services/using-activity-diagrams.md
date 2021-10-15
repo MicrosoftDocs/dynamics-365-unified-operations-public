@@ -40,7 +40,7 @@ There are two types of activity diagrams:
 ## Browse activity diagrams
 The **Diagrams** column in your BPM library indicates whether a particular business process is associated with an activity diagram. The number in the column indicates the number of child processes that include diagrams. The symbol next to the number indicates whether the current node or process is associated with a diagram. These indicators don't apply to Visio diagrams.
 
-[![monitoringanddiagnostics01](./media/browse_activity_diagrams.JPG)](./media/browse_activity_diagrams.JPG)
+[![monitoringanddiagnostics01.](./media/browse_activity_diagrams.JPG)](./media/browse_activity_diagrams.JPG)
 
 To view an activity diagram, select the business process, and then, in the right pane, on the **Overview** tab, select **Diagrams**. The **Flowchart** page appears. 
 
@@ -48,12 +48,12 @@ To view an activity diagram, select the business process, and then, in the right
 ## Upload Task Recording
 To upload a task recording, open the business process library that you want to upload to. Select the process step that you want to upload the task recording to, and then click **Upload**.
 
-[![activitydiagrams01](./media/activity_diagrams_01.jpg)](./media/activity_diagrams_01.jpg)
+[![activitydiagrams01.](./media/activity_diagrams_01.jpg)](./media/activity_diagrams_01.jpg)
 
 
 In the right pane, click **Browse** to choose a file, and then click **Upload**.
 
-[![activitydiagrams02](./media/activity_diagrams_02.jpg)](./media/activity_diagrams_02.jpg)
+[![activitydiagrams02.](./media/activity_diagrams_02.jpg)](./media/activity_diagrams_02.jpg)
 
 
 ## Activity diagrams that are created from task recordings
@@ -69,7 +69,7 @@ To upload a recording file, select the business process, and then, in the right 
 
 BPM automatically generates an activity diagram and detailed process steps for all task recordings that are created. The following illustration shows an example.
 
-![Example of an activity diagram and process steps for a task recording](./media/NEWBPM_BlogPost17-1024x483.png "Example of an activity diagram and process steps for a task recording")
+![Example of an activity diagram and process steps for a task recording.](./media/NEWBPM_BlogPost17-1024x483.png "Example of an activity diagram and process steps for a task recording")
 
 
 ## Visio files

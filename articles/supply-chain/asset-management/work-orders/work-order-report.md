@@ -48,11 +48,11 @@ You can generate a work order report that shows detailed information about one o
 
 The following illustration shows an example of how the report parameters can be set up.
 
-![Figure 1](media/20-work-orders.png)
+![Figure 1.](media/20-work-orders.png)
 
 The following illustration shows an example of a work order report that is generated based on that setup.
 
-![Figure 2](media/21-work-orders.png)
+![Figure 2.](media/21-work-orders.png)
 
 
 

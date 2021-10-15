@@ -88,13 +88,13 @@ The process to generate each event includes the following steps.
 2. The tax authority web service receives the batch and validates its contents.
 3. The web service returns the result of processing. If the events or batch of events is successfully received, a receiving protocol is returned. Otherwise, an error message is shown. In that case, the taxpayer can fix the errors and resubmit the event through a new batch.
 
-![General process](media/bra-general-process.png)
+![General process.](media/bra-general-process.png)
 
 The events are transmitted to tax authorities using Electronic message functionality. This functionality establishes a two-way, automated, and instantaneous relationship between the government web services and the taxpayer.
 
 The following illustrations show the actions that are performed, and the status of message items that causes each event to be approved or rejected when it's delivered for the first time (Insertion), updated (Amendment/Update), and canceled or deleted (Cancel/Delete).
 
-![Flow actions](media/bra-flow-actions.png)
+![Flow actions.](media/bra-flow-actions.png)
 
 ### Actions
 
@@ -102,19 +102,19 @@ The following illustrations show the actions that are performed, and the status 
 
 This flow is used to deliver any event for the first time.
 
-![Insertion](media/bra-insertion-flow.png)
+![Insertion.](media/bra-insertion-flow.png)
 
 **Amendment/Update**
 
-![Update](media/bra-amendment-update-flow.png)
+![Update.](media/bra-amendment-update-flow.png)
 
 **Cancel/Delete**
 
-![Cancel](media/bra-cancel-delete-flow.png)
+![Cancel.](media/bra-cancel-delete-flow.png)
 
 **Inquire event 5011 (from event R-2099)**
 
-![Inquire event 5011](media/bra-inquire-event-5011.png)
+![Inquire event 5011.](media/bra-inquire-event-5011.png)
 
 ## Booking period
 
@@ -150,30 +150,30 @@ Because communications can fail for technical reasons, such as a time-out or an 
 2. On the Action Pane, select **Run processing**, and then, in the **Run processing** dialog box, in the **Processing** field, select **SPED Reinf**.
 3. Set the **Choose action** option to **Yes**, and then, in the **Action** field, select **Incluir**.
 
-    ![Run processing](media/bra-run-processing.png)
+    ![Run processing.](media/bra-run-processing.png)
 
 4. Select **OK** to confirm the settings.
 
     A message item of **Informações do contribuinte** type is created, and the status of the message item is set to **Anexado**.
 
-    ![Electronic message items insertion](media/bra-electronic-message-items-insertion.png)
+    ![Electronic message items insertion.](media/bra-electronic-message-items-insertion.png)
 
 5. Select **Run processing** again, and then, in the dialog box, in the **Processing** field, select **SPED Reinf**.
 6. Set the **Choose action** option to **Yes**, and then, in the **Action** field, select **Parâmetros adicionais** to update the related information in additional fields.
 
-    ![Run processing additional parameters](media/bra-run-processing-additional-parameters.png)
+    ![Run processing additional parameters.](media/bra-run-processing-additional-parameters.png)
 
-    ![Preparation items](media/bra-preparation-items.png)
+    ![Preparation items.](media/bra-preparation-items.png)
 
 7. Select **OK** to confirm the settings. The message item of the **Informações do contribuinte** type is updated, and the status of the message item is changed to **Preparado**.
 
-    ![Electronic message items status](media/bra-electronic-message-items-status.png)
+    ![Electronic message items status.](media/bra-electronic-message-items-status.png)
 
 8. Select **Run processing** again, and then, in the dialog box, in the **Processing** field, select **SPED Reinf**.
 9. Set the **Choose action** option to **Yes**, and then, in the **Action** field, select **Gerar** to generate the XML.
 10. Select **OK** to confirm the settings. The **Generate reports** dialog box automatically appears. On the **Records to include** FastTab, in the filter options, the ID of the message item type that is requesting generation of an XML file is selected in the **Message item** field.
 
-    ![Generate reports](media/bra-generate-reports.png)
+    ![Generate reports.](media/bra-generate-reports.png)
 
 11. Select **OK** to confirm the settings. The message item of the **Informações do contribuinte** type is updated, and the status of the message item is changed to **Gerado**.
 12. Repeat these steps until you've completed all the actions in the Insertion flow.
@@ -213,7 +213,7 @@ Before event R-1070 can be delivered, create the related process, and include al
 
 1. Go to **Fiscal books** \> **Periodic** \> **SPED Reinf** \> **Administrative and judicial process**.
 
-    ![Administrative judicial process](media/bra-administrative-judicial-process.png)
+    ![Administrative judicial process.](media/bra-administrative-judicial-process.png)
 
 2. Select **New**, and set the following fields.
 
@@ -257,7 +257,7 @@ Only service and retained INSS tax type must be selected to generate this event 
 - The fiscal document model is **SE**.
 - The tax type is **INSS**, and it's retained (that is, the **Retained tax/to recuperate** check box is selected).
 
-    ![Brazilian taxes](media/bra-brazilian-taxes.png)
+    ![Brazilian taxes.](media/bra-brazilian-taxes.png)
 
 > [!NOTE]
 > Never use the **INSS-CPRB** tax type.
@@ -299,7 +299,7 @@ Generation of this event requires the adoption of new semantics for handling eve
 
 - The fiscal documents are booked and synced in the related period and fiscal establishment.
 - The fiscal documents have a status of **Approved** or **Canceled**.
-- The fiscal document model is **04** or **55** (a series number between 920 to 969). 
+- The fiscal document model is **04** or **55**. 
 - The tax type is **INSS**, and it's retained (that is, the **Retained tax/to recuperate** check box is selected).
 - The tax type is **Other**, it's retained (that is, the **Retained tax/to recuperate** check box is selected), and GILRAT or SENAR taxes are identified.
 

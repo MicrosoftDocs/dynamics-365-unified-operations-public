@@ -109,13 +109,13 @@ To select the appropriate data center for the production environment, consider t
 
 The following illustrations shows the environment planning process.
 
-![Environment planning process flow](./media/environment-planning-1-process-flow.png)
+![Environment planning process flow.](./media/environment-planning-1-process-flow.png)
 
 ## Additional environments
 
 Additional environments can be purchased as add-ons, or they can be deployed as cloud-hosted environments. The following illustration shows a *sample* overview of standard and additional environments, based on the complexity of the implementation.
 
-![Environment purpose and complexity](./media/environment-planning-2-purpose-complexity-matrix.png)
+![Environment purpose and complexity.](./media/environment-planning-2-purpose-complexity-matrix.png)
 
 > [!IMPORTANT]
 > Always deploy environments by using an **unnamed** account, such as `dynadmin@customer.com`. Assign the environments an owner who will be responsible for their status and maintenance. We strongly recommend using the same dedicated environment admin account on all environments. After go-live, if you plan to work on new releases, get an additional Tier-2 or higher environment to support production.
@@ -147,11 +147,11 @@ The following table compares the deployment options.
 
 It's important that you select the correct Tier-2 or higher environment, depending on the purpose of the environment. The guidance that is provided in the following illustration is a *baseline*. You must work with your implementation partner to adjust this guidance, based on your specific business scenarios and factors such as type of users, complexity, and volumes.
 
-![Environment tiers](./media/environment-planning-3-environment-tiers.png)
+![Environment tiers.](./media/environment-planning-3-environment-tiers.png)
 
 After a subscription estimate is activated, you can view transaction lines per hour in LCS, as shown in the following illustration.
 
-![Subscription estimate](./media/environment-planning-4-subscription-estimate.png)
+![Subscription estimate.](./media/environment-planning-4-subscription-estimate.png)
 
 ### Purchasing add-on environments
 
@@ -159,7 +159,7 @@ If you want to purchase add-on environments, we recommend that you work closely 
 
 The following illustration shows the process for purchasing add-on environments.
 
-![Procuring add-ons](./media/environment-planning-5-procuring-add-on.png)
+![Procuring add-ons.](./media/environment-planning-5-procuring-add-on.png)
 
 > [!IMPORTANT]
 > If you have a Microsoft Volume Licensing agreement, you can subscribe to add-on environments on a monthly basis through the Microsoft Products and Services Agreement (MPSA) licensing program. Alternatively, you can subscribe to them through the Microsoft Cloud Solution Provider (CSP) program. For more information about the various environments and tiers, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).

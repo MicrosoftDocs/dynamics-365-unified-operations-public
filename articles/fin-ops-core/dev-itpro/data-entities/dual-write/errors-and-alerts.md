@@ -1,13 +1,13 @@
 ---
 title: Error management and alert notifications
 description: This topic explains error logs and alert notifications that can help you troubleshoot issues.
-author: sabinn-msft
+author: nhelgren
 ms.date: 03/20/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: v-douklo
+ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: sabinn
+ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -24,21 +24,21 @@ Microsoft has invested lots of time and effort into making dual-write resilient 
 
 The activity log provides a chronological list of events that a specific table map goes through from the **Not Running** status to the **Running** status. For example, the list can include mappings that are created, updates of column mappings, and mappings that are run. Additionally, if errors occur, you can download the logs to get the next level of details.
 
-![Viewing the activity log](media/activity-log.png)
+![Viewing the activity log.](media/activity-log.png)
 
 ## Re-running execution for Initial sync
 
 If you encounter issues while you copy pre-existing data between Finance and Operations apps and Dataverse, the **Initial sync details** tab provides a count of the errors. 
 
-![Initial sync error](media/Initial-sync-rerun-1.png)
+![Initial sync error.](media/Initial-sync-rerun-1.png)
 
 Clicking on the individual project will show you the direction in which the sync failed (Finance and Operations app to Dataverse or vice-versa) and details of why it failed. You can choose to fix the underlying issues and then select **Re-run execution** which retries the entire execution, along with the records that failed or errored out in the last sync. Once this completes, initial sync is completed and the table returns to the **Running** state. There may be cases where you want to ignore the errors and add new incremental data. In these cases, you can select **Rerun execution without errors**, which lets you add new data and not retry the errored records. 
 
-![Initial sync retry with errors](media/Initial-sync-rerun-3.png)
+![Initial sync retry with errors.](media/Initial-sync-rerun-3.png)
 
 Once it is done, the status is marked **Completed** and then you can change the table to the **Running** state. 
 
-![Initial sync retry without errors](media/Initial-sync-rerun-4.png)
+![Initial sync retry without errors.](media/Initial-sync-rerun-4.png)
 
 ## Queued records insights and error management
 
@@ -51,17 +51,17 @@ When you pause a table map that is in the **Running** state, all records created
 
 Records created or updated for a table map in the **Paused** state can be viewed under **Queued records** for each table map.
 
-![Queued records insights](media/Queued-Insights1.png "Queued records insights")
+![Queued records insights.](media/Queued-Insights1.png "Queued records insights")
 
 The **Total queued record count** shows the total number of records queued for a given table map. You can click on **Load more** to see additional records in the paginated view. You can also filter the records on the integration key.
 
 When you resume the table map, it switches from the **Pause** state to the **Running** state and writes the records from the queue to the destination application. It is possible that some records error out and fail to write due to various reasons including business validations on destination app. In these cases, the records will continue to remain in the queue and can be viewed under the **Catch-up errors** tab.
 
-![Queued records retry selected](media/Queued-Insights-retry-selected3.png "Queued records retry selected")
+![Queued records retry selected.](media/Queued-Insights-retry-selected3.png "Queued records retry selected")
 
 The detailed Error message will help you fix the underlying issue after which you could **Retry selected** records or **Retry All** records. Once the retry is successful, **Retry status** will be marked as **Completed**.
 
-![Queued records completed](media/Queued-Insights-retry-selected4.png "Queued records retry selected")
+![Queued records completed.](media/Queued-Insights-retry-selected4.png "Queued records retry selected")
 
 > [!NOTE]
 > Errored records will be available in the queue for 7 days after which will the queue will be purged. In some cases, you may no longer need these records and they can be deleted from the queue.
@@ -72,11 +72,11 @@ As an admin, you can create one or more alert settings to handle cases of planne
 
 The following illustration shows an example where dual-write will be paused if 10 errors of the **Application error** type occur within 15 minutes.
 
-![Creating one or more alert settings](media/create-alert-settings.png)
+![Creating one or more alert settings.](media/create-alert-settings.png)
 
 By selecting **Create alert settings**, you can create more alerts. You can also select whether notifications should be sent to an individual or a group, and whether the dual-write system should take any action on your behalf. To send alerts to a group, enter the values separated by commas, for example, "id1@contoso.com, id2@contoso.com".
 
-![Creating alerts and sending notifications](media/create-alert-notification.png)
+![Creating alerts and sending notifications.](media/create-alert-notification.png)
 
 > [!NOTE]
 > In order for your alerts to take effect, you need to restart your table maps

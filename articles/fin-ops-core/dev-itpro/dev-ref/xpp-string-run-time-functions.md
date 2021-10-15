@@ -3,10 +3,8 @@ title: X++ string runtime functions
 description: This topic describes the string run-time functions.
 author: RobinARH
 ms.date: 08/15/2019
-ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
-ms.custom: 31401
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28

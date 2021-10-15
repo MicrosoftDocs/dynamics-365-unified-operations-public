@@ -4,7 +4,7 @@
 title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
 author: andreabichsel
-ms.date: 05/25/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -66,7 +66,7 @@ You can ask the bot to:
 
 - Start a leave request for you. For example, send a message that says, “Take time off” or “I want to take vacation time off next Thursday and Friday” to be more specific for requesting leave for the vacation leave type. 
 
-  ![Start a leave request in Teams chat](./media/hr-teams-leave-app-initiate.png)
+  ![Start a leave request in Teams chat.](./media/hr-teams-leave-app-initiate.png)
 
 - The chat bot will populate a leave request for you. Select **Request time off** and edit the details for your request.
 
@@ -74,11 +74,11 @@ You can ask the bot to:
 
    If you select a half day leave when the leave request unit is in days, you can specify whether you want to request time off the first half day or the second half day by selecting the **Half day definition** option from the **More options** menu.
    
-   ![Half day defintions](./media/HalfDayDefinitions.png)
+   ![Half day defintions.](./media/HalfDayDefinitions.png)
 
 - When you're done editing your leave request details, select **Submit** to submit it for approval.
 
-  ![Submit leave request](./media/hr-teams-leave-app-submit.png)
+  ![Submit leave request.](./media/hr-teams-leave-app-submit.png)
 
 ## Manage your leave in Teams
 
@@ -98,7 +98,7 @@ The **Time off** tab allows you to view:
 
 2. Enter the day or days you want to take off, and then select **Add**.
 
-   ![Human Resources Teams leave app add time off](./media/TimeOffHours.png)
+   ![Human Resources Teams leave app add time off.](./media/TimeOffHours.png)
 
 3. If applicable, enter a reason code. Also enter any comments and add any attachments.
 
@@ -128,7 +128,7 @@ After you install the Human Resources app for Teams, you can easily send informa
 
 1. In a team or chat in Teams, select the Human Resources button below the chat window.
 
-   ![Human Resources button below chat window](./media/hr-teams-leave-app-chat-button.png)
+   ![Human Resources button below chat window.](./media/hr-teams-leave-app-chat-button.png)
 
 2. Select the leave request you want to share. If you want to share a draft leave request, select **Drafts** first.
 
@@ -172,17 +172,21 @@ If you're having trouble signing into or using the Dynamics 365 Human Resources 
 
 If you can't sign into the app, it's possible that the account you're using to sign into Microsoft Teams isn't associated with an employee record in Dynamics 365 Human Resources. Contact your system administrator to ensure your employee record is correctly associated.
 
+### Can't find the Dynamics 365 Human Resources environment in Settings
+
+If you can't select the correct Dynamics 365 environment, the user record might not have been correctly synced. Contact your system administrator to re-create the user record and associate it with the user credentials. Then try to sign in to the Human Resources app for Microsoft Teams in a few minutes.
+
 ### Translations don't display correctly
 
 If translations don't display as expected, make sure the language you select in Teams matches the language selected in Human Resources **User options**.
 
 In Teams, look at **App language** in **Settings**.
 
-![Teams settings](./media/hr-teams-leave-app-settings.png)
+![Teams settings.](./media/hr-teams-leave-app-settings.png)
 
 In Human Resources, select **Settings** and then select **User options**. Verify that the **Language** field matches the **App language** field in Teams.
 
-![Human Resources User options](./media/hr-teams-leave-app-user-options.png)
+![Human Resources User options.](./media/hr-teams-leave-app-user-options.png)
 
 If you still experience translation issues, let us know. For information, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 

@@ -62,7 +62,7 @@ You have now created a new ROPC policy to enable local sign-in. Under **Run user
 
 In the following example image, the endpoint URL listed under **Run user flow** is ```https://commerceonboardingb2c.b2clogin.com/commerceonboardingb2c.onmicrosoft.com/v2.0/.well-known/openid-configuration?p=B2C_1_ROPC_Auth```.
 
-![Run user flow example](media/local-sign-in-01.png)
+![Run user flow example.](media/local-sign-in-01.png)
 
 From the example above, you can obtain values for the `ropcUserFlowName`, `loginDomain`, and `b2cTenant` properties as follows:
 
@@ -83,7 +83,7 @@ Next, you will create a native application meant to represent the Node applicati
 1.	Leave all other default values as is, and select **Register**.
 1.	Select the new application, and then copy and save the **Application (client) ID** value, as this ID will be used later as the `nativeApplicationId` property value in your credentials.json file.
 
-    ![Local Node app](media/local-sign-in-02.png)
+    ![Local Node app.](media/local-sign-in-02.png)
 
 1.	In the left navigation pane under **Manage**, select **Authentication**.
 1.	Select **Try out the new experience** (if shown).
@@ -92,7 +92,7 @@ Next, you will create a native application meant to represent the Node applicati
 1.	In the left navigation pane under **Manage**, select **Manifest** to open the manifest editor.
 1.	Set the **oauth2AllowImplicitFlow** attribute to **true**, and then select **Save**.
 
-    ![Local Node app manifest](media/local-sign-in-03.png)
+    ![Local Node app manifest.](media/local-sign-in-03.png)
 
 You have now created a new native application that will be used to represent your local Node application. 
 
@@ -111,14 +111,14 @@ From the examples above, you have now obtained the following information:
 1.	Open the application that is currently being used by the e-commerce rendering application. In the Azure portal, this is the application whose client ID is used in the Azure AD B2C configuration for your site. If Azure AD B2C is already configured, the application ID used for your e-commerce site can be found in Commerce headquarters at **Commerce Shared Parameters \> Identity Providers** in the **ClientId** field under **Relying Parties**. The application ID can also be found in Commerce site builder at **Tenant Settings \> B2C Settings** as the **Client GUID** within the B2C application configuration used for your site.
 1.	In the left navigation pane under **Manage**, select **Expose an API** and verify that a **user_impersonation** scope exists. If one does not exist, select **Add a scope** to create one. When prompted for an **Application ID URI**, leave the application ID URI as is and then add "user_impersonation" for the **Scope name**. Then enter friendly values for **Admin consent display name** and **Admin consent description**.
 
-    ![Expose an API](media/local-sign-in-04.png)
+    ![Expose an API.](media/local-sign-in-04.png)
 
 1.	Copy and save the full scope value, as this information will be used late as the `userImpersonationScopeURL` property value in your credentials.json file.
 1.	Return to the native application you just created, and in the left navigation pane under **Manage**, select **API permissions**.
 1.	Select **Add a permission**, and then select the **APIs my organization uses** tab.
 1.	Search for your e-Commerce rendering application that was created above, and then select it and add **user_impersonation** as a permission.
 
-    ![API permissions](media/local-sign-in-05.png)
+    ![API permissions.](media/local-sign-in-05.png)
 
 1.	Select **Add permissions**.
 1.	Select **Grant admin consent for** (this name will contain your domain), and then select **Yes** to apply the consent. You should now see a green checkmark under **Status** for **user_impersonation**.
@@ -163,7 +163,7 @@ The credentials will live under the `secrets/` directory in your Node applicatio
 }
 ```
 
-![Example credentials.json file](media/local-sign-in-06.png)
+![Example credentials.json file.](media/local-sign-in-06.png)
 
 > [!NOTE]
 > Everything under the `secrets/` directory should be added to your .gitignore file to help prevent credentials from being leaked online.

@@ -3,7 +3,7 @@
 
 title: Sales tax calculation on general journal lines
 description: This topic explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
-author: EricWang
+author: EricWangChen
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
@@ -22,7 +22,7 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
 
@@ -61,7 +61,7 @@ Otherwise, sales tax direction is Sales Tax Receivable.
 
 The following diagram illustrates the rule graphically.
 
-![Tax direction possibilities for project accounts](media/Sales-Tax-Direction-Vendor.jpg)
+![Tax direction possibilities for project accounts.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### Account type is Vendor
 
@@ -79,7 +79,7 @@ Otherwise, sales tax direction is Sales Tax Receivable.
 
 The following diagram illustrates the rule graphically.
 
-![Tax direction possibilities for vendor accounts](media/Sales-Tax-Direction-Vendor.jpg)
+![Tax direction possibilities for vendor accounts.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### Account type is Customer
 
@@ -95,7 +95,7 @@ Otherwise, sales tax direction is Sales Tax Payable.
 
 The following diagram illustrates the rule graphically.
 
-![Tax direction possibilities for customer accounts](media/Sales-Tax-Direction-Customer.jpg)
+![Tax direction possibilities for customer accounts.](media/Sales-Tax-Direction-Customer.jpg)
 
 ### Account type is Ledger
 
@@ -105,11 +105,11 @@ The following illustration shows the rule that applies when a voucher has only j
 
 •	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
 
-Otherwise, if the journal amount is debit (positive) ,sales tax direction is Sales Tax Receivable; if the journal amount is credit (negative) ,sales tax direction is Sales Tax Payable.
+Otherwise, if the journal amount is debit (positive), sales tax direction is Sales Tax Receivable; if the journal amount is credit (negative) ,sales tax direction is Sales Tax Payable.
 
 The following diagram illustrates the rule graphically.
 
-![Tax direction possibilities for ledger accounts](media/Sales-Tax-Direction-Ledger.jpg)
+![Tax direction possibilities for ledger accounts.](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### Override the sales tax direction
 
@@ -121,7 +121,7 @@ Go to **General ledger \> Chart of accounts \> Accounts \> Main accounts**, and 
 
 This section describes how the sales tax amount sign is calculated.
 
-![Sales tax transactions page](media/sales-tax-amount-sign.jpg)
+![Sales tax transactions page.](media/sales-tax-amount-sign.jpg)
 
 The following table shows the generic rule for determining the sales tax direction and sign of sales tax amounts in the temporary sales tax table.
 

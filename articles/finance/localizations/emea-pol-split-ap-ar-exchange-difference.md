@@ -51,7 +51,7 @@ Follow these steps to set up a ledger account that can be used to post the excha
 1. Go to **General ledger** \> **Currencies** \> **Currency revaluation accounts**. 
 2. On the **Currency revaluation accounts** page, select the currency code, and then, in the **Ledger** field, select the code of the legal entity.
 
-    ![Currency revaluation accounts page](media/Currency-revaluation-accounts.png)
+    ![Currency revaluation accounts page.](media/Currency-revaluation-accounts.png)
 
 2. Select a line where the **Posting** field is set to **Realized gain** or **Realized loss**.
 3. Set up the main account, and select the ledger account to post the realized exchange difference to.

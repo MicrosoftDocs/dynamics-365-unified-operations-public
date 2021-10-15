@@ -61,9 +61,9 @@ This scenario outlines the behavior when the **Pro-rate to matching sales lines*
 
 In this scenario, the organization has defined header-level charges for mode of delivery relation **99** and mode of delivery relation **11**. No auto-charges are configured for mode of delivery **21**.
 
-![Auto-charges for mode of delivery 99 when matching line proration is turned off](media/99_disabled.png)
+![Auto-charges for mode of delivery 99 when matching line proration is turned off.](media/99_disabled.png)
 
-![Auto-charges for mode of delivery 11 when matching line proration is turned off](media/11_disabled.png)
+![Auto-charges for mode of delivery 11 when matching line proration is turned off.](media/11_disabled.png)
 
 A sales order is created in the call center, and the mode of delivery is set to **99**. This order contains five items. Two order lines have been configured to use mode of delivery **99**, two lines have been configured to use mode of delivery **11**, and one line has been configured to use mode of delivery **21**, as shown in the following table.
 
@@ -83,9 +83,9 @@ In this scenario, if a customer returns some of the items on the order, and if t
 
 In this scenario, header-level charges are defined for mode of delivery relation **99** and mode of delivery relation **11**. However, the **Pro-rate to matching sales lines** option is set to **Yes** for these auto-charge tables.
 
-![Auto-charges for mode of delivery 99 when matching line proration is turned on](media/99_enabled.png)
+![Auto-charges for mode of delivery 99 when matching line proration is turned on.](media/99_enabled.png)
 
-![Auto-charges for mode of delivery 11 when matching line proration is turned on](media/11_enabled.png)
+![Auto-charges for mode of delivery 11 when matching line proration is turned on.](media/11_enabled.png)
 
 This scenario uses the same sales order that contains five lines. The mode of delivery on the order header is set to **99**, but the mode of delivery for each item on the sales order is configured as shown in the following table.
 
@@ -135,9 +135,9 @@ Because the auto-charge configuration is set to prorate to matching sales lines,
     - Total product value = $15
     - **Charge value = $0** (No auto-charges have been configured for this combination of a customer and a mode of delivery.)
 
-    ![Delivery mode 11 charges fall into the highlighted tier](media/step2mode11.png)
+    ![Delivery mode 11 charges fall into the highlighted tier.](media/step2mode11.png)
 
-    ![Delivery mode 99 charges fall into the highlighted tier](media/step2mode99.png)
+    ![Delivery mode 99 charges fall into the highlighted tier.](media/step2mode99.png)
 
 3. The system calculates the charge value that should be applied to each line, based on proration logic that considers the proportional value of the line in relation to the group's total product value.
 
@@ -168,7 +168,7 @@ Because the auto-charge configuration is set to prorate to matching sales lines,
 
 Therefore, for this example, item 81334 will be assigned a freight charge of $5.62. You can view these charges on the **Maintain charges** page for the sales line. The following illustration shows what this page looks like for item 81334.
 
-![Prorated charges on sales line for item 81334](media/proratedlinecharge.png)
+![Prorated charges on sales line for item 81334.](media/proratedlinecharge.png)
 
 When this method of calculation is used in a partial return scenario, if the charge code is refundable, only the part of the charge that is allocated to that line will be refunded when the item is returned.
 

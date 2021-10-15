@@ -37,7 +37,7 @@ This topic explains how to install the modern report design templates in the app
 
 A new set of developer tools is available that takes the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding appears in the header and footer of public-facing documents when transactions are generated in the application. The following illustration shows how an earlier design for a sales invoice differs from a modern sales invoice design.
 
-[![Examples of an earlier sales invoice design and a modern sales invoice design](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
+[![Examples of an earlier sales invoice design and a modern sales invoice design.](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
 
 After you complete the installation, you can use the built-in brand management tools to define brand settings that should be applied to the modern designs for application business documents. The brand management tools are available at **Organization administration** &gt; **Setup** &gt; **Document branding** &gt; **Branding details**.
 
@@ -87,7 +87,7 @@ The Application Suite Modern Designs model is an extension of the Application Su
 2. On the **Dynamics 365** menu, select **Build models**.
 3. In the list, select the check box for the **ApplicationSuite** package.
 
-    [![Full build dialog box in Visual Studio](./media/BuildAppSuite.png)](./media/BuildAppSuite.png)
+    [![Full build dialog box in Visual Studio.](./media/BuildAppSuite.png)](./media/BuildAppSuite.png)
 
     > [!NOTE]
     > You will see that the Application Suite Modern Designs model is included in the package definition.
@@ -120,7 +120,7 @@ Follow these steps to update the Print management settings for customer sales or
 4. Select **Original &lt;Default&gt;** to begin to modify the default document routing.
 5. In the **Report format** list, select **SalesConfirmModern.Report** to enable the modern report design solution.
 
-    [![Print management settings page that is used to select the modern design](./media/UpdatePrintMgtSettings.png)](./media/UpdatePrintMgtSettings.png)
+    [![Print management settings page that is used to select the modern design.](./media/UpdatePrintMgtSettings.png)](./media/UpdatePrintMgtSettings.png)
 
 6. Open another page. This step forces a save operation to occur.
 7. Post a sales order to view the modern design in the application.

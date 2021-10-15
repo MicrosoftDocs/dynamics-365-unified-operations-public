@@ -1,24 +1,12 @@
 ---
-# required metadata
 title: Application module
 description: An application is a unit of runtime execution with sandboxing around concepts and data used inside of it.
 author: robinarh
 ms.date: 09/17/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-# optional metadata
-# ms.search.form:
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rhaertle
-ms.search.validFrom:
-ms.dyn365.ops.version:
 ---
 
 # Application module

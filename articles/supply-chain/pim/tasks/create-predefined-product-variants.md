@@ -81,8 +81,6 @@ To generate product variants:
 
 ## Improved variant suggestions
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 The *Variant suggestions page improvements* feature improves the **Variant suggestions** page to address performance and usability issues for companies that have a high number of product dimension combinations. The enhanced process for selecting the product dimension values for which to generate variant suggestions makes it faster and easier to identify and release the relevant set of product variants.
 
 The following improvements are added by this feature:

@@ -43,7 +43,7 @@ To set up payment methods, the following tasks must be completed.
 3. Set up store payment methods. Associate payment methods with each store, and then enter the store-specific settings for each payment method.
 4. Set up card payment methods for stores. For any card payment methods that the store accepts, complete the card setup.
 
-![Store Setup](media/NoReceiptReturns1.png "Retail Store Setup") 
+![Store Setup.](media/NoReceiptReturns1.png "Retail Store Setup") 
 
 
 ## Restrict payment methods for returns without a receipt
@@ -54,12 +54,12 @@ The default value of the toggle is **No**, which ensures that the payment method
 
 When **Restrict for refunds without receipt** is set to **Yes**, the selected payment method will not be allowed for refunds. 
 
-![Store payment method](media/NoReceiptReturns3.png "Retail Store Payment Method") 
+![Store payment method.](media/NoReceiptReturns3.png "Retail Store Payment Method") 
 
 > [!NOTE]
 > When a cashier selects a payment method that is restricted for refund without a receipt, a message displays to verify the acceptable payment methods.
 
-![Acceptable payment methods](media/NoReceiptReturns4.png "Acceptable payment methods") 
+![Acceptable payment methods.](media/NoReceiptReturns4.png "Acceptable payment methods") 
 
 If a transaction has both a receipted return and a return without a receipt, the restriction conditions will not be enforced because the transaction will be a return workflow with a receipt. 
 

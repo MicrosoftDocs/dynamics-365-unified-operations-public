@@ -45,7 +45,7 @@ The custom Commerce pages can be built by using the sign in, sign up, account pr
 
 After you set up your Azure AD B2C tenant and associate it with your Commerce environment, go to the **Azure AD B2C** page in the Azure portal, and then, on the menu, under **Policies**, select **User flows (policies)**.
 
-![User flows (policies) command on the menu](./media/B2C_CustomPage_PoliciesMenu.png)
+![User flows (policies) command on the menu.](./media/B2C_CustomPage_PoliciesMenu.png)
 
 You can now configure the "Sign up and sign in," "Profile editing," and "Password reset" user sign-in flows.
 
@@ -59,13 +59,13 @@ To configure the "Sign up and sign in" policy, follow these steps.
 1. In the **Collect attribute** column, select the check boxes for **Email Address**, **Given Name**, and **Surname**.
 1. In the **Return claim** column, select the check boxes for **Email Addresses**, **Given Name**, **Identity Provider**, **Surname**, and **User's Object ID**.
 
-    ![Attributes and claims selected](./media/B2C_SignInSignUp_Attributes.png)
+    ![Attributes and claims selected.](./media/B2C_SignInSignUp_Attributes.png)
 
 1. Select **OK** to create the policy.
 1. Double-click the new policy name, and then, in the navigation pane, select **Properties**.
 1. Set the **Enable JavaScript enforcing page layout (preview)** option to **On**.
 
-    ![Properties page for the new policy](./media/B2C_SignInSignUp_EnableJavascript.png)
+    ![Properties page for the new policy.](./media/B2C_SignInSignUp_EnableJavascript.png)
 
 > [!NOTE]
 > The policy name will be fully referenced in the Commerce environment. (The **B2C\_1\_** prefix will be included in the reference.) Policies can't be renamed after they are created. If you're replacing an existing policy for your Commerce environment, you can delete the original policy and build a new policy that has the same name. Alternatively, if the environment has already been provisioned, you can submit the new policy name through a service request.
@@ -155,7 +155,7 @@ To update the "Sign up and sign in" policy with custom page information, follow 
     1. For the **Email Address**, **Given Name**, and **Surname** attributes, select **No** in the **Optional** column.
 1. Select **Save**.
 
-    ![Configuration of the local account sign up page policy](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
+    ![Configuration of the local account sign up page policy.](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### Update the "Profile editing" policy with custom page information
 
@@ -193,11 +193,11 @@ In the module library, sign-in modules are prefilled with default text strings f
 
 For example, the default text for the forgotten password link is **Forgotten password?**. The following shows this default text on the sign-in page.
 
-![Default text for the forgotten password link on the sign-in page](./media/B2C_SignUp_ModuleFace.png)
+![Default text for the forgotten password link on the sign-in page.](./media/B2C_SignUp_ModuleFace.png)
 
 However, in the global.json file for the module library sign-in module, you can edit the text to **Forgot Password?**, as shown in the following illustration.
 
-![Updated link text in the sign in module's global.json file](./media/B2C_CustomizingStringsForModule.png)
+![Updated link text in the sign in module's global.json file.](./media/B2C_CustomizingStringsForModule.png)
 
 After you update the global.json file and publish your changes, the new link text appears in the sign-in module in both Commerce and on the live sign-in page.
 

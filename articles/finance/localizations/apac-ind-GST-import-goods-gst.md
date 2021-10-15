@@ -3,7 +3,7 @@
 
 title: Import goods that have GST
 description:  This topic explains how to import goods that have Goods and Services Tax (GST).
-author: EricWang
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -35,16 +35,16 @@ Complete the procedures in this topic to import goods that have Goods and Servic
 2. Create a purchase order for a foreign vendor account, and save the record.
 3. Select **Tax information**.
 
-    ![Tax information](media/Capture2019052101.PNG)
+    ![Tax information.](media/Capture2019052101.PNG)
 
 4. Select the **GST** FastTab.
 5. Select the **Customs** FastTab.
 
-    ![Customs FastTab](media/Capture2019052104.PNG)
+    ![Customs FastTab.](media/Capture2019052104.PNG)
 
 6. Select the **Vendor tax information** FastTab.
 
-    ![Vendor tax information FastTab](media/Capture2019052103.PNG)
+    ![Vendor tax information FastTab.](media/Capture2019052103.PNG)
 
 7. Select **OK**.
 8. Select **Functions** \> **Maintain charges**.
@@ -52,7 +52,7 @@ Complete the procedures in this topic to import goods that have Goods and Servic
 10. Select the **Assessable value** check box.
 11. In the **Charges value** field, enter a value.
 
-    ![Maintain charges page](media/Capture2019052105_upd.png)
+    ![Maintain charges page.](media/Capture2019052105_upd.png)
 
 12. Save the record, and then select **Close**.
 
@@ -104,7 +104,7 @@ Complete the procedures in this topic to import goods that have Goods and Servic
 
 The following illustration shows an example of a journal entry for an import purchase order that has GST.
 
-![Journal entry for an import purchase order that has GST](media/Annotation-2019-05-20-165539.png)
+![Journal entry for an import purchase order that has GST.](media/Annotation-2019-05-20-165539.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

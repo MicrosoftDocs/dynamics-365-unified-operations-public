@@ -56,7 +56,7 @@ Jobs that are posted to LinkedIn appear on the live LinkedIn site. LinkedIn does
 1. In Attract, open the job that you want to post to LinkedIn.
 2. On the **Postings** tab, select the **Post Now** button that corresponds to LinkedIn.
 
-    [![Attract post job to LinkedIn](./media/attract-post-job-to-linkedin.png)](./media/attract-post-job-to-linkedin.png)
+    [![Attract post job to LinkedIn.](./media/attract-post-job-to-linkedin.png)](./media/attract-post-job-to-linkedin.png)
 
 3. In the **Create an "Apply now" web address** dialog box, select an option under **Candidates can apply using a**. We recommend that you select **Link in Attract**.
 4. Select **Done**.

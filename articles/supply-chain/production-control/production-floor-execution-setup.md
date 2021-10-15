@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
 
 # Set up a device to run the production floor execution interface
@@ -74,7 +74,7 @@ Often, you will run the production floor execution interface on a device that is
 
 The upper part of the following illustration shows how the interface looks by default. The lower part shows how it looks in full-screen mode when the navigation pane is hidden.
 
-![Standard vs. full-screen interface](media/pfei-full-screen.png "Standard vs. full-screen interface")
+![Standard vs. full-screen interface.](media/pfei-full-screen.png "Standard vs. full-screen interface")
 
 ## Extend the session past 12 hours
 

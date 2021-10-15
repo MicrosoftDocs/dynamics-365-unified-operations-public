@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.20
 # Manage changes in formulas and their ingredients
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 If you're using the process manufacturing capabilities of Microsoft Dynamics 365 Supply Chain Management, you can also use the related formula management capabilities to manage the following changes:
 

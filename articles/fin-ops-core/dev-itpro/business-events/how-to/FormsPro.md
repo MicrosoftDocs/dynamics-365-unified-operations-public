@@ -38,15 +38,15 @@ If you haven't used Forms Pro before, you should first read the [Forms Pro docum
 
 1. Create a survey. Based on the title that you enter for the survey, Forms Pro suggests survey questions.
 
-    ![Suggested survey questions in Forms Pro](../../media/Forms_Pro1.png)
+    ![Suggested survey questions in Forms Pro.](../../media/Forms_Pro1.png)
 
 2. The sales order tracks the shipment. When the product has been shipped, the status of the sales order is changed to **Delivered**.
 
-    ![Sales order that has a status of Delivered](../../media/SalesOrder1.png)
+    ![Sales order that has a status of Delivered.](../../media/SalesOrder1.png)
 
     Therefore, configure an alert on the sales order, so that an alert is created whenever the value of the **Status** field is changed. Be sure to set the **Send externally** option to **Yes**, so that the alert will be sent out as a business event.
 
-    ![Alert](../../media/Alerts1.png)
+    ![Alert.](../../media/Alerts1.png)
 
 3. Set up the flow that will be triggered by the business event whenever the status of the sales order is updated (see the illustration in the next step). After it's triggered, the flow will use the Forms connector to send the survey to the customer email address that is registered on the sales order.
 
@@ -54,15 +54,15 @@ If you haven't used Forms Pro before, you should first read the [Forms Pro docum
 
 4. Because Microsoft Power Automate is used to orchestrate this scenario, don't activate the **When a change based alert occurs** business event in the application. Instead, set up Power Automate so that it subscribes directly to the business event.
 
-    ![Flow](../../media/Flow1.png)
+    ![Flow.](../../media/Flow1.png)
 
 5. After you've finished setting up the flow, it will be triggered and send out the survey whenever the sales order's status is updated.
 
-    ![Survey](../../media/Survey1.png)
+    ![Survey.](../../media/Survey1.png)
 
     As users fill in the survey and submit it, Forms Pro shows some analytics.
 
-    ![Survey analytics in Forms Pro](../../media/Forms_Pro2.png)
+    ![Survey analytics in Forms Pro.](../../media/Forms_Pro2.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

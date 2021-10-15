@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create sales order invoices
-description: This task guide describes invoicing a sales order, including merging invoices and batch processing. 
+description: This topic describes how to invoice a sales order, including merging invoices and batch processing. 
 author: ShivamPandey-msft
 ms.date: 06/25/2019
 ms.topic: business-process 
@@ -27,13 +27,13 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide describes invoicing a sales order, including merging invoices and batch processing. This procedure uses the USMF demo company.
+This topic describes how to invoice a sales order, including merging invoices and batch processing. This procedure uses the USMF demo company.
 
 
 ## Create an invoice from a sales order
 1. Go to **Navigation pane > Modules > Accounts receivable > Orders > Shipped but not invoiced sales orders**.
 2. Select a sales order in the list. 
-3. On the **Action Pane**, click **Invoice > Generate > Invoice**. Note that this sales order has multiple packing slips associated with it. It will only show the word <multiple> instead of the packing slip number.  
+3. On the **Action Pane**, click **Invoice > Generate > Invoice**. Note that this sales order has multiple packing slips associated with it. It will only show the word *multiple* instead of the packing slip number.  
 4. Expand the **Parameters** section.
     - Posting must be set to Yes to post the invoice. You can also turn off posting and just print the invoice. However, you can accomplish the same result by creating a proforma invoice instead of an invoice.  
     - This option is used for batch jobs. The query is run when the batch job is run.

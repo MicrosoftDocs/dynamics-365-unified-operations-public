@@ -41,7 +41,7 @@ By default, product searches are done on the store assortment. This type of sear
 
 On the **Change catalog** page, employees can easily select any store, or they can search for products across all stores.
 
-![Changing the catalog](./media/Changecatalog.png "Changing the catalog")
+![Changing the catalog.](./media/Changecatalog.png "Changing the catalog")
 
 A local product search searches in the following product properties:
 
@@ -64,7 +64,7 @@ A local product search searches in the following product properties:
 - Retailers can configure product search to show search suggestions as users type product names. A new setting for this functionality is available in the POS functionality profile, in a group that is named **Product search**. The setting is named **Show search suggestions while typing**. This functionality can help employees quickly find the product that they are searching for, because they don't have to type the whole name manually.
 - The product search algorithm now also searches for the searched terms in the **Search name** property of the product.
 
-![Product suggestions](./media/Productsuggestions.png "Product suggestions")
+![Product suggestions.](./media/Productsuggestions.png "Product suggestions")
 
 ## Customer search
 
@@ -88,7 +88,7 @@ To search globally, employees can select the **Filter results** button at the bo
 
 The customer ID isn't shown for customers queried from other legal entities, because no customer ID has been created for those parties in the current company. However, if an employee opens the customer details page, the system automatically generates a customer ID for the party and also associates the store's customer address books with the customer. Therefore, the customer will be visible in local store searches that are done later.
 
-![Global customer search](./media/Globalcustomersearch.png "Global customer search")
+![Global customer search.](./media/Globalcustomersearch.png "Global customer search")
 
 ### Additional local customer search capabilities
 
@@ -99,11 +99,11 @@ When the user searches for a phone number, the system ignores special characters
 
 The traditional customer search can be time-consuming, because it searches across multiple fields. Instead, cashiers can search in a single customer property, such as name, email address, or phone number. The properties that the customer search algorithm uses are collectively known as the *customer search criteria*. The system admin can easily configure one or more criteria as shortcuts that will appear in POS. Because the search is limited to a single criterion, only the relevant search results are shown, and the performance is much better than the performance of a standard customer search. The following illustration shows the customer search shortcuts in POS.
 
-![Customer search shortcuts](./media/SearchShortcutsPOS.png "Customer search shortcuts")
+![Customer search shortcuts.](./media/SearchShortcutsPOS.png "Customer search shortcuts")
 
 To set search criteria as shortcuts, the admin must open the **Commerce parameters** page in Commerce, and then, on the **POS search criteria** tab, select all the criteria that should be shown as shortcuts.
 
-![Configure search shortcuts](./media/ConfigureShortcutsAX.png "Configure search shortcuts")
+![Configure search shortcuts.](./media/ConfigureShortcutsAX.png "Configure search shortcuts")
 
 > [!NOTE]
 > If you add too many shortcuts, the drop-down menu on the search bar in POS will become cluttered, and the employee's search experience can be affected. We recommend that you add only as many shortcuts as you require.

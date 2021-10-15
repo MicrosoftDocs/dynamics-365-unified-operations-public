@@ -51,13 +51,13 @@ To set up electronic message functionality for communication of SPED-Reinf event
 
     You will receive a notification about the import process. You can also manually refresh the page to view the progress of the import process. When the process is completed, you can view the **Execution summary** page.
 
-    ![Execution summary page](media/bra-execution-summary-page.png)
+    ![Execution summary page.](media/bra-execution-summary-page.png)
 
 ## Structure of electronic messages
 
 Every event that is created, delivered, and received is represented by a message and a message item.
 
-![Electronic messages structure](media/bra-electronic-messages-structure.png)
+![Electronic messages structure.](media/bra-electronic-messages-structure.png)
 
 The message item is represented by the XML event message. It includes the following information that is stored in the message or updated in Finance:
 
@@ -70,21 +70,21 @@ The message item is represented by the XML event message. It includes the follow
 
 You can find this configuration on the **Additional fields** page (**Tax** \> **Setup** \> **Electronic messages** \> **Additional fields**).
 
-![Configuration on the Additional fields page](media/bra-electronic-messaging-additional-fields.png)
+![Configuration on the Additional fields page.](media/bra-electronic-messaging-additional-fields.png)
 
 > [!NOTE]
 > Don't remove this configuration. This configuration is included in the package.
 
 The message item types are classified by the type of event on the **Message item types** page (**Tax** \> **Setup** \> **Electronic messages** \> **Message item types**).
 
-![Message item types page](media/bra-message-types.png)
+![Message item types page.](media/bra-message-types.png)
 
 > [!NOTE]
 > Don't remove this configuration. This configuration is included in the package.
 
 - To set up the number sequence for message items, go to **Tax \> Setup \> Parameters \> General ledger parameters**, and then, on the **Number sequences** tab, select a number sequence for the **Message** and **Message item** references.
 
-![Number sequences tab on the General ledger parameters page](media/bra-electronic-messages-number-sequences.png)
+![Number sequences tab on the General ledger parameters page.](media/bra-electronic-messages-number-sequences.png)
 
 > [!NOTE]
 > The number sequence must be defined as non-continuous.
@@ -113,15 +113,15 @@ Every time that a message is created, prepared, validated, delivered, or receive
 
 - **Preparation items (Preparacao dos eventos)** – This action is used to create and prepare the XML message. The action requests more parameters, such as **Booking date**, **CNPJ**, and **CNPJ root**, because the events are generated based on this information.
 
-    ![Preparation items parameters](media/bra-preparation-items.png)
+    ![Preparation items parameters.](media/bra-preparation-items.png)
 
 - **Process response (Processo de reposta)** – This action is used to update the delivered message when the government approves it by using a protocol number. Additionally, the message is updated as registered on the government website.
 
-    ![Preparation items process response parameters](media/bra-preparation-items-process-response.png)
+    ![Preparation items process response parameters.](media/bra-preparation-items-process-response.png)
 
 - **Report generation (Geracao de relatório)** – This action is used to send and receive the message item.
 
-    ![Generate reports parameters](media/bra-generate-reports-parameters.png)
+    ![Generate reports parameters.](media/bra-generate-reports-parameters.png)
 
 > [!NOTE]
 > Don't remove this configuration. This configuration is included in the package.
@@ -132,7 +132,7 @@ Before a message is delivered, set up XML schema validation to help prevent reje
 
 1. Go to **Organization administration** \> **Document management** \> **Document management parameters**, and enable .xsd files by adding **XSD** as a new file type.
 
-    ![Document management parameters page](media/bra-document-management-parameters.png)
+    ![Document management parameters page.](media/bra-document-management-parameters.png)
 
 2. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**, and select **New** \> **File** to attach the schemas (.xsd files) to the following actions:
 
@@ -142,11 +142,11 @@ Before a message is delivered, set up XML schema validation to help prevent reje
 
 3. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**, select the **Populate** (**Incluir**) action, and then, in the **Populate records action** field, select **Registrar transacões**.
 
-    ![Message processing actions page](media/bra-message-processing-actions.png)
+    ![Message processing actions page.](media/bra-message-processing-actions.png)
 
 4. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web service settings**, and set up a web services connection and certificates for issuing and inquiring about events.
 
-    ![Web services settings page](media/bra-web-service-settings.png)
+    ![Web services settings page.](media/bra-web-service-settings.png)
 
 > [!NOTE]
 > In the settings for **SPED Reinf asynchronous (SPED Reinf – assíncrono)**, include the web service address for inquire event R-5011.

@@ -51,7 +51,7 @@ To create a customer group, follow these steps.
 
 The following image shows several configured customer groups.
 
-![Customer groups](media/customer-groups.png)
+![Customer groups.](media/customer-groups.png)
 
 ## Create a customer address book
 
@@ -67,7 +67,7 @@ To create a customer address book, follow these steps.
 
 The following image shows an example address book.
 
-![Address book](media/address-book.png)
+![Address book.](media/address-book.png)
 
 ## Create a default customer
 
@@ -90,11 +90,11 @@ To create a default customer, follow these steps.
 
 The following image shows an example of customer creation.
 
-![Default customer creation](media/default-customer-creation.png)
+![Default customer creation.](media/default-customer-creation.png)
 
 The following image shows a default customer configuration.
 
-![Sample customer configuration](media/default-customer-configuration1.png)
+![Sample customer configuration.](media/default-customer-configuration1.png)
 
 Most of the default values on the customer detials screen can remain, but two values should be changed.
 
@@ -104,7 +104,7 @@ Most of the default values on the customer detials screen can remain, but two va
 
 The following image shows an example customer configuration.
 
-![Example customer configuration](media/default-customer-configuration2.png)
+![Example customer configuration.](media/default-customer-configuration2.png)
 
 ## Additional resources
 

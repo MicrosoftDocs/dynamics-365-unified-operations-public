@@ -3,7 +3,7 @@
 
 title: Set up rate and percentage tables
 description: This topic explains how to set up rate and percentage tables.
-author: EricWang
+author: EricWangChen
 ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.4
 1. Expand the **Tax component** node, and select the **Rate** node.
 2. In the **Value** field, enter the tax rate. The remaining fields are used to determine the rate. In the standard GST configuration, there are several pre-defined fields, including **Consumption state**, **HSN code**, and **SAC**. You can select the fields relevant to your business to determine the rate. 
 
-    ![Tax rates](media/tax-rate.png)
+    ![Tax rates.](media/tax-rate.png)
 
     If you leave any input fields empty, then the fields can accept any input values. For example, in the following table, if **HSN** is *998313* and not matter what the value of **Party GST Registration Number** is, then the rate is *12%*. 
 
@@ -45,17 +45,17 @@ ms.dyn365.ops.version: 10.0.4
 
 3. Select the **Reverse Charge Percentage** node, and in the **Value** field, enter the reverse charge percentage.
 
-    ![Reverse charge percentage](media/reverse-charge.png)
+    ![Reverse charge percentage.](media/reverse-charge.png)
 
 4. Select the **Load on Inventory Percentage** node, and in the **Value** field, enter the load on inventory percentage.
 
-    ![Load on inventory percentage](media/load-on-invertory.png)
+    ![Load on inventory percentage.](media/load-on-invertory.png)
 
 5. Select **Save**, and then select **Close**.
 6. On the **Companies** FastTab, select **Parameters**.
 7. Enter the parameter values, and then select **OK**.
 
-    ![Tax setup parameters dialog box](media/tax-parameter_upd.png)
+    ![Tax setup parameters dialog box.](media/tax-parameter_upd.png)
 
 ## Import/export tax setup
 

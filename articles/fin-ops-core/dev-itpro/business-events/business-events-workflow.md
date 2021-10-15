@@ -50,7 +50,7 @@ After a workflow is submitted by a user, it is added to a queue and run using th
 
 There are five different categories of workflow business events. The category will show up in Microsoft Power Automate to help with event selection.
 
-![Business event categories in Microsoft Power Automate](media/Business-event-category.png  "Business event categories in Microsoft Power Automate")
+![Business event categories in Microsoft Power Automate.](media/Business-event-category.png  "Business event categories in Microsoft Power Automate")
 - **Category: Workflow type** 
      - These events will fire on workflow events like started and completed. All workflow instances will be represented in this category.
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID, for example "Workflow_BudgetPlanReview_000002"

@@ -38,7 +38,7 @@ Entity store is an operational data store that is included with the application.
 ## Power BI DirectQuery mode
 In the February 2016 release of Microsoft Dynamics AX, you could create Power BI reports by using OData endpoints that are exposed via data entities (both aggregate data entities and detailed or regular data entities). Although this approach is still supported, Entity store also lets power users create Power BI DirectQuery reports.
 
-[![DirectQuery mode](./media/entity-store-architecture-1024x587.jpg)](./media/entity-store-architecture.jpg)
+[![DirectQuery mode.](./media/entity-store-architecture-1024x587.jpg)](./media/entity-store-architecture.jpg)
 
 As the preceding illustration shows, DirectQuery is a reporting mode that runs reports directly on Entity store. In this reporting mode, data isn't staged in Power BI caches. This mode provides two immediate benefits:
 
@@ -50,7 +50,7 @@ Additionally, data doesn't leave your environment, because no data is cached in 
 ## Stage aggregate measurements in Entity store
 Aggregate measurements are a star schema that is modeled for analytical scenarios. In the February 2016 release, we enabled real-time, in-memory aggregate measurements. By using real-time aggregate measurements, you can enable embedded charts and key performance indicators (KPIs) that react to real-time operations on data. For information, see [Transition from Analysis Services cubes to aggregate models](../migration-upgrade/in-memory-real-time-aggregate-models.md). Real-time aggregate measurements take advantage of the in-memory, non-clustered columnstore index (NCCI) technology. Visuals and aggregate calculations that are built over real-time aggregate measurements reflect transactions within seconds. In the platform update 1 (May 2016) release, we enabled aggregate measurements that can be staged in Entity store. Aggregate measurements that are staged in Entity store can be used for near-real-time analytical scenarios where large volumes of data must be explored by using Power BI. As a developer, you learned how to model an aggregate measurement for real-time analytics in [Model aggregate data](model-aggregate-data.md). In the platform update 1 (May 2016) release, we also added the capability to model aggregate measurements that can be staged in Entity store. In Microsoft Visual Studio, you can specify **StagedEntityStore** as the usage property of an aggregate measurement. This new property was added in May 2016. Previously, **InMemoryRealTime** was available as the usage property.
 
-![New StagedEntityStore usage property in Visual Studio](media/new-usage-property-in-VS.png)
+![New StagedEntityStore usage property in Visual Studio.](media/new-usage-property-in-VS.png)
 
 However, you might wonder why you would model an aggregate measurement so that it can be staged? Why wouldn’t you use in-memory real-time aggregate measurements all the time? There are several reasons for using the **StagedEntityStore** pattern:
 

@@ -61,6 +61,7 @@ The role of this procedure is Treasurer. This procedure uses the USMF demo compa
 > 
 > When setting the **Method of payment** (**Accounts payable > Payment setup > Methods of payment**), do not fill in **Bridging account**. In this case, the offset account is filled in with the bank account, which is set up in the **Method of payment**.
 >  
-> When the feature is enabled and the session date is less than the maturity date, the following error message is displayed when posting a payment journal, "Maturity date must be less or equal to the session date if offset account type is Bank". If the feature is not enabled, you can post a payment journal with a postdated check when the session date is less than the maturity date.    
+> When the feature is enabled and the session date is less than the maturity date, the following error message is displayed when posting a payment journal, "Maturity date must be less or equal to the session date if offset account type is Bank". If the feature is not enabled, you can post a payment journal with a postdated check when the session date is less than the maturity date.
+> This feature is available in version 10.0.21 or later.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@
 
 title: Purchase order approval mobile workspace
 description: This topic provides information about the Purchase order approval mobile workspace, which lets you view purchase orders and respond to them through actions. For example, you can approve or reject a purchase order.
-author: kamaybac 
+author: Henrikan 
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
@@ -22,7 +22,7 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-11-30 
 ms.dyn365.ops.version: Version 1611 
 
@@ -90,7 +90,7 @@ Download and install the Finance and Operations mobile app:
 3. The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
 4. After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
 
-![Purchase order approval workspace in the list of available workspaces](./media/po-workspaces.png)
+![Purchase order approval workspace in the list of available workspaces.](./media/po-workspaces.png)
 
 ## View orders that are assigned to you
 1. On your mobile device, select the **Purchase order approval** workspace.

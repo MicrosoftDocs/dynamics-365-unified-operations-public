@@ -67,7 +67,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you'll have to refresh the list of mobile workspaces.
 
-    ![Select a workspace](media/am-mobile-01.png "Select a workspace")
+    ![Select a workspace.](media/am-mobile-01.png "Select a workspace")
 
 ## View assigned work order jobs in calendar view
 
@@ -79,7 +79,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select a work order job in the list to see job details: Asset and functional location details as well as other navigation links to view **Attachments**, **Checklists**, **Tools**, **Asset counters**, **Notes**, **Journals**.
 
-    ![View assigned work order jobs in calendar view](media/am-mobile-02.png "View assigned work order jobs in calendar view")
+    ![View assigned work order jobs in calendar view.](media/am-mobile-02.png "View assigned work order jobs in calendar view")
 
 ## Create a work order job
 
@@ -97,7 +97,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select **Done**.
 
-    ![The Add line screen](media/am-mobile-03.png "The Add line screen")
+    ![The Add line screen.](media/am-mobile-03.png "The Add line screen")
 
 
 ## Add attachment to a work order job
@@ -119,7 +119,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select **Done**.
 
-    ![View and add attachments for a work order job](media/am-mobile-04.png "View and add attachments for a work order job")
+    ![View and add attachments for a work order job.](media/am-mobile-04.png "View and add attachments for a work order job")
 
 ## View maintenance checklist on a work order job
 
@@ -136,7 +136,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select the back button (**<**) to return to the previous page.
 
-    ![Maintenance checklist and line details](media/am-mobile-05.png "Maintenance checklist and line details")
+    ![Maintenance checklist and line details.](media/am-mobile-05.png "Maintenance checklist and line details")
 
 ## View and update asset counters on a work order job
 
@@ -153,7 +153,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Enter a new counter value, and select **Done**.
 
-    ![View and update asset counters](media/am-mobile-06.png "View and update asset counters")
+    ![View and update asset counters.](media/am-mobile-06.png "View and update asset counters")
 
 ## Register consumption on a work order job
 
@@ -185,7 +185,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
     1. Enter the **Cost price** for the expense registration.
     1. Select **Done**.
 
-    ![Update a work order journal](media/am-mobile-07.png "Update a work order journal")
+    ![Update a work order journal.](media/am-mobile-07.png "Update a work order journal")
 
 ## Update lifecycle state on a work order
 
@@ -201,7 +201,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select **Done**.
 
-    ![Update lifecycle state on a work order](media/am-mobile-08.png "Update lifecycle state on a work order")
+    ![Update lifecycle state on a work order.](media/am-mobile-08.png "Update lifecycle state on a work order")
 
 ## Create a maintenance request
 
@@ -223,7 +223,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select **Done**.
 
-    ![Create a maintenance request](media/am-mobile-09.png "Create a maintenance request")
+    ![Create a maintenance request.](media/am-mobile-09.png "Create a maintenance request")
 
 ## Add attachment to a maintenance request
 
@@ -243,7 +243,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 1. Select **Done**.
 
-    ![Add an attachment to a maintenance request](media/am-mobile-10.png "Add an attachment to a maintenance request")
+    ![Add an attachment to a maintenance request.](media/am-mobile-10.png "Add an attachment to a maintenance request")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

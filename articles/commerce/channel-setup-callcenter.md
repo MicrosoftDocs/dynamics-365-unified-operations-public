@@ -58,11 +58,11 @@ To create and configure a new call center channel, follow these steps.
 
 The following image shows the creation of a new call center channel.
 
-![New call center channel](media/channel-setup-callcenter-1.png)
+![New call center channel.](media/channel-setup-callcenter-1.png)
 
 The following image shows an example call center channel.
 
-![Example call center channel](media/channel-setup-callcenter-2.png)
+![Example call center channel.](media/channel-setup-callcenter-2.png)
 
 ## Additional channel setup
 
@@ -70,7 +70,7 @@ Additional tasks required for call center channel setup include setting up payme
 
 The following image shows **Modes of delivery** and **Payment methods** setup options on the **Set up** tab.
 
-![Additional call center channel setup actions](media/channel-setup-callcenter-3.png)
+![Additional call center channel setup actions.](media/channel-setup-callcenter-3.png)
 
 ### Set up payment methods
 
@@ -85,7 +85,7 @@ To set up payment methods, follow these steps for each payment type supported on
 
 The following image shows an example of a cash payment method.
 
-![Example payment methods](media/channel-setup-callcenter-payments.png)
+![Example payment methods.](media/channel-setup-callcenter-payments.png)
 
 ### Set up modes of delivery
 
@@ -101,7 +101,7 @@ To change or add a mode of delivery to be associated to the call center channel,
 
 The following image shows an example of a mode of delivery.
 
-![Set up modes of delivery](media/channel-setup-retail-7.png)
+![Set up modes of delivery.](media/channel-setup-retail-7.png)
 
 ### Set up channel users
 

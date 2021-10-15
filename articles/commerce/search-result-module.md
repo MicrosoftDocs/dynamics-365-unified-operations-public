@@ -42,7 +42,7 @@ For more information about category and search results pages, see [Default categ
 
 The following illustration shows an example of a search results page for a category on the Fabrikam site.
 
-![Example of a search results page on the Fabrikam site](./media/SimpleCategoryLandingDressCategory.png)
+![Example of a search results page on the Fabrikam site.](./media/SimpleCategoryLandingDressCategory.png)
 
 ## Search results module properties
 

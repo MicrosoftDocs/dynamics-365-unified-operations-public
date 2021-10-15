@@ -45,7 +45,7 @@ To address these issues, incremental capture support has been introduced for the
 
 The following illustration shows the difference between the different payment capture frameworks when multiple captures are done against a single authorization.
 
-![Current payment capture framework vs. incremental capture](../dev-itpro/media/INC_DIFF.png)
+![Current payment capture framework vs. incremental capture.](../dev-itpro/media/INC_DIFF.png)
 
 Incremental capture support for headquarters invoicing (in other words, any invoicing that occurs as part of order fulfillment in headquarters) was first added to the payments SDK in Commerce version 10.0.13. In Commerce version 10.0.18, incremental capture support through the SDK has been extended to channels outside of headquarters. For the storefront, Modern POS, and call center this extended support means that authorizations created for new orders can be marked as **SupportsMultipleCaptures**. When those orders are later invoiced in headquarters or Modern POS, payments can be captured and the original authorization will be retained and referenced when payments are captured for subsequent invoices. 
 

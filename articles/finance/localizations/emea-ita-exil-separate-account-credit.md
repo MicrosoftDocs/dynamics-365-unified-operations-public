@@ -42,7 +42,7 @@ You can define specific ledger accounts that should be used for sales orders. To
 
 You can also use the **Posting** page to set up different accounts for various combinations of customers, items, and related groups.
 
-![Posting accounts setup](media/emea-ita-exil-separate-account-credit-pic1.jpg)
+![Posting accounts setup.](media/emea-ita-exil-separate-account-credit-pic1.jpg)
 
 ## Post credit notes
 
@@ -56,7 +56,7 @@ If no separate ledger account is defined for the credit note, or if a required c
 
 If you create a credit note that is based on an existing sales order, clear the **Main account** field for each credit note line. A revenue account from the sales order might have been automatically entered in the field.
 
-![Clearing the main account](media/emea-ita-exil-separate-account-credit-pic2.jpg)
+![Clearing the main account.](media/emea-ita-exil-separate-account-credit-pic2.jpg)
 
 > [!NOTE]
 > Separate accounts are applicable only to credit notes that are based on sales orders. They aren't applicable to free-text credit notes, because free-text credit notes require that a ledger account be explicitly entered.

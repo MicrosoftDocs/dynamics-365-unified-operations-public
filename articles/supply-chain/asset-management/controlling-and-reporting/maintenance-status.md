@@ -62,13 +62,13 @@ In Asset Management, you can make an overview calculation for a specific period 
 
 In the screenshot below, the **Year** and **Month** buttons have been activated. With these **Group by** options selected, you get a general overview on a monthly basis of workload and throughput related to maintenance requests and work orders. 
 
-![Example of monthly workload](media/13-controlling-and-reporting.png)
+![Example of monthly workload.](media/13-controlling-and-reporting.png)
 
 ## Example 2
 
 In the screenshot below, information about functional locations has been added. Now it is possible to compare workload and throughput across functional locations, which may represent geographical locations, factories, or work areas. 
 
-![Example of monthly workload with functional locations](media/14-controlling-and-reporting.png)
+![Example of monthly workload with functional locations.](media/14-controlling-and-reporting.png)
 
 
 

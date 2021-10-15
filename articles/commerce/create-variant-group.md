@@ -64,7 +64,7 @@ To add attributes to a size group, follow these steps.
 
 The following image shows an example of a size group for "casual shirt sizes".
 
-![Create size group](media/create-variant-group.png)
+![Create size group.](media/create-variant-group.png)
 
 ## Additional resources
 

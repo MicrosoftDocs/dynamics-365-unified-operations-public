@@ -42,12 +42,12 @@ There are two ways that you can obtain the data that you will analyze in the Tra
     -   If the **Select Trace** window isn’t already open, go to the **File** menu and click **Open trace**. In the **Select Trace** window, click **Capture Events**. After selecting your providers, click **Start**. The Trace Parser tool will start listening to all the providers and capturing the events. Capturing stops when you click **Stop and Import**.
 -   Open an existing ETL (Windows Event) file that was captured using tools such as Logman. 
 
-    [![Example of opened Windows Event file](./media/1_desktop.png)](./media/1_desktop.png)
+    [![Example of opened Windows Event file.](./media/1_desktop.png)](./media/1_desktop.png)
 
 ## Viewing traces
 **Timeline view** The Timeline tab is the first tab that you see after you import a trace into the Trace Parser. This tab is shown in the following illustration. 
 
-[![Example of information in the Timeline tab](./media/2_desktop.png)](./media/2_desktop.png) 
+[![Example of information in the Timeline tab.](./media/2_desktop.png)](./media/2_desktop.png) 
 
 The **Timeline** tab has the following major components:
 

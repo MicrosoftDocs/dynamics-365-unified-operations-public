@@ -70,7 +70,7 @@ You can print a **Cash due announcement** report from either the **General journ
 4. On the **Payment** tab, in the **Bank transaction type** field, select the transaction type that you selected the **Allow cash due announcement** check box for earlier in this topic.
 5. On the Action Pane, select **Print \> Cash due announcement** to generate and print the report. The report is generated as a Microsoft Excel document that uses the template for form **0402001**.
 
-    ![Cash due announcement report](media/cash-primary-01.png)
+    ![Cash due announcement report.](media/cash-primary-01.png)
     
     On the line that you created, the **Cash due announcement** field is set and can't edited.
 
@@ -131,11 +131,11 @@ If the cash account allows for accounting in different currencies, the **More cu
     - **Posted amount** – The amount that is specified in the **Posted amount (currency)** field, in the company's primary currency.
     - **Exchange rate adjustment amount** – If the exchange rate adjustments for the specified currency were calculated on the date of inventory, this field is flagged. For the primary currency, the **Exchange rate adjustment amount** field is always flagged.
 
-![Cash counting statement](media/cash-primary-02.png)
+![Cash counting statement.](media/cash-primary-02.png)
 
 4. Select **OK** to generate the cash counting act.
 
-    ![Cash counting act report](media/cash-primary-03.png)
+    ![Cash counting act report.](media/cash-primary-03.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

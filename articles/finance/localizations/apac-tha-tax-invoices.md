@@ -100,7 +100,7 @@ At any time, you can go back to the sales order or free text invoice to print th
 
     The following illustration shows an example of a printed tax invoice.
 
-    ![Table Description automatically generated](media/apac-tha-tax-invoices-tax-invoice.png)
+    ![Table Description automatically generated.](media/apac-tha-tax-invoices-tax-invoice.png)
 
 - If you receive payment from the customer after you post a sales order or a free text invoice, follow these steps:
 
@@ -120,9 +120,9 @@ At any time, you can go back to the sales order or free text invoice to print th
 
     The following illustration shows an example of a printed receipt.
 
-    ![Timeline Description automatically generated with low confidence](media/apac-tha-tax-invoices-receipt.png)
+    ![Timeline Description automatically generated with low confidence.](media/apac-tha-tax-invoices-receipt.png)
 
 
     The following illustration shows an example of a printed receipt/tax invoice.
 
-    ![A picture containing graphical user interface Description automatically generated](media/apac-tha-tax-invoices-receipt-tax-invoice.png)
+    ![A picture containing graphical user interface Description automatically generated.](media/apac-tha-tax-invoices-receipt-tax-invoice.png)

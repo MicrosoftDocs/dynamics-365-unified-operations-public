@@ -4,7 +4,7 @@
 title: Dynamics 365 Commerce online SDK FAQ
 description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 05/26/2021
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,6 +31,32 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
+### Can I opt in to using Webpack 5 to bundle the Commerce application?
+
+The Dynamics 365 Commerce online SDK supports using the latest Webpack 5 release to bundle the Commerce application. Webpack 5 offers improved bundling together with better tree shaking and code generation to help reduce the amount of JavaScript that is downloaded and processed on a page.
+
+In the version 1.32 (Commerce version 10.0.22) release of the online SDK, you can opt in to Webpack 5. In the version 1.34 (Commerce version 10.0.24) release, Webpack 5 will become the default option, and no opt in will be required.
+
+You can enable Webpack 5 by running the **yarn msdyn365 upgrade-webpack** command. This command updates the package.json file with the list of dependencies that are required for Webpack 5. After the package.json file is updated, you can install the new dependencies by running the **yarn** command. The following example shows the two commands.
+
+```Console
+yarn msdyn365 upgrade-webpack
+
+yarn
+```
+
+### How can I make server-side module failures more apparent?
+
+Version 1.3 of the Dynamics 365 Commerce online SDK introduced a change in the number of modules that are rendered in the development environment. During module development, modules can be rendered on both the server side and the client side. If modules fail on the server side, those failures can be masked and difficult to detect because the modules are also running on the client side.
+
+To make server-side failures more apparent, version 1.31 of the online SDK generates an error message. This message states that an issue occurred during module rendering on the server, and that the issue must be addressed before the module can be successfully rendered in the development environment. This validation occurs only in the development environment (the production environment isn't affected).
+
+Here is an example of the error message that is shown in developer mode:
+
+> 'test-module' threw exception
+>
+> Error: Error during server side rendering for module test-module of type test-module. NOTE: This error is only displayed in DEVELOPER mode. This won't affect PRODUCTION. This is a safety measure so developer can address issues that happen on the server. Please, address the following issue: window is not defined.
+
 ### Why are my custom Application Insights API calls failing to build after I upgrade to the Commerce online SDK version 9.30 release?
 
 The Commerce online SDK version 9.30 release includes an update from the deprecated [Applications Insights SDK](https://www.npmjs.com/package/applicationinsights-js) to the newer [Microsoft Application Insights JavaScript SDK - Web](https://www.npmjs.com/package/@microsoft/applicationinsights-web).
@@ -49,7 +75,7 @@ Follow the instructions in this section to manually update from TSLint to ESLint
 
 #### Replace TSLint with ESLint
 
-After you [update to SDK version 1.28](sdk-updates.md) or later, you must create an ESLint file and change your **packages.json** file so that it includes the ESLint dependencies. You must also update the commands so that they use ESLint. You can leave the TSLint dependency in the **packages.json** file if you want to use both TSLint and ESLint. After you update to ESLint, you might receive new warnings against your code. You can fix or ignore the warnings as required.
+After you [update to SDK version 1.28](sdk-updates.md) or later, you must create an ESLint file and change your **package.json** file so that it includes the ESLint dependencies. You must also update the commands so that they use ESLint. You can leave the TSLint dependency in the **package.json** file if you want to use both TSLint and ESLint. After you update to ESLint, you might receive new warnings against your code. You can fix or ignore the warnings as required.
 
 ##### Create an .eslintrc.js file
 

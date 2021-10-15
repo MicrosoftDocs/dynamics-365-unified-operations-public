@@ -56,9 +56,9 @@ You can create a graphical representation that shows which packages and their mo
 
 This will generate a graph of all packages that the selected model depends on. 
 
-![View dependencies](./media/viewdependencies2.png) 
+![View dependencies.](./media/viewdependencies2.png) 
 
-![Directory dependencies](./media/directorydependencies.png)
+![Directory dependencies.](./media/directorydependencies.png)
 
 ## Deleting a model
 In a development or test environment, follow these steps to delete a model.

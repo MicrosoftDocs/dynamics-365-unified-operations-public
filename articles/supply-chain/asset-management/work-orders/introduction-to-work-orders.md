@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -56,7 +56,7 @@ Select **Asset management** > **Common** > **Work orders** > **All work orders**
 
 The illustration below shows an example of the **All work orders** list page.
 
-![Figure 1](media/01-work-orders.png)
+![Figure 1.](media/01-work-orders.png)
 
 To view a list of only active work orders, select **Asset management** > **Common** > **Work orders** > **Active work orders**. 
 
@@ -74,7 +74,7 @@ Here are some ways that you can use the **All work orders** page:
 
 The illustration below shows an example of the **All work orders** details view.
 
-![Figure 2](media/02-work-orders.png)
+![Figure 2.](media/02-work-orders.png)
 
 
 The buttons on the Action Pane are organized on tabs. The following table briefly describes the buttons that are related to Asset Management:

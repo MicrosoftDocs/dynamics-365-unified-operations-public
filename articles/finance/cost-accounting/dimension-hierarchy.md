@@ -43,7 +43,7 @@ Dimension hierarchies are used in various places in Cost accounting. A dimension
 
 Here is an example of a dimension hierarchy.
 
-![Example of a dimension hierarchy](./media/dimension-hierarchy.png)
+![Example of a dimension hierarchy.](./media/dimension-hierarchy.png)
 
 A dimension hierarchy can be created for the following types of dimensions:
 
@@ -84,7 +84,7 @@ A dimension hierarchy is created as a tree structure that has node and leaf node
 
 A small company has the following organization structure, where Finance and Human resources are departments under Admin, and Assembly and Packaging are departments under Production.
 
-![Example of an organization structure](./media/dimension-hierarchy-org.png)
+![Example of an organization structure.](./media/dimension-hierarchy-org.png)
 
 A cost object dimension represents all the cost centers in the organization.
 

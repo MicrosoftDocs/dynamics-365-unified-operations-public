@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Improve the prediction model (preview)
+title: Improve the prediction model
 description: This topic describes features that you can use to improve the performance of prediction models.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,10 +27,9 @@ ms.dyn365.ops.version: AX 10.0.8
 
 ---
 
-# Improve the prediction model (preview)
+# Improve the prediction model
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes features that you can use to improve the performance of prediction models. You start to improve your model in the **Customer payment predictions** workspace in Microsoft Dynamics 365 Finance. The improvement steps are then completed in AI Builder.
 
@@ -38,7 +37,7 @@ This topic describes features that you can use to improve the performance of pre
 
 You first select one or more of the three possible outcomes for invoices: **On time**, **Late**, and **Very late**. All three outcomes should be selected. If you clear the selection of any of the outcomes, invoices will be filtered out of the training process and the accuracy of the prediction will be reduced.
 
-[![Confirming outcomes](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![Confirming outcomes.](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 If your organization requires only two outcomes, change the **Late** and **Very late** thresholds to 0 (zero) days. In this way, you effectively collapse the prediction to a binary state of **On time** or **Late**.
 
@@ -56,7 +55,7 @@ The following sections show the fields that are available for the invoice and cu
 
 The following illustration shows the fields that are available for the invoice table.
 
-[![Available fields for the invoice table](./media/available-fields.png)](./media/available-fields.png)
+[![Available fields for the invoice table.](./media/available-fields.png)](./media/available-fields.png)
 
 The following fields should not be selected for training:
 
@@ -71,7 +70,7 @@ The following fields should not be selected for training:
 
 The following illustration shows the fields that are available for the customer table.
 
-[![Available fields for the customer table](./media/related-entities.png)](./media/related-entities.png)
+[![Available fields for the customer table.](./media/related-entities.png)](./media/related-entities.png)
 
 The following field should not be selected for training:
 
@@ -79,8 +78,8 @@ The following field should not be selected for training:
 
 ## Filters
 
-The filters don't currently support the Customer payment predictor scenario. Therefore, select **Skip this step**, and continue to the summary page.
+You can filter the invoices that are used for training by setting filter criteria for fields on the invoice or in the customer tables. For example, you can set a threshold to include only invoices where the total equals or exceeds a specific amount. Alternatively, you can exclude invoices that are associated with customers in a specific customer group.
 
-[![Focus model with filters](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
+For more information on filtering your data, see [Create a prediction model](/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

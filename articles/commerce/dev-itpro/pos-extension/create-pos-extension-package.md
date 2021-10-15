@@ -90,7 +90,7 @@ This topic explains how to create a Point of Sale (POS) extension package projec
     2. Search for **json**, and select **TypeScript JSON Configuration File**.
     3. Name the file **tsconfig.json**, and then select **Add**.
 
-        ![Adding the tsconfig.json file](media/json-file.png)
+        ![Adding the tsconfig.json file.](media/json-file.png)
 
     4. Remove all the fields from the JavaScript Object Notation (JSON), and make the file extend from the **pos-tsconfig-base.json** file by adding an **extends** field. When you've finished, the XML file should resemble the following example.
 

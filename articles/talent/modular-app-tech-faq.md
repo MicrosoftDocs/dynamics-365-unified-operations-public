@@ -44,7 +44,7 @@ The Onboard app is provisioned only in supported countries or regions. The suppo
 
 The following illustration shows the logic used for provisioning the standalone Onboard app.
 
-[![Provisioning process for the standalone Onboard app, based on country/region](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
+[![Provisioning process for the standalone Onboard app, based on country/region.](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
 
 Unlike the full version of Talent, the standalone Onboard app doesn't maintain a list of the environments that each user can access. Users are automatically signed in to the last environment they used. They can then select different environments by using the **Settings** button (the gear symbol).
 

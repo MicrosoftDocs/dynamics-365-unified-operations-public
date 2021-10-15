@@ -54,7 +54,7 @@ When you use Warehousing on your mobile device, you can configure how metadata s
 <tbody>
 <tr class="odd">
 <td>Preferred input mode</td>
-<td>This option defines whether a scanning field or a manual entry input field should be shown for the selected field name. This is useful to distinguish fields depending on if barcodes are used for the field. <strong>Note:</strong> For field names with preferred input mode set to <strong>Scanning</strong>, you can enter information manually if the barcode is unreadable or damaged.</td>
+<td>This option defines whether a scanning field or a manual entry input field should be shown for the selected field name. This is useful to distinguish fields depending on if bar codes are used for the field. <strong>Note:</strong> For field names with preferred input mode set to <strong>Scanning</strong>, you can enter information manually if the bar code is unreadable or damaged.</td>
 </tr>
 <tr class="even">
 <td>Input type</td>

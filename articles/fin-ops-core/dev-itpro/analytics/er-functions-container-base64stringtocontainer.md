@@ -5,7 +5,6 @@ title: Base64StringToContainer ER function
 description: This topic provides information about how the Base64StringToContainer Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/14/2020
-ms.topic: article
 ms.prod: 
 ms.technology: 
 
@@ -31,7 +30,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-The `BASE64STRINGTOCONTAINER` [function](er-formula-language.md#functions) converts the specified input of the *String* type to a data item of the *[Container](er-functions-category-container.md)* type.
+The `BASE64STRINGTOCONTAINER` [function](er-formula-language.md#Functions) converts the specified input of the *String* type to a data item of the *[Container](er-functions-category-container.md)* type.
 
 ## Syntax
 
@@ -78,7 +77,7 @@ You define the following data sources in your model mapping:
 
 In this example, the **\#MediaAsBase64String** data source encodes the binary content of the current media attachment as text that represents a Base64 group of binary-to-text encoding schemes. The **\#BlobFomBase64** data source decodes the Base64 string and returns a binary value in BLOB format.
 
-![Sample data sources on the ER Model mapping designer page](./media/er-functions-container-base64stringtocontainer-1.png)
+![Sample data sources on the ER Model mapping designer page.](./media/er-functions-container-base64stringtocontainer-1.png)
 
 ## Additional resources
 

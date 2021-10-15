@@ -92,7 +92,7 @@ For more information, see [Download Electronic reporting configurations from Lif
 4.  Select **OK** to generate the data on the **Declaration 347** page.
 5.  Review the information on the declaration.
 
-![Declaration 347 page](media/1_Declaration_347.png)
+![Declaration 347 page.](media/1_Declaration_347.png)
 
 The **General** tab has the following fields.
 
@@ -117,7 +117,7 @@ The **Totals** tab shows the number of operations and the total amounts of purch
 
 6.  Select **Transactions** to review and modify the information for the aggregated customer transactions and vendor transactions before you generate the report as an ASCII file.
 
-![Transactions page, Overview tab](media/2_Transactions.png)
+![Transactions page, Overview tab.](media/2_Transactions.png)
 
 7.  On the **Transactions** page, on the **General** tab, review the following fields.
 
@@ -145,7 +145,7 @@ The **Totals** tab shows the number of operations and the total amounts of purch
 
 8.  If you selected the **Tenancy** check box on the **General** tab, select **Declaration 347 tenants** to add information about tenants.
 
-![Declaration 347 tenants page](media/3_Declaration347_tenants.png)
+![Declaration 347 tenants page.](media/3_Declaration347_tenants.png)
 
 9.  On the **Declaration 347 tenants** page, on the **Overview** tab, set the **Name**, **Amount**, **Reference of estate**, **County**, **Country/region**, **City**, and **Street** fields.
 10.  On the **General** tab, set the **ZIP/postal code**, **Address abbreviation**, **Street No.**, **Entrance**, **Floor**, **Door**, and **Location code** fields for the building or property.
@@ -178,11 +178,11 @@ Consider an example in the **DEMF** legal entity.
 2.  On the **Tax registration** FastTab, in the **Tax registration number** field, enter **B80833593**.
 3.  Go to **Tax** \> **Setup** \> **Sales tax** \> **Cash ledger accounts**, and select **New** to create a line.
     
-![Cash ledger accounts page](media/4_Cash_ledger_accounts.png)
+![Cash ledger accounts page.](media/4_Cash_ledger_accounts.png)
 
 4.  Go to **Tax** \> **Setup** \> **Sales tax** \> **Tax exempt number** and select **New** to create a line.
 
-![Tax exempt numbers page](media/5_Tax_exempt_numbers.png)
+![Tax exempt numbers page.](media/5_Tax_exempt_numbers.png)
 
 ### Customer transactions
 
@@ -248,7 +248,7 @@ Consider an example in the **DEMF** legal entity.
 2.  Select **OK**.
 3.  Select the declaration line that was created, select **Transactions**, and review the data.
 
-![Transactions page](media/6_Transactions.png)
+![Transactions page.](media/6_Transactions.png)
 
 Notice the following details:
 
@@ -264,7 +264,7 @@ Notice the following details:
 -   The value in **1st quarter amount** column becomes 7000 instead of 6500
 -   The value in **2nd quarter amount** column becomes 3000 instead of 0.
 
-![Transactions page, 1st and 2nd quarter amount columns](media/7_Transactions.png)
+![Transactions page, 1st and 2nd quarter amount columns.](media/7_Transactions.png)
 
 8.  Close the **Transactions** page.
 9.  Select **Output \> Delta report**.
@@ -272,7 +272,7 @@ Notice the following details:
 11.  In the **File name** field, enter the file name, and then select **OK**.
 12.  Open downloaded file and review the data.
 
-![Declaration 347 report format (ES) generated data](media/8_Declaration347.png)
+![Declaration 347 report format (ES) generated data.](media/8_Declaration347.png)
 
 Notice that only the line that has corrections is printed on the report.
 

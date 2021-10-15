@@ -37,7 +37,7 @@ When you schedule work orders, you create a schedule for maintenance workers, to
 
 The screenshot below shows an example of a maintenance worker who is related to a resource that uses the working time calendar "Production".
 
-![Figure 1](media/01-work-order-scheduling.png)
+![Figure 1.](media/01-work-order-scheduling.png)
 
 Calendar setup for tools and assets is not needed in relation to work order scheduling. The assumption is that tools and assets are available 24 hours a day for maintenance.
 

@@ -49,7 +49,7 @@ If your company receives assets for repair or maintenance jobs from either inter
 
 To view a list of all the assets that you've loaned to other locations or customers, select **Asset management** \> **Common** \> **Asset loan** \> **All asset loans**. If the **Ended** check box is selected for an asset, the asset has been registered as returned to your company.
 
-![Manage Maintenance Requests](media/06-manage-maintenance-requests.png)
+![Manage Maintenance Requests.](media/06-manage-maintenance-requests.png)
 
 On the **Active asset loans** page, you can view a list of all the loan assets that haven't yet been returned to your company.
 

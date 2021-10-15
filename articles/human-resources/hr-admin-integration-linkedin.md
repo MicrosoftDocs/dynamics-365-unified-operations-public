@@ -31,9 +31,8 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [banner](includes/preview-feature.md)]
-
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> The integration between Dynamics 365 Human Resources and LinkedIn Talent Hub described in this topic will be retired on December 31, 2021. The integration service will no longer be available after this date. Organizations not already using the integration service will not be able to implement the service prior to retirement.
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) is an applicant tracking system (ATS) platform. It lets you source, manage, and hire employees all in one place. By integrating Microsoft Dynamics 365 Human Resources with LinkedIn Talent Hub, you can easily create employee records in Human Resources for applicants who have been hired for a position.
 
@@ -53,7 +52,7 @@ A system administrator must complete setup tasks to enable integration with Link
 
 5. On the **Dynamics 365 Human Resources** page, select the environment to link LinkedIn Talent Hub to, and then select **Link**.
 
-    ![LinkedIn Talent Hub onboarding](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![LinkedIn Talent Hub onboarding.](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > You can link only to environments where your user account has administrator access to both the Human Resources environment and the associated Power Apps environment. If no environments are listed on the Human Resources link page, make sure that you have licensed Human Resources environments on the tenant, and that the user that you signed in to the link page as has administrator permissions to both the Human Resources environment and the Power Apps environment.
@@ -96,7 +95,7 @@ An application user must be created for the LinkedIn Talent Hub adapter to grant
 
 6. Use the drop-down menu above the list to change the view from the default **Enabled Users** view to **Application Users**.
 
-    ![Application Users view](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![Application Users view.](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. On the toolbar, select **New**.
 
@@ -168,7 +167,7 @@ After a candidate has moved through the recruiting process and has been hired, y
     - In the **Location** field, enter the location where the employee will be based.
     - Enter or verify the employee's email address.
 
-![Export to HRIS pane in LinkedIn Talent Hub](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![Export to HRIS pane in LinkedIn Talent Hub.](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## Complete onboarding in Human Resources
 

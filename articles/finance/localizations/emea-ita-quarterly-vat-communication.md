@@ -3,8 +3,8 @@
 
 title: Quarterly VAT communication report
 description: This topic provides information about Quarterly VAT communication report in Italy.
-author: LizaGolub
-ms.date: 02/09/2021
+author: liza-golub
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -55,7 +55,7 @@ For the progressive number, a system number sequence is used. Go to **Organizati
 
 For example:
 
-   ![Set up number sequence for Quarterly VAT Communication (LIPE) report](./media/num-seq.png)
+   ![Set up number sequence for Quarterly VAT Communication (LIPE) report.](./media/num-seq.png)
 
 Find more information about how to set up number sequences in [Set up number sequences](/dynamicsax-2012/appuser-itpro/set-up-number-sequences) section.
 
@@ -79,7 +79,7 @@ Find more information about how to set up number sequences in [Set up number seq
 4. Select **Italian tax report model** \> **Quarterly VAT Communication**, and then, on the Action Pane, select **Create configuration**.
 5. In the drop-down dialog box, select the **Derive from Name: Quarterly VAT Communication** option, enter a name and description for the new format, and then select **Create configuration**.
 
-    ![Derive ER format to create the format for your company](./media/derive-er-format.png)
+    ![Derive ER format to create the format for your company.](./media/derive-er-format.png)
 
     The new format includes all the fields and mapping from the original. In the new format, you can make changes to meet your company's requirements.
 
@@ -98,12 +98,12 @@ Find more information about how to set up number sequences in [Set up number seq
 
     To set up tax codes for the report, on the **Format designer** page, on the **Mapping** tab, expand **Model** \> **AccountingData** \> **MonthlyData**, select the **ActiveVATOperations** node, and then select **Edit**.
 
-    ![Edit formula for active VAT operations](./media/edit-formula-active-vat-operations.png)
+    ![Edit formula for active VAT operations.](./media/edit-formula-active-vat-operations.png)
 
 7. In the **'Calculated field' data source properties** dialog box, select **Edit formula**.
 8. Update the formula with the tax codes that your company uses and the tax direction that is applicable to your company's operations. Manually define the tax codes as string values. For the tax directions, select values from the **TaxDirection_Type** data source on the left side of the **Formula designer** page.
 
-   ![Add your company's tax codes in formula designer](./media/formula-designer.png)
+   ![Add your company's tax codes in formula designer.](./media/formula-designer.png)
 
    When the report is generated, the system will use the conditions that are defined for the **ActiveVATOperations** node to calculate values for the **TotaleOperazioniAttive** and **IvaEsigibile** tags of the report.
 
@@ -114,21 +114,21 @@ Find more information about how to set up number sequences in [Set up number seq
 13. To specify the number sequence that the system should use for the progressive numbers that are included in the file name for the report file, on the **Format designer** page, on the **Mapping** tab, select **Add root**.
 14. In the drop-down dialog box, expand **Dynamics 365 for Operations**, and then select **Number sequence**.
 
-      ![Add number sequence to your format](./media/add-num-seq.png)
+      ![Add number sequence to your format.](./media/add-num-seq.png)
 
 15. Enter a name, select the number sequence that you created earlier, and then select **OK** to create the number sequence.
 
-       ![Specify a name for your number sequence in ER format](./media/num0seq-name.png)
+       ![Specify a name for your number sequence in ER format.](./media/num0seq-name.png)
 
 16. On the **Format designer** page, select **File** on the left side, and then, on the **Mapping** tab, select the **Edit** button (pencil symbol) for the **File name** field.
 
-    ![Edit formula for name of the file with number sequence name](./media/file-name-edit.png)
+    ![Edit formula for name of the file with number sequence name.](./media/file-name-edit.png)
 
 17. Update **"IT"&model.Frontispiece.FiscalCode&"_LI_00000"** with a formula that includes a link to the new number sequence:
     
       - **"IT"&model.Frontispiece.FiscalCode&"_LI_"&LIPE_file_num**. Here, **LIPE_file_num** is the name that you gave to the number sequence. To add **LIPE_file_num** to the formula, click **Add data source**. When you've finished, select **Save**.
 
-      ![Edit formula for file name with number sequence name](./media/file-name-formula-designer.png)
+      ![Edit formula for file name with number sequence name.](./media/file-name-formula-designer.png)
 
 18. Save your changes in the ER format, and complete the configuration.
 
@@ -138,13 +138,13 @@ The values of some format tags must be filled in manually. The tags are included
 
 By default, the **Quarterly VAT Communication** format includes all possible parameters. To add, delete, or update parameters in the report dialog box, on the **Format designer** page, on the **Mapping** tab, switch to **Group view**, and then select the **Empty containers** element.
 
-   ![Empty containers](./media/empty-containers.png)
+   ![Empty containers.](./media/empty-containers.png)
 
 The **Empty containers** element includes all the input parameters for the report. Before you delete an input parameter, you must unbind it or update the mapping for the corresponding field. Expand the format structure tree on the left side of the **Format designer** page, find the corresponding field, and delete or update the binding.
 
 To add an input parameter, add it in the corresponding node in the **Empty containers** element, select a tag in the format structure tree, and then select **Bind**.
 
-   ![Bind an input parameter](./media/binding.png)
+   ![Bind an input parameter.](./media/binding.png)
 
 When you've finished updating the format, save, close, and complete it.
 
@@ -152,10 +152,10 @@ When you've finished updating the format, save, close, and complete it.
 
 A new menu item for the **Quarterly VAT communication (LIPE)** report must be associated with the format that you created and updated for your legal entity.
 
-1. Go to **Tax** \> **Setup** \> **Parameters** \> **General ledger parameters**.
+1. Go to **Tax** > **Setup** > **Parameters** > **General ledger parameters**.
 2. On the **Sales tax** tab, on the **Quarterly VAT communication** FastTab, in the **Format mapping** field, select the **Quarterly VAT Communication** format that you created.
 
-    ![Set up Quarterly VAT Communication format in General ledger parameters](./media/gl-parameters-er-format.png)
+    ![Set up Quarterly VAT Communication format in General ledger parameters.](./media/gl-parameters-er-format.png)
 
 ## Generate a Quarterly VAT communication (LIPE) report
 

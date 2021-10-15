@@ -54,14 +54,14 @@ Follow these steps to configure store hours.
     > [!NOTE]
     > You can create multiple templates that have overlapping start and end dates. Therefore, you can, for example, define store hours for stores in different time zones.
 
-    ![Add range dialog box](../dev-itpro/media/Storehours1.png "Add range dialog box")
+    ![Add range dialog box.](../dev-itpro/media/Storehours1.png "Add range dialog box")
 
 4. Associate the store hours template with the stores where it will be used. In the **Choose organization nodes** dialog box, select the stores, regions, and organizations that the template should be associated with.
 
     - Only one store hours template can be associated with each store.
     - Use the arrow buttons to select stores, regions, or organizations. The calendar will be available to the stores or store groups, and it will be visible at the POS for reference.
 
-    ![Choose organization nodes dialog box](../dev-itpro/media/Storehours2.png "Choose organization nodes dialog box")
+    ![Choose organization nodes dialog box.](../dev-itpro/media/Storehours2.png "Choose organization nodes dialog box")
 
 5. On the **Distribution schedule** page, run the **1070** and **1090** jobs to make the store hours available to the POS.
 
@@ -80,7 +80,7 @@ Follow these steps to add store hours to the printed POS receipts.
 
 POS receipts now include the store hours. If any holidays were included in the template, they are shown on the receipt.
 
-![Receipt example](../dev-itpro/media/Storehours3.png "Receipt example")
+![Receipt example.](../dev-itpro/media/Storehours3.png "Receipt example")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

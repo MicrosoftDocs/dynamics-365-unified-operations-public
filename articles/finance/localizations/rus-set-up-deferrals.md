@@ -111,7 +111,7 @@ Follow these steps to create write-off methods for deferred expenses.
 
 3. If you selected **Manual** in the **Type** field and **Amount** in the **Calculation type** field, on the Action Pane, select **Manual schedules** to create write-off schedules.
 
-![Writing off methods page](media/rus-set-up-deferral-01.png)
+![Writing off methods page.](media/rus-set-up-deferral-01.png)
 
 ## Value models
 
@@ -128,7 +128,7 @@ Follow these steps to create write-off methods for deferred expenses.
 
 3. On the Action Pane, select **Deferrals groups** to set up deferrals groups that are related to the selected value model.
 
-![Value models page](media/rus-set-up-deferral-02.png)
+![Value models page.](media/rus-set-up-deferral-02.png)
 
 ## Posting profiles
 
@@ -202,7 +202,7 @@ Follow these steps to create write-off methods for deferred expenses.
     </tbody>
     </table>
 
-![Deferrals posting profiles page](media/rus-set-up-deferral-03.png)
+![Deferrals posting profiles page.](media/rus-set-up-deferral-03.png)
 
 ## Deferrals groups
 
@@ -269,7 +269,7 @@ Follow these steps to create write-off methods for deferred expenses.
 
 The deferrals group that is set up has a one-to-one (1:1) relation to value model that is related to the posting profiles setup.
 
-![Deferrals groups page](media/rus-set-up-deferral-04.png)
+![Deferrals groups page.](media/rus-set-up-deferral-04.png)
 
 ## Sequence of calculation
 
@@ -290,7 +290,7 @@ You use the **Standard expenses sequence** and **Counter setup** pages to create
     | Channel           | Select the deferral output format for the calculation results.          |
     | Channel reference | Select the deferred expense group to record the calculation results to. If necessary, you can create deferrals for the bookkeeping accounting and tax accounting models at the same time by separating them with commas.|
 
-    ![Standard expenses sequence page](media/rus-set-up-deferral-05.png)
+    ![Standard expenses sequence page.](media/rus-set-up-deferral-05.png)
 
 3. On the Action Pane, select **Counters** to open the **Counter setup** page.
 4. On the Action Pane, select **New** to create counters for the calculation sequence.
@@ -376,7 +376,7 @@ You use the **Standard expenses sequence** and **Counter setup** pages to create
     </tbody>
     </table>
 
-    ![Counter setup page](media/rus-set-up-deferral-06.png)
+    ![Counter setup page.](media/rus-set-up-deferral-06.png)
     
     If you want to create a sequence of calculations to generate a deferrals master record, on the last line, in the **Output** field, specify **Data output**. The value of this line is the amount of the generated deferral.
     
@@ -422,11 +422,11 @@ The following table provides detailed instructions about how to fill in the **Fr
     | Base value model                | Select a default value model. |
     | VAT offset method for deferrals | Select a default VAT offset method for deferrals. |
 
-    ![Deferrals tab on the General ledger parameters page](media/rus-set-up-deferral-07.png)
+    ![Deferrals tab on the General ledger parameters page.](media/rus-set-up-deferral-07.png)
 
 3. On the **Number sequences** tab, in the **Number sequence code** field, select the number sequence code for the **Deferral ID** reference.
 
-    ![Number sequences tab on the General ledger parameters page](media/rus-set-up-deferral-08.png)
+    ![Number sequences tab on the General ledger parameters page.](media/rus-set-up-deferral-08.png)
 
 4. Go to **General ledger** \> **Journal setup** \> **Journal names**.
 5. On the Action Pane, select **New** to create a journal of the **Deferrals** type to work with deferrals.
@@ -435,7 +435,7 @@ The following table provides detailed instructions about how to fill in the **Fr
 8. In the **Journal type** field, select **Deferrals**.
 9. In the **Voucher series** field, select the number sequence that is used for voucher numbering.
 
-    ![Journal names page](media/rus-set-up-deferral-09.png)
+    ![Journal names page.](media/rus-set-up-deferral-09.png)
 
 ## Deferrals
 

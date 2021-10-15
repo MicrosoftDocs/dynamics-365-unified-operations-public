@@ -39,13 +39,13 @@ In the **Data management** workspace, you can get an overview of target entities
 
 2. In the **Import / Export** section, click **Data entities**. 
 
-    ![Figure 1](media/01-data-management.png)
+    ![Figure 1.](media/01-data-management.png)
 
 3. On the **Target entities** page, search for "asset management" in the filter, and press Enter to see a list of the entities related to Asset management.
 
     The figure below shows some of the Asset management entities.
 
-   ![Figure 2](media/02-data-management.png)
+   ![Figure 2.](media/02-data-management.png)
 
 4. Select an entity and click **Modify target mapping**.
 
@@ -53,7 +53,7 @@ In the **Data management** workspace, you can get an overview of target entities
 
     In the figure below, a visualization of the fields related to the asset types entity is shown.
 
-    ![Figure 3](media/03-data-management.png)
+    ![Figure 3.](media/03-data-management.png)
 
 
 

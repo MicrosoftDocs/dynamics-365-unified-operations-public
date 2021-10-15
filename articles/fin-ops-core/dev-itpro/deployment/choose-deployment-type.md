@@ -36,7 +36,7 @@ You can deploy Finance and Operations apps in the cloud or on-premises. Cloud de
 
 The following table provides a comparison of the capabilities provided by the two deployment options.
 
-[![Deployment options table](./media/deployment-options.png)](./media/deployment-options.png)
+[![Deployment options table.](./media/deployment-options.png)](./media/deployment-options.png)
 
 
 ## Why cloud

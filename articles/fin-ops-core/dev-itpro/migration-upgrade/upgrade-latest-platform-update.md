@@ -48,11 +48,11 @@ In Finance and Operations, the platform consists of the following components:
 ## Overall flow
 The following illustration shows the overall process for upgrading the platform to the latest update.
 
-[![Upgrade process for implementations that have no customization of the platform](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
+[![Upgrade process for implementations that have no customization of the platform.](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
 
 If you are already running on Platform update 4 or later, updating to the latest release is a simple servicing operation. After the platform update package is in your LCS asset library, follow the flow to apply an update from the LCS environment page. Select **Apply updates** under **Maintain**, then select the platform update package.
 
-[![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg)
+[![Apply updates.](./media/applyupdates.jpg)](./media/applyupdates.jpg)
 
 Learn how to **get the latest platform package and apply it to an environment deployed through LCS** in the next section.
 
@@ -70,7 +70,7 @@ From a process perspective, deploying a platform upgrade package resembles a bin
 
 -   To apply a platform update package to your cloud development, build, demo, tier-2 sandbox, or production environment, update directly from LCS.
 
-    [![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg)
+    [![Apply updates.](./media/applyupdates.jpg)](./media/applyupdates.jpg)
 
 For more details, follow the instructions for applying a binary hotfix in [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).
 
@@ -86,7 +86,7 @@ Platform update packages are released by Microsoft and can be imported from the 
 1.  Go to your LCS project's Asset library.
 2.  On the **Software deployable package** tab, click **Import** to create a reference to the platform update package. 
 
-    [![Import button](./media/importupgradepackage.png)](./media/importupgradepackage.png)
+    [![Import button.](./media/importupgradepackage.png)](./media/importupgradepackage.png)
 
 3.  Select the desired platform update package.
 

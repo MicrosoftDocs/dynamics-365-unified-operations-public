@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 Sellers are legally required to pay value-added tax (VAT) from the prepayments that they receive from customers (buyers). They must then issue prepayment factures to the customers. Customers can then deduct the VAT, based on the prepayment facture that they receive from a seller.
 
-![A screenshot of a cell phone description automatically generated](media/1%20Scheme%20english.jpg)
+![A screenshot of a cell phone description automatically generated.](media/1%20Scheme%20english.jpg)
 
 
 ## Processing prepayments from customers
@@ -139,7 +139,7 @@ After a prepayment is registered, a facture is automatically created. The factur
 10. In the lower part of the **Facture journal** page, on the **General** tab, in the **Note** field, enter the list of goods that the prepayment is registered for.
 11. Select **Fill line details**, and then, in the **Journal of invoices for payment** dialog box, select the **Mark** check box for every invoices for payment for which the names of goods (works and services) should be included in the description of the prepayment facture. For more information, see [Invoices for payment](rus-invoice-payment.md)
 
-![Journal of invoices for payment dialog box](media/2%20Journal%20of%20invoices%20for%20payment.png)
+![Journal of invoices for payment dialog box.](media/2%20Journal%20of%20invoices%20for%20payment.png)
 
 12.  Select **OK**. The names of goods are added to the **Note** field.
 13.  Select the line for the facture, and then, on the Action Pane, select **Print**.

@@ -42,7 +42,7 @@ Among other reporting elements, an Intrastat declaration contains information ab
 
 On the **Released products master data** page, on the **Foreign trade** FastTab, in the **Intrastat** section, in the **Charges per kilogram** field, enter the amount of the charges per kilogram.
 
-![Charges per kilogram field](media/emea-ita-exil-misc-charge-kg-pic1.jpg)
+![Charges per kilogram field.](media/emea-ita-exil-misc-charge-kg-pic1.jpg)
 
 > [!NOTE]
 > Verify that the product weight is defined in kilograms.
@@ -57,7 +57,7 @@ If a **Charges percentage** value is also entered, both types of miscellaneous c
 
 *Statistical charges amount* = (*Invoice amount* × *Charges percentage*) + (*Cost of each kilogram* × *Net weight \[in kilograms\]*)
 
-![Charges calculation](media/emea-ita-exil-misc-charge-kg-pic2.jpg)
+![Charges calculation.](media/emea-ita-exil-misc-charge-kg-pic2.jpg)
 
 For more information, see [Transfer transactions to the Intrastat](tasks/transfer-transactions-intrastat.md)
 

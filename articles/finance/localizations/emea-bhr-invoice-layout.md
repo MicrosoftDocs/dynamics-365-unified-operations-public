@@ -80,13 +80,13 @@ By default, invoices are generated as Microsoft Excel files. To enable their con
     2. In the **Page orientation** field, select **Portrait**.
     3. Select **Settings**, and then, on the **Destination settings** page, on the **Screen** tab, set the **Enabled** option to **Yes** to enable printing to the screen.
 
-![Enabling conversion to PDF](media/emea-bhr-pdf.jpg)
+![Enabling conversion to PDF.](media/emea-bhr-pdf.jpg)
 
 ## Configure default model mapping for project invoices
 
 In the **Electronic reporting** workspace, select the **Project invoice model mapping (RDP)** configuration. Turn on **Default model mapping** parameter for the selected configuration.
 
-![Project invoice model mapping configuration](media/invoice-model-tree.png)
+![Project invoice model mapping configuration.](media/invoice-model-tree.png)
 
 ## Configure parameters
 
@@ -99,7 +99,7 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
     - **Customer invoice:** In the **Report format** field, select **Sales invoice (Excel) (BH)**.
     - **Free text invoice:** In the **Report format** field, select **Free text invoice (Excel) (BH)**.
 
-    ![Configuring Print management](media/emea-bhr-print_management.jpg)
+    ![Configuring Print management.](media/emea-bhr-print_management.jpg)
 
 4. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Forms setup**.
 5. On the **Form setup** page, on the **General** tab, select **Print management**.
@@ -114,7 +114,7 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
 2. On the **Form setup** page, on the **General** tab, in the **Sales tax specification** field, select **Registration and company currency**.
 
-    ![Configuring sales tax specification](media/emea-bhr-tax-spec.jpg)
+    ![Configuring sales tax specification.](media/emea-bhr-tax-spec.jpg)
 
 3. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Forms setup**.
 4. On the **Form setup** page, on the **General** tab, in the **Sales tax specification** field, select **Registration and company currency**.
@@ -124,7 +124,7 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Forms setup**.
 2. On the **Form setup** page, on the **Invoice** tab, select the **Print packing slip specifications** check box.
 
-    ![Configuring packing slip specification](media/emea-bhr-packing-spec.jpg)
+    ![Configuring packing slip specification.](media/emea-bhr-packing-spec.jpg)
 
 3. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Forms setup**.
 4. On the **Form setup** page, on the **Invoice** tab, select the **Print packing slip specifications** check box.
@@ -134,7 +134,7 @@ In the **Electronic reporting** workspace, select the **Project invoice model ma
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
 2. On the **Accounts receivable parameters** page, on the **Updates** tab, on the **Invoice** FastTab, set the **Apply the credit invoicing layout into sales and project invoice reports** option to **Yes**.
 
-![Activating credit invoicing](media/emea-bhr-credit.jpg)
+![Activating credit invoicing.](media/emea-bhr-credit.jpg)
 
 ## Generate invoices
 

@@ -21,10 +21,12 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
-ms.dyn365.ops.version: Release 10.0.11
+ms.dyn365.ops.version: 10.0.11
 ---
 
 # Moving average fallback cost sequence
+
+[!include [banner](../includes/banner.md)]
 
 One way that you can calculate the cost of your inventory is by using a _moving average_. Up to three cost values can be associated with each inventory item:
 
@@ -47,7 +49,7 @@ To select the fallback cost sequence for moving average calculations, follow the
     - **Active cost – Last issue**
     - **Active cost – Item price** – Organizations might experience performance issues if they use business processes where inventory regularly goes negative and, at the same time, the transaction volume is high. This setting can help mitigate those performance issues.
 
-![Inventory accounting parameters](media/inventory-accounting-parameters.png "Inventory accounting parameters")
+![Inventory accounting parameters.](media/inventory-accounting-parameters.png "Inventory accounting parameters")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

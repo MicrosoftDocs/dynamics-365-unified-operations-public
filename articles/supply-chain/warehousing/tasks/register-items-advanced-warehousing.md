@@ -3,7 +3,7 @@
  
 title: Register items for an advanced warehousing enabled item using an item arrival journal
 description: This topic presents a scenario that shows how to register items using the item arrival journal when you are using advanced warehouse management processes. 
-author: ShylaThompson
+author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process 
 ms.prod:  
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Register items for an advanced warehousing enabled item using an item arrival journal
 
@@ -55,14 +55,14 @@ The following scenario shows how to create an item arrival journal header that u
 1. Set **Account number** to *1001*.
 1. Set **Number** to the number of the purchase order that you identified for this exercise.
 
-    ![Item arrival journal](../media/item-arrival-journal-header.png "Item arrival journal")
+    ![Item arrival journal.](../media/item-arrival-journal-header.png "Item arrival journal")
 
 1. Select the **OK** to create the journal header.
 1. In the **Journal lines** section, select **Add line** and enter the following data:
     - **Item number** – Set to *M9200*. The **Site**, **Warehouse**, and **Quantity** will get set based on the inventory transaction data for the 10 pallets (1000 ea.).
     - **Location** – Set to  *001*. This specific location does not track license plates.
 
-    ![Item arrival journal line](../media/item-arrival-journal-line.png "Item arrival journal line")
+    ![Item arrival journal line.](../media/item-arrival-journal-line.png "Item arrival journal line")
 
     > [!NOTE]
     > The **Date** field determines the date on which the on-hand quantity of this item will be registered in the inventory.  

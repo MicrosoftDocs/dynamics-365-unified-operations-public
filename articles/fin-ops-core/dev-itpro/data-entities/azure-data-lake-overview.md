@@ -16,7 +16,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-# ms.custom: NotInToc
+ms.custom: ["intro-internal", "NotInToc"]
 ms.search.region: Global
 # ms.search.industry:
 ms.author: milindav
@@ -86,7 +86,7 @@ Data Lake combines both these services into a single service that offers the "be
 
 - Cloud-based services let both power users and developers consume this data.
 
-    ![How power users and developers can use Data Lake](./media/PowerUsers-Developers-LoveThis-PPT.png)
+    ![How power users and developers can use Data Lake.](./media/PowerUsers-Developers-LoveThis-PPT.png)
 
 ## Common Data Model folders
 
@@ -98,7 +98,7 @@ Data is stored in Data Lake to comply with the Common Data Model folder standard
 
 The following illustration shows the Common Data Model folder structure from Finance and Operations apps.
 
-![Common Data Model folder structure from Finance and Operations apps](./media/FnO-CDM-Folder-Structure.png)
+![Common Data Model folder structure from Finance and Operations apps.](./media/FnO-CDM-Folder-Structure.png)
 
 For more information about Common Data Model in Data Lake, see [Use the Common Data Model to optimize Azure Data Lake Storage Gen2](/common-data-model/data-lake).
 
@@ -171,7 +171,7 @@ You can drive action by adding contextual gestures to analytical workspaces. The
 
 You can use the ready-made analytical workspaces from Microsoft, partners, and independent software vendors (ISVs) as starting points. Alternatively, if you've built your own Power BI–based analytical reports by using BYOD or your own data warehouse, you can pin them to analytical workspaces. In both cases, you can enrich business processes through in-context reporting that drives action.
 
-![Analytical workspaces](./media/Customers-Love-analyticalWorkspaces.png)
+![Analytical workspaces.](./media/Customers-Love-analyticalWorkspaces.png)
 
 The ready-made analytical workspaces that are part of core Finance and Operations apps (or part of ISV extensions) include reports that are built by using Entity store. Entity store contains *aggregate measurements* (that is, simplified data structures, such as fact tables and dimensions).
 
@@ -195,7 +195,7 @@ Instead of downloading Finance and Operations data from a data lake into your on
 
 You can plan your transition to Data Lake in multiple stages, as shown in the following illustration. Each stage offers business benefits that can be justified on their own. You can use the stages that are shown here as a planning guideline.
 
-![Planning the transition to Data Lake](./media/ADLS-rollout-roadmap.png)
+![Planning the transition to Data Lake.](./media/ADLS-rollout-roadmap.png)
 
 1. **Your current situation:** You might already be using BYOD and analytical workspaces that are based on Entity store.
 2. **Getting easy access to data:** As you gain access to tables, entities, and aggregate measurements in Data Lake, you will be able to retire BYOD and use the data that is readily available. Therefore, management effort and costs can be reduced, as was discussed earlier. You can keep your existing downstream data warehouses and pipelines to manage project scope and budget.

@@ -202,7 +202,7 @@ Before you generate the **Inventory act (INV-11)** report, you must create defer
     8. In the **Deferrals amount** field, select the deferral amount in the default currency.
     9. Close the **Deferrals counting journal line** page.
 
-    ![Deferrals counting journal line page](media/rus-counting-deferrals-01.jpg)
+    ![Deferrals counting journal line page.](media/rus-counting-deferrals-01.jpg)
 
 5. To print the **Inventory act (INV-11)** report, follow these steps:
 

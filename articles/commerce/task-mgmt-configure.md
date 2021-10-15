@@ -49,7 +49,7 @@ To configure task management permissions for store managers, follow these steps.
 
 The following illustration shows how to configure task management permissions for store managers.
 
-![Configuring task management permissions for store managers](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Configuring task management permissions for store managers.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## Configure permissions for employees
 
@@ -83,7 +83,7 @@ To configure POS notifications for tasks, follow these steps.
 
 The following illustration shows the **Task management** operation on the **POS operations** page.
 
-![Task management operation on the POS operations page](media/HQ-POS-Tasks-Notifications.png)
+![Task management operation on the POS operations page.](media/HQ-POS-Tasks-Notifications.png)
 
 For more information about how to configure POS notifications, see [Show order notifications in the point of sale (POS)](notifications-pos.md).
 
@@ -100,7 +100,7 @@ To configure the **Tasks** tile on a POS application home page, follow these ste
 
 The following illustration shows an example of a **Tasks** tile on a POS home page.
 
-![Tasks tile on a POS home page](media/POS-home-screen-tasks-button-image.png)
+![Tasks tile on a POS home page.](media/POS-home-screen-tasks-button-image.png)
 
 ## Additional resources
 

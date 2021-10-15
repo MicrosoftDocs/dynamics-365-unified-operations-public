@@ -106,7 +106,7 @@ The application-specific parameters option lets users establish the criteria for
 
 The following graphic provides an example of the suggested setup. 
 
-![Configuration of parameters](media/apac-th-wht-pndformats-setup1.png)
+![Configuration of parameters.](media/apac-th-wht-pndformats-setup1.png)
 
 Complete the following steps to set up the different lookups that will be used to generate PND files. 
 

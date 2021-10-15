@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Results of machine learning models (preview)
+title: Results of machine learning models
 description: This topic discusses confusion matrices, classification problems, and accuracy in machine learning (ML) models. The purpose is to enhance your understanding of accuracy in ML prediction results.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,10 +26,9 @@ ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
 
 ---
-# Results of machine learning models (preview)
+# Results of machine learning models
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic discusses confusion matrices, classification problems, and accuracy in machine learning (ML) models. The purpose is to enhance your understanding of accuracy in ML prediction results. The target audience includes engineers, analysts, and managers who want to build their knowledge and skills in data science.
 
@@ -38,7 +37,7 @@ After a supervised ML problem is trained on a set of historical data, it's teste
 
 For example, your objective is to predict whether a pet is a dog or a cat, based on some physical and behavioral attributes. If you have a test dataset that contains 30 dogs and 20 cats, the confusion matrix might resemble the following illustration.
 
-![Species prediction example](media/species-prediction-matrix.png)
+![Species prediction example.](media/species-prediction-matrix.png)
 
 The numbers in the green cells represent correct predictions. As you can see, the model predicted a higher percentage of the actual cats correctly. The overall accuracy of the model is easy to calculate. In this case, it's 42 ÷ 50, or 0.84.
 
@@ -48,7 +47,7 @@ Most discussions about the confusion matrix are focused on binary classifiers, a
 
 Next, we will consider a classification problem for a finance scenario that has three states. The model predicts whether a customer invoice will be paid on time, late, or very late. For example, out of 100 test invoices, 50 are paid on time, 35 are paid late, and 15 are paid very late. In this case, a model might produce a confusion matrix that resembles the following illustration.
 
-![Model 1](media/payment-prediction-matrix.png)]
+![Model 1.](media/payment-prediction-matrix.png)]
 
 A confusion matrix provides significantly more information than a simple accuracy metric. However, it's still relatively easy to understand. A confusion matrix tells you whether you have a balanced dataset where the output classes have similar counts. For the multi-class scenario, it tells you how far off a prediction might be when the output classes are ordinal, as in the preceding example about customer payments.
 
@@ -59,7 +58,7 @@ Because accuracy is an easy metric to understand, it's a good starting point for
 
 However, for a more thorough understanding, several challenges that are associated with accuracy should be noted. The usefulness of the metric depends on the context of the problem. A question that often arises in relation to model performance is, "How good is the model?" However, the answer to this question isn't necessarily straightforward. Consider the following confusion matrix (model 2).
 
-![Payment prediction example with a larger sample](media/payment-prediction-matrix-2.png)
+![Payment prediction example with a larger sample.](media/payment-prediction-matrix-2.png)
 
 A quick calculation shows that this model's accuracy is (70 + 10 + 3) ÷ 100, or 0.83. On the surface, this result seems better than result for the previous multi-class model (model 1), which has an accuracy of 0.73. But is it better?
 
@@ -91,7 +90,7 @@ The final consideration in this topic is a more advanced measure of classificati
 
 Before F1 accuracy can be defined, two additional metrics must be introduced: precision and recall. Precision indicates how many of the total number of predictions that are specified as positive are correctly assigned. This metric is also known as the positive predictive value. Recall is the total number of the actual positive cases that were predicted correctly. This metric is also known as sensitivity.
 
-[![True results vs. false results](./media/tn-fn.png)](./media/tn-fn.png)
+[![True results vs. false results.](./media/tn-fn.png)](./media/tn-fn.png)
 
 In the confusion matrix in the preceding illustration, these metrics are calculated in the following way:
 
@@ -104,7 +103,7 @@ The F1 measure combines precision and recall. The result is the harmonic mean of
 
 Let's look at a concrete example. Earlier in this topic, there was an example of a model that predicted whether an animal was a dog or a cat. The illustration is repeated here.
 
-[![Species prediction example (repeated)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Species prediction example (repeated).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Here are the results if "Dog" is used as the positive answer.
 
@@ -118,9 +117,9 @@ Although F1 accuracy isn't as easy to understand, it adds nuance to the basic ac
 
 The [Model accuracy](#model-accuracy) section of this topic compared the following two confusion matrices. Even though the first model had lower accuracy, it was deemed a more useful model because it showed more improvement than the default guess of an on-time payment.
 
-![Payment prediction vs. actuals example](media/payment-prediction-matrix.png)
+![Payment prediction vs. actuals example.](media/payment-prediction-matrix.png)
 
-![Payment prediction example with a larger sample (repeated)](media/payment-prediction-matrix-2.png)
+![Payment prediction example with a larger sample (repeated).](media/payment-prediction-matrix-2.png)
 
 Let's see how these two models compare when the F1 score is used. The F1 score factors in precision and recall for each state, and the F1 macro calculation then averages the F1 score across the states to determine an overall F1 score. There are other F1 variants, but it's of greater interest to consider the macro version, given the equal consideration that is given to all three states.
 

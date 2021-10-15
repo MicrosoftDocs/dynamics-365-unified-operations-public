@@ -57,7 +57,7 @@ The majority of typical, day-to-day page and content authoring activities involv
 
 The following illustration shows how modules are nested inside parent container module slots.
 
-![Nesting modules](../commerce/media/basic-module-nesting.png)
+![Nesting modules.](../commerce/media/basic-module-nesting.png)
 
 ## Add or remove modules
 

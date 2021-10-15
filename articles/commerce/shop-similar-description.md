@@ -84,7 +84,7 @@ To add a **Shop similar description** button to a PDP by using Commerce site bui
 
 The following illustration shows the **Enable shop similar description Link** check box and the **Shop similar description** button on an example PDP in site builder.
 
-![Enable shop similar description Link check box and Shop similar description button on a PDP in site builder](./media/ter_site_builder_buybox_button.png)
+![Enable shop similar description Link check box and Shop similar description button on a PDP in site builder.](./media/ter_site_builder_buybox_button.png)
 
 ## Additional resources
 

@@ -38,7 +38,7 @@ This article provides information about the Section Tiles subpattern. This subpa
 The Section Tiles subpattern is used as part of the Operational Workspace pattern, specifically for the first panorama section (the **Summary** section) that contains a set of tiles, charts, and singleton cards.
 
 ## Wireframe
-[![Wireframe for Section Tiles](./media/sectiontileswireframe.png)](./media/sectiontileswireframe.png)
+[![Wireframe for Section Tiles.](./media/sectiontileswireframe.png)](./media/sectiontileswireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -74,7 +74,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **PurchOrderMaintainWorkspace** (**All workspaces** &gt; **Purchase order preparation** (see the **Summary** section)
 
-[![Section Tiles example](./media/sectiontilesexample.png)](./media/sectiontilesexample.png)
+[![Section Tiles example.](./media/sectiontilesexample.png)](./media/sectiontilesexample.png)
 
 ## Appendix
 ### Frequently asked questions

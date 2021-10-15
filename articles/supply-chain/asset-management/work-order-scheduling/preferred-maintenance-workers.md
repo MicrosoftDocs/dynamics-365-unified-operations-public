@@ -64,7 +64,7 @@ The more selections you make for the same record, the more specific your setup w
 
     [!NOTE] Generally, when a preferred maintenance worker is selected during work order scheduling, Asset Management goes through all **Preferred maintenance workers** records to check for a possible match, always checking the most specific combination first. If no match is found, the "default" record with a selection in either the **Preferred maintenance worker group** field or the **Preferred maintenance worker** field is used.
 
-![Figure 1](media/02-work-order-scheduling.png)
+![Figure 1.](media/02-work-order-scheduling.png)
 
 You can also set up *responsible* maintenance workers who can be selected when a maintenance request or a work order is created. You can edit the selection in **All work orders** and **All maintenance requests**, if required. For more information, see [Responsible maintenance workers](../setup-for-maintenance-requests/responsible-workers.md).
 

@@ -4,7 +4,7 @@
 title: Apply updates and extensions to Commerce Scale Unit (cloud)
 description: This topic shows how to apply updates and extensions to cloud-hosted Commerce channel components.
 author: AamirAllaq
-ms.date: 07/28/2020
+ms.date: 07/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -67,6 +67,9 @@ Both **Apply updates** and **Apply extension** operations will involve a period 
 ## View history
 To view the history of recent operations on a Scale Unit, select **History** on the **Action** tab to open the **Scale Unit History** page. On this page, you can view recent operations such as initialize, service update, quality update, version, extension details, and other relevant information.
 
+## Restart Commerce Scale Unit
+For troubleshooting, Commerce Scale Unit allows self-service restart of the service. Commerce Scale Unit restart can be useful for mitigation of service reliability or performance issues. To restart Commerce Scale Unit, select a Scale Unit and then select **Restart**. A dialog box will display. Select **Restart** to restart the service. Restarting Commerce Scale Unit will close all active connections before restarting. You can also choose an immediate restart by selecting the **Force restart** option. This will immediately close all active connections and initiate a restart.
+
 ## CSU auto-update sequence
 
 > [!NOTE]
@@ -74,7 +77,7 @@ To view the history of recent operations on a Scale Unit, select **History** on 
 
 When CSU is auto-updated by Microsoft, it takes place in the following sequence.
 
-![CSU auto-update sequence](./media/CSU-auto-update-timeline.png)
+![CSU auto-update sequence.](./media/CSU-auto-update-timeline.png)
 
 
 

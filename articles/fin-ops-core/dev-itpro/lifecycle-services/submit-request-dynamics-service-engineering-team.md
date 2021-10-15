@@ -47,15 +47,15 @@ There are two ways to view service requests:
 
 - On the project dashboard, in the **Environments** section, select **Service requests**.
 
-    ![Service requests](./media/submit-service-request-01.png)
+    ![Service requests.](./media/submit-service-request-01.png)
 
 - Select the **Menu** button and select **Work items**. On the **Work items** page select the **Service requests** tab.
 
-    ![Work items](./media/submit-service-request-02.png)
+    ![Work items.](./media/submit-service-request-02.png)
 
 By default, the **Service requests** tab on the **Work items** page lists all requests that are currently active and requests that have been denied. However, you can use the filter options to show canceled and finished requests too.
 
-![Service request list](./media/submit-service-request-03.png)
+![Service request list.](./media/submit-service-request-03.png)
 
 After you submit a request, it has a status of **Requested**. Before the DSE team acts on the request, it might ask for clarification by entering a comment in the **Comment** field. For example, you might receive a comment from the DSE team if you request deployment of a production environment, but the data center differs from the data center where your sandbox environments are deployed. Carefully review the comments, and provide any required clarification in your own comment. To view the details of a specific request, or to submit comments for a service request, select the request ID.
 
@@ -78,7 +78,7 @@ There are two ways to create a service request: automatically and on demand.
     > [!IMPORTANT]
     > If your scheduled time overlaps with a [planned maintenance window](./planned-maintenance-window-faq.md), you will receive the following warning message. 
     >
-    > ![Warning message that explains the maintenance conflict](./media/MaintenanceConflict.png)
+    > ![Warning message that explains the maintenance conflict.](./media/MaintenanceConflict.png)
     >
     > If you choose to continue deploying the package, the package deployment operation will be rolled-back in the event of conflict, as planned maintenance takes priority.
     >

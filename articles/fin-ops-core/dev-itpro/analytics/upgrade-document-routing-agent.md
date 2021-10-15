@@ -44,16 +44,16 @@ IT administrators must perform the following procedures on each domain resource 
 ## Get started
 To continue to run the DRA as a Microsoft Windows service, you must have both the user name and the password of the domain account that is used to run the service. This information must be available after the update is completed. To find the information for the active service account, start the Microsoft Management Console (MMC) Services snap-in, and select **Microsoft Dynamics 365 Document Routing Service** in the list.
 
-![Services snap-in](media/Services_dialog.png)
+![Services snap-in.](media/Services_dialog.png)
 
 ## Uninstall an existing Document Routing Agent
 Open **Programs and Features**, and then find and uninstall **Microsoft Dynamics 365 for Finance and Operations: Document Routing**.
 
-![Uninstall or change a program window](media/Programs_and_Features_dialog.png)
+![Uninstall or change a program window.](media/Programs_and_Features_dialog.png)
 
 During the uninstallation process, if you're prompted to close the Microsoft Dynamics 365 Document Routing Service application, select **Automatically close applications and attempt to restart them after setup is complete.**
 
-![Dialog box that prompts you to close applications](media/Uninstall_DRA_services.png)
+![Dialog box that prompts you to close applications.](media/Uninstall_DRA_services.png)
 
 ## Install the latest Document Routing Agent
 For information about how to install the latest DRA that is available with your subscription, see [Install the Document Routing Agent to enable network printing](install-document-routing-agent.md).

@@ -49,7 +49,7 @@ All the tasks in this topic can be completed in the **USMF** company.
 
 To generate the documents that you plan to add a custom storage location for, [import](er-download-configurations-global-repo.md) the **Fixed asset roll forward** ER format configuration into the current topology.
 
-![Configuration repository page](./media/er-custom-storage-generated-files-import-format.png)
+![Configuration repository page.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## Run the Fixed asset roll forward report
 
@@ -60,7 +60,7 @@ To generate the documents that you plan to add a custom storage location for, [i
 5. In the **Format mapping** field, select **Fixed asset roll forward**.
 6. Select **OK**.
 
-![Runtime dialog box for the Fixed asset roll forward report](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Runtime dialog box for the Fixed asset roll forward report.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 In Microsoft Excel, review the outbound document that is generated and available for download. This behavior is the [default behavior](electronic-reporting-destinations.md#default-behavior) for an ER format that no [destinations](electronic-reporting-destinations.md) are configured for, and that is running in interactive mode.
 
@@ -263,7 +263,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Modify the existing `AssetRollForwardService` class, and write code to set up a custom destination factory for the report runner. Notice that when a custom destination factory is constructed, the application-driven parameter that specifies a target folder is passed. In this way, that target folder is used to store generated files.
 
     > [!NOTE] 
-    > Make sure that the specified folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) exception will be thrown at runtime.
+    > Make sure that the specified folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service. Otherwise, a [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) exception will be thrown at runtime.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

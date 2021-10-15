@@ -49,7 +49,7 @@ This topic provides detailed information about workspaces and the patterns and s
 - Provide visual impact.
 - Be constructed using prescriptive patterns and best practices that lead to minimal COGS and fast response times.
 
-[![Example of a workspace](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png) 
+[![Example of a workspace.](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png) 
 
 To accomplish these goals, the operation workspace pattern was developed.
 

@@ -4,7 +4,7 @@
 title: GB/T 24589-2010 export
 description: This topic explains how to export accounting data to several XML files for a specific period.
 author: anasyash
-ms.date: 04/05/2021
+ms.date: 06/17/2021
 ms.topic: conceptual
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 You can use the GB/T 24589-2010 export feature to export accounting data, including master data and transaction data, to several XML files for a specific period. Authorities or auditors can then import the XML files into their system to audit or verify a company's financial results.
 
@@ -58,7 +57,7 @@ The following table provides more details about the content of each file.
 
 ## Enable the feature for batch processing
 
-In the **Feature management** workspace, enable the feature, **GB/T 24589 running in batch.**
+In the **Feature management** workspace, enable the feature, **(China) GB/T 24589 running in batch.**
 
 ## Import electronic reporting configurations
 
@@ -97,7 +96,7 @@ To set up GB/T 24589-2010 parameters, complete the following steps.
 1. Go to **Organization administration** > **Setup** > **GB/T 24589-2010** to open the **GB/T 24589-2010 parameters** page.
 2. On the **GB/T 24589-2010** tab, on the **Model mapping** FastTab, in the **Name** field, select **GBT24589-2010**.
 
-    ![GBT 24589 2010 parameters ](media/image1.png)
+    ![GBT 24589 2010 parameters .](media/image1.png)
 
 3. On the **Financial statements** tab, select the appropriate financial statements in the following fields:
 
@@ -106,7 +105,7 @@ To set up GB/T 24589-2010 parameters, complete the following steps.
     - **Select financial statement – Cashflow sheet**
     - **Select financial statement – Changes of owner's equity**
 
-    ![GBT 24589 2010 parameters   financial statements](media/image2.png)
+    ![GBT 24589 2010 parameters   financial statements.](media/image2.png)
 
 ## Generate GB/T 24589-2010
 
@@ -117,7 +116,7 @@ To generate GB/T 24589-2010 parameters, complete the following steps.
 1. Go to **General ledger** > **Inquiries and reports** > **Financial reports**.
 2. Select one of the financial statements that you selected in the previous procedure and then select **Generate**.
 
-    ![Generate financial report](media/image3.png)
+    ![Generate financial report.](media/image3.png)
 
 3. Select **Clip** to open the attachments. Verify that the system XML file is attached to the report.
 4. For any financial statements that you selected on the **GB/T 24589-2010 parameters** page, you can select a line on the **Reports** FastTab, and then select **Attach report** to attach the system XML file to the report if the original file is lost or deleted.
@@ -136,7 +135,7 @@ To generate GB/T 24589-2010 parameters, complete the following steps.
 3. On the **Run in the background** FastTab, set **Batch processing** to **Yes** to run the report in batch.
 4. Select **OK**.
 
-    ![GBT 24589 export](media/image4.png)
+    ![GBT 24589 export.](media/image4.png)
 
 5. Go to **Organization administration &gt; Electronic reporting &gt; Electronic reporting jobs**
 6. Select the line and when the job status is marked as **Finished**, select **Show files** to review the generated files.

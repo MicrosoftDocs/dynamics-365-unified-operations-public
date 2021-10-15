@@ -35,7 +35,7 @@ In Dynamics 365 Commerce, the statement posting process is used to account for t
 
 The following illustration shows the statement posting process. In this process, transactions that are recorded in the POS are transmitted to the client by using the Commerce scheduler. After the client receives the transactions, you can create, calculate, and post the transaction statement for the store.
 
-[![Statement posting process](./media/retail-statements.png)](./media/retail-statements.png)
+[![Statement posting process.](./media/retail-statements.png)](./media/retail-statements.png)
 
 ## Creating and posting statements
 

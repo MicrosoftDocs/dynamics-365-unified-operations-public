@@ -3,7 +3,7 @@
 
 title: Map configuration tax types - Customs
 description: This topic explains how to map configuration tax types for customs.
-author: EricWang
+author: EricWangChen
 ms.date: 06/05/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -38,13 +38,13 @@ ms.dyn365.ops.version: 10.0.4
 3. Select the **Customs** node.
 4. On the **Tax type mapping** tab, in the **Tax type** field, select **Customs**.
 
-    ![Customs tax type mapping](media/custom-duty.png)
+    ![Customs tax type mapping.](media/custom-duty.png)
 
 ### Define the tax period
 
 For each node for the tax component, on the **Reporting** tab, in the **Period** field, select a value.
 
-![Reporting period](media/reporting-period.png)
+![Reporting period.](media/reporting-period.png)
 
 ### Define main accounts
 
@@ -57,7 +57,7 @@ For each node for the tax component, on the **Reporting** tab, in the **Period**
     > [!NOTE]
     > The list of accounts is dynamically generated, based on the posting profile from the configuration. The selected main account should have the **Customs** posting type.
 
-    ![Main accounts](media/main-accounts.png)
+    ![Main accounts.](media/main-accounts.png)
 
 6. Select the **IGST CUS** node.
 7. On the **Values** FastTab, in the **Main account** field, select a value.
@@ -65,7 +65,7 @@ For each node for the tax component, on the **Reporting** tab, in the **Period**
     > [!NOTE]
     > The main account that you select for **Customs duty accrual** should be the same account that is selected for the **Customs duty accrual** account for the **GST** \> **IGST** node.
 
-    ![Main account for the IGST CUS node](media/IGST-CUS.png)
+    ![Main account for the IGST CUS node.](media/IGST-CUS.png)
 
 ## GST tax type
 
@@ -76,13 +76,13 @@ For each node for the tax component, on the **Reporting** tab, in the **Period**
 3. Select the **GST** node.
 4. On the **Tax type mapping** tab, in the **Tax type** field, select **GST**.
 
-    ![GST tax type mapping](media/gst-tax-type-mapping.png)
+    ![GST tax type mapping.](media/gst-tax-type-mapping.png)
 
 ### Define the tax period
 
 For each node for the tax component, on the **Reporting** tab, in the **Period** field, select a value.
 
-![GST reporting period](media/gst-reporting-period.png)
+![GST reporting period.](media/gst-reporting-period.png)
 
 ### Define main accounts
 
@@ -94,7 +94,7 @@ For each node for the tax component, on the **Reporting** tab, in the **Period**
     > [!NOTE]
     > The list of accounts is dynamically generated, based on the posting profile from the configuration.
 
-    ![GST main accounts](media/gst-main-accounts.png)
+    ![GST main accounts.](media/gst-main-accounts.png)
 
 > [!NOTE]
 > Tax main accounts can be defined either at the level of the tax type or the level of the tax component. The value at the tax component level overrides the value at the tax type level. If the field is left blank for a posting type at the tax component level, the corresponding value from the tax type level is used for posting. We recommend that you set up the tax accounts at the tax component level per registration.

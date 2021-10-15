@@ -22,7 +22,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # Rebate management parameters
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.18
 
 The **Rebate management parameters** page is used to define settings that apply across the **Rebate management** module. These settings affect posting, status updates, number sequences, and other behavior. The setup on this page is shared across legal entities and can be modified by users who have the appropriate security permissions.
 
-To open the **Rebate management parameters** page, go to **Rebates and deductions \> Setup \> Rebate management parameters**. Then set the fields as described in the following subsections.
+To open the **Rebate management parameters** page, go to **Rebate management \> Setup \> Rebate management parameters**. Then set the fields as described in the following subsections.
 
 ## Rebate management tab
 
@@ -40,12 +40,12 @@ The following table describes the fields that are available on the **Rebate mana
 | Field | Description |
 |---|---|
 | Default status | Select the default status for all new deals. To define the set of status values that is available for selection, use the [**Rebate statuses** page](rebate-statuses.md). |
-| Process by dimension | Select whether provision, rebate, and write-off transactions should be processed by financial dimension. When this option is turned on, the system uses financial dimensions for the source transactions. |
+| Process by dimension | Select whether provision, rebate, and write-off transactions should be processed by financial dimension. When this option is turned on, the system uses financial dimensions from the source transactions in the target transactions. |
 | Check if previously posted | <p>Select the system behavior if unposted rebate transactions are processed more than once for the same period:</p><ul><li>**Warning** – The system allows users to override the original transactions lines, but a warning is shown.</li><li>**Error** – The system prevents users from overriding the original transactions lines, and an error message is shown. |
 | Automatically post journals | Select whether the system should automatically post proposed journals. Those journals include daily journals that are used for provisions and customer deductions, and also vendor tax invoice journals. |
 | Automatically post free text invoices | Select whether the system should automatically post free text invoices. This option applies only to free text invoices where the payment type is set to *Tax invoice customer deductions*. |
-| Rebate item order reference | Select the rebate reference to use on sales and purchase orders that are generated from the rebate process (*None*, *Rebate and deductions deal*, *Rebate and deductions number*, *Rebate transaction number*, or *Document notes*). |
-| Use claim process | <p>Set this option to *Yes* to use a claims process. In this way, you can mark transactions that Rebate management creates as either claimed or unclaimed, and then post only the claimed transactions.</p><p>For example, you calculate rebates for a month's worth of transactions, but the customer has left two days unclaimed. In this case, the unclaimed transactions will be re-created the next time that you run the *Process* function for the same period.</p><p>If you set this option to *No*, all claim transactions are posted.</p> |
+| Rebate item order reference | Select the rebate reference to use on sales orders and purchase orders that are generated from the rebate process (*None*, *Rebate management deal*, *Rebate management number*, *Rebate transaction number*, or *Document notes*). |
+| Use claim process | <p>Set this option to *Yes* to use a claims process. In this way, you can mark transactions that Rebate management creates as either claimed or unclaimed, and then post only the claimed transactions.</p><p>For example, you calculate rebates for a month's worth of transactions, but the customer has left two days unclaimed. In this case, the unclaimed transactions will be re-created the next time that you run the *Process* function for the next period.</p><p>If you set this option to *No*, all claim transactions are posted.</p> |
 | Include order type journal | For deals or deal lines where the transaction type is set to *Order*, this option controls whether a sales order of the *Journal* type should be included. It provides flexibility if those types of orders are used in scenarios where a rebate should not yet apply. |
 
 ## Number sequences tab
@@ -54,8 +54,8 @@ Use the **Number sequences** tab on the **Rebate management parameters** page to
 
 | Reference | Description |
 |---|---|
-| Rebate and deductions deal | The number sequence assigns a unique key value to each rebate deal. This key is used when deals are created. |
-| Rebate and deductions number | The number sequence assigns a unique key value to each rebate. This key is used to identify rebate relationships. |
+| Rebate management deal | The number sequence assigns a unique key value to each rebate deal. This key is used when deals are created. |
+| Rebate management number | The number sequence assigns a unique key value to each rebate. This key is used to identify rebate relationships. |
 | Rebate transaction number | The number sequence assigns a unique key value to each rebate transaction. This key is used to identify rebate transactions. |
 | Tax Invoice | The number sequence assigns a unique key value to each rebate invoice. This key is used when rebate journals are automatically posted. |
 

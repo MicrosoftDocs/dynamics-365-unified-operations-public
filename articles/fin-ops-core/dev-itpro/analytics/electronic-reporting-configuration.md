@@ -74,7 +74,7 @@ GER lets users define electronic format structures, and then describe how those 
 ## Basic concepts
 ### Main data flow
 
-[![GER main data flow](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
+[![GER main data flow.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
 ### Data model configuration creation
 

@@ -76,14 +76,14 @@ POS buttons can now show a count to help workers easily determine which tasks re
 
 The following illustration shows the live content settings in the button grid designer.
 
-![Live content settings in the button grid designer](./media/ButtonGridDesigner.png "Live content settings in the button grid designer")
+![Live content settings in the button grid designer.](./media/ButtonGridDesigner.png "Live content settings in the button grid designer")
 
 To show the notification count on a button, you need to ensure that the correct screen layout is being updated. To determine the screen layout that is being used by the POS, select the **Settings** icon in upper-right corner and note the **Screen layout ID** and **Layout resolution**. Now using Edge browser, go to the **Screen layout** page, find the **Screen layout ID** and **Layout resolution** identified above and select the **Enable live content** check box. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule** and run the 1090 (Registers) job to synchronize layout changes.
 
-![Find the screen layout used by POS](./media/Choose_screen_layout.png "Find the screen layout ")
+![Find the screen layout used by POS.](./media/Choose_screen_layout.png "Find the screen layout ")
 
 The following illustration shows the effect of selecting **Top right** versus **Center** in the **Content alignment** field for buttons of various sizes.
 
-![Live content on POS buttons](./media/ButtonsWithLiveContent.png "Live content on POS buttons")
+![Live content on POS buttons.](./media/ButtonsWithLiveContent.png "Live content on POS buttons")
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

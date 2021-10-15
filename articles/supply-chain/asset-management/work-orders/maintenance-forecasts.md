@@ -107,7 +107,7 @@ To get an overview that shows where the item on the selected line is used in rel
 
 The illustration below shows an example of the **Work order maintenance forecast** page.
 
-![Figure 1](media/06-work-orders.png)
+![Figure 1.](media/06-work-orders.png)
 
 
 ## Automatic update of work order forecasts
@@ -125,7 +125,7 @@ If hour costs, item costs, and expenses are updated in other modules in Microsof
 
 The illustration below shows an example of the **Update work order forecast** dialog.
 
-![Figure 2](media/07-work-orders.png)
+![Figure 2.](media/07-work-orders.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

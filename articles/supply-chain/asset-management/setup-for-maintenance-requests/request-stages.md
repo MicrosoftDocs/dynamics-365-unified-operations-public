@@ -53,7 +53,7 @@ Maintenance request lifecycle states define the stages that a request can go thr
 
 The follow illustration shows an example of the **Maintenance request lifecycle states** page.
 
-![Maintenance request lifecycle states page](media/02-setup-for-requests.png)
+![Maintenance request lifecycle states page.](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Maintenance request lifecycle states, lifecycle state groups, and types are related to, and used in the same way as, work order lifecycle states, lifecycle state groups, and types. 
@@ -71,9 +71,9 @@ After you've created the lifecycle states that are required for your maintenance
 
 5. On the **Lifecycle states** FastTab, select the lifecycle states that should be included in the lifecycle model:
 
-    - To include a lifecycle state in the lifecycle model, select it in the **Lifecycle states remaining** section, and then select the right arrow button ![Right arrow](media/03-setup-for-requests.png) to move it to the **Lifecycle states selected** section.
-    - To include all the available lifecycle states in the lifecycle model, select the **Select all available states** button ![Select all available states](media/04-setup-for-requests.png). All lifecycle states are moved to the **Lifecycle states selected** section.
-    - To remove a lifecycle state from the lifecycle model, select it in the **Lifecycle states selected** section, and then select the left arrow button ![Left arrow](media/05-setup-for-requests.png) to move it to the **Lifecycle states remaining** section.
+    - To include a lifecycle state in the lifecycle model, select it in the **Lifecycle states remaining** section, and then select the right arrow button ![Right arrow.](media/03-setup-for-requests.png) to move it to the **Lifecycle states selected** section.
+    - To include all the available lifecycle states in the lifecycle model, select the **Select all available states** button ![Select all available states.](media/04-setup-for-requests.png). All lifecycle states are moved to the **Lifecycle states selected** section.
+    - To remove a lifecycle state from the lifecycle model, select it in the **Lifecycle states selected** section, and then select the left arrow button ![Left arrow.](media/05-setup-for-requests.png) to move it to the **Lifecycle states remaining** section.
 
 6. On the **General** FastTab, the fields in the **Updates** section are relevant if you use depot repair.
 
@@ -82,7 +82,7 @@ After you've created the lifecycle states that are required for your maintenance
 
 The following illustration shows an example of the **Maintenance request lifecycle models** page.
 
-![Maintenance request lifecycle models page](media/06-setup-for-requests.png)
+![Maintenance request lifecycle models page.](media/06-setup-for-requests.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

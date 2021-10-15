@@ -43,7 +43,7 @@ The System administration utility is a recovery tool for inadvertent print instr
 ## Access the feature
 After the feature has been turned on, a **Preview** group will appear on the **Options** tab of the Action Pane on the **Manage network printers** page.
 
-![Preview group on the Action Pane](./media/network-printer-01.png)
+![Preview group on the Action Pane.](./media/network-printer-01.png)
 
 1. Select **Organization administration** > **Setup** > **Network printers**.
 2. On the Action Pane, in the **Preview** group, select **System network printers**.

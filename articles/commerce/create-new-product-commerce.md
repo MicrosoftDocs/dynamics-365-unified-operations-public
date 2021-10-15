@@ -53,13 +53,13 @@ A product is primarily defined by a product number, name, and description. Howev
 
 The following image shows an example product being added.
 
-![Create a product](media/create-new-product.png)
+![Create a product.](media/create-new-product.png)
 
 Once a product is added, additional data can be set for it, such as **Product description**, **Variant groups**, **Dimension groups**, **Product attributes**, and **Related products**.
 
 The following image shows a product's additional details.
 
-![Product details](media/create-new-product-2.png)
+![Product details.](media/create-new-product-2.png)
 
 ### Create product variants
 
@@ -78,23 +78,23 @@ To sell a product it must first be released to a legal entity.
 
 1. From the product page, select **Release products**.
 
-    ![Release product](media/create-new-product-3.png)
+    ![Release product.](media/create-new-product-3.png)
 
 1. Select the product to release, and then select **Next**.
 
-    ![Choose product to release](media/create-new-product-4.png)
+    ![Choose product to release.](media/create-new-product-4.png)
 
 1. Select the set of product variants to release, and then select **Next**.
 
-    ![Choose variants to release](media/create-new-product-5.png)
+    ![Choose variants to release.](media/create-new-product-5.png)
 
 1. Select the legal entity, and then select **Next**.
 
-    ![Choose legal entity](media/create-new-product-6.png)
+    ![Choose legal entity.](media/create-new-product-6.png)
 
 1. Select **Finish**.
 
-    ![Finish product release](media/create-new-product-7.png)
+    ![Finish product release.](media/create-new-product-7.png)
 
 ## Configure a released product
 
@@ -109,7 +109,7 @@ Once a product is released, it will then require further configuration that incl
 
 The following image shows an example configuration for a released product.
 
-![Configure released product](media/create-new-product-8.png)
+![Configure released product.](media/create-new-product-8.png)
 
 ## Additional resources
 

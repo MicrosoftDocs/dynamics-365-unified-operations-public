@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Commerce version 10.0.13 and later includes a feature cal
 
 This setting is also supported for orders that are created in the call center and stores.
 
-![Setting the Calculate price inclusive tax exempt option to adjust prices in tax-exempt scenarios](media/CalcPriceInc.png)
+![Setting the Calculate price inclusive tax exempt option to adjust prices in tax-exempt scenarios.](media/CalcPriceInc.png)
 
 ## Set up price reductions for tax exemptions
 

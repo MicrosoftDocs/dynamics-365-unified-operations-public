@@ -68,7 +68,7 @@ The current implementation of this functionality has the following limitations:
 7. In the **Kind of inventory** field, specify **Common**.
 8. Select **Save**.
 
-![Inventory profiles page](media/1_Inventory_profiles.jpg)
+![Inventory profiles page.](media/1_Inventory_profiles.jpg)
 
 ### Set up the Inventory profile and Owner tracking dimensions
 
@@ -83,7 +83,7 @@ The current implementation of this functionality has the following limitations:
 
 6. Select **Save**.
 
-![Tracking dimension groups page](media/2_Tracking_dimension_groups.jpg)
+![Tracking dimension groups page.](media/2_Tracking_dimension_groups.jpg)
 
 ### Set up a number sequence for the report for the principal
 

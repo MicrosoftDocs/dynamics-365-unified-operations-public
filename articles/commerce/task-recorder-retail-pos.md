@@ -59,14 +59,14 @@ Follow these steps to create a new recording using Task recorder.
 1. Start Retail Modern POS or Cloud POS, and sign in.
 2. On the **Settings** page, in the **Task Recorder** section, click **Open task recorder**. The **Task recorder** pane appears. You can click the **Close** button (**X**) in the upper-right corner to close the **Task recorder** pane before you begin a new recording. To reopen the pane, repeat step 2.
 
-    [![Task recorder pane](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
+    [![Task recorder pane.](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
 3. Enter a name and description for the recording, and then click **Start**. The recording session begins as soon as you click **Start**.
 
     > [!NOTE]
     > If you click the **Close** button (**X**) in the upper-right corner while recording is in progress, the **Task recorder** pane is closed, but the recording session isn't ended. To reopen the Task recorder pane, click the **Help** button (question mark) at the top of the screen.
     >
-    > [![Question mark](./media/help.jpg)](./media/help.jpg)
+    > [![Question mark.](./media/help.jpg)](./media/help.jpg)
 
 4. After you click **Start**, Task recorder enters recording mode. The **Task recorder** pane shows information and controls that are related to the recording process.
 5. Perform the actions that you want to perform in the Retail Modern POS or Cloud POS user interface (UI).
@@ -76,7 +76,7 @@ Follow these steps to create a new recording using Task recorder.
 
 After you end the recording session, several options are shown, so that you can download your recording.
 
-[![Download options](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+[![Download options.](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
 
 ### Save to this PC
 
@@ -92,7 +92,7 @@ The raw recording file will be useful for developer scenarios such as test code 
 
 ## Recording controls
 
-[![Recording controls](./media/controls.jpg)](./media/controls.jpg)
+[![Recording controls.](./media/controls.jpg)](./media/controls.jpg)
 
 ### Stop
 
@@ -121,13 +121,13 @@ You can specify the beginning and end of a set of grouped steps by using the **S
 
 An annotation is additional text that you add to a step in a recording. For example, you can use annotations to give the user more context or instructions. You can add annotations before or after a step. You can add an annotation to any step by clicking the **Edit** button (pencil symbol) to the right of the step.
 
-[![Edit button for a step](./media/annotate.jpg)](./media/annotate.jpg)
+[![Edit button for a step.](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### Texts and notes
 
 You can use the **Texts** and **Notes** fields to add text that should be associated with a step in a Task guide.
 
-[![Text and Notes fields](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
+[![Text and Notes fields.](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
 
 #### Text
 
@@ -141,7 +141,7 @@ Text that you enter in the **Notes** field appears *below* the step text in the 
 
 To show your own custom task recordings in the Help pane of Retail Modern POS and Cloud POS so that they can be viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connecting the Help system](../fin-ops-core/fin-ops/get-started/help-connect.md). Retail Modern POS and Cloud POS Help searches LCS in real time. It searches across all the BPM libraries that are selected in the Commerce Help system parameters and shows the relevant results. To access the **Help** menu, click the **Help** button (question mark) at the top of the screen and then in the search box type your process name and hit the search button.
 
-[![Help button](./media/help.jpg)](./media/help.jpg)
+[![Help button.](./media/help.jpg)](./media/help.jpg)
 
 When you click a Task guide in the search results, you can either view the steps as a Help topic or export the steps to a Word document.
 

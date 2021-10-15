@@ -80,7 +80,7 @@ GET https://lcsapi.lcs.dynamics.com/databasemovement/v1/databases
 5. Under **API permissions**, select **Add a permission**. Then, on the **APIs my organization uses** tab, search for **Dynamics Lifecycle services**, and add the **user\_impersonation** permission to your app.
 6. Select **Register**.
 
-[![Registering a new app in the Azure portal](../media/new-app-registration-expanded.png)](../media/new-app-registration-expanded.png#lightbox)
+[![Registering a new app in the Azure portal.](../media/new-app-registration-expanded.png)](../media/new-app-registration-expanded.png#lightbox)
 
 Azure AD assigns a unique application ID (client ID) to your app, and you're taken to the **Overview** page for your app. To add more capabilities to your app, you can select other configuration options, such as options for branding, and for certificates and secrets.
 

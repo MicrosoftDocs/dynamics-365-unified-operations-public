@@ -54,11 +54,11 @@ To optimize the performance of the **Inventory balance turnover** inquiry, use t
 2. On the **Calculation on-hand inventory on date** page, on the **Parameters** tab, in the **Date of on-hand calculation** field, specify the inventory closing date for which the inventory calculation must be performed. By default, this is the first date the inventory was closed without an inventory calculation.
 3. Set the **Update calculation** toggle to **Yes** if you want to clear the results of the previous inventory calculation on the specified inventory closing date and perform a full inventory calculation.
 
-    ![Calculation on-hand inventory on date page](media/1_Calculation_on-hand_inventory_on_date.png)
+    ![Calculation on-hand inventory on date page.](media/1_Calculation_on-hand_inventory_on_date.png)
 
 4. When the inventory calculation is complete, on the **Closing and adjustment** page, for the corresponding inventory closure line, on the **Session** tab, the **Calculation on-hand inventory on date** option will be set to **Yes**.
 
-    ![Closing and adjustment page](media/2_Closing_and_adjustment.png)
+    ![Closing and adjustment page.](media/2_Closing_and_adjustment.png)
 
 If you try to run the inventory calculation again to close an inventory that has the **Calculation on-hand inventory on date** option set to **Yes**, and the **Update calculation** option is set to **No**, an error will occur.
 
@@ -68,7 +68,7 @@ The results of the on-hand inventory calculation on the inventory closing date a
 
 1. Go to **Inventory management** \> **Inquires and reports** \> **Transactional reports (Russia)** \> **Inventory balance turnover**.
 
-    ![Inventory balance turnover page](media/3_Inventory_balance_turnover.png)
+    ![Inventory balance turnover page.](media/3_Inventory_balance_turnover.png)
 
 2. On the **Inventory balance turnover** dialog box, on the **General** tab, in the **Start date** and **To date** fields, specify the period of report.
 3. Set the **Expand turnovers** option to **Yes** to divide the turnover columns into two groups in the inquiry results:
@@ -109,7 +109,7 @@ The results of the on-hand inventory calculation on the inventory closing date a
 7. Set the **Show item name** option to **Yes** to view the product name in addition to the product code.
 8. On the **Dimensions** tab, select dimensions to include in the report.
 
-    ![Inventory balance turnover report, Dimensions tab](media/4_Inventory_balance_turnover.png)
+    ![Inventory balance turnover report, Dimensions tab.](media/4_Inventory_balance_turnover.png)
 
     The following dimensions are available:
     
@@ -140,7 +140,7 @@ The results of the on-hand inventory calculation on the inventory closing date a
 9. On the **Records to include** tab, use the filter to define the transactions to include in the report.
 10. Click **OK** to generate a report.
 
-    ![Inventory balance turnover report, Standard view](media/5_Inventory_balance_turnover.png)
+    ![Inventory balance turnover report, Standard view.](media/5_Inventory_balance_turnover.png)
 
 > [!NOTE]
 > In the **Line type** column, you can see the type of the line: **Transactions** or **Totals**
@@ -172,13 +172,13 @@ When calculating data for an **Inventory balance turnover** inquiry, the system 
 
 1. Go to **Inventory management** \> **Periodic tasks** \> **Clean up** \> **On-hand inventory calculation on date**.
 
-    ![Clean up on-hand inventory calculation on date page](media/6_Cleanup_on-hand_inventory_calculation_on_date.png)
+    ![Clean up on-hand inventory calculation on date page.](media/6_Cleanup_on-hand_inventory_calculation_on_date.png)
 
 2. On the **Parameters** FastTab, in the **Created until** field, specify the date. The temporary data with a creation date before the specified date will be deleted. Specify the date equal to current date minus one (1) day to avoid deleting the data currently used by another user.
 3. Select **OK**.
 4. Go to **Organization administration** \> **Periodic** \> **Record references cleanup**.
 
-    ![Record references clean up page](media/7_Record_references_cleanup.png)
+    ![Record references clean up page.](media/7_Record_references_cleanup.png)
 
 5. On the **Parameters** FastTab, in the **Created until** field, specify the date. All temporary data with creation date before the specified date will be deleted.
 6. Select **OK**.
@@ -189,7 +189,7 @@ This report displays receipts and issues for all items.
 
 1. Go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Pay-sheet of receipts and reports expenditure**.
 
-    ![Pay-sheet of receipts and reports expediture report](media/8_Pay-sheet_of_receipts_and_expenditure.png)
+    ![Pay-sheet of receipts and reports expediture report.](media/8_Pay-sheet_of_receipts_and_expenditure.png)
 
 2.  On the **Pay-sheet of receipts and expenditure** dialog box, on the **Parameters** FastTab, specify the value of **Exclude storno** parameter:
 
@@ -199,13 +199,13 @@ This report displays receipts and issues for all items.
 3. On the **Records to include** FastTab, select the **Filter** to apply filters for the report.
 4. Select **OK** to generate a report.
 
-    ![Generated Pay-sheet of receipts and reports expediture report](media/9_Pay-sheet_of_receipts_and_expenditure.png)
+    ![Generated Pay-sheet of receipts and reports expediture report.](media/9_Pay-sheet_of_receipts_and_expenditure.png)
 
 ## Adjustments report
 
 This report shows all adjustments that were done during the inventory recalculation or closing. To do this, go to **Inventory management** \> **Inquires and reports** \> **Transactional reports** \> **Adjustments**. Specify the parameters, and then select **OK** to generate a report.
 
-![Generated Adjustments report](media/10_Adjustments.png)
+![Generated Adjustments report.](media/10_Adjustments.png)
 
 ## Adjustments in currency report
 

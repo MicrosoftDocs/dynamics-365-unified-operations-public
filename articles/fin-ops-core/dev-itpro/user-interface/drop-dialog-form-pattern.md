@@ -43,11 +43,11 @@ The Drop Dialog pattern is used to initiate actions when the number of fields is
 ## Wireframe
 ### Drop dialog (basic)
 
-[![Basic Drop dialog pattern](./media/dropdialog1.png)](./media/dropdialog1.png)
+[![Basic Drop dialog pattern.](./media/dropdialog1.png)](./media/dropdialog1.png)
 
 ### Drop dialog (read only)
 
-[![Read-only Drop dialog pattern](./media/dropdialog2.png)](./media/dropdialog2.png)
+[![Read-only Drop dialog pattern.](./media/dropdialog2.png)](./media/dropdialog2.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -132,7 +132,7 @@ A Drop dialog should **not** have the following:
 
 Form: **CustCollectionsNewActivityAction** (Click **Accounts receivable** &gt; **Common** &gt; **Collections** &gt; **Collections**, select a row to move to details, and then click **Action**.) 
 
-[![Example of basic Drop dialog](./media/dropdialog3.png)](./media/dropdialog3.png)
+[![Example of basic Drop dialog.](./media/dropdialog3.png)](./media/dropdialog3.png)
 
 ### Drop dialog (read only)
 
@@ -152,7 +152,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![Example of Drop dialog](./media/dropdialog4.png)](./media/dropdialog4.png)
+[![Example of Drop dialog.](./media/dropdialog4.png)](./media/dropdialog4.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

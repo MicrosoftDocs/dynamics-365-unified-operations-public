@@ -43,11 +43,11 @@ In the **Feature management** workspace, turn on the following feature: **Genera
     - **Accounting currency** – Print the report amounts in the accounting currency.
     - **Sales tax code currency** – Print the report amounts in the currencies of sales tax codes.
 
-    ![Sales tax payment by code dialog box](media/Sales-tax-payment-by-code.png)
+    ![Sales tax payment by code dialog box.](media/Sales-tax-payment-by-code.png)
 
 The following illustration shows an example of the report that is generated. The report shows that reporting code **101** has the **EUR** currency if the **Sales tax currency** field is set to **EUR** for the sales tax code that the reporting code is assigned to.
 
-![Example of the Sales tax payment by code report](media/Sales-tax-payment-by-code-2.png)
+![Example of the Sales tax payment by code report.](media/Sales-tax-payment-by-code-2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

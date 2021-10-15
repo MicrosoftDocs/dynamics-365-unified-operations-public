@@ -52,24 +52,24 @@ To upload a site configuration package by using LCS, follow these steps.
 
 1. Go to <https://lcs.dynamics.com>. (Alternatively, if you're using the test integration LCS server, go to <https://lcs.tie.dynamics.com>). You should see a sign-in page that resembles the following illustration.
 
-    ![LCS sign-in page](media/lcs-deploy-1.png)
+    ![LCS sign-in page.](media/lcs-deploy-1.png)
 
 1. Select **Sign in**, and enter your LCS-provided account credentials. The main dashboard appears.
 
-    ![LCS main dashboard](media/lcs-deploy-2.png)
+    ![LCS main dashboard.](media/lcs-deploy-2.png)
 
 1. Select the e-Commerce project that you will be using. The project dashboard appears.
 
-    ![LCS project dashboard](media/lcs-deploy-3.png)
+    ![LCS project dashboard.](media/lcs-deploy-3.png)
 
 1. Scroll to the right to see more options.
 
-    ![LCS options when scrolling to the right](media/lcs-deploy-4.png)
+    ![LCS options when scrolling to the right.](media/lcs-deploy-4.png)
 
 1. To upload the package, in the **More tools** section, select the **Asset Library** tile.
 1. On the **Asset library** page, in the left pane, select the **e-Commerce package** tab. If you don't see the **e-Commerce package** tab, you must enable e-Commerce features. Contact your Microsoft Commerce representative to obtain the required code.
 
-    ![LCS asset library](media/lcs-deploy-5.png)
+    ![LCS asset library.](media/lcs-deploy-5.png)
 
 1. Select the plus sign (+).
 1. In the **Upload e-Commerce package file** dialog box, enter a name and description for the package, and then select **Add a file**.
@@ -86,11 +86,11 @@ To upload a site configuration package by using LCS, follow these steps.
 
 While the upload is being processed, you might have to refresh the page to see status updates. The processing can take between 45 and 50 minutes. When it's completed, a success or failure message is shown.
 
-![Upload being processed in LCS asset library](media/lcs-deploy-9.png)
+![Upload being processed in LCS asset library.](media/lcs-deploy-9.png)
 
 If the processing was successfully completed, a check mark appears in the **Valid** column.
 
-![Upload successfully processed in LCS asset library](media/lcs-deploy-10.png)
+![Upload successfully processed in LCS asset library.](media/lcs-deploy-10.png)
 
 ## Deploy a package
 
@@ -98,7 +98,7 @@ To deploy a package, follow these steps.
 
 1. In LCS, go to the project dashboard, and select the environment that you want to deploy a package to. For example, in the following illustration, the **RushE2E-TIE-SB3** pre-production environment is selected.
 
-    ![Selecting an environment in the LCS project dashboard](media/lcs-deploy-11.png)
+    ![Selecting an environment in the LCS project dashboard.](media/lcs-deploy-11.png)
 
 1. In the **Environment features** section on the right side of the page, select **Manage**.
 
@@ -106,7 +106,7 @@ To deploy a package, follow these steps.
 
 1. Select the **E-Commerce (Preview)** tab.
 
-    !["E-Commerce (Preview)" tab in LCS project dashboard](media/lcs-deploy-13.png)
+    !["E-Commerce (Preview)" tab in LCS project dashboard.](media/lcs-deploy-13.png)
 
 1. Select **Apply extension** to select the package to deploy.
 

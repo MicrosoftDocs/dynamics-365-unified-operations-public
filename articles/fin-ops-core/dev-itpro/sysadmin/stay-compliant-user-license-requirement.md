@@ -49,7 +49,7 @@ The rest of this topic describes the various tools that you can use to ensure th
 
 You assign roles to users on the **Users** page (**System administration \> Users**). You can view license requirements for each role in the **Roles for selected user** FactBox.
 
-![Roles for selected user FactBox on the Users page](media/UsersRoles.png)
+![Roles for selected user FactBox on the Users page.](media/UsersRoles.png)
 
 The maximum license requirement determines the actual licensing requirement for a user. If any license requirement is identified as **Operations**, you must use the [User license estimator](#user-license-estimator-report) report to determine the full user licensing requirements.
 
@@ -60,7 +60,7 @@ The maximum license requirement determines the actual licensing requirement for 
 
 During security configuration on the **Configure security** page (**System administration \> Security \> Configure security**), you can select any security object, a role, duty, or permissions, and then select **View permissions** to view all permissions that are currently included and their licensing requirements. The header of the **View permissions** page shows the required license level.
 
-![View permissions page](media/ViewPermissons.png)
+![View permissions page.](media/ViewPermissons.png)
 
 > [!NOTE]
 > Starting with platform update for version 10.0.15, the required license types are extended to include application specific license types such as Commerce, Finance, and Supply Chain Management. This extension makes it possible to identify the specific security objects that determine the actual license requirements while also configuring security. More than one value can be displayed for the required license type. 
@@ -69,7 +69,7 @@ During security configuration on the **Configure security** page (**System admin
 
 The **User license counts** report (**System administration \> Inquiries \> License**) is used to get a count of required licenses per license type (for example, **Team members**, **Activity**, and **Operations**).
 
-![User license counts report](media/UserLicenseCountsReport.png)
+![User license counts report.](media/UserLicenseCountsReport.png)
 
 The report also provides details about each user and the licensing requirements for each assigned role. Users are listed under the highest license type. If the license requirement is identified as **Operations**, you must use the [User license estimator](#user-license-estimator-report) report to determine the specific full user licensing requirements.
 
@@ -84,7 +84,7 @@ If the previously mentioned tools have identified that any users require a licen
 
 If no privileges that require a specific full user license have been assigned to a user, that user is shown, but no specific full user licenses are marked. That user will be compliant with any full user license that is assigned. In the example in the following illustration, the **Database management administrator** role is assigned to a user, and no other roles that require a license of the **Operations** type are assigned.
 
-![User license estimator report](media/LicenseGuide.png)
+![User license estimator report.](media/LicenseGuide.png)
 
 Based on the licensing guide, this user is compliant with any full user license.
 
@@ -92,15 +92,15 @@ Admin rights apply across the Finance, Supply Chain Management, and Commerce app
 
 This principle might apply to several roles that are provided by Microsoft and customizations, based on the included privileges. No specific license is indicated for these users on the **User license estimator** report.
 
-![User that any full user license is required for](media/UserLicenseEstimatorClaire.png)
+![User that any full user license is required for.](media/UserLicenseEstimatorClaire.png)
 
 Alternatively, if privileges that require a specific full user license have been assigned to a user, that license is indicated when you look at the licenses that are assigned to the user. In the example in the following illustration, the user must have a *base* license for Supply Chain Management.
 
-![User that a specific full user license is required for](media/UserLicenseEstimatorAlica.png)
+![User that a specific full user license is required for.](media/UserLicenseEstimatorAlica.png)
 
 If privileges that require more than one specific full user license have been assigned to a user, those licenses are indicated when you look at the licenses that are assigned to the user. In this case, the user must have a *base* license for one of the licenses and an *attach* license for all other full user licenses that are required. In the example in the following illustration, the user must have either a *base* license for Finance and an *attach* license for Supply Chain Management, or a *base* license for Supply Chain Management and an *attach* license for Finance.
 
-![User that more than one specific full user license is required for](media/UserLicenseEstimatorCassie.png)
+![User that more than one specific full user license is required for.](media/UserLicenseEstimatorCassie.png)
 
 The totals per specific full user license counts aren't divided into *base* licenses and *attach* licenses.
 
@@ -111,7 +111,7 @@ The totals per specific full user license counts aren't divided into *base* lice
 
 For information about how to buy and license Finance and Operations apps, see [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
-For information about how to assign licenses to users in the Microsoft 365 admin center, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
+For information about how to assign licenses to users in the Microsoft 365 admin center, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 Additional user licenses are required when multiple implementation projects exist for the same tenant. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#licensing-requirements).
 

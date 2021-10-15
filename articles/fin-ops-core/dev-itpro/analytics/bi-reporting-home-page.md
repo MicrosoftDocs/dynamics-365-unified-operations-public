@@ -17,7 +17,7 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 27681
+ms.custom: ["27681", "intro-internal"]
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 # ms.search.industry: 
@@ -43,7 +43,7 @@ Workspaces can use rich infographics and visuals that are supported by Microsoft
 
 Users can interact with data by clicking or touching visuals on the page. They can see cause and effect, and do simple what-if operations without leaving the workspace. Thanks to stunning, interactive visuals, your users will have fun exploring data and discovering hidden trends.
 
-![Example of Power BI in a workspace](./media/Power-BI-in-D365-Workspace.png)
+![Example of Power BI in a workspace.](./media/Power-BI-in-D365-Workspace.png)
 
 To learn more, see the following topics:
 
@@ -56,7 +56,7 @@ To learn more, see the following topics:
 ## Business documents and printing
 Reporting solutions are often used to capture and communicate the details of business transactions. Therefore, a reporting solution must be able to produce physical manifestations of business data by using existing devices, such as network printers. Examples of business documents include sales invoices, customer statements, and checks.
 
-[![Example of business documents](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
+[![Example of business documents.](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
 To learn more, see the following topics:
 
@@ -67,7 +67,7 @@ To learn more, see the following topics:
 ## Electronic reporting
 Electronic reporting (ER) is the tool that you use to configure electronic document formats that comply with the legal requirements of various countries or regions. The applications of electronic reporting include financial auditing, tax reporting, and electronic invoicing.
 
-[![Electronic reporting example](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
+[![Electronic reporting example.](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
 To learn more, see the following topics:
 
@@ -78,7 +78,7 @@ To learn more, see the following topics:
 ## Financial reporting
 Standard financial reports are provided that use the default main account categories. You can use the report designer to create or modify traditional financial statements, such as income statements and balance sheets. You can then share the results with other members of your organization. Examples of financial reporting include balance sheets, cash flow, and summary trial balance year over year.
 
-[![Financial reporting example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
+[![Financial reporting example.](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 
 To learn more, see the following topics:
 

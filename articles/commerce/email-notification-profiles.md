@@ -63,7 +63,7 @@ To create an email template, follow these steps.
 
 The following image shows some example email template settings.
 
-![Email template settings](media/email-template.png)
+![Email template settings.](media/email-template.png)
 
 ### Create an email event
 
@@ -78,7 +78,7 @@ To create an email event, follow these steps.
 
 The following image shows some example event notification settings.
 
-![Event notification settings](media/email-notification-profile.png)
+![Event notification settings.](media/email-notification-profile.png)
 
 ### Next steps
 

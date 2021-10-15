@@ -70,7 +70,7 @@ The **Segments** and **Allowed values details** section provides a grid like exp
 
 The **Allowed value details** section guides you through creating criteria using **Operators** such as begins with, is between, includes, and many others.
 
-[![Allow values](./media/account.png)](./media/account.png) 
+[![Allow values.](./media/account.png)](./media/account.png) 
 
 Allowed values will default onto a journal or accounting distribution entry page when there are no other possible values to select according to the account structure setup.
 

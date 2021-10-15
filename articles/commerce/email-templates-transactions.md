@@ -4,7 +4,7 @@
 title: Create email templates for transactional events 
 description: This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](includes/banner.md)]
 
 This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 Dynamics 365 Commerce provides an out-of-box solution for sending emails that alert customers about transactional events (for example, when an order is placed, an order is ready for pickup, or an order has been shipped). This topic describes the steps for creating, uploading, and configuring the email templates that are used to send transactional emails.
 
@@ -83,26 +81,33 @@ The following placeholders retrieve and show data that is defined at the sales o
 | Placeholder name     | Placeholder value                                            |
 | -------------------- | ------------------------------------------------------------ |
 | customername         | The name of the customer who placed the order.               |
-| salesid              | The sales ID of the order.                                   |
-| deliveryaddress      | The delivery address for shipped orders.                     |
 | customeraddress      | The address of the customer.                                 |
 | customeremailaddress | The email address that the customer entered at checkout.     |
+| salesid              | The sales ID of the order.                                   |
+| orderconfirmationid  | The cross-channel ID that was generated at order creation. |
+| channelid            | The ID of the retail or online channel that the order was placed through. |
+| deliveryname         | The name that is specified for the delivery address.        |
+| deliveryaddress      | The delivery address for shipped orders.                     |
 | deliverydate         | The delivery date.                                           |
 | shipdate             | The ship date.                                               |
 | modeofdelivery       | The delivery mode of the order.                              |
+| ordernetamount       | The total amount for the order, minus the total tax.         |
+| discount             | The total discount for the order.                            |
 | charges              | The total charges for the order.                             |
 | tax                  | The total tax for the order.                                 |
 | total                | The total amount for the order.                              |
-| ordernetamount       | The total amount for the order, minus the total tax.         |
-| discount             | The total discount for the order.                            |
 | storename            | The name of the store where the order was placed.            |
 | storeaddress         | The address of the store that placed the order.              |
 | storeopenfrom        | The opening time of the store that placed the order.         |
 | storeopento          | The closing time of the store that placed the order.         |
-| pickupstorename      | The name of the store where the order will be picked up.     |
-| pickupstoreaddress   | The address of the store where the order will be picked up.  |
-| pickupopenstorefrom  | The opening time of the store where the order will be picked up. |
-| pickupopenstoreto    | The closing time of the store where the order will be picked up. |
+| pickupstorename      | The name of the store where the order will be picked up.\* |
+| pickupstoreaddress   | The address of the store where the order will be picked up.\* |
+| pickupopenstorefrom  | The opening time of the store where the order will be picked up.\* |
+| pickupopenstoreto    | The closing time of the store where the order will be picked up.\* |
+| pickupchannelid      | The channel ID of the store that is specified for a pickup mode of delivery.\* |
+| packingslipid        | The ID of the packing slip that was generated when lines in an order were packed.\* |
+
+\* These placeholders return data only when they are used for the **Order ready for pickup** notification type. 
 
 ### Order line placeholders (sales line level)
 
@@ -110,7 +115,10 @@ The following placeholders retrieve and show data for individual products (lines
 
 | Placeholder name               | Placeholder value |
 |--------------------------------|-------------------|
-| productid                      | The product ID for the line. |
+| productid                      | <p>The ID of the product. This ID accounts for variants.</p><p><strong>Note:</strong> This placeholder has been deprecated in favor of **lineproductrecid**.</p> |
+| lineproductrecid               | The ID of the product. This ID accounts for variants. It uniquely identifies an item at the variant level. |
+| lineitemid                     | The product-level ID of the product. (This ID doesn't account for variants.) |
+| lineproductvariantid           | The ID of the product variant. |
 | lineproductname                | The name of the product. |
 | lineproductdescription         | The description of the product. |
 | linequantity                   | The number of units that were ordered for the line, plus the unit of measure (for example, **ea**, or **pair**). |
@@ -129,6 +137,8 @@ The following placeholders retrieve and show data for individual products (lines
 | linedeliverydate               | The delivery date for the line. |
 | linedeliverymode               | The delivery mode for the line. |
 | linedeliveryaddress            | The delivery address for the line. |
+| linepickupdate                 | The pickup date that the customer specified, for orders that use a pickup mode of delivery. |
+| linepickuptimeslot             | The pickup time range that the customer specified, for orders that use a pickup mode of delivery. |
 | giftcardnumber                 | The gift card number, for products of the gift card type. |
 | giftcardbalance                | The gift card balance, for products of the gift card type. |
 | giftcardmessage                | The gift card message, for products of the gift card type. |

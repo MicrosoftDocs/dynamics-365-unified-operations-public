@@ -46,7 +46,7 @@ Three container modules are supported: container, container with 2-slots, and co
 
 The following image shows an example of a container module that contains a carousel module in Commerce site builder. In this example, the **Width** property of the container module is set to **Fill Screen**.
 
-![Example of a container module](./media/ecommerce-container.PNG)
+![Example of a container module.](./media/ecommerce-container.PNG)
 
 ## Container module properties
 

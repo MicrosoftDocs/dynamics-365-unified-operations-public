@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 97423
+ms.custom: ["97423", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -103,7 +103,7 @@ When Electronic invoicing is installed from LCS, and the required setup is compl
 
 The following illustration shows how data flows to and from Electronic invoicing.
 
-![Data flow for Electronic invoicing](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Data flow for Electronic invoicing.](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## Privacy notice
 Enabling and using Electronic invoicing may require sending limited data, which includes the organization tax registration ID. This will be transmitted to third-party agencies authorized by the tax authorities for purposes of sending electronic invoices in the predefined formats required for integration with these government’s web services. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.

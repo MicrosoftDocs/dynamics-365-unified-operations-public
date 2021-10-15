@@ -63,11 +63,11 @@ The ER formula designer can be used to define an expression that transforms data
 
 The following illustration shows the design of an expression of this type. In this example, the expression rounds the value of the **Intrastat.AmountMST** field in the Intrastat table to two decimal places and then returns the rounded value.
 
-[![Data binding expression](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
+[![Data binding expression.](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
 The following illustration shows how an expression of this type can be used. In this example, the result of the designed expression is entered in the **Transaction.InvoicedAmount** component of the **Tax reporting model** data model.
 
-[![Data binding expression being used](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
+[![Data binding expression being used.](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
 
 At runtime, the designed formula, `ROUND (Intrastat.AmountMST, 2)`, rounds the value of the **AmountMST** field for each record in the Intrastat table to two decimal places. It then enters the rounded value in the **Transaction.InvoicedAmount** component of the **Tax reporting** data model.
 
@@ -77,17 +77,17 @@ The ER formula designer can be used to define an expression that formats data th
 
 The following illustration shows the design of a transformation of this type. In this example, the **TrimmedString** transformation truncates incoming data of the *String* data type by removing leading and trailing spaces. It then returns the truncated string value.
 
-[![Transformation](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
+[![Transformation.](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
 The following illustration shows how a transformation of this type can be used. In this example, several format components send text as output to the generating electronic document at runtime. All these format components refer to the **TrimmedString** transformation by name.
 
-[![Transformation being used](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
+[![Transformation being used.](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
 
 When format components, such as the **partyName** component in the preceding illustration, refer to the **TrimmedString** transformation, the transformation sends text as output to the generating electronic document. This text doesn't include leading and trailing spaces.
 
 If you have formatting that must be applied individually, you can introduce that formatting as an individual expression of a binding of a specific format component. The following illustration shows an expression of this type. In this example, the **partyType** format component is bound to the data source via an expression that converts incoming data from the **Model.Company.RegistrationType** field in the data source to uppercase text. The expression then sends that text as output to the electronic document.
 
-[![Applying formatting to an individual component](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+[![Applying formatting to an individual component.](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ## <a name="Validation"></a>Process flow control
 
@@ -103,7 +103,7 @@ Each rule of the process flow control is designed as an individual validation. T
 - If the list of transactions is empty, the validation stops the execution process and returns **FALSE**.
 - The validation returns an error message that includes the text of label SYS70894 in the user's preferred language.
 
-[![Validation](./media/picture-validation.jpg)](./media/picture-validation.jpg)
+[![Validation.](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
 The ER formula designer can also be used to generate a file name for a generating electronic document and to control the file creation process. The following illustration shows the design of a process flow control of this type. Here is an explanation of the configuration in this example:
 
@@ -112,7 +112,7 @@ The ER formula designer can also be used to generate a file name for a generatin
 - An expression returns a file name for generating electronic documents by concatenating the file name and the file name extension. For the second batch and all subsequent batches, the file name contains the batch ID as a suffix.
 - An expression enables (by returning **TRUE**) the file creation process for batches that contain at least one record.
 
-[![Process flow control](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+[![Process flow control.](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
 ## <a name="Enabled"></a>Document content control
 
@@ -126,18 +126,18 @@ The following illustration shows expressions of this type. (Version 11.12.11 of 
 - The **PaymentNotes** component is used to generate the text of payment notes.
 - The **DelimitedSequence** component generates comma-separated invoice numbers that are used to settle the current credit transfer.
 
-[![PaymentNotes and DelimitedSequence components](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+[![PaymentNotes and DelimitedSequence components.](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
 
 > [!NOTE]
 > The **PaymentNotes** and **DelimitedSequence** components are labeled by using a question mark. A question mark indicates that the use of a component is conditional. In this case, use of the components is based on the following criteria:
 >
 > - The `@.PaymentsNotes <> ""` expression that is defined for the **PaymentNotes** component enables (by returning **TRUE**) the **Ustrd** XML element to be filled with the text of payment notes, if that text isn't blank for the current credit transfer.
 >
->    [![Expression for the PaymentNotes component](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+>    [![Expression for the PaymentNotes component.](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
 >
 > - The `@.PaymentsNotes = ""` expression that is defined for the **DelimitedSequence** component enables (by returning **TRUE**) the **Ustrd** XML element to be filled with a comma-separated list of the invoice numbers that are used to settle the current credit transfer, if the text of payment notes for that credit transfer is blank.
 >
->    [![Expression for the DelimitedSequence component](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+>    [![Expression for the DelimitedSequence component.](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
 > 
 > Based on this setup, the message that is generated for each debtor payment, the **Ustrd** XML element, will contain either the text of payment notes or, when that text is blank, a comma-separated list of the invoice numbers that are used to settle the payment.
 
@@ -145,7 +145,7 @@ The following illustration shows expressions of this type. (Version 11.12.11 of 
 
 On the **Formula designer** page, select **Test** to validate how the configured formula works.
 
-[![Selecting Test to validate a forumula](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
+[![Selecting Test to validate a forumula.](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
 
 When the values of formula arguments are required, you can open the **Test expression** dialog box from the **Formula designer** page. In most cases, these arguments must be manually defined, because the configured bindings aren't run at design time. The **Test result** tab on the **Formula designer** page shows the result from execution of the configured formula.
 
@@ -153,15 +153,15 @@ The following example shows how you can test the formula that is configured for 
 
 When you test this formula, you can use the **Test expression** dialog box to specify the value of the Intrastat commodity code for testing.
 
-[![Specifying the Intrastat commodity code for testing](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
+[![Specifying the Intrastat commodity code for testing.](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
 
 After you specify the Intrastat commodity code and select **OK**, the **Test result** tab on the **Formula designer** page shows the result of execution of the configured formula. You can then evaluate whether the result is acceptable. If the result isn't acceptable, you can update the formula and test it again.
 
-[![Test result](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
+[![Test result.](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
 
 Some formulas can't be tested at design time. For example, a formula might return a result of a data type that can't be shown on the **Test result** tab. In this case, you receive an error message that states that the formula can't be tested.
 
-[![Error message](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
+[![Error message.](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
 
 ## Additional resources
 

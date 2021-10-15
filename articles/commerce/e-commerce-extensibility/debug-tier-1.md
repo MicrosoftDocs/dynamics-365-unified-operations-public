@@ -47,7 +47,7 @@ The online SDK uses Node.js as the JavaScript runtime to render modules and e-co
 
 To get the Retail Server URL if you're debugging against a Commerce development environment, go to [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com/), and select the project and the environment. Then, in the upper-right corner of the page, select **Login \> Retail Server URL**, as shown in the following illustration.
 
-![Retail Server URL in LCS](media/lcs-retail-server-url.png)
+![Retail Server URL in LCS.](media/lcs-retail-server-url.png)
 
 A new tab should be opened, and the URL should resemble the following example: 
 

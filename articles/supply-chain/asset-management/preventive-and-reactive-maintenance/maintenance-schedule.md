@@ -68,7 +68,7 @@ To open a maintenance schedule:
 
 The illustration below shows the **All maintenance schedule** list page.
 
-![Figure 1](media/16-preventive-maintenance.png)
+![Figure 1.](media/16-preventive-maintenance.png)
 
 
 

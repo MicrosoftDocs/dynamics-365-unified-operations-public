@@ -22,7 +22,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # Rebate management deals
@@ -106,6 +106,7 @@ After you've created a deal as described in the previous section, you can open i
         - *All* – The deal line applies to all items.
 
     - **Item relation** – If you selected *Table* in the **Item code** field, select the item that the deal line applies to. If you selected *Group*, select the item group. If you selected *All*, this field is unavailable.
+    - **Unit type** – Select the unit type that applies to the deal line (*Inventory unit* or *Catch weight unit*). Note that this field might be blank for older records. In this case, the *Inventory unit* value is assumed.
     - **(Inventory management parameters)** – In the remaining fields on the deal line, specify values for the inventory management parameters that will be used to define the items that are included in the deal (such as the item size, color, style, site, and warehouse). To add or remove the dimensions, select **Display dimensions** on the Action Pane.
 
 1. On the Action Pane, select **Save**.

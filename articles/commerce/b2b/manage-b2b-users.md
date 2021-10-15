@@ -4,12 +4,14 @@
 title: Manage business partner users on B2B e-commerce websites
 description: This topic describes how administrators can add, edit, and delete business partner users on business-to-business (B2B) e-commerce websites.
 author: josaw1
-ms.date: 01/20/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: 
-ms.technology: 
+ms.technology:
+
 # optional metadata
-ms.search.form: RetailOperations
+
+ms.search.form:
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
@@ -18,7 +20,7 @@ ms.reviewer: v-chgri
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
 
@@ -70,7 +72,7 @@ To approve and set up a business partner administrator user in Commerce headquar
 
 1. Go to **Retail and Commerce IT \> Distribution schedule**, and run the **1010** (**Customers**) job to push the newly created customer and customer hierarchy records to the channel database.
 
-After the request is approved, and the customer and customer hierarchy records are synced to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the request. Users can use the sign-up flow to define the password for their account.
+After the request is approved, and the customer and customer hierarchy records are synced to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the request. Users can use the sign-up flow to define the password for their account. To enable the identity provider (Azure AD B2C) record to be linked to the B2B customer record that was created at sign-up or sign-in, follow the instructions in [Enable automatic linking of identity records to customer accounts](../identity-record-linking.md).
 
 ## Onboard additional business partner users
 
@@ -86,7 +88,7 @@ To onboard additional business partner users to a B2B e-commerce website, follow
 
 1. Run the **1010** (**Customers**) job to sync the new business partner user to the channel database.
 
-After the customer record is synced, the status of the user on the B2B e-commerce website is set to **Active**, and the new user can sign in to the B2B e-commerce website by using their email address. Users can use the sign-up flow to define the password for their account.
+After the customer record is synced, the status of the user on the B2B e-commerce website is set to **Active**, and the new user can sign in to the B2B e-commerce website by using their email address. Users can use the sign-up flow to define the password for their account. To enable the identity provider (Azure AD B2C) record to be linked to the B2B customer record that was created at sign-up or sign-in, follow the instructions in [Enable automatic linking of identity records to customer accounts](../identity-record-linking.md).
 
 ## Edit business partner user details
 

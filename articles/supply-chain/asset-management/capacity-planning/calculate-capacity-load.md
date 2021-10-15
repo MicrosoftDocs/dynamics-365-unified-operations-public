@@ -58,7 +58,7 @@ This is useful if you want to get an overview of expected capacity load for a sp
 
 7. In the **Group by...** groups, click the relevant buttons to show the required detail level of the calculation. In the screenshot below, the selected **Group by** buttons are highlighted in blue color. Click on a button to activate or deactivate it.
 
-    ![Figure 1](media/01-capacity-planning.png)
+    ![Figure 1.](media/01-capacity-planning.png)
 
 >[!NOTE]
 >If you want to focus only on capacity planning regarding scheduled work orders, see [Calculate capacity load on scheduled work orders](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).

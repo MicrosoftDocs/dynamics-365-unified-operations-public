@@ -1,5 +1,5 @@
 ---
-title: Modify a demand forecast manually
+title: "Guide: Modify a demand forecast manually"
 description: This topic describes how to modify the forecast for an item
 author: ChristianRytt
 ms.date: 08/12/2019
@@ -10,14 +10,14 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 
-# Modify a demand forecast manually
+# Guide: Modify a demand forecast manually
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to modify the forecast for an item. The demo data company used to create this procedure is USMF. This procedure is intended for the production planner.
+This procedure shows how to modify the forecast for an item. This procedure is intended for the production planner.
 
 ## Modify the forecast for a selected item
 

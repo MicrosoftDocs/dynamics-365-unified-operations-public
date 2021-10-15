@@ -51,15 +51,15 @@ I ran year-end close with the **Undo previous close** option set to **No**, and 
 
 First check the status of the batch job. Closing a year includes a number of separate tasks, but the most critical step is the batch task with the task description **Step 5.0.0**. Posting the opening transactions, and optionally the closing transactions, to General ledger takes place during this step. 
 
-[![Batch history list](./media/yec-mssng-open-blnces-01.png)](./media/yec-mssng-open-blnces-01.png)
+[![Batch history list.](./media/yec-mssng-open-blnces-01.png)](./media/yec-mssng-open-blnces-01.png)
 
 If this step ended successfully but you don’t see opening balances on the **Trial balance inquiry** page (**General ledger > Inquires and reports > Trial balance**), review the results of the year-end close batch job to see if the Rebuild balances step completed successfully.
 
-[![Results of year-end close batch job](./media/yec-mssng-open-blnces-02.png)](./media/yec-mssng-open-blnces-02.png)
+[![Results of year-end close batch job.](./media/yec-mssng-open-blnces-02.png)](./media/yec-mssng-open-blnces-02.png)
 
 If this step has failed for any reason, the opening (and optionally closing) transactions were likely posted successfully. You can verify that the General ledger transactions were posted successfully using the **Voucher transactions inquiry** page by specifying the voucher number and date provided on the year-end close dialog for the year that you closed, (**General Ledger > Inquiries and reports > Voucher transactions**).
 
-[![Voucher transactions inquiry](./media/yec-mssng-open-blnces-03.png)](./media/yec-mssng-open-blnces-03.png)
+[![Voucher transactions inquiry.](./media/yec-mssng-open-blnces-03.png)](./media/yec-mssng-open-blnces-03.png)
 
 If the opening (and optionally closing) vouchers are present, you don’t need to run the year-end close again. Instead refer to the next section for information about how to move forward.
 
@@ -71,7 +71,7 @@ The “Rebuild balances” step in the year-end close failed, do I need to re-ru
 
 The Rebuild balances step updates the General ledger balances that are used when the Trial balance inquiry is generated.  It is the final step in the year-end close process.  If this step is the only step that failed, the General ledger transactions have posted successfully.  You do not need to run the year-end close again. You can run the process to rebuild the balances manually using the **Financial dimension sets** page (**General ledger > Chart of accounts > Dimensions > Financial dimension sets**).
 
-[![Rebuild balances button on Financial dimension sets page](./media/yec-mssng-open-blnces-04.png)](./media/yec-mssng-open-blnces-04.png)
+[![Rebuild balances button on Financial dimension sets page.](./media/yec-mssng-open-blnces-04.png)](./media/yec-mssng-open-blnces-04.png)
 
 If this step takes a long time to process, we recommend reviewing the best practices for financial dimension sets as described in [Best practices for updating Financial dimension sets](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/best-practices-for-updating-financial-dimension-set-dimension-sets). 
 

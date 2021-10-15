@@ -3,7 +3,7 @@
 
 title: Include GST when calculating tax collections
 description: This topic explains how to include Goods and Services Tax (GST) when you calculate tax collections.
-author: EricWang
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -63,7 +63,7 @@ ms.dyn365.ops.version: 10.0.4
 4. On the Action Pane, on the **Invoice** tab, in the **Journals** group, select **Invoice**.
 5. On the **Overview** tab, select **Voucher**.
 
-![Example](media/Annotation-2019-05-21-134958.png)
+![Example.](media/Annotation-2019-05-21-134958.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

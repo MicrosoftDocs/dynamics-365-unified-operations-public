@@ -18,7 +18,7 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.scope: 
 # ms.tgt_pltfrm: 
-ms.custom: 260624
+ms.custom: ["260624", "intro-internal"]
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail, eCommerce
@@ -61,4 +61,4 @@ Select a feature area to learn more about it.
 
 ## eLearning courses
 
-For online courses and training, check out [Dynamics 365 Commerce on Microsoft Learn](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).
+For online courses and training, check out [Dynamics 365 Commerce on Microsoft Learn](/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).

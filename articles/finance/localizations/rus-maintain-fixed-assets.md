@@ -4,7 +4,7 @@
 title: Maintain fixed assets 
 description: This topic explains how to inactivate, reactivate, and update a fixed asset in Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
-ms.date: 01/10/2019
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -100,6 +100,16 @@ You must complete the following tasks before you can post an update for a major 
 
 > [!NOTE]
 > When major repair work is done on a fixed asset, bonus depreciation can be applied to the asset on or after the transaction date of the major repair. You can create a transaction for a major repair of a fixed asset, and you can specify the bonus depreciation and bonus start date. The start date of the bonus depreciation can be the same as the transaction date of the major repair, or it can be the next depreciation date.
+
+## Reverse major repair transactions
+By default, when you reverse transactions, the reversal date is equal to the original transaction date. However, you can specify a different reversal date.
+
+1. Go to **Fixed assets (Russia)** > **Fixed assets**, and on the Action Pane, select **Value models**.
+2. On the **FA value models** page, on the Action Pane, select **Transactions**.
+3. On the **FA transactions** page, select and transaction and on the Action Pane, select **Reverse transaction**.
+4. In the **Reverse transactions** dialog box, change the transaction reversal date as needed and then select **OK**. A transaction to reverse the original transaction is created and added to the **FA transactions** page.
+5. Select **Voucher**, and on the **Voucher transactions** page, view the transactions in the ledger.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

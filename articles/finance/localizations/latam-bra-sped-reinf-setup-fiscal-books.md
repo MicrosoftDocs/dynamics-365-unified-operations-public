@@ -39,7 +39,7 @@ The service type table represents table 06. The tax authorities have established
 2. Select **New**.
 3. Enter a classification code that has been established by the tax authorities, and then enter a description.
 
-    ![Service types page](media/bra-service-type-setup.png)
+    ![Service types page.](media/bra-service-type-setup.png)
 
 4. After the list of service types is created, the service types must be assigned to service codes. Go to **Inventory management** \> **Setup** \> **Fiscal information** \> **Service code**, and then, for each service, assign the related service type.
 
@@ -48,18 +48,18 @@ The service type table represents table 06. The tax authorities have established
 1. Go to **Fiscal books** \> **Setup** \> **SPED Reinf** \> **Tax classification codes**.
 2. Enter the available classification types.
 
-![Tax classification codes page](media/bra-tax-classification-codes.png)
+![Tax classification codes page.](media/bra-tax-classification-codes.png)
 
 This information is assigned to the fiscal organization and can be found on the **General** FastTab of the **Fiscal organization** page (**Fiscal books \> Setup \> Fiscal organization**).
 
-![Fiscal organization page](media/bra-fiscal-organization-setup.png)
+![Fiscal organization page.](media/bra-fiscal-organization-setup.png)
 
 ## Set up codes explanation suspension
 
 1. Go to **Fiscal books** \> **Setup** \> **SPED Reinf** \> **Codes explanation suspension**.
 2. Set up the codes that are used in event R-1070 when suspension of withholding applies. These codes are assigned on the **Administrative and judicial process** page (**Fiscal books** \> **Periodic** \> **SPED Reinf** \> **Administrative and judicial process**).
 
-![Codes explanation suspension page](media/bra-codes-explanation-suspension.png)
+![Codes explanation suspension page.](media/bra-codes-explanation-suspension.png)
 
 ## Set up acquisition type determination
 
@@ -94,7 +94,7 @@ This setup is used to determine the agriculture acquisition type of incoming fis
 4. Go to **Fiscal books** > **Setup** > **Fiscal books parameters**.
 5. On the **Number sequences** tab, set up the number sequence for events R-2010, R-2020, and R-2055.
 
-![Number sequences tab on the Fiscal books parameters page](media/bra-sped-fiscal-books-parameters.png)
+![Number sequences tab on the Fiscal books parameters page.](media/bra-sped-fiscal-books-parameters.png)
 
 > [!NOTE]
 > If the number sequences weren't initialized during the setup checklist for KB installation, you can generate them by using a wizard. To open the wizard, go to **Organization administration** \> **Number sequences** \> **Number sequences**, and select **Generate**. You can then configure the related number sequence:

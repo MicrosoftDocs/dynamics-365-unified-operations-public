@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 2012
 
 You can use Task recorder and Business process modeler (BPM) to create user acceptance test libraries. Task recorder is a powerful tool to record test cases and organize them by business process using BPM. As a Microsoft partner you can use BPM to distribute test libraries to your customers via LCS and LCS solutions. If you are a customer, use BPM to author and distribute test libraries across different projects and team.
 
-Because BPM can be synchronized with Azure DevOps (formerly known as Visual Studio Team Services), you can automatically create test cases (including test steps) in your Azure DevOps project. Azure DevOps can then serve as your test configuration and test management tool where you can create targeted test plans and test suites, manage the execution of tests and investigate results. For more information about testing with Azure DevOps, see [What are test plans, test suites, and test cases?](/azure/devops/test/create-a-test-plan?view=azure-devops#what-are-test-plans-test-suites-and-test-cases)
+Because BPM can be synchronized with Azure DevOps (formerly known as Visual Studio Team Services), you can automatically create test cases (including test steps) in your Azure DevOps project. Azure DevOps can then serve as your test configuration and test management tool where you can create targeted test plans and test suites, manage the execution of tests and investigate results. For more information about testing with Azure DevOps, see [What are test plans, test suites, and test cases?](/azure/devops/test/create-a-test-plan#what-are-test-plans-test-suites-and-test-cases)
 
 This topic walks through the process of creating and executing acceptance test suites to be used for manual or automated testing.
 
@@ -43,7 +43,7 @@ There are several ways to create a Business process modeler (BPM) library. For m
 
 For illustration purposes, this topic uses a library that contains common business processes, such as create an expense report and approve order requests. The library was created by using the Excel import functionality.  
 
-![Import from Excel](./media/import-from-excel.PNG "Import from Excel")
+![Import from Excel.](./media/import-from-excel.PNG "Import from Excel")
 
 ### Record test cases and save to BPM 
 
@@ -56,14 +56,14 @@ If you're using a BPM library that already has all of the necessary task recordi
 2. Select the company that you want to use while recording.
 3. Go to **Settings** > **Task recorder**.
 
-    ![Select Task recorder](./media/select_task_recorder.PNG "Select Task recorder")
+    ![Select Task recorder.](./media/select_task_recorder.PNG "Select Task recorder")
 
 4. Click **Create a new recording**.
 5. Enter a name for the recording, and then click **Start**. Recording begins the moment that you click **Start**.
 6. When the recording is complete, in the Task recorder pane, click **Stop**.
 7. To save the task recording to an attached BPM, click **Save to Lifecycle Services**.
 
-    ![Task recorder options](./media/task_recorder_options.PNG "Task recorder options")
+    ![Task recorder options.](./media/task_recorder_options.PNG "Task recorder options")
 
 8. Select the library that you want to save the recording to, and then click **Save**. Otherwise, select **Save to Disk** and follow the steps in the next section, "Upload an AXTR file to BPM."
 
@@ -78,11 +78,11 @@ If you have saved your recordings (AXTR files) to disk, follow these steps to up
 2. Click **Author and edit** and in the lines, locate and select the process to upload the task recording to.
 3. In the right pane, click **Upload**. 
 
-    ![Upload AXTR 1](./media/upload_axtr_1.PNG "Upload AXTR 1")
+    ![Upload AXTR 1.](./media/upload_axtr_1.PNG "Upload AXTR 1")
 
 4. Click **Browse** to find and select the file to upload, and then click **Upload**.
 
-    ![Upload AXTR 2](./media/upload_axtr_2.PNG "Upload AXTR 2")
+    ![Upload AXTR 2.](./media/upload_axtr_2.PNG "Upload AXTR 2")
 
 #### Save an existing task recording to BPM
 1. To attach an existing task recording, sign in to the client.
@@ -113,19 +113,19 @@ Synchronize your BPM library with your Azure DevOps project. For more informatio
 After configuration is complete, synchronize the BPM library with a Azure DevOps project.
 1. On the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **Azure DevOps sync**.
 
-    ![VSTS Sync1](./media/vsts_sync_1.png "VSTS Sync1")
+    ![VSTS Sync1.](./media/vsts_sync_1.png "VSTS Sync1")
 
     You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **Azure DevOps sync**.
 
-    ![VSTS Sync2](./media/vsts_sync_2.png "VSTS Sync2")
+    ![VSTS Sync2.](./media/vsts_sync_2.png "VSTS Sync2")
 
 2. After Azure DevOps synchronization is complete, select the ellipsis button (…), and then select **Sync test cases**.
 
-    ![Sync test cases](./media/sync_test_case.PNG "Sync test cases")
+    ![Sync test cases.](./media/sync_test_case.PNG "Sync test cases")
 
 3. When this step is complete, your task recordings will become test cases in Azure DevOps and a link will appear under the **Requirements** tab. 
 
-    ![View test case](./media/view_test_case.PNG "View test case")
+    ![View test case.](./media/view_test_case.PNG "View test case")
 
 
 In addition to the test steps, the task recording XML file is attached to the Azure DevOps test case. This file will be needed if you want to automate test execution. 
@@ -140,11 +140,11 @@ Next, you will need to create a test plan and test suite in Azure DevOps. This w
 5. Click **Add existing** and query the tag **LCS:Test Cases**.
 6. Click **Run** > **Add test cases**.
 
-    ![Add test cases](./media/add_test_cases.PNG "Add test cases")
+    ![Add test cases.](./media/add_test_cases.PNG "Add test cases")
  
 7. Select the test case to view details and the attached XML file.   
 
-    ![Test case details](./media/test_case_details.PNG "Test case details")
+    ![Test case details.](./media/test_case_details.PNG "Test case details")
 
  >[!NOTE]
  > This example shows how to create one comprehensive acceptance test suite with all test cases added. Instead, you should create various test suites under the same test plan and then use custom queries to add specific test cases to a test suite. A test case can belong to more than one test suite.
@@ -154,7 +154,7 @@ Next, you will need to create a test plan and test suite in Azure DevOps. This w
 ### Run manual test cases
 After you have a test suite, you are ready to use it for regression testing after updates have been made to your application in a sandbox or test environment. You can run the test cases in your test suite manually or play the task recordings that are part of the test suite and use Azure DevOps to mark the test cases as passed or failed.
 
-![VSTS test marked](./media/vsts_test_marked.png "VSTS test marked")
+![VSTS test marked.](./media/vsts_test_marked.png "VSTS test marked")
 
 Azure DevOps also provides a tool, **Test Runner**, to manage manual test case execution. For more information about using Test Runner, see [Run manual tests](/vsts/manual-test/getting-started/run-manual-tests).
 

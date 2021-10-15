@@ -3,7 +3,7 @@
 
 title: Define HSN codes and Service Accounting Codes
 description: This topic explains how to define Harmonized System of Nomenclature (HSN) codes and Service Accounting Codes (SACs). This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
-author: EricWang
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -77,7 +77,7 @@ The following setup is required for the calculation of GST:
 - An HSN code should be defined for the **Item** product type, or an SAC should be defined for the **Service** product type.
 - The item sales tax group should be removed.
 
-![Assign HSN codes and SACs to products](media/Assign-codes-to-product_upd.png)
+![Assign HSN codes and SACs to products.](media/Assign-codes-to-product_upd.png)
 
 ## Assign SACs to miscellaneous charges
 

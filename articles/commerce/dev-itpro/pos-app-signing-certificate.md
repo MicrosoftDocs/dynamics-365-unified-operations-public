@@ -46,7 +46,7 @@ To sign the MPOS app with a certificate, use one of these options in the **Retai
 
 Using a Secure File task is the recommended approach for Universal Windows Platform (UWP) app signing. For more information about package signing, see [Configure package signing](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing). This process is shown in the following image.
 
-![MPOS app signing flow](media/POSSigningFlow.png)
+![MPOS app signing flow.](media/POSSigningFlow.png)
 
 > [!NOTE]
 > Currently the OOB packaging supports signing only the appx file, the different self-service installers like MPOIS, RSSU, and HWS are not signed by this process. You need to manually sign it using SignTool or other signing tools. The certificate used for signing the appx file must be installed in the machine where Modern POS is installed.
@@ -60,7 +60,7 @@ Download the [DownloadFile task](/visualstudio/msbuild/downloadfile-task) and ad
 1. Download and add the Secure File task as the first step in the Azure build pipeline. You can download the Secure File task from [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
 2. Upload the certificate to the Secure File task and set the Reference name under Output Variables, as shown in the following image.
     > [!div class="mx-imgBorder"]
-    > ![Secure file task](media/SecureFile.png)
+    > ![Secure file task.](media/SecureFile.png)
 3. Create a new variable in Azure Pipelines by selecting **New Variable** under the **Variables** tab.
 4. Provide a name for the variable in the value field, for example, **MySigningCert**.
 5. Save the variable.

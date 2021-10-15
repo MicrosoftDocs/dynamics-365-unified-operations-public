@@ -1,7 +1,7 @@
 ---
 title: Inventory forecasts
 description: This topic describes the supply and demand forecast functionality that can be used to create inventory forecasts in Microsoft Dynamics 365 Supply Chain Management.
-author: crytt
+author: ChristianRytt
 ms.date: 06/08/2021
 ms.topic: article
 ms.search.form: EcoResProductDetailsExtended, ForecastSales, ForecastPurch, ForecastInvent
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: 10.0.21
 ---
 
 # Inventory forecasts
@@ -89,7 +89,7 @@ The following table describes the commands that are available on the toolbar on 
 
 | Command | Description |
 |---|---|
-| Allocate forecast | If you're using an allocation method, generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed by date (according to the selected time intervals), quantity, and amount for the whole time horizon. |
+| Allocate forecast | If you're using an allocation method, generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed by date (according to the selected time intervals), quantity, and amount for the whole time horizon. (See the [Allocate forecast](#allocate-forecast) section later in this topic.) |
 | Bulk update | Open the **Edit forecast transactions** page. (See the [Bulk update forecast transactions](#bulk-update) section later in this topic.) |
 | Inventory forecast | Open a view of the **Inventory forecast** page that is filtered for the selected item/model combination. (See the [Inventory forecast](#inventory-forecast) section later in this topic.) |
 | Create item requirement | Open a dialog box where you can create item requirements, and sales order or item journal lines for project-related forecast transactions. Although this command is available for both supply forecast lines and demand forecast lines, it can't be used on the **Supply forecast** page. |
@@ -196,7 +196,7 @@ The following table describes the commands that are available on the toolbar on 
 
 | Command | Description |
 |---|---|
-| Allocate forecast | If you're using an allocation method, generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed by date (according to the selected time intervals), quantity, and amount for the whole time horizon. |
+| Allocate forecast | If you're using an allocation method, generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed by date (according to the selected time intervals), quantity, and amount for the whole time horizon. (See the [Allocate forecast](#allocate-forecast) section later in this topic.)|
 | Bulk update | Open the **Edit forecast transactions** page. (See the [Bulk update forecast transactions](#bulk-update) section later in this topic.) |
 | Inventory forecast | Open a view of the **Inventory forecast** page that is filtered for the selected item/model combination. (See the [Inventory forecast](#inventory-forecast) section later in this topic.) |
 | Create item requirement | Open a dialog box where you can create item requirements, and sales order or item journal lines for project-related forecast transactions. |
@@ -291,7 +291,7 @@ The **Inventory dimensions** tab shows all the inventory dimension values for th
 
 ### The Allocation grid on the Demand forecast page
 
-If you're using an item allocation key, or if you've entered an item forecast for one or more future periods, you can allocate the forecast by selecting **Allocate forecast** on the toolbar on the **Overview** tab. The quantity is then distributed in the manner that is indicated by the lines in the **Allocation** grid.
+If you're using an item allocation key, or if you've entered an item forecast for one or more future periods, you can allocate the forecast by selecting **Allocate forecast** on the toolbar on the **Overview** tab. The quantity is then distributed in the manner that is indicated by the lines in the **Allocation** grid. (See the [Allocate forecast](#allocate-forecast) section later in this topic.)
 
 ## <a name="inventory-forecast"></a>Inventory forecast
 
@@ -324,6 +324,25 @@ The following table describes the fields in the grid on the **Inventory forecast
 | **Subroute** | The route number of a specific sub-route. |
 | (Other dimensions) | Additional dimensions can be shown as columns in the grid. To select the additional dimensions that are shown, select **Inventory \> Display dimensions** on the Action Pane. |
 
+## <a name="allocate-forecast"></a>Allocate forecast
+
+Use the following procedure to process selected forecast transaction lines. When you allocate a forecast, the quantity is then distributed as indicated by the lines in the **Allocation** grid.
+
+1. Depending on the type of entity that you're creating a forecast for, and the type of forecast that you want to create, open a supply or demand forecast page as described in [View and manually enter forecast lines](#manual-entry).
+1. On the supply or demand forecast lines page, select a forecast line, and then, on the **Overview** tab, select **Allocate forecast** on the toolbar.
+1. In the **Allocate forecast** dialog box, set the fields that are described in the following table. (The value that you select in the **Method** field determines that other fields that are available.)
+
+    | Field | Description |
+    |---|---|
+    | Method | <p>Select the method that is used to allocate the forecast transaction:</p><ul><li>**None** – No allocation occurs.</li><li>**Period** – Forecast the same quantity for each period. If you select this value, specify a quantity in the **Per** field and a unit of time in the **Unit** field.</li><li>**Key** – Allocate the forecast according to the period allocation key that you specify in the **Period key** field. You can use this method when you want seasonal variations to be considered.</li><ul>|
+    | Per | <p>Enter the number of time intervals into the future that the forecast extends. This field is available only if you select *Period* in the **Method** field.</p><p>For example, you select *Period* in the **Method** field, enter *1* in the **Per** field, and select *Months* in the **Unit** field. Then, in the **End** field, you specify an end date one year into the future. In this case, one forecast line will be created for each month of the upcoming year, based on the item and quantity that are specified on the header line. |
+    | Unit | Select the unit of the time interval: *Days*, *Months*, or *Years*. Allocation then corresponds to the number of days, months, or years that you specify in the **Per** field.|
+    | Period key | Specify the period allocation key that is used to allocate the forecast. For more information, see [Budget planning data allocation](../../finance/budgeting/budget-planning-data-allocation.md). |
+    | End | Specify the end date that applies to your settings in the **Per** and **Unit** fields. |
+
+1. Select **OK** to confirm your settings.
+1. You can review the results on the **Allocation** tab for the same line.
+
 ## <a name="bulk-update"></a>Bulk update forecast transactions
 
 Use this procedure to process existing forecast transaction lines. You can copy, edit, and delete forecast transaction lines.
@@ -348,20 +367,46 @@ Use this procedure to process existing forecast transaction lines. You can copy,
 1. Use the **Financial dimensions** section to update the financial dimensions of forecast lines. Select the financial dimensions that you want to change, and then enter a value to apply to the selected dimensions.
 1. Select **OK** to apply your changes.
 
-## Run forecast planning
+## Use forecasts with master planning
 
-After you enter your demand forecast and/or supply forecast, you can run forecast planning to calculate gross requirements for materials and capacity, and to generate planned orders.
+After you enter your demand forecast and/or supply forecast, you can include the forecasts during master planning to account for expected demand and/or supply in your master planning run. When forecasts are included in master planning, gross requirements for materials and capacity are calculated, and planned orders are generated.
 
-1. Go to **Master planning \> Forecasting \> Forecast planning**.
-1. In the **Forecast plan** field, select a forecast plan.
-1. Enable **Track processing time** to record the processing time for each planning task.
-1. In the **Number of threads** field, enter a value. (For more information, see [Improve master planning performance](master-planning-performance.md).)
-1. In the **Comment** field, enter text to capture any additional information that is required.
-1. On the **Records to include** FastTab, select **Filter** to limit the selection of items.
-1. On the **Run in the background** FastTab, specify the parameters of the batch.
+### Set up a master plan to include an inventory forecast
+
+To set up a master plan so that it includes an inventory forecast, follow these steps.
+
+1. Go to **Master planning \> Setup \> Plans \> Master plans**.
+1. Select an existing plan, or create a new plan.
+1. On the **General** FastTab, set the following fields:
+
+    - **Forecast model** – Select the forecast model to apply. This model will be considered when a supply suggestion is generated for the current master plan.
+    - **Include supply forecast** – Set this option to *Yes* to include the supply forecast in the current master plan. If you set it to *No*, supply forecast transactions won't be included in the master plan.
+    - **Include demand forecast** – Set this option to *Yes* to include the demand forecast in the current master plan. If you set it to *No*, demand forecast transactions won't be included in the master plan.
+    - **Method used to reduce forecast requirements** – Select the method that should be used to reduce forecast requirements. For more information, see [Forecast reduction keys](planning-optimization/demand-forecast.md#reduction-keys).
+
+1. On the **Time fences in days** FastTab, you can set the following fields to specify the period that the forecast is included during:
+
+    - **Forecast plan** – Set this option to *Yes* to override the forecast plan time fence that originates from the individual coverage groups. Set it to *No* to use the values from the individual coverage groups for the current master plan.
+    - **Forecast time period** – If you set the **Forecast plan** option to *Yes*, specify the number of days (from today's date) that the demand forecast should be applied.
+
+    > [!IMPORTANT]
+    > The **Forecast plan** option isn't yet supported with Planning Optimization.
+
+### Run a master plan that includes an inventory forecast
+
+To run a master plan that includes an inventory forecast, follow these steps.
+
+1. Go to **Master planning \> Workspaces \> Master planning**.
+1. In the **Master plan** field, enter or select the master plan that you set up in the previous procedure.
+1. On the **Master planning** tile, select **Run**.
+1. In the **Master planning** dialog box, set the **Track processing time** option to *Yes*.
+1. In the **Number of threads** field, enter a number.
+1. On the **Records to include** FastTab, select **Filter**.
+1. A standard query editor dialog box appears. On the **Range** tab, select the row where the **Field** field is set to *Item number*.
+1. In the **Criteria** field, select the item number to include in the plan.
 1. Select **OK**.
 
-To view the requirements that are calculated, open the **Gross requirement** page. For example, on the **Released products** page, on the **Plan** tab, in the **Requirements** section, select **Gross requirement**.
+To view the requirements that are calculated, open the **Gross requirement** page. For example, on the **Released products** page, on the Action Pane, on the **Plan** tab, in the **Requirements** group, select **Gross requirement**.
 
 To view the planned orders that are generated, go to **Master planning \> Common \> Planned orders**, and select the appropriate forecast plan.
 
@@ -371,5 +416,6 @@ To view the planned orders that are generated, go to **Master planning \> Common
 - [Demand forecasting setup](demand-forecasting-setup.md)
 - [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 - [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+- [Master planning with demand forecasts](planning-optimization/demand-forecast.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

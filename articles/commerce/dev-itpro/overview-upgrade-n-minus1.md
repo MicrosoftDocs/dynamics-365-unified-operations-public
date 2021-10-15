@@ -17,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 44351
+ms.custom: ["44351", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: athinesh

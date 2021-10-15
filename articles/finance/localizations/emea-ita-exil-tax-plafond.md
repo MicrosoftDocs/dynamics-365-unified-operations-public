@@ -55,7 +55,7 @@ This topic describes how to complete these tasks:
 
 3. On the **Intent letters - Telematic model** tab, in the **Intent letter model format mapping** field, specify the reference to the **Intent letter telematic model** configuration.
 
-    ![Intent letter model format mapping field](media/emea-ita-exil-plafond-model.jpg)
+    ![Intent letter model format mapping field.](media/emea-ita-exil-plafond-model.jpg)
 
     > [!NOTE]
     > The configuration must be imported by using Electronic reporting (ER). For more information about how to download ER configurations,
@@ -63,7 +63,7 @@ see [Download Electronic reporting configurations from Lifecycle Services](../..
 
 4. On the **Ledger and sale tax** tab, on the **Sales tax** FastTab, in the **Plafond** section, set the **Plafond tax group** and **Default plafond date** fields.
 
-    ![Fields in the Plafond section](media/emea-ita-exil-plafond-group.jpg)
+    ![Fields in the Plafond section.](media/emea-ita-exil-plafond-group.jpg)
 
 ### Set up General ledger parameters
 
@@ -75,7 +75,7 @@ see [Download Electronic reporting configurations from Lifecycle Services](../..
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 2. On the **General** FastTab, in the **Invoicing** section, set the **Affect intent letters** option to **Yes**.
 
-    ![Affect intent letters option](media/emea-ita-exil-intent-tax-setup.jpg)
+    ![Affect intent letters option.](media/emea-ita-exil-intent-tax-setup.jpg)
 
 ## Create tax plafond
 
@@ -148,7 +148,7 @@ Intent letters that are created for vendors can be applied to purchase orders or
 
 To apply an intent letter to a purchase order or vendor invoice journal, select it in the **Intent letter number** field of the related purchase order or vendor invoice journal. The sales tax group that is specified in the **Plafond tax group** field on the **Accounts payable parameters** page will be automatically filled in for the purchase order or vendor invoice journal.
 
-![Intent letter number field for a purchase order](media/emea-ita-exil-plafond-PO.jpg)
+![Intent letter number field for a purchase order.](media/emea-ita-exil-plafond-PO.jpg)
 
 You can also review the intent letters for a specific vendor from vendor master data.
 

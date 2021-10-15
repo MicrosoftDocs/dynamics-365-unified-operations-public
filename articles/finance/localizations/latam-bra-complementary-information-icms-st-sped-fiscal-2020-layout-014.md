@@ -55,9 +55,9 @@ When the vendor fiscal document or transfer fiscal document includes a product t
 
 When a fiscal document line that includes a product that is subject to ICMS-ST on the receiving destination, the withholding of the ICMS-ST will be determined by reviewing the taxation code of the ICMS-ST in the receiving fiscal document. This is compared with the equivalent ICMS-ST line in the NF-e XML issued by the sender of the fiscal document.
 
-![GSTINs attached to a tax registration group with indirect taxation code](media/complementary-info-figure-01.PNG)
+![GSTINs attached to a tax registration group with indirect taxation code.](media/complementary-info-figure-01.PNG)
 
-![GSTINs attached to a tax registration group with direct taxation code](media/complementary-info-figure-02.PNG)
+![GSTINs attached to a tax registration group with direct taxation code.](media/complementary-info-figure-02.PNG)
 
 A default value for the **Responsible for withholding the ICMS-ST** field can be set up by completing the following steps.
 

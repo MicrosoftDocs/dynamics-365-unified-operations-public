@@ -3,7 +3,7 @@
 
 title: Develop entities for data migration
 description: This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
-author: Sunil-Garg
+author: peakerbl
 ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 83692
 ms.assetid: ebe9c79a-029d-4f03-9bd8-d17e805baa89
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -97,7 +97,7 @@ The entity also has the following fields:
 6. Enter a name, and then click **Add** to start the **Data** **Entity** wizard.
 7. On the first page of the wizard, specify the set of properties for the entity by using the table earlier in this exercise. Then click **Next**.
 
-    [![Specify properties page](./media/specifyproperties_devoentity.png)](./media/specifyproperties_devoentity.png)
+    [![Specify properties page.](./media/specifyproperties_devoentity.png)](./media/specifyproperties_devoentity.png)
 
 8. On the next page, add fields from the primary data source. Make sure that each field name reflects the public contract (see the table earlier in this exercise). To use the field's label as the field name, select the **Convert label to field names** option. Clear the option for any fields that are not required for the entity.
 9. Click **Finish** to complete the wizard, and to add the entity and its artifacts to the project.
@@ -107,7 +107,7 @@ The entity also has the following fields:
 
 - In Visual Studio, the following artifacts will appear in the project after you've completed the **Data Entity** wizard.
 
-    [![New project artifacts](./media/testappsuite_devoentity.png)](./media/testappsuite_devoentity.png)
+    [![New project artifacts.](./media/testappsuite_devoentity.png)](./media/testappsuite_devoentity.png)
 
 - Right-click the data entity, and then select **Open table browser**.
 
@@ -125,7 +125,7 @@ In this exercise, you will use the **Project Category** entity that you just bui
 3. In the **Data management** workspace, click **Export** to begin data extraction.
 4. Enter the export details, such as entity name and target data format.
 
-    [![Entering export details](./media/exportprojectcategory_devoentity.png)](./media/exportprojectcategory_devoentity.png)
+    [![Entering export details.](./media/exportprojectcategory_devoentity.png)](./media/exportprojectcategory_devoentity.png)
 
     Use the following file as the sample file format for XML: [ProjectCategoryExport\_Sample](https://go.microsoft.com/fwlink/?linkid=845209).
 
@@ -133,7 +133,7 @@ In this exercise, you will use the **Project Category** entity that you just bui
 
 5. Click **Filter**, and then specify **Project** as the filter criterion, so that only limited data is exported.
 
-    [![Filtering by project](./media/inquiry_devoentity.png)](./media/inquiry_devoentity.png)
+    [![Filtering by project.](./media/inquiry_devoentity.png)](./media/inquiry_devoentity.png)
 
 6. In the **Export** dialog box, click **OK**.
 
@@ -195,7 +195,7 @@ In this exercise, you will use a new set of files to import data through the exi
 8. Click **Copy data to target**.
 9. In the **Select a job ID to run** dialog box, in the **Run for** field, select **Criteria**, and set **Row selected by user** to **Yes**. Then click **OK**.
 
-    [![Selecting a job to run](./media/selectjob_devoentity.png)](./media/selectjob_devoentity.png)
+    [![Selecting a job to run.](./media/selectjob_devoentity.png)](./media/selectjob_devoentity.png)
 
 10. On the **Target data execution** page, click **Run**.
 11. When the run is completed, refresh the page to see the latest staging status.

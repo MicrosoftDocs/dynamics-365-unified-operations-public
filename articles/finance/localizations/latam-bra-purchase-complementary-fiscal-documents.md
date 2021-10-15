@@ -59,7 +59,7 @@ Before you can create and post purchase complementary fiscal document, the follo
 -   **Sales tax code for PIS** – Specify the sales tax code that is used for the PIS tax calculation amount.
 
 ## Examples
-[![Example that shows an original invoice together with purchase complementary fiscal documents of each of the three types](./media/purchcomplementary-1024x349.png)](./media/purchcomplementary.png)
+[![Example that shows an original invoice together with purchase complementary fiscal documents of each of the three types.](./media/purchcomplementary-1024x349.png)](./media/purchcomplementary.png)
 
 
 For more information, see the following topics:

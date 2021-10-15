@@ -96,7 +96,7 @@ An on-premises deployment has a standalone cluster for each sandbox environment 
 
 The following diagram shows the node types deployed in a Service Fabric standalone cluster.
 
-![Node types deployed in a Service Fabric standalone cluster](media/on-premises-overview-01.png)
+![Node types deployed in a Service Fabric standalone cluster.](media/on-premises-overview-01.png)
 
 ### Service Fabric resources
 To learn more about Service Fabric, see the following topics:
@@ -121,7 +121,7 @@ The core factors that affect sizing are:
 
 The more detailed data that you collect, the more precisely you can estimate sizing. Hardware sizing, without supporting data, is likely to be inaccurate. The minimum data that you need to collect is the peak transaction line load per hour. The factors that affect sizing are shown in the following diagram.
 
-![Sizing factors](media/sizing-factors.png)
+![Sizing factors.](media/sizing-factors.png)
 
 From left to right, the first and most important factor needed to accurately estimate sizing is a transaction profile or a transaction characterization. It’s important to find the peak transactional volume per hour. If there are multiple peak periods, then these periods need to be accurately defined.
 

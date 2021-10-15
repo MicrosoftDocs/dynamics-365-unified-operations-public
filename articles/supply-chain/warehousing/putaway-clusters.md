@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: Release 10.0.7
+ms.dyn365.ops.version: 10.0.7
 ---
 
 # Putaway clusters
@@ -289,7 +289,7 @@ Before the items in the cluster can be put away, the cluster must be closed.
 
     You have the standard options to override or pass this step.
 
-    ![Cluster putaway: Put page](media/Cluster_putaway-Put.png "Cluster putaway: Put page")
+    ![Cluster putaway: Put page.](media/Cluster_putaway-Put.png "Cluster putaway: Put page")
 
 1. Select **OK** to confirm the putaway of the cluster.
 

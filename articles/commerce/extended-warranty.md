@@ -85,7 +85,7 @@ To create a warranty item in Commerce, follow these steps.
 
     For example, for a two-year warranty, set the **Unit of time** field to **Year(s)** and the **Length of time** field to **2**. Alternatively, set the set the **Unit of time** field to **Month(s)** and the **Length of time** field to **24**, as shown in the following illustration.
 
-    ![Product details page for a warranty item](./media/ew-time-properties.png)
+    ![Product details page for a warranty item.](./media/ew-time-properties.png)
 
 1. Select **Save** to save the warranty item.
 1. Release the warranty product to the company so that it can be sold. For more information, see [Set up retail products](set-up-retail-products.md).
@@ -98,7 +98,7 @@ To create a warranty item in Commerce, follow these steps.
 
     For example, the following illustration shows the **Price range base** field set to **Base price**, the **Lower limit** field set to $500, and the **Upper limit** field set to $1000.
     
-    ![Released product details page for a warranty item](./media/ew-release-product-details.png)
+    ![Released product details page for a warranty item.](./media/ew-release-product-details.png)
 
 1. Assort the warranty item to the channel where it will be sold. For more information, see [Set up assortments](set-up-assortments.md).
 
@@ -165,11 +165,11 @@ Two POS operations let sales associates sell warranty items during the workflow 
 
 The following illustration shows an example of a a POS terminal page with a prompt to add a warranty item for the current purchase of a warrantable item.
 
-![Example of a prompt to add a warranty item for the current purchase](./media/ew-sell-warranty.png)
+![Example of a prompt to add a warranty item for the current purchase.](./media/ew-sell-warranty.png)
 
 The following illustration shows an example of the feature for adding a warranty item for a warrantable item that was previously sold.
 
-![Example of the feature for adding a warranty item for a previously sold warrantable item](./media/ew-add-warranty-existing.png)
+![Example of the feature for adding a warranty item for a previously sold warrantable item.](./media/ew-add-warranty-existing.png)
 
 ## Process warranty transactions
 

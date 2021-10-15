@@ -85,7 +85,7 @@ Embedded Power BI reports in the application are secured by using menu items. Us
 1. Add a menu item for the report or the appropriate tab. By default, the first tab of the report will be shown if no other tab is selected.
 2. Link the menu item to the **PowerBIEmbedded\_App** configuration key.
 
-    ![Link the menu item to the PowerBIEmbedded_App configuration key](media/secure-workspace-key.png)
+    ![Link the menu item to the PowerBIEmbedded_App configuration key.](media/secure-workspace-key.png)
 
 The menu item is now associated with the availability of the Power BI Embedded service. If the service is unavailable, the links for the menu items will be removed from the application.
 
@@ -98,7 +98,7 @@ In this scenario, the workspaces and reports that the sales manager from Contoso
 2. On the **Modeling** tab, click **Manage Roles**.
 3. Create a new role against a column in the data model that contains the **Company** field. Name the new role **CompanyFilter**. A **COMPANY** field must be present in the data model to restrict access by company.
 
-    ![Create a new role](media/secure-workspace-filter.png)
+    ![Create a new role.](media/secure-workspace-filter.png)
 
 4. In the **Table filter DAX expression** field, enter **\[COMPANY\]=username()**.
 5. To make sure that the rules work, on the **Modeling** tab, click **View as Roles**. In the dialog box, set the following fields:

@@ -5,7 +5,6 @@ title: NOW ER function
 description: This topic provides information about how the NOW Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/04/2019
-ms.topic: article
 ms.prod: 
 ms.technology: 
 

@@ -46,7 +46,7 @@ A maintenance request type defines the affiliation with a maintenance request li
 
 The following illustration shows an example of the **Maintenance request types** page.
 
-![Maintenance request types page](media/07-setup-for-requests.png)
+![Maintenance request types page.](media/07-setup-for-requests.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

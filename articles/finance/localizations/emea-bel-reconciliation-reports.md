@@ -43,21 +43,21 @@ The **Sales tax correction** report gives a printed overview of INTERVAT tax cor
 
 To print the **Sales tax correction** report, go to **Tax** \> **Declarations** \> **Sales tax** \> **Additional sales tax report boxes**, and then click **Tax corrections** \> **Print.**
 
-![Sales tax corrections generated report](media/1_Sales_tax_corrections.png)
+![Sales tax corrections generated report.](media/1_Sales_tax_corrections.png)
 
 ## Sales tax list - Belgium
 Use the **Sales tax list - Belgium** report to view information about posted sales tax. The report gives details about the sales tax code, name, ledger account, account name, quantity, amount inclusive of sales tax, origin, and tax amount. The parameters for this report give you lots of flexibility. You can get a very precise report by selecting the voucher, date, or sales tax code parameters. Use a filter to set up report parameters.
 
 To print the **Sales tax list - Belgium** report, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax list - Belgium**.
 
-![Sales tax list generated report](media/2_Sales_tax_list.png)
+![Sales tax list generated report.](media/2_Sales_tax_list.png)
 
 ## Sales tax transactions - Details  Belgium
 Use the **Sales tax transactions - Details - Belgium** report to view and print information about posted sales tax transactions for a specified period and a specific range of sales tax codes. The transactions are listed by sales tax code. For each transaction, you can see the customer or vendor, the voucher number, the account that the sales tax base amount (origin) is posted to, the sales tax base amount, the amount inclusive of sales tax, the sales tax amount, the sales tax charge, and the sales tax direction. The amounts are summed for each tax code. The amounts for the Sales tax receivable and Sales tax payable sales tax directions are summed in a grand total. The report also lists sales tax codes that have other sales tax directions, such as Use tax.
 
 To print the **Sales tax transactions - Details - Belgium** report, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax transactions - Details - Belgium**.
 
-![Sales tax transactions details Belguim generated report](media/3_Sales_tax_transactions_details.png)
+![Sales tax transactions details Belguim generated report.](media/3_Sales_tax_transactions_details.png)
 
 ## Sales tax transactions re sales
 You can use the **Sales tax transactions re sales** report to retrieve sales tax transaction resale information that is specific to Belgium. This information includes relevant details such as the journal, voucher, date, customer account, name, amount, and sales tax reporting codes. This report is created-by tax exempt number, enterprise number, and period. Account managers and bookkeepers generate this report periodically or as it's required.
@@ -67,7 +67,7 @@ You can use the **Sales tax transactions re sales** report to retrieve sales tax
 
 To print the **Sales tax transactions re sales** report, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax transactions re sales**.
 
-![Sales tax transactiosn re sales genreated report](media/4_Sales_tax_transactions_re_sales.png)
+![Sales tax transactiosn re sales genreated report.](media/4_Sales_tax_transactions_re_sales.png)
 
 
 ## Sales tax transactions - Belgium
@@ -78,7 +78,7 @@ You can sort the report by voucher, date, voucher currency, sales tax code, and 
 
 To print the **Sales tax transactions - Belgium** report, go to **Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax transactions - Belgium**.
 
-![Sales tax transactions generated report](media/5_Sales_tax_transactions.png)
+![Sales tax transactions generated report.](media/5_Sales_tax_transactions.png)
 
 ## Sales tax by customer - Belgium
 
@@ -100,7 +100,7 @@ This report can be generated as follows:
 
 The parameters for this report give you lots of flexibility. You can get a very precise report by selecting the customer account, date, or sales tax code parameters. Use a filter to set up report parameters more precisely.  To print the **Sales tax** **by customer - Belgium** report, click **Tax** &gt; **Inquiries and reports** &gt; **Sales tax reports** &gt; **Sales tax** **by customer - Belgium**.
 
-![Belgian sales tax by customer generated report](media/6_Sales_tax_by_customer.png)
+![Belgian sales tax by customer generated report.](media/6_Sales_tax_by_customer.png)
 
 ## Sales tax by vendor - Belgium
 
@@ -123,7 +123,7 @@ This report can be generated as follows:
 The parameters for this report give you lots of flexibility. You can get a very precise report by selecting the vendor account, date, or sales tax code parameters. Use a filter to set up report parameters more precisely. 
 To print the **Sales tax** **by vendor - Belgium** report, click **Tax** &gt; **Inquiries and reports** &gt; **Sales tax reports** &gt; **Sales tax** **by vendor - Belgium**.
 
-![Belgian sales tax by vendor generated report](media/7_Sales_tax_by_vendor.png)
+![Belgian sales tax by vendor generated report.](media/7_Sales_tax_by_vendor.png)
 
 ## Purchase sales tax transactions
 The **Purchase sales tax transactions** report shows transactions that have a purchase duty. The purchase duty is calculated and posted together with sale tax payments. Both purchase duties and sales taxes are reported for the settlement period. 
@@ -132,7 +132,7 @@ The information in the header section of the report provides includes relevant d
 The information in the details section includes the journal, voucher, date, vendor account, name, amount inclusive of sales tax, and sales tax reporting codes. This report is an external report. The accountant or accounting manager periodically generates it and submits to the appropriate authorities. 
 To print the **Purchase sales tax transactions** report, click **Tax** &gt; **Inquiries and reports** &gt; **Sales tax reports** &gt;**Purchase sales tax transactions**.
 
-![Purchase sales tax transactions generated report](media/8_Purchase_sales_tax_transactions.png)
+![Purchase sales tax transactions generated report.](media/8_Purchase_sales_tax_transactions.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

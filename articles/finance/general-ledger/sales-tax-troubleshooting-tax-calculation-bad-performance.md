@@ -41,7 +41,7 @@ Next, you can determine whether any of the following conditions are met:
 - Multiple sessions process the same transaction tax calculation at the same time.
 - The transaction has multiple lines, and the views are updated in real time. For example, the **Calculated sales tax amount** field on the **General journal** page is updated in real time when a line's fields are changed.
 
-   [![Calculated sales tax amount field on the Jounal voucher page](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
+   [![Calculated sales tax amount field on the Jounal voucher page.](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
 
 If any of these conditions are met, delay the tax calculation.
 
@@ -58,11 +58,11 @@ Review the call stack timeline to determine whether the following issues exist. 
 
 - The transaction causes the system to stop responding until the session ends. Therefore, the transaction can't calculate the tax result. The following illustration shows the "Session ended" message box that you receive.
 
-    [![Session ended message](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
+    [![Session ended message.](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
 
 - The **TaxUncommitted** methods take more time than other methods. For example, in the following illustration, the **TaxUncommitted::updateTaxUncommitted()** method takes 43,347.42 seconds, but other methods take 0.09 seconds.
 
-    [![Method durations](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
+    [![Method durations.](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
 
 ## Customizing and calling tax calculation
 

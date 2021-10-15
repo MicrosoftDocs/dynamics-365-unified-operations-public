@@ -33,11 +33,11 @@ ms.dyn365.ops.version: Human Resources
 
 The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Microsoft Teams. Employees can interact with a bot to request information. The **Time off** tab provides more detailed information. In addition, they can send people information about upcoming time off in teams and chats outside the Human Resources app.
 
-![Human Resources Teams leaves app bot](./media/hr-teams-leave-app-bot.png)
+![Human Resources Teams leaves app bot.](./media/hr-teams-leave-app-bot.png)
 
-![Human Resources Teams leave app Time off tab](./media/hr-teams-leave-app-timeoff-tab.png)
+![Human Resources Teams leave app Time off tab.](./media/hr-teams-leave-app-timeoff-tab.png)
 
-![Human Resources leave request card](./media/hr-teams-leave-app-chat-card.png)
+![Human Resources leave request card.](./media/hr-teams-leave-app-chat-card.png)
 
 ## Install and setup
 
@@ -62,11 +62,11 @@ If you want users to receive leave request notifications in the Teams app, you m
 
 4. On the **General** tab, set **Enable notifications for Teams app** to **Yes**.
 
-   ![Enable Teams app notifications in System Parameters](./media/hr-admin-teams-leave-app-enable-notifications.png)
+   ![Enable Teams app notifications in System Parameters.](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
 5. To turn on Teams notifications for all users, select **Yes** at the prompt.
 
-   ![Enable Teams notifications for all users](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+   ![Enable Teams notifications for all users.](./media/hr-admin-teams-leave-app-notifications-all-users.png)
 
 ### Turn Teams notifications on or off for individual users
 
@@ -82,7 +82,7 @@ After you've enabled notifications for the Dynamics 365 Human Resources Teams ap
 
 5. Set **Enable notifications for Teams app** to **Yes** to enable notifications for the user or **No** to disable notifications for the user.
 
-   ![Enable Teams app notifications in User options Workflow tab](./media/hr-admin-teams-leave-app-notifications.png)
+   ![Enable Teams app notifications in User options Workflow tab.](./media/hr-admin-teams-leave-app-notifications.png)
 
 6. Select **Save**.
 

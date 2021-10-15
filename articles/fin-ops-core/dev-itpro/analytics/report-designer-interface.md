@@ -176,24 +176,24 @@ The standard toolbar provides quick access to file and edit commands. This toolb
 
 | Button                                                                                       | Description |
 |----------------------------------------------------------------------------------------------|-------------|
-| [![New button](./media/rowc130389.png)](./media/rowc130389.png)                              | Create a new (empty) report definition, row definition, column definition, or reporting tree definition. |
-| [![Open button](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Open an existing row definition, column definition, reporting tree definition, or report definition. |
-| [![Save button](./media/savec130389.png)](./media/savec130389.png)                           | Save the current row definition, column definition, reporting tree definition, or report definition. |
-| [![Copy button](./media/copyc130389.png)](./media/copyc130389.png)                           | Copy the selected text to the clipboard. |
-| [![Cut button](./media/cutc130389.png)](./media/cutc130389.png)                              | Delete the selected text, and copy it to the clipboard. |
-| [![Paste button](./media/pastec130389.png)](./media/pastec130389.png)                        | Insert the text from the clipboard. |
-| [![Undo button](./media/undoc130389.png)](./media/undoc130389.png)                           | Undo the last action. |
-| [![Redo button](./media/redoc130389.png)](./media/redoc130389.png)                           | Reverse the last undo action. |
-| [![Find button](./media/findc130389.png)](./media/findc130389.png)                           | Open the **Find and Replace** dialog box, where you can search and replace text in the active window. |
-| [![Insert row button](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Insert an empty row into the row definition or an empty header row into the column definition. This button is available from a row definition or column definition. |
-| [![Insert column button](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Insert an empty column into the column definition. This button is available from a column definition. |
-| [![Lock button](./media/lockc130389.png)](./media/lockc130389.png)                           | Apply a password to the current building block. This button is available to users who have the **Designer** or **Administrator** role. |
-| [![Row link button](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Open the **Row Links** dialog box, where you can specify the sources for data links in row definitions and reporting tree definitions. This button is available from a row definition. |
-| [![Promote button](./media/promotec130389.png)](./media/promotec130389.png)                  | Promote a unit of the reporting tree definition. When you select a child unit and then click **Promote**, the child unit is moved to the same level as its parent unit. |
-| [![Demote button](./media/demotec130389.png)](./media/demotec130389.png)                     | Demote a unit of the reporting tree definition. When you select a unit and then click **Demote**, the unit becomes a child of the unit that precedes it. |
-| [![Expand button](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Expand all units of the reporting tree definition at the level of the selected unit. |
-| [![Collapse button](./media/collapsec130389.png)](./media/collapsec130389.png)               | Collapse the reporting tree. |
-| [![Help button](./media/helpc130389.png)](./media/helpc130389.png)                           | Open Help. |
+| [![New button.](./media/rowc130389.png)](./media/rowc130389.png)                              | Create a new (empty) report definition, row definition, column definition, or reporting tree definition. |
+| [![Open button.](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Open an existing row definition, column definition, reporting tree definition, or report definition. |
+| [![Save button.](./media/savec130389.png)](./media/savec130389.png)                           | Save the current row definition, column definition, reporting tree definition, or report definition. |
+| [![Copy button.](./media/copyc130389.png)](./media/copyc130389.png)                           | Copy the selected text to the clipboard. |
+| [![Cut button.](./media/cutc130389.png)](./media/cutc130389.png)                              | Delete the selected text, and copy it to the clipboard. |
+| [![Paste button.](./media/pastec130389.png)](./media/pastec130389.png)                        | Insert the text from the clipboard. |
+| [![Undo button.](./media/undoc130389.png)](./media/undoc130389.png)                           | Undo the last action. |
+| [![Redo button.](./media/redoc130389.png)](./media/redoc130389.png)                           | Reverse the last undo action. |
+| [![Find button.](./media/findc130389.png)](./media/findc130389.png)                           | Open the **Find and Replace** dialog box, where you can search and replace text in the active window. |
+| [![Insert row button.](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Insert an empty row into the row definition or an empty header row into the column definition. This button is available from a row definition or column definition. |
+| [![Insert column button.](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Insert an empty column into the column definition. This button is available from a column definition. |
+| [![Lock button.](./media/lockc130389.png)](./media/lockc130389.png)                           | Apply a password to the current building block. This button is available to users who have the **Designer** or **Administrator** role. |
+| [![Row link button.](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Open the **Row Links** dialog box, where you can specify the sources for data links in row definitions and reporting tree definitions. This button is available from a row definition. |
+| [![Promote button.](./media/promotec130389.png)](./media/promotec130389.png)                  | Promote a unit of the reporting tree definition. When you select a child unit and then click **Promote**, the child unit is moved to the same level as its parent unit. |
+| [![Demote button.](./media/demotec130389.png)](./media/demotec130389.png)                     | Demote a unit of the reporting tree definition. When you select a unit and then click **Demote**, the unit becomes a child of the unit that precedes it. |
+| [![Expand button.](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Expand all units of the reporting tree definition at the level of the selected unit. |
+| [![Collapse button.](./media/collapsec130389.png)](./media/collapsec130389.png)               | Collapse the reporting tree. |
+| [![Help button.](./media/helpc130389.png)](./media/helpc130389.png)                           | Open Help. |
 
 ### Formatting toolbar
 
@@ -201,16 +201,16 @@ The formatting toolbar provides easy access to style commands. This toolbar incl
 
 | Button                                                                                                       | Description                                             |
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Font style button](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Apply the selected font style to the current text.      |
-| [![Font button](./media/fonttype.png)](./media/fonttype.png)                                                 | Set the current text to the selected font.              |
-| [![Font size button](./media/fontsize.png)](./media/fontsize.png)                                            | Set the current text to selected font size (in points). |
-| [![Bold button](./media/boldc130389.png)](./media/boldc130389.png)                                           | Make the current text bold.                             |
-| [![Italic button](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Make the current text italic.                           |
-| [![Underline button](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Underline the current text.                             |
-| [![Decrease indent button](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Decrease the indent of the current text.                |
-| [![Increase indent button](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Increase the indent of the current text.                |
-| [![Background color button](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Change the background color of the current cell.        |
-| [![Font color button](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Change the color of the current text.                   |
+| [![Font style button.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Apply the selected font style to the current text.      |
+| [![Font button.](./media/fonttype.png)](./media/fonttype.png)                                                 | Set the current text to the selected font.              |
+| [![Font size button.](./media/fontsize.png)](./media/fontsize.png)                                            | Set the current text to selected font size (in points). |
+| [![Bold button.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Make the current text bold.                             |
+| [![Italic button.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Make the current text italic.                           |
+| [![Underline button.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Underline the current text.                             |
+| [![Decrease indent button.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Decrease the indent of the current text.                |
+| [![Increase indent button.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Increase the indent of the current text.                |
+| [![Background color button.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Change the background color of the current cell.        |
+| [![Font color button.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Change the color of the current text.                   |
 
 ### Report designer toolbar
 
@@ -218,12 +218,12 @@ The report designer toolbar provides quick access to commands for navigating wit
 
 | Button                                                                                              | Description |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Report definition button](./media/reportc130389.png)](./media/reportc130389.png)                 | Show the report definition that is listed on the **Window** menu. |
-| [![Row definition button](./media/rowc130389.png)](./media/rowc130389.png)                          | Show the row definition that is assigned to the active report definition. |
-| [![Column definition button](./media/columnc130389.png)](./media/columnc130389.png)                 | Show the column definition that is assigned to the active report definition. |
-| [![Reporting tree definition button](./media/treec130389.png)](./media/treec130389.png)             | Show the reporting tree definition that is assigned to the active report definition. |
-| [![Report Viewer button](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Start the Report Viewer and show the most recent version of the generated report. This button is available from a report definition if you've generated at least one report. |
-| [![Generate report button](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generate a report from the active report definition. This button is available from a report definition. |
+| [![Report definition button.](./media/reportc130389.png)](./media/reportc130389.png)                 | Show the report definition that is listed on the **Window** menu. |
+| [![Row definition button.](./media/rowc130389.png)](./media/rowc130389.png)                          | Show the row definition that is assigned to the active report definition. |
+| [![Column definition button.](./media/columnc130389.png)](./media/columnc130389.png)                 | Show the column definition that is assigned to the active report definition. |
+| [![Reporting tree definition button.](./media/treec130389.png)](./media/treec130389.png)             | Show the reporting tree definition that is assigned to the active report definition. |
+| [![Report Viewer button.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Start the Report Viewer and show the most recent version of the generated report. This button is available from a report definition if you've generated at least one report. |
+| [![Generate report button.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generate a report from the active report definition. This button is available from a report definition. |
 
 ## Additional resources
 

@@ -65,7 +65,7 @@ Although the *Batch-below\[location\]* reservation hierarchy serves the company'
 
 To accommodate the desired flexibility in the batch reservation behavior for items that are associated with a *Batch-below\[location\]* inventory reservation hierarchy, inventory managers must select the **Allow reservation on demand order** check box for the **Batch number** level on the **Inventory reservation hierarchies** page.
 
-![Making the inventory reservation hierarchy flexible](media/Flexible-inventory-reservation-hierarchy.png)
+![Making the inventory reservation hierarchy flexible.](media/Flexible-inventory-reservation-hierarchy.png)
 
 When the **Batch number** level in the hierarchy is selected, all dimensions above that level and up through the **Location** level will be automatically selected. (By default, all dimensions above the **Location** level are preselected.) This behavior reflects the logic where all dimensions in the range between the batch number and location are also automatically reserved after you reserve a specific batch number on the order line.
 
@@ -152,7 +152,7 @@ For this example, demo data must be installed, and you must use the **USMF** dem
 
 6. On the **Batch reservation** page, select the line for batch **B11**, and then select **Reserve line**. There is no designated logic for assigning locations and license plates during automatic reservation. You can manually enter the quantity in the **Reservation** field. Notice that, on the **Batch numbers committed to source line** FastTab, batch **B11** is shown as **Committed**.
 
-    ![Committing a specific batch number to a sales order line on the Batch reservation page](media/Batch-reservation-form-with-order-committed-reservation.png)
+    ![Committing a specific batch number to a sales order line on the Batch reservation page.](media/Batch-reservation-form-with-order-committed-reservation.png)
 
     > [!NOTE]
     > Reservation of the quantity on a sales order line can be done across multiple batches. Likewise, reservation of the same batch can be done against multiple locations and license plates (if license plates are enabled for the locations).
@@ -161,7 +161,7 @@ For this example, demo data must be installed, and you must use the **USMF** dem
 
 7. Go to **Product information management** \> **Products** \> **Released products**. Select your item, and then select **Manage inventory** \> **View** \> **Transactions**.
 
-    ![Order-committed reservation as an inventory transaction type](media/Inventory-transactions-for-order-committed-reservation.png)
+    ![Order-committed reservation as an inventory transaction type.](media/Inventory-transactions-for-order-committed-reservation.png)
 
 8. Review the item's inventory transactions that are related to the sales order line reservation.
 
@@ -179,7 +179,7 @@ For this example, demo data must be installed, and you must use the **USMF** dem
     - To create work, the system uses work templates but not location directives. All the standard settings that are defined for work templates, such as a maximum number of pick lines or a specific unit of measure, will be applied to determine when new work should be created. However, the rules that are associated with location directives for identifying pick locations aren't considered, because the order-committed reservation already specifies all the inventory dimensions. Those inventory dimensions include the dimensions at the warehouse storage level. Therefore, the work inherits those dimensions without having to consult location directives.
     - The batch number isn't shown on the pick line (as is the case for the work line that is created for an item that has an associated *Batch-above\[location\]* reservation hierarchy.) Instead, the "from" batch number and all other storage dimensions are shown on the work line's work inventory transaction that is referenced from the associated inventory transactions.
 
-        ![Warehouse inventory transaction for work that originates from order-committed reservation](media/Work-inventory-transactions-for-order-committed-reservation.png)
+        ![Warehouse inventory transaction for work that originates from order-committed reservation.](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
     - After work is created, the item's inventory transaction where the **Reference** field is set to **Order-committed reservation** is removed. The inventory transaction where the **Reference** field is set to **Work** now holds the physical reservation on all the quantity's inventory dimensions.
 
@@ -214,7 +214,7 @@ Before you can use flexible license plate reservation, two features must be turn
 
 To enable license plate reservation on an order, you must select the **Allow reservation on demand order** check box for the **License plate** level on the **Inventory reservation hierarchies** page for the hierarchy that is associated with the relevant item.
 
-![Inventory reservation hierarchies page for a flexible license plate reservation hierarchy](media/Flexible-LP-reservation-hierarchy.png)
+![Inventory reservation hierarchies page for a flexible license plate reservation hierarchy.](media/Flexible-LP-reservation-hierarchy.png)
 
 You can enable license plate reservation on the order at any point in your deployment. This change won't affect any reservations or open warehouse work that were created before the change occurred. However, you can't clear the **Allow reservation on demand order** check box if open outbound inventory transactions that have an issue status of *On order*, *Reserved ordered*, or *Reserved physical* exist for one or more items that are associated with that reservation hierarchy.
 
@@ -234,7 +234,7 @@ When the sales order line that uses an order-committed license plate reservation
 
 If a warehouse work item consists of lines that equal a complete pallet and have license plate–committed quantities, you can optimize the picking process by using a mobile device menu item where the **Handle by license plate** option is set to *Yes*. A warehouse worker can then scan a license plate to complete a pick instead of having to scan the items from the work one by one.
 
-![Mobile device menu item where the Handle by license plate option is set to Yes](media/Handle-by-LP-menu-item.png)
+![Mobile device menu item where the Handle by license plate option is set to Yes.](media/Handle-by-LP-menu-item.png)
 
 Because the **Handle by license plate** functionality doesn't support work that covers multiple pallets, it's better to have a separate work item for different license plates. To use this approach, add the **Order-committed license plate ID** field as a work header break on the **Work template** page.
 
@@ -256,7 +256,7 @@ This scenario refers to values and records that are included in the standard dem
 1. In the **Name** field, enter a value (for example, *FlexibleLP*).
 1. In the **Description** field, enter a value (for example, *Flexible LP reservation*).
 1. In the **Selected** list, select **Batch number**, **Serial number**, and **Owner**.
-1. Select the **Remove** button ![backward arrow](media/backward-button.png) to move the selected records to the **Available** list.
+1. Select the **Remove** button ![backward arrow.](media/backward-button.png) to move the selected records to the **Available** list.
 1. Select **OK**.
 1. In the row for the **License plate** dimension level, select the **Allow reservation on demand order** check box. The **Location** level is automatically selected, and you can't clear the check box for it.
 1. Select **Save**.
@@ -865,7 +865,5 @@ The following tables provide an overview that shows how the system handles order
 - [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Pick oldest batch on a mobile device](pick-oldest-batch.md)
 - [Batch and license plate confirmation](batch-and-license-plate-confirmation.md)
-- [Troubleshoot reservations in warehouse management](troubleshoot-warehouse-reservations.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

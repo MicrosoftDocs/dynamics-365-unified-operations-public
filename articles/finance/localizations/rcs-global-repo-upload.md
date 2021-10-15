@@ -56,7 +56,7 @@ If an RCS environment has been already provisioned for your company, use the pag
 5. Enter a name and description, and then select **Create configuration** to create a new derived version.
 6. Select the newly derived configuration, add a description of the version, and then select **OK**. The status of the configuration to is changed to **Completed**.
 
-![New configuration version in RCS](media/RCS_CompleteConfig.JPG)
+![New configuration version in RCS.](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > When the configuration status is changed, you might receive a validation error message that is related to the connected applications. To turn off the validation, on the Action Pane on the **Configurations** tab, select **User parameters**, and then set the **Skip validation at configuration's status change and rebase** option to **Yes** 
@@ -68,7 +68,7 @@ To share a new or derived configuration with your organization, you can upload i
 1. Select the completed version of the configuration, and then select **Upload into repository**.
 2. Select the **Global (Microsoft)** option, and then select **Upload**.
 
-    ![Upload into repository options](media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![Upload into repository options.](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. In the confirmation message box, select **Yes**. 
 4. Update the description of the version as required, and then select **OK**. 
@@ -78,7 +78,7 @@ The status of the configuration is updated to **Share**, and the configuration i
 - Import it into your Dynamics 365 instance. For more information, see [(ER) Import configurations from RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - Share it with a third party or an external organization, see [RCS Share Electronic reporting (ER) configurations with external organizations](rcs-global-repo-share-configuration.md)
 
-    ![Derived Intrastat Contoso configuration version in the Global repository](media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Derived Intrastat Contoso configuration version in the Global repository.](media/RCS_Config_upload_GlobalRepo.JPG)
 
 ## Delete a configuration from the Global repository
 Complete the following steps to delete a configuration that your organization has created.
@@ -89,11 +89,11 @@ Complete the following steps to delete a configuration that your organization ha
 4. On the **Filter** FastTab, find the configuration that you want to delete by using the **Filter** functionality.
 5. On the **Version** FastTab, select the version of the configuration that you want to delete, and then select **Delete**:
 
-    ![Delete configuration from global repository](media/RCS_Delete_from_GlobalRepo.JPG)
+    ![Delete configuration from global repository.](media/RCS_Delete_from_GlobalRepo.JPG)
 
 6. In the confirmation message box, select **Yes**.
 
-    ![Delete configuration version confirmation message](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+    ![Delete configuration version confirmation message.](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
  
 The configuration version is deleted, and confirmation message is shown. 
 

@@ -73,11 +73,11 @@ The source data that is used to import bank groups can be presented as a Microso
 
 When the Bank account setup enhancement feature is turned on, two additional descriptive fields, **Branch name** and **City**, become available for bank groups.
 
-![Branch name and City fields](media/emea-ita-exil-bank-pic.jpg)
+![Branch name and City fields.](media/emea-ita-exil-bank-pic.jpg)
 
 During the setup of a bank account, the additional descriptive fields for bank groups are available and allow for more precise selection of a bank.
 
-![Additional descriptive fields in a bank account setup](media/emea-ita-exil-bank-pic2.jpg)
+![Additional descriptive fields in a bank account setup.](media/emea-ita-exil-bank-pic2.jpg)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

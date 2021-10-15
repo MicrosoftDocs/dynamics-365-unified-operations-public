@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Vendor payment overview
-description: This task guide will walk you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment. 
+description: This procedure walks you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment. 
 author: kweekley
 ms.date: 06/25/2019
 ms.topic: business-process 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang:  
 ms.reviewer: roschlom
 # ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
@@ -27,14 +27,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide will walk you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment. This procedure uses the USMF demo company.
+This procedure walks you through various methods used to create vendor payments, including how to use a payment proposal or manually entering a one-off payment. This procedure uses the USMF demo company.
 
 1. Go to **Navigation pane > Modules > Accounts payable > Payments > Payment journal**.
 2. Click **New**.
 3. Select the payment journal in which to save the vendor payments. 
 4. Select the journal or manually enter it.
 5. Click **Lines**.
-6. On **Ation pane**, click **Payment proposal**.
+6. On the **Action pane**, click **Payment proposal**.
 7. Click **Create payment proposal**. The payment proposal is a query used to select invoices for payment. You can edit the list of invoices to pay before creating or generating the vendor payments.
 8. Select invoices for payment by due date, cash discount, or both. 
 9. Enter the date for comparing to the due date or cash discount. 

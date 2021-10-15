@@ -49,7 +49,7 @@ Perspectives are now modeled using add-ins for Visual Studio. (Visual Studio is 
 -   Expose data to PowerBI.
 -   Access data programmatically using the AXQuery object.
 
-[![how-perspectives-are-used](./../media/how-perspectives-are-used.png)](./../media/how-perspectives-are-used.png)  
+[![how-perspectives-are-used.](./../media/how-perspectives-are-used.png)](./../media/how-perspectives-are-used.png)  
 
 
 

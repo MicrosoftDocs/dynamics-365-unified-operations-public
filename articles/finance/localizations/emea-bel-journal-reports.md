@@ -2,7 +2,7 @@
 # required metadata
 
 title: Journal reports
-description: This topic explains how to work with journal reports that are specific to legal entitie with a primary address in Belgium. 
+description: This topic explains how to work with journal reports that are specific to legal entities with a primary address in Belgium. 
 author: anasyash
 ms.date: 04/08/2021
 ms.topic: article
@@ -58,7 +58,7 @@ You can set the following parameters when you generate a report.
 | Journal | Select the name of the sales journal to use to post transactions to the general ledger account. |
 | From date | Select or enter the start date of the reporting period. |
 | To date | Select or enter the end date of the reporting period. |
-| Final print | Set to **Yes** to print the final version of the report.</br>When you select **Final print**, the following occurs:</br><ol style="list-style-type: decimal"></br><li>The **From date** you selected must belong to the period following the period of the last final printout end date. This validation depends on the value entered in the **Journal** field. If the field is empty, all of the posting journals that belong to this type (purchase, sales, financial, or other) are validated.</li></br><li>The page number of the report is sequential. The page number of the previous periods +1 is used as basis for the new numbering. Page numbering starts at zero for each new fiscal year.</li></br><li>A new line is added in the final print form for each posting journal.</li></br></ol> |
+| Final print | Set to **Yes** to print the final version of the report.</br>When you select **Final print**, the following occurs:</br><ol></br><li>The **From date** you selected must belong to the period following the period of the last final printout end date. This validation depends on the value entered in the **Journal** field. If the field is empty, all of the posting journals that belong to this type (purchase, sales, financial, or other) are validated.</li></br><li>The page number of the report is sequential. The page number of the previous periods +1 is used as basis for the new numbering. Page numbering starts at zero for each new fiscal year.</li></br><li>A new line is added in the final print form for each posting journal.</li></br></ol> |
 | Compress | Select this option to group amounts on the same ledger account in the same voucher into one line.</br><ul></br><li>When set to **No**, each transaction is shown on a separate line.</li></br><li>When set to **Yes**, transactions are grouped by account and shown as one summarized line.</li></br></ul> |
 
 
@@ -187,7 +187,7 @@ To print the **Sales journal** report, follow these steps:
 7. In the **To date** field, select 4/30/2021.
 8. In the **Final print** field, select **Yes**. Select **OK** to review the report.
 
-    ![eSales journal report](media/emea-bel-journal-reports-sales-journal-report.png)
+    ![eSales journal report.](media/emea-bel-journal-reports-sales-journal-report.png)
 
 ### Print the Purchase journal report
 
@@ -213,10 +213,10 @@ To print the **Purchase journal** report, follow these steps:
 12. In the **To date** field, select 4/30/2021.
 13. In the **Final print** field, select **Yes**. Select **OK** to view the report.
 
-![Purchase journal report page 1](media/emea-bel-journal-reports-purchase-journal-report-1.png)
-![Purchase journal report page 2](media/emea-bel-journal-reports-purchase-journal-report-2.png)
-![Purchase journal report page 3](media/emea-bel-journal-reports-purchase-journal-report-3.png)
-![Purchase journal report page 4](media/emea-bel-journal-reports-purchase-journal-report-4.png)
+![Purchase journal report page 1.](media/emea-bel-journal-reports-purchase-journal-report-1.png)
+![Purchase journal report page 2.](media/emea-bel-journal-reports-purchase-journal-report-2.png)
+![Purchase journal report page 3.](media/emea-bel-journal-reports-purchase-journal-report-3.png)
+![Purchase journal report page 4.](media/emea-bel-journal-reports-purchase-journal-report-4.png)
 
 ### Print the Financial journal report
 
@@ -242,9 +242,9 @@ To print the **Financial journal** report, follow these steps:
 8. In the **To date** field, select 4/30/2021.
 9. In the **Final print** field select **Yes**. Select **OK** to review the report.
 
-![Financial journal report page 1](media/emea-bel-journal-reports-financial-journal-report.png)
+![Financial journal report page 1.](media/emea-bel-journal-reports-financial-journal-report.png)
 
-![Financial journal report page 2](media/emea-bel-journal-reports-financial-journal-report-2.png)
+![Financial journal report page 2.](media/emea-bel-journal-reports-financial-journal-report-2.png)
 
 ### Print the Other journal report
 
@@ -271,8 +271,8 @@ To print the **Other journal** report, follow these steps:
 9. In the **Final print** field, select **Yes**.
 10. Select **OK** and review the report result.
 
-![Other journals report page 1](media/emea-bel-journal-reports-other-journal-report-1.png)
-![Other journals report page 2](media/emea-bel-journal-reports-other-journal-report-2.png)
+![Other journals report page 1.](media/emea-bel-journal-reports-other-journal-report-1.png)
+![Other journals report page 2.](media/emea-bel-journal-reports-other-journal-report-2.png)
 
 ### Print overview journal report
 
@@ -283,4 +283,4 @@ To print the **Overview journal** report, follow these steps:
 3. In the **To date** field, select 5/31/2021.
 4. Select **OK** and review the report result.
 
-![Overview journal report](media/emea-bel-journal-reports-overview-journal-report.png)
+![Overview journal report.](media/emea-bel-journal-reports-overview-journal-report.png)

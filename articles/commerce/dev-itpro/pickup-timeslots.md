@@ -39,7 +39,7 @@ The time slot feature gives retailers a way to define a time slot for items that
 
 The following illustration shows an example of time slot selection during e-commerce checkout.
 
-![Example of time slot selection during e-commerce checkout](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Example of time slot selection during e-commerce checkout.](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## Time slot properties
 
@@ -65,7 +65,7 @@ A time slot is defined by using the following properties:
 - **Active Days** – Specify the days of the week when the pickup time slots are active. This property lets the retailer define the days when it wants to support pickup orders.
 - **Retail Channels** – Specify the retail channels. Each time slot can be associated with one or more retail stores. Depending on each store's hours of operation, one or more time slot entries can be created and associated with a channel. 
 
-<!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+<!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 Only one time slot template can be configured per channel. These channels include brick-and-mortar stores, call centers, mobile devices, and e-Commerce sites.
 
@@ -90,14 +90,14 @@ To configure the time slot feature in Commerce headquarters, follow these steps.
     > [!NOTE]
     > You can create multiple templates, but only one template can be associated with a single channel or store.
 
-    ![Order Pickup - Time Settings dialog box](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
+    ![Order Pickup - Time Settings dialog box.](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
 
 1. When you've finished, select **OK**.
 1. If the time slots in a day will vary, create additional entries on the **Order Pickup - Time Settings** FastTab to ensure that the dates and times don't overlap.
 1. On the **Retail Channels** FastTab, select **Add** to associate the time slot template with the stores or channels where it will be used.
 1. In the **Choose organization nodes** dialog box, use the arrow buttons to select (or clear the selection of) the stores, regions, and organizations that the template should be associated with.
 
-    <!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+    <!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 1. When you've finished, select **OK**.
 1. On the **Distribution schedule** page, run the **1070** and **1135** jobs to sync the data to the channels.
@@ -108,7 +108,7 @@ At the POS, when an order or order line is identified for pickup, the cashier ca
 
 The following illustration shows an example of time slot selection for a POS order.
 
-![An example of time slot selection for a POS order](../dev-itpro/media/Curbside_timeslot_POS.png)
+![An example of time slot selection for a POS order.](../dev-itpro/media/Curbside_timeslot_POS.png)
 
 ## Time slot selection for e-commerce orders
 
@@ -119,13 +119,13 @@ For information about how to make time slot selection available for e-commerce o
 
 The following illustration shows an example of an e-commerce order where a pickup time slot has been selected.
 
-![Example of an e-commerce order where a pickup time slot has been selected](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Example of an e-commerce order where a pickup time slot has been selected.](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## Time slot selection for call center orders
 
 In the call center app, call center agents can select the pickup store or location, as well as a date and time slot as highlighted in the following illustration.
 
-![Example of a call center order where a pickup time slot has been selected](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+![Example of a call center order where a pickup time slot has been selected.](../dev-itpro/media/Curbside_timeslot_callcenter.png)
 
 ## Additional resources
 

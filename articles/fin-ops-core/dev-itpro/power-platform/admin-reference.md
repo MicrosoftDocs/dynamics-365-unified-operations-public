@@ -139,13 +139,13 @@ Due to the large number of OData enabled entities available in Finance and Opera
 
 2. Look for “Available Finance and Operations Entities” and select **Results**.
 
-![Catalog](../media/fovecatalog.png)
+![Catalog.](../media/fovecatalog.png)
 
 3. Locate and open the entity that you want to enable.
 
 4. Set **Visible** to **Yes** and save. This will generate the virtual entity, so that it will appear in all of the appropriate menus, such as the advanced find dialog box.
 
-![Enable VE](../media/foveenable.png)
+![Enable VE.](../media/foveenable.png)
 
 ## Refreshing virtual entity metadata
 
@@ -166,7 +166,7 @@ To consume virtual entities:
 
 From the development tooling, existing elements such as forms can be modified for the virtual entity. Additionally, new forms, views, and other elements can also be added.
 
-![Solution](../media/fovesolution.png)
+![Solution.](../media/fovesolution.png)
 
 When the solution is exported, it will contain hard dependencies on the virtual entity generated in the MicrosoftOperationsERPVE solution.
 

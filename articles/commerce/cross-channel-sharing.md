@@ -51,15 +51,15 @@ To enable cross-channel sharing in Commerce site builder, follow these steps.
 1. Go to **Site settings \> Features**.
 1. Set the option for the **Cross Channel** feature to **On**.
 
-    ![Cross Channel option set to On in Commerce site builder](./media/enabling-cross-channel-sharing.png)
+    ![Cross Channel option set to On in Commerce site builder.](./media/enabling-cross-channel-sharing.png)
 
 After you enable cross-channel sharing, cross-channel information will appear in the **Channels** section at **Site settings \> Features**, as the example in the following illustration shows.
 
-![Channels information visible after cross-channel sharing is enabled](./media/channels-cross-channel.png)
+![Channels information visible after cross-channel sharing is enabled.](./media/channels-cross-channel.png)
 
 Additionally, after you enable cross-channel sharing, the **Channel** field in the upper right of Commerce site builder will include a **Cross Channel Online Store** option that you can use to manage cross-channel content, as shown in the following illustration.
 
-![Cross Channel Online Store option in the Channels field after cross-channel sharing is enabled](./media/cross-channel-dropdown.png)
+![Cross Channel Online Store option in the Channels field after cross-channel sharing is enabled.](./media/cross-channel-dropdown.png)
 
 ## Create and use cross-channel content
 

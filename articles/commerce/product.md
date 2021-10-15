@@ -43,7 +43,7 @@ Product recommendations are enabled for the following POS scenarios. They are av
 
     - If a store associate visits a **Product details** page when looking at previous transactions across different channels, the recommendations service suggests additional items that are likely to be purchased together.
 
-    [![Recommendations on the Product details page](./media/proddetails.png)](./media/proddetails.png)
+    [![Recommendations on the Product details page.](./media/proddetails.png)](./media/proddetails.png)
 
 2. On the **Transaction** page:
 
@@ -52,7 +52,7 @@ Product recommendations are enabled for the following POS scenarios. They are av
     > [!NOTE]
     > To display recommendations on the **Transaction** page, the retailer needs to update the screen layout in Dynamics 365 Commerce. The **Recommendations** control must be dropped onto the **Transaction** page.
 
-    [![Recommendations on the Transaction page](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Recommendations on the Transaction page.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
 ## Configure Commerce to enable POS recommendations
 

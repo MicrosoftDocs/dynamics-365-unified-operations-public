@@ -47,7 +47,7 @@ In the Analyze phase, we use the report to help estimate the effort that is requ
 
 The following illustration shows an overview of the process for configuring the Code upgrade service.
 
-![Configuration process for the Code upgrade service](media/codeUpgradeConfigurationProcess.png)
+![Configuration process for the Code upgrade service.](media/codeUpgradeConfigurationProcess.png)
 
 For information about how to configure the Code upgrade service, see [Configure the code upgrade service in Lifecycle Services (LCS)](../lifecycle-services/configure-execute-code-upgrade.md).
 

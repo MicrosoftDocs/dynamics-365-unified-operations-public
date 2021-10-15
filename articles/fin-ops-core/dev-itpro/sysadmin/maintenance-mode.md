@@ -47,7 +47,7 @@ You can now turn maintenance mode on and off directly through Lifecycle Services
 
 Turning maintenance mode on and off for your sandbox and production environment is very similar to a servicing operation. If turning maintenance mode on or off fails, you will see options such as **Resume**, **Rollback**, and **Abort**. You also have the option to **download the logs** to troubleshoot why the operation failed.
 
-## Turn maintenance mode on and off in DevTest/Demo environments hosted in a Microsoft subscription
+## Turn maintenance mode on and off in DevTest/Demo environments hosted in Customer's subscription
 1. Establish an RDP connection to the developer machine.
 2. On the developer machine, sign in to SQL Server by using the credentials for the axdbadmin user from LCS. Then switch to the AXDB database, and run the following command.
 
@@ -59,18 +59,17 @@ Turning maintenance mode on and off for your sandbox and production environment 
 4. After the service is restarted, the system will be in maintenance mode.
 5. When you've completed your maintenance mode activities, repeat steps 2 and 3, but set the value to 0 in step 2.
 
-## Turn maintenance mode on and off in DevTest/Demo environments and VHD-based environments hosted in customers' subscription
+## Turn maintenance mode on and off for VHD-based environments hosted by customers
 
 You can turn on maintenance mode locally by running the following command. 
 
 > [!Note]
 > On some virtual machines (VMs), the exact location of the Deployment.Setup.exe tool might differ. Check AosServiceWebRootbin.
->
->
->    ```Console
->    J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir 
->    J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode true
->    ```
+
+```Console
+J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode true
+```
+After running the command, you will want to restart the **World Wide Web Publishing Service** to reset IIS. The system will then be in maintenance mode.  
 
 The following table describes the parameters that are used in this command.
 
@@ -88,7 +87,7 @@ The following table describes the parameters that are used in this command.
 
 After the instance of Application Object Server (AOS) is restarted, the system will be in maintenance mode. You can then enable configuration keys, as shown in the following screenshot. 
 
-[![License configuration page when not in maintenance mode](./media/license-configuration-page-when-not-in-maintenance-mode.png)](./media/license-configuration-page-when-not-in-maintenance-mode.png) 
+[![License configuration page when not in maintenance mode.](./media/license-configuration-page-when-not-in-maintenance-mode.png)](./media/license-configuration-page-when-not-in-maintenance-mode.png) 
 
 If you try to access the system while in maintenance mode, but you aren't a system administrator or a user who has the **Maintenance mode user** role, you may receive an error message. 
 
@@ -97,7 +96,7 @@ You can turn off maintenance mode by running the following command.
 ```Console
 J:\AosService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir J:\AosService\PackagesLocalDirectory --bindir J:\AosService\PackagesLocalDirectory\Bin --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ********* --setupmode maintenancemode --isinmaintenancemode false
 ```
-
+After running the command, you will want to restart the **World Wide Web Publishing Service** to reset IIS. The system will then be out of maintenance mode.  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

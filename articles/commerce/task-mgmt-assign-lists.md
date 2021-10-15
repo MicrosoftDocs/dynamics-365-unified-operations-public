@@ -50,7 +50,7 @@ To start the process of assigning a task list, follow these steps.
 
 The following illustration shows an example of how to find and select stores in the **Start process** dialog box.
 
-![Finding and selecting stores in the Start process dialog box](media/HQ-Assign-Tasks-Lists.png)
+![Finding and selecting stores in the Start process dialog box.](media/HQ-Assign-Tasks-Lists.png)
 
 ## Assign task lists on a recurring basis
 
@@ -67,7 +67,7 @@ Retailer sometimes have recurrent tasks, such as "Thursday closure checklist" or
 
 The following illustration shows an example of how to enter frequency criteria in the **Define recurrence** dialog box.
 
-![Entering frequency criteria in the Define recurrence dialog box](media/HQ-Assign-Tasks-Lists-Recurrently.png)
+![Entering frequency criteria in the Define recurrence dialog box.](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
 ## Track task list status
 

@@ -5,7 +5,6 @@ title: RIGHT ER function
 description: This topic provides information about how the RIGHT Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/10/2019
-ms.topic: article
 ms.prod: 
 ms.technology: 
 

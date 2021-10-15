@@ -300,7 +300,7 @@ Before you start the package, you must add an entry for the Commerce Scale Unit 
 
 The following illustration shows an example of a web.config file.
 
-[![Commerce Scale Unit web.config file](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)
+[![Commerce Scale Unit web.config file.](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)
 
 ### Shared Hardware station web.config
 

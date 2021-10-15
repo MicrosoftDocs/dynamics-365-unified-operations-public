@@ -37,7 +37,7 @@ Cash denominations for notes and coins can be defined in the back office to be u
 
 The denominations are set up per store on the **Set up** \> **Cash declaration** option from the store property page.
 
-![Cash declaration option](./media/image1-denomination.png)
+![Cash declaration option.](./media/image1-denomination.png)
 
 To define a denomination:
 
@@ -45,7 +45,7 @@ To define a denomination:
 1. Specify the type (coin or note).
 1. Specify the amount (value).
 
-![Cash declaration denominations page](./media/image2-denomination.png)
+![Cash declaration denominations page.](./media/image2-denomination.png)
 
 ## Configure the functionality profile
 

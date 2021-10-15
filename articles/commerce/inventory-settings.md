@@ -29,7 +29,6 @@ ms.dyn365.ops.version:
 # Apply inventory settings
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
@@ -73,15 +72,15 @@ Buy box, wishlist, store selector, cart, and cart icon modules use inventory set
 
 In the example in the following illustration, a PDP is showing an in-stock ("Available") message.
 
-![Example of a PDP module that has an in-stock message](./media/pdp-InStock.png)
+![Example of a PDP module that has an in-stock message.](./media/pdp-InStock.png)
 
 In the example in the following illustration, a PDP is showing an "Out of stock" message.
 
-![Example of a PDP module that has an out-of-stock message](./media/pdp-outofstock.png)
+![Example of a PDP module that has an out-of-stock message.](./media/pdp-outofstock.png)
 
 In the example in the following illustration, a cart is showing an in-stock ("Available") message.
 
-![Example of a cart module that has an in-stock message](./media/cart-instock.png)
+![Example of a cart module that has an in-stock message.](./media/cart-instock.png)
 
 ## Additional resources
 

@@ -37,18 +37,18 @@ In data entry scenarios, it is common for a user to attempt to identify an entit
 
 In data entry scenarios, it is common for a user to attempt to identify an entity in terms of some more descriptive or natural language attribute if that entity is formally identified by a synthetic key, such as a number sequence. A user will typically attempt to enter an **Account Name** instead of an **Account ID** for the **Customer Account** when creating a Sales Order. This is because most interaction with a customer is done using their actual name instead of some synthetic identifier. Unfortunately, any user’s attempt to enter an **Account Name** will fail because the **Customer account** control’s underlying foreign key relates to a field that is a synthetic key—a number sequence—and Dynamics AX 2012 (and older) will always attempt to validate the entered value directly. Therefore, if the **Account ID** was unknown to the user, the user would be forced to perform some type of searching step, such as opening the **Customer account** control’s lookup and filtering on the **Account Name** column to identify the correct **Account ID** (see the image below). 
 
-[![Example of filtering on Account name to identify correct Account ID](./media/howtocontextuallookups-3.png)](./media/howtocontextuallookups-3.png) 
+[![Example of filtering on Account name to identify correct Account ID.](./media/howtocontextuallookups-3.png)](./media/howtocontextuallookups-3.png) 
 
 This user experience is not optimal and is being addressed by data entry efficiency and productivity. The platform adds initial support for contextual data entry, where the system automatically attempts to understand whether the user’s entered data is in the context of the key field or some other more descriptive or well-understood field, and handle it appropriately. **For the remainder of this document, we’ll generically refer to these types of fields as ID (synthetic) and NAME (descriptive) fields, respectively.**
 
 ## Contextual lookup forms
 Just like keyboard data entry, all system-generated lookup forms are also now contextual, meaning that filtering and sorting occur in the context of the data the user has entered. Using the create a Sales Order scenario as an example, the user will see the lookup shown below if an ID is entered. 
 
-[![Customer account lookup form opened in the context of ID](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png) 
+[![Customer account lookup form opened in the context of ID.](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png) 
 
 If a NAME is entered, then the user will see the following lookup. Notice how the NAME column is moved first in the Grid, and how the lookup is sorted and filtered upon when the user’s data is in the context of NAME. 
 
-![Customer account lookup form opened in the context of NAME](./media/howtocontextuallookups-2.png)
+![Customer account lookup form opened in the context of NAME.](./media/howtocontextuallookups-2.png)
 
 ## Contextual data entry implementation details
 ### Behavior

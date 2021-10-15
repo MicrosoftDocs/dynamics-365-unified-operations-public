@@ -3,7 +3,7 @@
 
 title: Hazardous materials inquiries and reports
 description: This topic explains how to work with the various reports that are related to hazardous materials. Many of these reports are required so that you remain compliant with various hazardous material regulations during shipping and storage.
-author: dasani-madipalli
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: 
@@ -19,9 +19,9 @@ ms.reviewer: kamaybac
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
+ms.dyn365.ops.version: 10.0.11
 ---
 
 # Hazardous materials inquiries and reports
@@ -34,7 +34,7 @@ All these reports, except the **Multimodal dangerous goods** report, use the mod
 
 The following illustration shows the sequence of activities that occur when the system generates hazardous materials reports.
 
-![Sequence of activities for hazardous materials reports](media/hazmat-report-sequence.png "Sequence of activities for hazardous materials reports")
+![Sequence of activities for hazardous materials reports.](media/hazmat-report-sequence.png "Sequence of activities for hazardous materials reports")
 
 ## <a name="set-up"></a>Set up hazardous materials reporting
 

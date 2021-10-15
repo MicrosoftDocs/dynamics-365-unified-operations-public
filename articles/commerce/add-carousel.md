@@ -44,7 +44,7 @@ You can add content block modules inside a carousel module. The properties of th
 
 The following image shows an example of a carousel module that is used on a home page. This carousel module contains multiple content block items.
 
-![Example of a carousel module](./media/Hero.PNG)
+![Example of a carousel module.](./media/Hero.PNG)
 
 ## Carousel module properties
 

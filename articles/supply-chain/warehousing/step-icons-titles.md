@@ -21,7 +21,7 @@ This topic describes how to assign step icons and step titles for new or customi
 
 The following illustrations shows how step icons and titles appear in the Warehouse Management mobile app.
 
-![Example of a step icon and a step title in the Warehouse Management mobile app](media/step-icon-example.png "Example of a step icon and a step title in the Warehouse Management mobile app")
+![Example of a step icon and a step title in the Warehouse Management mobile app.](media/step-icon-example.png "Example of a step icon and a step title in the Warehouse Management mobile app")
 
 ## Turn on this feature in your system
 
@@ -346,13 +346,13 @@ This example explains how to set up step icons and titles for a custom task flow
 
 The following illustration shows this task flow.
 
-![Task flow diagram](media/step-icons-example-task-flow.png "Task flow diagram")
+![Task flow diagram.](media/step-icons-example-task-flow.png "Task flow diagram")
 
 ### Create a step class for the container input page
 
 The container input page lets the worker scan or enter a container ID.
 
-![Container input page](media/step-icons-example-container-input.png "Container input page")
+![Container input page.](media/step-icons-example-container-input.png "Container input page")
 
 On the container input page, the control name of the input field is `ContainerId`. Because this control name isn't in the [list of step IDs](#step-ids-classes), you won't find an existing step that is based on it. Therefore, you must create a step class that represents the step. Here is an example.
 
@@ -378,7 +378,7 @@ To assign a step icon, set `defaultStepIcon` to one of the icon IDs that are lis
 
 The weight input page lets the worker enter a weight.
 
-![Weight input page](media/step-icons-example-weight-input.png "Weight input page")
+![Weight input page.](media/step-icons-example-weight-input.png "Weight input page")
 
 On the weight input page, the control name of the input field is `Weight`, which is in the [list of step IDs](#step-ids-classes). Therefore, if the step icon and title that are defined in the `WHSMobileAppStepWeight` class are acceptable to you, you don't have to change anything for this step.
 

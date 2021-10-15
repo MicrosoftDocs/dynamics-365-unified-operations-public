@@ -39,7 +39,7 @@ To create a data action mock, create a new file under the **/src/module/&lt;MODU
 
 ```/src/modules/product-feature/mocks/myModuleMock.actionmock.json```
 
-After the file is created, you can simulate the data action return object inside the file by specifying the **CasheObjectType** and **CacheKey** values that are defined in the data action. The **CacheKey** value can be set to "**&#42;**" to accept any cache key. For more information, see [Data actions](data-actions.md).
+After the file is created, you can simulate the data action return object inside the file by specifying the **CacheObjectType** and **CacheKey** values that are defined in the data action. The **CacheKey** value can be set to "**&#42;**" to accept any cache key. For more information, see [Data actions](data-actions.md).
 
 The following example shows how the **&lt;MODULE\_MOCK\_NAME&gt;.actionmock.json** file should be structured.
 

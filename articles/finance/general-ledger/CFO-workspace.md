@@ -50,14 +50,14 @@ This topic explains how to add financial dimensions to the Chief Financial Offic
 11. Change the **Cross filter direction** value to **Single**.
 12. Select both **Make this relationship active** and **Assume referential integrity**, select **OK**, and then select **Close**.
 
-    [![Create a relationship](./media/Create-relationship.png)](./media/Create-relationship.png)
+    [![Create a relationship.](./media/Create-relationship.png)](./media/Create-relationship.png)
 
 13. In the **Fields** list, you should see the table and the available financial dimensions. Drag the financial dimensions that you want to the report-level filters.
 14. Save your changes.
 15. In the Application Object Tree (AOT), right-click your project, and then select **Synchronize**.
 16. Build your project, and then open the application to view the results.
 
-    [![Completed workspace](./media/workspace.png)](./media/workspace.png)
+    [![Completed workspace.](./media/workspace.png)](./media/workspace.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

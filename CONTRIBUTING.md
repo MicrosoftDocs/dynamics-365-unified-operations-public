@@ -2,9 +2,10 @@
 Welcome! Thank you for your interest in contributing to Microsoft Dynamics 365 documentation. 
 
 In this topic you'll find the basic process for adding or updating content for:
-- Dynamics 365 for Finance and Operations
-- Dynamics 365 for Retail
-- Dynamics 365 for Talent
+- Dynamics 365 Finance
+- Dynamics 365 Supply Chain Management
+- Dynamics 365 Commerce
+- Dynamics 365 Talent
 
 This documentation is published [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/index).
 
@@ -35,26 +36,27 @@ The GitHub UI supports the creation of new files and dragging and dropping image
 
 ## Ways to contribute
 In this topic you'll find the basic process for adding or updating content for:
-- Dynamics 365 for Finance and Operations
-- Dynamics 365 for Retail
-- Dynamics 365 for Talent
+- Finance 
+- Supply Chain Management
+- Commerce
+- Talent
 
 You can submit minor changes or larger submissions as follows:
 
-* **Minor changes** - You can easily contribute minor updates by clicking the **Edit** button in the topic that you want to modify.
+* **Minor changes** - You can easily contribute minor updates by selecting the **Edit** button in the topic that you want to modify.
 
 * **Larger submissions** - If you're making substantial changes to an existing topic, adding or changing images, or contributing a new topic, you need to fork the **MicrosoftDocs/Dynamics-365-Operations** repository, use GitHub or install your favorite Markdown editor, and learn some Git commands.
 
 ### Minor changes
 If you only need to make textual updates to an existing topic, you can use GitHub's web-based Markdown editor to submit your changes. 
 
-1. Click **Edit** in the topic that you want to modify. The GitHub version of the topic will open.
+1. Select **Edit** in the topic that you want to modify. The GitHub version of the topic will open.
 
-2. Click the edit (pencil) icon. 
+2. Select the edit (pencil) icon. 
 
 3. Edit the topic, as needed using Markdown.
 
-4. Click the **Propose file change** button.
+4. Select the **Propose file change** button.
 
 5. Click the **Create pull request** button to submit your changes.
  

@@ -38,7 +38,7 @@ This article provides information about the Section PowerBI subpattern. This sub
 The Section PowerBI subpattern is used as part of the Operational Workspace pattern, specifically for the panorama section that contains the PowerBI control.
 
 ## Wireframe
-[![Section PowerBI wireframe](./media/sectionpowerbiwireframe.png)](./media/sectionpowerbiwireframe.png)
+[![Section PowerBI wireframe.](./media/sectionpowerbiwireframe.png)](./media/sectionpowerbiwireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.

@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 21941
+ms.custom: ["21941", "intro-internal"]
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
 # ms.search.industry: 
@@ -39,7 +39,7 @@ print bank data on standard reports.
 
 **Business processes**
 
-[![Business process](./media/Cash-process.PNG)](./media/Cash-process.PNG)
+[![Business process.](./media/Cash-process.PNG)](./media/Cash-process.PNG)
 
 -   [Cash discounts](cash-discounts.md)
 -   [Settlement overview](settlement-overview.md)

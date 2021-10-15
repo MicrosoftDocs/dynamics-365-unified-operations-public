@@ -143,7 +143,7 @@ Use the **VAT restoring journal** page to create, approve, and cancel VATrestora
 
 1. Go to **Accounts receivable \> Periodic tasks \> Sales book \> VAT restoring journal**. The **VAT restoring journal** page shows the data for incoming invoice-factures that VAT amounts must be restored for in the current period.
 
-    ![VAT restoring journal page](media/1.%20VAT%20restoring%20journal.jpg)
+    ![VAT restoring journal page.](media/1.%20VAT%20restoring%20journal.jpg)
 
 2. In the **Date in the period** field, select the date in the reporting period to show the VAT details for.
 3. Select **Restore VAT procedure \> 1. Update inventory links**, and then select **OK**.
@@ -199,11 +199,11 @@ Use the **VAT restoring journal** page to create, approve, and cancel VATrestora
          - **VAT** – The fields in this section show the total VAT amounts that must be restored on export or non-taxable operations, and on fixed assets that aren't fully depreciated and are written off.
           - **Indirect costs**, **Direct costs**, and **Included fixed assets:** – The fields in these sections show the totals for direct and indirect VAT, including amounts for fixed assets that are used in export or non-taxable operations.
 
-          ![VAT restoring journal total amounts](media/2%20VAT%20restoring%20journal%20totals.jpg) 
+          ![VAT restoring journal total amounts.](media/2%20VAT%20restoring%20journal%20totals.jpg) 
 
      - Select **Revenue calculation** to open the **Revenue calculation** dialog box, where you can view the list of customer invoices in the current period.  The list is generated based on the value of the **Revenue calculation method** field on the **General ledger parameters** page.
 
-         ![Revenue calculation](media/3%20Revenue%20calculation.jpg)
+         ![Revenue calculation.](media/3%20Revenue%20calculation.jpg)
            
          For each invoice in the **Revenue calculation** dialog box, you can perform the following actions:
          
@@ -219,7 +219,7 @@ Use the **VAT restoring journal** page to create, approve, and cancel VATrestora
           - The amounts of VAT that were restored in the current period and distributed to each export invoice
           - The share of export invoice revenue in the total export revenue amount for the period
 
-            ![Incoming VAT for indirect costs](media/4%20VAT%20distribution.jpg)
+            ![Incoming VAT for indirect costs.](media/4%20VAT%20distribution.jpg)
               
             This information is required to define the VAT amount that must be deducted when export is confirmed, or when the deadline for confirmation will expire but export isn't confirmed. This information is also used in the VAT declaration. For more information, see [VAT declaration (Russia)](/dynamics365/unified-operations/financials/localizations/rus-vat-declaration).
 

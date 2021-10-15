@@ -69,7 +69,7 @@ To configure tax integration for China, follow these steps.
 
 The following illustration shows the tax integration process.
 
-[![Tax integration process](./media/ic666469.gif)](./media/ic666469.gif)
+[![Tax integration process.](./media/ic666469.gif)](./media/ic666469.gif)
 
 ## Additional resources
 

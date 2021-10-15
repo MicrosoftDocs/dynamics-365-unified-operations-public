@@ -58,7 +58,7 @@ Before you can create or post sales complementary fiscal documents, the followin
 -   **Sales tax code for PIS** – Specify the sales tax code that is used for the Programa de Integração Social (PIS) tax calculation amount.
 
 ## Examples
-[![Examples of an original invoice and sales complementary fiscal documents of each of the three types](./media/salescomplementary-1024x409.png)](./media/salescomplementary.png)
+[![Examples of an original invoice and sales complementary fiscal documents of each of the three types.](./media/salescomplementary-1024x409.png)](./media/salescomplementary.png)
 
 For more information, see the following topics:
 

@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 1
 
 In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a Finance and Operations application. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
 
-The entity store will support near real-time Microsoft Power BI integration scenarios, as shown in the following diagram. For an overview of Power BI integration with entity store, see [Power BI integration with entity store](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update). [![Power BI Architecture diagram](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
+The entity store will support near real-time Microsoft Power BI integration scenarios, as shown in the following diagram. For an overview of Power BI integration with entity store, see [Power BI integration with entity store](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update). [![Power BI Architecture diagram.](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
 
 ## New Power BI features included in the May 2016 and November 2016 updates
 This tutorial requires the Dynamics 365 for Operations May 2016 update or later. You will use the following new capabilities in this tutorial:
@@ -120,7 +120,7 @@ This step requires that you the install Power BI desktop tool that can be downlo
 
 3.  When completed, your formula should look similar to the following.
 
-    [![Power BI Formula](./media/powerbiformula.png)](./media/powerbiformula.png)
+    [![Power BI Formula.](./media/powerbiformula.png)](./media/powerbiformula.png)
 
 4.  Notice that a new field, **FKCustomer**, is shown in the list of fields for the **SalesCubeV2\_CustomerInvoices** table. Because this field is used to relate two tables, you can hide it from end users by right-clicking the field and selecting the **Hide** option.
 5.  Next, create a similar field in the **SalesCubeV2\_Customer** table. Select the ellipsis (…) icon next to **SalesCubeV2\_Customer** entity. Right-click and select **New Column**.
@@ -148,7 +148,7 @@ This step requires that you the install Power BI desktop tool that can be downlo
 1.  To create a report that shows sales by customer group, drag the **CustomerInvoiceAmountAccountingCurrency** field from the **SalesCubeV2\_CustomerIncoices** table and drop it on the Power BI desktop canvas. Next, drag the **CustomerGroupName** field in the **SalesCubeV2\_Customer** table to the same grid.
 2.  Change the chart type to a doughnut chart. You should see a report similar to the following.
 
-    [![Power BI Doughnut Chart](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)
+    [![Power BI Doughnut Chart.](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)
 
 3.  You can create additional visuals using the Power BI desktop. When you save, you will notice that the file has a **PBIX** extension.
 4.  Save the report to your desktop.

@@ -65,7 +65,7 @@ This example uses the text attribute `textFixedList` as the target attribute. Th
 
 The following screenshot shows how the settings for this attribute might look in your system.
 
-![Attribute type settings for example 2](media/model-calculations-example2.png "Attribute type settings for example 2")
+![Attribute type settings for example 2.](media/model-calculations-example2.png "Attribute type settings for example 2")
 
 The attribute is used in the following conditional statement:
 
@@ -87,7 +87,7 @@ This example uses the `textFixedList` target attribute from the previous example
 
 The following screenshot shows how the settings for this attribute might look in your system.
 
-![Attribute type settings for example 3](media/model-calculations-example3.png "Attribute type settings for example 3")
+![Attribute type settings for example 3.](media/model-calculations-example3.png "Attribute type settings for example 3")
 
 The value for the `textFixedList` attribute is calculated by using the following conditional statement:
 

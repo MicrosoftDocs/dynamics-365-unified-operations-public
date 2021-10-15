@@ -37,7 +37,7 @@ Parameters control the general behavior in Fixed assets. Fixed asset groups let 
 
 Fixed assets are assigned to a group when they are created. By default, the books that are assigned to the fixed asset group are then assigned to the fixed asset. Books that are configured to post to the general ledger are associated with a posting profile. Ledger accounts are defined for each book in the posting profile and are used when fixed asset transactions are posted.
 
-![Fixed asset components](./media/FAComponents_Updated.png)
+![Fixed asset components.](./media/FAComponents_Updated.png)
 
 ## Depreciation profiles
 

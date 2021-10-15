@@ -38,7 +38,7 @@ In every tab module, one or more tab item modules can be added. Each tab item mo
 
 The following image shows an example of a tab module on a site page. In this example, the **Shipping** tab selected.
 
-![Example of a tab module](./media/ecommerce-tab.PNG)
+![Example of a tab module.](./media/ecommerce-tab.PNG)
 
 ## Tab module properties
 

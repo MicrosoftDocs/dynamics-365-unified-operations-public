@@ -44,7 +44,7 @@ To make the **Printer** destination available in the current instance of Microso
 1. Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF
 2. Document Routing Agent as Electronic Reporting destination for outbound documents
 
-[![Turning on the ER printer destination feature in Feature management](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
+[![Turning on the ER printer destination feature in Feature management.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 ### Applicability
 
@@ -60,7 +60,7 @@ The **Printer** destination is implemented only for cloud deployments.
 2. In the **Printer name** field, select the required network printer.
 3. Set the **Save in print archive?** option to **Yes** to store the generated output in the print archive, so that it's available for further printing. To access archived output later, go to **Organization administration** \> **Inquiries and reports** \> **Report archive**.
 
-[![Using the Printer destination](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
+[![Using the Printer destination.](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
 > The **Convert to PDF** option doesn't have to be turned on when you configure the **Printer** destination. The PDF conversion for printing purposes will occur even if the option is turned off.

@@ -34,7 +34,7 @@ Streamline application experiences that result in the production of business doc
 The embedded viewer offers consistency between the screen presentation and the printed output. In addition, report viewing times are drastically reduced when compared to the legacy experience. The Preview option is available on all supported devices and does not require any additional third-party software. Documents can be easily downloaded and navigated by using the built-in viewer toolbar options.
 
 The following illustration shows a preview of the experience with a modern business document.
-![PDF preview form](./media/pdf-document-preview.png)
+![PDF preview form.](./media/pdf-document-preview.png)
 
 The legacy HTML-based preview experience is being replaced by a true document preview experience. There are several key advantages in the modern PDF preview experience. These advantages include:
 

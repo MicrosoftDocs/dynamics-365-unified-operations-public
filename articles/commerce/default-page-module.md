@@ -34,7 +34,7 @@ This topic covers default page modules and describes how to add them to page tem
 
 The default page module is a special module that becomes the root container of a page and can be added only to a template's **Body** slot. The default page module defines the core slots (**Header Slot**, **Sub Header Slot**, **Main Slot**, **Sub Footer Slot**, and **Footer Slot**) that appear in the Commerce site builder page editor, as shown in the following example illustration.
 
-![Page module slots](media/page-module-1.png)
+![Page module slots.](media/page-module-1.png)
 
 The Commerce module library provides only one type of default page module. However, you can use the [Commerce online channel extensibility software development kit (SDK)](e-commerce-extensibility/overview.md) to create additional, custom default page modules as you require.
 
@@ -54,15 +54,15 @@ To add a default page module to a template, follow these steps.
 1. Select a template, and then select **Edit**.
 1. In the **Body** slot, select the ellipsis (**...**), and then select **Add module**.
 
-    ![Adding a new module](media/page-module-2.png)
+    ![Adding a new module.](media/page-module-2.png)
 
 1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
 
-    ![Adding a default page module](media/page-module-3.png)
+    ![Adding a default page module.](media/page-module-3.png)
 
 After the default page module is added, it should resemble the example in the following illustration. The module can now be configured, and the template can be saved and published.
 
-![Default page module added](media/page-module-4.png)
+![Default page module added.](media/page-module-4.png)
 
 ## Additional resources
 

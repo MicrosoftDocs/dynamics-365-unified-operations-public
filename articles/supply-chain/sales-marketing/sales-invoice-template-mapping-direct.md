@@ -3,7 +3,7 @@
 
 title: Synchronize sales invoice headers and lines directly from Supply Chain Management to Sales
 description: This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Dynamics 365 Supply Chain Management to Dynamics 365 Sales. 
-author: ChristianRytt
+author: Henrikan
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: 
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update 
 ms.search.validFrom: 2017-07-8
 
@@ -37,7 +37,7 @@ This topic discusses the templates and underlying tasks that are used to synchro
 
 The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
-[![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Data flow in Prospect to cash.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## Templates and tasks
 
@@ -120,11 +120,11 @@ The following illustrations show an example of a template mapping in Data integr
 
 ### SalesInvoiceHeader
 
-![Template mapping in Data integration](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
+![Template mapping in Data integration for SalesInvoiceHeader.](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
 
 ### SalesInvoiceLine
 
-![Template mapping in Data integration](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
+![Template mapping in Data integration for SalesInvoiceLine.](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
 
 
 

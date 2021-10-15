@@ -45,7 +45,7 @@ Text block modules can be used in the following ways:
 
 The following image shows an example of a text block module that is used on a home page.
 
-![Example of a text block module](./media/ecommerce-textblock.PNG)
+![Example of a text block module.](./media/ecommerce-textblock.PNG)
 
 ## Text block module properties
 

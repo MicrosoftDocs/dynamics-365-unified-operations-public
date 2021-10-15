@@ -46,13 +46,13 @@ In the **Workers without employment** list, you can delete the individuals liste
 
 2. In the **Privileges** tab, filter the **Privileges** list to **Maintain workers**.
 
-   [![Filter Privileges list](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
+   [![Filter Privileges list.](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
 
 3. In the **References** column, select **Display menu items**.
 
 4. In **Display menu items**, select **HcmWorkersWithoutEmployment**.
 
-   [![Select form](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
+   [![Select form.](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
 
 5. Set the **Delete** permission to **Grant**.
 
@@ -60,6 +60,6 @@ In the **Workers without employment** list, you can delete the individuals liste
 
 7. Select **Publish all**.
 
-   [![Publish changes](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
+   [![Publish changes.](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

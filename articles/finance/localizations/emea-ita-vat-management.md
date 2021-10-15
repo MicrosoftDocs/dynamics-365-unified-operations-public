@@ -3,8 +3,8 @@
 
 title: VAT management and reporting by tax point date (Date of VAT register)
 description: This topic provides information about the changes to value-added tax (VAT) management in Italy.
-author: LizaGolub
-ms.date: 09/17/2019
+author: liza-golub
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Italy
 # ms.search.industry: 
-ms.author: kfend
+ms.author: elgolu
 ms.search.validFrom: 2019-07-01 
 ms.dyn365.ops.version:  
 ---
@@ -51,7 +51,7 @@ For more information about the Date of VAT register feature, see [Tax point date
 
 When the Date of VAT register feature is turned on, users in legal entities that have their primary address in Italy will be able to set the **Date of VAT register** option on **General ledger parameters** page to **Yes**.
 
-![General ledger parameters page, Sales tax tab, Date of VAT register field is highlighted](./media/date-of-vat-gl-parameter.png)
+![General ledger parameters page, Sales tax tab, Date of VAT register field is highlighted.](./media/date-of-vat-gl-parameter.png)
 
 When this option is set to **Yes**, the **Settle and post sales tax** process and the **Italian sales tax payment** report will consider sales tax transactions based on the date when the VAT was registered instead of the date when the transaction was posted.
 

@@ -51,7 +51,7 @@ To create a functionality profile, follow these steps.
   
 The following image shows an example functionality profile.
   
-![Functionality profile example](media/retail-functionality-profile.png)
+![Functionality profile example.](media/retail-functionality-profile.png)
 
 ## Additional resources
 

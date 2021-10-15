@@ -40,14 +40,14 @@ Microsoft Dynamics 365 Talent: Onboard provides various templates that can help 
     - If the template is from the gallery, select **Save as my template**, enter a new name for the template, and select **Save**.
     - If the template is from **My templates**, select **Save as template**, enter a new name for the template, and select **Save**.
 
-    [![Creating a template from an existing template](./media/onboard-save-template.png)](./media/onboard-save-template.png)
+    [![Creating a template from an existing template.](./media/onboard-save-template.png)](./media/onboard-save-template.png)
 
 ## Create a new onboarding template
 
 1. On the left menu, select **Templates**.
 2. Under **My templates**, select the **Add** (plus sign \[**+**\]) tile.
 
-    [![Creating a new template](./media/onboard-create-new-template.png)](./media/onboard-create-new-template.png)
+    [![Creating a new template.](./media/onboard-create-new-template.png)](./media/onboard-create-new-template.png)
 
 3. In the **Create a guide template** dialog box, enter a name for the template, and then select **Save**.
 

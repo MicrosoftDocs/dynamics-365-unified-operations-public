@@ -20,6 +20,7 @@
     }
   ],
   "notification_subscribers": [],
+  "report_severity_level": "Verbose",
   "sync_notification_subscribers": [
     "tfehr@microsoft.com"
   ],

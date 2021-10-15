@@ -55,7 +55,7 @@ There are two methods for generating electronic invoices:
 
 The following illustration shows the process for generating an electronic invoice by using the CFDI method. 
 
-![The electronic invoice process for Mexico](./media/about-electronic-invoices-cfdi.jpg "Electronic invoicing generation process for CFDI method")    
+![The electronic invoice process for Mexico.](./media/about-electronic-invoices-cfdi.jpg "Electronic invoicing generation process for CFDI method")    
 
 ### Requirements for using electronic invoices
 
@@ -97,6 +97,7 @@ As is explained in detail in the Mexican localization scope document, integratio
 - [Inquire and print an electronic invoice](./tasks/mx-00010-inquire-print-electronic-invoice.md)
 - [Cancel an electronic invoice](./tasks/mx-00010-cancel-electronic-invoice.md)
 - [CFDI layout Version 3.3](latam-mex-cfdi-3-3.md)
+- [Waybill (Carta de Porte) complement (version 1.0)](latam-mex-carta-de-porte.md)
 
 
 

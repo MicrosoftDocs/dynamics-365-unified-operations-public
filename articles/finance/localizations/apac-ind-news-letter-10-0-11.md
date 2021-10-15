@@ -45,7 +45,7 @@ Based on the amended GST law, the following sequence is required to be maintaine
 
 To set up the new settlement rule, go to **Tax** > **Setup** > **Sales tax hierarchies** > **View** > **Setoff rules for sales tax hierarchies**.  
 
-![Setoff rules for sales tax hierarchies page](media/GST-tax-settlement-new-rule-1-10-0-11.PNG )
+![Setoff rules for sales tax hierarchies page.](media/GST-tax-settlement-new-rule-1-10-0-11.PNG )
 
 A new tax settlement change has been incorporated in the tax settlement hierarchy. You can define the tax set off hierarchy for a tax component with any  tax settlement priority. Previously, each tax component recoverable amount was settled against the tax payable amount of its own tax component and then with other tax components. Going forward, you can define the set off priority of a tax component with any other tax component. For example, et up a settlement priority of the input tax credit for CGST against IGST first, and then with CGST. Similarly, SGST can be set off against IGST first, and then SGST.
 

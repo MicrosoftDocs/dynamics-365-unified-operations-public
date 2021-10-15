@@ -17,7 +17,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: rhaertle
 # ms.tgt_pltfrm: 
-ms.custom: 255544
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -112,7 +112,7 @@ During development it can be useful to attach a debugger to get more detailed in
 
     Expand the nodes to find the workspace JavaScript, such as **File** > (no domain) > **ExpenseMobile.js**. Click the JavaScript file to view it and add breakpoints.
     
-    ![Expense management mobile workspace](./media/expense-management-mobile-workspace.png)
+    ![Expense management mobile workspace.](./media/expense-management-mobile-workspace.png)
     
 5. Reflect the mobile device on your desktop so that you can interact with it on the desktop screen. 
 

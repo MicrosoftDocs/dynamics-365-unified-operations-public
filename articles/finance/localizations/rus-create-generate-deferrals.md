@@ -43,27 +43,27 @@ You can use the **Deferrals** page to manually create a deferral. You must speci
     - **Standard** – Process the incoming VAT for factures that are related to deferrals by using the standard VAT deduction method.
     - **Proportionate** – Process the incoming VAT for factures that are related to deferrals by using the proportional VAT deduction method.
 
-    ![Deferrals page](media/rus-create-generate-deferrals-01.png)
+    ![Deferrals page.](media/rus-create-generate-deferrals-01.png)
 
 9. On the Action Pane, on the **Deferrals** tab, in the **Books** group, select **Deferrals models** to open the **Deferrals models** page.
 10. Define the deferrals model that must be applied for the deferral.
 
-    ![Deferrals models page](media/rus-create-generate-deferrals-02.png)
+    ![Deferrals models page.](media/rus-create-generate-deferrals-02.png)
 
 11. On the Action Pane, select **Transactions** to open the **Deferrals transactions** page.
 12. Review the transactions that are related to the selected model for the deferral, and then close the page.
 
-    ![Deferrals transactions page](media/rus-create-generate-deferrals-03.png)
+    ![Deferrals transactions page.](media/rus-create-generate-deferrals-03.png)
 
 13. On the **Deferrals models** page, on the Action Pane, select **Balance** to open the **Deferral balances** page.
 14. Review the balances that are related to the selected model for the deferral, and then close the page.
 
-    ![Deferral balances page](media/rus-create-generate-deferrals-04.png)
+    ![Deferral balances page.](media/rus-create-generate-deferrals-04.png)
 
 15. On the **Deferrals models** page, on the Action Pane, select **Writing off sum** to open **Deferrals writing off profile** page.
 16. On the Action Pane, select **Calculate** to review calculated writing-off amounts that are related to the selected model for the deferral.
 
-    ![Deferrals writing off profile page](media/rus-create-generate-deferrals-05.png)
+    ![Deferrals writing off profile page.](media/rus-create-generate-deferrals-05.png)
 
 ## Generate deferrals by using a periodic task
 
@@ -111,7 +111,7 @@ When you generate deferrals for vendor invoices by using the periodic task, defe
 
 To view manually and automatically created deferrals, go to **General ledger > Deferrals > Deferrals**.
 
-![Deferrals page, list of deferrals](media/6_Deferrals.png)
+![Deferrals page, list of deferrals.](media/6_Deferrals.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

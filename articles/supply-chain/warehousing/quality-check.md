@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
+ms.dyn365.ops.version: 10.0.8
 ---
 
 # Quality check
@@ -314,7 +314,7 @@ After the purchase order has been created, it can be received by using the **PO 
 
     The **Quality check** page that appears has no entry fields. It has only the confirmation (check mark) button at the bottom and the Menu button (**≡**) at the top. (The Menu button is sometimes referred to as the hamburger or the hamburger button.) To expedite the quality check process, when the pallet passes the quality check, the user just confirms the **Quality check** page.
 
-    ![Quality check page](media/quality-check.png "Quality check page")
+    ![Quality check page.](media/quality-check.png "Quality check page")
 
 1. Select the confirmation button to pass the quality check for pallet 1 from line 1.
 

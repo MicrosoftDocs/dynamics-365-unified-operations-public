@@ -63,7 +63,7 @@ The calculations made for assets, functional locations, and work orders are almo
 
     The figure below shows an example of the **Asset cost control** dialog.
 
-    ![Asset Cost Control dialog box](media/01-controlling-and-reporting.png)
+    ![Asset Cost Control dialog box.](media/01-controlling-and-reporting.png)
 
 10. On the **Asset cost control** page, click the **Group by** buttons to show the required detail level of the calculation. The selected **Group by** buttons are highlighted. Click on a button to activate or deactivate it.
 
@@ -76,7 +76,7 @@ The screenshot below shows an example of calculation results in **Asset cost con
 - The **Open committed cost** field shows commitments to pay for items, hours, and services you have ordered or received but not yet paid for. 
 - The **Actual cost** field shows related costs after all consumption registrations have been posted.
 
-![Example calculation results in Asset cost control](media/02-controlling-and-reporting.png)
+![Example calculation results in Asset cost control.](media/02-controlling-and-reporting.png)
 
 Another way of making a cost calculation is to multi-select assets in **All assets** or **Active assets**. Then, you click the **Cost control** button on the **General** tab. In the **Asset cost control** dialog, the selected assets are automatically inserted in the **Asset** field on the **Records to include** FastTab. Click **OK**, and a cost calculation for the selected assets is shown. The same procedure can be done for functional locations in **All functional locations** or **Active functional locations**, and for work orders in **All work orders** or **Active work orders**.
 
@@ -104,7 +104,7 @@ The screenshot below shows an example of calculation results in **Work order dat
 - The **Avg. end delay** field shows the difference in days between scheduled end date for a work order compared to actual end date. If, for example, the actual end date was three days after the scheduled end date, "3" will be displayed in this field.  
 - The **Occurrences** fields show the number of times deviations occur in relation to scheduled and actual start date, and scheduled and actual end date on the work order.
 
-![Example calculation results in Work order date control](media/03-controlling-and-reporting.png)
+![Example calculation results in Work order date control.](media/03-controlling-and-reporting.png)
 
 
 

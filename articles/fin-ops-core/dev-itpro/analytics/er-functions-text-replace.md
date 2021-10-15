@@ -5,7 +5,6 @@ title: REPLACE ER function
 description: This topic provides information about how the REPLACE Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 04/02/2020
-ms.topic: article
 ms.prod: 
 ms.technology: 
 

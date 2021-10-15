@@ -29,7 +29,6 @@ ms.dyn365.ops.version:
 # Apply unit of measure settings
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This topic covers unit of measure settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
@@ -37,7 +36,7 @@ A product can be sold in different units, such as "each," "pair," and "dozen." I
 
 In the example in the following illustration, a sell-by unit of measure of **ea** (each) has been configured for a product in Commerce headquarters.
 
-![Example of a product that is configured with a unit of measure in Commerce headquarters](./media/Productunit-headquarters.PNG)
+![Example of a product that is configured with a unit of measure in Commerce headquarters.](./media/Productunit-headquarters.PNG)
 
 > [!NOTE]
 > Support for applying and showing the unit of measure is available as of the Commerce version 10.0.19 release.
@@ -59,11 +58,11 @@ Modules that use the unit of measure settings include the buy box, wishlist, car
 
 In the example in the following illustration, a product details page (PDP) shows the unit of measure (**ea**) for a product.
 
-![Example of a PDP that shows the unit of measure](./media/Productunit-PDP.png)
+![Example of a PDP that shows the unit of measure.](./media/Productunit-PDP.png)
 
 In the example in the following illustration, a product collection module shows the unit of measure (**ea**) for a product.
 
-![Example of a product collection module that shows the unit of measure](./media/Productunit-productcollection.png)
+![Example of a product collection module that shows the unit of measure.](./media/Productunit-productcollection.png)
 
 ## Additional resources
 

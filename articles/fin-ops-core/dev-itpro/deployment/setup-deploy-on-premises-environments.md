@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 ms.assetid: 
 ms.search.region: Global
-ms.custom: NotInToc
+ms.custom: ["NotInToc", "intro-internal"]
 # ms.search.industry: 
 ms.author: sericks
 ms.search.validFrom: 2017-11-30 

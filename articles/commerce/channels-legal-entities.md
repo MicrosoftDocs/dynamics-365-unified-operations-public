@@ -48,7 +48,7 @@ To create a new legal entity in Dynamics 365 Commerce, follow these steps.
 1. In the **Country/region** field, enter or select a value.
 1. Select **OK**. 
 
-   ![Legal entity creation](media/legal-entities.png)
+   ![Legal entity creation.](media/legal-entities.png)
 
 1. In the **General** section, provide the following general information about the legal entity: 
    1. Enter a search name, if a search name is required. A search name is an alternate name that can be used to search for this legal entity. 
@@ -71,7 +71,7 @@ To create a new legal entity in Dynamics 365 Commerce, follow these steps.
 
 The following image shows details of an example legal entity.
 
-![Legal entity general section](media/legal-entities-general.png)
+![Legal entity general section.](media/legal-entities-general.png)
    
 ## Additional resources
 

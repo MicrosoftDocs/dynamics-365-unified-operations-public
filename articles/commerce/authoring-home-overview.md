@@ -16,7 +16,7 @@ audience: Application USer
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom: "intro-internal"
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -44,7 +44,7 @@ Currently, the authoring page consists of the following sections.
 
 The following illustration shows the authoring page.
 
-![Dynamics 365 Commerce authoring page](../commerce/media/authoring_tools_01.png)
+![Dynamics 365 Commerce authoring page.](../commerce/media/authoring_tools_01.png)
 
 ## Use the Home button to select a tool
 

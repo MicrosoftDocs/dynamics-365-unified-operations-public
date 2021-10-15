@@ -63,13 +63,13 @@ Some of this information might not be found on a work order. Therefore, the sear
 
 For example, in the following illustration, because of the way that the **Truck Engine** asset type is set up, every work order job that is created with the **Truck Engine** asset type will be a sub-project of project ID 000186.
 
-![Figure 1](media/01-integration-to-pma.png)
+![Figure 1.](media/01-integration-to-pma.png)
 
 The purpose of the project ID on the work order job, and the related activity number, is to track costs that are related to the work order job, and the asset that is selected on it, in the **Project management and accounting** module. (To view the project ID and activity number, select **Asset management** > **Common** > **Work orders** > **All work orders**, and then select the work order. On the **Line details** FastTab, the **Project ID** field shows the project ID, and the **Activity number** field shows the activity number.) For more information about cost control in Asset Management, see [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
 
 The following illustration shows a graphical overview of work order projects and related project activities.
 
-![Figure 2](media/02-integration-to-pma.png)
+![Figure 2.](media/02-integration-to-pma.png)
 
 When a new work order job is created on a work order, a work order project is automatically created for the job. The financial dimensions for the asset that is related to the work order job are automatically transferred to the work order project.
 
@@ -91,17 +91,17 @@ To help guarantee that work order lifecycle states and related project stages on
 
 The following illustrations show the associations between work order project groups, related project types, project stages, and work order lifecycle states.
 
-![Figure 3](media/03-integration-to-pma.png)
+![Figure 3.](media/03-integration-to-pma.png)
 
-![Figure 4](media/04-integration-to-pma.png)
+![Figure 4.](media/04-integration-to-pma.png)
 
-![Figure 5](media/05-integration-to-pma.png)
+![Figure 5.](media/05-integration-to-pma.png)
 
 For information about how to set up work order projects, see [Work order project setup](../setup-for-work-orders/work-order-project-setup.md). For information about how to create work order lifecycle states, see [Work order lifecycle states](../setup-for-work-orders/work-order-lifecycle-states.md).
 
 The following illustration shows a graphical overview of the various projects that are created in the **Asset management** module to enable integration with the **Project management and accounting** module. It also shows the work processes that the projects are related to.
 
-![Figure 6](media/06-integration-to-pma.png)
+![Figure 6.](media/06-integration-to-pma.png)
 
 
 

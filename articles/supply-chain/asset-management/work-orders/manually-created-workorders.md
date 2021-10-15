@@ -117,7 +117,7 @@ You can create a work order that is related to an existing work order. This capa
 
 The illustration below shows an example of the **Create related work order** dialog.
 
-![Figure 1](media/03-work-orders.png)
+![Figure 1.](media/03-work-orders.png)
 
 >[!NOTE]
 >If you've set up a related work order mask in **Asset management parameters** > **Work orders** tab > **Related work order mask** field, work order IDs are created according to the mask setup. If no related work order mask is set up, the next available work order ID is used for related work orders.
@@ -143,7 +143,7 @@ You can quickly create a new work order from an existing work order. This way of
 
 The illustration below shows an example of the **Copy work order** dialog.
 
-![Figure 2](media/04-work-orders.png)
+![Figure 2.](media/04-work-orders.png)
 
 
 ## Create a work order based on a maintenance request
@@ -163,7 +163,7 @@ The illustration below shows an example of the **Copy work order** dialog.
 
 The illustration below shows an example of the **Create work order** dialog.
 
-![Figure 3](media/05-work-orders.png)
+![Figure 3.](media/05-work-orders.png)
 
 
 >[!NOTE]

@@ -3,8 +3,8 @@
 
 title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
-author: Sunil-Garg
-ms.date: 04/20/2020
+author: peakerbl
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,14 +14,14 @@ ms.technology:
 # ms.search.form: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 
 # ms.tgt_pltfrm: 
 
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry:
-ms.author: sunilg
+ms.author: peakerbl
 ms.search.validFrom: 2016-08-30 
 ms.dyn365.ops.version: Platform update 2
 
@@ -68,7 +68,7 @@ If you're using the BYOD feature for integration with a business intelligence (B
 > [!NOTE]
 > Your BYOD database must be accessible to Finance and Operations apps. If you encounter issues where you are unable access to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately.
 > 
-> The use of a performance tier for the Azure SQL database is recommended. For more information about tiers, see [SQL Azure tiers](https://docs.microsoft.com/azure/azure-sql/database/service-tiers-dtu).
+> The use of a performance tier for the Azure SQL database is recommended. For more information about tiers, see [SQL Azure tiers](/azure/azure-sql/database/service-tiers-dtu).
 
 ## Configuring the entity export option
 
@@ -80,7 +80,7 @@ If you're using the BYOD feature for integration with a business intelligence (B
 
     In this connection string, the logical server name should resemble **nnnn.database.windows.net**. You should be able to find the logical server name in Azure portal. The following illustration shows an example of a connection string.
 
-    ![Connection string on the New record page](media/NewRecord.png)
+    ![Connection string on the New record page.](media/NewRecord.png)
     
     
 > [!NOTE]
@@ -95,7 +95,7 @@ For scenarios in which reporting systems read data from BYOD, there is always th
 
 When the validation is passed, the database that you configured for entity export appears in lists of databases, as shown in the following illustration.
 
-![Database for entity export](media/e3bcecdb0ff1532d890915903b378c60.png)
+![Database for entity export.](media/e3bcecdb0ff1532d890915903b378c60.png)
 
 You can now publish one or more entities to the new database by selecting the **Publish** option on the menu.
 
@@ -130,7 +130,7 @@ Change tracking is a feature that is provided in SQL Server and SQL Database. Ch
 
 The **Change tracking** option on the **Publish** page lets you configure how changes are tracked on the underlying entity.
 
-![Change tracking on the underlying entity](media/8918ed89bcc966252727af5a1b75e0fb.png)
+![Change tracking on the underlying entity.](media/8918ed89bcc966252727af5a1b75e0fb.png)
 
 The following table describes the change tracking options that are available.
 
@@ -157,11 +157,13 @@ After entities are published to the destination database, you can use the Export
 
 You can use the **Export** page to export data into many target data formats, such as a comma-separated values (CSV) file. This page also supports SQL databases as another destination.
 
-![Export page](media/091eb0da74bf94c620c3785bca92b41e.png)
+![Export page.](media/091eb0da74bf94c620c3785bca92b41e.png)
 
 You can create a data project that has multiple entities. You can schedule this data project to run by using the batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
 
-The same job can also be used to export data from all companies. In prior to Platform update 27, this feature can be enabled by enabling the flight DMFEnableAllCompanyExport as explained in [Data management overview](../data-entities/data-entities-data-packages.md). Starting in Platform update 27, this feature can be enabled in data management framework parameters. After the feature is enabled, a new option will appear when adding an entity to a data project. This option can be enabled to export data from all companies for the specific entity. The job will export data from each of company in a sequential manner. This behavior was changed from allowing parallel export of data from different companies due to performance and other challenges, which made the solution less reliable.
+#### Exporting data across companies
+
+Jobs that are executed in batch can also be used to export data across companies. Starting with version 10.0.16, all cross-company execution will be sequential by default. This change improves performance that was not reliable with parallel execution.
 
 > [!NOTE]
 > Adding multiple entities to an export project for BYOD must be done carefully to ensure the overall reliability of the BYOD export is not compromised. Different parameters must be taken into consideration when deciding the number of entities that are added to the same project. Some of these parameters should be the degree of complexity of the entities, data volume per entity that is expected, and the overall time for export to complete at the job level. Adding hundreds of entities must be avoided, therefore creating multiple jobs with smaller number of entities is recommended.

@@ -91,7 +91,7 @@ To delete all worker order lines, set the **Delete work order relations** option
 
 The illustration below shows an example of the **Work order pool** list page.
 
-![Figure 1](media/22-work-orders.png)
+![Figure 1.](media/22-work-orders.png)
 
 
 ## Add a work order to a work order pool

@@ -33,14 +33,14 @@ You can design an [Electronic reporting (ER)](general-electronic-reporting.md) [
 > [!NOTE]
 > If the format contains an incorrect encoding name, an error is thrown when you save your changes to the format's settings.
 
-![Adding a root element on the Format designer page](./media/er-suppress-bom-characters-image1.gif)
+![Adding a root element on the Format designer page.](./media/er-suppress-bom-characters-image1.gif)
 
 If you specify **UTF-8**, **UTF-16**, or **UTF-32** as the encoding, the **Suppress BOM characters** option becomes available. Set this option to **Yes** to suppress [byte order mark (BOM) characters](/globalization/encoding/byte-order-mark) in outbound files that are generated at runtime when the editable ER format is run.
 
 > [!NOTE]
 > If you leave the **Encoding** field blank, the default **UTF-8** encoding is used.
 
-![Setting the Suppress BOM characters option on the Format designer page](./media/er-suppress-bom-characters-image2.gif)
+![Setting the Suppress BOM characters option on the Format designer page.](./media/er-suppress-bom-characters-image2.gif)
 
 To review the functionality at runtime, complete the appropriate procedure. For example, complete the steps in the [Defer the execution of XML elements in ER formats](er-defer-xml-element.md) topic. After you've completed the steps in the [Modify the format so that the calculation is based on generated output](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) section of that topic, follow these additional steps.
 
@@ -63,7 +63,7 @@ To review the functionality at runtime, complete the appropriate procedure. For 
 
     The first difference that you will notice is in the file header. The SampleXmlReport.xml file contains a BOM character, where the SampleXmlReport (1).xml file doesn't.
 
-    ![Comparing generated files by using a file comparison utility](./media/er-suppress-bom-characters-image3.png)
+    ![Comparing generated files by using a file comparison utility.](./media/er-suppress-bom-characters-image3.png)
 
 ## See also
 

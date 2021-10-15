@@ -209,7 +209,7 @@ Here are the main features that are covered in this localization:
 
 The Indian localization for Finance provides a configurable Tax engine that helps users comply with complex Indian statutory requirements by extending the configuration.
 
-![Tax document page](media/india-scope-01.png)
+![Tax document page.](media/india-scope-01.png)
 
 The following table lists the localization features that are supported in Finance. Any specific feature that isn't listed in this table isn't supported in the current version of the localization.
 

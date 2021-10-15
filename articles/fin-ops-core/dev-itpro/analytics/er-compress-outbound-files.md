@@ -60,7 +60,7 @@ Before you complete the procedures in this topic, the following steps must be co
 1. [Run the imported format](er-defer-xml-element.md#run-the-imported-format).
 2. Notice that the size of the generated document in XML format is 3 kilobytes (KB).
 
-    ![Preview of the uncompressed outbound document](./media/er-compress-outbound-files1.png)
+    ![Preview of the uncompressed outbound document.](./media/er-compress-outbound-files1.png)
 
 ### Modify the format to compress the generated output
 
@@ -85,7 +85,7 @@ Before you complete the procedures in this topic, the following steps must be co
     > [!NOTE] 
     > The compression ratio of the XML file that this zip file holds is 87 percent. The compression ratio depends on the data that is being compressed.
 
-    ![Preview of the compressed outbound document](./media/er-compress-outbound-files2.png)
+    ![Preview of the compressed outbound document.](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > If the ER [destination](electronic-reporting-destinations.md) is configured for the format element that generates output (the **Report** element in this example), compression of the output will be bypassed.

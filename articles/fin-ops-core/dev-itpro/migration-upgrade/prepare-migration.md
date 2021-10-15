@@ -111,7 +111,7 @@ In the Best Practice framework, there is a subset of Best Practice warnings that
 
 These rules should be set to “ON” while migrating your solution. The setting is driven by an XML file in the AxRuleSet folder. For example, see the Application Suite xml file, BPRules.xml, located under C:\\Packages\\ApplicationSuite\\Foundation\\AxRuleSet. 
 
-[![bpupgraderules](./media/bpupgraderules.png)](./media/bpupgraderules.png) 
+[![bpupgraderules.](./media/bpupgraderules.png)](./media/bpupgraderules.png) 
 
 To complete the migration, you need to fix all migration-specific Best Practice rules. The errors will show up in the error list as warnings. In the error list, you will see compiler warnings and best practice errors. Best Practice errors are prefixed with the text **BP**. For example, **BPErrorFormControlPatternUnspecified**.
 
@@ -138,7 +138,7 @@ This example below uses the **PurchCommitment\_PSN** form to walk you through th
 
 While the form looks complete, there are still code migration tasks necessary to be migration-complete. 
 
-[![i](./media/i1.png)](./media/i1.png)
+[![i.](./media/i1.png)](./media/i1.png)
 
 ### Navigation migration tasks
 
@@ -146,7 +146,7 @@ While the form looks complete, there are still code migration tasks necessary to
 2.  Click the **Comments** drop-down list to view the TO DO: (Code Upgrade) tasks.
 3.  In the list, find the ActionPane TODOs.
 
-[![j](./media/j1.png)](./media/j1.png)
+[![j.](./media/j1.png)](./media/j1.png)
 
 ### Code upgrade rule - Action Pane
 
@@ -167,7 +167,7 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
 
 1.  In Visual Studio, find the TODO shown below, and then double-click the TODO.
 
-    [![k](./media/k1.png)](./media/k1.png)
+    [![k.](./media/k1.png)](./media/k1.png)
 
 2.  Replace the TODO and the line of code as shown below.
     -   The state of the system-defined **Delete** button is controlled by the AllowDelete property on the firstmaster datasource. By setting AllowDelete to false, the delete task is kept from executing when the keyboard shortcut is used.
@@ -181,14 +181,14 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
 
 3.  In the editor, find and remove DeleteCmdButton from the form design. 
 
-    [![l](./media/l1.png)](./media/l1.png)
+    [![l.](./media/l1.png)](./media/l1.png)
 
 4.  Press **Ctrl+S** to save the form.
     -   Next, we will focus on the EditCmdButton that duplicates the system Edit button, handing the two TODOs associated with this button as well as removing this button.
 
 5.  In Visual Studio, find the TODO shown below, and then double-click the TODO.
 
-    [![m](./media/m1.png)](./media/m1.png)
+    [![m.](./media/m1.png)](./media/m1.png)
 
 6.  Because the visibility of the **Edit** button is controlled by the View/Edit mode of the form, you will need to modify this code so it sets that property. Replace the TODO and the line of code as shown in the following graphic.
 
@@ -209,7 +209,7 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
 
 7.  Double-click the other TODO for this button.
 
-    [![n](./media/n1.png)](./media/n1.png)
+    [![n.](./media/n1.png)](./media/n1.png)
 
 8.  Inspect the code on the modeled **Edit** button. This logic will need to be moved to the form’s task() method.
 
@@ -285,7 +285,7 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
 
 11. In the Editor, find and remove the **EditCmdButton** from the form design. 
 
-    [![o](./media/o1.png)](./media/o1.png)
+    [![o.](./media/o1.png)](./media/o1.png)
 
 12. Press **Ctrl+S** to save the form.
 13. Press **Ctrl+F5** to view the form. Notice the **Delete** and **Edit** buttons in the **Commitment** tab have been removed.
@@ -303,7 +303,7 @@ In Finance and Operations, X++ is completely intermediate-language (IL) based an
 6.  Press **Ctrl+F5** to run the form.
 7.  Note that you will get an exception, similar to the following, when running the form.
 
-    [![u](./media/u1.png)](./media/u1.png)
+    [![u.](./media/u1.png)](./media/u1.png)
 
 8.  Right-click the class, cosDimCheckBoxController, and then select **View Code**.
 9.  Set a breakpoint on the cosDimCheckBoxController::getBuildControl().
@@ -312,11 +312,11 @@ In Finance and Operations, X++ is completely intermediate-language (IL) based an
 
 11. Hover over the buildcontrol to see the type and notice the differences.
 
-    [![v](./media/v1.png)](./media/v1.png)
+    [![v.](./media/v1.png)](./media/v1.png)
 
 12. Press **F10** to hit the exception.
 
-    [![w](./media/w2.png)](./media/w2.png)
+    [![w.](./media/w2.png)](./media/w2.png)
 
 13. Stop debugging.
 14. To fix the exception, change the method declaration from FormBuildStringControl to FormBuildCheckBoxControl.
@@ -328,7 +328,7 @@ In Finance and Operations, X++ is completely intermediate-language (IL) based an
     
 15. Rebuild the project, and press **Ctrl+F5**. The form should open successfully because the casting error is resolved.
 
-    [![a](./media/a-1024x576.png)](./media/a.png)
+    [![a.](./media/a-1024x576.png)](./media/a.png)
 
 ## Migrating context menus and mouse double-click code
 Refer to these topics to migrate code Dynamics AX 2012 that deals with context menus and mouse double-click actions.

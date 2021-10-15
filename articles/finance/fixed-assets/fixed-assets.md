@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 21481
+ms.custom: ["21481", "intro-internal"]
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
 # ms.search.industry: 
@@ -40,7 +40,7 @@ assets are handled must correspond to both international accounting standards an
 Requirements might include rules for recording acquisition and disposal transactions, depreciation, lifetimes, and write-ups and 
 write-downs of fixed assets. The Fixed assets functionality incorporates many of these standards and rules.
 
-[![Business process](./media/FA-process.PNG)](./media/FA-process.PNG)
+[![Business process.](./media/FA-process.PNG)](./media/FA-process.PNG)
 
 
 

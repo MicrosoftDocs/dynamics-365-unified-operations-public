@@ -36,7 +36,7 @@ One important aspect of this feature is that if multiple customers have the same
 
 The following illustration shows the process flow for this feature.
 
-   ![Flow diagram](media/TCS-on-Sale-of-Goods-001.PNG)
+   ![Flow diagram.](media/TCS-on-Sale-of-Goods-001.PNG)
 
 ## Base amount for TCS deduction
 
@@ -173,7 +173,7 @@ You can edit the system-generated initial threshold value for any customer. When
 3.	Set the **Enable threshold hierarchy** option to **Yes**. The **PAN based accumulation** option becomes available.
 4.	If multiple customers have the same PAN, set the **PAN based accumulation** option to **Yes**.
 
-   ![Withholding tax codes page](media/TCS-on-Sale-of-Goods-002.PNG)
+   ![Withholding tax codes page.](media/TCS-on-Sale-of-Goods-002.PNG)
 
 ## Create a new withholding tax group for sales of goods
 
@@ -187,7 +187,7 @@ You can edit the system-generated initial threshold value for any customer. When
 8. If charges aren't part of the TCS calculation, in the **Exclude charges for TDS or TCS calculation** field, select **Yes**.
 9. On the Action Pane, select **Designer**, and define the formula for TCS calculation.
 
-   ![Withholding tax groups page](media/TCS-on-Sale-of-goods-003.PNG)
+   ![Withholding tax groups page.](media/TCS-on-Sale-of-goods-003.PNG)
 
 ## Define threshold definitions
 
@@ -198,7 +198,7 @@ You can edit the system-generated initial threshold value for any customer. When
     - 0-Max
     - Max-0
 
-   ![Design two threshold slabs on Threshold designer page ](media/TCS-on-Sale-of-Goods-004.PNG)
+   ![Design two threshold slabs on Threshold designer page .](media/TCS-on-Sale-of-Goods-004.PNG)
 
 ## Set up the TCS threshold for sales of goods
 
@@ -208,7 +208,7 @@ If the customer PAN isn't available, a higher tax rate is applied after the exem
 
 1. Define threshold references for customers.
 
-    ![Threshold references page](media/TCS-on-Sale-of-goods-005.PNG)
+    ![Threshold references page.](media/TCS-on-Sale-of-goods-005.PNG)
 
 2. In the Action Pane, select **Threshold designer**.
 3. Define two threshold slabs that have the following options:
@@ -234,7 +234,7 @@ If the customer PAN isn't available, a higher tax rate is applied after the exem
         - **Calculate previous non-tax transactions:** No
         - **Include in turnover base:** Yes
 
-      ![Threshold designer page](media/TCS-on-Sale-of-Goods-006.PNG)
+      ![Threshold designer page.](media/TCS-on-Sale-of-Goods-006.PNG)
 
       > [!IMPORTANT]
       > On the **Threshold designer** page, you must define the date for each slab from April 1, 2020, through March 31, 2021. The system verifies that the threshold date range includes the initial amount date range. If it does, the system adopts the defined initial amount as part of the turnover and doesn't consider the transactions during the initial amount date range, because the turnover during the date range has been defined as the initial amount. In the previous example, the threshold date range (April 1, 2020, through March 31, 2021) includes the date range April 1 through September 30, 2020. Therefore, the initial threshold amount is included as part of the turnover. Then the payments of the date range October 1, 2020, through March 31, 2021, are cumulated as another part of the turnover. Finally, the total turnover is the initial threshold amount plus the cumulative amount of October 1, 2020, through March 31, 2021.
@@ -243,7 +243,7 @@ If the customer PAN isn't available, a higher tax rate is applied after the exem
 
 - Go to **Accounts receivable** \> **Customers** \> **All customers**.
 
-   ![All customer page](media/TCS-on-Sale-of-Goods-007.PNG)
+   ![All customer page.](media/TCS-on-Sale-of-Goods-007.PNG)
 
 When an invoice and payment transactions are posted, the following values are used to calculate TCS:
 
@@ -298,4 +298,4 @@ Every organization will claim a credit for TCS deduction after it reconciles the
 1. Go to **Tax** \> **Inquiries and reports** \> **TDS/TCS inquiry**.
 2. Select the required column fields to generate the report.
 
-   ![Tax transaction inquiry page](media/TCS-on-Sale-of-Goods-008.PNG)
+   ![Tax transaction inquiry page.](media/TCS-on-Sale-of-Goods-008.PNG)

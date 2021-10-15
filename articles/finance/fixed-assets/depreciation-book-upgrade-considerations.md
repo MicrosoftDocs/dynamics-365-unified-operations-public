@@ -17,7 +17,7 @@ audience: Application User, Developer
 # ms.devlang: 
 ms.reviewer: roschlom
 # ms.tgt_pltfrm: 
-ms.custom: 221624
+ms.custom: ["221624", "intro-internal"]
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
 # ms.search.industry: 
@@ -46,19 +46,19 @@ Option 1:  **System-defined number sequence** - This is the default option to op
     -   Constant name: **NumberSequenceDefaultParameterPrefix**
     -   Default value: "FADBUpgr"
 -   **Alphanumeric length** – The length of the alphanumeric segment of the number sequence.
-    -   Constant name: **NumberSequenceDefaultParameterAlpanumericLength **
+    -   Constant name: **NumberSequenceDefaultParameterAlpanumericLength**
     -   Default value: 9
 -   **Start number** - The first number to be used in the number sequence.
-    -   Constant name: **NumberSequenceDefaultParameterStartNumber  **
+    -   Constant name: **NumberSequenceDefaultParameterStartNumber**
     -   Default value: 1
 
 Option 2: **Existing user-defined number sequence** - This option will allow you to define the number sequence to be used for the upgrade. Consider using this option if you need advanced number sequence configuration. To use a number sequence, you must modify the upgrade class ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans with the following information:
 
 -   **Number sequence code** – The code of the number sequence.
-    -   Constant name: **NumberSequenceExistingCode **
+    -   Constant name: **NumberSequenceExistingCode**
     -   Default value: No default, this must be updated to the number sequence code.
 -   **Shared number sequence** – A boolean value to identify the scope of the number sequence. Use "true" for shared number sequences across all companies, and "false" for a company-specific scope. When using "false", the number sequence with the specified name must exist in every company that contains depreciation book transactions. Shared number sequences exist in every partition that contains depreciation book transactions.
-    -   Constant name: **NumberSequenceExistingIsShared **
+    -   Constant name: **NumberSequenceExistingIsShared**
     -   Default value: true
 
 The parameters are located at the beginning of the ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans class. 

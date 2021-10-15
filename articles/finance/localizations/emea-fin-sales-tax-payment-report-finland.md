@@ -4,7 +4,6 @@
 title: Sales tax report for Finland
 description: This topic provides information about how to set up and generate the sales tax report for legal entities in Finland. 
 author: anasyash
-ms.author: AnnBe
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: 
@@ -19,6 +18,7 @@ ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Norway
+ms.author: anasyash
 # ms.search.industry: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
@@ -177,7 +177,7 @@ The following table shows how to assign sales tax reporting codes to sales tax c
 4. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Original**.
 5. Print the report and review the data.
 
-![Sales tax reporting data, original version](media/1_Sales_tax_reporting.png)
+![Sales tax reporting data, original version.](media/1_Sales_tax_reporting.png)
 
 6. Post the new transaction. For example, go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 
@@ -188,11 +188,11 @@ The following table shows how to assign sales tax reporting codes to sales tax c
 7. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Settle and post sales tax**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Latest corrections**.
 8. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Corrections**.
 
-![Sales tax payment version corrections](media/2_Sales_tax_reporting.png)
+![Sales tax payment version corrections.](media/2_Sales_tax_reporting.png)
 
 9. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. In the **Report sales tax for settlement period** dialog box in the **Sales tax payment version** field, select **Total list**.
 
-![Total list of sales tax payment versions in the settlement period](media/3_Sales_tax_reporting.png)
+![Total list of sales tax payment versions in the settlement period.](media/3_Sales_tax_reporting.png)
 
 ## Additional information
 
@@ -202,14 +202,14 @@ If you set up reverse charges according to [Reverse charge VAT](emea-reverse-cha
 2. In the dialog box, set the **Settlement period** and **From date** fields.
 3. Select **OK**, and review the report result.
 
-![Sales tax payment by code report](media/4_Reverse_charge.png)
+![Sales tax payment by code report.](media/4_Reverse_charge.png)
 
 
 ## Report a VAT declaration to the tax authority
 
 After you've generated the Finnish sales tax report, use the data on it to fill in the self-assessed tax return for the Finnish Tax Administration in the official format. For example, the following illustration shows what the Finnish self-assessed tax return has looked like since 2019.
 
-![Finnish self-assesed tax report](media/5_Finnish_VAT_declaration.png)
+![Finnish self-assesed tax report.](media/5_Finnish_VAT_declaration.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

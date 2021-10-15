@@ -39,27 +39,27 @@ You should first identify the breakpoints in your code, or where you would like 
 
 For example, if you want to debug a data action that is running on the server side, you would insert a breakpoint right before the API call that creates the cart. To do this, you would insert the debugger statement before the API call as shown in the following example.
 
-![Add the debugger statement to code](media/debugging-best-practices-1.png)
+![Add the debugger statement to code.](media/debugging-best-practices-1.png)
 
 The next step is to start the local Node server in debug mode using the **yarn start --inspect-brk** command, as shown in the following example.
 
-![Start Node in debug mode](media/debugging-best-practices-2.png)
+![Start Node in debug mode.](media/debugging-best-practices-2.png)
 
 After it is finished building and the Node server is running, you should see output indicating that the debugger is listening, similar to that shown in the following example.
 
-![Node listening](media/debugging-best-practices-3.png)
+![Node listening.](media/debugging-best-practices-3.png)
 
 At this point the local browser development tools can be opened by navigating to ```edge://inspect``` or ```chrome://inspect```, depending on the browser that you are using. After a few seconds you should see a target, similar to that shown in the following example.
 
-![Browser tools inspection](media/debugging-best-practices-4.png)
+![Browser tools inspection.](media/debugging-best-practices-4.png)
 
 Select **inspect** to attach the browser development tools to your Node server and display a debugging window. By default the debugger will be paused before the Node server starts accepting requests. To resume script execution, select the resume script execution button as shown in the following example.
 
-![Resume script execution](media/debugging-best-practices-5.png)
+![Resume script execution.](media/debugging-best-practices-5.png)
 
 The local Node server is now ready to handle requests. Next, navigate to the page or module mock that will call the action and the breakpoint will be triggered, as shown in the following example.
 
-![Debugger breakpoint hit](media/debugging-best-practices-6.png)
+![Debugger breakpoint hit.](media/debugging-best-practices-6.png)
 
 After the breakpoint has been triggered, you can step through the code and debug as necessary. You may also add additional breakpoints in this file or in any other files by selecting the line numbers. These breakpoints will get triggered on the next request.
 
@@ -78,7 +78,7 @@ The **\_\_\_initialData\_\_\_** object provides information about the modules th
 
 To access this information, open the web debugger console tab and enter **\_\_\_initialData\_\_\_** to reveal this debug information. In the **requestContext** object, you can check your Commerce online software development kit (SDK) and module library versions (if installed) as shown in the following example.
 
-![Initial data_debug information](media/debugging-best-practices-7.png)
+![Initial data_debug information.](media/debugging-best-practices-7.png)
 
 ### The \_msdyn365 object
 

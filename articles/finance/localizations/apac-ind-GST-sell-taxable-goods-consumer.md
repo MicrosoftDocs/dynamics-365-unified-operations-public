@@ -3,7 +3,7 @@
 
 title: Sales of taxable goods to consumers
 description: This topic provides information about the sale of taxable goods to a consumer.
-author: EricWang
+author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 
@@ -33,15 +33,15 @@ ms.dyn365.ops.version: 10.0.4
 2. Create a sales order for a taxable item, and save the record.
 3. Select **Tax information**.
 
-    ![Tax information dialog box](media/Capture.PNG)
+    ![Tax information dialog box.](media/Capture.PNG)
 
 4. Select the **GST** FastTab.
 
-    ![GST FastTab](media/Capture02.PNG)
+    ![GST FastTab.](media/Capture02.PNG)
 
 5. Select the **Customer tax information** FastTab.
 
-    ![Customer tax information FastTab](media/Capture05.PNG)
+    ![Customer tax information FastTab.](media/Capture05.PNG)
 
     > [!NOTE]
     > The **Tax information** field is blank. Therefore, the dealer is an unregistered dealer.
@@ -55,7 +55,7 @@ ms.dyn365.ops.version: 10.0.4
     - **CGST:** 10 percent
     - **SGST:** 10 percent
 
-    ![Tax document page](media/Capture04_upd.png)
+    ![Tax document page.](media/Capture04_upd.png)
 
 8. Select **Close**.
 
@@ -73,7 +73,7 @@ ms.dyn365.ops.version: 10.0.4
 
 The following illustration shows the financial entries for both the intrastate transactions and the interstate transactions.
 
-![Financial entries for intrastate and interstate transactions](media/Annotation-2019-05-20-100324.png)
+![Financial entries for intrastate and interstate transactions.](media/Annotation-2019-05-20-100324.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

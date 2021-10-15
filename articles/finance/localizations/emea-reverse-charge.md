@@ -51,7 +51,6 @@ To apply the reverse charge, you must complete the following setup.
 We recommend that you use separate sales tax codes for sales operations and purchase operations.
 
 <table>
-<body>
 <tr>
 <td><strong>Sales tax code for sales</strong></td>
 <td>Create a sales tax code for reverse charge sales operations (<strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax codes</strong>).
@@ -68,7 +67,6 @@ You must assign this negative sales tax code to an item sales tax group and then
 <p>For more information, see the next section, &quot;Set up sales tax groups and item sales tax groups.&quot;</p>
 </td>
 </tr>
-</tbody>
 </table>
 
 ## <a name="sales-tax-item-sales-tax-groups"></a>Set up sales tax groups and item sales tax groups
@@ -127,7 +125,7 @@ When a purchase invoice that has the reverse charge is posted, two sales tax tra
 
 In the following screenshot, one transaction has the **Sales tax receivable** direction, and the other transaction has the **Sales tax payable** direction. 
 
-![Posted sales tax](media/apac-sau-posted-sales-tax.png)
+![Posted sales tax.](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge"></a>Enable Reverse charge mechanism for VAT/GST scheme feature
 In the **Feature management** workspace, find the feature and select **Enable**.

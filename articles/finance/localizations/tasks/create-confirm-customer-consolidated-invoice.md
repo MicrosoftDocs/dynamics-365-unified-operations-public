@@ -2,9 +2,9 @@
 # required metadata 
  
 title: Create and confirm a customer consolidated invoice
-description: In Japan, sales and purchase invoices during the month are consolidated at the end of the month to calculate the due amount. 
+description: This topic explains how to consolidate customer nvoices each month to calculate the due amount.
 author: ShylaThompson
-ms.date: 08/29/2018
+ms.date: 10/04/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -29,15 +29,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 In Japan, sales and purchase invoices during the month are consolidated at the end of the month to calculate the due amount. 
 
-
-
 Use this task to learn how to create and confirm a consolidated invoice. 
 
-
-
 In order to complete this task, the sales or purchase invoices should have been posted before running this task.
-
-
 
 This task uses the JPMF demo company data.
 

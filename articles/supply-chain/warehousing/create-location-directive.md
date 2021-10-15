@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: Release 10.0.15
+ms.dyn365.ops.version: 10.0.15
 ---
 # Work with location directives
 
@@ -54,7 +54,7 @@ Before you can create a location directive, you must follow these steps to make 
 
 Many of the fields that can be set for location directives are common to all work order types. However, other fields are specific to particular work order types.
 
-![Location directives work order types](media/Location_Directives_Work_Order_Types.png "Location directives work order types")
+![Location directives work order types.](media/Location_Directives_Work_Order_Types.png "Location directives work order types")
 
 > [!NOTE]
 > Two work order types, *Canceled work* and *Cycle counting*, are used only by the system. Location directives can't be created for these work order types.

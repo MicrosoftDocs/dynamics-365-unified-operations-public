@@ -49,7 +49,7 @@ Logically, the workflow infrastructure is an extension and is transparent to use
 
 The following figure shows the high-level architecture of the workflow infrastructure.
 
-[![workflow\_architecturediagram2016](./media/workflow_architecturediagram2016.png)](./media/workflow_architecturediagram2016.png)
+[![workflow\_architecturediagram2016.](./media/workflow_architecturediagram2016.png)](./media/workflow_architecturediagram2016.png)
 
 Users can use workflow pages and controls to participate in business processes.
 

@@ -41,7 +41,7 @@ An iframe module requires a target URL. It then hosts the content of the target 
 
 The following image shows examples of iframe modules that showcase external videos on site pages.
 
-![Example of iframe modules that showcase external videos](./media/ecommerce-iframe.PNG)
+![Example of iframe modules that showcase external videos.](./media/ecommerce-iframe.PNG)
 
 ## Iframe module properties
 

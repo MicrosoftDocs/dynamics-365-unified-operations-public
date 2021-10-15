@@ -17,7 +17,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 57201
+ms.custom: ["57201", "intro-internal"]
 ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 ms.search.region: Global
 # ms.search.industry: 
@@ -63,7 +63,7 @@ The following walkthroughs describe how tasks are processed, and how batch group
 
 For this example, you've created a job that is called JOB 1. As the following diagram shows, the job has seven tasks: TASK 1, TASK 2, TASK 3, TASK 4, TASK 5, TASK 6, and TASK 7. 
 
-![A job that has dependent tasks](./media/batch_framework_programmability.gif) 
+![A job that has dependent tasks.](./media/batch_framework_programmability.gif) 
 
 The tasks have the following dependencies:
 

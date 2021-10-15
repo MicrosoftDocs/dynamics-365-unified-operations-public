@@ -41,13 +41,13 @@ The external script module includes the **execute script asynchronously** and **
 
 The following illustration shows an external script injector module that is being configured on a page template. The **Script source** property box is where you add the URL that points to the script source code that will be injected into the HTML for the rendered page.
 
-![External script module properties in site builder](media/script-injector.png)
+![External script module properties in site builder.](media/script-injector.png)
 
 ## Inline script module
 
 The inline script module allows you to add inline JavaScript code directly to a page template or page. After the module is added using Commerce site builder, the script can be pasted into the **Inline script** property box, as highlighted in the following illustration. 
 
-![Inline script module properties in site builder](media/inline-script-injector.png)
+![Inline script module properties in site builder.](media/inline-script-injector.png)
 
 > [!NOTE]
 > When adding script to the **Inline script** property box, you do not need to add the outer **\<script\>** tags, just the inline JavaScript code.

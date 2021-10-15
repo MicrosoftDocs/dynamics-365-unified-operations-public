@@ -4,7 +4,7 @@
 title: Maintain vendor bank account information
 description: Vendors can use the Vendor collaboration functionality to maintain their bank account information. This topic explains how to add and maintain bank information for vendors that you do business with.
 author: v-kiarnd
-ms.date: 01/14/2021
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,6 @@ ms.dyn365.ops.version: AX 10.0.17
 # Maintain vendor bank account information
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Vendors can use the Vendor collaboration functionality to maintain their bank account information. This topic explains how to add and maintain bank information for vendors that you do business with.
 
@@ -54,6 +53,13 @@ If there are any documents that are related to the specific certification, you c
 Bank information that vendors enter on the page will show **Vendor** as the source. You can also enter bank account information on a vendor's behalf. That information will appear here, and **Customer** will be shown as the source. For more information, see [Create a vendor bank account](../../supply-chain/procurement/tasks/create-vendor-bank-account.md).
 
 After an account has been added, vendors can edit their bank's effective and expiration dates as required.
+
+## Turn on the vendor bank account information feature
+
+Before you can use this feature, it must be turned on in your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. In the **Feature management** workspace, the feature is listed in the following way:
+
+- **Module** - *Accounts payable*
+- **Feature name** - *Maintain vendor bank information using vendor collaboration workspace*
 
 ## Vendor collaboration-generated bank changes page
 

@@ -67,7 +67,7 @@ A counter registration can be updated manually or automatically based on product
 
 When asset types are added to a counter type in **Counters**, that counter is automatically added to the asset types on the **Counters** FastTab in [Asset types](../setup-for-objects/object-types.md).
 
-![Figure 1](media/071-setup-for-objects.png)
+![Figure 1.](media/071-setup-for-objects.png)
 
 
 

@@ -104,9 +104,9 @@ This feature also promotes the workflow options that appear in the personnel act
 
 - [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) in the Dynamics 365 2020 release wave 2 plan
 
-![Work items assigned to me](./media/hr-workflow-work-items-assigned-to-me.png)
+![Work items assigned to me.](./media/hr-workflow-work-items-assigned-to-me.png)
 
-![Workflow items quick access](./media/hr-workflow-quick-access.png)
+![Workflow items quick access.](./media/hr-workflow-quick-access.png)
 
 ## Coming Soon
 

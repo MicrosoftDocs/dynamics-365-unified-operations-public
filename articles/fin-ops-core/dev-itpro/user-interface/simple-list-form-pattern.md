@@ -39,7 +39,7 @@ The Simple List pattern is used to maintain data for simple entities. Simple ent
 
 ## Wireframe
 
-[![Wireframe](./media/simplelist1-1024x578.png)](./media/simplelist1.png)
+[![Wireframe.](./media/simplelist1-1024x578.png)](./media/simplelist1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -103,7 +103,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **CustGroup** 
 
-[![Simple List example](./media/simplelist2-1024x524.png)](./media/simplelist2.png) 
+[![Simple List example.](./media/simplelist2-1024x524.png)](./media/simplelist2.png) 
 
 **Note:** We plan to extend the grid lines to the right and bottom edges in a future client deliverable.
 
@@ -118,7 +118,7 @@ None at this time.
 
 ### AX 2012 content
 
-[![AX 2012 example](./media/simplelist3.png)](./media/simplelist3.png)
+[![AX 2012 example.](./media/simplelist3.png)](./media/simplelist3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

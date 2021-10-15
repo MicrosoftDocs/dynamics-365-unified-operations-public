@@ -3,7 +3,7 @@
 
 title: Define a tax rate type and assign it to relevant master data  
 description: This topic explains how to define the tax rate type and assign it to the relevant master data. 
-author: yijialuan 
+author: EricWangChen 
 ms.date: 03/18/2020
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: riluan
+ms.author: wangchen
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.5
 
@@ -80,7 +80,7 @@ With the tax rate type, the tax setup for the GST rate can be simplified with ju
 4. Right-click in the field and select **View details**.
 5. Enter the name and description of the tax rate type you want to add.
 
-    ![Define tax rate type](media/IND-define-tax-rate-type.png)
+    ![Define tax rate type.](media/IND-define-tax-rate-type.png)
 
 You can also import the tax rate type by using its data entity, **Tax rate type**.
 

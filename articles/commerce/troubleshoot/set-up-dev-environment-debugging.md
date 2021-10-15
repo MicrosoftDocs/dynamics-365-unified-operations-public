@@ -43,11 +43,11 @@ When you debug against a Tier 1 environment, because the site is now calling a d
 
 The following illustration shows an example of an error that might occur when a variant is selected on a product details page.
 
-![Error when a variant is selected on a product details page](media/unhandled-rejection-error.jpg)
+![Error when a variant is selected on a product details page.](media/unhandled-rejection-error.jpg)
 
 The following illustration shows an example of a similar error in a browser's debugger tools (F12 Developer Tools). The error message mentions violation of the content security policy directive.
 
-![Debugger tools error](media/debugger-tools-error.JPG)
+![Debugger tools error.](media/debugger-tools-error.JPG)
 
 ## Resolution
 

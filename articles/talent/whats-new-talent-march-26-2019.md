@@ -44,7 +44,7 @@ The following enhancements are available in interview scheduling.
 ### Embedded images in activities
 You can now embed images directly into activities. In addition to being able to copy and paste images from the web, you can upload images from your local file system. The size of the activity is limited to 1 MB. If the image is too large, resize and try to upload again.
 
-[![Mapping](./media/embedimages.png)](./media/embedimages.png)
+[![Mapping.](./media/embedimages.png)](./media/embedimages.png)
 
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 

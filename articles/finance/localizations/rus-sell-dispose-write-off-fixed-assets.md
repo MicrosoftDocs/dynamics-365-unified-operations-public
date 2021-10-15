@@ -4,7 +4,7 @@
 title: Sell, dispose, and write-off assets (Russia)
 description: This topic explains how to sell, dispose, and write-off assets in Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
-ms.date: 10/30/2018
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -113,6 +113,17 @@ However, if the invoice expenses are included in the order line that corresponds
 17. Click **Fixed assets (Russia)** \> **Common** \> **Fixed assets** to open **FA Value Models** page. The disposal date and cost of the fixed asset are displayed in the **Disposal date** and **Disposal cost** fields.
 18. Click **Balance** to open the **FA balances** page. The details are displayed in the **Leaving (sale)** and **Gain/Loss** fields.
 
+## Reverse disposal transactions
+To reverse a disposal transaction, create a credit note for the sales order or free text invoice related to the fixed asset, and then post the invoice.
+
+## Reverse write-off and disposal transactions
+By default, when you reverse a trnasaction, the reversal date is equal to the original transaction date. However, you can specify a different reversal date. 
+
+1.	Go to **Fixed assets (Russia)** > **Fixed assets**, and on the Action Pane, select **Value models**.
+2.	On the **FA value models** page, on the Action Pane, select **Transactions**.
+3.	On the **FA transactions** page, select and transaction and on the Action Pane, select **Reverse transaction**.
+4.	In the **Reverse transactions** dialog box, change the transaction reversal date as needed, and then select **OK**. A transaction to reverse the original transaction is created and added to the **FA transactions** page.
+5.	Select **Voucher** and on the **Voucher transactions** page, view the transactions in the ledger.
 
 
 

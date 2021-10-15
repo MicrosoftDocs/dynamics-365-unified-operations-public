@@ -83,7 +83,7 @@ Whereas the hardware station itself is specified at the channel level includes i
 
 ### MPOS with connected peripheral devices
 
-[![Traditional, fixed point of sale](./media/traditional-300x279.png)](./media/traditional.png)
+[![Traditional, fixed point of sale.](./media/traditional-300x279.png)](./media/traditional.png)
 
 To connect MPOS to POS peripherals in a traditional, fixed POS scenario, first navigate to the register itself, and assign a hardware profile to it. You can find the POS registers at **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**. 
 
@@ -102,7 +102,7 @@ Finally, in MPOS, use the **Select hardware station** operation to select the **
 
 ### MPOS or Cloud POS with a stand-alone hardware station
 
-[![Shared peripherals](./media/shared-300x254.png)](./media/shared.png)
+[![Shared peripherals.](./media/shared-300x254.png)](./media/shared.png)
 
 In this scenario, a stand-alone hardware station is shared among MPOS and Cloud POS clients. This scenario requires that you create a hardware station profile to specify the download package, port, and hardware profile that the hardware station uses. You can find the hardware station profile at **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**. 
 

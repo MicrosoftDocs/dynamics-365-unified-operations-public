@@ -31,14 +31,14 @@ ms.dyn365.ops.version: 10.0.1
 
 If a voucher should be generated, but the **Voucher transactions** page doesn't show any vouchers, follow the steps in the following sections as required to troubleshoot this issue.
 
-[![Voucher transactions page that has no vouchers](./media/voucher-not-generated-Picture1.png)](./media/voucher-not-generated-Picture1.png)
+[![Voucher transactions page that has no vouchers.](./media/voucher-not-generated-Picture1.png)](./media/voucher-not-generated-Picture1.png)
 
 ## Check the tax applicability
 
 1. Go to **Tax** \> **Periodic tasks** \> **Subledger journal entries not yet transferred**.
 2. If there is a journal record, select it, and then select **Transfer now**.
 
-    [![Transfer now button on the Subledger journal entries not yet transferred page](./media/voucher-not-generated-Picture2.png)](./media/voucher-not-generated-Picture2.png)
+    [![Transfer now button on the Subledger journal entries not yet transferred page.](./media/voucher-not-generated-Picture2.png)](./media/voucher-not-generated-Picture2.png)
 
 3. Open the **Voucher transactions** page again to see whether the voucher was generated.
 

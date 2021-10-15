@@ -3,7 +3,7 @@
 
 title: Search for products and product variants during order entry
 description: Use the **Item number** field to search for products and product variants when you manually create a sales order line or a purchase order line. This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
-author: cvocph
+author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 248534
 ms.assetid: 99dd5ce1-0029-4f06-90e7-865e6d46d86e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -62,7 +62,7 @@ If you type 'speak 05' you will not get any results. This is because the search
 You can limit the number of search results by using the **Number of results** field on the **Sales and marketing &gt; Setup &gt; Search &gt; Search parameters** page. If you set this field to 0, all search results will be returned. If you set it to 10, for example, it will return a maximum 10 search results.
 
 ## Configure the product search
-Before you can use the product and product variant search feature, follow these steps to configure the product search. [![3 steps to configure product search\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
+Before you can use the product and product variant search feature, follow these steps to configure the product search. [![3 steps to configure product search\_AXAppFall.](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
 
 ### Step 1: Include all the relevant product and product variant identifiers and dimensions in the search criteria
 
