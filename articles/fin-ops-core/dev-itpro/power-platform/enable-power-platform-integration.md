@@ -81,8 +81,8 @@ Follow these steps to configure the **Power Platform Integration** section.
 >
 > If you require values that differ from the default values, contact Microsoft support. We can help link an existing Dataverse environment that you manually provision to the Finance and Operations environment. Eventually, fields for the language and currency will be added as setup options, so that customers can manually set them or accept the default values.
 
-## Set up after environment deployment
-To set up after the Finance and Operations environment has been deployed, follow these steps:
+## Enabling after environment deployment
+If the Power Platform integration was not enabled during the deployment of the Finance and Operations environment, the option is available to enable the integration in LCS after deployment. To set up after the Finance and Operations environment has been deployed, follow these steps:
 
 1. After the Finance and Operations environment has been deployed through LCS, open the **Environment details** page in LCS.
 2. In the **Power Platform integration** section, select **Setup**.
@@ -113,6 +113,20 @@ To set up after the Finance and Operations environment has been deployed, follow
 > The **language** and **currency** values of the Dataverse environment that is created and linked to your Finance and Operations environment are automatically determined, based on the physical address of your Azure AD tenant. For example, if that address is in Redmond, Washington, USA, the language will be English by default, and the currency will be US dollars (USD).
 >
 > If you require values that differ from the default values, contact Microsoft support. We can help link an existing Dataverse environment that you manually provision to the Finance and Operations environment. Eventually, fields for the language and currency will be added as setup options, so that customers can manually set them or accept the default values.
+
+## Enabling the integration with an existing Power Platform environment
+
+When enabling the Power Platform integration for a Finance and Operations environment in LCS, either during or after deployment, the process creates a new Dataverse-enabled Power Platform environment, and links the Finance and Operations environment to the new Power Platform environment. However, you may want to enable the integration by linking your Finance and Operations environment to an existing Power Platform environment. The option to enable the integration with an existing Power Platform environment is not currently available in LCS. You can work with the Microsoft engineering team to enable the integration with a selected, existing Power Platform environment.
+
+There are two scenarios for creating enabling the integration with an existing Power Platform environment:
+
+1. A known, connected Power Platform environemnt is already defined by Dual-write configurations.
+2. No existing connected Power Platform environment is identified.
+
+### Enabling the integration for already-connected environments
+
+If Finance and Operations environment has configured Dual-write connecting the environment to a single Power Platform environment, these environments are identified as a one-to-one linking. For these environments, when the 10.0.21 application version for Finance and Operations is made generally available, identified one-to-one linked environments will be automatically updated to enable the full Power Platform integration for the Finance and Operations environment. 
+
 
 ## Troubleshooting the setup
 
