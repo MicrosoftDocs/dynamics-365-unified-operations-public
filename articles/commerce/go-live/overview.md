@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Go live and update checklist
-description: This topic provides a list of checklist steps to help you go live with or update your Microsoft Dynamics 365 Commerce implementation project.
+title: Go-live and update 
+description: This topic provides information to help you prepare to go-live or update your Microsoft Dynamics 365 Commerce implementation project.
 author: mssle
 ms.date: 09/17/2021
 ms.topic: article
@@ -13,25 +13,30 @@ ms.author: sheaton
 ms.search.validFrom: 2021-09-20
 ---
 
-# Go live and update checklist
+# Go-live and update 
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides a list of checklist steps to help you go live with or update your Microsoft Dynamics eCommerce implementation project. It points to content that will help you configure your system to work smoothly and effectively. 
+This topic provides information about the tasks you should complete to help you go-live with or update your Microsoft Dynamics eCommerce implementation project. It points to content that will help you configure your system to work smoothly and effectively. 
 
 > [!NOTE]
-> This documentation will grow over time and is not an exhaustive list of all possible items to be considered during your release.
+> The list of topics provided will grow over time. This is not an exhaustive list of all possible items to be considered during your release.
 
-Download a copy of the current go live checklist from https://aka.ms/d365fogolivechecklist. 
+Before you begin, download a copy of the current go-live checklist from https://aka.ms/d365fogolivechecklist. 
 
 ## Performance
+During the time that you are completing the go-live or upgrade process, you can take the opportunity to make performance improvements. 
 
-- [Optimize images](./performance-optimize-images.md)
-- [Reduce JavaScript by excluding unused modules](./performance-reduce-javascript.md)
+### Optimize images
+Website performance is often impacted by image downloads. You can improve website performance by reducing the size and optimizing your use of images in Commerce. For more information, see [Optimize images](./performance-optimize-images.md)
 
-## Additional resources
+### Reduce JavaScript by excluding unused modules
+You can improve website perforamnce by excluding unused JavaScript modules in Commerce. For more information, see [Reduce JavaScript by excluding unused modules](./performance-reduce-javascript.md)
 
-- [Best practices for Dynamics 365 Commerce development](/commerce/e-commerce-extensibility/best-practices-dev)
+### Improve performance by optimizing images
+Website performance is often impacted by image downloads. You can improve website performance by reducing the size and optimizing your use of images in Commerce. For more information, see [Improve performance by optimizing images](test-performance-topic.md)
+
+
 
 
   
