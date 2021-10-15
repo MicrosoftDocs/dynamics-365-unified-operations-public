@@ -1174,7 +1174,7 @@
           href: business-events/system-business-events.md
         - name: Alerts as business events
           href: business-events/alerts-business-events.md
-        - name: Business events in Microsoft Flow
+        - name: Business events in Power Automate
           href: business-events/business-events-flow.md
         - name: Business events developer documentation
           href: business-events/business-events-dev-doc.md
@@ -1184,7 +1184,7 @@
           href: business-events/potential-use-cases.md
         - name: Tutorials
           items: 
-          - name: Business events and Microsoft Flow
+          - name: Business events and Power Automate
             href: business-events/how-to/how-to-flow.md
           - name: Business events and Azure Event Grid
             href: business-events/how-to/how-to-eventgrid.md
