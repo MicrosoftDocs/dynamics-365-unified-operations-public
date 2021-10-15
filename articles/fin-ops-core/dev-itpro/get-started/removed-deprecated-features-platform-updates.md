@@ -44,7 +44,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Desire to require additional parameters when adding notifications in this way. |
+| **Reason for deprecation/removal** | Microsoft requires additional parameters when adding notifications. |
 | **Replaced by another feature?**   | SystemNotificationsManager.AddSystemNotification(). This API mandates developers explicitly set ExpirationDateTime and RuleID for generated notifications. |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
