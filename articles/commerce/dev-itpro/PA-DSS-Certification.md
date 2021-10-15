@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Platform update 8
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> If a version of Microsoft Dynamics 365 is implemented and the PA-DSS certification has not yet been completed by Microsoft, there may be potential impact to the retailer's Payment Card Industry (PCI) audit and certification. Specifically, until the PA-DSS certification is complete for the associated version, PCI certification can become more difficult and involved as the Payment Application may come into scope of testing during the certification.
+> If a version of Microsoft Dynamics 365 is implemented and the PA-DSS certification has not yet been completed by Microsoft, there may be potential impact to the retailer's Payment Card Industry (PCI) audit and certification. Specifically, until the PA-DSS certification is complete for the associated version, PCI certification can become more difficult and involved as the payment application may come into scope of testing during the certification.
 
-This topic explains the past, current, and pending listings of PA-DSS certification for Microsoft Dynamics 365. To view the current certifications, see [PCI PA-DSS certified payment applications](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications).
+This topic explains the current and past listings of PA-DSS certification for Microsoft Dynamics 365. To view the current certifications, see [PCI PA-DSS certified payment applications](https://www.pcisecuritystandards.org/assessors_and_solutions/payment_applications).
 
 ## Current certification
 PA-DSS implementation guides are linked to in the **Version** column in the following table.
