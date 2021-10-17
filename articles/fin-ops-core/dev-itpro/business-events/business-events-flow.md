@@ -48,6 +48,8 @@ After the **When a Business Event happens** trigger is added to a flow, the foll
 - **Business event** – Select the business event from which you want the flow to be triggered. The business events displayed in the list are all business events in the Finance and Operations business event catalog in the selected category.
 - **Legal entity** – Specify the legal entity where the business event is being subscribed to. The flow will be triggered when the business event occurs in that legal entity. By default, this field is blank and the business event is subscribed to in **all** legal entities.
 
+![When a Business Event happens trigger](../media/businessevents_FinOpsConnector.png)
+
 When the flow is saved, a subscription to the selected business event is added into the environment instance. As part of the subscription process, the required endpoint is set up, and the corresponding business event is activated.
 
 ### Using the Dataverse connector
@@ -65,6 +67,8 @@ After adding the **When an action is performed** trigger to a flow in Power Auto
 - **Category** - Select the category of the desired business event. This displays the list of unique business event categories in the business event catalog in Finance and Operations.
 - **Table name** - If the action is related to a specific table, select the related table. This will typically be **(none)** for Finance and Operations business events.
 - **Action name** - Select the action or business event from which you want the flow to be triggered. The drop-down list displays the list of all synchronized business events in the Finance and Operations business event catalog in the selected category.
+
+![When an action is performed trigger in Microsoft Dataverse connector](../media/businessevents_DataverseConnector.png)
 
 For more information on using the **When an action is performed** trigger in Power Automate, see [Trigger flows with actions](https://docs.microsoft.com/power-automate/dataverse/action-trigger) in the Power Platform documentation.
 
