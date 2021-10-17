@@ -75,6 +75,11 @@ For more information on using the **When an action is performed** trigger in Pow
 
 Finance and Operations entities that are enbled as virtual entities in Dataverse are included in the **When a row is added, modified or deleted** trigger of the Dataverse connector. When adding the trigger to a flow in Power Automate, you must define the table name of the table for which you want to trigger the flow. The **Table name** list contains the list of all Finance and Operations entities that are exposed as virtual entities in Dataverse from the Finance and Operations environment that is connected to the Power Platform environment through the Power Platform integration. For information on enabling virtual entities, see [Enable Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
 
+![When a row is added, modified or deleted trigger in Microsoft Dataverse connector](../media/businessevents_DataEventConnector.png)
+
+> [!NOTE]
+> Typing **mserp** in the **Table name** field will filter the list of tables to display the list of available Finance and Operations virtual entities enabled for your environment.
+
 For more information on using the **When a row is added, modified or deleted** trigger in the Dataverse connector, including advanced options, see [Trigger flows when a row is added, modified, or deleted](https://docs.microsoft.com/power-automate/dataverse/create-update-delete-trigger) in the Power Platform documentation.
 
 ## Unsubscribing from business events
