@@ -29,6 +29,8 @@ ms.dyn365.ops.version: 2019-02-28
 
 The Finance and Operations connector and Dataverse connector are available for consuming business events in Microsoft Power Automate. The Finance and Operations connector has a trigger that is named **When a Business Event occurs**. The Dataverse connector has a trigger named **When an action is performed**. Either of these triggers can be used to subscribe to any of the business events that are available in Finance and Operations. Both triggers provide the same functionality with slightly different execution.
 
+The Dataverse connector also provide the ability to subscribe to data events in Finance and Operations using the **When a row is added, modified or deleted** trigger. This enables a Power Automate flow to be triggered by any create, update, or delete (CUD) event against a selected Finance and Operations entity.
+
 ## Prerequisite
 
 It's important that you understand business events. For more information, see the [Business events](home-page.md) documentation.
@@ -64,8 +66,16 @@ After adding the **When an action is performed** trigger to a flow in Power Auto
 - **Table name** - If the action is related to a specific table, select the related table. This will typically be **(none)** for Finance and Operations business events.
 - **Action name** - Select the action or business event from which you want the flow to be triggered. The drop-down list displays the list of all synchronized business events in the Finance and Operations business event catalog in the selected category.
 
+For more information on using the **When an action is performed** trigger in Power Automate, see [Trigger flows with actions](https://docs.microsoft.com/power-automate/dataverse/action-trigger) in the Power Platform documentation.
+
 > [!NOTE]
 > The Power Automate endpoint must not be configured manually. The endpoint will automatically get created from Power Automate as explained above.
+
+## Subscribing to data events
+
+Finance and Operations entities that are enbled as virtual entities in Dataverse are included in the **When a row is added, modified or deleted** trigger of the Dataverse connector. When adding the trigger to a flow in Power Automate, you must define the table name of the table for which you want to trigger the flow. The **Table name** list contains the list of all Finance and Operations entities that are exposed as virtual entities in Dataverse from the Finance and Operations environment that is connected to the Power Platform environment through the Power Platform integration. For information on enabling virtual entities, see [Enable Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
+
+For more information on using the **When a row is added, modified or deleted** trigger in the Dataverse connector, including advanced options, see [Trigger flows when a row is added, modified, or deleted](https://docs.microsoft.com/power-automate/dataverse/create-update-delete-trigger) in the Power Platform documentation.
 
 ## Unsubscribing from business events
 
