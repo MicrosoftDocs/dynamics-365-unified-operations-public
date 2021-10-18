@@ -97,7 +97,6 @@ The **My machine** tab has the following columns. The numbers correspond to the 
 1. **Register downtime** – Select this button to open a dialog box where you can register machine downtime. You'll be able to select a reason code and enter a date/time span for the downtime. The machine downtime registration is used for calculating the efficiency of the machine asset.
 1. **View or edit** – Select this button to open a dialog box where you can edit or view existing downtime records.
 
-
 ## Starting and completing production jobs
 
 Workers start a production job by selecting a job on the **All jobs** tab and then selecting **Start job** to open the **Start job** dialog box.
@@ -113,6 +112,30 @@ Workers can start a job that is in any status. When a worker starts a job that h
 When a worker completes or partially completes a job, they can report good quantities that were produced by selecting a job on the **Active jobs** tab and then selecting **Report progress**. Then, in the **Report progress** dialog box, the worker enters the good quantity by using the numeric keyboard. The quantity is blank by default. After a quantity is entered, the worker can update the status of the job to *In progress*, *Stopped*, or *Completed*.
 
 ![Report progress dialog box.](media/pfei-report-progress-dialog.png "Report progress dialog box")
+
+## Reporting good quantities on batch orders that have co-products and by-products
+
+Workers can use the production floor execution interface to report progress on batch orders. This reporting includes reporting on co-products and by-products.
+
+Some manufacturers, especially in process industries, use batch orders to manage their production processes. Batch orders are created from formulas, and those formulas can be defined so that they have co-products and by-products as output. When feedback about those batch orders is reported, the amount of output must be registered on the formula item, and also on the co-products and by-products.
+
+When a worker completes or partially completes a job on a batch order, they can report good or scrap quantities for each product that is defined as output for the order. Products that are defined as output for a batch order can be of the *Formula*, *Co-product*, or *By-product* type.
+
+To report good quantities on the products, a worker selects a job on the **Active jobs** tab and then selects **Report progress**.
+
+Then, in the **Report progress** dialog box, the worker can select among the products that are defined as output for the batch order to report on. The worker can select one or many products in the list, and then select **Report progress**. For each product, the quantity is blank by default, and the worker can use the numeric keyboard to enter the quantity. The worker can use the **Previous** and **Next** buttons to move between the selected products. After the quantity is entered for each product, the worker can update the status of the job to *In progress*, *Stopped*, or *Completed*.
+
+![Report co-products and by-products.](media/report-co-by-products.png "Report co-products and by-products")
+
+### Reporting on batch orders for planning items
+
+When a worker completes a job on a batch order for a planning item, they will report quantities only on co-products and by-products, because planning items don't contain an item of the *Formula* type.
+
+### Reporting co-product variation
+
+If a batch order is created from a formula version where the **Co-products variations** option is set to *Yes*, the worker can report on co-products that aren't part of the definition for the batch orders. This functionality is used in scenarios where unexpected product output can occur in the production process.
+
+In this case, the worker can specify the co-product and quantity to report by selecting **Co-products variations** in the report progress dialog box. The worker can then select among all the released products that are defined as co-products.
 
 ## Reporting scrap
 
