@@ -1,4 +1,20 @@
-﻿# Spanish Intrastat
+---
+# required metadata
+
+title: Spanish Intrastat
+description: This topic contains information about the Spanish Intrastat report.
+author: andosip
+ms.date: 10/18/2021
+ms.topic: article
+audience: 
+ms.reviewer: kfend 
+ms.search.region: Global
+ms.author: v-aosipov
+ms.search.validFrom: 
+---
+# Spanish Intrastat
+
+[!include [banner](../includes/banner.md)]
 
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Spanish Intrastat declaration contains information about the trade of goods that you can use for reporting.
 
