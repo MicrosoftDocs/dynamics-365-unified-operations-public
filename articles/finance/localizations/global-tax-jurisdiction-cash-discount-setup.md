@@ -75,3 +75,8 @@ For tax calculation purposes, the tax rates used for **Option1** is 19% and 21% 
 | Cash discount amount | 47.60 (1190 x 4%) | 40 (1000 x 4%) |
 
 
+**IMPORTANT NOTE.**
+
+In the 10.0.23 Monthly update the functionality will be supported for
+ - Sales order operations only
+ - Sales orders that contain one sales tax code per sales order line
