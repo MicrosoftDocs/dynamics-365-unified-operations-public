@@ -45,7 +45,7 @@ Mainstream support ends on October 9, 2018.
 
 ### When does the mainstream support for Dynamics AX 2012 R3 end?
 
-Mainstream support ended on Ocotober 12, 2021.
+Mainstream support ended on October 12, 2021.
 
 ### Was the information of the end date of the mainstream support for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3 available before?
 
@@ -73,7 +73,7 @@ If a hotfix is needed for a part of the system where Microsoft does not provide 
 
 Yes, all legislation changes regardless of source (vendors, MS own research, localization community....) are stored in the Lifecycle Service (LCS) alerting project.  To access LCS alerting project:
 1. **Sign up**:  Send email request to join localization community (under NDA) at DynRegW@microsoft.com.
-2. **Access**:  Log into LCS project **Regulatory Alerts - Worldwide** (available only for companies with NDA or indivdiduals who signed up for the Insider Program).
+2. **Access**:  Log into LCS project **Regulatory Alerts - Worldwide** (available only for companies with NDA or individuals who signed up for the Insider Program).
 3. **Alerting guide**:  Inform Microsoft about country/region regulation alerts and track the status of regulatory features.
 
 Please note that the LCS alerting project includes all identified/reported legislation changes (alerts) but not actual Microsoft plans.
