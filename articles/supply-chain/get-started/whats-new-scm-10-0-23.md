@@ -53,7 +53,6 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Sales and marketing | Improve "Top 100" customers report performance | This feature improves the performance of the **Top 100** customers report by always running the report across all customers (which is its intended use) rather than by allowing custom queries. When this feature is enabled, all **Records to include** settings are disabled in the **Top 100** report dialog. |
 | Warehouse management | Scale unit support for release to warehouse of outbound orders | When this feature is enabled, outbound orders can be released from the hub directly to the scale unit where the orders will be fulfilled. |
 
-
 ## New and updated documentation resources
 
 We have recently added or significantly updated the following help topics. These topics aren't necessarily related to the new features that were added for this release, as listed in the previous section. However, they might help you to get more out of existing features.
