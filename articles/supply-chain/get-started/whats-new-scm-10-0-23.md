@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.23 (December 2021) 
+title: Preview of Dynamics 365 Supply Chain Management 10.0.23
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.23. 
 author: kamaybac
 ms.date: 10/15/2021
@@ -13,14 +13,14 @@ ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.23 (December 2021)
+# Preview of Dynamics 365 Supply Chain Management 10.0.23
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.23. This version has a build number of 10.0.1037 <!-- KFM: Confirm build number --> and is available as follows:
+This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management preview of version 10.0.23. This version has a build number of 10.0.1037 and is available as follows:
 
-- **Preview of release:** October 2021 <!-- KFM: Confirm all months -->
+- **Preview of release:** October 2021
 - **General availability of release (self-update):** December 2021
 
 ## Features included in this release
@@ -74,11 +74,11 @@ We have recently added or significantly updated the following help topics. These
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.23 includes platform updates. To learn more, see [Platform updates for version 10.0.23 of Finance and Operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.23 includes platform updates. To learn more, see [Platform updates for version 10.0.23 of Finance and Operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.23, sign in to Lifecycle Services (LCS) and view the [KB article](#). <!-- KFM: Update link -->
+For information about the bug fixes included in each of the updates that are part of 10.0.23, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=627874&dbType=3&qc=9b7e01944eb8b43f9c3aac4be26811c27be205847d6d2a240424f34f7e722910).
 
 ### Dynamics 365 and industry clouds: 2021 release wave 2 plan
 
