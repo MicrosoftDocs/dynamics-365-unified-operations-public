@@ -28,20 +28,20 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, and Dynamics AX 2012 R2 ends on October 9, 2018. After that date, only security hotfixes will continue to be provided for these three versions through the extended support period that continues until April 12, 2022. For more information, see [support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX).
+Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, and Dynamics AX 2012 R2 ended on October 9, 2018. After that date, only security hotfixes will continue to be provided for these three versions through the extended support period that continues until April 12, 2022. For more information, see [support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX).
 
 Mainstream support for Dynamics AX 2012 R3 ended on October 12, 2021.  After that date, only security hotfixes will continue to be provided through the extended support period that continues until  January 10, 2023.  For more information, see [support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX).
 
-Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Retail, and Human Resources:
+Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Commerce, and Human Resources:
 
 - Dynamics AX 2009 Service Pack 1 customers should use the [migration tool](../../dev-itpro/migration-upgrade/upgrade-home-page.md) that is available.
-- Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to Finance and Operations apps through Dynamics AX 2012 R3 using the upgrade tool that is available. Additional upgrade information is available in the [Upgrade from AX 2012 to Finance and Operations apps](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md) topic.
+- Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to Finance and Operations apps through Dynamics AX 2012 R3 using the upgrade tool that is available. For additional upgrade information, see [Upgrade from AX 2012 to Finance and Operations apps](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md).
 
 ## Frequently asked questions
 
 ### When does the mainstream support for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, and Dynamics AX 2012 R2 end?
 
-Mainstream support ends on October 9, 2018.
+Mainstream support ended on October 9, 2018.
 
 ### When does the mainstream support for Dynamics AX 2012 R3 end?
 
@@ -71,27 +71,27 @@ If a hotfix is needed for a part of the system where Microsoft does not provide 
 
 ### Can I access information about upcoming legislation changes in supported countries?
 
-Yes, all legislation changes regardless of source (vendors, MS own research, localization community....) are stored in the Lifecycle Service (LCS) alerting project.  To access LCS alerting project:
-1. **Sign up**:  Send email request to join localization community (under NDA) at DynRegW@microsoft.com.
-2. **Access**:  Log into LCS project **Regulatory Alerts - Worldwide** (available only for companies with NDA or individuals who signed up for the Insider Program).
-3. **Alerting guide**:  Inform Microsoft about country/region regulation alerts and track the status of regulatory features.
+Yes, all legislation changes regardless of source (such as vendors, Microsoft research, or the localization community) are stored in the Lifecycle Service (LCS) alerting project. To access the LCS alerting project, follow these steps:
+1. **Sign up**: Send an email request to join the localization community (under NDA) at DynRegW@microsoft.com.
+2. **Access**: Sign in to the LCS project **Regulatory Alerts - Worldwide** (available only for companies with NDA or individuals who signed up for the Insider Program).
+3. **Alerting guide**: Inform Microsoft about country/region regulation alerts and track the status of regulatory features.
 
-Please note that the LCS alerting project includes all identified/reported legislation changes (alerts) but not actual Microsoft plans.
+Note that the LCS alerting project includes all identified/reported legislation changes (alerts) but not actual Microsoft plans.
 
 ### Can I get visibility into Microsoft plans for releases of new regulatory features?
 
-Yes, in LCS Issue Search, information is published regarding upcoming regulatory updates for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Project Operations.  
+Yes, in LCS Issue Search, information is published regarding upcoming regulatory updates for Dynamics 365 Finance, Supply Chain Management, Commerce, and Project Operations.  
 
 #### Are details about released regulatory features available?
 
-Yes, for larger features, we are publishing documentation in [Globalization resources](../../dev-itpro/lcs-solutions/country-region.md).
+Yes, for larger features, we publish this information in [Globalization resources](../../dev-itpro/lcs-solutions/country-region.md).
 
-### Can I view and try actual regulatory features on Dynamics 365 prior to release?
-Yes, if you have purchased cloud licenses for Dynamics 365 and you have access to the Preview Early Access Program (PEAP). For regulatory changes specified by authorities early, the features will be available in PEAP prior to the law-enforced date (or latest date for first filing).
+### Can I view and try actual regulatory features in Dynamics 365 prior to a release?
+Yes, you can do this if you have purchased cloud licenses for Dynamics 365 and you have access to the Preview Early Access Program (PEAP). For regulatory changes specified by authorities early, the features will be available in PEAP prior to the law-enforced date (or latest date for first filing).
 
-### Can I access the code and configurations for regulatory features prior to release?
-Yes, the code will be available in the LCS project **PEAP Assets**, in the Shared asset library under **Software deployable package**.  To sign-up for the PEAP program, complete the [Preview Early Access Program for Finance and Operations applications](https://aka.ms/peap) survey. 
+### Can I access the code and configurations for regulatory features prior to a release?
+Yes, the code will be available in the LCS project **PEAP Assets**, in the Shared asset library under **Software deployable package**.  To sign  up for the PEAP program, complete the [Preview Early Access Program for Finance and Operations applications](https://aka.ms/peap) survey. 
 
-Configurations are available in the Global repository.  Please see [Download ER configurations from the Global repository of Configuration service](../../dev-itpro/analytics/er-download-configurations-global-repo.md) for more information.
+Configurations are available in the Global repository. For more information, see [Download ER configurations from the Global repository of Configuration service](../../dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
