@@ -49,7 +49,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | No. Any further plans regarding this functionality will be communicated through our standard release wave disclosure process. |
 | **Product areas affected**         | Web client - Document attachment experience |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated. Feature has been blocked. |
+| **Status**                         | Deprecated  |
 
 ## Platform updates for version 10.0.23 of Finance and Operations apps
 
