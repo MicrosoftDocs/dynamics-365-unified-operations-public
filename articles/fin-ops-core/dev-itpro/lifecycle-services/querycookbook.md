@@ -117,24 +117,36 @@ If a SPID is consuming too many resources and degrading the operation of other p
 |          |            |       |
 |          |            |       |
 |          |            |       |
+
+
+
+## Removed actions
+| Feature         |     Removed?       |    Notes   |
+|-----------------|---------------------|------------|
+| End SQL   Process   | NO  | Continues to be available                                                                                                                                                                                                                               |   |   |
+|---------------------|-----|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
+| Create   Index      | YES | N/A anymore       Why? Manual index creation   is no longer needed as this handled by background platform processes      What's next? System   background process will handle this as required.                                                         |   |   |
+| Drop   index        | YES | N/A anymore.      Why? Not included in DAMS   because of periodic nature of FnO workloads.       What's next? System   will auto tune as required.                                                                                                      |   |   |
+| Rebuilt   Index     | YES | N/A anymore.      Why? Manual index creation   is no longer needed as this handled by background platform processes      What's next? System   background process will handle this as required.                                                         |   |   |
+| Update   Statistics | YES | N/A anymore.      Why? Platform background   process takes care of index and stats maintenance.       Whats next? Platform   responsible for index and stats maintenance. Customers reduces manual efforts   in favor of scheduled platform automation. |   |   |
+| Query   Hint Optimization                | YES | N/A anymore.      Why? Platform takes care of   query hint optimization vs manual tuning by customers.      What's next? Platform   to automatically detect the correct hint and apply to the queries that need   optimization.                                                                                                                                                                                                                                                                                                                                                                         |   |   |
+|------------------------------------------|-----|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
+| Create   a Plan Guide to add Table Hints | YES | N/A anymore. Query hint   optimization combined with “Create a Plan Guide to add Table   hints"      Why?       - Platform takes care of query optimization instead of time-consuming   manual tuning by customers.       - DAMS reduces manual efforts in favor of platform automation.      - Platform removes usage of Plan Guides as they are inefficient and   difficult to manage.      What's next?      - Plan Guides are being deprecated in favor of forcing hints through   QDS.      - Platform to automatically detect the correct hint and apply to the   queries that need optimization. |   |   |
+| Create a   Plan Guide to force Plan      | YES | same as above                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |   |   |
+| Remove   Plan Guide                      | YES | same as above                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |   |   |
+| List   of Current Plan Guide             | YES | N/A anymore      Why?      - Platform takes care of optimization instead of   time-consuming manual tuning by customers.       - DAMS reduces manual efforts in favor of platform automation.      - Platform removes usage of Plan Guides as they are inefficient and   difficult to manage.      What's next?     - Plan Guides are being deprecated in favor of forcing hints through   QDS.      - Platform to automatically detect the correct hint and apply to the   queries that need optimization                                                                                              |   |   |
 |          |            |       |
 |          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
-|          |            |       |
+
+
+## Removed items under Live view
+
+|    Feature      |      Removed?      |  Notes     |
+|-----------------|--------------------|-------------|
+| Common   Metrics (DTU)           | YES | N/A anymore.      Why? Current DTU has been   deprecated from queries.       Whats next? See   Current DTU under Queries above. |   |   |
+|----------------------------------|-----|---------------------------------------------------------------------------------------------------------------------------------|---|---|
+| Currently   Executing Statements | NO  | Remains available in LCS                                                                                                        |   |   |
+| Blocking   Statements            | NO  | Remains available in LCS                                                                                                        |   |   |
 |          |            |       |
 |          |            |       |
 |          |            |       |
