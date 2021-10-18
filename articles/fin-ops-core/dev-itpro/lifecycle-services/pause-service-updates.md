@@ -4,7 +4,7 @@
 title: Pause service updates through Lifecycle Services (LCS)
 description: This topic explains how to pause service updates to your environments.
 author: angelmarshall
-ms.date: 03/03/2020
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
