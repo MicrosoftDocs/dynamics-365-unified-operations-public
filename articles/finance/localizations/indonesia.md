@@ -2,7 +2,7 @@
 # required metadata
 
 title: Indonesia overview
-description: This topic provides an overview of functionality specific to Indonesia. 
+description: This topic provides an overview of functionality that is specific to Indonesia.
 author: sndray
 ms.date: 10/06/2021
 ms.topic: article
@@ -39,6 +39,5 @@ This topic includes information and links to documentation resources for Indones
 
 - [Reverse charge VAT](emea-reverse-charge.md)
 - [Global withholding tax](../general-ledger/global-withholding-tax-overview.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
