@@ -4,7 +4,7 @@
 title: Install modern report design templates
 description: This topic explains how to install the modern report design templates in the application suite.
 author: RichdiMSFT
-ms.date: 01/12/2018
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
