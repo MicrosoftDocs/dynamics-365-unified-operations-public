@@ -99,7 +99,7 @@ If a SPID is consuming too many resources and degrading the operation of other p
 |  Current Blocking Tree        |    No        |  Feature continues to be available.     |
 | Current Runing Queries         |    No        |    Feature continues to be available.   |
 | Current Blocking Statements         |    No        |    Feature continues to be available.   |
-| Get Indexes         |       Yes     |       | Customers will be charged based on storage. Hence, customers need not see indexes or anything else automatically created by system.|
+| Get Indexes         |       Yes     |       | Customers will be charged based on storage. Hence, customers need not see indexes or anything else automatically created by system.
 |          |            |       |
 |          |            |       |
 |          |            |       |
