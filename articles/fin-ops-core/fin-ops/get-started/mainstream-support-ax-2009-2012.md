@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3
+title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2, and Dynamics AX 2012 R3
 description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3.
 author: ShellyBakke
-ms.date: 06/21/2021
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,7 +24,7 @@ ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ---
 
-# End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX2012 R2 and Dynamics AX 2012 R3
+# End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2, and Dynamics AX 2012 R3
 
 [!include[banner](../includes/banner.md)]
 
