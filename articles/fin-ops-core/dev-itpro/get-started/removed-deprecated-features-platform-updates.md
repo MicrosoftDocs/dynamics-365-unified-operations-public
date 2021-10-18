@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 10/15/2021
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,6 +37,19 @@ This topic describes features that have been removed, or that are planned for re
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+
+
+## Feature deprecation effective October 2021
+
+### "Show related document attachments" feature
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The feature was returning unexpected results. |
+| **Replaced by another feature?**   | No. Any further plans regarding this functionality will be communicated through our standard release wave disclosure process. |
+| **Product areas affected**         | Web client - Document attachment experience |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Feature has been blocked. |
 
 ## Platform updates for version 10.0.23 of Finance and Operations apps
 
