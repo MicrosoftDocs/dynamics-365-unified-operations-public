@@ -63,7 +63,7 @@ For one-box development environments, you can create a database in the local Mic
 
 You should also create a SQL user account for sign-in to the database. Write down the server name, database name, and the SQL user ID and password. You will use this information when you configure the entity export option in the next section.
 
-If you're using the BYOD feature for integration for analytical purposes, you should consider using clustered columnstore indexes: [Columnstore indexes: Overview] {/sql/relational-databases/indexes/columnstore-indexes-overview?view=sql-server-ver15).
+If you're using the BYOD feature for integration for analytical purposes, you should consider using clustered columnstore indexes as described in [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview?view=sql-server-ver15).
 
 > [!NOTE]
 > Your BYOD database must be accessible to Finance and Operations apps. If you encounter issues where you are unable to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately. For more information about self-service deployments, see [Self-service deployment FAQ](/deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment).
