@@ -45,7 +45,7 @@ Mainstream support ends on October 9, 2018.
 
 ### When does the mainstream support for Dynamics AX 2012 R3 end?
 
-Mainstream support ends on Ocotober 12, 2021.
+Mainstream support ended on Ocotober 12, 2021.
 
 ### Was the information of the end date of the mainstream support for Dynamics AX 2009 Service Pack 1, Dynamics AX 2012, Dynamics AX 2012 R2 and Dynamics AX 2012 R3 available before?
 
@@ -71,26 +71,27 @@ If a hotfix is needed for a part of the system where Microsoft does not provide 
 
 ### Can I access information about upcoming legislation changes in supported countries?
 
-Yes, all legislation changes regardless of source (vendors, MS own research, Localization community....) are stored in the Lifecycle Service (LCS) alerting project.  To access LCS alerting project:
-      Sign up:  Send email request to join Localization community (under NDA) at DynRegW@microsoft.com
-      Access:  Log into LCS project "Regulatory Alerts - Worldwide" (available only for companies with NDA or indivdiduals who signed up for the Insider Program)
-      Alerting guide:  Inform Microsoft about country/region regulation alerts and track the status of regulatory features
+Yes, all legislation changes regardless of source (vendors, MS own research, localization community....) are stored in the Lifecycle Service (LCS) alerting project.  To access LCS alerting project:
+1. **Sign up**:  Send email request to join localization community (under NDA) at DynRegW@microsoft.com.
+2. **Access**:  Log into LCS project **Regulatory Alerts - Worldwide** (available only for companies with NDA or indivdiduals who signed up for the Insider Program).
+3. **Alerting guide**:  Inform Microsoft about country/region regulation alerts and track the status of regulatory features.
 
-Please note the LCS alerting project includes all identified/reported legislation changes (alerts) but not actual MS plans.
+Please note that the LCS alerting project includes all identified/reported legislation changes (alerts) but not actual Microsoft plans.
 
-### Can I get visibility into Microsoft plans for releases of new Regulatory features?
+### Can I get visibility into Microsoft plans for releases of new regulatory features?
 
-Yes, in LCS issue search, information is published regarding upcoming regulatory updates for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Project Operations.  
+Yes, in LCS Issue Search, information is published regarding upcoming regulatory updates for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Project Operations.  
 
-#### Are details about released Regulatory features available?
+#### Are details about released regulatory features available?
 
-Yes, for larger features, we are publishing documentation at:  https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/finance/toc.json.
+Yes, for larger features, we are publishing documentation in [Globalization resources](../../dev-itpro/lcs-solutions/country-region.md).
 
-### Can I view and try actual Regulatory features on Dynamics 365 prior to release?
-Yes, if you have purchased cloud licenses for Dynamics 365 and you have access to the PEAP (Preview Early Access Program). For regulatory changes specified by authorities early, the features will be available in PEAP prior to LAw enforced date (or latest date for first filing).
+### Can I view and try actual regulatory features on Dynamics 365 prior to release?
+Yes, if you have purchased cloud licenses for Dynamics 365 and you have access to the Preview Early Access Program (PEAP). For regulatory changes specified by authorities early, the features will be available in PEAP prior to the law-enforced date (or latest date for first filing).
 
-### Can I access the code and configurations for Regulatory features prior to release?
-Yes, the code will be available in the LCS project "PEAP Assets", in the Asset Library under Software Deployable package.  To sign-up for the PEAP program complete this form:  https://aka.ms/peap.  
+### Can I access the code and configurations for regulatory features prior to release?
+Yes, the code will be available in the LCS project **PEAP Assets**, in the Shared asset library under **Software deployable package**.  To sign-up for the PEAP program, complete the [Preview Early Access Program for Finance and Operations applications](https://aka.ms/peap) survey. 
+
 Configurations are available in the Global repository.  Please see Download ER configurations from the Global repository of Configuration service - Finance & Operations | Dynamics 365 | Microsoft Docs for Details.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
