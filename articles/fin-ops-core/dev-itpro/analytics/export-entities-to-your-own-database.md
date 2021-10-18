@@ -88,7 +88,7 @@ If you're using the BYOD feature for integration for analytical purposes, you sh
 
 4. Select **Validate**, and make sure that the connection is successful.
 
-    - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining column store indexes for entities that are copied. 
+    - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining columnstore indexes for entities that are copied. 
     - The **Enable triggers in target database** option sets export jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records have been inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit size** parameter in the Data management framework.
 
 For scenarios in which analytical applicaions data is read from BYOD, there is always the challenge of ensuring that the reporting systems get consistent data from BYOD while the sync is in progress. You can achieve this result by not reading the analytical data apps directly from the staging tables created by the BYOD process. The staging tables hold the data while data is being synced from the instance and hence will be constantly changing. Use the SQL trigger feature to determine when the data sync has been completed, and then hydrate the downstream analytical data scenarios.
