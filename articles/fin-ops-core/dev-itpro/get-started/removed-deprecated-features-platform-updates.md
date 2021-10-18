@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
-ms.date: 09/27/2021
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,7 +44,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The feature was returning unexpected results |
+| **Reason for deprecation/removal** | The feature was returning unexpected results. |
 | **Replaced by another feature?**   | No. Any further plans regarding this functionality will be communicated through our standard release wave disclosure process. |
 | **Product areas affected**         | Web client - Document attachment experience |
 | **Deployment option**              | All |
