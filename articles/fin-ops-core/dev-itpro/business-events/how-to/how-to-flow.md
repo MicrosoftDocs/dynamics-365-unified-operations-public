@@ -4,7 +4,7 @@
 title: Business events and Microsoft Power Automate
 description: This topic provides information about the business events that are available for consumption in Microsoft Power Automate using the connector.
 author: Sunil-Garg
-ms.date: 11/18/2019
+ms.date: 10/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,14 +28,14 @@ ms.dyn365.ops.version: 2019-6-30
 
 [!include[banner](../../includes/banner.md)]
 
-This topic provides steps detailing how to configure and consume a business event from a Power Automate endpoint using the **When a Business Event occurs** trigger of the Finance and Operations connector. 
+This topic explains how to configure and consume a business event from a Power Automate endpoint using the **When a Business Event occurs** trigger of the Finance and Operations connector. 
 
 This topic shows how to perform the following tasks:
 
 -   Create a new flow in Power Automate
 -   Trigger a business event
 
-This tutorial lists steps for using the Finance and Operations connector, however the steps can also be applied to creating flows in Power Automate for Finance and Operations business events and data events in the Dataverse connector. For more information on Finance and Operations business events and data events with the **When an action is performed** and **When a row is added, modified or deleted** triggers in the Dataverse connector, see [Business events in Microsoft Power Automate](../business-events-flow.md).
+This topic lists the steps to use the Finance and Operations connector. However, the steps can also be applied to creating flows in Power Automate for Finance and Operations apps business events and data events in the Microsoft Dataverse connector. For more information on Finance and Operations apps business events and data events with the **When an action is performed** and **When a row is added, modified or deleted** triggers in the Dataverse connector, see [Business events in Microsoft Power Automate](../business-events-flow.md).
 
 ## Create a new flow in Power Automate
 
