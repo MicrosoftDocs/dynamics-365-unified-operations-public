@@ -95,6 +95,7 @@ If a SPID is consuming too many resources and degrading the operation of other p
 ## Removed features
 
 | Feature  |  Removed?  |  Note |
+|----------|-------------|-------|
 |  Current Blocking Tree        |    No        |  Feature continues to be available.     |
 | Current Runing Queries         |    No        |    Feature continues to be available.   |
 | Current Blocking Statements         |    No        |    Feature continues to be available.   |
