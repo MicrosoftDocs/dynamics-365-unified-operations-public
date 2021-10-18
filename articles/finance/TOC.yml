@@ -74,6 +74,8 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.23 
+            href: get-started/whats-new-changed-10-0-23.md
           - name: Finance 10.0.22 (November 2021)
             href: get-started/whats-new-changed-10-0-22.md
           - name: Finance 10.0.21 (October 2021)
@@ -240,6 +242,8 @@
           href: accounts-payable/auto-vendr-invc-process.md
         - name: Setup options for vendor invoice automation
           href: accounts-payable/vnd-invoice-set-up-options.md
+        - name: Generate invoice lines when importing vendor invoices
+          href: accounts-payable/auto-create-invc-lines-at-import.md
         - name: Submit invoices to the workflow system and match product receipt lines
           href: accounts-payable/submit-invoice-workflow-automatically.md
         - name: View vendor invoice automation results
@@ -272,6 +276,8 @@
           href: accounts-payable/tasks/research-resolve-exceptions.md
       - name: Vendor posting profiles
         href: accounts-payable/vendor-posting-profiles.md
+      - name: Vendor invoice dates
+        href: accounts-payable/vendor-invoice-dates.md
       - name: Foreign currency revaluation for Accounts payable and Accounts receivable
         href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
       - name: Mobile invoice approvals
@@ -1104,6 +1110,8 @@
           href: general-ledger/enable-delayed-tax-calculation.md         
         - name: Create a sales tax payment
           href: general-ledger/tasks/create-sales-tax-payment.md
+        - name: Tax settlement rounding based on customized currency decimal places
+          href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
         - name: Create sales tax transactions on documents
           href: general-ledger/tasks/create-sales-tax-transactions-documents.md
         - name: Set up ledger posting groups for sales tax
@@ -1594,6 +1602,10 @@
                 href: localizations/emea-nl-vat-declaration-netherlands.md
               - name: EU sales list
                 href: localizations/emea-nl-eu-sales-list.md
+            - name: Spain reporting
+              items:
+              - name: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
+                href: localizations/emea-esp-sii-spain.md
             - name: Sweden reporting
               items:
               - name: VAT declaration
@@ -1604,8 +1616,8 @@
                 href: localizations/emea-che-vat-declaration-switzerland.md
             - name: United Kingdom reporting
               items:
-              - name: Prepare for integration with MTD for VAT
-                href: localizations/emea-gbr-mtd-vat-integration.md
+              - name: VAT declaration
+                href: localizations/emea-gbr-vat-declaration.md
           - name: Enable Tax Calculation for transfer order
             items: 
             - name: Tax feature support for transfer orders
@@ -3462,28 +3474,26 @@
             href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
           - name: Set up sales tax groups for reverse charge VAT
             href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md      
-        - name: United Kingdom reporting
-          items:
-          - name: Making Tax Digital (MTD) for VAT
-            items: 
-            - name: Making Tax Digital (MTD) VAT return submission in the United Kingdom 
-              href: localizations/emea-gbr-mtd-vat-integration.md
-            - name: Prepare your environment to interoperate with HMRC's MTD VAT web service
-              href: localizations/emea-gbr-mtd-vat-integration-setup.md
-            - name: Checklist for Electronic messages setup for MTD VAT
-              href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-            - name: Test interoperation with the MTD VAT sandbox
-              href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-            - name: Authorize your Finance environment to interoperate with HMRC's MTD web servic
-              href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-            - name: Submit a VAT return to HMRC's MTD web service
-              href: localizations/emea-gbr-mtd-vat-integration-submission.md
-            - name: Retrieve information about VAT payments and liabilities from HMRC
-              href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
-            - name: VAT setup details for VAT declarations in the United Kingdom
-              href: localizations/emea-gbr-mtd-vat-integration-declaration.md 
-            - name: Generate a VAT declaration in paper format (VAT 100 report)
-              href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+        - name: Making Tax Digital (MTD) for VAT
+          items: 
+          - name: Making Tax Digital (MTD) VAT return submission in the United Kingdom 
+            href: localizations/emea-gbr-mtd-vat-integration.md
+          - name: Prepare your environment to interoperate with HMRC's MTD VAT web service
+            href: localizations/emea-gbr-mtd-vat-integration-setup.md
+          - name: Checklist for Electronic messages setup for MTD VAT
+            href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+          - name: Test interoperation with the MTD VAT sandbox
+            href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+          - name: Authorize your Finance environment to interoperate with HMRC's MTD web servic
+            href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+          - name: Submit a VAT return to HMRC's MTD web service
+            href: localizations/emea-gbr-mtd-vat-integration-submission.md
+          - name: Retrieve information about VAT payments and liabilities from HMRC
+            href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+          - name: VAT setup details for VAT declarations in the United Kingdom
+            href: localizations/emea-gbr-mtd-vat-integration-declaration.md 
+          - name: Generate a VAT declaration in paper format (VAT 100 report)
+            href: localizations/emea-gbr-mtd-vat-integration-vat100.md
         - name: Statistics on payment practices report
           href: localizations/emea-gbr-statistics-on-payment-practices-report.md
       - name: United States

@@ -4,7 +4,7 @@
 title: Create email templates for transactional events 
 description: This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 05/28/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,10 +28,100 @@ ms.dyn365.ops.version: Release 10.0.8
 # Create email templates for transactional events
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce provides an out-of-box solution for sending emails that alert customers about transactional events (for example, when an order is placed, an order is ready for pickup, or an order has been shipped). This topic describes the steps for creating, uploading, and configuring the email templates that are used to send transactional emails.
+
+## Notification types
+
+Notifications can be configured to inform customers via email when specific events occur as part of the order and customer lifecycle. To configure notifications, you must map an email template to a notification type by creating a Commerce email notification profile. For information about how to set up email notification profiles, see [Set up an email notification profile](email-notification-profiles.md).
+
+Dynamics 365 Commerce supports the following notification types.
+
+### Order created
+
+The *order created* notification type is triggered when a new sales order is created in Commerce headquarters.
+
+> [!NOTE]
+> The order created notification type isn't triggered for cash and carry transactions that occur at a point of sale (POS) terminal. In this case, an emailed and/or printed receipt is generated instead. For more information, see [Send email receipts from Modern POS (MPOS)](email-receipts.md).
+
+### Order confirmed
+
+The *order confirmed* notification type is triggered when an order confirmation document is generated on the sales order from Commerce headquarters.
+
+### Picking completed
+
+The *picking completed* notification type is triggered when a picking list for an order is marked as completed in Commerce headquarters.
+
+> [!NOTE]
+> The picking completed notification type isn't triggered when an item is marked as picked at a POS terminal.
+
+### Packing completed
+
+The *packing completed* notification type is triggered when a packing slip document is generated for an order in Commerce headquarters at a POS terminal.
+
+The packing completed notification type supports the following additional email placeholders to facilitate "order ready for pickup" and order lookup functionality from transactional emails.
+
+| Placeholder name    | Purpose |
+| ------------------- | ------- |
+| pickupstorename     | The name of the store where the order is available for pickup. |
+| pickupstoreaddress  | The address of the store where the order is available for pickup. |
+| pickupstorehourfrom | The opening hour of the pickup store. |
+| pickupstorehourto   | The closing hour of the pickup store. |
+| pickupchannelid     | The store channel ID of the pickup store. |
+| packingslipid       | The ID of the packing slip for the order that will be picked up. |
+| confirmationid      | The order confirmation ID (sometimes referred to as the channel reference ID) of the order that will be picked up. |
+
+For more information about the customer check-in and order lookup features, see [Set up geo detection and redirection](geo-detection-redirection.md) and [Enable order lookup for guest checkouts](order-lookup-guest.md).
+
+### Order ready for pickup
+
+The *order ready for pickup* notification type is triggered when an order that has one or more lines where the mode of delivery is **Customer pickup** is marked as packed.
+
+> [!NOTE]
+> The order ready for pickup notification type has been deprecated in favor of the packing completed notification type, which is customized by mode of delivery.
+
+### Order shipped
+
+The *order shipped* notification type is triggered when an order that has a non-store-pickup mode of delivery is invoiced.
+
+> [!NOTE]
+> The order shipped notification type has been deprecated in favor of the order invoiced notification type, which is customized by mode of delivery.
+
+### Order invoiced
+
+The *order invoiced* notification type is triggered when an order is invoiced in POS or Commerce headquarters.
+
+### Issue gift card
+
+The *issue gift card* notification type is triggered when a sales order that contains a product of the gift card type is invoiced.
+
+> [!NOTE]
+> The issue gift card notification email is sent to the gift card recipient. The gift card recipient is specified either manually or programmatically in Commerce headquarters, on an individual line of a sales order on the **Packing** tab under **Line details**.
+
+The issue gift card notification type supports the following additional placeholders.
+
+| Placeholder name      | Purpose |
+| --------------------- | ------- |
+| iftcardnumber         | The gift card number, for products of the gift card type. |
+| giftcardbalance       | The gift card balance, for products of the gift card type. |
+| giftcardmessage       | The gift card message, for products of the gift card type. |
+| giftcardpin           | The personal identification number (PIN) of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
+| giftcardexpiration    | The expiration date of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
+| giftcardrecipientname | The name of the gift card recipient, for products of the gift card type. |
+| giftcardbuyername     | The name of the gift card buyer, for products of the gift card type. |
+
+For more information about gift cards, see [E-commerce digital gift cards](digital-gift-cards.md) and [Support for external gift cards](dev-itpro/gift-card.md).
+
+### Order cancellation
+
+The *order cancellation* notification type is triggered when an order is canceled in Commerce headquarters.
+
+### Customer created
+
+The *customer created* notification type is triggered when a new customer entity is created in Commerce headquarters.
 
 ## Create an email template
 
@@ -78,15 +168,15 @@ Here is an example.
 
 The following placeholders retrieve and show data that is defined at the sales order level (as opposed to the sales line level).
 
-| Placeholder name     | Placeholder value                                            |
+| Placeholder name     | Purpose                                                      |
 | -------------------- | ------------------------------------------------------------ |
 | customername         | The name of the customer who placed the order.               |
 | customeraddress      | The address of the customer.                                 |
 | customeremailaddress | The email address that the customer entered at checkout.     |
 | salesid              | The sales ID of the order.                                   |
-| orderconfirmationid  | The cross-channel ID that was generated at order creation. |
+| orderconfirmationid  | The cross-channel ID that was generated at order creation.   |
 | channelid            | The ID of the retail or online channel that the order was placed through. |
-| deliveryname         | The name that is specified for the delivery address.        |
+| deliveryname         | The name that is specified for the delivery address.         |
 | deliveryaddress      | The delivery address for shipped orders.                     |
 | deliverydate         | The delivery date.                                           |
 | shipdate             | The ship date.                                               |
@@ -100,7 +190,7 @@ The following placeholders retrieve and show data that is defined at the sales o
 | storeaddress         | The address of the store that placed the order.              |
 | storeopenfrom        | The opening time of the store that placed the order.         |
 | storeopento          | The closing time of the store that placed the order.         |
-| pickupstorename      | The name of the store where the order will be picked up.\* |
+| pickupstorename      | The name of the store where the order will be picked up.\*   |
 | pickupstoreaddress   | The address of the store where the order will be picked up.\* |
 | pickupopenstorefrom  | The opening time of the store where the order will be picked up.\* |
 | pickupopenstoreto    | The closing time of the store where the order will be picked up.\* |
@@ -113,7 +203,7 @@ The following placeholders retrieve and show data that is defined at the sales o
 
 The following placeholders retrieve and show data for individual products (lines) in the sales order.
 
-| Placeholder name               | Placeholder value |
+| Placeholder name               | Purpose |
 |--------------------------------|-------------------|
 | productid                      | <p>The ID of the product. This ID accounts for variants.</p><p><strong>Note:</strong> This placeholder has been deprecated in favor of **lineproductrecid**.</p> |
 | lineproductrecid               | The ID of the product. This ID accounts for variants. It uniquely identifies an item at the variant level. |
@@ -142,7 +232,7 @@ The following placeholders retrieve and show data for individual products (lines
 | giftcardnumber                 | The gift card number, for products of the gift card type. |
 | giftcardbalance                | The gift card balance, for products of the gift card type. |
 | giftcardmessage                | The gift card message, for products of the gift card type. |
-| giftcardpin                    | The personal identification number (PIN) of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
+| giftcardpin                    | The PIN of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
 | giftcardexpiration             | The expiration date of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
 | giftcardrecipientname          | The name of the gift card recipient, for products of the gift card type. |
 | giftcardbuyername              | The name of the gift card buyer, for products of the gift card type. |

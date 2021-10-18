@@ -26,7 +26,7 @@ ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: 10.0.21
 
 ---
-# Preview features in in Dynamics 365 Commerce 10.0.21 (October 2021)
+# What's new and changed in Dynamics 365 Commerce 10.0.21 (October 2021)
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,16 +49,17 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 |  B2B           |   [Grant and revoke B2B e-commerce business partner user admin privileges](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/grant-revoke-b2b-e-commerce-business-partner-user-admin-privileges)    |   [Manage business partner users on B2B e-commerce websites](../b2b/manage-b2b-users.md)   |
 |  B2B          |  [Support for catalogs in e-commerce channel](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/support-catalogs-e-commerce-channel)   |  Create partner-specific catalogs that reflect the products and special pricing that have been negotiated with the partner.   |
 |  Deployment   |   Apply updates and extensions to Commerce Scale Unit (cloud)  |  [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/Update-retail-channel.md)     |
+| E-commerce   |   [Enhanced reordering experience in e-commerce](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enhanced-reordering-experience-e-commerce)  |   This feature introduces enhancements to the existing reordering ("buy it again") function for e-commerce sites.   |
 |  Extensibility  |  Remove Cloud Scale Unit extensions   |  [Remove Cloud Scale Unit extensions](../dev-itpro/retail-sdk/remove-csu-package.md)      |
+|  Globalization        |   Prepayments in Dynamics 365 Commerce for Russia            |  [Prepayments in Dynamics 365 Commerce for Russia](../localizations/rus-commerce-prepayments.md)   |
+|  Globalization  |   [Commerce localization for Russia](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/commerce-localization-russia)       |   [Set up the Dynamics 365 Commerce localization for Russia](../localizations/rus-commerce-setup.md)  |
+|   Merchandising   |  Inventory awareness on swatches  |  [Configure product dimension values to appear as swatches](../dev-itpro/dimensions-swatch.md)    |
+|  Performance  | [Enforce custom query change tracking configurations on retail transaction tables due to performance impacts](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enforce-custom-query-change-tracking-configurations-retail-transaction-tables-due-performance-impacts)   | This feature improves Commerce performance when using the Data Management export framework combined with change tracking capabilities on retail transaction tables.  |
 |  Point of sale (POS)  |  Prevent unintentional price calculation for commerce orders     |  [Customer orders in point of sale (POS)](../customer-orders-overview.md)           |
 |  Point of sale (POS)  |   [Support inventory movement between in-store locations from POS](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/support-inventory-movement-between-in-store-locations-pos)   |  Enable inventory movements between in-store locations directly from the POS.   |
-|  Globalization        |   Prepayments in Dynamics 365 Commerce for Russia            |  [Prepayments in Dynamics 365 Commerce for Russia](../localizations/rus-commerce-prepayments.md)   |
-|  Globalization  |   Set up the Dynamics 365 Commerce localization for Russia       |   [Set up the Dynamics 365 Commerce localization for Russia](../localizations/rus-commerce-setup.md)  |
-|   Merchandising   |  Inventory awareness on swatches  |  [Configure product dimension values to appear as swatches](../dev-itpro/dimensions-swatch.md)    |
+| Point of Sale (POS) offline   |   Modern POS offline monitoring dashboard and seamless offline resiliency and reliability enhancements   |   This feature set is additionally being backported to the 10.0.20 release.  [Commerce offline database implementation and troubleshooting](../dev-itpro/implementation-considerations-offline.md)  |
 |   Targeting   |  [Customer segmentation and targeting](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/customer-segmentation-targeting)  |  [Device, market, and geolocation targeting](../targeting-overview.md)    |
-|  Performance  | [Enforce custom query change tracking configurations on retail transaction tables due to performance impacts](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enforce-custom-query-change-tracking-configurations-retail-transaction-tables-due-performance-impacts)   | This feature improves Commerce performance when using the Data Management export framework combined with change tracking capabilities on retail transaction tables.  |
-| E-commerce   |   [Enhanced reordering experience in e-commerce](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enhanced-reordering-experience-e-commerce)  |   This feature introduces enhancements to the existing reordering ("buy it again") function for e-commerce sites.   |
-| Point of Sale (POS) offline   |   Modern POS offline monitoring dashboard and seamless offline resiliency and reliability enhancements   |   This feature set is additionally being backported to the 10.0.20 release.  For more details, see the [Commerce offline database implementation and troubleshooting](../dev-itpro/implementation-considerations-offline.md) document.   |
+
 
 
 ## Additional resources

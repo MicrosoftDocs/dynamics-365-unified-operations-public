@@ -38,6 +38,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+
 ## Feature deprecation effective October 2021
 
 ### "Show related document attachments" feature
@@ -49,6 +50,18 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Product areas affected**         | Web client - Document attachment experience |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. Feature has been blocked. |
+
+## Platform updates for version 10.0.23 of Finance and Operations apps
+
+### SystemNotificationsManager.AddNotification API
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Microsoft requires additional parameters when adding notifications. |
+| **Replaced by another feature?**   | Yes, the **SystemNotificationsManager.AddSystemNotification()** API. This API requires that you explicitly set ExpirationDateTime and RuleID for generated notifications. |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Planned removal date is April 2023. |
 
 ## Platform updates for version 10.0.21 of Finance and Operations apps
 
@@ -72,7 +85,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
 | **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
-| **Status**                         | Deprecated: Planned removal date in October 2021. |
+| **Status**                         | Deprecated: Planned removal date is October 2021. |
 
 ### Azure SQL actions in LCS
 
@@ -82,7 +95,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes, there is now an automated system, which renders these capabilities obsolete. |
 | **Product areas affected**         | SQL actions: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
-| **Status**                         | Deprecated: Planned removal date in October 2021. |
+| **Status**                         | Deprecated: Planned removal date is October 2021. |
 
 ## Feature deprecation effective May 2021
 
@@ -94,7 +107,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes, this feature is replaced by LCS [Issue search](../lifecycle-services/issue-search-lcs.md) and [Dynamics regulatory alert submission service](../lcs-solutions/submit-localization-alerts.md). |
 | **Product areas affected**         | Globalization portal in LCS|
 | **Deployment option**              | Cloud deployment |
-| **Status**                         | Deprecated: Planned removal date in May 2022. |
+| **Status**                         | Deprecated: Planned removal date is May 2022. |
 
 
 ## Feature removed effective January 28, 2021
