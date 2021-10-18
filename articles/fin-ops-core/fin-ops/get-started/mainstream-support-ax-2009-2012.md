@@ -92,6 +92,6 @@ Yes, if you have purchased cloud licenses for Dynamics 365 and you have access t
 ### Can I access the code and configurations for regulatory features prior to release?
 Yes, the code will be available in the LCS project **PEAP Assets**, in the Shared asset library under **Software deployable package**.  To sign-up for the PEAP program, complete the [Preview Early Access Program for Finance and Operations applications](https://aka.ms/peap) survey. 
 
-Configurations are available in the Global repository.  Please see Download ER configurations from the Global repository of Configuration service - Finance & Operations | Dynamics 365 | Microsoft Docs for Details.
+Configurations are available in the Global repository.  Please see [Download ER configurations from the Global repository of Configuration service](../../dev-itpro/analytics/er-download-configurations-global-repo.md) for more information.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
