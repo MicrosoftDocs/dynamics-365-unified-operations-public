@@ -88,11 +88,11 @@ The tax codes are calculated based on the intersection of the tax codes that are
 
 ### Reverse charge applicability rules 
 
-The configuration of the reverse charge rules is kept in Finance and Operations: [Set up reverse charge rules](emea-reverse-charge.md#set-up-reverse-charge-rules).
+For information about the configuration for reverse charge rules, see [Set up reverse charge rules](emea-reverse-charge.md#set-up-reverse-charge-rules).
 
-In case the document line(s) meets the reverse charge rules configured in Finance and Operations, the **Override sales tax** check box will be set to **Yes** for the affected line(s). The **Sales tax group** will be defaulted from the **Purchase order sales tax group** or **Sales order sales tax group** field, respectively. These fields are specified on the **General ledger parameters** page, **Reverse charge** tab (**Tax > Setup > Parameters > General ledger parameters**): [Set up default parameters](emea-reverse-charge#set-up-default-parameters).
+When the document lines meet the reverse charge rules that are configured in Finance, the **Override sales tax** check box is set to **Yes** for the affected lines. The **Sales tax group** defaults from the **Purchase order sales tax group** or **Sales order sales tax group** field, respectively. These fields are specified on the **General ledger parameters** page, on the **Reverse charge** tab. For more information about the field setup, see [Set up default parameters](emea-reverse-charge#set-up-default-parameters).
 
 > [!NOTE]
-> The sales tax groups and item sales tax groups for the reverse charge purposes must be also created and maintained in RCS.
+> For reverse charge purposes, the sales tax groups and item sales tax groups must be also created and maintained in RCS.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
