@@ -18,7 +18,7 @@ The following fields are included on the Spanish Intrastat declaration.
 | Net mass | **Weight** (in the **Data** section) | The mass of the goods of all positions of the Combined Nomenclature. The value includes goods that require the declaration of additional units but excludes the weight of the packaging. The net mass is specified in kilograms. |
 | Additional units | **Quantity of additional units** (in the **Unit** section) | For some commodities, you must report the supplementary unit, such as the number of items, and the number of m2, m3, pairs, and dozens. |
 | Invoice amount | **Invoice amount** (in the **Invoice value** section) | The taxable amount. This amount constitutes the value that must be determined for tax purposes. |
-| Statistical value | **Statistical value** (in the **Statistical value** section) | The value that the company would have at the time of entry into (in the case of arrivals) or departure from (in the case of dispatches) the Spanish statistical territory, after taxes on consumption (but no other taxes) are deducted. The value includes a proportional part of the transport and insurance costs of the journey up to the point where the goods enter or leave Spanish territory.</br>For more information, see the description of the prerequisite for miscellaneous charges in [Intrastat overview](/emea-intrastat.md). |
+| Statistical value | **Statistical value** (in the **Statistical value** section) | The value that the company would have at the time of entry into (in the case of arrivals) or departure from (in the case of dispatches) the Spanish statistical territory, after taxes on consumption (but no other taxes) are deducted. The value includes a proportional part of the transport and insurance costs of the journey up to the point where the goods enter or leave Spanish territory.</br>For more information, see the description of the prerequisite for miscellaneous charges in [Intrastat overview](emea-intrastat.md). |
 
 
 ## Set up Intrastat
@@ -142,27 +142,16 @@ The Intrastat declaration requires that a county code be reported. To set up the
 Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Spanish Intrastat, select the following fields:
 
 -   County of origin/destination
-
 -   Country/region of origin
-
 -   Direction
-
 -   Country/region of sender
-
 -   Country/region
-
 -   Delivery terms
-
 -   Port
-
 -   Statistics procedure
-
 -   Transport
-
 -   Transaction code
-
 -   Commodity
-
 -   Invoice
 
 ## Set up a transport method for the Intrastat declaration
