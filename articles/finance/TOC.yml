@@ -3390,6 +3390,8 @@
           href: localizations/emea-esp-fixed-asset-group-revaluation.md
         - name: Intra-community VAT
           href: localizations/emea-esp-intra-community-vat.md
+        - name: Intrastat report
+          href: localizations/emea-esp-intrastat.md
         - name: One-time customers
           href: localizations/emea-esp-no-one-time-customer-for-project-contracts.md
         - name: Print checks with a Spanish layout
