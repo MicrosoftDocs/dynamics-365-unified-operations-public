@@ -243,7 +243,7 @@ The following illustration shows two combo box controls. The combo box on the le
 The quick filter control adds a search field to the page. You can apply styles to a quick filter provided the following requirements are met:
 
 - The quick filter is contained in a form group.
-- The group name starts with **SearchInput**.
+- The group name starts with **SearchInputGroup**.
 - Inside the group, the first control is a **QuickFilter** control. (This is where the user enters the search string.)
 - The second control is a **FormStaticTextControl** with the name **NumberOfResults**. (This is optional and shows the number of found items if included.)
 - The third control is a **CommonButton** control with a name that starts with **ClearButton**.
