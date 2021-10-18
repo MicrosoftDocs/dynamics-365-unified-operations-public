@@ -94,15 +94,22 @@ If a SPID is consuming too many resources and degrading the operation of other p
 
 ## Removed features
 
-||     Feature                          |     Removed    |     Note                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |   |   |
-|--------------------------------------|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
-|     Current   Blocking Tree          |     NO         |     Continues   to be available                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |   |   |
-|     Current   Runing Queries         |     NO         |     Continues   to be available                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |   |   |
-|     Current   Blocking Statements    |     NO         |     Continues   to be available                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |   |   |
-|     Get   Indexes                    |     YES        |     Why?    - Customers will be charged based on storage. Hence    - Customers need not see indexes or anything else automatically created by   system.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |   |   |
-|     Get   Lock Details               |     YES        |     N/A   anymore.    Why?    The platform is responsible for     - optimizing the database's workload and handling any blocking that may occur.    - intermitted connectivity issues and provides retries to avoid any concerns   with such actions.    Whats next?    - Platform will optimize workloads and env to reduce  number of scenarios leading to unresolved   process blocking.    - Internal monitoring and detection will drive deeper root cause analysis   into possible additional scenarios.                                                                                                                                   |   |   |
-|     Get   List of Query ID’s         |     YES        |     N/A   anymore.     Why?     - With the platform being responsible for query tuning and optimization,   insights into individual queries, their plans, and their execution statistics   are no longer needed.     - Query store information is immensely complex and false interpretations can   lead to delays in mitigations and root cause identification.    What's next?    - Platform will auto tune and optimize individual queries, removing the   need for manual intervention.    - Any performance issues are to be brought to CSS with high level details on   the areas and timeframes in which slow performance was observed    |   |   |
-
-
+| Feature  |  Removed?  |  Note |
+|  Current Blocking Tree        |    No        |  Feature continues to be available.     |
+| Current Runing Queries         |    No        |    Feature continues to be available.   |
+| Current Blocking Statements         |    No        |    Feature continues to be available.   |
+|          |            |       |
+|          |            |       |
+|          |            |       |
+|          |            |       |
+|          |            |       |
+|          |            |       |
+|          |            |       |
+|          |            |       |
+|          |            |       |
+|          |            |       |
+|          |            |       |
+|          |            |       |
+|          |            |       |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
