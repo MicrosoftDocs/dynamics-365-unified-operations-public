@@ -61,7 +61,7 @@ A local product search searches in the following product properties:
     - The search is done on individual product properties. For example, only products that have all the searched keywords in at least one product property are returned.
     - Dimensions aren't searched.
 > [!NOTE]
-> The following configurations of **Match any search term**/**Match all search terms** in POS functionality profiles are only applicable for **local** product searches (conventional SQL full-text search) experiences, whereas this configuration has no effect on cloud-powered search experiences as the new search engine has it's own advanced algorithm that powers search relevance for product search results. 
+> The following configurations of **Match any search term**/**Match all search terms** in POS functionality profiles are only applicable for **local** product searches (conventional SQL full-text search) experiences. This configuration has no effect on cloud-powered search experiences. The new search engine has it's own advanced algorithm that powers search relevance for product search results. 
 
 - Retailers can configure product search to show search suggestions as users type product names. A new setting for this functionality is available in the POS functionality profile, in a group that is named **Product search**. The setting is named **Show search suggestions while typing**. This functionality can help employees quickly find the product that they are searching for, because they don't have to type the whole name manually.
 - The product search algorithm now also searches for the searched terms in the **Search name** property of the product.
