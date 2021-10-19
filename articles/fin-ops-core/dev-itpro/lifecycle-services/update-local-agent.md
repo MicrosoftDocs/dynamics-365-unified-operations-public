@@ -30,10 +30,11 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to update the local agent. The latest version of the local agent is version 2.7.1, which was released in October 2021.
+This topic explains how to update the local agent. The latest version of the local agent is version 2.7.2, which was released in October 2021.
 
 | Local agent version | Capability | 
 |---------------------|------------|
+| 2.7.2               | This version includes a fix for deploying older application versions. | 
 | 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. |
 | 2.7.0               | Enables deploying or updating to 10.0.21 and later versions. Additionally, this version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. |
 | 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning timeout. |
@@ -49,6 +50,10 @@ This topic explains how to update the local agent. The latest version of the loc
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
 | Null                | This initial version deploys Platform update 8. |
+
+## What's new in local agent 2.7.2
+
+- Local agent 2.7.2 fixes an issue where environments on older versions of the application would fail to deploy.
 
 ## What's new in local agent 2.7.1
 
