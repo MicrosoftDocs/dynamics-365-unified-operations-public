@@ -131,6 +131,16 @@ The following action have been removed from the **Actions** tab of **SQL Insight
 | Remove plan guide | Yes | Same as above. |
 | List of current plan guide | Yes | Not applicable anymore.</br><br>**Why?**</br><ul></br><li>The platform handles optimization instead of manual, time-consuming tuning by customers.</li></br><li>DAMS reduces manual efforts in favor of platform automation.</li></br><li>The platform removes usage of plan guides as they are inefficient and difficult to manage.</li></br></ul></br>**Details**</br><ul></br><li>Plan guides are being deprecated in favor of forcing hints through QDS.</li></br><li>The platform automatically detects the correct hint and applies it to the queries that need optimization.</li></br></ul> |
 
+### Removed live views
+
+The following live views have been removed from the **Live views** tab of **SQL Insights** in LCS.
+
+| Name | Removed? | Notes |
+|-------------------------|-------------------------|-------------------------|
+| Common metrics (DTU) | Yes | Not applicable anymore.</br><br>**Why?**</br><ul></br><li>Current DTU has been deprecated from queries.</li></br></ul></br>**Details**</br><ul></br><li>See **Current DTU** under **Queries** above.</li></br></ul> |
+| Currently executing statements | No | Remains available in LCS. |
+| Blocking statements | No | Remains available in LCS. |
+
 
 
 
