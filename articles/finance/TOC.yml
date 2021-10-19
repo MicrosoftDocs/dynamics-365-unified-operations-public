@@ -258,6 +258,8 @@
         href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
       - name: Automate vendor payment proposals
         href: accounts-payable/automate-vendor-payment-proposal.md
+      - name: Apply prepayments to vendor invoices overview
+        href: accounts-payable/apply-prepymnts-overview.md
       - name: Record vendor invoice and match against received quantity
         href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md  
       - name: Positive pay overview
