@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.0.4
 A new **Revenue recognition** module has been added that includes menu items for all the setup that is required. This topic describes the setup options and their implications.
 
 > [!NOTE]
-> The Revenue recognition feature can't be turned on through Feature management. Currently, you must use configuration keys to turn it on.
+> The Revenue recognition feature is now enabled by default through Feature management.  If your organization doesn't use this feature, it can be turned off in the **Feature management** workspace.
 
 > Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition should not be added to orders or transactions created in Commerce channels.
 
@@ -45,12 +45,13 @@ The **Revenue recognition** module has the following setup options:
     - Item groups and released products
     - Defining revenue schedule
     - Defining revenue price
-
-        - Posting profiles
-        - Bundles
-
-    - Bundle components
-    - Bundle item
+    - Inventory setup
+      - Defining revenue schedule
+      - Defning revenue price
+    - Posting profiles
+    - Bundles
+      - Bundle components
+      - Bundle item
 
 - Project setup
 
@@ -96,9 +97,11 @@ Enter descriptive values in the **Revenue schedule** and **Description** fields.
 - **Automatic contract terms** – Select this check box if the contract start and end dates should automatically be set. These dates are automatically set only for released products of the **Post contract support** revenue type. The contract start date is automatically set to the sales order line's requested ship date, and the contract end date is automatically set to the start date plus the number of months or occurrences that is defined in the setup of the revenue schedule. For example, the product on the sales order line is for a one-year warranty. The default revenue schedule is **12M** (12 months), and the **Automatic contract terms** check box is selected for this revenue schedule. If the sales order line has a requested ship date of December 16, 2019, the default contract start date is December 16, 2019, and the default contract end date is December 15, 2020.
 - **Recognition basis** – The recognition basis determines how the revenue price is allocated across the occurrences.
 
-    - **Monthly by dates** – The amount is allocated based on the actual days in each month.
+    - **Monthly by days** – The amount is allocated based on the actual days in each calendar month.
     - **Monthly** – The amount is allocated equally across the number of months that is defined in the occurrences.
     - **Occurrences** – The amount is allocated equally across the occurrences, but it can include an extra period if you select **Actual start date** as the recognition convention.
+    - **Fiscal period by days** – The amount is allocated based on the actual days in each fiscal period. 
+      - The results of Monthly by days and Fiscal period by days will be the same when the fiscal periods follow calendar months. The only exception is when using End of month/period and the Contract Start date and End date is left blank on a sales order line. 
 
 - **Recognition convention** – The recognition convention determines the default dates that are set on the revenue schedule for the invoice.
 
