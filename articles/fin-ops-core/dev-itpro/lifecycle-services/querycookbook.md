@@ -4,7 +4,7 @@
 title: Query cookbook 
 description: This topic describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues. 
 author: meeramahabala
-ms.date: 10/06/2021
+ms.date: 10/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -91,4 +91,27 @@ If a SPID is consuming too many resources and degrading the operation of other p
 - From the blocking tree and other queries, determine which SPID should end.
 - Verify that the processing that is being performed by the SPID can end without causing harm to ongoing business operations.
 - Provide the SPID number to end, and roll back that operation.
+
+## Removed features
+As stated in [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md), some Azure SQL reports and Azure SQL actions have been removed from Lifecycle Services (LCS).
+
+### Removed Azure SQL queries
+
+| **Name** | **Removed?** | **Notes** |
+|-------------------------|-------------------------|-------------------------|
+| Current blocking tree | No | Continues to be available. |
+| Current running queries | No | Continues to be available. |
+| Current blocking statements | No | Continues to be available. |
+| Get indexes | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>Manual index management is no longer needed as this is handled by background platform processes.</li></br></ul></br>**Details**</br><ul></br><li>The system auto-tunes and manages indexes.</li></br></ul> |
+| Get lock details | Yes | Not applicable anymore.</br>**Why?**</br>The platform is responsible for:</br><ul></br><li>Optimizing the database's workload and handling any blocking that may occur.</li></br><li>Intermitted connectivity issues and provides retries to avoid any concerns with such actions.</li></br></ul></br>**Details**</br><ul></br><li>The platform optimizes workloads and environment to reduce the number of scenarios leading to unresolved process blocking.</li></br><li>Internal monitoring and detection will drive deeper root cause analysis into possible additional scenarios.</li></br></ul> |
+| Get list of query ID's | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>With the platform being responsible for query tuning and optimization, insights into individual queries, their plans, and their execution statistics are no longer needed.</li></br><li>Query store information is immensely complex and false interpretations can lead to delays in mitigations and root cause identification.</li></br></ul></br>**Details**</br><ul></br><li>The platform will auto-tune and optimize individual queries, removing the need for manual intervention.</li></br><li>Any performance issues are to be brought to Support with high-level details on the areas and timeframes in which slow performance was observed.</li></br></ul> |
+| Get the SQL query plan for a given Plan ID | Yes | Same as above. |
+| Get query plans and execution status | Yes | Same as above. |
+| Get throttle config | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>Throttling at RG level is not applicable anymore for elastic pool.</li></br></ul></br>**Details**</br><ul></br><li>This report is not applicable anymore.</li></br></ul> |
+| Get wait stats | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>Database performance is automatically managed by the platform and monitoring of the wait statistics is no longer necessary.</li></br><li>While invaluable, wait statistics do not provide all information required for root cause analysis and the added complexity can lead to incorrect interpretations and delays in performance mitigations.</li></br></ul></br>**Details**</br><ul></br><li>The platform will monitor and automatically employ self-healing mechanisms to reduce session wait times.</li></br><li>Any performance issues are to be brought to Support with high-level details on the areas and timeframes in which slow performance was observed.</li></br></ul> |
+| List most expensive queries | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>The platform targets the top resources consuming queries in several of its automatic tuning operations, meaning the retrieval of these queries are no longer necessary for maintaining system health.</li></br><li>This query may not show the most concerning queries, just the most expensive query at the period of time. Having this list will not point to concerns in the environment. This is a very expensive query, not targeted for troubleshooting custom queries. It provides more of a general check. It currently fails 10 - 30% of times.</li></br></ul></br>**Details**</br><ul></br><li>The platform will monitor and automatically employ self-healing mechanisms to reduce the resource consumption of the most expensive queries.</li></br><li>Any performance issues are to be brought to Support with high-level details on the areas and timeframes in which slow performance was observed.</li></br></ul> |
+| Current DTU | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>DTU reports are no longer necessary as our platform monitor all databases and provides adequate resources for all of our customers' workloads.</li></br><li>Current DTU reports no longer provide an accurate picture of database health.</li></br></ul></br>**Details**</br><ul></br><li>The platform will monitor databases and automatically optimize the available resources for customers' workloads.</li></br></ul> |
+| Current DTU details | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>DTU reports are no longer necessary as our platform monitors all databases and provides adequate resources for all our customers' workloads.</li></br><li>Current DTU reports no longer provide an accurate picture of database health.</li></br></ul></br>**Details**</br><ul></br><li>The platform will monitor databases and automatically optimize the available resources for customers' workloads.</li></br></ul> |
+
+
 
