@@ -95,14 +95,15 @@ If a SPID is consuming too many resources and degrading the operation of other p
 ## Removed features
 As stated in [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md), some Azure SQL reports and Azure SQL actions have been removed from Lifecycle Services (LCS).
 
-### Removed Azure SQL queries
+### Removed queries
+The following **Queries** tab of **SQL Insights** in LCS.
 
 | **Name** | **Removed?** | **Notes** |
 |-------------------------|-------------------------|-------------------------|
 | Current blocking tree | No | Continues to be available. |
 | Current running queries | No | Continues to be available. |
 | Current blocking statements | No | Continues to be available. |
-| Get indexes | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>Manual index management is no longer needed as this is handled by background platform processes.</li></br></ul></br>**Details**</br><ul></br><li>The system auto-tunes and manages indexes.</li></br></ul> |
+| Get indexes | Yes | Not applicable anymore.</br><br>**Why?**</br><ul></br><li>Manual index management is no longer needed as this is handled by background platform processes.</li></br></ul></br>**Details**</br><ul></br><li>The system auto-tunes and manages indexes.</li></br></ul> |
 | Get lock details | Yes | Not applicable anymore.</br>**Why?**</br>The platform is responsible for:</br><ul></br><li>Optimizing the database's workload and handling any blocking that may occur.</li></br><li>Intermitted connectivity issues and provides retries to avoid any concerns with such actions.</li></br></ul></br>**Details**</br><ul></br><li>The platform optimizes workloads and environment to reduce the number of scenarios leading to unresolved process blocking.</li></br><li>Internal monitoring and detection will drive deeper root cause analysis into possible additional scenarios.</li></br></ul> |
 | Get list of query ID's | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>With the platform being responsible for query tuning and optimization, insights into individual queries, their plans, and their execution statistics are no longer needed.</li></br><li>Query store information is immensely complex and false interpretations can lead to delays in mitigations and root cause identification.</li></br></ul></br>**Details**</br><ul></br><li>The platform will auto-tune and optimize individual queries, removing the need for manual intervention.</li></br><li>Any performance issues are to be brought to Support with high-level details on the areas and timeframes in which slow performance was observed.</li></br></ul> |
 | Get the SQL query plan for a given Plan ID | Yes | Same as above. |
