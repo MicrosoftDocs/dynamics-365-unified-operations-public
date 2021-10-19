@@ -2,7 +2,7 @@
 # required metadata
 
 title: Depreciation book upgrade overview
-description: This topic describes the current book functionality in Fixed assets, which is based on the value model functionality that was available in earlier versions, but that also includes all the functionality that was previously provided only in depreciation books. 
+description: This topic describes the current book functionality in Fixed assets. This functionality is based on the value model functionality that was available in earlier versions, but it also includes all the functionality that was previously provided only in depreciation books.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,11 +31,12 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the current book functionality in Fixed assets, which is based on the value model functionality that was available in earlier versions, but that also includes all the functionality that was previously provided only in depreciation books. The value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. Book functionality lets you use a single set of pages, inquiries, and reports for all your organization’s fixed asset processes. This topic provides some things to consider for the upgrade. 
+This topic describes the current book functionality in Fixed assets. This functionality is based on the value model functionality that was available in earlier versions, but it also includes all the functionality that was previously provided only in depreciation books. The value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. Book functionality lets you use a single set of pages, inquiries, and reports for all your organization's fixed asset processes. This topic provides some things that you should consider before you upgrade. 
 
 The upgrade process will move your existing setup and all existing transactions to the new book structure. Value models will remain as they currently are, as a book that posts to the general ledger. Depreciation books will be moved to a book that has the Post to general ledger option set to No. Depreciation book journal names will be moved to a general ledger journal name with the posting layer set to None. Depreciation book transactions will be moved to Fixed asset transactions.
 
 Before running the data upgrade, you should understand the two options available for upgrading depreciation book journal lines to transaction vouchers, and the number sequence that will be used for the voucher series.
+
 Option 1:  **System-defined number sequence** - This is the default option to optimize upgrade performance. The upgrade will not use the number sequences framework, but instead will allocate vouchers with a set-based approach. After the upgrade, the new number sequence will be created with the **Next number set** appropriately based on the upgraded transactions. By default, the number sequence used will be in the FADBUpgr\#\#\#\#\#\#\#\#\# format. There are a few parameters available to you to adjust the format when using this approach:
 
 -   **Number sequence code** – The code to identify the number sequence. This number sequence code cannot exist since it will be created by the upgrade.
@@ -56,7 +57,7 @@ Option 2: **Existing user-defined number sequence** - This option will allow you
 -   **Number sequence code** – The code of the number sequence.
     -   Constant name: **NumberSequenceExistingCode**
     -   Default value: No default, this must be updated to the number sequence code.
--   **Shared number sequence** – A boolean value to identify the scope of the number sequence. Use "true" for shared number sequences across all companies, and "false" for a company-specific scope. When using "false", the number sequence with the specified name must exist in every company that contains depreciation book transactions. Shared number sequences exist in every partition that contains depreciation book transactions.
+-   **Shared number sequence** – A Boolean value to identify the scope of the number sequence. Use "true" for shared number sequences across all companies, and "false" for a company-specific scope. When using "false", the number sequence with the specified name must exist in every company that contains depreciation book transactions. Shared number sequences exist in every partition that contains depreciation book transactions.
     -   Constant name: **NumberSequenceExistingIsShared**
     -   Default value: true
 
