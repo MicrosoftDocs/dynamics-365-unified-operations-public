@@ -1,4 +1,20 @@
-﻿# Netherlands Intrastat
+---
+# required metadata
+
+title: Netherlands Intrastat
+description: This topic contains information about the Netherlands Intrastat report.
+author: andosip
+ms.date: 10/19/2021
+ms.topic: article
+audience: 
+ms.reviewer: kfend 
+ms.search.region: Global
+ms.author: v-aosipov
+ms.search.validFrom: 
+---
+# Netherlands Intrastat
+
+[!include [banner](../includes/banner.md)]
 
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Netherlands Intrastat declaration contains information about the trade of goods for reporting.
 
@@ -45,7 +61,7 @@ From the Global repository, import the latest version of the following Electroni
 
 -   Intrastat (NL)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?toc=/dynamics365/finance/toc.json).
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ## Set up VAT IDs
 
@@ -103,7 +119,7 @@ You also have to create VAT ID registration types for all the countries or regio
 
 6.  On the Action Pane select **Save** and close the page.
 
-For more information, see [Registration IDs](https://docs.microsoft.com/dynamics365/finance/localizations/emea-registration-ids).
+For more information, see [Registration IDs](emea-registration-ids.md).
 
 Alternatively, you can create Customer's VAT registration numbers using **Tax exempt number** page:
 
@@ -154,23 +170,14 @@ Alternatively, you can create Customer's VAT registration numbers using **Tax ex
 6.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Netherlands Intrastat, select the following fields:
 
     -   Commodity
-
     -   Transaction code
-
     -   Country/region of origin
-
     -   Transport
-
     -   Country/region of sender
-
     -   Country/region
-
     -   Correction
-
     -   Tax exempt number
-
     -   Direction
-
     -   Invoice
 
 ## Set up transport parameters for the Intrastat declaration
