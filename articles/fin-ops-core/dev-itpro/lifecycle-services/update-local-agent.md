@@ -4,7 +4,7 @@
 title: Update the local agent
 description: This topic explains how to update the local agent.
 author: faix
-ms.date: 10/06/2021
+ms.date: 10/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
