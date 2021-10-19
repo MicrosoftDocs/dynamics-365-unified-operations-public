@@ -94,7 +94,7 @@ Review the aligned XLIFF file before you use it as a TM. TUs that have been revi
 
 We recommend that you use the free Multilingual Editor, or another XLIFF editor, to review and edit the translations in the XLIFF file that DTS provides. At a minimum, you should review the translations to verify that the translation output meets your product's quality standards.
 
-When you open an XLIFF file in the Multilingual Editor, it resembles the following illustration.
+When you open an XLIFF file in the Multilingual Editor, it resembles the following illustration. If you encounter an error when opening the file, ignore the message and select the Strings tab in the lower-left corner of the window.
 
 ![XLIFF file in the Multilingual Editor.](./media/dts-editor1.png "XLIFF file in the Multilingual Editor")
 
