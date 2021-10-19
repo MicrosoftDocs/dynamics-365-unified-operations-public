@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
