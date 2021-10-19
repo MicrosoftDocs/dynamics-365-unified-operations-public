@@ -44,7 +44,7 @@ The **Inventory value storage** report is helpful when the output contains many 
 Before you can generate an **Inventory value storage** report, you must turn on the feature in your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module** – Cost management
-- **Feature name** – Inventory value storage
+- **Feature name** – Inventory value report storage
 
 ## Generate an Inventory value storage report
 
