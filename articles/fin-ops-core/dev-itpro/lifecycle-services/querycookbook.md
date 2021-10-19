@@ -137,7 +137,7 @@ The following live views have been removed from the **Live views** tab of **SQL 
 
 | Name | Removed? | Notes |
 |-------------------------|-------------------------|-------------------------|
-| Common metrics (DTU) | Yes | Not applicable anymore.</br><br>**Why?**</br><ul></br><li>Current DTU has been deprecated from queries.</li></br></ul></br>**Details**</br><ul></br><li>See **Current DTU** under **Queries** above.</li></br></ul> |
+| Common metrics (DTU) | Yes | Not applicable anymore.</br><br>**Why?**</br><ul></br><li>Current DTU has been removed from queries.</li></br></ul></br>**Details**</br><ul></br><li>See **Current DTU** under **Queries** above.</li></br></ul> |
 | Currently executing statements | No | Remains available in LCS. |
 | Blocking statements | No | Remains available in LCS. |
 
