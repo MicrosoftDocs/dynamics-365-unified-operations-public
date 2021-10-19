@@ -114,5 +114,24 @@ The following items have been removed from the **Queries** tab of **SQL Insights
 | Current DTU | Yes | Not applicable anymore.</br><br>**Why?**</br><ul></br><li>DTU reports are no longer necessary as our platform monitor all databases and provides adequate resources for all of our customers' workloads.</li></br><li>Current DTU reports no longer provide an accurate picture of database health.</li></br></ul></br>**Details**</br><ul></br><li>The platform will monitor databases and automatically optimize the available resources for customers' workloads.</li></br></ul> |
 | Current DTU details | Yes | Not applicable anymore.</br><br>**Why?**</br><ul></br><li>DTU reports are no longer necessary as our platform monitors all databases and provides adequate resources for all our customers' workloads.</li></br><li>Current DTU reports no longer provide an accurate picture of database health.</li></br></ul></br>**Details**</br><ul></br><li>The platform will monitor databases and automatically optimize the available resources for customers' workloads.</li></br></ul> |
 
+### Removed actions
+
+The following action have been removed from the **Actions** tab of **SQL Insights** in LCS.
+
+| Name | Removed? | Notes |
+|-------------------------|-------------------------|-------------------------|
+| End SQL process | No | Continues to be available. |
+| Create index | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>Manual index creation is no longer needed as this is handled by a background platform processes.</li></br></ul></br>**Details**</br><ul></br><li>A system background process will handle this as required.</li></br></ul> |
+| Drop index | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>Not included in DAMS because of the periodic nature of Finance and Operations workloads.</li></br></ul></br>**Details**</br><ul></br><li>The system will auto-tune as required.</li></br></ul> |
+| Rebuilt index | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>Manual index creation is no longer needed as this is handled by background platform processes.</li></br></ul></br>**Details**</br><ul></br><li>A system background process will handle this as required.</li></br></ul> |
+| Update statistics | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>A platform background process handles index and statistics maintenance.</li></br></ul></br>**Details**</br><ul></br><li>The platform is responsible for index and statistics maintenance.</li></br></ul> |
+| Query hint optimization | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>The platform handles query hint optimization so customers don't have to do manual tuning.</li></br></ul></br>**Details**</br><ul></br><li>The platform automatically detects the correct hint and applies it to the queries that need optimization.</li></br></ul> |
+| Create a plan guide to add table hints | Yes | Not applicable anymore.</br>Query hint optimization is combined with "Create a plan guide to add table hints".</br>**Why?**</br><ul></br><li>The platform handles query optimization instead of manual, time-consuming tuning by customers.</li></br><li>DAMS reduces manual efforts in favor of platform automation.</li></br><li>The platform removes usage of plan guides as they are inefficient and difficult to manage.</li></br></ul></br>**Details**</br><ul></br><li>Plan guides are being deprecated in favor of forcing hints through QDS.</li></br><li>The platform automatically detects the correct hint and applies it to the queries that need optimization.</li></br></ul> |
+| Create a plan guide to force plan | Yes | Same as above. |
+| Remove plan guide | Yes | Same as above. |
+| List of current plan guide | Yes | Not applicable anymore.</br>**Why?**</br><ul></br><li>The platform handles optimization instead of manual, time-consuming tuning by customers.</li></br><li>DAMS reduces manual efforts in favor of platform automation.</li></br><li>The platform removes usage of plan guides as they are inefficient and difficult to manage.</li></br></ul></br>**Details**</br><ul></br><li>Plan guides are being deprecated in favor of forcing hints through QDS.</li></br><li>The platform automatically detects the correct hint and applies it to the queries that need optimization.</li></br></ul> |
+
+
+
 
 
