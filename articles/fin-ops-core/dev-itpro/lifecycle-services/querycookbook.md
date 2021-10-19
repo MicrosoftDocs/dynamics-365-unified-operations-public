@@ -96,7 +96,7 @@ If a SPID is consuming too many resources and degrading the operation of other p
 As stated in [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md), some Azure SQL reports and Azure SQL actions have been removed from Lifecycle Services (LCS).
 
 ### Removed queries
-The following **Queries** tab of **SQL Insights** in LCS.
+The following items have been removed from the **Queries** tab of **SQL Insights** in LCS.
 
 | **Name** | **Removed?** | **Notes** |
 |-------------------------|-------------------------|-------------------------|
