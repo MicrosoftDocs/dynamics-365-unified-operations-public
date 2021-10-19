@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.23
 
 This topic describes the capability for applying prepayments to vendor invoices automatically. Prepayment can be created for purchase order as part of a purchase agreement. Once vendor invoice comes, the prepayment can be used to settle the account payable from vendor invoice. With this new feature, system will automatically use purchase order numbers on a vendor invoice to look up corresponding prepayments when the vendor invoice is imported.
 
-If prepayments are found and can be applied, then additional lines (in addition to the existing invoice lines,) will be added to apply the prepayment. The additional prepayment lines are never considered during the invoice matching process.
+If prepayments are found and can be applied, then additional lines (in addition to the existing invoice lines) will be added to apply the prepayment. The prepayment lines are never considered during the invoice matching process.
 
 The following points describe how prepayments are applied when different purchasing processes are followed. 
 
@@ -40,9 +40,9 @@ The following points describe how prepayments are applied when different purchas
 
 - **One vendor invoice for multiple purchase orders** - Prepayments on all purchase orders will be applied to the single vendor invoice.
 
-- **Multiple vendor invoices for one purchase order** - The prepayment for the single purchase order will be applied to the first imported vendor invoice. If the prepayment amount exceeds the invoice amount, prepayment application fails. User needs to manually apply the prepayemnt. 
+- **Multiple vendor invoices for one purchase order** - The prepayment for the single purchase order will be applied to the first imported vendor invoice. If the prepayment amount exceeds the invoice amount, prepayment application fails. User needs to manually apply the prepayment. 
 
-- **Multiple vendor invoices for multiple purchase orders** - Prepayments for purchase orders will be applied for first relevant invoice. If the prepayment amount exceedes the invoice amount, prepayment application fails. User needs to manually apply the prepayemnt. After prepayments are applied to first invoice, if there are still remaining prepayments, they can be applied to following invoices.
+- **Multiple vendor invoices for multiple purchase orders** - Prepayments for purchase orders will be applied for first relevant invoice. If the prepayment amount exceeds the invoice amount, prepayment application fails. User needs to manually apply the prepayment. After prepayments are applied to first invoice, if there are still remaining prepayments, they can be applied to following invoices.
 
 If the system tries to apply a prepayment and the application fails, you'll receive the error message **"Automatic application of prepayment: Failed"** is inserted into the automation history. The message is inserted if the **Block follow-up automation process in case of prepayment application failure** the parameter is set to **Yes**. The system can continue processing the invoice when the automation process is run subsequently, or block it until the prepayment is applied manually.
 
@@ -54,4 +54,4 @@ To bypass the prepayment application, you can directly set the **Include in auto
 
 ### The Automatically apply prepayment for imported invoices parameter is set to No 
 
-Follow-up automation processes will continue, even if application of the prepayment has failed. YOu can still apply the prepayment during settlement.
+Follow-up automation processes will continue, even if application of the prepayment has failed. You can still apply the prepayment during settlement.
