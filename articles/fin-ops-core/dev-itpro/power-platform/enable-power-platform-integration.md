@@ -59,7 +59,7 @@ The following list provides prerequisite details to set up Microsoft Power Platf
 
 - All users who create Microsoft Power Platform environments must be licensed. The Microsoft 365 admin center should be used to apply the **Dynamics 365 Unified Operations Plan**, **AX Enterprise** license, or an application-specific license such as **Dynamics 365 Finance**, to the Finance and Operations apps environment administrator account.
 
-## Enable during environment deployment
+## <a name="enable-during-deploy"></a>Enable during environment deployment
 
 When you set up a new Finance and Operations apps environment in LCS, the deployment wizard includes several sections where you can set values. One of those sections is named **Power Platform Integration**.
 
@@ -81,7 +81,8 @@ Complete the following steps to configure the **Power Platform Integration** sec
 >
 > If you require values that differ from the default values, contact Microsoft support. We can help link an existing Dataverse environment that you manually provision to the Finance and Operations apps environment. Eventually, fields for the language and currency will be added as setup options, so that you can manually set them or accept the default values.
 
-## Enabling after environment deployment
+## <a name="enable-after-deploy"></a>Enable after environment deployment
+
 If the Power Platform integration isn't enabled during the deployment of the Finance and Operations apps environment, you can enable the integration in LCS after deployment. To set up after the Finance and Operations apps environment has been deployed, complete the following steps.
 
 1. After the Finance and Operationsapps environment has been deployed through LCS, open the **Environment details** page in LCS.
