@@ -31,7 +31,7 @@ Data events are events based on changes to data in Dynamics 365 Finance and Oper
 All OData-enabled entities in Finance and Operations apps, both standard and custom, can emit data events. In the data events catalog, each event for an entity is listed as a data event to which subscriptions can be established. The concept of activating the data event and associating it to an endpoint is similar to the concept of business events. When a data event happens, the payload of the event contains the corresponding entity record.
 
 > [!NOTE]
-> Data events are only available in environments for which the Power Platform integration has been enabled. For more information, see [Enabling the Power Platform integration](enable-power-platform-integration.md).
+> Data events are only available in environments for which the Power Platform integration has been enabled. For more information, see [Enable Microsoft Power Platform integration](../power-platform/enable-power-platform-integration.md).
 
 ## Data events catalog
 

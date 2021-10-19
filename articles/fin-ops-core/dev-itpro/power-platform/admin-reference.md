@@ -35,7 +35,8 @@ This topic provides information about how to configure virtual entities for Dyna
 > [!NOTE]
 > The configuration steps outlined in this topic are required only for Finance and Operations apps environments for which Microsoft Power Platform integration isn't enabled. For Finance and Operations apps environments that have Microsoft Power Platform integration enabled, the virtual entity configuration outlined in this topic is done automatically as part of the process to enable the integration. For more information about enabling Microsoft Power Platform integration for Finance and Operations apps environments, see [Enabling the Microsoft Power Platform integration](enable-power-platform-integration.md).
 
-## Getting the virtual entity solution
+## <a name="get-virtual-entity-solution"></a>Getting the virtual entity solution
+
 The Dataverse solution for Finance and Operations virtual entities must be installed from Microsoft AppSource virtual entity solution. For more information, see [Finance and Operations virtual entity](https://appsource.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
 
 Ensure the following solutions are installed in Dataverse.
