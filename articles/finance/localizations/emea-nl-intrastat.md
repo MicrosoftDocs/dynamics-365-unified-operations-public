@@ -63,9 +63,9 @@ From the Global repository, import the latest version of the following Electroni
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-## Set up VAT IDs
+### Set up VAT IDs
 
-### Create registration type for company code
+#### Create registration type for company code
 
 1.  Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**.
 
@@ -79,7 +79,7 @@ For more information, see [Download ER configurations from the Global repository
 
 You also have to create VAT ID registration types for all the countries or regions that your company does business with.
 
-### Match the registration type with registration category
+#### Match the registration type with registration category
 
 1.  Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories**.
 
@@ -89,7 +89,7 @@ You also have to create VAT ID registration types for all the countries or regio
 
 4.  Repeat steps 2 through 3 for the other countries' registration types that you created earlier.
 
-### Set up a VAT ID of data provider for your company
+#### Set up a VAT ID of data provider for your company
 
 1.  Go to **Organization administration** &gt; **Organizations** &gt; **Legal entities**.
 
@@ -103,7 +103,6 @@ You also have to create VAT ID registration types for all the countries or regio
 
 6.  Enter your company's data provider VAT ID.
 
-### Set up VAT number of trading partner
 
 #### Create Customer's VAT registration number:
 
@@ -137,7 +136,7 @@ Alternatively, you can create Customer's VAT registration numbers using **Tax ex
 
 4.  On the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field select the registration number created on the previous step.
 
-## Set up foreign trade parameters
+### Set up foreign trade parameters
 
 1.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade parameters**.
 
@@ -155,7 +154,7 @@ Alternatively, you can create Customer's VAT registration numbers using **Tax ex
 
 8.  On the **Agent** tab, on the **Agent** FastTab, enter information about the company that is providing the statistical declaration to Statistics Netherlands.
 
-## Set up product parameters for the Intrastat declaration
+### Set up product parameters for the Intrastat declaration
 
 1.  Go to **Product information management** &gt; **Products** &gt; **Released products**.
 
@@ -180,7 +179,7 @@ Alternatively, you can create Customer's VAT registration numbers using **Tax ex
     -   Direction
     -   Invoice
 
-## Set up transport parameters for the Intrastat declaration
+### Set up transport parameters for the Intrastat declaration
 
 Follow these steps to set up the transport method and assign a transport mode to a mode of delivery.
 
@@ -240,10 +239,6 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 -   Intrastat (NL)
 
-## Set up VAT IDs
-
-### 
-
 ### Create registration types for company codes
 
 1.  Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**.
@@ -268,8 +263,6 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 4.  For the registration type **VAT ID**, select the **VAT ID** registration category.
 
-### 
-
 ### Set up a VAT ID of data provider for your company
 
 1.  Go to **Organization administration** &gt; **Organizations** &gt; **Legal entities**.
@@ -283,8 +276,6 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 5.  In the **Registration type** field, select **VAT ID**.
 
 6.  In the **Registration number** field enter **000099998B57**.
-
-### 
 
 ### Set up Customer's VAT registration number:
 
