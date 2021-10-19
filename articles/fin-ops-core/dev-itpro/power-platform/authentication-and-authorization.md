@@ -51,7 +51,7 @@ Administrators can manually import Power Platform users into Finance and Operati
 
 Power Platform users working in Dataverse can interact with Finance and Operations apps entities through virtual entities and receive business events triggered by user actions in Finance and Operations apps. To interact with virtual entities in Dataverse, the user access to the virtual entity metadata. When a transaction is performed in Dataverse, a virtual entity call is made to the Finance and Operations apps where it authorizes the user's request, validating against the user's security role and privileges defined in Finance and Operations apps.
 
-For more information on the Dataverse virtual entity interaction and the security model with Finance and Operations apps, see the [Architecture](virtual-entities-overview.md#Architecture) section of the virtual entities overview documentation.
+For more information on the Dataverse virtual entity interaction and the security model with Finance and Operations apps, see the [Architecture](virtual-entities-overview.md#architecture) section of the virtual entities overview documentation.
 
 ### Security roles in Power Platform
 
