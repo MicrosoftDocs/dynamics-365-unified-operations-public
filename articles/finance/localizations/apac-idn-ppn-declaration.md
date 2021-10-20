@@ -114,23 +114,23 @@ The following table represents an example that shows how to configure the parame
 
 | Lookup result | Label                                                        | Line | Sales tax group | Item sales tax group | Tax code      | Transaction classifier |
 |---------------|--------------------------------------------------------------|------|-----------------|----------------------|---------------|------------------------|
-| BoxA1         | Export sales of tangible BKP, intangible BKP, and JKP        | 1    | PPN\_EXP        | *Not blank*          | \*Not blank\* | Sales                  |
-| BoxA1         | Export sales of tangible BKP, intangible BKP, and JKP        | 2    | PPN\_EXP        | *Not blank*          | \*Not blank\* | SalesCreditNote        |
-| BoxA2         | Output taxes on domestic sales with tax invoices             | 3    | PPN\_DOM        | *Not blank*          | \*Not blank\* | Sales                  |
-| BoxA2         | Output taxes on domestic sales with tax invoices             | 4    | PPN\_DOM        | *Not blank*          | \*Not blank\* | SalesCreditNote        |
-| BoxA2         | Output taxes on domestic sales with tax invoices             | 5    | PPN\_EXE        | *Not blank*          | \*Not blank\* | SaleExempt             |
-| BoxA2         | Output taxes on domestic sales with tax invoices             | 6    | PPN\_EXE        | *Not blank*          | \*Not blank\* | SalesExemptCreditNote  |
-| BoxB1         | Input taxes that can be on the import of BKP and utilization | 7    | PPN\_IMP        | *Not blank*          | \*Not blank\* | Purchase               |
-| BoxB1         | Input taxes that can be on the import of BKP and utilization | 8    | PPN\_IMP        | *Not blank*          | \*Not blank\*| PurchaseCreditNote     |
-| BoxB2         | Input taxes that can be credited for the acquisition of BKP  | 9    | *Not blank*   | *Not blank*        | PPN10%        | Purchase               |
-| BoxB2         | Input taxes that can be credited for the acquisition of BKP  | 10   | *Not blank*   | *Not blank*        | PPN10%        | PurchaseCreditNote     |
-| BoxB3         | Input taxes that can't be credited or that get facilities    | 11   | *Not blank*   | *Not blank*        | PPN\_NO       | Purchase               |
-| BoxB3         | Input taxes that can't be credited or that get facilities    | 12   | *Not blank*   | *Not blank*        | PPN\_NO       | PurchaseCreditNote     |
-| BoxAdj        | Adjustments                                                  | 13   | *Blank*       | *Blank*            | PPN\_ADJ      | Sales                  |
-| BoxAdj        | Adjustments                                                  | 14   | *Blank*       | *Blank*            | PPN\_ADJ      | SalesCreditNote        |
-| BoxAdj        | Adjustments                                                  | 15   | *Blank*       | *Blank*            | PPN\_ADJ      | Purchase               |
-| BoxAdj        | Adjustments                                                  | 16   | *Blank*       | *Blank*            | PPN\_ADJ      | PurchaseCreditNote     |
-| NA            | Not applicable                                               | 17   | *Not blank*   | *Not blank*        | *Not blank* | *Not blank*          |
+| BoxA1         | Export sales of tangible BKP, intangible BKP, and JKP        | 1    | PPN\_EXP        | \*Not blank\*        | \*Not blank\* | Sales                  |
+| BoxA1         | Export sales of tangible BKP, intangible BKP, and JKP        | 2    | PPN\_EXP        | \*Not blank\*        | \*Not blank\* | SalesCreditNote        |
+| BoxA2         | Output taxes on domestic sales with tax invoices             | 3    | PPN\_DOM        | \*Not blank\*        | \*Not blank\* | Sales                  |
+| BoxA2         | Output taxes on domestic sales with tax invoices             | 4    | PPN\_DOM        | \*Not blank\*        | \*Not blank\* | SalesCreditNote        |
+| BoxA2         | Output taxes on domestic sales with tax invoices             | 5    | PPN\_EXE        | \*Not blank\*        | \*Not blank\* | SaleExempt             |
+| BoxA2         | Output taxes on domestic sales with tax invoices             | 6    | PPN\_EXE        | \*Not blank\*        | \*Not blank\* | SalesExemptCreditNote  |
+| BoxB1         | Input taxes that can be on the import of BKP and utilization | 7    | PPN\_IMP        | \*Not blank\*        | \*Not blank\* | Purchase               |
+| BoxB1         | Input taxes that can be on the import of BKP and utilization | 8    | PPN\_IMP        | \*Not blank\*        | \*Not blank\* | PurchaseCreditNote     |
+| BoxB2         | Input taxes that can be credited for the acquisition of BKP  | 9    | \*Not blank\*   | \*Not blank\*        | PPN10%        | Purchase               |
+| BoxB2         | Input taxes that can be credited for the acquisition of BKP  | 10   | \*Not blank\*   | \*Not blank\*        | PPN10%        | PurchaseCreditNote     |
+| BoxB3         | Input taxes that can't be credited or that get facilities    | 11   | \*Not blank\*   | \*Not blank\*        | PPN\_NO       | Purchase               |
+| BoxB3         | Input taxes that can't be credited or that get facilities    | 12   | \*Not blank\*   | \*Not blank\*        | PPN\_NO       | PurchaseCreditNote     |
+| BoxAdj        | Adjustments                                                  | 13   | \*Blank\*       | \*Blank\*            | PPN\_ADJ      | Sales                  |
+| BoxAdj        | Adjustments                                                  | 14   | \*Blank\*       | \*Blank\*            | PPN\_ADJ      | SalesCreditNote        |
+| BoxAdj        | Adjustments                                                  | 15   | \*Blank\*       | \*Blank\*            | PPN\_ADJ      | Purchase               |
+| BoxAdj        | Adjustments                                                  | 16   | \*Blank\*       | \*Blank\*            | PPN\_ADJ      | PurchaseCreditNote     |
+| NA            | Not applicable                                               | 17   | \*Not blank\*   | \*Blank\*            | \*Not blank\* |\*Not blank\*          |
 
 To help prevent issues when the report is generated, create all mappings where the sales tax codes and sales tax group are posted. For example, if **SalesCreditNote** is omitted on the line for **BoxA2** in this configuration, and tax transactions are posted by using the **PPN\_DOM** sales tax group, you will encounter issues when the report is generated. Select **Tax** \> **Inquire** \> **Posted sales tax** to review all posted sales tax transactions and transactions that aren't included in this mapping of the configuration.
 
