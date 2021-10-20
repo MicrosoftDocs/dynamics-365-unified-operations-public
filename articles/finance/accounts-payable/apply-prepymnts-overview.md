@@ -50,7 +50,7 @@ If the system tries to apply a prepayment and the application fails, you'll rece
 
 To apply prepayments manually, go to the pending vendor invoice. On the **Invoice detail** page, set the **Include in automated processing** is set to **Yes**. Change the setting to **No** to allow the prepayment to be applied manually. 
 
-To bypass the prepayment application, you can directly set the **Include in automated processing** field to **No**. A message will display with the message: **A prepayment already exists for the purchase order. Do you want to ignore it for selected vendor invoice?** Select **Yes**. A new status **Application of prepayment bypassed manually** will be inserted into the automation history. And the vendor invoice will not be blocked for follow-up automation processes.
+To bypass the prepayment application, you can directly set the **Include in automated processing** field to **No** during the import process. When a prepayment can't be applied,  the message: **A prepayment already exists for the purchase order. Do you want to ignore it for selected vendor invoice?** will display. Select **Yes**. A new status **Application of prepayment bypassed manually** will be inserted into the automation history. And the vendor invoice will not be blocked for follow-up automation processes.
 
 ### The Automatically apply prepayment for imported invoices parameter is set to No 
 
