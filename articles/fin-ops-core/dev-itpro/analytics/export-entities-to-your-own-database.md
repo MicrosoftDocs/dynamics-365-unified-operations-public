@@ -172,7 +172,7 @@ Things to consider that will reduce the overall export times:
 - Use **Full push only** exports instead of **Incremental only** exports for smaller data sizes. E.g., if some of the entities have record counts of around 1,000 or less.
 - Create cross company entities if you do not need to export data per company individually. 
 
-To creat a cross-company entity:
+To create a cross-company entity:
 1. Copy the current per company entity. 
 2. Change the name and label of the copied entity. 
 3. Add a column for **DataAreaId**, if needed. 
