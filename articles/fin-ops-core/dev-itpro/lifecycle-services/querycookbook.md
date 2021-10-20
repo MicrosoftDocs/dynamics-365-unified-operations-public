@@ -4,7 +4,7 @@
 title: Query cookbook 
 description: This topic describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues. 
 author: meeramahabala
-ms.date: 10/19/2021
+ms.date: 10/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -104,7 +104,7 @@ The following items have been removed from the **Queries** tab of **SQL Insights
 | Current running queries | No | Currently available. |
 | Current blocking statements | No | Currently available. |
 | Get indexes | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>Manual index management is no longer needed as this is handled by background platform processes.</li></br></ul></br>**Details**</br><ul></br><li>The system automatically tunes and manages indexes.</li></br></ul> |
-| Get lock details | Yes | No longer applicable.</br><br>**Reason**</br>The platform is responsible for:</br><ul></br><li>Optimizing the database's workload and handling any blocking that may occur.</li></br><li>Prevents connectivity issues and provides retries to avoid any concerns with such actions.</li></br></ul></br>**Details**</br><ul></br><li>The platform optimizes workloads and environment to reduce the number of scenarios leading to unresolved process blocking.</li></br><li>Internal monitoring and detection will drive deeper root cause analysis into possible additional scenarios.</li></br></ul> |
+| Get lock details | Yes | No longer applicable.</br><br>**Reason**</br>The platform is responsible for:</br><ul></br><li>Optimizing the database's workload and handling any blocking that may occur.</li></br><li>Managing intermittent connectivity issues and provides retries to avoid any concerns with such actions.</li></br></ul></br>**Details**</br><ul></br><li>The platform optimizes workloads and environment to reduce the number of scenarios leading to unresolved process blocking.</li></br><li>Internal monitoring and detection will drive deeper root cause analysis into possible additional scenarios.</li></br></ul> |
 | Get list of query ID's | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>With the platform being responsible for query tuning and optimization, insights into individual queries, their plans, and their execution statistics are no longer needed.</li></br><li>Query store information is immensely complex and false interpretations can lead to delays in mitigations and root cause identification.</li></br></ul></br>**Details**</br><ul></br><li>The platform will automatically tune and optimize individual queries, removing the need for manual intervention.</li></br><li>Notify Support about performance issues and include high-level details about the areas and timeframes in which slow performance was observed.</li></br></ul> |
 | Get the SQL query plan for a given Plan ID | Yes | Same as above. |
 | Get query plans and execution status | Yes | Same as above. |
@@ -129,6 +129,7 @@ The following action have been removed from the **Actions** tab of **SQL Insight
 | Create a plan guide to force plan | Yes | Same as above. |
 | Remove plan guide | Yes | Same as above. |
 | List of current plan guide | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>The platform handles optimization instead of manual, time-consuming tuning by customers.</li></br><li>DAMS reduces manual efforts in favor of platform automation.</li></br><li>The platform removes usage of plan guides as they are inefficient and difficult to manage.</li></br></ul></br>**Details**</br><ul></br><li>Plan guides are being deprecated in favor of forcing hints through query store.</li></br><li>The platform automatically detects the correct hint and applies it to the queries that need optimization.</li></br></ul> |
+| End SQL process | No | Continues to be available.
 
 ### Removed live views
 
