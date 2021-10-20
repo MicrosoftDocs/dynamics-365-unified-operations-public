@@ -34,8 +34,6 @@ Value-added tax (VAT) was introduced in the United Arab Emirates (UAE) on Januar
 
 Registered businesses and traders will charge VAT to all their customers at the current rate, and they will incur VAT on goods and services that they buy from suppliers. The difference between these sums is reclaimed or paid to the government. Federal Decree Law No. (8) of 2017 on Value Added Tax outlines the tax scope, rate, responsibility for tax, and supply of goods and services in all cases, including supply in special cases, supply of more than one component, supply via agent, supply by government entities, and cases of deemed supply. For more detailed information about VAT regulations, see the [Federal Tax Authorities of United Arab Emirates website](https://government.ae/information-and-services/finance-and-investment/taxation/valueaddedtaxvat).
 
-Dynamics 365 Finance is accredited and certified with the UAE Federal Tax Authorities (FTA) as a tax accounting software provider.
-
 ## Overview
 
 Standard sales tax functionality in Finance and Operations meets a majority of the legislative requirements of the UAE VAT law. To align the UAE VAT localization with UAE requirements for VAT reporting, the following country-specific enhancements have been added to the localization:
@@ -207,30 +205,18 @@ When the invoice line is posted with the sales tax group defined as **Reverse ch
 
 The implementation of VAT reporting for the UAE is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-For production and user acceptance testing (UAT) environments, follow the instructions in [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md) to download ER configurations.
+To use the VAT declaration and FAF functionality in UAE localizations, import the latest version of the following Electronic reporting (ER) configurations:
 
-To use the VAT declaration and FAF functionality in UAE localizations, you must install the following configurations. Always use the highest available version number of a configuration file.
+- VAT declaration model
+- VAT declaration model mapping
+- VAT declaration Excel (AE)
+- Standard Audit File model mapping
+- Standard Audit File (SAF-T)
+- FTA VAT Audit file (AE)
 
-| Configuration file name                           | Configuration type                         |
-|---------------------------------------------------|--------------------------------------------|
-| VAT declaration model.version.4.xml               | Data model                                 |
-| VAT declaration model mapping.version.4.4.xml     | Model mapping                              |
-| VAT declaration Excel (AE).version.4.1.xml        | UAE-specific Microsoft Excel output format |
-| Standard Audit File model mapping.version.6.7.xml | Data model                                 |
-| Standard Audit File (SAF-T).version.6.xml         | Model Mapping                              |
-| FTA VAT Audit file (AE).version.6.5.xml           | UAE FAF CSV output format                  |
+For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-For development and test environments, if direct access to a deployment virtual machine (VM) is available, you can download configurations from [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com). After you sign in to LCS, select the **Shared asset library** tile.
-
-[![Shared asset library tile in LCS.](./media/uae_vat_09.jpg)](./media/uae_vat_09.jpg) 
-
-In the Shared asset library, select **GER Configuration**, select the required configurations (see the previous table), and download them to a local disk.
-
-In Finance and Operations, in the **Electronic reporting** workspace, select the **Reporting configurations** tile. Then, on the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**, and upload all the files in the order in which they are listed in the previous table.
-
-[![Configurations page.](./media/uae_vat_10.jpg)](./media/uae_vat_10.jpg)
-
-After all the configurations are uploaded, the configuration tree should be present in Finance and Operations.
+After all the configurations are uploaded, the configuration tree should be present in **Electronic reporting** \> **Reporting configurations**.
 
 [![Configuration tree.](./media/uae_vat_11.jpg)](./media/uae_vat_11.jpg)
 
