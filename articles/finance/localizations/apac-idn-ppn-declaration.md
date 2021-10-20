@@ -88,7 +88,7 @@ Depending on the tax configuration in Finance, you can implement a specific sale
     1. In the **Lookup result** field, select **NA - Not applicable**.
     2. In the **Sales tax group** field, select **Not blank**.
     3. In the **Item sales tax group** field, select **\*Not blank\***.
-    4. In the **Tax code** field, select **Not blank**.
+    4. In the **Tax code** field, select **\*Not blank\***.
     5. In the **Transaction classifier** field, select **\*Not blank\***.
 
     By adding this last record (**NA**), you define the following rule: If the tax code and name that are passed as an argument don't satisfy any of the previous rules, the transactions won't be included in the VAT return form. Although this rule isn't used when the report is generated, it helps prevent errors during report generation if there is a missing rule configuration.
