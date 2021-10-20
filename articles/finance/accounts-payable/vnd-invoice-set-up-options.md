@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 
 This topic describes the options that are available for setting up and configuring vendor invoice automation. Invoice automation features use the following types of setup parameters:
 
-- Parameters for automatically applying prepayment for imported invoice.
+- Parameters for automatically applying prepayments in imported invoices.
 - Parameters for submitting imported vendor invoices to the workflow system and matching posted product receipt lines to pending vendor invoice lines.
 - Parameters for processing automation background tasks. The process automation framework is used to submit imported vendor invoices to the workflow system. It's also used to automatically match posted product receipt lines to pending vendor invoice lines and to perform invoice matching validation for manual invoices that were automatically matched to product receipt lines. Different business processes use this framework to define how often the selected process is run. The available frequencies for the **Match product receipt to invoice lines** and **Submit vendor invoices to workflow** background processes include **Hour** and **Daily**.
 
@@ -40,11 +40,10 @@ To set up or view information about a background task, go to **System administra
 
 To achieve touchless automation from the import process through vendor invoice posting, you must set up a Vendor invoice workflow. To set up a workflow, go to **Accounts payable > Setup > Accounts payable workflows**. To ensure that the invoice can be processed from start to finish without manual intervention, you must include an automated posting task in your workflow configuration.
 
-## Parameters for automatically applying prepayment for imported invoice
+## Parameters for automatically applying prepayments in imported invoices
 
-- **Automatically apply prepayment for imported invoices** – When this parameter is set to Yes, the system automatically looks up existing prepayments for a corresponding purchase order when vendor invoices are imported. If any prepayments that can be applied are found, one additional line is added to apply the prepayments in the vendor invoices that are being imported.
-
-- **Block follow-up automation process in case of prepayment application failure** – When this parameter is set to Yes, invoices will be blocked if a prepayment can’t be applied. As with other automated processes, such as receipt matching or submission to workflow, the invoice automation process won’t pick up blocked invoices until the prepayment is applied manually. 
+- **Automatically apply prepayment for imported invoices** – When this option is set to **Yes**, the system automatically looks up existing prepayments for a corresponding purchase order when vendor invoices are imported. If any prepayments that can be applied are found, one additional line is added to apply the prepayments in the vendor invoices that are being imported.
+- **Block follow-up automation process in case of prepayment application failure** – When this option is set to **Yes**, invoices will be blocked if a prepayment can't be applied. Like other automated processes, such as the receipt matching process and the submission to a workflow process, the invoice automation process won't pick up blocked invoices until the prepayment is manually applied. 
 
 ## Parameters for submitting imported vendor invoices to the workflow system
 
