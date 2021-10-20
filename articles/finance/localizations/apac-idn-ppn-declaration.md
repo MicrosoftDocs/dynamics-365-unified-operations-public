@@ -79,17 +79,17 @@ Depending on the tax configuration in Finance, you can implement a specific sale
 3. On the **Conditions** FastTab, select **Add**.
 4. On the new line, in the **Lookup result** field, select the related line of the SPT Masa PPN 1111 form.
 5. In the **Sales tax group** field, select the sales tax group that is used to calculate the related line of the SPT Masa PPN 1111 form. For example, select **PPN\_EXP**.
-6. In the **Item sales tax group** field, select **Not blank**, because box 1a will be identified only by sales tax group.
-7. In the **Tax code** field, select **Not blank**, because box 1a will be identified only by sales tax group.
+6. In the **Item sales tax group** field, select **\*Not blank\***, because box 1a will be identified only by sales tax group.
+7. In the **Tax code** field, select **\*Not blank\***, because box 1a will be identified only by sales tax group.
 8. In the **Transaction classifier** field, select the tax transaction classification where the sales tax group code is used.
 9. Repeat steps 3 through 8 for all SPT Masa PPN 1111 form boxes and the combination of sales tax code and tax transaction types that is configured in your legal entity.
 10. Select **Add**, and then follow these steps to add the final record line:
 
     1. In the **Lookup result** field, select **NA - Not applicable**.
     2. In the **Sales tax group** field, select **Not blank**.
-    3. In the **Item sales tax group** field, select **Not blank**.
+    3. In the **Item sales tax group** field, select **\*Not blank\***.
     4. In the **Tax code** field, select **Not blank**.
-    5. In the **Transaction classifier** field, select **Not blank**.
+    5. In the **Transaction classifier** field, select **\*Not blank\***.
 
     By adding this last record (**NA**), you define the following rule: If the tax code and name that are passed as an argument don't satisfy any of the previous rules, the transactions won't be included in the VAT return form. Although this rule isn't used when the report is generated, it helps prevent errors during report generation if there is a missing rule configuration.
 
@@ -104,7 +104,7 @@ In addition to the previous configuration, you must follow these steps to classi
 7. Select **Add** again, and then follow these steps to add the final record line:
 
     1. In the **Lookup result** field, select **NA - Not applicable**.
-    2. In the **Tax code** field, select **Not blank**.
+    2. In the **Tax code** field, select **\*Not blank\***.
 
 8. In the **State** field, select **Completed**.
 9. Select **Save**.
@@ -114,14 +114,14 @@ The following table represents an example that shows how to configure the parame
 
 | Lookup result | Label                                                        | Line | Sales tax group | Item sales tax group | Tax code      | Transaction classifier |
 |---------------|--------------------------------------------------------------|------|-----------------|----------------------|---------------|------------------------|
-| BoxA1         | Export sales of tangible BKP, intangible BKP, and JKP        | 1    | PPN\_EXP        | *Not blank*        | *Not blank* | Sales                  |
-| BoxA1         | Export sales of tangible BKP, intangible BKP, and JKP        | 2    | PPN\_EXP        | *Not blank*        | *Not blank* | SalesCreditNote        |
-| BoxA2         | Output taxes on domestic sales with tax invoices             | 3    | PPN\_DOM        | *Not blank*        | *Not blank* | Sales                  |
-| BoxA2         | Output taxes on domestic sales with tax invoices             | 4    | PPN\_DOM        | *Not blank*        | *Not blank* | SalesCreditNote        |
-| BoxA2         | Output taxes on domestic sales with tax invoices             | 5    | PPN\_EXE        | *Not blank*        | *Not blank* | SaleExempt             |
-| BoxA2         | Output taxes on domestic sales with tax invoices             | 6    | PPN\_EXE        | *Not blank*        | *Not blank* | SalesExemptCreditNote  |
-| BoxB1         | Input taxes that can be on the import of BKP and utilization | 7    | PPN\_IMP        | *Not blank*        | *Not blank* | Purchase               |
-| BoxB1         | Input taxes that can be on the import of BKP and utilization | 8    | PPN\_IMP        | *Not blank*        | *Not blank* | PurchaseCreditNote     |
+| BoxA1         | Export sales of tangible BKP, intangible BKP, and JKP        | 1    | PPN\_EXP        | *Not blank*          | \*Not blank\* | Sales                  |
+| BoxA1         | Export sales of tangible BKP, intangible BKP, and JKP        | 2    | PPN\_EXP        | *Not blank*          | \*Not blank\* | SalesCreditNote        |
+| BoxA2         | Output taxes on domestic sales with tax invoices             | 3    | PPN\_DOM        | *Not blank*          | \*Not blank\* | Sales                  |
+| BoxA2         | Output taxes on domestic sales with tax invoices             | 4    | PPN\_DOM        | *Not blank*          | \*Not blank\* | SalesCreditNote        |
+| BoxA2         | Output taxes on domestic sales with tax invoices             | 5    | PPN\_EXE        | *Not blank*          | \*Not blank\* | SaleExempt             |
+| BoxA2         | Output taxes on domestic sales with tax invoices             | 6    | PPN\_EXE        | *Not blank*          | \*Not blank\* | SalesExemptCreditNote  |
+| BoxB1         | Input taxes that can be on the import of BKP and utilization | 7    | PPN\_IMP        | *Not blank*          | \*Not blank\* | Purchase               |
+| BoxB1         | Input taxes that can be on the import of BKP and utilization | 8    | PPN\_IMP        | *Not blank*          | \*Not blank\*| PurchaseCreditNote     |
 | BoxB2         | Input taxes that can be credited for the acquisition of BKP  | 9    | *Not blank*   | *Not blank*        | PPN10%        | Purchase               |
 | BoxB2         | Input taxes that can be credited for the acquisition of BKP  | 10   | *Not blank*   | *Not blank*        | PPN10%        | PurchaseCreditNote     |
 | BoxB3         | Input taxes that can't be credited or that get facilities    | 11   | *Not blank*   | *Not blank*        | PPN\_NO       | Purchase               |
