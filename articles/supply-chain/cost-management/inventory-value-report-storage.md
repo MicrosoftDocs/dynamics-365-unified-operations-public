@@ -1,8 +1,8 @@
 ---
-# required metadata
+# Generate inventory value reports
 
-title: Inventory value storage report
-description: This topic explains how to run an Inventory value storage report and make the output available digitally, either as an interactive page in Microsoft Dynamics 365 Supply Chain Management or as an exported document in any of several formats.
+title: Inventory value reports
+description: This topic explains how to set up, generate, and use the two types of inventory value reports supported by Supply Chain Management.
 author: AndersGirke
 ms.date: 04/17/2020
 ms.topic: article
@@ -24,11 +24,34 @@ ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.9
 ---
 
-# Inventory value storage report
+# Generate inventory value reports
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to run an **Inventory value storage** report and make the output available digitally, either as an interactive page in Microsoft Dynamics 365 Supply Chain Management or as an exported document in any of several formats.
+Inventory value reports provide details about your inventory physical and financial quantities and amounts. You can choose to view the report in many different ways, such as by showing totals or transactions and by applying filters based on items or time range. You can view COGS values or WIP values and set other options.
+
+With the inventory value report, you can:
+
+- Do reconciliation between the general ledger and inventory.
+- Consult on-hand inventory and values for a specific period.
+- Create report configurations tailored for a specific purposes.
+- Save report configurations that can be used multiple times.
+- Add ranges to filter data when you run a report.
+
+> [!NOTE]
+> The report won't include subtotals that are defined in the report layout. It also won't include general ledger balances, even when they are defined in the report layout. Reconciliation to the general ledger must be done by using trial balances. <!-- Does this note apply to both types of reports, or just storage? -->
+
+## Types of inventory value reports
+
+There are two types of inventory value reports: *Inventory value report* and *Inventory value report storage*.
+
+### The standard inventory value report
+
+The standard *inventory value report* is a simple report that lets you choose what to include and then displays information on your screen. It doesn't save the results, nor does it provide interactive features for filtering, drilling down, browsing, or exporting. For these reasons, we recommend using *inventory value report storage* instead in most cases.
+
+### The inventory value report storage report
+
+The *inventory value report storage* report provides output either as an interactive page in Supply Chain Management or as an exported document in any of several formats.
 
 When you view the report in your browser, columns and aggregate balances are dynamically adjusted, depending on the layout that you've configured. You can sort the results, filter them, drill down into the data, and more.
 
@@ -36,15 +59,27 @@ Report results are stored in the **Inventory value** data entity. Therefore, you
 
 The **Inventory value storage** report is helpful when the output contains many lines. For example, you have 50,000 items, and 300 stores have been created as warehouses. In this case, if you request inventory ending balances by item, site, and warehouse, the output will contain many lines.
 
-> [!NOTE]
-> The report won't include subtotals that are defined in the report layout. It also won't include general ledger balances, even when they are defined in the report layout. Reconciliation to the general ledger must be done by using trial balances.
+## Turn on the Inventory value report storage feature
 
-## Turn on the Inventory value storage feature
-
-Before you can generate an **Inventory value storage** report, you must turn on the feature in your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
+The standard *inventory value report* feature is enabled by default, but if you want to generate the more advanced *inventory value report storage* reports, you must turn on the feature in your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module** – Cost management
 - **Feature name** – Inventory value report storage
+
+## Generate a standard inventory value report
+
+Use the following procedure generate a standard inventory value report:
+
+1. Go to **Cost management \> Inquiries and reports \> Inventory accounting - status reports \> Inventory value.**
+1. In the dialog box that appears, set the following values to define which records are included in your report:
+    - On the **Parameters** FastTab, the **Date interval code** is used when you want to view the predefined period instead of giving the **From date** and **To date**. For example, if you select **current period** in this parameter, the report will calculate the **From date** and **To date** based on the current session date. If you don't use date interval code, you can manually fill the **From date** and **To date** based on your need.
+    - On the **Records to include** FastTab, set up filters and constraints to define which data is included in the report. All of these filters will be applied to the inventory transactions but not the G/L balance <!-- Spell out "G/L" -->. Keep this in mind when setting up your filters. Otherwise, you may see a discrepancy between inventory and the G/L.
+    - On the **Run in the background** FastTab, specify how, when, and how often the report is generated.
+
+1. Select **OK** to apply your settings and close the dialog box, then the report will appear on screen.
+
+> [!IMPORTANT]
+> If you select the same date for both **From date** and **To date** and also enable the **Include beginning balance** option in the selected inventory value report configuration, you may get incorrect beginning balance. This is a by-design scenario. <!-- How/why is this "by design"? -->
 
 ## Generate an Inventory value storage report
 
@@ -85,7 +120,7 @@ Every report that you generate is stored in the **Inventory value** data entity.
 The following example shows how to export an **Inventory value report** report.
 
 1. Go to **System administration \> Workspaces \> Data management**.
-1. In the **Import / Export** section, select the **Export** tile. 
+1. In the **Import / Export** section, select the **Export** tile.
 1. On the **Export** page that appears, you will set up the export job. First enter a group name for the job.
 1. In the **Selected entities** section, select **Add entity**.
 1. In the dialog box that appears, set the following fields:
