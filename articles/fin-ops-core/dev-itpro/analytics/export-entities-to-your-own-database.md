@@ -174,16 +174,17 @@ Things to consider that will reduce the overall export times:
 
 To create a cross-company entity:
 1. Copy the current per company entity. 
-2. Change the name and label of the copied entity. 
+2. Change the name, the **PublicCollectionName** lable, and **PubliceEntityName** the copied entity. 
 3. Add a column for **DataAreaId**, if needed. 
 4. Remove the value for the **PrimaryCompanyContext** property in order to not filter by the primary  company during export.
-5. Build and deploy the new entity. 
-6. Schedule an export job in batch for the new entity, without selecting the **Export across all companies** option.
+5. Generate staging table, build and deploy the new entity. 
+6. Test the new entity to ensure that it works properly and performs adequately at required scale.
+7. Schedule an export job in batch for the new entity, without selecting the **Export across all companies** option.
 
 > [!NOTE]
 > Adding multiple entities to an export project for BYOD must be done carefully to ensure the overall reliability of the BYOD export is not compromised. Different parameters must be taken into consideration when deciding the number of entities that are added to the same project. Some of these parameters should be the degree of complexity of the entities, data volume per entity that is expected, and the overall time for export to complete at the job level. Adding hundreds of entities must be avoided, therefore creating multiple jobs with smaller number of entities is recommended.
 >
-> Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is discouraged. You must use the **Export in batch** option.
+> Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is not supported. You must use the **Export in batch** option.
 
 ### Incremental export
 When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the database and specify an appropriate change tracking option, as described earlier in this topic.
