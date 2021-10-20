@@ -31,9 +31,9 @@ ms.dyn365.ops.version: 8.0.4
 A new **Revenue recognition** module has been added that includes menu items for all the setup that is required. This topic describes the setup options and their implications.
 
 > [!NOTE]
-> The Revenue recognition feature is now enabled by default through Feature management.  If your organization doesn't use this feature, it can be turned off in the **Feature management** workspace.
+> The Revenue recognition feature is now enabled by default through Feature management.  If your organization doesn't use this feature, you can turn it off in the **Feature management** workspace.
 
-> Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition should not be added to orders or transactions created in Commerce channels.
+> Revenue recognition, including bundle functionality, isn't supported for use in Commerce channels (e-commerce, POS, call center). Items configured with revenue recognition should not be added to orders or transactions that were created in Commerce channels.
 
 The **Revenue recognition** module has the following setup options:
 
