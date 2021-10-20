@@ -4,7 +4,7 @@
 title: Set up and report value-added tax (VAT)
 description: This topic explains how to set up and report value-added tax (VAT).
 author: kfend
-ms.date: 01/17/2020
+ms.date: 10/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -207,16 +207,16 @@ The implementation of VAT reporting for the UAE is based on Electronic reporting
 
 To use the VAT declaration and FAF functionality in UAE localizations, import the latest version of the following Electronic reporting (ER) configurations:
 
-- VAT declaration model
-- VAT declaration model mapping
-- VAT declaration Excel (AE)
-- Standard Audit File model mapping
-- Standard Audit File (SAF-T)
-- FTA VAT Audit file (AE)
+  - VAT declaration model
+  - VAT declaration model mapping
+  - VAT declaration Excel (AE)
+  - Standard Audit File model mapping
+  - Standard Audit File (SAF-T)
+  - FTA VAT Audit file (AE)
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-After all the configurations are uploaded, the configuration tree should be present in **Electronic reporting** \> **Reporting configurations**.
+After all the configurations are uploaded, the configuration tree should be present in **Electronic reporting** > **Reporting configurations**.
 
 [![Configuration tree.](./media/uae_vat_11.jpg)](./media/uae_vat_11.jpg)
 
