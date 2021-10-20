@@ -4,7 +4,7 @@
 title: Add data fields in tax configurations
 description: This topic explains how to customize tax configurations by adding data fields.
 author: Kai-Cloud
-ms.date: 09/15/2021
+ms.date: 09/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
