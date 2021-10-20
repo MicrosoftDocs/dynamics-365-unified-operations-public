@@ -1610,6 +1610,8 @@
             items: 
             - name: Tax feature support for transfer orders
               href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+            - name: Print tax information on transfer order documents
+              href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?toc=/dynamics365/finance/toc.json
           - name: Extension
             items: 
             - name: Add data fields in tax configurations
