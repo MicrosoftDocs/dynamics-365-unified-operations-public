@@ -119,14 +119,25 @@ If the Power Platform integration isn't enabled during the deployment of the Fin
 
 When you enable Microsoft Power Platform integration for a Finance and Operations apps environment in LCS, either during or after deployment, the process creates a new Dataverse-enabled Microsoft Power Platform environment, and links the Finance and Operations apps environment to the new Microsoft Power Platform environment. However, you may want to enable the integration by linking your Finance and Operations apps environment to an existing Microsoft Power Platform environment. The option to enable the integration with an existing Microsoft Power Platform environment isn't currently available in LCS. Work with the Microsoft engineering team to enable the integration with an existing Power Platform environment.
 
-There are two scenarios for enabling ntegration with an existing Microsoft Power Platform environment
+There are two scenarios for enabling integration with an existing Microsoft Power Platform environment:
 
-- A known, connected Microsoft Power Platform environemnt is already defined by dual-write configurations.
-- No existing connected Microsoft Power Platform environment is identified.
+- A connected Microsoft Power Platform environemnt is already defined by dual-write configurations for the Finance and Operations environment.
+- No existing connected Microsoft Power Platform environment is identified for the Finance and Operations environment.
 
-### Enabling the integration for already-connected environments
+### Finance and Operations connected to a single Power Platform environment
 
-If the Finance and Operations apps environment has configured dual-write to connect the environment to a single Microsoft Power Platform environment, these environments are identified as a one-to-one linking. For these environments, when Finance and Operations apps version 10.0.21 is generally available, identified one-to-one linked environments will be automatically updated to enable the full Microsoft Power Platform integration for the Finance and Operations apps environment. 
+If the Finance and Operations apps environment has configured dual-write to connect the environment to a single Microsoft Power Platform environment, these environments are identified as a one-to-one linking. For these environments, when Finance and Operations apps version 10.0.22 (PU46) is generally available, identified one-to-one linked environments will be automatically updated to enable the full Microsoft Power Platform integration for the Finance and Operations apps environment. 
+
+Following the general availability of the version, you can verify the Power Platform integration was successfully enabled automatically by viewing the **Power Platform Integration** section of the environment details for the Finance and Operations environment in LCS. If the integration was successfully enabled, you will see the name of the integrated Power Platform environment in the **Environment name** field of the section of the page.
+
+> [!NOTE]
+> Finance and Operations environments that are already connected to a single Power Platform environment and are already using business events functionality will automatically have the Power Platform integration enabled. However, these environments will not be able to use the new business events and data events functionality with general availability of the 10.0.22 (PU46) release. For these environments, the business events endpoints already in use in the environment will be migrated to the Dataverse platform with the general availability of the 10.0.23 (PU47) release. At this point the new business events and data events functionality will become available in the environment. Until then, business events will continue to function as currently configured in the environment.
+> 
+> For more information on the new business events and data events functionality that will be delayed for these environments until the migration is complete, see [Finance and Operations business events in Dataverse](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-business-events-in-dataverse) and [Finance and Operations CUD events in Dataverse](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-cud-events-in-dataverse) in the 2021 release wave 2 plan. 
+
+### Finance and Operations connected to multiple Power Platform environments
+
+If a Finance and Operations environment has been manually linked to multiple Power Platform environments, then the process of enabling the Power Platform integration for the environment cannot be automated. The integration must be one-to-one between Finance and Operations
 
 ## Troubleshooting the setup
 
