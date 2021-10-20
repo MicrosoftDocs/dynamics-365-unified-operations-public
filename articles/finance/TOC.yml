@@ -1576,6 +1576,8 @@
               href: localizations/tax-calculation-data-model-overview.md
             - name: Sales tax applicability and sales tax group determination logic
               href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+            - name: Using tax jurisdiction parameters for cash discount calculation setup
+              href: localizations/global-tax-jurisdiction-cash-discount-setup.md?toc=/dynamics365/finance/toc.json              
           - name: Calculation
             items: 
             - name: Calculate tax on prices when Prices include taxes is enabled
@@ -1622,6 +1624,8 @@
             items: 
             - name: Tax feature support for transfer orders
               href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+            - name: Print tax information on transfer order documents
+              href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?toc=/dynamics365/finance/toc.json
           - name: Extension
             items: 
             - name: Add data fields in tax configurations
@@ -3036,6 +3040,8 @@
           href: localizations/emea-nl-audit-file.md
         - name: VAT declaration (Netherlands)
           href: localizations/emea-nl-vat-declaration-netherlands.md
+        - name: Netherlands Intrastat
+          href: localizations/emea-nl-intrastat.md
         - name: EU sales list
           href: localizations/emea-nl-EU-sales-list.md
       - name: New Zealand
@@ -3390,7 +3396,7 @@
           href: localizations/emea-esp-fixed-asset-group-revaluation.md
         - name: Intra-community VAT
           href: localizations/emea-esp-intra-community-vat.md
-        - name: Intrastat report
+        - name: Spanish Intrastat
           href: localizations/emea-esp-intrastat.md
         - name: One-time customers
           href: localizations/emea-esp-no-one-time-customer-for-project-contracts.md

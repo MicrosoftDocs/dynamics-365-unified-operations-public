@@ -39,7 +39,7 @@ This topic provides links to documentation resources for Spain.
 - [Use fiscal data from the invoice account](emea-esp-fiscal-data-invoice-account.md)
 - [Fixed asset revaluation groups](emea-esp-fixed-asset-group-revaluation.md)
 - [Intra-community VAT](emea-esp-intra-community-vat.md)
-- [Intrastat report](emea-esp-intrastat.md)
+- [Spanish Intrastat](emea-esp-intrastat.md)
 - [One-time customers](emea-esp-no-one-time-customer-for-project-contracts.md)
 - [Print checks by using the Spanish layout](emea-esp-print-checks-with-spanish-layout.md)
 - [Spanish promissory note options](emea-esp-promissory-note-options.md)
