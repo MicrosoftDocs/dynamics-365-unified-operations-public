@@ -4,7 +4,7 @@
 title: Optimize data migration for Finance and Operations apps
 description: The topic provides an overview of steps and actions that you can use to optimize data migration for Finance and Operations apps.
 author: skaue-ms
-ms.date: 04/22/2021
+ms.date: 10/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
