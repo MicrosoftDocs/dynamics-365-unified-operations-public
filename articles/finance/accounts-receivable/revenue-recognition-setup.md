@@ -47,7 +47,7 @@ The **Revenue recognition** module has the following setup options:
     - Defining revenue price
     - Inventory setup
       - Defining revenue schedule
-      - Defning revenue price
+      - Defining revenue price
     - Posting profiles
     - Bundles
       - Bundle components
@@ -109,7 +109,7 @@ Enter descriptive values in the **Revenue schedule** and **Description** fields.
     - **1st day of month/period** – The date on the first schedule line is the contract start date (or invoice date). However, all subsequent schedules lines are created for the first of the month or fiscal period.
     - **Mid-month split** – The date on the first schedule line depends on the invoice date. If the invoice is posted on the first through fifteenth of the month, the revenue schedule is created by using the first day of the month. If the invoice is posted on the sixteenth or later, the revenue schedule is created by using the first day of the next month.
        - **Mid-month split** can't be selected when using a **Recognition basis** of **Fiscal period by days**.        
-    - **1st day of next month/period** – The date on the schedule begins onis the first day of the next month or fiscal period.
+    - **1st day of next month/period** – The date on the schedule begins on is the first day of the next month or fiscal period.
     - **End of month/period** – The date on the first schedule line is the contract start date (or invoice date). However, all subsequent schedule lines are created for the last day of the month or fiscal period. 
 
 
