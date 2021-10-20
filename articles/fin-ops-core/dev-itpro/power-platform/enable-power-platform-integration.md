@@ -4,7 +4,7 @@
 title: Enable Microsoft Power Platform integration
 description: This topic explains how to enable Microsoft Power Platform integration using Lifecycle Services for Finance and Operations apps and Dataverse.
 author: jaredha
-ms.date: 10/18/2021
+ms.date: 10/20/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -133,7 +133,7 @@ Following the general availability of the version, you can verify the Power Plat
 > [!NOTE]
 > Finance and Operations environments that are already connected to a single Power Platform environment and are already using business events functionality will automatically have the Power Platform integration enabled. However, these environments will not be able to use the new business events and data events functionality with general availability of the 10.0.22 (PU46) release. For these environments, the business events endpoints already in use in the environment will be migrated to the Dataverse platform with the general availability of the 10.0.23 (PU47) release. At this point the new business events and data events functionality will become available in the environment. Until then, business events will continue to function as currently configured in the environment.
 > 
-> For more information on the new business events and data events functionality that will be delayed for these environments until the migration is complete, see [Finance and Operations business events in Dataverse](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-business-events-in-dataverse) and [Finance and Operations CUD events in Dataverse](https://docs.microsoft.com/en-us/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-cud-events-in-dataverse) in the 2021 release wave 2 plan. 
+> For more information on the new business events and data events functionality that will be delayed for these environments until the migration is complete, see [Finance and Operations business events in Dataverse](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-business-events-in-dataverse) and [Finance and Operations CUD events in Dataverse](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-cud-events-in-dataverse) in the 2021 release wave 2 plan. 
 
 ### Finance and Operations connected to multiple Power Platform environments
 
