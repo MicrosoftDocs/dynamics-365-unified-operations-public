@@ -26,44 +26,44 @@ ms.dyn365.ops.version: 10.0.22
 
 # Data events
 
-Data events are events based on changes to data in Dynamics 365 Finance and Operations apps. Create, update, and delete (CUD) events can be enabled for each entity. For example, if the **Create** event is enabled on the **Purchase order headers V2** entity, an event notification is emitted each time a new purchase order is created in the database.
+Data events are events that are based on changes to data in Finance and Operations apps. Create, update, and delete (CUD) events can be enabled for each entity. For example, if the **Create** event is enabled for the **Purchase order headers V2** entity, an event notification is emitted every time that a new purchase order is created in the database.
 
-All OData-enabled entities in Finance and Operations apps, both standard and custom, can emit data events. In the data events catalog, each event for an entity is listed as a data event to which subscriptions can be established. The concept of activating the data event and associating it to an endpoint is similar to the concept of business events. When a data event happens, the payload of the event contains the corresponding entity record.
+All standard and custom entities in Finance and Operations apps that are enabled for Open Data Protocol (OData) can emit data events. In the data event catalog, each event for an entity is listed as a data event that subscriptions can be established for. The concept of activating the data event and associating it with an endpoint resembles the concept of business events. When a data event occurs, the payload of the event contains the corresponding entity record.
 
 > [!NOTE]
-> Data events are only available in environments for which the Power Platform integration has been enabled. For more information, see [Enable Microsoft Power Platform integration](../power-platform/enable-power-platform-integration.md).
+> Data events are available only in environments that the Microsoft Power Platform integration is enabled for. For more information, see [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
 
-## Data events catalog
+## Data event catalog
 
-Go to **System administration** > **Setup** > **Business event** to access the data events catalog from the **Business events** page. The data events catalog provides a complete list of the available data events in the Finance and Operations apps environment. For each data event, the category, event ID, name, and whether the event is company-specific is provided. You can filter the list by category and data event ID.
+To access the data event catalog, select the **Data event catalog** tab on the **Business events** page (**System administration** \> **Setup** \> **Business event**). The data event catalog provides a complete list of the available data events in the Finance and Operations apps environment. For each data event, the list shows the category, event ID, and name. It also indicates whether the event is company-specific. You can filter the list by category and data event ID.
 
-![Data events catalog.](../media/businessevents_dataeventscatalog.png)
+![Data event catalog tab on the Business events page.](../media/businessevents_dataeventscatalog.png)
 
 ## Activating data events
 
-Data events are not active by default. To activate a data event from the data event catalog, select the events in the list, and then select **Activate**. 
+By default, data events are inactive. To activate a data event from the data event catalog, select it in the list, and then select **Activate**.
 
-Data events can be activated in all legal entities or in specific legal entities. In the **Legal entity** field of the **Configure new data event** pane, select the legal entity in which you want to activate the data event. If you leave the **Legal entity** field blank, the selected data events will be activated in all legal entities. If a data event is required in multiple specific legal entities, the event must be configured separately for each legal entity.
+Data events can be activated either in all legal entities or in specific legal entities. In the **Configure new data event** dialog box, in the **Legal entity** field, select the legal entity that you want to activate the data events in. If you leave the **Legal entity** field blank, the selected data events will be activated in all legal entities. If a data event is required in multiple specific legal entities, it must be configured separately for each legal entity.
 
-Only company-specific data events can be configured for specific legal entities. When configuring data events that aren't company-specific, the **Legal entity** field isn't editable, and the data event is enabled for all legal entities.
+Only company-specific data events can be configured for specific legal entities. When you configure data events that aren't company-specific, the **Legal entity** field isn't editable, and the data events are enabled for all legal entities.
 
-Select a configured endpoint to activate the data event. For information on configuring endpoints business events and data events, see [Managing endpoints](home-page.md#managing-endpoints).
+To activate a data event, select a configured endpoint. For information about how to configure endpoints business events and data events, see [Managing endpoints](home-page.md#managing-endpoints).
 
-Activating a data event adds the event to the list on the **Active data events** tab of the page and makes it available for subscription through the selected endpoint.
+When you activate a data event, it's added to the list on the **Active data events** tab of the **Business events** page and becomes available for subscription through the selected endpoint.
 
-![Configure new data event.](../media/businessevents_activatedataevent.png)
+![Configure new data event dialog box.](../media/businessevents_activatedataevent.png)
 
 ## Deactivating data events
 
-On the **Active data events** tab, you can deactivate data events. To deactivate a data event, select the events in the list, and the select **Deactivate**. The events are removed from the list of active data events and added to the **Inactive data events** list. 
+You can deactivate data events from the **Active data events** tab of the **Business events** page. To deactivate a data event, select it in the list, and then select **Deactivate**. The data event is removed from the list on the **Active data events** tab and added to the list on the **Inactive data events** tab.
 
-Data events, similar to business events, can be deactivated when business event processing is temporarily paused. This may be needed because of system maintenance, bulk data imports, or bulk data processing. Bulk data processing with data events enabled on related data entities may send a high volume of data events that may or may not be needed. This can impact system performance.
+Like business events, data events can be deactivated when business event processing is temporarily paused. A temporary pause might be required because of system maintenance, bulk data imports, or bulk data processing. Bulk data processing where data events are enabled on related data entities can send a high volume of data events that might not be required. This situation can affect system performance.
 
-When data events are no longer needed to meet business requirements, you can delete the data event from the **Active data events** or **Inactive data events** list. This removes the event from the list and deletes all error history for the event. Deactivating the data event may be used rather than deleting the event if the history of errors for the data event must be preserved. For more information on error logs for business events and data events, see [Errors](home-page.md#errors).
+When data events are no longer required to meet business requirements, you can delete them from the list on the **Active data events** or **Inactive data events** tab. In this case, the data events are removed from the list, and all error history for them is deleted. If the history of errors for a data event must be preserved, you can deactivate the data event instead of deleting it. For more information about error logs for business events and data events, see [Errors](home-page.md#errors).
 
 ## Download the data event schema
 
-The **Data events catalog** page also displays the fields that are passed to the data event that make up the event schema. This includes the field name and label. Selecting the **Download schema** action allows you to download the JavaScript Object Notation (JSON) schema for the event. This is helpful when external integration systems require the schema of the payload for a business event during development.
+The **Data event catalog** page also shows the fields that are passed to a data event and that make up the event schema. The information that is shown includes the field name and label. You can download the JavaScript Object Notation (JSON) schema for an event by selecting **Download schema**. This capability is helpful when external integration systems require the schema of the payload for a business event during development.
 
 [!include[banner](../includes/banner.md)]
 
