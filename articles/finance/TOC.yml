@@ -2737,7 +2737,7 @@
           - name: Italian Intrastat
             href: localizations/emea-ita-intrastat.md
           - name: Post arrivals and dispatches for Intrastat
-            href: emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+            href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
           - name: Intrastat (IT) file format
             href: https://docs.microsoft.com/en-us/dynamics/s-e/365business/dynamices365finance_itintrastatfile
         - name: Miscellaneous charges per kilogram in an Intrastat declaration
