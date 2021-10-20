@@ -174,7 +174,7 @@ Things to consider that will reduce the overall export times:
 
 To create a cross-company entity:
 1. Copy the current per company entity. 
-2. Change the name, the **PublicCollectionName** lable, and **PubliceEntityName** the copied entity. 
+2. Change the name, the label **PublicCollectionName**, and **PubliceEntityName** of the copied entity. 
 3. Add a column for **DataAreaId**, if needed. 
 4. Remove the value for the **PrimaryCompanyContext** property in order to not filter by the primary  company during export.
 5. Generate staging table, build and deploy the new entity. 
