@@ -1582,6 +1582,8 @@
           href: sysadmin/batch-history-cleanup.md
         - name: Cancel an executing batch job
           href: sysadmin/batch-abort.md
+        - name: Batch OData API
+          href: sysadmin/batch-odata-api.md
       - name: Optimization advisor
         items:
         - name: Optimization advisor overview
