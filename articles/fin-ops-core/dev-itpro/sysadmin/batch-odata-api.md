@@ -31,7 +31,7 @@ To learn how to configure batch events, see [Batch business events](../business-
 ## End-to-end automation
 With the release of version 10.0.22, the batch functionality now exposes an OData API that can be used to requeue the batch job. Customers can use the OData endpoint to requeue the jobs which are in a terminal state. This can be integrated with any automation using Power Automate, custom APIs, etc.
 
-![image](https://user-images.githubusercontent.com/90061039/137513999-dee945e8-4c83-4608-948b-11b5aa86f09f.png)
+![image](media/BatchAPI.png)
 
 ## Automate requeuing of failed batch jobs using Odata API
 The Batch OData endpoint enables end users to consume and automate end-to-end process to reschedule a batch job using Power Automate or custom API. It supports updating batch job status from started, failed, finished, or cancelled to a waiting state based on business requirements.
