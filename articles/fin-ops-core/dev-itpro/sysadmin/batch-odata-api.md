@@ -21,20 +21,20 @@ This topic provides information about Batch OData API and explains how you can u
 
 ## Overview
 
-In the existing Finance and Operations [batch processing](batch-processing-overview.md) functionality, if there are certain types of job errors that can be retried (with or without any changes, based on the interpretation of the error), they must be manually rerun from the batch. For jobs which are scheduled to be run during the off-peak times  (to avoid load during active business hours for customers), monitoring failures and re-triggering the jobs either requires 24x7 support or a wait time until the customer users resume work during normal business hours.
+In the existing Finance and Operations [batch processing](batch-processing-overview.md) functionality, if there are certain types of job errors that can be retried (with or without any changes, based on the interpretation of the error), they must be manually rerun from the batch. For jobs which are scheduled to be run during off-peak times (to avoid active business hours for customers), monitoring failures and re-triggering the jobs either requires 24x7 support or a wait time until users resume work during normal business hours.
 
 ## Current available automation (business events integration)
-Business events capabilities allow customers to configure notification on state changes for batch jobs (started, failed, finished, cancelled). Integrating this with [Power Autotomate](../business-events/business-events-flow.md) allows the customer to capture information about concerned jobs without logging into the system.However, it requires manual intervention if any action is to be taken based on these business events.
+Business events capabilities allow customers to configure notification on state changes for batch jobs (started, failed, finished, cancelled). Integrating this with [Power Autotomate](../business-events/business-events-flow.md) allows the customer to capture information about concerned jobs without logging into the system. However, it requires manual intervention if any action is to be taken based on these business events.
 
 To learn how to configure batch events, see [Batch business events](../business-events/system-business-events.md)
 
 ## End-to-end automation
-With the release of version 10.0.22, the batch functionality now exposes an OData API that can be used to requeue the job. Customers can use the OData endpoint to requeue the jobs which are in terminal state. This can be integrated with any automation using Power Automate, custom APIs, etc.
+With the release of version 10.0.22, the batch functionality now exposes an OData API that can be used to requeue the batch job. Customers can use the OData endpoint to requeue the jobs which are in a terminal state. This can be integrated with any automation using Power Automate, custom APIs, etc.
 
 ![image](https://user-images.githubusercontent.com/90061039/137513999-dee945e8-4c83-4608-948b-11b5aa86f09f.png)
 
 ## Automate requeuing of failed batch jobs using Odata API
-Batch OData endpoint enables end user to consume and automate end-to-end process to reschedule a batch job using Power Automate or custom API. It supports to update batch job status from (started, failed, finished, cancelled) to waiting state based on business requirements.
+The Batch OData endpoint enables end users to consume and automate end-to-end process to reschedule a batch job using Power Automate or custom API. It supports updating batch job status from started, failed, finished, or cancelled to a waiting state based on business requirements.
 
 Service endpoint: 
 `https://<org url>/data/BatchJobs/Microsoft.Dynamics.DataEntities.SetBatchJobToWaiting`
