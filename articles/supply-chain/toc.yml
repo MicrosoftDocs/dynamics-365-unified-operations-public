@@ -715,8 +715,10 @@
           href: cost-management/inventory-close.md
         - name: Adjust on-hand inventory cost values
           href: cost-management/adjust-hand-inventory-cost-values.md
-        - name: Inventory value storage report
+        - name: Inventory value reports
           href: cost-management/inventory-value-report-storage.md
+        - name: Inventory value report examples and logic
+          href: cost-management/inventory-value-report-examples.md
         - name: Inventory aging report storage
           href: cost-management/inventory-aging-report-storage.md
         - name: Inventory aging report examples and logic
