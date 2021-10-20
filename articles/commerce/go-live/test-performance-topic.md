@@ -19,13 +19,15 @@ ms.search.validFrom: 2021-09-20
 
 This topic explains how to improve website performance by optimizing image use in Microsoft Dynamics 365 Commerce during the upgrade or go-live process. 
 
-## Prerequisites
-Before you complete the steps in this topic, the following prerequisites must be met. 
+## Configuration
+This topic applies to the following configurations: 
 
-- You must be using eCommerce version 10.0.16 or later
-- Something about the compnent and B2C eCommerce or B2B eCommerce
-- Something about the feature area being eCommerce Website Performance
-- You have installed the Dynamics 365 Commerce online software development kit (SDK). For more information, see [Install the online SDK](../dev-itpro/ecommerce-platform-sdk.md).
+- **Version**: Commerce 10.0.16 or later
+- **Component**: B2C or B2B 
+- **Feature area**: Commerce Website Performance
+
+## Prerequisites
+Install the Dynamics 365 Commerce online software development kit (SDK). For more information, see [Install the online SDK](../dev-itpro/ecommerce-platform-sdk.md).
 
 ## Optimize images
 
