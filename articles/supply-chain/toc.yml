@@ -3747,6 +3747,12 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: Warehouse mobile app
+          items:
+          - name: Trust anchor for certification path not found when setting up app connection
+            href: troubleshooting/warehousing/certification-path-app-connection-error.md
+          - name: Trust anchor for certification path not found when updating and migrating to WMS
+            href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
         - name: Auto-reservation prompt for batch number is shown even with available inventory
           href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
         - name: Picking work can't be unblocked because of unfinished replenishment work
@@ -3757,8 +3763,6 @@
           href: troubleshooting/warehousing/cant-move-license-plate.md
         - name: Can't move inventory to a location that is license plate-controlled
           href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-        - name: Trust anchor for certification path not found when setting up app connection
-          href: troubleshooting/warehousing/certification-path-app-connection-error.md
         - name: Cluster profile can't be found
           href: troubleshooting/warehousing/cluster-profile-not-found-error.md
         - name: Delivery note correction can't be processed
@@ -3829,8 +3833,6 @@
           href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
         - name: Can't unreserve inventory on a sales order line
           href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-        - name: Trust anchor for certification path not found when updating and migrating to WMS
-          href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
         - name: You can't confirm a shipment because customer is on hold
           href: troubleshooting/warehousing/customer-is-on-hold.md
         - name: You can't confirm a shipment because load lines have quantity zero
