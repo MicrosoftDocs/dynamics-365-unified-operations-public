@@ -81,7 +81,7 @@ In Platform update 31, the new [priority-based batch scheduling](priority-based-
 
 ## Configure the maximum number of batch threads
 
-To better use parallelism and multithreading, you can configure the maximum number of batch threads per instance of Application Object Server (AOS) by setting the **Maximum batch threads** field on the **Server configuration** page (**System administration \> Setup \> Server configuration**). Be careful about changing the value of this field. A value that is too high can have negative performance implications. Currently, the default value is **8**. You can change the value to **12** or **16**, if needded. However, you should not set the field to a value that is more than 16 unless you do significant performance testing.
+To better use parallelism and multithreading, you can configure the maximum number of batch threads per instance of Application Object Server (AOS) by setting the **Maximum batch threads** field on the **Server configuration** page (**System administration \> Setup \> Server configuration**). Be careful about changing the value of this field. A value that is too high can have negative performance implications. Currently, the default value is **8**. You can increase the value to **12** or **16**. However, you should not set the field to a value that is more than 16 unless you do significant performance testing.
 
 ## Import in batch mode
 
