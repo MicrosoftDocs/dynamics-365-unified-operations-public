@@ -101,18 +101,21 @@ Enter descriptive values in the **Revenue schedule** and **Description** fields.
     - **Monthly** – The amount is allocated equally across the number of months that is defined in the occurrences.
     - **Occurrences** – The amount is allocated equally across the occurrences, but it can include an extra period if you select **Actual start date** as the recognition convention.
     - **Fiscal period by days** – The amount is allocated based on the actual days in each fiscal period. 
-      - The results of Monthly by days and Fiscal period by days will be the same when the fiscal periods follow calendar months. The only exception is when using End of month/period and the Contract Start date and End date is left blank on a sales order line. 
+      - The results of Monthly-by-days and Fiscal period-by-days will be the same when the fiscal periods follow calendar months. The only exception is when using End of month/period and the **Contract Start date** and **End date** is left blank on a sales order line.
 
-- **Recognition convention** – The recognition convention determines the default dates that are set on the revenue schedule for the invoice.
+- **Recognition convention** – The recognition convention determines the dates that are set on the revenue schedule for the invoice.
 
     - **Actual start date** – The schedule is created by using either the contract start date (for post contract support \[PCS\] items) or the invoice date (for essential and nonessential items).
-    - **1st of month** – The date on the first schedule line is the contract start date (or invoice date). However, all subsequent schedules lines are created for the first of the month.
+    - **1st day of month/period** – The date on the first schedule line is the contract start date (or invoice date). However, all subsequent schedules lines are created for the first of the month or fiscal period.
     - **Mid-month split** – The date on the first schedule line depends on the invoice date. If the invoice is posted on the first through fifteenth of the month, the revenue schedule is created by using the first day of the month. If the invoice is posted on the sixteenth or later, the revenue schedule is created by using the first day of the next month.
-    - **1st of next month** – The date on the schedule is the first day of the next month.
+       - **Mid-month split** can't be selected when using a **Recognition basis** of **Fiscal period by days**.        
+    - **1st day of next month/period** – The date on the schedule begins onis the first day of the next month or fiscal period.
+    - **End of month/period** – The date on the first schedule line is the contract start date (or invoice date). However, all subsequent schedule lines are created for the last day of the month or fiscal period. 
 
-Select the **Revenue schedule details** button to view the general periods and the percentages that are recognized in each period. By default, the **Recognize percentage** value is equally divided across the number of periods. If the recognition basis is set to either **Monthly** or **Occurrences**, the recognition percentage can be changed. As you change the recognition percentage, a warning message notifies you that the total doesn't equal 100 percent. If you receive the message, you can continue to edit lines. However, the total percentage must equal 100 before you close the page.
 
-[![Revenue schedule details.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+Select the **Revenue schedule details** button to view the general periods and the percentages that are recognized in each period. By default, the **Recognize percentage** value is equally divided across the number of periods. If the recognition basis is set to **Monthly**, the recognition percentage can be changed. As you change the recognition percentage, a warning message notifies you that the total doesn't equal 100 percent. If you receive the message, you can continue to edit lines. However, the total percentage must equal 100 before you close the page.
+
+[![Revenue schedule details.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
 
 ## Inventory setup
 
