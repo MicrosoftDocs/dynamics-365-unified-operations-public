@@ -74,6 +74,13 @@ To approve and set up a business partner administrator user in Commerce headquar
 
 After the request is approved, and the customer and customer hierarchy records are synced to the channel database, the requestor can sign in to the B2B e-commerce website by using the email address that they provided when they submitted the request. Users can use the sign-up flow to define the password for their account. To enable the identity provider (Azure AD B2C) record to be linked to the B2B customer record that was created at sign-up or sign-in, follow the instructions in [Enable automatic linking of identity records to customer accounts](../identity-record-linking.md).
 
+## Notify B2B prospects when they are approved or rejected
+
+When you approve a B2B prospect onboarding request, you can automatically send an email notification to the prospect to inform them. To set up email notifications for the **B2B prospect accepted** or **B2B prospect rejected** events, do the following:
+
+1. Create email templates that will be sent to prospects when the **B2B prospect approved** and **B2B prospect rejected** notification types are triggered. For information about the placeholders supported by the **B2B prospect approved** and **B2B prospect rejected** notification types, see the Notification types section in the [Create email templates for transactional events](../email-templates-transactions.md) help topic. You can learn more about creating email templates in the Create an email template section of the [Create email templates for transactional events](../email-templates-transactions.md) help topic. 
+2. Add the **B2B prospect approved** and **B2B prospect rejected** notification types to your email notification profile and map them to the email templates you created in step 1. For more information about notification profiles, see the [Set up an email notification profile](../email-notification-profiles.md) help topic. 
+
 ## Onboard additional business partner users
 
 The business partner administrator user can onboard additional business partner users to the B2B e-commerce website as required.
