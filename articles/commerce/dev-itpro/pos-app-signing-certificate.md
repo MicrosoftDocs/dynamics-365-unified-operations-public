@@ -45,7 +45,7 @@ To sign the MPOS app with a certificate, use one of these options in the **Retai
 ## Use a Secure File task for Universal Windows Platform app signing
 
 > [!NOTE]
-> You can also use Azure Key Vault to store the certificate and use the Azure sign tool to sign the Modern POS .appx file and self-service installers. For sample pipeline scripts and additional information, see [Set up a build pipeline in Azure DevOps to generate Retail self-service packages](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/build-pipeline#set-up-a-build-pipeline-in-azure-devops-to-generate-retail-self-service-packages).
+> You can also use Azure Key Vault to store the certificate and use the Azure sign tool to sign the Modern POS .appx file and self-service installers. For sample pipeline scripts and additional information, see [Set up a build pipeline in Azure DevOps to generate Retail self-service packages](build-pipeline.md#set-up-a-build-pipeline-in-azure-devops-to-generate-retail-self-service-packages).
 
 Using a Secure File task is the recommended approach for Universal Windows Platform (UWP) app signing. For more information about package signing, see [Configure package signing](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing). This process is shown in the following image.
 
@@ -90,7 +90,7 @@ Download the [DownloadFile task](/visualstudio/msbuild/downloadfile-task) and ad
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
     ```
  
-For details about how to get the thumbprint for a certificate, see [retrieve a certificate's thumbprint](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
+For details about how to get the thumbprint for a certificate, see [retrieve a certificate's thumbprint](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
 
  
 ## Download or generate a certificate to sign the MPOS app manually using msbuild in SDK
