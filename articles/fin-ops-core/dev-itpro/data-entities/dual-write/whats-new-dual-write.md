@@ -26,6 +26,27 @@ Check out the latest information about dual-write features and changes in the [r
 + [Data in Dataverse – phase 1 & 2](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/data-common-data-service-phase-1-2)
 + [Finance and Operations data in Dataverse – Phase 3](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/finance-operations-data-common-data-service-phase-3)
 
+## September 2021 release of party and global address book 
+
+The September 2021 hotfix release of the [Dual-write Party and Global Address Book Solutions 3.1.0.4](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+
+This release contains bug fixes listed in the following table.
+
+| Feature | Description |Status |
+|------|---------|-------|
+| Bug fix| Some client APIs have been deprecated and replaced with new APIs. The JavaScript code has been upgraded to use the new client APIs.| General availability |
+| Bug fix| Portals registration using email address fails when last name is not supplied. | General availability |
+| Bug fix| Unable to create a new postal address for a vendor.| General availability |
+
+### Solution details
+
+|Solution name | Has new changes? | Previous version | New version |
+|--------------|--------------|--------------|--------------|
+|Party|Yes|3.1.0.2|3.2.0.4|
+|Dynamics365GABExtended|Yes|3.1.0.2|3.2.0.4|
+|Dynamics365GABDualWriteEntityMaps|Yes|3.1.0.2|3.1.0.2|
+|Dynamics365GABPartyAnchor|Yes|3.1.0.2|3.2.0.4|
+
 ## August 2021 release
 
 The August 2021 release of [Dual-write application orchestration solution version 2.3.0.15](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
