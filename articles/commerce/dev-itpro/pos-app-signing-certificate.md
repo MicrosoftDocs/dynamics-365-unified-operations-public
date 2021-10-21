@@ -4,7 +4,7 @@
 title: Sign MPOS with a code signing certificate
 description: This topic explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
-ms.date: 12/03/2020
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -87,7 +87,7 @@ Download the [DownloadFile task](/visualstudio/msbuild/downloadfile-task) and ad
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
     ```
  
-    To get the thumbprint for a certificate follow the [retrieve a certificate's thumbprint](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint) document. 
+For details about how to get the thumbprint for a certificate, see [retrieve a certificate's thumbprint](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
 
  
 ## Download or generate a certificate to sign the MPOS app manually using msbuild in SDK
