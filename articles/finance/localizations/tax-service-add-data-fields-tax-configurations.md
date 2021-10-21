@@ -4,7 +4,7 @@
 title: Add data fields in tax configurations
 description: This topic explains how to customize tax configurations by adding data fields.
 author: Kai-Cloud
-ms.date: 09/18/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,11 @@ This topic explains how to customize tax configurations by using [data fields th
 ## Customize the tax data model
 
 1. In Microsoft Dynamics 365 Finance, go to **Electronic Reporting** > **Tax configurations**.
-2. In the configuration tree, select **Tax Calculation Data Model**. Then, on the Action Pane, select **Create configuration**.
+2. In the configuration tree, select **Tax Calculation Data Model**. Then, on the Action Pane, select **Create configuration**. 
+
+  > [!NOTE] 
+  > If there is no configuration provider available, create one and make it active for your tax configuration. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+  
 3. In the drop-down dialog box, select **Taxable document model derived from Name: Tax Calculation Data Model, Microsoft**, enter a name for the new tax data model, and then select **Create configuration**.
 4. Select the tax data model that you just created, and then, on the Action Pane, select **Designer**.
 5. Expand the data model tree, select **Lines**, and then select **New**.
