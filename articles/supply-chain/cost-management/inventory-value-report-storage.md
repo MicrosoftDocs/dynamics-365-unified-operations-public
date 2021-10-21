@@ -34,7 +34,7 @@ With the inventory value report, you can:
 
 ## Types of inventory value reports
 
-There are two types of inventory value reports: *Inventory value report* and *Inventory value report storage*.
+There are two types of inventory value reports: *inventory value report* and *inventory value report storage*.
 
 ### The standard inventory value report
 
@@ -48,7 +48,7 @@ When you view the report in your browser, columns and aggregate balances are dyn
 
 Report results are stored in the **Inventory value** data entity. Therefore, you can filter and export the results to a format such as comma-separated values (CSV) or Microsoft Excel format.
 
-The **Inventory value storage** report is helpful when the output contains many lines. For example, you have 50,000 items, and 300 stores have been created as warehouses. In this case, if you request inventory ending balances by item, site, and warehouse, the output will contain many lines.
+The *inventory value report storage* report is helpful when the output contains many lines. For example, you have 50,000 items, and 300 stores have been created as warehouses. In this case, if you request inventory ending balances by item, site, and warehouse, the output will contain many lines.
 
 ## Turn on the Inventory value report storage feature
 
