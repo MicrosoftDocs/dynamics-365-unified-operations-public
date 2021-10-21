@@ -37,16 +37,14 @@ This topic walks through the process of applying updates to an environment that 
 > In the next-generation infrastructure, updates are applied differently than they are applied in the current flow. *Whatever is provided in the package is applied to the environment, and it **overwrites** whatever is already present in that environment.* Therefore, you **must** create a single deployable package that contains all customizations and independent software vendor (ISV) solutions from your build environment. If the list of models in the environment differs from the list of models in in the package, you receive a warning before the update is applied. For information about how to create a single package, see [Manage third-party models and runtime packages by using source control](../dev-tools/manage-runtime-packages.md).
 
 
-## Microsoft updates
-
-To access Microsoft updates, go to the environment details page for your environment in Microsoft Dynamics Lifecycle Services (LCS). You will see a **single tile** that shows a cumulative binary update of all the application and platform fixes. To apply this update, select the package, and then select **Save Package** to save the Microsoft update to the project asset library.
-
 ## Applying Updates to Self-service Environments
 
 Self-service environments use a whole new approach to how updates are performed.  This is because of the usage of container-based image process to build the environment’s runtime.  These images are given an "Update Name” by the customer when they are applied to a Sandbox, and is shown in the Environment History of the environment.  An update image is comprised of three parts:
-1.	**Microsoft Binaries**.  These are released by Microsoft on a regular basis and include new Platform and Application software updates.  
+1.	**Microsoft Binaries**.  These are released by Microsoft on a regular basis and include new Platform and Application software updates.  These are available from the environment details page for your environment in Microsoft Dynamics Lifecycle Services (LCS). You will see a **single tile** that shows a cumulative binary update of all the application and platform fixes. To apply this update, select the package, and then select **Save Package** to save the Microsoft update to the project asset library.
 2.	**AOT Deployable Package**.  These are an All-in-one package that is the sum of all of the custom code that the customer wishes to apply to their environment.
 3.	An **Update Name** provided by the customer in Lifecycle Services.
+ 
+<img src="/media/SelfServiceUpdate.png" width=300px />
  
 The combination of these binaries is the basis for an image of which is used to create an instance of an Application Object Server or AOS.  By giving this image an Update Name customers can provide a meaningful name for what the update contains.
 
