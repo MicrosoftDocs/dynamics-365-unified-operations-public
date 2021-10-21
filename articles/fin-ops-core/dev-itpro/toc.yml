@@ -34,42 +34,6 @@
         href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
       - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
         href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-    - name: Business events
-      items:
-      - name: Business events overview
-        href: business-events/home-page.md
-      - name: Application business events
-        href: business-events/app-business-events.md
-      - name: Workflow business events
-        href: business-events/business-events-workflow.md
-      - name: Batch business events
-        href: business-events/system-business-events.md
-      - name: Alerts as business events
-        href: business-events/alerts-business-events.md
-      - name: Business events in Microsoft Flow
-        href: business-events/business-events-flow.md
-      - name: Business events developer documentation
-        href: business-events/business-events-dev-doc.md
-      - name: Troubleshoot business events
-        href: business-events/troubleshooting.md
-      - name: Use cases for business events
-        href: business-events/potential-use-cases.md
-      - name: Tutorials
-        items: 
-        - name: Business events and Microsoft Flow
-          href: business-events/how-to/how-to-flow.md
-        - name: Business events and Azure Event Grid
-          href: business-events/how-to/how-to-eventgrid.md
-        - name: Business events and Azure Service Bus
-          href: business-events/how-to/how-to-servicebus.md
-        - name: Business events and workflow approvals
-          href: business-events/how-to/how-to-workflow.md
-        - name: Business events and Microsoft Forms Pro 
-          href: business-events/how-to/FormsPro.md
-        - name: Business events and Azure Event Hubs
-          href: business-events/how-to/event-hub.md 
-        - name: Business events in financial period close
-          href: business-events/how-to/period-close.md
     - name: Continuous delivery
       items:
       - name: Continuous delivery home page
@@ -1040,6 +1004,10 @@
       items:
       - name: Microsoft Power Platform integration with Finance and Operations
         href: power-platform/overview.md
+      - name: Enabling the Power Platform integration
+        href: power-platform/enable-power-platform-integration.md
+      - name: Authentication and authorization
+        href: power-platform/authentication-and-authorization.md
       - name: Dual-write
         items: 
         - name: Dual-write home page
@@ -1188,12 +1156,52 @@
           href: power-platform/entity-modeling.md
         - name: Application lifecycle management
           href: power-platform/application-lifecycle-management.md
-        - name: Finance and Operations and Dataverse admin reference
+        - name: Configure Dataverse virtual entities
           href: power-platform/admin-reference.md
+        - name: Enable Dataverse virtual entities
+          href: power-platform/enable-virtual-entities.md
         - name: Power Apps portals with Finance and Operations
           href: power-platform/power-portal-reference.md
         - name: Finance and Operations virtual entities FAQ
           href: power-platform/faq.md
+      - name: Business events
+        items:
+        - name: Business events overview
+          href: business-events/home-page.md
+        - name: Application business events
+          href: business-events/app-business-events.md
+        - name: Workflow business events
+          href: business-events/business-events-workflow.md
+        - name: Batch business events
+          href: business-events/system-business-events.md
+        - name: Alerts as business events
+          href: business-events/alerts-business-events.md
+        - name: Data events
+          href: business-events/data-events.md
+        - name: Business events in Power Automate
+          href: business-events/business-events-flow.md
+        - name: Business events developer documentation
+          href: business-events/business-events-dev-doc.md
+        - name: Troubleshoot business events
+          href: business-events/troubleshooting.md
+        - name: Use cases for business events
+          href: business-events/potential-use-cases.md
+        - name: Tutorials
+          items: 
+          - name: Business events and Power Automate
+            href: business-events/how-to/how-to-flow.md
+          - name: Business events and Azure Event Grid
+            href: business-events/how-to/how-to-eventgrid.md
+          - name: Business events and Azure Service Bus
+            href: business-events/how-to/how-to-servicebus.md
+          - name: Business events and workflow approvals
+            href: business-events/how-to/how-to-workflow.md
+          - name: Business events and Microsoft Forms Pro 
+            href: business-events/how-to/FormsPro.md
+          - name: Business events and Azure Event Hubs
+            href: business-events/how-to/event-hub.md 
+          - name: Business events in financial period close
+            href: business-events/how-to/period-close.md          
       - name: Add-ins
         items:
         - name: Add-ins overview
