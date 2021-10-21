@@ -90,6 +90,9 @@ Download the [DownloadFile task](/visualstudio/msbuild/downloadfile-task) and ad
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
     ```
  
+For details about how to get the thumbprint for a certificate, see [retrieve a certificate's thumbprint](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
+
+ 
 ## Download or generate a certificate to sign the MPOS app manually using msbuild in SDK
 
 If a downloaded or generated certificate is used to sign the MPOS app, then the update the **ModernPOSPackageCertificateKeyFile** node in the **BuildTools\\Customization.settings** file to point to the pfx file location (**$(SdkReferencesPath)\\appxsignkey.pfx**). For example:
