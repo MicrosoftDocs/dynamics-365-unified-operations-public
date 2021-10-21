@@ -2696,6 +2696,12 @@
               href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
             - name: Update certificate numbers and dates for TDS transactions
               href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+      - name: Indonesia
+        items:
+        - name: Indonesia overview
+          href: localizations/indonesia.md
+        - name: VAT declaration for Indonesia
+          href: localizations/apac-idn-ppn-declaration.md
       - name: Italy
         items:
         - name: Italy overview
