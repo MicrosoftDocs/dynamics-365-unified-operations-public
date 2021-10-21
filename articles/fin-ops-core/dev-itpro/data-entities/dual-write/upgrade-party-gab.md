@@ -111,9 +111,11 @@ The following activities are needed to prepare for the upgrade:
 
 ## Setup instructions before running the Postal Addresses ADF Template
 1)	Login to Customer Engagement apps, go to Settings -> Personalization Settings ->General Tab and perform timezone settings for the system admin account. This needs to be in UTC for updating the dates(valid from and valid to) of postal address from Finance and Operations apps. 
+
 ![postal addresses ADF template 1](media/ADF-1.png)
 
 2)	Go to Azure Data Factory and create the following global parameters from "Manage" tab in data factory. 
+
 ![postal addresses ADF template 2](media/ADF-2.png)
 
 |#	|Name	|Type	|Value|
@@ -121,12 +123,14 @@ The following activities are needed to prepare for the upgrade:
 |1	|PostalAddressIdPrefix|	string|	This parameter appends as prefix to newly created postal address serial number. Please provide a string which does not conflict with FO and CE postal address e.g. ADF-PAD-|
 
 3)	Once the global parameters is created, click “publish all”.
+
 ![postal addresses ADF template 3](media/ADF-3.png)
 
 
 ## Setup instructions before running the Electronic Addresses ADF Template
  
 1)	Go to Azure Data Factory and create the following global parameters from "Manage" tab in data factory. 
+
 ![postal addresses ADF template 4](media/ADF-4.png)
 
 |#	|Name	|Type	|Value|
@@ -135,6 +139,7 @@ The following activities are needed to prepare for the upgrade:
 |2	|ElectronicAddressIdPrefix|	string	|This parameter appends as prefix to newly created electronic address serial number. Please provide a string which does not conflict with FO and CE electronic address e.g. ADF-EAD-|
 
 2)	Once the global parameters is created, click “publish all”.
+
 ![postal addresses ADF template 5](media/ADF-5.png)
 
 
