@@ -25,6 +25,7 @@ ms.dyn365.ops.version: 10.0.22
 ---
 
 # Data events
+[!include[banner](../includes/banner.md)]
 
 Data events are events that are based on changes to data in Finance and Operations apps. Create, update, and delete (CUD) events can be enabled for each entity. For example, if the **Create** event is enabled for the **Purchase order headers V2** entity, an event notification is emitted every time that a new purchase order is created in the database.
 
