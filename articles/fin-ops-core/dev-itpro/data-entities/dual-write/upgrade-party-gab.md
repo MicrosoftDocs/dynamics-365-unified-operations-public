@@ -29,8 +29,8 @@ The [Microsoft Azure Data Factory template](https://aka.ms/dual-write-gab-adf) h
 
 This topic provides instructions about how to use the Data Factory templates and upgrade your data. If you don’t have any customizations, you can use the template as is. If you have customizations for **Account**, **Contact**, and **Vendor** then you must modify the template using the following instructions.
 
-![Note]
-There are special instructions to run postal address and electronic address templates. You need to run the Party template first, followed by Postal address template and then electronic address template. 
+> [!Note]
+> There are special instructions to run postal address and electronic address templates. You need to run the Party template first, followed by Postal address template and then electronic address template. 
 
 ## Prerequisites
 
@@ -111,23 +111,23 @@ The following activities are needed to prepare for the upgrade:
 
 ## Setup instructions before running the Postal Addresses ADF Template
 1)	Login to Customer Engagement apps, go to Settings -> Personalization Settings ->General Tab and perform timezone settings for the system admin account. This needs to be in UTC for updating the dates(valid from and valid to) of postal address from Finance and Operations apps. 
-<image 1>
+![postal addresses ADF template 1](media/ADF-1.png)
 
 2)	Go to Azure Data Factory and create the following global parameters from "Manage" tab in data factory. 
-<image 2>
+![postal addresses ADF template 2](media/ADF-2.png)
 
 |#	|Name	|Type	|Value|
 |---|---|---|---|
 |1	|PostalAddressIdPrefix|	string|	This parameter appends as prefix to newly created postal address serial number. Please provide a string which does not conflict with FO and CE postal address e.g. ADF-PAD-|
 
 3)	Once the global parameters is created, click “publish all”.
-<image 3>
+![postal addresses ADF template 3](media/ADF-3.png)
 
 
 ## Setup instructions before running the Electronic Addresses ADF Template
  
 1)	Go to Azure Data Factory and create the following global parameters from "Manage" tab in data factory. 
-<image 4>
+![postal addresses ADF template 4](media/ADF-4.png)
 
 |#	|Name	|Type	|Value|
 |---|---|---|---|
@@ -135,8 +135,7 @@ The following activities are needed to prepare for the upgrade:
 |2	|ElectronicAddressIdPrefix|	string	|This parameter appends as prefix to newly created electronic address serial number. Please provide a string which does not conflict with FO and CE electronic address e.g. ADF-EAD-|
 
 2)	Once the global parameters is created, click “publish all”.
-<image 5>
-  
+![postal addresses ADF template 5](media/ADF-5.png)
 
 
 ## Run the template
@@ -174,6 +173,36 @@ The following activities are needed to prepare for the upgrade:
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromPartyEntity: Update of msdyn_party
     + msdyn_vendor Update
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor
+    + Customeraddress
+         + Create
+            + Microsoft.Dynamics.GABExtended.Plugins.CreatePartyAddress: Create of customeraddress
+         + 	Update
+            + Microsoft.Dynamics.GABExtended.Plugins.CreatePartyAddress: Update of customeraddress
+         + Delete
+            + Microsoft.Dynamics.GABExtended.Plugins.DeleteCustomerAddress: Delete of customeraddress
+    + msdyn_partypostaladdress
+         + Create
+            + Microsoft.Dynamics.GABExtended.Plugins.CreateCustomerAddress: Create of msdyn_partypostaladdress
+            + Microsoft.Dynamics.GABExtended.Plugins.PartyPostalAddress: Create of msdyn_partypostaladdress
+         + Update
+            + Microsoft.Dynamics.GABExtended.Plugins.CreateCustomerAddress: Update of msdyn_partypostaladdress
+            + Microsoft.Dynamics.GABExtended.Plugins.PartyPostalAddress: Update of msdyn_partypostaladdress
+    + msdyn_postaladdress
+         + Create
+            + Microsoft.Dynamics.GABExtended.Plugins.PostalAddress: Create of msdyn_postaladdress
+            + Microsoft.Dynamics.GABExtended.Plugins.PostalAddressPostCreate: Create of msdyn_postaladdress
+            + Microsoft.Dynamics.GABExtended.Plugins.UpdateCustomerAddress: Create of msdyn_postaladdress
+         + Update
+            + Microsoft.Dynamics.GABExtended.Plugins.PostalAddressUpdate: Update of msdyn_postaladdress
+            + Microsoft.Dynamics.GABExtended.Plugins.UpdateCustomerAddress: Update of msdyn_postaladdress
+    + msdyn_partyelectronicaddress
+         + Create
+            + Microsoft.Dynamics.GABExtended.Plugins.PartyElectronicAddressSync: Create of msdyn_partyelectronicaddress
+         + Update
+            + Microsoft.Dynamics.GABExtended.Plugins.PartyElectronicAddressSync: Update of msdyn_partyelectronicaddress
+         + Delete
+            + Microsoft.Dynamics.GABExtended.Plugins.DeletePartyElectronicAddressSync: Delete of msdyn_partyelectronicaddress
+
 
 6. In the customer engagement app, disable the following workflows:
 
@@ -199,7 +228,18 @@ The following activities are needed to prepare for the upgrade:
     + Convert the `FONewParty.csv` file into an Excel file and import the Excel file into the finance and operations app. If the csv import works for you, you can import the csv file directly. The import could take a few hours to run, depending on the data volume. For more information, see [Data import and export jobs overview](../data-import-export-job.md).
 
     ![Import the Datavers party records.](media/data-factory-import-party.png)
+    
+9. Now, in the data factory, run the Postal address and electronic address templates one after another.
 
+    ![postal addresses ADF template 7](media/ADF-7.png)
+
+    + Running postal address ADF template upserts all postal address records in CE and associates them with respective Account, Contact and Vendor records.  It also generates 3 CSV files namely ImportFONewPostalAddressLocation.csv,ImportFONewPartyPostalAddress.csv and ImportFONewPostalAddress.csv. 
+    + Running electronic address ADF template upserts all electronic addresses in CE and associates them with respective Account, Contact and Vendor records. It also generates 1 CSV file namely ImportFONewElectronicAddress.csv. 
+
+ 10.	In order to update F&O with this data, you need to convert the csv files into an Excel and [import it into F&O](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job).  [Note: In case CSV import works for you, you can import CSV file directly.] This step could take few hours to complete depending on the volume.
+    
+![postal addresses ADF template 8](media/ADF-8.png)
+    
 9. In the customer engagement apps, enable the following plug-in steps:
 
     + Account Update
@@ -212,6 +252,30 @@ The following activities are needed to prepare for the upgrade:
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromPartyEntity: Update of msdyn_party
     + msdyn_vendor Update
          + Microsoft.Dynamics.GABExtended.Plugins.UpdatePartyAttributesFromVendorEntity: Update of msdyn_vendor
+    + msdyn_partypostaladdress
+         + Create
+             + Microsoft.Dynamics.GABExtended.Plugins.CreateCustomerAddress: Create of msdyn_partypostaladdress
+             + Microsoft.Dynamics.GABExtended.Plugins.PartyPostalAddress: Create of msdyn_partypostaladdress
+         + Update
+             + Microsoft.Dynamics.GABExtended.Plugins.CreateCustomerAddress: Update of msdyn_partypostaladdress
+             + Microsoft.Dynamics.GABExtended.Plugins.PartyPostalAddress: Update of msdyn_partypostaladdress
+    + msdyn_postaladdress
+         + Create
+             + Microsoft.Dynamics.GABExtended.Plugins.PostalAddress: Create of msdyn_postaladdress
+             + Microsoft.Dynamics.GABExtended.Plugins.PostalAddressPostCreate: Create of msdyn_postaladdress
+             + Microsoft.Dynamics.GABExtended.Plugins.UpdateCustomerAddress: Create of msdyn_postaladdress
+         + Update
+             + Microsoft.Dynamics.GABExtended.Plugins.PostalAddressUpdate: Update of msdyn_postaladdress
+             + Microsoft.Dynamics.GABExtended.Plugins.UpdateCustomerAddress: Update of msdyn_postaladdress
+ 
+    + msdyn_partyelectronicaddress
+         + Create
+             + Microsoft.Dynamics.GABExtended.Plugins.PartyElectronicAddressSync: Create of msdyn_partyelectronicaddress
+         + Update
+             + Microsoft.Dynamics.GABExtended.Plugins.PartyElectronicAddressSync: Update of msdyn_partyelectronicaddress
+         + Delete
+             + Microsoft.Dynamics.GABExtended.Plugins.DeletePartyElectronicAddressSync: Delete of msdyn_partyelectronicaddress
+
 
 10. In the customer engagement apps, activate the following workflows if you deactivated them in previous steps:
 
@@ -225,6 +289,51 @@ The following activities are needed to prepare for the upgrade:
     + Update Vendors of type Person in Vendors Table
 
 11. Run the **Party**-related maps as instructed in [Party and global address book](party-gab.md).
+     
+
+## Learn more about the "Upgrade to Party-GAB" template  
+1. Steps 1 to 6 identifies the companies that are enabled for dual-write and builds a filter clause for them. 
+2. Steps  7-1 to 7-9 retrieves the data from both F&O and CE and stage the data for upgrade.   
+3. Steps 8 to 9 compare the party number for Account, Contact and Vendor between F&O and CE. The records that doesn’t have party number are skipped here. 
+4. Step 10 generate 2 csv file for party records to create in CE and F&O 
+5. FOCDSParty.csv contains all party records of both systems irrespective of company enabled for dual write 
+6. FONewParty.csv contains subset of the party which Dataverse is aware of e.g. account of type prospect. 
+7. Step 11 creates the Parties in CE. 
+8. Step 12 retrieves the Party guids from CE and stage it for associating with Account, Contact and Vendor records in the subsequent steps. 
+9. Step 13 associates the Account, Contact and Vendor records with Party guid. 
+10. Steps 14-1 to 14-3 updates the Account, Contact and Vendor records in CE with Party guid.  
+11. Steps 15-1 to 15-3 prepare "Contact for Party" records for Account, Contact and Vendor. 
+12. Steps 16-1 to 16-7 retrieves the reference data like salutations, personal character types etc. and associate them with "Contact for Party" records. 
+13. Step 17 merges the "Contact for Party" records for Account, Contact and Vendor. 
+14. Step 18 Import "Contact for Party" records into CE. 
+     
+## Learn more about the "Upgrade to Party Postal Address-GAB" template 
+1.	Steps 1-1- to 1-10 retrieve data from FO and CE both to stage data for upgrade.
+2.	Step 2 de-normalize FO postal address data by joining postal address and party postal address.
+3.	Step 3 de-dupe and merge account, contact and vendor address data from CE.
+4.	Step 4 create csv files for FO to create new address data based on account, contact and vendor addresses.
+5.	Step 5-1 create csv files for CE to create all address data based on FO and CE both. 
+6.	Step 5-2 convert csv file into FO Import format for manual import.
+1.	ImportFONewPostalAddressLocation.csv
+2.	ImportFONewPartyPostalAddress.csv
+3.	ImportFONewPostalAddress.csv
+7.	Step 6 import postal address collection data in CE.
+8.	Steps 7 retrieve postal address collection data from CE.
+9.	Step 8 create customer address data and associate postal address collection id.
+10.	Steps 9-1 to 9-2 associated party and postal address collection id to postal address and party postal address.
+11.	Steps 10-1 to 10-3 import customer address, postal address and party postal address in CE.
+
+## Learn more about the "Upgrade to Party Electronic Address-GAB" template 
+1.	Steps 1-1- to 1-5 retrieve data from FO and CE both to stage data for upgrade.
+2.	Step 2 consolidate CE electronic address from account, contact and vendor entities.
+3.	Step 3 merge primary electronic address data from CE and FO.
+4.	Step 4 create csv files.
+1.	Create new electronic address data based on account, contact and vendor addresses for FO
+2.	Create new electronic address data based on FO electronic address, account, contact and vendor addresses for CE
+5.	Step 5-1 import electronic address in CE.
+6.	Step 5-2 create csv files to update primary address for account and contact in CE.
+7.	Steps 6-1 to 6-2 import account and contact primary address in CE.
+
 
 ## Troubleshooting
 
