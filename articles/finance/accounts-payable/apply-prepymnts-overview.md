@@ -44,7 +44,7 @@ The following points describe how prepayments are applied when different purchas
 
 - **Multiple vendor invoices for multiple purchase orders** - Prepayments for purchase orders will be applied for first relevant invoice. If the prepayment amount exceeds the invoice amount, prepayment application fails. You must apply the prepayment manually. If some prepayments remain after prepayments have been applied to the first invoice, they can be applied to the invoices that follow.
 
-- The **Block follow-up automation process in case of prepayment application failure** parameter is set to No 
+- The **Block follow-up automation process in case of prepayment application failure** parameter is set to Yes 
 
    If the system tries to apply a prepayment and the application fails, the error message **"Automatic application of prepayment: Failed"** will be inserted into the automation history. The invoice will remain in the list of pending vendor invoices. When the **Block follow-up automation process in case of prepayment application failure** parameter is set to Yes, the invoice will be blocked until you apply the prepayment manually. 
 
