@@ -242,7 +242,7 @@
           href: accounts-payable/auto-vendr-invc-process.md
         - name: Setup options for vendor invoice automation
           href: accounts-payable/vnd-invoice-set-up-options.md
-        - name: Apply prepayments to vendor invoices overview
+        - name: Automatically apply prepayments to vendor invoices overview
           href: accounts-payable/apply-prepymnts-overview.md
         - name: Generate invoice lines when importing vendor invoices
           href: accounts-payable/auto-create-invc-lines-at-import.md
