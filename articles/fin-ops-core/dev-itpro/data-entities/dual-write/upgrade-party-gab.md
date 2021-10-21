@@ -17,12 +17,20 @@ ms.search.validFrom: 2021-03-31
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-The [Microsoft Azure Data Factory template](https://aka.ms/dual-write-gab-adf) helps you upgrade existing **Account**, **Contact**, and **Vendor** table data in dual-write to the party and global address book model. The template reconciles the data from both finance and operations apps and customer engagement applications. At the end of the process, **Party** and **Contact** fields for **Party** records will be created and associated with **Account**, **Contact**, and **Vendor** records in customer engagement applications. A .csv file (`FONewParty.csv`) is generated to create new **Party** records inside the finance and operations app. This topic provides instructions about how to use the Data Factory template and upgrade your data.
+The [Microsoft Azure Data Factory template](https://aka.ms/dual-write-gab-adf) helps you upgrade existing **Account**, **Contact**, and **Vendor** table data along with postal and electronic addresses in dual-write to the party and global address book model. There are 3 ADF templates provided that helps to reconcile the data from both finance and operations apps and customer engagement applications. At the end of the process, **Party**, **Contacts**, **postal addresses** and **electronic addresses** fields for **Party** records will be created and associated with **Account**, **Contact**, and **Vendor** records in customer engagement applications. Following .csv files are generated:
 
-If you don’t have any customizations, you can use the template as is. If you have customizations for **Account**, **Contact**, and **Vendor** then you must modify the template using the following instructions.
+| File name | Purpose |
+|---|---|
+|FONewParty.csv| Helps to create new **Party** records inside the finance and operations app|
+|ImportFONewPostalAddressLocation.csv| Helps to create new **Postal Address Location** records inside the finance and operations app|
+|ImportFONewPartyPostalAddress.csv| Helps to create new **Party Postal address** records inside the finance and operations app|
+|ImportFONewPostalAddress.csv| Helps to create new **Postal Address** records inside the finance and operations app|
+|ImportFONewElectronicAddress.csv| Helps to create new **Electronic Address** records inside the finance and operations app|
 
-> [!NOTE]
-> The template only upgrades the **Party** data. In a future release, postal and electronic addresses will be included.
+This topic provides instructions about how to use the Data Factory templates and upgrade your data. If you don’t have any customizations, you can use the template as is. If you have customizations for **Account**, **Contact**, and **Vendor** then you must modify the template using the following instructions.
+
+![Note]
+There are special instructions to run postal address and electronic address templates. You need to run the Party template first, followed by Postal address template and then electronic address template. 
 
 ## Prerequisites
 
@@ -43,7 +51,7 @@ The following activities are needed to prepare for the upgrade:
 
 ## Deployment
 
-1. Download the template from [Dynamics-365-FastTrack-Implementation-Assets](https://aka.ms/dual-write-gab-adf).
+1. Download the templates from [Dynamics-365-FastTrack-Implementation-Assets](https://aka.ms/dual-write-gab-adf).
 
 2. Sign in to [Microsoft Azure](https://portal.azure.com/).
 
@@ -99,6 +107,37 @@ The following activities are needed to prepare for the upgrade:
     User name |
     Password or Azure Key Vault | Password
     Password |
+
+
+## Setup instructions before running the Postal Addresses ADF Template
+1)	Login to Customer Engagement apps, go to Settings -> Personalization Settings ->General Tab and perform timezone settings for the system admin account. This needs to be in UTC for updating the dates(valid from and valid to) of postal address from Finance and Operations apps. 
+<image 1>
+
+2)	Go to Azure Data Factory and create the following global parameters from "Manage" tab in data factory. 
+<image 2>
+
+|#	|Name	|Type	|Value|
+|---|---|---|---|
+|1	|PostalAddressIdPrefix|	string|	This parameter appends as prefix to newly created postal address serial number. Please provide a string which does not conflict with FO and CE postal address e.g. ADF-PAD-|
+
+3)	Once the global parameters is created, click “publish all”.
+<image 3>
+
+
+## Setup instructions before running the Electronic Addresses ADF Template
+ 
+1)	Go to Azure Data Factory and create the following global parameters from "Manage" tab in data factory. 
+<image 4>
+
+|#	|Name	|Type	|Value|
+|---|---|---|---|
+|1	|IsFOSource|	bool|	This parameter determines which primary system address will be replaced. If the value is true, FO primary addresses replace the primary addresses in CE for the conflicted ones and vice versa|
+|2	|ElectronicAddressIdPrefix|	string	|This parameter appends as prefix to newly created electronic address serial number. Please provide a string which does not conflict with FO and CE electronic address e.g. ADF-EAD-|
+
+2)	Once the global parameters is created, click “publish all”.
+<image 5>
+  
+
 
 ## Run the template
 
