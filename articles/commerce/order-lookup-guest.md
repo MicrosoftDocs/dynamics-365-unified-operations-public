@@ -70,6 +70,18 @@ After you change the value of the **Include personal data in guest order lookup*
 
 The order lookup module in the Commerce module library is used to render the form that guest users use to look up orders. The order lookup module can be included in the body slot of any page that doesn't require customer sign-in. For information about how to configure the module, see [Order lookup module](order-lookup-module.md).
 
+## Configure the order details page
+
+In order for guest users to be able to view their order details, the order details page on your e-commerce site must be configured to not require sign in. To turn off sign in for your order details page, open the page in site builder, click on the **Default page (required)** slot in the tree view and uncheck the **Requires sign in?** checkbox.
+
+## Add a link in transactional emails to order details
+
+You can provide customers with a link or button in order-related emails that takes them to the order details page for their order. Simply create an HTML hyperlink that takes customers to the order details page on your e-commerce site and passes the order confirmation ID and customer's email address as parameters. For example:
+
+`<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
+
+
+
 ## Additional resources
 
 [Order lookup module](order-lookup-module.md)

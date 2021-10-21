@@ -67,7 +67,7 @@ The following items are required to embed processor credit card receipts into cu
 6. Select **Save**.
 7. While the receipt designer is still open, select **Select format** in the upper-left corner to open the receipt selector.
 8. In the receipt selector, select the receipt of the **Receipt** type that will be used at the POS. If you're using demo data, select receipt format **1\_p**.
-9. In the receipt designer, select the **Footer** section at the bottom of the left pane, and then drag the **Card Tender Details** receipt variable into the footer.
+9. In the receipt designer, select the **Footer** section at the bottom of the left pane, and then drag the **Card Tender Details** receipt variable into the footer. NOTE: If the credit card receipt does not print correctly, move the Card Tender Details field all the way to the left and increase the field length to at least 55 characters. 
 
     ![Card Tender Details variable in the footer of the customer's receipt.](media/customersreceipt.png)
 
