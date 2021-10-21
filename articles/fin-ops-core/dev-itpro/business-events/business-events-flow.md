@@ -63,7 +63,7 @@ To use the Finance and Operations apps business events in the **When an action i
 
 After the **When an action is performed** trigger is added to a flow in Power Automate, the following information must be provided:
 
-- **Catalog** – Select **Finance and Operations**. This catalog exposes Finance and Operations apps business events as a catalog Dataverse business events.
+- **Catalog** – Select **Finance and Operations**. This exposes Finance and Operations business events as a Dataverse business events catalog.
 - **Category** – Select the category of the desired business event. The list of unique business event categories in the business event catalog in Finance and Operations apps is shown.
 - **Table name** – If the action is related to a specific table, select the related table. Typically, the value will be **(none)** for Finance and Operations apps business events.
 - **Action name** – Select the action or business event that the flow should be triggered from. The drop-down list shows all synchronized business events in the selected category in the Finance and Operations apps business event catalog.
