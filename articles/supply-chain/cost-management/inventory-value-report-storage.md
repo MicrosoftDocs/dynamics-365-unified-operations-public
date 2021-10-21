@@ -73,11 +73,11 @@ Use the **Inventory value reports** page to set up the content that you want to 
 1. Expand the **General** FastTab and make the following settings:  
     - **Date interval** – Choose a pre-defined date interval. This date interval can be overridden when you run the report.
     - **Range** – Choose either *Posting date* or *Transaction Time*, depending on which value the report should use to retrieve data. <!-- KFM: This isn't clear. Please revise. -->
-    - **Dimension set** – Choose which dimension set to run the data for. For example, you might the data by *Main account*, or by *Main account + Business unit*. You can only choose a dimension set that has two dimensions or fewer. <!-- KFM: Where are these defined? Can we link to a topic with more info about how to set these up? What do we mean by "run the data"? -->
+    - **Dimension set** – Choose which set of dimensions to run the data for. For example, you might run the data by *Main account*, or by *Main account + Business unit*. You must choose a dimension set that has two or fewer dimensions. <!-- KFM: Where are these defined? Can we link to a topic with more info about how to set these up? What do we mean by "run the data"? -->
 
-1. Expand the **Columns** FastTab and make the following settings. <!-- KFM: Can we briefly introduce what these options have in common? (Eg, what type of settings are these? What aspect of the report are were configuring here?) -->
-    - **Inventory** – Set to *Yes* to reconcile the inventory value with inventory G/L accounts balance <!-- KFM: Spell out "G/L" on first use. -->.
-    - **WIP** – Set to *Yes* to reconcile the WIP value with WIP G/L accounts balance <!-- KFM: Spell out WIP. -->. When you use this option, only the physical quantities and amounts of inventory in WIP status will show in the report. Production orders that are in WIP status have been picked or reported as finished but not ended. <!-- KFM: Is it production orders or inventory that can have "WIP status" (or both)? -->
+1. Expand the **Columns** FastTab and make the following settings. <!-- KFM: Can we briefly introduce what these options have in common? (Eg, "Use these setting to control which columns will be included in the report.") -->
+    - **Inventory** – Set to *Yes* to reconcile the inventory value with inventory G/L accounts balance <!-- KFM: Spell out "G/L" on first use. Are we actually reconciling anything here, or are we just including information that we can use to reconcile later? -->.
+    - **WIP** – Set to *Yes* to reconcile the WIP value with WIP G/L accounts balance <!-- KFM: Spell out WIP. Are we actually reconciling anything here, or are we just including information that we can use to reconcile later? -->. When you use this option, only the physical quantities and amounts of inventory in WIP status will show in the report. Production orders that are in WIP status have been picked or reported as finished but not ended. <!-- KFM: Is it production orders or inventory that can have "WIP status" (or both)? -->
     - **Deferred COGS** – Set to *Yes* to display a column showing the physical quantities and amounts of inventory for the mark of Deferred COGS <!-- KFM: Spell out COGS. What do you mean by "for the mark of Deferred COGS"? -->. The report will display the financial quantities and amounts for the mark of COGS <!-- KFM: "for the mark of Deferred COGS"? -->. Deferred COGS are shown using physical quantities and amounts because they offset packing slip quantities and amounts. However, COGS are shown using financial quantities and amounts because they offset the invoice quantities and amounts.
     - **COGS** – <!-- KFM: Description needed. -->
     - **Profit and loss** – Set to *Yes* to display a column for the financial amount posted to the profit and loss accounts for inventory.
@@ -108,7 +108,7 @@ Use the **Inventory value reports** page to set up the content that you want to 
 
         If either **Resource ID** or **Resource Group** are not marked, you will only see a total inventory value based on the inventory dimensions you selected. <!-- KFM: We have four options here. Which combination of options are you referring to? -->
 
-1. Expand the **Rows** FastTab and make the following settings. <!-- KFM: Can we briefly introduce what these options have in common? (Eg, what type of settings are these? What aspect of the report are were configuring here?) -->
+1. Expand the **Rows** FastTab and make the following settings. <!-- KFM: Can we briefly introduce what these options have in common? (Eg, "Use these setting to control which rows will be included in the report.") -->
     - **Material** – <!-- KFM: Description needed. -->
     - **Labor** – <!-- KFM: Description needed. -->
     - **Indirect cost** – <!-- KFM: Description needed. -->
@@ -121,7 +121,7 @@ Use the **Inventory value reports** page to set up the content that you want to 
 
 ## New section <!-- KFM: New title is needed -->
 
-<!-- KFM: The purpose of the following information isn't clear. It seems to require a new section. I think we are describing the report output, but that should be made clear in a new introduction added here.  -->
+<!-- KFM: The purpose of the following information isn't clear. It seems to require a new section (not related to report configuration). I think we are describing the report output, but that should be made clear in a new introduction added here. Maybe we should move this to the examples topic?  -->
 
 Supply Chain Management supports the following two important concepts regarding inventory status: <!-- KFM: Maybe also describe the difference between "amount" and "quantity". -->
 
@@ -155,7 +155,7 @@ Follow these steps to generate and store an **Inventory value storage** report.
 1. On the Action Pane, select **New**.
 1. The **Inventory value** dialog opens. Make the following settings on the **Parameters** FastTab:
     - **Name** – Enter a unique name for the report
-    - **ID** – Select the [inventory value report configuration](#report-configuration) that you want to use for this report. The configuration establishes options for the columns and rows that will be included in your report. See also <!-- KFM: Add link -->.
+    - **ID** – Select the [inventory value report configuration](#report-configuration) that you want to use for this report. The configuration establishes options for the columns and rows that will be included in your report.
     - **Date interval** – Use the fields in this section to define which records are included in the report. To define the date interval, you can either select a preset range (relative to the report generation date) in the **Date interval code** field, or select specific dates in the **From date** and **To date** fields.
 1. On the **Records to include** FastTab, set up filters and constraints to define which data is included in the report. Select **Filter** to open a standard query editor dialog, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management. All of these filters will be applied to the inventory transactions but not the G/L balance <!-- KFM: Spell out "G/L" -->. Keep this in mind when setting up your filters. Otherwise, you may see a discrepancy between inventory and the G/L.
 1. On the **Run in the background** FastTab, specify how, when, and how often the report is generated. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
@@ -222,7 +222,7 @@ Use the following procedure generate a standard inventory value report:
 1. Go to **Cost management \> Inquiries and reports \> Inventory accounting - status reports \> Inventory value.**
 1. The **Inventory value report** dialog opens. Make the following settings on the **Parameters** FastTab:
     - **Name** – Enter a unique name for the report
-    - **ID** – Select the [inventory value report configuration](#report-configuration) that you want to use for this report. The configuration establishes options for the columns and rows that will be included in your report. See also <!-- KFM: Add link -->.
+    - **ID** – Select the [inventory value report configuration](#report-configuration) that you want to use for this report. The configuration establishes options for the columns and rows that will be included in your report.
     - **Date interval** – Use the fields in this section to define which records are included in the report. To define the date interval, you can either select a preset range (relative to the report generation date) in the **Date interval code** field, or select specific dates in the **From date** and **To date** fields.
 1. On the **Records to include** FastTab, set up filters and constraints to define which data is included in the report. Select **Filter** to open a standard query editor dialog, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management. <!-- KFM: Does the note for this tab in the "storage" report section also apply here? -->
 1. On the **Run in the background** FastTab, specify how, when, and how often the report is generated. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.  <!-- KFM: Which, if any, of these settings is relevant for the standard IV report? -->
