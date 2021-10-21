@@ -45,7 +45,7 @@ The creation of Finance and Operations apps users in linked Microsoft Power Plat
 
 ### Creating Microsoft Power Platform users in Finance and Operations apps
 
-Administrators can manually import Microsoft Power Platform users into Finance and Operations apps from Azure Active Directory (Azure AD). To import users from Azure AD, select **Import users** in Finance and Operations apps. For more information, see [Import new users from Azure AD](../sysadmin/tasks/create-new-users#import-new-users-from-azure-ad).
+Administrators can manually import Microsoft Power Platform users into Finance and Operations apps from Azure Active Directory (Azure AD). To import users from Azure AD, select **Import users** in Finance and Operations apps. For more information, see [Import new users from Azure AD](../sysadmin/tasks/create-new-users.md#import-new-users-from-azure-ad).
 
 ## Security model
 
