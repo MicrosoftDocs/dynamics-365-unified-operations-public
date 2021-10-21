@@ -38,7 +38,7 @@ For information about how to code sign Universal Windows app packages, see the f
 The sample in GitHub generates a self-signed test certificate during build. This certificate is for development purposes only. Do not use this development certificate for production app extension packages, it's available only to unblock development scenarios.
 
 > [!WARNING]
-> The sample script included in GitHub to generate the test certificate will work only with a domain account. If you are not using a domain account, the build will fail. If you are running a non-domain account, generate or include your own certificate in the <PackageCertificateKeyFile> section.
+> The sample script included in GitHub to generate the test certificate will work only with a domain account. If you are not using a domain account, the build will fail. If you are running a non-domain account, generate or include your own certificate in the "PackageCertificateKeyFile" section.
 
 The test certificate that is generated will be available in the project's intermediate output directory.
 
