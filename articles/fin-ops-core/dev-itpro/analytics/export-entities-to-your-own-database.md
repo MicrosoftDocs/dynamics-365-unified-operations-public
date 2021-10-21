@@ -163,9 +163,9 @@ You can create a data project that has multiple entities. You can schedule this 
 
 #### Exporting data across companies
 
-Jobs that are executed in batch can also be used to export data across companies. This requires that the **Enable all company export** option is enabled under **Data import/export framework parameters > Bring your own database**. Concurrent exports for the same entity to the BOYD database tend to cause high DTU usage and can result in data loss for incremental exports. To avoid this risk, as of version 10.0.16, all execution across companies will be sequential per company. This will also make jobs with a high number of entities and companies take longer to run.
+Jobs that are executed in batch can also be used to export data across companies. This requires that the **Enable all company export** option is enabled under **Data import/export framework parameters > Bring your own database**. Concurrent exports for the same entity to the BOYD database may cause high DTU usage and can result in data loss for incremental exports. To avoid this risk, starting in version 10.0.16, all execution across companies will be sequential per company. This means that jobs with a high number of entities and companies take longer to run.
 
-Things to consider that will reduce the overall export times:
+To reduce the overall export times, consider the following:
 
 - Make sure that the same data entity is not in multiple projects so that the projects can run without conflicting with each other.
 - Put entities that take a long time to run in separate projects. This will allow the other projects to run faster. 
@@ -174,15 +174,15 @@ Things to consider that will reduce the overall export times:
 
 To create a cross-company entity:
 1. Copy the current per company entity. 
-2. Change the name, the label **PublicCollectionName**, and **PubliceEntityName** of the copied entity. 
+2. Change the name of **PublicCollectionName** and **PubliceEntityName** of the copied entity. 
 3. Add a column for **DataAreaId**, if needed. 
 4. Remove the value for the **PrimaryCompanyContext** property in order to not filter by the primary company during export.
-5. Generate the staging table, build, and deploy the new entity. 
-6. Test the new entity to ensure that it works properly and performs adequately at required scale.
+5. Generate the staging table, and then build, and deploy the new entity. 
+6. Test the new entity to make sure that it works properly and performs adequately at required scale.
 7. Schedule an export job in batch for the new entity, without selecting the **Export across all companies** option.
 
 > [!NOTE]
-> Adding multiple entities to an export project for BYOD must be done carefully to ensure the overall reliability of the BYOD export is not compromised. Different parameters must be taken into consideration when deciding the number of entities that are added to the same project. Some of these parameters should be the degree of complexity of the entities, data volume per entity that is expected, and the overall time for export to complete at the job level. Adding hundreds of entities must be avoided, therefore creating multiple jobs with a smaller number of entities is recommended.
+> Adding multiple entities to an export project for BYOD must be done carefully to ensure that the overall reliability of the BYOD export is not compromised. Different parameters must be taken into consideration when deciding the number of entities that are added to the same project. Some of these parameters should be the degree of complexity of the entities, data volume per entity that is expected, and the overall time for export to complete at the job level. Adding hundreds of entities must be avoided. Creating multiple jobs with a smaller number of entities is recommended.
 >
 > Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is not supported. You must use the **Export in batch** option.
 
