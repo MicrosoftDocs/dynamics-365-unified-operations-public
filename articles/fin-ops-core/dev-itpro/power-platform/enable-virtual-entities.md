@@ -55,17 +55,20 @@ You can force a refresh of a virtual entity's metadata when you expect that the 
 
 ## Reference virtual entities
 
-All virtual entities are generated in the **MicrosoftOperationsERPVE** solution, which is API managed. Items in the solution change as you make entities visible or hidden. Nevertheless, the solution is still a managed solution that you can take dependencies on. The standard Application Lifecycle Management (ALM) flow is to take a standard reference to a virtual entity from this solution with the **Add existing** option in the independent software vendor (ISV) solution. The virtual entity will be shown as a missing dependency of the solution, and it will be checked when the solution is imported. During import, if a specified virtual entity doesn't exist, it's automatically made visible. No additional work is required.
+All virtual entities are generated in the **MicrosoftOperationsERPVE** solution, which is API managed. Items in the solution change as you make entities visible or hidden. Nevertheless, the solution is still a managed solution that you can take dependencies on. 
 
-Follow these steps to consume virtual entities.
+The standard Application Lifecycle Management (ALM) flow is to take a standard reference to a virtual entity from this solution. You can do this by using the **Add existing** action in the independent software vendor (ISV) solution. The virtual entity will be shown as a missing dependency of the solution, and it will be checked when the solution is imported. During import, if a specified virtual entity doesn't exist, it's automatically made visible. No additional work is required.
 
-1. In Dataverse, follow the usual steps to create a separate solution that contains the consuming logic.
-2. Select **Entities** \> **Add Existing**, and then, in the list, select the virtual entity that you want to reference.
-3. When you're prompted to select assets to add, select any forms, views, or other elements that you want to customize, and then select **Finish**.
+Follow these steps to consume virtual entities:
 
-    You can use the development tools to modify existing elements for the virtual entity, such as forms. You can also add new forms, views, and other elements.
+1. In Dataverse, follow the usual steps to create a separate solution that contains the consuming logic. See [Create a solution](/powerapps/maker/data-platform/create-solution) in the Power Platform documentation for additional information on creating a solution.
+2. Select **Add existing** \> **Table**. 
+3. In the **Add existing tables** list, select the virtual entity that you want to reference.
+4. When you're prompted to select assets to add, select any forms, views, or other elements that you want to customize, and then select **Finish**.
 
-    ![Solution.](../media/fovesolution.png)
+You can use the development tools to modify existing elements for the virtual entity, such as forms. You can also add new forms, views, and other elements.
+
+![Solution.](../media/fovesolution.png)
 
 When the solution is exported, it will contain hard dependencies on the virtual entity that is generated in the **MicrosoftOperationsERPVE** solution.
 
