@@ -2696,6 +2696,12 @@
               href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
             - name: Update certificate numbers and dates for TDS transactions
               href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+      - name: Indonesia
+        items:
+        - name: Indonesia overview
+          href: localizations/indonesia.md
+        - name: VAT declaration for Indonesia
+          href: localizations/apac-idn-ppn-declaration.md
       - name: Italy
         items:
         - name: Italy overview
@@ -3895,6 +3901,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
             - name: AddDays
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
+            - name: ChangeTimeZone
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/finance/toc.json
             - name: DateFormat
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
             - name: DateTimeFormat
