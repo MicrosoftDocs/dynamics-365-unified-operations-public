@@ -44,6 +44,9 @@ To sign the MPOS app with a certificate, use one of these options in the **Retai
 
 ## Use a Secure File task for Universal Windows Platform app signing
 
+> [!NOTE]
+> You can also use Azure KeyVault to store the cert and use the Azure sign tool to sign the Modern POS .appx file and self-service installers. Sample pipeline scripts and document can be found [here](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/build-pipeline#set-up-a-build-pipeline-in-azure-devops-to-generate-retail-self-service-packages).
+
 Using a Secure File task is the recommended approach for Universal Windows Platform (UWP) app signing. For more information about package signing, see [Configure package signing](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing). This process is shown in the following image.
 
 ![MPOS app signing flow.](media/POSSigningFlow.png)
