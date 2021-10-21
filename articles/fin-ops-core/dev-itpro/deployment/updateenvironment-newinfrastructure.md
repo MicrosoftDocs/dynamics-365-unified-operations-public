@@ -44,7 +44,7 @@ Self-service environments use a whole new approach to how updates are performed.
 2.	**AOT Deployable Package**.  These are an All-in-one package that is the sum of all of the custom code that the customer wishes to apply to their environment.
 3.	An **Update Name** provided by the customer in Lifecycle Services.
  
-<img src="media/SelfServiceUpdate.png" width=300px />
+<img src="media/SelfServiceUpdate.png" width=600px />
  
 The combination of these binaries is the basis for an image of which is used to create an instance of an Application Object Server or AOS.  By giving this image an Update Name customers can provide a meaningful name for what the update contains.
 
