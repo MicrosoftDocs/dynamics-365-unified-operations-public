@@ -62,7 +62,7 @@ In LCS, open the environment page, and verify that the **Power Platform Integrat
 > If you previously installed the Get insights add-in, uninstall it before you complete the following procedure.
 
 > [!NOTE]
-> If you have setup data lake, Finance insights will use it, if now, Finance insights add-in will create a mandaged data lake for you.
+> If you have installed data lake add-in in LCS already, Finance insights will use it save data needed for predictions. If data lake add-in in LCS not already setup, Finance insights add-in will create a mandaged data lake for you.
 
 Follow these steps to install the Finance insights add-in.
 
