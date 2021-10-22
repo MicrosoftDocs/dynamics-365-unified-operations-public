@@ -87,6 +87,7 @@ For the specific steps, see the "Get started" documentation that is available fo
 | Norwegian electronic invoice (NO)    | <p>Customer invoice context model</p><p>Invoice model</p> |
 | Spanish electronic invoice (ES)      | <p>Customer invoice context model</p><p>Invoice model</p> |
 | PEPPOL electronic invoice            | <p>Customer invoice context model</p><p>Invoice model</p> |
+| Saudi Arabian electronic invoice (SA)| <p>Customer invoice context model</p><p>Invoice model</p> |
 
 
 ## Configure the application setup
@@ -115,6 +116,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Norwegian electronic invoice (NO)    | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
+    | Saudi Arabian electronic invoice (SA)| <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice journal</p><p>Project invoice</p> |
 
 6. For each table name you create, select and enter a context value according to the following table.
 
@@ -136,6 +138,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Norwegian electronic invoice (NO)    | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
+    | Saudi Arabian electronic invoice (SA)| <p>Sales invoice</p><p>Project invoice</p> | <p>Customer invoice context model – Customer invoice context</p><p>Customer invoice context model – Project invoice context</p> |
 
 7. For each table name and context, select and enter a business document mapping value according to the following table.
 
@@ -157,6 +160,7 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Norwegian electronic invoice (NO)    | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | Spanish electronic invoice (ES)      | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
     | PEPPOL electronic invoice            | <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
+    | Saudi Arabian electronic invoice (SA)| <p>Sales invoice</p><p>Project invoice</p> | <p>Invoice model mapping – Customer invoice</p><p>Invoice model mapping – Project invoice</p> |
 
 
 ## Country-specific configuration of application setup
@@ -210,6 +214,8 @@ For the specific steps, see the "Get started" documentation that is available fo
     | Norwegian electronic invoice (NO)                     | Norway          |
     | PEPPOL electronic invoice                             | Global          |
     | Spanish electronic invoice (ES)                       | Spain           |
+    | Saudi Arabian electronic invoice (SA)                 | Saudi Arabia    |
+    
 
 4. Select **Save**.
 
