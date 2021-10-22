@@ -30,13 +30,13 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-Finance insights provides configurable and extensible models to help you accurately and intelligently predict your company's cash flow, predict when you will receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent machine learning models. When these new capabilities are combined with automation in vendor payments and collections, they provide a rich and intelligent financial system that drives decision making and helps you take action to respond effectively to current and anticipated business challenges.
+Finance insights provides configurable and extensible models to help you intelligently predict your company's cash flow, predict when you will receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent machine learning models. When these new capabilities are combined with automation in vendor payments and collections, they provide a rich and intelligent financial system that drives decision making and helps you take action to respond effectively to current and anticipated business challenges.
 
 > [!NOTE]
-> Finance insights preview is available for deployment in the United States of America, Canada, United Kingdom, Europe, Asia Pacific, Australia and New Zealand. Microsoft is incrementally adding support for more regions. To enable Finance insights on production environments, [Export to Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) capabilities should be enabled on the production environment first.
+> Finance insights preview is available for deployment in the United States of America, Canada, United Kingdom, Europe, Asia Pacific, Japan, Australia and New Zealand. Microsoft is incrementally adding support for more regions.
 
 > [!NOTE]
-> This functionality is being offered as a set of preview features. As a preview feature, you should not use the resulting machine learning models to drive or influence your business decisions or budgeting proposals. Your use of this feature is governed by [Supplemental Terms of Use](https://go.microsoft.com/fwlink/?linkid=2105274).
+> SHIVAM TO ADD UPDATED TEXT FROM ANNE.
 
 ## Prerequisites
 
@@ -56,24 +56,13 @@ This document applies to version 10.0.11 of Finance and Operations apps (Platfor
 
 ### Historical data requirements
 
-At least one year's worth of customer invoices is required to correctly train the machine learning model that is used for the Customer payment predictions feature.
-
-### Role and permission requirements
-
-Changes will be made to Microsoft Dynamics 365 Finance, Microsoft Dynamics Lifecycle Services (LCS), Power Apps, and Azure. Correct permissions are required across these environments. Here are some examples of the changes that will be made:
-
-- A new environment will be created in Microsoft Power Platform.
-- A storage account, key vault, and application will be created in Azure.
-- The Active Directory tenant administrator will have to authorize the AI Builder application to access the data lake.
-- The feature will be turned on in Dynamics 365.
-
-Familiarity with the process of creating and managing resources in Azure, Microsoft Dataverse, and LCS will be helpful as you complete this process.
+At least one year's worth of customer invoices is required to correctly train the machine learning model that is used for the Customer payment predictions feature. 
+Three years of historical data is recommended for cash flow forecasts.
+Three yeard of historical budget and/or actuals are recommended for intelligent budget proposals.
 
 ## Configure Finance insights
 
-You must complete some configuration steps before you can use Finance insights. For more information about how to configure Finance insights, see:
-  - For versions up to 10.0.19: [Configuration for Finance insights (preview) - versions up to 10.0.19](configure-for-fin-insites.md).
-  - For versions 10.0.20 and beyond: [Configuration for Finance Insights (preview) - versions 10.0.20 and beyond](configure-for-fin-insites-PubPrvw.md).
+You must complete configuration steps before you can use Finance insights. For more information about how to configure Finance insights, see:[Configuration for Finance insights](configure-for-fin-insites.md).
 
 ## Create a data integrator project
 
