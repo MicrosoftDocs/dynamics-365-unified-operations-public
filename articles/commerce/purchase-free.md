@@ -51,10 +51,4 @@ The example below shows an online store functionality profile associated to an o
 
 [Module library overview](starter-kit-overview.md)
 
-[Search results module](search-result-module.md)
-
-[Buy box module](add-buy-box.md)
-
-[Configure product dimension values to appear as swatches](./dev-itpro/dimensions-swatch.md)
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
