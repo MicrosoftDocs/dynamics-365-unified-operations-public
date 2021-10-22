@@ -141,10 +141,21 @@ Similarly, the invoice type can be defined for Free text invoices.
 
 ## Configure printable invoice layouts
 
+### Enable specific invoice layouts for Saudi Arabia 
+
 1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
 2. Click on **Print management**.
 3. Select **Customer invoice** report and refer to **SalesInvoice.Report_SA** layout in the **Report format** field.
 4. Select **Free text invoice** report and refer to **FreeTextInvoice.Report_SA** layout in the **Report format** field.
+
+### Enable VAT numbers prining on invoices 
+
+1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
+2. In **Invoice** section turn on the **Print tax exempt number on invoice** option.
+3. In **Free text nvoice** section turn on the **Print tax exempt number on invoice** option.
+4. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Form setup**.
+5. In **Invoice** section turn on the **Print tax exempt number on invoice** option.
+
 
 ## Print invoices
 
