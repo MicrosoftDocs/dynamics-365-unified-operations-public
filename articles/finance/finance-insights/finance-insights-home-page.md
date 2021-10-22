@@ -62,7 +62,7 @@ Three yeard of historical budget and/or actuals are recommended for intelligent 
 
 ## Configure Finance insights
 
-You must complete configuration steps before you can use Finance insights. For more information about how to configure Finance insights, see:[Configuration for Finance insights](configure-for-fin-insites.md).
+You must complete configuration steps before you can use Finance insights. For more information about how to configure Finance insights, see: [Configuration for Finance insights](configure-for-fin-insites.md).
 
 ## Create a data integrator project
 
