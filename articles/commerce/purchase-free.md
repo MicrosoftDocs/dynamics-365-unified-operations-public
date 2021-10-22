@@ -37,7 +37,10 @@ This topic describes the configurations needed to purchase a free item in e-comm
 In addition to setting up a product with $0 price, its required that the product is also setup with **Zero Price Valid** setting to true. This setting can be configured on Headquarters. In Headquarters, go to **Released Products by Category** and navigate to the product that you want to sell for free. On the Product form, 
 
 ## Functionality Profile for the Online Store
-In Headquarters, create a functionality profile for your online store. Navigate Retail Commerce ->
+When free transactions are processed, a payment is not required. The functionality profile for your online store should be updated to allow transactions with no payments.
+In Headquarters, create a functionality profile for your online store if you dont have one setup already. Navigate Retail Commerce -> Channel Setup - > Online Store Setup.  Create a new Funtionality Profile. To allow free transactions with no payments, set **Allow checkout with no payments** to true.  
+
+Next, navigate Retail Commerce -> Channels - > Online Stores. Open the online store for your e-commerce site and associate it with the functionality profile that was created. 
 
 
 
