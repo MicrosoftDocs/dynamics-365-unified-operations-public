@@ -222,14 +222,23 @@ To import parameters, complete the following steps:
 5.	Select **OK**.
 
     Version **1.1.2** of the ER format now has the same application-specific parameters that you originally configured for version **1.1.1**.
-    
-    Note that the application-specific parameters of an ER format are legal entity–dependent. To reuse the application-specific parameters that were configured for one legal entity in a different legal entity, you must export them while you're signed in to the first legal entity and then import them after you sign in to the other legal entity.
 
-    You can also use this approach to transfer an ER format related application-specific parameters that were originally configured in one instance of Finance to another instance of Finance.
+##### Applicability considerations
 
-    Be aware that if you configure application-specific parameters for one version of an ER format and import a higher version of the same format into the current Finance instance, the existing application-specific parameters won't be applied for the imported version.
-    
-    Also be aware that when you select a file for import, the structure of the application-specific parameters in that file is compared with the structure of the corresponding data source of the **Lookup** type in the ER format that is selected for import. The import is done when the structure of each application-specific parameter matches the structure of the corresponding data source in the ER format that is selected for import. If the structures don't match, you receive a warning message that states that the import can't be done. If you force the import to be done, the existing application-specific parameters for the selected ER format will be cleaned up, and you must set them up from the beginning.
+Note that the application-specific parameters of an ER format are legal entity–dependent. To reuse the application-specific parameters that were configured for one legal entity in a different legal entity, you must export them while you're signed in to the first legal entity and then import them after you sign in to the other legal entity.
+
+You can also use this export-import approach to transfer an ER format related application-specific parameters that were originally configured in one instance of Finance to another instance of Finance.
+
+Be aware that if you configure application-specific parameters for one version of an ER format and import a higher version of the same format into the current Finance instance, the existing application-specific parameters won't be applied for the imported version unless you use the described [below](er-app-specific-parameters-set-up.md#re-use-existing-parameters) **Use application specific parameters from previous versions of ER formats** feature.
+
+Also be aware that when you select a file for import, the structure of the application-specific parameters in that file is compared with the structure of the corresponding data sources of the **Lookup** type in the ER format that is selected for import. By default, the import is only done when the structure of each application-specific parameter matches the structure of the corresponding data source in the ER format that is selected for import. If the structures don't match, you receive a warning message that states that the import can't be done. If you force the import to be done, the existing application-specific parameters for the selected ER format will be cleaned up, and you must set them up from the beginning. Starting in Dynamics 365 Finance version 10.0.23, you can change this default behavior. You can enable the **Align ER application specific parameters while importing** feature in the **Feature management** workspace to avoid such warning messages. When this feature is enabled and you import application-specific parameters the structure of which differs from the structure of the corresponding data sources in the target ER format that is selected for import, this import will be succeeded in the following cases:
+
+- When, comparing with the structure of the imported file, the structure of the target ER format has been changed by adding some new condition columns to any of existing data sources of the **Lookup** type. When the import is done, the application-specific parameters are updated and values of every added condition column in all imported records of application-specific parameters are initialized by the default value for the [data type](er-formula-supported-data-types-primitive.md) of this column.
+- When, comparing with the structure of the imported file, the structure of the target ER format has been changed by removing some condition columns from any of existing data sources of the **Lookup** type. When the import is done, the application-specific parameters are updated and values of every removed condition column in all imported records of application-specific parameters are deleted.
+- When, comparing with the structure of the imported file, the structure of the target ER format has been changed by adding new data sources of the **Lookup** type. When the import is done, the application-specific parameters are appended by the added lookups.
+- When, comparing with the structure of the imported file, the structure of the target ER format has been changed by removing some of the existing data sources of the **Lookup** type. When the import is done, all artifacts that are related to the data sources of the **Lookup** type that were removed from the target ER format are deleted from the imported application-specific parameters.
+
+When the import is done, in addition the described above modifications the state of the imported application-specific parameters is changed to the **In progress** value. A warning is thrown in such case informing user that the automatically adjusted application-specific parameters must be manually edited.
 
 ### Re-use existing parameters
 
