@@ -30,7 +30,14 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the configurations needed to purchase a free item in e-commerce. In addition to setting up a product with $0 price, its required that the product is also setup with Key in Value 
+This topic describes the configurations needed to purchase a free item in e-commerce. 
+
+## Zero Price Valid
+
+In addition to setting up a product with $0 price, its required that the product is also setup with **Zero Price Valid** setting to true. This setting can be configured on Headquarters. In Headquarters, go to **Released Products by Category** and navigate to the product that you want to sell for free. On the Product form, 
+
+## Functionality Profile for the Online Store
+In Headquarters, create a functionality profile for your online store. Navigate Retail Commerce ->
 
 
 
