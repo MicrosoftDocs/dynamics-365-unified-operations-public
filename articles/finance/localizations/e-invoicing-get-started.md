@@ -253,6 +253,7 @@ For the specific steps, see the "Get started" documentation that is available fo
 - [Get started with Electronic invoicing for Mexico](e-invoicing-mex-get-started.md)
 - [Get started with Electronic invoicing for Italy](e-invoicing-ita-get-started.md)
 - [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
+- [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
