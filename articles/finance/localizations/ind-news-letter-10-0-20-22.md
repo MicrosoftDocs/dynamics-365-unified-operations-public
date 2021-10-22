@@ -4,7 +4,7 @@
 title: What's new or changed for the Indian GST localization in 10.0.20-10.0.22
 description: This topic describes new or changed functionality for Indian Goods and Services Tax (GST) features in Microsoft Dynamics 365 Finance versions 10.0.20 through 10.0.22.
 author: prabhatb
-ms.date: 10/20/2021
+ms.date: 10/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,28 +45,15 @@ This topic provides a summary of the new features and critical bug fixes that we
 
 ### 10.0.21
 
-- The **Transaction ID** and **Transaction date** are disappearing from the **Posted tax document transaction** report after the registration number is added. This is a known issue with the old personalization subsystem; however, this issue no longer exists once the Saved views feature, 
-                      which was made generally available with 10.0.13 / Platform update 37, has been enabled. Please consider enabling this feature. 
-•	IN -Invoices marked as Export Order does not come in GSTR-1 New Report : 
-      Free text invoice posted with foreign customer for service item and marked the invoice as "With the payment of tax- No". 
-      This transaction should display in GSTR-1 Govt. offline tool under the export sheet and flagged as " WOPT " as export type. 
-•	IN- Tax is getting calculated wrongly when the purchase order was created from the sales order. 
-                   The User must Clear PO's customer location and update its vendor location after the tax information is copied from SO. 
-•	IN-Project sales order is created from Item requirement observed in Project invoice proposal tax is getting wrongly computed for partial sales order 
-                   The assessable value would be derived based on the value on the packing slip and tax would be calculated accordingly. 
-•	IN- Issue in GST Settlement Process, Reversed GST entries is not visible in Tax Adjustment Form:  
-                    After this fix, the reversed GST entries will be included in the settlement process. 
-•	IN-system is not generating credit note number sequence when the tax rate is zero for free text invoice  
-                    The system will generate a credit note number sequence when a free text invoice is posted with a negative value with a zero tax rate. 
-•	IN- Balancing error while reversing the check 
-                   The issue is due to the missing default dimension in vendor transactions of withholding tax. The issue is fixed by adding the default dimension 
-                   to the vendor transactions of withholding tax. 
-•	IN General Journal reversal not showing TCS amount on the vendor transaction page 
-                   After this fix when performing General Journal reversal, the system will create a new VendTrans_W record which would display 
-                   the TCS/TDS amount on the vendor transaction page. 
-•	The system is prompting a message indicating that “Changing current field will void the tax adjustment journal and journal will be treated as a regular general journal. Do you wish to continue? 
-                   After this fix User should be able to post the withholding tax Journal successfully without any error. 
-
+- The **Transaction ID** and **Transaction date** disappear from the **Posted tax document transaction** report after the registration number is added. This is a known issue with the old personalization subsystem. This issue no longer exists however, after the feature, **Saved views**, which was made generally available in version 10.0.13, is enabled. Consider enabling this feature to resolve the issue.
+- Invoices marked as **Export Order** aren't included in the GSTR-1 report. For example, a free text invoice that is marked as **With the payment of tax- No** and is created for a foreign customer will not be included in the report. This invoice should be included in the GSTR-1 Govt. offline tool under the export sheet and flagged wtih **WOPT** as the export type. 
+- Tax isn't calculated correctly when a purchase order is created from a sales order. To work around this issue, clear the customer location on the purchase order and update the vendor location after the tax information is copied from the sales order. 
+- Tax on a project invoice is calculated incorrectly when a project sales order is created from an item requirement. After this fix, the assessable tax value is derived based on the value on the packing slip and tax would be calculated accordingly. 
+- During the settlement process, reversed GST entries aren't visible on the **Tax adjustment** page. After this fix, the reversed GST entries will be included in the settlement process. 
+- The system isn't generating a credit note number sequence when the tax rate is zero for a free text invoice. After this fix, the system will generate a credit note number sequence when a free text invoice is posted with a negative value and a zero tax rate. 
+- A balancing error occured while reversing the check because of a missing default dimension in the vendor transactions of withholding tax. This issue has been fixed by adding the default dimension to the vendor transactions of withholding tax. 
+- A general journal reversal doesn't show the TCS amount on the **Vendor transaction** page. After this fix, when you reverse the General journal, the system will create a new **VendTrans_W** record which will include the TCS/TDS amount on the **Vendor transaction** page. 
+- The meessage, **Changing current field will void the tax adjustment journal and journal will be treated as a regular general journal. Do you wish to continue?** occurs when you try to post a withholding tax journal. After this fix, you should be able to post the withholding tax journal without any error. 
 
 ### 10.0.22
 
@@ -77,19 +64,19 @@ This topic provides a summary of the new features and critical bug fixes that we
 
 ### IN-GSTR report is generated for only 30 days
 
-To provide a better performance experience, TDS and TCS inquiries will be included on the **Posted Withholding tax** inquiry page.
+When you generate a GSTR report through a batch job, the system should generate the report per the selected date range. For example, if the date range is 1 August - 31st August then batch job must generate a report for 31 days. 
 
 ### IN-BOE cancel option isn't enabled after a product receipt in canceled
 
-The upcoming release will fix an issue where the system selects the base value of a sale price at the item level but doesn't select the net amount value of the assessable value for an item-type bill of materials (BOM).
+After a product receipt for an import order is canceled, the **Cancel** button is enabled on the BOE Journal and you can cancel the posted BOE. 
 
-### GST isn't calculated in an invoice proposal for the expense journal because of an assessable value refresh issue
+### GST isn't calculated on an invoice proposal for the expense journal because of an assessable value refresh issue
 
-When you select the plus sign (**+**) to create vendor invoice lines, GST might not be applied when a vendor invoice is posted. The upcoming release will fix this issue.
+GST must be calculated on an invoice proposal for the expense journal. The assessable value for sales must also be updated and saved. 
 
-### A validation message occurs when you create an item requirement from the master project for a project with a contract listed to a customer iwth an updated TCS/TDS group
+### A validation message occurs when you create an item requirement from the master project for a project with a contract listed to a customer with an updated TCS/TDS group
 
-When a sales return order that is posted has TCS, the posted withholding tax is blank. If a sales return invoice is posted at a time other than the transaction date of the source document, the issue occurs. For example, if the source document is posted on February 25, 2021, and the sales return is invoiced today, the sales return transactions on the **Posted withholding tax** page are blank. The upcoming release will enable TCS to be posted on sales return orders.
-
+If you create a new line, and no item or category is selected and the **TCS group** field value defaults from the customer account, when you create the next new line, the message, **Item or category must be specified** will occur. The message shouldn't occur when there is no item or category selected on an existing line and you try to create a new line. 
+ 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
