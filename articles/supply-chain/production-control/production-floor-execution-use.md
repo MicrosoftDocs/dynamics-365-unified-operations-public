@@ -115,7 +115,7 @@ When a worker completes or partially completes a job, they can report good quant
 
 ## Reporting good quantities on batch orders that have co-products and by-products
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] <!--KFM: GA with 10.0.23 -->
 
 Workers can use the production floor execution interface to report progress on batch orders. This reporting includes reporting on co-products and by-products.
 

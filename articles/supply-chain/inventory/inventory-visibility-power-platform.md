@@ -59,8 +59,6 @@ To post an on-hand query, enter the query in the request body. Use the pattern t
 
 ### Reservation posting
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Use the **Reservation Posting** tab to post a reservation request. Before you can post a reservation request, you must turn on the *OnHandReservation* feature. For more information about this feature, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
 
 To post a reservation request, you must enter a value in the request body. Use the pattern that is described in [Create one reservation event](inventory-visibility-api.md#create-one-reservation-event). Then select **Post**. To view the request response details, select **Show details**. You can also get the `reservationId` value from the response details.
