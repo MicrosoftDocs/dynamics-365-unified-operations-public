@@ -46,7 +46,7 @@ The valid path of a data source of the *String* type that contains JSON data.
 
 `path`: *String*
 
-The identifier of a scalar value of JSON data. Use the slash `/` punctuation mark to separate names of related JSON nodes. Use the square bracket `[]` notation to specify the index of a particular value in a JSON array. Note that zero-based numbering is used for this index.
+The identifier of a scalar value of JSON data. Use a forward slash (/) to separate the names of related JSON nodes. Use the bracket (\[\]) notation to specify the index of a particular value in a JSON array. Note that zero-based numbering is used for this index.
 
 ## Return values
 
@@ -60,32 +60,31 @@ The **JsonField** data source contains the following data in JSON format: **{"Bu
 
 ## Example 2
 
-You can configure the **JsonField** data source of the **Calculated field** type that contains the following expression: `"{""workers"": [ {""name"": ""Adam"", ""age"": 30, ""emails"": [""AdamS@Contoso.com"", ""AdamS@Hotmail.com"" ]}, { ""name"":  ""John"", ""age"": 21, ""emails"": [""JohnS@Contoso.com"", ""JohnS@Aol.com""]}]}"`
+The **JsonField** data source of the *Calculated field* type contains the following expression: `"{""workers"": [ {""name"": ""Adam"", ""age"": 30, ""emails"": [""AdamS@Contoso.com"", ""AdamS@Hotmail.com"" ]}, { ""name"": ""John"", ""age"": 21, ""emails"": [""JohnS@Contoso.com"", ""JohnS@Aol.com""]}]}"`
 
-It is configured to return a [*String*](er-formula-supported-data-types-primitive.md#string) value that represents the following data in JSON format:
+This expression configured to return a [*String*](er-formula-supported-data-types-primitive.md#string) value that represents the following data in JSON format.
 
 ```json
 {
-  "workers": [
-    {
-      "name": "Adam",
-      "age": 30,
-      "emails": [ "AdamS@Contoso.com", "AdamS@Hotmail.com" ]
-    },
-    {
-      "name":  "John",
-      "age": 21,
-      "emails": [ "JohnS@Contoso.com", "JohnS@Aol.com" ]
-    }
-  ]
+    "workers": [
+        {
+            "name": "Adam",
+            "age": 30,
+            "emails": [ "AdamS@Contoso.com", "AdamS@Hotmail.com" ]
+        },
+        {
+            "name": "John",
+            "age": 21,
+            "emails": [ "JohnS@Contoso.com", "JohnS@Aol.com" ]
+        }
+    ]
 }
 ```
 
-In this case, the expression `JSONVALUE(json, "workers/[1]/emails/[0]")` returns the following value of the *String* data type: **JohnS@Contoso.com**.
+In this case, the expression `JSONVALUE(json, "workers/[1]/emails/[0]")` returns the following value of the *String* data type: `JohnS@Contoso.com`.
 
 ## Additional resources
 
 [Text functions](er-functions-category-text.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
