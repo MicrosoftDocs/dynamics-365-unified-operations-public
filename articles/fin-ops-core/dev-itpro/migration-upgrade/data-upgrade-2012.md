@@ -42,9 +42,6 @@ Before you run this process in a shared sandbox environment, we recommend that y
 
 We strongly recommend that you run the [Upgrade analyzer](upgrade-analyzer-tool.md) and respond to the issues it identifies before running data upgrade - this will help ensure that your data upgrade is quicker and easier.
 
-> [!NOTE]
-> It's very important that you install the latest version of SQL Server Management Studio before you start this process: [Download SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms). 
-
 ## End-to-end data upgrade process
 
 ![Data upgrade process.](media/endToEndDataUpgradeProcess.png)

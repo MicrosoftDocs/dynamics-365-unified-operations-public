@@ -101,6 +101,10 @@ Here is the list of requirements and conditions of operation for a database refr
 
 ## Known issues
 
+### Restore fails if the Sanddbox customizations are incompatible with Production data
+
+If a customization is added to the Sandbox successfully, meaning the customer's AOT Deployable Package successfully installs via LCS, that does not mean that it will still succeed with Production data.  As an example, a customer could add a unique index on Vendor Name to the VendTable table.  This could install successfully if there are no duplicate Vendor Names in the Sandbox.  However, as we bring in the Production database as part of the restore, it could fail if there are duplicates in that dataset that is inbound to the Sandbox.  This is not supported and you will need to remove the customization before you can have a successful restore.
+
 ### Restore is denied for environments that run Platform update 20 or earlier
 
 The database refresh process can't currently be completed if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
