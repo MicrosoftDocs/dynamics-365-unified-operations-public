@@ -50,15 +50,15 @@ For more information about the Microsoft Dynamics 365 Translation Service, see [
     | File type | Select **User Interface**. |
     | Product name | Select a product name. If you accessed DTS from within an LCS project, this field is automatically filled in and is read-only. |
     | Product version | Select a product version. If you accessed DTS from within a LCS project, this field shows the default product version information from the project. However, you can select a different version. |
-    | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business requires that multiple target languages be translated for the same source language, you can select all of the target languages in one request. Select the target languages using the check box next to the language name. This saves time and allows you to track the status of all the target language translations in one request. The fields list all the languages that are supported for the selected product name and version. Language names that are shown in **bold** type are General Availability (GA) languages for Microsoft Dynamics products. This means that product-specific machine translation (MT) models are available in those languages and the MT model is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT model uses the general domain training. |
+    | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business requires that multiple target languages be translated for the same source language, you can select all the target languages in one request. Select each target language by using the checkbox next to the language's name. This approach helps you saves time and also lets you track the status of all the target language translations in one request. The fields list all the languages that are supported for the selected product name and version. Language names that are shown in **bold** are General Availability (GA) languages for Microsoft Dynamics products. Therefore, product-specific machine translation (MT) models are available in those languages, and the MT model is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT model uses the general domain training. |
 
-![Selecting languages.](./media/dts-target-lang.png "Selecting languages")
+    ![Selecting languages.](./media/dts-target-lang.png "Selecting languages")
 
 3. Select **Create**. Verify the request details were selected correctly and then click **Yes** to continue. 
 
 
     > [!NOTE]
-    > To take advantage of the product-specific model trained on Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
+    > To take advantage of the product-specific model that is trained on Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
     >
     > | Translation source language | Translation target language | MT model that is used |
     > |-----------------------------|-----------------------------|------------------------|
@@ -80,7 +80,7 @@ If you have XLIFF TM files from a previous UI translation request, or if you use
 
 If you created the translation request for multiple target languages, you must select which target language the TM file is for. 
 
-With the translation memory file you are providing, you have an option to decide whether you want to create a custom [MT model](translation-service-overview.md#custom-trained-mt-model) trained with it. This option may take longer time to complete the request. You must choose Yes or No to be able to continue with the TM file upload.  
+You have an option to create a custom [MT model](translation-service-overview.md#custom-trained-mt-model) that is trained with the translation memory file that you're providing. If you use this option, the request might take longer to be completed. You must select either **Yes** or **No** before you can continue with the TM file upload.  
 
 After you've finished uploading files, select **Submit** to start the translation process. 
 
