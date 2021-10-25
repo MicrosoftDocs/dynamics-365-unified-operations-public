@@ -45,7 +45,7 @@ The following illustration shows, at a high level, how the service works.
 Existing linguistic assets can be recycled only when the assets are uploaded in a zip file that contains translation memory (TM) files that use Localization Interchange File Format (XLIFF). For more information, see [Translation memory files](./use-translation-service-tm.md).
 
 ## Custom-trained MT model
-DTS uses a Microsoft Translator service and a custom translator to customize Microsoft Translator’s advanced neural machine translation for Microsoft Dynamics products. The custom-trained MT model can be used for requests as long as the source or target language is English and partners upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT model that is specific to the translation request that the XLIFF TM files are submitted for.
+DTS uses a Microsoft Translator service and a custom translator to customize Microsoft Translator's advanced neural machine translation for Microsoft Dynamics products. The custom-trained MT model can be used for requests, provided that the source or target language is English and partners upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT model that is specific to the translation request that the XLIFF TM files are submitted for.
 
 
 ## Supported products
@@ -75,17 +75,17 @@ Create a new project, or open an existing project. On the project dashboard, in 
 When you access DTS from the LCS home page and create a translation request, you can select the product that is used for the request. To add more requests that use different products, you can just change the product selection. You don't have to close the service and open a different translation project. This option is convenient when you work on multiple product translation projects.
 
 
-The following illustration shows an example of the DTS dashboard that you open from the LCS home page. This dashboard will show all requests made from the home page (outside of an LCS project) by users from your organization. 
+The following illustration shows an example of the DTS dashboard that you open from the LCS home page. This dashboard shows all requests that users from your organization have made from the home page (outside an LCS project). 
 
 ![DTS dashboard that is opened from the LCS home page.](./media/dts-home-dashboard.png "DTS dashboard that is opened from the LCS home page")
 
 Because an LCS project is always tied to a product, any translation request that you submit from a project automatically carries the product type and version information from the project. You can't select a different product for the request. 
 
-The following illustration shows an example of the DTS dashboard that you open from within an LCS project. Only the project owner and users with access to the project will be able to see these requests. Therefore, this option is useful when you work with a group of people on one product translation project in LCS. 
+The following illustration shows an example of the DTS dashboard that you open from within an LCS project. Only the project owner and users who have access to the project will be able to see these requests. Therefore, this option is useful when you work with a group of people on one product translation project in LCS. 
 
 ![DTS dashboard that is opened from within a project.](./media/dts-project-dashboard.png "DTS dashboard that is opened from within a project")
 
-In either situation, users who can view the request will have read access but must take ownership of the request in the dashboard to regenerate it.
+In both situations, users who can view the request will have read access. However, to regenerate the request, they must take ownership of it in the dashboard.
 
 ## Glossary
 
