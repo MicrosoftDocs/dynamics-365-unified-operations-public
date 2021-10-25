@@ -445,8 +445,8 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <th>Sales tax code</th>
 <th>Sales tax reporting code</th>
 <th>Description</th>
-<th>Tag name in SAF-T VAT</th>
-<th>Sign in SAF-T VAT</th>
+<th>Tag name in JPK-V7M</th>
+<th>Sign in JPK-V7M</th>
 </tr>
 </thead>
 <tbody>
@@ -476,16 +476,16 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="2">Art100</td>
+<td rowspan="2">Art100_1.4</td>
 <td>10201</td>
 <td>Taxable sales</td>
-<td>K_12</td>
+<td>K_11, K_12</td>
 <td>-</td>
 </tr>
 <tr>
 <td>10204</td>
 <td>Taxable sales credit note</td>
-<td>K_12</td>
+<td>K_11, K_12</td>
 <td>-</td>
 </tr>
 <tr>
@@ -604,25 +604,25 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td rowspan="4">ART129</td>
 <td>10701</td>
 <td>Taxable sales</td>
-<td>K_14</td>
+<td>K_13, K_14</td>
 <td>-</td>
 </tr>
 <tr>
 <td>10702</td>
 <td>Tax-free sale</td>
-<td>K_14</td>
+<td>K_13, K_14</td>
 <td>-</td>
 </tr>
 <tr>
 <td>10704</td>
 <td>Taxable sales credit note</td>
-<td>K_14</td>
+<td>K_13, K_14</td>
 <td>-</td>
 </tr>
 <tr>
 <td>10705</td>
 <td>Tax exempt sales credit note</td>
-<td>K_14</td>
+<td>K_13, K_14</td>
 <td>-</td>
 </tr>
 <tr>
@@ -776,86 +776,60 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td>K_30</td>
 <td>-</td>
 </tr>
-<tr>
-<td rowspan="4">ReverseCharge</td>
-<td>11301</td>
-<td>Taxable sales</td>
-<td>K_34</td>
-<td>-</td>
-</tr>
-<tr>
-<td>11302</td>
-<td>Sales tax payable</td>
-<td>K_35</td>
-<td>-</td>
-</tr>
-<tr>
-<td>11304</td>
-<td>Taxable sales credit note</td>
-<td>K_34</td>
-<td>-</td>
-</tr>
-<tr>
-<td>11306</td>
-<td>Sales tax on sales credit note</td>
-<td>K_35</td>
-<td>-</td>
-</tr>
-<tr>
 <td rowspan="4">FixedAssetPurch</td>
 <td>20107</td>
 <td>Taxable purchases</td>
-<td>K_43</td>
+<td>K_40</td>
 <td>+</td>
 </tr>
 <tr>
 <td>20109</td>
 <td>Sales tax receivable</td>
-<td>K_44</td>
+<td>K_41</td>
 <td>+</td>
 </tr>
 <tr>
 <td>20115</td>
 <td>Taxable purchase credit note</td>
-<td>K_43</td>
+<td>K_40</td>
 <td>+</td>
 </tr>
 <tr>
 <td>20116</td>
 <td>Sales tax on purchase credit note</td>
-<td>K_47</td>
+<td>K_44</td>
 <td>+</td>
 </tr>
 <tr>
 <td rowspan="4">GoodServPurch</td>
 <td>20207</td>
 <td>Taxable purchases</td>
-<td>K_45</td>
+<td>K_42</td>
 <td>+</td>
 </tr>
 <tr>
 <td>20209</td>
 <td>Sales tax receivable</td>
-<td>K_46</td>
+<td>K_43</td>
 <td>+</td>
 </tr>
 <tr>
 <td>20215</td>
 <td>Taxable purchase credit note</td>
-<td>K_45</td>
+<td>K_42</td>
 <td>+</td>
 </tr>
 <tr>
 <td>20216</td>
 <td>Sales tax on purchase credit note</td>
-<td>K_48</td>
+<td>K_44</td>
 <td>+</td>
 </tr>
 <tr>
 <td rowspan="2">CorrATR89b1</td>
 <td>30101</td>
 <td>Sales tax payable</td>
-<td>K_49</td>
+<td>K_46</td>
 <td>+</td>
 </tr>
 <tr>
@@ -868,14 +842,16 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td rowspan="2">CorrATR89b4</td>
 <td>30201</td>
 <td>Sales tax payable</td>
-<td>K_50</td>
+<td>K_46, K_47</td>
 <td>+</td>
 </tr>
 <tr>
 <td>30209</td>
 <td>Sales tax receivable</td>
-<td>K_50</td>
+<td>K_46, K_47</td>
 <td>+</td>
 </tr>
 </tbody>
 </table>
+
+For invoices that aren't paid within 150 days, an [**Overdue debt VAT**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-pol-sales-tax-reports#allowance-for-bad-debts) periodic task can be applied. In this case, the same reporting codes that are used for K_41 and/or K_43 can be used. The system will automatically interpret transactions for reporting in K_46 (Overdue invoice) and K_47 (Paid overdue invoice).
