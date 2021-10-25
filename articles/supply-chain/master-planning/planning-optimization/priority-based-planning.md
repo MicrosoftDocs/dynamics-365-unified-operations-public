@@ -22,6 +22,8 @@ This topic describes the priority-based planning feature of Microsoft Dynamics 3
 
 Priority-based planning lets you prioritize replenishment orders to ensure that urgent demand is prioritized over less important demand. For example, a stockout replenishment order will be prioritized over a standard refill replenishment order. The system can automatically split larger orders into separate smaller orders where order lines are grouped by priority. It can then process all high-priority orders first.
 
+To get a quick overview of this feature, see the following video: [Planning optimization support for priority-based planning in Dynamics 365 Supply Chain Management](https://youtu.be/GmMHzFETTQc).
+
 ## Turn on priority-based planning in your system
 
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
