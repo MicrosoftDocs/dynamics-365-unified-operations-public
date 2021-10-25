@@ -32,20 +32,15 @@ ms.dyn365.ops.version: AX 10.0.14
 
 This topic explains how to use the Customer payment predictions. Before you use this feature, make sure that you've completed the setup steps for it. For more information, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md).
 
-You can view customer payment predictions in the **Manage customer credit and collections** workspace and on two new list pages, **Payment predictions per transaction** and **Payment prediction per customer**.
+You can view customer payment predictions in the **Manage customer credit and collections** workspace and on two new list pages, **Transaction payment predictions** and **Customer payment predictions**.
 
 ### Manage customer credit and collections workspace
 
-The **Manage customer credit and collections** workspace includes two new tiles, **Payment prediction per transaction** and **Customers with predicted high late balances**.
+The **Manage customer credit and collections** workspace includes two new tiles, **Transaction payment predictions** and **Customer payment predictions**.
 
-- The **Payment prediction per transaction** tile shows the number of open customer transactions that have a probability of payment that is less than 50 percent in the **On time** bucket. You can select this tile to open the **Payment predictions per transaction** list page.
-- The **Customers with predicted high late balances** tile shows the number of customers for which more than half (50 percent) of the total balance is predicted to be paid late and/or very late. You can select this tile to open the **Payment prediction per customer** list page.
+### Transaction payment predictions list page
 
-[![Manage customer credit and collections workspace.](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
-
-### Payment predictions per transaction list page
-
-On the **Payment predictions per transaction** list page, you can view the probability of payment for open transactions in the **On time**, **Late**, and **Very late** buckets. For each transaction in the grid, the **On time probability** column shows the probability that the invoice will be paid on or before the due date. If the probability of an on-time payment is less than 50 percent, a red circle appears next to the percentage in the **On time probability** column to indicate the risk of late payment.
+On the **Transaction payment predictions** list page, you can view the probability of payment for open transactions in the **On time**, **Late**, and **Very late** buckets. For each transaction in the grid, the **On time probability** column shows the probability that the invoice will be paid on or before the due date. If the probability of an on-time payment is less than 50 percent, a red circle appears next to the percentage in the **On time probability** column to indicate the risk of late payment.
 
 [![Payment prediction per transaction page.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
@@ -59,9 +54,9 @@ The data in the **Top factors** section, and on the **Customer insights** and **
 
 [![Graphical indicators for payment predictions in the Related information pane.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
-### Payment prediction per customer list page
+### Customer payment predictions list page
 
-The **Payment prediction per customer** list page shows the total open balance, and the amount that is predicted to be paid in the **On time**, **Late** and **Very late** buckets.
+The **Customer payment predictions** list page shows the total open balance, and the amount that is predicted to be paid in the **On time**, **Late** and **Very late** buckets.
 
 [![Payment predictions per customer page.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
