@@ -17,8 +17,6 @@ ms.search.validFrom:
 
 [!include[banner](../includes/banner.md)]
 
-[!include[banner](../includes/preview-banner.md)]
-
 This topic describes how to set up and generate an advance value-added tax (VAT) declaration U30 for Austria in the official XML format. It also describes how to preview the VAT declaration in Microsoft Excel.
 
 To automatically generate the report, you must first create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, you must associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.

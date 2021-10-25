@@ -15,7 +15,6 @@ ms.dyn365.ops.version: 10.0.21
 # Delay tolerance (negative days)
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 The delay tolerance functionality enables Planning Optimization to consider the **Negative days** value that is set for coverage groups. It's used to extend the delay tolerance period that is applied during master planning. In this way, you can avoid creating new supply orders if existing supply will be able to cover the demand after a short delay. The purpose of the functionality is to determine whether it makes sense to create a new supply order for a given demand.
 

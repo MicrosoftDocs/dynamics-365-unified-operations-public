@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Commerce 10.0.22 (November 2021)
+title: What's new and changed in Dynamics 365 Commerce 10.0.22 (November 2021)
 description: This topic describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.22. 
 author: josaw1
 ms.date: 09/20/2021
@@ -26,10 +26,10 @@ ms.search.validFrom: 2021-09-31
 ms.dyn365.ops.version: 10.0.22
 
 ---
-# Preview features in in Dynamics 365 Commerce 10.0.22 (November 2021)
+# what's new and changed in in Dynamics 365 Commerce 10.0.22 (November 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.22. This version has a build number of 10.0.995 and is available on the following schedule:
 
@@ -44,8 +44,8 @@ The following features are included in this release. Some of the listed features
 
 | Feature area   | Feature                                                  | More information                                          |  Enabled by             |
 |----------------|----------------------------------------------------------|-----------------------------------------------------------|-------------------------|
-|  Customer management | Enable the asynchronous creation for customer addresses | [Customer management in stores](../customer-mgmt-stores.md) | Feature management |
-|  Customer orders  |  Order lookup for guest checkouts    |  [Enable order lookup for guest checkouts](../order-lookup-guest.md)<p>[Order lookup module](../order-lookup-module.md)</p> |  Feature management   |
+|  Customer management | [Site builder configuration for e-Com product search being inventory aware](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/save-customer-addresses-asynchronously-sync-async-customers) | [Customer management in stores](../customer-mgmt-stores.md) | Feature management |
+|  Customer orders  |  [Enable order lookup for guest checkouts](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/enable-order-lookup-guest-checkouts)    |  [Enable order lookup for guest checkouts](../order-lookup-guest.md)<p>[Order lookup module](../order-lookup-module.md)</p> |  Feature management   |
 |  E-commerce      |   [Geo-detection and redirection for e-commerce sites](/dynamics365-release-plan/2021wave2/commerce/dynamics365-commerce/geo-detection-redirection-e-commerce-sites) | [Set up geo detection and redirection](../geo-detection-redirection.md)<p>[Country/region picker module](../country-region-picker-module.md)</p>   |                    Site builder settings    |
 | Extensibility | Set up your own local development environment for Dynamics 365 Commerce without Lifecycle Service | [Set up your own local development environment](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.32/src/ScaleUnitSample/.vscode) | |
 | Extensibility | Develop Commerce Cloud Scale Unit (CRT and API) extension using Visual Studio Code | [Develop CSU extension using VS Code](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/tree/release/9.32/src/ScaleUnitSample/.vscode) | |

@@ -23,8 +23,8 @@ This topic explains how to enable dual-write from Microsoft Dynamics Lifecycle S
 
 You must complete the Power Platform integration as described in the following topics:
 
-+ [Power Platform Integration - Enable during environment deployment](../../power-platform/overview.md#enable-during-environment-deployment)
-+ [Power Platform integration - Set up after environment deployment](../../power-platform/overview.md#set-up-after-environment-deployment)
++ [Power Platform Integration - Enable during environment deployment](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
++ [Power Platform integration - Enable after environment deployment](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
 
 ## Set up dual-write for new Dataverse environments
 

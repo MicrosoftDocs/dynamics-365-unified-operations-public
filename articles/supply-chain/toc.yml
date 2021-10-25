@@ -74,6 +74,8 @@
           items:
           - name: What's new or changed in Supply Chain Management home page
             href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management 10.0.23
+            href: get-started/whats-new-scm-10-0-23.md
           - name: Supply Chain Management 10.0.22 (November 2021)
             href: get-started/whats-new-scm-10-0-22.md
           - name: Supply Chain Management 10.0.21 (October 2021)
@@ -1885,6 +1887,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure the global address book
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Address setup
+          href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
         - name: Address books FAQ
           href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
         - name: Configure address books
@@ -2427,18 +2431,6 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
-          - name: Set up and use the production floor execution interface
-            items:
-            - name: Configure the production floor execution interface
-              href: production-control/production-floor-execution-configure.md
-            - name: Design the production floor execution interface
-              href: production-control/production-floor-execution-tabs.md
-            - name: Set up a device to run the production floor execution interface
-              href: production-control/production-floor-execution-setup.md
-            - name: How workers use the production floor execution interface
-              href: production-control/production-floor-execution-use.md
-            - name: Style the production floor execution interface
-              href: production-control/production-floor-execution-styles.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
@@ -2645,6 +2637,18 @@
             href: production-control/consumption.md
           - name: Production posting
             href: cost-management/production-posting.md
+      - name: Set up and use the production floor execution interface
+        items:
+        - name: Configure the production floor execution interface
+          href: production-control/production-floor-execution-configure.md
+        - name: Design the production floor execution interface
+          href: production-control/production-floor-execution-tabs.md
+        - name: Set up a device to run the production floor execution interface
+          href: production-control/production-floor-execution-setup.md
+        - name: How workers use the production floor execution interface
+          href: production-control/production-floor-execution-use.md
+        - name: Style the production floor execution interface
+          href: production-control/production-floor-execution-styles.md
     - name: Rebate management
       items:
       - name: Rebate management module overview
@@ -2813,6 +2817,8 @@
         href: sales-marketing/trade-allowance.md
       - name: Create a new trade agreement
         href: sales-marketing/tasks/create-new-trade-agreement.md
+      - name: Sales history cleanup performance improvements
+        href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
     - name: Service management
       items:
       - name: Service management overview
@@ -3389,6 +3395,10 @@
             href: warehousing/configure-mobile-devices-warehouse.md
           - name: Customize step titles and instructions for the Warehouse Management mobile app
             href: warehousing/mobile-app-titles-instructions.md
+          - name: Configure promoted fields for steps in the mobile device
+            href: warehousing/warehouse-app-promoted-fields.md
+          - name: Configure detours for steps in mobile device menu items
+            href: warehousing/warehouse-app-detours.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for completing work in a purchase order
@@ -3407,6 +3417,8 @@
             href: warehousing/pick-oldest-batch.md
         - name: Global mobile device parameters
           href: warehousing/mobile-device-parameters.md
+        - name: Mobile device user accounts
+          href: warehousing/mobile-device-work-users.md
         - name: Mobile device user settings
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing
@@ -3711,6 +3723,8 @@
           href: troubleshooting/rebates/cumulating-customer-.md
       - name: Sales and marketing
         items:
+        - name: Sales update history cleanup job fails or has performance issues
+          href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
         - name: A bundle item isn't supported in an intercompany process
           href: troubleshooting/sales/bundle-item-intercompany-process.md
         - name: Can't cancel an intercompany purchase order that's linked to a sales order
@@ -3733,6 +3747,12 @@
           href: troubleshooting/transportation/reconciliation-reaso.md
       - name: Warehouse management
         items:
+        - name: Warehouse mobile app
+          items:
+          - name: Trust anchor for certification path not found when setting up app connection
+            href: troubleshooting/warehousing/certification-path-app-connection-error.md
+          - name: Trust anchor for certification path not found when updating and migrating to WMS
+            href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
         - name: Auto-reservation prompt for batch number is shown even with available inventory
           href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
         - name: Picking work can't be unblocked because of unfinished replenishment work
@@ -3743,8 +3763,6 @@
           href: troubleshooting/warehousing/cant-move-license-plate.md
         - name: Can't move inventory to a location that is license plate-controlled
           href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-        - name: Trust anchor for certification path not found when setting up app connection
-          href: troubleshooting/warehousing/certification-path-app-connection-error.md
         - name: Cluster profile can't be found
           href: troubleshooting/warehousing/cluster-profile-not-found-error.md
         - name: Delivery note correction can't be processed
@@ -3815,8 +3833,6 @@
           href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
         - name: Can't unreserve inventory on a sales order line
           href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-        - name: Trust anchor for certification path not found when updating and migrating to WMS
-          href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
         - name: You can't confirm a shipment because customer is on hold
           href: troubleshooting/warehousing/customer-is-on-hold.md
         - name: You can't confirm a shipment because load lines have quantity zero

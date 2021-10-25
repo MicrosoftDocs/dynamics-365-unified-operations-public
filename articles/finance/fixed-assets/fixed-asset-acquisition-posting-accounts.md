@@ -2,8 +2,8 @@
 # required metadata
 
 title: Fixed asset acquisition posting accounts
-description: This article explains how to set up general ledger posting accounts for acquiring assets.
-author: ShylaThompson
+description: This article explains how to set up General ledger posting accounts for acquiring assets.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 23021
 ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to set up general ledger posting accounts for acquiring assets.
+This article explains how to set up General ledger posting accounts for acquiring assets.
 
 Accounts used for posting fixed asset acquisitions may vary depending upon the method used to acquire the asset. On the Fixed asset posting profiles page, on the Ledger accounts tab, select Acquisition and Acquisition adjustment to set up fixed asset accounts to post to the ledger. 
 

@@ -32,8 +32,8 @@ ms.dyn365.ops.version: 10.0.18
 This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
 
 1. Set up power platform integration in Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
-2. Set up Dynamics 365 Finance and Microsoft Dataverse. For more information, see [Getting the solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) and [Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Set up the following entities. For more information, see [Enabling virtual entities](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#enabling-virtual-entities).
+2. Set up Dynamics 365 Finance and Microsoft Dataverse. For more information, see [Getting the virtual entity solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution) and [Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
+3. Set up the following entities. For more information, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
       - CompanyInfoEntity
       - CurrencyEntity
       - CustCustomerV3Entity

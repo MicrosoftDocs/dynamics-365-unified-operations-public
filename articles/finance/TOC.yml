@@ -74,12 +74,12 @@
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
+          - name: Finance 10.0.23 
+            href: get-started/whats-new-changed-10-0-23.md
           - name: Finance 10.0.22 (November 2021)
             href: get-started/whats-new-changed-10-0-22.md
           - name: Finance 10.0.21 (October 2021)
             href: get-started/whats-new-changed-10-0-21.md
-          - name: Finance 10.0.20 (August 2021)
-            href: get-started/whats-new-changed-10-0-20.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -240,6 +240,10 @@
           href: accounts-payable/auto-vendr-invc-process.md
         - name: Setup options for vendor invoice automation
           href: accounts-payable/vnd-invoice-set-up-options.md
+        - name: Automatically apply prepayments to vendor invoices overview
+          href: accounts-payable/apply-prepymnts-overview.md
+        - name: Generate invoice lines when importing vendor invoices
+          href: accounts-payable/auto-create-invc-lines-at-import.md
         - name: Submit invoices to the workflow system and match product receipt lines
           href: accounts-payable/submit-invoice-workflow-automatically.md
         - name: View vendor invoice automation results
@@ -272,6 +276,8 @@
           href: accounts-payable/tasks/research-resolve-exceptions.md
       - name: Vendor posting profiles
         href: accounts-payable/vendor-posting-profiles.md
+      - name: Vendor invoice dates
+        href: accounts-payable/vendor-invoice-dates.md
       - name: Foreign currency revaluation for Accounts payable and Accounts receivable
         href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
       - name: Mobile invoice approvals
@@ -1104,6 +1110,8 @@
           href: general-ledger/enable-delayed-tax-calculation.md         
         - name: Create a sales tax payment
           href: general-ledger/tasks/create-sales-tax-payment.md
+        - name: Tax settlement rounding based on customized currency decimal places
+          href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
         - name: Create sales tax transactions on documents
           href: general-ledger/tasks/create-sales-tax-transactions-documents.md
         - name: Set up ledger posting groups for sales tax
@@ -1568,6 +1576,8 @@
               href: localizations/tax-calculation-data-model-overview.md
             - name: Sales tax applicability and sales tax group determination logic
               href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+            - name: Using tax jurisdiction parameters for cash discount calculation setup
+              href: localizations/global-tax-jurisdiction-cash-discount-setup.md?toc=/dynamics365/finance/toc.json              
           - name: Calculation
             items: 
             - name: Calculate tax on prices when Prices include taxes is enabled
@@ -1594,6 +1604,10 @@
                 href: localizations/emea-nl-vat-declaration-netherlands.md
               - name: EU sales list
                 href: localizations/emea-nl-eu-sales-list.md
+            - name: Spain reporting
+              items:
+              - name: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
+                href: localizations/emea-esp-sii-spain.md
             - name: Sweden reporting
               items:
               - name: VAT declaration
@@ -1604,12 +1618,14 @@
                 href: localizations/emea-che-vat-declaration-switzerland.md
             - name: United Kingdom reporting
               items:
-              - name: Prepare for integration with MTD for VAT
-                href: localizations/emea-gbr-mtd-vat-integration.md
+              - name: VAT declaration
+                href: localizations/emea-gbr-vat-declaration.md
           - name: Enable Tax Calculation for transfer order
             items: 
             - name: Tax feature support for transfer orders
               href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+            - name: Print tax information on transfer order documents
+              href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?toc=/dynamics365/finance/toc.json
           - name: Extension
             items: 
             - name: Add data fields in tax configurations
@@ -2680,6 +2696,12 @@
               href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
             - name: Update certificate numbers and dates for TDS transactions
               href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+      - name: Indonesia
+        items:
+        - name: Indonesia overview
+          href: localizations/indonesia.md
+        - name: VAT declaration for Indonesia
+          href: localizations/apac-idn-ppn-declaration.md
       - name: Italy
         items:
         - name: Italy overview
@@ -3024,6 +3046,8 @@
           href: localizations/emea-nl-audit-file.md
         - name: VAT declaration (Netherlands)
           href: localizations/emea-nl-vat-declaration-netherlands.md
+        - name: Netherlands Intrastat
+          href: localizations/emea-nl-intrastat.md
         - name: EU sales list
           href: localizations/emea-nl-EU-sales-list.md
       - name: New Zealand
@@ -3378,6 +3402,8 @@
           href: localizations/emea-esp-fixed-asset-group-revaluation.md
         - name: Intra-community VAT
           href: localizations/emea-esp-intra-community-vat.md
+        - name: Spanish Intrastat
+          href: localizations/emea-esp-intrastat.md
         - name: One-time customers
           href: localizations/emea-esp-no-one-time-customer-for-project-contracts.md
         - name: Print checks with a Spanish layout
@@ -3462,28 +3488,26 @@
             href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
           - name: Set up sales tax groups for reverse charge VAT
             href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md      
-        - name: United Kingdom reporting
-          items:
-          - name: Making Tax Digital (MTD) for VAT
-            items: 
-            - name: Making Tax Digital (MTD) VAT return submission in the United Kingdom 
-              href: localizations/emea-gbr-mtd-vat-integration.md
-            - name: Prepare your environment to interoperate with HMRC's MTD VAT web service
-              href: localizations/emea-gbr-mtd-vat-integration-setup.md
-            - name: Checklist for Electronic messages setup for MTD VAT
-              href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-            - name: Test interoperation with the MTD VAT sandbox
-              href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-            - name: Authorize your Finance environment to interoperate with HMRC's MTD web servic
-              href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-            - name: Submit a VAT return to HMRC's MTD web service
-              href: localizations/emea-gbr-mtd-vat-integration-submission.md
-            - name: Retrieve information about VAT payments and liabilities from HMRC
-              href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
-            - name: VAT setup details for VAT declarations in the United Kingdom
-              href: localizations/emea-gbr-mtd-vat-integration-declaration.md 
-            - name: Generate a VAT declaration in paper format (VAT 100 report)
-              href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+        - name: Making Tax Digital (MTD) for VAT
+          items: 
+          - name: Making Tax Digital (MTD) VAT return submission in the United Kingdom 
+            href: localizations/emea-gbr-mtd-vat-integration.md
+          - name: Prepare your environment to interoperate with HMRC's MTD VAT web service
+            href: localizations/emea-gbr-mtd-vat-integration-setup.md
+          - name: Checklist for Electronic messages setup for MTD VAT
+            href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+          - name: Test interoperation with the MTD VAT sandbox
+            href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+          - name: Authorize your Finance environment to interoperate with HMRC's MTD web servic
+            href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+          - name: Submit a VAT return to HMRC's MTD web service
+            href: localizations/emea-gbr-mtd-vat-integration-submission.md
+          - name: Retrieve information about VAT payments and liabilities from HMRC
+            href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+          - name: VAT setup details for VAT declarations in the United Kingdom
+            href: localizations/emea-gbr-mtd-vat-integration-declaration.md 
+          - name: Generate a VAT declaration in paper format (VAT 100 report)
+            href: localizations/emea-gbr-mtd-vat-integration-vat100.md
         - name: Statistics on payment practices report
           href: localizations/emea-gbr-statistics-on-payment-practices-report.md
       - name: United States
@@ -3877,6 +3901,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
             - name: AddDays
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
+            - name: ChangeTimeZone
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/finance/toc.json
             - name: DateFormat
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
             - name: DateTimeFormat
@@ -4021,6 +4047,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/finance/toc.json
             - name: Mid
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/finance/toc.json
+            - name: NewGUID
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/finance/toc.json
             - name: NumberFormat
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
             - name: NumeralsToText
@@ -4421,6 +4449,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
           - name: Application update 10.0.21
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
+          - name: Application update 10.0.23
+            href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
         - name: Specify a custom storage location for generated documents 
           items:
           - name: Subscribe to an event to request a response from subscribing handler
@@ -4433,6 +4463,8 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: Change code to enable users to configure and use named ER destinations
           href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
+        - name: Implement a custom ER source of inbound documents
+          href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/finance/toc.json
     - name: Mobile app
       items:
       - name: Mobile app home page

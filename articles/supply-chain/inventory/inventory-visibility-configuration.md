@@ -361,16 +361,12 @@ The index lets you query the on-hand inventory in the following ways:
 
 ## <a name="reservation-configuration"></a>Reservation configuration (optional)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Reservation configuration is required if you want to use the soft reservation feature. The configuration consists of two fundamental parts:
 
 - Soft reservation mapping
 - Soft reservation hierarchy
 
 ### Soft reservation mapping
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 When you make a reservation, you might want to know whether on-hand inventory is currently available for reservation. The validation is linked to a calculated measure that represents a computation formula of a combination of physical measures.
 
@@ -441,8 +437,6 @@ Therefore, if you try to make reservations on `iv.SoftReservOrdered`, and the qu
 > When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required. The default value is `True`.
 
 ### Soft reservation hierarchy
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the product index hierarchy works for on-hand queries.
 
@@ -742,8 +736,6 @@ The following table shows the default index configuration.
 This section describes the default reservation configuration.
 
 #### Reservation mapping
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 The following table shows the default reservation mapping.
 
