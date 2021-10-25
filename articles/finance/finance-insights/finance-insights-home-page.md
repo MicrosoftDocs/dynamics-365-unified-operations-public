@@ -56,9 +56,7 @@ This document applies to version 10.0.21 of Dynamics 365 Finance, and later vers
 
 ### Historical data requirements
 
-At least one year's worth of customer invoices is required to correctly train the machine learning model that is used for the Customer payment predictions feature. 
-Three years of historical data is recommended for cash flow forecasts.
-Three yeard of historical budget and/or actuals are recommended for intelligent budget proposals.
+At least one year's worth of customer invoices is required to correctly train the machine learning model that is used for the Customer payment predictions feature. Three years of historical data is recommended for cash flow forecasts. Three years of historical budget and/or actuals are recommended for intelligent budget proposals.
 
 ## Configure Finance insights
 
@@ -75,7 +73,7 @@ When you've completed the configuration steps and set up demo data, you must tur
 ### Enable Customer payment predictions
 If you are using demo data to test customer payment predictions, you may have to import additional demo data to create your AI model successfully. 
 
-To enable Customer payment predictions, you must complete a set of steps to build a machine learning model that uses your organization's data your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid. For more information and the specific steps to complete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md). 
+To enable Customer payment predictions, you must complete a set of steps to build a machine learning model that uses your organization's data to generate predictions about when customers are likely to pay outstanding invoices, and when specific invoices are likely to be paid. For more information and the specific steps to complete, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md). 
 
 ### Enable Cash flow forecasting
 To enable Cash flow forecasting, you must complete a set of steps to build a machine learning model that uses your organization's data to generate cash flow forecasts. For more information and the specific steps to complete, see [Enable cash flow forecasting](enable-cash-flow-forecasting.md).
@@ -88,9 +86,7 @@ The Budget proposals feature uses a machine learning model along with your organ
 
 ### Using Customer payment predictions
 
-The intelligent cash flow forecasting is built on top of existing the cash flow forecasting functionality in Dynamics 365 Finance. To review the existing capability, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
-
-- To learn how Customer payment predictions can provide the information needed to proactively being collection activities, see [Use Customer payment predictions](use-customer-payment-predictions.md).
+To learn how Customer payment predictions can provide the information needed to proactively being collection activities, see [Use Customer payment predictions](use-customer-payment-predictions.md).
 - For information that can help you evaluate the effectiveness of the prediction model after you've started using the feature, see [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md).
 - For information that can help you adjust the data that is used to build the prediction and thereby improve its effectiveness, see [Improve the prediction model](improve-model.md).
 
@@ -98,7 +94,7 @@ To learn more about the results of AI prediction models, see [Results of machine
 
 ### Using Cash flow forecasts
 
-The Cash flow forecast capability can help you more accurately estimate your cash position. 
+The Cash flow forecast capability can help you more accurately estimate your cash position. The intelligent cash flow forecasting is built on top of existing the cash flow forecasting functionality in Dynamics 365 Finance. To review the existing capability, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
 
 - To learn about the new capabilities in Cash flow forecasts see [Cash flow forecast](cash-flow-forecast-intro.md).
 - For information about importing external data to include in your cashflow forecast here, see [Use external data in cash flow forecasts](external-data-in-cash-flow.md). 
@@ -111,6 +107,6 @@ For information about accelerating the creation of a budget, see [Budget proposa
 
 ## Feedback and support
 
-Please send an email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) if you are interested in providing feedback or need support.
+Please send an email to [finance insights](mailto:fiap@microsoft.com) if you are interested in providing feedback or need support.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
