@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Translation memory files
-description: This topic describes when and where translation memory files can be created, edited, and used to result in a quality translation output file.
-author: abmotgi
+title: Translate user interface files
+description: This topic explains how to use the UI translation service for Microsoft Dynamics 365 products.
+author: abmotgi 
 ms.date: 10/25/2021
 ms.topic: article
 ms.prod: 
@@ -22,98 +22,109 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: abmotgi
-ms.search.validFrom: 2018-03-27
-ms.dyn365.ops.version: AX 7.3.0
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Translation memory files
+# Translate user interface files
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Translation Service (DTS) uses a bilingual XML Localization Interchange File Format (XLIFF) file to store pairs of source languages and target languages. Because XLIFF is based on XML, you can open XLIFF files in any text editor. However, we recommend that you use XLIFF editors that are specifically designed to work with this format. For example, you can use the free Microsoft Multilingual Editor that is available in the [Multilingual App Toolkit (MAT)](https://developer.microsoft.com/windows/develop/multilingual-app-toolkit).
+This topic provides information about how to translate a user interface (UI) file for Microsoft Dynamics products or solutions.
 
-In DTS, you can obtain an XLIFF translation memory (TM) in two ways:
+For more information about the Microsoft Dynamics 365 Translation Service, see [Dynamics 365 Translation Service overview](translation-service-overview.md). For information about how to translate a documentation file, see [Translate documentation files](use-translation-service-ua.md).
 
-+ **Run the Align tool** – When you have files that were previously translated, and you also have corresponding source files, you can use the Align tool to create an XLIFF TM. For more details, see the [Creating a translation memory](#creating-a-translation-memory) section later in this topic.
-+ **Complete a translation request** – When a DTS translation request is completed, it provides the XLIFF TMs as part of the request output. You can then use the files the next time that you submit a new translation request that includes the updated source files.
+## Create a translation request
+1. In Microsoft Dynamics Lifecycle Services (LCS), on the DTS dashboard, select **Add** to create a new translation request.
 
-XLIFF files contain a series of translation units (TUs) that are extracted from the source files. The following illustration shows an example of a TU.
+    ![Add button.](./media/dts-request1.png "Add button")
 
-![XLIFF translation unit.](./media/dts-xlf.png "XLIFF translation unit")
+    You can open the DTS dashboard either from the LCS home page or from within a project. For more information, see [Accessing DTS](./translation-service-overview.md#accessing-dts).
 
-The following illustration shows the same TU (highlighted in blue) in the Multilingual Editor.
+2. Enter the required information for the request.
 
-![XLIFF translation unit in the Multilingual Editor.](./media/dts-editor3.png "XLIFF translation unit in the Multilingual Editor")
+    | Field | Description |
+    |-------|-------------|
+    | Request name | Enter a name for the request. |
+    | File type | Select **User Interface**. |
+    | Product name | Select a product name. If you accessed DTS from within an LCS project, this field is automatically filled in and is read-only. |
+    | Product version | Select a product version. If you accessed DTS from within a LCS project, this field shows the default product version information from the project. However, you can select a different version. |
+    | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business requires that multiple target languages be translated for the same source language, you can select all the target languages in one request. Select each target language by using the checkbox next to the language's name. This approach helps you saves time and also lets you track the status of all the target language translations in one request. The fields list all the languages that are supported for the selected product name and version. Language names that are shown in **bold** are General Availability (GA) languages for Microsoft Dynamics products. Therefore, product-specific machine translation (MT) models are available in those languages, and the MT model is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT model uses the general domain training. |
 
-## State
-Each translation in the XLIFF file is associated with a state value. The state value that DTS assigns to each translation depends on the way that the string is translated. When an XLIFF TM is created by using the Align tool, all translations are marked as **Translated**, because the aligned TUs are produced from known good translations, such as a previous product version.
+    ![Selecting languages.](./media/dts-target-lang.png "Selecting languages")
 
-However, when the XLIFF files are generated through a translation request, two types of state values can be used:
+3. Select **Create**. Verify the request details were selected correctly and then click **Yes** to continue. 
 
-+ **Needs Review** – The string has been machine-translated.
-+ **Translated**, **Final**, or **Signed off** – The string has been recycled. The state value is inherited from the XLIFF TM.
-
-During the post-editing process, you can immediately identify the strings that are marked as **Needs Review**. After you've finished reviewing those strings, you should mark them as **Translated**, **Final**, or **Signed off**, so that they can be used for recycling. Translations that are marked as **Needs Review** aren't included for recycling.
-
-Inherited state values for recycled strings are helpful, because you won't have to review the same string (that is, a string that has the same ID) again.
-
-## Creating a translation memory
-If you have files that were previously translated, you can recycle the translated files for a newer version of the source files by creating a TM that uses XLIFF.
-
-1. On the DTS dashboard, select the **Align** button to start the Align tool.
-
-    ![Align button.](./media/dts-align-icon.png "Align button")
 
     > [!NOTE]
-    > - The Align tool currently supports only user interface (UI) files.
-    > - To start the Align tool, you might have to explicitly allow pop-up windows in your browser.
+    > To take advantage of the product-specific model that is trained on Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
+    >
+    > | Translation source language | Translation target language | MT model that is used |
+    > |-----------------------------|-----------------------------|------------------------|
+    > | English – United States | Japanese | Product-specific trained MT model |
+    > | Japanese | English – United States | Product-specific trained MT model |
+    > | German | Japanese | Generic MT model |
 
-2. On the **Align** page, select the source language, the target language, and the files to align.
-3. Select **Align** to complete the alignment. When the alignment is completed, a message summarizes the results.
 
-![Alignment completed.](./media/dts-align1.png "Alignment completed")
+## Upload files
+Select the plus sign (**+**) in each section to open the **File upload** page.
 
-To create the best XLIFF TM, make sure that the following conditions are met:
+### Upload the files to translate (Required)
+Create one zip file that contains all the UI files in the source language that you want to translate from. The zip file can include different file types, provided that the file types are supported for the product. For more information about supported file types, see [Supported products](translation-service-overview.md#supported-products). Note that DTS doesn't change the source files that you upload. The source files are only used to create files in the corresponding target languages you requested.
 
-- Both the source file and the target file have the same number of resources.
-- The resources are in the same order in both the source file and the target file.
-- There are no empty strings. The following illustration shows examples of empty strings in the source and the target.
+### Upload XLIFF translation memory files (Optional)
+If you have XLIFF TM files from a previous UI translation request, or if you used the [Align tool](use-translation-service-tm.md) to create an XLIFF TM, create a zip file that contains all TM files before you upload them. Strings that match are then recycled to help guarantee consistency between product versions. For more information about XLIFF TMs, see [Translation memory files](use-translation-service-tm.md).
 
-    ![Empty strings.](./media/dts-align3.png "Empty strings")
+![TM upload.](./media/dts-tm-upload.png "TM upload")
 
-    Empty strings are inherited by the XLIFF TM. If a **Rebate** string in the source has an empty string in the target, it will likely be translated as an empty string if this XLIFF TM is used.
+If you created the translation request for multiple target languages, you must select which target language the TM file is for. 
 
-    ![Missing strings.](./media/dts-align4.png "Missing strings")
+You have an option to create a custom [MT model](translation-service-overview.md#custom-trained-mt-model) that is trained with the translation memory file that you're providing. If you use this option, the request might take longer to be completed. You must select either **Yes** or **No** before you can continue with the TM file upload.  
 
-Although the Align tool can resolve some of these issues, it's easier if you prevent them before you see unexpected results in the output.
+After you've finished uploading files, select **Submit** to start the translation process. 
 
-Review the aligned XLIFF file before you use it as a TM. TUs that have been reviewed should be marked as **Final** or **Signed off**, so that they aren't mistaken for unreviewed TUs.
+After you submit the request, a new request ID is created on the DTS dashboard. If you submitted the request for multiple target languages, the status of each target language is shown on a separate line that has the same request ID. If you select a line on the dashboard, the dashboard page will be extended to the right to show a summary of the request information.  
 
-## Editing an XLIFF translation memory
+To see the request status, click a request ID link on the dashboard. The **Request status** tab shows the source files list you uploaded with the summary of the request information.
 
-We recommend that you use the free Multilingual Editor, or another XLIFF editor, to review and edit the translations in the XLIFF file that DTS provides. At a minimum, you should review the translations to verify that the translation output meets your product's quality standards.
+![Request status tab.](./media/dts-request-status.png "Request status tab")
 
-When you open an XLIFF file in the Multilingual Editor, it resembles the following illustration. If you encounter an error when opening the file, ignore the message and select the **Strings** tab in the lower-left corner of the window.
+Note that the processing time depends on the number of requests that are in the DTS queue and the word count in the source files that you submit.
 
-![XLIFF file in the Multilingual Editor.](./media/dts-editor1.png "XLIFF file in the Multilingual Editor")
++ UI translation requests that don't have an XLIFF TM can be completed in a few minutes, depending on the file size.
++ If a UI translation request does have an XLIFF TM, the time that is required depends on the type of MT model:
 
-Notice that there is a circle near the beginning of each line. The color of the circle indicates the state of the translation. DTS automatically assigns these states, depending on where the string came from.
+    + Creation of a custom MT model requires two to three business days.
+    + If you're using a generic MT model, requests can be completed in a few minutes, depending on the file size.
 
-+ **Red circle** – The string was machine-translated. DTS assigns the **Needs Review** state.
+## After translation is completed
 
-    > [!NOTE]
-    > The state value that is shown might differ slightly, depending on the XLIFF editor that you're using.
+When your translation request has been processed, you will receive an email notification from DTS. You can then view the result on the **Request output** tab of the **Request details** page.
 
-+ **Yellow, green/yellow, or green circle** – The string was recycled. DTS inherited the state from the XLIFF TM that was used in the request.
+![Request output tab.](./media/dts-output.png "Request output tab")
 
-To verify the translations, you can apply a filter to show only strings that are in the **Needs Review** state.
+For UI translation requests, two types of output file are available after the translation process is completed. 
 
-![Strings in the Needs Review state.](./media/dts-editor2.png "Files in the Needs Review state")
++ **For translation review** – Download the XLIFF file to review and, as required, edit the translations. The file shows the source and target languages side by side.
++ **Translated native format** – Download this file if you don't intend to review or edit the translations. *Native format* means that the file is in the same format as the source file that you submitted.
 
-Strings that have been reviewed should be marked as **Translated**, **Final**, or **Signed off**, so that they can be used for recycling. Translations that are marked as **Needs Review** aren't included for recycling.
+Click an individual file link or the download links to download a single file, all files for one target language, or all files for all target languages in one zip for convenience.  
 
-After you've finished editing the XLIFF TM, remember to have DTS regenerate the refreshed output file in the source format. For more information about how to regenerate the file, see [Translate user interface files](./use-translation-service.md#regenerate-output-files).
+### Review and edit the translations in the XLIFF file
+We recommend that you review and edit the translations in the XLIFF file that DTS provides, to verify that the translation output meets your product's quality standards. For more information about how to edit the XLIFF file, see [Translation memory files](use-translation-service-tm.md#editing-an-xliff-translation-memory).
+
+### Regenerate output files
+When you've finished reviewing and editing the translation files in XLIFF, you must regenerate the translated native format files next. You can then apply the latest translations (that is, your edited versions of the translations) to the UI files in the target language. You can regenerate any number of files from the output files set per target language.  
+
+1. Click the **Regenerate** icon next to the target language section. The **File upload** slider will open.
+2. Zip the edited XLIFF files, and then click **Upload**. Don't change the XLIFF file name that DTS originally provided. 
+3. In the prompt, confirm the upload. 
+4. The **Request output** tab promptly refreshes the content. Expand the target language node you just regenerated to verify the **Modified** timestamp and then download the updated output files. 
+
+![Regenerated output.](./media/dts-regenerate-output.png "Regenerated output")
+
+You can repeat the regeneration process as many times as you require.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
