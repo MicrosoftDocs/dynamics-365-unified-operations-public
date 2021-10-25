@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to turn on and configure the Customer payment predictions feature in Finance insights. You turn on the feature in the **Feature management** workspace and enter configuration settings on the **Finance insights parameters** page. This topic also includes information that can help you effectively use the feature.
+This topic explains how to turn on and configure the Customer payment predictions feature in Finance insights. You turn on the feature in the **Feature management** workspace and enter configuration settings on the **Finance insights configuration** page. This topic also includes information that can help you effectively use the feature.
 
 > [!NOTE]
 > Before you complete the following steps, be sure to complete the prerequisite steps in the [Configure for Finance insights](configure-for-fin-insites.md) topic.
@@ -48,7 +48,7 @@ This topic explains how to turn on and configure the Customer payment prediction
 
     1. Go to **Credit and collections \> Setup \> Finance insights \> Customer payment predictions**.
 
-        [![Finance insights parameters page before the feature is configured.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
+        [![Finance insights configuration page before the feature is configured.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
 
     2. On the **Finance insights configuration** page, on the **Customer payment predictions** tab, select the **View the data fields used in the prediction model** link to open the **Data fields for prediction model** page. There, you can view the default list of fields that are used to create the artificial intelligence (AI) prediction model for customer payment predictions.
 
