@@ -13,7 +13,6 @@
       - name: Sign up for preview subscriptions
         href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
       - name: One Version service updates 
-        items:
         - name: One Version service updates overview
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
         - name: One Version service updates FAQ
@@ -2328,6 +2327,8 @@
           href: localizations/apac-ind-scope.md
         - name: What's new or changed for India localization
           items:
+          - name: What's new or changed in 10.0.20 - 10.0.22
+            href: llocalizations/ind-news-letter-10-0-20-22.md
           - name: What's new or changed in 10.0.15 - 10.0.19
             href: localizations/ind-news-letter-10-0-15-19.md
           - name: What's new or changed in 10.0.14
