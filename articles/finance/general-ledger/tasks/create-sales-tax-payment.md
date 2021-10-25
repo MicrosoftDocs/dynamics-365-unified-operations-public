@@ -33,35 +33,35 @@ The settle and post sales tax job procedure settles sales tax balances on the sa
 2. In the **Settlement period** field, click the drop-down button to open the lookup.
 3. In the list, click the link in the selected row.
 4. In the **From date** field, enter a date.
-    * If you don't select the **Include corrections** option on the **General ledger parameters** page, the settlement can be processed for different versions. Original is the first settlement for a period interval and can be processed only once for a period interval. The latest corrections will settle sales tax transactions which have been posted after the original version has been created.   
+    - If you don't select the **Include corrections** option on the **General ledger parameters** page, the settlement can be processed for different versions. Original is the first settlement for a period interval and can be processed only once for a period interval. The latest corrections will settle sales tax transactions which have been posted after the original version has been created.
 5. In the **Transaction date** field, enter a date.
 6. Click **OK**.
 
 ## Performance consideration
 
-The sales tax payment procedure can take a long time to complete. The number of invoices in the settlement period and the number of the entries to be posted in the sales tax settlement voucher are the key factors that significantly impact the performance of the sales tax payment procedure. To improve performance, you can select to bypass some functionalities in your process that aren't required.
+The sales tax payment procedure can take a long time to be completed. The main factors that affect the performance of the procedure are the number of invoices in the settlement period and the number of entries that must be posted in the sales tax settlement voucher. To help improve performance, you can select to bypass some functionality that isn't required in your process.
 
 ### Enable the Sales tax payment performance improvement feature
 
-The feature, **Sales tax payment performance improvement**, can improve sales tax payment performance by aggregating the accounting currency amount and the reporting currency amount on sales tax payment voucher lines with same main account, ledger dimension, and currency into one line.
+The **Sales tax payment performance improvement** feature can help improve the performance of the sales tax payment procedure by aggregating, onto one line, the accounting currency amount and the reporting currency amount on sales tax payment voucher lines that have same main account, ledger dimension, and currency.
 
-1. Go to **System administration** > **Workspaces** > **Feature management** > **All**.
-2. Search for and select **Sales tax payment performance improvement**.
+1. Go to **System administration** \> **Workspaces** \> **Feature management**.
+2. On the **All** tab, search for and select **Sales tax payment performance improvement**.
 3. Select **Enable**.
 
-### Prevent generating offset tax transactions
+### Prevent generation of offset tax transactions
 
-By default, the sales tax payment voucher posts offset sales tax transactions against each sales tax transaction that's settled in the procedure. These offset sales tax transactions are included in the **Sales tax/Ledger reconciliation** report to reveal the outstanding balance of the sales tax transactions that aren't settled in the given period.
+By default, the sales tax payment voucher posts offset sales tax transactions against each sales tax transaction that is settled in the sales tax payment procedure. These offset sales tax transactions are included on the **Sales tax/Ledger reconciliation** report. They show the outstanding balance of the sales tax transactions that aren't settled during the period.
 
-However, the offset sales tax transactions can increase the burden on the sales tax payment procedure. A flighting **TaxReportGenOffsetTaxTransPerRecordSetFlighting** can be activated on demand to increase the performance of generating offset tax transactions for countries/regions other than Thailand, Poland, Hungary, Lithuania, Malaysia, India, Italy, Russia, Czech Republic, Estonia, and Latvia.
+However, the offset sales tax transactions can increase the burden on the sales tax payment procedure. Therefore, a flighting that is named **TaxReportGenOffsetTaxTransPerRecordSetFlighting** can be activated on demand. This flighting can help improve the performance of offset tax transaction generation for countries and regions except Thailand, Poland, Hungary, Lithuania, Malaysia, India, Italy, Russia, Czech Republic, Estonia, and Latvia.
 
 > [!NOTE]
 > If there are customized fields on the tax transaction table, the flighting can't be activated.
 
-Because the **Sales tax/Ledger reconciliation** report is generally only for internal control purposes and isn't required in many tax regimes, you can choose to not generate offset sales tax transactions on the sales tax payment voucher.
+Because the **Sales tax/Ledger reconciliation** report is generally used only for internal control purposes and isn't required in many tax regimes, you can choose not to generate offset sales tax transactions on the sales tax payment voucher.
 
-1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax settlement periods**.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**.
 2. Select a settlement period.
-3. In the **General** FastTab, switch the **Prevent generating offset tax transactions** option to **Yes**.
+3. On the **General** FastTab, set the **Prevent generating offset tax transactions** option to **Yes**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
