@@ -494,6 +494,8 @@
         href: accounts-receivable/customer-aging-snapshot.md
       - name: Customer aging report
         href: accounts-receivable/customer-aging.md
+      - name: Customer aging data storage
+        href: accounts-receivable/customer-aging-data-storage.md
       - name: Create a write-off journal for a customer
         href: accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Advanced notes management
