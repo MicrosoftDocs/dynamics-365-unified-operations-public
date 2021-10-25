@@ -53,6 +53,7 @@ There are three primary paths to get to the latest version of Finance and Operat
 *Applicable starting version: Microsoft Dynamics 365 for Finance and Operations 7.0 (RTW), 7.1 (1611), 7.2 (July 2017), 7.3.*<br/>
 *Scope: Complex*<br/>
 This path involves code refactoring to Extensions, and Data Upgrade in a DevTest, Sandbox, and eventually a Production environment. 
+**Note that this process is now deprecated**
 
 [Self-service upgrade to the latest version](../migration-upgrade/self-service-upgrade.md).
 

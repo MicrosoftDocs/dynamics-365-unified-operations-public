@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 10.0.1
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
+> This process of upgrading data is now deprecated between older versions of Finance and Operations to the latest version.  For AX2012 upgrades, please see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-ax2012.md).
+
+> [!IMPORTANT]
 > This topic applies to the following starting versions:
 >
 > - Microsoft Dynamics 365 for Operations version 1611 (November 2016) (also known as version 7.1)
