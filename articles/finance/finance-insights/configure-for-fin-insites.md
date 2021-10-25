@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 10.0.13
 > The following procedures for setting up Finance insights are valid for Microsoft Dynamics 365 Finance before version 10.0.21, and later.
 
 > [!NOTE]
-> You need System administrator access in [Power Portal admin center](https://admin.powerplatform.microsoft.com/), System Administrator access for Dynamics 365 Finance and Operations and access to create LCS environemnts to sucessfully execute steps below.
+> You need System administrator and System Customizer access in [Power Portal admin center](https://admin.powerplatform.microsoft.com/), System Administrator access for Dynamics 365 Finance and Operations and access to create LCS environemnts to sucessfully execute steps below.
 
 
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Microsoft Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
