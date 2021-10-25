@@ -101,10 +101,4 @@ If you aren't satisfied with the accuracy, select the **Improve model accuracy**
 
 [![AI Builder extension experience.](./media/ai-builder.png)](./media/ai-builder.png)
 
-## Release details
-
-Finance insights public preview is available to try for deployments in the United States of America, Europe, and the United Kingdom. Microsoft is incrementally adding support for more regions.
-
-Public preview features can and should be turned on only in Tier-2 sandbox environments. Setup and AI models that are created in a sandbox environment can't be migrated to a production environment. For more information, see [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
