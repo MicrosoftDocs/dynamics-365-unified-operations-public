@@ -36,30 +36,23 @@ This topic explains how to turn on and configure the Customer payment prediction
 > [!NOTE]
 > Before you complete the following steps, be sure to complete the prerequisite steps in the [Configure for Finance insights](configure-for-fin-insites.md) topic.
 
-1. Use information from the environment page in Microsoft Dynamics Lifecycle Services (LCS) to connect to the primary instance of Azure SQL for that environment. Run the following Transact-SQL (T-SQL) command to turn on flights for the sandbox environment. (You might have to turn on access for your IP address in LCS before you can connect remotely to Application Object Server \[AOS\].)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('PayPredEnableFeature', 1)`
-
-    > [!NOTE]
-    > Skip this step if you're using version 10.0.20 or later, or if you're using a Service Fabric deployment. The Finance insights team should already have turned on the flight for you. If you don't see the feature in the **Feature management** workspace, or if you experience issues when you try to turn it on, contact <fiap@microsoft.com>. 
-
-2. Turn on the Customer payment insights feature:
+1. Turn on the Customer payment predictions feature:
 
     1. Go to **System administration \> Workspaces \> Feature management**.
-    2. Find the feature that is named **(Preview) Customer payment insights**.
+    2. Find the feature that is named **(Preview) Customer payment predictions**.
     3. Select **Enable now**.
 
-    The Customer payment insights feature is now turned on and ready to be configured.
+    The Customer payment predictions feature is now turned on and ready to be configured.
 
-3. Configure the Customer payment insights feature:
+2. Configure the Customer payment insights feature:
 
-    1. Go to **Credit and collections \> Setup \> Finance insights \> Finance insights parameters**.
+    1. Go to **Credit and collections \> Setup \> Finance insights \> Customer payment predictions**.
 
         [![Financial insights parameters page before the feature is configured.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
 
-    2. On the **Financial insights parameters** page, on the **Customer payment insights** tab, select the **View the data fields used in the prediction model** link to open the **Data fields for prediction model** page. There, you can view the default list of fields that are used to create the artificial intelligence (AI) prediction model for customer payment predictions.
+    2. On the **Financial insights configuration** page, on the **Customer payment predictions** tab, select the **View the data fields used in the prediction model** link to open the **Data fields for prediction model** page. There, you can view the default list of fields that are used to create the artificial intelligence (AI) prediction model for customer payment predictions.
 
-        To use the default list of fields to create the prediction model, close the **Data fields for prediction model** page, and then, on the **Financial insights parameters** page, set the **Enable feature** option to **Yes**.
+        To use the default list of fields to create the prediction model, close the **Data fields for prediction model** page, and then, on the **Financial insights configuration** page, set the **Enable feature** option to **Yes**.
 
     3. Specify the "very late" transaction period to define what the **Very late** prediction bucket means for your business.
 
