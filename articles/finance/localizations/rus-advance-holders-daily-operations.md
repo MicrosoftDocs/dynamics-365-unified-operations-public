@@ -3,7 +3,7 @@
 title: Daily operations for advance holders in Russia
 description: This topic provides information about daily operations, such as handling cash and closing balances, for advance holders for Russia.
 author: ShylaThompson
-ms.date: 10/28/2018
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -127,9 +127,8 @@ Use this procedure to manually generate and post advance report lines. You can d
 5. In the **Currency** field, select the currency that is used for the transaction.
 6. In the **Amount** field, enter the amount that is spent for the transaction.
 
-    >[!NOTE]
-    >Amount should be only positive. A user should not enter negative amount in advance report lines. 
-    >Use the **Rejection** function or **Close via cash**/ **Close via bank** function.  
+    > [!NOTE]
+    > The amount should only be positive. Don't enter a negative amount in advance report lines. Instead, select **Rejection** or **Close via cash**/ **Close via bank**.  
 
 8. In the **Confirmed amount of advance report** field, enter the confirmed expense for the advance report.
 9. In the **Main account** field, select the general ledger account that the expense belongs to.
