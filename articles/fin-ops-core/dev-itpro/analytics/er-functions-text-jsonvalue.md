@@ -4,7 +4,7 @@
 title: JSONVALUE ER function
 description: This topic provides information about how the JSONVALUE Electronic reporting (ER) function is used.
 author: NickSelin
-ms.date: 12/11/2019
+ms.date: 10/25/2021
 ms.prod: 
 ms.technology: 
 
@@ -46,7 +46,7 @@ The valid path of a data source of the *String* type that contains JSON data.
 
 `path`: *String*
 
-The identifier of a scalar value of JSON data. Use the slash `/` punctuation mark to separate names of related JSON nodes. Use the square bracket `[]` notation to specify the index of a particular value in a JSON array. Note that the zero-based numbering is used for this index.
+The identifier of a scalar value of JSON data. Use the slash `/` punctuation mark to separate names of related JSON nodes. Use the square bracket `[]` notation to specify the index of a particular value in a JSON array. Note that zero-based numbering is used for this index.
 
 ## Return values
 
