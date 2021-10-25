@@ -89,8 +89,7 @@ The Budget proposals feature uses a machine learning model along with your organ
 To learn how Customer payment predictions can provide the information needed to proactively being collection activities, see [Use Customer payment predictions](use-customer-payment-predictions.md).
 - For information that can help you evaluate the effectiveness of the prediction model after you've started using the feature, see [Evaluate the initial customer payment prediction model](evaluate-payment-prediction.md).
 - For information that can help you adjust the data that is used to build the prediction and thereby improve its effectiveness, see [Improve the prediction model](improve-model.md).
-
-To learn more about the results of AI prediction models, see [Results of machine learning models](confusion-matrix.md).
+- To learn more about the results of AI prediction models, see [Results of machine learning models](confusion-matrix.md).
 
 ### Using Cash flow forecasts
 
