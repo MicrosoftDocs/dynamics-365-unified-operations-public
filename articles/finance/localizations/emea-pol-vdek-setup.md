@@ -833,22 +833,22 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 <td>+</td>
 </tr>
 <tr>
-<td>30109</td>
+<td>30102</td>
 <td>Sales tax receivable</td>
-<td>K_49</td>
+<td>K_47</td>
 <td>+</td>
 </tr>
 <tr>
 <td rowspan="2">CorrATR89b4</td>
 <td>30201</td>
 <td>Sales tax payable</td>
-<td>K_46, K_47</td>
+<td>K_47</td>
 <td>+</td>
 </tr>
 <tr>
-<td>30209</td>
+<td>30202</td>
 <td>Sales tax receivable</td>
-<td>K_46, K_47</td>
+<td>K_47</td>
 <td>+</td>
 </tr>
 </tbody>
