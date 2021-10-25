@@ -31,6 +31,10 @@ ms.dyn365.ops.version: 8.1.3
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to import a golden configuration database into a sandbox user acceptance testing (UAT) environment.
 
+## Prerequisites
+
+Importing a database is not applicable for Lifecycle Services projects that are configured for AX 2012 Upgrade.  This setting can be found under **Project Onboarding** -> **Project overview** -> **Legacy system** field.  Import will be blocked if the value is configured to 'AX2012 Upgrade'.
+
 ## Self-service import database
 
 [!include [dbmovement-import](../includes/dbmovement-import.md)]
