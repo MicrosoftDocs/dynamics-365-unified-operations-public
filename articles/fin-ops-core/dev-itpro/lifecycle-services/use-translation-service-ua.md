@@ -48,7 +48,7 @@ This topic explains how to translate a documentation file for Microsoft Dynamics
     | File type | Select **Documentation**. |
     | Product name | Select a product name. If you accessed DTS from within an LCS project, this field is automatically filled in and is read-only. |
     | Product version | Select a product version. If you accessed DTS from within a LCS project, this field shows the default product version information from the project. However, you can select a different version. |
-    | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business needs multiple target languages translated for the same source language, you can select all target languages in one request. Make sure you actually select the target languages using the checkbox next to the language name. This saves your time to submit multiple translation requests individually and you can also track all the target languages translation status in one request. Language names that are shown in **bold** type are General Availability (GA) languages for Microsoft Dynamics products. This means that product-specific machine translation (MT) models are available in those languages and the MT model is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT model uses the general domain training. |
+    | Translation source language, Translation target language | Select the set of source and target languages to translate from and to. If your business requires that multiple target languages be translated for the same source language, you can select all the target languages in one request. Make sure that you select each target language by using the checkbox next to the language's name. This approach helps you save time when you must submit multiple translation requests. It also lets you track the translation status of all the target languages in one request. Language names that are shown in **bold** are General Availability (GA) languages for Microsoft Dynamics products. Therefore, product-specific machine translation (MT) models are available in those languages, and the MT model is trained on the terminology for Microsoft Dynamics. For non-GA languages, the MT model uses the general domain training. |
 
     ![Selecting languages.](./media/dts-target-lang.png "Selecting languages")
 
@@ -56,7 +56,7 @@ This topic explains how to translate a documentation file for Microsoft Dynamics
 
 
     > [!NOTE]
-    > To take advantage of the product-specific model trained on Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
+    > To take advantage of the product-specific model that is trained on Microsoft Dynamics linguistic assets, you must select **English – United States** as either the source language or the target language. Here is an example.
     >
     > | Translation source language | Translation target language | MT model that is used |
     > |-----------------------------|-----------------------------|------------------------|
