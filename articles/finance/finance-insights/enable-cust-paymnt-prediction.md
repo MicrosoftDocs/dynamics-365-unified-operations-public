@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to turn on and configure the Customer payment predictions feature in Finance insights. You turn on the feature in the **Feature management** workspace and enter configuration settings on the **Financial insights parameters** page. This topic also includes information that can help you effectively use the feature.
+This topic explains how to turn on and configure the Customer payment predictions feature in Finance insights. You turn on the feature in the **Feature management** workspace and enter configuration settings on the **Finance insights parameters** page. This topic also includes information that can help you effectively use the feature.
 
 > [!NOTE]
 > Before you complete the following steps, be sure to complete the prerequisite steps in the [Configure for Finance insights](configure-for-fin-insites.md) topic.
@@ -48,11 +48,11 @@ This topic explains how to turn on and configure the Customer payment prediction
 
     1. Go to **Credit and collections \> Setup \> Finance insights \> Customer payment predictions**.
 
-        [![Financial insights parameters page before the feature is configured.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
+        [![Finance insights parameters page before the feature is configured.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
 
-    2. On the **Financial insights configuration** page, on the **Customer payment predictions** tab, select the **View the data fields used in the prediction model** link to open the **Data fields for prediction model** page. There, you can view the default list of fields that are used to create the artificial intelligence (AI) prediction model for customer payment predictions.
+    2. On the **Finance insights configuration** page, on the **Customer payment predictions** tab, select the **View the data fields used in the prediction model** link to open the **Data fields for prediction model** page. There, you can view the default list of fields that are used to create the artificial intelligence (AI) prediction model for customer payment predictions.
 
-        To use the default list of fields to create the prediction model, close the **Data fields for prediction model** page, and then, on the **Financial insights configuration** page, set the **Enable feature** option to **Yes**.
+        To use the default list of fields to create the prediction model, close the **Data fields for prediction model** page, and then, on the **Finance insights configuration** page, set the **Enable feature** option to **Yes**.
 
     3. Specify the "very late" transaction period to define what the **Very late** prediction bucket means for your business.
 
@@ -65,16 +65,16 @@ This topic explains how to turn on and configure the Customer payment prediction
         > [!NOTE]
         > If you change the "very late" transaction period and select **Change late threshold** after the AI prediction model for customer payments has been created, the existing prediction model is deleted, and a new model is created. The new prediction model will move transactions into the "very late" period, based on the settings that were entered to define it.
 
-    4. After you've finished defining the "very late" transaction period, select **Create prediction model** to create the prediction model. The **Prediction model** section on the **Financial insights parameters** page shows the status of the prediction model.
+    4. After you've finished defining the "very late" transaction period, select **Create prediction model** to create the prediction model. The **Prediction model** section on the **Finance insights configuration** page shows the status of the prediction model.
 
         > [!NOTE]
         > At any time while the prediction model is being created, you can select **Reset model creation** to restart the process.
 
     The feature has now been configured and is ready to be used.
 
-After the feature has been turned on and configured, and the prediction model has been created and is working, the **Prediction model** section of the **Financial insights parameters** page shows the accuracy of the model, as shown in the following illustration.
+After the feature has been turned on and configured, and the prediction model has been created and is working, the **Prediction model** section of the **Finance insights parameters** page shows the accuracy of the model, as shown in the following illustration.
 
-[![Accuracy of the prediction model on the Financial insights parameters page.](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
+[![Accuracy of the prediction model on the Finance insights parameters page.](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
 
 ## Release details
 
