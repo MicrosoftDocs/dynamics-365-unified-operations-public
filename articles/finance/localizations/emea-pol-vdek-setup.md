@@ -30,15 +30,16 @@ The solution that supports JPK-V7M reporting is based on the [Electronic messagi
 
 The following tasks prepare Microsoft Dynamics 365 Finance to report a JPK-V7M:
 
-- Import and set up Electronic reporting (ER) configurations.
-- Set up application-specific parameters.
-- Import a package of data entities that includes a predefined electronic message setup.
-- Set up General ledger parameters.
-- Save the executable class parameters for Electronic messaging.
-- Set up security roles for electronic message processing.
-- Set up an office code for electronic message processing.
+- [Import and set up Electronic reporting (ER) configurations](#configurations-vdek).
+- [Set up application-specific parameters](#application-specific-parameters-vdek).
+- [Import a package of data entities that includes a predefined electronic message setup](#import-data-entities-vdek).
+- [Set up General ledger parameters](#general-ledger-parameters-vdek).
+- [Save the executable class parameters for Electronic messaging](#executable-class-parameters-vdek).
+- [Set up security roles for electronic message processing](#security-roles-vdek).
+- [Set up an office code for electronic message processing](#office-code-vdek).
+- [Set up sales tax codes and sales tax reporting codes](#sales-tax-reporting-codes-vdek).
 
-## Import and set up ER configurations
+## <a id="configurations-vdek"></a>Import and set up ER configurations
 
 To prepare Finance for JPK-V7M reporting, you must import the following ER configurations.
 
@@ -58,7 +59,7 @@ For more information about how to download ER configurations from the Microsoft 
 >
 > ![Default for model mapping option set to Yes for the Standard audit file model mapping configuration](media/default-mm.jpg)
 
-## Set up application-specific parameters
+## <a id="application-specific-parameters-vdek"></a>Set up application-specific parameters
 
 Depending on the tax transaction data, the values of some elements (markers) in the JPK-V7M report can be defined for reporting purposes. There must be enough transactional data to define values for these elements. Therefore, set up enough sales tax codes, sales tax groups, and item sales tax groups to differentiate tax transactions for all the parameters (elements) that are introduced in the JPK-V7M report. The JPK-V7M format includes application-specific parameters (fields) that can be used to define values for these elements in the report.
 
@@ -334,7 +335,7 @@ The following table shows the lookup results for **PurchaseDocumentTypesSelector
 > [!NOTE]
 > It's important that you add **Inne** (**Other**), which must collect data from other cases as the last item in the list. The **Line** value must be the last value in your table. In the **Tax code** column in the **Inne** lookup result, select **\*Not blank\***.
 
-## Import a package of data entities that includes a predefined electronic message setup
+## <a id="import-data-entities-vdek"></a>Import a package of data entities that includes a predefined electronic message setup
 
 The process of setting up the Electronic messaging functionality for JPK-V7M reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
@@ -368,7 +369,7 @@ You will receive a notification in **Messages**, or you can manually refresh the
 > [!IMPORTANT]
 > Some records in the data entities in the package include a link to ER configurations. Therefore, be sure to import ER configurations into Finance before you start to import the data entities package.
 
-## Set up General ledger parameters
+## <a id="general-ledger-parameters-vdek"></a>Set up General ledger parameters
 
 To work with the Electronic messaging functionality, you must define related number sequences.
 
@@ -378,7 +379,7 @@ To work with the Electronic messaging functionality, you must define related num
     - Message
     - Message item
 
-## Save the executable class parameters for Electronic messaging
+## <a id="executable-class-parameters-vdek"></a>Save the executable class parameters for Electronic messaging
 
 The JPK-V7M processing uses the **EMGenerateJPKVDEKReportController_PL** executable class to initiate data collection for the report data provider and further report generation. Before you use this class for the first time, you must save its parameters.
 
@@ -390,7 +391,7 @@ In the dialog box for the executable class, the **Retail-specific sales marking*
 
 The dialog box for the executable class includes the **Consider VAT report date codes** parameter. Use this parameter to collect VAT transactions in the report, based on rules that you define in VAT report date codes. This parameter doesn't affect retail-specific transactions that will be reported as the **FP** document type. For more information about the VAT report date codes feature, see [Set up VAT report date codes](/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes).
 
-## Set up security roles for electronic message processing
+## <a id="security-roles-vdek"></a>Set up security roles for electronic message processing
 
 Different groups of users might require access to the JPK-V7M processing. You can limit access to the processing, based on security groups that are defined in the system.
 
@@ -399,10 +400,482 @@ Follow these steps to limit access to the JPK-V7M processing.
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
 2. Select the **JPK-V7M** processing, and then, on the **Security roles** FastTab, add the security groups that must work with it. If no security group is defined for the processing, only a system admin can see it on the **Electronic messages** page.
 
-## Set up an office code for electronic message processing
+## <a id="office-code-vdek"></a>Set up an office code for electronic message processing
 
 Follow these steps to enter an office code in the **KodUrzedu** additional field.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
 2. Select the **JPK-V7M** processing.
 3. On the **Additional field** FastTab, select the **KodUrzedu** additional field, and then, in the **Default value** field, specify the office code that should be reported in the **\<KodUrzedu\>** element of the report.
+
+## <a id="sales-tax-reporting-codes-vdek"></a>Set up sales tax codes and sales tax reporting codes
+
+[Sales tax reporting code](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes) is an integer value. Sales tax reporting codes should be numbered according to the company's rules. However, we recommend that you vary the codes by tax direction. For example, use a five-digit code, and set the codes for all outgoing transactions, which should be reflected in the first part of the VAT scheme, so that they are less than or equal to 19999. Set the codes for all incoming transactions, which should be reflected in the second part of the VAT scheme, so that they are more than or equal to 20000. In this way, you simplify the setup for reports and for data export that is based on tax transactions that are aggregated by sales tax reporting codes. Here is an example that shows how you can use sales tax reporting codes to generate a SAF VAT sales and purchase register. For this example, sales tax reporting codes are in the format *ABBCC*. This format consists of the following parts:
+
+- **A** – The transaction direction. The value is **1** for outgoing, **2** for incoming, **3** for corrections.
+- **BB** – The tax code. The numbering is sequential among all tax codes.
+- **CC** – The transaction type number within a tax code. See the following table.
+
+| Transaction type                  | Transaction type number     |
+|-----------------------------------|-----------------------------|
+| Taxable Sales                     | 01                          |
+| Tax-free sales                    | 02                          |
+| Sales tax payable                 | 03                          |
+| Taxable sales credit note         | 04                          |
+| Tax exempt sales credit note      | 05                          |
+| Sales tax on sales credit note    | 06                          |
+| Taxable purchases                 | 07                          |
+| Tax-free purchase                 | 08                          |
+| Sales tax receivable              | 09                          |
+| Taxable import                    | 10                          |
+| Offset taxable import             | 11                          |
+| Use tax                           | 12                          |
+| Offset use tax                    | 13                          |
+| Taxable purchase credit note      | 14                          |
+| Tax exempt purchase credit note   | 15                          |
+| Sales tax on purchase credit note | 16                          |
+| Taxable import credit note        | 17                          |
+| Offset taxable import credit note | 18                          |
+
+The following table shows the sales tax codes and sales tax reporting codes for this example.
+
+<table>
+<thead>
+<tr>
+<th>Sales tax code</th>
+<th>Sales tax reporting code</th>
+<th>Description</th>
+<th>Tag name in SAF-T VAT</th>
+<th>Sign in SAF-T VAT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">ExportCust</td>
+<td>10101</td>
+<td>Taxable sales</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10102</td>
+<td>Tax-free sale</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10104</td>
+<td>Taxable sales credit note</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10105</td>
+<td>Tax exempt sales credit note</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="2">Art100</td>
+<td>10201</td>
+<td>Taxable sales</td>
+<td>K_12</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10204</td>
+<td>Taxable sales credit note</td>
+<td>K_12</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">VAT22_23</td>
+<td>10301</td>
+<td>Taxable sales</td>
+<td>K_19</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10302</td>
+<td>Tax-free sale</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10303</td>
+<td>Sales tax payable</td>
+<td>K_20</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10304</td>
+<td>Taxable sales credit note</td>
+<td>K_19</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10306</td>
+<td>Sales tax on sales credit note</td>
+<td>K_20</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">VAT7_8</td>
+<td>10401</td>
+<td>Taxable sales</td>
+<td>K_17</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10402</td>
+<td>Tax-free sale</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10403</td>
+<td>Sales tax payable</td>
+<td>K_18</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10404</td>
+<td>Taxable sales credit note</td>
+<td>K_17</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10406</td>
+<td>Sales tax on sales credit note</td>
+<td>K_18</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">VAT5</td>
+<td>10501</td>
+<td>Taxable sales</td>
+<td>K_15</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10502</td>
+<td>Tax-free sale</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10503</td>
+<td>Sales tax payable</td>
+<td>K_16</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10504</td>
+<td>Taxable sales credit note</td>
+<td>K_15</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10506</td>
+<td>Sales tax on sales credit note</td>
+<td>K_16</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="3">VAT0</td>
+<td>10601</td>
+<td>Taxable sales</td>
+<td>K_13</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10602</td>
+<td>Tax-free sale</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10604</td>
+<td>Taxable sales credit note</td>
+<td>K_13</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4">ART129</td>
+<td>10701</td>
+<td>Taxable sales</td>
+<td>K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10702</td>
+<td>Tax-free sale</td>
+<td>K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10704</td>
+<td>Taxable sales credit note</td>
+<td>K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10705</td>
+<td>Tax exempt sales credit note</td>
+<td>K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<tr>
+<td rowspan="4">VAT17_1.5</td>
+<td>11901</td>
+<td>Taxable sales</td>
+<td>K_31</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11903</td>
+<td>Sales tax payable</td>
+<td>K_32</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11904</td>
+<td>Taxable sales credit note</td>
+<td>K_31</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11906</td>
+<td>Sales tax on sales credit note</td>
+<td>K_32</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4">IntraEUGoods</td>
+<td>10801</td>
+<td>Tax-free sale</td>
+<td>K_21</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10810</td>
+<td>Taxable import</td>
+<td>K_23</td>
+<td>+</td>
+</tr>
+<tr>
+<td>10811</td>
+<td>Taxable sales (Reverse charge)</td>
+<td>K_23</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10812</td>
+<td>Use tax</td>
+<td>K_24</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2">ExportOfGoods</td>
+<td>10901</td>
+<td>Tax-free sale</td>
+<td>K_22</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10905</td>
+<td>Tax exempt sales credit note</td>
+<td>K_22</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4">ImportOfGoodsART33</td>
+<td>20207</td>
+<td>Taxable import</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11010</td>
+<td>Offset Taxable import</td>
+<td>K_25</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Use tax</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11012</td>
+<td>Offset use tax</td>
+<td>K_26</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">ImportOfServices</td>
+<td>20207</td>
+<td>Taxable import</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11110</td>
+<td>Offset Taxable import</td>
+<td>K_27</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11117</td>
+<td>Taxable sales (Reverse charge)</td>
+<td>K_27</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Use tax</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11112</td>
+<td>Offset use tax</td>
+<td>K_28</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">ImportART28</td>
+<td>20207</td>
+<td>Taxable import</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11210</td>
+<td>Offset Taxable import</td>
+<td>K_29</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11119</td>
+<td>Taxable sales (Reverse charge)</td>
+<td>K_29</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Use tax</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11212</td>
+<td>Offset use tax</td>
+<td>K_30</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4">ReverseCharge</td>
+<td>11301</td>
+<td>Taxable sales</td>
+<td>K_34</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11302</td>
+<td>Sales tax payable</td>
+<td>K_35</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11304</td>
+<td>Taxable sales credit note</td>
+<td>K_34</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11306</td>
+<td>Sales tax on sales credit note</td>
+<td>K_35</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4">FixedAssetPurch</td>
+<td>20107</td>
+<td>Taxable purchases</td>
+<td>K_43</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20109</td>
+<td>Sales tax receivable</td>
+<td>K_44</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20115</td>
+<td>Taxable purchase credit note</td>
+<td>K_43</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20116</td>
+<td>Sales tax on purchase credit note</td>
+<td>K_47</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="4">GoodServPurch</td>
+<td>20207</td>
+<td>Taxable purchases</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Sales tax receivable</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20215</td>
+<td>Taxable purchase credit note</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20216</td>
+<td>Sales tax on purchase credit note</td>
+<td>K_48</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2">CorrATR89b1</td>
+<td>30101</td>
+<td>Sales tax payable</td>
+<td>K_49</td>
+<td>+</td>
+</tr>
+<tr>
+<td>30109</td>
+<td>Sales tax receivable</td>
+<td>K_49</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2">CorrATR89b4</td>
+<td>30201</td>
+<td>Sales tax payable</td>
+<td>K_50</td>
+<td>+</td>
+</tr>
+<tr>
+<td>30209</td>
+<td>Sales tax receivable</td>
+<td>K_50</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
