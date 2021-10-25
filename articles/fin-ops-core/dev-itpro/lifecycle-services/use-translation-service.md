@@ -4,7 +4,7 @@
 title: Translate user interface files
 description: This topic explains how to use the UI translation service for Microsoft Dynamics 365 products.
 author: abmotgi 
-ms.date: 10/25/2021
+ms.date: 10/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
