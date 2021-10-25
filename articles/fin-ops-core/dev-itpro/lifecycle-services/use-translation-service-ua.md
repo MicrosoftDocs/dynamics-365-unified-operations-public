@@ -3,7 +3,7 @@
 
 title: Translate documentation files
 description: This topic explains how to translate a documentation file for a Microsoft Dynamics product or solution.
-author: kfend
+author: abmotgi 
 ms.date: 10/25/2021
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 6154
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ejcho
+ms.author: abmotgi
 ms.search.validFrom: 2018-03-27
 ms.dyn365.ops.version: AX 7.3.0
 
