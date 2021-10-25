@@ -101,6 +101,9 @@ The format includes the following lookup fields for setup.
 
 You can easily export the setup of application-specific parameters from one version of a report and import it into another version. You can also export the setup from one report and import it into another report, provided that both reports have the same structure of lookup fields.
 
+> [!NOTE]
+> We recommend that you enable the feature, **Align ER application specific parameters while importing** in the **Feature management** workspace. The **Align ER application specific parameters while importing** feature is available in the **Feature management** workspace starting in Finance version 10.0.24. When this feature is enabled, if the structure of application-specific parameters that you're importing differs from the structure of the corresponding data sources in the target ER format that is selected for import, the import will succeed in the some cases. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md). 
+
 ### Import transactions (ImportSelector)
 
 | Name           | Label (En) | Label (Pl) | Description (En) | Description (Pl) |
