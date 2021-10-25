@@ -394,6 +394,8 @@ In the dialog box for the executable class, the **Retail-specific sales marking*
 
 The dialog box for the executable class includes the **Consider VAT report date codes** parameter. Use this parameter to collect VAT transactions in the report, based on rules that you define in VAT report date codes. This parameter doesn't affect retail-specific transactions that will be reported as the **FP** document type. For more information about the VAT report date codes feature, see [Set up VAT report date codes](/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes).
 
+KB5007691 ("Poland: Jednolitego Pliku Kontrolnego VDEK (JPK-V7M, VDEK) January 2022 changes in Dynamics 365 Finance") introduces **Schema version** parameter. Use this parameter to specify the additional field that will contain the version of the needful schema of JPK-V7M to be reported. Select **Wersja schematu** as a value for this field.
+
 ## <a id="security-roles-vdek"></a>Set up security roles for electronic message processing
 
 Different groups of users might require access to the JPK-V7M processing. You can limit access to the processing, based on security groups that are defined in the system.
