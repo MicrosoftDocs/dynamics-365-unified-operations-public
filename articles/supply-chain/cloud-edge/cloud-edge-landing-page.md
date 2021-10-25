@@ -201,19 +201,17 @@ On the **Defined workloads** tab, use the **Create workload** button to add a wa
 
 #### Manage workloads
 
+When you have one or more workloads enabled, use the **Manage workloads** option to initiate and manage processes such as those listed in the following table.
 
-When having one or more workloads enabled you can use the **Manage workloads** option where several processes can get initialized - such as:
-
-
-| Process                                 | Description                                                    |
-|-----------------------------------------|----------------------------------------------------------------|
-| Pause scale unit communication    | Used to pause the pipeline messages between the hub and a scale unit. This will stop the communication and drain the data pipeline between the hub and scale units. This will for example be needed before a FinOps servicing operation is executed on either the hub or scale unit. |
-| Resume scale unit communication   | Used to resume the pipeline messages between the hub and a scale unit. This is needed after a FinOps servicing operation has been executed, on either hub or the scale unit. |
-| Upgrade workloads | Used to sync new functionality between the hub and scale unit workloads. This would be needed when a servicing for example has resulted in changing the data exchange queries for or added new tables or fields to the workload. |
-| Transfer workloads to a scale unit | Used to schedule a move of an existing workload running on the hub to a scale unit. When executed the synchronization of data will flow and both the hub and scale unit will be set to change the ownership of the workload. |
-| Transfer scale unit to the hub | Used to schedule a move of an existing workload running on a scale unit to the hub. When executed the synchronization of data will flow and both the hub and scale unit will be set to change the ownership of the workload.
-| Emergency transition to hub | Used to transfers an existing workload to hub immediately - by changing the ownership of the data currently available on the hub only!. Note that this process can cause data loss and failing business processing and should therefore only be used in emergencies where the scale unit has an outage which cannot get mitigated within reasonable time and thereby the business processes will need to get processed on the hub. |
-| Decommission distributed topology | Used to remove a scale unit deployment and thereby only run on the *hub* without workload processing. |
+| Process | Description |
+|---|---|
+| Pause scale unit communication | Lets you pause pipeline messages between the hub and a scale unit. This will stop the communication and drain the data pipeline between the hub and scale units. You may need to do this, for example, before executing a Supply Chain Management servicing operation on either the hub or scale unit. |
+| Resume scale unit communication | Lets you resume pipeline messages between the hub and a scale unit. You may need to do this after executing a Supply Chain Management servicing operation, on either hub or the scale unit. |
+| Upgrade workloads | Lets you sync new functionality between the hub and scale unit workloads. You may need to do this, for example, when servicing has resulted in changing the data exchange queries and/or has added new tables or fields to the workload. |
+| Transfer workloads to a scale unit | Lets you schedule a workload currently running on the hub to be moved to a scale unit. When executed, the synchronization of data will flow and both the hub and scale unit will be set to change the ownership of the workload. |
+| Transfer scale unit to the hub | Lets you schedule a workload currently running on a scale unit to be moved to the hub. When executed, the synchronization of data will flow and both the hub and scale unit will be set to change the ownership of the workload.
+| Emergency transition to hub | Lets you transfer an existing workload to the hub immediately. It *only changes the ownership of the data currently available on the hub*!. This process can cause data loss and failing business processing and should therefore only be used in emergencies where the scale unit has an outage that can't be mitigated within a reasonable time, thereby requiring that business processes be processed on the hub. |
+| Decommission distributed topology | Lets you remove a scale unit deployment and thereby only run on the *hub* without workload processing. |
 
 :::image type="content" source="media/sum-manage-workloads.png" alt-text="Scale unit and workload management experience.":::
 
