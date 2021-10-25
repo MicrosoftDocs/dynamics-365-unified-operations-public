@@ -4,7 +4,7 @@
 title: Translate documentation files
 description: This topic explains how to translate a documentation file for a Microsoft Dynamics product or solution.
 author: kfend
-ms.date: 03/29/2018
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
