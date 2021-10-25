@@ -70,14 +70,6 @@ This topic explains how to turn on and configure the Customer payment prediction
 
     The feature has now been configured and is ready to be used.
 
-After the feature has been turned on and configured, and the prediction model has been created and is working, the **Prediction model** section of the **Finance insights parameters** page shows the accuracy of the model, as shown in the following illustration.
-
-[![Accuracy of the prediction model on the Finance insights parameters page.](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
-
-## Release details
-
-Finance insights public preview is available for trial deployments in the United States of America, Europe, and the United Kingdom. Microsoft is incrementally adding support for more regions.
-
-Public preview features can and should be turned on only in Tier-2 sandbox environments. Setup and AI models that are created in a sandbox environment can't be migrated to a production environment. For more information, see [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
+After the feature has been turned on and configured, and the prediction model has been created and is working, the **Prediction model** section of the **Finance insights parameters** page shows the accuracy of the model.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
