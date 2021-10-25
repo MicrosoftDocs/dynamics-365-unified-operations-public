@@ -33,6 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Various types of functions are supported in Electronic reporting expressions for data transformation – text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions). In addition to built-in functions, Electronic reporting lets you extend the list of available functions. This article includes an overview of key tasks that you must complete to introduce a new function.
 
+> [!IMPORTANT]
+> In Finance version 7.3, the use of extensions of the `ERExpression` class is being deprecated. Instead of adding custom ER built-in functions via extensions of the `ERExpression` class, you can now implement your custom logic as public methods of your custom classes. Then, you can call such methods from ER formats and ER model mappings configuring the required ER data sources of either [Class](er-formula-supported-data-types-composite.md#class) or [Object](er-formula-supported-data-types-composite.md#object) type. For more information, see the [Design ER expressions to call application class methods](tasks/design-expressions-app-class-er.md) article.
+
 All Electronic reporting functions in application code are represented as classes that extend the **ERExpression** class. Two types of functions are recognized:
 
 - **Fixed number of arguments** – These functions are represented by classes that include methods that have the prefix **parm** (see **parmInput**, **parmStartNum** in the sample code the follows). The order of arguments is set by the **SysOperationDisplayOrderAttribute** attribute.
