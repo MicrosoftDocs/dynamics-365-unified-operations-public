@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 10/13/2021
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -183,6 +183,8 @@ You must complete the following steps to set up the infrastructure for Finance +
 1. [Download setup scripts from LCS](#downloadscripts)
 1. [Describe your configuration](#describeconfig)
 1. [Configure certificates](#configurecert)
+1. [Set up SSIS](#setupssis)
+1. [Set up SSRS](#setupssrs)
 1. [Set up VMs](#setupvms)
 1. [Set up a standalone Service Fabric cluster](#setupsfcluster)
 1. [Configure LCS connectivity for the tenant](#configurelcs)
@@ -190,8 +192,6 @@ You must complete the following steps to set up the infrastructure for Finance +
 1. [Set up SQL Server](#setupsql)
 1. [Configure the databases](#configuredb)
 1. [Encrypt credentials](#encryptcred)
-1. [Set up SSIS](#setupssis)
-1. [Set up SSRS](#setupssrs)
 1. [Configure AD FS](#configureadfs)
 1. [Configure a connector, and install an on-premises local agent](#configureconnector)
 1. [Tear down CredSSP, if remoting was used](#teardowncredssp)
