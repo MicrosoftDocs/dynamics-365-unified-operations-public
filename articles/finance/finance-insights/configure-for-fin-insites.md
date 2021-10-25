@@ -73,6 +73,20 @@ Follow these steps to install the Finance insights add-in.
 
 The add-in might take several minutes to install.
 
+## Once last thing...
+> [!NOTE]
+> Once add-in has been successfully installed, it may take up to an hour before you finance insights features can be enabled in Dynamics 365 Finance.
+
+To expedite enabling the finance insights features in **Feature management** workspace, you can execute the **Insights provisioning status check** manually. 
+
+1. In Finance and Operations, navigate to (**System administration \> Setup \> Process automation**).
+2. On the **Background processes** tab, find **Insights provisioning status check** and click on **Edit**.
+3. Set **Next execution** time to 30 mins prior to the current time.
+
+This should force the **Insights provisioning status check** process to run immediately.
+
+Once the **Insights provisioning status check** is successfully run, you can proceed enabling finance insights features in **Feature management** workspace.
+
 ## Feedback and support
 
 If you're interested in providing feedback, or if you require support, send an email to [Finance insights (Preview)](mailto:fiap@microsoft.com).
