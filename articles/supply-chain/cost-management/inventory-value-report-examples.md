@@ -130,7 +130,7 @@ The following subsections show inventory value reports generated after inventory
 
 **Level:** *Totals*
 
-Using the sample data and inventory value report configuration described at start of this topic (with **Level**: *Totals*), you will get the results shown in the following table and screenshots.
+Using the sample data and inventory value report configuration described at start of this topic (with **Level**: *Totals*), you will get the results shown in the following table.
 
 <!-- KFM: We should describe what are we showing in the following table, and point out anything interesting about this example. -->
 
@@ -141,7 +141,7 @@ Using the sample data and inventory value report configuration described at star
 
 ### Example 3 using the transactions level
 
-Using the sample data described at start of this topic, but changing the inventory value report configuration to use **Level**: *Transactions*, you will get the results shown in the following table and screenshots.
+Using the sample data described at start of this topic, but changing the inventory value report configuration to use **Level**: *Transactions*, you will get the results shown in the following table.
 
 <!-- KFM: We should describe what are we showing in the following table, and point out anything interesting about this example. -->
 

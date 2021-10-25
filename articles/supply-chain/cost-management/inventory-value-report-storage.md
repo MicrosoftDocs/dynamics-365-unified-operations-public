@@ -66,7 +66,7 @@ Use the **Inventory value reports** page to set up the content that you want to 
     - To edit an existing report, select it in the list pane and then select **Edit** on the Action Pane.
     - To create a new report, select **New** on the Action Pane.
 1. Make the following settings in the header of the new or selected report:
-    - **ID** – Enter a short identifier for the report. This value must be unique among all inventory value reports, and can't be edited after you create and save a new report configuration.
+    - **ID** – Enter a short identifier for the report. This value must be unique among all inventory value report configurations, and can't be edited after you save a new configuration.
     - **Name** – Enter a descriptive name for the report.
 
 1. If you are creating a new report configuration, then select **Save** on the Action Pane to enable the remaining settings.
