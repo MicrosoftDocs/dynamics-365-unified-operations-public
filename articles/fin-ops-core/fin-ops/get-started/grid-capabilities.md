@@ -50,7 +50,7 @@ There is a footer area at the bottom of every tabular grid in Finance and Operat
 - Grand totals at the bottom of configured, numeric columns
 - The number of rows in the dataset 
 
-This footer is hidden by default but you can turn it on. To show the footer for a grid, select the **Grid options** button in the grid header and then select the **Show footer** option. After you turn on the footer for a particular grid, that setting will be remembered until the user opts to hide the footer. To hide the footer, select **Hide footer** from the **Grid options** menu.  
+This footer is hidden by default but you can turn it on. To show the footer for a grid, select the **Grid options** button in the grid header, and then select the **Show footer** option. After you turn on the footer for a particular grid, that setting will be remembered until the user chooses to hide the footer. To hide the footer, select **Hide footer** on the **Grid options** menu.  
 
 ### Specifying columns with totals
 Currently, no columns show totals by default. Instead, this is considered a one-time setup activity, similar to adjusting the widths of columns in grids. Once you specify that you want to see totals for a column, that setting will be remembered the next time you visit the page.  
