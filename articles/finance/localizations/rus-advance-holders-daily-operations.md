@@ -128,7 +128,7 @@ Use this procedure to manually generate and post advance report lines. You can d
 6. In the **Amount** field, enter the amount that is spent for the transaction.
 
     > [!NOTE]
-    > The amount should only be positive. Don't enter a negative amount in advance report lines. Instead, select **Rejection** or **Close via cash**/ **Close via bank**.  
+    > The amount should be positive. Don't enter a negative amount on advance report lines. Instead, select **Rejection** or **Close via cash**/**Close via bank**.
 
 8. In the **Confirmed amount of advance report** field, enter the confirmed expense for the advance report.
 9. In the **Main account** field, select the general ledger account that the expense belongs to.
@@ -250,6 +250,5 @@ Use this procedure to cancel a periodic settlement for advance holder transactio
 2. In the **Date of transaction** field, select the advance holder transaction date. All transactions that were settled before this date will be reversed.
 3. On the **Records to include** FastTab, define additional filtering for the transactions to cancel settlements for.
 4. Select **OK** to cancel the periodic settlement.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
