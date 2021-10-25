@@ -3,8 +3,8 @@
 
 title: Finance and Operations apps in France
 description: This topic provides information about the availability of Finance and Operations apps in France's data centers.
-author: tfehr
-ms.date: 05/17/2021
+author: kfend
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: France
 # ms.search.industry: 
-ms.author: tfehr
+ms.author: kfend
 ms.search.validFrom: 2019-07-18
 ms.dyn365.ops.version:  
 
@@ -31,13 +31,34 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations apps, Power Apps, and Power Automate are available in France’s datacenters. This new deployment option serves customers in regulated industry and commercial organizations that do business with entities in France that require local data residency. 
+Dynamics 365 Finance, Dynamics 365 Commerce, and Dynamics 365 Supply Chain Management are generally available in France geography. These deployment options serve customers in regulated industry and commercial organizations that do business with entities in France that require local data residency. 
 
-The deployment of the Dynamics 365 services in France is built upon the foundational principles of security, privacy, compliance, transparency, and reliability. This deployment provides French organizations a complete cloud infrastructure and platform, and familiar productivity and business application tools. All of this means that customer data stays resident within France.
+The deployment of the Dynamics 365 services in France is built upon the foundational principles of security, privacy, compliance, transparency, and reliability. This deployment provides customers in France a complete cloud infrastructure and platform with familiar productivity and business application tools. All of this means that customer data stays resident in France. 
 
-The prerequisite to deploy to France is to use the localized version of Lifecycle Services (LCS), referred to as [Go Local LCS, FR.LCS.Dynamics.com](https://fr.lcs.dynamics.com/Logon/Index). If you’re interested in local deployment to a specific region, contact Microsoft to learn more about the onboarding process and potential limitations.
+## Provisioning 
 
-Microsoft strives to maintain functional parity between our commercially available service and Dynamics 365 offerings in France. However, there are a few exceptions affected by dependent service or partner-solution availability, market priorities, or compliance regulations.  For more information about these exceptions or for questions about services in France, contact [Microsoft Dynamics 365 Support](https://dynamics.microsoft.com/support/).
+The first prerequisite to deploy to France is to use the localized version of Lifecycle Services (LCS), referred to as [Go Local LCS, FR.LCS.Dynamics.com](https://fr.lcs.dynamics.com/Logon/Index). If you’re interested in local deployment to a specific region, contact Microsoft to learn more about the onboarding process and the process to add customerd and partners. 
 
+## Features not available 
+
+Microsoft strives to maintain functional parity between our commercially available service and Finance, Commerce, and Supply Chain Management in France. However, there are notable exceptions to this which are affected by dependent service or partner-solution availability, market priorities, or compliance regulations. For more information about these exceptions, or for questions about services in France, contact [Microsoft Dynamics 365 Support](https://dynamics.microsoft.com/support/). 
+
+  - Dynamics Regulatory Alert Submission service isn't available in France because it operates as a single global service. HOwever, you can access the service from [Global LCS](https://lcs.dynamics.com/Logon/Index). 
+  - There are no corporate libraries available in the APQC Business process modeler (BPM) library. For each go local region, LCS only published the Getting started library and the last published APQC. You can copy these to your project library to edit and publish as the corporate library. 
+  - Dynamics 365 Translation Service overview isn't available in Go Local LCS. However, you can access the service from Global LCS.
+  - Electronic reporting (ER) assets aren't visible in the Shared asset library. You can manually upload the assets from the LCS Global asset library. To work around this, run a script provided by Microsoft Engineering. Or, you can get access to Microsoft support ER assets by connecting to the Global repository. For more information, see [Regulatory Configuration Service (RCS) - Lifecycle Services (LCS) storage deprecation](../../finance/localizations/rcs-lcs-repo-dep-faq.md). 
+  - Embedded Power BI dashboard isn't available. 
+  - Environment monitoring of LCS doesn't expose the same dashboard interface as Global LCS, but the core KPIs are available. 
+  - Production environment update cadence for auto-update is missing in the UI.  
+  - Azure build pipeline using hosted agents: The nuggets package from the LCS library aren't available in the Shared asset library. 
+  - Environments are fully Microsoft Managed and don’t support all customer self-service. Customers may have to create service requests in LCS for the engineering team to operate. 
+  - Cloud scale unit for commerce, warehouse, and manufacturing. 
+  - Planning optimization service 
+  - Local business data deployment 
+
+## Additional resources 
+For information and links to resources that can help you set up legal entities with a primary address in France, see the topic, [France](../../finance/localizations/france.md). 
+
+For information about product availability per country and workload, see [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/en-us/availability-reports/). 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
