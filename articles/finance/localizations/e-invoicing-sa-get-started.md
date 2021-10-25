@@ -45,7 +45,9 @@ This section complements the **Country-specific configuration of application set
 4. On the **Configurations** tab, select **Application specific parameters**. In the **Lookups** section, make sure that **PaymentMethodSubstitutionLookup** lookup is selected.
 5. In the **Conditions** section, click on **Add** button to add a new condition.
 6. In the **Name** column, select from the list the value of the method of payment defined in the application. In the **Lookup result** column of this row, select from the list a standardized method of payment code according to [UN/EDIFACT Code list 4461](https://unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm).
-7. Add specific conditions for each method of payment defined in the system and save. You can also use **Blank** or **Not blank** placeholders values in the **Name** column instead of specific methods of payment.
+7. Add specific conditions for each method of payment defined in the system and save. 
+> [!NOTE]
+> You can also use **Blank** or **Not blank** placeholders values in the **Name** column instead of specific method of payment.
 
 ## Additional resources
 
