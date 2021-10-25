@@ -39,6 +39,6 @@ This topic explains how to turn on the Budget proposal feature in Finance Insigh
     3. Search for **Budget proposal**. If you do not find the feature, try searching for **(Preview) Budget proposal**. 
     4. Turn on the feature.
 
-2. Go to **Budgeting \> Setup \> basic Budgeting \> Budget proposal**, and select **Enable feature**.
+2. Go to **Budgeting \> Setup \> Basic Budgeting \> Budget proposal**, and select **Enable feature**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
