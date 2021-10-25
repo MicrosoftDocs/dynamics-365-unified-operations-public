@@ -37,20 +37,20 @@ The deployment of the Dynamics 365 services in France is built upon the foundati
 
 ## Provisioning 
 
-The first prerequisite to deploy to France is to use the localized version of Lifecycle Services (LCS), referred to as [Go Local LCS, FR.LCS.Dynamics.com](https://fr.lcs.dynamics.com/Logon/Index). If you’re interested in local deployment to a specific region, contact Microsoft to learn more about the onboarding process and the process to add customerd and partners. 
+The first prerequisite to deploy to France is to use the localized version of Lifecycle Services (LCS), referred to as [Go Local LCS, FR.LCS.Dynamics.com](https://fr.lcs.dynamics.com/Logon/Index). If you’re interested in local deployment to a specific region, contact Microsoft to learn more about the onboarding process and the process to add customers and partners. 
 
 ## Features not available 
 
-Microsoft strives to maintain functional parity between our commercially available service and Finance, Commerce, and Supply Chain Management in France. However, there are notable exceptions to this which are affected by dependent service or partner-solution availability, market priorities, or compliance regulations. For more information about these exceptions, or for questions about services in France, contact [Microsoft Dynamics 365 Support](https://dynamics.microsoft.com/support/). 
+Microsoft strives to maintain functional parity between our commercially available service and Finance, Commerce, and Supply Chain Management in France. However, there are notable exceptions which are affected by dependent service or partner-solution availability, market priorities, or compliance regulations. For more information about these exceptions, or for questions about services in France, contact [Microsoft Dynamics 365 Support](https://dynamics.microsoft.com/support/). 
 
-  - Dynamics Regulatory Alert Submission service isn't available in France because it operates as a single global service. HOwever, you can access the service from [Global LCS](https://lcs.dynamics.com/Logon/Index). 
-  - There are no corporate libraries available in the APQC Business process modeler (BPM) library. For each go local region, LCS only published the Getting started library and the last published APQC. You can copy these to your project library to edit and publish as the corporate library. 
+  - Dynamics Regulatory Alert Submission service isn't available in France because it operates as a single global service. However, you can access the service from [Global LCS](https://lcs.dynamics.com/Logon/Index). 
+  - There are no corporate libraries available in the APQC Business process modeler (BPM) library. For each go local region, LCS only published the Getting started library and the last published APQC. You can copy libraries to your project library to edit and publish as the corporate library. 
   - Dynamics 365 Translation Service overview isn't available in Go Local LCS. However, you can access the service from Global LCS.
-  - Electronic reporting (ER) assets aren't visible in the Shared asset library. You can manually upload the assets from the LCS Global asset library. To work around this, run a script provided by Microsoft Engineering. Or, you can get access to Microsoft support ER assets by connecting to the Global repository. For more information, see [Regulatory Configuration Service (RCS) - Lifecycle Services (LCS) storage deprecation](../../finance/localizations/rcs-lcs-repo-dep-faq.md). 
+  - Electronic reporting (ER) assets aren't visible in the Shared asset library. You can manually upload the assets from the LCS Global asset library. To work around this issue, run a script provided by Microsoft Engineering. Or, you can get access to Microsoft support ER assets by connecting to the Global repository. For more information, see [Regulatory Configuration Service (RCS) - Lifecycle Services (LCS) storage deprecation](../../finance/localizations/rcs-lcs-repo-dep-faq.md). 
   - Embedded Power BI dashboard isn't available. 
   - Environment monitoring of LCS doesn't expose the same dashboard interface as Global LCS, but the core KPIs are available. 
   - Production environment update cadence for auto-update is missing in the UI.  
-  - Azure build pipeline using hosted agents: The nuggets package from the LCS library aren't available in the Shared asset library. 
+  - Azure build pipeline using hosted agents: The nuggets package from the LCS library isn't available in the Shared asset library. 
   - Environments are fully Microsoft Managed and don’t support all customer self-service. Customers may have to create service requests in LCS for the engineering team to operate. 
   - Cloud scale unit for commerce, warehouse, and manufacturing. 
   - Planning optimization service 
