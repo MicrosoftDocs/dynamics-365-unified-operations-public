@@ -4,7 +4,7 @@
 title: Data events
 description: This topic provides an overview of data events.
 author: jaredha
-ms.date: 10/18/2021
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -31,7 +31,7 @@ Data events are events that are based on changes to data in Finance and Operatio
 
 All standard and custom entities in Finance and Operations apps that are enabled for Open Data Protocol (OData) can emit data events. In the data event catalog, each event for an entity is listed as a data event that subscriptions can be established for. The concept of activating the data event and associating it with an endpoint resembles the concept of business events. When a data event occurs, the payload of the event contains the corresponding entity record.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Data events are available only in environments that the Microsoft Power Platform integration is enabled for. For more information, see [Enable the Microsoft Power Platform integration](../power-platform/enable-power-platform-integration.md).
 
 ## Data event catalog
