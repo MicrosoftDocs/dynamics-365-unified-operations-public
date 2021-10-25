@@ -42,12 +42,14 @@ This section complements the **Country-specific configuration of application set
 1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
 2. In the **Electronic invoicing Features** page, verify that the **Saudi Arabian electronic invoice (SA)** Electronic invoicing feature is selected.
 3. On the **Versions** tab, verify that the **Draft** version is selected.
-4. On the **Configurations** tab, select **Application specific parameters**. In the **Lookups** section, make sure that **PaymentMethodSubstitutionLookup** lookup is selected.
+4. On the **Configurations** tab, go to **Application specific parameters** for a selected configuration. In the **Lookups** section, make sure that **PaymentMethodSubstitutionLookup** lookup is selected.
 5. In the **Conditions** section, click on **Add** button to add a new condition.
 6. In the **Name** column, select from the list the value of the method of payment defined in the application. In the **Lookup result** column of this row, select from the list a standardized method of payment code according to [UN/EDIFACT Code list 4461](https://unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm).
 7. Add specific conditions for each method of payment defined in the system and save. 
 > [!NOTE]
-> You can also use **Blank** or **Not blank** placeholders values in the **Name** column instead of specific method of payment.
+> You can also use **Blank** or **Not blank** placeholders values in the **Name** column instead of specific methods of payment.
+8. Complete, publish and deploy **Saudi Arabian electronic invoice (SA)** feature to the service environment. See the details in the **Deploy the Electronic invoicing feature to Service environment** section in the topic [Get started with Electronic invoicing](e-invoicing-get-started.md).
+9. Deploy **Saudi Arabian electronic invoice (SA)** feature to the connected application. See the details in the **Deploy the Electronic invoicing feature to Connected application** section in the topic [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 ## Additional resources
 
