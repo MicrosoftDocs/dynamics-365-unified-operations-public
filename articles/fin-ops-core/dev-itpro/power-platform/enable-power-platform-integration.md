@@ -145,10 +145,10 @@ After the general availability date of that version, you can verify that the Mic
 If a Finance and Operations apps environment has been manually linked to multiple Microsoft Power Platform environments, the process of enabling the Microsoft Power Platform integration for the environment can't be automated. The system can't automatically determine to which Power Platform environment the Finance and Operations apps environment should be linked for the Power Platform integration.
 
 There are two options to enable the Power Platform integration for a Finance and Operations environment that has links to multiple Power Platform environments:
-- Reconfigure your Dual-write and/or virtual entity solutions to link the Finance and Operations apps environment to the Power Platform environment created at deployment. Once all links are configured for the single Power Platform environment, you can enable the Power Platform integration in LCS following the steps outlined in the [Enable integration after environment deployment](enable-power-platform-integration#enable-after-deploy) section above. This is the preferred solution because it can be managed without Microsoft support.
+- Reconfigure your Dual-write and/or virtual entity solutions to link the Finance and Operations apps environment to the Power Platform environment created at deployment. Once all links are configured for the single Power Platform environment, you can enable the Power Platform integration in LCS following the steps outlined in the [Enable integration after environment deployment](enable-power-platform-integration.md#enable-after-deploy) section above. This is the preferred solution because it can be managed without Microsoft support.
 - To enable the Power Platform integration with a linked Power Platform environment other than the Power Platform environment created during deployment of the Finance and Operations environment, either work with your FastTrack solution architect or contact Microsoft Support to enable the Power Platform integration with a selected environment.
 
-See [Linking mismatch](../data-entities/dual-write/lcs-setup#linking-mismatch) in the Dual-write documentation for more information on related Dual-write configuration options.
+See [Linking mismatch](../data-entities/dual-write/lcs-setup.md#linking-mismatch) in the Dual-write documentation for more information on related Dual-write configuration options.
 
 ## Troubleshooting the setup
 
