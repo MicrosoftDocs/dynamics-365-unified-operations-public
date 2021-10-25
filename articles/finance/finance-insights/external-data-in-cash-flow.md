@@ -40,6 +40,8 @@ External data can be entered or imported into cash flow forecasts. Before extern
 
 For more information about the setup, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
 
+## Enter external data
+
 To enter external data for cash flow forecasts, you can use the Open in Excel experience for entering and modifying external data. Select the **External data** button, and then select either **Add External Data** or **Edit existing external data**. When the Microsoft Excel file is opened, you can enter information in the following fields:
 
 - **Entry ID** (unique)
