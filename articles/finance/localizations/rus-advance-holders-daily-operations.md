@@ -126,10 +126,15 @@ Use this procedure to manually generate and post advance report lines. You can d
 4. In the **Document name** field, enter the name of the confirming document.
 5. In the **Currency** field, select the currency that is used for the transaction.
 6. In the **Amount** field, enter the amount that is spent for the transaction.
-7. In the **Confirmed amount of advance report** field, enter the confirmed expense for the advance report.
-8. In the **Main account** field, select the general ledger account that the expense belongs to.
-9. Select **Distribute amounts** to open the **Accounting distributions** page.
-10. In the **Distributed by** field, select whether amounts should be distributed by extended price or discount percentage. You can create distributions in the following ways:
+
+    >[!NOTE]
+    >Amount should be only positive. A user should not enter negative amount in advance report lines. 
+    >Use the **Rejection** function or **Close via cash**/ **Close via bank** function.  
+
+8. In the **Confirmed amount of advance report** field, enter the confirmed expense for the advance report.
+9. In the **Main account** field, select the general ledger account that the expense belongs to.
+10. Select **Distribute amounts** to open the **Accounting distributions** page.
+11. In the **Distributed by** field, select whether amounts should be distributed by extended price or discount percentage. You can create distributions in the following ways:
 
     - To create multiple distributions that have the same quantity, percentage, or amount distribution, select **Split** for each distribution. Select a ledger account for each distribution, and then select **Distribute equally**.
     - To create one distribution at a time, select **Split**. Select the ledger account to distribute the invoice line to, and then enter the quantity, percentage, or amount to distribute. For example, if you selected **Percent** in the **Distributed by** field, enter a percentage in the **Percent** field.
