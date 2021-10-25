@@ -46,7 +46,7 @@ Microsoft strives to maintain functional parity between our commercially availab
   - Dynamics Regulatory Alert Submission service isn't available in France because it operates as a single global service. However, you can access the service from [Global LCS](https://lcs.dynamics.com/Logon/Index). 
   - There are no corporate libraries available in the APQC Business process modeler (BPM) library. For each go local region, LCS only published the Getting started library and the last published APQC. You can copy libraries to your project library to edit and publish as the corporate library. 
   - Dynamics 365 Translation Service overview isn't available in Go Local LCS. However, you can access the service from Global LCS.
-  - Electronic reporting (ER) assets aren't visible in the Shared asset library. You can manually upload the assets from the LCS Global asset library. To work around this issue, run a script provided by Microsoft Engineering. Or, you can get access to Microsoft support ER assets by connecting to the Global repository. For more information, see [Regulatory Configuration Service (RCS) - Lifecycle Services (LCS) storage deprecation](../../finance/localizations/rcs-lcs-repo-dep-faq.md). 
+  - Electronic reporting (ER) assets aren't visible in the Shared asset library. You can manually upload the assets from the LCS Global asset library. To work around this issue, run a script provided by Microsoft Engineering. Or, you can get access to Microsoft support ER assets by connecting to the Global repository. For more information, see [Regulatory Configuration Service (RCS) - Lifecycle Services (LCS) storage deprecation](../../../finance/localizations/rcs-lcs-repo-dep-faq.md). 
   - Embedded Power BI dashboard isn't available. 
   - Environment monitoring of LCS doesn't expose the same dashboard interface as Global LCS, but the core KPIs are available. 
   - Production environment update cadence for auto-update is missing in the UI.  
@@ -57,7 +57,7 @@ Microsoft strives to maintain functional parity between our commercially availab
   - Local business data deployment 
 
 ## Additional resources 
-For information and links to resources that can help you set up legal entities with a primary address in France, see the topic, [France](../../finance/localizations/france.md). 
+For information and links to resources that can help you set up legal entities with a primary address in France, see the topic, [France](../../../finance/localizations/france.md). 
 
 For information about product availability per country and workload, see [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/en-us/availability-reports/). 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
