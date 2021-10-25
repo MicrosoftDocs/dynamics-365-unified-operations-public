@@ -34,28 +34,19 @@ This topic explains how to turn on the Cash flow forecasts feature in Finance In
 
 > [!NOTE]
 > To use payment predictions in the cash flow, you must set up the Customer payment predictions feature as described in [Enable customer payment predictions](enable-cust-paymnt-prediction.md).
-
-1. Use information from the environment page in Microsoft Dynamics Lifecycle Services (LCS) to connect to the primary instance of Azure SQL for that environment. Run the following Transact-SQL (T-SQL) command to turn on flights for the sandbox environment. (You might have to turn on access for your IP address in LCS before you can connect remotely to Application Object Server \[AOS\].)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
-
-    > [!NOTE]
-    > Skip this step if you're using version 10.0.20 or later, or if you're using a Service Fabric deployment. The Finance insights team should already have turned on the flight for you. If you don't see the feature in the **Feature management** workspace, or if you experience issues when you try to turn it on, contact <fiap@microsoft.com>.
   
-2. Open the **Feature management** workspace, and follow these steps:
+1. Open the **Feature management** workspace, and follow these steps:
 
     1. Select **Check for updates**.
-    2. Turn on the following features:
+    2. Go to **All** tab.
+    3. Search for **(Preview) Cash flow forecasts**. If you do not find the feature, try searching for **Cash flow forecasts**. 
+    4. Turn on the feature.
 
-        - New grid control
-        - Grouping in grids (preview) 
-        - Customer payment predictions (preview)
-        - Cash flow forecasts (preview)
-
-3. Go to **Cash and bank management \> Cash flow forecast setup**, and add the liquidity accounts that should be included in the forecasts.
+3. Go to **Cash and bank management \> Cash flow forecast setup**, and add the liquidity accounts that should be included in the forecasts. Also setup **Liquidity account for payments** on **Accounts receivable** and **Accounts payable** tabs. Make sure to recalculate cash flow forecast.
 
     > [!NOTE]
     > If liquidity accounts aren't set up, the cash flow can't be generated.
+    > For more information about the setup, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
 
 4. Go to **Cash and bank management \> Setup \> Finance Insights (preview) \> Cash flow forecasts (preview)**, and follow these steps:
 
