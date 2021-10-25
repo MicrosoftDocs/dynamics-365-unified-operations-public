@@ -38,9 +38,11 @@ This topic explains how to turn on and configure the Customer payment prediction
 
 1. Turn on the Customer payment predictions feature:
 
-    1. Go to **System administration \> Workspaces \> Feature management**.
-    2. Find the feature that is named **(Preview) Customer payment predictions**.
-    3. Select **Enable now**.
+    1. Open the **Feature management** workspace, and follow these steps:
+    2. Select **Check for updates**.
+    3. Go to **All** tab.
+    4. Search for **Customer payment predictions**. If you do not find the feature, try searching for **(Preview) Customer payment predictions**. 
+    5. Turn on the feature.
 
     The Customer payment predictions feature is now turned on and ready to be configured.
 
