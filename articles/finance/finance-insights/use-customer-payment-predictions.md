@@ -80,11 +80,11 @@ In this case, payments are projected for each bucket in the following way.
 
 The **Related information** section on the right side of the page shows more details about the predictions:
 
-- For the transaction that is selected in the grid, the **Payment predictions** FastTab shows the details of the payment predictions in the **On time**, **Late**, and **Very Late** buckets. The **Top factors** section shows the top factors that influenced the payments. The top factors are attributes of the selected transaction and/or the customer for that transaction.
+- For the transaction that is selected in the grid, the **Payment predictions** FastTab shows the details of the payment predictions in the **On time**, **Late**, and **Very Late** buckets.
 - The **Customer insights** FastTab shows the current invoice, payment, and collections statistics for the customer for the selected transaction.
 - The **Customer history** FastTab shows the customer's payment history in the **On time**, **Late**, and **Very late** buckets.
 
-The data in the **Top factors** section, and on the **Customer insights** and **Customer history** FastTabs, helps explain the payment predictions. It can help increase your confidence in the efficacy of the predictions.
+The data in the **Customer insights** and **Customer history** FastTabs, helps explain the payment predictions. It can help increase your confidence in the efficacy of the predictions.
 
 ## Improving the accuracy of payment predictions
 
