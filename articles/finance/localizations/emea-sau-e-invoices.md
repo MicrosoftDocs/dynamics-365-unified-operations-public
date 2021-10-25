@@ -23,7 +23,7 @@ ms.search.region: Saudi Arabia
 # ms.search.industry: 
 ms.author: ilyako
 ms.search.validFrom: 2021-10-15
-ms.dyn365.ops.version: 10.0.23
+ms.dyn365.ops.version: 10.0.21
 
 ---
 
