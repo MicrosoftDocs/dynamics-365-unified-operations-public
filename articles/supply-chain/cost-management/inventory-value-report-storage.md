@@ -27,11 +27,6 @@ With the inventory value report, you can:
 - Save report configurations that can be used multiple times.
 - Add ranges to filter data when you run a report.
 
-> [!NOTE]
-> The report won't include subtotals that are defined in the report layout. It also won't include general ledger balances, even when they are defined in the report layout. Reconciliation to the general ledger must be done by using trial balances. <!-- KFM: Does this note apply to both types of reports, or just storage? -->
-
-<!-- KFM: I think one reason we are adding this new text is that we wanted to provide more information about "reconciliation". Maybe we should do that here in the intro and/or add a section about it (here or in the other topic). Otherwise, we rarely mention it.  -->
-
 ## Types of inventory value reports
 
 There are two types of inventory value reports: *inventory value report* and *inventory value report storage*.
@@ -49,6 +44,9 @@ When you view the report in your browser, columns and aggregate balances are dyn
 Report results are stored in the **Inventory value** data entity. Therefore, you can filter and export the results to a format such as comma-separated values (CSV) or Microsoft Excel format.
 
 The *inventory value report storage* report is helpful when the output contains many lines. For example, you have 50,000 items, and 300 stores have been created as warehouses. In this case, if you request inventory ending balances by item, site, and warehouse, the output will contain many lines.
+
+> [!NOTE]
+> The inventory value report storage won't include subtotals that are defined in the report layout. It also won't include general ledger balances, even when they are defined in the report layout. Reconciliation to the general ledger must be done by using trial balances. However, the standard inventory value report does include these subtotals and balances.
 
 ## Turn on the Inventory value report storage feature
 
@@ -72,43 +70,44 @@ Use the **Inventory value reports** page to set up the content that you want to 
 1. If you are creating a new report configuration, then select **Save** on the Action Pane to enable the remaining settings.
 1. Expand the **General** FastTab and make the following settings:  
     - **Date interval** – Choose a pre-defined date interval. This date interval can be overridden when you run the report.
-    - **Range** – Choose either *Posting date* or *Transaction Time*, depending on which value the report should use to retrieve data. <!-- KFM: This isn't clear. Please revise. -->
-    - **Dimension set** – Choose which set of dimensions to run the data for. For example, you might run the data by *Main account*, or by *Main account + Business unit*. You must choose a dimension set that has two or fewer dimensions. <!-- KFM: Where are these defined? Can we link to a topic with more info about how to set these up? What do we mean by "run the data"? -->
+    - **Range** – Choose either *Posting date* or *Transaction Time*, depending on which date and time the report should use when retrieving records for use in the report.
+    - **Dimension set** – Choose which set of dimensions (as defined in the general ledger) to run the data for. For example, you might run the data by *Main account*, or by *Main account + Business unit*. You must choose a dimension set that has two or fewer dimensions. See also [Financial dimension sets](../../finance/general-ledger/financial-dimension-sets.md).
 
-1. Expand the **Columns** FastTab and make the following settings. <!-- KFM: Can we briefly introduce what these options have in common? (Eg, "Use these setting to control which columns will be included in the report.") -->
-    - **Inventory** – Set to *Yes* to reconcile the inventory value with inventory G/L accounts balance <!-- KFM: Spell out "G/L" on first use. Are we actually reconciling anything here, or are we just including information that we can use to reconcile later? -->.
-    - **WIP** – Set to *Yes* to reconcile the WIP value with WIP G/L accounts balance <!-- KFM: Spell out WIP. Are we actually reconciling anything here, or are we just including information that we can use to reconcile later? -->. When you use this option, only the physical quantities and amounts of inventory in WIP status will show in the report. Production orders that are in WIP status have been picked or reported as finished but not ended. <!-- KFM: Is it production orders or inventory that can have "WIP status" (or both)? -->
-    - **Deferred COGS** – Set to *Yes* to display a column showing the physical quantities and amounts of inventory for the mark of Deferred COGS <!-- KFM: Spell out COGS. What do you mean by "for the mark of Deferred COGS"? -->. The report will display the financial quantities and amounts for the mark of COGS <!-- KFM: "for the mark of Deferred COGS"? -->. Deferred COGS are shown using physical quantities and amounts because they offset packing slip quantities and amounts. However, COGS are shown using financial quantities and amounts because they offset the invoice quantities and amounts.
-    - **COGS** – <!-- KFM: Description needed. -->
+1. Expand the **Columns** FastTab and make the following settings. These settings control which columns your report will include and the types of data they will contain.
+    - **Inventory** – Set to *Yes* to show the inventory values, which you can then reconcile with the general ledger accounts balances.
+    - **WIP** – Set to *Yes* to show the work in process (WIP) values, which you can then reconcile with with WIP accounts balances in the general ledger. When you use this option, only the physical quantities and amounts of inventory in WIP status will show in the report. Production orders that are in WIP status have been picked or reported as finished but not ended.
+    - **Deferred COGS** – Set to *Yes* to display a column showing the physical quantities and amounts of inventory for the deferred cost of good sold (deferred COGS). Deferred COGS are shown using physical quantities and amounts because they offset packing slip quantities and amounts.
+    - **COGS** – Set to *Yes* to display a column showing the financial quantities and amounts for the cost of goods sold (COGS). COGS are shown using financial quantities and amounts because they offset the invoice quantities and amounts.
     - **Profit and loss** – Set to *Yes* to display a column for the financial amount posted to the profit and loss accounts for inventory.
-    - **Print cumulative account values for comparison** – Set to *Yes* to display a column showing the G/L accounts balance in the report. By doing this, you won't need to check the trail balance. This works only with the *inventory value report*, not *inventory value report storage*. Please note that choosing a Total account <!-- KFM: How do I "choose a total account"? --> will show both the amounts of each of the inventory accounts included in the total account and the amount of the total account. After you enable this option, you must fill in the G/L account you want to reconcile <!-- KFM: Where/how do I do this? -->.
-    - **Inventory account** – <!-- KFM: Description needed. -->
-    - **WIP account** – <!-- KFM: Description needed. -->
-    - **Deferred COGS account** – <!-- KFM: Description needed. -->
-    - **COGS account** – <!-- KFM: Description needed. -->
+    - **Print cumulative account values for comparison** – Set to *Yes* to display a column showing the general ledger accounts balance in the report. By doing this, you won't need to check the trail balance. This works only with the *inventory value report*, not *inventory value report storage*. After you enable this option, you must use the following fields to specify each of the general ledger accounts you want to list, depending on which of the **Financial position** options you have enabled (note that choosing a *total* account for any of these settings will show both the amounts of each of the inventory accounts included in the total account and the amount of the total account).
+        - **Inventory account** – Specify the general ledger account for which to show inventory information (both **Inventory** and **Print cumulative account values for comparison** must be set to *Yes*).
+        - **WIP account** – Specify the general ledger account for which to show WIP information (both **WIP** and **Print cumulative account values for comparison** must be set to *Yes*).
+        - **Deferred COGS account** – Specify the general ledger account for which to show deferred COGS information (both **Deferred COGS** and **Print cumulative account values for comparison** must be set to *Yes*).
+        - **COGS account** – Specify the general ledger account for which to show COGS information (both **COGS** and **Print cumulative account values for comparison** must be set to *Yes*).
+
     - **Summarize physical and financial values** – Set to *Yes* to display a column showing the total inventory quantity and inventory amount (summarizing both physical and financial inventory values). When set to *No*, the report report will show both physical and financial inventory values.
-    - **Include not posted to ledger** Set to *Yes* to display a column showing the transactions that never posted to G/L. This can occur for the following types of items:
+    - **Include not posted to ledger** Set to *Yes* to display a column showing the transactions that never posted to the general ledger. This can occur for the following types of items:
         - Received and not yet invoiced items where the **Post physical inventory** option unselected for the relevant item model group.
         - Received and not yet invoiced items when the **Post product receipt in ledger** option isn't selected in **Accounts payable parameters** (**Accounts payable \> Setup \> Accounts payable parameters**, **General** tab, **Product receipt** FastTab).
 
     - **Calculate average unit cost** – Set to *Yes* to display a column showing the average unit cost. The average unit cost is the total quantity divided by the total amount.
-    - **Total quantity and value** – Set to *Yes* to display columns showing the total quantity of physical inventory (and financial quantities) and the total amount of physical inventory (and financial amounts). You can only enable this option when the **Summarize physical and financial values** option is not enabled. <!-- KFM: Please confirm my revision. Also, what is the difference between "quantity" and "amount"? -->
-    - **Inventory dimensions** – In this grid, select the dimensions to show in the report. Only dimensions that have the **Financial inventory** option enabled will show values in the report; other dimensions will show only blank columns. <!-- KFM: What's the difference between "view" and "total"? -->
-    - **Resource ID** – Set options related to displaying item numbers <!-- KFM: More detail needed. How are the "view" and "total" options different? -->. The information in the **Resource** column of the inventory value report is based on a combination of the `ItemID`, `WorkcenterID`, and `CodeID` fields. <!-- KFM: The purpose of this sentence, and the following bullet list, aren't clear. -->
-        - Material: Resource = `ItemID`
-        - Labor: Resource = `WorkCenterID`
-        - Indirect cost: Resource = `CodeID`
+    - **Total quantity and value** – Set to *Yes* to display columns showing the total quantity of physical inventory (and financial quantities) and the total amount of physical inventory (and financial amounts). You can only enable this option when the **Summarize physical and financial values** option is not enabled.
+    - **Inventory dimensions** – In this grid, select the **View** check box for each dimension that you want to show in the report. Only dimensions that have the **Financial inventory** option enabled will show values in the report; other dimensions will show only blank columns. For those dimensions you choose to show, you can also mark the **Total** check box to also include totals.
+    - **Resource ID** – Set **View** to *Yes* to display a column that identifies the item for each listed row. Set **Total** to *Yes* to also include totals. Depending on the type of item being listed in each row, the information in this column will be one of the following:
+        - **Material**: Shows the `ItemID` field value for the relevant material record.
+        - **Labor**: Shows the `WorkCenterID` field value for the relevant labor record.
+        - **Indirect cost**: Shows the `CodeID` field value for the relevant cost record.
 
-        If either **Resource ID** or **Resource Group** are not marked, you will only see a total inventory value based on the inventory dimensions you selected. <!-- KFM: We have four options here. Which combination of options are you referring to? -->
+        If neither **Resource ID** nor **Resource Group** has **View** enabled, you will only see a total inventory value based on the inventory dimensions you selected.
 
-    - **Resource ID** – Set options related to displaying item groups <!-- KFM: More detail needed. How are the "view" and "total" options different? -->. The information in the **Resource** column of the inventory value report is based on a combination of the `ItemGroup`, `WorkcenterGroup`, and `CostGroup` (`CostGroupType` = Indirect) fields. <!-- KFM: The purpose of this sentence (especially the part in parenthesis), and the following bullet list, aren't clear. -->
-        - Material: Resource = `ItemGroup`
-        - Labor: Resource = `WorkcenterGroup`
-        - Indirect cost: Resource = `CostGroup`
+    - **Resource Group** – Set **View** to *Yes* to display a column that identifies the resource group for each row. Set **Total** to *Yes* to also include totals. Depending on the type of item being listed in each row, the information in this column will be one of the following:
+        - **Material**: Shows the `ItemGroup` field value for the relevant material record.
+        - **Labor**: Shows the `WorkcenterGroup` field value for the relevant labor record.
+        - **Indirect cost**: Shows the `CostGroup` field value for the relevant cost record (`CostGroupType` must be *Indirect*).
 
-        If either **Resource ID** or **Resource Group** are not marked, you will only see a total inventory value based on the inventory dimensions you selected. <!-- KFM: We have four options here. Which combination of options are you referring to? -->
+        If neither **Resource ID** nor **Resource Group** has **View** enabled, you will only see a total inventory value based on the inventory dimensions you selected.
 
-1. Expand the **Rows** FastTab and make the following settings. <!-- KFM: Can we briefly introduce what these options have in common? (Eg, "Use these setting to control which rows will be included in the report.") -->
+1. Expand the **Rows** FastTab and make the following settings. These settings control which rows your report will include.
     - **Material** – <!-- KFM: Description needed. -->
     - **Labor** – <!-- KFM: Description needed. -->
     - **Indirect cost** – <!-- KFM: Description needed. -->
@@ -118,34 +117,6 @@ Use the **Inventory value reports** page to set up the content that you want to 
         - *Totals* – <!-- KFM: Description needed. -->
 
     - **Include beginning balance** – <!-- KFM: Description needed. -->. This option is only available when **Detail level** is set to *Transactions*.
-
-## New section <!-- KFM: New title is needed -->
-
-<!-- KFM: The purpose of the following information isn't clear. It seems to require a new section (not related to report configuration). I think we are describing the report output, but that should be made clear in a new introduction added here. Maybe we should move this to the examples topic?  -->
-
-Supply Chain Management supports the following two important concepts regarding inventory status: <!-- KFM: Maybe also describe the difference between "amount" and "quantity". -->
-
-- *Financial updated* – Indicates that the inventory transactions are already invoiced. For production orders, it indicates the end of a production order.
-- *Physical updated* – Indicates that the inventory transactions aren't yet invoiced, but have been received or shipped. For production orders, it indicates that material has been picked or the production order has been reported as finished.
-
-Understanding these two concepts should make it easy to understand the following columns: <!-- KFM: Where are these columns? Report output? -->
-
-- **Inventory: Financial Quantity** – The quantity that has been financially updated.
-- **Inventory: Financial Amount** – The amount value of inventory that has been financially updated.
-- **Inventory: Physical Quantity Posted** – The quantity that has been physical updated.
-- **Inventory: Physical Amount Posted** – The amount value of inventory that has been physical updated.
-- **Inventory: Physical Quantity Not Posted** – The quantity that has inventory transactions but hasn't been posted to the GL <!-- KFM: Spell out "GL". Same as "G/L"? -->. For example, suppose you have an item model group where the **Post physical inventory** and **Post financial inventory** options aren't selected, and you have an item that is linked to this group. Then you create a purchase order, receive it, and invoice it. If you then check the inventory value report for this item, you will see that the quantity and the value in this purchase order are shown under the columns **Inventory: Physical Quantity Not Posted** and **Inventory: Physical Amount Not Posted**.
-- **Inventory: Physical Amount Not Posted** – Don't include this amount when doing inventory reconciliation because this amount is not posted into G/L. <!-- KFM: This isn't clear. Doesn't match the other entries in this list. -->
-- **Inventory: Quantity** – The total quantity of all the quantity columns in the report.
-- **Inventory: Amount** – The total quantity of all the amount columns in the report. Don't use this column when doing inventory reconciliation if your report includes the **Inventory: Physical Amount Not Posted** column. You must exclude **Inventory: Physical Amount Not Posted** from the total amount. <!-- When and how must I exclude this> -->
-- **Average unit cost** – The total amount divided by the total quantity.
-
-Normally, you will use the inventory value report to view the inventory value and quantity, but sometimes you won't see all of the relevant inventory dimensions in the report. To make inventory dimensions show in the report:
-
-1. Check the item storage and tracking dimension groups. Only dimensions that have the **Financial inventory** option enabled can be shown in the report.
-2. Go to **Cost management \> Inventory accounting policies setup \> Inventory value reports**, select the report configuration that you used to view <!-- KFM: generate? --> the report and make sure the required inventory dimensions are selected. <!-- KFM: View or Total columns? Both? Either?-->
-
-For example, suppose you have an item *A0001*. In the storage dimensions group, only the site is enabled for financial inventory. The site and warehouse are both enabled for physical inventory. In the tracking dimension group, the batch number is enabled for physical inventory but not enabled for financial inventory. Now you use a report configuration where site, warehouse, and batch number are all selected. Then, when you view the report, you will only see a value for the site, and the warehouse and batch number columns are blank. This shows that inventory value reports can only show inventory dimension that are enabled for financial inventory.
 
 ## Generate an Inventory value report storage report
 
@@ -157,7 +128,7 @@ Follow these steps to generate and store an **Inventory value storage** report.
     - **Name** – Enter a unique name for the report
     - **ID** – Select the [inventory value report configuration](#report-configuration) that you want to use for this report. The configuration establishes options for the columns and rows that will be included in your report.
     - **Date interval** – Use the fields in this section to define which records are included in the report. To define the date interval, you can either select a preset range (relative to the report generation date) in the **Date interval code** field, or select specific dates in the **From date** and **To date** fields.
-1. On the **Records to include** FastTab, set up filters and constraints to define which data is included in the report. Select **Filter** to open a standard query editor dialog, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management. All of these filters will be applied to the inventory transactions but not the G/L balance <!-- KFM: Spell out "G/L" -->. Keep this in mind when setting up your filters. Otherwise, you may see a discrepancy between inventory and the G/L.
+1. On the **Records to include** FastTab, set up filters and constraints to define which data is included in the report. Select **Filter** to open a standard query editor dialog, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management. All of these filters will be applied to the inventory transactions but not the general ledger balance. Keep this in mind when setting up your filters. Otherwise, you may see a discrepancy between inventory and the general ledger.
 1. On the **Run in the background** FastTab, specify how, when, and how often the report is generated. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
 
     > [!NOTE]
@@ -168,7 +139,7 @@ Follow these steps to generate and store an **Inventory value storage** report.
 After the batch job is completed, the report will be listed on the **Inventory value report storage** page. You might have to refresh the page to see the report.
 
 > [!IMPORTANT]
-> If you select the same date for both **From date** and **To date** and also enable the **Include beginning balance** option in the selected inventory value report configuration, you may get incorrect beginning balance. This is a by-design scenario. <!-- KFM: How/why is this "by design"? -->
+> If you select the same date for both **From date** and **To date** and also enable the **Include beginning balance** option in the selected inventory value report configuration, you may get incorrect beginning balance.
 
 ## Explore an Inventory value report storage report
 
@@ -224,8 +195,36 @@ Use the following procedure generate a standard inventory value report:
     - **Name** – Enter a unique name for the report
     - **ID** – Select the [inventory value report configuration](#report-configuration) that you want to use for this report. The configuration establishes options for the columns and rows that will be included in your report.
     - **Date interval** – Use the fields in this section to define which records are included in the report. To define the date interval, you can either select a preset range (relative to the report generation date) in the **Date interval code** field, or select specific dates in the **From date** and **To date** fields.
-1. On the **Records to include** FastTab, set up filters and constraints to define which data is included in the report. Select **Filter** to open a standard query editor dialog, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management. <!-- KFM: Does the note for this tab in the "storage" report section also apply here? -->
-1. On the **Run in the background** FastTab, specify how, when, and how often the report is generated. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.  <!-- KFM: Which, if any, of these settings is relevant for the standard IV report? -->
+1. On the **Records to include** FastTab, set up filters and constraints to define which data is included in the report. Select **Filter** to open a standard query editor dialog, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Supply Chain Management.
+1. On the **Run in the background** FastTab, specify how, when, and how often the report is generated. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
 1. Select **OK** to apply your settings and close the dialog box, then the report will appear on screen.
+
+## How to read inventory value reports
+
+This section provides some guidance about how to read and understand an inventory value report.
+
+Supply Chain Management supports the following two important concepts regarding inventory status:
+
+- *Financial updated* – Indicates that the inventory transactions are already invoiced. For production orders, it indicates the end of a production order.
+- *Physical updated* – Indicates that the inventory transactions aren't yet invoiced, but have been received or shipped. For production orders, it indicates that material has been picked or the production order has been reported as finished.
+
+Understanding these two concepts should make it easy to understand the following columns in the report output:
+
+- **Inventory: Financial Quantity** – The quantity that has been financially updated.
+- **Inventory: Financial Amount** – The amount value of inventory that has been financially updated.
+- **Inventory: Physical Quantity Posted** – The quantity that has been physical updated.
+- **Inventory: Physical Amount Posted** – The amount value of inventory that has been physical updated.
+- **Inventory: Physical Quantity Not Posted** – The quantity that has inventory transactions but hasn't been posted to the general ledger. For example, suppose you have an item model group where the **Post physical inventory** and **Post financial inventory** options aren't selected, and you have an item that is linked to this group. Then you create a purchase order, receive it, and invoice it. If you then check the inventory value report for this item, you will see that the quantity and the value in this purchase order are shown under the columns **Inventory: Physical Quantity Not Posted** and **Inventory: Physical Amount Not Posted**.
+- **Inventory: Physical Amount Not Posted** – You can set your reports to show un-posted amounts, but if you are using the report for inventory reconciliation, then don't use this value because this amount is not posted to the general ledger.
+- **Inventory: Quantity** – The total quantity of all the quantity columns in the report.
+- **Inventory: Amount** – The total quantity of all the amount columns in the report. Don't use this column when doing inventory reconciliation if your report includes the **Inventory: Physical Amount Not Posted** column, in which case you must exclude **Inventory: Physical Amount Not Posted** from the total amount.
+- **Average unit cost** – The total amount divided by the total quantity.
+
+Normally, you will use the inventory value report to view the inventory value and quantity, but sometimes you won't see all of the relevant inventory dimensions in the report. If you aren't seeing the dimensions you expect, check the following settings:
+
+- Check the item storage and tracking dimension groups. Only dimensions that have the **Financial inventory** option enabled can be shown in the report.
+- Go to **Cost management \> Inventory accounting policies setup \> Inventory value reports**, select the report configuration that you used to generate the report and make sure the required inventory dimensions are selected in the **View** column.
+
+For example, suppose you have an item *A0001*. In the storage dimensions group, only the site is enabled for financial inventory. The site and warehouse are both enabled for physical inventory. In the tracking dimension group, the batch number is enabled for physical inventory but not enabled for financial inventory. Now you use a report configuration where site, warehouse, and batch number are all selected. Then, when you view the report, you will only see a value for the site, and the warehouse and batch number columns are blank. This shows that inventory value reports can only show inventory dimension that are enabled for financial inventory.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

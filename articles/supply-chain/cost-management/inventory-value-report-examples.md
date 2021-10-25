@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-Inventory value reports provide details about your inventory physical and financial quantities and amounts. This topic provides some examples of results presented in inventory value reports. 
+Inventory value reports provide details about your inventory physical and financial quantities and amounts. This topic provides some examples of results presented in inventory value reports.
 
 For more information about how to generate an use each type of inventory value report, see [Inventory value reports](inventory-value-report-storage.md).
 
