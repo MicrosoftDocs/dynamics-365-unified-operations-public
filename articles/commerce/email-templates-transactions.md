@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 This topic describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce provides an out-of-box solution for sending emails that alert customers about transactional events (for example, when an order is placed, an order is ready for pickup, or an order has been shipped). This topic describes the steps for creating, uploading, and configuring the email templates that are used to send transactional emails.
+Dynamics 365 Commerce provides an out-of-box solution for sending emails that alert customers about transactional events. For example, emails can be sent when an order is placed, is ready for pickup, or has been shipped. This topic describes the steps for creating, uploading, and configuring the email templates that are used to send transactional emails.
 
 ## Notification types
 
@@ -45,11 +45,11 @@ Dynamics 365 Commerce supports the following notification types.
 The *order created* notification type is triggered when a new sales order is created in Commerce headquarters.
 
 > [!NOTE]
-> The order created notification type isn't triggered for cash and carry transactions that occur at a point of sale (POS) terminal. In this case, an emailed and/or printed receipt is generated instead. For more information, see [Send email receipts from Modern POS (MPOS)](email-receipts.md).
+> The order created notification type isn't triggered for cash-and-carry transactions that occur at a point of sale (POS) terminal. In this case, an emailed and/or printed receipt is generated instead. For more information, see [Send email receipts from Modern POS (MPOS)](email-receipts.md).
 
 ### Order confirmed
 
-The *order confirmed* notification type is triggered when an order confirmation document is generated on the sales order from Commerce headquarters.
+The *order confirmed* notification type is triggered when an order confirmation document is generated for a sales order from Commerce headquarters.
 
 ### Picking completed
 
@@ -78,17 +78,17 @@ For more information about the customer check-in and order lookup features, see 
 
 ### Order ready for pickup
 
-The *order ready for pickup* notification type is triggered when an order that has one or more lines where the mode of delivery is **Customer pickup** is marked as packed.
+The *order ready for pickup* notification type is triggered when an order is marked as packed, and the mode of delivery is set to **Customer pickup** on one or more order lines.
 
 > [!NOTE]
-> The order ready for pickup notification type has been deprecated in favor of the packing completed notification type, which is customized by mode of delivery.
+> The order ready for pickup notification type has been deprecated in favor of the packing completed notification type. This notification type is customized by mode of delivery.
 
 ### Order shipped
 
 The *order shipped* notification type is triggered when an order that has a non-store-pickup mode of delivery is invoiced.
 
 > [!NOTE]
-> The order shipped notification type has been deprecated in favor of the order invoiced notification type, which is customized by mode of delivery.
+> The order shipped notification type has been deprecated in favor of the order invoiced notification type. This notification type is customized by mode of delivery.
 
 ### Order invoiced
 
@@ -162,11 +162,11 @@ To create an email template, follow these steps.
 1. Select **New**.
 1. Under **General**, set the following fields:
 
-    - **Email ID** – The email ID is the unique identifier for a template, and it's the value that is shown when you select a template to map to an event.
+    - **Email ID** – The email ID is the unique identifier for a template. It's the value that is shown when you select a template to map to an event.
     - **Email description** – You can use this optional field to provide a description of the template. The value that you enter appears only in Commerce headquarters.
     - **Sender name** – The name that you enter appears in the "from" field of most email clients.
     - **Sender email** – Enter the email address that should be used for emails that are sent by using this template.
-    - **Default language code** – This field specifies the localized version of the email that is sent by default, if no language is provided by the channel that invokes this template.
+    - **Default language code** – This field specifies the localized version of the email that is sent by default, if the channel that invokes this template doesn't specify a language.
 
 1. Under **Email message content**, select **New**.
 1. In the **Language** field, enter the language for the email template. You can add more languages and localized templates later.
@@ -178,7 +178,7 @@ To create an email template, follow these steps.
 The message body of your email is composed in HTML. You can use any layout, styling, and branding that HTML and inline Cascading Style Sheets (CSS) allow for. You can also use images, if you host them on a publicly available web endpoint. To add an image, enter the image's URL in the **src** attribute of the HTML **&lt;img&gt;** tag.
 
 > [!NOTE]
-> Email clients impose layout and style limitations that might require adjustments to the HTML and CSS that you use for the message body. We recommend that you familiarize yourself with the best practices for creating HTML that will be supported by the most popular email clients.
+> Email clients impose layout and style limitations that might require adjustments to the HTML and CSS that you use for the message body. We recommend that you familiarize yourself with the best practices for creating HTML that the most popular email clients will support.
 
 ## Add placeholders to the email message body
 
@@ -268,7 +268,7 @@ The following placeholders retrieve and show data for individual products (lines
 
 ### Format of order line placeholders in the email message body
 
-When you create the HTML for the individual order lines in the email message body, surround the repeating block of HTML and placeholders for the lines with the following placeholders that are put inside HTML comment tags.
+When you create the HTML for the individual order lines in the email message body, surround the repeating block of HTML and placeholders for the lines with the following placeholders. Notice that the placeholders are inside HTML comment tags.
 
 ```html
 <!--%tablebegin.salesline%-->
@@ -301,7 +301,7 @@ Here is an example.
 
 Receipts can be emailed to customers who make purchases at a retail point of sale (POS). In general, the steps for creating the emailed receipt template are the same as the steps for creating templates for other transactional events. However, the following changes are required:
 
-- The text of the receipt is inserted into the email by using the **%message%** placeholder. To ensure that the receipt body is correctly rendered, surround the **%message%** placeholder with HTML **&lt;pre&gt;** and **&lt;/pre&gt;** tags.
+- The **%message%** placeholder is used to insert the text of the receipt into the email. To ensure that the receipt body is correctly rendered, surround the **%message%** placeholder with HTML **&lt;pre&gt;** and **&lt;/pre&gt;** tags.
 - The **%receiptid%** placeholder can be used to show a QR code or bar code that represents the receipt ID. (QR codes and bar codes are dynamically generated and served by a third-party service.) For more information about how to show a QR code or bar code in an emailed receipt, see [Add a QR code or bar code to transactional and receipt emails](add-qr-code-barcode-email.md).
 
 ## Upload the email HTML
@@ -316,7 +316,7 @@ To upload a new or edited email template HTML, follow these steps.
 1. In the dialog box that appears, select **Browse**. Browse to the HTML document that you want to upload, select it, and then select **Open**.
 1. Select **Upload**.
 1. After your email HTML appears in the preview window, select **OK**.
-1. Make sure that the **Has body** check box is selected for the row.
+1. Make sure that the **Has body** checkbox is selected for the row.
 
 If you've already configured Commerce headquarters to send email, your new or updated email will be sent to all customers who perform a transaction that invokes the event that is mapped to the template.
 
