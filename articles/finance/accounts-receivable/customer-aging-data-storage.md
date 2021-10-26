@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the process of using external storage for customer aging data. In Microsoft Dynamics 365 Finance, you can run Customer aging data storage to make the output available to export to an external system. When running the process, the same aging report options are available. The details are always included in the exported data.
+This topic describes the process of using external storage for customer aging data. In Microsoft Dynamics 365 Finance, you can run Customer aging data storage to make the output available to export to an external system. When running the process, the same aging report options that are available in the system are available to external systems. The details are always included in the exported data.
 
-Making customer aging data available to an external system for storage is helpful in cases where the output contains many customers and/or many transactions. When the existing Customer aging report times out because it has too much data to print, this provides an alternative method to get the same data. 
+Making customer aging data available to an external system for storage is helpful in cases where the output contains many customers and/or many transactions. When the existing Customer aging report times out because it has too much data to print, this feature provides an alternative method to get the same data. 
 
 ## Enable the Customer aging data storage feature
 
@@ -48,9 +48,9 @@ Before you can use this feature, you must enable it in your system. Administrato
 3. In the **Name** field, enter a name for the process.
 4. Select the rest of the parameters as you require. 
 
-   Transaction details are always included. 
+   - Transaction details are always included. 
 
-   Processing is always doen in a batch job. 
+   - Processing is always doen in a batch job. 
 
 5. Select **OK**. 
 6. Refresh the **Customer aging data storage** page to see the **Batch name** and **Batch run time** that are shown along with the **Processing status**. When the batch job is complete the **Processing status** is set to **Ended** and the **Number of aging lines** is populated. If the batch job is recurring the Processing status is set to **Waiting**.
