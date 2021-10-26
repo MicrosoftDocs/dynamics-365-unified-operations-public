@@ -76,9 +76,9 @@ After the request is approved, and the customer and customer hierarchy records a
 
 ## Notify B2B prospects when they are approved or rejected
 
-When you approve a B2B prospect onboarding request, you can automatically send an email notification to the prospect to inform them. 
+When you approve or reject a B2B prospect onboarding request, you can automatically send an email notification to the prospect to inform them. 
 
-To set up email notifications in Commerce headquarters for the B2B prospect accepted or B2B prospect rejected notification type events, follow these steps.
+To set up email notifications in Commerce headquarters for "B2B prospect approved" or "B2B prospect rejected" notification type events, follow these steps.
 
 1. Create email templates for emails that will be sent to prospects when the B2B prospect approved or B2B prospect rejected notification types are triggered.
     - For information about the placeholders supported by the B2B prospect approved and B2B prospect rejected notification types, see [Notification types](../email-templates-transactions.md#notification-types). 
