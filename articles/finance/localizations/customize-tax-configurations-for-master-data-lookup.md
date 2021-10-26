@@ -4,7 +4,7 @@
 title: Customize tax configurations for master data lookup
 description: This topic explains how to customize tax configurations to extend master data lookup functionality.
 author: kai-cloud
-ms.date: 05/20/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,132 +31,97 @@ ms.dyn365.ops.version: 10.0.18
 
 Complete the steps in this topic to customize tax configurations to extend master data lookup functionality.
 
-1. In Dynamics 365 Regulatory Configuration Service (RCS), import a tax configuration provided by Microsoft.
+## Import a tax configuration provided by Microsoft
 
-   1. Go to Electronic reporting. 
-   2. Choose Configuration provider **Microsoft**. 
-   3. Click **repositories**. 
-   4. Choose **Global** and click **Open**. 
-   5. Choose a tax configuration (for example, Tax Calculation Configuration), choose a version in **Versions** tab. 
-   6. Click **import**. 
+1. In Dynamics Regulatory Configuration Service (RCS), go to the **Electronic reporting** workspace and select the **Microsoft** configuration provider. 
+2. Select **Repositories**.
+3. Select **Global**, and then select **Open**. 
+4. Choose a tax configuration, such as the T**ax Calculation Configuration**, and on the **Versions** tab, select a version. 
+5. Select **Import**. 
 
-   
+   > [!NOTE]
+   > The Dataverse Model Mapping is imported by default. If you saw warning messages in the configuration import process, you should enable the virtual entities in Datavers. For more information, see [Enable Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md). 
 
-   > [!Note]
-   >
-   > The Dataverse Model Mapping will be imported by default. If you saw warning messages in the configuration import process, you should [Enable Dataverse virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-virtual-entities).
+## Create customized data model configuration
 
-   
+1. In the **Electronic reporting** workspace, select the data model configuration you want to extend. For example, **Tax Calculation Data Model**. 
+2. Select **Create configuration**. 
+3. Select **Taxable document model derived from Name: Tax Calculation Data Model, Microsoft**. 
+4. In **Name** field, type in **Customization data model** and then select **Create configuration.** 
 
-2. Create customized data model configuration
+## Create customized reference models
 
-   1. Go to **Electronic reporting**. 
-   2. Choose data model configuration you want to extend (for example, **Tax Calculation Data Model**). 
-   3. Click **Create configuration**. 
-   4. Choose **Taxable document model derived from Name: Tax Calculation Data Model, Microsoft**. 
-   5. In **Name** field, type in **Customization data model**. 
-   6. Click **Create configuration.** 
+1. Select **Customization data model** and then select **Designer**.
+2. Select the ellipsis button **...**, and select the **Reference model** view.
 
-3. Create customized reference models
+      [![Reference model.](./media/pic2.png)](./media/pic2.png)
 
-   1. Select **Customization data model**.
+3. Create the customized reference model. The customized model is a root model. The customized entity is a record list. The customized field is a string field you want to use in lookup. You can add more fields as needed.
+4. Select the ellipsis button **...**, and select the **Taxable document** view.
+5. Select the attribute you want to bind to the customized reference model. For example, if you select **Customized attribute**:
 
-   2. Click **Designer**.
+      1. Select **Select reference model**.
+      2. Select **Customized model** and then select **OK**. The reference model name will be updated to the **Natural key** field.
 
-   3. Click button **...** and select the **Reference model** view.
+         [![Select reference model dialog box.](./media/pic5.png)](./media/pic5.png)
 
-      [![pic2](./media/pic2.png)](./media/pic2.png)
+      3. Select **Save** and then select **Complete**.
 
-   4. Create the customized reference model. Customized model is root model. Customized entity is Record list. Customized field is string field you want to use in lookup. You can add more on demand.
+## Create a customized model mapping configuration
 
-   5. Click button **...** and select the **Taxable document** view.
-
-   6. Choose the attribute you want to bind the customized reference model. Take **Customized attribute** as an example,
-
-      1. Click **Select reference model**.
-
-      2. Select **Customized model**, click **OK**. The reference model name will be updated to the **Natural key** field.
-
-         [![pic5](./media/pic5.png)](./media/pic5.png)
-
-      3. **Save** the configuration and click **Complete**.
-
-4. Create customized model mapping configuration
-
-   1. Go to **Electronic reporting**. 
-
-   2. Choose model mapping configuration named **Dataverse model mapping**. Set **Default for model mapping** as **No**. 
-
-   3. Click **Create configuration**. 
-
-   4. Choose Taxable document model mapping derived from Name: Dataverse Model Mapping, Microsoft. 
-
-   5. In **Name** field, type in **Customization model mapping**. 
-
+   1. In the **Electronic reporting** workspace, select the model mapping configuration, **Dataverse model mapping**. 
+   2. In the **Default for model mapping** field, select **No**. 
+   3. Select **Create configuration**. 
+   4. Select the taxable document model mapping derived from **Name: Dataverse Model Mapping, Microsoft**. 
+   5. In **Name** field, enter **Customization model mapping**. 
    6. In **Target model** field, select the data model **Customization data model**. 
+   7. Select **Create configuration**.
 
-   7. Click **Create configuration**.
-
-      [![pic6](./media/pic6.png)](./media/pic6.png)
+      [![Create configuration pane.](./media/pic6.png)](./media/pic6.png)
 
    8. Select the **Customization model mapping** and set **Connected application** as the one you created above.
+   9. Set the **Default for model mapping** field to **Yes**.
 
-   9. Set **Default for model mapping** as **Yes**.
+## Create customized model mappings
 
-5. Create customized model mappings
+1. Select **Customization model mapping**. 
+2. Select **Designer** and then select **Customization Model**.
 
-   1. Select **Customization model mapping**. 
-   2. Click **Designer**.
-   3. Select **Customization Model**.
+   [![Reference model map.](./media/pic8.png)](./media/pic8.png)
 
-[![pic8](./media/pic8.png)](./media/pic8.png)
+## Map model mapping to Dataverse entity
 
-6. Map model mapping to Dataverse entity
+1. On the **Model mapping designer** page, select **Customization Model**, and then select **Designer**.
+2. In the **Data source types** tree, select **Dataverse Table**.
+3. On the **Data sources** tab, select **Add root**.
+4. In the **'Table' data source properties** pane, in **Name** field, enter **Customized Dataverse**.
+5. In the second **Name** field, select an entity and then select **OK**.
 
-   1. In **Model mapping designer**, select **Customization Model** and click **Designer**.
+   [!['Table' data source properties pane.](./media/pic9.png)](./media/pic9.png)
 
-   2. In **data source types**, choose Dataverse Table.
+6. Select **Customized Dataverse** and **Customized entity** and then select **Bind**.
 
-   3. In **data sources**, click **+Add root**.
+   [![Customized Datavers and Customized entity bind.](./media/pic10.png)](./media/pic10.png)
 
-   4. In **Name** field, type in Customized Dataverse.
+7. Select a field under **Customized Dataverse** and **Customized field** and then select **Bind**.
 
-   5. In **Name** field, choose an entity.
+   [![Customized Dataverse and Customized field bind.](./media/pic11.png)](./media/pic11.png)
 
-   6. Click **OK**.
+8. Select **Save** and complete the **Customization model mapping**.
 
-      [![pic9](./media/pic9.png)](./media/pic9.png)
+## Create a customized tax configuration
 
-   7. Select **Customized Dataverse** and **Customized entity**, click **Bind**.
-
-      [![pic10](./media/pic10.png)](./media/pic10.png)
-
-   8. Select a field under **Customized Dataverse** and **Customized field**, click **Bind**.
-
-      [![pic11](./media/pic11.png)](./media/pic11.png)
-
-   9. Click **save** and complete **Customization model mapping**
-
-7. Create customized tax configuration
-
-   1. Go to **Electronic reporting**.
-
-   2. Select **Tax Configuration - Europe** and click **Create configuration**.
-
+   1. Go to the **Electronic reporting** workspace.
+   2. Select **Tax Configuration - Europe** and then select **Create configuration**.
    3. Select **Tax service configuration derived from Name: Tax Calculation Configuration, Microsoft**.
+   4. In **Name** field, enter **Customization configuration**.
+   5. Select **Create configuration**.
+   6. Select **Customization configuration** and then select **Designer**.
+   7. In the **Data model** field, select **Customization data model**.
+   8. In **Data model version** field, select the corresponding data model version.
 
-   4. In **Name** field, type in Customization configuration.
+      [![Properties pane.](./media/pic13.png)](./media/pic13.png)
 
-   5. Click **Create configuration**.
-
-   6. Select the **Customization configuration** and click **Designer**.
-
-   7. In **Data model** field, choose **Customization data model**.
-
-   8. In **Data model version** field, choose the corresponding one.
-
-      [![pic13](./media/pic13.png)](./media/pic13.png)
-
-   9. Click **Complete**.
+   9. Select **Complete**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
