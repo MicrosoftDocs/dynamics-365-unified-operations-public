@@ -75,6 +75,17 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 ## Platform updates for version 10.0.23 of Finance and Operations apps
 
+### OnDBSynchronize event
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | There is no legitimate control to execute. |
+| **Replaced by another feature?**   | Yes, move X++ classes to SysSetup interface. |
+| **Product areas affected**         | Database synchronization |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated.  |
+
+
 ### SystemNotificationsManager.AddNotification API
 
 | &nbsp;  | &nbsp; |
