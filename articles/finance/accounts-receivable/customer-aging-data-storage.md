@@ -50,12 +50,12 @@ Before you can use this feature, you must enable it in your system. Administrato
 
    - Transaction details are always included. 
 
-   - Processing is always doen in a batch job. 
+   - Processing is always done in a batch job. 
 
 5. Select **OK**. 
 6. Refresh the **Customer aging data storage** page to see the **Batch name** and **Batch run time** that are shown along with the **Processing status**. When the batch job is complete the **Processing status** is set to **Ended** and the **Number of aging lines** is populated. If the batch job is recurring the Processing status is set to **Waiting**.
-7. Click the **Filter** icon next to **Number of aging lines** field to review the fileters added for this batch job.
-8. The **Customer aging data storage** page doesn't include the results; however, the **Customer aging data storage** data entitiy lets you export the output to any format that Data management supports. 
+7. Click the **Filter** icon next to **Number of aging lines** field to review the filters added for this batch job.
+8. The **Customer aging data storage** page doesn't include the results; however, the **Customer aging data storage** data entity lets you export the output to any format that Data management supports. 
 
 > [!NOTE]
 > Before exporting, add a filter to limit the exported results to only the most recent aging. For example, add the following criteria to return the most recent batch run:<br> (CustAgingDataStorageSysQueryRangeUtil::getLatestBatchName())<br>
