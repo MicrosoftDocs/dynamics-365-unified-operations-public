@@ -65,7 +65,7 @@ Withholding tax is not in scope of the Tax calculation service currently. It is 
 
 ## Will return orders be supported? 
 
-Yes, both sales and purchase return orders are supported in the 10.0.21 Monthly Update. The list of supported transaction types can be found in Tax Calculation overview - Finance | Dynamics 365 | Microsoft Docs 
+Yes, both sales and purchase return orders are supported in the 10.0.21 Monthly Update. The list of supported transaction types can be found in [Supported transactions](global-tax-calcuation-service-overview.md#supported-transactions). 
 
 ## Will Free text Invoices be supported? 
 
