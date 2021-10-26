@@ -173,7 +173,6 @@ You can filter by the following criteria to refine your query:
 ### Access logs in Application Insights
 
 Diagnostic events for Commerce components can also be accessed in Application Insights. Diagnostic events are available for the following components 
-
 - Commerce Scale Unit (Minimum version 10.0.21)
 - Modern Point of Sale (Minimum version 10.0.22)
 - Cloud Point of Sale (Minimum version 10.0.22)
@@ -181,6 +180,7 @@ Diagnostic events for Commerce components can also be accessed in Application In
 - E-commerce (Minimum version 10.0.25)
 
 #### Enable diagnostic events in Application Insights
+
 To enable Commerce component diagnostic events, you will first need an Application Insights account. You can use an existing account or [create a new account](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource#create-workspace-based-resource). Once you have an account, you will need to enable this feature in Commerce HQ. For data privacy reasons, we recommend using separate Application Insights accounts for use with Production, Sandbox and Development environments. 
 
 1. Navigate to **System administration** > **Operational Insights** form
