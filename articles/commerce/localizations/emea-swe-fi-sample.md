@@ -397,14 +397,7 @@ Select the correct release branch version according to your SDK/application rele
 
 Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the NuGet package manager in Visual Studio according to your SDK/application version.
 
-#### Deploy the package to CSU
-
-1. Go to https://lcs.dynamics.com/v2.
-2. Sign in to LCS, and open a project. Then, on the hamburger menu, select Asset library.
-3. Select the **Cloud Scale Unit Extension** asset type, and then select the **+** button to upload the package. Provide a package name and description and then add the package file by selecting **Add file**.
-4. After the upload is complete, select **Confirm** to complete the upload process.
-5. The package will be validated by LCS in a few minutes. After validation is complete, mark the package as Release candidate.
-6. After upload, the package needs to be deployed to the environment. For more information, follow the steps outlined in Apply updates and extensions to Commerce Scale Unit (cloud).
+To upload the created **CloudScaleUnitExtensionPackage.zip** package to LCS see [Deploy the package to CSU](../dev-itpro/retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
 
 ### Commerce Scale Unit (self-hosted) components
 
