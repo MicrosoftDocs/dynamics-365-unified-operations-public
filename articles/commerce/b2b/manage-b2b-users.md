@@ -78,13 +78,13 @@ After the request is approved, and the customer and customer hierarchy records a
 
 When you approve or reject a B2B prospect onboarding request, you can automatically send an email notification to the prospect. 
 
-To set up email notifications in Commerce headquarters for events of the *B2B prospect approved* or *B2B prospect rejected* notification type, follow these steps.
+To set up email notifications in Commerce headquarters for events of the B2B prospect approved or B2B prospect rejected notification type, follow these steps.
 
-1. Create email templates for emails that will be sent to prospects when the *B2B prospect approved* or *B2B prospect rejected* notification type is triggered.
+1. Create email templates for emails that will be sent to prospects when the B2B prospect approved or B2B prospect rejected notification type is triggered.
 
-    For information about the placeholders that the *B2B prospect approved* and *B2B prospect rejected* notification types support, see [Notification types](../email-templates-transactions.md#notification-types). For information about how to create email templates, see [Create an email template](../email-templates-transactions.md#create-an-email-template). 
+    For information about the placeholders that the B2B prospect approved and B2B prospect rejected notification types support, see [Notification types](../email-templates-transactions.md#notification-types). For information about how to create email templates, see [Create an email template](../email-templates-transactions.md#create-an-email-template). 
 
-1. Add the *B2B prospect approved* and *B2B prospect rejected* notification types to your email notification profile, and map them to the email templates that you created. For more information about notification profiles, see [Set up an email notification profile](../email-notification-profiles.md). 
+1. Add the B2B prospect approved and B2B prospect rejected notification types to your email notification profile, and map them to the email templates that you created. For more information about notification profiles, see [Set up an email notification profile](../email-notification-profiles.md). 
 
 ## Onboard additional business partner users
 
