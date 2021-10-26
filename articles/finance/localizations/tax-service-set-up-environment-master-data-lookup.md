@@ -4,7 +4,7 @@
 title: Set up an environment for master data lookup
 description: This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
 author: kai-cloud
-ms.date: 04/21/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,9 +31,10 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
 
-1. Set up power platform integration in Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). After that you will have a power platform environment name in **Power Platform Integration** section. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), click the environment name you get before, you will get the environment URL.
-2. Set up Dynamics 365 Finance and Microsoft Dataverse. For more information, see [Getting the virtual entity solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution) and [Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Set up the following entities. For more information, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
+1. Set up power platform integration in Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). After that, you will have a power platform environment name in the **Power Platform Integration** section. 
+2. Go to the [Microsoft Power Platform admin center](https://admin.powerplatform.microsoft.com/environments) and select the environment name. The environment URL is provided.
+3. Set up Dynamics 365 Finance and Microsoft Dataverse. For more information, see [Getting the virtual entity solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution) and [Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
+4. Set up the following entities. For more information, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
       - CompanyInfoEntity
       - CurrencyEntity
       - CustCustomerV3Entity
@@ -48,7 +49,7 @@ This topic explains how to set up your environment to use the Tax Calculation ma
       - TaxGroupEntity
       - TaxItemGroupHeadingEntity
       - VendVendorV2Entity
-4. Set up the Dynamics 365 Regulatory Configuration Service (RCS). Go to the **Feature management** workspace, and enable the following features:
+5. Set up the Dynamics 365 Regulatory Configuration Service (RCS). Go to the **Feature management** workspace, and enable the following features:
       - Electronic reporting Dataverse datasources support
       - Tax Service Dataverse datasources support
       - Globalization features
