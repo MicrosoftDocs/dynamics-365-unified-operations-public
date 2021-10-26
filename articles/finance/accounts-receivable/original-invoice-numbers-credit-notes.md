@@ -4,7 +4,7 @@
 title: References to original invoices in credit notes
 description: This topic explains how to set up and print the original invoice numbers in related credit notes.
 author: ilkond
-ms.date: 01/12/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -102,7 +102,7 @@ When you print free text, customer, and project credit notes, they will include 
 
 ## References to original invoices in debit notes
 
-By default, references to original invoices can be entered for credit notes only, i.e. when making negative (decreasing) corrections of original invoices.
-To enbale similar possibility for positive (increasing) corrections, turn on the **References to original invoices in debit notes** feature in the **Feature management** workspace.  
+By default, references to original invoices can be entered for credit notes. For example, you can do this when making negative, or decreasing corrections of original invoices.
+To do this for positive, or increasing corrections, enable the **References to original invoices in debit notes** feature in the **Feature management** workspace.  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
