@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 
 This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
 
-1. Set up power platform integration in Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
+1. Set up power platform integration in Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). After that you will have a power platform environment name in **Power Platform Integration** section. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), click the environment name you get before, you will get the environment URL.
 2. Set up Dynamics 365 Finance and Microsoft Dataverse. For more information, see [Getting the virtual entity solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution) and [Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
 3. Set up the following entities. For more information, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
       - CompanyInfoEntity
@@ -48,17 +48,10 @@ This topic explains how to set up your environment to use the Tax Calculation ma
       - TaxGroupEntity
       - TaxItemGroupHeadingEntity
       - VendVendorV2Entity
-4. Set up the Dynamics 365 Regulatory Configuration Service (RCS). 
-5. Create a service request for Microsoft to enable flighting of the following features:
-
-      - ERCdsFeature
-      - TaxServiceCDSFeature
-
-6. Go to the **Feature management** workspace, and enable the following features:
-
-      - (Preview) Electronic reporting Dataverse datasources support
-      - (Preview) Tax Service Dataverse datasources support
-      - (Preview) Globalization features
+4. Set up the Dynamics 365 Regulatory Configuration Service (RCS). Go to the **Feature management** workspace, and enable the following features:
+      - Electronic reporting Dataverse datasources support
+      - Tax Service Dataverse datasources support
+      - Globalization features
 
 5. Sign in to RCS using a tenant admin account.
 6. Go to **Electronic reporting** > **Connected applications**. 
