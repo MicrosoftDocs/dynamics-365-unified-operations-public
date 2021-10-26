@@ -556,7 +556,7 @@
         items:
         - name: X++ language support
           items:
-          - name: Visual Studio 2017 requirements for X++
+          - name: Visual Studio requirements for X++
             href: dev-tools/developer-tools-vs2017.md
           - name: Debug X++ code
             href: dev-tools/debug-xpp.md
