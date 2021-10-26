@@ -72,7 +72,7 @@ The packing completed notification type supports the following additional email 
 | pickupstorehourto   | The closing hour of the pickup store. |
 | pickupchannelid     | The store channel ID of the pickup store. |
 | packingslipid       | The ID of the packing slip for the order that will be picked up. |
-| confirmationid      | The order confirmation ID (sometimes referred to as the channel reference ID) of the order that will be picked up. |
+| confirmationid      | The order confirmation ID of the order that will be picked up. (This ID is sometimes referred to as the channel reference ID.) |
 
 For more information about the customer check-in and order lookup features, see [Set up geo detection and redirection](geo-detection-redirection.md) and [Enable order lookup for guest checkouts](order-lookup-guest.md).
 
@@ -99,7 +99,7 @@ The *order invoiced* notification type is triggered when an order is invoiced in
 The *issue gift card* notification type is triggered when a sales order that contains a product of the gift card type is invoiced.
 
 > [!NOTE]
-> The issue gift card notification email is sent to the gift card recipient. The gift card recipient is specified either manually or programmatically in Commerce headquarters, on an individual line of a sales order on the **Packing** tab under **Line details**.
+> The issue gift card notification email is sent to the gift card recipient. The gift card recipient is specified in Commerce headquarters, on an individual sales order line on the **Packing** tab under **Line details**. It can be specified either manually or programmatically.
 
 The issue gift card notification type supports the following additional placeholders.
 
@@ -127,7 +127,7 @@ The *customer created* notification type is triggered when a new customer entity
 
 The *B2B prospect approved* notification type is triggered when a prospect's onboarding request is approved in Commerce headquarters. For more information about how to approve or reject B2B prospects, see [Set up the administrator user for a new business partner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 
-The *B2B prospect approved* notification type supports the following additional placeholders.
+The B2B prospect approved notification type supports the following additional placeholders.
 
 | Placeholder name | Purpose                                                      |
 | ---------------- | ------------------------------------------------------------ |
@@ -144,7 +144,7 @@ The *B2B prospect approved* notification type supports the following additional 
 
 The *B2B prospect rejected* notification type is triggered when a prospect's onboarding request is rejected in Commerce headquarters. For more information about how to approve or reject B2B prospects, see [Set up the administrator user for a new business partner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 
-The *B2B prospect rejected* notification type supports the following additional placeholders.
+The B2B prospect rejected notification type supports the following additional placeholders.
 
 | Placeholder name | Purpose                                                      |
 | ---------------- | ------------------------------------------------------------ |
