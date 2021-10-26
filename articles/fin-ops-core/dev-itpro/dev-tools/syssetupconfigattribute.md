@@ -20,9 +20,9 @@ Attributes provide a powerful method of associating metadata, or declarative inf
 
 ## Usage
 
-The `SysSetupConfigAttribute` attribute must be added for all the X++ classes that implement the `SysSetup` interface. This attribute accepts 2 parameters:
+The `SysSetupConfigAttribute` attribute must be added for all the X++ classes that implement the `SysSetup` interface. This attribute accepts two parameters:
 
-+ `ContinueOnError` – This parameter is of type `bool` (`true` or `false`). If the class fails during synchronization then based on this parameter value, the database synchronization will either fail or continue with the successive steps.
++ `ContinueOnError` – This parameter is of type `bool` (`true` or `false`). If the class fails during synchronization, then based on this parameter value, the database synchronization will either fail or continue with the successive steps.
 
     + If the parameter is set to `true`, database synchronization will continue with the next steps upon failure of the X++ class execution.  
     + If the parameter is set to `false`, the overall database synchronization operation will fail and the underlying issue must be fixed before the database synchronization operation is resumed.
