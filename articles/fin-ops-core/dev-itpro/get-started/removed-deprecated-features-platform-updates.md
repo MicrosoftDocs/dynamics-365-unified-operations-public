@@ -79,8 +79,8 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | There is no legitimate control to execute. |
-| **Replaced by another feature?**   | Yes, move X++ classes to SysSetup interface. |
+| **Reason for deprecation/removal** | There is no legitimate control to execute this event. |
+| **Replaced by another feature?**   | Yes, move X++ classes to the SysSetup interface. |
 | **Product areas affected**         | Database synchronization |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated.  |
