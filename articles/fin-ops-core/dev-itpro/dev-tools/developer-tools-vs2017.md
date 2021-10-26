@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 2017 requirements for X++
+title: Visual Studio requirements for X++
 description: This topic lists the Visual Studio components that are required to run the Visual Studio extension for X++.
 author: jorisdg
 ms.date: 10/26/2021
