@@ -29,6 +29,7 @@ ms.dyn365.ops.version:
 # Configure a product to be purchased for free
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to configure a product to be purchased for free in Microsoft Dynamics 365 Commerce. 
 
