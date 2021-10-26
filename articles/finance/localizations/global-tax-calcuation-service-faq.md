@@ -32,7 +32,8 @@ This topic answers frequently asked questions about the Tax Calculation service 
 
 ## When will the service be generally available? 
 
-The Tax Calculation service is generally available from October 2021, 10.0.21 Monthly Update. Please refer to the blog for more information [blog]().
+The Tax Calculation service is generally available from October 2021, 10.0.21 Monthly Update. Please refer to [Microsoft Dynamics 365 Blog
+](https://cloudblogs.microsoft.com/dynamics365/bdm/2021/10/26/tax-calculation-enhancements-are-now-available-for-dynamics-365/) for more information.
 
 ## Will the Tax Calculation service be available on Tier-1 machines to test? 
 
