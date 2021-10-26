@@ -125,32 +125,32 @@ The *customer created* notification type is triggered when a new customer entity
 
 ### B2B prospect approved
 
-The *B2B prospect approved* notification type is triggered when a prospect's onboarding request is approved in Commerce headquarters. For more information on how to approve or reject B2B prospects, see [Set up the administrator user for a new business partner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
+The *B2B prospect approved* notification type is triggered when a prospect's onboarding request is approved in Commerce headquarters. For more information about how to approve or reject B2B prospects, see [Set up the administrator user for a new business partner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 
-The B2B prospect approved notification type supports the following additional placeholders.
+The *B2B prospect approved* notification type supports the following additional placeholders.
 
 | Placeholder name | Purpose                                                      |
 | ---------------- | ------------------------------------------------------------ |
-| firstname        | The first name of the B2B prospect as entered in the application. |
-| lastname         | The last name of the B2B prospect as entered in the application. |
-| company          | The name of the applicant's company as entered in the application. |
-| email            | The prospect's email address as entered in the application.   |
-| zipcode          | The zip code of the prospect's primary address.               |
-| comments         | The comment entered by the prospect in the application.       |
-| storename        | The channel name where the prospect was created.              |
+| firstname        | The first name of the B2B prospect as it's entered in the application. |
+| lastname         | The last name of the B2B prospect as it's entered in the application. |
+| company          | The name of the applicant's company as it's entered in the application. |
+| email            | The prospect's email address as it's entered in the application.   |
+| zipcode          | The ZIP/postal code of the prospect's primary address. |
+| comments         | The comment that the prospect entered in the application. |
+| storename        | The name of the channel where the prospect was created. |
 | storeurl         | Empty by default. A custom extension must be created to use this placeholder. |
 
 ### B2B prospect approved
 
-The *B2B prospect rejected* notification type is triggered when a prospect's onboarding request is rejected in Commerce headquarters. For more information on how to approve or reject B2B prospects, see [Set up the administrator user for a new business partner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
+The *B2B prospect rejected* notification type is triggered when a prospect's onboarding request is rejected in Commerce headquarters. For more information about how to approve or reject B2B prospects, see [Set up the administrator user for a new business partner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 
-The B2B prospect rejected notification type supports the following additional placeholders.
+The *B2B prospect rejected* notification type supports the following additional placeholders.
 
 | Placeholder name | Purpose                                                      |
 | ---------------- | ------------------------------------------------------------ |
-| firstname        | The first name of the B2B prospect as entered in the application. |
-| lastname         | The last name of the B2B prospect as entered in the application. |
-| company          | The name of the applicant's company as entered in the application. |
+| firstname        | The first name of the B2B prospect as it's entered in the application. |
+| lastname         | The last name of the B2B prospect as it's entered in the application. |
+| company          | The name of the applicant's company as it's entered in the application. |
 
 ## Create an email template
 
