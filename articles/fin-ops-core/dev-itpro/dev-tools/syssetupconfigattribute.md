@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 10.0.0
 
 # SysSetupConfigAttribute attribute
 
-X++ classes that implement the `SysSetup` interface are processed during database synchronization. Custom X++ classes that implement `SysSetup` are also executed as a part of database synchronization. A new attribute is introduced in the platform updates for [version 10.0.23 of Finance and Operations apps](../whats-new-platform-updates-10-0-23.md).
+X++ classes that implement the `SysSetup` interface are processed during database synchronization. Custom X++ classes that implement `SysSetup` are also executed as a part of database synchronization. A new attribute is introduced in the platform updates for [version 10.0.23 of Finance and Operations apps](../get-started/whats-new-platform-updates-10-0-23.md).
 
 Attributes provide a powerful method of associating metadata, or declarative information, with code, for example, assemblies, types, methods, and properties. After an attribute is associated with a program entity, the attribute can be queried at run time by using reflection.
 
