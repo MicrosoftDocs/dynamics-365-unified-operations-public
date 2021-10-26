@@ -105,6 +105,7 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 - [Debug X++ code by using the debugger in Visual Studio](debug-xpp.md)
 - [Language Integrated Query (LINQ) provider for C\#](linq-provider-c.md)
 - [Write best practice rules](author-best-practice-rules.md)
+- [SysSetupConfigAttribute attribute](syssetupconfigattribute.md)
 
 ## Customize with extensions and overlayering
 

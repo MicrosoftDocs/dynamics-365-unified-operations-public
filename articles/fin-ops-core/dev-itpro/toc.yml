@@ -570,6 +570,8 @@
             href: dev-tools/author-best-practice-rules.md
           - name: Application Explorer properties
             href: dev-ref/application-explorer-aot-properties.md
+          - name: SysSetupConfigAttribute attribute
+            href: dev-tools/syssetupconfigattribute.md
         - name: X++ language reference
           items:
           - name: X++ language reference overview
