@@ -4,7 +4,7 @@
 title: Saudi Arabia overview
 description: This topic provides links to documentation resources for Saudi Arabia. 
 author: ShylaThompson
-ms.date: 07/25/2019
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
