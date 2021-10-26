@@ -89,7 +89,7 @@ The format includes the following lookup fields for setup.
 5. On the **Lookups** FastTab, select each lookup, and define appropriate conditions for it.
 6. On the **Conditions** FastTab, define which tax codes or other available criteria must correspond to a specific lookup result. 
 
-    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. As soon as a tax transaction from the reporting period meets a condition in the list, the related marker from the lookup result will be reported for the related document. For more information about the setup of each lookup field, see the subsections that follow.
+    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the related marker from the lookup result will be reported for the related document. For more information about the setup of each lookup field, continue with this topic.
 
 7. When you've finished setting up conditions, in the **State** field, select **Completed**, and then save the configuration.
 
@@ -98,7 +98,7 @@ The format includes the following lookup fields for setup.
 You can easily export the setup of application-specific parameters from one version of a report and import it into another version. You can also export the setup from one report and import it into another report, provided that both reports have the same structure of lookup fields.
 
 > [!NOTE]
-> We recommend that you enable the feature, **Align ER application specific parameters while importing** in the **Feature management** workspace. The **Align ER application specific parameters while importing** feature is available in the **Feature management** workspace starting in Finance version 10.0.24. When this feature is enabled, if the structure of application-specific parameters that you're importing differs from the structure of the corresponding data sources in the target ER format that is selected for import, the import will succeed in the some cases. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md). 
+> We recommend that you enable the feature, **Align ER application specific parameters while importing** in the **Feature management** workspace. The **Align ER application specific parameters while importing** feature is available starting in Finance version 10.0.24. When this feature is enabled, if the structure of application-specific parameters that you're importing differs from the structure of the corresponding data sources in the target ER format that is selected for import, the import will succeed in some cases. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md). 
 
 ### Import transactions (ImportSelector)
 
@@ -140,9 +140,9 @@ For this lookup field, the following master data sources are available to set up
 - Supplier account ID
 - Supplier group
 
-Conditions defined in *Customer account ID* and *Customer group* are applied independently from the ones defined in *Supplier account ID* and *Supplier group*. in addition, conditions defined in *Supplier account ID* and *Supplier group* are applied only to those transactions that are posted in scope reverse changes scenario. This means that  when you setup conditions for *Supplier account ID* and *Supplier group*, you must specify **\*Blank\*** in both *Customer account ID* and *Customer group* columns of conditions.
+Conditions defined in **Customer account ID** and **Customer group** are applied independently from those defined in **Supplier account ID** and **Supplier group**. Additionally, conditions defined in **Supplier account ID** and **Supplier group** are applied only to those transactions that are posted in the scope reverse changes scenario. This means that when you set up conditions for **Supplier account ID** and **Supplier group**, you must specify **\*Blank\*** in both the **Customer account ID** and **Customer group** columns of conditions.
 
-This lookup field defines conditions that are based on current company's master data sources. These conditions produce a mark of **1** for the corresponding element from the list of designations that are related to the procedures under the **\<SprzedazWiersz\>** tag. Several designations can be marked for the same output VAT record. Therefore, if a company must report different designations, separate conditions must be defined.
+This lookup field defines conditions that are based on the current company's master data sources. These conditions produce a mark of **1** for the corresponding element from the list of designations that are related to the procedures under the **\<SprzedazWiersz\>** tag. Several designations can be marked for the same output VAT record. Therefore, if a company must report different designations, separate conditions must be defined.
 
 **Procedural markings** aren't required for documents of **RO** (Internal summary document) type (**\<TypDokumentu\>** tag under the **\<SprzedazWiersz\>** tag).
 
@@ -160,8 +160,8 @@ The following table shows the lookup results (designations) for **ProceduralMark
 | B_SPV          | Transfer by article 8a, paragraph 1 of the VAT Act | Transfer z art. 8a ust. 1 ustawy | The transfer of a single-purpose voucher that is done by a taxpayer who is acting on their own behalf, and that is taxed in accordance with article 8a, paragraph 1 of the VAT Act | Transfer bonu jednego przeznaczenia dokonany przez podatnika działającego we własnym imieniu, opodatkowany zgodnie z art. 8a ust. 1 ustawy |
 | B_SPV_DOSTAWA  | Goods and services that the single-purpose voucher is related to (article 8a, paragraph 4 of the VAT Act) | Dostawa towarów oraz świadczenie usług (art. 8a ust. 4 ustawy) | The supply of goods and the provision of services, where the single-purpose voucher is related to a taxable person who issued the voucher in accordance with article 8a, paragraph 4 of the VAT Act | Dostawa towarów oraz świadczenie usług, których dotyczy bon jednego przeznaczenia na rzecz podatnika, który wyemitował bon zgodnie z art. 8a ust. 4 ustawy |
 | B_MPV_PROWIZJA | Brokering services for multi-purpose vouchers | Usług pośrednictwa o transferu bonu różnego przeznaczenia | The provision of brokering and other services that are related to the transfer of multi-purpose vouchers that are taxed in accordance with article 8b, paragraph 2 of the VAT Act | Świadczenie usług pośrednictwa oraz innych usług dotyczących transferu bonu różnego przeznaczenia, opodatkowane zgodnie z art. 8b ust. 2 ustawy |
-| WSTO_EE | Intra-Community distance selling of goods | Wewnątrzwspólnotowej sprzedaży na odległość towarów | Intra-Community distance sales of goods which, at the time of commencement of their dispatch or transport, are within the territory of the country, and the supply of telecommunications, broadcasting and electronic services referred to in Article 28k of the Act to non-taxable persons established, have their permanent address or place of residence in the territory of a Member State other than the territory of the country. | Wewnątrzwspólnotowej sprzedaży na odległość towarów, które w momencie rozpoczęcia ich wysyłki lub transportu znajdują się na terytorium kraju, oraz świadczenia usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy, na rzecz podmiotów niebędących podatnikami, posiadających siedzibę, stałe miejsce zamieszkania lub miejsce pobytu na terytorium państwa członkowskiego innym niż terytorium kraju |
-| IED | Delivery of goods referred to in Art. 7a paragraph. 1 and 2 of the Act | Dostawy towarów, o której mowa w art. 7a ust. 1 i 2 ustawy | Supply of goods referred to in Article 7a(1) and (2) of the Act by a taxable person facilitating that supply who does not benefit from the special scheme referred to in Chapter 6a or 9 of Chapter XII of the Act or in the corresponding regulations for which the place of supply is within the territory of the country | Dostawy towarów, o której mowa w art. 7a ust. 1 i 2 ustawy, dokonanej przez podatnika ułatwiającego tę dostawę, który nie korzysta z procedury szczególnej, o której mowa w dziale XII w rozdziale 6a lub 9 ustawy lub w odpowiadających im regulacjach, dla której miejscem dostawy jest terytorium kraju |
+| WSTO_EE | Intra-community distance selling of goods | Wewnątrzwspólnotowej sprzedaży na odległość towarów | Intra-community distance sales of goods which, at the time of commencement of their dispatch or transport, are within the territory of the country, and the supply of telecommunications, broadcasting, and electronic services referred to in Article 28k of the Act to non-taxable persons established, have their permanent address or place of residence in the territory of a Member State other than the territory of the country. | Wewnątrzwspólnotowej sprzedaży na odległość towarów, które w momencie rozpoczęcia ich wysyłki lub transportu znajdują się na terytorium kraju, oraz świadczenia usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy, na rzecz podmiotów niebędących podatnikami, posiadających siedzibę, stałe miejsce zamieszkania lub miejsce pobytu na terytorium państwa członkowskiego innym niż terytorium kraju |
+| IED | Delivery of goods referred to in article 7a, paragraph 1 and 2 of the Act | Dostawy towarów, o której mowa w art. 7a ust. 1 i 2 ustawy | The supply of goods referred to in Article 7a(1) and (2) of the Act by a taxable person facilitating that supply who does not benefit from the special scheme referred to in Chapter 6a or 9 of Chapter XII of the Act or in the corresponding regulations for which the place of supply is within the territory of the country. | Dostawy towarów, o której mowa w art. 7a ust. 1 i 2 ustawy, dokonanej przez podatnika ułatwiającego tę dostawę, który nie korzysta z procedury szczególnej, o której mowa w dziale XII w rozdziale 6a lub 9 ustawy lub w odpowiadających im regulacjach, dla której miejscem dostawy jest terytorium kraju |
 | Inne           | Other | | | |
 
 > [!NOTE]
@@ -394,7 +394,7 @@ In the dialog box for the executable class, the **Retail-specific sales marking*
 
 The dialog box for the executable class includes the **Consider VAT report date codes** parameter. Use this parameter to collect VAT transactions in the report, based on rules that you define in VAT report date codes. This parameter doesn't affect retail-specific transactions that will be reported as the **FP** document type. For more information about the VAT report date codes feature, see [Set up VAT report date codes](/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes).
 
-KB5007691 ("Poland: Jednolitego Pliku Kontrolnego VDEK (JPK-V7M, VDEK) January 2022 changes in Dynamics 365 Finance") introduces **Schema version** parameter. Use this parameter to specify the additional field that will contain the version of the needful schema of JPK-V7M to be reported. Select **Wersja schematu** as a value for this field.
+KB5007691 ("Poland: Jednolitego Pliku Kontrolnego VDEK (JPK-V7M, VDEK) January 2022 changes in Dynamics 365 Finance") introduces **Schema version** parameter. Use this parameter to specify the additional field contains the version of the schema of JPK-V7M to be reported. Select **Wersja schematu** as the value for this field.
 
 ## <a id="security-roles-vdek"></a>Set up security roles for electronic message processing
 
@@ -407,40 +407,40 @@ Follow these steps to limit access to the JPK-V7M processing.
 
 ## <a id="office-code-vdek"></a>Set up an office code for electronic message processing
 
-Follow these steps to enter an office code in the **KodUrzedu** additional field.
+Complete the following steps to enter an office code in the **KodUrzedu** additional field.
 
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**.
 2. Select the **JPK-V7M** processing.
 3. On the **Additional field** FastTab, select the **KodUrzedu** additional field, and then, in the **Default value** field, specify the office code that should be reported in the **\<KodUrzedu\>** element of the report.
 
 ## <a id="sales-tax-reporting-codes-vdek"></a>Set up sales tax codes and sales tax reporting codes
 
-[Sales tax reporting code](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-reporting-codes) is an integer value. Sales tax reporting codes should be numbered according to the company's rules. However, we recommend that you vary the codes by tax direction. For example, use a five-digit code, and set the codes for all outgoing transactions, which should be reflected in the first part of the VAT scheme, so that they are less than or equal to 19999. Set the codes for all incoming transactions, which should be reflected in the second part of the VAT scheme, so that they are more than or equal to 20000. In this way, you simplify the setup for reports and for data export that is based on tax transactions that are aggregated by sales tax reporting codes. Here is an example that shows how you can use sales tax reporting codes to generate a SAF VAT sales and purchase register. For this example, sales tax reporting codes are in the format *ABBCC*. This format consists of the following parts:
+The [sales tax reporting code](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md) is an integer value. Sales tax reporting codes should be numbered according to the company's rules. However, we recommend that you vary the codes by tax direction. For example, use a five-digit code, and set the codes for all outgoing transactions, which should be reflected in the first part of the VAT scheme, so that they are less than or equal to 19999. Set the codes for all incoming transactions, which should be reflected in the second part of the VAT scheme, so that they are more than or equal to 20000. In this way, you simplify the setup for reports and for data export that is based on tax transactions that are aggregated by sales tax reporting codes. The following example shows how you can use sales tax reporting codes to generate a SAF VAT sales and purchase register. For this example, sales tax reporting codes are in the format *ABBCC*. This format consists of the following parts:
 
-- **A** – The transaction direction. The value is **1** for outgoing, **2** for incoming, **3** for corrections.
-- **BB** – The tax code. The numbering is sequential among all tax codes.
-- **CC** – The transaction type number within a tax code. See the following table.
+- **A**: The transaction direction. The value is **1** for outgoing, **2** for incoming, and **3** for corrections.
+- **BB**: The tax code. The numbering is sequential among all tax codes.
+- **CC**: The transaction type number within a tax code. See the following table.
 
-| Transaction type                  | Transaction type number     |
-|-----------------------------------|-----------------------------|
-| Taxable Sales                     | 01                          |
-| Tax-free sales                    | 02                          |
-| Sales tax payable                 | 03                          |
-| Taxable sales credit note         | 04                          |
-| Tax exempt sales credit note      | 05                          |
-| Sales tax on sales credit note    | 06                          |
-| Taxable purchases                 | 07                          |
-| Tax-free purchase                 | 08                          |
-| Sales tax receivable              | 09                          |
-| Taxable import                    | 10                          |
-| Offset taxable import             | 11                          |
-| Use tax                           | 12                          |
-| Offset use tax                    | 13                          |
-| Taxable purchase credit note      | 14                          |
-| Tax exempt purchase credit note   | 15                          |
-| Sales tax on purchase credit note | 16                          |
-| Taxable import credit note        | 17                          |
-| Offset taxable import credit note | 18                          |
+    | Transaction type                  | Transaction type number     |
+    |-----------------------------------|-----------------------------|
+    | Taxable Sales                     | 01                          |
+    | Tax-free sales                    | 02                          |
+    | Sales tax payable                 | 03                          |
+    | Taxable sales credit note         | 04                          |
+    | Tax exempt sales credit note      | 05                          |
+    | Sales tax on sales credit note    | 06                          |
+    | Taxable purchases                 | 07                          |
+    | Tax-free purchase                 | 08                          |
+    | Sales tax receivable              | 09                          |
+    | Taxable import                    | 10                          |
+    | Offset taxable import             | 11                          |
+    | Use tax                           | 12                          |
+    | Offset use tax                    | 13                          |
+    | Taxable purchase credit note      | 14                          |
+    | Tax exempt purchase credit note   | 15                          |
+    | Sales tax on purchase credit note | 16                          |
+    | Taxable import credit note        | 17                          |
+    | Offset taxable import credit note | 18                          |
 
 The following table shows the sales tax codes and sales tax reporting codes for this example.
 
@@ -859,4 +859,4 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 </tbody>
 </table>
 
-For invoices that aren't paid within 150 days, an [**Overdue debt VAT**](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-pol-sales-tax-reports#allowance-for-bad-debts) periodic task can be applied. In this case, the same reporting codes that are used for K_41 and/or K_43 can be used. The system will automatically interpret transactions for reporting in K_46 (Overdue invoice) and K_47 (Paid overdue invoice).
+For invoices that aren't paid within 150 days, an [**Overdue debt VAT**](localizations/emea-pol-sales-tax-reports.md#allowance-for-bad-debts) periodic task can be applied. In this case, the same reporting codes that are used for K_41 and/or K_43 can be used. The system automatically interprets transactions for reporting in K_46 (Overdue invoice) and K_47 (Paid overdue invoice).
