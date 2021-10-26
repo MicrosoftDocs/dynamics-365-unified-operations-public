@@ -4,7 +4,7 @@
 title: Enable order lookup for guest checkouts
 description: This topic describes how to enable order lookup for guest checkouts in Microsoft Dynamics 365 Commerce.
 author: stuharg
-ms.date: 09/01/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -72,15 +72,13 @@ The order lookup module in the Commerce module library is used to render the for
 
 ## Configure the order details page
 
-In order for guest users to be able to view their order details, the order details page on your e-commerce site must be configured to not require sign in. To turn off sign in for your order details page, open the page in site builder, click on the **Default page (required)** slot in the tree view and uncheck the **Requires sign in?** checkbox.
+In order for guest users to be able to view their order details, the order details page on your e-commerce site must be configured to not require sign in. To turn off sign in for your order details page, open the page in Commerce site builder, select the **Default page (required)** slot in the tree view, and clear the **Requires sign in?** checkbox at the bottom of the properties pane on the right.
 
-## Add a link in transactional emails to order details
+## Add a link to order details in transactional emails 
 
-You can provide customers with a link or button in order-related emails that takes them to the order details page for their order. Simply create an HTML hyperlink that takes customers to the order details page on your e-commerce site and passes the order confirmation ID and customer's email address as parameters. For example:
+You can provide customers with a link or button in order-related emails that takes them to the order details page for their order. To do this, create an HTML hyperlink that takes customers to the order details page on your e-commerce site and pass the order confirmation ID and customer's email address as URL parameters, as in the following example.
 
 `<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
-
-
 
 ## Additional resources
 
