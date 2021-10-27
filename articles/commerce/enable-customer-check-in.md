@@ -76,7 +76,7 @@ To test the customer check-in feature, follow these steps.
 
 1. Create customer the check-in page, and then add and configure the customer check-in module. For more information, see [Check-in for pickup module](check-in-pickup-module.md). 
 1. Check in the page, but do not publish it.
-1. Add the following link to an email template that is invoked by the packing complete notification type for a pick-up mode of delivery. For instructions, see [Create email templates for transactional events](email-templates-transactions.md).
+1. Add the following link to an email template that is invoked by the packing complete notification type for a pick-up mode of delivery. For more information, see [Create email templates for transactional events](email-templates-transactions.md).
     - **Pre-production (UAT) environments**: add the code snippet from the [Configure the transactional email templates](#configure-the-transactional-email-template) section above.
     - **Production environments:** add the following commented code so that existing customers aren't affected: 
      `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`
