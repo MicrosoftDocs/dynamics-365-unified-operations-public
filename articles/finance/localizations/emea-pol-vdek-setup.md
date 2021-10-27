@@ -859,4 +859,4 @@ The following table shows the sales tax codes and sales tax reporting codes for 
 </tbody>
 </table>
 
-For invoices that aren't paid within 150 days, an [**Overdue debt VAT**](localizations/emea-pol-sales-tax-reports.md#allowance-for-bad-debts) periodic task can be applied. In this case, the same reporting codes that are used for K_41 and/or K_43 can be used. The system automatically interprets transactions for reporting in K_46 (Overdue invoice) and K_47 (Paid overdue invoice).
+For invoices that aren't paid within 150 days, an [**Overdue debt VAT**](emea-pol-sales-tax-reports.md#allowance-for-bad-debts) periodic task can be applied. In this case, the same reporting codes that are used for K_41 and/or K_43 can be used. The system automatically interprets transactions for reporting in K_46 (Overdue invoice) and K_47 (Paid overdue invoice).
