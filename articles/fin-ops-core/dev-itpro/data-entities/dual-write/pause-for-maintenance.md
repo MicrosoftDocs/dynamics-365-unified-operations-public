@@ -34,3 +34,4 @@ The **Total queued record count** shows the total number of records queued for a
 When you resume the table map, it switches from the **Pause** state to the **Running** state and writes the records from the queue to the destination application. It is possible that some records error out and fail to write due to various reasons including business validations on destination app. In these cases, the records will continue to remain in the queue and can be viewed under the **Catch-up errors** tab. For more information, see [Catch-up errors from pausing a table map](errors-and-alerts.md#catch-up-errors-from-pausing-a-table-map).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+
