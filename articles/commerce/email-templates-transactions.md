@@ -66,13 +66,13 @@ The packing completed notification type supports the following additional email 
 
 | Placeholder name    | Purpose |
 | ------------------- | ------- |
-| pickupstorename     | The name of the store where the order is available for pickup. |
-| pickupstoreaddress  | The address of the store where the order is available for pickup. |
-| pickupstorehourfrom | The opening hour of the pickup store. |
-| pickupstorehourto   | The closing hour of the pickup store. |
-| pickupchannelid     | The store channel ID of the pickup store. |
-| packingslipid       | The ID of the packing slip for the order that will be picked up. |
-| confirmationid      | The order confirmation ID of the order that will be picked up. (This ID is sometimes referred to as the channel reference ID.) |
+| `pickupstorename`     | The name of the store where the order is available for pickup. |
+| `pickupstoreaddress`  | The address of the store where the order is available for pickup. |
+| `pickupstorehourfrom` | The opening hour of the pickup store. |
+| `pickupstorehourto`   | The closing hour of the pickup store. |
+| `pickupchannelid`     | The store channel ID of the pickup store. |
+| `packingslipid`       | The ID of the packing slip for the order that will be picked up. |
+| `confirmationid`      | The order confirmation ID of the order that will be picked up. (This ID is sometimes referred to as the channel reference ID.) |
 
 For more information about the customer check-in and order lookup features, see [Set up geo detection and redirection](geo-detection-redirection.md) and [Enable order lookup for guest checkouts](order-lookup-guest.md).
 
