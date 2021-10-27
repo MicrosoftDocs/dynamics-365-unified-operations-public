@@ -183,15 +183,22 @@ Diagnostic events for Commerce components can also be accessed in Application In
 
 To enable Commerce component diagnostic events, you will first need an Application Insights account. You can use an existing account or [create a new account](https://docs.microsoft.com/en-us/azure/azure-monitor/app/create-workspace-resource#create-workspace-based-resource). Once you have an account, you will need to enable this feature in Commerce HQ. For data privacy reasons, we recommend using separate Application Insights accounts for use with Production, Sandbox and Development environments. 
 
-1. Navigate to **System administration** > **Operational Insights** form
-2. Under **Configure** tab, set **Commerce channel events** to **Yes**
-3. Under **Environments** tab, enter the LCS Environment ID and Environment mode of each environment where you plan to use Application Insights. Environment ID can be viewed on the Environment details page for each environment in LCS portal. This configuration is needed to prevent inadvertently sending diagnostic events to an incorrect environment when performing database copy operations.
-4. Under **Application Insights registry**, specify the Application Insights instrumentation key and corresponding environment mode of environments where you plan to use each Application Insights account.
-5. Once this configuration is completed, ***CDX Job 1110*** will need to be run. You can wait for this job to run on its own schedule, or manually run this job.
-6. Close and start each Point of Sale instance.
-7. Restart each Commerce Scale Unit. This can be done in LCS portal by navigating to Environment details page > Commerce > **Manage**. Select each Commerce Scale Unit instance and select **Restart**.
-8. For E-commerce, Application Insights configuration will be applied 30 minutes after ***CDX Job 1110*** is completed.
-9. Repeat these steps in each environment where you plan to use Application Insights.
+1. Enable **Operational Insights** within **Feature Management** workspace
+2. Navigate to **System administration** > **Operational Insights** form
+3. Under **Configure** tab, set **Commerce channel events** to **Yes**
+4. Under **Environments** tab, enter the LCS Environment ID and Environment mode of each environment where you plan to use Application Insights. Environment ID can be viewed on the Environment details page for each environment in LCS portal. This configuration is needed to prevent inadvertently sending diagnostic events to an incorrect environment when performing database copy operations.
+5. Under **Application Insights registry**, specify the Application Insights instrumentation key and corresponding environment mode of environments where you plan to use each Application Insights account.
+6. Once this configuration is completed, ***CDX Job 1110*** will need to be run. You can wait for this job to run on its own schedule, or manually run this job.
+7. Close and start each Point of Sale instance.
+8. Restart each Commerce Scale Unit. This can be done in LCS portal by navigating to Environment details page > Commerce > **Manage**. Select each Commerce Scale Unit instance and select **Restart**.
+9. For E-commerce, Application Insights configuration will be applied 30 minutes after ***CDX Job 1110*** is completed.
+10. Repeat these steps in each environment where you plan to use Application Insights.
+
+>[!Important]
+> Once this feature is enabled, the Application Insights instrumentation key is accessible via the following means
+>   Anonymously via Commerce Scale Unit APIs
+>   Can be accessed within Commerce Scale Unit clients such as Point of Sale or E-commerce
+
 
 #### Turn off diagnostic events in Application Insights
 
@@ -201,12 +208,13 @@ If you no longer wish to send diagnostic events to Application insights, you mus
 >Turning off this feature within **Feature management** is not sufficient to turn off this feature.
 
 1. Navigate to **System administration** > **Operational Insights** form
-2. Under **Configure** tab, set **Commerce channel events** to **Yes**
+2. Under **Configure** tab, set **Commerce channel events** to **No**
 3. Once this configuration is completed, ***CDX Job 1110*** will need to be run. You can wait for this job to run on its own schedule, or manually run this job.
 4. Close and start each Point of Sale instance.
 5. Restart each Commerce Scale Unit. This can be done in LCS portal by navigating to Environment details page > Commerce > **Manage**. Select each Commerce Scale Unit instance and select **Restart**.
 6. For E-commerce, Application Insights configuration will be applied 30 minutes after ***CDX Job 1110*** is completed.
 7. Repeat these steps in each environment where you plan to turn off Application Insights.
+8. If you would like to turn off diagnostic events for a single environment, under **Application Insights registry** tab, delete the Instrumentation Key and run steps 3-7 above. 
 
 
 ### E-Commerce events
