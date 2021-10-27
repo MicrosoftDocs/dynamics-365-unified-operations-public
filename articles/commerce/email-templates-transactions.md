@@ -224,7 +224,7 @@ The following placeholders retrieve and show data that is defined at the sales o
 | pickupopenstorefrom  | The opening time of the store where the order will be picked up.\* |
 | pickupopenstoreto    | The closing time of the store where the order will be picked up.\* |
 | pickupchannelid      | The channel ID of the store that is specified for a pickup mode of delivery.\* |
-| packingslipid        | The ID of the packing slip that was generated when lines in an order were packed.\* |
+| `packingslipid`        | The ID of the packing slip that was generated when lines in an order were packed.\* |
 
 \* These placeholders return data only when they are used for the **Order ready for pickup** notification type. 
 
