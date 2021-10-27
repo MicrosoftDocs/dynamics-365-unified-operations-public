@@ -218,6 +218,16 @@ For more information about how to work with receipt formats, see [Set up and des
 
 ### Set up fiscal integration
 
+Because of the introduction of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), the fiscal integration setup steps differ depending on the version of the Retail SDK that is used:
+
+- For the version 10.0.21 and before, you must use the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
+- For the version 10.0.22 and later, you must use [sealed commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) and the fiscal integration sample published in the [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) GitHub repository.
+
+For more information, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+
+> [!WARNING]
+> Because of limitations of the new independent packaging and extension model, it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS.
+
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
 
 1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this fiscal registration service integration sample](#set-up-the-registration-process).
@@ -274,9 +284,6 @@ The fiscal registration service integration sample for Austria is part of the Re
 This sample consists of extensions for the CRT, Hardware station, and POS. To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
 
 # [Retail 10.0.22 and later](#tab/retail-10-0-22)
-
-> [!WARNING]
-> Started since 10.0.22 the fiscal integration sample for Austria was published in GitHub repository. This sample requires a [sealed commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) to be installed as a prerequisite. Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
 
 The sample's code can be found in repository [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
 
