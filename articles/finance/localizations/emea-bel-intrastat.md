@@ -1,4 +1,20 @@
-﻿# Belgium Intrastat
+---
+# required metadata
+
+title: Belgium Intrastat
+description: This topic contains information about the Belgium Intrastat report.
+author: andosip
+ms.date: 10/27/2021
+ms.topic: article
+audience: 
+ms.reviewer: kfend 
+ms.search.region: Global
+ms.author: v-aosipov
+ms.search.validFrom: 
+---
+# Belgium Intrastat
+
+[!include [banner](../includes/banner.md)]
 
 You can use the **Intrastat** page to generate and report information about trade among European Union (EU) countries. The Belgium Intrastat declaration contains information about the trade of goods for reporting.
 
@@ -6,7 +22,7 @@ The following fields are included in the Belgium Intrastat declaration.
 
 | Field on the Intrastat declaration | Corresponding field on the Intrastat journal page | Description | Arrivals | Dispatches |
 |-------------------------|-------------------------|-------------------------|-------------------------|-------------------------|
-| EXTRF | **Direction** | The record type.</br><ul></br><li>For arrivals, the code "19" is printed.</li></br><li>For dispatches, the code "29" is printed.</li></br></ul> | X | X |
+| EXTRF | **Direction** | The record type.<ul><li>For arrivals, the code "19" is printed.</li><li>For dispatches, the code "29" is printed.</li></ul> | X | X |
 | EXCNT | **Country/region** (in the **Dispatch/destination** section) | The International Organization for Standardization (ISO) code for the country or region of the partner (counterparty). | X | X |
 | EXTTA | **Transaction code** (in the **Codes** section) | The code that indicates the nature of the transaction. Companies in Belgium use two-digit transaction codes. | X | X |
 | EXREG | No corresponding field | The state/province code in the main address of the legal entity. | X | X |
@@ -34,12 +50,10 @@ For more information, go to [www.intrastat.be](http://www.intrastat.be/).
 To set up Intrastat, import the latest version of the following Electronic reporting (ER) configurations:
 
 -   Intrastat model
-
 -   Intrastat report
-
 -   Intrastat (BE)
 
-For more information, see [Download ER configurations from the Global repository of Configuration service](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?toc=/dynamics365/finance/toc.json).
+For more information, see [Download ER configurations from the Global repository of Configuration service]((../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ### Set up foreign trade parameters
 
@@ -122,27 +136,16 @@ To set up an address format that includes state or province information, follow 
 3.  Go to **Tax** &gt; **Setup** &gt; **Foreign trade** &gt; **Compression of Intrastat**, and select the fields that should be compared when Intrastat information is summarized. For Belgium Intrastat, select the following fields:
 
 -   Commodity
-
 -   Transaction code
-
 -   Country of origin/destination
-
 -   State
-
 -   Country/region of origin
-
 -   Direction
-
 -   Country/region
-
 -   Country/region of sender
-
 -   Transport
-
 -   Delivery terms
-
 -   Correction
-
 -   Invoice
 
 ### Set up the VAT number of the trading partner
@@ -163,7 +166,7 @@ To set up an address format that includes state or province information, follow 
 
 8.  On the customer's page, on the **Invoice and delivery** FastTab, in the **Sales tax** section, in the **Tax exempt number** field, select the registration ID that you created earlier.
 
-For more information about registration IDs, see [Registration IDs](https://docs.microsoft.com/dynamics365/finance/localizations/emea-registration-ids).
+For more information about registration IDs, see [Registration IDs](emea-registration-ids.md).
 
 ## Intrastat transfer
 
@@ -227,9 +230,7 @@ The following example shows how to set up Belgium Intrastat and create the Intra
 4.  Import the latest version of the following ER configurations:
 
 -   Intrastat model
-
 -   Intrastat report
-
 -   Intrastat (BE)
 
 ### Set up an address format
