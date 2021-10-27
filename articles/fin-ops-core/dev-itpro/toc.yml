@@ -1176,6 +1176,8 @@
                 href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
               - name: Verify dual-write configuration in Finance and Operations apps and Dataverse
                 href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+              - name: Errors codes for table map health check
+                href: data-entities/dual-write/table-map-health-check.md
         - name: Dual-write frequently asked questions
           href: data-entities/dual-write/dual-write-faq.md                  
       - name: Virtual entities

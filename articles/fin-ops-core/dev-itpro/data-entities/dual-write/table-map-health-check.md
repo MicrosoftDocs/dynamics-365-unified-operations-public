@@ -1,6 +1,6 @@
 ---
 title: Errors codes for table map health check
-description: This topic describes how to use the Microsoft Dynamics 365 Commerce pricing engine to create sales quotations in Dynamics 365 Sales.
+description: This topic describes error codes for the table map health check.
 author: nhelgren
 ms.date: 10/04/2021
 ms.topic: article
@@ -14,6 +14,10 @@ ms.search.validFrom: 2021-10-04
 # Errors codes for table map health check
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+This topic describes error codes for the table map health check.
 
 ## Error 100
 
@@ -29,13 +33,13 @@ The error is *No business events registration data found for the entity {Finance
 
 The error is *No project configurations found for project {project name}. This could be either the project is not enabled or all the field mappings are unidirectional from customer engagement to Finance and Operations.*
 
-Check the mappings for the table map. If they are unidirectional from customer engagement to Finance and Operations, then there will not be any traffic generated for live sync from Finance and Operations to Dataverse.
+Check the mappings for the table map. If they are unidirectional from customer engagement to Finance and Operations, then no traffic is generated for live sync from Finance and Operations to Dataverse.
 
 ## Error 900
 
 The error is *Invalid source filter {sourceFilter} format for entity {Finance and Operations UniqueEntityName}.*
 
-The source filter specified on table map for Finance and Operations is not syntactically correct. Use the troubleshooting guide to validate the filter criteria.
+The source filter specified on table map for Finance and Operations is not syntactically correct. To validate the filter criteria, see [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.ms#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps).
 
 ## Error 1000
 
@@ -59,7 +63,7 @@ The data source from the entity does not have any field mapped for dual-write. A
 
 The error is *Datasource : {datasource.DataSourceName} for entity {Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName} has a range. Only records that satisfy the range condition are picked up for outbound.*
 
-Entities in Finance and Operations can have data sources that have filter ranges enabled. These ranges define the records picked up as part of live sync. If some records are skipped from Finance and Operations to customer engagement, check if the records meet the range criteria on the entity. A simple way to check is to run a SQL query like this:
+Entities in Finance and Operations apps can have data sources that have filter ranges enabled. These ranges define the records picked up as part of live sync. If some records are skipped from Finance and Operations to Dataverse, check if the records meet the range criteria on the entity. A simple way to check is to run a SQL query like this:
 
 ```sql
 select * from <EntityName> where <filter criteria for the records> on SQL.
@@ -69,6 +73,6 @@ select * from <EntityName> where <filter criteria for the records> on SQL.
 
 The error is *Table : {datasourceTable.Key.subscribedTableName} for entity {datasourceTable.Key.entityName} is tracked for entity {origTableToEntityMaps.EntityName}. Same tables tracked for multiple entities can impact system performance for live sync transactions.*
 
-If the same table is tracked by multiple entities then any modification on the table will trigger dual-write evaluation for the linked entities. Although the filter clauses would only send the valid records the evaluation might cause a performance issue if there are long running queries or unoptimized query plans. This problem may not be avoidable from the business point of view but if there are lot of intersecting tables across multiple entities, consider simplifying the entity or checking optimizations for entity queries.
+If the same table is tracked by multiple entities then any modification on the table will trigger dual-write evaluation for the linked entities. The filter clauses would only send the valid records, but the evaluation might cause a performance issue if there are long running queries or unoptimized query plans. This problem may not be avoidable from the business point of view but if there are lot of intersecting tables across multiple entities, consider simplifying the entity or checking optimizations for entity queries.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
