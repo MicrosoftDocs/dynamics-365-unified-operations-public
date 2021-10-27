@@ -45,7 +45,7 @@ The source filter specified on table map for Finance and Operations is not synta
 
 The error is *Entity {Finance and Operations UniqueEntityName} query used for dual-write live sync is {Finance and Operations EntityFilterQueryString}. Records which meet the query criteria will be picked up for live sync.*
 
-The entity query returned is the backing SQL query for the entity. Check for inner joins or filters on the query which might impact the business data being picked up for live sync. Inner joins and filters are mandatory conditions that needs to be fulfilled for each record being picked up for dual-write live sync.
+The entity query returned is the backing SQL query for the entity. Check for inner joins or filters on the query that determine the business data being picked up for live sync. Inner joins and filters are mandatory conditions that need to be fulfilled for each record being picked up for dual-write live sync.
 
 ## Error 1300
 
@@ -61,7 +61,7 @@ The data source from the entity does not have any field mapped for dual-write. A
 
 ## Error 1600
 
-The error is *Datasource : {datasource.DataSourceName} for entity {Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName} has a range. Only records that satisfy the range condition are picked up for outbound.*
+The error is *Datasource: {datasource.DataSourceName} for entity {Finance and Operations EntityMetadata.EntityProperties.LogicalEntityName} has a range. Only records that satisfy the range condition are picked up for outbound.*
 
 Entities in Finance and Operations apps can have data sources that have filter ranges enabled. These ranges define the records picked up as part of live sync. If some records are skipped from Finance and Operations to Dataverse, check if the records meet the range criteria on the entity. A simple way to check is to run a SQL query like this:
 
@@ -71,8 +71,8 @@ select * from <EntityName> where <filter criteria for the records> on SQL.
 
 ## Error 1700
 
-The error is *Table : {datasourceTable.Key.subscribedTableName} for entity {datasourceTable.Key.entityName} is tracked for entity {origTableToEntityMaps.EntityName}. Same tables tracked for multiple entities can impact system performance for live sync transactions.*
+The error is *Table: {datasourceTable.Key.subscribedTableName} for entity {datasourceTable.Key.entityName} is tracked for entity {origTableToEntityMaps.EntityName}. Same tables tracked for multiple entities can impact system performance for live sync transactions.*
 
-If the same table is tracked by multiple entities then any modification on the table will trigger dual-write evaluation for the linked entities. The filter clauses would only send the valid records, but the evaluation might cause a performance issue if there are long running queries or unoptimized query plans. This problem may not be avoidable from the business point of view but if there are lot of intersecting tables across multiple entities, consider simplifying the entity or checking optimizations for entity queries.
+If the same table is tracked by multiple entities, then any modification on the table will trigger dual-write evaluation for the linked entities. The filter clauses would only send the valid records, but the evaluation might cause a performance issue if there are long running queries or unoptimized query plans. This problem may not be avoidable from the business point of view but if there are lot of intersecting tables across multiple entities, consider simplifying the entity or checking optimizations for entity queries.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
