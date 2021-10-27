@@ -4,7 +4,7 @@
 title: Navigation menu module 
 description: This topic covers navigation menu modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 10/26/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
