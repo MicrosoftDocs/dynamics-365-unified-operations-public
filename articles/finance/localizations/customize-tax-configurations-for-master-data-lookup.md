@@ -4,7 +4,7 @@
 title: Customize tax configurations for master data lookup
 description: This topic explains how to customize tax configurations to extend master data lookup functionality.
 author: kai-cloud
-ms.date: 10/26/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,7 +51,7 @@ Complete the steps in this topic to customize tax configurations to extend maste
 
 ## Create customized reference models
 
-1. In the **Tax configurations** page, select **Customization data model** and then select **Designer**.
+1. On the **Tax configurations** page, select **Customization data model** and then select **Designer**.
 2. Select the ellipsis button **...**, and select the **Reference model** view.
 
       [![Reference model.](./media/pic2.png)](./media/pic2.png)
@@ -84,7 +84,7 @@ Complete the steps in this topic to customize tax configurations to extend maste
 
 ## Create customized model mappings
 
-1. In the **Tax configurations** page, select **Customization model mapping**. 
+1. On the **Tax configurations** page, select **Customization model mapping**. 
 2. Select **Designer** and then select **Customization Model**.
 
    [![Reference model map.](./media/pic8.png)](./media/pic8.png)
