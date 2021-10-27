@@ -39,7 +39,7 @@ The PL JPK_V7M EM setup.zip package provides a setup for the JPK-V7M processing 
 
 ## Initial assumptions for the JPK-V7M report
 
-The implementation of the JPK-V7M report is based on the same example [set of sales tax reporting codes](emea-pol-vdek-setup.md#set-up-sales-tax-codes-and-sales-tax-reporting-codes) that was used in the JPK_VAT report. 
+The implementation of the JPK-V7M report is based on the same example in the **Set up sales tax codes and sales tax reporting codes** section of the topic, [Prepare for JPK-V7M reporting](emea-pol-vdek-setup.md) that was used in the JPK_VAT report. 
 For more information, see [Generate a SAF VAT sales and purchase register](emea-pol-standard-audit-file-saf.md#generate-a-saf-vat-sales-and-purchase-register).
 
 The following table shows an example of sales tax reporting codes and their mapping with **K_\*** elements of the JPK-V7M report.
