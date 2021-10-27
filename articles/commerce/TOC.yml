@@ -938,6 +938,8 @@
           href: enable-store-detection.md
         - name: E-commerce digital gift cards
           href: digital-gift-cards.md
+        - name: Configure a product to be purchased for free
+          href: configure-free-product.md
         - name: Browser requirements for Dynamics 365 Commerce sites
           href: browser-requirements.md
       - name: Sample site overview
