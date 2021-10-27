@@ -66,13 +66,13 @@ The packing completed notification type supports the following additional email 
 
 | Placeholder name    | Purpose |
 | ------------------- | ------- |
-| pickupstorename     | The name of the store where the order is available for pickup. |
-| pickupstoreaddress  | The address of the store where the order is available for pickup. |
-| pickupstorehourfrom | The opening hour of the pickup store. |
-| pickupstorehourto   | The closing hour of the pickup store. |
-| pickupchannelid     | The store channel ID of the pickup store. |
+| `pickupstorename`     | The name of the store where the order is available for pickup. |
+| `pickupstoreaddress`  | The address of the store where the order is available for pickup. |
+| `pickupstorehourfrom` | The opening hour of the pickup store. |
+| `pickupstorehourto`   | The closing hour of the pickup store. |
+| `pickupchannelid`     | The store channel ID of the pickup store. |
 | `packingslipid`      | The ID of the packing slip for the order that will be picked up. |
-| confirmationid      | The order confirmation ID of the order that will be picked up. (This ID is sometimes referred to as the channel reference ID.) |
+| `confirmationid`      | The order confirmation ID of the order that will be picked up. (This ID is sometimes referred to as the channel reference ID.) |
 
 For more information about the customer check-in and order lookup features, see [Set up geo detection and redirection](geo-detection-redirection.md) and [Enable order lookup for guest checkouts](order-lookup-guest.md).
 
@@ -105,13 +105,13 @@ The issue gift card notification type supports the following additional placehol
 
 | Placeholder name      | Purpose |
 | --------------------- | ------- |
-| iftcardnumber         | The gift card number, for products of the gift card type. |
-| giftcardbalance       | The gift card balance, for products of the gift card type. |
-| giftcardmessage       | The gift card message, for products of the gift card type. |
-| giftcardpin           | The personal identification number (PIN) of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
-| giftcardexpiration    | The expiration date of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
-| giftcardrecipientname | The name of the gift card recipient, for products of the gift card type. |
-| giftcardbuyername     | The name of the gift card buyer, for products of the gift card type. |
+| `giftcardnumber`        | The gift card number, for products of the gift card type. |
+| `giftcardbalance`       | The gift card balance, for products of the gift card type. |
+| `giftcardmessage`       | The gift card message, for products of the gift card type. |
+| `giftcardpin`         | The personal identification number (PIN) of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
+| `giftcardexpiration`    | The expiration date of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
+| `giftcardrecipientname` | The name of the gift card recipient, for products of the gift card type. |
+| `giftcardbuyername`     | The name of the gift card buyer, for products of the gift card type. |
 
 For more information about gift cards, see [E-commerce digital gift cards](digital-gift-cards.md) and [Support for external gift cards](dev-itpro/gift-card.md).
 
@@ -131,14 +131,14 @@ The B2B prospect approved notification type supports the following additional pl
 
 | Placeholder name | Purpose                                                      |
 | ---------------- | ------------------------------------------------------------ |
-| firstname        | The first name of the B2B prospect as it's entered in the application. |
-| lastname         | The last name of the B2B prospect as it's entered in the application. |
-| company          | The name of the applicant's company as it's entered in the application. |
-| email            | The prospect's email address as it's entered in the application.   |
-| zipcode          | The ZIP/postal code of the prospect's primary address. |
-| comments         | The comment that the prospect entered in the application. |
-| storename        | The name of the channel where the prospect was created. |
-| storeurl         | Empty by default. A custom extension must be created to use this placeholder. |
+| `firstname`       | The first name of the B2B prospect as it's entered in the application. |
+| `lastname`         | The last name of the B2B prospect as it's entered in the application. |
+| `company`          | The name of the applicant's company as it's entered in the application. |
+| `email`            | The prospect's email address as it's entered in the application.   |
+| `zipcode`          | The ZIP/postal code of the prospect's primary address. |
+| `comments`         | The comment that the prospect entered in the application. |
+| `storename`        | The name of the channel where the prospect was created. |
+| `storeurl`         | Empty by default. A custom extension must be created to use this placeholder. |
 
 ### B2B prospect approved
 
@@ -148,9 +148,9 @@ The B2B prospect rejected notification type supports the following additional pl
 
 | Placeholder name | Purpose                                                      |
 | ---------------- | ------------------------------------------------------------ |
-| firstname        | The first name of the B2B prospect as it's entered in the application. |
-| lastname         | The last name of the B2B prospect as it's entered in the application. |
-| company          | The name of the applicant's company as it's entered in the application. |
+| `firstname`        | The first name of the B2B prospect as it's entered in the application. |
+| `lastname`         | The last name of the B2B prospect as it's entered in the application. |
+| `company`          | The name of the applicant's company as it's entered in the application. |
 
 ## Create an email template
 
@@ -199,31 +199,31 @@ The following placeholders retrieve and show data that is defined at the sales o
 
 | Placeholder name     | Purpose                                                      |
 | -------------------- | ------------------------------------------------------------ |
-| customername         | The name of the customer who placed the order.               |
-| customeraddress      | The address of the customer.                                 |
-| customeremailaddress | The email address that the customer entered at checkout.     |
-| salesid              | The sales ID of the order.                                   |
-| orderconfirmationid  | The cross-channel ID that was generated at order creation.   |
-| channelid            | The ID of the retail or online channel that the order was placed through. |
-| deliveryname         | The name that is specified for the delivery address.         |
-| deliveryaddress      | The delivery address for shipped orders.                     |
-| deliverydate         | The delivery date.                                           |
-| shipdate             | The ship date.                                               |
-| modeofdelivery       | The delivery mode of the order.                              |
-| ordernetamount       | The total amount for the order, minus the total tax.         |
-| discount             | The total discount for the order.                            |
-| charges              | The total charges for the order.                             |
-| tax                  | The total tax for the order.                                 |
-| total                | The total amount for the order.                              |
-| storename            | The name of the store where the order was placed.            |
-| storeaddress         | The address of the store that placed the order.              |
-| storeopenfrom        | The opening time of the store that placed the order.         |
-| storeopento          | The closing time of the store that placed the order.         |
-| pickupstorename      | The name of the store where the order will be picked up.\*   |
-| pickupstoreaddress   | The address of the store where the order will be picked up.\* |
-| pickupopenstorefrom  | The opening time of the store where the order will be picked up.\* |
-| pickupopenstoreto    | The closing time of the store where the order will be picked up.\* |
-| pickupchannelid      | The channel ID of the store that is specified for a pickup mode of delivery.\* |
+| `customername`         | The name of the customer who placed the order.               |
+| `customeraddress`      | The address of the customer.                                 |
+| `customeremailaddress` | The email address that the customer entered at checkout.     |
+| `salesid`              | The sales ID of the order.                                   |
+| `orderconfirmationid`  | The cross-channel ID that was generated at order creation.   |
+| `channelid`            | The ID of the retail or online channel that the order was placed through. |
+| `deliveryname`         | The name that is specified for the delivery address.         |
+| `deliveryaddress`      | The delivery address for shipped orders.                     |
+| `deliverydate`         | The delivery date.                                           |
+| `shipdate`             | The ship date.                                               |
+| `modeofdelivery`       | The delivery mode of the order.                              |
+| `ordernetamount`       | The total amount for the order, minus the total tax.         |
+| `discount`            | The total discount for the order.                            |
+| `charges`              | The total charges for the order.                             |
+| `tax`                  | The total tax for the order.                                 |
+| `total`                | The total amount for the order.                              |
+| `storename`            | The name of the store where the order was placed.            |
+| `storeaddress`         | The address of the store that placed the order.              |
+| `storeopenfrom`        | The opening time of the store that placed the order.         |
+| `storeopento`          | The closing time of the store that placed the order.         |
+| `pickupstorename`      | The name of the store where the order will be picked up.\*   |
+| `pickupstoreaddress`   | The address of the store where the order will be picked up.\* |
+| `pickupopenstorefrom`  | The opening time of the store where the order will be picked up.\* |
+| `pickupopenstoreto`    | The closing time of the store where the order will be picked up.\* |
+| `pickupchannelid`     | The channel ID of the store that is specified for a pickup mode of delivery.\* |
 | `packingslipid`        | The ID of the packing slip that was generated when lines in an order were packed.\* |
 
 \* These placeholders return data only when they are used for the **Order ready for pickup** notification type. 
@@ -234,37 +234,37 @@ The following placeholders retrieve and show data for individual products (lines
 
 | Placeholder name               | Purpose |
 |--------------------------------|-------------------|
-| productid                      | <p>The ID of the product. This ID accounts for variants.</p><p><strong>Note:</strong> This placeholder has been deprecated in favor of **lineproductrecid**.</p> |
-| lineproductrecid               | The ID of the product. This ID accounts for variants. It uniquely identifies an item at the variant level. |
-| lineitemid                     | The product-level ID of the product. (This ID doesn't account for variants.) |
-| lineproductvariantid           | The ID of the product variant. |
-| lineproductname                | The name of the product. |
-| lineproductdescription         | The description of the product. |
-| linequantity                   | The number of units that were ordered for the line, plus the unit of measure (for example, **ea**, or **pair**). |
-| lineunit                       | The unit of measure for the line. |
-| linequantity_withoutunit       | The number of units that were ordered for the line, without the unit of measure. |
-| linequantitypicked             | When the **PickOrder** event is used, the number of units that were picked. Otherwise, **0** (zero). |
-| linequantitypicked_withoutunit | When the **PickOrder** event is used, the number of units that were picked, without the unit of measure. Otherwise, **0** (zero). |
-| linequantitypacked             | When the **PackOrder** and **Order ready for pickup** events are used, the number of units that were packed. Otherwise, **0** (zero). |
-| linequantitypacked_withoutuom  | When the **PackOrder** and **Order ready for pickup** events are used, the number of units that were packed, without the unit of measure. Otherwise, **0** (zero). |
-| linequantityshipped            | Always **0**, except when specific events are used, as described in the next row. |
-| linequantityshipped_withoutuom | When the **ShipOrder** event is used, the number of units that were picked, without the unit of measure. Otherwise, **0** (zero). |
-| lineprice                      | The price of a single unit. |
-| linenetamount                  | The price of the line after the number of units and discount are applied. |
-| linediscount                   | The discount for an individual unit. |
-| lineshipdate                   | The ship date for the line. |
-| linedeliverydate               | The delivery date for the line. |
-| linedeliverymode               | The delivery mode for the line. |
-| linedeliveryaddress            | The delivery address for the line. |
-| linepickupdate                 | The pickup date that the customer specified, for orders that use a pickup mode of delivery. |
-| linepickuptimeslot             | The pickup time range that the customer specified, for orders that use a pickup mode of delivery. |
-| giftcardnumber                 | The gift card number, for products of the gift card type. |
-| giftcardbalance                | The gift card balance, for products of the gift card type. |
-| giftcardmessage                | The gift card message, for products of the gift card type. |
-| giftcardpin                    | The PIN of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
-| giftcardexpiration             | The expiration date of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
-| giftcardrecipientname          | The name of the gift card recipient, for products of the gift card type. |
-| giftcardbuyername              | The name of the gift card buyer, for products of the gift card type. |
+| `productid`                      | <p>The ID of the product. This ID accounts for variants.</p><p><strong>Note:</strong> This placeholder has been deprecated in favor of `lineproductrecid`.</p> |
+| `lineproductrecid`               | The ID of the product. This ID accounts for variants. It uniquely identifies an item at the variant level. |
+| `lineitemid`                     | The product-level ID of the product. (This ID doesn't account for variants.) |
+| `lineproductvariantid`           | The ID of the product variant. |
+| `lineproductname`                | The name of the product. |
+| `lineproductdescription`         | The description of the product. |
+| `linequantity`                   | The number of units that were ordered for the line, plus the unit of measure (for example, **ea**, or **pair**). |
+| `lineunit`                       | The unit of measure for the line. |
+| `linequantity_withoutunit`       | The number of units that were ordered for the line, without the unit of measure. |
+| `linequantitypicked`             | When the **PickOrder** event is used, the number of units that were picked. Otherwise, **0** (zero). |
+| `linequantitypicked_withoutunit` | When the **PickOrder** event is used, the number of units that were picked, without the unit of measure. Otherwise, **0** (zero). |
+| `linequantitypacked`             | When the **PackOrder** and **Order ready for pickup** events are used, the number of units that were packed. Otherwise, **0** (zero). |
+| `linequantitypacked_withoutuom`  | When the **PackOrder** and **Order ready for pickup** events are used, the number of units that were packed, without the unit of measure. Otherwise, **0** (zero). |
+| `linequantityshipped`            | Always **0**, except when specific events are used, as described in the next row. |
+| `linequantityshipped_withoutuom` | When the **ShipOrder** event is used, the number of units that were picked, without the unit of measure. Otherwise, **0** (zero). |
+| `lineprice`                      | The price of a single unit. |
+| `linenetamount`                  | The price of the line after the number of units and discount are applied. |
+| `linediscount`                   | The discount for an individual unit. |
+| `lineshipdate`                   | The ship date for the line. |
+| `linedeliverydate`               | The delivery date for the line. |
+| `linedeliverymode`               | The delivery mode for the line. |
+| `linedeliveryaddress`            | The delivery address for the line. |
+| `linepickupdate`                 | The pickup date that the customer specified, for orders that use a pickup mode of delivery. |
+| `linepickuptimeslot`             | The pickup time range that the customer specified, for orders that use a pickup mode of delivery. |
+| `giftcardnumber`                 | The gift card number, for products of the gift card type. |
+| `giftcardbalance`                | The gift card balance, for products of the gift card type. |
+| `giftcardmessage`                | The gift card message, for products of the gift card type. |
+| `giftcardpin`                    | The PIN of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
+| `giftcardexpiration`             | The expiration date of the gift card, for products of the gift card type. (This placeholder is specific to external gift cards.) |
+| `giftcardrecipientname`          | The name of the gift card recipient, for products of the gift card type. |
+| `giftcardbuyername`              | The name of the gift card buyer, for products of the gift card type. |
 
 ### Format of order line placeholders in the email message body
 
