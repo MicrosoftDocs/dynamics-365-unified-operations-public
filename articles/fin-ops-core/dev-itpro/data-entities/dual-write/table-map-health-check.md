@@ -39,7 +39,7 @@ Check the mappings for the table map. If they are unidirectional from customer e
 
 The error is *Invalid source filter {sourceFilter} format for entity {Finance and Operations UniqueEntityName}.*
 
-The source filter specified on table map for Finance and Operations is not syntactically correct. To validate the filter criteria, see [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.ms#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps).
+The source filter specified on table map for Finance and Operations is not syntactically correct. To validate the filter criteria, see [Troubleshoot live synchronization issues](dual-write-troubleshooting-live-sync.md#live-synchronization-issues-that-are-caused-by-incorrect-query-filter-syntax-on-the-dual-write-maps).
 
 ## Error 1000
 
