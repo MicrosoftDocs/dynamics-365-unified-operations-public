@@ -76,3 +76,4 @@ The error is *Table: {datasourceTable.Key.subscribedTableName} for entity {datas
 If the same table is tracked by multiple entities, then any modification on the table will trigger dual-write evaluation for the linked entities. The filter clauses would only send the valid records, but the evaluation might cause a performance issue if there are long running queries or unoptimized query plans. This problem may not be avoidable from the business point of view but if there are lot of intersecting tables across multiple entities, consider simplifying the entity or checking optimizations for entity queries.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+
