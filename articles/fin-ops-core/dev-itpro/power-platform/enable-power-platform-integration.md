@@ -178,7 +178,7 @@ The Power Platform integration can be enabled manually for cloud-hosted developm
 
 Once the Azure Active Diretory (AAD) application has been created in the Azure portal, the AAD application must then be added as a Power Platform application user. 
 
-1. Create the application user in the Power Platform admin center. This is done in the Power Platform admin center following the steps outlined in the Power Platform administration documentation: [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
+1. Create the application user in the Power Platform admin center. This is done in the Power Platform admin center following the steps outlined in the Power Platform administration documentation, [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
 2. When selecting the security role to add for the application user, select the **Finance and Operations Integration User** role.
 
 ### Grant app permissions in Finance and Operations apps
@@ -394,9 +394,9 @@ if ($isRelaunched)
 ```
 
 3. Run the script in PowerShell and follow the instructions. You will enter the following information:
-    - **Dataverse Organization URL** - This is the URL used to access Dataverse, for example: https://contoso.crm.dynamics.com. This is found in the **Environment URL** field of the **Details** section of the environment details in the Power Platform admin center.
+    - **Dataverse Organization URL** - This is the URL used to access Dataverse, for example: `https://contoso.crm.dynamics.com`. This is found in the **Environment URL** field of the **Details** section of the environment details in the Power Platform admin center.
     - **Dataverse Organization ID** - This is found in the **Organization ID** field of the **Details** section of the environment details in the Power Platform admin center.
-    - **Dataverse AAD Tenant domain** - This is the Primary Domain of the Azure Active Directory tenant used by Dataverse. This can be found in the **Domain** field for the directory in the **Portal settings** page of the [Microsoft Azure portal](https://portal.azure.com). It is also typically the domain segment of the administrator's email address. For example, if the email address is admin@contoso.onmicrosoft.com, then the domain is **contoso.onmicrosoft.com**.
+    - **Dataverse AAD Tenant domain** - This is the primary domain of the Azure Active Directory tenant used by Dataverse. This can be found in the **Domain** field for the directory in the **Portal settings** page of the [Microsoft Azure portal](https://portal.azure.com). It is also typically the domain segment of the administrator's email address. For example, if the email address is `admin@contoso.onmicrosoft.com`, then the domain is `contoso.onmicrosoft.com`.
     - **Dataverse AAD app ID** - This is the **Application (client) ID** value of the AAD application created in the previous steps.
     - **Dataverse AAD app secret** - This is the secret key value created for the AAD app in previous steps.
 
