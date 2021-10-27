@@ -221,12 +221,12 @@ For more information about how to work with receipt formats, see [Set up and des
 Because of the introduction of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), the fiscal integration setup steps differ depending on the version of the Retail SDK that is used:
 
 - For the version 10.0.21 and before, you must use the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
-- For the version 10.0.22 and later, you must use [sealed commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) and the fiscal integration sample published in the [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) GitHub repository.
+- For the version 10.0.22 and later, you must use [sealed Commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) and the fiscal integration sample published in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) GitHub repository.
 
 For more information, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 > [!WARNING]
-> Because of limitations of the new independent packaging and extension model, it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS.
+> Because of limitations of the new independent packaging and extension model, it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
 
@@ -239,6 +239,16 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
+1. Download configuration files for the fiscal document provider and the fiscal connector from the Retail SDK:
+
+    1. For the Retail SDK on a developer VM in LCS:
+        1. sda
+    1. For the fiscal integration sample published in the GitHub repository:
+        1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
+        1. Open the last available release branch (for example, **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+        1. Open **src \> FiscalIntegration \> Efr**.
+        1. Download the fiscal connector configuration file at **Configurations \> Connectors \> ConnectorEFRSample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
+        1. Download the fiscal document provider configuration file at **Configurations \> DocumentProviders \> DocumentProviderFiscalEFRSampleAustria.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders/DocumentProviderFiscalEFRSampleAustria.xml)).
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is
 
