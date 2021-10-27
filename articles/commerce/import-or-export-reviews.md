@@ -28,14 +28,14 @@ To import and export rating and reviews in Commerce you will need to fulfill the
 
 1. The ratings and review solution must be enabled for your e-commerce site on the Dynamics 365 Commerce platform. For more information, see [Opt in to use ratings and reviews] (opt-in-ratings-reviews.md) .
 1. The Dynamics 365 Ratings and Reviews Power App Connector must be configured to enable Power Automate with either submit reviews or export reviews actions. For more information, see [TBD](TBD.md). 
-1. Service-to-service authentication must be configured to securely call the ratings and reviews API from outside of Dynamics 365 Commerce. For more information, see [Configure service-to-service authentication](TBD.md).
+1. Service-to-service authentication must be configured to securely call the ratings and reviews API from outside of Dynamics 365 Commerce. For more information, see [Configure service-to-service authentication](service-to-service-auth.md).
 
 ## Import reviews
 
 To migrate ratings and reviews data from your existing system into Dynamics 365 Commerce you must use a Power Automate connector. To do this you can either create a new Power Automate flow or using an existing flow. In the flow, you must add the Dynamics 365 Ratings and Review connector. documentation can be found [here] (http://url-to-be-created).  
 
 1. Select the action for **Submit User Review**
-2. Establish connection with the AAD app information created earlier.For more information, see [Configure service-to-service authentication](TBD.md).
+2. Establish connection with the AAD app information created earlier. For more information, see [Configure service-to-service authentication](service-to-service-auth.md).
 3. The **Submit User Review** action takes one review at a time, so repeat the action sing the source reviews as a list to submit bulk reviews. 
 	
 ## Export reviews
