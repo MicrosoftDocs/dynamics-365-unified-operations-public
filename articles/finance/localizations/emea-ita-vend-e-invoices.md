@@ -31,26 +31,24 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up and work with the functionality for creating and sending sales invoices and project invoices in an electronic format (FatturaPA).
-
-As of version 1.2 of the FatturaPA format, electronic invoices can be used for all types of businesses. These types include public administrations, private companies, and professionals.
+According to Italian legislation, invoices received from foreign vendors which are not tax residents in Italy, must be submitted to the Exchange system (SDI).
+This topic describes how configure and submit vendor electronic invoices in an electronic format (FatturaPA).
 
 ## Prerequisites
 
 The primary address of the legal entity must be in Italy.
 
+
+
 This topic contains the following information:
 
 - [Setup information](#setup)
-- [Maintaining related base documents](#relateddoc)
-- [Overview of the Electronic invoice register](#einvoiceregister)
-- [Additional functionality that affects the XML file](#additionalfunctionality)
 
 ## <a id="setup"></a>Setup
 
 
 > [!NOTE]
-> The **Electronic invoices** page (**Project management and accounting** \> **Project invoices** \> **E-invoices** \> **Electronic invoices**) resembles the **Electronic customer invoices** page and has the same functions.
+> The .
 
 ![Electronic customer invoices page.](media/emea-ita-electronic-invocies-electronic-customer-invoices.png)
 
