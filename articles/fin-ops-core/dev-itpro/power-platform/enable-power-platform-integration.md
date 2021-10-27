@@ -160,8 +160,8 @@ The Power Platform integration can be enabled manually for cloud-hosted developm
 > The Azure Active Directory application must be created on the same tenant as the Finance and Operations app.
 
 1. Open the [Microsoft Azure portal](https://portal.azure.com).
-2. Navigate to **App registrations** (Azure Active Directory > App registrations.
-3. Select **New Registration**, and enter the following information:
+2. Navigate to **App registrations** (Azure Active Directory > App registrations).
+3. Select **New registration**, and enter the following information:
     - **Name** - Enter a unique name.
     - **Account type** - Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**.
     - **Redirect URI** - Leave this blank.
