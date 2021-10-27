@@ -556,7 +556,7 @@
         items:
         - name: X++ language support
           items:
-          - name: Visual Studio 2017 requirements for X++
+          - name: Visual Studio requirements for X++
             href: dev-tools/developer-tools-vs2017.md
           - name: Debug X++ code
             href: dev-tools/debug-xpp.md
@@ -1052,6 +1052,8 @@
               href: data-entities/dual-write/multiple-entity-maps.md
             - name: Edit a legal entity after dual-write setup
               href: data-entities/dual-write/edit-legal-entity.md
+            - name: Pause dual-write for maintenance
+              href: data-entities/dual-write/pause-for-maintenance.md
             - name: Error management and alert notifications
               href: data-entities/dual-write/errors-and-alerts.md
             - name: Application lifecycle management
