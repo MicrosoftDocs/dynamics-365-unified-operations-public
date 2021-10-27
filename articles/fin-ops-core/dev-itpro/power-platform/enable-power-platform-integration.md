@@ -150,6 +150,256 @@ There are two options to enable the Power Platform integration for a Finance and
 
 For more information about dual-write configuration options, see [Linking mismatch](../data-entities/dual-write/lcs-setup.md#linking-mismatch).
 
+## Enable the integration for cloud-hosted development environments
+
+The Power Platform integration can be enabled manually for cloud-hosted development environments by following the steps below. See [Deploy and access development environments](../dev-tools/access-instances) for information on deploying cloud development environments.
+
+### Register an application in the Azure portal
+
+> [!IMPORTANT]
+> The Azure Active Directory application must be created on teh same tenant as the Finance and Operations app.
+
+1. Open the [Microsoft Azure portal](https://portal.azure.com).
+2. Navigate to **App registrations** (Azure Active Directory > App registrations.
+3. Select **New Registration**, and enter the following information:
+    - **Name** - Enter a unique name.
+    - **Account type** - Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**.
+    - **Redirect URI** - Leave this blank.
+    - Select **Register**.
+    - Take note of the **Application (client) ID** value. You will need this later.
+4. Create a symmetric key for the application.
+    - Select **Certificates & secrets** in the left navigation pane for the new app registration.
+    - Select **New client secret**.
+    - Provide a description and an expiration date.
+    - Select **Save**.
+    - Copy the key in the **Value** field that is created. You will need this later.
+ 
+### Add the Azure Active Directory application as a Power Platform user
+
+Once the Azure Active Diretory (AAD) application has been created in the Azure portal, the AAD application must then be added as a Power Platform application user. 
+
+1. Create the application user in the Power Platform admin center. This is done in the Power Platform admin center following the steps outlined in the Power Platform administration documentation: [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
+2. When selecting the security role to add for the application user, select the **Finance and Operations Integration User** role.
+
+### Grant app permissions in Finance and Operations apps
+
+The Azure AD application you created will be used by Dataverse to call Finance and Operations apps. It must be trusted by Finance and Operations apps and associated with a user account that has the appropriate rights.
+
+1. In Finance and Operations, navigate to **System administration > Setup > Azure Active Directory applications**.
+2. Select **New** to add a new row.
+    - **Client ID** - Enter the **Application (client) ID** value of the AAD application created in the previous steps.
+    - **Name** - Enter **Dataverse Integration** (or another name you will recognize for the integration).
+    - **User ID** - select **PowerPlatformApp**.
+
+> [!NOTE]
+> The **PowerPlatformApp** user is available with the appropriate permissions for Dataverse integrations with Finance and Operations apps. However, if this user doesn't exist or you want to use a different application user account, you can create or use any other user with the following roles: **Business events security role**, **Dataverse Virtual entity application**, **Dataverse Virtual entity anonymous user**, and **Dataverse Virtual entity authenticated user**.
+
+### Configure Finance and Operations apps to connect to Dataverse using the AAD application
+
+1. Log into the Finance and Operations environment through Remote Desktop Protocol (RDP).
+2. Copy the following PowerShell script and save it as a .ps1 file to the Finance and Operations environment virtual machine.
+
+```powershell
+param(
+    [Parameter(Mandatory = $false)]
+    [switch]$Relaunched
+)
+
+$isRelaunched = $false
+if ($PSBoundParameters.ContainsKey("Relaunched"))
+{
+    $isRelaunched = $Relaunched.IsPresent
+}
+
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))
+{
+    # Relaunch as an elevated process:
+    Start-Process powershell.exe "-File", ('"{0}"' -f $MyInvocation.MyCommand.Path), "-Relaunched" -Verb RunAs
+    exit
+}
+
+$aosWebsiteName = "AOSService"
+
+function Get-AosWebSitePhysicalPath()
+{
+    if (Get-Service W3SVC | Where-Object status -ne 'Running')
+    {
+        #IIS service is not running, starting IIS Service.
+        Start-Service W3SVC
+    }
+
+    $webSitePhysicalPath = (Get-Website | Where-Object { $_.Name -eq $aosWebsiteName }).PhysicalPath
+
+    return $webSitePhysicalPath
+}
+
+function Set-WebConfigValue($Key, [string]$Value)
+{
+    $webroot = Get-AosWebSitePhysicalPath
+    $webConfigPath = Join-Path $webroot "web.config"
+    if (-not (Test-Path $webConfigPath))
+    {
+        Throw "Unable to find web.config file at '$($webConfigPath)'..."
+    }
+
+    [xml]$webConfigDocument = Get-Content $webConfigPath -ErrorAction stop
+    $appSettingNode = $webConfigDocument.SelectSingleNode("/configuration/appSettings/add[@key='$($Key)']")
+    if ($null -ne $appSettingNode)
+    {
+        Write-Host "Updating key '$($Key)' to value '$($Value)'..."
+        $appSettingNode.Value = [string]$Value
+    }
+    else
+    {
+        Write-Host "Inserting new key '$($Key)' with value '$($Value)'..."
+        $ns = New-Object System.Xml.XmlNamespaceManager($webConfigDocument.NameTable)
+        $ns.AddNamespace("ns", $webConfigDocument.DocumentElement.NamespaceURI)
+        $addElement = $webConfigDocument.CreateElement("add")
+		$addElement.SetAttribute("key", $Key)
+		$addElement.SetAttribute("value", $Value)
+        $appSettings = $webConfigDocument.SelectSingleNode("//ns:appSettings", $ns)
+		$appSettings.AppendChild($addElement) | Out-Null
+    }
+
+    $webConfigDocument.Save($webConfigPath)
+    Write-Host
+}
+
+function Confirm-ValueOfType($Value, $Type)
+{
+    if ($Type -eq "Uri")
+    {
+        try
+        {
+            New-Object System.Uri $Value | Out-Null
+        }
+        catch
+        {
+            Throw "Cannot parse '$($Value)' as a URL: $($_)"
+        }
+    }
+    elseif ($Type -eq "Guid")
+    {
+        try
+        {
+            [Guid]::Parse($Value) | Out-Null
+        }
+        catch
+        {
+            Throw "Cannot parse '$($Value)' as a guid: $($_)"
+        }
+    }
+    elseif ($Type -eq "String")
+    {
+        if ([string]::IsNullOrEmpty($Value))
+        {
+            Throw "String value cannot be empty."
+        }
+    }
+}
+
+function Update-WebConfigValueFromHost($Key, $Prompt, $Type)
+{
+    $value = Read-Host -Prompt $Prompt
+    Confirm-ValueOfType -Value $value -Type $Type
+    Set-WebConfigValue -Key $Key -Value $value
+}
+
+function Enable-Flight($FlightName)
+{
+    Write-Verbose "Enabling flight '$($FlightName)'..."
+    $webroot = Get-AosWebSitePhysicalPath -ErrorAction stop
+    $webrootBinPath = Join-Path $webroot "bin"
+    $environmentDllPath = Join-Path $webrootBinPath 'Microsoft.Dynamics.ApplicationPlatform.Environment.dll'
+    Add-Type -Path $environmentDllPath
+
+    $config = [Microsoft.Dynamics.ApplicationPlatform.Environment.EnvironmentFactory]::GetApplicationEnvironment()
+
+    $ServerName = $config.DataAccess.DbServer
+    $DatabaseName = $config.DataAccess.Database
+    $UserId = $config.DataAccess.SqlUser
+    $Password = $config.DataAccess.SqlPwd
+    $EnableFlightQuery = "DECLARE @flightName NVARCHAR(100) = '$($FlightName)';
+    IF NOT EXISTS (SELECT TOP 1 1 FROM SysFlighting WHERE flightName = @flightName)
+	    INSERT INTO SYSFLIGHTING(FLIGHTNAME,ENABLED, FLIGHTSERVICEID, PARTITION)
+	    SELECT @flightName, 1, 12719367, RECID FROM DBO.[PARTITIONS];
+    ELSE
+	    UPDATE SysFlighting SET enabled = 1, flightServiceId = 12719367 WHERE flightName = @flightName;"
+
+    Invoke-Sqlcmd -ServerInstance $ServerName -Database $DatabaseName -Username $UserId -Password $Password -Query $EnableFlightQuery
+    Write-Verbose "Flight '$($FlightName)' has been enabled."
+}
+
+function Test-Settings()
+{
+    $cdsApiPath = "accounts";
+    Write-Host "Testing setup by calling API '$($cdsApiPath)'..."
+    $webroot = Get-AosWebSitePhysicalPath -ErrorAction stop
+    $webrootBinPath = Join-Path $webroot "bin"
+    $httpCommunicationDllPath = Join-Path $webrootBinPath "Microsoft.Dynamics.HttpCommunication.dll"
+    Add-Type -Path $httpCommunicationDllPath
+
+    try
+    {
+        $assembly = [System.Reflection.Assembly]::LoadFile($httpCommunicationDllPath)
+        $loggerType = $assembly.GetType("Microsoft.Dynamics.HttpCommunication.Logging.InMemoryLogger")
+        $bindingFlags = [System.Reflection.BindingFlags]::Instance -bor [System.Reflection.BindingFlags]::Public
+        $loggerConstructor = $loggerType.GetConstructor($bindingFlags, $null, [System.Type]::EmptyTypes, $null)
+        $logger = $loggerConstructor.Invoke($null)
+
+        $cdsWebApiClient = New-Object Microsoft.Dynamics.HttpCommunication.Cds.CdsWebApiClient $logger;
+        $bindingFlags = [System.Reflection.BindingFlags]::Instance -bor [System.Reflection.BindingFlags]::NonPublic
+        $method = [Microsoft.Dynamics.HttpCommunication.Cds.CdsWebApiClient].GetMethod("GetWithStringResponse", $bindingFlags, $null, @([string]), $null)
+        $task = $method.Invoke($cdsWebApiClient, @($cdsApiPath))
+        $response = $task.GetAwaiter().GetResult()
+
+        $logger.WriteInfo("Received response with length: $($response.Length)")
+        Write-Verbose $logger.LogContent.ToString()
+        Write-Host "Test complete."
+    }
+    catch
+    {
+        Write-Verbose $logger.LogContent.ToString()
+        Throw "Failed while testing the new settings: $($_)"
+    }
+}
+
+try
+{
+    Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationUrl" -Prompt "Enter Dataverse Organization URL" -Type "Uri"
+    Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationId" -Prompt "Enter Dataverse Organization id" -Type "Guid"
+    Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAadTenantId" -Prompt "Enter Dataverse AAD Tenant id (e.g. Contoso.OnMicrosoft.com)" -Type "String"
+    Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppId" -Prompt "Enter Dataverse AAD App id" -Type "Guid"
+    Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppSecret" -Prompt "Enter Dataverse AAD App secret" -Type "String"
+
+    Enable-Flight -FlightName "BusinessEventsCDSIntegration"
+
+    Write-Host "Restarting AOS..."
+    Stop-Website -Name $aosWebSiteName
+    Start-Website -Name $aosWebSiteName
+    Write-Host "AOS has been restarted."
+
+    Test-Settings
+}
+catch
+{
+    Write-Error $_
+}
+
+if ($isRelaunched)
+{
+    Write-Host "Press any key to continue..."
+    [System.Console]::ReadKey() | Out-Null
+}
+```
+
+3. Run the script in PowerShell and follow the instructions. You will enter the following information:
+    - **Dataverse Organization URL** - This is the URL used to access Dataverse, for example: https://contoso.crm.dynamics.com. This is found in the **Environment URL** field of the **Details** section of the environment details in the Power Platform admin center.
+    - **Dataverse Organization ID** - This is found in the **Organization ID** field of the **Details** section of the environment details in the Power Platform admin center.
+    - **Dataverse AAD Tenant domain** - This is the Primary Domain of the Azure Active Directory tenant used by Dataverse. This can be found in the **Domain** field for the directory in the **Portal settings** page of the [Microsoft Azure portal](https://portal.azure.com). It is also typically the domain segment of the administrator's email address. For example, if the email address is admin@contoso.onmicrosoft.com, then the domain is **contoso.onmicrosoft.com**.
+    - **Dataverse AAD app ID** - This is the **Application (client) ID** value of the AAD application created in the previous steps.
+    - **Dataverse AAD app secret** - This is the secret key value created for the AAD app in previous steps.
+
 ## Troubleshooting the setup
 
 Setup can fail at various stages of the deployment of the Dataverse-based environment.
