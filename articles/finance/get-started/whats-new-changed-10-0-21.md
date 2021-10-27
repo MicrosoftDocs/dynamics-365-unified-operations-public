@@ -81,7 +81,7 @@ The following table lists the feature enhancements included in this release. Eac
 The following table lists the features that are turned on by default in 10.0.21. These features can be manually turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 | Feature name | Enable date | Feature added | Feature state | Module |
-| --- | --- | --- | --- | --- |
+| :---- | :---- | :---- | :---- | :---- |
 | Notification of prepayment invoices marked for settlement | 9/1/2021 | 6/24/2020 | On by default | Accounts payable |
 | Update the invoice quantities to match product receipt quantities in workflow | 9/1/2021 | 6/14/2020 | On by default | Accounts payable |
 | 1099-DIV reporting options | 9/1/2021 | 6/14/2020 | On by default | Accounts payable |
