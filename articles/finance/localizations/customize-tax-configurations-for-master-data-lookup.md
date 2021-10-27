@@ -69,7 +69,7 @@ Complete the steps in this topic to customize tax configurations to extend maste
 
 ## Create a customized model mapping configuration
 
-   1. In the **Electronic reporting** workspace, , select **Tax configurations**, Select the **Dataverse model mapping** configuration.
+   1. In the **Electronic reporting** workspace, select **Tax configurations**, select the **Dataverse model mapping** configuration.
    2. In the **Default for model mapping** field, select **No**. 
    3. Select **Create configuration**. 
    4. Select the taxable document model mapping derived from **Name: Dataverse Model Mapping, Microsoft**. 
