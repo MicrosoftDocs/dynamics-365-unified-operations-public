@@ -4,7 +4,7 @@
 title: Enable the Microsoft Power Platform integration
 description: This topic explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services (LCS) for Finance and Operations apps and Dataverse.
 author: jaredha
-ms.date: 10/25/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -152,7 +152,7 @@ For more information about dual-write configuration options, see [Linking mismat
 
 ## Enable the integration for cloud-hosted development environments
 
-The Power Platform integration can be enabled manually for cloud-hosted development environments by following the steps below. See [Deploy and access development environments](../dev-tools/access-instances) for information on deploying cloud development environments.
+The Power Platform integration can be enabled manually for cloud-hosted development environments by following the steps below. See [Deploy and access development environments](../dev-tools/access-instances.md) for information on deploying cloud development environments.
 
 ### Register an application in the Azure portal
 
