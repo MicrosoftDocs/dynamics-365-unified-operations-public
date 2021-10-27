@@ -1,5 +1,5 @@
 ---
-title: Errors codes for table map health check
+title: Errors codes for the table map health check
 description: This topic describes error codes for the table map health check.
 author: nhelgren
 ms.date: 10/04/2021
@@ -11,7 +11,7 @@ ms.author: nhelgren
 ms.search.validFrom: 2021-10-04
 ---
 
-# Errors codes for table map health check
+# Errors codes for the table map health check
 
 [!include [banner](../../includes/banner.md)]
 
