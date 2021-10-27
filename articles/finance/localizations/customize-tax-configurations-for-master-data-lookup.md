@@ -36,7 +36,7 @@ Complete the steps in this topic to customize tax configurations to extend maste
 1. In Dynamics Regulatory Configuration Service (RCS), go to the **Electronic reporting** workspace and select the **Microsoft** configuration provider. 
 2. Select **Repositories**.
 3. Select **Global**, and then select **Open**. 
-4. Choose a tax configuration, such as the T**ax Calculation Configuration**, and on the **Versions** tab, select a version. 
+4. Choose a tax configuration, such as the **Tax Calculation Configuration**, and on the **Versions** tab, select a version. 
 5. Select **Import**. 
 
    > [!NOTE]
@@ -44,14 +44,14 @@ Complete the steps in this topic to customize tax configurations to extend maste
 
 ## Create customized data model configuration
 
-1. In the **Electronic reporting** workspace, select the data model configuration you want to extend. For example, **Tax Calculation Data Model**. 
+1. In the **Electronic reporting** workspace, select **Tax configurations**, select the data model configuration you want to extend. For example, **Tax Calculation Data Model**. 
 2. Select **Create configuration**. 
 3. Select **Taxable document model derived from Name: Tax Calculation Data Model, Microsoft**. 
 4. In **Name** field, type in **Customization data model** and then select **Create configuration.** 
 
 ## Create customized reference models
 
-1. Select **Customization data model** and then select **Designer**.
+1. In the **Tax configurations** page, select **Customization data model** and then select **Designer**.
 2. Select the ellipsis button **...**, and select the **Reference model** view.
 
       [![Reference model.](./media/pic2.png)](./media/pic2.png)
@@ -69,7 +69,7 @@ Complete the steps in this topic to customize tax configurations to extend maste
 
 ## Create a customized model mapping configuration
 
-   1. In the **Electronic reporting** workspace, select the model mapping configuration, **Dataverse model mapping**. 
+   1. In the **Electronic reporting** workspace, , select **Tax configurations**, Select the **Dataverse model mapping** configuration.
    2. In the **Default for model mapping** field, select **No**. 
    3. Select **Create configuration**. 
    4. Select the taxable document model mapping derived from **Name: Dataverse Model Mapping, Microsoft**. 
@@ -79,12 +79,12 @@ Complete the steps in this topic to customize tax configurations to extend maste
 
       [![Create configuration pane.](./media/pic6.png)](./media/pic6.png)
 
-   8. Select the **Customization model mapping** and set **Connected application** as the one you created above.
+   8. Select the **Customization model mapping** and set the **Connected application** to the connection created in step 8 in [Set up an environment for master data lookup](tax-service-set-up-environment-master-data-lookup.md).
    9. Set the **Default for model mapping** field to **Yes**.
 
 ## Create customized model mappings
 
-1. Select **Customization model mapping**. 
+1. In the **Tax configurations** page, select **Customization model mapping**. 
 2. Select **Designer** and then select **Customization Model**.
 
    [![Reference model map.](./media/pic8.png)](./media/pic8.png)
@@ -111,8 +111,8 @@ Complete the steps in this topic to customize tax configurations to extend maste
 
 ## Create a customized tax configuration
 
-   1. Go to the **Electronic reporting** workspace.
-   2. Select **Tax Configuration - Europe** and then select **Create configuration**.
+   1. Go to the **Electronic reporting** workspace, select **Tax configurations**.
+   2. Select **Tax Calculation Configuration** and then select **Create configuration**.
    3. Select **Tax service configuration derived from Name: Tax Calculation Configuration, Microsoft**.
    4. In **Name** field, enter **Customization configuration**.
    5. Select **Create configuration**.
