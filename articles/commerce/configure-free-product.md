@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 This topic describes how to configure a product so that it can be purchased for free in Microsoft Dynamics 365 Commerce.
 
-## Configure the Zero price valid setting
+## Configure the product
 
 To sell a product for free in Dynamics 365 Commerce, you must set its price to 0 (zero). Additionally, you must configure the product's **Zero price valid** setting.
 
@@ -47,7 +47,7 @@ The following illustration shows an example of a product where the **Zero price 
 
 ![Example of a product where the Zero price valid option is set to Yes.](./media/Zero-price.png)
 
-## Configure the online store functionality profile
+## Configure the online store's functionality profile
 
 Before free transactions can be processed, you should configure the **Allow checkout with no payments** setting of the functionality profile for your online store so that transactions that have no payments are allowed. For information about how to create functionality profiles, see [Create an online functionality profile](online-functionality-profile.md).
 
