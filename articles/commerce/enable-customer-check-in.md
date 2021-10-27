@@ -61,6 +61,7 @@ Add the link or button to the template that is mapped to the **Packing completed
 `
 <a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%confirmationid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>
 `
+
 For more information about how to configure email templates, see [Customize transactional emails by mode of delivery](customize-email-delivery-mode.md). 
 
 ## A check-in confirmation task is created in POS
@@ -75,7 +76,7 @@ To test the customer check-in feature, follow these steps.
 
 1. Create customer the check-in page, and then add and configure the customer check-in module. For more information, see [Check-in for pickup module](check-in-pickup-module.md). 
 1. Check in the page, but do not publish it.
-1. Add the following link to an email template that is invoked by the packing complete notification type for a pick-up mode of delivery. See the [Create email templates for transactional events](email-templates-transactions.md) help topic for instructions:
+1. Add the following link to an email template that is invoked by the packing complete notification type for a pick-up mode of delivery. For instructions, see [Create email templates for transactional events](email-templates-transactions.md).
     - **Pre-production (UAT) environments**: add the code snippet from the [Configure the transactional email templates](#configure-the-transactional-email-template) section above.
     - **Production environments:** add the following commented code so that existing customers aren't affected: 
      `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`
