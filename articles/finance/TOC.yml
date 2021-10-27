@@ -1554,6 +1554,8 @@
               href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
             - name: Get started with the Electronic Invoicing for Mexico
               href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+            - name: Get started with Electronic invoicing for Saudi Arabia
+              href: localizations/e-invoicing-sa-get-started.md
             - name: Use the electronic invoicing service to import vendor invoices
               href: localizations/e-invoicing-get-started-import-vendor-invoices.md
             - name: Set up Electronic Invoicing
@@ -3378,6 +3380,8 @@
           href: localizations/emea-sau-zakat-reporting.md     
         - name: Allocate bank document charges to a shipment
           href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
+        - name: Customer electronic invoices in Saudi Arabia
+          href: localizations/emea-sau-e-invoices.md
       - name: Singapore
         items:
         - name: Singapore overview
