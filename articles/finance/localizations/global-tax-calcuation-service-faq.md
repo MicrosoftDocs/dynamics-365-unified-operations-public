@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax Calculation FAQ
-description: This topic answers frequently asked questions about the Tax Calculation service functionality.
+description: This topic answers frequently asked questions about the functionality of the Tax Calculation service.
 author: epodkolz
 ms.date: 10/26/2021
 ms.topic: article
@@ -28,79 +28,76 @@ ms.dyn365.ops.version: AX 10.0.21
 
 # Tax Calculation FAQ
 
-This topic answers frequently asked questions about the Tax Calculation service functionality.
+This topic answers frequently asked questions about the functionality of the Tax Calculation service.
 
-## When will the service be generally available? 
+## When will the Tax Calculation service be generally available?
 
-The Tax Calculation service is generally available starting with version 10.0.21 which was released in October 2021. For more information, see [Microsoft Dynamics 365 Blog
-](https://cloudblogs.microsoft.com/dynamics365/bdm/2021/10/26/tax-calculation-enhancements-are-now-available-for-dynamics-365/).
+The Tax Calculation service is generally available as of version 10.0.21, which was released in October 2021. For more information, see [Tax calculation enhancements are now available for Dynamics 365](https://cloudblogs.microsoft.com/dynamics365/bdm/2021/10/26/tax-calculation-enhancements-are-now-available-for-dynamics-365/) on the Microsoft Dynamics 365 blog.
 
-## Will the Tax Calculation service be available on Tier-1 machines to test? 
+## Will the Tax Calculation service be available on Tier-1 machines for testing?
 
-No. At a minimum, Tier-2 is required for testing. 
+No. At a minimum, Tier 2 is required for testing.
 
-## Will on-premises customers be able to use this service? 
+## Will on-premises customers be able to use the Tax Calculation service?
 
-The Tax Calculation service isn't currently supported for on-premises. 
+No, the Tax Calculation service isn't currently supported for on-premises.
 
-## Do we need to continue maintaining tax codes and sales tax groups in Dynamics 365 Finance and Operations apps and the Regulatory Configuration Service (RCS), or will there be an integration in the future, so maintenance is only needed in one application? 
+## Do I have to continue to maintain tax codes and sales tax groups in Finance and Operations apps and Regulatory Configuration Service (RCS), or will there eventually be an integration, so that maintenance is required in only one application?
 
-Tax setup can be created and maintained in the Tax calculation feature in RCS. When the Tax feature is selected in Finance and Operations apps on the **Tax calculation parameters** page, the setting is synchronized from RCS to your Finance and Operations apps. 
+A tax setup can be created and maintained in the Tax calculation feature in RCS. When the Tax feature is selected on the **Tax calculation parameters** page in Finance and Operations apps, the setting is synchronized from RCS to your Finance and Operations apps.
 
-## Do you expect performance to be better than the existing Finance and Operations apps tax engine? 
+## Do you expect the performance to be better than the performance of the existing Finance and Operations apps tax engine?
 
-The performance of the Tax calculation service is better than the performance of the existing tax engine.  
+The performance of the Tax Calculation service is better than the performance of the existing tax engine.
 
-## Do you have any plans to support Russia, Brazil, China, and India? 
+## Do you have any plans to support Russia, Brazil, China, and India?
 
-At this time, we do not plan to support Russia, Brazil, China, or India. For more information about country/region support, see [Release plans on Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/). 
+We don't currently plan to support Russia, Brazil, China, or India. For more information about country/region support, see [Release plans on Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/).
 
-## What is the recommendation for global implementations which involves countries like India? Can we use the GST engine provided by Microsoft and the tax calculation service on the same instance of Finance or Supply Chain Management rr do we need to have separate instances? 
+## What is the recommendation for global implementations that involve countries or regions such as India? Can I use the Goods and Services Tax (GST) engine that Microsoft provides and the Tax Calculation service on the same instance of Dynamics 365 Finance or Dynamics 365 Supply Chain Management, or do I have to have separate instances?
 
-You can use different tax engines for different legal entities. For example, for a legal entity in India, you can use GST based on GTE, and for other legal entities you can enable the Tax calculation service. 
+You can use different tax engines for different legal entities. For example, for a legal entity in India, you can use GST that is based on Global Tax Engine (GTE). Then, for other legal entities, you can enable the Tax Calculation service.
 
-## Does the Tax Calculation service work with withholding tax? 
+## Does the Tax Calculation service work with withholding tax?
 
-Withholding tax is currently not in the scope of the Tax calculation service. Instead, withholding tax is still using the existing WHT engine. 
+Withholding tax isn't currently in the scope of the Tax Calculation service. Withholding tax still uses the existing WHT engine.
 
-## Will return orders be supported? 
+## Will return orders be supported?
 
-Yes. Both sales and purchase return orders are supported in version 10.0.21. The list of supported transaction types can be found in [Supported transactions](global-tax-calcuation-service-overview.md#supported-transactions). 
+Yes, both sales return orders and purchase return orders are supported in version 10.0.21. For the list of supported transaction types, see [Supported transactions](global-tax-calcuation-service-overview.md#supported-transactions).
 
-## Will free text invoices be supported? 
+## Will free text invoices be supported?
 
-Yes. Free text invoices will be supported in version 10.0.23. The list of supported transaction types can be found in [Supported transactions](global-tax-calcuation-service-overview.md#supported-transactions).  
+Yes, free text invoices will be supported in version 10.0.23. For the list of supported transaction types, see [Supported transactions](global-tax-calcuation-service-overview.md#supported-transactions).
 
-## Will the tax service support the resource/non-stocked based and stocked/production-based deployment options for Dynamics 365 Project Operations? 
+## Will the Tax Calculation service support the resource/non-stocked-based and stocked/production-based deployment options for Dynamics 365 Project Operations?
 
-We plan to support these deployment types after the Tax Calcuation service has reached General availability. The list of supported transaction types can be found in [Supported transactions](global-tax-calcuation-service-overview.md#supported-transactions).
+We plan to support these deployment types after the Tax Calculation service has reached General availability. For the list of supported transaction types, see [Supported transactions](global-tax-calcuation-service-overview.md#supported-transactions).
 
-## Will the Tax Calculation service ultimately replace the existing Finance tax engine, or will that remain supported longer term? 
+## Will the Tax Calculation service eventually replace the existing Finance tax engine, or will that tax engine continue to be supported over the longer term?
 
-The existing tax engine will co-exist with the Tax Calculation service for now. At this time, there are no plans to retire the existing tax engine. The Tax Calculation service will continue to provide more advanced features. For more information, see [Tax Calculation overview](global-tax-calcuation-service-overview.md).
+For now, the existing tax engine will co-exist with the Tax Calculation service. There are currently no plans to retire the existing tax engine. The Tax Calculation service will continue to provide more advanced features. For more information, see [Tax Calculation overview](global-tax-calcuation-service-overview.md).
 
-## If a transaction is posted with incorrect tax, how can it be corrected? 
+## If a transaction is posted with incorrect tax, how can it be corrected?
 
-The correction process is the same as today. If you find out that tax is incorrect before posting, make a tax amount adjustment or adjust the applicability rule by changing tax groups. If the incorrect tax calculation is found after the posting, reverse the posted document or post a tax adjustment journal. 
+The correction process is the same as it currently is. If you discover that the tax is incorrect before you post the transaction, you can either make a tax amount adjustment or adjust the applicability rule by changing tax groups. If you discover that it's incorrect after you post the transaction, you can either reverse the posted document or post a tax adjustment journal.
 
-## What are the triggers for the Tax Calculation service to be called?  
+## What are the triggers for calling the Tax Calculation service?
 
-The triggers for the Tax Calculation service in Finance and Operations apps are the same as the triggers for the existing tax engine today. 
+The triggers for the Tax Calculation service in Finance and Operations apps are the same as the current triggers for the existing tax engine.
 
-## Why is the drop-down list of values in the “Feature setup name” field blank on the Tax calculation parameters?
+## On the Tax calculation parameters page, why is the list of values in the Feature setup name field blank?
 
-The tax calculation feature should be completed and published in RCS. Verify that the tenant between RCS and your Finance and Operations apps is the same.
+The Tax calculation feature should be completed and published in RCS. Verify that the tenant between RCS and your Finance and Operations apps is the same.
 
-## Why can’t I turn on the parameter, Enable tax calculation service?
+## Why can't I turn on the Enable tax calculation service parameter?
 
-This parameter isn't supported in some countries yet. Check the legal entity primary address against the [supported countries/regions](global-tax-calcuation-service-overview.md#supported-countriesregions) list.
+The **Enable tax calculation service** parameter isn't yet supported in some countries and regions. Make sure that the primary address of the legal entity is in one of the [supported countries/regions](global-tax-calcuation-service-overview.md#supported-countriesregions).
 
-## What if the Feature name is empty in the Feature management workspace?
+## What should I do if the Feature name field in the Feature management workspace is blank?
 
-If the **Feature name** is blank in the **Feature management** workspace, check the following:
+If the **Feature name** field in the **Feature management** workspace is blank, verify the following information:
 
- - If the application version contains hotfix [KB597182](https://fix.lcs.dynamics.com/Issue/Details?bugId=597182&dbType=3).
- - If the batch service is running. If the service isn't running, start it.
- - If the status of batch job, **Runs Feature Translation population** is complete. To check this, go to **System administration** > **Inquires** > **Batch jobs**. If the batch job is set to **Withhold**, set it to **Wait**. If the job is **Waiting**, wait until it has finished.
-
-
+- The application version contains hotfix [KB597182](https://fix.lcs.dynamics.com/Issue/Details?bugId=597182&dbType=3).
+- The batch service is running. If it isn't running, start it.
+- The status of the **Runs Feature Translation population** batch job is **Complete**. To verify the job's status, go to **System administration** \> **Inquiries** \> **Batch jobs**. If the batch job is set to **Withhold**, set it to **Wait**. If the job's status is **Waiting**, wait until the job has finished running.
