@@ -108,7 +108,7 @@ The project manager or a key project member must complete the go-live checklist 
 
 When you've completed the go-live checklist, email it to **Dynamics 365 FO Go-Live** d365fogl@microsoft.com. Always include a key stakeholder from the customer and the implementation partner on the email.
 
-After the checklist is submitted, Microsoft FastTrack will review the project and provide an report that describes the potential risks, best practices, and recommendations for a successful go-live of the project. In some cases, FastTrack might highlight risk factors and ask for a mitigation plan. When the review is completed, FastTrack will indicate that you're ready to request the production environment in LCS.
+After the checklist is submitted, Microsoft FastTrack will review the project and provide a report that describes the potential risks, best practices, and recommendations for a successful go-live of the project. In some cases, FastTrack might highlight risk factors and ask for a mitigation plan. When the review is completed, FastTrack will indicate that you're ready to request the production environment in LCS.
 
 For Microsoft Managed environments, if you request the production environment before the review is completed, the deployment will remain in the **Queued** state until the review is successfully completed. For Self-Service environments, the **Configure** button to request production will be only enabled after the review is completed. 
 
