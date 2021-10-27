@@ -80,6 +80,73 @@ The following table lists the feature enhancements included in this release. Eac
 
 The following table lists the features that are turned on by default in 10.0.21. These features can be manually turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
+| Feature name | Enable date | Feature added | Feature state | Module |
+| --- | --- | --- | --- | --- |
+| Notification of prepayment invoices marked for settlement | 9/1/2021 | 6/24/2020 | On by default | Accounts payable |
+| Update the invoice quantities to match product receipt quantities in workflow | 9/1/2021 | 6/14/2020 | On by default | Accounts payable |
+| 1099-DIV reporting options | 9/1/2021 | 6/14/2020 | On by default | Accounts payable |
+| Add date option for generating the Accrued purchases excluding the sales tax report | 9/1/2021 | 6/14/2020 | On by default | Accounts payable |
+| Improve the performance of purchase update history cleanup for vendor invoices | 9/1/2021 | 4/1/2020 | On by default | Accounts payable |
+| Improve performance when copying charges to vendor invoice lines | 9/1/2021 | 2/19/2020 | On by default | Accounts payable |
+| Vendor invoice batch posting | 9/1/2021 | 2/19/2020 | On by default | Accounts payable |
+| Attachments button on the Pending invoices journal form | 9/1/2021 | 2/19/2020 | On by default | Accounts payable |
+| Allow filtering the Tax 1099 detail report by reporting year | 9/1/2021 | 2/19/2020 | On by default | Accounts payable |
+| Prohibit submission to workflow when the invoice total and registered invoice total are not equal. | 9/1/2021 | 12/19/2019 | On by default | Accounts payable |
+| Prohibit submission to workflow when there are unallocated charges on a vendor invoice | 9/1/2021 | 10/11/2019 | On by default | Accounts payable |
+| Select all product receipts to match invoices faster. | 9/1/2021 | 9/10/2019 | On by default | Accounts payable |
+| Resetting the workflow status for vendor invoices from Unrecoverable to Draft | 9/1/2021 | 7/24/2019 | On by default | Accounts payable |
+| Credit management | 9/1/2021 | 6/17/2019 | On by default | Accounts receivable |
+| Performance enhancement for free text invoice to avoid tax re-calculation | 9/1/2021 | 4/1/2020 | On by default | Accounts receivable |
+| Improve performance of general ledger reports | 9/1/2021 | 4/1/2020 | On by default | General ledger |
+| Ledger periodic journal legal entity for intercompany tax posting | 9/1/2021 | 6/14/2020 | On by default | General ledger |
+| Dimension attributes values collection optimization in &#39;MasterFiles&#39; report section of SAF-T for Norway | 9/1/2021 | 9/1/2021 | On by default | General ledger |
+| Performance improvements for rebuilding financial dimension sets | 9/1/2021 | 10/23/2020 | On by default | General ledger |
+| Reverse GL foreign currency revaluation through batch processing | 9/1/2021 | 2/20/2021 | On by default | General ledger |
+| Generate the trial balance with transactional detail report | 9/1/2021 | 7/13/2020 | On by default | General ledger |
+| Journal unlock button | 9/1/2021 | 6/17/2019 | On by default | General ledger |
+| Delete journal performance optimizations | 9/1/2021 | 6/17/2019 | On by default | General ledger |
+| Resetting the workflow status for journals | 9/1/2021 | 7/24/2019 | On by default | General ledger |
+| Mass reversals for multiple documents | 9/1/2021 | 10/7/2019 | On by default | General ledger |
+| Subledger transfer to General Ledger performance optimization | 9/1/2021 | 12/19/2019 | On by default | General ledger |
+| Add Vendor ID, Vendor name, Customer ID, and Customer name to the Voucher transaction list page. | 9/1/2021 | 2/19/2020 | On by default | General ledger |
+| Budget planning query optimization for performance | 9/1/2021 | 1/6/2020 | On by default | Budgeting |
+| Performance enhancement for activation of Budget control configuration | 9/1/2021 | 5/10/2020 | On by default | Budgeting |
+| Vendor details added to Bridged transactions and Checks pages | 9/1/2021 | 8/17/2020 | On by default | Cash and bank management |
+| Update measurements on Cash Overview workspaces | 9/1/2021 | 10/23/2020 | On by default | Cash and bank management |
+| Enable update to bank transaction types for advanced bank reconciliation | 9/1/2021 | 11/11/2019 | On by default | Cash and bank management |
+| Enable batch processing for bank payment advice reports | 9/1/2021 | 12/19/2019 | On by default | Cash and bank management |
+| Cancel bank statement reconciliation | 9/1/2021 | 6/17/2019 | On by default | Cash and bank management |
+| Enable bank revaluation globally without a parameter | 9/1/2021 | 5/9/2019 | On by default | Cash and bank management |
+| Validate Finance insights configuration | 9/1/2021 | 9/1/2021 | On by default | Cash and bank management |
+| Change the label of Cancellation in Closing and adjustment to Reverse | 9/1/2021 | 8/17/2020 | On by default | Cost management |
+| Show the items with not fully settled transactions in summary format | 9/1/2021 | 6/14/2020 | On by default | Cost management |
+| Compare item prices storage | 9/1/2021 | 2/19/2020 | On by default | Cost management |
+| Moving average, fallback cost sequence | 9/1/2021 | 3/11/2020 | On by default | Cost management |
+| Collections process automation | 9/1/2021 | 8/17/2020 | On by default | Credit and collections |
+| Sales analysis by invoice report updated to preprocessing report | 9/1/2021 | 2/20/2021 | On by default | Credit and collections |
+| Customer aging performance enhancement | 9/1/2021 | 8/31/2019 | On by default | Credit and collections |
+| Date of VAT register in Overdue VAT journals | 9/1/2021 | 8/17/2020 | On by default | Tax |
+| Sales tax rate on invoice date in vendor invoice journals | 9/1/2021 | 8/17/2020 | On by default | Tax |
+| Sales tax rate on invoice date in purchase order credit note | 9/1/2021 | 10/23/2020 | On by default | Tax |
+| Conditional tax settlement for Ledger accruals | 9/1/2021 | 2/20/2021 | On by default | Tax |
+| Non deductible % field in Posted sales tax | 9/1/2021 | 5/10/2020 | On by default | Tax |
+| [India] GTE calculation validation | 9/1/2021 | 5/10/2020 | On by default | Tax |
+| Enable overriding TCS/TDS group on purchase invoice | 9/1/2021 | 4/24/2020 | On by default | Tax |
+| Calculate origin amount for sales tax specification by ledger transaction report | 9/1/2021 | 4/1/2020 | On by default | Tax |
+| Enable displaying a sign of the amount in the Balance column of the Sales tax general journal reconciliation report | 9/1/2021 | 6/24/2020 | On by default | Tax |
+| (India) Enable Credit/Debit note against export Invoice | 9/1/2021 | 6/24/2020 | On by default | Tax |
+| (India) Enable changing tax rate type in purchase invoice. | 9/1/2021 | 11/11/2019 | On by default | Tax |
+| Enable rounding rules for withholding tax | 9/1/2021 | 12/19/2019 | On by default | Tax |
+| Enable inquiry form for posted sales tax | 9/1/2021 | 2/19/2020 | On by default | Tax |
+| Sales tax conversion | 9/1/2021 | 2/19/2020 | On by default | Tax |
+| Generate the Sales tax payment by code report in the sales tax code currency | 9/1/2021 | 3/11/2020 | On by default | Tax |
+| Generation of &quot;GST transaction ID&quot; at export invoice posting. | 9/1/2021 | 10/7/2019 | On by default | Tax |
+| Enable multi batch processing for GSTR report | 9/1/2021 | 8/31/2019 | On by default | Tax |
+| Enable creating tax component with pre-defined rules | 9/1/2021 | 9/10/2019 | On by default | Tax |
+| [Saudi Arabic] Enable tax calculation for full project invoice amount | 9/1/2021 | 9/10/2019 | On by default | Tax |
+
+### Additional information for Tax features
+
 | Feature area | Feature name in feature management | More information |
 |---|---|---|
 | Tax          | (Saudi Arabia) Enable tax calculation for full project invoice amount | This feature enables tax calculation that is based on the full project invoice amount before the retention amount is deducted on the project invoice. No tax is calculated on the retention project invoice. |
