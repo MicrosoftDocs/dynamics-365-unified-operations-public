@@ -1702,6 +1702,8 @@
           href: localizations/emea-bel-prodcom-report.md
         - name: Annual VAT listing of domestic sales
           href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
+        - name: Belgium Intrastat
+          href: localizations/emea-bel-intrastat.md
       - name: Brazil
         items:
         - name: Brazil overview
