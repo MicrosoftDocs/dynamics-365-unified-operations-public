@@ -4,7 +4,7 @@
 title: Enable order lookup for guest checkouts
 description: This topic describes how to enable order lookup for guest checkouts in Microsoft Dynamics 365 Commerce.
 author: stuharg
-ms.date: 10/26/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
