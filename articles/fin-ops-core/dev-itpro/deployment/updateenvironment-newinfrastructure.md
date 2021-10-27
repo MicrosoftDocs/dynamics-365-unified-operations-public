@@ -4,7 +4,7 @@
 title: Update an environment
 description: This topic explains how to update an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
-ms.date: 10/21/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -37,28 +37,29 @@ This topic walks through the process of applying updates to an environment that 
 > In the next-generation infrastructure, updates are applied differently than they are applied in the current flow. *Whatever is provided in the package is applied to the environment, and it **overwrites** whatever is already present in that environment.* Therefore, you **must** create a single deployable package that contains all customizations and independent software vendor (ISV) solutions from your build environment. If the list of models in the environment differs from the list of models in in the package, you receive a warning before the update is applied. For information about how to create a single package, see [Manage third-party models and runtime packages by using source control](../dev-tools/manage-runtime-packages.md).
 
 
-## Applying Updates to Self-service Environments
+## Applying updates to self-service environments
 
-Self-service environments use a whole new approach to how updates are performed.  This is because of the usage of container-based image process to build the environment’s runtime.  These images are given an "Update Name” by the customer when they are applied to a Sandbox, and is shown in the Environment History of the environment.  An update image is comprised of three parts:
-1.	**Microsoft Binaries**.  These are released by Microsoft on a regular basis and include new Platform and Application software updates.  These are available from the environment details page for your environment in Microsoft Dynamics Lifecycle Services (LCS). You will see a **single tile** that shows a cumulative binary update of all the application and platform fixes. To apply this update, select the package, and then select **Save Package** to save the Microsoft update to the project asset library.
-2.	**AOT Deployable Package**.  These are an All-in-one package that is the sum of all of the custom code that the customer wishes to apply to their environment.
-3.	An **Update Name** provided by the customer in Lifecycle Services.
+Self-service environments use a special approach to how updates are performed.  This is because of the usage of the container-based, image process to build the environment’s runtime.  These images are given an **Update name** by the customer when they are applied to a sandbox environment, and are shown in the environment history of the environment.  An update image is comprised of three parts:
+
+1.	**Microsoft binaries**.  These are released by Microsoft on a regular basis and include new platform and application software updates.  These are available from the environment details page for your environment in Microsoft Dynamics Lifecycle Services (LCS). You will see a **single tile** that shows a cumulative binary update of all the application and platform fixes. To apply this update, select the package, and then select **Save package** to save the Microsoft update to the project asset library.
+2.	**AOT deployable package**.  These are an all-in-one package that is the sum of all of the custom code that the customer wishes to apply to their environment.
+3.	An **Update name** provided by the customer in Lifecycle Services.
  
 <img src="media/SelfServiceUpdate.png" width=600px alt="Self-service update image conceptual model" />
  
-The combination of these binaries is the basis for an image of which is used to create an instance of an Application Object Server or AOS.  By giving this image an Update Name customers can provide a meaningful name for what the update contains.
+The combination of these binaries is the basis for an image of which is used to create an instance of an Application Object Server (AOS).  By giving this image an **Update name** customers can provide a meaningful name for what the update contains.
 
-### Update using packages on Tier 1 sandbox/develop and test/demo/build environments
+### Update using packages on Tier 1 sandbox/development and test/demo/build environments
 
-To apply updates to a Tier 1 sandbox/develop and test/demo/build environment that was deployed through LCS, follow the steps in [Apply updates to cloud environments](apply-deployable-package-system.md).
+To apply updates to a Tier 1 sandbox/development and test/demo/build environments that were deployed through LCS, follow the steps in [Apply updates to cloud environments](apply-deployable-package-system.md).
 
 ### Update using packages on Tier 2 and above Standard Acceptance Test/sandbox environments
 
 > [!IMPORTANT]
 > Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
 
-At the sandbox tier, updates are still applied via Lifecycle Services using packages same as they were with the Microsoft Managed type environments prior to self-service.  
-When a customer applies a package, it can be either a Microsoft Binary or an AOT Deployable Package.  In either case, we will take the latest image of the environment, overwrite the binary or AOT component, and result in a new image that is used to re-create the runtime for the environment.
+At the sandbox tier, updates are still applied via Lifecycle Services using the same packages as they were with the Microsoft-managed environments prior to self-service.  
+When a customer applies a package, it can be either a Microsoft binary or an AOT deployable package.  In either case, we will take the latest image of the environment, overwrite the binary or AOT component, and result in a new image that is used to re-create the runtime for the environment.
 
 Before you begin, verify that the deployable package has been uploaded to the project asset library in LCS, and that validations have succeeded.
 
@@ -66,7 +67,7 @@ After the package is in the project asset library, follow these steps to update 
 
 1. Open the environment details page for the environment where you want to apply the package.
 2. Select **Maintain \> Apply updates** to apply an update.
-3. Enter a **unique name** for the update. You will use this name to identify the update that you want to promote the image (both Microsoft Binary and Customer AOT package) to the Production environment.
+3. Enter a **unique name** for the update. You will use this name to identify the update that you want to promote the image (both Microsoft binary and the customer AOT package) to the production environment.
 4. Select the package to apply. Use the filter at the top to find your package. The list will include application and platform binary packages and application deployable packages that have passed validation from the asset library.
 5. Select **Apply**.
 
@@ -77,25 +78,25 @@ After the package is in the project asset library, follow these steps to update 
 8. After the validations are completed, you can sign-off on the update from the environment history page by selecting either **Sign off** or **Sign off with issues**.
 
 #### Uninstalling a module
-AOT Deployable Packages are comprised of 1 or many customer modules.  This could be a combination of ISV modules, partner modules, or customer’s own customization modules.  If you want to uninstall one completely there are two paths in the Sandbox type environments:
+AOT deployable packages are comprised of one or many customer modules.  This could be a combination of ISV modules, partner modules, or a customer’s own customization modules.  If you want to uninstall one completely, there are two paths in the sandbox environments:
 
-1. Create a new AOT Deployable Package that no longer includes the module you wish to remove.  Applying this package directly to your Sandbox will result in a warning in Lifecycle Services letting you know that a module is missing in your package compared to the current image of the environment.
-a.	You can then proceed in LCS and we will create a new image combining the Microsoft Binary from the last update as well as the current AOT package that doesn’t contain the module you wish to remove.  This will in-effect uninstall the module.
-b.	This is only advised in situations where you don’t have a Production environment yet, or you quickly need to test the resulting environment but don’t plan to promote this AOT package to Production.
-c.	Promoting this resulting image of the Sandbox to Production type environments will be blocked.
-2.	Use the ModuleToRemove.txt process as outlined in [this article](uninstall-deployable-package.md).  This will do everything the same as the prior option, but will result in an image that is promotable to Production type environments.  *This is the recommended option*.
+- Create a new AOT deployable package that no longer includes the module you wish to remove.  Applying this package directly to your sandbox environment will result in a warning in LCS letting you know that a module is missing in your package, compared to the current image of the environment.
+  -	You can proceed in LCS and we will create a new image combining the Microsoft binary from the last update, as well as the current AOT package that doesn’t contain the module you wish to remove.  This will in-effect uninstall the module.
+  -	This is only advised in situations where you don’t have a production environment yet, or you quickly need to test the resulting environment, but don’t plan to promote this AOT package to production.
+  -	Promoting this resulting image of the sandbox environment to production environments will be blocked.
+-	Use the ModuleToRemove.txt process as outlined in [Uninstall a package](uninstall-deployable-package.md). This will do everything the same as the prior option, but will result in an image that is promotable to production environments.  *This is the recommended option*.
 
-#### Microsoft automatic updates in Sandboxes
-On a regular basis, Microsoft will push automatic updates of new Microsoft Binaries to your Sandbox environments.  This will only be done in the case where your Sandbox environment version has fallen behind and is older than the supported generally available version.
+#### Microsoft automatic updates in sandboxe environments
+On a regular basis, Microsoft will push automatic updates of new Microsoft binaries to your sandbox environments.  This will only be done in the case where your sandbox environment version has fallen behind and is older than the supported generally available version.
 
-This will overwrite the Microsoft Binary from your latest Sandbox image and will in-effect create a new update with the new Microsoft Binary plus your prior customizations.  
+This will overwrite the Microsoft binary from your latest sandbox image and will, in-effect, create a new update with the new Microsoft binary plus your prior customizations.  
 
-### Promote an update to Production environments
-Packages are no longer directly applied to Production type environments.  Historically, in Microsoft Managed environments, customers were able to apply any package that was successfully applied to Sandbox and marked as a ‘Release candidate.’ 
+### Promote an update to production environments
+Packages are no longer directly applied to production environments.  Historically, in Microsoft-managed environments, customers were able to apply any package that was successfully applied to a sandbox environment and marked as a *Release candidate*. 
 
-This posed many challenges however as there are order of operation scenarios where applying PackageA before PackageB resulted in a healthy environment, but applying in a different order resulted in regressing functionality.
+This posed many challenges, however, as there are order of operation scenarios where applying *Package A* before *Package B* resulted in a healthy environment, but applying in a different order resulted in regressing functionality.
 
-To solve this, Microsoft has introduced the image-based Update process.  As discussed earlier in this article, as packages are applied to Sandboxes we are creating images that are given an ‘Update name’.  This represents the entire runtime including Microsoft code and all custom code as a single unit.  When customers want to promote a change to Production they will select an Update from a Sandbox’s environment history.  This will move the entire runtime to the Production infrastructure as-is and should better safeguard against regressions.
+To solve this, Microsoft has introduced the image-based, update process.  As discussed earlier in this topic, as packages are applied to sandbox environments, we are creating images that are given an **Update name**.  This represents the entire runtime, including Microsoft code and all custom code as a single unit.  When customers want to promote a change to a production environment, they will select an update from a sandbox’s environment history.  This will move the entire runtime to the production infrastructure as-is and should better safeguard against regressions.
 
 > [!IMPORTANT]
 > Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
@@ -133,17 +134,17 @@ After you've marked an update as a release candidate, follow these steps to upda
 > [!NOTE]
 > If there is an on-going operation in the environment, or if the environment is already running on the same version or a later version, the scheduled update is canceled. When a scheduled update is canceled, an email notification is sent to all project stakeholders. Customers can also cancel an update by selecting **Cancel** on the environment details page. If customers want to reschedule or change an update, they can cancel the current operation and schedule a new one.
 
-#### Things to consider on Production updates
-When you are promoting an update from Sandbox to Production, it includes **both the Microsoft Binary and the Customer AOT package** from that update.  It is not possible for customers to promote them independently. 
+#### Things to consider on production updates
+When you are promoting an update from sandbox to production, it includes **both the Microsoft binary and the customer AOT package** from that update.  It is not possible for customers to promote them independently. 
 
-If you are seeking to promote a Microsoft Binary update from your Sandbox, be mindful that it will include the latest customer packages applied as of that same point in time from the Sandbox.
+If you are seeking to promote a Microsoft binary update from your sandbox environment, be mindful that it will include the latest customer packages applied as of that same point in time from the sandbox.
 
-If you are seeking to promote a Customer AOT package from your Sandbox, be mindful that it will include the most recently applied Microsoft Binary update as well.
+If you are seeking to promote a customer AOT package from your sandbox environment, be mindful that it will include the most recently applied Microsoft binary update, as well.
 
-#### Microsoft automatic updates in Production
-On a regular basis, Microsoft will push automatic updates of new Microsoft Binaries to your Production environment.  This will always happen a week after successful update to your Sandbox environments.  
+#### Microsoft automatic updates in production environments
+On a regular basis, Microsoft will push automatic updates of new Microsoft binaries to your production environment.  This will always happen a week after successful update to your sandbox environments.  
 
-In this event, Microsoft will not promote any customer AOT packages with this update.  Instead, Microsoft will take the newer binary version and combine that with the latest customer AOT package in the target Production environment thereby creating a new image for the Production runtime.
+In this event, Microsoft will not promote any customer AOT packages with this update.  Instead, Microsoft will take the newer binary version and combine that with the latest customer AOT package in the target production environment, thereby creating a new image for the production runtime.
 
 ### Rollback
 For environments that are deployed in the modern infrastructure stack, if servicing is unsuccessful, the environment is automatically rolled back in most cases. To learn why the operation was unsuccessful, you can download the logs from the environment history page.
