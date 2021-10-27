@@ -239,7 +239,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Download configuration files for the fiscal document provider and the fiscal connector from the Retail SDK:
+1. Download configuration files for the fiscal document provider and the fiscal connector:
 
     1. For the Retail SDK on a developer VM in LCS:
         1. Open **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration** and download the fiscal document provider configuration files: **DocumentProviderEFRSampleAustria.xml** and **DocumentProviderNonFiscalEFRSampleAustria.xml**.
@@ -248,10 +248,10 @@ To enable the registration process, follow these steps to set up Headquarters. F
         1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
         1. Open the last available release branch (for example, **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
         1. Open **src \> FiscalIntegration \> Efr**.
-        1. Open **Configurations \> DocumentProviders** and download the fiscal document provider configuration files: **DocumentProviderFiscalEFRSampleAustria.xml** and **DocumentProviderNonFiscalEFRSampleAustria.xml** (for example, [the file location for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders)).
+        1. Open **Configurations \> DocumentProviders** and download the fiscal document provider configuration files: **DocumentProviderFiscalEFRSampleAustria.xml** and **DocumentProviderNonFiscalEFRSampleAustria.xml** (for example, [the location of the files for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders)).
         1. Download the fiscal connector configuration file at **Configurations \> Connectors \> ConnectorEFRSample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration file that you downloaded earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration files that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create two new connector functional profiles, one for each document provider that you loaded earlier, and select the connector that you loaded earlier. Update the data mapping settings as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Update the connection settings as required.
