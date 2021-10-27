@@ -2,7 +2,7 @@
 title: Develop and customize home page
 description: This topic provides links to topics about development.
 author: RobinARH
-ms.date: 08/27/2021
+ms.date: 10/26/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: rhaertle
@@ -97,7 +97,7 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 ### Overviews
 
 - [Write business logic by using C\# and X++ source code](write-business-logic.md)
-- [Visual Studio 2017 requirements for X++](developer-tools-vs2017.md)
+- [Visual Studio requirements for X++](developer-tools-vs2017.md)
 
 ### Language support
 
