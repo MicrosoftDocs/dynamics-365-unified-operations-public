@@ -4,7 +4,7 @@
 title: Enable customer check-in notifications in point of sale (POS)
 description: This topic describes how to enable customer check-in notifications in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: bicyclingfool
-ms.date: 12/03/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -75,7 +75,7 @@ To test the customer check-in feature, follow these steps.
 1. Create customer the check-in page, and then add and configure the customer check-in module. For more information, see [Check-in for pickup module](check-in-pickup-module.md). 
 1. Check in the page, but do not publish it.
 1. Add the following link to an email template that is invoked by the packing complete notification type for a pick-up mode of delivery. See the [Create email templates for transactional events](email-templates-transactions.md) help topic for instructions:
-    - **Pre-production (UAT) environments**: add the code snippet from the [Configure the transactional email templates](#configure-the-transactional-email-templates) section above.
+    - **Pre-production (UAT) environments**: add the code snippet from the [Configure the transactional email templates](#configure-the-transactional-email-template) section above.
     - **Production environments:** add the following commented code so that existing customers aren't affected: 
      `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`
 1. Create an order whose mode of delivery is the pick-up mode of delivery.
