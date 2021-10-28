@@ -83,7 +83,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Replaced by another feature?**   | Yes, move X++ classes to the SysSetup interface. |
 | **Product areas affected**         | Database synchronization |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated.  |
+| **Status**                         | Deprecated. Removal of the feature is planned in October 2022. |
 
 
 ### SystemNotificationsManager.AddNotification API
