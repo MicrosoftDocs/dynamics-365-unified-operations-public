@@ -3,7 +3,7 @@
 # required metadata
 
 title: Deployment guidelines for the fiscal registration service integration sample for Austria from GitHub
-description: This topic is provides guidelines on how to deploy the fiscal integration sample for Austria from GitHub
+description: This topic provides guidelines on how to deploy the fiscal integration sample for Austria from GitHub
 author: josaw
 ms.date: 10/28/2021
 ms.topic: article
