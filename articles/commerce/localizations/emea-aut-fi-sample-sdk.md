@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Deployment guidelines for the fiscal registration service integration sample for Austria from the Retail SDK
+title: Deployment guidelines for the fiscal registration service integration sample for Austria (legacy)
 description: This topic provides guidelines on how to deploy the fiscal integration sample for Austria from the Retail SDK
 author: josaw
 ms.date: 10/28/2021
