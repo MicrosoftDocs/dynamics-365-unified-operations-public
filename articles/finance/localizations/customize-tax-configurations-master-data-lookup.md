@@ -4,7 +4,7 @@
 title: Customize tax configurations for master data lookup
 description: This topic explains how to customize tax configurations to extend master data lookup functionality.
 author: kai-cloud
-ms.date: 10/27/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
