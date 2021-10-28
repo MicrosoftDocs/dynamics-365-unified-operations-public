@@ -48,5 +48,3 @@ To export ratings and reviews from Commerce, follow these steps.
 
 1. Select the action for **Export All Reviews**.
 1. Complete the action. 
-
-![image](https://user-images.githubusercontent.com/42852473/137647111-8f0db51c-6124-4a00-ae7e-dbce94f566fd.png)
