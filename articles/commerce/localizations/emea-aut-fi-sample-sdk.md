@@ -205,3 +205,65 @@ The previous procedure enables the extensions that are components of the fiscal 
 3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 5. Complete all the required setup tasks that are described in the [Set up Commerce for Austria](#set-up-commerce-for-austria) section.
+
+## Design of extensions
+
+### Commerce runtime extension design
+
+The purpose of the extension that is a fiscal document provider is to generate service-specific documents and handle responses from the fiscal registration service.
+
+The CRT extension is **Runtime.Extensions.DocumentProvider.EFRSample**.
+
+For more details about the design of the fiscal integration solution, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+
+#### Request handler
+
+There are two request handlers for document providers:
+
+- **DocumentProviderEFRFiscalAUT** – This handler is used to generate fiscal documents for the fiscal registration service.
+- **DocumentProviderEFRNonFiscalAUT** – This handler is used to generate non-fiscal documents for the fiscal registration service.
+
+These handlers are inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Headquarters.
+
+The connector supports the following requests:
+
+- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
+- **GetNonFiscalDocumentDocumentProviderRequest** – This request contains information about what non-fiscal document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
+- **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, printing Z report, customer account deposits, customer order deposits, audit events, and non-sales transactions.
+- **GetFiscalRegisterResponseToSaveDocumentProviderRequest** – This request returns the response from the fiscal registration service. This response is serialized to form a string so that it's ready to be saved.
+
+#### Configuration
+
+The configuration files are located in the **Configuration** folder of the extension project:
+
+- **DocumentProviderFiscalEFRSampleAustria** – For fiscal documents.
+- **DocumentProviderNonFiscalEFRSampleAustria** – For non-fiscal documents.
+
+The purpose of these files is to enable settings for the document provider to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following setting is added:
+
+- VAT rates mapping
+
+### Hardware station extension design
+
+The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service.
+
+The Hardware station extension is **HardwareStation.Extension.EFRSample**. The Hardware station extension uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
+
+#### Request handler
+
+The **EFRHandler** request handler is the entry point for handling requests to the fiscal registration service.
+
+The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Headquarters.
+
+The connector supports the following requests:
+
+- **SubmitDocumentFiscalDeviceRequest** – This request sends documents to the fiscal registration service and returns a response from it.
+- **IsReadyFiscalDeviceRequest** – This request is used for a health check of the fiscal registration service.
+- **InitializeFiscalDeviceRequest** – This request is used to initialize the fiscal registration service.
+
+#### Configuration
+
+The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the fiscal connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
+
+- **Endpoint address** – The URL of the fiscal registration service.
+- **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
