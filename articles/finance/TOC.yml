@@ -1634,6 +1634,8 @@
               href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
             - name: Add data fields in the tax integration by using extensions
               href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
+            - name: Customize tax configurations for master data lookup
+              href: localizations/customize-tax-configurations-master-data-lookup.md
           - name: Tax Calculation FAQ
             href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json              
       - name: Regulatory updates
@@ -1704,6 +1706,8 @@
           href: localizations/emea-bel-prodcom-report.md
         - name: Annual VAT listing of domestic sales
           href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
+        - name: Belgium Intrastat
+          href: localizations/emea-bel-intrastat.md
       - name: Brazil
         items:
         - name: Brazil overview
