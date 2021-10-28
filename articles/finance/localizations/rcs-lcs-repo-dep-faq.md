@@ -42,9 +42,9 @@ Deprecation of the use of LCS as storage was communicated in [Removed or depreca
 
 ## Key features
 
-- Use RCS to create and edit Electronic Reporting (ER) configurations and Globalization features. 
-- Push configurations directly from the RCS designer to a connected application, such as a Dynamics 365 Finance environment, to quickly make and test changes in your configurations.
-- Centrally store, share, and manage the lifecycle for both ER configuration and globalzation features through the Global repository's centralized storage.
+- Use RCS to create and edit ER configurations and Globalization features.
+- Push configurations directly from the RCS designer to a connected application, such as a Dynamics 365 Finance environment, so that you can quickly make and test changes in your configurations.
+- Centrally store, share, and manage the lifecycle for both ER configurations and Globalization features through the Global repository's centralized storage.
 
 ## Guidance for one-time and ongoing actions
 
@@ -62,14 +62,16 @@ Import all required configurations from LCS to RCS, and then publish them from R
 
 ### Going forward
 
-Use the visual designers in RCS to:
+Use the visual designers in RCS for the following purposes:
+
 - Extend the Microsoft-provided templates.
 - Create new configurations that your organization requires.
-- Customize Globalization features for Electronic invoicing and Tax Calculation services. 
+- Customize Globalization features for Electronic invoicing and the Tax Calculation service.
 
-Use the Globalization repository to:
-- Access Microsoft-produced configurations and globalization features.
-- Upload configurations that you created or extended to the Global repository for storage, and to share across your organization's Dynamics applications environments or external organization. For more information, see [Create ER configuration in RCS and upload to Global repo](rcs-global-repo-upload.md).
+Use the Globalization repository for the following purposes:
+
+- Access Microsoft-produced configurations and Globalization features.
+- Upload configurations that you created or extended to the Global repository for storage, and share them across your organization's Dynamics 365 application environments or with external organizations. For more information, see [Create ER configuration in RCS and upload to Global repo](rcs-global-repo-upload.md).
 
 ## Frequently asked questions
 
@@ -89,22 +91,21 @@ RCS uses the concept of a *connected application*. A connected application forms
 
 There are no examples, but you can complete the steps earlier in this topic to migrate your configurations to the RCS Global repository.
 
-### Is RCS a prerequisite to configure Electronic reporting (ER)?
+### Is RCS a prerequisite to configure Electronic reporting?
 
-Yes. RCS includes capabilities that support the setup of Globalization features which are used by globalization services, like Electronic Invoicing and the Tax Calculation Service. However, the service has the same visual designer functionality that allows you to extend or create new Electronic Reporting configurations. RCS also provides lifecycle management for both ER configurations and Globalization features.  
+Yes. RCS includes capabilities that support the setup of Globalization features that are used by Globalization services such as Electronic invoicing and the Tax Calculation service. However, the service has the same visual designer functionality that lets you extend or create new ER configurations. RCS also provides lifecycle management for both ER configurations and Globalization features.
 
-### In What regions can RCS be deployed?
+### Which regions can RCS be deployed in?
 
-RCS is avaliable in the following Azure regions: 
+RCS is available in the following Azure regions:
 
 - United States
 - India
-- France 
-- Europe 
+- France
+- Europe
 
-For more information about product support, see [Dynamics Globalization services overview](globalization-services-overview.md). For information on geographic support, see [Dynamics 365 and Power Platform: Availability, data location, language, and localization](https://aka.ms/rcs/D365Productavailabilityguide).  
+For more information about product support, see [Dynamics Globalization services overview](globalization-services-overview.md). For information about geographic support, see [Dynamics 365 and Power Platform: Availability, data location, language, and localization](https://aka.ms/rcs/D365Productavailabilityguide).
 
 ### What's the cost of using RCS?
 
-RCS and the Globalization repository are provided free of charge as part of existing Dynamics 365 Finance and Operations apps licenses. There are no separate costs associated with using the RCS design service or storing configurations in the Global repository. There is no limit to the number of configurations or connected applications at this time.
-
+RCS and the Globalization repository are provided free of charge as part of existing Finance and Operations app licenses. No separate costs are associated with using the RCS design service or storing configurations in the Global repository. There is currently no limit on the number of configurations or connected applications.
