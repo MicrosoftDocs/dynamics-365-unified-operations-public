@@ -1312,9 +1312,7 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
-        - name: Deploying fiscal integration sample for Austria from GitHub
-          href: localizations/emea-aut-fi-sample-github.md
-        - name: Deploying fiscal integration sample for Austria from Retail SDK
+        - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
         items:
