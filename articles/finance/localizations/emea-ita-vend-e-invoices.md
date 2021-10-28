@@ -38,6 +38,7 @@ This topic describes how configure and submit vendor electronic invoices in an e
 
 The primary address of the legal entity must be in Italy.
 
+The export of vendors electronic invoices is implemented symmetrically to Italian customers electronic invoices export and uses common **Electronic invoice parameters** defined in **Accounts receivable** module. For details, see the article for [Customer electronic invoices](emea-ita-e-invoices.md).
 
 
 This topic contains the following information:
