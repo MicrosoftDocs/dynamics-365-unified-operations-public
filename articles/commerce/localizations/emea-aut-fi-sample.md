@@ -216,17 +216,7 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
-### Set up fiscal integration
-
-Because of the introduction of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), the fiscal integration setup steps differ depending on the version of the Retail SDK that is used:
-
-- For the version 10.0.21 and before, you must use the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS).
-- For the version 10.0.22 and later, you must use [sealed Commerce self-service components](../dev-itpro/enhanced-mass-deployment.md) and the fiscal integration sample published in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) GitHub repository.
-
-For more information, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
-
-> [!WARNING]
-> Because of limitations of the new independent packaging and extension model, it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer VM in LCS. Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+## Set up fiscal integration for Austria
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
 
@@ -235,21 +225,23 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 1. [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
 1. [Configure channel components](#configure-channel-components)
 
-#### Set up the registration process
+### Set up the registration process
 
 To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Download configuration files for the fiscal document provider and the fiscal connector:
-
-    1. For the Retail SDK on a developer VM in LCS:
-        1. Open **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration** and download the fiscal document provider configuration files: **DocumentProviderEFRSampleAustria.xml** and **DocumentProviderNonFiscalEFRSampleAustria.xml**.
-        1. Download the fiscal connector configuration file at **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
-    1. For the fiscal integration sample published in the GitHub repository:
         1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
         1. Open the last available release branch (for example, **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
         1. Open **src \> FiscalIntegration \> Efr**.
         1. Open **Configurations \> DocumentProviders** and download the fiscal document provider configuration files: **DocumentProviderFiscalEFRSampleAustria.xml** and **DocumentProviderNonFiscalEFRSampleAustria.xml** (for example, [the location of the files for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders)).
         1. Download the fiscal connector configuration file at **Configurations \> Connectors \> ConnectorEFRSample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
+
+> [!WARNING]
+> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
+> The configuration files for the fiscal integration sample are located in the following folders of the Retail SDK:
+> - The fiscal document provider configuration files: **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration**.
+> - The fiscal connector configuration file: **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration**
+
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration files that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
@@ -261,7 +253,7 @@ To enable the registration process, follow these steps to set up Headquarters. F
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
 1. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
-#### Configure channel components
+### Configure channel components
 
 The channel component configuration steps differ depending on the version of the Retail SDK that is used:
 
