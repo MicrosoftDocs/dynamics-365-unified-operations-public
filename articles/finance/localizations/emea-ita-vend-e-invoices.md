@@ -69,15 +69,17 @@ In **Accounts receivable** \> **Setup** \> **Electronic invoice parameters**, on
 
 ### Assign invoice types to sales tax codes
 
-bbb
+You can assosiate invoice types with specific salse tax codes. In **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**, on the **General** FastTab, in the **Invoice type** field, enter the reference to a specific invoice type.
+
+![Invoice types in tax codes](media/emea-ita-invoice-types-tax-codes.jpg)
 
 ## Invoice types processing
 
 The following types of vendor invoice documents are supported and will automatically be filled in:
 
 - TD16 – for vendors located in Italy, if an invoice contains a sales tax code with either **Use tax** or **Reverse charge** option activated.
-- TD17 – for vendors located in European Union, if an invoice is issued for services provision.
-- TD18 – for vendors located in European Union, if an invoice is issued for products selling.
+- TD17 – for vendors located in European Union, if an invoice is issued for **services** provision.
+- TD18 – for vendors located in European Union, if an invoice is issued for **products** selling.
 
 If a required invoice type isn't listed, you can manually adjust the document type in the vendor invoice journal. 
 To enable manual adjustment, complete the following setup:
