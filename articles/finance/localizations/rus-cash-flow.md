@@ -113,17 +113,19 @@ After you complete the example that is provided in this topic, you will be able 
 2. Under **Country/Regional specific features \> Russia**, select the **Cash flow management** check box.
 3. If the organization plans to use payment requests, select the **Payment requests** check box.
 
+![License configuration](media/rus-cash-flow-m1.jpg)
+
 ### Optional: Set up an organization hierarchy for centralized payments
 
 1. Go to **Organization administration \> Organizations \> Organization hierarchies**.
 2. In the left pane, select **Centralized Payments**.
 
-    ![Organization hierarchy for centralized payments.](media/rus-org-hierarchy.jpg)
+    ![Organization hierarchy for centralized payments.](media/rus-cash-flow-m2.jpg)
 
 3. Select **View**.
 4. On the **Hierarchy designer** page, create a hierarchy where **Contoso Entertainment Systems Russia** (**RUMF**) is the legal entity of the payment and **Contoso Retail RUS** (**RURT**) is the operating legal entity.
 
-    ![Organization hierarchy designer.](media/rus-org-hierarchy-designer.jpg)
+    ![Organization hierarchy designer.](media/rus-cash-flow-m3.jpg)
 
 5. Publish the new hierarchy.
 
@@ -132,20 +134,28 @@ After you complete the example that is provided in this topic, you will be able 
 1. Go to **Cash and bank management \> Setup \> Cash and bank management workflows**.
 2. Select **New** to create a record.
 3. Select the required workflow type: **Workflow type for payment requests approval** or **Payment schedule journal approval workflow**.
+
+    ![Workflow elements.](media/rus-cash-flow-m6.jpg)
+
 4. Set up the new workflow by using the new **Approve the payment request** or **Approve payment schedule journal** workflow element.
 
-    ![Workflow elements.](media/rus-cash-flow-workflow.jpg)
+    ![Workflow elements.](media/rus-cash-flow-m7.jpg)
 
 5. Activate the new workflow.
 
 ### Set up a payment priority
 
 1. Go to **Cash and bank management \> Setup \> Cash flow management \> Payment priority**.
+
+    ![Payment priority.](media/rus-cash-flow-m4.jpg)
+
 2. Select **New** to create a record.
 3. On the **Manage priority** FastTab, use the **Up** and **Down** buttons to arrange the priority list.
 4. Go to **Accounts payable \> Vendors \> All vendors**.
 5. Select the vendor, and then select **Edit**.
 6. In the **Payment priority** field, specify a priority code for the associated party. You can also complete this operation on the **Party** and **Customer** pages.
+
+    ![Payment priority.](media/rus-cash-flow-m5.jpg)
 
 ### Set up a payment request type
 
