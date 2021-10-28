@@ -97,7 +97,7 @@ Not all items perform in the same manner from a demand forecasting perspective. 
 ### Set up the connection to Azure Machine Learning (deprecated)
 
 > [!IMPORTANT]
-> *Azure Machine Learning* has now been deprecated, so it is no longer possible to create new workspaces for it on Azure. It has been replaced by the *Azure Machine Learning Service*, which provides similar functionality and more. If you aren't already using Azure Machine Learning, then you should use the Azure Machine Learning Service instead starting now. If you already have a workspace created for Azure Machine Learning, you can continue to use it until the feature is completely removed from Azure, but we recommend updating to the Azure Machine Learning Service as soon as possible. For more information about Azure Machine Learning Service and how to set it up, see [Set up the Azure Machine Learning Service](#setup-amls).
+> *Azure Machine Learning* has now been deprecated, so it is no longer possible to create new workspaces for it on Azure. It has been replaced by the *Azure Machine Learning Service*, which provides similar functionality and more. If you aren't already using Azure Machine Learning, then you should use the Azure Machine Learning Service instead starting now. If you already have a workspace created for Azure Machine Learning, you can continue to use it until the feature is completely removed from Azure, but we recommend updating to the Azure Machine Learning Service as soon as possible. (The application will continually warn you that Azure Machine Learning has been deprecated, but that won't affect the forecasting result.) For more information about the new Azure Machine Learning Service and how to set it up, see [Set up the Azure Machine Learning Service](#setup-amls). You can freely switch back and forth between using the new and old machine learning solutions with Supply Chain Management for as long as your old Azure Machine Learning workspace remains available.
 
 If you already have an Azure Machine Learning workspace available, then you can use it to generate forecasts by connecting it to Supply Chain Management. To do so, go to the **Azure Machine Learning** tab on the **Demand forecasting parameters** page. (These settings only have an effect when **Forecast generation strategy** is set to *Azure Machine Learning*.) Then enter the following details for your Azure Machine Learning workspace:
 
@@ -226,6 +226,7 @@ Use the following procedure to connect your Supply Chain Management environment 
 
 1. Sign in to Supply Chain Management.
 1. Go to **Master planning \> Setup \> Demand forecasting \> Demand forecasting parameters**.
+1. Open the **General** tab and make sure **Forecast generation strategy** is set to *Azure Machine Learning Service*. <!--KFM: Also check Item allocation key overrides for this setting? -->
 1. Open the **Azure Machine Learning Service** tab.
 
     ![Azure Machine Learning Service parameters](media/azure-ml-service-parameters.png "Azure Machine Learning Service parameters")
@@ -236,17 +237,6 @@ Use the following procedure to connect your Supply Chain Management environment 
     - **Service principal secret** – Enter the service principal application secret for the application you created in the [Active Directory Application](#aad-app) section of this topic. This value is used to authenticate the tenant in Azure Active Directory.
     - **Storage account name** – Enter the Azure storage account name that you specified when you ran the setup wizard on your Azure workspace (see also [Set up your machine learning workspace on Azure](#ml-workspace)).
     - **Pipeline endpoint address** – Enter the URL of the pipeline REST endpoint for your Azure Machine Learning Service. This is the pipeline you created as the last step when you [set up your machine learning workspace on Azure](#ml-workspace). To get pipeline URL, sign in to your Azure portal, go to **Pipelines \> Pipeline endpoints**, and choose **TriggerDemandForecastGeneration** <!-- KFM: Is this really the right label? -->; then copy the REST endpoint shown <!-- KFM: Can we describe this more accurately? -->.
-
-### Set up Demand forecasting parameters in Supply Chain Management
-
-Use the following procedure to configure Supply Chain Management to use the Azure Machine Learning Service for demand forecasting.
-
-1. Sign in to Supply Chain Management.
-1. Go to **Master planning \> Setup \> Demand forecasting \> Demand forecasting parameters**.
-1. On the **General** tab, expand the **Forecast algorithm parameters** FastTab and set **Forecast generation strategy** to *Azure Machine Learning Service*.
-1. Make other relevant configuration settings as described in [Demand forecasting parameters](#parameters).
-
-You will be able to revert to an older **Forecast generation strategy** at any time until Azure ML Studio (classic) is fully removed from Azure <!-- KFM: Is this the correct product name? We need to be careful to always use the exact correct name of each of the very similar sounding Azure ML products. --> provided you already have an existing workspace. The application will continually warn you that Azure ML Studio (classic) has been deprecated, but that won't affect the forecasting result.
 
 ## Additional resources
 
