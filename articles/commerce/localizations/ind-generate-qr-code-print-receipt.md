@@ -161,8 +161,6 @@ Follow these steps to handle the new custom receipt field for a QR code.
        value="Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting" />
            <add source="assembly" 
        value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
-           <add source="assembly"
-       value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia" />
           </composition>
        </commerceRuntimeExtensions>
     ```
@@ -229,7 +227,6 @@ namespace Contoso
         using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
         using Microsoft.Dynamics.Commerce.Runtime.Messages;
         using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
-        using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia.Messages;
 
         /// <summary>
         /// The extended service to get custom sales receipt field.
