@@ -57,6 +57,37 @@ Use the **Vendor invoice (IT).version.YYY.ZZ** electronic reporting configuratio
 
 Select a specific vendor in **Accounts payable** \> **All vendors**. On the **Invoice and delivery** FasTab, in the **E-invoice** section, turn on the **eInvoice register** option to activate electronic invoices generation for the vendor.
 
+## Invoice types configuration
+
+**Invoice type** is a mandatory attribute of electronic invoices and must be assigned to an electronic invoice before its submission to the Exchange system.
+
+### Define invoice types dictionary
+
+In **Accounts receivable** \> **Setup** \> **Electronic invoice parameters**, on the **Invoice types** tab, define the codes and the descriptions of required invoice types.
+
+![Invoice types dictionary](media/emea-ita-invoice-types.jpg)
+
+### Assign invoice types to sales tax codes
+
+bbb
+
+## Invoice types processing
+
+The following types of vendor invoice documents are supported and will automatically be filled in:
+
+- TD16 – for vendors located in Italy, if an invoice contains a sales tax code with either **Use tax** or **Reverse charge** option activated.
+- TD17 – for vendors located in European Union, if an invoice is issued for services provision.
+- TD18 – for vendors located in European Union, if an invoice is issued for products selling.
+
+If a required invoice type isn't listed, you can manually adjust the document type in the vendor invoice journal. 
+To enable manual adjustment, complete the following setup:
+
+- Electronic document property definition
+- Invoice document type registration
+
+For more information, see the "Invoice types configuration" section in [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+
+
 ## Process vendor electronic invoices
 
 To view all vendors electronic invoices and perform various actions, go to **Accounts payable** > **Invoices** > **E-Invoices** > **Electronic invoices**.
