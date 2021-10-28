@@ -268,38 +268,6 @@ The channel component configuration steps differ depending on the version of the
 - For the Retail SDK on a developer VM in LCS, see [deployment guidelines for the sample from the Retail SDK](emea-aut-fi-sample-sdk.md).
 - For the fiscal integration sample published in the GitHub repository, see [deployment guidelines for sample from GitHub](emea-aut-fi-sample-guthub.md).
  
-## Deployment guidelines for cash registers for Austria
-
-# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
-
-
-
-# [Retail 10.0.22 and later](#tab/retail-10-0-22)
-
-
----
-
-Follow these steps to set up a development environment so that you can test and extend the sample.
-
-# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
-
-# [Retail 10.0.22 and later](#tab/retail-10-0-22)
-
-
----
-
-### Production environment
-
-The previous procedure enables the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
-
-# [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
-
-
-# [Retail 10.0.22 and later](#tab/retail-10-0-22)
-
-
----
-
 ## Design of extensions
 
 ### Commerce runtime extension design
