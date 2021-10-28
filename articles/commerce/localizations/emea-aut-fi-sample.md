@@ -5,7 +5,7 @@
 title: Fiscal registration service integration sample for Austria
 description: This topic provides an overview of the fiscal integration sample for Austria.
 author: josaw
-ms.date: 10/27/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -261,6 +261,13 @@ To enable the registration process, follow these steps to set up Headquarters. F
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
 1. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
+#### Configure channel components
+
+The channel component configuration steps differ depending on the version of the Retail SDK that is used:
+
+- For the Retail SDK on a developer VM in LCS, see [guidelines for the Retail SDK](emea-aut-fi-sample-sdk.md).
+- For the fiscal integration sample published in the GitHub repository, see [guidelines for GitHub](emea-aut-fi-sample-guthub.md).
+ 
 ## Deployment guidelines for cash registers for Austria
 
 # [Retail 10.0.21 and earlier](#tab/retail-10-0-21)
