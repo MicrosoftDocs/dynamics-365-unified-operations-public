@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.21 (October 2021)
 description: This topic describes features that are either new or changed in the Dynamics 365 Finance version 10.0.21 preview release.
 author: kfend
-ms.date: 09/24/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -80,8 +80,6 @@ The following table lists the feature enhancements included in this release. Eac
 
 The following table lists the features that are turned on by default in 10.0.21. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory.  This is to ensure that customers are using current functionality, so that as enhancements are added they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential. 
 
-One important exception to note is the Advanced ledger settlement feature.  Advanced ledger settlement was introduced as a new feature before Feature management was widely available. Therefore this feature was turned on and off using a General ledger parameter. The Advanced ledger settlement feature has been evaluated and is now turned on by default; it can’t be turned off. The parameter that turned it on and off was removed because all customers should be using advanced ledger settlement functionality moving forward, and because this feature was introduced more than a year ago. New enhancements for Ledger settlement are in progress, and are dependent on the Advanced ledger settlement feature being turned on.
-
 | Feature name | Enable date | Feature added | Feature state | Module |
 | :---- | :---- | :---- | :---- | :---- |
 | Notification of prepayment invoices marked for settlement | 9/1/2021 | 6/24/2020 | On by default | Accounts payable |
@@ -146,6 +144,9 @@ One important exception to note is the Advanced ledger settlement feature.  Adva
 | Enable multi batch processing for GSTR report | 9/1/2021 | 8/31/2019 | On by default | Tax |
 | Enable creating tax component with pre-defined rules | 9/1/2021 | 9/10/2019 | On by default | Tax |
 | [Saudi Arabic] Enable tax calculation for full project invoice amount | 9/1/2021 | 9/10/2019 | On by default | Tax |
+
+> [!NOTE]
+> Advanced ledger settlement was introduced as a new feature before Feature management was widely available. This feature was turned on and off using a General ledger parameter. The Advanced ledger settlement feature has been evaluated and is now turned on by default; it can’t be turned off. The parameter that turned it on and off was removed, so all customers should be using advanced ledger settlement functionality moving forward. New enhancements for Ledger settlement are in progress, and are dependent on the Advanced ledger settlement feature being turned on.
 
 ### Additional information for Tax features
 
