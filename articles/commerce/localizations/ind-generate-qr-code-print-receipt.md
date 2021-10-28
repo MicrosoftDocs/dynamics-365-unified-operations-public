@@ -53,7 +53,7 @@ Because invoice printing isn't supported in Dynamics 365 Commerce, there are no 
 
     1. Go to **Retail and Commerce** > **Retail and commerce IT** > **Channel setup** > **POS profiles** > **Custom field**.
     2. On the Action Pane, select **New** to add a field.
-    3. In the **Name** field, enter a name for the new field (for example, **TAXINVOICE\_QR**).
+    3. In the **Name** field, enter a name for the new field (for example, **TAXINVOICE_QR**).
     4. In the **Type** field, select **Receipt**.
     5. In the **Caption text ID** field, enter the **Text ID** value from the language text that you created earlier.
 
@@ -114,7 +114,7 @@ Follow these steps to handle the new custom receipt field for a QR code.
       string receiptFieldValue = string.Empty;
       switch (receiptFieldName)
       {
-          case "TAXINVOICE\_QR":
+          case "TAXINVOICE_QR":
             receiptFieldValue = await GetQRCode(request).ConfigureAwait(false);
             break;
           default:
@@ -284,7 +284,7 @@ namespace Contoso
                 /// </summary>
                 /// <param name="request">The service request to get custom receipt field value.</param>
                 /// <returns>The value of custom receipt field.<returns>
-                private async Task<Response&>
+                private async Task<Response>
            GetCustomReceiptFieldForSalesTransactionReceiptsAsync(GetSalesTransactionCustomReceiptFieldServiceRequest request)
                 {
                     ThrowIf.Null(request.SalesOrder, 
