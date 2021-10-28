@@ -3,7 +3,7 @@
 # required metadata
 
 title: Deployment guidelines for the fiscal registration service integration sample for Austria from GitHub
-description: This topic is a deployment guide for the fiscal integration sample for Austria
+description: This topic is provides guidelines on how to deploy the fiscal integration sample for Austria from GitHub
 author: josaw
 ms.date: 10/28/2021
 ms.topic: article
@@ -76,7 +76,7 @@ The Hardware station extension components are included in the EFR solution from 
     HardwareStation.EFR.Installer.exe install --verbosity 0
     ```
 
-### Production environment
+## Production environment
 
 The previous procedure enables the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
