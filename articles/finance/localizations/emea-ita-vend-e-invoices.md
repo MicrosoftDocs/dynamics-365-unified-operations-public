@@ -38,17 +38,23 @@ This topic describes how configure and submit vendor electronic invoices in the 
 
 The primary address of the legal entity must be in Italy.
 
-The export of vendors electronic invoices is implemented symmetrically to Italian customers electronic invoices export and uses common **Electronic invoice parameters** defined in **Accounts receivable** module. For details, see the article for [Customer electronic invoices](emea-ita-e-invoices.md).
+The export of vendors electronic invoices is implemented symmetrically to Italian customers electronic invoices export and uses common **Electronic invoice parameters** defined in **Accounts receivable** module. These parameters must be configured in advance. For details, see the article for [Customer electronic invoices](emea-ita-e-invoices.md).
 
 
-## <a id="apparameters"></a>Accounts payable parameters
+## <a id="apparameters"></a>Accounts payable parameters configuration
 
-In **Accounts payable** \> **Setup** \> **Accounts payable parameters**, on the **Electronic documents** tab, select the configuration that is used to create electronic invoice  export XML files for vendor invoices.
+In **Accounts payable** \> **Setup** \> **Accounts payable parameters**, on the **Electronic documents** tab, in the **Vandor invoice (export)** field,select the configuration that is used to create electronic invoice export XML files for vendor invoices.
 
 ![Electronic documents in Accounts payable parameters](media/emea-ita-AP-parameter-e-invoices.jpg)
 
 > [!NOTE]
 > The configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+
+## Vendor data configuration
+
+Select a specific vendor in **Accounts payable** \> **All vendors**. On the **Invoice and delivery** FasTab, in the **E-invoice** section, turn on the **eInvoice register** option.
+
 
 - [Accounts receivable parameters](#apparameters)
 
