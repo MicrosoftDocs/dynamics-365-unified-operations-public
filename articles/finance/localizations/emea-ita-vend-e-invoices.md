@@ -75,13 +75,15 @@ You can assosiate invoice types with specific salse tax codes. In **Tax** \> **I
 
 ## Invoice types processing
 
-The following types of vendor invoice documents are supported and will automatically be filled in:
+Invoice type associated with the sales tax code used in the invoice will be automatically populated into the **TipoDocumento** tag of the generated electronic invoice XML file.
+
+In no invoice type is associated with the sales tax code, then the following types of vendor invoice documents will automatically be filled in:
 
 - TD16 – for vendors located in Italy, if an invoice contains a sales tax code with either **Use tax** or **Reverse charge** option activated.
 - TD17 – for vendors located in European Union, if an invoice is issued for **services** provision.
 - TD18 – for vendors located in European Union, if an invoice is issued for **products** selling.
 
-If a required invoice type isn't listed, you can manually adjust the invoice type in the vendor invoice journal. 
+If a required invoice type wasn't populated, you can manually adjust the invoice type in the vendor invoice journal. 
 To enable manual adjustment, complete the following steps.
 
 ### Electronic properties configuration
