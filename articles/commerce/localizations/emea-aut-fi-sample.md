@@ -230,17 +230,17 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Download configuration files for the fiscal document provider and the fiscal connector:
-        1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-        1. Open the last available release branch (for example, **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
-        1. Open **src \> FiscalIntegration \> Efr**.
-        1. Open **Configurations \> DocumentProviders** and download the fiscal document provider configuration files: **DocumentProviderFiscalEFRSampleAustria.xml** and **DocumentProviderNonFiscalEFRSampleAustria.xml** (for example, [the location of the files for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders)).
-        1. Download the fiscal connector configuration file at **Configurations \> Connectors \> ConnectorEFRSample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
+    1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
+    1. Open the last available release branch (for example, **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Open **src \> FiscalIntegration \> Efr**.
+    1. Open **Configurations \> DocumentProviders** and download the fiscal document provider configuration files: **DocumentProviderFiscalEFRSampleAustria.xml** and **DocumentProviderNonFiscalEFRSampleAustria.xml** (for example, [the location of the files for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders)).
+    1. Download the fiscal connector configuration file at **Configurations \> Connectors \> ConnectorEFRSample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
 
-> [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
-> The configuration files for the fiscal integration sample are located in the following folders of the Retail SDK:
-> - The fiscal document provider configuration files: **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration**.
-> - The fiscal connector configuration file: **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration**
+    > [!WARNING]
+    > Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). The configuration files for the fiscal integration sample are located in the following folders of the Retail SDK:
+    > - The fiscal document provider configuration files: **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration**.
+    > - The fiscal connector configuration file: **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration**
+    > Supporting the new independent packaging and extension model for fiscal integration samples is planned for later versions.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration files that you downloaded earlier.
@@ -255,10 +255,93 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 ### Configure channel components
 
-The channel component configuration steps differ depending on the version of the Retail SDK that is used:
+The sample's code can be found in repository [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
 
-- For the Retail SDK on a developer VM in LCS, see the [Deployment guidelines for the sample (legacy)](emea-aut-fi-sample-sdk.md).
-- For the fiscal integration sample published in the GitHub repository, see the [Deployment guidelines for the sample](emea-aut-fi-sample-github.md).
- 
+This sample consists of extensions for the CRT, Hardware station, and POS. To run this sample, you must beforehand install the sealed version of Commerce Scale Unit, Hardware station and POS. After installing these retail components, you should build the EFR solution and run installers for each component. We recommend that you use an unmodified solution files from this repository to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
+
+Follow these steps to set up a development environment so that you can test and extend the sample.
+
+The CRT extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **Efr.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
+
+#### Install Commerce runtime extensions
+
+1. Find the **EFR** solution and build it.
+
+2. Build the CRT extension installer:
+
+    - **Commerce Scale Unit:** In the **Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.EFR.Installer** installer.
+    - **Local CRT on Modern POS:** In the **Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** folder, find the **ModernPOS.EFR.Installer** installer.
+
+3. Start the extension installer from command line as follows:
+
+    - **Commerce Scale Unit:**
+
+    ```Console
+    ScaleUnit.EFR.Installer.exe install --verbosity 0
+    ```
+
+    - **Local CRT on Modern POS:**
+
+    ```Console
+    ModernPOS.EFR.Installer.exe install --verbosity 0
+    ```
+
+#### Install Hardware station extensions
+
+The Hardware station extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **EFR.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
+
+##### EFRSample component
+
+1. Find the **EFR** solution and build it.
+
+2. In the **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EFR.Installer** installer.
+
+3. Start the extension installer from command line as follows:
+
+    ```Console
+    HardwareStation.EFR.Installer.exe install --verbosity 0
+    ```
+
+#### Production environment
+
+The previous procedure enables the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
+
+##### Commerce Cloud Scale Unit (CSU) package
+
+The steps to generate Commerce Cloud Scale Unit (CSU) package are following:
+
+1. Clone or download the [microsoft/Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions).
+
+Select the correct release branch version according to your SDK/application release. Detailed steps to clone can be in [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+
+2. Build the project **ScaleUnit.EFR** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\ScaleUnit**. This project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. CloudScaleUnitExtensionPackage.zip package can be uploaded to LCS and deployed to CSU.
+
+Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the NuGet package manager in Visual Studio according to your SDK/application version.
+
+To upload the created **CloudScaleUnitExtensionPackage.zip** package to LCS see [Deploy the package to CSU](../dev-itpro/retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
+
+##### Commerce Scale Unit (self-hosted) components
+
+1. Download the Commerce Scale Unit, Hardware station, Modern POS component installers and install each one as prerequisites. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](../dev-itpro/Enhanced-Mass-Deployment.md).
+
+2. Start the extension installer from command line
+
+- For **Commerce Scale Unit:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** path
+
+    ```Console
+    ScaleUnit.EFR.Installer.exe install --verbosity 0
+    ```
+
+- For **Local CRT on Modern POS:** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** path
+
+    ```Console
+    ModernPOS.EFR.Installer.exe install --verbosity 0
+    ```
+
+- For **Hardware station** under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** path
+
+    ```Console
+    HardwareStation.EFR.Installer.exe install --verbosity 0
+    ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
