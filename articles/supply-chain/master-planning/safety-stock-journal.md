@@ -2,14 +2,14 @@
 title: Use the safety stock journal to update minimum coverage for items
 description: This topic discusses how to use safety stock journal to update safety stock quantity for items by calculating minimum coverage proposals based on historical transactions. 
 author: ChristianRytt
-ms.date: 09/30/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, ReqItemTableSetup, ReqItemTable, EcoResProductDetailsExtended
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
-ms.search.validFrom: 2021-09-30
+ms.search.validFrom: 2021-10-28
 ms.dyn365.ops.version: 10.0.22
 ---
 
@@ -27,8 +27,6 @@ Safety stock is set up on the **Item coverage** page for each item. Various type
 
 - **Minimum quantity for Min/Max purposes** – This approach uses the minimum quantity together with min/max logic. It applies when the **Coverage code** is set to *Min/Max* for the relevant item or coverage group. The **Minimum** quantity represents the average daily usage multiplied by the item's lead time.
 - **Minimum quantity for inventory plan purposes** – This approach uses the minimum quantity to represent an inventory plan in combination with demand forecasts. It applies when the **Coverage code** is set to *Period* or *Requirement* for the relevant item or coverage group. The **Minimum** quantity represents an inventory plan reflecting the desired customer service level to reduce stock outs, partial shipments, and delivery lead times. The minimum quantity reflects a percentage of forecast accuracy for a given item; it does not represent a desired inventory position.
-
-The definition of an item's minimum quantity provides the starting point for further explanation about calculation of proposed minimum quantities to support the two different purposes. <!-- KFM: This sentence isn't clear. Please revise. -->
 
 The **Minimum** value can be set manually on the **Item coverage** page, by data management framework (*Item coverage* data entities), or by safety stock calculation done by safety stock journals.
 
@@ -84,7 +82,7 @@ Use the following steps to generate journal lines automatically.
 
 You can add and/or remove journal lines manually at any time (either after or instead of generating lines automatically) by using the following buttons on the **Journal lines** FastTab toolbar:
 
-- **New** – Add a new line. Then enter values in each column to define the product you want to calculate and apply new minimums for. Proposed minimum calculations aren't available for manually added lines, so now new **Calculated minimum quantity** values are shown for them, which means that you must enter the **New minimum quantity** values manually. However, you can still view the potential impact on inventory value of the **New minimum quantity**, and also the potential change in inventory compared to the currently specified minimum. <!-- KFM: Continue here -->
+- **New** – Add a new line. Then enter values in each column to define the product you want to calculate and apply new minimums for. Proposed minimum calculations aren't available for manually added lines, so now new **Calculated minimum quantity** values are shown for them, which means that you must enter the **New minimum quantity** values manually. However, you can still view the potential impact on inventory value of the **New minimum quantity**, and also the potential change in inventory compared to the currently specified minimum.
 - **Delete** – Delete the selected line.
 - **Delete journal lines** – Delete all lines in the journal.
 
@@ -105,23 +103,22 @@ This step calculates a proposed minimum (shown as the **Calculated minimum quant
 
 ### Update minimum quantity
 
-You can select any line in a safety stock journal and manually override the value for its **New minimum quantity** field. 
+You can select any line in a safety stock journal and manually override the value for its **New minimum quantity** field.
 
 1. Go to **Master planning > Master planning > Run > Safety stock calculation**.
 1. Open the journal you want to edit (or create a new one as described previously).
-1. On the **Journal lines** FastTab, find the line you want to adjust and then edit the value in the **New minimum quantity** column. For example, you might set the **New minimum quantity** to match the value in the **Calculated minimum quantity**. If the **Calculated minimum quantity** is zero, you can enter the desired future value <!-- KFM: What if it isn't zero? -->.
+1. On the **Journal lines** FastTab, find the line you want to adjust and then edit the value in the **New minimum quantity** column. For example, you might set the **New minimum quantity** to match the value in the **Calculated minimum quantity**. If the **Calculated minimum quantity** is zero, you can enter the desired future value.
 
 ### Post the new minimum quantity and validate the result
 
-<!-- KFM: An intro is needed. What are we doing here? What do we need to have done first? How does this section relate to the rest of the sections on this page? -->.
+Use the following procedure to post the new minimum quantity and validate the result.
 
 1. Go to **Master planning > Master planning > Run > Safety stock calculation**.
 1. Open the journal you want to post new minimum quantities for (or create a new one as described in the previous section).
 1. On the Action Pane, select **Post**.
-1. The **Post journal** dialog opens. Make the following setting:
-    - **Transfer all posting errors to a new journal** – <!-- KFM: Description needed. -->
-1. Select **OK** to post the journal.
-1. If you changed the **New minimum quantity** setting for a row on the **Journal lines** FastTab, you can confirm the change by doing the following: <!-- KFM: The original was hard to follow. Please confirm that the following steps are what we mean to describe here. -->
+1. The **Post journal** dialog opens. 
+1. Set the **Transfer all posting errors to a new journal** as required and then select **OK** to post the journal.
+1. If you changed the **New minimum quantity** setting for a row on the **Journal lines** FastTab, you can confirm the change by doing the following steps:
     1. For the row you edited, select the link in the **Item number** column.
     1. The **Product information** dialog opens. Select the link in the **Item number** field to open the related released product record.
     1. On the Action Pane, open the **Plan** tab and, from the **Coverage** group, select **Item coverage**.
