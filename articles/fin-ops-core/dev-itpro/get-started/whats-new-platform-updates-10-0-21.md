@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)
 description: This topic lists the features that are included in the platform updates for version 10.0.21 of Finance and Operations apps.
 author: sericks007
-ms.date: 10/27/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,7 +52,7 @@ Some features must be enabled using [Feature management](../../fin-ops/get-start
 
 ## Features turned on by default in thie release
 
-The following table lists the features that are turned on by default in 10.0.21. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists the features that are turned on by default in 10.0.21. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 | Feature name | Enable date | Feature added | Feature state | Module |
 | :--- | :--- | :--- | :--- | :--- |
