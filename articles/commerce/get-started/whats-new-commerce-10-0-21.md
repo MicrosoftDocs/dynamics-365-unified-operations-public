@@ -64,16 +64,17 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 The following table lists the features that are turned on by default in 10.0.21. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Feature name | Enable date | Feature added | Feature state | Module |
-| :--- | :--- | :--- | :--- | :--- |
-| (India) Search customers in Retail POS by tax registration numbers | 9/1/2021 | 8/31/2019 | On by default | Retail and commerce |
-| (Retail GST for India) Update credit notes with references to original invoices | 9/1/2021 | 6/3/2019 | On by default | Retail and commerce |
-| (Italy) Customer information management in Retail POS | 9/1/2021 | 10/7/2019 | On by default | Retail and commerce |
-| (Poland) Customer information management in Retail POS | 9/1/2021 | 12/19/2019 | On by default | Retail and commerce |
-| Prevent unintentional price calculation for commerce orders. | 9/1/2021 | 9/1/2021 | On by default | Retail and commerce |
-| Prevent copying the receipt email value from default customer to new customers. | 9/1/2021 | 9/1/2021 | On by default | Retail and commerce |
-| User-defined certificate profiles for retail stores | 9/1/2021 | 9/30/2020 | On by default | Retail and commerce |
-| Support for internal and external connectors in the fiscal integration framework | 9/1/2021 | 6/24/2020 | On by default | Retail and commerce |
+| Feature name | Enable date | Feature added | Feature state |
+| :--- | :--- | :--- | :--- |
+| (India) Search customers in Retail POS by tax registration numbers | 9/1/2021 | 8/31/2019 | On by default |
+| (Retail GST for India) Update credit notes with references to original invoices | 9/1/2021 | 6/3/2019 | On by default |
+| (Italy) Customer information management in Retail POS | 9/1/2021 | 10/7/2019 | On by default |
+| (Poland) Customer information management in Retail POS | 9/1/2021 | 12/19/2019 | On by default |
+| Prevent unintentional price calculation for commerce orders. | 9/1/2021 | 9/1/2021 | On by default |
+| Prevent copying the receipt email value from default customer to new customers. | 9/1/2021 | 9/1/2021 | On by default |
+| User-defined certificate profiles for retail stores | 9/1/2021 | 9/30/2020 | On by default |
+| Support for internal and external connectors in the fiscal integration framework | 9/1/2021 | 6/24/2020 | On by default |
+
 
 ## Additional resources
 
