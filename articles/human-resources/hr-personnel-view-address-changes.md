@@ -4,8 +4,8 @@
 
 title: View and manage address changes
 description: This topic explains how you can view and manage address changes in Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 08/07/2020
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,7 +22,7 @@ ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic explains how you can view and manage address changes in the Employee self-service **Edit personal details** page or the **Worker** details page in Dynamics 365 Human Resources.
+This topic explains how you can view and manage address changes in the **Employee self service** **Edit personal details** page or the **Worker** details page in Dynamics 365 Human Resources.
 
 Many organizations want employees to manage their own personal details through a self-service experience. You can allow users to update their address in the **Employee self service** workspace. You can then monitor these changes in the **Personnel management** workspace. To use this feature, you must specify the number of days that you want to view changes in the **Human resources parameters** page.
 
@@ -54,7 +54,7 @@ To configure the number of days that you want address changes to appear in the *
 
 Employees can update their own address in the **Employee self service** workspace. Follow these steps to create or change an address:
 
-1. Select the **Employee self-service** tile on your home page.
+1. Select the **Employee self service** tile on the **Home** page.
 
 2. Select **Edit personal details**.
 
@@ -126,7 +126,7 @@ In some cases, you might want to update an address to change in the future. For 
 
 ## View and monitor address changes
 
-HR personnel can view and monitor address changes from the **Personnel management** workspace. To view the address changes, open the **Personnel management** tile from the **Home** page. The address changes display on a tile in the upper-right corner. The number above **Address changes** shows how many address changes occurred in the number of days specified in the **Human resources parameters** page. 
+HR personnel can view and monitor address changes from the **Personnel management** workspace. To view the address changes, open the **Personnel management** tile from the **Home** page. The address changes display on a tile in the upper-right corner. The number above **Address changes** shows how many address changes occurred in the number of days specified on the **Human resources parameters** page. 
 
 When you select the **Address changes** tile, a new page displays the details of any address changes. You can optionally select **Include future address changes** in the upper-right corner to display address changes with a future date.
 
