@@ -62,28 +62,6 @@ The following table lists the features that are turned on by default in 10.0.21.
 
 | Feature name | Enable date | Feature added | Feature state | Module |
 | :--- | :--- | :--- | :--- | :--- |
-| Bid submission success message | 9/1/2021 | 5/15/2019 | On by default | Procurement and sourcing |
-| RFQ reference link added to PO | 9/1/2021 | 8/31/2019 | On by default | Procurement and sourcing |
-| Ability to confirm accepted purchase orders from vendor collaboration in batch | 9/1/2021 | 9/10/2019 | On by default | Procurement and sourcing |
-| Purchasing cXML enhancements | 9/1/2021 | 11/11/2019 | On by default | Procurement and sourcing |
-| Display the &quot;Open published requests for quotation&quot; link as a tile | 9/1/2021 | 9/30/2020 | On by default | Procurement and sourcing |
-| RFQ questions and answers | 9/1/2021 | 2/19/2020 | On by default | Procurement and sourcing |
-| Hazardous materials product information and shipping documentation | 9/1/2021 | 6/14/2020 | On by default | Product information management |
-| Strict validation on default order quantities | 9/1/2021 | 6/24/2020 | On by default | Product information management |
-| Country of origin management feature | 9/1/2021 | 7/13/2020 | On by default | Product information management |
-| Saved views for released products | 9/1/2021 | 9/30/2020 | On by default | Product information management |
-| Forecast model selection on Demand forecast details | 9/1/2021 | 10/11/2019 | On by default | Master planning |
-| Master planning progress visualization | 9/1/2021 | 10/7/2019 | On by default | Master planning |
-| Auto-firming for Planning Optimization | 9/1/2021 | 10/11/2019 | On by default | Master planning |
-| Parallel firming of planned orders | 9/1/2021 | 8/31/2019 | On by default | Master planning |
-| Improvements to the Approve and Transfer jobs dialogs | 9/1/2021 | 10/11/2019 | On by default | Production control |
-| License plate for reporting as finished added to the Job Card Device | 9/1/2021 | 8/31/2019 | On by default | Production control |
-| A new button to Stop break has been added to the Job Card Terminal page. | 9/1/2021 | 2/19/2020 | On by default | Production control |
-| Enable partial receipt of subcontracted items and fix an issue with the calculation of scrap for BOM lines of type Vendor. | 9/1/2021 | 11/11/2019 | On by default | Production control |
-| Saved views for production control | 9/1/2021 | 8/17/2020 | On by default | Production control |
-| Dynamics 365 Guides for Manufacturing | 9/1/2021 | 7/13/2020 | On by default | Production control |
-| Production floor execution | 9/1/2021 | 9/30/2020 | On by default | Production control |
-| Feature for locking job card device and job card terminal so that they can be sanitized. | 9/1/2021 | 5/10/2020 | On by default | Production control |
 | Inventory on-hand report storage | 9/1/2021 | 4/1/2020 | On by default | Inventory and warehouse management |
 | Transfer Order Cancellation | 9/1/2021 | 7/13/2020 | On by default | Inventory and warehouse management |
 | Unlock Inventory Journal | 9/1/2021 | 8/17/2020 | On by default | Inventory and warehouse management |
@@ -95,6 +73,46 @@ The following table lists the features that are turned on by default in 10.0.21.
 | Inventory journal approve workflow | 9/1/2021 | 1/6/2020 | On by default | Inventory and warehouse management |
 | Enable inventory quality management parameters warning feature | 9/1/2021 | 10/7/2019 | On by default | Inventory and warehouse management |
 | Create transfer order from sales line | 9/1/2021 | 8/31/2019 | On by default | Inventory and warehouse management |
+| Forecast model selection on Demand forecast details | 9/1/2021 | 10/11/2019 | On by default | Master planning |
+| Master planning progress visualization | 9/1/2021 | 10/7/2019 | On by default | Master planning |
+| Auto-firming for Planning Optimization | 9/1/2021 | 10/11/2019 | On by default | Master planning |
+| Parallel firming of planned orders | 9/1/2021 | 8/31/2019 | On by default | Master planning |
+| Bid submission success message | 9/1/2021 | 5/15/2019 | On by default | Procurement and sourcing |
+| RFQ reference link added to PO | 9/1/2021 | 8/31/2019 | On by default | Procurement and sourcing |
+| Ability to confirm accepted purchase orders from vendor collaboration in batch | 9/1/2021 | 9/10/2019 | On by default | Procurement and sourcing |
+| Purchasing cXML enhancements | 9/1/2021 | 11/11/2019 | On by default | Procurement and sourcing |
+| Display the &quot;Open published requests for quotation&quot; link as a tile | 9/1/2021 | 9/30/2020 | On by default | Procurement and sourcing |
+| RFQ questions and answers | 9/1/2021 | 2/19/2020 | On by default | Procurement and sourcing |
+| Hazardous materials product information and shipping documentation | 9/1/2021 | 6/14/2020 | On by default | Product information management |
+| Strict validation on default order quantities | 9/1/2021 | 6/24/2020 | On by default | Product information management |
+| Country of origin management feature | 9/1/2021 | 7/13/2020 | On by default | Product information management |
+| Saved views for released products | 9/1/2021 | 9/30/2020 | On by default | Product information management |
+| Improvements to the Approve and Transfer jobs dialogs | 9/1/2021 | 10/11/2019 | On by default | Production control |
+| License plate for reporting as finished added to the Job Card Device | 9/1/2021 | 8/31/2019 | On by default | Production control |
+| A new button to Stop break has been added to the Job Card Terminal page. | 9/1/2021 | 2/19/2020 | On by default | Production control |
+| Enable partial receipt of subcontracted items and fix an issue with the calculation of scrap for BOM lines of type Vendor. | 9/1/2021 | 11/11/2019 | On by default | Production control |
+| Saved views for production control | 9/1/2021 | 8/17/2020 | On by default | Production control |
+| Dynamics 365 Guides for Manufacturing | 9/1/2021 | 7/13/2020 | On by default | Production control |
+| Production floor execution | 9/1/2021 | 9/30/2020 | On by default | Production control |
+| Feature for locking job card device and job card terminal so that they can be sanitized. | 9/1/2021 | 5/10/2020 | On by default | Production control |
+| Charges allocation on a sales order | 9/1/2021 | 9/30/2020 | On by default | Sales and marketing |
+| Limit the number of sales orders that can be selected for posting | 9/1/2021 | 9/1/2021 | On by default | Sales and marketing |
+| Clean up sales-order update history | 9/1/2021 | 9/1/2021 | On by default | Sales and marketing |
+| Change the number sequence for cycle counting work | 9/1/2021 | 10/7/2019 | On by default | Warehouse management |
+| Task based wave demand replenishment | 9/1/2021 | 10/7/2019 | Mandatory | Warehouse management |
+| Hide the Total Value field on the &quot;All Loads&quot; and &quot;Load Details&quot; pages | 9/1/2021 | 10/7/2019 | On by default | Warehouse management |
+| Wave label printing | 9/1/2021 | 2/19/2020 | Mandatory | Warehouse management |
+| Associate purchase order inventory transactions with load | 9/1/2021 | 1/6/2020 | Mandatory | Warehouse management |
+| Enhanced license plate label layouts | 9/1/2021 | 2/19/2020 | On by default | Warehouse management |
+| Organization-wide work blocking | 9/1/2021 | 2/19/2020 | Mandatory | Warehouse management |
+| Work line details | 9/1/2021 | 10/11/2019 | On by default | Warehouse management |
+| Make mobile device inventory movement inventory status field editable | 9/1/2021 | 10/16/2019 | On by default | Warehouse management |
+| Confirm outbound shipments from batch jobs | 9/1/2021 | 7/13/2020 | On by default | Warehouse management |
+| Control whether to display a receiving summary page on mobile devices | 9/1/2021 | 4/1/2020 | On by default | Warehouse management |
+| Prompt to resolve ambiguous &#39;Loc / LP&#39; names | 9/1/2021 | 4/1/2020 | On by default | Warehouse management |
+| Capture product variants and tracking dimensions in the warehousing app during load item receiving | 9/1/2021 | 5/10/2020 | On by default | Warehouse management |
+| Do not allow to create loads, that do not meet wave load building template requirements. | 9/1/2021 | 8/17/2020 | On by default | Warehouse management |
+| Evaluate all actions for Multi SKU location directives | 9/1/2021 | 9/30/2020 | On by default | Warehouse management |
 
 ## New and updated documentation resources
 
