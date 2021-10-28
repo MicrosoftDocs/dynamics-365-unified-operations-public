@@ -56,6 +56,46 @@ The following table lists the feature enhancements included in this release. Eac
 | Warehouse management | Slot mixed units | Allows the system to slot items into locations that include mixed units (such as both boxes and cases). For each slotting template line, this feature allows you to choose whether the line should slot items into mixed-unit or single-unit locations. |
 | Warehouse management | Use faster API for containers closing/reopening on packing station | When this preview feature is enabled, inventory transactions related to containers are created using a new light-weight process that improves performance of closing or reopening containers during manual packing-station processing. |
 
+## Features turned on by default in this release
+
+The following table lists the features that are turned on by default in 10.0.21. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+| Feature name | Enable date | Feature added | Feature state | Module |
+| :--- | :--- | :--- | :--- | :--- |
+| Bid submission success message | 9/1/2021 | 5/15/2019 | On by default | Procurement and sourcing |
+| RFQ reference link added to PO | 9/1/2021 | 8/31/2019 | On by default | Procurement and sourcing |
+| Ability to confirm accepted purchase orders from vendor collaboration in batch | 9/1/2021 | 9/10/2019 | On by default | Procurement and sourcing |
+| Purchasing cXML enhancements | 9/1/2021 | 11/11/2019 | On by default | Procurement and sourcing |
+| Display the &quot;Open published requests for quotation&quot; link as a tile | 9/1/2021 | 9/30/2020 | On by default | Procurement and sourcing |
+| RFQ questions and answers | 9/1/2021 | 2/19/2020 | On by default | Procurement and sourcing |
+| Hazardous materials product information and shipping documentation | 9/1/2021 | 6/14/2020 | On by default | Product information management |
+| Strict validation on default order quantities | 9/1/2021 | 6/24/2020 | On by default | Product information management |
+| Country of origin management feature | 9/1/2021 | 7/13/2020 | On by default | Product information management |
+| Saved views for released products | 9/1/2021 | 9/30/2020 | On by default | Product information management |
+| Forecast model selection on Demand forecast details | 9/1/2021 | 10/11/2019 | On by default | Master planning |
+| Master planning progress visualization | 9/1/2021 | 10/7/2019 | On by default | Master planning |
+| Auto-firming for Planning Optimization | 9/1/2021 | 10/11/2019 | On by default | Master planning |
+| Parallel firming of planned orders | 9/1/2021 | 8/31/2019 | On by default | Master planning |
+| Improvements to the Approve and Transfer jobs dialogs | 9/1/2021 | 10/11/2019 | On by default | Production control |
+| License plate for reporting as finished added to the Job Card Device | 9/1/2021 | 8/31/2019 | On by default | Production control |
+| A new button to Stop break has been added to the Job Card Terminal page. | 9/1/2021 | 2/19/2020 | On by default | Production control |
+| Enable partial receipt of subcontracted items and fix an issue with the calculation of scrap for BOM lines of type Vendor. | 9/1/2021 | 11/11/2019 | On by default | Production control |
+| Saved views for production control | 9/1/2021 | 8/17/2020 | On by default | Production control |
+| Dynamics 365 Guides for Manufacturing | 9/1/2021 | 7/13/2020 | On by default | Production control |
+| Production floor execution | 9/1/2021 | 9/30/2020 | On by default | Production control |
+| Feature for locking job card device and job card terminal so that they can be sanitized. | 9/1/2021 | 5/10/2020 | On by default | Production control |
+| Inventory on-hand report storage | 9/1/2021 | 4/1/2020 | On by default | Inventory and warehouse management |
+| Transfer Order Cancellation | 9/1/2021 | 7/13/2020 | On by default | Inventory and warehouse management |
+| Unlock Inventory Journal | 9/1/2021 | 8/17/2020 | On by default | Inventory and warehouse management |
+| Saved views for Inventory management | 9/1/2021 | 9/30/2020 | On by default | Inventory and warehouse management |
+| Navigation to BOM version from BOM lines. | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
+| Using unit of measure and unit quantity in inventory journals. | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
+| Allow empty batch attributes values | 9/1/2021 | 11/11/2019 | On by default | Inventory and warehouse management |
+| Auto increment line numbers of inventory transfer order lines. | 9/1/2021 | 10/11/2019 | On by default | Inventory and warehouse management |
+| Inventory journal approve workflow | 9/1/2021 | 1/6/2020 | On by default | Inventory and warehouse management |
+| Enable inventory quality management parameters warning feature | 9/1/2021 | 10/7/2019 | On by default | Inventory and warehouse management |
+| Create transfer order from sales line | 9/1/2021 | 8/31/2019 | On by default | Inventory and warehouse management |
+
 ## New and updated documentation resources
 
 We have recently added or significantly updated the following help topics. They aren't necessarily related to the new features added for this release, as listed in the previous section, but they may help you to get more out of existing features.
