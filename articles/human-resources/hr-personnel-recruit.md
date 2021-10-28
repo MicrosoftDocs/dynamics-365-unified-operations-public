@@ -2,9 +2,9 @@
 # required metadata
 
 title: Recruit job candidates
-description: This topic shows how to recruit candidates in Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 12/03/2020
+description: This topic describes how to recruit candidates in Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
 
@@ -44,8 +44,6 @@ If you aren't using a separate recruiting application, you can also manually man
 >
 > You can also find recruiting integration apps on [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
-> To try out our preview feature for integrating with LinkedIn Talent Hub, see [Integrate with LinkedIn Talent Hub](hr-admin-integration-linkedin.md).
-
 ## Enable recruiting requests
 
 If you want to submit recruiting requests in Human Resources, you must first enable the functionality in **Human resources shared parameters**.
@@ -54,13 +52,13 @@ If you want to submit recruiting requests in Human Resources, you must first ena
 
 2. Under **Setup**, select **Human resources shared parameters**.
 
-3. On the **Recruitment** tab, under **RECRUITING**, set **Enable recruiting requests** to **Yes**.
+3. On the **Recruitment** tab, under **Recruiting**, set **Enable recruiting requests** to **Yes**.
 
 ## Add a recruiting request location
 
 If your organization has multiple locations, you can add them so requestors can select a location where the new recruit will be working. The location will be included in the job posting.
 
-1. In the search bar, enter **recruiting request location**.
+1. In the search bar, enter **Recruiting request location**.
 
 2. Select **New**.
 
@@ -185,11 +183,11 @@ If your organization has integrated with another application to manage recruitin
 
 When you're ready to hire a candidate, follow this procedure to transition the candidate to an employee.
 
-1. On the candidate form, select **Hire**.
+1. On the **Candidate** page, select **Hire**.
 
    ![Hire a candidate.](./media/hr-recruit-11-hire.png)
 
-2. On the **Hire new worker** form, under **Details**, complete all the fields.
+2. On the **Hire new worker** page, under **Details**, complete all the fields.
 
    ![Enter new hire details.](./media/hr-recruit-12-hire-new-worker.png)
 
@@ -206,7 +204,7 @@ When you're ready to hire a candidate, follow this procedure to transition the c
 
 If you decide not to hire a candidate, follow this procedure to remove them from the vetting process. 
 
-1. On the candidate form, select **Do not hire**.
+1. On the **Candidate** page, select **Do not hire**.
 
    ![Don't hire candidate.](./media/hr-recruit-13-do-not-hire.png)
 
@@ -218,7 +216,7 @@ If you decide not to hire a candidate, follow this procedure to remove them from
 
 If needed, you can dismiss a candidate after hiring them. For example, a candidate might reject your offer or not show up on their first day.
 
-- On the candidate form, select **Dismiss candidate**.
+- On the **Candidate** page, select **Dismiss candidate**.
 
   ![Dismiss candidate.](./media/hr-recruit-14-dismiss-candidate.png)
 
