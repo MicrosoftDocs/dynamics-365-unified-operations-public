@@ -38,34 +38,6 @@ Wondering about upcoming and recently released capabilities in any of our busine
 
 [Check out the October '18 release notes](/dynamics365/release-plans/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
-## Features turned on by default
-
-The following table lists the features that are turned on by default in 10.0.21. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-| Feature name | Enable date | Feature added | Feature state | Module |
-| :--- | :--- | :--- | :--- | :--- |
-| Enable usage of EPPlus library in Electronic reporting framework | 9/1/2021 | 1/6/2020 | On by default | Organization administration |
-| Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF | 9/1/2021 | 1/6/2020 | On by default | Organization administration |
-| Office-like UI experience for Business document management | 9/1/2021 | 11/11/2019 | On by default | Organization administration |
-| Business document management | 9/1/2021 | 6/3/2019 | On by default | Organization administration |
-| Saved views | 9/1/2021 | 6/9/2019 | On by default | System administration |
-| New grid control | 9/1/2021 | 10/7/2019 | On by default | System administration |
-| Grouping in grids | 9/1/2021 | 12/19/2019 | On by default | System administration |
-| Email distributor batch job email expiration | 9/1/2021 | 2/19/2020 | On by default | System administration |
-| Designate fields as required using personalization | 9/1/2021 | 4/1/2020 | On by default | System administration |
-| Show related document attachments | 9/1/2021 | 4/24/2020 | Mandatory | System administration |
-| Report PDF viewer | 9/1/2021 | 4/24/2020 | On by default | System administration |
-| Enable Export on Report PDF viewer | 9/1/2021 | 6/14/2020 | On by default | System administration |
-| Enable Network Printing on Report PDF viewer | 9/1/2021 | 6/14/2020 | On by default | System administration |
-| Key vault client caching | 9/1/2021 | 8/17/2020 | On by default | System administration |
-| Allow validation of control state in task recordings | 9/1/2021 | 8/17/2020 | Mandatory | System administration |
-| Enable drill through links on Report PDF viewer control. | 9/1/2021 | 8/17/2020 | On by default | System administration |
-| Freezing columns in grids | 9/1/2021 | 2/20/2021 | On by default | System administration |
-| New color picker control | 9/1/2021 | 9/1/2021 | On by default | System administration |
-| Prevents multiple executing Workflow message processing batch jobs. | 9/1/2021 | 9/1/2021 | On by default | Workflow |
-| Resets the batch affinity | 9/1/2021 | 9/1/2021 | On by default | Workflow |
-| Workflow notification actions | 9/1/2021 | 8/22/2020 | On by default | Workflow |
-
 ## Bug fixes
 
 For information about the bug fixes included in each of the updates that are part of Platform update 21, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2033925).
