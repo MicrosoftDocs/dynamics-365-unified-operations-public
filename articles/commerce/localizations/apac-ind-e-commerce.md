@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.23
 
 # Install modules for India
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to install the modules for India in Microsoft Dynamics 365 Commerce. 
 
@@ -37,7 +37,7 @@ This topic describes how to install the modules for India in Microsoft Dynamics 
 ## Prerequisites
 
 Before you install the modules for India, you must have the following items.
-- Dynamics 365 Commerce environment (Commerce version 10.0.23 or later) that includes Retail Cloud Scale Unit (RCSU), the Commerce online software development kit (SDK), and the Commerce module library. For information about how to install the Commerce SDK and module library, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md). 
+- Dynamics 365 Commerce environment (Commerce version 10.0.23 or later) that includes Retail Cloud Scale Unit (RCSU), the Commerce online software development kit (SDK), and the Commerce module library. For information about how to install the Commerce SDK and module library, see [SDK and module library updates](../e-commerce-extensibility/sdk-updates.md). 
 - [Deployment guidelines for cash registers for India](apac-ind-loc-deployment-guidelines.md).
 
 ## Installation steps
