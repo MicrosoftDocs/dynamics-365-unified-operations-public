@@ -47,13 +47,20 @@ In **Accounts payable** \> **Setup** \> **Accounts payable parameters**, on the 
 
 ![Electronic documents in Accounts payable parameters](media/emea-ita-AP-parameter-e-invoices.jpg)
 
+Use the **Vendor invoice (IT).version.YYY.ZZ** electronic reporting configuration, or later version of it.
+
 > [!NOTE]
 > The configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 
 ## Vendor data configuration
 
-Select a specific vendor in **Accounts payable** \> **All vendors**. On the **Invoice and delivery** FasTab, in the **E-invoice** section, turn on the **eInvoice register** option.
+Select a specific vendor in **Accounts payable** \> **All vendors**. On the **Invoice and delivery** FasTab, in the **E-invoice** section, turn on the **eInvoice register** option to activate electronic invoices generation for the vendor.
+
+## Process vendor electronic invoices
+
+To view all vendors electronic invoices and perform various actions, go to **Accounts payable** > **Invoices** > **E-Invoices** > **Electronic invoices**.
+The functionality is similar to customers electronic invoices processing. For details, see the chapter **Electronic invoice register** of the [Customer electronic invoices](emea-ita-e-invoices.md) article.
 
 
 - [Accounts receivable parameters](#apparameters)
