@@ -265,8 +265,8 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 The channel component configuration steps differ depending on the version of the Retail SDK that is used:
 
-- For the Retail SDK on a developer VM in LCS, see [guidelines for the Retail SDK](emea-aut-fi-sample-sdk.md).
-- For the fiscal integration sample published in the GitHub repository, see [guidelines for GitHub](emea-aut-fi-sample-guthub.md).
+- For the Retail SDK on a developer VM in LCS, see [deployment guidelines for the sample from the Retail SDK](emea-aut-fi-sample-sdk.md).
+- For the fiscal integration sample published in the GitHub repository, see [deployment guidelines for sample from GitHub](emea-aut-fi-sample-guthub.md).
  
 ## Deployment guidelines for cash registers for Austria
 
