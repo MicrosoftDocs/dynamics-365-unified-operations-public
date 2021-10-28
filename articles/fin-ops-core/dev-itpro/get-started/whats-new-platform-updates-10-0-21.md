@@ -50,7 +50,7 @@ Some features must be enabled using [Feature management](../fin-ops/get-started/
 | Availability monitoring | [Synthetic monitoring of Service Fabric environments](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/synthetic-monitoring-service-fabric-environments) | Not applicable | 
 | Developer tools | Visual Studio 2019 is now officially supported. | [Development tools in Visual Studio](../dev-tools/development-tools-overview.md) |
 
-## Features turned on by default in thie release
+## Features turned on by default in this release
 
 The following table lists the features that are turned on by default in 10.0.21. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
