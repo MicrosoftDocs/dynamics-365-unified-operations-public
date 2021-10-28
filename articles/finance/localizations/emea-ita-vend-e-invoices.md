@@ -81,13 +81,26 @@ The following types of vendor invoice documents are supported and will automatic
 - TD17 – for vendors located in European Union, if an invoice is issued for **services** provision.
 - TD18 – for vendors located in European Union, if an invoice is issued for **products** selling.
 
-If a required invoice type isn't listed, you can manually adjust the document type in the vendor invoice journal. 
-To enable manual adjustment, complete the following setup:
+If a required invoice type isn't listed, you can manually adjust the invoice type in the vendor invoice journal. 
+To enable manual adjustment, complete the following steps.
 
-- Electronic document property definition
-- Invoice document type registration
+### Electronic properties configuration
 
-For more information, see the "Invoice types configuration" section in [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+In **Accounts receivable** > **Setup** > **Electronic document property types**, add a new property type **DocumentType** (exactly as written here) applicable to **Vendor invoice journal**
+
+![Invoice type parameter](media/emea-ita-invoice-type-parameter.jpg)
+
+### Invoice types regisration
+
+In **Accounts payable** > **Inquiries and reports** > **Invoice** > **Invoice journal**, open **Electronic document properties** for a selected invoice.
+
+![Invoice type in invoices](media/emea-ita-invoice-type-in-invoice.jpg)
+
+In the next form enter a required Invoice type.
+
+![Invoice type value](media/emea-ita-invoice-type-value.jpg)
+
+This invoice type value will override automatically created codes during creation of e-invoices XML files.
 
 
 ## Process vendor electronic invoices
