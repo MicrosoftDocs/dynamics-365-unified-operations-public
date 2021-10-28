@@ -87,7 +87,6 @@ Follow these steps to handle the new custom receipt field for a QR code.
     - Microsoft.Dynamics.Commerce.Runtime.ElectronicReporting
     - Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine
     - Microsoft.Dynamics.Commerce.Runtime.Services.Messages
-    - Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia
 
 4. Create a class to handle. 
 
@@ -244,7 +243,7 @@ namespace Contoso
             {
               get
                 {
-                    return new\[\]
+                    return new[]
                     {
                         typeof(GetSalesTransactionCustomReceiptFieldServiceRequest),
                    };
@@ -258,7 +257,7 @@ namespace Contoso
             {
                 get
                 {
-                    return new\[\]
+                    return new[]
                     {
                         nameof(CountryRegionISOCode.IN),
                     };
@@ -294,7 +293,7 @@ namespace Contoso
                     string receiptFieldValue = string.Empty;
                     switch (receiptFieldName)
                     {
-                        case "TAXINVOICE\_QR":
+                        case "TAXINVOICE_QR":
                             receiptFieldValue = await 
            GetQRCode(request).ConfigureAwait(false);
                                    break;
