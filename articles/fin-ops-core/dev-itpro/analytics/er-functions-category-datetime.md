@@ -50,7 +50,8 @@ Electronic reporting (ER) date and time functions can be used to extract informa
 | [NullDateTime](er-functions-datetime-nulldatetime.md) | This function returns a *DateTime* value that represents the **null** date/time value (January 1, 1900) in Coordinated Universal Time. |
 | [SessionNow](er-functions-datetime-sessionnow.md) | This function returns a *DateTime* value that represents the current application session date and time. |
 | [SessionToday](er-functions-datetime-sessiontoday.md) | This function returns a *Date* value that represents the current application session date. |
-| [Today](er-functions-datetime-today.md) | This function returns a *Date* value that represents the current application server date. |
+| [Today](er-functions-datetime-today.md) | This function returns a *[Date](er-formula-supported-data-types-primitive.md#date)* value that represents the current application server date. |
+| [WeekNum](er-functions-datetime-weeknum.md) | This function returns an *[Integer](er-formula-supported-data-types-primitive.md#integer)* value that represents the week of the year. |
 
 ## Additional resources
 
