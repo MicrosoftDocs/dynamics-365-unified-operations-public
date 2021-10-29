@@ -4,7 +4,7 @@
 title: Self-service upgrade to the latest version
 description: This topic describes the process for moving to the latest update of Finance and Operations.
 author: laneswenka
-ms.date: 02/20/2020
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.1
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> This process of upgrading data is now deprecated between older versions of Finance and Operations to the latest version.  For AX2012 upgrades, please see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-ax2012.md).
+> This process of upgrading data is now deprecated between older versions of Finance and Operations to the latest version.  For AX 2012 upgrades, see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-ax2012.md) for more information.
 
 > [!IMPORTANT]
 > This topic applies to the following starting versions:
