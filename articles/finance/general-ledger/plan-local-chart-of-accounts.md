@@ -55,6 +55,8 @@ If your organization requires that a legal entity use a local chart of accounts,
 
 The organization structure and the reporting structure determine the option that is used.
 
+[![Diagram showing how organization structures roll up to global and local charts of accounts](./media/local-chart-of-accounts-diagram.png)](./media/local-chart-of-accounts-diagram.png)
+
 If the global chart of accounts is assigned to the legal entity, the following options are available for meeting local reporting requirements:
 
 - Do local consolidation.
@@ -62,7 +64,7 @@ If the global chart of accounts is assigned to the legal entity, the following o
 - Create local main accounts in the global chart of accounts.
 - Do external mapping to the local chart of accounts.
 
-If a local chart of accounts is assigned to the legal entity, only option is currently available for meeting global reporting requirements: you must do global consolidation.
+If a local chart of accounts is assigned to the legal entity, the only option that's currently available for meeting global reporting requirements is global consolidation.
 
 ## Global chart of accounts assigned to a legal entity
 
