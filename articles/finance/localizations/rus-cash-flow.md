@@ -279,6 +279,8 @@ This procedure should be completed in a subsidiary company.
 4. On the Action Pane, on the **Invoice** tab, in the **Bill** group, select **Planned payments**.
 5. Review the planned payments that have been created based on the due dates, financial dimension values, sales tax group, and item sales tax group.
 
+    ![Planned payments on purchase orders.](media/rus-cash-flow-m16.png)
+
 ### Planned payments on sales orders
 
 A planned payment contains details about future payments: the value, method of payment, payment account, payment priority, and cash discount amount.
@@ -326,6 +328,8 @@ This step should be completed for a Treasury company.
     | Legal entities         | Select legal entities. A Treasury company can include all legal entities that belong to the current centralized payment hierarchy. |
     | Recalculate all        | Set this option to **Yes** if all planned payments should be recalculated. If this option is set to **No**, only new planned payment will be created. |
 
+    ![Calculate planned payments.](media/rus-cash-flow-m17.jpg)
+
 ## Payment request processing
 
 ### Create a manual payment request
@@ -339,24 +343,38 @@ This step should be completed for a Treasury company.
     - The **Payment request priority** value is defined by properties of the payment account type and party.
     - The centralized payment hierarchy defines the Treasury company. A payment request company is a company where a payment request is created.
 
+    ![Create Payment request.](media/rus-cash-flow-m18.jpg)
+
 4. Select **OK**.
 5. In the **Header** view, on the **General** FastTab, set the required payment request parameters. You can change the value of the **Payment date**, **Payment currency**, **Payment priority**, and other parameters as you require.
+
+    ![Payment request.](media/rus-cash-flow-m19.jpg)
+
 6. On the **Payment** FastTab, set the required payment request parameters. You can change the value of the **Posting profile**, **Payment account type**, **Payment account**, and other parameters as you require.
 7. On the **Payment order** FastTab, specify the required payment order requisites. By default, these requisites are initialized from a purchase agreement or sales agreement. This FastTab is available only if the method of payment is associated with a payment order in RUB.
+
+    ![Payment order.](media/rus-cash-flow-m20.png)
+    
 8. On the **History** FastTab, review the details about payment request processing. You can change the payment request initiator as you require.
 9. On the **Financial dimensions** FastTab, specify the financial dimensions of the payment request.
 10. Switch to the **Lines** view.
 11. Select **Add line** to create a record.
 12. Specify the **Sales tax group**, **Item sales tax group**, and **Original amount** dimension values. By default, the **Amount to pay** field is set to **Original amount**.
+  
+  ![Payment request-GENERAL Tab.](media/rus-cash-flow-m21.jpg)
+
 13. Repeat steps 11 through 12 to create more lines, as you require.
 14. Save the record.
 15. On the Action Pane, on the **General** tab, in the **Bill** group, select **Cash discount**.
 16. Create a record, and specify the cash discount date and cash discount amount.
+
+  ![Payment request cash discount.](media/rus-cash-flow-m22.jpg)
+  
 17. Repeat step 16 to create more lines, as you require. Then close the page.
 18. If all the data is filled in, and workflow approval can start, on the Action Pane, on the **Payment request** tab, in the **Generate** group, select **Confirmation**.
 19. Select **Workflow \> Submit**.
 
-    ![Submitting a payment request for workflow approval.](media/rus-workflow-submit.jpg)
+    ![Submitting a payment request for workflow approval.](media/rus-cash-flow-m23.jpg)
 
 The status of a payment request is automatically updated. The following table describes all the payment request statuses.
 
@@ -376,7 +394,12 @@ You can cancel a payment request only if its status is **Opened**, **Confirmed**
 1. Go to **Cash and bank management \> Cash flow management \> All payment requests**.
 2. Select a payment request.
 3. On the Action Pane, on the **Payment request** tab, in the **Maintain** group, select **Cancel**.
+
+  ![Payment request cancellation1.](media/rus-cash-flow-m24.png)
+
 4. Select **OK**.
+
+  ![Payment request cancellation2.](media/rus-cash-flow-m25.png)
 
 ### Put a payment request on hold
 
