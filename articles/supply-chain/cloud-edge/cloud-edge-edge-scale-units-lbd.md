@@ -133,6 +133,26 @@ This step creates a functional LBD environment. However, the environment doesn't
 
 1. Deploy the environment by using the latest base topology that is available.
 
+1. Once your environment is deployed do the following actions:
+
+    1. Run the following SQL commands on your business database (AXDB):
+
+    ```sql
+    delete from FEATUREMANAGEMENTMETADATA
+    delete from FEATUREMANAGEMENTSTATE
+    delete from NUMBERSEQUENCESCOPE
+    ```
+
+1. Verify that change tracking has been enabled on your business database (AXDB)
+    1. Start SQL Server Management Studio (SSMS).
+    1. Right-click your business database (AXDB) and select properties.
+    1. In the window that opens, select **Change Tracking** and make the following settings:
+
+        - **Change Tracking:** *True*
+        - **Retention Period:** *7*
+        - **Retention Units:** *Days*
+        - **Auto Cleanup:** *True*
+
 ## <a name="set-up-deploy"></a>Set up an Azure Keyvault and an Azure Active Directory Application to enable communication between scale units
 
 1. Once your environment is deployed you need to create an additional Azure Active Directory application, create a client secret and save the information to an Azure KeyVault. Additionally, the AAD application that was created must be granted access to retrieve the secrets stored in the Azure KeyVault. For convenience we have created a script that will carry out all the actions automatically:
