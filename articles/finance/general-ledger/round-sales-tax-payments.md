@@ -119,7 +119,8 @@ The following table shows how an amount of 98,765.43 is rounded by using each ro
       </ol>
     </td>
   </tr>
-</table>```
+</table>
+```
 
 > [!NOTE]                                                                                  
 > If you select Own advantage, the rounding is always to the advantage of the legal entity. 
