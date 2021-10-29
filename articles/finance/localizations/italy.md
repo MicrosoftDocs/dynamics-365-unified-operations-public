@@ -62,6 +62,7 @@ This topic provides links to documentation resources for Italy.
 - [Unique certification](emea-ita-exil-unique-certification.md)
 - [Bills of exchange protest import](emea-ita-exil-protest-boe.md)
 - [Customer electronic invoices](emea-ita-e-invoices.md)
+- [Vendor electronic invoices export](emea-ita-vend-e-invoices.md)
 - [Unified posting date control](emea-ita-post-date-control.md)
 
 
