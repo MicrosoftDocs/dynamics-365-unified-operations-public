@@ -143,15 +143,15 @@ This step creates a functional LBD environment. However, the environment doesn't
     delete from NUMBERSEQUENCESCOPE
     ```
 
-1. Verify that change tracking has been enabled on your business database (AXDB)
-    1. Start SQL Server Management Studio (SSMS).
-    1. Right-click your business database (AXDB) and select properties.
-    1. In the window that opens, select **Change Tracking** and make the following settings:
+    1. Verify that change tracking has been enabled on your business database (AXDB)
+        1. Start SQL Server Management Studio (SSMS).
+        1. Right-click your business database (AXDB) and select properties.
+        1. In the window that opens, select **Change Tracking** and make the following settings:
 
-        - **Change Tracking:** *True*
-        - **Retention Period:** *7*
-        - **Retention Units:** *Days*
-        - **Auto Cleanup:** *True*
+            - **Change Tracking:** *True*
+            - **Retention Period:** *7*
+            - **Retention Units:** *Days*
+            - **Auto Cleanup:** *True*
 
 ## <a name="set-up-deploy"></a>Set up an Azure Keyvault and an Azure Active Directory Application to enable communication between scale units
 
