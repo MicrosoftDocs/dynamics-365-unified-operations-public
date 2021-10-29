@@ -973,6 +973,11 @@ Finance + Operations requires additional configuration of AD FS, beyond the defa
     Set-AdfsProperties -Identifier $adfsProperties.IdTokenIssuer
     ```
 
+    > [!WARNING]
+    > If your AD FS is setup with Microsoft 365 (formermly Office 365) for Single Sign-On, this step will break that scenario.
+    > In order to ensure that scenario keeps working there is a deployment option that can be specified to adapt your Dynamics 365 for Finance + Operations installation to such a requirement.
+    > See [AD FS Microsoft 365 compatibility](./onprem-adfscompatibility.md) for more information.
+
 2. You should disable Windows Integrated Authentication (WIA) for intranet authentication connections, unless you've configured AD FS for mixed environments. For more information about how to configure WIA so that it can be used with AD FS, see [Configure browsers to use Windows Integrated Authentication (WIA) with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia).
 
     This command is related to using forms authentication upon sign-in to the Finance + Operations client. Other options, such as single sign-on, are not supported.
