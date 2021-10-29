@@ -4,7 +4,7 @@
 title: Upgrade data in development or demo environments
 description: This topic provides instructions for upgrading your Finance and Operations application release.
 author: laneswenka
-ms.date: 10/25/2020
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,8 +29,9 @@ ms.dyn365.ops.version: Platform update 1
 # Upgrade data in development or demo environments
 
 [!include [banner](../includes/banner.md)]
+
 > [!IMPORTANT]
-> This process of upgrading data is now deprecated between older versions of Finance and Operations to the latest version.  For AX2012 upgrades, please see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-ax2012.md).
+> This process of upgrading data is now deprecated between older versions of Finance and Operations to the latest version.  For AX 2012 upgrades, please see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-ax2012.md) for more information.
 
 This topic explains how to upgrade an older database to the latest Finance and Operations application release.
 
