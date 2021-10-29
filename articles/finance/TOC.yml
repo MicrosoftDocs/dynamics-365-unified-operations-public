@@ -996,6 +996,8 @@
           href: general-ledger/tasks/create-main-account.md
         - name: Plan your chart of accounts
           href: general-ledger/plan-chart-of-accounts.md
+        - name: Plan your local chart of accounts
+          href: general-ledger/plan-local-chart-of-accounts.md
         - name: Settle transactions between ledger accounts
           href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
         - name: Set up a ledger account alias
