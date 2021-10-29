@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.1
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> This process of upgrading data is now deprecated between older versions of Finance and Operations to the latest version.  For AX 2012 upgrades, see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-ax2012.md) for more information.
+> This process of upgrading data is now deprecated between older versions of Finance and Operations to the latest version.  For AX 2012 upgrades, see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-2012.md) for more information.
 
 > [!IMPORTANT]
 > This topic applies to the following starting versions:
