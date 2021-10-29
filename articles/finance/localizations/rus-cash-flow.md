@@ -411,6 +411,9 @@ A payment request that is on hold isn't included in payment schedule journals.
 2. Select a payment request.
 3. On the Action Pane, on the **Payment request** tab, in the **Maintain** group, select **On hold**.
 4. Set the **On hold** option to **Yes**, and specify a reason code.
+
+  ![Payment request on hold.](media/rus-cash-flow-m26.jpg)
+  
 5. Select **OK**.
 
 To remove the hold from a payment request, on the Action Pane, on the **Payment request** tab, in the **Maintain** group, select **On hold**. Then set the **On hold** option to **No**.
@@ -429,6 +432,9 @@ The system will create a payment request by copying all the main requisites from
 2. Select a payment request.
 3. On the Action Pane, on the **Payment request** tab, in the **Generate** group, select **Split request**.
 4. Specify the amount to pay and the payment date for the new payment request.
+
+  ![Split a payment request.](media/rus-cash-flow-m27.jpg)
+
 5. Select **OK**.
 
 ### Copy a payment request
@@ -437,6 +443,9 @@ The system will create a payment request by copying all the main requisites from
 2. Select a payment request.
 3. On the Action Pane, on the **Payment request** tab, in the **New** group, select **Copy**.
 4. Specify the due date for the new payment request.
+
+  ![Copy a payment request.](media/rus-cash-flow-m28.jpg)
+  
 5. Select **OK**.
 6. Select the payment request created on step 3. 
 7. On the Action Pane, on the **Payment request** tab, in the **New** group, select **Edit**.
@@ -450,8 +459,14 @@ The system will create a payment request by copying all the main requisites from
 3. Create purchase order lines, and specify the sales tax group, item sales tax group, and financial dimensions. Distribute the amount of a line.
 4. Generate and post an invoice.
 5. On the Action Pane, on the **Purchase** tab, in the **Generate** group, select **Payment requests**.
+
+  ![Create a payment request for a vendor invoice1.](media/rus-cash-flow-m29.jpg)
+
 6. On the Action Pane, on the **Purchase** tab, in the **Journals** group, select **Payment requests**.
 7. Review the payment requests that have been created.
+
+  ![Create a payment request for a vendor invoice2.](media/rus-cash-flow-m30.jpg)
+
 8. On the **All vendors** page, on the Action Pane, on the **Vendor** tab, in the **Transactions** group, select **Transactions**.
 9. Select the vendor transaction.
 10. Select **Inquiry \> Payment requests**.
@@ -459,7 +474,7 @@ The system will create a payment request by copying all the main requisites from
 12. On the Action Pane, on the **General** tab, in the **Related information** group, select **Request origin**.
 13. Verify that the vendor transaction is a source for the payment request.
 
-    ![Vendor transactions.](media/rus-vendor-transactions.jpg)
+  ![Create a payment request for a vendor invoice3.](media/rus-cash-flow-m31.jpg)
 
     > [!NOTE]
     > You can't change the payment requisites (method of payment, due date, vendor bank account, and so on) on an open vendor transaction if a payment request exists for that transaction. Instead, you should change the payment requisites in the payment request. They will then be automatically synced on the open vendor transaction.
@@ -531,6 +546,8 @@ This procedure should be completed for a Treasury company.
     | Legal entities          | Select legal entities. A Treasury company can include all legal entities that belong to the current centralized payment hierarchy. |
     | Number of batch threads | Enter the number of parallel tasks for payment request creation. |
 
+  ![Periodic creation of payment requests.](media/rus-cash-flow-m32.png)
+
 ### Update a payment request
 
 When you update a payment request, the **Amount to pay** value is changed on payment request lines and in the cash discount details.
@@ -548,7 +565,7 @@ Follow these steps to update a payment request.
 1. Go to **Cash and bank management \> Cash flow management \> All payment requests**.
 2. Select a payment request that the **Outdated** check box is selected for.
 
-    ![Outdated check box on payment requests.](media/rus-outdated-check-box.jpg)
+    ![Outdated check box on payment requests.](media/rus-cash-flow-m33.jpg)
 
     The system automatically selects this check box if the original source of a payment request has been changed through settlement or unsettlement. A selected check box indicates that the amount to pay of the payment request differs from the amount of the open vendor or customer transaction.
 
@@ -568,11 +585,16 @@ This step should be completed for a Treasury company.
     | Request sources         | Specify the sources of the payment request. |
     | Legal entities          | Specify legal entities. A Treasury company can include all legal entities that belong to the current centralized payment hierarchy. |
 
+    ![Update payment requests.](media/rus-cash-flow-m34.jpg)
+
 ## Payment schedule journal processing
 
 ### Set up a payment schedule journal
 
 1. Go to **Cash and bank management \> Setup \> Cash flow management \> Payment schedule journal names**.
+
+    ![Set up a payment schedule journal.](media/rus-cash-flow-m35.jpg)
+
 2. Select **New** to create a record, and specify a name and description for the journal.
 3. Select the journal type:
 
@@ -588,7 +610,7 @@ This step should be completed for a Treasury company.
 
 5. The **Dimensions** FastTab defines how the lines of the payment schedule journal are aggregated. The analytic report of the payment schedule journal also uses these dimensions. Use the arrow buttons to move dimensions to or from the **Selected dimensions** list.
 
-    ![Dimensions for payment schedule journals.](media/rus-journal-names-dimensions.jpg)
+    ![Dimensions for payment schedule journals.](media/rus-cash-flow-m36.jpg)
 
 6. The **Legal entities** FastTab defines the legal entities that are used to generate payment schedule journals. Use the arrow buttons to move legal entities to or from the **Selected sources** list.
 7. On the **Journal data sources** FastTab, select **Add line** to create a record.
@@ -610,57 +632,78 @@ This step should be completed for a Treasury company.
 
 9. Repeat steps 7 through 8 to create other lines that have the required journal data sources.
 10. On the **Payment accounts** FastTab, set the **Include transactions with no specified bank account** option to **Yes** if the payment schedule journal should include planned payments and payment requests that a payment account isn't specified for.
+
+    ![Cash balance control.](media/rus-cash-flow-m37.jpg)
+
 11. Select **Add line** to create a record.
 12. Specify the payment account type and account number. The payment schedule journal will include only sources that are associated with the specified payment accounts.
 13. On the **Cash balance control** FastTab, select **Add line**, and then specify the currency and minimum cash balance. If the estimated balance amount of the cash account is less than the minimum cash balance that you specify, the payment schedule sheet will overwrite the estimated balance for that date.
+
+    ![Cash balance control.](media/rus-cash-flow-m38.jpg)
 
 ### Payment plan processing
 
 1. Go to **Cash and bank management \> Cash flow management \> Payment schedule journal**.
 2. Create a payment schedule journal. In the **Name** field, select a payment schedule journal of the **Payment plan** type.
+
+    ![Payment plan processing.](media/rus-cash-flow-m39.jpg)
+
 3. Use the **From date** and **To date** fields to specify an effective date range.
 4. On the **General**, **Dimensions**, **Legal entities**, **Journal data sources**, **Payment accounts**, and **Cash balance control** tabs, change the attributes of the payment schedule journal as you require.
 5. Select **Calculate**.
 6. Select **Lines** to validate the payment schedule journal lines.
+
+    ![Payment plan processing lines.](media/rus-cash-flow-m40.jpg)
+
 7. Select **Edit beginning balance** to change the beginning balance of this journal.
 8. For lines that have **Payment request** as the journal data source, select **Payment request lines** to review the payment request lines that are included on the current journal line.
 9. Close the page.
 10. On the **Payment schedule journal** page, select **Payment schedule** to review the payment schedule sheet. If a cash shortage or surplus is detected and should be prevented, you can make changes.
 
-    ![Payment schedule sheet.](media/rus-payment-schedule-sheet.jpg)
+    ![Payment schedule sheet.](media/rus-cash-flow-m41.jpg)
 
 11. Set the **Show totals per payment accounts** option to **Yes** if the payment schedule sheet should be calculated based on payment accounts.
 12. Set the **Show totals per method of payments** option to **Yes** if the payment schedule sheet should be calculated based on methods of payments.
 13. Use the right arrow button (**\>**) to select an aggregation parameter for the payment schedule sheet.
 14. Select **Show results**.
 
-    If the minimum cash balance for a currency or a payment account is exceeded, the payment schedule sheet highlights the **Estimated balance** amounts in yellow.
+    ![Payment schedule sheet overview1.](media/rus-cash-flow-m42.jpg)
 
-    ![Payment schedule sheet overview.](media/rus-payment-schedule-sheet-overview.jpg)
+    If the minimum cash balance for a currency or a payment account is exceeded, the payment schedule sheet highlights the **Estimated balance** amounts in yellow.
 
 15. If the **Payment request** license configuration key is turned on, select the amount for a **Payment request** journal data source. If the **Payment request** license configuration key isn't turned on, select an **Accounts payable** or **Accounts receivable** journal data source. Select **Show origin** to open the sources of that amount.
 16. Select the amount for a **Payment request** journal data source, and then select **Change payment sources**.
 
-    ![Change payment sources button on a payment schedule sheet.](media/rus-change-payment-sources.jpg)
+    ![Change payment sources button on a payment schedule sheet.](media/rus-cash-flow-m43.jpg)
 
 17. Select payment sources that should be moved to another date, or that should be paid by using another method of payment or payment account.
 
-    ![Payment schedule balancing.](media/rus-payment-schedule-balancing.jpg)
+    ![Payment schedule balancing.](media/rus-cash-flow-m44.jpg)
 
 18. Select **Multiple change**, specify the new payment details in the **Modify payment attributes** dialog box, and then select **OK**.
+
+    ![Modify payment attributes.](media/rus-cash-flow-m45.jpg)
 
     Alternatively, you can specify new payment attributes for a specific line.
 
 19. Select **Update payment schedule**. The system updates the payment schedule sheet and creates uncommitted payment schedule journal lines for payment sources correction.
+
+    ![Update payment schedule.](media/rus-cash-flow-m46.jpg)
+
 20. Make any other required changes to the payment schedule sheet.
 21. On the **Payment schedule journal** page, select **Functions \> Apply changes** to apply your changes or **Functions \> Revert changes** to reject them.
 22. If changes to the journal setup are required, select **Functions \> Delete journal lines**, and calculate the journal.
+
+    ![Functions for payment schedule.](media/rus-cash-flow-m47.jpg)
+
 23. Select **Validate** to validate the journal. The system notifies you if canceled, on-hold, or incomplete workflow payment requests are included in this journal.
 24. If all the data is correct, and workflow approval of the payment plan can start, select **Workflow \> Submit**.
 
+    ![Workflow.](media/rus-cash-flow-m48.jpg)
+
     Approvers might see the following actions during the approval workflow: **Approve**, **Reject**, **Request change**, **Delegate**, **Recall**, and **View history**.
 
-    ![Workflow actions.](media/rus-workflow-actions.jpg)
+    ![Workflow actions.](media/rus-cash-flow-m49.jpg)
 
 26. If the payment plan is approved, select **Confirm**. The status of the payment requests that are included is changed to **Scheduled**.
 27. On the **Payment request** page, on the Action Pane, on the **General** tab, in the **Related information** group, select **Payment schedule journal**.
@@ -690,7 +733,7 @@ This step should be completed for a Treasury company.
 16. On the **Payment schedule journal** page, select **Functions \> Generate payments**.
 17. Set the parameters for payment journal generation.
 
-    ![Parameters for payment journal generation.](media/rus-payments-payment-schedule-journal.jpg)
+    ![Parameters for payment journal generation.](media/rus-cash-flow-m50.jpg)
 
 18. Select **OK**.
 19. Select **Accounts payable \> Payments \> Vendor payment journal** to validate and process the vendor payment journal that is created.
