@@ -103,7 +103,7 @@ Here is the list of requirements and conditions of operation for a database refr
 
 ## Known issues
 
-### The Restore operation fails if the sanddbox customizations are incompatible with production data
+### The Restore operation fails if the sandbox customizations are incompatible with production data
 
 If a customization is added to the sandbox environment successfully, meaning that the customer's AOT deployable package successfully installs via LCS, that does not mean that it will still succeed with production data.  As an example, a customer could add a unique index on Vendor Name to the VendTable table.  This could install successfully if there are no duplicate Vendor Names in the sandbox environment.  However, as we bring in the production database as part of the Restore operation, it could fail if there are duplicates in that dataset that is inbound to the sandbox environment.  This is not supported and you will need to remove the customization before you can have a successful Restore operation.
 
