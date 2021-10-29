@@ -43,7 +43,7 @@ The export of vendors electronic invoices is implemented symmetrically to Italia
 
 ## <a id="apparameters"></a>Accounts payable parameters configuration
 
-In **Accounts payable** \> **Setup** \> **Accounts payable parameters**, on the **Electronic documents** tab, in the **Vandor invoice (export)** field,select the configuration that is used to create electronic invoice export XML files for vendor invoices.
+In **Accounts payable** \> **Setup** \> **Accounts payable parameters**, on the **Electronic documents** tab, in the **Vandor invoice (export)** field, select the configuration that is used to create electronic invoice export XML files for vendor invoices.
 
 ![Electronic documents in Accounts payable parameters](media/emea-ita-AP-parameter-e-invoices.jpg)
 
