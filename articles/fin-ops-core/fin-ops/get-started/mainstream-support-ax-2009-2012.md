@@ -4,7 +4,7 @@
 title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2, and Dynamics AX 2012 R3
 description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, Dynamics AX 2012 R2, and Dynamics AX 2012 R3.
 author: ShellyBakke
-ms.date: 10/18/2021
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, 
 
 Mainstream support for Dynamics AX 2012 R3 ended on October 12, 2021.  After that date, only security hotfixes will continue to be provided through the extended support period that continues until  January 10, 2023.  For more information, see [support.microsoft.com](https://support.microsoft.com/lifecycle/search?alpha=Dynamics%20AX).
 
-Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Commerce, and Human Resources:
+Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Commerce, and Project Operations:
 
 - Dynamics AX 2009 Service Pack 1 customers should use the [migration tool](../../dev-itpro/migration-upgrade/upgrade-home-page.md) that is available.
 - Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to Finance and Operations apps through Dynamics AX 2012 R3 using the upgrade tool that is available. For additional upgrade information, see [Upgrade from AX 2012 to Finance and Operations apps](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md).
@@ -74,7 +74,7 @@ If a hotfix is needed for a part of the system where Microsoft does not provide 
 Yes, all legislation changes regardless of source (such as vendors, Microsoft research, or the localization community) are stored in the Lifecycle Service (LCS) alerting project. To access the LCS alerting project, follow these steps:
 1. **Sign up**: Send an email request to join the localization community (under NDA) at DynRegW@microsoft.com.
 2. **Access**: Sign in to the LCS project **Regulatory Alerts - Worldwide** (available only for companies with NDA or individuals who signed up for the Insider Program).
-3. **Alerting guide**: Inform Microsoft about country/region regulation alerts and track the status of regulatory features.
+3. **Alerting guide**: Inform Microsoft about country/region regulation alerts and track the status of regulatory features. For more information, see [Submit alerts about country/region-specific regulatory features](../../dev-itpro/lcs-solutions/submit-localization-alerts.md).
 
 Note that the LCS alerting project includes all identified/reported legislation changes (alerts) but not actual Microsoft plans.
 
