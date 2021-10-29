@@ -53,7 +53,7 @@ structure, descriptions and data types in a machine readable JSON format such
 that downstream tools understand the semantics of the data.
 
 Export to Data Lake is a fully managed, scalable and highly available service
-from Microsoft with built-in disaster recovery. Feature supported include
+from Microsoft with built-in disaster recovery. Features supported include
 
 -   Users can choose up to 200 tables. All changes to data including insert,
     modify and delete operations are continuously updated in the lake
@@ -61,11 +61,12 @@ from Microsoft with built-in disaster recovery. Feature supported include
 -   Choose Data using Tables or using Entities. When you choose data using
     Entities, underlying tables are chosen by the service
 
--   Standard as well as custom Entities and tables are supported
+-   You can choose standard as well as custom Entities and tables. You can also choose customized tables and entities.
 
 -   Work with data in the lake using T-SQL with Synapse SQL Serverless. You can
-    integrate data in the lake with Synapse using ready-made solution templates
-    here \<…\>
+    easily integrate data in the lake with Synapse workspaces using ready-made solution templates here: [CDMUtilSolution at
+master · microsoft/Dynamics-365-FastTrack-Implementation-Assets
+(github.com)](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution)
 
 -   The storage account must be in the same Azure region as your Finance and
     Operations environment
