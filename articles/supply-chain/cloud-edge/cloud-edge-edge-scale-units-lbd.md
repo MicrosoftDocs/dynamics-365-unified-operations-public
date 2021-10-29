@@ -171,7 +171,7 @@ This step aligns the application version, platform version, and customizations i
 
 ## <a name="assign-edge-to-hub"></a>Assign your LBD edge scale unit to a hub
 
-1. You may configure and manage your edge scale unit through the Scale Unit Management Portal. For more information see [Manage scale units and workloads by using the Scale Unit Manager portal](./cloud-edge-landing-page.md#scale-unit-manager-portal)
+You configure and manage your edge scale unit through the Scale Unit Management Portal. For more information see [Manage scale units and workloads by using the Scale Unit Manager portal](./cloud-edge-landing-page.md#scale-unit-manager-portal)
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
