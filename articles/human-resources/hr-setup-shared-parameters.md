@@ -38,7 +38,7 @@ Some types of records, such as **Position** records, are shared across companies
 On the **Human resources shared parameters** page, parameters are grouped into areas, based on their functionality. 
 
 ### Settings
-On the **Identification** tab, you must select the **Identification types** that represent the identification numbers that are listed on the page. You must set up **Identification types** before you can enter identification information for workers. Information about the Social Security number, national ID number, alien ID number, and personal ID code is maintained on the **Identification type** page. To define a new identification type or review the list of existing types, click **Personnel management** &gt; **Links tab** &gt; **Setup** &gt; **Identification types**. You can enter a simple code and description. 
+On the **Identification** tab, you must select the identification types that represent the identification numbers that are listed on the page. You must set up identification types before you can enter identification information for workers. Information about the Social Security number, national ID number, alien ID number, and personal ID code is maintained on the **Identification type** page. To define a new identification type or review the list of existing types, go to **Personnel management** &gt; **Links** &gt; **Setup** &gt; **Identification types**. You can enter a simple code and description. 
 
 On the **Number sequences** tab, you can select the number sequences that are used for the following records: **Personnel number**, **Position**, **User request ID**, **I-9 document**, **Applicant**, **Discussion**, **Benefit ID**, and **Personnel action** (if this record type is enabled). To maintain number sequence references and codes, use the **Number sequences** list page. To find this page, use the page search feature. 
 
@@ -57,11 +57,11 @@ On the **Advanced access** tab, you can restrict access to some information or l
     1. Select a role for the user. The **Assign organizations** option becomes available.
     1. Select **Assign organizations**.
     1. On the new page, select **Grant access to specific organizations individually**, and then select the organizations that the user should have access to.
-    1. Repeat steps 2 through 4 for every role that the user has, including the system user role.
+    1. Repeat steps 2 through 4 for every additional role that the user has, including the system user role.
 
     > [!NOTE]
     > The companies that a user has access to must match across all the user's roles.
 
-- **Enable cross-company compensation view** – Compensation for employees is assigned per legal entity of employment. Sometimes, an employee can be employed in multiple legal entities at the same time. When this feature is turned on, compensation for each legal entity will appear in **Employee self service** and **Manager self service** without requiring that you change legal entities. 
+- **Enable cross-company compensation view** – Compensation for employees is assigned per legal entity of employment. Sometimes, an employee can be employed in multiple legal entities at the same time. When this feature is selected, compensation for each legal entity will appear in **Employee self service** and **Manager self service** without requiring that you change legal entities. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
