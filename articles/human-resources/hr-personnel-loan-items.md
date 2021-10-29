@@ -33,7 +33,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 Loan items are records that help managers track the physical items that your company lends to its workers. 
 
-The following list is an example of items that a company might lend to workers:
+Here are some examples of items that a company might lend to workers:
+
 -   Mobile telephones
 -   Automobiles
 -   Computer equipment
@@ -42,7 +43,7 @@ Each physical item must have a corresponding loan item. Each loan item record sh
 
 When loaning an item, enter the date that the item was loaned, and the planned return date. When the item is returned, enter the actual return date.
 
-Employees can view the records of the items that have been loaned to them using the **Employee self service** workspace. They can also edit the existing records or enter new loan items, if they've received additional physical items.  **Workflow** can be set up to route changes to new or existing loan items through an approval process. 
+Employees can use the **Employee self service** workspace to view the records of the items that have been loaned to them. They can also edit the existing records or enter new loan items if they've received additional physical items. A workflow can be set up to route changes to new or existing loan items through an approval process. 
 
 Managers can view loaned items for their direct reports. They can also be granted permission to add new loan items on behalf of their employees.
 
