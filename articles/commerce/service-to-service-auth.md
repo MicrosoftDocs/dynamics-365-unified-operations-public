@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Service-to service-authentication
-description: This topic describes how to configure service-to-service authentication in Microsoft Dynamics 365 Commerce to securely call ratings and reviews service APIs.
+title: Configure Service-to-Service authentication
+description: This topic describes how to configure Service-to-Service authentication in Microsoft Dynamics 365 Commerce to securely call ratings and reviews service APIs.
 author: gvrmohanreddy
 ms.date: 10/26/2021
 ms.topic: article
@@ -13,16 +13,16 @@ ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
 ---
 
-# Service-to-service authentication
+# Service-to-ervice authentication
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic describes how to configure service-to-service authentication in Microsoft Dynamics 365 Commerce to securely call ratings and reviews service APIs.
+This topic describes how to configure Service-to-Service (S2S) authentication in Microsoft Dynamics 365 Commerce to securely call ratings and reviews service APIs.
 
-Dynamics 365 Commerce offers [ratings and reviews](ratings-reviews-overview.md) as an omni-channel solution that allows access to service APIs from outside of Commerce to perfom tasks such as importing ratings and reviews from your external system into Commerce or exporting ratings and reviews from Commerce. These tasks are accomplished using Microsoft Power Automate.  
+Dynamics 365 Commerce offers [ratings and reviews](ratings-reviews-overview.md) as an omni-channel solution that allows access to service APIs from outside of Commerce to perform tasks such as importing ratings and reviews from your external system into Commerce or exporting ratings and reviews from Commerce. To securely call ratings and reviews service APIs , you must configure S2S authentication. 
 
-## Configure service-to-service (S2S) authentication
+## Configure service-to-service authentication
 
 To configure service-to-service authentication in Commerce site builder, follow these steps.
 
