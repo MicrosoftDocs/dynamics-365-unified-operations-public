@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 39
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-## What is Azure Data Lake?
+## What is Export to Data Lake?
 Connect your Dynamics 365 Finance and Operations environment with an Azure Data
 Lake and unlock insights hidden in your data.
 
