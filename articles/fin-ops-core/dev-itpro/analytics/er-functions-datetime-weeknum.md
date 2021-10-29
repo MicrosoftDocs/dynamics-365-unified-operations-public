@@ -4,7 +4,7 @@
 title: WEEKNUM ER function
 description: This topic provides information about how the WEEKNUM Electronic reporting (ER) function is used.
 author: NickSelin
-ms.date: 10/27/2021
+ms.date: 12/03/2021
 ms.prod: 
 ms.technology: 
 
@@ -21,7 +21,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
-ms.search.validFrom: 2021-10-27
+ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: AX 10.0.24
 
 ---
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: AX 10.0.24
 # WEEKNUM ER function
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 The `WEEKNUM` function returns an *[Integer](er-formula-supported-data-types-primitive.md#integer)* value that represents the week of the year that includes a specified *[Date](er-formula-supported-data-types-primitive.md#date)* value. The calculation is based on culture-dependent rules that define a calendar week and the first day of the week.
 
