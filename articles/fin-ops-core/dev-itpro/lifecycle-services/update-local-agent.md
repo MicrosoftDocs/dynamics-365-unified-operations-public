@@ -4,7 +4,7 @@
 title: Update the local agent
 description: This topic explains how to update the local agent.
 author: faix
-ms.date: 08/03/2021
+ms.date: 10/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,11 +30,13 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to update the local agent. The latest version of the local agent is version 2.7.0, which was released in August 2021.
+This topic explains how to update the local agent. The latest version of the local agent is version 2.7.2, which was released in October 2021.
 
 | Local agent version | Capability | 
 |---------------------|------------|
-| 2.7.0               | This version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. |
+| 2.7.2               | This version includes a fix for deploying older application versions. | 
+| 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. |
+| 2.7.0               | Enables deploying or updating to 10.0.21 and later versions. Additionally, this version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. |
 | 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning timeout. |
 | 2.5.0               | This version updates dependencies and fixes a cleanup bug. |
 | 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. |
@@ -49,14 +51,24 @@ This topic explains how to update the local agent. The latest version of the loc
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
 | Null                | This initial version deploys Platform update 8. |
 
+## What's new in local agent 2.7.2
+
+- Local agent 2.7.2 fixes an issue where environments on older versions of the application would fail to deploy.
+
+## What's new in local agent 2.7.1
+
+- Local agent 2.7.1 introduces a new deployment option to [Specify that checking the Certificate Revocation List of a certificate should be skipped](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-checking-the-certificate-revocation-list-of-a-certificate-should-be-skipped).
+- This release addresses a bug where the **office365AdfsCompatibility** deploymentOption was not being correctly set.
 
 ## What's new in local agent 2.7.0
 
-- Local agent 2.7.0 introduces the possibility of specifying a limited set of deployment options to specify environment-specific deployment options. Most notably, this release will allow deploying on environments with Microsoft SQL Server 2019. For all possible configurations, see [Local agent deployment configurations](../../dev-itpro/deployment/onprem-localagent-options.md).
-- This release addresses an issue where the gMSA account that the local agent executes under loses permission to the private key for some certificates.
+- Local agent 2.7.0 is a prerequisite to deploy or update to 10.0.21 and later releases. 
+- This release introduces the possibility of specifying a limited set of deployment options for environment-specific deployment options. Most notably, this release will allow you to deploy on environments with Microsoft SQL Server 2019. For all possible configurations, see [Local agent deployment configurations](../../dev-itpro/deployment/onprem-localagent-options.md).
+- Additionally, this release addresses an issue where the gMSA account that the local agent executes under will lose permission to the private key for some certificates.
 - The LBDTelemetry-Agent application can start correctly even if the Event Viewer is open. 
 
 > [!IMPORTANT]
+> This release **must be used** to deploy or update to 10.0.21 and later releases.
 > This release requires that a new local agent configuration file be downloaded from LCS. If you encounter issues, refer to [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md). 
 
 ## What's new in local agent 2.6.0

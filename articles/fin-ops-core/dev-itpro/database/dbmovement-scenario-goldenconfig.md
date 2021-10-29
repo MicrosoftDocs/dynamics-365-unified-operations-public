@@ -4,7 +4,7 @@
 title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
-ms.date: 05/24/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -173,7 +173,14 @@ Now that the UAT environment is hydrated with the golden configuration, you can 
 
 When you're ready to do a mock go-live or actual go-live, you can copy the UAT environment to production. This process is often referred to as *cutover*. We recommend that you do a cutover more than one time before your actual go-live. In this way, you can get detailed time estimates for each step of the process.
 
-Determine the **Environment type** of your production environment and follow the relevant steps accordingly.
+Determine the **Environment type** of your production environment and follow the relevant steps accordingly. 
+
+### Self-service
+1. In LCS, open the **Full details** for the production environment to load the **Environment page**.
+2. In the **Maintain** menu, select **Move database**.
+3. For the operations options, select **Refresh database**.
+4. In the **Source environment**, select the sandbox where your golden configuration is. Note the important instructions found on the [Refresh database page](database-refresh.md) for this operation.
+5. Select the check box to confirm that you understand this operation will overwrite the production database. The operation starts immediately after submitting the request.
 
 ### Microsoft-managed
 1. In LCS, on the project home page, select **Service requests**.
@@ -184,12 +191,6 @@ Determine the **Environment type** of your production environment and follow the
     2. Set the **Preferred downtime start date** and **Preferred downtime end date** fields. The end date must be at least four hours after the start date. To help ensure that resources are available to run the request, it's recommended that you submit your request at least 24 hours before your preferred downtime window.
     3. Select the check boxes at the bottom to agree to the terms.
 
-### Self-service
-1. In LCS, open the **Full details** for the production environment to load the **Environment page**.
-2. In the **Maintain** menu, select **Move database**.
-3. In the options of operations select **Refresh database**.
-4. In the **Source environment** chose the sandbox where your golden configuration is. Note the important instructions found on the [Refresh database page](database-refresh.md) for this kind of operation.
-5. Select the check box to confirm that you understand this operation will overwrite the production database. The operation starts immediately after submitting the request.
 
 > [!IMPORTANT]
 > Every database refresh will create a new database that will reset the **Point-in-time-restore** chain of restore points.

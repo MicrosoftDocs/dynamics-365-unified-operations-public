@@ -4,7 +4,7 @@
 title: Add module configuration fields
 description: This topic describes how to add module configuration fields in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
-ms.date: 09/15/2020
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ This topic describes how to add module configuration fields in Microsoft Dynamic
 
 Configuration fields can be added to a module to expose them to page authors and give them control of various module features. Examples of these features include different views, alignment properties, Boolean switches to turn features on or off, module titles or headings, rich text descriptions, call-to-action links, image URLs, and Commerce product data.
 
-The following illustration shows how these fields appear in the page authoring tools.
+The following illustration shows how configuration fields for a selected module appear in Commerce site builder.
 
 ![Module configuration fields in the authoring tools.](media/module-config-fields.png)
 
@@ -90,7 +90,7 @@ The **config** section of the module definition file contains a list of all the 
 * **"type"** – The type of the configuration. The possible values are **"string"**, **"bool"**, **"number"**, **"integer"**, **"richText"**, **"image"**, **"imageSettings"**, **"css"**, **"video"**, and **"array"**.
 * **"enum"** – For an enumerator type, the value must be set to **"string"**.
 * **"default"** – The default value that is set if no value is set in the authoring tools.
-* **"scope"** – This field is used to scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"siteOnly"**. If the value is set to **"siteOnly"**, the module configuration doesn't appear on a page and can't be configured there. It appears and can be configured only at the site level. In this way, the value can be set one time for the entire site. If you don't set this field, the default value is **"module"**.
+* **"scope"** – This field is used to scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"siteOnly"**. If the value is set to **"siteOnly"**, the module configuration doesn't appear on a page and can't be configured there. It can be viewed and configured only at the site level in site builder, at **Site settings \> Extensions**. In this way, the value can be set one time for the entire site. If you don't set this field, the default value is **"module"**.
 * **"group"** – Groups are used to organize the configurations into organized groups in the authoring tools.
 * **"required"** – A Boolean flag that specifies whether a property must be set on the module. If the value is set to **true**, the authoring tools will show an error if the required property isn't set, and an error will be shown when the module is rendered.
 * **"resources"** – This field is used for localization resources.
@@ -101,11 +101,11 @@ The following example shows how the various supported data types are used.
 ```json
 {
     "$type": "contentModule",
-    "friendlyName": "Sample Config",
+    "friendlyName": "Sample Configurations",
     "name": "sample-config",
-    "description": "Sample Config",
-    "categories": ["sample-config"],
-    "tags": ["samples"],
+    "description": "Provides various configuration property samples",
+    "categories": [""],
+    "tags": [""],
     "dataActions": {},
     "config": {
         "title": {
@@ -139,7 +139,7 @@ The following example shows how the various supported data types are used.
             "description": "Image settings for background image settings"
         },
         "ambientVideo": {
-            "type": "video"
+            "type": "video",
             "friendlyName": "Ambient video",
             "description": "Ambient video",
         },
@@ -334,9 +334,11 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
         return this.props.renderView(ProductFeatureViewProps);
     }
 }
+
+export default ProductFeature;
 ```
 
-The following example shows the corresponding module view file that handles the HTML layout.
+The following example shows the corresponding module view file that handles the HTML layout by using the configuration values that are passed in from the preceding React component.
 
 ```typescript
 import * as React from 'react';

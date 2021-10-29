@@ -45,7 +45,7 @@ For more information, see [Download ER configurations from the Global repository
 3. In the **Report format mapping** field, select **Intrastat report**.
 4. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
 5. In the **Transaction code** field, select the transaction code for property transfers. You use this code for transactions that produce actual or planned transfers of property against compensation (financial or otherwise). You also use it for corrections. Companies in Sweden use one-digit transaction codes.
-6. In the **Credit note** field, select the transaction code for the return of goods. You use this code for the return of goods after the transaction that was originally recorded under the transaction code. Companies in Sweden use one-digit transaction codes.
+6. In the **Credit note** field, select the transaction code for the return of goods.
 7. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, in the **Country/region type** field, select **EU**, so that the country appears on your Intrastat report.
 
 ## Set up the product parameters for the Intrastat declaration

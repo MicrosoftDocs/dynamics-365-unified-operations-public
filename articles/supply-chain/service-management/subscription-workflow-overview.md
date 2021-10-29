@@ -3,7 +3,7 @@
 
 title: Subscription workflow overview 
 description: This topic provides an overview of subscription workflow. 
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 

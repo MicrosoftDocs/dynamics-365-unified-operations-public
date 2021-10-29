@@ -5,7 +5,7 @@ author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this topic to]
-audience: IT Pro
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.19
 # Deploy edge scale units on custom hardware using LBD (Preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)] <!--KFM: Until 11/1/2021 -->
 
 Edge scale units play an important role in the distributed hybrid topology for supply chain management. In the hybrid topology you can distribute workloads between your Supply Chain Management cloud hub and additional scale units in the cloud or on the edge.
 

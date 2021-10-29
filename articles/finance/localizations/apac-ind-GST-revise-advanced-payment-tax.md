@@ -3,7 +3,7 @@
 
 title: Revise advance payments that include tax
 description: This topic explains how to revise an advance payment that includes tax.
-author: EricWang
+author: EricWangChen
 ms.date: 06/03/2019
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: kfend
+ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
 

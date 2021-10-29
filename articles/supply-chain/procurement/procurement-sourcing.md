@@ -3,7 +3,7 @@
 
 title: Procurement and sourcing home page
 description: This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
-author: kamaybac
+author: Henrikan
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["50651", "intro-internal"]
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -4,7 +4,7 @@
 title: Configure module properties to be shown based on context
 description: This topic describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 author: samjarawan
-ms.date: 08/12/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -49,71 +49,31 @@ As the following example of a module definition file shows, when the **layout** 
 ```json
 {
     "$type": "contentModule",
-    "friendlyName": "Product Feature",
-    "name": "product-feature",
-    "description": "Feature module used to highlight a product.",
+    "friendlyName": "Configuration visibility",
+    "name": "config-visibility",
+    "description": "Configuration visibility test module",
+    "categories": ["config-visibility"],
+    "tags": [""],
+    "dataActions": {        
+    },    
     "config": {
-        "layout": {
-            "friendlyName": "Text Layout",
-            "description": "Sets the desired text output to be plain text or rich text with images.",
-            "type": "string",
-            "enum": {
-                "plainTextOnly": "Plain Text Only",
-                "richTextWithImage": "Rich Text With Image"
-            },
-            "default": "plainTextOnly",
-            "scope": "module",
-            "group": "Layout Properties"
+        "productTitle": {
+            "friendlyName": "Product title",
+            "description": "Product title.",
+            "type": "string"
         }
     },
     "dependentSchemas": {
-      "layout": {
-        "oneOf": [
-            {
-                "properties": {
-                    "layout": {
-                        "enum" : {
-                            "plainTextOnly": "plainTextOnly"
-                        }
-                    },
-                    "featureText" : {
-                        "type": "string",
-                        "friendlyName": "Feature Text",
-                        "description":  "Main text title to show in module."
-                    }
+        "productTitle": {
+            "properties": {
+                "subTitle" : {
+                    "type": "string",
+                    "friendlyName": "Product sub title",
+                    "description":  "Product sub title."
                 }
             },
-            {
-                "properties": {
-                    "layout": {
-                        "enum" : {
-                            "richTextWithImage": "richTextWithImage"
-                        }
-                    },
-                    "featureRichText" : {
-                        "type": "richText",
-                        "friendlyName": "Feature Text",
-                        "description":  "Main rich text to show in module."
-                    },
-                    "featureImage" : {
-                        "type": "image",
-                        "friendlyName": "Feature Title",
-                        "description":  "Image to show in module."
-                    },
-                    "imageAlignment": {
-                        "friendlyName": "Image Alignment",
-                        "description": "Sets the desired alignment of the image, either left or right on the text.",
-                        "type": "string",
-                        "enum": {
-                            "left": "Left",
-                            "right": "Right"
-                        },
-                        "default": "left"
-                    }
-                }
-            }
-        ]
-      }
+            "required": ["productTitle"]
+        }
     }
 }
 ```
@@ -145,7 +105,7 @@ In the following example, the **dependentSchemas** property specifies that whene
                 "subTitle" : {
                     "type": "string",
                     "friendlyName": "Product Sub Title",
-                    "description":  "Product sub title.",
+                    "description":  "Product sub title."
                 }
             },
             "required": ["productTitle"]
@@ -183,14 +143,52 @@ The following examples show a module definition file and a module definition ext
         }
     }   
 }
+
+
+{
+    "$type": "contentModule",
+    "friendlyName": "Configuration visibility",
+    "name": "config-visibility",
+    "description": "Configuration visibility test module",
+    "categories": ["config-visibility"],
+    "tags": [""],
+    "dataActions": {        
+    },    
+    "config": {
+        "layout": {
+            "friendlyName": "Text Layout",
+            "description": "Sets the desired text output to be plain text or rich text with images.",
+            "type": "string",
+            "enum": {
+                "plainTextOnly": "Plain Text Only",
+                "richTextOnly": "Rich Text Only",
+                "richTextWithImage": "Rich Text With Image"
+            },
+            "default": "plainTextOnly",
+            "override": true
+        }
+    }
+}
 ```
 
 ### Module definition extension file example
 
 ```json
 {
-    "$type": "definitionExtension",
+    "$type": "contentModule",
+    "friendlyName": "Configuration visibility",
+    "name": "config-visibility",
+    "description": "Configuration visibility test module",
+    "categories": ["config-visibility"],
+    "tags": [""],
+    "dataActions": {        
+    },    
     "config": {
+        "productTitle": {
+            "friendlyName": "Product Title",
+            "description": "Product title.",
+            "type": "string"
+        },
         "layout": {
             "friendlyName": "Text Layout",
             "description": "Sets the desired text output to be plain text or rich text with images.",
@@ -205,67 +203,77 @@ The following examples show a module definition file and a module definition ext
         }
     },
     "dependentSchemas": {
-      "layout": {
-        "oneOf": [
-            {
-                "properties": {
-                    "layout": {
-                        "enum" : {
-                            "plainTextOnly": "plainTextOnly"
-                        }
-                    },
-                    "featureText" : {
-                        "type": "string",
-                        "friendlyName": "Feature Text",
-                        "description":  "Main text title to show in module.",
-                    }
+        "productTitle": {
+            "properties": {
+                "subTitle" : {
+                    "type": "string",
+                    "friendlyName": "Product Sub Title",
+                    "description":  "Product sub title."
                 }
             },
-            {
-                "properties": {
-                    "layout": {
-                        "enum" : {
-                            "richTextOnly": "richTextOnly"
-                        }
-                    },
-                    "featureRichText" : {
-                        "type": "richText",
-                        "friendlyName": "Feature Text",
-                        "description":  "Main rich text to show in module.",
-                    }
-                }
-            },
-            {
-                "properties": {
-                    "layout": {
-                        "enum" : {
-                            "richTextWithImage": "richTextWithImage"
-                        }
-                    },
-                    "featureRichText" : {
-                        "type": "richText",
-                        "friendlyName": "Feature Text",
-                        "description":  "Main rich text to show in module.",
-                    },
-                    "featureImage" : {
-                        "type": "image",
-                        "friendlyName": "Feature Title",
-                        "description":  "Image to show in module.",
-                    },
-                    "imageAlignment": {
-                        "friendlyName": "Image Alignment",
-                        "description": "Sets the desired alignment of the image, either left or right on the text.",
-                        "type": "string",
-                        "enum": {
-                            "left": "Left",
-                            "right": "Right"
+            "required": ["productTitle"]
+        },
+        "layout": {
+            "oneOf": [
+                {
+                    "properties": {
+                        "layout": {
+                            "enum" : {
+                                "plainTextOnly": "plainTextOnly"
+                            }
                         },
-                        "default": "left"
+                        "featureText" : {
+                            "type": "string",
+                            "friendlyName": "Feature Text",
+                            "description":  "Main text title to show in module."
+                        }
+                    }
+                },
+                {
+                    "properties": {
+                        "layout": {
+                            "enum" : {
+                                "richTextOnly": "richTextOnly"
+                            }
+                        },
+                        "featureRichText" : {
+                            "type": "richText",
+                            "friendlyName": "Feature Text",
+                            "description":  "Main rich text to show in module."
+                        }
+                    }
+                },
+                {
+                    "properties": {
+                        "layout": {
+                            "enum" : {
+                                "richTextWithImage": "richTextWithImage"
+                            }
+                        },
+                        "featureRichText" : {
+                            "type": "richText",
+                            "friendlyName": "Feature Text",
+                            "description":  "Main rich text to show in module."
+                        },
+                        "featureImage" : {
+                            "type": "image",
+                            "friendlyName": "Feature Title",
+                            "description":  "Image to show in module."
+                        },
+                        "imageAlignment": {
+                            "friendlyName": "Image Alignment",
+                            "description": "Sets the desired alignment of the image, either left or right on the text.",
+                            "type": "string",
+                            "enum": {
+                                "left": "Left",
+                                "right": "Right"
+                            },
+                            "default": "left"
+                        }
                     }
                 }
-            }
-        ]
-      }
+            ]       
+        }
     }
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: Replenishment methods and quantity modification
 description: This topic provides information about replenishment methods in Planning Optimization. It also explains how the multiple order quantity for a product affects the result.
-author: crytt
+author: ChristianRytt
 ms.date: 6/1/2021
 ms.topic: article
 ms.search.form: ReqGroup, ReqItemTable, InventItemOrderSetup

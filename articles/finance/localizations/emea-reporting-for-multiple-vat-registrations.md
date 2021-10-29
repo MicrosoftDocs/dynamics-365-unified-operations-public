@@ -4,7 +4,7 @@
 title: Reporting for multiple VAT registrations
 description: This topic provides information about reporting for multiple value-added tax (VAT) registrations.
 author: anasyash
-ms.date: 08/24/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,8 +28,6 @@ ms.dyn365.ops.version:
 # Reporting for multiple VAT registrations 
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 This topic explains how to do reporting for multiple value-added tax (VAT) registrations.
 
@@ -242,7 +240,7 @@ All tax registrations have the same settings for EU sales list parameters.
 | 10.0.21     | AT          | EU Sales list (AT).version.9.5                                         |
 | 10.0.21     | DE          | EU Sales list (DE).version.9.5                                         |
 | 10.0.21     | ES          | EU Sales list (ES).version.9.2                                         |
-| 10.0.21     | SE          | EU Sales list model.version.11.xml</br>EU Sales list (SE).version.11.6.xml |
+| 10.0.21     | SE          | EU Sales list model.version.13.xml</br>EU Sales list (SE).version.13.7.xml |
 
 ## Generate intra-community reporting for multiple VAT registrations
 

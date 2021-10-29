@@ -27,13 +27,14 @@ These topics describe dual-write integration.
     - [What does dual-write mean for developers and architects of customer engagement app?](dual-write-overview.md#developer-architect)
 
 + [What's new or changed in dual-write](whats-new-dual-write.md)
-+ [Frequently asked questions](dual-write-faq.md)    
++ [Frequently asked questions](dual-write-faq.md)
 
 ## Dual-write setup
 
 + [System requirements for dual-write](dual-write-system-req.md)
 + [Guidance for how to set up dual-write](connection-setup.md)
 + [Considerations for initial synchronization](initial-sync-guidance.md)
++ [Dual-write limits for live synchronization](sync-limits.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
 + Enable dual-write for existing Finance and Operations apps
 
@@ -49,8 +50,10 @@ These topics describe dual-write integration.
 ## Managing dual-write after setup
 
 + [Customize table and column mappings](customizing-mappings.md)
++ [Customization guidance for dual-write](custom-best-practices.md)
 + [Handling multiple table maps](multiple-entity-maps.md)
 + [Edit a legal entity after dual-write setup](edit-legal-entity.md)
++ [Pause dual-write for maintenance](pause-for-maintenance.md)
 + [Error management and alert notifications](errors-and-alerts.md)
 + [Application lifecycle management](app-lifecycle-management.md)
 + [User-specified team owner](user-specified-team-owner.md)
@@ -111,5 +114,6 @@ These topics describe mapping between concepts in finance and operations apps an
 + [Troubleshoot issues related to solution awareness](dual-write-troubleshooting-solution-awareness.md)
 + [Troubleshoot issues from upgrades of Finance and Operations apps](dual-write-troubleshooting-finops-upgrades.md)
 + [Verify dual-write configuration in Finance and Operations apps and Dataverse](dual-write-troubleshooting-verify-config.md)
++ [Errors codes for table map health check](table-map-health-check.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

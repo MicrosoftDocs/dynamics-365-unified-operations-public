@@ -3,7 +3,7 @@
 
 title: Sales tax calculation on general journal lines
 description: This topic explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
-author: EricWang
+author: EricWangChen
 ms.date: 04/22/2021
 ms.topic: article
 ms.prod: 
@@ -22,7 +22,7 @@ ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: EricWang
+ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
 
@@ -105,7 +105,7 @@ The following illustration shows the rule that applies when a voucher has only j
 
 •	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
 
-Otherwise, if the journal amount is debit (positive) ,sales tax direction is Sales Tax Receivable; if the journal amount is credit (negative) ,sales tax direction is Sales Tax Payable.
+Otherwise, if the journal amount is debit (positive), sales tax direction is Sales Tax Receivable; if the journal amount is credit (negative) ,sales tax direction is Sales Tax Payable.
 
 The following diagram illustrates the rule graphically.
 

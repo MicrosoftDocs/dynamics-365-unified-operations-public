@@ -51,7 +51,6 @@ To apply the reverse charge, you must complete the following setup.
 We recommend that you use separate sales tax codes for sales operations and purchase operations.
 
 <table>
-<body>
 <tr>
 <td><strong>Sales tax code for sales</strong></td>
 <td>Create a sales tax code for reverse charge sales operations (<strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax codes</strong>).
@@ -68,7 +67,6 @@ You must assign this negative sales tax code to an item sales tax group and then
 <p>For more information, see the next section, &quot;Set up sales tax groups and item sales tax groups.&quot;</p>
 </td>
 </tr>
-</tbody>
 </table>
 
 ## <a name="sales-tax-item-sales-tax-groups"></a>Set up sales tax groups and item sales tax groups

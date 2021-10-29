@@ -3,7 +3,7 @@
  
 title: Set up short picking item reallocation
 description: This topic shows how to enable warehouse workers to quickly find alternative locations if there isn't sufficient inventory at the location they've been directed to. 
-author: ShylaThompson
+author: Mirzaab
 ms.date: 06/29/2020
 ms.topic: business-process 
 ms.prod:  
@@ -21,7 +21,7 @@ ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Set up short picking item reallocation
 

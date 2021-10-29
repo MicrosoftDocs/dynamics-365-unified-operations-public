@@ -4,7 +4,7 @@
 title: Advanced notes management
 description: This topic explains how to set up and print predefined notes for customers, vendors, and products.
 author: ilkond
-ms.date: 06/04/2020
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -99,6 +99,9 @@ Advanced notes can be directly attached automatically to sales order confirmatio
 2. On the **General** FastTab, in the **Advanced notes** section, enable the **Direct attachment to documents** parameter.
 
   ![Forms setup page, highlight of Direct attachment to documents parameter.](media/attach-documents.jpg)
+
+> [!NOTE]
+> If **Summary update** is enabled, enable the **Direct attachment to documents** parameter when you post affected documents.
 
 ## Advanced notes processing
 

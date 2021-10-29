@@ -5,7 +5,7 @@ author: kamaybac
 ms.date: 05/28/2021
 ms.topic: article
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
@@ -34,6 +34,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 | Inventory&nbsp;and&nbsp;logistics | [Sales order details performance enhancement](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | This feature makes the user interface more responsive when opening sales orders, especially orders that include many lines. |
 | Manufacturing | [Invoke process automation flows to create quality orders](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/invoke-process-automation-flows-create-quality-orders) | [Invoke process automation flows to create quality orders](../production-control/process-automation-quality-orders.md ) |
 | Manufacturing | [Enhanced production floor execution interface for manufacturing](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing) | [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md) |
+| Planning | [Infinite capacity scheduling for Planning Optimization](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Scheduling with infinite capacity](../master-planning/planning-optimization/infinite-capacity-planning.md) |
 | Product information management | [Manage changes in formulas and their ingredients](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | [Manage changes in formulas and their ingredients](../engineering-change-management/manage-formula-changes.md) |
 | Product information management | [Product readiness checks](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/product-readiness-checks) | [Product readiness](../engineering-change-management/product-readiness.md) |
 
@@ -41,7 +42,7 @@ Most of these features must be enabled using [Feature management](../../fin-ops-
 
 The following table lists the feature enhancements included in this release. Each of these provides an incremental improvement to an existing feature. Because they are only enhancements, they are not listed in the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted). If you want to use any of these features, you must explicitly enable them in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Feature area | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
+| Module | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
 | Master planning | Parallel authorizing of adjusted demand forecast | This feature allows parallel authorizing of adjusted demand forecast from the **Adjusted demand forecast** page. The intent of this feature is to increase performance when a high number of forecasts are being authorized. When authorizing, the user can specify the **Number of threads** in the authorizing dialog. |
 | Master planning | (Preview) Batchable firming and consolidation for planned bulk and pack batch orders | This feature lets you use batch jobs to firm and consolidate planned bulk and pack orders. |

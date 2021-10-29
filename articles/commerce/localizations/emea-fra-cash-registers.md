@@ -5,7 +5,7 @@ title: Cash register functionality for France
 description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/10/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -152,6 +152,9 @@ When a shift is closed, the event is registered in the POS audit event log. The 
 - The sequential number of the shift closing event for the register.
 - A value (Y/N) that indicates whether the transaction is the first signed shift closing event for the register.
 - The previous signature for the same register. A blank value is used for the first signed shift closing event.
+
+> [!NOTE]
+> Because of the requirement to maintain a chain of closed shifts for the same register, closing a shift on a register that is different from the one that the shift was opened on is not supported. It may be added in later updates.
 
 You can view the signature of a closed shift, together with the shift data that was used to generate it, on the **Fiscal registration results** tab of the **Shifts** page in Commerce headquarters.
 
