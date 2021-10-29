@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 10.0.0
 
 # SysSetupConfigAttribute attribute
 
-X++ classes that implement the `SysSetup` interface are processed during database synchronization. Custom X++ classes that implement `SysSetup` are also run as part of database synchronization.
+X++ classes that implement the `SysSetup` interface are processed as part of database synchronization. Custom X++ classes that implement `SysSetup` are also run as part of database synchronization.
 
 Attributes provide a powerful way to associate metadata, or declarative information, with code such as assemblies, types, methods, and properties. After an attribute is associated with a program entity, it can be queried at runtime by using reflection.
 
@@ -41,25 +41,7 @@ class DemoClass implements SysSetup
 }
 ```
 
-## Override attribute parameters
-
-You can override the `SysSetupConfigAttribute` attribute by copying the SysSetuScripts.xml file to the Application Object Server (AOS) installation directory. Typically, the file is found in the AOSService\\PackagesLocalDirectory\\bin folder.
-
-```xml
-<?xml version="1.0" encoding="utf-8" ?>
-<Scripts>
-    <Script Name="<Class1>" ContinueOnError="true" Timeout="600"/>
-    <Script Name="<Class2>" ContinueOnError="false" Timeout="300"/>
-</Scripts>
-```
-
-## Review the synchronization status
-
-You can download the log file from Microsoft Dynamics Lifecycle Services (LCS). In the log file, you can find each X++ class that was processed, together with the attribute parameters. The following example shows the log output.
-
-```dos
-09/21/2021 17:42:07: SysSetupInstaller: Running Script: NumberSequenceModuleSetup with Timeout 600 seconds.
-09/21/2021 17:42:09: SysSetupInstaller: Script: NumberSequenceModuleSetup, Completed Successfully. Time elapsed: 0:00:00:01.5189544
-```
+> [!NOTE]
+> If the X++ class does not have the **SysSetupConfigAttribute** attribute, then default values are applied. `ContinueOnError` is **true** and `Timeout` is **120** seconds.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
