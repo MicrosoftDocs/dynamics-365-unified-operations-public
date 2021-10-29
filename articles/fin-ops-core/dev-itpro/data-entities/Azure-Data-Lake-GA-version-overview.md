@@ -72,3 +72,27 @@ master · microsoft/Dynamics-365-FastTrack-Implementation-Assets
     Operations environment
 
 Also see preview features below
+
+##Enable near real time data changes (preview)
+
+When you choose this preview feature, Data is added, updated and deleted into
+your data lake in near-real time. As data is updated in your Finance and
+Operations environment, the same data is updated within a few minutes.
+
+When you choose this option, number of tables you can choose increases to 350
+tables.
+
+In addition, you can also update downstream data warehouses using Change data in
+the lake. Using change data folder, you can easily identify the changes made to
+the data.
+
+See more information here:
+
+>!NOTE:
+>preview features are not complete, but are made available on a “preview”
+>basis so customers can get early access and provide feedback. Preview features
+>may have limited or restricted functionality, are not meant for production use,
+>and may be available only in selected geographic areas.
+>
+
+
