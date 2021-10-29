@@ -80,7 +80,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | There is no control to execute this event. |
-| **Replaced by another feature?**   | Yes, move X++ classes to the SysSetup interface. |
+| **Replaced by another feature?**   | Yes, move existing methods subscribed to by the **OnDBSynchronzie** event to a SysSetup extended class. |
 | **Product areas affected**         | Database synchronization |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. Planned removal date is October 2022. |
