@@ -3,7 +3,7 @@
 
 title: Ledger journal types
 description: This topic describes the journal types that you can set up for financial journals.
-author: ShylaThompson
+author: kweekley
 ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
