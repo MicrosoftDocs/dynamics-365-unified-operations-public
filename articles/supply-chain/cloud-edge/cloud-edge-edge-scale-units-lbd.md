@@ -95,11 +95,13 @@ This step creates a functional LBD environment. However, the environment doesn't
         .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
         ```
     
-    1. Create a new Azure Active Directory application that will allow your scale unit environment to communicate with the cloud hub.
+    1. Create a new Azure Active Directory application that will allow the Alm Orchestration service to communicate with the Scale Unit Management service.
 
         ```powershell
-        # Example .\Create-AADApplication.ps1 -ConfigurationFilePath ..\ConfigTemplate.xml -TenantId '6240a19e-86f1-41af-91ab-dbe29dbcfb95' -ApplicationDisplayName 'EdgeAgent-SUMCommunication-EN01'
-        .\Create-AADApplication.ps1 -ConfigurationFilePath '<Path to the ConfigTemplate.xml file>' -TenantId '<Id of the tenant where your cloud hub is deployed>' -ApplicationDisplayName '<Whichever name you want the AAD app to have>'
+        # Example .\Create-SumAADApplication.ps1 -ConfigurationFilePath ..\ConfigTemplate.xml -TenantId '6240a19e-86f1-41af-91ab-dbe29dbcfb95' -ApplicationDisplayName 'EdgeAgent-SUMCommunication-EN01'
+        .\Create-SumAADApplication.ps1 -ConfigurationFilePath '<Path to the ConfigTemplate.xml file>' `
+                                       -TenantId '<Id of the tenant where your cloud hub is deployed>' `
+                                       -ApplicationDisplayName '<Whichever name you want the AAD app to have>'
         ```
 
 1. Continue following the instructions in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). When you have to enter the configuration for the localagent, ensure that you enable the Edge Scale Unit Features and provide all necessary parameters.
@@ -138,9 +140,19 @@ This step creates a functional LBD environment. However, the environment doesn't
     1. Run the following SQL commands on your business database (AXDB):
 
     ```sql
-    delete from FEATUREMANAGEMENTMETADATA
-    delete from FEATUREMANAGEMENTSTATE
-    delete from NUMBERSEQUENCESCOPE
+    ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
+    delete from NumberSequenceTable
+    delete from NumberSequenceReference
+    delete from NumberSequenceScope
+    delete from FeatureManagementMetadata
+    delete from FeatureManagementState
+    delete from SysFeatureStateV0
+    ```
+
+    1. Increase concurrent max batch session to value greater than 4:
+    
+    ```sql
+    Update batchserverconfig set maxbatchsessions = '<Replace with number of concurrent batch tasks you want>'
     ```
 
     1. Verify that change tracking has been enabled on your business database (AXDB)
@@ -152,24 +164,45 @@ This step creates a functional LBD environment. However, the environment doesn't
             - **Retention Period:** *7*
             - **Retention Units:** *Days*
             - **Auto Cleanup:** *True*
+    
+    1. Add the ADFS application id that you created in a previous step with the Create-ADFSServerApplicationForEdgeScaleUnits.ps1 to the Azure Active Directory applications table in your scale unit. You can carry the action manually through the UI or through the database with the following script:
 
-## <a name="set-up-deploy"></a>Set up an Azure Keyvault and an Azure Active Directory Application to enable communication between scale units
+    ```sql
+    DECLARE @ALMOrchestratorId NVARCHAR(76) = '<Replace with the ADFS Application ID created in a previous step>';
 
-1. Once your environment is deployed you need to create an additional Azure Active Directory application, create a client secret and save the information to an Azure KeyVault. Additionally, the AAD application that was created must be granted access to retrieve the secrets stored in the Azure KeyVault. For convenience we have created a script that will carry out all the actions automatically:
+    IF NOT EXISTS (SELECT TOP 1 1 FROM SysAADClientTable WHERE AADClientId = @ALMOrchestratorId)
+    BEGIN
+        INSERT INTO SysAADClientTable (AADClientId, UserId, Name, ModifiedBy, CreatedBy)
+        VALUES (@ALMOrchestratorId, 'ScaleUnitManagement', 'Scale Unit Management', 'Admin', 'Admin');
+    END
+    ```
+
+## <a name="set-up-keyvault"></a>Set up an Azure Keyvault and an Azure Active Directory Application to enable communication between scale units
+
+1. Once your environment is deployed you need to create an additional Azure Active Directory application to enable trusted communication between your hub and scale unit.
 
     ```powershell
-    .\Create-AADAppSecrets.ps1 -TenantId '<Id of the tenant where your cloud hub is deployed>' `
-                               -SubscriptionName '<Any subscription within your tenant>' `
-                               -ResourceGroupName '<Any resource group within your subscription>' `
-                               -KeyVaultName '<Any keyvault within your resourcegroup>' `
-                               -Location '<Any azure location where Azure Keyvault is available>' `
-                               -SpokeToHubCommunicationApplicationDisplayName '<Whichever name you want the AAD app to have>' `
-                               -SumCommunicationApplicationDisplayName '<The name of the AAD app that was created previously>' `
-                               -SpokeEnvironmentId '<The LCS environment id of your deployed scale unit>' `
+    .\Create-SpokeToHubAADApplication.ps1 -ConfigurationFilePath '<Path to the ConfigTemplate.xml file>' `
+                                          -TenantId '<Id of the tenant where your cloud hub is deployed>' `
+                                          -ApplicationDisplayName '<Whichever name you want the AAD app to have>'
+    ```
+
+1. After creating the application, it is necessary to create a client secret and save the information to an Azure KeyVault. Additionally, the AAD application that was created must be granted access to retrieve the secrets stored in the Azure KeyVault. For convenience we have created a script that will carry out all the actions automatically:
+
+    ```powershell                                      
+    .\Create-SpokeToHubAADAppSecrets.ps1 -ConfigurationFilePath '<Path to the ConfigTemplate.xml file>' `
+                                         -TenantId '<Id of the tenant where your cloud hub is deployed>' `
+                                         -SubscriptionName '<Any subscription within your tenant>' `
+                                         -ResourceGroupName '<Any resource group within your subscription>' `
+                                         -KeyVaultName '<Any keyvault within your resourcegroup>' `
+                                         -Location '<Any azure location where Azure Keyvault is available>' `
+                                         -LCSEnvironmentId '<The LCS environment id of your deployed scale unit>' `
     ```
 
     > [!NOTE]
     > If no KeyVault with the specified KeyVaultName exists, the scripts will automatically create one.
+
+1. Add the AAD application id that you just created with the Create-SpokeToHubAADApplication.ps1 to the Azure Active Directory applications table in your hub. You can carry out the action manually through the UI.
 
 ## <a name="upload-packages"></a>Upload target packages into LBD project assets in LCS
 
