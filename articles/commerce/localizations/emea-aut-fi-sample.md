@@ -5,7 +5,7 @@
 title: Fiscal registration service integration sample for Austria
 description: This topic provides an overview of the fiscal integration sample for Austria.
 author: josaw
-ms.date: 10/28/2021
+ms.date: 11/01/2021
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -270,43 +270,25 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 Follow these steps to set up a development environment so that you can test and extend the sample.
 
-The CRT extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **Efr.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
+1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more details, see [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Open the EFR solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\EFR.sln**, and build it.
+1. Install Commerce runtime extensions:
+    - Find the CRT extension installer:
+        - **Commerce Scale Unit:** In the **Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.EFR.Installer** installer.
+        - **Local CRT on Modern POS:** In the **Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** folder, find the **ModernPOS.EFR.Installer** installer.
+    - Start the CRT extension installer from command line as follows:
+        - **Commerce Scale Unit:**
+        ```Console
+        ScaleUnit.EFR.Installer.exe install --verbosity 0
+        ```
+        - **Local CRT on Modern POS:**
+        ```Console
+        ModernPOS.EFR.Installer.exe install --verbosity 0
+        ```
 
-##### Install Commerce runtime extensions
-
-1. Find the **EFR** solution and build it.
-
-2. Build the CRT extension installer:
-
-    - **Commerce Scale Unit:** In the **Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** folder, find the **ScaleUnit.EFR.Installer** installer.
-    - **Local CRT on Modern POS:** In the **Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** folder, find the **ModernPOS.EFR.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
-    - **Commerce Scale Unit:**
-
-    ```Console
-    ScaleUnit.EFR.Installer.exe install --verbosity 0
-    ```
-
-    - **Local CRT on Modern POS:**
-
-    ```Console
-    ModernPOS.EFR.Installer.exe install --verbosity 0
-    ```
-
-##### Install Hardware station extensions
-
-The Hardware station extension components are included in the EFR solution from Fiscal Integration folder. To complete the following procedures, open the EFR solution, **EFR.sln**, under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr**.
-
-###### EFRSample component
-
-1. Find the **EFR** solution and build it.
-
-2. In the **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EFR.Installer** installer.
-
-3. Start the extension installer from command line as follows:
-
+1. Install Hardware station extensions:
+    - In the **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder, find the **HardwareStation.EFR.Installer** installer.
+    - Start the extension installer from command line as follows:
     ```Console
     HardwareStation.EFR.Installer.exe install --verbosity 0
     ```
