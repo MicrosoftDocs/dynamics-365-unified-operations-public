@@ -47,7 +47,6 @@ The **Enable extended support of Financial reason code** feature is available in
 
 | Finance version | Build                                                     |
 |-----------------|-----------------------------------------------------------|
-| 10.0.24         | All builds that are relevant to version 10.0.24 and later |
 | 10.0.23         | 10.0.1037.36                                              |
 | 10.0.22         | 10.0.995.75                                               |
 | 10.0.21         | 10.0.960.114                                              |
