@@ -184,9 +184,12 @@ Form: **SalesTable**
 ### Frequently asked questions
 
 This section will have answers to frequently asked questions that are related to this guideline/pattern.
+ 
+-    **Why is the Header view compulsory?**
+    -    The Header view is compulsory for the Details Transaction pattern. Initially, the Header view might not have more than the Line view header summary information. However, over time, it will be extended by application teams, internationalization teams, partners, and customers. It's important that the Header view be available for future modifications. In addition, a consistent and dependable form structure has benefits for usability and upgrade reasons.
 
--   **Why is the Header view compulsory?**
-    -   The Header view is compulsory for the Details Transaction pattern. Initially, the Header view might not have more than the Line view header summary information. However, over time, it will be extended by application teams, internationalization teams, partners, and customers. It's important that the Header view be available for future modifications. In addition, a consistent and dependable form structure has benefits for usability and upgrade reasons.
+-  **Why are the Header/Lines buttons no longer to the right of the record title at the top of the page? 
+    -     The Header/Lines buttons in the header portion of the page were radio buttons restyled to mimic tabs. For improved accessibility on these pages, the **Removal of header/lines proxy buttons** feature removes these radio buttons and instead surfaces the native tab controls that are under the record title to allow you to switch between header lines. Before enabling this feature, you should evaluate the impact of this feature on test assets and task recordings.
 
 ### Open issues
 
