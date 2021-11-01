@@ -2353,6 +2353,8 @@
         href: production-control/unified-job-ids.md
       - name: Invoke process automation flows to create quality orders
         href: production-control/process-automation-quality-orders.md
+      - name: Integrate with third-party manufacturing execution systems
+        href: production-control/mes-integration.md
       - name: Discrete manufacturing
         items:
         - name: Maintain production master data
