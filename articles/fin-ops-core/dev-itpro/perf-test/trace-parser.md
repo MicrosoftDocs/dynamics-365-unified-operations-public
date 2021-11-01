@@ -4,23 +4,12 @@ description: This topic explains how you can use the Trace parser to consume tra
 author: RobinARH
 ms.date: 10/19/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: rhaertle
-# ms.tgt_pltfrm: 
-ms.custom: 13441
-ms.assetid: eb0fbbaf-07d4-4a02-85e8-0d4f7920a0b9
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Diagnose issues and analyze performance by using Trace parser
