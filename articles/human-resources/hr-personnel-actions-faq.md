@@ -35,16 +35,16 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 This topic contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks. 
 
 Examples of tasks that might require personnel actions are:
- - when you create new positions 
- - modify existing position values 
- - hire new workers 
- - transfer workers 
- - change worker compensation 
- - change position assignments 
- - terminate workers
+ - When you create new positions. 
+ - Modify existing position values. 
+ - Hire new workers. 
+ - Transfer workers. 
+ - Change worker compensation. 
+ - Change position assignments. 
+ - Terminate workers.
 
-**Note:**
-Personnel actions are available only if the **Enable worker actions** and **Enable position actions** fields have been set to **Yes**, in the **Personnel actions** tab on the **Human resources shared parameters** page. 
+> [!NOTE]
+> Personnel actions are available only if the **Enable worker actions** and **Enable position actions** fields have been set to **Yes**, in the **Personnel actions** tab on the **Human resources shared parameters** page. 
 
 ## How can I tell if my organization requires personnel actions?
 Personnel actions are required by your organization if you are asked to select a personnel action when you create new positions, change existing positions, hire new workers, transfer workers, change worker compensation, change position assignments, terminate workers, or enter leave for workers. 
