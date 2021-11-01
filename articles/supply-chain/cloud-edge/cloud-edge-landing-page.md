@@ -28,8 +28,8 @@ Companies that work with manufacturing and distribution must be able to run key 
 
 A distributed hybrid topology introduces the concept of *scale units*, which enable distribution of shop floor and warehouse execution workloads among different environments. This functionality can help improve performance, prevent service interruptions, and maximize uptime. Scale units are provided through the following add-ins for your Supply Chain Management subscription:
 
-- Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available April 2021*)
-- Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management (*available soon*)
+- Cloud Scale Unit Add-in for Dynamics 365 Supply Chain Management
+- Edge Scale Unit Add-in for Dynamics 365 Supply Chain Management
 
 Workload capabilities are being released on a continuous basis through incremental enhancements.
 
@@ -47,21 +47,12 @@ You can configure your hub environment and cloud scale units for selected worklo
 
 ### Dedicated warehouse management workload capabilities in a scale unit
 
-The warehouse management workload is the first distributed workload for scale units that has been released for general availability.
-
-For warehouse management, scale units deliver the following capabilities:
-
-- The system can process selected wave methods for sales orders and demand replenishment.
-- Warehouse workers can run sales and demand replenishment warehouse work by using the Warehouse Management mobile app.
-- Warehouse workers can inquire into on-hand inventory by using the Warehouse Management mobile app.
-- Warehouse workers can create and run inventory movements by using the Warehouse Management mobile app.
-- Warehouse workers can register purchase orders and do putaway by using the Warehouse Management mobile app.
-
+The warehouse management workload enables you to to run warehouse management processes on an isolated deployment.
 For more information, see [Warehouse management workloads for cloud and edge scale units](cloud-edge-workload-warehousing.md).
 
 ### Dedicated manufacturing execution workload capabilities in a scale unit
 
-The first release of the manufacturing workload is currently in preview and delivers the following capabilities:
+The manufacturing workload delivers the following capabilities:
 
 - Machine operators and shop floor supervisors can access the operational production plan.
 - Machine operators can keep the plan up to date by running discrete and process manufacturing jobs.
