@@ -4,7 +4,7 @@
 title: Enable cash flow forecasting
 description: This topic explains how to turn on the Cash flow forecasts feature in Finance Insights.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to turn on the Cash flow forecasts feature in Finance Insights.
+This topic explains how to turn on the Cash flow forecasts feature in Finance insights.
 
 > [!NOTE]
 > To use payment predictions in the cash flow, you must set up the Customer payment predictions feature as described in [Enable customer payment predictions](enable-cust-paymnt-prediction.md).
@@ -38,17 +38,17 @@ This topic explains how to turn on the Cash flow forecasts feature in Finance In
 1. Open the **Feature management** workspace, and follow these steps:
 
     1. Select **Check for updates**.
-    2. Go to **All** tab.
+    2. Go to the **All** tab.
     3. Search for **Cash flow forecasts**. If you do not find the feature, try searching for **(Preview) Cash flow forecasts**. 
     4. Turn on the feature.
 
-3. Go to **Cash and bank management \> Cash flow forecast setup**, and add the liquidity accounts that should be included in the forecasts. Also setup **Liquidity account for payments** on **Accounts receivable** and **Accounts payable** tabs. Make sure to recalculate cash flow forecast.
+3. Go to **Cash and bank management \> Cash flow forecast setup**, and add the liquidity accounts that should be included in the forecasts. Also set up the **Liquidity account for payments** on the **Accounts receivable** and **Accounts payable** tabs. Be sure to recalculate cash flow forecast.
 
     > [!NOTE]
-    > If liquidity accounts aren't set up, the cash flow can't be generated.
-    > For more information about the setup, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
+    > If liquidity accounts aren't set up, the cash flow can't be generated.<br>
+    > For more information about setting up cash flow forecasts, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
 
-4. Go to **Cash and bank management \> Setup \> Finance Insights (preview) \> Cash flow forecasts (preview)**, and follow these steps:
+4. Go to **Cash and bank management \> Setup \> Finance Insights (preview) \> Cash flow forecasts (preview)**, and complete the following steps:
 
     1. On the **Cash flow forecast** tab, select **Enable feature**.
     2. Select **Create prediction model**.
