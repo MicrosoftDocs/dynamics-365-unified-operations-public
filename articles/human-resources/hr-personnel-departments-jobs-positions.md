@@ -157,12 +157,4 @@ For some records, you can specify future changes to the record. The following in
 </tbody>
 </table>
 
-You can modify the information mentioned in the previous table for a position or a job and specify a date when the modifications to the position or job should take effect. For example, a position can only be assigned to one worker, but Sanjay Patel, who is assigned to the position Accountant-A, will be leaving in two weeks. Joe Healy will replace Sanjay Patel when Sanjay leaves. Even though Sanjay is still assigned to his position, you can assign Joe Healy to the same position so that the assignment is effective only after Sanjay’s last day.
-
-
-
-
-
-
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
