@@ -2,7 +2,7 @@
 # required metadata
 
 title: Organize your workforce by using departments, jobs, and positions
-description: This topic describes conceptual information about departments, jobs, and positions are that organizational elements and are maintained within Human resources. 
+description: This topic describes conceptual information about departments, jobs, and positions, which are organizational elements that are maintained within Human resources. 
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
