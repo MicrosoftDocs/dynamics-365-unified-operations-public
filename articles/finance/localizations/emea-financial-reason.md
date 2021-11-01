@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial reason feature extension
-description: This topic provides information about the extension to the **Financial reason** feature.
+description: This topic provides information about the extension to the Financial reason feature.
 author: liza-golub
 ms.date: 11/01/2021
 ms.topic: article
@@ -29,43 +29,44 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the **Financial reason** feature extension that can be used globally in legal entities with a primary address in any country.
+This topic provides information about the **Enable extended support of Financial reason code** feature that extends the **Financial reason** feature. This feature extension can be used globally in legal entities that have a primary address in any country or region.
 
-Generally, the **Financial reason** feature allows you to set up a pre-defined list of financial reasons to use during document registration and posting in the system. 
+In general, the **Financial reason** feature lets you set up a predefined list of financial reasons that can be used during document registration and posting in the system.
 
-1. Go to **Organization administration** > **Setup** > **Financial reasons**.
-2. On the Action Pane, select **New** to create a new finical reason.
-3. In the **Reason code** column, specify a code for the financial reason to use when registering and posting documents.
-4. In the **Default comment** column, specify a comment for the financial reason that will be used as default value in **Reason comment** field. This comment should correspond to the reason code that is selected when the documents are registrated and posted.
-5. In the **Ledger**, **Asset**, **Bank**, **Customer**, and **Vendor** columns, select the check box for those modules of the system where the selected reason code must be available.
+1. Go to **Organization administration** \> **Setup** \> **Financial reasons**.
+2. On the Action Pane, select **New** to create a financial reason.
+3. In the **Reason code** column, specify a code to use for the financial reason when documents are registered and posted.
+4. In the **Default comment** column, enter the comment that should be used as the default value in the **Reason comment** field for the financial reason. This comment should correspond to the reason code that is selected when documents are registered and posted.
+5. In the **Ledger**, **Asset**, **Bank**, **Customer**, and **Vendor** columns, select the checkbox for each system module where the selected reason code must be available.
 
-The feature, **Enable extended support of Financial reason code** enables the **Reason code** and **Reason comment** fields in an extended list of documents in Dynamics 365 Finance and stores their values in tax transactions that correspond to the posted document.
+When the feature extension is enabled, it makes the **Reason code** and **Reason comment** fields available in an extended list of documents in Microsoft Dynamics 365 Finance. It also stores the values of those fields in tax transactions that correspond to the posted document.
 
-## Activate the Financial reason feature
+## Enable the feature
 
-The **Enable extended support of Financial reason code** feature is available in the **Feature management** workspace of following or later versions of Finance.
+The **Enable extended support of Financial reason code** feature is available in the **Feature management** workspace in the following or later versions of Finance.
 
-| **Finance version** | **Build**                                         |
-|---------------------|---------------------------------------------------|
-| 10.0.24             | All builds relevant to 10.0.24 version and higher |
-| 10.0.23             | 10.0.1037.36                                      |
-| 10.0.22             | 10.0.995.75                                       |
-| 10.0.21             | 10.0.960.114                                      |
+| Finance version | Build                                                     |
+|-----------------|-----------------------------------------------------------|
+| 10.0.24         | All builds that are relevant to version 10.0.24 and later |
+| 10.0.23         | 10.0.1037.36                                              |
+| 10.0.22         | 10.0.995.75                                               |
+| 10.0.21         | 10.0.960.114                                              |
 
-1.	Go to **Workspaces** > **Feature management**, and expand the **All** FastTab.
-2.	Search for the **Enable extended support of Financial reason code** feature and select it.
-3.	Select **Enable now** to enable the feature in your Finance environment.
+To enable the feature, follow these steps.
 
-After the feature is enabled, the **Enable extended support of Financial reason code** feature is available in all legal entities of your Finance environment in the following documents:
+1. Go to **Workspaces** \> **Feature management**.
+2. On the **All** FastTab, search for the **Enable extended support of Financial reason code** feature, and select it.
+3. Select **Enable now** to enable the feature in your Finance environment.
 
--	**General ledger** > **Journal entries** > **General journal**
--	**Accounts payable** > **Invoices** > **Invoice journal**
--	**Accounts payable** > **Invoices** > **Invoices register**
--	**Accounts payable** > **Invoices** > **Invoices approval**
--	**Accounts payable** > **Purchase orders** > **All purchase orders**
--	**Account receivable** > **Orders** > **All sales orders**
--	**Account receivable** > **Invoices** > **All free text invoices**
--	**Project management and accounting** > **Project invoices > Project invoice proposal**
+After the feature is enabled, it's available in the following documents in all legal entities of your Finance environment:
 
-When the **Enable extended support of Financial reason code** feature is enabled in Finance, the values specified enable the **Reason code** and **Reason comment** fields of the documents listed above are stored in the **Tax transactions** table as a result of tax posting.
+- General journal (**General ledger** \> **Journal entries** \> **General journal**)
+- Invoice journal (**Accounts payable** \> **Invoices** \> **Invoice journal**)
+- Invoice register (**Accounts payable** \> **Invoices** \> **Invoices register**)
+- Invoices approval journal (**Accounts payable** \> **Invoices** \> **Invoices approval**)
+- Purchase order (**Accounts payable** \> **Purchase orders** \> **All purchase orders**)
+- Sales order (**Account receivable** \> **Orders** \> **All sales orders**)
+- Free text invoice (**Account receivable** \> **Invoices** \> **All free text invoices**)
+- Project invoice proposal (**Project management and accounting** \> **Project invoices \> Project invoice proposal**)
 
+Then, when tax posting occurs, the values of the **Reason code** and **Reason comment** fields of the preceding documents are stored in the **Tax transactions** table.
