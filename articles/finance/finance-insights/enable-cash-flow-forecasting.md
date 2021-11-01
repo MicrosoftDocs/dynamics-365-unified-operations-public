@@ -38,17 +38,17 @@ This topic explains how to turn on the Cash flow forecasts feature in Finance in
 1. Open the **Feature management** workspace, and follow these steps:
 
     1. Select **Check for updates**.
-    2. Go to the **All** tab.
-    3. Search for **Cash flow forecasts**. If you do not find the feature, try searching for **(Preview) Cash flow forecasts**. 
-    4. Turn on the feature.
+    2. On the **All** tab, search for **Cash flow forecasts**. If you don't find that feature, search for **(Preview) Cash flow forecasts**. 
+    3. Turn on the feature.
 
-3. Go to **Cash and bank management \> Cash flow forecast setup**, and add the liquidity accounts that should be included in the forecasts. Also set up the **Liquidity account for payments** on the **Accounts receivable** and **Accounts payable** tabs. Be sure to recalculate cash flow forecast.
+2. Go to **Cash and bank management \> Cash flow forecast setup**, and add the liquidity accounts that should be included in the forecasts. Also set up the liquidity account for payments on the **Accounts receivable** and **Accounts payable** tabs. Be sure to recalculate the cash flow forecast.
 
     > [!NOTE]
-    > If liquidity accounts aren't set up, the cash flow can't be generated.<br>
-    > For more information about setting up cash flow forecasts, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
+    > If liquidity accounts aren't set up, the cash flow can't be generated.
+    >
+    > For more information about how to set up cash flow forecasts, see [Cash flow forecasting](../cash-bank-management/cash-flow-forecasting.md).
 
-4. Go to **Cash and bank management \> Setup \> Finance Insights (preview) \> Cash flow forecasts (preview)**, and complete the following steps:
+3. Go to **Cash and bank management \> Setup \> Finance Insights (preview) \> Cash flow forecasts (preview)**, and follow these steps:
 
     1. On the **Cash flow forecast** tab, select **Enable feature**.
     2. Select **Create prediction model**.
