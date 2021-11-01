@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable budget proposal
+title: Enable Budget proposal
 description: This topic explains how to turn on the Budget proposal feature in Finance Insights.
 author: ShivamPandey-msft
 ms.date: 11/08/2021
@@ -26,18 +26,17 @@ ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
 
 ---
-# Enable budget proposal
+# Enable Budget proposal
 
 [!include [banner](../includes/banner.md)]
 
 This topic explains how to turn on the Budget proposal feature in Finance Insights.
 
-1. Open the **Feature management** workspace, and complete the following steps:
+1. Open the **Feature management** workspace, and follow these steps:
 
     1. Select **Check for updates**.
-    2. Go to the **All** tab.
-    3. Search for **Budget proposal**. If you do not find the feature, try searching for **(Preview) Budget proposal**. 
-    4. Turn on the feature.
+    2. On the **All** tab, search for **Budget proposal**. If you don't find that feature, search for **(Preview) Budget proposal**. 
+    3. Turn on the feature.
 
 2. Go to **Budgeting \> Setup \> Basic Budgeting \> Budget proposal**, and select **Enable feature**.
 
