@@ -1673,6 +1673,8 @@
           href: master-planning/planning-optimization/infinite-capacity-planning.md
         - name: Scheduling with resource selection based on capability
           href: master-planning/planning-optimization/capability-based-scheduling.md
+        - name: Priority-based planning
+          href: master-planning/planning-optimization/priority-based-planning.md
         - name: Inventory marking with Planning Optimization
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
@@ -2351,6 +2353,8 @@
         href: production-control/unified-job-ids.md
       - name: Invoke process automation flows to create quality orders
         href: production-control/process-automation-quality-orders.md
+      - name: Integrate with third-party manufacturing execution systems
+        href: production-control/mes-integration.md
       - name: Discrete manufacturing
         items:
         - name: Maintain production master data
