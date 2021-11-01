@@ -191,6 +191,9 @@ This section will have answers to frequently asked questions that are related to
 - **Why are the Header/Lines buttons no longer to the right of the record title at the top of the page?** 
     - The Header/Lines buttons in the header portion of the page were radio buttons restyled to mimic tabs. For improved accessibility on these pages, the **Removal of header/lines proxy buttons** feature removes these radio buttons and instead surfaces the native tab controls that are under the record title to allow you to switch between header lines. Before enabling this feature, you should evaluate the impact of this feature on test assets and task recordings.
 
+        > [!NOTE]
+        > This feature is included in the platform updates for version 10.0.23 of Finance and Operations apps.
+
 ### Open issues
 
 None currently.
