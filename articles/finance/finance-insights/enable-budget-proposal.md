@@ -35,7 +35,7 @@ This topic explains how to turn on the Budget proposal feature in Finance Insigh
 1. Open the **Feature management** workspace, and complete the following steps:
 
     1. Select **Check for updates**.
-    2. Go to **All** tab.
+    2. Go to the **All** tab.
     3. Search for **Budget proposal**. If you do not find the feature, try searching for **(Preview) Budget proposal**. 
     4. Turn on the feature.
 
