@@ -187,7 +187,7 @@ Microsoft will review your request and inform you about the next steps by sendin
 
 After the onboarding is completed, you can use the port to configure scale units and workloads.
 
-### <a name="scale-unit-manager-portal"></a>Manage cloud scale units and workloads by using the Scale Unit Manager portal
+### <a name="scale-unit-manager-portal"></a>Manage scale units and workloads by using the Scale Unit Manager portal
 
 Go to the [Scale Unit Manager portal](https://aka.ms/SCMSUM), and sign in by using your tenant account. On the **Configure scale units** page, you can add a hub environment if it isn't already listed. You can then select the hub that you want to configure with scale units and workloads.
 
