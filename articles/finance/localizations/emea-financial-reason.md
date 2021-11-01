@@ -52,9 +52,9 @@ The **Enable extended support of Financial reason code** feature is available in
 | 10.0.22             |  |
 | 10.0.21             | 10.0.960.114                                      |
 
-1.	Go to Workspaces > Feature management, select All FastTab.
-2.	Search the Enable extended support of Financial reason code feature and select it.
-3.	Click Enable now button on the right bottom of the page to enable the feature in your Finance.
+1.	Go to **Workspaces** > **Feature management**, select **All** FastTab.
+2.	Search the **Enable extended support of Financial reason code** feature and select it.
+3.	Click **Enable now** button on the right bottom of the page to enable the feature in your Finance.
 
 Once enabled,  **Enable extended support of Financial reason code** feature becomes available in all legal entities of your Finance in the following documents:
 
