@@ -103,7 +103,7 @@ A new tab on the **Cash flow forecasting setup** page lets you control which fin
 On the **Dimensions** tab, choose from the list of dimensions to use for filtering, and use the arrow keys to move them to the right-hand column. Only two dimensions can be selected for filtering cash flow forecast data. 
 
 ### Setting up External source
-External data can be entered or imported into cash flow forecasts. Before external data is entered or imported, external sources must be setup. On the **External source** tab setup **External cash flow categories**. A category can be **Outgoing** or **Incoming**. The posting type of **Liquidity** should be selected. In the **Legal entity settings** grid, select the legal entities and the corresponding main accounts the **External cash flow categories** applies to.
+External data can be entered or imported into cash flow forecasts. Before external data is entered or imported, external sources must be set up. On the **External source** tab set up **External cash flow categories**. A category can be **Outgoing** or **Incoming**. The posting type of **Liquidity** should be selected. In the **Legal entity settings** grid, select the legal entities and the corresponding main accounts that the **External cash flow categories** apply to.
 
 ### Project management and accounting
 
