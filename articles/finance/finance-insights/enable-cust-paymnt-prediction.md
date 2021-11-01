@@ -38,19 +38,17 @@ This topic explains how to turn on and configure the Customer payment prediction
 
 1. Turn on the Customer payment predictions feature:
 
-    1. Open the **Feature management** workspace, and follow these steps:
+    1. Open the **Feature management** workspace.
     2. Select **Check for updates**.
-    3. Go to **All** tab.
-    4. Search for **Customer payment predictions**. If you do not find the feature, try searching for **(Preview) Customer payment predictions**. 
-    5. Turn on the feature.
+    3. On the **All** tab, search for **Customer payment predictions**. If you don't find that feature, search for **(Preview) Customer payment predictions**. 
+    4. Turn on the feature.
 
     The Customer payment predictions feature is now turned on and ready to be configured.
 
 2. Configure the Customer payment insights feature:
 
     1. Go to **Credit and collections \> Setup \> Finance insights \> Customer payment predictions**.
-
-    2. On the **Finance insights configuration** page, on the **Customer payment predictions** tab, select the **View the data fields used in the prediction model** link to open the **Data fields for prediction model** page. There, you can view the default list of fields that are used to create the artificial intelligence (AI) prediction model for customer payment predictions.
+    2. On the **Finance insights configuration** page, on the **Customer payment predictions** tab, select **View the data fields used in the prediction model** to open the **Data fields for prediction model** page. There, you can view the default list of fields that are used to create the artificial intelligence (AI) prediction model for customer payment predictions.
 
         To use the default list of fields to create the prediction model, close the **Data fields for prediction model** page, and then, on the **Finance insights configuration** page, set the **Enable feature** option to **Yes**.
 
