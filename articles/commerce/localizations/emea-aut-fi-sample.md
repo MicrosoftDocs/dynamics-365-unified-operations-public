@@ -295,6 +295,8 @@ Follow these steps to set up a development environment so that you can test and 
 
 #### Production environment
 
+Follow the step described in [Set up build pipeline for fiscal integration sample](fiscal-integration-sample-build-pipeline.md) to generate and release the Cloud Scale Unit and self-service deployable packages for the fiscal integration sample. The template YAML file **EFR build-pipeline.yml** can be found in the **Pipeline\\YAML_Files** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository.
+
 The procedure for development environment enables the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
 ##### Commerce Cloud Scale Unit (CSU) package
