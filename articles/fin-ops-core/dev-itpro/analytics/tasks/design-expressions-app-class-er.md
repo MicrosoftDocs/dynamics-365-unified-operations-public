@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This guide provides information about how to reuse the existing application logic in Electronic reporting (ER) configurations by calling required methods of application classes in ER expressions. Values of arguments for calling classes can be defined dynamically at run-time: for example, based on information in the parsing document to ensure its correctness. In this guide, you will create the required ER configurations for the sample company, Litware, Inc. This procedure is created for users with the assigned role of System administrator or Electronic reporting developer. 
 
-These steps can be completed using any data set. You must also download and save the following file locally: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
+These steps can be completed using any data set. You must also download and save the file, [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
 
 To complete these steps, you must first complete the steps in the procedure, "ER Create a configuration provider and mark it as active."
 
