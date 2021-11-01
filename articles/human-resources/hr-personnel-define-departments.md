@@ -38,7 +38,7 @@ Departments are operating units that represent a functional area of a business, 
 4. In the **Memo** field, type a value.
     * Example: Project billing  
 5. In the **Manager** field, enter or select a value.
-    * Example: Jodi Christiansen  
+    * Example: Ana Bowman  
 6. Click **Save**.
 7. Close the page.
 8. Go to **Human resources** > **Departments** > **Department hierarchy**.
