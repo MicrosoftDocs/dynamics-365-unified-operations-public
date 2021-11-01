@@ -54,15 +54,15 @@ There are three primary paths to get to the latest version of Finance and Operat
 *Scope: Complex*<br/>
 This path involves code refactoring to Extensions, and Data Upgrade in a DevTest, Sandbox, and eventually a Production environment. 
 
-> [!Note]
-> Note that this process is now deprecated.
+> [!NOTE]
+> This process is now deprecated.
 
 [Self-service upgrade to the latest version](../migration-upgrade/self-service-upgrade.md).
 
 ### Rebuild and update
 *Applicable starting version: Microsoft Dynamics 365 for Finance and Operations 8.0*<br/>
 *Scope: Moderate*<br/>
-This path involves removing Microsoft X++ hotfixes, and creating a merged update package.
+This path involves removing Microsoft X++ hotfixes and creating a merged update package.
 
 [Update environments from version 8.0 to 10.0.X](../migration-upgrade/appupdate-80-81.md).
 
