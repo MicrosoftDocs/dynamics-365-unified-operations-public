@@ -35,7 +35,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of 
 
 > [!IMPORTANT]
 > Copying production data during business hours or peak hours could have an impact on the production system. It's highly recommended to do the refresh database operation during off-peak hours and limit only one refresh operation at a time.
-
+>
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.
 
 ## Self-service database refresh
@@ -105,7 +105,7 @@ Here is the list of requirements and conditions of operation for a database refr
 
 ### The Restore operation fails if the sandbox customizations are incompatible with production data
 
-If a customization is added to the sandbox environment successfully, meaning that the customer's AOT deployable package successfully installs via LCS, that does not mean that it will still succeed with production data.  As an example, a customer could add a unique index on Vendor Name to the VendTable table.  This could install successfully if there are no duplicate Vendor Names in the sandbox environment.  However, as we bring in the production database as part of the Restore operation, it could fail if there are duplicates in that dataset that is inbound to the sandbox environment.  This is not supported and you will need to remove the customization before you can have a successful Restore operation.
+Even if a customization is successfully added to the sandbox environment (that is, the customer's AOT deployable package is successfully installed via LCS), it might not succeed for production data. For example, a customer adds a unique index on **Vendor Name** to the VendTable table. This customization can be successfully installed if there are no duplicate vendor names in the sandbox environment. However, when the production database is brought in as part of the Restore operation, installation might fail if there are duplicates in the dataset that is inbound to the sandbox environment. Duplicates in this dataset aren't supported. Therefore, you must remove the customization before you can have a successful Restore operation.
 
 ### Refresh is denied for environments that run Platform update 20 or earlier
 The database refresh process can't currently be completed if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
