@@ -2190,6 +2190,8 @@
             href: localizations/tasks/create-submit-vat-report.md
         - name: View transactions on settlement
           href: localizations/emea-transactions-settlement-form.md
+        - name: Financial reason
+          href: localizations/emea-financial-reason.md
       - name: Finland
         items:
         - name: Finland overview
