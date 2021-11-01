@@ -54,8 +54,8 @@ This topic explains how to update the local agent. The latest version of the loc
 
 ## What's new in local agent 3.0.0
 
-- Local agent 3.0.0 includes support for managing the lifecycle of Edge Scale Units through the Scale Unit Management portal. For more information see [Distributed Hybrid Topology](../../../supply-chain/cloud-edge/cloud-edge-landing-page.md)
-- Additionally, this release requires .NET Framework 4.8 to uptake the newest changes from LCS.
+- Local agent 3.0.0 includes support for managing the lifecycle of Edge Scale Units through the Scale Unit Management portal. For more information, see [Distributed Hybrid Topology](../../../supply-chain/cloud-edge/cloud-edge-landing-page.md).
+- This release requires the .NET Framework version 4.8 to uptake the newest changes from LCS.
 
 ## What's new in local agent 2.7.2
 
@@ -93,7 +93,7 @@ This topic explains how to update the local agent. The latest version of the loc
 
 ## What's new in local agent 2.4.0
 
-- Local agent 2.4.0 now requires .NET Framework 4.7.2 to uptake the newest changes from LCS. Be sure to run the latest Infrastructure Scripts available in LCS to meet the newest requirements.
+- Local agent 2.4.0 now requires the .NET Framework version 4.7.2 to uptake the newest changes from LCS. To meet the newest requirements, be sure to run the latest infrastructure scripts that are available in LCS.
 - This release also fixes an issue where the deployment of the AXService would fail in slower environments due to a hard-coded timeout.
 
 ## What's new in local agent 2.3.0
