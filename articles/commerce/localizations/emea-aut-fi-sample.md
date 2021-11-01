@@ -268,7 +268,7 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 #### Development environment
 
-Follow these steps to set up a development environment so that you can test and extend the sample.
+Follow these steps to set up a development environment so that you can test and extend the sample:
 
 1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. For more details, see [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Open the EFR solution at **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\EFR.sln**, and build it.
