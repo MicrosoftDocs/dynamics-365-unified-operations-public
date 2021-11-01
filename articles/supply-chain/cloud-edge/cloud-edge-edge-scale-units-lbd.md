@@ -51,7 +51,7 @@ The remaining sections of this topic provide more details about how to complete 
 
 This step creates a functional LBD environment. However, the environment doesn't necessarily have the same application and platform versions as the hub environment. Additionally, it's still missing the customizations, and it hasn't yet been enabled to work as a scale unit.
 
-1. Follow the instructions in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). You must use Supply Chain Management version 10.0.21 or later across hub and scale unit environments.
+1. Follow the instructions in [Setup and deploy on-premises environments (Platform update 41 and later)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). You must use Supply Chain Management version 10.0.21 or later across hub and scale unit environments. Additionally, you must use version 2.12.0 or later of the infrastructure scripts. 
 
     > [!IMPORTANT]
     > Read the rest of this section **before** you complete the steps in that topic.
@@ -201,7 +201,7 @@ This step creates a functional LBD environment. However, the environment doesn't
     > [!NOTE]
     > If no key vault that has the specified **KeyVaultName** value exists, the script automatically creates one.
 
-1. Add the Azure AD application ID that you just created (by using the Create-SpokeToHubAADApplication.ps1 script) to the Azure AD applications table in your hub. You can manually complete this step through the UI.
+1. Add the Azure AD application ID that you just created (when using the Create-SpokeToHubAADApplication.ps1 script) to the Azure AD applications table in your hub. You can manually complete this step through the UI.
 
 ## <a name="upload-packages"></a>Upload target packages into LBD project assets in LCS
 
