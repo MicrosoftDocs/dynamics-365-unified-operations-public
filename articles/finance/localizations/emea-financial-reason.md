@@ -49,7 +49,7 @@ The **Enable extended support of Financial reason code** feature is available in
 |---------------------|---------------------------------------------------|
 | 10.0.24             | All builds relevant to 10.0.24 version and higher |
 | 10.0.23             | 10.0.1037.36                                      |
-| 10.0.22             |  |
+| 10.0.22             | 10.0.995.75                                       |
 | 10.0.21             | 10.0.960.114                                      |
 
 1.	Go to **Workspaces** > **Feature management**, select **All** FastTab.
