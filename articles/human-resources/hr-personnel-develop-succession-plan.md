@@ -53,7 +53,7 @@ As your organization grows, you must begin succession planning. During successio
 21. In the list, select row 4.
 22. Select the **Optional** checkbox.
 23. In the **Importance** field, select an option.
-24. Expand the **Education** FastTtab to view or edit the education competencies to be included in the skill mapping.
+24. Expand the **Education** FastTab to view or edit the education competencies to be included in the skill mapping.
 25. Select **Execute**.
 26. Select **OK**.
 27. Select **Result**.
