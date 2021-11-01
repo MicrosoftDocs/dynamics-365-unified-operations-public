@@ -31,7 +31,7 @@ In this scenario, dual-write is enabled between Finance and Operations and Datav
 3. Delete the data from the key tables.
 
     - **DualWriteProjectConfiguration**
-    - **DualWriteFieldConfiguration**
+    - **DualWriteProjectFieldConfiguration**
     - **BusinessEventsDefinition**
 
 4. You may want to relink Finance and Operations UAT environment against Dataverse UAT environment. 
