@@ -33,7 +33,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to import a golden confi
 
 ## Prerequisites
 
-Importing a database is not applicable for LCS projects that are configured for an AX 2012 upgrade.  This setting can be found under **Project Onboarding** -> **Project overview** -> **Legacy system** field.  Import will be blocked if the value is configured to **AX2012 Upgrade**.
+Database import isn't applicable to LCS projects that are configured for a Dynamics AX 2012 upgrade. Therefore, import will be blocked if the **Legacy system** field at **Project Onboarding** \> **Project overview** is set to **AX2012 Upgrade**.
 
 ## Self-service import database
 
