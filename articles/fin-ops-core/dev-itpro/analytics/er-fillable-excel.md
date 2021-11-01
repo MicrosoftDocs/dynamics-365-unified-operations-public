@@ -124,26 +124,30 @@ On the **Mapping** tab of the ER Operation designer, you can configure the **Ena
 
 ### Resizing
 
-You can configure your Excel template to use a cell for presenting textual data. To make sure that the whole text of such cell is visible in a generated document, you can configure this cell to automatically wrap text and fit the height of a row that holds this cell when the wrapped text is not fully visible. For more information, see the [Wrap text](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e) section of the **Fix data that is cut off in cells** article. Even when you configure cells to wrap text and configure holding such cells rows to automatically adjust row height to fit a wrapped text size, you may be unable to use the **AutoFit** and **Wrap text** Excel features for merged cells and rows containing them because of a known [Excel limitation](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353). 
+You can configure your Excel template to use cells to present textual data. To ensure that the whole text in a cell is visible in a generated document, you can configure that cell to automatically wrap the text inside it. You can also configure the row that contains that cell to automatically adjust its height if the wrapped text isn't fully visible. For more information, see the "Wrap text in a cell" section in [Fix data that is cut off in cells](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e).
 
-Starting in Dynamics 365 Finance version 10.0.23, you can force ER to calculate in a generated document the height of every row that was configured to automatically fit the height of it to the content of nested cells whenever this row contains at least one merged cell which was configured to wrap cell's text. The calculated height is then used to resize the row to make sure that all of the cells in the row are visible in a generated document. To start using this functionality when you run any of ER formats that were configured to use Excel templates to generate outbound documents, complete the following steps.
+> [!NOTE]
+> Because of a known [Excel limitation](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), even if you configure cells to wrap text, and you configure the rows that contain those cells to automatically adjust their height to fit the wrapped text, you might not be able to use the **AutoFit** and **Wrap text** Excel features for merged cells and the rows that contain them. 
 
-1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
+As of Dynamics 365 Finance version 10.0.23, you can force ER to calculate, in a generated document, the height of every row that was configured to automatically fit its height to the content of nested cells whenever that row contains at least one merged cell that was configured to wrap the text inside it. The calculated height is then used to resize the row to ensure that all the cells in the row are visible in the generated document. To start to use this functionality when you run any ER formats that were configured to use Excel templates to generate outbound documents, follow these steps.
+
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. On the **Localization configurations** page, in the **Related links** section, select **Electronic reporting parameters**.
 3. On the **Electronic reporting parameters** page, on the **Runtime** tab, set the **Autofit row height** option to **Yes**.
 
-When you want to change this rule for a single ER format, update the draft version of this format doing the following:
+When you want to change this rule for a single ER format, update the draft version of that format by following these steps.
 
-1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. On the **Localization configurations** page, in the **Configurations** section, select **Reporting configurations**.
 3. On the **Configurations** page, in the configurations tree in the left pane, select an ER configuration that is designed to use an Excel template to generate outbound documents.
-4. On the **Versions** FastTab, select the configuration version with a status of **Draft**.
+4. On the **Versions** FastTab, select the configuration version that has a status of **Draft**.
 5. On the Action Pane, select **Designer**.
 6. On the **Format designer** page, in the format tree in the left pane, select the Excel component that is linked to an Excel template.
-7. On the **Format** tab, in the **Adjust row height** field, select the value to specify if ER will be forced at runtime to change the height of rows in an outbound document that is generated by the edited ER format:
-    1. Select **Default** to use the general option that is configured on the **Electronic reporting parameters** page in the **Autofit row height** field.
-    2. Select **Yes** to override the general option and change the row height at runtime.
-    3. Select **No** to override the general option and not change the row height at runtime.
+7. On the **Format** tab, in the **Adjust row height** field, select a value to specify whether ER should be forced, at runtime, to change the height of rows in an outbound document that is generated by the edited ER format:
+
+    - **Default** – Use the general setting that is configured in the **Autofit row height** field on the **Electronic reporting parameters** page.
+    - **Yes** – Override the general setting, and change the row height at runtime.
+    - **No** – Override the general setting, and don't change the row height at runtime.
 
 ## Cell component
 
