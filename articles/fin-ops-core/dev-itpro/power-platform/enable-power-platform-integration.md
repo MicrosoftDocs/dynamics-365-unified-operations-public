@@ -4,7 +4,7 @@
 title: Enable the Microsoft Power Platform integration
 description: This topic explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services (LCS) for Finance and Operations apps and Dataverse.
 author: jaredha
-ms.date: 10/18/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -115,31 +115,295 @@ If the Microsoft Power Platform integration isn't enabled during deployment of t
 >
 > If you require values that differ from the default values, contact Microsoft support. We can help link an existing Dataverse environment that you manually provision to the Finance and Operations apps environment. Eventually, fields for the language and currency will be added as setup options, so that you can manually set them or accept the default values.
 
-## Enable integration with an existing Microsoft Power Platform environment
+## Enable integration with an existing, selected Microsoft Power Platform environment
 
-When you enable the Microsoft Power Platform integration for a Finance and Operations apps environment in LCS, either during or after deployment, the process creates a new Dataverse-enabled Microsoft Power Platform environment and links the Finance and Operations apps environment to the new Microsoft Power Platform environment. However, you might want to enable integration by linking your Finance and Operations apps environment to an existing Microsoft Power Platform environment. The option to enable integration with an existing Microsoft Power Platform environment isn't currently available in LCS. Work with the Microsoft engineering team to enable integration with an existing Microsoft Power Platform environment.
+When you enable the Microsoft Power Platform integration for a Finance and Operations apps environment in LCS, either during or after deployment, the process creates a new Dataverse-enabled Microsoft Power Platform environment and links the Finance and Operations apps environment to the new Microsoft Power Platform environment. However, you might want to enable integration by linking your Finance and Operations apps environment to an existing Microsoft Power Platform environment rather than the environment created automatically during deployment. The option to select the Power Platform environment with which to enable the Power Platform integration isn't currently available in LCS.
 
-There are two scenarios for enabling integration with an existing Microsoft Power Platform environment:
+How the Power Platform integration is enabled for existing environments depends on the number of Power Platform environments that are linked to the Finance and Operations apps environment. Before you enable the Power Platform integration, there are multiple ways in which a Finance and Operations apps environment can be considered linked to a Power Platform environment:
+- **Deployment link**: During the deployment of a new Finance and Operations environment, even when the option to enable the Power Platform integration is not selected, a new Power Platform environment is created and linked to the Finance and Operations environment. You can see this link in the **Finance and Operations URL** field of the environment details for the new Power Platform environment in the Power Platform admin center.
+- **Dual-write**: The option is available in the dual-write configuration to create a link to a Dataverse environment in any Power Platform environment on the tenant.
+- **Virtual entities**: The virtual entity configuration in the Power Platform environment allows you to select the Finance and Operations environment.
 
-- A connected Microsoft Power Platform environment is already defined by dual-write configurations for the Finance and Operations apps environment.
-- No existing connected Microsoft Power Platform environment is identified for the Finance and Operations apps environment.
+These three configurations won't necessarily link the Finance and Operations apps environment to the same Power Platform environment. There are two scenarios for enabling the Power Platform integration with an existing Microsoft Power Platform environment:
+
+- **Single Power Platform environment**: In this scenario, the Finance and Operations apps environment has matched links to a single Power Platform environment. If dual-write and/or virtual entities have been configured for the Finance and Operations apps environment, they are configured to link to the same Power Platform environment created during deployment of the Finance and Operations apps environment. 
+- **Multiple Power Platform environments**: There is a linking mismatch among existing links between the Finance and Operations apps environment and more than one Power Platform environment.
 
 ### Finance and Operations apps connected to a single Microsoft Power Platform environment
 
-If the Finance and Operations apps environment has configured dual-write to connect the environment to a single Microsoft Power Platform environment, these environments are identified as a one-to-one linking. For these environments, when Finance and Operations apps version 10.0.22 (Platform update 46) is generally available, identified one-to-one linked environments will automatically be updated to enable the full Microsoft Power Platform integration for the Finance and Operations apps environment. 
+If the Finance and Operations apps environment is configured with links to a single Microsoft Power Platform environment, these environments are identified as a one-to-one linking. For these environments, in Finance and Operations apps version 10.0.22 (Platform update 46) a one-to-one linked environment will automatically be updated to enable the full Microsoft Power Platform integration for the Finance and Operations apps environment. 
 
-After general availability of that version, you can verify that the Microsoft Power Platform integration was automatically enabled by viewing the **Power Platform integration** section of the **Environment details** page for the Finance and Operations apps environment in LCS. If the integration was successfully enabled, the **Environment name** field will show the name of the integrated Microsoft Power Platform environment.
+In version 10.0.22, you can verify that the Microsoft Power Platform integration was automatically enabled by viewing the **Power Platform Integration** section of the **Environment details** page for the Finance and Operations apps environment in LCS. If the integration was successfully enabled, the **Environment name** field will show the name of the integrated Microsoft Power Platform environment, and the **Status** field is set to **Setup completed successfully**.
 
 > [!NOTE]
-> The Microsoft Power Platform integration will automatically be enabled for Finance and Operations apps environments that are already connected to a single Microsoft Power Platform environment and that already use business events functionality. However, these environments won't be able to use the new business events and data events functionality when the 10.0.22 (PU46) release becomes generally available. The business events endpoints that are already used in these environments will be migrated to the Dataverse platform when the 10.0.23 (PU47) release becomes generally available. At that point, the new business events and data events functionality will become available in the environments. Until then, business events will continue to work as they are currently configured in the environment.
+> The Microsoft Power Platform integration will automatically be enabled for Finance and Operations apps environments that are already connected to a single Microsoft Power Platform environment and that already use business events functionality. However, these environments won't be able to use the new business events and data events functionality starting in release 10.0.22. The business events endpoints that are already used in these environments will be migrated to the Dataverse platform in version 10.0.23. At that point, the new business events and data events functionality will become available in the environments. Until then, business events will continue to work as they are currently configured in the environment.
 > 
 > For more information about the new business events and data events functionality that will be delayed for these environments until the migration is completed, see [Finance and Operations business events in Dataverse](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-business-events-in-dataverse) and [Finance and Operations CUD events in Dataverse](/dynamics365-release-plan/2021wave2/finance-operations/finance-operations-crossapp-capabilities/new-scenarios-enabled-power-platform-convergence#finance-and-operations-cud-events-in-dataverse) in the 2021 release wave 2 plan. 
 
 ### Finance and Operations apps connected to multiple Microsoft Power Platform environments
 
-If a Finance and Operations apps environment has been manually linked to multiple Microsoft Power Platform environments, the process of enabling the Microsoft Power Platform integration for the environment can't be automated. For the process to be automated, the integration must be one-to-one between Finance and Operations apps and the Microsoft Power Platform environment. For example, if dual-write has been enabled for the Finance and Operations apps environment and multiple Microsoft Power Platform environments, there will be metadata that shows a link to both environments. 
+If a Finance and Operations apps environment has been manually linked to multiple Microsoft Power Platform environments, the process of enabling the Microsoft Power Platform integration for the environment can't be automated. The system can't automatically determine to which Power Platform environment the Finance and Operations apps environment should be linked for the Power Platform integration.
 
-To enable integration of a Finance and Operations apps environment with one of the existing Microsoft Power Platform environments, work with your FastTrack solution architect or Microsoft technical support to identify the environments that should be linked for the integration.
+There are two options to enable the Power Platform integration for a Finance and Operations environment that has links to multiple Power Platform environments:
+- Reconfigure your dual-write and/or virtual entity solutions to link the Finance and Operations apps environment to the Power Platform environment created at deployment. When all links are configured for the single Power Platform environment, you can enable the Power Platform integration in LCS following the steps outlined in the [Enable integration after environment deployment](enable-power-platform-integration.md#enable-after-deploy) section above. This is the preferred solution because it can be managed without Microsoft support.
+- To enable the Power Platform integration with a linked Power Platform environment other than the Power Platform environment created during deployment of the Finance and Operations environment, either work with your FastTrack solution architect or contact Microsoft Support to enable the Power Platform integration with a selected environment.
+
+For more information about dual-write configuration options, see [Linking mismatch](../data-entities/dual-write/lcs-setup.md#linking-mismatch).
+
+## Enable the integration for cloud-hosted development environments
+
+You can manually enable the Microsoft Power Platform integration for cloud-hosted development environments by completing the procedures in this section. For information about how to deploy cloud development environments, see [Deploy and access development environments](../dev-tools/access-instances.md).
+
+### Register an application in the Azure portal
+
+> [!IMPORTANT]
+> The Azure AD application must be created on the same tenant as the Finance and Operations app.
+
+1. Open the [Azure portal](https://portal.azure.com).
+2. Go to **Azure Active Directory \> App registrations**.
+3. Select **New registration**, and enter the following information:
+
+    - **Name** – Enter a unique name.
+    - **Account type** – Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**.
+    - **Redirect URI** – Leave this field blank.
+
+4. Select **Register**.
+5. Make a note of the **Application (client) ID** value. You will need this value later.
+6. Create a symmetric key for the application.
+
+    1. Select **Certificates & secrets** in the left navigation pane for the new app registration.
+    2. Select **New client secret**.
+    3. Enter a description and an expiration date.
+    4. Select **Save**.
+    5. Copy the key in the **Value** field that is created. You will need this key value later.
+ 
+### Add the Azure AD application as a Microsoft Power Platform user
+
+After the Azure AD application has been created in the Azure portal, it must be added as a Microsoft Power Platform application user. 
+
+1. In the Power Platform admin center, create the application user by following the steps in [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user).
+2. In the step where you select security roles to add for the application user, select **Finance and Operations Integration User**.
+
+### Grant app permissions in Finance and Operations apps
+
+Dataverse will use the Azure AD application that you created to call Finance and Operations apps. Therefore, the application must be trusted by Finance and Operations apps and associated with a user account that has the appropriate rights.
+
+1. In Finance and Operations apps, go to **System administration \> Setup \> Azure Active Directory applications**.
+2. Select **New** to add a row to the grid, and enter the following information:
+
+    - **Client ID** – Enter the **Application (client) ID** value of the Azure AD application that you created earlier.
+    - **Name** – Enter **Dataverse Integration** (or another name that you will recognize for the integration).
+    - **User ID** – Select **PowerPlatformApp**.
+
+> [!NOTE]
+> The **PowerPlatformApp** user that is available has the appropriate permissions for Dataverse integrations with Finance and Operations apps. However, if this user doesn't exist, or if you want to use a different application user account, you can create or use any other user that has the following roles: **Business events security role**, **Dataverse Virtual entity application**, **Dataverse Virtual entity anonymous user**, and **Dataverse Virtual entity authenticated user**.
+
+### Configure Finance and Operations apps to use the Azure AD application to connect to Dataverse 
+
+1. Sign in to the Finance and Operations environment through Remote Desktop Protocol (RDP).
+2. Copy the following Windows PowerShell script, and save it to the virtual machine (VM) for the Finance and Operations environment as a .ps1 file.
+
+    ```powershell
+    param(
+        [Parameter(Mandatory = $false)]
+        [switch]$Relaunched
+    )
+
+    $isRelaunched = $false
+    if ($PSBoundParameters.ContainsKey("Relaunched"))
+    {
+        $isRelaunched = $Relaunched.IsPresent
+    }
+
+    if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))
+    {
+        # Relaunch as an elevated process:
+        Start-Process powershell.exe "-File", ('"{0}"' -f $MyInvocation.MyCommand.Path), "-Relaunched" -Verb RunAs
+        exit
+    }
+
+    $aosWebsiteName = "AOSService"
+
+    function Get-AosWebSitePhysicalPath()
+    {
+        if (Get-Service W3SVC | Where-Object status -ne 'Running')
+        {
+            #IIS service is not running, starting IIS Service.
+            Start-Service W3SVC
+        }
+
+        $webSitePhysicalPath = (Get-Website | Where-Object { $_.Name -eq $aosWebsiteName }).PhysicalPath
+
+        return $webSitePhysicalPath
+    }
+
+    function Set-WebConfigValue($Key, [string]$Value)
+    {
+        $webroot = Get-AosWebSitePhysicalPath
+        $webConfigPath = Join-Path $webroot "web.config"
+        if (-not (Test-Path $webConfigPath))
+        {
+            Throw "Unable to find web.config file at '$($webConfigPath)'..."
+        }
+
+        [xml]$webConfigDocument = Get-Content $webConfigPath -ErrorAction stop
+        $appSettingNode = $webConfigDocument.SelectSingleNode("/configuration/appSettings/add[@key='$($Key)']")
+        if ($null -ne $appSettingNode)
+        {
+            Write-Host "Updating key '$($Key)' to value '$($Value)'..."
+            $appSettingNode.Value = [string]$Value
+        }
+        else
+        {
+            Write-Host "Inserting new key '$($Key)' with value '$($Value)'..."
+            $ns = New-Object System.Xml.XmlNamespaceManager($webConfigDocument.NameTable)
+            $ns.AddNamespace("ns", $webConfigDocument.DocumentElement.NamespaceURI)
+            $addElement = $webConfigDocument.CreateElement("add")
+            $addElement.SetAttribute("key", $Key)
+            $addElement.SetAttribute("value", $Value)
+            $appSettings = $webConfigDocument.SelectSingleNode("//ns:appSettings", $ns)
+            $appSettings.AppendChild($addElement) | Out-Null
+        }
+
+        $webConfigDocument.Save($webConfigPath)
+        Write-Host
+    }
+
+    function Confirm-ValueOfType($Value, $Type)
+    {
+        if ($Type -eq "Uri")
+        {
+            try
+            {
+                New-Object System.Uri $Value | Out-Null
+            }
+            catch
+            {
+                Throw "Cannot parse '$($Value)' as a URL: $($_)"
+            }
+        }
+        elseif ($Type -eq "Guid")
+        {
+            try
+            {
+                [Guid]::Parse($Value) | Out-Null
+            }
+            catch
+            {
+                Throw "Cannot parse '$($Value)' as a guid: $($_)"
+            }
+        }
+        elseif ($Type -eq "String")
+        {
+            if ([string]::IsNullOrEmpty($Value))
+            {
+                Throw "String value cannot be empty."
+            }
+        }
+    }
+
+    function Update-WebConfigValueFromHost($Key, $Prompt, $Type)
+    {
+        $value = Read-Host -Prompt $Prompt
+        Confirm-ValueOfType -Value $value -Type $Type
+        Set-WebConfigValue -Key $Key -Value $value
+    }
+
+    function Enable-Flight($FlightName)
+    {
+        Write-Verbose "Enabling flight '$($FlightName)'..."
+        $webroot = Get-AosWebSitePhysicalPath -ErrorAction stop
+        $webrootBinPath = Join-Path $webroot "bin"
+        $environmentDllPath = Join-Path $webrootBinPath 'Microsoft.Dynamics.ApplicationPlatform.Environment.dll'
+        Add-Type -Path $environmentDllPath
+
+        $config = [Microsoft.Dynamics.ApplicationPlatform.Environment.EnvironmentFactory]::GetApplicationEnvironment()
+
+        $ServerName = $config.DataAccess.DbServer
+        $DatabaseName = $config.DataAccess.Database
+        $UserId = $config.DataAccess.SqlUser
+        $Password = $config.DataAccess.SqlPwd
+        $EnableFlightQuery = "DECLARE @flightName NVARCHAR(100) = '$($FlightName)';
+        IF NOT EXISTS (SELECT TOP 1 1 FROM SysFlighting WHERE flightName = @flightName)
+            INSERT INTO SYSFLIGHTING(FLIGHTNAME,ENABLED, FLIGHTSERVICEID, PARTITION)
+            SELECT @flightName, 1, 12719367, RECID FROM DBO.[PARTITIONS];
+        ELSE
+            UPDATE SysFlighting SET enabled = 1, flightServiceId = 12719367 WHERE flightName = @flightName;"
+
+        Invoke-Sqlcmd -ServerInstance $ServerName -Database $DatabaseName -Username $UserId -Password $Password -Query $EnableFlightQuery
+        Write-Verbose "Flight '$($FlightName)' has been enabled."
+    }
+
+    function Test-Settings()
+    {
+        $cdsApiPath = "accounts";
+        Write-Host "Testing setup by calling API '$($cdsApiPath)'..."
+        $webroot = Get-AosWebSitePhysicalPath -ErrorAction stop
+        $webrootBinPath = Join-Path $webroot "bin"
+        $httpCommunicationDllPath = Join-Path $webrootBinPath "Microsoft.Dynamics.HttpCommunication.dll"
+        Add-Type -Path $httpCommunicationDllPath
+
+        try
+        {
+            $assembly = [System.Reflection.Assembly]::LoadFile($httpCommunicationDllPath)
+            $loggerType = $assembly.GetType("Microsoft.Dynamics.HttpCommunication.Logging.InMemoryLogger")
+            $bindingFlags = [System.Reflection.BindingFlags]::Instance -bor [System.Reflection.BindingFlags]::Public
+            $loggerConstructor = $loggerType.GetConstructor($bindingFlags, $null, [System.Type]::EmptyTypes, $null)
+            $logger = $loggerConstructor.Invoke($null)
+
+            $cdsWebApiClient = New-Object Microsoft.Dynamics.HttpCommunication.Cds.CdsWebApiClient $logger;
+            $bindingFlags = [System.Reflection.BindingFlags]::Instance -bor [System.Reflection.BindingFlags]::NonPublic
+            $method = [Microsoft.Dynamics.HttpCommunication.Cds.CdsWebApiClient].GetMethod("GetWithStringResponse", $bindingFlags, $null, @([string]), $null)
+            $task = $method.Invoke($cdsWebApiClient, @($cdsApiPath))
+            $response = $task.GetAwaiter().GetResult()
+
+            $logger.WriteInfo("Received response with length: $($response.Length)")
+            Write-Verbose $logger.LogContent.ToString()
+            Write-Host "Test complete."
+        }
+        catch
+        {
+            Write-Verbose $logger.LogContent.ToString()
+            Throw "Failed while testing the new settings: $($_)"
+        }
+    }
+
+    try
+    {
+        Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationUrl" -Prompt "Enter Dataverse Organization URL" -Type "Uri"
+        Update-WebConfigValueFromHost -Key "Infrastructure.CdsOrganizationId" -Prompt "Enter Dataverse Organization id" -Type "Guid"
+        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAadTenantId" -Prompt "Enter Dataverse AAD Tenant id (e.g. Contoso.OnMicrosoft.com)" -Type "String"
+        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppId" -Prompt "Enter Dataverse AAD App id" -Type "Guid"
+        Update-WebConfigValueFromHost -Key "Infrastructure.DataverseCommunicationAppSecret" -Prompt "Enter Dataverse AAD App secret" -Type "String"
+
+        Enable-Flight -FlightName "BusinessEventsCDSIntegration"
+
+        Write-Host "Restarting AOS..."
+        Stop-Website -Name $aosWebSiteName
+        Start-Website -Name $aosWebSiteName
+        Write-Host "AOS has been restarted."
+
+        Test-Settings
+    }
+    catch
+    {
+        Write-Error $_
+    }
+
+    if ($isRelaunched)
+    {
+        Write-Host "Press any key to continue..."
+        [System.Console]::ReadKey() | Out-Null
+    }
+    ```
+
+3. Run the script in Windows PowerShell, and follow the instructions. You will enter the following information:
+
+    - **Dataverse Organization URL** – Enter the URL that is used to access Dataverse. For example, enter `https://contoso.crm.dynamics.com`. You can find this URL in the **Environment URL** field in the **Details** section of the environment details in the Power Platform admin center.
+    - **Dataverse Organization ID** – You can find this ID in the **Organization ID** field in the **Details** section of the environment details in the Power Platform admin center.
+    - **Dataverse AAD Tenant domain** – Enter the primary domain of the Azure AD tenant that is used by Dataverse. You can find this domain in the **Domain** field for the directory on the **Portal settings** page in the [Azure portal](https://portal.azure.com). Typically, it's also the domain segment of the administrator's email address. For example, if the email address is `admin@contoso.onmicrosoft.com`, the domain is `contoso.onmicrosoft.com`.
+    - **Dataverse AAD app ID** – Enter the **Application (client) ID** value of the Azure AD application that you created earlier.
+    - **Dataverse AAD app secret** – Enter the secret key value that was created earlier for the Azure AD apps.
 
 ## Troubleshooting the setup
 

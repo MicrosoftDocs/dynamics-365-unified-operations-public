@@ -4,7 +4,7 @@
 title: Configure Dataverse virtual entities
 description: This topic explains how to configure virtual entities for Finance and Operations apps in Microsoft Dataverse.
 author: Sunil-Garg
-ms.date: 10/18/2021
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -32,8 +32,8 @@ ms.dyn365.ops.version: 10.0.12
 
 This topic explains how to configure virtual entities for Finance and Operations apps in Microsoft Dataverse.
 
-> [!NOTE]
-> The configuration steps in this topic are required only for Finance and Operations apps environments that the Microsoft Power Platform integration is **not** enabled for. For Finance and Operations apps environments that the Microsoft Power Platform integration is enabled for, the virtual entity configuration that is outlined in this topic is automatically done as part of the process for enabling the integration. For more information about how to enable the Microsoft Power Platform integration for Finance and Operations apps environments, see [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
+> [!IMPORTANT]
+> The configuration steps in this topic are required only for Finance and Operations apps environments for which the Microsoft Power Platform integration is **not** enabled. For Finance and Operations apps environments for which the Microsoft Power Platform integration is enabled, the virtual entity configuration that is outlined in this topic is automatically done as part of the process for enabling the integration. For more information about how to enable the Microsoft Power Platform integration for Finance and Operations apps environments, see [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
 
 ## <a name="get-virtual-entity-solution"></a>Getting the virtual entity solution
 

@@ -20,8 +20,6 @@
           href: get-started/whats-new-platform-updates-10-0-22.md
         - name: Platform updates for version 10.0.21 (October 2021)
           href: get-started/whats-new-platform-updates-10-0-21.md
-        - name: Platform updates for version 10.0.20 (August 2021)
-          href: get-started/whats-new-platform-updates-10-0-20.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -558,7 +556,7 @@
         items:
         - name: X++ language support
           items:
-          - name: Visual Studio 2017 requirements for X++
+          - name: Visual Studio requirements for X++
             href: dev-tools/developer-tools-vs2017.md
           - name: Debug X++ code
             href: dev-tools/debug-xpp.md
@@ -572,6 +570,8 @@
             href: dev-tools/author-best-practice-rules.md
           - name: Application Explorer properties
             href: dev-ref/application-explorer-aot-properties.md
+          - name: SysSetupConfigAttribute attribute
+            href: dev-tools/syssetupconfigattribute.md
         - name: X++ language reference
           items:
           - name: X++ language reference overview
@@ -1054,6 +1054,8 @@
               href: data-entities/dual-write/multiple-entity-maps.md
             - name: Edit a legal entity after dual-write setup
               href: data-entities/dual-write/edit-legal-entity.md
+            - name: Pause dual-write for maintenance
+              href: data-entities/dual-write/pause-for-maintenance.md
             - name: Error management and alert notifications
               href: data-entities/dual-write/errors-and-alerts.md
             - name: Application lifecycle management
@@ -1146,6 +1148,8 @@
                 href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
               - name: Verify dual-write configuration in Finance and Operations apps and Dataverse
                 href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+              - name: Errors codes for the table map health check
+                href: data-entities/dual-write/table-map-health-check.md
         - name: Dual-write frequently asked questions
           href: data-entities/dual-write/dual-write-faq.md                  
       - name: Virtual entities
@@ -1592,6 +1596,8 @@
           href: sysadmin/batch-history-cleanup.md
         - name: Cancel an executing batch job
           href: sysadmin/batch-abort.md
+        - name: Batch OData API
+          href: sysadmin/batch-odata-api.md
       - name: Optimization advisor
         items:
         - name: Optimization advisor overview

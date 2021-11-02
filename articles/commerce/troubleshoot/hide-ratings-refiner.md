@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.22
 # Ratings refiner appears on search results and category pages when the ratings and reviews solution isn't enabled
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic provides troubleshooting guidance about how to hide the ratings refiner on search results and category pages when the Microsoft Dynamics 365 Commerce ratings and reviews solution isn't enabled for an e-commerce site.
 
