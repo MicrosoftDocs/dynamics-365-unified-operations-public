@@ -225,6 +225,10 @@ If saved views aren't enabled, follow these steps to copy a personalization.
 
 Another way to share personalizations is via export and import. Individual users, or an admin who acts on their behalf, can use this method to export their personalizations or views, and then give the exported file to other users to import. Alternatively, users can give their exported personalizations to a user who has admin privileges, and that user can then use the **Personalization** administration page to apply the personalization file to many users at the same time.
 
+> [!NOTE]
+> As personalizations persist across updates, re-importing all personalizations after a service update or any other time is unnecessary and **highly discouraged**.   
+
+
 #### Export
 
 In general, you can export one of your own views or personalizations by opening the appropriate page, opening the **Personalization** toolbar, and then selecting **Export**. For more information about the toolbar, see the [Personalization toolbar](#personalization-toolbar) section earlier in this topic. Alternatively, if [saved views](saved-views.md) are enabled, you can go to **Settings \> User options \> Personalization** to view a list of all your personalizations in the system. From there, you can select the views or personalizations to export, and then select **Export**.
