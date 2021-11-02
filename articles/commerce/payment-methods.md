@@ -52,5 +52,9 @@ To set up payment methods, you must complete the following tasks.
 3. Set up store payment method. Associate payment methods with each store, and then enter the store-specific settings for each payment method.
 4. Set up card payment methods for stores. For any card payment methods that the store accepts, complete the card setup.
 
+## Handling change for Payment methods
+
+During the store payment method setup, note that some payment methods do not support direct change tendering if any funds are due back to the customer during a Point-of-Sale transaction. Note that only **Cash** and **Currency** payment methods can be used for change tender. For the payment methods that do not support change tender, a **Change tender** payment method can be established to use in the case change is needed during the transaction. During the store **Payment methods** setup for the store, select the given payment method and expand the **Change** section. A change tender payment option can be set in the **Change tender** field (example: 1 is set to denote **Cash** be used as a change tender).
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
