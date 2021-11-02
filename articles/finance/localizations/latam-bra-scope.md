@@ -248,14 +248,14 @@ The following sections list the features that are specific to Brazil. The sectio
 | ---- | --------------- | ----------------- |
 | Customer CPF/CNPJ on fiscal receipts | Yes | Yes |
 | File generation for Nota Fiscal Paulista | Yes | No |
-| Tax calculation according to Microsoft Dynamics AX 2012 configuration | Yes | Yes |
+| Tax calculation according to Commerce headquarters configuration | Yes | Yes |
 | Fiscal printer integration for Daruma printers, models FS600, FS700 (H, L and M), FS800i, Mach 1, Mach 2, and Mach 3 | Yes | No |
 | Fiscal printer integration for Bematech printers, models MP2100 FI TH FI and MP4200 TH FI II | Yes | No |
 | POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°9" of 2013, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section of this topic | Yes | No |
 | POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°46" of 2014, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section | Yes | No |
 | Display approximated taxes in fiscal receipts | Yes | Yes |
-| Void last fiscal receipt | Yes | Yes |
-| Payments with multiple credit cards | Yes | No |
+| Void last fiscal receipt | Yes | No |
+| Payments with multiple credit cards | Yes | Yes |
 | EFT integration with third-party software D-TEF Dedicado, version 8.1.37.2, commercialized by Direção Processamento de Dados Ltda | Yes | No |
 | EFT integration with third-party software SiTef, version 4.0.111.6, commercialized by Software Express Informática Ltda <br>Presales according to PAF-ECF law "ATO COTEPE/ICMS N°46" of 2014 | Yes | No |
 | EFT integration with third-party software Adyen, basic capabilities | No | Yes |
