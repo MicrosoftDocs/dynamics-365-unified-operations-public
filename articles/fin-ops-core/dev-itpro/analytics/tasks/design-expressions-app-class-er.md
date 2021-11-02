@@ -94,7 +94,7 @@ Design an ER format that represents the expected structure of the external file 
 
 It has been configured that each line in the parsing file contains the only IBAN code.
 
-![Format designer page.](media/design-expressions-app-class-er-01.png)
+![Format designer page.](../media/design-expressions-app-class-er-01.png)
 
 ## Design the ER format configuration – mapping to data model
 
@@ -131,7 +131,7 @@ Design an ER format mapping to use information from the parsing file for filling
     6. Select **Bind**.
     > Based on this setting, the IBAN field of the data model is filled in by the value from the parsing file.
 
-    ![Model mapping designer page.](media/design-expressions-app-class-er-02.png)
+    ![Model mapping designer page.](../media/design-expressions-app-class-er-02.png)
 
 9. Select the **Validations** tab to add a new [validation](../general-electronic-reporting-formula-designer.md#Validation) rule that displays an error for any line in the parsing file that contains invalid IBAN code.  
     1. Select **New**.
@@ -148,7 +148,7 @@ Design an ER format mapping to use information from the parsing file for filling
         3. Close the page.
     > Based on this setting, the validation condition returns *[FALSE](../er-formula-supported-data-types-primitive.md#boolean)* for any invalid IBAN code by calling the existing method `verifyMOD1271_36` of the application class `ISO7064`. Note that the value of the IBAN code is defined dynamically at run-time as the argument of the calling method based on the content of the parsing TXT file.
 
-    ![Model mapping designer page.](media/design-expressions-app-class-er-03.png)
+    ![Model mapping designer page.](../media/design-expressions-app-class-er-03.png)
 
 10. Select **Save**.
 11. Close the **Model mapping designer** page.
@@ -162,11 +162,11 @@ For testing purposes, execute the format mapping using the **SampleIncomingMessa
 2.  On the **Electronic report parameters** page, select **Browse** and navigate to the **SampleIncomingMessage.txt** file that you previously downloaded.  
 3.  Select **OK**.
 
-    ![Model mapping designer page.](media/design-expressions-app-class-er-04.png)
+    ![Model mapping designer page.](../media/design-expressions-app-class-er-04.png)
     
     > Review the output in XML format that represents the data that has been imported from the selected file and ported to the data model. Note that only 3 lines of the imported TXT file were processed without errors. The IBAN code on line 4 that is not valid was skipped and an error message is provided in the Infolog.
 
-    ![Model mapping designer page.](media/design-expressions-app-class-er-05.png)
+    ![Model mapping designer page.](../media/design-expressions-app-class-er-05.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
