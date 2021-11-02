@@ -297,38 +297,62 @@ Follow these steps to set up a development environment so that you can test and 
 
 Follow the steps described in [Set up a build pipeline for a fiscal integration sample](fiscal-integration-sample-build-pipeline.md) to generate and release the Cloud Scale Unit and self-service deployable packages for the fiscal integration sample. The template YAML file **EFR build-pipeline.yml** can be found in the **Pipeline\\YAML_Files** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository.
 
-The procedure for development environment enables the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
+## Design of extensions
 
-##### Commerce Cloud Scale Unit (CSU) package
+The fiscal registration service integration sample for Austria is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and consists of Commerce runtime and Hardware station extensions. For more details about the design of the fiscal integration solution and a fiscal integration sample, see the [overview of a fiscal integration sample design](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
-You must follow these steps to generate a Commerce Cloud Scale Unit (CSU) package:
+### Commerce runtime extension design
 
-1. Clone or download the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) repository. Select a correct release branch version according to your SDK/application version. Detailed steps to clone a repository can be found in [Download Retail SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+The purpose of the extension that is a fiscal document provider is to generate service-specific documents and handle responses from the fiscal registration service.
 
-2. Build the **ScaleUnit.EFR** project under **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\ScaleUnit**. This project will generate the **CloudScaleUnitExtensionPackage.zip** package in the project bin folder. The **CloudScaleUnitExtensionPackage.zip** package can be uploaded to LCS and deployed to CSU. Select the correct version of the **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version in the NuGet package manager in Visual Studio according to your SDK/application version. To upload the **CloudScaleUnitExtensionPackage.zip** package to LCS see [Deploy the package to CSU](../dev-itpro/retail-sdk/retail-sdk-packaging.md#deploy-the-package-to-csu).
+#### Request handler
 
-##### Commerce Scale Unit (self-hosted) components
+There are two request handlers for document providers:
 
-1. Download and install the Commerce Scale Unit, Hardware station, and Modern POS  installers. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](../dev-itpro/Enhanced-Mass-Deployment.md).
+- **DocumentProviderEFRFiscalAUT** – This handler is used to generate fiscal documents for the fiscal registration service.
+- **DocumentProviderEFRNonFiscalAUT** – This handler is used to generate non-fiscal documents for the fiscal registration service.
 
-2. Run the extension installer from command line:
+These handlers are inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Headquarters.
 
-    - For **Commerce Scale Unit**: run the following common in the **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\ScaleUnit\\ScaleUnit.EFR.Installer\\bin\\Debug\\net461** folder:
+The connector supports the following requests:
 
-    ```Console
-    ScaleUnit.EFR.Installer.exe install --verbosity 0
-    ```
+- **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
+- **GetNonFiscalDocumentDocumentProviderRequest** – This request contains information about what non-fiscal document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
+- **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales, printing X report, printing Z report, customer account deposits, customer order deposits, audit events, and non-sales transactions.
+- **GetFiscalRegisterResponseToSaveDocumentProviderRequest** – This request returns the response from the fiscal registration service. This response is serialized to form a string so that it's ready to be saved.
 
-    - For **Local CRT on Modern POS**: run the following common in the **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\ModernPOS\\ModernPOS.EFR.Installer\\bin\\Debug\\net461** folder:
+#### Configuration
 
-    ```Console
-    ModernPOS.EFR.Installer.exe install --verbosity 0
-    ```
+The configuration files for the fiscal document provider are located in the **src\\FiscalIntegration\\Efr\\Configurations\\DocumentProviders** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository:
 
-    - For **Hardware station**: run the following common in the **Dynamics365Commerce.Solutions\\FiscalIntegration\\Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** folder:
+- **DocumentProviderFiscalEFRSampleAustria** – the configuration file for the fiscal document provider for fiscal documents.
+- **DocumentProviderNonFiscalEFRSampleAustria** – the configuration file for the fiscal document provider for non-fiscal documents.
 
-    ```Console
-    HardwareStation.EFR.Installer.exe install --verbosity 0
-    ```
+The purpose of these files is to enable settings of the fiscal document provider to be configured from Headquarters. The file format is aligned with the requirements to the fiscal integration configuration. The following setting is added:
+
+- **VAT rates mapping**
+
+### Hardware station extension design
+
+The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service. The Hardware station extension uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
+
+#### Request handler
+
+The **EFRHandler** request handler is the entry point for handling requests to the fiscal registration service.
+
+The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Headquarters.
+
+The fiscal connector supports the following requests:
+
+- **SubmitDocumentFiscalDeviceRequest** – This request sends documents to the fiscal registration service and returns a response from it.
+- **IsReadyFiscalDeviceRequest** – This request is used for a health check of the fiscal registration service.
+- **InitializeFiscalDeviceRequest** – This request is used to initialize the fiscal registration service.
+
+#### Configuration
+
+The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
+
+- **Endpoint address** – The URL of the fiscal registration service.
+- **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
