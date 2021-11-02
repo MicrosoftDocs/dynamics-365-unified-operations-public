@@ -1,4 +1,4 @@
-To enable the feature "Only track amounts in the budget funds available calculation", these are required budget control configuration settings that must be
+To enable the feature **Only track amounts in the budget funds available calculation**, these are required budget control configuration settings that must be
 defined for this feature to work properly.
 
 +-----------------------------------+-----------------------------------+
