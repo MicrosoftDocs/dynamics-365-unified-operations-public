@@ -253,14 +253,15 @@ The following sections list the features that are specific to Brazil. The sectio
 | Fiscal printer integration for Bematech printers, models MP2100 FI TH FI and MP4200 TH FI II | Yes | No |
 | POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°9" of 2013, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section of this topic | Yes | No |
 | POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°46" of 2014, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section | Yes | No |
-| Display approximated taxes in fiscal receipts | Yes | Yes |
+| Display approximated taxes in fiscal receipts | Yes | No |
+| Display approximated taxes in DANFE | Yes | Yes |
 | Void last fiscal receipt | Yes | No |
 | Payments with multiple credit cards | Yes | Yes |
 | EFT integration with third-party software D-TEF Dedicado, version 8.1.37.2, commercialized by Direção Processamento de Dados Ltda | Yes | No |
 | EFT integration with third-party software SiTef, version 4.0.111.6, commercialized by Software Express Informática Ltda <br>Presales according to PAF-ECF law "ATO COTEPE/ICMS N°46" of 2014 | Yes | No |
 | EFT integration with third-party software Adyen, basic capabilities | No | Yes |
-| Issuing return NF-e in EPOS for sales return | Yes | Yes |
-| Issuing NF-e linked to fiscal receipt in EPOS | Yes | No |
+| Issuing return NF-e in POS for sales return | Yes | Yes |
+| Issuing NF-e linked to fiscal receipt in POS | Yes | No |
 | Configurable AOS for NF-e/NFC-e messaging with SEFAZ | Yes | No |
 | The EFT service must be contracted directly from the third-party provider and isn't included in any Microsoft software license.<br> **Note**: Because of conflicts with the PAF-ECF legislation, not all Enterprise POS operations are permitted in Brazil. For more details, see the [Retail and Enterprise POS Localization for Brazil white paper](https://www.microsoft.com/download/details.aspx?id=42938). | Yes | Yes |           
 | Support for layout NFC-e (Nota Fiscal ao Consumidor Eletrônica) 4.0 | Yes | Yes |
@@ -269,7 +270,7 @@ The following sections list the features that are specific to Brazil. The sectio
 | Sales presence type: in-person | Yes | Yes |
 | Commerce item management:<br>- Released products by category<br>- Mass update worksheet<br>- Product hierarchy | Yes | Yes |
 | SAT (model 59) for São Paulo state layout 0.07 | Yes | Yes |
-| Support for only one SAT hardware per EPOS | Yes | Yes |
+| Support for only one SAT hardware per POS | Yes | Yes |
 | Support for SAT DLL selection, for multiple-brand compatibility | Yes | Yes |
 | Fiscal receipt reference | Yes | No |
 | Fiscal printer auto-configuration | Yes | No |
