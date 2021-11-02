@@ -4,7 +4,7 @@
 title: Payment methods
 description: Each payment type that a retailer accepts must be configured when the system is set up. This article describes the payment types that you can set up and describes the process for setting them up.
 author: rubencdelgado
-ms.date: 06/17/2020
+ms.date: 11/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,7 +24,6 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
 
 ---
 
@@ -52,9 +51,11 @@ To set up payment methods, you must complete the following tasks.
 3. Set up store payment method. Associate payment methods with each store, and then enter the store-specific settings for each payment method.
 4. Set up card payment methods for stores. For any card payment methods that the store accepts, complete the card setup.
 
-## Handling change for Payment methods
+## Handle change tendering for payment methods
 
-During the store payment method setup, note that some payment methods do not support direct change tendering if any funds are due back to the customer during a Point-of-Sale transaction. Note that only **Cash** and **Currency** payment methods can be used for change tender. For the payment methods that do not support change tender, a **Change tender** payment method can be established to use in the case change is needed during the transaction. During the store **Payment methods** setup for the store, select the given payment method and expand the **Change** section. A change tender payment option can be set in the **Change tender** field (example: 1 is set to denote **Cash** be used as a change tender).
+During the store payment method setup, some payment methods will not support direct change tendering if any funds are due back to customers during point-of-sale transactions. Only the **Cash** and **Currency** payment methods can be used for change tendering. 
+
+For payment methods that do not support change tendering, a **Change tender** payment method can be established for use in case change tendering is needed during a transaction. To do this, when setting up store payment methods for the store, select the payment method to be used and then expand the **Change** section. A change tender payment option can then be set in the **Change tender** field (for example, the value "1" can be entered to indicate that cash can be used as a change tender payment option).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
