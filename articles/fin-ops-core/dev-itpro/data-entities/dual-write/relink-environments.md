@@ -57,7 +57,7 @@ If you want to reset your existing sandbox Dataverse instance that is linked for
 6. Delete the data from the key tables in the Finance and Operations app.
 
     - **DualWriteProjectConfiguration**
-    - **DualWriteFieldConfiguration**
+    - **DualWriteProjectFieldConfiguration**
     - **BusinessEventsDefinition**
 
 7. Set up dual-write on the environment that you want to reset. For more information, see [System requirements and prerequisites](requirements-and-prerequisites.md).
