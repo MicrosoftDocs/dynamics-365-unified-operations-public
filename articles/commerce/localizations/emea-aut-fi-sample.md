@@ -79,14 +79,6 @@ The following scenarios are covered by the fiscal registration service integrati
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
     - Check the availability of the fiscal registration service before a new sales transaction is opened or a sales transaction is finalized.
 
-### Default data mapping
-
-The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
-
-- Value-added tax (VAT) rates mapping:
-
-    *A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00*
-
 ### Gift cards
 
 The fiscal registration service integration sample implements the following rules that are related to gift cards:
@@ -236,7 +228,7 @@ To enable the registration process, follow these steps to set up Headquarters. F
 
 1. Download configuration files for the fiscal document provider and the fiscal connector:
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    1. Open the last available release branch (for example, **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Select a correct release branch version according to your SDK/application version (for example, **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
     1. Open **src \> FiscalIntegration \> Efr**.
     1. Open **Configurations \> DocumentProviders** and download the fiscal document provider configuration files: **DocumentProviderFiscalEFRSampleAustria.xml** and **DocumentProviderNonFiscalEFRSampleAustria.xml** (for example, [the location of the files for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders)).
     1. Download the fiscal connector configuration file at **Configurations \> Connectors \> ConnectorEFRSample.xml** (for example, [the file for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
@@ -251,13 +243,31 @@ To enable the registration process, follow these steps to set up Headquarters. F
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration files that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create two new connector functional profiles, one for each document provider that you loaded earlier, and select the connector that you loaded earlier. Update the data mapping settings as required.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Update the connection settings as required.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create two new connector functional profiles, one for each fiscal document provider that you loaded earlier, and select the fiscal connector that you loaded earlier. Update the [data mapping settings](#default-data-mapping) as required.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the fiscal connector that you loaded earlier. Update the [connector settings](#default-connector-settings) as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create two new fiscal connector groups, one for each connector functional profile that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, two fiscal registration process steps, and select the fiscal connector groups that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. To enable registration of non-fiscal events on the POS, on the **Functions** FastTab, under **POS**, set the **Audit** option to **Yes**.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
 1. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+
+#### Default data mapping
+
+The following default data mapping is included in the fiscal document provider configuration that is provided as part of the fiscal integration sample:
+
+- **Value-added tax (VAT) rates mapping**:
+
+    *A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00*
+    
+    The first component in each pair stands for a VAT tax group supported by the EFR fiscal service, and the second component stands for the corresponding VAT rate. For more information about VAT tax groups that EFR supports for Austria, see the [EFR reference](https://public.efsta.net/efr/).
+
+#### Default connector settings
+
+The following default settings are included in the fiscal connector configuration that is provided as part of the fiscal integration sample:
+
+- **Endpoint address** – The URL of the fiscal registration service.
+- **Device timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
+- **Show fiscal registration notifications** - This flag controls whether notifications returned by the fiscal registration service should be displayed to the operator.
 
 ### Configure channel components
 
@@ -328,9 +338,7 @@ The configuration files for the fiscal document provider are located in the **sr
 - **DocumentProviderFiscalEFRSampleAustria** – the configuration file for the fiscal document provider for fiscal documents.
 - **DocumentProviderNonFiscalEFRSampleAustria** – the configuration file for the fiscal document provider for non-fiscal documents.
 
-The purpose of these files is to enable settings of the fiscal document provider to be configured from Headquarters. The file format is aligned with the requirements to the fiscal integration configuration. The following setting is added:
-
-- **VAT rates mapping**
+The purpose of these files is to enable settings of the fiscal document provider to be configured from Headquarters. The file format is aligned with the requirements to the fiscal integration configuration.
 
 ### Hardware station extension design
 
@@ -350,9 +358,6 @@ The fiscal connector supports the following requests:
 
 #### Configuration
 
-The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
-
-- **Endpoint address** – The URL of the fiscal registration service.
-- **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
+The configuration file for the fiscal connector is located at **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** in the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The purpose of the file is to enable settings of the fiscal connector to be configured from Headquarters. The file format is aligned with the requirements to the fiscal integration configuration.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
