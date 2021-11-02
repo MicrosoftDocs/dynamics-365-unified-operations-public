@@ -267,7 +267,7 @@ To facilitate cloud-hosted deployments, we recommend that partners follow this s
 ### I have run the Admin user provisioning tool on my development environment, and now I receive the following sign-in error: "Error: AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application."
 As was stated earlier, it's very important that Finance and Operations environments be deployed under the correct Azure AD tenant. For Tier 1/customer-managed environments that are deployed via LCS, changes to the Azure AD tenant settings aren't supported after deployment.
 
-### How can I fix my existing environment where my environment is marked as failed or I am getting sign-in errors?
+### How can I fix my existing environment where my environment is in the failed state or I am getting sign-in errors?
 If you have environments where the Admin user provisioning tool was previously used to update the tenant settings, we recommend that you delete those environments and then redeploy them under the correct Azure AD tenant.
 
 If an existing environment can't be deleted and redeployed, its URL must be added to the configured Azure AD tenant. The following commands can be run by the tenant admin.
