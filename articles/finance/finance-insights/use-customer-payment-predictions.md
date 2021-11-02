@@ -32,11 +32,11 @@ ms.dyn365.ops.version: AX 10.0.14
 
 This topic explains how to use the Customer payment predictions. Before you use this feature, make sure that you've completed the setup steps for it. For more information, see [Enable customer payment predictions](enable-cust-paymnt-prediction.md).
 
-You can view customer payment predictions in the **Manage customer credit and collections** workspace and on two new list pages, **Transaction payment predictions** and **Customer payment predictions**.
+You can view customer payment predictions in the **Manage customer credit and collections** workspace and on two new list pages: **Transaction payment predictions** and **Customer payment predictions**.
 
 ### Manage customer credit and collections workspace
 
-The **Manage customer credit and collections** workspace includes two new tiles, **Transaction payment predictions** and **Customer payment predictions**.
+The **Manage customer credit and collections** workspace includes two new tiles: **Transaction payment predictions** and **Customer payment predictions**.
 
 ### Transaction payment predictions list page
 
@@ -56,7 +56,7 @@ The data in the **Top factors** section, and on the **Customer insights** and **
 
 ### Customer payment predictions list page
 
-The **Customer payment predictions** list page shows the total open balance, and the amount that is predicted to be paid in the **On time**, **Late** and **Very late** buckets.
+The **Customer payment predictions** list page shows the total open balance, and the amount that is predicted to be paid in the **On time**, **Late**, and **Very late** buckets.
 
 [![Payment predictions per customer page.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
@@ -84,7 +84,7 @@ The **Related information** section on the right side of the page shows more det
 - The **Customer insights** FastTab shows the current invoice, payment, and collections statistics for the customer for the selected transaction.
 - The **Customer history** FastTab shows the customer's payment history in the **On time**, **Late**, and **Very late** buckets.
 
-The data in the **Customer insights** and **Customer history** FastTabs, helps explain the payment predictions. It can help increase your confidence in the efficacy of the predictions.
+The data on the **Customer insights** and **Customer history** FastTabs helps explain the payment predictions. It can help increase your confidence in the efficacy of the predictions.
 
 ## Improving the accuracy of payment predictions
 
