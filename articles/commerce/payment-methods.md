@@ -53,9 +53,8 @@ To set up payment methods, you must complete the following tasks.
 
 ## Handle change tendering for payment methods
 
-Some payment methods will not support direct change tendering if any funds are due back to customers during point-of-sale transactions. Only the **Cash** and **Currency** payment methods can be used for change tendering. 
+Some payment methods don't support direct change tendering if funds are due back to customers during point-of-sale transactions. Only the **Cash** and **Currency** payment methods can be used to tender change. 
 
-For payment methods that do not support change tendering, a **Change tender** payment method can be established for use in case change tendering is needed during a transaction. To do this, when setting up store payment methods for the store select the payment method to be used and then expand the **Change** section. A change tender payment option can then be set in the **Change tender** field (for example, the value "1" can be entered to indicate that cash can be used as a change tender payment option).
-
+To handle cases where change tendering is required during a transaction, but the payment method doesn't support it, you can define a **Change tender** payment method. When you set up store payment methods for the store, select the payment method to use. Then, in the **Change** section, in the **Change tender** field, enter a change tender payment option. For example, you can enter **1** to indicate that cash can be used as a change tender payment option.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
