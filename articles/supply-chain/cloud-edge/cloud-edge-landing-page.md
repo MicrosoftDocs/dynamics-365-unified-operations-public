@@ -182,13 +182,13 @@ After the onboarding is completed, you can use the port to configure scale units
 
 Go to the [Scale Unit Manager portal](https://aka.ms/SCMSUM), and sign in by using your tenant account. On the **Configure scale units** page, you can add a hub environment if it isn't already listed. You can then select the hub that you want to configure with scale units and workloads.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale unit and workload management experience.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale Unit Manager portal, Configure scale units page.":::
 
 To add one or more scale units that are available in your subscriptions, select **Add scale units**.
 
 On the **Defined workloads** tab, use the **Create workload** button to add a warehouse management workload to one of your scale units. For each workload, you must specify the context of the processes that will be owned by the workload. For warehouse management workloads, the context is a specific warehouse in a specific site and legal entity.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Workload creation.":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Define workloads dialog.":::
 
 #### Manage workloads
 
@@ -196,7 +196,7 @@ When one or more workloads are enabled, use the **Manage workloads** option to i
 
 | Process | Description |
 |---|---|
-| Pause scale unit communication | Pause pipeline messages between the hub and a scale unit. This process will stop the communication and drain the data pipeline between the hub and scale units. You must do this before you run a Supply Chain Management servicing operation on either the hub or the scale unit, but you may also use this in other situations. |
+| Pause scale unit communication | Pause pipeline messages between the hub and a scale unit. This process will stop the communication and drain the data pipeline between the hub and scale units. You must run this process before you run a Supply Chain Management servicing operation on either the hub or the scale unit, but you may also use this in other situations. |
 | Resume scale unit communication | Resume pipeline messages between the hub and a scale unit. You might have to use this process, for example, after you run a Supply Chain Management servicing operation on either the hub or the scale unit. |
 | Upgrade workloads | Sync new functionality between the hub and scale unit workloads. You might have to use this process, for example, when servicing has caused the data exchange queries to change, and/or has added new tables or fields to the workload. |
 | Transfer workloads to a scale unit | Schedule a workload that is currently running on the hub to be moved to a scale unit. When this process is run, the synchronization of data will flow, and both the hub and the scale unit will be set to change the ownership of the workload. |
