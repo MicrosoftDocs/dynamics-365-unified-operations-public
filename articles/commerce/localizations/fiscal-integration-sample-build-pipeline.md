@@ -2,7 +2,7 @@
 title: Set up a build pipeline for a fiscal integration sample
 description: This topic explains how to set up a build pipeline for a fiscal integration sample so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code.
 author: Sergio1C
-ms.date: 11/01/2021
+ms.date: 11/02/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -17,25 +17,21 @@ ms.dyn365.ops.version:
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to set up a build pipeline for the Retail software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for each fiscal integration sample extension code (by using the new independent extension model).
+This topic explains how to set up a build pipeline for a [fiscal integration sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) from the Retail software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for this fiscal integration sample extension code (by using the [new independent packaging and extension model](../dev-itpro/build-pipeline.md)).
 
-[!WARNING]
-> This topic applies to some samples only, starting from 10.0.22 of Retail SDK. If the appropriate YAML file is not included in your current version then the steps that are described in this topic won't work. Also these steps won't work if you're using the previous version of the Retail SDK from the developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). The information in this topic is applicable if you're using the new independent extension model (that is, if you're consuming the packages from the public feed), and the independent packaging and extension model.
+> [!NOTE]
+> The steps that are described in this topic won't work if you're using the previous version of the Retail SDK from the developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For the steps that are required to deploy a fiscal integration sample from the the Retail SDK from the developer VM in LCS, see the corresponding fiscal integration sample documentation.
 
-## Set up a build pipeline in Azure DevOps to generate both Cloud Scale Unit extension and Retail Self-service extension packages
+## Set up a build pipeline in Azure DevOps to generate Cloud Scale Unit extension packages and Retail Self-service packages
 
 1. Sign in to your Microsoft Azure DevOps organization.
 2. Select **Pipeline**, and then select **New pipeline**.
 3. Select the source repository (repo) for your extension code.
 4. Select **Existing Azure Pipelines YAML file**.
-5. Select or get the appropriate YAML file from [repo folder](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.32/Pipeline/YAML_Files) in the [Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) GitHub repo. The readme.md file in each fiscal integration solution contains information on which certain YAML file is used to run Azure pipeline.
-
-    > [!NOTE]
-    > The YAML file refers to some scripts in the [Pipeline/PowerShellScripts directory in the Dynamics365Commerce.Solutions GitHub repo](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.32/Pipeline/PowerShellScripts). Be sure to include all those scripts in your repo. If you clone the samples repo, all the scripts are already included.
-
+5. Select or get an appropriate YAML file from the **Pipeline\\YAML_Files** folder of the [Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) GitHub repo. See the readme.md file of the fiscal integration solution or the public documentation for the fiscal integration sample for more information on how to find a template YAML file for the sample.
 6. Select **Continue**.
 
-    Scripts in the YAML file build the whole solution, then upload the output files (the CloudScaleUnitExtensionPackage.zip and retail self-service extension packages: HardwareStation.\*.Installer.exe, ScaleUnit.\*.Installer.exe, ModernPOS.\*.Installer.exe) to the **Published Artifacts** drop location for the build.
+    Scripts in the YAML file build the whole solution and upload the output files (the CloudScaleUnitExtensionPackage.zip and retail self-service extension packages: HardwareStation.\*.Installer.exe, ScaleUnit.\*.Installer.exe, ModernPOS.\*.Installer.exe) to the **Published Artifacts** drop location for the build.
 
     > [!NOTE]
     > Some fiscal integration samples do not suppose some type of self-service extension to be installed. Therefore, depends on the current sample, the output files may don't include some of them.
