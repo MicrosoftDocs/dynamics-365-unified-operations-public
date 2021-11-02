@@ -254,7 +254,7 @@ The following sections list the features that are specific to Brazil. The sectio
 | POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°9" of 2013, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section of this topic | Yes | No |
 | POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°46" of 2014, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section | Yes | No |
 | Display approximated taxes in fiscal receipts | Yes | No |
-| Display approximated taxes in DANFE | Yes | Yes |
+| Display approximated taxes in DANFE / CF-e-SAT | Yes | Yes |
 | Void last fiscal receipt | Yes | No |
 | Payments with multiple credit cards | Yes | Yes |
 | EFT integration with third-party software D-TEF Dedicado, version 8.1.37.2, commercialized by Direção Processamento de Dados Ltda | Yes | No |
