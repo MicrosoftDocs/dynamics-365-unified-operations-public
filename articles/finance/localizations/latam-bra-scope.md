@@ -242,10 +242,10 @@ The following sections list the features that are specific to Brazil. The sectio
 | Fiscal document for 1/48 ICMS tax credits | Yes | Yes |
 | Legal reports:<br>- Day book<br>- Analytical ledger<br>- Trial balance | Yes | No |
 
-### Enterprise POS
+### Commerce
 
-| Item | AX 2012 R3 |  Finance | 
-| ---- | ---------- | -------- |
+| Item | AX 2012 R3 EPOS |  D365 CPOS / MPOS | 
+| ---- | --------------- | ----------------- |
 | Customer CPF/CNPJ on fiscal receipts | Yes | Yes |
 | File generation for Nota Fiscal Paulista | Yes | No |
 | Tax calculation according to Microsoft Dynamics AX 2012 configuration | Yes | Yes |
@@ -263,20 +263,10 @@ The following sections list the features that are specific to Brazil. The sectio
 | Issuing NF-e linked to fiscal receipt in EPOS | Yes | No |
 | Configurable AOS for NF-e/NFC-e messaging with SEFAZ | Yes | No |
 | The EFT service must be contracted directly from the third-party provider and isn't included in any Microsoft software license.<br> **Note**: Because of conflicts with the PAF-ECF legislation, not all Enterprise POS operations are permitted in Brazil. For more details, see the [Retail and Enterprise POS Localization for Brazil white paper](https://www.microsoft.com/download/details.aspx?id=42938). | Yes | Yes |           
-
-### NFC-e (Nota Fiscal ao Consumidor Eletrônica) in Enterprise POS
-
-| Item | AX 2012 R3 |  Finance | 
-| ---- | ---------- | -------- |
-| Support for layout NFC-e 4.0 | Yes | Yes |
+| Support for layout NFC-e (Nota Fiscal ao Consumidor Eletrônica) 4.0 | Yes | Yes |
 | Contingency mode: off-line | Yes | Yes |
 | Contingency mode for SP: SAT (model 59) | Yes | Yes |
 | Sales presence type: in-person | Yes | Yes |
-
-### Commerce
-
-| Item | AX 2012 R3 |  Finance | 
-| ---- | ---------- | -------- |
 | Commerce item management:<br>- Released products by category<br>- Mass update worksheet<br>- Product hierarchy | Yes | Yes |
 | SAT (model 59) for São Paulo state layout 0.07 | Yes | Yes |
 | Support for only one SAT hardware per EPOS | Yes | Yes |
