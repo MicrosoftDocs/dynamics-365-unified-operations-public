@@ -162,6 +162,9 @@ All Microsoft updates are intended to be runtime backward-compatible. This compa
 
 Binary compatibility is backward only. You can compile a customization on an older application version and platform version, and deploy it to an environment that is running a later version. However, you can't deploy code to an environment that is running a version that is earlier than the version that the code was compiled on.
 
+> [!IMPORTANT]
+> Personalizations are covered by runtime compatibility and will continue to work after Microsoft service updates are deployed to these environments. Because of this, re-importing all personalizations after a service update (or any other time) is unnecessary and highly discouraged.   
+
 #### <a id="design-compatibility"></a>Design-time compatibility
 
 Design-time (compile-time) backward compatibility means that developers can apply updates to their development environments and successfully compile their code without having to make any changes.
