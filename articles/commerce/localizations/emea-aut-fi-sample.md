@@ -244,7 +244,7 @@ To enable the registration process, follow these steps to set up Headquarters. F
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration files that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create two new connector functional profiles, one for each fiscal document provider that you loaded earlier, and select the fiscal connector that you loaded earlier. Update the [data mapping settings](#default-data-mapping) as required.
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the fiscal connector that you loaded earlier. Update the [connector settings](#default-connector-settings) as required.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the fiscal connector that you loaded earlier. Update the [connector settings](#fiscal-connector-settings) as required.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create two new fiscal connector groups, one for each connector functional profile that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, two fiscal registration process steps, and select the fiscal connector groups that you created earlier.
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. To enable registration of non-fiscal events on the POS, on the **Functions** FastTab, under **POS**, set the **Audit** option to **Yes**.
@@ -259,14 +259,14 @@ The following default data mapping is included in the fiscal document provider c
 
     *A: 20.00; B: 10.00; C: 13.00; D: 0.00; E: 19.00; F: 7.00*
     
-    The first component in each pair stands for a VAT tax group supported by the EFR fiscal service, and the second component stands for the corresponding VAT rate. For more information about VAT tax groups that EFR supports for Austria, see the [EFR reference](https://public.efsta.net/efr/).
+    The first component in each pair stands for a VAT tax group supported by the EFR fiscal registration service, and the second component stands for the corresponding VAT rate. For more information about VAT tax groups that EFR supports for Austria, see the [EFR reference](https://public.efsta.net/efr/).
 
-#### Default connector settings
+#### Fiscal connector settings
 
-The following default settings are included in the fiscal connector configuration that is provided as part of the fiscal integration sample:
+The following settings are included in the fiscal connector configuration that is provided as part of the fiscal integration sample:
 
 - **Endpoint address** – The URL of the fiscal registration service.
-- **Device timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
+- **Device timeout** – The amount of time, in milliseconds, that the fiscal connector will wait for a response from the fiscal registration service.
 - **Show fiscal registration notifications** - This flag controls whether notifications returned by the fiscal registration service should be displayed to the operator.
 
 ### Configure channel components
