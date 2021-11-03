@@ -51,6 +51,13 @@ To enable geo redirection for your site in Commerce site builder, go to **Site s
 > [!IMPORTANT]
 > Before you turn on the **Enable geo redirection features** setting, you must turn on the **Enable location based store detection** setting. For more information, see [Enable location-based store detection](enable-store-detection.md).
 
+## **Run Commerce scheduler**
+
+To enable syncing of the country/region data you'll be entering in Commerce headquarters, go to Go to **Retail and Commerce** > **Headquarters setup** > **Commerce scheduler** > **Initialize commerce scheduler**. For more information about the Commerce scheduler, see the [Update configurations](dev-itpro/cdx-best-practices.md#update-configurations) section of the [Commerce Data Exchange best practices](dev-itpro/cdx-best-practices.md) help topic. 
+
+> [!NOTE]
+> Starting with the 10.0.24 release, the Commerce scheduler can be set to run automatically after updates to Commerce headquarters. To enable this capability, go to **Workspaces** > **Feature management** in Commerce headquarters and enable the **Run "Initialize commerce scheduler" after Headquarters is updated** feature switch. 
+
 ## Associate countries and regions with online stores in Commerce headquarters
 
 Countries and regions are associated with online stores (also known as online channels) in Commerce headquarters. When you associate a country or region with an online store, you indicate that customers who reside in that country or region should view the site that is mapped to that online store. You can associate multiple countries and regions with an online store as you require.
