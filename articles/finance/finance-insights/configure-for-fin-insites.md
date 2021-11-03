@@ -29,13 +29,12 @@ ms.dyn365.ops.version: AX 10.0.13
 # Configuration for Finance insights
 
 [!include [banner](../includes/banner.md)]
-
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This topic explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights. To successfully complete the procedures in this topic, you must have System administrator and System Customizer access in the [Power Portal admin center](https://admin.powerplatform.microsoft.com/), System Administrator access in Dynamics 365 Finance, and access to create environments in Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!NOTE]
-> The following procedures for setting up Finance insights are valid for versions of Dynamics 365 Finance before version 10.0.21, and later.
+> The following procedures for setting up Finance insights are valid for versions of Dynamics 365 Finance version 10.0.21, and later.
 
 ## Deploy Dynamics 365 Finance
 
@@ -57,18 +56,18 @@ Follow these steps to configure Dataverse for Finance insights.
     - If it's already set up, the Dataverse environment name that is linked to the Finance environment should be listed.
     - If it isn't yet set up, select **Setup**. Setup of the Dataverse environment might take up to an hour. When the setup is successfully completed, the Dataverse environment name that is linked to the Finance environment should be listed.
 
-## Configure the Get insights add-in
+## Configure the Finance insights add-in
 
-If you previously installed the Get insights add-in, uninstall it before you complete the following procedure.
+If you previously installed the Finance insights add-in, uninstall it before you complete the following procedure.
 
 > [!NOTE]
-> If you've already installed the data lake add-in in LCS, Finance insights will use it to save data that is required for predictions. If you haven't yet installed the data lake add-in in LCS, the Get insights add-in will create a managed data lake for you.
+> If you've already installed the data lake add-in in LCS, Finance insights will use it to save data that is required for predictions. If you haven't yet installed the data lake add-in in LCS, the Finance insights add-in will create a managed data lake for you.
 
 Follow these steps to install the Finance insights add-in.
 
 1. Sign in to LCS, and then, under the environment name on the right side of the page, select **Full Details**.
 2. In the **Environment add-ins** section, select **Install a new add-in**.
-3. Select the **Get insights** add-in.
+3. Select the **Finance insights** add-in.
 4. Agree to the terms and conditions, and then select **Install**.
 
 The add-in might take several minutes to install.
