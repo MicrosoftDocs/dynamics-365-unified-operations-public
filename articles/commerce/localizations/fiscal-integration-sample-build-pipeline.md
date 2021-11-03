@@ -69,6 +69,6 @@ This topic explains how to set up build and release pipelines for a [fiscal inte
 
 Follow the steps described in [Set up a release pipeline for the Cloud Scale Unit extension package](../dev-itpro/build-pipeline.md#set-up-a-release-pipeline-for-the-cloud-scale-unit-extension-package) to set up a release pipeline for the Cloud Scale Unit extension package for the fiscal integration sample.
 
-## Set up a release pipeline for Retail self-service extension packages
+## Set up a release pipeline for Retail self-service packages
 
-Follow the steps described in [Set up a release pipeline for Retail self-service packages](../../commerce/dev-itpro/build-pipeline.md#set-up-a-release-pipeline-for-retail-self-service-packages) to set up a release pipeline for Retail self-service extension packages for the fiscal integration sample.
+Follow the steps described in [Set up a release pipeline for Retail self-service packages](../../commerce/dev-itpro/build-pipeline.md#set-up-a-release-pipeline-for-retail-self-service-packages) to set up a release pipeline for Retail self-service packages for the fiscal integration sample.
