@@ -45,8 +45,6 @@ The new SDK samples and packages are published [GitHub](https://github.com/micro
 
 ## Benefits of new SDK:
 
-### Why should I migrate:
-
 - Seamless update experience, core application and extensions can be independently updated without any code merge. No need to update extensions to update the core applications. This will reduce the time spent on update.
 - Improved performance, if extensions are migrated to the new SDK and .NET Standard 2.0 then CSU can be upgraded to the new ASP. Net Core 3.1 which provides better API performance.
 - Extensions are published to GitHub and public feed, so no need of LCS to get the SDK updates which will take multiple hours, SDK updates can be done in minutes.
