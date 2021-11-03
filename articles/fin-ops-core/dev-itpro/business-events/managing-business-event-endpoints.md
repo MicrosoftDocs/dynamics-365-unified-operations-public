@@ -78,7 +78,7 @@ The following table provides the mapping between the Finance and Operations apps
 
 ### Viewing or creating mapped endpoints in Dataverse
 
-When a new endpoint is added in Finance and Operations it is synchronized to Dataverse. It is then available for use in Dataverse in the **ServiceEndpoint** table. You can also create the endpoint directly in Dataverse in the **ServiceEndpoint** table, and it will then be synchronized to the Finance and Operations application and can be viewed on the **Endpoints** tab of the **Business events** page. This is applicable to the following mapped endpoint types:
+When a new endpoint is added in Finance and Operations it is synchronized to Dataverse. It is then available for use in Dataverse in the **ServiceEndpoint** table. You can also create the endpoint directly in Dataverse in the **ServiceEndpoint** table. If the service endpoint is created subscribing to a Finance and Operations event, it will then automatically be made available to the Finance and Operations application and can be viewed on the **Endpoints** tab of the **Business events** page. This is applicable to the following mapped endpoint types:
 
 - Azure Service Bus Queue
 - Azure Service Bus Topic
