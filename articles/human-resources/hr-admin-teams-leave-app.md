@@ -3,8 +3,8 @@
 
 title: Human Resources app in Teams
 description: This topic introduces the Microsoft Dynamics 365 Human Resources app in Microsoft Teams.
-author: andreabichsel
-ms.date: 02/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Microsoft Teams. Employees can interact with a bot to request information. The **Time off** tab provides more detailed information. In addition, they can send people information about upcoming time off in teams and chats outside the Human Resources app.
+The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time off balance information in Microsoft Teams. Employees can interact with a bot to request information. The **Time off** tab provides more detailed information. In addition, they can send people information about upcoming time off in teams and chats outside the Human Resources app.
 
 ![Human Resources Teams leaves app bot.](./media/hr-teams-leave-app-bot.png)
 
@@ -111,7 +111,7 @@ The following work items are slated for future releases:
 | --- | --- |
 | The balance is incorrect when submitting time off for a future date. | Forecasting isn't yet available. The balance displays for the current date. |
 | Unable to cancel an **In review** request. | This functionality isn't currently supported and will be added in a future release. |
-| Balance information is calculated as of today. | The system currently doesn't display balances as of the accrual period, even if it's configured in Leave and absence parameters. |
+| Balance information is calculated as of today. | The system currently doesn't display balances as of the accrual period, even if it's configured on the **Leave and absence parameters** page. |
 
 ## Troubleshooting
 
@@ -123,7 +123,7 @@ If a user contacts you because they can't sign into the app, verify that they ha
 
 ### Error when approving leave requests in the Human Resources app in Teams
 
-If a user receives an error while trying to approve,  leave requests in the Teams app, try the following troubleshooting steps:
+If a user receives an error while trying to approve, leave requests in the Teams app, try the following troubleshooting steps:
 
 1. Verify that their Teams account is the same one they use for accessing Human Resources.
 
@@ -135,7 +135,7 @@ If a user receives an error while trying to approve,  leave requests in the Team
 
 2. Ensure users are signed into the **Chats** tab with the same credentials they use for approving leave requests. Use the messages "sign out" and then "sign in" to sign in with the correct credentials.
 
-3. If the issue persists, check the status of the Business Events system batch job as a system administrator. If it's in a waiting or executing stage, check back in a few minutes. If the status remains unchanged, log a support ticket so our team can help resolve the issue.
+3. If the issue persists, check the status of the **Business Events system** batch job as a system administrator. If it's in a **Waiting** or **Executing** stage, check back in a few minutes. If the status remains unchanged, log a support ticket so our team can help resolve the issue.
 
 ## Privacy notice
 
