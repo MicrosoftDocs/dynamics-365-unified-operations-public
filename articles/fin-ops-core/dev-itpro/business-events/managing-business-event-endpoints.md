@@ -32,13 +32,13 @@ Endpoints let you manage the destinations to which business events are sent. Bus
 
 | Endpoint type | Tutorial |
 | ------------- | -------- |
-| Azure Service Bus Queue | [Business events and Azure Service Bus](./business-events/how-to/how-to-servicebus) |
-| Azure Service Bus Topic | [Business events and Azure Service Bus](./business-events/how-to/how-to-servicebus) |
-| Azure Event Grid | [Business events and Azure Event Grid](./business-events/how-to/how-to-eventgrid) |
-| Azure Event Hub | [Business events and Azure Event Hubs](./business-events/how-to/event-hub)  |
+| Azure Service Bus Queue | [Business events and Azure Service Bus](./how-to/how-to-servicebus) |
+| Azure Service Bus Topic | [Business events and Azure Service Bus](./how-to/how-to-servicebus) |
+| Azure Event Grid | [Business events and Azure Event Grid](./how-to/how-to-eventgrid) |
+| Azure Event Hub | [Business events and Azure Event Hubs](./how-to/event-hub)  |
 | Azure Blob Storage | -- |
 | HTTPS | -- |
-| Microsoft Power Automate | [Business events and Microsoft Power Automate](./business-events/how-to/how-to-flow) |
+| Microsoft Power Automate | [Business events and Microsoft Power Automate](./how-to/how-to-flow) |
 | Dataverse | -- |
 
 Endpoints can be created for these messsaging and event brokers out of the box. Some scenarios might require multiple endpoints for organized distribution of business events to consumers. You can create multiple endpoints to support these scenarios.
