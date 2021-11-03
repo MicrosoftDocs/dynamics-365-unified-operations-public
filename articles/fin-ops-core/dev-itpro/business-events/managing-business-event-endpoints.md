@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Data events
-description: This topic provides an overview of data events.
+title: Managing business event endpoints
+description: This topic provides information on managing endpoints for Finance and Operations apps business events.
 author: jaredha
 ms.date: 11/03/2021
 ms.topic: article
@@ -47,11 +47,18 @@ The Azure-based endpoints must be in the customer's Azure subscription. For exam
 
 The Finance and Operations application doesn't provision the endpoints. The endpoints must be created separately and provided to the application. The application then sends events to the endpoints that are provided. Customers may incur additional costs if they use these endpoints in their Azure subscription.
 
-![Business events endpoint.](../media/businesseventsendpoint.png)
+## Subscribing to Finance and Operations events from Dataverse
 
-## Power Platform integration
+> [!IMPORTANT]
+> Enabling the Power Platform integration is prerequisite for subscribing to Finance and Operations business events and data events as outlined in this section. For more information on enabling the Power Platform integration for a Finance and Operations apps environment, see [Enabling the Power Platform integration](./power-platform/enable-power-platform-integration).
 
-When the Power Platform integration is enabled for a Finance and Operations apps environment, endpoints created for business events are synchronized with the linked Power Platform environment for endpoint types that are supposed in Dataverse, enabling the endpoint's use in the Power Platform. When the endpoints are synchronized, business events sent from Finance and Operations apps are proxied through Dataverse to the endpoint. See [Enabling the Power Platform integration](./power-platform/enable-power-platform-integration) for additional information on enabling the integration.
+With the Power Platform integration enabled is it possible to subscribe to Finance and Operations business events and data events from Dataverse. This enables the following:
+
+  - A consistent behavior across events from multiple applications in Dataverse.
+  - Dataverse solutions application lifecycle management (ALM) to consistently consume events from Finance and Operations apps.
+  - Plug-ins and SDK steps to be registered on Finance and Operations apps events in Dataverse.
+
+When the Power Platform integration is enabled for a Finance and Operations apps environment, endpoints created for business events are synchronized with the linked Power Platform environment for endpoint types that are supporteded in Dataverse, enabling the endpoint's use in the Power Platform. When the endpoints are synchronized, business events sent from Finance and Operations apps are proxied through Dataverse to the endpoint.
 
 The following table provides the mapping between the Finance and Operations apps and Dataverse implementations of the endpoints.
 
@@ -62,19 +69,38 @@ The following table provides the mapping between the Finance and Operations apps
 | Azure Event Grid                          | Azure Event Grid                |
 | Azure Event Hub                           | Azure Event Hub                 |
 | HTTPS                                     | Webhook                         |
-| Azure Blob Storage                        | Not supported in Dataverse.     |
+| Azure Blob Storage                        | Not supported in Dataverse     |
 | Microsoft Power Automate                  | Asynchronous callback registration |
-| Dataverse                                 | Plug-in and/or SDK step registration |
+| Dataverse                                 | Plug-in or SDK step registration |
 
 > [!NOTE]
 > For endpoint types that are not supported in Dataverse, or when the Power Platform integration is not enabled, the endpoint will continue to send the event from the Finance and Operations application rather than through Dataverse.
 
-## Subscribing to Finance and Operations events from Dataverse
+### Viewing or creating mapped endpoints in Dataverse
 
-With the Power Platform integration enabled is it possible to subscribe to Finance and Operations business events and data events from Dataverse. This enables the following:
+When a new endpoint is added in Finance and Operations it is synchronized to Dataverse. It is then available for use in Dataverse in the **ServiceEndpoint** table. You can also create the endpoint directly in Dataverse in the **ServiceEndpoint** table, and it will then be synchronized to the Finance and Operations application and can be viewed on the **Endpoints** tab of the **Business events** page. This is applicable to the following mapped endpoint types:
 
-  - A consistent behavior across events from multiple applications in Dataverse.
-  - Dataverse solutions application lifecycle management (ALM) to consistently consume events from Finance and Operations apps.
-  - Plug-ins and SDK steps to be registered on Finance and Operations apps events in Dataverse.
+- Azure Service Bus Queue
+- Azure Service Bus Topic
+- Azure Event Grid
+- Azure Event Hub
 
-Finance and Operations apps events can be subscribed to directly in Dataverse usin gthe Dataverse tool set like the Plug-in Registration Tool or the Visual Studio add-in
+See [ServiceEndpoint table/entity reference](powerapps/developer/data-platform/reference/entities/serviceendpoint) for more information on the ServiceEndpoint table.
+
+### Microsoft Power Automate endpoints
+
+The **Microsoft Power Automate** endpoint type is not made available for setup directly in the Finance and Operations application. The endpoint type is used for subscriptions that are created and sent directly from a flow in Power Automate. 
+
+The endpoint is created in the Finance and Operations application in the **Endpoints** tab of the **Business events** page when you subscribe to a Finance and Operations business event or data event in Power Automate. See [Business events in Microsoft Power Automate](/business-events-flow) for more information on subscribing to business events and data events in Power Automate.
+
+### Microsoft Dataverse endpoints
+
+The **Dataverse** endpoint type is also not available for manual setup in the Finance and Operations application. The endpoint is created when a plug-in or an SDK step is registered on a Finance and Operations business event or data event in Dataverse. When the step is registered it becomes visible as an endpoint in the list on the **Endpoints** tab of the **Business events** page in the Finance and Operations application. 
+
+![Business events Dataverse endpoint type in Finance and Operations](../media/businessevents_DataverseEndpoint.png)
+
+The business event registration itself will also be listed in the **Business event catalog** or **Data event catalog** in the Finance and Operations application, depending on registration. This helps Finance and Operations apps users know which business event or data event has a plug-in or SDK step registered in Dataverse and the reason for the event being active in the Finance and Operations app.
+
+Finance and Operations apps events can be subscribed to directly in Dataverse using the Dataverse tool set like the the **Power Platform Tools** extension for Visual Studio. See [Install Power Platform Tools](/powerapps/developer/data-platform/tools/devtools-install) for more information on the extension. These subscriptions will display in the **Business event catalog** in Finance and Operations apps.
+
+For more information on subscribing to Finance and Operations business events in Dataverse, see [Subscribing to events in Dataverse](./dataverse-events).
