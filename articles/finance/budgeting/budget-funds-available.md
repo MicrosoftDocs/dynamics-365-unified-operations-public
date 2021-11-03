@@ -1,4 +1,5 @@
-## Budget Funds Available enhanced calcuation feature
+## Budget Funds Available 
+#### Enhanced calculation feature
 
 Starting in application release 10.0.24 a new feature called  **Only track amounts in the budget funds available calculation** was released to provide a more precise tracking in the underlying budget control tables for document types and states according to the settings marked in budget control for the budget funds available. 
 
