@@ -3,8 +3,8 @@
 
 title: Manage leave requests in Teams
 description: This topic shows how to request time off in the Dynamics 365 Human Resources app in Microsoft Teams.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
 
@@ -46,7 +46,7 @@ You can find the Dynamics 365 Human Resources app in the Teams store.
 If the app doesn't automatically sign you in, select the **Settings** tab to sign in.
 
 > [!NOTE]
-> If you don’t see a sign-in dialog box, check your browser settings to allow pop-ups. 
+> If you don’t see a sign in dialog box, check your browser settings to allow pop-ups. 
 
 If you have access to more than one instance of Human Resources, you can select which environment you want to connect to in the **Settings** tab.
 
@@ -58,7 +58,7 @@ If you have access to more than one instance of Human Resources, you can select 
 After the app installs, a welcome message appears, letting you know the types of actions the bot can take on your behalf.
 
 > [!NOTE]
-> When first interacting with the bot, you might need to sign in. If you don’t see a sign-in dialog box, check your browser settings to allow pop-ups.
+> When first interacting with the bot, you might need to sign in. If you don’t see a sign in dialog box, check your browser settings to allow pop-ups.
 
 You can ask the bot to:
 
@@ -88,7 +88,7 @@ The **Time off** tab allows you to view:
 
 - Upcoming leave requests
 
-- Time-off requests
+- Time off requests
 
 - Draft leave requests
  
@@ -118,11 +118,11 @@ The **Time off** tab allows you to view:
    
 ### Respond to Teams notifications
 
-When you or a worker you're an approver for submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view it. Notifications also appear in the **Chat** area.
+When you or a worker you're an approver for submits a leave request, you'll receive a notification in the Human Resources app in Teams. You can select the notification to view the leave request. Notifications also appear in the **Chat** area.
 
 If you're an approver, you can select **Approve** or **Deny** in the notification. You can also provide an optional message.
 
-## Send upcoming time-off information to your coworkers
+## Send upcoming time off information to your coworkers
 
 After you install the Human Resources app for Teams, you can easily send information about your upcoming time off to your coworkers in teams or chats.
 
@@ -172,7 +172,7 @@ If you're having trouble signing into or using the Dynamics 365 Human Resources 
 
 If you can't sign into the app, it's possible that the account you're using to sign into Microsoft Teams isn't associated with an employee record in Dynamics 365 Human Resources. Contact your system administrator to ensure your employee record is correctly associated.
 
-### Can't find the Dynamics 365 Human Resources environment in Settings
+### Can't find the Dynamics 365 Human Resources environment in settings
 
 If you can't select the correct Dynamics 365 environment, the user record might not have been correctly synced. Contact your system administrator to re-create the user record and associate it with the user credentials. Then try to sign in to the Human Resources app for Microsoft Teams in a few minutes.
 
@@ -204,7 +204,7 @@ If you receive an error when you're trying to approve leave requests in the Team
 
 2. Ensure users are signed into the **Chats** tab with the same credentials they use for approving leave requests. Use the messages "sign out" and then "sign in" to sign in with the correct credentials.
 
-3. If the issue persists, check the status of the Business Events system batch job as a system administrator. If it's in a waiting or executing stage, check back in a few minutes. If the status remains unchanged, log a support ticket so our team can help resolve the issue.
+3. If the issue persists, check the status of the **Business Events system** batch job as a system administrator. If it's in a **Waiting** or **Executing** stage, check back in a few minutes. If the status remains unchanged, log a support ticket so our team can help resolve the issue.
 
 ## Known accessibility issues
 
@@ -213,7 +213,7 @@ The Human Resources app in Teams has the following accessibility issues that we'
 | Issue | Workaround or explanation |
 | --- | --- |
 | Zooming to 400% on desktop hides some of the action buttons from view. | We recommend using a magnifier instead until we can support this zoom level. |
-| On the **Time off** tab, voiceover announces a button action while reading the header for the time-off grid. | The header and elements within the grid are grouped by year, and they're collapsible. Voiceover interprets this as an actionable item, but it isn't. |
+| On the **Time off** tab, voiceover announces a button action while reading the header for the time off grid. | The header and elements within the grid are grouped by year, and they're collapsible. Voiceover interprets this as an actionable item, but it isn't. |
 | On the **Time off** tab, there's an extra swipe gesture when navigating to **Reason code** in a new request. | There is no hidden control that the swipe navigation is trying to get to. |
 | On the **Time off** tab, if you swipe while the calendar is open, you end up outside the control instead of at the top in a new request or while editing a request. | When you reach **Go to today**, consider that to be the end of the control and swipe in the reverse direction to get back to the top. |
 | On the **Chat** tab, the focus jumps back to the top when you enter a date while using the assistive tool or keyboard navigation. | Tab until you reach your input area again. |
