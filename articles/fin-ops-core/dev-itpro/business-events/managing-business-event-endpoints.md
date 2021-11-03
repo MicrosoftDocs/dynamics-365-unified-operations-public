@@ -103,4 +103,8 @@ The business event registration itself will also be listed in the **Business eve
 
 Finance and Operations apps events can be subscribed to directly in Dataverse using the Dataverse tool set like the the **Power Platform Tools** extension for Visual Studio. See [Install Power Platform Tools](/powerapps/developer/data-platform/tools/devtools-install) for more information on the extension. These subscriptions will display in the **Business event catalog** in Finance and Operations apps.
 
+Certain attributes of service endpoints in Dataverse, like name and description, can be updated. Such updates will reflect in Finance and Operations as well. However, updates that would change the service endpoint type, like changing from a servie bus topic to a service bus queue, which Dataverse would normally allow, would be prevented if the service endpoint is used with Finance and Operations events. This is for design simplicity and consistency as Finance and Operations does not allow these updates to endpoints once created.
+
+Once created, Dataverse does not allow deletion of service endpoints if it is being used. This is true, as well, for service endpoints used by Finance and Operations events. An attempt to delete the endpoint will result in an error, and deletion is prevented. 
+
 For more information on subscribing to Finance and Operations business events in Dataverse, see [Subscribing to events in Dataverse](./dataverse-events).
