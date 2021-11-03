@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Set up an environment for master data lookup
-description: This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
+title: Enable master data lookup for tax calculation configuration
+description: This topic explains how to set up and enable the tax calculation master data lookup functionality.
 author: kai-cloud
-ms.date: 10/26/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,11 +25,11 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ---
 
-# Set up an environment for master data lookup
+# Enable master data lookup for tax calculation configuration 
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up your environment to use the Tax Calculation master data lookup functionality.
+This topic explains how to set up and enable the tax calculation master data lookup functionality. A drop-down list is available to select values in the tax calculation configuration for fields such as **Vendor account**, **Item code**, and **Delivery term**. These values come from the connected Microsoft Dynamics 365 Finance environment using the Microsoft Dataverse datasource.
 
 1. Set up the Microsoft Power Platform integration in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). After you complete this step, the name of a Microsoft Power Platform environment will appear in the **Power Platform Integration** section.
 2. Go to the [Microsoft Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), and select the environment name. The environment URL is provided.
