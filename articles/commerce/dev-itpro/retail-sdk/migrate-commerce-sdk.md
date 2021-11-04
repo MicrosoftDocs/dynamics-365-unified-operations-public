@@ -98,7 +98,7 @@ In older versions of Retail SDK extensions, you have to consume the packages fro
 
 #### Why we made this change to the API extensions
 
-With this change, there is no need to create `EdmModel` factory and extender, it was complex for the extensions to add these and set appropriate attributes now all the EDM process is automated and no need to generate separate offline proxy library for Modern POS, the API extension library can be used directly in the offline and the proxy generation process is simplified. 
+With this change, there is no need to create `EdmModel` factory and extender, it was complex for the extensions to add these and set appropriate attributes now all the EDM process is automated and no need to generate separate offline proxy library for Modern POS, the API extension library can be used directly in the offline and the proxy generation process is simplified.
 
 ### Channel Database
 
