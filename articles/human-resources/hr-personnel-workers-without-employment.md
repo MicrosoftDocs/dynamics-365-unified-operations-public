@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Workers with no future, active, or historical employment with your organization appear in the **Workers without employment** page. Workers with this status can appear when you import workers without an employment record, or when you delete a worker's employment via **Workers > Employment history**.
+Workers who have no future, active, or historical employment with your organization appear on the **Workers without employment** page. Workers of this type can appear when you import workers who don't have an employment record, or when you delete a worker's employment via **Workers \> Employment history**.
 
 By default, the **Workers without employment** page is available to the following roles:
 
