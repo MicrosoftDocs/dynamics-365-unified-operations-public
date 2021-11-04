@@ -1,5 +1,5 @@
 ---
-title: Migrate to Commerce SDK
+title: Migrate to the Commerce SDK
 description: This topic explains how to migrate to the Commerce SDK.
 author: mugunthanm
 ms.date: 11/02/2021
@@ -12,7 +12,7 @@ ms.search.validFrom: 02-11-2021
 ms.dyn365.ops.version: AX 10.0.19
 ---
 
-# Migrate to Commerce SDK
+# Migrate to the Commerce SDK
 
 [!include [banner](../../includes/banner.md)]
 
@@ -70,7 +70,7 @@ The Commerce SDK provides these benefits:
 
 ### Dev environment changes
 
-The LCS 10.0.21 dev VM doesn't have Visual studio 2017, manually install the Visual Studio 2017 and dependencies as documented [here](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-overview#prerequisites) or Setup a local development environment, we recommend to use the [local development environment.](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/blob/release/9.33/src/ScaleUnitSample/Readme.md) In the future, Commerce components will not be available in the LCS VM, either you can manually install those components in the LCS dev VM or use your own local development machine.
+The LCS 10.0.21 developer virtual machine (VM) doesn't have Visual studio 2017. Manually install Visual Studio 2017 and the dependencies as documented in the "Prerequisties" section of [Retail software development kit (SDK)](retail-sdk-overview.md#prerequisites), or set up a local development environment. We recommend the [local development environment](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/blob/release/9.33/src/ScaleUnitSample/Readme.md). In the future, Commerce components will not be available in the LCS VM. Either you can manually install those components in the LCS dev VM or use your own local development machine.
 
 ### Commerce Runtime extensions
 

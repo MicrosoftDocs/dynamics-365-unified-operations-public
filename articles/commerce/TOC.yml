@@ -2538,6 +2538,8 @@
             href: e-commerce-extensibility/debugging-best-practices.md
       - name: Retail SDK
         items:
+        - name: Migrate to the Commerce SDK
+          href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
         - name: Retail SDK architecture
           href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Set up a build pipeline for the independent-packaging SDK

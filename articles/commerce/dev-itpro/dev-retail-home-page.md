@@ -123,6 +123,7 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Retail SDK
 
+- [Migrate to the Commerce SDK](retail-sdk/migrate-commerce-sdk.md)
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
 - [Set up a build pipeline for the independent-packaging SDK](build-pipeline.md)
 - [Create deployable packages](retail-sdk/retail-sdk-packaging.md)
