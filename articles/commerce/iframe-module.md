@@ -5,7 +5,7 @@ title: Iframe module
 description: This topic covers the iframe module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-commerce
@@ -35,8 +35,6 @@ ms.dyn365.ops.version: Release 10.0.13
 [!include [banner](includes/preview-banner.md)]
 
 This topic covers the iframe module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
-
-## Overview
 
 An iframe module provides an iframe (inline frame) that hosts external content on a site. For example, it can be used to host a YouTube video or a PDF file viewer on any site page. 
 
@@ -74,8 +72,8 @@ To add an iframe module to a page to show an external video, follow these steps.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 1. Go to the marketing page on your site. You should see that the video is rendered in the iframe module.
 
->[!NOTE]
->Given the iframe hosts external content, the site author needs to make sure the content hosted within the iframe does not violate content restriction policies in the respective market. If there is a violation, the site author can remove the iframe module from the page. To do this, open the page hosting the iframe module on Site Builder. Go to iframe module and Select **Remove module**. Then select **Save** and **Finish editing** to check in the page, and then select **Publish** to publish it.
+> [!NOTE]
+> Because the iframe module hosts external content, site authors must ensure that the content hosted within the iframe module does not violate content restriction policies in the respective market. If there is a content violation, a site author can remove the iframe module from the page by opening the page in site builder, selecting **Remove module** in the iframe module slot, and then saving and republishing the page.
 
 ## Additional resources
 
