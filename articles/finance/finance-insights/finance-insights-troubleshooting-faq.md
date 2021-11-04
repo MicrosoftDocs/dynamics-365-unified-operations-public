@@ -4,7 +4,7 @@
 title: Troubleshoot Finance insights setup issues
 description: This topic lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
 author: panolte
-ms.date: 08/20/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 10.0.20
 # Troubleshoot Finance insights setup issues
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
 
@@ -56,6 +57,12 @@ Follow these steps in the [Power Platform admin center](https://admin.powerplatf
 
 1. If you're using a preview version of Finance insights, remove the DI project that is associated with the **Customer payment insights results (CDS to Fin and Ops)** template.
 2. Follow the steps in [Create a data integrator project](create-data-integrate-project.md). Use the **Customer payment insights results (CDS to Fin and Ops 10.0.17 and later)** template.
+
+## Symptom: When I try to open AI Builder by using the links on the Customer payment predictions setup page, why do I receive the following error message: "Sorry, there's been a disconnect"?
+
+### Resolution
+
+Dynamics 365 Finance users must have a Microsoft Power Apps user account for the environment, and that user account must have the System customizer role. The Microsoft Power Apps system administrator can create the user account and assign the role. You can then go to <https://make.preview.powerapps.com/>, sign in by using that user account, and try the links again.
 
 ## Symptom: Why doesn't the Cash forecast tab in the Cash flow forecast workspace show any data?
 
