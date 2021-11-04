@@ -147,4 +147,5 @@ The Commerce SDK provides several benefits when compared to the Retail SDK, incl
 
 Extensions must be migrated to the new Commerce SDK and new installers by October 2022.
 
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
