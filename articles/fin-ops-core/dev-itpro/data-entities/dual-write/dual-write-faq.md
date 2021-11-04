@@ -128,6 +128,10 @@ You can make Dataverse custom tables company-specific by adding a many-to-one (N
 
 To enable table maps for dual-write, you must define an alternate key in Dataverse. The value of the alternative key in Dataverse must match the key that is defined in the Finance and Operations app. For more information, see [Criteria for linking tables](enable-entity-map.md#criteria-for-linking).
 
+### Can I merge records in Dynamics CE while using dual-write?
+
+No, Finance and Operations does not permit the merging of records. Because of this, the Merge functionality in Dynamics CE will not execute when a dual-write mapping is present on a table.
+
 ### Is there a document about best practices for table usage? Should I use Customers V2, Customers V3, or Customer Details? What is the difference between these tables, and what is the use case for each?
 
 You should use the [out-of-box scenarios](./customer-mapping.md) if you can, because they cover common scenarios such as customer/vendor integration.
