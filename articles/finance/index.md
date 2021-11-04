@@ -4,7 +4,7 @@
 title: Finance home page
 description: This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
 author: roschlom
-ms.date: 08/18/2021
+ms.date: 11/04/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -44,12 +44,10 @@ Select a feature area to learn more about it.
         - [Cost accounting](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Expense management](/dynamics365/project-operations/prod-exp/expense-management)
         - [Financial reporting](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [Fixed assets](fixed-assets/fixed-assets.md)
         - [Finance insights](finance-insights/finance-insights-home-page.md)
         - [General ledger and Financial reporting](general-ledger/general-ledger.md) 
-        - [Project management and accounting](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [Public sector](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
