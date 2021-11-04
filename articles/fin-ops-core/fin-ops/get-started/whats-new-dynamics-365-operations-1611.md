@@ -501,7 +501,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 <li>ISO20022 Direct debit payment format for Italy</li>
 <li>RIBA collection remittance format for Italy</li>
 <li>Domestic tax transactions report for Italy</li>
-<li>Blacklist report for Italy</li>
+<li>Blocklist report for Italy</li>
 <li>Modello770 report for Italy</li>
 <li>Yearly tax communication report for Italy</li>
 </ul>
