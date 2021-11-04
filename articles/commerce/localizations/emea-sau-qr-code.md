@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Print QR code in receipt for Saudi Arabia
+title: Generate QR codes and print them on receipts for Saudi Arabia
 description: This topic provides an overview of the QR code printing functionality that is available for Saudi Arabia.
 author: EvgenyPopovMBS
 manager: annbe
@@ -25,4 +25,7 @@ ms.search.validFrom: 2021-11-04
 ms.dyn365.ops.version: 10.0.21
 
 ---
-# Print QR code in receipt for Saudi Arabia
+# Generate QR codes and print them on receipts
+
+This topic provides an overview of the QR code printing functionality that is available for Saudi Arabia.
+
