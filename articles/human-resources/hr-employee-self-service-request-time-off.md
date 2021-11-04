@@ -51,7 +51,7 @@ Employees who submit a new leave request can select different leave types to con
 
 ## Add an attachment to an existing request
 
-When updating an existing time off request, you can add an attachment. You can also see all of the related requests for a specific date.
+When updating an existing time off request, you can add an attachment. You can also see all the related requests for a specific date.
 
 ## View leave balances
 
