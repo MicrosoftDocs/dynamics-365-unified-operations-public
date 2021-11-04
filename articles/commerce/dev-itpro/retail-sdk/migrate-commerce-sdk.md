@@ -63,7 +63,7 @@ The Commerce SDK provides these benefits:
 
     Most of the code written using the old SDK can be migrated easily, and you do not need to rewrite the code. For example, the Commerce runtime extension can be updated by changing the project to **NET standard 2.0** and updating the reference package to be consumed from the public feed. Similarly, the API extension can be updated by using new interface and removing the **EDMModel** extender code because it's automated in the backend.
 
-4. Package the extensions for Cloud or On-prem using the new [installer](https://community.dynamics.com/ax/b/axforretail/posts/introducing-sealed-installers) and [packaging framework](retail-sdk-packaging#deployable-package-types.md).
+4. Package the extensions for Cloud or On-prem using the new [installer](https://community.dynamics.com/ax/b/axforretail/posts/introducing-sealed-installers) and [packaging framework](retail-sdk-packaging.md#deployable-package-types).
 5. Deploy the extensions.
 
 ## How to migrate
