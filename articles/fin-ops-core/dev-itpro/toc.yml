@@ -1654,8 +1654,6 @@
           items:
           - name: Make the chart of accounts delimiter unique
             href: migration-upgrade/chart-accounts-delimiter-unique.md
-          - name: Upgrade single-voucher journals and currency revaluations
-            href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
           - name: Project resource scheduling data model
             href: migration-upgrade/data-model-changes-resource-management.md
           - name: Workflow subsystem changes
