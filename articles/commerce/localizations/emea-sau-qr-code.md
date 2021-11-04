@@ -33,11 +33,15 @@ This topic provides an overview of the QR code printing functionality that is av
 
 QR code for Saudi Arabia contains the following information:
 
-| Sequence | Field                                                  | Comment |
+| Sequence | Field                                                  | Data source |
 |----------| -------------------------------------------------------|---------|
-| 1        | Company name                                           |  |
-| 2        | Company VAT registration number                        |  |
-| 3        | Date and time of transaction                           |  |
-| 4        | Total receipt amount (including value-added tax (VAT)) |  |
-| 5        | Total amount of VAT included in receipt                |  |
+| 1        | Company name                                           | The name of the legal entity that the store belongs to |
+| 2        | Company VAT registration number                        | The tax registration number of the legal entity that the store belongs to |
+| 3        | Date and time of transaction                           | The date and time of the retail store transaction |
+| 4        | Total receipt amount (including value-added tax (VAT)) | The total amount of the retail store transaction |
+| 5        | Total amount of VAT included in receipt                | The total tax amount of the retail store transaction |
 
+> [!NOTE]
+> For create customer order transactions, the total receipt amount is calculated as the sum of total amounts of all transaction lines with the Carry-out delivery mode.
+
+Filed name: INVOICEQRCODE_SA
