@@ -34,13 +34,13 @@ ms.dyn365.ops.version: AX 10.0.24
 
 #### Enhanced calculation feature for budget funds available.
 
-The **Only track amounts in the budget funds available calculation** feature lets you tracki the underlying budget control tables for document types and states according to the settings marked in budget control for the budget funds available. 
+The **Only track amounts in the budget funds available calculation** feature lets you track the underlying budget control tables for document types and states according to the settings marked in budget control for the budget funds available. 
 
 Seome budget control configuration settings that must be set to specific values for this feature to work properly. The required settings are listed in the following table.
 
 | If this setting is enabled        | This also needs to be enabled     |
 | :---------------------------------- | :---------------------------------- |
-| Budget reservations for pre-encumbrances | Budget reservations for encumbrances **and** Actual expenditures |
+| Budget reservations for pre-encumbrances | Budget reservations for encumbrances *and* Actual expenditures |
 | Budget reservations for encumbrances | Actual expenditures |
 | When using PR-type General budget reservation documents and Budget reservations for encumbrances | Budget reservations for pre-encumbrances |
 
