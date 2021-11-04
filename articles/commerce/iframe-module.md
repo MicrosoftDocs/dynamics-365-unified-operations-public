@@ -72,7 +72,7 @@ To add an iframe module to a page to show an external video, follow these steps.
 1. Go to the marketing page on your site. You should see that the video is rendered in the iframe module.
 
 > [!NOTE]
-> Because the iframe module hosts external content, site authors must ensure that the content hosted within the iframe module does not violate content restriction policies in the respective market. If there is a content violation, a site author can remove the iframe module from the page by opening the page in site builder, selecting **Remove module** in the iframe module slot, and then saving and republishing the page.
+> Because the iframe module hosts external content, site authors must ensure that the content hosted within an iframe module does not violate content restriction policies in the respective market. If there is a content violation, a site author can remove the iframe module by opening the page in site builder, selecting **Remove module** in the iframe module slot, and then saving and republishing the page.
 
 ## Additional resources
 
