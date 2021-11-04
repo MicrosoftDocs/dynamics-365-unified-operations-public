@@ -44,4 +44,5 @@ Seome budget control configuration settings that must be set to specific values 
 | Budget reservations for encumbrances | Actual expenditures |
 | When using PR-type General budget reservation documents and Budget reservations for encumbrances | Budget reservations for pre-encumbrances |
 
-//todo add more content about the difference they will see with this feature on vs. off. 
+One recommended setting to keep unchecked is "Unposted actual expenditures". This will avoid an expesive budget control calcuation for unposted documents such as pending vendor invoices. 
+
