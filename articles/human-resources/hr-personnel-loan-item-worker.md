@@ -29,23 +29,23 @@ ms.dyn365.ops.version: Version 7.0.0
 
 
 
-This procedure shows how to loan an item to a worker and record the worker returning an item. Workers can also request loan items through their **Employee self service** page. The demo data company used to create this procedure is USMF.
+This procedure shows how to loan an item to a worker and record a worker's return of a loan item. Workers can also request loan items through their **Employee self service** page. The **USMF** demo data company was used to create this procedure.
 
 
-## Loan item to a worker
-1. Go to **Human resources > Workers > Loan items > Loaned equipment**.
-2. Click **New**.
+## Loan an item to a worker
+
+1. Go to **Human resources \> Workers \> Loan items \> Loaned equipment**.
+2. Select **New**.
 3. In the **Person** field, enter or select a value.
 4. In the **Loan item** field, enter or select a value.
-5. In the **Planned return** field, enter the date the employee needs to return the loan item.
-6. Click **Save**.
+5. In the **Planned return** field, enter the date when the employee must return the loan item.
+6. Select **Save**.
 7. Close the page.
 
 ## Return a loan item
-1. Go to **Human resources > Workers > Loan items > Loaned equipment**.
-2. Click **Edit**.
+
+1. Go to **Human resources \> Workers \> Loan items \> Loaned equipment**.
+2. Select **Edit**.
 3. In the **Actual return** field, enter a date.
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
