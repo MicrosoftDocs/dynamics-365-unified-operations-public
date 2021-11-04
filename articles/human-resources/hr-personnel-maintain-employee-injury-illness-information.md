@@ -33,7 +33,7 @@ It is recommended to complete the 'Setup injury and illness' task guide first, a
 
 
 
-This task recording covers the basic steps to creating an injury or illness case. Besides tracking the details of the injury or illness, there is a case status that is tracked as well.  The case defaults with an 'open' status.  The statuses can be managed from the **Case status** menu item at the top of the page.
+This task recording describes the basic steps to creating an injury or illness case. Besides tracking the details of the injury or illness, there is a case status that is tracked as well.  The case defaults with an **Open** status.  The statuses can be managed from the **Case status** menu item at the top of the page.
 
 1. Go to **Human resources > Workers > Injury and illness > Injury or illness incidents**.
 2. Click **New**.
@@ -73,7 +73,8 @@ This task recording covers the basic steps to creating an injury or illness case
 21. Click **Add**.
 22. In the **Date** field, enter a date.
 23. In the **Cost type** field, enter or select a value.
-    * Example: Therapy  You can also enter in an amount, and attach any supporting documentation such as invoices or doctor's notes to the cost.  
+    * Example: Therapy  
+    * You can also enter in an amount, and attach any supporting documentation such as invoices or doctor's notes to the cost.  
 24. Click **Add**.
 25. In the **Date** field, enter a date.
 26. In the **Cost type** field, enter or select a value.
