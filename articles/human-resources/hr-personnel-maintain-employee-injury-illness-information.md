@@ -40,7 +40,7 @@ This task recording covers the basic steps to creating an injury or illness case
 3. In the **Case description** field, type a value.
     * Example:  Wrist injury  
 4. In the **Worker** field, enter or select a value.
-    * Example: Ahmed Barnett  
+    * Example: Ana Bowman
 5. In the **Date and time of incident** field, enter a date and time.
     * Example: 1/20/2016 10:00 AM  
 6. In the **Injury or illness type** field, enter or select a value.
@@ -52,7 +52,7 @@ This task recording covers the basic steps to creating an injury or illness case
 9. In the **Date and time reported** field, enter a date and time.
     * The date and time reported must be later than the date and time of incident.  
 10. In the **Person who reported case** field, enter or select a value.
-    * This could be the employee or another witness to the incident.  Example: Ahmed Barnett  
+    * This could be the employee or another witness to the incident.  Example: Ana Bowman
 11. Expand the **Incident** section.
 12. In the **Where incident occurred** field, type a value.
     * Example: Warehouse  
